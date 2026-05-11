@@ -2,24 +2,39 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
-interface FormState {
+type FormData = {
   state: string;
-  age: string;
-  householdSize: string;
-  annualIncome: string;
-  incomeUnknown: boolean;
-  employmentStatus: 'employed' | 'self-employed' | 'unemployed' | 'retired' | '';
-  currentlyInsured: boolean | null;
-  insuranceSource: 'employer' | 'aca' | 'medicaid' | 'medicare' | 'none' | '';
-  hasChildren: boolean | null;
-  numChildren: string;
-  isPregnant: boolean | null;
-  hasDisability: boolean | null;
-  isVeteran: boolean | null;
-}
+  householdSize: number;
+  annualIncome: number;
+  employmentStatus: string;
+  age: number;
+  numChildren: number;
+  isPregnant: boolean;
+  hasDisability: boolean;
+  isVeteran: boolean;
+  currentlyInsured: boolean;
+  insuranceSource: string;
+  citizenshipStatus: 'all' | 'mixed' | 'none';
+};
 
-const STATES = [
+const initialFormData: FormData = {
+  state: '',
+  householdSize: 1,
+  annualIncome: 0,
+  employmentStatus: '',
+  age: 0,
+  numChildren: 0,
+  isPregnant: false,
+  hasDisability: false,
+  isVeteran: false,
+  currentlyInsured: false,
+  insuranceSource: '',
+  citizenshipStatus: 'all',
+};
+
+const STATES: [string, string][] = [
   ['AL', 'Alabama'], ['AK', 'Alaska'], ['AZ', 'Arizona'], ['AR', 'Arkansas'],
   ['CA', 'California'], ['CO', 'Colorado'], ['CT', 'Connecticut'], ['DE', 'Delaware'],
   ['DC', 'District of Columbia'], ['FL', 'Florida'], ['GA', 'Georgia'], ['HI', 'Hawaii'],
@@ -37,496 +52,123 @@ const STATES = [
 
 const TOTAL_STEPS = 4;
 
-const STEP_META = [
-  { title: 'About You', subtitle: 'Basic information about your household', icon: '👤' },
-  { title: 'Income & Work', subtitle: 'Your earnings and employment situation', icon: '💼' },
-  { title: 'Current Coverage', subtitle: 'Your existing health insurance', icon: '🏥' },
-  { title: 'Additional Info', subtitle: 'A few more details to refine your results', icon: '📋' },
+const stepInfo = (locale: string) => [
+  {
+    num: 1,
+    title: locale === 'es' ? 'Ubicacion y Hogar' : 'Location & Household',
+    desc: locale === 'es' ? 'Informacion basica sobre tu hogar' : 'Basic information about your household',
+  },
+  {
+    num: 2,
+    title: locale === 'es' ? 'Ingresos y Empleo' : 'Income & Employment',
+    desc: locale === 'es' ? 'Tus ingresos y situacion laboral' : 'Your earnings and employment situation',
+  },
+  {
+    num: 3,
+    title: locale === 'es' ? 'Tu Informacion' : 'Your Information',
+    desc: locale === 'es' ? 'Datos personales para tu elegibilidad' : 'Personal details for your eligibility',
+  },
+  {
+    num: 4,
+    title: locale === 'es' ? 'Cobertura Actual' : 'Current Coverage',
+    desc: locale === 'es' ? 'Tu seguro de salud actual' : 'Your existing health insurance',
+  },
 ];
 
-interface StepProps {
-  form: FormState;
-  setForm: React.Dispatch<React.SetStateAction<FormState>>;
-}
-
-/* ---- Shared UI Components ---- */
-
-function FieldLabel({ children, htmlFor }: { children: React.ReactNode; htmlFor?: string }) {
-  return (
-    <label
-      htmlFor={htmlFor}
-      style={{
-        display: 'block',
-        fontSize: '0.9rem',
-        fontWeight: 600,
-        color: 'var(--text-secondary)',
-        marginBottom: '0.5rem',
-      }}
-    >
-      {children}
-    </label>
-  );
-}
-
-function FieldHint({ children }: { children: React.ReactNode }) {
-  return (
-    <p style={{ color: 'var(--text-muted)', fontSize: '0.825rem', margin: '0 0 0.75rem', lineHeight: 1.5 }}>
-      {children}
-    </p>
-  );
-}
-
-function OptionButton({
-  selected,
-  onClick,
-  children,
-  compact,
-}: {
-  selected: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-  compact?: boolean;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      style={{
-        padding: compact ? '0.625rem 0.75rem' : '0.75rem 1rem',
-        border: '2px solid',
-        borderColor: selected ? 'var(--primary)' : 'var(--border)',
-        borderRadius: '10px',
-        background: selected ? 'var(--primary)' : 'white',
-        color: selected ? 'white' : 'var(--text-primary)',
-        fontSize: compact ? '0.9rem' : '0.95rem',
-        fontWeight: 600,
-        cursor: 'pointer',
-        transition: 'all 0.15s ease',
-        textAlign: 'center',
-      }}
-    >
-      {children}
-    </button>
-  );
-}
-
-function SelectionCard({
-  selected,
-  onClick,
-  label,
-  sublabel,
-}: {
-  selected: boolean;
-  onClick: () => void;
-  label: string;
-  sublabel?: string;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      style={{
-        padding: '0.875rem 1rem',
-        border: '2px solid',
-        borderColor: selected ? 'var(--primary)' : 'var(--border)',
-        borderRadius: '12px',
-        background: selected ? 'var(--cream)' : 'white',
-        textAlign: 'left',
-        cursor: 'pointer',
-        transition: 'all 0.15s ease',
-        display: 'flex',
-        alignItems: 'center',
-        gap: '0.75rem',
-      }}
-    >
-      <div
-        style={{
-          width: '20px',
-          height: '20px',
-          borderRadius: '50%',
-          border: '2px solid',
-          borderColor: selected ? 'var(--primary)' : 'var(--border)',
-          background: selected ? 'var(--primary)' : 'white',
-          flexShrink: 0,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        {selected && (
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-            <path d="M2 5L4 7L8 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        )}
-      </div>
-      <div style={{ flex: 1 }}>
-        <div style={{ fontWeight: 600, color: selected ? 'var(--primary)' : 'var(--text-primary)', fontSize: '0.95rem' }}>
-          {label}
-        </div>
-        {sublabel && (
-          <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.15rem' }}>{sublabel}</div>
-        )}
-      </div>
-    </button>
-  );
-}
-
-function SectionDivider() {
-  return <div style={{ height: '1px', background: 'var(--border-light)', margin: '1.5rem 0' }} />;
-}
-
-/* ---- Step 1: About You ---- */
-function StepAboutYou({ form, setForm }: StepProps) {
-  const sizes = [1, 2, 3, 4, 5, 6, 7, 8];
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-      {/* State */}
-      <div>
-        <FieldLabel htmlFor="state-select">What state do you live in?</FieldLabel>
-        <FieldHint>Health coverage programs vary by state.</FieldHint>
-        <select
-          id="state-select"
-          value={form.state}
-          onChange={e => setForm(f => ({ ...f, state: e.target.value }))}
-          style={{
-            width: '100%',
-            padding: '0.75rem 2.5rem 0.75rem 1rem',
-            fontSize: '1rem',
-            border: '2px solid var(--border)',
-            borderRadius: '10px',
-            background: 'white',
-            color: form.state ? 'var(--text-primary)' : 'var(--text-muted)',
-            cursor: 'pointer',
-            transition: 'border-color 0.15s',
-          }}
-        >
-          <option value="">Select your state...</option>
-          {STATES.map(([code, name]) => (
-            <option key={code} value={code}>{name}</option>
-          ))}
-        </select>
-      </div>
-
-      <SectionDivider />
-
-      {/* Age */}
-      <div>
-        <FieldLabel htmlFor="age-input">How old are you?</FieldLabel>
-        <FieldHint>Age determines which programs you can access.</FieldHint>
-        <input
-          id="age-input"
-          type="number"
-          min={0}
-          max={110}
-          value={form.age}
-          onChange={e => setForm(f => ({ ...f, age: e.target.value }))}
-          placeholder="Enter your age"
-          style={{
-            width: '100%',
-            maxWidth: '200px',
-            padding: '0.75rem 1rem',
-            fontSize: '1rem',
-            border: '2px solid var(--border)',
-            borderRadius: '10px',
-            background: 'white',
-            transition: 'border-color 0.15s',
-          }}
-        />
-      </div>
-
-      <SectionDivider />
-
-      {/* Household size */}
-      <div>
-        <FieldLabel>How many people are in your household?</FieldLabel>
-        <FieldHint>Include yourself, your spouse/partner, and any dependents.</FieldHint>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.5rem', maxWidth: '320px' }}>
-          {sizes.map(n => (
-            <OptionButton
-              key={n}
-              selected={form.householdSize === String(n)}
-              onClick={() => setForm(f => ({ ...f, householdSize: String(n) }))}
-              compact
-            >
-              {n === 8 ? '8+' : n}
-            </OptionButton>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* ---- Step 2: Income & Work ---- */
-function formatIncome(value: string): string {
-  const num = value.replace(/\D/g, '');
-  if (!num) return '';
-  return parseInt(num, 10).toLocaleString();
-}
-
-function StepIncomeWork({ form, setForm }: StepProps) {
-  const employmentOptions: { value: FormState['employmentStatus']; label: string; sub: string }[] = [
-    { value: 'employed', label: 'Employed', sub: 'Working for an employer' },
-    { value: 'self-employed', label: 'Self-Employed', sub: 'Freelance, contractor, own business' },
-    { value: 'unemployed', label: 'Unemployed', sub: 'Not currently working' },
-    { value: 'retired', label: 'Retired', sub: 'No longer in the workforce' },
-  ];
-
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-      {/* Annual income */}
-      <div>
-        <FieldLabel htmlFor="income-input">What is your household&apos;s annual income?</FieldLabel>
-        <FieldHint>Include all sources: wages, Social Security, disability payments, etc. Estimates are fine.</FieldHint>
-        <div style={{ position: 'relative', marginBottom: '0.75rem' }}>
-          <span style={{
-            position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)',
-            color: 'var(--text-muted)', fontSize: '1rem', fontWeight: 600,
-            pointerEvents: 'none',
-          }}>$</span>
-          <input
-            id="income-input"
-            type="text"
-            inputMode="numeric"
-            value={form.incomeUnknown ? '' : (form.annualIncome ? formatIncome(form.annualIncome) : '')}
-            onChange={e => {
-              const raw = e.target.value.replace(/\D/g, '');
-              setForm(f => ({ ...f, annualIncome: raw, incomeUnknown: false }));
-            }}
-            disabled={form.incomeUnknown}
-            placeholder="e.g. 35,000"
-            style={{
-              width: '100%',
-              maxWidth: '280px',
-              padding: '0.75rem 1rem 0.75rem 2rem',
-              fontSize: '1rem',
-              border: '2px solid var(--border)',
-              borderRadius: '10px',
-              background: form.incomeUnknown ? 'var(--sand)' : 'white',
-              opacity: form.incomeUnknown ? 0.5 : 1,
-              transition: 'border-color 0.15s',
-            }}
-          />
-        </div>
-        <label style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', cursor: 'pointer', color: 'var(--text-muted)', fontSize: '0.875rem' }}>
-          <input
-            type="checkbox"
-            checked={form.incomeUnknown}
-            onChange={e => setForm(f => ({ ...f, incomeUnknown: e.target.checked, annualIncome: e.target.checked ? '0' : '' }))}
-            style={{ width: '1rem', height: '1rem', accentColor: 'var(--primary)' }}
-          />
-          I&apos;m not sure / prefer not to say
-        </label>
-      </div>
-
-      <SectionDivider />
-
-      {/* Employment */}
-      <div>
-        <FieldLabel>What is your employment status?</FieldLabel>
-        <FieldHint>This affects which health insurance options are available.</FieldHint>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-          {employmentOptions.map(opt => (
-            <SelectionCard
-              key={opt.value}
-              selected={form.employmentStatus === opt.value}
-              onClick={() => setForm(f => ({ ...f, employmentStatus: opt.value }))}
-              label={opt.label}
-              sublabel={opt.sub}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* ---- Step 3: Current Coverage ---- */
-function StepCoverage({ form, setForm }: StepProps) {
-  const sources: { value: FormState['insuranceSource']; label: string; sub?: string }[] = [
-    { value: 'employer', label: 'Employer or job-based plan' },
-    { value: 'aca', label: 'ACA Marketplace (Healthcare.gov)' },
-    { value: 'medicaid', label: 'Medicaid / State health program' },
-    { value: 'medicare', label: 'Medicare' },
-    { value: 'none', label: 'No insurance', sub: 'Currently uninsured' },
-  ];
-
-  return (
-    <div>
-      <FieldLabel>What best describes your current health coverage?</FieldLabel>
-      <FieldHint>Select your current insurance source, or &quot;No insurance&quot; if you&apos;re uninsured.</FieldHint>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-        {sources.map(opt => (
-          <SelectionCard
-            key={opt.value}
-            selected={form.insuranceSource === opt.value}
-            onClick={() => setForm(f => ({
-              ...f,
-              currentlyInsured: opt.value !== 'none',
-              insuranceSource: opt.value,
-            }))}
-            label={opt.label}
-            sublabel={opt.sub}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-/* ---- Step 4: Additional Info ---- */
-function StepAdditional({ form, setForm }: StepProps) {
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-      {/* Children */}
-      <div>
-        <FieldLabel>Any children under 19 in your household?</FieldLabel>
-        <FieldHint>Children may qualify for CHIP or Medicaid even if adults don&apos;t.</FieldHint>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', maxWidth: '240px' }}>
-          {[true, false].map(val => (
-            <OptionButton
-              key={String(val)}
-              selected={form.hasChildren === val}
-              onClick={() => setForm(f => ({ ...f, hasChildren: val, numChildren: val ? (f.numChildren || '1') : '0' }))}
-            >
-              {val ? 'Yes' : 'No'}
-            </OptionButton>
-          ))}
-        </div>
-        {form.hasChildren && (
-          <div style={{ marginTop: '1rem' }}>
-            <FieldLabel>How many children under 19?</FieldLabel>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '0.5rem', maxWidth: '320px' }}>
-              {[1, 2, 3, 4, 5, 6].map(n => (
-                <OptionButton
-                  key={n}
-                  selected={form.numChildren === String(n)}
-                  onClick={() => setForm(f => ({ ...f, numChildren: String(n) }))}
-                  compact
-                >
-                  {n === 6 ? '6+' : n}
-                </OptionButton>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-
-      <SectionDivider />
-
-      {/* Pregnant */}
-      <div>
-        <FieldLabel>Are you currently pregnant?</FieldLabel>
-        <FieldHint>Pregnancy often unlocks expanded Medicaid coverage.</FieldHint>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.5rem', maxWidth: '300px' }}>
-          {[
-            { val: true as const, label: 'Yes' },
-            { val: false as const, label: 'No' },
-            { val: null, label: 'Skip' },
-          ].map(opt => (
-            <OptionButton
-              key={String(opt.val)}
-              selected={form.isPregnant === opt.val}
-              onClick={() => setForm(f => ({ ...f, isPregnant: opt.val }))}
-            >
-              {opt.label}
-            </OptionButton>
-          ))}
-        </div>
-      </div>
-
-      <SectionDivider />
-
-      {/* Disability */}
-      <div>
-        <FieldLabel>Do you have a disability?</FieldLabel>
-        <FieldHint>A disability that affects your ability to work may qualify you for additional programs.</FieldHint>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', maxWidth: '240px' }}>
-          {[{ val: true, label: 'Yes' }, { val: false, label: 'No' }].map(opt => (
-            <OptionButton
-              key={String(opt.val)}
-              selected={form.hasDisability === opt.val}
-              onClick={() => setForm(f => ({ ...f, hasDisability: opt.val }))}
-            >
-              {opt.label}
-            </OptionButton>
-          ))}
-        </div>
-      </div>
-
-      <SectionDivider />
-
-      {/* Veteran */}
-      <div>
-        <FieldLabel>Are you a U.S. veteran?</FieldLabel>
-        <FieldHint>Veterans may qualify for VA healthcare regardless of income.</FieldHint>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', maxWidth: '240px' }}>
-          {[{ val: true, label: 'Yes' }, { val: false, label: 'No' }].map(opt => (
-            <OptionButton
-              key={String(opt.val)}
-              selected={form.isVeteran === opt.val}
-              onClick={() => setForm(f => ({ ...f, isVeteran: opt.val }))}
-            >
-              {opt.label}
-            </OptionButton>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* ---- Validation ---- */
-function canAdvance(step: number, form: FormState): boolean {
-  switch (step) {
-    case 1: return !!form.state && !!form.age && parseInt(form.age) > 0 && !!form.householdSize;
-    case 2: return (form.incomeUnknown || (!!form.annualIncome && form.annualIncome !== '')) && !!form.employmentStatus;
-    case 3: return form.insuranceSource !== '';
-    case 4: return form.hasChildren !== null && form.hasDisability !== null && form.isVeteran !== null;
-    default: return true;
-  }
-}
-
-/* ---- Main Component ---- */
 export default function ScreenerContent({ locale }: { locale: string }) {
   const router = useRouter();
   const [step, setStep] = useState(1);
-  const [submitting, setSubmitting] = useState(false);
+  const [formData, setFormData] = useState<FormData>(initialFormData);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
-  const [form, setForm] = useState<FormState>({
-    state: '',
-    age: '',
-    householdSize: '',
-    annualIncome: '',
-    incomeUnknown: false,
-    employmentStatus: '',
-    currentlyInsured: null,
-    insuranceSource: '',
-    hasChildren: null,
-    numChildren: '0',
-    isPregnant: null,
-    hasDisability: null,
-    isVeteran: null,
-  });
+  const [validationError, setValidationError] = useState('');
 
-  const progress = (step / TOTAL_STEPS) * 100;
+  const otherLocale = locale === 'en' ? 'es' : 'en';
+  const steps = stepInfo(locale);
+  const currentStep = steps[step - 1];
 
-  async function handleSubmit() {
-    setSubmitting(true);
+  const updateField = <K extends keyof FormData>(field: K, value: FormData[K]) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+    setValidationError('');
+  };
+
+  const brandPrimary = '#0d9488'; // teal for toggle buttons
+
+  const inputStyles = "w-full px-4 py-3 border border-[#e2e8f0] rounded-lg bg-white text-[#1a202c] placeholder-[#a0aec0] focus:outline-none focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition-shadow";
+  const selectStyles = "w-full px-4 py-3 border border-[#e2e8f0] rounded-lg bg-white text-[#1a202c] focus:outline-none focus:ring-2 focus:ring-[#0d9488] focus:border-transparent transition-shadow";
+  const labelStyles = "block text-sm font-medium text-[#1a202c] mb-2";
+
+  const toggleStyle = (isSelected: boolean) => {
+    if (isSelected) {
+      return {
+        className: 'py-2 px-3 rounded-lg border-2 text-sm font-medium transition-all',
+        style: { borderColor: brandPrimary, backgroundColor: brandPrimary, color: 'white' },
+      };
+    }
+    return {
+      className: 'py-2 px-3 rounded-lg border-2 text-sm font-medium transition-all border-[#e2e8f0] hover:border-[#cbd5e0] text-[#1a202c]',
+      style: {} as React.CSSProperties,
+    };
+  };
+
+  const toggleStyleLg = (isSelected: boolean) => {
+    if (isSelected) {
+      return {
+        className: 'py-3 px-4 rounded-lg border-2 font-medium transition-all',
+        style: { borderColor: brandPrimary, backgroundColor: brandPrimary, color: 'white' },
+      };
+    }
+    return {
+      className: 'py-3 px-4 rounded-lg border-2 font-medium transition-all border-[#e2e8f0] hover:border-[#cbd5e0] text-[#1a202c]',
+      style: {} as React.CSSProperties,
+    };
+  };
+
+  const validateStep = (): string | null => {
+    if (step === 1) {
+      if (!formData.state) {
+        return locale === 'es' ? 'Por favor selecciona tu estado.' : 'Please select your state.';
+      }
+    }
+    if (step === 2) {
+      if (!formData.age || formData.age < 1) {
+        return locale === 'es' ? 'Por favor ingresa tu edad.' : 'Please enter your age.';
+      }
+    }
+    return null;
+  };
+
+  const handleNext = () => {
+    const err = validateStep();
+    if (err) {
+      setValidationError(err);
+      return;
+    }
+    setValidationError('');
+    if (step < TOTAL_STEPS) setStep(step + 1);
+  };
+
+  const handleBack = () => {
+    if (step > 1) setStep(step - 1);
+  };
+
+  const handleSubmit = async () => {
+    setIsSubmitting(true);
     setError('');
     try {
       const payload = {
-        state: form.state,
-        age: parseInt(form.age) || 30,
-        householdSize: parseInt(form.householdSize) || 1,
-        annualIncome: form.incomeUnknown ? 0 : (parseInt(form.annualIncome) || 0),
-        employmentStatus: form.employmentStatus || 'unemployed',
-        isPregnant: form.isPregnant ?? false,
-        hasDisability: form.hasDisability ?? false,
-        currentlyInsured: form.currentlyInsured ?? false,
-        insuranceSource: form.insuranceSource || 'none',
-        isVeteran: form.isVeteran ?? false,
-        numChildren: parseInt(form.numChildren) || 0,
+        state: formData.state,
+        age: formData.age,
+        householdSize: formData.householdSize,
+        annualIncome: formData.annualIncome,
+        employmentStatus: formData.employmentStatus || 'unemployed',
+        isPregnant: formData.isPregnant,
+        hasDisability: formData.hasDisability,
+        currentlyInsured: formData.currentlyInsured,
+        insuranceSource: formData.insuranceSource || 'none',
+        isVeteran: formData.isVeteran,
+        numChildren: formData.numChildren,
+        citizenshipStatus: formData.citizenshipStatus,
         language: locale,
       };
 
@@ -543,239 +185,397 @@ export default function ScreenerContent({ locale }: { locale: string }) {
       router.push(`/${locale}/results/${id}`);
     } catch (e) {
       console.error(e);
-      setError('Something went wrong. Please try again.');
-      setSubmitting(false);
+      setError(locale === 'es' ? 'Algo salio mal. Por favor intenta de nuevo.' : 'Something went wrong. Please try again.');
+      setIsSubmitting(false);
     }
-  }
-
-  function renderStep() {
-    switch (step) {
-      case 1: return <StepAboutYou form={form} setForm={setForm} />;
-      case 2: return <StepIncomeWork form={form} setForm={setForm} />;
-      case 3: return <StepCoverage form={form} setForm={setForm} />;
-      case 4: return <StepAdditional form={form} setForm={setForm} />;
-      default: return null;
-    }
-  }
+  };
 
   const isLast = step === TOTAL_STEPS;
-  const canGoNext = canAdvance(step, form);
-  const meta = STEP_META[step - 1];
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      background: 'linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%)',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      padding: '1.5rem 1rem 3rem',
-    }}>
+    <main className="min-h-screen bg-[#f8fafc]">
       {/* Header */}
-      <div style={{ width: '100%', maxWidth: '600px', marginBottom: '1.5rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-          <span style={{ fontWeight: 700, fontSize: '1.1rem', color: 'var(--primary)' }}>CoveredUSA</span>
-          <span style={{ fontSize: '0.825rem', color: 'var(--text-muted)', fontWeight: 500 }}>
-            Step {step} of {TOTAL_STEPS}
-          </span>
-        </div>
-
-        {/* Progress bar */}
-        <div style={{
-          height: '6px',
-          background: 'var(--sand)',
-          borderRadius: '999px',
-          overflow: 'hidden',
-        }}>
-          <div style={{
-            height: '100%',
-            width: `${progress}%`,
-            background: 'linear-gradient(90deg, var(--primary), var(--teal))',
-            borderRadius: '999px',
-            transition: 'width 0.4s ease',
-          }} />
-        </div>
-
-        {/* Step indicators */}
-        <div style={{ display: 'flex', gap: '0.25rem', marginTop: '0.75rem' }}>
-          {STEP_META.map((s, i) => (
-            <div
-              key={i}
-              style={{
-                flex: 1,
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.375rem',
-                padding: '0.375rem 0.5rem',
-                borderRadius: '8px',
-                background: step === i + 1 ? 'var(--cream-dark)' : 'transparent',
-                cursor: i + 1 < step ? 'pointer' : 'default',
-                transition: 'background 0.15s',
-              }}
-              onClick={() => { if (i + 1 < step) setStep(i + 1); }}
-            >
-              <span style={{
-                width: '20px',
-                height: '20px',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '0.65rem',
-                fontWeight: 700,
-                background: i + 1 <= step ? 'var(--primary)' : 'var(--sand)',
-                color: i + 1 <= step ? 'white' : 'var(--text-muted)',
-                flexShrink: 0,
-                transition: 'all 0.15s',
-              }}>
-                {i + 1 < step ? '✓' : i + 1}
-              </span>
-              <span style={{
-                fontSize: '0.7rem',
-                fontWeight: step === i + 1 ? 600 : 400,
-                color: step === i + 1 ? 'var(--text-primary)' : 'var(--text-muted)',
-                whiteSpace: 'nowrap',
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
-                display: 'none',
-              }}
-              className="sm:!inline"
-              >
-                {s.title}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Card */}
-      <div style={{
-        width: '100%',
-        maxWidth: '600px',
-        background: 'white',
-        borderRadius: '20px',
-        padding: '2rem',
-        boxShadow: 'var(--shadow-lg)',
-        border: '1px solid var(--border-light)',
-      }}>
-        {/* Step header */}
-        <div style={{ marginBottom: '1.75rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '0.375rem' }}>
-            <span style={{ fontSize: '1.25rem' }}>{meta.icon}</span>
-            <h2 style={{
-              fontSize: '1.35rem',
-              fontWeight: 700,
-              color: 'var(--text-primary)',
-              margin: 0,
-              fontFamily: 'var(--font-display)',
-            }}>
-              {meta.title}
-            </h2>
-          </div>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
-            {meta.subtitle}
-          </p>
-        </div>
-
-        {renderStep()}
-      </div>
-
-      {/* Navigation */}
-      <div style={{
-        width: '100%',
-        maxWidth: '600px',
-        marginTop: '1.25rem',
-        display: 'flex',
-        gap: '0.75rem',
-      }}>
-        {step > 1 && (
-          <button
-            type="button"
-            onClick={() => setStep(s => s - 1)}
-            style={{
-              flex: 1,
-              padding: '0.875rem',
-              border: '2px solid var(--border)',
-              borderRadius: '12px',
-              background: 'white',
-              color: 'var(--text-secondary)',
-              fontWeight: 600,
-              fontSize: '0.95rem',
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-            }}
-          >
-            Back
-          </button>
-        )}
-
-        {!isLast ? (
-          <button
-            type="button"
-            onClick={() => setStep(s => s + 1)}
-            disabled={!canGoNext}
-            style={{
-              flex: step > 1 ? 2 : 1,
-              padding: '0.875rem',
-              border: 'none',
-              borderRadius: '12px',
-              background: canGoNext ? 'var(--primary)' : 'var(--sand)',
-              color: canGoNext ? 'white' : 'var(--text-muted)',
-              fontWeight: 700,
-              fontSize: '0.95rem',
-              cursor: canGoNext ? 'pointer' : 'not-allowed',
-              transition: 'all 0.2s ease',
-              boxShadow: canGoNext ? 'var(--shadow-primary)' : 'none',
-            }}
-          >
-            Continue
-          </button>
-        ) : (
-          <button
-            type="button"
-            onClick={handleSubmit}
-            disabled={!canGoNext || submitting}
-            style={{
-              flex: 2,
-              padding: '0.875rem',
-              border: 'none',
-              borderRadius: '12px',
-              background: (canGoNext && !submitting) ? 'linear-gradient(135deg, var(--primary), var(--teal))' : 'var(--sand)',
-              color: (canGoNext && !submitting) ? 'white' : 'var(--text-muted)',
-              fontWeight: 700,
-              fontSize: '0.95rem',
-              cursor: (canGoNext && !submitting) ? 'pointer' : 'not-allowed',
-              boxShadow: (canGoNext && !submitting) ? 'var(--shadow-primary)' : 'none',
-              transition: 'all 0.2s ease',
-            }}
-          >
-            {submitting ? 'Checking eligibility...' : 'See my results'}
-          </button>
-        )}
-      </div>
-
-      {error && (
-        <p style={{ color: '#dc2626', marginTop: '1rem', textAlign: 'center', fontSize: '0.875rem' }}>{error}</p>
-      )}
-
-      {/* Trust signals */}
-      <div style={{
-        marginTop: '1.5rem',
-        display: 'flex',
-        gap: '1.5rem',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-      }}>
-        {['Free & confidential', 'No sign-up required', 'Takes 2 minutes'].map(t => (
-          <span key={t} style={{ fontSize: '0.775rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <circle cx="7" cy="7" r="6" stroke="var(--success)" strokeWidth="1.5" />
-              <path d="M4.5 7L6 8.5L9.5 5" stroke="var(--success)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <header style={{ backgroundColor: '#0369a1', color: 'white' }}>
+        <div className="max-w-2xl mx-auto px-6 py-3 flex items-center justify-between">
+          <Link href={`/${locale}`} className="header-link text-sm flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            {t}
-          </span>
-        ))}
+            {locale === 'es' ? 'Volver al sitio' : 'Back to site'}
+          </Link>
+          <div className="flex items-center gap-3">
+            <a
+              href={`/${otherLocale}/screener`}
+              className="text-xs font-medium px-2.5 py-1 rounded-full border transition-all"
+              style={{ borderColor: '#0d9488', color: '#0d9488' }}
+            >
+              {locale === 'en' ? 'ES' : 'EN'}
+            </a>
+            <span className="font-semibold">CoveredUSA</span>
+          </div>
+        </div>
+      </header>
+
+      <div className="max-w-2xl mx-auto px-6 py-8">
+        {/* Page Title */}
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold text-[#1a202c]">
+            {locale === 'es' ? 'Verificador de Elegibilidad' : 'Health Coverage Screener'}
+          </h1>
+        </div>
+
+        {/* Progress */}
+        <div className="mb-8">
+          <div className="flex items-center justify-between mb-3">
+            <div>
+              <p className="text-sm text-[#718096]">
+                {locale === 'es' ? `Paso ${step} de ${TOTAL_STEPS}` : `Step ${step} of ${TOTAL_STEPS}`}
+              </p>
+              <p className="font-semibold text-[#1a202c]">{currentStep.title}</p>
+            </div>
+            <p className="text-sm font-medium" style={{ color: brandPrimary }}>
+              {Math.round((step / TOTAL_STEPS) * 100)}%
+            </p>
+          </div>
+          <div className="h-2 bg-[#e2e8f0] rounded-full overflow-hidden">
+            <div
+              className="h-full rounded-full transition-all duration-300"
+              style={{ backgroundColor: brandPrimary, width: `${(step / TOTAL_STEPS) * 100}%` }}
+            />
+          </div>
+        </div>
+
+        {/* Form Card */}
+        <div className="bg-white border border-[#e2e8f0] rounded-xl p-6 md:p-8 shadow-sm">
+
+          {/* Step 1: Location & Household */}
+          {step === 1 && (
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-xl font-semibold text-[#1a202c] mb-1">
+                  {locale === 'es' ? 'Ubicacion y Hogar' : 'Location & Household'}
+                </h2>
+                <p className="text-sm text-[#718096]">
+                  {locale === 'es' ? 'Los programas de cobertura varian por estado.' : 'Coverage programs vary by state.'}
+                </p>
+              </div>
+
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? 'Estado de residencia' : 'What state do you live in?'}
+                </label>
+                <select
+                  value={formData.state}
+                  onChange={e => updateField('state', e.target.value)}
+                  className={selectStyles}
+                >
+                  <option value="">{locale === 'es' ? '-- Selecciona tu estado --' : '-- Select your state --'}</option>
+                  {STATES.map(([code, name]) => (
+                    <option key={code} value={code}>{name}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? 'Tamano del hogar' : 'Household size'}
+                </label>
+                <p className="text-sm text-[#718096] mb-2">
+                  {locale === 'es' ? 'Incluye a ti mismo, tu conyuge y dependientes.' : 'Include yourself, your spouse/partner, and any dependents.'}
+                </p>
+                <select
+                  value={formData.householdSize}
+                  onChange={e => updateField('householdSize', parseInt(e.target.value))}
+                  className={selectStyles}
+                >
+                  {[1,2,3,4,5,6,7,8,9,10].map(n => (
+                    <option key={n} value={n}>{n} {n === 1 ? (locale === 'es' ? 'persona' : 'person') : (locale === 'es' ? 'personas' : 'people')}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? 'Estado de ciudadania del hogar' : 'Household citizenship status'}
+                </label>
+                <p className="text-sm text-[#718096] mb-2">
+                  {locale === 'es'
+                    ? 'Esto ayuda a calcular los beneficios correctamente.'
+                    : 'This helps calculate benefits accurately for mixed-status households.'}
+                </p>
+                <select
+                  value={formData.citizenshipStatus}
+                  onChange={e => updateField('citizenshipStatus', e.target.value as FormData['citizenshipStatus'])}
+                  className={selectStyles}
+                >
+                  <option value="all">
+                    {locale === 'es' ? 'Todos son ciudadanos o residentes permanentes (green card)' : 'Everyone is a US citizen or green card holder'}
+                  </option>
+                  <option value="mixed">
+                    {locale === 'es' ? 'Algunos miembros son ciudadanos o residentes permanentes' : 'Some members are citizens or green card holders'}
+                  </option>
+                  <option value="none">
+                    {locale === 'es' ? 'Nadie en mi hogar es ciudadano o residente permanente' : 'No one in my household is a citizen or green card holder'}
+                  </option>
+                </select>
+              </div>
+            </div>
+          )}
+
+          {/* Step 2: Income & Employment */}
+          {step === 2 && (
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-xl font-semibold text-[#1a202c] mb-1">
+                  {locale === 'es' ? 'Ingresos y Empleo' : 'Income & Employment'}
+                </h2>
+                <p className="text-sm text-[#718096]">
+                  {locale === 'es' ? 'Tus ingresos y situacion laboral.' : 'Your earnings and employment situation.'}
+                </p>
+              </div>
+
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? 'Ingresos anuales del hogar' : 'Annual household income'}
+                </label>
+                <p className="text-sm text-[#718096] mb-2">
+                  {locale === 'es' ? 'Incluye todos los ingresos: salarios, Seguro Social, etc. Las estimaciones son validas.' : 'Include all sources: wages, Social Security, disability payments, etc. Estimates are fine.'}
+                </p>
+                <div className="relative">
+                  <span className="absolute left-4 top-3.5 text-[#718096]">$</span>
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    value={formData.annualIncome ? formData.annualIncome.toLocaleString('en-US') : ''}
+                    onChange={e => {
+                      const raw = e.target.value.replace(/[^0-9]/g, '');
+                      updateField('annualIncome', parseInt(raw) || 0);
+                    }}
+                    className={`${inputStyles} pl-8`}
+                    placeholder={locale === 'es' ? 'ej. 35,000' : 'e.g. 35,000'}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? 'Situacion laboral' : 'Employment status'}
+                </label>
+                <select
+                  value={formData.employmentStatus}
+                  onChange={e => updateField('employmentStatus', e.target.value)}
+                  className={selectStyles}
+                >
+                  <option value="">{locale === 'es' ? '-- Selecciona --' : '-- Select --'}</option>
+                  <option value="employed">{locale === 'es' ? 'Empleado' : 'Employed'}</option>
+                  <option value="self-employed">{locale === 'es' ? 'Trabajador independiente' : 'Self-employed'}</option>
+                  <option value="unemployed">{locale === 'es' ? 'Desempleado' : 'Unemployed'}</option>
+                  <option value="retired">{locale === 'es' ? 'Jubilado' : 'Retired'}</option>
+                </select>
+              </div>
+            </div>
+          )}
+
+          {/* Step 3: Your Information */}
+          {step === 3 && (
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-xl font-semibold text-[#1a202c] mb-1">
+                  {locale === 'es' ? 'Tu Informacion' : 'Your Information'}
+                </h2>
+                <p className="text-sm text-[#718096]">
+                  {locale === 'es' ? 'Datos personales para determinar tu elegibilidad.' : 'Personal details to refine your results.'}
+                </p>
+              </div>
+
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? 'Tu edad' : 'Your age'}
+                </label>
+                <input
+                  type="number"
+                  value={formData.age || ''}
+                  onChange={e => updateField('age', parseInt(e.target.value) || 0)}
+                  className={inputStyles}
+                  min={0}
+                  max={120}
+                  placeholder={locale === 'es' ? 'Ingresa tu edad' : 'Enter your age'}
+                  style={{ maxWidth: '160px' }}
+                />
+              </div>
+
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? 'Ninos menores de 19 en tu hogar' : 'Children under 19 in your household'}
+                </label>
+                <select
+                  value={formData.numChildren}
+                  onChange={e => updateField('numChildren', parseInt(e.target.value))}
+                  className={selectStyles}
+                >
+                  {[0,1,2,3,4,5,6,7,8].map(n => (
+                    <option key={n} value={n}>{n}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="bg-[#f8fafc] rounded-lg p-4 space-y-3">
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={formData.isPregnant}
+                    onChange={e => updateField('isPregnant', e.target.checked)}
+                    className="mt-0.5"
+                  />
+                  <span className="text-[#1a202c] text-sm">
+                    {locale === 'es' ? 'Estoy embarazada actualmente' : 'I am currently pregnant'}
+                  </span>
+                </label>
+
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={formData.hasDisability}
+                    onChange={e => updateField('hasDisability', e.target.checked)}
+                    className="mt-0.5"
+                  />
+                  <span className="text-[#1a202c] text-sm">
+                    {locale === 'es' ? 'Tengo una discapacidad que afecta mi capacidad de trabajar' : 'I have a disability that affects my ability to work'}
+                  </span>
+                </label>
+
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={formData.isVeteran}
+                    onChange={e => updateField('isVeteran', e.target.checked)}
+                    className="mt-0.5"
+                  />
+                  <span className="text-[#1a202c] text-sm">
+                    {locale === 'es' ? 'Soy veterano de las fuerzas armadas de EE.UU.' : 'I am a U.S. military veteran'}
+                  </span>
+                </label>
+              </div>
+            </div>
+          )}
+
+          {/* Step 4: Current Coverage */}
+          {step === 4 && (
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-xl font-semibold text-[#1a202c] mb-1">
+                  {locale === 'es' ? 'Cobertura Actual' : 'Current Coverage'}
+                </h2>
+                <p className="text-sm text-[#718096]">
+                  {locale === 'es' ? 'Tu seguro de salud actual.' : 'Your existing health insurance.'}
+                </p>
+              </div>
+
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? 'Tienes seguro de salud actualmente?' : 'Do you currently have health insurance?'}
+                </label>
+                <div className="grid grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => updateField('currentlyInsured', true)}
+                    {...toggleStyleLg(formData.currentlyInsured)}
+                  >
+                    {locale === 'es' ? 'Si' : 'Yes'}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      updateField('currentlyInsured', false);
+                      updateField('insuranceSource', '');
+                    }}
+                    {...toggleStyleLg(!formData.currentlyInsured)}
+                  >
+                    {locale === 'es' ? 'No' : 'No'}
+                  </button>
+                </div>
+              </div>
+
+              {formData.currentlyInsured && (
+                <div>
+                  <label className={labelStyles}>
+                    {locale === 'es' ? 'Fuente de tu seguro' : 'Source of your insurance'}
+                  </label>
+                  <select
+                    value={formData.insuranceSource}
+                    onChange={e => updateField('insuranceSource', e.target.value)}
+                    className={selectStyles}
+                  >
+                    <option value="">{locale === 'es' ? '-- Selecciona --' : '-- Select --'}</option>
+                    <option value="employer">{locale === 'es' ? 'Empleador o plan laboral' : 'Employer or job-based plan'}</option>
+                    <option value="aca">{locale === 'es' ? 'Mercado de ACA (Healthcare.gov)' : 'ACA Marketplace (Healthcare.gov)'}</option>
+                    <option value="medicaid">{locale === 'es' ? 'Medicaid / Programa estatal' : 'Medicaid / State health program'}</option>
+                    <option value="medicare">{locale === 'es' ? 'Medicare' : 'Medicare'}</option>
+                    <option value="other">{locale === 'es' ? 'Otro' : 'Other'}</option>
+                  </select>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Validation Error */}
+          {validationError && (
+            <div className="mt-6 p-4 bg-amber-50 border border-amber-200 text-amber-700 rounded-lg text-sm">
+              {validationError}
+            </div>
+          )}
+
+          {/* Submit Error */}
+          {error && (
+            <div className="mt-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">
+              {error}
+            </div>
+          )}
+
+          {/* Navigation Buttons */}
+          <div className="flex gap-4 mt-8">
+            {step > 1 && (
+              <button
+                type="button"
+                onClick={handleBack}
+                className="flex-1 py-3 px-4 border-2 border-[#e2e8f0] rounded-lg font-medium text-[#1a202c] hover:bg-[#f8fafc] transition-colors"
+              >
+                {locale === 'es' ? 'Atras' : 'Back'}
+              </button>
+            )}
+
+            {!isLast ? (
+              <button
+                type="button"
+                onClick={handleNext}
+                className="flex-1 py-3 px-4 rounded-lg font-medium transition-colors"
+                style={{ backgroundColor: '#0369a1', color: 'white' }}
+              >
+                {locale === 'es' ? 'Continuar' : 'Continue'}
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={handleSubmit}
+                disabled={isSubmitting}
+                className="flex-1 py-3 px-4 rounded-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                style={{ backgroundColor: '#0369a1', color: 'white' }}
+              >
+                {isSubmitting
+                  ? (locale === 'es' ? 'Verificando...' : 'Checking eligibility...')
+                  : (locale === 'es' ? 'Ver mis resultados' : 'See my results')}
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Privacy Note */}
+        <p className="text-center text-sm text-[#718096] mt-6">
+          {locale === 'es'
+            ? 'Tu informacion es confidencial y nunca se vende. Sin registro requerido.'
+            : 'Your information is confidential and never sold. No sign-up required.'}
+        </p>
       </div>
-    </div>
+    </main>
   );
 }
