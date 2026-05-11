@@ -24,65 +24,58 @@ export async function generateMetadata({
   };
 }
 
+// All icons use a single consistent teal color — matches BenefitsUSA's single-color approach
+const ICON_COLOR = '#0d9488';
+
 const programs = [
   {
     name: 'Medicaid',
     desc: 'Free health coverage for low-income individuals and families',
-    color: '#059669',
-    bgColor: '#d1fae5',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M10 12h4M12 10v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+        <path d="M10 12h4M12 10v4" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
     name: 'ACA Marketplace',
     desc: 'Subsidized health insurance plans for individuals and families',
-    color: '#0d9488',
-    bgColor: '#ccfbf1',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <rect x="3" y="6" width="18" height="14" rx="3" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M14 6h2v4h4v2h-4v4h-2v-4h-4V8h4V6z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <rect x="3" y="6" width="18" height="14" rx="3" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+        <path d="M9 12h6M12 9v6" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
     name: 'Medicare',
     desc: 'Health coverage for adults 65+ or with qualifying disabilities',
-    color: '#7c3aed',
-    bgColor: '#ede9fe',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M12 7v5l3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M8 17h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="12" cy="12" r="9" fill={ICON_COLOR} opacity="0.12" stroke={ICON_COLOR} strokeWidth="1.5" />
+        <path d="M12 7v5l3 3" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M8 17h8" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
     name: 'Medicare Savings',
     desc: 'Help paying Medicare premiums and out-of-pocket costs',
-    color: '#0d9488',
-    bgColor: '#ccfbf1',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M12 7v10M9 9.5h4.5a2 2 0 010 4H9m0 0h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="12" cy="12" r="9" fill={ICON_COLOR} opacity="0.12" stroke={ICON_COLOR} strokeWidth="1.5" />
+        <path d="M12 7v10M9 9.5h4.5a2 2 0 010 4H9m0 0h5" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
   {
     name: 'CHIP',
     desc: 'Free health coverage for children in your household',
-    color: '#c2732a',
-    bgColor: '#fef3c7',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="8" r="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M5 20c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="12" cy="8" r="4" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+        <path d="M5 20c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -135,15 +128,6 @@ const webAppSchema = {
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
 };
 
-const organizationSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'CoveredUSA',
-  url: 'https://coveredusa.org',
-  description: 'Free health insurance eligibility screening connecting Americans with Medicaid, Medicare, ACA plans, and CHIP coverage.',
-  foundingDate: '2026',
-};
-
 const states = [
   ['Alabama', 'al'], ['Alaska', 'ak'], ['Arizona', 'az'], ['Arkansas', 'ar'],
   ['California', 'ca'], ['Colorado', 'co'], ['Connecticut', 'ct'], ['Delaware', 'de'],
@@ -160,6 +144,45 @@ const states = [
   ['Wisconsin', 'wi'], ['Wyoming', 'wy'],
 ];
 
+const dataSourceIcons: Record<string, React.ReactNode> = {
+  healthcareGov: (
+    <svg viewBox="0 0 20 20" fill="none" className="w-5 h-5">
+      <path d="M14 6h2v2h2v2h-2v2h-2v-2h-2V8h2V6z" fill="currentColor" opacity="0.7"/>
+      <rect x="2" y="3" width="16" height="14" rx="3" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+    </svg>
+  ),
+  medicareGov: (
+    <svg viewBox="0 0 20 20" fill="none" className="w-5 h-5">
+      <circle cx="10" cy="10" r="7" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+      <path d="M10 6v4l3 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
+    </svg>
+  ),
+  medicaidGov: (
+    <svg viewBox="0 0 20 20" fill="none" className="w-5 h-5">
+      <path d="M10 17s-6-3.5-6-7.5a4 4 0 018 0 4 4 0 018 0c0 4-6 7.5-6 7.5z" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+      <path d="M8 10h4M10 8v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
+    </svg>
+  ),
+  cmsGov: (
+    <svg viewBox="0 0 20 20" fill="none" className="w-5 h-5">
+      <path d="M10 2L3 6v5c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-4z" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+      <path d="M7 10l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.7"/>
+    </svg>
+  ),
+  benefitsGov: (
+    <svg viewBox="0 0 20 20" fill="none" className="w-5 h-5">
+      <rect x="3" y="5" width="14" height="11" rx="2" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+      <path d="M7 9h6M7 12h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
+    </svg>
+  ),
+  ssaGov: (
+    <svg viewBox="0 0 20 20" fill="none" className="w-5 h-5">
+      <circle cx="10" cy="7" r="3" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+      <path d="M4 17c0-3.31 2.69-6 6-6s6 2.69 6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
+    </svg>
+  ),
+};
+
 export default async function HomePage({
   params,
 }: {
@@ -173,7 +196,6 @@ export default async function HomePage({
     <main className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
 
       {/* ── HERO ── */}
       <section className="warm-texture" style={{ position: 'relative', overflow: 'hidden' }}>
@@ -181,7 +203,7 @@ export default async function HomePage({
           <div className="max-w-2xl mx-auto text-center">
             <div
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-7 text-sm font-semibold"
-              style={{ background: 'white', color: 'var(--primary)', border: '1px solid var(--cream-dark)', boxShadow: 'var(--shadow-sm)' }}
+              style={{ background: 'white', color: 'var(--primary)', border: '1px solid var(--border)', boxShadow: 'var(--shadow-sm)' }}
             >
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <circle cx="7" cy="7" r="3.5" fill="var(--success)" />
@@ -224,7 +246,6 @@ export default async function HomePage({
               </span>
             </div>
 
-            {/* Trust badges */}
             <div className="flex flex-wrap justify-center gap-x-7 gap-y-3">
               {[
                 { text: t('trust1'), icon: (
@@ -257,56 +278,61 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ── DATA SOURCES TRUST BAR ── */}
+      {/* ── DATA SOURCES BAR — clean, plain, like BenefitsUSA ── */}
       <section style={{ background: 'white', borderTop: '1px solid var(--border-light)', borderBottom: '1px solid var(--border-light)' }}>
-        <div className="max-w-6xl mx-auto px-6 py-5">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            <span style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', fontFamily: 'var(--font-body)' }}>
-              Data sourced from
-            </span>
+        <div className="max-w-6xl mx-auto px-6 py-8">
+          <p
+            className="text-center text-xs font-semibold uppercase tracking-widest mb-6"
+            style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body)' }}
+          >
+            Data sourced from
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             {[
-              { label: 'HealthCare.gov', color: '#0d9488' },
-              { label: 'Medicare.gov', color: '#1a3a6e' },
-              { label: 'Medicaid.gov', color: '#205493' },
-              { label: 'CMS.gov', color: '#0071bc' },
-              { label: 'Benefits.gov', color: '#2c4f00' },
-              { label: 'SSA.gov', color: '#003087' },
+              { key: 'healthcareGov', label: 'HealthCare.gov' },
+              { key: 'medicareGov', label: 'Medicare.gov' },
+              { key: 'medicaidGov', label: 'Medicaid.gov' },
+              { key: 'cmsGov', label: 'CMS.gov' },
+              { key: 'benefitsGov', label: 'Benefits.gov' },
+              { key: 'ssaGov', label: 'SSA.gov' },
             ].map((source) => (
-              <span
-                key={source.label}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold"
-                style={{ background: 'var(--cream)', color: source.color, border: '1px solid var(--border-light)', fontFamily: 'var(--font-body)' }}
+              <div
+                key={source.key}
+                className="flex items-center gap-2"
+                style={{ color: 'var(--text-muted)' }}
               >
-                <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
-                  <path d="M6 1L1 3.5v3C1 9.5 3.2 11.8 6 12.5c2.8-.7 5-3 5-6v-3L6 1z" fill={source.color} opacity="0.2" stroke={source.color} strokeWidth="1" />
-                  <path d="M4 6l1.5 1.5L8 4.5" stroke={source.color} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                {source.label}
-              </span>
+                {dataSourceIcons[source.key]}
+                <span className="text-sm font-medium" style={{ fontFamily: 'var(--font-body)' }}>
+                  {source.label}
+                </span>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── STATS BANNER ── */}
-      <section style={{ background: 'var(--primary-deeper)', color: 'white' }}>
-        <div className="max-w-6xl mx-auto px-6 py-10">
-          <div className="grid grid-cols-3 gap-6 text-center">
+      <section style={{ background: 'var(--primary-deeper)' }}>
+        <div className="max-w-6xl mx-auto px-6 py-12 md:py-14">
+          <div className="grid grid-cols-3 gap-8 md:gap-12 text-center">
             {[
-              { number: '23M+', label: 'ACA Marketplace enrollees in 2026' },
-              { number: '1 in 3', label: 'Americans qualify for financial help' },
-              { number: '4', label: 'Health programs checked instantly' },
+              { number: '23M+', label: 'Americans enrolled through ACA Marketplace in 2026' },
+              { number: '1 in 3', label: 'Americans qualify for financial help with health coverage' },
+              { number: '4', label: 'Health programs checked with one free screener' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div
-                  className="text-3xl md:text-4xl font-bold mb-1"
-                  style={{ fontFamily: 'var(--font-display)', color: 'var(--teal-light)' }}
+                  className="text-3xl md:text-4xl font-bold text-white mb-2"
+                  style={{ fontFamily: 'var(--font-display)' }}
                 >
                   {stat.number}
                 </div>
-                <div style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', fontFamily: 'var(--font-body)' }}>
+                <p
+                  className="text-sm leading-relaxed max-w-xs mx-auto"
+                  style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)' }}
+                >
                   {stat.label}
-                </div>
+                </p>
               </div>
             ))}
           </div>
@@ -336,12 +362,11 @@ export default async function HomePage({
 
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 relative">
+              {/* Connecting line — solid, no gradient */}
               <div
                 className="hidden md:block absolute"
-                style={{ top: '44px', left: 'calc(16.67% + 28px)', right: 'calc(16.67% + 28px)', height: '2px', background: 'var(--cream-dark)', zIndex: 0 }}
-              >
-                <div style={{ height: '100%', background: 'linear-gradient(90deg, var(--primary), var(--accent))', borderRadius: '999px' }} />
-              </div>
+                style={{ top: '44px', left: 'calc(16.67% + 28px)', right: 'calc(16.67% + 28px)', height: '1px', background: 'var(--border)', zIndex: 0 }}
+              />
 
               {[
                 {
@@ -413,40 +438,47 @@ export default async function HomePage({
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {programs.map((program) => (
-              <div
+              <Link
                 key={program.name}
-                className="card"
-                style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.875rem' }}
+                href={`/${locale}/screener`}
+                className="rounded-xl px-5 py-4 hover:shadow-sm transition-all duration-200 flex items-start gap-3.5 no-underline"
+                style={{ background: 'white', border: '1px solid var(--border-light)' }}
               >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: program.bgColor, color: program.color }}
+                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
+                  style={{ background: 'var(--cream-dark)' }}
                 >
                   {program.icon}
                 </div>
                 <div>
-                  <h3 className="font-bold text-base mb-1" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}>
+                  <h3
+                    className="font-semibold text-base"
+                    style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
+                  >
                     {program.name}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)', margin: 0, fontFamily: 'var(--font-body)' }}>
+                  <p
+                    className="text-sm mt-0.5 leading-relaxed"
+                    style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
+                  >
                     {program.desc}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
             <div
-              className="card flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg, var(--primary-lightest), var(--cream))', border: '1px solid var(--border-light)', minHeight: '140px' }}
+              className="rounded-xl px-5 py-4 flex items-center justify-center"
+              style={{ background: 'var(--primary-lightest)', border: '1px solid var(--border-light)', minHeight: '96px' }}
             >
               <Link
                 href={`/${locale}/screener`}
-                className="font-semibold flex items-center gap-2 text-base"
+                className="font-semibold flex items-center gap-2 text-base no-underline"
                 style={{ color: 'var(--primary)', fontFamily: 'var(--font-display)' }}
               >
                 Check all 5 programs
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
@@ -463,19 +495,19 @@ export default async function HomePage({
               className="text-3xl md:text-4xl font-bold mb-3"
               style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
-              Find coverage in your state
+              Find benefits in your state
             </h2>
             <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body)' }}>
-              Medicaid income limits, ACA plans, and more — state by state.
+              Health coverage options, income limits, and enrollment info — state by state.
             </p>
           </div>
           <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-x-6">
-            {states.map(([name, code]) => (
-              <div key={code} className="mb-2 break-inside-avoid">
+            {states.map(([name]) => (
+              <div key={name} className="mb-2 break-inside-avoid">
                 <Link
                   href={`/${locale}/screener`}
-                  className="state-link text-sm block py-0.5 hover:text-teal-600 transition-colors"
-                  style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
+                  style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)', fontSize: '0.875rem', display: 'block', padding: '2px 0', textDecoration: 'none' }}
+                  className="hover:text-teal-600 transition-colors"
                 >
                   {name}
                 </Link>
@@ -500,26 +532,26 @@ export default async function HomePage({
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
             {[
               {
                 title: 'Shared only with your consent',
-                desc: 'Your data is only shared with licensed agents if you ask to be connected. We never sell to advertisers or data brokers.',
+                desc: 'Your information is only shared with licensed agents if you ask to be connected. We never share with advertisers or data brokers.',
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
-                    <path d="M12 2L4 6v6c0 5.52 3.44 10.24 8 12 4.56-1.76 8-6.48 8-12V6l-8-4z" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
-                    <path d="M9 12l2 2 4-4" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M12 2L4 6v6c0 5.52 3.44 10.24 8 12 4.56-1.76 8-6.48 8-12V6l-8-4z" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+                    <path d="M9 12l2 2 4-4" stroke={ICON_COLOR} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 ),
               },
               {
                 title: 'Encrypted connection',
-                desc: 'All data is transmitted over HTTPS. We never collect SSNs, bank info, or medical records.',
+                desc: 'All data is transmitted over HTTPS. We never collect Social Security numbers, bank information, or medical records.',
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
-                    <rect x="5" y="11" width="14" height="10" rx="2" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
-                    <path d="M8 11V7a4 4 0 018 0v4" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" />
-                    <circle cx="12" cy="16" r="1" fill="var(--primary)" />
+                    <rect x="5" y="11" width="14" height="10" rx="2" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+                    <path d="M8 11V7a4 4 0 018 0v4" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
+                    <circle cx="12" cy="16" r="1" fill={ICON_COLOR} />
                   </svg>
                 ),
               },
@@ -528,17 +560,15 @@ export default async function HomePage({
                 desc: 'Check your eligibility without signing up. Your screener results are not stored unless you request agent help.',
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
-                    <circle cx="12" cy="8" r="4" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
-                    <path d="M4 20c0-4 3.58-7 8-7" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M17 15l-4 4 2 2 5-5-3-1z" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <circle cx="12" cy="8" r="4" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+                    <path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
                   </svg>
                 ),
               },
             ].map((item) => (
               <div
                 key={item.title}
-                className="card text-center"
-                style={{ padding: '2rem 1.5rem' }}
+                style={{ background: 'white', border: '1px solid var(--border-light)', borderRadius: '14px', padding: '1.75rem 1.5rem', textAlign: 'center' }}
               >
                 <div className="flex justify-center mb-4">{item.icon}</div>
                 <h3 className="font-bold text-lg mb-2" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}>
@@ -604,12 +634,12 @@ export default async function HomePage({
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '2.5rem', fontFamily: 'var(--font-body)' }}>
               Millions of Americans qualify for health coverage they don&apos;t know about.
-              Find out if you&apos;re one of them — it takes 2 minutes and it&apos;s completely free.
+              Find out in 2 minutes — it&apos;s free.
             </p>
             <Link
               href={`/${locale}/screener`}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 font-bold rounded-xl text-lg transition-all"
-              style={{ background: 'var(--teal-light)', color: 'var(--primary-deeper)', boxShadow: '0 4px 24px rgba(0,0,0,0.2)', fontFamily: 'var(--font-display)' }}
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 font-bold rounded-xl text-lg transition-all hover:opacity-90"
+              style={{ background: 'white', color: 'var(--primary-deeper)', fontFamily: 'var(--font-display)' }}
             >
               Start Free Eligibility Check
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
