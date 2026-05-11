@@ -98,7 +98,7 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
   // JSON-LD schemas
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': ['Article', 'MedicalWebPage'],
     headline: post.title,
     description: post.description,
     datePublished: post.date,
@@ -107,6 +107,8 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
     author: { '@type': 'Person', name: 'Jacob Posner', jobTitle: 'Founder, CoveredUSA', url: `${BASE_URL}/en/about` },
     publisher: { '@type': 'Organization', name: 'CoveredUSA', url: BASE_URL },
     inLanguage: isEs ? 'es' : 'en',
+    medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
+    lastReviewed: post.lastUpdated || post.date,
   };
 
   const breadcrumbSchema = {
