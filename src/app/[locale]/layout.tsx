@@ -57,21 +57,21 @@ export default async function LocaleLayout({
           <nav className="flex items-center gap-3 sm:gap-5">
             <Link
               href={`/${locale}/blog`}
-              className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
+              className="text-sm text-white hover:text-white/80 transition-colors hidden sm:inline"
               style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
             >
               {tl('blog')}
             </Link>
             <Link
               href={`/${locale}#how-it-works`}
-              className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
+              className="text-sm text-white hover:text-white/80 transition-colors hidden sm:inline"
               style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
             >
               {t('howItWorks')}
             </Link>
             <Link
               href={`/${locale}/about`}
-              className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
+              className="text-sm text-white hover:text-white/80 transition-colors hidden sm:inline"
               style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
             >
               {t('about')}

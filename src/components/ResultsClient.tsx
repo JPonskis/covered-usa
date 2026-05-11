@@ -98,20 +98,20 @@ function PhoneCaptureForm({
 
   return (
     <div className="bg-[var(--cream)] rounded-xl p-5 mt-6">
-      <h3 className="font-semibold text-[var(--text-primary)] mb-1">
-        {es ? '¿Quieres ayuda gratuita para inscribirte?' : 'Want free help enrolling?'}
+      <h3 className="text-base font-semibold text-[var(--text-primary)] mb-1">
+        {es ? '¿Quieres ayuda gratuita para inscribirte?' : 'Want help choosing a health plan?'}
       </h3>
       <p className="text-sm text-[var(--text-secondary)] mb-4">
         {es
-          ? 'Un agente con licencia puede guiarte por tus opciones sin costo.'
-          : 'A licensed agent can walk you through your options at no cost.'}
+          ? 'Un agente con licencia puede comparar tus opciones, asegurar que tus subsidios se apliquen correctamente y manejar la inscripción por ti. Este servicio es 100% gratuito, los agentes son pagados por las compañías de seguros, no por ti.'
+          : 'A licensed agent can help you compare marketplace plans, make sure any subsidies are applied correctly, and handle enrollment for you. This service is 100% free to you — agents are paid by insurance companies, not by you.'}
       </p>
 
       {/* Trust badges */}
       <div className="flex flex-wrap gap-2 mb-4">
         {(es
-          ? ['Gratis', 'Agentes certificados', 'Sin obligación']
-          : ['Free', 'Licensed agents', 'No obligation']
+          ? ['100% Gratis', 'Agentes certificados', 'Sin obligación']
+          : ['100% Free', 'Licensed agents', 'No obligation']
         ).map((badge) => (
           <span
             key={badge}
@@ -127,7 +127,7 @@ function PhoneCaptureForm({
           type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          placeholder={es ? '(xxx) xxx-xxxx' : '(xxx) xxx-xxxx'}
+          placeholder={es ? 'Tu número de teléfono' : 'Your phone number'}
           required
           className="w-full px-4 py-3 rounded-lg border border-[var(--border)] bg-white text-[var(--text-primary)] text-sm focus:outline-none focus:border-[var(--primary)] transition-colors"
         />
@@ -158,11 +158,11 @@ function PhoneCaptureForm({
         >
           {submitting
             ? es
-              ? 'Conectando...'
-              : 'Connecting...'
+              ? 'Enviando...'
+              : 'Submitting...'
             : es
-            ? 'Conéctame con un Agente'
-            : 'Connect Me With an Agent'}
+            ? 'Obtener Ayuda Gratuita'
+            : 'Get Free Guidance'}
         </button>
       </form>
     </div>
@@ -173,7 +173,7 @@ function PhoneCaptureForm({
 function EstimatedValue({ value }: { value: number }) {
   if (value <= 0) return null;
   return (
-    <p className="text-3xl font-bold text-[var(--primary)] mt-1">
+    <p className="text-3xl font-bold mt-2" style={{ color: '#16a34a' }}>
       ${value.toLocaleString()}
       <span className="text-base font-normal text-[var(--text-muted)]">/yr</span>
     </p>
@@ -258,19 +258,19 @@ export default function ResultsClient({
         </div>
       </header>
 
-      <div style={{ maxWidth: '48rem', margin: '0 auto', padding: '2rem 1rem' }}>
+      <div style={{ maxWidth: '48rem', margin: '0 auto', padding: '2.5rem 1.25rem' }}>
         {/* Summary Card */}
         <div
-          className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-6 mb-6"
+          className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-8 mb-8"
         >
-          <h1 className="text-2xl font-bold text-[var(--text-primary)] mb-1">
+          <h1 className="text-2xl md:text-3xl font-bold text-[var(--text-primary)] mb-2">
             {es
               ? `Tus Opciones de Cobertura Médica${firstName ? `, ${firstName}` : ''}`
               : `Your Health Coverage Options${firstName ? `, ${firstName}` : ''}`}
           </h1>
           {primaryProgram ? (
             <>
-              <p className="text-[var(--text-secondary)] text-sm mt-1">
+              <p className="text-[var(--text-secondary)] text-base mt-2">
                 {es
                   ? `Calificaste principalmente para: `
                   : `Your top match: `}
@@ -281,7 +281,7 @@ export default function ResultsClient({
               <EstimatedValue value={primaryProgram.estimatedValue} />
             </>
           ) : (
-            <p className="text-[var(--text-secondary)] text-sm mt-2">
+            <p className="text-[var(--text-secondary)] text-base mt-3">
               {es
                 ? 'No encontramos programas para los que califiques en este momento.'
                 : "We didn't find programs you qualify for right now."}
@@ -292,15 +292,15 @@ export default function ResultsClient({
         {/* Primary Program Card */}
         {primaryProgram && (
           <div
-            className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-6 mb-6"
+            className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-8 mb-8"
             style={{ borderLeft: '4px solid var(--primary)' }}
           >
-            <div className="flex items-start justify-between mb-3">
-              <h2 className="text-lg font-bold text-[var(--text-primary)]">
+            <div className="flex items-start justify-between mb-4">
+              <h2 className="text-xl font-bold text-[var(--text-primary)]">
                 {primaryProgram.name}
               </h2>
               {primaryProgram.estimatedValue > 0 && (
-                <span className="text-[var(--primary)] font-bold text-lg whitespace-nowrap ml-3">
+                <span className="font-bold text-lg whitespace-nowrap ml-3" style={{ color: '#16a34a' }}>
                   ${primaryProgram.estimatedValue.toLocaleString()}
                   <span className="text-sm font-normal text-[var(--text-muted)]">/yr</span>
                 </span>
@@ -308,37 +308,39 @@ export default function ResultsClient({
             </div>
 
             {/* Why You Qualify */}
-            <div className="bg-[var(--cream)] rounded-lg p-4 text-sm mb-4">
-              <span className="font-semibold text-[var(--text-primary)]">
-                {es ? 'Por Qué Calificas: ' : 'Why You Qualify: '}
-              </span>
-              <span className="text-[var(--text-secondary)]">
+            <div className="bg-[var(--cream)] rounded-lg p-5 mb-5">
+              <p className="font-semibold text-[var(--text-primary)] text-sm mb-1">
+                {es ? 'Por Qué Calificas' : 'Why You Qualify'}
+              </p>
+              <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
                 {primaryProgram.reason}
-              </span>
+              </p>
             </div>
 
             {/* Next Steps */}
             {primaryProgram.nextSteps && (
-              <p className="text-sm text-[var(--text-secondary)] mb-4">
+              <p className="text-sm text-[var(--text-secondary)] mb-5 leading-relaxed">
                 {primaryProgram.nextSteps}
               </p>
-            )}
-
-            {/* HealthSherpa self-apply for ACA */}
-            {showHealthSherpa && (
-              <a
-                href="https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=&utm_source=&utm_medium="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary inline-flex mb-2"
-              >
-                {es ? 'Solicitar en HealthSherpa' : 'Self-Apply on HealthSherpa'}
-              </a>
             )}
 
             {/* Phone Capture for ACA or Medicare */}
             {showPhoneCapture && (
               <PhoneCaptureForm submissionId={submissionId} locale={locale} />
+            )}
+
+            {/* HealthSherpa self-apply for ACA — below phone capture as secondary option */}
+            {showHealthSherpa && (
+              <div className="mt-4 text-center">
+                <a
+                  href={`https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=&utm_source=coveredusa&utm_medium=screener&utm_content=${submissionId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[var(--text-secondary)] hover:text-[var(--primary)] underline"
+                >
+                  {es ? 'Prefiero inscribirme por mi cuenta en HealthSherpa' : 'I prefer to apply myself on HealthSherpa'}
+                </a>
+              </div>
             )}
 
             {/* NearbyClinics for Medicaid */}
@@ -356,20 +358,20 @@ export default function ResultsClient({
 
         {/* Secondary Programs */}
         {secondaryPrograms.length > 0 && (
-          <div className="mb-6">
-            <h2 className="text-base font-semibold text-[var(--text-primary)] mb-3">
+          <div className="mb-8">
+            <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-4">
               {es
                 ? 'También puedes calificar para:'
                 : 'You may also qualify for:'}
             </h2>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {secondaryPrograms.map((prog) => (
                 <div
                   key={prog.id}
-                  className="bg-white border border-[var(--border-light)] rounded-lg p-4"
+                  className="bg-white border border-[var(--border-light)] rounded-lg p-5"
                 >
-                  <div className="flex items-start justify-between mb-1">
-                    <h3 className="font-semibold text-[var(--text-primary)] text-sm">
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="font-semibold text-[var(--text-primary)] text-base">
                       {prog.name}
                     </h3>
                     {prog.estimatedValue > 0 && (
