@@ -64,7 +64,7 @@ export function buildDay3Html(props: Day3EmailProps): string {
           <tr>
             <td style="padding: 32px 36px 0 36px;">
               <a href="https://coveredusa.org" style="text-decoration: none;">
-                <img src="https://coveredusa.org/logo.png" alt="CoveredUSA" width="160" style="width: 160px; height: auto; border: 0;" />
+                <img src="https://coveredusa.org/logo-email.png" alt="CoveredUSA" width="160" style="width: 160px; height: auto; border: 0;" />
               </a>
             </td>
           </tr>
