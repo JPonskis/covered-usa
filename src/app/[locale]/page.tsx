@@ -270,14 +270,17 @@ export default async function HomePage({
             </div>
 
             {/* Right: illustration */}
-            <div className="hidden lg:flex justify-center items-center">
+            <div className="hidden lg:flex justify-center items-center" style={{
+              WebkitMaskImage: 'radial-gradient(ellipse 85% 80% at center, black 40%, transparent 72%)',
+              maskImage: 'radial-gradient(ellipse 85% 80% at center, black 40%, transparent 72%)',
+            }}>
               <Image
                 src="/hero-illustration.png"
                 alt="Illustration of a young woman, older gentleman, and child standing together under a protective teal arc"
                 width={1024}
                 height={1536}
                 priority
-                style={{ width: '100%', maxWidth: '420px', height: 'auto' }}
+                style={{ width: '100%', maxWidth: '460px', height: 'auto' }}
               />
             </div>
 
