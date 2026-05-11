@@ -35,448 +35,459 @@ const STATES = [
   ['WV', 'West Virginia'], ['WI', 'Wisconsin'], ['WY', 'Wyoming'],
 ];
 
-const TOTAL_STEPS = 10;
+const TOTAL_STEPS = 4;
+
+const STEP_META = [
+  { title: 'About You', subtitle: 'Basic information about your household', icon: '👤' },
+  { title: 'Income & Work', subtitle: 'Your earnings and employment situation', icon: '💼' },
+  { title: 'Current Coverage', subtitle: 'Your existing health insurance', icon: '🏥' },
+  { title: 'Additional Info', subtitle: 'A few more details to refine your results', icon: '📋' },
+];
 
 interface StepProps {
   form: FormState;
   setForm: React.Dispatch<React.SetStateAction<FormState>>;
 }
 
-function StepState({ form, setForm }: StepProps) {
+/* ---- Shared UI Components ---- */
+
+function FieldLabel({ children, htmlFor }: { children: React.ReactNode; htmlFor?: string }) {
   return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        What state do you live in?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        Coverage programs vary by state.
-      </p>
-      <select
-        value={form.state}
-        onChange={e => setForm(f => ({ ...f, state: e.target.value }))}
+    <label
+      htmlFor={htmlFor}
+      style={{
+        display: 'block',
+        fontSize: '0.9rem',
+        fontWeight: 600,
+        color: 'var(--text-secondary)',
+        marginBottom: '0.5rem',
+      }}
+    >
+      {children}
+    </label>
+  );
+}
+
+function FieldHint({ children }: { children: React.ReactNode }) {
+  return (
+    <p style={{ color: 'var(--text-muted)', fontSize: '0.825rem', margin: '0 0 0.75rem', lineHeight: 1.5 }}>
+      {children}
+    </p>
+  );
+}
+
+function OptionButton({
+  selected,
+  onClick,
+  children,
+  compact,
+}: {
+  selected: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+  compact?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={{
+        padding: compact ? '0.625rem 0.75rem' : '0.75rem 1rem',
+        border: '2px solid',
+        borderColor: selected ? 'var(--primary)' : 'var(--border)',
+        borderRadius: '10px',
+        background: selected ? 'var(--primary)' : 'white',
+        color: selected ? 'white' : 'var(--text-primary)',
+        fontSize: compact ? '0.9rem' : '0.95rem',
+        fontWeight: 600,
+        cursor: 'pointer',
+        transition: 'all 0.15s ease',
+        textAlign: 'center',
+      }}
+    >
+      {children}
+    </button>
+  );
+}
+
+function SelectionCard({
+  selected,
+  onClick,
+  label,
+  sublabel,
+}: {
+  selected: boolean;
+  onClick: () => void;
+  label: string;
+  sublabel?: string;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={{
+        padding: '0.875rem 1rem',
+        border: '2px solid',
+        borderColor: selected ? 'var(--primary)' : 'var(--border)',
+        borderRadius: '12px',
+        background: selected ? 'var(--cream)' : 'white',
+        textAlign: 'left',
+        cursor: 'pointer',
+        transition: 'all 0.15s ease',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.75rem',
+      }}
+    >
+      <div
         style={{
-          width: '100%',
-          padding: '0.875rem 2.5rem 0.875rem 1rem',
-          fontSize: '1rem',
-          border: '2px solid var(--border)',
-          borderRadius: '12px',
-          background: 'white',
-          color: form.state ? 'var(--text-primary)' : 'var(--text-muted)',
-          cursor: 'pointer',
+          width: '20px',
+          height: '20px',
+          borderRadius: '50%',
+          border: '2px solid',
+          borderColor: selected ? 'var(--primary)' : 'var(--border)',
+          background: selected ? 'var(--primary)' : 'white',
+          flexShrink: 0,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
-        <option value="">Select your state...</option>
-        {STATES.map(([code, name]) => (
-          <option key={code} value={code}>{name}</option>
-        ))}
-      </select>
-    </div>
+        {selected && (
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M2 5L4 7L8 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        )}
+      </div>
+      <div style={{ flex: 1 }}>
+        <div style={{ fontWeight: 600, color: selected ? 'var(--primary)' : 'var(--text-primary)', fontSize: '0.95rem' }}>
+          {label}
+        </div>
+        {sublabel && (
+          <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.15rem' }}>{sublabel}</div>
+        )}
+      </div>
+    </button>
   );
 }
 
-function StepAge({ form, setForm }: StepProps) {
-  return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        How old are you?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        Age determines which programs you can access.
-      </p>
-      <input
-        type="number"
-        min={0}
-        max={110}
-        value={form.age}
-        onChange={e => setForm(f => ({ ...f, age: e.target.value }))}
-        placeholder="Enter your age"
-        style={{
-          width: '100%',
-          padding: '0.875rem 1rem',
-          fontSize: '1.125rem',
-          border: '2px solid var(--border)',
-          borderRadius: '12px',
-          background: 'white',
-        }}
-      />
-    </div>
-  );
+function SectionDivider() {
+  return <div style={{ height: '1px', background: 'var(--border-light)', margin: '1.5rem 0' }} />;
 }
 
-function StepHouseholdSize({ form, setForm }: StepProps) {
+/* ---- Step 1: About You ---- */
+function StepAboutYou({ form, setForm }: StepProps) {
   const sizes = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        How many people are in your household?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        Include yourself, your spouse/partner, and any dependents you support.
-      </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem' }}>
-        {sizes.map(n => (
-          <button
-            key={n}
-            type="button"
-            onClick={() => setForm(f => ({ ...f, householdSize: String(n) }))}
-            style={{
-              padding: '1rem',
-              border: '2px solid',
-              borderColor: form.householdSize === String(n) ? 'var(--primary)' : 'var(--border)',
-              borderRadius: '12px',
-              background: form.householdSize === String(n) ? 'var(--primary)' : 'white',
-              color: form.householdSize === String(n) ? 'white' : 'var(--text-primary)',
-              fontSize: '1.125rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-            }}
-          >
-            {n === 8 ? '8+' : n}
-          </button>
-        ))}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+      {/* State */}
+      <div>
+        <FieldLabel htmlFor="state-select">What state do you live in?</FieldLabel>
+        <FieldHint>Health coverage programs vary by state.</FieldHint>
+        <select
+          id="state-select"
+          value={form.state}
+          onChange={e => setForm(f => ({ ...f, state: e.target.value }))}
+          style={{
+            width: '100%',
+            padding: '0.75rem 2.5rem 0.75rem 1rem',
+            fontSize: '1rem',
+            border: '2px solid var(--border)',
+            borderRadius: '10px',
+            background: 'white',
+            color: form.state ? 'var(--text-primary)' : 'var(--text-muted)',
+            cursor: 'pointer',
+            transition: 'border-color 0.15s',
+          }}
+        >
+          <option value="">Select your state...</option>
+          {STATES.map(([code, name]) => (
+            <option key={code} value={code}>{name}</option>
+          ))}
+        </select>
+      </div>
+
+      <SectionDivider />
+
+      {/* Age */}
+      <div>
+        <FieldLabel htmlFor="age-input">How old are you?</FieldLabel>
+        <FieldHint>Age determines which programs you can access.</FieldHint>
+        <input
+          id="age-input"
+          type="number"
+          min={0}
+          max={110}
+          value={form.age}
+          onChange={e => setForm(f => ({ ...f, age: e.target.value }))}
+          placeholder="Enter your age"
+          style={{
+            width: '100%',
+            maxWidth: '200px',
+            padding: '0.75rem 1rem',
+            fontSize: '1rem',
+            border: '2px solid var(--border)',
+            borderRadius: '10px',
+            background: 'white',
+            transition: 'border-color 0.15s',
+          }}
+        />
+      </div>
+
+      <SectionDivider />
+
+      {/* Household size */}
+      <div>
+        <FieldLabel>How many people are in your household?</FieldLabel>
+        <FieldHint>Include yourself, your spouse/partner, and any dependents.</FieldHint>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.5rem', maxWidth: '320px' }}>
+          {sizes.map(n => (
+            <OptionButton
+              key={n}
+              selected={form.householdSize === String(n)}
+              onClick={() => setForm(f => ({ ...f, householdSize: String(n) }))}
+              compact
+            >
+              {n === 8 ? '8+' : n}
+            </OptionButton>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
+/* ---- Step 2: Income & Work ---- */
 function formatIncome(value: string): string {
   const num = value.replace(/\D/g, '');
   if (!num) return '';
   return parseInt(num, 10).toLocaleString();
 }
 
-function StepIncome({ form, setForm }: StepProps) {
-  return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        What is your household&apos;s annual income?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        Include all sources: wages, Social Security, disability payments, etc. Estimates are fine.
-      </p>
-      <div style={{ position: 'relative', marginBottom: '1rem' }}>
-        <span style={{
-          position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)',
-          color: 'var(--text-muted)', fontSize: '1.125rem', fontWeight: 600,
-          pointerEvents: 'none',
-        }}>$</span>
-        <input
-          type="text"
-          inputMode="numeric"
-          value={form.incomeUnknown ? '' : (form.annualIncome ? formatIncome(form.annualIncome) : '')}
-          onChange={e => {
-            const raw = e.target.value.replace(/\D/g, '');
-            setForm(f => ({ ...f, annualIncome: raw, incomeUnknown: false }));
-          }}
-          disabled={form.incomeUnknown}
-          placeholder="e.g. 35,000"
-          style={{
-            width: '100%',
-            padding: '0.875rem 1rem 0.875rem 2rem',
-            fontSize: '1.125rem',
-            border: '2px solid var(--border)',
-            borderRadius: '12px',
-            background: form.incomeUnknown ? 'var(--sand)' : 'white',
-            opacity: form.incomeUnknown ? 0.5 : 1,
-          }}
-        />
-      </div>
-      <label style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer', color: 'var(--text-secondary)' }}>
-        <input
-          type="checkbox"
-          checked={form.incomeUnknown}
-          onChange={e => setForm(f => ({ ...f, incomeUnknown: e.target.checked, annualIncome: e.target.checked ? '0' : '' }))}
-          style={{ width: '1.125rem', height: '1.125rem', accentColor: 'var(--primary)' }}
-        />
-        I&apos;m not sure / prefer not to say
-      </label>
-    </div>
-  );
-}
-
-function StepEmployment({ form, setForm }: StepProps) {
-  const options: { value: FormState['employmentStatus']; label: string; sub: string }[] = [
+function StepIncomeWork({ form, setForm }: StepProps) {
+  const employmentOptions: { value: FormState['employmentStatus']; label: string; sub: string }[] = [
     { value: 'employed', label: 'Employed', sub: 'Working for an employer' },
     { value: 'self-employed', label: 'Self-Employed', sub: 'Freelance, contractor, own business' },
     { value: 'unemployed', label: 'Unemployed', sub: 'Not currently working' },
     { value: 'retired', label: 'Retired', sub: 'No longer in the workforce' },
   ];
+
   return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        What is your employment status?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        This affects which health insurance options are available.
-      </p>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-        {options.map(opt => (
-          <button
-            key={opt.value}
-            type="button"
-            onClick={() => setForm(f => ({ ...f, employmentStatus: opt.value }))}
-            style={{
-              padding: '1rem 1.25rem',
-              border: '2px solid',
-              borderColor: form.employmentStatus === opt.value ? 'var(--primary)' : 'var(--border)',
-              borderRadius: '12px',
-              background: form.employmentStatus === opt.value ? 'var(--cream)' : 'white',
-              textAlign: 'left',
-              cursor: 'pointer',
-              transition: 'all 0.15s',
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+      {/* Annual income */}
+      <div>
+        <FieldLabel htmlFor="income-input">What is your household&apos;s annual income?</FieldLabel>
+        <FieldHint>Include all sources: wages, Social Security, disability payments, etc. Estimates are fine.</FieldHint>
+        <div style={{ position: 'relative', marginBottom: '0.75rem' }}>
+          <span style={{
+            position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)',
+            color: 'var(--text-muted)', fontSize: '1rem', fontWeight: 600,
+            pointerEvents: 'none',
+          }}>$</span>
+          <input
+            id="income-input"
+            type="text"
+            inputMode="numeric"
+            value={form.incomeUnknown ? '' : (form.annualIncome ? formatIncome(form.annualIncome) : '')}
+            onChange={e => {
+              const raw = e.target.value.replace(/\D/g, '');
+              setForm(f => ({ ...f, annualIncome: raw, incomeUnknown: false }));
             }}
-          >
-            <div style={{ fontWeight: 600, color: form.employmentStatus === opt.value ? 'var(--primary)' : 'var(--text-primary)' }}>
-              {opt.label}
-            </div>
-            <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>{opt.sub}</div>
-          </button>
-        ))}
+            disabled={form.incomeUnknown}
+            placeholder="e.g. 35,000"
+            style={{
+              width: '100%',
+              maxWidth: '280px',
+              padding: '0.75rem 1rem 0.75rem 2rem',
+              fontSize: '1rem',
+              border: '2px solid var(--border)',
+              borderRadius: '10px',
+              background: form.incomeUnknown ? 'var(--sand)' : 'white',
+              opacity: form.incomeUnknown ? 0.5 : 1,
+              transition: 'border-color 0.15s',
+            }}
+          />
+        </div>
+        <label style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', cursor: 'pointer', color: 'var(--text-muted)', fontSize: '0.875rem' }}>
+          <input
+            type="checkbox"
+            checked={form.incomeUnknown}
+            onChange={e => setForm(f => ({ ...f, incomeUnknown: e.target.checked, annualIncome: e.target.checked ? '0' : '' }))}
+            style={{ width: '1rem', height: '1rem', accentColor: 'var(--primary)' }}
+          />
+          I&apos;m not sure / prefer not to say
+        </label>
+      </div>
+
+      <SectionDivider />
+
+      {/* Employment */}
+      <div>
+        <FieldLabel>What is your employment status?</FieldLabel>
+        <FieldHint>This affects which health insurance options are available.</FieldHint>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          {employmentOptions.map(opt => (
+            <SelectionCard
+              key={opt.value}
+              selected={form.employmentStatus === opt.value}
+              onClick={() => setForm(f => ({ ...f, employmentStatus: opt.value }))}
+              label={opt.label}
+              sublabel={opt.sub}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-function StepInsurance({ form, setForm }: StepProps) {
-  const sources: { value: FormState['insuranceSource']; label: string }[] = [
+/* ---- Step 3: Current Coverage ---- */
+function StepCoverage({ form, setForm }: StepProps) {
+  const sources: { value: FormState['insuranceSource']; label: string; sub?: string }[] = [
     { value: 'employer', label: 'Employer or job-based plan' },
     { value: 'aca', label: 'ACA Marketplace (Healthcare.gov)' },
     { value: 'medicaid', label: 'Medicaid / State health program' },
     { value: 'medicare', label: 'Medicare' },
-    { value: 'none', label: 'No insurance' },
+    { value: 'none', label: 'No insurance', sub: 'Currently uninsured' },
   ];
+
   return (
     <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        Do you currently have health insurance?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        Select what best describes your current coverage.
-      </p>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+      <FieldLabel>What best describes your current health coverage?</FieldLabel>
+      <FieldHint>Select your current insurance source, or &quot;No insurance&quot; if you&apos;re uninsured.</FieldHint>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
         {sources.map(opt => (
-          <button
+          <SelectionCard
             key={opt.value}
-            type="button"
+            selected={form.insuranceSource === opt.value}
             onClick={() => setForm(f => ({
               ...f,
               currentlyInsured: opt.value !== 'none',
               insuranceSource: opt.value,
             }))}
-            style={{
-              padding: '1rem 1.25rem',
-              border: '2px solid',
-              borderColor: form.insuranceSource === opt.value ? 'var(--primary)' : 'var(--border)',
-              borderRadius: '12px',
-              background: form.insuranceSource === opt.value ? 'var(--cream)' : 'white',
-              textAlign: 'left',
-              cursor: 'pointer',
-              fontWeight: form.insuranceSource === opt.value ? 600 : 400,
-              color: form.insuranceSource === opt.value ? 'var(--primary)' : 'var(--text-primary)',
-              transition: 'all 0.15s',
-            }}
-          >
-            {opt.label}
-          </button>
+            label={opt.label}
+            sublabel={opt.sub}
+          />
         ))}
       </div>
     </div>
   );
 }
 
-function StepChildren({ form, setForm }: StepProps) {
+/* ---- Step 4: Additional Info ---- */
+function StepAdditional({ form, setForm }: StepProps) {
   return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        Any children under 19 in your household?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        Children may qualify for CHIP or Medicaid even if adults don&apos;t.
-      </p>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.25rem' }}>
-        {[true, false].map(val => (
-          <button
-            key={String(val)}
-            type="button"
-            onClick={() => setForm(f => ({ ...f, hasChildren: val, numChildren: val ? (f.numChildren || '1') : '0' }))}
-            style={{
-              padding: '1rem',
-              border: '2px solid',
-              borderColor: form.hasChildren === val ? 'var(--primary)' : 'var(--border)',
-              borderRadius: '12px',
-              background: form.hasChildren === val ? 'var(--primary)' : 'white',
-              color: form.hasChildren === val ? 'white' : 'var(--text-primary)',
-              fontSize: '1rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-            }}
-          >
-            {val ? 'Yes' : 'No'}
-          </button>
-        ))}
-      </div>
-      {form.hasChildren && (
-        <div>
-          <label style={{ display: 'block', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
-            How many children under 19?
-          </label>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.5rem' }}>
-            {[1, 2, 3, 4, 5, 6].map(n => (
-              <button
-                key={n}
-                type="button"
-                onClick={() => setForm(f => ({ ...f, numChildren: String(n) }))}
-                style={{
-                  padding: '0.75rem',
-                  border: '2px solid',
-                  borderColor: form.numChildren === String(n) ? 'var(--primary)' : 'var(--border)',
-                  borderRadius: '10px',
-                  background: form.numChildren === String(n) ? 'var(--primary)' : 'white',
-                  color: form.numChildren === String(n) ? 'white' : 'var(--text-primary)',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                }}
-              >
-                {n === 6 ? '6+' : n}
-              </button>
-            ))}
-          </div>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+      {/* Children */}
+      <div>
+        <FieldLabel>Any children under 19 in your household?</FieldLabel>
+        <FieldHint>Children may qualify for CHIP or Medicaid even if adults don&apos;t.</FieldHint>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', maxWidth: '240px' }}>
+          {[true, false].map(val => (
+            <OptionButton
+              key={String(val)}
+              selected={form.hasChildren === val}
+              onClick={() => setForm(f => ({ ...f, hasChildren: val, numChildren: val ? (f.numChildren || '1') : '0' }))}
+            >
+              {val ? 'Yes' : 'No'}
+            </OptionButton>
+          ))}
         </div>
-      )}
-    </div>
-  );
-}
+        {form.hasChildren && (
+          <div style={{ marginTop: '1rem' }}>
+            <FieldLabel>How many children under 19?</FieldLabel>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '0.5rem', maxWidth: '320px' }}>
+              {[1, 2, 3, 4, 5, 6].map(n => (
+                <OptionButton
+                  key={n}
+                  selected={form.numChildren === String(n)}
+                  onClick={() => setForm(f => ({ ...f, numChildren: String(n) }))}
+                  compact
+                >
+                  {n === 6 ? '6+' : n}
+                </OptionButton>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
 
-function StepPregnant({ form, setForm }: StepProps) {
-  return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        Are you currently pregnant?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        Pregnancy often unlocks expanded Medicaid coverage.
-      </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem' }}>
-        {[
-          { val: true, label: 'Yes' },
-          { val: false, label: 'No' },
-          { val: null, label: 'Skip' },
-        ].map(opt => (
-          <button
-            key={String(opt.val)}
-            type="button"
-            onClick={() => setForm(f => ({ ...f, isPregnant: opt.val }))}
-            style={{
-              padding: '1rem',
-              border: '2px solid',
-              borderColor: form.isPregnant === opt.val ? 'var(--primary)' : 'var(--border)',
-              borderRadius: '12px',
-              background: form.isPregnant === opt.val ? 'var(--primary)' : 'white',
-              color: form.isPregnant === opt.val ? 'white' : 'var(--text-primary)',
-              fontSize: '1rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-            }}
-          >
-            {opt.label}
-          </button>
-        ))}
+      <SectionDivider />
+
+      {/* Pregnant */}
+      <div>
+        <FieldLabel>Are you currently pregnant?</FieldLabel>
+        <FieldHint>Pregnancy often unlocks expanded Medicaid coverage.</FieldHint>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.5rem', maxWidth: '300px' }}>
+          {[
+            { val: true as const, label: 'Yes' },
+            { val: false as const, label: 'No' },
+            { val: null, label: 'Skip' },
+          ].map(opt => (
+            <OptionButton
+              key={String(opt.val)}
+              selected={form.isPregnant === opt.val}
+              onClick={() => setForm(f => ({ ...f, isPregnant: opt.val }))}
+            >
+              {opt.label}
+            </OptionButton>
+          ))}
+        </div>
+      </div>
+
+      <SectionDivider />
+
+      {/* Disability */}
+      <div>
+        <FieldLabel>Do you have a disability?</FieldLabel>
+        <FieldHint>A disability that affects your ability to work may qualify you for additional programs.</FieldHint>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', maxWidth: '240px' }}>
+          {[{ val: true, label: 'Yes' }, { val: false, label: 'No' }].map(opt => (
+            <OptionButton
+              key={String(opt.val)}
+              selected={form.hasDisability === opt.val}
+              onClick={() => setForm(f => ({ ...f, hasDisability: opt.val }))}
+            >
+              {opt.label}
+            </OptionButton>
+          ))}
+        </div>
+      </div>
+
+      <SectionDivider />
+
+      {/* Veteran */}
+      <div>
+        <FieldLabel>Are you a U.S. veteran?</FieldLabel>
+        <FieldHint>Veterans may qualify for VA healthcare regardless of income.</FieldHint>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', maxWidth: '240px' }}>
+          {[{ val: true, label: 'Yes' }, { val: false, label: 'No' }].map(opt => (
+            <OptionButton
+              key={String(opt.val)}
+              selected={form.isVeteran === opt.val}
+              onClick={() => setForm(f => ({ ...f, isVeteran: opt.val }))}
+            >
+              {opt.label}
+            </OptionButton>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-function StepDisability({ form, setForm }: StepProps) {
-  return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        Do you have a disability?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        A disability that affects your ability to work may qualify you for Medicare or other programs.
-      </p>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
-        {[{ val: true, label: 'Yes' }, { val: false, label: 'No' }].map(opt => (
-          <button
-            key={String(opt.val)}
-            type="button"
-            onClick={() => setForm(f => ({ ...f, hasDisability: opt.val }))}
-            style={{
-              padding: '1rem',
-              border: '2px solid',
-              borderColor: form.hasDisability === opt.val ? 'var(--primary)' : 'var(--border)',
-              borderRadius: '12px',
-              background: form.hasDisability === opt.val ? 'var(--primary)' : 'white',
-              color: form.hasDisability === opt.val ? 'white' : 'var(--text-primary)',
-              fontSize: '1rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-            }}
-          >
-            {opt.label}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function StepVeteran({ form, setForm }: StepProps) {
-  return (
-    <div>
-      <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
-        Are you a U.S. veteran?
-      </h2>
-      <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-        Veterans may qualify for VA healthcare regardless of income.
-      </p>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
-        {[{ val: true, label: 'Yes' }, { val: false, label: 'No' }].map(opt => (
-          <button
-            key={String(opt.val)}
-            type="button"
-            onClick={() => setForm(f => ({ ...f, isVeteran: opt.val }))}
-            style={{
-              padding: '1rem',
-              border: '2px solid',
-              borderColor: form.isVeteran === opt.val ? 'var(--primary)' : 'var(--border)',
-              borderRadius: '12px',
-              background: form.isVeteran === opt.val ? 'var(--primary)' : 'white',
-              color: form.isVeteran === opt.val ? 'white' : 'var(--text-primary)',
-              fontSize: '1rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-            }}
-          >
-            {opt.label}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
-
+/* ---- Validation ---- */
 function canAdvance(step: number, form: FormState): boolean {
   switch (step) {
-    case 1: return !!form.state;
-    case 2: return !!form.age && parseInt(form.age) > 0;
-    case 3: return !!form.householdSize;
-    case 4: return form.incomeUnknown || (!!form.annualIncome && form.annualIncome !== '');
-    case 5: return !!form.employmentStatus;
-    case 6: return form.insuranceSource !== '';
-    case 7: return form.hasChildren !== null;
-    case 8: return form.isPregnant !== undefined;
-    case 9: return form.hasDisability !== null;
-    case 10: return form.isVeteran !== null;
+    case 1: return !!form.state && !!form.age && parseInt(form.age) > 0 && !!form.householdSize;
+    case 2: return (form.incomeUnknown || (!!form.annualIncome && form.annualIncome !== '')) && !!form.employmentStatus;
+    case 3: return form.insuranceSource !== '';
+    case 4: return form.hasChildren !== null && form.hasDisability !== null && form.isVeteran !== null;
     default: return true;
   }
 }
 
+/* ---- Main Component ---- */
 export default function ScreenerContent({ locale }: { locale: string }) {
   const router = useRouter();
   const [step, setStep] = useState(1);
@@ -539,37 +550,32 @@ export default function ScreenerContent({ locale }: { locale: string }) {
 
   function renderStep() {
     switch (step) {
-      case 1: return <StepState form={form} setForm={setForm} />;
-      case 2: return <StepAge form={form} setForm={setForm} />;
-      case 3: return <StepHouseholdSize form={form} setForm={setForm} />;
-      case 4: return <StepIncome form={form} setForm={setForm} />;
-      case 5: return <StepEmployment form={form} setForm={setForm} />;
-      case 6: return <StepInsurance form={form} setForm={setForm} />;
-      case 7: return <StepChildren form={form} setForm={setForm} />;
-      case 8: return <StepPregnant form={form} setForm={setForm} />;
-      case 9: return <StepDisability form={form} setForm={setForm} />;
-      case 10: return <StepVeteran form={form} setForm={setForm} />;
+      case 1: return <StepAboutYou form={form} setForm={setForm} />;
+      case 2: return <StepIncomeWork form={form} setForm={setForm} />;
+      case 3: return <StepCoverage form={form} setForm={setForm} />;
+      case 4: return <StepAdditional form={form} setForm={setForm} />;
       default: return null;
     }
   }
 
   const isLast = step === TOTAL_STEPS;
   const canGoNext = canAdvance(step, form);
+  const meta = STEP_META[step - 1];
 
   return (
     <div style={{
       minHeight: '100vh',
-      background: 'var(--cream)',
+      background: 'linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      padding: '1.5rem 1rem',
+      padding: '1.5rem 1rem 3rem',
     }}>
       {/* Header */}
-      <div style={{ width: '100%', maxWidth: '540px', marginBottom: '2rem' }}>
+      <div style={{ width: '100%', maxWidth: '600px', marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
           <span style={{ fontWeight: 700, fontSize: '1.1rem', color: 'var(--primary)' }}>CoveredUSA</span>
-          <span style={{ fontSize: '0.875rem', color: 'var(--text-muted)', fontWeight: 500 }}>
+          <span style={{ fontSize: '0.825rem', color: 'var(--text-muted)', fontWeight: 500 }}>
             Step {step} of {TOTAL_STEPS}
           </span>
         </div>
@@ -586,30 +592,99 @@ export default function ScreenerContent({ locale }: { locale: string }) {
             width: `${progress}%`,
             background: 'linear-gradient(90deg, var(--primary), var(--teal))',
             borderRadius: '999px',
-            transition: 'width 0.3s ease',
+            transition: 'width 0.4s ease',
           }} />
+        </div>
+
+        {/* Step indicators */}
+        <div style={{ display: 'flex', gap: '0.25rem', marginTop: '0.75rem' }}>
+          {STEP_META.map((s, i) => (
+            <div
+              key={i}
+              style={{
+                flex: 1,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.375rem',
+                padding: '0.375rem 0.5rem',
+                borderRadius: '8px',
+                background: step === i + 1 ? 'var(--cream-dark)' : 'transparent',
+                cursor: i + 1 < step ? 'pointer' : 'default',
+                transition: 'background 0.15s',
+              }}
+              onClick={() => { if (i + 1 < step) setStep(i + 1); }}
+            >
+              <span style={{
+                width: '20px',
+                height: '20px',
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '0.65rem',
+                fontWeight: 700,
+                background: i + 1 <= step ? 'var(--primary)' : 'var(--sand)',
+                color: i + 1 <= step ? 'white' : 'var(--text-muted)',
+                flexShrink: 0,
+                transition: 'all 0.15s',
+              }}>
+                {i + 1 < step ? '✓' : i + 1}
+              </span>
+              <span style={{
+                fontSize: '0.7rem',
+                fontWeight: step === i + 1 ? 600 : 400,
+                color: step === i + 1 ? 'var(--text-primary)' : 'var(--text-muted)',
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                display: 'none',
+              }}
+              className="sm:!inline"
+              >
+                {s.title}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
 
       {/* Card */}
       <div style={{
         width: '100%',
-        maxWidth: '540px',
+        maxWidth: '600px',
         background: 'white',
         borderRadius: '20px',
         padding: '2rem',
-        boxShadow: '0 4px 24px rgba(3, 105, 161, 0.08)',
+        boxShadow: 'var(--shadow-lg)',
         border: '1px solid var(--border-light)',
-        flex: 1,
       }}>
+        {/* Step header */}
+        <div style={{ marginBottom: '1.75rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '0.375rem' }}>
+            <span style={{ fontSize: '1.25rem' }}>{meta.icon}</span>
+            <h2 style={{
+              fontSize: '1.35rem',
+              fontWeight: 700,
+              color: 'var(--text-primary)',
+              margin: 0,
+              fontFamily: 'var(--font-display)',
+            }}>
+              {meta.title}
+            </h2>
+          </div>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
+            {meta.subtitle}
+          </p>
+        </div>
+
         {renderStep()}
       </div>
 
       {/* Navigation */}
       <div style={{
         width: '100%',
-        maxWidth: '540px',
-        marginTop: '1.5rem',
+        maxWidth: '600px',
+        marginTop: '1.25rem',
         display: 'flex',
         gap: '0.75rem',
       }}>
@@ -625,8 +700,9 @@ export default function ScreenerContent({ locale }: { locale: string }) {
               background: 'white',
               color: 'var(--text-secondary)',
               fontWeight: 600,
-              fontSize: '1rem',
+              fontSize: '0.95rem',
               cursor: 'pointer',
+              transition: 'all 0.15s',
             }}
           >
             Back
@@ -646,12 +722,13 @@ export default function ScreenerContent({ locale }: { locale: string }) {
               background: canGoNext ? 'var(--primary)' : 'var(--sand)',
               color: canGoNext ? 'white' : 'var(--text-muted)',
               fontWeight: 700,
-              fontSize: '1rem',
+              fontSize: '0.95rem',
               cursor: canGoNext ? 'pointer' : 'not-allowed',
-              transition: 'background 0.15s',
+              transition: 'all 0.2s ease',
+              boxShadow: canGoNext ? 'var(--shadow-primary)' : 'none',
             }}
           >
-            Next
+            Continue
           </button>
         ) : (
           <button
@@ -666,9 +743,10 @@ export default function ScreenerContent({ locale }: { locale: string }) {
               background: (canGoNext && !submitting) ? 'linear-gradient(135deg, var(--primary), var(--teal))' : 'var(--sand)',
               color: (canGoNext && !submitting) ? 'white' : 'var(--text-muted)',
               fontWeight: 700,
-              fontSize: '1rem',
+              fontSize: '0.95rem',
               cursor: (canGoNext && !submitting) ? 'pointer' : 'not-allowed',
-              boxShadow: (canGoNext && !submitting) ? '0 4px 16px rgba(3, 105, 161, 0.3)' : 'none',
+              boxShadow: (canGoNext && !submitting) ? 'var(--shadow-primary)' : 'none',
+              transition: 'all 0.2s ease',
             }}
           >
             {submitting ? 'Checking eligibility...' : 'See my results'}
@@ -677,20 +755,24 @@ export default function ScreenerContent({ locale }: { locale: string }) {
       </div>
 
       {error && (
-        <p style={{ color: '#dc2626', marginTop: '1rem', textAlign: 'center', fontSize: '0.9rem' }}>{error}</p>
+        <p style={{ color: '#dc2626', marginTop: '1rem', textAlign: 'center', fontSize: '0.875rem' }}>{error}</p>
       )}
 
       {/* Trust signals */}
       <div style={{
-        marginTop: '2rem',
+        marginTop: '1.5rem',
         display: 'flex',
         gap: '1.5rem',
         flexWrap: 'wrap',
         justifyContent: 'center',
       }}>
         {['Free & confidential', 'No sign-up required', 'Takes 2 minutes'].map(t => (
-          <span key={t} style={{ fontSize: '0.8rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-            <span style={{ color: 'var(--success)', fontWeight: 700 }}>✓</span> {t}
+          <span key={t} style={{ fontSize: '0.775rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <circle cx="7" cy="7" r="6" stroke="var(--success)" strokeWidth="1.5" />
+              <path d="M4.5 7L6 8.5L9.5 5" stroke="var(--success)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            {t}
           </span>
         ))}
       </div>

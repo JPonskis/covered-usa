@@ -31,52 +31,62 @@ const programs = [
   {
     name: 'Medicaid',
     desc: 'Free health coverage for low-income individuals and families',
+    color: '#059669',
+    bgColor: '#d1fae5',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
-        <path d="M10 12h4M12 10v4" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M10 12h4M12 10v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
     name: 'ACA Marketplace',
     desc: 'Subsidized health insurance plans for individuals and families',
+    color: '#0369a1',
+    bgColor: '#e0f2fe',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <rect x="3" y="6" width="18" height="14" rx="3" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
-        <path d="M14 6h2v4h4v2h-4v4h-2v-4h-4V8h4V6z" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" />
+        <rect x="3" y="6" width="18" height="14" rx="3" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M14 6h2v4h4v2h-4v4h-2v-4h-4V8h4V6z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
     name: 'Medicare',
     desc: 'Health coverage for adults 65+ or with qualifying disabilities',
+    color: '#7c3aed',
+    bgColor: '#ede9fe',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="12" r="9" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
-        <path d="M12 7v5l3 3" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M8 17h8" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M12 7v5l3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M8 17h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
     name: 'Medicare Savings',
     desc: 'Help paying Medicare premiums and out-of-pocket costs',
+    color: '#0d9488',
+    bgColor: '#ccfbf1',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="12" r="9" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
-        <path d="M12 7v10M9 9.5h4.5a2 2 0 010 4H9m0 0h5" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="12" cy="12" r="9" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M12 7v10M9 9.5h4.5a2 2 0 010 4H9m0 0h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
   {
     name: 'CHIP',
     desc: "Free health coverage for children in your household",
+    color: '#ea580c',
+    bgColor: '#ffedd5',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="8" r="4" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
-        <path d="M5 20c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" />
-        <path d="M15 4l1.5 1.5M9 4L7.5 5.5" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="12" cy="8" r="4" fill="currentColor" opacity="0.2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M5 20c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M15 4l1.5 1.5M9 4L7.5 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -85,7 +95,7 @@ const programs = [
 const faqs = [
   {
     q: 'Is this really free?',
-    a: "Yes, completely. CoveredUSA never charges users. We're funded by licensed insurance agents who pay us only if you choose to connect with them — and only after you enroll.",
+    a: "Yes, completely. CoveredUSA never charges users. We're funded by licensed insurance agents who pay us only if you choose to connect with them, and only after you enroll.",
   },
   {
     q: 'Do I need to sign up or create an account?',
@@ -101,7 +111,7 @@ const faqs = [
   },
   {
     q: 'Will I be pressured to buy something?',
-    a: "No. We show you your eligibility results with no strings attached. If you want help enrolling, we can connect you with a licensed agent — but that's always your choice.",
+    a: "No. We show you your eligibility results with no strings attached. If you want help enrolling, we can connect you with a licensed agent, but that's always your choice.",
   },
   {
     q: 'What if I speak Spanish?',
@@ -156,18 +166,8 @@ export default async function HomePage({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'hero' });
 
-  const CheckIcon = () => (
-    <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" style={{ color: 'var(--primary)' }}>
-      <path
-        fillRule="evenodd"
-        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-        clipRule="evenodd"
-      />
-    </svg>
-  );
-
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -182,52 +182,75 @@ export default async function HomePage({
       />
 
       {/* Hero */}
-      <section style={{ background: 'linear-gradient(180deg, var(--cream) 0%, white 100%)' }}>
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+      <section style={{
+        background: 'linear-gradient(180deg, var(--cream) 0%, white 100%)',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        {/* Subtle background pattern */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: 'radial-gradient(circle at 1px 1px, var(--cream-dark) 1px, transparent 0)',
+          backgroundSize: '40px 40px',
+          opacity: 0.4,
+          pointerEvents: 'none',
+        }} />
+
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28" style={{ position: 'relative' }}>
           <div className="max-w-2xl mx-auto text-center">
             <div
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6 text-sm font-semibold"
-              style={{ background: 'var(--cream-dark)', color: 'var(--primary)' }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8 text-sm font-semibold"
+              style={{ background: 'var(--cream-dark)', color: 'var(--primary)', border: '1px solid var(--primary-lightest)' }}
             >
-              <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: 'var(--primary)' }} />
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="8" r="4" fill="var(--success)" />
+                <circle cx="8" cy="8" r="4" fill="var(--success)" opacity="0.3">
+                  <animate attributeName="r" from="4" to="7" dur="1.5s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" from="0.3" to="0" dur="1.5s" repeatCount="indefinite" />
+                </circle>
+              </svg>
               Free Eligibility Check
             </div>
 
             <h1
-              className="text-4xl md:text-5xl font-bold mb-5 leading-tight"
-              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em' }}
             >
               {t('headline')}
             </h1>
 
             <p
-              className="text-lg md:text-xl mb-8 leading-relaxed"
+              className="text-lg md:text-xl mb-10 leading-relaxed"
               style={{ color: 'var(--text-secondary)' }}
             >
-              Check your eligibility in 2 minutes. Free, confidential, available in Spanish.
+              Check your eligibility for Medicaid, Medicare, ACA plans, and more. Free, confidential, and available in Spanish.
             </p>
 
-            <Link
-              href={`/${locale}/screener`}
-              className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2"
-            >
-              {t('cta')}
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                href={`/${locale}/screener`}
+                className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2"
+                style={{ fontSize: '1.1rem', boxShadow: 'var(--shadow-primary)' }}
+              >
+                {t('cta')}
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+              <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>Takes about 2 minutes</span>
+            </div>
 
             {/* Trust signals */}
-            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8">
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 mt-10">
               {[
-                t('trust1'),
-                t('trust2'),
-                t('trust3'),
-                'Results in 2 minutes',
+                { text: t('trust1'), icon: '🆓' },
+                { text: t('trust2'), icon: '🔒' },
+                { text: t('trust3'), icon: '🌐' },
               ].map((badge) => (
-                <span key={badge} className="trust-badge">
-                  <CheckIcon />
-                  <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>{badge}</span>
+                <span key={badge.text} className="flex items-center gap-2" style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
+                  <span style={{ fontSize: '1rem' }}>{badge.icon}</span>
+                  {badge.text}
                 </span>
               ))}
             </div>
@@ -236,37 +259,47 @@ export default async function HomePage({
       </section>
 
       {/* Programs we check */}
-      <section style={{ background: 'var(--warm-white)', borderTop: '1px solid var(--border-light)', borderBottom: '1px solid var(--border-light)' }}>
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-          <div className="text-center mb-12">
-            <h2
-              className="text-2xl md:text-3xl font-bold mb-3"
-              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
+      <section style={{ background: 'white', borderTop: '1px solid var(--border-light)' }}>
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-24">
+          <div className="text-center mb-14">
+            <span
+              className="inline-block text-sm font-semibold mb-3 px-3 py-1 rounded-full"
+              style={{ background: 'var(--cream)', color: 'var(--primary)' }}
             >
-              Programs we check
+              5 Programs Checked
+            </span>
+            <h2
+              className="text-3xl md:text-4xl font-bold mb-4"
+              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
+            >
+              Programs we screen for
             </h2>
-            <p style={{ color: 'var(--text-muted)' }}>
-              We screen for 5 federal and state health coverage programs in one check.
+            <p className="max-w-lg mx-auto" style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>
+              One quick check covers all major federal and state health coverage programs.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
             {programs.map((program) => (
-              <div key={program.name} className="card flex items-start gap-4">
+              <div
+                key={program.name}
+                className="card"
+                style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.875rem' }}
+              >
                 <div
-                  className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'var(--cream)' }}
+                  className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: program.bgColor, color: program.color }}
                 >
                   {program.icon}
                 </div>
                 <div>
                   <h3
-                    className="font-semibold text-base mb-1"
+                    className="font-bold text-base mb-1"
                     style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
                   >
                     {program.name}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)', margin: 0 }}>
                     {program.desc}
                   </p>
                 </div>
@@ -276,15 +309,19 @@ export default async function HomePage({
             {/* CTA card */}
             <div
               className="card flex items-center justify-center"
-              style={{ background: 'var(--cream)', border: '1px solid var(--cream-dark)' }}
+              style={{
+                background: 'linear-gradient(135deg, var(--cream), var(--cream-dark))',
+                border: '1px solid var(--cream-dark)',
+                minHeight: '140px',
+              }}
             >
               <Link
                 href={`/${locale}/screener`}
-                className="font-semibold flex items-center gap-1"
+                className="font-semibold flex items-center gap-2 text-base"
                 style={{ color: 'var(--primary)' }}
               >
-                See what you qualify for
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                Check all 5 programs
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
@@ -294,83 +331,110 @@ export default async function HomePage({
       </section>
 
       {/* How it works */}
-      <section id="how-it-works" style={{ background: 'white' }}>
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-          <div className="text-center mb-14">
+      <section id="how-it-works" style={{ background: 'var(--cream)', borderTop: '1px solid var(--border-light)' }}>
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-24">
+          <div className="text-center mb-16">
+            <span
+              className="inline-block text-sm font-semibold mb-3 px-3 py-1 rounded-full"
+              style={{ background: 'white', color: 'var(--primary)' }}
+            >
+              Simple Process
+            </span>
             <h2
-              className="text-2xl md:text-3xl font-bold mb-3"
-              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
+              className="text-3xl md:text-4xl font-bold mb-4"
+              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
               How it works
             </h2>
-            <p style={{ color: 'var(--text-muted)' }}>Three steps, two minutes, no catch.</p>
+            <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>Three steps, two minutes, no catch.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                num: '1',
-                title: 'Answer a few questions',
-                desc: 'Tell us about your household, income, and state. Takes about 2 minutes.',
-                icon: (
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                    <rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor" strokeWidth="1.5" />
-                    <path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
-                ),
-              },
-              {
-                num: '2',
-                title: 'See your results',
-                desc: 'We check eligibility for 5 healthcare programs instantly and show you what you likely qualify for.',
-                icon: (
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                    <path d="M9 11l3 3 8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M21 12a9 9 0 11-6.22-8.56" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
-                ),
-              },
-              {
-                num: '3',
-                title: 'Get free help enrolling',
-                desc: 'Connect with a licensed agent who speaks your language. No cost to you, ever.',
-                icon: (
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                    <circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="1.5" />
-                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
-                ),
-              },
-            ].map((step) => (
-              <div key={step.num} className="text-center">
-                <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 relative"
-                  style={{ background: 'var(--cream)', color: 'var(--primary)' }}
-                >
-                  {step.icon}
-                  <span
-                    className="absolute -top-2 -right-2 w-5 h-5 rounded-full text-xs font-bold flex items-center justify-center"
-                    style={{ background: 'var(--primary)', color: 'white' }}
-                  >
-                    {step.num}
-                  </span>
-                </div>
-                <h3
-                  className="font-semibold text-lg mb-2"
-                  style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
-                >
-                  {step.title}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                  {step.desc}
-                </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 relative">
+              {/* Connecting line (desktop only) */}
+              <div
+                className="hidden md:block absolute"
+                style={{
+                  top: '44px',
+                  left: 'calc(16.67% + 28px)',
+                  right: 'calc(16.67% + 28px)',
+                  height: '2px',
+                  background: 'var(--sand)',
+                  zIndex: 0,
+                }}
+              >
+                <div style={{
+                  height: '100%',
+                  background: 'linear-gradient(90deg, var(--primary), var(--teal))',
+                  borderRadius: '999px',
+                }} />
               </div>
-            ))}
+
+              {[
+                {
+                  num: '1',
+                  title: 'Answer a few questions',
+                  desc: 'Tell us about your household, income, and state. Four short sections, about 2 minutes total.',
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+                      <rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor" strokeWidth="1.5" />
+                      <path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  ),
+                },
+                {
+                  num: '2',
+                  title: 'See your results',
+                  desc: 'We check 5 healthcare programs instantly and show you what you likely qualify for.',
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+                      <path d="M9 11l3 3 8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M21 12a9 9 0 11-6.22-8.56" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  ),
+                },
+                {
+                  num: '3',
+                  title: 'Get free help enrolling',
+                  desc: 'Connect with a licensed agent who speaks your language. No cost to you, ever.',
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+                      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                      <circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="1.5" />
+                      <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  ),
+                },
+              ].map((step) => (
+                <div key={step.num} className="text-center relative" style={{ zIndex: 1 }}>
+                  <div
+                    className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 relative"
+                    style={{ background: 'white', color: 'var(--primary)', boxShadow: 'var(--shadow-md)', border: '1px solid var(--border-light)' }}
+                  >
+                    {step.icon}
+                    <span
+                      className="absolute -top-2 -right-2 w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center"
+                      style={{ background: 'var(--primary)', color: 'white', boxShadow: 'var(--shadow-sm)' }}
+                    >
+                      {step.num}
+                    </span>
+                  </div>
+                  <h3
+                    className="font-bold text-lg mb-2"
+                    style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
+                  >
+                    {step.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                    {step.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="text-center mt-10">
-            <Link href={`/${locale}/screener`} className="btn-primary">
+          <div className="text-center mt-12">
+            <Link href={`/${locale}/screener`} className="btn-primary text-base px-8 py-3.5">
               {t('cta')}
             </Link>
           </div>
@@ -378,70 +442,64 @@ export default async function HomePage({
       </section>
 
       {/* Why CoveredUSA */}
-      <section style={{ background: 'var(--cream)', borderTop: '1px solid var(--border-light)', borderBottom: '1px solid var(--border-light)' }}>
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-          <div className="text-center mb-12">
+      <section style={{ background: 'white', borderTop: '1px solid var(--border-light)' }}>
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-24">
+          <div className="text-center mb-14">
             <h2
-              className="text-2xl md:text-3xl font-bold mb-3"
-              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
+              className="text-3xl md:text-4xl font-bold mb-4"
+              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
               Why CoveredUSA
             </h2>
+            <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>
+              Built to help you find coverage, not to sell you something.
+            </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
               {
                 title: 'Free to use',
                 desc: 'We never charge users. Our service is 100% free.',
-                icon: (
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                    <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" />
-                    <path d="M12 7v10M9 9.5h4.5a2 2 0 010 4H9m0 0h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                ),
+                emoji: '💰',
+                color: '#059669',
+                bg: '#d1fae5',
               },
               {
                 title: 'Licensed agents',
                 desc: 'We connect you with licensed insurance professionals.',
-                icon: (
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                    <path d="M12 2L4 6v6c0 5.52 3.44 10.24 8 12 4.56-1.76 8-6.48 8-12V6l-8-4z" stroke="currentColor" strokeWidth="1.5" />
-                    <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                ),
+                emoji: '🛡️',
+                color: '#0369a1',
+                bg: '#e0f2fe',
               },
               {
                 title: 'Available in Spanish',
                 desc: 'Our screener and agents speak Spanish.',
-                icon: (
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                    <path d="M3 5h8M7 3v2M10 8c0 2.21-1.34 4-3 4s-3-1.79-3-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M13 19l4-9 4 9M14.5 16h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                ),
+                emoji: '🌐',
+                color: '#7c3aed',
+                bg: '#ede9fe',
               },
               {
                 title: 'Confidential',
                 desc: 'We never sell your data. Your answers are private.',
-                icon: (
-                  <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                    <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" strokeWidth="1.5" />
-                    <path d="M8 11V7a4 4 0 118 0v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                    <circle cx="12" cy="16" r="1.5" fill="currentColor" />
-                  </svg>
-                ),
+                emoji: '🔒',
+                color: '#0d9488',
+                bg: '#ccfbf1',
               },
             ].map((item) => (
-              <div key={item.title} className="card text-center">
+              <div
+                key={item.title}
+                className="text-center"
+                style={{ padding: '1.5rem' }}
+              >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4"
-                  style={{ background: 'var(--cream-dark)', color: 'var(--primary)' }}
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                  style={{ background: item.bg, fontSize: '1.5rem' }}
                 >
-                  {item.icon}
+                  {item.emoji}
                 </div>
                 <h3
-                  className="font-semibold mb-2"
+                  className="font-bold mb-2"
                   style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
                 >
                   {item.title}
@@ -456,62 +514,81 @@ export default async function HomePage({
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--warm-white)' }}>
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-          <div className="text-center mb-12">
+      <section style={{ background: 'var(--cream)', borderTop: '1px solid var(--border-light)' }}>
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-24">
+          <div className="text-center mb-14">
             <h2
-              className="text-2xl md:text-3xl font-bold mb-3"
-              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
+              className="text-3xl md:text-4xl font-bold mb-4"
+              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
               Frequently asked questions
             </h2>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-4">
+          <div className="max-w-3xl mx-auto space-y-3">
             {faqs.map((faq) => (
-              <div
+              <details
                 key={faq.q}
-                className="card"
-                style={{ background: 'white' }}
+                className="group"
+                style={{
+                  background: 'white',
+                  borderRadius: '14px',
+                  border: '1px solid var(--border-light)',
+                  overflow: 'hidden',
+                  transition: 'box-shadow 0.2s ease',
+                }}
               >
-                <h3
-                  className="font-semibold mb-2"
-                  style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
+                <summary
+                  className="cursor-pointer list-none flex items-center justify-between"
+                  style={{ padding: '1.125rem 1.25rem', fontWeight: 600, color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
                 >
-                  {faq.q}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                  {faq.a}
-                </p>
-              </div>
+                  <span>{faq.q}</span>
+                  <svg
+                    className="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="var(--text-muted)"
+                    strokeWidth="2"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div style={{ padding: '0 1.25rem 1.125rem' }}>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)', margin: 0 }}>
+                    {faq.a}
+                  </p>
+                </div>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ background: 'var(--primary-dark)' }}>
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-20 text-center">
-          <h2
-            className="text-2xl md:text-3xl font-bold text-white mb-4"
-            style={{ fontFamily: 'var(--font-display)' }}
-          >
-            Millions of Americans qualify for health coverage they don&apos;t know about.
-          </h2>
-          <p className="text-white/60 mb-8 max-w-md mx-auto">
-            Find out if you&apos;re one of them. It takes 2 minutes and it&apos;s completely free.
-          </p>
-          <Link
-            href={`/${locale}/screener`}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 font-semibold rounded-lg text-lg transition-all"
-            style={{ background: 'var(--teal)', color: 'white' }}
-          >
-            Check My Eligibility — It&apos;s Free
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-          <p className="text-white/35 text-sm mt-6">No sign-up. No pressure. Just results.</p>
+      <section style={{ background: 'linear-gradient(135deg, var(--primary-deeper) 0%, var(--primary-dark) 50%, var(--primary) 100%)' }}>
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-24 text-center">
+          <div className="max-w-xl mx-auto">
+            <h2
+              className="text-2xl md:text-3xl font-bold text-white mb-4"
+              style={{ fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', lineHeight: 1.3 }}
+            >
+              Millions of Americans qualify for health coverage they don&apos;t know about.
+            </h2>
+            <p className="text-white/60 mb-10 text-base">
+              Find out if you&apos;re one of them. It takes 2 minutes and it&apos;s completely free.
+            </p>
+            <Link
+              href={`/${locale}/screener`}
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 font-bold rounded-xl text-lg transition-all"
+              style={{ background: 'white', color: 'var(--primary-dark)', boxShadow: '0 4px 24px rgba(0,0,0,0.15)' }}
+            >
+              Check My Eligibility
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <p className="text-white/35 text-sm mt-6">No sign-up. No pressure. Just results.</p>
+          </div>
         </div>
       </section>
     </main>

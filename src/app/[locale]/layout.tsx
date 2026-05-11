@@ -50,8 +50,16 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider>
-      <header style={{ background: 'var(--primary-dark)', color: 'white' }}>
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <header style={{
+        background: 'rgba(7, 89, 133, 0.97)',
+        backdropFilter: 'blur(12px)',
+        color: 'white',
+        position: 'sticky',
+        top: 0,
+        zIndex: 50,
+        borderBottom: '1px solid rgba(255,255,255,0.08)',
+      }}>
+        <div className="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
           {/* Logo */}
           <Link
             href={`/${locale}`}
@@ -70,26 +78,32 @@ export default async function LocaleLayout({
           <nav className="flex items-center gap-3 sm:gap-5">
             <Link
               href={`/${locale}#how-it-works`}
-              className="text-sm text-white/70 hover:text-white transition-colors hidden sm:inline"
+              className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
+              style={{ fontWeight: 500 }}
             >
               {t('howItWorks')}
             </Link>
             <Link
               href={`/${locale}/about`}
-              className="text-sm text-white/70 hover:text-white transition-colors hidden sm:inline"
+              className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
+              style={{ fontWeight: 500 }}
             >
               {t('about')}
             </Link>
             <a
               href={`/${otherLocale}`}
-              className="text-xs font-medium px-2.5 py-1 rounded-full border border-white/30 text-white/80 hover:text-white hover:border-white/60 transition-all"
+              className="text-xs font-semibold px-2.5 py-1 rounded-full border border-white/25 text-white/70 hover:text-white hover:border-white/50 transition-all"
             >
               {locale === 'en' ? 'ES' : 'EN'}
             </a>
             <Link
               href={`/${locale}/screener`}
-              className="btn-primary text-sm px-4 py-2"
-              style={{ fontSize: '0.875rem', padding: '0.5rem 1.25rem' }}
+              className="text-sm font-semibold px-4 py-2 rounded-lg transition-all"
+              style={{
+                background: 'rgba(255,255,255,0.15)',
+                color: 'white',
+                border: '1px solid rgba(255,255,255,0.2)',
+              }}
             >
               {t('checkEligibility')}
             </Link>
@@ -97,7 +111,7 @@ export default async function LocaleLayout({
         </div>
       </header>
 
-      <div style={{ minHeight: 'calc(100vh - 68px - 280px)' }}>
+      <div style={{ minHeight: 'calc(100vh - 60px - 280px)' }}>
         {children}
       </div>
 
@@ -131,7 +145,7 @@ export default async function LocaleLayout({
             {/* Resources col */}
             <div>
               <h3 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">Resources</h3>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2.5 text-sm">
                 <li>
                   <Link href={`/${locale}`} className="text-white/60 hover:text-white transition-colors">
                     Home
@@ -158,7 +172,7 @@ export default async function LocaleLayout({
             {/* Legal col */}
             <div>
               <h3 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">Legal</h3>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2.5 text-sm">
                 <li>
                   <Link href={`/${locale}/privacy`} className="text-white/60 hover:text-white transition-colors">
                     {tf('privacy')}
@@ -204,7 +218,7 @@ export default async function LocaleLayout({
               <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
               </svg>
-              Free to use — no sign-up required
+              Free to use, no sign-up required
             </span>
           </div>
 
