@@ -8,7 +8,7 @@ export interface ScreenerInput {
   age: number;
   householdSize: number;
   annualIncome: number;
-  employmentStatus: 'employed' | 'self-employed' | 'unemployed' | 'retired';
+  employmentStatus?: 'employed' | 'self-employed' | 'unemployed' | 'retired';
   isPregnant: boolean;
   hasDisability: boolean;
   currentlyInsured: boolean;

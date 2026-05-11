@@ -20,9 +20,9 @@ export function checkACA(input: ScreenerInput): ProgramResult {
   const medicaidName = stateData?.medicaid?.localName || `${stateName} Medicaid`;
   const medicaidUrl = stateData?.medicaid?.applicationUrl || 'https://www.healthcare.gov/medicaid-chip/';
 
-  const fpl100 = getFPL(householdSize, 100);
-  const fpl138 = getFPL(householdSize, 138);
-  const fpl400 = getFPL(householdSize, 400);
+  const fpl100 = getFPL(householdSize, 100, state);
+  const fpl138 = getFPL(householdSize, 138, state);
+  const fpl400 = getFPL(householdSize, 400, state);
   const fplPercent = getFPLPercentage(annualIncome, householdSize);
 
   const result: ProgramResult = {
