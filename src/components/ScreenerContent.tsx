@@ -130,7 +130,7 @@ export default function ScreenerContent({ locale }: { locale: string }) {
         return locale === 'es' ? 'Por favor selecciona tu estado.' : 'Please select your state.';
       }
     }
-    if (step === 2) {
+    if (step === 3) {
       if (!formData.age || formData.age < 1) {
         return locale === 'es' ? 'Por favor ingresa tu edad.' : 'Please enter your age.';
       }
