@@ -43,3 +43,9 @@ You can enroll at HealthCare.gov, through your state's marketplace, or with the 
 ---
 
 *Check your ACA eligibility in 2 minutes — free, confidential, available in Spanish.*
+
+## Sources & References
+
+1. [ACA Marketplace — HealthCare.gov](https://www.healthcare.gov/glossary/affordable-care-act/)
+2. [Premium Tax Credits — IRS.gov](https://www.irs.gov/affordable-care-act/individuals-and-families/the-premium-tax-credit-the-basics)
+3. [Open Enrollment Dates — HealthCare.gov](https://www.healthcare.gov/quick-guide/dates-and-deadlines/)

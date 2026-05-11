@@ -41,3 +41,9 @@ If you have Medicare but limited income, you may qualify for Extra Help programs
 ---
 
 *Check your Medicare eligibility in 2 minutes — free, available in Spanish.*
+
+## Sources & References
+
+1. [Medicare Eligibility — Medicare.gov](https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/who-can-get-medicare)
+2. [Medicare Costs 2026 — CMS.gov](https://www.cms.gov/medicare/medicare-costs/part-a-costs)
+3. [Medicare Enrollment Periods — SSA.gov](https://www.ssa.gov/benefits/medicare/)

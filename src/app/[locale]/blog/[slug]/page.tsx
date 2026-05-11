@@ -5,6 +5,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts, formatDate } from '@/lib/blog';
 import { setRequestLocale } from 'next-intl/server';
+import AuthorBio from '@/components/AuthorBio';
 
 // ISR: cache blog pages for 1 week, build on-demand for new posts
 export const revalidate = 604800;
@@ -211,6 +212,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       {/* Article Content */}
       <article className="max-w-3xl mx-auto px-6 py-12">
+        <AuthorBio />
         <div className="prose prose-slate prose-lg max-w-none">
           <MDXRemote
             source={firstHalf}

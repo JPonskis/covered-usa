@@ -44,3 +44,9 @@ The fastest way to apply is through your state's Medicaid agency or HealthCare.g
 ---
 
 *Check your eligibility in 2 minutes — free, confidential, available in Spanish.*
+
+## Sources & References
+
+1. [Medicaid Eligibility — Medicaid.gov](https://www.medicaid.gov/medicaid/eligibility/index.html)
+2. [Federal Poverty Level Guidelines — HHS.gov](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)
+3. [Medicaid Expansion — KFF.org](https://www.kff.org/medicaid/issue-brief/status-of-state-medicaid-expansion-decisions-interactive-map/)
