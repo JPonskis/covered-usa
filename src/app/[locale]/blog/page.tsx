@@ -3,9 +3,7 @@ import Link from 'next/link';
 import { getAllPosts, formatDate } from '@/lib/blog';
 import { setRequestLocale } from 'next-intl/server';
 
-interface PageProps {
-  params: Promise<{ locale: string }>;
-}
+export const revalidate = 86400;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
@@ -21,129 +19,161 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function BlogIndexPage({ params }: PageProps) {
+interface PageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function LocaleBlogPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
 
   const posts = getAllPosts(locale);
-  const isEs = locale === 'es';
+  const featuredPost = posts[0];
+  const otherPosts = posts.slice(1);
 
+  const isEs = locale === 'es';
   const t = {
-    heading: isEs ? 'Guías de Seguro de Salud' : 'Health Insurance Guides',
-    subheading: isEs
-      ? 'Aprenda sobre Medicaid, Medicare, ACA y CHIP — quién califica, límites de ingresos y cómo inscribirse.'
-      : 'Learn about Medicaid, Medicare, ACA, and CHIP — who qualifies, income limits, and how to enroll.',
-    readMore: isEs ? 'Leer guía' : 'Read guide',
-    ctaHeading: isEs
-      ? '¿Listo para verificar su elegibilidad?'
-      : 'Ready to check your eligibility?',
+    hero: isEs ? 'Recursos de Seguro de Salud' : 'Health Insurance Resources',
+    title1: isEs ? 'Guías de' : 'Health Insurance',
+    title2: isEs ? 'Seguro de Salud' : 'Guides',
+    subtitle: isEs
+      ? 'Guías claras y honestas sobre Medicaid, Medicare, ACA y CHIP. Aprenda quién califica, los límites de ingresos y cómo inscribirse.'
+      : 'Clear, honest guides on Medicaid, Medicare, ACA, and CHIP. Learn who qualifies, income limits, and how to enroll.',
+    latest: isEs ? 'Artículo Más Reciente' : 'Latest Article',
+    more: isEs ? 'Más Recursos' : 'More Resources',
+    readGuide: isEs ? 'Leer la guía completa' : 'Read the full guide',
+    guide: isEs ? 'Guía' : 'Guide',
+    ctaTitle: isEs ? '¿Listo para verificar su elegibilidad?' : 'Ready to check your eligibility?',
     ctaDesc: isEs
-      ? 'Nuestro evaluador gratuito toma 2 minutos y le muestra qué cobertura de salud puede calificar.'
+      ? 'Nuestro evaluador gratuito toma 2 minutos y le muestra para qué cobertura de salud puede calificar.'
       : 'Our free screener takes 2 minutes and shows you what health coverage you may qualify for.',
     ctaBtn: isEs ? 'Verificar Elegibilidad Gratis' : 'Check My Eligibility — Free',
-    noPosts: isEs ? 'No hay artículos disponibles todavía.' : 'No articles available yet.',
+    empty: isEs ? 'Estamos trabajando en guías útiles. ¡Vuelva pronto!' : 'We\u2019re working on helpful guides. Check back soon!',
   };
 
+  const blogBase = `/${locale}/blog`;
+
   return (
-    <main className="min-h-screen" style={{ background: '#f8fafc' }}>
-      {/* Header */}
-      <div style={{ background: 'white', borderBottom: '1px solid #e2e8f0' }}>
-        <div className="max-w-5xl mx-auto px-6 py-14 text-center">
-          <h1
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: '#0f172a', letterSpacing: '-0.02em' }}
-          >
-            {t.heading}
-          </h1>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#475569' }}>
-            {t.subheading}
-          </p>
+    <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
+      {/* Hero */}
+      <section className="warm-texture border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+          <div className="max-w-3xl">
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-6" style={{ background: 'var(--teal)', color: 'white', fontFamily: 'var(--font-display), Georgia, serif' }}>
+              {t.hero}
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" style={{ fontFamily: 'var(--font-display), Georgia, serif', color: 'var(--text-primary)', letterSpacing: '-0.03em' }}>
+              {t.title1}<br />
+              <span style={{ color: 'var(--teal)' }}>{t.title2}</span>
+            </h1>
+            <p className="text-lg md:text-xl leading-relaxed" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+              {t.subtitle}
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Post Grid */}
-      <div className="max-w-5xl mx-auto px-6 py-12">
+      {/* Posts */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
         {posts.length === 0 ? (
-          <p className="text-center py-20" style={{ color: '#94a3b8' }}>
-            {t.noPosts}
-          </p>
+          <div className="text-center py-20">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center" style={{ background: 'var(--cream)' }}>
+              <svg className="w-8 h-8" style={{ color: 'var(--teal)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
+            </div>
+            <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }} className="text-lg">{t.empty}</p>
+          </div>
         ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/${locale}/blog/${post.slug}`}
-                className="group flex flex-col rounded-2xl overflow-hidden transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                style={{ background: 'white', border: '1px solid #e2e8f0' }}
-              >
-                <div className="p-6 flex flex-col flex-1">
-                  <div className="flex items-center gap-2 mb-4">
-                    <span
-                      className="text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide"
-                      style={{ background: '#dbeafe', color: '#1d4ed8' }}
-                    >
-                      {isEs ? 'Guía' : 'Guide'}
-                    </span>
-                    <span className="text-xs" style={{ color: '#94a3b8' }}>
-                      {post.readingTime}
-                    </span>
+          <div className="space-y-12">
+            {featuredPost && (
+              <div className="mb-16">
+                <h2 className="text-sm font-semibold uppercase tracking-wider mb-8" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-display), Georgia, serif', letterSpacing: '0.1em' }}>
+                  {t.latest}
+                </h2>
+                <Link href={`${blogBase}/${featuredPost.slug}`} className="blog-card featured-post block">
+                  <div className="blog-card-inner p-8 md:p-12" style={{ background: 'white' }}>
+                    <div className="flex flex-col md:flex-row md:items-start gap-8">
+                      <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl flex-shrink-0 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%)' }}>
+                        <svg className="w-10 h-10 md:w-12 md:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                          <span className="category-tag">{t.guide}</span>
+                          <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+                            {formatDate(featuredPost.date, locale)} · {featuredPost.readingTime}
+                          </span>
+                        </div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4 leading-tight" style={{ fontFamily: 'var(--font-display), Georgia, serif', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
+                          {featuredPost.title}
+                        </h3>
+                        <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+                          {featuredPost.description}
+                        </p>
+                        <span className="inline-flex items-center gap-2 font-semibold" style={{ color: 'var(--teal)', fontFamily: 'var(--font-display), Georgia, serif' }}>
+                          {t.readGuide}
+                          <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
                   </div>
+                </Link>
+              </div>
+            )}
 
-                  <h2
-                    className="font-bold text-lg mb-3 leading-snug group-hover:text-blue-600 transition-colors flex-1"
-                    style={{ color: '#0f172a' }}
-                  >
-                    {post.title}
-                  </h2>
-
-                  <p
-                    className="text-sm leading-relaxed mb-5 line-clamp-3"
-                    style={{ color: '#64748b' }}
-                  >
-                    {post.description}
-                  </p>
-
-                  <div className="flex items-center justify-between mt-auto">
-                    <span className="text-xs" style={{ color: '#94a3b8' }}>
-                      {formatDate(post.date, locale)}
-                    </span>
-                    <span
-                      className="text-xs font-semibold flex items-center gap-1 transition-colors group-hover:text-blue-600"
-                      style={{ color: '#3b82f6' }}
-                    >
-                      {t.readMore}
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                        <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
+            {otherPosts.length > 0 && (
+              <div>
+                <h2 className="text-sm font-semibold uppercase tracking-wider mb-8" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-display), Georgia, serif', letterSpacing: '0.1em' }}>
+                  {t.more}
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {otherPosts.map((post) => (
+                    <Link key={post.slug} href={`${blogBase}/${post.slug}`} className="blog-card block">
+                      <div className="blog-card-inner p-6">
+                        <div className="flex items-center gap-3 mb-4">
+                          <span className="category-tag">{t.guide}</span>
+                          <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+                            {formatDate(post.date, locale)}
+                          </span>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-3 leading-snug" style={{ fontFamily: 'var(--font-display), Georgia, serif', color: 'var(--text-primary)' }}>
+                          {post.title}
+                        </h3>
+                        <p className="leading-relaxed mb-4" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+                          {post.description}
+                        </p>
+                        <span className="text-sm font-medium" style={{ color: 'var(--teal)' }}>{post.readingTime}</span>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-              </Link>
-            ))}
+              </div>
+            )}
           </div>
         )}
+      </section>
 
-        {/* CTA */}
-        <div
-          className="mt-16 rounded-2xl p-8 text-center"
-          style={{ background: '#1e3a5f', color: 'white' }}
-        >
-          <h2 className="text-2xl font-bold mb-3">{t.ctaHeading}</h2>
-          <p className="mb-6 max-w-lg mx-auto" style={{ color: '#93c5fd' }}>
+      {/* CTA */}
+      <section className="warm-texture border-t" style={{ borderColor: 'var(--border)' }}>
+        <div className="max-w-6xl mx-auto px-6 py-16 text-center">
+          <div className="w-14 h-14 rounded-full flex items-center justify-center mb-6 mx-auto" style={{ background: 'var(--teal)' }}>
+            <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: 'var(--font-display), Georgia, serif', color: 'var(--text-primary)' }}>
+            {t.ctaTitle}
+          </h2>
+          <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
             {t.ctaDesc}
           </p>
-          <Link
-            href={`/${locale}/screener?utm_source=blog&utm_medium=index-cta`}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all hover:opacity-90"
-            style={{ background: '#3b82f6', color: 'white' }}
-          >
-            {t.ctaBtn}
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
+          <Link href={`/${locale}/screener`} className="btn-primary text-lg px-8 py-4">{t.ctaBtn}</Link>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

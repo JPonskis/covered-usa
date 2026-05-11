@@ -5,6 +5,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts, formatDate } from '@/lib/blog';
 import { setRequestLocale } from 'next-intl/server';
+import BlogDropCap from '@/components/BlogDropCap';
 import AuthorBio from '@/components/AuthorBio';
 
 // ISR: cache blog pages for 1 week, build on-demand for new posts
@@ -16,8 +17,6 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  // Only pre-build the 20 most recent posts per locale at deploy time.
-  // Everything else builds on-demand via ISR and caches for 1 week.
   const locales = ['en', 'es'];
   const params: { locale: string; slug: string }[] = [];
   for (const locale of locales) {
@@ -38,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${post.title} | CoveredUSA`,
+    title: `${post.title} | CoveredUSA Blog`,
     description: post.description,
     keywords: post.keywords,
     alternates: {
@@ -48,11 +47,27 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: post.title,
       description: post.description,
       type: 'article',
+      images: [`/api/og?title=${encodeURIComponent(post.title)}`],
     },
   };
 }
 
-export default async function BlogPostPage({ params }: PageProps) {
+// ─── MID-ARTICLE CTA ──────────────────────────────────────────────────────────
+
+const MID_CTA = {
+  en: {
+    heading: 'Check if you qualify for health coverage',
+    desc: 'Our free screener checks Medicaid, Medicare, ACA, CHIP, and VA Healthcare in 2 minutes.',
+  },
+  es: {
+    heading: 'Verifique si califica para cobertura de salud',
+    desc: 'Nuestro evaluador gratuito verifica Medicaid, Medicare, ACA, CHIP y VA Healthcare en 2 minutos.',
+  },
+};
+
+// ──────────────────────────────────────────────────────────────────────────────
+
+export default async function LocaleBlogPostPage({ params }: PageProps) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
@@ -66,20 +81,19 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const t = {
     backToBlog: isEs ? 'Volver al Blog' : 'Back to Blog',
-    home: isEs ? 'Inicio' : 'Home',
-    blog: 'Blog',
-    screener: isEs ? 'Evaluador' : 'Screener',
-    ctaHeading: isEs
-      ? 'Verifique si califica para seguro de salud'
-      : 'Check if you qualify for health insurance',
+    guide: isEs ? 'Guía' : 'Guide',
+    ctaTitle: isEs ? '¿Listo para verificar su elegibilidad?' : 'Ready to check your eligibility?',
     ctaDesc: isEs
-      ? 'Gratis, toma 2 minutos. Sin documentos personales. Disponible en español.'
-      : 'Free, takes 2 minutes. No personal documents required. Available in Spanish.',
+      ? 'Nuestro evaluador gratuito toma 2 minutos y le muestra para qué cobertura de salud puede calificar.'
+      : 'Our free screener takes 2 minutes and shows you what health coverage you may qualify for.',
     ctaBtn: isEs ? 'Verificar Elegibilidad Gratis' : 'Check My Eligibility — Free',
-    relatedGuides: isEs ? 'Artículos Relacionados' : 'Related Articles',
-    by: isEs ? 'Por' : 'By',
-    lastUpdated: isEs ? 'Última actualización' : 'Last updated',
+    relatedGuides: isEs ? 'Guías Relacionadas' : 'Related Guides',
+    home: isEs ? 'Inicio' : 'Home',
+    screener: isEs ? 'Evaluador' : 'Screener',
+    blog: 'Blog',
   };
+
+  const midCta = isEs ? MID_CTA.es : MID_CTA.en;
 
   // JSON-LD schemas
   const articleSchema = {
@@ -90,12 +104,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     datePublished: post.date,
     dateModified: post.lastUpdated || post.date,
     image: post.image,
-    author: {
-      '@type': 'Person',
-      name: 'Jacob Posner',
-      jobTitle: 'Founder, CoveredUSA',
-      url: `${BASE_URL}/en/about`,
-    },
+    author: { '@type': 'Person', name: 'Jacob Posner', jobTitle: 'Founder, CoveredUSA', url: `${BASE_URL}/en/about` },
     publisher: { '@type': 'Organization', name: 'CoveredUSA', url: BASE_URL },
     inLanguage: isEs ? 'es' : 'en',
   };
@@ -110,11 +119,17 @@ export default async function BlogPostPage({ params }: PageProps) {
     ],
   };
 
-  // Extract FAQ schema from post content
+  // Mid-article CTA: split content after first H2 section
+  const strippedContent = post.content.replace(/^#{1,2} .+\n+/, '');
+  const h2Parts = strippedContent.split(/(?=\n## )/);
+  const showMidCta = h2Parts.length >= 3;
+  const firstHalf = showMidCta ? h2Parts.slice(0, 2).join('') : strippedContent;
+  const secondHalf = showMidCta ? h2Parts.slice(2).join('') : '';
+
+  // Extract FAQ schema
   const faqHeader = isEs ? '## Preguntas Frecuentes' : '## Frequently Asked Questions';
   const faqRegex = new RegExp(`${faqHeader.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\n([\\s\\S]*?)(?=\\n## |$)`);
-  const faqSectionMatch = post.content.match(faqRegex) ||
-    post.content.match(/## Frequently Asked Questions\n([\s\S]*?)(?=\n## |$)/);
+  const faqSectionMatch = post.content.match(faqRegex) || post.content.match(/## Frequently Asked Questions\n([\s\S]*?)(?=\n## |$)/);
   let faqSchema = null;
 
   if (faqSectionMatch) {
@@ -133,39 +148,42 @@ export default async function BlogPostPage({ params }: PageProps) {
     }
   }
 
-  // Split content for mid-article CTA (after first H2 section)
-  const strippedContent = post.content.replace(/^#{1,2} .+\n+/, '');
-  const h2Parts = strippedContent.split(/(?=\n## )/);
-  const showMidCta = h2Parts.length >= 3;
-  const firstHalf = showMidCta ? h2Parts.slice(0, 2).join('') : strippedContent;
-  const secondHalf = showMidCta ? h2Parts.slice(2).join('') : '';
-
-  const relatedPosts = getRelatedPosts(slug, 3, locale);
+  // HowTo schema
+  let howToSchema = null;
+  const howToMatch = post.content.match(/## (How to .+?)\n([\s\S]*?)(?=\n## |$)/);
+  if (howToMatch) {
+    const howToTitle = howToMatch[1];
+    const howToContent = howToMatch[2];
+    const steps = [...howToContent.matchAll(/(?:^|\n)(\d+)\.\s+\*\*(.+?)\*\*[:\.]?\s*([\s\S]*?)(?=\n\d+\.\s|\n## |$)/g)];
+    if (steps.length >= 2) {
+      howToSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: howToTitle,
+        step: steps.map((s, i) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: s[2].trim(),
+          text: s[3].trim().replace(/\n/g, ' '),
+        })),
+      };
+    }
+  }
 
   return (
-    <main className="min-h-screen" style={{ background: '#f8fafc' }}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
+    <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
 
       {/* Article Header */}
-      <div style={{ background: 'white', borderBottom: '1px solid #e2e8f0' }}>
-        <div className="max-w-3xl mx-auto px-6 pt-10 pb-14">
+      <div className="warm-texture border-b" style={{ borderColor: 'var(--border)' }}>
+        <div className="max-w-3xl mx-auto px-6 pt-10 pb-16">
           <Link
             href={`/${locale}/blog`}
-            className="inline-flex items-center gap-2 text-sm font-medium mb-8 transition-colors hover:opacity-70"
-            style={{ color: '#64748b' }}
+            className="inline-flex items-center gap-2 text-sm font-medium mb-10 transition-all hover:gap-3"
+            style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-display), Georgia, serif' }}
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -173,47 +191,44 @@ export default async function BlogPostPage({ params }: PageProps) {
             {t.backToBlog}
           </Link>
 
-          <div className="flex flex-wrap items-center gap-3 mb-5">
-            <span
-              className="text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide"
-              style={{ background: '#dbeafe', color: '#1d4ed8' }}
-            >
-              {isEs ? 'Guía' : 'Guide'}
-            </span>
-            <span className="text-sm" style={{ color: '#64748b' }}>
+          <div className="flex flex-wrap items-center gap-4 mb-6">
+            <span className="category-tag">{t.guide}</span>
+            <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
               {formatDate(post.date, locale)}
             </span>
-            <span style={{ color: '#cbd5e1' }}>·</span>
-            <span className="text-sm" style={{ color: '#64748b' }}>
+            <span style={{ color: 'var(--border)' }}>·</span>
+            <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
               {post.readingTime}
             </span>
             {post.lastUpdated && post.lastUpdated !== post.date && (
               <>
-                <span style={{ color: '#cbd5e1' }}>·</span>
-                <span className="text-sm" style={{ color: '#64748b' }}>
-                  {t.lastUpdated}: {formatDate(post.lastUpdated, locale)}
+                <span style={{ color: 'var(--border)' }}>·</span>
+                <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+                  {isEs ? 'Última actualización' : 'Last updated'}: {formatDate(post.lastUpdated, locale)}
                 </span>
               </>
             )}
+            <span style={{ color: 'var(--border)' }}>·</span>
+            <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+              {isEs ? 'Por' : 'By'} Jacob Posner
+            </span>
           </div>
 
-          <h1
-            className="text-3xl md:text-4xl font-bold leading-tight mb-5"
-            style={{ color: '#0f172a', letterSpacing: '-0.02em' }}
-          >
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6" style={{ fontFamily: 'var(--font-display), Georgia, serif', color: 'var(--text-primary)', letterSpacing: '-0.03em' }}>
             {post.title}
           </h1>
 
-          <p className="text-lg leading-relaxed" style={{ color: '#475569' }}>
+          <p className="text-lg md:text-xl leading-relaxed" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
             {post.description}
           </p>
         </div>
       </div>
 
       {/* Article Content */}
-      <article className="max-w-3xl mx-auto px-6 py-12">
+      <article className="max-w-3xl mx-auto px-6 py-12 md:py-16">
         <AuthorBio />
-        <div className="prose prose-slate prose-lg max-w-none">
+        <div className="article-content">
+          <BlogDropCap />
           <MDXRemote
             source={firstHalf}
             options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
@@ -222,33 +237,30 @@ export default async function BlogPostPage({ params }: PageProps) {
 
         {/* Mid-article CTA */}
         {showMidCta && (
-          <div
-            className="my-10 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-5"
-            style={{ background: '#eff6ff', border: '2px solid #bfdbfe' }}
-          >
+          <div className="my-10 rounded-2xl border-2 p-6 flex flex-col sm:flex-row items-center gap-5" style={{ borderColor: 'var(--teal)', background: 'var(--cream)' }}>
             <div className="flex-1 min-w-0">
-              <p className="font-bold text-lg mb-1" style={{ color: '#1e3a5f' }}>
-                {t.ctaHeading}
+              <p className="font-bold text-lg mb-1" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display), Georgia, serif' }}>
+                {midCta.heading}
               </p>
-              <p className="text-sm" style={{ color: '#3b82f6' }}>
-                {t.ctaDesc}
+              <p className="text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+                {midCta.desc}
               </p>
             </div>
             <Link
               href={`/${locale}/screener?utm_source=blog&utm_medium=mid-cta&utm_campaign=${encodeURIComponent(slug)}`}
               className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm whitespace-nowrap transition-all hover:opacity-90"
-              style={{ background: '#1d4ed8', color: '#fff' }}
+              style={{ background: 'var(--teal)', color: '#fff', fontFamily: 'var(--font-display), Georgia, serif' }}
             >
-              {t.ctaBtn}
+              {isEs ? 'Verificar elegibilidad gratis' : 'Check eligibility free'}
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </Link>
           </div>
         )}
 
         {showMidCta && (
-          <div className="prose prose-slate prose-lg max-w-none">
+          <div className="article-content">
             <MDXRemote
               source={secondHalf}
               options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
@@ -256,73 +268,68 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
         )}
 
-        {/* End-of-article CTA */}
-        <div
-          className="mt-12 rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6"
-          style={{ background: '#1e3a5f', color: 'white' }}
-        >
+        <div className="divider-ornament">
+          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/>
+          </svg>
+        </div>
+
+        {/* CTA Card */}
+        <div className="rounded-2xl border-2 p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-5" style={{ borderColor: 'var(--teal)', background: 'var(--cream)' }}>
           <div className="flex-1 min-w-0">
-            <p className="font-bold text-xl mb-2">
-              {t.ctaHeading}
+            <p className="font-bold text-xl mb-2" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display), Georgia, serif' }}>
+              {midCta.heading}
             </p>
-            <p className="text-sm" style={{ color: '#93c5fd' }}>
-              {t.ctaDesc}
+            <p className="text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+              {midCta.desc}
             </p>
           </div>
           <Link
             href={`/${locale}/screener?utm_source=blog&utm_medium=article&utm_campaign=${encodeURIComponent(slug)}`}
             className="flex-shrink-0 inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm whitespace-nowrap transition-all hover:opacity-90"
-            style={{ background: '#3b82f6', color: '#fff' }}
+            style={{ background: 'var(--teal)', color: '#fff', fontFamily: 'var(--font-display), Georgia, serif' }}
           >
             {t.ctaBtn}
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </Link>
         </div>
 
         {/* Related Posts */}
-        {relatedPosts.length > 0 && (
-          <div className="mt-14 pt-10" style={{ borderTop: '1px solid #e2e8f0' }}>
-            <h2
-              className="text-xs font-semibold uppercase tracking-widest mb-6"
-              style={{ color: '#94a3b8' }}
-            >
-              {t.relatedGuides}
-            </h2>
-            <div className="space-y-3">
-              {relatedPosts.map((related) => (
-                <Link
-                  key={related.slug}
-                  href={`/${locale}/blog/${related.slug}`}
-                  className="group flex items-start gap-4 p-5 rounded-xl transition-all"
-                  style={{ background: 'white', border: '1px solid #e2e8f0' }}
-                >
-                  <div className="flex-1 min-w-0">
-                    <span
-                      className="font-semibold block group-hover:text-blue-600 transition-colors"
-                      style={{ color: '#0f172a' }}
-                    >
-                      {related.title}
-                    </span>
-                    <span className="text-sm mt-1 block line-clamp-2" style={{ color: '#64748b' }}>
-                      {related.description}
-                    </span>
-                  </div>
-                  <svg
-                    className="w-5 h-5 flex-shrink-0 mt-1 transition-transform group-hover:translate-x-1"
-                    style={{ color: '#3b82f6' }}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+        {(() => {
+          const relatedPosts = getRelatedPosts(slug, 3, locale);
+          if (relatedPosts.length === 0) return null;
+          return (
+            <div className="mt-16 pt-12 border-t" style={{ borderColor: 'var(--border)' }}>
+              <h2 className="text-sm font-semibold uppercase tracking-wider mb-6" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-display), Georgia, serif', letterSpacing: '0.1em' }}>
+                {t.relatedGuides}
+              </h2>
+              <div className="space-y-4">
+                {relatedPosts.map((related) => (
+                  <Link
+                    key={related.slug}
+                    href={`/${locale}/blog/${related.slug}`}
+                    className="group flex items-start gap-4 p-5 rounded-xl transition-all"
+                    style={{ background: 'var(--cream)', border: '1px solid var(--border)' }}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ))}
+                    <div className="flex-1 min-w-0">
+                      <span className="font-semibold block group-hover:text-[#0d9488] transition-colors" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display), Georgia, serif' }}>
+                        {related.title}
+                      </span>
+                      <span className="text-sm mt-1 block line-clamp-2" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+                        {related.description}
+                      </span>
+                    </div>
+                    <svg className="w-5 h-5 flex-shrink-0 mt-1 transition-transform group-hover:translate-x-1" style={{ color: 'var(--teal)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
       </article>
     </main>
   );
