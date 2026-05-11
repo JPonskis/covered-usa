@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
@@ -207,23 +208,6 @@ export default async function HomePage({
                 </svg>
               </a>
 
-              {/* Live badge */}
-              <div className="mb-6">
-                <div
-                  className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold"
-                  style={{ background: 'white', color: 'var(--primary)', border: '1px solid var(--border)', boxShadow: 'var(--shadow-sm)' }}
-                >
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <circle cx="7" cy="7" r="3.5" fill="var(--success)" />
-                    <circle cx="7" cy="7" r="3.5" fill="var(--success)" opacity="0.3">
-                      <animate attributeName="r" from="3.5" to="6.5" dur="1.5s" repeatCount="indefinite" />
-                      <animate attributeName="opacity" from="0.3" to="0" dur="1.5s" repeatCount="indefinite" />
-                    </circle>
-                  </svg>
-                  {th('badge')}
-                </div>
-              </div>
-
               <h1
                 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-5 leading-tight"
                 style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em' }}
@@ -285,121 +269,16 @@ export default async function HomePage({
               </div>
             </div>
 
-            {/* Right: phone mockup */}
+            {/* Right: illustration */}
             <div className="hidden lg:flex justify-center items-center">
-              <div style={{
-                width: '280px',
-                background: 'white',
-                borderRadius: '28px',
-                boxShadow: '0 32px 64px rgba(0,0,0,0.12), 0 8px 24px rgba(13,148,136,0.1)',
-                border: '6px solid #e2e8f0',
-                overflow: 'hidden',
-                position: 'relative',
-              }}>
-                {/* Phone top bar */}
-                <div style={{ background: 'var(--primary-deeper)', padding: '12px 16px 10px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'rgba(255,255,255,0.4)' }} />
-                    <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '10px', fontFamily: 'var(--font-body)' }}>coveredusa.org</span>
-                  </div>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
-                    <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zM2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
-                  </svg>
-                </div>
-
-                {/* Progress bar */}
-                <div style={{ background: '#f1f5f9', height: '4px' }}>
-                  <div style={{ background: 'var(--primary)', height: '4px', width: '33%', borderRadius: '0 2px 2px 0' }} />
-                </div>
-
-                {/* Card content */}
-                <div style={{ padding: '20px 16px' }}>
-                  <p style={{ fontSize: '10px', color: 'var(--text-muted)', fontFamily: 'var(--font-body)', marginBottom: '6px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    Step 1 of 3
-                  </p>
-                  <h3 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'var(--font-display)', marginBottom: '16px', lineHeight: 1.3 }}>
-                    Do you currently have health insurance?
-                  </h3>
-
-                  {/* Options */}
-                  {[
-                    { label: 'No — I\'m uninsured', selected: true },
-                    { label: 'Yes — through my employer', selected: false },
-                    { label: 'Yes — Medicare/Medicaid', selected: false },
-                  ].map((opt) => (
-                    <div key={opt.label} style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '10px',
-                      padding: '10px 12px',
-                      marginBottom: '8px',
-                      borderRadius: '10px',
-                      border: `1.5px solid ${opt.selected ? 'var(--primary)' : 'var(--border-light)'}`,
-                      background: opt.selected ? 'var(--primary-lightest)' : 'var(--cream)',
-                      cursor: 'pointer',
-                    }}>
-                      <div style={{
-                        width: '16px',
-                        height: '16px',
-                        borderRadius: '50%',
-                        border: `2px solid ${opt.selected ? 'var(--primary)' : '#cbd5e1'}`,
-                        background: opt.selected ? 'var(--primary)' : 'transparent',
-                        flexShrink: 0,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                      }}>
-                        {opt.selected && (
-                          <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'white' }} />
-                        )}
-                      </div>
-                      <span style={{ fontSize: '12px', color: opt.selected ? 'var(--primary)' : 'var(--text-secondary)', fontFamily: 'var(--font-body)', fontWeight: opt.selected ? 600 : 400 }}>
-                        {opt.label}
-                      </span>
-                    </div>
-                  ))}
-
-                  {/* Continue button */}
-                  <div style={{
-                    marginTop: '16px',
-                    background: 'var(--primary)',
-                    color: 'white',
-                    borderRadius: '10px',
-                    padding: '11px 16px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    fontFamily: 'var(--font-body)',
-                    fontWeight: 600,
-                    fontSize: '13px',
-                  }}>
-                    <span>Continue</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-
-                  {/* Bottom result preview */}
-                  <div style={{
-                    marginTop: '14px',
-                    padding: '10px 12px',
-                    background: 'linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%)',
-                    borderRadius: '10px',
-                    border: '1px solid #bbf7d0',
-                  }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5">
-                        <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
-                        <circle cx="12" cy="12" r="10" />
-                      </svg>
-                      <span style={{ fontSize: '10px', fontWeight: 700, color: '#16a34a', fontFamily: 'var(--font-body)' }}>You may qualify for</span>
-                    </div>
-                    <p style={{ fontSize: '11px', color: '#15803d', fontFamily: 'var(--font-body)', margin: 0, fontWeight: 500 }}>
-                      Medicaid · ACA subsidies · CHIP
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src="/hero-illustration.png"
+                alt="Illustration of a young woman, older gentleman, and child standing together under a protective teal arc"
+                width={1024}
+                height={1536}
+                priority
+                style={{ width: '100%', maxWidth: '420px', height: 'auto' }}
+              />
             </div>
 
           </div>
