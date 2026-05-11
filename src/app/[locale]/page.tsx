@@ -503,8 +503,8 @@ export default async function HomePage({
           <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               {
-                title: 'Never sold',
-                desc: 'Your answers are never sold to third parties, advertisers, or data brokers.',
+                title: 'Shared only with your consent',
+                desc: 'Your data is only shared with licensed agents if you ask to be connected. We never sell to advertisers or data brokers.',
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
                     <path d="M12 2L4 6v6c0 5.52 3.44 10.24 8 12 4.56-1.76 8-6.48 8-12V6l-8-4z" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
@@ -513,8 +513,8 @@ export default async function HomePage({
                 ),
               },
               {
-                title: 'Encrypted & secure',
-                desc: 'All data is transmitted over HTTPS with bank-level encryption.',
+                title: 'Encrypted connection',
+                desc: 'All data is transmitted over HTTPS. We never collect SSNs, bank info, or medical records.',
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
                     <rect x="5" y="11" width="14" height="10" rx="2" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
@@ -525,7 +525,7 @@ export default async function HomePage({
               },
               {
                 title: 'No account required',
-                desc: "We don't store your results unless you choose to share them with an agent.",
+                desc: 'Check your eligibility without signing up. Your screener results are not stored unless you request agent help.',
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
                     <circle cx="12" cy="8" r="4" fill="var(--primary)" opacity="0.15" stroke="var(--primary)" strokeWidth="1.5" />
