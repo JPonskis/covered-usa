@@ -41,13 +41,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: post.description,
     keywords: post.keywords,
     alternates: {
-      canonical: `/${locale}/blog/${slug}`,
+      canonical: `https://coveredusa.org/${locale}/blog/${slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
+      url: `https://coveredusa.org/${locale}/blog/${slug}`,
       images: [`/api/og?title=${encodeURIComponent(post.title)}`],
+      publishedTime: post.date,
+      authors: ['Jacob Posner'],
     },
   };
 }
