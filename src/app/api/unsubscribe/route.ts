@@ -22,12 +22,12 @@ function verifyToken(submissionId: string, token: string): boolean {
 const CONFIRMATION_HTML = `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Unsubscribed</title></head>
-<body style="margin: 0; padding: 60px 20px; font-family: Arial, Helvetica, sans-serif; text-align: center; background: #f0f7ff;">
-  <div style="max-width: 400px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px 32px; border: 1px solid #d0e4f7;">
+<body style="margin: 0; padding: 60px 20px; font-family: Arial, Helvetica, sans-serif; text-align: center; background: #FFFCF9;">
+  <div style="max-width: 400px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px 32px; border: 1px solid #d6cfc5;">
     <p style="font-size: 24px; margin: 0 0 16px 0;">&#10003;</p>
-    <h1 style="font-size: 20px; margin: 0 0 12px 0; color: #1a1a1a;">You've been unsubscribed</h1>
-    <p style="font-size: 15px; color: #6b7280; line-height: 22px; margin: 0 0 24px 0;">You won't receive any more emails from CoveredUSA.</p>
-    <a href="https://coveredusa.org" style="color: #1a56db; text-decoration: underline; font-size: 14px;">Back to CoveredUSA</a>
+    <h1 style="font-size: 20px; margin: 0 0 12px 0; color: #1C1A16;">You've been unsubscribed</h1>
+    <p style="font-size: 15px; color: #78716c; line-height: 22px; margin: 0 0 24px 0;">You won't receive any more emails from CoveredUSA.</p>
+    <a href="https://coveredusa.org" style="color: #0d9488; text-decoration: underline; font-size: 14px;">Back to CoveredUSA</a>
   </div>
 </body>
 </html>`;
@@ -35,11 +35,11 @@ const CONFIRMATION_HTML = `<!DOCTYPE html>
 const INVALID_HTML = `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Invalid Link</title></head>
-<body style="margin: 0; padding: 60px 20px; font-family: Arial, Helvetica, sans-serif; text-align: center; background: #f0f7ff;">
-  <div style="max-width: 400px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px 32px; border: 1px solid #d0e4f7;">
-    <h1 style="font-size: 20px; margin: 0 0 12px 0; color: #1a1a1a;">Invalid unsubscribe link</h1>
-    <p style="font-size: 15px; color: #6b7280; line-height: 22px; margin: 0 0 24px 0;">This link may have expired or is malformed. Reply to any of our emails to unsubscribe.</p>
-    <a href="https://coveredusa.org" style="color: #1a56db; text-decoration: underline; font-size: 14px;">Back to CoveredUSA</a>
+<body style="margin: 0; padding: 60px 20px; font-family: Arial, Helvetica, sans-serif; text-align: center; background: #FFFCF9;">
+  <div style="max-width: 400px; margin: 0 auto; background: white; border-radius: 8px; padding: 40px 32px; border: 1px solid #d6cfc5;">
+    <h1 style="font-size: 20px; margin: 0 0 12px 0; color: #1C1A16;">Invalid unsubscribe link</h1>
+    <p style="font-size: 15px; color: #78716c; line-height: 22px; margin: 0 0 24px 0;">This link may have expired or is malformed. Reply to any of our emails to unsubscribe.</p>
+    <a href="https://coveredusa.org" style="color: #0d9488; text-decoration: underline; font-size: 14px;">Back to CoveredUSA</a>
   </div>
 </body>
 </html>`;
