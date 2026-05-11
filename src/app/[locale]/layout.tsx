@@ -27,6 +27,7 @@ export default async function LocaleLayout({
 
   const t = await getTranslations({ locale, namespace: 'nav' });
   const tf = await getTranslations({ locale, namespace: 'footer' });
+  const tl = await getTranslations({ locale, namespace: 'layout' });
   const otherLocale = locale === 'en' ? 'es' : 'en';
 
   return (
@@ -59,7 +60,7 @@ export default async function LocaleLayout({
               className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
               style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
             >
-              Blog
+              {tl('blog')}
             </Link>
             <Link
               href={`/${locale}#how-it-works`}
@@ -116,32 +117,32 @@ export default async function LocaleLayout({
                 />
               </div>
               <p className="text-sm text-white/50 leading-relaxed">
-                Free health insurance eligibility screening. We connect you with licensed agents who can help you enroll at no cost.
+                {tl('footerDesc')}
               </p>
             </div>
 
             {/* Resources col */}
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">Resources</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">{tl('resources')}</h3>
               <ul className="space-y-2.5 text-sm">
                 <li>
                   <Link href={`/${locale}`} className="text-white/60 hover:text-white transition-colors">
-                    Home
+                    {tl('home')}
                   </Link>
                 </li>
                 <li>
                   <Link href={`/${locale}#how-it-works`} className="text-white/60 hover:text-white transition-colors">
-                    How It Works
+                    {tl('howItWorks')}
                   </Link>
                 </li>
                 <li>
                   <Link href={`/${locale}/about`} className="text-white/60 hover:text-white transition-colors">
-                    About Us
+                    {tl('aboutUs')}
                   </Link>
                 </li>
                 <li>
                   <Link href={`/${locale}/screener`} className="text-white/60 hover:text-white transition-colors">
-                    Check Eligibility
+                    {tl('checkEligibility')}
                   </Link>
                 </li>
               </ul>
@@ -149,7 +150,7 @@ export default async function LocaleLayout({
 
             {/* Legal col */}
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">Legal</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/40 mb-4">{tl('legal')}</h3>
               <ul className="space-y-2.5 text-sm">
                 <li>
                   <Link href={`/${locale}/privacy`} className="text-white/60 hover:text-white transition-colors">
@@ -184,19 +185,19 @@ export default async function LocaleLayout({
               <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
-              Information verified against official .gov sources
+              {tl('verifiedSources')}
             </span>
             <span className="flex items-center gap-1.5 text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>
               <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              Updated for 2026
+              {tl('updatedFor')}
             </span>
             <span className="flex items-center gap-1.5 text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>
               <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
               </svg>
-              Free to use, no sign-up required
+              {tl('freeToUse')}
             </span>
           </div>
 
@@ -213,7 +214,7 @@ export default async function LocaleLayout({
           {/* Copyright */}
           <div className="mt-6 pt-6 border-t border-white/10">
             <p className="text-xs text-white/30">
-              &copy; 2026 CoveredUSA. All rights reserved.
+              {tl('copyright')}
             </p>
           </div>
         </div>

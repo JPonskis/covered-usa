@@ -27,107 +27,6 @@ export async function generateMetadata({
 // All icons use a single consistent teal color — matches BenefitsUSA's single-color approach
 const ICON_COLOR = '#0d9488';
 
-const programs = [
-  {
-    name: 'Medicaid',
-    desc: 'Free health coverage for low-income individuals and families',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
-        <path d="M10 12h4M12 10v4" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    name: 'ACA Marketplace',
-    desc: 'Subsidized health insurance plans for individuals and families',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <rect x="3" y="6" width="18" height="14" rx="3" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
-        <path d="M9 12h6M12 9v6" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Medicare',
-    desc: 'Health coverage for adults 65+ or with qualifying disabilities',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="12" r="9" fill={ICON_COLOR} opacity="0.12" stroke={ICON_COLOR} strokeWidth="1.5" />
-        <path d="M12 7v5l3 3" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M8 17h8" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Medicare Savings',
-    desc: 'Help paying Medicare premiums and out-of-pocket costs',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="12" r="9" fill={ICON_COLOR} opacity="0.12" stroke={ICON_COLOR} strokeWidth="1.5" />
-        <path d="M12 7v10M9 9.5h4.5a2 2 0 010 4H9m0 0h5" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-  },
-  {
-    name: 'CHIP',
-    desc: 'Free health coverage for children in your household',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <circle cx="12" cy="8" r="4" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
-        <path d="M5 20c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-];
-
-const faqs = [
-  {
-    q: 'Is this really free?',
-    a: "Yes, completely. CoveredUSA never charges users. We're funded by licensed insurance agents who pay us only if you choose to connect with them, and only after you enroll.",
-  },
-  {
-    q: 'Do I need to sign up or create an account?',
-    a: "No account, no email, no sign-up required. Answer the questions, see your results. That's it.",
-  },
-  {
-    q: 'What health insurance programs do you check?',
-    a: 'We screen for Medicaid, ACA Marketplace plans (including subsidies), Medicare, Medicare Savings Programs, and CHIP for children.',
-  },
-  {
-    q: 'Is CoveredUSA a government website?',
-    a: 'No. CoveredUSA is a private company. We are not affiliated with or endorsed by any government agency, including CMS, HHS, or the federal Medicare program.',
-  },
-  {
-    q: 'Will I be pressured to buy something?',
-    a: "No. We show you your eligibility results with no strings attached. If you want help enrolling, we can connect you with a licensed agent, but that's always your choice.",
-  },
-  {
-    q: 'What if I speak Spanish?',
-    a: 'Our entire screener is available in Spanish, and we can connect you with Spanish-speaking licensed agents.',
-  },
-];
-
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((faq) => ({
-    '@type': 'Question',
-    name: faq.q,
-    acceptedAnswer: { '@type': 'Answer', text: faq.a },
-  })),
-};
-
-const webAppSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebApplication',
-  name: 'CoveredUSA Health Insurance Screener',
-  url: 'https://coveredusa.org',
-  applicationCategory: 'HealthApplication',
-  description: 'Free health insurance eligibility screener. Check Medicaid, Medicare, ACA, and CHIP eligibility in 2 minutes.',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-};
-
 const states = [
   ['Alabama', 'al'], ['Alaska', 'ak'], ['Arizona', 'az'], ['Arkansas', 'ar'],
   ['California', 'ca'], ['Colorado', 'co'], ['Connecticut', 'ct'], ['Delaware', 'de'],
@@ -191,6 +90,90 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'hero' });
+  const th = await getTranslations({ locale, namespace: 'home' });
+
+  const programs = [
+    {
+      name: th('medicaidName'),
+      desc: th('medicaidDesc'),
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+          <path d="M10 12h4M12 10v4" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+      ),
+    },
+    {
+      name: th('acaName'),
+      desc: th('acaDesc'),
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+          <rect x="3" y="6" width="18" height="14" rx="3" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+          <path d="M9 12h6M12 9v6" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+      ),
+    },
+    {
+      name: th('medicareName'),
+      desc: th('medicareDesc'),
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+          <circle cx="12" cy="12" r="9" fill={ICON_COLOR} opacity="0.12" stroke={ICON_COLOR} strokeWidth="1.5" />
+          <path d="M12 7v5l3 3" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M8 17h8" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+      ),
+    },
+    {
+      name: th('medicareSavingsName'),
+      desc: th('medicareSavingsDesc'),
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+          <circle cx="12" cy="12" r="9" fill={ICON_COLOR} opacity="0.12" stroke={ICON_COLOR} strokeWidth="1.5" />
+          <path d="M12 7v10M9 9.5h4.5a2 2 0 010 4H9m0 0h5" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      ),
+    },
+    {
+      name: th('chipName'),
+      desc: th('chipDesc'),
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+          <circle cx="12" cy="8" r="4" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+          <path d="M5 20c0-3.87 3.13-7 7-7s7 3.13 7 7" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+      ),
+    },
+  ];
+
+  const faqs = [
+    { q: th('faq1Q'), a: th('faq1A') },
+    { q: th('faq2Q'), a: th('faq2A') },
+    { q: th('faq3Q'), a: th('faq3A') },
+    { q: th('faq4Q'), a: th('faq4A') },
+    { q: th('faq5Q'), a: th('faq5A') },
+    { q: th('faq6Q'), a: th('faq6A') },
+  ];
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  };
+
+  const webAppSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'CoveredUSA Health Insurance Screener',
+    url: 'https://coveredusa.org',
+    applicationCategory: 'HealthApplication',
+    description: 'Free health insurance eligibility screener. Check Medicaid, Medicare, ACA, and CHIP eligibility in 2 minutes.',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  };
 
   return (
     <main className="min-h-screen">
@@ -212,7 +195,7 @@ export default async function HomePage({
                   <animate attributeName="opacity" from="0.3" to="0" dur="1.5s" repeatCount="indefinite" />
                 </circle>
               </svg>
-              Free Eligibility Check — All 50 States
+              {th('badge')}
             </div>
 
             <h1
@@ -226,8 +209,7 @@ export default async function HomePage({
               className="text-lg md:text-xl mb-9 leading-relaxed"
               style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
             >
-              Check your eligibility for Medicaid, Medicare, ACA Marketplace plans, and more.
-              Free, confidential, and available in Spanish.
+              {th('subheadline')}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-9">
@@ -242,7 +224,7 @@ export default async function HomePage({
                 </svg>
               </Link>
               <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-body)' }}>
-                Takes about 2 minutes
+                {th('takesMinutes')}
               </span>
             </div>
 
@@ -285,7 +267,7 @@ export default async function HomePage({
             className="text-center text-xs font-semibold uppercase tracking-widest mb-6"
             style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body)' }}
           >
-            Data sourced from
+            {th('dataSourcedFrom')}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             {[
@@ -316,9 +298,9 @@ export default async function HomePage({
         <div className="max-w-6xl mx-auto px-6 py-12 md:py-14">
           <div className="grid grid-cols-3 gap-8 md:gap-12 text-center">
             {[
-              { number: '23M+', label: 'Americans enrolled through ACA Marketplace in 2026' },
-              { number: '1 in 3', label: 'Americans qualify for financial help with health coverage' },
-              { number: '4', label: 'Health programs checked with one free screener' },
+              { number: th('stat1Number'), label: th('stat1Label') },
+              { number: th('stat2Number'), label: th('stat2Label') },
+              { number: th('stat3Number'), label: th('stat3Label') },
             ].map((stat) => (
               <div key={stat.label}>
                 <div
@@ -347,16 +329,16 @@ export default async function HomePage({
               className="inline-block text-sm font-semibold mb-3 px-3 py-1 rounded-full"
               style={{ background: 'var(--primary-lightest)', color: 'var(--primary)', fontFamily: 'var(--font-body)' }}
             >
-              Simple Process
+              {th('howItWorksTag')}
             </span>
             <h2
               className="text-3xl md:text-4xl font-bold mb-3"
               style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
-              How it works
+              {th('howItWorksTitle')}
             </h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', fontFamily: 'var(--font-body)' }}>
-              Three steps, two minutes, no catch.
+              {th('howItWorksSubtitle')}
             </p>
           </div>
 
@@ -370,18 +352,15 @@ export default async function HomePage({
 
               {[
                 {
-                  num: '1', title: 'Answer a few questions',
-                  desc: 'Tell us about your household, income, and state. Four short sections, about 2 minutes total.',
+                  num: '1', title: th('step1Title'), desc: th('step1Desc'),
                   icon: (<svg viewBox="0 0 24 24" fill="none" className="w-6 h-6"><rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor" strokeWidth="1.5" /><path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>),
                 },
                 {
-                  num: '2', title: 'See your results instantly',
-                  desc: 'We check health programs in real time and show you exactly what you likely qualify for.',
+                  num: '2', title: th('step2Title'), desc: th('step2Desc'),
                   icon: (<svg viewBox="0 0 24 24" fill="none" className="w-6 h-6"><path d="M9 11l3 3 8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M21 12a9 9 0 11-6.22-8.56" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>),
                 },
                 {
-                  num: '3', title: 'Get free help enrolling',
-                  desc: 'Connect with a licensed agent who speaks your language. No cost to you, ever.',
+                  num: '3', title: th('step3Title'), desc: th('step3Desc'),
                   icon: (<svg viewBox="0 0 24 24" fill="none" className="w-6 h-6"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /><circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="1.5" /><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>),
                 },
               ].map((step) => (
@@ -425,16 +404,16 @@ export default async function HomePage({
               className="inline-block text-sm font-semibold mb-3 px-3 py-1 rounded-full"
               style={{ background: 'white', color: 'var(--primary)', fontFamily: 'var(--font-body)' }}
             >
-              5 Programs Checked
+              {th('programsTag')}
             </span>
             <h2
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
-              Programs we screen for
+              {th('programsTitle')}
             </h2>
             <p className="max-w-lg mx-auto" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', fontFamily: 'var(--font-body)' }}>
-              One quick check covers all major federal and state health coverage programs.
+              {th('programsSubtitle')}
             </p>
           </div>
 
@@ -477,7 +456,7 @@ export default async function HomePage({
                 className="font-semibold flex items-center gap-2 text-base no-underline"
                 style={{ color: 'var(--primary)', fontFamily: 'var(--font-display)' }}
               >
-                Check all 5 programs
+                {th('checkAllPrograms')}
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -495,10 +474,10 @@ export default async function HomePage({
               className="text-3xl md:text-4xl font-bold mb-3"
               style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
-              Find benefits in your state
+              {th('stateTitle')}
             </h2>
             <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body)' }}>
-              Health coverage options, income limits, and enrollment info — state by state.
+              {th('stateSubtitle')}
             </p>
           </div>
           <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-x-6">
@@ -525,18 +504,18 @@ export default async function HomePage({
               className="text-3xl md:text-4xl font-bold mb-3"
               style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
-              Your privacy is protected
+              {th('privacyTitle')}
             </h2>
             <p style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body)' }}>
-              We take the security of your health information seriously.
+              {th('privacySubtitle')}
             </p>
           </div>
 
           <div className="grid sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
             {[
               {
-                title: 'Shared only with your consent',
-                desc: 'Your information is only shared with licensed agents if you ask to be connected. We never share with advertisers or data brokers.',
+                title: th('privacy1Title'),
+                desc: th('privacy1Desc'),
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
                     <path d="M12 2L4 6v6c0 5.52 3.44 10.24 8 12 4.56-1.76 8-6.48 8-12V6l-8-4z" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
@@ -545,8 +524,8 @@ export default async function HomePage({
                 ),
               },
               {
-                title: 'Encrypted connection',
-                desc: 'All data is transmitted over HTTPS. We never collect Social Security numbers, bank information, or medical records.',
+                title: th('privacy2Title'),
+                desc: th('privacy2Desc'),
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
                     <rect x="5" y="11" width="14" height="10" rx="2" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
@@ -556,8 +535,8 @@ export default async function HomePage({
                 ),
               },
               {
-                title: 'No account required',
-                desc: 'Check your eligibility without signing up. Your screener results are not stored unless you request agent help.',
+                title: th('privacy3Title'),
+                desc: th('privacy3Desc'),
                 icon: (
                   <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7">
                     <circle cx="12" cy="8" r="4" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
@@ -591,7 +570,7 @@ export default async function HomePage({
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
             >
-              Common questions
+              {th('faqTitle')}
             </h2>
           </div>
 
@@ -630,24 +609,23 @@ export default async function HomePage({
               className="text-2xl md:text-3xl font-bold text-white mb-4"
               style={{ fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', lineHeight: 1.3 }}
             >
-              Don&apos;t leave money on the table.
+              {th('ctaTitle')}
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '2.5rem', fontFamily: 'var(--font-body)' }}>
-              Millions of Americans qualify for health coverage they don&apos;t know about.
-              Find out in 2 minutes — it&apos;s free.
+              {th('ctaSubtitle')}
             </p>
             <Link
               href={`/${locale}/screener`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 font-bold rounded-xl text-lg transition-all hover:opacity-90"
               style={{ background: 'white', color: 'var(--primary-deeper)', fontFamily: 'var(--font-display)' }}
             >
-              Start Free Eligibility Check
+              {th('ctaButton')}
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <p style={{ color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem', marginTop: '1.5rem', fontFamily: 'var(--font-body)' }}>
-              No sign-up. No pressure. Just results.
+              {th('ctaNote')}
             </p>
           </div>
         </div>
