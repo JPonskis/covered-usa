@@ -40,6 +40,10 @@ export const metadata: Metadata = {
     description: "Find out if you qualify for free or low-cost health insurance in 2 minutes.",
     images: ['/og-image.png'],
   },
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
