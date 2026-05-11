@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Montana",
+    "abbreviation": "MT",
+    "fips": "30",
+    "medicaidExpansion": true,
+    "mainPortal": "https://apply.mt.gov/",
+    "generalPhone": "1-888-706-1535"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 45826,
+    "2": 59926,
+    "3": 74027,
+    "4": 88127,
+    "5": 102227,
+    "6": 116328
+  },
+  "medicaid": {
+    "localName": "Montana Medicaid",
+    "applicationUrl": "https://apply.mt.gov/",
+    "phone": "1-888-706-1535",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 266,
+    "pregnantLimitFpl": 157,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://apply.mt.gov/",
+    "phone": "1-888-706-1535",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP / Energy Assistance",
+    "applicationUrl": "https://dphhs.mt.gov/hcsd/energyassistance",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Best Beginnings Child Care Scholarship",
+    "applicationUrl": "https://dphhs.mt.gov/ecfsd/childcare",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://apply.mt.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://signupwic.com/",
+    "phone": "1-800-433-4298"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Montana SHIP",
+    "shipPhone": "1-800-551-3191",
+    "shipUrl": "https://dphhs.mt.gov/SLTC/aging/SHIP"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Illinois",
+    "abbreviation": "IL",
+    "fips": "17",
+    "medicaidExpansion": true,
+    "mainPortal": "https://abe.illinois.gov",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 58860,
+    "2": 77000,
+    "3": 95160,
+    "4": 113300,
+    "5": 131460,
+    "6": 149600
+  },
+  "medicaid": {
+    "localName": "Medicaid",
+    "applicationUrl": "https://abe.illinois.gov",
+    "phone": "1-800-843-6154",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 318,
+    "pregnantLimitFpl": 213,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://abe.illinois.gov",
+    "phone": "1-800-843-6154",
+    "bbce": true,
+    "grossLimitFpl": 165,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://helpillinoisfamilies.com",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "CCAP",
+    "applicationUrl": "https://www.dhs.state.il.us/page.aspx?item=104995",
+    "incomeBasis": "fpl",
+    "limitPercent": 225
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://abe.illinois.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.dhs.state.il.us/page.aspx?item=30513",
+    "phone": "(217) 782-2166"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://getcovered.illinois.gov",
+    "marketplaceName": "Get Covered Illinois",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "SHIP",
+    "shipPhone": "1-800-252-8966",
+    "shipUrl": "https://ilaging.illinois.gov/ship.html"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

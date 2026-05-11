@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "New York",
+    "abbreviation": "NY",
+    "fips": "36",
+    "medicaidExpansion": true,
+    "mainPortal": "https://mybenefits.ny.gov",
+    "generalPhone": "1-800-342-3009"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 69910,
+    "2": 91422,
+    "3": 112932,
+    "4": 134443,
+    "5": 155953,
+    "6": 177465
+  },
+  "medicaid": {
+    "localName": "New York Medicaid",
+    "applicationUrl": "https://nystateofhealth.ny.gov",
+    "phone": "1-855-355-5777",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 400,
+    "pregnantLimitFpl": 218,
+    "hasAssetLimit": true
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://mybenefits.ny.gov",
+    "phone": "1-800-342-3009",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "HEAP",
+    "applicationUrl": "https://mybenefits.ny.gov",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Assistance Program (CCAP)",
+    "applicationUrl": "https://ocfs.ny.gov/programs/childcare/ccap/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Family Assistance / Safety Net Assistance",
+    "applicationUrl": "https://mybenefits.ny.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://health.ny.gov/prevention/nutrition/wic/",
+    "phone": "1-800-522-5006"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://nystateofhealth.ny.gov",
+    "marketplaceName": "NY State of Health",
+    "phone": "1-855-355-5777"
+  },
+  "medicare": {
+    "shipName": "HIICAP",
+    "shipPhone": "1-800-701-0501",
+    "shipUrl": "https://aging.ny.gov/health-insurance-information-counseling-and-assistance-program-hiicap"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 87,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

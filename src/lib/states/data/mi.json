@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Michigan",
+    "abbreviation": "MI",
+    "fips": "26",
+    "medicaidExpansion": true,
+    "mainPortal": "https://newmibridges.michigan.gov",
+    "generalPhone": "1-844-799-9876"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 49358,
+    "2": 64546,
+    "3": 79733,
+    "4": 94920,
+    "5": 110107,
+    "6": 125294
+  },
+  "medicaid": {
+    "localName": "Healthy Michigan Plan",
+    "applicationUrl": "https://newmibridges.michigan.gov",
+    "phone": "1-844-799-9876",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 217,
+    "pregnantLimitFpl": 200,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Food Assistance Program (FAP)",
+    "applicationUrl": "https://newmibridges.michigan.gov",
+    "phone": "1-844-799-9876",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "State Emergency Relief (SER)",
+    "applicationUrl": "https://newmibridges.michigan.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Development and Care (CDC)",
+    "applicationUrl": "https://newmibridges.michigan.gov",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Family Independence Program (FIP)",
+    "applicationUrl": "https://newmibridges.michigan.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.michigan.gov/mdhhs/assistance-programs/wic",
+    "phone": "1-844-799-9876"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Michigan SHIP (MMAP)",
+    "shipPhone": "1-800-803-7174",
+    "shipUrl": "https://www.michigan.gov/mdhhs/adult-child-serv/adults-and-seniors/acls/state-health-insurance-assistance-program"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

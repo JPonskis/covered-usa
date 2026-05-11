@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Alabama",
+    "abbreviation": "AL",
+    "fips": "01",
+    "medicaidExpansion": false,
+    "mainPortal": "https://one.alabama.gov/",
+    "generalPhone": "1-800-362-1504"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56868,
+    "2": 74052,
+    "3": 91248,
+    "4": 109392,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "Alabama Medicaid",
+    "applicationUrl": "https://insurealabama.adph.state.al.us/",
+    "phone": "1-800-362-1504",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 141,
+    "pregnantLimitFpl": 141,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Food Assistance (SNAP)",
+    "applicationUrl": "https://dhr.alabama.gov/food-assistance/",
+    "phone": "1-334-242-1700",
+    "bbce": true,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://adeca.alabama.gov/liheap/",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Alabama Child Care Subsidy Program",
+    "applicationUrl": "https://dhr.alabama.gov/child-care/child-care-management-agencies/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Family Assistance (FA) Program",
+    "applicationUrl": "https://one.alabama.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.alabamapublichealth.gov/wic/eligibility.html",
+    "phone": "1-800-362-1504"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Alabama SHIP",
+    "shipPhone": "1-800-243-5463",
+    "shipUrl": "https://alabamaageline.gov/ship/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

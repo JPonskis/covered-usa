@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Kansas",
+    "abbreviation": "KS",
+    "fips": "20",
+    "medicaidExpansion": false,
+    "mainPortal": "https://cssp.kees.ks.gov/apspssp/",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 48000,
+    "2": 62700,
+    "3": 77400,
+    "4": 92100,
+    "5": 99468,
+    "6": 106836
+  },
+  "medicaid": {
+    "localName": "KanCare",
+    "applicationUrl": "https://cssp.kees.ks.gov/apspssp/",
+    "phone": "1-800-792-4884",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 255,
+    "pregnantLimitFpl": 171,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Food Assistance Program",
+    "applicationUrl": "https://www.dcfapp.kees.ks.gov",
+    "phone": "1-888-369-4777",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIEAP",
+    "applicationUrl": "https://www.dcfapp.kees.ks.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Assistance",
+    "applicationUrl": "https://www.dcfapp.kees.ks.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 250
+  },
+  "tanf": {
+    "localName": "Successful Families",
+    "applicationUrl": "https://www.dcfapp.kees.ks.gov",
+    "lifetimeLimitMonths": 24
+  },
+  "wic": {
+    "applicationUrl": "https://www.kdhe.ks.gov/158/WIC",
+    "phone": "1-785-296-1320"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "exchangeName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "SHICK",
+    "shipPhone": "1-800-860-5260",
+    "shipUrl": "https://www.kdads.ks.gov/commissions/commission-on-aging/programs-projects/shick"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

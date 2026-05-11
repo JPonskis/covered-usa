@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "West Virginia",
+    "abbreviation": "WV",
+    "fips": "54",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.wvpath.wv.gov/",
+    "generalPhone": "1-800-642-8589"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56868,
+    "2": 74052,
+    "3": 91248,
+    "4": 109392,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "West Virginia Medicaid",
+    "applicationUrl": "https://www.wvpath.wv.gov/",
+    "phone": "1-800-642-8589",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 300,
+    "pregnantLimitFpl": 300,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://www.wvpath.wv.gov/",
+    "phone": "1-800-642-8589",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIEAP",
+    "applicationUrl": "https://www.wvpath.wv.gov/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Assistance",
+    "applicationUrl": "https://www.wvpath.wv.gov/",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "tanf": {
+    "localName": "WV Works",
+    "applicationUrl": "https://www.wvpath.wv.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://dhhr.wv.gov/WIC/",
+    "phone": "1-800-642-8589"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "exchangeName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "West Virginia SHIP",
+    "shipPhone": "1-877-987-4463",
+    "shipUrl": "http://www.wvseniorservices.gov/StayingHealthy/SHIPMedicare/tabid/72/Default.aspx"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

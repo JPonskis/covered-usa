@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "New Mexico",
+    "abbreviation": "NM",
+    "fips": "35",
+    "medicaidExpansion": true,
+    "mainPortal": "https://yes.state.nm.us/",
+    "generalPhone": "1-800-283-4465"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56880,
+    "2": 74385,
+    "3": 91892,
+    "4": 109398,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "Centennial Care",
+    "applicationUrl": "https://yes.state.nm.us/",
+    "phone": "1-800-283-4465",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 305,
+    "pregnantLimitFpl": 255,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://yes.state.nm.us/",
+    "phone": "1-800-283-4465",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://yes.state.nm.us/",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Universal Child Care",
+    "applicationUrl": "https://eligibility.ececd.nm.gov/",
+    "incomeBasis": "none",
+    "limitPercent": 0
+  },
+  "tanf": {
+    "localName": "NMWorks",
+    "applicationUrl": "https://yes.state.nm.us/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.nmwic.org/",
+    "phone": "1-866-867-3124"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.bewellnm.com/",
+    "marketplaceName": "beWellnm",
+    "phone": "1-833-862-3935"
+  },
+  "medicare": {
+    "shipName": "New Mexico SHIP",
+    "shipPhone": "1-800-432-2080",
+    "shipUrl": "https://www.aging.nm.gov/consumer-and-elder-rights/ship/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

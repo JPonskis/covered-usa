@@ -1,0 +1,78 @@
+{
+  "state": {
+    "name": "Oklahoma",
+    "abbreviation": "OK",
+    "fips": "40",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.okdhslive.org/",
+    "generalPhone": "1-800-987-7767"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56500,
+    "2": 73882,
+    "3": 91265,
+    "4": 108635,
+    "5": 126000,
+    "6": 143365
+  },
+  "medicaid": {
+    "localName": "SoonerCare",
+    "applicationUrl": "https://www.okdhslive.org/",
+    "phone": "1-800-987-7767",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 300,
+    "pregnantLimitFpl": 138,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://www.okdhslive.org/",
+    "phone": "1-800-987-7767",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://www.okdhslive.org/",
+    "phone": "405-522-5050",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Oklahoma Child Care Subsidy Program",
+    "applicationUrl": "https://www.okdhslive.org/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://www.okdhslive.org/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://oklahoma.gov/health/services/children-family-health/wic.html",
+    "phone": "405-420-4679"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Oklahoma SHIP",
+    "shipPhone": "1-800-763-2828",
+    "shipUrl": "https://www.oid.ok.gov/consumers/information-for-seniors/senior-health-insurance-counseling-program-ship/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

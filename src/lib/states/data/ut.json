@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Utah",
+    "abbreviation": "UT",
+    "fips": "49",
+    "medicaidExpansion": true,
+    "mainPortal": "https://jobs.utah.gov/mycase-app/ui/",
+    "generalPhone": "1-866-435-7414"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56868,
+    "2": 74052,
+    "3": 91248,
+    "4": 109392,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "Utah Medicaid",
+    "applicationUrl": "https://jobs.utah.gov/mycase-app/ui/",
+    "phone": "1-866-435-7414",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 205,
+    "pregnantLimitFpl": 144,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://jobs.utah.gov/mycase-app/ui/",
+    "phone": "1-866-435-7414",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "Home Energy Assistance Target (HEAT)",
+    "applicationUrl": "https://jobs.utah.gov/housing/scso/seal/heat.html",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Assistance Program (CCAP)",
+    "applicationUrl": "https://jobs.utah.gov/mycase-app/ui/",
+    "incomeBasis": "fpl",
+    "limitPercent": 200
+  },
+  "tanf": {
+    "localName": "Family Employment Program (FEP)",
+    "applicationUrl": "https://jobs.utah.gov/mycase-app/ui/",
+    "lifetimeLimitMonths": 36
+  },
+  "wic": {
+    "applicationUrl": "https://wic.utah.gov/",
+    "phone": "1-866-435-7414"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "exchangeName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Utah SHIP",
+    "shipPhone": "1-800-541-7735",
+    "shipUrl": "https://daas.utah.gov/seniors/"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 3.81,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

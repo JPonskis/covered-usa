@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Connecticut",
+    "abbreviation": "CT",
+    "fips": "09",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.connect.ct.gov/",
+    "generalPhone": "1-855-626-6632"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 79607,
+    "2": 104101,
+    "3": 128596,
+    "4": 153091,
+    "5": 177585,
+    "6": 202080
+  },
+  "medicaid": {
+    "localName": "HUSKY Health",
+    "applicationUrl": "https://www.connect.ct.gov/",
+    "phone": "1-855-805-4325",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 196,
+    "pregnantLimitFpl": 263,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://www.connect.ct.gov/",
+    "phone": "1-855-626-6632",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "Connecticut Energy Assistance Program (CEAP)",
+    "applicationUrl": "https://portal.ct.gov/heatinghelp/connecticut-energy-assistance-program-ceap",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Care 4 Kids",
+    "applicationUrl": "https://www.ctcare4kids.com/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Temporary Family Assistance (TFA)",
+    "applicationUrl": "https://www.connect.ct.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://portal.ct.gov/dph/wic",
+    "phone": "1-800-741-2142"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.accesshealthct.com/",
+    "marketplaceName": "Access Health CT",
+    "phone": "1-855-805-4325"
+  },
+  "medicare": {
+    "shipName": "CHOICES",
+    "shipPhone": "1-800-994-9422",
+    "shipUrl": "https://portal.ct.gov/ads/programs-and-services/choices"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

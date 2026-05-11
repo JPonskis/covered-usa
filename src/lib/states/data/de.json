@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Delaware",
+    "abbreviation": "DE",
+    "fips": "10",
+    "medicaidExpansion": true,
+    "mainPortal": "https://assist.dhss.delaware.gov/",
+    "generalPhone": "1-866-843-7212"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 65580,
+    "2": 85740,
+    "3": 105920,
+    "4": 126100,
+    "5": 146280,
+    "6": 166440
+  },
+  "medicaid": {
+    "localName": "Delaware Medicaid",
+    "applicationUrl": "https://assist.dhss.delaware.gov/",
+    "phone": "1-800-372-2022",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 266,
+    "pregnantLimitFpl": 213,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Food Supplement Program (SNAP)",
+    "applicationUrl": "https://assist.dhss.delaware.gov/",
+    "phone": "1-866-843-7212",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "Delaware Energy Assistance Program (DEAP)",
+    "applicationUrl": "https://dhss.delaware.gov/dhss/dssc/liheap.html",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Purchase of Care",
+    "applicationUrl": "https://assist.dhss.delaware.gov/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://assist.dhss.delaware.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://dhss.delaware.gov/dhss/dph/chs/wic.html",
+    "phone": "1-800-222-2189"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Delaware Medicare Assistance Bureau (DMAB)",
+    "shipPhone": "1-800-336-9500",
+    "shipUrl": "https://insurance.delaware.gov/divisions/dmab/"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 25.40,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

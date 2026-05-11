@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Alaska",
+    "abbreviation": "AK",
+    "fips": "02",
+    "medicaidExpansion": true,
+    "mainPortal": "https://alaskaconnect.ilinx.com/engage/dpa",
+    "generalPhone": "1-800-478-7778"
+  },
+  "fpl": {
+    "adjustment": 1.25
+  },
+  "smi": {
+    "1": 59436,
+    "2": 77724,
+    "3": 96012,
+    "4": 114300,
+    "5": 132588,
+    "6": 150876
+  },
+  "medicaid": {
+    "localName": "Alaska Medicaid",
+    "applicationUrl": "https://alaskaconnect.ilinx.com/engage/dpa",
+    "phone": "1-800-478-7778",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 208,
+    "pregnantLimitFpl": 230,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP (Alaska Quest Card)",
+    "applicationUrl": "https://alaskaconnect.ilinx.com/engage/dpa",
+    "phone": "1-800-478-7778",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://alaskaconnect.ilinx.com/engage/dpa",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Assistance",
+    "applicationUrl": "https://alaskaconnect.ilinx.com/engage/dpa",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Alaska Temporary Assistance Program (ATAP)",
+    "applicationUrl": "https://alaskaconnect.ilinx.com/engage/dpa",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://health.alaska.gov/en/services/division-of-public-assistance-dpa-services/wic/",
+    "phone": "1-800-478-7778"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Alaska Medicare Information Office",
+    "shipPhone": "1-800-478-6065",
+    "shipUrl": "https://health.alaska.gov/en/senior-and-disabilities-services/medicare-office/"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 48,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

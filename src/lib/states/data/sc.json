@@ -1,0 +1,79 @@
+{
+  "state": {
+    "name": "South Carolina",
+    "abbreviation": "SC",
+    "fips": "45",
+    "medicaidExpansion": false,
+    "mainPortal": "https://benefitsportal.dss.sc.gov/",
+    "generalPhone": "1-888-549-0820"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 46657,
+    "2": 61012,
+    "3": 75368,
+    "4": 89725,
+    "5": 104080,
+    "6": 118437
+  },
+  "medicaid": {
+    "localName": "Healthy Connections Medicaid",
+    "applicationUrl": "https://apply.scdhhs.gov/",
+    "phone": "1-888-549-0820",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 208,
+    "pregnantLimitFpl": 194,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://benefitsportal.dss.sc.gov/",
+    "phone": "1-888-549-0820",
+    "bbce": true,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://oeo.sc.gov/managedsites/prd/oeo/liheap.html",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "SC Working Families Child Care Scholarship",
+    "applicationUrl": "https://abcquality.org/families/child-care-scholarships/",
+    "phone": "1-800-476-0199",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Family Independence (FI) Program",
+    "applicationUrl": "https://benefitsportal.dss.sc.gov/",
+    "phone": "1-800-616-1309",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://dph.sc.gov/health-wellness/family-planning/women-infants-and-children-wic-nutrition-program",
+    "phone": "1-855-472-3432"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "I-CARE (Insurance Counseling Assistance and Referrals for Elders)",
+    "shipPhone": "1-800-868-9095",
+    "shipUrl": "https://aging.sc.gov/programs-initiatives/medicare-and-medicare-fraud"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Georgia",
+    "abbreviation": "GA",
+    "fips": "13",
+    "medicaidExpansion": false,
+    "mainPortal": "https://gateway.ga.gov",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 44123,
+    "2": 57680,
+    "3": 71236,
+    "4": 84851,
+    "5": 98467,
+    "6": 112084
+  },
+  "medicaid": {
+    "localName": "Medicaid",
+    "applicationUrl": "https://gateway.ga.gov",
+    "phone": "877-423-4746",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 247,
+    "pregnantLimitFpl": 220,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://gateway.ga.gov",
+    "phone": "877-423-4746",
+    "bbce": true,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://dfcs.georgia.gov/services/low-income-home-energy-assistance-program-liheap",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "CAPS",
+    "applicationUrl": "https://caps.decal.ga.gov",
+    "incomeBasis": "smi",
+    "limitPercent": 50
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://gateway.ga.gov",
+    "lifetimeLimitMonths": 48
+  },
+  "wic": {
+    "applicationUrl": "https://dph.georgia.gov/WIC",
+    "phone": "877-423-4746"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://georgiaaccess.gov",
+    "marketplaceName": "Georgia Access",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "GeorgiaCares",
+    "shipPhone": "1-866-552-4464",
+    "shipUrl": "https://aging.georgia.gov"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

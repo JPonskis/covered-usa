@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Nebraska",
+    "abbreviation": "NE",
+    "fips": "31",
+    "medicaidExpansion": true,
+    "mainPortal": "https://iserve.nebraska.gov/",
+    "generalPhone": "1-800-383-4278"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 60720,
+    "2": 79404,
+    "3": 98087,
+    "4": 116770,
+    "5": 135453,
+    "6": 154136
+  },
+  "medicaid": {
+    "localName": "Nebraska Medicaid",
+    "applicationUrl": "https://iserve.nebraska.gov/",
+    "phone": "1-855-632-7633",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 213,
+    "pregnantLimitFpl": 199,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://iserve.nebraska.gov/",
+    "phone": "1-800-383-4278",
+    "bbce": true,
+    "grossLimitFpl": 165,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://iserve.nebraska.gov/",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Subsidy",
+    "applicationUrl": "https://iserve.nebraska.gov/",
+    "incomeBasis": "fpl",
+    "limitPercent": 185
+  },
+  "tanf": {
+    "localName": "Aid to Dependent Children (ADC)",
+    "applicationUrl": "https://iserve.nebraska.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://dhhs.ne.gov/Pages/WIC.aspx",
+    "phone": "1-800-942-1171"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Nebraska SHIP",
+    "shipPhone": "1-800-234-7119",
+    "shipUrl": "https://doi.nebraska.gov/nebraska-ship-smp"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

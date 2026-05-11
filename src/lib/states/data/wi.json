@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Wisconsin",
+    "abbreviation": "WI",
+    "fips": "55",
+    "medicaidExpansion": false,
+    "mainPortal": "https://access.wisconsin.gov",
+    "generalPhone": "1-800-362-3002"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56868,
+    "2": 74052,
+    "3": 91248,
+    "4": 109392,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "BadgerCare Plus",
+    "applicationUrl": "https://access.wisconsin.gov",
+    "phone": "1-800-362-3002",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 306,
+    "pregnantLimitFpl": 306,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "FoodShare Wisconsin",
+    "applicationUrl": "https://access.wisconsin.gov",
+    "phone": "1-800-362-3002",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "Wisconsin Home Energy Assistance Program (WHEAP)",
+    "applicationUrl": "https://energybenefit.wi.gov/OnlineApps",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Assistance",
+    "applicationUrl": "https://access.wisconsin.gov",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Wisconsin Works (W-2)",
+    "applicationUrl": "https://access.wisconsin.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.dhs.wisconsin.gov/wic",
+    "phone": "1-800-362-3002"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "exchangeName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Wisconsin SHIP / Medigap Helpline",
+    "shipPhone": "1-800-242-1060",
+    "shipUrl": "https://www.dhs.wisconsin.gov/benefit-specialists/medicare-counseling.htm"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 96,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Nevada",
+    "abbreviation": "NV",
+    "fips": "32",
+    "medicaidExpansion": true,
+    "mainPortal": "https://accessnevada.nv.gov/public/landing-page",
+    "generalPhone": "(877) 638-3472"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 47388,
+    "2": 61980,
+    "3": 76572,
+    "4": 91164,
+    "5": 98457,
+    "6": 105750
+  },
+  "medicaid": {
+    "localName": "Nevada Medicaid",
+    "applicationUrl": "https://accessnevada.nv.gov/public/landing-page",
+    "phone": "(877) 638-3472",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 205,
+    "pregnantLimitFpl": 205,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://accessnevada.nv.gov/public/landing-page",
+    "phone": "(877) 638-3472",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "Energy Assistance Program (EAP)",
+    "applicationUrl": "https://accessnevada.nv.gov/public/landing-page",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Nevada Child Care Subsidy Program",
+    "applicationUrl": "https://accessnevada.nv.gov/public/landing-page",
+    "incomeBasis": "smi",
+    "limitPercent": 41
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://accessnevada.nv.gov/public/landing-page",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.dpbh.nv.gov/programs/women-infants-and-children/",
+    "phone": "(775) 684-5942"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://nevadahealthlink.com/",
+    "marketplaceName": "Nevada Health Link",
+    "phone": "(855) 768-5465"
+  },
+  "medicare": {
+    "shipName": "Nevada Medicare Assistance Program (MAP)",
+    "shipPhone": "1-800-307-4444",
+    "shipUrl": "https://adsd.nv.gov/Programs/Seniors/Medicare_Assistance_Program_(MAP)/MAP_Prog/"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 36.40,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

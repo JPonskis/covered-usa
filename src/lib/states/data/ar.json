@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Arkansas",
+    "abbreviation": "AR",
+    "fips": "05",
+    "medicaidExpansion": true,
+    "mainPortal": "https://access.arkansas.gov",
+    "generalPhone": "1-800-482-8988"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 45019,
+    "2": 58871,
+    "3": 72724,
+    "4": 86577,
+    "5": 100429,
+    "6": 114280
+  },
+  "medicaid": {
+    "localName": "Arkansas Medicaid (Arkansas Works)",
+    "applicationUrl": "https://access.arkansas.gov",
+    "phone": "1-855-372-1084",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 216,
+    "pregnantLimitFpl": 209,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://access.arkansas.gov",
+    "phone": "1-800-482-8988",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://www.adeq.state.ar.us/energy/assistance/liheap.aspx",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Arkansas Child Care Assistance Program",
+    "applicationUrl": "https://access.arkansas.gov",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Transitional Employment Assistance (TEA)",
+    "applicationUrl": "https://access.arkansas.gov",
+    "lifetimeLimitMonths": 24
+  },
+  "wic": {
+    "applicationUrl": "https://www.healthy.arkansas.gov/programs-services/topics/wic-clinic-locations",
+    "phone": "1-800-235-0002"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "AR Senior Health Insurance Information Program (SHIIP)",
+    "shipPhone": "1-800-224-6330",
+    "shipUrl": "https://insurance.arkansas.gov/consumer-services/senior-health-insurance-information-program/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

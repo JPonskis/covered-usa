@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "North Carolina",
+    "abbreviation": "NC",
+    "fips": "37",
+    "medicaidExpansion": true,
+    "mainPortal": "https://epass.nc.gov",
+    "generalPhone": "1-800-662-7030"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 57477,
+    "2": 75163,
+    "3": 88848,
+    "4": 110533,
+    "5": 128165,
+    "6": 145904
+  },
+  "medicaid": {
+    "localName": "NC Medicaid",
+    "applicationUrl": "https://epass.nc.gov",
+    "phone": "1-888-245-0179",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 216,
+    "pregnantLimitFpl": 196,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Food and Nutrition Services (FNS)",
+    "applicationUrl": "https://epass.nc.gov",
+    "phone": "1-800-662-7030",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIEAP / Crisis Intervention Program",
+    "applicationUrl": "https://epass.nc.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 130
+  },
+  "childcare": {
+    "localName": "Subsidized Child Care Assistance (SCCA)",
+    "applicationUrl": "https://ncchildcare.ncdhhs.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 200
+  },
+  "tanf": {
+    "localName": "Work First Family Assistance",
+    "applicationUrl": "https://epass.nc.gov",
+    "lifetimeLimitMonths": 24
+  },
+  "wic": {
+    "applicationUrl": "https://www.nutritionnc.com/wic/",
+    "phone": "1-800-662-7030"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "SHIIP",
+    "shipPhone": "1-855-408-1212",
+    "shipUrl": "https://www.ncdoi.gov/consumers/medicare-and-seniors-health-insurance-information-program-shiip"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

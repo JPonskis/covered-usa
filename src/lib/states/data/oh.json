@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Ohio",
+    "abbreviation": "OH",
+    "fips": "39",
+    "medicaidExpansion": true,
+    "mainPortal": "https://benefits.ohio.gov",
+    "generalPhone": "1-844-640-6446"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 54000,
+    "2": 70000,
+    "3": 86000,
+    "4": 102000,
+    "5": 118000,
+    "6": 134000
+  },
+  "medicaid": {
+    "localName": "Ohio Medicaid",
+    "applicationUrl": "https://benefits.ohio.gov",
+    "phone": "1-800-324-8680",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 206,
+    "pregnantLimitFpl": 200,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Ohio SNAP",
+    "applicationUrl": "https://benefits.ohio.gov",
+    "phone": "1-844-640-6446",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "HEAP",
+    "applicationUrl": "https://energyhelp.ohio.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 175
+  },
+  "childcare": {
+    "localName": "Publicly Funded Child Care (PFCC)",
+    "applicationUrl": "https://benefits.ohio.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 145
+  },
+  "tanf": {
+    "localName": "Ohio Works First (OWF)",
+    "applicationUrl": "https://benefits.ohio.gov",
+    "lifetimeLimitMonths": 36
+  },
+  "wic": {
+    "applicationUrl": "https://odh.ohio.gov/know-our-programs/wic",
+    "phone": "1-800-686-1754"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "OSHIIP",
+    "shipPhone": "1-800-686-1578",
+    "shipUrl": "https://insurance.ohio.gov/consumers/medicare/01-oshiip"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

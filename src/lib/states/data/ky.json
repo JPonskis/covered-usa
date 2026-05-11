@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Kentucky",
+    "abbreviation": "KY",
+    "fips": "21",
+    "medicaidExpansion": true,
+    "mainPortal": "https://kynect.ky.gov",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 24647,
+    "2": 37168,
+    "3": 49690,
+    "4": 74424,
+    "5": 86809,
+    "6": 99197
+  },
+  "medicaid": {
+    "localName": "Medicaid",
+    "applicationUrl": "https://kynect.ky.gov",
+    "phone": "(855) 306-8959",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 213,
+    "pregnantLimitFpl": 195,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://benefind.ky.gov",
+    "phone": "(855) 306-8959",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://www.chfs.ky.gov/agencies/dcbs/dfs/pdb/pages/liheap.aspx",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "CCAP",
+    "applicationUrl": "https://kynect.ky.gov/benefits/s/child-care-program",
+    "incomeBasis": "fpl",
+    "limitPercent": 200
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://kynect.ky.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.chfs.ky.gov/agencies/dph/dmch/nsb/Pages/wic.aspx",
+    "phone": "(800) 462-6122"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://kynect.ky.gov",
+    "exchangeName": "kynect",
+    "phone": "(855) 306-8959"
+  },
+  "medicare": {
+    "shipName": "SHIP",
+    "shipPhone": "1-877-293-7447",
+    "shipUrl": "https://chfs.ky.gov/agencies/dail/Pages/ship.aspx"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

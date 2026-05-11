@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Minnesota",
+    "abbreviation": "MN",
+    "fips": "27",
+    "medicaidExpansion": true,
+    "mainPortal": "https://mn.gov/dhs/",
+    "generalPhone": "1-855-366-7873"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 67600,
+    "2": 88400,
+    "3": 109200,
+    "4": 130000,
+    "5": 150800,
+    "6": 171600
+  },
+  "medicaid": {
+    "localName": "Medical Assistance",
+    "applicationUrl": "https://www.mnsure.org",
+    "phone": "1-855-366-7873",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 275,
+    "pregnantLimitFpl": 278,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Food Support (SNAP)",
+    "applicationUrl": "https://mn.gov/dhs/people-we-serve/adults/economic-assistance/food-nutrition/",
+    "phone": "1-855-366-7873",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "Energy Assistance Program",
+    "applicationUrl": "https://mn.gov/commerce/consumers/consumer-assistance/energy-assistance/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Assistance Program (CCAP)",
+    "applicationUrl": "https://mn.gov/dhs/people-we-serve/children-and-families/economic-assistance/child-care/",
+    "incomeBasis": "smi",
+    "limitPercent": 47
+  },
+  "tanf": {
+    "localName": "Minnesota Family Investment Program (MFIP)",
+    "applicationUrl": "https://mn.gov/dhs/people-we-serve/children-and-families/economic-assistance/income/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.health.state.mn.us/people/wic/",
+    "phone": "1-800-657-3942"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.mnsure.org",
+    "marketplaceName": "MNsure",
+    "phone": "1-855-366-7873"
+  },
+  "medicare": {
+    "shipName": "Senior LinkAge Line",
+    "shipPhone": "1-800-333-2433",
+    "shipUrl": "https://mn.gov/senior-linkage-line/medicare/"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 81,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

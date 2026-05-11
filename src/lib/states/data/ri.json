@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Rhode Island",
+    "abbreviation": "RI",
+    "fips": "44",
+    "medicaidExpansion": true,
+    "mainPortal": "https://healthyrhode.ri.gov/HIXWebI3/DisplayHomePage",
+    "generalPhone": "1-855-697-4347"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 70420,
+    "2": 92087,
+    "3": 113755,
+    "4": 135423,
+    "5": 157090,
+    "6": 178758
+  },
+  "medicaid": {
+    "localName": "RIte Care / Medicaid",
+    "applicationUrl": "https://healthyrhode.ri.gov/HIXWebI3/DisplayHomePage",
+    "phone": "1-855-697-4347",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 261,
+    "pregnantLimitFpl": 253,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://healthyrhode.ri.gov/HIXWebI3/DisplayHomePage",
+    "phone": "1-855-697-4347",
+    "bbce": true,
+    "grossLimitFpl": 185,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://www.ricommunityaction.org/find-your-community-action-agency/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Assistance Program (CCAP)",
+    "applicationUrl": "https://healthyrhode.ri.gov/HIXWebI3/DisplayHomePage",
+    "incomeBasis": "fpl",
+    "limitPercent": 261
+  },
+  "tanf": {
+    "localName": "Rhode Island Works",
+    "applicationUrl": "https://healthyrhode.ri.gov/HIXWebI3/DisplayHomePage",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://health.ri.gov/women-infants-and-children",
+    "phone": "1-800-942-7434"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://healthsourceri.com",
+    "marketplaceName": "HealthSource RI",
+    "phone": "1-855-840-4774"
+  },
+  "medicare": {
+    "shipName": "Rhode Island SHIP",
+    "shipPhone": "1-888-884-8721",
+    "shipUrl": "https://oha.ri.gov/Medicare"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 39,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

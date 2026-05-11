@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Wyoming",
+    "abbreviation": "WY",
+    "fips": "56",
+    "medicaidExpansion": false,
+    "mainPortal": "https://dfs.wyo.gov/",
+    "generalPhone": "1-800-457-3659"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56868,
+    "2": 74052,
+    "3": 91248,
+    "4": 109392,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "Wyoming Medicaid",
+    "applicationUrl": "https://health.wyo.gov/",
+    "phone": "1-800-251-1269",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 200,
+    "pregnantLimitFpl": 154,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://dfs.wyo.gov/assistance-programs/food-assistance/supplemental-nutrition-assistance-program-snap/",
+    "phone": "1-307-777-8550",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "Wyoming LIEAP",
+    "applicationUrl": "https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/low-income-energy-assistance-program-lieap/",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Subsidy Program",
+    "applicationUrl": "https://dfs.wyo.gov/services/family-services/child-care/",
+    "incomeBasis": "fpl",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "POWER",
+    "applicationUrl": "https://dfs.wyo.gov/assistance-programs/cash-assistance/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://health.wyo.gov/publichealth/wic/",
+    "phone": "1-307-777-6236"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "exchangeName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Wyoming State Health Insurance Information Program (WSHIIP)",
+    "shipPhone": "1-800-856-4398",
+    "shipUrl": "https://www.wyomingseniors.com/services/wyoming-state-health-insurance-information-program"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

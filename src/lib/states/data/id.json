@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Idaho",
+    "abbreviation": "ID",
+    "fips": "16",
+    "medicaidExpansion": true,
+    "mainPortal": "https://healthandwelfare.idaho.gov",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 42120,
+    "2": 56600,
+    "3": 71080,
+    "4": 85560,
+    "5": 99180,
+    "6": 112800
+  },
+  "medicaid": {
+    "localName": "Medicaid",
+    "applicationUrl": "https://healthandwelfare.idaho.gov/services-programs/medicaid-health/apply-medicaid",
+    "phone": "1-877-456-1233",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 190,
+    "pregnantLimitFpl": 138,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://healthandwelfare.idaho.gov/services-programs/food-assistance/apply-snap",
+    "phone": "1-877-456-1233",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://healthandwelfare.idaho.gov/services-programs/financial-assistance/home-heating-and-utility-assistance/about-heating-assistance",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "ICCP",
+    "applicationUrl": "https://healthandwelfare.idaho.gov/services-programs/children-families/apply-child-care-assistance",
+    "incomeBasis": "fpl",
+    "limitPercent": 130
+  },
+  "tanf": {
+    "localName": "TAFI",
+    "applicationUrl": "https://healthandwelfare.idaho.gov/services-programs/financial-assistance/about-tafi",
+    "lifetimeLimitMonths": 24
+  },
+  "wic": {
+    "applicationUrl": "https://healthandwelfare.idaho.gov/services-programs/food-assistance/wic",
+    "phone": "1-800-926-2588"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.yourhealthidaho.org/",
+    "marketplaceName": "Your Health Idaho",
+    "phone": "1-855-944-3246"
+  },
+  "medicare": {
+    "shipName": "SHIBA",
+    "shipPhone": "1-800-247-4422",
+    "shipUrl": "https://doi.idaho.gov/shiba/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

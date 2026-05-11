@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Iowa",
+    "abbreviation": "IA",
+    "fips": "19",
+    "medicaidExpansion": true,
+    "mainPortal": "https://hhsservices.iowa.gov/apspssp/ssp.portal",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 48000,
+    "2": 84230,
+    "3": 98602,
+    "4": 115904,
+    "5": 110337,
+    "6": 102354
+  },
+  "medicaid": {
+    "localName": "Iowa Medicaid",
+    "applicationUrl": "https://hhsservices.iowa.gov/apspssp/ssp.portal",
+    "phone": "1-800-972-2017",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 302,
+    "pregnantLimitFpl": 215,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://hhsservices.iowa.gov/apspssp/ssp.portal",
+    "phone": "1-800-972-2017",
+    "bbce": true,
+    "grossLimitFpl": 160,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://hhs.iowa.gov/assistance-programs/housing-rent-assistance/low-income-home-energy-assistance",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Assistance",
+    "applicationUrl": "http://ccmis.dhs.state.ia.us/clientportal/default.aspx",
+    "incomeBasis": "smi",
+    "limitPercent": 145
+  },
+  "tanf": {
+    "localName": "FIP",
+    "applicationUrl": "https://hhsservices.iowa.gov/apspssp/ssp.portal",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://hhs.iowa.gov/assistance-programs/food-assistance/wic-iowa",
+    "phone": "1-800-532-1579"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "exchangeName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "SHIIP",
+    "shipPhone": "1-800-351-4664",
+    "shipUrl": "https://shiip.iowa.gov/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

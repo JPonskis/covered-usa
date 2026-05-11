@@ -1,0 +1,78 @@
+{
+  "state": {
+    "name": "Hawaii",
+    "abbreviation": "HI",
+    "fips": "15",
+    "medicaidExpansion": true,
+    "mainPortal": "https://pais-benefits.dhs.hawaii.gov/",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1.15
+  },
+  "smi": {
+    "1": 72000,
+    "2": 84000,
+    "3": 96000,
+    "4": 108000,
+    "5": 120000,
+    "6": 132000
+  },
+  "medicaid": {
+    "localName": "Med-QUEST",
+    "applicationUrl": "https://pais-benefits.dhs.hawaii.gov/",
+    "phone": "1-800-316-8005",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 313,
+    "pregnantLimitFpl": 196,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://pais-benefits.dhs.hawaii.gov/",
+    "phone": "1-855-643-1643",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "skipNetIncomeTest": true,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "H-HEAP",
+    "applicationUrl": "https://humanservices.hawaii.gov/bessd/liheap/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Subsidy",
+    "applicationUrl": "https://childcaresubsidyapplication.dhs.hawaii.gov/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://pais-benefits.dhs.hawaii.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://health.hawaii.gov/wic/",
+    "phone": "(808) 586-4400"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Hawaii SHIP",
+    "shipPhone": "1-888-875-9229",
+    "shipUrl": "https://www.hawaiiship.org/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

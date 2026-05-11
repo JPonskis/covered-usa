@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Colorado",
+    "abbreviation": "CO",
+    "fips": "08",
+    "medicaidExpansion": true,
+    "mainPortal": "https://peak.my.site.com/peak/s/peak-landing-page?language=en_US",
+    "generalPhone": "1-800-221-3943"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 72140,
+    "2": 94340,
+    "3": 116540,
+    "4": 138760,
+    "5": 160960,
+    "6": 183160
+  },
+  "medicaid": {
+    "localName": "Health First Colorado",
+    "applicationUrl": "https://peak.my.site.com/peak/s/afb-welcome?language=en_US",
+    "phone": "1-800-221-3943",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 260,
+    "pregnantLimitFpl": 195,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://peak.my.site.com/peak/s/peak-landing-page?language=en_US",
+    "phone": "1-800-221-3943",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LEAP (Low-Income Energy Assistance Program)",
+    "applicationUrl": "https://peak.my.site.com/peak/s/peak-landing-page?language=en_US",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Colorado Child Care Assistance Program (CCCAP)",
+    "applicationUrl": "https://peak.my.site.com/peak/s/peak-landing-page?language=en_US",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Colorado Works",
+    "applicationUrl": "https://peak.my.site.com/peak/s/peak-landing-page?language=en_US",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://cdphe.colorado.gov/wic-apply",
+    "phone": "1-800-688-7777"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://connectforhealthco.com/",
+    "marketplaceName": "Connect for Health Colorado",
+    "phone": "1-855-752-6749"
+  },
+  "medicare": {
+    "shipName": "Colorado Medicare Assistance Program (MAP)",
+    "shipPhone": "1-888-696-7213",
+    "shipUrl": "https://doi.colorado.gov/insurance-products/health-insurance/senior-health-care-medicare"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 30,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

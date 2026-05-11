@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "North Dakota",
+    "abbreviation": "ND",
+    "fips": "38",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.hhs.nd.gov/applyforhelp",
+    "generalPhone": "1-866-614-6005"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 67550,
+    "2": 88350,
+    "3": 109130,
+    "4": 129930,
+    "5": 150710,
+    "6": 171490
+  },
+  "medicaid": {
+    "localName": "ND Medicaid",
+    "applicationUrl": "https://dhsbenefits.dhs.nd.gov/SSPPortal/public/?userType=client",
+    "phone": "1-866-614-6005",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 205,
+    "pregnantLimitFpl": 175,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://dhsbenefits.dhs.nd.gov/SSPPortal/public/?userType=client",
+    "phone": "1-866-614-6005",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://dhsbenefits.dhs.nd.gov/SSPPortal/public/?userType=client",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Assistance Program (CCAP)",
+    "applicationUrl": "https://dhsbenefits.dhs.nd.gov/SSPPortal/public/?userType=client",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://dhsbenefits.dhs.nd.gov/SSPPortal/public/?userType=client",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.hhs.nd.gov/food-programs/WIC",
+    "phone": "1-800-472-2286"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "ND SHIP",
+    "shipPhone": "1-888-575-6611",
+    "shipUrl": "https://www.insurance.nd.gov/consumers/medicare"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

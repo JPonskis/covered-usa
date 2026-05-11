@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Missouri",
+    "abbreviation": "MO",
+    "fips": "29",
+    "medicaidExpansion": true,
+    "mainPortal": "https://mydss.mo.gov/",
+    "generalPhone": "1-855-373-4636"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56794,
+    "2": 74270,
+    "3": 91745,
+    "4": 109220,
+    "5": 126695,
+    "6": 144170
+  },
+  "medicaid": {
+    "localName": "MO HealthNet",
+    "applicationUrl": "https://mydss.mo.gov/",
+    "phone": "1-855-373-4636",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 300,
+    "pregnantLimitFpl": 196,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://mydss.mo.gov/",
+    "phone": "1-855-373-4636",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://mydss.mo.gov/utility-assistance/liheap",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Missouri Child Care Subsidy",
+    "applicationUrl": "https://dese.mo.gov/childhood/child-care-subsidy/",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "tanf": {
+    "localName": "Temporary Assistance (TA)",
+    "applicationUrl": "https://mydss.mo.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://health.mo.gov/living/families/wic/",
+    "phone": "1-800-392-8209"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Missouri SHIP",
+    "shipPhone": "1-800-390-3330",
+    "shipUrl": "https://www.missouriship.org/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

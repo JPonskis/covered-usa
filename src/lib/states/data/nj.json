@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "New Jersey",
+    "abbreviation": "NJ",
+    "fips": "34",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.mynjhelps.gov/",
+    "generalPhone": "1-800-701-0710"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 70000,
+    "2": 90817,
+    "3": 112233,
+    "4": 133567,
+    "5": 154900,
+    "6": 176233
+  },
+  "medicaid": {
+    "localName": "NJ FamilyCare",
+    "applicationUrl": "https://njfamilycare.dhs.state.nj.us/apply.aspx",
+    "phone": "1-800-701-0710",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 355,
+    "pregnantLimitFpl": 200,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "NJ SNAP",
+    "applicationUrl": "https://www.mynjhelps.gov/",
+    "phone": "1-800-701-0710",
+    "bbce": true,
+    "grossLimitFpl": 185,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP / Universal Service Fund",
+    "applicationUrl": "https://www.nj.gov/dca/dcaid",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Assistance Program (CCAP)",
+    "applicationUrl": "https://www.childcarenj.gov/",
+    "incomeBasis": "fpl",
+    "limitPercent": 250
+  },
+  "tanf": {
+    "localName": "Work First New Jersey (WFNJ)",
+    "applicationUrl": "https://www.mynjhelps.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.nj.gov/health/fhs/wic/",
+    "phone": "1-800-328-3838"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://nj.gov/getcoverednj/",
+    "marketplaceName": "Get Covered New Jersey",
+    "phone": "833-677-4265"
+  },
+  "medicare": {
+    "shipName": "NJ SHIP",
+    "shipPhone": "1-800-792-8820",
+    "shipUrl": "https://www.nj.gov/humanservices/doas/services/q-z/ship/"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 31.25,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

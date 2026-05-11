@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Pennsylvania",
+    "abbreviation": "PA",
+    "fips": "42",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.compass.dhs.pa.gov",
+    "generalPhone": "1-866-550-4355"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 64647,
+    "2": 84539,
+    "3": 104430,
+    "4": 124322,
+    "5": 144214,
+    "6": 164105
+  },
+  "medicaid": {
+    "localName": "Medical Assistance (MA)",
+    "applicationUrl": "https://www.compass.dhs.pa.gov",
+    "phone": "1-866-550-4355",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 319,
+    "pregnantLimitFpl": 220,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://www.compass.dhs.pa.gov",
+    "phone": "1-877-395-8930",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://www.compass.dhs.pa.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Works (CCW)",
+    "applicationUrl": "https://www.compass.dhs.pa.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 200
+  },
+  "tanf": {
+    "localName": "TANF Cash Assistance",
+    "applicationUrl": "https://www.compass.dhs.pa.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.pawic.com/OnlineApplication.aspx",
+    "phone": "1-800-942-9467"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://pennie.com",
+    "marketplaceName": "Pennie",
+    "phone": "1-844-844-8040"
+  },
+  "medicare": {
+    "shipName": "PA MEDI (formerly APPRISE)",
+    "shipPhone": "1-800-783-7067",
+    "shipUrl": "https://www.pa.gov/agencies/aging/aging-programs-and-services/pa-medi-medicare-counseling"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 22.10,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

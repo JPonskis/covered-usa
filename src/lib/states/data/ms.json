@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Mississippi",
+    "abbreviation": "MS",
+    "fips": "28",
+    "medicaidExpansion": false,
+    "mainPortal": "https://www.access.ms.gov/",
+    "generalPhone": "1-800-421-2408"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 59952,
+    "2": 78399,
+    "3": 96845,
+    "4": 115292,
+    "5": 133739,
+    "6": 152186
+  },
+  "medicaid": {
+    "localName": "Mississippi Medicaid",
+    "applicationUrl": "https://www.access.ms.gov/",
+    "phone": "1-800-421-2408",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 209,
+    "pregnantLimitFpl": 194,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://www.mdhs.ms.gov/help/snap/",
+    "phone": "1-800-948-3050",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://www.mdhs.ms.gov/community-services/",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Payment Program",
+    "applicationUrl": "https://www.mdhs.ms.gov/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://www.mdhs.ms.gov/help/tanf/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://msdh.ms.gov/page/41,0,128.html",
+    "phone": "1-800-545-6747"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Mississippi SHIP",
+    "shipPhone": "1-844-822-4622",
+    "shipUrl": "https://www.mdhs.ms.gov/aging/finding-services-for-older-adults/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

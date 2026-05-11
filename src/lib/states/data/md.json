@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Maryland",
+    "abbreviation": "MD",
+    "fips": "24",
+    "medicaidExpansion": true,
+    "mainPortal": "https://benefits.maryland.gov",
+    "generalPhone": "1-800-332-6347"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 61360,
+    "2": 80240,
+    "3": 99120,
+    "4": 118000,
+    "5": 136880,
+    "6": 155760
+  },
+  "medicaid": {
+    "localName": "Maryland Medical Assistance",
+    "applicationUrl": "https://www.marylandhealthconnection.gov",
+    "phone": "1-855-642-8572",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 322,
+    "pregnantLimitFpl": 322,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Food Supplement Program",
+    "applicationUrl": "https://benefits.maryland.gov",
+    "phone": "1-800-332-6347",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "OHEP (Office of Home Energy Programs)",
+    "applicationUrl": "https://benefits.maryland.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 200
+  },
+  "childcare": {
+    "localName": "Child Care Scholarship Program (CCS)",
+    "applicationUrl": "https://earlychildhood.marylandpublicschools.org",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Temporary Cash Assistance (TCA)",
+    "applicationUrl": "https://benefits.maryland.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://health.maryland.gov/phpa/wic",
+    "phone": "1-800-242-4942"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.marylandhealthconnection.gov",
+    "marketplaceName": "Maryland Health Connection",
+    "phone": "1-855-642-8572"
+  },
+  "medicare": {
+    "shipName": "Maryland SHIP",
+    "shipPhone": "1-800-243-3425",
+    "shipUrl": "https://aging.maryland.gov/pages/state-health-insurance-program.aspx"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

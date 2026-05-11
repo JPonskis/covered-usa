@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Vermont",
+    "abbreviation": "VT",
+    "fips": "50",
+    "medicaidExpansion": true,
+    "mainPortal": "https://dcf.vermont.gov/esd/applicants/mybenefits",
+    "generalPhone": "1-800-479-6151"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56868,
+    "2": 74052,
+    "3": 91248,
+    "4": 109392,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "Green Mountain Care",
+    "applicationUrl": "https://portal.healthconnect.vermont.gov",
+    "phone": "1-800-250-8427",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 317,
+    "pregnantLimitFpl": 213,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "3SquaresVT",
+    "applicationUrl": "https://dcf.vermont.gov/esd/applicants/mybenefits",
+    "phone": "1-800-479-6151",
+    "bbce": true,
+    "grossLimitFpl": 185,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "Seasonal Fuel Assistance",
+    "applicationUrl": "https://dcf.vermont.gov/esd/applicants/mybenefits",
+    "incomeBasis": "fpl",
+    "limitPercent": 185
+  },
+  "childcare": {
+    "localName": "Child Care Financial Assistance Program (CCFAP)",
+    "applicationUrl": "https://dcf.vermont.gov/benefits/ccfap",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Reach Up",
+    "applicationUrl": "https://dcf.vermont.gov/esd/applicants/mybenefits",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.healthvermont.gov/family/wic",
+    "phone": "1-800-479-6151"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://portal.healthconnect.vermont.gov",
+    "exchangeName": "Vermont Health Connect",
+    "phone": "1-855-899-9600"
+  },
+  "medicare": {
+    "shipName": "Vermont SHIP",
+    "shipPhone": "1-800-642-5119",
+    "shipUrl": "https://asd.vermont.gov/services/ship"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 55.68,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

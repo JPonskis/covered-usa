@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Florida",
+    "abbreviation": "FL",
+    "fips": "12",
+    "medicaidExpansion": false,
+    "mainPortal": "https://myaccess.myflfamilies.com",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 53592,
+    "2": 70082,
+    "3": 86572,
+    "4": 103062,
+    "5": 119550,
+    "6": 136040
+  },
+  "medicaid": {
+    "localName": "Medicaid",
+    "applicationUrl": "https://myaccess.myflfamilies.com",
+    "phone": "1-866-762-2237",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 211,
+    "pregnantLimitFpl": 196,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://myaccess.myflfamilies.com",
+    "phone": "1-866-762-2237",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://floridaliheap.com",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "School Readiness",
+    "applicationUrl": "https://familyservices.floridaearlylearning.com",
+    "incomeBasis": "smi",
+    "limitPercent": 55
+  },
+  "tanf": {
+    "localName": "TCA",
+    "applicationUrl": "https://myaccess.myflfamilies.com",
+    "lifetimeLimitMonths": 48
+  },
+  "wic": {
+    "applicationUrl": "https://www.floridahealth.gov/programs-and-services/wic/",
+    "phone": "1-800-342-3556"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "SHINE",
+    "shipPhone": "1-800-963-5337",
+    "shipUrl": "https://floridashine.org"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

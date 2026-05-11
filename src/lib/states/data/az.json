@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Arizona",
+    "abbreviation": "AZ",
+    "fips": "04",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.healthearizonaplus.gov/",
+    "generalPhone": "1-855-432-7587"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 52925,
+    "2": 69208,
+    "3": 85492,
+    "4": 101775,
+    "5": 118058,
+    "6": 134342
+  },
+  "medicaid": {
+    "localName": "AHCCCS",
+    "applicationUrl": "https://www.healthearizonaplus.gov/",
+    "phone": "1-855-432-7587",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 200,
+    "pregnantLimitFpl": 156,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Nutrition Assistance (SNAP)",
+    "applicationUrl": "https://www.healthearizonaplus.gov/",
+    "phone": "1-855-432-7587",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://des.az.gov/liheap",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Assistance",
+    "applicationUrl": "https://des.az.gov/services/child-and-family/child-care",
+    "incomeBasis": "fpl",
+    "limitPercent": 165
+  },
+  "tanf": {
+    "localName": "Cash Assistance",
+    "applicationUrl": "https://www.healthearizonaplus.gov/",
+    "lifetimeLimitMonths": 12
+  },
+  "wic": {
+    "applicationUrl": "https://www.azdhs.gov/wic",
+    "phone": "1-855-432-7587"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Arizona SHIP",
+    "shipPhone": "1-800-432-4040",
+    "shipUrl": "https://azship.org/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

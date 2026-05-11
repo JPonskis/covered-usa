@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "District of Columbia",
+    "abbreviation": "DC",
+    "fips": "11",
+    "medicaidExpansion": true,
+    "mainPortal": "https://districtdirect.dc.gov",
+    "generalPhone": "(202) 727-5355"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 103068,
+    "2": 134782,
+    "3": 166495,
+    "4": 198210,
+    "5": 229923,
+    "6": 261637
+  },
+  "medicaid": {
+    "localName": "DC Medical Assistance",
+    "applicationUrl": "https://dchealthlink.com",
+    "phone": "1-855-532-5465",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 324,
+    "pregnantLimitFpl": 324,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://districtdirect.dc.gov",
+    "phone": "(202) 727-5355",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://doee.dc.gov",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Subsidy Program",
+    "applicationUrl": "https://osse.dc.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 300
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://districtdirect.dc.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://dcwic.org",
+    "phone": "(202) 442-9397"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://dchealthlink.com",
+    "marketplaceName": "DC Health Link",
+    "phone": "1-855-532-5465"
+  },
+  "medicare": {
+    "shipName": "DC SHIP",
+    "shipPhone": "(202) 727-8370",
+    "shipUrl": "https://dacl.dc.gov/service/health-insurance-counseling"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

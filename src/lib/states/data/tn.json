@@ -1,0 +1,79 @@
+{
+  "state": {
+    "name": "Tennessee",
+    "abbreviation": "TN",
+    "fips": "47",
+    "medicaidExpansion": false,
+    "mainPortal": "https://onedhs.tn.gov",
+    "generalPhone": "1-866-311-4287"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56868,
+    "2": 74052,
+    "3": 91248,
+    "4": 109392,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "TennCare",
+    "applicationUrl": "https://www.tn.gov/tenncare/members-applicants/how-do-i-apply-for-tenncare.html",
+    "phone": "855-259-0701",
+    "adultLimitFpl": 0,
+    "childLimitFpl": 211,
+    "pregnantLimitFpl": 250,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://onedhs.tn.gov",
+    "phone": "1-866-311-4287",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://thda.org/help-for-homeowners/low-income-home-energy-assistance-program-liheap/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Payment Assistance (Smart Steps)",
+    "applicationUrl": "https://onedhs.tn.gov",
+    "phone": "833-772-8347",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Families First (TANF)",
+    "applicationUrl": "https://onedhs.tn.gov",
+    "phone": "1-866-311-4287",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.tn.gov/health/health-program-areas/fhw/wic.html",
+    "phone": "1-800-342-5942"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "Tennessee SHIP",
+    "shipPhone": "1-877-801-0044",
+    "shipUrl": "https://www.tn.gov/disability-and-aging/disability-aging-programs/tn-ship.html"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

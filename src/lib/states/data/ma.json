@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Massachusetts",
+    "abbreviation": "MA",
+    "fips": "25",
+    "medicaidExpansion": true,
+    "mainPortal": "https://dtaconnect.eohhs.mass.gov",
+    "generalPhone": "1-877-382-2363"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 67600,
+    "2": 88400,
+    "3": 109200,
+    "4": 130000,
+    "5": 150800,
+    "6": 171600
+  },
+  "medicaid": {
+    "localName": "MassHealth",
+    "applicationUrl": "https://www.mahealthconnector.org",
+    "phone": "1-800-841-2900",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 150,
+    "pregnantLimitFpl": 200,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://dtaconnect.eohhs.mass.gov",
+    "phone": "1-877-382-2363",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "Fuel Assistance / HEAP",
+    "applicationUrl": "https://toapply.org/MassLIHEAP",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Financial Assistance (CCFA)",
+    "applicationUrl": "https://www.mass.gov/child-care-financial-assistance",
+    "incomeBasis": "smi",
+    "limitPercent": 50
+  },
+  "tanf": {
+    "localName": "TAFDC",
+    "applicationUrl": "https://dtaconnect.eohhs.mass.gov",
+    "lifetimeLimitMonths": 24
+  },
+  "wic": {
+    "applicationUrl": "https://www.mass.gov/how-to/apply-for-the-women-infants-children-wic-nutrition-program",
+    "phone": "1-800-942-1007"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.mahealthconnector.org",
+    "marketplaceName": "Massachusetts Health Connector",
+    "phone": "1-877-623-6765"
+  },
+  "medicare": {
+    "shipName": "SHINE (Serving the Health Insurance Needs of Everyone)",
+    "shipPhone": "1-800-223-2559",
+    "shipUrl": "https://www.mass.gov/info-details/additional-services-through-ship"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 232,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

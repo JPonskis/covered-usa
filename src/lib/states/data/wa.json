@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Washington",
+    "abbreviation": "WA",
+    "fips": "53",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.washingtonconnection.org/",
+    "generalPhone": "1-877-501-2233"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 73176,
+    "2": 95688,
+    "3": 118212,
+    "4": 140724,
+    "5": 163236,
+    "6": 185760
+  },
+  "medicaid": {
+    "localName": "Apple Health",
+    "applicationUrl": "https://www.wahealthplanfinder.org/",
+    "phone": "1-800-562-3022",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 317,
+    "pregnantLimitFpl": 210,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "Basic Food",
+    "applicationUrl": "https://www.washingtonconnection.org/",
+    "phone": "1-877-501-2233",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://fortress.wa.gov/com/liheappublic/map.aspx",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Working Connections Child Care (WCCC)",
+    "applicationUrl": "https://www.washingtonconnection.org/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://www.washingtonconnection.org/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://doh.wa.gov/you-and-your-family/wic",
+    "phone": "1-800-841-1410"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.wahealthplanfinder.org/",
+    "exchangeName": "Washington Healthplanfinder",
+    "phone": "1-855-923-4633"
+  },
+  "medicare": {
+    "shipName": "Statewide Health Insurance Benefits Advisors (SHIBA)",
+    "shipPhone": "1-800-562-6900",
+    "shipUrl": "https://www.insurance.wa.gov/insurance-resources/medicare/get-free-medicare-help-shiba/get-free-unbiased-medicare-help-washington-shiba-program"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

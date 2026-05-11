@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Indiana",
+    "abbreviation": "IN",
+    "fips": "18",
+    "medicaidExpansion": true,
+    "mainPortal": "https://fssabenefits.in.gov/bp/#/",
+    "generalPhone": "211"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 55920,
+    "2": 73120,
+    "3": 90340,
+    "4": 107540,
+    "5": 124760,
+    "6": 141980
+  },
+  "medicaid": {
+    "localName": "Healthy Indiana Plan",
+    "applicationUrl": "https://fssabenefits.in.gov/bp/#/",
+    "phone": "800-403-0864",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 255,
+    "pregnantLimitFpl": 213,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://fssabenefits.in.gov/bp/#/",
+    "phone": "800-403-0864",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "EAP",
+    "applicationUrl": "https://www.in.gov/ihcda/homeowners-and-renters/low-income-home-energy-assistance-program-liheap/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "CCDF",
+    "applicationUrl": "https://www.in.gov/fssa/carefinder/child-care-assistance/",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://fssabenefits.in.gov/bp/#/",
+    "lifetimeLimitMonths": 24
+  },
+  "wic": {
+    "applicationUrl": "https://www.in.gov/health/wic/eligibility-requirements/",
+    "phone": "1-800-264-0985"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "SHIP",
+    "shipPhone": "1-800-452-4800",
+    "shipUrl": "https://www.in.gov/ship/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

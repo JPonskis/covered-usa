@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Oregon",
+    "abbreviation": "OR",
+    "fips": "41",
+    "medicaidExpansion": true,
+    "mainPortal": "https://one.oregon.gov/",
+    "generalPhone": "1-800-699-9075"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 63975,
+    "2": 83660,
+    "3": 103343,
+    "4": 123028,
+    "5": 142712,
+    "6": 162397
+  },
+  "medicaid": {
+    "localName": "Oregon Health Plan (OHP)",
+    "applicationUrl": "https://one.oregon.gov/",
+    "phone": "1-800-699-9075",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 305,
+    "pregnantLimitFpl": 185,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://one.oregon.gov/",
+    "phone": "1-800-699-9075",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://one.oregon.gov/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Employment Related Day Care (ERDC)",
+    "applicationUrl": "https://one.oregon.gov/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF Cash Benefits",
+    "applicationUrl": "https://one.oregon.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.oregon.gov/oha/ph/healthypeoplefamilies/wic/pages/index.aspx",
+    "phone": "1-800-723-3638"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://healthcare.oregon.gov/",
+    "marketplaceName": "Oregon Health Insurance Marketplace",
+    "phone": "855-268-3767"
+  },
+  "medicare": {
+    "shipName": "SHIBA (Senior Health Insurance Benefits Assistance)",
+    "shipPhone": "1-800-722-4134",
+    "shipUrl": "https://shiba.oregon.gov/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

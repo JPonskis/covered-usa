@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Virginia",
+    "abbreviation": "VA",
+    "fips": "51",
+    "medicaidExpansion": true,
+    "mainPortal": "https://commonhelp.virginia.gov",
+    "generalPhone": "1-855-635-4370"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 56868,
+    "2": 74052,
+    "3": 91248,
+    "4": 109392,
+    "5": 126900,
+    "6": 144336
+  },
+  "medicaid": {
+    "localName": "Cardinal Care",
+    "applicationUrl": "https://commonhelp.virginia.gov",
+    "phone": "1-855-242-8282",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 205,
+    "pregnantLimitFpl": 205,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://commonhelp.virginia.gov",
+    "phone": "1-855-635-4370",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://commonhelp.virginia.gov",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Subsidy Program",
+    "applicationUrl": "https://commonhelp.virginia.gov",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://commonhelp.virginia.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.vdh.virginia.gov/wic/",
+    "phone": "1-888-942-3663"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.marketplace.virginia.gov",
+    "exchangeName": "Virginia's Insurance Marketplace",
+    "phone": "1-855-242-8282"
+  },
+  "medicare": {
+    "shipName": "Virginia Insurance Counseling and Assistance Program (VICAP)",
+    "shipPhone": "1-800-552-3402",
+    "shipUrl": "https://dars.virginia.gov/aging/home-community/medicare-counseling/"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "ssaPhone": "1-800-772-1213",
+    "ssaUrl": "https://www.ssa.gov"
+  }
+}

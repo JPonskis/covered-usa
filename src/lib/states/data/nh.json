@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "New Hampshire",
+    "abbreviation": "NH",
+    "fips": "33",
+    "medicaidExpansion": true,
+    "mainPortal": "https://nheasy.nh.gov/",
+    "generalPhone": "1-800-852-3345"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 67550,
+    "2": 88350,
+    "3": 109130,
+    "4": 129930,
+    "5": 150710,
+    "6": 171490
+  },
+  "medicaid": {
+    "localName": "New Hampshire Medicaid / Granite Advantage",
+    "applicationUrl": "https://nheasy.nh.gov/",
+    "phone": "1-800-852-3345",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 318,
+    "pregnantLimitFpl": 196,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://nheasy.nh.gov/",
+    "phone": "1-603-271-9700",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false
+  },
+  "liheap": {
+    "localName": "Fuel Assistance Program",
+    "applicationUrl": "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/assistance-programs-eligibility",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "NH Child Care Scholarship Program",
+    "applicationUrl": "https://www.nh-connections.org/families/child-care-scholarship/",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "Financial Assistance for Needy Families (FANF)",
+    "applicationUrl": "https://nheasy.nh.gov/",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.dhhs.nh.gov/programs-services/population-health/women-infants-children-nutrition-program",
+    "phone": "1-800-942-4321"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "ServiceLink Resource Centers",
+    "shipPhone": "1-866-634-9412",
+    "shipUrl": "https://www.servicelink.nh.gov"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

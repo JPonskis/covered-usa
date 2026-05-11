@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Louisiana",
+    "abbreviation": "LA",
+    "fips": "22",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.dcfs.louisiana.gov/",
+    "generalPhone": "1-888-524-3578"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 30083,
+    "2": 39339,
+    "3": 48596,
+    "4": 57852,
+    "5": 67108,
+    "6": 76365
+  },
+  "medicaid": {
+    "localName": "Healthy Louisiana",
+    "applicationUrl": "https://myplan.healthy.la.gov/",
+    "phone": "1-888-342-6207",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 212,
+    "pregnantLimitFpl": 212,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://www.dcfs.louisiana.gov/page/snap-how-to-apply",
+    "phone": "1-888-524-3578",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://www.lhc.la.gov/energy-assistance",
+    "incomeBasis": "fpl",
+    "limitPercent": 150
+  },
+  "childcare": {
+    "localName": "Child Care Assistance Program (CCAP)",
+    "applicationUrl": "https://doe.louisiana.gov/families-and-students/early-childhood-families/child-care-assistance-program-(ccap)",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "FITAP",
+    "applicationUrl": "https://www.dcfs.louisiana.gov/page/fitap",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://ldh.la.gov/page/wic-nutrition-program",
+    "phone": "1-800-251-2229"
+  },
+  "aca": {
+    "marketplaceType": "federal",
+    "marketplaceUrl": "https://www.healthcare.gov",
+    "marketplaceName": "Healthcare.gov",
+    "phone": "1-800-318-2596"
+  },
+  "medicare": {
+    "shipName": "SHIIP (Senior Health Insurance Information Program)",
+    "shipPhone": "1-800-259-5301",
+    "shipUrl": "https://ldi.la.gov/consumers/senior-health-shiip"
+  },
+  "ssi": {
+    "stateSupplement": false,
+    "stateSupplementAmount": null,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

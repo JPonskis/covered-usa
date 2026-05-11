@@ -1,0 +1,80 @@
+{
+  "state": {
+    "name": "California",
+    "abbreviation": "CA",
+    "fips": "06",
+    "medicaidExpansion": true,
+    "mainPortal": "https://benefitscal.com",
+    "generalPhone": "1-800-541-5555"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 96854,
+    "2": 96854,
+    "3": 109904,
+    "4": 127338,
+    "5": 147712,
+    "6": 168086
+  },
+  "medicaid": {
+    "localName": "Medi-Cal",
+    "applicationUrl": "https://www.coveredca.com/apply/",
+    "phone": "1-800-541-5555",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 266,
+    "pregnantLimitFpl": 213,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "CalFresh",
+    "applicationUrl": "https://benefitscal.com",
+    "phone": "800-952-5253",
+    "bbce": true,
+    "grossLimitFpl": 200,
+    "netLimitFpl": 100,
+    "hasAssetLimit": false,
+    "studentExemptions": true,
+    "calGrantExemption": true,
+    "lpiePrograms": ["EOPS", "EOP", "DSPS", "CARE", "NextUp", "Guardian Scholars", "MESA", "Campus Employment"]
+  },
+  "liheap": {
+    "localName": "LIHEAP",
+    "applicationUrl": "https://www.caliheapapply.com/",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Assistance",
+    "applicationUrl": "https://benefitscal.com",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "CalWORKs",
+    "applicationUrl": "https://benefitscal.com",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://myfamily.wic.ca.gov/",
+    "phone": "(888) 278-6455"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.coveredca.com",
+    "marketplaceName": "Covered California",
+    "phone": "1-800-300-1506"
+  },
+  "medicare": {
+    "shipName": "HICAP (Health Insurance Counseling & Advocacy Program)",
+    "shipPhone": "1-800-434-0222",
+    "shipUrl": "https://aging.ca.gov/Programs_and_Services/Medicare_Counseling/"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 240,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}

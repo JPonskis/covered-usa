@@ -1,0 +1,77 @@
+{
+  "state": {
+    "name": "Maine",
+    "abbreviation": "ME",
+    "fips": "23",
+    "medicaidExpansion": true,
+    "mainPortal": "https://www.MyMaineConnection.gov",
+    "generalPhone": "1-855-797-4357"
+  },
+  "fpl": {
+    "adjustment": 1
+  },
+  "smi": {
+    "1": 59072,
+    "2": 77248,
+    "3": 95424,
+    "4": 113600,
+    "5": 131776,
+    "6": 149952
+  },
+  "medicaid": {
+    "localName": "MaineCare",
+    "applicationUrl": "https://www.MyMaineConnection.gov",
+    "phone": "1-855-797-4357",
+    "adultLimitFpl": 138,
+    "childLimitFpl": 305,
+    "pregnantLimitFpl": 213,
+    "hasAssetLimit": false
+  },
+  "snap": {
+    "localName": "SNAP",
+    "applicationUrl": "https://www.MyMaineConnection.gov",
+    "phone": "1-855-797-4357",
+    "bbce": false,
+    "grossLimitFpl": 130,
+    "netLimitFpl": 100,
+    "hasAssetLimit": true
+  },
+  "liheap": {
+    "localName": "HEAP",
+    "applicationUrl": "https://www.mainehousing.org/programs-services/energy/energydetails/home-energy-assistance-program",
+    "incomeBasis": "smi",
+    "limitPercent": 60
+  },
+  "childcare": {
+    "localName": "Child Care Subsidies",
+    "applicationUrl": "https://www.maine.gov/dhhs/ocfs/ec/child-care",
+    "incomeBasis": "smi",
+    "limitPercent": 85
+  },
+  "tanf": {
+    "localName": "TANF",
+    "applicationUrl": "https://www.MyMaineConnection.gov",
+    "lifetimeLimitMonths": 60
+  },
+  "wic": {
+    "applicationUrl": "https://www.maine.gov/dhhs/mecdc/population-health/wic",
+    "phone": "(207) 287-3991"
+  },
+  "aca": {
+    "marketplaceType": "state",
+    "marketplaceUrl": "https://www.coverme.gov",
+    "marketplaceName": "CoverME.gov",
+    "phone": "1-800-965-7476"
+  },
+  "medicare": {
+    "shipName": "Maine SHIP",
+    "shipPhone": "1-800-262-2232",
+    "shipUrl": "https://www.maine.gov/dhhs/oads/get-support/older-adults-disabilities/older-adult-services/ship-medicare-assistance"
+  },
+  "ssi": {
+    "stateSupplement": true,
+    "stateSupplementAmount": 10,
+    "applicationUrl": "https://www.ssa.gov/benefits/ssi/",
+    "phone": "1-800-772-1213"
+  }
+}
