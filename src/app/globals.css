@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  /* CoveredUSA Palette - blue/teal healthcare */
+  /* CoveredUSA Palette — warm teal + amber */
   --teal: #0d9488;
   --teal-dark: #0f766e;
   --teal-light: #14b8a6;
-  --primary: #0369a1;
-  --primary-dark: #075985;
-  --primary-deeper: #0c4a6e;
-  --primary-light: #0ea5e9;
-  --primary-lightest: #e0f2fe;
-  --accent-gold: #F59E0B;
-  --accent-gold-light: #FBBF24;
-  --cream: #f0f9ff;
-  --cream-dark: #e0f2fe;
-  --warm-white: #f8fafc;
-  --sand: #e2e8f0;
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-muted: #64748b;
-  --border: #cbd5e1;
-  --border-light: #e2e8f0;
+  --primary: #0d9488;
+  --primary-dark: #0f766e;
+  --primary-deeper: #134e4a;
+  --primary-light: #2dd4bf;
+  --primary-lightest: #ccfbf1;
+  --accent: #c2732a;
+  --accent-light: #f59e0b;
+  --accent-lightest: #fef3c7;
+  --cream: #FDF8F3;
+  --cream-dark: #F0E8D9;
+  --warm-white: #FFFCF9;
+  --sand: #E8DDD0;
+  --text-primary: #1C1A16;
+  --text-secondary: #44403c;
+  --text-muted: #78716c;
+  --border: #d6cfc5;
+  --border-light: #ede8e3;
   --success: #059669;
   --success-light: #d1fae5;
   --warning: #d97706;
@@ -29,12 +30,12 @@
   --error-light: #fee2e2;
 
   /* Shadows */
-  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
-  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 10px 24px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
-  --shadow-xl: 0 20px 40px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
-  --shadow-primary: 0 4px 14px rgba(3, 105, 161, 0.25);
+  --shadow-xs: 0 1px 2px rgba(28, 26, 22, 0.04);
+  --shadow-sm: 0 1px 3px rgba(28, 26, 22, 0.07), 0 1px 2px rgba(28, 26, 22, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(28, 26, 22, 0.07), 0 2px 4px -2px rgba(28, 26, 22, 0.04);
+  --shadow-lg: 0 10px 24px -3px rgba(28, 26, 22, 0.09), 0 4px 6px -4px rgba(28, 26, 22, 0.04);
+  --shadow-xl: 0 20px 40px -5px rgba(28, 26, 22, 0.11), 0 8px 10px -6px rgba(28, 26, 22, 0.04);
+  --shadow-primary: 0 4px 14px rgba(13, 148, 136, 0.3);
   --shadow-teal: 0 4px 14px rgba(13, 148, 136, 0.2);
 }
 
@@ -56,7 +57,7 @@ html {
 body {
   background: var(--warm-white);
   color: var(--text-primary);
-  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-body), Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.7;
@@ -64,7 +65,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font-display), Georgia, serif;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -358,7 +359,7 @@ a:not(.btn-primary):not(.btn-secondary):not(.header-link):not(.blog-card):not(.s
 /* Warm texture background */
 .warm-texture {
   background-color: var(--cream);
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d9488' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c2732a' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* ===== BLOG STYLES ===== */

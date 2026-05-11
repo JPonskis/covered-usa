@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, DM_Sans } from "next/font/google";
+import { Source_Serif_4, Fraunces } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const sourceSerif = Source_Serif_4({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["300", "400", "600"],
+  style: ["normal", "italic"],
 });
 
-const dmSans = DM_Sans({
+const fraunces = Fraunces({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "600", "700", "900"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${dmSans.variable}`}>
+      <body className={`${sourceSerif.variable} ${fraunces.variable}`}>
         {children}
       </body>
     </html>

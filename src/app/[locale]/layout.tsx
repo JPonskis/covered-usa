@@ -3,31 +3,12 @@ import { notFound } from 'next/navigation';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-function ShieldIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" aria-hidden="true">
-      <path
-        d="M12 2L4 6v6c0 5.52 3.44 10.24 8 12 4.56-1.76 8-6.48 8-12V6l-8-4z"
-        fill="var(--primary)"
-        opacity="0.15"
-        stroke="var(--primary)"
-        strokeWidth="1.5"
-      />
-      <path
-        d="M9 12l2 2 4-4"
-        stroke="var(--primary)"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 export default async function LocaleLayout({
   children,
@@ -51,42 +32,46 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider>
       <header style={{
-        background: 'rgba(7, 89, 133, 0.97)',
-        backdropFilter: 'blur(12px)',
+        background: 'var(--primary-deeper)',
         color: 'white',
         position: 'sticky',
         top: 0,
         zIndex: 50,
-        borderBottom: '1px solid rgba(255,255,255,0.08)',
+        borderBottom: '1px solid rgba(255,255,255,0.06)',
       }}>
-        <div className="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
-          {/* Logo */}
-          <Link
-            href={`/${locale}`}
-            className="flex items-center gap-2 hover:opacity-90 transition-opacity no-underline"
-          >
-            <ShieldIcon />
-            <span
-              className="text-xl font-bold tracking-tight"
-              style={{ color: 'white', fontFamily: 'var(--font-display)' }}
-            >
-              CoveredUSA
-            </span>
+        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+          {/* Logo image */}
+          <Link href={`/${locale}`} className="flex items-center hover:opacity-90 transition-opacity no-underline">
+            <Image
+              src="/logo.png"
+              alt="CoveredUSA"
+              width={190}
+              height={59}
+              priority
+              style={{ height: '40px', width: 'auto' }}
+            />
           </Link>
 
           {/* Nav */}
           <nav className="flex items-center gap-3 sm:gap-5">
             <Link
+              href={`/${locale}/blog`}
+              className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
+              style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
+            >
+              Blog
+            </Link>
+            <Link
               href={`/${locale}#how-it-works`}
               className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
-              style={{ fontWeight: 500 }}
+              style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
             >
               {t('howItWorks')}
             </Link>
             <Link
               href={`/${locale}/about`}
               className="text-sm text-white/60 hover:text-white transition-colors hidden sm:inline"
-              style={{ fontWeight: 500 }}
+              style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
             >
               {t('about')}
             </Link>
@@ -100,9 +85,9 @@ export default async function LocaleLayout({
               href={`/${locale}/screener`}
               className="text-sm font-semibold px-4 py-2 rounded-lg transition-all"
               style={{
-                background: 'rgba(255,255,255,0.15)',
+                background: 'var(--primary)',
                 color: 'white',
-                border: '1px solid rgba(255,255,255,0.2)',
+                border: '1px solid rgba(255,255,255,0.15)',
               }}
             >
               {t('checkEligibility')}
@@ -115,27 +100,20 @@ export default async function LocaleLayout({
         {children}
       </div>
 
-      <footer style={{ background: 'var(--text-primary)', color: 'white' }}>
+      <footer style={{ background: 'var(--primary-deeper)', color: 'white' }}>
         <div className="max-w-6xl mx-auto px-6 py-12">
           {/* Top row */}
           <div className="grid sm:grid-cols-3 gap-8 mb-10">
             {/* About col */}
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5" aria-hidden="true">
-                  <path
-                    d="M12 2L4 6v6c0 5.52 3.44 10.24 8 12 4.56-1.76 8-6.48 8-12V6l-8-4z"
-                    fill="white"
-                    opacity="0.2"
-                    stroke="white"
-                    strokeWidth="1.5"
-                    strokeOpacity="0.6"
-                  />
-                  <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" strokeOpacity="0.9" />
-                </svg>
-                <span className="font-bold text-lg tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-                  CoveredUSA
-                </span>
+              <div className="mb-4">
+                <Image
+                  src="/logo.png"
+                  alt="CoveredUSA"
+                  width={160}
+                  height={50}
+                  style={{ height: '34px', width: 'auto', opacity: 0.9 }}
+                />
               </div>
               <p className="text-sm text-white/50 leading-relaxed">
                 Free health insurance eligibility screening. We connect you with licensed agents who can help you enroll at no cost.
