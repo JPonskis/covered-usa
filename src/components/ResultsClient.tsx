@@ -292,16 +292,24 @@ export default function ResultsClient({
               <PhoneCaptureForm submissionId={submissionId} locale={locale} />
             )}
 
-            {/* HealthSherpa self-apply for ACA — below phone capture as secondary option */}
+            {/* HealthSherpa self-apply for ACA — secondary button below phone capture */}
             {showHealthSherpa && (
-              <div className="mt-4 text-center">
+              <div className="mt-3">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-1 h-px bg-[var(--border-light)]" />
+                  <span className="text-xs text-[var(--text-muted)] font-medium">
+                    {es ? 'o' : 'or'}
+                  </span>
+                  <div className="flex-1 h-px bg-[var(--border-light)]" />
+                </div>
                 <a
                   href={`https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=&utm_source=coveredusa&utm_medium=screener&utm_content=${submissionId}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-[var(--text-secondary)] hover:text-[var(--primary)] underline"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] font-semibold text-sm hover:bg-[var(--primary)] hover:text-white transition-all"
                 >
-                  {es ? 'Prefiero inscribirme por mi cuenta en HealthSherpa' : 'I prefer to apply myself on HealthSherpa'}
+                  {es ? 'Aplicar yo mismo en HealthSherpa' : 'Apply Yourself on HealthSherpa'}
+                  <span className="text-xs opacity-70">↗</span>
                 </a>
               </div>
             )}
