@@ -182,81 +182,226 @@ export default async function HomePage({
 
       {/* ── HERO ── */}
       <section className="warm-texture" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 lg:py-28">
-          <div className="max-w-2xl mx-auto text-center">
-            <div
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-7 text-sm font-semibold"
-              style={{ background: 'white', color: 'var(--primary)', border: '1px solid var(--border)', boxShadow: 'var(--shadow-sm)' }}
-            >
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <circle cx="7" cy="7" r="3.5" fill="var(--success)" />
-                <circle cx="7" cy="7" r="3.5" fill="var(--success)" opacity="0.3">
-                  <animate attributeName="r" from="3.5" to="6.5" dur="1.5s" repeatCount="indefinite" />
-                  <animate attributeName="opacity" from="0.3" to="0" dur="1.5s" repeatCount="indefinite" />
-                </circle>
-              </svg>
-              {th('badge')}
-            </div>
+        <div className="max-w-6xl mx-auto px-6 py-14 md:py-20 lg:py-24">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight"
-              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em' }}
-            >
-              {t('headline')}
-            </h1>
-
-            <p
-              className="text-lg md:text-xl mb-9 leading-relaxed"
-              style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
-            >
-              {th('subheadline')}
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-9">
-              <Link
-                href={`/${locale}/screener`}
-                className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2"
-                style={{ fontSize: '1.05rem', boxShadow: 'var(--shadow-primary)' }}
+            {/* Left: text */}
+            <div>
+              {/* BenefitsUSA attribution */}
+              <a
+                href="https://benefitsusa.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="header-link inline-flex items-center gap-1.5 text-xs font-medium mb-5"
+                style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
               >
-                {t('cta')}
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M6 1L11 3.5V7c0 2.5-2 4.5-5 5C3 11.5 1 9.5 1 7V3.5L6 1z" fill="var(--primary)" opacity="0.2" stroke="var(--primary)" strokeWidth="1" />
+                  <path d="M4 6l1.5 1.5L8 4.5" stroke="var(--primary)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-              </Link>
-              <span style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-body)' }}>
-                {th('takesMinutes')}
-              </span>
+                <span style={{ color: 'var(--text-secondary)' }}>A</span>
+                <span style={{ color: 'var(--primary)', fontWeight: 600 }}>BenefitsUSA</span>
+                <span style={{ color: 'var(--text-secondary)' }}>product</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" style={{ opacity: 0.4 }}>
+                  <path d="M2 8L8 2M4 2h4v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+
+              {/* Live badge */}
+              <div className="mb-6">
+                <div
+                  className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold"
+                  style={{ background: 'white', color: 'var(--primary)', border: '1px solid var(--border)', boxShadow: 'var(--shadow-sm)' }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <circle cx="7" cy="7" r="3.5" fill="var(--success)" />
+                    <circle cx="7" cy="7" r="3.5" fill="var(--success)" opacity="0.3">
+                      <animate attributeName="r" from="3.5" to="6.5" dur="1.5s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" from="0.3" to="0" dur="1.5s" repeatCount="indefinite" />
+                    </circle>
+                  </svg>
+                  {th('badge')}
+                </div>
+              </div>
+
+              <h1
+                className="text-4xl md:text-5xl lg:text-5xl font-bold mb-5 leading-tight"
+                style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em' }}
+              >
+                {t('headline')}
+              </h1>
+
+              <p
+                className="text-lg md:text-xl mb-8 leading-relaxed"
+                style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
+              >
+                {th('subheadline')}
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-start gap-4 mb-8">
+                <Link
+                  href={`/${locale}/screener`}
+                  className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2"
+                  style={{ fontSize: '1.05rem', boxShadow: 'var(--shadow-primary)' }}
+                >
+                  {t('cta')}
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                <span className="flex items-center" style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-body)', paddingTop: '0.85rem' }}>
+                  {th('takesMinutes')}
+                </span>
+              </div>
+
+              <div className="flex flex-wrap gap-x-7 gap-y-3">
+                {[
+                  { text: t('trust1'), icon: (
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  )},
+                  { text: t('trust2'), icon: (
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                  )},
+                  { text: t('trust3'), icon: (
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <circle cx="12" cy="12" r="10" strokeWidth={2} />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                    </svg>
+                  )},
+                ].map((badge) => (
+                  <span
+                    key={badge.text}
+                    className="flex items-center gap-2"
+                    style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-body)' }}
+                  >
+                    <span style={{ color: 'var(--primary)' }}>{badge.icon}</span>
+                    {badge.text}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-x-7 gap-y-3">
-              {[
-                { text: t('trust1'), icon: (
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            {/* Right: phone mockup */}
+            <div className="hidden lg:flex justify-center items-center">
+              <div style={{
+                width: '280px',
+                background: 'white',
+                borderRadius: '28px',
+                boxShadow: '0 32px 64px rgba(0,0,0,0.12), 0 8px 24px rgba(13,148,136,0.1)',
+                border: '6px solid #e2e8f0',
+                overflow: 'hidden',
+                position: 'relative',
+              }}>
+                {/* Phone top bar */}
+                <div style={{ background: 'var(--primary-deeper)', padding: '12px 16px 10px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'rgba(255,255,255,0.4)' }} />
+                    <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '10px', fontFamily: 'var(--font-body)' }}>coveredusa.org</span>
+                  </div>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="2">
+                    <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zM2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
                   </svg>
-                )},
-                { text: t('trust2'), icon: (
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                  </svg>
-                )},
-                { text: t('trust3'), icon: (
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <circle cx="12" cy="12" r="10" strokeWidth={2} />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-                  </svg>
-                )},
-              ].map((badge) => (
-                <span
-                  key={badge.text}
-                  className="flex items-center gap-2"
-                  style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-body)' }}
-                >
-                  <span style={{ color: 'var(--primary)' }}>{badge.icon}</span>
-                  {badge.text}
-                </span>
-              ))}
+                </div>
+
+                {/* Progress bar */}
+                <div style={{ background: '#f1f5f9', height: '4px' }}>
+                  <div style={{ background: 'var(--primary)', height: '4px', width: '33%', borderRadius: '0 2px 2px 0' }} />
+                </div>
+
+                {/* Card content */}
+                <div style={{ padding: '20px 16px' }}>
+                  <p style={{ fontSize: '10px', color: 'var(--text-muted)', fontFamily: 'var(--font-body)', marginBottom: '6px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    Step 1 of 3
+                  </p>
+                  <h3 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'var(--font-display)', marginBottom: '16px', lineHeight: 1.3 }}>
+                    Do you currently have health insurance?
+                  </h3>
+
+                  {/* Options */}
+                  {[
+                    { label: 'No — I\'m uninsured', selected: true },
+                    { label: 'Yes — through my employer', selected: false },
+                    { label: 'Yes — Medicare/Medicaid', selected: false },
+                  ].map((opt) => (
+                    <div key={opt.label} style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      padding: '10px 12px',
+                      marginBottom: '8px',
+                      borderRadius: '10px',
+                      border: `1.5px solid ${opt.selected ? 'var(--primary)' : 'var(--border-light)'}`,
+                      background: opt.selected ? 'var(--primary-lightest)' : 'var(--cream)',
+                      cursor: 'pointer',
+                    }}>
+                      <div style={{
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        border: `2px solid ${opt.selected ? 'var(--primary)' : '#cbd5e1'}`,
+                        background: opt.selected ? 'var(--primary)' : 'transparent',
+                        flexShrink: 0,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}>
+                        {opt.selected && (
+                          <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'white' }} />
+                        )}
+                      </div>
+                      <span style={{ fontSize: '12px', color: opt.selected ? 'var(--primary)' : 'var(--text-secondary)', fontFamily: 'var(--font-body)', fontWeight: opt.selected ? 600 : 400 }}>
+                        {opt.label}
+                      </span>
+                    </div>
+                  ))}
+
+                  {/* Continue button */}
+                  <div style={{
+                    marginTop: '16px',
+                    background: 'var(--primary)',
+                    color: 'white',
+                    borderRadius: '10px',
+                    padding: '11px 16px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    fontFamily: 'var(--font-body)',
+                    fontWeight: 600,
+                    fontSize: '13px',
+                  }}>
+                    <span>Continue</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+
+                  {/* Bottom result preview */}
+                  <div style={{
+                    marginTop: '14px',
+                    padding: '10px 12px',
+                    background: 'linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%)',
+                    borderRadius: '10px',
+                    border: '1px solid #bbf7d0',
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5">
+                        <path d="M9 12l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+                        <circle cx="12" cy="12" r="10" />
+                      </svg>
+                      <span style={{ fontSize: '10px', fontWeight: 700, color: '#16a34a', fontFamily: 'var(--font-body)' }}>You may qualify for</span>
+                    </div>
+                    <p style={{ fontSize: '11px', color: '#15803d', fontFamily: 'var(--font-body)', margin: 0, fontWeight: 500 }}>
+                      Medicaid · ACA subsidies · CHIP
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
