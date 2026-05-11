@@ -206,59 +206,22 @@ export default function ResultsClient({
     <div
       style={{ minHeight: '100vh', background: 'var(--warm-white)', paddingBottom: '4rem' }}
     >
-      {/* Header */}
-      <header style={{ background: 'var(--primary)', padding: '0' }}>
-        <div
-          style={{
-            maxWidth: '48rem',
-            margin: '0 auto',
-            padding: '0.875rem 1.5rem',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          }}
-        >
+      <div style={{ maxWidth: '48rem', margin: '0 auto', padding: '2rem 1.25rem' }}>
+        {/* Back + language toggle row */}
+        <div className="flex items-center justify-between mb-6">
           <a
-            href={`/${locale}`}
-            style={{
-              color: 'white',
-              fontWeight: 700,
-              fontSize: '1rem',
-              textDecoration: 'none',
-            }}
+            href={`/${locale}/screener`}
+            className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors"
           >
-            CoveredUSA
+            {es ? '← Volver' : '← Back'}
           </a>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <a
-              href={`/${locale}/screener`}
-              style={{
-                color: 'rgba(255,255,255,0.8)',
-                fontSize: '0.875rem',
-                textDecoration: 'none',
-              }}
-            >
-              {es ? '← Volver' : '← Back'}
-            </a>
-            <a
-              href={`/${altLocale}/results/${submissionId}`}
-              style={{
-                fontSize: '0.75rem',
-                fontWeight: 600,
-                padding: '0.25rem 0.625rem',
-                borderRadius: '999px',
-                border: '1px solid rgba(255,255,255,0.4)',
-                color: 'rgba(255,255,255,0.9)',
-                textDecoration: 'none',
-              }}
-            >
-              {altLocaleLabel}
-            </a>
-          </div>
+          <a
+            href={`/${altLocale}/results/${submissionId}`}
+            className="text-xs font-semibold px-3 py-1 rounded-full border border-[var(--border)] text-[var(--text-secondary)] hover:border-[var(--primary)] hover:text-[var(--primary)] transition-colors"
+          >
+            {altLocaleLabel}
+          </a>
         </div>
-      </header>
-
-      <div style={{ maxWidth: '48rem', margin: '0 auto', padding: '2.5rem 1.25rem' }}>
         {/* Summary Card */}
         <div
           className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-8 mb-8"
