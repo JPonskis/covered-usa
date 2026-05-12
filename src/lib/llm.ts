@@ -115,6 +115,15 @@ async function callClaude(model: string, req: LLMRequest): Promise<string> {
   return block.type === 'text' ? block.text : ''
 }
 
+// ── Typed error for when both providers fail ─────────────────────────
+
+export class LLMUnavailableError extends Error {
+  constructor(primaryError: string, fallbackError: string) {
+    super(`Both LLM providers failed. Primary: ${primaryError} | Fallback: ${fallbackError}`)
+    this.name = 'LLMUnavailableError'
+  }
+}
+
 // ── Public: call with automatic failover ─────────────────────────────
 
 export async function llm(
@@ -127,13 +136,21 @@ export async function llm(
       ? callGemini(cfg.model, request)
       : callClaude(cfg.model, request)
 
+  let primaryError: string
   try {
     return await call(primary)
   } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err)
-    console.error(`[LLM] ${primary.provider}/${primary.model} failed: ${msg}`)
+    primaryError = err instanceof Error ? err.message : String(err)
+    console.error(`[LLM] ${primary.provider}/${primary.model} failed: ${primaryError}`)
     console.log(`[LLM] Falling back to ${fallback.provider}/${fallback.model}`)
+  }
+
+  try {
     return await call(fallback)
+  } catch (err) {
+    const fallbackError = err instanceof Error ? err.message : String(err)
+    console.error(`[LLM] ${fallback.provider}/${fallback.model} also failed: ${fallbackError}`)
+    throw new LLMUnavailableError(primaryError, fallbackError)
   }
 }
 

@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase-admin'
-import { extractBillData } from '@/lib/bill-analyzer/ocr'
+import { extractBillData, NonMedicalBillError, LowConfidenceOCRError } from '@/lib/bill-analyzer/ocr'
 import { analyzeBill } from '@/lib/bill-analyzer/analyzer'
+import { LLMUnavailableError } from '@/lib/llm'
 
 export const maxDuration = 60 // Vercel Pro — up to 60s for OCR + analysis
 
@@ -132,12 +133,27 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ ...result, resultId })
   } catch (error) {
+    if (error instanceof NonMedicalBillError) {
+      return NextResponse.json(
+        { error: "This doesn't look like a medical bill. Please upload a hospital or provider bill — we can't analyze grocery receipts, insurance cards, or other documents." },
+        { status: 422 }
+      )
+    }
+    if (error instanceof LowConfidenceOCRError) {
+      return NextResponse.json(
+        { error: "The image quality is too low to read accurately. Try uploading a clearer photo with good lighting, or export a PDF directly from your patient portal." },
+        { status: 422 }
+      )
+    }
+    if (error instanceof LLMUnavailableError) {
+      return NextResponse.json(
+        { error: "Our analysis service is temporarily unavailable. Please try again in a few minutes." },
+        { status: 503 }
+      )
+    }
     console.error('Bill analysis error:', error)
     return NextResponse.json(
-      {
-        error:
-          'Something went wrong analyzing your bill. Please try again.',
-      },
+      { error: 'Something went wrong analyzing your bill. Please try again.' },
       { status: 500 }
     )
   }

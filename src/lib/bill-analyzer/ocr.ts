@@ -1,7 +1,29 @@
 import { llm, OCR_PRIMARY, OCR_FALLBACK } from '@/lib/llm'
 import type { BillData, BillLineItem } from './types'
 
+// Thrown when the uploaded file is not a medical/healthcare bill
+export class NonMedicalBillError extends Error {
+  constructor() {
+    super('NotAMedicalBill')
+    this.name = 'NonMedicalBillError'
+  }
+}
+
+// Thrown when OCR confidence is too low to produce useful results
+export class LowConfidenceOCRError extends Error {
+  constructor(avgConfidence: number) {
+    super(`OCR confidence too low: ${avgConfidence.toFixed(2)}`)
+    this.name = 'LowConfidenceOCRError'
+  }
+}
+
 const OCR_PROMPT = `You are a medical billing expert extracting line items from a hospital or medical bill.
+
+FIRST, determine if this is a medical/healthcare bill:
+- Set "documentType" to "medical_bill" if it contains medical services, CPT codes, hospital charges, doctor fees, lab fees, etc.
+- Set "documentType" to "other" if it's a grocery receipt, restaurant bill, utility bill, personal photo, screenshot, or any non-medical document.
+
+If documentType is "other", still return valid JSON with empty lineItems but set documentType correctly.
 
 Extract ALL line items from this bill. For each item return:
 - description: plain English description of the service
@@ -30,6 +52,7 @@ IMPORTANT RULES:
 
 Return ONLY valid JSON in this exact format:
 {
+  "documentType": "medical_bill" | "other",
   "provider": { "name": string, "state": string|null, "address": string|null },
   "patient": { "name": string|null },
   "dateOfService": string|null,
@@ -47,31 +70,54 @@ export async function extractBillData(
 ): Promise<BillData> {
   const isImage = mediaType.startsWith('image/')
 
-  const text = await llm(OCR_PRIMARY, OCR_FALLBACK, {
+  const llmRequest = {
     prompt: OCR_PROMPT,
     maxTokens: 4096,
     ...(isImage
       ? { image: { base64: fileBase64, mediaType } }
       : { document: { base64: fileBase64, mediaType } }),
-  })
-
-  // Extract JSON from response (may have markdown code fences)
-  const jsonMatch = text.match(/\{[\s\S]*\}/)
-  if (!jsonMatch) {
-    throw new Error('Failed to extract JSON from OCR response')
   }
 
-  const parsed = JSON.parse(jsonMatch[0])
+  // Try to parse the LLM response, with one retry on bad JSON
+  let parsed: Record<string, unknown> | null = null
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    const text = await llm(OCR_PRIMARY, OCR_FALLBACK, llmRequest)
 
-  const lineItems: BillLineItem[] = (parsed.lineItems ?? []).map(
-    (item: {
-      description: string
-      code?: string | null
-      quantity?: number
-      unitCharge?: number
-      totalCharge?: number
-      confidence?: number
-    }) => ({
+    const jsonMatch = text.match(/\{[\s\S]*\}/)
+    if (!jsonMatch) {
+      if (attempt === 2) throw new Error("We couldn't read your bill. Please try again with a clearer image or PDF.")
+      console.warn('[OCR] No JSON found in response, retrying...')
+      continue
+    }
+
+    try {
+      parsed = JSON.parse(jsonMatch[0]) as Record<string, unknown>
+      break
+    } catch {
+      if (attempt === 2) throw new Error("We couldn't read your bill. Please try again with a clearer image or PDF.")
+      console.warn('[OCR] JSON parse failed, retrying...')
+    }
+  }
+
+  if (!parsed) {
+    throw new Error("We couldn't read your bill. Please try again with a clearer image or PDF.")
+  }
+
+  // Non-medical bill detection
+  if (parsed.documentType === 'other') {
+    throw new NonMedicalBillError()
+  }
+
+  type RawLineItem = {
+    description: string
+    code?: string | null
+    quantity?: number
+    unitCharge?: number
+    totalCharge?: number
+    confidence?: number
+  }
+  const lineItems: BillLineItem[] = ((parsed.lineItems as RawLineItem[]) ?? []).map(
+    (item) => ({
       description: item.description ?? 'Unknown service',
       code: item.code ?? undefined,
       quantity: Number(item.quantity ?? 1),
@@ -81,16 +127,27 @@ export async function extractBillData(
     })
   )
 
+  // Low confidence check — if average confidence < 0.4, the image is too unclear
+  if (lineItems.length > 0) {
+    const avgConfidence = lineItems.reduce((sum, item) => sum + item.confidence, 0) / lineItems.length
+    if (avgConfidence < 0.4) {
+      throw new LowConfidenceOCRError(avgConfidence)
+    }
+  }
+
+  const provider = parsed.provider as { name?: string; state?: string; address?: string } | undefined
+  const patient = parsed.patient as { name?: string } | undefined
+
   return {
     provider: {
-      name: parsed.provider?.name ?? 'Unknown Provider',
-      state: parsed.provider?.state ?? undefined,
-      address: parsed.provider?.address ?? undefined,
+      name: provider?.name ?? 'Unknown Provider',
+      state: provider?.state ?? undefined,
+      address: provider?.address ?? undefined,
     },
     patient: {
-      name: parsed.patient?.name ?? undefined,
+      name: patient?.name ?? undefined,
     },
-    dateOfService: parsed.dateOfService ?? undefined,
+    dateOfService: (parsed.dateOfService as string | undefined) ?? undefined,
     lineItems,
     totalBilled: Number(parsed.totalBilled ?? 0),
     insuranceAdjustment:
