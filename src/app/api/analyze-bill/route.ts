@@ -151,6 +151,10 @@ export async function POST(request: NextRequest) {
         { status: 503 }
       )
     }
+    // Unreadable image/PDF (JSON parse failed after retry)
+    if (error instanceof Error && error.message.includes("couldn't read your bill")) {
+      return NextResponse.json({ error: error.message }, { status: 422 })
+    }
     console.error('Bill analysis error:', error)
     return NextResponse.json(
       { error: 'Something went wrong analyzing your bill. Please try again.' },
