@@ -70,6 +70,13 @@ export default async function LocaleLayout({
               {t('howItWorks')}
             </Link>
             <Link
+              href={`/${locale}/medical-bill-analyzer`}
+              className="header-link text-sm hover:text-white/80 transition-colors hidden sm:inline"
+              style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
+            >
+              Bill Analyzer
+            </Link>
+            <Link
               href={`/${locale}/about`}
               className="header-link text-sm hover:text-white/80 transition-colors hidden sm:inline"
               style={{ fontWeight: 500, fontFamily: 'var(--font-body)' }}
@@ -143,6 +150,11 @@ export default async function LocaleLayout({
                 <li>
                   <Link href={`/${locale}/screener`} className="text-white/60 hover:text-white transition-colors">
                     {tl('checkEligibility')}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={`/${locale}/medical-bill-analyzer`} className="text-white/60 hover:text-white transition-colors">
+                    Bill Analyzer
                   </Link>
                 </li>
               </ul>

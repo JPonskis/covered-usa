@@ -57,26 +57,30 @@ Do not include codes you are not confident about (>80% confidence only).`
  * Look up hospital nonprofit status from our database
  */
 async function lookupHospital(providerName: string, state?: string) {
-  const { data } = await supabaseAdmin
+  const nameFragment = providerName.substring(0, 20)
+
+  // Try with state filter first
+  if (state) {
+    let q = supabaseAdmin
+      .from('hospital_fap_urls')
+      .select('hospital_name, system_name, is_nonprofit, fap_url, income_limit_fpl_percent')
+      .ilike('hospital_name', `%${nameFragment}%`)
+      .eq('state', state)
+      .limit(1)
+      .single()
+    const { data } = await q
+    if (data) return data
+  }
+
+  // Fallback: name match without state
+  const { data: fallback } = await supabaseAdmin
     .from('hospital_fap_urls')
     .select('hospital_name, system_name, is_nonprofit, fap_url, income_limit_fpl_percent')
-    .ilike('hospital_name', `%${providerName.substring(0, 20)}%`)
-    .eq('state', state ?? '')
+    .ilike('hospital_name', `%${providerName.substring(0, 15)}%`)
     .limit(1)
     .single()
 
-  if (!data) {
-    // Try system name match without state
-    const { data: fallback } = await supabaseAdmin
-      .from('hospital_fap_urls')
-      .select('hospital_name, system_name, is_nonprofit, fap_url, income_limit_fpl_percent')
-      .ilike('hospital_name', `%${providerName.substring(0, 15)}%`)
-      .limit(1)
-      .single()
-
-    return fallback
-  }
-  return data
+  return fallback ?? null
 }
 
 /**
