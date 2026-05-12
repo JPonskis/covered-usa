@@ -136,6 +136,7 @@ export async function POST(request: NextRequest) {
       name: billData.patient.name,
       address: billData.patient.address,
       accountNumber: billData.patient.accountNumber,
+      providerState: billData.provider.state,
     }
 
     return NextResponse.json({ ...result, resultId, extractedPatient })

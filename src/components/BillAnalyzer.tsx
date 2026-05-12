@@ -3,6 +3,8 @@
 import { useState, useRef } from 'react'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 import { getFPLPercent } from '@/lib/bill-analyzer/types'
+import { checkEligibility } from '@/lib/eligibility'
+import type { ProgramResult } from '@/lib/eligibility'
 
 type Step = 'upload' | 'about-you' | 'analyzing' | 'results' | 'letter'
 type InsuranceStatus = 'yes' | 'no' | 'not_sure' | ''
@@ -39,7 +41,7 @@ export default function BillAnalyzer() {
   const [result, setResult] = useState<AnalysisResult | null>(null)
   const [resultId, setResultId] = useState<string | null>(null)
   const [extractedPatient, setExtractedPatient] = useState<{
-    name?: string; address?: string; accountNumber?: string
+    name?: string; address?: string; accountNumber?: string; providerState?: string
   } | null>(null)
 
   // Letter form (shown inline before generating)
@@ -246,50 +248,39 @@ export default function BillAnalyzer() {
     setExtractedPatient(null)
   }
 
-  function getHealthCTA() {
-    if (insuranceStatus === 'no') {
-      if (fplPct && fplPct <= 138) {
-        return {
-          headline: 'You likely qualify for free Medicaid coverage',
-          body: `At ${fplPct}% of the federal poverty level, you're likely eligible for Medicaid — which would cover future medical bills at little to no cost.`,
-          cta: 'Check Medicaid Eligibility',
-          badge: 'Likely eligible',
-          badgeColor: 'var(--success)',
-        }
-      }
-      if (fplPct && fplPct <= 400) {
-        return {
-          headline: 'You likely qualify for subsidized health insurance',
-          body: `At ${fplPct}% of the federal poverty level, you're likely eligible for ACA marketplace plans with subsidies that significantly reduce your monthly premium.`,
-          cta: 'See Your Plan Options',
-          badge: 'Likely eligible',
-          badgeColor: 'var(--success)',
-        }
-      }
-      return {
-        headline: "You don't have insurance — let's change that",
-        body: "Without coverage, bills like this are the norm. Check what free or subsidized plans you qualify for. Takes 3 minutes.",
-        cta: 'Check What You Qualify For',
-        badge: null,
-        badgeColor: null,
-      }
+  function getProgramCTAUrl(id: string): string {
+    if (id === 'aca') return 'https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_source=coveredusa&utm_medium=bill_analyzer'
+    if (id === 'medicaid') return 'https://www.healthcare.gov/medicaid-chip/'
+    if (id === 'chip') return 'https://www.healthcare.gov/medicaid-chip/'
+    if (id === 'va-healthcare') return 'https://www.va.gov/health-care/apply-for-health-care-form-10-10ez/introduction'
+    return '/en/screener'
+  }
+
+  function getProgramCTAText(id: string): string {
+    if (id === 'medicaid') return 'Apply for Medicaid'
+    if (id === 'aca') return 'See My Plan Options'
+    if (id === 'chip') return 'Apply for CHIP'
+    if (id === 'va-healthcare') return 'Apply for VA Healthcare'
+    return 'Check Eligibility'
+  }
+
+  function getProgramDescription(id: string): string {
+    if (id === 'medicaid') return 'Free or near-free health coverage. Would have covered most of this bill.'
+    if (id === 'aca') return 'Monthly subsidies that make marketplace plans affordable. Future hospital bills cost a fraction of this.'
+    if (id === 'chip') return 'Low or no-cost coverage for children under 19.'
+    if (id === 'va-healthcare') return 'Comprehensive federal healthcare through the VA — at little to no cost.'
+    return 'Coverage that reduces what you pay out of pocket.'
+  }
+
+  function getBillCTAHeadline(top: ProgramResult | undefined, totalBilled: number): string {
+    const billed = `$${totalBilled.toLocaleString()}`
+    if (!top) return "Don't get hit with a bill like this again"
+    if (insuranceStatus === 'no' || insuranceStatus === '') {
+      if (top.id === 'medicaid') return `That ${billed} bill could have been $0`
+      if (top.id === 'aca') return `With coverage, a ${billed} bill costs far less`
     }
-    if (insuranceStatus === 'yes') {
-      return {
-        headline: 'Even with insurance, you may qualify for better coverage',
-        body: 'If you have a high deductible or pay high premiums, you might qualify for a lower-cost plan through the ACA marketplace.',
-        cta: 'See If You Can Do Better',
-        badge: null,
-        badgeColor: null,
-      }
-    }
-    return {
-      headline: 'Check what health coverage you qualify for',
-      body: "Many people dealing with unexpected medical bills qualify for free or low-cost health insurance they don't know about.",
-      cta: 'Check Your Eligibility',
-      badge: null,
-      badgeColor: null,
-    }
+    if (insuranceStatus === 'yes') return "Your insurance may not be protecting you enough"
+    return "Don't get hit with a bill like this again"
   }
 
   // ── STEP 1: UPLOAD ──────────────────────────────────────────
@@ -842,7 +833,28 @@ export default function BillAnalyzer() {
 
   // ── LETTER ──────────────────────────────────────────────────
   if (step === 'letter') {
-    const cta = getHealthCTA()
+    // Compute inline eligibility using data already collected
+    const billState = extractedPatient?.providerState ?? 'TX'
+    const hasEnoughForEligibility = incomeNum > 0 && householdSizeNum > 0
+    let eligiblePrograms: ProgramResult[] = []
+    if (hasEnoughForEligibility) {
+      const { programs } = checkEligibility({
+        state: billState,
+        age: 35,
+        householdSize: householdSizeNum,
+        annualIncome: incomeNum,
+        isPregnant: false,
+        hasDisability: false,
+        isVeteran: false,
+        currentlyInsured: insuranceStatus === 'yes',
+        insuranceSource: insuranceStatus === 'yes' ? 'employer' : undefined,
+        numChildren: 0,
+      })
+      eligiblePrograms = programs.filter(p => p.eligible === true || p.eligible === 'maybe').slice(0, 2)
+    }
+    const topProgram = eligiblePrograms[0]
+    const totalBilled = result?.summary?.totalBilled ?? 0
+    const ctaHeadline = getBillCTAHeadline(topProgram, totalBilled)
     const screenerUrl = `/en/screener?utm_source=bill_analyzer&utm_medium=letter${incomeNum ? `&income=${incomeNum}` : ''}${householdSize ? `&household=${householdSize}` : ''}`
 
     return (
@@ -873,13 +885,9 @@ export default function BillAnalyzer() {
             >
               {letterText}
             </div>
-            {/* Scroll fade */}
             <div
               className="pointer-events-none absolute bottom-0 left-0 right-0"
-              style={{
-                height: '48px',
-                background: 'linear-gradient(transparent, rgba(255,255,255,0.95))',
-              }}
+              style={{ height: '48px', background: 'linear-gradient(transparent, rgba(255,255,255,0.95))' }}
             />
           </div>
           <div className="px-6 py-4 border-t border-[var(--border-light)]">
@@ -893,27 +901,66 @@ export default function BillAnalyzer() {
           </div>
         </div>
 
-        {/* Personalized health coverage CTA */}
-        <div
-          className="rounded-xl p-6 border"
-          style={{ background: '#f0fdfa', borderColor: '#99f6e4' }}
-        >
-          <div className="flex items-start justify-between gap-3 mb-3">
-            <h3 className="font-semibold text-[var(--text-primary)]">{cta.headline}</h3>
-            {cta.badge && (
-              <span className="shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ background: cta.badgeColor ?? 'var(--success)' }}>
-                {cta.badge}
-              </span>
-            )}
+        {/* Inline health coverage results */}
+        <div className="rounded-xl overflow-hidden border" style={{ borderColor: '#99f6e4' }}>
+          {/* Header */}
+          <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, #134e4a, #0d9488)' }}>
+            <p className="text-white font-bold text-lg leading-snug">{ctaHeadline}</p>
+            <p className="text-white/80 text-sm mt-1">
+              {eligiblePrograms.length > 0
+                ? "Based on what you told us, here's what you likely qualify for."
+                : "Find out what free or low-cost coverage you qualify for — takes 2 minutes."}
+            </p>
           </div>
-          <p className="text-sm text-[var(--text-secondary)] mb-4 leading-relaxed">{cta.body}</p>
-          <a
-            href={screenerUrl}
-            className="inline-block w-full text-center py-3.5 px-4 rounded-lg font-medium text-white transition-colors"
-            style={{ backgroundColor: '#0d9488' }}
-          >
-            {cta.cta}
-          </a>
+
+          {/* Program cards */}
+          {eligiblePrograms.length > 0 ? (
+            <div className="bg-white divide-y divide-[var(--border-light)]">
+              {eligiblePrograms.map((program) => (
+                <div key={program.id} className="px-6 py-5">
+                  <div className="flex items-start justify-between gap-3 mb-2">
+                    <p className="font-semibold text-[var(--text-primary)]">{program.name}</p>
+                    <span
+                      className="shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full text-white"
+                      style={{ background: program.eligible === true ? 'var(--success)' : '#f59e0b' }}
+                    >
+                      {program.eligible === true ? 'Likely eligible' : 'May qualify'}
+                    </span>
+                  </div>
+                  {program.estimatedValue > 0 && (
+                    <p className="text-2xl font-bold mb-1" style={{ color: '#0d9488' }}>
+                      ${program.estimatedValue.toLocaleString()}<span className="text-sm font-normal text-[var(--text-muted)]">/year</span>
+                    </p>
+                  )}
+                  <p className="text-sm text-[var(--text-secondary)] mb-4">{getProgramDescription(program.id)}</p>
+                  <a
+                    href={getProgramCTAUrl(program.id)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center py-3 px-4 rounded-lg font-semibold text-white text-sm"
+                    style={{ backgroundColor: '#0d9488' }}
+                  >
+                    {getProgramCTAText(program.id)}
+                  </a>
+                </div>
+              ))}
+              <div className="px-6 py-4" style={{ background: '#f0fdfa' }}>
+                <a href={screenerUrl} className="text-sm font-medium" style={{ color: '#0d9488' }}>
+                  See all programs you qualify for →
+                </a>
+              </div>
+            </div>
+          ) : (
+            <div className="bg-white px-6 py-5">
+              <a
+                href={screenerUrl}
+                className="block w-full text-center py-3.5 px-4 rounded-lg font-semibold text-white text-sm"
+                style={{ backgroundColor: '#0d9488' }}
+              >
+                Check What You Qualify For
+              </a>
+            </div>
+          )}
         </div>
 
         <button
