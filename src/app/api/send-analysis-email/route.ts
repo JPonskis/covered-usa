@@ -1,6 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { jsPDF } from 'jspdf'
+import {
+  Document,
+  Packer,
+  Paragraph,
+  TextRun,
+} from 'docx'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 import {
   buildBillAnalysisSubject,
@@ -11,7 +17,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 
 export const maxDuration = 15
 
-function generateLetterPdf(letterText: string, patientName?: string): Buffer {
+function generateLetterPdf(letterText: string): Buffer {
   const doc = new jsPDF({ unit: 'pt', format: 'letter' })
   const pageWidth = doc.internal.pageSize.getWidth()
   const margin = 60
@@ -33,9 +39,42 @@ function generateLetterPdf(letterText: string, patientName?: string): Buffer {
     y += lineHeight
   }
 
-  // Return as Buffer (Node.js)
   const arrayBuffer = doc.output('arraybuffer')
   return Buffer.from(arrayBuffer)
+}
+
+function generateLetterDocx(letterText: string): Promise<Buffer> {
+  const paragraphs = letterText.split('\n').map(line => {
+    // Detect headings (all caps lines like "SUMMARY OF FINDINGS")
+    const isHeading = line === line.toUpperCase() && line.trim().length > 3 && /[A-Z]/.test(line)
+
+    return new Paragraph({
+      children: [
+        new TextRun({
+          text: line,
+          font: 'Calibri',
+          size: isHeading ? 24 : 22, // half-points: 12pt / 11pt
+          bold: isHeading,
+        }),
+      ],
+      spacing: { after: line.trim() === '' ? 200 : 80 },
+    })
+  })
+
+  const doc = new Document({
+    sections: [
+      {
+        properties: {
+          page: {
+            margin: { top: 1440, bottom: 1440, left: 1440, right: 1440 }, // 1 inch in twips
+          },
+        },
+        children: paragraphs,
+      },
+    ],
+  })
+
+  return Packer.toBuffer(doc)
 }
 
 export async function POST(request: NextRequest) {
@@ -62,14 +101,20 @@ export async function POST(request: NextRequest) {
       letterGenerated: !!letterText,
     })
 
-    // Build attachments array
+    // Build attachments: PDF + DOCX
     const attachments: Array<{ filename: string; content: Buffer }> = []
 
     if (letterText) {
-      const pdfBuffer = generateLetterPdf(letterText, firstName)
+      const pdfBuffer = generateLetterPdf(letterText)
       attachments.push({
         filename: 'medical-bill-dispute-letter.pdf',
         content: pdfBuffer,
+      })
+
+      const docxBuffer = await generateLetterDocx(letterText)
+      attachments.push({
+        filename: 'medical-bill-dispute-letter.docx',
+        content: docxBuffer,
       })
     }
 

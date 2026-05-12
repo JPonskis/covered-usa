@@ -24,6 +24,7 @@ export default function BillAnalyzer() {
   const [file, setFile] = useState<File | null>(null)
   const [firstName, setFirstName] = useState('')
   const [email, setEmail] = useState('')
+  const [hospitalName, setHospitalName] = useState('')
   const [income, setIncome] = useState('')
   const [householdSize, setHouseholdSize] = useState('')
   const [result, setResult] = useState<AnalysisResult | null>(null)
@@ -71,6 +72,10 @@ export default function BillAnalyzer() {
     }
     if (!email.trim() || !validateEmail(email)) {
       setValidationError('Please enter a valid email address.')
+      return
+    }
+    if (!hospitalName.trim()) {
+      setValidationError('Please enter the hospital name from your bill.')
       return
     }
     setValidationError('')
@@ -126,7 +131,10 @@ export default function BillAnalyzer() {
         body: JSON.stringify({
           email,
           firstName,
-          analysis: result,
+          analysis: result ? {
+            ...result,
+            provider: { ...result.provider, name: hospitalName || result.provider.name },
+          } : result,
           letterText: letterContent,
         }),
       })
@@ -143,7 +151,13 @@ export default function BillAnalyzer() {
       const res = await fetch('/api/generate-letter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ analysis: result, patientName: firstName }),
+        body: JSON.stringify({
+          analysis: {
+            ...result,
+            provider: { ...result.provider, name: hospitalName || result.provider.name },
+          },
+          patientName: firstName,
+        }),
       })
       const data = await res.json()
       const text = data.text ?? ''
@@ -186,6 +200,7 @@ export default function BillAnalyzer() {
     setLetterText('')
     setAnalyzingStep(0)
     setEmailSent(false)
+    setHospitalName('')
   }
 
   // ── STEP 1: UPLOAD ──────────────────────────────────────────
@@ -333,6 +348,18 @@ export default function BillAnalyzer() {
                 className={inputStyles}
                 placeholder="Your first name"
                 autoComplete="given-name"
+              />
+            </div>
+
+            {/* Hospital */}
+            <div>
+              <label className={labelStyles}>Hospital name</label>
+              <input
+                type="text"
+                value={hospitalName}
+                onChange={e => { setHospitalName(e.target.value); setValidationError('') }}
+                className={inputStyles}
+                placeholder="e.g. Valley Medical Center"
               />
             </div>
 
