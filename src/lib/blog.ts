@@ -12,6 +12,8 @@ function getPostsDirectory(locale?: string): string {
   return baseBlogDir;
 }
 
+export type CTATarget = 'screener' | 'analyzer';
+
 export interface PostFrontmatter {
   title: string;
   description: string;
@@ -20,6 +22,7 @@ export interface PostFrontmatter {
   keywords: string[];
   image?: string;
   lastUpdated?: string;
+  target?: CTATarget;
 }
 
 export interface Post extends PostFrontmatter {
@@ -56,6 +59,7 @@ export function getAllPosts(locale?: string): PostPreview[] {
         keywords: data.keywords || [],
         image: data.image,
         lastUpdated: data.lastUpdated || undefined,
+        target: (data.target === 'analyzer' ? 'analyzer' : 'screener') as CTATarget,
         readingTime: stats.text,
       } as PostPreview;
     })
@@ -92,6 +96,7 @@ export function getPostBySlug(slug: string, locale?: string): Post | null {
         keywords: data.keywords || [],
         image: data.image,
         lastUpdated: data.lastUpdated || undefined,
+        target: (data.target === 'analyzer' ? 'analyzer' : 'screener') as CTATarget,
         content,
         readingTime: stats.text,
       } as Post;

@@ -51,6 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const localizedPages: MetadataRoute.Sitemap = [
     localizedEntry('/', { changeFrequency: 'daily', priority: 1.0 }),
     localizedEntry('/screener', { changeFrequency: 'weekly', priority: 0.95 }),
+    localizedEntry('/medical-bill-analyzer', { changeFrequency: 'weekly', priority: 0.95 }),
     localizedEntry('/blog', { changeFrequency: 'daily', priority: 0.8 }),
     localizedEntry('/about', { changeFrequency: 'monthly', priority: 0.5 }),
     // Reference/data pages (AI citation optimized)

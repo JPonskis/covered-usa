@@ -55,18 +55,52 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-// ─── MID-ARTICLE CTA ──────────────────────────────────────────────────────────
+// ─── CTA COPY (per target × locale) ───────────────────────────────────────────
+// Card layout/styling is identical for both targets. Only the heading, desc,
+// button label, and the destination path change based on post.target.
 
-const MID_CTA = {
-  en: {
-    heading: 'Check if you qualify for health coverage',
-    desc: 'Our free screener checks Medicaid, Medicare, ACA, CHIP, and VA Healthcare in 2 minutes.',
+type CTAVariant = {
+  heading: string;
+  desc: string;
+  midBtn: string;
+  endBtn: string;
+};
+
+const CTA_COPY: Record<'screener' | 'analyzer', { en: CTAVariant; es: CTAVariant }> = {
+  screener: {
+    en: {
+      heading: 'Check if you qualify for health coverage',
+      desc: 'Our free screener checks Medicaid, Medicare, ACA, CHIP, and VA Healthcare in 2 minutes.',
+      midBtn: 'Check eligibility free',
+      endBtn: 'Check My Eligibility — Free',
+    },
+    es: {
+      heading: 'Verifique si califica para cobertura de salud',
+      desc: 'Nuestro evaluador gratuito verifica Medicaid, Medicare, ACA, CHIP y VA Healthcare en 2 minutos.',
+      midBtn: 'Verificar elegibilidad gratis',
+      endBtn: 'Verificar Elegibilidad Gratis',
+    },
   },
-  es: {
-    heading: 'Verifique si califica para cobertura de salud',
-    desc: 'Nuestro evaluador gratuito verifica Medicaid, Medicare, ACA, CHIP y VA Healthcare en 2 minutos.',
+  analyzer: {
+    en: {
+      heading: 'Got a hospital bill? Check it for errors.',
+      desc: 'Our free analyzer flags overcharges, billing errors, and charity care eligibility in 30 seconds.',
+      midBtn: 'Analyze my bill free',
+      endBtn: 'Analyze My Bill — Free',
+    },
+    es: {
+      heading: '¿Tiene una factura de hospital? Revísela.',
+      desc: 'Nuestro analizador gratuito detecta sobrecargos, errores de facturación y opciones de asistencia en 30 segundos.',
+      midBtn: 'Analizar mi factura gratis',
+      endBtn: 'Analizar Mi Factura — Gratis',
+    },
   },
 };
+
+const CTA_PATHS = {
+  screener: 'screener',
+  analyzer: 'medical-bill-analyzer',
+} as const;
 
 // ──────────────────────────────────────────────────────────────────────────────
 
@@ -85,18 +119,15 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
   const t = {
     backToBlog: isEs ? 'Volver al Blog' : 'Back to Blog',
     guide: isEs ? 'Guía' : 'Guide',
-    ctaTitle: isEs ? '¿Listo para verificar su elegibilidad?' : 'Ready to check your eligibility?',
-    ctaDesc: isEs
-      ? 'Nuestro evaluador gratuito toma 2 minutos y le muestra para qué cobertura de salud puede calificar.'
-      : 'Our free screener takes 2 minutes and shows you what health coverage you may qualify for.',
-    ctaBtn: isEs ? 'Verificar Elegibilidad Gratis' : 'Check My Eligibility — Free',
     relatedGuides: isEs ? 'Guías Relacionadas' : 'Related Guides',
     home: isEs ? 'Inicio' : 'Home',
     screener: isEs ? 'Evaluador' : 'Screener',
     blog: 'Blog',
   };
 
-  const midCta = isEs ? MID_CTA.es : MID_CTA.en;
+  const ctaTarget: 'screener' | 'analyzer' = post.target === 'analyzer' ? 'analyzer' : 'screener';
+  const cta = CTA_COPY[ctaTarget][isEs ? 'es' : 'en'];
+  const ctaPath = CTA_PATHS[ctaTarget];
 
   // JSON-LD schemas
   const articleSchema = {
@@ -245,18 +276,18 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
           <div className="my-10 rounded-2xl border-2 p-6 flex flex-col sm:flex-row items-center gap-5" style={{ borderColor: 'var(--teal)', background: 'var(--cream)' }}>
             <div className="flex-1 min-w-0">
               <p className="font-bold text-lg mb-1" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display), Georgia, serif' }}>
-                {midCta.heading}
+                {cta.heading}
               </p>
               <p className="text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
-                {midCta.desc}
+                {cta.desc}
               </p>
             </div>
             <Link
-              href={`/${locale}/screener?utm_source=blog&utm_medium=mid-cta&utm_campaign=${encodeURIComponent(slug)}`}
+              href={`/${locale}/${ctaPath}?utm_source=blog&utm_medium=mid-cta&utm_campaign=${encodeURIComponent(slug)}`}
               className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm whitespace-nowrap transition-all hover:opacity-90"
               style={{ background: 'var(--teal)', color: '#fff', fontFamily: 'var(--font-display), Georgia, serif' }}
             >
-              {isEs ? 'Verificar elegibilidad gratis' : 'Check eligibility free'}
+              {cta.midBtn}
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -283,18 +314,18 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
         <div className="rounded-2xl border-2 p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-5" style={{ borderColor: 'var(--teal)', background: 'var(--cream)' }}>
           <div className="flex-1 min-w-0">
             <p className="font-bold text-xl mb-2" style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display), Georgia, serif' }}>
-              {midCta.heading}
+              {cta.heading}
             </p>
             <p className="text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
-              {midCta.desc}
+              {cta.desc}
             </p>
           </div>
           <Link
-            href={`/${locale}/screener?utm_source=blog&utm_medium=article&utm_campaign=${encodeURIComponent(slug)}`}
+            href={`/${locale}/${ctaPath}?utm_source=blog&utm_medium=article&utm_campaign=${encodeURIComponent(slug)}`}
             className="flex-shrink-0 inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm whitespace-nowrap transition-all hover:opacity-90"
             style={{ background: 'var(--teal)', color: '#fff', fontFamily: 'var(--font-display), Georgia, serif' }}
           >
-            {t.ctaBtn}
+            {cta.endBtn}
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>

@@ -41,29 +41,54 @@ export function getFAQSchema(faqs: { question: string; answer: string }[]) {
 }
 
 export function getWebApplicationSchema() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    name: 'CoveredUSA Health Insurance Eligibility Screener',
-    url: `${BASE_URL}/en/screener`,
-    applicationCategory: 'HealthApplication',
-    operatingSystem: 'Any',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'USD',
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'CoveredUSA Health Insurance Eligibility Screener',
+      url: `${BASE_URL}/en/screener`,
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'Any',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+      },
+      description: 'Free 2-minute screener to check eligibility for Medicaid, Medicare, ACA marketplace plans, and CHIP. Works for all 50 US states. Available in Spanish.',
+      featureList: [
+        'Medicaid eligibility check',
+        'ACA marketplace eligibility',
+        'Medicare eligibility check',
+        'CHIP eligibility for children',
+        'All 50 states supported',
+        'English and Spanish',
+        'Anonymous and free',
+      ],
     },
-    description: 'Free 2-minute screener to check eligibility for Medicaid, Medicare, ACA marketplace plans, and CHIP. Works for all 50 US states. Available in Spanish.',
-    featureList: [
-      'Medicaid eligibility check',
-      'ACA marketplace eligibility',
-      'Medicare eligibility check',
-      'CHIP eligibility for children',
-      'All 50 states supported',
-      'English and Spanish',
-      'Anonymous and free',
-    ],
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'CoveredUSA Medical Bill Analyzer',
+      url: `${BASE_URL}/en/medical-bill-analyzer`,
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'Any',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+      },
+      description: 'Free tool that analyzes hospital bills for overcharges, billing errors, and charity care eligibility. Uploads a bill, compares each line to Medicare rates, and generates a dispute letter.',
+      featureList: [
+        'Line-by-line Medicare fair-price comparison',
+        'Billing error detection (duplicates, unbundling, upcoding)',
+        '501(r) charity care eligibility check',
+        'Auto-generated dispute letter',
+        'No signup required',
+        'Zero data retention',
+        'PDF and image upload',
+      ],
+    },
+  ];
 }
 
 export function getHowToSchema(locale: string) {
