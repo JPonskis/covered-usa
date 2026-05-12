@@ -1,6 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { jsPDF } from 'jspdf'
+
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*\n]+)\*/g, '$1')
+    .replace(/_{2}([^_]+)_{2}/g, '$1')
+    .replace(/_([^_\n]+)_/g, '$1')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/^[-*+]\s+/gm, '  ')
+    .trim()
+}
 import {
   Document,
   Packer,
@@ -107,13 +118,15 @@ export async function POST(request: NextRequest) {
     const attachments: Array<{ filename: string; content: Buffer }> = []
 
     if (letterText) {
-      const pdfBuffer = generateLetterPdf(letterText)
+      const cleanLetter = stripMarkdown(letterText)
+
+      const pdfBuffer = generateLetterPdf(cleanLetter)
       attachments.push({
         filename: 'medical-bill-dispute-letter.pdf',
         content: pdfBuffer,
       })
 
-      const docxBuffer = await generateLetterDocx(letterText)
+      const docxBuffer = await generateLetterDocx(cleanLetter)
       attachments.push({
         filename: 'medical-bill-dispute-letter.docx',
         content: docxBuffer,

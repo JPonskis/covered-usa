@@ -2,8 +2,10 @@
 
 import { useState, useRef } from 'react'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
+import { getFPLPercent } from '@/lib/bill-analyzer/types'
 
 type Step = 'upload' | 'about-you' | 'analyzing' | 'results' | 'letter'
+type InsuranceStatus = 'yes' | 'no' | 'not_sure' | ''
 
 const TOTAL_FORM_STEPS = 2
 const ANALYZING_STEPS = [
@@ -22,24 +24,48 @@ const labelStyles = 'block text-sm font-medium text-[var(--text-primary)] mb-2'
 export default function BillAnalyzer() {
   const [step, setStep] = useState<Step>('upload')
   const [file, setFile] = useState<File | null>(null)
+
+  // About You
   const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
+  const [emailConsent, setEmailConsent] = useState(false)
   const [hospitalName, setHospitalName] = useState('')
+  const [insuranceStatus, setInsuranceStatus] = useState<InsuranceStatus>('')
   const [income, setIncome] = useState('')
   const [householdSize, setHouseholdSize] = useState('')
+
+  // Analysis
   const [result, setResult] = useState<AnalysisResult | null>(null)
-  const [error, setError] = useState('')
-  const [validationError, setValidationError] = useState('')
-  const [analyzingStep, setAnalyzingStep] = useState(0)
+  const [resultId, setResultId] = useState<string | null>(null)
+  const [extractedPatient, setExtractedPatient] = useState<{
+    name?: string; address?: string; accountNumber?: string
+  } | null>(null)
+
+  // Letter form (shown inline before generating)
+  const [letterFormOpen, setLetterFormOpen] = useState(false)
+  const [letterFormName, setLetterFormName] = useState('')
+  const [letterFormAddress, setLetterFormAddress] = useState('')
+  const [letterFormAccountNumber, setLetterFormAccountNumber] = useState('')
+
+  // Letter result
   const [letterLoading, setLetterLoading] = useState(false)
   const [letterText, setLetterText] = useState('')
   const [copied, setCopied] = useState(false)
   const [emailSent, setEmailSent] = useState(false)
-  const [resultId, setResultId] = useState<string | null>(null)
+
+  // UI state
+  const [error, setError] = useState('')
+  const [validationError, setValidationError] = useState('')
+  const [analyzingStep, setAnalyzingStep] = useState(0)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const formStep = step === 'upload' ? 1 : step === 'about-you' ? 2 : 0
   const progressPct = formStep > 0 ? Math.round((formStep / TOTAL_FORM_STEPS) * 100) : 0
+
+  const incomeNum = income ? parseInt(income.replace(/[^0-9]/g, ''), 10) : 0
+  const householdSizeNum = householdSize ? parseInt(householdSize, 10) : 0
+  const fplPct = incomeNum && householdSizeNum ? getFPLPercent(incomeNum, householdSizeNum) : null
 
   function handleFileSelect(f: File) {
     setFile(f)
@@ -66,7 +92,6 @@ export default function BillAnalyzer() {
   }
 
   async function handleAnalyze() {
-    // Validate about-you fields
     if (!firstName.trim()) {
       setValidationError('Please enter your first name.')
       return
@@ -114,10 +139,25 @@ export default function BillAnalyzer() {
         return
       }
 
-      const data = await res.json() as AnalysisResult & { resultId?: string }
-      const { resultId: rid, ...analysisData } = data
+      const data = await res.json() as AnalysisResult & {
+        resultId?: string
+        extractedPatient?: { name?: string; address?: string; accountNumber?: string }
+      }
+      const { resultId: rid, extractedPatient: ep, ...analysisData } = data
       setResult(analysisData)
       setResultId(rid ?? null)
+
+      if (ep) {
+        setExtractedPatient(ep)
+        // Pre-fill letter form fields with OCR data
+        const fullName = [firstName, lastName].filter(Boolean).join(' ')
+        setLetterFormName(ep.name ?? fullName)
+        setLetterFormAddress(ep.address ?? '')
+        setLetterFormAccountNumber(ep.accountNumber ?? '')
+      } else {
+        setLetterFormName([firstName, lastName].filter(Boolean).join(' '))
+      }
+
       setStep('results')
     } catch {
       clearInterval(interval)
@@ -135,6 +175,7 @@ export default function BillAnalyzer() {
           email,
           firstName,
           resultId,
+          emailConsent,
           analysis: result ? {
             ...result,
             provider: { ...result.provider, name: hospitalName || result.provider.name },
@@ -160,15 +201,17 @@ export default function BillAnalyzer() {
             ...result,
             provider: { ...result.provider, name: hospitalName || result.provider.name },
           },
-          patientName: firstName,
+          patientName: letterFormName || [firstName, lastName].filter(Boolean).join(' '),
+          patientAddress: letterFormAddress || undefined,
+          accountNumber: letterFormAccountNumber || undefined,
         }),
       })
       const data = await res.json()
       const text = data.text ?? ''
       setLetterText(text)
+      setLetterFormOpen(false)
       setStep('letter')
 
-      // Fire email in background after letter is ready
       if (email && text) {
         sendAnalysisEmail(text)
       }
@@ -177,16 +220,6 @@ export default function BillAnalyzer() {
     } finally {
       setLetterLoading(false)
     }
-  }
-
-  function downloadLetter() {
-    const blob = new Blob([letterText], { type: 'text/plain' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = 'medical-bill-dispute-letter.txt'
-    a.click()
-    URL.revokeObjectURL(url)
   }
 
   function copyLetter() {
@@ -202,10 +235,61 @@ export default function BillAnalyzer() {
     setError('')
     setValidationError('')
     setLetterText('')
+    setLetterFormOpen(false)
+    setLetterFormName('')
+    setLetterFormAddress('')
+    setLetterFormAccountNumber('')
     setAnalyzingStep(0)
     setEmailSent(false)
     setHospitalName('')
     setResultId(null)
+    setExtractedPatient(null)
+  }
+
+  function getHealthCTA() {
+    if (insuranceStatus === 'no') {
+      if (fplPct && fplPct <= 138) {
+        return {
+          headline: 'You likely qualify for free Medicaid coverage',
+          body: `At ${fplPct}% of the federal poverty level, you're likely eligible for Medicaid — which would cover future medical bills at little to no cost.`,
+          cta: 'Check Medicaid Eligibility',
+          badge: 'Likely eligible',
+          badgeColor: 'var(--success)',
+        }
+      }
+      if (fplPct && fplPct <= 400) {
+        return {
+          headline: 'You likely qualify for subsidized health insurance',
+          body: `At ${fplPct}% of the federal poverty level, you're likely eligible for ACA marketplace plans with subsidies that significantly reduce your monthly premium.`,
+          cta: 'See Your Plan Options',
+          badge: 'Likely eligible',
+          badgeColor: 'var(--success)',
+        }
+      }
+      return {
+        headline: "You don't have insurance — let's change that",
+        body: "Without coverage, bills like this are the norm. Check what free or subsidized plans you qualify for. Takes 3 minutes.",
+        cta: 'Check What You Qualify For',
+        badge: null,
+        badgeColor: null,
+      }
+    }
+    if (insuranceStatus === 'yes') {
+      return {
+        headline: 'Even with insurance, you may qualify for better coverage',
+        body: 'If you have a high deductible or pay high premiums, you might qualify for a lower-cost plan through the ACA marketplace.',
+        cta: 'See If You Can Do Better',
+        badge: null,
+        badgeColor: null,
+      }
+    }
+    return {
+      headline: 'Check what health coverage you qualify for',
+      body: "Many people dealing with unexpected medical bills qualify for free or low-cost health insurance they don't know about.",
+      cta: 'Check Your Eligibility',
+      badge: null,
+      badgeColor: null,
+    }
   }
 
   // ── STEP 1: UPLOAD ──────────────────────────────────────────
@@ -286,18 +370,16 @@ export default function BillAnalyzer() {
             </div>
           </div>
 
-          {/* Validation error */}
           {validationError && (
             <div className="mt-4 p-4 bg-amber-50 border border-amber-200 text-amber-700 rounded-lg text-sm">
               {validationError}
             </div>
           )}
 
-          {/* Continue button */}
           <div className="mt-6">
             <button
               onClick={goToAboutYou}
-              className="w-full py-3.5 px-4 rounded-lg font-medium transition-colors text-white disabled:opacity-40 disabled:cursor-not-allowed"
+              className="w-full py-3.5 px-4 rounded-lg font-medium transition-colors text-white"
               style={{ backgroundColor: '#0d9488' }}
               onMouseEnter={e => e.currentTarget.style.backgroundColor = '#0f766e'}
               onMouseLeave={e => e.currentTarget.style.backgroundColor = '#0d9488'}
@@ -318,7 +400,6 @@ export default function BillAnalyzer() {
   if (step === 'about-you') {
     return (
       <div className="max-w-2xl mx-auto">
-        {/* Progress */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-3">
             <div>
@@ -343,17 +424,30 @@ export default function BillAnalyzer() {
           </div>
 
           <div className="space-y-5">
-            {/* Name */}
-            <div>
-              <label className={labelStyles}>First name</label>
-              <input
-                type="text"
-                value={firstName}
-                onChange={e => { setFirstName(e.target.value); setValidationError('') }}
-                className={inputStyles}
-                placeholder="Your first name"
-                autoComplete="given-name"
-              />
+            {/* Name row */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className={labelStyles}>First name</label>
+                <input
+                  type="text"
+                  value={firstName}
+                  onChange={e => { setFirstName(e.target.value); setValidationError('') }}
+                  className={inputStyles}
+                  placeholder="First name"
+                  autoComplete="given-name"
+                />
+              </div>
+              <div>
+                <label className={labelStyles}>Last name</label>
+                <input
+                  type="text"
+                  value={lastName}
+                  onChange={e => setLastName(e.target.value)}
+                  className={inputStyles}
+                  placeholder="Last name"
+                  autoComplete="family-name"
+                />
+              </div>
             </div>
 
             {/* Hospital */}
@@ -379,6 +473,43 @@ export default function BillAnalyzer() {
                 placeholder="you@example.com"
                 autoComplete="email"
               />
+              <label className="flex items-start gap-2.5 mt-3 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={emailConsent}
+                  onChange={e => setEmailConsent(e.target.checked)}
+                  className="mt-0.5 w-4 h-4 rounded accent-[#0d9488] shrink-0"
+                />
+                <span className="text-xs text-[var(--text-muted)] leading-relaxed">
+                  Send me occasional updates from CoveredUSA about health coverage options and financial assistance programs.
+                </span>
+              </label>
+            </div>
+
+            {/* Insurance status */}
+            <div>
+              <label className={labelStyles}>Do you currently have health insurance?</label>
+              <div className="grid grid-cols-3 gap-2">
+                {(['yes', 'no', 'not_sure'] as InsuranceStatus[]).map((opt) => {
+                  const labels = { yes: 'Yes', no: 'No', not_sure: "Not sure" }
+                  const selected = insuranceStatus === opt
+                  return (
+                    <button
+                      key={opt}
+                      type="button"
+                      onClick={() => setInsuranceStatus(opt)}
+                      className="py-2.5 px-3 rounded-lg border-2 text-sm font-medium transition-all"
+                      style={{
+                        borderColor: selected ? '#0d9488' : 'var(--border)',
+                        background: selected ? '#f0fdfa' : 'white',
+                        color: selected ? '#0d9488' : 'var(--text-primary)',
+                      }}
+                    >
+                      {labels[opt as keyof typeof labels]}
+                    </button>
+                  )
+                })}
+              </div>
             </div>
 
             {/* Income (optional) */}
@@ -421,27 +552,24 @@ export default function BillAnalyzer() {
                   </div>
                 </div>
                 <p className="text-xs text-[var(--text-muted)] mt-3">
-                  About 60% of hospitals are nonprofits and are required by law to offer financial assistance. Add your income to check if you qualify.
+                  About 60% of hospitals are nonprofits and must offer financial assistance by law. Add your income to check if you qualify.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Error */}
           {error && (
             <div className="mt-4 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">
               {error}
             </div>
           )}
 
-          {/* Validation error */}
           {validationError && (
             <div className="mt-4 p-4 bg-amber-50 border border-amber-200 text-amber-700 rounded-lg text-sm">
               {validationError}
             </div>
           )}
 
-          {/* Navigation */}
           <div className="flex gap-4 mt-6">
             <button
               type="button"
@@ -508,7 +636,6 @@ export default function BillAnalyzer() {
   if (step === 'results' && result) {
     const savings = result.summary.totalOvercharge
     const hasRates = result.summary.lineItemsWithRates > 0
-    const incomeNum = income ? parseInt(income.replace(/[^0-9]/g, ''), 10) : 0
 
     return (
       <div className="max-w-2xl mx-auto space-y-6">
@@ -619,58 +746,83 @@ export default function BillAnalyzer() {
           </div>
         )}
 
-        {/* Contextual monetization: what else you may qualify for */}
-        <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-6">
-          <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-1">
-            Based on your situation
-          </h3>
-          <p className="text-sm text-[var(--text-muted)] mb-4">
-            Beyond disputing this bill, here's what else may help.
-          </p>
-          <div className="space-y-3">
-            {/* Always show the screener link */}
-            <a
-              href={`/en/screener?utm_source=bill_analyzer&utm_medium=results${incomeNum ? `&income=${incomeNum}` : ''}${householdSize ? `&household=${householdSize}` : ''}`}
-              className="block bg-[var(--cream)] border border-[var(--border-light)] rounded-lg p-4 transition-all hover:shadow-md"
-              style={{ textDecoration: 'none' }}
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-semibold text-sm text-[var(--text-primary)]">
-                    {incomeNum > 0 && incomeNum < 50000
-                      ? 'You may qualify for free or low-cost health coverage'
-                      : incomeNum > 0 && incomeNum < 100000
-                      ? 'You may qualify for subsidized health insurance'
-                      : 'Check what health coverage you qualify for'}
-                  </p>
-                  <p className="text-xs text-[var(--text-muted)] mt-0.5">
-                    Free eligibility check. Takes about 3 minutes.
-                  </p>
-                </div>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M9 18l6-6-6-6" />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-
         {/* Generate letter */}
         <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-6">
           <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-1">Dispute this bill</h3>
           <p className="text-sm text-[var(--text-muted)] mb-4">
-            Generate a formal letter to send to the hospital billing department. It cites every overcharge and error found on your bill.
+            Generate a formal dispute letter citing every overcharge and billing error found on your bill.
           </p>
-          <button
-            onClick={handleGetLetter}
-            disabled={letterLoading}
-            className="w-full py-3.5 px-4 rounded-lg font-medium transition-colors text-white disabled:opacity-50 disabled:cursor-not-allowed"
-            style={{ backgroundColor: '#0d9488' }}
-            onMouseEnter={e => { if (!letterLoading) e.currentTarget.style.backgroundColor = '#0f766e' }}
-            onMouseLeave={e => { if (!letterLoading) e.currentTarget.style.backgroundColor = '#0d9488' }}
-          >
-            {letterLoading ? 'Generating letter...' : 'Generate Dispute Letter'}
-          </button>
+
+          {!letterFormOpen ? (
+            <button
+              onClick={() => setLetterFormOpen(true)}
+              className="w-full py-3.5 px-4 rounded-lg font-medium transition-colors text-white"
+              style={{ backgroundColor: '#0d9488' }}
+              onMouseEnter={e => e.currentTarget.style.backgroundColor = '#0f766e'}
+              onMouseLeave={e => e.currentTarget.style.backgroundColor = '#0d9488'}
+            >
+              Generate My Dispute Letter
+            </button>
+          ) : (
+            <div className="space-y-4">
+              {/* OCR disclaimer */}
+              <div className="p-3 rounded-lg text-xs leading-relaxed" style={{ background: '#fefce8', border: '1px solid #fde68a', color: '#92400e' }}>
+                The fields below were pre-filled from your bill using OCR. Please verify they are correct before generating your letter.
+              </div>
+
+              {/* Letter form fields */}
+              <div>
+                <label className={labelStyles}>Your full name</label>
+                <input
+                  type="text"
+                  value={letterFormName}
+                  onChange={e => setLetterFormName(e.target.value)}
+                  className={inputStyles}
+                  placeholder="First Last"
+                />
+              </div>
+              <div>
+                <label className={labelStyles}>Your mailing address</label>
+                <input
+                  type="text"
+                  value={letterFormAddress}
+                  onChange={e => setLetterFormAddress(e.target.value)}
+                  className={inputStyles}
+                  placeholder="123 Main St, City, State 12345"
+                />
+              </div>
+              <div>
+                <label className={labelStyles}>Account number <span className="font-normal text-[var(--text-muted)]">(optional)</span></label>
+                <input
+                  type="text"
+                  value={letterFormAccountNumber}
+                  onChange={e => setLetterFormAccountNumber(e.target.value)}
+                  className={inputStyles}
+                  placeholder="From your bill"
+                />
+              </div>
+
+              <div className="flex gap-3 pt-1">
+                <button
+                  type="button"
+                  onClick={() => setLetterFormOpen(false)}
+                  className="py-3 px-4 rounded-lg font-medium text-sm border-2 border-[var(--border)] text-[var(--text-secondary)] hover:bg-[var(--cream)] transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleGetLetter}
+                  disabled={letterLoading}
+                  className="flex-1 py-3 px-4 rounded-lg font-medium transition-colors text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                  style={{ backgroundColor: '#0d9488' }}
+                  onMouseEnter={e => { if (!letterLoading) e.currentTarget.style.backgroundColor = '#0f766e' }}
+                  onMouseLeave={e => { if (!letterLoading) e.currentTarget.style.backgroundColor = '#0d9488' }}
+                >
+                  {letterLoading ? 'Generating...' : 'Generate & Send Letter'}
+                </button>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Disclaimer */}
@@ -685,61 +837,83 @@ export default function BillAnalyzer() {
 
   // ── LETTER ──────────────────────────────────────────────────
   if (step === 'letter') {
+    const cta = getHealthCTA()
+    const screenerUrl = `/en/screener?utm_source=bill_analyzer&utm_medium=letter${incomeNum ? `&income=${incomeNum}` : ''}${householdSize ? `&household=${householdSize}` : ''}`
+
     return (
       <div className="max-w-2xl mx-auto space-y-6">
+        {/* Letter preview */}
         <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
           <div className="px-6 py-4 border-b border-[var(--border-light)]">
             <h3 className="text-lg font-semibold text-[var(--text-primary)]">Your dispute letter</h3>
-            <p className="text-sm text-[var(--text-muted)]">
-              Review the letter below, then download or copy it.
-              {emailSent && (
-                <span className="block mt-1" style={{ color: 'var(--success)' }}>
-                  A copy has been sent to {email}.
-                </span>
-              )}
-            </p>
+            {emailSent ? (
+              <p className="text-sm mt-0.5 font-medium" style={{ color: 'var(--success)' }}>
+                Sent to {email} — check your inbox for the PDF and Word doc.
+              </p>
+            ) : (
+              <p className="text-sm text-[var(--text-muted)]">Read the letter below. A PDF copy has been sent to your email.</p>
+            )}
           </div>
-          <div className="p-6">
+          <div className="relative">
             <div
-              className="rounded-lg p-6 text-sm leading-relaxed whitespace-pre-wrap overflow-auto max-h-[32rem]"
+              className="p-6 sm:p-8 text-sm leading-relaxed whitespace-pre-wrap overflow-auto"
               style={{
-                background: 'var(--cream)',
+                maxHeight: '420px',
+                background: 'white',
                 color: 'var(--text-secondary)',
-                fontFamily: 'var(--font-body), Georgia, serif',
-                border: '1px solid var(--border-light)',
+                fontFamily: 'Georgia, "Times New Roman", serif',
+                fontSize: '13px',
+                lineHeight: '1.75',
               }}
             >
               {letterText}
             </div>
+            {/* Scroll fade */}
+            <div
+              className="pointer-events-none absolute bottom-0 left-0 right-0"
+              style={{
+                height: '48px',
+                background: 'linear-gradient(transparent, rgba(255,255,255,0.95))',
+              }}
+            />
+          </div>
+          <div className="px-6 py-4 border-t border-[var(--border-light)]">
+            <button
+              onClick={copyLetter}
+              className="text-sm font-medium transition-colors"
+              style={{ color: copied ? 'var(--success)' : 'var(--primary)' }}
+            >
+              {copied ? 'Copied to clipboard' : 'Copy letter to clipboard'}
+            </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <button
-            onClick={downloadLetter}
-            className="py-3.5 px-4 rounded-lg font-medium transition-colors text-white"
+        {/* Personalized health coverage CTA */}
+        <div
+          className="rounded-xl p-6 border"
+          style={{ background: '#f0fdfa', borderColor: '#99f6e4' }}
+        >
+          <div className="flex items-start justify-between gap-3 mb-3">
+            <h3 className="font-semibold text-[var(--text-primary)]">{cta.headline}</h3>
+            {cta.badge && (
+              <span className="shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full text-white" style={{ background: cta.badgeColor ?? 'var(--success)' }}>
+                {cta.badge}
+              </span>
+            )}
+          </div>
+          <p className="text-sm text-[var(--text-secondary)] mb-4 leading-relaxed">{cta.body}</p>
+          <a
+            href={screenerUrl}
+            className="inline-block w-full text-center py-3.5 px-4 rounded-lg font-medium text-white transition-colors"
             style={{ backgroundColor: '#0d9488' }}
-            onMouseEnter={e => e.currentTarget.style.backgroundColor = '#0f766e'}
-            onMouseLeave={e => e.currentTarget.style.backgroundColor = '#0d9488'}
           >
-            Download Letter
-          </button>
-          <button
-            onClick={copyLetter}
-            className="py-3.5 px-4 rounded-lg font-medium transition-colors border-2"
-            style={{
-              borderColor: 'var(--border)',
-              color: copied ? 'var(--success)' : 'var(--text-primary)',
-              backgroundColor: copied ? 'var(--success-light)' : 'transparent',
-            }}
-          >
-            {copied ? 'Copied' : 'Copy to Clipboard'}
-          </button>
+            {cta.cta}
+          </a>
         </div>
 
         <button
           onClick={() => setStep('results')}
-          className="text-sm w-full text-center font-medium transition-colors flex items-center justify-center gap-1"
+          className="text-sm w-full text-center font-medium flex items-center justify-center gap-1"
           style={{ color: 'var(--primary)' }}
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -749,8 +923,7 @@ export default function BillAnalyzer() {
         </button>
 
         <p className="text-xs text-center text-[var(--text-muted)]">
-          This letter is for informational purposes only and does not constitute legal advice.
-          Review carefully before sending.
+          This letter is for informational purposes only and does not constitute legal advice. Review carefully before sending.
         </p>
       </div>
     )

@@ -131,7 +131,14 @@ export async function POST(request: NextRequest) {
       })
       .catch(err => console.error('Failed to save results:', err))
 
-    return NextResponse.json({ ...result, resultId })
+    // Return extracted patient info for pre-filling the letter form (not stored)
+    const extractedPatient = {
+      name: billData.patient.name,
+      address: billData.patient.address,
+      accountNumber: billData.patient.accountNumber,
+    }
+
+    return NextResponse.json({ ...result, resultId, extractedPatient })
   } catch (error) {
     if (error instanceof NonMedicalBillError) {
       return NextResponse.json(

@@ -38,6 +38,8 @@ Also extract:
 - providerState: 2-letter state code if visible
 - providerAddress: full address if visible
 - patientName: patient name if visible (we will NOT store this)
+- patientAddress: patient mailing address if visible (street, city, state, zip)
+- accountNumber: patient account number or billing account number if visible
 - dateOfService: date(s) of service in YYYY-MM-DD format
 - totalBilled: total amount billed (before insurance)
 - insuranceAdjustment: insurance adjustment amount if shown (or null)
@@ -54,7 +56,7 @@ Return ONLY valid JSON in this exact format:
 {
   "documentType": "medical_bill" | "other",
   "provider": { "name": string, "state": string|null, "address": string|null },
-  "patient": { "name": string|null },
+  "patient": { "name": string|null, "address": string|null, "accountNumber": string|null },
   "dateOfService": string|null,
   "lineItems": [
     { "description": string, "code": string|null, "quantity": number, "unitCharge": number, "totalCharge": number, "confidence": number }
@@ -136,7 +138,7 @@ export async function extractBillData(
   }
 
   const provider = parsed.provider as { name?: string; state?: string; address?: string } | undefined
-  const patient = parsed.patient as { name?: string } | undefined
+  const patient = parsed.patient as { name?: string; address?: string; accountNumber?: string } | undefined
 
   return {
     provider: {
@@ -146,6 +148,8 @@ export async function extractBillData(
     },
     patient: {
       name: patient?.name ?? undefined,
+      address: patient?.address ?? undefined,
+      accountNumber: patient?.accountNumber ?? undefined,
     },
     dateOfService: (parsed.dateOfService as string | undefined) ?? undefined,
     lineItems,

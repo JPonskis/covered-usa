@@ -4,13 +4,25 @@ import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 
 export const maxDuration = 30
 
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*([^*]+)\*\*/g, '$1')   // **bold**
+    .replace(/\*([^*\n]+)\*/g, '$1')      // *italic*
+    .replace(/_{2}([^_]+)_{2}/g, '$1')   // __bold__
+    .replace(/_([^_\n]+)_/g, '$1')        // _italic_
+    .replace(/^#{1,6}\s+/gm, '')          // # headings
+    .replace(/^[-*+]\s+/gm, '  ')        // bullet points → indent
+    .trim()
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { analysis, patientName, patientAddress } = body as {
+    const { analysis, patientName, patientAddress, accountNumber } = body as {
       analysis: AnalysisResult
       patientName?: string
       patientAddress?: string
+      accountNumber?: string
     }
 
     if (!analysis) {
@@ -29,8 +41,15 @@ export async function POST(request: NextRequest) {
 
     const prompt = `Write a formal medical billing dispute letter. Be professional and firm. Cite specific findings.
 
+IMPORTANT FORMATTING RULES:
+- Output plain text ONLY. No markdown. No asterisks, no pound signs, no bullet dashes.
+- Use numbered lists (1. 2. 3.) not dashes or asterisks.
+- Do not bold or italicize anything.
+- Write it exactly as it would appear in a printed letter.
+
 Patient: ${patientName ?? '[Patient Name]'}
 Address: ${patientAddress ?? '[Patient Address]'}
+${accountNumber ? `Account Number: ${accountNumber}` : ''}
 Date: ${today}
 Provider: ${analysis.provider.name}
 
@@ -65,10 +84,12 @@ End with: "This letter is for informational purposes only and does not constitut
 
 Write the full letter text only. No additional commentary.`
 
-    const letterText = await llm(LETTER_PRIMARY, LETTER_FALLBACK, {
+    const raw = await llm(LETTER_PRIMARY, LETTER_FALLBACK, {
       prompt,
       maxTokens: 1500,
     })
+
+    const letterText = stripMarkdown(raw)
 
     return NextResponse.json({
       text: letterText,

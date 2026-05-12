@@ -17,6 +17,8 @@ export interface BillData {
   }
   patient: {
     name?: string
+    address?: string
+    accountNumber?: string
   }
   dateOfService?: string
   lineItems: BillLineItem[]
