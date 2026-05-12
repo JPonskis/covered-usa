@@ -33,6 +33,7 @@ export default function BillAnalyzer() {
   const [letterLoading, setLetterLoading] = useState(false)
   const [letterText, setLetterText] = useState('')
   const [copied, setCopied] = useState(false)
+  const [emailSent, setEmailSent] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const formStep = step === 'upload' ? 1 : step === 'about-you' ? 2 : 0
@@ -117,6 +118,24 @@ export default function BillAnalyzer() {
     }
   }
 
+  async function sendAnalysisEmail(letterContent: string) {
+    try {
+      await fetch('/api/send-analysis-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          firstName,
+          analysis: result,
+          letterText: letterContent,
+        }),
+      })
+      setEmailSent(true)
+    } catch {
+      // Email is best-effort; don't block the user flow
+    }
+  }
+
   async function handleGetLetter() {
     if (!result) return
     setLetterLoading(true)
@@ -127,8 +146,14 @@ export default function BillAnalyzer() {
         body: JSON.stringify({ analysis: result, patientName: firstName }),
       })
       const data = await res.json()
-      setLetterText(data.text ?? '')
+      const text = data.text ?? ''
+      setLetterText(text)
       setStep('letter')
+
+      // Fire email in background after letter is ready
+      if (email && text) {
+        sendAnalysisEmail(text)
+      }
     } catch {
       setError('Failed to generate letter. Please try again.')
     } finally {
@@ -160,6 +185,7 @@ export default function BillAnalyzer() {
     setValidationError('')
     setLetterText('')
     setAnalyzingStep(0)
+    setEmailSent(false)
   }
 
   // ── STEP 1: UPLOAD ──────────────────────────────────────────
@@ -632,7 +658,14 @@ export default function BillAnalyzer() {
         <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
           <div className="px-6 py-4 border-b border-[var(--border-light)]">
             <h3 className="text-lg font-semibold text-[var(--text-primary)]">Your dispute letter</h3>
-            <p className="text-sm text-[var(--text-muted)]">Review the letter below, then download or copy it.</p>
+            <p className="text-sm text-[var(--text-muted)]">
+              Review the letter below, then download or copy it.
+              {emailSent && (
+                <span className="block mt-1" style={{ color: 'var(--success)' }}>
+                  A copy has been sent to {email}.
+                </span>
+              )}
+            </p>
           </div>
           <div className="p-6">
             <div
