@@ -56,6 +56,13 @@ export default function BillAnalyzer() {
   const [copied, setCopied] = useState(false)
   const [emailSent, setEmailSent] = useState(false)
 
+  // Bill lead capture (post-letter CTA)
+  const [billLeadPhone, setBillLeadPhone] = useState('')
+  const [billLeadTcpa, setBillLeadTcpa] = useState(false)
+  const [billLeadSubmitting, setBillLeadSubmitting] = useState(false)
+  const [billLeadDone, setBillLeadDone] = useState(false)
+  const [billLeadError, setBillLeadError] = useState('')
+
   // UI state
   const [error, setError] = useState('')
   const [validationError, setValidationError] = useState('')
@@ -246,6 +253,11 @@ export default function BillAnalyzer() {
     setHospitalName('')
     setResultId(null)
     setExtractedPatient(null)
+    setBillLeadPhone('')
+    setBillLeadTcpa(false)
+    setBillLeadSubmitting(false)
+    setBillLeadDone(false)
+    setBillLeadError('')
   }
 
   function getProgramCTAUrl(id: string): string {
@@ -264,12 +276,42 @@ export default function BillAnalyzer() {
     return 'Check Eligibility'
   }
 
+  function parseStateFromAddress(address: string): string | null {
+    const m = address.match(/\b([A-Z]{2})\s+\d{5}\b/) || address.match(/,\s*([A-Z]{2})\s*(?:\d|$)/)
+    return m ? m[1] : null
+  }
+
+  function getBestState(): string {
+    if (extractedPatient?.providerState) return extractedPatient.providerState
+    if (letterFormAddress) {
+      const s = parseStateFromAddress(letterFormAddress)
+      if (s) return s
+    }
+    return 'TX'
+  }
+
   function getProgramDescription(id: string): string {
-    if (id === 'medicaid') return 'Free or near-free health coverage. Would have covered most of this bill.'
-    if (id === 'aca') return 'Monthly subsidies that make marketplace plans affordable. Future hospital bills cost a fraction of this.'
-    if (id === 'chip') return 'Low or no-cost coverage for children under 19.'
-    if (id === 'va-healthcare') return 'Comprehensive federal healthcare through the VA — at little to no cost.'
-    return 'Coverage that reduces what you pay out of pocket.'
+    const state = getBestState()
+    if (id === 'medicaid') return `Free or near-free health coverage through ${state} Medicaid. Hospital visits, prescriptions, and emergency care covered at little to no cost. If you'd had this coverage, your bill would have been covered.`
+    if (id === 'aca') return 'Monthly premium subsidies that make marketplace health plans affordable. With a plan, your portion of a bill like this would have been a fraction of what you were charged.'
+    if (id === 'chip') return 'Low or no-cost health coverage for children under 19.'
+    if (id === 'va-healthcare') return 'Comprehensive federal healthcare through the VA system — at little to no cost to you.'
+    return 'Coverage that significantly reduces what you pay out of pocket for hospital visits and procedures.'
+  }
+
+  function getBillCTASubheadline(top: ProgramResult | undefined): string {
+    if (!top || !incomeNum || !householdSizeNum) {
+      return "Many people who receive bills like this qualify for free or subsidized health coverage they don't know about."
+    }
+    const fpl = getFPLPercent(incomeNum, householdSizeNum)
+    const incomeStr = `$${incomeNum.toLocaleString()}/year`
+    if (top.id === 'medicaid') {
+      return `Your income (${incomeStr}, household of ${householdSizeNum}) puts you at ${fpl}% of the federal poverty level — within Medicaid's eligibility limit. If you'd had coverage, this bill would have been covered at little to no cost.`
+    }
+    if (top.id === 'aca') {
+      return `At ${fpl}% of the federal poverty level (${incomeStr}, household of ${householdSizeNum}), you're in range for ACA marketplace subsidies. A plan would have significantly reduced what you paid for this bill.`
+    }
+    return `Your income and household size put you in range for health coverage programs that could prevent bills like this in the future.`
   }
 
   function getBillCTAHeadline(top: ProgramResult | undefined, totalBilled: number): string {
@@ -281,6 +323,71 @@ export default function BillAnalyzer() {
     }
     if (insuranceStatus === 'yes') return "Your insurance may not be protecting you enough"
     return "Don't get hit with a bill like this again"
+  }
+
+  async function handleBillLead() {
+    if (!billLeadPhone.trim()) {
+      setBillLeadError('Phone number is required.')
+      return
+    }
+    if (!billLeadTcpa) {
+      setBillLeadError('You must accept the consent to continue.')
+      return
+    }
+    setBillLeadSubmitting(true)
+    setBillLeadError('')
+    try {
+      const bestState = getBestState()
+      await fetch('/api/bill-analyzer-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          phone: billLeadPhone,
+          tcpaConsent: true,
+          tcpaTimestamp: new Date().toISOString(),
+          resultId: resultId ?? undefined,
+          firstName,
+          email,
+          state: bestState,
+          income: incomeNum || 0,
+          householdSize: householdSizeNum || 1,
+          insuranceStatus,
+          eligiblePrograms: eligibleProgramsForLead,
+        }),
+      })
+      setBillLeadDone(true)
+    } catch {
+      setBillLeadError('Something went wrong. Please try again.')
+    } finally {
+      setBillLeadSubmitting(false)
+    }
+  }
+
+  // Computed outside render for use in handleBillLead closure — recalculated in letter step too
+  const billState = extractedPatient?.providerState ?? getBestState()
+  const hasEnoughForEligibilityGlobal = incomeNum > 0 && householdSizeNum > 0
+  let eligibleProgramsForLead: string[] = []
+  if (hasEnoughForEligibilityGlobal) {
+    try {
+      const { programs } = checkEligibility({
+        state: billState,
+        age: 35,
+        householdSize: householdSizeNum,
+        annualIncome: incomeNum,
+        isPregnant: false,
+        hasDisability: false,
+        isVeteran: false,
+        currentlyInsured: insuranceStatus === 'yes',
+        insuranceSource: insuranceStatus === 'yes' ? 'employer' : undefined,
+        numChildren: 0,
+      })
+      eligibleProgramsForLead = programs
+        .filter(p => p.eligible === true || p.eligible === 'maybe')
+        .slice(0, 2)
+        .map(p => p.id)
+    } catch {
+      // ignore
+    }
   }
 
   // ── STEP 1: UPLOAD ──────────────────────────────────────────
@@ -834,12 +941,12 @@ export default function BillAnalyzer() {
   // ── LETTER ──────────────────────────────────────────────────
   if (step === 'letter') {
     // Compute inline eligibility using data already collected
-    const billState = extractedPatient?.providerState ?? 'TX'
+    const letterBillState = getBestState()
     const hasEnoughForEligibility = incomeNum > 0 && householdSizeNum > 0
     let eligiblePrograms: ProgramResult[] = []
     if (hasEnoughForEligibility) {
       const { programs } = checkEligibility({
-        state: billState,
+        state: letterBillState,
         age: 35,
         householdSize: householdSizeNum,
         annualIncome: incomeNum,
@@ -855,6 +962,7 @@ export default function BillAnalyzer() {
     const topProgram = eligiblePrograms[0]
     const totalBilled = result?.summary?.totalBilled ?? 0
     const ctaHeadline = getBillCTAHeadline(topProgram, totalBilled)
+    const subheadline = getBillCTASubheadline(topProgram)
     const screenerUrl = `/en/screener?utm_source=bill_analyzer&utm_medium=letter${incomeNum ? `&income=${incomeNum}` : ''}${householdSize ? `&household=${householdSize}` : ''}`
 
     return (
@@ -903,48 +1011,131 @@ export default function BillAnalyzer() {
 
         {/* Inline health coverage results */}
         <div className="rounded-xl overflow-hidden border" style={{ borderColor: '#99f6e4' }}>
-          {/* Header */}
+          {/* Dark teal header */}
           <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, #134e4a, #0d9488)' }}>
             <p className="text-white font-bold text-lg leading-snug">{ctaHeadline}</p>
-            <p className="text-white/80 text-sm mt-1">
-              {eligiblePrograms.length > 0
-                ? "Based on what you told us, here's what you likely qualify for."
-                : "Find out what free or low-cost coverage you qualify for — takes 2 minutes."}
-            </p>
+            <p className="text-white/80 text-sm mt-2 leading-relaxed">{subheadline}</p>
           </div>
 
-          {/* Program cards */}
           {eligiblePrograms.length > 0 ? (
-            <div className="bg-white divide-y divide-[var(--border-light)]">
-              {eligiblePrograms.map((program) => (
-                <div key={program.id} className="px-6 py-5">
-                  <div className="flex items-start justify-between gap-3 mb-2">
-                    <p className="font-semibold text-[var(--text-primary)]">{program.name}</p>
+            <div className="bg-white">
+              {eligiblePrograms.slice(0, 1).map(program => (
+                <div key={program.id} className="p-6 sm:p-8" style={{ borderLeft: '4px solid #0d9488' }}>
+                  {/* Program header: name + badge + value */}
+                  <div className="flex items-start justify-between gap-3 mb-4">
+                    <div>
+                      <h3 className="font-bold text-xl text-[var(--text-primary)]">{program.name}</h3>
+                      {program.estimatedValue > 0 && (
+                        <p className="text-2xl font-bold mt-1" style={{ color: '#16a34a' }}>
+                          ${program.estimatedValue.toLocaleString()}
+                          <span className="text-sm font-normal text-[var(--text-muted)]">/year</span>
+                        </p>
+                      )}
+                    </div>
                     <span
-                      className="shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full text-white"
+                      className="shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full text-white mt-1"
                       style={{ background: program.eligible === true ? 'var(--success)' : '#f59e0b' }}
                     >
                       {program.eligible === true ? 'Likely eligible' : 'May qualify'}
                     </span>
                   </div>
-                  {program.estimatedValue > 0 && (
-                    <p className="text-2xl font-bold mb-1" style={{ color: '#0d9488' }}>
-                      ${program.estimatedValue.toLocaleString()}<span className="text-sm font-normal text-[var(--text-muted)]">/year</span>
-                    </p>
+
+                  {/* Why You Qualify box */}
+                  <div className="bg-[var(--cream)] rounded-lg p-4 mb-5">
+                    <p className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-1">Why You Qualify</p>
+                    <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{getProgramDescription(program.id)}</p>
+                  </div>
+
+                  {/* ACA: Phone capture + HealthSherpa */}
+                  {program.id === 'aca' && (
+                    <>
+                      {billLeadDone ? (
+                        <div className="rounded-xl p-5 text-center" style={{ background: 'var(--success-light)' }}>
+                          <p className="font-semibold text-[var(--text-primary)]">You&apos;re all set!</p>
+                          <p className="text-sm text-[var(--text-secondary)] mt-1">A licensed agent will call you shortly to help find the best plan.</p>
+                        </div>
+                      ) : (
+                        <div className="bg-[var(--cream)] rounded-xl p-5">
+                          <h4 className="text-base font-semibold text-[var(--text-primary)] mb-1">Want help choosing a health plan?</h4>
+                          <p className="text-sm text-[var(--text-secondary)] mb-4">A licensed agent can compare marketplace plans, apply your subsidies correctly, and handle enrollment for you. 100% free — agents are paid by insurance companies, not you.</p>
+                          {/* Trust badges */}
+                          <div className="flex flex-wrap gap-2 mb-4">
+                            {['100% Free', 'Licensed agents', 'No obligation'].map(b => (
+                              <span key={b} className="inline-flex items-center gap-1 px-3 py-1 bg-white rounded-full text-xs font-medium text-[var(--text-secondary)] border border-[var(--border-light)]">✓ {b}</span>
+                            ))}
+                          </div>
+                          <div className="space-y-3">
+                            <input
+                              type="tel"
+                              value={billLeadPhone}
+                              onChange={e => { setBillLeadPhone(e.target.value); setBillLeadError('') }}
+                              placeholder="Your phone number"
+                              className="w-full px-4 py-3 rounded-lg border border-[var(--border)] bg-white text-[var(--text-primary)] text-sm focus:outline-none focus:border-[var(--primary)] transition-colors"
+                            />
+                            <label className="flex items-start gap-3 cursor-pointer">
+                              <input type="checkbox" checked={billLeadTcpa} onChange={e => setBillLeadTcpa(e.target.checked)} className="mt-0.5" />
+                              <span className="text-xs text-[var(--text-muted)] leading-relaxed">By checking this box, I agree to be contacted by a licensed insurance agent via phone or text. Consent is not required to purchase insurance.</span>
+                            </label>
+                            {billLeadError && <p className="text-sm" style={{ color: 'var(--error)' }}>{billLeadError}</p>}
+                            <button
+                              onClick={handleBillLead}
+                              disabled={billLeadSubmitting}
+                              className="btn-primary w-full"
+                              style={{ opacity: billLeadSubmitting ? 0.7 : 1 }}
+                            >
+                              {billLeadSubmitting ? 'Submitting...' : 'Get Free Guidance'}
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                      {/* HealthSherpa secondary */}
+                      <div className="mt-4">
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="flex-1 h-px bg-[var(--border-light)]" />
+                          <span className="text-xs text-[var(--text-muted)] font-medium">or</span>
+                          <div className="flex-1 h-px bg-[var(--border-light)]" />
+                        </div>
+                        <a
+                          href={`https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_source=coveredusa&utm_medium=bill_analyzer&utm_content=${resultId ?? ''}`}
+                          target="_blank" rel="noopener noreferrer"
+                          className="cta-btn w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 font-semibold text-sm transition-all hover:opacity-90"
+                          style={{ borderColor: '#0d9488', color: '#0d9488', background: 'white' }}
+                        >
+                          Apply Yourself on HealthSherpa
+                          <span className="text-xs opacity-70">↗</span>
+                        </a>
+                      </div>
+                    </>
                   )}
-                  <p className="text-sm text-[var(--text-secondary)] mb-4">{getProgramDescription(program.id)}</p>
-                  <a
-                    href={getProgramCTAUrl(program.id)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cta-btn block w-full text-center py-3 px-4 rounded-lg font-semibold text-sm"
-                    style={{ backgroundColor: '#0d9488', color: 'white' }}
-                  >
-                    {getProgramCTAText(program.id)}
-                  </a>
+
+                  {/* Medicaid: direct apply button */}
+                  {program.id === 'medicaid' && (
+                    <a
+                      href={getProgramCTAUrl(program.id)}
+                      target="_blank" rel="noopener noreferrer"
+                      className="cta-btn block w-full text-center py-3.5 px-4 rounded-lg font-semibold text-sm"
+                      style={{ backgroundColor: '#0d9488', color: 'white' }}
+                    >
+                      Apply for Medicaid
+                    </a>
+                  )}
+
+                  {/* Other programs: apply button */}
+                  {program.id !== 'aca' && program.id !== 'medicaid' && (
+                    <a
+                      href={getProgramCTAUrl(program.id)}
+                      target="_blank" rel="noopener noreferrer"
+                      className="cta-btn block w-full text-center py-3.5 px-4 rounded-lg font-semibold text-sm"
+                      style={{ backgroundColor: '#0d9488', color: 'white' }}
+                    >
+                      {getProgramCTAText(program.id)}
+                    </a>
+                  )}
                 </div>
               ))}
-              <div className="px-6 py-4" style={{ background: '#f0fdfa' }}>
+
+              {/* See all programs footer */}
+              <div className="px-6 py-4 border-t border-[var(--border-light)]" style={{ background: '#f0fdfa' }}>
                 <a href={screenerUrl} className="text-sm font-medium" style={{ color: '#0d9488' }}>
                   See all programs you qualify for →
                 </a>
