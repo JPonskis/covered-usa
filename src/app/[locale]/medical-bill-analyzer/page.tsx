@@ -294,6 +294,102 @@ export default function MedicalBillAnalyzerPage() {
             <p className="text-xs text-center mt-4" style={{ color: 'var(--text-muted)' }}>
               Example analysis. Your results will reflect your actual bill.
             </p>
+
+            {/* Sample dispute letter */}
+            <div className="mt-10">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: 'var(--text-primary)' }}>
+                And here's your dispute letter
+              </h3>
+              <p className="text-sm mb-4" style={{ color: 'var(--text-muted)' }}>
+                The tool writes a formal letter you can send directly to the hospital's billing department.
+              </p>
+              <div className="relative">
+              <div
+                className="bg-white overflow-hidden"
+                style={{
+                  maxHeight: '420px',
+                  overflowY: 'auto',
+                  borderRadius: '4px',
+                  border: '1px solid #d4d4d4',
+                  boxShadow: '0 2px 12px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.06)',
+                }}
+              >
+                <div className="px-8 py-8 sm:px-12 sm:py-10" style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontSize: '13px', lineHeight: '1.7', color: '#1a1a1a' }}>
+                  <p style={{ marginBottom: '4px' }}>John Smith</p>
+                  <p style={{ marginBottom: '4px' }}>1247 Maple Drive</p>
+                  <p style={{ marginBottom: '24px' }}>Austin, TX 78701</p>
+
+                  <p style={{ marginBottom: '24px' }}>May 12, 2026</p>
+
+                  <p style={{ marginBottom: '4px' }}>Billing Department</p>
+                  <p style={{ marginBottom: '4px' }}>Valley Medical Center</p>
+                  <p style={{ marginBottom: '4px' }}>800 Hospital Way</p>
+                  <p style={{ marginBottom: '24px' }}>Austin, TX 78705</p>
+
+                  <p style={{ marginBottom: '24px' }}><strong>Re: Dispute of Charges — Account #VMC-2026-44891</strong></p>
+
+                  <p style={{ marginBottom: '16px' }}>Dear Billing Department,</p>
+
+                  <p style={{ marginBottom: '16px' }}>
+                    I am writing to formally dispute charges on my bill dated April 28, 2026, totaling <strong>$12,847.00</strong>. After reviewing the itemized charges and comparing them to the Medicare Physician Fee Schedule published by the Centers for Medicare and Medicaid Services (CMS), I have identified significant discrepancies and billing errors that I am requesting your office review and correct.
+                  </p>
+
+                  <p style={{ marginBottom: '8px' }}><strong>Specific charges in dispute:</strong></p>
+
+                  <p style={{ marginBottom: '12px', paddingLeft: '16px' }}>
+                    <strong>1. Emergency room visit, Level 4 (CPT 99284)</strong><br />
+                    Billed: $4,200.00 | Medicare rate: $453.00<br />
+                    This charge is 827% above the federal benchmark. I am requesting an explanation of why this charge exceeds the Medicare reimbursement rate by this margin, and a reduction to a reasonable amount.
+                  </p>
+
+                  <p style={{ marginBottom: '12px', paddingLeft: '16px' }}>
+                    <strong>2. CT scan, abdomen with contrast (CPT 74177)</strong><br />
+                    Billed: $3,800.00 | Medicare rate: $270.00<br />
+                    This charge exceeds the federal benchmark by over 1,300%. I am requesting justification for this rate.
+                  </p>
+
+                  <p style={{ marginBottom: '12px', paddingLeft: '16px' }}>
+                    <strong>3. IV fluid administration (CPT 96360)</strong><br />
+                    Billed: $1,247.00 | Medicare rate: $89.00<br />
+                    This charge appears to be a <strong>duplicate</strong>. IV fluid administration was billed twice on the same date of service. I am requesting removal of the duplicate charge.
+                  </p>
+
+                  <p style={{ marginBottom: '12px', paddingLeft: '16px' }}>
+                    <strong>4. Blood panel, comprehensive (CPT 80053)</strong><br />
+                    Billed: $890.00 | Medicare rate: $34.00<br />
+                    This charge exceeds the federal benchmark by over 2,500%.
+                  </p>
+
+                  <p style={{ marginBottom: '16px' }}>
+                    The total amount billed is $12,847.00. The total Medicare reimbursement for these same services is $846.00 — a difference of <strong>$12,001.00</strong>. I understand that hospital rates differ from Medicare rates, but discrepancies of this magnitude warrant review.
+                  </p>
+
+                  <p style={{ marginBottom: '16px' }}>
+                    Under federal law, I have the right to receive an itemized bill and to dispute any charges I believe are incorrect. I am also requesting information about your hospital's Financial Assistance Policy, as required under Section 501(r) of the Affordable Care Act for nonprofit hospitals.
+                  </p>
+
+                  <p style={{ marginBottom: '16px' }}>
+                    Please provide a written response to this dispute within 30 days. During this review period, I request that this account not be referred to collections or reported to credit bureaus.
+                  </p>
+
+                  <p style={{ marginBottom: '4px' }}>Sincerely,</p>
+                  <p style={{ marginTop: '28px', marginBottom: '0' }}>John Smith</p>
+                </div>
+              </div>
+              {/* Scroll fade indicator */}
+              <div
+                className="pointer-events-none absolute bottom-0 left-0 right-0"
+                style={{
+                  height: '48px',
+                  background: 'linear-gradient(transparent, rgba(255,255,255,0.95))',
+                  borderRadius: '0 0 4px 4px',
+                }}
+              />
+              </div>
+              <p className="text-xs text-center mt-3" style={{ color: 'var(--text-muted)' }}>
+                Scroll to read the full letter. Your letter will cite the specific charges and errors found on your bill.
+              </p>
+            </div>
           </div>
         </section>
 
