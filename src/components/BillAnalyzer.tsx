@@ -29,7 +29,7 @@ export default function BillAnalyzer() {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
-  const [emailConsent, setEmailConsent] = useState(false)
+  const [emailConsent, setEmailConsent] = useState(true)
   const [hospitalName, setHospitalName] = useState('')
   const [insuranceStatus, setInsuranceStatus] = useState<InsuranceStatus>('')
   const [income, setIncome] = useState('')
@@ -481,7 +481,7 @@ export default function BillAnalyzer() {
                   className="mt-0.5 w-4 h-4 rounded accent-[#0d9488] shrink-0"
                 />
                 <span className="text-xs text-[var(--text-muted)] leading-relaxed">
-                  Send me occasional updates from CoveredUSA about health coverage options and financial assistance programs.
+                  Email me my results and tips for saving on medical bills and health coverage.
                 </span>
               </label>
             </div>
