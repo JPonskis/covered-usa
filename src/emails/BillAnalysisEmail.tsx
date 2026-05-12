@@ -197,25 +197,29 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
             </td>
           </tr>
 
-          <!-- Summary card -->
+          <!-- Summary card — single-column for mobile compatibility -->
           <tr>
             <td style="padding: 0 36px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #134e4a; border-radius: 8px;">
                 <tr>
-                  <td style="padding: 20px;">
+                  <td style="padding: 20px 24px;">
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
-                        <td style="width: 33%; vertical-align: top;">
-                          <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.7); font-family: Georgia, 'Times New Roman', serif;">Total billed</p>
-                          <p style="margin: 0; font-size: 20px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalBilled)}</p>
+                        <td style="padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.15);">
+                          <p style="margin: 0 0 2px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Total billed</p>
+                          <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalBilled)}</p>
                         </td>
-                        <td style="width: 33%; vertical-align: top;">
-                          <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.7); font-family: Georgia, 'Times New Roman', serif;">Federal rate</p>
-                          <p style="margin: 0; font-size: 20px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalMedicareRate)}</p>
+                      </tr>
+                      <tr>
+                        <td style="padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.15);">
+                          <p style="margin: 0 0 2px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Federal rate</p>
+                          <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalMedicareRate)}</p>
                         </td>
-                        <td style="width: 33%; vertical-align: top;">
-                          <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.7); font-family: Georgia, 'Times New Roman', serif;">Potential savings</p>
-                          <p style="margin: 0; font-size: 20px; font-weight: 700; color: #fca5a5; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalOvercharge)}</p>
+                      </tr>
+                      <tr>
+                        <td style="padding-top: 14px;">
+                          <p style="margin: 0 0 2px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Potential savings</p>
+                          <p style="margin: 0; font-size: 26px; font-weight: 700; color: #fca5a5; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalOvercharge)}</p>
                         </td>
                       </tr>
                     </table>
