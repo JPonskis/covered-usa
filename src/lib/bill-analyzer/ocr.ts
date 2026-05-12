@@ -1,9 +1,5 @@
-import Anthropic from '@anthropic-ai/sdk'
+import { llm, OCR_PRIMARY, OCR_FALLBACK } from '@/lib/llm'
 import type { BillData, BillLineItem } from './types'
-
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-})
 
 const OCR_PROMPT = `You are a medical billing expert extracting line items from a hospital or medical bill.
 
@@ -51,40 +47,13 @@ export async function extractBillData(
 ): Promise<BillData> {
   const isImage = mediaType.startsWith('image/')
 
-  const message = await anthropic.messages.create({
-    model: 'claude-opus-4-6',
-    max_tokens: 4096,
-    messages: [
-      {
-        role: 'user',
-        content: [
-          isImage
-            ? {
-                type: 'image' as const,
-                source: {
-                  type: 'base64' as const,
-                  media_type: mediaType as 'image/jpeg' | 'image/png' | 'image/webp',
-                  data: fileBase64,
-                },
-              }
-            : {
-                type: 'document' as const,
-                source: {
-                  type: 'base64' as const,
-                  media_type: 'application/pdf' as const,
-                  data: fileBase64,
-                },
-              },
-          {
-            type: 'text' as const,
-            text: OCR_PROMPT,
-          },
-        ],
-      },
-    ],
+  const text = await llm(OCR_PRIMARY, OCR_FALLBACK, {
+    prompt: OCR_PROMPT,
+    maxTokens: 4096,
+    ...(isImage
+      ? { image: { base64: fileBase64, mediaType } }
+      : { document: { base64: fileBase64, mediaType } }),
   })
-
-  const text = message.content[0].type === 'text' ? message.content[0].text : ''
 
   // Extract JSON from response (may have markdown code fences)
   const jsonMatch = text.match(/\{[\s\S]*\}/)
@@ -94,21 +63,23 @@ export async function extractBillData(
 
   const parsed = JSON.parse(jsonMatch[0])
 
-  const lineItems: BillLineItem[] = (parsed.lineItems ?? []).map((item: {
-    description: string
-    code?: string | null
-    quantity?: number
-    unitCharge?: number
-    totalCharge?: number
-    confidence?: number
-  }) => ({
-    description: item.description ?? 'Unknown service',
-    code: item.code ?? undefined,
-    quantity: Number(item.quantity ?? 1),
-    unitCharge: Number(item.unitCharge ?? 0),
-    totalCharge: Number(item.totalCharge ?? 0),
-    confidence: Number(item.confidence ?? 0.8),
-  }))
+  const lineItems: BillLineItem[] = (parsed.lineItems ?? []).map(
+    (item: {
+      description: string
+      code?: string | null
+      quantity?: number
+      unitCharge?: number
+      totalCharge?: number
+      confidence?: number
+    }) => ({
+      description: item.description ?? 'Unknown service',
+      code: item.code ?? undefined,
+      quantity: Number(item.quantity ?? 1),
+      unitCharge: Number(item.unitCharge ?? 0),
+      totalCharge: Number(item.totalCharge ?? 0),
+      confidence: Number(item.confidence ?? 0.8),
+    })
+  )
 
   return {
     provider: {
@@ -122,11 +93,13 @@ export async function extractBillData(
     dateOfService: parsed.dateOfService ?? undefined,
     lineItems,
     totalBilled: Number(parsed.totalBilled ?? 0),
-    insuranceAdjustment: parsed.insuranceAdjustment != null
-      ? Number(parsed.insuranceAdjustment)
-      : undefined,
-    patientResponsibility: parsed.patientResponsibility != null
-      ? Number(parsed.patientResponsibility)
-      : undefined,
+    insuranceAdjustment:
+      parsed.insuranceAdjustment != null
+        ? Number(parsed.insuranceAdjustment)
+        : undefined,
+    patientResponsibility:
+      parsed.patientResponsibility != null
+        ? Number(parsed.patientResponsibility)
+        : undefined,
   }
 }

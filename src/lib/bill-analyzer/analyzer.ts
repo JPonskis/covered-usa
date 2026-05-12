@@ -1,5 +1,5 @@
-import Anthropic from '@anthropic-ai/sdk'
 import { supabaseAdmin } from '@/lib/supabase-admin'
+import { llm, CODE_ID_PRIMARY, CODE_ID_FALLBACK } from '@/lib/llm'
 import { getMedicareRates } from './cms-data'
 import {
   type BillData,
@@ -8,10 +8,6 @@ import {
   type CharityCareResult,
   getFPLPercent,
 } from './types'
-
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-})
 
 /**
  * Identify likely HCPCS/CPT codes for line items that don't have visible codes.
@@ -35,13 +31,11 @@ Return ONLY a JSON object mapping index to code: {"0": "99213", "1": "71046", ..
 If you cannot confidently identify a code, omit that index.
 Do not include codes you are not confident about (>80% confidence only).`
 
-  const message = await anthropic.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 512,
-    messages: [{ role: 'user', content: prompt }],
+  const text = await llm(CODE_ID_PRIMARY, CODE_ID_FALLBACK, {
+    prompt,
+    maxTokens: 512,
   })
 
-  const text = message.content[0].type === 'text' ? message.content[0].text : '{}'
   const jsonMatch = text.match(/\{[^{}]*\}/)
   if (!jsonMatch) return new Map()
 
@@ -61,7 +55,7 @@ async function lookupHospital(providerName: string, state?: string) {
 
   // Try with state filter first
   if (state) {
-    let q = supabaseAdmin
+    const q = supabaseAdmin
       .from('hospital_fap_urls')
       .select('hospital_name, system_name, is_nonprofit, fap_url, income_limit_fpl_percent')
       .ilike('hospital_name', `%${nameFragment}%`)

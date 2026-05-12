@@ -1,10 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
-import Anthropic from '@anthropic-ai/sdk'
+import { llm, LETTER_PRIMARY, LETTER_FALLBACK } from '@/lib/llm'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 
 export const maxDuration = 30
-
-const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 export async function POST(request: NextRequest) {
   try {
@@ -67,14 +65,10 @@ End with: "This letter is for informational purposes only and does not constitut
 
 Write the full letter text only. No additional commentary.`
 
-    const message = await anthropic.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 1500,
-      messages: [{ role: 'user', content: prompt }],
+    const letterText = await llm(LETTER_PRIMARY, LETTER_FALLBACK, {
+      prompt,
+      maxTokens: 1500,
     })
-
-    const letterText =
-      message.content[0].type === 'text' ? message.content[0].text : ''
 
     return NextResponse.json({
       text: letterText,

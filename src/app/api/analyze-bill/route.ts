@@ -13,25 +13,44 @@ const ALLOWED_TYPES = new Set([
   'application/pdf',
 ])
 const MAX_FILE_SIZE = 10 * 1024 * 1024 // 10MB
-const RATE_LIMIT_MAX = 5
-const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000 // 1 hour
 
-async function checkRateLimit(ip: string): Promise<boolean> {
-  const windowStart = new Date(Date.now() - RATE_LIMIT_WINDOW_MS).toISOString()
+// Rate limits: burst (per minute) + sustained (per hour)
+const BURST_MAX = 2
+const BURST_WINDOW_MS = 60 * 1000 // 1 minute
+const HOURLY_MAX = 5
+const HOURLY_WINDOW_MS = 60 * 60 * 1000 // 1 hour
 
-  const { count } = await supabaseAdmin
+async function checkRateLimit(ip: string): Promise<{ allowed: boolean; message?: string }> {
+  const now = Date.now()
+  const burstStart = new Date(now - BURST_WINDOW_MS).toISOString()
+  const hourlyStart = new Date(now - HOURLY_WINDOW_MS).toISOString()
+
+  // Check burst limit (2 per minute)
+  const { count: burstCount } = await supabaseAdmin
     .from('bill_analysis_rate_limits')
     .select('*', { count: 'exact', head: true })
     .eq('ip', ip)
-    .gte('created_at', windowStart)
+    .gte('created_at', burstStart)
 
-  if ((count ?? 0) >= RATE_LIMIT_MAX) return false
+  if ((burstCount ?? 0) >= BURST_MAX) {
+    return { allowed: false, message: 'Please wait a minute before analyzing another bill.' }
+  }
 
-  await supabaseAdmin
+  // Check hourly limit (5 per hour)
+  const { count: hourlyCount } = await supabaseAdmin
     .from('bill_analysis_rate_limits')
-    .insert({ ip })
+    .select('*', { count: 'exact', head: true })
+    .eq('ip', ip)
+    .gte('created_at', hourlyStart)
 
-  return true
+  if ((hourlyCount ?? 0) >= HOURLY_MAX) {
+    return { allowed: false, message: 'You can analyze up to 5 bills per hour. Please try again later.' }
+  }
+
+  // Log this request
+  await supabaseAdmin.from('bill_analysis_rate_limits').insert({ ip })
+
+  return { allowed: true }
 }
 
 export async function POST(request: NextRequest) {
@@ -43,12 +62,9 @@ export async function POST(request: NextRequest) {
       'unknown'
 
     // Rate limit check
-    const allowed = await checkRateLimit(ip)
+    const { allowed, message } = await checkRateLimit(ip)
     if (!allowed) {
-      return NextResponse.json(
-        { error: 'Rate limit exceeded. You can analyze up to 5 bills per hour.' },
-        { status: 429 }
-      )
+      return NextResponse.json({ error: message }, { status: 429 })
     }
 
     // Parse FormData
@@ -85,7 +101,7 @@ export async function POST(request: NextRequest) {
     const income = incomeStr ? Number(incomeStr) : undefined
     const householdSize = householdSizeStr ? Number(householdSizeStr) : undefined
 
-    // Step 1: OCR — extract bill data
+    // Step 1: OCR — extract bill data (Gemini 3 Flash → Claude Sonnet fallback)
     const billData = await extractBillData(
       base64,
       mediaType as 'image/jpeg' | 'image/png' | 'image/webp' | 'application/pdf'
@@ -101,7 +117,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Step 2: Analyze
+    // Step 2: Analyze (Gemini 3.1 Flash-Lite → Claude Haiku fallback)
     const result = await analyzeBill(billData, income, householdSize)
 
     return NextResponse.json(result)
