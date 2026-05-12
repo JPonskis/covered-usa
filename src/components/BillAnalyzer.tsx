@@ -484,6 +484,11 @@ export default function BillAnalyzer() {
                   Email me my results and tips for saving on medical bills and health coverage.
                 </span>
               </label>
+              {!emailConsent && (
+                <p className="mt-2 text-xs px-3 py-2 rounded-lg" style={{ background: '#fefce8', color: '#92400e', border: '1px solid #fde68a' }}>
+                  Without this, we won't be able to email your results or dispute letter. You can still copy them from the site.
+                </p>
+              )}
             </div>
 
             {/* Insurance status */}
