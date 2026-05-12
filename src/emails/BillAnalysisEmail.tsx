@@ -64,7 +64,7 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
   const charityCareHtml = charityCare.eligible
     ? `
               <tr>
-                <td style="padding: 20px 36px 0 36px;">
+                <td style="padding: 28px 36px 0 36px;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f0fdf4; border-radius: 8px; border: 1px solid #bbf7d0;">
                     <tr>
                       <td style="padding: 16px;">
@@ -86,61 +86,37 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
               </p>`
     : ''
 
-  // "What to do next" steps
-  const step3Html = charityCare.eligible
-    ? `<tr>
-                <td style="padding: 12px 0 0 0;">
+  // "What to do next" steps — each step is a <tr> with generous top padding
+  function stepHtml(num: number, title: string, desc: string, first = false) {
+    return `<tr>
+                <td style="padding: ${first ? '0' : '20px'} 0 0 0;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                     <tr>
-                      <td style="width: 28px; vertical-align: top; padding-top: 2px;">
-                        <div style="width: 22px; height: 22px; border-radius: 50%; background-color: #0d9488; color: #ffffff; font-size: 12px; font-weight: 700; text-align: center; line-height: 22px; font-family: Georgia, 'Times New Roman', serif;">3</div>
+                      <td style="width: 26px; vertical-align: top; padding-top: 1px;">
+                        <div style="width: 24px; height: 24px; border-radius: 50%; background-color: #0d9488; color: #ffffff; font-size: 13px; font-weight: 700; text-align: center; line-height: 24px; font-family: Georgia, 'Times New Roman', serif;">${num}</div>
                       </td>
-                      <td style="padding-left: 10px; vertical-align: top;">
-                        <p style="margin: 0 0 2px 0; font-size: 14px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Apply for financial assistance</p>
-                        <p style="margin: 0; font-size: 13px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">Ask ${provider.name} for their Financial Assistance Policy application. You will need proof of income (a recent pay stub or tax return). Submit it along with your dispute.</p>
+                      <td style="padding-left: 12px; vertical-align: top;">
+                        <p style="margin: 0 0 5px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">${title}</p>
+                        <p style="margin: 0; font-size: 14px; line-height: 22px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">${desc}</p>
                       </td>
                     </tr>
                   </table>
                 </td>
               </tr>`
+  }
+
+  const step3Html = charityCare.eligible
+    ? stepHtml(3, 'Apply for financial assistance', `Ask ${provider.name} for their Financial Assistance Policy application. You will need proof of income (a recent pay stub or tax return). Submit it along with your dispute.`)
     : ''
 
   const nextStepsHtml = letterGenerated
     ? `
           <tr>
-            <td style="padding: 24px 36px 0 36px;">
-              <p style="margin: 0 0 14px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">What to do next</p>
+            <td style="padding: 28px 36px 4px 36px;">
+              <p style="margin: 0 0 20px 0; font-size: 16px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">What to do next</p>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-              <tr>
-                <td>
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                    <tr>
-                      <td style="width: 28px; vertical-align: top; padding-top: 2px;">
-                        <div style="width: 22px; height: 22px; border-radius: 50%; background-color: #0d9488; color: #ffffff; font-size: 12px; font-weight: 700; text-align: center; line-height: 22px; font-family: Georgia, 'Times New Roman', serif;">1</div>
-                      </td>
-                      <td style="padding-left: 10px; vertical-align: top;">
-                        <p style="margin: 0 0 2px 0; font-size: 14px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Call the billing department</p>
-                        <p style="margin: 0; font-size: 13px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">Call the number on your bill and tell them you are disputing charges. Ask for the billing department's email or fax number so you can send your letter.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding: 12px 0 0 0;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                    <tr>
-                      <td style="width: 28px; vertical-align: top; padding-top: 2px;">
-                        <div style="width: 22px; height: 22px; border-radius: 50%; background-color: #0d9488; color: #ffffff; font-size: 12px; font-weight: 700; text-align: center; line-height: 22px; font-family: Georgia, 'Times New Roman', serif;">2</div>
-                      </td>
-                      <td style="padding-left: 10px; vertical-align: top;">
-                        <p style="margin: 0 0 2px 0; font-size: 14px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Send your dispute letter</p>
-                        <p style="margin: 0; font-size: 13px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">Email or mail the attached letter. The Word document is editable if you need to add details. Keep a copy for your records.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+              ${stepHtml(1, 'Call the billing department', "Call the number on your bill and tell them you are disputing charges. Ask for the billing department's email or fax number so you can send your letter.", true)}
+              ${stepHtml(2, 'Send your dispute letter', 'Email or mail the attached letter. The Word document is editable if you need to add details. Keep a copy for your records.')}
               ${step3Html}
               </table>
             </td>
@@ -232,8 +208,8 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
           <!-- Flagged line items -->
           ${topItems.length > 0 ? `
           <tr>
-            <td style="padding: 20px 36px 0 36px;">
-              <p style="margin: 0 0 10px 0; font-size: 14px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Flagged charges</p>
+            <td style="padding: 28px 36px 0 36px;">
+              <p style="margin: 0 0 12px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Flagged charges</p>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td style="padding: 6px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; border-bottom: 1px solid #d6cfc5;">Item</td>
@@ -247,8 +223,7 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
           </tr>` : ''}
 
           ${charityCareHtml}
-
-          ${nextStepsHtml}
+${nextStepsHtml}
 
           <!-- CTA -->
           <tr>
