@@ -937,8 +937,8 @@ export default function BillAnalyzer() {
                     href={getProgramCTAUrl(program.id)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full text-center py-3 px-4 rounded-lg font-semibold text-white text-sm"
-                    style={{ backgroundColor: '#0d9488' }}
+                    className="cta-btn block w-full text-center py-3 px-4 rounded-lg font-semibold text-sm"
+                    style={{ backgroundColor: '#0d9488', color: 'white' }}
                   >
                     {getProgramCTAText(program.id)}
                   </a>
@@ -954,8 +954,8 @@ export default function BillAnalyzer() {
             <div className="bg-white px-6 py-5">
               <a
                 href={screenerUrl}
-                className="block w-full text-center py-3.5 px-4 rounded-lg font-semibold text-white text-sm"
-                style={{ backgroundColor: '#0d9488' }}
+                className="cta-btn block w-full text-center py-3.5 px-4 rounded-lg font-semibold text-sm"
+                style={{ backgroundColor: '#0d9488', color: 'white' }}
               >
                 Check What You Qualify For
               </a>
