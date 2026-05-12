@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: 'Free Medical Bill Analyzer | Find Overcharges on Your Hospital Bill | CoveredUSA',
   description:
     'Upload your hospital bill and find out if you were overcharged. We compare every line item to federal rates, flag billing errors, check charity care eligibility, and generate a dispute letter. Free, no signup.',
+  alternates: {
+    canonical: 'https://coveredusa.org/en/medical-bill-analyzer',
+    languages: {
+      'en': 'https://coveredusa.org/en/medical-bill-analyzer',
+      'es': 'https://coveredusa.org/es/medical-bill-analyzer',
+      'x-default': 'https://coveredusa.org/en/medical-bill-analyzer',
+    },
+  },
   openGraph: {
     title: 'Were you overcharged? Check your hospital bill for free.',
     description:
@@ -109,7 +117,46 @@ const jsonLd = {
             text: 'The tool works best with itemized hospital bills that list individual procedure charges. It also works with outpatient bills, surgical bills, and emergency room statements. Summary bills with limited line items will produce less detailed results.',
           },
         },
+        {
+          '@type': 'Question',
+          name: 'How much should an emergency room visit cost?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'According to the Medicare Physician Fee Schedule published by the Centers for Medicare and Medicaid Services (CMS), a Level 4 emergency room visit has a federal reimbursement rate of approximately $200–$500. Hospitals routinely bill $2,000–$5,000 or more for the same visit. The gap between what hospitals charge uninsured patients and what Medicare pays is typically 5 to 10 times the federal rate.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What happens if I cannot pay my hospital bill?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'If you cannot pay your hospital bill, you have several options. First, request the itemized bill and check for errors — billing mistakes are common and reduce the amount owed. Second, apply for the hospital\'s financial assistance program. Under Section 501(r) of the Affordable Care Act, nonprofit hospitals are legally required to offer free or reduced-cost care to qualifying patients. Third, negotiate directly with the billing department; hospitals regularly settle bills for less than the billed amount. Since 2023, medical debt under $500 is no longer reported to credit bureaus, and paid medical debt is removed from credit reports entirely.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do I write a letter to dispute a medical bill?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A medical bill dispute letter should include your account number, the date of service, a list of each charge you are disputing with the specific reason (duplicate charge, billing code mismatch, charge exceeds Medicare benchmark), and a request for a written response within 30 days. You have the legal right to an itemized bill before disputing. This tool generates a ready-to-send dispute letter automatically after analyzing your bill, citing every overcharge and error found.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is a chargemaster and why do hospital prices vary so much?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A chargemaster is a hospital\'s internal master price list that sets the starting rate for every service, procedure, and supply item. These prices are set entirely by the hospital and are not regulated. Uninsured patients are often billed at or near chargemaster rates, which can be 3 to 10 times higher than what Medicare pays for identical services. The Hospital Price Transparency Rule, which took full effect in July 2024, now requires every hospital to publish their chargemaster prices publicly. This tool uses the Medicare Physician Fee Schedule as a benchmark to compare against your billed charges.',
+          },
+        },
       ],
+    },
+    {
+      '@type': 'Organization',
+      name: 'CoveredUSA',
+      url: 'https://coveredusa.org',
+      logo: 'https://coveredusa.org/logo.png',
+      description: 'Free health insurance eligibility tools and medical bill analysis for Americans.',
     },
     {
       '@type': 'BreadcrumbList',
@@ -170,7 +217,8 @@ export default function MedicalBillAnalyzerPage() {
                 <strong style={{ color: 'var(--text-primary)' }}>Hospital prices are not standardized.</strong> Every hospital sets its own rates using an internal price list called a "chargemaster." No patient ever sees it. These rates are often 3 to 10 times higher than what the federal government pays for the exact same procedures.
               </p>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>There is a public benchmark for fair pricing.</strong> The federal government publishes what it actually pays hospitals through the Medicare Physician Fee Schedule. These rates are updated every year and freely available. When your hospital charges you $4,200 for something the government pays $890 for, that gap is worth questioning.
+                <strong style={{ color: 'var(--text-primary)' }}>There is a public benchmark for fair pricing.</strong> The federal government publishes what it actually pays hospitals through the{' '}
+                <a href="https://www.cms.gov/medicare/physician-fee-schedule/search" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Medicare Physician Fee Schedule</a>, maintained by the Centers for Medicare and Medicaid Services (CMS). These rates are updated every year. When your hospital charges you $4,200 for something the government pays $890 for, that gap is worth questioning.
               </p>
               <p>
                 <strong style={{ color: 'var(--text-primary)' }}>Billing errors are extremely common.</strong> Duplicate charges, procedures billed separately that should be combined, and codes that don't match the service you actually received. These mistakes add up, and they almost always add up in the hospital's favor.
@@ -293,7 +341,8 @@ export default function MedicalBillAnalyzerPage() {
             </h2>
             <div className="space-y-5" style={{ color: 'var(--text-secondary)' }}>
               <p>
-                About 60% of hospitals in the U.S. are nonprofits. Under federal law, these hospitals are required to offer a Financial Assistance Policy to patients who qualify. That means free or reduced-cost care based on your income.
+                About 60% of hospitals in the U.S. are nonprofits. Under{' '}
+                <a href="https://www.irs.gov/charities-non-profits/charitable-organizations/new-requirements-for-501c3-hospitals-under-the-affordable-care-act" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Section 501(r) of the Affordable Care Act</a>, these hospitals are required to offer a Financial Assistance Policy to patients who qualify. That means free or reduced-cost care based on your income.
               </p>
               <p>
                 The income limits vary by hospital, but many cover patients earning up to 300% or 400% of the federal poverty level. For a family of four, that's roughly $124,000 a year.
@@ -329,10 +378,12 @@ export default function MedicalBillAnalyzerPage() {
                 <strong style={{ color: 'var(--text-primary)' }}>You can request an itemized bill.</strong> Hospitals are required to provide a bill that shows every individual charge. If you only received a summary, call the billing department and ask for the itemized version. You need this before you can identify errors.
               </p>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>Hospitals must publish their prices.</strong> Since July 2024, the Hospital Price Transparency Rule requires every hospital to publish their standard charges in a machine-readable format. This includes the rates they negotiate with insurance companies. If a hospital doesn't comply, they face financial penalties.
+                <strong style={{ color: 'var(--text-primary)' }}>Hospitals must publish their prices.</strong> The{' '}
+                <a href="https://www.cms.gov/hospital-price-transparency" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Hospital Price Transparency Rule</a>, enforced by CMS since July 2024, requires every hospital to publish their standard charges in a machine-readable format — including rates negotiated with insurance companies. Hospitals that fail to comply face civil monetary penalties up to $2 million per year.
               </p>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>The No Surprises Act protects you from unexpected bills.</strong> If you went to an in-network hospital but were treated by an out-of-network doctor, you're protected. Emergency services are also covered regardless of network status. If you received a surprise bill, you can dispute it through a federal process.
+                <strong style={{ color: 'var(--text-primary)' }}>The No Surprises Act protects you from unexpected bills.</strong> If you went to an in-network hospital but were treated by an out-of-network provider, you are protected under the{' '}
+                <a href="https://www.cms.gov/nosurprises" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>No Surprises Act</a>. Emergency services are covered regardless of network status. If you received a surprise bill, you can dispute it through a federal independent dispute resolution process.
               </p>
               <p>
                 <strong style={{ color: 'var(--text-primary)' }}>Medical debt rules have changed.</strong> Medical debt under $500 is no longer reported to credit bureaus. Paid medical debt is removed from credit reports entirely. If a hospital is threatening your credit over a bill you're disputing, know that the rules are more in your favor than they used to be.
@@ -357,6 +408,58 @@ export default function MedicalBillAnalyzerPage() {
                     {qa.acceptedAnswer.text}
                   </div>
                 </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Related content */}
+        <section className="py-14 px-4" style={{ background: 'var(--cream)' }}>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold mb-8" style={{ color: 'var(--text-primary)' }}>
+              More on medical bills and healthcare costs
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                {
+                  title: 'How to Read and Audit an Itemized Hospital Bill',
+                  href: '/en/blog/how-to-audit-itemized-hospital-bill',
+                  desc: 'What each line item means and which charges are most commonly wrong.',
+                },
+                {
+                  title: 'How to Negotiate a Hospital Bill',
+                  href: '/en/blog/how-to-negotiate-hospital-bills',
+                  desc: 'Scripts and tactics for getting a bill reduced — even after you\'ve received it.',
+                },
+                {
+                  title: 'Hospital Charity Care: 501(r) Forgiveness Programs',
+                  href: '/en/blog/hospital-charity-care-501r-forgiveness',
+                  desc: 'How to find and apply for hospital financial assistance before you pay anything.',
+                },
+                {
+                  title: 'What Happens to Medical Debt on Your Credit Report',
+                  href: '/en/blog/how-medical-debt-affects-credit-score-2026',
+                  desc: 'New rules changed what hospitals can report. Know your rights.',
+                },
+                {
+                  title: 'Can\'t Pay Your Medical Bill? Your Options',
+                  href: '/en/blog/medical-bill-cant-pay-options',
+                  desc: 'Payment plans, hardship programs, debt settlement, and when to contact a patient advocate.',
+                },
+                {
+                  title: 'Check What Health Coverage You Qualify For',
+                  href: '/en/screener',
+                  desc: 'Find out if you\'re eligible for Medicaid, ACA plans, or other free coverage.',
+                },
+              ].map(({ title, href, desc }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="block p-5 bg-white rounded-xl border border-[var(--border-light)] hover:border-[var(--primary)] transition-colors no-underline"
+                >
+                  <p className="font-semibold text-sm mb-1" style={{ color: 'var(--text-primary)' }}>{title}</p>
+                  <p className="text-xs" style={{ color: 'var(--text-muted)' }}>{desc}</p>
+                </a>
               ))}
             </div>
           </div>
