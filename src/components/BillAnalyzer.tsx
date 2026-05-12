@@ -6,13 +6,17 @@ import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 type Step = 'upload' | 'analyzing' | 'results' | 'letter'
 
 const ANALYZING_STEPS = [
-  'Reading your bill...',
-  'Extracting line items...',
-  'Comparing to Medicare rates...',
-  'Checking for billing errors...',
-  'Checking charity care eligibility...',
-  'Preparing your results...',
+  'Reading your bill',
+  'Extracting line items',
+  'Comparing to Medicare rates',
+  'Checking for billing errors',
+  'Checking charity care eligibility',
+  'Preparing your results',
 ]
+
+const inputStyles =
+  'w-full px-4 py-3 border border-[var(--border)] rounded-lg bg-white text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent transition-shadow'
+const labelStyles = 'block text-sm font-medium text-[var(--text-primary)] mb-2'
 
 export default function BillAnalyzer() {
   const [step, setStep] = useState<Step>('upload')
@@ -25,6 +29,7 @@ export default function BillAnalyzer() {
   const [letterLoading, setLetterLoading] = useState(false)
   const [letterText, setLetterText] = useState('')
   const [patientName, setPatientName] = useState('')
+  const [copied, setCopied] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   function handleFileSelect(f: File) {
@@ -43,7 +48,6 @@ export default function BillAnalyzer() {
     setStep('analyzing')
     setError('')
 
-    // Progress animation
     let stepIdx = 0
     const interval = setInterval(() => {
       stepIdx = Math.min(stepIdx + 1, ANALYZING_STEPS.length - 1)
@@ -109,6 +113,12 @@ export default function BillAnalyzer() {
     URL.revokeObjectURL(url)
   }
 
+  function copyLetter() {
+    navigator.clipboard.writeText(letterText)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
   function reset() {
     setStep('upload')
     setFile(null)
@@ -118,115 +128,149 @@ export default function BillAnalyzer() {
     setAnalyzingStep(0)
   }
 
-  // ── UPLOAD STEP ──────────────────────────────────────────────
+  // ── UPLOAD ──────────────────────────────────────────────────
   if (step === 'upload') {
     return (
-      <div className="max-w-xl mx-auto">
-        <div
-          className="card-elevated rounded-2xl p-8 border-2 border-dashed transition-colors cursor-pointer"
-          style={{ borderColor: 'var(--border)', background: 'var(--warm-white)' }}
-          onDrop={handleDrop}
-          onDragOver={e => e.preventDefault()}
-          onClick={() => fileInputRef.current?.click()}
-        >
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/jpeg,image/png,image/webp,application/pdf"
-            className="hidden"
-            onChange={e => e.target.files?.[0] && handleFileSelect(e.target.files[0])}
-            capture="environment"
-          />
-
-          <div className="text-center">
-            <div className="text-5xl mb-4">📄</div>
-            {file ? (
-              <div>
-                <p className="font-semibold" style={{ color: 'var(--text-primary)' }}>
-                  {file.name}
-                </p>
-                <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-                  {(file.size / 1024 / 1024).toFixed(1)} MB — tap to change
-                </p>
-              </div>
-            ) : (
-              <div>
-                <p className="font-semibold text-lg" style={{ color: 'var(--text-primary)' }}>
-                  Upload your medical bill
-                </p>
-                <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-                  Drag and drop, tap to browse, or take a photo
-                </p>
-                <p className="text-xs mt-2" style={{ color: 'var(--text-muted)' }}>
-                  PDF, JPEG, PNG, or WebP — up to 10MB
-                </p>
-              </div>
-            )}
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-white border border-[var(--border-light)] rounded-xl p-6 md:p-8 shadow-sm">
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold text-[var(--text-primary)] mb-1">
+              Upload Your Bill
+            </h2>
+            <p className="text-sm text-[var(--text-muted)]">
+              Take a photo or upload a PDF of your hospital bill. Any format, any hospital.
+            </p>
           </div>
-        </div>
 
-        {/* Optional income fields */}
-        <div className="mt-6 rounded-xl p-5" style={{ background: 'var(--cream)', border: '1px solid var(--border-light)' }}>
-          <p className="text-sm font-medium mb-3" style={{ color: 'var(--text-secondary)' }}>
-            Optional: Add income info to check charity care eligibility
-          </p>
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>
-                Annual household income
-              </label>
-              <input
-                type="number"
-                placeholder="$35,000"
-                value={income}
-                onChange={e => setIncome(e.target.value)}
-                className="w-full rounded-lg px-3 py-2 text-sm border"
-                style={{
-                  borderColor: 'var(--border)',
-                  background: 'var(--warm-white)',
-                  color: 'var(--text-primary)',
-                }}
-                onClick={e => e.stopPropagation()}
-              />
-            </div>
-            <div>
-              <label className="text-xs mb-1 block" style={{ color: 'var(--text-muted)' }}>
-                Household size
-              </label>
-              <input
-                type="number"
-                placeholder="1"
-                min="1"
-                max="10"
-                value={householdSize}
-                onChange={e => setHouseholdSize(e.target.value)}
-                className="w-full rounded-lg px-3 py-2 text-sm border"
-                style={{
-                  borderColor: 'var(--border)',
-                  background: 'var(--warm-white)',
-                  color: 'var(--text-primary)',
-                }}
-                onClick={e => e.stopPropagation()}
-              />
-            </div>
-          </div>
-        </div>
-
-        {error && (
-          <div className="mt-4 rounded-lg p-3 text-sm" style={{ background: 'var(--error-light)', color: 'var(--error)' }}>
-            {error}
-          </div>
-        )}
-
-        <div className="mt-6 flex flex-col gap-3">
-          <button
-            onClick={e => { e.stopPropagation(); handleAnalyze() }}
-            disabled={!file}
-            className="btn-primary w-full py-4 text-base font-semibold rounded-xl disabled:opacity-40 disabled:cursor-not-allowed"
+          {/* Upload zone */}
+          <div
+            className="rounded-xl p-8 border-2 border-dashed transition-all cursor-pointer hover:border-[var(--primary)]"
+            style={{
+              borderColor: file ? 'var(--primary)' : 'var(--border)',
+              background: file ? 'var(--primary-lightest)' : 'var(--cream)',
+            }}
+            onDrop={handleDrop}
+            onDragOver={e => e.preventDefault()}
+            onClick={() => fileInputRef.current?.click()}
           >
-            Analyze My Bill — Free
-          </button>
-          <p className="text-xs text-center" style={{ color: 'var(--text-muted)' }}>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/jpeg,image/png,image/webp,application/pdf"
+              className="hidden"
+              onChange={e => e.target.files?.[0] && handleFileSelect(e.target.files[0])}
+              capture="environment"
+            />
+
+            <div className="text-center">
+              {file ? (
+                <div>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: 'var(--primary)' }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M5 13l4 4L19 7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <p className="font-semibold text-[var(--text-primary)]">
+                    {file.name}
+                  </p>
+                  <p className="text-sm mt-1 text-[var(--text-muted)]">
+                    {(file.size / 1024 / 1024).toFixed(1)} MB — tap to change
+                  </p>
+                </div>
+              ) : (
+                <div>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: 'var(--cream-dark)' }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                      <polyline points="17 8 12 3 7 8" />
+                      <line x1="12" y1="3" x2="12" y2="15" />
+                    </svg>
+                  </div>
+                  <p className="font-semibold text-[var(--text-primary)]">
+                    Upload your medical bill
+                  </p>
+                  <p className="text-sm mt-1 text-[var(--text-muted)]">
+                    Drag and drop, tap to browse, or take a photo
+                  </p>
+                  <p className="text-xs mt-2 text-[var(--text-muted)]">
+                    PDF, JPEG, PNG, or WebP — up to 10MB
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Income fields */}
+          <div className="mt-6">
+            <p className="text-sm font-medium text-[var(--text-primary)] mb-3">
+              Check charity care eligibility (optional)
+            </p>
+            <div className="bg-[var(--cream)] rounded-lg p-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className={labelStyles}>Annual household income</label>
+                  <div className="relative">
+                    <span className="absolute left-4 top-3.5 text-[var(--text-muted)]">$</span>
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      placeholder="35,000"
+                      value={income}
+                      onChange={e => {
+                        const raw = e.target.value.replace(/[^0-9]/g, '')
+                        const formatted = raw ? parseInt(raw, 10).toLocaleString('en-US') : ''
+                        setIncome(formatted)
+                      }}
+                      className={`${inputStyles} pl-8`}
+                      onClick={e => e.stopPropagation()}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label className={labelStyles}>Household size</label>
+                  <select
+                    value={householdSize}
+                    onChange={e => setHouseholdSize(e.target.value)}
+                    className={inputStyles}
+                    onClick={e => e.stopPropagation()}
+                  >
+                    <option value="">Select</option>
+                    {[1, 2, 3, 4, 5, 6, 7, 8].map(n => (
+                      <option key={n} value={n}>
+                        {n} {n === 1 ? 'person' : 'people'}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+              <p className="text-xs text-[var(--text-muted)] mt-3">
+                Nonprofit hospitals must offer financial assistance by law. Add your income to check if you qualify.
+              </p>
+            </div>
+          </div>
+
+          {/* Error */}
+          {error && (
+            <div className="mt-4 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">
+              {error}
+            </div>
+          )}
+
+          {/* Submit */}
+          <div className="mt-6">
+            <button
+              onClick={e => { e.stopPropagation(); handleAnalyze() }}
+              disabled={!file}
+              className="w-full py-3.5 px-4 rounded-lg font-medium transition-colors text-white disabled:opacity-40 disabled:cursor-not-allowed"
+              style={{ backgroundColor: '#0d9488' }}
+              onMouseEnter={e => { if (file) e.currentTarget.style.backgroundColor = '#0f766e' }}
+              onMouseLeave={e => { if (file) e.currentTarget.style.backgroundColor = '#0d9488' }}
+            >
+              Analyze My Bill
+            </button>
+          </div>
+
+          <p className="text-center text-xs text-[var(--text-muted)] mt-4">
             Your bill is never stored. Analyzed securely and deleted immediately.
           </p>
         </div>
@@ -234,32 +278,62 @@ export default function BillAnalyzer() {
     )
   }
 
-  // ── ANALYZING STEP ───────────────────────────────────────────
+  // ── ANALYZING ───────────────────────────────────────────────
   if (step === 'analyzing') {
+    const progressPct = Math.round(((analyzingStep + 1) / ANALYZING_STEPS.length) * 100)
+
     return (
-      <div className="max-w-xl mx-auto text-center py-12">
-        <div className="inline-block w-12 h-12 rounded-full border-4 border-t-transparent animate-spin mb-6"
-          style={{ borderColor: 'var(--primary)', borderTopColor: 'transparent' }} />
-        <p className="text-lg font-medium" style={{ color: 'var(--text-primary)' }}>
-          {ANALYZING_STEPS[analyzingStep]}
-        </p>
-        <p className="text-sm mt-2" style={{ color: 'var(--text-muted)' }}>
-          Usually takes 15-30 seconds
-        </p>
-        <div className="mt-8 flex gap-2 justify-center">
-          {ANALYZING_STEPS.map((_, i) => (
-            <div
-              key={i}
-              className="w-2 h-2 rounded-full transition-colors duration-500"
-              style={{ background: i <= analyzingStep ? 'var(--primary)' : 'var(--border)' }}
-            />
-          ))}
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-white border border-[var(--border-light)] rounded-xl p-6 md:p-8 shadow-sm">
+          <div className="text-center py-8">
+            {/* Spinner */}
+            <div className="relative w-16 h-16 mx-auto mb-6">
+              <svg className="w-16 h-16 animate-spin" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="28" stroke="var(--border-light)" strokeWidth="4" />
+                <path
+                  d="M32 4a28 28 0 0 1 28 28"
+                  stroke="var(--primary)"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div>
+
+            <p className="text-lg font-semibold text-[var(--text-primary)] mb-1">
+              Analyzing your bill
+            </p>
+            <p className="text-sm text-[var(--text-muted)] mb-6">
+              This usually takes 15-30 seconds
+            </p>
+
+            {/* Progress bar matching screener */}
+            <div className="max-w-sm mx-auto mb-4">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-sm text-[var(--text-muted)]">
+                  Step {analyzingStep + 1} of {ANALYZING_STEPS.length}
+                </p>
+                <p className="text-sm font-medium" style={{ color: '#0d9488' }}>
+                  {progressPct}%
+                </p>
+              </div>
+              <div className="h-2 bg-[var(--border-light)] rounded-full overflow-hidden">
+                <div
+                  className="h-full rounded-full transition-all duration-500"
+                  style={{ backgroundColor: '#0d9488', width: `${progressPct}%` }}
+                />
+              </div>
+            </div>
+
+            <p className="text-sm font-medium" style={{ color: '#0d9488' }}>
+              {ANALYZING_STEPS[analyzingStep]}
+            </p>
+          </div>
         </div>
       </div>
     )
   }
 
-  // ── RESULTS STEP ─────────────────────────────────────────────
+  // ── RESULTS ─────────────────────────────────────────────────
   if (step === 'results' && result) {
     const savings = result.summary.totalOvercharge
     const hasRates = result.summary.lineItemsWithRates > 0
@@ -267,68 +341,93 @@ export default function BillAnalyzer() {
     return (
       <div className="max-w-2xl mx-auto space-y-6">
         {/* Summary card */}
-        <div className="rounded-2xl p-6 text-white" style={{ background: 'linear-gradient(135deg, var(--primary-deeper), var(--primary-dark))' }}>
-          <p className="text-sm opacity-80 mb-1">Analysis complete — {result.provider.name}</p>
-          <div className="grid grid-cols-3 gap-4 mt-4">
-            <div>
-              <p className="text-xs opacity-70">You were billed</p>
-              <p className="text-xl font-bold">${result.summary.totalBilled.toLocaleString()}</p>
+        <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border-light)' }}>
+          <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, var(--primary-deeper), var(--primary-dark))' }}>
+            <p className="text-sm text-white/70 mb-1">Analysis Complete</p>
+            <p className="text-lg font-semibold text-white">{result.provider.name}</p>
+          </div>
+
+          <div className="bg-white px-6 py-5">
+            <div className={`grid ${hasRates ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-1'} gap-6`}>
+              <div>
+                <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Total Billed</p>
+                <p className="text-2xl font-bold text-[var(--text-primary)]">
+                  ${result.summary.totalBilled.toLocaleString()}
+                </p>
+              </div>
+              {hasRates && (
+                <>
+                  <div>
+                    <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Medicare Rate</p>
+                    <p className="text-2xl font-bold text-[var(--text-primary)]">
+                      ${result.summary.totalMedicareRate.toLocaleString()}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Potential Savings</p>
+                    <p className="text-2xl font-bold" style={{ color: 'var(--error)' }}>
+                      ${savings.toLocaleString()}
+                    </p>
+                  </div>
+                </>
+              )}
             </div>
-            {hasRates && (
-              <>
-                <div>
-                  <p className="text-xs opacity-70">Medicare rate</p>
-                  <p className="text-xl font-bold">${result.summary.totalMedicareRate.toLocaleString()}</p>
-                </div>
-                <div>
-                  <p className="text-xs opacity-70">Potential overcharge</p>
-                  <p className="text-xl font-bold text-yellow-300">
-                    ${savings.toLocaleString()}
-                  </p>
-                </div>
-              </>
+
+            {result.summary.errorsFound > 0 && (
+              <div className="mt-4 px-4 py-3 rounded-lg text-sm font-medium" style={{ background: 'var(--warning-light)', color: 'var(--warning)' }}>
+                {result.summary.errorsFound} billing error{result.summary.errorsFound > 1 ? 's' : ''} detected
+              </div>
             )}
           </div>
-          {result.summary.errorsFound > 0 && (
-            <div className="mt-4 rounded-lg px-3 py-2 text-sm" style={{ background: 'rgba(255,255,255,0.15)' }}>
-              {result.summary.errorsFound} billing error{result.summary.errorsFound > 1 ? 's' : ''} detected
-            </div>
-          )}
         </div>
 
         {/* Line items */}
-        <div className="card rounded-2xl overflow-hidden">
-          <div className="px-5 py-4 border-b" style={{ borderColor: 'var(--border-light)' }}>
-            <h3 className="font-semibold" style={{ color: 'var(--text-primary)' }}>
+        <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
+          <div className="px-6 py-4 border-b border-[var(--border-light)]">
+            <h3 className="text-lg font-semibold text-[var(--text-primary)]">
               Line-by-Line Breakdown
             </h3>
+            <p className="text-sm text-[var(--text-muted)]">
+              Each charge compared to the Medicare national rate
+            </p>
           </div>
-          <div className="divide-y" style={{ borderColor: 'var(--border-light)' }}>
+          <div className="divide-y divide-[var(--border-light)]">
             {result.lineItems.map((item, i) => (
-              <div key={i} className="px-5 py-4">
+              <div key={i} className="px-6 py-4">
                 <div className="flex justify-between items-start gap-4">
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium truncate" style={{ color: 'var(--text-primary)' }}>
+                    <p className="text-sm font-medium text-[var(--text-primary)]">
                       {item.description}
                     </p>
-                    {item.flags.map((flag, fi) => (
-                      <p key={fi} className="text-xs mt-1" style={{ color: flag.severity === 'high' ? 'var(--error)' : 'var(--warning)' }}>
-                        {flag.severity === 'high' ? '⚠️' : '!'} {flag.explanation}
-                      </p>
-                    ))}
+                    {item.flags.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {item.flags.map((flag, fi) => (
+                          <span
+                            key={fi}
+                            className="inline-flex items-center gap-1 text-xs font-medium px-2.5 py-1 rounded-full"
+                            style={{
+                              background: flag.severity === 'high' ? 'var(--error-light)' : 'var(--warning-light)',
+                              color: flag.severity === 'high' ? 'var(--error)' : 'var(--warning)',
+                            }}
+                          >
+                            {flag.explanation}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <div className="text-right shrink-0">
-                    <p className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
+                    <p className="text-sm font-semibold text-[var(--text-primary)]">
                       ${item.billedAmount.toLocaleString()}
                     </p>
                     {item.medicareRate != null && (
-                      <p className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>
+                      <p className="text-xs mt-1 text-[var(--text-muted)]">
                         Medicare: ${item.medicareRate.toLocaleString()}
                       </p>
                     )}
                     {item.overchargeAmount != null && item.overchargeAmount > 0 && (
-                      <p className="text-xs font-medium mt-0.5" style={{ color: 'var(--error)' }}>
-                        +${item.overchargeAmount.toLocaleString()} ({item.overchargePercent}%)
+                      <p className="text-xs font-medium mt-1" style={{ color: 'var(--error)' }}>
+                        +${item.overchargeAmount.toLocaleString()} ({item.overchargePercent}% over)
                       </p>
                     )}
                   </div>
@@ -340,95 +439,165 @@ export default function BillAnalyzer() {
 
         {/* Charity care */}
         {result.charityCare.hospitalIsNonprofit && (
-          <div className="rounded-2xl p-5" style={{ background: 'var(--success-light)', border: '1px solid #6ee7b7' }}>
-            <p className="font-semibold text-sm mb-2" style={{ color: '#065f46' }}>
-              {result.charityCare.eligible
-                ? 'You may qualify for free or reduced care'
-                : 'This hospital has a charity care program'}
-            </p>
-            <p className="text-sm mb-3" style={{ color: '#047857' }}>
-              {result.charityCare.explanation}
-            </p>
-            <ul className="space-y-1">
-              {result.charityCare.nextSteps.map((step, i) => (
-                <li key={i} className="text-xs flex gap-2" style={{ color: '#065f46' }}>
-                  <span>•</span><span>{step}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
+            <div className="border-l-4 p-5" style={{ borderLeftColor: 'var(--success)' }}>
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ background: 'var(--success)' }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 13l4 4L19 7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-semibold text-sm text-[var(--text-primary)] mb-1">
+                    {result.charityCare.eligible
+                      ? 'You may qualify for free or reduced care'
+                      : 'This hospital has a charity care program'}
+                  </p>
+                  <p className="text-sm text-[var(--text-secondary)] mb-3">
+                    {result.charityCare.explanation}
+                  </p>
+                  <div className="bg-[var(--cream)] rounded-lg p-4">
+                    <p className="text-xs font-medium text-[var(--text-primary)] mb-2 uppercase tracking-wide">Next Steps</p>
+                    <ul className="space-y-1.5">
+                      {result.charityCare.nextSteps.map((s, i) => (
+                        <li key={i} className="text-sm text-[var(--text-secondary)] flex gap-2">
+                          <span className="text-[var(--success)] font-bold shrink-0">{i + 1}.</span>
+                          <span>{s}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         )}
 
-        {/* Actions */}
-        <div className="space-y-3">
-          <div className="flex gap-2">
-            <input
-              type="text"
-              placeholder="Your name (for the letter)"
-              value={patientName}
-              onChange={e => setPatientName(e.target.value)}
-              className="flex-1 rounded-xl px-4 py-3 text-sm border"
-              style={{ borderColor: 'var(--border)', color: 'var(--text-primary)', background: 'var(--warm-white)' }}
-            />
+        {/* Generate letter */}
+        <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-6">
+          <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-1">
+            Dispute This Bill
+          </h3>
+          <p className="text-sm text-[var(--text-muted)] mb-4">
+            Generate a formal dispute letter to send to the hospital billing department.
+          </p>
+
+          <div className="space-y-4">
+            <div>
+              <label className={labelStyles}>Your name (for the letter)</label>
+              <input
+                type="text"
+                placeholder="First and last name"
+                value={patientName}
+                onChange={e => setPatientName(e.target.value)}
+                className={inputStyles}
+              />
+            </div>
+            <button
+              onClick={handleGetLetter}
+              disabled={letterLoading}
+              className="w-full py-3.5 px-4 rounded-lg font-medium transition-colors text-white disabled:opacity-50 disabled:cursor-not-allowed"
+              style={{ backgroundColor: '#0d9488' }}
+              onMouseEnter={e => { if (!letterLoading) e.currentTarget.style.backgroundColor = '#0f766e' }}
+              onMouseLeave={e => { if (!letterLoading) e.currentTarget.style.backgroundColor = '#0d9488' }}
+            >
+              {letterLoading ? 'Generating letter...' : 'Generate Dispute Letter'}
+            </button>
           </div>
-          <button
-            onClick={handleGetLetter}
-            disabled={letterLoading}
-            className="btn-primary w-full py-4 rounded-xl font-semibold disabled:opacity-50"
-          >
-            {letterLoading ? 'Generating letter...' : 'Generate Dispute Letter'}
-          </button>
-          <a
-            href="/en/screener"
-            className="btn-secondary w-full py-4 rounded-xl font-semibold text-center block"
-            style={{ textDecoration: 'none' }}
-          >
-            Check What Benefits You Qualify For
-          </a>
         </div>
 
+        {/* Cross-sell */}
+        <a
+          href="/en/screener"
+          className="block bg-[var(--cream)] border border-[var(--border-light)] rounded-xl p-5 transition-all hover:shadow-md"
+          style={{ textDecoration: 'none' }}
+        >
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="font-semibold text-sm text-[var(--text-primary)]">Check what benefits you qualify for</p>
+              <p className="text-xs text-[var(--text-muted)] mt-0.5">Free health coverage screener — takes 3 minutes</p>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </div>
+        </a>
+
         {/* Disclaimer */}
-        <p className="text-xs text-center" style={{ color: 'var(--text-muted)' }}>
+        <p className="text-xs text-center text-[var(--text-muted)]">
           {result.disclaimer}
         </p>
 
-        <button onClick={reset} className="text-sm underline w-full text-center" style={{ color: 'var(--text-muted)' }}>
+        <button onClick={reset} className="text-sm w-full text-center font-medium transition-colors" style={{ color: 'var(--primary)' }}>
           Analyze another bill
         </button>
       </div>
     )
   }
 
-  // ── LETTER STEP ──────────────────────────────────────────────
+  // ── LETTER ──────────────────────────────────────────────────
   if (step === 'letter') {
     return (
       <div className="max-w-2xl mx-auto space-y-6">
-        <div className="card rounded-2xl p-6">
-          <h3 className="font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
-            Your Dispute Letter
-          </h3>
-          <div
-            className="rounded-xl p-4 text-sm whitespace-pre-wrap font-mono overflow-auto max-h-96"
-            style={{ background: 'var(--cream)', color: 'var(--text-secondary)', border: '1px solid var(--border-light)' }}
-          >
-            {letterText}
+        <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
+          <div className="px-6 py-4 border-b border-[var(--border-light)]">
+            <h3 className="text-lg font-semibold text-[var(--text-primary)]">
+              Your Dispute Letter
+            </h3>
+            <p className="text-sm text-[var(--text-muted)]">
+              Review the letter below, then download or copy it.
+            </p>
+          </div>
+          <div className="p-6">
+            <div
+              className="rounded-lg p-6 text-sm leading-relaxed whitespace-pre-wrap overflow-auto max-h-[32rem]"
+              style={{
+                background: 'var(--cream)',
+                color: 'var(--text-secondary)',
+                fontFamily: 'var(--font-body), Georgia, serif',
+                border: '1px solid var(--border-light)',
+              }}
+            >
+              {letterText}
+            </div>
           </div>
         </div>
-        <div className="space-y-3">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button
             onClick={downloadLetter}
-            className="btn-primary w-full py-4 rounded-xl font-semibold"
+            className="py-3.5 px-4 rounded-lg font-medium transition-colors text-white"
+            style={{ backgroundColor: '#0d9488' }}
+            onMouseEnter={e => e.currentTarget.style.backgroundColor = '#0f766e'}
+            onMouseLeave={e => e.currentTarget.style.backgroundColor = '#0d9488'}
           >
             Download Letter
           </button>
           <button
-            onClick={() => setStep('results')}
-            className="btn-secondary w-full py-3 rounded-xl font-semibold"
+            onClick={copyLetter}
+            className="py-3.5 px-4 rounded-lg font-medium transition-colors border-2"
+            style={{
+              borderColor: 'var(--border)',
+              color: copied ? 'var(--success)' : 'var(--text-primary)',
+              backgroundColor: copied ? 'var(--success-light)' : 'transparent',
+            }}
           >
-            Back to Results
+            {copied ? 'Copied' : 'Copy to Clipboard'}
           </button>
         </div>
-        <p className="text-xs text-center" style={{ color: 'var(--text-muted)' }}>
+
+        <button
+          onClick={() => setStep('results')}
+          className="text-sm w-full text-center font-medium transition-colors flex items-center justify-center gap-1"
+          style={{ color: 'var(--primary)' }}
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to results
+        </button>
+
+        <p className="text-xs text-center text-[var(--text-muted)]">
           This letter is for informational purposes only and does not constitute legal advice.
           Review carefully before sending. Consider consulting a medical billing advocate for large bills.
         </p>
