@@ -40,11 +40,11 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
     .map(
       item => `
                 <tr>
-                  <td style="padding: 10px 0; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">
+                  <td style="padding: 10px 8px 10px 0; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">
                     ${item.description}
                     ${item.flags.length > 0 ? `<br><span style="font-size: 12px; color: #dc2626; font-weight: 600;">${item.flags.map(f => f.type === 'duplicate' ? 'Duplicate charge' : f.type === 'unbundled' ? 'Unbundled procedure' : f.type === 'upcoding' ? 'Possible upcoding' : f.type === 'overcoding' ? 'Overcoding' : f.explanation).join(', ')}</span>` : ''}
                   </td>
-                  <td style="padding: 10px 0 10px 12px; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap; font-weight: 600;">
+                  <td style="padding: 10px 8px 10px 12px; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap; font-weight: 600;">
                     ${formatMoney(item.billedAmount)}
                   </td>
                   <td style="padding: 10px 0 10px 12px; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap;">
@@ -64,13 +64,13 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
   const charityCareHtml = charityCare.eligible
     ? `
               <tr>
-                <td style="padding: 28px 36px 0 36px;">
+                <td style="padding: 24px 36px 0 36px;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f0fdf4; border-radius: 8px; border: 1px solid #bbf7d0;">
                     <tr>
-                      <td style="padding: 16px;">
+                      <td style="padding: 16px 20px;">
                         <p style="margin: 0 0 6px 0; font-size: 14px; font-weight: 700; color: #166534; font-family: Georgia, 'Times New Roman', serif;">You may qualify for financial assistance</p>
                         <p style="margin: 0; font-size: 13px; line-height: 20px; color: #166534; font-family: Georgia, 'Times New Roman', serif;">
-                          ${provider.name} is a nonprofit hospital. Under federal law, they are required to offer financial assistance to patients who qualify. ${charityCare.fplPercent ? `Based on your income, you are at ${charityCare.fplPercent}% of the federal poverty level.` : ''} Contact the hospital's billing department and ask about their Financial Assistance Policy.
+                          ${provider.name} is a nonprofit hospital. Under federal law, they must offer financial assistance to qualifying patients. ${charityCare.fplPercent ? `Based on your income, you are at ${charityCare.fplPercent}% of the federal poverty level.` : ''} Ask the billing department about their Financial Assistance Policy.
                         </p>
                       </td>
                     </tr>
@@ -79,24 +79,17 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
               </tr>`
     : ''
 
-  // Letter attachment note
-  const letterNote = letterGenerated
-    ? `<p style="margin: 0 0 16px 0; font-size: 16px; line-height: 26px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">
-                Your dispute letter is attached in two formats: a PDF you can print and a Word document you can edit. Send whichever works best for you.
-              </p>`
-    : ''
-
-  // "What to do next" steps — each step is a <tr> with generous top padding
+  // "What to do next" steps
   function stepHtml(num: number, title: string, desc: string, first = false) {
     return `<tr>
-                <td style="padding: ${first ? '0' : '20px'} 0 0 0;">
+                <td style="padding: ${first ? '0' : '18px'} 0 0 0;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                     <tr>
-                      <td style="width: 26px; vertical-align: top; padding-top: 1px;">
+                      <td style="width: 28px; vertical-align: top; padding-top: 1px;">
                         <div style="width: 24px; height: 24px; border-radius: 50%; background-color: #0d9488; color: #ffffff; font-size: 13px; font-weight: 700; text-align: center; line-height: 24px; font-family: Georgia, 'Times New Roman', serif;">${num}</div>
                       </td>
                       <td style="padding-left: 12px; vertical-align: top;">
-                        <p style="margin: 0 0 5px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">${title}</p>
+                        <p style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">${title}</p>
                         <p style="margin: 0; font-size: 14px; line-height: 22px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">${desc}</p>
                       </td>
                     </tr>
@@ -106,21 +99,26 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
   }
 
   const step3Html = charityCare.eligible
-    ? stepHtml(3, 'Apply for financial assistance', `Ask ${provider.name} for their Financial Assistance Policy application. You will need proof of income (a recent pay stub or tax return). Submit it along with your dispute.`)
+    ? stepHtml(3, 'Apply for financial assistance', `Ask ${provider.name} for their Financial Assistance Policy application. You will need proof of income. Submit it along with your dispute.`)
     : ''
 
   const nextStepsHtml = letterGenerated
     ? `
           <tr>
-            <td style="padding: 28px 36px 4px 36px;">
+            <td style="padding: 28px 36px 0 36px;">
               <p style="margin: 0 0 20px 0; font-size: 16px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">What to do next</p>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
               ${stepHtml(1, 'Call the billing department', "Call the number on your bill and tell them you are disputing charges. Ask for the billing department's email or fax number so you can send your letter.", true)}
-              ${stepHtml(2, 'Send your dispute letter', 'Email or mail the attached letter. The Word document is editable if you need to add details. Keep a copy for your records.')}
+              ${stepHtml(2, 'Send your dispute letter', 'Your letter is attached as a PDF and an editable Word document. Email or mail it to the billing department. Keep a copy for your records.')}
               ${step3Html}
               </table>
             </td>
           </tr>`
+    : ''
+
+  // Intro paragraph — letter mention is folded in here, not as a separate block
+  const letterMention = letterGenerated
+    ? ` Your dispute letter is attached — both a PDF and an editable Word doc.`
     : ''
 
   return `<!DOCTYPE html>
@@ -156,49 +154,37 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
             </td>
           </tr>
 
-          <!-- Greeting -->
+          <!-- Greeting + intro (letter mention folded in) -->
           <tr>
-            <td style="padding: 24px 36px 0 36px;">
-              <p style="margin: 0; font-size: 17px; line-height: 28px; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">${greeting}</p>
-            </td>
-          </tr>
-
-          <!-- Main message -->
-          <tr>
-            <td style="padding: 16px 36px 0 36px;">
-              <p style="margin: 0 0 16px 0; font-size: 16px; line-height: 26px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">
-                We analyzed your bill from <strong style="color: #1C1A16;">${provider.name}</strong> and found <strong style="color: #dc2626;">${formatMoney(summary.totalOvercharge)}</strong> in potential savings. ${summary.errorsFound > 0 ? `We also flagged ${summary.errorsFound} billing error${summary.errorsFound > 1 ? 's' : ''}.` : ''}
+            <td style="padding: 24px 36px 20px 36px;">
+              <p style="margin: 0 0 14px 0; font-size: 17px; line-height: 28px; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">${greeting}</p>
+              <p style="margin: 0; font-size: 16px; line-height: 26px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">
+                We analyzed your bill from <strong style="color: #1C1A16;">${provider.name}</strong> and found <strong style="color: #dc2626;">${formatMoney(summary.totalOvercharge)}</strong> in potential savings${summary.errorsFound > 0 ? `, with ${summary.errorsFound} billing error${summary.errorsFound > 1 ? 's' : ''} flagged` : ''}.${letterMention}
               </p>
-              ${letterNote}
             </td>
           </tr>
 
-          <!-- Summary card — single-column for mobile compatibility -->
+          <!-- Summary card — 2-col top (Billed | Federal) + full-width bottom (Savings) -->
           <tr>
             <td style="padding: 0 36px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #134e4a; border-radius: 8px;">
                 <tr>
-                  <td style="padding: 20px 24px;">
-                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                      <tr>
-                        <td style="padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.15);">
-                          <p style="margin: 0 0 2px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Total billed</p>
-                          <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalBilled)}</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.15);">
-                          <p style="margin: 0 0 2px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Federal rate</p>
-                          <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalMedicareRate)}</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-top: 14px;">
-                          <p style="margin: 0 0 2px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Potential savings</p>
-                          <p style="margin: 0; font-size: 26px; font-weight: 700; color: #fca5a5; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalOvercharge)}</p>
-                        </td>
-                      </tr>
-                    </table>
+                  <!-- Total Billed -->
+                  <td style="width: 50%; padding: 20px 12px 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.15); border-right: 1px solid rgba(255,255,255,0.15); vertical-align: top;">
+                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Total billed</p>
+                    <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalBilled)}</p>
+                  </td>
+                  <!-- Federal Rate -->
+                  <td style="width: 50%; padding: 20px 20px 16px 12px; border-bottom: 1px solid rgba(255,255,255,0.15); vertical-align: top;">
+                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Federal rate</p>
+                    <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalMedicareRate)}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <!-- Potential Savings — full width, highlighted -->
+                  <td colspan="2" style="padding: 16px 20px 20px 20px;">
+                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Potential savings</p>
+                    <p style="margin: 0; font-size: 28px; font-weight: 700; color: #fca5a5; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalOvercharge)}</p>
                   </td>
                 </tr>
               </table>
@@ -212,9 +198,9 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
               <p style="margin: 0 0 12px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Flagged charges</p>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
-                  <td style="padding: 6px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; border-bottom: 1px solid #d6cfc5;">Item</td>
-                  <td style="padding: 6px 0 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5;">Billed</td>
-                  <td style="padding: 6px 0 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5;">Federal</td>
+                  <td style="padding: 6px 8px 6px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; border-bottom: 1px solid #d6cfc5;">Item</td>
+                  <td style="padding: 6px 8px 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5; white-space: nowrap;">Billed</td>
+                  <td style="padding: 6px 0 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5; white-space: nowrap;">Federal</td>
                 </tr>
                 ${lineItemRows}
                 ${remainingRow}
@@ -223,11 +209,11 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
           </tr>` : ''}
 
           ${charityCareHtml}
-${nextStepsHtml}
+          ${nextStepsHtml}
 
           <!-- CTA -->
           <tr>
-            <td style="padding: 24px 36px 0 36px;">
+            <td style="padding: 28px 36px 0 36px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td style="border-radius: 8px; background-color: #0d9488; text-align: center;">
@@ -240,7 +226,7 @@ ${nextStepsHtml}
 
           <!-- Screener cross-sell -->
           <tr>
-            <td style="padding: 14px 36px 0 36px;">
+            <td style="padding: 12px 36px 0 36px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td style="border-radius: 8px; border: 2px solid #0d9488; text-align: center;">
