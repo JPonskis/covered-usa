@@ -162,7 +162,7 @@ export default function MedicalBillAnalyzerPage() {
         </section>
 
         {/* Tool */}
-        <section className="py-10 px-4">
+        <section id="analyzer" className="py-10 px-4">
           <BillAnalyzer />
         </section>
 
@@ -291,8 +291,7 @@ export default function MedicalBillAnalyzerPage() {
               Free, no signup, no data stored. Results in under 30 seconds.
             </p>
             <a
-              href="#"
-              onClick={e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+              href="#analyzer"
               className="inline-block px-8 py-3 rounded-xl font-semibold text-sm"
               style={{ background: 'white', color: 'var(--primary-deeper)' }}
             >
