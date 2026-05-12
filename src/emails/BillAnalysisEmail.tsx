@@ -44,10 +44,10 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
                     ${item.description}
                     ${item.flags.length > 0 ? `<br><span style="font-size: 12px; color: #dc2626; font-weight: 600;">${item.flags.map(f => f.type === 'duplicate' ? 'Duplicate charge' : f.type === 'unbundled' ? 'Unbundled procedure' : f.type === 'upcoding' ? 'Possible upcoding' : f.type === 'overcoding' ? 'Overcoding' : f.explanation).join(', ')}</span>` : ''}
                   </td>
-                  <td style="padding: 10px 0; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap; font-weight: 600;">
+                  <td style="padding: 10px 0 10px 12px; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap; font-weight: 600;">
                     ${formatMoney(item.billedAmount)}
                   </td>
-                  <td style="padding: 10px 0; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap;">
+                  <td style="padding: 10px 0 10px 12px; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap;">
                     ${item.medicareRate ? formatMoney(item.medicareRate) : 'N/A'}
                   </td>
                 </tr>`
@@ -213,8 +213,8 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td style="padding: 6px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; border-bottom: 1px solid #d6cfc5;">Item</td>
-                  <td style="padding: 6px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5;">Billed</td>
-                  <td style="padding: 6px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5;">Federal</td>
+                  <td style="padding: 6px 0 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5;">Billed</td>
+                  <td style="padding: 6px 0 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5;">Federal</td>
                 </tr>
                 ${lineItemRows}
                 ${remainingRow}
