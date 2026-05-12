@@ -145,3 +145,46 @@ export function getMedicalOrganizationSchema() {
     knowsAbout: ['Medicaid', 'Medicare', 'ACA Marketplace', 'CHIP', 'Health Insurance'],
   };
 }
+
+/**
+ * MedicalWebPage — the page-level schema for programmatic data hubs and
+ * reference pages. Signals to AI search engines that the page is a
+ * curated, reviewed medical-information page (stronger trust signal than
+ * generic Article schema).
+ *
+ * Always include lastReviewed (date) so AI engines can confirm freshness.
+ */
+export function getMedicalWebPageSchema(props: {
+  url: string;
+  name: string;
+  description: string;
+  lastReviewed: string;
+  about?: string;
+  audience?: 'Patient' | 'PublicHealth' | 'Consumer';
+  medicalSpecialty?: string;
+}) {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    url: `${BASE_URL}${props.url}`,
+    name: props.name,
+    description: props.description,
+    lastReviewed: props.lastReviewed,
+    reviewedBy: {
+      '@type': 'Organization',
+      name: 'CoveredUSA',
+      url: BASE_URL,
+    },
+    isAccessibleForFree: true,
+  };
+  if (props.about) {
+    schema.about = { '@type': 'MedicalEntity', name: props.about };
+  }
+  if (props.audience) {
+    schema.audience = { '@type': 'MedicalAudience', audienceType: props.audience };
+  }
+  if (props.medicalSpecialty) {
+    schema.medicalSpecialty = props.medicalSpecialty;
+  }
+  return schema;
+}

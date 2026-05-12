@@ -1,17 +1,30 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { setRequestLocale } from 'next-intl/server';
-import { getFAQSchema, getBreadcrumbSchema } from '@/lib/structured-data';
+import {
+  getFAQSchema,
+  getBreadcrumbSchema,
+  getMedicalWebPageSchema,
+} from '@/lib/structured-data';
+import {
+  ReferenceTable,
+  FAQSection,
+  LastUpdated,
+  DatasetSchema,
+  ScreenerCTA,
+  QuickAnswer,
+  PullQuote,
+  type ReferenceTableCell,
+} from '@/components/reference';
 
 interface PageProps {
   params: Promise<{ locale: string }>;
 }
 
-const BASE_URL = 'https://coveredusa.org';
-
-// FPL 2026: $15,960 base for 1 person, +$5,680 per additional person
+// FPL 2026: $15,960 base for 1 person, +$5,680 per additional person (48 contiguous states)
 const FPL_BASE = 15960;
 const FPL_ADDITIONAL = 5680;
+const LAST_UPDATED = '2026-05-12';
 
 function fpl(size: number): number {
   return FPL_BASE + (size - 1) * FPL_ADDITIONAL;
@@ -27,33 +40,69 @@ function fmt(n: number): string {
 
 const HOUSEHOLD_SIZES = [1, 2, 3, 4, 5, 6, 7, 8];
 
-// Major states with expansion status and notable notes
-const STATES = [
-  { name: 'Alabama', expanded: false, note: 'Limited coverage; adults generally not covered' },
-  { name: 'Alaska', expanded: true, note: 'Higher FPL limits apply ($20,001 base for 1 person)' },
-  { name: 'Arizona', expanded: true, note: 'Standard expansion; 138% FPL' },
-  { name: 'California', expanded: true, note: 'CalAIM; covers undocumented adults' },
-  { name: 'Colorado', expanded: true, note: 'Standard expansion; 138% FPL' },
-  { name: 'Florida', expanded: false, note: 'Limited; primarily children and pregnant women' },
-  { name: 'Georgia', expanded: false, note: 'Partial expansion; work requirements apply' },
-  { name: 'Illinois', expanded: true, note: 'Standard expansion; 138% FPL' },
-  { name: 'Michigan', expanded: true, note: 'Standard expansion; 138% FPL' },
-  { name: 'New York', expanded: true, note: 'Standard expansion; 138% FPL' },
-  { name: 'North Carolina', expanded: true, note: 'Expanded in 2024; 138% FPL' },
-  { name: 'Ohio', expanded: true, note: 'Standard expansion; 138% FPL' },
-  { name: 'Pennsylvania', expanded: true, note: 'Standard expansion; 138% FPL' },
-  { name: 'Texas', expanded: false, note: 'Very limited; primarily children under 19 and pregnant women' },
-  { name: 'Washington', expanded: true, note: 'Standard expansion; 138% FPL' },
+// All 50 states + DC with expansion status (as of 2026)
+const STATES: { name: string; expanded: boolean; note: { en: string; es: string } }[] = [
+  { name: 'Alabama', expanded: false, note: { en: 'Limited coverage; adults generally not covered', es: 'Cobertura limitada; los adultos generalmente no están cubiertos' } },
+  { name: 'Alaska', expanded: true, note: { en: 'Higher FPL limits apply ($19,950 base for 1 person)', es: 'Aplican límites de FPL más altos ($19,950 base para 1 persona)' } },
+  { name: 'Arizona', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Arkansas', expanded: true, note: { en: 'Expansion via "Arkansas Works" private option', es: 'Expansión vía opción privada "Arkansas Works"' } },
+  { name: 'California', expanded: true, note: { en: 'CalAIM; covers undocumented adults', es: 'CalAIM; cubre adultos indocumentados' } },
+  { name: 'Colorado', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Connecticut', expanded: true, note: { en: 'HUSKY Health; standard expansion', es: 'HUSKY Health; expansión estándar' } },
+  { name: 'Delaware', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'District of Columbia', expanded: true, note: { en: 'Covers up to 215% FPL for adults', es: 'Cubre hasta el 215% FPL para adultos' } },
+  { name: 'Florida', expanded: false, note: { en: 'Limited; primarily children, pregnant women, parents under 30% FPL', es: 'Limitado; principalmente niños, mujeres embarazadas, padres bajo 30% FPL' } },
+  { name: 'Georgia', expanded: false, note: { en: 'Partial expansion (Pathways); work requirements apply', es: 'Expansión parcial (Pathways); requisitos de trabajo' } },
+  { name: 'Hawaii', expanded: true, note: { en: 'Higher FPL limits apply ($18,360 base for 1 person)', es: 'Aplican límites de FPL más altos ($18,360 base para 1 persona)' } },
+  { name: 'Idaho', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Illinois', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Indiana', expanded: true, note: { en: 'Healthy Indiana Plan; standard expansion', es: 'Healthy Indiana Plan; expansión estándar' } },
+  { name: 'Iowa', expanded: true, note: { en: 'IA Health Link; standard expansion', es: 'IA Health Link; expansión estándar' } },
+  { name: 'Kansas', expanded: false, note: { en: 'Did not expand; limited adult coverage', es: 'No expandió; cobertura limitada para adultos' } },
+  { name: 'Kentucky', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Louisiana', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Maine', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Maryland', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Massachusetts', expanded: true, note: { en: 'MassHealth; predates ACA expansion', es: 'MassHealth; precede la expansión del ACA' } },
+  { name: 'Michigan', expanded: true, note: { en: 'Healthy Michigan Plan; standard expansion', es: 'Healthy Michigan Plan; expansión estándar' } },
+  { name: 'Minnesota', expanded: true, note: { en: 'MinnesotaCare; standard expansion', es: 'MinnesotaCare; expansión estándar' } },
+  { name: 'Mississippi', expanded: false, note: { en: 'Did not expand; very limited adult coverage', es: 'No expandió; cobertura para adultos muy limitada' } },
+  { name: 'Missouri', expanded: true, note: { en: 'Expanded via ballot initiative; 138% FPL', es: 'Expandido vía iniciativa electoral; 138% FPL' } },
+  { name: 'Montana', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Nebraska', expanded: true, note: { en: 'Expanded via ballot; standard expansion', es: 'Expandido vía boleta; expansión estándar' } },
+  { name: 'Nevada', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'New Hampshire', expanded: true, note: { en: 'Granite Advantage; standard expansion', es: 'Granite Advantage; expansión estándar' } },
+  { name: 'New Jersey', expanded: true, note: { en: 'NJ FamilyCare; standard expansion', es: 'NJ FamilyCare; expansión estándar' } },
+  { name: 'New Mexico', expanded: true, note: { en: 'Centennial Care; standard expansion', es: 'Centennial Care; expansión estándar' } },
+  { name: 'New York', expanded: true, note: { en: 'Standard expansion; covers up to 138% FPL', es: 'Expansión estándar; cubre hasta 138% FPL' } },
+  { name: 'North Carolina', expanded: true, note: { en: 'Expanded in 2024; 138% FPL', es: 'Expandido en 2024; 138% FPL' } },
+  { name: 'North Dakota', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Ohio', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Oklahoma', expanded: true, note: { en: 'SoonerCare; expanded via ballot in 2021', es: 'SoonerCare; expandido vía boleta en 2021' } },
+  { name: 'Oregon', expanded: true, note: { en: 'Oregon Health Plan; standard expansion', es: 'Oregon Health Plan; expansión estándar' } },
+  { name: 'Pennsylvania', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Rhode Island', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'South Carolina', expanded: false, note: { en: 'Did not expand; limited adult coverage', es: 'No expandió; cobertura limitada para adultos' } },
+  { name: 'South Dakota', expanded: true, note: { en: 'Expanded via ballot in 2023', es: 'Expandido vía boleta en 2023' } },
+  { name: 'Tennessee', expanded: false, note: { en: 'TennCare; did not expand; very strict limits', es: 'TennCare; no expandió; límites muy estrictos' } },
+  { name: 'Texas', expanded: false, note: { en: 'Very limited; primarily children under 19 and pregnant women', es: 'Muy limitado; principalmente niños menores de 19 y mujeres embarazadas' } },
+  { name: 'Utah', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Vermont', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Virginia', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Washington', expanded: true, note: { en: 'Apple Health; standard expansion', es: 'Apple Health; expansión estándar' } },
+  { name: 'West Virginia', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
+  { name: 'Wisconsin', expanded: false, note: { en: 'BadgerCare; partial expansion to 100% FPL', es: 'BadgerCare; expansión parcial al 100% FPL' } },
+  { name: 'Wyoming', expanded: false, note: { en: 'Did not expand; limited adult coverage', es: 'No expandió; cobertura limitada para adultos' } },
 ];
 
-const FAQS = [
+const FAQS_EN = [
   {
     question: 'What is the Medicaid income limit for 2026?',
     answer: 'In states that expanded Medicaid, the income limit is 138% of the Federal Poverty Level (FPL). For a single person, that is approximately $22,024 per year. For a family of four, it is approximately $45,540 per year.',
   },
   {
     question: 'Do all states have the same Medicaid income limits?',
-    answer: 'No. States that expanded Medicaid (40 states plus D.C.) cover adults up to 138% FPL. Non-expansion states like Texas and Florida have much stricter rules and often only cover children, pregnant women, and people with disabilities.',
+    answer: 'No. States that expanded Medicaid (41 states plus D.C. as of 2026) cover adults up to 138% FPL. Non-expansion states like Texas, Florida, Mississippi, Wyoming, Kansas, South Carolina, Tennessee, and Wisconsin have much stricter rules and often only cover children, pregnant women, and people with disabilities.',
   },
   {
     question: 'Can I qualify for Medicaid if I have no income?',
@@ -67,6 +116,37 @@ const FAQS = [
     question: 'What if my income is just over the Medicaid limit?',
     answer: 'If your income is slightly above the Medicaid limit, you may qualify for ACA marketplace subsidies. In some states there are also spend-down programs that let you qualify for Medicaid by deducting medical expenses from your income.',
   },
+  {
+    question: 'What is the Medicaid Nursing Home income limit in 2026?',
+    answer: 'For long-term care Medicaid (Nursing Home coverage), the institutional income limit is $2,982 per month in most states as of 2026. This applies to elderly and disabled adults, regardless of MAGI rules.',
+  },
+];
+
+const FAQS_ES = [
+  {
+    question: '¿Cuál es el límite de ingresos de Medicaid para 2026?',
+    answer: 'En los estados que expandieron Medicaid, el límite de ingresos es del 138% del Nivel Federal de Pobreza (FPL). Para una persona sola, esto es aproximadamente $22,024 por año. Para una familia de cuatro, es aproximadamente $45,540 por año.',
+  },
+  {
+    question: '¿Todos los estados tienen los mismos límites de ingresos de Medicaid?',
+    answer: 'No. Los estados que expandieron Medicaid (41 estados más D.C. a partir de 2026) cubren a adultos hasta el 138% del FPL. Los estados sin expansión como Texas, Florida, Mississippi, Wyoming, Kansas, Carolina del Sur, Tennessee y Wisconsin tienen reglas mucho más estrictas.',
+  },
+  {
+    question: '¿Puedo calificar para Medicaid si no tengo ingresos?',
+    answer: 'Sí. Si no tiene ingresos, es muy probable que califique para Medicaid en la mayoría de los estados, suponiendo que cumpla con los requisitos de ciudadanía o residencia y no esté ya en Medicare.',
+  },
+  {
+    question: '¿Medicaid cuenta los ingresos brutos o netos?',
+    answer: 'Medicaid usa el Ingreso Bruto Ajustado Modificado (MAGI), que se basa en sus ingresos imponibles federales. Incluye salarios, propinas, ingresos por trabajo independiente y algunos otros tipos de ingresos.',
+  },
+  {
+    question: '¿Qué pasa si mis ingresos están justo por encima del límite de Medicaid?',
+    answer: 'Si sus ingresos están ligeramente por encima del límite de Medicaid, puede calificar para subsidios del mercado del ACA. En algunos estados también hay programas de "spend-down" que le permiten calificar para Medicaid deduciendo gastos médicos.',
+  },
+  {
+    question: '¿Cuál es el límite de ingresos de Medicaid para hogares de ancianos en 2026?',
+    answer: 'Para el Medicaid de cuidado a largo plazo (cobertura de hogar de ancianos), el límite de ingresos institucional es de $2,982 por mes en la mayoría de los estados a partir de 2026.',
+  },
 ];
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -77,9 +157,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ? 'Límites de Ingresos de Medicaid 2026 por Estado | CoveredUSA'
       : 'Medicaid Income Limits 2026 by State | CoveredUSA',
     description: isEs
-      ? 'Tabla completa de los límites de ingresos de Medicaid para 2026. Vea los límites por tamaño de hogar y estado. Actualizado con las cifras del Nivel Federal de Pobreza 2026.'
-      : 'Complete table of Medicaid income limits for 2026. See limits by household size and state. Updated with 2026 Federal Poverty Level figures.',
-    alternates: { canonical: `/${locale}/medicaid-income-limits` },
+      ? 'Tabla completa de los límites de ingresos de Medicaid para 2026 en los 50 estados. Vea los límites por tamaño de hogar y estado. Actualizado con cifras del Nivel Federal de Pobreza 2026.'
+      : 'Complete table of Medicaid income limits for 2026 across all 50 states. See limits by household size and state. Updated with 2026 Federal Poverty Level figures.',
+    alternates: {
+      canonical: `https://coveredusa.org/${locale}/medicaid-income-limits`,
+      languages: {
+        en: 'https://coveredusa.org/en/medicaid-income-limits',
+        es: 'https://coveredusa.org/es/medicaid-income-limits',
+      },
+    },
   };
 }
 
@@ -88,238 +174,188 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
   setRequestLocale(locale);
 
   const isEs = locale === 'es';
+  const faqs = isEs ? FAQS_ES : FAQS_EN;
 
-  const faqSchema = getFAQSchema(FAQS);
+  const faqSchema = getFAQSchema(faqs);
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: isEs ? 'Inicio' : 'Home', url: `/${locale}` },
     { name: isEs ? 'Límites de Ingresos Medicaid' : 'Medicaid Income Limits', url: `/${locale}/medicaid-income-limits` },
   ]);
+  const medicalWebPageSchema = getMedicalWebPageSchema({
+    url: `/${locale}/medicaid-income-limits`,
+    name: isEs ? 'Límites de Ingresos de Medicaid 2026 por Estado' : 'Medicaid Income Limits 2026 by State',
+    description: isEs
+      ? 'Tabla completa de los límites de ingresos de Medicaid para 2026 en los 50 estados.'
+      : 'Complete table of Medicaid income limits for 2026 across all 50 states.',
+    lastReviewed: LAST_UPDATED,
+    about: 'Medicaid',
+    audience: 'Patient',
+    medicalSpecialty: 'PublicHealth',
+  });
+
+  // Build table rows
+  const householdHeaders = isEs
+    ? ['Tamaño del Hogar', '100% FPL (anual)', '138% FPL — Límite Medicaid', '138% FPL (mensual)']
+    : ['Household Size', '100% FPL (annual)', '138% FPL — Medicaid Limit', '138% FPL (monthly)'];
+
+  const householdRows: ReferenceTableCell[][] = HOUSEHOLD_SIZES.map((size) => [
+    `${size} ${isEs ? (size === 1 ? 'persona' : 'personas') : size === 1 ? 'person' : 'people'}`,
+    fmt(fpl(size)),
+    fmt(medicaid(size)),
+    fmt(Math.round(medicaid(size) / 12)),
+  ]);
+
+  const stateHeaders = isEs
+    ? ['Estado', 'Expansión', 'Notas']
+    : ['State', 'Expanded?', 'Notes'];
+
+  const stateRows: ReferenceTableCell[][] = STATES.map((state) => [
+    state.name,
+    state.expanded
+      ? { value: isEs ? 'Sí' : 'Yes', status: 'yes' as const }
+      : { value: 'No', status: 'no' as const },
+    state.note[isEs ? 'es' : 'en'],
+  ]);
 
   return (
-    <main className="min-h-screen" style={{ background: '#f8fafc' }}>
+    <main className="min-h-screen bg-[#f8fafc]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />
+      <DatasetSchema
+        name={isEs ? 'Límites de Ingresos de Medicaid 2026 por Estado' : '2026 Medicaid Income Limits by State'}
+        description={isEs
+          ? 'Umbrales de ingresos de Medicaid 2026 por tamaño de hogar y estado, incluyendo estado de expansión y límites institucionales (hogar de ancianos).'
+          : '2026 Medicaid income thresholds by household size and state, including expansion status and institutional (Nursing Home) limits.'}
+        url={`https://coveredusa.org/${locale}/medicaid-income-limits`}
+        dateModified={LAST_UPDATED}
+        source={isEs ? 'CMS, KFF, HHS ASPE 2026' : 'CMS, KFF, HHS ASPE 2026'}
+        keywords={isEs
+          ? ['límites de ingresos medicaid', 'medicaid 2026', 'elegibilidad medicaid', 'expansión medicaid', 'FPL 138%']
+          : ['medicaid income limits', 'medicaid 2026', 'medicaid eligibility', 'medicaid expansion', '138% FPL', 'nursing home medicaid']}
+      />
 
       {/* Hero */}
-      <div style={{ background: 'white', borderBottom: '1px solid #e2e8f0' }}>
+      <div className="bg-white border-b border-[#e2e8f0]">
         <div className="max-w-5xl mx-auto px-6 py-14">
           <div className="mb-3">
-            <span
-              className="text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide"
-              style={{ background: '#dbeafe', color: '#1d4ed8' }}
-            >
+            <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide bg-[#ccfbf1] text-[#0f766e]">
               {isEs ? 'Referencia 2026' : '2026 Reference'}
             </span>
           </div>
-          <h1
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: '#0f172a', letterSpacing: '-0.02em' }}
-            data-speakable
-          >
+          <h1 className="text-3xl md:text-4xl font-bold text-[#0f172a] mb-4" data-speakable>
             {isEs ? 'Límites de Ingresos de Medicaid 2026' : 'Medicaid Income Limits 2026'}
           </h1>
-          <p className="text-lg max-w-3xl" style={{ color: '#475569' }}>
+          <p className="text-lg text-[#475569] max-w-3xl">
             {isEs
-              ? 'Tablas completas de los límites de ingresos de Medicaid por tamaño de hogar para los 50 estados. Basado en el Nivel Federal de Pobreza (FPL) 2026.'
+              ? 'Tabla completa de los límites de ingresos de Medicaid por tamaño de hogar y estado. Basado en el Nivel Federal de Pobreza (FPL) 2026.'
               : 'Complete Medicaid income limit tables by household size for all 50 states. Based on 2026 Federal Poverty Level (FPL) figures.'}
           </p>
+          <div className="mt-6">
+            <LastUpdated
+              date={isEs ? '12 de mayo de 2026' : 'May 12, 2026'}
+              source={isEs ? 'CMS, KFF, HHS ASPE 2026' : 'CMS, KFF, HHS ASPE 2026'}
+            />
+          </div>
         </div>
       </div>
 
       <div className="max-w-5xl mx-auto px-6 py-12 space-y-14">
+        {/* Quick Answer — AI snippet target */}
+        <QuickAnswer
+          locale={locale}
+          text={isEs
+            ? 'A partir de 2026, el límite de ingresos de Medicaid en estados con expansión es el 138% del Nivel Federal de Pobreza: aproximadamente $22,024 al año para una persona sola y $45,540 para una familia de cuatro. Los 41 estados de expansión más D.C. cubren a adultos hasta este límite. Los estados sin expansión (incluidos Texas, Florida y Mississippi) tienen reglas mucho más estrictas. El límite institucional para el Medicaid de hogares de ancianos es $2,982 al mes.'
+            : 'As of 2026, the Medicaid income limit in expansion states is 138% of the Federal Poverty Level: approximately $22,024 per year for a single person and $45,540 for a family of four. The 41 expansion states plus D.C. cover adults up to this limit. Non-expansion states (including Texas, Florida, and Mississippi) have much stricter rules. The institutional limit for Nursing Home Medicaid is $2,982 per month.'}
+        />
+
+        {/* Pull quote — the most-citeable factual line */}
+        <PullQuote
+          text={isEs
+            ? '41 estados más D.C. cubren a adultos hasta el 138% FPL. Los otros 9 estados tienen reglas mucho más estrictas y a menudo solo cubren a niños y mujeres embarazadas.'
+            : '41 states plus D.C. cover adults up to 138% FPL. The other 9 states have much stricter rules and often only cover children and pregnant women.'}
+          attribution="KFF Medicaid Eligibility 2026"
+        />
 
         {/* Income Limits by Household Size */}
         <section>
-          <h2 className="text-2xl font-bold mb-2" style={{ color: '#0f172a' }}>
+          <h2 className="text-2xl font-bold mb-2 text-[#0f172a]">
             {isEs ? 'Límites de Ingresos por Tamaño de Hogar (2026)' : 'Income Limits by Household Size (2026)'}
           </h2>
-          <p className="text-sm mb-6" style={{ color: '#64748b' }}>
+          <p className="text-sm mb-6 text-[#64748b]">
             {isEs
-              ? 'Válido para los 48 estados contiguos. Alaska y Hawaii tienen límites más altos.'
+              ? 'Válido para los 48 estados contiguos. Alaska y Hawái tienen límites más altos.'
               : 'Applies to the 48 contiguous states. Alaska and Hawaii have higher limits.'}
           </p>
-          <div className="overflow-x-auto rounded-xl" style={{ border: '1px solid #e2e8f0' }}>
-            <table className="w-full text-sm">
-              <thead>
-                <tr style={{ background: '#1e3a5f', color: 'white' }}>
-                  <th className="text-left px-4 py-3 font-semibold">
-                    {isEs ? 'Tamaño del Hogar' : 'Household Size'}
-                  </th>
-                  <th className="text-right px-4 py-3 font-semibold">
-                    {isEs ? '100% FPL (anual)' : '100% FPL (annual)'}
-                  </th>
-                  <th className="text-right px-4 py-3 font-semibold">
-                    {isEs ? '138% FPL — Límite Medicaid' : '138% FPL — Medicaid Limit'}
-                  </th>
-                  <th className="text-right px-4 py-3 font-semibold">
-                    {isEs ? '138% FPL (mensual)' : '138% FPL (monthly)'}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {HOUSEHOLD_SIZES.map((size, i) => (
-                  <tr
-                    key={size}
-                    style={{ background: i % 2 === 0 ? 'white' : '#f8fafc', borderBottom: '1px solid #e2e8f0' }}
-                  >
-                    <td className="px-4 py-3 font-medium" style={{ color: '#0f172a' }}>
-                      {size} {isEs ? (size === 1 ? 'persona' : 'personas') : (size === 1 ? 'person' : 'people')}
-                    </td>
-                    <td className="px-4 py-3 text-right" style={{ color: '#475569' }}>
-                      {fmt(fpl(size))}
-                    </td>
-                    <td className="px-4 py-3 text-right font-semibold" style={{ color: '#1d4ed8' }}>
-                      {fmt(medicaid(size))}
-                    </td>
-                    <td className="px-4 py-3 text-right" style={{ color: '#475569' }}>
-                      {fmt(Math.round(medicaid(size) / 12))}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs mt-3" style={{ color: '#94a3b8' }}>
-            {isEs
+          <ReferenceTable
+            caption={isEs ? 'Límites anuales de ingresos al 100% y 138% del FPL' : 'Annual income limits at 100% and 138% FPL'}
+            headers={householdHeaders}
+            rows={householdRows}
+            footnote={isEs
               ? 'Las cifras son aproximadas. Los límites exactos pueden variar según el estado. Actualizado para 2026.'
               : 'Figures are approximate. Exact limits may vary by state. Updated for 2026.'}
-          </p>
+            source="HHS ASPE 2026 Poverty Guidelines"
+          />
         </section>
 
         {/* State Expansion Status */}
         <section>
-          <h2 className="text-2xl font-bold mb-2" style={{ color: '#0f172a' }}>
+          <h2 className="text-2xl font-bold mb-2 text-[#0f172a]">
             {isEs ? 'Estado de Expansión de Medicaid por Estado' : 'Medicaid Expansion Status by State'}
           </h2>
-          <p className="text-sm mb-6" style={{ color: '#64748b' }}>
+          <p className="text-sm mb-6 text-[#64748b]">
             {isEs
-              ? '40 estados más D.C. han expandido Medicaid. En estados no expansivos, los límites son mucho más bajos.'
-              : '40 states plus D.C. have expanded Medicaid. In non-expansion states, limits are much stricter.'}
+              ? '41 estados más D.C. han expandido Medicaid. En los 9 estados sin expansión, los límites son mucho más bajos.'
+              : '41 states plus D.C. have expanded Medicaid. In the 9 non-expansion states, limits are much stricter.'}
           </p>
-          <div className="overflow-x-auto rounded-xl" style={{ border: '1px solid #e2e8f0' }}>
-            <table className="w-full text-sm">
-              <thead>
-                <tr style={{ background: '#f1f5f9' }}>
-                  <th className="text-left px-4 py-3 font-semibold" style={{ color: '#374151' }}>
-                    {isEs ? 'Estado' : 'State'}
-                  </th>
-                  <th className="text-left px-4 py-3 font-semibold" style={{ color: '#374151' }}>
-                    {isEs ? 'Expansión' : 'Expanded'}
-                  </th>
-                  <th className="text-left px-4 py-3 font-semibold" style={{ color: '#374151' }}>
-                    {isEs ? 'Notas' : 'Notes'}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {STATES.map((state, i) => (
-                  <tr
-                    key={state.name}
-                    style={{ background: i % 2 === 0 ? 'white' : '#f8fafc', borderBottom: '1px solid #e2e8f0' }}
-                  >
-                    <td className="px-4 py-3 font-medium" style={{ color: '#0f172a' }}>
-                      {state.name}
-                    </td>
-                    <td className="px-4 py-3">
-                      <span
-                        className="text-xs font-semibold px-2 py-0.5 rounded-full"
-                        style={{
-                          background: state.expanded ? '#dcfce7' : '#fee2e2',
-                          color: state.expanded ? '#166534' : '#991b1b',
-                        }}
-                      >
-                        {state.expanded
-                          ? (isEs ? 'Sí' : 'Yes')
-                          : (isEs ? 'No' : 'No')}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-sm" style={{ color: '#64748b' }}>
-                      {state.note}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs mt-3" style={{ color: '#94a3b8' }}>
-            {isEs
-              ? 'Esta tabla muestra estados principales. Para los 50 estados, use nuestro evaluador gratuito.'
-              : 'This table shows major states. For all 50 states, use our free screener.'}
-          </p>
+          <ReferenceTable
+            caption={isEs ? 'Estado de expansión de Medicaid y notas — 50 estados + DC' : 'Medicaid expansion status and notes — 50 states + DC'}
+            headers={stateHeaders}
+            rows={stateRows}
+            source="KFF Medicaid Eligibility Database 2026"
+          />
         </section>
 
         {/* CTA */}
-        <div
-          className="rounded-2xl p-8 text-center"
-          style={{ background: '#1e3a5f', color: 'white' }}
-        >
-          <h2 className="text-2xl font-bold mb-3">
-            {isEs ? '¿Califica para Medicaid?' : 'Do You Qualify for Medicaid?'}
-          </h2>
-          <p className="mb-6 max-w-lg mx-auto" style={{ color: '#93c5fd' }}>
-            {isEs
-              ? 'Verifique en 2 minutos. Gratis, confidencial, disponible en español.'
-              : 'Check in 2 minutes. Free, confidential, available in Spanish.'}
-          </p>
-          <Link
-            href={`/${locale}/screener?utm_source=medicaid-income-limits&utm_medium=reference`}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all hover:opacity-90"
-            style={{ background: '#3b82f6', color: 'white' }}
-          >
-            {isEs ? 'Verificar Elegibilidad Gratis' : 'Check My Eligibility — Free'}
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Link>
-        </div>
+        <ScreenerCTA
+          locale={locale}
+          slug="medicaid-income-limits"
+          heading={isEs ? '¿Califica para Medicaid?' : 'Do You Qualify for Medicaid?'}
+          body={isEs
+            ? 'Verifique en 2 minutos. Gratis, confidencial, disponible en español.'
+            : 'Check in 2 minutes. Free, confidential, available in Spanish.'}
+          buttonText={isEs ? 'Verificar Elegibilidad Gratis' : 'Check My Eligibility — Free'}
+        />
 
         {/* FAQ */}
         <section>
-          <h2 className="text-2xl font-bold mb-8" style={{ color: '#0f172a' }}>
+          <h2 className="text-2xl font-bold mb-6 text-[#0f172a]">
             {isEs ? 'Preguntas Frecuentes' : 'Frequently Asked Questions'}
           </h2>
-          <div className="space-y-6">
-            {FAQS.map((faq, i) => (
-              <div
-                key={i}
-                className="rounded-xl p-6"
-                style={{ background: 'white', border: '1px solid #e2e8f0' }}
-              >
-                <h3 className="font-semibold text-lg mb-3" style={{ color: '#0f172a' }}>
-                  {faq.question}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#475569' }}>
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
+          <FAQSection faqs={faqs} />
         </section>
 
         {/* Related */}
         <section>
-          <h2 className="text-lg font-semibold mb-4" style={{ color: '#374151' }}>
+          <h2 className="text-lg font-semibold mb-4 text-[#374151]">
             {isEs ? 'Recursos Relacionados' : 'Related Resources'}
           </h2>
           <div className="flex flex-wrap gap-3">
             <Link
               href={`/${locale}/blog/do-i-qualify-for-medicaid-2026`}
-              className="text-sm px-4 py-2 rounded-lg transition-colors hover:bg-blue-50"
-              style={{ background: 'white', border: '1px solid #e2e8f0', color: '#1d4ed8' }}
+              className="text-sm px-4 py-2 rounded-lg bg-white border border-[#e2e8f0] text-[#0f766e] transition-colors hover:bg-[#ccfbf1]"
             >
               {isEs ? '¿Califico para Medicaid en 2026?' : 'Do I Qualify for Medicaid in 2026?'}
             </Link>
             <Link
               href={`/${locale}/aca-income-limits`}
-              className="text-sm px-4 py-2 rounded-lg transition-colors hover:bg-blue-50"
-              style={{ background: 'white', border: '1px solid #e2e8f0', color: '#1d4ed8' }}
+              className="text-sm px-4 py-2 rounded-lg bg-white border border-[#e2e8f0] text-[#0f766e] transition-colors hover:bg-[#ccfbf1]"
             >
               {isEs ? 'Límites de Ingresos ACA 2026' : 'ACA Income Limits 2026'}
             </Link>
             <Link
               href={`/${locale}/medicare-eligibility`}
-              className="text-sm px-4 py-2 rounded-lg transition-colors hover:bg-blue-50"
-              style={{ background: 'white', border: '1px solid #e2e8f0', color: '#1d4ed8' }}
+              className="text-sm px-4 py-2 rounded-lg bg-white border border-[#e2e8f0] text-[#0f766e] transition-colors hover:bg-[#ccfbf1]"
             >
               {isEs ? 'Elegibilidad para Medicare' : 'Medicare Eligibility'}
             </Link>
