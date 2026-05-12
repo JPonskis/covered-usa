@@ -74,7 +74,7 @@ export async function extractBillData(
 
   const llmRequest = {
     prompt: OCR_PROMPT,
-    maxTokens: 4096,
+    maxTokens: 8192,
     ...(isImage
       ? { image: { base64: fileBase64, mediaType } }
       : { document: { base64: fileBase64, mediaType } }),
@@ -85,19 +85,21 @@ export async function extractBillData(
   for (let attempt = 1; attempt <= 2; attempt++) {
     const text = await llm(OCR_PRIMARY, OCR_FALLBACK, llmRequest)
 
-    const jsonMatch = text.match(/\{[\s\S]*\}/)
+    // Strip markdown code fences if present
+    const stripped = text.replace(/^```(?:json)?\s*\n?/m, '').replace(/\n?```\s*$/m, '')
+    const jsonMatch = stripped.match(/\{[\s\S]*\}/)
     if (!jsonMatch) {
+      console.warn(`[OCR] No JSON found in response (attempt ${attempt}), raw length=${text.length}, first 200 chars: ${text.slice(0, 200)}`)
       if (attempt === 2) throw new Error("We couldn't read your bill. Please try again with a clearer image or PDF.")
-      console.warn('[OCR] No JSON found in response, retrying...')
       continue
     }
 
     try {
       parsed = JSON.parse(jsonMatch[0]) as Record<string, unknown>
       break
-    } catch {
+    } catch (e) {
+      console.warn(`[OCR] JSON parse failed (attempt ${attempt}): ${e instanceof Error ? e.message : e}, json length=${jsonMatch[0].length}`)
       if (attempt === 2) throw new Error("We couldn't read your bill. Please try again with a clearer image or PDF.")
-      console.warn('[OCR] JSON parse failed, retrying...')
     }
   }
 
