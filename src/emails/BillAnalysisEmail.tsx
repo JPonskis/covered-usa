@@ -82,8 +82,69 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
   // Letter attachment note
   const letterNote = letterGenerated
     ? `<p style="margin: 0 0 16px 0; font-size: 16px; line-height: 26px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">
-                Your dispute letter is attached as a PDF. Print it or forward it to the hospital's billing department. You have the legal right to dispute any charges you believe are incorrect.
+                Your dispute letter is attached in two formats: a PDF you can print and a Word document you can edit. Send whichever works best for you.
               </p>`
+    : ''
+
+  // "What to do next" steps
+  const step3Html = charityCare.eligible
+    ? `<tr>
+                <td style="padding: 12px 0 0 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                        <div style="width: 22px; height: 22px; border-radius: 50%; background-color: #0d9488; color: #ffffff; font-size: 12px; font-weight: 700; text-align: center; line-height: 22px; font-family: Georgia, 'Times New Roman', serif;">3</div>
+                      </td>
+                      <td style="padding-left: 10px; vertical-align: top;">
+                        <p style="margin: 0 0 2px 0; font-size: 14px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Apply for financial assistance</p>
+                        <p style="margin: 0; font-size: 13px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">Ask ${provider.name} for their Financial Assistance Policy application. You will need proof of income (a recent pay stub or tax return). Submit it along with your dispute.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>`
+    : ''
+
+  const nextStepsHtml = letterGenerated
+    ? `
+          <tr>
+            <td style="padding: 24px 36px 0 36px;">
+              <p style="margin: 0 0 14px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">What to do next</p>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr>
+                <td>
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                        <div style="width: 22px; height: 22px; border-radius: 50%; background-color: #0d9488; color: #ffffff; font-size: 12px; font-weight: 700; text-align: center; line-height: 22px; font-family: Georgia, 'Times New Roman', serif;">1</div>
+                      </td>
+                      <td style="padding-left: 10px; vertical-align: top;">
+                        <p style="margin: 0 0 2px 0; font-size: 14px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Call the billing department</p>
+                        <p style="margin: 0; font-size: 13px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">Call the number on your bill and tell them you are disputing charges. Ask for the billing department's email or fax number so you can send your letter.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 12px 0 0 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="width: 28px; vertical-align: top; padding-top: 2px;">
+                        <div style="width: 22px; height: 22px; border-radius: 50%; background-color: #0d9488; color: #ffffff; font-size: 12px; font-weight: 700; text-align: center; line-height: 22px; font-family: Georgia, 'Times New Roman', serif;">2</div>
+                      </td>
+                      <td style="padding-left: 10px; vertical-align: top;">
+                        <p style="margin: 0 0 2px 0; font-size: 14px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Send your dispute letter</p>
+                        <p style="margin: 0; font-size: 13px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">Email or mail the attached letter. The Word document is editable if you need to add details. Keep a copy for your records.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              ${step3Html}
+              </table>
+            </td>
+          </tr>`
     : ''
 
   return `<!DOCTYPE html>
@@ -182,6 +243,8 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
           </tr>` : ''}
 
           ${charityCareHtml}
+
+          ${nextStepsHtml}
 
           <!-- CTA -->
           <tr>
