@@ -120,7 +120,17 @@ export async function POST(request: NextRequest) {
     // Step 2: Analyze (Gemini 3.1 Flash-Lite → Claude Haiku fallback)
     const result = await analyzeBill(billData, income, householdSize)
 
-    return NextResponse.json(result)
+    // Step 3: Save results to storage (48h TTL, no PII, no bill image)
+    const resultId = crypto.randomUUID()
+    const stored = { analysis: result, createdAt: new Date().toISOString() }
+    await supabaseAdmin.storage
+      .from('bill-results')
+      .upload(`${resultId}.json`, JSON.stringify(stored), {
+        contentType: 'application/json',
+      })
+      .catch(err => console.error('Failed to save results:', err))
+
+    return NextResponse.json({ ...result, resultId })
   } catch (error) {
     console.error('Bill analysis error:', error)
     return NextResponse.json(

@@ -35,6 +35,7 @@ export default function BillAnalyzer() {
   const [letterText, setLetterText] = useState('')
   const [copied, setCopied] = useState(false)
   const [emailSent, setEmailSent] = useState(false)
+  const [resultId, setResultId] = useState<string | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const formStep = step === 'upload' ? 1 : step === 'about-you' ? 2 : 0
@@ -113,8 +114,10 @@ export default function BillAnalyzer() {
         return
       }
 
-      const data: AnalysisResult = await res.json()
-      setResult(data)
+      const data = await res.json() as AnalysisResult & { resultId?: string }
+      const { resultId: rid, ...analysisData } = data
+      setResult(analysisData)
+      setResultId(rid ?? null)
       setStep('results')
     } catch {
       clearInterval(interval)
@@ -131,6 +134,7 @@ export default function BillAnalyzer() {
         body: JSON.stringify({
           email,
           firstName,
+          resultId,
           analysis: result ? {
             ...result,
             provider: { ...result.provider, name: hospitalName || result.provider.name },
@@ -201,6 +205,7 @@ export default function BillAnalyzer() {
     setAnalyzingStep(0)
     setEmailSent(false)
     setHospitalName('')
+    setResultId(null)
   }
 
   // ── STEP 1: UPLOAD ──────────────────────────────────────────

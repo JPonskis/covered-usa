@@ -80,9 +80,10 @@ function generateLetterDocx(letterText: string): Promise<Buffer> {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { email, firstName, analysis, letterText } = body as {
+    const { email, firstName, resultId, analysis, letterText } = body as {
       email: string
       firstName?: string
+      resultId?: string
       analysis: AnalysisResult
       letterText?: string
     }
@@ -99,6 +100,7 @@ export async function POST(request: NextRequest) {
       firstName,
       analysis,
       letterGenerated: !!letterText,
+      resultId,
     })
 
     // Build attachments: PDF + DOCX

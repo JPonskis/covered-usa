@@ -5,6 +5,7 @@ interface BillAnalysisEmailProps {
   firstName?: string
   analysis: AnalysisResult
   letterGenerated: boolean
+  resultId?: string
 }
 
 function formatMoney(amount: number): string {
@@ -24,7 +25,7 @@ export function buildBillAnalysisSubject(
 }
 
 export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
-  const { firstName, analysis, letterGenerated } = props
+  const { firstName, analysis, letterGenerated, resultId } = props
   const { summary, provider, lineItems, charityCare } = analysis
 
   const greeting = firstName ? `Hi ${firstName},` : 'Hi there,'
@@ -217,7 +218,7 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td style="border-radius: 8px; background-color: #0d9488; text-align: center;">
-                    <a href="https://coveredusa.org/en/medical-bill-analyzer" target="_blank" style="display: block; padding: 16px 32px; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none; font-family: Georgia, 'Times New Roman', serif;">View Full Results</a>
+                    <a href="https://coveredusa.org/en/medical-bill-analyzer${resultId ? `/results/${resultId}` : ''}" target="_blank" style="display: block; padding: 16px 32px; font-size: 16px; font-weight: 700; color: #ffffff; text-decoration: none; font-family: Georgia, 'Times New Roman', serif;">View Full Results</a>
                   </td>
                 </tr>
               </table>
