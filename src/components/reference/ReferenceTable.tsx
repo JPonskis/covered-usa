@@ -75,14 +75,25 @@ export function ReferenceTable({ caption, headers, rows, footnote, source }: Ref
         {caption}
       </div>
       <div className="overflow-x-auto">
-        <table className="w-full text-sm" aria-label={caption}>
+        {/*
+          Inline styles to escape the .article-content table cascade
+          in globals.css (which adds margin: 2rem 0, border-radius, border,
+          and overrides th backgrounds). Inline styles have higher
+          specificity than any stylesheet rule short of !important.
+        */}
+        <table
+          className="w-full text-sm"
+          aria-label={caption}
+          style={{ margin: 0, border: 'none', borderRadius: 0, borderCollapse: 'collapse' }}
+        >
           <thead>
-            <tr className="bg-[#134e4a]">
+            <tr>
               {headers.map((header, i) => (
                 <th
                   key={i}
                   scope="col"
-                  className="px-4 py-3 text-left text-xs font-semibold text-white uppercase tracking-wider whitespace-nowrap"
+                  className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider whitespace-nowrap"
+                  style={{ background: '#134e4a', color: 'white' }}
                 >
                   {header}
                 </th>
@@ -93,10 +104,17 @@ export function ReferenceTable({ caption, headers, rows, footnote, source }: Ref
             {rows.map((row, i) => (
               <tr
                 key={i}
-                className={i % 2 === 1 ? 'bg-[#f8fafc] border-b border-[#e2e8f0]' : 'bg-white border-b border-[#e2e8f0]'}
+                style={{
+                  background: i % 2 === 1 ? '#f8fafc' : 'white',
+                  borderBottom: '1px solid #e2e8f0',
+                }}
               >
                 {row.map((cell, j) => (
-                  <td key={j} className="px-4 py-3 text-[#475569] whitespace-nowrap">
+                  <td
+                    key={j}
+                    className="px-4 py-3 whitespace-nowrap"
+                    style={{ color: '#475569', background: 'transparent' }}
+                  >
                     {renderCell(cell)}
                   </td>
                 ))}
