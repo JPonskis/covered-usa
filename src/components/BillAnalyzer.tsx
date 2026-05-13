@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { flushSync } from 'react-dom'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 import { getFPLPercent } from '@/lib/bill-analyzer/types'
 import { checkEligibility } from '@/lib/eligibility'
@@ -32,6 +31,15 @@ function scrollToAnalyzer() {
 export default function BillAnalyzer() {
   const [step, setStep] = useState<Step>('upload')
   const [file, setFile] = useState<File | null>(null)
+
+  // Scroll to #analyzer when entering results or letter step.
+  // overflow-anchor:none on <html> (in page.tsx) prevents Chrome from
+  // fighting this scroll. useEffect fires after React commits the DOM.
+  useEffect(() => {
+    if (step === 'results' || step === 'letter') {
+      scrollToAnalyzer()
+    }
+  }, [step])
 
   // About You
   const [firstName, setFirstName] = useState('')
@@ -175,8 +183,7 @@ export default function BillAnalyzer() {
         setLetterFormName([firstName, lastName].filter(Boolean).join(' '))
       }
 
-      flushSync(() => setStep('results'))
-      scrollToAnalyzer()
+      setStep('results')
     } catch {
       clearInterval(interval)
       setError('Network error. Please check your connection and try again.')
@@ -226,12 +233,9 @@ export default function BillAnalyzer() {
       })
       const data = await res.json()
       const text = data.text ?? ''
-      flushSync(() => {
-        setLetterText(text)
-        setLetterFormOpen(false)
-        setStep('letter')
-      })
-      scrollToAnalyzer()
+      setLetterText(text)
+      setLetterFormOpen(false)
+      setStep('letter')
 
       if (email && text) {
         sendAnalysisEmail(text)
