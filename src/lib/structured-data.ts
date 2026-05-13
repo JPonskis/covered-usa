@@ -190,6 +190,41 @@ export function getMedicalWebPageSchema(props: {
 }
 
 /**
+ * DefinedTerm — the core entity for glossary / definitional pages.
+ *
+ * Use on /out-of-pocket-maximum, /deductible-explained, etc. Signals to
+ * AI engines that the page is the canonical definition of a term —
+ * which is exactly what those engines want to cite when answering
+ * "what is X?" queries.
+ *
+ * `inDefinedTermSet` links the term to the CoveredUSA glossary as a
+ * whole, useful for AI engines mapping topic relationships.
+ */
+export function getDefinedTermSchema(props: {
+  name: string;
+  description: string;
+  url: string;
+  alternateNames?: string[];
+}) {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTerm',
+    name: props.name,
+    description: props.description,
+    url: `${BASE_URL}${props.url}`,
+    inDefinedTermSet: {
+      '@type': 'DefinedTermSet',
+      name: 'CoveredUSA Health Insurance Glossary',
+      url: `${BASE_URL}/en/glossary`,
+    },
+  };
+  if (props.alternateNames && props.alternateNames.length > 0) {
+    schema.alternateName = props.alternateNames;
+  }
+  return schema;
+}
+
+/**
  * MedicalProcedure — the core entity for procedure cost pages.
  *
  * Use `hcpcsCodes` only (HCPCS Level II is public domain). NEVER include
