@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import { flushSync } from 'react-dom'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 import { getFPLPercent } from '@/lib/bill-analyzer/types'
 import { checkEligibility } from '@/lib/eligibility'
@@ -23,29 +24,14 @@ const inputStyles =
   'w-full px-4 py-3 border border-[var(--border)] rounded-lg bg-white text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent transition-shadow'
 const labelStyles = 'block text-sm font-medium text-[var(--text-primary)] mb-2'
 
+function scrollToAnalyzer() {
+  const el = document.getElementById('analyzer')
+  if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24 })
+}
+
 export default function BillAnalyzer() {
   const [step, setStep] = useState<Step>('upload')
   const [file, setFile] = useState<File | null>(null)
-
-  // Scroll to the analyzer section after React commits DOM updates for results/letter.
-  //
-  // Why rAF + scrollTop instead of scrollIntoView:
-  // When 'analyzing' (short spinner) transitions to 'results' (tall content), Chrome's
-  // scroll anchoring algorithm fires a post-layout correction that pushes scrollTop down
-  // to keep the previous anchor node stable. This cancels a synchronous scrollIntoView.
-  // Deferring to requestAnimationFrame puts our scroll *after* that correction, so it wins.
-  // overflow-anchor:none on the wrapper disables anchoring at the CSS level as a backstop.
-  useEffect(() => {
-    if (step === 'results' || step === 'letter') {
-      requestAnimationFrame(() => {
-        const el = document.getElementById('analyzer')
-        if (el) {
-          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24 })
-        }
-        document.documentElement.style.overflowAnchor = ''
-      })
-    }
-  }, [step])
 
   // About You
   const [firstName, setFirstName] = useState('')
@@ -189,8 +175,8 @@ export default function BillAnalyzer() {
         setLetterFormName([firstName, lastName].filter(Boolean).join(' '))
       }
 
-      document.documentElement.style.overflowAnchor = 'none'
-      setStep('results')
+      flushSync(() => setStep('results'))
+      scrollToAnalyzer()
     } catch {
       clearInterval(interval)
       setError('Network error. Please check your connection and try again.')
@@ -240,10 +226,12 @@ export default function BillAnalyzer() {
       })
       const data = await res.json()
       const text = data.text ?? ''
-      setLetterText(text)
-      setLetterFormOpen(false)
-      document.documentElement.style.overflowAnchor = 'none'
-      setStep('letter')
+      flushSync(() => {
+        setLetterText(text)
+        setLetterFormOpen(false)
+        setStep('letter')
+      })
+      scrollToAnalyzer()
 
       if (email && text) {
         sendAnalysisEmail(text)
