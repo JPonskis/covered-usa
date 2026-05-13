@@ -693,7 +693,7 @@ export default function BillAnalyzer() {
           </div>
 
           <p className="text-center text-xs text-[var(--text-muted)] mt-4">
-            No spam. We only use your email to send your results.
+            No spam. Unsubscribe anytime.
           </p>
         </div>
       </div>
