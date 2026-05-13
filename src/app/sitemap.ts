@@ -59,6 +59,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/medicare-eligibility', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/aca-income-limits', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/federal-poverty-level', { changeFrequency: 'yearly', priority: 0.9 }),
+    // Procedure cost pages (analyzer funnel)
+    localizedEntry('/cost/mri', { changeFrequency: 'monthly', priority: 0.85 }),
   ];
 
   return [

@@ -188,3 +188,51 @@ export function getMedicalWebPageSchema(props: {
   }
   return schema;
 }
+
+/**
+ * MedicalProcedure — the core entity for procedure cost pages.
+ *
+ * Use `hcpcsCodes` only (HCPCS Level II is public domain). NEVER include
+ * full CPT code descriptors — those are AMA-copyrighted and require a
+ * commercial license. Reference procedures in plain language ("MRI of
+ * the knee"), not CPT code descriptions.
+ *
+ * estimatedCost nests a PriceSpecification so AI engines can quote the
+ * range directly.
+ */
+export function getMedicalProcedureSchema(props: {
+  name: string;
+  description: string;
+  url: string;
+  hcpcsCodes?: string[];
+  procedureType?: string;
+  estimatedCostLow?: number;
+  estimatedCostHigh?: number;
+}) {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalProcedure',
+    name: props.name,
+    description: props.description,
+    url: `${BASE_URL}${props.url}`,
+  };
+  if (props.procedureType) {
+    schema.procedureType = props.procedureType;
+  }
+  if (props.hcpcsCodes && props.hcpcsCodes.length > 0) {
+    schema.code = props.hcpcsCodes.map((code) => ({
+      '@type': 'MedicalCode',
+      codeValue: code,
+      codingSystem: 'HCPCS',
+    }));
+  }
+  if (props.estimatedCostLow !== undefined && props.estimatedCostHigh !== undefined) {
+    schema.estimatedCost = {
+      '@type': 'MonetaryAmount',
+      minValue: props.estimatedCostLow,
+      maxValue: props.estimatedCostHigh,
+      currency: 'USD',
+    };
+  }
+  return schema;
+}
