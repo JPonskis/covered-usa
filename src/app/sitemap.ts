@@ -67,6 +67,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/does-medicare-cover-dental', { changeFrequency: 'yearly', priority: 0.85 }),
     // Procedure cost pages (analyzer funnel)
     localizedEntry('/cost/mri', { changeFrequency: 'monthly', priority: 0.85 }),
+    // Drug pages (inpatient billing angle, analyzer funnel)
+    localizedEntry('/drug/insulin-cost', { changeFrequency: 'monthly', priority: 0.85 }),
   ];
 
   return [

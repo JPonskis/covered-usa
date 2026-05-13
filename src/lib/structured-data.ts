@@ -190,6 +190,56 @@ export function getMedicalWebPageSchema(props: {
 }
 
 /**
+ * Drug — the core entity for drug-cost pages.
+ *
+ * Targets the "inpatient hospital drug markup" angle, not retail
+ * pharmacy pricing (GoodRx territory). Uses HCPCS J-codes (public
+ * domain), never CPT.
+ *
+ * Schema.org/Drug requires `name` as the proprietary or established
+ * name. `nonProprietaryName` is the generic. Brand names go in
+ * `proprietaryName` (which we use as alternateName since proprietaryName
+ * is itself a Drug subentity).
+ */
+export function getDrugSchema(props: {
+  name: string;
+  nonProprietaryName?: string;
+  brandNames?: string[];
+  drugClass?: string;
+  hcpcsJCodes?: string[];
+  description: string;
+  url: string;
+}) {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Drug',
+    name: props.name,
+    description: props.description,
+    url: `${BASE_URL}${props.url}`,
+  };
+  if (props.nonProprietaryName) {
+    schema.nonProprietaryName = props.nonProprietaryName;
+  }
+  if (props.brandNames && props.brandNames.length > 0) {
+    schema.alternateName = props.brandNames;
+  }
+  if (props.drugClass) {
+    schema.drugClass = {
+      '@type': 'DrugClass',
+      name: props.drugClass,
+    };
+  }
+  if (props.hcpcsJCodes && props.hcpcsJCodes.length > 0) {
+    schema.code = props.hcpcsJCodes.map((code) => ({
+      '@type': 'MedicalCode',
+      codeValue: code,
+      codingSystem: 'HCPCS',
+    }));
+  }
+  return schema;
+}
+
+/**
  * QAPage — single-question page schema for "Does X cover Y" style pages.
  *
  * Different from FAQPage:
