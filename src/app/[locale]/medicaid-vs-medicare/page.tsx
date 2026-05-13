@@ -27,7 +27,7 @@ const FAQS_EN = [
   },
   {
     question: 'Which is better, Medicaid or Medicare?',
-    answer: 'Neither is "better" — they cover different populations. Your eligibility determines which you can get. Medicaid is income-based for any age. Medicare is age- or disability-based regardless of income. If you qualify for both, you get the most comprehensive coverage possible.',
+    answer: 'Neither is "better." They cover different populations. Your eligibility determines which you can get. Medicaid is income-based for any age. Medicare is age- or disability-based regardless of income. If you qualify for both, you get the most comprehensive coverage possible.',
   },
   {
     question: 'Is Medicaid free?',
@@ -47,11 +47,11 @@ const FAQS_EN = [
   },
   {
     question: 'I have Medicaid now. What happens when I turn 65?',
-    answer: 'You become eligible for Medicare at 65 and can keep Medicaid if your income still qualifies. This makes you dual-eligible — you get the most comprehensive coverage available. Apply for Medicare during your Initial Enrollment Period (3 months before to 3 months after your 65th birthday) to avoid penalties.',
+    answer: 'You become eligible for Medicare at 65 and can keep Medicaid if your income still qualifies. This makes you dual-eligible, so you get the most comprehensive coverage available. Apply for Medicare during your Initial Enrollment Period (3 months before to 3 months after your 65th birthday) to avoid penalties.',
   },
   {
     question: 'Do all states have the same Medicaid rules?',
-    answer: 'No. Each state runs its own Medicaid program with federal oversight. In Medicaid expansion states (41 states plus D.C. as of 2026), adults qualify up to 138% FPL. In non-expansion states (Texas, Florida, Mississippi, Wyoming, Kansas, South Carolina, Tennessee, Wisconsin, and Alabama), eligibility is much stricter — often limited to children, pregnant women, and people with disabilities.',
+    answer: 'No. Each state runs its own Medicaid program with federal oversight. In Medicaid expansion states (41 states plus D.C. as of 2026), adults qualify up to 138% FPL. In non-expansion states (Texas, Florida, Mississippi, Wyoming, Kansas, South Carolina, Tennessee, Wisconsin, and Alabama), eligibility is much stricter, often limited to children, pregnant women, and people with disabilities.',
   },
 ];
 
@@ -62,7 +62,7 @@ const FAQS_ES = [
   },
   {
     question: '¿Cuál es mejor, Medicaid o Medicare?',
-    answer: 'Ninguno es "mejor" — cubren poblaciones diferentes. Su elegibilidad determina cuál puede obtener. Medicaid es basado en ingresos para cualquier edad. Medicare es basado en edad o discapacidad sin importar los ingresos.',
+    answer: 'Ninguno es "mejor". Cubren poblaciones diferentes. Su elegibilidad determina cuál puede obtener. Medicaid es basado en ingresos para cualquier edad. Medicare es basado en edad o discapacidad sin importar los ingresos.',
   },
   {
     question: '¿Medicaid es gratis?',
@@ -82,7 +82,7 @@ const FAQS_ES = [
   },
   {
     question: 'Tengo Medicaid ahora. ¿Qué pasa cuando cumpla 65?',
-    answer: 'Se vuelve elegible para Medicare a los 65 y puede mantener Medicaid si su ingreso aún califica. Esto le hace elegible dual — obtiene la cobertura más completa disponible.',
+    answer: 'Se vuelve elegible para Medicare a los 65 y puede mantener Medicaid si su ingreso aún califica. Esto le hace elegible dual, así obtiene la cobertura más completa disponible.',
   },
   {
     question: '¿Todos los estados tienen las mismas reglas de Medicaid?',
@@ -251,8 +251,8 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
               {isEs ? 'Respuesta rápida: ' : 'Quick Answer: '}
             </strong>
             {isEs
-              ? 'Medicaid es un programa estatal-federal para estadounidenses de bajos ingresos de cualquier edad (138% FPL en estados con expansión a partir de 2026: $22,024 individual / $45,540 familia de 4). Medicare es un programa federal para adultos de 65 años o más y personas con discapacidades calificadas, sin importar el ingreso. Alrededor de 12 millones de estadounidenses son elegibles dualmente para ambos — esto es la cobertura más completa disponible.'
-              : 'Medicaid is a state-federal program for low-income Americans of any age (138% FPL in expansion states as of 2026: $22,024 single / $45,540 family of 4). Medicare is a federal program for adults 65+ and people with qualifying disabilities, regardless of income. About 12 million Americans are dual-eligible for both — that\'s the most comprehensive coverage available.'}
+              ? 'Medicaid es un programa estatal-federal para estadounidenses de bajos ingresos de cualquier edad (138% FPL en estados con expansión a partir de 2026: $22,024 individual / $45,540 familia de 4). Medicare es un programa federal para adultos de 65 años o más y personas con discapacidades calificadas, sin importar el ingreso. Alrededor de 12 millones de estadounidenses son elegibles dualmente para ambos. Esa es la cobertura más completa disponible.'
+              : 'Medicaid is a state-federal program for low-income Americans of any age (138% FPL in expansion states as of 2026: $22,024 single / $45,540 family of 4). Medicare is a federal program for adults 65+ and people with qualifying disabilities, regardless of income. About 12 million Americans are dual-eligible for both. That\'s the most comprehensive coverage available.'}
           </p>
         </blockquote>
 
@@ -285,11 +285,11 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
                 ? 'Programa estatal-federal para estadounidenses de bajos ingresos de cualquier edad.'
                 : 'State-federal program for low-income Americans of any age.'}
             </p>
-            <ul className="space-y-1.5 text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
-              <li>{isEs ? '— 138% FPL en estados con expansión' : '— 138% FPL in expansion states'}</li>
-              <li>{isEs ? '— Gratis o casi gratis' : '— Free or near-free'}</li>
-              <li>{isEs ? '— Cubre LTC, dental, visión' : '— Covers LTC, dental, vision'}</li>
-              <li>{isEs ? '— Inscripción todo el año' : '— Year-round enrollment'}</li>
+            <ul className="space-y-2 text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+              <li className="flex gap-2.5"><span aria-hidden="true" style={{ color: 'var(--teal)' }} className="font-bold leading-none mt-1.5">•</span><span>{isEs ? '138% FPL en estados con expansión' : '138% FPL in expansion states'}</span></li>
+              <li className="flex gap-2.5"><span aria-hidden="true" style={{ color: 'var(--teal)' }} className="font-bold leading-none mt-1.5">•</span><span>{isEs ? 'Gratis o casi gratis' : 'Free or near-free'}</span></li>
+              <li className="flex gap-2.5"><span aria-hidden="true" style={{ color: 'var(--teal)' }} className="font-bold leading-none mt-1.5">•</span><span>{isEs ? 'Cubre cuidado a largo plazo, dental, visión' : 'Covers long-term care, dental, vision'}</span></li>
+              <li className="flex gap-2.5"><span aria-hidden="true" style={{ color: 'var(--teal)' }} className="font-bold leading-none mt-1.5">•</span><span>{isEs ? 'Inscripción todo el año' : 'Year-round enrollment'}</span></li>
             </ul>
           </div>
 
@@ -320,11 +320,11 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
                 ? 'Programa federal para adultos de 65 años o más y personas con discapacidades calificadas.'
                 : 'Federal program for adults 65+ and people with qualifying disabilities.'}
             </p>
-            <ul className="space-y-1.5 text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
-              <li>{isEs ? '— Parte A gratis (mayoría)' : '— Part A free (most)'}</li>
-              <li>{isEs ? '— Parte B $202.90/mes (2026)' : '— Part B $202.90/mo (2026)'}</li>
-              <li>{isEs ? '— No cubre LTC, dental, visión' : '— Does NOT cover LTC, dental, vision'}</li>
-              <li>{isEs ? '— Ventanas de inscripción específicas' : '— Specific enrollment windows'}</li>
+            <ul className="space-y-2 text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+              <li className="flex gap-2.5"><span aria-hidden="true" style={{ color: 'var(--accent)' }} className="font-bold leading-none mt-1.5">•</span><span>{isEs ? 'Parte A gratis (la mayoría)' : 'Part A free (most people)'}</span></li>
+              <li className="flex gap-2.5"><span aria-hidden="true" style={{ color: 'var(--accent)' }} className="font-bold leading-none mt-1.5">•</span><span>{isEs ? 'Parte B $202.90/mes (2026)' : 'Part B $202.90/mo (2026)'}</span></li>
+              <li className="flex gap-2.5"><span aria-hidden="true" style={{ color: 'var(--accent)' }} className="font-bold leading-none mt-1.5">•</span><span>{isEs ? 'No cubre cuidado a largo plazo, dental, visión' : 'Does NOT cover long-term care, dental, vision'}</span></li>
+              <li className="flex gap-2.5"><span aria-hidden="true" style={{ color: 'var(--accent)' }} className="font-bold leading-none mt-1.5">•</span><span>{isEs ? 'Ventanas de inscripción específicas' : 'Specific enrollment windows'}</span></li>
             </ul>
           </div>
         </div>
@@ -334,8 +334,8 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
 
           <p>
             {isEs
-              ? 'A pesar de sonar similares, Medicaid y Medicare son programas completamente diferentes con diferentes elegibilidades, costos, coberturas e inscripciones. La confusión es comprensible — el gobierno usó nombres prácticamente idénticos para dos cosas distintas.'
-              : 'Despite sounding similar, Medicaid and Medicare are completely different programs with different eligibility, costs, coverage, and enrollment. The confusion is understandable — the government used practically identical names for two distinct things.'}
+              ? 'A pesar de sonar similares, Medicaid y Medicare son programas completamente diferentes con diferentes elegibilidades, costos, coberturas e inscripciones. La confusión es comprensible. El gobierno usó nombres prácticamente idénticos para dos cosas distintas.'
+              : 'Despite sounding similar, Medicaid and Medicare are completely different programs with different eligibility, costs, coverage, and enrollment. The confusion is understandable. The government used practically identical names for two distinct things.'}
           </p>
 
           <p>
@@ -363,27 +363,32 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
               source="CMS, KFF Medicaid State Profiles 2026"
             />
           </div>
+        </div>
 
+        {/* Mid-article CTA */}
+        <ScreenerCTA locale={locale} slug="medicaid-vs-medicare-mid" variant="inline" />
+
+        <div className="article-content">
           <h2>{isEs ? 'Quién debe elegir Medicaid' : 'Who Should Choose Medicaid'}</h2>
 
           <p>
             {isEs
-              ? `Si tiene menos de 65 años y sus ingresos están por debajo del 138% FPL (aproximadamente $22,024 individual o $45,540 familia de 4 en 2026), Medicaid es probablemente su mejor opción — y la única gratuita. La cobertura es completa, incluye cuidado a largo plazo y la mayoría de los estados también cubren dental y visión. Aplique a través de su agencia estatal de Medicaid o healthcare.gov. La inscripción es todo el año, no hay ventanas que perder.`
-              : `If you are under 65 and your household income is below 138% FPL (roughly $22,024 single or $45,540 family of 4 in 2026), Medicaid is likely your best option — and the only free one. Coverage is comprehensive, includes long-term care, and most states also cover dental and vision. Apply through your state Medicaid agency or healthcare.gov. Enrollment is year-round, no windows to miss.`}
+              ? `Si tiene menos de 65 años y sus ingresos están por debajo del 138% FPL (aproximadamente $22,024 individual o $45,540 familia de 4 en 2026), Medicaid es probablemente su mejor opción, y la única gratuita. La cobertura es completa, incluye cuidado a largo plazo y la mayoría de los estados también cubren dental y visión. Aplique a través de su agencia estatal de Medicaid o healthcare.gov. La inscripción es todo el año, no hay ventanas que perder.`
+              : `If you are under 65 and your household income is below 138% FPL (roughly $22,024 single or $45,540 family of 4 in 2026), Medicaid is likely your best option, and the only free one. Coverage is comprehensive, includes long-term care, and most states also cover dental and vision. Apply through your state Medicaid agency or healthcare.gov. Enrollment is year-round, no windows to miss.`}
           </p>
 
           <p>
             {isEs
-              ? 'También aplique a Medicaid si está embarazada, si su hijo necesita cobertura, o si tiene una discapacidad — estas categorías a menudo califican con ingresos más altos.'
-              : 'Also apply for Medicaid if you are pregnant, if your child needs coverage, or if you have a disability — these categories often qualify at higher incomes.'}
+              ? 'También aplique a Medicaid si está embarazada, si su hijo necesita cobertura, o si tiene una discapacidad. Estas categorías a menudo califican con ingresos más altos.'
+              : 'Also apply for Medicaid if you are pregnant, if your child needs coverage, or if you have a disability. These categories often qualify at higher incomes.'}
           </p>
 
           <h2>{isEs ? 'Quién debe elegir Medicare' : 'Who Should Choose Medicare'}</h2>
 
           <p>
             {isEs
-              ? 'Si tiene 65 años o más, o si ha recibido SSDI por 24 meses, Medicare es probablemente su mejor opción — y a menudo es automático. Comience la inscripción durante su Período de Inscripción Inicial (3 meses antes hasta 3 meses después de cumplir 65). Si pierde esa ventana, podría enfrentar penalidades de por vida en las primas de la Parte B y Parte D.'
-              : 'If you are 65 or older, or if you have been on SSDI for 24 months, Medicare is likely your best option — and is often automatic. Start enrollment during your Initial Enrollment Period (3 months before to 3 months after your 65th birthday). If you miss that window, you could face lifelong premium penalties on Part B and Part D.'}
+              ? 'Si tiene 65 años o más, o si ha recibido SSDI por 24 meses, Medicare es probablemente su mejor opción, y a menudo es automático. Comience la inscripción durante su Período de Inscripción Inicial (3 meses antes hasta 3 meses después de cumplir 65). Si pierde esa ventana, podría enfrentar penalidades de por vida en las primas de la Parte B y Parte D.'
+              : 'If you are 65 or older, or if you have been on SSDI for 24 months, Medicare is likely your best option, and is often automatic. Start enrollment during your Initial Enrollment Period (3 months before to 3 months after your 65th birthday). If you miss that window, you could face lifelong premium penalties on Part B and Part D.'}
           </p>
 
           <p>
@@ -396,14 +401,14 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
 
           <p>
             {isEs
-              ? 'Alrededor de 12 millones de estadounidenses son elegibles dualmente — califican tanto para Medicaid como para Medicare. Esto típicamente sucede cuando tiene 65 años o más con ingresos por debajo del límite de Medicaid en su estado, o cuando es discapacitado con bajos ingresos.'
-              : 'About 12 million Americans are dual-eligible — they qualify for both Medicaid and Medicare. This typically happens when you are 65+ with income below your state\'s Medicaid limit, or when you are disabled with low income.'}
+              ? 'Alrededor de 12 millones de estadounidenses son elegibles dualmente: califican tanto para Medicaid como para Medicare. Esto típicamente sucede cuando tiene 65 años o más con ingresos por debajo del límite de Medicaid en su estado, o cuando es discapacitado con bajos ingresos.'
+              : 'About 12 million Americans are dual-eligible: they qualify for both Medicaid and Medicare. This typically happens when you are 65+ with income below your state\'s Medicaid limit, or when you are disabled with low income.'}
           </p>
 
           <p>
             {isEs
-              ? 'Cuando tiene ambos: Medicare paga primero por los servicios cubiertos. Medicaid paga lo que Medicare no — primas, deducibles, coseguro, y servicios que Medicare no cubre (LTC, dental, visión). Esta es esencialmente la cobertura más completa disponible en Estados Unidos.'
-              : 'When you have both: Medicare pays first for covered services. Medicaid picks up what Medicare doesn\'t — premiums, deductibles, coinsurance, and services Medicare doesn\'t cover (LTC, dental, vision). This is essentially the most comprehensive coverage available in the United States.'}
+              ? 'Cuando tiene ambos: Medicare paga primero por los servicios cubiertos. Medicaid paga lo que Medicare no: primas, deducibles, coseguro, y servicios que Medicare no cubre (LTC, dental, visión). Esta es esencialmente la cobertura más completa disponible en Estados Unidos.'
+              : 'When you have both: Medicare pays first for covered services. Medicaid picks up what Medicare doesn\'t: premiums, deductibles, coinsurance, and services Medicare doesn\'t cover (LTC, dental, vision). This is essentially the most comprehensive coverage available in the United States.'}
           </p>
 
           <p>
@@ -416,8 +421,8 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
 
           <p>
             {isEs
-              ? 'Si tiene Medicare pero su ingreso está demasiado alto para Medicaid total, aún puede calificar para un Programa de Ahorros de Medicare (MSP). Estos programas pagan su prima de la Parte B (y a veces también los deducibles y coseguro). Los límites de ingresos para 2026: QMB $15,960 anual, SLMB $19,152, QI $21,546 — significativamente más altos que el FPL del 100%.'
-              : 'If you have Medicare but your income is too high for full Medicaid, you may still qualify for a Medicare Savings Program (MSP). These programs pay your Part B premium (and sometimes deductibles and coinsurance too). 2026 income limits: QMB $15,960/year, SLMB $19,152, QI $21,546 — meaningfully higher than 100% FPL.'}
+              ? 'Si tiene Medicare pero su ingreso está demasiado alto para Medicaid total, aún puede calificar para un Programa de Ahorros de Medicare (MSP). Estos programas pagan su prima de la Parte B (y a veces también los deducibles y coseguro). Los límites de ingresos para 2026: QMB $15,960 anual, SLMB $19,152, QI $21,546, significativamente más altos que el FPL del 100%.'
+              : 'If you have Medicare but your income is too high for full Medicaid, you may still qualify for a Medicare Savings Program (MSP). These programs pay your Part B premium (and sometimes deductibles and coinsurance too). 2026 income limits: QMB $15,960/year, SLMB $19,152, QI $21,546, meaningfully higher than 100% FPL.'}
           </p>
 
           <h2>{isEs ? 'Preguntas Frecuentes' : 'Frequently Asked Questions'}</h2>
@@ -437,7 +442,7 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
           </svg>
         </div>
 
-        {/* End CTA — screener funnel for "tell me which one I qualify for" */}
+        {/* End CTA. Screener funnel for "tell me which one I qualify for" */}
         <ScreenerCTA locale={locale} slug="medicaid-vs-medicare" variant="inline" />
 
         {/* Related links */}
@@ -485,25 +490,25 @@ export default async function MedicaidVsMedicarePage({ params }: PageProps) {
             <li>
               1.{' '}
               <a href="https://www.medicaid.gov/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--teal-dark)' }}>
-                Medicaid.gov — Official program information.
+                Medicaid.gov: official program information.
               </a>
             </li>
             <li>
               2.{' '}
               <a href="https://www.medicare.gov/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--teal-dark)' }}>
-                Medicare.gov — Official Medicare program details and 2026 costs.
+                Medicare.gov: official Medicare program details and 2026 costs.
               </a>
             </li>
             <li>
               3.{' '}
               <a href="https://www.kff.org/medicaid/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--teal-dark)' }}>
-                KFF — Dual Eligible Beneficiaries: A Profile of the Population
+                KFF: Dual Eligible Beneficiaries, A Profile of the Population
               </a>
             </li>
             <li>
               4.{' '}
               <a href="https://www.cms.gov/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--teal-dark)' }}>
-                CMS — Medicare Savings Programs 2026 limits.
+                CMS: Medicare Savings Programs 2026 limits.
               </a>
             </li>
           </ol>
