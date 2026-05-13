@@ -180,10 +180,6 @@ export default function MedicalBillAnalyzerPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {/* Disable Chrome scroll anchoring — prevents "Your rights" section from
-          pulling the viewport down when BillAnalyzer content grows on step change */}
-      <style>{`html { overflow-anchor: none; }`}</style>
-
       <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
         {/* Hero: lead with the problem */}
         <section className="py-16 md:py-20 px-4" style={{ background: 'linear-gradient(135deg, var(--primary-deeper) 0%, var(--primary-dark) 100%)' }}>

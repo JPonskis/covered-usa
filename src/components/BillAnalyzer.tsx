@@ -1,13 +1,21 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import { useRouter, useParams } from 'next/navigation'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 import { getFPLPercent } from '@/lib/bill-analyzer/types'
 import { checkEligibility } from '@/lib/eligibility'
 import type { ProgramResult } from '@/lib/eligibility'
+import { setPendingFile, getPendingFile, clearPendingFile } from '@/lib/bill-analyzer/fileStore'
 
 type Step = 'upload' | 'about-you' | 'analyzing' | 'results' | 'letter'
 type InsuranceStatus = 'yes' | 'no' | 'not_sure' | ''
+
+/**
+ * mode="landing"    — shows only the upload step; on Continue navigates to /analyze
+ * mode="standalone" — starts at about-you, runs the full analysis flow on its own page
+ */
+type Mode = 'landing' | 'standalone'
 
 const TOTAL_FORM_STEPS = 2
 const ANALYZING_STEPS = [
@@ -28,18 +36,39 @@ function scrollToAnalyzer() {
   if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24 })
 }
 
-export default function BillAnalyzer() {
-  const [step, setStep] = useState<Step>('upload')
+export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
+  const router = useRouter()
+  const params = useParams<{ locale: string }>()
+  const locale = params?.locale ?? 'en'
+
+  const [step, setStep] = useState<Step>(mode === 'standalone' ? 'about-you' : 'upload')
   const [file, setFile] = useState<File | null>(null)
 
-  // Scroll to #analyzer when entering results or letter step.
-  // overflow-anchor:none on <html> (in page.tsx) prevents Chrome from
-  // fighting this scroll. useEffect fires after React commits the DOM.
+  // Standalone mode: read pending file from store on mount.
+  // If no file is present (e.g. user navigated directly), redirect to landing.
   useEffect(() => {
-    if (step === 'results' || step === 'letter') {
+    if (mode === 'standalone') {
+      const f = getPendingFile()
+      if (!f) {
+        router.replace(`/${locale}/medical-bill-analyzer`)
+        return
+      }
+      setFile(f)
+      clearPendingFile()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // Scroll on step transitions.
+  // Standalone: scroll to top — clean page, no competing content.
+  // Landing: scroll to #analyzer section (still used for upload step visibility).
+  useEffect(() => {
+    if (mode === 'standalone') {
+      window.scrollTo({ top: 0 })
+    } else if (step === 'results' || step === 'letter') {
       scrollToAnalyzer()
     }
-  }, [step])
+  }, [step, mode])
 
   // About You
   const [firstName, setFirstName] = useState('')
@@ -108,7 +137,13 @@ export default function BillAnalyzer() {
       return
     }
     setValidationError('')
-    setStep('about-you')
+    if (mode === 'landing') {
+      // Pass file to the analyze page via in-memory store, then navigate.
+      setPendingFile(file)
+      router.push(`/${locale}/medical-bill-analyzer/analyze`)
+    } else {
+      setStep('about-you')
+    }
   }
 
   function validateEmail(e: string) {
@@ -254,6 +289,10 @@ export default function BillAnalyzer() {
   }
 
   function reset() {
+    if (mode === 'standalone') {
+      router.push(`/${locale}/medical-bill-analyzer`)
+      return
+    }
     setStep('upload')
     setFile(null)
     setResult(null)
@@ -708,7 +747,14 @@ export default function BillAnalyzer() {
           <div className="flex gap-4 mt-6">
             <button
               type="button"
-              onClick={() => { setStep('upload'); setValidationError('') }}
+              onClick={() => {
+                if (mode === 'standalone') {
+                  router.push(`/${locale}/medical-bill-analyzer`)
+                } else {
+                  setStep('upload')
+                  setValidationError('')
+                }
+              }}
               className="flex-1 py-3.5 px-4 border-2 border-[var(--border)] rounded-lg font-medium text-[var(--text-primary)] hover:bg-[var(--cream)] transition-colors"
             >
               Back
