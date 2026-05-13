@@ -63,6 +63,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/out-of-pocket-maximum', { changeFrequency: 'yearly', priority: 0.85 }),
     // Trigger event pages (life-event triggers, screener funnel)
     localizedEntry('/just-lost-job-health-insurance', { changeFrequency: 'monthly', priority: 0.85 }),
+    // Persona pages (audience-targeted, screener funnel)
+    localizedEntry('/health-insurance-for-gig-workers', { changeFrequency: 'monthly', priority: 0.85 }),
     // Q&A pages (single-question deep-dives, screener funnel)
     localizedEntry('/does-medicare-cover-dental', { changeFrequency: 'yearly', priority: 0.85 }),
     // Procedure cost pages (analyzer funnel)
