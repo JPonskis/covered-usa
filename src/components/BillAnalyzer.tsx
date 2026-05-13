@@ -27,10 +27,22 @@ export default function BillAnalyzer() {
   const [step, setStep] = useState<Step>('upload')
   const [file, setFile] = useState<File | null>(null)
 
-  // Scroll to the analyzer section after React commits DOM updates for results/letter
+  // Scroll to the analyzer section after React commits DOM updates for results/letter.
+  //
+  // Why rAF + scrollTop instead of scrollIntoView:
+  // When 'analyzing' (short spinner) transitions to 'results' (tall content), Chrome's
+  // scroll anchoring algorithm fires a post-layout correction that pushes scrollTop down
+  // to keep the previous anchor node stable. This cancels a synchronous scrollIntoView.
+  // Deferring to requestAnimationFrame puts our scroll *after* that correction, so it wins.
+  // overflow-anchor:none on the wrapper disables anchoring at the CSS level as a backstop.
   useEffect(() => {
     if (step === 'results' || step === 'letter') {
-      document.getElementById('analyzer')?.scrollIntoView({ behavior: 'smooth' })
+      requestAnimationFrame(() => {
+        const el = document.getElementById('analyzer')
+        if (!el) return
+        const top = el.getBoundingClientRect().top + window.scrollY
+        window.scrollTo({ top, behavior: 'smooth' })
+      })
     }
   }, [step])
 
@@ -730,7 +742,7 @@ export default function BillAnalyzer() {
     const analyzeProgress = Math.round(((analyzingStep + 1) / ANALYZING_STEPS.length) * 100)
 
     return (
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto" style={{ overflowAnchor: 'none' }}>
         <div className="bg-white border border-[var(--border-light)] rounded-xl p-6 md:p-8 shadow-sm">
           <div className="text-center py-8">
             <div className="relative w-16 h-16 mx-auto mb-6">
@@ -766,7 +778,7 @@ export default function BillAnalyzer() {
     const hasRates = result.summary.lineItemsWithRates > 0
 
     return (
-      <div className="max-w-2xl mx-auto space-y-6">
+      <div className="max-w-2xl mx-auto space-y-6" style={{ overflowAnchor: 'none' }}>
         {/* Summary card */}
         <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border-light)' }}>
           <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, var(--primary-deeper), var(--primary-dark))' }}>

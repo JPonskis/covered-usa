@@ -451,7 +451,7 @@ export default function MedicalBillAnalyzerPage() {
         </section>
 
         {/* The tool */}
-        <section id="analyzer" className="py-14 px-4">
+        <section id="analyzer" className="py-14 px-4" style={{ scrollMarginTop: '24px' }}>
           <div className="max-w-2xl mx-auto text-center mb-8">
             <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
               Check your bill now
