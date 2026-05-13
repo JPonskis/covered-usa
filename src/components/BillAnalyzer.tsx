@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 import { getFPLPercent } from '@/lib/bill-analyzer/types'
 import { checkEligibility } from '@/lib/eligibility'
@@ -27,6 +27,8 @@ export default function BillAnalyzer() {
   const [step, setStep] = useState<Step>('upload')
   const [file, setFile] = useState<File | null>(null)
 
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }, [step])
+
   // About You
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -34,6 +36,7 @@ export default function BillAnalyzer() {
   const [emailConsent, setEmailConsent] = useState(true)
   const [hospitalName, setHospitalName] = useState('')
   const [insuranceStatus, setInsuranceStatus] = useState<InsuranceStatus>('')
+  const [userState, setUserState] = useState('')
   const [income, setIncome] = useState('')
   const [householdSize, setHouseholdSize] = useState('')
 
@@ -58,7 +61,7 @@ export default function BillAnalyzer() {
 
   // Bill lead capture (post-letter CTA)
   const [billLeadPhone, setBillLeadPhone] = useState('')
-  const [billLeadTcpa, setBillLeadTcpa] = useState(false)
+  const [billLeadTcpa, setBillLeadTcpa] = useState(true)
   const [billLeadSubmitting, setBillLeadSubmitting] = useState(false)
   const [billLeadDone, setBillLeadDone] = useState(false)
   const [billLeadError, setBillLeadError] = useState('')
@@ -110,7 +113,7 @@ export default function BillAnalyzer() {
       return
     }
     if (!hospitalName.trim()) {
-      setValidationError('Please enter the hospital name from your bill.')
+      setValidationError('Please enter the hospital or clinic name from your bill.')
       return
     }
     setValidationError('')
@@ -150,7 +153,7 @@ export default function BillAnalyzer() {
 
       const data = await res.json() as AnalysisResult & {
         resultId?: string
-        extractedPatient?: { name?: string; address?: string; accountNumber?: string }
+        extractedPatient?: { name?: string; address?: string; accountNumber?: string; providerState?: string }
       }
       const { resultId: rid, extractedPatient: ep, ...analysisData } = data
       setResult(analysisData)
@@ -158,6 +161,7 @@ export default function BillAnalyzer() {
 
       if (ep) {
         setExtractedPatient(ep)
+        if (ep.providerState && !userState) setUserState(ep.providerState)
         // Pre-fill letter form fields with OCR data
         const fullName = [firstName, lastName].filter(Boolean).join(' ')
         setLetterFormName(ep.name ?? fullName)
@@ -282,12 +286,13 @@ export default function BillAnalyzer() {
   }
 
   function getBestState(): string {
+    if (userState) return userState
     if (extractedPatient?.providerState) return extractedPatient.providerState
     if (letterFormAddress) {
       const s = parseStateFromAddress(letterFormAddress)
       if (s) return s
     }
-    return 'TX'
+    return 'CA'
   }
 
   function getProgramDescription(id: string): string {
@@ -414,7 +419,7 @@ export default function BillAnalyzer() {
               Upload Your Bill
             </h2>
             <p className="text-sm text-[var(--text-muted)]">
-              Take a photo or upload a PDF of your hospital bill.
+              Take a photo or upload a PDF of your medical bill.
             </p>
           </div>
 
@@ -550,7 +555,7 @@ export default function BillAnalyzer() {
 
             {/* Hospital */}
             <div>
-              <label className={labelStyles}>Hospital name</label>
+              <label className={labelStyles}>Hospital / clinic name</label>
               <input
                 type="text"
                 value={hospitalName}
@@ -615,6 +620,21 @@ export default function BillAnalyzer() {
               </div>
             </div>
 
+            {/* State */}
+            <div>
+              <label className={labelStyles}>Your state</label>
+              <select
+                value={userState}
+                onChange={e => setUserState(e.target.value)}
+                className={inputStyles}
+              >
+                <option value="">Select state</option>
+                {['AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY','DC'].map(s => (
+                  <option key={s} value={s}>{s}</option>
+                ))}
+              </select>
+            </div>
+
             {/* Income (optional) */}
             <div>
               <p className="text-sm font-medium text-[var(--text-primary)] mb-3">
@@ -655,7 +675,7 @@ export default function BillAnalyzer() {
                   </div>
                 </div>
                 <p className="text-xs text-[var(--text-muted)] mt-3">
-                  About 60% of hospitals are nonprofits and must offer financial assistance by law. Add your income to check if you qualify.
+                  About 60% of hospitals and clinics are nonprofits and must offer financial assistance by law. Add your income to check if you qualify.
                 </p>
               </div>
             </div>
