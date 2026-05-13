@@ -58,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/medicaid-income-limits', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/medicare-eligibility', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/aca-income-limits', { changeFrequency: 'yearly', priority: 0.8 }),
+    localizedEntry('/federal-poverty-level', { changeFrequency: 'yearly', priority: 0.9 }),
   ];
 
   return [
