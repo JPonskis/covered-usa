@@ -262,38 +262,36 @@ export default async function FederalPovertyLevelPage({ params }: PageProps) {
 
       {/* Hero */}
       <div className="bg-white border-b border-[#e2e8f0]">
-        <div className="max-w-5xl mx-auto px-6 py-14">
+        <div className="max-w-5xl mx-auto px-6 py-10">
           <div className="mb-3">
             <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide bg-[#ccfbf1] text-[#0f766e]">
               {isEs ? 'Referencia 2026' : '2026 Reference'}
             </span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-[#0f172a] mb-4" data-speakable>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#0f172a] mb-3" data-speakable>
             {isEs ? 'Tabla del Nivel Federal de Pobreza (FPL) 2026' : '2026 Federal Poverty Level (FPL) Chart'}
           </h1>
-          <p className="text-lg text-[#475569] max-w-3xl">
+          <p className="text-lg text-[#475569] max-w-3xl mb-4">
             {isEs
               ? `El FPL 2026 para una persona sola es ${fmt(single100)} al año (${fmtMonthly(single100)}/mes). Para una familia de 4, es ${fmt(family4_100)} al año. Estos umbrales determinan la elegibilidad para Medicaid, Medicare Savings Programs, CHIP y subsidios del ACA.`
               : `The 2026 FPL for a single person is ${fmt(single100)} per year (${fmtMonthly(single100)}/month). For a family of 4, it is ${fmt(family4_100)} per year. These thresholds determine eligibility for Medicaid, Medicare Savings Programs, CHIP, and ACA subsidies.`}
           </p>
-          <div className="mt-6">
-            <LastUpdated
-              date={isEs ? '12 de mayo de 2026' : 'May 12, 2026'}
-              source="HHS ASPE 2026 Poverty Guidelines"
+          <LastUpdated
+            date={isEs ? '12 de mayo de 2026' : 'May 12, 2026'}
+            source="HHS ASPE 2026 Poverty Guidelines"
+          />
+          <div className="max-w-3xl mt-2">
+            <QuickAnswer
+              locale={locale}
+              text={isEs
+                ? `A partir de 2026, el Nivel Federal de Pobreza para una persona sola es $15,960 en los 48 estados contiguos, $19,950 en Alaska y $18,360 en Hawái. Para una familia de 4, el FPL es $33,000. La cobertura de Medicaid en estados con expansión llega al 138% FPL ($22,024 individual / $45,540 familia de 4). Los subsidios del ACA están disponibles hasta el 400% FPL ($60,240 individual / $132,000 familia de 4).`
+                : `As of 2026, the Federal Poverty Level for a single person is $15,960 in the 48 contiguous states, $19,950 in Alaska, and $18,360 in Hawaii. For a family of 4, FPL is $33,000. Medicaid expansion coverage extends to 138% FPL ($22,024 single / $45,540 family of 4). ACA subsidies are available up to 400% FPL ($60,240 single / $132,000 family of 4).`}
             />
           </div>
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 py-12 space-y-14">
-        {/* Quick Answer */}
-        <QuickAnswer
-          locale={locale}
-          text={isEs
-            ? `A partir de 2026, el Nivel Federal de Pobreza para una persona sola es $15,960 en los 48 estados contiguos, $19,950 en Alaska y $18,360 en Hawái. Para una familia de 4, el FPL es $33,000. La cobertura de Medicaid en estados con expansión llega al 138% FPL ($22,024 individual / $45,540 familia de 4). Los subsidios del ACA están disponibles hasta el 400% FPL ($60,240 individual / $132,000 familia de 4).`
-            : `As of 2026, the Federal Poverty Level for a single person is $15,960 in the 48 contiguous states, $19,950 in Alaska, and $18,360 in Hawaii. For a family of 4, FPL is $33,000. Medicaid expansion coverage extends to 138% FPL ($22,024 single / $45,540 family of 4). ACA subsidies are available up to 400% FPL ($60,240 single / $132,000 family of 4).`}
-        />
-
+      <div className="max-w-5xl mx-auto px-6 py-10 space-y-12">
         {/* 48 Contiguous States */}
         <section>
           <h2 className="text-2xl font-bold mb-2 text-[#0f172a]">

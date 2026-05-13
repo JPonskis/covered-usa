@@ -236,38 +236,36 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
 
       {/* Hero */}
       <div className="bg-white border-b border-[#e2e8f0]">
-        <div className="max-w-5xl mx-auto px-6 py-14">
+        <div className="max-w-5xl mx-auto px-6 py-10">
           <div className="mb-3">
             <span className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wide bg-[#ccfbf1] text-[#0f766e]">
               {isEs ? 'Referencia 2026' : '2026 Reference'}
             </span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-[#0f172a] mb-4" data-speakable>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#0f172a] mb-3" data-speakable>
             {isEs ? 'Límites de Ingresos de Medicaid 2026' : 'Medicaid Income Limits 2026'}
           </h1>
-          <p className="text-lg text-[#475569] max-w-3xl">
+          <p className="text-lg text-[#475569] max-w-3xl mb-4">
             {isEs
               ? 'Tabla completa de los límites de ingresos de Medicaid por tamaño de hogar y estado. Basado en el Nivel Federal de Pobreza (FPL) 2026.'
               : 'Complete Medicaid income limit tables by household size for all 50 states. Based on 2026 Federal Poverty Level (FPL) figures.'}
           </p>
-          <div className="mt-6">
-            <LastUpdated
-              date={isEs ? '12 de mayo de 2026' : 'May 12, 2026'}
-              source={isEs ? 'CMS, KFF, HHS ASPE 2026' : 'CMS, KFF, HHS ASPE 2026'}
+          <LastUpdated
+            date={isEs ? '12 de mayo de 2026' : 'May 12, 2026'}
+            source={isEs ? 'CMS, KFF, HHS ASPE 2026' : 'CMS, KFF, HHS ASPE 2026'}
+          />
+          <div className="max-w-3xl mt-2">
+            <QuickAnswer
+              locale={locale}
+              text={isEs
+                ? 'A partir de 2026, el límite de ingresos de Medicaid en estados con expansión es el 138% del Nivel Federal de Pobreza: aproximadamente $22,024 al año para una persona sola y $45,540 para una familia de cuatro. Los 41 estados de expansión más D.C. cubren a adultos hasta este límite. Los estados sin expansión (incluidos Texas, Florida y Mississippi) tienen reglas mucho más estrictas. El límite institucional para el Medicaid de hogares de ancianos es $2,982 al mes.'
+                : 'As of 2026, the Medicaid income limit in expansion states is 138% of the Federal Poverty Level: approximately $22,024 per year for a single person and $45,540 for a family of four. The 41 expansion states plus D.C. cover adults up to this limit. Non-expansion states (including Texas, Florida, and Mississippi) have much stricter rules. The institutional limit for Nursing Home Medicaid is $2,982 per month.'}
             />
           </div>
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 py-12 space-y-14">
-        {/* Quick Answer — AI snippet target */}
-        <QuickAnswer
-          locale={locale}
-          text={isEs
-            ? 'A partir de 2026, el límite de ingresos de Medicaid en estados con expansión es el 138% del Nivel Federal de Pobreza: aproximadamente $22,024 al año para una persona sola y $45,540 para una familia de cuatro. Los 41 estados de expansión más D.C. cubren a adultos hasta este límite. Los estados sin expansión (incluidos Texas, Florida y Mississippi) tienen reglas mucho más estrictas. El límite institucional para el Medicaid de hogares de ancianos es $2,982 al mes.'
-            : 'As of 2026, the Medicaid income limit in expansion states is 138% of the Federal Poverty Level: approximately $22,024 per year for a single person and $45,540 for a family of four. The 41 expansion states plus D.C. cover adults up to this limit. Non-expansion states (including Texas, Florida, and Mississippi) have much stricter rules. The institutional limit for Nursing Home Medicaid is $2,982 per month.'}
-        />
-
+      <div className="max-w-5xl mx-auto px-6 py-10 space-y-12">
         {/* Income Limits by Household Size */}
         <section>
           <h2 className="text-2xl font-bold mb-2 text-[#0f172a]">
