@@ -69,30 +69,30 @@ type CTAVariant = {
 const CTA_COPY: Record<'screener' | 'analyzer', { en: CTAVariant; es: CTAVariant }> = {
   screener: {
     en: {
-      heading: 'Check if you qualify for health coverage',
-      desc: 'Our free screener checks Medicaid, Medicare, ACA, CHIP, and VA Healthcare in 2 minutes.',
-      midBtn: 'Check eligibility free',
-      endBtn: 'Check My Eligibility — Free',
+      heading: 'You may qualify for free health insurance.',
+      desc: 'Our 2-minute screener checks Medicaid, ACA, Medicare, CHIP, and more. Most uninsured Americans qualify for $0/month coverage they didn\'t know about.',
+      midBtn: 'Check what I qualify for — free',
+      endBtn: 'Check what I qualify for — free',
     },
     es: {
-      heading: 'Verifique si califica para cobertura de salud',
-      desc: 'Nuestro evaluador gratuito verifica Medicaid, Medicare, ACA, CHIP y VA Healthcare en 2 minutos.',
-      midBtn: 'Verificar elegibilidad gratis',
-      endBtn: 'Verificar Elegibilidad Gratis',
+      heading: 'Puede que califique para seguro médico gratuito.',
+      desc: 'Nuestro evaluador de 2 minutos verifica Medicaid, ACA, Medicare, CHIP y más. La mayoría de los estadounidenses sin seguro califican para cobertura de $0/mes que no sabían que tenían disponible.',
+      midBtn: 'Ver para qué califico — gratis',
+      endBtn: 'Ver para qué califico — gratis',
     },
   },
   analyzer: {
     en: {
-      heading: 'Got a hospital bill? Check it for errors.',
-      desc: 'Our free analyzer flags overcharges, billing errors, and charity care eligibility in 30 seconds.',
-      midBtn: 'Analyze my bill free',
-      endBtn: 'Analyze My Bill — Free',
+      heading: 'Lower your hospital bill. Or get it forgiven.',
+      desc: 'Free in 30 seconds. We check every charge for errors and overcharges, see if you qualify for free care at your hospital, and write a custom dispute letter ready to send. Most patients save hundreds.',
+      midBtn: 'Lower my bill — free',
+      endBtn: 'Lower my bill — free',
     },
     es: {
-      heading: '¿Tiene una factura de hospital? Revísela.',
-      desc: 'Nuestro analizador gratuito detecta sobrecargos, errores de facturación y opciones de asistencia en 30 segundos.',
-      midBtn: 'Analizar mi factura gratis',
-      endBtn: 'Analizar Mi Factura — Gratis',
+      heading: 'Reduzca su factura de hospital. O consígala perdonada.',
+      desc: 'Gratis en 30 segundos. Revisamos cada cargo en busca de errores y sobrecargos, verificamos si califica para atención gratuita en su hospital, y escribimos una carta de disputa personalizada lista para enviar. La mayoría de los pacientes ahorra cientos.',
+      midBtn: 'Reducir mi factura — gratis',
+      endBtn: 'Reducir mi factura — gratis',
     },
   },
 };
