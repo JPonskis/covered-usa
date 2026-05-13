@@ -65,14 +65,19 @@ function renderCell(cell: ReferenceTableCell): React.ReactNode {
 
 export function ReferenceTable({ caption, headers, rows, footnote, source }: ReferenceTableProps) {
   return (
-    <div className="bg-white rounded-xl border border-[#e2e8f0] overflow-hidden">
+    <div className="rounded-xl border border-[#e2e8f0] overflow-hidden bg-white">
+      {/*
+        Caption rendered as a sibling div instead of <table><caption> to avoid the
+        HTML table-caption quirk where the wrapper's white background bleeds in
+        above the caption. Table still gets a screen-reader label via aria-label.
+      */}
+      <div className="px-4 py-3 text-left font-semibold text-[#0f172a] bg-[#f8fafc] border-b border-[#e2e8f0]">
+        {caption}
+      </div>
       <div className="overflow-x-auto">
-        <table className="w-full text-sm">
-          <caption className="px-4 py-3 text-left font-semibold text-[#0f172a] bg-[#f8fafc] border-b border-[#e2e8f0]">
-            {caption}
-          </caption>
+        <table className="w-full text-sm" aria-label={caption}>
           <thead>
-            <tr className="bg-[#134e4a] border-b border-[#0f766e]">
+            <tr className="bg-[#134e4a]">
               {headers.map((header, i) => (
                 <th
                   key={i}
