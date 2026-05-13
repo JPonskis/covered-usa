@@ -190,6 +190,39 @@ export function getMedicalWebPageSchema(props: {
 }
 
 /**
+ * QAPage — single-question page schema for "Does X cover Y" style pages.
+ *
+ * Different from FAQPage:
+ *   - FAQPage = multiple related questions on a page
+ *   - QAPage = one MAIN question is the entire reason the page exists
+ *
+ * Use both schemas together on Q&A template pages: QAPage marks the
+ * page's primary question (the H1 question and its canonical short
+ * answer), FAQPage handles the secondary "related questions" section.
+ */
+export function getQAPageSchema(props: {
+  question: string;
+  answer: string;
+  url: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'QAPage',
+    mainEntity: {
+      '@type': 'Question',
+      name: props.question,
+      text: props.question,
+      answerCount: 1,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: props.answer,
+        url: `${BASE_URL}${props.url}`,
+      },
+    },
+  };
+}
+
+/**
  * DefinedTerm — the core entity for glossary / definitional pages.
  *
  * Use on /out-of-pocket-maximum, /deductible-explained, etc. Signals to
