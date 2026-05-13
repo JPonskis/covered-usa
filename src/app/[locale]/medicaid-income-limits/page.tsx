@@ -13,7 +13,6 @@ import {
   DatasetSchema,
   ScreenerCTA,
   QuickAnswer,
-  PullQuote,
   type ReferenceTableCell,
 } from '@/components/reference';
 
@@ -267,14 +266,6 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
           text={isEs
             ? 'A partir de 2026, el límite de ingresos de Medicaid en estados con expansión es el 138% del Nivel Federal de Pobreza: aproximadamente $22,024 al año para una persona sola y $45,540 para una familia de cuatro. Los 41 estados de expansión más D.C. cubren a adultos hasta este límite. Los estados sin expansión (incluidos Texas, Florida y Mississippi) tienen reglas mucho más estrictas. El límite institucional para el Medicaid de hogares de ancianos es $2,982 al mes.'
             : 'As of 2026, the Medicaid income limit in expansion states is 138% of the Federal Poverty Level: approximately $22,024 per year for a single person and $45,540 for a family of four. The 41 expansion states plus D.C. cover adults up to this limit. Non-expansion states (including Texas, Florida, and Mississippi) have much stricter rules. The institutional limit for Nursing Home Medicaid is $2,982 per month.'}
-        />
-
-        {/* Pull quote — the most-citeable factual line */}
-        <PullQuote
-          text={isEs
-            ? '41 estados más D.C. cubren a adultos hasta el 138% FPL. Los otros 9 estados tienen reglas mucho más estrictas y a menudo solo cubren a niños y mujeres embarazadas.'
-            : '41 states plus D.C. cover adults up to 138% FPL. The other 9 states have much stricter rules and often only cover children and pregnant women.'}
-          attribution="KFF Medicaid Eligibility 2026"
         />
 
         {/* Income Limits by Household Size */}

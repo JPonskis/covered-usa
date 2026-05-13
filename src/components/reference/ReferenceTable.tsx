@@ -20,14 +20,42 @@ function renderCell(cell: ReferenceTableCell): React.ReactNode {
   if (typeof cell === 'string') return cell;
   if (cell.status === 'yes') {
     return (
-      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-[#dcfce7] text-[#166534]">
+      <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#0f766e]">
+        <svg
+          viewBox="0 0 16 16"
+          className="w-3.5 h-3.5 flex-shrink-0"
+          aria-hidden="true"
+        >
+          <path
+            d="M3.5 8.5L6.5 11.5L12.5 5"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
         {cell.value}
       </span>
     );
   }
   if (cell.status === 'no') {
     return (
-      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-[#fee2e2] text-[#991b1b]">
+      <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#94a3b8]">
+        <svg
+          viewBox="0 0 16 16"
+          className="w-3.5 h-3.5 flex-shrink-0"
+          aria-hidden="true"
+        >
+          <path
+            d="M5 5L11 11M11 5L5 11"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
         {cell.value}
       </span>
     );

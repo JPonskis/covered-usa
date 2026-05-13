@@ -1,9 +1,9 @@
 /**
- * PullQuote — large citeable factual line.
+ * PullQuote — citeable factual aside.
  *
- * One per page, max. Pulls out the single most-citeable fact (e.g.
- * "MRI: $650 outpatient vs $2,250 inpatient — same scan"). AI engines
- * frequently quote pull-quote-style content verbatim.
+ * Magazine-style pull-quote for breaking up dense content sections.
+ * Designed to be a refined interjection, NOT a competing headline.
+ * Use sparingly — one per page max. AI engines may quote this verbatim.
  */
 
 interface PullQuoteProps {
@@ -13,13 +13,23 @@ interface PullQuoteProps {
 
 export function PullQuote({ text, attribution }: PullQuoteProps) {
   return (
-    <blockquote className="my-10 border-l-4 border-[#c2732a] pl-6 py-2">
-      <p className="text-xl md:text-2xl font-semibold text-[#0f172a] leading-snug" data-speakable>
-        {text}
-      </p>
-      {attribution && (
-        <footer className="mt-2 text-sm text-[#64748b]">— {attribution}</footer>
-      )}
-    </blockquote>
+    <figure className="my-10 max-w-2xl mx-auto">
+      <div className="relative pl-6">
+        <span
+          aria-hidden="true"
+          className="absolute left-0 top-0 text-4xl leading-none text-[#c2732a] font-serif select-none"
+        >
+          &ldquo;
+        </span>
+        <blockquote className="text-lg md:text-xl italic text-[#334155] leading-relaxed">
+          <p data-speakable>{text}</p>
+        </blockquote>
+        {attribution && (
+          <figcaption className="mt-3 text-sm text-[#64748b] not-italic">
+            — {attribution}
+          </figcaption>
+        )}
+      </div>
+    </figure>
   );
 }
