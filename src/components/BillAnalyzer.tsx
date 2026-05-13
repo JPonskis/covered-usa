@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
 import { getFPLPercent } from '@/lib/bill-analyzer/types'
 import { checkEligibility } from '@/lib/eligibility'
@@ -26,8 +26,6 @@ const labelStyles = 'block text-sm font-medium text-[var(--text-primary)] mb-2'
 export default function BillAnalyzer() {
   const [step, setStep] = useState<Step>('upload')
   const [file, setFile] = useState<File | null>(null)
-
-  useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }, [step])
 
   // About You
   const [firstName, setFirstName] = useState('')
@@ -224,6 +222,7 @@ export default function BillAnalyzer() {
       setLetterText(text)
       setLetterFormOpen(false)
       setStep('letter')
+      window.scrollTo({ top: 0, behavior: 'smooth' })
 
       if (email && text) {
         sendAnalysisEmail(text)
