@@ -306,15 +306,7 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
         </section>
 
         {/* CTA */}
-        <ScreenerCTA
-          locale={locale}
-          slug="medicaid-income-limits"
-          heading={isEs ? '¿Califica para Medicaid?' : 'Do You Qualify for Medicaid?'}
-          body={isEs
-            ? 'Verifique en 2 minutos. Gratis, confidencial, disponible en español.'
-            : 'Check in 2 minutes. Free, confidential, available in Spanish.'}
-          buttonText={isEs ? 'Verificar Elegibilidad Gratis' : 'Check My Eligibility — Free'}
-        />
+        <ScreenerCTA locale={locale} slug="medicaid-income-limits" />
 
         {/* FAQ */}
         <section>

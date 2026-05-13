@@ -369,14 +369,7 @@ export default async function FederalPovertyLevelPage({ params }: PageProps) {
         </section>
 
         {/* CTA */}
-        <ScreenerCTA
-          locale={locale}
-          slug="federal-poverty-level"
-          heading={isEs ? '¿Califica para cobertura de salud basada en su ingreso?' : 'Do You Qualify for Income-Based Health Coverage?'}
-          body={isEs
-            ? 'Nuestro evaluador gratuito verifica Medicaid, ACA, Medicare y CHIP en menos de 2 minutos.'
-            : 'Our free screener checks Medicaid, ACA, Medicare, and CHIP in under 2 minutes.'}
-        />
+        <ScreenerCTA locale={locale} slug="federal-poverty-level" />
 
         {/* Healthcare programs by FPL percentage */}
         <section>

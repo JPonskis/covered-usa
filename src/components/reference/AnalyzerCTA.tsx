@@ -33,11 +33,13 @@ export function AnalyzerCTA({
     ? `?utm_source=programmatic&utm_medium=${variant === 'inline' ? 'mid-cta' : 'cta'}&utm_campaign=${encodeURIComponent(slug)}`
     : '';
 
-  const heading_ = heading ?? (isEs ? '¿Tiene una factura de hospital? Revísela.' : 'Got a hospital bill? Check it for errors.');
+  const heading_ = heading ?? (isEs
+    ? 'Reduzca su factura de hospital. O consígala perdonada.'
+    : 'Lower your hospital bill. Or get it forgiven.');
   const body_ = body ?? (isEs
-    ? 'Nuestro analizador gratuito detecta sobrecargos, errores de facturación y opciones de asistencia en 30 segundos.'
-    : 'Our free analyzer flags overcharges, billing errors, and charity care eligibility in 30 seconds.');
-  const buttonText_ = buttonText ?? (isEs ? 'Analizar mi factura gratis' : 'Analyze my bill free');
+    ? 'Gratis en 30 segundos. Revisamos cada cargo en busca de errores y sobrecargos, verificamos si califica para atención gratuita en su hospital, y escribimos una carta de disputa personalizada lista para enviar. La mayoría de los pacientes ahorra cientos.'
+    : 'Free in 30 seconds. We check every charge for errors and overcharges, see if you qualify for free care at your hospital, and write a custom dispute letter ready to send. Most patients save hundreds.');
+  const buttonText_ = buttonText ?? (isEs ? 'Reducir mi factura — gratis' : 'Lower my bill — free');
 
   const href = `/${locale}/medical-bill-analyzer${utmParams}`;
 

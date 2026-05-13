@@ -33,11 +33,13 @@ export function ScreenerCTA({
     ? `?utm_source=programmatic&utm_medium=${variant === 'inline' ? 'mid-cta' : 'cta'}&utm_campaign=${encodeURIComponent(slug)}`
     : '';
 
-  const heading_ = heading ?? (isEs ? 'Verifique si califica para cobertura de salud' : 'Check if you qualify for health coverage');
+  const heading_ = heading ?? (isEs
+    ? 'Puede que califique para seguro médico gratuito.'
+    : 'You may qualify for free health insurance.');
   const body_ = body ?? (isEs
-    ? 'Nuestro evaluador gratuito verifica Medicaid, Medicare, ACA, CHIP y VA Healthcare en 2 minutos.'
-    : 'Our free screener checks Medicaid, Medicare, ACA, CHIP, and VA Healthcare in 2 minutes.');
-  const buttonText_ = buttonText ?? (isEs ? 'Verificar elegibilidad gratis' : 'Check eligibility free');
+    ? 'Nuestro evaluador de 2 minutos verifica Medicaid, ACA, Medicare, CHIP y más. La mayoría de los estadounidenses sin seguro califican para cobertura de $0/mes que no sabían que tenían disponible.'
+    : 'Our 2-minute screener checks Medicaid, ACA, Medicare, CHIP, and more. Most uninsured Americans qualify for $0/month coverage they didn\'t know about.');
+  const buttonText_ = buttonText ?? (isEs ? 'Ver para qué califico — gratis' : 'Check what I qualify for — free');
 
   const href = `/${locale}/screener${utmParams}`;
 
