@@ -181,7 +181,7 @@ export default function MedicalBillAnalyzerPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main className="min-h-screen" style={{ background: 'var(--warm-white)', overflowAnchor: 'none' }}>
+      <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
         {/* Hero: lead with the problem */}
         <section className="py-16 md:py-20 px-4" style={{ background: 'linear-gradient(135deg, var(--primary-deeper) 0%, var(--primary-dark) 100%)' }}>
           <div className="max-w-2xl mx-auto text-center text-white">

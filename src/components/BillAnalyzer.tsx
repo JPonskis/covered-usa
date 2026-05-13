@@ -39,9 +39,10 @@ export default function BillAnalyzer() {
     if (step === 'results' || step === 'letter') {
       requestAnimationFrame(() => {
         const el = document.getElementById('analyzer')
-        if (!el) return
-        // 24px offset matches scroll-margin-top on the section
-        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24 })
+        if (el) {
+          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24 })
+        }
+        document.documentElement.style.overflowAnchor = ''
       })
     }
   }, [step])
@@ -188,6 +189,7 @@ export default function BillAnalyzer() {
         setLetterFormName([firstName, lastName].filter(Boolean).join(' '))
       }
 
+      document.documentElement.style.overflowAnchor = 'none'
       setStep('results')
     } catch {
       clearInterval(interval)
@@ -240,6 +242,7 @@ export default function BillAnalyzer() {
       const text = data.text ?? ''
       setLetterText(text)
       setLetterFormOpen(false)
+      document.documentElement.style.overflowAnchor = 'none'
       setStep('letter')
 
       if (email && text) {
