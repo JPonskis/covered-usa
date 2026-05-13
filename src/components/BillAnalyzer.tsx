@@ -170,6 +170,7 @@ export default function BillAnalyzer() {
       }
 
       setStep('results')
+      document.getElementById('analyzer')?.scrollIntoView({ behavior: 'smooth' })
     } catch {
       clearInterval(interval)
       setError('Network error. Please check your connection and try again.')
@@ -222,7 +223,7 @@ export default function BillAnalyzer() {
       setLetterText(text)
       setLetterFormOpen(false)
       setStep('letter')
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      document.getElementById('analyzer')?.scrollIntoView({ behavior: 'smooth' })
 
       if (email && text) {
         sendAnalysisEmail(text)
