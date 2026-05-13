@@ -40,8 +40,8 @@ export default function BillAnalyzer() {
       requestAnimationFrame(() => {
         const el = document.getElementById('analyzer')
         if (!el) return
-        const top = el.getBoundingClientRect().top + window.scrollY
-        window.scrollTo({ top, behavior: 'smooth' })
+        // 24px offset matches scroll-margin-top on the section
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24 })
       })
     }
   }, [step])
