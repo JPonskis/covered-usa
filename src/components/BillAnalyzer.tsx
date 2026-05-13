@@ -1068,12 +1068,6 @@ export default function BillAnalyzer() {
                     </span>
                   </div>
 
-                  {/* Why You Qualify box */}
-                  <div className="bg-[var(--cream)] rounded-lg p-4 mb-5">
-                    <p className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-1">Why You Qualify</p>
-                    <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{getProgramDescription(program.id)}</p>
-                  </div>
-
                   {/* ACA: Phone capture + HealthSherpa */}
                   {program.id === 'aca' && (
                     <>
