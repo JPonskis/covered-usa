@@ -61,6 +61,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/federal-poverty-level', { changeFrequency: 'yearly', priority: 0.9 }),
     // Glossary / definitional pages (screener funnel)
     localizedEntry('/out-of-pocket-maximum', { changeFrequency: 'yearly', priority: 0.85 }),
+    // Trigger event pages (life-event triggers, screener funnel)
+    localizedEntry('/just-lost-job-health-insurance', { changeFrequency: 'monthly', priority: 0.85 }),
     // Procedure cost pages (analyzer funnel)
     localizedEntry('/cost/mri', { changeFrequency: 'monthly', priority: 0.85 }),
   ];
