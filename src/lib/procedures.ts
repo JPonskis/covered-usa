@@ -220,7 +220,7 @@ export function getAllProcedures(): Procedure[] {
   }
   const fileNames = fs.readdirSync(proceduresDir);
   return fileNames
-    .filter((name) => name.endsWith('.json'))
+    .filter((name) => name.endsWith('.json') && !name.startsWith('_') && !name.endsWith('.tmp.json'))
     .map((name) => name.replace(/\.json$/, ''))
     .map((slug) => readProcedureFile(slug))
     .filter((p): p is Procedure => p !== null)
@@ -239,7 +239,7 @@ export function getAllProcedureSlugs(): string[] {
   }
   return fs
     .readdirSync(proceduresDir)
-    .filter((name) => name.endsWith('.json'))
+    .filter((name) => name.endsWith('.json') && !name.startsWith('_') && !name.endsWith('.tmp.json'))
     .map((name) => name.replace(/\.json$/, ''))
     .sort();
 }
