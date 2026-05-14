@@ -458,5 +458,89 @@ Backing reports in `specs/research/`:
 - `ai-seo-operator-playbooks.md` — NerdWallet/Vercel/Holland/Ray operator analysis + 2026 playbook
 - `scoring-framework.md` — the weighted formula + AHP/TOPSIS comparison + empirical loop
 - `bing-ai-tooling.md` — Microsoft Clarity, MS Advertising, MS Start, Copilot Studio
+- `lighthouse-pattern-deep-dive.md` — reverse-engineered lighthouse pages + 9 specific picks for CoveredUSA
 
-Combined: ~17,000 words of primary research with ~80 cited sources. Read them in full before any major divergence from this plan.
+Combined: ~23,000 words of primary research with ~100 cited sources. Read them in full before any major divergence from this plan.
+
+---
+
+## Appendix A: Lighthouse strategy (added after deep-dive research)
+
+The deep-dive research (`research/lighthouse-pattern-deep-dive.md`) refined the strategy in five important ways:
+
+### A.1 — Lighthouse is an OUTCOME, not a structural type
+
+A "pillar page" is a structural input (long anchor for a topic cluster). A "lighthouse" is a citation outcome (the single URL Bing/Copilot reuses for the majority of a topic's grounding queries). Most lighthouses are pillar-shaped but **not all pillars become lighthouses** — KFF's "Health Policy 101" is a pillar that does NOT win citations; KFF's state-indicator pages (thin 400-word tabular data widgets) ARE lighthouses. Similarly, MedlinePlus drug pages are ~2,000 words and win — they're institutional Q&A-formatted answers, not 5,000-word pillars.
+
+**Operational rule:** optimize for *citation extractability per fan-out query*, not for pillar-ness. Sometimes that's a 4,000-word pillar; sometimes it's a 400-word data page with Dataset schema.
+
+### A.2 — The passage-level grounding insight
+
+Microsoft's May 2026 blog ("Evolving role of the index") confirms Bing's grounding index operates at the **chunk/passage level**, not URL level. The URL inherits the citation, but the SELECTION unit is the passage. The page that wins the citation is the one with the most extractable passages for the fan-out query set.
+
+**Practical implication for our writing:** every passage should stand alone. Numeric specificity per paragraph. Self-contained answers. The first 30% of body text wins 44.2% of citations (per the AI-SEO operator research).
+
+### A.3 — The evaporation reality
+
+Search Influence's longitudinal data: **97% citation drop in 60 days for unmaintained content.** Half-life ~30–45 days for time-sensitive topics like Medicare costs and FPL. Pure `dateModified` bumps without content change appear NOT to be sufficient — Bing's grounding index detects chunk-level diff.
+
+**What counts as real maintenance:** new data sections, refreshed numbers, new FAQ entries with current-year answers, new source citations, IndexNow re-submission.
+
+**Maintenance budget for the 9-lighthouse layer:** ~4 hours per lighthouse per month = **~36 hours/month total.** Much less than maintaining 500 programmatic pages, with citation share orders of magnitude higher.
+
+### A.4 — Microsoft Copilot Health has a named trusted-source allow-list
+
+Confirmed in the March 2026 Microsoft AI announcement: Copilot Health applies an extra trust filter naming **Harvard Health, JAMA, National Academy of Medicine, HealthEx, Mayo Clinic, Cleveland Clinic, Kaiser Permanente**. This is the first public per-vertical trust gate in any major AI engine.
+
+**Implication:** CoveredUSA likely cannot enter that allow-list directly. We compete on the *broader* Copilot/Bing surface (most healthcare Copilot answers go through standard ranking, not Copilot Health specifically) AND we pick **unclaimed adjacent territory** rather than fighting locked slots like Mayo for "what is hypertension."
+
+### A.5 — The 9 specific lighthouse picks for CoveredUSA
+
+Refined target list, replacing the original "first batch" section above:
+
+| # | Template | URL | Type | Words | Cadence |
+|---|---|---|---|---|---|
+| 1 | Procedures | `/cost/all-procedures-2026` | Type A: year-anchored numeric reference (master index of 30 most-searched procedures with Medicare PFS rates + FAIR Health ranges) | 2,500 | Monthly refresh, annual rebuild Dec 1 |
+| 2 | Drugs | `/drug/medicare-part-d-2026-formulary-guide` | Type B: definitional + Type A: Part D OOP cap explainer with cost-comparison table | 3,000 | Quarterly tier-pricing refresh, annual Q4 rebuild |
+| 3 | Q&A | `/qa/does-medicare-cover-hub-2026` | Type B: aggregated "does Medicare cover X" hub challenging Medicare.gov on the head term but with better schema + filter UX | 2,500 | Quarterly + ad-hoc when CMS issues new coverage decisions |
+| 4 | Q&A | `/qa/medicaid-eligibility-2026` | Type B: definitional eligibility explainer (carefully avoids BenefitsUSA state-Medicaid territory; this is the federal-rule + 138% FPL + non-expansion lens) | 3,000 | Annual rebuild + monthly numeric audit |
+| 5 | Q&A | `/qa/aca-subsidy-eligibility-2026` | Type B: ACA subsidy cliff is BACK for 2026 — this is the most timely lighthouse opportunity we have right now | 3,500 | Quarterly + every CMS subsidy update |
+| 6 | Glossary | `/glossary/health-insurance-terms-explained` | Type B: A-Z index of 80 most-searched terms with 100-word definitions + links to dedicated cluster pages | 4,000 | Annual review + ad-hoc when new regulations introduce terms |
+| 7 | Events | `/event/2026-open-enrollment-deadlines` | Type C: how-to with explicit HowToStep schema, cited every Nov-Jan for "when does open enrollment end" | 2,500 | Weekly during enrollment, archive after |
+| 8 | Events | `/event/medicare-aep-2026` | Type C: same shape for Medicare AEP (Oct 15 - Dec 7) | 2,500 | Weekly during AEP |
+| 9 | State MA | `/medicare-advantage-state-comparison-2026` | Type A: year-anchored numeric reference + comparison of all 50 states' plan counts/premiums/Star Ratings (challenges NerdWallet at the head term) | 3,500 | Monthly numeric audit, annual rebuild Oct (before AEP) |
+
+**Personas gets 0 lighthouses.** Persona pages are intent-specific and don't accumulate citation power at the head-query level. Build the cluster well; revisit if any persona page wins citations naturally.
+
+**Schema priority:** every lighthouse should emit `MedicalWebPage` + `FAQPage` + appropriate type-specific schema. The most underused schema in our space is **`Dataset`** — KFF state indicators win citations partly because they emit Dataset schema. We should add Dataset schema to all our comparison/cost tables.
+
+### A.6 — Challenger strategy
+
+Locked slots we will NOT fight: HHS ASPE for FPL, KFF for state indicators, Medicare.gov for coverage hubs, GoodRx for Ozempic head term, Mayo/Cleveland for hypertension/diabetes, NerdWallet for "best Medicare Advantage [state]."
+
+Unclaimed adjacent slots we WILL fight:
+- "medical procedure costs 2026 comparison" — no entrenched holder
+- "out-of-pocket maximum by state" — no entrenched holder
+- "Medicare Part D formulary by tier" — KFF has partial coverage
+- "ACA subsidy cliff 2026 by income" — uniquely timely (cliff is back)
+- "Medicare Advantage state comparison 2026" — NerdWallet has it but their schema is weak
+- "Open Enrollment deadlines 2026" — Healthcare.gov has it but skeletal
+
+### A.7 — Revised first-batch execution order
+
+Replacing the original "Week 3-6" section, the right order is:
+
+**First lighthouse batch (build in this order, 1 every 2 weeks):**
+1. `/qa/aca-subsidy-eligibility-2026` — timeliest. Cliff is back for 2026; window is now.
+2. `/event/2026-open-enrollment-deadlines` — needs to be live by October 15 for AEP.
+3. `/event/medicare-aep-2026` — same.
+4. `/cost/all-procedures-2026` — anchors the procedure cluster which is our highest-leverage template.
+5. `/medicare-advantage-state-comparison-2026` — anchors the MA cluster.
+6. `/glossary/health-insurance-terms-explained` — easy win, supports internal linking.
+7. `/qa/medicaid-eligibility-2026` — federal-rule lens, avoid BenefitsUSA overlap carefully.
+8. `/qa/does-medicare-cover-hub-2026` — challenger play, takes longer to land.
+9. `/drug/medicare-part-d-2026-formulary-guide` — final, after we've validated the lighthouse pattern works for us.
+
+After each lighthouse ships, run its cluster of programmatic pages (e.g., after lighthouse #4 lands, run procedure-cost bulkgen for 10 cluster pages). This gets us the pillar-cluster shape NerdWallet has — the lighthouse anchors topical authority for the programmatic surface.
+
+---
