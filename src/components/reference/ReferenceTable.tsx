@@ -6,7 +6,7 @@
  * matrices like Medicaid expansion status.
  */
 
-export type ReferenceTableCell = string | { value: string; status?: 'yes' | 'no' };
+export type ReferenceTableCell = string | { value: string; status?: 'yes' | 'no' | 'partial' };
 
 interface ReferenceTableProps {
   caption: string;
@@ -54,6 +54,26 @@ function renderCell(cell: ReferenceTableCell): React.ReactNode {
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
+          />
+        </svg>
+        {cell.value}
+      </span>
+    );
+  }
+  if (cell.status === 'partial') {
+    return (
+      <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#c2732a]">
+        <svg
+          viewBox="0 0 16 16"
+          className="w-3.5 h-3.5 flex-shrink-0"
+          aria-hidden="true"
+        >
+          <path
+            d="M3 8h10"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
           />
         </svg>
         {cell.value}

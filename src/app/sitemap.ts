@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog';
 import { getAllProcedureSlugs, getProcedureBySlug } from '@/lib/procedures';
 import { getAllDrugSlugs, getDrugBySlug } from '@/lib/drugs';
+import { getAllQASlugs, getQABySlug } from '@/lib/qa';
 
 const BASE_URL = 'https://coveredusa.org';
 
@@ -67,8 +68,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/just-lost-job-health-insurance', { changeFrequency: 'monthly', priority: 0.85 }),
     // Persona pages (audience-targeted, screener funnel)
     localizedEntry('/health-insurance-for-gig-workers', { changeFrequency: 'monthly', priority: 0.85 }),
-    // Q&A pages (single-question deep-dives, screener funnel)
-    localizedEntry('/does-medicare-cover-dental', { changeFrequency: 'yearly', priority: 0.85 }),
   ];
 
   // Procedure cost pages — auto-pulled from content/data/procedures/*.json
@@ -93,10 +92,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Q&A pages — auto-pulled from content/data/qa/*.json
+  const qaEntries: MetadataRoute.Sitemap = getAllQASlugs().map((slug) => {
+    const data = getQABySlug(slug);
+    const lastModified = data?.lastUpdated ? new Date(data.lastUpdated) : new Date();
+    return localizedEntry(`/qa/${slug}`, {
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.85,
+    });
+  });
+
   return [
     ...localizedPages,
     ...procedureEntries,
     ...drugEntries,
+    ...qaEntries,
     ...blogEntries,
   ];
 }

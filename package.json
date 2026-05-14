@@ -6,7 +6,8 @@
     "dev": "next dev",
     "validate:procedures": "node scripts/validate-procedures.js",
     "validate:drugs": "node scripts/validate-drugs.js",
-    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js",
+    "validate:qa": "node scripts/validate-qa.js",
+    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

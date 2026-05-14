@@ -1,0 +1,108 @@
+{
+  "_comment": "Q&A page generation queue. Each entry produces ONE JSON file under content/data/qa/<slug>.json via the coveredusa-qa-writer agent. Status: 'queued' / 'writing' / 'verified' / 'flagged' / 'write_failed'.",
+  "_version": "2026.05.14",
+  "qa": [
+    {
+      "slug": "does-medicare-cover-vision",
+      "question": "Does Medicare Cover Vision?",
+      "category": "Medicare",
+      "topic": "Medicare Vision Coverage",
+      "specialty": "PublicHealth",
+      "ctaTarget": "screener",
+      "status": "queued",
+      "notes": "Sister page to does-medicare-cover-dental. Original Medicare excludes routine vision, MA often includes limited vision benefit. Cataract surgery is the main exception (covered under Part B as medically necessary)."
+    },
+    {
+      "slug": "does-medicare-cover-hearing-aids",
+      "question": "Does Medicare Cover Hearing Aids?",
+      "category": "Medicare",
+      "topic": "Medicare Hearing Coverage",
+      "specialty": "PublicHealth",
+      "ctaTarget": "screener",
+      "status": "queued",
+      "notes": "Original Medicare does NOT cover hearing aids. MA plans may include limited hearing benefit. Hearing exam covered only if doctor-ordered for medical diagnosis. Cite KFF analysis."
+    },
+    {
+      "slug": "does-medicaid-cover-dental-by-state",
+      "question": "Does Medicaid Cover Dental? (State-by-State 2026)",
+      "category": "Medicaid",
+      "topic": "Medicaid Dental Coverage",
+      "specialty": "PublicHealth",
+      "ctaTarget": "screener",
+      "status": "queued",
+      "notes": "Dental is OPTIONAL Medicaid benefit (states choose). Most states cover at least emergency. Coverage breakdown: 5 categories — comprehensive, limited, emergency-only, no adult coverage. Reference Medicaid.gov state benefit tracker."
+    },
+    {
+      "slug": "does-aca-cover-pre-existing-conditions",
+      "question": "Does the ACA Cover Pre-existing Conditions?",
+      "category": "ACA",
+      "topic": "ACA Pre-existing Conditions",
+      "specialty": "PublicHealth",
+      "ctaTarget": "screener",
+      "status": "queued",
+      "notes": "YES — ACA prohibits denying coverage or charging more for pre-existing conditions. This is permanent law per ACA 2010. Still relevant because some short-term limited duration insurance (STLDI) plans CAN exclude pre-existing — important caveat."
+    },
+    {
+      "slug": "does-medicaid-cover-rehab",
+      "question": "Does Medicaid Cover Drug Rehab?",
+      "category": "Medicaid",
+      "topic": "Medicaid Substance Use Treatment",
+      "specialty": "Psychiatric",
+      "ctaTarget": "screener",
+      "status": "queued",
+      "notes": "YES — Medicaid covers substance use treatment in all 50 states (ACA EHB requirement). Coverage includes inpatient, outpatient, MAT (methadone, buprenorphine). State variation on details. Reference SAMHSA + Medicaid.gov."
+    },
+    {
+      "slug": "does-medicare-cover-cataract-surgery",
+      "question": "Does Medicare Cover Cataract Surgery?",
+      "category": "Medicare",
+      "topic": "Medicare Cataract Surgery",
+      "specialty": "Ophthalmology",
+      "ctaTarget": "analyzer",
+      "status": "queued",
+      "notes": "YES — covered under Part B. Patient pays 20% after Part B deductible ($283 in 2026). Lens upgrade (premium IOL) NOT covered, patient pays difference (~$1,500-$4,000 per eye). Common Medicare beneficiary surgery. ctaTarget=analyzer because the answer discusses out-of-pocket cost percentages."
+    },
+    {
+      "slug": "can-i-get-medicaid-if-i-work",
+      "question": "Can I Get Medicaid If I Work?",
+      "category": "Medicaid",
+      "topic": "Medicaid Income Limits",
+      "specialty": "PublicHealth",
+      "ctaTarget": "screener",
+      "status": "queued",
+      "notes": "YES, if income below state Medicaid threshold (138% FPL in expansion states). Working alone does not disqualify. Reference 2026 FPL: $15,960 hh-1, 138% = $22,025. State-by-state variation."
+    },
+    {
+      "slug": "is-aca-marketplace-the-same-as-obamacare",
+      "question": "Is the ACA Marketplace the Same as Obamacare?",
+      "category": "Coverage Q&A",
+      "topic": "ACA Marketplace Terminology",
+      "specialty": "PublicHealth",
+      "ctaTarget": "screener",
+      "pageType": "terminology",
+      "status": "queued",
+      "notes": "YES — same thing. 'Obamacare' is the colloquial name for the Patient Protection and Affordable Care Act (ACA) of 2010. Marketplace = the exchange where ACA plans are sold. Brief terminology Q&A. pageType=terminology means OMIT coverageBreakdown."
+    },
+    {
+      "slug": "what-counts-as-income-for-medicaid",
+      "question": "What Counts as Income for Medicaid?",
+      "category": "Coverage Q&A",
+      "topic": "Medicaid MAGI Income Definition",
+      "specialty": "PublicHealth",
+      "ctaTarget": "screener",
+      "pageType": "definition",
+      "status": "queued",
+      "notes": "MAGI (Modified Adjusted Gross Income) for most categories. Includes wages, self-employment, taxable Social Security, capital gains. EXCLUDES: child support, SSI, some VA benefits. Reference IRS + healthcare.gov MAGI definition. pageType=definition means OMIT coverageBreakdown."
+    },
+    {
+      "slug": "does-medicare-cover-physical-therapy",
+      "question": "Does Medicare Cover Physical Therapy?",
+      "category": "Medicare",
+      "topic": "Medicare Physical Therapy Coverage",
+      "specialty": "Physical Therapy",
+      "ctaTarget": "analyzer",
+      "status": "queued",
+      "notes": "YES — covered under Part B. Patient pays 20% after $283 Part B deductible (2026). No annual cap since 2018 KX modifier rules. Doctor must certify medical necessity. MA plans may have prior auth + cap. ctaTarget=analyzer because the answer is dominated by cost-share discussion."
+    }
+  ]
+}
