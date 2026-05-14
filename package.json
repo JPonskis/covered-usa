@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "validate:procedures": "node scripts/validate-procedures.js",
-    "prebuild": "node scripts/validate-procedures.js",
+    "validate:drugs": "node scripts/validate-drugs.js",
+    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

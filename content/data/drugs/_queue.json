@@ -1,0 +1,116 @@
+{
+  "_comment": "Drug page generation queue. Each entry produces ONE JSON file under content/data/drugs/<slug>.json via the coveredusa-drug-writer agent. Status: 'queued' (ready), 'writing' (in flight), 'verified' (passed verifier), 'flagged' (verifier flagged), 'write_failed' (writer crashed - retry-eligible).",
+  "_version": "2026.05.14",
+  "drugs": [
+    {
+      "slug": "ozempic-cost",
+      "name": "Ozempic",
+      "nonProprietaryName": "Semaglutide",
+      "brandNames": ["Ozempic", "Wegovy", "Rybelsus"],
+      "drugClass": "GLP-1 receptor agonist",
+      "route": "Injection",
+      "specialty": "Endocrine",
+      "status": "queued",
+      "notes": "Type 2 diabetes + weight management. Massive recent demand. Pen-injector pricing. Verify 2026 Medicare rates + Novo Nordisk PAP. Wegovy is same molecule for weight loss (different label)."
+    },
+    {
+      "slug": "metformin-cost",
+      "name": "Metformin",
+      "nonProprietaryName": "Metformin hydrochloride",
+      "brandNames": ["Glucophage", "Glumetza", "Fortamet", "Riomet"],
+      "drugClass": "Biguanide (antidiabetic)",
+      "route": "Oral",
+      "specialty": "Endocrine",
+      "status": "queued",
+      "notes": "First-line type 2 diabetes drug. Generic, very cheap retail ($4-$15/month). Strong angle: low retail cost vs hospital inpatient markup. No J-code (oral only)."
+    },
+    {
+      "slug": "humira-cost",
+      "name": "Humira",
+      "nonProprietaryName": "Adalimumab",
+      "brandNames": ["Humira", "Amjevita (biosimilar)", "Cyltezo (biosimilar)"],
+      "drugClass": "TNF inhibitor (anti-TNF biologic)",
+      "route": "Injection",
+      "specialty": "Rheumatology",
+      "status": "queued",
+      "notes": "Most-prescribed biologic. $6,000+/month retail. Biosimilars now available. AbbVie PAP and Humira Complete program. Verify 2026 Part D coverage."
+    },
+    {
+      "slug": "eliquis-cost",
+      "name": "Eliquis",
+      "nonProprietaryName": "Apixaban",
+      "brandNames": ["Eliquis"],
+      "drugClass": "Direct oral anticoagulant (DOAC, factor Xa inhibitor)",
+      "route": "Oral",
+      "specialty": "Cardiology",
+      "status": "queued",
+      "notes": "IRA Medicare drug price negotiation: Eliquis is one of the first 10 drugs with negotiated price effective 2026-01-01. Must reference the negotiation and the new MFP (Maximum Fair Price). Bristol Myers Squibb + Pfizer co-market. PAP: Eliquis 360 Support."
+    },
+    {
+      "slug": "atorvastatin-cost",
+      "name": "Atorvastatin",
+      "nonProprietaryName": "Atorvastatin calcium",
+      "brandNames": ["Lipitor"],
+      "drugClass": "Statin (HMG-CoA reductase inhibitor)",
+      "route": "Oral",
+      "specialty": "Cardiology",
+      "status": "queued",
+      "notes": "Generic statin, very cheap. $4-$15/month retail. High-volume prescription. Brand Lipitor mostly displaced by generic. No specific Part D cap."
+    },
+    {
+      "slug": "lisinopril-cost",
+      "name": "Lisinopril",
+      "nonProprietaryName": "Lisinopril",
+      "brandNames": ["Zestril", "Prinivil", "Qbrelis"],
+      "drugClass": "ACE inhibitor (angiotensin-converting enzyme inhibitor)",
+      "route": "Oral",
+      "specialty": "Cardiology",
+      "status": "queued",
+      "notes": "First-line hypertension. Generic. $4-$10/month retail. Wide use, sometimes combined with HCTZ."
+    },
+    {
+      "slug": "albuterol-cost",
+      "name": "Albuterol",
+      "nonProprietaryName": "Albuterol sulfate",
+      "brandNames": ["ProAir HFA", "Ventolin HFA", "Proventil HFA"],
+      "drugClass": "Short-acting beta-2 agonist (SABA) inhaled bronchodilator",
+      "route": "Inhalation",
+      "specialty": "Pulmonology",
+      "status": "queued",
+      "notes": "Rescue inhaler for asthma/COPD. $30-$80 retail per inhaler. Generic available but brand still common. Pediatric and adult versions. AB-rated generics."
+    },
+    {
+      "slug": "jardiance-cost",
+      "name": "Jardiance",
+      "nonProprietaryName": "Empagliflozin",
+      "brandNames": ["Jardiance"],
+      "drugClass": "SGLT2 inhibitor",
+      "route": "Oral",
+      "specialty": "Endocrine",
+      "status": "queued",
+      "notes": "IRA Medicare drug price negotiation: Jardiance is one of the first 10 negotiated drugs with MFP effective 2026-01-01. Type 2 diabetes + heart failure + CKD indication. Boehringer Ingelheim. PAP: BI Cares Foundation."
+    },
+    {
+      "slug": "levothyroxine-cost",
+      "name": "Levothyroxine",
+      "nonProprietaryName": "Levothyroxine sodium",
+      "brandNames": ["Synthroid", "Levoxyl", "Tirosint", "Unithroid"],
+      "drugClass": "Synthetic thyroid hormone (T4)",
+      "route": "Oral",
+      "specialty": "Endocrine",
+      "status": "queued",
+      "notes": "Hypothyroidism. Lifelong therapy for most patients. Very cheap generic ($4-$15/month). Bioequivalence concerns between manufacturers — sometimes patients are non-substitutable. Common refill confusion."
+    },
+    {
+      "slug": "wegovy-cost",
+      "name": "Wegovy",
+      "nonProprietaryName": "Semaglutide (for chronic weight management)",
+      "brandNames": ["Wegovy"],
+      "drugClass": "GLP-1 receptor agonist",
+      "route": "Injection",
+      "specialty": "Endocrine",
+      "status": "queued",
+      "notes": "Same molecule as Ozempic but FDA-approved specifically for chronic weight management. Higher dose. $1,300+/month retail. Most insurance plans don't cover weight-loss drugs (Medicare excludes). PAP eligibility limited. Strong consumer demand."
+    }
+  ]
+}
