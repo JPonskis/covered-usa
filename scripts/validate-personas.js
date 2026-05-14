@@ -6,6 +6,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { validateContentQuality } = require('./lib/content-quality');
 
 const DIR = path.join(__dirname, '..', 'content', 'data', 'personas');
 
@@ -139,10 +140,15 @@ function main() {
     try { data = JSON.parse(fs.readFileSync(path.join(DIR, file), 'utf8')); }
     catch (err) { console.error(`❌ ${file}: ${err.message}`); totalErrors++; badFiles++; continue; }
     const errors = validatePersona(slug, data);
-    if (errors.length > 0) {
-      console.error(`❌ ${file} (${errors.length} issues):`);
-      errors.forEach((e) => console.error(`    - ${e}`));
-      totalErrors += errors.length; badFiles++;
+    const cq = validateContentQuality(slug, data);
+    cq.warnings.forEach((w) => console.warn(`  ⚠️  ${file}: ${w}`));
+    const allErrors = [...errors, ...cq.errors];
+    if (allErrors.length > 0) {
+      console.error(`❌ ${file} (${allErrors.length} issues):`);
+      allErrors.forEach((e) => console.error(`    - ${e}`));
+      totalErrors += allErrors.length; badFiles++;
+    } else if (cq.warnings.length > 0) {
+      console.log(`✅ ${file} (${cq.warnings.length} content-quality warnings)`);
     } else {
       console.log(`✅ ${file}`);
     }
