@@ -16,9 +16,9 @@ const ALLOWED_TYPES = new Set([
 const MAX_FILE_SIZE = 10 * 1024 * 1024 // 10MB
 
 // Rate limits: burst (per minute) + sustained (per hour)
-const BURST_MAX = 10 // TODO: restore to 2 after testing
+const BURST_MAX = 2
 const BURST_WINDOW_MS = 60 * 1000 // 1 minute
-const HOURLY_MAX = 30 // TODO: restore to 5 after testing
+const HOURLY_MAX = 5
 const HOURLY_WINDOW_MS = 60 * 60 * 1000 // 1 hour
 
 async function checkRateLimit(ip: string): Promise<{ allowed: boolean; message?: string }> {
