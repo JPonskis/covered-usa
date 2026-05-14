@@ -86,26 +86,37 @@ function renderCell(cell: ReferenceTableCell): React.ReactNode {
 export function ReferenceTable({ caption, headers, rows, footnote, source }: ReferenceTableProps) {
   return (
     <div className="rounded-xl border border-[#e2e8f0] overflow-hidden bg-white">
-      {/*
-        Caption rendered as a sibling div instead of <table><caption> to avoid the
-        HTML table-caption quirk where the wrapper's white background bleeds in
-        above the caption. Table still gets a screen-reader label via aria-label.
-      */}
-      <div className="px-4 py-3 text-left font-semibold text-[#0f172a] bg-[#f8fafc] border-b border-[#e2e8f0]">
-        {caption}
-      </div>
       <div className="overflow-x-auto">
         {/*
           Inline styles to escape the .article-content table cascade
           in globals.css (which adds margin: 2rem 0, border-radius, border,
           and overrides th backgrounds). Inline styles have higher
           specificity than any stylesheet rule short of !important.
+
+          <caption> rendered as a real HTML element so schema parsers,
+          assistive tech, and SEO crawlers see the table label natively.
+          Inline background + display ensures the wrapper's white background
+          does not bleed in above the caption (the original quirk that
+          motivated the earlier <div> workaround).
         */}
         <table
           className="w-full text-sm"
-          aria-label={caption}
           style={{ margin: 0, border: 'none', borderRadius: 0, borderCollapse: 'collapse' }}
         >
+          <caption
+            className="px-4 py-3 text-left font-semibold text-[#0f172a] border-b border-[#e2e8f0]"
+            style={{
+              captionSide: 'top',
+              textAlign: 'left',
+              background: '#f8fafc',
+              padding: '0.75rem 1rem',
+              fontWeight: 600,
+              color: '#0f172a',
+              borderBottom: '1px solid #e2e8f0',
+            }}
+          >
+            {caption}
+          </caption>
           <thead>
             <tr>
               {headers.map((header, i) => (
