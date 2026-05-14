@@ -9,7 +9,7 @@ target: "screener"
 
 The ACA subsidy cliff returned in 2026 after a four-year break. From 2021 through 2025, enhanced premium tax credits eliminated the income cap on subsidies. That era ended when Congress let those provisions expire at the close of 2025. As of January 1, 2026, households earning above 400% of the federal poverty level (FPL) receive zero premium tax credits, no matter how much a benchmark plan actually costs.
 
-> **Quick Answer:** In 2026, a single adult loses all ACA premium subsidies once income exceeds roughly $60,240. A family of four hits the cliff at about $124,800. One dollar over the line means $0 in premium tax credits for the entire year.
+> **Quick Answer:** In 2026, a single adult loses all ACA premium subsidies once income exceeds roughly $62,600. A family of four hits the cliff at about $128,600. One dollar over the line means $0 in premium tax credits for the entire year.
 
 For millions of marketplace enrollees, that single dollar difference could mean thousands of dollars in annual premiums. Understanding where the cliff sits, who it affects, and how to manage income around it can be the difference between affordable coverage and a bill that consumes a quarter of your paycheck.
 
@@ -27,12 +27,12 @@ ACA subsidies for 2026 coverage use the 2025 federal poverty guidelines, publish
 
 | Household Size | 100% FPL (floor) | 400% FPL (cliff) |
 |---|---|---|
-| 1 person | $15,060 | $60,240 |
-| 2 people | $20,440 | $81,760 |
-| 3 people | $25,820 | $103,280 |
-| 4 people | $31,200 | $124,800 |
-| 5 people | $36,580 | $146,320 |
-| 6 people | $41,960 | $167,840 |
+| 1 person | $15,650 | $62,600 |
+| 2 people | $21,150 | $84,600 |
+| 3 people | $26,650 | $106,600 |
+| 4 people | $32,150 | $128,600 |
+| 5 people | $37,650 | $150,600 |
+| 6 people | $43,150 | $172,600 |
 
 Alaska and Hawaii have higher FPL thresholds because the federal government adjusts for cost of living in those states.
 
@@ -40,9 +40,9 @@ The income figure that matters is your Modified Adjusted Gross Income (MAGI), no
 
 ## Why One Dollar Over the Cliff Is So Expensive
 
-The math here is brutal. Consider a 60-year-old earning $61,000 per year (just under the 400% FPL cliff). They qualify for a premium tax credit that could reduce their annual benchmark plan cost to around 8.5% of their income, or roughly $5,185 per year.
+The math here is brutal. Consider a 60-year-old earning $62,300 per year (just under the 400% FPL cliff). They qualify for a premium tax credit that could reduce their annual benchmark plan cost to around 9.96% of their income, or roughly $6,205 per year.
 
-Now suppose that same person earns $61,000 in wages but also sells a few shares of stock, generating $500 in capital gains. Total MAGI: $61,500. That is above the $60,240 cliff. The premium tax credit disappears entirely. The unsubsidized benchmark plan for a 60-year-old can easily run $15,000 to $22,000 per year depending on the region.
+Now suppose that same person earns $62,300 in wages but also sells a few shares of stock, generating $500 in capital gains. Total MAGI: $62,800. That is above the $62,600 cliff. The premium tax credit disappears entirely. The unsubsidized benchmark plan for a 60-year-old can easily run $15,000 to $22,000 per year depending on the region.
 
 That $500 in capital gains effectively cost them $10,000 or more in lost subsidies. Financial planners sometimes call this the "phantom tax" because it functions like an enormous marginal tax rate on the last few dollars of income, even though no official tax bracket does this.
 
@@ -66,11 +66,11 @@ Below the 400% cliff, there is another important income cutoff at 250% FPL. Hous
 
 | Household Size | 250% FPL (CSR eligibility limit) |
 |---|---|
-| 1 person | $37,650 |
-| 2 people | $51,100 |
-| 3 people | $64,550 |
-| 4 people | $78,000 |
-| 5 people | $91,450 |
+| 1 person | $39,125 |
+| 2 people | $52,875 |
+| 3 people | $66,625 |
+| 4 people | $80,375 |
+| 5 people | $94,125 |
 
 Cost-sharing reductions are only available on Silver plans and require your income to stay below 250% FPL. This creates a similar cliff-like effect at that threshold: just above 250% FPL, your Silver plan gets significantly less valuable even if your premium subsidy remains in place.
 
@@ -80,7 +80,7 @@ Check your eligibility for both the premium tax credit and cost-sharing reductio
 
 If your income is near 400% FPL, the following approaches can help you reduce MAGI and stay on the subsidy side of the line. None of these are guaranteed to work for every situation. A licensed financial or tax professional can help apply them to your specific circumstances.
 
-**Maximize pre-tax contributions.** Contributions to a traditional 401(k), 403(b), traditional IRA, or HSA reduce your MAGI dollar for dollar. For 2026, the 401(k) contribution limit is $23,500 ($31,000 if age 50 or older). The HSA contribution limit is $4,400 for self-only coverage and $8,750 for family coverage. These contributions directly shrink the income figure that determines subsidy eligibility.
+**Maximize pre-tax contributions.** Contributions to a traditional 401(k), 403(b), traditional IRA, or HSA reduce your MAGI dollar for dollar. For 2026, the 401(k) contribution limit is $24,500 ($32,500 if age 50 or older). The HSA contribution limit is $4,400 for self-only coverage and $8,750 for family coverage. These contributions directly shrink the income figure that determines subsidy eligibility.
 
 **Use Roth IRA distributions strategically.** Qualified withdrawals from a Roth IRA do not count toward MAGI. If you need to supplement income, drawing from a Roth account instead of a traditional IRA or brokerage account can keep your MAGI below the cliff.
 
@@ -104,7 +104,7 @@ The first step is knowing where you stand. Use the free screener at CoveredUSA t
 
 If your income is close to 400% FPL, run the screener with both your expected income and a scenario that is $2,000 to $5,000 below your estimate. That will show you how valuable it could be to reduce MAGI through the strategies above.
 
-Check your eligibility now at CoveredUSA -- it takes 2 minutes.
+Check your eligibility now at CoveredUSA. It takes 2 minutes.
 
 [Check your eligibility at CoveredUSA](/screener)
 
@@ -112,7 +112,7 @@ Check your eligibility now at CoveredUSA -- it takes 2 minutes.
 
 ### What is the ACA subsidy cliff in 2026?
 
-The ACA subsidy cliff is the income point at which premium tax credits drop to zero. In 2026, that point is 400% of the federal poverty level. For a single person, that is $60,240. For a family of four, it is $124,800. One dollar over that threshold means no premium subsidy for the entire year.
+The ACA subsidy cliff is the income point at which premium tax credits drop to zero. In 2026, that point is 400% of the federal poverty level. For a single person, that is $62,600. For a family of four, it is $128,600. One dollar over that threshold means no premium subsidy for the entire year.
 
 ### Why did the subsidy cliff come back in 2026?
 

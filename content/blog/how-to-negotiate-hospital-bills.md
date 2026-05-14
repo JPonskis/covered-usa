@@ -82,7 +82,7 @@ Start your offer at 50% of the bill or lower. Many hospitals accept 30 to 50 cen
 
 ### Payment Plans
 
-If a lump sum is not possible, ask about an interest-free payment plan. Most hospitals offer them, and some hospitals are legally required to provide them (California's HFLA law, for example, requires hospitals to offer payment plans at 0% interest for patients under 400% FPL). A manageable monthly payment keeps your account out of collections.
+If a lump sum is not possible, ask about an interest-free payment plan. Most hospitals offer them, and some hospitals are legally required to provide them (California's Hospital Fair Pricing Act, for example, requires hospitals to offer interest-free payment plans for patients at or below 400% FPL). A manageable monthly payment keeps your account out of collections.
 
 ### Comparison Shopping for the Same Procedure
 
@@ -94,7 +94,7 @@ Medical debt works differently from other debt:
 
 - Medical debt cannot appear on your credit report until it is at least **365 days past due**. You have a full year to resolve a bill before it affects your credit score.
 - As of 2023, paid medical debt no longer appears on credit reports (Equifax, Experian, and TransUnion all removed it).
-- The CFPB has proposed rules that would remove most medical debt from credit reports entirely.
+- The CFPB finalized a rule in early 2025 to remove most medical debt from credit reports, but a federal court in Texas vacated the rule in July 2025, so it is not currently in effect.
 - Hospitals typically do not charge interest on unpaid balances while you are actively in communication with the billing department.
 
 The practical implication: do not rush into a bad payment decision just because you are worried about your credit. Use the 365-day window to negotiate properly.
