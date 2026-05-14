@@ -5,6 +5,7 @@ import {
   getFAQSchema,
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
+  buildSchemaGraph,
 } from '@/lib/structured-data';
 import {
   ReferenceTable,
@@ -242,11 +243,14 @@ export default async function FederalPovertyLevelPage({ params }: PageProps) {
   const single100 = fpl(1);
   const family4_100 = fpl(4);
 
+  const pageGraph = buildSchemaGraph(
+    [medicalWebPageSchema, breadcrumbSchema, faqSchema],
+    `/${locale}/federal-poverty-level`,
+  );
+
   return (
     <main className="min-h-screen bg-[#f8fafc]">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
       <DatasetSchema
         name={isEs ? 'Guías del Nivel Federal de Pobreza 2026' : '2026 Federal Poverty Level Guidelines'}
         description={isEs

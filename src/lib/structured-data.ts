@@ -1,5 +1,119 @@
 const BASE_URL = 'https://coveredusa.org';
 
+/**
+ * Consolidates multiple schema.org nodes into one JSON-LD `@graph` per page.
+ *
+ * Each node has its `@context` stripped (one top-level context for the
+ * whole graph), an `@id` URI assigned (so nodes can reference each other),
+ * and — for entity types like Drug/MedicalProcedure/DefinedTerm/HowTo —
+ * a `mainEntityOfPage` back-reference to the page's primary MedicalWebPage/
+ * WebPage node when one is present in the graph. The page's MedicalWebPage
+ * node also gets `mainEntity` pointing to the primary entity.
+ *
+ * Framework Rule 7.6: prefer one `@graph` per page with explicit `@id`
+ * linking over stacked separate `<script>` tags.
+ *
+ * Usage:
+ *   const graph = buildSchemaGraph(
+ *     [medicalWebPageSchema, breadcrumbSchema, faqSchema, medicalProcedureSchema],
+ *     '/en/cost/mri'
+ *   );
+ *   <script type="application/ld+json"
+ *     dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
+ */
+type SchemaNode = Record<string, unknown>;
+
+const ID_FRAGMENTS: Record<string, string> = {
+  MedicalWebPage: '#webpage',
+  WebPage: '#webpage',
+  BreadcrumbList: '#breadcrumb',
+  FAQPage: '#faq',
+  QAPage: '#qapage',
+  Drug: '#drug',
+  DefinedTerm: '#definedterm',
+  MedicalProcedure: '#procedure',
+  HowTo: '#howto',
+  Organization: '#organization',
+  WebApplication: '#webapp',
+  Dataset: '#dataset',
+};
+
+const PRIMARY_ENTITY_TYPES = new Set([
+  'Drug',
+  'MedicalProcedure',
+  'DefinedTerm',
+  'QAPage',
+]);
+
+const ENTITY_LINK_TYPES = new Set([
+  'Drug',
+  'MedicalProcedure',
+  'DefinedTerm',
+  'HowTo',
+  'QAPage',
+  'FAQPage',
+  'BreadcrumbList',
+  'Dataset',
+  'WebApplication',
+]);
+
+export function buildSchemaGraph(nodes: (SchemaNode | SchemaNode[])[], pageUrl: string): SchemaNode {
+  const fullUrl = pageUrl.startsWith('http') ? pageUrl : `${BASE_URL}${pageUrl}`;
+  const flat = nodes.flat().filter((n): n is SchemaNode => Boolean(n));
+  const usedIds = new Set<string>();
+
+  // Helpers that tolerate both string and string[] @type values (some templates
+  // stack types, e.g. blog uses `['Article', 'MedicalWebPage']`).
+  const typesOf = (node: SchemaNode): string[] => {
+    const t = node['@type'];
+    if (typeof t === 'string') return [t];
+    if (Array.isArray(t)) return t.filter((x): x is string => typeof x === 'string');
+    return [];
+  };
+  const hasType = (node: SchemaNode, candidates: Set<string> | string[]): boolean => {
+    const set = candidates instanceof Set ? candidates : new Set(candidates);
+    return typesOf(node).some((t) => set.has(t));
+  };
+
+  const graph: SchemaNode[] = flat.map((node) => {
+    const { '@context': _ctx, ...rest } = node as { '@context'?: unknown } & SchemaNode;
+    // For id fragment selection, prefer the most specific (last) declared type
+    // when @type is an array — `['Article', 'MedicalWebPage']` → use MedicalWebPage.
+    const types = typesOf({ '@type': rest['@type'] } as SchemaNode);
+    const primaryType =
+      types.find((t) => ID_FRAGMENTS[t]) ?? types[0] ?? '';
+    const fragment = ID_FRAGMENTS[primaryType] ?? `#${primaryType.toLowerCase() || 'node'}`;
+    let id = `${fullUrl}${fragment}`;
+    let suffix = 2;
+    while (usedIds.has(id)) {
+      id = `${fullUrl}${fragment}-${suffix}`;
+      suffix += 1;
+    }
+    usedIds.add(id);
+    return { '@id': id, ...rest };
+  });
+
+  const webPageNode = graph.find((n) => hasType(n, ['MedicalWebPage', 'WebPage']));
+  if (webPageNode) {
+    const webPageId = webPageNode['@id'];
+    const primaryEntity = graph.find((n) => n !== webPageNode && hasType(n, PRIMARY_ENTITY_TYPES));
+    if (primaryEntity) {
+      webPageNode.mainEntity = { '@id': primaryEntity['@id'] as string };
+    }
+    for (const node of graph) {
+      if (node === webPageNode) continue;
+      if (hasType(node, ENTITY_LINK_TYPES)) {
+        node.mainEntityOfPage = { '@id': webPageId as string };
+      }
+    }
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': graph,
+  };
+}
+
 export function getSpeakableSchema(url: string, cssSelectors: string[] = ['h1', '[data-speakable]', '.prose-custom p:first-of-type']) {
   return {
     '@context': 'https://schema.org',

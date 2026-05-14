@@ -7,6 +7,7 @@ import {
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
   getMedicalProcedureSchema,
+  buildSchemaGraph,
   COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
@@ -124,12 +125,14 @@ export default async function ProcedureCostPage({ params }: PageProps) {
     });
   };
 
+  const pageGraph = buildSchemaGraph(
+    [medicalWebPageSchema, breadcrumbSchema, faqSchema, medicalProcedureSchema],
+    `/${locale}/cost/${procedure}`,
+  );
+
   return (
     <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalProcedureSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
       <DatasetSchema
         name={isEs
           ? `Datos de costo de ${pickLocale(data.shortName, locale)} ${data.pricing.partBDeductibleYear}`

@@ -6,6 +6,7 @@ import {
   getFAQSchema,
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
+  buildSchemaGraph,
   COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
@@ -149,19 +150,16 @@ export default async function MedicareAdvantageStatePage({
   const fmtNum = (n: number) =>
     n.toLocaleString(isEs ? 'es-US' : 'en-US');
 
+  const pageGraph = buildSchemaGraph(
+    [medicalWebPageSchema, breadcrumbSchema, faqSchema],
+    `/${locale}/medicare-advantage/${state}`,
+  );
+
   return (
     <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }}
       />
       <DatasetSchema
         name={

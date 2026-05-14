@@ -7,6 +7,7 @@ import {
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
   getDefinedTermSchema,
+  buildSchemaGraph,
   COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
@@ -116,12 +117,14 @@ export default async function GlossaryTermPage({ params }: PageProps) {
 
   const CTAComponent = data.ctaTarget === 'analyzer' ? AnalyzerCTA : ScreenerCTA;
 
+  const pageGraph = buildSchemaGraph(
+    [medicalWebPageSchema, breadcrumbSchema, faqSchema, definedTermSchema],
+    `/${locale}/glossary/${term}`,
+  );
+
   return (
     <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(definedTermSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
 
       {/* Article Header */}
       <div className="warm-texture border-b" style={{ borderColor: 'var(--border)' }}>

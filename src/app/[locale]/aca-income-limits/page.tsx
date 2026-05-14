@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { setRequestLocale } from 'next-intl/server';
-import { getFAQSchema, getBreadcrumbSchema } from '@/lib/structured-data';
+import { getFAQSchema, getBreadcrumbSchema, buildSchemaGraph } from '@/lib/structured-data';
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -121,10 +121,14 @@ export default async function AcaIncomeLimitsPage({ params }: PageProps) {
     { name: isEs ? 'Límites de Ingresos ACA' : 'ACA Income Limits', url: `/${locale}/aca-income-limits` },
   ]);
 
+  const pageGraph = buildSchemaGraph(
+    [breadcrumbSchema, faqSchema],
+    `/${locale}/aca-income-limits`,
+  );
+
   return (
     <main className="min-h-screen" style={{ background: '#f8fafc' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
 
       {/* Hero */}
       <div style={{ background: 'white', borderBottom: '1px solid #e2e8f0' }}>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts, formatDate } from '@/lib/blog';
+import { buildSchemaGraph } from '@/lib/structured-data';
 import { setRequestLocale } from 'next-intl/server';
 import BlogDropCap from '@/components/BlogDropCap';
 import AuthorBio from '@/components/AuthorBio';
@@ -206,12 +207,14 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
     }
   }
 
+  const pageGraph = buildSchemaGraph(
+    [articleSchema, breadcrumbSchema, faqSchema, howToSchema].filter(Boolean) as Record<string, unknown>[],
+    `/${locale}/blog/${slug}`,
+  );
+
   return (
     <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
-      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
 
       {/* Article Header */}
       <div className="warm-texture border-b" style={{ borderColor: 'var(--border)' }}>

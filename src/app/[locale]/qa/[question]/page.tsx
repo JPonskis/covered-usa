@@ -7,6 +7,7 @@ import {
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
   getQAPageSchema,
+  buildSchemaGraph,
   COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
@@ -126,12 +127,14 @@ export default async function QAPage({ params }: PageProps) {
   // Choose CTA component based on ctaTarget
   const CTAComponent = data.ctaTarget === 'analyzer' ? AnalyzerCTA : ScreenerCTA;
 
+  const pageGraph = buildSchemaGraph(
+    [medicalWebPageSchema, breadcrumbSchema, faqSchema, qaPageSchema],
+    `/${locale}/qa/${question}`,
+  );
+
   return (
     <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(qaPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
 
       {/* Article Header */}
       <div className="warm-texture border-b" style={{ borderColor: 'var(--border)' }}>

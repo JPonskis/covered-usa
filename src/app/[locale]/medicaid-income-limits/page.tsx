@@ -5,6 +5,7 @@ import {
   getFAQSchema,
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
+  buildSchemaGraph,
 } from '@/lib/structured-data';
 import {
   ReferenceTable,
@@ -216,11 +217,14 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
     state.note[isEs ? 'es' : 'en'],
   ]);
 
+  const pageGraph = buildSchemaGraph(
+    [medicalWebPageSchema, breadcrumbSchema, faqSchema],
+    `/${locale}/medicaid-income-limits`,
+  );
+
   return (
     <main className="min-h-screen bg-[#f8fafc]">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
       <DatasetSchema
         name={isEs ? 'Límites de Ingresos de Medicaid 2026 por Estado' : '2026 Medicaid Income Limits by State'}
         description={isEs

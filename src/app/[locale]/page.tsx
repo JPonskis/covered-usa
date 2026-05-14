@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
+import { buildSchemaGraph } from '@/lib/structured-data';
 
 export async function generateMetadata({
   params,
@@ -178,8 +179,14 @@ export default async function HomePage({
 
   return (
     <main className="min-h-screen">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            buildSchemaGraph([faqSchema, webAppSchema], `/${locale}`),
+          ),
+        }}
+      />
 
       {/* ── HERO ── */}
       <section className="warm-texture" style={{ position: 'relative', overflow: 'hidden' }}>

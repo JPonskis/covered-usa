@@ -7,6 +7,7 @@ import {
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
   getDrugSchema,
+  buildSchemaGraph,
   COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
@@ -143,12 +144,14 @@ export default async function DrugPage({ params }: PageProps) {
     });
   };
 
+  const pageGraph = buildSchemaGraph(
+    [medicalWebPageSchema, breadcrumbSchema, faqSchema, drugSchema],
+    `/${locale}/drug/${drug}`,
+  );
+
   return (
     <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(drugSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
       <DatasetSchema
         name={isEs
           ? `Datos de costo de ${pickLocale(data.shortName, locale)} ${data.pricing.partBDeductibleYear}`

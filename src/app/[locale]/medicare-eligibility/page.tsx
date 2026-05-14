@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { setRequestLocale } from 'next-intl/server';
-import { getFAQSchema, getBreadcrumbSchema } from '@/lib/structured-data';
+import { getFAQSchema, getBreadcrumbSchema, buildSchemaGraph } from '@/lib/structured-data';
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -103,10 +103,14 @@ export default async function MedicareEligibilityPage({ params }: PageProps) {
     { name: isEs ? 'Elegibilidad Medicare' : 'Medicare Eligibility', url: `/${locale}/medicare-eligibility` },
   ]);
 
+  const pageGraph = buildSchemaGraph(
+    [breadcrumbSchema, faqSchema],
+    `/${locale}/medicare-eligibility`,
+  );
+
   return (
     <main className="min-h-screen" style={{ background: '#f8fafc' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageGraph) }} />
 
       {/* Hero */}
       <div style={{ background: 'white', borderBottom: '1px solid #e2e8f0' }}>
