@@ -61,7 +61,7 @@ The other 10 high-impact rules are in Section 1.5 below. The complete operationa
 8. **Map H2s to the 8 fan-out variants** (Equivalent, Follow-up, Generalization, Specification, Canonicalization, Translation, Entailment, Clarification). [INFERRED — operator framework]
 9. **MedicalWebPage + type-specific schema (FAQPage/QAPage/Drug/MedicalProcedure/DefinedTerm) on every health page,** linked via `@graph` not stacked `@type`. [CONFIRMED operational best practice]
 10. **Author byline visible + JSON-LD; reviewer slot to be filled when we source a credentialed reviewer** (current gap on YMYL trust signal). [LIKELY]
-11. **Allow Bingbot, Bing-AISearchCrawler, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot in robots.txt.** Bing-first optimization but all crawlers allowed. [CONFIRMED operational best practice]
+11. **Allow Bingbot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Claude-User, Claude-SearchBot in robots.txt.** Bing-first optimization but all crawlers allowed. Per Microsoft's official documentation, `Bingbot` itself powers both Bing Search and Copilot grounding — there is no separate `Bing-AISearchCrawler` user-agent. Anthropic publishes three crawlers: `ClaudeBot` (training), `Claude-User` (Claude.ai browsing), `Claude-SearchBot` (Claude search-style answers). [CONFIRMED operational best practice]
 12. **87% of ChatGPT Search citations match Bing's top organic.** Bing optimization compounds across Copilot + ChatGPT Search. [CONFIRMED, Seer Interactive]
 13. **Citation distribution is power-law on a per-domain basis.** Search Influence's single-site data: 1 page captured 69%; top 4 captured 90%. Concentrate effort on lighthouses, not breadth. [CONFIRMED for single-domain; do NOT attribute to Microsoft]
 14. **AI-cited URLs average ~1,056 days for Copilot (1,064 across all AI surfaces).** ~25.7% fresher than organic average of 1,432 days. [CONFIRMED, Ahrefs 16.975M-citation study]
@@ -392,8 +392,7 @@ Operational rule:
 
 | Crawler | Used by | Behavior |
 |---|---|---|
-| `Bingbot` | Bing index (powers Copilot grounding) | Standard crawl + ingestion |
-| `Bing-AISearchCrawler` | Bing AI experiences (real-time fetch) | Lazy fetch on demand |
+| `Bingbot` | Bing index AND Copilot grounding (per Microsoft docs) | Standard crawl + ingestion |
 | `OAI-SearchBot` | ChatGPT Search citation pool | Index ingestion |
 | `ChatGPT-User` | ChatGPT real-time browsing | Lazy fetch |
 | `GPTBot` | OpenAI model training | Bulk crawl |
@@ -401,6 +400,9 @@ Operational rule:
 | `Perplexity-User` | Perplexity real-time browsing | Lazy fetch |
 | `ClaudeBot` | Anthropic model training | Bulk crawl |
 | `Claude-User` | Claude.ai real-time browsing | Lazy fetch |
+| `Claude-SearchBot` | Claude search-style answer indexing | Index ingestion |
+
+**Correction note (2026-05-14):** Earlier framework draft listed `Bing-AISearchCrawler` as a separate user-agent. Verification against Microsoft's official crawler documentation (bing.com/webmasters and learn.microsoft.com) confirms no such user-agent is published. Microsoft's stated position is that Bingbot itself powers both Bing Search and Copilot. The user-agent has been removed from the canonical list.
 
 **Strategic position:** We are Bing-first (per Rule 13 — 87% Bing/SearchGPT overlap means Bing optimization covers most of ChatGPT Search for free). Perplexity and Claude are happy side effects of Bing-optimized content, not co-equal optimization targets. We allow all the above crawlers but engineer specifically for Bing/Copilot retrieval.
 

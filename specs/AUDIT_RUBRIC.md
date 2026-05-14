@@ -266,10 +266,9 @@ Each rule check declares how it was verified:
 **Rule 14.1.** `Allow: /` for `Bingbot`. [CONFIRMED → CRITICAL]
 - Verify: [STATIC] inspect robots.ts.
 
-**Rule 14.2.** `Allow: /` for `Bing-AISearchCrawler`. [INFERRED → MAJOR]
-- Verify: [STATIC]
+**Rule 14.2.** ~~`Allow: /` for `Bing-AISearchCrawler`.~~ **REMOVED 2026-05-14** — verification against Microsoft's official crawler documentation confirmed no such user-agent exists. Bingbot itself powers Copilot grounding.
 
-**Rule 14.3.** `Allow: /` for `OAI-SearchBot`, `ChatGPT-User`, `GPTBot`, `PerplexityBot`, `Perplexity-User`, `ClaudeBot`, `Claude-User`. [INFERRED → MINOR]
+**Rule 14.3.** `Allow: /` for `OAI-SearchBot`, `ChatGPT-User`, `GPTBot`, `PerplexityBot`, `Perplexity-User`, `ClaudeBot`, `Claude-User`, `Claude-SearchBot`. [INFERRED → MINOR]
 - Verify: [STATIC]
 
 **Rule 14.4.** `nosnippet` not applied to whole pages. [CONFIRMED PRIMARY → MAJOR]

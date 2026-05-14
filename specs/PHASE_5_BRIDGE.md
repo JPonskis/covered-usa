@@ -214,8 +214,8 @@ Each touches one file but cascades across all 8 templates.
 ### A4. Robots.txt missing crawlers
 
 **File:** `src/app/robots.ts`
-**What:** Add explicit `Allow: /` for `Bing-AISearchCrawler` (real-time fetch crawler for Bing AI experiences) and `Claude-User` (Claude.ai browsing, distinct from `ClaudeBot` training crawler).
-**Severity:** MAJOR for Bing-AISearchCrawler; MINOR for Claude-User.
+**What:** Add explicit `Allow: /` for `Claude-User` (Claude.ai browsing) and `Claude-SearchBot` (Claude search-style indexing) — both distinct from `ClaudeBot` (training). Earlier draft of this spec called for `Bing-AISearchCrawler`; verification against Microsoft's official crawler documentation on 2026-05-14 confirmed no such user-agent exists. Bingbot itself powers Copilot grounding per Microsoft docs, so no separate Bing-AI crawler entry is needed.
+**Severity:** MAJOR.
 **Effort:** S (2-line addition).
 
 ### A5. Validator content-quality lint per template

@@ -65,7 +65,7 @@ If you only do five things, do these — they each affect 6+ templates simultane
 2. **`ReferenceTable.tsx` caption fix** — currently renders as `<div>` (CSS workaround); change to real `<caption>` element. One component change cascades to 6 templates. **S effort, MAJOR severity.**
 3. **Extend IndexNow ping to fire on `content/data/*/*.json` edits** — currently only fires on new blog publishes (Stage 2 grep matches `date == today`). One script change covers all template edits. **M effort, MAJOR severity, 8/8 templates affected.**
 4. **Add validator content-quality lint** to every `scripts/validate-*.js` — em-dash regex, paragraph word-count, char-caps on title/description, structural proportion. No validator currently catches these; every writer-agent style rule has zero enforcement. **M effort per validator × 7 validators, MAJOR severity.**
-5. **Add `Bing-AISearchCrawler` + `Claude-User` to `robots.ts`** — 2-line additions, sitewide impact. **S effort, MAJOR severity.**
+5. **Add `Claude-User` + `Claude-SearchBot` to `robots.ts`** — 2-line additions, sitewide impact. (Earlier audit also listed `Bing-AISearchCrawler` — removed 2026-05-14 after verification confirmed it's not a real Microsoft user-agent; Bingbot itself powers Copilot grounding.) **S effort, MAJOR severity.**
 
 
 
@@ -109,8 +109,7 @@ These apply across every template audited. Fixing them in shared infrastructure 
 | 5 | **No bracketed `[1] [2]` inline citations** — sources only listed at page foot | MINOR | M (writer prompt + structural schema + regen) | 8/8 |
 | 6 | **No credentialed medical reviewer** — `reviewedBy` falls back to Organization site-wide | MAJOR | L (source credentialed reviewer + populate constant) | 8/8 |
 | 7 | **IndexNow only fires on publish, not on edits** — Stage 2 cron grep matches `date == today` only | MAJOR | M (extend `coveredusa-indexnow-submit.js` to scan `content/data/*/*.json` for `lastUpdated == today`) | 8/8 |
-| 8 | **`Bing-AISearchCrawler` missing from `robots.ts`** | MAJOR | S (1-line addition) | 8/8 |
-| 9 | **`Claude-User` missing from `robots.ts`** | MINOR | S (1-line addition) | 8/8 |
+| 8 | **`Claude-User` + `Claude-SearchBot` missing from `robots.ts`** (was `Bing-AISearchCrawler` before 2026-05-14 verification removed it) | MAJOR | S (2-line addition) | 8/8 |
 | 10 | **`ReferenceTable.tsx` renders caption as `<div>`, not `<caption>` element** | MAJOR | S (component CSS fix) | 6/6 (every template using ReferenceTable) |
 | 11 | **Validators don't enforce style rules** — no em-dash check on JSON string fields, no paragraph length, no meta character caps | MAJOR | M (validator additions per template) | 7/7 |
 | 12 | **Spanish source URLs not localized** — sources cite English `.gov` URLs even when `/es/` variants exist | MINOR | S (writer prompt + verifier check) | 7/7 |
@@ -289,9 +288,7 @@ Net: ~8 PASS / 9 PARTIAL / 14 FAIL — **worst template scorecard ratio.**
 
 2. **IndexNow ping is publish-only, not edit-aware.** `coveredusa-indexnow-submit.js --today` only resolves URLs by scanning blog markdown frontmatter for `date: today`. Does not scan `content/data/**/*.json` for `lastUpdated == today`. Any operator edit to a procedure/drug/MA-state JSON file deploys silently without IndexNow. **Fix: extend `getTodaysUrls()` to read all `content/data/*/*.json` files and emit `/cost/<slug>`, `/drug/<slug>`, etc. when `lastUpdated == today`.**
 
-3. **`Bing-AISearchCrawler` missing from `robots.ts`** — the lazy-fetch crawler for Bing AI experiences. Default `*` rule covers it but explicit allow is the framework convention.
-
-4. **`Claude-User` missing from `robots.ts`** — minor.
+3. **`Claude-User` + `Claude-SearchBot` missing from `robots.ts`** — Anthropic's real-time browsing and search-style indexing crawlers. (Earlier draft of the audit listed `Bing-AISearchCrawler`; verification against Microsoft's official crawler documentation on 2026-05-14 confirmed no such user-agent exists. Bingbot itself powers Copilot grounding per Microsoft docs.)
 
 5. **No `tsc --noEmit` in `prebuild`** — Next 16 default build does run TS during compile, but a stricter pre-flight would catch type drift before the slow Next build pass.
 
@@ -343,7 +340,7 @@ Aggregate across all 10 audits:
 
 | Effort tier | Count of distinct gaps | Examples |
 |---|---|---|
-| S (small) | ~85 | Validator char caps, em-dash extension, `sameAs` field, Bing-AISearchCrawler add, persona synonym coverage |
+| S (small) | ~85 | Validator char caps, em-dash extension, `sameAs` field, Claude-User + Claude-SearchBot add, persona synonym coverage |
 | M (medium) | ~45 | Paragraph length retrofit, `<strong>` injector, `@graph` consolidation, IndexNow edit-trigger, Dataset schema emission |
 | L (large) | ~12 | New `/bill/[topic]` template (6 sub-types), new `/aca-marketplace/[state]` template, new `/medicare-costs` + `/aca-subsidy-cliff` lighthouses, credentialed reviewer sourcing, maintenance cron |
 
@@ -354,7 +351,7 @@ Aggregate across all 10 audits:
 | `structured-data.ts` | 8 (one `@graph` refactor cascades to all templates) |
 | `ReferenceTable.tsx` | 1 (one `<caption>` fix cascades to 6 templates) |
 | Stage 2 cron + IndexNow script | 1 (one extension covers all template edits) |
-| `robots.ts` | 1 (2-line addition: Bing-AISearchCrawler + Claude-User) |
+| `robots.ts` | 1 (2-line addition: Claude-User + Claude-SearchBot) |
 | Writer agents (×8) | 8 (each needs paragraph-length + `<strong>` density + char caps + Section-specific rules) |
 | Validators (×7) | 7 (each needs em-dash extension + char cap + paragraph length + structural-proportion checks) |
 | Existing data files | ~25 (selective regen for top-cited pages; warn-mode for rest per blog retrofit strategy) |
