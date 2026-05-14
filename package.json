@@ -11,7 +11,8 @@
     "validate:events": "node scripts/validate-events.js",
     "validate:personas": "node scripts/validate-personas.js",
     "validate:medicare-advantage": "node scripts/validate-medicare-advantage.js",
-    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js && node scripts/validate-glossary.js && node scripts/validate-events.js && node scripts/validate-personas.js && node scripts/validate-medicare-advantage.js",
+    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js && node scripts/validate-glossary.js && node scripts/validate-events.js && node scripts/validate-personas.js && node scripts/validate-medicare-advantage.js && node scripts/coveredusa-build-link-index.js",
+    "build:link-index": "node scripts/coveredusa-build-link-index.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
