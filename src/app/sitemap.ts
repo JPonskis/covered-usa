@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog';
+import { getAllProcedureSlugs, getProcedureBySlug } from '@/lib/procedures';
 
 const BASE_URL = 'https://coveredusa.org';
 
@@ -67,14 +68,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/health-insurance-for-gig-workers', { changeFrequency: 'monthly', priority: 0.85 }),
     // Q&A pages (single-question deep-dives, screener funnel)
     localizedEntry('/does-medicare-cover-dental', { changeFrequency: 'yearly', priority: 0.85 }),
-    // Procedure cost pages (analyzer funnel)
-    localizedEntry('/cost/mri', { changeFrequency: 'monthly', priority: 0.85 }),
     // Drug pages (inpatient billing angle, analyzer funnel)
     localizedEntry('/drug/insulin-cost', { changeFrequency: 'monthly', priority: 0.85 }),
   ];
 
+  // Procedure cost pages — auto-pulled from content/data/procedures/*.json
+  // (analyzer funnel; covers MRI + every other procedure JSON file)
+  const procedureEntries: MetadataRoute.Sitemap = getAllProcedureSlugs().map((slug) => {
+    const data = getProcedureBySlug(slug);
+    const lastModified = data?.lastUpdated ? new Date(data.lastUpdated) : new Date();
+    return localizedEntry(`/cost/${slug}`, {
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    });
+  });
+
   return [
     ...localizedPages,
+    ...procedureEntries,
     ...blogEntries,
   ];
 }

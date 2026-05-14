@@ -1,0 +1,86 @@
+{
+  "_comment": "Procedure cost generation queue. Each entry produces ONE JSON file under content/data/procedures/<slug>.json via the coveredusa-procedure-writer agent. Status starts as 'queued', flips to 'writing' when picked up, 'verified' when verifier approves, 'flagged' when verifier flags for review.",
+  "_version": "2026.05.13",
+  "procedures": [
+    {
+      "slug": "ct-scan",
+      "name": "CT Scan",
+      "type": "Diagnostic",
+      "specialty": "Radiology",
+      "status": "queued",
+      "notes": "Outpatient CT, common scans (head, chest, abdomen). Site-of-service spread similar to MRI. Verify CMS 2026 PFS rate."
+    },
+    {
+      "slug": "colonoscopy",
+      "name": "Colonoscopy",
+      "type": "Screening",
+      "specialty": "Gastroenterology",
+      "status": "queued",
+      "notes": "Note screening vs diagnostic distinction (ACA covers screening at 100%, diagnostic has cost-sharing). Strong angle on patient-facing surprise billing."
+    },
+    {
+      "slug": "mammogram",
+      "name": "Mammogram",
+      "type": "Screening",
+      "specialty": "Radiology",
+      "status": "queued",
+      "notes": "Screening covered at 100% under ACA preventive care. Diagnostic mammogram has cost-sharing. 2D vs 3D (tomosynthesis) pricing differs."
+    },
+    {
+      "slug": "x-ray",
+      "name": "X-Ray",
+      "type": "Diagnostic",
+      "specialty": "Radiology",
+      "status": "queued",
+      "notes": "Most common imaging. Wide regional variance. Multiple body parts (chest, hand, foot, etc.)."
+    },
+    {
+      "slug": "ultrasound",
+      "name": "Ultrasound",
+      "type": "Diagnostic",
+      "specialty": "Radiology",
+      "status": "queued",
+      "notes": "Multiple types: abdominal, pelvic, OB, vascular, echocardiogram. Pricing varies by type."
+    },
+    {
+      "slug": "echocardiogram",
+      "name": "Echocardiogram",
+      "type": "Diagnostic",
+      "specialty": "Cardiology",
+      "status": "queued",
+      "notes": "Cardiac ultrasound. Higher cost than abdominal. Site-of-service spread important."
+    },
+    {
+      "slug": "emergency-room-visit",
+      "name": "Emergency Room Visit",
+      "type": "Diagnostic",
+      "specialty": "Emergency Medicine",
+      "status": "queued",
+      "notes": "Tiered by severity (level 1-5). Wide cost variance ($150 to $3,000+ for facility fee alone). Strong angle on surprise billing protections under No Surprises Act."
+    },
+    {
+      "slug": "urgent-care-visit",
+      "name": "Urgent Care Visit",
+      "type": "Diagnostic",
+      "specialty": "Primary Care",
+      "status": "queued",
+      "notes": "Alternative to ER for non-emergencies. $100-$300 typical."
+    },
+    {
+      "slug": "physical-therapy",
+      "name": "Physical Therapy",
+      "type": "Therapeutic",
+      "specialty": "Physical Therapy",
+      "status": "queued",
+      "notes": "Per-session pricing. Common after surgery/injury. Insurance often limits sessions per year."
+    },
+    {
+      "slug": "endoscopy",
+      "name": "Upper Endoscopy (EGD)",
+      "type": "Diagnostic",
+      "specialty": "Gastroenterology",
+      "status": "queued",
+      "notes": "Diagnostic upper GI procedure. Site-of-service spread, anesthesia separately billed."
+    }
+  ]
+}
