@@ -8,7 +8,8 @@
     "validate:drugs": "node scripts/validate-drugs.js",
     "validate:qa": "node scripts/validate-qa.js",
     "validate:glossary": "node scripts/validate-glossary.js",
-    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js && node scripts/validate-glossary.js",
+    "validate:events": "node scripts/validate-events.js",
+    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js && node scripts/validate-glossary.js && node scripts/validate-events.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
