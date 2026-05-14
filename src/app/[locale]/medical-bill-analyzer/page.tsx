@@ -219,7 +219,7 @@ export default function MedicalBillAnalyzerPage() {
               <p>
                 <strong style={{ color: 'var(--text-primary)' }}>Your bill probably has errors.</strong>{' '}
                 The same charge showing up twice. One service billed as three separate items to make the total higher. Billing errors show up on the{' '}
-                <a href="https://www.beckershospitalreview.com/finance/80-of-medical-bills-contain-errors-how-to-catch-them.html" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>majority of hospital bills</a>{' '}
+                <a href="https://www.healthline.com/health-news/80-percent-hospital-bills-have-errors-are-you-being-overcharged" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>majority of hospital bills</a>{' '}
                 and they almost always make the number bigger. Most people never look closely enough to notice.
               </p>
               <p>
