@@ -3,6 +3,7 @@ import { getAllPosts } from '@/lib/blog';
 import { getAllProcedureSlugs, getProcedureBySlug } from '@/lib/procedures';
 import { getAllDrugSlugs, getDrugBySlug } from '@/lib/drugs';
 import { getAllQASlugs, getQABySlug } from '@/lib/qa';
+import { getAllGlossarySlugs, getGlossaryBySlug } from '@/lib/glossary';
 
 const BASE_URL = 'https://coveredusa.org';
 
@@ -62,8 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/medicare-eligibility', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/aca-income-limits', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/federal-poverty-level', { changeFrequency: 'yearly', priority: 0.9 }),
-    // Glossary / definitional pages (screener funnel)
-    localizedEntry('/out-of-pocket-maximum', { changeFrequency: 'yearly', priority: 0.85 }),
     // Trigger event pages (life-event triggers, screener funnel)
     localizedEntry('/just-lost-job-health-insurance', { changeFrequency: 'monthly', priority: 0.85 }),
     // Persona pages (audience-targeted, screener funnel)
@@ -103,11 +102,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Glossary pages — auto-pulled from content/data/glossary/*.json
+  const glossaryEntries: MetadataRoute.Sitemap = getAllGlossarySlugs().map((slug) => {
+    const data = getGlossaryBySlug(slug);
+    const lastModified = data?.lastUpdated ? new Date(data.lastUpdated) : new Date();
+    return localizedEntry(`/glossary/${slug}`, {
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.85,
+    });
+  });
+
   return [
     ...localizedPages,
     ...procedureEntries,
     ...drugEntries,
     ...qaEntries,
+    ...glossaryEntries,
     ...blogEntries,
   ];
 }

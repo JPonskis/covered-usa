@@ -1,0 +1,222 @@
+{
+  "slug": "magi",
+  "term": {
+    "en": "Modified Adjusted Gross Income (MAGI)",
+    "es": "Ingreso Bruto Ajustado Modificado (MAGI)"
+  },
+  "alternateNames": ["MAGI", "Modified AGI", "Modified Adjusted Gross Income", "MAGI-based income"],
+  "definition": {
+    "en": "Modified Adjusted Gross Income (MAGI) is your adjusted gross income plus any tax-exempt interest, untaxed foreign income, and the non-taxable portion of Social Security benefits. It is the income measure used to determine eligibility for ACA premium tax credits and most Medicaid coverage.",
+    "es": "El Ingreso Bruto Ajustado Modificado (MAGI) es su ingreso bruto ajustado más los intereses exentos de impuestos, los ingresos extranjeros no gravados y la parte no gravable de los beneficios del Seguro Social. Es la medida de ingresos utilizada para determinar la elegibilidad para los créditos fiscales de primas del ACA y la mayoría de la cobertura de Medicaid."
+  },
+  "category": "Tax",
+  "topic": "MAGI for ACA Subsidies and Medicaid",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-13",
+  "readingTime": "6 min read",
+
+  "meta": {
+    "title": {
+      "en": "What Is MAGI? Modified Adjusted Gross Income Explained | CoveredUSA",
+      "es": "¿Qué Es MAGI? Ingreso Bruto Ajustado Modificado Explicado | CoveredUSA"
+    },
+    "description": {
+      "en": "MAGI is the income definition used for ACA subsidies and most Medicaid eligibility. It equals AGI plus tax-exempt interest, foreign income, and non-taxable Social Security."
+    , "es": "MAGI es la definición de ingresos usada para los subsidios del ACA y la mayoría de la elegibilidad para Medicaid. Es igual al AGI más intereses exentos, ingresos extranjeros y Seguro Social no gravable."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "What Is MAGI (Modified Adjusted Gross Income)?",
+      "es": "¿Qué Es MAGI (Ingreso Bruto Ajustado Modificado)?"
+    },
+    "subhero": {
+      "en": "MAGI is the income number that decides your ACA subsidy and most Medicaid eligibility. It equals your AGI plus tax-exempt interest, untaxed foreign income, and the non-taxable portion of Social Security.",
+      "es": "MAGI es el número de ingresos que decide su subsidio del ACA y la mayor parte de la elegibilidad para Medicaid. Es igual a su AGI más los intereses exentos de impuestos, los ingresos extranjeros no gravados y la parte no gravable del Seguro Social."
+    }
+  },
+
+  "quickDefinition": {
+    "en": "MAGI is Modified Adjusted Gross Income. For ACA and Medicaid purposes, MAGI equals your Adjusted Gross Income (line 11 on Form 1040) plus three add-backs: tax-exempt interest, untaxed foreign income, and the non-taxable portion of your Social Security benefits. It is the income measure used to qualify for premium tax credits on the marketplace and for MAGI-category Medicaid (children, pregnant adults, parents, and the Medicaid expansion adult group). It is NOT the same definition the IRS uses for IRA contribution limits or other tax purposes.",
+    "es": "MAGI es el Ingreso Bruto Ajustado Modificado. Para fines del ACA y Medicaid, MAGI es igual a su Ingreso Bruto Ajustado (línea 11 del Formulario 1040) más tres adiciones: intereses exentos de impuestos, ingresos extranjeros no gravados y la parte no gravable de sus beneficios del Seguro Social. Es la medida de ingresos utilizada para calificar para créditos fiscales de primas en el mercado y para Medicaid de categoría MAGI (niños, adultos embarazadas, padres y el grupo de expansión de adultos). No es la misma definición que el IRS usa para los límites de contribución a las cuentas IRA u otros propósitos fiscales."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "MAGI is the single most important number for figuring out whether you qualify for an ACA premium tax credit or for Medicaid. It is not your salary, not your take-home pay, and not your gross income from your paystub. It is a specific tax-based calculation defined in the Affordable Care Act and used by every state marketplace and Medicaid agency.",
+      "es": "MAGI es el número más importante para determinar si califica para un crédito fiscal de primas del ACA o para Medicaid. No es su salario, ni su salario neto, ni su ingreso bruto del talón de pago. Es un cálculo específico basado en impuestos definido en la Ley del Cuidado de Salud a Bajo Precio y utilizado por todos los mercados estatales y agencias de Medicaid."
+    },
+    {
+      "en": "This guide covers exactly what counts toward MAGI, what does not, how it differs from AGI, and how to calculate it for your marketplace application or Medicaid renewal.",
+      "es": "Esta guía cubre exactamente lo que cuenta para MAGI, lo que no, cómo difiere del AGI y cómo calcularlo para su solicitud del mercado o renovación de Medicaid."
+    }
+  ],
+
+  "whatCountsToward": {
+    "intro": {
+      "en": "These income sources are included in your MAGI for ACA subsidy and Medicaid eligibility:",
+      "es": "Estas fuentes de ingresos se incluyen en su MAGI para la elegibilidad de subsidios del ACA y Medicaid:"
+    },
+    "items": [
+      { "en": "Wages, salaries, tips, and W-2 income", "es": "Salarios, sueldos, propinas e ingresos del W-2" },
+      { "en": "Self-employment and gig income (net of business expenses)", "es": "Ingresos por cuenta propia y trabajos independientes (netos de gastos del negocio)" },
+      { "en": "Unemployment compensation", "es": "Compensación por desempleo" },
+      { "en": "Taxable Social Security benefits AND the non-taxable portion", "es": "Beneficios del Seguro Social gravables Y la parte no gravable" },
+      { "en": "Social Security Disability Insurance (SSDI) benefits", "es": "Beneficios del Seguro de Discapacidad del Seguro Social (SSDI)" },
+      { "en": "Retirement and pension income (including taxable IRA and 401(k) distributions)", "es": "Ingresos de jubilación y pensión (incluidas las distribuciones gravables de IRA y 401(k))" },
+      { "en": "Capital gains (short-term and long-term)", "es": "Ganancias de capital (a corto y largo plazo)" },
+      { "en": "Interest income, including tax-exempt municipal bond interest", "es": "Ingresos por intereses, incluidos los intereses de bonos municipales exentos de impuestos" },
+      { "en": "Dividend income (ordinary and qualified)", "es": "Ingresos por dividendos (ordinarios y calificados)" },
+      { "en": "Rental and royalty income", "es": "Ingresos por alquiler y regalías" },
+      { "en": "Alimony received from divorces finalized before 2019", "es": "Pensión alimenticia recibida de divorcios finalizados antes de 2019" },
+      { "en": "Excluded foreign earned income", "es": "Ingresos extranjeros excluidos del trabajo" }
+    ]
+  },
+
+  "whatDoesNotCountToward": {
+    "intro": {
+      "en": "These income sources are excluded from MAGI and do not affect your ACA subsidy or Medicaid eligibility:",
+      "es": "Estas fuentes de ingresos están excluidas del MAGI y no afectan su subsidio del ACA ni su elegibilidad para Medicaid:"
+    },
+    "items": [
+      { "en": "Supplemental Security Income (SSI)", "es": "Seguridad de Ingreso Suplementario (SSI)" },
+      { "en": "Child support received", "es": "Manutención infantil recibida" },
+      { "en": "Veterans benefits (most VA disability and pension payments)", "es": "Beneficios para veteranos (la mayoría de pagos de discapacidad y pensión del VA)" },
+      { "en": "Workers' compensation payments", "es": "Pagos de compensación laboral" },
+      { "en": "Gifts and inheritances", "es": "Regalos y herencias" },
+      { "en": "Proceeds from loans (student loans, mortgages, personal loans)", "es": "Ingresos de préstamos (préstamos estudiantiles, hipotecas, préstamos personales)" },
+      { "en": "Federal tax refunds", "es": "Reembolsos de impuestos federales" },
+      { "en": "TANF and most cash assistance benefits", "es": "TANF y la mayoría de los beneficios de asistencia en efectivo" },
+      { "en": "SNAP (food stamps) and WIC benefits", "es": "SNAP (cupones de alimentos) y beneficios de WIC" },
+      { "en": "Qualified scholarships used for tuition and required fees", "es": "Becas calificadas utilizadas para matrícula y tarifas requeridas" },
+      { "en": "Alimony from divorces finalized after December 31, 2018", "es": "Pensión alimenticia de divorcios finalizados después del 31 de diciembre de 2018" }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Why MAGI Instead of Gross Income?",
+        "es": "¿Por qué MAGI en lugar del ingreso bruto?"
+      },
+      "paragraphs": [
+        {
+          "en": "Congress wrote MAGI into the Affordable Care Act in 2010 to create one consistent income standard across the marketplace and Medicaid. Before the ACA, every state used its own rules for Medicaid eligibility, and many counted assets, applied deductions for medical bills, and excluded different categories of income. That made the system unworkable when subsidies and Medicaid had to talk to each other in real time.",
+          "es": "El Congreso escribió MAGI en la Ley del Cuidado de Salud a Bajo Precio en 2010 para crear un estándar de ingresos consistente para el mercado y Medicaid. Antes del ACA, cada estado usaba sus propias reglas para la elegibilidad de Medicaid, y muchos contaban activos, aplicaban deducciones por facturas médicas y excluían diferentes categorías de ingresos. Eso hacía el sistema inviable cuando los subsidios y Medicaid tenían que comunicarse en tiempo real."
+        },
+        {
+          "en": "MAGI also closes loopholes that gross income leaves open. Wealthy retirees can have very low taxable income while pulling in millions in municipal bond interest, which is tax-exempt. By adding tax-exempt interest and the non-taxable portion of Social Security back to AGI, MAGI captures economic reality better than AGI alone. It still excludes asset balances, so it is not a perfect wealth measure, but it is closer than what came before."
+        , "es": "MAGI también cierra lagunas que el ingreso bruto deja abiertas. Los jubilados ricos pueden tener ingresos gravables muy bajos mientras reciben millones en intereses de bonos municipales, que están exentos de impuestos. Al agregar los intereses exentos de impuestos y la parte no gravable del Seguro Social al AGI, MAGI captura mejor la realidad económica que el AGI solo. Aún excluye los saldos de activos, así que no es una medida perfecta de riqueza, pero está más cerca que lo anterior."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "MAGI vs. AGI: The Difference",
+        "es": "MAGI vs. AGI: la diferencia"
+      },
+      "paragraphs": [
+        {
+          "en": "Adjusted Gross Income (AGI) is line 11 on your Form 1040. It is your total income minus a specific set of above-the-line deductions: HSA contributions, deductible IRA contributions, student loan interest, half of self-employment tax, and a few others. MAGI starts with AGI and adds three items back. For ACA and Medicaid purposes, those three add-backs are tax-exempt interest, untaxed foreign income, and the non-taxable portion of Social Security benefits.",
+          "es": "El Ingreso Bruto Ajustado (AGI) es la línea 11 de su Formulario 1040. Es su ingreso total menos un conjunto específico de deducciones sobre la línea: contribuciones a HSA, contribuciones deducibles a IRA, intereses de préstamos estudiantiles, la mitad del impuesto al trabajo por cuenta propia y algunas otras. MAGI comienza con AGI y agrega tres elementos. Para fines del ACA y Medicaid, esas tres adiciones son intereses exentos de impuestos, ingresos extranjeros no gravados y la parte no gravable de los beneficios del Seguro Social."
+        },
+        {
+          "en": "Warning: the term MAGI shows up elsewhere in the tax code with different definitions. IRA contribution limits use a different MAGI calculation, the Net Investment Income Tax uses another, and the Lifetime Learning Credit uses yet another. The ACA and Medicaid MAGI is its own thing and only matters for health coverage eligibility.",
+          "es": "Advertencia: el término MAGI aparece en otras partes del código tributario con definiciones diferentes. Los límites de contribución a IRA utilizan un cálculo de MAGI diferente, el Impuesto sobre los Ingresos Netos de Inversión utiliza otro, y el Crédito por Aprendizaje de por Vida utiliza otro más. El MAGI del ACA y Medicaid es algo propio y solo importa para la elegibilidad de cobertura médica."
+        }
+      ],
+      "list": [
+        { "en": "AGI = Total income minus above-the-line deductions (Form 1040, line 11).", "es": "AGI = ingreso total menos deducciones sobre la línea (Formulario 1040, línea 11)." },
+        { "en": "MAGI (for ACA/Medicaid) = AGI + tax-exempt interest + untaxed foreign income + non-taxable Social Security.", "es": "MAGI (para ACA/Medicaid) = AGI + intereses exentos + ingresos extranjeros no gravados + Seguro Social no gravable." },
+        { "en": "Household MAGI = the tax filer's MAGI + the MAGI of every dependent required to file a return.", "es": "MAGI del hogar = el MAGI del declarante + el MAGI de cada dependiente requerido a declarar." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Calculate Your MAGI",
+        "es": "Cómo calcular su MAGI"
+      },
+      "paragraphs": [
+        {
+          "en": "For most people, MAGI equals AGI because they do not have tax-exempt interest, foreign income, or non-taxable Social Security. To run the calculation yourself, start with your most recent tax return (Form 1040). Take line 11 (AGI), then add line 2a (tax-exempt interest), line 6a minus line 6b (non-taxable portion of Social Security), and any foreign earned income excluded on Form 2555. The total is your MAGI."
+        , "es": "Para la mayoría de las personas, MAGI es igual al AGI porque no tienen intereses exentos, ingresos extranjeros, ni Seguro Social no gravable. Para calcularlo, comience con su declaración de impuestos más reciente (Formulario 1040). Tome la línea 11 (AGI), luego agregue la línea 2a (intereses exentos), línea 6a menos línea 6b (parte no gravable del Seguro Social) y cualquier ingreso extranjero excluido en el Formulario 2555. El total es su MAGI."
+        },
+        {
+          "en": "For ACA marketplace applications, you project MAGI for the upcoming coverage year, not last year's MAGI. If your income has changed, use a realistic projection. If you are self-employed or have variable income, estimate annual income based on year-to-date earnings divided by months worked, then annualized. Overestimating means you may give back some of the advance tax credit at tax time. Underestimating means you may owe at tax time. Medicaid, by contrast, generally uses current monthly income for ongoing eligibility.",
+          "es": "Para las solicitudes del mercado del ACA, proyecta el MAGI para el año de cobertura próximo, no el MAGI del año pasado. Si sus ingresos han cambiado, use una proyección realista. Si trabaja por cuenta propia o tiene ingresos variables, estime el ingreso anual con base en las ganancias del año hasta la fecha divididas por los meses trabajados, luego anualizadas. Sobreestimar significa que puede tener que devolver parte del crédito fiscal adelantado al momento de declarar impuestos. Subestimar significa que puede deber al momento de declarar impuestos. Medicaid, por el contrario, generalmente usa los ingresos mensuales actuales para la elegibilidad continua."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "MAGI for Medicaid: Who It Applies To",
+        "es": "MAGI para Medicaid: a quién aplica"
+      },
+      "paragraphs": [
+        {
+          "en": "Most Medicaid applicants are evaluated under MAGI rules: children, pregnant adults, parents and caretaker relatives, and the adult expansion group in states that adopted ACA Medicaid expansion. For these groups, eligibility is based on MAGI relative to the Federal Poverty Level, with no asset test.",
+          "es": "La mayoría de los solicitantes de Medicaid son evaluados bajo las reglas de MAGI: niños, adultos embarazadas, padres y parientes cuidadores, y el grupo de expansión de adultos en los estados que adoptaron la expansión de Medicaid del ACA. Para estos grupos, la elegibilidad se basa en MAGI relativa al Nivel Federal de Pobreza, sin prueba de activos."
+        },
+        {
+          "en": "Non-MAGI Medicaid still exists and uses different rules. Long-term care Medicaid, the Medicaid program for people aged 65 and older, and Medicaid for people receiving Supplemental Security Income (SSI) all use separate income and asset tests. Those programs may count assets, treat Social Security differently, and apply spousal protections. If you are applying for nursing-home Medicaid or aged/blind/disabled Medicaid, MAGI rules likely do not apply to you.",
+          "es": "Medicaid sin MAGI todavía existe y usa reglas diferentes. Medicaid de cuidado a largo plazo, el programa de Medicaid para personas de 65 años o más y Medicaid para personas que reciben Seguridad de Ingreso Suplementario (SSI) usan pruebas separadas de ingresos y activos. Esos programas pueden contar activos, tratar el Seguro Social de manera diferente y aplicar protecciones para cónyuges. Si está solicitando Medicaid para hogares de ancianos o Medicaid para personas mayores/ciegas/discapacitadas, las reglas MAGI probablemente no se aplican a usted."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      { "question": "What is MAGI in plain English?", "answer": "MAGI is Modified Adjusted Gross Income. For health coverage purposes, it is your Adjusted Gross Income (line 11 of Form 1040) plus tax-exempt interest, untaxed foreign income, and the non-taxable portion of Social Security benefits. It is the income measure used to decide whether you qualify for ACA premium tax credits or for Medicaid in most cases." },
+      { "question": "Is MAGI the same as gross income?", "answer": "No. Gross income is the total you earn before any deductions or adjustments. MAGI starts further down the tax form, after deductions like HSA contributions, deductible IRA contributions, and student loan interest reduce your gross income to your AGI. MAGI then adds back tax-exempt interest, foreign income, and non-taxable Social Security. For most people, MAGI is lower than gross income but higher than taxable income." },
+      { "question": "Does child support count toward MAGI?", "answer": "No. Child support payments received are not counted in MAGI for ACA or Medicaid eligibility. They do not appear on your tax return as income, and the ACA explicitly excludes them. This is true whether you receive court-ordered child support or informal payments from a co-parent." },
+      { "question": "Does Social Security count toward MAGI?", "answer": "Yes, all of it. Even the portion of Social Security benefits that is not taxable for income tax purposes is added back into MAGI for ACA and Medicaid. This trips up many retirees and people on SSDI who assume only the taxable portion counts. The full annual benefit amount counts." },
+      { "question": "Does SSI count toward MAGI?", "answer": "No. Supplemental Security Income (SSI) is a separate program from Social Security retirement and SSDI, and SSI payments are not counted in MAGI. SSI is means-tested and not taxable, and the ACA excludes it from the MAGI calculation." },
+      { "question": "How do I calculate MAGI for my 2026 marketplace application?", "answer": "For 2026 coverage, you project your expected 2026 MAGI, not your past income. Start with projected 2026 AGI, then add expected tax-exempt interest, expected non-taxable Social Security, and any foreign earned income you will exclude. If your income is stable, last year's MAGI is a reasonable starting point. If you changed jobs, started a business, or had a major income shift, update your projection on HealthCare.gov so your subsidy is accurate." },
+      { "question": "What is the household MAGI for marketplace eligibility?", "answer": "Household MAGI is the sum of the tax filer's MAGI plus the MAGI of every dependent who is required to file their own tax return. A dependent who is not required to file (most teenagers earning under the filing threshold) does not have their income added in. The household income then gets compared to the Federal Poverty Level for your household size to determine subsidy eligibility." },
+      { "question": "Why does MAGI matter for Medicaid?", "answer": "Most Medicaid eligibility groups, including children, pregnant adults, parents, and the adult expansion population, are evaluated using MAGI relative to the Federal Poverty Level. There is no asset test for these groups. If your MAGI is at or below the state's Medicaid threshold for your category, you qualify. Non-MAGI Medicaid pathways for elderly or disabled applicants use different rules with asset tests." }
+    ],
+    "es": [
+      { "question": "¿Qué es MAGI en términos sencillos?", "answer": "MAGI es el Ingreso Bruto Ajustado Modificado. Para fines de cobertura médica, es su AGI (línea 11 del Formulario 1040) más intereses exentos de impuestos, ingresos extranjeros no gravados y la parte no gravable de los beneficios del Seguro Social. Es la medida de ingresos usada para decidir si califica para créditos fiscales del ACA o para Medicaid." },
+      { "question": "¿MAGI es lo mismo que el ingreso bruto?", "answer": "No. El ingreso bruto es el total que gana antes de cualquier deducción. MAGI comienza más abajo en el formulario de impuestos, después de que deducciones como contribuciones a HSA, contribuciones deducibles a IRA e intereses de préstamos estudiantiles reduzcan su ingreso bruto al AGI. MAGI luego agrega los intereses exentos, ingresos extranjeros y la parte no gravable del Seguro Social." },
+      { "question": "¿La manutención infantil cuenta para MAGI?", "answer": "No. Los pagos de manutención infantil recibidos no se cuentan en MAGI para la elegibilidad del ACA o Medicaid. No aparecen en su declaración de impuestos como ingresos y el ACA los excluye explícitamente." },
+      { "question": "¿El Seguro Social cuenta para MAGI?", "answer": "Sí, todo. Incluso la parte de los beneficios del Seguro Social que no es gravable se agrega al MAGI para el ACA y Medicaid. Esto sorprende a muchos jubilados y personas con SSDI que asumen que solo cuenta la parte gravable. Cuenta el monto total anual del beneficio." },
+      { "question": "¿El SSI cuenta para MAGI?", "answer": "No. La Seguridad de Ingreso Suplementario (SSI) es un programa separado del Seguro Social de jubilación y SSDI, y los pagos de SSI no se cuentan en MAGI. SSI se basa en los recursos y no es gravable, y el ACA lo excluye del cálculo del MAGI." },
+      { "question": "¿Cómo calculo MAGI para mi solicitud del mercado de 2026?", "answer": "Para la cobertura de 2026, proyecte su MAGI esperado de 2026, no su ingreso pasado. Comience con el AGI proyectado de 2026, luego agregue los intereses exentos esperados, el Seguro Social no gravable esperado y cualquier ingreso extranjero ganado que excluirá. Si su ingreso es estable, el MAGI del año pasado es un punto de partida razonable." },
+      { "question": "¿Qué es el MAGI del hogar para la elegibilidad del mercado?", "answer": "El MAGI del hogar es la suma del MAGI del declarante de impuestos más el MAGI de cada dependiente que está obligado a presentar su propia declaración. Un dependiente que no está obligado a declarar no agrega su ingreso. El ingreso del hogar se compara luego con el Nivel Federal de Pobreza para el tamaño de su hogar." },
+      { "question": "¿Por qué importa MAGI para Medicaid?", "answer": "La mayoría de los grupos de elegibilidad de Medicaid, incluidos niños, adultos embarazadas, padres y la población adulta de expansión, se evalúan utilizando MAGI en relación con el Nivel Federal de Pobreza. No hay prueba de activos para estos grupos. Si su MAGI está en o por debajo del umbral de Medicaid del estado para su categoría, califica." }
+    ]
+  },
+
+  "relatedLinks": [
+    { "label": { "en": "Check Your ACA Eligibility", "es": "Verifique Su Elegibilidad para el ACA" }, "href": "/screener" },
+    { "label": { "en": "2026 ACA Income Limits", "es": "Límites de Ingresos ACA 2026" }, "href": "/aca-income-limits" },
+    { "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" }, "href": "/federal-poverty-level" },
+    { "label": { "en": "Medicaid Income Limits", "es": "Límites de Ingresos de Medicaid" }, "href": "/medicaid-income-limits" }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov — Modified Adjusted Gross Income (MAGI)",
+      "url": "https://www.healthcare.gov/glossary/modified-adjusted-gross-income-magi/",
+      "note": { "en": "Official ACA definition of MAGI for marketplace subsidies and Medicaid.", "es": "Definición oficial del ACA de MAGI para subsidios del mercado y Medicaid." }
+    },
+    {
+      "name": "Medicaid.gov — MAGI-Based Methodology",
+      "url": "https://www.medicaid.gov/medicaid/eligibility-policy/index.html",
+      "note": { "en": "Medicaid MAGI eligibility groups and methodology.", "es": "Grupos y metodología de elegibilidad MAGI de Medicaid." }
+    },
+    {
+      "name": "IRS — Form 1040 Instructions",
+      "url": "https://www.irs.gov/forms-pubs/about-form-1040",
+      "note": { "en": "AGI calculation (line 11) and Social Security taxability rules.", "es": "Cálculo del AGI (línea 11) y reglas de tributación del Seguro Social." }
+    },
+    {
+      "name": "CMS — Eligibility & Enrollment Final Rule (42 CFR 435.603)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-435/subpart-G/section-435.603",
+      "note": { "en": "Federal regulation defining MAGI-based income for Medicaid.", "es": "Reglamento federal que define los ingresos basados en MAGI para Medicaid." }
+    }
+  ]
+}

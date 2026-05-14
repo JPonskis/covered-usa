@@ -1,0 +1,231 @@
+{
+  "slug": "deductible",
+  "term": {
+    "en": "Deductible",
+    "es": "Deducible"
+  },
+  "alternateNames": ["Plan Deductible", "Annual Deductible", "Health Insurance Deductible", "Medical Deductible"],
+  "definition": {
+    "en": "A deductible is the amount you pay out of pocket for covered healthcare services in a plan year before your insurance begins to share costs through copays and coinsurance.",
+    "es": "Un deducible es la cantidad que paga de su bolsillo por servicios médicos cubiertos en un año del plan antes de que su seguro comience a compartir los costos a través de copagos y coseguro."
+  },
+  "category": "Insurance",
+  "topic": "Health Insurance Deductible",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "analyzer",
+  "lastUpdated": "2026-05-13",
+  "readingTime": "6 min read",
+
+  "meta": {
+    "title": {
+      "en": "What Is a Deductible? 2026 ACA Health Plan Amounts | CoveredUSA",
+      "es": "¿Qué Es un Deducible? Montos del Plan ACA 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "A deductible is what you pay before insurance starts sharing costs. 2026 ACA averages: Bronze ~$7,500, Silver ~$5,500, Gold ~$2,000, Platinum ~$500."
+    , "es": "Un deducible es lo que paga antes de que el seguro comparta los costos. Promedios ACA 2026: Bronze ~$7,500, Silver ~$5,500, Gold ~$2,000, Platinum ~$500."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "What Is a Deductible?",
+      "es": "¿Qué Es un Deducible?"
+    },
+    "subhero": {
+      "en": "What you pay before your insurance starts paying. 2026 ACA averages range from about $500 on Platinum plans to $7,500 on Bronze plans.",
+      "es": "Lo que paga antes de que su seguro comience a pagar. Los promedios del ACA en 2026 van de aproximadamente $500 en planes Platino a $7,500 en planes Bronze."
+    }
+  },
+
+  "quickDefinition": {
+    "en": "A deductible is the dollar amount you must pay for covered services before your insurance starts sharing costs. Once you hit the deductible, you typically pay only a copay or coinsurance, and the plan pays the rest. ACA-required preventive care is covered before the deductible at no cost. Most plans reset the deductible at the start of each plan year.",
+    "es": "Un deducible es la cantidad en dólares que debe pagar por servicios cubiertos antes de que su seguro comience a compartir los costos. Una vez que alcanza el deducible, generalmente paga solo un copago o coseguro, y el plan paga el resto. La atención preventiva requerida por el ACA se cubre antes del deducible sin costo. La mayoría de los planes reinician el deducible al comienzo de cada año del plan."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "The deductible is the single biggest reason a $5 doctor's appointment turns into a $400 bill. If you have not met your deductible yet, you usually pay the full negotiated rate for non-preventive care. Insurance does not start chipping in until you cross that line.",
+      "es": "El deducible es la razón principal por la que una cita médica de $5 termina siendo una factura de $400. Si aún no ha alcanzado su deducible, normalmente paga la tarifa negociada completa por atención que no es preventiva. El seguro no comienza a ayudar hasta que cruza esa línea."
+    },
+    {
+      "en": "This guide covers how deductibles work, the 2026 ACA averages by metal tier, what counts toward yours, and how to find your own deductible if you are not sure.",
+      "es": "Esta guía cubre cómo funcionan los deducibles, los promedios del ACA en 2026 por nivel de metal, lo que cuenta hacia el suyo, y cómo encontrar su propio deducible si no está seguro."
+    }
+  ],
+
+  "annualLimits": {
+    "headers": {
+      "en": ["Metal Tier", "Average 2026 Deductible", "Insurance Pays After"],
+      "es": ["Nivel de Metal", "Deducible Promedio 2026", "El Seguro Paga Después"]
+    },
+    "rows": [
+      { "en": ["Bronze", "~$7,500", "60% of costs"], "es": ["Bronze", "~$7,500", "60% de los costos"] },
+      { "en": ["Silver", "~$5,500", "70% of costs"], "es": ["Silver", "~$5,500", "70% de los costos"] },
+      { "en": ["Gold", "~$2,000", "80% of costs"], "es": ["Gold", "~$2,000", "80% de los costos"] },
+      { "en": ["Platinum", "~$500", "90% of costs"], "es": ["Platino", "~$500", "90% de los costos"] }
+    ],
+    "footnote": {
+      "en": "Averages reflect 2026 ACA marketplace plans. Specific plan deductibles vary by insurer, state, and whether the deductible applies separately to medical and prescription costs.",
+      "es": "Los promedios reflejan los planes del mercado del ACA en 2026. Los deducibles específicos varían según la aseguradora, el estado y si el deducible se aplica por separado a los costos médicos y de medicamentos."
+    },
+    "source": "KFF 2026 Marketplace Plan Analysis; HealthCare.gov plan data."
+  },
+
+  "whatCountsToward": {
+    "intro": {
+      "en": "These payments for covered, in-network care count toward your deductible:",
+      "es": "Estos pagos por atención cubierta en la red cuentan hacia su deducible:"
+    },
+    "items": [
+      { "en": "Doctor visits for non-preventive care (sick visits, follow-ups)", "es": "Visitas médicas que no son preventivas (visitas por enfermedad, seguimientos)" },
+      { "en": "Specialist visits", "es": "Visitas a especialistas" },
+      { "en": "Lab work, X-rays, and imaging (MRI, CT scans)", "es": "Análisis de laboratorio, radiografías e imágenes (MRI, tomografías)" },
+      { "en": "Hospital stays and surgeries", "es": "Hospitalizaciones y cirugías" },
+      { "en": "Emergency room visits", "es": "Visitas a la sala de emergencias" },
+      { "en": "Prescription drugs (if subject to the medical deductible on your plan)", "es": "Medicamentos recetados (si están sujetos al deducible médico en su plan)" }
+    ]
+  },
+
+  "whatDoesNotCountToward": {
+    "intro": {
+      "en": "These charges do not count toward your deductible, even though you pay them:",
+      "es": "Estos cargos no cuentan hacia su deducible, aunque los pague:"
+    },
+    "items": [
+      { "en": "Monthly premiums", "es": "Primas mensuales" },
+      { "en": "ACA-required preventive care (annual physicals, screenings, vaccines), covered 100% before the deductible", "es": "Atención preventiva requerida por el ACA (físicos anuales, exámenes, vacunas), cubierta al 100% antes del deducible" },
+      { "en": "Copays for services exempt from the deductible (varies by plan)", "es": "Copagos por servicios exentos del deducible (varía según el plan)" },
+      { "en": "Out-of-network charges (usually count toward a separate out-of-network deductible)", "es": "Cargos fuera de la red (generalmente cuentan hacia un deducible separado fuera de la red)" },
+      { "en": "Balance billing from non-network providers", "es": "Facturación de saldo de proveedores fuera de la red" },
+      { "en": "Services not covered by your plan", "es": "Servicios no cubiertos por su plan" }
+    ]
+  },
+
+  "workedExample": {
+    "intro": {
+      "en": "Meet Marcus, a 42-year-old on a 2026 ACA Silver plan with a $5,500 deductible and 30% coinsurance. He breaks his wrist mid-year:",
+      "es": "Conozca a Marcus, de 42 años, con un plan ACA Silver de 2026, un deducible de $5,500 y coseguro del 30%. Se rompe la muñeca a mediados de año:"
+    },
+    "headers": {
+      "en": ["Step", "Amount", "Who Pays"],
+      "es": ["Paso", "Cantidad", "Quién Paga"]
+    },
+    "rows": [
+      { "en": ["Earlier in year: sick visit + labs", "$420", "Marcus pays full (deductible not met)"], "es": ["Antes en el año: visita por enfermedad + laboratorios", "$420", "Marcus paga todo (deducible no cumplido)"] },
+      { "en": ["ER visit + X-rays + cast", "$5,080", "Marcus pays. Deductible now hit at $5,500"], "es": ["Visita a la sala de emergencias + radiografías + yeso", "$5,080", "Marcus paga. Deducible alcanzado en $5,500"] },
+      { "en": ["Orthopedic follow-up ($600 billed)", "$180", "Marcus pays 30% coinsurance; insurance pays $420"], "es": ["Seguimiento ortopédico ($600 facturado)", "$180", "Marcus paga 30% de coseguro; el seguro paga $420"] },
+      { "en": ["Physical therapy 8 visits ($1,200 billed)", "$360", "Marcus pays 30%; insurance pays 70%"], "es": ["8 sesiones de fisioterapia ($1,200 facturado)", "$360", "Marcus paga 30%; el seguro paga 70%"] },
+      { "en": ["Total Marcus paid", "$6,040", "Stops at OOP max if hit later"], "es": ["Total que pagó Marcus", "$6,040", "Se detiene en el OOP max si lo alcanza"] }
+    ],
+    "footnote": {
+      "en": "After meeting the $5,500 deductible, Marcus shifts from paying full negotiated rates to paying 30% coinsurance. He continues until he hits the out-of-pocket maximum, at which point insurance pays 100%.",
+      "es": "Después de cumplir el deducible de $5,500, Marcus pasa de pagar las tarifas negociadas completas a pagar el 30% de coseguro. Continúa hasta que alcanza el máximo de gastos de bolsillo, momento en el que el seguro paga el 100%."
+    }
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Services Covered Before You Hit the Deductible",
+        "es": "Servicios Cubiertos Antes de Alcanzar el Deducible"
+      },
+      "paragraphs": [
+        {
+          "en": "The ACA requires every non-grandfathered plan to cover a list of preventive services at no cost to you, even if you have not met your deductible. This includes annual physicals, routine vaccines, well-woman visits, mammograms, colonoscopies at recommended ages, blood pressure and diabetes screenings, and many more. You pay $0 for these as long as you stay in network and the service is billed as preventive.",
+          "es": "El ACA requiere que cada plan no protegido cubra una lista de servicios preventivos sin costo para usted, incluso si no ha alcanzado su deducible. Esto incluye físicos anuales, vacunas de rutina, visitas para la mujer sana, mamografías, colonoscopias en edades recomendadas, exámenes de presión arterial y diabetes, y muchos más. Paga $0 por estos siempre que se mantenga en la red y el servicio se facture como preventivo."
+        },
+        {
+          "en": "Some plans also cover a few sick visits or generic drugs with just a copay before the deductible. Read your plan's Summary of Benefits and Coverage (SBC). The section labeled 'Common Medical Events' will say whether the deductible applies to each service.",
+          "es": "Algunos planes también cubren algunas visitas por enfermedad o medicamentos genéricos con solo un copago antes del deducible. Lea el Resumen de Beneficios y Cobertura (SBC) de su plan: la sección llamada 'Eventos Médicos Comunes' le dirá si el deducible aplica a cada servicio."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Why Bronze Plans Have a Higher Deductible",
+        "es": "Por Qué los Planes Bronze Tienen un Deducible Más Alto"
+      },
+      "paragraphs": [
+        {
+          "en": "Metal tier sets a plan's actuarial value: the share of total costs the plan pays on average. Bronze covers about 60%, Silver 70%, Gold 80%, Platinum 90%. Insurers hit those targets by trading premium for deductible. A Bronze plan keeps the monthly premium low and pushes the deductible to roughly $7,500. A Platinum plan flips it: high premium, deductible near $500.",
+          "es": "El nivel de metal establece el valor actuarial de un plan: la parte de los costos totales que el plan paga en promedio. Bronze cubre alrededor del 60%, Silver 70%, Gold 80%, Platino 90%. Las aseguradoras alcanzan esos objetivos intercambiando prima por deducible. Un plan Bronze mantiene la prima mensual baja y empuja el deducible a aproximadamente $7,500. Un plan Platino lo invierte: prima alta, deducible cerca de $500."
+        },
+        {
+          "en": "If you are healthy and rarely see a doctor, the Bronze tradeoff can save you money. If you have a chronic condition, expect a surgery, or are pregnant, the higher premium of a Gold or Platinum plan usually beats paying $7,500 out of pocket before insurance helps. Check if you qualify for a Silver plan with cost-sharing reductions (CSR), which quietly lower the deductible for households under 250% of the federal poverty level."
+        , "es": "Si está sano y rara vez va al médico, el intercambio de Bronze le puede ahorrar dinero. Si tiene una condición crónica, espera una cirugía, o está embarazada, la prima más alta de un plan Gold o Platino generalmente le sale mejor que pagar $7,500 de su bolsillo antes de que el seguro ayude. Verifique si califica para un plan Silver con reducciones de costos compartidos (CSR): estos bajan silenciosamente el deducible para hogares bajo el 250% del nivel federal de pobreza."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medical Deductible vs. Prescription Deductible",
+        "es": "Deducible Médico vs. Deducible de Recetas"
+      },
+      "paragraphs": [
+        {
+          "en": "Some plans use a single combined deductible covering medical and prescription costs. Others split them: a medical deductible and a separate prescription drug deductible. With split deductibles, you might pay full price for an expensive drug even after meeting your medical deductible. Check your plan documents for terms like 'integrated deductible' (combined) or 'separate Rx deductible.'",
+          "es": "Algunos planes usan un deducible combinado único que cubre los costos médicos y de recetas. Otros los dividen: un deducible médico y un deducible separado de medicamentos recetados. Con deducibles divididos, podría pagar el precio completo de un medicamento caro incluso después de cumplir su deducible médico. Revise los documentos de su plan buscando términos como 'deducible integrado' (combinado) o 'deducible de Rx separado.'"
+        }
+      ],
+      "list": [
+        { "en": "HSA-qualified High Deductible Health Plans (HDHPs) require a 2026 minimum deductible of $1,700 individual / $3,400 family.", "es": "Los planes de salud con deducible alto (HDHP) calificados para HSA requieren un deducible mínimo en 2026 de $1,700 individual / $3,400 familiar." },
+        { "en": "Catastrophic plans (available to people under 30 or those with hardship exemptions) carry a deductible equal to the ACA OOP max: $9,200 in 2026.", "es": "Los planes catastróficos (disponibles para menores de 30 años o con exenciones por dificultades) tienen un deducible igual al OOP max del ACA: $9,200 en 2026." },
+        { "en": "Medicare Part B has a separate, much smaller annual deductible: $283 in 2026.", "es": "Medicare Parte B tiene un deducible anual separado mucho menor: $283 en 2026." }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      { "question": "What is the average 2026 ACA deductible?", "answer": "For 2026 ACA marketplace plans, the average deductible runs about $7,500 for Bronze, $5,500 for Silver, $2,000 for Gold, and $500 for Platinum. These are averages; specific plans within each tier vary by insurer and state. Silver plans for households under 250% of the federal poverty level may have much lower deductibles thanks to cost-sharing reductions." },
+      { "question": "Do I pay anything before I hit my deductible?", "answer": "Yes, for most non-preventive care, you pay the full negotiated rate until you hit the deductible. The exceptions: ACA-required preventive services (annual physicals, screenings, vaccines) are covered at 100% before the deductible, and some plans cover certain sick visits or generic prescriptions with just a copay before the deductible kicks in." },
+      { "question": "Does my deductible reset every year?", "answer": "Yes. Your deductible resets to zero at the start of each plan year, usually January 1, but employer plans may run a different fiscal year. Spending from last year does not carry over. If you have a major procedure planned, scheduling it after you have already paid down some of the deductible can save significant money." },
+      { "question": "What's the difference between a deductible and an out-of-pocket maximum?", "answer": "The deductible is what you pay before insurance starts sharing costs through coinsurance or copays. The out-of-pocket maximum (OOP max) is the absolute most you will pay all year, including the deductible, copays, and coinsurance combined. After you hit the OOP max, insurance pays 100%. For 2026, the ACA OOP max is $9,200 individual / $18,400 family." },
+      { "question": "Does the deductible count toward the out-of-pocket maximum?", "answer": "Yes. Money you pay toward your deductible counts toward your OOP max. So does coinsurance and copays for covered, in-network care. Premiums, out-of-network charges, and non-covered services do not count toward either." },
+      { "question": "How do I find my plan's deductible?", "answer": "Look at your plan's Summary of Benefits and Coverage (SBC), a standardized document required by the ACA. The deductible is on the first page. You can also log into your insurer's member portal, check your insurance ID card, or call the number on the back of the card. If you bought through HealthCare.gov, the plan details page lists it as well." },
+      { "question": "What is an embedded deductible on a family plan?", "answer": "On a family plan with an embedded deductible, each person has their own individual deductible (capped at the ACA individual limit), and the family also has a combined family deductible. When one person hits their individual deductible, the plan starts cost-sharing for that person, even if the family deductible has not been met. A non-embedded (aggregate) deductible requires the full family amount before anyone gets cost-sharing." },
+      { "question": "Why was my doctor visit so expensive if I have insurance?", "answer": "Almost always, it is the deductible. Until you hit it, you pay the plan's negotiated rate for the visit, lab work, and any imaging. The insurance shows the discount it negotiated, but you still owe the full discounted amount. Once you cross the deductible, follow-up visits drop to a copay or coinsurance rate." }
+    ],
+    "es": [
+      { "question": "¿Cuál es el deducible promedio del ACA en 2026?", "answer": "Para los planes del mercado del ACA en 2026, el deducible promedio es de aproximadamente $7,500 para Bronze, $5,500 para Silver, $2,000 para Gold y $500 para Platino. Estos son promedios; los planes específicos varían según la aseguradora y el estado. Los planes Silver para hogares bajo el 250% del nivel federal de pobreza pueden tener deducibles mucho más bajos gracias a las reducciones de costos compartidos." },
+      { "question": "¿Tengo que pagar algo antes de alcanzar mi deducible?", "answer": "Sí, para la mayoría de la atención que no es preventiva, paga la tarifa negociada completa hasta alcanzar el deducible. Las excepciones: los servicios preventivos requeridos por el ACA (físicos anuales, exámenes, vacunas) se cubren al 100% antes del deducible, y algunos planes cubren ciertas visitas por enfermedad o recetas genéricas con solo un copago." },
+      { "question": "¿Mi deducible se reinicia cada año?", "answer": "Sí. Su deducible se reinicia a cero al comienzo de cada año del plan, generalmente el 1 de enero, aunque los planes del empleador pueden tener un año fiscal diferente. El gasto del año pasado no se transfiere. Si tiene un procedimiento mayor planeado, programarlo después de haber pagado parte del deducible puede ahorrar dinero." },
+      { "question": "¿Cuál es la diferencia entre un deducible y un máximo de gastos de bolsillo?", "answer": "El deducible es lo que paga antes de que el seguro comience a compartir costos a través de coseguro o copagos. El máximo de gastos de bolsillo (OOP max) es lo máximo absoluto que pagará durante todo el año, incluyendo el deducible, copagos y coseguro combinados. Después de alcanzar el OOP max, el seguro paga el 100%. Para 2026, el OOP max del ACA es $9,200 individual / $18,400 familiar." },
+      { "question": "¿El deducible cuenta para el máximo de gastos de bolsillo?", "answer": "Sí. El dinero que paga hacia su deducible cuenta hacia su OOP max. También cuentan el coseguro y los copagos por atención cubierta en la red. Las primas, los cargos fuera de la red y los servicios no cubiertos no cuentan." },
+      { "question": "¿Cómo encuentro el deducible de mi plan?", "answer": "Mire el Resumen de Beneficios y Cobertura (SBC) de su plan, un documento estandarizado requerido por el ACA. El deducible está en la primera página. También puede iniciar sesión en el portal de miembros de su aseguradora, revisar su tarjeta de identificación de seguro, o llamar al número detrás de la tarjeta. Si compró a través de HealthCare.gov, la página de detalles del plan también lo muestra." },
+      { "question": "¿Qué es un deducible embebido en un plan familiar?", "answer": "En un plan familiar con un deducible embebido, cada persona tiene su propio deducible individual (capado en el límite individual del ACA), y la familia también tiene un deducible familiar combinado. Cuando una persona alcanza su deducible individual, el plan comienza a compartir costos para esa persona, incluso si el deducible familiar no se ha alcanzado." },
+      { "question": "¿Por qué mi visita al médico fue tan cara si tengo seguro?", "answer": "Casi siempre, es el deducible. Hasta que lo alcance, paga la tarifa negociada del plan por la visita, los análisis de laboratorio y cualquier imagen. El seguro muestra el descuento que negoció, pero usted aún debe el monto descontado completo. Una vez que cruza el deducible, las visitas de seguimiento bajan a una tarifa de copago o coseguro." }
+    ]
+  },
+
+  "relatedLinks": [
+    { "label": { "en": "Out-of-Pocket Maximum Explained", "es": "Máximo de Gastos de Bolsillo Explicado" }, "href": "/glossary/out-of-pocket-maximum" },
+    { "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Médicas" }, "href": "/medical-bill-analyzer" },
+    { "label": { "en": "ACA Income Limits 2026", "es": "Límites de Ingresos ACA 2026" }, "href": "/aca-income-limits" },
+    { "label": { "en": "2026 FPL Chart", "es": "Tabla del FPL 2026" }, "href": "/federal-poverty-level" }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Deductible",
+      "url": "https://www.healthcare.gov/glossary/deductible/",
+      "note": { "en": "Official ACA definition of deductible.", "es": "Definición oficial del ACA del deducible." }
+    },
+    {
+      "name": "HealthCare.gov: Preventive Care Benefits",
+      "url": "https://www.healthcare.gov/coverage/preventive-care-benefits/",
+      "note": { "en": "ACA list of services covered before the deductible.", "es": "Lista del ACA de servicios cubiertos antes del deducible." }
+    },
+    {
+      "name": "IRS: HSA and HDHP Inflation Adjusted Amounts",
+      "url": "https://www.irs.gov/forms-pubs/about-publication-969",
+      "note": { "en": "Minimum deductibles for HSA-qualified HDHPs.", "es": "Deducibles mínimos para HDHPs calificados para HSA." }
+    },
+    {
+      "name": "KFF: Marketplace Plan Cost Sharing Analysis",
+      "url": "https://www.kff.org/health-reform/issue-brief/cost-sharing-for-plans-offered-in-the-federal-marketplace/",
+      "note": { "en": "Average deductibles by metal tier across ACA marketplace plans.", "es": "Deducibles promedio por nivel de metal en los planes del mercado del ACA." }
+    }
+  ]
+}
