@@ -42,15 +42,18 @@ export function checkMedicare(input: ScreenerInput): ProgramResult {
     return result;
   }
 
+  // Under 65 with disability: Medicare requires 24 months of SSDI first.
+  // We don't collect SSDI status in the screener, so we cannot confirm eligibility.
+  // Direct them to other programs; note the SSDI path in next steps.
   if (hasDisability) {
-    result.eligible = 'maybe';
-    result.eligibilityStatus = 'may_qualify';
-    result.reason = 'May qualify for Medicare with a qualifying disability (after 24-month SSDI waiting period)';
-    result.nextSteps = 'If receiving Social Security Disability Insurance (SSDI), you\'ll be automatically enrolled in Medicare after 24 months';
+    result.eligible = false;
+    result.eligibilityStatus = 'not_eligible';
+    result.reason = 'Medicare for people under 65 requires receiving SSDI for at least 24 months. Check ACA or Medicaid options below.';
+    result.nextSteps = 'If you are already receiving SSDI and have been for 24+ months, you qualify for Medicare automatically. Call Social Security at 1-800-772-1213 to confirm.';
     return result;
   }
 
-  result.reason = 'Medicare is for those 65+ or with qualifying disabilities';
+  result.reason = 'Medicare is for people 65 or older, or those receiving SSDI for 24+ months';
   result.nextSteps = 'Check ACA marketplace options for health insurance';
   return result;
 }

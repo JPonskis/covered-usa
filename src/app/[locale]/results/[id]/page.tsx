@@ -87,20 +87,24 @@ export default async function ResultsPage({ params }: Props) {
 
   const results: ProgramResult[] = eligibilityResults.programs;
 
-  // Override priority: Medicare > ACA > Medicaid > everything else
+  // Split into confirmed eligible (likely_eligible) and maybe eligible (may_qualify).
+  // Only likely_eligible programs can be the primary result — may_qualify programs
+  // are shown as secondary so users aren't misled about what they actually qualify for.
   const eligible = results.filter(
     (r) => r.eligible === true || r.eligible === 'maybe'
   );
+  const confirmed = results.filter((r) => r.eligibilityStatus === 'likely_eligible');
 
   let primaryProgram: ProgramResult | null = null;
-  const medicare = eligible.find((r) => r.id === 'medicare');
-  const aca = eligible.find((r) => r.id === 'aca');
-  const medicaid = eligible.find((r) => r.id === 'medicaid');
+  // Priority from confirmed-eligible pool only: Medicare > ACA > Medicaid > first confirmed
+  const medicare = confirmed.find((r) => r.id === 'medicare');
+  const aca = confirmed.find((r) => r.id === 'aca');
+  const medicaid = confirmed.find((r) => r.id === 'medicaid');
 
   if (medicare) primaryProgram = medicare;
   else if (aca) primaryProgram = aca;
   else if (medicaid) primaryProgram = medicaid;
-  else primaryProgram = eligible[0] || null;
+  else primaryProgram = confirmed[0] || eligible[0] || null;
 
   const secondaryPrograms = eligible.filter((r) => r !== primaryProgram);
   const notEligible = results.filter((r) => r.eligible === false);
