@@ -5,6 +5,7 @@ import { getAllDrugSlugs, getDrugBySlug } from '@/lib/drugs';
 import { getAllQASlugs, getQABySlug } from '@/lib/qa';
 import { getAllGlossarySlugs, getGlossaryBySlug } from '@/lib/glossary';
 import { getAllEventSlugs, getEventBySlug } from '@/lib/events';
+import { getAllPersonaSlugs, getPersonaBySlug } from '@/lib/personas';
 
 const BASE_URL = 'https://coveredusa.org';
 
@@ -64,8 +65,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/medicare-eligibility', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/aca-income-limits', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/federal-poverty-level', { changeFrequency: 'yearly', priority: 0.9 }),
-    // Persona pages (audience-targeted, screener funnel)
-    localizedEntry('/health-insurance-for-gig-workers', { changeFrequency: 'monthly', priority: 0.85 }),
   ];
 
   // Procedure cost pages — auto-pulled from content/data/procedures/*.json
@@ -123,6 +122,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Persona pages — auto-pulled from content/data/personas/*.json
+  const personaEntries: MetadataRoute.Sitemap = getAllPersonaSlugs().map((slug) => {
+    const data = getPersonaBySlug(slug);
+    const lastModified = data?.lastUpdated ? new Date(data.lastUpdated) : new Date();
+    return localizedEntry(`/for/${slug}`, {
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    });
+  });
+
   return [
     ...localizedPages,
     ...procedureEntries,
@@ -130,6 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...qaEntries,
     ...glossaryEntries,
     ...eventEntries,
+    ...personaEntries,
     ...blogEntries,
   ];
 }

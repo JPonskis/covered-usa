@@ -9,7 +9,8 @@
     "validate:qa": "node scripts/validate-qa.js",
     "validate:glossary": "node scripts/validate-glossary.js",
     "validate:events": "node scripts/validate-events.js",
-    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js && node scripts/validate-glossary.js && node scripts/validate-events.js",
+    "validate:personas": "node scripts/validate-personas.js",
+    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js && node scripts/validate-glossary.js && node scripts/validate-events.js && node scripts/validate-personas.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
