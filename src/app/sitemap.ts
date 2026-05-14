@@ -6,6 +6,7 @@ import { getAllQASlugs, getQABySlug } from '@/lib/qa';
 import { getAllGlossarySlugs, getGlossaryBySlug } from '@/lib/glossary';
 import { getAllEventSlugs, getEventBySlug } from '@/lib/events';
 import { getAllPersonaSlugs, getPersonaBySlug } from '@/lib/personas';
+import { getAllMAStateSlugs, getMAStateBySlug } from '@/lib/medicare-advantage';
 
 const BASE_URL = 'https://coveredusa.org';
 
@@ -133,6 +134,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // State Medicare Advantage pages — auto-pulled from content/data/medicare-advantage/*.json
+  // Priority 0.9 — these are higher-monetization (broker commission) than Phase 2 templates.
+  const maStateEntries: MetadataRoute.Sitemap = getAllMAStateSlugs().map((slug) => {
+    const data = getMAStateBySlug(slug);
+    const lastModified = data?.lastUpdated ? new Date(data.lastUpdated) : new Date();
+    return localizedEntry(`/medicare-advantage/${slug}`, {
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    });
+  });
+
   return [
     ...localizedPages,
     ...procedureEntries,
@@ -141,6 +154,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...glossaryEntries,
     ...eventEntries,
     ...personaEntries,
+    ...maStateEntries,
     ...blogEntries,
   ];
 }

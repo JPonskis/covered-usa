@@ -1,0 +1,363 @@
+{
+  "_comment": "State Medicare Advantage generation queue. Each entry produces ONE JSON file under content/data/medicare-advantage/<slug>.json via the coveredusa-ma-state-writer agent. Status starts as 'queued', flips to 'writing' when picked up, 'verified' when verifier approves, 'flagged' when verifier flags. Target: 50 states + DC = 51 total. California shipped as gold standard.",
+  "_version": "2026.05.14",
+  "states": [
+    {
+      "slug": "california",
+      "name": "California",
+      "abbr": "CA",
+      "status": "verified",
+      "notes": "Gold standard. Kaiser dominant. 402 plans, 3.6M enrollees, 51% penetration, $11 avg premium. Verified against KFF 2026 Spotlight 2026-05-14."
+    },
+    {
+      "slug": "texas",
+      "name": "Texas",
+      "abbr": "TX",
+      "status": "flagged",
+      "notes": "Second-largest MA market by enrollee count. No Kaiser. Strong Humana + UnitedHealthcare presence. Big rural/urban variance (Houston vs West TX)."
+    },
+    {
+      "slug": "florida",
+      "name": "Florida",
+      "abbr": "FL",
+      "status": "queued",
+      "notes": "Highest MA penetration nationally (~58%). Big retiree market. Humana, UnitedHealthcare, Florida Blue dominant. Hurricane SEP provisions worth mentioning."
+    },
+    {
+      "slug": "new-york",
+      "name": "New York",
+      "abbr": "NY",
+      "status": "queued",
+      "notes": "Large NYC market + upstate rural. EmblemHealth, Wellcare, Humana, UnitedHealthcare. Higher premiums than national average. State-based ACA exchange (relevant for relatedLinks)."
+    },
+    {
+      "slug": "pennsylvania",
+      "name": "Pennsylvania",
+      "abbr": "PA",
+      "status": "queued",
+      "notes": "Highmark Blue Cross dominant. Strong Humana presence. Industrial population, aging demographics. State-based ACA exchange (Pennie)."
+    },
+    {
+      "slug": "wyoming",
+      "name": "Wyoming",
+      "abbr": "WY",
+      "status": "flagged",
+      "notes": "Stress test: smallest MA market. Low penetration (~25%). Limited carrier choice. Many counties may have 5 or fewer plans. Non-expansion Medicaid state. Skip countyVariance section if data sparse."
+    },
+    {
+      "slug": "ohio",
+      "name": "Ohio",
+      "abbr": "OH",
+      "status": "queued",
+      "notes": "Large industrial state. Anthem Blue Cross, Humana, Aetna strong. Healthy MA penetration."
+    },
+    {
+      "slug": "michigan",
+      "name": "Michigan",
+      "abbr": "MI",
+      "status": "queued",
+      "notes": "Aging industrial population, high MA penetration. Blue Cross Blue Shield of Michigan dominant. Detroit urban + UP rural variance."
+    },
+    {
+      "slug": "arizona",
+      "name": "Arizona",
+      "abbr": "AZ",
+      "status": "queued",
+      "notes": "Big retiree destination. UnitedHealthcare, Humana, Banner|Aetna. Phoenix urban + tribal-area rural counties."
+    },
+    {
+      "slug": "georgia",
+      "name": "Georgia",
+      "abbr": "GA",
+      "status": "queued",
+      "notes": "Kaiser operates here (Atlanta metro). Plus Humana, UnitedHealthcare, Anthem. Non-expansion Medicaid (relevant for D-SNP framing)."
+    },
+    {
+      "slug": "north-carolina",
+      "name": "North Carolina",
+      "abbr": "NC",
+      "status": "queued",
+      "notes": "Growing market. UnitedHealthcare, Humana, Aetna, Blue Cross NC. Recent Medicaid expansion (Dec 2023) changes D-SNP landscape."
+    },
+    {
+      "slug": "illinois",
+      "name": "Illinois",
+      "abbr": "IL",
+      "status": "queued",
+      "notes": "Chicago urban + downstate rural. Aetna, Humana, Health Alliance, Blue Cross. State-based ACA exchange (Get Covered Illinois)."
+    },
+    {
+      "slug": "new-jersey",
+      "name": "New Jersey",
+      "abbr": "NJ",
+      "status": "queued",
+      "notes": "Horizon Blue Cross dominant. High premiums vs national avg. State-based ACA exchange (Get Covered NJ). High population density."
+    },
+    {
+      "slug": "virginia",
+      "name": "Virginia",
+      "abbr": "VA",
+      "status": "queued",
+      "notes": "Kaiser operates here (DC metro). Plus Humana, UnitedHealthcare, Anthem. Recent Medicaid expansion."
+    },
+    {
+      "slug": "washington",
+      "name": "Washington",
+      "abbr": "WA",
+      "status": "queued",
+      "notes": "Kaiser dominant (formerly Group Health). Premera Blue Cross strong. State-based ACA exchange. High Star Ratings statewide."
+    },
+    {
+      "slug": "massachusetts",
+      "name": "Massachusetts",
+      "abbr": "MA",
+      "status": "queued",
+      "notes": "Health Connector state. Blue Cross of Massachusetts strong. Higher premiums than national. Universal coverage culture predates ACA."
+    },
+    {
+      "slug": "tennessee",
+      "name": "Tennessee",
+      "abbr": "TN",
+      "status": "queued",
+      "notes": "BlueCross BlueShield of Tennessee dominant. Humana, UnitedHealthcare. Non-expansion Medicaid."
+    },
+    {
+      "slug": "indiana",
+      "name": "Indiana",
+      "abbr": "IN",
+      "status": "queued",
+      "notes": "Anthem Blue Cross strong (HQ here). HMO and PPO mix. Healthy industrial demographics."
+    },
+    {
+      "slug": "missouri",
+      "name": "Missouri",
+      "abbr": "MO",
+      "status": "queued",
+      "notes": "Anthem, Humana, Aetna. Kansas City + St Louis + rural Ozarks variance. Recent Medicaid expansion (2021)."
+    },
+    {
+      "slug": "maryland",
+      "name": "Maryland",
+      "abbr": "MD",
+      "status": "queued",
+      "notes": "Kaiser operates here (DC metro). Maryland-specific all-payer hospital rates affect cost picture. State-based ACA exchange."
+    },
+    {
+      "slug": "wisconsin",
+      "name": "Wisconsin",
+      "abbr": "WI",
+      "status": "queued",
+      "notes": "Anthem Blue Cross, UnitedHealthcare, Humana, plus local plans (Quartz, Network Health). Non-expansion Medicaid. Higher Star Ratings statewide."
+    },
+    {
+      "slug": "colorado",
+      "name": "Colorado",
+      "abbr": "CO",
+      "status": "queued",
+      "notes": "Kaiser operates here (Front Range). Strong UnitedHealthcare. Mountain rural counties have fewer plans. State-based ACA exchange (Connect for Health Colorado)."
+    },
+    {
+      "slug": "minnesota",
+      "name": "Minnesota",
+      "abbr": "MN",
+      "status": "queued",
+      "notes": "Unique state: nonprofit-only carriers (BlueCross MN, HealthPartners, Medica, UCare). Higher Star Ratings. State-based ACA exchange (MNsure)."
+    },
+    {
+      "slug": "south-carolina",
+      "name": "South Carolina",
+      "abbr": "SC",
+      "status": "queued",
+      "notes": "BlueCross BlueShield SC strong. Humana, UnitedHealthcare, Aetna. Non-expansion Medicaid."
+    },
+    {
+      "slug": "alabama",
+      "name": "Alabama",
+      "abbr": "AL",
+      "status": "queued",
+      "notes": "BlueCross BlueShield Alabama very dominant. UnitedHealthcare, Humana. Non-expansion Medicaid."
+    },
+    {
+      "slug": "louisiana",
+      "name": "Louisiana",
+      "abbr": "LA",
+      "status": "queued",
+      "notes": "Blue Cross Blue Shield Louisiana, Humana, UnitedHealthcare. Recent Medicaid expansion (2016). Higher D-SNP relevance."
+    },
+    {
+      "slug": "kentucky",
+      "name": "Kentucky",
+      "abbr": "KY",
+      "status": "queued",
+      "notes": "Humana HQ is here, strong presence. Anthem Blue Cross, UnitedHealthcare. State-based ACA exchange (kynect)."
+    },
+    {
+      "slug": "oregon",
+      "name": "Oregon",
+      "abbr": "OR",
+      "status": "queued",
+      "notes": "Kaiser operates here (NW region). PacificSource, Providence, Moda. State-based ACA exchange."
+    },
+    {
+      "slug": "oklahoma",
+      "name": "Oklahoma",
+      "abbr": "OK",
+      "status": "queued",
+      "notes": "BlueCross BlueShield Oklahoma, Humana, Aetna. Recent Medicaid expansion (2021). Tribal health coordination unique."
+    },
+    {
+      "slug": "connecticut",
+      "name": "Connecticut",
+      "abbr": "CT",
+      "status": "queued",
+      "notes": "ConnectiCare, Aetna (HQ here), Anthem. State-based ACA exchange (Access Health CT). High premiums vs national."
+    },
+    {
+      "slug": "utah",
+      "name": "Utah",
+      "abbr": "UT",
+      "status": "queued",
+      "notes": "SelectHealth (Intermountain) dominant. Younger demographic, lower MA penetration. Mountain rural variance."
+    },
+    {
+      "slug": "iowa",
+      "name": "Iowa",
+      "abbr": "IA",
+      "status": "queued",
+      "notes": "Wellmark Blue Cross strong. Aging population. Rural-heavy state."
+    },
+    {
+      "slug": "nevada",
+      "name": "Nevada",
+      "abbr": "NV",
+      "status": "queued",
+      "notes": "UnitedHealthcare, Humana, Anthem, Senior Care Plus. State-based ACA exchange (Nevada Health Link). Las Vegas urban concentrated."
+    },
+    {
+      "slug": "arkansas",
+      "name": "Arkansas",
+      "abbr": "AR",
+      "status": "queued",
+      "notes": "BlueCross BlueShield Arkansas, Humana, UnitedHealthcare. Smaller market."
+    },
+    {
+      "slug": "mississippi",
+      "name": "Mississippi",
+      "abbr": "MS",
+      "status": "queued",
+      "notes": "BlueCross BlueShield Mississippi, Humana, UnitedHealthcare. Non-expansion Medicaid. Low MA penetration."
+    },
+    {
+      "slug": "kansas",
+      "name": "Kansas",
+      "abbr": "KS",
+      "status": "queued",
+      "notes": "BlueCross BlueShield Kansas, Humana, Aetna. Non-expansion Medicaid. Rural-heavy."
+    },
+    {
+      "slug": "new-mexico",
+      "name": "New Mexico",
+      "abbr": "NM",
+      "status": "queued",
+      "notes": "Presbyterian, Blue Cross, UnitedHealthcare. State-based ACA exchange (beWellnm). High tribal population."
+    },
+    {
+      "slug": "nebraska",
+      "name": "Nebraska",
+      "abbr": "NE",
+      "status": "queued",
+      "notes": "Blue Cross Nebraska, Humana, Aetna. Rural-heavy. Smaller market."
+    },
+    {
+      "slug": "west-virginia",
+      "name": "West Virginia",
+      "abbr": "WV",
+      "status": "queued",
+      "notes": "Highmark Blue Cross, Humana. Aging population, opioid-impacted. Higher D-SNP demand."
+    },
+    {
+      "slug": "idaho",
+      "name": "Idaho",
+      "abbr": "ID",
+      "status": "queued",
+      "notes": "Blue Cross Idaho, Regence, Humana. State-based ACA exchange (Your Health Idaho). Mountain rural variance."
+    },
+    {
+      "slug": "hawaii",
+      "name": "Hawaii",
+      "abbr": "HI",
+      "status": "queued",
+      "notes": "Kaiser dominant. HMSA Blue Cross. Unique geography (interisland coverage). Very high MA penetration. Skip rural countyVariance, different county geography. Spanish: Hawái."
+    },
+    {
+      "slug": "new-hampshire",
+      "name": "New Hampshire",
+      "abbr": "NH",
+      "status": "queued",
+      "notes": "Anthem Blue Cross, Humana, Wellpoint. Small population, limited plan choice. New Hampshire ACA uses federal platform."
+    },
+    {
+      "slug": "maine",
+      "name": "Maine",
+      "abbr": "ME",
+      "status": "queued",
+      "notes": "Anthem Blue Cross, Humana, Martin's Point. State-based ACA exchange (CoverME.gov). Rural-heavy."
+    },
+    {
+      "slug": "montana",
+      "name": "Montana",
+      "abbr": "MT",
+      "status": "queued",
+      "notes": "Blue Cross Blue Shield Montana, Humana. Rural-heavy. Low MA penetration. Skip countyVariance if data sparse."
+    },
+    {
+      "slug": "delaware",
+      "name": "Delaware",
+      "abbr": "DE",
+      "status": "queued",
+      "notes": "Highmark Blue Cross, Aetna, Humana. Very small market. Skip countyVariance (only 3 counties)."
+    },
+    {
+      "slug": "rhode-island",
+      "name": "Rhode Island",
+      "abbr": "RI",
+      "status": "queued",
+      "notes": "BlueCross BlueShield RI, UnitedHealthcare. State-based ACA exchange (HealthSource RI). Small population, urban-concentrated."
+    },
+    {
+      "slug": "south-dakota",
+      "name": "South Dakota",
+      "abbr": "SD",
+      "status": "queued",
+      "notes": "Avera, Sanford, Wellmark Blue Cross. Rural-heavy. Recent Medicaid expansion (2023)."
+    },
+    {
+      "slug": "north-dakota",
+      "name": "North Dakota",
+      "abbr": "ND",
+      "status": "queued",
+      "notes": "Blue Cross Blue Shield North Dakota, Sanford. Rural-heavy. Low MA penetration."
+    },
+    {
+      "slug": "alaska",
+      "name": "Alaska",
+      "abbr": "AK",
+      "status": "queued",
+      "notes": "Very low MA penetration (~10%). Limited carrier choice. Premera Blue Cross primary. Tribal health unique. Many borough/census areas instead of counties."
+    },
+    {
+      "slug": "vermont",
+      "name": "Vermont",
+      "abbr": "VT",
+      "status": "queued",
+      "notes": "Blue Cross Blue Shield Vermont, MVP. State-based ACA exchange. Very small population."
+    },
+    {
+      "slug": "district-of-columbia",
+      "name": "District of Columbia",
+      "abbr": "DC",
+      "status": "queued",
+      "notes": "Kaiser operates here. Aetna, AmeriHealth. Small population. State-based ACA exchange (DC Health Link). Treat as a single-area entity, skip countyVariance."
+    }
+  ]
+}
