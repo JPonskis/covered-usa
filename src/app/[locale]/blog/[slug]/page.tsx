@@ -138,7 +138,7 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
     datePublished: post.date,
     dateModified: post.lastUpdated || post.date,
     image: post.image,
-    author: { '@type': 'Person', name: 'Jacob Posner', jobTitle: 'Founder, CoveredUSA', url: `${BASE_URL}/en/about` },
+    author: { '@type': 'Person', name: 'Jacob Posner', jobTitle: 'Founder & Editor', url: `${BASE_URL}/en/about` },
     publisher: { '@type': 'Organization', name: 'CoveredUSA', url: BASE_URL },
     inLanguage: isEs ? 'es' : 'en',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },

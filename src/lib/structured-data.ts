@@ -152,31 +152,71 @@ export function getMedicalOrganizationSchema() {
  * curated, reviewed medical-information page (stronger trust signal than
  * generic Article schema).
  *
- * Always include lastReviewed (date) so AI engines can confirm freshness.
+ * For Bing/Copilot YMYL citation, the high-leverage fields are:
+ *   - lastReviewed (ISO date) — when content was last fact-checked
+ *   - dateModified (ISO date) — most recent meaningful content change
+ *   - datePublished (ISO date) — first publish date (defaults to lastReviewed)
+ *   - author (Person with name + jobTitle + optional credential)
+ *   - reviewedBy (Person with credential — when missing, falls back to Organization)
+ *
+ * Microsoft Copilot Health gives extra trust weight to YMYL pages that
+ * include named clinician credentials in reviewedBy. We use Person where
+ * possible and Organization as the fallback.
  */
+export interface MedicalAuthor {
+  name: string;
+  jobTitle: string;
+  url?: string;
+  /** Optional credential (e.g., "Licensed Health Insurance Producer", "RN", "MD") */
+  hasCredential?: string;
+}
+
 export function getMedicalWebPageSchema(props: {
   url: string;
   name: string;
   description: string;
   lastReviewed: string;
+  /** Defaults to lastReviewed if not provided. */
+  datePublished?: string;
+  /** Defaults to lastReviewed if not provided. */
+  dateModified?: string;
   about?: string;
   audience?: 'Patient' | 'PublicHealth' | 'Consumer';
   medicalSpecialty?: string;
+  /** Person who wrote the page. Required for AI citation YMYL trust. */
+  author?: MedicalAuthor;
+  /** Person who reviewed the page. Optional; falls back to CoveredUSA Organization. */
+  reviewedBy?: MedicalAuthor;
 }) {
+  const dateModified = props.dateModified ?? props.lastReviewed;
+  const datePublished = props.datePublished ?? props.lastReviewed;
+
   const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
     url: `${BASE_URL}${props.url}`,
     name: props.name,
     description: props.description,
+    datePublished,
+    dateModified,
     lastReviewed: props.lastReviewed,
-    reviewedBy: {
+    isAccessibleForFree: true,
+    publisher: {
       '@type': 'Organization',
       name: 'CoveredUSA',
       url: BASE_URL,
     },
-    isAccessibleForFree: true,
   };
+
+  if (props.author) {
+    schema.author = personOrOrg(props.author);
+  }
+
+  // reviewedBy: prefer named Person (with credential) over Organization fallback.
+  schema.reviewedBy = props.reviewedBy
+    ? personOrOrg(props.reviewedBy)
+    : { '@type': 'Organization', name: 'CoveredUSA', url: BASE_URL };
+
   if (props.about) {
     schema.about = { '@type': 'MedicalEntity', name: props.about };
   }
@@ -188,6 +228,34 @@ export function getMedicalWebPageSchema(props: {
   }
   return schema;
 }
+
+function personOrOrg(person: MedicalAuthor): Record<string, unknown> {
+  const out: Record<string, unknown> = {
+    '@type': 'Person',
+    name: person.name,
+    jobTitle: person.jobTitle,
+  };
+  if (person.url) out.url = person.url.startsWith('http') ? person.url : `${BASE_URL}${person.url}`;
+  if (person.hasCredential) {
+    out.hasCredential = {
+      '@type': 'EducationalOccupationalCredential',
+      name: person.hasCredential,
+    };
+  }
+  return out;
+}
+
+/**
+ * The canonical CoveredUSA author entity. Use as the `author` arg for every
+ * template page's `getMedicalWebPageSchema` call so the byline + JSON-LD stay
+ * in sync across the whole site. When we add a credentialed reviewer later,
+ * pass it via the `reviewedBy` arg.
+ */
+export const COVEREDUSA_AUTHOR: MedicalAuthor = {
+  name: 'Jacob Posner',
+  jobTitle: 'Founder & Editor',
+  url: '/en/about',
+};
 
 /**
  * Drug — the core entity for drug-cost pages.

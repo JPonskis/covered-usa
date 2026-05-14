@@ -7,6 +7,7 @@ import {
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
   getQAPageSchema,
+  COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
   ReferenceTable,
@@ -93,6 +94,7 @@ export default async function QAPage({ params }: PageProps) {
     about: data.topic,
     audience: 'Patient',
     medicalSpecialty: data.medicalSpecialty,
+    author: COVEREDUSA_AUTHOR,
   });
   const qaPageSchema = getQAPageSchema({
     question: pickLocale(data.question, locale),
@@ -145,7 +147,7 @@ export default async function QAPage({ params }: PageProps) {
             </span>
             <span style={{ color: 'var(--border)' }}>·</span>
             <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
-              {isEs ? 'Por' : 'By'} CoveredUSA
+              {isEs ? 'Por Jacob Posner, Fundador y Editor' : 'By Jacob Posner, Founder & Editor'}
             </span>
           </div>
 

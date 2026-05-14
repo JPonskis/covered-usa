@@ -6,6 +6,7 @@ import {
   getFAQSchema,
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
+  COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
   ReferenceTable,
@@ -98,6 +99,7 @@ export default async function MedicareAdvantageStatePage({
     about: `Medicare Advantage in ${pickLocale(data.stateName, 'en')}`,
     audience: 'Consumer',
     medicalSpecialty: data.medicalSpecialty,
+    author: COVEREDUSA_AUTHOR,
   });
 
   // ─── Market overview table (top carriers) ──────────────────────────
@@ -229,7 +231,7 @@ export default async function MedicareAdvantageStatePage({
                 fontFamily: 'var(--font-body), Georgia, serif',
               }}
             >
-              {isEs ? 'Por' : 'By'} CoveredUSA
+              {isEs ? 'Por Jacob Posner, Fundador y Editor' : 'By Jacob Posner, Founder & Editor'}
             </span>
           </div>
 

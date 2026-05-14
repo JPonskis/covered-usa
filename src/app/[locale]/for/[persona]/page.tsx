@@ -6,6 +6,7 @@ import {
   getFAQSchema,
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
+  COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
   ReferenceTable,
@@ -78,6 +79,7 @@ export default async function PersonaPage({ params }: PageProps) {
     about: data.topic,
     audience: 'Consumer',
     medicalSpecialty: data.medicalSpecialty,
+    author: COVEREDUSA_AUTHOR,
   });
 
   // Options overview table
@@ -122,7 +124,7 @@ export default async function PersonaPage({ params }: PageProps) {
             </span>
             <span style={{ color: 'var(--border)' }}>·</span>
             <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
-              {isEs ? 'Por' : 'By'} CoveredUSA
+              {isEs ? 'Por Jacob Posner, Fundador y Editor' : 'By Jacob Posner, Founder & Editor'}
             </span>
           </div>
 

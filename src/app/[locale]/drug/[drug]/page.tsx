@@ -7,6 +7,7 @@ import {
   getBreadcrumbSchema,
   getMedicalWebPageSchema,
   getDrugSchema,
+  COVEREDUSA_AUTHOR,
 } from '@/lib/structured-data';
 import {
   ReferenceTable,
@@ -84,6 +85,7 @@ export default async function DrugPage({ params }: PageProps) {
     about: pickLocale(data.shortName, 'en'),
     audience: 'Patient',
     medicalSpecialty: data.medicalSpecialty,
+    author: COVEREDUSA_AUTHOR,
   });
   const drugSchema = getDrugSchema({
     name: pickLocale(data.drugName, 'en'),
@@ -176,7 +178,7 @@ export default async function DrugPage({ params }: PageProps) {
             </span>
             <span style={{ color: 'var(--border)' }}>·</span>
             <span className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}>
-              {isEs ? 'Por' : 'By'} CoveredUSA
+              {isEs ? 'Por Jacob Posner, Fundador y Editor' : 'By Jacob Posner, Founder & Editor'}
             </span>
           </div>
 
