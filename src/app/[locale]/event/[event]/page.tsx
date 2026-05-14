@@ -162,38 +162,57 @@ export default async function TriggerEventPage({ params }: PageProps) {
       <article className="max-w-3xl mx-auto px-6 py-12 md:py-16">
         {/* Urgency callout */}
         <div
-          className="mb-6 px-5 py-4 rounded-xl flex items-start gap-3"
-          style={{ background: 'var(--accent-lightest)', borderLeft: '4px solid var(--accent)' }}
+          className="mb-8 px-5 py-4 rounded-lg flex items-start gap-3"
+          style={{ background: 'var(--accent-lightest)', borderLeft: '3px solid var(--accent)' }}
         >
-          <span aria-hidden="true" className="text-xl leading-none" style={{ color: 'var(--accent)' }}>!</span>
-          <div className="flex-1">
+          {/* Clock icon */}
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            className="w-5 h-5 flex-shrink-0 mt-0.5"
+            fill="none"
+            stroke="var(--accent)"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="12" cy="12" r="9" />
+            <polyline points="12 7 12 12 15.5 14" />
+          </svg>
+          <div className="flex-1 min-w-0">
             <p
-              className="font-bold text-base mb-1"
+              className="font-semibold text-base leading-snug"
               style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display), Georgia, serif' }}
             >
               {pickLocale(data.urgency.heading, locale)}
             </p>
-            <p className="text-sm" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}>
+            <p
+              className="text-sm mt-1 leading-snug"
+              style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body), Georgia, serif' }}
+            >
               {pickLocale(data.urgency.body, locale)}
             </p>
-            {/* Secondary deadlines (optional, multi-deadline events) */}
+            {/* Secondary deadlines — inline text, not chips */}
             {data.urgency.secondaryDeadlines && data.urgency.secondaryDeadlines.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-2">
+              <p
+                className="text-xs mt-2 leading-relaxed"
+                style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body), Georgia, serif' }}
+              >
+                {isEs ? 'Otras opciones: ' : 'Other paths: '}
                 {data.urgency.secondaryDeadlines.map((sd, i) => (
-                  <span
-                    key={i}
-                    className="text-xs px-2.5 py-1 rounded-full"
-                    style={{ background: 'white', border: '1px solid var(--border)', color: 'var(--text-secondary)' }}
-                  >
-                    {pickLocale(sd.label, locale)}:{' '}
+                  <span key={i}>
+                    {pickLocale(sd.label, locale)}{' '}
                     <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>
-                      {sd.days === null
+                      ({sd.days === null
                         ? (isEs ? 'todo el año' : 'year-round')
-                        : isEs ? `${sd.days} días` : `${sd.days} days`}
+                        : isEs ? `${sd.days} días` : `${sd.days} days`})
                     </span>
+                    {i < data.urgency.secondaryDeadlines!.length - 1 && (
+                      <span style={{ color: 'var(--border)' }}> · </span>
+                    )}
                   </span>
                 ))}
-              </div>
+              </p>
             )}
           </div>
         </div>
