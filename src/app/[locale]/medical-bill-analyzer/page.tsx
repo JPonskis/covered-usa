@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Were you overcharged? Check your hospital bill for free.',
+    title: 'Don\'t pay that hospital bill yet. 80% have errors.',
     description:
-      'Upload your hospital bill. We compare every charge to what the government actually pays. Find errors, get a dispute letter.',
+      'Upload your hospital bill. We show you exactly what to dispute and write the letter for you. Free.',
     type: 'website',
   },
 }
@@ -36,7 +36,7 @@ const jsonLd = {
     },
     {
       '@type': 'HowTo',
-      name: 'How to Check Your Hospital Bill for Errors',
+      name: 'How to Dispute a Hospital Bill',
       step: [
         {
           '@type': 'HowToStep',
@@ -47,8 +47,8 @@ const jsonLd = {
         {
           '@type': 'HowToStep',
           position: 2,
-          name: 'We find what is wrong',
-          text: 'Each charge is compared to federal payment rates. Billing errors like duplicate charges and unbundled procedures are flagged.',
+          name: 'We find what to dispute',
+          text: 'Each charge is compared to federal payment rates. Billing errors, overcharges, and charity care eligibility are flagged.',
         },
         {
           '@type': 'HowToStep',
@@ -122,7 +122,7 @@ const jsonLd = {
           name: 'How much should an emergency room visit cost?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'According to the Medicare Physician Fee Schedule published by the Centers for Medicare and Medicaid Services (CMS), a Level 4 emergency room visit has a federal reimbursement rate of approximately $200–$500. Hospitals routinely bill $2,000–$5,000 or more for the same visit. The gap between what hospitals charge uninsured patients and what Medicare pays is typically 5 to 10 times the federal rate.',
+            text: 'According to the Medicare Physician Fee Schedule published by the Centers for Medicare and Medicaid Services (CMS), a Level 4 emergency room visit has a federal reimbursement rate of approximately $200 to $500. Hospitals routinely bill $2,000 to $5,000 or more for the same visit. The gap between what hospitals charge uninsured patients and what Medicare pays is typically 5 to 10 times the federal rate.',
           },
         },
         {
@@ -130,7 +130,7 @@ const jsonLd = {
           name: 'What happens if I cannot pay my hospital bill?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'If you cannot pay your hospital bill, you have several options. First, request the itemized bill and check for errors — billing mistakes are common and reduce the amount owed. Second, apply for the hospital\'s financial assistance program. Under Section 501(r) of the Affordable Care Act, nonprofit hospitals are legally required to offer free or reduced-cost care to qualifying patients. Third, negotiate directly with the billing department; hospitals regularly settle bills for less than the billed amount. Since 2023, medical debt under $500 is no longer reported to credit bureaus, and paid medical debt is removed from credit reports entirely.',
+            text: 'If you cannot pay your hospital bill, you have several options. First, request the itemized bill and check for errors. Billing mistakes are common and reduce the amount owed. Second, apply for the hospital\'s financial assistance program. Under Section 501(r) of the Affordable Care Act, nonprofit hospitals are legally required to offer free or reduced-cost care to qualifying patients. Third, negotiate directly with the billing department. Hospitals regularly settle bills for less than the billed amount. Since 2023, medical debt under $500 is no longer reported to credit bureaus, and paid medical debt is removed from credit reports entirely.',
           },
         },
         {
@@ -181,67 +181,76 @@ export default function MedicalBillAnalyzerPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="min-h-screen" style={{ background: 'var(--warm-white)' }}>
-        {/* Hero: lead with the problem */}
+        {/* Hero */}
         <section className="py-16 md:py-20 px-4" style={{ background: 'linear-gradient(135deg, var(--primary-deeper) 0%, var(--primary-dark) 100%)' }}>
           <div className="max-w-2xl mx-auto text-center text-white">
             <h1 className="text-3xl md:text-4xl font-bold mb-5 leading-tight">
-              Your hospital bill probably has errors.
+              Don't pay that bill yet.
             </h1>
             <p className="text-lg opacity-90 mb-6 leading-relaxed">
-              80% of medical bills contain mistakes. Hospitals set their own prices with no standard, and most people just pay because they don't know what's fair. This tool checks your bill for free.
+              <strong className="text-white">80% of hospital bills in the U.S. have errors.</strong>{' '}
+              That means yours probably does too. Most people pay whatever the hospital sends because they don't know they can dispute it. You can. Upload yours and we'll show you exactly what to dispute and write the letter for you.
             </p>
             <a
               href="#analyzer"
               className="inline-block px-8 py-3.5 rounded-lg font-semibold text-base"
               style={{ background: 'white', color: 'var(--primary-deeper)' }}
             >
-              Check My Bill
+              See What I Actually Owe
             </a>
             <div className="flex items-center justify-center gap-6 mt-6 text-sm opacity-70">
               <span>Free</span>
               <span>No signup</span>
-              <span>Results in 30 seconds</span>
+              <span>30 seconds</span>
             </div>
           </div>
         </section>
 
-        {/* The problem: why this matters */}
+        {/* Why you can dispute */}
         <section className="py-14 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6" style={{ color: 'var(--text-primary)' }}>
-              Hospitals charge whatever they want. You can push back.
+            <h2 className="text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>
+              Most people don't know you can dispute a hospital bill.
             </h2>
-            <div className="space-y-5" style={{ color: 'var(--text-secondary)' }}>
+            <p className="mb-8" style={{ color: 'var(--text-secondary)' }}>
+              You can. And there are three common reasons you'll pay less when you do.
+            </p>
+            <div className="space-y-6" style={{ color: 'var(--text-secondary)' }}>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>Hospital prices are not standardized.</strong> Every hospital sets its own rates using an internal price list called a "chargemaster." No patient ever sees it. These rates are often 3 to 10 times higher than what the federal government pays for the exact same procedures.
+                <strong style={{ color: 'var(--text-primary)' }}>Your bill probably has errors.</strong>{' '}
+                The same charge showing up twice. One service billed as three separate items to make the total higher. Billing errors show up on the{' '}
+                <a href="https://www.beckershospitalreview.com/finance/80-of-medical-bills-contain-errors-how-to-catch-them.html" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>majority of hospital bills</a>{' '}
+                and they almost always make the number bigger. Most people never look closely enough to notice.
               </p>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>There is a public benchmark for fair pricing.</strong> The federal government publishes what it actually pays hospitals through the{' '}
-                <a href="https://www.cms.gov/medicare/physician-fee-schedule/search" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Medicare Physician Fee Schedule</a>, maintained by the Centers for Medicare and Medicaid Services (CMS). These rates are updated every year. When your hospital charges you $4,200 for something the government pays $890 for, that gap is worth questioning.
+                <strong style={{ color: 'var(--text-primary)' }}>If your hospital is a nonprofit, you might not have to pay at all.</strong>{' '}
+                About{' '}
+                <a href="https://www.aha.org/statistics/fast-facts-us-hospitals" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>60% of U.S. hospitals are nonprofits</a>.{' '}
+                <a href="https://www.irs.gov/charities-non-profits/charitable-organizations/new-requirements-for-501c3-hospitals-under-the-affordable-care-act" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Federal law</a>{' '}
+                requires them to offer free or reduced-cost care to patients who qualify based on income. The cutoff is higher than you'd think. For a family of four, it can be as high as $124,000 a year. But hospitals still charge you full price because they're hoping you'll just pay it. You don't have to.
               </p>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>Billing errors are extremely common.</strong> Duplicate charges, procedures billed separately that should be combined, and codes that don't match the service you actually received. These mistakes add up, and they almost always add up in the hospital's favor.
-              </p>
-              <p>
-                This tool reads your bill, compares every charge to what the government pays, flags errors, and writes you a dispute letter. It takes about 30 seconds.
+                <strong style={{ color: 'var(--text-primary)' }}>Just because a hospital charges you something doesn't mean you have to accept it.</strong>{' '}
+                Hospitals set their own prices. There's no rule. But the U.S. government publishes what it actually pays hospitals for every service through the{' '}
+                <a href="https://www.cms.gov/medicare/physician-fee-schedule/search" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Medicare Physician Fee Schedule</a>.{' '}
+                For a standard ER visit, that's around $450. If your hospital charged you $4,000 for the same thing, that's your argument. Hospitals would rather settle than fight you on it.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Visual example of results */}
+        {/* What you'll get: mock results */}
         <section className="py-14 px-4" style={{ background: 'var(--cream)' }}>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>
               Here's what you'll get
             </h2>
             <p className="text-sm mb-8" style={{ color: 'var(--text-muted)' }}>
-              Upload a bill and the tool produces a full breakdown like the one below.
+              Upload your bill and you'll get a full breakdown like the one below.
             </p>
 
             {/* Mock result card */}
             <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
-              {/* Mock summary */}
               <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, var(--primary-deeper), var(--primary-dark))' }}>
                 <p className="text-sm text-white/70 mb-1">Analysis Complete</p>
                 <p className="text-lg font-semibold text-white">Valley Medical Center</p>
@@ -261,7 +270,6 @@ export default function MedicalBillAnalyzerPage() {
                 </div>
               </div>
 
-              {/* Mock line items */}
               <div className="border-t border-[var(--border-light)]">
                 <div className="px-6 py-3 border-b border-[var(--border-light)]">
                   <p className="text-sm font-semibold text-[var(--text-primary)]">Line items</p>
@@ -294,13 +302,13 @@ export default function MedicalBillAnalyzerPage() {
               Example analysis. Your results will reflect your actual bill.
             </p>
 
-            {/* Sample dispute letter */}
+            {/* Dispute letter preview */}
             <div className="mt-10">
               <h3 className="font-semibold text-lg mb-3" style={{ color: 'var(--text-primary)' }}>
-                And here's your dispute letter
+                Then you get a dispute letter ready to send
               </h3>
               <p className="text-sm mb-4" style={{ color: 'var(--text-muted)' }}>
-                The tool writes a formal letter you can send directly to the hospital's billing department.
+                A formal letter addressed to the hospital's billing department citing every overcharge and error on your bill.
               </p>
               <div className="relative">
               <div
@@ -325,7 +333,7 @@ export default function MedicalBillAnalyzerPage() {
                   <p style={{ marginBottom: '4px' }}>800 Hospital Way</p>
                   <p style={{ marginBottom: '24px' }}>Austin, TX 78705</p>
 
-                  <p style={{ marginBottom: '24px' }}><strong>Re: Dispute of Charges — Account #VMC-2026-44891</strong></p>
+                  <p style={{ marginBottom: '24px' }}><strong>Re: Dispute of Charges, Account #VMC-2026-44891</strong></p>
 
                   <p style={{ marginBottom: '16px' }}>Dear Billing Department,</p>
 
@@ -360,7 +368,7 @@ export default function MedicalBillAnalyzerPage() {
                   </p>
 
                   <p style={{ marginBottom: '16px' }}>
-                    The total amount billed is $12,847.00. The total Medicare reimbursement for these same services is $846.00 — a difference of <strong>$12,001.00</strong>. I understand that hospital rates differ from Medicare rates, but discrepancies of this magnitude warrant review.
+                    The total amount billed is $12,847.00. The total Medicare reimbursement for these same services is $846.00, a difference of <strong>$12,001.00</strong>. I understand that hospital rates differ from Medicare rates, but discrepancies of this magnitude warrant review.
                   </p>
 
                   <p style={{ marginBottom: '16px' }}>
@@ -375,7 +383,6 @@ export default function MedicalBillAnalyzerPage() {
                   <p style={{ marginTop: '28px', marginBottom: '0' }}>John Smith</p>
                 </div>
               </div>
-              {/* Scroll fade indicator */}
               <div
                 className="pointer-events-none absolute bottom-0 left-0 right-0"
                 style={{
@@ -392,71 +399,14 @@ export default function MedicalBillAnalyzerPage() {
           </div>
         </section>
 
-        {/* How it works: reframed as outcomes */}
-        <section className="py-14 px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-10" style={{ color: 'var(--text-primary)' }}>
-              How it works
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {[
-                {
-                  step: '1',
-                  title: 'Upload your bill',
-                  body: 'Take a photo or upload a PDF. Any hospital, any format. The tool reads every line item on your bill automatically.',
-                },
-                {
-                  step: '2',
-                  title: 'We find what\'s wrong',
-                  body: 'Every charge is compared to federal payment rates. Duplicate charges, unbundled procedures, and inflated prices are flagged.',
-                },
-                {
-                  step: '3',
-                  title: 'Get your dispute letter',
-                  body: 'Download a formal letter that cites every overcharge and error. Send it to your hospital\'s billing department. You have the legal right to dispute.',
-                },
-              ].map(({ step, title, body }) => (
-                <div key={step} className="card rounded-2xl p-6">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mb-4" style={{ background: 'var(--primary)' }}>
-                    {step}
-                  </div>
-                  <h3 className="font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>{title}</h3>
-                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Charity care section */}
-        <section className="py-14 px-4" style={{ background: 'var(--cream)' }}>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6" style={{ color: 'var(--text-primary)' }}>
-              You might qualify for free care and not know it
-            </h2>
-            <div className="space-y-5" style={{ color: 'var(--text-secondary)' }}>
-              <p>
-                About 60% of hospitals in the U.S. are nonprofits. Under{' '}
-                <a href="https://www.irs.gov/charities-non-profits/charitable-organizations/new-requirements-for-501c3-hospitals-under-the-affordable-care-act" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Section 501(r) of the Affordable Care Act</a>, these hospitals are required to offer a Financial Assistance Policy to patients who qualify. That means free or reduced-cost care based on your income.
-              </p>
-              <p>
-                The income limits vary by hospital, but many cover patients earning up to 300% or 400% of the federal poverty level. For a family of four, that's roughly $124,000 a year.
-              </p>
-              <p>
-                Most people have never heard of this. Hospitals are required to have these programs, but they are not required to tell you about them before sending you a bill. The tool checks whether your hospital is a nonprofit and whether your income may qualify you for assistance.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* The tool */}
         <section id="analyzer" className="py-14 px-4" style={{ scrollMarginTop: '24px' }}>
           <div className="max-w-2xl mx-auto text-center mb-8">
             <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
-              Check your bill now
+              See what you actually owe
             </h2>
             <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
-              Free. No signup. Your bill is never stored.
+              Upload your bill. We compare every charge to what the government pays for the same service, flag the errors, and write your dispute letter. Free. No signup. Your bill is never stored.
             </p>
           </div>
           <BillAnalyzer />
@@ -468,20 +418,23 @@ export default function MedicalBillAnalyzerPage() {
             <h2 className="text-2xl font-bold mb-6" style={{ color: 'var(--text-primary)' }}>
               Your rights
             </h2>
-            <div className="space-y-4 text-sm" style={{ color: 'var(--text-secondary)' }}>
+            <div className="space-y-4" style={{ color: 'var(--text-secondary)' }}>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>You can request an itemized bill.</strong> Hospitals are required to provide a bill that shows every individual charge. If you only received a summary, call the billing department and ask for the itemized version. You need this before you can identify errors.
+                <strong style={{ color: 'var(--text-primary)' }}>You can request an itemized bill.</strong>{' '}
+                They have to give it to you. If you only got a summary, call the billing department and ask for the itemized version.
               </p>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>Hospitals must publish their prices.</strong> The{' '}
-                <a href="https://www.cms.gov/hospital-price-transparency" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>Hospital Price Transparency Rule</a>, enforced by CMS since July 2024, requires every hospital to publish their standard charges in a machine-readable format — including rates negotiated with insurance companies. Hospitals that fail to comply face civil monetary penalties up to $2 million per year.
+                <strong style={{ color: 'var(--text-primary)' }}>You can dispute any charge.</strong>{' '}
+                You have the legal right to challenge any charge you think is wrong. The{' '}
+                <a href="https://www.cms.gov/nosurprises" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>No Surprises Act</a>{' '}
+                also protects you from unexpected out-of-network bills for emergency services.
               </p>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>The No Surprises Act protects you from unexpected bills.</strong> If you went to an in-network hospital but were treated by an out-of-network provider, you are protected under the{' '}
-                <a href="https://www.cms.gov/nosurprises" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>No Surprises Act</a>. Emergency services are covered regardless of network status. If you received a surprise bill, you can dispute it through a federal independent dispute resolution process.
+                <strong style={{ color: 'var(--text-primary)' }}>While your dispute is open, they cannot send your account to collections.</strong>
               </p>
               <p>
-                <strong style={{ color: 'var(--text-primary)' }}>Medical debt rules have changed.</strong> Medical debt under $500 is no longer reported to credit bureaus. Paid medical debt is removed from credit reports entirely. If a hospital is threatening your credit over a bill you're disputing, know that the rules are more in your favor than they used to be.
+                <strong style={{ color: 'var(--text-primary)' }}>Medical debt under $500 no longer shows up on your credit report.</strong>{' '}
+                Paid medical debt is removed from credit reports entirely.
               </p>
             </div>
           </div>
@@ -524,7 +477,7 @@ export default function MedicalBillAnalyzerPage() {
                 {
                   title: 'How to Negotiate a Hospital Bill',
                   href: '/en/blog/how-to-negotiate-hospital-bills',
-                  desc: 'Scripts and tactics for getting a bill reduced — even after you\'ve received it.',
+                  desc: 'Scripts and tactics for getting a bill reduced after you\'ve received it.',
                 },
                 {
                   title: 'Hospital Charity Care: 501(r) Forgiveness Programs',
@@ -563,16 +516,16 @@ export default function MedicalBillAnalyzerPage() {
         {/* Bottom CTA */}
         <section className="py-14 px-4" style={{ background: 'linear-gradient(135deg, var(--primary-deeper) 0%, var(--primary-dark) 100%)' }}>
           <div className="max-w-xl mx-auto text-center text-white">
-            <h2 className="text-2xl font-bold mb-3">Ready to check your bill?</h2>
+            <h2 className="text-2xl font-bold mb-3">Don't pay that bill until you've checked it.</h2>
             <p className="opacity-80 mb-6 text-sm">
-              Free, no signup, no data stored. Results in under 30 seconds.
+              Free. No signup. Your bill is never stored.
             </p>
             <a
               href="#analyzer"
               className="inline-block px-8 py-3.5 rounded-lg font-semibold text-sm"
               style={{ background: 'white', color: 'var(--primary-deeper)' }}
             >
-              Check My Bill
+              See What I Actually Owe
             </a>
             <div className="mt-8 pt-8 border-t" style={{ borderColor: 'rgba(255,255,255,0.2)' }}>
               <p className="opacity-70 text-sm mb-3">Also check what health coverage you qualify for:</p>
