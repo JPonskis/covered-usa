@@ -246,15 +246,49 @@ export default async function TriggerEventPage({ params }: PageProps) {
               ? `${data.steps.length} pasos para obtener cobertura`
               : `${data.steps.length} Steps to Get Coverage`}
           </h2>
+        </div>
 
-          <ol>
-            {data.steps.map((step, i) => (
-              <li key={i}>
-                <strong>{pickLocale(step.name, locale)}.</strong> {pickLocale(step.text, locale)}
-              </li>
-            ))}
-          </ol>
+        {/* Numbered step cards — escape article-content so we can style distinctly */}
+        <ol className="my-8 space-y-4 list-none p-0">
+          {data.steps.map((step, i) => (
+            <li key={i} className="flex gap-4">
+              {/* Numbered badge */}
+              <div
+                className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-bold text-base"
+                style={{
+                  background: 'var(--teal)',
+                  color: 'white',
+                  fontFamily: 'var(--font-display), Georgia, serif',
+                }}
+                aria-hidden="true"
+              >
+                {i + 1}
+              </div>
+              <div className="flex-1 pt-0.5">
+                <h3
+                  className="text-lg font-bold mb-1 leading-snug"
+                  style={{
+                    color: 'var(--text-primary)',
+                    fontFamily: 'var(--font-display), Georgia, serif',
+                  }}
+                >
+                  {pickLocale(step.name, locale)}
+                </h3>
+                <p
+                  className="text-base leading-relaxed"
+                  style={{
+                    color: 'var(--text-secondary)',
+                    fontFamily: 'var(--font-body), Georgia, serif',
+                  }}
+                >
+                  {pickLocale(step.text, locale)}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
 
+        <div className="article-content">
           <h2>{isEs ? 'Compare sus opciones' : 'Compare Your Options'}</h2>
 
           <div className="my-8">
