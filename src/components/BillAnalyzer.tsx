@@ -93,7 +93,6 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
   const [letterFormName, setLetterFormName] = useState('')
   const [letterFormAddress, setLetterFormAddress] = useState('')
   const [letterFormAccountNumber, setLetterFormAccountNumber] = useState('')
-  const [letterFormAge, setLetterFormAge] = useState('')
 
   // Letter result
   const [letterLoading, setLetterLoading] = useState(false)
@@ -120,7 +119,6 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
   const incomeNum = income ? parseInt(income.replace(/[^0-9]/g, ''), 10) : 0
   const householdSizeNum = householdSize ? parseInt(householdSize, 10) : 0
   const fplPct = incomeNum && householdSizeNum ? getFPLPercent(incomeNum, householdSizeNum) : null
-  const ageNum = letterFormAge ? parseInt(letterFormAge, 10) : 0
 
   function handleFileSelect(f: File) {
     setFile(f)
@@ -429,7 +427,7 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
     try {
       const { programs } = checkEligibility({
         state: billState,
-        age: ageNum || 35,
+        age: 35,
         householdSize: householdSizeNum,
         annualIncome: incomeNum,
         isPregnant: false,
@@ -984,19 +982,6 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
                   placeholder="From your bill"
                 />
               </div>
-              <div>
-                <label className={labelStyles}>Your age</label>
-                <input
-                  type="number"
-                  inputMode="numeric"
-                  min="0"
-                  max="120"
-                  value={letterFormAge}
-                  onChange={e => setLetterFormAge(e.target.value)}
-                  className={inputStyles}
-                  placeholder="e.g. 34"
-                />
-              </div>
 
               <div className="flex gap-3 pt-1">
                 <button
@@ -1040,7 +1025,7 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
     if (hasEnoughForEligibility) {
       const { programs } = checkEligibility({
         state: letterBillState,
-        age: ageNum || 35,
+        age: 35,
         householdSize: householdSizeNum,
         annualIncome: incomeNum,
         isPregnant: false,
@@ -1056,7 +1041,7 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
     const totalBilled = result?.summary?.totalBilled ?? 0
     const ctaHeadline = getBillCTAHeadline(topProgram, totalBilled)
     const subheadline = getBillCTASubheadline(topProgram)
-    const screenerUrl = `/en/screener?utm_source=bill_analyzer&utm_medium=letter${incomeNum ? `&income=${incomeNum}` : ''}${householdSize ? `&household=${householdSize}` : ''}${ageNum ? `&age=${ageNum}` : ''}`
+    const screenerUrl = `/en/screener?utm_source=bill_analyzer&utm_medium=letter${incomeNum ? `&income=${incomeNum}` : ''}${householdSize ? `&household=${householdSize}` : ''}`
 
     return (
       <div className="max-w-2xl mx-auto space-y-6">

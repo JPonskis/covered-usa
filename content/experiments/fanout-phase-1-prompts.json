@@ -1,0 +1,181 @@
+{
+  "version": 3,
+  "createdAt": "2026-05-14",
+  "description": "Phase 1 starter prompts for the fan-out experiment. 24 conversational prompts (8 templates × 1 topic × 3 conversational variants per topic). Run against 3 LLM providers × 3 runs each = 216 total probes. Output captures every sub-query each LLM fires before answering. v3 fully drops the keyword-style 'terse' and 'specific' variants — real users don't type keywords into AI, they type questions. The 24 prompts here all read like what a real user would type into ChatGPT / Claude / Gemini.",
+  "prompt_design_principles": [
+    "All prompts are conversational, first-person or third-person-caretaker, grammar-light, lowercase, no formal punctuation.",
+    "Year markers ARE allowed (e.g., '2026') because real users do say 'in 2026' or 'this year' — but no keyword-style 'X cost without insurance 2026'.",
+    "3 variants per topic test sub-style sensitivity within conversational mode: first-person urgent (own situation), caretaker (asking about a relative), eligibility/info-seeking (general curiosity).",
+    "Phase 2 will add a second topic per template (colonoscopy / Eliquis / Florida MA / etc.) to disentangle template effects from topic effects."
+  ],
+  "prompts": [
+    {
+      "id": "P01",
+      "template": "procedure-cost",
+      "topic": "MRI",
+      "variant": "first-person-urgent",
+      "prompt": "i have an MRI scheduled next week how much will it cost without insurance"
+    },
+    {
+      "id": "P02",
+      "template": "procedure-cost",
+      "topic": "MRI",
+      "variant": "caretaker",
+      "prompt": "my dad needs an MRI but doesnt have insurance can you tell me what hes looking at price-wise"
+    },
+    {
+      "id": "P03",
+      "template": "procedure-cost",
+      "topic": "MRI",
+      "variant": "info-seeking",
+      "prompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay"
+    },
+    {
+      "id": "P04",
+      "template": "drug-cost",
+      "topic": "Ozempic",
+      "variant": "first-person-urgent",
+      "prompt": "how much will Ozempic cost me per month if my insurance doesnt cover it"
+    },
+    {
+      "id": "P05",
+      "template": "drug-cost",
+      "topic": "Ozempic",
+      "variant": "caretaker",
+      "prompt": "my mom needs ozempic and her insurance denied it whats the real cost going to be"
+    },
+    {
+      "id": "P06",
+      "template": "drug-cost",
+      "topic": "Ozempic",
+      "variant": "info-seeking",
+      "prompt": "im paying cash for ozempic every month is there any way to get it cheaper"
+    },
+    {
+      "id": "P07",
+      "template": "qa",
+      "topic": "medicare-dental",
+      "variant": "first-person-urgent",
+      "prompt": "im 67 and need a root canal will medicare pay for any of it"
+    },
+    {
+      "id": "P08",
+      "template": "qa",
+      "topic": "medicare-dental",
+      "variant": "caretaker",
+      "prompt": "my dad has medicare and needs his teeth pulled is that going to be covered"
+    },
+    {
+      "id": "P09",
+      "template": "qa",
+      "topic": "medicare-dental",
+      "variant": "info-seeking",
+      "prompt": "does medicare cover any dental stuff like cleanings or dentures im trying to plan for retirement"
+    },
+    {
+      "id": "P10",
+      "template": "glossary",
+      "topic": "MAGI",
+      "variant": "first-person-urgent",
+      "prompt": "how do they figure out income for obamacare im self employed and im confused"
+    },
+    {
+      "id": "P11",
+      "template": "glossary",
+      "topic": "MAGI",
+      "variant": "info-seeking",
+      "prompt": "i keep seeing magi on my marketplace application what does it actually include"
+    },
+    {
+      "id": "P12",
+      "template": "glossary",
+      "topic": "MAGI",
+      "variant": "specific-detail",
+      "prompt": "do i count my 401k withdrawals when calculating my income for aca subsidies"
+    },
+    {
+      "id": "P13",
+      "template": "event",
+      "topic": "turning-26",
+      "variant": "first-person-urgent",
+      "prompt": "im about to turn 26 and get kicked off my parents plan what are my options"
+    },
+    {
+      "id": "P14",
+      "template": "event",
+      "topic": "turning-26",
+      "variant": "caretaker",
+      "prompt": "my daughter is turning 26 next month and needs her own insurance what do we do"
+    },
+    {
+      "id": "P15",
+      "template": "event",
+      "topic": "turning-26",
+      "variant": "info-seeking",
+      "prompt": "i age out of my parents insurance in a few months whats my cheapest option"
+    },
+    {
+      "id": "P16",
+      "template": "persona",
+      "topic": "gig-workers",
+      "variant": "first-person-urgent",
+      "prompt": "im a full-time uber driver with no employer plan how do i get health insurance"
+    },
+    {
+      "id": "P17",
+      "template": "persona",
+      "topic": "gig-workers",
+      "variant": "info-seeking",
+      "prompt": "i drive for doordash and uber whats the best option for health coverage for someone like me"
+    },
+    {
+      "id": "P18",
+      "template": "persona",
+      "topic": "gig-workers",
+      "variant": "specific-detail",
+      "prompt": "im a 1099 freelancer with no benefits how do i get covered and can i deduct the cost"
+    },
+    {
+      "id": "P19",
+      "template": "ma-state",
+      "topic": "california-MA",
+      "variant": "first-person-urgent",
+      "prompt": "im 70 in los angeles and need a medicare advantage plan whats the best option"
+    },
+    {
+      "id": "P20",
+      "template": "ma-state",
+      "topic": "california-MA",
+      "variant": "caretaker",
+      "prompt": "my mom in california just turned 65 and we need to pick a medicare advantage plan"
+    },
+    {
+      "id": "P21",
+      "template": "ma-state",
+      "topic": "california-MA",
+      "variant": "specific-detail",
+      "prompt": "what medicare advantage plans are good in southern california for someone with diabetes"
+    },
+    {
+      "id": "P22",
+      "template": "daily-blog",
+      "topic": "FPL",
+      "variant": "first-person-urgent",
+      "prompt": "what is the federal poverty level for 2026 i need to know if i qualify for medicaid"
+    },
+    {
+      "id": "P23",
+      "template": "daily-blog",
+      "topic": "FPL",
+      "variant": "info-seeking",
+      "prompt": "my family of 4 makes 35k a year do we qualify for any health insurance help"
+    },
+    {
+      "id": "P24",
+      "template": "daily-blog",
+      "topic": "FPL",
+      "variant": "specific-detail",
+      "prompt": "im trying to figure out the income limits for marketplace subsidies do i qualify if i make 60k"
+    }
+  ]
+}
