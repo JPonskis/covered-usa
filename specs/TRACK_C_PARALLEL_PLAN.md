@@ -750,6 +750,59 @@ The screener funnel is where the revenue currently lives. Track D + E content in
 
 ---
 
+## 8.4.5 Two tools, one funnel — analyzer-to-screener handoff (existing system, documented v1.3)
+
+CoveredUSA ships TWO user tools, both monetizing through the same broker funnel:
+
+1. **`/screener`** — eligibility screener. User inputs basic info (age, household, income, state, current coverage). Returns plan recommendations + handoff to broker for Medicare/ACA enrollment.
+2. **`/medical-bill-analyzer`** — bill analyzer. User uploads or describes a medical bill. Tool identifies coding errors, charity-care eligibility, FPL%-based subsidy estimates, per-program eligibility (Medicaid / ACA / Medicare). Returns analysis + actionable next-steps.
+
+### The handoff pattern (already implemented; see `src/components/BillAnalyzer.tsx`)
+
+The bill analyzer is NOT a dead-end engagement tool. It's a value-build → trust-establish → screener handoff funnel:
+
+1. **User hits cost-focused content** (procedure, drug, billing-related blog post)
+2. **CTA routes to analyzer** (matches user intent — they want bill help, not insurance shopping)
+3. **Analyzer collects** bill data, user-provided income / household / age
+4. **Analyzer computes** FPL%, identifies coding errors, surfaces charity-care eligibility, estimates per-program eligibility
+5. **Analyzer returns contextual messaging:** "At X% FPL, you're in range for ACA marketplace subsidies. A plan would have significantly reduced what you paid for this bill."
+6. **Analyzer surfaces screener handoff** with PRE-FILLED URL params (`?utm_source=bill_analyzer&income=${incomeNum}&household=${householdSize}&age=${ageNum}`)
+7. **User clicks through to screener** — already partially completed (data carried forward)
+8. **Screener finalizes qualification** + sends to broker
+
+### Why this works
+
+- **Trust before transaction.** User got real value (bill analyzed, errors found, charity-care identified) BEFORE being routed to the revenue funnel. They're now primed to trust the broker recommendation.
+- **Better lead quality.** By the time the lead reaches the broker, you've passed: actual bill costs, computed FPL%, household composition, age, eligibility flags per program. The broker opens the call with context, not cold.
+- **Two on-ramps, one funnel.** Coverage-focused pages → screener (direct path). Cost-focused pages → analyzer → screener (value-first path). All paths lead to broker revenue.
+- **No intent mismatch.** Cost-page users don't see a screener CTA they don't want. They see an analyzer offer that matches their intent.
+- **Compounding brand value.** Users who analyze bills tell friends, return for follow-ups, leave reviews. The analyzer IS the brand-builder.
+
+### Current handoff implementation (existing — for reference)
+
+| Touchpoint | What it does | Code location |
+|---|---|---|
+| Mid-analyzer pre-fill | Computes FPL% from user input; ranks Medi-Cal / ACA / Medicare / charity-care eligibility | `BillAnalyzer.tsx` ~lines 360-400 |
+| Per-program eligibility cards | "Likely eligible" / "May qualify" badges per program | `BillAnalyzer.tsx` ~lines 1130-1140 |
+| HealthSherpa phone capture | ACA-specific lead capture branch | `BillAnalyzer.tsx` ~line 1136 |
+| Screener URL handoff | Pre-fills age, income, household via URL params + UTM tracking | `BillAnalyzer.tsx` ~line 1059 |
+| Generated letter | Includes screener URL with bill context | `BillAnalyzer.tsx` letter-generation flow |
+| Results page handoff | `/medical-bill-analyzer/results/[id]` includes screener CTA | `results/[id]/page.tsx` ~line 267 |
+
+### Implication for content design (Track D / E sessions: read this)
+
+When designing content for cost-focused templates (procedure, drug, cost Q&As, billing blog posts):
+
+- **Don't bypass the analyzer.** The CTA goes to the analyzer, not directly to the screener. The analyzer does the qualification + trust work.
+- **Write content that primes for analyzer use.** Articles should naturally lead toward "you should analyze your specific bill" rather than "you should shop for plans now."
+- **The analyzer + screener are designed as ONE system, two tools.** Content should reinforce this — articles can mention BOTH ("if you have a bill now, analyze it; if you're shopping plans, use our screener") in supporting text, with primary CTA matched to page intent.
+
+### Future enhancement (flagged for follow-up, NOT in Track C-prime scope)
+
+The current handoff passes income/household/age via URL params. The broker doesn't see the underlying bill context (what procedure, what hospital, what total, what errors found). If the broker call opened with "I see you're dealing with that $3,400 MRI bill — let me show you what plan would have covered it" instead of "Hi, I'm calling about your insurance interest," close rates would jump significantly. **Action item (post-Track-C-prime):** pass the bill summary + eligibility findings to the broker CRM as part of the lead handoff, not just URL params. ~30 min of work; 2-5x close-rate impact at the bottom of the funnel.
+
+---
+
 ## 8.5 End-state page count math (added v1.3)
 
 How many pages will CoveredUSA have at each phase? Planning anchor for Track D / E / F sessions.
