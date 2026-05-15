@@ -1,0 +1,51 @@
+topic,title_hint,topic_type,internal_link_hits,bing_impressions_weekly,google_monthly_volume,busa_overlap,competitor_density,state_specific,priority,sources,notes
+copay,What Is a Copay? Definition + 2026 Examples,internal-link-target,256,,,none,high,n,1,already_queued=y;healthcare.gov;cigna;uhc;obvious-50,Pure link target. ≤500 words. Pair with coinsurance.
+coinsurance,What Is Coinsurance? How It Works (2026),internal-link-target,175,,,none,high,n,1,already_queued=y;healthcare.gov;cigna;uhc;obvious-50,Pure link target. ≤500 words. Pair with copay + deductible.
+premium-tax-credit,What Is the Premium Tax Credit (PTC)? 2026 Rules After the Cliff Returns,internal-link-target,448,,,slight,medium,n,1,already_queued=y;healthcare.gov;irs;kff,High link target. 2026 = enhanced PTC expired Jan 1; cliff at 400% FPL back. Anchors all subsidy math across site.
+special-enrollment-period,What Is a Special Enrollment Period (SEP)? Qualifying Life Events + 60-Day Window,internal-link-target,382,,,none,medium,n,1,already_queued=y;healthcare.gov;kff,Anchor for every event/ template page. 219 +163 case-variant hits.
+explanation-of-benefits,What Is an EOB? It's Not a Bill — Here's How to Read Yours,internal-link-target,17,,,none,low,n,1,already_queued=y;healthcare.gov;goodrx,Anchor for the bill-analyzer funnel. Common confusion = high citation hook.
+prior-authorization,What Is Prior Authorization? When Insurers Require Pre-Approval (2026),internal-link-target,93,,,none,medium,n,1,already_queued=y;healthcare.gov;cms;ama,2026 CMS streamlining rules = year-anchor hook. Drug + procedure pages reference this.
+hdhp,What Is an HDHP? 2026 IRS Minimums + HSA Eligibility,internal-link-target,176,,,none,medium,n,1,already_queued=y;irs;healthcare.gov,"2026 minimums: $1,650 self / $3,300 family. HSA pair partner. Strong anchor for HSA pages."
+balance-billing,What Is Balance Billing? Surprise Bills + the No Surprises Act (2026),internal-link-target,29,,,none,medium,n,1,already_queued=y;cms;cfpb;kff,NSA helpline 1-800-985-3059. Analyzer funnel hook. Connects to GFE.
+hsa,What Is an HSA? 2026 Contribution Limits + Triple Tax Advantage,2-hop-comparison,488,,,none,high,n,1,healthcare.gov;irs;fidelity;obvious-50,"488 internal hits. Pair with FSA. 2026 limits: $4,400/$8,750."
+fsa,What Is an FSA? Flexible Spending Account Rules 2026,2-hop-comparison,74,,,none,high,n,1,healthcare.gov;irs;obvious-50,Pair with HSA. Use-it-or-lose-it + 2026 carryover $660 limit.
+hra,What Is an HRA? Health Reimbursement Arrangement Types 2026,2-hop-comparison,515,,,none,medium,n,2,healthcare.gov;irs;obvious-50,Note: high count is grep noise (matches "Lis" pattern in code). Likely ~50-80 real hits. ICHRA/QSEHRA variants.
+hmo,What Is an HMO? Network Rules + 2026 Examples,2-hop-comparison,310,,,none,high,n,1,healthcare.gov;cigna;uhc;obvious-50,Pair with PPO. 310 hits. Every plan-comparison page references.
+ppo,What Is a PPO? Out-of-Network Rules + Cost Tradeoffs,2-hop-comparison,218,,,none,high,n,1,healthcare.gov;cigna;uhc;obvious-50,Pair with HMO. 218 hits.
+epo,What Is an EPO? Exclusive Provider Organization Rules,internal-link-target,378,,,none,medium,n,2,healthcare.gov;cigna,Less common but referenced 378x internally. Round out network-type quad with POS.
+pos,What Is a POS Plan? Point-of-Service Network Rules,internal-link-target,511,,,none,medium,n,2,healthcare.gov;cigna,Round out network-type set.
+federal-poverty-level,What Is the Federal Poverty Level (FPL)? 2026 Guidelines Table,2-hop-comparison,2038,,,none,high,n,1,hhs;aspe;kff,"2,038 internal hits. Already has /federal-poverty-level hub but glossary entry as link target useful. Coordinate with reference-hub."
+in-network,What Does In-Network Mean? Cost + Access Differences,2-hop-comparison,182,,,none,high,n,1,healthcare.gov;obvious-50,Pair with out-of-network. Anchors network-type comparisons.
+out-of-network,What Does Out-of-Network Mean? Costs + Balance-Billing Risk,2-hop-comparison,137,,,none,high,n,1,healthcare.gov;obvious-50,Pair with in-network. Connects to balance-billing.
+formulary,What Is a Drug Formulary? Tiers + How to Check 2026,internal-link-target,80,,,none,medium,n,2,medicare.gov;cms;goodrx,Anchor for drug pages. Tier-1/2/3/specialty.
+catastrophic-plan,What Is a Catastrophic Health Plan? Eligibility + 2026 Rules,internal-link-target,208,,,none,medium,n,2,healthcare.gov;kff,Under 30 or hardship-exempt. Distinct from "catastrophic coverage" Medicare-Part-D term — clarify.
+cost-sharing-reduction,What Is a CSR? Silver-Plan Subsidy Math 2026,internal-link-target,217,,,none,medium,n,1,healthcare.gov;cms;kff,112 (CSR) + 90 + 14 + 13 = 217 hits. Pair with PTC. Silver-only.
+metal-tier,What Are ACA Metal Tiers? Bronze/Silver/Gold/Platinum Differences 2026,2-hop-comparison,200,,,slight,medium,n,1,healthcare.gov;kff;obvious-50,"Bronze ~$7,500 ded / Silver ~$5,500 / Gold ~$2,000 / Platinum ~$500. Title comparison pattern."
+qualifying-life-event,What Is a Qualifying Life Event (QLE)? Full 2026 List,internal-link-target,85,,,none,medium,n,1,healthcare.gov;cms,Anchor for every event-template page. Same family as SEP.
+open-enrollment-period,What Is Open Enrollment? ACA + Medicare 2026 Dates,2-hop-comparison,277,,,slight,medium,n,1,already_queued=y;healthcare.gov;medicare.gov,Pair with AEP + SEP. 166 + 111 hits. Already in queue.
+annual-enrollment-period,What Is the Medicare AEP? Oct 15–Dec 7 Rules,2-hop-comparison,190,,,none,medium,n,1,medicare.gov;kff,Pair with OEP/MAEP. 152+38 hits. Medicare-only context.
+initial-enrollment-period,What Is the Medicare IEP? Your 7-Month Window Around 65,internal-link-target,78,,,none,medium,n,2,medicare.gov,Connects to turning-65 event page.
+general-enrollment-period,What Is the Medicare GEP? Jan–Mar Rules + Late Penalties,internal-link-target,13,,,none,low,n,3,medicare.gov,Lower priority. Penalty hook.
+medicare-part-a,What Is Medicare Part A? Hospital Coverage + 2026 Costs,internal-link-target,159,,,slight,high,n,2,medicare.gov;cms;kff,Pair with B/C/D explainer quad. Medicare.gov dominates head term — link-target value only.
+medicare-part-b,What Is Medicare Part B? Outpatient + 2026 Premium ($185?),internal-link-target,541,,,slight,high,n,1,medicare.gov;cms,541 hits = top Medicare link target. 2026 premium $185/mo (TBD; check CMS).
+medicare-part-c,What Is Medicare Part C (Medicare Advantage)? 2026 Plan Basics,2-hop-comparison,1493,,,slight,high,n,2,medicare.gov;kff,MA pages anchor this. Coordinate with MA-state template — don't compete.
+medicare-part-d,"What Is Medicare Part D? Drug Coverage + 2026 Cap ($2,100)",2-hop-comparison,594,,,slight,high,n,1,medicare.gov;cms;kff,"2026 OOP cap $2,100 (IRA). Year-anchor hook. Strong."
+medigap,What Is Medigap? Medicare Supplement Plans Explained 2026,2-hop-comparison,380,,,slight,high,n,1,medicare.gov;kff,Pair with Medicare Advantage. 380 hits.
+moop,What Is the MOOP / Out-of-Pocket Maximum on Medicare Advantage? 2026 Limits,2-hop-comparison,100,,,none,medium,n,2,cms;kff,"2026 MA MOOP cap $9,250 in-network. Pair with oop-max (already live)."
+star-ratings,What Are CMS Star Ratings? How Medicare Advantage Plans Are Rated,internal-link-target,165,,,none,medium,n,2,cms;medicare.gov,107+58 hits. MA-state pages reference heavily.
+extra-help,What Is Extra Help (LIS)? 2026 Medicare Part D Subsidy,internal-link-target,158,,,none,medium,n,1,ssa;medicare.gov,Extra Help (141) + LIS (17) hits. Lower-income Medicare subsidy. Strong screener funnel.
+dual-eligible,What Are Dual-Eligibles? Medicare + Medicaid Together,internal-link-target,44,,,none,medium,n,2,cms;kff,D-SNP (205) implies dual-eligible context. Anchor for D-SNP pages.
+d-snp,What Is a D-SNP? Dual-Eligible Special Needs Plans 2026,internal-link-target,205,,,none,medium,n,2,cms;medicare.gov,205 hits. Niche but high-citation. Pair with C-SNP.
+c-snp,What Is a C-SNP? Chronic Condition Special Needs Plans,internal-link-target,82,,,none,low,n,3,cms;medicare.gov,Lower volume. Round out SNP set.
+subsidy-cliff,What Is the ACA Subsidy Cliff? 2026 Return After Enhanced PTC Expires,2-hop-comparison,125,,,none,medium,n,1,kff;healthcare.gov;cbpp,Year-anchor hook = 2026. Major editorial-news angle. 125 hits.
+good-faith-estimate,What Is a Good Faith Estimate (GFE)? No Surprises Act Rights 2026,internal-link-target,184,,,none,low,n,1,cms;hhs,184 hits (GFE 129 + good faith 55). Procedure template anchor. Strong analyzer funnel.
+medicaid-expansion,What Is Medicaid Expansion? 41 States + 2026 Holdouts,internal-link-target,182,,,slight,medium,y,1,kff;cms,Pair with state-level Medicaid pages. State-fork potential (41 vs 10). 170+12 hits.
+household-size,What Counts as a Household for ACA + Medicaid (2026 Rules),internal-link-target,271,,,slight,medium,n,2,healthcare.gov;kff;cms,Anchor for every income-table page. 183+88 hits. Pair with MAGI.
+cost-sharing,What Is Cost-Sharing? Deductibles + Copays + Coinsurance Together,2-hop-comparison,214,,,none,medium,n,2,healthcare.gov;kff,Umbrella term. Pair / link to ded+copay+coinsurance trio.
+short-term-health-insurance,What Is Short-Term Health Insurance? 2026 Federal Rules,internal-link-target,64,,,slight,medium,n,2,kff;cms,Year-anchor: 2024 final rule limits to 4 months. Lower priority but reference-worthy.
+qualified-health-plan,What Is a QHP? ACA Marketplace Plan Requirements,internal-link-target,6,,,none,low,n,3,healthcare.gov,Niche term. Pure link target.
+preventive-care,What Is Preventive Care? 100%-Covered ACA Services List 2026,internal-link-target,32,,,slight,medium,n,2,healthcare.gov;uspstf,USPSTF A/B-rated services. Pre-deductible coverage hook.
+allowed-amount,What Is the Allowed Amount? How Insurance Decides What to Pay,internal-link-target,17,,,none,low,n,3,healthcare.gov;goodrx,Bill-analyzer anchor. Niche.
+coverage-gap,What Is the Medicare Part D Coverage Gap (Donut Hole)? 2026 Status,internal-link-target,79,,,none,medium,n,2,medicare.gov;cms,2026: IRA closed the donut hole structure; this becomes historical reference. Year-anchor matters.
+guaranteed-issue,What Is Guaranteed Issue? ACA Protection Explained,internal-link-target,17,,,none,low,n,3,healthcare.gov;kff,Pre-existing-condition anchor. Low volume but conceptual core.
+step-therapy,What Is Step Therapy? Insurer Drug Sequencing Rules,internal-link-target,7,,,none,low,n,3,cms;goodrx,Drug page anchor. Niche but real Bing demand.

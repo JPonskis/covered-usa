@@ -1,0 +1,103 @@
+topic,title_hint,demand_score,bing_impressions_weekly,google_monthly_volume,utilization_rank,busa_overlap,competitor_density,state_specific,priority,sources,subtype
+state-medicaid-income-limits,[State] Medicaid Income Limits 2026 (scales 51x — one page per state),9500,1080,12000,1,heavy,medium,y,1,"Bing-GetRelatedKeywords-medicaid,FANOUT-real-Bing-1079-cites-texas-medicaid-income-limits-2026,BUSA-50-state-overlap,intent-split-eligibility-vs-application",qa-state-eligibility
+state-medicaid-eligibility,[State] Medicaid Eligibility 2026: Who Qualifies (scales 51x — one page per state),8200,950,9000,2,heavy,medium,y,1,"Bing-GetRelatedKeywords-medicaid,Bing-medicaid-eligibility-17730s,BUSA-50-state-overlap-shopping-intent-split,FANOUT-4.4",qa-state-eligibility
+state-medi-cal-income-limits,California Medi-Cal Income Limits 2026 (state-brand variant of CA Medicaid),5800,520,4400,1,slight,medium,y,1,"Bing-medi-cal-52377-broad-11592-strict,FANOUT-state-brand-rule,already-CU-109-queued",qa-state-eligibility
+state-ahcccs-income-limits,Arizona AHCCCS Income Limits 2026 (state-brand variant of AZ Medicaid),3200,290,2400,1,slight,medium,y,1,"Bing-ahcccs-90165-broad-23895-strict,FANOUT-state-brand-rule",qa-state-eligibility
+state-mnsure-income-limits,Minnesota MNsure / Medicaid Income Limits 2026 (state-brand variant),1100,90,720,2,slight,low,y,2,"Bing-mnsure-real-Bing-269cites,FANOUT-state-brand-rule",qa-state-eligibility
+state-soonercare-income-limits,Oklahoma SoonerCare Income Limits 2026 (state-brand variant of OK Medicaid),900,75,600,2,slight,low,y,2,"Bing-soonercare-real-Bing-262cites,FANOUT-state-brand-rule",qa-state-eligibility
+state-mainecare-income-limits,Maine MaineCare Income Limits 2026 (state-brand variant of ME Medicaid),700,55,480,2,slight,low,y,2,"Bing-mainecare-real-Bing-155cites,FANOUT-state-brand-rule",qa-state-eligibility
+state-badgercare-income-limits,Wisconsin BadgerCare Income Limits 2026 (state-brand variant of WI Medicaid),650,50,480,2,slight,low,y,2,"Bing-badgercare-real-Bing-96cites,FANOUT-state-brand-rule",qa-state-eligibility
+state-husky-income-limits,Connecticut HUSKY Income Limits 2026 (state-brand variant of CT Medicaid),550,45,360,2,slight,low,y,2,"Bing-husky-brand-mention,FANOUT-state-brand-rule",qa-state-eligibility
+state-tenncare-income-limits,Tennessee TennCare Income Limits 2026 (state-brand variant of TN Medicaid),520,42,360,2,slight,low,y,2,"FANOUT-state-brand-rule,competitor-landscape-7",qa-state-eligibility
+state-arhome-income-limits,Arkansas ARHOME Income Limits 2026 (state-brand variant of AR Medicaid),480,40,300,2,slight,low,y,2,"FANOUT-state-brand-rule",qa-state-eligibility
+state-masshealth-income-limits,Massachusetts MassHealth Income Limits 2026 (state-brand variant),620,52,400,2,slight,low,y,2,"FANOUT-state-brand-rule",qa-state-eligibility
+state-allkids-income-limits,Illinois AllKids Income Limits 2026 (state-brand variant for kids),420,35,260,3,none,low,y,3,"FANOUT-state-brand-rule",qa-state-eligibility
+state-chp-plus-income-limits,Colorado CHP+ Income Limits 2026 (CHIP variant),380,32,240,3,none,low,y,3,"FANOUT-state-brand-rule",qa-state-eligibility
+state-ohp-income-limits,Oregon Health Plan (OHP) Income Limits 2026 (state-brand variant),520,42,320,2,slight,low,y,2,"FANOUT-state-brand-rule",qa-state-eligibility
+state-hip-income-limits,Indiana HIP (Healthy Indiana Plan) Income Limits 2026,560,46,360,2,slight,low,y,2,"Bing-indiana-medicaid-37102-broad,FANOUT-state-brand-rule",qa-state-eligibility
+state-nj-familycare-income-limits,New Jersey FamilyCare Income Limits 2026 (state-brand variant),480,40,300,2,slight,low,y,2,"FANOUT-state-brand-rule",qa-state-eligibility
+state-chip-eligibility,[State] CHIP Eligibility 2026: Income Limits for Children (scales 51x),3200,290,2900,2,heavy,medium,y,1,"CMS-CHIP-state-directory,BUSA-state-chip-overlap-confirmed,FANOUT-4.4-CHIP-variant,CU-031-queued",qa-state-eligibility
+state-msp-income-limits,[State] Medicare Savings Program Income Limits 2026 (QMB/SLMB/QI scales 51x),1200,108,960,1,none,low,y,1,"Bing-medicare-savings-program-7558-broad,Bing-qmb-13183-broad,CU-104-queued-national-version",qa-state-eligibility
+state-aca-income-limits,[State] ACA Marketplace Income Limits 2026: Who Gets Subsidies (scales 51x),2400,210,2200,2,heavy,medium,y,2,"Bing-marketplace-8720k-broad,BUSA-state-aca-eligibility-overlap-confirmed,FANOUT-4.4-ACA-variant",qa-state-eligibility
+state-medicaid-family-of-4,[State] Medicaid Income Limit for a Family of 4 in 2026 (scales 51x),1800,160,1600,1,slight,low,y,1,"Bing-FANOUT-real-Bing-ohio-medicaid-income-limit-for-a-family-of-4,FANOUT-4.4-household-size",qa-state-eligibility
+state-medicaid-expansion-status,Is Medicaid Expanded in [State] in 2026? (scales 10x non-expansion states),900,80,1200,1,none,medium,y,1,"KFF-Medicaid-expansion-tracker,FANOUT-4.4-expansion-status-shape",qa-state-eligibility
+state-medicaid-asset-limits,[State] Medicaid Asset Limits 2026 (long-term care; scales 51x),1100,98,1100,2,slight,low,y,2,"Bing-medicaid-asset-limit-related,competitor-landscape-3-long-tail",qa-state-eligibility
+state-medicaid-pregnant-women,[State] Medicaid for Pregnant Women 2026: Income Limits (scales 51x; existing CU-023 covers national),780,68,900,2,slight,medium,y,2,"Bing-medicaid-pregnant-related,CU-023-overlap-but-state-fork-valid",qa-state-eligibility
+state-medicaid-seniors,[State] Medicaid for Seniors 2026: Income Limits and Long-Term Care,950,85,1100,2,slight,medium,y,2,"BUSA-benefits-for-seniors-overlap-app-intent,FANOUT-4.4",qa-state-eligibility
+state-medicaid-disabled,[State] Medicaid for People with Disabilities 2026,720,62,840,2,slight,low,y,2,"competitor-CMS-state-Medicaid-directory,Bing-medicaid-eligibility-related",qa-state-eligibility
+state-medicaid-working-people,[State] Medicaid Buy-In for Working Disabled 2026,420,36,480,3,none,low,y,3,"competitor-CMS-MBI-state-directory",qa-state-eligibility
+state-medicaid-undocumented,[State] Emergency Medicaid for Undocumented Immigrants 2026,580,48,720,3,slight,low,y,3,"Bing-emergency-medicaid-related,KFF-state-immigrant-medicaid-tracker",qa-state-eligibility
+state-medicaid-after-job-loss,Can I Get [State] Medicaid After Losing My Job in 2026?,620,52,780,3,slight,low,y,3,"Bing-job-loss-medicaid,event-overlap-but-state-fork",qa-state-eligibility
+do-i-qualify-medicaid-no-income,Do I Qualify for Medicaid With No Income in 2026?,920,82,1100,2,slight,medium,n,1,"Bing-qualify-for-medicaid-3191-broad,Bing-how-to-qualify-for-medicaid-1503,FANOUT-4.4-extension",qa-state-eligibility
+medicaid-vs-medicare-eligibility,Medicaid vs Medicare: Who Qualifies for Each in 2026?,1400,125,1900,1,slight,high,n,1,"Bing-what-is-medicaid-8794-broad,competitor-landscape-3-AARP-NCOA-coverage",qa-coverage
+does-medicare-cover-hearing-aids,Does Medicare Cover Hearing Aids? (2026 Answer),3200,290,4400,1,none,medium,n,1,"Bing-does-medicare-cover-hearing-aids-2487-broad-1868-strict,Bing-hearing-aids-covered-by-medicare-1432-strict",qa-coverage
+does-medicare-cover-ozempic,Does Medicare Cover Ozempic in 2026? (Updated for Weight-Loss Rules),2400,215,3300,1,none,medium,n,1,"Bing-ozempic-medicare-related,Bing-does-medicare-cover-wegovy-1522-broad-1224-strict",qa-coverage
+does-medicare-cover-wegovy,Does Medicare Cover Wegovy in 2026? (Cardiovascular Indication),1900,175,2400,1,none,medium,n,1,"Bing-does-medicare-cover-wegovy-1522-broad-1224-strict,competitor-landscape-3-coverage-long-tail",qa-coverage
+does-medicare-cover-mounjaro,Does Medicare Cover Mounjaro / Zepbound in 2026?,900,80,1300,1,none,low,n,2,"GLP-1-class-extension-of-wegovy-shape,Bing-mounjaro-related",qa-coverage
+does-medicare-cover-eye-exams,Does Medicare Cover Eye Exams in 2026?,1100,98,1600,1,none,medium,n,1,"Bing-vision-coverage-related,sibling-of-already-shipped-vision",qa-coverage
+does-medicare-cover-glasses,Does Medicare Cover Glasses or Contacts in 2026?,820,72,1200,1,none,medium,n,2,"sibling-of-vision-coverage,competitor-landscape-3",qa-coverage
+does-medicare-cover-mental-health,Does Medicare Cover Mental Health Therapy in 2026?,1400,125,2200,1,none,medium,n,1,"Bing-therapy-insurance-related,Bing-mental-health-insurance-related",qa-coverage
+does-medicare-cover-physical-therapy,Does Medicare Cover Physical Therapy in 2026?,1200,108,1800,1,none,medium,n,1,"Bing-physical-therapy-medicare-related,competitor-Medicare.gov-skeletal",qa-coverage
+does-medicare-cover-chiropractor,Does Medicare Cover Chiropractor Visits in 2026?,950,85,1400,1,none,low,n,2,"Bing-chiropractor-medicare-related,competitor-landscape-3-long-tail",qa-coverage
+does-medicare-cover-acupuncture,Does Medicare Cover Acupuncture in 2026?,720,62,1100,2,none,low,n,2,"Bing-medicare-coverage-narrow-related,CMS-acupuncture-LBP-rule-2020",qa-coverage
+does-medicare-cover-cataract-surgery,Does Medicare Cover Cataract Surgery in 2026?,1100,98,1500,1,none,medium,n,1,"competitor-Medicare.gov-skeletal,Bing-vision-related,FANOUT-4.3-MA-add-on",qa-coverage
+does-medicare-cover-cgm,Does Medicare Cover Continuous Glucose Monitors (Dexcom/Libre) in 2026?,820,72,1300,2,none,low,n,2,"CMS-CGM-Type1-Type2-eligibility-2023,Bing-related-diabetes-medicare",qa-coverage
+does-medicare-cover-shingles-vaccine,Does Medicare Cover the Shingles Vaccine in 2026? (Part D),680,58,950,2,none,low,n,2,"IRA-Part-D-vaccine-rule,Bing-related-medicare-vaccine",qa-coverage
+does-medicare-cover-shingrix,Does Medicare Cover Shingrix in 2026?,520,45,720,2,none,low,n,3,"IRA-Part-D-zero-copay,sibling-of-shingles-vaccine",qa-coverage
+does-medicare-cover-nursing-home,Does Medicare Cover Nursing Home Care in 2026? (Spoiler: 100 days max),1300,115,2200,1,none,medium,n,1,"Bing-nursing-home-medicaid-related,competitor-landscape-3-AARP",qa-coverage
+does-medicare-cover-assisted-living,Does Medicare Cover Assisted Living in 2026?,820,72,1300,2,none,medium,n,2,"sibling-of-nursing-home,Bing-long-term-care-related",qa-coverage
+does-medicare-cover-home-health,Does Medicare Cover Home Health Care in 2026?,920,82,1400,1,none,medium,n,1,"competitor-Medicare.gov,Bing-home-health-related",qa-coverage
+does-medicare-cover-dental-implants,Does Medicare Cover Dental Implants in 2026?,720,62,1100,2,none,medium,n,2,"sibling-of-existing-dental-already-shipped,Bing-dental-related-long-tail",qa-coverage
+does-medicare-cover-dentures,Does Medicare Cover Dentures in 2026?,580,48,900,2,none,medium,n,2,"sibling-of-existing-dental-already-shipped,Bing-dental-related",qa-coverage
+does-medicaid-cover-braces,Does Medicaid Cover Braces / Orthodontics for Kids in 2026?,820,72,1400,2,none,low,n,2,"Bing-medicaid-dental-related,CHIP-EPSDT-rule",qa-coverage
+does-medicaid-cover-dental-adults,Does Medicaid Cover Dental for Adults in 2026? (State-by-State),1300,115,1900,2,slight,medium,y,1,"CMS-state-Medicaid-dental-tracker,sibling-of-pediatric-EPSDT,scales-51x",qa-coverage
+does-medicaid-cover-eye-exams,Does Medicaid Cover Eye Exams / Glasses in 2026? (State-by-State),720,62,1100,2,slight,low,y,2,"Bing-medicaid-eye-exam-related,scales-51x",qa-coverage
+does-medicaid-cover-therapy,Does Medicaid Cover Therapy / Mental Health in 2026?,920,82,1400,1,none,medium,n,1,"Bing-therapy-insurance-1500-related,FANOUT-4.3-coverage-Q&A",qa-coverage
+does-medicaid-cover-ivf,Does Medicaid Cover IVF / Fertility Treatment in 2026? (State-by-State),580,48,900,3,none,low,y,3,"State-IVF-mandate-tracker-Resolve.org,scales-19x-mandate-states",qa-coverage
+does-medicaid-cover-weight-loss-surgery,Does Medicaid Cover Bariatric / Weight Loss Surgery in 2026?,720,62,1100,2,none,low,n,2,"CMS-bariatric-NCD,competitor-landscape-3-long-tail",qa-coverage
+does-medicaid-cover-ozempic-weight-loss,Does Medicaid Cover Ozempic for Weight Loss in 2026?,920,82,1300,2,none,low,n,1,"Bing-ozempic-related-100,FANOUT-4.3-cost-without-coverage-shape",qa-coverage
+does-medicaid-cover-suboxone,Does Medicaid Cover Suboxone / MAT for Opioid Use Disorder in 2026?,520,45,820,3,none,low,n,3,"sibling-of-rehab-already-shipped,SAMHSA-MAT-coverage",qa-coverage
+does-medicaid-cover-adhd-medication,Does Medicaid Cover ADHD Medication for Kids/Adults in 2026?,520,45,820,3,none,low,n,3,"Bing-medicaid-children-related,CMS-EPSDT-rule",qa-coverage
+does-medicaid-cover-home-care,Does Medicaid Cover In-Home Care / HCBS Waivers in 2026?,820,72,1300,1,none,medium,n,1,"CMS-HCBS-waiver-tracker,competitor-landscape-3-long-tail",qa-coverage
+does-medicaid-cover-nursing-home,Does Medicaid Cover Nursing Home Care in 2026? (Income/Asset Rules),1400,125,2200,1,none,medium,n,1,"Bing-nursing-home-medicaid-100-related,competitor-landscape-3-AARP",qa-coverage
+does-aca-cover-preexisting,Does ACA / Marketplace Insurance Cover Pre-Existing Conditions in 2026?,820,72,1500,1,none,medium,n,1,"Bing-marketplace-8720k-broad,competitor-Healthcare.gov-canonical,FANOUT-4.3",qa-coverage
+does-aca-cover-pregnancy,Does ACA / Marketplace Insurance Cover Pregnancy in 2026?,720,62,1100,1,none,medium,n,1,"Healthcare.gov-essential-health-benefit,Bing-marketplace-related",qa-coverage
+does-aca-cover-mental-health,Does ACA Cover Mental Health and Substance Abuse in 2026?,620,52,900,1,none,medium,n,2,"MHPAEA-parity-rule,Healthcare.gov-EHB",qa-coverage
+does-aca-cover-iud,Does ACA / Marketplace Cover Birth Control / IUDs in 2026?,520,45,820,2,none,low,n,2,"Womens-Preventive-Services-rule,Bing-related",qa-coverage
+does-medicare-cover-vs-medicaid,Does Medicare or Medicaid Cover [Service]? Comparison Guide 2026,820,72,1400,1,none,medium,n,2,"FANOUT-4.3-original-vs-MA-comparison-shape-extension,competitor-landscape-3",qa-coverage
+does-medicare-advantage-cover-dental,Does Medicare Advantage Cover Dental in 2026? (Bonus Benefit Breakdown),920,82,1500,1,none,medium,n,1,"Bing-medicare-advantage-100-related,FANOUT-4.3-MA-add-on-shape",qa-coverage
+does-medicare-advantage-cover-vision,Does Medicare Advantage Cover Vision in 2026?,720,62,1200,1,none,medium,n,2,"sibling-of-MA-dental,FANOUT-4.3-MA-add-on-shape",qa-coverage
+does-medicare-advantage-cover-hearing,Does Medicare Advantage Cover Hearing Aids in 2026?,820,72,1300,1,none,medium,n,1,"Bing-medicare-advantage-hearing-related,FANOUT-4.3-MA-add-on-shape",qa-coverage
+does-medicare-advantage-cover-gym,Does Medicare Advantage Cover Gym Memberships (SilverSneakers) in 2026?,620,52,950,2,none,low,n,2,"SilverSneakers-MA-supplemental-benefit,Bing-related",qa-coverage
+does-medicare-advantage-cover-meals,Does Medicare Advantage Cover Meal Delivery in 2026?,420,36,620,2,none,low,n,3,"CMS-MA-SSBCI-rule,Bing-related",qa-coverage
+does-medicare-advantage-cover-transportation,Does Medicare Advantage Cover Transportation in 2026?,380,32,580,2,none,low,n,3,"CMS-MA-supplemental-benefit-tracker",qa-coverage
+does-medicare-cover-flu-shot,Does Medicare Cover the Flu Shot in 2026?,720,62,1300,1,none,medium,n,2,"CMS-preventive-service-canonical,Bing-related",qa-coverage
+does-medicare-cover-rsv-vaccine,Does Medicare Cover the RSV Vaccine in 2026?,420,36,680,2,none,low,n,3,"CMS-Part-D-IRA-vaccine,Bing-related",qa-coverage
+does-medicare-cover-covid-shot,Does Medicare Cover the COVID Vaccine in 2026?,580,48,920,2,none,medium,n,2,"CMS-COVID-vaccine-coverage,Bing-related",qa-coverage
+does-medicare-cover-eyeglasses-after-cataract,Does Medicare Cover Eyeglasses After Cataract Surgery in 2026?,420,36,620,2,none,low,n,3,"CMS-post-cataract-eyewear-benefit,sibling-of-cataract",qa-coverage
+can-i-get-medicare-under-65,Can I Get Medicare Under 65 in 2026? (Disability / ESRD / ALS),920,82,1500,1,none,medium,n,1,"CMS-Medicare-disability-rule,SSA-SSDI-24-month-waiting-period,Bing-related",qa-coverage
+can-i-have-both-medicare-and-medicaid,Can I Have Both Medicare and Medicaid in 2026? (Dual Eligibility),820,72,1400,1,none,medium,n,1,"CMS-dual-eligible-tracker,Bing-medicaid-medicare-related",qa-coverage
+can-i-keep-medicaid-after-getting-job,Can I Keep Medicaid After Getting a Job in 2026?,520,45,820,2,slight,low,n,2,"BUSA-medicaid-working-overlap-app-intent,Bing-medicaid-working-related",qa-coverage
+can-i-get-aca-subsidy-with-medicaid-offer,Can I Get an ACA Subsidy If I Qualify for Medicaid in 2026?,420,36,680,2,none,low,n,2,"Healthcare.gov-Medicaid-Marketplace-overlap-rule,Bing-related",qa-coverage
+can-i-get-aca-subsidy-with-employer-offer,Can I Get an ACA Subsidy With an Affordable Employer Offer in 2026?,520,45,820,2,none,medium,n,2,"Healthcare.gov-affordability-rule-2026,family-glitch-fix",qa-coverage
+can-i-add-spouse-to-medicare,Can I Add My Spouse to My Medicare in 2026? (No: Why)),420,36,720,2,none,low,n,3,"Medicare.gov-individual-only-rule,Bing-related",qa-coverage
+can-i-keep-my-doctor-medicare-advantage,Can I Keep My Doctor If I Switch to Medicare Advantage in 2026?,620,52,950,1,none,medium,n,1,"FANOUT-4.3-MA-vs-Original-shape,competitor-landscape-3",qa-coverage
+can-i-switch-from-medicare-advantage-to-original,Can I Switch From Medicare Advantage Back to Original Medicare in 2026?,720,62,1200,1,none,medium,n,1,"Medicare.gov-MOEP-rule,FANOUT-4.3-MA-vs-Original",qa-coverage
+is-ozempic-covered-by-insurance,Is Ozempic Covered by Insurance in 2026? (Type 2 vs Weight Loss),1200,108,2200,1,none,medium,n,1,"Bing-ozempic-100-related-30k-volume,sibling-of-cost-page-already-shipped",qa-coverage
+is-wegovy-covered-by-insurance,Is Wegovy Covered by Insurance in 2026?,920,82,1700,1,none,medium,n,1,"Bing-wegovy-100-related,FANOUT-4.3",qa-coverage
+is-zepbound-covered-by-insurance,Is Zepbound Covered by Insurance in 2026?,720,62,1300,1,none,low,n,2,"GLP-1-class-extension,Bing-related-mounjaro-zepbound",qa-coverage
+is-medicare-free,Is Medicare Free in 2026? (Premium Breakdown by Part),920,82,1600,1,none,medium,n,1,"Bing-what-is-medicare-part-b-7243-broad,competitor-landscape-3-Medicare.gov",qa-coverage
+is-medicaid-free,Is Medicaid Free in 2026? (Premiums and Copays by State),620,52,1100,1,slight,low,y,2,"Bing-medicaid-related,scales-with-state-cost-sharing-rules",qa-coverage
+is-aca-still-available,Is ACA / Obamacare Still Available in 2026? (Policy Changes),720,62,1200,1,none,medium,n,1,"Bing-obamacare-20909-broad,2025-OBBB-eligibility-changes",qa-coverage
+who-qualifies-for-aca-subsidy,Who Qualifies for ACA Subsidies in 2026? (Income Cliff After 400% FPL),1100,98,1900,1,slight,medium,n,1,"BUSA-aca-eligibility-overlap-app-intent,2026-subsidy-cliff-restored",qa-coverage
+who-qualifies-for-extra-help-medicare,Who Qualifies for Medicare Extra Help (LIS) in 2026?,820,72,1300,1,slight,low,n,1,"Bing-extra-help-21942-broad-1939-strict,Bing-medicare-extra-help-6989-broad,CU-120-overlap",qa-coverage
+who-qualifies-for-msp,Who Qualifies for Medicare Savings Programs (QMB/SLMB/QI) in 2026?,920,82,1500,1,slight,low,n,1,"Bing-qmb-13183-broad,Bing-medicare-savings-program-7558-broad,CU-104-overlap",qa-coverage
+what-counts-as-income-for-medicaid,What Counts as Income for Medicaid in 2026? (MAGI Rules),720,62,1300,1,slight,medium,n,1,"BUSA-magi-overlap-tax-intent,Bing-medicaid-related,FANOUT-4.4-income-source-includes-table",qa-coverage
+what-counts-as-income-for-aca,What Counts as Income for ACA Subsidies in 2026?,620,52,1200,1,slight,medium,n,2,"BUSA-magi-aca-overlap,sibling-of-medicaid-income-MAGI",qa-coverage
+how-to-keep-medicaid-when-income-increases,How to Keep Medicaid When Your Income Increases in 2026? (Transitional Medicaid),420,36,720,2,slight,low,n,3,"BUSA-medicaid-working-overlap-app-intent,sibling-of-can-i-keep-medicaid",qa-coverage
+is-medicare-part-b-mandatory,Is Medicare Part B Mandatory in 2026? (Late Enrollment Penalty),620,52,1100,1,none,medium,n,1,"Bing-what-is-medicare-part-b-7243-broad,CMS-Part-B-LEP-rule",qa-coverage
+is-medicare-supplement-worth-it,Is Medicare Supplement (Medigap) Worth It in 2026?,620,52,1100,1,none,high,n,2,"FANOUT-4.8-MA-vs-Medigap-shape,competitor-landscape-7-NerdWallet",qa-coverage
+do-i-need-medicare-if-i-have-employer-insurance,Do I Need Medicare If I Have Employer Insurance in 2026?,720,62,1300,1,none,medium,n,1,"CMS-creditable-coverage-rule,Bing-related",qa-coverage
+do-i-need-part-d-if-i-have-employer-drug-coverage,Do I Need Medicare Part D If I Have Employer Drug Coverage in 2026?,420,36,720,2,none,low,n,3,"CMS-Part-D-creditable-coverage-rule,sibling-of-employer-medicare-overlap",qa-coverage
+what-happens-if-i-miss-medicare-enrollment,What Happens If I Miss My Medicare Enrollment Window in 2026?,580,48,950,1,none,medium,n,2,"CMS-IEP-GEP-rule,event-overlap-but-no-event-trigger",qa-coverage
+how-much-can-you-make-and-still-get-medicaid,How Much Can You Make and Still Get Medicaid in 2026?,820,72,1600,1,heavy,medium,n,1,"Bing-medicaid-income-limits-10631-broad,BUSA-overlap-shopping-intent-split,sibling-of-state-income-limits",qa-coverage

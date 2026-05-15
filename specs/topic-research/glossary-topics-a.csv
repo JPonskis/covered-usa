@@ -1,0 +1,65 @@
+topic,title_hint,demand_score,bing_impressions_weekly,google_monthly_volume,utilization_rank,busa_overlap,competitor_density,state_specific,priority,topic_type,sources,notes
+deductible,What Is a Deductible? 2026 ACA Health Plan Amounts,11003,11003,,,none,high,n,SHIPPED,single-term-definition,bing-GetKeyword-broad-13wk|hcgov-glossary,Already live; flag for Track-E ≤500-word downsize
+magi,What Is MAGI? Modified Adjusted Gross Income Explained,4963,4963,,,none,high,n,SHIPPED,single-term-definition,bing-GetKeyword-broad-13wk|hcgov-glossary|FANOUT-4-MAGI-queries,Already live; flag for Track-E downsize
+out-of-pocket-maximum,What Is an Out-of-Pocket Maximum? 2026 Limits Explained,762,59,,,none,high,n,SHIPPED,single-term-definition,bing-GetKeyword-broad-13wk|bing-related-deductible,Already live; flag for Track-E downsize
+medicare-advantage,What Is Medicare Advantage? 2026 Plans Explained,15046,15046,,,slight,high,n,1,single-term-definition,bing-GetKeyword-broad-13wk|hcgov-glossary,Highest single-term volume after head names; ctaTarget=screener
+medigap,What Is Medigap? Medicare Supplement Plans 2026,1034,1034,,,none,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk|medicare-gov-glossary,Strong head-term + funnel-aligned
+irmaa,What Is IRMAA? 2026 Income Brackets and Surcharges,7018,7018,,,none,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk|ssa-gov,Real Bing demand + IRMAA chart 2026 (8.2k broad) is companion 2-hop
+irmaa-chart-2026,IRMAA Chart 2026: Part B and Part D Surcharge Brackets,8195,631,,,none,medium,n,1,single-term-definition,bing-GetRelatedKeywords-irmaa-2026,Companion to irmaa; year-anchored table page
+medicaid,What Is Medicaid? 2026 Eligibility and Coverage Overview,92582,92582,,,heavy,high,n,3,single-term-definition,bing-GetKeyword-broad-13wk|busa-overlap-378-articles,Too broad + heavy BUSA overlap; priority 3 = link-target only
+chip,What Is CHIP? Children's Health Insurance Program 2026,40356,40356,,,heavy,high,n,3,single-term-definition,bing-GetKeyword-broad-13wk|busa-CHIP-articles,Heavy BUSA overlap; link-target only
+hsa,What Is an HSA? 2026 Contribution Limits and Rules,47470,47470,,,slight,high,n,1,single-term-definition,bing-GetKeyword-broad-13wk|irs-gov,Big-volume term with HDHP funnel intent; ctaTarget=analyzer
+fsa,What Is an FSA? 2026 Limits and Eligible Expenses,20910,20910,,,none,high,n,1,single-term-definition,bing-GetKeyword-broad-13wk|irs-gov,Big-volume; ctaTarget=analyzer
+hra,What Is an HRA? Health Reimbursement Arrangement 2026,12729,12729,,,none,medium,n,2,single-term-definition,bing-GetKeyword-broad-13wk|irs-gov,Mid-volume; pair with HRA-vs-HSA comparison
+cobra,What Is COBRA? 2026 Health Insurance Continuation Rules,18151,18151,,,slight,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk|cobra-vs-marketplace-busa,Funnel-critical (job-loss path)
+hmo,What Is an HMO? 2026 Plan Type Explained,3624,3624,,,none,high,n,2,single-term-definition,bing-GetKeyword-broad-13wk|hcgov-glossary,Lower than expected after disambiguation
+ppo,What Is a PPO? 2026 Plan Type Explained,6552,6552,,,none,high,n,2,single-term-definition,bing-GetKeyword-broad-13wk|ppo-meaning-related,PPO meaning gets 3.1k broad
+epo,What Is an EPO Health Plan? 2026 Coverage Rules,1397,1397,,,none,medium,n,2,single-term-definition,bing-GetKeyword-broad-13wk,Mid-volume; needs HMO/PPO comparison framing
+coinsurance,What Is Coinsurance? 2026 Examples and How It Works,1609,1609,,,none,high,n,2,single-term-definition,bing-GetKeyword-broad-13wk|coinsurance-definition-2.4k,Real Bing demand
+copay,What Is a Copay? Health Insurance Copayments Explained,17030,17030,,,none,high,n,3,single-term-definition,bing-GetKeyword-broad-13wk,Bing broad-match polluted by drug copay-cards; priority 3 (write as analyzer-bait)
+formulary,What Is a Drug Formulary? 2026 Tiers and Coverage Explained,5965,5965,,,none,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk|cms-gov-formulary,Strong Bing demand + analyzer funnel
+prior-authorization,What Is Prior Authorization? 2026 Rules and How to Appeal,14464,14464,,,slight,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk|cms-gov,High demand + analyzer-aligned (cost-pain question)
+step-therapy,What Is Step Therapy? 2026 Insurance Rules,116,116,,,none,low,n,2,single-term-definition,bing-GetKeyword-broad-13wk,Mid-volume + analyzer angle
+balance-billing,What Is Balance Billing? 2026 No Surprises Act Protections,123,123,,,none,low,n,2,single-term-definition,bing-GetKeyword-broad-13wk|cms-no-surprises-act,Demand bar barely met; analyzer-bait
+no-surprises-act,What Is the No Surprises Act? 2026 Protections from Surprise Bills,375,375,,,slight,low,n,1,single-term-definition,bing-GetKeyword-broad-13wk|cms-gov,Analyzer-funnel-aligned + Bing-validated
+eob,What Is an EOB? Reading Your Explanation of Benefits in 2026,1206,1206,,,none,low,n,1,single-term-definition,bing-GetKeyword-broad-13wk,Analyzer-funnel-aligned (bill literacy)
+qmb,What Is QMB? Qualified Medicare Beneficiary Program 2026,921,921,,,none,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk|qmb-medicaid-benefits-526,Medicare Savings Program funnel
+slmb,What Is SLMB? Specified Low-Income Medicare Beneficiary 2026,255,255,,,none,low,n,2,single-term-definition,bing-GetKeyword-broad-13wk,Companion to QMB
+medicare-savings-program,What Is the Medicare Savings Program? 2026 QMB SLMB QI,536,536,,,none,low,n,1,single-term-definition,bing-GetKeyword-broad-13wk|cms-msp,Cluster head for QMB/SLMB/QI
+extra-help-lis,What Is Extra Help (LIS)? 2026 Part D Low-Income Subsidy,3314,255,,,none,low,n,1,single-term-definition,bing-related-medicare-extra-help|lis-43k-broad,LIS is funnel-critical for Part D
+federal-poverty-level,What Is the Federal Poverty Level? 2026 FPL Guidelines,1947,1947,,,heavy,high,n,3,single-term-definition,bing-GetKeyword-broad-13wk|busa-FPL-articles,Heavy BUSA overlap; link-target only
+premium-tax-credit,What Is the Premium Tax Credit? 2026 ACA Subsidy Rules,303,303,,,slight,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk|irs-form-8962-8.8k-related,Screener funnel critical
+special-enrollment-period,What Is a Special Enrollment Period? 2026 SEP Rules,124,124,,,slight,medium,n,2,single-term-definition,bing-GetKeyword-broad-13wk,Borderline demand; needed as link target for event-template
+qualifying-life-event,What Is a Qualifying Life Event? 2026 SEP Triggers,176,176,,,none,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk,Strong link target for event-template fan-out
+hdhp,What Is an HDHP? 2026 High-Deductible Health Plan Rules,571,571,,,none,medium,n,1,single-term-definition,bing-GetKeyword-broad-13wk|hdhp-2.5k-strict,Funnel-aligned (HSA pairing)
+high-deductible-health-plan,High-Deductible Health Plan (HDHP) Explained 2026,276,276,,,none,medium,n,2,single-term-definition,bing-GetKeyword-broad-13wk|hcgov-glossary,Long-form variant of hdhp slug; possibly fold into one page
+catastrophic-health-plan,What Is a Catastrophic Health Plan? 2026 ACA Eligibility Rules,99,99,,,none,low,n,2,single-term-definition,bing-related-catastrophic-1296,Borderline; under-30 demographic angle
+gap-coverage-medicare,What Is the Medicare Coverage Gap (Donut Hole)? 2026 Rules,547,547,,,none,medium,n,1,single-term-definition,bing-related-what-is-gap-coverage,IRA-2025-eliminated-donut-hole angle = link magnet
+deductible-vs-copay,Deductible vs Copay: 2026 Health Insurance Differences Explained,270,21,,,none,medium,n,1,comparison-2hop,bing-GetKeyword-broad-13wk,2-hop comparison; Bing-validated
+deductible-vs-coinsurance,Deductible vs Coinsurance: 2026 How They Work Together,260,55,,,none,medium,n,1,comparison-2hop,bing-related-copay-vs-deductible-294|coinsurance-related,2-hop; inferred from copay-vs-deductible and coinsurance variants
+copay-vs-coinsurance,Copay vs Coinsurance: 2026 Differences with Examples,585,45,,,none,medium,n,1,comparison-2hop,bing-GetKeyword-broad-13wk,2-hop; Bing-validated
+deductible-vs-out-of-pocket-maximum,Deductible vs Out-of-Pocket Maximum: 2026 How They Differ,762,59,,,none,medium,n,1,comparison-2hop,bing-GetKeyword-broad-13wk,2-hop; explicitly called out in competitor-landscape §4
+copay-deductible-coinsurance,"Copay vs Deductible vs Coinsurance: 2026 Health Insurance Terms Explained",1500,80,,,none,medium,n,1,comparison-2hop,already-queued-CU-149|bing-cluster,Already queued in sheet; merges 3 head terms
+hmo-vs-ppo,HMO vs PPO: 2026 Plan Type Differences Explained,7242,557,,,none,high,n,1,comparison-2hop,bing-GetKeyword-broad-13wk,Highest 2-hop volume in glossary; CRITICAL write
+epo-vs-ppo,EPO vs PPO: 2026 Plan Type Differences Explained,1769,136,,,none,medium,n,1,comparison-2hop,bing-GetKeyword-broad-13wk,Strong 2-hop demand
+hmo-vs-ppo-vs-epo,HMO vs PPO vs EPO: 2026 Plan Type Comparison,2027,156,,,none,medium,n,2,comparison-2hop,bing-GetKeyword-broad-13wk|hmo-ppo-7.2k-broad,3-way variant; useful link target
+hdhp-vs-ppo,HDHP vs PPO: 2026 High-Deductible vs Traditional Plan,372,29,,,none,medium,n,1,comparison-2hop,bing-related-hdhp-vs-ppo,2-hop validated
+hsa-vs-fsa,HSA vs FSA: 2026 Which Health Savings Account Is Better,200,15,,,slight,high,n,1,comparison-2hop,bing-fsa-hsa-clusters|already-queued-CU-175,Already-queued; high search intent despite low strict (heavily polluted)
+hsa-vs-hra,HSA vs HRA: 2026 Differences and How to Choose,250,19,,,none,medium,n,2,comparison-2hop,bing-hsa-hra-clusters,2-hop pair completion
+fsa-vs-hra,FSA vs HRA: 2026 Account Differences for Employees,150,12,,,none,medium,n,2,comparison-2hop,bing-fsa-hra-clusters,2-hop pair completion
+magi-vs-agi,MAGI vs AGI: 2026 Income Definitions for ACA and Taxes,579,45,,,none,low,n,1,comparison-2hop,bing-GetKeyword-broad-13wk,2-hop demand confirmed; critical for ACA subsidy questions
+medicare-advantage-vs-medigap,Medicare Advantage vs Medigap: 2026 Which Is Better for You,776,60,,,none,medium,n,1,comparison-2hop,bing-related-medicare-advantage-vs-medigap,2-hop validated; broker-funnel-critical
+original-medicare-vs-medicare-advantage,Original Medicare vs Medicare Advantage: 2026 Comparison,870,67,,,slight,medium,n,1,comparison-2hop,already-queued-CU-209|bing-related-870,Already-queued; broker-funnel-critical
+medicare-vs-medicaid,Medicare vs Medicaid: 2026 Differences Explained,1200,92,,,heavy,medium,n,1,comparison-2hop,bing-cluster|busa-overlap,High demand but heavy BUSA overlap; intent-split angle = CoveredUSA does eligibility/shopping
+medicaid-vs-private-insurance,Medicaid vs Private Insurance: 2026 Which Is Better,500,38,,,slight,medium,n,2,comparison-2hop,already-queued-CU-167,Already-queued; weaker than medicare-vs-medicaid
+medicaid-vs-chip,Medicaid vs CHIP: 2026 Family Coverage Differences,400,31,,,heavy,medium,n,3,comparison-2hop,bing-cluster|busa-CHIP-overlap,Heavy BUSA overlap; link-target only
+bronze-silver-gold,"Bronze vs Silver vs Gold Health Plans: 2026 ACA Metal Tier Differences",763,59,,,none,medium,n,1,comparison-2hop,already-queued-CU-151|bing-silver-plan-763,Already-queued; metal-tier 2-hop
+silver-vs-gold,Silver vs Gold ACA Plans: 2026 Cost vs Coverage Tradeoff,180,14,,,none,low,n,2,comparison-2hop,bing-cluster|metal-tier-research,Sub-variant of bronze-silver-gold
+bronze-vs-silver,Bronze vs Silver ACA Plans: 2026 CSR Loss Analysis,200,15,,,slight,low,n,2,comparison-2hop,bing-cluster|already-queued-CU-128,Companion to bronze-silver-gold
+cobra-vs-marketplace,COBRA vs Marketplace: 2026 After-Job-Loss Coverage Comparison,500,38,,,heavy,medium,n,1,comparison-2hop,already-queued-CU-285|busa-cobra-vs-marketplace-direct-dupe,BUSA has exact dupe; do via intent-split (eligibility/cost focus) or skip
+qmb-vs-slmb,QMB vs SLMB vs QI: 2026 Medicare Savings Program Tiers,200,15,,,none,low,n,2,comparison-2hop,bing-msp-cluster,Companion to medicare-savings-program
+in-network-vs-out-of-network,"In-Network vs Out-of-Network: 2026 Cost Differences",1651,127,,,none,medium,n,2,comparison-2hop,bing-GetKeyword-broad-13wk-out-of-network,Cost-focused; analyzer funnel
+premium-vs-deductible,Premium vs Deductible: 2026 Health Insurance Cost Breakdown,200,15,,,none,medium,n,2,comparison-2hop,bing-cluster|deductible-vs-premium,Common confusion; secondary
+medicare-part-c-vs-part-d,Medicare Part C vs Part D: 2026 Coverage Differences,150,12,,,none,medium,n,2,comparison-2hop,bing-cluster|medicare-part-d-31k-broad,Borderline; useful link target
+medigap-plan-g-vs-plan-n,Medigap Plan G vs Plan N: 2026 Coverage and Premium Differences,200,15,,,none,medium,n,2,comparison-2hop,bing-medigap-1k-broad|cluster,Niche but high-intent senior funnel
+medicare-vs-employer-insurance,Medicare vs Employer Insurance at 65: 2026 Which to Keep,300,23,,,slight,medium,n,1,comparison-2hop,already-queued-CU-129,Already-queued; broker-funnel
