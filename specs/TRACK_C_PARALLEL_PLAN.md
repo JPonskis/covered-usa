@@ -1,11 +1,28 @@
-# Track C Parallel Execution Plan — 7 Template Writer + Verifier Rewrites
+# Track C Parallel Execution Plan — Master Brief (v1.3)
 
-**Version:** 1.2 (Track C-prime — adds verifier rewrites alongside writer rewrites)
+**Version:** 1.3 (Track C-prime + load-test learnings + per-template PRD index)
 **Date:** 2026-05-14
-**Status:** Plan complete; ready for parallel-session execution
-**Prerequisite:** Track B1 (blog writer rewrite) shipped — commits `226a884` + `e32f344` + `9e85861`. MA-state writer + verifier proven on Florida (Track C, this same date). Read `FANOUT_FORMULA.md` + the B1 memory entry first (`feedback_b1_blog_writer_shipped.md`) to inherit the lessons learned.
+**Status:** Plan complete; per-template PRDs at `specs/track-c-prime/<template>-prd.md`; ready for parallel-session execution
+**Prerequisite:** Track B1 (blog writer rewrite) shipped — commits `226a884` + `e32f344` + `9e85861`. MA-state writer + verifier shipped + load-tested at 4-state scale (FL/NY/MI/OH/PA all live).
 
-**v1.2 changes (Track C-prime):** Each per-template plan now ships writer AND matching verifier as one atomic deliverable. Phase 4.5 added between Phase 4 (test cycle) and Phase 5 (activation) for verifier update. Reference implementations: `coveredusa-article-verifier` (daily blog) and `coveredusa-ma-state-verifier` already updated to the new pattern — copy their structure for the 7 remaining template verifiers.
+**Read these first (non-negotiable):**
+1. This doc through §4 (shared framing + 4-phase pattern) + §3 Phase 4.5 (verifier scope) + §6 (held-queue mechanism)
+2. `specs/track-c-prime/<your-template>-prd.md` — your template-specific brief (NEW per v1.3)
+3. `feedback_b1_blog_writer_shipped.md` memory entry (B1 lessons learned)
+4. The 3 reference implementations:
+   - `.claude/agents/coveredusa-article-writer.md` (B1 — daily blog)
+   - `.claude/agents/coveredusa-ma-state-writer.md` (Track C — state MA)
+   - `.claude/agents/coveredusa-article-verifier.md` + `.claude/agents/coveredusa-ma-state-verifier.md` (Track C-prime)
+
+**v1.3 changes (load-test learnings):**
+- Each per-template plan §5.X now points at a dedicated PRD at `specs/track-c-prime/<template>-prd.md` (more depth than the §5.X summary; self-contained for fresh agents)
+- Added §1.5 "What Track C-prime taught us tonight" — concrete examples from the FL/NY/MI/OH/PA load test
+- Added §6 "Held-queue mechanism" — full spec for the Stage 1 cron's HOLD path + Stage 2 file-move + glob exclusion
+- Updated §7 with PASS/WARN/FAIL/HOLD routing per gate + worked examples
+- Added §3.5 "Default-toward-ship preference" — Jacob's bar (95/4/1 distribution; verifier exists to catch drift, not to bottleneck the cron)
+- Added Appendix A "Real-world drift case studies" — the Florida $8, MI invalid href, OH `--`, NY logical contradiction, PA PACENET cases
+- Added Appendix B "Writer-leaks pattern" — 4 documented cases where the writer claimed gates pass but the verifier found otherwise
+- Updated Phase 4.5 with the 3 verifier patches we shipped after the load test (GATE F count strict, keyTerms shape, GATE D auto-fix hoist)
 
 ---
 
@@ -30,6 +47,29 @@ Sessions execute the 4-phase pattern from §3 against their assigned template, c
 **Parallelization is genuinely safe** because no two templates touch the same files. Coordination rules in §4.
 
 **The proprietary asset is the FORMULA.** Every writer prompt is an application of the formula to a specific content surface. The formula doesn't change template-to-template; the recipe does.
+
+---
+
+## 1.5 What Track C-prime taught us tonight
+
+Track C MA-state shipped on 2026-05-14 — Florida produced first, then a 4-state load test (NY/MI/OH/PA). Both writer and verifier were rewritten to formula-aligned + dual-purpose. Five concrete lessons came out of it that change how the next 6 sessions should work:
+
+**Lesson 1 — The verifier IS the safety net for numeric drift; assume the writer will hallucinate.**
+Florida's writer claimed `averageMonthlyPremium = 8` in 10 different fields (meta, hero, quickAnswer, FAQ, prose) when CMS says $2.11. The writer's OWN source citation correctly cited $2.11 — then it wrote $8 anyway. The verifier caught and auto-fixed all 10 occurrences. **Implication for your session:** the writer's research ≠ the writer's output. Don't trust gate self-reports; the verifier is non-optional.
+
+**Lesson 2 — Writer-side GATES are necessary but not sufficient.**
+PA + MI both reported "all 8 gates PASS" in their STEP 8 return JSON. Verifier disagreed: PA had 3 detailSections (need ≥4), MI had `/medicare-part-d` invalid href. The writer was wrong about its own work. **Implication:** verifier-side gates are independent verification, not redundancy. Both layers matter.
+
+**Lesson 3 — Default toward auto-ship; HOLD is rare.**
+Across 4 load-test articles + 4 B1 retests, ZERO false HOLDs. ~95% auto-ship, ~4% ship-with-flag, ~1% HOLD is the realistic distribution. Don't tighten thresholds out of fear; calibrate them to actually-broken output.
+
+**Lesson 4 — Verifier prompts can drift on enforcement.**
+The verifier we updated for daily blog correctly auto-fixed 16 `--` instances across 4 B1 articles (GATE D worked). But the SAME verifier on Ohio MA-state shipped 11 unfixed `--` because it interpreted them as Category J informational instead of GATE D auto-fix. Same prompt, different output. **Implication:** "AUTO-FIX MANDATORY" framing must be loud + repeated; "fix as style correction" framing reads as advisory and gets skipped.
+
+**Lesson 5 — Real drift the verifier catches saves real face.**
+PA's PACENET income limits in the writer's output were $23,500 single / $31,500 couple — pre-Act-94-of-2021 figures. Real CMS values are $33,500 / $41,500. NY's prose said "53% penetration is above the national average of 54%" (logically impossible). These are the kind of errors that erode trust if shipped. The verifier found them. Without the verifier they'd be live now.
+
+These 5 lessons inform every per-template PRD in `specs/track-c-prime/`. Read your PRD. Don't skip the verifier work.
 
 ---
 
@@ -178,6 +218,24 @@ For each output:
 
 **Expect to iterate.** B1 first-pass produced 4/5 articles with year-in-slug despite the rule being in the prompt. The fix was tightening the writer prompt with hard-reject GATES at STEP 6, then re-testing the failing case. Budget 30-60 min for one iteration round.
 
+### Phase 3.5 — Default-toward-ship preference (read before Phase 4)
+
+Jacob's bar: **the system runs automatically.** The verifier exists to catch drift, not to bottleneck the cron. Expected runtime distribution across hundreds of cron-produced articles:
+
+- **~95% auto-ship clean** — verifier checks pass, no edits needed (or only narrow numeric Edits applied)
+- **~4% ship with LOW/MEDIUM flag** — verifier flags an item for the weekly review queue but the article still ships; no Telegram notification (would be too noisy)
+- **~1% HOLD** — verifier finds a HIGH structural failure (year-in-slug, missing required section, 0-1 .gov citations); article moves to `_held/` subdir, Telegram notification fires, Jacob un-holds manually OR regenerates via writer
+
+**Calibrate gates accordingly:**
+- HOLD only on genuine breakage that degrades the page (visible URL bug, missing required section, fabricated entity, ≤1 source). Anything else flags + ships.
+- Numeric drift: auto-fix and ship. Don't HOLD for fixable numbers.
+- Style issues (`--`, em-dash): auto-fix and ship. Don't HOLD.
+- Voice/style preferences: don't touch. Verifier doesn't rewrite prose.
+
+**The cost of over-strictness is real.** If 10% of articles HOLD, Jacob gets 1+ Telegram notifications per cron tick (3x daily = 3+/day), the un-hold workflow becomes a daily burden, and the cron loses its "set and forget" property. The cost of under-strictness is a small drift slipping through to production — recoverable on the next regen.
+
+**When in doubt: default toward ship.** Better to ship with a LOW flag in the queue than to HOLD a fixable article.
+
 ### Phase 4.5 — Verifier update (~30-45 min) — NEW per Track C-prime
 
 After the writer ships and 5 test articles pass, **update the matching verifier agent** to mirror the writer's new structural rules. This is mandatory — without it, the writer enforces structural rules at write-time but the verifier can't detect drift in production output. Pattern proven on `coveredusa-article-verifier` (daily blog) and `coveredusa-ma-state-verifier` already.
@@ -199,13 +257,21 @@ After the writer ships and 5 test articles pass, **update the matching verifier 
 6. **Add CRITICAL RULE:** structural gates are DETECT-ONLY (except GATE D auto-fix); never write missing sections.
 7. **Add CRITICAL RULE:** default toward auto-ship per Jacob's preference. Don't be the bottleneck.
 
+**3 mandatory patches per the post-load-test learnings (apply to BOTH writer and verifier):**
+
+1. **GATE F count strictness (writer side):** if your template requires N detailSections, write a strict count check `if (JSON.parse(file).detailSections.length < N) REJECT`. Don't trust the writer to count. PA + MI both shipped with detail_section_count = 3 (need ≥4) because the writer interpreted "≥4" as a soft preference. Strict count check fixes it.
+
+2. **`keyTerms` shape example (writer side):** writer must emit `keyTerms` as `{en: [...], es: [...]}` object, NOT a flat array. MI + OH writers emitted flat arrays that triggered `content-quality.js` warnings. Embed the exact JSON shape template in the writer prompt + an explicit "do NOT emit flat array" rule.
+
+3. **GATE D auto-fix hoist (verifier side):** the verifier must AUTO-FIX `--` instances (same logic as em-dash), NOT mark them as Category J informational. Use "AUTO-FIX MANDATORY" framing + a "Common verifier error" callout that names the Ohio failure mode (verifier saw 11 `--` instances and marked them informational instead of fixing). The hoist matters because verifier prompts naturally read "auto-fix as style correction" as advisory; explicit "MANDATORY" + worked-example framing fixes it.
+
 **Verification of the verifier update:**
 - Run the updated verifier on the 5 test articles from Phase 4. Expected: all pass without spurious HOLDs (since they were just produced by the writer and meet the structural bar).
 - If any spurious HOLD: tighten the verifier prompt before shipping. Common over-fire: GATE B applied to non-income-gated topic; GATE C counted plain-text mentions instead of hyperlinks.
 
 **Reference implementations** (read these before writing your verifier update):
-- `.claude/agents/coveredusa-article-verifier.md` (Track C-prime updated, daily blog)
-- `.claude/agents/coveredusa-ma-state-verifier.md` (Track C-prime updated, MA-state)
+- `.claude/agents/coveredusa-article-verifier.md` (Track C-prime updated + 3 patches applied, daily blog)
+- `.claude/agents/coveredusa-ma-state-verifier.md` (Track C-prime updated + 3 patches applied, MA-state)
 - `.claude/agents/coveredusa-<template>-verifier.bak.md` (backup of pre-update verifier — for reference, do NOT restore unless rolling back)
 
 ### Phase 5 — Activation + commit (~30 min)
@@ -509,7 +575,73 @@ If you rewrite any of these as part of Track C glossary work, you violate the sl
 
 ---
 
-## 6. Test articles + pass criteria (universal)
+## 5.X' — Per-template PRD pointers (NEW per v1.3)
+
+Each template now has a dedicated PRD at `specs/track-c-prime/<template>-prd.md`. The PRD is the SELF-CONTAINED brief for a fresh parallel session. The §5.X summaries above are kept for backward-reference but the authoritative spec is in the PRD.
+
+| Template | PRD path | Reference |
+|---|---|---|
+| Procedure | `specs/track-c-prime/procedure-prd.md` | (reference template — most-detailed PRD; copy patterns from this) |
+| Drug | `specs/track-c-prime/drug-prd.md` | iraNegotiation render bug already fixed (commit `1fb5fb9`) |
+| Persona | `specs/track-c-prime/persona-prd.md` | synonym density requirement (≥5 per page) |
+| Event | `specs/track-c-prime/event-prd.md` | HowTo schema; em-dash purge extra-strict |
+| Q&A | `specs/track-c-prime/qa-prd.md` | subtype dispatch (coverage vs state-eligibility); most architecturally complex |
+| Glossary | `specs/track-c-prime/glossary-prd.md` | DOWNSCOPE work — ≤500 words; do NOT touch existing magi/deductible/oop-max slugs |
+
+**MA-state PRD is not needed** — that template shipped via Track C earlier today. Use `coveredusa-ma-state-writer.md` and `coveredusa-ma-state-verifier.md` as reference implementations.
+
+**Index doc:** `specs/track-c-prime/README.md` lists all 6 PRDs + master brief + recommended read order.
+
+---
+
+## 6. Held-queue mechanism (Stage 1 cron + _held/ subdir)
+
+The held-queue path is what gives the verifier teeth. Without it, `status: "held"` is just a string in a JSON return — no downstream consequence. With it, HELD articles actually don't ship + Telegram-notify Jacob.
+
+### How it works (full flow)
+
+1. **Stage 1 cron STEP 4.5** spawns the verifier per article. Verifier returns one of: `approved`, `corrected`, `flagged`, `held`, `error`.
+2. **Stage 1 cron STEP 5** routes by status:
+   - `approved` / `corrected` → sheet status "Written" (Stage 2 will deploy)
+   - `flagged` / `error` → sheet status "Needs Review" (Stage 2 skips by glob; human un-holds)
+   - `held` → sheet status "Held" + failure reason in Notes col + **MOVE the .md file** from `content/blog/<slug>.md` to `content/blog/_held/<slug>.md`
+3. **Stage 2 cron** runs ~1 hour later. Its grep glob is `content/blog/*.md` — does NOT recurse into subdirectories. Articles in `_held/` are invisible to the deploy step.
+4. **Telegram notification** fires via Stage 1's existing `notify: true` cron header. The Stage 1 report includes a "🛑 HELD" section listing each held article + failure reason + recommended action.
+5. **Un-holding** is manual: Jacob reviews the failure reason, either (a) regenerates the article via writer (fixes the structural issue), (b) manually edits and `mv`s back to main blog dir, or (c) overrides-ships if the verifier was wrong.
+
+### Why this design
+
+- **Defensible default.** "Don't ship broken work" is the conservative choice. HOLD blocks deploy; everything else ships.
+- **Verifier doesn't write prose.** Held articles regenerate via writer (which has the GATES), not via verifier (which would drift from the writer's voice).
+- **Glob exclusion is mechanical.** No code change to Stage 2 — just a file-system convention. `_held/` is a hidden-by-glob subdir.
+- **Sheet status as audit trail.** "Held" status in Google Sheet preserves the row + failure reason; un-holding updates the status back to "Written" + Stage 2 picks it up next tick.
+
+### What triggers HELD (HIGH structural failures only)
+
+- **GATE A** (year in slug): always HOLD — slug is a visible URL bug; only fix is regen with new slug
+- **GATE B** (income-gated topic, table totally absent): HOLD — required structural section missing
+- **GATE C** (0 or 1 .gov citations): HOLD — article is unsourced
+- **GATE E/F** (template-specific required section absent): HOLD — required structural section missing
+- **Anything else**: ship + flag (don't HOLD)
+
+### What does NOT trigger HELD
+
+- Numeric drift → auto-fix and ship
+- Ambiguous numeric claim → ship + flag
+- Style issues (`--`, em-dash) → auto-fix and ship
+- Pronoun discipline violations (1-3) → ship + LOW flag
+- Pronoun discipline violations (4+) → ship + MEDIUM flag (writer-side issue, regen on next pass)
+- State-context boundary leaks → ship + LOW/MEDIUM flag
+- Schema validator warnings (`keyTerms` shape, etc.) → ship + flag
+- Source URL 404 → flag (don't auto-replace)
+
+### Test fire (validated 2026-05-14)
+
+Held queue mechanism was test-fired with a synthetic article (`test-held-queue-2026.md` with intentional year-in-slug). Verifier returned `status: "held"` with `gates_failed: [{gate: "A", ...}]`. File-move-to-_held/ logic + Stage 2 *.md glob exclusion both validated. Test artifact deleted after.
+
+---
+
+## 6.5 Test articles + pass criteria (universal)
 
 Every template's Phase 4 follows the same shape:
 
@@ -592,3 +724,98 @@ If anything in this doc is unclear, surface it to Jacob BEFORE proceeding. Don't
 ---
 
 *This is the plan. Self-contained, verification-first, audit-grounded, parallel-execution-ready. Multiple Claude Code sessions can execute simultaneously without collision. The proprietary asset is the formula; each template is just an application.*
+
+---
+
+## Appendix A — Real-world drift case studies (from the 2026-05-14 load test)
+
+These are the actual factual + structural drift cases the new verifier caught during the FL/NY/MI/OH/PA load test. Read them — they're concrete examples of the kind of thing the verifier exists to prevent shipping. Each one would have eroded user trust if shipped uncaught.
+
+**Case 1 — Florida `averageMonthlyPremium` $8 → $2 (4x error in 10 places)**
+- Writer claimed $8/mo across `marketOverview`, `meta.description`, `hero.subhero`, `quickAnswer`, all FAQ answers, multiple detailSection paragraphs.
+- CMS 2026 MA/Part D Landscape State Fact Sheet: $2.11/mo for Florida.
+- **Most damning detail:** the writer's OWN source citation note correctly cited $2.11. It cited the right number then wrote $8 in every prose location anyway.
+- Verifier auto-fixed all 10 occurrences. Florida shipped clean.
+- **Implication for your session:** numeric drift can be 4x and still pass writer self-check. Verifier is the safety net.
+
+**Case 2 — New York logical contradiction "53% above 54%"**
+- Writer prose said: "That penetration rate is above the national average of 54%". Penetration rate field: 53%. 53 < 54.
+- Writer made a logically-impossible claim and shipped it confidently.
+- Verifier caught it during STEP 1A internal-consistency pre-check. Auto-fixed to "just below the national average of 54%" in both EN and ES.
+- **Implication:** writers can confidently emit logically-impossible claims; verifier's internal-consistency pass exists to catch these.
+
+**Case 3 — Pennsylvania PACENET income limits drift ($23,500 → $33,500)**
+- Writer claimed PACENET single income limit = $23,500, couple = $31,500. Real CMS values: $33,500 single, $41,500 couple (Act 94 of 2021, effective Feb 2022).
+- Writer's training data had pre-Act-94 figures; writer didn't web-search to verify.
+- Verifier WebSearched PA.gov + PHLP.org, confirmed correct values, auto-fixed all 4 instances (EN + ES stateExtras, EN + ES FAQs).
+- **Implication:** statute-driven income limits change yearly+; writer training data goes stale. Verifier WebSearch is non-optional for this class of claim.
+
+**Case 4 — Michigan invalid `/medicare-part-d` href**
+- Writer added a relatedLink to `/medicare-part-d`. That route doesn't exist in the CoveredUSA app (no page builds at that path).
+- Writer didn't validate href against the canonical VALID_HREF_PREFIXES list in `validate-medicare-advantage.js`.
+- Verifier flagged as MEDIUM (couldn't auto-fix because no clear replacement existed). Manually dropped the link entry.
+- **Implication:** if the build validator (`scripts/validate-*.js`) would reject the field, the verifier should HOLD, not flag MEDIUM. Patch this in your verifier prompt.
+
+**Case 5 — Ohio 11 unfixed `--` double-hyphens**
+- Writer shipped 11 `--` instances throughout body prose.
+- Verifier saw them, marked them as "Category J style — informational, not blocking", did NOT auto-fix.
+- Article would have shipped with rendered em-dashes in production typography (visual style violation).
+- Manually fixed via `replace_all " -- " → ", "`.
+- **Root cause:** verifier prompt's GATE D auto-fix instruction was too soft. Track C-prime patches hoisted GATE D auto-fix above Category J advisory framing with "AUTO-FIX MANDATORY" + worked-example callouts.
+- **Implication:** style fixes that are surgical + safe to auto-edit MUST fire as auto-fix, not as informational notes. Hoist the framing in your verifier prompt.
+
+---
+
+## Appendix B — Writer-leaks pattern (writer claims gates pass; verifier disagrees)
+
+Across the 4-state load test, writer self-reports of "all gates pass" were UNRELIABLE. Concrete leaks:
+
+- **PA writer:** "All 8 Gates pass" + `detail_section_count: 3`. Spec requires ≥4. Writer interpreted "≥4" as advisory.
+- **MI writer:** "Gate H: PASS" + included invalid `/medicare-part-d` href. Writer didn't check VALID_HREF_PREFIXES.
+- **OH writer:** "Gate D: PASS" + 11 `--` instances in prose. Writer's own grep didn't fire.
+- **NY writer:** "All gates pass" + introParagraphs[2] opened with "This guide" (pronoun violation, GATE G). Florida had the same issue (introParagraphs[2] opened with "This").
+
+**The pattern:** writers misinterpret "soft" gate language ("≥4" / "should not start with") as advisory rather than strict. They also under-grep their own output. **The fix is at the verifier:** independent gate checks + REJECT-on-fail framing. Don't rely on writer self-report; verify externally.
+
+---
+
+## Appendix C — Quick reference: file paths every parallel session needs
+
+```
+# Master brief (this doc)
+projects/covered-usa/specs/TRACK_C_PARALLEL_PLAN.md
+
+# Per-template PRDs (read your one)
+projects/covered-usa/specs/track-c-prime/<template>-prd.md
+projects/covered-usa/specs/track-c-prime/README.md  # index
+
+# Universal infrastructure (DO NOT MODIFY)
+.claude/agents/_universal-rules-block.md
+projects/covered-usa/specs/FANOUT_FORMULA.md
+projects/covered-usa/specs/URL_SLUG_FRAMEWORK.md
+projects/covered-usa/specs/LINK_TARGET_MANIFEST.md
+projects/covered-usa/content/link-index.json
+projects/covered-usa/scripts/lib/content-quality.js
+
+# Reference implementations (READ — DO NOT MODIFY in your session)
+.claude/agents/coveredusa-article-writer.md       # B1 daily blog writer
+.claude/agents/coveredusa-article-verifier.md     # daily blog verifier (Track C-prime)
+.claude/agents/coveredusa-ma-state-writer.md      # Track C MA-state writer
+.claude/agents/coveredusa-ma-state-verifier.md    # Track C MA-state verifier (Track C-prime)
+
+# Your template's files (THIS is what you modify)
+.claude/agents/coveredusa-<template>-writer.md
+.claude/agents/coveredusa-<template>-verifier.md
+projects/covered-usa/content/data/<template-dir>/  # output directory for test articles
+
+# Memory (READ before starting)
+~/.claude/projects/-Users-jacobposner-clawd/memory/feedback_b1_blog_writer_shipped.md
+
+# Audit findings for your template
+projects/covered-usa/content/fanout/analysis/audit-<template>-writer.json
+
+# Output paths for your Phase 1 + 3 deliverables
+projects/covered-usa/content/fanout/analysis/c-<template>-requirements-matrix.md
+projects/covered-usa/content/fanout/analysis/c-<template>-verifier-{a,b,c}.md
+```
+
