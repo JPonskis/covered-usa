@@ -410,9 +410,16 @@ The writer prompt has a STEP 0 dispatch step that branches the rest of the promp
 **Test mix (5 Q&As — 3 coverage + 2 state-eligibility to test both branches):**
 
 Coverage:
-- "Does Medicare cover vision care in 2026?" (mirror of dental — exercises comparison table for vision)
+- "Does Medicare cover hearing aids in 2026?" (NOT vision; existing slug `does-medicare-cover-vision` blocks that test topic)
 - "Does ACA marketplace insurance cover preexisting conditions?" (legal-rule based; tests Direct-answer entailment)
 - "Does Medicaid cover home health care?" (mixed federal/state; tests state-overlay)
+
+**Existing Q&A slugs to AVOID** (collision check via `ls content/data/qa/*.json | xargs -n1 basename`):
+- does-medicaid-cover-rehab
+- does-medicare-cover-dental
+- does-medicare-cover-vision
+
+Don't write test articles whose slug would match any of these.
 
 State-eligibility:
 - "Do I qualify for Medi-Cal in California 2026?" (uses Medi-Cal brand)
