@@ -1,0 +1,167 @@
+{
+  "auditTarget": "coveredusa-ma-state-writer + 3 existing pages (california.json, texas.json, wyoming.json)",
+  "writer": "/Users/jacobposner/clawd/.claude/agents/coveredusa-ma-state-writer.md",
+  "formula": "specs/FANOUT_FORMULA.md §3 (universal) + §4.8 (ma-state recipe)",
+  "priorAuditRef": "specs/CURRENT_STATE_AUDIT.md §4.7 — best template scorecard (~32 PASS / 9 PARTIAL / 11 FAIL); pronoun discipline passes via gold standard, not verifier",
+  "phase1BingValidation": "5 of 8 dominant shapes Bing-validated (above template median)",
+  "auditDate": "2026-05-14",
+
+  "A_writerAuditAgainstFormula": {
+    "universalRulesCoverage": {
+      "3_1_yearMarkerInjection": {
+        "writerHandling": "Hard rule. Required-fields checklist enforces 2026 in title, H1, meta, hero, quickAnswer, marketOverview.dataYear, faqs, detailSections, importantDates. Forbids 2025 MOOP figure. Validator (build-time) backs meta caps.",
+        "status": "PASS",
+        "gap": "None significant. Year discipline is the strongest part of the writer."
+      },
+      "3_2_stateContextEverywhere": {
+        "writerHandling": "PARTIAL. Writer enforces state in title, H1, meta, hero, quickAnswer, FAQ questions. But writer does NOT enforce state name in: every H2 first sentence (esp. detailSections paragraphs that open with abstract phrasing like 'CMS publishes...' or 'Original Medicare (Parts A and B) plus...'), every table caption (planTypes.footnote, marketOverview.source, planTypes.source are state-agnostic — e.g. 'KFF Medicare Advantage 2026 Spotlight' has no state), and importantDates.intro is fully state-agnostic ('Medicare and Medicare Advantage have several enrollment windows.').",
+        "status": "PARTIAL",
+        "gap": "Writer needs an explicit checklist item: 'every H2 first sentence and every table caption must contain the state name'. Current pages show mixed compliance (CA: stateExtras intro PASS, importantDates intro FAIL; TX same; WY: stateExtras intro PASS as 'A few Wyoming-specific factors', importantDates intro FAIL)."
+      },
+      "3_3_eligibilityHouseholdSizeTable": {
+        "writerHandling": "N/A. MA-state pages are not income-gated (Medicare eligibility is age/disability based). D-SNP eligibility intersects with Medicaid but household-size lookup is not the dominant grounding pattern for MA queries.",
+        "status": "N/A"
+      },
+      "3_4_howToApplySection": {
+        "writerHandling": "PARTIAL. Writer requires importantDates with AEP/MA OEP/IEP/SEPs (which covers enrollment-window dates). FAQ topic 'How to enroll' is recommended. But writer does NOT require a dedicated 'How to enroll' H2 with: numbered steps, the official medicare.gov starting URL, documents-needed checklist, common denial/disenrollment reasons. None of CA/TX/WY currently include this.",
+        "status": "MISSING",
+        "gap": "No detailSections.heading is 'How to enroll in [State] Medicare Advantage'. Numbered enrollment steps and documents-needed checklist absent. medicare.gov is mentioned in body, not as a numbered-step starting URL."
+      },
+      "3_5_comparisonFraming": {
+        "writerHandling": "STRONG. Writer requires 'MA vs Medigap' / 'MA vs Original Medicare' detailSection, planTypes table (HMO vs PPO vs SNP vs PFFS/MSA), FAQ on HMO vs PPO. All 3 pages comply.",
+        "status": "PASS"
+      },
+      "3_6_authoritativeSourceNarrowing": {
+        "writerHandling": "PASS. Writer requires minimum 3 sources, prefers medicare.gov/cms.gov/kff.org/state DOI. All 3 pages have 5 sources hitting CMS Plan Finder, CMS Quality Rating System, KFF, and state-specific DOI/HHS. Anchor text contains source domain implicitly.",
+        "status": "PASS"
+      },
+      "3_7_namedProgramLookup": {
+        "writerHandling": "N/A per task brief — Medicare Advantage has no state-named brand (unlike Medi-Cal/AHCCCS/MNsure for Medicaid). Adjacent state-named programs DO appear when relevant: CA stateExtras references Medi-Cal D-SNPs, TX references Texas HHSC, WY references SHIIP. This is appropriate adjacency without forcing a brand that does not exist.",
+        "status": "N/A_correctly_handled"
+      },
+      "3_8_eligibilityEntailment": {
+        "writerHandling": "WEAK. MA eligibility (must have Part A + Part B, must live in plan service area) is implicit but never given a dedicated H2 or 'Do I qualify' framing. importantDates covers IEP timing but not the eligibility prerequisites themselves.",
+        "status": "PARTIAL",
+        "gap": "Add an 'Am I eligible for Medicare Advantage in [State]' section or FAQ — minor since MA eligibility is well-known, but worth codifying."
+      },
+      "3_9_demographicSpecificity": {
+        "writerHandling": "PARTIAL. countyVariance (urban/rural/frontier) covers geographic dimension. SNP rows touch chronic condition / dual-eligible / institutional. But beneficiary demographics (turning-65, snowbirds, low-income, working-past-65) are not surfaced as table rows or H2s.",
+        "status": "PARTIAL",
+        "gap": "Acceptable for MA-state. Demographic dimensions are adjacent to /event/ and /for/ templates."
+      },
+      "3_10_tableChartShapeFraming": {
+        "writerHandling": "PARTIAL. planTypes table headers use 'Plan Type / Plans Available / Avg Premium / Best For' — functional but does not use the lookup-canonical 'by [dim]' / 'chart' / 'guidelines' phrasings. Same for countyVariance and topCarriers.",
+        "status": "PARTIAL",
+        "gap": "Add captions like 'Medicare Advantage plans by carrier in California 2026' or 'California MA premiums by county chart 2026' to table sections to better match Bing lookup-shape grounding queries."
+      }
+    },
+    "perTemplateRecipeCoverage_4_8": {
+      "AEP_OEP_dates": {"status": "PASS", "evidence": "All 3 pages have full importantDates section with AEP, MA OEP, IEP, SEP."},
+      "planCount_carrierBreakdown": {"status": "PASS", "evidence": "marketOverview.totalPlansAvailable + marketOverview.topCarriers (5-10 rows). All 3 pages compliant."},
+      "starRatingsOverview": {"status": "PASS", "evidence": "marketOverview.averageStarRating + per-carrier averageStarRating + dedicated 'How Star Ratings work' detailSection. All 3 pages compliant."},
+      "zeroPremiumPlansList": {"status": "PARTIAL", "evidence": "Writer mentions $0 plans in carrier notes and FAQ prose, but no dedicated 'Top $0 premium plans in [State] 2026' table. §4.8 lists this as a recommended table; current writer omits."},
+      "MA_vs_Medigap_comparison": {"status": "PASS", "evidence": "Each page has a 'Medicare Advantage vs Original Medicare in [State]' detailSection covering Medigap trade-offs."},
+      "howToEnroll": {"status": "MISSING", "evidence": "No detailSection or H2 dedicated to 'How to enroll in [State] Medicare Advantage' with numbered steps + medicare.gov starting URL + documents-needed. Only mentioned conversationally in FAQs."},
+      "SNPs_eligibility": {"status": "PARTIAL", "evidence": "SNP row exists in planTypes; D-SNP discussed in detailSections (CA explicit, TX explicit, WY explicit). But no SNP-specific FAQ topic and no chronic-condition SNP eligibility list."}
+    },
+    "stylePronounDiscipline_5_7": {
+      "writerHandling": "PARTIAL. Writer's style rules cover 'no em dashes', 'no filler', 'lead with concrete numbers' — but do NOT explicitly codify the named-entity-first-sentence rule (Framework §5.7). The writer relies on the california.json gold-standard reference to inherit the pattern. Prior audit confirmed the pattern holds across CA/TX/WY (only 1 marginal exception in ~40 paragraphs), but this is fragile — one writer-prompt regression or one WY-style page that opens with 'CMS publishes...' breaks it.",
+      "currentPagesObserved": "All 3 audited pages PASS pronoun discipline at paragraph-opening level. CA opens detailSection paragraphs with 'Original Medicare (Parts A and B)...' — passes by naming a different concrete entity rather than a pronoun. TX same pattern. WY uses 'Three structural factors push Wyoming\\'s MA penetration...' which is exemplary.",
+      "status": "PASS_FRAGILE",
+      "gap": "Codify in writer prompt as a hard rule. Add to Style rules section: 'Every paragraph MUST open with a named entity (the state name, the carrier name, the program, or a concrete noun phrase). Never open with It, They, This, These, Here, There, or Such.'"
+    }
+  },
+
+  "B_pageAuditCaliforniaTexasWyoming": {
+    "structural": {
+      "metaCapsCompliance": "PASS for all 3 (titles 53/53/52 chars, descriptions all under 160).",
+      "wordCountReadingTimeFit": "CA 10min, TX 10min, WY 9min — all in 1800-2500 word band.",
+      "emDashCount": "0 em-dashes across all 3 pages (style rule enforced).",
+      "spanishParity": "PASS for all 3 (every LocalizedString has en+es; FAQ counts match 8/8/8)."
+    },
+    "stateContextScan": {
+      "california": {
+        "title": "PASS — 'Medicare Advantage Plans in California 2026 | CoveredUSA'",
+        "h1": "PASS — '...in California (2026)'",
+        "metaDescription": "PASS — opens '402...in California for 2026.'",
+        "everyH2FirstSentenceContainsState": "MIXED — detailSection H2s all contain 'California' (3/3 PASS). whatToLookFor.intro PASS ('Picking a Medicare Advantage plan in California...'). importantDates.intro FAIL ('Medicare and Medicare Advantage have several enrollment windows.' — no state). countyVariance.intro PASS. stateExtras.intro PASS.",
+        "everyTableCaptionContainsState": "FAIL — planTypes.source 'KFF Medicare Advantage 2026 Spotlight' (no state); marketOverview.source same; planTypes.footnote PASS ('HMO plans dominate California...').",
+        "topCarriersContextual": "PASS (carrier notes reference NorCal/SoCal/Bay Area)."
+      },
+      "texas": {
+        "title": "PASS",
+        "h1": "PASS",
+        "metaDescription": "PASS",
+        "everyH2FirstSentenceContainsState": "MIXED — same pattern. importantDates.intro is identical state-agnostic boilerplate — FAIL.",
+        "everyTableCaptionContainsState": "FAIL — same source citation strings lack state.",
+        "topCarriersContextual": "PASS (Houston, San Antonio, RGV, DFW references)."
+      },
+      "wyoming": {
+        "title": "PASS",
+        "h1": "PASS",
+        "metaDescription": "PASS",
+        "everyH2FirstSentenceContainsState": "MIXED. importantDates.intro again state-agnostic. countyVariance section MISSING entirely (writer marks it optional for small states).",
+        "everyTableCaptionContainsState": "FAIL — sources state-agnostic.",
+        "topCarriersContextual": "PASS (Laramie/Natrona/Sweetwater/I-25 references)."
+      }
+    },
+    "formulaRecipeCoverage": {
+      "AEP_OEP_dates": "PASS all 3 (Oct 15 - Dec 7, 2026; Jan 1 - Mar 31, 2026; correct anchor facts).",
+      "planCount_carrierBreakdown": "PASS all 3 (CA: 8 carriers/402 plans; TX: 8 carriers/156 plans; WY: 6 carriers/30 plans).",
+      "starRatings": "PASS all 3.",
+      "zeroPremiumPlansSection": "MISSING all 3 — no dedicated $0 premium plan list table. Mentioned in carrier notes and FAQs only.",
+      "MA_vs_Medigap": "PASS all 3 — explicit detailSection.",
+      "howToEnroll": "MISSING all 3 — no numbered-step enrollment H2.",
+      "SNPs": "PARTIAL all 3 — row in planTypes, mentioned in detailSections, no dedicated FAQ."
+    },
+    "anchorFactsAccuracy": "PASS — all 3 use 2026 Part D OOP $2,100, MOOP $9,250 (down from $9,350), AEP Oct 15 - Dec 7. TX also cites Part B $202.90. IRA referenced correctly.",
+    "spanishQuality": "Best of any template per prior audit. Localized program names ('Período Anual de Elección', 'Plan de Necesidades Especiales'). Idiomatic translations of regional terms (Valle del Río Grande, Área de la Bahía). No fake-Spanish artifacts."
+  },
+
+  "C_topThreeWriterEdits": [
+    {
+      "rank": 1,
+      "edit": "Add 'How to enroll in [State] Medicare Advantage' as a REQUIRED detailSection (or top-level howToEnroll block).",
+      "rationale": "§3.4 universal + §4.8 recipe item 'How to enroll'. Currently the writer omits the most Bing-citable enrollment-flow section entirely. Universal rule — should not be optional. Format: 5-step numbered list (1. Confirm eligibility, 2. Gather documents [Medicare card, ZIP code, doctor list, drug list], 3. Compare plans at medicare.gov/plan-compare, 4. Apply through medicare.gov or carrier, 5. Confirm coverage start date). Include medicare.gov as the official starting URL.",
+      "effort": "S",
+      "impact": "HIGH — fills the largest formula gap; immediately citable for 'how to enroll in Medicare Advantage in [State]' grounding queries (validated Bing pattern at MEDIUM confidence per §3.4)."
+    },
+    {
+      "rank": 2,
+      "edit": "Codify pronoun-discipline rule explicitly in writer Style section AND extend state-context-everywhere to importantDates.intro + table source captions.",
+      "rationale": "§5.7 currently passes by gold-standard inheritance only — verifier doesn't catch it. Add to Style rules: 'Every paragraph MUST open with a named entity (state name, carrier name, program name, or concrete noun). Never open with It, They, This, These, Here, There.' AND add: 'importantDates.intro must reference the state (e.g., \"California Medicare and Medicare Advantage have several enrollment windows in 2026...\"). Every table source citation must include state context.'",
+      "effort": "S",
+      "impact": "MEDIUM — locks in the template's strongest current advantage and closes the §3.2 gap (state in every H2 first sentence + every table caption). Also defends against future regression."
+    },
+    {
+      "rank": 3,
+      "edit": "Add a '$0 premium plans in [State] 2026' table OR sub-section.",
+      "rationale": "§4.8 Bing-validated shape #7. Currently $0 plans are mentioned in carrier notes and one FAQ but not surfaced as a discrete lookup-canonical table. Add a 4-6 row table: Carrier / Plan Type / Counties Available / Star Rating. Even a representative sample drives 'free Medicare Advantage plans in [State] 2026' citation eligibility.",
+      "effort": "S",
+      "impact": "MEDIUM — directly answers a well-known query shape; pairs naturally with planTypes section."
+    }
+  ],
+
+  "biggestGap": {
+    "summary": "How-to-enroll section is missing entirely. The template has solid structural bones (planTypes, marketOverview, importantDates, detailSections, FAQs all in place) and excellent state-context discipline at the title/H1/meta level. But it lacks the universal §3.4 application-flow recipe — no numbered enrollment steps, no documents-needed checklist, no medicare.gov-as-starting-URL framing. This is the same gap that hits all 8 templates (per Phase 1 audit) and is the lowest-effort highest-impact fix.",
+    "secondaryGap": "State-context leaks at the boundaries: importantDates.intro is fully state-agnostic boilerplate across all 3 pages, and table source citations ('KFF Medicare Advantage 2026 Spotlight') are state-agnostic. These are quick-fix S-effort items but they break the §3.2 'state in every H2 first sentence + every table caption' rule.",
+    "severity": "MAJOR but contained — template is closer to formula-aligned than any other CoveredUSA template (~5/8 Bing-validated; ~32 PASS / 9 PARTIAL / 11 FAIL in scorecard)."
+  },
+
+  "trackD_scaleUpReadiness": {
+    "verdict": "READY with minor pre-flight",
+    "rationale": "The ma-state writer is the cleanest template in the repo. Structural integrity (JSON schema, Spanish parity, anchor facts, em-dash discipline) is production-ready across CA/TX/WY. Numeric accuracy is verified for all 3. The 3 writer edits above (how-to-enroll, pronoun rule codification + state-context boundary fixes, $0 plans table) are all S-effort and can be made in a single 30-min pass before bulkgen. Pronoun discipline currently rides on gold-standard inheritance; codifying it before scaling to 48 more states removes regression risk.",
+    "preFlightChecklist": [
+      "1. Make the 3 writer edits above (S-effort total ~30min).",
+      "2. Update gold-standard california.json to include the new howToEnroll detailSection + state-name in importantDates.intro + state-tagged source captions ('KFF Medicare Advantage 2026 California Spotlight'). All downstream parallel writers will inherit the pattern.",
+      "3. Add pronoun-discipline check to coveredusa-ma-state-verifier.md STEP 2 (regex: paragraph-opening 'It|They|This|These|Here|There ' should flag for review unless followed by a named-entity recovery).",
+      "4. Re-verify TX and WY against the updated gold standard; spot-fix the 4 boundary issues (importantDates.intro state-agnostic on both, source captions state-agnostic on both, missing howToEnroll on both, missing $0 table on both).",
+      "5. Then bulkgen all 48 remaining states (50 + DC - 3 already shipped)."
+    ],
+    "estimatedEffortToScaleStateRemaining": "Writer edits: ~30 min. Gold-standard CA refresh + verifier patch: ~30 min. Spot-fix TX + WY: ~20 min. Bulkgen 48 states (parallel agents): ~2-3 hours wall-clock at typical sonnet research-write throughput. Total: ~half-day to full Track D coverage.",
+    "risk": "LOW. No structural rebuilds needed. Schema interface (MedicareAdvantageState) is stable. CTA target stable. Existing dynamic route at src/app/[locale]/medicare-advantage/[state]/page.tsx already renders all 3 audited pages cleanly.",
+    "downstreamSignal": "If state-context-everywhere is THE highest-leverage missing universal rule (per task brief), shipping the ma-state factory at 51-state coverage is the single biggest move CoveredUSA can make on Bing citation surface for Medicare Advantage queries. Pairs naturally with the §5.1 medicaid-income-limits/[state] factory recommended in §5.1."
+  },
+
+  "summaryNarrative": "The coveredusa-ma-state-writer is the cleanest writer in the repo and the template closest to FANOUT_FORMULA alignment. All three audited pages (California, Texas, Wyoming) pass schema validity, anchor-fact accuracy, em-dash discipline, Spanish parity, and the structural recipe items §4.8 calls out as Bing-validated (AEP/OEP dates, plan count + carrier breakdown, Star Ratings, MA vs Medigap comparison). State-context discipline is strong at the title/H1/meta/H2 level and pronoun discipline (Framework §5.7) holds across ~40 paragraphs by gold-standard inheritance. The three concrete edits needed before Track D scale-up are all S-effort: (1) add a required How-to-enroll detailSection with numbered steps + medicare.gov starting URL + documents-needed checklist (closes the universal §3.4 gap that hits every template), (2) codify the named-entity-first-sentence rule in Style rules and patch the two state-context leaks (importantDates.intro and table source captions are state-agnostic across all 3 pages), and (3) add a $0 premium plans table to capture the §4.8 Bing-validated shape currently mentioned only in prose. The biggest gap is missing how-to-enroll content — same gap hitting every template and the lowest-effort highest-impact fix. Readiness for 48-state Track D scale-up: READY after the half-day pre-flight pass. Recommend updating california.json as the new gold standard first so all parallel-spawned writers inherit the patches; spot-fix Texas and Wyoming after; then bulkgen the remaining 48. This template is the proof point that the formula works."
+}

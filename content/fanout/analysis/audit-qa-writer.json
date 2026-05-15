@@ -1,0 +1,279 @@
+{
+  "auditTarget": "coveredusa-qa-writer",
+  "auditedAgainst": "FANOUT_FORMULA.md v1.0 (2026-05-14)",
+  "auditDate": "2026-05-14",
+  "writerFile": "/Users/jacobposner/clawd/.claude/agents/coveredusa-qa-writer.md",
+  "templateScope": "qa (currently single template handling both coverage Q&A and state-eligibility Q&A)",
+
+  "A_writerVsFormula": {
+    "summary": "Writer agent is well-built for the COVERAGE-Q&A subtype (§4.3) and largely satisfies universal rules §3.1, §3.5, §3.6. It is structurally INADEQUATE for the state-eligibility subtype (§4.4) — the prompt has no instructions for state-named program brands, no required household-size income table, no how-to-apply numbered-steps block, no documents-needed checklist, no common-denial-reasons callout, and no required state-context-everywhere enforcement. The pageType field is good infrastructure but does not branch on coverage-vs-state-eligibility — both currently flow through the same recipe.",
+    "universalRulesCoverage": [
+      {
+        "rule": "§3.1 Year-marker injection",
+        "status": "ENFORCED",
+        "evidence": "Writer §STEP 3 requires hero.h1 with year suffix (2026), 2026 anchor facts block, lastUpdated ISO date. All 3 audited pages include 2026 in title/h1/meta/intro."
+      },
+      {
+        "rule": "§3.2 State-context-everywhere",
+        "status": "MISSING",
+        "evidence": "Writer prompt has no state-context rule. None of the 3 existing pages are state-scoped, so no current violation, but writer cannot produce a compliant state-eligibility page."
+      },
+      {
+        "rule": "§3.3 Eligibility household-size table",
+        "status": "MISSING",
+        "evidence": "Writer prompt does not require a householdSizeTable field. Required for any state-eligibility Q&A. The QA TypeScript interface may not even have this field."
+      },
+      {
+        "rule": "§3.4 How-to-apply section",
+        "status": "MISSING",
+        "evidence": "Writer prompt has no required howToApply block (enrollmentDates, numberedSteps, govStartingUrl, documentsNeeded, commonDenialReasons). detailSections is freeform. None of the 3 audited pages contains numbered application steps or a documents-needed checklist."
+      },
+      {
+        "rule": "§3.5 Comparison framing",
+        "status": "ENFORCED",
+        "evidence": "Writer §STEP 3 detailSections recipe encourages X vs Y framing. dental + vision pages include Original Medicare vs MA vs Medigap comparison rows; rehab page compares service types. Solid."
+      },
+      {
+        "rule": "§3.6 Authoritative source narrowing",
+        "status": "ENFORCED",
+        "evidence": "Writer §STEP 2 lists primary-source domains by topic (medicare.gov, medicaid.gov, healthcare.gov, kff.org, congress.gov) and §STEP 3 requires minimum 3 sources. All 3 pages cite medicare.gov / medicaid.gov / kff.org / congress.gov."
+      },
+      {
+        "rule": "§3.7 Named-program lookup (state brands)",
+        "status": "MISSING",
+        "evidence": "Writer prompt does not list state-named program brands (Medi-Cal, AHCCCS, MNsure, SoonerCare, MaineCare, BadgerCare, AllKids, TennCare, ARHOME, NJ FamilyCare, MassHealth, HIP, OHP, CHP+). Critical for state-eligibility variant."
+      },
+      {
+        "rule": "§3.8 Eligibility entailment block",
+        "status": "MISSING",
+        "evidence": "Writer prompt does not require an eligibility block (incomeThresholds + nonIncomeRequirements + commonReasonsDenied). Coverage Q&A pages can survive without it; state-eligibility Q&A pages cannot."
+      },
+      {
+        "rule": "§3.9 Demographic specificity",
+        "status": "PARTIAL",
+        "evidence": "Writer encourages dual-eligible callouts and the rehab page handles non-expansion-state demographics well. But no household-size / family-of-N row guidance."
+      },
+      {
+        "rule": "§3.10 Table/chart-shape phrasing",
+        "status": "PARTIAL",
+        "evidence": "Writer §STEP 3 requires coverageBreakdown table but does not enforce 'chart' / 'guidelines' / 'by household size' phrasing in captions. Existing captions read like prose ('Vision coverage alternatives...') not lookup phrasings."
+      }
+    ],
+    "perTemplateRecipeCoverage_4_3_MedicareCoverage": [
+      {
+        "shape": "Medicare Advantage [topic] benefits + year + .gov source",
+        "writerInstruction": "PARTIAL — writer mentions MA dental benefits in 2026 anchor section but no required H2 'What Medicare Advantage may add'.",
+        "pageEvidence": "dental + vision pages BOTH include 'Medicare Advantage [topic] coverage in 2026' detailSection — recipe was followed by writer's intuition, not prompt enforcement."
+      },
+      {
+        "shape": "Original Medicare vs Medicare Advantage on [topic]",
+        "writerInstruction": "PARTIAL — coverageBreakdown rows recipe naturally produces this.",
+        "pageEvidence": "dental + vision both include 3-row Original-vs-MA-vs-Medigap matrix. Strong."
+      },
+      {
+        "shape": "Medicare [topic] coverage + year + .gov source",
+        "writerInstruction": "ENFORCED — meta.title and h1 include year, sources require .gov.",
+        "pageEvidence": "Compliant on all 3 pages."
+      },
+      {
+        "shape": "Standalone supplemental [topic] insurance",
+        "writerInstruction": "MISSING from prompt.",
+        "pageEvidence": "dental page has 'standalone dental insurance' row; vision page has 'standalone vision insurance' row. Writer intuited it; prompt does not require it."
+      },
+      {
+        "shape": "Out-of-pocket cost without coverage",
+        "writerInstruction": "PARTIAL — handled via ctaTarget=analyzer heuristic, but no required H2.",
+        "pageEvidence": "dental cap table shows $1k-$5k MA caps; vision page mentions $283 Part B deductible. Adequate."
+      },
+      {
+        "shape": "Eligibility criteria for [topic] benefit",
+        "writerInstruction": "MISSING.",
+        "pageEvidence": "Glaucoma page handles high-risk eligibility well; no other pages cover eligibility-for-benefit explicitly."
+      }
+    ],
+    "perTemplateRecipeCoverage_4_4_StateMedicaid": [
+      {
+        "shape": "State Medicaid income limits + state + year",
+        "writerInstruction": "MISSING — writer has no required income-limits-by-household-size table.",
+        "pageEvidence": "0 of 3 pages — no state-eligibility pages exist yet."
+      },
+      {
+        "shape": "State-named program brand + year",
+        "writerInstruction": "MISSING — no brand list in prompt.",
+        "pageEvidence": "rehab page references California/Texas generically; never invokes Medi-Cal brand."
+      },
+      {
+        "shape": "State Medicaid application process (numbered steps + .gov URL)",
+        "writerInstruction": "MISSING — no howToApply block.",
+        "pageEvidence": "0 of 3 pages contain numbered application steps."
+      },
+      {
+        "shape": "State Medicaid expansion status + ACA gap",
+        "writerInstruction": "MISSING — but informally handled.",
+        "pageEvidence": "rehab page §'Why Medicaid Covers Rehab Everywhere' lists the 10 non-expansion states. Reusable pattern, but not codified."
+      },
+      {
+        "shape": "State Medicaid + family size + year",
+        "writerInstruction": "MISSING.",
+        "pageEvidence": "0 of 3 pages."
+      },
+      {
+        "shape": "State Medicaid eligibility documents needed",
+        "writerInstruction": "MISSING.",
+        "pageEvidence": "0 of 3 pages."
+      }
+    ]
+  },
+
+  "B_pageAudits": [
+    {
+      "slug": "does-medicare-cover-dental",
+      "subtype": "coverage",
+      "verdict": "STRONG for 4.3 coverage variant; ready to ship",
+      "strengths": [
+        "Year markers in title, h1, meta, intro (compliant §3.1)",
+        "Original Medicare vs MA vs Medigap 3-row comparison matrix (compliant §4.3 shape 2)",
+        "Standalone-supplemental row in alternatives table (covers §4.3 shape 4)",
+        "Dual-eligible strategy section (§3.9 demographic specificity)",
+        "Status/text coherence on all coverage cells",
+        "3 primary sources (medicare.gov, kff.org, medicaid.gov)",
+        "8 FAQs hitting major sub-shapes"
+      ],
+      "weaknesses": [
+        "No howToApply block (universal §3.4) — should at least link to MA enrollment steps",
+        "Coverage table caption lacks 'by plan type 2026' phrasing (§3.10 soft)",
+        "ctaTarget=screener but full answer mentions $1k-$5k caps — per writer's own STRICT heuristic should be analyzer; borderline cost-curious user",
+        "Missing standalone H2 'What Medicare Advantage may add' — currently embedded in detailSection 2 but not the literal phrasing"
+      ],
+      "regenPriority": "LOW — minor edits via Edit tool (CTA flip + caption tweak) are enough"
+    },
+    {
+      "slug": "does-medicare-cover-vision",
+      "subtype": "coverage",
+      "verdict": "STRONG for 4.3 coverage variant; ready to ship",
+      "strengths": [
+        "Year markers throughout (§3.1)",
+        "3-row Original-vs-MA-vs-Medigap matrix (§4.3 shape 2)",
+        "Coverage breakdown adds a 'medically necessary eye care' column showing what IS covered, not just what isn't — good Bing-citable contrast",
+        "Cataract surgery exception called out with $283 Part B deductible (2026 anchor fact compliant)",
+        "Dual-eligible strategy section",
+        "4 primary sources, 8 FAQs"
+      ],
+      "weaknesses": [
+        "Same howToApply gap as dental",
+        "Same caption-phrasing gap",
+        "ctaTarget=screener but full answer cites $283 deductible — writer's heuristic says analyzer wins on cost mention; should flip"
+      ],
+      "regenPriority": "LOW — same minor edit treatment as dental"
+    },
+    {
+      "slug": "does-medicaid-cover-rehab",
+      "subtype": "coverage",
+      "verdict": "STRONG; this is the gold-standard exemplar",
+      "strengths": [
+        "6-row coverage matrix with appropriate yes/partial statuses",
+        "Status/text coherence is clean (Yes->yes, Varies->partial, Limited->partial)",
+        "Statute citation (SUPPORT Act P.L. 115-271) with congress.gov URL — exemplary §3.6",
+        "Non-expansion-state list inline (§3.9 demographic specificity)",
+        "Dual-eligible section (§3.9)",
+        "Prior-auth + appeals + parity hotline detailSection — operationally useful, rare in Q&A pages",
+        "Federal IMD exclusion + 1115 waiver detail — primary-source-grade nuance",
+        "8 FAQs covering inpatient, MAT brand variants, alcohol, non-expansion, EPSDT"
+      ],
+      "weaknesses": [
+        "No howToApply numbered-steps block (universal §3.4)",
+        "No state-named brand mentions (Medi-Cal, etc.) even when discussing California (§3.7) — the body sometimes references states but never the brand",
+        "Coverage caption could use 'by service type 2026' phrasing (§3.10 soft)",
+        "ctaTarget=screener — defensible since fundamentally an eligibility/access question, not a cost-share question. Keep."
+      ],
+      "regenPriority": "LOW — this is essentially the model. Add brand-name mentions and an 'apply for Medicaid SUD treatment' steps box; ship."
+    }
+  ],
+
+  "C_writerEditRecommendations": [
+    {
+      "priority": 1,
+      "edit": "Add §STEP 0a Subtype dispatch: read the input QUESTION + CATEGORY + SLUG and classify subtype as 'coverage' (default) or 'state-eligibility' (when slug matches /medicaid-(state)/, /qualify-for-medicaid-(state)/, /can-i-get-medicaid-in-(state)/, etc.). Branch the rest of the prompt on subtype. Without this branch, the same recipe will keep producing coverage-shaped pages even when the queue requests state-eligibility.",
+      "rationale": "Single biggest gap. §5.2 explicitly recommends split."
+    },
+    {
+      "priority": 2,
+      "edit": "Add a state-eligibility subtype block to §STEP 3 Required fields checklist requiring: householdSizeTable (1-8 person rows × income limits, year-tagged caption), incomeSourcesIncluded, incomeSourcesExcluded, howToApply.numberedSteps (3-7), howToApply.govStartingUrl, howToApply.documentsNeeded[], commonDenialReasons[], state-named brand mention in title + h1 + every H2 first sentence, and the 16-state brand list (Medi-Cal, AHCCCS, MNsure, SoonerCare, MaineCare, BadgerCare, AllKids, TennCare, ARHOME, NJ FamilyCare, MassHealth, HIP, OHP, CHP+, CalFresh-context).",
+      "rationale": "Implements §3.2 + §3.3 + §3.4 + §3.7 + §3.8 universally for the state-eligibility subtype."
+    },
+    {
+      "priority": 3,
+      "edit": "Add a universal howToApply block to ALL Q&A pages (both subtypes). Coverage pages get a thinner version (when to enroll in MA for dental supplement, OEP/AEP dates), state-eligibility gets the full numbered application workflow. This satisfies universal §3.4 across the board.",
+      "rationale": "Universal rule violation across all 3 audited pages."
+    },
+    {
+      "priority": 4,
+      "edit": "Tighten ctaTarget heuristic enforcement — writer's own STRICT rule says cost-curious wins, but dental + vision pages set screener despite citing $283 deductible / $1k-$5k MA caps. Either flip the existing pages to analyzer or add an explicit override paragraph in the writer ('if the answer mentions any specific dollar amount > $50, ctaTarget MUST be analyzer unless the question is fundamentally about who-qualifies').",
+      "rationale": "Internal inconsistency between writer rules and writer outputs."
+    },
+    {
+      "priority": 5,
+      "edit": "Update coverageBreakdown.caption guidance to use lookup-phrasing: 'X coverage by plan type 2026', 'Income limits by household size 2026', 'Services covered by service type 2026'. Cheap §3.10 lift.",
+      "rationale": "Soft universal — current captions are descriptive prose, not Bing-citable lookup labels."
+    },
+    {
+      "priority": 6,
+      "edit": "Verify the QA TypeScript interface (src/lib/qa.ts) supports new fields: householdSizeTable, howToApply (with numberedSteps, govStartingUrl, documentsNeeded), commonDenialReasons. If not, adding writer instructions does nothing — schema must accept them. Coordinate with template/validator extension per FANOUT_FORMULA §6."
+    }
+  ],
+
+  "D_splitTemplateFeasibility": {
+    "currentArchitecture": "Single coveredusa-qa-writer.md handling all /qa/[question] URLs via freeform detailSections + soft pageType field (coverage/terminology/definition/eligibility). pageType is consumed for coverageBreakdown-required logic only; it does not gate H2 structure, required fields, or research strategy.",
+    "splitDecision": "ONE writer with hard subtype dispatch, NOT two writers.",
+    "rationale": [
+      "70% of writer logic is shared: schema (QA interface), bilingual rules, FAQ shape, sources rigor, year anchor facts, validator-friendly atomic write, return-JSON contract, primary-source domain list. Forking the writer file duplicates all of that and creates drift risk (one writer gets a 2026 fact update, the other doesn't).",
+      "The 30% that diverges (required H2s, required fields, brand-list lookups, state-context enforcement, household-size table, howToApply numbered-steps) is small enough to express as conditional sections inside a single prompt — 'IF subtype=coverage: do A. IF subtype=state-eligibility: do B.'",
+      "Subtype is detectable from inputs (SLUG pattern + CATEGORY + QUESTION text), so dispatch can happen in §STEP 0 deterministically.",
+      "Two writers double the cron-orchestration surface (queue dispatcher must pick which agent to spawn) for no concrete benefit."
+    ],
+    "implementationPath": [
+      "1. Edit coveredusa-qa-writer.md: add §STEP 0a Subtype dispatch (10 lines). Detect subtype from SLUG (regex: /medicaid-[a-z]+(-state)?/, /qualify.*medicaid/, /apply.*medicaid/) + CATEGORY=Medicaid + QUESTION contains 'qualify' / 'apply' / 'do I get'. Default to coverage.",
+      "2. Edit §STEP 3 to add a 'BRANCH: if subtype=state-eligibility' subsection with the new required fields (householdSizeTable, howToApply.{numberedSteps,govStartingUrl,documentsNeeded}, commonDenialReasons, state-named brand list, state-context-everywhere checklist).",
+      "3. Edit §STEP 3 detailSections recipe: under coverage subtype keep current 'When does Medicare cover X / Alternatives / Dual-eligible' guidance. Under state-eligibility subtype require: 'Eligibility income limits + household-size table / State-named program brand explanation / How to apply (numbered steps + .gov URL) / Documents needed checklist / Common denial reasons'.",
+      "4. Add the 16-state-brand reference list to the writer file as a constant block.",
+      "5. Update src/lib/qa.ts to accept new optional fields (householdSizeTable, howToApply, commonDenialReasons). Make them required when pageType='eligibility'.",
+      "6. Update validator (scripts/lib/content-quality.js per FANOUT_FORMULA §6) to enforce the new fields when subtype=state-eligibility.",
+      "7. Test: queue a single state-eligibility prompt ('Do I qualify for Medi-Cal in 2026?') and run the writer. Verify output JSON includes brand mention, household-size table, numbered application steps, .gov URL, documents checklist."
+    ],
+    "minimalEffortToFirstStateEligibilityPage": "ONE writer-file edit (~150 lines added) + ONE schema extension (~30 lines in qa.ts) + ONE validator extension (~50 lines). Total: ~1.5 hours. NO new agent file required. After that, each state-eligibility page is a normal queue dispatch.",
+    "alternativeRejected": "Fork into coveredusa-qa-coverage-writer.md + coveredusa-qa-state-eligibility-writer.md. Rejected: doubles maintenance, introduces 2026-fact drift risk, requires queue-orchestrator change, and the conditional-branch approach is genuinely simpler given how much the two share."
+  },
+
+  "splitTemplateRecommendation": "ONE writer dispatched on subtype, NOT two writers. Add a 10-line §STEP 0a subtype-detection block to coveredusa-qa-writer.md that branches on SLUG pattern + CATEGORY + question text. Then add a conditional 'BRANCH: state-eligibility' section in §STEP 3 with the missing required fields (householdSizeTable, howToApply.numberedSteps, govStartingUrl, documentsNeeded, commonDenialReasons, 16-state brand-name list, state-context-everywhere enforcement). 70% of writer logic is shared (schema, bilingual rules, FAQ shape, source rigor, anchor facts, return contract) — forking the file would duplicate all of that and invite drift. Expressing the 30% divergence as conditional prompt sections is simpler, keeps the queue-dispatcher unchanged, and ships in ~1.5 hours including schema and validator extensions.",
+
+  "topThreeImmediateWriterEdits": [
+    "1. Add §STEP 0a subtype dispatch (coverage|state-eligibility) and a §STEP 3 BRANCH for state-eligibility requiring householdSizeTable + state-named brand + state-context-everywhere — unblocks the entire state-eligibility content type.",
+    "2. Add universal howToApply block (numberedSteps, govStartingUrl, documentsNeeded, commonDenialReasons) to ALL Q&A pages — fixes universal rule §3.4 violation across all 3 existing pages and every future page.",
+    "3. Tighten ctaTarget enforcement: any page mentioning a dollar amount > $50 must use ctaTarget=analyzer unless the question is fundamentally who-qualifies. Forces dental + vision pages to flip from screener to analyzer (consistent with cost-curious-user-wins thesis)."
+  ],
+
+  "pageRegenPriorities": [
+    {
+      "priority": "P3 (low) — Edit not regen",
+      "page": "does-medicaid-cover-rehab",
+      "action": "Edit in place: add a 'How to apply for Medicaid SUD treatment (numbered steps)' detailSection + add brand-name mentions ('California' to 'Medi-Cal', 'Texas' to 'Texas Medicaid') in body where states are referenced. ~15 min."
+    },
+    {
+      "priority": "P3 (low) — Edit not regen",
+      "page": "does-medicare-cover-dental",
+      "action": "Edit in place: flip ctaTarget to analyzer; add minimal howToApply block with MA enrollment dates + medicare.gov URL; tweak coverageBreakdown caption to 'Medicare dental coverage by plan type 2026'. ~10 min."
+    },
+    {
+      "priority": "P3 (low) — Edit not regen",
+      "page": "does-medicare-cover-vision",
+      "action": "Same treatment as dental. ~10 min."
+    },
+    {
+      "priority": "P0 (highest) — Build the writer change FIRST, then ship",
+      "page": "First state-eligibility Q&A (e.g., 'Do I qualify for Medi-Cal in 2026?')",
+      "action": "Cannot exist until writer + schema + validator are extended. Do that ~1.5h block of work before queueing any state-eligibility URLs. Then this becomes the proof-of-concept page."
+    }
+  ],
+
+  "summary200Words": "The qa writer is structurally solid for the §4.3 Medicare-coverage variant — universal rules §3.1 (year markers), §3.5 (comparison framing), §3.6 (.gov source rigor) are enforced; the 3 existing pages are all coverage-style and ship-ready with light edits. It is structurally INADEQUATE for the §4.4 state-Medicaid variant — missing universal rules §3.2 (state-context-everywhere), §3.3 (household-size income table), §3.4 (how-to-apply numbered steps), §3.7 (state-named brands like Medi-Cal/AHCCCS), §3.8 (eligibility entailment block). Recommendation: ONE writer with hard subtype dispatch in §STEP 0a, NOT two writers. 70% of writer logic is shared (schema, bilingual rules, FAQ shape, source list, anchor facts) — forking duplicates all of that and risks drift. Express the 30% divergence as a conditional 'BRANCH: state-eligibility' block in §STEP 3 with the missing required fields. Top 3 writer edits: (1) add subtype dispatch + state-eligibility branch; (2) add universal howToApply block to all pages; (3) tighten ctaTarget enforcement so any page citing >$50 amounts flips to analyzer. Page regen priority: existing 3 pages need light edits only (~10-15 min each); the real work is the ~1.5h writer/schema/validator extension that unblocks the first state-eligibility page."
+}

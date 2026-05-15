@@ -1,0 +1,218 @@
+{
+  "auditTarget": "coveredusa-glossary-writer + 3 existing glossary pages",
+  "auditDate": "2026-05-14",
+  "formulaVersion": "FANOUT_FORMULA.md v1.0",
+  "auditor": "frank",
+  "templateRiskFlag": "STRUCTURALLY_OVER_ENGINEERED — formula §4.5 explicitly warns this template is over-built relative to real Bing demand. Only 4 MAGI queries in 2 months across all of BenefitsUSA. Glossary's primary value is INTERNAL-LINK TARGET per LINK_TARGET_MANIFEST.md, not direct citation magnet.",
+
+  "writerFile": "/Users/jacobposner/clawd/.claude/agents/coveredusa-glossary-writer.md",
+
+  "A_universalRules": {
+    "summary": "Writer covers some universals well (year markers, named-program brands implicitly via primary sources, source narrowing) but is silent on most of the new universals the formula introduced. Worse, the prompt actively pushes toward bloat (MIN 2 detail sections + 6-8 FAQs + introParagraphs + multiple optional tables) that contradicts the §4.5 'keep glossary SHORT' guidance.",
+    "rules": {
+      "3.1_year_markers": {
+        "status": "PARTIAL",
+        "evidence": "Writer hardcodes 2026 anchor facts (OOP max, Part B premium, FPL) and tells writer to 'Reference 2026 explicitly for freshness signal'. Year-tagged annualLimits captions are implicit not enforced.",
+        "gap": "No explicit checklist item requiring year in title, H1, meta, every numeric table caption."
+      },
+      "3.2_state_context_everywhere": {
+        "status": "N/A_BUT_MISSING_GUIDANCE",
+        "evidence": "Glossary terms are not state-scoped, so the rule literally doesn't fire. But the writer never tells the agent that state-named program brands (Medi-Cal, AHCCCS, MNsure, etc.) should appear in the body when defining MAGI/FPL — those brands are huge Bing volume and a glossary page about MAGI for Medicaid should reference state-named programs.",
+        "gap": "No instruction to surface state-named program brands when defining state-program-relevant terms."
+      },
+      "3.3_eligibility_household_size_table": {
+        "status": "MISSING",
+        "evidence": "Writer mentions annualLimits as optional. No requirement that income-anchored glossary terms (MAGI, FPL, premium tax credit) include a household-size table.",
+        "gap": "Universal rule §3.3 is BING-VALIDATED. Income-gating glossary terms must have a household-size table. Writer prompt has no language about this."
+      },
+      "3.4_how_to_apply_section": {
+        "status": "MISSING",
+        "evidence": "No howToApply block, no enrollment-window dates, no .gov starting URL pattern, no documents-needed checklist, no common-denial-reasons callout. Writer's 'detailSections MIN 2' is freeform and never asks for this.",
+        "gap": "Universal rule §3.4 says EVERY page needs how-to-apply. For terms like MAGI / Premium Tax Credit / FPL the how-to-apply (use HealthCare.gov, etc.) is missing."
+      },
+      "3.5_comparison_framing": {
+        "status": "PARTIAL",
+        "evidence": "MAGI page has 'MAGI vs AGI' detail section (good). OOP max has 'Individual vs Family' (good). Deductible has 'Bronze vs Silver vs Gold vs Platinum' table (good). All three include comparison framing organically. Writer prompt does NOT codify this as required.",
+        "gap": "Writer should explicitly require an X-vs-Y framing for every glossary term that has a near-neighbor concept."
+      },
+      "3.6_authoritative_source_narrowing": {
+        "status": "GOOD",
+        "evidence": "Writer's STEP 2 lists HealthCare.gov, Medicare.gov, CMS, IRS, KFF as primary sources. min-3 sources required in checklist. All three pages cite the right domains.",
+        "gap": "None significant."
+      },
+      "3.7_named_program_lookup": {
+        "status": "MISSING",
+        "evidence": "Writer says nothing about state-named program brands. MAGI page references 'MAGI-category Medicaid' generically but never names a single state brand. Massive missed-Bing-citation surface for income-eligibility terms.",
+        "gap": "Critical for income-defining terms. Add: 'When the term applies to MAGI-Medicaid eligibility, reference at least 3 state-named program brands (Medi-Cal, AHCCCS, MNsure, BadgerCare, etc.) in body.'"
+      },
+      "3.8_eligibility_entailment": {
+        "status": "PARTIAL",
+        "evidence": "FAQ pattern naturally surfaces 'do I qualify' questions. But no required eligibility BLOCK with numeric thresholds + nonIncomeRequirements + commonReasonsDenied.",
+        "gap": "Writer's faqs.en is freeform (6-8 Q&A). No requirement that one of them be an eligibility/income-threshold answer with hard numbers."
+      },
+      "3.9_demographic_specificity": {
+        "status": "WEAK",
+        "evidence": "Writer never mentions household-size, family-of-N, single-mom, 1099-worker, senior demographic surfaces. Existing pages get partial credit (deductible mentions 'pregnant/chronic'; MAGI mentions 'children, pregnant adults, parents').",
+        "gap": "For income-anchored glossary terms, demographic rows should be in tables."
+      },
+      "3.10_table_chart_phrasing": {
+        "status": "MISSING",
+        "evidence": "Writer never instructs use of 'chart' / 'guidelines' / 'by [X]' phrasing in headings or table captions. Existing pages call tables generic things like 'Annual Limits'.",
+        "gap": "Add to writer: when emitting numeric tables, caption with 'chart' or 'guidelines' or 'by household size' phrasing."
+      }
+    }
+  },
+
+  "B_perTemplateFormula_4_5": {
+    "summary": "Writer LARGELY MISALIGNS with the conservative §4.5 recipe. The formula explicitly says 300-500 words, definition + 1 worked example + 1 lookup table + heavy cross-linking. Writer prompt instead pushes for introParagraphs + MIN 2 detailSections + 6-8 FAQs + optional whatCountsToward + whatDoesNotCountToward + workedExample + annualLimits — a recipe for 1,000-2,000 word pages.",
+    "shapes": {
+      "shape_1_definition_plus_scope": {
+        "status": "GOOD",
+        "evidence": "Writer requires definition + alternateNames + quickDefinition + whatCountsToward + whatDoesNotCountToward. The scope-of-inclusion shape is well-served.",
+        "gap": "None — this is the one shape Bing actually validates."
+      },
+      "shape_2_calculation_walkthrough": {
+        "status": "GOOD",
+        "evidence": "workedExample is in the schema, MAGI page has a calculation walkthrough in detail section. Writer instructs primary-source rigor.",
+        "gap": "Should be REQUIRED (not optional) for terms with a calculation (MAGI, FPL%, deductible math)."
+      },
+      "shape_3_term_x_adjacent_program": {
+        "status": "GOOD",
+        "evidence": "Writer's relatedLinks has explicit allowed prefixes pointing at adjacent lighthouses. MAGI page links to /aca-income-limits, /federal-poverty-level, /medicaid-income-limits. This is exactly the §4.5 'cross-link aggressively' guidance.",
+        "gap": "Could push harder — formula says '3-5 inline body links per page' (from LINK_TARGET_MANIFEST), but writer doesn't reference link-index.json or instruct inline-anchor link insertion in body prose. Currently links are only in relatedLinks footer."
+      }
+    },
+    "missingFromWriter": "The §4.5 explicit recipe ('300-500 words, definition + 1 worked example + 1 lookup table, cross-link aggressively') is NOT REPLICATED ANYWHERE in the writer prompt. The writer is operating from the old over-engineered template philosophy."
+  },
+
+  "C_perPageAudit": {
+    "magi": {
+      "wordCountEN": 1658,
+      "verdict": "OVER_ENGINEERED — 3.3x the §4.5 ceiling of 500 words",
+      "issues": [
+        "1,658 English words for a term with empirically validated Bing demand of ~4 queries in 2 months across all of BenefitsUSA. Massive over-investment.",
+        "introParagraphs adds 100+ words of throat-clearing before the page gets to substance.",
+        "4 detailSections (vs §4.5's '1 worked example + 1 lookup table'). 'Why MAGI Instead of Gross Income' is a history lesson, not citation-bait.",
+        "8 FAQs (vs ~3-4 needed). Several FAQs are conceptual restatements.",
+        "Missing: household-size table for MAGI thresholds (this is the single highest Bing-volume shape — §3.3).",
+        "Missing: state-named program brand mentions (Medi-Cal, AHCCCS, BadgerCare). MAGI for Medicaid is ABOUT these brands but they appear nowhere.",
+        "Missing: 2026 ACA premium tax credit / Medicaid MAGI thresholds in $ form. The page talks about MAGI as a measure but never gives the numeric thresholds."
+      ],
+      "trimRecommendation": "TRIM TO 500-600 words: keep definition, alternateNames, quickDefinition, ONE detailSection ('MAGI vs AGI'), workedExample, ADD a household-size income threshold table, 4 FAQs max. Drop 'Why MAGI Instead of Gross Income' history. Drop 'MAGI for Medicaid: Who It Applies To' (move into a brief section in MAGI vs AGI). Add inline body links to /aca-income-limits, /federal-poverty-level, /medicaid-income-limits. Add 3 state-named-program brand mentions."
+    },
+    "out_of_pocket_maximum": {
+      "wordCountEN": 904,
+      "verdict": "BORDERLINE — 1.8x the §4.5 ceiling but defensible",
+      "issues": [
+        "904 words — closer to acceptable. OOP Max is a cost/billing term tied to the analyzer funnel, so some calculator-style content earns its keep.",
+        "Has the worked example (good) and annualLimits table (good).",
+        "Only 2 detailSections (within §4.5 spirit).",
+        "7 FAQs (slightly bloated; 4-5 would suffice).",
+        "Strong 2026 anchoring throughout.",
+        "Only 3 relatedLinks footer items, NO inline body links (per LINK_TARGET_MANIFEST 3-5 inline rule).",
+        "No how-to-apply section / no Marketplace next-step CTA in body."
+      ],
+      "trimRecommendation": "TRIM TO 600-700 words: drop introParagraphs (redundant with quickDefinition + hero.subhero). Cut FAQs from 7 to 4 (keep the 2026 limit, premiums-don't-count, what-happens-after, family-vs-individual). Add 2-3 inline body links. Add a brief 'How to use this when picking a plan' applies-via-screener nudge."
+    },
+    "deductible": {
+      "wordCountEN": 1464,
+      "verdict": "OVER_ENGINEERED — 2.9x the §4.5 ceiling",
+      "issues": [
+        "1,464 words. Strong content quality but volume is wrong for the citation surface.",
+        "3 detailSections including 'Why Bronze Plans Have a Higher Deductible' (concept-explainer, low Bing demand).",
+        "8 FAQs is too many. Several restate the deductible-vs-OOP relationship.",
+        "annualLimits table by metal tier (good — that's the lookup shape).",
+        "workedExample with Marcus is well-done (good).",
+        "Numerical incoherence risk: annualLimits shows Silver $5,500 and workedExample uses Silver $5,500 — internally consistent (good).",
+        "Only 4 relatedLinks footer items, no inline body links.",
+        "No state-named program brands. Deductible varies by state — could mention CA / NY / TX averages."
+      ],
+      "trimRecommendation": "TRIM TO 500-600 words: keep definition, alternateNames, quickDefinition, annualLimits, workedExample, ONE detailSection ('Services Covered Before You Hit the Deductible' — useful + entailment-ish). Drop 'Why Bronze Plans Have a Higher Deductible' (move 1 sentence into annualLimits footnote). Drop 'Medical vs Prescription Deductible' (low Bing volume; 1 FAQ instead). Cut FAQs from 8 to 4. Add 2-3 inline body links."
+    }
+  },
+
+  "D_overEngineeringCheck": {
+    "summary": "ALL THREE existing pages exceed the §4.5 word ceiling. Average is 1,342 EN words against a 300-500 target — roughly 3x over. The writer prompt is the root cause: it lists ~15 required schema fields plus encourages MIN 2 detail sections + 6-8 FAQs + optional whatCountsToward / whatDoesNotCountToward / workedExample / annualLimits / introParagraphs. Even agents trying to be terse end up writing 1,000+ words because the schema demands volume.",
+    "wordCountAnalysis": {
+      "magi": {"words": 1658, "ratio_vs_500_ceiling": "3.32x over", "ratio_vs_300_floor": "5.53x over"},
+      "out_of_pocket_maximum": {"words": 904, "ratio_vs_500_ceiling": "1.81x over", "ratio_vs_300_floor": "3.01x over"},
+      "deductible": {"words": 1464, "ratio_vs_500_ceiling": "2.93x over", "ratio_vs_300_floor": "4.88x over"},
+      "average": {"words": 1342, "ratio_vs_500_ceiling": "2.68x over"}
+    },
+    "bloatedWithConceptExplanation": {
+      "verdict": "YES",
+      "examples": [
+        "magi: 'Why MAGI Instead of Gross Income?' detail section is pure ACA-history concept content with zero lookup value. Bing won't cite it.",
+        "deductible: 'Why Bronze Plans Have a Higher Deductible' is actuarial-value mechanics. Real users skip to the number.",
+        "magi: introParagraphs adds throat-clearing prose before the substance.",
+        "All three: FAQs include questions that restate the definition rather than answer adjacent-lookup questions."
+      ]
+    },
+    "shortestAcceptableFormat": {
+      "wordCountTarget": "300-500 words EN (per §4.5)",
+      "requiredFields": [
+        "term (en+es)",
+        "alternateNames",
+        "definition (en+es) — schema source of truth",
+        "quickDefinition (en+es) — 3-4 sentences max, leads with the number",
+        "category, ctaTarget, topic",
+        "meta.{title,description}",
+        "hero.{h1,subhero}",
+        "ONE numeric lookup table (annualLimits or similar) IF the term has year-anchored numbers",
+        "ONE worked example IF the term has a calculation",
+        "3-4 FAQs (lookup-shaped, not concept-shaped)",
+        "3-5 relatedLinks (inline + footer; required cross-linking to lighthouses per LINK_TARGET_MANIFEST)",
+        "min 3 sources",
+        "topicCluster, keyTerms.{en,es}, isLighthouse, isDeprecated (per LINK_TARGET_MANIFEST §1)"
+      ],
+      "removedFields": [
+        "introParagraphs — redundant with quickDefinition + hero.subhero, adds 100+ words of throat-clearing",
+        "MIN 2 detailSections — DROP to MAX 1 detail section, only when truly clarifying (not history/mechanics)",
+        "whatCountsToward / whatDoesNotCountToward — keep ONLY for boundary-sensitive cost terms (OOP max, deductible). Drop for definitional terms (MAGI, FPL — if needed, fold into quickDefinition or table)",
+        "FAQ floor of 6-8 — DROP to 3-4 max, all lookup/entailment shaped"
+      ]
+    }
+  },
+
+  "overEngineeringRecommendation": {
+    "verdict": "DOWNSCOPE_AGGRESSIVELY",
+    "rationale": "The §4.5 explicit warning + the empirical Bing data (4 MAGI queries in 2 months) makes this an obvious decision. Glossary's role is INTERNAL-LINK TARGET, not citation magnet. The writer prompt and the 3 existing pages are operating from the old assumption that glossary deserves deep coverage. They don't — and the time spent writing 1,500-word glossary pages is opportunity cost against state×program permutation factories (the §5.1 highest-ROI move) and FPL/Medicaid lookup pages.",
+    "specificMoves": {
+      "1_writer_prompt_rewrite": "Rewrite STEP 3 checklist to enforce 300-500 word ceiling, drop introParagraphs entirely, change 'detailSections MIN 2' to 'MAX 1', cut FAQ count from 6-8 to 3-4. Add explicit §4.5 quote at top: 'WARNING: This template is structurally over-engineered relative to real Bing demand. Keep pages SHORT. Your job is internal-link target, not citation magnet.'",
+      "2_add_link_index_consumption": "Per LINK_TARGET_MANIFEST §5: writer must read content/link-index.json, declare topicCluster + keyTerms + isLighthouse + isDeprecated, and emit 3-5 inline body links. Currently writer is silent on all of this. THIS is the highest-leverage move — it converts glossary from passive page to active link routing infrastructure.",
+      "3_add_universal_rules_3_3_3_4_3_7_3_10": "Add household-size table requirement for income-anchored terms, how-to-apply section, named-program brand requirement, and 'chart/guidelines/by X' table phrasing. These are bing-validated universals the writer is silent on.",
+      "4_kill_concept_explainer_detail_sections": "Explicit prohibition on history/mechanics/why-it-exists detail sections. Bing doesn't cite them. Detail section (if included at all) must be lookup-shaped or comparison-shaped.",
+      "5_retrim_existing_3_pages": "MAGI: 1658 -> 600 words. Deductible: 1464 -> 600 words. OOP Max: 904 -> 700 words. Add inline body links and link-index metadata to all three. Add household-size threshold tables to MAGI."
+    },
+    "expectedOutcome": {
+      "writerEffort": "Glossary writer turn-cost drops ~60% (smaller output, simpler schema requirements, fewer FAQs to draft).",
+      "citationImpact": "Minimal downside — Bing doesn't reward the volume currently being produced. Possible upside from added household-size tables (§3.3 is the highest-volume shape on BenefitsUSA real data).",
+      "linkInfrastructure": "Massive upside from converting glossary into active link-routing layer. Every glossary page becomes a 3-5 inline-link emitter pointing at the FPL / Medicaid / ACA lighthouses.",
+      "opportunityCostFreed": "Cron cycles freed from writing 1,500-word concept pages can be redirected toward state×program permutation factory (§5.1, highest-ROI move identified in formula)."
+    }
+  },
+
+  "topWriterEdits": [
+    {
+      "rank": 1,
+      "edit": "Add §4.5 warning quote to top of writer prompt. Hard-cap output at 500 EN words. Drop introParagraphs entirely. Change detailSections from 'MIN 2' to 'MAX 1, only if comparison or lookup shaped'. Drop FAQ count from 6-8 to 3-4.",
+      "impact": "Brings glossary in line with the formula's explicit guidance. Cuts wasted writer cycles by ~60%."
+    },
+    {
+      "rank": 2,
+      "edit": "Add LINK_TARGET_MANIFEST §5 INTERNAL LINK ROUTING block to writer prompt: load content/link-index.json, emit 3-5 inline body links, declare topicCluster + keyTerms.{en,es} + isLighthouse + isDeprecated metadata.",
+      "impact": "Converts glossary from passive page to active link routing infrastructure — its ACTUAL strategic role. Closes audit §2 universal pattern #4 gap (no inline body links to lighthouses)."
+    },
+    {
+      "rank": 3,
+      "edit": "Add 4 missing universal rules to writer: §3.3 household-size table required for income-anchored terms (MAGI, FPL, premium tax credit), §3.4 how-to-apply block universal, §3.7 state-named program brand mentions for state-program-relevant terms, §3.10 'chart/guidelines/by X' table phrasing.",
+      "impact": "Aligns writer with the universals derived from real-Bing data. Adds the household-size table (Bing's highest-volume shape) to the right glossary terms."
+    }
+  ],
+
+  "pagesNeedingTrim": {
+    "magi": "PRIORITY_1 — Trim 1658 -> ~600 EN words. Drop 'Why MAGI Instead of Gross Income' history. Drop 'MAGI for Medicaid: Who It Applies To' (fold one paragraph). Cut FAQs 8 -> 4. Add household-size MAGI threshold table. Add 3 state-named-program brand mentions. Add inline body links.",
+    "deductible": "PRIORITY_2 — Trim 1464 -> ~600 EN words. Drop 'Why Bronze Plans Have a Higher Deductible' (1 sentence in footnote). Drop 'Medical vs Prescription Deductible' (1 FAQ instead). Cut FAQs 8 -> 4. Add inline body links to /glossary/out-of-pocket-maximum, /aca-income-limits.",
+    "out_of_pocket_maximum": "PRIORITY_3 — Trim 904 -> ~700 EN words (least bloated, designated gold-standard reference but still over). Drop introParagraphs. Cut FAQs 7 -> 4. Add inline body links. Add link-index metadata."
+  }
+}

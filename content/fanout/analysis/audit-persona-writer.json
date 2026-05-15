@@ -1,0 +1,315 @@
+{
+  "audit_target": "coveredusa-persona-writer",
+  "audit_date": "2026-05-14",
+  "auditor": "fanout-formula-compliance-pass",
+  "scope": {
+    "writer_agent": "/Users/jacobposner/clawd/.claude/agents/coveredusa-persona-writer.md",
+    "verifier_agent": "/Users/jacobposner/clawd/.claude/agents/coveredusa-persona-verifier.md",
+    "queue": "/Users/jacobposner/clawd/projects/covered-usa/content/data/personas/_queue.json",
+    "pages_audited": [
+      "/Users/jacobposner/clawd/projects/covered-usa/content/data/personas/gig-workers.json",
+      "/Users/jacobposner/clawd/projects/covered-usa/content/data/personas/self-employed.json"
+    ]
+  },
+  "framework_anchors": {
+    "fanout_formula_section": "FANOUT_FORMULA.md §4.7 (persona template)",
+    "validation_status": "8 of 8 dominant shapes Bing-validated (tied with daily-blog for highest)",
+    "dominant_variant": "Entailment 50.2%",
+    "audit_anchor": "CURRENT_STATE_AUDIT.md §4.6 (persona deltas)"
+  },
+
+  "_____A_WRITER_AGENT_____": "===== A. WRITER AGENT COMPLIANCE WITH §4.7 RECIPE =====",
+
+  "A_writer_compliance": {
+    "summary": "Writer covers tax + financial mechanics well but does NOT enforce §4.7's 8-shape recipe, does NOT enforce §3.9 synonym coverage, and does NOT enforce §3.3/3.4 universal rules. The agent reads as a shape-agnostic 'good persona article' template, not a fan-out-aware page builder.",
+
+    "section_3_universal_rules_status": {
+      "3.1_year_marker_injection": {
+        "enforced": "PARTIAL",
+        "evidence": "Writer mandates 2026 in meta.title and an H1 like 'Health Insurance for [Persona] in 2026'. No explicit rule that EVERY H2 referencing a numeric value must include the year. No rule that EVERY table caption must be year-tagged.",
+        "gap": "Section heading year-marker rule (§3.1 line 5) not enforced"
+      },
+      "3.2_state_context_everywhere": {
+        "enforced": "N/A",
+        "evidence": "Persona is not state-scoped. Acceptable to skip."
+      },
+      "3.3_eligibility_household_size_table": {
+        "enforced": "NO",
+        "evidence": "Writer prompt cites FPL hh-1 ($15,960) and 138% hh-1 ($22,025) as anchor facts but never requires a structured householdSizeTable for income-based personas (uninsured-low-income, domestic-workers, gig-workers). gig-workers.json shows ONLY hh-1 + hh-4 inline; no full hh-size table. self-employed.json shows hh-1, hh-2, hh-4 but only inline prose. Neither emits a structured table.",
+        "gap": "CRITICAL. §3.3 explicitly requires hh-size table for any income-gating persona. This is the canonical Bing-citable artifact."
+      },
+      "3.4_how_to_apply_section": {
+        "enforced": "NO",
+        "evidence": "No required field for `howToApply` block (enrollmentDates, numberedSteps, govStartingUrl, documentsNeeded[], commonDenialReasons[]). gig-workers.json has no enumerated apply steps; self-employed.json has 'How to Project MAGI' steps but no application steps with .gov URL + documents-needed checklist. Neither lists 'Common reasons applications get denied'.",
+        "gap": "CRITICAL. Entailment is the dominant variant for personas (50.2%) and 'how to apply' is the highest-volume entailment shape per §3.4."
+      },
+      "3.5_comparison_framing": {
+        "enforced": "PARTIAL",
+        "evidence": "optionsOverview is a comparison table (X vs Y vs Z). Writer enforces it. Good."
+      },
+      "3.6_authoritative_source_narrowing": {
+        "enforced": "PARTIAL",
+        "evidence": "Writer specifies primary sources (healthcare.gov, IRS, KFF, SBA). Min 3 sources required. But no inline body links to .gov anchors—all sources foot-listed. Matches universal pattern §2/4 audit finding (no inline body links)."
+      },
+      "3.7_named_program_lookup": {
+        "enforced": "PARTIAL",
+        "evidence": "Programs (ACA Marketplace, Medicaid, CHIP, COBRA, HSA, HDHP) used canonically. State-named brands (Medi-Cal, AHCCCS, etc.) not relevant for non-state personas. Form 7206 cited correctly."
+      },
+      "3.8_eligibility_entailment": {
+        "enforced": "PARTIAL",
+        "evidence": "FAQs include 'How do gig workers get insurance', 'cheapest health insurance for gig workers', etc. But no structured eligibility block with `incomeThresholds + nonIncomeRequirements + commonReasonsDenied`. No explicit H2 'Income limits' or 'Do I qualify' phrasing in either page."
+      },
+      "3.9_demographic_specificity_synonyms": {
+        "enforced": "NO",
+        "evidence": "WRITER PROMPT HAS ZERO MENTION OF SYNONYM COVERAGE. The word 'synonym' does not appear in the writer agent. Section 5.6 framework rule (referenced in §4.7) is not propagated. CURRENT_STATE_AUDIT.md §4.6 flagged this as 'THE biggest single audit finding'—still unenforced.",
+        "gap": "CRITICAL. This is the single largest writer-agent gap. Re-verified counts confirm: gig-workers.json has 0 'freelancer', 0 'contractor', 0 'rideshare', 0 'sole proprietor', 0 'independent contractor', 0 'lyft', 0 '1099-K' (and only 2 '1099' tokens)."
+      },
+      "3.10_table_chart_phrasing": {
+        "enforced": "NO",
+        "evidence": "Writer does not require 'chart' / 'guidelines' / 'by [dimension]' phrasing in table captions. self-employed.json HSA table caption is '2026 HSA and HDHP limits'—acceptable but not lookup-shaped."
+      }
+    },
+
+    "section_4_7_recipe_status": {
+      "required_h2_sections": {
+        "spec": "§4.7 lists: Coverage options for [persona], Subsidy + tax credit eligibility, Self-employment health deduction, HSA/FSA fit, State-specific programs",
+        "writer_enforcement": "PARTIAL. Writer's required-fields checklist enforces optionsOverview + optionDetails (covers shape #1) and detailSections min 2 (covers tax angles). But it doesn't enumerate 'HSA/FSA fit' as a required section, doesn't require 'State-specific programs / stipends' as a section, and doesn't require 'Catastrophic plan eligibility' or 'SEP triggers' which are dominant shapes 7 and 8.",
+        "gap": "Writer treats detailSections as free-form 'tax/financial + situation-specific' — §4.7 says EIGHT specific entailment-heavy shapes should map to H2s/FAQs."
+      },
+      "shape_coverage_in_pages": {
+        "shape_1_persona_coverage_options_year": {
+          "gig_workers": "PASS (optionsOverview + 4 optionDetails, all year-tagged)",
+          "self_employed": "PASS"
+        },
+        "shape_2_PTC_subsidy_eligibility": {
+          "gig_workers": "PARTIAL (Option 1 covers PTC; no dedicated subsidy section)",
+          "self_employed": "PASS (covers PTC + cliff explicitly, mentions ARPA expiry)"
+        },
+        "shape_3_1099_freelancer_coverage_year": {
+          "gig_workers": "FAIL (zero 'freelancer', zero 'contractor', only 2 '1099')",
+          "self_employed": "PASS (25 'freelancer', 16 '1099')"
+        },
+        "shape_4_self_employment_health_deduction": {
+          "gig_workers": "PASS (dedicated detailSection on Form 7206 + correct Schedule SE caveat)",
+          "self_employed": "PASS (dedicated detailSection, Form 7206 + Schedule 1 line 17 specifics)"
+        },
+        "shape_5_HSA_FSA_fit": {
+          "gig_workers": "FAIL (zero mention of HSA, FSA, or HDHP anywhere)",
+          "self_employed": "PASS (dedicated detailSection with 2026 HSA/HDHP table)"
+        },
+        "shape_6_state_specific_stipend_program": {
+          "gig_workers": "FAIL (no state-specific section; no mention of CA, NY paid family leave, MA-specific programs, etc.)",
+          "self_employed": "FAIL (no state-specific stipend section)"
+        },
+        "shape_7_catastrophic_plan_eligibility": {
+          "gig_workers": "FAIL (zero mention of catastrophic plans, hardship exemption, under-30 catastrophic eligibility)",
+          "self_employed": "FAIL (zero mention of catastrophic plans)"
+        },
+        "shape_8_persona_marketplace_SEP_triggers": {
+          "gig_workers": "FAIL (no SEP section; no enumeration of qualifying life events)",
+          "self_employed": "PARTIAL (Option 4 mentions 60-day SEP after leaving W-2; FAQ on COBRA mentions SEP. No dedicated SEP H2.)"
+        }
+      },
+      "shape_coverage_score": "gig-workers: 1.5/8 dominant shapes covered. self-employed: 5.5/8 dominant shapes covered."
+    },
+
+    "writer_strengths": [
+      "Tax accuracy strong: explicit Schedule SE caveat that SE health deduction does NOT reduce SE tax (avoiding the most common LLM hallucination)",
+      "ACA cliff phrasing nuance baked in (don't write 'below 400% = subsidies' as binary)",
+      "2026 anchor facts comprehensive (FPL, HSA, HDHP, OOP, mileage rate)",
+      "Locked enums + atomic write + JSON validation = good craft hygiene",
+      "Forces every optionsOverview row to have a matching optionDetails entry (validator-enforced)",
+      "Mandates link to /event/ or /qa/ to avoid duplication",
+      "ctaTarget=screener default correct for persona pages"
+    ],
+
+    "writer_critical_gaps": [
+      "§3.9 / Section 5.6 SYNONYM COVERAGE not enforced. The word 'synonym' does not appear in the writer prompt. This is the prior audit's flagged §4.6 'biggest single finding' and remains unfixed.",
+      "§3.3 hh-size table not required. No `householdSizeTable` schema field exists. §4.7 shape #2 (PTC eligibility) and the eligibility-entailment universal rule (§3.8) cannot fan out without the canonical lookup artifact.",
+      "§3.4 howToApply block not required. No `enrollmentDates / numberedSteps / govStartingUrl / documentsNeeded[] / commonDenialReasons[]` schema. Persona Entailment is 50.2%—the dominant variant—and 'how to apply' is the top entailment shape.",
+      "§4.7 shapes #5, #6, #7, #8 (HSA/FSA fit, state-specific stipends, catastrophic plans, SEP triggers) not enumerated as required H2s. Writer's detailSections are open-ended.",
+      "Section 5.7 pronoun discipline not mentioned in writer or verifier (cf. MA-state which passes via gold-standard pattern).",
+      "Persona consolidation rule from CURRENT_STATE_AUDIT.md §3.3 / Section 2.4 cluster representative not encoded. Writer has no instruction to absorb synonym variants under one canonical slug. Queue still treats personas as 1:1 slug:JSON without consolidation guidance."
+    ],
+
+    "writer_minor_gaps": [
+      "FAQ length spec '40-100 words' conflicts with framework Section 4.5 '80-150 words' (universal pattern #15 in CURRENT_STATE_AUDIT §2)",
+      "No mention of `<strong>` density target or markdown-bold mechanism (universal pattern #2)",
+      "No paragraph word-count rule (universal pattern #1: target 150-300; current pages run 50-110)",
+      "No requirement to include CHIP for persona-with-children even when persona is non-family (gig-workers does include CHIP—good—but it's incidental, not enforced)",
+      "Sources field doesn't require .gov-anchor inline body links—all references foot-listed",
+      "No instruction to use 'chart' / 'guidelines' / 'by [dim]' phrasing on tables (§3.10)"
+    ]
+  },
+
+  "_____B_PAGE_SPECIFIC_____": "===== B. PAGE-SPECIFIC AUDIT =====",
+
+  "B_page_audits": {
+
+    "gig_workers_json": {
+      "verdict": "MAJOR REGEN REQUIRED",
+      "synonym_coverage_re_audit": {
+        "freelancer": 0,
+        "contractor": 0,
+        "rideshare": 0,
+        "rideshare_driver": 0,
+        "sole_proprietor": 0,
+        "independent_contractor": 0,
+        "self_employed": 10,
+        "1099": 2,
+        "1099-K": 0,
+        "uber": 4,
+        "doordash": 2,
+        "instacart": 2,
+        "lyft": 0,
+        "gig_worker": 29,
+        "verdict": "FAIL on Section 5.6 / §3.9. Same gap as prior audit. Writer never enforced the rule."
+      },
+      "shape_coverage_46_audit": {
+        "shape_1_coverage_options_year": "PASS",
+        "shape_2_PTC_subsidy_eligibility": "PARTIAL (covers in Option 1; no dedicated section)",
+        "shape_3_1099_freelancer_coverage": "FAIL (zero 1099-anchored content beyond a token)",
+        "shape_4_SE_health_deduction": "PASS (dedicated detailSection)",
+        "shape_5_HSA_FSA_fit": "FAIL (zero mention)",
+        "shape_6_state_specific_program": "FAIL (zero)",
+        "shape_7_catastrophic_plan_eligibility": "FAIL (zero)",
+        "shape_8_persona_SEP_triggers": "FAIL (no SEP section)"
+      },
+      "fan_out_score": "1.5 / 8 dominant shapes covered = 19%",
+      "other_findings": [
+        "meta.description.en 181 chars (>160 cap)",
+        "intro paragraph 1 starts 'If you work for Uber, DoorDash...' — GOOD persona-anchor opening",
+        "introParagraph 2 starts 'This guide covers...' — mechanical scaffold (CURRENT_STATE_AUDIT §4.1 flagged this template tic; it's recurring)",
+        "structuralProportion estimated 13-14% (target 25-35%)",
+        "0 inline body em-dashes (good)",
+        "FAQ count = 8 (in spec)",
+        "No `<caption>` schema for tables (none have tables anyway)",
+        "Sources: 4 (≥3 met). All .gov + KFF (good)",
+        "relatedLinks: 4 valid prefixes; includes /event/just-lost-job-health-insurance (satisfies writer's anti-duplication rule)",
+        "category 'Self-Employment' correct",
+        "ctaTarget 'screener' correct"
+      ],
+      "regen_priority": "HIGH — needs synonym coverage retrofit + HSA section add + SEP section add + hh-size table add + howToApply block add. Writer must be patched FIRST or regen will reproduce same gaps."
+    },
+
+    "self_employed_json": {
+      "verdict": "MEDIUM REGEN — strong on most shapes, gaps on 6/7/8",
+      "synonym_coverage_re_audit": {
+        "freelancer": 25,
+        "consultant": 4,
+        "sole_proprietor": 2,
+        "independent_contractor": 0,
+        "self_employed": 31,
+        "1099": 16,
+        "1099-K": 0,
+        "Schedule_C": "many",
+        "verdict": "MOSTLY PASS. Strong on freelancer/consultant/sole-proprietor/Schedule-C. Misses 'independent contractor' and '1099-K' (the IRS reporting form most freelancers Google)."
+      },
+      "shape_coverage_47_audit": {
+        "shape_1_coverage_options_year": "PASS (4 options)",
+        "shape_2_PTC_subsidy_eligibility": "PASS (cliff explained, ARPA expiry mentioned)",
+        "shape_3_1099_freelancer_coverage": "PASS (rich content)",
+        "shape_4_SE_health_deduction": "PASS (best in codebase — Form 7206, Schedule 1 line 17, Schedule SE caveat all present)",
+        "shape_5_HSA_FSA_fit": "PASS (dedicated detailSection with 2026 HSA/HDHP limits table)",
+        "shape_6_state_specific_program": "FAIL (no state-specific stipend, no mention of CA paid family leave for SE, NY's individual market subsidies, etc.)",
+        "shape_7_catastrophic_plan_eligibility": "FAIL (zero mention of catastrophic / hardship exemption)",
+        "shape_8_persona_SEP_triggers": "PARTIAL (60-day SEP after leaving W-2 covered; no comprehensive SEP enumeration table)"
+      },
+      "fan_out_score": "5.5 / 8 dominant shapes covered = 69%",
+      "other_findings": [
+        "meta.title.en 56 chars (in cap)",
+        "meta.description.en 145 chars (in cap)",
+        "8 body em-dashes (CURRENT_STATE_AUDIT §4.6 flagged this; still present)",
+        "Em-dash hits: 'replacing the prior worksheet inside the Schedule 1 instructions'—no, that's parens. Actual em-dash count from grep: 8–10 per CURRENT_STATE_AUDIT prior count. Re-verify with style validator.",
+        "structural proportion estimated 18% (target 25-35%, MINOR gap)",
+        "FAQ count = 8 (in spec, but answers 80-130 words — above writer's 40-100 cap, ALIGNED with framework's 80-150 target. Good ironic alignment.)",
+        "Quarterly tax + cash flow detailSection is unique value-add not in §4.7 — keep",
+        "5 sources (>3 met). KFF + IRS + healthcare.gov mix (good)",
+        "Includes link to /for/gig-workers (cross-persona internal link, good)",
+        "Internal link to /screener (CTA aligned)"
+      ],
+      "regen_priority": "MEDIUM — add state-specific section + catastrophic + comprehensive SEP table + sweep em-dashes. Or: leave as-is and patch only via verifier on next iteration."
+    }
+  },
+
+  "_____C_RECOMMENDATIONS_____": "===== C. CONSOLIDATED RECOMMENDATIONS =====",
+
+  "C_recommendations": {
+
+    "writer_edits_top_3": [
+      {
+        "priority": 1,
+        "edit": "ADD synonym coverage block to writer prompt (Section 5.6 enforcement)",
+        "spec": "Add a STEP 3 sub-section: 'Synonym coverage — list 4-8 colloquial/legal/IRS-form synonyms for the persona in `keyTerms`, and ensure each synonym appears at least 2-3 times in body content (H1/H2/intro/FAQ). For gig-workers: rideshare driver, delivery driver, freelancer, independent contractor, 1099 worker, 1099-K filer, sole proprietor, Uber driver, Lyft driver, DoorDash courier, Instacart shopper. For self-employed: freelancer, consultant, contractor, sole proprietor, Schedule C filer, 1099 contractor, independent professional, solo practitioner. Verifier MUST check synonym density.'",
+        "effort": "S",
+        "framework_anchor": "FANOUT_FORMULA §3.9 + §4.7; CURRENT_STATE_AUDIT §4.6"
+      },
+      {
+        "priority": 2,
+        "edit": "ENUMERATE the 8 dominant §4.7 shapes as required H2/section coverage",
+        "spec": "Replace the loose 'min 2 detailSections' with an explicit checklist: every persona page MUST address shapes 1-8 either in optionDetails, detailSections, or FAQ. Required H2s: 'Coverage options for [persona]', 'Subsidies and premium tax credits', 'Self-employment health insurance deduction (if applicable)', 'HSA / HDHP / FSA fit', 'State-specific programs and stipends', 'Catastrophic plan eligibility and hardship exemption', 'Marketplace SEP triggers for [persona]'. Allow 'N/A' fallback only when persona genuinely has no angle (e.g., catastrophic for >30s).",
+        "effort": "M",
+        "framework_anchor": "FANOUT_FORMULA §4.7 dominant shapes 5-8"
+      },
+      {
+        "priority": 3,
+        "edit": "ADD universal-rules block: householdSizeTable + howToApply schema fields",
+        "spec": "Add to the Persona schema (and writer required-fields checklist): `householdSizeTable` (required for income-eligibility personas: gig-workers, uninsured-low-income, domestic-workers, part-time-workers, stay-at-home-parents — hh-1 through hh-8 with FPL%, 138% FPL, 400% FPL columns) and `howToApply` (enrollmentDates string, numberedSteps array of 3-7, govStartingUrl, documentsNeeded[], commonDenialReasons[]). This unblocks both §3.3 + §3.4 universal rules in one schema migration. Validator must enforce when present.",
+        "effort": "M",
+        "framework_anchor": "FANOUT_FORMULA §3.3 + §3.4 + §3.8"
+      }
+    ],
+
+    "page_regen_priorities": [
+      {
+        "page": "gig-workers.json",
+        "priority": "HIGH",
+        "rationale": "Synonym gap unchanged from prior audit (0 freelancer/contractor/rideshare); shapes 5/6/7/8 all FAIL; 1.5/8 score = 19% fan-out coverage. Worst-performing page in current state.",
+        "blocked_on": "Writer patch — do NOT regen until synonym + shape-coverage + householdSizeTable rules land in writer prompt. Otherwise regen reproduces same gaps.",
+        "post_patch_tasks": [
+          "Add rideshare/delivery synonym sweep to body content",
+          "Add HSA/HDHP detailSection (gig workers ABOVE Medicaid threshold benefit from HSA — currently absent)",
+          "Add SEP triggers section (when does an Uber driver get SEP? Loss of Medi-Cal coverage, marriage, moving, income-bracket change)",
+          "Add state-specific section (CA AB 5 implications, NY paid family leave for SE)",
+          "Add householdSizeTable for 138% FPL + 400% FPL × hh-1 through hh-8",
+          "Add howToApply block with healthcare.gov starting URL, 5-step process, documents-needed checklist",
+          "Sweep meta.description.en to <160 chars",
+          "Replace generic 'This guide covers...' intro scaffold with persona-anchored opener"
+        ]
+      },
+      {
+        "page": "self-employed.json",
+        "priority": "MEDIUM",
+        "rationale": "5.5/8 = 69% fan-out score, the strongest persona in current state. Gaps are shapes 6/7/8. Synonym coverage strong (freelancer 25, consultant 4, sole proprietor 2). Em-dash sweep needed.",
+        "blocked_on": "Writer patch helpful but not blocking. Could selectively patch via verifier or hand-edit.",
+        "post_patch_tasks": [
+          "Add 'independent contractor' and '1099-K' synonyms (currently 0 each)",
+          "Add state-specific section",
+          "Add catastrophic plan / hardship exemption section",
+          "Expand SEP section into a comprehensive triggers table",
+          "Em-dash sweep (estimated 8-10 em-dashes still in body)",
+          "Add householdSizeTable + howToApply once schema lands"
+        ]
+      }
+    ],
+
+    "queue_consolidation_finding": {
+      "prior_audit_recommendation": "CURRENT_STATE_AUDIT §3.3 recommended consolidating 6 persona-variant queue rows (3 self-employed + 3 gig-worker variants from CU-011, CU-104, CU-098, CU-156, CU-220, plus 1099-contractor row) into the 2 existing canonical pages.",
+      "current_queue_state": "_queue.json has only 2 self-employment-category personas: 'self-employed' (status: queued) and 'small-business-owners' (status: queued, distinct identity — has employees). The 6 redundant queue rows from the sheet have NOT been added to _queue.json yet. CONSOLIDATION DECISION IS PRESERVED BY OMISSION, NOT BY EXPLICIT WRITER LOGIC.",
+      "writer_consolidation_logic": "ABSENT. Writer has no Section 2.4 cluster-representative awareness. If those 6 rows ever get added to _queue.json (e.g., via a sheet sync), the writer would generate 6 duplicate pages. Add explicit guard: 'Before queueing a new persona, check existing canonical pages for synonym overlap. If overlap >50%, route to existing page synonym sweep instead of new write.'",
+      "recommendation": "Codify the consolidation decision in the writer's STEP 0 pre-flight: refuse to write if `slug` synonym-matches an existing verified persona page within a synonym whitelist."
+    },
+
+    "verifier_followup": [
+      "Verifier does not check synonym density. Add: count occurrences of declared persona synonyms in body, FAIL if any synonym <2 occurrences.",
+      "Verifier does not check for the 8 dominant shapes. Add: scan H2s + FAQs for required topic coverage, FLAG (don't auto-edit) if a shape is missing.",
+      "Verifier should warn on em-dashes in body content (currently only style mention is in writer)."
+    ]
+  },
+
+  "_____D_BING_VALIDATION_NOTE_____": "===== D. WHY THIS MATTERS =====",
+
+  "D_strategic_note": "Persona is one of the two highest-validated templates in the entire fan-out study (8/8 shapes Bing-validated, tied with daily-blog). The template has the strongest theoretical citation upside in the codebase. The writer agent currently realizes only ~19% of that upside on gig-workers and ~69% on self-employed. Patching the writer is the highest-leverage persona work because: (1) every future persona page (10 queued, 11 with deferreds) will inherit the patched recipe, and (2) the 2 existing pages can be regenerated cleanly once the writer enforces the rules. The patch order is: writer first, schema migration second, regen third, queue cleanup fourth.",
+
+  "summary_200_words": "The persona writer agent passes craft hygiene (locked enums, atomic write, JSON validation, ctaTarget enforcement, 1:1 optionsOverview↔optionDetails) and tax accuracy (Form 7206, Schedule SE caveat, ACA cliff phrasing) but fails to enforce the FANOUT_FORMULA §4.7 recipe. The single largest gap is Section 5.6 / §3.9 synonym coverage — the word 'synonym' does not appear in the writer prompt, and the prior audit's flagged failure on gig-workers.json (0 freelancer / 0 contractor / 0 rideshare) remains unfixed today. Of §4.7's 8 Bing-validated dominant shapes, gig-workers covers 1.5 (19%) and self-employed covers 5.5 (69%). The writer also misses two universal rules (§3.3 householdSizeTable and §3.4 howToApply) that would unlock the dominant 50.2% Entailment fan-out for the entire template family. Top 3 writer edits: (1) add Section 5.6 synonym block with verifier-enforced density check; (2) enumerate the 8 §4.7 shapes as required H2 coverage; (3) add householdSizeTable + howToApply schema fields and validator hooks. Regen priorities: gig-workers HIGH (blocked on writer patch — will reproduce gaps otherwise); self-employed MEDIUM (selective patch acceptable). Queue consolidation logic should be codified in writer STEP 0 before any sheet sync re-introduces the 6 duplicate persona-variant rows."
+}

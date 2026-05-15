@@ -1,0 +1,228 @@
+{
+  "auditTarget": "event",
+  "writerAgent": "/Users/jacobposner/clawd/.claude/agents/coveredusa-event-writer.md",
+  "pagesAudited": [
+    "/Users/jacobposner/clawd/projects/covered-usa/content/data/events/turning-26-health-insurance.json",
+    "/Users/jacobposner/clawd/projects/covered-usa/content/data/events/turning-65-medicare.json",
+    "/Users/jacobposner/clawd/projects/covered-usa/content/data/events/just-lost-job-health-insurance.json"
+  ],
+  "formulaRef": "FANOUT_FORMULA.md §4.6 (Entailment 56.4%, 6/8 Bing-validated)",
+  "auditDate": "2026-05-14",
+
+  "A_writer_vs_formula": {
+    "summary": "Writer agent is the strongest single template prompt in CoveredUSA. It already enforces the Entailment-heavy recipe by name: immediate next steps, SEP windows, options comparison, mistakes, FAQs, and HowTo schema. It explicitly nails 5 of the 6 Bing-validated shapes. Two structural gaps remain — universal Eligibility/HouseholdSize from §3.3 is not enforced, and Section 3 (Universal rules) is invisible to the prompt entirely. State-extension framing is included only as a recipe hint, not as a required field. The deadline-anchored urgency block (the distinctive feature) is well-scaffolded with `kind` enum (deadline/window/no-deadline), totalTimeISO8601 ISO durations, and secondaryDeadlines. This is exemplary.",
+
+    "formulaCoverage": {
+      "shape_1_COBRA_vs_Marketplace_decision": {
+        "status": "PARTIAL",
+        "evidence": "optionsComparison REQUIRED with locked headers. COBRA + Marketplace rows enforced by example. But the writer doesn't require an explicit COBRA-vs-Marketplace H2 narrative — the comparison surfaces only as a table. Bing-validated shape wants prose narrative AND table.",
+        "fix": "Add explicit required H2 section: 'COBRA vs Marketplace vs Employer plan' as a narrative block separate from optionsComparison table. Per FANOUT_FORMULA §3.5."
+      },
+      "shape_2_SEP_window_dates_state": {
+        "status": "PASS",
+        "evidence": "urgency.kind enum + totalTimeISO8601 + secondaryDeadlines covers SEP window. Body-content state-extension instruction included for turning-26."
+      },
+      "shape_3_immediate_next_steps": {
+        "status": "PASS",
+        "evidence": "steps[] min 3, typical 5-7, with the action-verb + specific-noun rule explicitly enforced ('apply / enroll / log in / call ... healthcare.gov / your state Medicaid agency / 138% FPL / Form SSA-1-BK')."
+      },
+      "shape_4_documents_needed": {
+        "status": "MISS",
+        "evidence": "Writer agent does NOT require a 'documents needed' checklist as a structured field. Step 6 of JL.json says 'enroll within 60 days' but no documents bullet list. None of the 3 pages has a documentsNeeded array. This is the §3.4 universal rule the formula explicitly calls out as MISSING from the framework — needs addition.",
+        "fix": "Add required `documentsNeeded: { en: [], es: [] }` field. 4-8 items. e.g. proof of prior coverage (HIPAA cert/COBRA notice), pay stubs, SSN, address. Drives the Entailment expansion 'what do I need to bring'."
+      },
+      "shape_5_eligibility_for_subsidies_during_SEP": {
+        "status": "PARTIAL",
+        "evidence": "Subsidy thresholds mentioned in quickAnswer + FAQs. But no structured `eligibility` block with concrete income thresholds × household size as required by §3.3 + §3.8.",
+        "fix": "Add required `householdSizeTable` field for any event where income gates subsidy/Medicaid (job loss, turning 26, marriage, baby — basically all of them). 1, 2, 3, 4, 5+ rows × 138% FPL + 400% FPL columns, year-tagged caption '2026'."
+      },
+      "shape_6_state_extension_laws": {
+        "status": "PARTIAL",
+        "evidence": "Writer agent mentions state extensions only inside the §4.6 recipe ('State-specific rules'). Not a required field. T26 page handles it well via step 5 + commonMistakes item — but only because the writer drafted it ad-hoc. T65/JL pages don't need state-extension, but the lack of a `stateRules` schema means it inconsistently surfaces.",
+        "fix": "Add optional `stateRules: [{state, rule, sourceUrl}]` array. Required when the event has known state-level variance (turning 26, move, baby, Medicaid unwinding). Surfaces 'state-extension laws (turning 26 by state)' Bing shape as structured content."
+      },
+      "shape_7_CHIP_Medicaid_pivot": {
+        "status": "PASS",
+        "evidence": "Medicaid + CHIP threshold facts baked into anchor facts. JL.json FAQ explicitly covers 'what about my children'."
+      },
+      "shape_HowTo_schema_5_7_steps_totalTime": {
+        "status": "PASS",
+        "evidence": "Writer enforces steps[] min 3 typical 5-7. urgency.totalTimeISO8601 is required when kind=deadline|window. All 3 pages render proper HowTo schema."
+      }
+    },
+
+    "universalRulesCoverage": {
+      "3_1_year_marker": "PASS — writer says 'Reference 2026 explicitly'.",
+      "3_2_state_context": "MISS — no per-state event template exists yet (this is a Track D candidate: /event/[event]/[state] permutations). Writer doesn't enforce state context because event slugs aren't state-scoped today.",
+      "3_3_household_size_table": "MISS — see shape_5 above. Critical gap.",
+      "3_4_how_to_apply_block": "PARTIAL — steps[] covers numbered steps + .gov URLs via the action-noun rule. But no structured `enrollmentDates`, `govStartingUrl`, `documentsNeeded`, `commonDenialReasons` fields. The framework explicitly says 'event template has HowTo schema; needs to be universal.' — but the EVENT template itself doesn't have the structured sub-fields.",
+      "3_5_comparison_framing": "PARTIAL — optionsComparison table is required. Narrative comparison H2 is not.",
+      "3_6_authoritative_source_narrowing": "PASS — Primary sources section lists healthcare.gov/Medicaid.gov/medicare.gov/IRS/KFF by topic.",
+      "3_7_named_program_lookup": "PARTIAL — Medicare brand names hit. State-Medicaid brands (Medi-Cal, AHCCCS, etc.) not enforced for events that touch Medicaid.",
+      "3_8_eligibility_entailment": "PARTIAL — covered in FAQs + steps but no structured `eligibility` block with `incomeThresholds`, `nonIncomeRequirements`, `commonReasonsDenied`.",
+      "3_9_demographic_specificity": "PASS for events that have natural demographic — T26 specifies 26-year-olds, employer status, parent-plan type. JL specifies family size in $ examples.",
+      "3_10_table_chart_phrasing": "MISS — optionsComparison headers are 'Option/Typical cost/Best for/Deadline'. No 'by household size' / 'chart' / 'guidelines' phrasing."
+    },
+
+    "stylePolicyCheck": {
+      "em_dash_rule": "Writer says 'NO em / en dashes'. T26 violates with 23 em-dashes (15 in body + 4 source titles + 4 minor). T65/JL violate only in `sources[].name` (official document titles — acceptable). Writer rule is NOT being enforced; needs validator backing.",
+      "decisive_language": "PASS — 'You have 60 days', not 'You may have approximately 60 days'.",
+      "FAQ_word_count": "Writer says 40-100. Framework §4.5 says 80-150. Per CURRENT_STATE_AUDIT §2.15 this is a sitewide conflict in 7 writer agents. Event FAQs average ~60-100 words — closer to writer rule.",
+      "filler_words": "PASS — quickAnswer + intros are decisive."
+    }
+  },
+
+  "B_per_page_findings": {
+    "turning-26-health-insurance": {
+      "score": "Strongest content of the 3 (6 steps, 5 options rows, 6 mistakes, 8 FAQ pairs), but Worst style compliance",
+      "criticalIssues": [
+        "Meta title is 80 chars (10 over the 70-char cap) en+es. Writer agent's own checklist says <70. Validator missed it.",
+        "23 em-dashes total; ~15 in body content (steps, FAQs, commonMistakes, quickAnswer). Writer rule explicitly forbids em-dashes. This was flagged in CURRENT_STATE_AUDIT §4.5 as '11 em-dashes' (the count has grown).",
+        "No householdSizeTable, no documentsNeeded, no stateRules structured array (despite handling NY/NJ/FL/PA/IL/CT/MA/WI in prose). The state-extension content is the most Bing-citable Entailment shape for T26 but lives as plain text inside a step."
+      ],
+      "majorIssues": [
+        "ACA Marketplace cost range '$30 to $200/mo' for a 26-year-old is post-ARPA-expiration plausible but should cite 2026-specific KFF table.",
+        "'unmarried with no dependents' Pennsylvania rule is accurate, but the writer doesn't structure state extensions as a table — should be `stateRules` array.",
+        "Two of the 8 FAQs have answers in the 100-115 word range — borderline OK under writer rule, will need adjustment if FAQ rule moves to 80-150."
+      ],
+      "minorIssues": [
+        "Meta description en is 155 chars (under 160 cap, but es is 158 — also under cap, both pass).",
+        "Source names contain em-dashes ('HealthCare.gov — Coverage to age 26'). These are official source titles — acceptable but writer agent could neutralize via colon (`HealthCare.gov: Coverage to age 26`)."
+      ],
+      "regenPriority": "HIGH — em-dash purge + meta title cut + add structured stateRules/householdSizeTable/documentsNeeded fields. Strongest content body in the set, so worth refactoring rather than rewriting."
+    },
+
+    "turning-65-medicare": {
+      "score": "Best style compliance (4 em-dashes total, ALL in source titles only). Best urgency framing (window kind, P7M, lifetime-penalty body). Strong anchor facts ($202.90 Part B 2026, $283 deductible, $1,736 hospital deductible).",
+      "criticalIssues": [
+        "Meta description es is 174 chars (14 over 160 cap). en is 152 chars (under cap). Validator missed it.",
+        "No documentsNeeded (need: SSN, proof of age, employer creditable-coverage letter if delaying Part B, marriage cert if spouse-based SEP).",
+        "No householdSizeTable for Medicare Savings Program income thresholds (135% FPL line mentioned only in prose) — kills MSP/Extra Help Bing fan-out."
+      ],
+      "majorIssues": [
+        "urgency.kind='window' is the right choice (writer's enum-decision logic worked). But urgency.heading 'You have a 7-month window around your 65th birthday' could be sharper: 'Your 7-month Medicare enrollment window starts 3 months before your 65th birthday month' — per writer's own guidance.",
+        "Step 6 'Decide on Medigap within your guaranteed-issue window' is correct but the lifetime-lockout consequence belongs alongside the IEP deadline in urgency.body (currently only Part B 10% penalty mentioned)."
+      ],
+      "minorIssues": [
+        "Original Medicare + Part D + Medigap cost cell uses ranges without year — table caption says (2026) so OK, but ranges should reflect 2026 KFF Medigap pricing.",
+        "Could add 'IRMAA tier table' as a secondary householdSizeTable variant — highly Bing-citable for higher-income retirees."
+      ],
+      "regenPriority": "MEDIUM — fix es meta description, add IRMAA + MSP eligibility table, add documentsNeeded. Body content is solid."
+    },
+
+    "just-lost-job-health-insurance": {
+      "score": "Gold-standard reference per writer agent. Cleanest style (3 em-dashes, all in source titles). secondaryDeadlines structure (60d marketplace + 30d spouse + year-round Medicaid) is exactly what the writer prescribes.",
+      "criticalIssues": [
+        "Only 5 steps (writer says min 3, typical 5-7 — OK, but the 5 are thin compared to T26's 6 and T65's 6). Specifically missing: a 'gather your documents' step.",
+        "$22,024 FPL number in step 2 is off by $1 from the anchor fact ($22,025). Minor data drift — validator should normalize.",
+        "No householdSizeTable. The 138% FPL × family-of-4 number ($45,540) is in step 2 prose but not in a lookup table. This event has the single highest Bing demand for 'medicaid income limits family of 4 2026'-style queries."
+      ],
+      "majorIssues": [
+        "FAQs are shorter than T26/T65 — several in the 35-60 word range, below the writer's 40-100 floor in a couple cases.",
+        "optionsComparison has only 4 rows (writer says 'at least 3' — passes — but T26 has 5, T65 has 4). Could add 'Short-term limited-duration insurance (STLDI)' row with caveat that it's not ACA-compliant.",
+        "introParagraphs are short (2 paragraphs, ~70 words each — universal pattern #1 says target is 150-300 words)."
+      ],
+      "minorIssues": [
+        "Meta description es 153 chars — fine. Title 65/75 — fine.",
+        "No mention of HealthCare.gov Plan Finder URL specifically — the writer's action-noun rule wants 'healthcare.gov' but the URL itself isn't called out."
+      ],
+      "regenPriority": "MEDIUM — add documentsNeeded step, householdSizeTable, fix the $22,024 vs $22,025 inconsistency, expand introParagraphs and 2-3 short FAQs. Otherwise this is the cleanest of the three."
+    }
+  },
+
+  "C_writer_edits": [
+    {
+      "id": "E1",
+      "priority": "P0",
+      "title": "Add 4 new required structured fields",
+      "diff": "After `commonMistakes` checklist, insert: `householdSizeTable: { en: { caption, rows: [{householdSize, fpl138, fpl400}] }, es: {...} }` (REQUIRED when event income-gates Medicaid or subsidy — always for SEP events). `documentsNeeded: { en: string[], es: string[] }` (REQUIRED, 4-8 items). `stateRules: [{state, rule, sourceUrl}]` (OPTIONAL but REQUIRED for events with known state variance: turning 26, move, baby, Medicaid unwinding). `commonDenialReasons: { en: string[], es: string[] }` (REQUIRED, 3-5 items — top Entailment Bing shape).",
+      "rationale": "Closes §3.3, §3.4, §3.7, §3.8 universal-rule gaps. Surfaces the structured content that Bing fan-out actually wants."
+    },
+    {
+      "id": "E2",
+      "priority": "P0",
+      "title": "Enforce em-dash purge with validator hook",
+      "diff": "In STEP 4 Save section, add: 'Before validating JSON parses, scan all body string fields (NOT source.name) for em-dash or en-dash. If found, fail and re-draft. Source titles that contain official em-dash are allowed only inside `sources[].name`.' Add explicit list of fields-to-scan: meta.title, meta.description, hero.*, urgency.*, quickAnswer, introParagraphs, steps[].name, steps[].text, commonMistakes.items, faqs.en[].question, faqs.en[].answer, faqs.es[].question, faqs.es[].answer.",
+      "rationale": "T26 has 23 em-dashes, 15 in body. Writer rule is ignored. Self-validation in STEP 4 will catch it before save."
+    },
+    {
+      "id": "E3",
+      "priority": "P0",
+      "title": "Hard-cap meta.title at 70 chars and meta.description at 160 chars in both languages",
+      "diff": "In STEP 4 Save, add explicit length check: `meta.title.en.length <= 70`, `meta.title.es.length <= 70`, `meta.description.en.length <= 160`, `meta.description.es.length <= 160`. Fail and re-draft if violated.",
+      "rationale": "T26 title hits 80 (en+es). T65 es description hits 174. Spanish runs longer than English by ~10-20% — writer needs to draft Spanish first or compress both to ~63/150 to leave margin."
+    },
+    {
+      "id": "E4",
+      "priority": "P1",
+      "title": "Require COBRA-vs-Marketplace narrative H2 separate from comparison table",
+      "diff": "Add to STEP 3 required-fields checklist: 'For job-loss / aging-off / lost-Medicaid events: a `comparisonNarrative: { heading, body }` block giving 1 paragraph of prose comparing options, separate from `optionsComparison` table. Comparison framing required for Bing §3.5.'",
+      "rationale": "The #1 Bing-validated Entailment shape for event template is 'COBRA vs Marketplace decision'. Currently only a table — narrative is missing."
+    },
+    {
+      "id": "E5",
+      "priority": "P1",
+      "title": "Replace em-dash in source titles via colon normalization",
+      "diff": "In STEP 3 source-citation rules, add: 'When citing sources whose official titles contain em-dashes, normalize to colon: `HealthCare.gov: Coverage to age 26` instead of `HealthCare.gov — Coverage to age 26`. This is the only allowed em-dash transformation.'",
+      "rationale": "Even T65/JL — which have zero body em-dashes — have 3-4 em-dashes in source.name. Once a validator runs em-dash scan sitewide, these will fail. Colon normalization preserves meaning."
+    },
+    {
+      "id": "E6",
+      "priority": "P1",
+      "title": "Lengthen introParagraphs target to 150-300 words each",
+      "diff": "In STEP 3 add: 'introParagraphs[0] should be 150-250 words; introParagraphs[1] should be 100-200 words. Total intro section 250-450 words.'",
+      "rationale": "Universal pattern #1 from CURRENT_STATE_AUDIT §2: body paragraphs are 30-90, target 150-300. JL intros are ~70 words each."
+    },
+    {
+      "id": "E7",
+      "priority": "P2",
+      "title": "Add IRMAA + MSP table variant for Medicare-aging events",
+      "diff": "For category='Age Milestone' AND topic includes Medicare: also require an IRMAA tier table (Part B + Part D premium adjustment by income tier, 2026 anchors).",
+      "rationale": "Highly Bing-citable for retirees Googling 'medicare premium by income 2026'. T65 page has none."
+    },
+    {
+      "id": "E8",
+      "priority": "P2",
+      "title": "Inject state-named Medicaid brand in body content for events touching Medicaid",
+      "diff": "Per §3.7. For events where Medicaid is one of the comparison options (job loss, T26, marriage, baby, move), the writer should mention 2-3 representative state-named brands (Medi-Cal, AHCCCS, MNsure, BadgerCare, MaineCare, SoonerCare) somewhere in body or FAQ.",
+      "rationale": "Bing routes to state brand 4,200+ weighted citations of blind-spot patterns. LLMs default to '[state] Medicaid' — writers must inject the brand."
+    },
+    {
+      "id": "E9",
+      "priority": "P2",
+      "title": "Add table-shape phrasing to optionsComparison caption",
+      "diff": "Per §3.10. Add caption to optionsComparison: 'Your options after [event] in 2026, by deadline and cost' or similar 'by X' phrasing. Wire into the rendering layer's `<caption>` element (which is also a CURRENT_STATE_AUDIT infra fix).",
+      "rationale": "Bing reward for 'guidelines'/'by [dim]'/'chart' phrasing in numeric/decision tables."
+    }
+  ],
+
+  "regenPriorities": [
+    {
+      "page": "turning-26-health-insurance",
+      "priority": "P0",
+      "reasons": ["80-char title violation", "23 em-dashes (15 body)", "Bing-highest-citable structured state-extension table missing"],
+      "effort": "M — refactor in place; do not rewrite. Most content is excellent."
+    },
+    {
+      "page": "just-lost-job-health-insurance",
+      "priority": "P1",
+      "reasons": ["Add documentsNeeded + householdSizeTable + commonDenialReasons", "Fix $22,024/$22,025 inconsistency", "Expand 2-3 short FAQs and intros"],
+      "effort": "M — gold-standard reference status means it should set the bar."
+    },
+    {
+      "page": "turning-65-medicare",
+      "priority": "P1",
+      "reasons": ["Spanish meta description 174 chars (>160 cap)", "Add IRMAA + MSP household-size eligibility tables", "Add documentsNeeded checklist"],
+      "effort": "S-M — body is strong, additions are structured-field work."
+    }
+  ],
+
+  "biggestInsight": "The event writer is the BEST of the 7 audited so far — and the event template is the BEST per-template Bing-validation score (6/8 shapes, 56.4% Entailment dominance). The writer agent shows that when a template has a strong distinctive feature (here: urgency.kind enum + totalTimeISO8601 + secondaryDeadlines), explicit schema gates produce clean output. The gap is that the writer doesn't yet enforce the §3 UNIVERSAL rules — it nails its per-template Section 4.6 recipe but the §3.3 householdSizeTable, §3.4 documentsNeeded, §3.7 state-named brand, and §3.8 commonDenialReasons additions are missing as required fields. Adding these 4 structured fields would convert event from 'best per-template recipe' to 'best universal-rule compliance' — and Bing's grounding queries reward structured lookup over recipe prose. The em-dash discipline failure on T26 specifically (while T65/JL are clean) is a writer-self-discipline failure, not a prompt-design failure — needs validator backing in STEP 4.",
+
+  "scorecard": {
+    "writer_per_template_recipe_coverage": "5/6 PASS or PARTIAL of §4.6 shapes",
+    "writer_universal_rule_coverage": "2/10 PASS (year markers, source narrowing), 4 PARTIAL, 4 MISS",
+    "pages_style_compliance": "T26 FAIL (23 em-dashes, 80-char title), T65 PASS body / FAIL es-meta, JL PASS body / minor data drift",
+    "pages_structural_completeness": "0/3 have householdSizeTable, 0/3 have documentsNeeded, 0/3 have stateRules array, 0/3 have commonDenialReasons"
+  }
+}

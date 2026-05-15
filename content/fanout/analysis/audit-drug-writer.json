@@ -1,0 +1,314 @@
+{
+  "audit": "drug-writer + 3 existing drug pages vs FANOUT_FORMULA v1.0",
+  "date": "2026-05-14",
+  "auditor": "Frank",
+  "scope": {
+    "writer": "/Users/jacobposner/clawd/.claude/agents/coveredusa-drug-writer.md",
+    "formula_sections": ["FANOUT_FORMULA.md §3 (universal rules)", "FANOUT_FORMULA.md §4.2 (drug-cost recipe)"],
+    "pages_audited": ["ozempic-cost.json", "metformin-cost.json", "insulin-cost.json"],
+    "phase2_caveat": "§4.2 derived from single-drug Ozempic data; formula generalization to Eliquis/Jardiance not yet validated"
+  },
+
+  "A_writer_prompt_gaps": {
+    "summary": "The drug-writer is structurally strong on the basic Drug schema (Part B vs Part D split, anchor facts, FAQ count, atomic write). It is WEAK on §4.2 fan-out enforcement (manufacturer/GoodRx/cost-without-insurance triad is implicit, not required), MISSING §3.3 (household-size income table), MISSING §3.4 (how-to-apply block), MISSING §3.7/§3.2 named-program lookup, and silent on §3.10 'chart/guidelines/by X' phrasing.",
+
+    "universal_rule_compliance": [
+      {
+        "rule": "§3.1 year-marker injection",
+        "status": "ENFORCED",
+        "evidence": "Step 3 anchor facts list 2026 values; style rules require 'Reference 2026 explicitly throughout for freshness signals'.",
+        "gap": "None major. Could add explicit lint: title + H1 + meta + first paragraph + every numeric table caption must contain '2026'."
+      },
+      {
+        "rule": "§3.2 state-context-everywhere",
+        "status": "N/A then partial gap",
+        "evidence": "Drug pages are not state-scoped today, so the rule does not bind.",
+        "gap": "Writer prompt does not allow state-scoped variants (e.g., '/drug/ozempic-cost-california'). If we ever build them, prompt has zero scaffolding for state-named program brand (Medi-Cal vs CA Medicaid copay table). Flag for Phase 2."
+      },
+      {
+        "rule": "§3.3 eligibility household-size income table",
+        "status": "MISSING",
+        "evidence": "Patient-assistance programs reference '400% FPL' as a string; no household-size × income-threshold table in the JSON shape.",
+        "gap": "PAP eligibility is income-gated but writer never emits a structured table. This is the single biggest §3.3 violation across the drug template — Bing rewards literal 'household of 3 + 400% FPL' lookup."
+      },
+      {
+        "rule": "§3.4 how-to-apply block",
+        "status": "MISSING",
+        "evidence": "PAP rows include a `howToApply` URL string only. No numbered steps, no .gov starting URL pattern, no 'documents needed' checklist, no 'common reasons applications get denied' callout.",
+        "gap": "§4.2 entailment shape #1 (manufacturer assistance) demands an apply-flow. Currently the writer outputs only a domain. Add a `howToApplyPap` block with numberedSteps[3-7], govStartingUrl (or manufacturer URL when no .gov exists), documentsNeeded[], commonDenialReasons[]."
+      },
+      {
+        "rule": "§3.5 comparison framing",
+        "status": "PARTIAL",
+        "evidence": "Comparison framing surfaces in pointOfPay table (retail vs Part D vs Medicaid vs PAP) but no explicit 'GoodRx vs manufacturer card vs PAP vs Part D' comparison section is required.",
+        "gap": "Add a required 'How the discount programs compare' H2 with a comparison table — explicit user-intent framing for Bing."
+      },
+      {
+        "rule": "§3.6 authoritative source narrowing",
+        "status": "ENFORCED",
+        "evidence": "Step 2 lists CMS, FDA, manufacturer, NeedyMeds. Sources requirement: minimum 3 primary citations.",
+        "gap": "FDA.gov is in the formula §3.6 list but not in the writer's required sources list. Add: every drug page MUST cite at least one FDA.gov URL (label info, generic approval status)."
+      },
+      {
+        "rule": "§3.7 named-program lookup",
+        "status": "MISSING (drug-side)",
+        "evidence": "Writer mentions manufacturer brand programs (Lilly Insulin Value Program, NovoCare) but doesn't enforce the brand+canonical pattern.",
+        "gap": "Add: every PAP row MUST include both the brand program name AND its canonical URL/manufacturer (e.g., 'Lilly Insulin Value Program (Eli Lilly)'). For Medicaid mentions in drug pages, no state-named brand requirement; Medi-Cal/AHCCCS etc. are not enforced. Soft gap unless we ship state-scoped drug pages."
+      },
+      {
+        "rule": "§3.8 eligibility entailment ('do I qualify')",
+        "status": "MISSING",
+        "evidence": "No required FAQ or H2 phrased as 'Do I qualify for [PAP]', 'Income limits for patient assistance', 'Eligibility requirements'.",
+        "gap": "PAP eligibility is the dominant Bing-citable shape per §4.2 #1. Writer must require an H2 like 'Do I qualify for the [Manufacturer] patient assistance program' with explicit income thresholds + non-income requirements (US residency, prescription, no other insurance, etc.)."
+      },
+      {
+        "rule": "§3.9 demographic specificity",
+        "status": "PARTIAL",
+        "evidence": "Some FAQ touches on 'uninsured' as a demographic; no systematic 'family of 4', 'senior on Medicare', 'gig worker on Marketplace' breakdown.",
+        "gap": "Soft. Drug-cost is less demographically gated than blog/qa, but 'Medicare beneficiary vs commercially insured vs uninsured' is the natural axis and should be a required table or H2."
+      },
+      {
+        "rule": "§3.10 table/chart-shape phrasing",
+        "status": "MISSING",
+        "evidence": "Writer uses 'pointOfPay' table without 'chart', 'guidelines', or 'by [dimension]' phrasing in the caption.",
+        "gap": "Add to style rules: numeric tables in drug pages must use captions like 'Ozempic cost by coverage type (2026)', 'Insulin price chart by point of pay 2026', 'PAP eligibility by household size 2026'."
+      }
+    ],
+
+    "section_4_2_recipe_compliance": [
+      {
+        "shape": "1. Manufacturer assistance program + cost-without-insurance + year (Entailment, top weight)",
+        "status": "PARTIAL",
+        "evidence": "Step 2 'Patient Assistance Programs' is REQUIRED if applicable. PAP rows include cost-benefit and apply-URL.",
+        "gap": "Not coupled with cost-without-insurance contrast in a single section. The fan-out shape is 'Novo Nordisk Ozempic patient assistance program FOR THE UNINSURED' — meaning the page must explicitly answer 'I have no insurance, what does PAP get me?'. Currently scattered across PAP table + FAQ. Add a required H2: 'Patient assistance for uninsured patients' that wires PAP eligibility directly to retail-cash-price baseline."
+      },
+      {
+        "shape": "2. GoodRx pharmacy price comparison + year (Entailment)",
+        "status": "MISSING",
+        "evidence": "GoodRx is mentioned in the writer prompt as a research source ONLY. Not required as a content section. Two of three pages (Ozempic, Metformin) reference GoodRx in the PAP table; Insulin page mentions GoodRx in only one FAQ answer.",
+        "gap": "Add to §4.2 recipe: required H2 'GoodRx and pharmacy discount comparison' with a pharmacy × price table for major chains (Walmart, Costco, Kroger, CVS, Walgreens). This is shape #2 by weight — currently severely under-enforced."
+      },
+      {
+        "shape": "3. NovoCare assistance + Medicare coverage (Entailment, Bing-validated)",
+        "status": "PARTIAL",
+        "evidence": "Ozempic page covers NovoCare PAP and Medicare exclusion of Wegovy. Insulin page covers Novo Nordisk PAP.",
+        "gap": "Writer prompt has NO explicit rule that drug pages must surface 'PAP × Medicare interaction' (anti-kickback statute bars manufacturer copay cards from Medicare beneficiaries — Ozempic FAQ #5 covers this nicely; Metformin/Insulin pages don't). Add: every PAP section must include a row or callout explaining 'If you have Medicare, you cannot use the manufacturer copay card; use the income-based PAP instead.'"
+      },
+      {
+        "shape": "4. Monthly cost without insurance + year (Equivalent)",
+        "status": "ENFORCED",
+        "evidence": "Pricing object requires retailLow/retailHigh + retailUnit. Hero, quickAnswer, FAQs all surface monthly cash price."
+      },
+      {
+        "shape": "5. List price comparison (Specification)",
+        "status": "PARTIAL",
+        "evidence": "Ozempic mentions list price ($998) inline. Metformin/Insulin do not separate WAC from retail.",
+        "gap": "Add: pricing object should include `wholesaleAcquisitionCost` (WAC) field for branded drugs. List-price-vs-retail-vs-Part-D-negotiated is a §4.2 shape #5 sub-query."
+      },
+      {
+        "shape": "6. Coverage denial → alternative options (Entailment)",
+        "status": "MISSING",
+        "evidence": "Ozempic FAQ #7 touches 'will my commercial insurance cover Ozempic for weight loss' but doesn't outline appeal flow or step-therapy override.",
+        "gap": "Writer must require an H2: 'What to do if your insurance denies coverage' with: (a) appeal process, (b) step-therapy override path, (c) PAP fallback, (d) generic/biosimilar alternative if available."
+      },
+      {
+        "shape": "7. Generic / biosimilar availability (Specification)",
+        "status": "MISSING (Ozempic, Metformin partial), N/A for insulin biosimilars but missed",
+        "evidence": "Ozempic page ignores generic semaglutide question entirely (no generic exists yet — but the page should say so explicitly because LLMs fan out into 'is there a generic for Ozempic'). Metformin FAQ #6 covers generic-vs-brand for Glucophage. Insulin page does NOT mention insulin biosimilars (Basaglar, Semglee, Rezvoglar) as a coverage strategy — major gap.",
+        "gap": "Add required FAQ: 'Is there a generic / biosimilar for [drug]?' with explicit Yes/No answer + named alternatives. For drugs with no generic yet, must say 'No generic available as of 2026; expected [date if known]'."
+      },
+      {
+        "shape": "8. IRA Medicare negotiation status (Specification, year-anchored)",
+        "status": "PARTIAL — schema-defined but render-broken",
+        "evidence": "Writer prompt thoroughly covers the iraNegotiation block: lists the 10 Round-1 drugs, requires maxFairPrice/listPriceBefore/effectiveDate/source/callout, and notes Round-2 (semaglutide → 2027) for Ozempic. Ozempic page paragraph mentions Round 2 — good. Metformin/Insulin correctly OMIT iraNegotiation (neither is on the Round-1 list; insulin aspart Fiasp/NovoLog is, but the audited Insulin page is generic-flavor).",
+        "gap": "BLOCKER per CURRENT_STATE_AUDIT.md §4.2: `iraNegotiation` field is defined in `src/lib/drugs.ts` line 208 but is NEVER rendered in any route file (grep across src/app/ returns zero matches). When Eliquis or Jardiance ship, the Maximum Fair Price + effective date will silently drop. This is a CODE bug, not a writer bug, but it nullifies §4.2 shape #8 in production."
+      }
+    ],
+
+    "writer_strengths_to_preserve": [
+      "Atomic write pattern (tmp → validate → rename) — keeps build green.",
+      "Part B vs Part D classification logic is precise (medicareAspPerUnit + hcpcsJCodes only when applicable).",
+      "Anchor-fact 2026 numbers ($283 Part B deductible, $2,100 Part D OOP, $35 insulin cap, IRA = 2022) are explicit and correct.",
+      "drugClass guidance with banned generic terms ('Antidiabetic medication') and required pharmacology specificity is unusually rigorous.",
+      "FAQ flat-string vs LocalizedString exception is loudly called out — prevents a class of schema bugs.",
+      "Bilingual (EN+ES) discipline with named exceptions is correct."
+    ]
+  },
+
+  "B_existing_page_audit": {
+    "ozempic-cost": {
+      "alignment_score_pct": 68,
+      "score_basis": "10 universal rules + 8 §4.2 shapes = 18 checkpoints. Ozempic hits ~12.2/18.",
+      "strengths": [
+        "§3.1 year markers: 2026 in title, H1, meta, hero, quickAnswer, every table caption. Excellent.",
+        "§4.2 #1 manufacturer assistance: rich PAP table (4 programs) + footnote on anti-kickback statute.",
+        "§4.2 #3 NovoCare/Medicare interaction: FAQ #5 explicitly answers 'Can I use the Ozempic savings card with Medicare?' — this is exactly the Bing-validated shape.",
+        "§4.2 #4 monthly cost without insurance: $950-$1,350/mo at retail surfaced 4+ times.",
+        "§4.2 #8 IRA negotiation: Round-2 selection mentioned in introParagraph #3 (semaglutide → 2027).",
+        "Wegovy-vs-Ozempic confusion handled in 3 separate FAQs — high-value disambiguation."
+      ],
+      "gaps": [
+        "§3.3 NO household-size income table for the Novo Nordisk PAP (says '400% FPL' as a string only).",
+        "§3.4 NO numbered apply steps for NovoCare; just 'novocare.com/pap' URL.",
+        "§3.8 NO 'Do I qualify for NovoCare PAP' eligibility H2 with concrete income thresholds.",
+        "§3.10 Table caption 'Point of Pay' isn't the lookup-format phrasing Bing wants. Should be 'Ozempic cost by coverage type (2026)' or similar.",
+        "§4.2 #2 GoodRx comparison: only mentioned in passing in FAQ #1; no GoodRx-vs-Walgreens-vs-CVS-vs-Costco comparison table.",
+        "§4.2 #6 Coverage denial → alternative: weak — FAQ #7 mentions PA but no appeal-process numbered steps.",
+        "§4.2 #7 Generic availability: NOT addressed. 'Is there a generic Ozempic?' is a high-volume LLM fan-out — page must answer 'No, semaglutide is patented through ~2031; no generic or biosimilar approved as of 2026.'",
+        "iraNegotiation block: NOT populated (Ozempic is Round 2, not Round 1, so technically out-of-scope per the writer prompt's strict reading; but page should still link forward to the 2027 effective date in the schema once supported)."
+      ],
+      "regen_priority": "MEDIUM — already strong; add GoodRx pharmacy-comparison table, generic-availability FAQ, and PAP eligibility income table. Keep all FAQ disambiguation work."
+    },
+
+    "metformin-cost": {
+      "alignment_score_pct": 55,
+      "score_basis": "Strong on Part D mechanics but missing most §4.2 PAP-flavored shapes (because metformin's PAP story is 'use Walmart $4 instead'). Hits ~9.9/18.",
+      "strengths": [
+        "§3.1 year markers: 2026 throughout.",
+        "Correct §4.2 nuance: metformin has no Part B ASP, no J-code — writer prompt's Part D-only branch is followed cleanly.",
+        "Hospital-bill markup ($50-$200/tablet vs $4 retail) is a strong dispute-letter angle and surfaces 100x markup framing in 4 places.",
+        "FAQ #7 covers Medicaid coverage well (all 50 states, $1-$4 copay).",
+        "FAQ #8 explicitly addresses 'Does IRA cap metformin?' — exactly the §4.2 #8 shape, answered No with link to general $2,100 cap. Good."
+      ],
+      "gaps": [
+        "§3.3 NO household-size income table for Medicaid eligibility (Medicaid is mentioned 4x but no state × household-size threshold table — this is the formula's #1 missing artifact).",
+        "§3.4 NO apply-flow for Medicaid or Walmart $4 program.",
+        "§3.7 'Walmart $4 Generic Prescription Program' is named but the brand+canonical pairing isn't enforced; same for Costco Member Prescription Program.",
+        "§4.2 #1 Manufacturer assistance: Metformin's PAP story is correctly minimal ('use $4 generic'), but writer should require an explicit 'Why manufacturer PAP doesn't apply' callout for super-cheap generics.",
+        "§4.2 #2 GoodRx comparison: mentioned as a row in PAP table but no pharmacy × price comparison table.",
+        "§4.2 #6 Coverage denial → alternative: not addressed (rare for metformin but a 'what if Medicaid won't cover ER metformin' note belongs).",
+        "§4.2 #7 Generic vs brand: FAQ #6 is excellent on Glucophage vs generic; partial credit. Misses Glumetza/Fortamet ER cost trap explicitly tied to a coverage tip.",
+        "iraNegotiation: correctly omitted (metformin is not on the Round-1 list)."
+      ],
+      "regen_priority": "MEDIUM-LOW — page is structurally sound. Highest-leverage add is a Medicaid income limits cross-link (or embedded household-size table) and a GoodRx-vs-Walmart-vs-Costco price comparison table."
+    },
+
+    "insulin-cost": {
+      "alignment_score_pct": 62,
+      "score_basis": "Strong on Part B mechanics, IRA $35 cap, and J-codes. Misses biosimilar coverage (major), apply-flow, household-size income table. Hits ~11.2/18.",
+      "strengths": [
+        "§3.1 year markers: 2026 throughout, with explicit IRA effective date (2023).",
+        "Part B vs Part D split done well: J1815/J1817 in hcpcsJCodes, medicareAspPerUnit = $12/unit, $35/mo Part D cap rendered.",
+        "§4.2 #1 + #3 manufacturer PAP: 3 manufacturers listed (Lilly, Novo Nordisk, Sanofi) with explicit cost benefits.",
+        "§4.2 #8 (IRA cap): rendered as both pricing.medicarePartDMonthlyCap=35 AND in 3 FAQ answers. Best example of IRA enforcement across the 3 pages.",
+        "hcpcsSection block populated with J1815 + J1817 + 'what to look for' — exactly the dispute-letter framing.",
+        "commonBillingErrors block (6 items) is the strongest of the 3 pages."
+      ],
+      "gaps": [
+        "§3.3 NO household-size income table for Novo Nordisk PAP (400% FPL as string).",
+        "§3.4 NO numbered apply-flow for Lilly Insulin Value Program (just 'insulinaffordability.com').",
+        "§3.7 PAP names are good but no 'You can also try [biosimilar brand] which has its own savings program' branching.",
+        "§4.2 #2 GoodRx: mentioned in 1 FAQ; no pharmacy-comparison table.",
+        "§4.2 #7 BIOSIMILARS: NOT MENTIONED. Basaglar, Semglee, Rezvoglar are insulin biosimilars that significantly reduce cost. Page misses the entire biosimilar coverage strategy. This is the single biggest content gap on this page.",
+        "§4.2 #8 IRA negotiation Round 1: Fiasp/NovoLog (insulin aspart) IS on the Round-1 list but the page treats insulin generically — should at minimum call out that Fiasp/NovoLog have a 2026 Maximum Fair Price under negotiation.",
+        "iraNegotiation block: NOT populated even though insulin aspart qualifies. Code-render bug compounds this — even if writer populated it, route wouldn't render it."
+      ],
+      "regen_priority": "HIGH — biosimilar gap is material; Fiasp/NovoLog negotiated price is materially out-of-date; PAP apply-flow is the most-Bing-citable shape we're skipping. Recommend regen with new template after writer is patched."
+    }
+  },
+
+  "C_recommendations": {
+    "writer_edits": {
+      "P0_blocking": [
+        {
+          "edit": "Add §4.2 GoodRx pharmacy comparison table as REQUIRED H2",
+          "reason": "Shape #2 by weight; all 3 pages skip it; under-enforcing the second-most-important entailment.",
+          "implementation": "Required field `pharmacyPriceComparison` with rows for Walmart, Costco, Kroger, CVS, Walgreens. Caption: '<Drug> price by pharmacy (2026)'."
+        },
+        {
+          "edit": "Add §4.2 generic/biosimilar H2 as REQUIRED",
+          "reason": "Shape #7; insulin page silently dropped the biosimilar story; Ozempic page never said 'no generic exists yet'.",
+          "implementation": "Required field `genericBiosimilarStatus` with: hasGeneric (bool), genericName (if applicable), patentExpiry (year, if known), biosimilars[] (array with brand + manufacturer + relative cost)."
+        },
+        {
+          "edit": "Add §3.4 howToApplyPap block as REQUIRED when patientAssistancePrograms is present",
+          "reason": "Currently only a URL; entailment shape #1 demands the apply flow.",
+          "implementation": "New nested shape under each PAP row: numberedSteps[3-7], govStartingUrl OR manufacturerStartingUrl, documentsNeeded[], commonDenialReasons[]."
+        },
+        {
+          "edit": "Add §3.3 household-size income table when PAP eligibility is FPL-based",
+          "reason": "400% FPL as string is the formula's #1 missing artifact.",
+          "implementation": "Required `papEligibilityTable` with rows: Household Size (1-8) × Income Threshold ($) × FPL %. Year-tagged caption."
+        }
+      ],
+      "P1_strong_signal": [
+        {
+          "edit": "Add §4.2 'Coverage denial → alternative' H2 as REQUIRED",
+          "reason": "Shape #6 entailment; all 3 pages weak.",
+          "implementation": "Required `denialAlternatives` block: appeal process numberedSteps[3-5], stepTherapyOverride, papFallback, genericAlternative."
+        },
+        {
+          "edit": "Lint: every drug page MUST cite at least one fda.gov URL",
+          "reason": "§3.6 source domain narrowing — formula lists FDA but writer prompt doesn't.",
+          "implementation": "Update Step 2 sources list + Step 3 'sources' minimum to require fda.gov."
+        },
+        {
+          "edit": "Style rule: numeric table captions must use 'by [dimension] [year]' phrasing",
+          "reason": "§3.10 — 'Point of Pay' isn't the lookup phrasing.",
+          "implementation": "Add to style rules: 'Numeric table captions follow pattern <Drug> <metric> by <dimension> (<year>) — e.g., \"Ozempic cost by coverage type (2026)\".'"
+        },
+        {
+          "edit": "Add 'PAP × Medicare anti-kickback callout' as REQUIRED",
+          "reason": "Ozempic FAQ #5 is the gold standard; Metformin/Insulin missed it.",
+          "implementation": "Required callout in patientAssistancePrograms block: 'If you have Medicare/Medicaid/TRICARE/VA, manufacturer copay cards are blocked by federal anti-kickback statute. Use the income-based PAP instead.'"
+        }
+      ],
+      "P2_polish": [
+        {
+          "edit": "Add Round-2 IRA preview for selected-but-not-yet-effective drugs",
+          "reason": "Ozempic Round-2 callout is good; codify so semaglutide/Trulicity/Imbruvica-ext etc. all get the forward-looking 2027 mention."
+        },
+        {
+          "edit": "Add Medicare Prescription Payment Plan mention as REQUIRED for high-cost Part D drugs",
+          "reason": "Ozempic page mentions it; Insulin/Metformin don't. Newer 2025 IRA feature, high-relevance for Part D pages with retail > $200/mo."
+        }
+      ]
+    },
+
+    "page_regen_priorities": [
+      {
+        "page": "insulin-cost",
+        "priority": 1,
+        "reasoning": "Biosimilar gap (Basaglar, Semglee, Rezvoglar) is material content miss. Fiasp/NovoLog Round-1 negotiation status absent. PAP apply-flow weak. Highest content delta from regen."
+      },
+      {
+        "page": "ozempic-cost",
+        "priority": 2,
+        "reasoning": "Strong baseline. Add GoodRx comparison table + generic-availability statement + PAP household-size table. Keep Wegovy disambiguation work."
+      },
+      {
+        "page": "metformin-cost",
+        "priority": 3,
+        "reasoning": "Already structurally sound. Lowest delta — add GoodRx comparison and household-size Medicaid income table cross-link. Don't rewrite from scratch."
+      }
+    ],
+
+    "code_blockers": [
+      {
+        "blocker": "iraNegotiation field defined in src/lib/drugs.ts:208 but NEVER rendered in any route file",
+        "evidence": "Grep src/app/ for 'iraNegotiation' or 'IRANegotiation' returns 0 matches. Confirmed against CURRENT_STATE_AUDIT.md §4.2 finding (still true 2026-05-14).",
+        "impact": "When Eliquis/Jardiance/Xarelto/Januvia/Farxiga/Entresto/Enbrel/Imbruvica/Stelara/Fiasp+NovoLog ship, Maximum Fair Price + 2026 effective date will silently drop. Bing-citable §4.2 shape #8 nullified at the route layer.",
+        "fix": "Add an IRA Negotiation callout component in /src/app/[locale]/drug/[drug]/page.tsx that renders when drug.iraNegotiation is present. Block: maxFairPrice + listPriceBefore + delta % + effectiveDate + source link + callout paragraph (EN/ES)."
+      }
+    ],
+
+    "framework_recommendations": [
+      "Add §3.4 enforcement to validate-drugs.js: when patientAssistancePrograms is non-empty, howToApplyPap fields must be populated.",
+      "Add §3.3 enforcement: when any PAP references FPL %, papEligibilityTable must be populated.",
+      "Add §4.2 #2 enforcement: every drug page requires pharmacyPriceComparison block.",
+      "Add §4.2 #7 enforcement: every drug page requires genericBiosimilarStatus block (even if all-null).",
+      "Phase 2 caveat: re-run §4.2 fan-out probe against Eliquis (Round-1 IRA, Part D oral) and Jardiance (Round-1 IRA, Part D oral) to confirm formula generalizes off Ozempic. Currently single-drug-derived."
+    ]
+  },
+
+  "audit_metadata": {
+    "checkpoints_total": 18,
+    "ozempic_pct": 68,
+    "metformin_pct": 55,
+    "insulin_pct": 62,
+    "average_pct": 62,
+    "weakest_universal_rule": "§3.3 household-size income table (0/3 pages)",
+    "weakest_section_4_2_shape": "#2 GoodRx pharmacy comparison (0/3 pages with required table)",
+    "biggest_code_blocker": "iraNegotiation render bug — schema-defined, route-orphaned"
+  }
+}

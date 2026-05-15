@@ -1,0 +1,206 @@
+{
+  "auditedAt": "2026-05-14T00:00:00Z",
+  "writer": "blog (coveredusa-article-writer)",
+  "formulaVersion": "FANOUT_FORMULA.md v1.0 (2026-05-14)",
+  "filesAudited": {
+    "writerPrompt": "/Users/jacobposner/clawd/.claude/agents/coveredusa-article-writer.md",
+    "stage1Cron": "/Users/jacobposner/clawd/.claude/claudeclaw/jobs/coveredusa-seo-stage1.md",
+    "stage2Cron": "/Users/jacobposner/clawd/.claude/claudeclaw/jobs/coveredusa-seo-stage2.md",
+    "blogPosts": [
+      "/Users/jacobposner/clawd/projects/covered-usa/content/blog/federal-poverty-level-2026-guidelines.md",
+      "/Users/jacobposner/clawd/projects/covered-usa/content/blog/medicare-part-b-cost-2026.md",
+      "/Users/jacobposner/clawd/projects/covered-usa/content/blog/how-to-negotiate-hospital-bills.md"
+    ]
+  },
+  "currentWriter": {
+    "rulesEnforced": [
+      "3.1 Year markers (writer Step 3 says 'Find: Current income limits and FPL percentages for 2026'; AI-source block requires 'As of 2026 freshness signals'; Style Rules say 'VERIFY ALL FACTS: every income limit, FPL percentage, dollar amount'. However, year-marker enforcement is implicit and incomplete: writer prompt does NOT explicitly require year in title, H1, meta, first paragraph, every numeric table caption, every numeric heading.)",
+      "3.6 Authoritative source narrowing (PARTIAL — writer is told to research current data via WebSearch but has no explicit rule requiring inline .gov citations with anchor text containing the source domain. The Step 3 research instructions cite no required source domains by topic.)"
+    ],
+    "rulesMissing": [
+      "3.2 State-context-everywhere — writer prompt mentions 'If state-specific: mention the state screener link as well' but does NOT require state name in title, H1, meta, every H2 first sentence, every table caption, all numeric thresholds. State-named program brands (Medi-Cal, AHCCCS, MNsure, SoonerCare, MaineCare, BadgerCare, AllKids, TennCare, ARHOME, NJ FamilyCare, MassHealth, HIP, OHP, CHP+, CalFresh) are not mentioned anywhere in the writer prompt.",
+      "3.3 Eligibility-household-size-table — writer prompt only says 'Include income limit tables (markdown tables) where applicable'. There is no explicit requirement for a household-size lookup table with rows 1-8 + 'add per additional person', no requirement for year-tagged caption, no schema field requirement.",
+      "3.7 Named-program lookup — completely absent. No mention of state-named brands (Medi-Cal, AHCCCS, MNsure, etc.), no requirement to use both brand and canonical generic.",
+      "3.8 Eligibility entailment — writer prompt does not require an explicit 'Income limits' / 'Eligibility requirements' / 'Do I qualify' H2 with concrete numeric thresholds + nonIncomeRequirements + commonReasonsDenied. 'Step-by-step application instructions where applicable' is the closest, but no eligibility-block requirement.",
+      "3.9 Demographic specificity — writer prompt does not require demographic dimensions (family of N, single mom, 1099, self-employed, senior) as table rows or H2 sections.",
+      "3.10 Table/chart-shape phrasing — writer prompt does not require literal 'chart' / 'guidelines' / 'by household size' / 'by state' phrasing in section headings or table captions.",
+      "4.9 daily-blog FPL super-shape recipe — entirely absent. Writer has no awareness of the FPL super-shape recipe. No required H2 list (FPL chart YEAR / By household size / By percentage thresholds / FPL × Medicaid / FPL × ACA subsidies / FPL × CHIP / WIC / SNAP / Alaska + Hawaii adjustments). No required full FPL chart 1-8 × percentage thresholds. No required state-by-state Medicaid expansion status table. No state-specificity requirement for blog FPL pages."
+    ],
+    "rulesPartial": [
+      "3.4 How-to-apply section — writer prompt says 'Step-by-step application instructions where applicable', but missing: enrollment-window dates, .gov starting URL requirement, 'Documents needed' bullet checklist, 'Common reasons applications get denied' callout. 'Where applicable' weakens the rule; the formula treats it as universal.",
+      "3.5 Comparison framing — writer prompt has no explicit instruction to consider X vs Y vs Z framing. Some article types naturally fall into it; the prompt does not codify it."
+    ],
+    "rulesConflicting": [
+      "Writer's Style Rule 'NO em dashes (—) or en dashes (–)' is fine, but the writer-prompt content target of '1500-2500 word article' conflicts with §4.5 glossary recipe ('Keep glossary pages SHORT (300-500 words). Don't write 2,000-word concept deep-dives'). Not a daily-blog conflict per se, but the writer agent is also used downstream and a single word-count rule will mis-shape glossary if it ever routes here.",
+      "AI Source Optimization block ('More FAQ questions: Aim for 6-8 FAQ items (vs 3-4 for Google source)') makes FAQ density conditional on SOURCE field. The formula treats high-FAQ density as universal for benefits/program/eligibility topics regardless of SOURCE.",
+      "TARGET=analyzer rule 'Avoid /screener links inside the article body' is fine on its own, but conflicts with §3.4 'official .gov starting URL' for benefits pages — analyzer-target articles still need the eligibility/.gov anchors; writer prompt has no such carveout."
+    ]
+  },
+  "existingPages": [
+    {
+      "page": "/blog/federal-poverty-level-2026-guidelines",
+      "alignmentScore": "high",
+      "shapesCovered": [
+        "3.1 year markers (title, slug, meta, first paragraph, table captions all year-tagged)",
+        "3.3 eligibility household-size table (full 1-8 person FPL chart for 48 states + Alaska + Hawaii, with 'add per additional person' line)",
+        "3.8 eligibility entailment (Medicaid Eligibility H3, 138% FPL table, ACA subsidy thresholds table)",
+        "3.10 table/chart-shape phrasing (multiple H2s use 'Federal Poverty Level Table', 'How to Use FPL to Estimate Your Coverage Options' lookup table)",
+        "4.9 FPL super-shape — partial: covers FPL chart, by household size, FPL × Medicaid, FPL × ACA subsidies, FPL × CHIP, Medicare Savings Programs, Alaska + Hawaii adjustments, what changed 2025 to 2026, 200% FPL FAQ"
+      ],
+      "shapesMissing": [
+        "4.9 By percentage thresholds — present in body text but no dedicated 'By percentage thresholds' H2 with the canonical 100% / 138% / 150% / 200% / 250% / 400% lookup table",
+        "4.9 FPL × SNAP eligibility — not covered (SNAP only mentioned via cross-link to other charity care article)",
+        "4.9 FPL × WIC eligibility — not covered",
+        "4.9 State-by-state Medicaid expansion status table — paragraph mentions '38 states that expanded' but no state-by-state list/table",
+        "3.4 How-to-apply section — entirely missing (no numbered apply steps, no .gov starting URL, no documents-needed checklist, no common-denial-reasons block)",
+        "3.6 Authoritative source narrowing — no inline .gov citations (aspe.hhs.gov, healthcare.gov, medicaid.gov are never linked or anchored as such)",
+        "3.7 Named-program lookup — no state-named brands (Medi-Cal, MassHealth, etc.) referenced anywhere"
+      ],
+      "specificGaps": [
+        "Add 'By percentage thresholds' H2 with full multiplier table (100/138/150/200/250/400% FPL × household size 1-8)",
+        "Add 'FPL × SNAP eligibility 2026' H2 with 130% gross / 100% net thresholds by household size",
+        "Add 'FPL × WIC eligibility 2026' H2 with 185% FPL thresholds",
+        "Add 'Medicaid expansion status by state' table (38 expansion vs 12 non-expansion, listing the 12)",
+        "Add 'How to apply for FPL-based programs' H2 with .gov URLs (medicaid.gov, healthcare.gov), numbered steps, documents needed",
+        "Inline-link aspe.hhs.gov as the FPL source"
+      ]
+    },
+    {
+      "page": "/blog/medicare-part-b-cost-2026",
+      "alignmentScore": "medium",
+      "shapesCovered": [
+        "3.1 year markers (title, slug, meta, first paragraph, IRMAA table, comparison table all 2026-tagged)",
+        "3.4 How-to-apply section — present, partial ('How to Enroll in Medicare Part B' has 6 numbered steps + ssa.gov + 1-800-772-1213 + IEP/GEP/SEP windows)",
+        "3.5 Comparison framing — Part B vs other Medicare parts table; Medigap vs Advantage vs Medicaid vs MSP comparison",
+        "3.7 Named-program lookup — partial (QMB, SLMB, QI, QDWI named with full names); IRMAA, Medigap, Medicare Advantage all branded",
+        "3.8 Eligibility entailment — Medicare Savings Programs section has income limits + asset limits"
+      ],
+      "shapesMissing": [
+        "Frontmatter missing 'target' field (should be 'screener')",
+        "3.2 State-context-everywhere — N/A (national topic), but no state-MSP variation noted (states can use higher thresholds — only mentioned in passing)",
+        "3.3 Eligibility household-size table — partial; MSP table only shows Individual + Couple, not full 1-8 household",
+        "3.6 Authoritative source narrowing — ssa.gov mentioned in body text but not hyperlinked; no medicare.gov, cms.gov inline anchored citations",
+        "3.10 Table/chart-shape phrasing — table captions don't use 'chart' / 'by income' / 'by year' phrasings",
+        "Documents needed checklist — partial (lists SSN, citizenship proof, employment records inline in step 2 but not as a checklist H3)",
+        "Common denial reasons callout — missing"
+      ],
+      "specificGaps": [
+        "Add target: 'screener' to frontmatter",
+        "Hyperlink ssa.gov, medicare.gov, cms.gov inline in body where they're mentioned",
+        "Convert 'How to Enroll' step 2 inline document mentions to an explicit 'Documents needed' bullet list under an H3",
+        "Add 'Common reasons Part B applications get rejected' callout (late enrollment penalty disputes, IRMAA reconsideration denials, missing residency proof)",
+        "Reword table captions to use 'by income bracket', 'by year', 'by program' phrasings"
+      ]
+    },
+    {
+      "page": "/blog/how-to-negotiate-hospital-bills",
+      "alignmentScore": "low",
+      "shapesCovered": [
+        "3.1 year markers (description and first paragraph reference 2026; charity care threshold table captions tagged 'Typical 2026'; 2023, 2025, 1996 historical references throughout)",
+        "3.4 How-to-apply section — partial (Step-by-step charity care application H3 has 4 numbered steps + 240-day rule)",
+        "3.5 Comparison framing — duplicate-charges/upcoding/unbundling errors table; charity-care-vs-payment-plan FAQ",
+        "3.10 Table/chart-shape phrasing — 'Typical 2026 Charity Care Income Thresholds' table has chart-shape framing"
+      ],
+      "shapesMissing": [
+        "Frontmatter has 'target: analyzer' (correct) but the article does not deeply lean into the FPL super-shape relevance for this topic",
+        "3.2 State-context-everywhere — N/A (national)",
+        "3.3 Eligibility household-size table — present for charity care thresholds but limited to households 1-4 (not 1-8 per formula); no 'add per additional person' line",
+        "3.6 Authoritative source narrowing — cms.gov mentioned in body text but not hyperlinked; IRS Section 501(r) and No Surprises Act referenced without inline gov anchors; CFPB rule reference uncited",
+        "3.7 Named-program lookup — Medicaid/CHIP/SSI/SNAP/WIC referenced as a list but no state-named program brands or canonical brand cross-link",
+        "3.8 Eligibility entailment — charity care eligibility is implicit; no 'Do I qualify for charity care' explicit H2 with concrete thresholds + nonIncomeRequirements + common-denial-reasons",
+        "Year markers in tables — 'Typical 2026 Charity Care Income Thresholds' uses 2025 FPL numbers ($15,650 for 1-person, $32,150 for 4-person — these are 2025 figures, not 2026). This is a fact error vs. the FPL article on the same site which lists 2026 as $15,960 / $33,000. Verifier should have caught this."
+      ],
+      "specificGaps": [
+        "Fix charity care threshold table: numbers are 2025 FPL, article header says 2026, blog title and date are 2026. Replace with 2026 figures ($15,960 / $21,640 / $27,320 / $33,000) and extend household 5-8 + 'add per person' line.",
+        "Hyperlink cms.gov (No Surprises Help Desk), irs.gov (501(r)), consumerfinance.gov (CFPB rule)",
+        "Add explicit 'Do I qualify for charity care' H2 with the eligibility-block: income thresholds + asset/residency requirements + common denial reasons (income above limit, missed 240-day window, hospital is for-profit)",
+        "Add named-program cross-link line to Medi-Cal / MassHealth / HIP / etc. to satisfy named-program lookup",
+        "Note: this article's TARGET=analyzer correctly steers the CTA, but the eligibility/.gov density still needs to be high since the topic is benefits-adjacent"
+      ]
+    }
+  ],
+  "cronPipelineGaps": [
+    "Stage 1 STEP 3 spawns writers with KEYWORD/TITLE/STATE/PROGRAM/SOURCE/TARGET only. It does NOT pass topicCluster, formula recipe id (e.g. 'daily-blog FPL super-shape'), or required H2 list. Writer must infer template from KEYWORD; this is the highest-leverage gap because it means the writer never sees §4.9.",
+    "Stage 1 selection script (coveredusa-select-articles.js, not read here) appears to pull from the SEO Ideas Sheet without any topicCluster column awareness. Recommend adding a topicCluster / formulaRecipe column to the sheet so the cron passes it through.",
+    "Stage 1 STEP 4.5 spawns coveredusa-article-verifier per article. The verifier currently fact-checks claims but is not (per the cron) pattern-checking against §3 universal rules. Verifier should also run a structural lint: year-in-title, household-size table presence when income-gating, .gov inline citation count, named-program brand presence when state-scoped.",
+    "Stage 1 STEP 6 report does not surface formula-compliance metrics (e.g., 'household-size table missing in 2 of 5 articles'). Add a 'Formula compliance summary' block.",
+    "Stage 2 commits + IndexNow fine in isolation. But Stage 2 has zero formula checks before deploy — if Stage 1 verifier silently passes a non-compliant article, Stage 2 will publish it. Recommend a pre-deploy lint that re-checks the §3 universal rules and quarantines failures into Needs Review.",
+    "Both stages have no schema-field requirement. The formula §6 calls for JSON-template fields (householdSizeTable, howToApply, eligibility blocks) — current writer outputs only markdown frontmatter, no structured schema. This blocks any future validator from enforcing §3.3, §3.4, §3.8 mechanically.",
+    "Stage 1 cron model is sonnet — appropriate for writing, but the spawned writer agent is also sonnet (model: sonnet line in agent frontmatter). Fine for the formula; not a gap.",
+    "writerPrompt references /Users/frankthebot/clawd/... paths (Step 1, Step 2, Step 5). Audit was run from /Users/jacobposner/clawd/... — these absolute paths likely fail on Jacob's MacBook. Confirm cron only runs on Mac mini or fix the path."
+  ],
+  "recommendations": {
+    "writerEdits": [
+      {
+        "edit": "Add a new 'TEMPLATE RECIPE' section after Step 2 that branches on the keyword/topicCluster. For daily-blog FPL-shape topics: REQUIRED H2s = ['FPL chart YEAR', 'By household size', 'By percentage thresholds (100/138/150/200/250/400%)', 'FPL x Medicaid', 'FPL x ACA subsidies', 'FPL x CHIP', 'FPL x WIC', 'FPL x SNAP', 'Alaska + Hawaii adjustments', 'How to apply', 'State-by-state Medicaid expansion status']. Pin the full FPL 1-8 x percentage matrix as a required table.",
+        "priority": "high",
+        "effort": "S"
+      },
+      {
+        "edit": "Add a new universal CONTENT REQUIREMENTS block enforcing the 10 universal rules: (a) year markers in title/H1/meta/first-100-words/every-numeric-table-caption; (b) when state in scope: state name in title/H1/meta/every-H2-first-sentence/every-table-caption + state-named program brand from the canonical brand list (Medi-Cal, AHCCCS, MNsure, SoonerCare, MaineCare, BadgerCare, AllKids, TennCare, ARHOME, NJ FamilyCare, MassHealth, HIP, OHP, CHP+, CalFresh); (c) when income gates eligibility: full household-size table 1-8 + 'add per additional person' line + year-tagged caption; (d) when topic is benefits/program/coverage: explicit 'Income limits' or 'Eligibility requirements' or 'Do I qualify' H2 with thresholds + nonIncomeRequirements + commonReasonsDenied; (e) every page: 'How to apply' H2 with enrollment-window dates + 3-7 numbered steps + .gov starting URL + 'Documents needed' bullet checklist + 'Common denial reasons' callout; (f) inline .gov anchor links by topic (Medicare -> medicare.gov + cms.gov; Medicaid -> medicaid.gov + state agency; ACA -> healthcare.gov + kff.org; FPL -> aspe.hhs.gov; drug pricing -> cms.gov + fda.gov); (g) table captions and headings use 'chart' / 'guidelines' / 'by [dimension]' phrasings; (h) demographic-specific rows (family of N, single mom, 1099, self-employed, senior) when topic supports.",
+        "priority": "high",
+        "effort": "S"
+      },
+      {
+        "edit": "Remove the conditional gating on AI Source Optimization (currently only fires when SOURCE='AI'). Make 6-8 FAQs + Quick Answer blockquote + 'As of YEAR' freshness signals universal for all benefits/program/eligibility blog topics. The fan-out formula treats Bing-grounding optimization as universal, not source-conditional.",
+        "priority": "high",
+        "effort": "S"
+      },
+      {
+        "edit": "Add a TARGET=analyzer carveout that preserves the §3.4 .gov inline citation requirement. Current rule 'Avoid /screener links inside the article body' is fine; add 'But still link out to .gov sources inline (medicare.gov, cms.gov, healthcare.gov, irs.gov etc.) per universal rule §3.6.'",
+        "priority": "medium",
+        "effort": "S"
+      },
+      {
+        "edit": "Add 'Required JSON schema fields' block: every article frontmatter must declare topicCluster (e.g. 'daily-blog-fpl', 'medicare-cost', 'medical-debt'), formulaRecipe (e.g. '4.9-fpl-super-shape'), and (when income-gated) a YAML householdSizeTable block + howToApply block + eligibility block. Validator can then mechanically enforce §3.3, §3.4, §3.8.",
+        "priority": "medium",
+        "effort": "M"
+      },
+      {
+        "edit": "Replace 'Step 3: Research' bullet 'Current income limits and FPL percentages for 2026' with a stronger anchor: 'Cite ASPE poverty guidelines (aspe.hhs.gov) for FPL; CMS (cms.gov) for Medicare costs; medicaid.gov + state agency for Medicaid; healthcare.gov + KFF for ACA. Use inline anchor text containing the source domain.'",
+        "priority": "medium",
+        "effort": "S"
+      },
+      {
+        "edit": "Add to Style Rules: 'When citing a year-anchored figure, the immediately surrounding sentence must include the year. Never write a dollar amount or percentage without a year within the same sentence or table caption.' This catches the kind of 2025-FPL-mislabeled-as-2026 error in the hospital-bills article.",
+        "priority": "high",
+        "effort": "S"
+      },
+      {
+        "edit": "Update writer prompt path references from /Users/frankthebot/clawd/... to a portable env-derived path or document Mac-mini-only execution. Current paths will silently fail on Jacob's MacBook.",
+        "priority": "low",
+        "effort": "S"
+      },
+      {
+        "edit": "Update Stage 1 cron prompt (coveredusa-seo-stage1.md STEP 3) to pass TOPIC_CLUSTER and FORMULA_RECIPE fields to the writer agent. Requires a corresponding column in the SEO Ideas sheet (or derive from KEYWORD via a routing map).",
+        "priority": "high",
+        "effort": "M"
+      },
+      {
+        "edit": "Add a Stage 1 STEP 4.6: Formula Compliance Lint. Spawn a coveredusa-formula-linter agent (new) per article. It returns pass/fail per universal rule + per-template recipe. Failures route to Needs Review alongside verifier flags.",
+        "priority": "medium",
+        "effort": "L"
+      }
+    ],
+    "pagesToRegen": [
+      {
+        "page": "/blog/how-to-negotiate-hospital-bills",
+        "priority": "high",
+        "reason": "Charity care threshold table uses 2025 FPL numbers ($15,650 / $32,150) but article date is 2026-05-12 and prose says 'Typical 2026'. This is a factual error verifier missed. Also missing eligibility H2, 5-8 person rows, named-program brands, .gov inline anchors. Regen with corrected formula + 2026 FPL data."
+      },
+      {
+        "page": "/blog/federal-poverty-level-2026-guidelines",
+        "priority": "high",
+        "reason": "This is the canonical FPL article — the directly-mapped exemplar of §4.9 daily-blog FPL super-shape. Currently HIGH alignment but still missing: dedicated 'By percentage thresholds' H2 with full multiplier table, FPL x SNAP, FPL x WIC, state-by-state Medicaid expansion status table, How-to-apply section, inline aspe.hhs.gov anchor. Lifting this to full-recipe compliance will be a major Bing-grounding magnet and templates the regen pattern for sibling articles."
+      },
+      {
+        "page": "/blog/medicare-part-b-cost-2026",
+        "priority": "medium",
+        "reason": "MEDIUM alignment — solid year markers, has how-to-apply, comparison framing, named MSP programs. Touch-up rather than full regen: add target frontmatter, hyperlink .gov references inline, restructure documents-needed as explicit bullet H3, add common denial reasons callout, reword table captions with 'by income bracket' phrasings."
+      }
+    ],
+    "shouldPauseCron": "no",
+    "shouldPauseCronRationale": "Cron writes 5 screener + 5 analyzer = 10 articles/day. Pausing for the days needed to ship the writer-prompt edits costs 10-30 articles. The current writer produces MEDIUM-alignment output (the 3 representative pages are HIGH/MEDIUM/LOW). The downside of running another 30 articles at MEDIUM alignment is small relative to the upside of preserving daily publishing momentum. Better path: ship the priority-HIGH writer-prompt edits today (S effort = 1-2 hours of editing), let cron continue from tomorrow's run with the new prompt, then queue the 30+ existing articles for batch regen separately. Caveat: if the writer-prompt edits slip more than 3 days, pause cron — the cumulative drift starts to dominate.",
+    "totalEffortEstimate": "Writer prompt edits (priorityHIGH only): 1-2 hours of focused editing, S effort. Add Stage 1 cron context-passing change: 30-60 min, M effort. Add formula-compliance linter agent: 4-6 hours, L effort. Regen 3 representative articles after writer prompt update: ~30 min/article x 3 = 1.5 hours. Backfill regen of all FPL/Medicare/Medicaid existing blog content: deferred to Track E batch job (out of scope for this audit). TOTAL HIGH-PRIORITY work to unblock daily-correct output: ~4 hours."
+  }
+}

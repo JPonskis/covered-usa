@@ -1,0 +1,274 @@
+{
+  "auditedAt": "2026-05-14T00:00:00Z",
+  "writer": "procedure (coveredusa-procedure-writer)",
+  "formulaVersion": "FANOUT_FORMULA.md v1.0 (2026-05-14)",
+  "pagesAudited": [
+    "/cost/mri",
+    "/cost/ct-scan",
+    "/cost/colonoscopy"
+  ],
+  "note": "Task originally specified /cost/x-ray as the third page; that file does not exist in content/data/procedures/. Substituted /cost/colonoscopy (the only other shipped procedure page) for representativeness. Current shipped procedure inventory: mri, ct-scan, colonoscopy.",
+
+  "currentWriter": {
+    "rulesEnforced": [
+      {
+        "rule": "§3.1 Year-marker injection",
+        "evidence": "Writer prompt requires 'Reference 2026 explicitly throughout for freshness signals' and `lastUpdated` ISO date. Meta title example also bakes in 2026 ('MRI Cost Without Insurance in 2026'). All 3 audited pages comply."
+      },
+      {
+        "rule": "§3.6 Authoritative source narrowing (.gov citations)",
+        "evidence": "Writer prompt mandates 'Minimum 3 primary-source citations' and explicitly lists CMS.gov, FAIR Health Consumer, KFF, HHS.gov as preferred. All 3 audited pages cite cms.gov/healthcare.gov/medicare.gov."
+      },
+      {
+        "rule": "§4.1 recipe — 'Cost without insurance + year' (canonical equivalent shape)",
+        "evidence": "Writer prompt requires `pricing` block (nationalMedian/Low/High) plus quickAnswer that 'summarizes the price range + Medicare rate.' All 3 pages lead with 2026 cash price."
+      },
+      {
+        "rule": "§4.1 recipe — Hospital outpatient vs Independent imaging center comparison",
+        "evidence": "Writer prompt requires `siteOfService.rows` with at least 2 (typically 3-4) and explanationParagraphs. All 3 pages have 4-row site-of-service tables."
+      },
+      {
+        "rule": "§4.1 recipe — Medicare rate benchmark for the procedure",
+        "evidence": "Writer prompt requires `medicarePfsRate`, `medicareOppsRate`, `partBDeductibleAmount: 283`, and a `medicareSection`. All 3 pages comply with both PFS and OPPS rates called out."
+      },
+      {
+        "rule": "§4.1 recipe — Cost without insurance + sub-type/body part + year (variants)",
+        "evidence": "Writer prompt allows `variants` (optional) for 'sub-types worth tabulating (body parts for imaging).' MRI and CT scan pages emit body-part variant tables; colonoscopy uses screening-vs-diagnostic variant table."
+      },
+      {
+        "rule": "§4.1 recipe — Insurance copay/coinsurance estimate",
+        "evidence": "Writer prompt requires `medicareCoinsurancePct: 20` and the medicareSection covers MA copays. All 3 pages comply."
+      },
+      {
+        "rule": "Style: no em/en dashes, plain numbers, no filler",
+        "evidence": "Writer prompt is explicit. Spot-check confirms compliance across all 3 pages."
+      }
+    ],
+
+    "rulesPartial": [
+      {
+        "rule": "§3.5 Comparison framing (X vs Y vs Z)",
+        "evidence": "Writer prompt enforces siteOfService comparison (hospital vs imaging center) but does not require an explicit 'X vs Y' table heading or framing for adjacent comparisons (e.g., MRI vs CT, screening vs diagnostic, ASC vs hospital vs office). MRI page lacks an MRI-vs-CT comparison FAQ; CT page added one in FAQ but not in H2. Colonoscopy nails it via variants table.",
+        "gap": "Comparison framing is implicit only for site-of-service. Other comparison axes (MRI vs CT, contrast vs non-contrast as their own section, ASC vs hospital outpatient as a named heading) are emitted inconsistently."
+      },
+      {
+        "rule": "§3.7 Named-program lookup (Medicare program names + brand)",
+        "evidence": "Writer prompt mentions 'Medicare 2026 Part B' and 'Medicare Advantage' but does not require canonical program-name coverage (e.g., 'Medicare Part B,' 'Original Medicare,' 'Medigap,' 'Medicare Advantage,' 'Medicaid,' state-named brands). Pages reference Medigap and Part B but not consistently. Colonoscopy mentions ACA + USPSTF; MRI/CT do not consistently invoke ACA preventive framing where relevant.",
+        "gap": "No required-vocabulary checklist."
+      },
+      {
+        "rule": "§4.1 recipe — Self-pay discount programs / cash pay rates",
+        "evidence": "Writer prompt does not require a dedicated self-pay/cash-pay H2 section. The faqs typically include one Q&A on cash pay (all 3 pages have one), but there is no standalone H2 'Cash pay discount programs' or table of self-pay rate benchmarks."
+      },
+      {
+        "rule": "§3.10 Table/chart-shape framing",
+        "evidence": "Pages emit numeric tables but headings do not use literal 'chart' / 'guidelines' / 'by [dimension]' phrasing consistently. Variants heading ('MRI Cost by Body Part in 2026') uses 'by [dim]' — good. SiteOfService section has no table caption that uses 'chart' or 'by site of service.'"
+      },
+      {
+        "rule": "§3.9 Demographic specificity",
+        "evidence": "Procedure-cost is largely demographically uniform; writer prompt does not enforce demographic sub-rows. Colonoscopy correctly surfaces age 45+ and screening-vs-diagnostic; MRI/CT do not address 'kids vs adult,' 'senior pricing,' or 'self-pay vs insured' sub-segments. Low priority for procedure-cost."
+      }
+    ],
+
+    "rulesMissing": [
+      {
+        "rule": "§3.4 How-to-apply / next-steps section (universal — Entailment is 24.3% of procedure-cost variants)",
+        "evidence": "Writer prompt has NO requirement for a 'How to request a Good Faith Estimate' numbered step block, NO requirement for a documents-needed checklist, NO 'common reasons price quotes change' callout, NO `howToApply` JSON field. None of the 3 pages have a numbered step-by-step process for getting a price estimate before the procedure.",
+        "impact": "HIGH — directly maps to the §4.1 dominant shape #2 (Good Faith Estimate / No Surprises Act compliance, Bing-validated) AND shape #8 (Pre-procedure cost estimate request process)."
+      },
+      {
+        "rule": "§4.1 recipe — Required H2 'Good Faith Estimate process'",
+        "evidence": "Writer prompt does not require a Good Faith Estimate H2 section. The phrase 'Good Faith Estimate' does NOT appear in any of the 3 audited JSON files (mri, ct-scan, colonoscopy). No NSA reference in mri or ct-scan; colonoscopy has a `relatedLinks` entry pointing to /no-surprises-act but no body coverage.",
+        "impact": "HIGH — this is the #2 dominant shape AND the only Bing-validated shape in §4.1. Single biggest miss in the whole audit."
+      },
+      {
+        "rule": "§4.1 recipe — Required H2 'Insurance coverage breakdown' (separate from Medicare section)",
+        "evidence": "Writer prompt requires a `medicareSection` but does not require a parallel commercial-insurance section (HDHP deductible behavior, in-network vs out-of-network, prior authorization, copay tiers). Pages cover this only via 1-2 FAQ entries."
+      },
+      {
+        "rule": "§4.1 recipe — Required H2 dedicated to 'Cash-pay / self-pay discount programs'",
+        "evidence": "Not required by the writer prompt and not present as an H2 in any audited page. Cash-pay information is buried in 1 FAQ per page."
+      },
+      {
+        "rule": "§3.2 State-context-everywhere",
+        "evidence": "Writer prompt explicitly says 'State-specificity: optional (procedure-cost is geographically uniform-ish).' Per §4.1 recipe this is correct — state-context is optional for procedure-cost. NOT a gap. (Recording for completeness.)",
+        "impact": "N/A — formula explicitly de-prioritizes state context for procedure-cost."
+      },
+      {
+        "rule": "§3.3 Eligibility household-size table",
+        "evidence": "Income-based eligibility does not apply to procedure-cost pages. NOT a gap. (Recording for completeness.)",
+        "impact": "N/A — out of scope for procedure-cost."
+      },
+      {
+        "rule": "§3.8 Eligibility entailment (do I qualify / income limits)",
+        "evidence": "Procedure-cost pages don't gate on income eligibility (other than ACA preventive coverage on screening colonoscopy, which the colonoscopy page handles well). NOT a gap for the template overall.",
+        "impact": "N/A — out of scope, except for screening-vs-preventive context which colonoscopy handles."
+      }
+    ],
+
+    "rulesConflicting": []
+  },
+
+  "existingPages": [
+    {
+      "page": "/cost/mri",
+      "alignmentScore": "medium",
+      "shapesCovered": [
+        "Cost without insurance + year (canonical equivalent) — quickAnswer + pricing block",
+        "Cost without insurance + sub-type (body part) + year — variants table covers 8 body parts",
+        "Hospital outpatient vs Independent imaging center — siteOfService 4-row table",
+        "Medicare rate benchmark — both PFS ($475) and OPPS ($720) called out, Part B deductible $283 referenced",
+        "Insurance copay/coinsurance — 20% coinsurance + Medigap/MA mentions",
+        "Cash-pay rates — 1 FAQ ('Can I get an MRI without insurance?')"
+      ],
+      "shapesMissing": [
+        "Good Faith Estimate / No Surprises Act compliance — shape #2 in §4.1, Bing-validated. ZERO mentions in the file.",
+        "Pre-procedure cost estimate request process — shape #8. No numbered steps anywhere.",
+        "Self-pay discount programs as a dedicated H2 — only buried in 1 FAQ.",
+        "MRI vs CT comparison framing — could be a short section or FAQ.",
+        "ACA preventive screening framing — N/A (MRI is rarely a USPSTF preventive). OK to skip."
+      ],
+      "specificGaps": [
+        "Add an H2 'How to request a Good Faith Estimate for an MRI' with 5-7 numbered steps + the cms.gov No Surprises Act starting URL.",
+        "Add an H2 'Cash-pay and self-pay discount programs' (independent center programs, hospital chargemaster discount asks, sliding-scale).",
+        "Add a faq: 'How do I get an MRI cost estimate before scheduling?' with concrete steps (3-day rule, written estimate, NSA right).",
+        "siteOfService table uses 'site' but no caption phrasing like 'MRI cost chart by site of service 2026' — soft §3.10 gap."
+      ]
+    },
+
+    {
+      "page": "/cost/ct-scan",
+      "alignmentScore": "medium",
+      "shapesCovered": [
+        "Cost without insurance + year — quickAnswer/pricing",
+        "Cost by body part + year — robust variants table (10 body parts, contrast handling, low-dose lung screening)",
+        "Hospital vs Independent imaging center — full siteOfService table",
+        "Medicare rate benchmark — PFS $185 / OPPS $340 / deductible $283",
+        "Insurance copay/coinsurance — 20% + MA prior auth mentioned",
+        "Cash-pay rates — 1 FAQ on self-pay",
+        "Comparison framing — has CT vs MRI FAQ (stronger than MRI page on this axis)",
+        "Preventive coverage callout — low-dose lung cancer screening covered at 100% (excellent NSA-adjacent signal)"
+      ],
+      "shapesMissing": [
+        "Good Faith Estimate / NSA process — shape #2, Bing-validated. ZERO mentions.",
+        "Pre-procedure cost estimate request process — shape #8. No numbered steps.",
+        "Dedicated self-pay/cash-pay H2 (only in 1 FAQ).",
+        "Standalone H2 for ER vs scheduled CT cost (mentioned briefly in factorsAffectingCost but not surfaced)."
+      ],
+      "specificGaps": [
+        "Add an H2 'How to request a Good Faith Estimate for a CT scan' with numbered steps + NSA URL.",
+        "Add an H2 'Cash-pay CT scan programs and bundled rates'.",
+        "Add an FAQ on emergency room CT pricing vs scheduled CT (factor mentioned but not addressed in Q&A)."
+      ]
+    },
+
+    {
+      "page": "/cost/colonoscopy",
+      "alignmentScore": "high",
+      "shapesCovered": [
+        "Cost without insurance + year — pricing block",
+        "Cost by sub-type — screening vs diagnostic vs surveillance variants table (5 rows, the right axis for this procedure)",
+        "ASC vs hospital outpatient vs GI office vs inpatient — 4-row siteOfService",
+        "Medicare rate benchmark — PFS $400 + ASC $680 + OPPS $1,260 + deductible $283 + 2022 rule update on screening-to-therapeutic conversion",
+        "Insurance copay/coinsurance — explicit ACA preventive 100% coverage + Medicare carve-outs",
+        "Cash-pay rates — 1 FAQ + bundled pricing mention",
+        "Comparison framing — variants table effectively serves as screening-vs-diagnostic-vs-surveillance comparison",
+        "ACA preventive entailment — well-covered (USPSTF reference, age 45+, modifier 33/PT discussion)",
+        "HCPCS codes filled (G0105, G0121) — only one of three pages with HCPCS codes",
+        "Common billing errors — 7 items, all procedure-specific (most thorough of the 3)",
+        "No Surprises Act link in relatedLinks (closest any page comes to NSA coverage)"
+      ],
+      "shapesMissing": [
+        "Good Faith Estimate as an H2 process section with numbered steps — even colonoscopy only links to /no-surprises-act in relatedLinks; no body coverage.",
+        "Pre-procedure cost estimate request process — no numbered how-to steps."
+      ],
+      "specificGaps": [
+        "Add an H2 'How to request a Good Faith Estimate for a colonoscopy' with numbered steps; the page already has the strongest NSA-adjacent context (anesthesiologist-out-of-network billing-error item) but does not explain the GFE consumer right.",
+        "Consider an FAQ on 'How to get a bundled cash-pay quote that includes anesthesia and pathology' — partial coverage exists but as a single sentence."
+      ]
+    }
+  ],
+
+  "recommendations": {
+    "writerEdits": [
+      {
+        "id": "WE-1",
+        "edit": "Add a REQUIRED top-level JSON field `goodFaithEstimate` to the `Procedure` interface, with sub-fields { numberedSteps[5-7], govStartingUrl, documentsToBring[], commonReasonsQuoteChanges[], deadline (3-day rule for self-pay) }. Update writer prompt STEP 3 checklist to mark this field as required. Update writer prompt §4.1 H2 list to require an H2 'How to request a Good Faith Estimate' rendered from this field. Source: cms.gov/nosurprisesact and HHS GFE consumer guidance.",
+        "priority": "HIGH",
+        "effort": "M",
+        "rationale": "Single largest gap. §4.1 dominant shape #2 AND the only Bing-validated shape in the procedure-cost recipe. Currently 0/3 pages cover it."
+      },
+      {
+        "id": "WE-2",
+        "edit": "Add a REQUIRED `selfPayPrograms` block to the schema with sub-fields { dedicatedSection: bool, programTypes[] (e.g., 'independent imaging center cash bundles', 'hospital chargemaster discount ask', 'sliding-scale FQHC', 'state-run screening programs'), typicalDiscountRange, howToAsk[] }. Require this rendered as its own H2 'Cash-pay and self-pay discount programs', not a single FAQ.",
+        "priority": "HIGH",
+        "effort": "M",
+        "rationale": "§4.1 dominant shape #5 (Self-pay discount programs / cash pay rates). Currently only in 1 buried FAQ per page. Bing rewards specific lookup-shaped content over a single Q&A."
+      },
+      {
+        "id": "WE-3",
+        "edit": "Update writer prompt to enforce comparison-framing rules from §3.5 universally for procedure-cost: (a) require an explicit comparison FAQ to the most adjacent procedure (MRI vs CT, colonoscopy vs Cologuard, etc.); (b) require siteOfService heading phrasing to use 'by site of service' (§3.10 chart-shape phrasing); (c) for procedures with a screening-vs-diagnostic distinction, require a variants table on that axis (already done well on colonoscopy).",
+        "priority": "MEDIUM",
+        "effort": "S",
+        "rationale": "Comparison framing appears in 7/8 templates; converts to TABLE-shaped pages that Bing cites. Quick prompt-only edit."
+      },
+      {
+        "id": "WE-4",
+        "edit": "Update writer prompt to require a brief 'Insurance coverage breakdown' H2 SEPARATE from medicareSection, covering: HDHP deductible behavior, in-network vs out-of-network spread (cite NSA balance-billing protections where applicable), prior authorization typical for high-cost imaging/procedures, copay tier ranges for commercial plans.",
+        "priority": "MEDIUM",
+        "effort": "M",
+        "rationale": "§4.1 dominant shape #7 (Insurance copay/coinsurance estimate when user has insurance). Currently only in 1-2 FAQs. Bing under-rewards this in current pages."
+      },
+      {
+        "id": "WE-5",
+        "edit": "Update writer prompt §4.1 required-FAQ-topics list to explicitly include: (1) 'How do I request a Good Faith Estimate?', (2) 'What is the No Surprises Act and does it apply to me?', (3) 'How do I get a written cash-pay quote?', (4) 'Can I negotiate a hospital bill after the fact?'. Currently the FAQ checklist says only 'How to request a Good Faith Estimate; What's covered by Medicare/Medicaid; Cash-pay discount programs' as suggestions; make them required entries (not suggestions).",
+        "priority": "HIGH",
+        "effort": "S",
+        "rationale": "FAQs are the highest-leverage AI-citation real estate per the Framework. Making 4 specific FAQ topics required closes most of the WE-1 / WE-2 gap with minimal schema change."
+      },
+      {
+        "id": "WE-6",
+        "edit": "Add to writer prompt a required-vocabulary checklist: 'Body content must explicitly use these canonical terms at least once each: Original Medicare, Medicare Part B, Medicare Advantage, Medigap, ACA-compliant plan, USPSTF (where preventive applies), No Surprises Act, Good Faith Estimate, chargemaster.' Auto-validatable via grep.",
+        "priority": "MEDIUM",
+        "effort": "S",
+        "rationale": "§3.7 named-program lookup. Currently inconsistent across pages. Cheap to enforce via lint."
+      },
+      {
+        "id": "WE-7",
+        "edit": "Update writer prompt to require table captions and section headings to use 'by [dimension]' / 'chart' / 'guidelines' phrasing per §3.10. Concretely: siteOfService caption becomes '[Procedure] cost chart by site of service (2026)'; variants section caption already uses 'by Body Part' (good). Add this as a hard checklist item.",
+        "priority": "LOW",
+        "effort": "S",
+        "rationale": "Soft signal but free to add. Consistent with §3.10 universal rule."
+      },
+      {
+        "id": "WE-8",
+        "edit": "Add to writer prompt a HCPCS-codes enforcement note: prefer to fill `hcpcsCodes` whenever a Level II G/J/Q code applies (colonoscopy did this with G0105/G0121; MRI and CT left empty when they could have filled 73721 etc — but those are CPT, AMA-licensed, so empty is correct). Just clarify the rule and add a comment field for 'CPT-only procedure, intentionally empty' so reviewers know.",
+        "priority": "LOW",
+        "effort": "S",
+        "rationale": "Quality-of-life. MRI/CT pages are technically correct (no HCPCS Level II for routine MRI/CT) but the empty array looks like an oversight."
+      }
+    ],
+
+    "pagesToRegen": [
+      {
+        "page": "/cost/mri",
+        "priority": "HIGH",
+        "reason": "Missing GFE/NSA section + dedicated cash-pay H2 + MRI-vs-CT comparison FAQ. Highest-traffic procedure topic; biggest absolute miss on the Bing-validated shape #2."
+      },
+      {
+        "page": "/cost/ct-scan",
+        "priority": "HIGH",
+        "reason": "Same gaps as MRI (no GFE/NSA, no dedicated cash-pay H2). Has a stronger MRI-vs-CT comparison and a preventive-coverage callout (lung-cancer screening) so partial credit, but still needs regen for shape #2."
+      },
+      {
+        "page": "/cost/colonoscopy",
+        "priority": "MEDIUM",
+        "reason": "Strongest of the 3 (HIGH alignment). Only missing GFE/NSA H2 with numbered steps. Could be patched with an Edit rather than full regen."
+      }
+    ],
+
+    "totalEffortEstimate": "Writer-prompt edits: ~4-6 hours (WE-1, WE-2 require schema changes in src/lib/procedures.ts + page template updates; WE-3 through WE-8 are prompt-only). Page regen: ~$0.50-$1 each via Sonnet * 3 procedures = ~3 hours including verification. Total: ~1 working day to ship the formula-aligned writer + regen all 3 procedures."
+  },
+
+  "biggestInsight": "The procedure-cost writer is well-tuned for the #1 (Equivalent: cost-without-insurance) and #4 (Specification: hospital vs imaging center) shapes — basically the 'how much does X cost' lookup. It is silent on the #2 shape (Good Faith Estimate / No Surprises Act process), which is the ONLY Bing-validated shape in the §4.1 recipe. The single highest-ROI move for procedure-cost is to add a structured GFE/NSA block to the schema and require it in every page, then regen the 3 existing pages. That one change moves all 3 pages from medium-to-high alignment to high alignment on the only directly-validated citation surface for this template."
+}
