@@ -130,6 +130,54 @@ export type QACategory =
  */
 export type QAPageType = 'coverage' | 'terminology' | 'definition' | 'eligibility';
 
+/**
+ * Subtype dispatch. Determines which §4 recipe applies:
+ * - 'coverage': §4.3 Medicare/ACA/federal-Medicaid coverage Q&A
+ * - 'state-eligibility': §4.4 state-Medicaid eligibility (Medi-Cal, SoonerCare, AHCCCS, etc.)
+ *
+ * GATE I enforces: subtype=coverage ↔ pageType ∈ {coverage, terminology, definition};
+ * subtype=state-eligibility ↔ pageType=eligibility.
+ */
+export type QASubtype = 'coverage' | 'state-eligibility';
+
+/**
+ * 9-row household-size income table (state-eligibility subtype).
+ * Required exactly 9 rows: sizes 1-8 + "Each additional".
+ * Caption MUST be year-tagged AND include the state brand.
+ */
+export interface HouseholdSizeRow {
+  /** "1" | "2" | ... | "8" | "Each additional" */
+  size: string;
+  incomeLimit: LocalizedString;
+  notes?: LocalizedString;
+}
+
+export interface HouseholdSizeTable {
+  caption: LocalizedString;
+  year: number;
+  rows: HouseholdSizeRow[];
+  footnote?: LocalizedString;
+  source: string;
+}
+
+/**
+ * How-to-apply block (universal — both subtypes).
+ * Coverage subtype gets a thinner version (enrollment dates, OEP/AEP);
+ * state-eligibility subtype gets the full numbered application workflow.
+ */
+export interface HowToApply {
+  /** 3-7 numbered steps */
+  numberedSteps: LocalizedString[];
+  /** Starting URL (.gov for state-elig; medicare.gov or healthcare.gov for coverage) */
+  govStartingUrl: string;
+  /** 4-8 items */
+  documentsNeeded: LocalizedString[];
+  /** 3-5 items */
+  commonDenialReasons: LocalizedString[];
+  /** Optional enrollment window or deadline (e.g., "Year-round for Medicaid", "Oct 15 - Dec 7, 2026 for AEP") */
+  deadline?: LocalizedString;
+}
+
 export interface QA {
   /** URL slug, also JSON filename without extension. Slug typically IS the question, e.g., "does-medicare-cover-dental". */
   slug: string;
@@ -201,6 +249,57 @@ export interface QA {
   relatedLinks: RelatedLink[];
 
   sources: QASource[];
+
+  // ─── Track C-prime additive fields (optional; gracefully degrade if absent) ──
+  // Renderer-side wiring lands in Track E. Until then, fields ship in the JSON
+  // and the validator picks them up but the page template doesn't render them
+  // as dedicated H2s (writer embeds equivalent content in detailSections too).
+
+  /**
+   * Subtype dispatch. Set by writer's STEP 0a.
+   * GATE I enforces consistency with pageType.
+   */
+  subtype?: QASubtype;
+
+  /**
+   * Kebab-case topic cluster (e.g., "medicare-coverage", "aca-coverage",
+   * "medicaid-coverage", "medicaid-income-california", "medicaid-eligibility-oklahoma").
+   * Used by link-index builder + content-quality validator.
+   */
+  topicCluster?: string;
+
+  /**
+   * Bilingual key terms object (NOT a flat array — flat array fails content-quality.js).
+   * 3-6 phrases per language.
+   */
+  keyTerms?: {
+    en: string[];
+    es: string[];
+  };
+
+  /** Q&A pages are spokes, not lighthouses. */
+  isLighthouse?: boolean;
+
+  /** Set true when sunsetting a page. */
+  isDeprecated?: boolean;
+
+  /**
+   * Canonical state-program brand (e.g., "Medi-Cal", "SoonerCare", "AHCCCS").
+   * Required when subtype=state-eligibility per GATE G-elig.
+   */
+  stateBrand?: string;
+
+  /**
+   * 9-row household-size income table (REQUIRED when subtype=state-eligibility per GATE F-elig).
+   * Sizes 1-8 + "Each additional". Year-tagged caption including state brand.
+   */
+  householdSizeTable?: HouseholdSizeTable;
+
+  /**
+   * How-to-apply block (RECOMMENDED universal per RULE 3; REQUIRED state-eligibility subtype).
+   * Coverage subtype gets a thinner version; state-eligibility gets the full workflow.
+   */
+  howToApply?: HowToApply;
 }
 
 // ─── Loader functions ─────────────────────────────────────────────────────
