@@ -258,8 +258,8 @@
   "medicareSection": {
     "paragraphs": [
       {
-        "en": "Medicare covers screening mammograms at $0 patient cost for women age 40 and older, once every 12 months. There is no Part B deductible and no coinsurance for a screening mammogram. The billing code is HCPCS G0202 (bilateral digital screening mammogram). Women aged 35 to 39 are eligible for one baseline mammogram. If your doctor or other provider accepts Medicare assignment, you will not receive a bill for a screening mammogram.",
-        "es": "Medicare cubre las mamografías de detección a $0 de costo para el paciente para mujeres de 40 años en adelante, una vez cada 12 meses. No hay deducible de la Parte B ni coseguro para una mamografía de detección. El código de facturación es HCPCS G0202 (mamografía de detección digital bilateral). Las mujeres de 35 a 39 años son elegibles para una mamografía de referencia. Si su médico u otro proveedor acepta la asignación de Medicare, no recibirá una factura por una mamografía de detección."
+        "en": "Medicare covers screening mammograms at $0 patient cost for women age 40 and older, once every 12 months. There is no Part B deductible and no coinsurance for a screening mammogram. The bill goes to Medicare under the bilateral digital screening mammography billing code. Women aged 35 to 39 are eligible for one baseline mammogram. If your doctor or other provider accepts Medicare assignment, you will not receive a bill for a screening mammogram.",
+        "es": "Medicare cubre las mamografías de detección a $0 de costo para el paciente para mujeres de 40 años en adelante, una vez cada 12 meses. No hay deducible de la Parte B ni coseguro para una mamografía de detección. La factura se envía a Medicare bajo el código de facturación de mamografía de detección digital bilateral. Las mujeres de 35 a 39 años son elegibles para una mamografía de referencia. Si su médico u otro proveedor acepta la asignación de Medicare, no recibirá una factura por una mamografía de detección."
       },
       {
         "en": "If your screening mammogram leads to an abnormal finding and your provider orders a diagnostic mammogram to follow up, that subsequent mammogram is billed as diagnostic, not screening. Diagnostic mammograms carry the full Part B cost-sharing structure: 20% coinsurance after the 2026 Part B deductible of $283. If you have a Medigap (Medicare Supplement) plan, it typically covers the 20% coinsurance and may cover the deductible as well, depending on the plan type. Medicare Advantage plans cover screening mammograms at $0 under AEP coverage rules, though plan-specific cost-sharing for diagnostic mammograms varies.",
@@ -320,8 +320,8 @@
     },
     "items": [
       {
-        "en": "Screening mammogram billed as diagnostic because intake paperwork mentioned breast pain or a prior biopsy. If you scheduled it as routine preventive screening and have no current symptoms, the billing code should remain screening (G0202). Ask the provider to review the claim modifier.",
-        "es": "Mamografía de detección facturada como diagnóstica porque el papeleo de admisión mencionó dolor en el seno o una biopsia previa. Si la programó como detección preventiva de rutina y no tiene síntomas actuales, el código de facturación debe seguir siendo de detección (G0202). Pida al proveedor que revise el modificador del reclamo."
+        "en": "Screening mammogram billed as diagnostic because intake paperwork mentioned breast pain or a prior biopsy. If you scheduled it as routine preventive screening and have no current symptoms, the billing code should remain a screening code. Ask the provider to review the claim modifier.",
+        "es": "Mamografía de detección facturada como diagnóstica porque el papeleo de admisión mencionó dolor en el seno o una biopsia previa. Si la programó como detección preventiva de rutina y no tiene síntomas actuales, el código de facturación debe seguir siendo de detección. Pida al proveedor que revise el modificador del reclamo."
       },
       {
         "en": "Hospital outpatient facility fee billed for a mammogram performed at an affiliated imaging center. If your mammogram was done at a freestanding radiology location, it should not carry a hospital facility fee.",
@@ -340,8 +340,8 @@
         "es": "Facturación duplicada por la misma mamografía de detección en la misma fecha, una del radiólogo y otra de la instalación con códigos de servicio superpuestos."
       },
       {
-        "en": "Being charged for a bilateral study when only a unilateral (one-breast) exam was ordered. G0202 is specifically for bilateral (both breasts). If only one breast was imaged, a different code applies and the price should be lower.",
-        "es": "Cobro por un estudio bilateral cuando solo se ordenó un examen unilateral (un seno). G0202 es específicamente para bilateral (ambos senos). Si solo se examinó un seno, se aplica un código diferente y el precio debería ser más bajo."
+        "en": "Being charged for a bilateral study when only a unilateral (one-breast) exam was ordered. The bilateral screening code covers both breasts. If only one breast was imaged, a different code applies and the price should be lower.",
+        "es": "Cobro por un estudio bilateral cuando solo se ordenó un examen unilateral (un seno). El código de detección bilateral cubre ambos senos. Si solo se examinó un seno, se aplica un código diferente y el precio debería ser más bajo."
       }
     ]
   },
@@ -362,7 +362,7 @@
       },
       {
         "question": "Does Medicare cover mammograms in 2026?",
-        "answer": "Medicare covers annual screening mammograms at $0 for women age 40 and older when the provider accepts Medicare assignment. No Part B deductible and no coinsurance apply. The HCPCS billing code is G0202 (bilateral digital screening mammogram). Women ages 35 to 39 may receive one baseline mammogram covered at $0. Diagnostic mammograms after an abnormal result are billed with standard Part B cost-sharing: 20% coinsurance after the 2026 Part B deductible of $283."
+        "answer": "Medicare covers annual screening mammograms at $0 for women age 40 and older when the provider accepts Medicare assignment. No Part B deductible and no coinsurance apply. The bill goes to Medicare under the bilateral digital screening mammography billing code. Women ages 35 to 39 may receive one baseline mammogram covered at $0. Diagnostic mammograms after an abnormal result are billed with standard Part B cost-sharing: 20% coinsurance after the 2026 Part B deductible of $283."
       },
       {
         "question": "What does the USPSTF recommend for mammogram screening in 2024?",
@@ -378,7 +378,7 @@
       },
       {
         "question": "My insurance covered my mammogram at $0, but I still got a bill. What happened?",
-        "answer": "The most common reason is that the mammogram was reclassified from screening to diagnostic. If intake notes mentioned any symptom, or if a prior abnormality was in your record, the billing code may have changed. Request an itemized bill and look for the billing code: G0202 is screening (covered at $0), while codes for diagnostic mammography carry cost-sharing. Also check whether the radiologist who read your images was out-of-network, which can generate a separate bill. Under the No Surprises Act, if the facility was in-network, the radiologist cannot balance-bill you."
+        "answer": "The most common reason is that the mammogram was reclassified from screening to diagnostic. If intake notes mentioned any symptom, or if a prior abnormality was in your record, the billing code may have changed. Request an itemized bill and look at the procedure code: a screening mammography code carries $0 cost-sharing on ACA plans and Medicare, while a diagnostic mammography code carries cost-sharing. Also check whether the radiologist who read your images was out-of-network, which can generate a separate bill. Under the No Surprises Act, if the facility was in-network, the radiologist cannot balance-bill you."
       },
       {
         "question": "Starting in 2026, does my ACA plan have to cover follow-up imaging after a mammogram at $0?",
@@ -400,7 +400,7 @@
       },
       {
         "question": "¿Cubre Medicare las mamografías en 2026?",
-        "answer": "Medicare cubre las mamografías de detección anuales a $0 para mujeres de 40 años en adelante cuando el proveedor acepta la asignación de Medicare. No se aplica deducible de la Parte B ni coseguro. El código de facturación HCPCS es G0202 (mamografía de detección digital bilateral). Las mujeres de 35 a 39 años pueden recibir una mamografía de referencia cubierta a $0. Las mamografías diagnósticas después de un resultado anormal se facturan con costos compartidos estándar de la Parte B: 20% de coseguro después del deducible de la Parte B 2026 de $283."
+        "answer": "Medicare cubre las mamografías de detección anuales a $0 para mujeres de 40 años en adelante cuando el proveedor acepta la asignación de Medicare. No se aplica deducible de la Parte B ni coseguro. La factura se envía a Medicare bajo el código de facturación de mamografía de detección digital bilateral. Las mujeres de 35 a 39 años pueden recibir una mamografía de referencia cubierta a $0. Las mamografías diagnósticas después de un resultado anormal se facturan con costos compartidos estándar de la Parte B: 20% de coseguro después del deducible de la Parte B 2026 de $283."
       },
       {
         "question": "¿Qué recomienda el USPSTF para la detección con mamografía en 2024?",
@@ -416,7 +416,7 @@
       },
       {
         "question": "Mi seguro cubrió mi mamografía a $0, pero igual recibí una factura. ¿Qué pasó?",
-        "answer": "La razón más común es que la mamografía se reclasificó de detección a diagnóstica. Si las notas de admisión mencionaron algún síntoma, o si había una anormalidad previa en su expediente, el código de facturación puede haber cambiado. Solicite una factura detallada y busque el código de facturación: G0202 es detección (cubierta a $0), mientras que los códigos de mamografía diagnóstica tienen costos compartidos. Bajo la Ley de No Sorpresas, si la instalación estaba dentro de la red, el radiólogo no puede facturarle el saldo."
+        "answer": "La razón más común es que la mamografía se reclasificó de detección a diagnóstica. Si las notas de admisión mencionaron algún síntoma, o si había una anormalidad previa en su expediente, el código de facturación puede haber cambiado. Solicite una factura detallada y revise el código del procedimiento: un código de mamografía de detección tiene $0 de costo compartido en planes ACA y Medicare, mientras que un código de mamografía diagnóstica tiene costos compartidos. Bajo la Ley de No Sorpresas, si la instalación estaba dentro de la red, el radiólogo no puede facturarle el saldo."
       },
       {
         "question": "A partir de 2026, ¿debe mi plan ACA cubrir las imágenes de seguimiento después de una mamografía a $0?",
@@ -469,8 +469,8 @@
       "name": "CMS 2026 Medicare Physician Fee Schedule",
       "url": "https://www.cms.gov/medicare/payment/physician-fee-schedule",
       "note": {
-        "en": "2026 payment rates for HCPCS G0202 (screening mammography bilateral) and diagnostic mammography codes under the Medicare Physician Fee Schedule.",
-        "es": "Tarifas de pago 2026 para HCPCS G0202 (mamografía de detección bilateral) y códigos de mamografía diagnóstica bajo el PFS de Medicare."
+        "en": "2026 payment rates for screening mammography (bilateral, digital) and diagnostic mammography under the Medicare Physician Fee Schedule.",
+        "es": "Tarifas de pago 2026 para mamografía de detección bilateral digital y mamografía diagnóstica bajo el PFS de Medicare."
       }
     },
     {
