@@ -11,12 +11,12 @@
   "procedureType": "Diagnostic",
   "medicalSpecialty": "Radiology",
   "lastUpdated": "2026-05-14",
+  "ctaTarget": "analyzer",
   "readingTime": "7 min read",
   "hcpcsCodes": [],
   "topicCluster": "procedure-cost",
   "isLighthouse": false,
   "isDeprecated": false,
-
   "keyTerms": {
     "en": [
       "x-ray cost without insurance",
@@ -35,7 +35,6 @@
       "estimación de buena fe radiografía"
     ]
   },
-
   "meta": {
     "title": {
       "en": "X-ray Cost Without Insurance in 2026: Pricing Guide | CoveredUSA",
@@ -46,7 +45,6 @@
       "es": "Costo de radiografía 2026: $50 a $1,000 sin seguro. Hospitales cobran 3 a 5x más que centros independientes. Tarifas Medicare y Ley de No Sorpresas."
     }
   },
-
   "hero": {
     "h1": {
       "en": "How Much Does an X-ray Cost in 2026?",
@@ -57,12 +55,10 @@
       "es": "Sin seguro, una radiografía típicamente cuesta entre $50 y $1,000. El lugar donde se realiza importa más que casi cualquier otra cosa. Una radiografía de tórax que cuesta $75 en un centro de imágenes independiente puede costar $500 o más en un servicio de urgencias del hospital por una exploración idéntica."
     }
   },
-
   "quickAnswer": {
     "en": "In 2026, an x-ray costs an average of $260 nationally without insurance, with a range of $50 to $1,000 depending on body part and site of service. Independent imaging centers typically charge $75 to $300. Hospital outpatient departments charge $300 to $800 for the same scan. Medicare pays approximately $33 for a standard 2-view chest x-ray at a non-facility setting under the 2026 Physician Fee Schedule.",
     "es": "En 2026, una radiografía cuesta en promedio $260 a nivel nacional sin seguro, con un rango de $50 a $1,000 según la parte del cuerpo y el lugar de servicio. Los centros de imágenes independientes generalmente cobran entre $75 y $300. Los departamentos ambulatorios de hospitales cobran entre $300 y $800 por la misma exploración. Medicare paga aproximadamente $33 por una radiografía estándar de tórax en 2 vistas en un entorno no hospitalario según el Programa de Tarifas Médicas 2026."
   },
-
   "pricing": {
     "nationalMedian": 260,
     "nationalLow": 50,
@@ -73,7 +69,6 @@
     "partBDeductibleYear": 2026,
     "partBDeductibleAmount": 283
   },
-
   "introParagraphs": [
     {
       "en": "An x-ray is the most common diagnostic imaging procedure in the United States. Doctors order them for broken bones, chest infections, joint pain, and dozens of other conditions. The technology is over a century old, equipment is inexpensive, and the scan takes minutes. That should make x-rays cheap. Sometimes they are. Often they are not.",
@@ -88,7 +83,6 @@
       "es": "Esta guía cubre lo que cuesta una radiografía sin seguro en 2026, lo que paga Medicare, por qué los hospitales cobran tanto más, y cómo obtener una estimación de costos por escrito antes de programar su cita. La radiografía no es un servicio preventivo de la USPSTF, por lo que no aplican las reglas de costo cero para atención preventiva."
     }
   ],
-
   "siteOfService": {
     "rows": [
       {
@@ -156,7 +150,6 @@
     },
     "tableSource": "CMS Physician Fee Schedule 2026, Hospital Outpatient PPS 2026, FAIR Health Consumer"
   },
-
   "variants": {
     "heading": {
       "en": "X-ray Cost by Body Part in 2026",
@@ -167,17 +160,86 @@
       "es": "Los precios de las radiografías varían según la parte del cuerpo que se examine, el número de vistas ordenadas y la complejidad del estudio. Las radiografías simples de extremidades (manos, pies, muñecas) cuestan menos. Los estudios de columna vertebral y pelvis requieren más vistas y posicionamiento más complejo, lo que aumenta el precio. Los rangos a continuación asumen un centro de imágenes independiente o un entorno de atención urgente."
     },
     "headers": {
-      "en": ["Body Part", "Without-Insurance Range (independent center)"],
-      "es": ["Parte del cuerpo", "Rango sin seguro (centro independiente)"]
+      "en": [
+        "Body Part",
+        "Without-Insurance Range (independent center)"
+      ],
+      "es": [
+        "Parte del cuerpo",
+        "Rango sin seguro (centro independiente)"
+      ]
     },
     "rows": [
-      { "en": ["Chest (2 views)", "$75 - $200"], "es": ["Tórax (2 vistas)", "$75 - $200"] },
-      { "en": ["Hand or wrist (3 views)", "$70 - $220"], "es": ["Mano o muñeca (3 vistas)", "$70 - $220"] },
-      { "en": ["Foot or ankle (3 views)", "$80 - $250"], "es": ["Pie o tobillo (3 vistas)", "$80 - $250"] },
-      { "en": ["Knee (3 views)", "$80 - $275"], "es": ["Rodilla (3 vistas)", "$80 - $275"] },
-      { "en": ["Hip (2 views)", "$100 - $300"], "es": ["Cadera (2 vistas)", "$100 - $300"] },
-      { "en": ["Lumbar spine (4+ views)", "$150 - $600"], "es": ["Columna lumbar (4+ vistas)", "$150 - $600"] },
-      { "en": ["Pelvis (1-2 views)", "$100 - $350"], "es": ["Pelvis (1-2 vistas)", "$100 - $350"] }
+      {
+        "en": [
+          "Chest (2 views)",
+          "$75 - $200"
+        ],
+        "es": [
+          "Tórax (2 vistas)",
+          "$75 - $200"
+        ]
+      },
+      {
+        "en": [
+          "Hand or wrist (3 views)",
+          "$70 - $220"
+        ],
+        "es": [
+          "Mano o muñeca (3 vistas)",
+          "$70 - $220"
+        ]
+      },
+      {
+        "en": [
+          "Foot or ankle (3 views)",
+          "$80 - $250"
+        ],
+        "es": [
+          "Pie o tobillo (3 vistas)",
+          "$80 - $250"
+        ]
+      },
+      {
+        "en": [
+          "Knee (3 views)",
+          "$80 - $275"
+        ],
+        "es": [
+          "Rodilla (3 vistas)",
+          "$80 - $275"
+        ]
+      },
+      {
+        "en": [
+          "Hip (2 views)",
+          "$100 - $300"
+        ],
+        "es": [
+          "Cadera (2 vistas)",
+          "$100 - $300"
+        ]
+      },
+      {
+        "en": [
+          "Lumbar spine (4+ views)",
+          "$150 - $600"
+        ],
+        "es": [
+          "Columna lumbar (4+ vistas)",
+          "$150 - $600"
+        ]
+      },
+      {
+        "en": [
+          "Pelvis (1-2 views)",
+          "$100 - $350"
+        ],
+        "es": [
+          "Pelvis (1-2 vistas)",
+          "$100 - $350"
+        ]
+      }
     ],
     "footnote": {
       "en": "Hospital outpatient or emergency department rates are typically 3-5x higher for each body part. Prices are 2026 estimates based on CMS price transparency and FAIR Health Consumer data.",
@@ -185,7 +247,6 @@
     },
     "source": "CMS Hospital Price Transparency 2026, FAIR Health Consumer"
   },
-
   "medicareSection": {
     "paragraphs": [
       {
@@ -206,7 +267,6 @@
       }
     ]
   },
-
   "factorsAffectingCost": {
     "items": [
       {
@@ -239,7 +299,6 @@
       }
     ]
   },
-
   "goodFaithEstimate": {
     "numberedSteps": {
       "en": [
@@ -289,7 +348,6 @@
       "es": "120 días desde la fecha de la factura para presentar un PPDR si su factura supera la GFE en $400 o más de cualquier proveedor individual."
     }
   },
-
   "selfPayPrograms": {
     "dedicatedSection": {
       "en": "If you are uninsured or paying cash, ask about self-pay pricing before scheduling. Most imaging facilities have a negotiated cash rate that is significantly lower than the billed rate.",
@@ -318,7 +376,6 @@
       "es": "Llame al departamento de facturación antes de su cita y diga: '¿No tengo seguro y pagaré de mi bolsillo. ¿Cuál es su tarifa de autopago o efectivo para esta radiografía?' Luego pregunte si esa tarifa incluye el cargo de lectura del radiólogo o si recibirá una factura separada."
     }
   },
-
   "commonBillingErrors": {
     "intro": {
       "en": "If your x-ray bill is well above the typical range for your region and facility type, check for these errors before paying:",
@@ -347,7 +404,6 @@
       }
     ]
   },
-
   "faqs": {
     "en": [
       {
@@ -426,26 +482,36 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "CT Scan Cost Guide", "es": "Guía de costos de tomografía computarizada" },
+      "label": {
+        "en": "CT Scan Cost Guide",
+        "es": "Guía de costos de tomografía computarizada"
+      },
       "href": "/cost/ct-scan"
     },
     {
-      "label": { "en": "MRI Cost Guide", "es": "Guía de costos de resonancia magnética" },
+      "label": {
+        "en": "MRI Cost Guide",
+        "es": "Guía de costos de resonancia magnética"
+      },
       "href": "/cost/mri"
     },
     {
-      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad para Medicare" },
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad para Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Médicas" },
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
       "href": "/medical-bill-analyzer"
     }
   ],
-
   "sources": [
     {
       "name": "CMS 2026 Medicare Physician Fee Schedule Final Rule",

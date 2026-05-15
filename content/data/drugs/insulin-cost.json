@@ -9,7 +9,14 @@
     "es": "Insulina"
   },
   "nonProprietaryName": "Insulin (various formulations)",
-  "brandNames": ["Humalog", "Novolog", "Lantus", "Levemir", "Tresiba", "Basaglar"],
+  "brandNames": [
+    "Humalog",
+    "Novolog",
+    "Lantus",
+    "Levemir",
+    "Tresiba",
+    "Basaglar"
+  ],
   "drugClass": {
     "en": "Insulin analog (rapid-, intermediate-, and long-acting hormone replacement)",
     "es": "Análogo de insulina (reemplazo hormonal de acción rápida, intermedia y prolongada)"
@@ -17,9 +24,12 @@
   "routeOfAdministration": "Injection",
   "medicalSpecialty": "Endocrine",
   "lastUpdated": "2026-05-12",
+  "ctaTarget": "analyzer",
   "readingTime": "6 min read",
-  "hcpcsJCodes": ["J1815", "J1817"],
-
+  "hcpcsJCodes": [
+    "J1815",
+    "J1817"
+  ],
   "meta": {
     "title": {
       "en": "What Does Insulin Cost at the Hospital in 2026? | CoveredUSA",
@@ -30,7 +40,6 @@
       "es": "Los hospitales facturan insulina a 10x a 40x la tarifa de Medicare. Compare precios al por menor ($25 a $300), tarifas Medicare ASP y cargos hospitalarios. Más programas PAP que limitan la insulina a $35/mes."
     }
   },
-
   "hero": {
     "h1": {
       "en": "What Does Insulin Cost at the Hospital in 2026?",
@@ -41,12 +50,10 @@
       "es": "Los hospitales facturan insulina a 10 veces a 40 veces la tarifa de Medicare. Una sola dosis puede aparecer en su factura como $200 a $500. Aquí está lo que debería costar, los programas que limitan la insulina a $35/mes, y cómo disputar los sobrecargos."
     }
   },
-
   "quickAnswer": {
     "en": "As of 2026, insulin costs $12/unit under Medicare, $25 to $300/vial at retail, but $200 to $500+ per dose when billed during a hospital stay. Markups of 10x to 40x the Medicare rate are common. Medicare Part D caps patient cost at $35/month since 2023. The major manufacturers (Lilly, Novo Nordisk, Sanofi) also offer $35/month programs for anyone regardless of insurance.",
     "es": "A partir de 2026, la insulina cuesta $12/unidad bajo Medicare, $25 a $300/vial al por menor, pero $200 a $500+ por dosis cuando se factura en una estancia hospitalaria. Markups de 10x a 40x sobre la tarifa Medicare son comunes. Medicare Parte D limita el costo del paciente a $35/mes desde 2023. Los principales fabricantes (Lilly, Novo Nordisk, Sanofi) también ofrecen programas de $35/mes para cualquier persona sin importar el seguro."
   },
-
   "pricing": {
     "medicareAspPerUnit": 12,
     "medicareAspUnit": {
@@ -72,7 +79,6 @@
     "partBDeductibleAmount": 283,
     "partDAnnualOopCap": 2100
   },
-
   "introParagraphs": [
     {
       "en": "Insulin is one of the most commonly mismarked-up drugs on US hospital bills. What sells at retail for $25 to $300 per vial can appear on a hospital bill as $200 to $500 or more per individual dose. That difference is not an error: it is how hospitals routinely bill medications.",
@@ -83,7 +89,6 @@
       "es": "La buena noticia: tiene varias formas de reducir o eliminar este costo. Esta guía cubre los rangos reales de precios de la insulina en 2026, cómo lo factura el hospital, los programas que limitan la insulina a $35/mes, y cómo disputar los sobrecargos."
     }
   ],
-
   "pointOfPay": {
     "rows": [
       {
@@ -163,7 +168,6 @@
     },
     "tableSource": "CMS Medicare Part B ASP 2026, Inflation Reduction Act"
   },
-
   "whyHospitalsCharge": {
     "paragraphs": [
       {
@@ -176,7 +180,6 @@
       }
     ]
   },
-
   "hcpcsSection": {
     "intro": {
       "en": "Hospital insulin appears on your bill with HCPCS J-codes. These codes are public domain (unlike CPT codes) and you can use them to identify exactly what you were billed and dispute errors:",
@@ -212,7 +215,6 @@
     },
     "source": "CMS HCPCS Level II Coding"
   },
-
   "patientAssistancePrograms": {
     "intro": {
       "en": "The three major insulin manufacturers (Eli Lilly, Novo Nordisk, Sanofi) run programs that essentially eliminate the insulin cost problem for most patients. These programs are available to uninsured people, privately-insured people, and sometimes even those on Medicare:",
@@ -250,7 +252,6 @@
     },
     "source": "Manufacturer program websites, NeedyMeds.org"
   },
-
   "medicarePartD": {
     "hasSpecificCap": true,
     "paragraphs": [
@@ -260,7 +261,6 @@
       }
     ]
   },
-
   "commonBillingErrors": {
     "intro": {
       "en": "If you received a hospital bill showing $200 or more per insulin dose, check for these errors before paying:",
@@ -293,7 +293,6 @@
       }
     ]
   },
-
   "faqs": {
     "en": [
       {
@@ -364,7 +363,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -388,7 +386,6 @@
       "href": "/cost/mri"
     }
   ],
-
   "sources": [
     {
       "name": "CMS Medicare Part B Drug Average Sales Price (ASP)",

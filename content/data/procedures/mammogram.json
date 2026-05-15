@@ -11,13 +11,12 @@
   "procedureType": "Diagnostic",
   "medicalSpecialty": "Radiology",
   "lastUpdated": "2026-05-15",
+  "ctaTarget": "analyzer",
   "readingTime": "9 min read",
   "hcpcsCodes": [],
-
   "topicCluster": "procedure-cost",
   "isLighthouse": false,
   "isDeprecated": false,
-
   "keyTerms": {
     "en": [
       "mammogram cost without insurance 2026",
@@ -40,7 +39,6 @@
       "USPSTF detección cáncer de mama Grado B"
     ]
   },
-
   "goodFaithEstimate": {
     "applicability": {
       "en": "Under the No Surprises Act, any provider or facility must give a self-pay or uninsured patient a Good Faith Estimate (GFE) before scheduling a mammogram. The GFE must itemize expected charges for the mammogram, any additional imaging, and a reading radiologist fee if billed separately.",
@@ -54,7 +52,6 @@
     "protectionWindowDays": 120,
     "regulationUrl": "https://www.cms.gov/nosurprises/policies-and-resources/overview-of-rules-fact-sheets"
   },
-
   "selfPayPrograms": {
     "intro": {
       "en": "If you are uninsured or underinsured, several programs offer free or reduced-cost mammograms.",
@@ -85,7 +82,6 @@
       }
     ]
   },
-
   "meta": {
     "title": {
       "en": "Mammogram Cost Without Insurance in 2026: Pricing Guide | CoveredUSA",
@@ -96,7 +92,6 @@
       "es": "Costo de mamografía 2026: $100 a $600 sin seguro. ACA y Medicare cubren detección al 100%. Hospital vs centro de imágenes, 2D vs 3D, NSA."
     }
   },
-
   "hero": {
     "h1": {
       "en": "How Much Does a Mammogram Cost in 2026?",
@@ -107,12 +102,10 @@
       "es": "Una mamografía de detección cuesta de $100 a $300 en un centro de imágenes independiente y de $250 a $600 en un departamento ambulatorio del hospital en 2026. Si tiene un plan ACA, la mamografía de detección está cubierta al 100% dentro de la red sin deducible ni copago. Medicare cubre las mamografías de detección a $0 para mujeres de 40 años en adelante. La brecha de costos surge cuando una mamografía se factura como diagnóstica en lugar de de detección."
     }
   },
-
   "quickAnswer": {
     "en": "As of 2026, a 2D screening mammogram costs a national median of around $200 without insurance. At an independent imaging center: $100 to $300. At a hospital outpatient department: $250 to $600. A diagnostic mammogram costs $250 to $1,200 depending on site of service. Medicare pays for screening mammograms at $0 patient cost for women 40 and older (no deductible, no coinsurance). ACA-compliant private plans also cover screening mammograms at $0 for in-network providers. Adding 3D tomosynthesis (digital breast tomosynthesis) raises the cash price by $50 to $150.",
     "es": "A partir de 2026, una mamografía de detección 2D cuesta una mediana nacional de aproximadamente $200 sin seguro. En un centro de imágenes independiente: $100 a $300. En un departamento ambulatorio del hospital: $250 a $600. Una mamografía diagnóstica cuesta de $250 a $1,200 dependiendo del sitio de servicio. Medicare cubre las mamografías de detección a $0 para mujeres de 40 años en adelante (sin deducible, sin coseguro). Los planes privados ACA también cubren las mamografías de detección a $0 en proveedores dentro de la red. Agregar tomosíntesis 3D (tomosíntesis digital de mama) eleva el precio en efectivo entre $50 y $150."
   },
-
   "pricing": {
     "nationalMedian": 200,
     "nationalLow": 100,
@@ -122,7 +115,6 @@
     "partBDeductibleYear": 2026,
     "partBDeductibleAmount": 283
   },
-
   "introParagraphs": [
     {
       "en": "A mammogram is the standard imaging test for detecting breast cancer early. The U.S. Preventive Services Task Force issued an updated Grade B recommendation in April 2024, expanding guidance to recommend biennial screening for all women starting at age 40 through age 74, down from the prior recommendation that started at 50. That change also triggered expanded ACA coverage obligations: starting with plan years beginning in 2026, ACA-compliant plans must cover not just the initial screening mammogram but also any follow-up imaging (ultrasound, MRI) and pathology needed to complete the screening, all at 100% with no cost-sharing.",
@@ -137,7 +129,6 @@
       "es": "Esta guía cubre lo que cuesta una mamografía sin seguro en 2026, lo que paga Medicare, la distinción entre detección y diagnóstica que controla su costo de bolsillo, la diferencia de precios entre 2D y tomosíntesis 3D, y los programas estatales y federales que proveen mamografías gratuitas para mujeres sin seguro."
     }
   ],
-
   "siteOfService": {
     "rows": [
       {
@@ -216,7 +207,6 @@
     },
     "tableSource": "CMS Physician Fee Schedule 2026, Hospital Outpatient PPS 2026, FAIR Health Consumer, Turquoise Health"
   },
-
   "variants": {
     "heading": {
       "en": "Mammogram Cost by Type: Screening vs Diagnostic vs 3D Tomosynthesis (2026)",
@@ -227,25 +217,85 @@
       "es": "El tipo de mamografía determina tanto el código de facturación como su costo de bolsillo. Una mamografía de detección es atención preventiva para una mujer sin síntomas. Una mamografía diagnóstica se ordena para investigar un síntoma específico o un resultado de detección anormal. La tomosíntesis digital de mama (mamografía 3D) es una opción de imagen mejorada que toma imágenes desde múltiples ángulos. La etiqueta de detección versus diagnóstica es el factor de costo más importante del lado del paciente."
     },
     "headers": {
-      "en": ["Type", "When it applies", "Patient cost (ACA plan)", "Patient cost (Medicare)", "Cash price range"],
-      "es": ["Tipo", "Cuándo aplica", "Costo paciente (plan ACA)", "Costo paciente (Medicare)", "Rango precio efectivo"]
+      "en": [
+        "Type",
+        "When it applies",
+        "Patient cost (ACA plan)",
+        "Patient cost (Medicare)",
+        "Cash price range"
+      ],
+      "es": [
+        "Tipo",
+        "Cuándo aplica",
+        "Costo paciente (plan ACA)",
+        "Costo paciente (Medicare)",
+        "Rango precio efectivo"
+      ]
     },
     "rows": [
       {
-        "en": ["Screening 2D (bilateral)", "Routine preventive, no symptoms, age 40-74", "$0 (no deductible, no copay)", "$0 (no deductible, no coinsurance)", "$100 to $300"],
-        "es": ["Detección 2D (bilateral)", "Preventiva de rutina, sin síntomas, edad 40-74", "$0 (sin deducible, sin copago)", "$0 (sin deducible, sin coseguro)", "$100 to $300"]
+        "en": [
+          "Screening 2D (bilateral)",
+          "Routine preventive, no symptoms, age 40-74",
+          "$0 (no deductible, no copay)",
+          "$0 (no deductible, no coinsurance)",
+          "$100 to $300"
+        ],
+        "es": [
+          "Detección 2D (bilateral)",
+          "Preventiva de rutina, sin síntomas, edad 40-74",
+          "$0 (sin deducible, sin copago)",
+          "$0 (sin deducible, sin coseguro)",
+          "$100 to $300"
+        ]
       },
       {
-        "en": ["Screening 3D / tomosynthesis", "Routine preventive with 3D imaging, often preferred for dense breasts", "$0 on most ACA plans (2026 expanded coverage)", "$0 (Medicare covers tomosynthesis add-on for screening)", "$150 to $400"],
-        "es": ["Detección 3D / tomosíntesis", "Preventiva de rutina con imagen 3D, frecuentemente preferida para mamas densas", "$0 en la mayoría de planes ACA (cobertura ampliada 2026)", "$0 (Medicare cubre el complemento de tomosíntesis para detección)", "$150 to $400"]
+        "en": [
+          "Screening 3D / tomosynthesis",
+          "Routine preventive with 3D imaging, often preferred for dense breasts",
+          "$0 on most ACA plans (2026 expanded coverage)",
+          "$0 (Medicare covers tomosynthesis add-on for screening)",
+          "$150 to $400"
+        ],
+        "es": [
+          "Detección 3D / tomosíntesis",
+          "Preventiva de rutina con imagen 3D, frecuentemente preferida para mamas densas",
+          "$0 en la mayoría de planes ACA (cobertura ampliada 2026)",
+          "$0 (Medicare cubre el complemento de tomosíntesis para detección)",
+          "$150 to $400"
+        ]
       },
       {
-        "en": ["Diagnostic 2D (bilateral)", "Symptom present (lump, pain, discharge) or abnormal screening result", "Deductible + 20% coinsurance apply", "20% coinsurance after $283 Part B deductible", "$250 to $700"],
-        "es": ["Diagnóstica 2D (bilateral)", "Síntoma presente (bulto, dolor, secreción) o resultado de detección anormal", "Aplican deducible + coseguro del 20%", "20% coseguro después del deducible de la Parte B de $283", "$250 to $700"]
+        "en": [
+          "Diagnostic 2D (bilateral)",
+          "Symptom present (lump, pain, discharge) or abnormal screening result",
+          "Deductible + 20% coinsurance apply",
+          "20% coinsurance after $283 Part B deductible",
+          "$250 to $700"
+        ],
+        "es": [
+          "Diagnóstica 2D (bilateral)",
+          "Síntoma presente (bulto, dolor, secreción) o resultado de detección anormal",
+          "Aplican deducible + coseguro del 20%",
+          "20% coseguro después del deducible de la Parte B de $283",
+          "$250 to $700"
+        ]
       },
       {
-        "en": ["Diagnostic 3D / tomosynthesis", "Symptom investigation with 3D imaging", "Deductible + 20% coinsurance apply", "20% coinsurance after $283 Part B deductible", "$350 to $900"],
-        "es": ["Diagnóstica 3D / tomosíntesis", "Investigación de síntoma con imagen 3D", "Aplican deducible + coseguro del 20%", "20% coseguro después del deducible de la Parte B de $283", "$350 to $900"]
+        "en": [
+          "Diagnostic 3D / tomosynthesis",
+          "Symptom investigation with 3D imaging",
+          "Deductible + 20% coinsurance apply",
+          "20% coinsurance after $283 Part B deductible",
+          "$350 to $900"
+        ],
+        "es": [
+          "Diagnóstica 3D / tomosíntesis",
+          "Investigación de síntoma con imagen 3D",
+          "Aplican deducible + coseguro del 20%",
+          "20% coseguro después del deducible de la Parte B de $283",
+          "$350 to $900"
+        ]
       }
     ],
     "footnote": {
@@ -254,7 +304,6 @@
     },
     "source": "USPSTF Breast Cancer Screening Recommendation 2024, ACA preventive services guidance, CMS 2026 Physician Fee Schedule, HRSA 2024 NBCCEDP guidelines update"
   },
-
   "medicareSection": {
     "paragraphs": [
       {
@@ -275,7 +324,6 @@
       }
     ]
   },
-
   "factorsAffectingCost": {
     "items": [
       {
@@ -312,7 +360,6 @@
       }
     ]
   },
-
   "commonBillingErrors": {
     "intro": {
       "en": "Mammogram billing has some of the most consequential errors in outpatient radiology because the screening-to-diagnostic reclassification directly determines whether you owe $0 or hundreds of dollars. Check for these errors before paying:",
@@ -345,7 +392,6 @@
       }
     ]
   },
-
   "faqs": {
     "en": [
       {
@@ -424,7 +470,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -455,7 +500,6 @@
       "href": "/no-surprises-act"
     }
   ],
-
   "sources": [
     {
       "name": "USPSTF Breast Cancer Screening Recommendation (April 2024)",

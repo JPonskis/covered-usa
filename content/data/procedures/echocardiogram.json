@@ -11,18 +11,34 @@
   "procedureType": "Diagnostic",
   "medicalSpecialty": "Cardiology",
   "lastUpdated": "2026-05-14",
+  "ctaTarget": "analyzer",
   "readingTime": "9 min read",
   "hcpcsCodes": [],
-
   "topicCluster": "procedure-cost",
   "isLighthouse": false,
   "isDeprecated": false,
-
   "keyTerms": {
-    "en": ["echocardiogram cost", "echo cost without insurance", "TTE cost", "TEE cost", "transthoracic echocardiogram price", "transesophageal echocardiogram price", "stress echocardiogram cost", "Medicare echocardiogram coverage", "heart ultrasound cost 2026"],
-    "es": ["costo de ecocardiograma", "ecocardiograma sin seguro", "precio de ecocardiograma transtorácico", "precio de ecocardiograma transesofágico", "costo de ecocardiograma de esfuerzo", "Medicare ecocardiograma", "ultrasonido cardiaco costo 2026"]
+    "en": [
+      "echocardiogram cost",
+      "echo cost without insurance",
+      "TTE cost",
+      "TEE cost",
+      "transthoracic echocardiogram price",
+      "transesophageal echocardiogram price",
+      "stress echocardiogram cost",
+      "Medicare echocardiogram coverage",
+      "heart ultrasound cost 2026"
+    ],
+    "es": [
+      "costo de ecocardiograma",
+      "ecocardiograma sin seguro",
+      "precio de ecocardiograma transtorácico",
+      "precio de ecocardiograma transesofágico",
+      "costo de ecocardiograma de esfuerzo",
+      "Medicare ecocardiograma",
+      "ultrasonido cardiaco costo 2026"
+    ]
   },
-
   "goodFaithEstimate": {
     "required": true,
     "thresholdDollars": 400,
@@ -31,12 +47,10 @@
     "noteEn": "Under the No Surprises Act, providers must give uninsured and self-pay patients a Good Faith Estimate (GFE) at least 3 business days before a scheduled echocardiogram. If your final bill exceeds the GFE by $400 or more, you have 120 days to initiate a Patient-Provider Dispute Resolution (PPDR) through HHS.",
     "noteEs": "Bajo la Ley de No Sorpresas, los proveedores deben dar a los pacientes sin seguro o que pagan por su cuenta una Estimacion de Buena Fe (GFE) al menos 3 dias habiles antes de un ecocardiograma programado. Si su factura final supera la GFE en $400 o mas, tiene 120 dias para iniciar una Resolucion de Disputas Paciente-Proveedor (PPDR) a traves del HHS."
   },
-
   "selfPayPrograms": {
     "noteEn": "Echocardiogram is not a USPSTF preventive service for the general population, so no ACA free-preventive mandate applies. Self-pay patients should ask their cardiologist for a bundled cash rate. Independent cardiology clinics and mobile echo services typically charge 30 to 50 percent less than hospital outpatient departments. Some hospital financial assistance programs cover diagnostic cardiac imaging for patients below 200 to 300 percent of the federal poverty level.",
     "noteEs": "El ecocardiograma no es un servicio preventivo recomendado por el USPSTF para la poblacion general, por lo que no aplica el mandato de prevencion gratuita de la ACA. Los pacientes que pagan por su cuenta deben pedir a su cardiologo una tarifa en efectivo agrupada. Las clinicas de cardiologia independientes y los servicios moviles de eco tipicamente cobran entre un 30 y un 50 por ciento menos que los departamentos ambulatorios de hospitales. Algunos programas de asistencia financiera hospitalaria cubren imagenes cardiacas diagnosticas para pacientes por debajo del 200 al 300 por ciento del nivel federal de pobreza."
   },
-
   "meta": {
     "title": {
       "en": "Echocardiogram Cost Without Insurance in 2026 | CoveredUSA",
@@ -47,7 +61,6 @@
       "es": "Costo de ecocardiograma 2026: $1,000 a $5,000 sin seguro. Precios de TTE vs TEE, tarifas de Medicare, y comparacion de clinica independiente vs hospital."
     }
   },
-
   "hero": {
     "h1": {
       "en": "How Much Does an Echocardiogram Cost in 2026?",
@@ -58,12 +71,10 @@
       "es": "Sin seguro, un ecocardiograma transtorácico (TTE) estándar cuesta entre $1,000 y $3,500 en 2026, y un ecocardiograma transesofágico (TEE) cuesta entre $1,800 y $5,000 con sedación incluida. El lugar donde se realiza el eco, clínica de cardiología independiente versus departamento ambulatorio del hospital, es el factor de costo más importante. El mismo ultrasonido cardiaco puede costar entre dos y tres veces más en un hospital."
     }
   },
-
   "quickAnswer": {
     "en": "As of 2026, a transthoracic echocardiogram (TTE) costs a national median of approximately $1,800 without insurance. Independent cardiology clinics charge $1,000 to $2,200; hospital outpatient departments charge $2,000 to $3,500 for the same study. A transesophageal echocardiogram (TEE) runs $1,800 to $5,000 due to sedation and additional procedural complexity. Medicare pays approximately $210 for the professional component of a complete TTE under the 2026 Physician Fee Schedule, plus a facility rate of $450 to $650 under the Hospital Outpatient PPS. You pay 20 percent coinsurance after meeting the 2026 Part B deductible of $283.",
     "es": "A partir de 2026, un ecocardiograma transtorácico (TTE) cuesta una mediana nacional de aproximadamente $1,800 sin seguro. Las clínicas de cardiología independientes cobran entre $1,000 y $2,200; los departamentos ambulatorios de hospitales cobran entre $2,000 y $3,500 por el mismo estudio. Un ecocardiograma transesofágico (TEE) cuesta entre $1,800 y $5,000 debido a la sedación y complejidad adicional. Medicare paga aproximadamente $210 por el componente profesional de un TTE completo bajo el Programa de Tarifas Médicas 2026, más una tarifa de instalación de $450 a $650 bajo el OPPS del Hospital. Usted paga el 20 por ciento de coseguro después de cumplir con el deducible de la Parte B 2026 de $283."
   },
-
   "pricing": {
     "nationalMedian": 1800,
     "nationalLow": 1000,
@@ -74,7 +85,6 @@
     "partBDeductibleYear": 2026,
     "partBDeductibleAmount": 283
   },
-
   "introParagraphs": [
     {
       "en": "An echocardiogram is a cardiac ultrasound that lets cardiologists see the heart's structure, valve function, and pumping efficiency in real time. Doctors order echocardiograms to evaluate chest pain, heart failure, valve disease, congenital defects, and shortness of breath. Roughly 30 million echocardiograms are performed in the United States each year. Cash prices vary by more than $4,000 depending on type (TTE, TEE, or stress echo) and where the study is performed.",
@@ -89,7 +99,6 @@
       "es": "Esta guía cubre lo que cuesta un ecocardiograma sin seguro en 2026, lo que paga Medicare, las diferencias de precio entre TTE, TEE y eco de esfuerzo, por qué los departamentos ambulatorios de hospitales cobran dos a tres veces más que las clínicas de cardiología independientes, y los errores de facturación que más probablemente inflen su factura."
     }
   ],
-
   "siteOfService": {
     "rows": [
       {
@@ -157,7 +166,6 @@
     },
     "tableSource": "CMS Physician Fee Schedule 2026, Hospital Outpatient PPS 2026, FAIR Health Consumer"
   },
-
   "variants": {
     "heading": {
       "en": "Echocardiogram Cost by Type in 2026",
@@ -168,25 +176,75 @@
       "es": "Hay cuatro tipos principales de ecocardiograma. El tipo que ordena su cardiólogo depende de la pregunta clínica: un control de rutina de la función cardíaca usa un TTE; la sospecha de endocarditis o una evaluación de accidente cerebrovascular a menudo requiere un TEE; la evaluación de la enfermedad de las arterias coronarias usa un eco de esfuerzo. Cada uno tiene un rango de precios diferente, complejidad y lo que el paciente experimenta durante el procedimiento."
     },
     "headers": {
-      "en": ["Type", "How It Is Done", "Without-Insurance Range", "Notes"],
-      "es": ["Tipo", "Cómo se realiza", "Rango sin seguro", "Notas"]
+      "en": [
+        "Type",
+        "How It Is Done",
+        "Without-Insurance Range",
+        "Notes"
+      ],
+      "es": [
+        "Tipo",
+        "Cómo se realiza",
+        "Rango sin seguro",
+        "Notas"
+      ]
     },
     "rows": [
       {
-        "en": ["Transthoracic echocardiogram (TTE)", "Probe on chest wall, no sedation, ~30-60 min", "$1,000 to $3,500", "Most common type. Full cardiac structure and function assessment."],
-        "es": ["Ecocardiograma transtorácico (TTE)", "Sonda en pared del pecho, sin sedación, ~30-60 min", "$1,000 to $3,500", "Tipo más común. Evaluación completa de estructura y función cardíaca."]
+        "en": [
+          "Transthoracic echocardiogram (TTE)",
+          "Probe on chest wall, no sedation, ~30-60 min",
+          "$1,000 to $3,500",
+          "Most common type. Full cardiac structure and function assessment."
+        ],
+        "es": [
+          "Ecocardiograma transtorácico (TTE)",
+          "Sonda en pared del pecho, sin sedación, ~30-60 min",
+          "$1,000 to $3,500",
+          "Tipo más común. Evaluación completa de estructura y función cardíaca."
+        ]
       },
       {
-        "en": ["Transesophageal echocardiogram (TEE)", "Probe swallowed into esophagus, sedation required, ~60-90 min", "$1,800 to $5,000", "Clearer views of valves and posterior structures. Sedation and monitoring add cost."],
-        "es": ["Ecocardiograma transesofágico (TEE)", "Sonda tragada hacia el esófago, sedación requerida, ~60-90 min", "$1,800 to $5,000", "Vistas más claras de válvulas y estructuras posteriores. La sedación y el monitoreo agregan costo."]
+        "en": [
+          "Transesophageal echocardiogram (TEE)",
+          "Probe swallowed into esophagus, sedation required, ~60-90 min",
+          "$1,800 to $5,000",
+          "Clearer views of valves and posterior structures. Sedation and monitoring add cost."
+        ],
+        "es": [
+          "Ecocardiograma transesofágico (TEE)",
+          "Sonda tragada hacia el esófago, sedación requerida, ~60-90 min",
+          "$1,800 to $5,000",
+          "Vistas más claras de válvulas y estructuras posteriores. La sedación y el monitoreo agregan costo."
+        ]
       },
       {
-        "en": ["Stress echocardiogram", "TTE images before and after exercise or medication (dobutamine), ~2-3 hours", "$1,500 to $5,000", "Used to evaluate coronary artery disease. Exercise stress is cheaper than pharmacologic stress."],
-        "es": ["Ecocardiograma de esfuerzo", "Imágenes TTE antes y después de ejercicio o medicación (dobutamina), ~2-3 horas", "$1,500 to $5,000", "Se usa para evaluar enfermedad de arterias coronarias. El esfuerzo con ejercicio es más barato que el farmacológico."]
+        "en": [
+          "Stress echocardiogram",
+          "TTE images before and after exercise or medication (dobutamine), ~2-3 hours",
+          "$1,500 to $5,000",
+          "Used to evaluate coronary artery disease. Exercise stress is cheaper than pharmacologic stress."
+        ],
+        "es": [
+          "Ecocardiograma de esfuerzo",
+          "Imágenes TTE antes y después de ejercicio o medicación (dobutamina), ~2-3 horas",
+          "$1,500 to $5,000",
+          "Se usa para evaluar enfermedad de arterias coronarias. El esfuerzo con ejercicio es más barato que el farmacológico."
+        ]
       },
       {
-        "en": ["Doppler echocardiogram", "Doppler added to TTE to measure blood flow velocities, no separate procedure", "$1,000 to $3,500", "Usually bundled into the TTE (CPT 93306 includes Doppler). Not typically billed separately."],
-        "es": ["Ecocardiograma Doppler", "Doppler agregado al TTE para medir velocidades de flujo sanguíneo, sin procedimiento separado", "$1,000 to $3,500", "Generalmente incluido en el TTE. No se factura por separado típicamente."]
+        "en": [
+          "Doppler echocardiogram",
+          "Doppler added to TTE to measure blood flow velocities, no separate procedure",
+          "$1,000 to $3,500",
+          "Usually bundled into the TTE (CPT 93306 includes Doppler). Not typically billed separately."
+        ],
+        "es": [
+          "Ecocardiograma Doppler",
+          "Doppler agregado al TTE para medir velocidades de flujo sanguíneo, sin procedimiento separado",
+          "$1,000 to $3,500",
+          "Generalmente incluido en el TTE. No se factura por separado típicamente."
+        ]
       }
     ],
     "footnote": {
@@ -195,7 +253,6 @@
     },
     "source": "FAIR Health Consumer, CMS 2026 Physician Fee Schedule, American Society of Echocardiography billing guidance"
   },
-
   "medicareSection": {
     "paragraphs": [
       {
@@ -216,7 +273,6 @@
       }
     ]
   },
-
   "factorsAffectingCost": {
     "items": [
       {
@@ -249,7 +305,6 @@
       }
     ]
   },
-
   "commonBillingErrors": {
     "intro": {
       "en": "Echocardiogram billing is among the more technically complex in cardiology because the professional and technical components are billed separately in most settings. These are the errors most likely to appear on an echo bill:",
@@ -282,7 +337,6 @@
       }
     ]
   },
-
   "faqs": {
     "en": [
       {
@@ -361,26 +415,36 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad para Medicare" },
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad para Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Médicas" },
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
       "href": "/medical-bill-analyzer"
     },
     {
-      "label": { "en": "No Surprises Act", "es": "Ley de No Sorpresas" },
+      "label": {
+        "en": "No Surprises Act",
+        "es": "Ley de No Sorpresas"
+      },
       "href": "/no-surprises-act"
     },
     {
-      "label": { "en": "CT Scan Cost Guide", "es": "Guía de Costos de Tomografía Computarizada" },
+      "label": {
+        "en": "CT Scan Cost Guide",
+        "es": "Guía de Costos de Tomografía Computarizada"
+      },
       "href": "/cost/ct-scan"
     }
   ],
-
   "sources": [
     {
       "name": "CMS 2026 Medicare Physician Fee Schedule Final Rule",

@@ -11,20 +11,22 @@
   "procedureType": "Diagnostic",
   "medicalSpecialty": "Gastroenterology",
   "lastUpdated": "2026-05-13",
+  "ctaTarget": "analyzer",
   "readingTime": "9 min read",
-  "hcpcsCodes": ["G0105", "G0121"],
-
+  "hcpcsCodes": [
+    "G0105",
+    "G0121"
+  ],
   "meta": {
     "title": {
       "en": "Colonoscopy Cost Without Insurance in 2026 — Pricing Guide | CoveredUSA",
       "es": "Costo de Colonoscopia sin Seguro en 2026 | CoveredUSA"
     },
     "description": {
-      "en": "Colonoscopy cost in 2026: $1,250 to $4,800 without insurance. Screening is covered 100% by ACA plans, diagnostic has cost-sharing. Compare ASC vs hospital outpatient pricing and Medicare rates."
-    , "es": "Costo de colonoscopia en 2026: $1,250 a $4,800 sin seguro. La de detección está cubierta al 100% por planes ACA, la diagnóstica tiene costos compartidos. Compare precios de centros ambulatorios vs hospital."
+      "en": "Colonoscopy cost in 2026: $1,250 to $4,800 without insurance. Screening is covered 100% by ACA plans, diagnostic has cost-sharing. Compare ASC vs hospital outpatient pricing and Medicare rates.",
+      "es": "Costo de colonoscopia en 2026: $1,250 a $4,800 sin seguro. La de detección está cubierta al 100% por planes ACA, la diagnóstica tiene costos compartidos. Compare precios de centros ambulatorios vs hospital."
     }
   },
-
   "hero": {
     "h1": {
       "en": "How Much Does a Colonoscopy Cost in 2026?",
@@ -35,12 +37,10 @@
       "es": "Sin seguro, una colonoscopia típicamente cuesta de $1,250 a $4,800 en 2026. Las colonoscopias de detección están cubiertas al 100% bajo la Ley de Cuidado de Salud Asequible, pero las diagnósticas y de vigilancia tienen costos compartidos. El mismo procedimiento puede variar $2,000 en precio según se facture como detección o diagnóstica."
     }
   },
-
   "quickAnswer": {
     "en": "As of 2026, a colonoscopy costs an average of $2,750 nationally without insurance. At an ambulatory surgery center (ASC): $1,250 to $2,800. At a hospital outpatient department: $2,500 to $4,800. Medicare pays approximately $400 to the physician under the 2026 Physician Fee Schedule and $1,260 to the facility under OPPS. Screening colonoscopies are 100% covered with no cost-sharing on ACA-compliant plans and Medicare; diagnostic and surveillance colonoscopies carry coinsurance.",
     "es": "A partir de 2026, una colonoscopia cuesta en promedio $2,750 a nivel nacional sin seguro. En un centro de cirugía ambulatoria: $1,250 a $2,800. En un departamento ambulatorio del hospital: $2,500 a $4,800. Medicare paga aproximadamente $400 al médico bajo el PFS 2026 y $1,260 a la instalación bajo OPPS. Las colonoscopias de detección están cubiertas al 100% sin costos compartidos en planes ACA y Medicare; las diagnósticas y de vigilancia tienen coseguro."
   },
-
   "pricing": {
     "nationalMedian": 2750,
     "nationalLow": 1250,
@@ -51,7 +51,6 @@
     "partBDeductibleYear": 2026,
     "partBDeductibleAmount": 283
   },
-
   "introParagraphs": [
     {
       "en": "A colonoscopy is the gold-standard screening test for colorectal cancer, the second-leading cause of cancer death in the United States. The U.S. Preventive Services Task Force recommends screening colonoscopy every 10 years starting at age 45 for average-risk adults. About 15 million colonoscopies are performed in the U.S. each year, and the cash prices vary by more than $3,000 depending on where the procedure happens and how it is billed.",
@@ -66,7 +65,6 @@
       "es": "Esta guía cubre lo que cuesta una colonoscopia sin seguro en 2026, lo que paga Medicare, la distinción de precios entre detección, diagnóstica y vigilancia, y los errores de facturación que más probablemente inflen su factura."
     }
   ],
-
   "siteOfService": {
     "rows": [
       {
@@ -134,7 +132,6 @@
     },
     "tableSource": "CMS Physician Fee Schedule 2026, Hospital Outpatient PPS 2026, ASC Payment System 2026, FAIR Health Consumer"
   },
-
   "variants": {
     "heading": {
       "en": "Colonoscopy Cost by Type: Screening vs Diagnostic vs Surveillance",
@@ -145,15 +142,90 @@
       "es": "El procedimiento se ve igual en la mesa de examen, pero el código de facturación, y su costo de bolsillo, dependen de por qué su médico la ordenó. La detección es atención preventiva para un paciente asintomático. La diagnóstica es la investigación de un síntoma específico o prueba de heces anormal. La vigilancia es seguimiento después de pólipos o cáncer previos. Los planes ACA cubren la detección al 100%, pero la diagnóstica y la vigilancia activan deducibles y coseguro."
     },
     "headers": {
-      "en": ["Type", "When it applies", "Patient cost (ACA plan)", "Medicare cost"],
-      "es": ["Tipo", "Cuándo aplica", "Costo paciente (plan ACA)", "Costo Medicare"]
+      "en": [
+        "Type",
+        "When it applies",
+        "Patient cost (ACA plan)",
+        "Medicare cost"
+      ],
+      "es": [
+        "Tipo",
+        "Cuándo aplica",
+        "Costo paciente (plan ACA)",
+        "Costo Medicare"
+      ]
     },
     "rows": [
-      { "en": ["Screening (average risk)", "Age 45+, asymptomatic, no prior polyps", "$0", "$0 (no deductible, no coinsurance)"], "es": ["Detección (riesgo promedio)", "45+ años, asintomático, sin pólipos previos", "$0", "$0 (sin deducible, sin coseguro)"] },
-      { "en": ["Screening (high risk)", "Family history, IBD, prior cancer", "$0", "$0 (no deductible, no coinsurance)"], "es": ["Detección (alto riesgo)", "Antecedentes familiares, EII, cáncer previo", "$0", "$0 (sin deducible, sin coseguro)"] },
-      { "en": ["Diagnostic", "Symptoms present (bleeding, pain, anemia)", "Deductible + coinsurance apply", "20% coinsurance after $283 deductible"], "es": ["Diagnóstica", "Síntomas presentes (sangrado, dolor, anemia)", "Aplican deducible y coseguro", "20% coseguro después de $283 deducible"] },
-      { "en": ["Surveillance (after polyps)", "Follow-up colonoscopy 3-5 years after polypectomy", "Deductible + coinsurance apply", "20% coinsurance (deductible waived under 2022 rule update)"], "es": ["Vigilancia (después de pólipos)", "Colonoscopia de seguimiento 3-5 años después de polipectomía", "Aplican deducible y coseguro", "20% coseguro (deducible exento bajo regla de 2022)"] },
-      { "en": ["Screening converts to therapeutic", "Polyp found and removed during screening", "$0 on ACA plans (covered as preventive)", "15% coinsurance only (no deductible) under Medicare 2022 rule"], "es": ["Detección convertida en terapéutica", "Pólipo encontrado y removido durante detección", "$0 en planes ACA (cubierto como preventivo)", "Solo 15% coseguro (sin deducible) bajo regla Medicare 2022"] }
+      {
+        "en": [
+          "Screening (average risk)",
+          "Age 45+, asymptomatic, no prior polyps",
+          "$0",
+          "$0 (no deductible, no coinsurance)"
+        ],
+        "es": [
+          "Detección (riesgo promedio)",
+          "45+ años, asintomático, sin pólipos previos",
+          "$0",
+          "$0 (sin deducible, sin coseguro)"
+        ]
+      },
+      {
+        "en": [
+          "Screening (high risk)",
+          "Family history, IBD, prior cancer",
+          "$0",
+          "$0 (no deductible, no coinsurance)"
+        ],
+        "es": [
+          "Detección (alto riesgo)",
+          "Antecedentes familiares, EII, cáncer previo",
+          "$0",
+          "$0 (sin deducible, sin coseguro)"
+        ]
+      },
+      {
+        "en": [
+          "Diagnostic",
+          "Symptoms present (bleeding, pain, anemia)",
+          "Deductible + coinsurance apply",
+          "20% coinsurance after $283 deductible"
+        ],
+        "es": [
+          "Diagnóstica",
+          "Síntomas presentes (sangrado, dolor, anemia)",
+          "Aplican deducible y coseguro",
+          "20% coseguro después de $283 deducible"
+        ]
+      },
+      {
+        "en": [
+          "Surveillance (after polyps)",
+          "Follow-up colonoscopy 3-5 years after polypectomy",
+          "Deductible + coinsurance apply",
+          "20% coinsurance (deductible waived under 2022 rule update)"
+        ],
+        "es": [
+          "Vigilancia (después de pólipos)",
+          "Colonoscopia de seguimiento 3-5 años después de polipectomía",
+          "Aplican deducible y coseguro",
+          "20% coseguro (deducible exento bajo regla de 2022)"
+        ]
+      },
+      {
+        "en": [
+          "Screening converts to therapeutic",
+          "Polyp found and removed during screening",
+          "$0 on ACA plans (covered as preventive)",
+          "15% coinsurance only (no deductible) under Medicare 2022 rule"
+        ],
+        "es": [
+          "Detección convertida en terapéutica",
+          "Pólipo encontrado y removido durante detección",
+          "$0 en planes ACA (cubierto como preventivo)",
+          "Solo 15% coseguro (sin deducible) bajo regla Medicare 2022"
+        ]
+      }
     ],
     "footnote": {
       "en": "Under a 2022 Medicare rule change, when a screening colonoscopy converts to therapeutic (polyp removed), the patient pays only a reduced coinsurance (15% in 2023-2026), not the Part B deductible. This coinsurance phases down to 10% in 2027-2029 and 0% in 2030. On ACA-compliant private plans, polyp removal during a screening colonoscopy remains fully covered as preventive care.",
@@ -161,7 +233,6 @@
     },
     "source": "CMS 2026 Physician Fee Schedule, ACA preventive services guidance, HHS / CMS rule on screening-to-diagnostic conversion"
   },
-
   "medicareSection": {
     "paragraphs": [
       {
@@ -174,35 +245,74 @@
       }
     ]
   },
-
   "factorsAffectingCost": {
     "items": [
-      { "en": "Screening vs diagnostic vs surveillance billing classification, the single biggest patient-cost factor.", "es": "Clasificación de facturación entre detección, diagnóstica y vigilancia, el factor más grande del costo para el paciente." },
-      { "en": "Site of service (ASC vs hospital outpatient department), hospital costs almost 2x more under Medicare.", "es": "Sitio de servicio (ASC vs departamento ambulatorio del hospital), el hospital cuesta casi 2 veces más bajo Medicare." },
-      { "en": "Anesthesia type and provider billing model (monitored anesthesia care by an anesthesiologist adds $400 to $1,200).", "es": "Tipo de anestesia y modelo de facturación del proveedor (cuidado anestésico monitoreado por un anestesiólogo agrega $400 a $1,200)." },
-      { "en": "Polyp removal and pathology fees (each polyp specimen sent to pathology can add $100 to $400).", "es": "Remoción de pólipos y honorarios de patología (cada muestra de pólipo enviada a patología puede agregar $100 a $400)." },
-      { "en": "Bowel prep medication (typically $20 to $150 out-of-pocket, depending on prep type).", "es": "Medicamento de preparación intestinal (típicamente $20 a $150 de bolsillo, dependiendo del tipo de preparación)." },
-      { "en": "Geographic region (urban Northeast and California markets tend to be highest, rural Midwest lowest).", "es": "Región geográfica (los mercados urbanos del noreste y California tienden a ser más altos, el medio oeste rural más bajos)." },
-      { "en": "Insurance network status of the facility, the gastroenterologist, and the anesthesiologist (all three can bill separately).", "es": "Estado de la red de seguros de la instalación, el gastroenterólogo y el anestesiólogo (los tres pueden facturar por separado)." }
+      {
+        "en": "Screening vs diagnostic vs surveillance billing classification, the single biggest patient-cost factor.",
+        "es": "Clasificación de facturación entre detección, diagnóstica y vigilancia, el factor más grande del costo para el paciente."
+      },
+      {
+        "en": "Site of service (ASC vs hospital outpatient department), hospital costs almost 2x more under Medicare.",
+        "es": "Sitio de servicio (ASC vs departamento ambulatorio del hospital), el hospital cuesta casi 2 veces más bajo Medicare."
+      },
+      {
+        "en": "Anesthesia type and provider billing model (monitored anesthesia care by an anesthesiologist adds $400 to $1,200).",
+        "es": "Tipo de anestesia y modelo de facturación del proveedor (cuidado anestésico monitoreado por un anestesiólogo agrega $400 a $1,200)."
+      },
+      {
+        "en": "Polyp removal and pathology fees (each polyp specimen sent to pathology can add $100 to $400).",
+        "es": "Remoción de pólipos y honorarios de patología (cada muestra de pólipo enviada a patología puede agregar $100 a $400)."
+      },
+      {
+        "en": "Bowel prep medication (typically $20 to $150 out-of-pocket, depending on prep type).",
+        "es": "Medicamento de preparación intestinal (típicamente $20 a $150 de bolsillo, dependiendo del tipo de preparación)."
+      },
+      {
+        "en": "Geographic region (urban Northeast and California markets tend to be highest, rural Midwest lowest).",
+        "es": "Región geográfica (los mercados urbanos del noreste y California tienden a ser más altos, el medio oeste rural más bajos)."
+      },
+      {
+        "en": "Insurance network status of the facility, the gastroenterologist, and the anesthesiologist (all three can bill separately).",
+        "es": "Estado de la red de seguros de la instalación, el gastroenterólogo y el anestesiólogo (los tres pueden facturar por separado)."
+      }
     ]
   },
-
   "commonBillingErrors": {
     "intro": {
       "en": "Colonoscopy is one of the most error-prone bills in U.S. healthcare because the screening-to-diagnostic distinction is so cost-sensitive. Check for these errors before paying:",
       "es": "La colonoscopia es una de las facturas más propensas a errores en la atención médica de EE.UU. porque la distinción entre detección y diagnóstica es muy sensible al costo. Verifique estos errores antes de pagar:"
     },
     "items": [
-      { "en": "Screening colonoscopy billed as diagnostic because intake paperwork mentioned a symptom. If you scheduled it as routine screening, push back, modifier 33 or PT should apply.", "es": "Colonoscopia de detección facturada como diagnóstica porque el papeleo de admisión mencionó un síntoma. Si la programó como detección de rutina, conteste, debería aplicar modificador 33 o PT." },
-      { "en": "Polyp removal during a screening colonoscopy billed with full deductible and coinsurance instead of the reduced cost-sharing required by the 2022 Medicare rule update.", "es": "Remoción de pólipos durante una colonoscopia de detección facturada con deducible y coseguro completos en lugar del costo compartido reducido requerido por la actualización de regla de Medicare de 2022." },
-      { "en": "Anesthesiologist billed out-of-network when the facility is in-network (No Surprises Act may apply, do not pay before checking).", "es": "Anestesiólogo facturado fuera de la red cuando la instalación está en la red (puede aplicar la Ley de No Sorpresas, no pague antes de verificar)." },
-      { "en": "Multiple separate facility charges for the same procedure (one bill from the ASC plus a duplicate hospital outpatient claim).", "es": "Múltiples cargos de instalación separados por el mismo procedimiento (una factura del ASC más un reclamo duplicado del hospital ambulatorio)." },
-      { "en": "Hospital outpatient rate billed for a procedure performed at an affiliated ASC.", "es": "Tarifa ambulatoria del hospital facturada por un procedimiento realizado en un ASC afiliado." },
-      { "en": "Bowel prep medication billed at retail when a generic alternative was available.", "es": "Medicamento de preparación intestinal facturado al precio minorista cuando había una alternativa genérica disponible." },
-      { "en": "Each polyp specimen billed as a separate full pathology workup instead of a single multi-specimen review.", "es": "Cada muestra de pólipo facturada como un examen patológico completo separado en lugar de una revisión única de múltiples muestras." }
+      {
+        "en": "Screening colonoscopy billed as diagnostic because intake paperwork mentioned a symptom. If you scheduled it as routine screening, push back, modifier 33 or PT should apply.",
+        "es": "Colonoscopia de detección facturada como diagnóstica porque el papeleo de admisión mencionó un síntoma. Si la programó como detección de rutina, conteste, debería aplicar modificador 33 o PT."
+      },
+      {
+        "en": "Polyp removal during a screening colonoscopy billed with full deductible and coinsurance instead of the reduced cost-sharing required by the 2022 Medicare rule update.",
+        "es": "Remoción de pólipos durante una colonoscopia de detección facturada con deducible y coseguro completos en lugar del costo compartido reducido requerido por la actualización de regla de Medicare de 2022."
+      },
+      {
+        "en": "Anesthesiologist billed out-of-network when the facility is in-network (No Surprises Act may apply, do not pay before checking).",
+        "es": "Anestesiólogo facturado fuera de la red cuando la instalación está en la red (puede aplicar la Ley de No Sorpresas, no pague antes de verificar)."
+      },
+      {
+        "en": "Multiple separate facility charges for the same procedure (one bill from the ASC plus a duplicate hospital outpatient claim).",
+        "es": "Múltiples cargos de instalación separados por el mismo procedimiento (una factura del ASC más un reclamo duplicado del hospital ambulatorio)."
+      },
+      {
+        "en": "Hospital outpatient rate billed for a procedure performed at an affiliated ASC.",
+        "es": "Tarifa ambulatoria del hospital facturada por un procedimiento realizado en un ASC afiliado."
+      },
+      {
+        "en": "Bowel prep medication billed at retail when a generic alternative was available.",
+        "es": "Medicamento de preparación intestinal facturado al precio minorista cuando había una alternativa genérica disponible."
+      },
+      {
+        "en": "Each polyp specimen billed as a separate full pathology workup instead of a single multi-specimen review.",
+        "es": "Cada muestra de pólipo facturada como un examen patológico completo separado en lugar de una revisión única de múltiples muestras."
+      }
     ]
   },
-
   "faqs": {
     "en": [
       {
@@ -273,26 +383,36 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad para Medicare" },
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad para Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "ACA Preventive Services", "es": "Servicios Preventivos ACA" },
+      "label": {
+        "en": "ACA Preventive Services",
+        "es": "Servicios Preventivos ACA"
+      },
       "href": "/aca-preventive-services"
     },
     {
-      "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Médicas" },
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
       "href": "/medical-bill-analyzer"
     },
     {
-      "label": { "en": "No Surprises Act", "es": "Ley de No Sorpresas" },
+      "label": {
+        "en": "No Surprises Act",
+        "es": "Ley de No Sorpresas"
+      },
       "href": "/no-surprises-act"
     }
   ],
-
   "sources": [
     {
       "name": "CMS 2026 Medicare Physician Fee Schedule",

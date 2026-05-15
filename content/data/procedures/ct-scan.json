@@ -11,9 +11,9 @@
   "procedureType": "Diagnostic",
   "medicalSpecialty": "Radiology",
   "lastUpdated": "2026-05-13",
+  "ctaTarget": "analyzer",
   "readingTime": "8 min read",
   "hcpcsCodes": [],
-
   "meta": {
     "title": {
       "en": "CT Scan Cost Without Insurance in 2026 — National Pricing Guide | CoveredUSA",
@@ -24,7 +24,6 @@
       "es": "Costo promedio de una tomografía computarizada en 2026: $300 a $3,275 sin seguro. Compare precios de hospital vs. centro de imágenes independiente y tarifas de Medicare."
     }
   },
-
   "hero": {
     "h1": {
       "en": "How Much Does a CT Scan Cost in 2026?",
@@ -35,12 +34,10 @@
       "es": "Sin seguro, una tomografía computarizada típicamente cuesta de $300 a $3,275 en 2026. El sitio de servicio es el factor de costo más grande: el mismo escaneo cuesta de 2 a 3 veces más en un hospital que en un centro de imágenes independiente."
     }
   },
-
   "quickAnswer": {
     "en": "As of 2026, a CT scan costs an average of $1,200 nationally without insurance. At an independent imaging center: $300 to $1,000. At a hospital outpatient department: $1,200 to $3,275, for the same scan. Medicare pays approximately $185 at independent centers and $340 at hospitals.",
     "es": "A partir de 2026, una tomografía computarizada cuesta en promedio $1,200 a nivel nacional sin seguro. En un centro de imágenes independiente: $300 a $1,000. En un departamento ambulatorio del hospital: $1,200 a $3,275, por el mismo escaneo. Medicare paga aproximadamente $185 en centros independientes y $340 en hospitales."
   },
-
   "pricing": {
     "nationalMedian": 1200,
     "nationalLow": 300,
@@ -51,7 +48,6 @@
     "partBDeductibleYear": 2026,
     "partBDeductibleAmount": 283
   },
-
   "introParagraphs": [
     {
       "en": "A computed tomography (CT) scan is one of the most common imaging tests ordered in the United States. Doctors use them to look at the head after a fall, the chest after a bad cough, the abdomen for unexplained pain, and the lungs to screen for cancer in long-term smokers. The scan itself takes a few minutes. The bill, however, can vary by more than 10x depending on where it gets done.",
@@ -66,7 +62,6 @@
       "es": "Esta guía cubre lo que cuesta una tomografía computarizada sin seguro en 2026, lo que paga Medicare, por qué los hospitales cobran de 2 a 3 veces más, errores comunes en una factura, y cómo varían los precios para escaneos de cabeza, pecho y abdomen."
     }
   ],
-
   "siteOfService": {
     "rows": [
       {
@@ -134,7 +129,6 @@
     },
     "tableSource": "CMS Physician Fee Schedule 2026, Hospital Outpatient PPS 2026, FAIR Health Consumer"
   },
-
   "variants": {
     "heading": {
       "en": "CT Scan Cost by Body Part in 2026",
@@ -145,20 +139,138 @@
       "es": "Los precios varían según lo que se escanea. Las tomografías de cabeza suelen ser las más baratas porque son rápidas y rara vez usan contraste. Los escaneos de abdomen y pelvis tienden a costar más, ya que a menudo incluyen contraste y tiempos de adquisición más largos. Si su médico ordena contraste (un colorante administrado oral o intravenosamente), agregue $100 a $400."
     },
     "headers": {
-      "en": ["Body Part", "Without-Insurance Range (no contrast)", "With Contrast (add)"],
-      "es": ["Parte del cuerpo", "Rango sin seguro (sin contraste)", "Con contraste (añadir)"]
+      "en": [
+        "Body Part",
+        "Without-Insurance Range (no contrast)",
+        "With Contrast (add)"
+      ],
+      "es": [
+        "Parte del cuerpo",
+        "Rango sin seguro (sin contraste)",
+        "Con contraste (añadir)"
+      ]
     },
     "rows": [
-      { "en": ["Head / Brain", "$300 – $1,500", "+$100 – $300"], "es": ["Cabeza / Cerebro", "$300 – $1,500", "+$100 – $300"] },
-      { "en": ["Sinus", "$300 – $1,200", "+$100 – $250"], "es": ["Senos paranasales", "$300 – $1,200", "+$100 – $250"] },
-      { "en": ["Chest / Lung", "$400 – $2,200", "+$150 – $350"], "es": ["Pecho / Pulmón", "$400 – $2,200", "+$150 – $350"] },
-      { "en": ["Abdomen", "$450 – $2,800", "+$200 – $400"], "es": ["Abdomen", "$450 – $2,800", "+$200 – $400"] },
-      { "en": ["Pelvis", "$450 – $2,800", "+$200 – $400"], "es": ["Pelvis", "$450 – $2,800", "+$200 – $400"] },
-      { "en": ["Abdomen and pelvis (combined)", "$700 – $3,275", "+$250 – $500"], "es": ["Abdomen y pelvis (combinado)", "$700 – $3,275", "+$250 – $500"] },
-      { "en": ["Cervical spine", "$400 – $2,000", "+$150 – $350"], "es": ["Columna cervical", "$400 – $2,000", "+$150 – $350"] },
-      { "en": ["Lumbar spine", "$400 – $2,000", "+$150 – $350"], "es": ["Columna lumbar", "$400 – $2,000", "+$150 – $350"] },
-      { "en": ["Coronary CT angiography", "$500 – $2,500", "Included"], "es": ["Angiografía coronaria por TC", "$500 – $2,500", "Incluido"] },
-      { "en": ["Low-dose lung cancer screening", "$100 – $400", "N/A"], "es": ["Detección de cáncer de pulmón en dosis baja", "$100 – $400", "N/A"] }
+      {
+        "en": [
+          "Head / Brain",
+          "$300 – $1,500",
+          "+$100 – $300"
+        ],
+        "es": [
+          "Cabeza / Cerebro",
+          "$300 – $1,500",
+          "+$100 – $300"
+        ]
+      },
+      {
+        "en": [
+          "Sinus",
+          "$300 – $1,200",
+          "+$100 – $250"
+        ],
+        "es": [
+          "Senos paranasales",
+          "$300 – $1,200",
+          "+$100 – $250"
+        ]
+      },
+      {
+        "en": [
+          "Chest / Lung",
+          "$400 – $2,200",
+          "+$150 – $350"
+        ],
+        "es": [
+          "Pecho / Pulmón",
+          "$400 – $2,200",
+          "+$150 – $350"
+        ]
+      },
+      {
+        "en": [
+          "Abdomen",
+          "$450 – $2,800",
+          "+$200 – $400"
+        ],
+        "es": [
+          "Abdomen",
+          "$450 – $2,800",
+          "+$200 – $400"
+        ]
+      },
+      {
+        "en": [
+          "Pelvis",
+          "$450 – $2,800",
+          "+$200 – $400"
+        ],
+        "es": [
+          "Pelvis",
+          "$450 – $2,800",
+          "+$200 – $400"
+        ]
+      },
+      {
+        "en": [
+          "Abdomen and pelvis (combined)",
+          "$700 – $3,275",
+          "+$250 – $500"
+        ],
+        "es": [
+          "Abdomen y pelvis (combinado)",
+          "$700 – $3,275",
+          "+$250 – $500"
+        ]
+      },
+      {
+        "en": [
+          "Cervical spine",
+          "$400 – $2,000",
+          "+$150 – $350"
+        ],
+        "es": [
+          "Columna cervical",
+          "$400 – $2,000",
+          "+$150 – $350"
+        ]
+      },
+      {
+        "en": [
+          "Lumbar spine",
+          "$400 – $2,000",
+          "+$150 – $350"
+        ],
+        "es": [
+          "Columna lumbar",
+          "$400 – $2,000",
+          "+$150 – $350"
+        ]
+      },
+      {
+        "en": [
+          "Coronary CT angiography",
+          "$500 – $2,500",
+          "Included"
+        ],
+        "es": [
+          "Angiografía coronaria por TC",
+          "$500 – $2,500",
+          "Incluido"
+        ]
+      },
+      {
+        "en": [
+          "Low-dose lung cancer screening",
+          "$100 – $400",
+          "N/A"
+        ],
+        "es": [
+          "Detección de cáncer de pulmón en dosis baja",
+          "$100 – $400",
+          "N/A"
+        ]
+      }
     ],
     "footnote": {
       "en": "Ranges assume mixed site of service. Ask your doctor whether contrast is actually needed before accepting it. Low-dose lung cancer screening is covered with no cost sharing under Medicare for eligible high-risk patients.",
@@ -166,7 +278,6 @@
     },
     "source": "FAIR Health Consumer, CMS 2026 data"
   },
-
   "medicareSection": {
     "paragraphs": [
       {
@@ -179,34 +290,70 @@
       }
     ]
   },
-
   "factorsAffectingCost": {
     "items": [
-      { "en": "Site of service (hospital vs. independent imaging center), the biggest factor.", "es": "Sitio de servicio (hospital vs. centro de imágenes independiente), el factor más grande." },
-      { "en": "With or without contrast dye (adds $100 to $400).", "es": "Con o sin colorante de contraste (agrega $100 a $400)." },
-      { "en": "Body part scanned (head is cheapest, abdomen and pelvis are highest).", "es": "Parte del cuerpo escaneada (cabeza es la más barata, abdomen y pelvis son las más caras)." },
-      { "en": "Number of regions scanned in one session.", "es": "Número de regiones escaneadas en una sola sesión." },
-      { "en": "Geographic region (urban markets tend to be higher).", "es": "Región geográfica (los mercados urbanos tienden a ser más altos)." },
-      { "en": "Whether you have insurance and your deductible status.", "es": "Si tiene seguro y el estado de su deducible." },
-      { "en": "Whether the scan happens in the emergency department (ER scans add facility fees).", "es": "Si el escaneo ocurre en la sala de emergencia (los escaneos de ER agregan tarifas de instalación)." }
+      {
+        "en": "Site of service (hospital vs. independent imaging center), the biggest factor.",
+        "es": "Sitio de servicio (hospital vs. centro de imágenes independiente), el factor más grande."
+      },
+      {
+        "en": "With or without contrast dye (adds $100 to $400).",
+        "es": "Con o sin colorante de contraste (agrega $100 a $400)."
+      },
+      {
+        "en": "Body part scanned (head is cheapest, abdomen and pelvis are highest).",
+        "es": "Parte del cuerpo escaneada (cabeza es la más barata, abdomen y pelvis son las más caras)."
+      },
+      {
+        "en": "Number of regions scanned in one session.",
+        "es": "Número de regiones escaneadas en una sola sesión."
+      },
+      {
+        "en": "Geographic region (urban markets tend to be higher).",
+        "es": "Región geográfica (los mercados urbanos tienden a ser más altos)."
+      },
+      {
+        "en": "Whether you have insurance and your deductible status.",
+        "es": "Si tiene seguro y el estado de su deducible."
+      },
+      {
+        "en": "Whether the scan happens in the emergency department (ER scans add facility fees).",
+        "es": "Si el escaneo ocurre en la sala de emergencia (los escaneos de ER agregan tarifas de instalación)."
+      }
     ]
   },
-
   "commonBillingErrors": {
     "intro": {
       "en": "If your CT scan bill is well above the typical range, check for these errors before paying:",
       "es": "Si su factura de tomografía computarizada está muy por encima del rango típico, verifique estos errores antes de pagar:"
     },
     "items": [
-      { "en": "Contrast billed when none was administered, or a higher tier of contrast billed than was used.", "es": "Contraste facturado cuando no se administró, o un nivel más alto de contraste facturado del que se usó." },
-      { "en": "Billed as two separate scans (abdomen and pelvis) when a combined abdomen-and-pelvis code applies.", "es": "Facturado como dos escaneos separados (abdomen y pelvis) cuando aplica un código combinado de abdomen y pelvis." },
-      { "en": "Hospital outpatient facility fee billed for a scan performed at an affiliated imaging center.", "es": "Tarifa de instalación ambulatoria del hospital facturada por un escaneo realizado en un centro de imágenes afiliado." },
-      { "en": "Duplicate professional fees from two radiologists reading the same study.", "es": "Tarifas profesionales duplicadas de dos radiólogos leyendo el mismo estudio." },
-      { "en": "3D reconstruction or post-processing billed separately when bundled into the main scan code.", "es": "Reconstrucción 3D o post-procesamiento facturados por separado cuando están incluidos en el código principal del escaneo." },
-      { "en": "Low-dose lung cancer screening billed with patient cost sharing despite Medicare and ACA preventive coverage rules.", "es": "Detección de cáncer de pulmón en dosis baja facturada con costo compartido del paciente a pesar de las reglas de cobertura preventiva de Medicare y ACA." }
+      {
+        "en": "Contrast billed when none was administered, or a higher tier of contrast billed than was used.",
+        "es": "Contraste facturado cuando no se administró, o un nivel más alto de contraste facturado del que se usó."
+      },
+      {
+        "en": "Billed as two separate scans (abdomen and pelvis) when a combined abdomen-and-pelvis code applies.",
+        "es": "Facturado como dos escaneos separados (abdomen y pelvis) cuando aplica un código combinado de abdomen y pelvis."
+      },
+      {
+        "en": "Hospital outpatient facility fee billed for a scan performed at an affiliated imaging center.",
+        "es": "Tarifa de instalación ambulatoria del hospital facturada por un escaneo realizado en un centro de imágenes afiliado."
+      },
+      {
+        "en": "Duplicate professional fees from two radiologists reading the same study.",
+        "es": "Tarifas profesionales duplicadas de dos radiólogos leyendo el mismo estudio."
+      },
+      {
+        "en": "3D reconstruction or post-processing billed separately when bundled into the main scan code.",
+        "es": "Reconstrucción 3D o post-procesamiento facturados por separado cuando están incluidos en el código principal del escaneo."
+      },
+      {
+        "en": "Low-dose lung cancer screening billed with patient cost sharing despite Medicare and ACA preventive coverage rules.",
+        "es": "Detección de cáncer de pulmón en dosis baja facturada con costo compartido del paciente a pesar de las reglas de cobertura preventiva de Medicare y ACA."
+      }
     ]
   },
-
   "faqs": {
     "en": [
       {
@@ -277,26 +424,36 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "MRI Cost", "es": "Costo de Resonancia Magnética" },
+      "label": {
+        "en": "MRI Cost",
+        "es": "Costo de Resonancia Magnética"
+      },
       "href": "/cost/mri"
     },
     {
-      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad para Medicare" },
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad para Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "2026 FPL Chart", "es": "Tabla del FPL 2026" },
+      "label": {
+        "en": "2026 FPL Chart",
+        "es": "Tabla del FPL 2026"
+      },
       "href": "/federal-poverty-level"
     },
     {
-      "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Médicas" },
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
       "href": "/medical-bill-analyzer"
     }
   ],
-
   "sources": [
     {
       "name": "CMS 2026 Medicare Physician Fee Schedule",

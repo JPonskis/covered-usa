@@ -11,9 +11,9 @@
   "procedureType": "Diagnostic",
   "medicalSpecialty": "Radiology",
   "lastUpdated": "2026-05-12",
+  "ctaTarget": "analyzer",
   "readingTime": "8 min read",
   "hcpcsCodes": [],
-
   "meta": {
     "title": {
       "en": "MRI Cost Without Insurance in 2026 — National Pricing Guide | CoveredUSA",
@@ -24,7 +24,6 @@
       "es": "Costo promedio de una resonancia magnética en 2026: $400 a $3,500 sin seguro. Compare precios de hospital vs. centros de imágenes independientes y tarifas de Medicare."
     }
   },
-
   "hero": {
     "h1": {
       "en": "How Much Does an MRI Cost in 2026?",
@@ -35,12 +34,10 @@
       "es": "Sin seguro, una resonancia magnética típicamente cuesta de $400 a $3,500. El sitio de servicio es el factor de costo más grande, el mismo escaneo cuesta 2-3 veces más en un hospital que en un centro de imágenes independiente."
     }
   },
-
   "quickAnswer": {
     "en": "As of 2026, an MRI costs an average of $1,325 nationally without insurance. At an independent imaging center: $400-$1,200. At a hospital outpatient department: $1,500-$3,500, for the same scan. Medicare pays approximately $475 at independent centers and $720 at hospitals.",
     "es": "A partir de 2026, una resonancia magnética cuesta en promedio $1,325 a nivel nacional sin seguro. En un centro de imágenes independiente: $400-$1,200. En un departamento ambulatorio del hospital: $1,500-$3,500, para la misma exploración. Medicare paga aproximadamente $475 en centros independientes y $720 en hospitales."
   },
-
   "pricing": {
     "nationalMedian": 1325,
     "nationalLow": 400,
@@ -51,7 +48,6 @@
     "partBDeductibleYear": 2026,
     "partBDeductibleAmount": 283
   },
-
   "introParagraphs": [
     {
       "en": "A magnetic resonance imaging (MRI) scan is one of the most common diagnostic imaging tests in the United States. Doctors order them for everything from knee pain to headaches, sports injuries to suspected strokes. And the prices vary dramatically, not because of the scan itself, but because of where it gets done.",
@@ -66,7 +62,6 @@
       "es": "Esta guía cubre lo que paga una resonancia magnética sin seguro en 2026, lo que paga Medicare, por qué los hospitales cobran 2-3 veces más, y cómo detectar errores comunes en una factura de resonancia."
     }
   ],
-
   "siteOfService": {
     "rows": [
       {
@@ -134,7 +129,6 @@
     },
     "tableSource": "CMS Physician Fee Schedule 2026, Hospital Outpatient PPS 2026, FAIR Health Consumer"
   },
-
   "variants": {
     "heading": {
       "en": "MRI Cost by Body Part in 2026",
@@ -145,18 +139,114 @@
       "es": "Los precios varían no solo por sitio de servicio sino también por lo que se está escaneando. Las resonancias cardíacas y abdominales tienden a costar más debido a la complejidad técnica y los tiempos de exploración más largos. Si su médico también ordena contraste (un colorante administrado para mejorar la visualización), agregue $200 a $500."
     },
     "headers": {
-      "en": ["Body Part", "Without-Insurance Range (no contrast)", "With Contrast (add)"],
-      "es": ["Parte del cuerpo", "Rango sin seguro (sin contraste)", "Con contraste (añadir)"]
+      "en": [
+        "Body Part",
+        "Without-Insurance Range (no contrast)",
+        "With Contrast (add)"
+      ],
+      "es": [
+        "Parte del cuerpo",
+        "Rango sin seguro (sin contraste)",
+        "Con contraste (añadir)"
+      ]
     },
     "rows": [
-      { "en": ["Brain", "$500 – $3,000", "+$200 – $500"], "es": ["Cerebro", "$500 – $3,000", "+$200 – $500"] },
-      { "en": ["Lumbar spine", "$450 – $3,000", "+$200 – $500"], "es": ["Columna lumbar", "$450 – $3,000", "+$200 – $500"] },
-      { "en": ["Cervical spine", "$450 – $3,000", "+$200 – $500"], "es": ["Columna cervical", "$450 – $3,000", "+$200 – $500"] },
-      { "en": ["Knee", "$400 – $2,500", "+$200 – $400"], "es": ["Rodilla", "$400 – $2,500", "+$200 – $400"] },
-      { "en": ["Shoulder", "$400 – $2,500", "+$200 – $400"], "es": ["Hombro", "$400 – $2,500", "+$200 – $400"] },
-      { "en": ["Abdomen", "$600 – $3,500", "+$200 – $500"], "es": ["Abdomen", "$600 – $3,500", "+$200 – $500"] },
-      { "en": ["Pelvis", "$500 – $3,000", "+$200 – $500"], "es": ["Pelvis", "$500 – $3,000", "+$200 – $500"] },
-      { "en": ["Cardiac", "$1,500 – $5,000", "+$300 – $600"], "es": ["Cardíaca", "$1,500 – $5,000", "+$300 – $600"] }
+      {
+        "en": [
+          "Brain",
+          "$500 – $3,000",
+          "+$200 – $500"
+        ],
+        "es": [
+          "Cerebro",
+          "$500 – $3,000",
+          "+$200 – $500"
+        ]
+      },
+      {
+        "en": [
+          "Lumbar spine",
+          "$450 – $3,000",
+          "+$200 – $500"
+        ],
+        "es": [
+          "Columna lumbar",
+          "$450 – $3,000",
+          "+$200 – $500"
+        ]
+      },
+      {
+        "en": [
+          "Cervical spine",
+          "$450 – $3,000",
+          "+$200 – $500"
+        ],
+        "es": [
+          "Columna cervical",
+          "$450 – $3,000",
+          "+$200 – $500"
+        ]
+      },
+      {
+        "en": [
+          "Knee",
+          "$400 – $2,500",
+          "+$200 – $400"
+        ],
+        "es": [
+          "Rodilla",
+          "$400 – $2,500",
+          "+$200 – $400"
+        ]
+      },
+      {
+        "en": [
+          "Shoulder",
+          "$400 – $2,500",
+          "+$200 – $400"
+        ],
+        "es": [
+          "Hombro",
+          "$400 – $2,500",
+          "+$200 – $400"
+        ]
+      },
+      {
+        "en": [
+          "Abdomen",
+          "$600 – $3,500",
+          "+$200 – $500"
+        ],
+        "es": [
+          "Abdomen",
+          "$600 – $3,500",
+          "+$200 – $500"
+        ]
+      },
+      {
+        "en": [
+          "Pelvis",
+          "$500 – $3,000",
+          "+$200 – $500"
+        ],
+        "es": [
+          "Pelvis",
+          "$500 – $3,000",
+          "+$200 – $500"
+        ]
+      },
+      {
+        "en": [
+          "Cardiac",
+          "$1,500 – $5,000",
+          "+$300 – $600"
+        ],
+        "es": [
+          "Cardíaca",
+          "$1,500 – $5,000",
+          "+$300 – $600"
+        ]
+      }
     ],
     "footnote": {
       "en": "Ranges assume mixed site of service. Ask your doctor whether contrast is actually needed before accepting it.",
@@ -164,7 +254,6 @@
     },
     "source": "FAIR Health Consumer, CMS 2026 data"
   },
-
   "medicareSection": {
     "paragraphs": [
       {
@@ -177,33 +266,66 @@
       }
     ]
   },
-
   "factorsAffectingCost": {
     "items": [
-      { "en": "Site of service (hospital vs. independent imaging center), the biggest factor.", "es": "Sitio de servicio (hospital vs. centro de imágenes independiente), el factor más grande." },
-      { "en": "With or without contrast dye (adds $200-$500).", "es": "Con o sin colorante de contraste (agrega $200-$500)." },
-      { "en": "Body part scanned.", "es": "Parte del cuerpo escaneada." },
-      { "en": "Geographic region (urban markets tend to be higher).", "es": "Región geográfica (los mercados urbanos tienden a ser más altos)." },
-      { "en": "Whether you have insurance and your deductible status.", "es": "Si tiene seguro y el estado de su deducible." },
-      { "en": "Open vs. closed MRI (open costs 10-20% more).", "es": "Resonancia abierta vs. cerrada (las abiertas cuestan 10-20% más)." }
+      {
+        "en": "Site of service (hospital vs. independent imaging center), the biggest factor.",
+        "es": "Sitio de servicio (hospital vs. centro de imágenes independiente), el factor más grande."
+      },
+      {
+        "en": "With or without contrast dye (adds $200-$500).",
+        "es": "Con o sin colorante de contraste (agrega $200-$500)."
+      },
+      {
+        "en": "Body part scanned.",
+        "es": "Parte del cuerpo escaneada."
+      },
+      {
+        "en": "Geographic region (urban markets tend to be higher).",
+        "es": "Región geográfica (los mercados urbanos tienden a ser más altos)."
+      },
+      {
+        "en": "Whether you have insurance and your deductible status.",
+        "es": "Si tiene seguro y el estado de su deducible."
+      },
+      {
+        "en": "Open vs. closed MRI (open costs 10-20% more).",
+        "es": "Resonancia abierta vs. cerrada (las abiertas cuestan 10-20% más)."
+      }
     ]
   },
-
   "commonBillingErrors": {
     "intro": {
       "en": "If your MRI bill is well above the typical range, check for these errors before paying:",
       "es": "Si su factura de resonancia magnética está muy por encima del rango típico, verifique estos errores antes de pagar:"
     },
     "items": [
-      { "en": "Billed twice for the same MRI on the same day (duplicate charges).", "es": "Facturado dos veces por la misma resonancia el mismo día (cargos duplicados)." },
-      { "en": "Charged for contrast when none was administered.", "es": "Cobrado por contraste cuando no se administró." },
-      { "en": "Hospital outpatient rate billed for an MRI performed at an affiliated imaging center.", "es": "Tarifa ambulatoria de hospital facturada por una resonancia realizada en un centro de imágenes afiliado." },
-      { "en": "Anesthesia billed when none was administered.", "es": "Anestesia facturada cuando no se administró ninguna." },
-      { "en": "Separate image billed for each sequence when all are part of one study.", "es": "Imagen separada facturada para cada secuencia cuando todas son parte de un estudio." },
-      { "en": "Open MRI billed when a standard MRI was performed.", "es": "Resonancia abierta facturada cuando se realizó una resonancia estándar." }
+      {
+        "en": "Billed twice for the same MRI on the same day (duplicate charges).",
+        "es": "Facturado dos veces por la misma resonancia el mismo día (cargos duplicados)."
+      },
+      {
+        "en": "Charged for contrast when none was administered.",
+        "es": "Cobrado por contraste cuando no se administró."
+      },
+      {
+        "en": "Hospital outpatient rate billed for an MRI performed at an affiliated imaging center.",
+        "es": "Tarifa ambulatoria de hospital facturada por una resonancia realizada en un centro de imágenes afiliado."
+      },
+      {
+        "en": "Anesthesia billed when none was administered.",
+        "es": "Anestesia facturada cuando no se administró ninguna."
+      },
+      {
+        "en": "Separate image billed for each sequence when all are part of one study.",
+        "es": "Imagen separada facturada para cada secuencia cuando todas son parte de un estudio."
+      },
+      {
+        "en": "Open MRI billed when a standard MRI was performed.",
+        "es": "Resonancia abierta facturada cuando se realizó una resonancia estándar."
+      }
     ]
   },
-
   "faqs": {
     "en": [
       {
@@ -274,22 +396,29 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad para Medicare" },
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad para Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "2026 FPL Chart", "es": "Tabla del FPL 2026" },
+      "label": {
+        "en": "2026 FPL Chart",
+        "es": "Tabla del FPL 2026"
+      },
       "href": "/federal-poverty-level"
     },
     {
-      "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Médicas" },
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
       "href": "/medical-bill-analyzer"
     }
   ],
-
   "sources": [
     {
       "name": "CMS 2026 Medicare Physician Fee Schedule",
