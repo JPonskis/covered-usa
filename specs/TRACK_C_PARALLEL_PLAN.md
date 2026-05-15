@@ -1,9 +1,11 @@
-# Track C Parallel Execution Plan — 7 Template Writer Rewrites
+# Track C Parallel Execution Plan — 7 Template Writer + Verifier Rewrites
 
-**Version:** 1.0
+**Version:** 1.2 (Track C-prime — adds verifier rewrites alongside writer rewrites)
 **Date:** 2026-05-14
 **Status:** Plan complete; ready for parallel-session execution
-**Prerequisite:** Track B1 (blog writer rewrite) shipped — commits `226a884` + `e32f344` + `9e85861`. Read `FANOUT_FORMULA.md` + the B1 memory entry first (`feedback_b1_blog_writer_shipped.md`) to inherit the lessons learned.
+**Prerequisite:** Track B1 (blog writer rewrite) shipped — commits `226a884` + `e32f344` + `9e85861`. MA-state writer + verifier proven on Florida (Track C, this same date). Read `FANOUT_FORMULA.md` + the B1 memory entry first (`feedback_b1_blog_writer_shipped.md`) to inherit the lessons learned.
+
+**v1.2 changes (Track C-prime):** Each per-template plan now ships writer AND matching verifier as one atomic deliverable. Phase 4.5 added between Phase 4 (test cycle) and Phase 5 (activation) for verifier update. Reference implementations: `coveredusa-article-verifier` (daily blog) and `coveredusa-ma-state-verifier` already updated to the new pattern — copy their structure for the 7 remaining template verifiers.
 
 ---
 
@@ -176,16 +178,47 @@ For each output:
 
 **Expect to iterate.** B1 first-pass produced 4/5 articles with year-in-slug despite the rule being in the prompt. The fix was tightening the writer prompt with hard-reject GATES at STEP 6, then re-testing the failing case. Budget 30-60 min for one iteration round.
 
+### Phase 4.5 — Verifier update (~30-45 min) — NEW per Track C-prime
+
+After the writer ships and 5 test articles pass, **update the matching verifier agent** to mirror the writer's new structural rules. This is mandatory — without it, the writer enforces structural rules at write-time but the verifier can't detect drift in production output. Pattern proven on `coveredusa-article-verifier` (daily blog) and `coveredusa-ma-state-verifier` already.
+
+**Scope of verifier update (apply to `.claude/agents/coveredusa-<template>-verifier.md`):**
+
+1. **Path portability:** `/Users/frankthebot/...` → `$HOME/clawd/...` (multi-host compatibility)
+2. **Add dual-purpose framing** in YOUR TASK: numeric fact-checking with auto-fix (existing role) + structural GATE detection (new, detect-only). Explain why the split (auto-edit prose = drift; structure failures should regen via writer).
+3. **Insert STEP 1C (or 2.5): Structural GATE detection.** Mirror the writer's STEP 6 GATES:
+   - **Universal GATES (every template):** A (slug-no-year), B (household-size table — usually N/A), C (≥3 .gov citations), D (zero `--`).
+   - **Template-specific GATES:** copy from writer's STEP 6 (e.g., MA-state has E/F/G/H for How-to-enroll, $0 plans, pronoun discipline, state-context).
+4. **Routing rules** (default toward auto-ship):
+   - GATE A FAIL → HOLD (slug bug)
+   - GATE B FAIL on income-gated → HOLD; N/A on non-income → skip
+   - GATE C FAIL (0-1 .gov) → HOLD; WARN (2) → ship + LOW flag
+   - GATE D FAIL → AUTO-FIX as style correction (don't HOLD; surgical)
+   - Template-specific structural FAILs → HOLD if missing required section; flag-only if pronoun/boundary leaks
+5. **Update STEP 6 return JSON** to include `gates: {a, b, c, d, ...}` object + new `held` status.
+6. **Add CRITICAL RULE:** structural gates are DETECT-ONLY (except GATE D auto-fix); never write missing sections.
+7. **Add CRITICAL RULE:** default toward auto-ship per Jacob's preference. Don't be the bottleneck.
+
+**Verification of the verifier update:**
+- Run the updated verifier on the 5 test articles from Phase 4. Expected: all pass without spurious HOLDs (since they were just produced by the writer and meet the structural bar).
+- If any spurious HOLD: tighten the verifier prompt before shipping. Common over-fire: GATE B applied to non-income-gated topic; GATE C counted plain-text mentions instead of hyperlinks.
+
+**Reference implementations** (read these before writing your verifier update):
+- `.claude/agents/coveredusa-article-verifier.md` (Track C-prime updated, daily blog)
+- `.claude/agents/coveredusa-ma-state-verifier.md` (Track C-prime updated, MA-state)
+- `.claude/agents/coveredusa-<template>-verifier.bak.md` (backup of pre-update verifier — for reference, do NOT restore unless rolling back)
+
 ### Phase 5 — Activation + commit (~30 min)
 
 Pre-activation tripwires:
 - `git diff --name-status HEAD | grep "^R"` must be empty (no renames)
 - `git diff -G '"slug":' HEAD -- content/data/<template>/*.json` must be empty (no slug field changes in existing files)
 
-3 commits per the B1 pattern:
+4 commits per the Track C-prime pattern (was 3 in the B1 pattern; adds the verifier):
 1. **Commit 1:** `.bak` move + new writer prompt (in clawd-workspace)
-2. **Commit 2:** 5 test articles (in covered-usa)
+2. **Commit 2:** 5 test articles (in covered-usa) — INCLUDING any verifier-caught corrections from Phase 4.5
 3. **Commit 3:** Requirements matrix + 3 verifier reports + retest verifier (in covered-usa)
+4. **Commit 4:** `.bak` move + new VERIFIER prompt (in clawd-workspace) — paired with the writer ship
 
 Then watch the first content production round. For templates with bulkgen crons (procedure, drug, persona, etc.), this means running a small bulkgen batch (3-5 pages) and validating. For templates without active crons, this means letting the writer sit until the next on-demand batch.
 
@@ -546,11 +579,13 @@ If you want to compress Round 2 further: Q&A is the most architecturally complex
 
 ## 10. First 5 actions for any parallel Track C session
 
-1. Read this doc through §4 (shared framing). Then read §5.X for YOUR template only.
+1. Read this doc through §4 (shared framing) + §3 Phase 4.5 (verifier scope). Then read §5.X for YOUR template only.
 2. Read `feedback_b1_blog_writer_shipped.md` memory entry for the lessons learned.
-3. Read the cited source docs in §3 Phase 1 for your template.
+3. Read the cited source docs in §3 Phase 1 for your template + the two reference verifiers (`coveredusa-article-verifier.md`, `coveredusa-ma-state-verifier.md`) for the verifier update pattern.
 4. Pull origin/main on both repos (clawd-workspace and covered-usa) before doing anything.
 5. Start Phase 1 — spawn the planner agent with the prompt template from §3 Phase 1.
+
+**Atomic deliverable per session:** writer rewrite + verifier rewrite + 5 test articles + requirements matrix + 3 verifier reports + memory entry. All ship together (4 commits total per §3 Phase 5).
 
 If anything in this doc is unclear, surface it to Jacob BEFORE proceeding. Don't guess at scope.
 
