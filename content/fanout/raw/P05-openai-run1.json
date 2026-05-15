@@ -1,0 +1,33 @@
+{
+  "promptId": "P05",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "caretaker",
+  "prompt": "my mom needs ozempic and her insurance denied it whats the real cost going to be",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T22:10:38.394Z",
+  "durationMs": 43528,
+  "queries": [
+    "Ozempic price 2026 cash price per month 1 mg pen May 2026",
+    "Novo Nordisk Ozempic savings card 2026 official site Ozempic savings card terms 2026 'Novo Nordisk savings card Ozempic'",
+    "Rybelsus price without insurance 2026 cash price per month May 2026",
+    "How to appeal a denied drug prior authorization Medicare 'appeal' 'prescription drug coverage' 'Medicare' 'appeal a coverage decision' 2026"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "input_tokens": 22355,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3398,
+    "output_tokens_details": {
+      "reasoning_tokens": 2368
+    },
+    "total_tokens": 25753
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

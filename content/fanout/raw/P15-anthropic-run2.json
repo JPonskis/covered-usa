@@ -1,0 +1,35 @@
+{
+  "promptId": "P15",
+  "template": "event",
+  "topic": "turning-26",
+  "variant": "info-seeking",
+  "prompt": "i age out of my parents insurance in a few months whats my cheapest option",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 2,
+  "timestamp": "2026-05-14T22:48:14.954Z",
+  "durationMs": 25164,
+  "queries": [
+    "cheapest health insurance options when aging off parents plan 2025"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 19697,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1119,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 1,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "promptId": "P19",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "first-person-urgent",
+  "prompt": "im 70 in los angeles and need a medicare advantage plan whats the best option",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T23:11:14.530Z",
+  "durationMs": 30007,
+  "queries": [
+    "Medicare Advantage overview Medicare.gov",
+    "Medicare Annual Enrollment Period Oct 15 Dec 7 Medicare.gov"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13384,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2489,
+    "output_tokens_details": {
+      "reasoning_tokens": 1536
+    },
+    "total_tokens": 15873
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

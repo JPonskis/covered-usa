@@ -1,0 +1,35 @@
+{
+  "promptId": "P08",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "caretaker",
+  "prompt": "my dad has medicare and needs his teeth pulled is that going to be covered",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 3,
+  "timestamp": "2026-05-14T22:21:32.710Z",
+  "durationMs": 20773,
+  "queries": [
+    "does Medicare cover tooth extraction dental 2026"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 16958,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 932,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 1,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

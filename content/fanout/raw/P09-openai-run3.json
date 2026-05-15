@@ -1,0 +1,34 @@
+{
+  "promptId": "P09",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "info-seeking",
+  "prompt": "does medicare cover any dental stuff like cleanings or dentures im trying to plan for retirement",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:27:28.362Z",
+  "durationMs": 46183,
+  "queries": [
+    "Does Medicare cover dental cleanings dentures site:medicare.gov",
+    "Medicare Annual Enrollment Period Oct 15 to Dec 7 Medicare.gov",
+    "Can you use HSA to pay for dental after Medicare enrollment 'can't contribute after Medicare' IRS",
+    "IRS Publication 969 Health Savings Accounts and Other Tax-Favored Health Plans HSA and Medicare 'Publication 969' 2024 2025 2026 site:irs.gov",
+    "Do medigap policies cover dental Medicare.gov 'Medigap dental' 'Medicare supplement' 'dental'"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 25721,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3058,
+    "output_tokens_details": {
+      "reasoning_tokens": 2368
+    },
+    "total_tokens": 28779
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

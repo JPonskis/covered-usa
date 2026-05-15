@@ -1,0 +1,47 @@
+{
+  "promptId": "P05",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "caretaker",
+  "prompt": "my mom needs ozempic and her insurance denied it whats the real cost going to be",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T22:12:41.974Z",
+  "durationMs": 22715,
+  "queries": [
+    "Novo Nordisk Patient Assistance Program Ozempic eligibility",
+    "cost of compounded semaglutide vs Ozempic brand name",
+    "Ozempic list price without insurance 2024 2025",
+    "Ozempic retail price at pharmacies May 2026",
+    "Ozempic manufacturer savings card eligibility requirements",
+    "how to appeal Ozempic insurance denial for type 2 diabetes vs weight loss",
+    "Extra Help program Medicare eligibility for Ozempic 2026",
+    "Ozempic cost for Medicare patients if insurance denies coverage 2026",
+    "how to get Ozempic for $25 if insurance denies but drug is on formulary",
+    "Novo Nordisk Ozempic $499 self-pay program eligibility criteria type 2 diabetes requirement"
+  ],
+  "queryCount": 10,
+  "usage": {
+    "promptTokenCount": 166,
+    "candidatesTokenCount": 950,
+    "totalTokenCount": 3169,
+    "cachedContentTokenCount": 79,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 166
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 79
+      }
+    ],
+    "toolUsePromptTokenCount": 737,
+    "thoughtsTokenCount": 1316,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

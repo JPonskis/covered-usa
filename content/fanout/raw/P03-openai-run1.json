@@ -1,0 +1,31 @@
+{
+  "promptId": "P03",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "info-seeking",
+  "prompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T22:03:14.380Z",
+  "durationMs": 44958,
+  "queries": [
+    "How much does an MRI cost in the United States 2024 average cost MRI without insurance contrast vs non-contrast",
+    "No Surprises Act good faith estimate scheduled services patient right to estimate 2023 2024 2025 CMS guidance 'Good Faith Estimate' healthcare 'self-pay' 'No Surprises Act' 'GFE' 2024"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13315,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2983,
+    "output_tokens_details": {
+      "reasoning_tokens": 1536
+    },
+    "total_tokens": 16298
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

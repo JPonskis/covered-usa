@@ -1,0 +1,32 @@
+{
+  "promptId": "P31",
+  "template": "qa",
+  "topic": "medi-cal-california",
+  "variant": "state-named-program",
+  "prompt": "do i qualify for medi-cal in california 2026",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-15T00:18:19.005Z",
+  "durationMs": 29859,
+  "queries": [
+    "Medi-Cal eligibility California 2026 income limits DHCS",
+    "HHS 2026 poverty guidelines 2026 HHS poverty guidelines press release",
+    "Medi-Cal income limit 138% FPL California adults 2026 '138% of the federal poverty level' 'Medi-Cal' 'California' '2026'"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 17630,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2529,
+    "output_tokens_details": {
+      "reasoning_tokens": 1792
+    },
+    "total_tokens": 20159
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

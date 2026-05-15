@@ -1,0 +1,32 @@
+{
+  "promptId": "P02",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "caretaker",
+  "prompt": "my dad needs an MRI but doesnt have insurance can you tell me what hes looking at price-wise",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T21:59:50.043Z",
+  "durationMs": 27913,
+  "queries": [
+    "MRI cost without insurance United States average 2024 2025",
+    "MDsave MRI price MRI cost MDsave 'MRI' 2026 cash price",
+    "hospital financial assistance for uninsured imaging 'charity care' how to apply 2026 CMS guidance"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 16910,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2312,
+    "output_tokens_details": {
+      "reasoning_tokens": 1344
+    },
+    "total_tokens": 19222
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "promptId": "P08",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "caretaker",
+  "prompt": "my dad has medicare and needs his teeth pulled is that going to be covered",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T22:24:06.422Z",
+  "durationMs": 14218,
+  "queries": [
+    "does medicare cover tooth extractions",
+    "when is tooth extraction covered by medicare",
+    "medicare advantage dental coverage tooth extraction",
+    "medicare part a and b dental coverage tooth extraction",
+    "Medicare Part B premium 2026",
+    "Medicare Part B deductible 2026",
+    "Medicare Part A deductible 2026"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "promptTokenCount": 116,
+    "candidatesTokenCount": 606,
+    "totalTokenCount": 2564,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 116
+      }
+    ],
+    "toolUsePromptTokenCount": 840,
+    "thoughtsTokenCount": 1002,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

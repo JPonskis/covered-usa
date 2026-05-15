@@ -1,0 +1,31 @@
+{
+  "promptId": "P06",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "info-seeking",
+  "prompt": "im paying cash for ozempic every month is there any way to get it cheaper",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T22:14:52.366Z",
+  "durationMs": 34675,
+  "queries": [
+    "Ozempic savings card Novo Nordisk 2026 patient assistance program Ozempic savings card eligibility Medicare",
+    "FDA warning compounded semaglutide 2025 2026 mass marketed compounded semaglutide recall warning FDA site"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13281,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2238,
+    "output_tokens_details": {
+      "reasoning_tokens": 1408
+    },
+    "total_tokens": 15519
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

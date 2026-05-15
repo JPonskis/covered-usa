@@ -1,0 +1,35 @@
+{
+  "promptId": "P16",
+  "template": "persona",
+  "topic": "gig-workers",
+  "variant": "first-person-urgent",
+  "prompt": "im a full-time uber driver with no employer plan how do i get health insurance",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-14T23:26:22.447Z",
+  "durationMs": 49968,
+  "queries": [
+    "HealthCare.gov self-employed health coverage marketplace special enrollment loss income Medicaid 2026",
+    "Uber California healthcare stipend active time 2026 Prop 22 official Uber",
+    "HealthCare.gov Medicaid CHIP apply any time no open enrollment",
+    "site:cms.gov 2027 Marketplace open enrollment November 1 December 15 2026 CMS final rule",
+    "IRS self-employed health insurance deduction premiums 2026 Publication 535",
+    "HealthCare.gov cost sharing reductions silver plan lower out of pocket costs official"
+  ],
+  "queryCount": 6,
+  "usage": {
+    "input_tokens": 43301,
+    "input_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "output_tokens": 1925,
+    "output_tokens_details": {
+      "reasoning_tokens": 1121
+    },
+    "total_tokens": 45226
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

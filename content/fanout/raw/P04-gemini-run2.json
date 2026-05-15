@@ -1,0 +1,39 @@
+{
+  "promptId": "P04",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "first-person-urgent",
+  "prompt": "how much will Ozempic cost me per month if my insurance doesnt cover it",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T22:08:16.453Z",
+  "durationMs": 22728,
+  "queries": [
+    "Ozempic cost per month without insurance 2026",
+    "GoodRx Ozempic price 2026",
+    "Novo Nordisk patient assistance program Ozempic eligibility",
+    "Ozempic list price 2026",
+    "Ozempic manufacturer discount card for patients without insurance",
+    "Ozempic pill vs Rybelsus 2026",
+    "Ozempic savings card discount amount if insurance does not cover",
+    "expected semaglutide generic date 2026",
+    "NovoCare Ozempic cash pay program eligibility weight loss vs diabetes"
+  ],
+  "queryCount": 9,
+  "usage": {
+    "promptTokenCount": 149,
+    "candidatesTokenCount": 883,
+    "totalTokenCount": 4355,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 149
+      }
+    ],
+    "toolUsePromptTokenCount": 1344,
+    "thoughtsTokenCount": 1979,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

@@ -1,0 +1,37 @@
+{
+  "promptId": "P25",
+  "template": "qa",
+  "topic": "medicaid-texas",
+  "variant": "state-explicit",
+  "prompt": "do i qualify for medicaid in texas this year",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-15T00:24:06.408Z",
+  "durationMs": 99829,
+  "queries": [
+    "Texas Medicaid eligibility income limits 2026 official",
+    "site:hhs.texas.gov Medicaid income guidelines Texas pregnant women parents children 2026",
+    "site:hhs.texas.gov/services/health/medicaid-chip Texas Medicaid for pregnant women income limits",
+    "Your Texas Benefits Medicaid eligibility who can get Medicaid Texas adults children pregnant disability",
+    "2026 HHS poverty guidelines federal register 48 contiguous annual amounts",
+    "calculator: 15960*1.98/12",
+    "KFF status of state Medicaid expansion decisions Texas May 2026",
+    "Texas Medicaid expansion 2026 has not expanded Medicaid official"
+  ],
+  "queryCount": 8,
+  "usage": {
+    "input_tokens": 88341,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3615,
+    "output_tokens_details": {
+      "reasoning_tokens": 2816
+    },
+    "total_tokens": 91956
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

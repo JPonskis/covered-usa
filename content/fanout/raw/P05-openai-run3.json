@@ -1,0 +1,30 @@
+{
+  "promptId": "P05",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "caretaker",
+  "prompt": "my mom needs ozempic and her insurance denied it whats the real cost going to be",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:11:39.725Z",
+  "durationMs": 33899,
+  "queries": [
+    "Ozempic price cash 2026 retail price 1 mg pen box cost"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 8864,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2851,
+    "output_tokens_details": {
+      "reasoning_tokens": 1600
+    },
+    "total_tokens": 11715
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

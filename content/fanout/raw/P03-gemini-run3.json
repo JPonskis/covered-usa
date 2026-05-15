@@ -1,0 +1,46 @@
+{
+  "promptId": "P03",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "info-seeking",
+  "prompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T22:05:22.909Z",
+  "durationMs": 16924,
+  "queries": [
+    "MRI cost without insurance USA 2026 range",
+    "how to find out cost of scheduled MRI with insurance",
+    "average MRI cost hospital vs independent imaging center",
+    "average cost of MRI scan USA 2026 factors affecting price",
+    "No Surprises Act MRI good faith estimate requirements",
+    "financial assistance for MRI scans low income or uninsured",
+    "discounted MRI programs for patients with high deductibles",
+    "charity care for medical imaging costs hospital policies",
+    "how to negotiate MRI bill before appointment script"
+  ],
+  "queryCount": 9,
+  "usage": {
+    "promptTokenCount": 198,
+    "candidatesTokenCount": 792,
+    "totalTokenCount": 2839,
+    "cachedContentTokenCount": 83,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 198
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 83
+      }
+    ],
+    "toolUsePromptTokenCount": 760,
+    "thoughtsTokenCount": 1089,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

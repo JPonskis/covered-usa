@@ -1,0 +1,34 @@
+{
+  "promptId": "P07",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "first-person-urgent",
+  "prompt": "im 67 and need a root canal will medicare pay for any of it",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:19:59.044Z",
+  "durationMs": 44560,
+  "queries": [
+    "Does Medicare cover dental root canal Medicare.gov dental coverage",
+    "Medicare Advantage dental coverage root canal 'Medicare.gov' 'Medicare Advantage dental' 'root canal'",
+    "Medicare Advantage dental coverage 'Medicare.gov' dental benefits 'Medicare Advantage' 'extra benefits' 'dental' 'root canal'",
+    "Does Medicare Part D cover prescription antibiotics for dental procedures 'Medicare.gov' 'prescription drugs' 'dental'",
+    "Medicaid dental coverage adult dental benefits medicaid.gov 'dental care' 'adult' 'root canal'"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 25569,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2971,
+    "output_tokens_details": {
+      "reasoning_tokens": 2112
+    },
+    "total_tokens": 28540
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

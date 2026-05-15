@@ -1,0 +1,35 @@
+{
+  "promptId": "P09",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "info-seeking",
+  "prompt": "does medicare cover any dental stuff like cleanings or dentures im trying to plan for retirement",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 2,
+  "timestamp": "2026-05-14T22:24:59.324Z",
+  "durationMs": 28317,
+  "queries": [
+    "Medicare dental coverage 2025 cleanings dentures"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 15353,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1327,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 1,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

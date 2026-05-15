@@ -1,0 +1,36 @@
+{
+  "promptId": "P20",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "caretaker",
+  "prompt": "my mom in california just turned 65 and we need to pick a medicare advantage plan",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 1,
+  "timestamp": "2026-05-14T23:12:52.446Z",
+  "durationMs": 43432,
+  "queries": [
+    "best Medicare Advantage plans California 2025",
+    "how to choose Medicare Advantage plan tips 2025"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 29872,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2015,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 2,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

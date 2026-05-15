@@ -1,0 +1,33 @@
+{
+  "promptId": "P03",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "info-seeking",
+  "prompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 1,
+  "timestamp": "2026-05-14T22:04:48.682Z",
+  "durationMs": 11658,
+  "queries": [
+    "factors affecting MRI cost hospital vs imaging center",
+    "average cost of MRI in US with and without insurance 2026",
+    "how much does MRI cost with insurance copay coinsurance",
+    "how to get MRI cost estimate before appointment"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 193,
+    "candidatesTokenCount": 733,
+    "totalTokenCount": 1535,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 193
+      }
+    ],
+    "thoughtsTokenCount": 609,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

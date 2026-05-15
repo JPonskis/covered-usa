@@ -1,0 +1,35 @@
+{
+  "promptId": "P22",
+  "template": "daily-blog",
+  "topic": "FPL",
+  "variant": "first-person-urgent",
+  "prompt": "what is the federal poverty level for 2026 i need to know if i qualify for medicaid",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T23:23:20.850Z",
+  "durationMs": 42862,
+  "queries": [
+    "2026 HHS poverty guidelines 2026 poverty guidelines HHS '2026' 'poverty guidelines' 'HHS' 'Federal Register'",
+    "ASPE 2026 poverty guidelines '2026 Poverty Guidelines' 'ASPE' 'HHS' '2026 Poverty Guidelines for the United States'",
+    "Medicaid 138% FPL 'Medicaid.gov' 'income eligibility' '138% of the federal poverty level'",
+    "Medicaid.gov 'eligibility levels' '138% of the federal poverty level' 'expansion' 'Medicaid expansion 138% site:medicaid.gov'",
+    "Medicaid.gov 'Medicaid eligibility' 'How eligibility works' 'FPL' '138%'",
+    "ASPE 2026 poverty guidelines 'aspe.hhs.gov/poverty' 2026 poverty guidelines 2026 'ASPE' '2026 poverty guidelines PDF'"
+  ],
+  "queryCount": 6,
+  "usage": {
+    "input_tokens": 37972,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2601,
+    "output_tokens_details": {
+      "reasoning_tokens": 1728
+    },
+    "total_tokens": 40573
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

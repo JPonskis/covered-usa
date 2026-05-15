@@ -1,0 +1,44 @@
+{
+  "promptId": "P25",
+  "template": "qa",
+  "topic": "medicaid-texas",
+  "variant": "state-explicit",
+  "prompt": "do i qualify for medicaid in texas this year",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-15T00:15:45.951Z",
+  "durationMs": 18335,
+  "queries": [
+    "Texas Medicaid eligibility requirements 2026",
+    "did Texas expand Medicaid 2026",
+    "Texas Medicaid income limits 2026 by household size",
+    "Texas Medicaid qualifications for adults children seniors 2026",
+    "did Texas HB807 pass Medicaid expansion 2026",
+    "Texas 2026 Medicaid income limits for parents and caretakers chart",
+    "Texas Medicaid expansion status May 2026"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "promptTokenCount": 148,
+    "candidatesTokenCount": 953,
+    "totalTokenCount": 3168,
+    "cachedContentTokenCount": 75,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 148
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 75
+      }
+    ],
+    "toolUsePromptTokenCount": 816,
+    "thoughtsTokenCount": 1251,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

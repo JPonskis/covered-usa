@@ -1,0 +1,30 @@
+{
+  "promptId": "P14",
+  "template": "event",
+  "topic": "turning-26",
+  "variant": "caretaker",
+  "prompt": "my daughter is turning 26 next month and needs her own insurance what do we do",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:46:41.201Z",
+  "durationMs": 39317,
+  "queries": [
+    "healthcare.gov dependent turns 26 special enrollment period 60 days losing coverage"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 8951,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2780,
+    "output_tokens_details": {
+      "reasoning_tokens": 1792
+    },
+    "total_tokens": 11731
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

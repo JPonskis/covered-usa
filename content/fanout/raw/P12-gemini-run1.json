@@ -1,0 +1,33 @@
+{
+  "promptId": "P12",
+  "template": "glossary",
+  "topic": "MAGI",
+  "variant": "specific-detail",
+  "prompt": "do i count my 401k withdrawals when calculating my income for aca subsidies",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 1,
+  "timestamp": "2026-05-14T22:37:36.927Z",
+  "durationMs": 11366,
+  "queries": [
+    "do 401k withdrawals count as income for ACA subsidies MAGI",
+    "is 401k distribution included in ACA subsidy income calculation",
+    "MAGI for ACA subsidy calculation 401k withdrawal",
+    "traditional vs roth 401k withdrawal ACA subsidy income"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 159,
+    "candidatesTokenCount": 696,
+    "totalTokenCount": 1512,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 159
+      }
+    ],
+    "thoughtsTokenCount": 657,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

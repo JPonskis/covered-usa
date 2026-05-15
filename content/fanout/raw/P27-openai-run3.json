@@ -1,0 +1,31 @@
+{
+  "promptId": "P27",
+  "template": "qa",
+  "topic": "medicaid-ohio",
+  "variant": "state-plus-family",
+  "prompt": "ohio medicaid income limit for a family of 4 2026",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-15T00:16:47.854Z",
+  "durationMs": 25323,
+  "queries": [
+    "HHS 2026 federal poverty guidelines 2026 family of 4",
+    "Ohio 5 percent income disregard Medicaid 133% 138% '5% disregard' Ohio Department of Medicaid"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 14116,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 1911,
+    "output_tokens_details": {
+      "reasoning_tokens": 1472
+    },
+    "total_tokens": 16027
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

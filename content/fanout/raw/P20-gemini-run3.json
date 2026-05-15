@@ -1,0 +1,34 @@
+{
+  "promptId": "P20",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "caretaker",
+  "prompt": "my mom in california just turned 65 and we need to pick a medicare advantage plan",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T23:16:48.868Z",
+  "durationMs": 16017,
+  "queries": [
+    "top rated Medicare Advantage plans California 2026",
+    "California HICAP medicare counseling",
+    "Medicare Advantage plan types California HMO vs PPO 2026",
+    "best Medicare Advantage plans California 2026 by county",
+    "how to choose Medicare Advantage plan California 2026"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "promptTokenCount": 163,
+    "candidatesTokenCount": 953,
+    "totalTokenCount": 2162,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 163
+      }
+    ],
+    "thoughtsTokenCount": 1046,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

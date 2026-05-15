@@ -1,0 +1,44 @@
+{
+  "promptId": "P12",
+  "template": "glossary",
+  "topic": "MAGI",
+  "variant": "specific-detail",
+  "prompt": "do i count my 401k withdrawals when calculating my income for aca subsidies",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T22:37:50.858Z",
+  "durationMs": 13929,
+  "queries": [
+    "do 401k withdrawals count as income for ACA subsidies MAGI",
+    "is early 401k withdrawal penalty included in ACA MAGI calculation",
+    "ACA subsidy income calculation traditional vs roth 401k withdrawals",
+    "does non-taxable social security count for ACA MAGI subsidy calculation",
+    "difference between SSDI and SSI for ACA MAGI income",
+    "IRS form 1040 line for penalty on early withdrawal of savings vs 10% retirement penalty",
+    "is 10% early withdrawal penalty for 401k deductible for ACA MAGI calculation"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "promptTokenCount": 173,
+    "candidatesTokenCount": 753,
+    "totalTokenCount": 2394,
+    "cachedContentTokenCount": 43,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 173
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 43
+      }
+    ],
+    "toolUsePromptTokenCount": 570,
+    "thoughtsTokenCount": 898,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

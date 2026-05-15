@@ -1,0 +1,44 @@
+{
+  "promptId": "P01",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "first-person-urgent",
+  "prompt": "i have an MRI scheduled next week how much will it cost without insurance",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T21:57:30.895Z",
+  "durationMs": 16897,
+  "queries": [
+    "average cost of MRI without insurance 2026",
+    "MRI cost without insurance by type brain spine knee 2026",
+    "how to find low cost MRI without insurance 2026",
+    "self-pay MRI cost vs hospital MRI cost 2026",
+    "is a good faith estimate required for self-pay patients in 2026",
+    "No Surprises Act Good Faith Estimate self-pay medical 2026 rules",
+    "how to request good faith estimate MRI without insurance 2026"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "promptTokenCount": 179,
+    "candidatesTokenCount": 780,
+    "totalTokenCount": 2945,
+    "cachedContentTokenCount": 50,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 179
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 50
+      }
+    ],
+    "toolUsePromptTokenCount": 739,
+    "thoughtsTokenCount": 1247,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

@@ -1,0 +1,35 @@
+{
+  "promptId": "P27",
+  "template": "qa",
+  "topic": "medicaid-ohio",
+  "variant": "state-plus-family",
+  "prompt": "ohio medicaid income limit for a family of 4 2026",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 1,
+  "timestamp": "2026-05-15T00:16:25.971Z",
+  "durationMs": 15888,
+  "queries": [
+    "Ohio Medicaid income limit family of 4 2026"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 14973,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 813,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 1,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

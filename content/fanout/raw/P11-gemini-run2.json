@@ -1,0 +1,33 @@
+{
+  "promptId": "P11",
+  "template": "glossary",
+  "topic": "MAGI",
+  "variant": "info-seeking",
+  "prompt": "i keep seeing magi on my marketplace application what does it actually include",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T22:34:25.924Z",
+  "durationMs": 11179,
+  "queries": [
+    "what is MAGI for marketplace health insurance application",
+    "MAGI calculation for health insurance subsidies",
+    "what income is included in MAGI for marketplace",
+    "difference between AGI and MAGI for health insurance marketplace"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 132,
+    "candidatesTokenCount": 684,
+    "totalTokenCount": 1481,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 132
+      }
+    ],
+    "thoughtsTokenCount": 665,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

@@ -1,0 +1,45 @@
+{
+  "promptId": "P15",
+  "template": "event",
+  "topic": "turning-26",
+  "variant": "info-seeking",
+  "prompt": "i age out of my parents insurance in a few months whats my cheapest option",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T22:51:39.486Z",
+  "durationMs": 27844,
+  "queries": [
+    "health insurance options for 26 year olds aging out",
+    "cheapest health insurance for 26 year olds marketplace vs private",
+    "ACA catastrophic plans eligibility and cost",
+    "age out of parents health insurance options cheap",
+    "medicaid eligibility for young adults aging out of parents insurance",
+    "Medicaid expansion states 2026 map",
+    "health insurance options for young adults in non-expansion states low income",
+    "cheapest health insurance for 26 year old $0 income no medicaid expansion"
+  ],
+  "queryCount": 8,
+  "usage": {
+    "promptTokenCount": 187,
+    "candidatesTokenCount": 916,
+    "totalTokenCount": 3073,
+    "cachedContentTokenCount": 80,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 187
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 80
+      }
+    ],
+    "toolUsePromptTokenCount": 774,
+    "thoughtsTokenCount": 1196,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

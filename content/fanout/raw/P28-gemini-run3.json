@@ -1,0 +1,33 @@
+{
+  "promptId": "P28",
+  "template": "event",
+  "topic": "lost-job-pennsylvania",
+  "variant": "state-plus-event",
+  "prompt": "im in pennsylvania and lost my job whats my best health insurance option",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-15T00:16:59.976Z",
+  "durationMs": 12120,
+  "queries": [
+    "Pennsylvania health insurance special enrollment period job loss",
+    "health insurance options Pennsylvania lost job Pennie Medicaid COBRA",
+    "Medicaid eligibility Pennsylvania 2024 2025",
+    "Pennie vs COBRA Pennsylvania"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 138,
+    "candidatesTokenCount": 974,
+    "totalTokenCount": 1862,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 138
+      }
+    ],
+    "thoughtsTokenCount": 750,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

@@ -1,0 +1,31 @@
+{
+  "promptId": "P29",
+  "template": "ma-state",
+  "topic": "missouri-MA",
+  "variant": "different-state-MA",
+  "prompt": "im 67 in missouri what medicare advantage plan should i pick",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-15T00:22:26.574Z",
+  "durationMs": 324154,
+  "queries": [
+    "Medicare Advantage how to choose Medicare plan Medicare.gov basics",
+    "Medicare Plan Finder Medicare.gov compare plans find a plan"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13190,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 1902,
+    "output_tokens_details": {
+      "reasoning_tokens": 1152
+    },
+    "total_tokens": 15092
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

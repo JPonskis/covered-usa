@@ -1,0 +1,32 @@
+{
+  "promptId": "P06",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "info-seeking",
+  "prompt": "im paying cash for ozempic every month is there any way to get it cheaper",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:16:12.370Z",
+  "durationMs": 42972,
+  "queries": [
+    "Ozempic savings card Novo Nordisk 2026 Ozempic savings program",
+    "NeedyMeds Ozempic patient assistance 2026",
+    "FDA personal importation policy prescription drugs from Canada personal importation 2026 guidance"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 17436,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3032,
+    "output_tokens_details": {
+      "reasoning_tokens": 1600
+    },
+    "total_tokens": 20468
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "promptId": "P29",
+  "template": "ma-state",
+  "topic": "missouri-MA",
+  "variant": "different-state-MA",
+  "prompt": "im 67 in missouri what medicare advantage plan should i pick",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-15T00:23:33.902Z",
+  "durationMs": 67323,
+  "queries": [
+    "Medicare Advantage plans Missouri 2026 Medicare Plan Finder official",
+    "Medicare Advantage Open Enrollment Period Jan 1 March 31 official Medicare.gov",
+    "Missouri Medigap birthday rule anniversary rule official insurance department",
+    "2026 Medicare Advantage maximum out-of-pocket limit CMS 9250 13900",
+    "site:medicare.gov plan compare zip code Medicare Advantage plans prescription drugs official"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 46037,
+    "input_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "output_tokens": 2877,
+    "output_tokens_details": {
+      "reasoning_tokens": 1902
+    },
+    "total_tokens": 48914
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

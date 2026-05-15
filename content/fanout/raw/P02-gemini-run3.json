@@ -1,0 +1,33 @@
+{
+  "promptId": "P02",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "caretaker",
+  "prompt": "my dad needs an MRI but doesnt have insurance can you tell me what hes looking at price-wise",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T22:01:11.798Z",
+  "durationMs": 11042,
+  "queries": [
+    "average cost of MRI without insurance in US 2026",
+    "how to save money on MRI without insurance",
+    "factors affecting cost of MRI without insurance",
+    "cost of MRI at hospital vs outpatient center without insurance"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 115,
+    "candidatesTokenCount": 787,
+    "totalTokenCount": 1394,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 115
+      }
+    ],
+    "thoughtsTokenCount": 492,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

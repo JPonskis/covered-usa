@@ -1,0 +1,33 @@
+{
+  "promptId": "P29",
+  "template": "ma-state",
+  "topic": "missouri-MA",
+  "variant": "different-state-MA",
+  "prompt": "im 67 in missouri what medicare advantage plan should i pick",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-15T00:17:31.727Z",
+  "durationMs": 14653,
+  "queries": [
+    "Medicare Advantage plans Missouri 2026 list and ratings",
+    "top rated Medicare Advantage plans Missouri 2025 2026",
+    "Medicare Advantage Missouri comparison by county 2026",
+    "how to choose a Medicare Advantage plan in Missouri 2026"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 208,
+    "candidatesTokenCount": 888,
+    "totalTokenCount": 2121,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 208
+      }
+    ],
+    "thoughtsTokenCount": 1025,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

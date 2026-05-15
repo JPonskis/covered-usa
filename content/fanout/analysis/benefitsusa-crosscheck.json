@@ -1,0 +1,942 @@
+{
+  "crosscheckAt": "2026-05-14T23:46:50.587675+00:00",
+  "inputs": {
+    "ourAggregate": "/Users/jacobposner/clawd/projects/covered-usa/content/fanout/aggregate-phase1.json",
+    "bingCsv": "/Users/jacobposner/Desktop/benefitsusa.org_AISearchQueriesReport_5_14_2026.csv",
+    "bingQueriesTotal": 461,
+    "bingQueriesByTopic": {
+      "FPL": 222,
+      "MAGI": 4
+    },
+    "ourPromptsAnalyzed": [
+      "P10",
+      "P11",
+      "P12",
+      "P22",
+      "P23",
+      "P24"
+    ]
+  },
+  "matchingMethod": "Token-set overlap on normalized lowercased queries with stopword removal and synonym normalization (obamacare\u2192aca, fpl\u2192poverty, ssa/ss\u2192social security, etc.). Match labels: 'exact' = identical token sets; 'semantic' = Jaccard \u2265 0.5 with \u22652 shared content tokens, OR overlap-coefficient \u2265 0.7; 'partial' = overlap-coef \u2265 0.5 with \u22652 shared tokens. Provider rate uses exact+semantic only.",
+  "overlappingPrompts": [
+    {
+      "promptId": "P10",
+      "userPrompt": "how do they figure out income for obamacare im self employed and im confused",
+      "topic": "MAGI",
+      "ourTopQueries": [
+        {
+          "query": "site:healthcare.gov self-employed income Marketplace estimated income ACA",
+          "captureCount": 1,
+          "providers": [
+            "openai-pro"
+          ]
+        },
+        {
+          "query": "HealthCare.gov MAGI definition what counts for Marketplace income self-employed",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "How Marketplace calculates income MAGI healthcare.gov self-employed",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "healthcare.gov what deductions can I subtract from income for Marketplace MAGI deductions list",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "healthcare.gov estimate income tool how to estimate income marketplace",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "healthcare.gov what documents to have when applying income information 'what to bring' 'documents' marketplace",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "how is income calculated for ACA Obamacare self employed 2025",
+          "captureCount": 3,
+          "providers": [
+            "anthropic"
+          ]
+        },
+        {
+          "query": "self employed ACA Obamacare MAGI calculation net profit deductions health insurance premium 2025",
+          "captureCount": 1,
+          "providers": [
+            "anthropic"
+          ]
+        }
+      ],
+      "bingMatchedQueries": [],
+      "overlapRate": 0.0,
+      "ourQueriesNotInBing": [
+        "site:healthcare.gov self-employed income Marketplace estimated income ACA",
+        "HealthCare.gov MAGI definition what counts for Marketplace income self-employed",
+        "How Marketplace calculates income MAGI healthcare.gov self-employed",
+        "healthcare.gov what deductions can I subtract from income for Marketplace MAGI deductions list",
+        "healthcare.gov estimate income tool how to estimate income marketplace",
+        "healthcare.gov what documents to have when applying income information 'what to bring' 'documents' marketplace",
+        "how is income calculated for ACA Obamacare self employed 2025",
+        "self employed ACA Obamacare MAGI calculation net profit deductions health insurance premium 2025"
+      ],
+      "bingQueriesNotInOurs": [
+        "freelancers health insurance subsidies eligibility (citations=10)",
+        "aca south carolina (citations=10)",
+        "oregon health insurance marketplace (citations=6)",
+        "freelancers health insurance subsidies qualification (citations=6)"
+      ]
+    },
+    {
+      "promptId": "P11",
+      "userPrompt": "i keep seeing magi on my marketplace application what does it actually include",
+      "topic": "MAGI",
+      "ourTopQueries": [
+        {
+          "query": "MAGI marketplace application what does it include",
+          "captureCount": 2,
+          "providers": [
+            "anthropic"
+          ]
+        },
+        {
+          "query": "MAGI marketplace health insurance what does it include",
+          "captureCount": 1,
+          "providers": [
+            "anthropic"
+          ]
+        },
+        {
+          "query": "what income is included in MAGI for marketplace application",
+          "captureCount": 2,
+          "providers": [
+            "gemini"
+          ]
+        },
+        {
+          "query": "what is MAGI for marketplace health insurance",
+          "captureCount": 1,
+          "providers": [
+            "gemini"
+          ]
+        },
+        {
+          "query": "MAGI marketplace exclusions",
+          "captureCount": 1,
+          "providers": [
+            "gemini"
+          ]
+        },
+        {
+          "query": "what is MAGI for marketplace health insurance application",
+          "captureCount": 1,
+          "providers": [
+            "gemini"
+          ]
+        },
+        {
+          "query": "MAGI calculation for health insurance subsidies",
+          "captureCount": 1,
+          "providers": [
+            "gemini"
+          ]
+        },
+        {
+          "query": "what income is included in MAGI for marketplace",
+          "captureCount": 1,
+          "providers": [
+            "gemini"
+          ]
+        }
+      ],
+      "bingMatchedQueries": [
+        {
+          "ourQuery": "MAGI marketplace health insurance what does it include",
+          "bingQuery": "oregon health insurance marketplace",
+          "bingCitations": 6,
+          "matchType": "partial"
+        },
+        {
+          "ourQuery": "what is MAGI for marketplace health insurance",
+          "bingQuery": "oregon health insurance marketplace",
+          "bingCitations": 6,
+          "matchType": "partial"
+        },
+        {
+          "ourQuery": "what is MAGI for marketplace health insurance application",
+          "bingQuery": "oregon health insurance marketplace",
+          "bingCitations": 6,
+          "matchType": "partial"
+        },
+        {
+          "ourQuery": "MAGI calculation for health insurance subsidies",
+          "bingQuery": "freelancers health insurance subsidies eligibility",
+          "bingCitations": 10,
+          "matchType": "partial"
+        }
+      ],
+      "overlapRate": 0.0,
+      "ourQueriesNotInBing": [
+        "MAGI marketplace application what does it include",
+        "what income is included in MAGI for marketplace application",
+        "MAGI marketplace exclusions",
+        "what income is included in MAGI for marketplace"
+      ],
+      "bingQueriesNotInOurs": [
+        "freelancers health insurance subsidies eligibility (citations=10)",
+        "aca south carolina (citations=10)",
+        "oregon health insurance marketplace (citations=6)",
+        "freelancers health insurance subsidies qualification (citations=6)"
+      ]
+    },
+    {
+      "promptId": "P12",
+      "userPrompt": "do i count my 401k withdrawals when calculating my income for aca subsidies",
+      "topic": "MAGI",
+      "ourTopQueries": [
+        {
+          "query": "Does 401(k) distribution count as income for premium tax credit MAGI site:healthcare.gov",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "MAGI premium tax credit healthcare.gov 'MAGI' 'premium tax credit' 401(k)",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "penalty on early withdrawal included in MAGI 'penalty on early withdrawal' 'MAGI' 'ACA' 'premium tax credit' 'healthcare.gov'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "Roth 401(k) distributions taxable? 'Roth 401(k) qualified distributions' IRS",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "IRS Roth 401(k) qualified distribution tax-free 'Roth 401(k) qualified distribution' site:irs.gov",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "healthcare.gov report income changes 'report changes' 'advance payments of premium tax credit' 'update income'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "Does 401(k) withdrawal count as income for ACA premium tax credit site:healthcare.gov",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "How do I report income changes to Marketplace when my income changes healthcare.gov report income change advance premium tax credit",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        }
+      ],
+      "bingMatchedQueries": [],
+      "overlapRate": 0.0,
+      "ourQueriesNotInBing": [
+        "Does 401(k) distribution count as income for premium tax credit MAGI site:healthcare.gov",
+        "MAGI premium tax credit healthcare.gov 'MAGI' 'premium tax credit' 401(k)",
+        "penalty on early withdrawal included in MAGI 'penalty on early withdrawal' 'MAGI' 'ACA' 'premium tax credit' 'healthcare.gov'",
+        "Roth 401(k) distributions taxable? 'Roth 401(k) qualified distributions' IRS",
+        "IRS Roth 401(k) qualified distribution tax-free 'Roth 401(k) qualified distribution' site:irs.gov",
+        "healthcare.gov report income changes 'report changes' 'advance payments of premium tax credit' 'update income'",
+        "Does 401(k) withdrawal count as income for ACA premium tax credit site:healthcare.gov",
+        "How do I report income changes to Marketplace when my income changes healthcare.gov report income change advance premium tax credit"
+      ],
+      "bingQueriesNotInOurs": [
+        "freelancers health insurance subsidies eligibility (citations=10)",
+        "aca south carolina (citations=10)",
+        "oregon health insurance marketplace (citations=6)",
+        "freelancers health insurance subsidies qualification (citations=6)"
+      ]
+    },
+    {
+      "promptId": "P22",
+      "userPrompt": "what is the federal poverty level for 2026 i need to know if i qualify for medicaid",
+      "topic": "FPL",
+      "ourTopQueries": [
+        {
+          "query": "2026 HHS poverty guidelines federal poverty level 2026 Medicaid",
+          "captureCount": 1,
+          "providers": [
+            "openai-pro"
+          ]
+        },
+        {
+          "query": "site:aspe.hhs.gov 2026 poverty guidelines HHS ASPE 2026",
+          "captureCount": 1,
+          "providers": [
+            "openai-pro"
+          ]
+        },
+        {
+          "query": "KFF status of state Medicaid expansion decisions 2026 states not expanded Medicaid",
+          "captureCount": 1,
+          "providers": [
+            "openai-pro"
+          ]
+        },
+        {
+          "query": "Federal Poverty Guidelines 2026 HHS 2026 FPL 2026 poverty guidelines",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "HHS poverty guidelines 2026 ASPE '2026 HHS Poverty Guidelines' 'ASPE' '2026'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "site:aspe.hhs.gov 2026 Poverty Guidelines '2026 Poverty Guidelines' 'ASPE' 'HHS'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "2026 HHS poverty guidelines PDF 'ASPE' '2026' 'poverty guidelines pdf'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "Annual Update of the HHS Poverty Guidelines 2026 Federal Register Jan 2026 'Annual Update of the HHS Poverty Guidelines' '2026'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        }
+      ],
+      "bingMatchedQueries": [
+        {
+          "ourQuery": "2026 HHS poverty guidelines federal poverty level 2026 Medicaid",
+          "bingQuery": "poverty guidelines 2026",
+          "bingCitations": 579,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "site:aspe.hhs.gov 2026 poverty guidelines HHS ASPE 2026",
+          "bingQuery": "poverty guidelines 2026",
+          "bingCitations": 579,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "KFF status of state Medicaid expansion decisions 2026 states not expanded Medicaid",
+          "bingQuery": "medicaid income limits 2026",
+          "bingCitations": 291,
+          "matchType": "partial"
+        },
+        {
+          "ourQuery": "Federal Poverty Guidelines 2026 HHS 2026 FPL 2026 poverty guidelines",
+          "bingQuery": "2026 federal poverty guidelines hhs",
+          "bingCitations": 52,
+          "matchType": "exact"
+        },
+        {
+          "ourQuery": "HHS poverty guidelines 2026 ASPE '2026 HHS Poverty Guidelines' 'ASPE' '2026'",
+          "bingQuery": "fpl 2026",
+          "bingCitations": 398,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "site:aspe.hhs.gov 2026 Poverty Guidelines '2026 Poverty Guidelines' 'ASPE' 'HHS'",
+          "bingQuery": "poverty guidelines 2026",
+          "bingCitations": 579,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "2026 HHS poverty guidelines PDF 'ASPE' '2026' 'poverty guidelines pdf'",
+          "bingQuery": "fpl 2026",
+          "bingCitations": 398,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "Annual Update of the HHS Poverty Guidelines 2026 Federal Register Jan 2026 'Annual Update of the HHS Poverty Guidelines' '2026'",
+          "bingQuery": "federal poverty guidelines 2026",
+          "bingCitations": 600,
+          "matchType": "semantic"
+        }
+      ],
+      "overlapRate": 0.875,
+      "ourQueriesNotInBing": [],
+      "bingQueriesNotInOurs": [
+        "texas medicaid income limits 2026 (citations=1079)",
+        "wic income guidelines 2026 (citations=717)",
+        "missouri medicaid income limits 2026 (citations=563)",
+        "sc medicaid income limits 2026 (citations=370)",
+        "Ohio Medicaid income limits 2026 (citations=328)",
+        "food stamp income guidelines 2026 (citations=316)",
+        "medical income limits 2026 california (citations=272)",
+        "mnsure income guidelines 2026 (citations=269)",
+        "soonercare income guidelines 2026 (citations=262)",
+        "snap income guidelines 2026 (citations=242)"
+      ]
+    },
+    {
+      "promptId": "P23",
+      "userPrompt": "my family of 4 makes 35k a year do we qualify for any health insurance help",
+      "topic": "FPL",
+      "ourTopQueries": [
+        {
+          "query": "2026 Federal Poverty Guidelines family of 4 HHS 2026 poverty guideline",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "HHS 2026 poverty guidelines ASPE 2026 federal poverty level '2026 Poverty Guidelines' site:hhs.gov",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "ASPE 2026 poverty guidelines '2026 HHS poverty guidelines' site:aspe.hhs.gov",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "Healthcare.gov 'Medicaid and CHIP' 'If your income is below' 'Medicaid and CHIP' eligibility",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "2026 federal poverty guidelines household of 4 HHS 2026 FPL",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "KFF Medicaid expansion map 2026 which states expanded Medicaid 2026",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "2026 federal poverty guidelines HHS family of 4 2026 poverty guideline 48 states",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "Annual Update of the HHS Poverty Guidelines 2026 Federal Register HHS 2026 poverty guidelines family of 4",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        }
+      ],
+      "bingMatchedQueries": [
+        {
+          "ourQuery": "2026 Federal Poverty Guidelines family of 4 HHS 2026 poverty guideline",
+          "bingQuery": "poverty guidelines 2026",
+          "bingCitations": 579,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "HHS 2026 poverty guidelines ASPE 2026 federal poverty level '2026 Poverty Guidelines' site:hhs.gov",
+          "bingQuery": "federal poverty guidelines 2026",
+          "bingCitations": 600,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "ASPE 2026 poverty guidelines '2026 HHS poverty guidelines' site:aspe.hhs.gov",
+          "bingQuery": "poverty guidelines 2026",
+          "bingCitations": 579,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "Healthcare.gov 'Medicaid and CHIP' 'If your income is below' 'Medicaid and CHIP' eligibility",
+          "bingQuery": "Medicaid income eligibility 2026",
+          "bingCitations": 8,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "2026 federal poverty guidelines household of 4 HHS 2026 FPL",
+          "bingQuery": "poverty guidelines 2026",
+          "bingCitations": 579,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "KFF Medicaid expansion map 2026 which states expanded Medicaid 2026",
+          "bingQuery": "medicaid income limits 2026",
+          "bingCitations": 291,
+          "matchType": "partial"
+        },
+        {
+          "ourQuery": "2026 federal poverty guidelines HHS family of 4 2026 poverty guideline 48 states",
+          "bingQuery": "federal poverty guidelines 2026",
+          "bingCitations": 600,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "Annual Update of the HHS Poverty Guidelines 2026 Federal Register HHS 2026 poverty guidelines family of 4",
+          "bingQuery": "federal poverty guidelines 2026",
+          "bingCitations": 600,
+          "matchType": "semantic"
+        }
+      ],
+      "overlapRate": 0.875,
+      "ourQueriesNotInBing": [],
+      "bingQueriesNotInOurs": [
+        "texas medicaid income limits 2026 (citations=1079)",
+        "wic income guidelines 2026 (citations=717)",
+        "missouri medicaid income limits 2026 (citations=563)",
+        "sc medicaid income limits 2026 (citations=370)",
+        "Ohio Medicaid income limits 2026 (citations=328)",
+        "food stamp income guidelines 2026 (citations=316)",
+        "medical income limits 2026 california (citations=272)",
+        "mnsure income guidelines 2026 (citations=269)",
+        "soonercare income guidelines 2026 (citations=262)",
+        "snap income guidelines 2026 (citations=242)"
+      ]
+    },
+    {
+      "promptId": "P24",
+      "userPrompt": "im trying to figure out the income limits for marketplace subsidies do i qualify if i make 60k",
+      "topic": "FPL",
+      "ourTopQueries": [
+        {
+          "query": "2026 federal poverty guidelines HHS 2026 FPL 2026 poverty guidelines",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "HHS 2026 poverty guidelines 2026 HHS poverty guidelines PDF '2026 HHS poverty guidelines' '2026 Federal Poverty Guidelines' 'HHS 2026'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "HealthCare.gov who qualifies for savings on marketplace '100% to 400% of the federal poverty level' '2026'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "HealthCare.gov 'Get help paying for coverage' '100% to 400% of the federal poverty level' '2026' 'How to qualify'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "Who qualifies for savings on a Marketplace plan 'HealthCare.gov' 'Who qualifies' 'premium tax credit'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "ASPE 2026 HHS poverty guidelines 2026 'HHS poverty guidelines 2026' 'ASPE' '2026 poverty guidelines PDF'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "ASPE '2026 poverty guidelines' site:hhs.gov '2026' 'poverty guidelines'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        },
+        {
+          "query": "2026 HHS poverty guidelines 'ASPE' '2026 HHS poverty guidelines' 'Assistant Secretary for Planning and Evaluation 2026 poverty guidelines'",
+          "captureCount": 1,
+          "providers": [
+            "openai"
+          ]
+        }
+      ],
+      "bingMatchedQueries": [
+        {
+          "ourQuery": "2026 federal poverty guidelines HHS 2026 FPL 2026 poverty guidelines",
+          "bingQuery": "2026 federal poverty guidelines hhs",
+          "bingCitations": 52,
+          "matchType": "exact"
+        },
+        {
+          "ourQuery": "HHS 2026 poverty guidelines 2026 HHS poverty guidelines PDF '2026 HHS poverty guidelines' '2026 Federal Poverty Guidelines' 'HHS 2026'",
+          "bingQuery": "fpl 2026",
+          "bingCitations": 398,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "HealthCare.gov who qualifies for savings on marketplace '100% to 400% of the federal poverty level' '2026'",
+          "bingQuery": "fpl 2026",
+          "bingCitations": 398,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "HealthCare.gov 'Get help paying for coverage' '100% to 400% of the federal poverty level' '2026' 'How to qualify'",
+          "bingQuery": "fpl 2026",
+          "bingCitations": 398,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "ASPE 2026 HHS poverty guidelines 2026 'HHS poverty guidelines 2026' 'ASPE' '2026 poverty guidelines PDF'",
+          "bingQuery": "fpl 2026",
+          "bingCitations": 398,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "ASPE '2026 poverty guidelines' site:hhs.gov '2026' 'poverty guidelines'",
+          "bingQuery": "fpl 2026",
+          "bingCitations": 398,
+          "matchType": "semantic"
+        },
+        {
+          "ourQuery": "2026 HHS poverty guidelines 'ASPE' '2026 HHS poverty guidelines' 'Assistant Secretary for Planning and Evaluation 2026 poverty guidelines'",
+          "bingQuery": "poverty guidelines 2026",
+          "bingCitations": 579,
+          "matchType": "semantic"
+        }
+      ],
+      "overlapRate": 0.875,
+      "ourQueriesNotInBing": [
+        "Who qualifies for savings on a Marketplace plan 'HealthCare.gov' 'Who qualifies' 'premium tax credit'"
+      ],
+      "bingQueriesNotInOurs": [
+        "texas medicaid income limits 2026 (citations=1079)",
+        "wic income guidelines 2026 (citations=717)",
+        "missouri medicaid income limits 2026 (citations=563)",
+        "sc medicaid income limits 2026 (citations=370)",
+        "Ohio Medicaid income limits 2026 (citations=328)",
+        "food stamp income guidelines 2026 (citations=316)",
+        "medical income limits 2026 california (citations=272)",
+        "mnsure income guidelines 2026 (citations=269)",
+        "soonercare income guidelines 2026 (citations=262)",
+        "snap income guidelines 2026 (citations=242)"
+      ]
+    }
+  ],
+  "providerScorecard": {
+    "openai": {
+      "overlapRate": 0.587,
+      "overlapRateLoose": 0.683,
+      "queriesEvaluated": 63,
+      "matchedExactOrSemantic": 37,
+      "matchedAny": 43,
+      "notes": "37/63 queries had exact/semantic Bing match"
+    },
+    "openai-pro": {
+      "overlapRate": 0.5,
+      "overlapRateLoose": 0.75,
+      "queriesEvaluated": 4,
+      "matchedExactOrSemantic": 2,
+      "matchedAny": 3,
+      "notes": "2/4 queries had exact/semantic Bing match"
+    },
+    "anthropic": {
+      "overlapRate": 0.308,
+      "overlapRateLoose": 0.462,
+      "queriesEvaluated": 13,
+      "matchedExactOrSemantic": 4,
+      "matchedAny": 6,
+      "notes": "4/13 queries had exact/semantic Bing match"
+    },
+    "gemini": {
+      "overlapRate": 0.381,
+      "overlapRateLoose": 0.524,
+      "queriesEvaluated": 84,
+      "matchedExactOrSemantic": 32,
+      "matchedAny": 44,
+      "notes": "32/84 queries had exact/semantic Bing match"
+    }
+  },
+  "summary": {
+    "averagePromptOverlapRate": 0.438,
+    "citationWeightedCoverage": 0.632,
+    "totalTopicCitations": 21704,
+    "coveredCitations": 13718,
+    "topBlindSpots": [
+      {
+        "query": "texas medicaid income limits 2026",
+        "citations": 1079
+      },
+      {
+        "query": "wic income guidelines 2026",
+        "citations": 717
+      },
+      {
+        "query": "missouri medicaid income limits 2026",
+        "citations": 563
+      },
+      {
+        "query": "sc medicaid income limits 2026",
+        "citations": 370
+      },
+      {
+        "query": "Ohio Medicaid income limits 2026",
+        "citations": 328
+      },
+      {
+        "query": "food stamp income guidelines 2026",
+        "citations": 316
+      },
+      {
+        "query": "medical income limits 2026 california",
+        "citations": 272
+      },
+      {
+        "query": "mnsure income guidelines 2026",
+        "citations": 269
+      },
+      {
+        "query": "soonercare income guidelines 2026",
+        "citations": 262
+      },
+      {
+        "query": "snap income guidelines 2026",
+        "citations": 242
+      },
+      {
+        "query": "iowa medicaid income guidelines 2026",
+        "citations": 241
+      },
+      {
+        "query": "florida medicaid income limits 2026",
+        "citations": 218
+      },
+      {
+        "query": "nc medicaid income limits 2026",
+        "citations": 185
+      },
+      {
+        "query": "mainecare income guidelines 2026",
+        "citations": 155
+      },
+      {
+        "query": "food stamps income guidelines 2026",
+        "citations": 154
+      }
+    ],
+    "topOvershoots": [
+      {
+        "query": "how is income calculated for ACA Obamacare self employed 2025",
+        "captureCount": 3,
+        "providers": [
+          "anthropic"
+        ],
+        "promptId": "P10"
+      },
+      {
+        "query": "401k withdrawals count as income for ACA subsidies MAGI",
+        "captureCount": 3,
+        "providers": [
+          "anthropic"
+        ],
+        "promptId": "P12"
+      },
+      {
+        "query": "do 401k withdrawals count as income for ACA subsidies MAGI",
+        "captureCount": 3,
+        "providers": [
+          "gemini"
+        ],
+        "promptId": "P12"
+      },
+      {
+        "query": "health insurance assistance family of 4 income 35000 2025",
+        "captureCount": 3,
+        "providers": [
+          "anthropic"
+        ],
+        "promptId": "P23"
+      },
+      {
+        "query": "ACA marketplace subsidy income limits 2025",
+        "captureCount": 3,
+        "providers": [
+          "anthropic"
+        ],
+        "promptId": "P24"
+      },
+      {
+        "query": "what counts as income for ACA self employed",
+        "captureCount": 2,
+        "providers": [
+          "gemini"
+        ],
+        "promptId": "P10"
+      },
+      {
+        "query": "MAGI marketplace application what does it include",
+        "captureCount": 2,
+        "providers": [
+          "anthropic"
+        ],
+        "promptId": "P11"
+      },
+      {
+        "query": "what income is included in MAGI for marketplace application",
+        "captureCount": 2,
+        "providers": [
+          "gemini"
+        ],
+        "promptId": "P11"
+      },
+      {
+        "query": "self employed ACA Obamacare MAGI calculation net profit deductions health insurance premium 2025",
+        "captureCount": 1,
+        "providers": [
+          "anthropic"
+        ],
+        "promptId": "P10"
+      },
+      {
+        "query": "self employed ACA Obamacare MAGI calculation net profit deductions health insurance premium",
+        "captureCount": 1,
+        "providers": [
+          "anthropic"
+        ],
+        "promptId": "P10"
+      },
+      {
+        "query": "self employed ACA Obamacare MAGI calculation net profit deductions 2025",
+        "captureCount": 1,
+        "providers": [
+          "anthropic"
+        ],
+        "promptId": "P10"
+      },
+      {
+        "query": "how to estimate self-employed income for obamacare health insurance marketplace",
+        "captureCount": 1,
+        "providers": [
+          "gemini"
+        ],
+        "promptId": "P10"
+      },
+      {
+        "query": "self-employed business deductions for obamacare income calculation",
+        "captureCount": 1,
+        "providers": [
+          "gemini"
+        ],
+        "promptId": "P10"
+      },
+      {
+        "query": "how is income calculated for obamacare self-employed MAGI",
+        "captureCount": 1,
+        "providers": [
+          "gemini"
+        ],
+        "promptId": "P10"
+      },
+      {
+        "query": "how to report self employed income for healthcare.gov",
+        "captureCount": 1,
+        "providers": [
+          "gemini"
+        ],
+        "promptId": "P10"
+      }
+    ],
+    "blindSpotPatterns": [
+      {
+        "pattern": "state-specific Medicaid/SNAP/program queries",
+        "weightedByCitations": 4197
+      },
+      {
+        "pattern": "WIC eligibility / income queries",
+        "weightedByCitations": 733
+      },
+      {
+        "pattern": "SNAP / food stamp income queries",
+        "weightedByCitations": 722
+      },
+      {
+        "pattern": "chart/table-shaped queries (visual lookup)",
+        "weightedByCitations": 253
+      }
+    ],
+    "overshootPatterns": [
+      {
+        "pattern": "401k withdrawal / retirement income edge cases",
+        "queryCount": 14
+      },
+      {
+        "pattern": "self-employed deduction sub-questions",
+        "queryCount": 6
+      },
+      {
+        "pattern": "policy/subsidy-cliff/IRA extension queries",
+        "queryCount": 5
+      },
+      {
+        "pattern": "SSDI/SSI/non-taxable SSA edge cases",
+        "queryCount": 4
+      },
+      {
+        "pattern": "FPL %-thresholds (138% / 400% etc.)",
+        "queryCount": 4
+      },
+      {
+        "pattern": "projection/estimate queries (esp. forward-looking)",
+        "queryCount": 3
+      },
+      {
+        "pattern": "Roth/IRA tax treatment edge cases",
+        "queryCount": 3
+      },
+      {
+        "pattern": "IRS form line-item lookups",
+        "queryCount": 2
+      }
+    ],
+    "confidenceCalibration": "medium",
+    "recommendation": "Use OpenAI fan-out as primary signal for new content (highest match-to-Bing rate). Treat Anthropic queries as solid second-opinion. Treat Gemini fan-out as a creativity layer that surfaces edge cases Bing rarely fires on (low precision, high recall). For any topic where geography or program enrollment matters (Medicaid, SNAP, WIC), generate state-specific permutations explicitly \u2014 Bing decomposes those heavily and our LLM proxies do not."
+  }
+}

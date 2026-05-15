@@ -1,0 +1,35 @@
+{
+  "promptId": "P31",
+  "template": "qa",
+  "topic": "medi-cal-california",
+  "variant": "state-named-program",
+  "prompt": "do i qualify for medi-cal in california 2026",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-15T00:18:55.648Z",
+  "durationMs": 61479,
+  "queries": [
+    "Medi-Cal income limits 2026 California 138% FPL DHCS 2026",
+    "California DHCS Medi-Cal eligibility 2026 income limits MAGI 138% '2026' site:dhcs.ca.gov",
+    "Medi-Cal asset limit 2026 $130,000 DHCS 'asset limit' '130,000' '2026' site:dhcs.ca.gov",
+    "2026 HHS poverty guidelines January 2026 Federal Register '2026 poverty guidelines' 'HHS' 'Federal Register'",
+    "Medi-Cal MAGI adults 138% FPL 'DHCS' '138% FPL' 'Medi-Cal expansion adults' site:dhcs.ca.gov",
+    "Covered California Medi-Cal eligibility 'CoveredCA' 'who qualifies for Medi-Cal' 138% FPL 'Covered California' 'Medi-Cal'"
+  ],
+  "queryCount": 6,
+  "usage": {
+    "input_tokens": 33834,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3433,
+    "output_tokens_details": {
+      "reasoning_tokens": 2112
+    },
+    "total_tokens": 37267
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

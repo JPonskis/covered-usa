@@ -1,0 +1,35 @@
+{
+  "promptId": "P24",
+  "template": "daily-blog",
+  "topic": "FPL",
+  "variant": "specific-detail",
+  "prompt": "im trying to figure out the income limits for marketplace subsidies do i qualify if i make 60k",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 3,
+  "timestamp": "2026-05-14T23:24:24.137Z",
+  "durationMs": 17410,
+  "queries": [
+    "ACA marketplace subsidy income limits 2025"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 16217,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 917,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 1,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

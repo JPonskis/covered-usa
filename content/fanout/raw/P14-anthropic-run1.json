@@ -1,0 +1,35 @@
+{
+  "promptId": "P14",
+  "template": "event",
+  "topic": "turning-26",
+  "variant": "caretaker",
+  "prompt": "my daughter is turning 26 next month and needs her own insurance what do we do",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 1,
+  "timestamp": "2026-05-14T22:43:55.299Z",
+  "durationMs": 30564,
+  "queries": [
+    "health insurance options turning 26 losing parent coverage 2025"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 17535,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1480,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 1,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

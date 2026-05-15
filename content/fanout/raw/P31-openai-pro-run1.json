@@ -1,0 +1,31 @@
+{
+  "promptId": "P31",
+  "template": "qa",
+  "topic": "medi-cal-california",
+  "variant": "state-named-program",
+  "prompt": "do i qualify for medi-cal in california 2026",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-15T00:23:17.850Z",
+  "durationMs": 51270,
+  "queries": [
+    "site:dhcs.ca.gov Medi-Cal 2026 income eligibility MAGI FPL California",
+    "site:coveredca.com Medi-Cal income limits 2026 138 FPL Covered California Medi-Cal"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 31671,
+    "input_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "output_tokens": 2571,
+    "output_tokens_details": {
+      "reasoning_tokens": 1854
+    },
+    "total_tokens": 34242
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

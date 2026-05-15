@@ -1,0 +1,46 @@
+{
+  "promptId": "P05",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "caretaker",
+  "prompt": "my mom needs ozempic and her insurance denied it whats the real cost going to be",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 1,
+  "timestamp": "2026-05-14T22:11:57.431Z",
+  "durationMs": 17705,
+  "queries": [
+    "patient assistance programs for Ozempic 2026",
+    "retail price of Ozempic without insurance USA 2026",
+    "Ozempic cost with GoodRx May 2026",
+    "how to appeal insurance denial for Ozempic",
+    "Ozempic manufacturer coupon for patients without insurance coverage",
+    "cost of compounded semaglutide 2026 range",
+    "Rybelsus cash price 2026 vs Ozempic",
+    "federal program cap GLP-1 costs $350 mid-2026 details",
+    "Ozempic Savings Program Non-covered benefit details 2026 cost"
+  ],
+  "queryCount": 9,
+  "usage": {
+    "promptTokenCount": 138,
+    "candidatesTokenCount": 821,
+    "totalTokenCount": 3059,
+    "cachedContentTokenCount": 49,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 138
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 49
+      }
+    ],
+    "toolUsePromptTokenCount": 816,
+    "thoughtsTokenCount": 1284,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

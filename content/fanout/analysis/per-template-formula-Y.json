@@ -1,0 +1,2134 @@
+{
+  "derivedBy": "agent-Y",
+  "derivedAt": "2026-05-14T20:00:00Z",
+  "weighting": {
+    "openai": 1.0,
+    "openai-pro": 1.0,
+    "anthropic": 0.5,
+    "gemini": 0.25
+  },
+  "method": "Queries clustered by token-set Jaccard >=0.45 within each template. Each cluster's weighted frequency is sum across providers of (capture_count * provider_weight). Provider weights: OpenAI=1.0, OpenAI-pro=1.0, Anthropic=0.5, Gemini=0.25 \u2014 derived from BenefitsUSA real-Bing cross-check (OpenAI 58.7% match-to-Bing, Anthropic 30.8%, Gemini 38.1%). Variant labels (Equivalent/Specification/Entailment/Canonicalization/Clarification) inherited from queries-tagged-A1.json.",
+  "templates": [
+    {
+      "template": "procedure-cost",
+      "promptsAnalyzed": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "totalProbeRecords": 28,
+      "uniqueQueriesPooled": 83,
+      "clustersFound": 21,
+      "dominantShapes": [
+        {
+          "rank": 1,
+          "shapeLabel": "Sub-type: contrast vs non-contrast | Cost without insurance | [year-anchored]",
+          "exampleQueries": [
+            "MRI cost without insurance average cost United States MRI price range cash",
+            "cost of MRI without insurance US average 2024 2025 'MRI cost' 'without insurance' 'United States' range",
+            "How much does an MRI cost without insurance United States average cost MRI price 2024 2025",
+            "MRI cost without insurance United States average 2024 2025 healthcarebluebook MRI price",
+            "MRI cost without insurance United States average 2024 2025"
+          ],
+          "weightedFrequency": 7.25,
+          "memberCount": 8,
+          "promptCoverage": [
+            "P01",
+            "P02",
+            "P03"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Canonicalization": 1,
+            "Equivalent": 6,
+            "Specification": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 4,
+            "caretaker": 3,
+            "info-seeking": 1
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 2,
+          "shapeLabel": "Good Faith Estimate / No Surprises Act | [year-anchored]",
+          "exampleQueries": [
+            "CMS good faith estimate No Surprises Act how to request good faith estimate for uninsured patients medical service",
+            "No Surprises Act Good Faith Estimate HHS 'Good Faith Estimate' uninsured give estimate before care",
+            "No Surprises Act Good Faith Estimate for uninsured provider must give estimate 2022 CMS guidance",
+            "No Surprises Act good faith estimate scheduled services patient right to estimate 2023 2024 2025 CMS guidance 'Good Faith Estimate' healthcare 'self-pay' 'No Surprises Act' 'GFE' 2024",
+            "No Surprises Act Good Faith Estimate medical imaging MRI 2024 2025 HHS 'Good Faith Estimate' law what to ask"
+          ],
+          "weightedFrequency": 6.75,
+          "memberCount": 12,
+          "promptCoverage": [
+            "P01",
+            "P03"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 12
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 7,
+            "info-seeking": 5
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'medical income limits 2026 california')"
+        },
+        {
+          "rank": 3,
+          "shapeLabel": "Cost without insurance | [year-anchored]",
+          "exampleQueries": [
+            "MRI cost without insurance 2025",
+            "average MRI cost out of pocket 2025",
+            "average cost of MRI in the United States 2024 2025",
+            "how to find cheapest MRI without insurance",
+            "how to get lower cost MRI without insurance"
+          ],
+          "weightedFrequency": 6.5,
+          "memberCount": 13,
+          "promptCoverage": [
+            "P01",
+            "P02",
+            "P03"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Entailment": 3,
+            "Equivalent": 7,
+            "Specification": 2,
+            "Canonicalization": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 3,
+            "caretaker": 5,
+            "info-seeking": 5
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 4,
+          "shapeLabel": "Sub-type: hospital vs imaging center | Cost without insurance | [year-anchored]",
+          "exampleQueries": [
+            "MRI cost without insurance 2025",
+            "MRI cost without insurance United States self pay average 2025",
+            "cost of MRI without insurance USA 2026",
+            "MRI cost hospital vs imaging center without insurance",
+            "average cost of MRI without insurance in USA 2026"
+          ],
+          "weightedFrequency": 4.25,
+          "memberCount": 9,
+          "promptCoverage": [
+            "P01",
+            "P02"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Equivalent": 4,
+            "Specification": 4,
+            "Canonicalization": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 7,
+            "caretaker": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 5,
+          "shapeLabel": "Price source: RadiologyAssist | Cost without insurance | [year-anchored]",
+          "exampleQueries": [
+            "RadiologyAssist MRI self pay price United States",
+            "Healthcare Bluebook MRI cost self pay 'Healthcare Bluebook' MRI price",
+            "cost of MRI in the United States average price 2025 2026 in-network out-of-network Healthcare Bluebook"
+          ],
+          "weightedFrequency": 3.0,
+          "memberCount": 3,
+          "promptCoverage": [
+            "P01",
+            "P02",
+            "P03"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 3
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 1,
+            "caretaker": 1,
+            "info-seeking": 1
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 6,
+          "shapeLabel": "Price source: Fair Health | Sub-type: by body part | Cost / pricing | [year-anchored]",
+          "exampleQueries": [
+            "Fair Health Consumer MRI cost 'Fair Health' 'MRI' average cost 'Fair Health Consumer' 'MRI'",
+            "site:fairhealthconsumer.org MRI cost 'MRI' 'Fair Health' 'FairHealth' 'MRI brain'",
+            "Fair Health Consumer MRI cost 'FairHealth' MRI cost 'Fair Health' 2026 'MRI cost'"
+          ],
+          "weightedFrequency": 3.0,
+          "memberCount": 3,
+          "promptCoverage": [
+            "P01",
+            "P02"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 3
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 1,
+            "caretaker": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 7,
+          "shapeLabel": "Cost / pricing | [year-anchored]",
+          "exampleQueries": [
+            "Medicare national average payment MRI CPT 70551 2026 Medicare Physician Fee Schedule 70551 amount '70551 Medicare'",
+            "MRI cost with insurance 2025",
+            "how much does MRI cost with insurance copay coinsurance",
+            "average cost of MRI scan USA 2026 factors affecting price"
+          ],
+          "weightedFrequency": 2.5,
+          "memberCount": 4,
+          "promptCoverage": [
+            "P02",
+            "P03"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 4
+          },
+          "subStyleCoverage": {
+            "caretaker": 1,
+            "info-seeking": 3
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 8,
+          "shapeLabel": "Price source: MDsave | Cost without insurance | [year-anchored]",
+          "exampleQueries": [
+            "MDsave MRI price MRI cost MDsave 'MRI' 2026 cash price",
+            "MDsave MRI price 'MDsave MRI cost' 'self pay' 'MRI' 2026"
+          ],
+          "weightedFrequency": 2.0,
+          "memberCount": 2,
+          "promptCoverage": [
+            "P02"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 2
+          },
+          "subStyleCoverage": {
+            "caretaker": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        }
+      ],
+      "variantDistribution": {
+        "Equivalent": 0.28,
+        "Entailment": 0.243,
+        "Specification": 0.439,
+        "Canonicalization": 0.032,
+        "Clarification": 0.005
+      },
+      "crossSubStyleConsistency": "consistent",
+      "subStyleNotes": "Substyles analyzed: ['caretaker', 'first-person-urgent', 'info-seeking']. Substyle-specific shapes: [{'shape': 'Price source: MDsave | Cost without insurance | [year-anchored]', 'substyle': 'caretaker', 'weighted': 2.0}]",
+      "writerAgentRecipe": {
+        "requiredH2Sections": [
+          "Average cost without insurance (national + by metro)",
+          "Cost by sub-type (e.g., MRI by body part: brain, spine, knee, abdomen)",
+          "Hospital vs imaging center vs free-standing (with side-by-side $ table)",
+          "Self-pay / cash discount strategies",
+          "Good Faith Estimate (No Surprises Act) \u2014 how to request, sample script",
+          "Financial assistance / charity care options",
+          "Insurance options if you discover you might qualify (Marketplace / Medicaid quick check)"
+        ],
+        "requiredFAQTopics": [
+          "How much is an MRI without insurance in {city}?",
+          "Is a Good Faith Estimate required if I have no insurance?",
+          "What's the cheapest place to get an MRI?",
+          "Can I negotiate the cash price?",
+          "Does the price change by body part scanned?"
+        ],
+        "requiredTableOrChartFormats": [
+          "Side-by-side cost table: hospital vs imaging center vs free-standing (low/avg/high)",
+          "Cost by body part table (brain, spine, knee, shoulder, abdomen, MSK)",
+          "State or metro cost lookup table (top 25 metros minimum)",
+          "Self-pay vs insured cost comparison"
+        ],
+        "stateSpecificityRule": "Generate per-metro cost variants (top 50 US metros). State-level pages second priority. Bing under-fires state-only on procedures but heavily on lookup tables.",
+        "yearMarkerRule": "Title MUST include current year. Update January each year. Cite source year for every $ figure.",
+        "topShapesNote": "Heaviest weighting on Specification (body-part / facility-type narrowing) and Entailment (Good Faith Estimate / how-to-reduce-cost). Equivalent rephrases (cost without insurance) are table stakes."
+      }
+    },
+    {
+      "template": "drug-cost",
+      "promptsAnalyzed": [
+        "P04",
+        "P05",
+        "P06"
+      ],
+      "totalProbeRecords": 28,
+      "uniqueQueriesPooled": 97,
+      "clustersFound": 38,
+      "dominantShapes": [
+        {
+          "rank": 1,
+          "shapeLabel": "Manufacturer assistance: NovoCare | Cost without insurance | Ozempic general | [year-anchored]",
+          "exampleQueries": [
+            "Ozempic list price monthly cost without insurance 2026 manufacturer Novo Nordisk",
+            "Ozempic price per month retail 2026 cost without insurance",
+            "Ozempic cost per month without insurance 2026",
+            "ozempic cost per month without insurance 2024 2025 2026",
+            "Ozempic cost per month without insurance 2025"
+          ],
+          "weightedFrequency": 5.0,
+          "memberCount": 9,
+          "promptCoverage": [
+            "P04"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Equivalent": 6,
+            "Canonicalization": 2,
+            "Entailment": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 9
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 2,
+          "shapeLabel": "Price source: GoodRx | Cost without insurance | Ozempic general | [year-anchored]",
+          "exampleQueries": [
+            "Ozempic price per month cash 2026",
+            "Ozempic cash price per month 2026 GoodRx",
+            "Ozempic price 2026 cash price per month 1 mg pen May 2026",
+            "Rybelsus price without insurance 2026 cash price per month May 2026",
+            "Ozempic price cash 2026 retail price 1 mg pen box cost"
+          ],
+          "weightedFrequency": 5.0,
+          "memberCount": 5,
+          "promptCoverage": [
+            "P04",
+            "P05"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Equivalent": 1,
+            "Specification": 2,
+            "Canonicalization": 2
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 2,
+            "caretaker": 3
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 3,
+          "shapeLabel": "Manufacturer assistance: NovoCare | Ozempic Medicare coverage | [year-anchored]",
+          "exampleQueries": [
+            "Novo Nordisk patient assistance program Ozempic uninsured NovoCare patient assistance 2026",
+            "Ozempic savings card Novo Nordisk 2026 patient assistance program Ozempic savings card eligibility Medicare",
+            "Novo Nordisk Patient Assistance Program Ozempic eligibility",
+            "Novo Nordisk Ozempic patient assistance program and savings card for uninsured",
+            "Novo Nordisk patient assistance program Ozempic eligibility"
+          ],
+          "weightedFrequency": 4.0,
+          "memberCount": 9,
+          "promptCoverage": [
+            "P04",
+            "P05",
+            "P06"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 9
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 4,
+            "caretaker": 2,
+            "info-seeking": 3
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'freelancer-subsidy' shape (e.g., 'freelancers health insurance subsidies eligibility')"
+        },
+        {
+          "rank": 4,
+          "shapeLabel": "Ozempic general | [year-anchored]",
+          "exampleQueries": [
+            "Ozempic pen how many doses per pen 4-week supply how many injections per pen 2026 Ozempic prescribing information",
+            "ways to save money on Ozempic without insurance 2025",
+            "how to get ozempic cheaper without insurance",
+            "how to get Ozempic cheaper without insurance 2025",
+            "how much is ozempic out of pocket monthly 2026"
+          ],
+          "weightedFrequency": 3.5,
+          "memberCount": 6,
+          "promptCoverage": [
+            "P04",
+            "P06"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Canonicalization": 1,
+            "Clarification": 1,
+            "Equivalent": 3,
+            "Entailment": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 2,
+            "info-seeking": 4
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 5,
+          "shapeLabel": "Manufacturer assistance: NovoCare | Financial assistance / negotiation | Ozempic coupon / patient assistance | [year-anchored]",
+          "exampleQueries": [
+            "Ozempic savings programs patient assistance 2025",
+            "Ozempic savings card Ozempic coupon 2026 Novo Nordisk patient assistance program Ozempic",
+            "Ozempic savings programs coupons discount 2025",
+            "patient assistance programs for Ozempic 2026",
+            "patient assistance programs for Ozempic Novo Nordisk"
+          ],
+          "weightedFrequency": 3.0,
+          "memberCount": 5,
+          "promptCoverage": [
+            "P05",
+            "P06"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 4,
+            "Equivalent": 1
+          },
+          "subStyleCoverage": {
+            "caretaker": 3,
+            "info-seeking": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 6,
+          "shapeLabel": "Cost without insurance | Ozempic pharmacy price comparison | [year-anchored]",
+          "exampleQueries": [
+            "Ozempic cost without insurance 2025",
+            "Ozempic out of pocket cost without insurance 2025",
+            "Ozempic pill vs Rybelsus 2026",
+            "Rybelsus cash price 2026 vs Ozempic",
+            "cheapest pharmacy for Ozempic cash price 2026 Costco vs Walmart vs Amazon Pharmacy"
+          ],
+          "weightedFrequency": 2.5,
+          "memberCount": 6,
+          "promptCoverage": [
+            "P04",
+            "P05",
+            "P06"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 4,
+            "Equivalent": 1,
+            "Canonicalization": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 1,
+            "caretaker": 4,
+            "info-seeking": 1
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 7,
+          "shapeLabel": "Financial assistance / negotiation | Ozempic coupon / patient assistance | [year-anchored]",
+          "exampleQueries": [
+            "Ozempic manufacturer savings card discount program 2025",
+            "Ozempic savings card manufacturer coupon 2025",
+            "Ozempic manufacturer savings card coupon program 2025",
+            "Ozempic manufacturer savings card eligibility requirements",
+            "Ozempic savings card eligibility and requirements"
+          ],
+          "weightedFrequency": 2.0,
+          "memberCount": 5,
+          "promptCoverage": [
+            "P05",
+            "P06"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 5
+          },
+          "subStyleCoverage": {
+            "caretaker": 1,
+            "info-seeking": 4
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 8,
+          "shapeLabel": "Manufacturer assistance: NovoCare | Ozempic coupon / patient assistance | [year-anchored]",
+          "exampleQueries": [
+            "Novo Nordisk Ozempic savings card 2026 official site Ozempic savings card terms 2026 'Novo Nordisk savings card Ozempic'",
+            "Ozempic savings card Novo Nordisk 2026 Ozempic savings program"
+          ],
+          "weightedFrequency": 2.0,
+          "memberCount": 2,
+          "promptCoverage": [
+            "P05",
+            "P06"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 2
+          },
+          "subStyleCoverage": {
+            "caretaker": 1,
+            "info-seeking": 1
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        }
+      ],
+      "variantDistribution": {
+        "Equivalent": 0.222,
+        "Entailment": 0.455,
+        "Canonicalization": 0.108,
+        "Specification": 0.176,
+        "Generalization": 0.017,
+        "Clarification": 0.023
+      },
+      "crossSubStyleConsistency": "consistent",
+      "subStyleNotes": "Substyles analyzed: ['caretaker', 'first-person-urgent', 'info-seeking']. Substyle-specific shapes: [{'shape': 'Manufacturer assistance: NovoCare | Cost without insurance | Ozempic general | [', 'substyle': 'first-person-urgent', 'weighted': 5.0}]",
+      "writerAgentRecipe": {
+        "requiredH2Sections": [
+          "Average cash price (national, current month, with brand vs alternative)",
+          "Coverage by insurance type (commercial / Medicare / Medicaid by state)",
+          "Coupons + manufacturer savings programs (NovoCare for Ozempic, etc.)",
+          "Compounded vs brand: legality, price, FDA stance (current)",
+          "Alternatives for the same indication (Wegovy, Mounjaro, Zepbound, generic semaglutide)",
+          "Pharmacy price comparison (CVS, Walgreens, Costco, Mark Cuban Cost Plus, GoodRx)",
+          "Telehealth + compounded routes (Hims, Ro, Henry Meds \u2014 current pricing)"
+        ],
+        "requiredFAQTopics": [
+          "How much does Ozempic cost without insurance?",
+          "Does Medicare cover Ozempic for weight loss vs diabetes?",
+          "Is compounded semaglutide still legal in {year}?",
+          "What's the cheapest pharmacy for Ozempic?",
+          "Can I use a manufacturer coupon if I have Medicare?"
+        ],
+        "requiredTableOrChartFormats": [
+          "Pharmacy price comparison table (top 10 chains + online)",
+          "Insurance coverage matrix (commercial / Medicare Part D / Medicaid by state)",
+          "Brand vs alternative comparison ($ + indication coverage)",
+          "Coupon stacking flowchart"
+        ],
+        "stateSpecificityRule": "Medicaid coverage of GLP-1 for weight loss varies by state \u2014 generate per-state coverage tables. Pharmacy availability is national.",
+        "yearMarkerRule": "Year-anchored title and cash price figures. Compounded legal status changes \u2014 date-stamp the compounded section explicitly.",
+        "topShapesNote": "Heavy on Specification (by-pharmacy, by-indication) and Entailment (alternatives, coupons). The 'compounded vs brand' axis is a major sub-shape that doesn't appear in the Equivalent layer."
+      }
+    },
+    {
+      "template": "qa",
+      "promptsAnalyzed": [
+        "P07",
+        "P08",
+        "P09",
+        "P25",
+        "P27",
+        "P31",
+        "P32"
+      ],
+      "totalProbeRecords": 60,
+      "uniqueQueriesPooled": 175,
+      "clustersFound": 48,
+      "dominantShapes": [
+        {
+          "rank": 1,
+          "shapeLabel": "Medicare Advantage dental benefits | MA extra benefits (dental/vision/hearing/OTC) | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "site:medicare.gov dental services root canal Medicare coverage 2026",
+            "Medicare root canal coverage Medicare.gov",
+            "Does Original Medicare cover dental root canal Medicare.gov dental coverage",
+            "Does Medicare cover dental root canal Medicare.gov dental coverage",
+            "Medicare Advantage dental coverage root canal 'Medicare.gov' 'Medicare Advantage dental' 'root canal'"
+          ],
+          "weightedFrequency": 13.25,
+          "memberCount": 19,
+          "promptCoverage": [
+            "P07",
+            "P08",
+            "P09"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Entailment": 1,
+            "Equivalent": 13,
+            "Specification": 5
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 7,
+            "caretaker": 1,
+            "info-seeking": 11
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 2,
+          "shapeLabel": "State Medicaid income limits | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "Texas Medicaid eligibility requirements 2026",
+            "Texas Medicaid eligibility income limits 2026 official",
+            "Texas Medicaid eligibility 2026 income limits adults 2026",
+            "Apply for Medicaid in Texas YourTexasBenefits apply for Medicaid 'Apply for coverage' 'Get Medicaid' site:yourtexasbenefits.com",
+            "How to apply for Medicaid in Texas 'Apply for Medicaid' site:hhs.texas.gov 'apply' 'YourTexasBenefits' 'apply for Medicaid in Texas' 2026"
+          ],
+          "weightedFrequency": 10.375,
+          "memberCount": 16,
+          "promptCoverage": [
+            "P25",
+            "P27"
+          ],
+          "dominantVariant": "Unknown",
+          "variantBreakdown": {},
+          "subStyleCoverage": {
+            "first-person-urgent": 14,
+            "info-seeking": 2
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'texas medicaid income limits 2026')"
+        },
+        {
+          "rank": 3,
+          "shapeLabel": "Medicare dental coverage | [gov source citation]",
+          "exampleQueries": [
+            "Does Medicare Part D cover dental prescriptions antibiotics after dental procedure Medicare.gov",
+            "Does Medicare Part D cover prescription antibiotics for dental procedures 'Medicare.gov' 'prescription drugs' 'dental'",
+            "Does Medicare cover dental care site:medicare.gov",
+            "Medigap dental coverage Medicare.gov Medigap dental does Medigap cover dental",
+            "Find a Medicare plan dental coverage 'find a plan' site:medicare.gov"
+          ],
+          "weightedFrequency": 8.0,
+          "memberCount": 8,
+          "promptCoverage": [
+            "P07",
+            "P08",
+            "P09"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Specification": 2,
+            "Equivalent": 2,
+            "Entailment": 4
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 2,
+            "caretaker": 4,
+            "info-seeking": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 4,
+          "shapeLabel": "Medicare Advantage dental benefits | MA extra benefits (dental/vision/hearing/OTC) | [year-anchored]",
+          "exampleQueries": [
+            "does Medicare cover root canals 2025",
+            "Do Medicare Advantage plans include dental coverage AARP 'dental coverage Medicare Advantage' 'root canal'",
+            "does Medicare cover tooth extraction dental 2026",
+            "does medicare advantage cover root canals",
+            "Medicare coverage root canal 2025"
+          ],
+          "weightedFrequency": 7.0,
+          "memberCount": 15,
+          "promptCoverage": [
+            "P07",
+            "P08"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Equivalent": 5,
+            "Specification": 10
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 7,
+            "caretaker": 8
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 5,
+          "shapeLabel": "FPL current-year guidelines | State Medicaid income limits | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "site:hhs.texas.gov Medicaid income guidelines Texas pregnant women parents children 2026",
+            "site:hhs.texas.gov/services/health/medicaid-chip Texas Medicaid for pregnant women income limits",
+            "Texas Medicaid eligibility 2026 adults children pregnant women income limits 2026 Texas Health and Human Services",
+            "Texas Medicaid eligibility income limits 2026 adults parents caretaker percentage of FPL 2026 Texas Health and Human Services",
+            "Texas Health and Human Services Medicaid eligibility who qualifies HHSC 'Medicaid' 'Am I eligible' 'income limits' site:hhs.texas.gov"
+          ],
+          "weightedFrequency": 6.25,
+          "memberCount": 7,
+          "promptCoverage": [
+            "P25",
+            "P27"
+          ],
+          "dominantVariant": "Unknown",
+          "variantBreakdown": {},
+          "subStyleCoverage": {
+            "first-person-urgent": 6,
+            "info-seeking": 1
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'poverty guidelines 2026')"
+        },
+        {
+          "rank": 6,
+          "shapeLabel": "Topic shape: documents, des, ahcccs | [state-specific]",
+          "exampleQueries": [
+            "What documents are needed to apply for AHCCCS 'what information do I need' 'proof of identity' 'proof of income' site:azahcccs.gov",
+            "AHCCCS documents needed to apply identity income proof residency 'what documents' 'DES Documents Center' 'Health-e-Arizona Plus documents'",
+            "Documents to verify AHCCCS identity proof 'Documents you can use' 'DES Documents Center verification' 'what documents does AHCCCS need'",
+            "site:des.az.gov documents to verify AHCCCS identity income residency 'verification' 'Documents you can use'",
+            "DES Documents Center verification list 'Documents Center' des.az.gov 'verification' 'identity' 'proof of income' 'documents center DES'"
+          ],
+          "weightedFrequency": 6.0,
+          "memberCount": 6,
+          "promptCoverage": [
+            "P32"
+          ],
+          "dominantVariant": "Unknown",
+          "variantBreakdown": {},
+          "subStyleCoverage": {
+            "info-seeking": 6
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 7,
+          "shapeLabel": "MAGI general | FPL by household size | State Medicaid income limits | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "Ohio Medicaid income limit family of 4 2026",
+            "Ohio Medicaid income limits 2026 family of 4",
+            "Ohio Medicaid income limit family of 4 2026 Medicaid expansion 138% FPL 2026",
+            "Ohio Medicaid income eligibility 2026 MAGI",
+            "Ohio Medicaid income limits family of 4 2026"
+          ],
+          "weightedFrequency": 4.5,
+          "memberCount": 6,
+          "promptCoverage": [
+            "P27"
+          ],
+          "dominantVariant": "Unknown",
+          "variantBreakdown": {},
+          "subStyleCoverage": {
+            "info-seeking": 6
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'poverty guidelines 2026')"
+        },
+        {
+          "rank": 8,
+          "shapeLabel": "Medicare dental coverage",
+          "exampleQueries": [
+            "Can I use HSA to pay for dental expenses Medicare HSA rules 'pay for Medicare premiums' 'dental' 'HSA' IRS",
+            "Can HSA pay Medicare premiums 'Medicare premiums HSA' 'Medigap' 'IRS Publication 969' 'pay Medicare premiums with HSA'",
+            "Can you use HSA to pay for dental after Medicare enrollment 'can't contribute after Medicare' IRS",
+            "dental coverage for seniors medicare alternatives",
+            "medicare coverage for medically necessary dental procedures"
+          ],
+          "weightedFrequency": 4.25,
+          "memberCount": 8,
+          "promptCoverage": [
+            "P07",
+            "P08",
+            "P09"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 4,
+            "Specification": 4
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 2,
+            "caretaker": 1,
+            "info-seeking": 5
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        }
+      ],
+      "variantDistribution": {
+        "Equivalent": 0.368,
+        "Specification": 0.249,
+        "Entailment": 0.384
+      },
+      "crossSubStyleConsistency": "divergent",
+      "subStyleNotes": "Substyles analyzed: ['caretaker', 'first-person-urgent', 'info-seeking']. Substyle-specific shapes: [{'shape': 'Topic shape: documents, des, ahcccs | [state-specific]', 'substyle': 'info-seeking', 'weighted': 6.0}, {'shape': 'MAGI general | FPL by household size | State Medicaid income limits | [state-spe', 'substyle': 'info-seeking', 'weighted': 4.5}]",
+      "writerAgentRecipe": {
+        "requiredH2Sections": [
+          "Direct yes/no answer in first 50 words (with the year-current caveat)",
+          "What's actually covered vs not covered (bullet list)",
+          "Plan-type breakdown (Original Medicare vs Medicare Advantage vs standalone dental for Medicare-dental; or expansion vs non-expansion for state-Medicaid)",
+          "Cost / income limit table (current year, by household size for Medicaid)",
+          "How to apply / where to enroll",
+          "State-specific exceptions (link out to state pages)",
+          "Common scenarios / edge cases as Q&A blocks"
+        ],
+        "requiredFAQTopics": [
+          "Direct phrasing of the question itself ('Does Medicare cover dental?')",
+          "Year-anchored variant ('Does Medicare cover dental in {year}?')",
+          "State-anchored variant if state-Medicaid ('Does {state} Medicaid cover X?')",
+          "Eligibility-by-household-size variants for state-Medicaid",
+          "What changed this year"
+        ],
+        "requiredTableOrChartFormats": [
+          "Coverage matrix (procedure \u00d7 plan type)",
+          "State Medicaid income limits table by household size (current year) \u2014 REQUIRED for state-medicaid Q&A pages",
+          "Plan type comparison (Original Medicare vs MA vs standalone dental)"
+        ],
+        "stateSpecificityRule": "CRITICAL \u2014 state-Medicaid Q&A queries are the #1 Bing blind spot from BenefitsUSA crosscheck (Texas, Missouri, Ohio, SC, Florida \u2014 1000+ citations each). Generate one Q&A page per (state \u00d7 question). Use canonical state Medicaid program names (Medi-Cal, MO HealthNet, SoonerCare, MainerCare, MNsure).",
+        "yearMarkerRule": "Title MUST include year for income-limit and coverage Q&As. Re-publish each January. Year omitted = invisible to Bing.",
+        "topShapesNote": "Equivalent (rephrase of the question) dominates raw count. But Specification (state \u00d7 question, plan-type \u00d7 question, household-size \u00d7 question) drives Bing match because Bing decomposes geographic/program permutations heavily and our LLM proxies don't."
+      }
+    },
+    {
+      "template": "glossary",
+      "promptsAnalyzed": [
+        "P10",
+        "P11",
+        "P12"
+      ],
+      "totalProbeRecords": 28,
+      "uniqueQueriesPooled": 63,
+      "clustersFound": 25,
+      "dominantShapes": [
+        {
+          "rank": 1,
+          "shapeLabel": "MAGI: what counts / definition scope | Premium tax credit / subsidy | [gov source citation]",
+          "exampleQueries": [
+            "Does 401(k) distribution count as income for premium tax credit MAGI site:healthcare.gov",
+            "MAGI premium tax credit healthcare.gov 'MAGI' 'premium tax credit' 401(k)",
+            "penalty on early withdrawal included in MAGI 'penalty on early withdrawal' 'MAGI' 'ACA' 'premium tax credit' 'healthcare.gov'",
+            "Does 401(k) withdrawal count as income for ACA premium tax credit site:healthcare.gov",
+            "Does 401(k) withdrawal count as income for ACA premium tax credit"
+          ],
+          "weightedFrequency": 5.0,
+          "memberCount": 5,
+          "promptCoverage": [
+            "P12"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Canonicalization": 4,
+            "Specification": 1
+          },
+          "subStyleCoverage": {
+            "caretaker": 5
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 2,
+          "shapeLabel": "MAGI: retirement income edge case | Premium tax credit / subsidy",
+          "exampleQueries": [
+            "401k withdrawals count as income for ACA subsidies MAGI",
+            "do 401k withdrawals count as income for ACA subsidies MAGI",
+            "is roth 401k withdrawal included in MAGI for ACA subsidies",
+            "is traditional 401k withdrawal included in MAGI for ACA subsidies",
+            "are non-qualified Roth 401k distributions included in ACA MAGI"
+          ],
+          "weightedFrequency": 4.75,
+          "memberCount": 12,
+          "promptCoverage": [
+            "P12"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Canonicalization": 4,
+            "Specification": 7,
+            "Equivalent": 1
+          },
+          "subStyleCoverage": {
+            "caretaker": 12
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 3,
+          "shapeLabel": "MAGI: what counts / definition scope",
+          "exampleQueries": [
+            "MAGI marketplace application what does it include",
+            "what income is included in MAGI for marketplace application",
+            "MAGI marketplace health insurance what does it include",
+            "what is MAGI for marketplace health insurance",
+            "what is MAGI for marketplace health insurance application"
+          ],
+          "weightedFrequency": 3.75,
+          "memberCount": 10,
+          "promptCoverage": [
+            "P11"
+          ],
+          "dominantVariant": "Clarification",
+          "variantBreakdown": {
+            "Clarification": 10
+          },
+          "subStyleCoverage": {
+            "info-seeking": 10
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        },
+        {
+          "rank": 4,
+          "shapeLabel": "MAGI: self-employed income calculation | Gig/self-employed coverage options | [gov source citation]",
+          "exampleQueries": [
+            "site:healthcare.gov self-employed income Marketplace estimated income ACA",
+            "HealthCare.gov MAGI definition what counts for Marketplace income self-employed",
+            "How Marketplace calculates income MAGI healthcare.gov self-employed"
+          ],
+          "weightedFrequency": 3.0,
+          "memberCount": 3,
+          "promptCoverage": [
+            "P10"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Canonicalization": 3
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 3
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 5,
+          "shapeLabel": "Topic shape: income, self, employed | [year-anchored]",
+          "exampleQueries": [
+            "how is income calculated for ACA Obamacare self employed 2025",
+            "what counts as income for ACA self employed",
+            "how is income calculated for obamacare for self employed"
+          ],
+          "weightedFrequency": 2.25,
+          "memberCount": 3,
+          "promptCoverage": [
+            "P10"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Canonicalization": 2,
+            "Equivalent": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 3
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 6,
+          "shapeLabel": "MAGI: deductions/subtractions | [gov source citation]",
+          "exampleQueries": [
+            "healthcare.gov what deductions can I subtract from income for Marketplace MAGI deductions list",
+            "healthcare.gov estimate income tool how to estimate income marketplace"
+          ],
+          "weightedFrequency": 2.0,
+          "memberCount": 2,
+          "promptCoverage": [
+            "P10"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Canonicalization": 1,
+            "Entailment": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 7,
+          "shapeLabel": "Topic shape: roth, 401, qualified | [gov source citation]",
+          "exampleQueries": [
+            "Roth 401(k) distributions taxable? 'Roth 401(k) qualified distributions' IRS",
+            "IRS Roth 401(k) qualified distribution tax-free 'Roth 401(k) qualified distribution' site:irs.gov"
+          ],
+          "weightedFrequency": 2.0,
+          "memberCount": 2,
+          "promptCoverage": [
+            "P12"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 2
+          },
+          "subStyleCoverage": {
+            "caretaker": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 8,
+          "shapeLabel": "Premium tax credit / subsidy | [gov source citation]",
+          "exampleQueries": [
+            "healthcare.gov report income changes 'report changes' 'advance payments of premium tax credit' 'update income'",
+            "How do I report income changes to Marketplace when my income changes healthcare.gov report income change advance premium tax credit"
+          ],
+          "weightedFrequency": 2.0,
+          "memberCount": 2,
+          "promptCoverage": [
+            "P12"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 2
+          },
+          "subStyleCoverage": {
+            "caretaker": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        }
+      ],
+      "variantDistribution": {
+        "Canonicalization": 0.459,
+        "Equivalent": 0.03,
+        "Entailment": 0.193,
+        "Specification": 0.193,
+        "Clarification": 0.126
+      },
+      "crossSubStyleConsistency": "divergent",
+      "subStyleNotes": "Substyles analyzed: ['caretaker', 'first-person-urgent', 'info-seeking']. Substyle-specific shapes: [{'shape': 'MAGI: what counts / definition scope | Premium tax credit / subsidy | [gov sourc', 'substyle': 'caretaker', 'weighted': 5.0}, {'shape': 'MAGI: retirement income edge case | Premium tax credit / subsidy', 'substyle': 'caretaker', 'weighted': 4.75}, {'shape': 'MAGI: what counts / definition scope', 'substyle': 'info-seeking', 'weighted': 3.75}]",
+      "writerAgentRecipe": {
+        "requiredH2Sections": [
+          "One-sentence plain-English definition (above the fold)",
+          "What's included / what's NOT included (bullet list \u2014 drives the Specification queries)",
+          "Step-by-step worked example with real numbers (current year)",
+          "Edge cases (401(k) withdrawals, Roth, SSDI/SSI, self-employed deductions)",
+          "How it connects to the user action (subsidies, Medicaid eligibility)",
+          "Worksheet / calculator embed",
+          "Where to find the official IRS / HealthCare.gov form lines"
+        ],
+        "requiredFAQTopics": [
+          "What counts as MAGI?",
+          "Does {edge case income source} count? (401k, SSDI, gambling, Roth, capital gains)",
+          "How do I report income changes?",
+          "MAGI for Medicaid vs MAGI for Marketplace (same/different)",
+          "Self-employed MAGI calculation"
+        ],
+        "requiredTableOrChartFormats": [
+          "What counts vs what doesn't count comparison table",
+          "MAGI worked example (line-by-line with real numbers)",
+          "Side-by-side: AGI vs MAGI"
+        ],
+        "stateSpecificityRule": "MAGI is federal \u2014 no state variants needed. (CAUTION: Bing crosscheck shows only 4 MAGI queries in 2 months across all of BenefitsUSA. This template is over-engineered relative to actual Bing demand. Build ONE strong page, don't fan out.)",
+        "yearMarkerRule": "Year-anchor the worked example and form line references. Definition itself is evergreen.",
+        "topShapesNote": "Heavy Entailment (edge-case income sources \u2014 401k is the dominant overshoot per BenefitsUSA crosscheck) and Canonicalization (MAGI = Modified AGI = \u2026). Bing demand is THIN \u2014 prioritize page quality over fan-out."
+      }
+    },
+    {
+      "template": "event",
+      "promptsAnalyzed": [
+        "P13",
+        "P14",
+        "P15",
+        "P28"
+      ],
+      "totalProbeRecords": 37,
+      "uniqueQueriesPooled": 140,
+      "clustersFound": 56,
+      "dominantShapes": [
+        {
+          "rank": 1,
+          "shapeLabel": "Aging out at 26 | Lost job-based coverage event | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "turning 26 lose parents' health insurance when does coverage end age 26 end of month site:healthcare.gov",
+            "HealthCare.gov turning 26 lose parent's plan when does coverage end 26th birthday end of month",
+            "health insurance options turning 26 losing parent coverage 2025",
+            "health insurance options when turning 26 lose parents plan 2025",
+            "health insurance options when turning 26 losing parents plan 2025"
+          ],
+          "weightedFrequency": 5.75,
+          "memberCount": 10,
+          "promptCoverage": [
+            "P13",
+            "P14"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Equivalent": 8,
+            "Clarification": 2
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 7,
+            "caretaker": 3
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        },
+        {
+          "rank": 2,
+          "shapeLabel": "Aging out at 26 | Special Enrollment Period (SEP) | COBRA decision | Lost job-based coverage event | [gov source citation]",
+          "exampleQueries": [
+            "HealthCare.gov turning 26 parents health insurance options special enrollment period",
+            "special enrollment period losing parent coverage turning 26 healthcare.gov 'turn 26' 'special enrollment' 'lose coverage'",
+            "special enrollment period 60 days before or after losing coverage healthcare.gov '60 days' 'turn 26' 'special enrollment period' 'before' 'after'",
+            "What happens when you turn 26 insurance dependent lose coverage age 26 Healthcare.gov COBRA special enrollment period",
+            "Healthcare.gov special enrollment period 60 days before or after qualifying life event 'loss of health coverage' 'turning 26' site:healthcare.gov"
+          ],
+          "weightedFrequency": 5.75,
+          "memberCount": 8,
+          "promptCoverage": [
+            "P13"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 8
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 8
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        },
+        {
+          "rank": 3,
+          "shapeLabel": "Special Enrollment Period (SEP) | Lost job-based coverage event | [gov source citation]",
+          "exampleQueries": [
+            "healthcare.gov special enrollment period losing job-based coverage \"60 days\" \"expects to lose\"",
+            "healthcare.gov dependent turns 26 special enrollment period 60 days losing coverage",
+            "HealthCare.gov special enrollment period loss of coverage 60 days before 60 days after",
+            "Special Enrollment Period losing health coverage healthcare.gov 'loss of coverage' 'special enrollment period'",
+            "Pennie special enrollment period loss of job-based coverage 60 days Pennie SEP apply after losing job"
+          ],
+          "weightedFrequency": 5.0,
+          "memberCount": 5,
+          "promptCoverage": [
+            "P14",
+            "P15",
+            "P28"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 4
+          },
+          "subStyleCoverage": {
+            "caretaker": 2,
+            "info-seeking": 2,
+            "first-person-urgent": 1
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 4,
+          "shapeLabel": "Aging out at 26 | Catastrophic plan eligibility | [gov source citation]",
+          "exampleQueries": [
+            "catastrophic health plans available under 30 HealthCare.gov 'catastrophic plan under 30' 'what is catastrophic plan'",
+            "Catastrophic plans HealthCare.gov 'available to people under 30'",
+            "Catastrophic health plan eligibility under 30 healthcare.gov 'catastrophic plan under 30' 'turning 26'",
+            "Catastrophic plans who qualifies 'under 30' 'Healthcare.gov catastrophic plan'",
+            "catastrophic health plans for under 30 years old"
+          ],
+          "weightedFrequency": 4.25,
+          "memberCount": 5,
+          "promptCoverage": [
+            "P13"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 5
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 5
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'freelancer-subsidy' shape (e.g., 'freelancers health insurance subsidies eligibility')"
+        },
+        {
+          "rank": 5,
+          "shapeLabel": "FPL % thresholds (subsidy cliff bands) | State Medicaid income limits | Aging out at 26 | [state-specific] | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "Medicaid eligibility apply anytime HealthCare.gov 'Medicaid' 'apply anytime' 'turning 26'",
+            "Medicaid eligibility low income adults how to apply healthcare.gov Medicaid expansion eligibility",
+            "Pennsylvania Medicaid expansion 138% FPL adults eligibility 2026 HealthCare.gov Pennsylvania Medicaid expansion",
+            "Medicaid eligibility turning 26"
+          ],
+          "weightedFrequency": 3.25,
+          "memberCount": 4,
+          "promptCoverage": [
+            "P13",
+            "P15",
+            "P28"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 3
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 3,
+            "info-seeking": 1
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'fpl 2026')"
+        },
+        {
+          "rank": 6,
+          "shapeLabel": "COBRA decision",
+          "exampleQueries": [
+            "How long to elect COBRA 60 days elect 45 days to pay first premium DOL EBSA '60 days to elect COBRA' '45 days to pay'",
+            "COBRA continuation coverage eligibility 20 employees 18 months federal law",
+            "COBRA continuation coverage federal rules employer size 20 employees summary",
+            "COBRA vs ACA marketplace for 26 year old"
+          ],
+          "weightedFrequency": 3.25,
+          "memberCount": 4,
+          "promptCoverage": [
+            "P13",
+            "P14",
+            "P28"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 2
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 3,
+            "caretaker": 1
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 7,
+          "shapeLabel": "Medicaid eligibility | Aging out at 26 | [gov source citation]",
+          "exampleQueries": [
+            "Medicaid eligibility for adults after aging out of parent's plan 'turn 26' apply Medicaid healthcare.gov 'apply anytime' 'income eligibility' 'Medicaid' 'CHIP'",
+            "apply for Medicaid Healthcare.gov 'apply anytime' 'Medicaid eligibility' 'income' 'turn 26' 'young adult'",
+            "Medicaid and CHIP - HealthCare.gov 'apply anytime' 'eligibility' 'Medicaid' 'CHIP' 'how to apply'"
+          ],
+          "weightedFrequency": 3.0,
+          "memberCount": 3,
+          "promptCoverage": [
+            "P13"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 3
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 3
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'texas medicaid income limits 2026')"
+        },
+        {
+          "rank": 8,
+          "shapeLabel": "State Medicaid income limits | COBRA decision | Lost job-based coverage event | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "Pennsylvania health insurance options after job loss 2025",
+            "Pennsylvania health insurance options after losing job 2025",
+            "health insurance options for unemployed in Pennsylvania",
+            "Pennie health insurance Pennsylvania eligibility loss of job",
+            "health insurance options after losing job Pennsylvania Pennie Medicaid COBRA"
+          ],
+          "weightedFrequency": 2.75,
+          "memberCount": 7,
+          "promptCoverage": [
+            "P28"
+          ],
+          "dominantVariant": "Unknown",
+          "variantBreakdown": {},
+          "subStyleCoverage": {
+            "first-person-urgent": 7
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        }
+      ],
+      "variantDistribution": {
+        "Equivalent": 0.19,
+        "Specification": 0.171,
+        "Entailment": 0.564,
+        "Follow-up": 0.009,
+        "Clarification": 0.066
+      },
+      "crossSubStyleConsistency": "divergent",
+      "subStyleNotes": "Substyles analyzed: ['caretaker', 'first-person-urgent', 'info-seeking']. Substyle-specific shapes: [{'shape': 'Aging out at 26 | Special Enrollment Period (SEP) | COBRA decision | Lost job-ba', 'substyle': 'first-person-urgent', 'weighted': 5.75}, {'shape': 'Aging out at 26 | Catastrophic plan eligibility | [gov source citation]', 'substyle': 'first-person-urgent', 'weighted': 4.25}, {'shape': 'Medicaid eligibility | Aging out at 26 | [gov source citation]', 'substyle': 'first-person-urgent', 'weighted': 3.0}]",
+      "writerAgentRecipe": {
+        "requiredH2Sections": [
+          "What changes on the trigger date (the event itself, in plain English)",
+          "Your Special Enrollment Period (SEP) window \u2014 exact dates, with day-by-day countdown",
+          "Coverage options ranked: Marketplace vs employer vs Medicaid vs COBRA",
+          "Documents needed to prove the qualifying event",
+          "Cost comparison (Marketplace subsidy vs COBRA vs going uninsured)",
+          "Step-by-step enrollment walkthrough (with screenshots if possible)",
+          "What happens if you miss the window",
+          "State-specific options for {state} marketplaces"
+        ],
+        "requiredFAQTopics": [
+          "When exactly does my coverage end?",
+          "What's the SEP window \u2014 60 days before or after?",
+          "Is COBRA worth it vs the Marketplace?",
+          "What documents do I need?",
+          "How to enroll if I'm in {state}"
+        ],
+        "requiredTableOrChartFormats": [
+          "SEP timeline (visual: trigger date \u2192 60-day window)",
+          "Coverage option comparison ($ + start date + duration)",
+          "Document checklist"
+        ],
+        "stateSpecificityRule": "Generate state variants for state-based marketplaces (CA, NY, MA, MN, WA, CO, CT, MD, NJ, NV, OR, PA, RI, VT, DC, etc.). Federal Marketplace states share one page.",
+        "yearMarkerRule": "SEP rules are year-stable but cost figures + subsidy thresholds change. Year-anchor the cost section.",
+        "topShapesNote": "Specification heavy (event \u00d7 action: 'turning 26 + COBRA', 'turning 26 + Marketplace SEP') and Entailment ('what to do next' implied by the event). Equivalent is light \u2014 the event itself is the search query, not the rephrase."
+      }
+    },
+    {
+      "template": "persona",
+      "promptsAnalyzed": [
+        "P16",
+        "P17",
+        "P18",
+        "P26",
+        "P30"
+      ],
+      "totalProbeRecords": 43,
+      "uniqueQueriesPooled": 213,
+      "clustersFound": 58,
+      "dominantShapes": [
+        {
+          "rank": 1,
+          "shapeLabel": "Gig/self-employed coverage options",
+          "exampleQueries": [
+            "Uber Stride Health partnership drivers health insurance Stride site:stridehealth.com",
+            "DoorDash insurance Dasher 'occupational accident insurance' 'help' site:help.doordash.com",
+            "health insurance options for 1099 freelancers USA",
+            "health insurance for uber drivers no employer plan",
+            "health insurance options for uber drivers no employer plan"
+          ],
+          "weightedFrequency": 10.25,
+          "memberCount": 34,
+          "promptCoverage": [
+            "P16",
+            "P17",
+            "P18"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Equivalent": 13,
+            "Entailment": 19,
+            "Canonicalization": 2
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 11,
+            "caretaker": 10,
+            "info-seeking": 13
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        },
+        {
+          "rank": 2,
+          "shapeLabel": "Premium tax credit / subsidy | Gig: subsidy eligibility | [year-anchored]",
+          "exampleQueries": [
+            "health insurance options for self-employed gig workers Uber drivers 2025",
+            "ACA marketplace health insurance self-employed 2025",
+            "best health insurance options for gig workers DoorDash Uber drivers 2026",
+            "ACA marketplace health insurance gig economy workers 2026",
+            "health insurance options for gig workers 2026 ACA marketplace subsidies eligibility income calculator"
+          ],
+          "weightedFrequency": 8.0,
+          "memberCount": 10,
+          "promptCoverage": [
+            "P16",
+            "P17"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Canonicalization": 3,
+            "Equivalent": 5,
+            "Entailment": 2
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 3,
+            "caretaker": 7
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'texas medicaid income limits 2026')"
+        },
+        {
+          "rank": 3,
+          "shapeLabel": "Gig/self-employed coverage options | [year-anchored]",
+          "exampleQueries": [
+            "1099 freelancer self-employed health insurance options 2025",
+            "health insurance options for gig workers United States 2026",
+            "health insurance options for gig workers 2026",
+            "DoorDash health insurance for Dashers 'health' 'benefits' '2026' 'DoorDash' 'health insurance'",
+            "DoorDash health insurance for drivers 2026 benefits for delivery drivers DoorDash insurance coverage 2026"
+          ],
+          "weightedFrequency": 7.5,
+          "memberCount": 13,
+          "promptCoverage": [
+            "P16",
+            "P17",
+            "P18"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Equivalent": 7,
+            "Entailment": 2,
+            "Specification": 4
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 1,
+            "caretaker": 10,
+            "info-seeking": 2
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        },
+        {
+          "rank": 4,
+          "shapeLabel": "Gig/self-employed coverage options | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "Uber California healthcare stipend active time 2026 Prop 22 official Uber",
+            "Uber California healthcare stipend 2026 'Prop 22 healthcare stipend' Uber help 'stipend' '2026' 'drivers'",
+            "Uber driver benefits occupational accident insurance drivers medical expenses 'Uber' 'occupational accident' policy 2026",
+            "Uber driver benefits health insurance 2026 'Uber drivers' health benefits' 'stipend' 'California' 2026 official",
+            "states with health insurance stipends for gig workers besides California"
+          ],
+          "weightedFrequency": 6.75,
+          "memberCount": 15,
+          "promptCoverage": [
+            "P16",
+            "P17",
+            "P30"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 5,
+            "Entailment": 1,
+            "Equivalent": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 3,
+            "caretaker": 4,
+            "info-seeking": 8
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'medical income limits 2026 california')"
+        },
+        {
+          "rank": 5,
+          "shapeLabel": "Self-employed health insurance deduction (IRS) | Gig/self-employed coverage options | [year-anchored]",
+          "exampleQueries": [
+            "IRS self-employed health insurance deduction premiums 2026 Publication 535",
+            "Self-employed health insurance deduction IRS 2026 'self-employed health insurance' deduction 2026 'Form 1040'",
+            "self-employed health insurance deduction IRS 2026",
+            "self-employed health insurance deduction 2025 IRS rules",
+            "Self-employed health insurance deduction IRS"
+          ],
+          "weightedFrequency": 6.0,
+          "memberCount": 6,
+          "promptCoverage": [
+            "P16",
+            "P17",
+            "P18",
+            "P30"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Canonicalization": 3,
+            "Entailment": 2
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 1,
+            "caretaker": 2,
+            "info-seeking": 3
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        },
+        {
+          "rank": 6,
+          "shapeLabel": "Marketplace mechanics | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "Georgia 2026 ACA marketplace plans 2026 Georgia Health Insurance Marketplace",
+            "Kaiser Permanente Georgia 2026 individual marketplace 'Kaiser Permanente Georgia 2026' 'marketplace' 'GeorgiaAccess'",
+            "Kaiser Permanente Georgia 2026 individual plans availability Atlanta 2026 'Kaiser Permanente Georgia' 'individual market' '2026'",
+            "health insurance companies in Georgia ACA marketplace 2026",
+            "Georgia ACA health insurance plans 2026 self employed"
+          ],
+          "weightedFrequency": 5.75,
+          "memberCount": 14,
+          "promptCoverage": [
+            "P30"
+          ],
+          "dominantVariant": "Unknown",
+          "variantBreakdown": {},
+          "subStyleCoverage": {
+            "info-seeking": 14
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        },
+        {
+          "rank": 7,
+          "shapeLabel": "State Medicaid income limits | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "Florida Medicaid eligibility single mom 2025",
+            "Florida Medicaid income limits 2025",
+            "Florida Medicaid income limits parents caretakers 2025",
+            "Florida Medicaid eligibility for single moms income limits 2026",
+            "Florida KidCare eligibility income limits 2026"
+          ],
+          "weightedFrequency": 5.25,
+          "memberCount": 12,
+          "promptCoverage": [
+            "P26"
+          ],
+          "dominantVariant": "Unknown",
+          "variantBreakdown": {},
+          "subStyleCoverage": {
+            "first-person-urgent": 12
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'texas medicaid income limits 2026')"
+        },
+        {
+          "rank": 8,
+          "shapeLabel": "Premium tax credit / subsidy | Self-employed health insurance deduction (IRS) | Gig: subsidy eligibility | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "Health insurance deduction for self-employed - IRS 'Self-employed health insurance deduction' site:irs.gov",
+            "Self-employed health insurance deduction IRS 2026 'self-employed health insurance' IRS",
+            "Premium Tax Credit and self-employed health insurance deduction IRS Publication 974 'self-employed' 'premium tax credit' 'deduction'",
+            "IRS self-employed health insurance deduction rules 2026 site:irs.gov",
+            "Self-employed health insurance deduction IRS 'self-employed health insurance' site:irs.gov"
+          ],
+          "weightedFrequency": 5.0,
+          "memberCount": 5,
+          "promptCoverage": [
+            "P18"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Canonicalization": 4,
+            "Entailment": 1
+          },
+          "subStyleCoverage": {
+            "info-seeking": 5
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-marketplace' shape (e.g., 'oregon health insurance marketplace')"
+        }
+      ],
+      "variantDistribution": {
+        "Canonicalization": 0.153,
+        "Equivalent": 0.222,
+        "Entailment": 0.502,
+        "Specification": 0.12,
+        "Follow-up": 0.003
+      },
+      "crossSubStyleConsistency": "divergent",
+      "subStyleNotes": "Substyles analyzed: ['caretaker', 'first-person-urgent', 'info-seeking']. Substyle-specific shapes: [{'shape': 'Marketplace mechanics | [state-specific] | [year-anchored]', 'substyle': 'info-seeking', 'weighted': 5.75}, {'shape': 'State Medicaid income limits | [state-specific] | [year-anchored]', 'substyle': 'first-person-urgent', 'weighted': 5.25}, {'shape': 'Premium tax credit / subsidy | Self-employed health insurance deduction (IRS) | ', 'substyle': 'info-seeking', 'weighted': 5.0}]",
+      "writerAgentRecipe": {
+        "requiredH2Sections": [
+          "Why coverage is hard for {persona} (pain points)",
+          "Quick eligibility check (income / household / state)",
+          "Best path #1: Marketplace + subsidies (with the 1099 income calculation worked example)",
+          "Best path #2: Medicaid (state-by-state for variable coverage)",
+          "Best path #3: Spouse or parent plan",
+          "Tax considerations specific to this persona (self-employed health insurance deduction, etc.)",
+          "Real-world cost example with their typical income range",
+          "How to estimate variable income on the application"
+        ],
+        "requiredFAQTopics": [
+          "How does {persona} qualify for Marketplace subsidies?",
+          "How do I report variable / 1099 income?",
+          "Can {persona} get Medicaid?",
+          "What deductions can {persona} take to lower MAGI?",
+          "What about spouse/parent coverage?"
+        ],
+        "requiredTableOrChartFormats": [
+          "Income \u2192 subsidy estimator table (for this persona's typical range)",
+          "State Medicaid eligibility map for {persona}",
+          "Coverage path decision tree"
+        ],
+        "stateSpecificityRule": "Generate state variants for state-marketplace states + Medicaid-expansion states. Persona \u00d7 state pages will be Bing's preferred decomposition.",
+        "yearMarkerRule": "Income thresholds and subsidy calculations year-anchored.",
+        "topShapesNote": "Specification dominates (persona \u00d7 scenario, persona \u00d7 state). Entailment is heavy (implied next steps: how to apply, how to estimate income). The persona itself is canonical \u2014 don't over-generate Equivalent rephrases."
+      }
+    },
+    {
+      "template": "ma-state",
+      "promptsAnalyzed": [
+        "P19",
+        "P20",
+        "P21",
+        "P29"
+      ],
+      "totalProbeRecords": 35,
+      "uniqueQueriesPooled": 135,
+      "clustersFound": 35,
+      "dominantShapes": [
+        {
+          "rank": 1,
+          "shapeLabel": "Medicare Advantage by state | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "Medicare Advantage enrollment periods 2026 CMS Jan 1 Mar 31 Annual Enrollment Period Oct 15 Dec 7",
+            "Medicare Annual Enrollment Period Oct 15 Dec 7 Medicare.gov",
+            "Medicare Advantage Open Enrollment Period Jan 1 March 31 official Medicare.gov",
+            "KFF medigap vs medicare advantage 'Kaiser Family Foundation' 'Medigap vs Medicare Advantage' 2025 2026",
+            "Medicare Advantage overview Medicare.gov"
+          ],
+          "weightedFrequency": 11.25,
+          "memberCount": 12,
+          "promptCoverage": [
+            "P19",
+            "P20",
+            "P29"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Entailment": 2,
+            "Specification": 3,
+            "Equivalent": 3
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 8,
+            "caretaker": 4
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'texas medicaid income limits 2026')"
+        },
+        {
+          "rank": 2,
+          "shapeLabel": "Medicare Advantage by state | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "how to choose Medicare Advantage plan tips 2025",
+            "Kaiser Permanente Medicare Advantage California diabetes care Medicare Advantage Kaiser diabetes management",
+            "UnitedHealthcare Medicare Advantage California diabetes program UnitedHealthcare Medicare plans California diabetes",
+            "Medicare Advantage plans for diabetes Southern California 2026",
+            "how to choose Medicare Advantage plan tips 2026"
+          ],
+          "weightedFrequency": 9.25,
+          "memberCount": 24,
+          "promptCoverage": [
+            "P20",
+            "P21",
+            "P29"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Entailment": 5,
+            "Equivalent": 4,
+            "Specification": 14
+          },
+          "subStyleCoverage": {
+            "caretaker": 6,
+            "info-seeking": 17,
+            "first-person-urgent": 1
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'medical income limits 2026 california')"
+        },
+        {
+          "rank": 3,
+          "shapeLabel": "MA Star Ratings | [state-specific] | [year-anchored]",
+          "exampleQueries": [
+            "best Medicare Advantage plans Southern California diabetes 2025",
+            "best Medicare Advantage plans California 2025",
+            "Medicare Advantage diabetes coverage Southern California 2025 ratings",
+            "best Medicare Advantage plans California 2026",
+            "best medicare advantage plans for diabetes southern california 2026"
+          ],
+          "weightedFrequency": 8.75,
+          "memberCount": 21,
+          "promptCoverage": [
+            "P19",
+            "P20",
+            "P21",
+            "P29"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Specification": 7,
+            "Equivalent": 8
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 7,
+            "caretaker": 8,
+            "info-seeking": 6
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'missouri medicaid income limits 2026')"
+        },
+        {
+          "rank": 4,
+          "shapeLabel": "MA Star Ratings | [state-specific] | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "best Medicare Advantage plans Los Angeles 2025",
+            "top rated Medicare Advantage plans Los Angeles County 2025",
+            "top rated medicare advantage plans 2026 california",
+            "medicare advantage plan rankings los angeles 2026",
+            "best medicare advantage plans los angeles 2026 ratings"
+          ],
+          "weightedFrequency": 5.25,
+          "memberCount": 11,
+          "promptCoverage": [
+            "P19"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Equivalent": 7,
+            "Specification": 4
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 11
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'medical income limits 2026 california')"
+        },
+        {
+          "rank": 5,
+          "shapeLabel": "Medicare Plan Finder lookup | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "Medicare Plan Finder Medicare Advantage Los Angeles County 2026 official",
+            "Medicare Plan Finder Medicare.gov 2026",
+            "Medicare.gov Plan Finder how to use 'Find & compare plans' 2026 Medicare.gov Plan Finder",
+            "Medicare.gov Find & compare plans 'Find & compare' Medicare plan finder official page 'plan-compare' 'find plans' 2026"
+          ],
+          "weightedFrequency": 4.0,
+          "memberCount": 4,
+          "promptCoverage": [
+            "P19"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 4
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 4
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 6,
+          "shapeLabel": "Medicare Advantage by state | [gov source citation]",
+          "exampleQueries": [
+            "Medicare Advantage eligibility must be enrolled in Medicare Part A and Part B before joining Medicare Advantage Medicare.gov",
+            "Medicare Advantage trial right first year you can switch to Original Medicare within 12 months 'trial right' Medicare.gov",
+            "site:medicare.gov plan compare zip code Medicare Advantage plans prescription drugs official"
+          ],
+          "weightedFrequency": 3.0,
+          "memberCount": 3,
+          "promptCoverage": [
+            "P20",
+            "P29"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 2
+          },
+          "subStyleCoverage": {
+            "caretaker": 2,
+            "first-person-urgent": 1
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        },
+        {
+          "rank": 7,
+          "shapeLabel": "Medicare Advantage by state | [state-specific]",
+          "exampleQueries": [
+            "UnitedHealthcare Medicare Advantage diabetes management program UnitedHealthcare diabetes care Medicare Advantage",
+            "Kaiser Permanente Medicare Advantage diabetes program California Medicare Advantage Kaiser diabetes program",
+            "best medical groups for diabetes Southern California Medicare Advantage partners"
+          ],
+          "weightedFrequency": 2.25,
+          "memberCount": 3,
+          "promptCoverage": [
+            "P21"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 3
+          },
+          "subStyleCoverage": {
+            "info-seeking": 3
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'medical income limits 2026 california')"
+        },
+        {
+          "rank": 8,
+          "shapeLabel": "Topic shape: rule, birthday, official | [state-specific]",
+          "exampleQueries": [
+            "California Medicare Supplement guaranteed issue birthday rule official Department of Insurance",
+            "Missouri Medigap birthday rule anniversary rule official insurance department"
+          ],
+          "weightedFrequency": 2.0,
+          "memberCount": 2,
+          "promptCoverage": [
+            "P19",
+            "P29"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 1
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 2
+          },
+          "bingValidated": false,
+          "bingValidationNote": null
+        }
+      ],
+      "variantDistribution": {
+        "Equivalent": 0.266,
+        "Specification": 0.362,
+        "Entailment": 0.367,
+        "Clarification": 0.004
+      },
+      "crossSubStyleConsistency": "divergent",
+      "subStyleNotes": "Substyles analyzed: ['caretaker', 'first-person-urgent', 'info-seeking']. Substyle-specific shapes: [{'shape': 'MA Star Ratings | [state-specific] | [year-anchored] | [gov source citation]', 'substyle': 'first-person-urgent', 'weighted': 5.25}, {'shape': 'Medicare Plan Finder lookup | [year-anchored] | [gov source citation]', 'substyle': 'first-person-urgent', 'weighted': 4.0}, {'shape': 'Medicare Advantage by state | [state-specific]', 'substyle': 'info-seeking', 'weighted': 2.25}]",
+      "writerAgentRecipe": {
+        "requiredH2Sections": [
+          "Available {state} Medicare Advantage plans this year (with carrier list)",
+          "Plan finder lookup table (county-by-county within the state)",
+          "Top-rated plans by Star Rating (CMS data, current year)",
+          "$0 premium plans available in {state}",
+          "Key benefits compared (dental, vision, hearing, OTC, fitness, transportation)",
+          "Provider network considerations (HMO vs PPO vs PFFS in this state)",
+          "How to enroll + AEP/OEP/SEP windows",
+          "State-specific extras (some states have unique MA programs)"
+        ],
+        "requiredFAQTopics": [
+          "Best Medicare Advantage plans in {state} {year}?",
+          "Are there $0 premium MA plans in {county}, {state}?",
+          "Which {state} MA plans include dental?",
+          "How do I switch MA plans in {state}?",
+          "What's the AEP for {year}?"
+        ],
+        "requiredTableOrChartFormats": [
+          "County-by-county plan availability table (CRITICAL)",
+          "Carrier comparison ($, network, benefits, star rating)",
+          "Star rating leaderboard for the state",
+          "Benefits comparison matrix"
+        ],
+        "stateSpecificityRule": "REQUIRED state-level page per state, plus county-level lookup tables. MA shopping is hyperlocal \u2014 county-level granularity beats state-only.",
+        "yearMarkerRule": "Plan year MUST be in title. Re-generate every September when CMS publishes new plan data. Stale year = zero traffic.",
+        "topShapesNote": "Specification heavy (state \u00d7 plan-type, state \u00d7 benefit, state \u00d7 carrier, county \u00d7 plan). Equivalent ('best Medicare Advantage in California') is the entry point but Specification is what Bing decomposes into."
+      }
+    },
+    {
+      "template": "daily-blog",
+      "promptsAnalyzed": [
+        "P22",
+        "P23",
+        "P24"
+      ],
+      "totalProbeRecords": 28,
+      "uniqueQueriesPooled": 101,
+      "clustersFound": 21,
+      "dominantShapes": [
+        {
+          "rank": 1,
+          "shapeLabel": "FPL by household size | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "ASPE 2026 poverty guidelines '2026 Poverty Guidelines' 'ASPE' 'HHS' '2026 Poverty Guidelines for the United States'",
+            "ASPE 2026 poverty guidelines 'aspe.hhs.gov/poverty' 2026 poverty guidelines 2026 'ASPE' '2026 poverty guidelines PDF'",
+            "ASPE 2026 poverty guidelines '2026 poverty guidelines ASPE' 'HHS ASPE 2026 poverty guidelines pdf'",
+            "HHS 2026 poverty guidelines ASPE 2026 federal poverty level '2026 Poverty Guidelines' site:hhs.gov",
+            "ASPE 2026 poverty guidelines '2026 HHS poverty guidelines' site:aspe.hhs.gov"
+          ],
+          "weightedFrequency": 13.0,
+          "memberCount": 13,
+          "promptCoverage": [
+            "P22",
+            "P23",
+            "P24"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Specification": 3,
+            "Canonicalization": 10
+          },
+          "subStyleCoverage": {
+            "info-seeking": 3,
+            "first-person-urgent": 4,
+            "caretaker": 6
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'poverty guidelines 2026')"
+        },
+        {
+          "rank": 2,
+          "shapeLabel": "FPL by household size | [state-specific] | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "site:aspe.hhs.gov 2026 poverty guidelines HHS ASPE 2026",
+            "Federal Poverty Guidelines 2026 HHS 2026 FPL 2026 poverty guidelines",
+            "HHS poverty guidelines 2026 ASPE '2026 HHS Poverty Guidelines' 'ASPE' '2026'",
+            "site:aspe.hhs.gov 2026 Poverty Guidelines '2026 Poverty Guidelines' 'ASPE' 'HHS'",
+            "2026 HHS poverty guidelines PDF 'ASPE' '2026' 'poverty guidelines pdf'"
+          ],
+          "weightedFrequency": 10.0,
+          "memberCount": 10,
+          "promptCoverage": [
+            "P22",
+            "P23"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Specification": 9,
+            "Canonicalization": 1
+          },
+          "subStyleCoverage": {
+            "info-seeking": 9,
+            "first-person-urgent": 1
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'poverty guidelines 2026')"
+        },
+        {
+          "rank": 3,
+          "shapeLabel": "FPL by household size | Medicaid eligibility | [year-anchored]",
+          "exampleQueries": [
+            "2026 HHS poverty guidelines federal poverty level 2026 Medicaid",
+            "HHS 2026 poverty guidelines 2026 federal poverty level HHS press release 2026",
+            "2026 Federal Poverty Guidelines family of 4 HHS 2026 poverty guideline",
+            "2026 federal poverty guidelines HHS family of 4 2026 poverty guideline 48 states",
+            "2026 HHS federal poverty guidelines 2026 HHS poverty guidelines amount 48 states $ for 1 person"
+          ],
+          "weightedFrequency": 5.75,
+          "memberCount": 8,
+          "promptCoverage": [
+            "P22",
+            "P23",
+            "P24"
+          ],
+          "dominantVariant": "Specification",
+          "variantBreakdown": {
+            "Clarification": 2,
+            "Specification": 3,
+            "Canonicalization": 3
+          },
+          "subStyleCoverage": {
+            "info-seeking": 5,
+            "first-person-urgent": 2,
+            "caretaker": 1
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'poverty guidelines 2026')"
+        },
+        {
+          "rank": 4,
+          "shapeLabel": "FPL % thresholds (subsidy cliff bands) | Medicaid expansion status by state | [year-anchored]",
+          "exampleQueries": [
+            "federal poverty level 2026",
+            "Medicaid 138% FPL 'Medicaid.gov' 'income eligibility' '138% of the federal poverty level'",
+            "Medicaid.gov 'eligibility levels' '138% of the federal poverty level' 'expansion' 'Medicaid expansion 138% site:medicaid.gov'",
+            "2026 federal poverty level Medicaid eligibility",
+            "federal poverty level 2026 guidelines"
+          ],
+          "weightedFrequency": 5.25,
+          "memberCount": 11,
+          "promptCoverage": [
+            "P22"
+          ],
+          "dominantVariant": "Equivalent",
+          "variantBreakdown": {
+            "Equivalent": 3,
+            "Canonicalization": 3,
+            "Clarification": 3,
+            "Specification": 2
+          },
+          "subStyleCoverage": {
+            "info-seeking": 11
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'poverty guidelines 2026')"
+        },
+        {
+          "rank": 5,
+          "shapeLabel": "FPL % thresholds (subsidy cliff bands) | Premium tax credit / subsidy | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "HealthCare.gov who qualifies for marketplace subsidies 2026 'premium tax credit' '2026' '400% FPL'",
+            "HealthCare.gov who qualifies for savings on marketplace '100% to 400% of the federal poverty level' '2026'",
+            "HealthCare.gov 'Get help paying for coverage' '100% to 400% of the federal poverty level' '2026' 'How to qualify'",
+            "Who qualifies for savings on a Marketplace plan 'HealthCare.gov' 'Who qualifies' 'premium tax credit'",
+            "healthcare.gov premium tax credit eligibility 100 to 400 percent 2026 'How does the premium tax credit work' '100% and 400% of the federal poverty level'"
+          ],
+          "weightedFrequency": 5.0,
+          "memberCount": 5,
+          "promptCoverage": [
+            "P23",
+            "P24"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Entailment": 2,
+            "Canonicalization": 3
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 1,
+            "caretaker": 4
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'poverty guidelines 2026')"
+        },
+        {
+          "rank": 6,
+          "shapeLabel": "FPL current-year guidelines | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "2026 HHS poverty guidelines 'ASPE' '2026 HHS poverty guidelines' 'Assistant Secretary for Planning and Evaluation 2026 poverty guidelines'",
+            "ASPE 2026 poverty guidelines 2026 HHS '2026 poverty guidelines ASPE' '2026 HHS' 'office of the assistant secretary for planning and evaluation'",
+            "HealthCare.gov 'cost-sharing reductions' '250% of the federal poverty level' 'CSR' '2026'",
+            "site:healthcare.gov \"cost-sharing reductions\" \"250%\""
+          ],
+          "weightedFrequency": 4.0,
+          "memberCount": 4,
+          "promptCoverage": [
+            "P24"
+          ],
+          "dominantVariant": "Canonicalization",
+          "variantBreakdown": {
+            "Canonicalization": 2,
+            "Entailment": 2
+          },
+          "subStyleCoverage": {
+            "caretaker": 4
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'fpl-year' shape (e.g., 'poverty guidelines 2026')"
+        },
+        {
+          "rank": 7,
+          "shapeLabel": "Medicaid eligibility | [year-anchored] | [gov source citation]",
+          "exampleQueries": [
+            "Medicaid income eligibility 2026",
+            "KFF CHIP eligibility income limits by state 2026 'CHIP eligibility' 'children' 'KFF'",
+            "Medicaid eligibility 2026 income limits",
+            "Medicaid income limits 2026",
+            "Medicaid income limits for family of 4 2026"
+          ],
+          "weightedFrequency": 3.75,
+          "memberCount": 9,
+          "promptCoverage": [
+            "P22",
+            "P23"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Canonicalization": 3,
+            "Entailment": 6
+          },
+          "subStyleCoverage": {
+            "info-seeking": 3,
+            "first-person-urgent": 6
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'texas medicaid income limits 2026')"
+        },
+        {
+          "rank": 8,
+          "shapeLabel": "Premium tax credit / subsidy | [year-anchored]",
+          "exampleQueries": [
+            "IRS premium tax credit 2026 rules revert 400% cap 2026 IRS guidance '2026' 'premium tax credit' '400 percent'",
+            "did ACA enhanced subsidies expire in 2026",
+            "is the ACA subsidy cliff still gone in 2026",
+            "is the ACA subsidy cliff active in 2026",
+            "marketplace subsidy eligibility $60k income individual 2026"
+          ],
+          "weightedFrequency": 3.25,
+          "memberCount": 10,
+          "promptCoverage": [
+            "P23",
+            "P24"
+          ],
+          "dominantVariant": "Entailment",
+          "variantBreakdown": {
+            "Entailment": 7,
+            "Specification": 3
+          },
+          "subStyleCoverage": {
+            "first-person-urgent": 1,
+            "caretaker": 9
+          },
+          "bingValidated": true,
+          "bingValidationNote": "Matches Bing 'state-medicaid-income' shape (e.g., 'texas medicaid income limits 2026')"
+        }
+      ],
+      "variantDistribution": {
+        "Equivalent": 0.08,
+        "Canonicalization": 0.376,
+        "Clarification": 0.018,
+        "Specification": 0.274,
+        "Entailment": 0.252
+      },
+      "crossSubStyleConsistency": "divergent",
+      "subStyleNotes": "Substyles analyzed: ['caretaker', 'first-person-urgent', 'info-seeking']. Substyle-specific shapes: [{'shape': 'FPL % thresholds (subsidy cliff bands) | Medicaid expansion status by state | [y', 'substyle': 'info-seeking', 'weighted': 5.25}, {'shape': 'FPL current-year guidelines | [year-anchored] | [gov source citation]', 'substyle': 'caretaker', 'weighted': 4.0}]",
+      "writerAgentRecipe": {
+        "requiredH2Sections": [
+          "The number / chart up top (FPL table, eligibility threshold, key figure for the day)",
+          "What it means in plain English (one paragraph)",
+          "Eligibility implications (Medicaid, CHIP, Marketplace subsidies \u2014 by household size)",
+          "State-by-state breakdown of how this number is used",
+          "Worked example for a specific household scenario",
+          "What changed this year (vs last year)",
+          "Calculator / lookup tool embed",
+          "Related programs (SNAP, WIC) that use this number"
+        ],
+        "requiredFAQTopics": [
+          "What is the FPL for {year}?",
+          "What is the FPL for a family of {N}?",
+          "Do I qualify for Medicaid at {income}?",
+          "How does FPL connect to subsidies (138%, 150%, 200%, 400%)?",
+          "{state} Medicaid income limits"
+        ],
+        "requiredTableOrChartFormats": [
+          "Federal Poverty Level table by household size (1-8+) for current year \u2014 THE primary asset",
+          "FPL % thresholds table (138%, 150%, 200%, 250%, 400% by household size)",
+          "State Medicaid expansion status map",
+          "Year-over-year FPL change table"
+        ],
+        "stateSpecificityRule": "CRITICAL \u2014 top Bing blind spot is per-state Medicaid income limit pages (Texas, Missouri, Ohio, SC, Florida, California). Generate one page per state + per program (state Medicaid, SNAP, WIC) that consumes FPL.",
+        "yearMarkerRule": "MANDATORY year in title. Republish JAN 15 each year when ASPE publishes new guidelines. Stale year = invisible to Bing.",
+        "topShapesNote": "Equivalent dominates raw count (FPL 2026, poverty guidelines 2026 \u2014 Bing-validated 8/8 with 875% overlap). But the BIG missed shape is Specification: state \u00d7 program (Texas Medicaid, Missouri Medicaid, etc.) drives 4000+ citations/month per BenefitsUSA crosscheck. THIS is the formula upgrade."
+      }
+    }
+  ]
+}

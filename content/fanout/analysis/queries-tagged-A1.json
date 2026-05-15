@@ -1,0 +1,4764 @@
+{
+  "taggedBy": "A1",
+  "taggedAt": "2026-05-14T23:36:24.738152Z",
+  "prompts": [
+    {
+      "promptId": "P01",
+      "userPrompt": "i have an MRI scheduled next week how much will it cost without insurance",
+      "tagged": [
+        {
+          "query": "MRI cost without insurance 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance intent"
+        },
+        {
+          "query": "cost of MRI without insurance USA 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance intent"
+        },
+        {
+          "query": "how to find cheapest MRI without insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implied next step: how to reduce price"
+        },
+        {
+          "query": "MRI cost hospital vs imaging center without insurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility type"
+        },
+        {
+          "query": "average cost of MRI by body part without insurance 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility type"
+        },
+        {
+          "query": "how to request good faith estimate for medical imaging self-pay",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate framework"
+        },
+        {
+          "query": "No Surprises Act Good Faith Estimate for MRI without insurance 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate framework"
+        },
+        {
+          "query": "MRI cost without insurance by body part and facility type 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility type"
+        },
+        {
+          "query": "average cost of MRI without insurance in USA 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance intent"
+        },
+        {
+          "query": "how to get lower cost MRI without insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implied next step: how to reduce price"
+        },
+        {
+          "query": "cash price for MRI scan without insurance",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "uninsured rephrased as self-pay/cash"
+        },
+        {
+          "query": "average cost of MRI without insurance 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance intent"
+        },
+        {
+          "query": "MRI cost without insurance by type brain spine knee 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility type"
+        },
+        {
+          "query": "how to find low cost MRI without insurance 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implied next step: how to reduce price"
+        },
+        {
+          "query": "self-pay MRI cost vs hospital MRI cost 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility type"
+        },
+        {
+          "query": "is a good faith estimate required for self-pay patients in 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate framework"
+        },
+        {
+          "query": "No Surprises Act Good Faith Estimate self-pay medical 2026 rules",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate framework"
+        },
+        {
+          "query": "how to request good faith estimate MRI without insurance 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate framework"
+        },
+        {
+          "query": "MRI cost without insurance United States self pay average 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "uninsured rephrased as self-pay/cash"
+        },
+        {
+          "query": "RadiologyAssist MRI self pay price United States",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "MRI cost without insurance average cost United States MRI price range cash",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance intent"
+        },
+        {
+          "query": "CMS good faith estimate No Surprises Act how to request good faith estimate for uninsured patients medical service",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate framework"
+        },
+        {
+          "query": "cost of MRI without insurance US average 2024 2025 'MRI cost' 'without insurance' 'United States' range",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance intent"
+        },
+        {
+          "query": "No Surprises Act Good Faith Estimate HHS 'Good Faith Estimate' uninsured give estimate before care",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate framework"
+        },
+        {
+          "query": "Fair Health Consumer MRI cost 'Fair Health' 'MRI' average cost 'Fair Health Consumer' 'MRI'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "How much does an MRI cost without insurance United States average cost MRI price 2024 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance intent"
+        }
+      ]
+    },
+    {
+      "promptId": "P02",
+      "userPrompt": "my dad needs an MRI but doesnt have insurance can you tell me what hes looking at price-wise",
+      "tagged": [
+        {
+          "query": "MRI cost without insurance 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance"
+        },
+        {
+          "query": "average cost of MRI without insurance 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance"
+        },
+        {
+          "query": "cost of brain MRI without insurance 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "how to get cheap MRI without insurance USA",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implied next step: reduce price"
+        },
+        {
+          "query": "independent imaging center vs hospital MRI cost without insurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "cash pay MRI cost average 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "uninsured rephrased as self-pay/cash"
+        },
+        {
+          "query": "average cost of MRI without insurance 2026 USA",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance"
+        },
+        {
+          "query": "how much does an MRI cost at a hospital vs independent imaging center without insurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "cost of MRI by body part without insurance 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "self pay discount for MRI without insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implied next step: reduce price"
+        },
+        {
+          "query": "price transparency tools for MRI costs USA",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies transparency-tool resource"
+        },
+        {
+          "query": "average cost of MRI without insurance in US 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance"
+        },
+        {
+          "query": "how to save money on MRI without insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implied next step: reduce price"
+        },
+        {
+          "query": "factors affecting cost of MRI without insurance",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "asks what drives price (definitional)"
+        },
+        {
+          "query": "cost of MRI at hospital vs outpatient center without insurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "MRI cost without insurance United States average 2024 2025 healthcarebluebook MRI price",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance"
+        },
+        {
+          "query": "Healthcare Bluebook MRI cost self pay 'Healthcare Bluebook' MRI price",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "site:fairhealthconsumer.org MRI cost 'MRI' 'Fair Health' 'FairHealth' 'MRI brain'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "MRI cost without insurance United States average 2024 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance"
+        },
+        {
+          "query": "MDsave MRI price MRI cost MDsave 'MRI' 2026 cash price",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "hospital financial assistance for uninsured imaging 'charity care' how to apply 2026 CMS guidance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "cost of MRI uninsured United States average price MRI without insurance 2025 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cost-without-insurance"
+        },
+        {
+          "query": "MDsave MRI price 'MDsave MRI cost' 'self pay' 'MRI' 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "Medicare national average payment MRI CPT 70551 2026 Medicare Physician Fee Schedule 70551 amount '70551 Medicare'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "hospital financial assistance for uninsured how to apply 'charity care' HHS guidance 'hospital financial assistance' 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "Medicaid retroactive coverage 3 months 'Medicaid retroactive' 'applies to hospital bills' 2026 CMS guidance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "Fair Health Consumer MRI cost 'FairHealth' MRI cost 'Fair Health' 2026 'MRI cost'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        }
+      ]
+    },
+    {
+      "promptId": "P03",
+      "userPrompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay",
+      "tagged": [
+        {
+          "query": "average MRI cost out of pocket 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of expected MRI cost"
+        },
+        {
+          "query": "MRI cost with insurance 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to insured cost components"
+        },
+        {
+          "query": "factors affecting MRI cost hospital vs imaging center",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "average cost of MRI in US with and without insurance 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to insured cost components"
+        },
+        {
+          "query": "how much does MRI cost with insurance copay coinsurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to insured cost components"
+        },
+        {
+          "query": "how to get MRI cost estimate before appointment",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies how to get estimate before service"
+        },
+        {
+          "query": "cost of MRI for different body parts and contrast dye",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "average cost of an MRI with insurance vs without insurance 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to insured cost components"
+        },
+        {
+          "query": "how to estimate MRI cost before appointment",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies how to estimate before service"
+        },
+        {
+          "query": "financial assistance programs for MRI scans",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies financial assistance programs"
+        },
+        {
+          "query": "No Surprises Act MRI Good Faith Estimate rules for insured vs uninsured",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate"
+        },
+        {
+          "query": "how to get a good faith estimate for MRI tomorrow",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate"
+        },
+        {
+          "query": "MRI cost without insurance USA 2026 range",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of expected MRI cost"
+        },
+        {
+          "query": "how to find out cost of scheduled MRI with insurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to insured cost components"
+        },
+        {
+          "query": "average MRI cost hospital vs independent imaging center",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "average cost of MRI scan USA 2026 factors affecting price",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "No Surprises Act MRI good faith estimate requirements",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate"
+        },
+        {
+          "query": "financial assistance for MRI scans low income or uninsured",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies financial assistance programs"
+        },
+        {
+          "query": "discounted MRI programs for patients with high deductibles",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies financial assistance programs"
+        },
+        {
+          "query": "charity care for medical imaging costs hospital policies",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies financial assistance programs"
+        },
+        {
+          "query": "how to negotiate MRI bill before appointment script",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies bill-negotiation strategy"
+        },
+        {
+          "query": "How much does an MRI cost in the United States 2024 average cost MRI without insurance contrast vs non-contrast",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to body part or facility"
+        },
+        {
+          "query": "No Surprises Act good faith estimate scheduled services patient right to estimate 2023 2024 2025 CMS guidance 'Good Faith Estimate' healthcare 'self-pay' 'No Surprises Act' 'GFE' 2024",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate"
+        },
+        {
+          "query": "average cost of MRI in the United States 2024 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of expected MRI cost"
+        },
+        {
+          "query": "No Surprises Act Good Faith Estimate for uninsured provider must give estimate 2022 CMS guidance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate"
+        },
+        {
+          "query": "FAIR Health MRI cost 2025 'MRI' 'FAIR Health' cost",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "radiologist reading fee separate from facility MRI cost 'radiologist fee' 'reading fee' MRI cost",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "introduces separate radiologist fee"
+        },
+        {
+          "query": "cost of MRI in the United States average price 2025 2026 in-network out-of-network Healthcare Bluebook",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        },
+        {
+          "query": "No Surprises Act Good Faith Estimate medical imaging MRI 2024 2025 HHS 'Good Faith Estimate' law what to ask",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies right-to-estimate"
+        },
+        {
+          "query": "tips to lower MRI cost self-pay discount imaging center vs hospital outpatient cost 'Healthcare Bluebook' 'Medical Billing Advocates of America' advice",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific pricing source"
+        }
+      ]
+    },
+    {
+      "promptId": "P04",
+      "userPrompt": "how much will Ozempic cost me per month if my insurance doesnt cover it",
+      "tagged": [
+        {
+          "query": "Ozempic cost per month without insurance 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of monthly cost without insurance"
+        },
+        {
+          "query": "ozempic cost per month without insurance 2024 2025 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of monthly cost without insurance"
+        },
+        {
+          "query": "Ozempic cost per month without insurance 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of monthly cost without insurance"
+        },
+        {
+          "query": "Ozempic monthly cost without insurance 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of monthly cost without insurance"
+        },
+        {
+          "query": "Novo Nordisk Ozempic patient assistance program and savings card for uninsured",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer assistance program"
+        },
+        {
+          "query": "Ozempic list price per month 2024 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "list price = canonical pricing term"
+        },
+        {
+          "query": "GoodRx Ozempic price comparison 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to discount-card source"
+        },
+        {
+          "query": "GoodRx Ozempic price 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to discount-card source"
+        },
+        {
+          "query": "Novo Nordisk patient assistance program Ozempic eligibility",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer assistance program"
+        },
+        {
+          "query": "Ozempic list price 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "list price = canonical pricing term"
+        },
+        {
+          "query": "Ozempic manufacturer discount card for patients without insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer assistance program"
+        },
+        {
+          "query": "Ozempic pill vs Rybelsus 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to oral semaglutide variant"
+        },
+        {
+          "query": "Ozempic savings card discount amount if insurance does not cover",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer assistance program"
+        },
+        {
+          "query": "expected semaglutide generic date 2026",
+          "variant": "Generalization",
+          "secondary": null,
+          "reasoning": "broadens to molecule (generic semaglutide)"
+        },
+        {
+          "query": "NovoCare Ozempic cash pay program eligibility weight loss vs diabetes",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer assistance program"
+        },
+        {
+          "query": "how much is ozempic out of pocket monthly 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "no-insurance rephrased as cash/retail"
+        },
+        {
+          "query": "Ozempic cost without insurance 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of monthly cost without insurance"
+        },
+        {
+          "query": "retail price of ozempic pen without insurance 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "no-insurance rephrased as cash/retail"
+        },
+        {
+          "query": "Novo Nordisk Ozempic savings card no insurance coverage",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer assistance program"
+        },
+        {
+          "query": "Ozempic list price monthly cost without insurance 2026 manufacturer Novo Nordisk",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer assistance program"
+        },
+        {
+          "query": "Ozempic price per month cash 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of monthly cost without insurance"
+        },
+        {
+          "query": "Ozempic price per month retail 2026 cost without insurance",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of monthly cost without insurance"
+        },
+        {
+          "query": "Ozempic pen how many doses per pen 4-week supply how many injections per pen 2026 Ozempic prescribing information",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "asks about dosing definitions"
+        },
+        {
+          "query": "Ozempic cash price per month 2026 GoodRx",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to discount-card source"
+        },
+        {
+          "query": "Novo Nordisk patient assistance program Ozempic uninsured NovoCare patient assistance 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer assistance program"
+        }
+      ]
+    },
+    {
+      "promptId": "P05",
+      "userPrompt": "my mom needs ozempic and her insurance denied it whats the real cost going to be",
+      "tagged": [
+        {
+          "query": "Ozempic cost without insurance 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of real cost after denial"
+        },
+        {
+          "query": "Ozempic savings programs patient assistance 2025",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "Ozempic out of pocket cost without insurance 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "denied/uninsured -> cash/retail terminology"
+        },
+        {
+          "query": "Ozempic savings programs coupons discount 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of real cost after denial"
+        },
+        {
+          "query": "patient assistance programs for Ozempic 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "retail price of Ozempic without insurance USA 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "denied/uninsured -> cash/retail terminology"
+        },
+        {
+          "query": "Ozempic cost with GoodRx May 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to pharmacy/discount source"
+        },
+        {
+          "query": "how to appeal insurance denial for Ozempic",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies appealing the denial"
+        },
+        {
+          "query": "Ozempic manufacturer coupon for patients without insurance coverage",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "cost of compounded semaglutide 2026 range",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to compounded form"
+        },
+        {
+          "query": "Rybelsus cash price 2026 vs Ozempic",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Rybelsus variant"
+        },
+        {
+          "query": "federal program cap GLP-1 costs $350 mid-2026 details",
+          "variant": "Generalization",
+          "secondary": null,
+          "reasoning": "broadens to GLP-1 category"
+        },
+        {
+          "query": "Ozempic Savings Program Non-covered benefit details 2026 cost",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of real cost after denial"
+        },
+        {
+          "query": "Ozempic cost at CVS Walgreens Walmart without insurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to pharmacy/discount source"
+        },
+        {
+          "query": "current list price of ozempic without insurance 2024 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "denied/uninsured -> cash/retail terminology"
+        },
+        {
+          "query": "Novo Nordisk Ozempic patient assistance program and savings card for uninsured",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "real cost of ozempic cash price 2024",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "denied/uninsured -> cash/retail terminology"
+        },
+        {
+          "query": "appeal insurance denial for ozempic for diabetes and weight loss tips",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies appealing the denial"
+        },
+        {
+          "query": "is there an ozempic tablet 1.5 mg 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to tablet form"
+        },
+        {
+          "query": "Ozempic vs Rybelsus tablet cost 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Rybelsus variant"
+        },
+        {
+          "query": "how to find 340B pharmacies for ozempic discounts",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies 340B-pharmacy discount route"
+        },
+        {
+          "query": "Novo Nordisk Patient Assistance Program Ozempic eligibility",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "cost of compounded semaglutide vs Ozempic brand name",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to compounded form"
+        },
+        {
+          "query": "Ozempic list price without insurance 2024 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "denied/uninsured -> cash/retail terminology"
+        },
+        {
+          "query": "Ozempic retail price at pharmacies May 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "denied/uninsured -> cash/retail terminology"
+        },
+        {
+          "query": "Ozempic manufacturer savings card eligibility requirements",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "how to appeal Ozempic insurance denial for type 2 diabetes vs weight loss",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies appealing the denial"
+        },
+        {
+          "query": "Extra Help program Medicare eligibility for Ozempic 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicare-coverage alternative"
+        },
+        {
+          "query": "Ozempic cost for Medicare patients if insurance denies coverage 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicare-coverage alternative"
+        },
+        {
+          "query": "how to get Ozempic for $25 if insurance denies but drug is on formulary",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "Novo Nordisk Ozempic $499 self-pay program eligibility criteria type 2 diabetes requirement",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "Ozempic price 2026 cash price per month 1 mg pen May 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "denied/uninsured -> cash/retail terminology"
+        },
+        {
+          "query": "Novo Nordisk Ozempic savings card 2026 official site Ozempic savings card terms 2026 'Novo Nordisk savings card Ozempic'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance route"
+        },
+        {
+          "query": "Rybelsus price without insurance 2026 cash price per month May 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Rybelsus variant"
+        },
+        {
+          "query": "How to appeal a denied drug prior authorization Medicare 'appeal' 'prescription drug coverage' 'Medicare' 'appeal a coverage decision' 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies appealing the denial"
+        },
+        {
+          "query": "Ozempic price 2026 cost without insurance May 2026 United States",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of real cost after denial"
+        },
+        {
+          "query": "Ozempic price cash 2026 retail price 1 mg pen box cost",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "denied/uninsured -> cash/retail terminology"
+        }
+      ]
+    },
+    {
+      "promptId": "P06",
+      "userPrompt": "im paying cash for ozempic every month is there any way to get it cheaper",
+      "tagged": [
+        {
+          "query": "ways to save money on Ozempic without insurance 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how to get cheaper"
+        },
+        {
+          "query": "Novo Nordisk Patient Assistance Program Ozempic eligibility",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "how to get ozempic cheaper without insurance",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how to get cheaper"
+        },
+        {
+          "query": "Ozempic manufacturer savings card discount program 2025",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "how to get Ozempic cheaper without insurance 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how to get cheaper"
+        },
+        {
+          "query": "Ozempic savings card manufacturer coupon 2025",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "Ozempic manufacturer savings card coupon program 2025",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "GoodRx Ozempic price comparison",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to discount-card service"
+        },
+        {
+          "query": "compounded semaglutide cost and safety vs ozempic",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to compounded alternative"
+        },
+        {
+          "query": "Ozempic manufacturer coupons for cash payers",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "GoodRx for Weight Loss Ozempic $199 offer details",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to discount-card service"
+        },
+        {
+          "query": "Costco pharmacy Ozempic cash price without insurance 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to pharmacy chain"
+        },
+        {
+          "query": "Amazon Pharmacy Ozempic price for Prime members without insurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to pharmacy chain"
+        },
+        {
+          "query": "NovoCare Pharmacy cash price Ozempic how to sign up",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "200% Federal Poverty Level 2024 2025 2026 chart",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies eligibility-by-FPL screen"
+        },
+        {
+          "query": "Ozempic generic or biosimilar availability 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies awaiting generic availability"
+        },
+        {
+          "query": "GLP-1 agonists cheaper alternatives to Ozempic",
+          "variant": "Generalization",
+          "secondary": null,
+          "reasoning": "broadens to cheaper GLP-1 alternatives"
+        },
+        {
+          "query": "Ozempic coupons for cash paying patients",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "Ozempic manufacturer savings card cash price",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "cheapest way to buy Ozempic without insurance",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how to get cheaper"
+        },
+        {
+          "query": "Ozempic savings card eligibility and requirements",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "patient assistance programs for Ozempic Novo Nordisk",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "cost of compounded semaglutide vs ozempic price",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to compounded alternative"
+        },
+        {
+          "query": "how to get ozempic cheaper cash price options",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how to get cheaper"
+        },
+        {
+          "query": "Ozempic discount cards GoodRx SingleCare price comparison",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to discount-card service"
+        },
+        {
+          "query": "Novo Nordisk Patient Assistance Program 2026 underinsured eligibility insurance doesn't cover",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "Amazon Pharmacy Ozempic cash price and discounts",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to pharmacy chain"
+        },
+        {
+          "query": "cheapest pharmacy for Ozempic cash price 2026 Costco vs Walmart vs Amazon Pharmacy",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to pharmacy chain"
+        },
+        {
+          "query": "Ozempic savings card Novo Nordisk 2026 patient assistance program Ozempic savings card eligibility Medicare",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "FDA warning compounded semaglutide 2025 2026 mass marketed compounded semaglutide recall warning FDA site",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to compounded alternative"
+        },
+        {
+          "query": "Ozempic savings card Ozempic coupon 2026 Novo Nordisk patient assistance program Ozempic",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "Novo Nordisk savings card not valid for Medicare Medicaid ozempic copay card excludes government insured",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "Ozempic savings card Novo Nordisk 2026 Ozempic savings program",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "NeedyMeds Ozempic patient assistance 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies manufacturer/assistance program"
+        },
+        {
+          "query": "FDA personal importation policy prescription drugs from Canada personal importation 2026 guidance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies import from cheaper market"
+        }
+      ]
+    },
+    {
+      "promptId": "P07",
+      "userPrompt": "im 67 and need a root canal will medicare pay for any of it",
+      "tagged": [
+        {
+          "query": "does Medicare cover root canals 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "does medicare advantage cover root canals",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "Medicare coverage root canal 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "medicare part a and b dental coverage root canal",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "dental coverage for seniors medicare alternatives",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies alternative dental coverage"
+        },
+        {
+          "query": "does medicare pay for root canals for 67 year old",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "medicare part a and b dental coverage root canal exceptions",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "medicare advantage dental coverage for root canals",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "medigap dental coverage root canal",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medigap as adjacent option"
+        },
+        {
+          "query": "does medicare cover root canals for 67 year olds",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "medicare coverage for medically necessary dental procedures",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to medical-necessity exception"
+        },
+        {
+          "query": "does medicare pay for root canal for 67 year old",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "site:medicare.gov dental services root canal Medicare coverage 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "Medicare root canal coverage Medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "Does Medicare Part D cover dental prescriptions antibiotics after dental procedure Medicare.gov",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "Does Original Medicare cover dental root canal Medicare.gov dental coverage",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "Do Medicare Advantage plans include dental coverage AARP 'dental coverage Medicare Advantage' 'root canal'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "Does Medicare cover dental root canal Medicare.gov dental coverage",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare root canal coverage"
+        },
+        {
+          "query": "Medicare Advantage dental coverage root canal 'Medicare.gov' 'Medicare Advantage dental' 'root canal'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "Medicare Advantage dental coverage 'Medicare.gov' dental benefits 'Medicare Advantage' 'extra benefits' 'dental' 'root canal'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "Does Medicare Part D cover prescription antibiotics for dental procedures 'Medicare.gov' 'prescription drugs' 'dental'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "Medicaid dental coverage adult dental benefits medicaid.gov 'dental care' 'adult' 'root canal'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid as adjacent option"
+        }
+      ]
+    },
+    {
+      "promptId": "P08",
+      "userPrompt": "my dad has medicare and needs his teeth pulled is that going to be covered",
+      "tagged": [
+        {
+          "query": "does Medicare cover tooth extraction dental 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "medicare advantage dental coverage tooth extraction",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "does Medicare cover tooth extraction dental 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "does medicare cover tooth extraction",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "medicare coverage for dental work before surgery",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to medical-necessity context"
+        },
+        {
+          "query": "medicare part a vs part b dental coverage tooth extraction",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "does medicare cover teeth extractions",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "when does medicare cover tooth extraction for medical necessity",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to medical-necessity context"
+        },
+        {
+          "query": "medicare advantage dental coverage for tooth extractions",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "medicare part a and b dental coverage for extractions",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "low cost dental options for seniors without dental insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies low-cost dental alternatives"
+        },
+        {
+          "query": "do medigap plans offer dental benefits as extra perks",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medigap dental as alternative"
+        },
+        {
+          "query": "medicare medicaid dual eligibility dental coverage for extractions",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid dental as alternative"
+        },
+        {
+          "query": "does medicare cover tooth extractions",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "when is tooth extraction covered by medicare",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "medicare part a and b dental coverage tooth extraction",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "Medicare Part B premium 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "Medicare Part B deductible 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "Medicare Part A deductible 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "Does Original Medicare cover dental services tooth extraction Medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "1-800-MEDICARE phone number Medicare.gov contact",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies how to reach Medicare for help"
+        },
+        {
+          "query": "Medicaid dental coverage for adults varies by state Medicaid dental coverage adults 'tooth extraction' 'Medicaid.gov'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid dental as alternative"
+        },
+        {
+          "query": "Does Medicare cover dental care site:medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "Medigap dental coverage Medicare.gov Medigap dental does Medigap cover dental",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medigap dental as alternative"
+        },
+        {
+          "query": "Find a Medicare plan dental coverage 'find a plan' site:medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies plan-finder action step"
+        },
+        {
+          "query": "Does Medicare cover dental care Medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare tooth extraction coverage"
+        },
+        {
+          "query": "Medicaid dental benefits state Medicaid dental coverage medicaid.gov dental",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid dental as alternative"
+        },
+        {
+          "query": "1-800-MEDICARE contact Medicare.gov '1-800-633-4227' Medicare contact",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies how to reach Medicare for help"
+        }
+      ]
+    },
+    {
+      "promptId": "P09",
+      "userPrompt": "does medicare cover any dental stuff like cleanings or dentures im trying to plan for retirement",
+      "tagged": [
+        {
+          "query": "Medicare dental coverage 2025 cleanings dentures",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare dental coverage"
+        },
+        {
+          "query": "does Medicare cover dental cleanings dentures 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare dental coverage"
+        },
+        {
+          "query": "does original medicare cover dental cleanings and dentures",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare dental coverage"
+        },
+        {
+          "query": "medicare dental coverage exceptions for medical reasons",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to medical-necessity exception"
+        },
+        {
+          "query": "medicare advantage dental coverage for cleanings and dentures",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "does medicare cover dental cleanings or dentures",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare dental coverage"
+        },
+        {
+          "query": "medicare advantage dental coverage options",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "dental insurance for seniors medicare supplement vs advantage",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies senior dental insurance options"
+        },
+        {
+          "query": "medicare part a and b dental coverage limits",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific Medicare part"
+        },
+        {
+          "query": "does medicare cover dental cleanings and dentures",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare dental coverage"
+        },
+        {
+          "query": "dental coverage options for seniors in retirement",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies senior dental insurance options"
+        },
+        {
+          "query": "medicare advantage dental coverage vs original medicare dental coverage",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "Does Medicare cover dental services cleanings dentures Medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare dental coverage"
+        },
+        {
+          "query": "Can I use HSA to pay for dental expenses Medicare HSA rules 'pay for Medicare premiums' 'dental' 'HSA' IRS",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies HSA tax-advantaged route"
+        },
+        {
+          "query": "IRS publication HSA pay for dental expenses 'Health Savings Account' 'qualified medical expenses' dental",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies HSA tax-advantaged route"
+        },
+        {
+          "query": "Can HSA pay Medicare premiums 'Medicare premiums HSA' 'Medigap' 'IRS Publication 969' 'pay Medicare premiums with HSA'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medigap dental coverage"
+        },
+        {
+          "query": "typical Medicare Advantage dental coverage annual limit 'dental benefit limit' 'Medicare Advantage' 'dental limit' 'average'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicare Advantage variant"
+        },
+        {
+          "query": "Medicare dental coverage routine cleanings dentures Medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare dental coverage"
+        },
+        {
+          "query": "Medicare Plan Finder 'find a plan' dental Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies plan-finder tool"
+        },
+        {
+          "query": "Medicaid dental coverage adults 'state' 'dental' 'dual eligible' Medicaid.gov 'dental' 'adult' 'state'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid dental adjacent"
+        },
+        {
+          "query": "Does Medicare cover dental cleanings dentures site:medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of Medicare dental coverage"
+        },
+        {
+          "query": "Medicare Annual Enrollment Period Oct 15 to Dec 7 Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment timing for dental option"
+        },
+        {
+          "query": "Can you use HSA to pay for dental after Medicare enrollment 'can't contribute after Medicare' IRS",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies HSA tax-advantaged route"
+        },
+        {
+          "query": "IRS Publication 969 Health Savings Accounts and Other Tax-Favored Health Plans HSA and Medicare 'Publication 969' 2024 2025 2026 site:irs.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies HSA tax-advantaged route"
+        },
+        {
+          "query": "Do medigap policies cover dental Medicare.gov 'Medigap dental' 'Medicare supplement' 'dental'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medigap dental coverage"
+        }
+      ]
+    },
+    {
+      "promptId": "P10",
+      "userPrompt": "how do they figure out income for obamacare im self employed and im confused",
+      "tagged": [
+        {
+          "query": "how is income calculated for ACA Obamacare self employed 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "what counts as income for ACA self employed",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of ACA income calc for self-employed"
+        },
+        {
+          "query": "self employed ACA Obamacare MAGI calculation net profit deductions health insurance premium 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "self employed ACA Obamacare MAGI calculation net profit deductions health insurance premium",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "self employed ACA Obamacare MAGI calculation net profit deductions 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "how to estimate self-employed income for obamacare health insurance marketplace",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "self-employed business deductions for obamacare income calculation",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "how is income calculated for obamacare self-employed MAGI",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "how to report self employed income for healthcare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies how to report or estimate"
+        },
+        {
+          "query": "how is income calculated for obamacare for self employed",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "what is MAGI for obamacare self employed",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "deductions for self employed obamacare income calculation",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "how to calculate income for obamacare self-employed MAGI",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized to ACA"
+        },
+        {
+          "query": "ACA income calculation for self-employed schedule c line",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Schedule C line item"
+        },
+        {
+          "query": "site:healthcare.gov self-employed income Marketplace estimated income ACA",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Obamacare canonicalized as marketplace"
+        },
+        {
+          "query": "HealthCare.gov MAGI definition what counts for Marketplace income self-employed",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA income canonicalized as MAGI"
+        },
+        {
+          "query": "How Marketplace calculates income MAGI healthcare.gov self-employed",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA income canonicalized as MAGI"
+        },
+        {
+          "query": "healthcare.gov what deductions can I subtract from income for Marketplace MAGI deductions list",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA income canonicalized as MAGI"
+        },
+        {
+          "query": "healthcare.gov estimate income tool how to estimate income marketplace",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies how to report or estimate"
+        },
+        {
+          "query": "healthcare.gov what documents to have when applying income information 'what to bring' 'documents' marketplace",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies documents to gather"
+        }
+      ]
+    },
+    {
+      "promptId": "P11",
+      "userPrompt": "i keep seeing magi on my marketplace application what does it actually include",
+      "tagged": [
+        {
+          "query": "MAGI marketplace application what does it include",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "what income is included in MAGI for marketplace application",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "MAGI marketplace health insurance what does it include",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "what is MAGI for marketplace health insurance",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "MAGI marketplace exclusions",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "what is MAGI for marketplace health insurance application",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "MAGI calculation for health insurance subsidies",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "what income is included in MAGI for marketplace",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "difference between AGI and MAGI for health insurance marketplace",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "what is MAGI for health insurance marketplace application",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "common income sources included in MAGI for ACA",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "MAGI vs AGI for health insurance marketplace",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "compares MAGI vs AGI definitions"
+        },
+        {
+          "query": "how does healthcare.gov ask for income on the application 2025 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies application UX/workflow"
+        },
+        {
+          "query": "does marketplace application ask for AGI or individual income sources",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies application UX/workflow"
+        },
+        {
+          "query": "marketplace application income categories list 2025",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies application UX/workflow"
+        }
+      ]
+    },
+    {
+      "promptId": "P12",
+      "userPrompt": "do i count my 401k withdrawals when calculating my income for aca subsidies",
+      "tagged": [
+        {
+          "query": "401k withdrawals count as income for ACA subsidies MAGI",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA subsidy canonicalized via MAGI/PTC"
+        },
+        {
+          "query": "do 401k withdrawals count as income for ACA subsidies MAGI",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA subsidy canonicalized via MAGI/PTC"
+        },
+        {
+          "query": "is 401k distribution included in ACA subsidy income calculation",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 401k counting toward ACA income"
+        },
+        {
+          "query": "MAGI for ACA subsidy calculation 401k withdrawal",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA subsidy canonicalized via MAGI/PTC"
+        },
+        {
+          "query": "traditional vs roth 401k withdrawal ACA subsidy income",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Roth vs traditional 401k"
+        },
+        {
+          "query": "is early 401k withdrawal penalty included in ACA MAGI calculation",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA subsidy canonicalized via MAGI/PTC"
+        },
+        {
+          "query": "ACA subsidy income calculation traditional vs roth 401k withdrawals",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Roth vs traditional 401k"
+        },
+        {
+          "query": "does non-taxable social security count for ACA MAGI subsidy calculation",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "extends scope to Social Security income"
+        },
+        {
+          "query": "difference between SSDI and SSI for ACA MAGI income",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "extends scope to Social Security income"
+        },
+        {
+          "query": "IRS form 1040 line for penalty on early withdrawal of savings vs 10% retirement penalty",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to early withdrawal penalty handling"
+        },
+        {
+          "query": "is 10% early withdrawal penalty for 401k deductible for ACA MAGI calculation",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to early withdrawal penalty handling"
+        },
+        {
+          "query": "is roth 401k withdrawal included in MAGI for ACA subsidies",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Roth vs traditional 401k"
+        },
+        {
+          "query": "ACA subsidy income calculation rules for retirement distributions",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 401k counting toward ACA income"
+        },
+        {
+          "query": "is traditional 401k withdrawal included in MAGI for ACA subsidies",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Roth vs traditional 401k"
+        },
+        {
+          "query": "are 401k loans counted as income for ACA subsidies",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to 401k loans specifically"
+        },
+        {
+          "query": "does 401k early withdrawal penalty affect ACA MAGI calculation",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to early withdrawal penalty handling"
+        },
+        {
+          "query": "are non-qualified Roth 401k distributions included in ACA MAGI",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Roth vs traditional 401k"
+        },
+        {
+          "query": "Does 401(k) distribution count as income for premium tax credit MAGI site:healthcare.gov",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA subsidy canonicalized via MAGI/PTC"
+        },
+        {
+          "query": "MAGI premium tax credit healthcare.gov 'MAGI' 'premium tax credit' 401(k)",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA subsidy canonicalized via MAGI/PTC"
+        },
+        {
+          "query": "penalty on early withdrawal included in MAGI 'penalty on early withdrawal' 'MAGI' 'ACA' 'premium tax credit' 'healthcare.gov'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to early withdrawal penalty handling"
+        },
+        {
+          "query": "Roth 401(k) distributions taxable? 'Roth 401(k) qualified distributions' IRS",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Roth vs traditional 401k"
+        },
+        {
+          "query": "IRS Roth 401(k) qualified distribution tax-free 'Roth 401(k) qualified distribution' site:irs.gov",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Roth vs traditional 401k"
+        },
+        {
+          "query": "healthcare.gov report income changes 'report changes' 'advance payments of premium tax credit' 'update income'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies updating Marketplace after withdrawal"
+        },
+        {
+          "query": "Does 401(k) withdrawal count as income for ACA premium tax credit site:healthcare.gov",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA subsidy canonicalized via MAGI/PTC"
+        },
+        {
+          "query": "How do I report income changes to Marketplace when my income changes healthcare.gov report income change advance premium tax credit",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies updating Marketplace after withdrawal"
+        },
+        {
+          "query": "Qualified charitable distribution IRA not included in gross income IRS QCD",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "extends scope to IRA/QCD rules"
+        },
+        {
+          "query": "Does 401(k) withdrawal count as income for ACA premium tax credit",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "ACA subsidy canonicalized via MAGI/PTC"
+        },
+        {
+          "query": "Are 401(k) loans taxable income IRS 401k loan repayment not income",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to 401k loans specifically"
+        }
+      ]
+    },
+    {
+      "promptId": "P13",
+      "userPrompt": "im about to turn 26 and get kicked off my parents plan what are my options",
+      "tagged": [
+        {
+          "query": "health insurance options when turning 26 lose parents plan 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of options after aging out"
+        },
+        {
+          "query": "health insurance options when turning 26 losing parents plan 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of options after aging out"
+        },
+        {
+          "query": "health insurance options turning 26 losing parents plan 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of options after aging out"
+        },
+        {
+          "query": "health insurance options turning 26 losing parent's coverage",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of options after aging out"
+        },
+        {
+          "query": "catastrophic health plans for under 30 years old",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        },
+        {
+          "query": "special enrollment period health insurance turning 26 deadline",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment window mechanics"
+        },
+        {
+          "query": "COBRA vs Marketplace vs employer health insurance after 26",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA as continuation option"
+        },
+        {
+          "query": "Medicaid eligibility turning 26",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP path"
+        },
+        {
+          "query": "health insurance catastrophic plan deductible 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        },
+        {
+          "query": "states that allow young adults to stay on parents health insurance past 26",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "New Jersey health insurance age 31 extension",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "New York Young Adult Option age 29 health insurance",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "Florida health insurance age 30 extension",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "how to get health insurance after turning 26 and losing parents coverage",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of options after aging out"
+        },
+        {
+          "query": "options for health insurance when turning 26 marketplace medicaid COBRA",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA as continuation option"
+        },
+        {
+          "query": "special enrollment period turning 26 deadline",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment window mechanics"
+        },
+        {
+          "query": "eligibility for subsidies marketplace insurance 26 years old",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidy-eligibility analysis"
+        },
+        {
+          "query": "health insurance options after turning 26 USA",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of options after aging out"
+        },
+        {
+          "query": "COBRA vs Marketplace vs Medicaid turning 26",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA as continuation option"
+        },
+        {
+          "query": "how to apply for health insurance after aging out of parents plan",
+          "variant": "Follow-up",
+          "secondary": null,
+          "reasoning": "next step after eligibility decision"
+        },
+        {
+          "query": "Special Enrollment Period turning 26 rules and deadlines",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment window mechanics"
+        },
+        {
+          "query": "states that allow staying on parents health insurance after 26 list and criteria",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "proof of loss of coverage documents for health insurance SEP turning 26",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment window mechanics"
+        },
+        {
+          "query": "Marketplace subsidies eligibility for 26 year olds independent vs dependent",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidy-eligibility analysis"
+        },
+        {
+          "query": "HealthCare.gov turning 26 parents health insurance options special enrollment period",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment window mechanics"
+        },
+        {
+          "query": "HealthCare.gov job based coverage affordable value Marketplace savings employer coverage",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies employer-plan alternative"
+        },
+        {
+          "query": "HealthCare.gov pre-existing conditions Marketplace plans can't deny coverage",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies pre-existing-condition rule"
+        },
+        {
+          "query": "turning 26 lose parents' health insurance when does coverage end age 26 end of month site:healthcare.gov",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: when coverage ends"
+        },
+        {
+          "query": "COBRA coverage aging out at 26 duration dependent loses coverage turning 26 COBRA 36 months site:dol.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA as continuation option"
+        },
+        {
+          "query": "special enrollment period losing parent coverage turning 26 healthcare.gov 'turn 26' 'special enrollment' 'lose coverage'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment window mechanics"
+        },
+        {
+          "query": "special enrollment period 60 days before or after losing coverage healthcare.gov '60 days' 'turn 26' 'special enrollment period' 'before' 'after'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment window mechanics"
+        },
+        {
+          "query": "Medicaid eligibility for adults after aging out of parent's plan 'turn 26' apply Medicaid healthcare.gov 'apply anytime' 'income eligibility' 'Medicaid' 'CHIP'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP path"
+        },
+        {
+          "query": "apply for Medicaid Healthcare.gov 'apply anytime' 'Medicaid eligibility' 'income' 'turn 26' 'young adult'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP path"
+        },
+        {
+          "query": "Medicaid and CHIP - HealthCare.gov 'apply anytime' 'eligibility' 'Medicaid' 'CHIP' 'how to apply'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP path"
+        },
+        {
+          "query": "Medicaid and CHIP HealthCare.gov 'apply anytime' site:healthcare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP path"
+        },
+        {
+          "query": "HealthCare.gov turning 26 lose parent's plan when does coverage end 26th birthday end of month",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: when coverage ends"
+        },
+        {
+          "query": "How long to elect COBRA 60 days elect 45 days to pay first premium DOL EBSA '60 days to elect COBRA' '45 days to pay'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA as continuation option"
+        },
+        {
+          "query": "Medicaid eligibility apply anytime HealthCare.gov 'Medicaid' 'apply anytime' 'turning 26'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP path"
+        },
+        {
+          "query": "catastrophic health plans available under 30 HealthCare.gov 'catastrophic plan under 30' 'what is catastrophic plan'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        },
+        {
+          "query": "Catastrophic plans HealthCare.gov 'available to people under 30'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        },
+        {
+          "query": "What happens when you turn 26 insurance dependent lose coverage age 26 Healthcare.gov COBRA special enrollment period",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA as continuation option"
+        },
+        {
+          "query": "Healthcare.gov special enrollment period 60 days before or after qualifying life event 'loss of health coverage' 'turning 26' site:healthcare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment window mechanics"
+        },
+        {
+          "query": "Catastrophic health plan eligibility under 30 healthcare.gov 'catastrophic plan under 30' 'turning 26'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        },
+        {
+          "query": "Catastrophic plans who qualifies 'under 30' 'Healthcare.gov catastrophic plan'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        }
+      ]
+    },
+    {
+      "promptId": "P14",
+      "userPrompt": "my daughter is turning 26 next month and needs her own insurance what do we do",
+      "tagged": [
+        {
+          "query": "Medicaid eligibility for 26 year olds by state",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid as option"
+        },
+        {
+          "query": "health insurance options turning 26 losing parent coverage 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of what to do at 26"
+        },
+        {
+          "query": "special enrollment period for turning 26 health insurance marketplace",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies SEP mechanics"
+        },
+        {
+          "query": "health insurance options turning 26 losing parents coverage 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of what to do at 26"
+        },
+        {
+          "query": "when does health insurance coverage end after turning 26 parent's plan",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of what to do at 26"
+        },
+        {
+          "query": "how to apply for health insurance after aging out of parent's plan at 26",
+          "variant": "Follow-up",
+          "secondary": null,
+          "reasoning": "next step after determining option"
+        },
+        {
+          "query": "turning 26 health insurance options ACA special enrollment period",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies SEP mechanics"
+        },
+        {
+          "query": "health insurance options when turning 26 rules and deadlines",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of what to do at 26"
+        },
+        {
+          "query": "does coverage end on 26th birthday or end of month",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: when coverage ends"
+        },
+        {
+          "query": "COBRA vs ACA marketplace for 26 year old",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA continuation"
+        },
+        {
+          "query": "COBRA coverage for child turning 26",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA continuation"
+        },
+        {
+          "query": "how to get health insurance after aging out of parents plan at 26",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of what to do at 26"
+        },
+        {
+          "query": "health insurance options for daughter turning 26 ACA rules",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of what to do at 26"
+        },
+        {
+          "query": "healthcare.gov stay on parents plan until 26 dependent age 26 rules",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: dependent rule"
+        },
+        {
+          "query": "healthcare.gov special enrollment period losing job-based coverage \"60 days\" \"expects to lose\"",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies SEP mechanics"
+        },
+        {
+          "query": "how much does COBRA cost percentage of premium 102% 150% DOL",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA continuation"
+        },
+        {
+          "query": "healthcare.gov dependent turns 26 special enrollment period 60 days losing coverage",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies SEP mechanics"
+        }
+      ]
+    },
+    {
+      "promptId": "P15",
+      "userPrompt": "i age out of my parents insurance in a few months whats my cheapest option",
+      "tagged": [
+        {
+          "query": "cheapest health insurance options when aging off parents plan 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "Medicaid eligibility for young adults by state",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid path"
+        },
+        {
+          "query": "cheapest health insurance options after aging out of parents plan 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "cheapest health insurance for young adults aging out of parents insurance",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "health insurance age out of parents plan options cheap",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "catastrophic health plans for young adults cost and eligibility",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        },
+        {
+          "query": "ACA subsidies for young adults aging out of coverage",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidy mechanics"
+        },
+        {
+          "query": "states allowing health insurance coverage past age 26 on parents plan",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "ACA subsidy extension status 2025 2026 Inflation Reduction Act",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidy mechanics"
+        },
+        {
+          "query": "New Jersey health insurance age 31 parent plan requirements",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "cheapest health insurance for 26 year old with low income in non-expansion state",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Medicaid expansion status"
+        },
+        {
+          "query": "Illinois health insurance age 30 parent plan requirements",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "Florida health insurance age 30 parent plan requirements",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "health insurance options for 26 year olds in USA",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "what age do you age out of parents health insurance USA",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: at what age"
+        },
+        {
+          "query": "catastrophic health plans for young adults cost vs marketplace plans",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        },
+        {
+          "query": "ACA marketplace subsidies for young adults 26",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidy mechanics"
+        },
+        {
+          "query": "age out of parents health insurance cheapest options",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "Florida health insurance extension until age 30 requirements",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "NJ age 31 health insurance extension law cost",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "does being a tax dependent affect ACA marketplace subsidies for age 26 adults",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidy mechanics"
+        },
+        {
+          "query": "NY Age 29 law eligibility and cost vs marketplace",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "states with age 29 or 30 health insurance extension laws",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "health insurance options for 26 year olds aging out",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "cheapest health insurance for 26 year olds marketplace vs private",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "ACA catastrophic plans eligibility and cost",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan option"
+        },
+        {
+          "query": "age out of parents health insurance options cheap",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "medicaid eligibility for young adults aging out of parents insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid path"
+        },
+        {
+          "query": "Medicaid expansion states 2026 map",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid path"
+        },
+        {
+          "query": "health insurance options for young adults in non-expansion states low income",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state extension laws"
+        },
+        {
+          "query": "cheapest health insurance for 26 year old $0 income no medicaid expansion",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid path"
+        },
+        {
+          "query": "Can I stay on parent's health insurance until age 26 Affordable Care Act",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "Medicaid eligibility low income adults how to apply healthcare.gov Medicaid expansion eligibility",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid path"
+        },
+        {
+          "query": "HealthCare.gov special enrollment period loss of coverage 60 days before 60 days after",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies SEP mechanics"
+        },
+        {
+          "query": "Kaiser Family Foundation short-term limited duration plans risks",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies short-term plan alternative"
+        },
+        {
+          "query": "can I stay on parents health insurance until 26 healthcare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of cheapest age-out option"
+        },
+        {
+          "query": "Special Enrollment Period losing health coverage healthcare.gov 'loss of coverage' 'special enrollment period'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies SEP mechanics"
+        },
+        {
+          "query": "Who is eligible for Medicaid healthcare.gov 'Medicaid eligibility' 'apply'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid path"
+        },
+        {
+          "query": "premium tax credit healthcare.gov 'premium tax credit' 'how it works'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidy mechanics"
+        }
+      ]
+    },
+    {
+      "promptId": "P16",
+      "userPrompt": "im a full-time uber driver with no employer plan how do i get health insurance",
+      "tagged": [
+        {
+          "query": "health insurance options for self-employed gig workers Uber drivers 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Uber driver canonicalized as self-employed"
+        },
+        {
+          "query": "ACA marketplace health insurance self-employed 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Uber driver canonicalized as self-employed"
+        },
+        {
+          "query": "health insurance for uber drivers no employer plan",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "how to estimate income for health insurance self-employed Uber driver",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Uber driver canonicalized as self-employed"
+        },
+        {
+          "query": "Uber health insurance partnerships Stride Health",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Stride Health partner program"
+        },
+        {
+          "query": "ACA marketplace for gig workers guide",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "Medicaid eligibility for self-employed Uber drivers by state",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP option"
+        },
+        {
+          "query": "Independent Drivers Guild health insurance benefits",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "documentation needed for 1099 workers for ACA application checklist",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Uber driver canonicalized as self-employed"
+        },
+        {
+          "query": "states with health insurance stipends for gig workers besides California",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to California Prop 22 stipend"
+        },
+        {
+          "query": "Freelancers Union health insurance options for rideshare drivers",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "Massachusetts gig worker health insurance benefits 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state-specific gig program"
+        },
+        {
+          "query": "health insurance options for uber drivers no employer plan",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "stride health uber driver insurance partnership",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Stride Health partner program"
+        },
+        {
+          "query": "how to apply for health insurance as self employed uber driver marketplace",
+          "variant": "Follow-up",
+          "secondary": null,
+          "reasoning": "next step after eligibility"
+        },
+        {
+          "query": "uber driver health insurance stipend or assistance programs",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "massachusetts gig worker health insurance benefits 2024 uber settlement",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state-specific gig program"
+        },
+        {
+          "query": "states with health insurance stipends for gig workers like california prop 22",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to California Prop 22 stipend"
+        },
+        {
+          "query": "washington state gig worker health insurance benefits uber",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state-specific gig program"
+        },
+        {
+          "query": "uber pro health insurance benefits current 2024 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "how do uber drivers get health insurance without employer plan",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "Stride Health Uber driver insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Stride Health partner program"
+        },
+        {
+          "query": "health insurance marketplace for self-employed uber drivers",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Uber driver canonicalized as self-employed"
+        },
+        {
+          "query": "uber health insurance partnerships for drivers",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "Medicaid eligibility for self-employed uber drivers",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP option"
+        },
+        {
+          "query": "California Prop 22 health care subsidy requirements for Uber drivers",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to California Prop 22 stipend"
+        },
+        {
+          "query": "New York Black Car Fund health insurance benefits for drivers",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state-specific gig program"
+        },
+        {
+          "query": "how to apply for health insurance through Uber Pro Stride Health app steps",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Stride Health partner program"
+        },
+        {
+          "query": "Washington state gig worker health insurance benefits 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state-specific gig program"
+        },
+        {
+          "query": "HealthCare.gov self-employed health coverage marketplace special enrollment loss income Medicaid 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP option"
+        },
+        {
+          "query": "Uber California healthcare stipend active time 2026 Prop 22 official Uber",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to California Prop 22 stipend"
+        },
+        {
+          "query": "HealthCare.gov Medicaid CHIP apply any time no open enrollment",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid/CHIP option"
+        },
+        {
+          "query": "site:cms.gov 2027 Marketplace open enrollment November 1 December 15 2026 CMS final rule",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "IRS self-employed health insurance deduction premiums 2026 Publication 535",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "Uber driver canonicalized as self-employed"
+        },
+        {
+          "query": "HealthCare.gov cost sharing reductions silver plan lower out of pocket costs official",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies/PTC mechanics"
+        },
+        {
+          "query": "health insurance for Uber drivers site:healthcare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "Uber Stride Health partnership drivers health insurance Stride site:stridehealth.com",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Stride Health partner program"
+        },
+        {
+          "query": "premium tax credit reconcile on tax return healthcare.gov premium tax credit reconciliation",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies/PTC mechanics"
+        },
+        {
+          "query": "COBRA eligibility independent contractor when eligible COBRA overview site:dol.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA option"
+        },
+        {
+          "query": "catastrophic health plan who qualifies healthcare.gov 'catastrophic' 'open enrollment'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to catastrophic plan"
+        },
+        {
+          "query": "healthcare.gov marketplace how to enroll subsidies premium tax credits modified adjusted gross income MAGI",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies/PTC mechanics"
+        },
+        {
+          "query": "How is MAGI calculated for premium tax credit IRS or HealthCare.gov MAGI definition premium tax credit",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies/PTC mechanics"
+        },
+        {
+          "query": "Open enrollment period 2026 HealthCare.gov dates 2026 open enrollment",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "IRS self-employment tax deduction half of self-employment tax deduction 2026 IRS",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies tax-deduction angle"
+        },
+        {
+          "query": "HRSA community health centers sliding fee scale find a health center",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies community health center fallback"
+        },
+        {
+          "query": "Health Insurance Marketplace how to apply subsidies advance premium tax credit healthcare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies/PTC mechanics"
+        },
+        {
+          "query": "HRSA Health Centers find a health center sliding scale community health centers HRSA",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies community health center fallback"
+        },
+        {
+          "query": "Can I stay on my parent's health insurance until 26 healthcare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "healthcare.gov get help applying navigators help in-person assistance 'help applying' 'find local help' healthcare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies in-person help finding plan"
+        },
+        {
+          "query": "Uber driver health insurance benefits 2026 'Uber Health' 'Uber driver insurance benefits' 'driver benefits' 'partnerships'",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        },
+        {
+          "query": "Does Uber offer health insurance to drivers site:uber.com 'health' 'drivers' 'benefits' 'insurance' 'help'",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of how Uber driver gets insurance"
+        }
+      ]
+    },
+    {
+      "promptId": "P17",
+      "userPrompt": "i drive for doordash and uber whats the best option for health coverage for someone like me",
+      "tagged": [
+        {
+          "query": "best health insurance options for gig workers DoorDash Uber drivers 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "ACA marketplace health insurance gig economy workers 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "health insurance options for independent contractors 2024 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "best health insurance for doordash and uber drivers",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "best health insurance options for gig workers DoorDash Uber drivers 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "ACA marketplace health insurance gig economy workers 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "health insurance options for doordash and uber drivers",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "health insurance for independent contractors 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "ACA health insurance for gig workers self-employed subsidies",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies extension status"
+        },
+        {
+          "query": "DoorDash Uber health insurance partnerships",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "Stride Health DoorDash Uber partnership",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Stride Health partner program"
+        },
+        {
+          "query": "ACA enhanced subsidies extension 2026 status",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies extension status"
+        },
+        {
+          "query": "Health sharing plans vs ACA for gig workers 2026 pros cons",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies health-sharing alternative"
+        },
+        {
+          "query": "Freelancers Union health insurance plans 2026 benefits",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies association-plan option"
+        },
+        {
+          "query": "Best professional associations for health insurance for gig workers",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies association-plan option"
+        },
+        {
+          "query": "how to get health insurance as a gig worker uber doordash",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "doordash uber driver health insurance partnerships stride health",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Stride Health partner program"
+        },
+        {
+          "query": "Medicaid eligibility for gig workers 1099 income",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid path"
+        },
+        {
+          "query": "Massachusetts Portable Health Benefit Fund for Uber Lyft drivers eligibility 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state gig program"
+        },
+        {
+          "query": "Prop 22 health insurance stipend proof of coverage requirements DoorDash Uber",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to California Prop 22"
+        },
+        {
+          "query": "DoorDash Occupational Accident Insurance vs health insurance details",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies occupational accident product"
+        },
+        {
+          "query": "how to calculate net self-employment income for ACA health insurance application 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "gig worker canonicalized as self-employed"
+        },
+        {
+          "query": "ACA Special Enrollment Period for gig workers income change or starting job",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "ACA health insurance for gig workers self employed",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "Stride Health DoorDash Uber partnership benefits",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Stride Health partner program"
+        },
+        {
+          "query": "Medicaid eligibility for gig workers by state",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid path"
+        },
+        {
+          "query": "California Prop 22 health insurance stipend 2025 amounts and eligibility",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to California Prop 22"
+        },
+        {
+          "query": "Massachusetts Portable Health Benefit Fund Uber Lyft details 2024 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state gig program"
+        },
+        {
+          "query": "Seattle App-Based Worker Healthcare Compensation Ordinance details",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state gig program"
+        },
+        {
+          "query": "Washington state gig worker health insurance benefits 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state gig program"
+        },
+        {
+          "query": "health insurance stipends for gig workers by state 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state gig program"
+        },
+        {
+          "query": "health insurance options for gig workers United States 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "Uber driver benefits occupational accident insurance drivers medical expenses 'Uber' 'occupational accident' policy 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies occupational accident product"
+        },
+        {
+          "query": "DoorDash health insurance for Dashers 'health' 'benefits' '2026' 'DoorDash' 'health insurance'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to DoorDash-specific benefits"
+        },
+        {
+          "query": "DoorDash insurance Dasher 'occupational accident insurance' 'help' site:help.doordash.com",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies occupational accident product"
+        },
+        {
+          "query": "HealthCare.gov premium tax credit 2026 changes 2026 'premium tax credit' '2026' 'Healthcare.gov'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies extension status"
+        },
+        {
+          "query": "COBRA continuation coverage cost 2026 'COBRA' 'how much does COBRA cost' 'Department of Labor'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA option"
+        },
+        {
+          "query": "Self-employed health insurance deduction IRS 2026 'self-employed health insurance' deduction 2026 'Form 1040'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies tax-deduction angle"
+        },
+        {
+          "query": "health insurance options for gig workers 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "self-employed health insurance deduction IRS 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies tax-deduction angle"
+        },
+        {
+          "query": "healthcare.gov special enrollment period qualifying life events 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "DoorDash health insurance for drivers 2026 benefits for delivery drivers DoorDash insurance coverage 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to DoorDash-specific benefits"
+        },
+        {
+          "query": "short-term health insurance not recommended ACA not comprehensive 2026 HealthCare.gov short-term plans",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies short-term plan alternative"
+        },
+        {
+          "query": "Health Savings Account HDHP Marketplace 2026 compatible plans HSA contribution limits 2026 IRS",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies tax-deduction angle"
+        },
+        {
+          "query": "health insurance options for gig workers 2026 ACA marketplace subsidies eligibility income calculator",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies subsidies extension status"
+        },
+        {
+          "query": "Uber driver benefits health insurance 2026 'Uber drivers' health benefits' 'stipend' 'California' 2026 official",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best gig-worker option"
+        },
+        {
+          "query": "Uber California healthcare stipend 2026 'Prop 22 healthcare stipend' Uber help 'stipend' '2026' 'drivers'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to California Prop 22"
+        }
+      ]
+    },
+    {
+      "promptId": "P18",
+      "userPrompt": "im a 1099 freelancer with no benefits how do i get covered and can i deduct the cost",
+      "tagged": [
+        {
+          "query": "1099 freelancer self-employed health insurance options 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 1099 health insurance + deduction"
+        },
+        {
+          "query": "self-employed health insurance deduction 2025 IRS rules",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "health insurance options for 1099 freelancers USA",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 1099 health insurance + deduction"
+        },
+        {
+          "query": "self employed 1099 freelancer health insurance options 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 1099 health insurance + deduction"
+        },
+        {
+          "query": "self employed health insurance tax deduction 2025 rules",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "how to get dental and vision insurance as a freelancer",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies dental/vision deduction"
+        },
+        {
+          "query": "marketplace health insurance for self-employed subsidies eligibility",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 1099 health insurance + deduction"
+        },
+        {
+          "query": "can freelancers deduct disability and life insurance premiums",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies disability/life insurance deduction"
+        },
+        {
+          "query": "self-employed health insurance deduction rules 2024 2025",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "retirement plan options for self-employed freelancers deductibility",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies retirement-account deduction"
+        },
+        {
+          "query": "how to report self-employed retirement contributions on tax return",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 1099 health insurance + deduction"
+        },
+        {
+          "query": "SEP IRA vs Solo 401k vs SIMPLE IRA for freelancers tax benefits",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies retirement-account deduction"
+        },
+        {
+          "query": "health insurance options for freelancers and independent contractors in US",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 1099 health insurance + deduction"
+        },
+        {
+          "query": "how do 1099 freelancers get health insurance coverage and can they deduct costs",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "IRS self-employed health insurance deduction rules 2024 2025 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "deducting dental vision life and disability insurance for self-employed",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies disability/life insurance deduction"
+        },
+        {
+          "query": "is life insurance tax deductible for self-employed freelancers IRS",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies disability/life insurance deduction"
+        },
+        {
+          "query": "is self-employed disability insurance tax deductible IRS",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies disability/life insurance deduction"
+        },
+        {
+          "query": "IRS Form 7206 instructions business name vs personal name for health insurance deduction",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Form 7206 specifics"
+        },
+        {
+          "query": "where to get disability and life insurance for freelancers US",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies disability/life insurance deduction"
+        },
+        {
+          "query": "deducting health insurance premiums as a freelancer 1099",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "how to get health insurance as a freelancer no benefits",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 1099 health insurance + deduction"
+        },
+        {
+          "query": "self-employed health insurance tax deduction rules 1099",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "disability and dental insurance for freelancers tax deductible",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies disability/life insurance deduction"
+        },
+        {
+          "query": "Self-employed health insurance deduction IRS",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "Health insurance deduction for self-employed - IRS 'Self-employed health insurance deduction' site:irs.gov",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "HealthCare.gov special enrollment period qualify 'when you can enroll' 'life events' 'open enrollment'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-period mechanics"
+        },
+        {
+          "query": "self-employed health insurance deduction limited to net profit 'cannot exceed your earned income' IRS 'Form 7206' 'limitations'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Form 7206 specifics"
+        },
+        {
+          "query": "COBRA continuation coverage 'how to get' Department of Labor 'COBRA' 'eligibility'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA option"
+        },
+        {
+          "query": "Self-employed health insurance deduction IRS 2026 'self-employed health insurance' IRS",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "healthcare.gov how to buy health insurance as self-employed 'freelancer' 'independent contractor' 'Marketplace'",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 1099 health insurance + deduction"
+        },
+        {
+          "query": "Premium Tax Credit and self-employed health insurance deduction IRS Publication 974 'self-employed' 'premium tax credit' 'deduction'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies PTC interaction with deduction"
+        },
+        {
+          "query": "Department of Labor COBRA information 'COBRA continuation coverage' 'dol.gov'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies COBRA option"
+        },
+        {
+          "query": "Medicaid eligibility how to apply medicaid.gov 'who qualifies' 'how to apply' 'income limits'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid option"
+        },
+        {
+          "query": "Medicaid.gov 'Apply for Medicaid' 'how to apply' 'who qualifies' 'Medicaid eligibility' site:medicaid.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid option"
+        },
+        {
+          "query": "Does self-employed health insurance deduction reduce self-employment tax 'one-half of self-employment tax' 'net earnings' 'IRS'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies SE tax interaction"
+        },
+        {
+          "query": "IRS self-employed health insurance deduction rules 2026 site:irs.gov",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "Self-employed health insurance deduction IRS 'self-employed health insurance' site:irs.gov",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "deduct cost canonicalized as SE health deduction"
+        },
+        {
+          "query": "Medicaid eligibility HealthCare.gov 'Am I eligible' site:healthcare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid option"
+        },
+        {
+          "query": "S corporation more-than-2% shareholder health insurance premiums included in wages IRS '2% shareholder' 'health insurance' 'wages' site:irs.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies S-corp shareholder rule"
+        },
+        {
+          "query": "Health Savings Account (HSA) contribution limits 2026 IRS 'HSA' site:irs.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies HSA contribution rules"
+        }
+      ]
+    },
+    {
+      "promptId": "P19",
+      "userPrompt": "im 70 in los angeles and need a medicare advantage plan whats the best option",
+      "tagged": [
+        {
+          "query": "best Medicare Advantage plans Los Angeles 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "top rated Medicare Advantage plans Los Angeles County 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "top rated medicare advantage plans 2026 california",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "medicare advantage plan rankings los angeles 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "best medicare advantage plans los angeles 2026 ratings",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "Medicare.gov star ratings Los Angeles 2026 plans",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to CMS star rating criterion"
+        },
+        {
+          "query": "best medicare advantage plans for seniors over 70 Los Angeles 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "medicare advantage plans UCLA health 2026 network",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific LA health system network"
+        },
+        {
+          "query": "2026 medicare advantage plans covering Cedars-Sinai Los Angeles",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific LA health system network"
+        },
+        {
+          "query": "Keck Medicine USC medicare advantage plans 2026 list",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific LA health system network"
+        },
+        {
+          "query": "SCAN Health Plan 2026 benefits Los Angeles vs Kaiser Senior Advantage",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific MA carrier"
+        },
+        {
+          "query": "top rated Medicare Advantage plans Los Angeles CMS star ratings 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to CMS star rating criterion"
+        },
+        {
+          "query": "Medicare Advantage plan comparison Los Angeles for seniors",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "best medicare advantage plans Los Angeles 2024 2025 star ratings",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to CMS star rating criterion"
+        },
+        {
+          "query": "Kaiser Permanente Medicare Advantage Los Angeles reviews 2025",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific MA carrier"
+        },
+        {
+          "query": "UnitedHealthcare vs Humana vs Blue Shield Medicare Advantage Los Angeles",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific MA carrier"
+        },
+        {
+          "query": "Medicare Advantage plans Los Angeles 2026 with UCLA and Cedars-Sinai access",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific LA health system network"
+        },
+        {
+          "query": "highest rated Medicare Advantage plans for prescription drugs Los Angeles 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to benefit category"
+        },
+        {
+          "query": "best medicare advantage plans Los Angeles 2026 for dental and vision benefits",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to benefit category"
+        },
+        {
+          "query": "Medicare Part B giveback plans Los Angeles 2026 list",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Part B giveback plans"
+        },
+        {
+          "query": "top rated medicare advantage plans 2025 los angeles",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "best medicare advantage plans in los angeles 2026 ratings",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "CMS star ratings medicare advantage plans Los Angeles 2025 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to CMS star rating criterion"
+        },
+        {
+          "query": "benefits of top medicare advantage plans in los angeles 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "Medicare Plan Finder Medicare Advantage Los Angeles County 2026 official",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicare Plan Finder tool"
+        },
+        {
+          "query": "Medicare when can I join switch Medicare Advantage plan official Annual Enrollment Period October 15 December 7 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "California Medicare Supplement guaranteed issue birthday rule official Department of Insurance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medigap alternative"
+        },
+        {
+          "query": "2026 Kaiser Permanente Senior Advantage Los Angeles Medicare star rating",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific MA carrier"
+        },
+        {
+          "query": "Medicare Special Needs Plans dual eligible Medicaid Medicare official",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies SNP alternative path"
+        },
+        {
+          "query": "Los Angeles HICAP Medicare counseling phone official",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies HICAP counseling resource"
+        },
+        {
+          "query": "Medicare Plan Finder Medicare.gov 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicare Plan Finder tool"
+        },
+        {
+          "query": "Medicare enrollment periods 2026 AEP OEP SEP Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "Medicare Advantage enrollment periods 2026 CMS Jan 1 Mar 31 Annual Enrollment Period Oct 15 Dec 7",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "Medicare.gov Plan Finder how to use 'Find & compare plans' 2026 Medicare.gov Plan Finder",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicare Plan Finder tool"
+        },
+        {
+          "query": "KFF medigap vs medicare advantage 'Kaiser Family Foundation' 'Medigap vs Medicare Advantage' 2025 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific MA carrier"
+        },
+        {
+          "query": "Medicare.gov Find & compare plans 'Find & compare' Medicare plan finder official page 'plan-compare' 'find plans' 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicare Plan Finder tool"
+        },
+        {
+          "query": "Medicare Advantage overview Medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan LA"
+        },
+        {
+          "query": "Medicare Annual Enrollment Period Oct 15 Dec 7 Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        }
+      ]
+    },
+    {
+      "promptId": "P20",
+      "userPrompt": "my mom in california just turned 65 and we need to pick a medicare advantage plan",
+      "tagged": [
+        {
+          "query": "best Medicare Advantage plans California 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan CA at 65"
+        },
+        {
+          "query": "how to choose Medicare Advantage plan tips 2025",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies selection-process guidance"
+        },
+        {
+          "query": "best Medicare Advantage plans California 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan CA at 65"
+        },
+        {
+          "query": "how to choose Medicare Advantage plan tips 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies selection-process guidance"
+        },
+        {
+          "query": "Medicare Advantage plans California 2026 top rated",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to top-rated criterion"
+        },
+        {
+          "query": "Medicare enrollment periods California turning 65",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "California HICAP program Medicare assistance",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies HICAP counseling resource"
+        },
+        {
+          "query": "how to choose a Medicare Advantage plan in California for seniors",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies selection-process guidance"
+        },
+        {
+          "query": "best Medicare Advantage plans California 2026 CMS ratings",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to star-rating criterion"
+        },
+        {
+          "query": "best medicare advantage plans california 2026 reviews",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to star-rating criterion"
+        },
+        {
+          "query": "Medicare Advantage plans California 2026 options and ratings",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to top-rated criterion"
+        },
+        {
+          "query": "california medicare advantage enrollment guide 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan CA at 65"
+        },
+        {
+          "query": "how to choose a medicare advantage plan in california 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies selection-process guidance"
+        },
+        {
+          "query": "Medicare Part D 2026 out-of-pocket cap and changes",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Part D drug coverage"
+        },
+        {
+          "query": "Medicare Advantage 2026 maximum out of pocket limits CMS",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to MOOP cost detail"
+        },
+        {
+          "query": "top rated Medicare Advantage plans California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to top-rated criterion"
+        },
+        {
+          "query": "California HICAP medicare counseling",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies HICAP counseling resource"
+        },
+        {
+          "query": "Medicare Advantage plan types California HMO vs PPO 2026",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: plan types"
+        },
+        {
+          "query": "best Medicare Advantage plans California 2026 by county",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to county-specific plans"
+        },
+        {
+          "query": "how to choose Medicare Advantage plan California 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies selection-process guidance"
+        },
+        {
+          "query": "Medicare Advantage enrollment periods 2026 Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies enrollment-window mechanics"
+        },
+        {
+          "query": "Medigap open enrollment 6 months starts when you have Medicare Part B and are 65 Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medigap-window alternative"
+        },
+        {
+          "query": "Medicare Advantage basics Medicare.gov",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan CA at 65"
+        },
+        {
+          "query": "Medigap open enrollment 6 months Medicare.gov 'Medigap open enrollment' 'six-month' '65'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medigap-window alternative"
+        },
+        {
+          "query": "Medicare Advantage eligibility must be enrolled in Medicare Part A and Part B before joining Medicare Advantage Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies selection-process guidance"
+        },
+        {
+          "query": "2026 Medicare Advantage maximum out-of-pocket limit 2026 CMS",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best MA plan CA at 65"
+        },
+        {
+          "query": "Medicare Advantage maximum out-of-pocket 2026 site:medicare.gov \"9,250\"",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to MOOP cost detail"
+        },
+        {
+          "query": "Medicare Advantage trial right first year you can switch to Original Medicare within 12 months 'trial right' Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies MA trial-right rule"
+        }
+      ]
+    },
+    {
+      "promptId": "P21",
+      "userPrompt": "what medicare advantage plans are good in southern california for someone with diabetes",
+      "tagged": [
+        {
+          "query": "best Medicare Advantage plans Southern California diabetes 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "Medicare Advantage diabetes coverage Southern California 2025 ratings",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "best medicare advantage plans for diabetes southern california 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "Medicare Advantage plans diabetes coverage Southern California 2025 ratings",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "Medicare Advantage plans Southern California diabetes benefits 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "highest rated Medicare Advantage plans Southern California 2026 diabetes",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "Medicare Advantage C-SNPs for diabetes Southern California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to C-SNP plan type"
+        },
+        {
+          "query": "Medicare Part D Senior Savings Model plans California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to Part D / senior savings"
+        },
+        {
+          "query": "Kaiser Permanente Southern California diabetes management programs 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "which medical groups in Southern California accept SCAN Balance 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Scripps and Sharp HealthCare Medicare Advantage plans diabetes 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to provider network/group"
+        },
+        {
+          "query": "UCLA Health and Cedars-Sinai Medicare Advantage plans 2026 diabetes coverage",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to provider network/group"
+        },
+        {
+          "query": "Alignment Health Heart & Diabetes Care HMO C-SNP Southern California medical groups",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to C-SNP plan type"
+        },
+        {
+          "query": "Medicare Advantage plans Southern California 2026 CGM coverage details",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to CGM benefit"
+        },
+        {
+          "query": "SCAN Health Plan diabetes benefits Southern California",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Kaiser Permanente Senior Advantage diabetes benefits California",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Medicare Advantage C-SNP plans for diabetes Southern California",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to C-SNP plan type"
+        },
+        {
+          "query": "best medicare advantage plans for diabetes Southern California 2024 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "top rated medicare advantage plans Los Angeles Orange County San Diego diabetes benefits",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific SoCal area"
+        },
+        {
+          "query": "UnitedHealthcare Medicare Advantage diabetes coverage Southern California",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "UCLA Health Medicare Advantage diabetes benefits Los Angeles",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to provider network/group"
+        },
+        {
+          "query": "Sharp Health Plan Medicare Advantage diabetes benefits San Diego",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to provider network/group"
+        },
+        {
+          "query": "Cedars-Sinai Medicare Advantage plan options for diabetes",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to provider network/group"
+        },
+        {
+          "query": "Scripps Health Medicare Advantage plans diabetes coverage San Diego",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to provider network/group"
+        },
+        {
+          "query": "best medical groups for diabetes Southern California Medicare Advantage partners",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to provider network/group"
+        },
+        {
+          "query": "SCAN Health Plan diabetes benefits Southern California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Humana Medicare Advantage diabetes benefits California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "C-SNP plans for diabetes Southern California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to C-SNP plan type"
+        },
+        {
+          "query": "UnitedHealthcare Medicare Advantage diabetes benefits California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Kaiser Permanente Medicare Advantage diabetes ratings Southern California",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Medicare Advantage plans with diabetes management programs Southern California 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "Alignment Health Plan diabetes benefits Southern California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Blue Shield of California Medicare Advantage diabetes benefits 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Imperial Senior Value HMO C-SNP 2026 benefits Southern California",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to C-SNP plan type"
+        },
+        {
+          "query": "SCAN Balance HMO C-SNP 2026 Southern California benefits",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to C-SNP plan type"
+        },
+        {
+          "query": "UnitedHealthcare Medicare Advantage C-SNP diabetes plans Southern California 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to C-SNP plan type"
+        },
+        {
+          "query": "Humana Gold Plus Diabetes and Heart HMO C-SNP Southern California 2026 availability",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to C-SNP plan type"
+        },
+        {
+          "query": "Medicare Plan Finder Medicare.gov",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies counseling/plan-finder tool"
+        },
+        {
+          "query": "UnitedHealthcare Medicare Advantage California diabetes program UnitedHealthcare Medicare plans California diabetes",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Kaiser Permanente Medicare Advantage California diabetes care Medicare Advantage Kaiser diabetes management",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "UnitedHealthcare Medicare Advantage diabetes management program UnitedHealthcare diabetes care Medicare Advantage",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Medicare Advantage plans for diabetes Southern California 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of best diabetes MA SoCal"
+        },
+        {
+          "query": "Kaiser Permanente Medicare Advantage diabetes program California Medicare Advantage Kaiser diabetes program",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to specific carrier"
+        },
+        {
+          "query": "Does Medicare cover continuous glucose monitor CGM 2024 2025 CMS coverage therapeutic CGM",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to CGM benefit"
+        },
+        {
+          "query": "California HICAP Medicare counseling contact HICAP",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies counseling/plan-finder tool"
+        }
+      ]
+    },
+    {
+      "promptId": "P22",
+      "userPrompt": "what is the federal poverty level for 2026 i need to know if i qualify for medicaid",
+      "tagged": [
+        {
+          "query": "federal poverty level 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 2026 FPL for Medicaid"
+        },
+        {
+          "query": "Medicaid income eligibility 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "FPL canonicalized via Medicaid eligibility frame"
+        },
+        {
+          "query": "2026 federal poverty level Medicaid eligibility",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "FPL canonicalized via Medicaid eligibility frame"
+        },
+        {
+          "query": "federal poverty level 2026 guidelines",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 2026 FPL for Medicaid"
+        },
+        {
+          "query": "Medicaid eligibility 2026 income limits",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "FPL canonicalized via Medicaid eligibility frame"
+        },
+        {
+          "query": "2026 HHS poverty guidelines release date",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: when guidelines published"
+        },
+        {
+          "query": "projected federal poverty level 2026",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: what 2026 FPL will be"
+        },
+        {
+          "query": "Medicaid income limits 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "FPL canonicalized via Medicaid eligibility frame"
+        },
+        {
+          "query": "when are the 2026 federal poverty guidelines released",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: when guidelines published"
+        },
+        {
+          "query": "2026 federal poverty level guidelines for Medicaid eligibility",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "FPL canonicalized via Medicaid eligibility frame"
+        },
+        {
+          "query": "federal poverty level 2026 projections",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: what 2026 FPL will be"
+        },
+        {
+          "query": "Medicaid income eligibility 2026 federal poverty level",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "FPL canonicalized via Medicaid eligibility frame"
+        },
+        {
+          "query": "2026 federal poverty level guidelines",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 2026 FPL for Medicaid"
+        },
+        {
+          "query": "HHS federal poverty level 2026 release date",
+          "variant": "Clarification",
+          "secondary": null,
+          "reasoning": "definitional: when guidelines published"
+        },
+        {
+          "query": "estimated 2026 federal poverty level for individual and family of 4",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to household-size detail"
+        },
+        {
+          "query": "2026 HHS poverty guidelines federal poverty level 2026 Medicaid",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "site:aspe.hhs.gov 2026 poverty guidelines HHS ASPE 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "KFF status of state Medicaid expansion decisions 2026 states not expanded Medicaid",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid expansion status"
+        },
+        {
+          "query": "Federal Poverty Guidelines 2026 HHS 2026 FPL 2026 poverty guidelines",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "HHS poverty guidelines 2026 ASPE '2026 HHS Poverty Guidelines' 'ASPE' '2026'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "site:aspe.hhs.gov 2026 Poverty Guidelines '2026 Poverty Guidelines' 'ASPE' 'HHS'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "2026 HHS poverty guidelines PDF 'ASPE' '2026' 'poverty guidelines pdf'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "Annual Update of the HHS Poverty Guidelines 2026 Federal Register Jan 2026 'Annual Update of the HHS Poverty Guidelines' '2026'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "2026 HHS poverty guidelines 2026 poverty guidelines HHS '2026' 'poverty guidelines' 'HHS' 'Federal Register'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "ASPE 2026 poverty guidelines '2026 Poverty Guidelines' 'ASPE' 'HHS' '2026 Poverty Guidelines for the United States'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "Medicaid 138% FPL 'Medicaid.gov' 'income eligibility' '138% of the federal poverty level'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to 138% Medicaid threshold"
+        },
+        {
+          "query": "Medicaid.gov 'eligibility levels' '138% of the federal poverty level' 'expansion' 'Medicaid expansion 138% site:medicaid.gov'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to 138% Medicaid threshold"
+        },
+        {
+          "query": "Medicaid.gov 'Medicaid eligibility' 'How eligibility works' 'FPL' '138%'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to 138% Medicaid threshold"
+        },
+        {
+          "query": "ASPE 2026 poverty guidelines 'aspe.hhs.gov/poverty' 2026 poverty guidelines 2026 'ASPE' '2026 poverty guidelines PDF'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "HHS 2026 poverty guidelines 2026 federal poverty level HHS press release 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "Annual Update of the HHS Poverty Guidelines 2026 Federal Register 'Annual Update of the HHS Poverty Guidelines' 2026 'Federal Register' 'HHS'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "ASPE 2026 poverty guidelines '2026 poverty guidelines ASPE' 'HHS ASPE 2026 poverty guidelines pdf'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "2026 poverty guidelines Alaska Hawaii '2026 HHS Poverty Guidelines Alaska Hawaii' 'Federal Register 2026 poverty guidelines Alaska Hawaii'",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to official HHS/ASPE source"
+        },
+        {
+          "query": "HealthCare.gov what's counted as income MAGI 'what counts as income for Medicaid' 'MAGI'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies how MAGI maps to FPL"
+        }
+      ]
+    },
+    {
+      "promptId": "P23",
+      "userPrompt": "my family of 4 makes 35k a year do we qualify for any health insurance help",
+      "tagged": [
+        {
+          "query": "health insurance assistance family of 4 income 35000 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 35k family of 4 qualifying"
+        },
+        {
+          "query": "2025 federal poverty level family of 4",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "2026 federal poverty level family of 4",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "Medicaid income limits for family of 4 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid eligibility"
+        },
+        {
+          "query": "CHIP eligibility income limits 2026 family of 4",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CHIP eligibility for kids"
+        },
+        {
+          "query": "health insurance assistance family of 4 35000 income 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 35k family of 4 qualifying"
+        },
+        {
+          "query": "Healthcare.gov premium tax credit eligibility 2026 family of 4 income 35k",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Marketplace subsidy"
+        },
+        {
+          "query": "2024 2025 federal poverty level family of 4",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "Medicaid eligibility income limit family of 4 2024 2025",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid eligibility"
+        },
+        {
+          "query": "CHIP eligibility income limit family of 4 2024 2025",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CHIP eligibility for kids"
+        },
+        {
+          "query": "ACA premium tax credit eligibility family of 4 35k income",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Marketplace subsidy"
+        },
+        {
+          "query": "family of 4 income 35k health insurance help qualify",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 35k family of 4 qualifying"
+        },
+        {
+          "query": "did ACA enhanced subsidies expire in 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Marketplace subsidy"
+        },
+        {
+          "query": "Medicaid income limits by state 2026 family of 4",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid eligibility"
+        },
+        {
+          "query": "health insurance options for family of 4 earning 35k in 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of 35k family of 4 qualifying"
+        },
+        {
+          "query": "ACA cost-sharing reduction levels 2026 family of 4 35k income",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CSR benefits"
+        },
+        {
+          "query": "ACA subsidy income limits family of 4 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Marketplace subsidy"
+        },
+        {
+          "query": "cost sharing reductions family of 4 35000 income 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CSR benefits"
+        },
+        {
+          "query": "Medicaid eligibility family of 4 income 35000 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid eligibility"
+        },
+        {
+          "query": "2026 Federal Poverty Guidelines family of 4 HHS 2026 poverty guideline",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "HHS 2026 poverty guidelines ASPE 2026 federal poverty level '2026 Poverty Guidelines' site:hhs.gov",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "ASPE 2026 poverty guidelines '2026 HHS poverty guidelines' site:aspe.hhs.gov",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "Healthcare.gov 'Medicaid and CHIP' 'If your income is below' 'Medicaid and CHIP' eligibility",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CHIP eligibility for kids"
+        },
+        {
+          "query": "2026 federal poverty guidelines household of 4 HHS 2026 FPL",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "KFF Medicaid expansion map 2026 which states expanded Medicaid 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Medicaid eligibility"
+        },
+        {
+          "query": "2026 federal poverty guidelines HHS family of 4 2026 poverty guideline 48 states",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "Annual Update of the HHS Poverty Guidelines 2026 Federal Register HHS 2026 poverty guidelines family of 4",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "ASPE 2026 poverty guidelines HHS 2026 ASPE '2026 poverty guidelines' site:hhs.gov",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income qualifier canonicalized to FPL"
+        },
+        {
+          "query": "HealthCare.gov who qualifies for marketplace subsidies 2026 'premium tax credit' '2026' '400% FPL'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies Marketplace subsidy"
+        },
+        {
+          "query": "KFF CHIP eligibility income limits by state 2026 'CHIP eligibility' 'children' 'KFF'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CHIP eligibility for kids"
+        }
+      ]
+    },
+    {
+      "promptId": "P24",
+      "userPrompt": "im trying to figure out the income limits for marketplace subsidies do i qualify if i make 60k",
+      "tagged": [
+        {
+          "query": "ACA marketplace subsidy income limits 2025",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of $60k subsidy qualification"
+        },
+        {
+          "query": "ACA subsidy income limits 2026 household size",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to household-size detail"
+        },
+        {
+          "query": "2026 marketplace subsidy income limits federal poverty level",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "is the ACA subsidy cliff still gone in 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies 400% FPL subsidy-cliff rule"
+        },
+        {
+          "query": "marketplace premium tax credit eligibility 2026 income 60000",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "subsidy canonicalized as premium tax credit"
+        },
+        {
+          "query": "2026 federal poverty level health insurance marketplace",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "marketplace subsidy eligibility $60k income individual 2026",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to household-size detail"
+        },
+        {
+          "query": "2026 marketplace subsidy income limits individual $60,000",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to household-size detail"
+        },
+        {
+          "query": "inflation reduction act marketplace subsidies extension 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies IRA subsidy extension status"
+        },
+        {
+          "query": "is the ACA subsidy cliff active in 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies 400% FPL subsidy-cliff rule"
+        },
+        {
+          "query": "marketplace income limits 2026 for Hawaii and Alaska",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to AK/HI income limits"
+        },
+        {
+          "query": "Maryland New Mexico state marketplace subsidies 2026 income limits",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to state marketplace subsidy"
+        },
+        {
+          "query": "marketplace subsidy extension senate status May 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies IRA subsidy extension status"
+        },
+        {
+          "query": "income limits for health insurance marketplace subsidies 2026",
+          "variant": "Equivalent",
+          "secondary": null,
+          "reasoning": "rephrase of $60k subsidy qualification"
+        },
+        {
+          "query": "2026 federal poverty level marketplace subsidy limits",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "is the marketplace subsidy cliff removed in 2026",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies 400% FPL subsidy-cliff rule"
+        },
+        {
+          "query": "ACA subsidy income limits 2026 for single person $60,000",
+          "variant": "Specification",
+          "secondary": null,
+          "reasoning": "narrows to household-size detail"
+        },
+        {
+          "query": "2026 federal poverty guidelines HHS 2026 FPL 2026 poverty guidelines",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "HHS 2026 poverty guidelines 2026 HHS poverty guidelines PDF '2026 HHS poverty guidelines' '2026 Federal Poverty Guidelines' 'HHS 2026'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "HealthCare.gov who qualifies for savings on marketplace '100% to 400% of the federal poverty level' '2026'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "HealthCare.gov 'Get help paying for coverage' '100% to 400% of the federal poverty level' '2026' 'How to qualify'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "Who qualifies for savings on a Marketplace plan 'HealthCare.gov' 'Who qualifies' 'premium tax credit'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "subsidy canonicalized as premium tax credit"
+        },
+        {
+          "query": "ASPE 2026 HHS poverty guidelines 2026 'HHS poverty guidelines 2026' 'ASPE' '2026 poverty guidelines PDF'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "ASPE '2026 poverty guidelines' site:hhs.gov '2026' 'poverty guidelines'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "2026 HHS poverty guidelines 'ASPE' '2026 HHS poverty guidelines' 'Assistant Secretary for Planning and Evaluation 2026 poverty guidelines'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "HealthCare.gov 'cost-sharing reductions' '250% of the federal poverty level' 'CSR' '2026'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CSR benefit threshold"
+        },
+        {
+          "query": "site:healthcare.gov \"cost-sharing reductions\" \"250%\"",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CSR benefit threshold"
+        },
+        {
+          "query": "2026 federal poverty level 2026 FPL HHS 2026 guidelines",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "2026 HHS federal poverty guidelines 2026 HHS poverty guidelines amount 48 states $ for 1 person",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "healthcare.gov premium tax credit eligibility 100 to 400 percent 2026 'How does the premium tax credit work' '100% and 400% of the federal poverty level'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies IRS PTC 400% cap rule"
+        },
+        {
+          "query": "KFF cost-sharing reductions 250% FPL 'cost-sharing reductions up to 250% FPL' 'KFF'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies CSR benefit threshold"
+        },
+        {
+          "query": "2026 federal poverty guidelines 48 states 2026 HHS FPL 2026",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "IRS premium tax credit 2026 rules revert 400% cap 2026 IRS guidance '2026' 'premium tax credit' '400 percent'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies IRS PTC 400% cap rule"
+        },
+        {
+          "query": "ASPE 2026 poverty guidelines 2026 HHS '2026 poverty guidelines ASPE' '2026 HHS' 'office of the assistant secretary for planning and evaluation'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income threshold canonicalized as FPL"
+        },
+        {
+          "query": "how marketplace determines income MAGI modified adjusted gross income marketplace 'MAGI' 'HealthCare.gov' '2026'",
+          "variant": "Canonicalization",
+          "secondary": null,
+          "reasoning": "income canonicalized as MAGI"
+        },
+        {
+          "query": "affordability percentage 2026 employer coverage 'affordable' threshold percent 2026 'health insurance' 'employer coverage' 'percent of household income' 'Section 36B' 'affordability 2026'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies employer-affordability rule"
+        },
+        {
+          "query": "Revenue Procedure 2025-25 affordability percentage 2026 'Revenue Procedure 2025-25' '9.96' 'affordability percentage 2026'",
+          "variant": "Entailment",
+          "secondary": null,
+          "reasoning": "implies employer-affordability rule"
+        }
+      ]
+    }
+  ]
+}

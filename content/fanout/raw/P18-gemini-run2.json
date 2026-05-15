@@ -1,0 +1,45 @@
+{
+  "promptId": "P18",
+  "template": "persona",
+  "topic": "gig-workers",
+  "variant": "specific-detail",
+  "prompt": "im a 1099 freelancer with no benefits how do i get covered and can i deduct the cost",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T23:07:25.775Z",
+  "durationMs": 16553,
+  "queries": [
+    "health insurance options for freelancers and independent contractors in US",
+    "how do 1099 freelancers get health insurance coverage and can they deduct costs",
+    "IRS self-employed health insurance deduction rules 2024 2025 2026",
+    "deducting dental vision life and disability insurance for self-employed",
+    "is life insurance tax deductible for self-employed freelancers IRS",
+    "is self-employed disability insurance tax deductible IRS",
+    "IRS Form 7206 instructions business name vs personal name for health insurance deduction",
+    "where to get disability and life insurance for freelancers US"
+  ],
+  "queryCount": 8,
+  "usage": {
+    "promptTokenCount": 171,
+    "candidatesTokenCount": 945,
+    "totalTokenCount": 2768,
+    "cachedContentTokenCount": 75,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 171
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 75
+      }
+    ],
+    "toolUsePromptTokenCount": 587,
+    "thoughtsTokenCount": 1065,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

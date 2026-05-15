@@ -1,0 +1,31 @@
+{
+  "promptId": "P04",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "first-person-urgent",
+  "prompt": "how much will Ozempic cost me per month if my insurance doesnt cover it",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T22:07:11.896Z",
+  "durationMs": 25684,
+  "queries": [
+    "Ozempic price per month retail 2026 cost without insurance",
+    "Ozempic pen how many doses per pen 4-week supply how many injections per pen 2026 Ozempic prescribing information"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13190,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2300,
+    "output_tokens_details": {
+      "reasoning_tokens": 1664
+    },
+    "total_tokens": 15490
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

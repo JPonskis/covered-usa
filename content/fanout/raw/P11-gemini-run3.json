@@ -1,0 +1,44 @@
+{
+  "promptId": "P11",
+  "template": "glossary",
+  "topic": "MAGI",
+  "variant": "info-seeking",
+  "prompt": "i keep seeing magi on my marketplace application what does it actually include",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T22:34:41.836Z",
+  "durationMs": 15910,
+  "queries": [
+    "what is MAGI for health insurance marketplace application",
+    "what income is included in MAGI for marketplace application",
+    "common income sources included in MAGI for ACA",
+    "MAGI vs AGI for health insurance marketplace",
+    "how does healthcare.gov ask for income on the application 2025 2026",
+    "does marketplace application ask for AGI or individual income sources",
+    "marketplace application income categories list 2025"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "promptTokenCount": 139,
+    "candidatesTokenCount": 731,
+    "totalTokenCount": 3157,
+    "cachedContentTokenCount": 43,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 139
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 43
+      }
+    ],
+    "toolUsePromptTokenCount": 902,
+    "thoughtsTokenCount": 1385,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

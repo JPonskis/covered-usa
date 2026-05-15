@@ -1,0 +1,32 @@
+{
+  "promptId": "P17",
+  "template": "persona",
+  "topic": "gig-workers",
+  "variant": "info-seeking",
+  "prompt": "i drive for doordash and uber whats the best option for health coverage for someone like me",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T23:01:07.232Z",
+  "durationMs": 32403,
+  "queries": [
+    "health insurance options for gig workers 2026 ACA marketplace subsidies eligibility income calculator",
+    "Uber driver benefits health insurance 2026 'Uber drivers' health benefits' 'stipend' 'California' 2026 official",
+    "Uber California healthcare stipend 2026 'Prop 22 healthcare stipend' Uber help 'stipend' '2026' 'drivers'"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 17104,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2483,
+    "output_tokens_details": {
+      "reasoning_tokens": 1216
+    },
+    "total_tokens": 19587
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

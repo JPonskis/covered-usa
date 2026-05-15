@@ -1,0 +1,34 @@
+{
+  "promptId": "P18",
+  "template": "persona",
+  "topic": "gig-workers",
+  "variant": "specific-detail",
+  "prompt": "im a 1099 freelancer with no benefits how do i get covered and can i deduct the cost",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T23:06:53.650Z",
+  "durationMs": 49949,
+  "queries": [
+    "IRS self-employed health insurance deduction rules 2026 site:irs.gov",
+    "Self-employed health insurance deduction IRS 'self-employed health insurance' site:irs.gov",
+    "Medicaid eligibility HealthCare.gov 'Am I eligible' site:healthcare.gov",
+    "S corporation more-than-2% shareholder health insurance premiums included in wages IRS '2% shareholder' 'health insurance' 'wages' site:irs.gov",
+    "Health Savings Account (HSA) contribution limits 2026 IRS 'HSA' site:irs.gov"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 25365,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3655,
+    "output_tokens_details": {
+      "reasoning_tokens": 2176
+    },
+    "total_tokens": 29020
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

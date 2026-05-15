@@ -1,0 +1,31 @@
+{
+  "promptId": "P32",
+  "template": "qa",
+  "topic": "ahcccs-arizona",
+  "variant": "state-named-program",
+  "prompt": "im in arizona and need ahcccs how do i apply",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-15T00:18:47.350Z",
+  "durationMs": 24814,
+  "queries": [
+    "How to apply for AHCCCS apply Arizona Health Care Cost Containment System Health-e-Arizona Plus HEAplus apply online",
+    "What documents are needed to apply for AHCCCS 'what information do I need' 'proof of identity' 'proof of income' site:azahcccs.gov"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 22643,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 1780,
+    "output_tokens_details": {
+      "reasoning_tokens": 960
+    },
+    "total_tokens": 24423
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

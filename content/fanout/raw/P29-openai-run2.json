@@ -1,0 +1,31 @@
+{
+  "promptId": "P29",
+  "template": "ma-state",
+  "topic": "missouri-MA",
+  "variant": "different-state-MA",
+  "prompt": "im 67 in missouri what medicare advantage plan should i pick",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-15T00:17:29.950Z",
+  "durationMs": 27633,
+  "queries": [
+    "Medicare Advantage plans Medicare.gov overview 2026",
+    "Missouri SHIP phone number CLAIM helpline Missouri Medicare assistance phone"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13371,
+    "input_tokens_details": {
+      "cached_tokens": 4352
+    },
+    "output_tokens": 2318,
+    "output_tokens_details": {
+      "reasoning_tokens": 1472
+    },
+    "total_tokens": 15689
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

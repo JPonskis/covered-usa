@@ -1,0 +1,32 @@
+{
+  "promptId": "P02",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "caretaker",
+  "prompt": "my dad needs an MRI but doesnt have insurance can you tell me what hes looking at price-wise",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T21:59:22.128Z",
+  "durationMs": 30651,
+  "queries": [
+    "MRI cost without insurance United States average 2024 2025 healthcarebluebook MRI price",
+    "Healthcare Bluebook MRI cost self pay 'Healthcare Bluebook' MRI price",
+    "site:fairhealthconsumer.org MRI cost 'MRI' 'Fair Health' 'FairHealth' 'MRI brain'"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 13187,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2414,
+    "output_tokens_details": {
+      "reasoning_tokens": 1472
+    },
+    "total_tokens": 15601
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

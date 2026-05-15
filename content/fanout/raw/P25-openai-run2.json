@@ -1,0 +1,34 @@
+{
+  "promptId": "P25",
+  "template": "qa",
+  "topic": "medicaid-texas",
+  "variant": "state-explicit",
+  "prompt": "do i qualify for medicaid in texas this year",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-15T00:16:06.442Z",
+  "durationMs": 38826,
+  "queries": [
+    "Texas Medicaid eligibility income limits 2026 adults parents caretaker percentage of FPL 2026 Texas Health and Human Services",
+    "Texas Health and Human Services Medicaid eligibility who qualifies HHSC 'Medicaid' 'Am I eligible' 'income limits' site:hhs.texas.gov",
+    "Apply for Medicaid in Texas YourTexasBenefits apply for Medicaid 'Apply for coverage' 'Get Medicaid' site:yourtexasbenefits.com",
+    "How to apply for Medicaid in Texas 'Apply for Medicaid' site:hhs.texas.gov 'apply' 'YourTexasBenefits' 'apply for Medicaid in Texas' 2026",
+    "Texas Medicaid MAGI rules 'Modified Adjusted Gross Income' HHSC 'MAGI' 'who qualifies' site:hhs.texas.gov"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 23962,
+    "input_tokens_details": {
+      "cached_tokens": 4352
+    },
+    "output_tokens": 2565,
+    "output_tokens_details": {
+      "reasoning_tokens": 1792
+    },
+    "total_tokens": 26527
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

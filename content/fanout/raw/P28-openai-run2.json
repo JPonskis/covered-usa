@@ -1,0 +1,33 @@
+{
+  "promptId": "P28",
+  "template": "event",
+  "topic": "lost-job-pennsylvania",
+  "variant": "state-plus-event",
+  "prompt": "im in pennsylvania and lost my job whats my best health insurance option",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-15T00:17:24.936Z",
+  "durationMs": 45134,
+  "queries": [
+    "COBRA continuation coverage federal rules employer size 20 employees summary",
+    "2026 federal poverty level 2026 FPL 48 states 138% 2026 amount single person",
+    "2026 federal poverty guidelines HHS '2026' 'Federal Poverty Guidelines' 'HHS' '2026' PDF",
+    "short term health insurance not ACA-compliant warnings 'short-term' 'not ACA' 'pre-existing conditions' 2026 Healthcare.gov short-term plans"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "input_tokens": 21149,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3470,
+    "output_tokens_details": {
+      "reasoning_tokens": 2176
+    },
+    "total_tokens": 24619
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

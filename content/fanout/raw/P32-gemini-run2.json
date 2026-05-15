@@ -1,0 +1,33 @@
+{
+  "promptId": "P32",
+  "template": "qa",
+  "topic": "ahcccs-arizona",
+  "variant": "state-named-program",
+  "prompt": "im in arizona and need ahcccs how do i apply",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-15T00:18:38.202Z",
+  "durationMs": 12567,
+  "queries": [
+    "how to apply for AHCCCS Arizona official website",
+    "AHCCCS eligibility requirements Arizona 2026",
+    "AHCCCS application methods online phone in person",
+    "Arizona Department of Economic Security AHCCCS application"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 163,
+    "candidatesTokenCount": 732,
+    "totalTokenCount": 1896,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 163
+      }
+    ],
+    "thoughtsTokenCount": 1001,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

@@ -1,0 +1,44 @@
+{
+  "promptId": "P08",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "caretaker",
+  "prompt": "my dad has medicare and needs his teeth pulled is that going to be covered",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T22:23:52.203Z",
+  "durationMs": 15047,
+  "queries": [
+    "does medicare cover teeth extractions",
+    "when does medicare cover tooth extraction for medical necessity",
+    "medicare advantage dental coverage for tooth extractions",
+    "medicare part a and b dental coverage for extractions",
+    "low cost dental options for seniors without dental insurance",
+    "do medigap plans offer dental benefits as extra perks",
+    "medicare medicaid dual eligibility dental coverage for extractions"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "promptTokenCount": 136,
+    "candidatesTokenCount": 656,
+    "totalTokenCount": 2448,
+    "cachedContentTokenCount": 49,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 136
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 49
+      }
+    ],
+    "toolUsePromptTokenCount": 683,
+    "thoughtsTokenCount": 973,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

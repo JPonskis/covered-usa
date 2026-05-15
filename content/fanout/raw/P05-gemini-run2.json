@@ -1,0 +1,38 @@
+{
+  "promptId": "P05",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "caretaker",
+  "prompt": "my mom needs ozempic and her insurance denied it whats the real cost going to be",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T22:12:19.257Z",
+  "durationMs": 21825,
+  "queries": [
+    "Ozempic cost at CVS Walgreens Walmart without insurance",
+    "current list price of ozempic without insurance 2024 2025",
+    "Novo Nordisk Ozempic patient assistance program and savings card for uninsured",
+    "real cost of ozempic cash price 2024",
+    "appeal insurance denial for ozempic for diabetes and weight loss tips",
+    "is there an ozempic tablet 1.5 mg 2024 2025",
+    "Ozempic vs Rybelsus tablet cost 2024 2025",
+    "how to find 340B pharmacies for ozempic discounts"
+  ],
+  "queryCount": 8,
+  "usage": {
+    "promptTokenCount": 150,
+    "candidatesTokenCount": 971,
+    "totalTokenCount": 3849,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 150
+      }
+    ],
+    "toolUsePromptTokenCount": 1008,
+    "thoughtsTokenCount": 1720,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

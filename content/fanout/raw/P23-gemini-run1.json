@@ -1,0 +1,34 @@
+{
+  "promptId": "P23",
+  "template": "daily-blog",
+  "topic": "FPL",
+  "variant": "info-seeking",
+  "prompt": "my family of 4 makes 35k a year do we qualify for any health insurance help",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 1,
+  "timestamp": "2026-05-14T23:23:59.853Z",
+  "durationMs": 15505,
+  "queries": [
+    "2026 federal poverty level family of 4",
+    "Medicaid income limits for family of 4 2026",
+    "CHIP eligibility income limits 2026 family of 4",
+    "health insurance assistance family of 4 35000 income 2026",
+    "Healthcare.gov premium tax credit eligibility 2026 family of 4 income 35k"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "promptTokenCount": 202,
+    "candidatesTokenCount": 868,
+    "totalTokenCount": 2518,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 202
+      }
+    ],
+    "thoughtsTokenCount": 1448,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

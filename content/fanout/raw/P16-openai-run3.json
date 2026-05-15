@@ -1,0 +1,35 @@
+{
+  "promptId": "P16",
+  "template": "persona",
+  "topic": "gig-workers",
+  "variant": "first-person-urgent",
+  "prompt": "im a full-time uber driver with no employer plan how do i get health insurance",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:56:01.746Z",
+  "durationMs": 49883,
+  "queries": [
+    "Health Insurance Marketplace how to apply subsidies advance premium tax credit healthcare.gov",
+    "HRSA Health Centers find a health center sliding scale community health centers HRSA",
+    "Can I stay on my parent's health insurance until 26 healthcare.gov",
+    "healthcare.gov get help applying navigators help in-person assistance 'help applying' 'find local help' healthcare.gov",
+    "Uber driver health insurance benefits 2026 'Uber Health' 'Uber driver insurance benefits' 'driver benefits' 'partnerships'",
+    "Does Uber offer health insurance to drivers site:uber.com 'health' 'drivers' 'benefits' 'insurance' 'help'"
+  ],
+  "queryCount": 6,
+  "usage": {
+    "input_tokens": 29639,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3085,
+    "output_tokens_details": {
+      "reasoning_tokens": 1728
+    },
+    "total_tokens": 32724
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

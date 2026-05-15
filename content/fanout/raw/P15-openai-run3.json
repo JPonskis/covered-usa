@@ -1,0 +1,33 @@
+{
+  "promptId": "P15",
+  "template": "event",
+  "topic": "turning-26",
+  "variant": "info-seeking",
+  "prompt": "i age out of my parents insurance in a few months whats my cheapest option",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:50:32.078Z",
+  "durationMs": 54535,
+  "queries": [
+    "can I stay on parents health insurance until 26 healthcare.gov",
+    "Special Enrollment Period losing health coverage healthcare.gov 'loss of coverage' 'special enrollment period'",
+    "Who is eligible for Medicaid healthcare.gov 'Medicaid eligibility' 'apply'",
+    "premium tax credit healthcare.gov 'premium tax credit' 'how it works'"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "input_tokens": 22045,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3435,
+    "output_tokens_details": {
+      "reasoning_tokens": 2240
+    },
+    "total_tokens": 25480
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

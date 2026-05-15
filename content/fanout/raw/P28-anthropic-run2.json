@@ -1,0 +1,36 @@
+{
+  "promptId": "P28",
+  "template": "event",
+  "topic": "lost-job-pennsylvania",
+  "variant": "state-plus-event",
+  "prompt": "im in pennsylvania and lost my job whats my best health insurance option",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 2,
+  "timestamp": "2026-05-15T00:35:44.462Z",
+  "durationMs": 33046,
+  "queries": [
+    "Pennsylvania health insurance options after job loss 2025",
+    "Pennsylvania Medicaid eligibility 2025"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 27274,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1400,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 2,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

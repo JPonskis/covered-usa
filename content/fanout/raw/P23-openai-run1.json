@@ -1,0 +1,33 @@
+{
+  "promptId": "P23",
+  "template": "daily-blog",
+  "topic": "FPL",
+  "variant": "info-seeking",
+  "prompt": "my family of 4 makes 35k a year do we qualify for any health insurance help",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T23:24:06.727Z",
+  "durationMs": 41470,
+  "queries": [
+    "2026 Federal Poverty Guidelines family of 4 HHS 2026 poverty guideline",
+    "HHS 2026 poverty guidelines ASPE 2026 federal poverty level '2026 Poverty Guidelines' site:hhs.gov",
+    "ASPE 2026 poverty guidelines '2026 HHS poverty guidelines' site:aspe.hhs.gov",
+    "Healthcare.gov 'Medicaid and CHIP' 'If your income is below' 'Medicaid and CHIP' eligibility"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "input_tokens": 21947,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3025,
+    "output_tokens_details": {
+      "reasoning_tokens": 2240
+    },
+    "total_tokens": 24972
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

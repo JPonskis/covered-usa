@@ -1,0 +1,32 @@
+{
+  "promptId": "P08",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "caretaker",
+  "prompt": "my dad has medicare and needs his teeth pulled is that going to be covered",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:23:23.496Z",
+  "durationMs": 37555,
+  "queries": [
+    "Does Medicare cover dental care Medicare.gov",
+    "Medicaid dental benefits state Medicaid dental coverage medicaid.gov dental",
+    "1-800-MEDICARE contact Medicare.gov '1-800-633-4227' Medicare contact"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 21797,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2477,
+    "output_tokens_details": {
+      "reasoning_tokens": 1856
+    },
+    "total_tokens": 24274
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

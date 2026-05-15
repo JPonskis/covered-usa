@@ -1,0 +1,35 @@
+{
+  "promptId": "P12",
+  "template": "glossary",
+  "topic": "MAGI",
+  "variant": "specific-detail",
+  "prompt": "do i count my 401k withdrawals when calculating my income for aca subsidies",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T22:36:21.465Z",
+  "durationMs": 44302,
+  "queries": [
+    "Does 401(k) distribution count as income for premium tax credit MAGI site:healthcare.gov",
+    "MAGI premium tax credit healthcare.gov 'MAGI' 'premium tax credit' 401(k)",
+    "penalty on early withdrawal included in MAGI 'penalty on early withdrawal' 'MAGI' 'ACA' 'premium tax credit' 'healthcare.gov'",
+    "Roth 401(k) distributions taxable? 'Roth 401(k) qualified distributions' IRS",
+    "IRS Roth 401(k) qualified distribution tax-free 'Roth 401(k) qualified distribution' site:irs.gov",
+    "healthcare.gov report income changes 'report changes' 'advance payments of premium tax credit' 'update income'"
+  ],
+  "queryCount": 6,
+  "usage": {
+    "input_tokens": 29864,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2763,
+    "output_tokens_details": {
+      "reasoning_tokens": 2048
+    },
+    "total_tokens": 32627
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "promptId": "P25",
+  "template": "qa",
+  "topic": "medicaid-texas",
+  "variant": "state-explicit",
+  "prompt": "do i qualify for medicaid in texas this year",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-15T00:16:10.082Z",
+  "durationMs": 42466,
+  "queries": [
+    "Texas Medicaid eligibility 2026 adults children pregnant women income limits 2026 Texas Health and Human Services",
+    "Texas Health and Human Services Medicaid eligibility who can get Medicaid HHSC 'Who can get Medicaid' Texas",
+    "HHSC who can get Medicaid or CHIP 'Who can get Medicaid or CHIP' site:hhs.texas.gov",
+    "Medicaid eligibility levels Texas children pregnant parents percent of FPL December 2023 medicaid.gov table Texas 'Children Medicaid Ages 6-18' 'Pregnant Women Medicaid' 'Parents' 'Texas'"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "input_tokens": 21710,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2562,
+    "output_tokens_details": {
+      "reasoning_tokens": 1920
+    },
+    "total_tokens": 24272
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

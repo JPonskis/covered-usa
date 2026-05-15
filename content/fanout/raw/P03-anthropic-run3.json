@@ -1,0 +1,36 @@
+{
+  "promptId": "P03",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "info-seeking",
+  "prompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 3,
+  "timestamp": "2026-05-14T22:02:29.421Z",
+  "durationMs": 27814,
+  "queries": [
+    "average MRI cost out of pocket 2025",
+    "MRI cost with insurance 2025"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 28086,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1539,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 2,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

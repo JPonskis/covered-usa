@@ -1,0 +1,34 @@
+{
+  "promptId": "P25",
+  "template": "qa",
+  "topic": "medicaid-texas",
+  "variant": "state-explicit",
+  "prompt": "do i qualify for medicaid in texas this year",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-15T00:16:06.181Z",
+  "durationMs": 38565,
+  "queries": [
+    "Texas Medicaid eligibility 2026 income limits adults 2026",
+    "Texas Health and Human Services Medicaid eligibility adults parents income limits 2026 site:hhs.texas.gov",
+    "Texas Medicaid pregnant women income limit 2026 site:hhs.texas.gov 'pregnant' 'Medicaid' 'income limit'",
+    "Medicaid for elderly and people with disabilities Texas income limit asset limit 2026 site:hhs.texas.gov 'MEPD' 'income limit' 'asset limit' '2026'",
+    "apply for Medicaid Texas Your Texas Benefits how to apply site:hhs.texas.gov 'Your Texas Benefits' 'apply for Medicaid'"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 29337,
+    "input_tokens_details": {
+      "cached_tokens": 4352
+    },
+    "output_tokens": 2343,
+    "output_tokens_details": {
+      "reasoning_tokens": 1600
+    },
+    "total_tokens": 31680
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "promptId": "P07",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "first-person-urgent",
+  "prompt": "im 67 and need a root canal will medicare pay for any of it",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-14T23:25:32.478Z",
+  "durationMs": 10570,
+  "queries": [
+    "site:medicare.gov dental services root canal Medicare coverage 2026"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 8473,
+    "input_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "output_tokens": 512,
+    "output_tokens_details": {
+      "reasoning_tokens": 75
+    },
+    "total_tokens": 8985
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

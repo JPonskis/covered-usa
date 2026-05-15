@@ -1,0 +1,45 @@
+{
+  "promptId": "P24",
+  "template": "daily-blog",
+  "topic": "FPL",
+  "variant": "specific-detail",
+  "prompt": "im trying to figure out the income limits for marketplace subsidies do i qualify if i make 60k",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T23:24:54.732Z",
+  "durationMs": 19482,
+  "queries": [
+    "2026 federal poverty level health insurance marketplace",
+    "marketplace subsidy eligibility $60k income individual 2026",
+    "2026 marketplace subsidy income limits individual $60,000",
+    "inflation reduction act marketplace subsidies extension 2026",
+    "is the ACA subsidy cliff active in 2026",
+    "marketplace income limits 2026 for Hawaii and Alaska",
+    "Maryland New Mexico state marketplace subsidies 2026 income limits",
+    "marketplace subsidy extension senate status May 2026"
+  ],
+  "queryCount": 8,
+  "usage": {
+    "promptTokenCount": 168,
+    "candidatesTokenCount": 845,
+    "totalTokenCount": 3887,
+    "cachedContentTokenCount": 67,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 168
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 67
+      }
+    ],
+    "toolUsePromptTokenCount": 1195,
+    "thoughtsTokenCount": 1679,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

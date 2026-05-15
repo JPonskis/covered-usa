@@ -1,0 +1,31 @@
+{
+  "promptId": "P20",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "caretaker",
+  "prompt": "my mom in california just turned 65 and we need to pick a medicare advantage plan",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T23:15:11.900Z",
+  "durationMs": 32676,
+  "queries": [
+    "Medicare Advantage basics Medicare.gov",
+    "Medigap open enrollment 6 months Medicare.gov 'Medigap open enrollment' 'six-month' '65'"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13711,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2949,
+    "output_tokens_details": {
+      "reasoning_tokens": 1792
+    },
+    "total_tokens": 16660
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

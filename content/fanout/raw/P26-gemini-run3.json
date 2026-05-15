@@ -1,0 +1,33 @@
+{
+  "promptId": "P26",
+  "template": "persona",
+  "topic": "single-mom-florida",
+  "variant": "state-plus-persona",
+  "prompt": "im a single mom in florida do i qualify for medicaid",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-15T00:16:18.804Z",
+  "durationMs": 12361,
+  "queries": [
+    "Florida Medicaid for single parents household size 2 income limit",
+    "Florida Medicaid income limits for parents and caretakers 2026",
+    "Florida Medicaid eligibility requirements for single mothers 2026",
+    "Florida Medicaid expansion status 2026"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 128,
+    "candidatesTokenCount": 716,
+    "totalTokenCount": 1774,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 128
+      }
+    ],
+    "thoughtsTokenCount": 930,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

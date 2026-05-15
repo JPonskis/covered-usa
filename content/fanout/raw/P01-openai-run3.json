@@ -1,0 +1,30 @@
+{
+  "promptId": "P01",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "first-person-urgent",
+  "prompt": "i have an MRI scheduled next week how much will it cost without insurance",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T21:57:01.947Z",
+  "durationMs": 26512,
+  "queries": [
+    "How much does an MRI cost without insurance United States average cost MRI price 2024 2025"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 8749,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 1852,
+    "output_tokens_details": {
+      "reasoning_tokens": 1152
+    },
+    "total_tokens": 10601
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

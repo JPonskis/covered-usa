@@ -1,0 +1,30 @@
+{
+  "promptId": "P05",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "caretaker",
+  "prompt": "my mom needs ozempic and her insurance denied it whats the real cost going to be",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T22:11:05.824Z",
+  "durationMs": 27429,
+  "queries": [
+    "Ozempic price 2026 cost without insurance May 2026 United States"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 8903,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2243,
+    "output_tokens_details": {
+      "reasoning_tokens": 1408
+    },
+    "total_tokens": 11146
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

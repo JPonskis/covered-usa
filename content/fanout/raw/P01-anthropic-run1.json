@@ -1,0 +1,35 @@
+{
+  "promptId": "P01",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "first-person-urgent",
+  "prompt": "i have an MRI scheduled next week how much will it cost without insurance",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 1,
+  "timestamp": "2026-05-14T21:45:04.676Z",
+  "durationMs": 21365,
+  "queries": [
+    "MRI cost without insurance 2025"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 19088,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 947,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 1,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

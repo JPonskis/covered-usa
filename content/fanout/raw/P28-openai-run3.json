@@ -1,0 +1,36 @@
+{
+  "promptId": "P28",
+  "template": "event",
+  "topic": "lost-job-pennsylvania",
+  "variant": "state-plus-event",
+  "prompt": "im in pennsylvania and lost my job whats my best health insurance option",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-15T00:17:32.844Z",
+  "durationMs": 52596,
+  "queries": [
+    "COBRA rules federal Department of Labor continuation coverage qualifying event job loss employer 20 or more employees COBRA cost 2026",
+    "How long do you have to elect COBRA 60 days election period DOL election period 2026",
+    "How much does COBRA cost 102% 150% disability extension 2026 DOL",
+    "Pennsylvania Medicaid expansion 138% FPL adults eligibility 2026 HealthCare.gov Pennsylvania Medicaid expansion",
+    "Pennie Pennsylvania marketplace Pennie health insurance marketplace apply 2026",
+    "Pennie special enrollment period loss of job-based coverage 60 days Pennie SEP apply after losing job",
+    "Pennie customer service phone number 2026 contact Pennie support 1-800?"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "input_tokens": 34363,
+    "input_tokens_details": {
+      "cached_tokens": 4352
+    },
+    "output_tokens": 3999,
+    "output_tokens_details": {
+      "reasoning_tokens": 2432
+    },
+    "total_tokens": 38362
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

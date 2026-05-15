@@ -1,0 +1,35 @@
+{
+  "promptId": "P06",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "info-seeking",
+  "prompt": "im paying cash for ozempic every month is there any way to get it cheaper",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T22:16:46.511Z",
+  "durationMs": 14305,
+  "queries": [
+    "Novo Nordisk Patient Assistance Program Ozempic eligibility",
+    "Ozempic generic or biosimilar availability 2026",
+    "GLP-1 agonists cheaper alternatives to Ozempic",
+    "how to get Ozempic cheaper without insurance",
+    "Ozempic coupons for cash paying patients",
+    "Ozempic manufacturer savings card cash price"
+  ],
+  "queryCount": 6,
+  "usage": {
+    "promptTokenCount": 131,
+    "candidatesTokenCount": 1048,
+    "totalTokenCount": 1946,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 131
+      }
+    ],
+    "thoughtsTokenCount": 767,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

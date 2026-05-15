@@ -1,0 +1,33 @@
+{
+  "promptId": "P24",
+  "template": "daily-blog",
+  "topic": "FPL",
+  "variant": "specific-detail",
+  "prompt": "im trying to figure out the income limits for marketplace subsidies do i qualify if i make 60k",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 1,
+  "timestamp": "2026-05-14T23:24:36.628Z",
+  "durationMs": 12490,
+  "queries": [
+    "ACA subsidy income limits 2026 household size",
+    "2026 marketplace subsidy income limits federal poverty level",
+    "is the ACA subsidy cliff still gone in 2026",
+    "marketplace premium tax credit eligibility 2026 income 60000"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 180,
+    "candidatesTokenCount": 755,
+    "totalTokenCount": 2088,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 180
+      }
+    ],
+    "thoughtsTokenCount": 1153,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

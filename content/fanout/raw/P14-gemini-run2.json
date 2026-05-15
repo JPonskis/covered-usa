@@ -1,0 +1,34 @@
+{
+  "promptId": "P14",
+  "template": "event",
+  "topic": "turning-26",
+  "variant": "caretaker",
+  "prompt": "my daughter is turning 26 next month and needs her own insurance what do we do",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T22:47:09.450Z",
+  "durationMs": 13243,
+  "queries": [
+    "health insurance options when turning 26 rules and deadlines",
+    "special enrollment period for turning 26 health insurance marketplace",
+    "does coverage end on 26th birthday or end of month",
+    "COBRA vs ACA marketplace for 26 year old",
+    "Medicaid eligibility for 26 year olds by state"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "promptTokenCount": 168,
+    "candidatesTokenCount": 912,
+    "totalTokenCount": 1705,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 168
+      }
+    ],
+    "thoughtsTokenCount": 625,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

@@ -1,0 +1,30 @@
+{
+  "promptId": "P10",
+  "template": "glossary",
+  "topic": "MAGI",
+  "variant": "first-person-urgent",
+  "prompt": "how do they figure out income for obamacare im self employed and im confused",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-14T23:25:48.888Z",
+  "durationMs": 26980,
+  "queries": [
+    "site:healthcare.gov self-employed income Marketplace estimated income ACA"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 10321,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1286,
+    "output_tokens_details": {
+      "reasoning_tokens": 455
+    },
+    "total_tokens": 11607
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

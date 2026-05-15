@@ -1,0 +1,32 @@
+{
+  "promptId": "P22",
+  "template": "daily-blog",
+  "topic": "FPL",
+  "variant": "first-person-urgent",
+  "prompt": "what is the federal poverty level for 2026 i need to know if i qualify for medicaid",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-14T23:26:29.675Z",
+  "durationMs": 42354,
+  "queries": [
+    "2026 HHS poverty guidelines federal poverty level 2026 Medicaid",
+    "site:aspe.hhs.gov 2026 poverty guidelines HHS ASPE 2026",
+    "KFF status of state Medicaid expansion decisions 2026 states not expanded Medicaid"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 47537,
+    "input_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "output_tokens": 1913,
+    "output_tokens_details": {
+      "reasoning_tokens": 1276
+    },
+    "total_tokens": 49450
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

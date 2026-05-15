@@ -1,0 +1,33 @@
+{
+  "promptId": "P21",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "specific-detail",
+  "prompt": "what medicare advantage plans are good in southern california for someone with diabetes",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T23:20:46.645Z",
+  "durationMs": 42921,
+  "queries": [
+    "Medicare Advantage plans for diabetes Southern California 2026",
+    "Kaiser Permanente Medicare Advantage diabetes program California Medicare Advantage Kaiser diabetes program",
+    "Does Medicare cover continuous glucose monitor CGM 2024 2025 CMS coverage therapeutic CGM",
+    "California HICAP Medicare counseling contact HICAP"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "input_tokens": 21962,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3482,
+    "output_tokens_details": {
+      "reasoning_tokens": 2112
+    },
+    "total_tokens": 25444
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

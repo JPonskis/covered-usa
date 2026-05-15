@@ -1,0 +1,33 @@
+{
+  "promptId": "P03",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "info-seeking",
+  "prompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T22:04:02.543Z",
+  "durationMs": 48163,
+  "queries": [
+    "average cost of MRI in the United States 2024 2025",
+    "No Surprises Act Good Faith Estimate for uninsured provider must give estimate 2022 CMS guidance",
+    "FAIR Health MRI cost 2025 'MRI' 'FAIR Health' cost",
+    "radiologist reading fee separate from facility MRI cost 'radiologist fee' 'reading fee' MRI cost"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "input_tokens": 21495,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3846,
+    "output_tokens_details": {
+      "reasoning_tokens": 2816
+    },
+    "total_tokens": 25341
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

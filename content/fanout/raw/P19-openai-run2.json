@@ -1,0 +1,33 @@
+{
+  "promptId": "P19",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "first-person-urgent",
+  "prompt": "im 70 in los angeles and need a medicare advantage plan whats the best option",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T23:10:44.522Z",
+  "durationMs": 49665,
+  "queries": [
+    "Medicare Advantage enrollment periods 2026 CMS Jan 1 Mar 31 Annual Enrollment Period Oct 15 Dec 7",
+    "Medicare.gov Plan Finder how to use 'Find & compare plans' 2026 Medicare.gov Plan Finder",
+    "KFF medigap vs medicare advantage 'Kaiser Family Foundation' 'Medigap vs Medicare Advantage' 2025 2026",
+    "Medicare.gov Find & compare plans 'Find & compare' Medicare plan finder official page 'plan-compare' 'find plans' 2026"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "input_tokens": 22187,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3416,
+    "output_tokens_details": {
+      "reasoning_tokens": 2432
+    },
+    "total_tokens": 25603
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

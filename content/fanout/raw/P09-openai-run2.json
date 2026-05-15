@@ -1,0 +1,32 @@
+{
+  "promptId": "P09",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "info-seeking",
+  "prompt": "does medicare cover any dental stuff like cleanings or dentures im trying to plan for retirement",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T22:26:42.178Z",
+  "durationMs": 29079,
+  "queries": [
+    "Medicare dental coverage routine cleanings dentures Medicare.gov",
+    "Medicare Plan Finder 'find a plan' dental Medicare.gov",
+    "Medicaid dental coverage adults 'state' 'dental' 'dual eligible' Medicaid.gov 'dental' 'adult' 'state'"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 17582,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2346,
+    "output_tokens_details": {
+      "reasoning_tokens": 1536
+    },
+    "total_tokens": 19928
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

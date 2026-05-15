@@ -1,0 +1,32 @@
+{
+  "promptId": "P09",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "info-seeking",
+  "prompt": "does medicare cover any dental stuff like cleanings or dentures im trying to plan for retirement",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T22:28:03.383Z",
+  "durationMs": 11989,
+  "queries": [
+    "does medicare cover dental cleanings and dentures",
+    "dental coverage options for seniors in retirement",
+    "medicare advantage dental coverage vs original medicare dental coverage"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "promptTokenCount": 125,
+    "candidatesTokenCount": 638,
+    "totalTokenCount": 1452,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 125
+      }
+    ],
+    "thoughtsTokenCount": 689,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

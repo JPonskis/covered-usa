@@ -1,0 +1,32 @@
+{
+  "promptId": "P03",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "info-seeking",
+  "prompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:04:37.022Z",
+  "durationMs": 34477,
+  "queries": [
+    "cost of MRI in the United States average price 2025 2026 in-network out-of-network Healthcare Bluebook",
+    "No Surprises Act Good Faith Estimate medical imaging MRI 2024 2025 HHS 'Good Faith Estimate' law what to ask",
+    "tips to lower MRI cost self-pay discount imaging center vs hospital outpatient cost 'Healthcare Bluebook' 'Medical Billing Advocates of America' advice"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 16948,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2703,
+    "output_tokens_details": {
+      "reasoning_tokens": 1344
+    },
+    "total_tokens": 19651
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

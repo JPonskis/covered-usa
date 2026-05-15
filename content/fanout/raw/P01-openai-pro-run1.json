@@ -1,0 +1,31 @@
+{
+  "promptId": "P01",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "first-person-urgent",
+  "prompt": "i have an MRI scheduled next week how much will it cost without insurance",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-14T23:25:41.293Z",
+  "durationMs": 19385,
+  "queries": [
+    "MRI cost without insurance United States self pay average 2025",
+    "RadiologyAssist MRI self pay price United States"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 20706,
+    "input_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "output_tokens": 832,
+    "output_tokens_details": {
+      "reasoning_tokens": 319
+    },
+    "total_tokens": 21538
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

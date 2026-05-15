@@ -1,0 +1,32 @@
+{
+  "promptId": "P01",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "first-person-urgent",
+  "prompt": "i have an MRI scheduled next week how much will it cost without insurance",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T21:56:35.431Z",
+  "durationMs": 30094,
+  "queries": [
+    "cost of MRI without insurance US average 2024 2025 'MRI cost' 'without insurance' 'United States' range",
+    "No Surprises Act Good Faith Estimate HHS 'Good Faith Estimate' uninsured give estimate before care",
+    "Fair Health Consumer MRI cost 'Fair Health' 'MRI' average cost 'Fair Health Consumer' 'MRI'"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 17032,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2022,
+    "output_tokens_details": {
+      "reasoning_tokens": 1408
+    },
+    "total_tokens": 19054
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

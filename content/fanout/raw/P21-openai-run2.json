@@ -1,0 +1,31 @@
+{
+  "promptId": "P21",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "specific-detail",
+  "prompt": "what medicare advantage plans are good in southern california for someone with diabetes",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T23:20:03.723Z",
+  "durationMs": 35081,
+  "queries": [
+    "Kaiser Permanente Medicare Advantage California diabetes care Medicare Advantage Kaiser diabetes management",
+    "UnitedHealthcare Medicare Advantage diabetes management program UnitedHealthcare diabetes care Medicare Advantage"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13636,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2692,
+    "output_tokens_details": {
+      "reasoning_tokens": 1728
+    },
+    "total_tokens": 16328
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

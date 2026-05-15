@@ -1,0 +1,32 @@
+{
+  "promptId": "P08",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "caretaker",
+  "prompt": "my dad has medicare and needs his teeth pulled is that going to be covered",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T22:22:45.940Z",
+  "durationMs": 42828,
+  "queries": [
+    "Does Medicare cover dental care site:medicare.gov",
+    "Medigap dental coverage Medicare.gov Medigap dental does Medigap cover dental",
+    "Find a Medicare plan dental coverage 'find a plan' site:medicare.gov"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 17765,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3187,
+    "output_tokens_details": {
+      "reasoning_tokens": 2496
+    },
+    "total_tokens": 20952
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

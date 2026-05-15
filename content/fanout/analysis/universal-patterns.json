@@ -1,0 +1,267 @@
+{
+  "derivedAt": "2026-05-15T00:55:00Z",
+  "method": "Regex-based shape detection across all 32 prompts (8 templates) in aggregate-phase1.json. A pattern is 'universal' when it appears with >=2 example queries in >=4 of the 8 templates. Variant attribution comes from queries-tagged-A1.json (24 prompts tagged). Bing-validation comes from benefitsusa-crosscheck.json (461 real Bing grounding queries) and the empirical signals captured in PHASE_5_BRIDGE.md Section 3.",
+  "scope": {
+    "templatesAnalyzed": ["procedure-cost", "drug-cost", "qa", "glossary", "event", "persona", "ma-state", "daily-blog"],
+    "totalSubQueries": 1007,
+    "promptsScanned": 32,
+    "variantTaggedPrompts": 24
+  },
+  "patterns": [
+    {
+      "rank": 1,
+      "patternLabel": "Year-marker injection",
+      "description": "LLMs append a 4-digit year (most often 2025/2026, with forward-looking 2027 already appearing in May 2026 for projection topics) to nearly every sub-query, even when the user prompt contains no year. This is the most universal shape we observed — present in 8/8 templates with 528 total query-hits across 1,007 sub-queries (52%).",
+      "exampleQueries": [
+        { "query": "MRI cost without insurance 2025", "fromPrompt": "P01", "fromTemplate": "procedure-cost" },
+        { "query": "Ozempic cost per month without insurance 2026", "fromPrompt": "P04", "fromTemplate": "drug-cost" },
+        { "query": "does Medicare cover root canals 2025", "fromPrompt": "P07", "fromTemplate": "qa" },
+        { "query": "best Medicare Advantage plans Los Angeles 2025", "fromPrompt": "P19", "fromTemplate": "ma-state" },
+        { "query": "federal poverty level 2026", "fromPrompt": "P22", "fromTemplate": "daily-blog" },
+        { "query": "health insurance options when turning 26 lose parents plan 2025", "fromPrompt": "P13", "fromTemplate": "event" }
+      ],
+      "templatesExhibiting": ["procedure-cost", "drug-cost", "qa", "glossary", "event", "persona", "ma-state", "daily-blog"],
+      "templateCount": 8,
+      "perTemplateHitCount": { "procedure-cost": 45, "drug-cost": 60, "qa": 83, "glossary": 5, "event": 31, "persona": 121, "ma-state": 92, "daily-blog": 91 },
+      "dominantVariant": "Specification (112) > Equivalent (86) > Entailment (85) > Canonicalization (59)",
+      "bingValidated": true,
+      "bingValidationNote": "PHASE_5_BRIDGE.md Section 3 documents 91.6% (22 of 24) of BenefitsUSA real-Bing grounding queries contained year markers. The Bing crosscheck file shows the top-volume Bing queries are dominated by 'YYYY' suffixes ('texas medicaid income limits 2026' = 1,079 citations; 'wic income guidelines 2026' = 717; 'fpl 2026' = 398; 'poverty guidelines 2026' = 579). Forward-looking 2027 queries already appearing per PHASE_5_BRIDGE.md.",
+      "writerAgentRule": "EVERY page MUST inject the current year (and, for any forward-looking topic — projected, estimate, COLA, premium changes, plan year, open enrollment — also next year) in (a) <title>, (b) H1, (c) meta description, (d) first 50 words of body, (e) the caption of every numeric table. Year-anchored claims that lack a visible year are STRICT FAIL. Glossary 'concept' subtype is the only exemption."
+    },
+    {
+      "rank": 2,
+      "patternLabel": "Named-program lookup",
+      "description": "Sub-queries name the specific government program (Medicare, Medicaid, ACA/Obamacare, Medi-Cal, CHIP, SNAP, WIC, AHCCCS, SoonerCare, MaineCare, MNsure, Husky, etc.) almost reflexively. Even prompts that frame the question in lay terms ('do I qualify') get expanded into 'Medicaid eligibility for...' or 'Medicare Advantage plans in...'. 7/8 templates exhibit this — every template except glossary, which dwells in concept-space.",
+      "exampleQueries": [
+        { "query": "Medicare national average payment MRI CPT 70551 2026 Medicare Physician Fee Schedule", "fromPrompt": "P02", "fromTemplate": "procedure-cost" },
+        { "query": "Extra Help program Medicare eligibility for Ozempic 2026", "fromPrompt": "P05", "fromTemplate": "drug-cost" },
+        { "query": "Medicaid eligibility turning 26", "fromPrompt": "P13", "fromTemplate": "event" },
+        { "query": "Medicaid eligibility for self-employed Uber drivers by state", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "best Medicare Advantage plans Los Angeles 2025", "fromPrompt": "P19", "fromTemplate": "ma-state" },
+        { "query": "Medicaid income eligibility 2026", "fromPrompt": "P22", "fromTemplate": "daily-blog" }
+      ],
+      "templatesExhibiting": ["procedure-cost", "drug-cost", "qa", "event", "persona", "ma-state", "daily-blog"],
+      "templateCount": 7,
+      "perTemplateHitCount": { "procedure-cost": 2, "drug-cost": 5, "qa": 158, "event": 26, "persona": 35, "ma-state": 122, "daily-blog": 21 },
+      "dominantVariant": "Entailment (84) > Specification (79) > Equivalent (51)",
+      "bingValidated": true,
+      "bingValidationNote": "The benefitsusa-crosscheck blindSpotPatterns are dominated by 'state-specific Medicaid/SNAP/program queries' (4,197 citations weighted) — Bing decomposes user questions into named-program lookups far more aggressively than our LLM proxies do. CoveredUSA's 7/8 coverage is partial; we still under-generate the program × state × year permutation that Bing wants.",
+      "writerAgentRule": "Every page must explicitly name (with full canonical spelling) every government program in scope for the page's topic — Medicare, Medicaid, ACA/Marketplace, CHIP, and any state-branded variant (Medi-Cal, SoonerCare, AHCCCS, MNsure, Husky, MaineCare). Use the canonical name on first reference in every section, not the colloquial form. If the page covers a state, include both the federal program name and the state-specific brand in the same sentence at least once ('California Medicaid (Medi-Cal)')."
+    },
+    {
+      "rank": 3,
+      "patternLabel": "Comparison / alternative framing",
+      "description": "LLMs reflexively generate vs/versus/cheapest/best/alternative-to permutations even when the user asked an open question. This is a Specification + Entailment hybrid: the LLM assumes the user wants to choose between options and pre-emptively decomposes into pairwise comparisons. 7/8 templates show it (only daily-blog skips, because FPL-style number queries don't lend themselves to comparison).",
+      "exampleQueries": [
+        { "query": "MRI cost hospital vs imaging center without insurance", "fromPrompt": "P01", "fromTemplate": "procedure-cost" },
+        { "query": "Ozempic pill vs Rybelsus 2026", "fromPrompt": "P04", "fromTemplate": "drug-cost" },
+        { "query": "medicare part a vs part b dental coverage tooth extraction", "fromPrompt": "P08", "fromTemplate": "qa" },
+        { "query": "MAGI vs AGI for health insurance marketplace", "fromPrompt": "P11", "fromTemplate": "glossary" },
+        { "query": "COBRA vs Marketplace vs employer health insurance after 26", "fromPrompt": "P13", "fromTemplate": "event" },
+        { "query": "SCAN Health Plan 2026 benefits Los Angeles vs Kaiser Senior Advantage", "fromPrompt": "P19", "fromTemplate": "ma-state" }
+      ],
+      "templatesExhibiting": ["procedure-cost", "drug-cost", "qa", "glossary", "event", "persona", "ma-state"],
+      "templateCount": 7,
+      "perTemplateHitCount": { "procedure-cost": 13, "drug-cost": 15, "qa": 5, "glossary": 5, "event": 21, "persona": 7, "ma-state": 4 },
+      "dominantVariant": "Specification (30) > Entailment (20) > Equivalent (11)",
+      "bingValidated": "partial",
+      "bingValidationNote": "BenefitsUSA's CSV does not show heavy 'X vs Y' Bing queries — Bing's grounding decompositions favor literal lookups over comparisons. However, the comparison framing in our LLM-proxy data converts well to TABLE-shaped pages (which Bing does cite), so the pattern manifests in real Bing as 'best X for Y' single-noun lookups rather than literal 'vs' phrasings.",
+      "writerAgentRule": "Every page must contain at least one explicit comparison structure — either an HTML <table> with 2+ comparable options across labeled columns ('best when' / 'downside' / 'cost' / 'eligibility'), or an explicit H2 phrased as 'X vs Y' for the most likely binary choice in the page's topic (procedure: hospital vs imaging center; drug: brand vs generic; persona: Marketplace vs Medicaid; event: COBRA vs Marketplace; MA-state: top 2 carriers head-to-head). Comparison content lives in tables, not prose paragraphs."
+    },
+    {
+      "rank": 4,
+      "patternLabel": "How-to-apply / procedural entailment",
+      "description": "LLMs append 'how to apply', 'how to enroll', 'how to sign up', 'enrollment period', 'application' or 'documents needed' to nearly every benefits/coverage prompt. This is the Entailment variant in its purest form — the LLM infers the user will eventually need the procedural step even when they only asked for cost or eligibility. 7/8 templates exhibit it.",
+      "exampleQueries": [
+        { "query": "how to get lower cost MRI without insurance", "fromPrompt": "P01", "fromTemplate": "procedure-cost" },
+        { "query": "how to get Ozempic for $25 if insurance denies but drug is on formulary", "fromPrompt": "P05", "fromTemplate": "drug-cost" },
+        { "query": "Medicare Annual Enrollment Period Oct 15 to Dec 7 Medicare.gov", "fromPrompt": "P09", "fromTemplate": "qa" },
+        { "query": "special enrollment period health insurance turning 26 deadline", "fromPrompt": "P13", "fromTemplate": "event" },
+        { "query": "documentation needed for 1099 workers for ACA application checklist", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "Medicare when can I join switch Medicare Advantage plan official Annual Enrollment Period October 15 December 7 2026", "fromPrompt": "P19", "fromTemplate": "ma-state" }
+      ],
+      "templatesExhibiting": ["procedure-cost", "drug-cost", "qa", "glossary", "event", "persona", "ma-state"],
+      "templateCount": 7,
+      "perTemplateHitCount": { "procedure-cost": 6, "drug-cost": 5, "qa": 17, "glossary": 7, "event": 27, "persona": 22, "ma-state": 10 },
+      "dominantVariant": "Entailment (50, dominant) > Equivalent (8) > Clarification (4)",
+      "bingValidated": true,
+      "bingValidationNote": "BenefitsUSA Bing CSV contains 'iowa medicaid application 2026', 'how to apply for medicaid' style queries; the crosscheck explicitly notes 'application/how to apply action queries present' as MEDIUM signal. Bing surfaces application-flow queries especially during enrollment windows.",
+      "writerAgentRule": "Every page must contain a dedicated 'How to apply' or 'How to enroll' or 'Next steps' H2 with (a) the explicit enrollment window or deadline if applicable (with calendar dates and the current year), (b) a numbered list of application steps, (c) the canonical .gov URL where the user starts the application, and (d) a documents-needed checklist as a <ul>. This applies even on pure-cost pages — readers who learn the cost will then ask 'how do I get this'."
+    },
+    {
+      "rank": 5,
+      "patternLabel": "Authoritative .gov domain mention (with site: operator)",
+      "description": "Two related shapes appear together: explicit mentions of .gov hostnames (medicare.gov, healthcare.gov, hhs.gov, aspe.hhs.gov, cms.gov, irs.gov, ssa.gov, medicaid.gov) and the Bing-style site: operator narrowing queries to those domains. Both are signs that the LLM is trying to ground itself in primary-source authority. 6/8 templates show .gov mentions, 6/8 show the site: operator, with heavy overlap.",
+      "exampleQueries": [
+        { "query": "site:medicare.gov dental services root canal Medicare coverage 2026", "fromPrompt": "P07", "fromTemplate": "qa" },
+        { "query": "site:healthcare.gov self-employed income Marketplace estimated income ACA", "fromPrompt": "P10", "fromTemplate": "glossary" },
+        { "query": "HealthCare.gov turning 26 parents health insurance options special enrollment period", "fromPrompt": "P13", "fromTemplate": "event" },
+        { "query": "site:cms.gov 2027 Marketplace open enrollment November 1 December 15 2026 CMS final rule", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "Medicare.gov star ratings Los Angeles 2026 plans", "fromPrompt": "P19", "fromTemplate": "ma-state" },
+        { "query": "site:aspe.hhs.gov 2026 poverty guidelines HHS ASPE 2026", "fromPrompt": "P22", "fromTemplate": "daily-blog" }
+      ],
+      "templatesExhibiting": ["qa", "glossary", "event", "persona", "ma-state", "daily-blog"],
+      "templateCount": 6,
+      "perTemplateHitCount": { ".gov mentions": { "qa": 27, "glossary": 15, "event": 29, "persona": 31, "ma-state": 20, "daily-blog": 21 }, "site: operator": { "procedure-cost": 1, "qa": 24, "glossary": 4, "event": 4, "persona": 13, "ma-state": 2, "daily-blog": 8 } },
+      "dominantVariant": "Entailment (74, dominant) > Specification (19) > Canonicalization (18)",
+      "bingValidated": true,
+      "bingValidationNote": "BenefitsUSA crosscheck shows OpenAI gpt-5-mini (the best Bing predictor at 58.7% match rate) is the heaviest user of site: operator queries. Bing's own grounding queries don't use the operator (Bing already knows where it indexes), but the LLM-proxy use of site:.gov is a strong proxy for which domains Bing's index pulls from for citations.",
+      "writerAgentRule": "Every numeric or authoritative claim must be followed by an inline citation linking to a .gov primary source (medicare.gov, healthcare.gov, hhs.gov, aspe.hhs.gov, cms.gov, irs.gov, ssa.gov, medicaid.gov). Anchor text must be descriptive ('CMS 2026 Medicare Physician Fee Schedule' not 'click here'). Each page must contain at least 3 distinct .gov outbound links concentrated in the upper half of the page. KFF.org and congress.gov count as secondary-tier authority and may supplement but do not replace .gov links."
+    },
+    {
+      "rank": 6,
+      "patternLabel": "State-context preservation",
+      "description": "When a user prompt mentions a state (or major city), the LLM threads the state through nearly every downstream sub-query rather than dropping it after the first decomposition. 5/8 templates show this strongly — the templates that omit it are the three with no inherent geographic anchor (procedure-cost, drug-cost, glossary), confirming this is conditionally universal: whenever geography is in the prompt, it goes everywhere.",
+      "exampleQueries": [
+        { "query": "Texas Medicaid eligibility requirements 2026", "fromPrompt": "P25", "fromTemplate": "qa" },
+        { "query": "New Jersey health insurance age 31 extension", "fromPrompt": "P13", "fromTemplate": "event" },
+        { "query": "states with health insurance stipends for gig workers besides California", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "best Medicare Advantage plans Los Angeles 2025", "fromPrompt": "P19", "fromTemplate": "ma-state" },
+        { "query": "2026 poverty guidelines Alaska Hawaii", "fromPrompt": "P22", "fromTemplate": "daily-blog" },
+        { "query": "California Prop 22 health care subsidy requirements for Uber drivers", "fromPrompt": "P16", "fromTemplate": "persona" }
+      ],
+      "templatesExhibiting": ["qa", "event", "persona", "ma-state", "daily-blog"],
+      "templateCount": 5,
+      "perTemplateHitCount": { "qa": 76, "event": 32, "persona": 79, "ma-state": 97, "daily-blog": 3 },
+      "dominantVariant": "Specification (70, dominant) > Equivalent (23) > Entailment (10)",
+      "bingValidated": true,
+      "bingValidationNote": "BenefitsUSA crosscheck topBlindSpots are ENTIRELY state-prefixed program queries: 'texas medicaid income limits 2026' (1,079 citations), 'missouri medicaid income limits 2026' (563), 'sc medicaid income limits 2026' (370), 'Ohio Medicaid income limits 2026' (328), 'iowa medicaid income guidelines 2026' (241), 'florida medicaid income limits 2026' (218), 'nc medicaid income limits 2026' (185). PHASE_5_BRIDGE.md confirms 'state + program is the hot shape'. Our LLM proxies under-generate state permutations vs Bing's actual decomposition.",
+      "writerAgentRule": "If the page targets a state (or contains a state in its slug, title, or topic tag), the state name must appear in (a) the title, (b) the H1, (c) the meta description, (d) the first sentence of every H2 section, and (e) every table caption. Pages with NO state context must explicitly call out 'state-by-state variation' with a table or H2 covering at minimum the top-5 highest-population states (CA, TX, FL, NY, PA) plus any state-specific Medicaid brand mentioned in the topic. Generic 'in your state' or 'varies by state' prose without specific state names is STRICT FAIL."
+    },
+    {
+      "rank": 7,
+      "patternLabel": "Eligibility entailment ('do I qualify' / 'income limits' / 'requirements')",
+      "description": "User prompts that ask any benefits or coverage question reliably get expanded into eligibility-and-requirements sub-queries. 'Do I qualify?', 'income limits', 'eligibility requirements', 'who qualifies' show up across 5/8 templates — every template except procedure-cost and ma-state (where eligibility is implicit in the program rather than the gating question).",
+      "exampleQueries": [
+        { "query": "Novo Nordisk patient assistance program Ozempic eligibility", "fromPrompt": "P04", "fromTemplate": "drug-cost" },
+        { "query": "medicare medicaid dual eligibility dental coverage for extractions", "fromPrompt": "P08", "fromTemplate": "qa" },
+        { "query": "Medicaid eligibility turning 26", "fromPrompt": "P13", "fromTemplate": "event" },
+        { "query": "Medicaid eligibility for self-employed Uber drivers by state", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "Medicaid income eligibility 2026", "fromPrompt": "P22", "fromTemplate": "daily-blog" },
+        { "query": "Healthcare.gov premium tax credit eligibility 2026 family of 4 income 35k", "fromPrompt": "P23", "fromTemplate": "daily-blog" }
+      ],
+      "templatesExhibiting": ["drug-cost", "qa", "event", "persona", "daily-blog"],
+      "templateCount": 5,
+      "perTemplateHitCount": { "procedure-cost": 1, "drug-cost": 10, "qa": 51, "event": 31, "persona": 40, "ma-state": 1, "daily-blog": 34 },
+      "dominantVariant": "Entailment (48, dominant) > Specification (23) > Canonicalization (10)",
+      "bingValidated": true,
+      "bingValidationNote": "BenefitsUSA Bing CSV is dominated by literal eligibility lookups: 'fpl 2026' (398 citations), 'poverty guidelines 2026' (579), 'wic income guidelines 2026' (717), 'food stamp income guidelines 2026' (316). Eligibility is the #1 high-volume query shape on BenefitsUSA. CoveredUSA pages on cost/coverage topics still need explicit eligibility sections to capture this sub-query traffic.",
+      "writerAgentRule": "Every page must contain a 'Who qualifies' or 'Eligibility' H2 with (a) the explicit income threshold or qualifying criterion stated as a number with the current year ('Households earning under $XX,XXX in 2026'), (b) a household-size table when income is the gating factor (rows: 1, 2, 3, 4, 5+; columns: income limit, FPL %), and (c) a one-sentence answer to 'do I qualify' in plain language at the top of the section. Eligibility pages without a numeric threshold table are STRICT FAIL."
+    },
+    {
+      "rank": 8,
+      "patternLabel": "Cost lookup framing (without insurance / out-of-pocket / monthly cost / cash price)",
+      "description": "Cost-themed sub-queries reliably take the form 'X cost without insurance', 'X out of pocket', 'X cash price', 'X monthly cost', 'how much does X cost'. 5/8 templates show this — concentrated in the cost-anchored templates but also leaking into event/persona/ma-state when the user prompt has a cost concern.",
+      "exampleQueries": [
+        { "query": "MRI cost without insurance 2025", "fromPrompt": "P01", "fromTemplate": "procedure-cost" },
+        { "query": "Ozempic cost per month without insurance 2026", "fromPrompt": "P04", "fromTemplate": "drug-cost" },
+        { "query": "how much does COBRA cost percentage of premium 102% 150% DOL", "fromPrompt": "P14", "fromTemplate": "event" },
+        { "query": "HealthCare.gov cost sharing reductions silver plan lower out of pocket costs official", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "Medicare Part D 2026 out-of-pocket cap and changes", "fromPrompt": "P20", "fromTemplate": "ma-state" }
+      ],
+      "templatesExhibiting": ["procedure-cost", "drug-cost", "event", "persona", "ma-state"],
+      "templateCount": 5,
+      "perTemplateHitCount": { "procedure-cost": 56, "drug-cost": 38, "event": 2, "persona": 2, "ma-state": 5 },
+      "dominantVariant": "Specification (38) > Equivalent (31) > Entailment (21)",
+      "bingValidated": "partial",
+      "bingValidationNote": "BenefitsUSA's CSV is income/eligibility-heavy rather than cost-heavy (different vertical), but PHASE_5_BRIDGE.md notes Equivalent is HIGH on cost concepts. Real Bing cost queries are visible on adjacent topics ('Medicare Part B premium 2026', 'OOP cap 2026'). The '$1,328 not around $1,300' rule in framework Section 4.4 already operationalizes this for procedure/drug pages.",
+      "writerAgentRule": "Any page with cost in scope must use the explicit literal patterns 'without insurance', 'out of pocket', 'cash price', and 'monthly cost' verbatim somewhere in the body — not just paraphrased. Provide unhedged dollar amounts ('$1,328', not 'around $1,300'). Cost ranges in tables; single anchor numbers in the hero answer. Procedures and drugs require a 'cash price without insurance' row or paragraph explicitly labeled as such."
+    },
+    {
+      "rank": 9,
+      "patternLabel": "Demographic specificity (family of N / single mom / 1099 / self-employed / senior)",
+      "description": "LLMs reliably narrow queries by adding demographic qualifiers — 'family of 4', 'household of 3', 'single mom', '1099 freelancer', 'self-employed', 'gig worker', 'senior'. This is the Specification fan-out variant in its demographic form. 5/8 templates show it, with persona unsurprisingly the heaviest user.",
+      "exampleQueries": [
+        { "query": "Ohio Medicaid income limit family of 4 2026", "fromPrompt": "P27", "fromTemplate": "qa" },
+        { "query": "how is income calculated for ACA Obamacare self employed 2025", "fromPrompt": "P10", "fromTemplate": "glossary" },
+        { "query": "health insurance options for self-employed gig workers Uber drivers 2025", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "SCAN Health Plan 2026 benefits Los Angeles vs Kaiser Senior Advantage", "fromPrompt": "P19", "fromTemplate": "ma-state" },
+        { "query": "estimated 2026 federal poverty level for individual and family of 4", "fromPrompt": "P22", "fromTemplate": "daily-blog" }
+      ],
+      "templatesExhibiting": ["qa", "glossary", "persona", "ma-state", "daily-blog"],
+      "templateCount": 5,
+      "perTemplateHitCount": { "qa": 9, "glossary": 17, "event": 1, "persona": 110, "ma-state": 5, "daily-blog": 23 },
+      "dominantVariant": "Entailment (43) > Canonicalization (39) > Equivalent (34) > Specification (24)",
+      "bingValidated": true,
+      "bingValidationNote": "BenefitsUSA Bing CSV contains 'family of 4' style lookups for FPL/Medicaid. The household-size table is the canonical Bing-citable artifact. The crosscheck overshootPatterns flag 'self-employed deduction sub-questions' (6 queries) as overgenerated by Anthropic, suggesting our proxies overweight this — but the household-size dimension is correctly weighted.",
+      "writerAgentRule": "Income- or eligibility-related pages must include a household-size table with rows for 1, 2, 3, 4, 5+ persons. Persona/demographic pages must use the canonical persona name (matching the page slug) verbatim in title, H1, meta, and the first sentence of every H2. Where the topic involves income calculation, name the demographic explicitly in eligibility language ('a self-employed 1099 worker earning $40,000 in 2026 qualifies if...')."
+    },
+    {
+      "rank": 10,
+      "patternLabel": "Table/chart-shape framing ('by household size' / 'by state' / 'guidelines')",
+      "description": "LLMs generate queries that explicitly invite a table answer: 'by household size', 'by state', 'by family size', 'guidelines' (used as the lookup-table noun), 'tier'. 4/8 templates show this — qa, event, persona, daily-blog. Notably absent in procedure/drug because their tables are about price, not lookup-grids.",
+      "exampleQueries": [
+        { "query": "Medicaid dental coverage for adults varies by state Medicaid dental coverage adults", "fromPrompt": "P08", "fromTemplate": "qa" },
+        { "query": "Medicaid eligibility for 26 year olds by state", "fromPrompt": "P14", "fromTemplate": "event" },
+        { "query": "Medicaid eligibility for self-employed Uber drivers by state", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "federal poverty level 2026 guidelines", "fromPrompt": "P22", "fromTemplate": "daily-blog" }
+      ],
+      "templatesExhibiting": ["qa", "event", "persona", "daily-blog"],
+      "templateCount": 4,
+      "perTemplateHitCount": { "drug-cost": 1, "qa": 13, "event": 4, "persona": 5, "daily-blog": 37 },
+      "dominantVariant": "Canonicalization (17) > Specification (15) > Entailment (8)",
+      "bingValidated": true,
+      "bingValidationNote": "benefitsusa-crosscheck blindSpotPatterns includes 'chart/table-shaped queries (visual lookup)' weighted at 253 citations. Bing decomposes 'guidelines' as a TABLE LOOKUP, not a concept. The framework already notes 'Tables + lists comprise 25–35% of total page content' but does not explicitly instruct writer agents that lookup-table topics need a literal 'guidelines' or 'by [dimension]' table.",
+      "writerAgentRule": "Any page whose topic includes the words 'guidelines', 'limits', 'thresholds', 'rates', or 'by state/age/income/household' MUST contain an HTML <table> whose <caption> uses that exact lookup phrasing (e.g., '2026 Federal Poverty Guidelines by Household Size'). The table must have explicit <th> headers and a one-sentence prose summary immediately preceding it. Multi-dimensional topics (state × program × year) need either a multi-column table or multiple linked tables — not a paragraph."
+    },
+    {
+      "rank": 11,
+      "patternLabel": "Subsidy / Premium Tax Credit reference",
+      "description": "LLMs append subsidy / premium tax credit / cost-sharing reduction / APTC / CSR / PTC to coverage-related queries even when the user did not mention financial assistance. Strong Entailment pattern. 4/8 templates show this — concentrated in glossary, event, persona, daily-blog.",
+      "exampleQueries": [
+        { "query": "MAGI calculation for health insurance subsidies", "fromPrompt": "P11", "fromTemplate": "glossary" },
+        { "query": "eligibility for subsidies marketplace insurance 26 years old", "fromPrompt": "P13", "fromTemplate": "event" },
+        { "query": "California Prop 22 health care subsidy requirements for Uber drivers", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "Healthcare.gov premium tax credit eligibility 2026 family of 4 income 35k", "fromPrompt": "P23", "fromTemplate": "daily-blog" }
+      ],
+      "templatesExhibiting": ["glossary", "event", "persona", "daily-blog"],
+      "templateCount": 4,
+      "perTemplateHitCount": { "glossary": 19, "event": 7, "persona": 14, "daily-blog": 25 },
+      "dominantVariant": "Entailment (33, dominant) > Specification (12) > Canonicalization (11)",
+      "bingValidated": "partial",
+      "bingValidationNote": "BenefitsUSA crosscheck overshootPatterns flag 'policy/subsidy-cliff/IRA extension queries' as 5 LLM-generated queries that did not match Bing — suggesting LLMs over-generate the policy framing. However, 'premium tax credit' as a literal phrase appears in adjacent Bing data. The pattern is moderately Bing-validated for the entity name; less so for the policy-debate phrasings.",
+      "writerAgentRule": "Any page covering ACA, Marketplace, or coverage-affordability topics must explicitly mention 'premium tax credit (PTC)' and 'cost-sharing reduction (CSR)' by their full canonical names on first reference, then by acronym. Subsidy eligibility pages must include the income-band thresholds (100%–400% FPL with the dollar equivalent for 2026) in a table, and must explicitly call out the IRA-extension status as of the current year."
+    },
+    {
+      "rank": 12,
+      "patternLabel": "Local-search / find-near-me / phone-number lookup",
+      "description": "LLMs surface 'near me', 'in my area', 'phone', 'hotline', 'find a' queries when the user prompt suggests action-readiness. Lower volume than the others but consistently present. 4/8 templates show it.",
+      "exampleQueries": [
+        { "query": "1-800-MEDICARE phone number Medicare.gov contact", "fromPrompt": "P08", "fromTemplate": "qa" },
+        { "query": "COMPASS Pennsylvania phone number apply for Medicaid COMPASS contact", "fromPrompt": "P28", "fromTemplate": "event" },
+        { "query": "HRSA community health centers sliding fee scale find a health center", "fromPrompt": "P16", "fromTemplate": "persona" },
+        { "query": "Los Angeles HICAP Medicare counseling phone official", "fromPrompt": "P19", "fromTemplate": "ma-state" }
+      ],
+      "templatesExhibiting": ["qa", "event", "persona", "ma-state"],
+      "templateCount": 4,
+      "perTemplateHitCount": { "qa": 5, "event": 2, "persona": 4, "ma-state": 3 },
+      "dominantVariant": "Entailment (6, all observed)",
+      "bingValidated": "weak",
+      "bingValidationNote": "BenefitsUSA Bing CSV does not surface heavy 'near me' queries — Bing tends to handle local intent through its own geo-routing rather than via the LLM grounding queries. However, the pattern's universality across 4 templates suggests AI assistants (ChatGPT, Claude) will look for explicit phone numbers and 'find a [provider]' anchor text. Worth covering even though Bing's signal is weak.",
+      "writerAgentRule": "Action-oriented pages (events, personas, state pages, application Q&As) must include an 'Where to get help' or 'Contact' callout box with (a) the canonical 1-800 federal hotline relevant to the topic (1-800-MEDICARE for Medicare; healthcare.gov 1-800-318-2596 for Marketplace; state Medicaid hotline for state pages), (b) the official .gov 'find a [provider/center/navigator]' URL, and (c) the canonical state-program contact phone if the page is state-anchored."
+    }
+  ],
+  "summary": {
+    "totalPatternsFound": 12,
+    "patternsAtFullCoverage8of8": 1,
+    "patternsAt7of8": 3,
+    "patternsAt6of8": 1,
+    "patternsAt5of8": 4,
+    "patternsAt4of8": 3,
+    "currentlyEnforced": [
+      "Year-marker injection — partially enforced (Section 4.2 + Section 8.4 strict validator); Phase 5 Bridge §3 calls out tight enforcement justified by 91.6% Bing rate",
+      "Authoritative .gov citation — enforced via Section 4.9 inline-source rule, but density is not gated",
+      "Comparison framing — partially enforced via per-template playbooks (Section 5.1 site-of-service table; Section 5.6 decision-matrix table) but not stated as a UNIVERSAL writer-agent rule"
+    ],
+    "missingFromFramework": [
+      "Named-program canonical-spelling-on-first-reference rule (rank 2) — implicit in Section 4.5 named-entity rule but not specifically about programs",
+      "How-to-apply / next-steps required H2 (rank 4) — appears in some per-template playbooks (event, persona) but not as a global rule",
+      "State-context-everywhere rule when state is in scope (rank 6) — implicit in MA-state playbook but no global cross-template rule",
+      "Eligibility H2 + household-size table required when income is in scope (rank 7) — not stated globally",
+      "Cost-lookup literal-phrase rule (rank 8) — implicit but no rule requiring 'without insurance' / 'out of pocket' verbatim",
+      "Lookup-table caption rule (rank 10) — Section 4.6 covers structural proportion but not lookup-phrasing in captions",
+      "Local/contact callout (rank 12) — completely absent"
+    ],
+    "topRecommendationForGlobalRules": "Add THREE universal writer-agent rules to every CoveredUSA writer prompt as Phase 5 ships, in this priority order. (1) STATE-CONTEXT-EVERYWHERE (rank 6): when a state is in the page slug/topic, the state name must appear in title + H1 + meta + every H2 first sentence + every table caption. This is empirically the highest-leverage missing rule — Bing's top-citation queries are state-prefixed and our LLM proxies under-generate the permutation. (2) ELIGIBILITY-HOUSEHOLD-SIZE-TABLE (rank 7): every page covering income or coverage eligibility must include a household-size lookup table with year-tagged thresholds. This converts our content into the literal lookup format Bing wants. (3) HOW-TO-APPLY-SECTION (rank 4): every page must have a 'next steps / how to apply' H2 with enrollment window dates, numbered application steps, .gov starting URL, and documents-needed checklist. Together these three rules close the gap between our LLM-proxy fan-out coverage and Bing's actual decomposition shape — they target the highest-volume blindspots in the BenefitsUSA crosscheck (state-prefixed eligibility queries weighted at 4,197 citations and table-shaped queries at 253) without requiring per-template carveouts."
+  }
+}

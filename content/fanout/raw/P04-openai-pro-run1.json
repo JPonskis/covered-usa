@@ -1,0 +1,30 @@
+{
+  "promptId": "P04",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "first-person-urgent",
+  "prompt": "how much will Ozempic cost me per month if my insurance doesnt cover it",
+  "provider": "openai-pro",
+  "model": "gpt-5.5",
+  "run": 1,
+  "timestamp": "2026-05-14T23:25:47.321Z",
+  "durationMs": 25413,
+  "queries": [
+    "Ozempic list price monthly cost without insurance 2026 manufacturer Novo Nordisk"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 25981,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1208,
+    "output_tokens_details": {
+      "reasoning_tokens": 793
+    },
+    "total_tokens": 27189
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

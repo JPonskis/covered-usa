@@ -1,0 +1,31 @@
+{
+  "promptId": "P04",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "first-person-urgent",
+  "prompt": "how much will Ozempic cost me per month if my insurance doesnt cover it",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:07:38.027Z",
+  "durationMs": 26133,
+  "queries": [
+    "Ozempic cash price per month 2026 GoodRx",
+    "Novo Nordisk patient assistance program Ozempic uninsured NovoCare patient assistance 2026"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 13384,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2113,
+    "output_tokens_details": {
+      "reasoning_tokens": 1408
+    },
+    "total_tokens": 15497
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

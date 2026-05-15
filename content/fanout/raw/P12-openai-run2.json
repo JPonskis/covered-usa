@@ -1,0 +1,32 @@
+{
+  "promptId": "P12",
+  "template": "glossary",
+  "topic": "MAGI",
+  "variant": "specific-detail",
+  "prompt": "do i count my 401k withdrawals when calculating my income for aca subsidies",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T22:36:53.941Z",
+  "durationMs": 32474,
+  "queries": [
+    "Does 401(k) withdrawal count as income for ACA premium tax credit site:healthcare.gov",
+    "How do I report income changes to Marketplace when my income changes healthcare.gov report income change advance premium tax credit",
+    "Qualified charitable distribution IRA not included in gross income IRS QCD"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 18004,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2359,
+    "output_tokens_details": {
+      "reasoning_tokens": 1664
+    },
+    "total_tokens": 20363
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

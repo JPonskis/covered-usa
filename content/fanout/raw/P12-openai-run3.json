@@ -1,0 +1,31 @@
+{
+  "promptId": "P12",
+  "template": "glossary",
+  "topic": "MAGI",
+  "variant": "specific-detail",
+  "prompt": "do i count my 401k withdrawals when calculating my income for aca subsidies",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-14T22:37:25.560Z",
+  "durationMs": 31618,
+  "queries": [
+    "Does 401(k) withdrawal count as income for ACA premium tax credit",
+    "Are 401(k) loans taxable income IRS 401k loan repayment not income"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 21319,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2000,
+    "output_tokens_details": {
+      "reasoning_tokens": 1152
+    },
+    "total_tokens": 23319
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

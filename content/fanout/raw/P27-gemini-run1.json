@@ -1,0 +1,33 @@
+{
+  "promptId": "P27",
+  "template": "qa",
+  "topic": "medicaid-ohio",
+  "variant": "state-plus-family",
+  "prompt": "ohio medicaid income limit for a family of 4 2026",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 1,
+  "timestamp": "2026-05-15T00:16:33.787Z",
+  "durationMs": 10551,
+  "queries": [
+    "2026 Federal Poverty Level guidelines family of 4",
+    "when are 2026 federal poverty levels released",
+    "Ohio Medicaid income eligibility 2026 MAGI",
+    "Ohio Medicaid income limits family of 4 2026"
+  ],
+  "queryCount": 4,
+  "usage": {
+    "promptTokenCount": 175,
+    "candidatesTokenCount": 584,
+    "totalTokenCount": 1632,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 175
+      }
+    ],
+    "thoughtsTokenCount": 873,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

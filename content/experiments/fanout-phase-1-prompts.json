@@ -176,6 +176,65 @@
       "topic": "FPL",
       "variant": "specific-detail",
       "prompt": "im trying to figure out the income limits for marketplace subsidies do i qualify if i make 60k"
+    },
+    {
+      "id": "P25",
+      "template": "qa",
+      "topic": "medicaid-texas",
+      "variant": "state-explicit",
+      "prompt": "do i qualify for medicaid in texas this year",
+      "note": "State-explicit prompt — tests whether LLM fans out to texas-specific Medicaid sub-queries"
+    },
+    {
+      "id": "P26",
+      "template": "persona",
+      "topic": "single-mom-florida",
+      "variant": "state-plus-persona",
+      "prompt": "im a single mom in florida do i qualify for medicaid"
+    },
+    {
+      "id": "P27",
+      "template": "qa",
+      "topic": "medicaid-ohio",
+      "variant": "state-plus-family",
+      "prompt": "ohio medicaid income limit for a family of 4 2026"
+    },
+    {
+      "id": "P28",
+      "template": "event",
+      "topic": "lost-job-pennsylvania",
+      "variant": "state-plus-event",
+      "prompt": "im in pennsylvania and lost my job whats my best health insurance option"
+    },
+    {
+      "id": "P29",
+      "template": "ma-state",
+      "topic": "missouri-MA",
+      "variant": "different-state-MA",
+      "prompt": "im 67 in missouri what medicare advantage plan should i pick"
+    },
+    {
+      "id": "P30",
+      "template": "persona",
+      "topic": "self-employed-georgia",
+      "variant": "state-plus-persona",
+      "prompt": "best aca plans in georgia 2026 for a self employed person"
+    },
+    {
+      "id": "P31",
+      "template": "qa",
+      "topic": "medi-cal-california",
+      "variant": "state-named-program",
+      "prompt": "do i qualify for medi-cal in california 2026",
+      "note": "Tests whether LLM uses the state-named brand (medi-cal) or normalizes to california medicaid"
+    },
+    {
+      "id": "P32",
+      "template": "qa",
+      "topic": "ahcccs-arizona",
+      "variant": "state-named-program",
+      "prompt": "im in arizona and need ahcccs how do i apply",
+      "note": "Tests state-named program brand decomposition for ahcccs"
     }
   ]
 }

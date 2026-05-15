@@ -1,0 +1,34 @@
+{
+  "promptId": "P26",
+  "template": "persona",
+  "topic": "single-mom-florida",
+  "variant": "state-plus-persona",
+  "prompt": "im a single mom in florida do i qualify for medicaid",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 3,
+  "timestamp": "2026-05-15T00:17:02.316Z",
+  "durationMs": 61311,
+  "queries": [
+    "Florida Medicaid eligibility parents income limit 2026 AHCA",
+    "Florida Medicaid parents income limit percent federal poverty level 2026 'parents' 'caretaker' 'income limit' 'Florida' AHCA DCF",
+    "2026 Federal Poverty Guidelines HHS 2026 'Federal Poverty Level' 2026 HHS April 2026",
+    "Florida 'Section 1931' income limit AFDC 2026 dollar amounts 'parents' 'income limit' 'Florida' 'AFDC standard' '1931' '2026' 'monthly' 'DCF' 'AHCA'",
+    "Appendix A-7 'Family-Related Medicaid Income Limit Chart' myflfamilies Appendix A-7 Florida 'income limit chart' 'family-related' 'Appendix A-7' 'DCF'"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 33870,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 4524,
+    "output_tokens_details": {
+      "reasoning_tokens": 3648
+    },
+    "total_tokens": 38394
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "promptId": "P25",
+  "template": "qa",
+  "topic": "medicaid-texas",
+  "variant": "state-explicit",
+  "prompt": "do i qualify for medicaid in texas this year",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 1,
+  "timestamp": "2026-05-15T00:35:09.770Z",
+  "durationMs": 30908,
+  "queries": [
+    "Texas Medicaid eligibility requirements 2026"
+  ],
+  "queryCount": 1,
+  "usage": {
+    "input_tokens": 18511,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1305,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 1,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

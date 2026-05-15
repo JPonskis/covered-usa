@@ -1,0 +1,34 @@
+{
+  "promptId": "P18",
+  "template": "persona",
+  "topic": "gig-workers",
+  "variant": "specific-detail",
+  "prompt": "im a 1099 freelancer with no benefits how do i get covered and can i deduct the cost",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T23:07:38.666Z",
+  "durationMs": 12889,
+  "queries": [
+    "deducting health insurance premiums as a freelancer 1099",
+    "health insurance options for 1099 freelancers USA",
+    "how to get health insurance as a freelancer no benefits",
+    "self-employed health insurance tax deduction rules 1099",
+    "disability and dental insurance for freelancers tax deductible"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "promptTokenCount": 158,
+    "candidatesTokenCount": 908,
+    "totalTokenCount": 1746,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 158
+      }
+    ],
+    "thoughtsTokenCount": 680,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

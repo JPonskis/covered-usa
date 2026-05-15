@@ -1,0 +1,34 @@
+{
+  "promptId": "P28",
+  "template": "event",
+  "topic": "lost-job-pennsylvania",
+  "variant": "state-plus-event",
+  "prompt": "im in pennsylvania and lost my job whats my best health insurance option",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-15T00:17:24.797Z",
+  "durationMs": 47098,
+  "queries": [
+    "COBRA continuation coverage eligibility 20 employees 18 months federal law",
+    "COMPASS Pennsylvania phone number apply for Medicaid COMPASS contact",
+    "COBRA cost 102 percent of premium 2 percent administration fee '102% premium' Department of Labor EBSA",
+    "How long do you have to elect COBRA 60 days election period 'election period' Department of Labor COBRA",
+    "short-term health insurance doesn't cover pre-existing conditions not ACA compliant 'short-term' CMS warning 'not required to cover pre-existing'"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 26295,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3410,
+    "output_tokens_details": {
+      "reasoning_tokens": 2240
+    },
+    "total_tokens": 29705
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

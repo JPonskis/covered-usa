@@ -1,0 +1,32 @@
+{
+  "promptId": "P07",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "first-person-urgent",
+  "prompt": "im 67 and need a root canal will medicare pay for any of it",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 3,
+  "timestamp": "2026-05-14T22:20:31.422Z",
+  "durationMs": 9456,
+  "queries": [
+    "medicare coverage for medically necessary dental procedures",
+    "does medicare advantage cover root canals",
+    "does medicare pay for root canal for 67 year old"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "promptTokenCount": 139,
+    "candidatesTokenCount": 608,
+    "totalTokenCount": 1227,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 139
+      }
+    ],
+    "thoughtsTokenCount": 480,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

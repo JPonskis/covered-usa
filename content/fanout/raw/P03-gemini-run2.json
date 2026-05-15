@@ -1,0 +1,44 @@
+{
+  "promptId": "P03",
+  "template": "procedure-cost",
+  "topic": "MRI",
+  "variant": "info-seeking",
+  "prompt": "im supposed to get an mri tomorrow and im worried about the bill what should i expect to pay",
+  "provider": "gemini",
+  "model": "gemini-3-flash-preview",
+  "run": 2,
+  "timestamp": "2026-05-14T22:05:05.985Z",
+  "durationMs": 17302,
+  "queries": [
+    "cost of MRI for different body parts and contrast dye",
+    "average cost of an MRI with insurance vs without insurance 2026",
+    "factors affecting MRI cost hospital vs imaging center",
+    "how to estimate MRI cost before appointment",
+    "financial assistance programs for MRI scans",
+    "No Surprises Act MRI Good Faith Estimate rules for insured vs uninsured",
+    "how to get a good faith estimate for MRI tomorrow"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "promptTokenCount": 170,
+    "candidatesTokenCount": 834,
+    "totalTokenCount": 3003,
+    "cachedContentTokenCount": 87,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 170
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 87
+      }
+    ],
+    "toolUsePromptTokenCount": 779,
+    "thoughtsTokenCount": 1220,
+    "serviceTier": "standard"
+  },
+  "raw": {}
+}

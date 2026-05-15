@@ -1,0 +1,32 @@
+{
+  "promptId": "P14",
+  "template": "event",
+  "topic": "turning-26",
+  "variant": "caretaker",
+  "prompt": "my daughter is turning 26 next month and needs her own insurance what do we do",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T22:46:01.883Z",
+  "durationMs": 52320,
+  "queries": [
+    "healthcare.gov stay on parents plan until 26 dependent age 26 rules",
+    "healthcare.gov special enrollment period losing job-based coverage \"60 days\" \"expects to lose\"",
+    "how much does COBRA cost percentage of premium 102% 150% DOL"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 20851,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 3383,
+    "output_tokens_details": {
+      "reasoning_tokens": 2368
+    },
+    "total_tokens": 24234
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

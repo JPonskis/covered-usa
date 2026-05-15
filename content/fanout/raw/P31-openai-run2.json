@@ -1,0 +1,31 @@
+{
+  "promptId": "P31",
+  "template": "qa",
+  "topic": "medi-cal-california",
+  "variant": "state-named-program",
+  "prompt": "do i qualify for medi-cal in california 2026",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-15T00:18:24.609Z",
+  "durationMs": 32428,
+  "queries": [
+    "Medi-Cal eligibility 2026 California income limits 2026 DHCS",
+    "DHCS full-scope Medi-Cal regardless of immigration status 2026 DHCS page 'full-scope' 'immigration' California 2026"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 18192,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2260,
+    "output_tokens_details": {
+      "reasoning_tokens": 1536
+    },
+    "total_tokens": 20452
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

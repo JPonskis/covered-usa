@@ -1,0 +1,36 @@
+{
+  "promptId": "P21",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "specific-detail",
+  "prompt": "what medicare advantage plans are good in southern california for someone with diabetes",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 1,
+  "timestamp": "2026-05-14T23:17:32.219Z",
+  "durationMs": 43349,
+  "queries": [
+    "best Medicare Advantage plans Southern California diabetes 2025",
+    "Medicare Advantage plans diabetes coverage Southern California 2025 ratings"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 32968,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 2550,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 2,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

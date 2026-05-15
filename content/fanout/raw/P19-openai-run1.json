@@ -1,0 +1,31 @@
+{
+  "promptId": "P19",
+  "template": "ma-state",
+  "topic": "california-MA",
+  "variant": "first-person-urgent",
+  "prompt": "im 70 in los angeles and need a medicare advantage plan whats the best option",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T23:09:54.856Z",
+  "durationMs": 29995,
+  "queries": [
+    "Medicare Plan Finder Medicare.gov 2026",
+    "Medicare enrollment periods 2026 AEP OEP SEP Medicare.gov"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 12959,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2532,
+    "output_tokens_details": {
+      "reasoning_tokens": 1408
+    },
+    "total_tokens": 15491
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

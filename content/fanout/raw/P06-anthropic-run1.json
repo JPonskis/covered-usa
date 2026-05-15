@@ -1,0 +1,36 @@
+{
+  "promptId": "P06",
+  "template": "drug-cost",
+  "topic": "Ozempic",
+  "variant": "info-seeking",
+  "prompt": "im paying cash for ozempic every month is there any way to get it cheaper",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "run": 1,
+  "timestamp": "2026-05-14T22:13:12.324Z",
+  "durationMs": 30349,
+  "queries": [
+    "ways to save money on Ozempic without insurance 2025",
+    "Ozempic manufacturer savings card discount program 2025"
+  ],
+  "queryCount": 2,
+  "usage": {
+    "input_tokens": 31650,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1512,
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "server_tool_use": {
+      "web_search_requests": 2,
+      "web_fetch_requests": 0
+    }
+  },
+  "raw": {
+    "stopReason": "end_turn"
+  }
+}

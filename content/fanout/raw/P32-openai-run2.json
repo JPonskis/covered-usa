@@ -1,0 +1,34 @@
+{
+  "promptId": "P32",
+  "template": "qa",
+  "topic": "ahcccs-arizona",
+  "variant": "state-named-program",
+  "prompt": "im in arizona and need ahcccs how do i apply",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-15T00:19:10.791Z",
+  "durationMs": 46958,
+  "queries": [
+    "How to apply for AHCCCS Arizona how to apply Health-e-Arizona Plus official",
+    "AHCCCS documents needed to apply identity income proof residency 'what documents' 'DES Documents Center' 'Health-e-Arizona Plus documents'",
+    "Documents to verify AHCCCS identity proof 'Documents you can use' 'DES Documents Center verification' 'what documents does AHCCCS need'",
+    "site:des.az.gov documents to verify AHCCCS identity income residency 'verification' 'Documents you can use'",
+    "DES Documents Center verification list 'Documents Center' des.az.gov 'verification' 'identity' 'proof of income' 'documents center DES'"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 27562,
+    "input_tokens_details": {
+      "cached_tokens": 4352
+    },
+    "output_tokens": 2977,
+    "output_tokens_details": {
+      "reasoning_tokens": 2112
+    },
+    "total_tokens": 30539
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

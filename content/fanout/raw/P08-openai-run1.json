@@ -1,0 +1,32 @@
+{
+  "promptId": "P08",
+  "template": "qa",
+  "topic": "medicare-dental",
+  "variant": "caretaker",
+  "prompt": "my dad has medicare and needs his teeth pulled is that going to be covered",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T22:22:03.111Z",
+  "durationMs": 30399,
+  "queries": [
+    "Does Original Medicare cover dental services tooth extraction Medicare.gov",
+    "1-800-MEDICARE phone number Medicare.gov contact",
+    "Medicaid dental coverage for adults varies by state Medicaid dental coverage adults 'tooth extraction' 'Medicaid.gov'"
+  ],
+  "queryCount": 3,
+  "usage": {
+    "input_tokens": 17321,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 2002,
+    "output_tokens_details": {
+      "reasoning_tokens": 1280
+    },
+    "total_tokens": 19323
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

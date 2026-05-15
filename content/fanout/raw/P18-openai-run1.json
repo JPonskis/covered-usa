@@ -1,0 +1,34 @@
+{
+  "promptId": "P18",
+  "template": "persona",
+  "topic": "gig-workers",
+  "variant": "specific-detail",
+  "prompt": "im a 1099 freelancer with no benefits how do i get covered and can i deduct the cost",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 1,
+  "timestamp": "2026-05-14T23:05:04.220Z",
+  "durationMs": 57093,
+  "queries": [
+    "Self-employed health insurance deduction IRS",
+    "Health insurance deduction for self-employed - IRS 'Self-employed health insurance deduction' site:irs.gov",
+    "HealthCare.gov special enrollment period qualify 'when you can enroll' 'life events' 'open enrollment'",
+    "self-employed health insurance deduction limited to net profit 'cannot exceed your earned income' IRS 'Form 7206' 'limitations'",
+    "COBRA continuation coverage 'how to get' Department of Labor 'COBRA' 'eligibility'"
+  ],
+  "queryCount": 5,
+  "usage": {
+    "input_tokens": 30184,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 4153,
+    "output_tokens_details": {
+      "reasoning_tokens": 2368
+    },
+    "total_tokens": 34337
+  },
+  "raw": {
+    "status": "completed"
+  }
+}

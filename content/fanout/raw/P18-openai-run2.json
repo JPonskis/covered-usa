@@ -1,0 +1,36 @@
+{
+  "promptId": "P18",
+  "template": "persona",
+  "topic": "gig-workers",
+  "variant": "specific-detail",
+  "prompt": "im a 1099 freelancer with no benefits how do i get covered and can i deduct the cost",
+  "provider": "openai",
+  "model": "gpt-5-mini",
+  "run": 2,
+  "timestamp": "2026-05-14T23:06:03.699Z",
+  "durationMs": 59478,
+  "queries": [
+    "Self-employed health insurance deduction IRS 2026 'self-employed health insurance' IRS",
+    "healthcare.gov how to buy health insurance as self-employed 'freelancer' 'independent contractor' 'Marketplace'",
+    "Premium Tax Credit and self-employed health insurance deduction IRS Publication 974 'self-employed' 'premium tax credit' 'deduction'",
+    "Department of Labor COBRA information 'COBRA continuation coverage' 'dol.gov'",
+    "Medicaid eligibility how to apply medicaid.gov 'who qualifies' 'how to apply' 'income limits'",
+    "Medicaid.gov 'Apply for Medicaid' 'how to apply' 'who qualifies' 'Medicaid eligibility' site:medicaid.gov",
+    "Does self-employed health insurance deduction reduce self-employment tax 'one-half of self-employment tax' 'net earnings' 'IRS'"
+  ],
+  "queryCount": 7,
+  "usage": {
+    "input_tokens": 30535,
+    "input_tokens_details": {
+      "cached_tokens": 3712
+    },
+    "output_tokens": 4192,
+    "output_tokens_details": {
+      "reasoning_tokens": 2944
+    },
+    "total_tokens": 34727
+  },
+  "raw": {
+    "status": "completed"
+  }
+}
