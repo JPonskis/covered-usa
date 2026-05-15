@@ -7,6 +7,10 @@ import { getAllGlossarySlugs, getGlossaryBySlug } from '@/lib/glossary';
 import { getAllEventSlugs, getEventBySlug } from '@/lib/events';
 import { getAllPersonaSlugs, getPersonaBySlug } from '@/lib/personas';
 import { getAllMAStateSlugs, getMAStateBySlug } from '@/lib/medicare-advantage';
+import {
+  getAllMedicaidStateSlugs,
+  getMedicaidStateData,
+} from '@/lib/medicaid-income-limits';
 
 const BASE_URL = 'https://coveredusa.org';
 
@@ -146,6 +150,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // State Medicaid income-limit pages — auto-pulled from
+  // content/data/medicaid-income-limits/*.json. Track D (FANOUT §5.1):
+  // the single highest-volume Bing-citation pattern across the entire
+  // BenefitsUSA dataset. Priority 0.9 to match the ma-state factory.
+  const medicaidStateEntries: MetadataRoute.Sitemap = getAllMedicaidStateSlugs().map(
+    (slug) => {
+      const data = getMedicaidStateData(slug);
+      const lastModified = data?.lastUpdated ? new Date(data.lastUpdated) : new Date();
+      return localizedEntry(`/medicaid-income-limits/${slug}`, {
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.9,
+      });
+    }
+  );
+
   return [
     ...localizedPages,
     ...procedureEntries,
@@ -155,6 +175,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...eventEntries,
     ...personaEntries,
     ...maStateEntries,
+    ...medicaidStateEntries,
     ...blogEntries,
   ];
 }
