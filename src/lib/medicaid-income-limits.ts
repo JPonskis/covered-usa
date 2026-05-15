@@ -170,6 +170,23 @@ export interface MedicaidSource {
   note: LocalizedString;
 }
 
+/**
+ * Expansion-status structured object. Replaces the prior boolean.
+ * - `status`: "expanded" | "not-expanded" | "partial" (canonical 40+DC
+ *   expansion list per KFF; "partial" reserved for GA Pathways and similar).
+ * - `effectiveDate`: ISO YYYY-MM-DD when the state expanded (e.g., "2014-01-01"
+ *   for early expanders, "2023-12-01" for NC, "2021-07-01" for OK SQ 802).
+ *   Optional; omit for non-expansion states.
+ * - `expansionNote`: localized prose explaining the practical impact (e.g.,
+ *   "Texas did not expand; adults without dependent children rarely qualify
+ *   regardless of income"). Optional but strongly recommended.
+ */
+export interface ExpansionStatus {
+  status: 'expanded' | 'not-expanded' | 'partial';
+  effectiveDate?: string;
+  expansionNote?: LocalizedString;
+}
+
 // ─── Full Medicaid state shape ────────────────────────────────────────────
 
 export interface MedicaidIncomeLimitsState {
@@ -184,20 +201,28 @@ export interface MedicaidIncomeLimitsState {
   /**
    * State-named program brand: "Medi-Cal", "AHCCCS", "ARHOME", "MaineCare",
    * "BadgerCare", "SoonerCare", "TennCare", "MassHealth", "HUSKY Health",
-   * "Apple Health", "TexasBenefits", etc. Use "Medicaid" if no state brand.
+   * "Apple Health", etc. Use "[State] Medicaid" if no state brand.
+   * Renamed from `programBrand` per canonical schema (see
+   * `specs/topic-research/track-d-canonical-schema.md`).
    */
-  programBrand: string;
+  stateBrand: string;
   /**
    * Long-form display name, e.g., "Medi-Cal (California Medicaid)" or
-   * "Texas Medicaid". Used in headings + intro paragraphs.
+   * "Texas Medicaid". Used in headings + intro paragraphs. Localized.
+   * Renamed from `programBrandFullName` per canonical schema.
    */
-  programBrandFullName: LocalizedString;
-  /** Plan year these stats describe (e.g., 2026). */
-  year: number;
-  /** Did this state expand Medicaid under the ACA? */
-  expansionStatus: boolean;
-  /** Brief expansion-status note (e.g., "Did not expand; very limited adult coverage"). */
-  expansionNote: LocalizedString;
+  stateBrandFullName: LocalizedString;
+  /**
+   * Plan year these stats describe (e.g., 2026). Renamed from `year` to
+   * disambiguate from the per-table `householdSizeTable.year` field.
+   */
+  dataYear: number;
+  /**
+   * Did this state expand Medicaid under the ACA? STRUCTURED OBJECT (replaces
+   * the prior `boolean`). The `expansionNote` lives inside this object now —
+   * the prior top-level `expansionNote` field is gone.
+   */
+  expansionStatus: ExpansionStatus;
   /** ISO date of last review (YYYY-MM-DD). */
   lastUpdated: string;
   /** Reading time string, e.g., "8 min read". */

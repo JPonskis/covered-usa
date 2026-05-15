@@ -76,8 +76,12 @@ export default async function MedicaidStateIncomeLimitsPage({
   const faqs = isEs ? data.faqs.es : data.faqs.en;
 
   const stateName = pickLocale(data.stateName, locale);
-  const programBrandFullName = pickLocale(data.programBrandFullName, locale);
-  const usesStateBrand = data.programBrand !== 'Medicaid';
+  const stateBrandFullName = pickLocale(data.stateBrandFullName, locale);
+  // A state "uses a brand" when its stateBrand is not the generic "[State] Medicaid"
+  // form. Concretely: anything other than "Medicaid" or "<StateName> Medicaid".
+  const genericBrandValue = `${pickLocale(data.stateName, 'en')} Medicaid`;
+  const usesStateBrand =
+    data.stateBrand !== 'Medicaid' && data.stateBrand !== genericBrandValue;
 
   // ─── Structured data ───────────────────────────────────────────────
   const faqSchema = getFAQSchema(faqs);
@@ -97,7 +101,7 @@ export default async function MedicaidStateIncomeLimitsPage({
     name: pickLocale(data.meta.title, locale),
     description: pickLocale(data.meta.description, locale),
     lastReviewed: data.lastUpdated,
-    about: `${data.programBrand} (${pickLocale(data.stateName, 'en')} Medicaid)`,
+    about: `${data.stateBrand} (${pickLocale(data.stateName, 'en')} Medicaid)`,
     audience: 'Patient',
     medicalSpecialty: 'PublicHealth',
     author: COVEREDUSA_AUTHOR,
@@ -108,8 +112,8 @@ export default async function MedicaidStateIncomeLimitsPage({
   const governmentServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'GovernmentService',
-    name: programBrandFullName,
-    alternateName: usesStateBrand ? [data.programBrand, `${stateName} Medicaid`] : undefined,
+    name: stateBrandFullName,
+    alternateName: usesStateBrand ? [data.stateBrand, `${stateName} Medicaid`] : undefined,
     serviceType: 'Health insurance for low-income residents',
     areaServed: {
       '@type': 'State',
@@ -191,13 +195,13 @@ export default async function MedicaidStateIncomeLimitsPage({
       <DatasetSchema
         name={
           isEs
-            ? `Límites de ingresos de ${programBrandFullName} ${data.year}`
-            : `${data.year} ${programBrandFullName} income limits`
+            ? `Límites de ingresos de ${stateBrandFullName} ${data.dataYear}`
+            : `${data.dataYear} ${stateBrandFullName} income limits`
         }
         description={
           isEs
-            ? `Tabla completa de los límites de ingresos de ${programBrandFullName} para ${data.year} por tamaño de hogar (adultos, niños, embarazo). Basado en el Nivel Federal de Pobreza ${data.year}.`
-            : `Complete ${data.year} ${programBrandFullName} income limit table by household size for adults, children, and pregnancy coverage. Based on ${data.year} Federal Poverty Level figures.`
+            ? `Tabla completa de los límites de ingresos de ${stateBrandFullName} para ${data.dataYear} por tamaño de hogar (adultos, niños, embarazo). Basado en el Nivel Federal de Pobreza ${data.dataYear}.`
+            : `Complete ${data.dataYear} ${stateBrandFullName} income limit table by household size for adults, children, and pregnancy coverage. Based on ${data.dataYear} Federal Poverty Level figures.`
         }
         url={`https://coveredusa.org/${locale}/medicaid-income-limits/${state}`}
         dateModified={data.lastUpdated}
@@ -306,8 +310,8 @@ export default async function MedicaidStateIncomeLimitsPage({
           {/* Household-size income limit table — the FANOUT §3.3 mandatory artifact */}
           <h2>
             {isEs
-              ? `Límites de ingresos de ${programBrandFullName} por tamaño de hogar (${data.year})`
-              : `${programBrandFullName} income limits by household size (${data.year})`}
+              ? `Límites de ingresos de ${stateBrandFullName} por tamaño de hogar (${data.dataYear})`
+              : `${stateBrandFullName} income limits by household size (${data.dataYear})`}
           </h2>
 
           <p>{pickLocale(data.householdSizeTable.caption, locale)}</p>
@@ -316,8 +320,8 @@ export default async function MedicaidStateIncomeLimitsPage({
             <ReferenceTable
               caption={
                 isEs
-                  ? `Guía de ingresos de ${programBrandFullName} ${data.year} por tamaño de hogar`
-                  : `${data.year} ${programBrandFullName} income guidelines by household size`
+                  ? `Guía de ingresos de ${stateBrandFullName} ${data.dataYear} por tamaño de hogar`
+                  : `${data.dataYear} ${stateBrandFullName} income guidelines by household size`
               }
               headers={householdHeaders}
               rows={householdRows}
@@ -329,8 +333,8 @@ export default async function MedicaidStateIncomeLimitsPage({
           {/* Eligibility requirements (non-income) */}
           <h2>
             {isEs
-              ? `Requisitos de elegibilidad de ${programBrandFullName} (no relacionados con ingresos)`
-              : `${programBrandFullName} eligibility requirements (non-income)`}
+              ? `Requisitos de elegibilidad de ${stateBrandFullName} (no relacionados con ingresos)`
+              : `${stateBrandFullName} eligibility requirements (non-income)`}
           </h2>
           <p>{pickLocale(data.eligibilityRequirements.intro, locale)}</p>
           <ul>
@@ -342,8 +346,8 @@ export default async function MedicaidStateIncomeLimitsPage({
           {/* What income counts / doesn't count */}
           <h2>
             {isEs
-              ? `Qué ingresos cuentan para ${programBrandFullName}`
-              : `What income counts for ${programBrandFullName}`}
+              ? `Qué ingresos cuentan para ${stateBrandFullName}`
+              : `What income counts for ${stateBrandFullName}`}
           </h2>
           <p>{pickLocale(data.incomeSources.intro, locale)}</p>
 
@@ -373,8 +377,8 @@ export default async function MedicaidStateIncomeLimitsPage({
           {/* How to apply */}
           <h2>
             {isEs
-              ? `Cómo solicitar ${programBrandFullName} en ${stateName}`
-              : `How to apply for ${programBrandFullName} in ${stateName}`}
+              ? `Cómo solicitar ${stateBrandFullName} en ${stateName}`
+              : `How to apply for ${stateBrandFullName} in ${stateName}`}
           </h2>
           <p>{pickLocale(data.applicationProcess.intro, locale)}</p>
 
