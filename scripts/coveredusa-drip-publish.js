@@ -29,7 +29,7 @@ const { execSync } = require('child_process');
 // ────────────────────────────────────────────────────────────────────────────
 // Config
 // ────────────────────────────────────────────────────────────────────────────
-const MAX_PER_DAY = 10;
+const MAX_PER_DAY = 15;
 const SHEET_ID = '1gom8BPePSX9g4ffTxBPvQN3GynStdGWm1pbDwAn5kBU';
 const MASTER_TAB = 'Master Backlog';
 const SEO_IDEAS_TAB = 'SEO Ideas';
