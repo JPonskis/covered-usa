@@ -9,7 +9,7 @@ target: "screener"
 
 Original Medicare does NOT cover most routine dental care in 2026. Medicare Advantage plans MAY cover it, but the scope varies widely. If you only have Original Medicare (Parts A and B), you are responsible for 100% of the cost of cleanings, fillings, extractions, dentures, and implants. Read on to understand your four options and how to get coverage.
 
-> **Quick Answer:** Original Medicare (Parts A and B) excludes routine dental entirely. About 90% of Medicare Advantage plans include some dental benefit in 2026, with annual limits typically ranging from $1,000 to $3,000. Dual-eligible beneficiaries (Medicare plus Medicaid) often get the strongest dental benefits through D-SNP plans.
+> **Quick Answer:** Original Medicare (Parts A and B) excludes routine dental entirely. About 98% of Medicare Advantage plans include some dental benefit in 2026, with annual limits typically ranging from $1,000 to $3,000. Dual-eligible beneficiaries (Medicare plus Medicaid) often get the strongest dental benefits through D-SNP plans.
 
 ## What Original Medicare Covers and Does Not Cover for Dental
 
@@ -46,7 +46,7 @@ These exceptions apply only when the dental work is part of, or medically necess
 
 ## Medicare Advantage Dental Plans in 2026
 
-Medicare Advantage (Part C) replaces Original Medicare and is sold by private insurers approved by CMS. As of 2026, roughly 90% of Medicare Advantage plans include some dental benefit, according to [KFF.org](https://www.kff.org). However, "some dental benefit" covers a wide range.
+Medicare Advantage (Part C) replaces Original Medicare and is sold by private insurers approved by CMS. As of 2026, roughly 98% of Medicare Advantage plans include some dental benefit, according to [KFF.org](https://www.kff.org). However, "some dental benefit" covers a wide range.
 
 **Preventive-only plans** cover two cleanings per year, routine exams, and X-rays, typically at $0 copay. They do not cover fillings, extractions, or anything classified as restorative or major work.
 
@@ -169,6 +169,6 @@ The [CoveredUSA screener](/screener) checks your eligibility for Medicare, Medic
 
 ---
 
-Check your eligibility now at CoveredUSA -- it takes 2 minutes.
+Check your eligibility now at CoveredUSA. It takes 2 minutes.
 
 *Sources: [Medicare.gov Dental Services](https://www.medicare.gov/coverage/dental-services) | [CMS Medicare Dental Coverage](https://www.cms.gov/medicare/coverage/dental) | [Medicare Plan Finder](https://www.medicare.gov/plan-compare/) | [KFF Medicare Advantage](https://www.kff.org) | [Medicare Rights Center](https://www.medicarerights.org/medicare-watch/2026/01/08/medicare-advantage-enrollees-have-until-march-31-to-make-certain-coverage-changes)*

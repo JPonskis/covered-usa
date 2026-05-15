@@ -168,7 +168,7 @@ The income limit for STAR+PLUS and nursing facility care is **$2,982 per month**
 
 *Texas STAR+PLUS and Nursing Facility Income Limits, 2026. The $2,982/month limit applies to each individual applicant. Source: [hhs.texas.gov STAR+PLUS Handbook](https://www.hhs.texas.gov/handbooks/starplus-handbook/appendix-viii-monthly-incomeresource-limits) and [Medicaid.gov Texas profile](https://www.medicaid.gov/state-overviews/stateprofile.html?state=texas).*
 
-STAR+PLUS also has an **asset limit of $2,000** for a single person. A spouse living at home (community spouse) may retain significantly more, up to $148,620 in countable assets in 2026. These rules are complex and eligibility is evaluated on a case-by-case basis by [hhs.texas.gov](https://www.hhs.texas.gov).
+STAR+PLUS also has an **asset limit of $2,000** for a single person. A spouse living at home (community spouse) may retain significantly more, up to $162,660 in countable assets in 2026. These rules are complex and eligibility is evaluated on a case-by-case basis by [hhs.texas.gov](https://www.hhs.texas.gov).
 
 ---
 

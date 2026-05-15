@@ -88,7 +88,7 @@ Most hospital FAPs work on a sliding scale tied to the Federal Poverty Level (FP
 | 301% to 400% FPL | 25% discount |
 | Above 400% FPL | Varies by hospital |
 
-*Income thresholds vary by hospital. The 2026 federal poverty level for a single person is $15,060; for a family of four, $31,200. Some hospitals extend full charity care up to 300% or even 400% FPL.*
+*Income thresholds vary by hospital. The 2026 federal poverty level for a single person is $15,960; for a family of four, $33,000. Some hospitals extend full charity care up to 300% or even 400% FPL.*
 
 ### How to Apply for Charity Care: Step-by-Step
 
@@ -189,4 +189,4 @@ The equipment and image quality are identical. Both settings use FDA-cleared 1.5
 
 ---
 
-Check your eligibility now at CoveredUSA -- it takes 2 minutes.
+Check your eligibility now at CoveredUSA. It takes 2 minutes.

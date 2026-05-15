@@ -9,17 +9,17 @@ target: "screener"
 
 > **Quick Answer:** The 2026 federal poverty level is $15,960 per year ($1,330/month) for a single person in the 48 contiguous states. For a family of four, it is $33,000 per year ($2,750/month). These thresholds, published by HHS on January 15, 2026 at [aspe.hhs.gov](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines), set the income cutoffs for Medicaid, ACA subsidies, CHIP, WIC, and SNAP.
 
-The federal poverty level (FPL) is the single most important number in U.S. healthcare eligibility. Every major public health coverage program -- Medicaid, ACA marketplace subsidies, CHIP, Medicare Savings Programs -- uses it as the income yardstick. If you need to know what you qualify for based on your income in 2026, this chart is the place to start.
+The federal poverty level (FPL) is the single most important number in U.S. healthcare eligibility. Every major public health coverage program (Medicaid, ACA marketplace subsidies, CHIP, Medicare Savings Programs) uses it as the income yardstick. If you need to know what you qualify for based on your income in 2026, this chart is the place to start.
 
-The 2026 poverty guidelines took effect January 17, 2026, reflecting a 2.63% inflation adjustment over the 2025 figures. For most federal programs, these are the current operative thresholds. One exception: ACA premium tax credits for 2026 marketplace coverage are calculated using the 2025 FPL, not 2026 -- that is standard ACA practice. The 2026 figures apply directly to Medicaid, CHIP, Medicare Savings Programs, WIC, and SNAP.
+The 2026 poverty guidelines took effect January 17, 2026, reflecting a 2.63% inflation adjustment over the 2025 figures. For most federal programs, these are the current operative thresholds. One exception: ACA premium tax credits for 2026 marketplace coverage are calculated using the 2025 FPL, not 2026. That is standard ACA practice. The 2026 figures apply directly to Medicaid, CHIP, Medicare Savings Programs, WIC, and SNAP.
 
-Check your eligibility now at CoveredUSA -- it takes 2 minutes.
+Check your eligibility now at CoveredUSA. It takes 2 minutes.
 
-## 2026 Federal Poverty Level Chart -- 48 Contiguous States and D.C.
+## 2026 Federal Poverty Level Chart: 48 Contiguous States and D.C.
 
 The table below is the official 2026 HHS poverty guideline for the 48 contiguous states and Washington D.C., sourced from [aspe.hhs.gov](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines). It shows annual and monthly 100% FPL amounts for households of 1 through 8 persons.
 
-**2026 FPL Chart -- 48 Contiguous States and D.C.**
+**2026 FPL Chart: 48 Contiguous States and D.C.**
 
 | Household Size | Annual Income (100% FPL) | Monthly Income (100% FPL) |
 |---|---|---|
@@ -39,7 +39,7 @@ For household sizes larger than 8, add $5,680 to the annual amount (or $473 to t
 
 If you are comparing your monthly income against a program's income test, use this monthly breakdown directly. Programs like SNAP and Medicaid often screen on monthly income, not annual.
 
-**2026 Monthly FPL -- 48 Contiguous States and D.C.**
+**2026 Monthly FPL: 48 Contiguous States and D.C.**
 
 | Household Size | 100% FPL/Month | 130% FPL/Month | 138% FPL/Month | 150% FPL/Month | 200% FPL/Month |
 |---|---|---|---|---|---|
@@ -56,7 +56,7 @@ If you are comparing your monthly income against a program's income test, use th
 
 Federal programs key their income limits to specific FPL percentages. This table shows what each major threshold means in annual dollar terms for households of 1 through 6 people in the 48 contiguous states in 2026. All figures are based on the 2026 HHS poverty guidelines at [aspe.hhs.gov](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines).
 
-**2026 FPL Percentage Thresholds -- Annual Income (48 Contiguous States)**
+**2026 FPL Percentage Thresholds: Annual Income (48 Contiguous States)**
 
 | % FPL | 1 person | 2 people | 3 people | 4 people | 5 people | 6 people |
 |---|---|---|---|---|---|---|
@@ -75,9 +75,9 @@ The 138% row is the Medicaid expansion limit. The 400% row is the ACA subsidy cl
 
 ## 2026 FPL and Medicaid Eligibility
 
-Medicaid eligibility in 2026 depends on which type of state you live in. In the 40 states (plus D.C.) that expanded Medicaid under the ACA, adults qualify with household income up to 138% of the 2026 FPL. In the 10 states that have not expanded Medicaid, adults generally face much lower limits -- often covering only children, pregnant women, or people with disabilities.
+Medicaid eligibility in 2026 depends on which type of state you live in. In the 40 states (plus D.C.) that expanded Medicaid under the ACA, adults qualify with household income up to 138% of the 2026 FPL. In the 10 states that have not expanded Medicaid, adults generally face much lower limits, often covering only children, pregnant women, or people with disabilities.
 
-**2026 Medicaid Income Limits -- Expansion States (138% FPL)**
+**2026 Medicaid Income Limits: Expansion States (138% FPL)**
 
 | Household Size | Annual Limit (138% FPL) | Monthly Limit |
 |---|---|---|
@@ -92,13 +92,13 @@ Medicaid eligibility in 2026 depends on which type of state you live in. In the 
 
 Source: [medicaid.gov](https://www.medicaid.gov/medicaid/national-medicaid-chip-program-information/downloads/medicaid-chip-eligibility-levels.pdf) and [aspe.hhs.gov](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines).
 
-Non-expansion states like Texas, Florida, Georgia, Alabama, Mississippi, Tennessee, South Carolina, Kansas, Wisconsin, and Wyoming set their own Medicaid thresholds that are well below 138% FPL for most adults. In those states, a working adult without dependents may not qualify at any income level. Children and pregnant women receive separate -- often higher -- thresholds in all states.
+Non-expansion states like Texas, Florida, Georgia, Alabama, Mississippi, Tennessee, South Carolina, Kansas, Wisconsin, and Wyoming set their own Medicaid thresholds that are well below 138% FPL for most adults. In those states, a working adult without dependents may not qualify at any income level. Children and pregnant women receive separate (often higher) thresholds in all states.
 
 If your state has not expanded Medicaid and your income falls below 100% FPL, you are in what advocates call the "coverage gap." You earn too little to qualify for ACA marketplace subsidies (which require income at or above 100% FPL) but also fail to meet your state's Medicaid test. See [medicaid-income-limits](/medicaid-income-limits) for your state's specific cutoff.
 
 ## 2026 FPL and ACA Marketplace Subsidies
 
-For 2026 ACA marketplace coverage, the premium tax credit calculation uses the 2025 poverty guidelines -- not the 2026 figures. This is standard practice: each coverage year uses the prior year's FPL. The 2025 FPL is $15,650 for a single person and $32,150 for a family of four in the 48 contiguous states.
+For 2026 ACA marketplace coverage, the premium tax credit calculation uses the 2025 poverty guidelines, not the 2026 figures. This is standard practice: each coverage year uses the prior year's FPL. The 2025 FPL is $15,650 for a single person and $32,150 for a family of four in the 48 contiguous states.
 
 A critical policy change took effect in 2026: the enhanced premium tax credits from the American Rescue Plan Act and Inflation Reduction Act expired December 31, 2025. The standard ACA rules now apply again:
 
@@ -106,19 +106,19 @@ A critical policy change took effect in 2026: the enhanced premium tax credits f
 - There is no subsidy above the 400% FPL cliff (the "cliff" is back)
 - Cost-sharing reductions (lower deductibles, copays) are available for Silver plan enrollees with incomes up to 250% of FPL
 
-**2026 ACA Subsidy Eligibility -- Required Contribution Percentages (Based on 2025 FPL)**
+**2026 ACA Subsidy Eligibility: Required Contribution Percentages (Based on 2025 FPL)**
 
 | Income Level | Share of Premium You Pay | Notes |
 |---|---|---|
 | Under 133% FPL | 2.10% of income | Lowest contribution |
-| 133% to 150% FPL | 2.10% to 4.19% | Sliding scale |
+| 133% to 150% FPL | 3.14% to 4.19% | Sliding scale |
 | 150% to 200% FPL | 4.19% to 6.60% | Sliding scale |
 | 200% to 250% FPL | 6.60% to 8.44% | Cost-sharing reductions available |
 | 250% to 300% FPL | 8.44% to 9.96% | Sliding scale |
 | 300% to 400% FPL | 9.96% | Fixed cap |
 | Above 400% FPL | No subsidy | Cliff restored in 2026 |
 
-**2026 ACA Subsidy Cliff Amounts -- Key Thresholds (Using 2025 FPL)**
+**2026 ACA Subsidy Cliff Amounts: Key Thresholds (Using 2025 FPL)**
 
 | Household Size | 100% FPL (Min) | 250% FPL (CSR Limit) | 400% FPL (Cliff) |
 |---|---|---|---|
@@ -137,7 +137,7 @@ Source: [healthcare.gov](https://www.healthcare.gov/glossary/federal-poverty-lev
 
 The Children's Health Insurance Program (CHIP) covers children in families who earn too much for Medicaid but cannot afford private insurance. CHIP income limits vary by state and are set as percentages of the FPL. Most states cover children up to 200% to 300% FPL. Several states extend to 400% FPL or higher.
 
-**2026 CHIP Income Limits -- Sample Thresholds (200% to 317% FPL)**
+**2026 CHIP Income Limits: Sample Thresholds (200% to 317% FPL)**
 
 | Household Size | 200% FPL (Annual) | 250% FPL (Annual) | 300% FPL (Annual) |
 |---|---|---|---|
@@ -172,7 +172,7 @@ Source: [fns.usda.gov](https://www.fns.usda.gov/wic/income-eligibility-guideline
 
 SNAP (formerly food stamps) uses the federal fiscal year FPL, which runs October 1 through September 30. For fiscal year 2026 (Oct. 1, 2025 through Sept. 30, 2026), the gross income limit is 130% FPL and the net income limit is 100% FPL. The monthly amounts below are based on the 2026 poverty guidelines.
 
-**2026 SNAP Income Limits -- Gross (130% FPL) and Net (100% FPL) by Household Size**
+**2026 SNAP Income Limits: Gross (130% FPL) and Net (100% FPL) by Household Size**
 
 | Household Size | Gross Monthly Limit (130%) | Net Monthly Limit (100%) |
 |---|---|---|
@@ -192,7 +192,7 @@ Note: Over 40 states have adopted Broad-Based Categorical Eligibility (BBCE), ex
 
 Alaska and Hawaii receive higher FPL thresholds because federal law recognizes their elevated cost of living. Programs operating in these states use the state-specific tables below, not the 48-state figures.
 
-**2026 FPL Chart -- Alaska**
+**2026 FPL Chart: Alaska**
 
 | Household Size | Annual (100% FPL) | Monthly (100% FPL) |
 |---|---|---|
@@ -207,7 +207,7 @@ Alaska and Hawaii receive higher FPL thresholds because federal law recognizes t
 
 Add $7,100 per additional person beyond 8 ($592/month).
 
-**2026 FPL Chart -- Hawaii**
+**2026 FPL Chart: Hawaii**
 
 | Household Size | Annual (100% FPL) | Monthly (100% FPL) |
 |---|---|---|
@@ -226,20 +226,20 @@ All figures sourced from the [2026 HHS poverty guidelines](https://aspe.hhs.gov/
 
 ## What Changed from 2025 to 2026 FPL
 
-The 2026 guidelines reflect a 2.63% inflation adjustment over 2025. That is based on the CPI-U increase for the prior calendar year, as required by statute. For a household of four, the 100% FPL rose from $32,150 in 2025 to $33,000 in 2026 -- an increase of $850 per year.
+The 2026 guidelines reflect a 2.63% inflation adjustment over 2025. That is based on the CPI-U increase for the prior calendar year, as required by statute. For a household of four, the 100% FPL rose from $32,150 in 2025 to $33,000 in 2026, an increase of $850 per year.
 
-**2025 vs. 2026 FPL Comparison -- Family of Four**
+**2025 vs. 2026 FPL Comparison: Family of Four**
 
 | Metric | 2025 FPL | 2026 FPL | Change |
 |---|---|---|---|
 | Annual (family of 4) | $32,150 | $33,000 | +$850 |
 | Monthly (family of 4) | $2,679 | $2,750 | +$71 |
-| 138% FPL -- Medicaid limit | $44,367 | $45,540 | +$1,173 |
-| 400% FPL -- ACA cliff | $128,600 | $132,000 | +$3,400 |
+| 138% FPL (Medicaid limit) | $44,367 | $45,540 | +$1,173 |
+| 400% FPL (ACA cliff) | $128,600 | $132,000 | +$3,400 |
 
 The 2026 increase matters if you were close to an eligibility cutoff in 2025. Higher thresholds mean more people qualify for Medicaid, CHIP, and other programs. If you were just over the 138% FPL Medicaid limit last year, it is worth checking again with 2026 numbers.
 
-The biggest policy shift in 2026 is not the FPL update itself -- it is the expiration of enhanced ACA premium tax credits. From 2021 through 2025, the American Rescue Plan Act and Inflation Reduction Act provided expanded subsidies that eliminated the 400% FPL cliff and reduced premiums to $0 for many low-income enrollees. Those enhancements ended December 31, 2025. Anyone who had reduced or $0 premiums under the enhanced credits needs to check their 2026 plan costs.
+The biggest policy shift in 2026 is not the FPL update itself. It is the expiration of enhanced ACA premium tax credits. From 2021 through 2025, the American Rescue Plan Act and Inflation Reduction Act provided expanded subsidies that eliminated the 400% FPL cliff and reduced premiums to $0 for many low-income enrollees. Those enhancements ended December 31, 2025. Anyone who had reduced or $0 premiums under the enhanced credits needs to check their 2026 plan costs.
 
 ## How to Apply for Health Coverage Based on FPL
 
@@ -278,10 +278,10 @@ Once you know your FPL percentage, you can identify which program to apply for a
 **Common reasons applications get denied:**
 
 - Income reported inconsistently across documents (e.g., pay stub total differs from tax return)
-- Missing documentation -- application returned incomplete
+- Missing documentation, application returned incomplete
 - Citizenship or immigration status does not meet program requirements
 - Household size is calculated differently than the program expects (for example, a non-custodial parent may or may not count)
-- Prior Medicaid eligibility caused automatic disenrollment -- reapplication is required
+- Prior Medicaid eligibility caused automatic disenrollment; reapplication is required
 
 ## How to Use the FPL Chart to Find Your Coverage
 
@@ -297,7 +297,7 @@ The chart is a lookup tool. Here is the fastest way to use it.
 
 | Your FPL % | Likely Coverage (Expansion States) | Likely Coverage (Non-Expansion States) |
 |---|---|---|
-| Under 100% FPL | Medicaid | Limited -- check state rules |
+| Under 100% FPL | Medicaid | Limited (check state rules) |
 | 100% to 138% FPL | Medicaid or ACA marketplace | ACA marketplace (subsidized) |
 | 138% to 250% FPL | ACA marketplace with subsidy and cost-sharing reduction | ACA marketplace with subsidy |
 | 250% to 400% FPL | ACA marketplace with subsidy | ACA marketplace with subsidy |
@@ -340,7 +340,7 @@ HHS publishes updated poverty guidelines each January. The calculation applies t
 
 ### What does 100% FPL mean?
 
-100% FPL is the baseline poverty level. A household at exactly 100% FPL earns $15,960 per year (single person in the 48 states) in 2026. Program income limits are expressed as percentages of this baseline -- so 138% FPL means 1.38 times the baseline, 400% FPL means 4 times the baseline, and so on.
+100% FPL is the baseline poverty level. A household at exactly 100% FPL earns $15,960 per year (single person in the 48 states) in 2026. Program income limits are expressed as percentages of this baseline: 138% FPL means 1.38 times the baseline, 400% FPL means 4 times the baseline, and so on.
 
 ### Can I qualify for both Medicaid and ACA subsidies?
 
