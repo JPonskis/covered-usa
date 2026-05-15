@@ -7,7 +7,7 @@ keywords: ["ER visit cost", "CPT 99284", "CPT 99285", "emergency room bill", "ho
 target: "analyzer"
 ---
 
-> **Quick Answer:** The Medicare-approved physician fee for a Level 4 ER visit (CPT 99284) is around $119, and for a Level 5 visit (CPT 99285) it is around $173. Your hospital's chargemaster list price for the same visits often runs $1,200 to $1,800 or more (just for the facility fee, before the doctor's separate bill arrives). That gap is where overcharges hide.
+> **Quick Answer:** The Medicare-approved physician fee for a Level 4 ER visit (CPT 99284) is around $118, and for a Level 5 visit (CPT 99285) it is around $171. Your hospital's chargemaster list price for the same visits often runs $1,200 to $1,800 or more (just for the facility fee, before the doctor's separate bill arrives). That gap is where overcharges hide.
 
 Most people open an ER bill and have no idea what they are looking at. A string of five-digit codes, a $4,000 total, and a "amount you owe" that may or may not reflect what your insurance actually negotiated. The confusion is not an accident. The billing system is genuinely complicated, and hospitals know that most patients will pay without asking questions.
 
@@ -35,8 +35,8 @@ Medicare sets a physician fee schedule that represents the government's best est
 
 | CPT Code | Medicare Physician Rate | Major Private Insurer Range |
 |----------|------------------------|-----------------------------|
-| 99284 | $119.50 | $118 to $182 |
-| 99285 | $173.10 | $169 to $267 |
+| 99284 | $118.24 | $118 to $182 |
+| 99285 | $171.35 | $169 to $267 |
 
 Note that these are the **physician fees only** (what your emergency physician gets paid separately from the hospital). The hospital charges a **facility fee** on top of this.
 
