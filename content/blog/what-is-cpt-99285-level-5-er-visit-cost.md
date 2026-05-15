@@ -47,7 +47,7 @@ Research published by Trilliant Health found that coding intensity in outpatient
 
 **The test-count method.** Some hospitals use internal policies that automatically assign Level 5 if a patient receives three or more diagnostic tests, regardless of the physician's actual clinical thinking. If you went to the ER for a migraine and the team ran a CT scan, blood work, and a urinalysis to rule out other causes, the system may auto-assign 99285. CMS does not endorse test-count methodology as a standalone basis for level assignment. The correct basis is medical decision-making complexity, not the number of tests ordered.
 
-**Revenue pressure.** Hospitals have an obvious financial incentive to bill at the highest defensible level. Billing teams may default to 99285 when documentation is borderline rather than erring toward 99284. Auditors from the Office of Inspector General (OIG) at HHS have consistently flagged this pattern in compliance reviews.
+**Revenue pressure.** Hospitals have an obvious financial incentive to bill at the highest defensible level. Billing teams may default to 99285 when documentation is borderline rather than erring toward 99284. Auditors from the [Office of Inspector General (OIG) at HHS](https://oig.hhs.gov) have consistently flagged this pattern in compliance reviews.
 
 **Documentation ambiguity.** In a busy ER, a physician may see a genuinely complex patient and make complex decisions without fully documenting the MDM elements required to justify the code. A coder filling in the code later may upgrade to 99285 based on the number of tests rather than documented reasoning.
 
@@ -89,7 +89,7 @@ Disputing an incorrect Level 5 code is a straightforward process, though it requ
 
 **Step 5: File an insurance appeal if insured.** If you are insured, contact your insurer and ask them to review the coding on your claim. Insurers have coding experts who can assess whether the billed level matches the medical records.
 
-**Step 6: Escalate if necessary.** If the hospital refuses to correct a legitimate error, you can file a complaint with your state insurance commissioner, the CMS Office of Inspector General at oig.hhs.gov, or consult a patient advocate.
+**Step 6: Escalate if necessary.** If the hospital refuses to correct a legitimate error, you can file a complaint with your state insurance commissioner, the [CMS Office of Inspector General](https://oig.hhs.gov), or learn about your rights under the [No Surprises Act](https://www.cms.gov/nosurprises) and consult a patient advocate.
 
 **Documents You Will Need**
 - Itemized hospital bill with all CPT codes
@@ -129,7 +129,7 @@ If your household income falls below 200 percent of FPL, contact the hospital's 
 
 The Level 5 upcoding issue sits inside a larger structural problem: ER billing complexity is intentionally opaque. Hospitals set chargemaster prices that bear little relationship to actual cost or fair market value. Uninsured patients face the highest prices while insured patients and Medicare beneficiaries pay fractions of those amounts. The difference between a Level 4 and Level 5 code can determine whether a patient faces a $500 bill or a $2,500 bill, and that decision often happens without any patient input.
 
-Federal price transparency rules that took effect in 2021 require hospitals to post their rates online, including negotiated rates with each payer. The CMS Hospital Price Transparency rule at cms.gov mandates that hospitals publish machine-readable price files. In practice, many hospitals have been slow to comply or have posted files that are difficult to interpret without specialized software.
+Federal price transparency rules that took effect in 2021 require hospitals to post their rates online, including negotiated rates with each payer. The [CMS Hospital Price Transparency rule](https://www.cms.gov/medicare/payment/prospective-payment-systems/hospital-outpatient) mandates that hospitals publish machine-readable price files. In practice, many hospitals have been slow to comply or have posted files that are difficult to interpret without specialized software.
 
 The CoveredUSA Bill Analyzer is built to close that gap. Upload your itemized hospital bill and the tool compares your charges, including your E&M code, against Medicare benchmark rates to flag potential overcharges and help you identify where to push back.
 

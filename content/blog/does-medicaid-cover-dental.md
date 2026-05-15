@@ -2,7 +2,7 @@
 title: "Does Medicaid Cover Dental Care? What You Need to Know in 2026"
 description: "Find out if Medicaid covers dental care in 2026. Learn what's covered for adults vs. children, how coverage varies by state, and how to check your eligibility."
 date: "2026-05-15"
-slug: "does-medicaid-cover-dental-2026"
+slug: "does-medicaid-cover-dental"
 keywords: ["does medicaid cover dental", "medicaid dental coverage", "medicaid dental benefits 2026", "medicaid dental adults", "medicaid dental children"]
 target: "screener"
 ---
@@ -74,15 +74,15 @@ Before dental coverage matters, you need to qualify for Medicaid. Eligibility is
 
 | Household Size | Annual Income Limit | Monthly Income Limit |
 |---|---|---|
-| 1 | $22,025 | $1,836 |
-| 2 | $29,702 | $2,475 |
-| 3 | $37,379 | $3,115 |
-| 4 | $45,056 | $3,755 |
-| 5 | $52,733 | $4,394 |
-| 6 | $60,410 | $5,034 |
-| 7 | $68,087 | $5,674 |
-| 8 | $75,764 | $6,314 |
-| Each additional | +$7,677/yr | +$640/mo |
+| 1 | $22,025 | $1,835 |
+| 2 | $29,863 | $2,489 |
+| 3 | $37,702 | $3,142 |
+| 4 | $45,540 | $3,795 |
+| 5 | $53,378 | $4,448 |
+| 6 | $61,217 | $5,101 |
+| 7 | $69,055 | $5,755 |
+| 8 | $76,894 | $6,408 |
+| Each additional | +$7,838/yr | +$653/mo |
 
 *Source: 2026 Federal Poverty Guidelines, [ASPE/HHS](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines). Limits shown are 138% FPL for the 48 contiguous states and D.C.*
 

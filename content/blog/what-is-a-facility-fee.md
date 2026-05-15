@@ -1,5 +1,5 @@
 ---
-title: "What Is a Facility Fee -- and Why You're Being Billed Twice"
+title: "What Is a Facility Fee, and Why You're Being Billed Twice"
 description: "A facility fee is a separate hospital charge added to your bill on top of your doctor's fee. Learn why it happens, how much it costs, and how to fight it."
 date: "2026-05-15"
 slug: "what-is-a-facility-fee"
@@ -50,7 +50,7 @@ Facility fees vary widely depending on the service, the hospital system, and you
 | Telehealth visit | $75 to $150 | $100 to $300 | $175 to $450 |
 | Annual physical | $120 to $200 | $150 to $400 | $270 to $600 |
 
-Research from the Health Care Cost Institute found that the average price for a primary care visit in a physician's office was $116, but the same visit in a hospital outpatient setting averaged $217, an 87% increase driven almost entirely by the facility fee.
+Research from the [Health Care Cost Institute](https://healthcostinstitute.org/all-hcci-reports/facility-fees-what-are-they-and-how-do-they-impact-health-care-prices/) found that the average price for a primary care visit in a physician's office was $116, but the same visit in a hospital outpatient setting averaged $217, an 87% increase driven almost entirely by the facility fee.
 
 Your insurance may cover part of the facility fee, but coverage rules differ between the professional fee and the facility fee. Even with insurance, many patients owe a separate deductible or cost-sharing amount for the facility portion. Some plans apply the facility fee to your hospital deductible, which is often much higher than your outpatient deductible.
 
@@ -64,7 +64,7 @@ The CoveredUSA Bill Analyzer can compare each line item on your bill against Med
 
 How insurance handles facility fees depends on your plan type:
 
-**Medicare:** Medicare Part B covers outpatient facility fees, but you owe 20% coinsurance after your deductible. Because facility fees at hospital outpatient departments are typically higher than at independent offices, your 20% share is also higher.
+**Medicare:** [Medicare Part B](https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles) covers outpatient facility fees, but you owe 20% coinsurance after your deductible. Because facility fees at hospital outpatient departments are typically higher than at independent offices, your 20% share is also higher.
 
 **Medicaid:** Coverage of facility fees varies by state. Some state Medicaid programs limit what hospitals can collect from patients.
 
@@ -115,7 +115,7 @@ If the hospital does not resolve your dispute, file a complaint with:
 - Your state's Attorney General office
 - Your state's Department of Insurance (if insurance was involved)
 - The Consumer Financial Protection Bureau (CFPB)
-- CMS if the provider accepts Medicare (cms.gov/medical-bill-rights)
+- CMS if the provider accepts Medicare ([cms.gov/medical-bill-rights](https://www.cms.gov/medical-bill-rights))
 
 ## Common Facility Fee Billing Errors to Look For
 

@@ -28,7 +28,7 @@ The chargemaster did not start out as a weapon against patients. It originated i
 3. Hospitals raised prices further to offset the deeper discounts.
 4. Repeat for 60 years.
 
-A peer-reviewed study published in *Medical Care* tracked this spiral across more than 3,400 acute care hospitals and found that chargemaster markups increased by an average of 155% between 1996 and 2017, with the standard deviation of markups growing by 324% over the same period. Hospitals were not just charging more overall. They were charging more erratically, with wide variation in markups from one facility to the next.
+A [peer-reviewed study published in *Medical Care*](https://pubmed.ncbi.nlm.nih.gov/35647741/) tracked this spiral across more than 3,400 acute care hospitals and found that chargemaster markups increased by an average of 155% between 1996 and 2017, with the standard deviation of markups growing by 324% over the same period. Hospitals were not just charging more overall. They were charging more erratically, with wide variation in markups from one facility to the next.
 
 By the numbers, the average hospital charged $432 for every $100 of actual cost. For-profit hospitals averaged $631 per $100. CT scans averaged a 28.5x markup over cost. Anesthesiology averaged a 23.5x markup.
 
@@ -42,13 +42,13 @@ These arguments contain some truth. A hospital room visit does involve real over
 
 But a 1,000x markup on a tablet that costs two cents cannot be explained by overhead. And the "it subsidizes the uninsured" argument breaks down because the patients most harmed by inflated chargemaster prices are precisely the uninsured, who lack the negotiating power that insurers have and may be billed at or near the full chargemaster rate.
 
-A 2026 analysis of prescription drug pricing in hospitals by 3 Axis Advisors found that in approximately one-quarter of cases, no discount at all was offered off the inflated gross charge. In half of analyzed cases, the cash discount was 30% or less. The average insurer negotiated about 40% off. For the uninsured paying cash, the discount was often nonexistent.
+A [2026 analysis of prescription drug pricing in hospitals by 3 Axis Advisors](https://www.3axisadvisors.com/projects/2026/3/5/analysis-of-prescription-drug-prices-in-hospitals) found that in approximately one-quarter of cases, no discount at all was offered off the inflated gross charge. In half of analyzed cases, the cash discount was 30% or less. The average insurer negotiated about 40% off. For the uninsured paying cash, the discount was often nonexistent.
 
 ## The Price Transparency Law: What Changed (and What Didn't)
 
 Starting January 1, 2021, federal rules required hospitals to publish their chargemaster prices online in a machine-readable format and provide consumer-friendly pricing for at least 300 common services. This was a significant step. For the first time, patients could theoretically compare prices across hospitals before receiving care.
 
-In practice, compliance has been inconsistent. A 2024 HHS Inspector General audit found that 37% of hospitals were still not fully compliant with transparency requirements. The Centers for Medicare and Medicaid Services (CMS) had fined only 18 hospitals for violations as of that audit. The maximum fine is $2 million per year, a number that is largely irrelevant to large hospital systems generating billions in annual revenue.
+In practice, compliance has been inconsistent. A [2024 HHS Inspector General audit](https://oig.hhs.gov/reports/all/2024/not-all-selected-hospitals-complied-with-the-hospital-price-transparency-rule/) found that 37% of hospitals were still not fully compliant with transparency requirements. [CMS](https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency/enforcement-actions) had fined only 18 hospitals for violations as of that audit. The maximum fine is $2 million per year, a number that is largely irrelevant to large hospital systems generating billions in annual revenue.
 
 As of 2026, price transparency rules are on the books but enforcement remains a work in progress. You can request your hospital's published price file, but interpreting the data requires understanding CPT codes and billing terminology that most patients do not have.
 
@@ -62,7 +62,7 @@ High list prices are the structural problem. But even within that broken system,
 | Average overcharge on disputed bills: $4,200 | Medical billing advocacy data |
 | Average recovery when bills are reviewed: $3,600 (86% success) | Professional billing review data |
 | 78% of people who disputed an incorrect bill resolved it in their favor | 2024 North Carolina survey |
-| $88 billion in medical debt on credit reports | CFPB 2025 report |
+| $88 billion in medical debt on credit reports | [CFPB report](https://www.consumerfinance.gov/about-us/newsroom/cfpb-estimates-88-billion-in-medical-bills-on-credit-reports/) |
 
 The most common billing errors include:
 

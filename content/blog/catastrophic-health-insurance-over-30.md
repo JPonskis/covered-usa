@@ -92,7 +92,7 @@ Both plans have high deductibles, but they are not the same product. Here is how
 |---|---|---|
 | Monthly premium | Lowest | Low to moderate |
 | 2026 deductible (individual) | $10,600 | $6,000 to $9,000 (varies) |
-| Out-of-pocket max (individual) | $10,600 | $9,200 max allowed |
+| Out-of-pocket max (individual) | $10,600 | $10,600 max allowed |
 | Premium tax credit eligible | No | Yes |
 | Cost-sharing reductions | No | No (need silver for CSR) |
 | Primary care visits free | 3 per year | Varies by plan |

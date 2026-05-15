@@ -2,7 +2,7 @@
 title: "ACA Special Enrollment Period 2026: Who Qualifies and How to Apply"
 description: "Lost coverage, had a baby, or moved in 2026? An ACA Special Enrollment Period gives you 60 days to enroll outside open enrollment. Learn who qualifies."
 date: "2026-05-15"
-slug: "aca-special-enrollment-period-2026"
+slug: "aca-special-enrollment-period"
 keywords: ["aca special enrollment period 2026", "special enrollment period 2026", "qualifying life event health insurance 2026", "how to enroll in health insurance outside open enrollment", "lost health insurance 2026"]
 target: "screener"
 ---

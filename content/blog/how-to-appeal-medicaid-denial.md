@@ -32,7 +32,7 @@ Knowing your denial reason matters because it tells you whether to appeal, re-ap
 Under federal Medicaid regulations at [medicaid.gov](https://www.medicaid.gov), every person who applies for or receives Medicaid has the right to:
 
 - Request a free Fair Hearing before an impartial hearing officer
-- Receive at least 90 days from the date of the denial notice to file (many states allow 60 to 90 days, but some allow longer, so read your notice carefully)
+- Receive up to 90 days from the date of the denial notice to file (federal law caps the window at 90 days; most states set 60 to 90 days, so read your notice carefully)
 - Continue receiving existing benefits while the appeal is pending, if you file before the cutoff shown on your notice
 - Bring a representative, attorney, or advocate to the hearing at no cost to you
 - Receive language services and disability accommodations at no charge
@@ -188,7 +188,7 @@ Check your eligibility now at CoveredUSA (it takes 2 minutes). Visit [coveredusa
 
 ### How long do I have to appeal a Medicaid denial?
 
-Federal law requires states to give you at least 90 days from the date the denial notice was mailed. Many states set their window at 60 days. Read your denial notice for the exact deadline. Missing it means losing your right to a fair hearing for that denial.
+Federal law sets a ceiling of 90 days from the date the denial notice was mailed. Many states set their window at 60 days. Read your denial notice for the exact deadline. Missing it means losing your right to a fair hearing for that denial.
 
 ### Can I keep my Medicaid while my appeal is pending?
 

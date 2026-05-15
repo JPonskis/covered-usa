@@ -118,7 +118,7 @@ If you believe the Level 4 charge is wrong, here is how to challenge it in 2026.
 - Itemized bill with CPT codes (not just the summary statement)
 - Explanation of Benefits (EOB) from your insurer
 - Your medical records from the visit (you have a right to these under HIPAA)
-- Hospital's published price list (required by federal price transparency rules since 2021)
+- Hospital's published price list (required by [federal price transparency rules since 2021](https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency))
 
 ### Step-by-Step Process
 
@@ -141,7 +141,7 @@ If you believe the Level 4 charge is wrong, here is how to challenge it in 2026.
 
 ## What About Balance Billing and Surprise Bills?
 
-Since January 2022, the No Surprises Act protects patients who receive care at in-network hospitals from surprise bills by out-of-network providers. If an out-of-network ER physician treated you at an in-network hospital, they generally cannot bill you above in-network cost-sharing amounts.
+Since January 2022, the [No Surprises Act](https://www.cms.gov/nosurprises) protects patients who receive care at in-network hospitals from surprise bills by out-of-network providers. If an out-of-network ER physician treated you at an in-network hospital, they generally cannot bill you above in-network cost-sharing amounts.
 
 If you receive a surprise bill that violates these protections, you can file a complaint with CMS at [cms.gov/medical-bill-rights](https://www.cms.gov/medical-bill-rights/help/dispute-a-bill). The Independent Dispute Resolution (IDR) process is also available for unresolved out-of-network billing disputes.
 

@@ -2,7 +2,7 @@
 title: "California Medical Debt Law 2026: Hospital Fair Pricing Act, SB 1061, and What's New"
 description: "California's medical debt laws in 2026 protect patients from credit damage, hospital liens, and billing deadlines. Here's what changed and how to use it."
 date: "2026-05-15"
-slug: "california-medical-debt-law-2026"
+slug: "california-medical-debt-law"
 keywords: ["California medical debt law", "Hospital Fair Pricing Act", "SB 1061 California", "charity care California", "medical debt credit report California"]
 target: "analyzer"
 ---
@@ -13,7 +13,7 @@ California has the strongest medical debt protections of any state in the countr
 
 ## What the Hospital Fair Pricing Act Covers
 
-The Hospital Fair Pricing Act is California's foundational law requiring nonprofit hospitals to have written charity care and discount payment policies. It has been updated several times, with the most recent changes effective January 1, 2025 under AB 2297.
+The Hospital Fair Pricing Act is California's foundational law requiring nonprofit hospitals to have written charity care and discount payment policies. It has been updated several times, with the most recent changes effective January 1, 2025 under [AB 2297](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2297).
 
 The core rule: any California hospital that receives state funds must offer free care (charity care) or reduced-cost care (discount payment) based on a patient's income. The income threshold as of 2025 and continuing in 2026 is **400% of the federal poverty level (FPL)**. Below that line, hospitals must have a written policy that caps what you pay.
 
@@ -26,13 +26,16 @@ These income limits apply to California hospitals covered by the Hospital Fair P
 | Household Size | 200% FPL (often free care) | 400% FPL (discount care) |
 |---|---|---|
 | 1 | $31,920 | $63,840 |
-| 2 | $43,120 | $86,240 |
-| 3 | $54,360 | $108,720 |
-| 4 | $65,560 | $131,120 |
-| 5 | $76,800 | $153,600 |
-| 6 | $88,000 | $176,000 |
+| 2 | $43,280 | $86,560 |
+| 3 | $54,640 | $109,280 |
+| 4 | $66,000 | $132,000 |
+| 5 | $77,360 | $154,720 |
+| 6 | $88,720 | $177,440 |
+| 7 | $100,080 | $200,160 |
+| 8 | $111,440 | $222,880 |
+| Each additional person | +$11,360 | +$22,720 |
 
-Income figures are based on the 2026 federal poverty guidelines for the 48 contiguous states. Add approximately $11,200 per additional person beyond six.
+Income figures are based on the [2026 federal poverty guidelines](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines) for the 48 contiguous states (ASPE/HHS, published January 2026).
 
 Patients between 200% and 400% FPL typically pay a sliding percentage of the bill rather than nothing. The exact discount schedule is hospital-specific, but state law requires every hospital to post its policy publicly and provide it to patients upon request.
 
@@ -65,7 +68,7 @@ This prohibition works alongside SB 1061, which addresses credit reporting more 
 
 ## SB 1061: Medical Debt Off Your Credit Report
 
-SB 1061, authored by Senator Monique Limon and signed by Governor Newsom, took effect January 1, 2025. It is one of the most sweeping medical debt credit protections in the country.
+[SB 1061](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB1061), authored by Senator Monique Limon and signed by Governor Newsom, took effect January 1, 2025. It is one of the most sweeping medical debt credit protections in the country.
 
 **What SB 1061 does:**
 
@@ -107,7 +110,7 @@ Applying for financial assistance in California follows a specific process, and 
 
 **Step 5: Appeal if denied.** If the hospital denies your application, ask for the reason in writing. Common denial reasons include missing documentation rather than actual ineligibility. Resubmit with complete documentation. Organizations like Health Access California (health-access.org) provide free patient advocacy for contested denials.
 
-**Step 6: Check for Medi-Cal eligibility.** California hospitals receiving Medi-Cal funding must screen patients for Medi-Cal eligibility before billing them. If you may qualify for Medi-Cal (income up to 138% FPL, which is about $22,025 for a single adult in 2026), the hospital should help you apply. Medi-Cal enrollment can sometimes retroactively cover bills from the prior three months.
+**Step 6: Check for Medi-Cal eligibility.** California hospitals receiving Medi-Cal funding must screen patients for Medi-Cal eligibility before billing them. If you may qualify for [Medi-Cal](https://www.dhcs.ca.gov/services/medi-cal/Pages/DoYouQualifyForMedi-Cal.aspx) (income up to 138% FPL, which is about $22,025 for a single adult in 2026), the hospital should help you apply. Medi-Cal enrollment can sometimes retroactively cover bills from the prior three months.
 
 ## How the CoveredUSA Bill Analyzer Helps
 
@@ -127,7 +130,7 @@ California's protections are strong but not unlimited. A few things to know:
 
 ## Penalties for Hospitals That Violate These Laws
 
-California takes enforcement seriously. The Department of Health Care Access and Information (HCAI) oversees hospital compliance with the Fair Pricing Act. Penalties range from **$12,500 to $25,000 per violation**. Under SB 1061, any medical debt reported to a credit bureau in violation of the law becomes void, which means the creditor loses the right to collect it.
+California takes enforcement seriously. The [Department of Health Care Access and Information (HCAI)](https://hcai.ca.gov/affordability/hospital-fair-billing-program/laws-and-regulations/) oversees hospital compliance with the Fair Pricing Act. Penalties range from **$12,500 to $25,000 per violation**. Under SB 1061, any medical debt reported to a credit bureau in violation of the law becomes void, which means the creditor loses the right to collect it.
 
 If a hospital denies your charity care application without cause, fails to screen you for Medi-Cal, or attempts to place a lien on your home, you can file a complaint with HCAI or contact the California Attorney General's office.
 
@@ -139,7 +142,7 @@ Yes, as of January 1, 2025. SB 1061 prohibits consumer credit reporting agencies
 
 ### What income qualifies for free hospital care in California in 2026?
 
-Free care (charity care) thresholds vary by hospital, but most California hospitals provide free care to patients with income at or below 200% FPL. That is $31,920 for a single person and $65,560 for a family of four in 2026. Discounted care is available up to 400% FPL under state law.
+Free care (charity care) thresholds vary by hospital, but most California hospitals provide free care to patients with income at or below 200% FPL. That is $31,920 for a single person and $66,000 for a family of four in 2026. Discounted care is available up to 400% FPL under state law.
 
 ### Can a California hospital sue me or take my home for an unpaid bill?
 
