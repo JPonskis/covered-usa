@@ -74,6 +74,7 @@ The `Drug` interface (`projects/covered-usa/src/lib/drugs.ts`) is your hard cont
 - `faqs: {en: LocalizedFAQ[], es: LocalizedFAQ[]}` (NOT LocalizedString — FAQ question/answer are flat strings)
 - `relatedLinks: RelatedLink[]`
 - `sources: DrugSource[]` (minimum 3)
+- **`ctaTarget` (LOCKED ENUM: `"screener"` | `"analyzer"`) — DEFAULT TO `"analyzer"` for drug-cost pages.** User intent on a drug-cost page is "how much does this cost / can I get patient assistance / how do I afford this prescription" — the bill analyzer (`/medical-bill-analyzer`) is the canonical CTA. Override to `"screener"` ONLY for pages where the dominant intent is "I'm shopping for insurance that covers this drug" (rare; usually a coverage Q&A, not a drug-cost page). Per the Q&A PRD's heuristic: "any page citing a dollar amount > $50 MUST use ctaTarget: analyzer unless the question is fundamentally who-qualifies." Drug pages always cite dollar amounts → always analyzer.
 
 **Additive Track C-prime fields (emit these too — clears `content-quality.js` warnings + Track A1 forward-compat):**
 

@@ -67,6 +67,7 @@ The `Procedure` interface (`projects/covered-usa/src/lib/procedures.ts`) is your
 - `faqs: {en: LocalizedFAQ[], es: LocalizedFAQ[]}` (NOT LocalizedString — FAQ question/answer are flat strings)
 - `relatedLinks: RelatedLink[]`
 - `sources: ProcedureSource[]`
+- **`ctaTarget` (LOCKED ENUM: `"screener"` | `"analyzer"`) — DEFAULT TO `"analyzer"` for procedure-cost pages.** User intent on a procedure-cost page is "how much will this cost / how do I dispute / how do I afford this bill" — the bill analyzer (`/medical-bill-analyzer`) is the canonical CTA. Override to `"screener"` ONLY for pages where the dominant intent is "I'm shopping for insurance that covers this procedure" (rare; usually a Q&A subtype, not a procedure-cost page). Per the Q&A PRD's heuristic: "any page citing a dollar amount > $50 MUST use ctaTarget: analyzer unless the question is fundamentally who-qualifies." Procedure pages always cite dollar amounts → always analyzer.
 
 **Additive Track C-prime fields (emit these too — clears `content-quality.js` warnings + Track A1 forward-compat):**
 - `topicCluster: "procedure-cost"` (string, lowercase kebab-case)

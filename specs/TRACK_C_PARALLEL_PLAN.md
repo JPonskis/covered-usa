@@ -696,6 +696,60 @@ If you want to compress Round 2 further: Q&A is the most architecturally complex
 
 ---
 
+## 8.4 Dual-funnel monetization (added v1.3 — read before deciding ctaTarget)
+
+CoveredUSA monetizes through TWO funnels, mapped to the schema's `ctaTarget` field:
+
+### Funnel 1 — Screener → broker partnership ($$$ — the revenue path)
+
+`ctaTarget: "screener"` routes users to `/screener`, the eligibility-screening tool. Completed screeners feed Jacob's broker partnership (live as of 2026-05-15) — broker pays per qualified lead (Medicare ~$60-100, ACA ~$20-50, supplemental ~$30-80 through aggregators). **This is the actual monetization path.**
+
+Templates that default to `ctaTarget: "screener"`:
+- **MA-state** (LOCKED) — Medicare shoppers
+- **Persona** (default; analyzer rare) — coverage-shopping by persona
+- **Event** (default; analyzer rare for bill-anchored events) — SEP-triggered plan shopping
+- **Q&A coverage subtype** — coverage questions
+- **Q&A state-eligibility subtype** — qualifying questions
+- **Glossary coverage/eligibility terms** (PTC, SEP, OEP, in-network, etc.)
+- **Daily blog: eligibility/coverage articles** (per `target` field in Google Sheet)
+
+### Funnel 2 — Analyzer → bill analyzer engagement
+
+`ctaTarget: "analyzer"` routes users to `/medical-bill-analyzer`, the bill-review tool. User intent: "I have a bill / I'm about to get one / I want cost info." Engagement metric today; monetization path TBD (potentially billing-advocacy partnerships, but not the current revenue engine).
+
+Templates that default to `ctaTarget: "analyzer"`:
+- **Procedure** (default — cost-focused; user wants to understand a bill or expected cost)
+- **Drug** (default — cost-focused; user wants PAP / GoodRx / cost info)
+- **Q&A cost subtype** (if any — cost-citing questions)
+- **Glossary cost terms** (deductible, copay, MOOP, HSA, FSA — bill-related)
+- **Daily blog: cost/bill articles** (per `target` field in Google Sheet)
+
+### Heuristic (from Q&A PRD; applies to every template's ctaTarget decision)
+
+> "Any page citing a dollar amount > $50 MUST use `ctaTarget: analyzer` unless the question is fundamentally who-qualifies."
+
+Translation:
+- Page is about MONEY (cost, bill, deductible, copay, premium, drug price, procedure price) → **analyzer**
+- Page is about ELIGIBILITY (do I qualify, what does it cover, when can I enroll, who can sign up) → **screener**
+
+### Implication for Track C-prime sessions
+
+Pick the right `ctaTarget` for every test article. Wrong CTA = wrong funnel = leaked-revenue opportunity. Don't default everything to "screener" out of habit — procedure + drug pages MUST be "analyzer" for the user-intent alignment. The verifier's GATE F or equivalent should flag wrong-funnel mismatches.
+
+### Strategic implication (for Track D / E planning)
+
+At Track D's 206-page mark, roughly:
+- **~130 pages → screener funnel = broker lead generation** (51 MA-state + 51 Medicaid factory + ~28 from coverage-focused templates)
+- **~75 pages → analyzer funnel = engagement** (procedure + drug + cost Q&As + cost glossary)
+
+At 6-month mark (~530 pages):
+- **~300-350 pages → screener** = $11-50K/month at typical lead-pricing × conversion rates
+- **~180-220 pages → analyzer** = engagement; monetization path TBD
+
+The screener funnel is where the revenue currently lives. Track D + E content investment is biased toward state-by-state coverage pages (which are all screener funnel) — that's the highest-monetization-per-page move on the roadmap.
+
+---
+
 ## 8.5 End-state page count math (added v1.3)
 
 How many pages will CoveredUSA have at each phase? Planning anchor for Track D / E / F sessions.
