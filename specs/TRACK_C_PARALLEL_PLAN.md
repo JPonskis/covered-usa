@@ -696,6 +696,105 @@ If you want to compress Round 2 further: Q&A is the most architecturally complex
 
 ---
 
+## 8.5 End-state page count math (added v1.3)
+
+How many pages will CoveredUSA have at each phase? Planning anchor for Track D / E / F sessions.
+
+### Right now (2026-05-14, mid-Track-C-prime)
+
+~61 pages live across coveredusa.org:
+
+| Surface | Count | Notes |
+|---|---|---|
+| Daily blog | 36 | B1 cron producing ~3/day |
+| MA-state | 8 | CA/TX/WY pre-formula + FL/NY/MI/OH/PA formula-aligned |
+| Procedure | 3 | mri, ct-scan, colonoscopy |
+| Drug | 3 | ozempic, metformin, insulin |
+| Persona | 2 | gig-workers, self-employed |
+| Event | 3 | turning-26, turning-65-medicare, lost-job |
+| Q&A | 3 | medicaid-rehab, medicare-dental, medicare-vision |
+| Glossary | 3 | magi, deductible, oop-max |
+
+### After this batch (Track C-prime, 6 parallel sessions complete)
+
+~91 pages — each session adds 5 net-new test articles = +30. Plus daily blog keeps adding ~3/day during execution.
+
+| Surface | After C-prime |
+|---|---|
+| Daily blog | 36+ (growing daily) |
+| MA-state | 8 |
+| Procedure | 8 (+5) |
+| Drug | 8 (+5) |
+| Persona | 7 (+5) |
+| Event | 8 (+5) |
+| Q&A | 8 (+5) |
+| Glossary | 8 (+5) |
+
+### After Track D (MA bulkgen + Medicaid state factory)
+
+~206 pages — Track D is the single biggest content move on the roadmap. Two parts:
+
+1. **MA-state bulkgen:** finish the remaining 43 states + DC using the proven MA-state writer + verifier. Wall-clock: ~1 day with parallel batches.
+2. **Medicaid state factory:** new `/medicaid-income-limits/[state]` route + 50 state pages with household-size income tables using state-program brand names (Medi-Cal, AHCCCS, MNsure, SoonerCare, kynect, etc.). This is the highest-ROI content investment per FANOUT_FORMULA §5.1.
+
+| Surface | After Track D |
+|---|---|
+| Daily blog | ~50+ |
+| MA-state | **51** (capped — US has 51 jurisdictions) |
+| Medicaid state factory (NEW) | **51** |
+| Procedure | 8 |
+| Drug | 8 |
+| Persona | 7 |
+| Event | 8 |
+| Q&A | 8 |
+| Glossary | 8 |
+
+### After Track E (bulk regen of existing 56 pages)
+
+Still ~206 pages — Track E doesn't add pages, it regens existing ones to the new formula standard. Glossary downsizing (magi/deductible/oop-max) happens here.
+
+### Realistic 6-month future state (~500 pages)
+
+What the templates ENABLE when bulkgens run on top of Tracks C/D/E:
+
+| Surface | 6-month target | Constraint |
+|---|---|---|
+| Daily blog | ~216 | 36 today + ~180 over 6 months at 3/day |
+| MA-state | 51 | capped |
+| Medicaid state factory | 51 | capped |
+| Procedure | ~20 | top-20 most-searched (knee/shoulder/spine MRI variants, CT scan variants, colonoscopy, mammogram, x-ray, echocardiogram, ultrasound, EGD, biopsy, etc.) |
+| Drug | ~30 | top-30 prescribed + IRA drugs (Eliquis, Jardiance, Ozempic, Wegovy, Humira, Mounjaro, insulin variants, top statins, BP meds, etc.) |
+| Persona | ~12 | gig drivers, freelancers, college students, divorcees, military, immigrants, etc. |
+| Event | ~12 | marriage, divorce, baby, lost-job, retire, turn-26, turn-65, move-states, become-caregiver, lose-spouse, etc. |
+| Q&A | ~100 | "does X cover Y" / "do I qualify for Z" patterns — scales linearly with effort |
+| Glossary | ~30 | HSA, FSA, PTC, copay, coinsurance, deductible, MOOP, HDHP, EHB, formulary, etc. |
+| **Total** | **~530** | |
+
+### Long-tail permutation scale (12+ months)
+
+The templates SUPPORT state × topic permutations. Sample:
+
+- Drug × state: 30 drugs × 51 states = **1,530 drug-cost-by-state pages**
+- Procedure × state: 20 procedures × 51 states = **1,020 procedure-cost-by-state pages**
+- Persona × state: 12 personas × 51 states (where state-specific stipends exist) = up to ~600
+- Event × state: 12 events × 51 states (SEP rules vary) = up to ~600
+
+**Theoretical permutation ceiling: 3,000-5,000+ pages.** The cap isn't infrastructure — each new page costs ~$0.50 in agent time. The cap is editorial decision on what's worth writing.
+
+### The strategic picture
+
+- **Today: 61 pages.** Patchwork.
+- **After Track C-prime: 91.** Every template now formula-aligned + verifier-backed. Foundation complete.
+- **After Track D: 206.** State coverage achieved (MA-state 51 + Medicaid 51). The "lookup by state" SEO pattern owned.
+- **6 months out: ~500.** Template-driven bulkgens running. Daily blog continues at 3/day.
+- **12 months out: 1,500+.** Permutation factories running. Category moat established.
+
+Track C-prime is the LAST FOUNDATIONAL work. After it ships, every page produced going forward inherits the new standard. Bulkgens become mechanical: spawn 10 writer agents in parallel, each writes 1 page, verifier fact-checks each, ship the batch. ~$5 in agent costs per batch of 10 pages.
+
+The 500-page mark is where the SEO/AI-citation moat starts mattering. The 1,500-page mark is where you own the healthcare-insurance lookup category.
+
+---
+
 ## 9. Cross-references
 
 - `projects/covered-usa/specs/FANOUT_FORMULA.md` — the playbook
