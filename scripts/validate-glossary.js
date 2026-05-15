@@ -51,8 +51,11 @@ function validateGlossary(slug, data) {
 
   if (!isLocalizedString(data.quickDefinition)) warn('quickDefinition must be {en, es}');
 
-  if (!Array.isArray(data.introParagraphs) || data.introParagraphs.length < 1)
-    warn('introParagraphs must be a non-empty array');
+  // introParagraphs — Track C-prime DOWNSCOPE: empty array is the canonical shape
+  // per FANOUT_FORMULA §4.5. Definition + quickDefinition + hero.subhero cover the
+  // intro role. Field is required by schema (TS non-optional) but content drops to zero.
+  if (!Array.isArray(data.introParagraphs))
+    warn('introParagraphs must be an array (use [] for Track C-prime downscope shape)');
   else data.introParagraphs.forEach((p, i) => {
     if (!isLocalizedString(p)) warn(`introParagraphs[${i}] must be {en, es}`);
   });
@@ -100,13 +103,20 @@ function validateGlossary(slug, data) {
       warn('workedExample.footnote must be {en, es}');
   }
 
-  // detailSections — minimum 2 for mid-CTA split
-  if (!Array.isArray(data.detailSections) || data.detailSections.length < 2)
-    warn('detailSections must have at least 2 entries (mid-CTA split assumes 2+)');
-  else data.detailSections.forEach((s, i) => {
-    if (!isLocalizedString(s.heading)) warn(`detailSections[${i}].heading must be {en, es}`);
-    if (!Array.isArray(s.paragraphs)) warn(`detailSections[${i}].paragraphs must be an array`);
-  });
+  // detailSections — Track C-prime DOWNSCOPE: ≤1 entry, only when comparison- or
+  // lookup-shaped. NEVER history/mechanics/why-it-exists. Per FANOUT_FORMULA §4.5
+  // glossary's strategic role is internal-link target, not citation magnet.
+  // Previously required MIN 2; the old contract drove the bloat the audit flagged.
+  if (!Array.isArray(data.detailSections))
+    warn('detailSections must be an array (use [] for Track C-prime downscope shape, max 1 entry)');
+  else {
+    if (data.detailSections.length > 1)
+      warn(`detailSections must have at most 1 entry (Track C-prime §4.5 cap; found ${data.detailSections.length})`);
+    data.detailSections.forEach((s, i) => {
+      if (!isLocalizedString(s.heading)) warn(`detailSections[${i}].heading must be {en, es}`);
+      if (!Array.isArray(s.paragraphs)) warn(`detailSections[${i}].paragraphs must be an array`);
+    });
+  }
 
   // faqs flat-strings rule
   if (!data.faqs || !Array.isArray(data.faqs.en) || !Array.isArray(data.faqs.es))
