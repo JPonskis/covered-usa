@@ -228,6 +228,69 @@ export default async function DrugPage({ params }: PageProps) {
             <p key={i}>{pickLocale(p, locale)}</p>
           ))}
 
+          {data.iraNegotiation && (
+            <aside
+              className="my-8 rounded-xl border-l-4 p-6"
+              style={{
+                background: '#f0fdf4',
+                borderLeftColor: '#15803d',
+                borderColor: '#bbf7d0',
+                borderWidth: '1px',
+              }}
+            >
+              <h3 className="font-semibold text-[#0f172a] mb-3 text-base">
+                {isEs
+                  ? `Precio negociado por Medicare (efectivo ${new Date(data.iraNegotiation.effectiveDate).toLocaleDateString('es-US', { year: 'numeric', month: 'long', day: 'numeric' })})`
+                  : `Medicare Negotiated Price — Effective ${new Date(data.iraNegotiation.effectiveDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
+              </h3>
+              <div className="grid sm:grid-cols-3 gap-4 mb-4">
+                <div>
+                  <div className="text-xs uppercase tracking-wide text-[#64748b] mb-1">
+                    {isEs ? 'Precio máximo justo' : 'Maximum Fair Price'}
+                  </div>
+                  <div className="text-2xl font-semibold text-[#15803d]">
+                    ${data.iraNegotiation.maxFairPrice.toLocaleString()}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-wide text-[#64748b] mb-1">
+                    {isEs ? 'Precio de lista anterior' : 'List Price Before'}
+                  </div>
+                  <div className="text-2xl font-semibold text-[#475569] line-through">
+                    ${data.iraNegotiation.listPriceBefore.toLocaleString()}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-wide text-[#64748b] mb-1">
+                    {isEs ? 'Ahorro' : 'Savings'}
+                  </div>
+                  <div className="text-2xl font-semibold text-[#15803d]">
+                    {Math.round(
+                      ((data.iraNegotiation.listPriceBefore - data.iraNegotiation.maxFairPrice) /
+                        data.iraNegotiation.listPriceBefore) *
+                        100,
+                    )}
+                    %
+                  </div>
+                </div>
+              </div>
+              <p className="text-sm text-[#475569] mb-2">
+                {pickLocale(data.iraNegotiation.callout, locale)}
+              </p>
+              <p className="text-xs text-[#94a3b8]">
+                {isEs ? 'Fuente: ' : 'Source: '}
+                <a
+                  href={data.iraNegotiation.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  {data.iraNegotiation.source.replace(/^https?:\/\//, '').split('/')[0]}
+                </a>
+              </p>
+            </aside>
+          )}
+
           <h2>
             {isEs
               ? `Cuánto cuesta ${pickLocale(data.shortName, locale)} por punto de pago (${data.pricing.partBDeductibleYear})`
