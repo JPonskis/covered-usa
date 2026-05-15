@@ -1,0 +1,894 @@
+{
+  "slug": "humalog-cost",
+  "topicCluster": "drug-cost",
+  "keyTerms": {
+    "en": [
+      "Humalog cost",
+      "insulin lispro price",
+      "Humalog Medicare",
+      "insulin lispro 2026",
+      "Lilly Cares Foundation insulin",
+      "Admelog biosimilar",
+      "rapid-acting insulin cost"
+    ],
+    "es": [
+      "costo Humalog",
+      "precio insulina lispro",
+      "Humalog Medicare",
+      "insulina lispro 2026",
+      "Fundacion Lilly Cares insulina",
+      "Admelog biosimilar",
+      "costo insulina accion rapida"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "drugName": {
+    "en": "Humalog (Insulin Lispro)",
+    "es": "Humalog (Insulina Lispro)"
+  },
+  "shortName": {
+    "en": "Humalog",
+    "es": "Humalog"
+  },
+  "nonProprietaryName": "insulin lispro",
+  "brandNames": ["Humalog", "Admelog", "Lyumjev"],
+  "drugClass": {
+    "en": "Rapid-acting insulin analog",
+    "es": "Análogo de insulina de acción rápida"
+  },
+  "routeOfAdministration": "Injection",
+  "medicalSpecialty": "Endocrine",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "8 min read",
+  "hcpcsJCodes": ["J1815", "J1817"],
+
+  "meta": {
+    "title": {
+      "en": "Humalog Cost in 2026: Prices, Medicare Cap & Programs | CoveredUSA",
+      "es": "Costo de Humalog en 2026: Precios y Programas Medicare | CoveredUSA"
+    },
+    "description": {
+      "en": "Humalog (insulin lispro) costs $25 to $160/vial in 2026. Medicare Part D caps insulin at $35/month. Lilly Cares Foundation: free for income up to 400% FPL.",
+      "es": "Humalog (insulina lispro) cuesta $25 a $160/vial en 2026. Medicare Parte D: $35/mes. Fundacion Lilly Cares: gratis para ingresos hasta 400% FPL."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "What Does Humalog (Insulin Lispro) Cost in 2026?",
+      "es": "¿Cuánto Cuesta Humalog (Insulina Lispro) en 2026?"
+    },
+    "subhero": {
+      "en": "Brand Humalog lists at $72 to $86 per 10 mL vial after Lilly's 2023 price cut. Generic insulin lispro is as low as $25 per vial. Medicare Part D caps insulin at $35 per month under the Inflation Reduction Act. The Lilly Cares Foundation provides free Humalog to uninsured patients with incomes up to 400% of the Federal Poverty Level. Here is how the prices stack up across retail, inpatient, and assistance programs in 2026.",
+      "es": "La marca Humalog tiene un precio de lista de $72 a $86 por vial de 10 mL tras el recorte de precios de Lilly en 2023. La insulina lispro genérica cuesta tan solo $25 por vial. Medicare Parte D limita la insulina a $35 por mes según la Ley de Reducción de la Inflación. La Fundación Lilly Cares proporciona Humalog gratis a pacientes sin seguro con ingresos de hasta el 400% del Nivel de Pobreza Federal. Aquí se comparan los precios en farmacias, hospitalizaciones y programas de asistencia en 2026."
+    }
+  },
+
+  "quickAnswer": {
+    "en": "In 2026, Humalog (insulin lispro) retails at $25 to $160 per vial or pen depending on formulation and brand. Medicare Part D caps all insulin costs at $35 per month under the Inflation Reduction Act (effective January 2023). The Lilly Insulin Value Program caps cost at $35 per month for commercially insured and uninsured patients. The Lilly Cares Foundation provides free insulin to qualifying uninsured patients with household incomes up to 400% of the Federal Poverty Level. For inpatient hospital stays, insulin lispro is typically bundled into the DRG rate and does not appear as a separate line item on the bill.",
+    "es": "En 2026, Humalog (insulina lispro) tiene un precio al por menor de $25 a $160 por vial o pluma según la formulación y la marca. Medicare Parte D limita todos los costos de insulina a $35 por mes según la Ley de Reducción de la Inflación (efectivo enero 2023). El Programa de Valor de Insulina Lilly también limita el costo a $35 por mes para pacientes con seguro comercial y sin seguro. La Fundación Lilly Cares proporciona insulina gratis a pacientes sin seguro calificados con ingresos familiares de hasta el 400% del Nivel de Pobreza Federal. Para hospitalizaciones, la insulina lispro generalmente se incluye en el pago del DRG y no aparece como artículo separado en la factura."
+  },
+
+  "pricing": {
+    "medicareAspPerUnit": 0.35,
+    "medicareAspUnit": {
+      "en": "per unit (J1815 = per 5 units, ~$1.75 per billing unit)",
+      "es": "por unidad (J1815 = por 5 unidades, ~$1.75 por unidad de facturación)"
+    },
+    "retailLow": 25,
+    "retailHigh": 160,
+    "retailUnit": {
+      "en": "per vial or pen",
+      "es": "por vial o pluma"
+    },
+    "inpatientLow": 150,
+    "inpatientHigh": 400,
+    "inpatientUnit": {
+      "en": "per admission (bundled in DRG)",
+      "es": "por ingreso (incluido en DRG)"
+    },
+    "medicarePartDMonthlyCap": 35,
+    "medicaidCopayLow": 1,
+    "medicaidCopayHigh": 4,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283,
+    "partDAnnualOopCap": 2100
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Humalog (insulin lispro) is a rapid-acting insulin analog used to control blood sugar spikes at mealtimes in adults and children with type 1 or type 2 diabetes. It begins working within 15 minutes of injection, peaks in about 1 hour, and lasts 2 to 4 hours. Three products carry the insulin lispro molecule: brand-name Humalog (Eli Lilly), Admelog (Sanofi, a follow-on biologic approved in 2017), and Lyumjev (Eli Lilly, an ultra-rapid formulation with citrate and treprostinil added to speed absorption).",
+      "es": "Humalog (insulina lispro) es un análogo de insulina de acción rápida utilizado para controlar los picos de glucosa en sangre durante las comidas en adultos y niños con diabetes tipo 1 o tipo 2. Comienza a actuar dentro de los 15 minutos posteriores a la inyección, alcanza su pico en aproximadamente 1 hora y dura de 2 a 4 horas. Tres productos contienen la molécula de insulina lispro: la marca Humalog (Eli Lilly), Admelog (Sanofi, un biológico derivado aprobado en 2017) y Lyumjev (Eli Lilly, una formulación de acción ultrarrápida con citrato y treprostinilo añadidos para acelerar la absorción)."
+    },
+    {
+      "en": "Eli Lilly cut the list price of Humalog by 70% in May 2023, bringing the brand 10 mL vial from as high as $274 down to $72 to $86. The company simultaneously launched an authorized generic insulin lispro at $25 per vial. Despite these cuts, patients without assistance programs have historically faced substantial out-of-pocket costs. The $35 per month cap under Medicare Part D from the Inflation Reduction Act has provided the most consistent relief for Medicare enrollees since January 2023.",
+      "es": "Eli Lilly redujo el precio de lista de Humalog en un 70% en mayo de 2023, llevando el vial de 10 mL de la marca desde hasta $274 a $72 a $86. Al mismo tiempo, la compañía lanzó una insulina lispro genérica autorizada a $25 por vial. A pesar de estas reducciones, los pacientes sin programas de asistencia históricamente han enfrentado costos de bolsillo sustanciales. El límite de $35 por mes bajo Medicare Parte D de la Ley de Reducción de la Inflación ha proporcionado el alivio más consistente para los inscritos en Medicare desde enero de 2023."
+    },
+    {
+      "en": "For inpatient hospital stays, insulin lispro is typically bundled into the DRG (Diagnosis Related Group) payment and does not appear as a separate line item on the bill. This differs from some biologics and chemotherapy agents billed as separate Part B drug charges. When insulin does appear on a hospital itemized bill (mainly in outpatient or emergency department settings), it may carry a facility markup of 5x to 20x the acquisition cost. Knowing the relevant J-codes (J1815 for injectable insulin per 5 units, J1817 for insulin pump supply) helps patients spot billing errors.",
+      "es": "Para las estancias hospitalarias, la insulina lispro generalmente se incluye en el pago del DRG (Grupo de Diagnóstico Relacionado) y no aparece como un artículo separado en la factura. Esto difiere de algunos biológicos y agentes de quimioterapia que se facturan como cargos de medicamentos separados de la Parte B. Cuando la insulina aparece en una factura detallada del hospital (principalmente en entornos ambulatorios o de urgencias), puede llevar un recargo de instalación de 5 a 20 veces el costo de adquisición. Conocer los códigos J relevantes (J1815 para insulina inyectable por 5 unidades, J1817 para suministro de bomba de insulina) ayuda a los pacientes a identificar errores de facturación."
+    }
+  ],
+
+  "pointOfPay": {
+    "rows": [
+      {
+        "pointOfPay": {
+          "en": "Medicare ASP rate (Part B, J1815)",
+          "es": "Tarifa Medicare ASP (Parte B, J1815)"
+        },
+        "cost": {
+          "en": "~$1.75 per 5-unit billing unit",
+          "es": "~$1.75 por unidad de facturación de 5 unidades"
+        },
+        "notes": {
+          "en": "CMS quarterly Part B ASP rate. Used when insulin is billed in clinical settings, not covered under Part D.",
+          "es": "Tarifa ASP de Parte B trimestral de CMS. Se usa cuando la insulina se factura en entornos clínicos, no cubierta bajo Parte D."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Pharmacy counter (retail, no insurance)",
+          "es": "Mostrador farmacia (al por menor, sin seguro)"
+        },
+        "cost": {
+          "en": "$25 - $160/vial or pen",
+          "es": "$25 - $160/vial o pluma"
+        },
+        "notes": {
+          "en": "Generic lispro $25/vial; brand Humalog $72-$86/vial; KwikPen 5-pack up to $160",
+          "es": "Lispro genérica $25/vial; marca Humalog $72-$86/vial; KwikPen 5 unidades hasta $160"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicare Part D (monthly cap)",
+          "es": "Medicare Parte D (límite mensual)"
+        },
+        "cost": {
+          "en": "$35/month",
+          "es": "$35/mes"
+        },
+        "notes": {
+          "en": "Inflation Reduction Act 2022, effective January 2023. No deductible applies to insulin.",
+          "es": "Ley de Reducción de la Inflación 2022, efectivo enero 2023. No se aplica deducible a la insulina."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Lilly Insulin Value Program (commercial or uninsured)",
+          "es": "Programa de Valor de Insulina Lilly (seguro comercial o sin seguro)"
+        },
+        "cost": {
+          "en": "$35/month",
+          "es": "$35/mes"
+        },
+        "notes": {
+          "en": "Any Lilly insulin (Humalog, Lyumjev, generic lispro). Not available to Medicare or Medicaid enrollees.",
+          "es": "Cualquier insulina Lilly (Humalog, Lyumjev, lispro genérica). No disponible para inscritos en Medicare o Medicaid."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Inpatient hospital stay",
+          "es": "Estancia hospitalaria"
+        },
+        "cost": {
+          "en": "Bundled in DRG, not separately billed",
+          "es": "Incluido en DRG, no se factura por separado"
+        },
+        "notes": {
+          "en": "Insulin is bundled into the hospital DRG payment for most inpatient admissions. Itemized charges may appear in outpatient or ED settings.",
+          "es": "La insulina se incluye en el pago DRG del hospital para la mayoría de las hospitalizaciones. Los cargos detallados pueden aparecer en entornos ambulatorios o de urgencias."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicaid",
+          "es": "Medicaid"
+        },
+        "cost": {
+          "en": "$1 - $4/prescription",
+          "es": "$1 - $4/receta"
+        },
+        "notes": {
+          "en": "Nominal copay in all 50 states",
+          "es": "Copago nominal en los 50 estados"
+        }
+      }
+    ],
+    "tableFootnote": {
+      "en": "Retail prices reflect post-2023 list prices after Lilly's 70% price reduction. Medicare Part D $35 cap is statutory under the IRA effective January 2023. ASP rates are CMS quarterly published figures.",
+      "es": "Los precios al por menor reflejan los precios de lista posteriores a 2023 tras la reducción del 70% de Lilly. El límite de $35 de Medicare Parte D es estatutario según la IRA efectivo enero 2023. Las tarifas ASP son cifras publicadas trimestralmente por CMS."
+    },
+    "tableSource": "CMS Medicare Part B ASP 2026, Eli Lilly price announcements, CMS Inflation Reduction Act insulin cap, GoodRx 2026"
+  },
+
+  "whyHospitalsCharge": {
+    "paragraphs": [
+      {
+        "en": "For most inpatient hospital stays, insulin is bundled into the DRG (Diagnosis Related Group) payment. This means the hospital receives a fixed lump sum for a diabetes-related admission, and insulin is considered part of that bundle rather than billed as a separate drug charge. Patients generally will not see insulin as a distinct line item on an inpatient bill under DRG-based reimbursement. This is an important difference from branded biologics, where hospitals may bill the drug as a separate Part B charge.",
+        "es": "Para la mayoría de las hospitalizaciones, la insulina se incluye en el pago del DRG (Grupo de Diagnóstico Relacionado). Esto significa que el hospital recibe una suma fija por un ingreso relacionado con diabetes, y la insulina se considera parte de ese paquete en lugar de facturarse como cargo de medicamento separado. Los pacientes generalmente no verán la insulina como artículo separado en una factura de hospitalización bajo el reembolso basado en DRG."
+      },
+      {
+        "en": "The exception is outpatient hospital visits and emergency department encounters, where drugs can appear as separate line items. In those settings, hospitals apply a facility rate that includes drug acquisition cost plus overhead, supply, and administration markups. Insulin that costs $25 to $86 per vial at retail may appear as $150 to $400 or more on an outpatient facility bill. The HCPCS J1815 code (injection, insulin, per 5 units) is used to itemize those charges, and reviewing the unit count billed against actual doses received is the primary way to catch overcharges.",
+        "es": "La excepción son las visitas hospitalarias ambulatorias y las atenciones en urgencias, donde los medicamentos pueden aparecer como artículos separados. En esos entornos, los hospitales aplican una tarifa de instalación que incluye el costo de adquisición del medicamento más recargos de gastos generales, suministros y administración. La insulina que cuesta de $25 a $86 por vial al por menor puede aparecer como $150 a $400 o más en una factura de instalación ambulatoria. El código HCPCS J1815 (inyección de insulina, por 5 unidades) se usa para detallar esos cargos, y revisar el recuento de unidades facturadas frente a las dosis reales recibidas es la principal forma de detectar sobrecargos."
+      },
+      {
+        "en": "Lilly's 2023 price cut and the IRA's $35 monthly Part D cap have together reduced the financial burden for the most vulnerable patients, but chargemasters at hospitals and outpatient infusion centers are updated slowly and may still reflect older acquisition prices. Asking for an itemized bill and cross-referencing the J1815 unit count is the most actionable step when a charge looks wrong. For Part B billed insulin, the 2026 Medicare coinsurance is 20% after the $283 Part B deductible.",
+        "es": "El recorte de precios de Lilly en 2023 y el límite mensual de $35 de la Parte D de la IRA han reducido juntos la carga financiera para los pacientes más vulnerables, pero los listados de precios de hospitales y centros de infusión ambulatoria se actualizan lentamente y pueden reflejar precios de adquisición más antiguos. Solicitar una factura detallada y verificar el recuento de unidades J1815 es el paso más práctico cuando un cargo parece incorrecto. Para insulina facturada bajo Parte B, el coseguro de Medicare 2026 es el 20% tras el deducible de $283 de la Parte B."
+      }
+    ]
+  },
+
+  "hcpcsSection": {
+    "intro": {
+      "en": "Insulin lispro can appear on hospital and outpatient bills with two HCPCS Level II J-codes. These codes are public domain and you can use them to verify what you were billed:",
+      "es": "La insulina lispro puede aparecer en facturas hospitalarias y ambulatorias con dos códigos J de HCPCS Nivel II. Estos códigos son de dominio público y puede usarlos para verificar lo que le facturaron:"
+    },
+    "rows": [
+      {
+        "code": "J1815",
+        "description": {
+          "en": "Injection, insulin, per 5 units",
+          "es": "Inyección de insulina, por 5 unidades"
+        },
+        "whatToLookFor": {
+          "en": "Standard hospital insulin billing. A 20-unit dose = 4 billing units of J1815. Check the unit count against your actual dose. Applies to all insulin types including rapid-acting lispro.",
+          "es": "Facturación estándar de insulina hospitalaria. Una dosis de 20 unidades = 4 unidades de facturación de J1815. Verifique el recuento de unidades frente a su dosis real. Aplica a todos los tipos de insulina incluyendo lispro de acción rápida."
+        }
+      },
+      {
+        "code": "J1817",
+        "description": {
+          "en": "Insulin for use with insulin pump (per 50 units)",
+          "es": "Insulina para uso con bomba de insulina (por 50 unidades)"
+        },
+        "whatToLookFor": {
+          "en": "Only for patients using an insulin pump covered under Medicare Part B DME benefit. Should NOT appear on a bill if you do not use a pump. J1817 covers 50 units per billing unit. Being billed J1817 instead of J1815 would greatly inflate costs for non-pump patients.",
+          "es": "Solo para pacientes que usan una bomba de insulina cubierta bajo el beneficio DME de Medicare Parte B. NO debe aparecer en una factura si no usa bomba. J1817 cubre 50 unidades por unidad de facturación. Que le facturen J1817 en vez de J1815 inflaría enormemente los costos para pacientes sin bomba."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "HCPCS Level II codes are public domain. J1815 covers all rapid-acting insulins, not just lispro. Verify the brand billed matches what you actually received. Humalog, Admelog, and generic lispro all use J1815.",
+      "es": "Los códigos HCPCS Nivel II son de dominio público. J1815 cubre todas las insulinas de acción rápida, no solo lispro. Verifique que la marca facturada coincida con la que recibió: Humalog, Admelog y lispro genérica utilizan J1815."
+    },
+    "source": "CMS HCPCS Level II Coding, CMS Medicare Part B Drug Coverage"
+  },
+
+  "patientAssistancePrograms": {
+    "intro": {
+      "en": "Eli Lilly runs two separate programs for Humalog. The Lilly Insulin Value Program is a pharmacy savings program available to anyone with commercial insurance or no insurance, capping cost at $35 per month. The Lilly Cares Foundation is a separate patient assistance program that provides free insulin to income-qualifying patients. Sanofi runs a parallel program for Admelog (the insulin lispro follow-on product). Medicare Part D patients already have a $35/month statutory cap and typically do not need manufacturer programs.",
+      "es": "Eli Lilly tiene dos programas separados para Humalog. El Programa de Valor de Insulina Lilly es un programa de ahorros en farmacia disponible para cualquier persona con seguro comercial o sin seguro, limitando el costo a $35 por mes. La Fundación Lilly Cares es un programa de asistencia para pacientes que proporciona insulina gratis a pacientes calificados por ingresos. Sanofi tiene un programa paralelo para Admelog (el producto derivado de insulina lispro). Los pacientes de Medicare Parte D ya tienen un límite estatutario de $35/mes y generalmente no necesitan programas del fabricante."
+    },
+    "rows": [
+      {
+        "program": "Lilly Insulin Value Program",
+        "costBenefit": {
+          "en": "$35/month for Humalog, Lyumjev, or Eli Lilly generic insulin lispro. Any commercially insured or uninsured patient. Not available to Medicare or Medicaid enrollees.",
+          "es": "$35/mes para Humalog, Lyumjev o insulina lispro genérica de Eli Lilly. Cualquier paciente con seguro comercial o sin seguro. No disponible para inscritos en Medicare o Medicaid."
+        },
+        "howToApply": "insulinaffordability.com"
+      },
+      {
+        "program": "Lilly Cares Foundation (PAP)",
+        "costBenefit": {
+          "en": "Free Humalog for uninsured or Medicare Part D patients with household income up to 400% Federal Poverty Level ($62,400 for a single person, $127,500 for a family of four in 2026)",
+          "es": "Humalog gratis para pacientes sin seguro o con Medicare Parte D con ingresos familiares de hasta el 400% del Nivel de Pobreza Federal ($62,400 para persona sola, $127,500 para familia de cuatro en 2026)"
+        },
+        "howToApply": "lillycares.com"
+      },
+      {
+        "program": "Sanofi Insulins VALyou Savings (Admelog)",
+        "costBenefit": {
+          "en": "$35/month for Admelog (insulin lispro) for commercially insured or uninsured patients. Not available to Medicare or Medicaid enrollees.",
+          "es": "$35/mes para Admelog (insulina lispro) para pacientes con seguro comercial o sin seguro. No disponible para inscritos en Medicare o Medicaid."
+        },
+        "howToApply": "sanofipatientconnection.com"
+      }
+    ],
+    "footnote": {
+      "en": "Medicare Part D patients do not need manufacturer programs. The IRA $35/month insulin cap applies automatically through your Part D plan. Eligibility varies by program. Income thresholds use federal poverty guidelines updated annually.",
+      "es": "Los pacientes de Medicare Parte D no necesitan programas del fabricante: el límite de $35/mes de insulina de la IRA se aplica automáticamente a través de su plan Parte D. La elegibilidad varía según el programa. Los umbrales de ingresos usan las pautas de pobreza federal actualizadas anualmente."
+    },
+    "source": "insulinaffordability.com, lillycares.com, sanofipatientconnection.com, NeedyMeds.org"
+  },
+
+  "medicarePartD": {
+    "hasSpecificCap": true,
+    "paragraphs": [
+      {
+        "en": "If you are enrolled in Medicare Part D, your out-of-pocket cost for insulin lispro (Humalog, Admelog, Lyumjev, or the generic) is capped at $35 per month. This cap comes from the Inflation Reduction Act, signed August 16, 2022, and effective January 1, 2023. It is statutory law, not a plan option. The cap applies regardless of which Part D plan you have, which insulin brand you use, and whether you have met your deductible. If your pharmacy charges more than $35 per month for insulin and you have Part D, call your plan's member services. This is a billing error.",
+        "es": "Si está inscrito en Medicare Parte D, su costo de bolsillo por insulina lispro (Humalog, Admelog, Lyumjev o la genérica) está limitado a $35 por mes. Este límite proviene de la Ley de Reducción de la Inflación, firmada el 16 de agosto de 2022, y vigente desde el 1 de enero de 2023. Es ley estatutaria, no una opción del plan. Se aplica independientemente del plan Parte D que tenga, la marca de insulina que use, y si ha cumplido su deducible. Si su farmacia le cobra más de $35 por mes por insulina y tiene Parte D, llame al servicio de miembros de su plan: es un error de facturación."
+      },
+      {
+        "en": "The $35 cap could be lower than $35 if 25% of the plan's negotiated price for that insulin falls below $35. The 2026 annual Part D out-of-pocket maximum is $2,100 for all covered drugs combined, but the $35 monthly insulin cap provides an earlier, product-specific floor. Medicare Part B covers insulin only when used with a covered insulin pump (DME benefit). The same $35/month IRA cap applies in that context too. Humalog (insulin lispro) is NOT one of the IRA's first 10 Medicare-negotiated drugs; insulin aspart (Fiasp/NovoLog) is. Humalog receives the flat $35 statutory cap, which applies to all insulins regardless of negotiation status.",
+        "es": "El límite podría ser inferior a $35 si el 25% del precio negociado del plan para esa insulina cae por debajo de $35. El máximo anual de gastos de bolsillo de la Parte D 2026 es de $2,100 para todos los medicamentos cubiertos, pero el límite mensual de $35 para insulina proporciona un piso específico del producto más temprano. Medicare Parte B cubre la insulina solo cuando se usa con una bomba de insulina cubierta (beneficio DME): el mismo límite de $35/mes de la IRA aplica en ese contexto también. Humalog (insulina lispro) NO es uno de los primeros 10 medicamentos negociados por Medicare de la IRA; la insulina aspart (Fiasp/NovoLog) sí lo es. Humalog recibe el límite estatutario fijo de $35, que aplica a todas las insulinas independientemente del estado de negociación."
+      }
+    ]
+  },
+
+  "commonBillingErrors": {
+    "intro": {
+      "en": "Billing errors involving insulin lispro fall into two categories: outpatient and hospital facility errors, and pharmacy coverage errors. Check for these before paying any insulin bill:",
+      "es": "Los errores de facturación relacionados con insulina lispro se dividen en dos categorías: errores en instalaciones ambulatorias y hospitalarias, y errores de cobertura en farmacias. Verifique estos antes de pagar cualquier factura de insulina:"
+    },
+    "items": [
+      {
+        "en": "J1817 billed instead of J1815 for patients who do not use an insulin pump. J1817 covers 50 units per billing unit, inflating the charge substantially. Confirm you use a pump before accepting this code.",
+        "es": "J1817 facturado en lugar de J1815 para pacientes que no usan bomba de insulina. J1817 cubre 50 unidades por unidad de facturación, inflando sustancialmente el cargo. Confirme que usa bomba antes de aceptar este código."
+      },
+      {
+        "en": "Unit count inflated: J1815 covers 5 administered units per billing unit. A 10-unit dose = 2 billing units; a 20-unit dose = 4 billing units. Verify the billed unit count matches actual units administered per your medication administration record.",
+        "es": "Recuento de unidades inflado: J1815 cubre 5 unidades administradas por unidad de facturación. Una dosis de 10 unidades = 2 unidades de facturación; una dosis de 20 unidades = 4 unidades de facturación. Verifique que el recuento facturado coincida con las unidades reales administradas según su registro de administración de medicamentos."
+      },
+      {
+        "en": "Brand substitution billing error: Humalog billed when Admelog or generic lispro was actually administered, or vice versa. The active molecule is identical but list prices differ. Confirm the brand billed matches administration records.",
+        "es": "Error de facturación por sustitución de marca: Humalog facturado cuando se administró Admelog o lispro genérica, o viceversa. La molécula activa es idéntica pero los precios de lista difieren. Confirme que la marca facturada coincida con los registros de administración."
+      },
+      {
+        "en": "Rapid-acting vs long-acting confusion: Humalog (lispro) and NovoLog (aspart) are rapid-acting prandial insulins. Lantus (glargine), Basaglar, Semglee, and Rezvoglar are long-acting basal insulins, a completely different drug class. These use different J-codes and different price tiers. Being billed for the wrong insulin type is a known error after hospital pharmacy substitutions.",
+        "es": "Confusión entre insulina de acción rápida y de acción prolongada: Humalog (lispro) y NovoLog (aspart) son insulinas prandiales de acción rápida. Lantus (glargina), Basaglar, Semglee y Rezvoglar son insulinas basales de acción prolongada, una clase de medicamento completamente diferente. Utilizan diferentes códigos J y diferentes niveles de precios. Que le facturen el tipo incorrecto de insulina es un error conocido tras sustituciones en la farmacia hospitalaria."
+      },
+      {
+        "en": "Part D overcharge: Medicare Part D patient charged more than $35 per month for insulin at the pharmacy. This is a plan billing error. The IRA $35 cap is statutory and applies regardless of plan or deductible status. Contact plan member services immediately.",
+        "es": "Sobrecargo en Parte D: paciente de Medicare Parte D cobrado más de $35 por mes por insulina en la farmacia. Es un error de facturación del plan: el límite de $35 de la IRA es estatutario y aplica sin importar el plan o el estado del deducible. Comuníquese con los servicios al cliente del plan de inmediato."
+      },
+      {
+        "en": "Insulin billed as a separate outpatient charge when it was administered during an inpatient DRG admission. For DRG-covered admissions, insulin should be bundled into the DRG payment, not billed separately.",
+        "es": "Insulina facturada como cargo ambulatorio separado cuando se administró durante una hospitalización cubierta por DRG. Para admisiones cubiertas por DRG, la insulina debe incluirse en el pago del DRG, no facturarse por separado."
+      }
+    ]
+  },
+
+  "pharmacyPriceComparison": {
+    "intro": {
+      "en": "Insulin lispro retail prices vary by product, formulation, and whether you pay cash or use a discount program. These are 2026 pharmacy counter prices without insurance:",
+      "es": "Los precios al por menor de insulina lispro varían según el producto, la formulación y si paga en efectivo o usa un programa de descuento. Estos son los precios de 2026 en el mostrador de la farmacia sin seguro:"
+    },
+    "rows": [
+      {
+        "product": "Humalog U-100 10 mL vial (brand)",
+        "cashPrice": {
+          "en": "$72 - $86",
+          "es": "$72 - $86"
+        },
+        "discountPrice": {
+          "en": "$72 - $86 (post-cut list, limited further GoodRx discount)",
+          "es": "$72 - $86 (precio de lista post-recorte, descuento GoodRx limitado)"
+        },
+        "notes": {
+          "en": "Post-2023 Lilly price cut. Previously listed at up to $274/vial.",
+          "es": "Tras el recorte de precios de Lilly de 2023. Antes listado a hasta $274/vial."
+        }
+      },
+      {
+        "product": "Insulin lispro U-100 (Eli Lilly authorized generic)",
+        "cashPrice": {
+          "en": "$25",
+          "es": "$25"
+        },
+        "discountPrice": {
+          "en": "$25 (already at floor price)",
+          "es": "$25 (ya en precio mínimo)"
+        },
+        "notes": {
+          "en": "Launched simultaneously with Lilly's 2023 price cut. Identical molecule to Humalog.",
+          "es": "Lanzado simultáneamente con el recorte de precios de Lilly de 2023. Molécula idéntica a Humalog."
+        }
+      },
+      {
+        "product": "Humalog KwikPen 5-pack (3 mL pens, U-100)",
+        "cashPrice": {
+          "en": "$90 - $160",
+          "es": "$90 - $160"
+        },
+        "discountPrice": {
+          "en": "$90 - $140 with GoodRx at select pharmacies",
+          "es": "$90 - $140 con GoodRx en farmacias seleccionadas"
+        },
+        "notes": {
+          "en": "Pen pricing varies more than vials by pharmacy.",
+          "es": "El precio de las plumas varía más que los viales según la farmacia."
+        }
+      },
+      {
+        "product": "Admelog (Sanofi, insulin lispro follow-on)",
+        "cashPrice": {
+          "en": "$70 - $130",
+          "es": "$70 - $130"
+        },
+        "discountPrice": {
+          "en": "$35/month via Sanofi VALyou program (commercially insured or uninsured)",
+          "es": "$35/mes vía programa VALyou de Sanofi (seguro comercial o sin seguro)"
+        },
+        "notes": {
+          "en": "FDA-approved follow-on to Humalog; same molecule, not FDA-designated interchangeable.",
+          "es": "Producto de seguimiento aprobado por FDA de Humalog; misma molécula, no designado intercambiable por FDA."
+        }
+      },
+      {
+        "product": "Lyumjev (Eli Lilly ultra-rapid insulin lispro)",
+        "cashPrice": {
+          "en": "$86 - $150",
+          "es": "$86 - $150"
+        },
+        "discountPrice": {
+          "en": "$35/month via Lilly Insulin Value Program",
+          "es": "$35/mes vía Programa de Valor de Insulina Lilly"
+        },
+        "notes": {
+          "en": "Ultra-rapid formulation; list price aligned with other mealtime analogs per Lilly Feb 2026 announcement.",
+          "es": "Formulación ultrarrápida; precio de lista alineado con otros análogos de comida según anuncio de Lilly de febrero de 2026."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "All prices are approximate 2026 retail figures. GoodRx and other discount programs reflect negotiated pharmacy rates that can change weekly. The Lilly Insulin Value Program $35/month cap supersedes most discount programs for eligible patients.",
+      "es": "Todos los precios son cifras minoristas aproximadas de 2026. GoodRx y otros programas de descuento reflejan tarifas de farmacia negociadas que pueden cambiar semanalmente. El límite de $35/mes del Programa de Valor de Insulina Lilly supera la mayoría de los programas de descuento para pacientes elegibles."
+    }
+  },
+
+  "genericBiosimilarStatus": {
+    "summary": {
+      "en": "Humalog is a biologic insulin, not a small-molecule drug, so alternatives are called follow-on products or biosimilars rather than traditional generics. There are two insulin lispro products on the US market besides the original Humalog: Admelog (Sanofi) and Lyumjev (Eli Lilly). Neither is FDA-designated as interchangeable with Humalog, meaning pharmacists cannot substitute without a new prescription in most states. This is entirely different from the long-acting insulin biosimilar landscape. Products like Basaglar, Semglee, and Rezvoglar are biosimilars of Lantus (insulin glargine), a basal insulin with a different pharmacological role.",
+      "es": "Humalog es una insulina biológica, no un medicamento de molécula pequeña, por lo que las alternativas se denominan productos de seguimiento o biosimilares en lugar de genéricos tradicionales. Hay dos productos de insulina lispro en el mercado estadounidense además del Humalog original: Admelog (Sanofi) y Lyumjev (Eli Lilly). Ninguno está designado por la FDA como intercambiable con Humalog, lo que significa que los farmacéuticos no pueden sustituir sin una nueva receta en la mayoría de los estados. Esto es completamente diferente del panorama de biosimilares de insulina de acción prolongada: productos como Basaglar, Semglee y Rezvoglar son biosimilares de Lantus (insulina glargina), una insulina basal con un rol farmacológico diferente."
+    },
+    "products": [
+      {
+        "name": "Admelog (insulin lispro injection, Sanofi)",
+        "type": {
+          "en": "FDA-approved follow-on biologic (insulin lispro)",
+          "es": "Biológico de seguimiento aprobado por FDA (insulina lispro)"
+        },
+        "fdaInterchangeable": false,
+        "approvedYear": 2017,
+        "notes": {
+          "en": "Same active molecule as Humalog (insulin lispro 100 units/mL). Not FDA-designated interchangeable. Equivalent clinical efficacy and safety for mealtime dosing. Available as vial and SoloStar pen. Sanofi VALyou program: $35/month for commercially insured or uninsured. NOT a biosimilar of Lantus or any long-acting insulin.",
+          "es": "Misma molécula activa que Humalog (insulina lispro 100 unidades/mL). No designado intercambiable por FDA. Eficacia clínica y seguridad equivalentes para dosificación de comidas. Disponible como vial y pluma SoloStar. Programa VALyou de Sanofi: $35/mes para pacientes con seguro comercial o sin seguro. NO es biosimilar de Lantus ni de ninguna insulina de acción prolongada."
+        }
+      },
+      {
+        "name": "Lyumjev (insulin lispro-aabc, Eli Lilly)",
+        "type": {
+          "en": "Ultra-rapid-acting insulin lispro follow-on (Eli Lilly)",
+          "es": "Insulina lispro ultrarrápida de seguimiento (Eli Lilly)"
+        },
+        "fdaInterchangeable": false,
+        "approvedYear": 2020,
+        "notes": {
+          "en": "Contains insulin lispro plus citrate and treprostinil to accelerate absorption. Faster onset than standard Humalog. FDA-approved for type 1 and type 2 diabetes in adults. Listed as a separate product, not a biosimilar substitute. Covered under Lilly Insulin Value Program at $35/month. NOT interchangeable with Humalog by prescription. NOT a long-acting or basal insulin.",
+          "es": "Contiene insulina lispro más citrato y treprostinilo para acelerar la absorción. Inicio más rápido que el Humalog estándar. Aprobado por FDA para diabetes tipo 1 y tipo 2 en adultos. Catalogado como producto separado, no como sustituto biosimilar. Cubierto bajo el Programa de Valor de Insulina Lilly a $35/mes. NO intercambiable con Humalog por receta. NO es insulina de acción prolongada ni basal."
+        }
+      }
+    ],
+    "notIncluded": {
+      "en": "Basaglar, Semglee, and Rezvoglar are biosimilars of Lantus (insulin glargine), a long-acting BASAL insulin. They are not related to Humalog or insulin lispro. Basal insulins are injected once daily for steady background coverage; rapid-acting insulins like Humalog are injected at mealtimes. The two types have different mechanisms, different durations, and different J-codes. Confusing the two on a hospital bill is a known error.",
+      "es": "Basaglar, Semglee y Rezvoglar son biosimilares de Lantus (insulina glargina), una insulina BASAL de acción prolongada. No tienen relación con Humalog ni con la insulina lispro. Las insulinas basales se inyectan una vez al día para cobertura de fondo estable; las insulinas de acción rápida como Humalog se inyectan en las comidas. Los dos tipos tienen mecanismos diferentes, duraciones diferentes y códigos J diferentes. Confundirlos en una factura hospitalaria es un error conocido."
+    }
+  },
+
+  "papEligibilityTable": {
+    "program": "Lilly Cares Foundation Patient Assistance Program",
+    "intro": {
+      "en": "The Lilly Cares Foundation provides free Humalog, Lyumjev, and other Lilly insulins to qualifying US residents. Eligibility is based on household size and income relative to the Federal Poverty Level. The table below shows approximate 2026 income thresholds at 400% FPL (the maximum for this program):",
+      "es": "La Fundación Lilly Cares proporciona Humalog, Lyumjev y otras insulinas de Lilly gratis a residentes de EE.UU. calificados. La elegibilidad se basa en el tamaño del hogar y los ingresos en relación con el Nivel de Pobreza Federal. La siguiente tabla muestra los umbrales de ingresos aproximados de 2026 al 400% del FPL (el máximo para este programa):"
+    },
+    "rows": [
+      {
+        "householdSize": {
+          "en": "1 person",
+          "es": "1 persona"
+        },
+        "annualIncomeLimit": {
+          "en": "$62,400",
+          "es": "$62,400"
+        },
+        "monthlyIncomeLimit": {
+          "en": "$5,200",
+          "es": "$5,200"
+        }
+      },
+      {
+        "householdSize": {
+          "en": "2 people",
+          "es": "2 personas"
+        },
+        "annualIncomeLimit": {
+          "en": "$84,800",
+          "es": "$84,800"
+        },
+        "monthlyIncomeLimit": {
+          "en": "$7,067",
+          "es": "$7,067"
+        }
+      },
+      {
+        "householdSize": {
+          "en": "3 people",
+          "es": "3 personas"
+        },
+        "annualIncomeLimit": {
+          "en": "$107,200",
+          "es": "$107,200"
+        },
+        "monthlyIncomeLimit": {
+          "en": "$8,933",
+          "es": "$8,933"
+        }
+      },
+      {
+        "householdSize": {
+          "en": "4 people",
+          "es": "4 personas"
+        },
+        "annualIncomeLimit": {
+          "en": "$127,500",
+          "es": "$127,500"
+        },
+        "monthlyIncomeLimit": {
+          "en": "$10,625",
+          "es": "$10,625"
+        }
+      },
+      {
+        "householdSize": {
+          "en": "5 people",
+          "es": "5 personas"
+        },
+        "annualIncomeLimit": {
+          "en": "$149,900",
+          "es": "$149,900"
+        },
+        "monthlyIncomeLimit": {
+          "en": "$12,492",
+          "es": "$12,492"
+        }
+      },
+      {
+        "householdSize": {
+          "en": "6 people",
+          "es": "6 personas"
+        },
+        "annualIncomeLimit": {
+          "en": "$172,300",
+          "es": "$172,300"
+        },
+        "monthlyIncomeLimit": {
+          "en": "$14,358",
+          "es": "$14,358"
+        }
+      },
+      {
+        "householdSize": {
+          "en": "7 people",
+          "es": "7 personas"
+        },
+        "annualIncomeLimit": {
+          "en": "$194,700",
+          "es": "$194,700"
+        },
+        "monthlyIncomeLimit": {
+          "en": "$16,225",
+          "es": "$16,225"
+        }
+      },
+      {
+        "householdSize": {
+          "en": "8 people",
+          "es": "8 personas"
+        },
+        "annualIncomeLimit": {
+          "en": "$217,100",
+          "es": "$217,100"
+        },
+        "monthlyIncomeLimit": {
+          "en": "$18,092",
+          "es": "$18,092"
+        }
+      },
+      {
+        "householdSize": {
+          "en": "Each additional person",
+          "es": "Cada persona adicional"
+        },
+        "annualIncomeLimit": {
+          "en": "+$22,400 per person",
+          "es": "+$22,400 por persona"
+        },
+        "monthlyIncomeLimit": {
+          "en": "+$1,867 per person",
+          "es": "+$1,867 por persona"
+        }
+      }
+    ],
+    "additionalRequirements": {
+      "en": "In addition to income requirements, applicants must: (1) be a US resident, (2) have a valid prescription from a US-licensed provider, (3) lack insurance coverage for the requested Lilly insulin or be enrolled in Medicare Part D, and (4) apply through a healthcare provider or directly at lillycares.com. Applications are reviewed and can provide up to a 12-month supply with unlimited renewals.",
+      "es": "Además de los requisitos de ingresos, los solicitantes deben: (1) ser residentes de EE.UU., (2) tener una receta válida de un proveedor con licencia de EE.UU., (3) carecer de cobertura de seguro para la insulina Lilly solicitada o estar inscrito en Medicare Parte D, y (4) solicitar a través de un proveedor de atención médica o directamente en lillycares.com. Las solicitudes se revisan y pueden proporcionar hasta un suministro de 12 meses con renovaciones ilimitadas."
+    },
+    "source": "lillycares.com, federalregister.gov 2026 FPL guidelines"
+  },
+
+  "denialAlternatives": {
+    "intro": {
+      "en": "If your insurance denies coverage for Humalog, or if you cannot afford the copay, these options are available in 2026:",
+      "es": "Si su seguro niega la cobertura de Humalog, o si no puede pagar el copago, estas opciones están disponibles en 2026:"
+    },
+    "options": [
+      {
+        "title": {
+          "en": "Appeal the denial (Part D)",
+          "es": "Apelar la negativa (Parte D)"
+        },
+        "description": {
+          "en": "If your Part D plan denied Humalog, you have the right to request a coverage determination, redetermination, or Independent Review Entity (IRE) appeal. Your prescriber can file an exception if Humalog is medically necessary. The IRA's $35 insulin cap applies even during an appeal. You cannot be charged more than $35/month while the appeal is pending.",
+          "es": "Si su plan Parte D negó Humalog, tiene derecho a solicitar una determinación de cobertura, redeterminación o apelación ante una Entidad de Revisión Independiente (IRE). Su médico puede presentar una excepción si Humalog es médicamente necesario. El límite de $35/mes de insulina de la IRA aplica incluso durante una apelación: no se le puede cobrar más de $35/mes mientras la apelación está pendiente."
+        }
+      },
+      {
+        "title": {
+          "en": "Switch to Admelog (Sanofi follow-on)",
+          "es": "Cambiar a Admelog (producto de seguimiento Sanofi)"
+        },
+        "description": {
+          "en": "Admelog contains the same insulin lispro molecule as Humalog. If your plan covers Admelog but not Humalog, a prescriber can switch your prescription. Sanofi's VALyou program also caps Admelog at $35/month for commercially insured or uninsured patients. Admelog is not FDA-designated interchangeable, so a new prescription is required.",
+          "es": "Admelog contiene la misma molécula de insulina lispro que Humalog. Si su plan cubre Admelog pero no Humalog, su médico puede cambiar su receta. El programa VALyou de Sanofi también limita Admelog a $35/mes para pacientes con seguro comercial o sin seguro. Admelog no está designado intercambiable por FDA, por lo que se requiere una nueva receta."
+        }
+      },
+      {
+        "title": {
+          "en": "Eli Lilly authorized generic ($25/vial)",
+          "es": "Genérico autorizado de Eli Lilly ($25/vial)"
+        },
+        "description": {
+          "en": "Eli Lilly's authorized generic insulin lispro retails at $25 per 10 mL vial, the lowest available list price for insulin lispro in 2026. This is the same molecule as Humalog at the same concentration. It requires a new prescription as generic insulin lispro (not as Humalog). Available at most major pharmacies.",
+          "es": "La insulina lispro genérica autorizada de Eli Lilly tiene un precio de venta al por menor de $25 por vial de 10 mL, el precio de lista disponible más bajo para insulina lispro en 2026. Es la misma molécula que Humalog a la misma concentración. Requiere una nueva receta como insulina lispro genérica (no como Humalog). Disponible en la mayoría de las farmacias principales."
+        }
+      },
+      {
+        "title": {
+          "en": "Lilly Cares Foundation (free insulin, income-based)",
+          "es": "Fundación Lilly Cares (insulina gratis, basada en ingresos)"
+        },
+        "description": {
+          "en": "If denied and uninsured or underinsured, apply to the Lilly Cares Foundation at lillycares.com. Free Humalog is available for household incomes up to 400% FPL (roughly $62,400 for a single person in 2026). Your prescriber can submit the application on your behalf. Processing typically takes 10 to 14 business days.",
+          "es": "Si se le niega y no tiene seguro o está subadeguadamente asegurado, solicite a la Fundación Lilly Cares en lillycares.com. Humalog gratis está disponible para ingresos familiares de hasta el 400% del FPL (aproximadamente $62,400 para una persona sola en 2026). Su médico puede presentar la solicitud en su nombre. El procesamiento tarda típicamente de 10 a 14 días hábiles."
+        }
+      },
+      {
+        "title": {
+          "en": "State pharmaceutical assistance programs",
+          "es": "Programas estatales de asistencia farmacéutica"
+        },
+        "description": {
+          "en": "Many states have pharmaceutical assistance programs (PAPs) that supplement federal options. States including New York, New Jersey, California, Pennsylvania, and others cap insulin copays at $30 to $35/month for state residents regardless of insurance status. Check your state pharmacy assistance program via NeedyMeds.org or your state health department website.",
+          "es": "Muchos estados tienen programas de asistencia farmacéutica (PAP) que complementan las opciones federales. Estados incluyendo Nueva York, Nueva Jersey, California, Pensilvania y otros limitan los copagos de insulina a $30 a $35/mes para residentes del estado sin importar el estado de seguro. Verifique el programa de asistencia farmacéutica de su estado en NeedyMeds.org o el sitio web del departamento de salud de su estado."
+        }
+      }
+    ]
+  },
+
+  "howToApplyPap": {
+    "programs": [
+      {
+        "name": "Lilly Cares Foundation",
+        "url": "lillycares.com",
+        "phone": "1-800-545-5979",
+        "steps": {
+          "en": [
+            "Visit lillycares.com or call 1-800-545-5979",
+            "Select 'Apply Now' and choose Humalog or the specific Lilly insulin you need",
+            "Complete the income verification form. You will need your most recent tax return or pay stubs showing household income",
+            "Have your prescribing physician sign and submit the form (your provider's office can often handle this electronically)",
+            "Lilly Cares reviews the application within 10 to 14 business days",
+            "If approved, a 90-day supply of insulin is shipped directly to your physician's office or to you, depending on program option",
+            "Renewals can be submitted before your supply runs out. The program allows unlimited annual renewals"
+          ],
+          "es": [
+            "Visite lillycares.com o llame al 1-800-545-5979",
+            "Seleccione 'Solicitar ahora' y elija Humalog o la insulina específica de Lilly que necesita",
+            "Complete el formulario de verificación de ingresos: necesitará su declaración de impuestos más reciente o talones de pago que muestren los ingresos del hogar",
+            "Haga que su médico recetante firme y presente el formulario (el consultorio de su proveedor generalmente puede hacerlo electrónicamente)",
+            "Lilly Cares revisa la solicitud en 10 a 14 días hábiles",
+            "Si se aprueba, un suministro de 90 días de insulina se envía directamente al consultorio de su médico o a usted, según la opción del programa",
+            "Las renovaciones se pueden presentar antes de que se agote el suministro: el programa permite renovaciones anuales ilimitadas"
+          ]
+        }
+      },
+      {
+        "name": "Lilly Insulin Value Program",
+        "url": "insulinaffordability.com",
+        "phone": "1-800-545-5979",
+        "steps": {
+          "en": [
+            "Visit insulinaffordability.com to enroll in the $35/month program",
+            "The program is available to commercially insured patients and uninsured patients. No income verification required",
+            "Download or print the savings card and present it at your pharmacy with your Humalog or Lyumjev prescription",
+            "The pharmacy processes the savings card alongside your insurance or as a cash program",
+            "Note: this program is NOT available to Medicare, Medicaid, TRICARE, or VA beneficiaries",
+            "For Medicare or Medicaid patients, the IRA $35 cap applies automatically. No card needed"
+          ],
+          "es": [
+            "Visite insulinaffordability.com para inscribirse en el programa de $35/mes",
+            "El programa está disponible para pacientes con seguro comercial y pacientes sin seguro: no se requiere verificación de ingresos",
+            "Descargue o imprima la tarjeta de ahorros y preséntela en su farmacia con su receta de Humalog o Lyumjev",
+            "La farmacia procesa la tarjeta de ahorros junto con su seguro o como programa en efectivo",
+            "Nota: este programa NO está disponible para beneficiarios de Medicare, Medicaid, TRICARE o VA",
+            "Para pacientes de Medicare o Medicaid, el límite de $35 de la IRA aplica automáticamente: no se necesita tarjeta"
+          ]
+        }
+      }
+    ]
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "How much does Humalog cost in 2026 without insurance?",
+        "answer": "Brand Humalog 10 mL vials list at $72 to $86 after Lilly's 2023 price cut. Eli Lilly's authorized generic insulin lispro is available at $25 per vial. KwikPens (5-pack) run $90 to $160. However, the Lilly Insulin Value Program caps cost at $35 per month for any uninsured patient, so most uninsured patients should pay no more than $35/month total."
+      },
+      {
+        "question": "Does Medicare cover Humalog insulin in 2026?",
+        "answer": "Yes. Medicare Part D covers Humalog and its equivalents, with patient cost capped at $35 per month under the Inflation Reduction Act of 2022 (effective January 2023). This cap is statutory and applies to all Part D plans and all insulin brands. Medicare Part B covers insulin only when used with a covered insulin pump (DME benefit), capped at $35 per month under the same law. The 2026 Part D annual out-of-pocket maximum is $2,100, but the $35 insulin cap applies before that threshold."
+      },
+      {
+        "question": "What is Admelog and is it a biosimilar of Humalog?",
+        "answer": "Admelog (Sanofi) is an FDA-approved follow-on insulin lispro product, approved in 2017. It contains the same active molecule as Humalog (insulin lispro 100 units/mL) and has equivalent clinical efficacy for mealtime dosing. Admelog is sometimes called a biosimilar in common usage, but it is NOT FDA-designated interchangeable with Humalog, so a pharmacist cannot automatically substitute it without a new prescription in most states. Sanofi caps Admelog at $35/month through its VALyou program."
+      },
+      {
+        "question": "What is the difference between Humalog (rapid-acting) and Lantus or Basaglar (long-acting)?",
+        "answer": "Humalog (insulin lispro) is a rapid-acting prandial insulin injected at mealtimes to control blood sugar from food. It works within 15 minutes and lasts 2 to 4 hours. Lantus (insulin glargine), Basaglar, Semglee, and Rezvoglar are long-acting basal insulins injected once daily for 18 to 24 hours of steady background coverage. They serve different physiological roles, use different J-codes, and have different pricing tiers. Basaglar, Semglee, and Rezvoglar are biosimilars of Lantus, not of Humalog."
+      },
+      {
+        "question": "What is HCPCS J1815 and what does it mean on my hospital bill?",
+        "answer": "HCPCS J1815 is the billing code for Injection, insulin, per 5 units, the code used for insulin administered in a clinical setting on hospital and outpatient claims. It covers all rapid-acting insulins including lispro. One billing unit equals 5 administered units, so a 20-unit dose = 4 J1815 units. If your bill shows a high unit count multiplied by a per-unit charge well above retail value, investigate. For most inpatient DRG admissions, insulin is bundled and will not appear as a J1815 line item."
+      },
+      {
+        "question": "Is Lyumjev the same as Humalog?",
+        "answer": "Lyumjev (insulin lispro-aabc) is a Lilly product containing the same insulin lispro molecule as Humalog, plus citrate and treprostinil to accelerate absorption. It is classified as ultra-rapid-acting, with onset faster than standard Humalog. It is approved for adults with type 1 or type 2 diabetes. Lyumjev is covered by the Lilly Insulin Value Program at $35/month. It is not FDA-interchangeable with Humalog and is not a biosimilar of any long-acting insulin."
+      },
+      {
+        "question": "What patient assistance programs are available for Humalog?",
+        "answer": "Two Lilly programs cover Humalog. The Lilly Insulin Value Program (insulinaffordability.com) caps cost at $35/month for commercially insured or uninsured patients. No income verification required. The Lilly Cares Foundation (lillycares.com) provides free insulin to uninsured patients and Medicare Part D patients with income up to 400% of the Federal Poverty Level (roughly $62,400 for a single person in 2026). Medicare Part D patients already have a $35/month statutory cap and generally do not need the manufacturer program."
+      },
+      {
+        "question": "Why does insulin sometimes appear on a hospital bill at very high prices?",
+        "answer": "When insulin does appear as a separate line item on a hospital bill, mainly in outpatient or emergency department settings, it reflects a facility charge that includes the drug acquisition cost plus overhead, nursing administration, and supply fees. Hospitals apply a facility markup, sometimes 5x to 20x the acquisition cost. For inpatient DRG admissions, insulin is bundled into the overall payment and should not appear as a separate drug charge. If you see insulin listed separately on an inpatient bill, that is worth disputing."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuánto cuesta Humalog en 2026 sin seguro?",
+        "answer": "Los viales de 10 mL de Humalog de marca tienen un precio de lista de $72 a $86 después del recorte de precios de Lilly en 2023. La insulina lispro genérica autorizada de Eli Lilly está disponible a $25 por vial. Los KwikPens (paquete de 5) cuestan de $90 a $160. Sin embargo, el Programa de Valor de Insulina Lilly limita el costo a $35 por mes para cualquier paciente sin seguro, por lo que la mayoría de los pacientes sin seguro no deberían pagar más de $35/mes en total."
+      },
+      {
+        "question": "¿Medicare cubre la insulina Humalog en 2026?",
+        "answer": "Sí. Medicare Parte D cubre Humalog y sus equivalentes, con el costo del paciente limitado a $35 por mes bajo la Ley de Reducción de la Inflación de 2022 (efectiva desde enero de 2023). Este límite es estatutario y se aplica a todos los planes Parte D y todas las marcas de insulina. Medicare Parte B cubre la insulina solo cuando se usa con una bomba de insulina cubierta (beneficio de equipo médico duradero), con el mismo límite de $35 por mes. El máximo anual de gastos de bolsillo de la Parte D 2026 es $2,100, pero el límite de $35 para insulina aplica antes de ese umbral."
+      },
+      {
+        "question": "¿Qué es Admelog y es un biosimilar de Humalog?",
+        "answer": "Admelog (Sanofi) es un producto de insulina lispro de seguimiento aprobado por la FDA en 2017. Contiene la misma molécula activa que Humalog (insulina lispro 100 unidades/mL) y tiene eficacia clínica equivalente para la dosificación durante las comidas. A veces se llama biosimilar en el uso común, pero NO está designado como intercambiable con Humalog por la FDA, por lo que un farmacéutico no puede sustituirlo automáticamente sin una nueva receta en la mayoría de los estados. Sanofi limita Admelog a $35/mes a través de su programa VALyou."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre Humalog (acción rápida) y Lantus o Basaglar (acción prolongada)?",
+        "answer": "Humalog (insulina lispro) es una insulina prandial de acción rápida que se inyecta en las comidas para controlar el azúcar en sangre de los alimentos. Comienza a actuar en 15 minutos y dura de 2 a 4 horas. Lantus (insulina glargina), Basaglar, Semglee y Rezvoglar son insulinas basales de acción prolongada inyectadas una vez al día para 18 a 24 horas de cobertura de fondo estable. Cumplen roles fisiológicos diferentes, usan códigos J distintos y tienen diferentes niveles de precios. Basaglar, Semglee y Rezvoglar son biosimilares de Lantus, no de Humalog."
+      },
+      {
+        "question": "¿Qué es HCPCS J1815 y qué significa en mi factura del hospital?",
+        "answer": "HCPCS J1815 es el código de facturación para Inyección de insulina, por 5 unidades, el código utilizado para la insulina administrada en entornos clínicos en reclamos hospitalarios y ambulatorios. Cubre todas las insulinas de acción rápida incluida la lispro. Una unidad de facturación equivale a 5 unidades administradas, por lo que una dosis de 20 unidades = 4 unidades J1815. Si su factura muestra un alto recuento de unidades multiplicado por un cargo por unidad muy superior al valor al por menor, investíguelo. Para la mayoría de las hospitalizaciones con DRG, la insulina está incluida y no aparecerá como partida J1815."
+      },
+      {
+        "question": "¿Es Lyumjev lo mismo que Humalog?",
+        "answer": "Lyumjev (insulina lispro-aabc) es un producto de Lilly que contiene la misma molécula de insulina lispro que Humalog, más citrato y treprostinilo para acelerar la absorción. Se clasifica como de acción ultrarrápida, con inicio más rápido que el Humalog estándar. Está aprobado para adultos con diabetes tipo 1 o tipo 2. Lyumjev está cubierto por el Programa de Valor de Insulina Lilly a $35/mes. No es intercambiable con Humalog por FDA y no es biosimilar de ninguna insulina de acción prolongada."
+      },
+      {
+        "question": "¿Qué programas de asistencia al paciente están disponibles para Humalog?",
+        "answer": "Dos programas de Lilly cubren Humalog. El Programa de Valor de Insulina Lilly (insulinaffordability.com) limita el costo a $35/mes para pacientes con seguro comercial o sin seguro: no se requiere verificación de ingresos. La Fundación Lilly Cares (lillycares.com) proporciona insulina gratis a pacientes sin seguro y pacientes de Medicare Parte D con ingresos de hasta el 400% del Nivel de Pobreza Federal (aproximadamente $62,400 para una persona sola en 2026). Los pacientes de Medicare con Parte D ya tienen un límite estatutario de $35/mes y generalmente no necesitan el programa del fabricante."
+      },
+      {
+        "question": "¿Por qué la insulina a veces aparece en una factura del hospital a precios muy altos?",
+        "answer": "Cuando la insulina aparece como artículo separado en una factura hospitalaria (principalmente en entornos ambulatorios o de urgencias), refleja un cargo de instalación que incluye el costo de adquisición del medicamento más gastos generales, administración de enfermería y tarifas de suministros. Los hospitales aplican un recargo de instalación, a veces de 5 a 20 veces el costo de adquisición. Para hospitalizaciones con DRG, la insulina está incluida en el pago general y no debería aparecer como cargo de medicamento separado. Si ve la insulina listada por separado en una factura de hospitalización, vale la pena disputar ese cargo."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Límites de Ingresos Medicaid"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad de Medicare"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Insulin Cost Guide",
+        "es": "Guía de Costos de Insulina"
+      },
+      "href": "/drug/insulin-cost"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Eli Lilly: Lilly Cuts Insulin Prices by 70%",
+      "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-cuts-insulin-prices-70-and-caps-patient-insulin-out-pocket",
+      "note": {
+        "en": "Announcement of Humalog list price reduction to $72-$86 per vial and launch of $25 generic insulin lispro.",
+        "es": "Anuncio de la reducción del precio de lista de Humalog a $72-$86 por vial y el lanzamiento de insulina lispro genérica a $25."
+      }
+    },
+    {
+      "name": "CMS: Inflation Reduction Act and Medicare Insulin Cap",
+      "url": "https://www.cms.gov/inflation-reduction-act-and-medicare",
+      "note": {
+        "en": "Statutory $35/month insulin cap under Medicare Part D, effective January 1, 2023.",
+        "es": "Límite estatutario de $35/mes para insulina bajo Medicare Parte D, efectivo el 1 de enero de 2023."
+      }
+    },
+    {
+      "name": "CMS: Medicare Part B Drug Average Sales Price (ASP) Pricing Files",
+      "url": "https://www.cms.gov/medicare/payment/part-b-drugs/asp-pricing-files",
+      "note": {
+        "en": "Quarterly published Medicare Part B Average Sales Price files covering HCPCS J-code payment limits including J1815.",
+        "es": "Archivos de Precio de Venta Promedio de Medicare Parte B publicados trimestralmente que cubren los límites de pago de códigos J HCPCS incluyendo J1815."
+      }
+    },
+    {
+      "name": "CMS HCPCS Level II Coding",
+      "url": "https://www.cms.gov/medicare/coding/medicare-billing/hcpcs",
+      "note": {
+        "en": "J1815 (injection, insulin, per 5 units) and J1817 (insulin for insulin pump) are public-domain HCPCS Level II codes.",
+        "es": "J1815 (inyección de insulina, por 5 unidades) y J1817 (insulina para bomba de insulina) son códigos HCPCS Nivel II de dominio público."
+      }
+    },
+    {
+      "name": "NeedyMeds Patient Assistance Program Database",
+      "url": "https://www.needymeds.org/",
+      "note": {
+        "en": "Directory of manufacturer patient assistance programs including Lilly Cares Foundation and Sanofi Patient Connection.",
+        "es": "Directorio de programas de asistencia al paciente de fabricantes, incluida la Fundación Lilly Cares y Sanofi Patient Connection."
+      }
+    },
+    {
+      "name": "GoodRx: Humalog 2026 Prices",
+      "url": "https://www.goodrx.com/humalog",
+      "note": {
+        "en": "Retail and discounted pharmacy cash prices for Humalog (insulin lispro) in 2026.",
+        "es": "Precios de farmacia al por menor y con descuento para Humalog (insulina lispro) en 2026."
+      }
+    },
+    {
+      "name": "Lilly Cares Foundation Patient Assistance Program",
+      "url": "https://www.lillycares.com",
+      "note": {
+        "en": "Lilly Cares Foundation PAP: free insulin for uninsured and Medicare Part D patients at or below 400% FPL.",
+        "es": "PAP de la Fundación Lilly Cares: insulina gratis para pacientes sin seguro y de Medicare Parte D con ingresos iguales o inferiores al 400% del FPL."
+      }
+    },
+    {
+      "name": "CMS Medicare Drug Price Negotiation Program: Selected Drugs and Negotiated Prices",
+      "url": "https://www.cms.gov/priorities/medicare-prescription-drug-affordability/overview/medicare-drug-price-negotiation-program/selected-drugs-negotiated-prices",
+      "note": {
+        "en": "Confirms insulin aspart (Fiasp/NovoLog) as the IRA Round 1 negotiated rapid-acting insulin. Humalog (insulin lispro) receives the $35 statutory cap, not a negotiated price.",
+        "es": "Confirma la insulina aspart (Fiasp/NovoLog) como la insulina de acción rápida negociada en la Ronda 1 de la IRA. Humalog (insulina lispro) recibe el límite estatutario de $35, no un precio negociado."
+      }
+    }
+  ]
+}
