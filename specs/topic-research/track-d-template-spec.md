@@ -187,3 +187,162 @@ The writer agent (`coveredusa-track-d-writer.md`) and verifier agent (`coveredus
 6. IndexNow submission auto-pings Bing for the new URL
 
 The infrastructure here makes step 3 valid: drop a JSON file in the directory and the page goes live with full schema.org markup, sitemap entry, and ISR rendering — no code change required.
+
+---
+
+## Writer + Verifier agents (this ticket)
+
+The two agent prompts that consume the schema above and produce / validate JSON files for `/medicaid-income-limits/<state>` pages.
+
+### Writer agent
+
+**File:** `$HOME/clawd/.claude/agents/coveredusa-track-d-writer.md`
+**Model:** sonnet, maxTurns 60, background, bypassPermissions
+**Tools:** Read, Write, Edit, Bash, WebSearch, WebFetch, Glob, Grep
+
+**Inputs (queue payload):**
+- `STATE_NAME` — full state name ("Texas")
+- `STATE_SLUG` — lowercase hyphenated slug ("texas")
+- `STATE_ABBREVIATION` — 2-letter postal code ("TX")
+- `YEAR` — defaults to 2026
+- `NOTES` — optional retry / regen context (e.g., `PREVIOUS_FAILURE` block)
+- `TOPIC_CLUSTER` — defaults to `medicaid-income-<state-slug>`
+
+**Output file:** `content/data/medicaid-income-limits/<STATE_SLUG>.json`
+**Atomic write:** `<slug>.tmp.json` first, rename only after all 8 GATES pass + JSON parses.
+
+**Pipeline:**
+1. STEP 0 — Load context (universal-rules block + FANOUT §3.3 + §3.7 + §4.4 + §5.1 + schema lib + 2 gold-standard reference JSONs)
+2. STEP 1 — Pre-flight existence check + atomic-write setup
+3. STEP 2 — Research state (federal anchors + state-specific facts: expansion status, brand, adult/pregnant/child/disabled limits, application URL, MAGI rules)
+4. STEP 3 — Plan JSON structure per §4.4 recipe (≥6 detailSections, 9-row householdSizeTable, full applicationWorkflow, incomeSourceRules, eligibilityCategories, crossReferences)
+5. STEP 4 — CTA target = `screener` (Track D constant; never `analyzer`)
+6. STEP 5 — Write body content (style + linking + universal-rule enforcement)
+7. STEP 6 — 8 GATES (HARD REJECTS, "STOP. Read this twice." framing)
+8. STEP 7 — Compute schema.org JSON-LD (MedicalWebPage + GovernmentService + FAQPage)
+9. STEP 8 — Atomic save + return JSON result
+
+**8 GATES enforced (all HARD REJECTS):**
+- **GATE A** — slug must NOT contain a year (regex `\b(19|20)\d{2}\b`)
+- **GATE B** — `householdSizeTable.rows.length === 9` (sizes 1-8 + "Each additional"); per-row 138% × 2026 FPL math sanity (±$50 tolerance)
+- **GATE C** — ≥3 inline outbound `.gov` / `.edu` / `kff.org` citations (medicaid.gov + state agency .gov + ASPE + KFF preferred set)
+- **GATE D** — zero `--` / `—` / `–` anywhere (verifier auto-fixes)
+- **GATE E** — state-named program brand (Medi-Cal, AHCCCS, SoonerCare, ARHOME, etc.) MUST appear in title + H1 + meta + body if state is in the 19-state brand list; mark `n/a` for non-brand states
+- **GATE F** — `applicationWorkflow` has all 4 sub-fields: `numberedSteps[3-7]` + state-specific `govStartingUrl` (NOT generic medicaid.gov) + `documentsNeeded[4-8]` + `commonDenialReasons[3-5]`
+- **GATE G** — `incomeSourceRules` field with `counted[≥6]` + `notCounted[≥4]` + `stateAdjustments`; PLUS dedicated detailSection covering it
+- **GATE H** — CHIP + Medicare Savings Programs cross-references (`crossReferences` field with ≥2 entries) + body mentions of both
+
+**Expected JSON return shape:**
+
+```json
+{
+  "status": "complete",
+  "slug": "<state-slug>",
+  "title": "<the title>",
+  "file_path": "content/data/medicaid-income-limits/<slug>.json",
+  "gates_passed": ["a","b","c","d","e","f","g","h"],
+  "gates_failed": [],
+  "warnings": [],
+  "word_count": 2450,
+  "citations_count": 6,
+  "household_table_rows": 9,
+  "state_brand_used": "Medi-Cal" | null,
+  "expansion_status": "expanded" | "non-expanded" | "partial",
+  "topicCluster": "medicaid-income-<state-slug>",
+  "keyTerms": {"en": [...], "es": [...]},
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "gapsFlagged": []
+}
+```
+
+Error / rejection shapes documented in agent's STEP 8.
+
+### Verifier agent
+
+**File:** `$HOME/clawd/.claude/agents/coveredusa-track-d-verifier.md`
+**Model:** sonnet, maxTurns 60, background, bypassPermissions
+**Tools:** Read, Edit, WebSearch, WebFetch, Bash, Grep
+
+**Inputs:** path to a `.json` file under `content/data/medicaid-income-limits/`
+
+**Editor-mode pattern (per 2026-05-15 rollout):**
+- The held bucket is gone. Two outcomes only: `complete` (ships) OR `regenerate` (writer re-spawns with `PREVIOUS_FAILURE` + `ATTEMPT_NUMBER:N+1`).
+- Numeric drift → narrow auto-fix Edits in place
+- GATE D (`--`/`—`/`–`) → auto-fix mandatory (replace_all OK)
+- GATE A (slug-year) → auto-fix (strip year + rename file)
+- Brand field empty when state has brand → auto-fix (populate field)
+- Generic medicaid.gov in `govStartingUrl` → auto-fix with state portal lookup (Category E table)
+- MEDIUM+ structural drift (missing detailSection, fewer than 9 household rows, missing applicationWorkflow sub-field, brand-throughout body gap, missing incomeSourceRules, missing crossReferences) → signal regen via `regenerate_sections`
+- 1-retry cap; after that ships with flag
+
+**Pipeline:**
+1. STEP 0 — Pre-flight (Read + JSON parse + schema check + brand cross-ref load)
+2. STEP 1A — Internal consistency pre-check (138% × FPL math, brand consistency, expansion status, central-claim agreement across quickAnswer/hero/meta)
+3. STEP 1B — High-risk external claims (Categories A-J: federal anchors, state thresholds, brand assignment, expansion status, application URL, sources, locked enums, statute references, hrefs, style)
+4. STEP 1C — 8 structural GATES (auto-fix where surgical, regen-signal otherwise)
+5. STEP 2 — Per-claim primary-source verification (ASPE / KFF / state agency / medicaid.gov)
+6. STEP 3 — Edit-scope rules (narrow `old_string`, grep-then-edit for repeated values, JSON-valid after each edit)
+7. STEP 4 — Force-flag rule (central-claim corrections force `flagged` even after edit)
+8. STEP 5 — Special cases (brand-wrong-state → regen; income off >10% → auto-fix; expansion wrong → auto-fix; URL generic → auto-fix; turn-budget → flagged)
+9. STEP 6 — Return result
+
+**Expected JSON return shape:**
+
+```json
+{
+  "status": "complete" | "regenerate" | "held",
+  "slug": "<slug>",
+  "verifier_pass": true | false,
+  "auto_fixes_applied": [{"gate": "d", "type": "em-dash", "count": 3}, ...],
+  "gates_failed": [{"gate": "b", "reason": "householdSizeTable has 7 rows, expected 9"}, ...],
+  "regenerate_sections": ["<section names if any>"],
+  "fact_corrections": [{"field": "...", "wrong": "$15,000", "correct": "$15,650", "source": "aspe.hhs.gov"}],
+  "warnings": [{"claim": "...", "severity": "LOW"}],
+  "gates": {"a": "pass", "b": "pass", "c": "pass", "d": "auto-fixed", "e": "n/a" | "pass" | "fail", "f": "pass", "g": "pass", "h": "pass"},
+  "claims_checked": 18,
+  "claims_corrected": 0,
+  "claims_flagged": 0,
+  "telegram_alert": "..."
+}
+```
+
+Status definitions:
+- `complete` — every check passed (or fixes applied surgically); article ships
+- `regenerate` — at least one HIGH structural gate failed; cron re-spawns writer; do NOT ship
+- `held` — catastrophic failure (invalid JSON, can't read); telegram-alert + manual intervention
+
+### Invocation pattern
+
+**Direct (Jacob writes a state by hand):**
+```
+Use the Task tool with subagent_type "coveredusa-track-d-writer" and a prompt like:
+"STATE_NAME: Texas
+STATE_SLUG: texas
+STATE_ABBREVIATION: TX
+YEAR: 2026"
+```
+
+Then verify:
+```
+Use the Task tool with subagent_type "coveredusa-track-d-verifier" and the file path:
+"$HOME/clawd/projects/covered-usa/content/data/medicaid-income-limits/texas.json"
+```
+
+**Cron (bulk-gen pipeline):**
+- Stage 1 (writer): bulk-gen cron reads Master Backlog rows where `template=track-d` AND `Status=Queued`, spawns N parallel writers (N = throttle), each produces one JSON
+- Stage 1.5 (verifier): cron spawns verifier per produced JSON; if `regenerate`, re-spawns writer once with `PREVIOUS_FAILURE` + `ATTEMPT_NUMBER:2`; if regen STILL fails, ships with flag
+- Stage 2 (drip-publish): daily cron at 2am UTC commits all `Ready`-status files, pushes to Vercel, submits IndexNow, marks rows `Published`
+
+### Coverage targets
+
+51 Track D pages total = 50 states + DC (the FANOUT §5.1 highest-ROI permutation). Per-page word target: 2,000-2,800 words.
+
+Schema-fanout dependencies (all encoded in agent prompts, no schema-level deps unmet):
+- `MedicaidIncomeLimitsState` interface (parallel template-code agent — verifier falls back to MA-state shape if not yet shipped)
+- `_universal-rules-block.md` 19-state brand list (already exists)
+- 2026 ASPE FPL constants (memorized in prompts; verifier cross-checks against aspe.hhs.gov)
+
+### Backups
+
+Both agent files are net-new — no `.bak.md` to preserve. Cost watch: each writer + verifier pair on Sonnet ≈ $0.50-$1.50 per state at current rates. Full 51-state run: ~$25-75 in Claude credits (writer + verifier combined). Add 1-retry buffer for regen: budget $40-100 total.
