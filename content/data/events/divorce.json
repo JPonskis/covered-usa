@@ -1,0 +1,339 @@
+{
+  "slug": "divorce",
+  "eventName": {
+    "en": "Getting Divorced",
+    "es": "Divorciarse"
+  },
+  "category": "Family Change",
+  "topic": "Special Enrollment Period after Divorce",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "7 min read",
+  "topicCluster": "event-sep",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "keyTerms": {
+    "en": ["divorce health insurance", "divorce special enrollment period", "COBRA after divorce 36 months", "losing coverage in divorce", "divorce SEP 60 days", "health insurance options after divorce"],
+    "es": ["seguro médico por divorcio", "período de inscripción especial por divorcio", "COBRA después del divorcio 36 meses", "pérdida de cobertura en el divorcio", "SEP divorcio 60 días", "opciones de seguro médico después del divorcio"]
+  },
+
+  "meta": {
+    "title": {
+      "en": "Divorce and Health Insurance: Your Options in 2026 | CoveredUSA",
+      "es": "Divorcio y Seguro Médico: Sus Opciones en 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Lost health insurance in a divorce? You have 60 days to enroll. Compare ACA marketplace plans, COBRA (36 months for divorce), and Medicaid in 2026.",
+      "es": "¿Perdió seguro médico en un divorcio? Tiene 60 días para inscribirse. Compare planes ACA, COBRA (36 meses por divorcio) y Medicaid en 2026."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Lost Health Insurance in Your Divorce? Here Are Your Options",
+      "es": "¿Perdió Seguro Médico en Su Divorcio? Aquí Están Sus Opciones"
+    },
+    "subhero": {
+      "en": "Divorce that causes loss of spousal coverage triggers a 60-day Special Enrollment Period. You also get the longest COBRA window available: 36 months instead of the standard 18.",
+      "es": "Un divorcio que causa pérdida de cobertura conyugal activa un Período de Inscripción Especial de 60 días. También obtiene la ventana COBRA más larga disponible: 36 meses en lugar de los 18 estándar."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from your coverage loss date",
+      "es": "Tiene 60 días desde la fecha de pérdida de cobertura"
+    },
+    "body": {
+      "en": "Miss that window and you will likely wait until November Open Enrollment for new ACA marketplace coverage. COBRA requires you to notify the plan administrator within 60 days of the divorce decree.",
+      "es": "Si pierde esa ventana, probablemente tendrá que esperar hasta la Inscripción Abierta de noviembre para nueva cobertura del mercado ACA. COBRA requiere que notifique al administrador del plan dentro de los 60 días del decreto de divorcio."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      { "label": { "en": "COBRA election window (spouse)", "es": "Ventana de elección COBRA (cónyuge)" }, "days": 60 },
+      { "label": { "en": "Notify spouse's plan administrator of divorce", "es": "Notificar al administrador del plan del cónyuge sobre el divorcio" }, "days": 60 },
+      { "label": { "en": "Medicaid (if income qualifies)", "es": "Medicaid (si el ingreso califica)" }, "days": null }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "If you lose health coverage as a direct result of divorce, you qualify for a 60-day Special Enrollment Period to enroll in an ACA marketplace plan. Your four main options are: (1) ACA marketplace plan with subsidies, since income drops after divorce often make subsidies much larger than before; (2) COBRA continuation on your ex-spouse's employer plan, which unlocks a 36-month COBRA window, longer than the 18 months most workers get; (3) Medicaid if your new single-person income falls under 138% FPL ($22,025 in 2026 in expansion states); (4) your own employer plan if you have one. Divorce also means your household size changes, which can significantly shift your subsidy calculation.",
+    "es": "Si pierde la cobertura médica como resultado directo del divorcio, califica para un Período de Inscripción Especial de 60 días para inscribirse en un plan del mercado ACA. Sus cuatro opciones principales son: (1) plan del mercado ACA con subsidios, ya que los ingresos que bajan después del divorcio a menudo hacen que los subsidios sean mucho mayores que antes; (2) continuación COBRA en el plan del empleador del ex cónyuge, que desbloquea una ventana COBRA de 36 meses, más larga que los 18 meses que obtienen la mayoría de los trabajadores; (3) Medicaid si su nuevo ingreso individual cae por debajo del 138% FPL ($22,025 en 2026 en estados de expansión); (4) su propio plan del empleador si tiene uno."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Divorce is one of the most disruptive financial events a person can go through. Health insurance often gets lost in the chaos of asset division, custody agreements, and legal fees, and the consequences of a coverage gap can be enormous. The good news: the law gives you multiple options and a meaningful enrollment window to land in a plan.",
+      "es": "El divorcio es uno de los eventos financieros más disruptivos que una persona puede atravesar. El seguro médico a menudo se pierde en el caos de la división de activos, los acuerdos de custodia y los honorarios legales, y las consecuencias de una brecha en la cobertura pueden ser enormes. La buena noticia: la ley le da múltiples opciones y una ventana de inscripción significativa para obtener un plan."
+    },
+    {
+      "en": "This guide covers the 60-day SEP deadline, the divorce-specific 36-month COBRA provision, how your subsidy changes when your household size shrinks to one, and what happens to your children's coverage when custody is split.",
+      "es": "Esta guía cubre el plazo del SEP de 60 días, la disposición COBRA de 36 meses específica para el divorcio, cómo cambia su subsidio cuando el tamaño de su hogar se reduce a uno, y qué sucede con la cobertura de sus hijos cuando la custodia se divide."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Confirm your coverage loss date",
+        "es": "Confirme la fecha de pérdida de cobertura"
+      },
+      "text": {
+        "en": "Your 60-day SEP clock starts from your actual coverage loss date, not necessarily the divorce decree date, whichever is later. Call the HR department or benefits administrator for your ex-spouse's employer plan to get the exact termination date in writing. You will need this date to enroll in marketplace coverage at healthcare.gov.",
+        "es": "El reloj del SEP de 60 días comienza desde la fecha real de pérdida de cobertura, no necesariamente la fecha del decreto de divorcio, la que sea posterior. Llame al departamento de recursos humanos o al administrador de beneficios del plan del empleador de su ex cónyuge para obtener la fecha exacta de terminación por escrito. Necesitará esta fecha para inscribirse en la cobertura del mercado en healthcare.gov."
+      }
+    },
+    {
+      "name": {
+        "en": "Notify the plan administrator of the divorce within 60 days",
+        "es": "Notifique al administrador del plan sobre el divorcio en 60 días"
+      },
+      "text": {
+        "en": "Under ERISA Section 606, you must notify your ex-spouse's group health plan administrator within 60 days of the divorce decree or legal separation order to preserve your COBRA rights. Missing this notification window eliminates your COBRA option entirely. Submit written notice and keep a copy with a date stamp.",
+        "es": "Bajo la Sección 602 de ERISA, debe notificar al administrador del plan de salud grupal de su ex cónyuge dentro de los 60 días del decreto de divorcio u orden de separación legal para preservar sus derechos de COBRA. Perder esta ventana de notificación elimina su opción de COBRA por completo. Presente notificación por escrito y guarde una copia con sello de fecha."
+      }
+    },
+    {
+      "name": {
+        "en": "Calculate your new single-person household income and check Medicaid first",
+        "es": "Calcule su nuevo ingreso de hogar individual y verifique Medicaid primero"
+      },
+      "text": {
+        "en": "Your household size just changed. If you do not have custody of your children, you may now be a household of one. Check if your projected 2026 income falls under $22,025 (138% FPL for a household of 1 in expansion states). If it does, apply for Medicaid year-round at healthcare.gov or your state Medicaid agency. It is free and has no SEP deadline. Child support received is not counted as income for Medicaid or ACA subsidy calculations.",
+        "es": "El tamaño de su hogar acaba de cambiar. Si no tiene la custodia de sus hijos, puede ser ahora un hogar de una persona. Verifique si su ingreso proyectado para 2026 es inferior a $22,025 (138% FPL para un hogar de 1 en estados de expansión). Si es así, solicite Medicaid durante todo el año en healthcare.gov o en la agencia estatal de Medicaid. Es gratuito y no tiene plazos del SEP. La manutención de menores recibida no se cuenta como ingreso para los cálculos de subsidios de Medicaid o ACA."
+      }
+    },
+    {
+      "name": {
+        "en": "If above Medicaid limits, compare ACA marketplace plans using your new household size",
+        "es": "Si está por encima de los límites de Medicaid, compare planes del mercado ACA usando su nuevo tamaño de hogar"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov and start a new application. Do not update your existing one if you were on a joint plan, as your tax household has fundamentally changed. Enter your new household size, custody arrangement, and projected 2026 income. Custodial parents claim dependent children in their household, which raises the FPL threshold and increases subsidy amounts. The 2026 subsidy cliff is back at 400% FPL ($62,600 for a household of 1), so calculate carefully.",
+        "es": "Inicie sesión en healthcare.gov y comience una nueva solicitud. No actualice la existente si estaba en un plan conjunto, ya que su hogar fiscal ha cambiado fundamentalmente. Ingrese el nuevo tamaño de hogar, el acuerdo de custodia y el ingreso proyectado para 2026. Los padres con custodia reclaman a los hijos dependientes en su hogar, lo que eleva el umbral FPL y aumenta los montos de subsidio. El precipicio de subsidio 2026 regresa al 400% FPL ($62,600 para un hogar de 1), así que calcule cuidadosamente."
+      }
+    },
+    {
+      "name": {
+        "en": "Evaluate COBRA on your ex-spouse's plan as a bridge option",
+        "es": "Evalúe COBRA en el plan de su ex cónyuge como opción puente"
+      },
+      "text": {
+        "en": "Divorce triggers a 36-month COBRA continuation right for spouses and dependent children, not the standard 18 months that workers get. This extended window makes COBRA more attractive as a bridge if you have ongoing treatment, are mid-deductible, or are waiting to see how your income stabilizes. COBRA will cost 102% of the full group premium, typically $400 to $800 per month for an individual. Compare this against an ACA Silver plan with premium tax credits before electing.",
+        "es": "El divorcio desencadena un derecho de continuación COBRA de 36 meses para los cónyuges e hijos dependientes, no los 18 meses estándar que obtienen los trabajadores. Esta ventana extendida hace que COBRA sea más atractivo como puente si tiene tratamiento continuo, está a mitad del deducible, o está esperando ver cómo se estabiliza su ingreso. COBRA le costará el 102% de la prima del grupo completo, típicamente de $400 a $800 por mes para un individuo. Compare esto con un plan Silver del ACA con créditos fiscales de primas antes de elegir."
+      }
+    },
+    {
+      "name": {
+        "en": "Secure your children's coverage and update their plan enrollment",
+        "es": "Asegure la cobertura de sus hijos y actualice su inscripción al plan"
+      },
+      "text": {
+        "en": "Children lose coverage when a parent's employer plan no longer covers them post-divorce. The custodial parent typically enrolls children on the marketplace plan or CHIP (Children's Health Insurance Program covers children up to 200 to 300% FPL depending on state, year-round enrollment). If a court order requires the non-custodial parent to provide coverage, that court order itself can be a qualifying event for employer plan enrollment. Check the plan's special enrollment rules. Update beneficiary designations and verify children's names match plan documents.",
+        "es": "Los niños pierden cobertura cuando el plan del empleador de un padre ya no los cubre después del divorcio. El padre con custodia generalmente inscribe a los niños en el plan del mercado o en CHIP (el Programa de Seguro de Salud para Niños cubre a los niños de hasta el 200 al 300% FPL según el estado, con inscripción durante todo el año). Si una orden judicial requiere que el padre sin custodia proporcione cobertura, esa orden judicial en sí puede ser un evento calificado para la inscripción en el plan del empleador. Actualice los beneficiarios y verifique que los nombres de los niños coincidan con los documentos del plan."
+      }
+    },
+    {
+      "name": {
+        "en": "Enroll and update your name if legally changed",
+        "es": "Inscríbase y actualice su nombre si cambió legalmente"
+      },
+      "text": {
+        "en": "Submit your marketplace enrollment at healthcare.gov before the 60-day SEP expires. Coverage typically starts the first of the month after you enroll. If you are changing your name post-divorce, update your Social Security record at ssa.gov first. Your marketplace account must match your SSA record exactly or your application will be flagged. Keep your divorce decree and coverage termination letter on file in case the marketplace requests SEP verification documents.",
+        "es": "Envíe su inscripción en el mercado en healthcare.gov antes de que expire el SEP de 60 días. La cobertura generalmente comienza el primero del mes siguiente a su inscripción. Si está cambiando su nombre después del divorcio, actualice su registro de Seguro Social en ssa.gov primero. Su cuenta del mercado debe coincidir exactamente con su registro de SSA o su solicitud será marcada. Guarde su decreto de divorcio y la carta de terminación de cobertura en caso de que el mercado solicite documentos de verificación del SEP."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opción", "Costo típico", "Mejor para", "Fecha límite"]
+    },
+    "rows": [
+      { "en": ["ACA Marketplace (new plan)", "$50 to $400/mo (with subsidies)", "Income above Medicaid limit; household size just changed", "60-day SEP from coverage loss"], "es": ["Mercado ACA (nuevo plan)", "$50 a $400/mes (con subsidios)", "Ingreso por encima del límite de Medicaid; tamaño del hogar acaba de cambiar", "SEP de 60 días desde pérdida de cobertura"] },
+      { "en": ["COBRA on ex-spouse's plan", "$400 to $800+/mo (individual)", "Ongoing treatment; mid-deductible; need 36-month continuity", "60 days to elect; 60 days to notify plan"], "es": ["COBRA en el plan del ex cónyuge", "$400 a $800+/mes (individual)", "Tratamiento continuo; mitad del deducible; necesita continuidad de 36 meses", "60 días para elegir; 60 días para notificar al plan"] },
+      { "en": ["Medicaid", "Free or near-free", "New single income under $22,025 (138% FPL, expansion states)", "Year-round, no deadline"], "es": ["Medicaid", "Gratis o casi gratis", "Nuevo ingreso individual bajo $22,025 (138% FPL, estados de expansión)", "Todo el año, sin fecha límite"] },
+      { "en": ["Your own employer plan", "Employee-share premium (varies)", "Have an employer offering coverage", "30-60 days per your employer's SEP rules"], "es": ["Su propio plan del empleador", "Prima parte del empleado (varía)", "Tiene un empleador que ofrece cobertura", "30 a 60 días según las reglas de SEP de su empleador"] },
+      { "en": ["CHIP for children", "Free to low-cost", "Children under 19 at household income up to 200-300% FPL", "Year-round, no deadline"], "es": ["CHIP para niños", "Gratis o bajo costo", "Niños menores de 19 años con ingreso del hogar hasta 200 a 300% FPL", "Todo el año, sin fecha límite"] }
+    ],
+    "footnote": {
+      "en": "COBRA for divorce is 36 months, not the 18 months workers get. ACA marketplace costs depend on your new post-divorce household income and size. Medicaid and CHIP are year-round regardless of SEP.",
+      "es": "COBRA para el divorcio es de 36 meses, no los 18 meses que obtienen los trabajadores. Los costos del mercado ACA dependen de su nuevo ingreso y tamaño del hogar post-divorcio. Medicaid y CHIP son durante todo el año independientemente del SEP."
+    },
+    "source": "healthcare.gov, DOL COBRA FAQs, ERISA Section 606, CMS COBRA Fact Sheet, Medicaid.gov"
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "The most expensive mistakes people make after losing coverage in a divorce:",
+      "es": "Los errores más costosos que las personas cometen después de perder cobertura en un divorcio:"
+    },
+    "items": [
+      { "en": "Failing to notify the plan administrator of the divorce within 60 days. This single omission forfeits your 36-month COBRA right entirely. Submit written notice to your ex-spouse's HR department immediately after the decree is finalized.", "es": "No notificar al administrador del plan sobre el divorcio dentro de los 60 días. Esta única omisión sacrifica su derecho COBRA de 36 meses por completo. Presente notificación por escrito al departamento de recursos humanos de su ex cónyuge inmediatamente después de que se finalice el decreto." },
+      { "en": "Counting the divorce decree date as the coverage loss date. These are often different. Coverage may end the last day of the month of divorce, or immediately. The SEP 60-day clock runs from actual coverage termination, so confirm the exact date with the plan administrator.", "es": "Contar la fecha del decreto de divorcio como la fecha de pérdida de cobertura, cuando a menudo son diferentes. La cobertura puede terminar el último día del mes del divorcio, o inmediatamente. El reloj del SEP de 60 días corre desde la terminación real de la cobertura, así que confirme la fecha exacta con el administrador del plan." },
+      { "en": "Applying for marketplace coverage with the old household size. After divorce, your household is typically just you (and children if you have custody). Using the old joint household income inflates your reported income and reduces your subsidy, or eliminates it entirely.", "es": "Solicitar cobertura del mercado con el tamaño de hogar antiguo. Después del divorcio, su hogar es típicamente solo usted (y los niños si tiene custodia). Usar el antiguo ingreso del hogar conjunto infla su ingreso reportado y reduce su subsidio, o lo elimina por completo." },
+      { "en": "Forgetting that child support is not income for ACA or Medicaid purposes. Under MAGI rules, child support received does not count as household income. Do not include it in your healthcare.gov application or you may lose subsidies you actually qualify for.", "es": "Olvidar que la manutención de menores no es ingreso para efectos del ACA o Medicaid. Bajo las reglas MAGI, la manutención de menores recibida no cuenta como ingreso del hogar. No la incluya en su solicitud de healthcare.gov o puede perder subsidios para los que realmente califica." },
+      { "en": "Enrolling children only on the ex-spouse's COBRA plan without checking CHIP. CHIP covers children up to 200-300% FPL depending on your state, year-round, at little or no cost. In most cases CHIP is cheaper than COBRA continuation for children.", "es": "Inscribir a los niños solo en el plan COBRA del ex cónyuge sin verificar CHIP. CHIP cubre a los niños hasta el 200 a 300% FPL según su estado, durante todo el año, con poco o ningún costo. En la mayoría de los casos, CHIP es más económico que la continuación COBRA para los niños." },
+      { "en": "Changing your name before updating your SSA record. Your marketplace account must match Social Security Administration records exactly. Apply for the name change at ssa.gov before submitting your healthcare.gov enrollment, or your application will stall in verification.", "es": "Cambiar su nombre antes de actualizar su registro de SSA. Su cuenta del mercado debe coincidir exactamente con los registros de la Administración del Seguro Social. Solicite el cambio de nombre en ssa.gov antes de enviar su inscripción en healthcare.gov, o su solicitud se detendrá en la verificación." }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "How divorce changes your ACA subsidy calculation",
+        "es": "Cómo el divorcio cambia el cálculo de su subsidio ACA"
+      },
+      "paragraphs": [
+        {
+          "en": "The ACA subsidy system is built around household size and income expressed as a percentage of the Federal Poverty Level. Divorce reshapes both dimensions at once. If you were in a dual-income household at 350% FPL and now have a single income at 180% FPL, your subsidy jumps dramatically. If you gain custody of two children, your household becomes three, raising the income threshold for every subsidy tier.",
+          "es": "El sistema de subsidios del ACA se construye alrededor del tamaño del hogar y el ingreso expresado como porcentaje del Nivel de Pobreza Federal. El divorcio reshape ambas dimensiones a la vez. Si estaba en un hogar de doble ingreso al 350% FPL y ahora tiene un ingreso único al 180% FPL, su subsidio salta dramáticamente."
+        },
+        {
+          "en": "The 2026 subsidy cliff returned on January 1, 2026 when the enhanced premium tax credits from the American Rescue Plan and Inflation Reduction Act expired. Subsidies now cut off hard at 400% FPL: $62,600 for a household of 1, $124,800 for a household of 4. If your new post-divorce income puts you just above that line, consider whether deductions can bring your MAGI below it.",
+          "es": "El precipicio de subsidio 2026 regresó el 1 de enero de 2026 cuando los créditos fiscales de primas mejorados de la Ley del Plan de Rescate Americano y la Ley de Reducción de la Inflación expiraron. Los subsidios ahora se cortan abruptamente al 400% FPL: $62,600 para un hogar de 1, $124,800 para un hogar de 4."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Custodial parent vs. non-custodial parent: whose plan covers the children?",
+        "es": "Padre con custodia vs. padre sin custodia: ¿el plan de quién cubre a los niños?"
+      },
+      "paragraphs": [
+        {
+          "en": "For ACA marketplace purposes, the custodial parent (the one the child lives with for more nights per year) claims dependent children in their household. This is true even if the non-custodial parent claims the child as a tax dependent. The IRS Form 8962 instructions and healthcare.gov both use the custody definition, not the tax dependency test, for household composition.",
+          "es": "Para los efectos del mercado ACA, el padre con custodia (aquel con quien el niño vive más noches al año) reclama a los hijos dependientes en su hogar. Esto es cierto incluso si el padre sin custodia reclama al niño como dependiente fiscal."
+        },
+        {
+          "en": "If a court order requires the non-custodial parent to provide health coverage, that court order is itself a qualifying event under most employer group health plans, triggering a special enrollment window. The non-custodial parent should present the court order to their HR department promptly. Waiting until the next open enrollment is a common and costly mistake.",
+          "es": "Si una orden judicial requiere que el padre sin custodia proporcione cobertura médica, esa orden judicial es en sí misma un evento calificado bajo la mayoría de los planes de salud grupales del empleador, desencadenando una ventana de inscripción especial."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Does divorce automatically trigger a Special Enrollment Period?",
+        "answer": "Not automatically. Divorce triggers a 60-day SEP only if you actually lose health coverage as a result. In most states using healthcare.gov, divorce alone without a coverage loss does not open an SEP. Confirm your coverage termination date with the plan administrator, then enroll at healthcare.gov within 60 days of that date."
+      },
+      {
+        "question": "How long is COBRA after divorce?",
+        "answer": "Divorce triggers a 36-month COBRA continuation period for the losing spouse and dependent children, not the 18 months workers get when they leave a job. This is one of the longest COBRA windows available under ERISA. You must notify your ex-spouse's plan administrator in writing within 60 days of the divorce decree to preserve this right."
+      },
+      {
+        "question": "Does my household size change for ACA subsidies after divorce?",
+        "answer": "Yes. Your ACA household is now just you, or you plus your children if you have primary custody. A smaller household with lower income typically means larger subsidies. Log in to healthcare.gov and start a new application with your updated household composition and projected 2026 income. Do not use the old joint household numbers."
+      },
+      {
+        "question": "Does child support count as income for ACA subsidies or Medicaid?",
+        "answer": "No. Under MAGI rules, child support received is not counted as household income for ACA premium tax credit or Medicaid eligibility purposes. Alimony from divorces finalized before January 1, 2019 IS counted as income. Alimony from post-2018 divorces is NOT. Enter the correct figures in your healthcare.gov application to avoid over-reporting income."
+      },
+      {
+        "question": "What happens to my children's health insurance after divorce?",
+        "answer": "Children lose coverage under a parent's employer plan when they are dropped as dependents. The custodial parent typically enrolls them on a new marketplace plan or CHIP. CHIP covers children up to age 19 at incomes from 200% to 300% FPL depending on your state, with very low or zero premiums. If a court order requires the non-custodial parent to cover the children, that order is a qualifying event for most employer plans."
+      },
+      {
+        "question": "Can I stay on my ex-spouse's health insurance after divorce?",
+        "answer": "No. Federal law requires employers to remove an ex-spouse from group health coverage once a divorce is finalized. You cannot remain on the plan as a dependent. COBRA allows you to continue the same coverage for up to 36 months at your own cost (102% of the full group premium), but you must elect it within 60 days of the divorce."
+      },
+      {
+        "question": "What if I miss the 60-day SEP after divorce?",
+        "answer": "If you miss the 60-day Special Enrollment Period, you will likely need to wait until ACA Open Enrollment in November 2026 for 2027 marketplace coverage. Medicaid has no deadline and you can apply year-round at any income level. Check whether another qualifying event (new job, move to a new state, income drop) opens a new SEP before November."
+      },
+      {
+        "question": "I am changing my name after divorce. Does that affect my health insurance enrollment?",
+        "answer": "Yes. Your healthcare.gov account must exactly match your Social Security Administration record. Update your legal name with SSA at ssa.gov first. Bring your divorce decree to a local Social Security office or mail a certified copy. Then update your marketplace account. Skipping this step causes application errors that can delay your coverage start date."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿El divorcio activa automáticamente un Período de Inscripción Especial?",
+        "answer": "No automáticamente. El divorcio activa un SEP de 60 días solo si realmente pierde cobertura médica como resultado. En la mayoría de los estados que usan healthcare.gov, el divorcio solo sin pérdida de cobertura no abre un SEP. Confirme la fecha de terminación de su cobertura con el administrador del plan, luego inscríbase en healthcare.gov dentro de los 60 días de esa fecha."
+      },
+      {
+        "question": "¿Cuánto dura COBRA después del divorcio?",
+        "answer": "El divorcio activa un período de continuación COBRA de 36 meses para el cónyuge que pierde la cobertura y los hijos dependientes, no los 18 meses que obtienen los trabajadores cuando dejan un trabajo. Esta es una de las ventanas COBRA más largas disponibles bajo ERISA. Debe notificar al administrador del plan de su ex cónyuge por escrito dentro de los 60 días del decreto de divorcio para preservar este derecho."
+      },
+      {
+        "question": "¿Cambia el tamaño de mi hogar para los subsidios del ACA después del divorcio?",
+        "answer": "Sí. Su hogar ACA ahora es solo usted, o usted más sus hijos si tiene la custodia principal. Un hogar más pequeño con menos ingresos típicamente significa subsidios más grandes. Inicie sesión en healthcare.gov y comience una nueva solicitud con la composición actualizada del hogar y el ingreso proyectado para 2026."
+      },
+      {
+        "question": "¿La manutención de menores cuenta como ingreso para los subsidios del ACA o Medicaid?",
+        "answer": "No. Bajo las reglas MAGI, la manutención de menores recibida no se cuenta como ingreso del hogar para los créditos fiscales de primas del ACA o para la elegibilidad de Medicaid. La pensión alimenticia de divorcios finalizados antes del 1 de enero de 2019 SÍ se cuenta como ingreso. La pensión alimenticia de divorcios posteriores a 2018 NO se cuenta."
+      },
+      {
+        "question": "¿Qué pasa con el seguro médico de mis hijos después del divorcio?",
+        "answer": "Los niños pierden cobertura bajo el plan del empleador de un padre cuando son removidos como dependientes. El padre con custodia típicamente los inscribe en un nuevo plan del mercado o en CHIP. CHIP cubre a niños menores de 19 años con ingresos de hasta el 200 al 300% FPL según su estado, con primas muy bajas o nulas."
+      },
+      {
+        "question": "¿Puedo quedarme en el seguro médico de mi ex cónyuge después del divorcio?",
+        "answer": "No. La ley federal requiere que los empleadores retiren a un ex cónyuge de la cobertura de salud grupal una vez que el divorcio se finaliza. COBRA le permite continuar la misma cobertura por hasta 36 meses a su propio costo (102% de la prima grupal completa), pero debe elegirla dentro de los 60 días del divorcio."
+      },
+      {
+        "question": "¿Qué pasa si pierdo el SEP de 60 días después del divorcio?",
+        "answer": "Si pierde el Período de Inscripción Especial de 60 días, probablemente necesitará esperar hasta la Inscripción Abierta del ACA en noviembre de 2026 para la cobertura del mercado de 2027. Medicaid no tiene fecha límite y puede solicitar durante todo el año. Verifique si otro evento calificado abre un nuevo SEP antes de noviembre."
+      },
+      {
+        "question": "Estoy cambiando mi nombre después del divorcio. ¿Eso afecta mi inscripción en el seguro médico?",
+        "answer": "Sí. Su cuenta de healthcare.gov debe coincidir exactamente con su registro de la Administración del Seguro Social. Actualice su nombre legal con la SSA en ssa.gov primero. Lleve su decreto de divorcio a una oficina local del Seguro Social o envíe una copia certificada. Luego actualice su cuenta del mercado. Omitir este paso causa errores de solicitud que pueden retrasar la fecha de inicio de su cobertura."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    { "label": { "en": "Medicaid Income Limits 2026", "es": "Límites de Ingresos Medicaid 2026" }, "href": "/medicaid-income-limits" },
+    { "label": { "en": "ACA Income Limits 2026", "es": "Límites de Ingresos ACA 2026" }, "href": "/aca-income-limits" },
+    { "label": { "en": "Federal Poverty Level 2026", "es": "Tabla del FPL 2026" }, "href": "/federal-poverty-level" },
+    { "label": { "en": "Just Lost Your Job? Health Insurance Options", "es": "¿Acaba de Perder Su Trabajo? Opciones de Seguro Médico" }, "href": "/event/just-lost-job-health-insurance" }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Special Enrollment Periods",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/",
+      "note": {
+        "en": "Official ACA SEP eligibility rules including divorce and loss of coverage.",
+        "es": "Reglas oficiales de elegibilidad del SEP del ACA incluyendo divorcio y pérdida de cobertura."
+      }
+    },
+    {
+      "name": "CMS: COBRA Continuation Coverage Fact Sheet",
+      "url": "https://www.cms.gov/cciio/programs-and-initiatives/other-insurance-protections/cobra_fact_sheet",
+      "note": {
+        "en": "COBRA qualifying events, 36-month duration for divorce, notification requirements.",
+        "es": "Eventos calificados de COBRA, duración de 36 meses para divorcio, requisitos de notificación."
+      }
+    },
+    {
+      "name": "DOL: FAQs on COBRA Continuation Coverage for Workers",
+      "url": "https://www.dol.gov/sites/dolgov/files/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-health-coverage-consumer.pdf",
+      "note": {
+        "en": "DOL guidance on COBRA election windows and notification deadlines.",
+        "es": "Guía del DOL sobre ventanas de elección COBRA y plazos de notificación."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Household and Income Information",
+      "url": "https://www.healthcare.gov/income-and-household-information/household-size/",
+      "note": {
+        "en": "Official guidance on how to count household members after life events including divorce.",
+        "es": "Guía oficial sobre cómo contar los miembros del hogar después de eventos de vida incluyendo divorcio."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid enrollment and 2026 income limits.",
+        "es": "Inscripción de Medicaid durante todo el año y límites de ingresos 2026."
+      }
+    }
+  ]
+}

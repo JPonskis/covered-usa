@@ -1,0 +1,414 @@
+{
+  "slug": "having-a-baby",
+  "eventName": {
+    "en": "Having a Baby",
+    "es": "Tener un Bebe"
+  },
+  "category": "Family Change",
+  "topic": "Special Enrollment Period after Birth or Adoption",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "topicCluster": "event-sep",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "lastUpdated": "2026-05-15",
+  "readingTime": "7 min read",
+
+  "keyTerms": {
+    "en": ["Special Enrollment Period", "birth SEP", "CHIP", "Medicaid newborn", "qualifying life event", "60-day window", "retroactive coverage", "household size subsidy"],
+    "es": ["Periodo de Inscripcion Especial", "SEP por nacimiento", "CHIP", "recien nacido Medicaid", "evento de vida calificado", "ventana de 60 dias", "cobertura retroactiva", "subsidio tamano del hogar"]
+  },
+
+  "meta": {
+    "title": {
+      "en": "Having a Baby? Health Insurance Options in 2026 | CoveredUSA",
+      "es": "Tendras un Bebe? Opciones de Seguro Medico 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Birth or adoption triggers a 60-day SEP. Newborn coverage is retroactive to birth date. Compare CHIP, Medicaid, and ACA Marketplace options for 2026.",
+      "es": "El nacimiento o adopcion activa un SEP de 60 dias. Compare CHIP, Medicaid y opciones del mercado ACA para 2026."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Having a Baby? Here Are Your Health Insurance Options in 2026",
+      "es": "Tendras un Bebe? Aqui Estan Sus Opciones de Seguro Medico en 2026"
+    },
+    "subhero": {
+      "en": "Birth or adoption triggers a 60-day Special Enrollment Period. Your newborn's coverage can be retroactive to the birth date. Household size increase may also qualify your family for lower-cost plans.",
+      "es": "El nacimiento o adopcion activa un Periodo de Inscripcion Especial de 60 dias. La cobertura de su recien nacido puede ser retroactiva a la fecha de nacimiento."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from the birth or adoption date to enroll",
+      "es": "Tiene 60 dias desde la fecha de nacimiento o adopcion para inscribirse"
+    },
+    "body": {
+      "en": "The 60-day SEP window runs from the birth or adoption date. For a baby born June 1, 2026, the window closes July 31, 2026. Newborn coverage is retroactive to birth if you enroll within 60 days. Miss the window and you wait until November Open Enrollment, leaving your newborn with no coverage in the gap.",
+      "es": "La ventana del SEP de 60 dias comienza en la fecha de nacimiento o adopcion. Para un bebe nacido el 1 de junio de 2026, la ventana cierra el 31 de julio de 2026. Si pierde la ventana, espera hasta la Inscripcion Abierta de noviembre."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      { "label": { "en": "Medicaid / CHIP (if income qualifies)", "es": "Medicaid / CHIP (si el ingreso califica)" }, "days": null }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "Birth or adoption is a qualifying life event that triggers a 60-day Marketplace SEP. Your baby can be added to your existing plan or you can enroll in a new one; coverage is retroactive to the birth date if you act within 60 days. If your household income is under 317% FPL (varies by state), your child likely qualifies for CHIP or Medicaid for free or very low cost. Adding a baby also increases your household size, which can raise your premium tax credit and lower your monthly premium. Use the SEP to update your Marketplace application and compare all options before the window closes.",
+    "es": "El nacimiento o adopcion es un evento de vida calificado que activa un SEP de 60 dias en el Mercado. Puede agregar a su bebe a su plan actual o inscribirse en uno nuevo. Si el ingreso de su hogar esta por debajo del 317% del FPL (segun el estado), su hijo probablemente califica para CHIP o Medicaid a costo muy bajo o gratuito. Agregar un bebe aumenta el tamano de su hogar, lo que puede aumentar su credito fiscal de primas."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Welcoming a new baby is one of the most joyful and chaotic moments in a family's life. Health insurance paperwork may be the last thing on your mind, but the 60-day window after birth or adoption is one of the most time-sensitive insurance decisions you will ever make. Miss it, and your newborn could have no coverage until November's Open Enrollment period. Act within 60 days, and coverage is retroactive to the birth or adoption date, meaning your baby is covered from day one even if you enrolled a few weeks later.",
+      "es": "Dar la bienvenida a un nuevo bebe es uno de los momentos mas felices y caoticos de la vida de una familia. El papeleo del seguro medico puede ser lo ultimo en su mente, pero la ventana de 60 dias despues del nacimiento o adopcion es una de las decisiones de seguro mas urgentes que tomara. Actue dentro de los 60 dias y la cobertura es retroactiva a la fecha de nacimiento o adopcion."
+    },
+    {
+      "en": "The good news: a new baby typically improves your family's insurance situation in several ways. Your household size goes up by one, which lowers your income as a percentage of the Federal Poverty Level (FPL) and often increases your premium tax credit on an ACA Marketplace plan. Your new child likely qualifies for CHIP or Medicaid regardless of whether you qualify yourself, often at no cost. In 2026, you navigate this with the ACA subsidy cliff back in effect (enhanced premium tax credits from ARPA and the IRA expired January 1, 2026), so updating your Marketplace application to reflect the correct household size is more important than ever. This guide covers the 6 steps to get your newborn covered and the mistakes that leave families paying out of pocket.",
+      "es": "La buena noticia: un nuevo bebe suele mejorar la situacion de seguro de su familia. El tamano de su hogar aumenta en uno, lo que reduce su ingreso como porcentaje del Nivel de Pobreza Federal (FPL) y a menudo aumenta su credito fiscal de primas. Su nuevo hijo probablemente califica para CHIP o Medicaid sin costo. En 2026, el acantilado de subsidios del ACA esta de regreso (los creditos fiscales mejorados expiraron el 1 de enero de 2026), por lo que actualizar su solicitud del Mercado es mas importante que nunca."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Add your newborn to your current plan within 60 days of birth",
+        "es": "Agregue a su recien nacido a su plan actual dentro de los 60 dias del nacimiento"
+      },
+      "text": {
+        "en": "Call your insurance company or log in to your insurer's member portal as soon as possible after the birth or adoption. Request to add your child as a dependent under your existing plan. Coverage is retroactive to the birth date if you complete enrollment within 60 days; your baby is covered from day one even if paperwork takes a few weeks. Have the birth certificate or hospital discharge summary ready for documentation.",
+        "es": "Llame a su aseguradora o inicie sesion en el portal del miembro tan pronto como sea posible despues del nacimiento o adopcion. Solicite agregar a su hijo como dependiente en su plan existente. La cobertura es retroactiva a la fecha de nacimiento si completa la inscripcion dentro de los 60 dias."
+      }
+    },
+    {
+      "name": {
+        "en": "Check if your newborn qualifies for CHIP or Medicaid",
+        "es": "Verifique si su recien nacido califica para CHIP o Medicaid"
+      },
+      "text": {
+        "en": "Apply for CHIP or Medicaid at healthcare.gov or your state Medicaid agency. Most states cover children at household incomes between 200% and 317% FPL; for a family of 3 in 2026, that is between $54,640 and $86,604 per year. CHIP enrollment is year-round with no deadline. If you had Medicaid when you gave birth, your newborn is automatically deemed eligible for Medicaid for at least one year with no separate application needed. State CHIP brand names vary: Medi-Cal for Kids (CA), AllKids (IL), BadgerCare Plus (WI), NJ FamilyCare (NJ), HUSKY Health (CT).",
+        "es": "Solicite CHIP o Medicaid en healthcare.gov o su agencia estatal de Medicaid. La mayoria de los estados cubren ninos con ingresos familiares entre 200% y 317% del FPL. La inscripcion en CHIP es todo el ano sin fecha limite. Si tenia Medicaid cuando dio a luz, su recien nacido se inscribe automaticamente en Medicaid por al menos un ano."
+      }
+    },
+    {
+      "name": {
+        "en": "Update your Marketplace application to add your newborn to your household",
+        "es": "Actualice su solicitud del Mercado para agregar a su recien nacido a su hogar"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov and report the birth as a qualifying life event. Adding your child increases your household size by one, which lowers your income percentage relative to FPL and often increases your premium tax credit. For example, a family of 2 earning $60,000 moves from 277% FPL to a family of 3 at 220% FPL when a baby arrives; that shift can reduce your monthly premium by $50 to $200 depending on your state and plan. Update your application within 60 days to capture this benefit.",
+        "es": "Inicie sesion en healthcare.gov e informe el nacimiento como un evento de vida calificado. Agregar a su hijo aumenta el tamano de su hogar en uno, lo que reduce su porcentaje de ingresos respecto al FPL y a menudo aumenta su credito fiscal de primas. Actualice su solicitud dentro de los 60 dias para capturar este beneficio."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare your current plan to new Marketplace options during the SEP",
+        "es": "Compare su plan actual con nuevas opciones del Mercado durante el SEP"
+      },
+      "text": {
+        "en": "The birth SEP lets you enroll in a brand-new plan, not just add a dependent. Compare plans on healthcare.gov using the updated household size and projected income. Look specifically at pediatric dental and vision coverage; ACA Marketplace plans are required to include pediatric essential health benefits. If a Silver plan with cost-sharing reductions fits your income (100% to 250% FPL), your deductible and copays can be significantly lower than a Bronze plan.",
+        "es": "El SEP por nacimiento le permite inscribirse en un plan completamente nuevo, no solo agregar un dependiente. Compare planes en healthcare.gov utilizando el tamano de hogar actualizado e ingresos proyectados. Los planes del mercado ACA deben incluir beneficios esenciales de salud pediatrica."
+      }
+    },
+    {
+      "name": {
+        "en": "Submit the required documents to verify the qualifying life event",
+        "es": "Envie los documentos requeridos para verificar el evento de vida calificado"
+      },
+      "text": {
+        "en": "After enrolling via your Marketplace SEP, you have typically 30 days to submit documentation. Upload your baby's birth certificate or hospital birth record (for newborns), adoption decree or placement letter (for adoptions), and your existing insurance card showing your current coverage dates. Marketplace SEP documentation is verified by the CMS data services hub; incomplete documents can delay or cancel enrollment.",
+        "es": "Despues de inscribirse en el SEP del Mercado, generalmente tiene 30 dias para enviar documentacion. Suba el certificado de nacimiento de su bebe, decreto de adopcion o carta de colocacion (para adopciones) y su tarjeta de seguro actual."
+      }
+    },
+    {
+      "name": {
+        "en": "Enroll before the 60-day window closes (Medicaid is the one exception)",
+        "es": "Inscribase antes de que cierre la ventana de 60 dias (Medicaid es la excepcion)"
+      },
+      "text": {
+        "en": "The Marketplace SEP closes exactly 60 days after the birth or adoption date. For a baby born July 15, 2026, the window closes September 13, 2026. After that, you must wait until November 2026 Open Enrollment (for 2027 coverage) unless a different qualifying event occurs. Medicaid and CHIP have no such deadline; apply year-round at healthcare.gov or your state Medicaid agency at any time.",
+        "es": "El SEP del Mercado cierra exactamente 60 dias despues de la fecha de nacimiento o adopcion. Despues de eso, debe esperar hasta la Inscripcion Abierta de noviembre de 2026. Medicaid y CHIP no tienen esta fecha limite: solicite todo el ano en healthcare.gov."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opcion", "Costo tipico", "Mejor para", "Fecha limite"]
+    },
+    "rows": [
+      {
+        "en": ["Add baby to current employer plan", "$0 to $300/mo added premium", "Parents with employer coverage", "30 to 60 days from birth (check HR)"],
+        "es": ["Agregar bebe al plan del empleador actual", "$0 a $300/mes de prima adicional", "Padres con cobertura del empleador", "30 a 60 dias desde el nacimiento (verificar con RRHH)"]
+      },
+      {
+        "en": ["ACA Marketplace plan (new or updated)", "$50 to $400/mo (after subsidies)", "Self-employed, small employer, or gap in employer coverage", "60-day SEP from birth/adoption"],
+        "es": ["Plan del Mercado ACA (nuevo o actualizado)", "$50 a $400/mes (despues de subsidios)", "Autonomos, pequenos empleadores o sin cobertura del empleador", "SEP de 60 dias desde nacimiento/adopcion"]
+      },
+      {
+        "en": ["CHIP (for the child only)", "Free to $50/mo (under 200-317% FPL)", "Children whose parents do not qualify for Medicaid", "Year-round enrollment"],
+        "es": ["CHIP (solo para el nino)", "Gratis a $50/mes (bajo 200-317% del FPL)", "Ninos cuyos padres no califican para Medicaid", "Inscripcion todo el ano"]
+      },
+      {
+        "en": ["Medicaid (for child and/or parents)", "Free (under 138% FPL for adults; higher for children)", "Low-income families", "Year-round enrollment"],
+        "es": ["Medicaid (para el nino y/o los padres)", "Gratis (bajo 138% del FPL para adultos; mas alto para ninos)", "Familias de bajos ingresos", "Inscripcion todo el ano"]
+      },
+      {
+        "en": ["COBRA (keep current plan)", "$700 to $2,200/mo (102% of full premium)", "Ongoing specialist care only; short-term bridge", "60 days from coverage loss"],
+        "es": ["COBRA (mantener el plan actual)", "$700 a $2,200/mes (102% de la prima completa)", "Solo atencion especializada continua; puente a corto plazo", "60 dias desde la perdida de cobertura"]
+      }
+    ],
+    "footnote": {
+      "en": "2026 costs. ACA Marketplace subsidies depend on household income and size. CHIP income limits range from 200% to 317% FPL by state. ACA subsidy cliff returned January 1, 2026 (enhanced PTCs expired).",
+      "es": "Costos 2026. Los subsidios del Mercado ACA dependen del ingreso y tamano del hogar. Los limites de ingresos de CHIP van del 200% al 317% del FPL segun el estado."
+    },
+    "source": "healthcare.gov, Medicaid.gov, KFF CHIP eligibility tracker"
+  },
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "2026 FPL income thresholds by household size (48 contiguous states + DC)",
+      "rows": [
+        { "householdSize": "1", "fpl138": "$22,025", "fpl400": "$63,840" },
+        { "householdSize": "2", "fpl138": "$29,863", "fpl400": "$86,560" },
+        { "householdSize": "3", "fpl138": "$37,702", "fpl400": "$109,280" },
+        { "householdSize": "4", "fpl138": "$45,540", "fpl400": "$132,000" },
+        { "householdSize": "5", "fpl138": "$53,378", "fpl400": "$154,720" },
+        { "householdSize": "6", "fpl138": "$61,217", "fpl400": "$177,440" },
+        { "householdSize": "7", "fpl138": "$69,055", "fpl400": "$200,160" },
+        { "householdSize": "8", "fpl138": "$76,894", "fpl400": "$222,880" },
+        { "householdSize": "Each additional person", "fpl138": "+$7,838", "fpl400": "+$22,720" }
+      ]
+    },
+    "es": {
+      "caption": "Umbrales de ingresos FPL 2026 por tamano de hogar (48 estados contiguos + DC)",
+      "rows": [
+        { "householdSize": "1", "fpl138": "$22,025", "fpl400": "$63,840" },
+        { "householdSize": "2", "fpl138": "$29,863", "fpl400": "$86,560" },
+        { "householdSize": "3", "fpl138": "$37,702", "fpl400": "$109,280" },
+        { "householdSize": "4", "fpl138": "$45,540", "fpl400": "$132,000" },
+        { "householdSize": "5", "fpl138": "$53,378", "fpl400": "$154,720" },
+        { "householdSize": "6", "fpl138": "$61,217", "fpl400": "$177,440" },
+        { "householdSize": "7", "fpl138": "$69,055", "fpl400": "$200,160" },
+        { "householdSize": "8", "fpl138": "$76,894", "fpl400": "$222,880" },
+        { "householdSize": "Cada persona adicional", "fpl138": "+$7,838", "fpl400": "+$22,720" }
+      ]
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "Birth certificate or hospital birth record (for newborn)",
+      "Adoption decree or placement letter from adoption agency (for adoptions or foster placement)",
+      "Current insurance card showing your existing coverage effective dates",
+      "Social Security numbers (or proof of application) for you, your spouse, and your new child",
+      "Proof of household income: most recent pay stubs or 1040 if self-employed",
+      "1095-A form (if you had a prior Marketplace plan) to verify existing coverage",
+      "Government-issued photo ID (driver's license or passport)"
+    ],
+    "es": [
+      "Certificado de nacimiento o registro del hospital (para recien nacidos)",
+      "Decreto de adopcion o carta de colocacion de la agencia de adopcion (para adopciones o colocacion en hogares de crianza)",
+      "Tarjeta de seguro actual con fechas de vigencia de su cobertura existente",
+      "Numeros de Seguro Social (o prueba de solicitud) para usted, su conyuge y su nuevo hijo",
+      "Comprobante de ingreso del hogar: talones de pago recientes o 1040 si es autonomo",
+      "Formulario 1095-A (si tenia un plan del Mercado previo) para verificar cobertura existente",
+      "Identificacion oficial con foto (licencia de conducir o pasaporte)"
+    ]
+  },
+
+  "stateRules": [
+    {
+      "state": "California",
+      "rule": "Medi-Cal covers newborns automatically if the mother is enrolled at birth. Separate CHIP program (Medi-Cal for Kids) covers children up to 317% FPL (age 0-18). Apply at coveredca.com or your county social services office.",
+      "sourceUrl": "https://www.dhcs.ca.gov/services/medi-cal/Pages/Newborn.aspx"
+    },
+    {
+      "state": "Illinois",
+      "rule": "AllKids covers all Illinois children under 19 regardless of immigration status. Income limits up to 300% FPL. No waiting period for newborns.",
+      "sourceUrl": "https://www.hfs.illinois.gov/allkids"
+    },
+    {
+      "state": "Wisconsin",
+      "rule": "BadgerCare Plus covers newborns and children up to 300% FPL. Deemed newborn enrollment applies if mother was on BadgerCare Plus at birth.",
+      "sourceUrl": "https://www.dhs.wisconsin.gov/badgercare-plus/index.htm"
+    },
+    {
+      "state": "New Jersey",
+      "rule": "NJ FamilyCare covers children up to 355% FPL. Newborns of NJ FamilyCare enrollees are automatically enrolled for one year.",
+      "sourceUrl": "https://www.state.nj.us/humanservices/dmahs/clients/medicaid/njfc/"
+    },
+    {
+      "state": "Connecticut",
+      "rule": "HUSKY Health (HUSKY A) covers newborns and children up to 317% FPL. Deemed enrollment for newborns of HUSKY enrollees.",
+      "sourceUrl": "https://www.ct.gov/dss/cwp/view.asp?a=2353&q=305172"
+    },
+    {
+      "state": "Florida",
+      "rule": "Florida KidCare covers children up to 200% FPL. Not a Medicaid expansion state; adults under 138% FPL have limited Medicaid options but children and newborns are covered.",
+      "sourceUrl": "https://www.floridakidcare.org/"
+    },
+    {
+      "state": "Texas",
+      "rule": "CHIP (Texas CHIP) covers children 1-18 at household incomes 200% FPL or below. Newborns automatically enrolled if born to CHIP Perinatal or STAR (Medicaid) enrollees. Texas is not a Medicaid expansion state; parents may not have coverage options through Medicaid.",
+      "sourceUrl": "https://hhs.texas.gov/chip"
+    }
+  ],
+
+  "commonDenialReasons": {
+    "en": [
+      "Missed the 60-day SEP window: the most common reason; the Marketplace does not make exceptions after 60 days",
+      "Insufficient documentation: uploading only a photo of a hospital wristband instead of an official birth certificate or hospital birth record",
+      "Income reported incorrectly: using last year's income instead of current projected annual income, which can miscalculate subsidy eligibility for the new household size",
+      "Child listed as a dependent on a different household's tax return, which creates eligibility conflicts when applying for CHIP or Medicaid",
+      "Non-citizen documentation gap: children born to non-citizen parents can still qualify for CHIP/Medicaid, but proof of the child's legal status is required in most states"
+    ],
+    "es": [
+      "Ventana del SEP de 60 dias vencida: la razon mas comun; el Mercado no hace excepciones despues de 60 dias",
+      "Documentacion insuficiente: subir solo una foto de la pulsera del hospital en lugar de un certificado de nacimiento oficial",
+      "Ingreso reportado incorrectamente: usar el ingreso del ano pasado en lugar del ingreso anual proyectado actual",
+      "Nino declarado como dependiente en la declaracion de impuestos de otro hogar, lo que crea conflictos de elegibilidad al solicitar CHIP o Medicaid",
+      "Brecha de documentacion para no ciudadanos: los ninos nacidos de padres no ciudadanos pueden calificar para CHIP/Medicaid, pero se requiere prueba del estado legal del nino en la mayoria de los estados"
+    ]
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "The most costly mistakes parents make after a birth or adoption:",
+      "es": "Los errores mas costosos que cometen los padres despues de un nacimiento o adopcion:"
+    },
+    "items": [
+      {
+        "en": "Waiting past 60 days. The Marketplace SEP is a hard deadline. A baby born June 1 has a window that closes July 31. After that, there is no coverage for the child until November Open Enrollment unless another qualifying event occurs.",
+        "es": "Esperar mas de 60 dias. El SEP del Mercado es una fecha limite estricta. Un bebe nacido el 1 de junio tiene una ventana que cierra el 31 de julio. Despues de eso, no hay cobertura para el nino hasta la Inscripcion Abierta de noviembre."
+      },
+      {
+        "en": "Not updating household size on a Marketplace application. Adding a child raises your household size and lowers your income as a percentage of FPL; this change often increases your premium tax credit significantly. Skipping the update means you overpay every month.",
+        "es": "No actualizar el tamano del hogar en una solicitud del Mercado. Agregar un hijo aumenta el tamano de su hogar y reduce su ingreso como porcentaje del FPL, lo que a menudo aumenta significativamente su credito fiscal de primas."
+      },
+      {
+        "en": "Skipping CHIP for the child because the parents do not qualify for Medicaid. CHIP income limits are higher than Medicaid; in most states, children qualify at 200% to 317% FPL while adults cap out at 138% FPL in expansion states. Check healthcare.gov for your child even if you are on a Marketplace plan.",
+        "es": "Omitir CHIP para el nino porque los padres no califican para Medicaid. Los limites de ingresos de CHIP son mas altos que los de Medicaid; en la mayoria de los estados, los ninos califican al 200% a 317% del FPL."
+      },
+      {
+        "en": "Assuming the newborn is covered automatically on a Marketplace plan. Unlike Medicaid's deemed-newborn rule, ACA Marketplace plans do NOT automatically cover a newborn. You must actively add the baby within 60 days or coverage is not retroactive.",
+        "es": "Asumir que el recien nacido esta cubierto automaticamente en un plan del Mercado. A diferencia de la regla de recien nacido considerado de Medicaid, los planes del Mercado ACA NO cubren automaticamente a un recien nacido."
+      },
+      {
+        "en": "Enrolling in COBRA instead of exploring ACA Marketplace options. With the 2026 subsidy cliff back in effect and enhanced PTCs expired, COBRA at 102% of the full premium is often $1,000 to $2,500 per month for a family. Compare marketplace plans with updated household size first.",
+        "es": "Inscribirse en COBRA en lugar de explorar opciones del Mercado ACA. Con el acantilado de subsidios de 2026 de vuelta y los PTC mejorados vencidos, COBRA al 102% de la prima completa es a menudo $1,000 a $2,500 por mes para una familia."
+      }
+    ]
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the SEP window after having a baby?",
+        "answer": "Birth or adoption triggers a 60-day Special Enrollment Period (SEP) starting on the date of birth or adoption. For a baby born August 1, 2026, the window closes September 30, 2026. Within this window, you can add your newborn to your existing plan or enroll in a new Marketplace plan. Medicaid and CHIP have no 60-day limit and are open year-round."
+      },
+      {
+        "question": "Is my newborn's coverage retroactive to the birth date?",
+        "answer": "Yes, for both Marketplace plans and Medicaid. If you enroll your newborn in an ACA Marketplace plan within the 60-day SEP, coverage is effective retroactive to the birth date. If your baby is born when you already have Medicaid, the newborn is automatically enrolled and coverage is retroactive to birth. This means even a hospital stay on day one is covered, as long as you complete enrollment within 60 days."
+      },
+      {
+        "question": "How do I document the birth for a Marketplace SEP?",
+        "answer": "Log in to healthcare.gov and report the birth as a qualifying life event. You will need to upload supporting documents, typically a birth certificate or official hospital birth record. For adoptions, submit the adoption decree or placement letter from the adoption agency. You typically have 30 days after enrolling to submit documents. Incomplete submissions can delay or cancel enrollment, so upload a clear copy of the official document."
+      },
+      {
+        "question": "What if I miss the 60-day SEP window after birth?",
+        "answer": "If you miss the 60-day window, your child cannot be added to a Marketplace plan until the next Open Enrollment Period (November 1, 2026 for 2027 coverage). However, Medicaid and CHIP remain year-round options. If your household income qualifies, you can apply for CHIP or Medicaid for your child at any time through healthcare.gov or your state Medicaid agency; no SEP required."
+      },
+      {
+        "question": "Does my child qualify for CHIP if I have a Marketplace plan?",
+        "answer": "Yes. CHIP eligibility is based on your child's household income, not whether you personally have a Marketplace plan. In most states, children qualify for CHIP at household incomes between 200% and 317% FPL. For a family of 3 in 2026, that is up to about $86,600 per year. State CHIP programs include Medi-Cal for Kids (CA), AllKids (IL), BadgerCare Plus (WI), NJ FamilyCare (NJ), and HUSKY Health (CT). Apply at healthcare.gov year-round."
+      },
+      {
+        "question": "What state-specific CHIP rules should I know?",
+        "answer": "CHIP income limits and program names vary by state. California (Medi-Cal for Kids) covers children to 317% FPL. Illinois (AllKids) covers all children regardless of immigration status. Wisconsin (BadgerCare Plus) and Connecticut (HUSKY Health) cover children to 300-317% FPL. New Jersey (NJ FamilyCare) covers children to 355% FPL. Texas and Florida cover children to 200% FPL but are not Medicaid expansion states, so parent coverage options are limited. Check your state's Medicaid agency for current limits."
+      },
+      {
+        "question": "Do I qualify for Medicaid after having a baby?",
+        "answer": "It depends on your income and state. In 40 states plus DC that expanded Medicaid, adults under 138% FPL ($22,025 single / $37,702 household of 3 in 2026) qualify for Medicaid year-round. If you had Medicaid during pregnancy, you may qualify for postpartum Medicaid for up to 12 months under many state programs. Non-expansion states (including TX, FL, GA) have much narrower adult eligibility. Your newborn qualifies for Medicaid at higher income thresholds than you do."
+      },
+      {
+        "question": "How does adding a baby change my ACA Marketplace subsidy?",
+        "answer": "Adding a baby increases your household size by one, which lowers your income as a percentage of FPL. A lower FPL percentage means a larger premium tax credit. For example, a family of 2 earning $65,000 is at about 300% FPL in 2026. The same income for a family of 3 is about 238% FPL, potentially qualifying for a meaningful premium tax credit. Log in to healthcare.gov and update your application with the new household size to recalculate your subsidy."
+      }
+    ],
+    "es": [
+      {
+        "question": "Cual es la ventana del SEP despues de tener un bebe?",
+        "answer": "El nacimiento o adopcion activa un Periodo de Inscripcion Especial (SEP) de 60 dias a partir de la fecha de nacimiento o adopcion. Para un bebe nacido el 1 de agosto de 2026, la ventana cierra el 30 de septiembre de 2026. Dentro de esta ventana, puede agregar a su recien nacido a su plan existente o inscribirse en un nuevo plan del Mercado. Medicaid y CHIP no tienen limite de 60 dias y estan abiertos todo el ano."
+      },
+      {
+        "question": "La cobertura de mi recien nacido es retroactiva a la fecha de nacimiento?",
+        "answer": "Si, tanto para los planes del Mercado como para Medicaid. Si inscribe a su recien nacido en un plan del Mercado ACA dentro del SEP de 60 dias, la cobertura es efectiva retroactiva a la fecha de nacimiento. Si su bebe nace cuando ya tiene Medicaid, el recien nacido se inscribe automaticamente y la cobertura es retroactiva al nacimiento. Esto significa que incluso una estancia hospitalaria el primer dia esta cubierta, siempre que complete la inscripcion dentro de 60 dias."
+      },
+      {
+        "question": "Como documento el nacimiento para un SEP del Mercado?",
+        "answer": "Inicie sesion en healthcare.gov e informe el nacimiento como un evento de vida calificado. Debera subir documentos de respaldo, tipicamente un certificado de nacimiento o registro oficial del hospital. Para adopciones, envie el decreto de adopcion o carta de colocacion de la agencia de adopcion. Generalmente tiene 30 dias despues de inscribirse para enviar documentos."
+      },
+      {
+        "question": "Que pasa si pierdo la ventana del SEP de 60 dias despues del nacimiento?",
+        "answer": "Si pierde la ventana de 60 dias, su hijo no puede agregarse a un plan del Mercado hasta el siguiente Periodo de Inscripcion Abierta (1 de noviembre de 2026 para cobertura 2027). Sin embargo, Medicaid y CHIP siguen siendo opciones durante todo el ano. Si el ingreso de su hogar califica, puede solicitar CHIP o Medicaid para su hijo en cualquier momento a traves de healthcare.gov o su agencia estatal de Medicaid."
+      },
+      {
+        "question": "Califica mi hijo para CHIP si tengo un plan del Mercado?",
+        "answer": "Si. La elegibilidad de CHIP se basa en el ingreso del hogar de su hijo, no en si usted personalmente tiene un plan del Mercado. En la mayoria de los estados, los ninos califican para CHIP con ingresos familiares entre 200% y 317% del FPL. Los programas CHIP estatales incluyen Medi-Cal for Kids (CA), AllKids (IL), BadgerCare Plus (WI), NJ FamilyCare (NJ) y HUSKY Health (CT)."
+      },
+      {
+        "question": "Que reglas especificas del estado debo conocer sobre CHIP?",
+        "answer": "Los limites de ingresos y nombres de programas de CHIP varian por estado. California (Medi-Cal for Kids) cubre ninos hasta el 317% del FPL. Illinois (AllKids) cubre a todos los ninos independientemente del estado migratorio. Wisconsin (BadgerCare Plus) y Connecticut (HUSKY Health) cubren ninos hasta el 300-317% del FPL. Nueva Jersey (NJ FamilyCare) cubre ninos hasta el 355% del FPL. Verifique con la agencia Medicaid de su estado para los limites actuales."
+      },
+      {
+        "question": "Califico para Medicaid despues de tener un bebe?",
+        "answer": "Depende de su ingreso y estado. En 40 estados mas DC que expandieron Medicaid, los adultos con ingresos por debajo del 138% del FPL ($22,025 individual / $37,702 hogar de 3 en 2026) califican para Medicaid todo el ano. Su recien nacido califica para Medicaid con limites de ingresos mas altos que los suyos."
+      },
+      {
+        "question": "Como cambia agregar un bebe mi subsidio del Mercado ACA?",
+        "answer": "Agregar un bebe aumenta el tamano de su hogar en uno, lo que reduce su ingreso como porcentaje del FPL. Un porcentaje de FPL mas bajo significa un credito fiscal de primas mas grande. Inicie sesion en healthcare.gov y actualice su solicitud con el nuevo tamano del hogar para recalcular su subsidio."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    { "label": { "en": "Medicaid Income Limits 2026", "es": "Limites de Ingresos Medicaid 2026" }, "href": "/medicaid-income-limits" },
+    { "label": { "en": "ACA Income Limits 2026", "es": "Limites de Ingresos ACA 2026" }, "href": "/aca-income-limits" },
+    { "label": { "en": "Federal Poverty Level 2026", "es": "Tabla del FPL 2026" }, "href": "/federal-poverty-level" },
+    { "label": { "en": "Getting Married Health Insurance Options", "es": "Opciones de Seguro Medico al Casarse" }, "href": "/event/getting-married" }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Special Enrollment after birth or adoption",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/your-options/",
+      "note": { "en": "Official ACA Marketplace SEP guidance for birth, adoption, and foster placement qualifying events.", "es": "Guia oficial del SEP del Mercado ACA para eventos calificados de nacimiento, adopcion y colocacion en hogares de crianza." }
+    },
+    {
+      "name": "Medicaid.gov: Deemed newborn eligibility",
+      "url": "https://www.medicaid.gov/resources-for-states/downloads/macpro-ig-deemed-newborns.pdf",
+      "note": { "en": "Federal guidance on automatic Medicaid enrollment for newborns born to Medicaid-enrolled mothers.", "es": "Guia federal sobre la inscripcion automatica en Medicaid para recien nacidos de madres inscritas en Medicaid." }
+    },
+    {
+      "name": "Medicaid.gov: CHIP eligibility and enrollment",
+      "url": "https://www.medicaid.gov/chip/chip-eligibility-enrollment",
+      "note": { "en": "Federal CHIP income eligibility rules and year-round enrollment guidance.", "es": "Reglas federales de elegibilidad de ingresos de CHIP y orientacion de inscripcion durante todo el ano." }
+    },
+    {
+      "name": "KFF: CHIP program name and type by state",
+      "url": "https://kff.org/other/state-indicator/chip-program-name-and-type-for-children-only-coverage",
+      "note": { "en": "State-by-state CHIP program names, types, and income eligibility thresholds.", "es": "Nombres de programas CHIP estatales, tipos y umbrales de elegibilidad de ingresos." }
+    },
+    {
+      "name": "CMS: Pregnancy and newborn coverage options",
+      "url": "https://www.cms.gov/marketplace/technical-assistance-resources/pregnancy-newborn-coverage.pdf",
+      "note": { "en": "CMS technical guidance for Marketplace navigators on pregnancy and newborn coverage rules.", "es": "Guia tecnica de CMS para navegadores del Mercado sobre las reglas de cobertura del embarazo y el recien nacido." }
+    }
+  ]
+}
