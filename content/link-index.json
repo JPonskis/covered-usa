@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-16T19:59:33.138Z",
-  "commit": "994c8831f75e6cfbddb09722a3d4320dda95ecbd",
+  "generatedAt": "2026-05-16T20:28:19.709Z",
+  "commit": "aa49aa0efca572dc9dbf580c247034a6fd5ae477",
   "byTopic": {
     "procedure-cost": {
       "lighthouse": "/cost/echocardiogram",
@@ -31,13 +31,22 @@
       "lighthouse": "/drug/mounjaro-cost",
       "spokes": []
     },
+    "glp1-obesity": {
+      "lighthouse": "/drug/wegovy-without-insurance",
+      "spokes": []
+    },
     "glp1-weight-loss": {
       "lighthouse": "/drug/zepbound-cost",
+      "spokes": []
+    },
+    "drug-costs": {
+      "lighthouse": "/drug/zepbound-without-insurance",
       "spokes": []
     },
     "medicaid-coverage": {
       "lighthouse": "/qa/abortion-coverage-medicaid-by-state",
       "spokes": [
+        "/qa/can-i-get-medicaid-with-job",
         "/qa/dental-coverage-by-state-medicaid",
         "/qa/do-i-qualify-medicaid-no-income",
         "/qa/does-medicaid-cover-abortion",
@@ -73,13 +82,6 @@
         "/qa/who-qualifies-for-aca-subsidy",
         "/glossary/bronze-silver-gold",
         "/glossary/deductible-vs-oop-vs-total-cost"
-      ]
-    },
-    "medicaid-eligibility": {
-      "lighthouse": "/qa/can-i-get-medicaid-with-job",
-      "spokes": [
-        "/qa/can-i-have-both-medicare-and-medicaid",
-        "/qa/how-much-can-you-make-and-still-get-medicaid"
       ]
     },
     "medicare-coverage": {
@@ -119,6 +121,12 @@
         "/qa/medicare-vs-medicaid-coverage",
         "/qa/ozempic-insurance-coverage",
         "/qa/wegovy-insurance-coverage"
+      ]
+    },
+    "medicaid-eligibility": {
+      "lighthouse": "/qa/can-i-have-both-medicare-and-medicaid",
+      "spokes": [
+        "/qa/how-much-can-you-make-and-still-get-medicaid"
       ]
     },
     "chip-eligibility": {
@@ -353,6 +361,12 @@
       "Vyvanse without insurance": "drug-cost",
       "lisdexamfetamine Medicare Part D": "drug-cost",
       "Vyvanse generic 2026": "drug-cost",
+      "Wegovy cost without insurance": "glp1-obesity",
+      "Wegovy price 2026": "glp1-obesity",
+      "semaglutide cost": "glp1-obesity",
+      "NovoCare Wegovy": "glp1-obesity",
+      "Medicare GLP-1 Bridge Wegovy": "glp1-obesity",
+      "Wegovy savings card": "glp1-obesity",
       "Xarelto cost": "drug-cost",
       "Xarelto price 2026": "drug-cost",
       "rivaroxaban price": "drug-cost",
@@ -368,6 +382,11 @@
       "Zepbound self-pay": "glp1-weight-loss",
       "Medicare GLP-1 coverage": "glp1-weight-loss",
       "dual receptor agonist": "glp1-weight-loss",
+      "zepbound cost without insurance": "drug-costs",
+      "zepbound self pay cost": "drug-costs",
+      "zepbound self-pay": "drug-costs",
+      "lillydirect zepbound": "drug-costs",
+      "zepbound medicare coverage": "drug-costs",
       "medicaid abortion coverage by state": "medicaid-coverage",
       "hyde amendment medicaid 2026": "medicaid-coverage",
       "which states cover abortion medicaid": "medicaid-coverage",
@@ -384,11 +403,11 @@
       "aca sep qualifying events": "aca-coverage",
       "lose job coverage enroll aca": "aca-coverage",
       "aca enrollment outside oep": "aca-coverage",
-      "medicaid with a job": "medicaid-eligibility",
-      "can you get medicaid if you work": "medicaid-eligibility",
-      "working and medicaid eligible 2026": "medicaid-eligibility",
-      "medicaid income limit employed": "medicaid-eligibility",
-      "medicaid work requirements 2026": "medicaid-eligibility",
+      "medicaid with a job": "medicaid-coverage",
+      "can you get medicaid if you work": "medicaid-coverage",
+      "working and medicaid eligible 2026": "medicaid-coverage",
+      "medicaid income limit employed": "medicaid-coverage",
+      "medicaid work requirements 2026": "medicaid-coverage",
       "medicare under 65": "medicare-coverage",
       "medicare disability": "medicare-coverage",
       "SSDI medicare waiting period": "medicare-coverage",
@@ -1125,6 +1144,12 @@
       "Vyvanse sin seguro": "drug-cost",
       "lisdexamfetamina Medicare Parte D": "drug-cost",
       "Vyvanse generico 2026": "drug-cost",
+      "costo de Wegovy sin seguro": "glp1-obesity",
+      "precio de Wegovy 2026": "glp1-obesity",
+      "costo de semaglutida": "glp1-obesity",
+      "NovoCare Wegovy": "glp1-obesity",
+      "Medicare GLP-1 Bridge Wegovy": "glp1-obesity",
+      "tarjeta de ahorro Wegovy": "glp1-obesity",
       "costo de Xarelto": "drug-cost",
       "precio de Xarelto 2026": "drug-cost",
       "precio rivaroxaban": "drug-cost",
@@ -1137,6 +1162,10 @@
       "auto-pago Zepbound": "glp1-weight-loss",
       "cobertura Medicare GLP-1": "glp1-weight-loss",
       "agonista dual de receptores": "glp1-weight-loss",
+      "costo de zepbound sin seguro": "drug-costs",
+      "precio tirzepatida": "drug-costs",
+      "zepbound autopago": "drug-costs",
+      "zepbound medicare cobertura": "drug-costs",
       "cobertura aborto medicaid por estado": "medicaid-coverage",
       "enmienda hyde medicaid 2026": "medicaid-coverage",
       "estados que cubren aborto medicaid": "medicaid-coverage",
@@ -1152,10 +1181,10 @@
       "eventos calificadores sep aca": "aca-coverage",
       "perder cobertura laboral aca": "aca-coverage",
       "inscripcion aca fuera oep": "aca-coverage",
-      "medicaid con trabajo": "medicaid-eligibility",
-      "puedo tener medicaid si trabajo": "medicaid-eligibility",
-      "medicaid ingresos empleado 2026": "medicaid-eligibility",
-      "requisitos de trabajo medicaid 2026": "medicaid-eligibility",
+      "medicaid con trabajo": "medicaid-coverage",
+      "puedo tener medicaid si trabajo": "medicaid-coverage",
+      "medicaid ingresos empleado 2026": "medicaid-coverage",
+      "requisitos de trabajo medicaid 2026": "medicaid-coverage",
       "medicare menor de 65": "medicare-coverage",
       "medicare discapacidad": "medicare-coverage",
       "periodo espera SSDI medicare": "medicare-coverage",
@@ -1730,7 +1759,9 @@
     "/drug/atorvastatin-cost",
     "/drug/humira-cost",
     "/drug/mounjaro-cost",
+    "/drug/wegovy-without-insurance",
     "/drug/zepbound-cost",
+    "/drug/zepbound-without-insurance",
     "/event/becoming-a-caregiver",
     "/event/divorce",
     "/federal-poverty-level",
@@ -1747,8 +1778,8 @@
     "/medicare-eligibility",
     "/qa/abortion-coverage-medicaid-by-state",
     "/qa/aca-marketplace-subsidy-eligibility",
-    "/qa/can-i-get-medicaid-with-job",
     "/qa/can-i-get-medicare-under-65",
+    "/qa/can-i-have-both-medicare-and-medicaid",
     "/qa/chip-eligibility-by-state",
     "/qa/do-i-qualify-for-medi-cal-california",
     "/qa/do-i-qualify-for-soonercare-oklahoma",
