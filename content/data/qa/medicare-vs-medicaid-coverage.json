@@ -21,7 +21,6 @@
   "topicCluster": "medicare-coverage",
   "lastUpdated": "2026-05-15",
   "readingTime": "6 min read",
-
   "meta": {
     "title": {
       "en": "Medicare vs Medicaid Coverage Differences 2026 | CoveredUSA",
@@ -32,14 +31,12 @@
       "es": "Medicare cubre a personas de 65+ y con discapacidades. Medicaid cubre a estadounidenses de bajos ingresos. Vea la comparacion de cobertura 2026."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Medicare vs Medicaid: Coverage Differences 2026",
       "es": "Medicare vs Medicaid: Diferencias de Cobertura 2026"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicare and Medicaid are both government health programs, but they serve different populations, have different funding structures, and cover different services. Confusing the two is easy — they share a name root and both appear on insurance cards. But the rules governing who qualifies, what gets covered, and how costs are shared are distinct in almost every way.",
@@ -50,74 +47,198 @@
       "es": "Esta guía desglosa las diferencias clave de cobertura entre Medicare (Partes A, B, C, D) y Medicaid (beneficios obligatorios y opcionales), lo que cada programa cuesta a los beneficiarios en 2026, y qué pueden esperar los individuos dualmente elegibles con ambos programas."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Feature", "Medicare", "Medicaid"],
-      "es": ["Característica", "Medicare", "Medicaid"]
+      "en": [
+        "Feature",
+        "Medicare",
+        "Medicaid"
+      ],
+      "es": [
+        "Característica",
+        "Medicare",
+        "Medicaid"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Who administers it", "es": "Quién lo administra" },
-          { "en": "Federal government (CMS)", "es": "Gobierno federal (CMS)" },
-          { "en": "Federal + each state jointly", "es": "Federal + cada estado conjuntamente" }
+          {
+            "en": "Who administers it",
+            "es": "Quién lo administra"
+          },
+          {
+            "en": "Federal government (CMS)",
+            "es": "Gobierno federal (CMS)"
+          },
+          {
+            "en": "Federal + each state jointly",
+            "es": "Federal + cada estado conjuntamente"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Who qualifies", "es": "Quién califica" },
-          { "en": "Age 65+, SSDI 24 months, ESRD, ALS", "es": "65+ años, SSDI 24 meses, ESRD, ELA" },
-          { "en": "Low-income adults, children, pregnant, disabled (varies by state)", "es": "Adultos de bajos ingresos, niños, embarazadas, discapacitados (varía por estado)" }
+          {
+            "en": "Who qualifies",
+            "es": "Quién califica"
+          },
+          {
+            "en": "Age 65+, SSDI 24 months, ESRD, ALS",
+            "es": "65+ años, SSDI 24 meses, ESRD, ELA"
+          },
+          {
+            "en": "Low-income adults, children, pregnant, disabled (varies by state)",
+            "es": "Adultos de bajos ingresos, niños, embarazadas, discapacitados (varía por estado)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Income requirement", "es": "Requisito de ingresos" },
-          { "value": { "en": "Open eligibility (any income)", "es": "Elegibilidad abierta (cualquier ingreso)" }, "status": "yes" },
-          { "value": { "en": "Yes — up to 138% FPL in expansion states", "es": "Sí — hasta 138% del FPL en estados de expansión" }, "status": "partial" }
+          {
+            "en": "Income requirement",
+            "es": "Requisito de ingresos"
+          },
+          {
+            "value": {
+              "en": "Open eligibility (any income)",
+              "es": "Elegibilidad abierta (cualquier ingreso)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Yes — up to 138% FPL in expansion states",
+              "es": "Sí — hasta 138% del FPL en estados de expansión"
+            },
+            "status": "partial"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Inpatient hospital", "es": "Hospital de pacientes internos" },
-          { "value": { "en": "Yes (Part A)", "es": "Sí (Parte A)" }, "status": "yes" },
-          { "value": { "en": "Yes (mandatory benefit)", "es": "Sí (beneficio obligatorio)" }, "status": "yes" }
+          {
+            "en": "Inpatient hospital",
+            "es": "Hospital de pacientes internos"
+          },
+          {
+            "value": {
+              "en": "Yes (Part A)",
+              "es": "Sí (Parte A)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Yes (mandatory benefit)",
+              "es": "Sí (beneficio obligatorio)"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Outpatient / physician visits", "es": "Visitas ambulatorias / médico" },
-          { "value": { "en": "Yes (Part B)", "es": "Sí (Parte B)" }, "status": "yes" },
-          { "value": { "en": "Yes (mandatory benefit)", "es": "Sí (beneficio obligatorio)" }, "status": "yes" }
+          {
+            "en": "Outpatient / physician visits",
+            "es": "Visitas ambulatorias / médico"
+          },
+          {
+            "value": {
+              "en": "Yes (Part B)",
+              "es": "Sí (Parte B)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Yes (mandatory benefit)",
+              "es": "Sí (beneficio obligatorio)"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Prescription drugs", "es": "Medicamentos recetados" },
-          { "value": { "en": "Yes (Part D, OOP cap $2,100 in 2026)", "es": "Sí (Parte D, tope de gastos $2,100 en 2026)" }, "status": "yes" },
-          { "value": { "en": "Yes (optional but covered in all states)", "es": "Sí (opcional pero cubierto en todos los estados)" }, "status": "yes" }
+          {
+            "en": "Prescription drugs",
+            "es": "Medicamentos recetados"
+          },
+          {
+            "value": {
+              "en": "Yes (Part D, OOP cap $2,100 in 2026)",
+              "es": "Sí (Parte D, tope de gastos $2,100 en 2026)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Yes (optional but covered in all states)",
+              "es": "Sí (opcional pero cubierto en todos los estados)"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Long-term care / nursing home", "es": "Cuidado a largo plazo / residencia de ancianos" },
-          { "value": { "en": "Limited (up to 100 days skilled nursing only)", "es": "Limitado (hasta 100 días de enfermería especializada)" }, "status": "partial" },
-          { "value": { "en": "Yes (largest payer of long-term care)", "es": "Sí (mayor pagador de cuidado a largo plazo)" }, "status": "yes" }
+          {
+            "en": "Long-term care / nursing home",
+            "es": "Cuidado a largo plazo / residencia de ancianos"
+          },
+          {
+            "value": {
+              "en": "Limited (up to 100 days skilled nursing only)",
+              "es": "Limitado (hasta 100 días de enfermería especializada)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "Yes (largest payer of long-term care)",
+              "es": "Sí (mayor pagador de cuidado a largo plazo)"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Dental, vision, hearing", "es": "Dental, visión, audición" },
-          { "value": { "en": "Limited (Advantage plans only; not Original Medicare)", "es": "Limitado (solo planes Advantage; no Medicare Original)" }, "status": "partial" },
-          { "value": { "en": "Varies by state (optional Medicaid benefit)", "es": "Varía por estado (beneficio opcional de Medicaid)" }, "status": "partial" }
+          {
+            "en": "Dental, vision, hearing",
+            "es": "Dental, visión, audición"
+          },
+          {
+            "value": {
+              "en": "Limited (Advantage plans only; not Original Medicare)",
+              "es": "Limitado (solo planes Advantage; no Medicare Original)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "Varies by state (optional Medicaid benefit)",
+              "es": "Varía por estado (beneficio opcional de Medicaid)"
+            },
+            "status": "partial"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Monthly premium (2026)", "es": "Prima mensual (2026)" },
-          { "en": "Part B: $202.90/mo (standard)", "es": "Parte B: $202.90/mes (estándar)" },
-          { "en": "Usually $0 (state funds most costs)", "es": "Generalmente $0 (el estado cubre la mayoría de los costos)" }
+          {
+            "en": "Monthly premium (2026)",
+            "es": "Prima mensual (2026)"
+          },
+          {
+            "en": "Part B: $202.90/mo (standard)",
+            "es": "Parte B: $202.90/mes (estándar)"
+          },
+          {
+            "en": "Usually $0 (state funds most costs)",
+            "es": "Generalmente $0 (el estado cubre la mayoría de los costos)"
+          }
         ]
       }
     ],
@@ -127,7 +248,6 @@
     },
     "source": "CMS.gov, Medicaid.gov mandatory-optional-benefits, Medicare.gov 2026 costs"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -145,10 +265,22 @@
         }
       ],
       "list": [
-        { "en": "Part A: Hospital, skilled nursing, hospice, home health", "es": "Parte A: Hospital, enfermería especializada, cuidados paliativos, atención domiciliaria" },
-        { "en": "Part B: Outpatient, physician, preventive, DME ($202.90/month premium in 2026)", "es": "Parte B: Ambulatorio, médico, preventivo, equipo médico ($202.90/mes de prima en 2026)" },
-        { "en": "Part C (Medicare Advantage): Bundles A+B through private plans, often includes extras", "es": "Parte C (Medicare Advantage): Agrupa A+B a través de planes privados, a menudo incluye extras" },
-        { "en": "Part D: Prescription drugs, $2,100 OOP cap, $35/month insulin cap (IRA 2022)", "es": "Parte D: Medicamentos recetados, tope de $2,100, tope de $35/mes para insulina (IRA 2022)" }
+        {
+          "en": "Part A: Hospital, skilled nursing, hospice, home health",
+          "es": "Parte A: Hospital, enfermería especializada, cuidados paliativos, atención domiciliaria"
+        },
+        {
+          "en": "Part B: Outpatient, physician, preventive, DME ($202.90/month premium in 2026)",
+          "es": "Parte B: Ambulatorio, médico, preventivo, equipo médico ($202.90/mes de prima en 2026)"
+        },
+        {
+          "en": "Part C (Medicare Advantage): Bundles A+B through private plans, often includes extras",
+          "es": "Parte C (Medicare Advantage): Agrupa A+B a través de planes privados, a menudo incluye extras"
+        },
+        {
+          "en": "Part D: Prescription drugs, $2,100 OOP cap, $35/month insulin cap (IRA 2022)",
+          "es": "Parte D: Medicamentos recetados, tope de $2,100, tope de $35/mes para insulina (IRA 2022)"
+        }
       ]
     },
     {
@@ -167,10 +299,22 @@
         }
       ],
       "list": [
-        { "en": "Mandatory: Inpatient hospital, outpatient hospital, physician, lab/X-ray, nursing facility, EPSDT for children, home health, FQHC services", "es": "Obligatorio: Hospital interno, hospital ambulatorio, médico, laboratorio/rayos X, instalación de enfermería, EPSDT para niños, atención domiciliaria, servicios de FQHC" },
-        { "en": "Optional (covered in most or all states): Prescription drugs, dental (adult), vision (adult), physical therapy, HCBS waivers", "es": "Opcional (cubierto en la mayoría o todos los estados): Medicamentos recetados, dental (adulto), visión (adulto), fisioterapia, exenciones HCBS" },
-        { "en": "Long-term care: Medicaid pays for nursing home stays and home-based services indefinitely (Medicare covers only short-term skilled nursing)", "es": "Cuidado a largo plazo: Medicaid paga estadías en residencias de ancianos y servicios domiciliarios indefinidamente (Medicare solo cubre enfermería especializada a corto plazo)" },
-        { "en": "Cost-sharing: Most Medicaid beneficiaries pay $0 in premiums, with small or no copays depending on category", "es": "Participación en costos: La mayoría de los beneficiarios de Medicaid pagan $0 en primas, con copagos pequeños o nulos dependiendo de la categoría" }
+        {
+          "en": "Mandatory: Inpatient hospital, outpatient hospital, physician, lab/X-ray, nursing facility, EPSDT for children, home health, FQHC services",
+          "es": "Obligatorio: Hospital interno, hospital ambulatorio, médico, laboratorio/rayos X, instalación de enfermería, EPSDT para niños, atención domiciliaria, servicios de FQHC"
+        },
+        {
+          "en": "Optional (covered in most or all states): Prescription drugs, dental (adult), vision (adult), physical therapy, HCBS waivers",
+          "es": "Opcional (cubierto en la mayoría o todos los estados): Medicamentos recetados, dental (adulto), visión (adulto), fisioterapia, exenciones HCBS"
+        },
+        {
+          "en": "Long-term care: Medicaid pays for nursing home stays and home-based services indefinitely (Medicare covers only short-term skilled nursing)",
+          "es": "Cuidado a largo plazo: Medicaid paga estadías en residencias de ancianos y servicios domiciliarios indefinidamente (Medicare solo cubre enfermería especializada a corto plazo)"
+        },
+        {
+          "en": "Cost-sharing: Most Medicaid beneficiaries pay $0 in premiums, with small or no copays depending on category",
+          "es": "Participación en costos: La mayoría de los beneficiarios de Medicaid pagan $0 en primas, con copagos pequeños o nulos dependiendo de la categoría"
+        }
       ]
     },
     {
@@ -190,15 +334,78 @@
           "es": "Brechas clave de cobertura: Medicare vs Medicaid lado a lado"
         },
         "headers": {
-          "en": ["Service", "Medicare (Original)", "Medicaid (typical expansion state)"],
-          "es": ["Servicio", "Medicare (Original)", "Medicaid (estado de expansión típico)"]
+          "en": [
+            "Service",
+            "Medicare (Original)",
+            "Medicaid (typical expansion state)"
+          ],
+          "es": [
+            "Servicio",
+            "Medicare (Original)",
+            "Medicaid (estado de expansión típico)"
+          ]
         },
         "rows": [
-          { "en": ["Long-term nursing home", "Up to 100 days (skilled only)", "Unlimited (if eligible)"], "es": ["Residencia de ancianos a largo plazo", "Hasta 100 días (especializada)", "Ilimitado (si es elegible)"] },
-          { "en": ["Adult dental", "Not covered", "Covered in most states"], "es": ["Dental para adultos", "No cubierto", "Cubierto en la mayoría de estados"] },
-          { "en": ["Monthly premium", "$202.90 Part B (2026)", "$0 in most cases"], "es": ["Prima mensual", "$202.90 Parte B (2026)", "$0 en la mayoría de casos"] },
-          { "en": ["OOP maximum", "None on Original Medicare", "Very limited cost-sharing"], "es": ["Máximo de gastos propios", "Ninguno en Medicare Original", "Participación en costos muy limitada"] },
-          { "en": ["Home and community-based services", "Limited home health only", "HCBS waivers available in most states"], "es": ["Servicios domiciliarios y comunitarios", "Solo atención domiciliaria limitada", "Exenciones HCBS disponibles en la mayoría de estados"] }
+          {
+            "en": [
+              "Long-term nursing home",
+              "Up to 100 days (skilled only)",
+              "Unlimited (if eligible)"
+            ],
+            "es": [
+              "Residencia de ancianos a largo plazo",
+              "Hasta 100 días (especializada)",
+              "Ilimitado (si es elegible)"
+            ]
+          },
+          {
+            "en": [
+              "Adult dental",
+              "Not covered",
+              "Covered in most states"
+            ],
+            "es": [
+              "Dental para adultos",
+              "No cubierto",
+              "Cubierto en la mayoría de estados"
+            ]
+          },
+          {
+            "en": [
+              "Monthly premium",
+              "$202.90 Part B (2026)",
+              "$0 in most cases"
+            ],
+            "es": [
+              "Prima mensual",
+              "$202.90 Parte B (2026)",
+              "$0 en la mayoría de casos"
+            ]
+          },
+          {
+            "en": [
+              "OOP maximum",
+              "None on Original Medicare",
+              "Very limited cost-sharing"
+            ],
+            "es": [
+              "Máximo de gastos propios",
+              "Ninguno en Medicare Original",
+              "Participación en costos muy limitada"
+            ]
+          },
+          {
+            "en": [
+              "Home and community-based services",
+              "Limited home health only",
+              "HCBS waivers available in most states"
+            ],
+            "es": [
+              "Servicios domiciliarios y comunitarios",
+              "Solo atención domiciliaria limitada",
+              "Exenciones HCBS disponibles en la mayoría de estados"
+            ]
+          }
         ],
         "footnote": {
           "en": "Original Medicare has no annual out-of-pocket maximum. Medicare Advantage plans are required to have an out-of-pocket maximum (MOOP) of up to $9,250 in 2026.",
@@ -223,10 +430,22 @@
         }
       ],
       "list": [
-        { "en": "Medicare Savings Programs: Medicaid pays Medicare Part B premium ($202.90/month), deductibles, and coinsurance for qualifying dual-eligibles", "es": "Programas de Ahorro de Medicare: Medicaid paga la prima de la Parte B de Medicare ($202.90/mes), deducibles y coseguros para elegibles duales que califican" },
-        { "en": "Extra Help (LIS): Dual-eligible individuals automatically qualify for Medicare Part D Extra Help, covering most drug costs", "es": "Ayuda Adicional (LIS): Los individuos dualmente elegibles califican automáticamente para la Ayuda Adicional de la Parte D de Medicare, cubriendo la mayoría de los costos de medicamentos" },
-        { "en": "D-SNPs: Special Medicare Advantage plans that coordinate Medicare and Medicaid in one plan", "es": "D-SNP: Planes especiales de Medicare Advantage que coordinan Medicare y Medicaid en un solo plan" },
-        { "en": "To find out if you qualify for both, use the BenefitsUSA screener — Medicaid has no enrollment period and is year-round", "es": "Para saber si califica para ambos, use el evaluador de BenefitsUSA — Medicaid no tiene período de inscripción y es durante todo el año" }
+        {
+          "en": "Medicare Savings Programs: Medicaid pays Medicare Part B premium ($202.90/month), deductibles, and coinsurance for qualifying dual-eligibles",
+          "es": "Programas de Ahorro de Medicare: Medicaid paga la prima de la Parte B de Medicare ($202.90/mes), deducibles y coseguros para elegibles duales que califican"
+        },
+        {
+          "en": "Extra Help (LIS): Dual-eligible individuals automatically qualify for Medicare Part D Extra Help, covering most drug costs",
+          "es": "Ayuda Adicional (LIS): Los individuos dualmente elegibles califican automáticamente para la Ayuda Adicional de la Parte D de Medicare, cubriendo la mayoría de los costos de medicamentos"
+        },
+        {
+          "en": "D-SNPs: Special Medicare Advantage plans that coordinate Medicare and Medicaid in one plan",
+          "es": "D-SNP: Planes especiales de Medicare Advantage que coordinan Medicare y Medicaid en un solo plan"
+        },
+        {
+          "en": "To find out if you qualify for both, use the BenefitsUSA screener — Medicaid has no enrollment period and is year-round",
+          "es": "Para saber si califica para ambos, use el evaluador de BenefitsUSA — Medicaid no tiene período de inscripción y es durante todo el año"
+        }
       ]
     },
     {
@@ -246,7 +465,6 @@
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -317,10 +535,8 @@
       }
     ]
   },
-
   "keyTerms": {
     "en": [
-      "dual-eligible",
       "Medicare Parts A B C D",
       "Medicaid mandatory benefits",
       "D-SNP dual special needs plan",
@@ -336,7 +552,6 @@
       "expansion de Medicaid 138% FPL"
     ]
   },
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -362,43 +577,80 @@
     ],
     "govStartingUrl": "https://www.ssa.gov/medicare/",
     "documentsNeeded": [
-      { "en": "Social Security card or number", "es": "Tarjeta o número del Seguro Social" },
-      { "en": "Proof of age (birth certificate, passport)", "es": "Prueba de edad (certificado de nacimiento, pasaporte)" },
-      { "en": "Proof of income (tax returns, pay stubs) for Medicaid", "es": "Prueba de ingresos (declaraciones de impuestos, talones de pago) para Medicaid" },
-      { "en": "Proof of U.S. citizenship or lawful presence", "es": "Prueba de ciudadanía estadounidense o presencia legal" },
-      { "en": "SSDI award letter if applying for Medicare under disability", "es": "Carta de adjudicación de SSDI si solicita Medicare por discapacidad" }
+      {
+        "en": "Social Security card or number",
+        "es": "Tarjeta o número del Seguro Social"
+      },
+      {
+        "en": "Proof of age (birth certificate, passport)",
+        "es": "Prueba de edad (certificado de nacimiento, pasaporte)"
+      },
+      {
+        "en": "Proof of income (tax returns, pay stubs) for Medicaid",
+        "es": "Prueba de ingresos (declaraciones de impuestos, talones de pago) para Medicaid"
+      },
+      {
+        "en": "Proof of U.S. citizenship or lawful presence",
+        "es": "Prueba de ciudadanía estadounidense o presencia legal"
+      },
+      {
+        "en": "SSDI award letter if applying for Medicare under disability",
+        "es": "Carta de adjudicación de SSDI si solicita Medicare por discapacidad"
+      }
     ],
     "commonDenialReasons": [
-      { "en": "Medicaid denial: income too high (above state threshold, or above 138% FPL in expansion states)", "es": "Denegacion de Medicaid: ingresos demasiado altos (por encima del umbral del estado, o por encima del 138% del FPL en estados de expansión)" },
-      { "en": "Medicaid denial: not a U.S. citizen or qualified non-citizen (immigration status matters)", "es": "Denegacion de Medicaid: no es ciudadano estadounidense o no-ciudadano calificado (el estatus migratorio importa)" },
-      { "en": "Medicare Part A denial: insufficient work credits (fewer than 40 quarters — premium Part A is available)", "es": "Denegacion de Medicare Parte A: créditos de trabajo insuficientes (menos de 40 trimestres — la Parte A con prima está disponible)" },
-      { "en": "Disability Medicare denial: SSDI not yet 24 months (must wait unless ALS or ESRD)", "es": "Denegacion de Medicare por discapacidad: SSDI aún no alcanza los 24 meses (debe esperar a menos que sea ELA o ESRD)" }
+      {
+        "en": "Medicaid denial: income too high (above state threshold, or above 138% FPL in expansion states)",
+        "es": "Denegacion de Medicaid: ingresos demasiado altos (por encima del umbral del estado, o por encima del 138% del FPL en estados de expansión)"
+      },
+      {
+        "en": "Medicaid denial: not a U.S. citizen or qualified non-citizen (immigration status matters)",
+        "es": "Denegacion de Medicaid: no es ciudadano estadounidense o no-ciudadano calificado (el estatus migratorio importa)"
+      },
+      {
+        "en": "Medicare Part A denial: insufficient work credits (fewer than 40 quarters — premium Part A is available)",
+        "es": "Denegacion de Medicare Parte A: créditos de trabajo insuficientes (menos de 40 trimestres — la Parte A con prima está disponible)"
+      },
+      {
+        "en": "Disability Medicare denial: SSDI not yet 24 months (must wait unless ALS or ESRD)",
+        "es": "Denegacion de Medicare por discapacidad: SSDI aún no alcanza los 24 meses (debe esperar a menos que sea ELA o ESRD)"
+      }
     ],
     "deadline": {
       "en": "Medicare: Initial Enrollment Period is the 7-month window around your 65th birthday. Medicaid: no enrollment period, apply any time.",
       "es": "Medicare: El Período de Inscripción Inicial es la ventana de 7 meses alrededor de su cumpleaños 65. Medicaid: sin período de inscripción, solicite en cualquier momento."
     }
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Check Your Eligibility", "es": "Verifique su Elegibilidad" },
+      "label": {
+        "en": "Check Your Eligibility",
+        "es": "Verifique su Elegibilidad"
+      },
       "href": "/screener"
     },
     {
-      "label": { "en": "Medicare Eligibility Requirements", "es": "Requisitos de Elegibilidad de Medicare" },
+      "label": {
+        "en": "Medicare Eligibility Requirements",
+        "es": "Requisitos de Elegibilidad de Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "Medicaid Income Limits by State", "es": "Límites de Ingresos de Medicaid por Estado" },
+      "label": {
+        "en": "Medicaid Income Limits by State",
+        "es": "Límites de Ingresos de Medicaid por Estado"
+      },
       "href": "/medicaid-income-limits"
     },
     {
-      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel de Pobreza Federal 2026" },
+      "label": {
+        "en": "2026 Federal Poverty Level Chart",
+        "es": "Tabla del Nivel de Pobreza Federal 2026"
+      },
       "href": "/federal-poverty-level"
     }
   ],
-
   "sources": [
     {
       "name": "CMS: 2026 Medicare Parts A and B Premiums and Deductibles",
