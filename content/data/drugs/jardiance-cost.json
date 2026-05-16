@@ -641,5 +641,100 @@
         "es": "Requisito de CMS para que los hospitales publiquen archivos de precios legibles por maquina; fuente de datos de cargos de instalacion de hospitalizacion para Jardiance y otros medicamentos orales facturados durante estancias hospitalarias."
       }
     }
-  ]
+  ],
+  "papEligibilityTable": {
+    "caption": {
+      "en": "BI Cares Patient Assistance Program eligibility by household size (2026, 400% FPL)",
+      "es": "Elegibilidad del Programa de Asistencia al Paciente BI Cares por tamano del hogar (2026, 400% FPL)"
+    },
+    "fplPctReferenced": 400,
+    "rows": [
+      {
+        "householdSize": 1,
+        "incomeThreshold": 63840,
+        "incomeLabel": {
+          "en": "at or below $63,840",
+          "es": "igual o inferior a $63,840"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 2,
+        "incomeThreshold": 86560,
+        "incomeLabel": {
+          "en": "at or below $86,560",
+          "es": "igual o inferior a $86,560"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 3,
+        "incomeThreshold": 109280,
+        "incomeLabel": {
+          "en": "at or below $109,280",
+          "es": "igual o inferior a $109,280"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 4,
+        "incomeThreshold": 132000,
+        "incomeLabel": {
+          "en": "at or below $132,000",
+          "es": "igual o inferior a $132,000"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 5,
+        "incomeThreshold": 154720,
+        "incomeLabel": {
+          "en": "at or below $154,720",
+          "es": "igual o inferior a $154,720"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 6,
+        "incomeThreshold": 177440,
+        "incomeLabel": {
+          "en": "at or below $177,440",
+          "es": "igual o inferior a $177,440"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 7,
+        "incomeThreshold": 200160,
+        "incomeLabel": {
+          "en": "at or below $200,160",
+          "es": "igual o inferior a $200,160"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 8,
+        "incomeThreshold": 222880,
+        "incomeLabel": {
+          "en": "at or below $222,880",
+          "es": "igual o inferior a $222,880"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": "each additional",
+        "incomeThreshold": 22720,
+        "incomeLabel": {
+          "en": "add $22,720 per additional person",
+          "es": "agregue $22,720 por cada persona adicional"
+        },
+        "fplPct": 400
+      }
+    ],
+    "footnote": {
+      "en": "BI Cares does not publish its income threshold publicly. The 400% FPL figure is derived from BI Cares program documentation and is consistent with figures cited by RxAssist and NeedyMeds. Actual eligibility is confirmed during the application review. Call 1-800-556-8317 for current income limits. 2026 FPL figures per HHS effective January 2026.",
+      "es": "BI Cares no publica su umbral de ingresos publicamente. La cifra del 400% FPL se deriva de la documentacion del programa BI Cares y es consistente con las cifras citadas por RxAssist y NeedyMeds. La elegibilidad real se confirma durante la revision de la solicitud. Llame al 1-800-556-8317 para conocer los limites de ingresos actuales. Cifras FPL 2026 segun HHS efectivo enero 2026."
+    },
+    "source": "HHS 2026 Federal Poverty Level Guidelines, NeedyMeds.org, RxAssist.org/search/prog-details?program_Id=14"
+  }
 }

@@ -1,0 +1,465 @@
+{
+  "slug": "do-i-need-medicare-if-i-have-employer-insurance",
+  "subtype": "coverage",
+  "pageType": "coverage",
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": ["medicare with employer insurance", "can I delay medicare part b", "medicare employer coverage 2026", "medicare secondary payer", "do I need medicare if I have work insurance"],
+    "es": ["medicare con seguro del empleador", "retrasar medicare parte b", "cobertura medicare empleador 2026", "medicare pagador secundario"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "question": {
+    "en": "Do I Need Medicare If I Have Employer Insurance?",
+    "es": "¿Necesito Medicare si tengo seguro del empleador?"
+  },
+  "shortAnswer": {
+    "en": "It depends on your employer's size and your specific situation.",
+    "es": "Depende del tamaño de su empleador y su situación específica."
+  },
+  "fullAnswer": {
+    "en": "It depends primarily on your employer's size. Workers at companies with 20 or more employees can delay Medicare Part B without penalty while their employer plan is active, because the employer plan pays first (primary) and Medicare would be secondary. Workers at companies with fewer than 20 employees must enroll in Medicare at 65 or risk major coverage gaps, because Medicare becomes primary and the small employer plan pays only what Medicare would have paid. Medicare Part A (hospital coverage) is free for most people who worked 40 or more quarters, so enrolling in Part A at 65 is almost always worthwhile even with employer coverage. The one critical exception: if you or your spouse contributes to a Health Savings Account (HSA), enrolling in any part of Medicare stops new HSA contributions permanently.",
+    "es": "Depende principalmente del tamaño de su empleador. Los trabajadores en empresas con 20 o mas empleados pueden retrasar Medicare Parte B sin penalidad mientras su plan del empleador este activo, porque el plan del empleador paga primero (primario) y Medicare seria secundario. Los trabajadores en empresas con menos de 20 empleados deben inscribirse en Medicare a los 65 anos o arriesgar brechas de cobertura importantes, porque Medicare se convierte en primario y el plan del empleador pequeno paga solo lo que Medicare hubiera pagado. Medicare Parte A (cobertura hospitalaria) es gratuita para la mayoria de las personas que trabajaron 40 o mas trimestres, por lo que inscribirse en la Parte A a los 65 anos casi siempre vale la pena incluso con cobertura del empleador. La excepcion critica: si usted o su conyuge contribuye a una Cuenta de Ahorros para la Salud (HSA), inscribirse en cualquier parte de Medicare detiene las nuevas contribuciones a la HSA de forma permanente."
+  },
+  "category": "Medicare",
+  "topic": "Medicare and Employer Insurance Coordination",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "7 min read",
+
+  "meta": {
+    "title": {
+      "en": "Do I Need Medicare If I Have Employer Insurance? (2026) | CoveredUSA",
+      "es": "¿Necesito Medicare si tengo seguro del empleador? (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Large employer (20+ employees): you can delay Medicare Part B. Small employer (under 20): Medicare is primary and you must enroll. 2026 rules, HSA impact, and penalties explained.",
+      "es": "Empleador grande (20+ empleados): puede retrasar Medicare Parte B. Empleador pequeno (menos de 20): Medicare es primario y debe inscribirse. Reglas 2026, impacto en HSA y penalidades explicadas."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Do I Need Medicare If I Have Employer Insurance? (2026)",
+      "es": "¿Necesito Medicare si tengo seguro del empleador? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Turning 65 while still working is increasingly common. About 20 percent of Americans 65 and older were still in the workforce as of 2024, and many of them face the same question: Medicare letters are arriving in the mail, but your employer plan still covers you. Do you have to sign up? The honest answer is: it depends on one number more than anything else, the size of your employer.",
+      "es": "Llegar a los 65 anos mientras aun se trabaja es cada vez mas comun. Alrededor del 20 por ciento de los estadounidenses de 65 anos o mas seguian en la fuerza laboral en 2024, y muchos de ellos enfrentan la misma pregunta: las cartas de Medicare llegan por correo, pero su plan del empleador aun lo cubre. ¿Tiene que inscribirse? La respuesta honesta es: depende de un numero mas que de cualquier otra cosa, el tamano de su empleador."
+    },
+    {
+      "en": "This guide lays out the 2026 rules for coordinating Medicare with employer coverage. It covers the 20-employee threshold, Part A vs Part B decisions, HSA conflicts, COBRA traps, the 8-month Special Enrollment Period, and the permanent late-enrollment penalties you want to avoid.",
+      "es": "Esta guia establece las reglas de 2026 para coordinar Medicare con la cobertura del empleador. Cubre el umbral de 20 empleados, decisiones de Parte A versus Parte B, conflictos con HSA, trampas de COBRA, el Periodo de Inscripcion Especial de 8 meses y las penalidades permanentes por inscripcion tardia que desea evitar."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Employer Size", "Who Pays First (Primary)", "Can You Delay Part B?", "Risk If You Skip Medicare"],
+      "es": ["Tamano del empleador", "Quien paga primero (primario)", "¿Puede retrasar la Parte B?", "Riesgo si omite Medicare"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "20+ employees (large employer)", "es": "20+ empleados (empleador grande)" },
+          { "value": { "en": "Employer plan is primary", "es": "El plan del empleador es primario" }, "status": "yes" },
+          { "value": { "en": "Yes, delay Part B penalty-free", "es": "Si, retrasar Parte B sin penalidad" }, "status": "yes" },
+          { "en": "Minimal if employer plan is creditable; enroll within 8 months of losing coverage", "es": "Minimo si el plan del empleador es acreditable; inscribirse dentro de 8 meses de perder cobertura" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Under 20 employees (small employer)", "es": "Menos de 20 empleados (empleador pequeno)" },
+          { "value": { "en": "Medicare is primary", "es": "Medicare es primario" }, "status": "no" },
+          { "value": { "en": "No, must enroll or face gaps", "es": "No, debe inscribirse o enfrentar brechas" }, "status": "no" },
+          { "en": "Major: small plan pays only what Medicare would have paid, leaving large unpaid balances", "es": "Mayor: el plan pequeno paga solo lo que Medicare hubiera pagado, dejando grandes saldos sin pagar" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Part A (hospital coverage)", "es": "Medicare Parte A (cobertura hospitalaria)" },
+          { "value": { "en": "Enroll at 65 in most cases (free)", "es": "Inscribirse a los 65 en la mayoria de los casos (gratis)" }, "status": "yes" },
+          { "value": { "en": "Delay only if actively contributing to HSA", "es": "Retrasar solo si contribuye activamente a HSA" }, "status": "partial" },
+          { "en": "Very low: Part A is free for 40+ quarter workers; no premium cost to enrolling", "es": "Muy bajo: Parte A es gratuita para trabajadores con 40+ trimestres; sin costo de prima por inscribirse" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "COBRA continuation coverage", "es": "Cobertura de continuacion COBRA" },
+          { "value": { "en": "Not creditable for Medicare delay", "es": "No es acreditable para retraso de Medicare" }, "status": "no" },
+          { "value": { "en": "No, COBRA does not count as qualifying coverage", "es": "No, COBRA no cuenta como cobertura calificada" }, "status": "no" },
+          { "en": "High: using COBRA instead of enrolling in Medicare at 65 triggers permanent Part B and Part D penalties", "es": "Alto: usar COBRA en lugar de inscribirse en Medicare a los 65 desencadena penalidades permanentes de Parte B y Parte D" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "The Medicare Secondary Payer (MSP) rules at CMS.gov determine which plan pays first. Employer size is counted by total employees across all locations nationwide, not just your specific worksite. Retiree health coverage and COBRA are not considered active employer coverage for Medicare MSP purposes.",
+      "es": "Las reglas del Pagador Secundario de Medicare (MSP) en CMS.gov determinan cual plan paga primero. El tamano del empleador se cuenta por el total de empleados en todas las ubicaciones a nivel nacional, no solo en su lugar de trabajo especifico. La cobertura de salud para jubilados y COBRA no se consideran cobertura activa del empleador para propositos de MSP de Medicare."
+    },
+    "source": "CMS Medicare Secondary Payer Manual, Chapter 1; Medicare.gov; CMS MSP Fact Sheet 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: The 20-Employee Rule Determines Everything",
+        "es": "Respuesta directa: la regla de 20 empleados determina todo"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on one number: your employer's total employee count. Large employers (20 or more employees nationwide): the employer plan is primary and Medicare is secondary. You can delay Medicare Part B without penalty. Small employers (under 20 employees): Medicare is primary. Skipping Medicare causes the small plan to pay as if Medicare already paid, leaving major unpaid balances. Employer size is counted across all company locations, not just your worksite.",
+          "es": "Depende de un numero: el total de empleados de su empleador. Empleadores grandes (20 o mas empleados a nivel nacional): el plan del empleador es primario y Medicare es secundario. Puede retrasar Medicare Parte B sin penalidad. Empleadores pequenos (menos de 20 empleados): Medicare es primario. Omitir Medicare hace que el plan pequeno pague como si Medicare ya hubiera pagado, dejando grandes saldos sin cubrir. El tamano se cuenta en todas las ubicaciones de la empresa."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicare Part A: Enroll at 65 in Most Cases",
+        "es": "Medicare Parte A: inscribirse a los 65 en la mayoria de los casos"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Part A covers inpatient hospital stays, skilled nursing facility care following a hospital admission, and hospice. Part A is free for anyone who worked 40 or more quarters (10 years) and paid Medicare taxes. Because there is no premium, enrolling in Part A at 65 almost never costs anything and provides a backup for hospital stays even when your employer plan is active.",
+          "es": "Medicare Parte A cubre estancias hospitalarias, atencion en instalaciones de enfermeria especializada tras una hospitalizacion y hospicios. La Parte A es gratuita para cualquiera que haya trabajado 40 o mas trimestres (10 anos) y pagado impuestos de Medicare. Como no hay prima, inscribirse en la Parte A a los 65 anos casi nunca cuesta nada y proporciona respaldo para hospitalizaciones incluso cuando su plan del empleador esta activo."
+        },
+        {
+          "en": "The one situation where you should NOT enroll in Part A at 65: if you or your spouse is actively contributing to a Health Savings Account (HSA). Enrolling in Medicare Part A makes you ineligible to contribute new money to an HSA starting six months before the month you turn 65 (because Social Security enrollment in some cases triggers automatic retroactive Part A). If preserving HSA contributions is a priority, delay both Part A enrollment and Social Security benefits until you stop working.",
+          "es": "La unica situacion en que NO debe inscribirse en la Parte A a los 65 anos: si usted o su conyuge esta contribuyendo activamente a una Cuenta de Ahorros para la Salud (HSA). Inscribirse en Medicare Parte A lo hace inelegible para contribuir nuevos fondos a una HSA a partir de seis meses antes del mes en que cumpla 65 anos. Si preservar las contribuciones a la HSA es una prioridad, retrase tanto la inscripcion en la Parte A como los beneficios del Seguro Social hasta que deje de trabajar."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicare Part B: When to Delay and When to Enroll Now",
+        "es": "Medicare Parte B: cuando retrasar y cuando inscribirse ahora"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Part B covers outpatient care, physician visits, preventive services, durable medical equipment, and most non-hospital services. The 2026 standard Part B premium is $202.90 per month (higher earners pay more under IRMAA income brackets). Because Part B has a monthly cost, whether to enroll at 65 depends on whether your employer plan qualifies as creditable coverage.",
+          "es": "Medicare Parte B cubre atencion ambulatoria, visitas al medico, servicios preventivos, equipo medico duradero y la mayoria de los servicios no hospitalarios. La prima estandar de la Parte B en 2026 es de $202.90 por mes (los que ganan mas pagan mas bajo los tramos de ingresos IRMAA). Dado que la Parte B tiene un costo mensual, la decision de inscribirse a los 65 depende de si su plan del empleador califica como cobertura acreditable."
+        },
+        {
+          "en": "If you work for a large employer (20 or more employees) and the employer health plan covers you, that plan is considered creditable coverage. You can defer Part B without penalty and avoid the $202.90 per month premium for as long as you remain on active employer coverage. When your employer coverage ends (due to retirement, job loss, or reduced hours), you have an 8-month Special Enrollment Period to sign up for Part B without penalty. If you work for a small employer (fewer than 20 employees), the employer plan is NOT creditable for Part B delay purposes. Medicare should be your primary payer. Delaying Part B in this scenario is almost always a mistake.",
+          "es": "Si trabaja para un empleador grande (20 o mas empleados) y el plan de salud del empleador lo cubre, ese plan se considera cobertura acreditable. Puede diferir la Parte B sin penalidad y evitar la prima de $202.90 por mes mientras permanezca en cobertura activa del empleador. Cuando su cobertura del empleador termine, tiene un Periodo de Inscripcion Especial de 8 meses para inscribirse en la Parte B sin penalidad. Si trabaja para un empleador pequeno (menos de 20 empleados), el plan del empleador NO es acreditable para retrasar la Parte B. Medicare deberia ser su pagador principal. Retrasar la Parte B en este escenario es casi siempre un error."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "HSA Conflict: Pause Contributions Before Enrolling in Medicare",
+        "es": "Conflicto con HSA: pause las contribuciones antes de inscribirse en Medicare"
+      },
+      "paragraphs": [
+        {
+          "en": "A Health Savings Account (HSA) allows workers enrolled in a High-Deductible Health Plan (HDHP) to make pre-tax contributions for medical expenses. Federal law prohibits contributing to an HSA if you are enrolled in Medicare Part A or Part B. This applies to you AND your spouse's contributions if they are on the HSA-qualified plan.",
+          "es": "Una Cuenta de Ahorros para la Salud (HSA) permite a los trabajadores inscritos en un Plan de Salud con Deducible Alto (HDHP) hacer contribuciones antes de impuestos para gastos medicos. La ley federal prohibe contribuir a una HSA si esta inscrito en Medicare Parte A o Parte B. Esto se aplica a las contribuciones suyas Y de su conyuge si estan en el plan calificado para HSA."
+        },
+        {
+          "en": "The trap: Medicare enrollment can be retroactive. When you apply for Social Security benefits, Medicare Part A enrollment is automatically triggered, and Part A coverage is backdated up to 6 months. If you were contributing to an HSA during those 6 months, you have an excess contribution problem that requires you to withdraw the contributions plus pay excise tax (a 6 percent penalty on excess amounts). The safest approach: stop HSA contributions at least 6 months before you plan to enroll in Medicare or claim Social Security benefits. The IRS Publication 969 at irs.gov covers HSA eligibility rules in detail.",
+          "es": "La trampa: la inscripcion en Medicare puede ser retroactiva. Cuando solicita beneficios del Seguro Social, la inscripcion en Medicare Parte A se activa automaticamente, y la cobertura de la Parte A se retrodata hasta 6 meses. Si estaba contribuyendo a una HSA durante esos 6 meses, tiene un problema de contribucion excesiva que le obliga a retirar las contribuciones mas pagar el impuesto especial (una penalidad del 6 por ciento sobre los montos en exceso). El enfoque mas seguro: deje de hacer contribuciones a la HSA al menos 6 meses antes de planear inscribirse en Medicare o solicitar beneficios del Seguro Social."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "COBRA Is Not Creditable Coverage: Do Not Use It to Delay Medicare",
+        "es": "COBRA no es cobertura acreditable: no lo use para retrasar Medicare"
+      },
+      "paragraphs": [
+        {
+          "en": "COBRA (Consolidated Omnibus Budget Reconciliation Act) lets workers continue their employer group health plan for up to 18 months after leaving a job by paying the full premium themselves (typically $500 to $700 per month for a single person in 2026). COBRA feels like employer coverage but it is NOT treated as active employer coverage for Medicare purposes. CMS classifies COBRA as a continuation of coverage, not active group health plan coverage.",
+          "es": "COBRA (Ley Consolidada de Reconciliacion Presupuestaria Omnibus) permite a los trabajadores continuar su plan de salud grupal del empleador por hasta 18 meses despues de dejar un trabajo pagando la prima completa ellos mismos (tipicamente $500 a $700 por mes para una persona soltera en 2026). COBRA parece cobertura del empleador pero NO se trata como cobertura activa del empleador para propositos de Medicare. CMS clasifica COBRA como una continuacion de cobertura, no como cobertura activa del plan de salud grupal."
+        },
+        {
+          "en": "The consequence: if your employer coverage ends and you go on COBRA instead of enrolling in Medicare within 8 months, your 8-month Special Enrollment Period clock keeps ticking. When COBRA eventually ends, you cannot use it as justification for a new SEP. You will be forced to wait for the General Enrollment Period (January 1 through March 31 each year) and face a permanent Part B late-enrollment penalty of 10 percent per year you were without Part B, plus a permanent Part D penalty of 1 percent per month without creditable drug coverage.",
+          "es": "La consecuencia: si su cobertura del empleador termina y pasa a COBRA en lugar de inscribirse en Medicare dentro de 8 meses, su periodo de inscripcion especial de 8 meses sigue corriendo. Cuando COBRA eventualmente termine, no puede usarlo como justificacion para un nuevo SEP. Tendra que esperar el Periodo de Inscripcion General (del 1 de enero al 31 de marzo de cada ano) y enfrentar una penalidad permanente de inscripcion tardia de la Parte B del 10 por ciento por cada ano sin Parte B, mas una penalidad permanente de la Parte D del 1 por ciento por mes sin cobertura de medicamentos acreditable."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The 8-Month Special Enrollment Period When Employer Coverage Ends",
+        "es": "El Periodo de Inscripcion Especial de 8 meses cuando termina la cobertura del empleador"
+      },
+      "paragraphs": [
+        {
+          "en": "When you retire or leave a job with active employer coverage (large employer, 20 or more employees), you have an 8-month Special Enrollment Period (SEP) to sign up for Medicare Part B and Part D without late penalties. The 8-month clock starts the month AFTER your employer coverage or your employment ends, whichever comes first. You do not need to wait for an Open Enrollment period.",
+          "es": "Cuando se jubila o deja un trabajo con cobertura activa del empleador (empleador grande, 20 o mas empleados), tiene un Periodo de Inscripcion Especial (SEP) de 8 meses para inscribirse en Medicare Parte B y Parte D sin penalidades por inscripcion tardia. El reloj de 8 meses comienza el mes DESPUES de que su cobertura del empleador o su empleo terminen, lo que ocurra primero. No necesita esperar un periodo de inscripcion abierta."
+        },
+        {
+          "en": "Critical point: do not wait the full 8 months. Most people should enroll in Part B and Part D within the first 2 months of the SEP to ensure continuous coverage. Starting Part B takes about 4 to 8 weeks to process, and drug coverage (Part D or Medicare Advantage) must be in place from day one of the month your employer coverage ends, or you may have a gap. Medicare.gov has the online enrollment application at medicare.gov/sign-up-change-plans/how-do-i-get-part-a-part-b.",
+          "es": "Punto critico: no espere los 8 meses completos. La mayoria de las personas deberia inscribirse en la Parte B y la Parte D dentro de los primeros 2 meses del SEP para garantizar cobertura continua. El inicio de la Parte B tarda entre 4 y 8 semanas en procesarse, y la cobertura de medicamentos (Parte D o Medicare Advantage) debe estar vigente desde el primer dia del mes en que termina la cobertura del empleador, o puede haber una brecha."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Late-Enrollment Penalties: Permanent and Significant",
+        "es": "Penalidades por inscripcion tardia: permanentes y significativas"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Part B late-enrollment penalty: 10 percent added to your Part B premium for each 12-month period you were eligible for Part B but did not enroll and did not have creditable employer coverage. The penalty is permanent, added to your premium for the rest of your life. At the 2026 standard Part B premium of $202.90 per month, a 2-year delay adds 20 percent, raising your monthly premium to about $243 per month forever.",
+          "es": "Penalidad de inscripcion tardia de Medicare Parte B: 10 por ciento agregado a su prima de Parte B por cada periodo de 12 meses en que fue elegible para la Parte B pero no se inscribio y no tenia cobertura del empleador acreditable. La penalidad es permanente, agregada a su prima por el resto de su vida. Con la prima estandar de Parte B de 2026 de $202.90 por mes, un retraso de 2 anos agrega el 20 por ciento, aumentando su prima mensual a aproximadamente $243 por mes para siempre."
+        },
+        {
+          "en": "Medicare Part D late-enrollment penalty: 1 percent of the national base beneficiary premium per month you were without creditable drug coverage after becoming Medicare-eligible. As of 2026, the national base beneficiary premium is approximately $38.99 per month, so each month of delay adds about $0.39 per month permanently. A 24-month gap adds roughly $9.36 per month to your Part D premium permanently. Creditable employer drug coverage (most large employer plans qualify) stops the clock entirely.",
+          "es": "Penalidad de inscripcion tardia de Medicare Parte D: 1 por ciento de la prima base nacional del beneficiario por mes que estuvo sin cobertura acreditable de medicamentos despues de ser elegible para Medicare. En 2026, la prima base nacional del beneficiario es aproximadamente $38.99 por mes, por lo que cada mes de retraso agrega aproximadamente $0.39 por mes permanentemente. Una brecha de 24 meses agrega aproximadamente $9.36 por mes a su prima de la Parte D permanentemente."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What to Do If You Are Still Working at 65: Step-by-Step Decision Guide",
+        "es": "Que hacer si aun trabaja a los 65 anos: guia de decision paso a paso"
+      },
+      "paragraphs": [
+        {
+          "en": "Making the right Medicare decision when you still have employer coverage takes four steps. First, confirm your employer's size. Ask your HR department: how many total employees does the company have nationwide? This is the single most important fact. Second, decide on Part A. Unless you are actively contributing to an HSA, enroll in Part A at 65 (it is free). If you are contributing to an HSA, delay Part A until you stop working and stop HSA contributions, allowing a 6-month runoff period. Third, decide on Part B. Large employer (20 or more employees) with creditable coverage: delay Part B and save the $202.90 per month premium. Small employer (under 20 employees): enroll in Part B immediately to avoid large claim gaps. Fourth, notify your employer plan. When you do enroll in Medicare, tell your employer health plan so they can coordinate benefits correctly as secondary payer.",
+          "es": "Tomar la decision correcta sobre Medicare cuando aun tiene cobertura del empleador requiere cuatro pasos. Primero, confirme el tamano de su empleador. Pregunte a su departamento de recursos humanos: cuantos empleados totales tiene la empresa a nivel nacional. Este es el dato mas importante. Segundo, decida sobre la Parte A. A menos que este contribuyendo activamente a una HSA, inscribase en la Parte A a los 65 (es gratuita). Si esta contribuyendo a una HSA, retrase la Parte A hasta que deje de trabajar y de hacer contribuciones a la HSA, permitiendo un periodo de eliminacion gradual de 6 meses. Tercero, decida sobre la Parte B. Empleador grande (20 o mas empleados) con cobertura acreditable: retrase la Parte B y ahorre la prima mensual de $202.90. Empleador pequeno (menos de 20 empleados): inscribase en la Parte B de inmediato para evitar grandes brechas en reclamaciones. Cuarto, notifique a su plan del empleador. Cuando se inscriba en Medicare, informe a su plan de salud del empleador para que puedan coordinar los beneficios correctamente como pagador secundario."
+        }
+      ],
+      "list": [
+        {
+          "en": "Step 1: Confirm employer size (total employees nationwide, not just your worksite).",
+          "es": "Paso 1: Confirme el tamano del empleador (total de empleados a nivel nacional, no solo en su lugar de trabajo)."
+        },
+        {
+          "en": "Step 2: Enroll in Part A at 65 unless actively contributing to an HSA.",
+          "es": "Paso 2: Inscribase en la Parte A a los 65 a menos que este contribuyendo activamente a una HSA."
+        },
+        {
+          "en": "Step 3: Delay Part B if large employer with creditable coverage; enroll immediately if small employer.",
+          "es": "Paso 3: Retrase la Parte B si el empleador es grande con cobertura acreditable; inscribase de inmediato si el empleador es pequeno."
+        },
+        {
+          "en": "Step 4: When employer coverage ends, enroll in Part B and Part D within 2 months (do not wait the full 8-month SEP).",
+          "es": "Paso 4: Cuando la cobertura del empleador termine, inscribase en la Parte B y la Parte D dentro de 2 meses (no espere el SEP completo de 8 meses)."
+        },
+        {
+          "en": "Step 5: Notify your employer plan of your Medicare enrollment so coordination of benefits is set up correctly.",
+          "es": "Paso 5: Notifique a su plan del empleador su inscripcion en Medicare para que la coordinacion de beneficios se configure correctamente."
+        }
+      ]
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Step 1: Confirm your employer's total headcount (call HR). Large employer = 20 or more employees nationwide. Small employer = fewer than 20.",
+        "es": "Paso 1: Confirme el total de empleados de su empleador (llame a Recursos Humanos). Empleador grande = 20 o mas empleados a nivel nacional. Empleador pequeno = menos de 20."
+      },
+      {
+        "en": "Step 2: Decide on Part A. Visit medicare.gov or call 1-800-MEDICARE (1-800-633-4227) to enroll in Part A at age 65 if you worked 40+ quarters and are not contributing to an HSA.",
+        "es": "Paso 2: Decida sobre la Parte A. Visite medicare.gov o llame al 1-800-MEDICARE (1-800-633-4227) para inscribirse en la Parte A a los 65 anos si trabajo 40+ trimestres y no esta contribuyendo a una HSA."
+      },
+      {
+        "en": "Step 3: Decide on Part B based on employer size. Large employer: defer and save the 2026 premium of $202.90/month. Small employer: enroll in Part B now at medicare.gov.",
+        "es": "Paso 3: Decida sobre la Parte B segun el tamano del empleador. Empleador grande: difiera y ahorre la prima de 2026 de $202.90/mes. Empleador pequeno: inscribase en la Parte B ahora en medicare.gov."
+      },
+      {
+        "en": "Step 4: When employer coverage ends, enroll in Part B and a Part D plan within the 8-month Special Enrollment Period. Aim to enroll within the first 60 days to avoid gaps.",
+        "es": "Paso 4: Cuando la cobertura del empleador termine, inscribase en la Parte B y un plan de Parte D dentro del Periodo de Inscripcion Especial de 8 meses. Procure inscribirse dentro de los primeros 60 dias para evitar brechas."
+      },
+      {
+        "en": "Step 5: Use the Medicare Plan Finder at medicare.gov/plan-compare to find a Part D drug plan or Medicare Advantage plan that starts when your employer coverage ends.",
+        "es": "Paso 5: Use el Buscador de Planes de Medicare en medicare.gov/plan-compare para encontrar un plan de Parte D o Medicare Advantage que comience cuando termine su cobertura del empleador."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/sign-up-change-plans/how-do-i-get-part-a-part-b",
+    "documentsNeeded": [
+      {
+        "en": "Medicare card or Medicare number (from Social Security Administration at ssa.gov)",
+        "es": "Tarjeta de Medicare o numero de Medicare (de la Administracion del Seguro Social en ssa.gov)"
+      },
+      {
+        "en": "Employer group health plan insurance card and plan summary (to verify creditable coverage status)",
+        "es": "Tarjeta del plan de salud grupal del empleador y resumen del plan (para verificar el estado de cobertura acreditable)"
+      },
+      {
+        "en": "Letter or written confirmation of when employer coverage begins and ends",
+        "es": "Carta o confirmacion escrita de cuando comienza y termina la cobertura del empleador"
+      },
+      {
+        "en": "Proof of employment or retirement date if enrolling via SEP",
+        "es": "Prueba de empleo o fecha de jubilacion si se inscribe a traves del SEP"
+      },
+      {
+        "en": "HSA account information and most recent contribution statement if HSA-eligible",
+        "es": "Informacion de cuenta HSA y estado de cuenta de contribucion mas reciente si es elegible para HSA"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Missed the 8-month Special Enrollment Period after employer coverage ended (forces General Enrollment Period and permanent penalty)",
+        "es": "Se perdio el Periodo de Inscripcion Especial de 8 meses despues de que termino la cobertura del empleador (obliga al Periodo de Inscripcion General y penalidad permanente)"
+      },
+      {
+        "en": "Treating COBRA as qualifying employer coverage for Medicare SEP purposes (COBRA is not active employer coverage)",
+        "es": "Tratar COBRA como cobertura del empleador calificada para propositos del SEP de Medicare (COBRA no es cobertura activa del empleador)"
+      },
+      {
+        "en": "Small employer plan denial for claims Medicare was supposed to pay first (avoidable by enrolling in Medicare at 65)",
+        "es": "Negacion del plan del empleador pequeno para reclamaciones que Medicare debia pagar primero (evitable inscribiendose en Medicare a los 65)"
+      },
+      {
+        "en": "HSA excise tax penalty from contributing to HSA while enrolled in retroactive Medicare Part A",
+        "es": "Penalidad de impuesto especial de HSA por contribuir a la HSA mientras estaba inscrito en Medicare Parte A retroactiva"
+      }
+    ],
+    "deadline": {
+      "en": "Medicare Initial Enrollment Period: 7 months around your 65th birthday (3 months before, the month of, 3 months after). Special Enrollment Period: 8 months after active employer coverage ends. General Enrollment Period: January 1 through March 31 each year (coverage starts July 1).",
+      "es": "Periodo de Inscripcion Inicial de Medicare: 7 meses alrededor de su cumpleanos 65 (3 meses antes, el mes del cumpleanos, 3 meses despues). Periodo de Inscripcion Especial: 8 meses despues de que termina la cobertura activa del empleador. Periodo de Inscripcion General: del 1 de enero al 31 de marzo de cada ano (la cobertura comienza el 1 de julio)."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Can I delay Medicare Part B if I have employer insurance?",
+        "answer": "Yes, but only if your employer has 20 or more employees. Large employer plans are considered creditable coverage. You can defer Part B without penalty and skip the 2026 monthly premium of $202.90 for as long as you remain on active employer coverage. When coverage ends, you have an 8-month Special Enrollment Period to sign up without penalty. If your employer has fewer than 20 employees, you should enroll in Part B at 65 because Medicare is primary and delaying creates coverage gaps."
+      },
+      {
+        "question": "What happens if I do not sign up for Medicare at 65 and I have a small employer?",
+        "answer": "For small employers (under 20 employees), Medicare is the primary payer. If you skip Medicare, your small employer plan calculates your claims as if Medicare had already paid its share, then pays only the residual. The result is large unpaid balances you must cover out of pocket. Additionally, delaying Part B when no creditable coverage exists triggers a permanent 10 percent per year late-enrollment penalty added to your Part B premium for life."
+      },
+      {
+        "question": "Can I contribute to my HSA if I am enrolled in Medicare?",
+        "answer": "No. Enrolling in Medicare Part A or Part B makes you ineligible to contribute new funds to a Health Savings Account. This is a federal prohibition under IRS rules (Publication 969). The trap is that Medicare Part A enrollment can be retroactive by up to 6 months when you claim Social Security. To protect HSA eligibility, stop all HSA contributions at least 6 months before you plan to enroll in Medicare or claim Social Security benefits."
+      },
+      {
+        "question": "Does COBRA count as employer coverage for Medicare purposes?",
+        "answer": "No. COBRA is continuation coverage, not active employer coverage. CMS does not treat COBRA as qualifying employer coverage for the Medicare Secondary Payer rules. If you use COBRA after losing your job instead of enrolling in Medicare, your 8-month Special Enrollment Period clock keeps running. When COBRA ends, you cannot start a new SEP. You will face permanent late-enrollment penalties and a wait for the General Enrollment Period (January 1 through March 31)."
+      },
+      {
+        "question": "What is the Medicare late-enrollment penalty for Part B?",
+        "answer": "The Part B late-enrollment penalty is 10 percent of the standard Part B premium for each 12-month period you were eligible but did not have Part B or creditable employer coverage. At the 2026 standard premium of $202.90 per month, a 2-year gap adds 20 percent, raising your monthly cost to about $243 permanently. The penalty never goes away. Part D carries a separate penalty of roughly 1 percent of the national base premium per month of gap."
+      },
+      {
+        "question": "What is the 8-month Special Enrollment Period for Medicare?",
+        "answer": "The 8-month Special Enrollment Period (SEP) is a window to enroll in Medicare Part B without late penalties after your active employer coverage or your employment ends, whichever comes first. The 8 months start the month after coverage or employment ends. Experts advise enrolling within the first 2 months rather than waiting the full 8, to avoid any gap between losing employer coverage and starting Medicare benefits."
+      },
+      {
+        "question": "What if my retiree health coverage allows me to delay Medicare?",
+        "answer": "Retiree coverage from a former employer is not the same as active employer group health plan coverage. Most retiree health plans require you to enroll in Medicare and make Medicare primary when you turn 65. Some retiree plans wrap around Medicare and pay cost-sharing. Check your retiree plan documents carefully: many explicitly state that you must be enrolled in Medicare Parts A and B as a condition of receiving retiree benefits. Skipping Medicare in this situation typically causes your retiree plan to deny claims."
+      },
+      {
+        "question": "How does Medicare coordinate with employer insurance when both are active?",
+        "answer": "Coordination of benefits follows the Medicare Secondary Payer (MSP) rules at cms.gov. For large employers (20 or more employees): the employer plan pays first (primary), then Medicare pays the remaining cost up to its coverage limits (secondary). For small employers (under 20 employees): Medicare pays first (primary), then the small employer plan pays second. You should notify both your employer plan and Medicare when your coverage situation changes so each knows its role in paying claims."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Puedo retrasar Medicare Parte B si tengo seguro del empleador?",
+        "answer": "Si, pero solo si su empleador tiene 20 o mas empleados. Los planes de empleadores grandes se consideran cobertura acreditable. Puede diferir la Parte B sin penalidad y evitar la prima mensual de 2026 de $202.90 mientras permanezca en cobertura activa del empleador. Cuando la cobertura termine, tiene un Periodo de Inscripcion Especial de 8 meses para inscribirse sin penalidad. Si su empleador tiene menos de 20 empleados, debe inscribirse en la Parte B a los 65 porque Medicare es primario y retrasar crea brechas de cobertura."
+      },
+      {
+        "question": "¿Que pasa si no me inscribo en Medicare a los 65 y tengo un empleador pequeno?",
+        "answer": "Para empleadores pequenos (menos de 20 empleados), Medicare es el pagador principal. Si omite Medicare, su plan del empleador pequeno calcula sus reclamaciones como si Medicare ya hubiera pagado su parte, luego paga solo el residual. El resultado son grandes saldos sin pagar que debe cubrir de su bolsillo. Ademas, retrasar la Parte B sin cobertura acreditable desencadena una penalidad permanente del 10 por ciento por ano agregada a su prima de Parte B de por vida."
+      },
+      {
+        "question": "¿Puedo contribuir a mi HSA si estoy inscrito en Medicare?",
+        "answer": "No. Inscribirse en Medicare Parte A o Parte B lo hace inelegible para contribuir nuevos fondos a una Cuenta de Ahorros para la Salud. Esta es una prohibicion federal bajo las reglas del IRS (Publicacion 969). La trampa es que la inscripcion en Medicare Parte A puede ser retroactiva hasta 6 meses cuando solicita el Seguro Social. Para proteger la elegibilidad de HSA, deje todas las contribuciones a la HSA al menos 6 meses antes de planear inscribirse en Medicare o solicitar beneficios del Seguro Social."
+      },
+      {
+        "question": "¿COBRA cuenta como cobertura del empleador para propositos de Medicare?",
+        "answer": "No. COBRA es cobertura de continuacion, no cobertura activa del empleador. CMS no trata COBRA como cobertura del empleador calificada para las reglas del Pagador Secundario de Medicare. Si usa COBRA despues de perder su trabajo en lugar de inscribirse en Medicare, su reloj del Periodo de Inscripcion Especial de 8 meses sigue corriendo. Cuando COBRA termine, no puede iniciar un nuevo SEP. Enfrentara penalidades permanentes por inscripcion tardia y una espera por el Periodo de Inscripcion General."
+      },
+      {
+        "question": "¿Cual es la penalidad de inscripcion tardia de Medicare para la Parte B?",
+        "answer": "La penalidad de inscripcion tardia de la Parte B es el 10 por ciento de la prima estandar de la Parte B por cada periodo de 12 meses que fue elegible pero no tuvo la Parte B ni cobertura acreditable del empleador. Con la prima estandar de 2026 de $202.90 por mes, una brecha de 2 anos agrega el 20 por ciento, aumentando su costo mensual a aproximadamente $243 permanentemente. La penalidad nunca desaparece."
+      },
+      {
+        "question": "¿Que es el Periodo de Inscripcion Especial de 8 meses para Medicare?",
+        "answer": "El Periodo de Inscripcion Especial (SEP) de 8 meses es una ventana para inscribirse en Medicare Parte B sin penalidades tardias despues de que su cobertura activa del empleador o su empleo terminen, lo que ocurra primero. Los 8 meses comienzan el mes despues de que la cobertura o el empleo terminen. Los expertos aconsejan inscribirse dentro de los primeros 2 meses en lugar de esperar los 8 completos, para evitar cualquier brecha."
+      },
+      {
+        "question": "¿Que pasa si mi cobertura de salud para jubilados me permite retrasar Medicare?",
+        "answer": "La cobertura para jubilados de un empleador anterior no es lo mismo que la cobertura activa del plan de salud grupal del empleador. La mayoria de los planes de salud para jubilados requieren que se inscriba en Medicare y que Medicare sea el pagador primario cuando cumpla 65 anos. Verifique los documentos de su plan de jubilacion: muchos establecen explicitamente que debe estar inscrito en Medicare Partes A y B como condicion para recibir beneficios de jubilacion."
+      },
+      {
+        "question": "¿Como coordina Medicare con el seguro del empleador cuando ambos estan activos?",
+        "answer": "La coordinacion de beneficios sigue las reglas del Pagador Secundario de Medicare (MSP) en cms.gov. Para empleadores grandes (20 o mas empleados): el plan del empleador paga primero (primario), luego Medicare paga el costo restante hasta sus limites de cobertura (secundario). Para empleadores pequenos (menos de 20 empleados): Medicare paga primero (primario), luego el plan del empleador pequeno paga segundo. Debe notificar a su plan del empleador y a Medicare cuando su situacion de cobertura cambie."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Can I Have Both Medicare and Medicaid?",
+        "es": "¿Puedo tener Medicare y Medicaid al mismo tiempo?"
+      },
+      "href": "/qa/can-i-have-both-medicare-and-medicaid"
+    },
+    {
+      "label": {
+        "en": "Medicare Advantage vs Original Medicare",
+        "es": "Medicare Advantage vs Medicare Original"
+      },
+      "href": "/qa/medicare-advantage-vs-original-medicare"
+    },
+    {
+      "label": {
+        "en": "Is Medicare Free or Does It Cost Money?",
+        "es": "¿Medicare es gratuito o tiene costo?"
+      },
+      "href": "/qa/medicare-free-or-cost"
+    },
+    {
+      "label": {
+        "en": "Check Your Medicare Eligibility",
+        "es": "Verifique su elegibilidad de Medicare"
+      },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "CMS: Medicare Secondary Payer (MSP) Overview",
+      "url": "https://www.cms.gov/medicare/coordination-of-benefits-and-recovery/coordination-of-benefits-and-recovery-overview/medicare-secondary-payer",
+      "note": {
+        "en": "Official CMS guidance on the Medicare Secondary Payer rules, employer size threshold (20 employees), and how coordination of benefits works between Medicare and group health plans.",
+        "es": "Guia oficial de CMS sobre las reglas del Pagador Secundario de Medicare, umbral de tamano del empleador (20 empleados) y como funciona la coordinacion de beneficios entre Medicare y los planes de salud grupal."
+      }
+    },
+    {
+      "name": "Medicare.gov: How Medicare Works with Other Insurance",
+      "url": "https://www.medicare.gov/basics/medicare-basics/how-medicare-works-with-other-insurance",
+      "note": {
+        "en": "Medicare's own explanation of primary vs secondary payer rules, COBRA and retiree coverage status, and the Special Enrollment Period for those with employer coverage.",
+        "es": "Explicacion propia de Medicare sobre las reglas de pagador primario versus secundario, el estado de COBRA y la cobertura para jubilados, y el Periodo de Inscripcion Especial para quienes tienen cobertura del empleador."
+      }
+    },
+    {
+      "name": "IRS Publication 969: Health Savings Accounts and Other Tax-Favored Health Plans",
+      "url": "https://www.irs.gov/publications/p969",
+      "note": {
+        "en": "IRS rules on HSA eligibility, the prohibition on HSA contributions while enrolled in Medicare, and guidance on stopping contributions before retroactive Medicare enrollment.",
+        "es": "Reglas del IRS sobre elegibilidad de HSA, la prohibicion de contribuciones a la HSA mientras esta inscrito en Medicare, y orientacion sobre detener contribuciones antes de la inscripcion retroactiva en Medicare."
+      }
+    },
+    {
+      "name": "Medicare.gov: Part B Late Enrollment Penalty",
+      "url": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
+      "note": {
+        "en": "Official description of the permanent 10 percent per year Part B penalty and the 1 percent per month Part D penalty for those who delay without creditable coverage.",
+        "es": "Descripcion oficial de la penalidad permanente del 10 por ciento por ano de la Parte B y la penalidad del 1 por ciento por mes de la Parte D para quienes retrasan sin cobertura acreditable."
+      }
+    },
+    {
+      "name": "KFF: Medicare Enrollment for People with Employer Coverage",
+      "url": "https://www.kff.org/medicare/issue-brief/medicare-and-employer-coverage/",
+      "note": {
+        "en": "KFF analysis of Medicare enrollment decisions for working-age beneficiaries, employer size rules, COBRA traps, and HSA interaction with Medicare.",
+        "es": "Analisis de KFF sobre las decisiones de inscripcion en Medicare para beneficiarios en edad de trabajar, reglas de tamano del empleador, trampas de COBRA e interaccion de HSA con Medicare."
+      }
+    }
+  ]
+}
