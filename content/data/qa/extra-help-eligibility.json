@@ -1,5 +1,5 @@
 {
-  "slug": "extra-help-eligibility-2026",
+  "slug": "extra-help-eligibility",
   "subtype": "state-eligibility",
   "topicCluster": "medicare-extra-help-eligibility",
   "pageType": "eligibility",
@@ -23,10 +23,23 @@
   "readingTime": "6 min read",
   "isLighthouse": false,
   "keyTerms": {
-    "en": ["Extra Help", "Low-Income Subsidy", "LIS", "Medicare Part D", "prescription drug subsidy", "150% FPL"],
-    "es": ["Ayuda Adicional", "Subsidio de Bajos Ingresos", "LIS", "Medicare Parte D", "subsidio de medicamentos", "150% FPL"]
+    "en": [
+      "Extra Help",
+      "Low-Income Subsidy",
+      "LIS",
+      "Medicare Part D",
+      "prescription drug subsidy",
+      "150% FPL"
+    ],
+    "es": [
+      "Ayuda Adicional",
+      "Subsidio de Bajos Ingresos",
+      "LIS",
+      "Medicare Parte D",
+      "subsidio de medicamentos",
+      "150% FPL"
+    ]
   },
-
   "meta": {
     "title": {
       "en": "Medicare Extra Help Eligibility 2026: Income and Asset Limits | CoveredUSA",
@@ -37,14 +50,12 @@
       "es": "Limite de ingresos Ayuda Adicional 2026: $23,940 soltero, $32,460 casado (150% FPL). Limite de recursos: $16,590 soltero, $33,100 casado. Vea quién califica y cómo aplicar."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Who Qualifies for Medicare Extra Help (Low-Income Subsidy) in 2026?",
       "es": "¿Quién Califica para Ayuda Adicional de Medicare (Subsidio de Bajos Ingresos) en 2026?"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicare Extra Help, also known as the Low-Income Subsidy (LIS), is a federal program that reduces out-of-pocket prescription drug costs for Medicare Part D enrollees with limited income and assets. In 2026, about 14 million Medicare beneficiaries receive this benefit, which can be worth over $5,000 per year in savings on drug premiums, deductibles, and copays.",
@@ -55,7 +66,6 @@
       "es": "La elegibilidad depende de dos pruebas: una prueba de ingresos (por debajo del 150% del Nivel Federal de Pobreza) y una prueba de recursos (por debajo de ciertos límites de activos). Muchas personas que califican nunca solicitan porque asumen que ganan demasiado. Esta página muestra los límites exactos de ingresos y activos de 2026 por tamaño de hogar para que pueda verificar la elegibilidad en minutos."
     }
   ],
-
   "householdSizeTable": {
     "caption": {
       "en": "2026 Medicare Extra Help Income Limits by Household Size (150% FPL, 48 States and D.C.)",
@@ -65,48 +75,102 @@
     "rows": [
       {
         "size": "1",
-        "incomeLimit": { "en": "$23,940/year ($1,995/month)", "es": "$23,940/año ($1,995/mes)" },
-        "notes": { "en": "Single individual", "es": "Persona soltera" }
+        "incomeLimit": {
+          "en": "$23,940/year ($1,995/month)",
+          "es": "$23,940/año ($1,995/mes)"
+        },
+        "notes": {
+          "en": "Single individual",
+          "es": "Persona soltera"
+        }
       },
       {
         "size": "2",
-        "incomeLimit": { "en": "$32,460/year ($2,705/month)", "es": "$32,460/año ($2,705/mes)" },
-        "notes": { "en": "Married couple living together", "es": "Pareja casada que vive junta" }
+        "incomeLimit": {
+          "en": "$32,460/year ($2,705/month)",
+          "es": "$32,460/año ($2,705/mes)"
+        },
+        "notes": {
+          "en": "Married couple living together",
+          "es": "Pareja casada que vive junta"
+        }
       },
       {
         "size": "3",
-        "incomeLimit": { "en": "$40,980/year ($3,415/month)", "es": "$40,980/año ($3,415/mes)" },
-        "notes": { "en": "", "es": "" }
+        "incomeLimit": {
+          "en": "$40,980/year ($3,415/month)",
+          "es": "$40,980/año ($3,415/mes)"
+        },
+        "notes": {
+          "en": "",
+          "es": ""
+        }
       },
       {
         "size": "4",
-        "incomeLimit": { "en": "$49,500/year ($4,125/month)", "es": "$49,500/año ($4,125/mes)" },
-        "notes": { "en": "", "es": "" }
+        "incomeLimit": {
+          "en": "$49,500/year ($4,125/month)",
+          "es": "$49,500/año ($4,125/mes)"
+        },
+        "notes": {
+          "en": "",
+          "es": ""
+        }
       },
       {
         "size": "5",
-        "incomeLimit": { "en": "$58,020/year ($4,835/month)", "es": "$58,020/año ($4,835/mes)" },
-        "notes": { "en": "", "es": "" }
+        "incomeLimit": {
+          "en": "$58,020/year ($4,835/month)",
+          "es": "$58,020/año ($4,835/mes)"
+        },
+        "notes": {
+          "en": "",
+          "es": ""
+        }
       },
       {
         "size": "6",
-        "incomeLimit": { "en": "$66,540/year ($5,545/month)", "es": "$66,540/año ($5,545/mes)" },
-        "notes": { "en": "", "es": "" }
+        "incomeLimit": {
+          "en": "$66,540/year ($5,545/month)",
+          "es": "$66,540/año ($5,545/mes)"
+        },
+        "notes": {
+          "en": "",
+          "es": ""
+        }
       },
       {
         "size": "7",
-        "incomeLimit": { "en": "$75,060/year ($6,255/month)", "es": "$75,060/año ($6,255/mes)" },
-        "notes": { "en": "", "es": "" }
+        "incomeLimit": {
+          "en": "$75,060/year ($6,255/month)",
+          "es": "$75,060/año ($6,255/mes)"
+        },
+        "notes": {
+          "en": "",
+          "es": ""
+        }
       },
       {
         "size": "8",
-        "incomeLimit": { "en": "$83,580/year ($6,965/month)", "es": "$83,580/año ($6,965/mes)" },
-        "notes": { "en": "", "es": "" }
+        "incomeLimit": {
+          "en": "$83,580/year ($6,965/month)",
+          "es": "$83,580/año ($6,965/mes)"
+        },
+        "notes": {
+          "en": "",
+          "es": ""
+        }
       },
       {
         "size": "Each additional",
-        "incomeLimit": { "en": "+$8,520/year (+$710/month)", "es": "+$8,520/año (+$710/mes)" },
-        "notes": { "en": "Add for each person beyond 8", "es": "Agregar por cada persona adicional más de 8" }
+        "incomeLimit": {
+          "en": "+$8,520/year (+$710/month)",
+          "es": "+$8,520/año (+$710/mes)"
+        },
+        "notes": {
+          "en": "Add for each person beyond 8",
+          "es": "Agregar por cada persona adicional más de 8"
+        }
       }
     ],
     "footnote": {
@@ -115,7 +179,6 @@
     },
     "source": "SSA POMS HI 03001.020 (updated February 2026)"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -138,17 +201,47 @@
           "es": "Limites de Recursos de Ayuda Adicional 2026"
         },
         "headers": {
-          "en": ["Household", "Standard limit", "With burial set-aside", "Excluded from count"],
-          "es": ["Hogar", "Limite estándar", "Con reserva para entierro", "Excluido del conteo"]
+          "en": [
+            "Household",
+            "Standard limit",
+            "With burial set-aside",
+            "Excluded from count"
+          ],
+          "es": [
+            "Hogar",
+            "Limite estándar",
+            "Con reserva para entierro",
+            "Excluido del conteo"
+          ]
         },
         "rows": [
           {
-            "en": ["Single person", "$16,590", "$18,090", "Home, 1 vehicle, personal property"],
-            "es": ["Persona soltera", "$16,590", "$18,090", "Hogar, 1 vehículo, propiedad personal"]
+            "en": [
+              "Single person",
+              "$16,590",
+              "$18,090",
+              "Home, 1 vehicle, personal property"
+            ],
+            "es": [
+              "Persona soltera",
+              "$16,590",
+              "$18,090",
+              "Hogar, 1 vehículo, propiedad personal"
+            ]
           },
           {
-            "en": ["Married couple", "$33,100", "$36,100", "Home, 1 vehicle, personal property"],
-            "es": ["Pareja casada", "$33,100", "$36,100", "Hogar, 1 vehículo, propiedad personal"]
+            "en": [
+              "Married couple",
+              "$33,100",
+              "$36,100",
+              "Home, 1 vehicle, personal property"
+            ],
+            "es": [
+              "Pareja casada",
+              "$33,100",
+              "$36,100",
+              "Hogar, 1 vehículo, propiedad personal"
+            ]
           }
         ],
         "footnote": {
@@ -174,12 +267,30 @@
         }
       ],
       "list": [
-        { "en": "Part D premium: covered up to the regional benchmark premium (you pay the difference if your plan costs more)", "es": "Prima de la Parte D: cubierta hasta la prima de referencia regional (usted paga la diferencia si su plan cuesta más)" },
-        { "en": "Part D deductible: $0 (waived completely)", "es": "Deducible de la Parte D: $0 (completamente eximido)" },
-        { "en": "Generic drug copay: no more than $5.10 per fill in 2026", "es": "Copago de medicamentos genéricos: no más de $5.10 por dispensación en 2026" },
-        { "en": "Brand-name drug copay: no more than $12.65 per fill in 2026", "es": "Copago de medicamentos de marca: no más de $12.65 por dispensación en 2026" },
-        { "en": "After $2,100 in out-of-pocket drug costs: $0 copays for the rest of the year (catastrophic phase)", "es": "Después de $2,100 en costos de medicamentos de bolsillo: $0 de copago por el resto del año (fase catastrófica)" },
-        { "en": "Coverage gap (donut hole): eliminated for Extra Help recipients", "es": "Brecha de cobertura (agujero de dona): eliminada para receptores de Ayuda Adicional" }
+        {
+          "en": "Part D premium: covered up to the regional benchmark premium (you pay the difference if your plan costs more)",
+          "es": "Prima de la Parte D: cubierta hasta la prima de referencia regional (usted paga la diferencia si su plan cuesta más)"
+        },
+        {
+          "en": "Part D deductible: $0 (waived completely)",
+          "es": "Deducible de la Parte D: $0 (completamente eximido)"
+        },
+        {
+          "en": "Generic drug copay: no more than $5.10 per fill in 2026",
+          "es": "Copago de medicamentos genéricos: no más de $5.10 por dispensación en 2026"
+        },
+        {
+          "en": "Brand-name drug copay: no more than $12.65 per fill in 2026",
+          "es": "Copago de medicamentos de marca: no más de $12.65 por dispensación en 2026"
+        },
+        {
+          "en": "After $2,100 in out-of-pocket drug costs: $0 copays for the rest of the year (catastrophic phase)",
+          "es": "Después de $2,100 en costos de medicamentos de bolsillo: $0 de copago por el resto del año (fase catastrófica)"
+        },
+        {
+          "en": "Coverage gap (donut hole): eliminated for Extra Help recipients",
+          "es": "Brecha de cobertura (agujero de dona): eliminada para receptores de Ayuda Adicional"
+        }
       ]
     },
     {
@@ -194,11 +305,26 @@
         }
       ],
       "list": [
-        { "en": "Full Medicaid coverage (Medicaid that covers prescription drugs)", "es": "Cobertura completa de Medicaid (Medicaid que cubre medicamentos recetados)" },
-        { "en": "Supplemental Security Income (SSI) from SSA", "es": "Ingreso de Seguridad Suplementaria (SSI) de la SSA" },
-        { "en": "Qualified Medicare Beneficiary (QMB) program", "es": "Programa de Beneficiario Medicare Calificado (QMB)" },
-        { "en": "Specified Low-Income Medicare Beneficiary (SLMB) program", "es": "Programa de Beneficiario Medicare de Bajos Ingresos Especificado (SLMB)" },
-        { "en": "Qualifying Individual (QI) program", "es": "Programa de Individuo Calificado (QI)" }
+        {
+          "en": "Full Medicaid coverage (Medicaid that covers prescription drugs)",
+          "es": "Cobertura completa de Medicaid (Medicaid que cubre medicamentos recetados)"
+        },
+        {
+          "en": "Supplemental Security Income (SSI) from SSA",
+          "es": "Ingreso de Seguridad Suplementaria (SSI) de la SSA"
+        },
+        {
+          "en": "Qualified Medicare Beneficiary (QMB) program",
+          "es": "Programa de Beneficiario Medicare Calificado (QMB)"
+        },
+        {
+          "en": "Specified Low-Income Medicare Beneficiary (SLMB) program",
+          "es": "Programa de Beneficiario Medicare de Bajos Ingresos Especificado (SLMB)"
+        },
+        {
+          "en": "Qualifying Individual (QI) program",
+          "es": "Programa de Individuo Calificado (QI)"
+        }
       ]
     },
     {
@@ -229,11 +355,26 @@
         }
       ],
       "list": [
-        { "en": "Income above 150% FPL after counting all household members' income", "es": "Ingresos por encima del 150% del FPL después de contar los ingresos de todos los miembros del hogar" },
-        { "en": "Resources above the limit (often because retirement accounts were not correctly excluded)", "es": "Recursos por encima del límite (a menudo porque las cuentas de jubilación no se excluyeron correctamente)" },
-        { "en": "Not enrolled in Medicare Part A or Part B at the time of application", "es": "No inscrito en Medicare Parte A o Parte B en el momento de la solicitud" },
-        { "en": "Missing or incomplete documentation (bank statements, proof of income)", "es": "Documentación faltante o incompleta (estados de cuenta bancarios, prueba de ingresos)" },
-        { "en": "Failure to respond to SSA requests for additional information within the required window", "es": "No responder a las solicitudes de información adicional de la SSA dentro del plazo requerido" }
+        {
+          "en": "Income above 150% FPL after counting all household members' income",
+          "es": "Ingresos por encima del 150% del FPL después de contar los ingresos de todos los miembros del hogar"
+        },
+        {
+          "en": "Resources above the limit (often because retirement accounts were not correctly excluded)",
+          "es": "Recursos por encima del límite (a menudo porque las cuentas de jubilación no se excluyeron correctamente)"
+        },
+        {
+          "en": "Not enrolled in Medicare Part A or Part B at the time of application",
+          "es": "No inscrito en Medicare Parte A o Parte B en el momento de la solicitud"
+        },
+        {
+          "en": "Missing or incomplete documentation (bank statements, proof of income)",
+          "es": "Documentación faltante o incompleta (estados de cuenta bancarios, prueba de ingresos)"
+        },
+        {
+          "en": "Failure to respond to SSA requests for additional information within the required window",
+          "es": "No responder a las solicitudes de información adicional de la SSA dentro del plazo requerido"
+        }
       ]
     },
     {
@@ -253,39 +394,91 @@
       ]
     }
   ],
-
   "howToApply": {
     "numberedSteps": [
-      { "en": "Check income: compare your household's total annual income to the 2026 limits in the table above for your household size.", "es": "Verifique sus ingresos: compare el ingreso anual total de su hogar con los límites de 2026 en la tabla anterior para el tamaño de su hogar." },
-      { "en": "Check resources: add up all countable assets (bank accounts, investments, retirement funds) and compare to $16,590 single or $33,100 married.", "es": "Verifique sus recursos: sume todos los activos contables (cuentas bancarias, inversiones, fondos de jubilación) y compare con $16,590 para solteros o $33,100 para casados." },
-      { "en": "Apply online at SSA.gov, by phone at 1-800-772-1213, or in person at your local Social Security office. You can also apply through your state Medicaid agency.", "es": "Solicite en línea en SSA.gov, por teléfono al 1-800-772-1213, o en persona en su oficina local de Seguridad Social. También puede solicitar a través de la agencia Medicaid de su estado." },
-      { "en": "Complete Form SSA-1020 (Application for Help with Medicare Prescription Drug Plan Costs). This takes about 15 minutes.", "es": "Complete el Formulario SSA-1020 (Solicitud de Ayuda con los Costos del Plan de Medicamentos de Medicare). Esto toma aproximadamente 15 minutos." },
-      { "en": "Gather and submit supporting documents listed below. SSA may contact you for additional information within 30 to 60 days.", "es": "Reúna y envíe los documentos de soporte que se enumeran a continuación. La SSA puede comunicarse con usted para obtener información adicional dentro de 30 a 60 días." },
-      { "en": "If approved, SSA sends a letter confirming your Extra Help status and your assigned or chosen Part D plan. Your benefit begins the month after approval or January 1, whichever is later.", "es": "Si es aprobado, la SSA envía una carta confirmando su estado de Ayuda Adicional y su plan de la Parte D asignado o elegido. Su beneficio comienza el mes siguiente a la aprobación o el 1 de enero, lo que sea más tarde." },
-      { "en": "Re-apply each year if you applied manually. If you were auto-enrolled via Medicaid or SSI, your status is automatically renewed and you will receive a notice each fall.", "es": "Vuelva a solicitar cada año si solicitó manualmente. Si fue inscrito automáticamente a través de Medicaid o SSI, su estado se renueva automáticamente y recibirá un aviso cada otoño." }
+      {
+        "en": "Check income: compare your household's total annual income to the 2026 limits in the table above for your household size.",
+        "es": "Verifique sus ingresos: compare el ingreso anual total de su hogar con los límites de 2026 en la tabla anterior para el tamaño de su hogar."
+      },
+      {
+        "en": "Check resources: add up all countable assets (bank accounts, investments, retirement funds) and compare to $16,590 single or $33,100 married.",
+        "es": "Verifique sus recursos: sume todos los activos contables (cuentas bancarias, inversiones, fondos de jubilación) y compare con $16,590 para solteros o $33,100 para casados."
+      },
+      {
+        "en": "Apply online at SSA.gov, by phone at 1-800-772-1213, or in person at your local Social Security office. You can also apply through your state Medicaid agency.",
+        "es": "Solicite en línea en SSA.gov, por teléfono al 1-800-772-1213, o en persona en su oficina local de Seguridad Social. También puede solicitar a través de la agencia Medicaid de su estado."
+      },
+      {
+        "en": "Complete Form SSA-1020 (Application for Help with Medicare Prescription Drug Plan Costs). This takes about 15 minutes.",
+        "es": "Complete el Formulario SSA-1020 (Solicitud de Ayuda con los Costos del Plan de Medicamentos de Medicare). Esto toma aproximadamente 15 minutos."
+      },
+      {
+        "en": "Gather and submit supporting documents listed below. SSA may contact you for additional information within 30 to 60 days.",
+        "es": "Reúna y envíe los documentos de soporte que se enumeran a continuación. La SSA puede comunicarse con usted para obtener información adicional dentro de 30 a 60 días."
+      },
+      {
+        "en": "If approved, SSA sends a letter confirming your Extra Help status and your assigned or chosen Part D plan. Your benefit begins the month after approval or January 1, whichever is later.",
+        "es": "Si es aprobado, la SSA envía una carta confirmando su estado de Ayuda Adicional y su plan de la Parte D asignado o elegido. Su beneficio comienza el mes siguiente a la aprobación o el 1 de enero, lo que sea más tarde."
+      },
+      {
+        "en": "Re-apply each year if you applied manually. If you were auto-enrolled via Medicaid or SSI, your status is automatically renewed and you will receive a notice each fall.",
+        "es": "Vuelva a solicitar cada año si solicitó manualmente. Si fue inscrito automáticamente a través de Medicaid o SSI, su estado se renueva automáticamente y recibirá un aviso cada otoño."
+      }
     ],
     "govStartingUrl": "https://www.ssa.gov/medicare/prescriptionhelp",
     "documentsNeeded": [
-      { "en": "Social Security number or Medicare card", "es": "Número de Seguro Social o tarjeta de Medicare" },
-      { "en": "Most recent federal tax return or W-2 forms (or proof you did not file)", "es": "Declaración de impuestos federales más reciente o formularios W-2 (o prueba de que no presentó)" },
-      { "en": "Recent bank statements (checking, savings, CDs) for all accounts", "es": "Estados de cuenta bancarios recientes (corrientes, ahorros, CD) para todas las cuentas" },
-      { "en": "Statements for investment or brokerage accounts, retirement accounts (IRAs, 401k)", "es": "Estados de cuenta de inversiones o corretaje, cuentas de jubilación (IRA, 401k)" },
-      { "en": "Proof of any other income: pension statements, Social Security award letter, rental income records", "es": "Prueba de cualquier otro ingreso: estados de pensión, carta de adjudicación de Seguro Social, registros de ingresos por alquiler" },
-      { "en": "Life insurance policy documents if you have a policy with cash value", "es": "Documentos de póliza de seguro de vida si tiene una póliza con valor en efectivo" }
+      {
+        "en": "Social Security number or Medicare card",
+        "es": "Número de Seguro Social o tarjeta de Medicare"
+      },
+      {
+        "en": "Most recent federal tax return or W-2 forms (or proof you did not file)",
+        "es": "Declaración de impuestos federales más reciente o formularios W-2 (o prueba de que no presentó)"
+      },
+      {
+        "en": "Recent bank statements (checking, savings, CDs) for all accounts",
+        "es": "Estados de cuenta bancarios recientes (corrientes, ahorros, CD) para todas las cuentas"
+      },
+      {
+        "en": "Statements for investment or brokerage accounts, retirement accounts (IRAs, 401k)",
+        "es": "Estados de cuenta de inversiones o corretaje, cuentas de jubilación (IRA, 401k)"
+      },
+      {
+        "en": "Proof of any other income: pension statements, Social Security award letter, rental income records",
+        "es": "Prueba de cualquier otro ingreso: estados de pensión, carta de adjudicación de Seguro Social, registros de ingresos por alquiler"
+      },
+      {
+        "en": "Life insurance policy documents if you have a policy with cash value",
+        "es": "Documentos de póliza de seguro de vida si tiene una póliza con valor en efectivo"
+      }
     ],
     "commonDenialReasons": [
-      { "en": "Household income exceeds 150% FPL when all members' income is combined", "es": "Los ingresos del hogar superan el 150% del FPL cuando se combinan los ingresos de todos los miembros" },
-      { "en": "Countable resources exceed the limit (IRA and 401k balances are counted unless the account is entirely in payout phase)", "es": "Los recursos contables superan el límite (los saldos de IRA y 401k se cuentan a menos que la cuenta esté completamente en fase de pago)" },
-      { "en": "Not enrolled in Medicare Part A or Part B at time of application", "es": "No inscrito en Medicare Parte A o Parte B en el momento de la solicitud" },
-      { "en": "Missing bank statements or income documentation", "es": "Falta de estados de cuenta bancarios o documentación de ingresos" },
-      { "en": "Application filed after deadline for retroactive coverage (Extra Help coverage can start as early as the month of application)", "es": "Solicitud presentada después del plazo para cobertura retroactiva (la cobertura de Ayuda Adicional puede comenzar tan pronto como el mes de la solicitud)" }
+      {
+        "en": "Household income exceeds 150% FPL when all members' income is combined",
+        "es": "Los ingresos del hogar superan el 150% del FPL cuando se combinan los ingresos de todos los miembros"
+      },
+      {
+        "en": "Countable resources exceed the limit (IRA and 401k balances are counted unless the account is entirely in payout phase)",
+        "es": "Los recursos contables superan el límite (los saldos de IRA y 401k se cuentan a menos que la cuenta esté completamente en fase de pago)"
+      },
+      {
+        "en": "Not enrolled in Medicare Part A or Part B at time of application",
+        "es": "No inscrito en Medicare Parte A o Parte B en el momento de la solicitud"
+      },
+      {
+        "en": "Missing bank statements or income documentation",
+        "es": "Falta de estados de cuenta bancarios o documentación de ingresos"
+      },
+      {
+        "en": "Application filed after deadline for retroactive coverage (Extra Help coverage can start as early as the month of application)",
+        "es": "Solicitud presentada después del plazo para cobertura retroactiva (la cobertura de Ayuda Adicional puede comenzar tan pronto como el mes de la solicitud)"
+      }
     ],
     "deadline": {
       "en": "Year-round. There is no enrollment window for Extra Help. You can apply at any time and coverage begins the month after SSA approves your application.",
       "es": "Todo el año. No hay un periodo de inscripción para la Ayuda Adicional. Puede solicitar en cualquier momento y la cobertura comienza el mes después de que la SSA apruebe su solicitud."
     }
   },
-
   "faqs": {
     "en": [
       {
@@ -356,26 +549,36 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad para Medicare" },
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad para Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "Medicaid Income Limits", "es": "Límites de Ingresos de Medicaid" },
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Límites de Ingresos de Medicaid"
+      },
       "href": "/medicaid-income-limits"
     },
     {
-      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
+      "label": {
+        "en": "2026 Federal Poverty Level Chart",
+        "es": "Tabla del Nivel Federal de Pobreza 2026"
+      },
       "href": "/federal-poverty-level"
     },
     {
-      "label": { "en": "Benefits Screener", "es": "Verificador de Beneficios" },
+      "label": {
+        "en": "Benefits Screener",
+        "es": "Verificador de Beneficios"
+      },
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "SSA POMS HI 03001.020: Eligibility for Extra Help (updated February 2026)",

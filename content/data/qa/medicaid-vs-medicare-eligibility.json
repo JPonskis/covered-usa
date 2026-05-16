@@ -1,0 +1,525 @@
+{
+  "slug": "medicaid-vs-medicare-eligibility",
+  "question": {
+    "en": "What Are the Eligibility Differences Between Medicaid and Medicare?",
+    "es": "¿Cuáles Son las Diferencias de Elegibilidad Entre Medicaid y Medicare?"
+  },
+  "shortAnswer": {
+    "en": "Medicare = age or disability; Medicaid = income and category.",
+    "es": "Medicare = edad o discapacidad; Medicaid = ingresos y categoría."
+  },
+  "fullAnswer": {
+    "en": "Medicare eligibility in 2026 is based on age (65+), disability status via SSDI (after a 24-month waiting period), end-stage renal disease (ESRD), or ALS (immediate, no waiting period). Medicaid eligibility is determined state-by-state and requires meeting income limits, which in the 40 expansion states and DC is 138% of the Federal Poverty Level (roughly $20,782 per year for a single adult in 2026), plus falling into a covered category: children, pregnant women, elderly, people with disabilities, or expansion adults. Unlike Medicare, most MAGI-based Medicaid pathways have no asset test. About 12 million Americans qualify for both programs at the same time and are called dual-eligible.",
+    "es": "La elegibilidad para Medicare en 2026 se basa en la edad (65+), discapacidad a través de SSDI (tras un período de espera de 24 meses), enfermedad renal en etapa terminal (ESRD), o ELA (inmediata, sin período de espera). La elegibilidad para Medicaid se determina estado por estado y requiere cumplir límites de ingresos, que en los 40 estados de expansión más DC es el 138% del Nivel Federal de Pobreza (aproximadamente $20,782 anuales para un adulto soltero en 2026), además de pertenecer a una categoría cubierta: niños, mujeres embarazadas, ancianos, personas con discapacidades, o adultos de expansión. A diferencia de Medicare, la mayoría de las vías de Medicaid basadas en MAGI no tienen prueba de activos. Aproximadamente 12 millones de estadounidenses califican para ambos programas simultáneamente y se les llama doble elegibles."
+  },
+  "category": "Coverage Q&A",
+  "topic": "Medicaid vs Medicare Eligibility Differences",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "pageType": "eligibility",
+  "subtype": "coverage",
+  "topicCluster": "medicaid-coverage",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "6 min read",
+
+  "meta": {
+    "title": {
+      "en": "Medicaid vs Medicare Eligibility Differences (2026) | CoveredUSA",
+      "es": "Diferencias de Elegibilidad: Medicaid vs Medicare (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicare uses age and disability rules. Medicaid uses income and categorical rules. See the 2026 eligibility comparison, income limits, and dual-eligible rules.",
+      "es": "Medicare usa reglas de edad y discapacidad. Medicaid usa reglas de ingresos y categoría. Vea la comparación de elegibilidad 2026, límites de ingresos y reglas de doble elegibilidad."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Medicaid vs Medicare: Eligibility Differences (2026)",
+      "es": "Medicaid vs Medicare: Diferencias de Elegibilidad (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Medicare and Medicaid are both government health programs, but they work very differently. Medicare is a federal program with national eligibility rules tied to age or disability. Medicaid is a joint federal-state program where each state sets its own rules within federal guidelines. The result: who qualifies for each program, and how much they pay, differs dramatically.",
+      "es": "Medicare y Medicaid son programas de salud del gobierno, pero funcionan de manera muy diferente. Medicare es un programa federal con reglas nacionales de elegibilidad vinculadas a la edad o discapacidad. Medicaid es un programa federal-estatal conjunto donde cada estado establece sus propias reglas dentro de las pautas federales. El resultado: quién califica para cada programa, y cuánto paga, difiere dramáticamente."
+    },
+    {
+      "en": "This guide breaks down the 2026 eligibility rules for both programs side by side, covers who qualifies for both at the same time (dual-eligible), and explains how to apply.",
+      "es": "Esta guía desglosa las reglas de elegibilidad 2026 para ambos programas en paralelo, cubre quién califica para ambos al mismo tiempo (doble elegible), y explica cómo aplicar."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Eligibility Factor", "Medicare (2026)", "Medicaid (2026)"],
+      "es": ["Factor de elegibilidad", "Medicare (2026)", "Medicaid (2026)"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Primary basis", "es": "Base principal" },
+          { "en": "Age or disability", "es": "Edad o discapacidad" },
+          { "en": "Income and categorical group", "es": "Ingresos y grupo categórico" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Age requirement", "es": "Requisito de edad" },
+          { "value": { "en": "Age 65+", "es": "65 anos o mas" }, "status": "yes" },
+          { "value": { "en": "No age floor (all ages covered)", "es": "Sin edad minima (todas las edades)" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Disability pathway", "es": "Via de discapacidad" },
+          { "value": { "en": "SSDI after 24-month wait (ALS: immediate)", "es": "SSDI tras espera de 24 meses (ELA: inmediata)" }, "status": "partial" },
+          { "value": { "en": "SSI recipients qualify automatically", "es": "Beneficiarios de SSI califican automaticamente" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Income test", "es": "Prueba de ingresos" },
+          { "value": { "en": "None", "es": "Ninguna" }, "status": "yes" },
+          { "value": { "en": "138% FPL in expansion states (~$20,782/yr single adult)", "es": "138% FPL en estados de expansion (~$20,782/ano adulto soltero)" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Asset test", "es": "Prueba de activos" },
+          { "value": { "en": "None", "es": "Ninguna" }, "status": "yes" },
+          { "value": { "en": "None for MAGI groups; applies for elderly/disabled Medicaid", "es": "Ninguna para grupos MAGI; aplica para Medicaid de ancianos/discapacitados" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Citizenship requirement", "es": "Requisito de ciudadania" },
+          { "en": "US citizen or qualifying legal resident (5-yr bar may apply)", "es": "Ciudadano americano o residente legal calificado (puede aplicar barra de 5 anos)" },
+          { "en": "US citizen or qualifying legal resident (5-yr bar may apply)", "es": "Ciudadano americano o residente legal calificado (puede aplicar barra de 5 anos)" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "ESRD (kidney failure)", "es": "ESRD (falla renal)" },
+          { "value": { "en": "Yes, any age (coverage starts month 4 of dialysis)", "es": "Si, cualquier edad (cobertura inicia mes 4 de dialisis)" }, "status": "yes" },
+          { "value": { "en": "Covered if income-eligible; state-dependent", "es": "Cubierto si es elegible por ingresos; depende del estado" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Children", "es": "Ninos" },
+          { "value": { "en": "Not covered (use CHIP or Medicaid)", "es": "No cubierto (usar CHIP o Medicaid)" }, "status": "no" },
+          { "value": { "en": "Yes, up to 133-350% FPL depending on state", "es": "Si, hasta 133-350% FPL segun el estado" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Pregnant women", "es": "Mujeres embarazadas" },
+          { "value": { "en": "No specific pregnancy pathway", "es": "Sin via especifica por embarazo" }, "status": "no" },
+          { "value": { "en": "Yes, most states 138-220% FPL", "es": "Si, mayoria de estados 138-220% FPL" }, "status": "yes" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "10 states have NOT expanded Medicaid (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY). In those states, expansion-adult income limits do not apply and adults without children may be ineligible regardless of income. 2026 FPL for household-of-1 = $15,960 (48 states). 138% FPL = $22,025 (using HHS 2026 guidelines).",
+      "es": "10 estados NO han expandido Medicaid (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY). En esos estados, los limites de ingresos de adultos de expansion no aplican y adultos sin hijos pueden ser inelegibles sin importar sus ingresos. FPL 2026 para hogar de 1 persona = $15,960 (48 estados). 138% FPL = $22,025 (segun guias HHS 2026)."
+    },
+    "source": "CMS.gov, Medicaid.gov, Medicare.gov, KFF Medicaid Eligibility Levels 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Medicare Eligibility Rules in 2026: The Four Pathways",
+        "es": "Reglas de Elegibilidad de Medicare en 2026: Las Cuatro Vias"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare has four separate eligibility pathways in 2026. You only need to qualify under one.",
+          "es": "Medicare tiene cuatro vias separadas de elegibilidad en 2026. Solo necesita calificar bajo una."
+        },
+        {
+          "en": "The age pathway is the most common: turn 65 and you qualify, regardless of income, assets, or health status. You or your spouse must have worked and paid Medicare taxes for at least 10 years (40 quarters) to receive premium-free Part A. If you haven't, you can buy into Part A for up to $505 per month in 2026.",
+          "es": "La via de edad es la mas comun: cumpla 65 anos y califica, sin importar ingresos, activos o estado de salud. Usted o su conyuge deben haber trabajado y pagado impuestos de Medicare durante al menos 10 anos (40 trimestres) para recibir la Parte A sin prima. Si no, puede comprar la Parte A por hasta $505 por mes en 2026."
+        }
+      ],
+      "list": [
+        {
+          "en": "Age 65+: Qualify if you or your spouse have 40 work quarters. No income or asset test.",
+          "es": "65 anos o mas: Califica si usted o su conyuge tienen 40 trimestres de trabajo. Sin prueba de ingresos o activos."
+        },
+        {
+          "en": "SSDI disability: Receive Medicare after 24 full months of Social Security Disability Insurance (SSDI) benefits. The clock starts the first month you receive SSDI, not when you applied.",
+          "es": "Discapacidad SSDI: Recibe Medicare despues de 24 meses completos de beneficios del Seguro de Discapacidad del Seguro Social (SSDI). El reloj comienza el primer mes que recibe SSDI, no cuando solicito."
+        },
+        {
+          "en": "ALS (Lou Gehrig's Disease): Medicare begins the SAME month SSDI is approved. No waiting period. This exception was established by the ALS Medicare Equity Act, effective 2021.",
+          "es": "ELA (enfermedad de Lou Gehrig): Medicare comienza el MISMO mes que SSDI es aprobado. Sin periodo de espera. Esta excepcion fue establecida por la Ley de Equidad Medicare para ELA, efectiva 2021."
+        },
+        {
+          "en": "ESRD (End-Stage Renal Disease): Medicare begins on the first day of the 4th month of dialysis treatment, or the month of a kidney transplant hospitalization. No age requirement.",
+          "es": "ESRD (Enfermedad Renal en Etapa Terminal): Medicare comienza el primer dia del 4to mes de tratamiento de dialisis, o el mes de hospitalizacion para trasplante de rinon. Sin requisito de edad."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid Eligibility Rules in 2026: Income, Category, and State",
+        "es": "Reglas de Elegibilidad de Medicaid en 2026: Ingresos, Categoria y Estado"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid eligibility requires two things: belonging to a covered category AND meeting income limits. Unlike Medicare, Medicaid has NO national income limit that applies to all adults. The limits depend on both your state and your category.",
+          "es": "La elegibilidad para Medicaid requiere dos cosas: pertenecer a una categoria cubierta Y cumplir los limites de ingresos. A diferencia de Medicare, Medicaid NO tiene limite nacional de ingresos que aplique a todos los adultos. Los limites dependen tanto de su estado como de su categoria."
+        },
+        {
+          "en": "In the 40 states plus DC that have expanded Medicaid under the ACA, adults aged 19-64 with incomes at or below 138% of the Federal Poverty Level qualify as 'expansion adults.' For 2026, that is roughly $22,025 per year for a single adult. Most MAGI-based Medicaid pathways have NO asset test, meaning savings and home equity are not counted.",
+          "es": "En los 40 estados mas DC que han expandido Medicaid bajo la ACA, adultos de 19 a 64 anos con ingresos al nivel o por debajo del 138% del Nivel Federal de Pobreza califican como 'adultos de expansion.' Para 2026, eso es aproximadamente $22,025 por ano para un adulto soltero. La mayoria de las vias de Medicaid basadas en MAGI NO tienen prueba de activos, lo que significa que ahorros y valor de la vivienda no se cuentan."
+        }
+      ],
+      "list": [
+        {
+          "en": "Children: Most states cover children up to 200-350% FPL via Medicaid or CHIP. All 50 states cover children through at least 133% FPL.",
+          "es": "Ninos: La mayoria de los estados cubren ninos hasta 200-350% FPL via Medicaid o CHIP. Los 50 estados cubren ninos hasta al menos 133% FPL."
+        },
+        {
+          "en": "Pregnant women: All 50 states cover pregnancy-related care. Most states set the limit at 138-220% FPL for pregnancy Medicaid.",
+          "es": "Mujeres embarazadas: Los 50 estados cubren atencion relacionada con el embarazo. La mayoria establece el limite en 138-220% FPL para Medicaid de embarazo."
+        },
+        {
+          "en": "Elderly (65+) and people with disabilities: These groups often use non-MAGI Medicaid with an asset test. Income limits are typically set at 100% FPL or SSI level ($967/mo for an individual in 2026). Married couples face a different asset calculation.",
+          "es": "Ancianos (65+) y personas con discapacidades: Estos grupos frecuentemente usan Medicaid no-MAGI con prueba de activos. Los limites de ingresos tipicamente se establecen en 100% FPL o nivel SSI ($967/mes para un individuo en 2026). Las parejas casadas enfrentan un calculo de activos diferente."
+        },
+        {
+          "en": "SSI recipients: In most states, receiving Supplemental Security Income (SSI) automatically makes you eligible for Medicaid without a separate application.",
+          "es": "Beneficiarios de SSI: En la mayoria de los estados, recibir el Ingreso de Seguridad Suplementario (SSI) le hace automaticamente elegible para Medicaid sin una solicitud separada."
+        },
+        {
+          "en": "Non-expansion states: In Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming, there is no expansion-adult pathway. Adults without minor children may not qualify at any income level.",
+          "es": "Estados sin expansion: En Alabama, Florida, Georgia, Kansas, Mississippi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming, no existe via de adulto de expansion. Adultos sin hijos menores pueden no calificar sin importar sus ingresos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "2026 Medicaid Income Limits by Household Size (Expansion States)",
+        "es": "Limites de Ingresos de Medicaid 2026 por Tamano de Hogar (Estados de Expansion)"
+      },
+      "paragraphs": [
+        {
+          "en": "The table below shows the annual MAGI income limits at 138% FPL for expansion-state adult Medicaid in 2026. These apply in the 40 states and DC that have adopted the ACA expansion. Children's limits and pregnancy limits are often higher.",
+          "es": "La siguiente tabla muestra los limites de ingresos MAGI anuales al 138% FPL para Medicaid de adultos en estados de expansion en 2026. Estos aplican en los 40 estados mas DC que han adoptado la expansion de la ACA. Los limites para ninos y embarazo frecuentemente son mas altos."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "2026 Medicaid Expansion Adult Income Limits by Household Size (138% FPL, 48 contiguous states)",
+          "es": "Limites de Ingresos de Medicaid 2026 para Adultos de Expansion por Tamano de Hogar (138% FPL, 48 estados contiguos)"
+        },
+        "headers": {
+          "en": ["Household Size", "Annual Income Limit (138% FPL)", "Monthly Income Limit"],
+          "es": ["Tamano del hogar", "Limite anual de ingresos (138% FPL)", "Limite mensual de ingresos"]
+        },
+        "rows": [
+          { "en": ["1", "$22,025", "$1,836"], "es": ["1", "$22,025", "$1,836"] },
+          { "en": ["2", "$29,684", "$2,474"], "es": ["2", "$29,684", "$2,474"] },
+          { "en": ["3", "$37,343", "$3,112"], "es": ["3", "$37,343", "$3,112"] },
+          { "en": ["4", "$45,001", "$3,750"], "es": ["4", "$45,001", "$3,750"] },
+          { "en": ["5", "$52,659", "$4,388"], "es": ["5", "$52,659", "$4,388"] },
+          { "en": ["6", "$60,318", "$5,027"], "es": ["6", "$60,318", "$5,027"] },
+          { "en": ["7", "$67,976", "$5,665"], "es": ["7", "$67,976", "$5,665"] },
+          { "en": ["8", "$75,635", "$6,303"], "es": ["8", "$75,635", "$6,303"] },
+          { "en": ["Each additional", "+$7,659/year", "+$638/month"], "es": ["Cada persona adicional", "+$7,659/ano", "+$638/mes"] }
+        ],
+        "footnote": {
+          "en": "Based on 2026 HHS poverty guidelines (48 contiguous states). Alaska and Hawaii have higher FPL figures. These limits apply to expansion adults only. Children, pregnant women, elderly, and disabled may qualify at different thresholds. Non-expansion states do not use this table.",
+          "es": "Basado en las guias de pobreza HHS 2026 (48 estados contiguos). Alaska y Hawaii tienen cifras FPL mas altas. Estos limites aplican solo a adultos de expansion. Ninos, mujeres embarazadas, ancianos y discapacitados pueden calificar con diferentes umbrales. Los estados sin expansion no usan esta tabla."
+        },
+        "source": "HHS 2026 Federal Poverty Guidelines, Medicaid.gov, KFF"
+      }
+    },
+    {
+      "heading": {
+        "en": "Dual-Eligible: How to Qualify for Both Medicare and Medicaid",
+        "es": "Doble Elegible: Como Calificar para Medicare y Medicaid"
+      },
+      "paragraphs": [
+        {
+          "en": "Approximately 12 million Americans are dual-eligible, meaning they qualify for both Medicare and Medicaid at the same time. This is the most comprehensive public health coverage available in the United States.",
+          "es": "Aproximadamente 12 millones de estadounidenses son doble elegibles, lo que significa que califican para Medicare y Medicaid al mismo tiempo. Esta es la cobertura de salud publica mas completa disponible en los Estados Unidos."
+        },
+        {
+          "en": "You can be dual-eligible by meeting Medicare's rules (age 65+, SSDI, ESRD, or ALS) AND meeting your state's Medicaid income limit. The most common path: someone turns 65, qualifies for Medicare, and also has low enough income to qualify for Medicaid. When you are dual-eligible, Medicare pays first and Medicaid wraps around to cover the cost-sharing, premiums, and services Medicare doesn't cover (like long-term care and dental in most states).",
+          "es": "Puede ser doble elegible cumpliendo las reglas de Medicare (65+, SSDI, ESRD, o ELA) Y cumpliendo el limite de ingresos de Medicaid de su estado. La via mas comun: alguien cumple 65, califica para Medicare, y tambien tiene ingresos suficientemente bajos para calificar para Medicaid. Cuando es doble elegible, Medicare paga primero y Medicaid cubre los costos compartidos, primas y servicios que Medicare no cubre (como cuidado a largo plazo y dental en la mayoria de los estados)."
+        },
+        {
+          "en": "Dual-eligible individuals can also enroll in Dual Special Needs Plans (D-SNPs), which are Medicare Advantage plans specifically designed to coordinate both programs under one card.",
+          "es": "Las personas doble elegibles tambien pueden inscribirse en Planes de Necesidades Especiales Duales (D-SNPs), que son planes Medicare Advantage disenados especificamente para coordinar ambos programas bajo una sola tarjeta."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Key Differences Summarized: What Disqualifies You from Each",
+        "es": "Diferencias Clave Resumidas: Que le Descalifica de Cada Programa"
+      },
+      "paragraphs": [
+        {
+          "en": "For Medicare, the main disqualifiers are: being under 65 without a qualifying disability, ESRD, or ALS diagnosis; not having enough work credits (40 quarters) for premium-free Part A; or not being a qualifying citizen or permanent resident. High income does NOT disqualify you from Medicare, though it triggers an Income-Related Monthly Adjustment Amount (IRMAA) surcharge on Parts B and D premiums.",
+          "es": "Para Medicare, los principales descalificadores son: tener menos de 65 anos sin discapacidad calificante, ESRD o diagnostico de ELA; no tener suficientes creditos de trabajo (40 trimestres) para la Parte A sin prima; o no ser ciudadano calificado o residente permanente. Los ingresos altos NO le descalifican de Medicare, aunque generan un recargo IRMAA sobre las primas de las Partes B y D."
+        },
+        {
+          "en": "For Medicaid, the main disqualifiers are: income above your state's limit for your category; living in a non-expansion state without a categorical pathway (i.e., you are a childless adult with no disability); or having assets above the limit in non-MAGI Medicaid programs (applicable to elderly and disabled pathways). Immigration status also matters: undocumented individuals generally do not qualify for full Medicaid, though emergency Medicaid is available.",
+          "es": "Para Medicaid, los principales descalificadores son: ingresos por encima del limite de su estado para su categoria; vivir en un estado sin expansion sin una via categorica (es decir, es un adulto sin hijos sin discapacidad); o tener activos por encima del limite en programas Medicaid no-MAGI (aplicable a vias de ancianos y discapacitados). El estado migratorio tambien importa: los indocumentados generalmente no califican para Medicaid completo, aunque el Medicaid de emergencia esta disponible."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Apply for Medicare vs Medicaid in 2026",
+        "es": "Como Solicitar Medicare vs Medicaid en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare applications go through the Social Security Administration. If you are already receiving Social Security retirement benefits or SSDI, you are enrolled in Medicare automatically. If not, apply at SSA.gov or call 1-800-772-1213. Your Initial Enrollment Period is a 7-month window centered on your 65th birthday month.",
+          "es": "Las solicitudes de Medicare se procesan a traves de la Administracion del Seguro Social. Si ya esta recibiendo beneficios de retiro del Seguro Social o SSDI, se inscribira en Medicare automaticamente. Si no, solicite en SSA.gov o llame al 1-800-772-1213. Su Periodo de Inscripcion Inicial es una ventana de 7 meses centrada en el mes de su cumpleanos 65."
+        },
+        {
+          "en": "Medicaid applications go through your state's Medicaid office. You can apply through healthcare.gov (which routes you to your state if you qualify for Medicaid), directly on your state's Medicaid website, or in person at a local benefits office. Medicaid is available year-round, no enrollment period applies.",
+          "es": "Las solicitudes de Medicaid se procesan a traves de la oficina de Medicaid de su estado. Puede solicitar a traves de healthcare.gov (que le redirige a su estado si califica para Medicaid), directamente en el sitio web de Medicaid de su estado, o en persona en una oficina local de beneficios. Medicaid esta disponible durante todo el ano, no aplica periodo de inscripcion."
+        }
+      ]
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Check Medicare eligibility first: age 65+, SSDI (24 months), ESRD, or ALS.",
+        "es": "Verifique la elegibilidad de Medicare primero: 65+, SSDI (24 meses), ESRD, o ELA."
+      },
+      {
+        "en": "Check Medicaid eligibility: use your state's Medicaid site or healthcare.gov to see your state's income limits for your household size.",
+        "es": "Verifique la elegibilidad de Medicaid: use el sitio de Medicaid de su estado o healthcare.gov para ver los limites de ingresos de su estado para su tamano de hogar."
+      },
+      {
+        "en": "For Medicare: apply at SSA.gov or call 1-800-772-1213 during your Initial Enrollment Period (7-month window around your 65th birthday).",
+        "es": "Para Medicare: solicite en SSA.gov o llame al 1-800-772-1213 durante su Periodo de Inscripcion Inicial (ventana de 7 meses alrededor de su cumpleanos 65)."
+      },
+      {
+        "en": "For Medicaid: apply anytime at your state's Medicaid portal, through healthcare.gov, or in person at a local benefits office.",
+        "es": "Para Medicaid: solicite en cualquier momento en el portal de Medicaid de su estado, a traves de healthcare.gov, o en persona en una oficina local de beneficios."
+      },
+      {
+        "en": "If you qualify for both, enroll in both. Medicare pays first; Medicaid covers remaining costs.",
+        "es": "Si califica para ambos, inscribase en ambos. Medicare paga primero; Medicaid cubre los costos restantes."
+      }
+    ],
+    "govStartingUrl": "https://www.ssa.gov/medicare/",
+    "documentsNeeded": [
+      {
+        "en": "Social Security card and number",
+        "es": "Tarjeta y numero del Seguro Social"
+      },
+      {
+        "en": "Proof of age (birth certificate or passport)",
+        "es": "Prueba de edad (acta de nacimiento o pasaporte)"
+      },
+      {
+        "en": "Proof of US citizenship or legal immigration status",
+        "es": "Prueba de ciudadania estadounidense o estatus migratorio legal"
+      },
+      {
+        "en": "Proof of income (pay stubs, tax returns, Social Security award letter)",
+        "es": "Prueba de ingresos (talones de pago, declaraciones de impuestos, carta de adjudicacion del Seguro Social)"
+      },
+      {
+        "en": "Proof of residence (utility bill, bank statement)",
+        "es": "Prueba de residencia (factura de servicios, estado de cuenta bancario)"
+      },
+      {
+        "en": "SSDI award letter (if applying for Medicare via disability pathway)",
+        "es": "Carta de adjudicacion de SSDI (si solicita Medicare por via de discapacidad)"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Income above state's Medicaid limit for your household size and category",
+        "es": "Ingresos por encima del limite de Medicaid de su estado para su tamano de hogar y categoria"
+      },
+      {
+        "en": "Under 65 with no qualifying disability, ESRD, or ALS for Medicare",
+        "es": "Menor de 65 anos sin discapacidad calificante, ESRD, o ELA para Medicare"
+      },
+      {
+        "en": "Insufficient work credits (less than 40 quarters) for premium-free Part A",
+        "es": "Creditos de trabajo insuficientes (menos de 40 trimestres) para la Parte A sin prima"
+      },
+      {
+        "en": "Living in a non-expansion state as a childless adult with no disability",
+        "es": "Vivir en un estado sin expansion como adulto sin hijos sin discapacidad"
+      },
+      {
+        "en": "Immigration status not meeting qualifying legal resident requirements",
+        "es": "Estado migratorio que no cumple con los requisitos de residente legal calificado"
+      }
+    ],
+    "deadline": {
+      "en": "Medicare: 7-month Initial Enrollment Period around your 65th birthday. Medicaid: year-round, no enrollment period.",
+      "es": "Medicare: Periodo de Inscripcion Inicial de 7 meses alrededor de su cumpleanos 65. Medicaid: durante todo el ano, sin periodo de inscripcion."
+    }
+  },
+
+  "keyTerms": {
+    "en": [
+      "Medicare eligibility 2026",
+      "Medicaid income limits 2026",
+      "MAGI Medicaid",
+      "dual-eligible",
+      "138% FPL Medicaid",
+      "SSDI Medicare waiting period"
+    ],
+    "es": [
+      "elegibilidad Medicare 2026",
+      "limites de ingresos Medicaid 2026",
+      "MAGI Medicaid",
+      "doble elegible",
+      "138% FPL Medicaid",
+      "periodo de espera Medicare SSDI"
+    ]
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the main difference between Medicare and Medicaid eligibility?",
+        "answer": "Medicare eligibility in 2026 is based on age (65+), disability via SSDI (24-month wait), ESRD, or ALS. Income and assets are not factors for Medicare. Medicaid eligibility is based on income (typically 138% FPL in expansion states, roughly $22,025/year for a single adult) and belonging to a covered category. Medicaid has no age floor."
+      },
+      {
+        "question": "Can I get Medicare if I am under 65?",
+        "answer": "Yes, under three circumstances. If you receive SSDI benefits, you become eligible for Medicare after 24 full months of payments. If you have ALS, Medicare starts the same month your SSDI is approved, with no waiting period. If you have end-stage renal disease (ESRD), Medicare starts the first day of your fourth month of dialysis treatment. These are the only under-65 Medicare pathways."
+      },
+      {
+        "question": "What income is too high for Medicaid?",
+        "answer": "In expansion states, adults earning above 138% of the Federal Poverty Level do not qualify for expansion-adult Medicaid. For a single adult in 2026, that cutoff is approximately $22,025 per year (about $1,836/month). In non-expansion states (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY), childless adults are typically ineligible regardless of income. Children and pregnant women often qualify at higher limits."
+      },
+      {
+        "question": "Does Medicaid have an asset test in 2026?",
+        "answer": "Most MAGI-based Medicaid pathways (covering expansion adults, children, pregnant women) have NO asset test since 2014 under the ACA. However, elderly and disabled Medicaid pathways, used by people 65+ and those with serious disabilities who need long-term care, still use a traditional means-test that counts assets like savings accounts. Home ownership rules also apply in those non-MAGI pathways."
+      },
+      {
+        "question": "What does dual-eligible mean?",
+        "answer": "Dual-eligible means you qualify for both Medicare and Medicaid at the same time. About 12 million Americans are dual-eligible in 2026. To qualify, you must meet Medicare's rules (age 65+, SSDI, ESRD, or ALS) AND your state's Medicaid income limit. When dual-eligible, Medicare pays first and Medicaid wraps around to cover cost-sharing, premiums, and services Medicare doesn't cover, like dental and long-term care."
+      },
+      {
+        "question": "How does SSDI relate to Medicare eligibility?",
+        "answer": "Receiving Social Security Disability Insurance (SSDI) makes you eligible for Medicare, but with a 24-month waiting period. The clock starts with the first month you receive SSDI cash benefits, not the application date. After 24 months, Medicare Part A and Part B enrollment is automatic. The one exception is ALS: people with ALS get Medicare the same month SSDI starts, with no wait."
+      },
+      {
+        "question": "Can I have both Medicare and Medicaid at the same time?",
+        "answer": "Yes. If you meet Medicare's eligibility rules (age, disability, ESRD, or ALS) and also meet your state's Medicaid income limits, you can be dual-eligible and have both simultaneously. Medicare pays first, then Medicaid covers remaining costs. Dual-eligible individuals can also enroll in Dual Special Needs Plans (D-SNPs) to coordinate both programs under one plan."
+      },
+      {
+        "question": "Does Medicare have income limits?",
+        "answer": "Medicare has NO income eligibility limit. You qualify based on age, disability, ESRD, or ALS, regardless of income. However, if your income is above certain thresholds, you pay higher Part B and Part D premiums via IRMAA (Income-Related Monthly Adjustment Amount). For 2026, IRMAA applies to individuals with income above $106,000 per year. High income does not eliminate your Medicare benefit."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cual es la diferencia principal entre la elegibilidad de Medicare y Medicaid?",
+        "answer": "La elegibilidad de Medicare en 2026 se basa en la edad (65+), discapacidad via SSDI (espera de 24 meses), ESRD, o ELA. Los ingresos y activos no son factores para Medicare. La elegibilidad de Medicaid se basa en los ingresos (tipicamente 138% FPL en estados de expansion, aproximadamente $22,025/ano para un adulto soltero) y pertenecer a una categoria cubierta. Medicaid no tiene edad minima."
+      },
+      {
+        "question": "¿Puedo obtener Medicare si tengo menos de 65 anos?",
+        "answer": "Si, bajo tres circunstancias. Si recibe beneficios SSDI, es elegible para Medicare despues de 24 meses completos de pagos. Si tiene ELA, Medicare comienza el mismo mes que su SSDI es aprobado, sin periodo de espera. Si tiene enfermedad renal en etapa terminal (ESRD), Medicare comienza el primer dia de su cuarto mes de tratamiento de dialisis. Estas son las unicas vias de Medicare para menores de 65."
+      },
+      {
+        "question": "¿Que ingresos son demasiado altos para Medicaid?",
+        "answer": "En estados de expansion, adultos que ganan mas del 138% del Nivel Federal de Pobreza no califican para Medicaid de adulto de expansion. Para un adulto soltero en 2026, ese limite es aproximadamente $22,025 por ano (alrededor de $1,836/mes). En estados sin expansion (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY), los adultos sin hijos tipicamente son inelegibles sin importar sus ingresos. Los ninos y mujeres embarazadas frecuentemente califican con limites mas altos."
+      },
+      {
+        "question": "¿Medicaid tiene una prueba de activos en 2026?",
+        "answer": "La mayoria de las vias de Medicaid basadas en MAGI (que cubren adultos de expansion, ninos, mujeres embarazadas) NO tienen prueba de activos desde 2014 bajo la ACA. Sin embargo, las vias de Medicaid para ancianos y discapacitados, usadas por personas de 65+ y aquellas con discapacidades graves que necesitan cuidado a largo plazo, todavia usan una prueba de medios tradicional que cuenta activos como cuentas de ahorro."
+      },
+      {
+        "question": "¿Que significa ser doble elegible?",
+        "answer": "Doble elegible significa que califica para Medicare y Medicaid al mismo tiempo. Aproximadamente 12 millones de estadounidenses son doble elegibles en 2026. Para calificar, debe cumplir las reglas de Medicare (65+, SSDI, ESRD, o ELA) Y el limite de ingresos de Medicaid de su estado. Cuando es doble elegible, Medicare paga primero y Medicaid cubre los costos compartidos, primas y servicios que Medicare no cubre."
+      },
+      {
+        "question": "¿Como se relaciona SSDI con la elegibilidad de Medicare?",
+        "answer": "Recibir el Seguro de Discapacidad del Seguro Social (SSDI) le hace elegible para Medicare, pero con un periodo de espera de 24 meses. El reloj comienza con el primer mes que recibe beneficios en efectivo de SSDI, no la fecha de solicitud. Despues de 24 meses, la inscripcion en Medicare Partes A y B es automatica. La excepcion es ELA: las personas con ELA obtienen Medicare el mismo mes que comienza el SSDI, sin espera."
+      },
+      {
+        "question": "¿Puedo tener Medicare y Medicaid al mismo tiempo?",
+        "answer": "Si. Si cumple las reglas de elegibilidad de Medicare (edad, discapacidad, ESRD, o ELA) y tambien cumple los limites de ingresos de Medicaid de su estado, puede ser doble elegible y tener ambos simultaneamente. Medicare paga primero, luego Medicaid cubre los costos restantes. Los individuos doble elegibles tambien pueden inscribirse en Planes de Necesidades Especiales Duales (D-SNPs) para coordinar ambos programas bajo un plan."
+      },
+      {
+        "question": "¿Medicare tiene limites de ingresos?",
+        "answer": "Medicare NO tiene limite de elegibilidad por ingresos. Califica basandose en la edad, discapacidad, ESRD, o ELA, sin importar los ingresos. Sin embargo, si sus ingresos estan por encima de ciertos umbrales, paga primas mas altas de las Partes B y D via IRMAA. Para 2026, IRMAA aplica a personas con ingresos por encima de $106,000 por ano. Los ingresos altos no eliminan su beneficio de Medicare."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Check Your Medicare Eligibility", "es": "Verifique su Elegibilidad de Medicare" },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": { "en": "Medicaid Income Limits by State 2026", "es": "Limites de Ingresos de Medicaid por Estado 2026" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": { "en": "Benefits Eligibility Screener", "es": "Verificador de Elegibilidad de Beneficios" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "CMS: Original Medicare Part A and B Eligibility and Enrollment",
+      "url": "https://www.cms.gov/medicare/enrollment-renewal/original-part-a-b",
+      "note": {
+        "en": "Official CMS guidance on Medicare eligibility pathways including age, SSDI, ESRD, and ALS rules.",
+        "es": "Guia oficial de CMS sobre las vias de elegibilidad de Medicare incluyendo reglas de edad, SSDI, ESRD y ELA."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Official federal Medicaid eligibility guidance covering MAGI methodology, categorical groups, and expansion rules.",
+        "es": "Guia federal oficial de elegibilidad de Medicaid que cubre la metodologia MAGI, grupos categoricos y reglas de expansion."
+      }
+    },
+    {
+      "name": "KFF: Medicaid Eligibility Levels for Older Adults and People with Disabilities (Non-MAGI) 2026",
+      "url": "https://www.kff.org/medicaid/medicaid-eligibility-levels-for-older-adults-and-people-with-disabilities-non-magi-in-2026/",
+      "note": {
+        "en": "KFF comprehensive analysis of Medicaid eligibility rules for elderly and disabled pathways, including asset test rules.",
+        "es": "Analisis completo de KFF sobre las reglas de elegibilidad de Medicaid para ancianos y discapacitados, incluyendo reglas de prueba de activos."
+      }
+    },
+    {
+      "name": "SSA.gov: Medicare Information",
+      "url": "https://www.ssa.gov/medicare/",
+      "note": {
+        "en": "Social Security Administration official page for Medicare enrollment, including SSDI and ALS pathways.",
+        "es": "Pagina oficial de la Administracion del Seguro Social para la inscripcion en Medicare, incluyendo vias SSDI y ELA."
+      }
+    },
+    {
+      "name": "HHS 2026 Federal Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Official 2026 federal poverty level figures used to calculate Medicaid income thresholds.",
+        "es": "Cifras oficiales del nivel federal de pobreza 2026 utilizadas para calcular los umbrales de ingresos de Medicaid."
+      }
+    }
+  ]
+}
