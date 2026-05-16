@@ -17,6 +17,7 @@ import {
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
+import ReactMarkdown from 'react-markdown';
 import {
   getAllGlossarySlugs,
   getGlossaryBySlug,
@@ -183,7 +184,7 @@ export default async function GlossaryTermPage({ params }: PageProps) {
           <BlogDropCap />
 
           {data.introParagraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           {/* Annual limits table (optional) */}
@@ -271,7 +272,7 @@ export default async function GlossaryTermPage({ params }: PageProps) {
             <div key={`pre-${i}`}>
               <h2>{pickLocale(section.heading, locale)}</h2>
               {section.paragraphs.map((p, j) => (
-                <p key={j}>{pickLocale(p, locale)}</p>
+                <ReactMarkdown key={j}>{pickLocale(p, locale) || ''}</ReactMarkdown>
               ))}
               {section.list && (
                 <ul>
@@ -309,7 +310,7 @@ export default async function GlossaryTermPage({ params }: PageProps) {
             <div key={`post-${i}`}>
               <h2>{pickLocale(section.heading, locale)}</h2>
               {section.paragraphs.map((p, j) => (
-                <p key={j}>{pickLocale(p, locale)}</p>
+                <ReactMarkdown key={j}>{pickLocale(p, locale) || ''}</ReactMarkdown>
               ))}
               {section.list && (
                 <ul>

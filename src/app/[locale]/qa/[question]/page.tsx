@@ -17,6 +17,7 @@ import {
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
+import ReactMarkdown from 'react-markdown';
 import {
   getAllQASlugs,
   getQABySlug,
@@ -196,7 +197,7 @@ export default async function QAPage({ params }: PageProps) {
           <BlogDropCap />
 
           {data.introParagraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           {/* Main coverage breakdown table — only when pageType is 'coverage' (or default) */}
@@ -231,7 +232,7 @@ export default async function QAPage({ params }: PageProps) {
             <div key={`pre-${i}`}>
               <h2>{pickLocale(section.heading, locale)}</h2>
               {section.paragraphs.map((p, j) => (
-                <p key={j}>{pickLocale(p, locale)}</p>
+                <ReactMarkdown key={j}>{pickLocale(p, locale) || ''}</ReactMarkdown>
               ))}
               {section.list && (
                 <ul>
@@ -270,7 +271,7 @@ export default async function QAPage({ params }: PageProps) {
             <div key={`post-${i}`}>
               <h2>{pickLocale(section.heading, locale)}</h2>
               {section.paragraphs.map((p, j) => (
-                <p key={j}>{pickLocale(p, locale)}</p>
+                <ReactMarkdown key={j}>{pickLocale(p, locale) || ''}</ReactMarkdown>
               ))}
               {section.list && (
                 <ul>

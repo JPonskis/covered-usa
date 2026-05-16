@@ -17,6 +17,7 @@ import {
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
+import ReactMarkdown from 'react-markdown';
 import {
   getAllProcedureSlugs,
   getProcedureBySlug,
@@ -206,7 +207,7 @@ export default async function ProcedureCostPage({ params }: PageProps) {
           <BlogDropCap />
 
           {data.introParagraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           <h2>
@@ -240,7 +241,7 @@ export default async function ProcedureCostPage({ params }: PageProps) {
           </h2>
 
           {data.siteOfService.explanationParagraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
         </div>
 
@@ -274,7 +275,7 @@ export default async function ProcedureCostPage({ params }: PageProps) {
           </h2>
 
           {data.medicareSection.paragraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           <h2>
