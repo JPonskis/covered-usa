@@ -1,0 +1,608 @@
+{
+  "slug": "medicare-savings-program-by-state",
+  "subtype": "state-eligibility",
+  "topicCluster": "medicare-savings-programs-eligibility",
+  "pageType": "eligibility",
+  "question": {
+    "en": "Who Qualifies for Medicare Savings Programs (MSP) by State in 2026?",
+    "es": "¿Quién Califica para los Programas de Ahorros de Medicare (MSP) por Estado en 2026?"
+  },
+  "shortAnswer": {
+    "en": "Yes, if income is below 135% FPL. States set their own limits.",
+    "es": "Sí, si el ingreso está por debajo del 135% FPL. Los estados fijan sus propios límites."
+  },
+  "fullAnswer": {
+    "en": "Medicare Savings Programs (MSPs) help low-income Medicare beneficiaries pay Part B premiums, Part A premiums (when applicable), deductibles, and cost-sharing. There are four programs: QMB (at or below 100% FPL) pays nearly all Medicare cost-sharing; SLMB (100 to 120% FPL) and QI (120 to 135% FPL) pay the Part B premium of $202.90/month in 2026; and QDWI covers Part A premiums for working disabled individuals under 65. Federal income limits apply in most states, but many states use higher thresholds or have eliminated the resource test entirely. You apply through your state Medicaid agency, not Social Security.",
+    "es": "Los Programas de Ahorros de Medicare (MSP) ayudan a los beneficiarios de Medicare con ingresos bajos a pagar las primas de la Parte B, las primas de la Parte A (cuando aplica), deducibles y costos compartidos. Hay cuatro programas: QMB (en o por debajo del 100% FPL) paga casi todos los costos compartidos de Medicare; SLMB (100 a 120% FPL) y QI (120 a 135% FPL) pagan la prima de la Parte B de $202.90/mes en 2026; y QDWI cubre las primas de la Parte A para personas con discapacidad que trabajan y tienen menos de 65 años. Los límites de ingresos federales aplican en la mayoría de los estados, pero muchos estados usan umbrales más altos o han eliminado el examen de recursos. Se aplica a través de la agencia de Medicaid de su estado, no del Seguro Social."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Savings Programs (MSP) Eligibility by State 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "6 min read",
+
+  "stateBrand": "Medicare Savings Program",
+
+  "keyTerms": {
+    "en": [
+      "QMB Qualified Medicare Beneficiary",
+      "SLMB Specified Low-Income Medicare Beneficiary",
+      "QI Qualifying Individual",
+      "QDWI Qualified Disabled Working Individual",
+      "federal poverty level FPL",
+      "Extra Help Part D LIS"
+    ],
+    "es": [
+      "QMB Beneficiario Calificado de Medicare",
+      "SLMB Beneficiario de Medicare de Bajos Ingresos",
+      "QI Individuo Calificado",
+      "QDWI Individuo Discapacitado que Trabaja",
+      "nivel federal de pobreza FPL",
+      "Ayuda Adicional Parte D LIS"
+    ]
+  },
+
+  "isLighthouse": false,
+
+  "meta": {
+    "title": {
+      "en": "Medicare Savings Program Eligibility by State 2026 | CoveredUSA",
+      "es": "Elegibilidad MSP de Medicare por Estado 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "2026 income and resource limits for QMB, SLMB, QI, and QDWI Medicare Savings Programs by state. Find out if you qualify and how to apply.",
+      "es": "Límites de ingresos y recursos 2026 para los programas QMB, SLMB, QI y QDWI por estado. Descubra si califica y cómo solicitarlo."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Medicare Savings Program (MSP) Eligibility by State (2026)",
+      "es": "Elegibilidad del Programa de Ahorros de Medicare (MSP) por Estado (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "If you have Medicare and a limited income, you may qualify for a Medicare Savings Program (MSP) that pays some or all of your Medicare premiums, deductibles, and copays for you. In 2026, the standard Part B premium alone is $202.90 per month, so qualifying for even the most basic MSP tier saves you over $2,400 per year.",
+      "es": "Si tiene Medicare y un ingreso limitado, puede calificar para un Programa de Ahorros de Medicare (MSP) que le paga algunas o todas sus primas, deducibles y copagos de Medicare. En 2026, la prima estándar de la Parte B sola es de $202.90 al mes, así que calificar incluso para el nivel más básico de MSP le ahorra más de $2,400 al año."
+    },
+    {
+      "en": "MSPs are run by each state's Medicaid program. Federal law sets a minimum income floor, but many states have raised those limits or eliminated the resource test entirely, meaning more people qualify than the federal numbers suggest. This guide covers all four MSP tiers, the 2026 federal income and resource limits, which states are more generous, and exactly how to apply.",
+      "es": "Los MSP son administrados por el programa de Medicaid de cada estado. La ley federal establece un mínimo de ingresos, pero muchos estados han aumentado esos límites o eliminado completamente el examen de recursos, lo que significa que más personas califican de lo que sugieren las cifras federales. Esta guía cubre los cuatro niveles de MSP, los límites de ingresos y recursos federales de 2026, qué estados son más generosos y exactamente cómo solicitar."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["MSP Program", "FPL Range", "Monthly Income (Individual)", "Monthly Income (Couple)", "What It Pays"],
+      "es": ["Programa MSP", "Rango FPL", "Ingreso mensual (individual)", "Ingreso mensual (pareja)", "Qué paga"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "QMB (Qualified Medicare Beneficiary)", "es": "QMB (Beneficiario Calificado de Medicare)" },
+          { "en": "Up to 100% FPL", "es": "Hasta 100% FPL" },
+          { "value": { "en": "$1,350/mo", "es": "$1,350/mes" }, "status": "yes" },
+          { "value": { "en": "$1,824/mo", "es": "$1,824/mes" }, "status": "yes" },
+          { "en": "Part A + B premiums, deductibles, coinsurance, copays", "es": "Primas Parte A + B, deducibles, coseguro, copagos" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "SLMB (Specified Low-Income Beneficiary)", "es": "SLMB (Beneficiario de Bajos Ingresos Especificado)" },
+          { "en": "100% to 120% FPL", "es": "100% a 120% FPL" },
+          { "value": { "en": "$1,616/mo", "es": "$1,616/mes" }, "status": "partial" },
+          { "value": { "en": "$2,184/mo", "es": "$2,184/mes" }, "status": "partial" },
+          { "en": "Part B premium only ($202.90/mo in 2026)", "es": "Solo prima Parte B ($202.90/mes en 2026)" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "QI (Qualifying Individual)", "es": "QI (Individuo Calificado)" },
+          { "en": "120% to 135% FPL", "es": "120% a 135% FPL" },
+          { "value": { "en": "$1,816/mo", "es": "$1,816/mes" }, "status": "partial" },
+          { "value": { "en": "$2,455/mo", "es": "$2,455/mes" }, "status": "partial" },
+          { "en": "Part B premium only; first-come basis, enrollment may close", "es": "Solo prima Parte B; por orden de llegada, inscripción puede cerrarse" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "QDWI (Qualified Disabled Working Individual)", "es": "QDWI (Discapacitado Calificado que Trabaja)" },
+          { "en": "Up to 200% FPL (with disregards)", "es": "Hasta 200% FPL (con descuentos)" },
+          { "value": { "en": "Up to ~$5,405/mo", "es": "Hasta ~$5,405/mes" }, "status": "partial" },
+          { "value": { "en": "Up to ~$7,299/mo", "es": "Hasta ~$7,299/mes" }, "status": "partial" },
+          { "en": "Part A premium only; for working disabled under age 65", "es": "Solo prima Parte A; para discapacitados que trabajan menores de 65 años" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Income limits include the $20/month general income disregard applied federally. QDWI also applies a $65 earned-income disregard. Resource limits for QMB/SLMB/QI: $9,950 individual / $14,910 couple (2026). Many states have eliminated resource limits entirely. Limits are higher in Alaska and Hawaii.",
+      "es": "Los límites de ingresos incluyen el descuento general de ingresos de $20/mes aplicado federalmente. QDWI también aplica un descuento de ingresos ganados de $65. Límites de recursos para QMB/SLMB/QI: $9,950 individual / $14,910 pareja (2026). Muchos estados han eliminado los límites de recursos completamente. Los límites son más altos en Alaska y Hawái."
+    },
+    "source": "NCOA 2026 MSP limits, SSA.gov, Medicare.gov"
+  },
+
+  "householdSizeTable": {
+    "caption": {
+      "en": "2026 Medicare Savings Program QMB Income Limits by Household Size (48 States + DC, federal floor)",
+      "es": "Límites de ingresos QMB del Programa de Ahorros de Medicare 2026 por tamaño de hogar (48 estados + DC, piso federal)"
+    },
+    "year": 2026,
+    "rows": [
+      {
+        "size": "1",
+        "incomeLimit": {
+          "en": "$1,350/month (gross, includes $20 disregard)",
+          "es": "$1,350/mes (bruto, incluye descuento de $20)"
+        },
+        "notes": {
+          "en": "QMB at 100% FPL; SLMB limit is $1,616/mo; QI limit is $1,816/mo",
+          "es": "QMB al 100% FPL; límite SLMB es $1,616/mes; límite QI es $1,816/mes"
+        }
+      },
+      {
+        "size": "2",
+        "incomeLimit": {
+          "en": "$1,824/month (gross, includes $20 disregard)",
+          "es": "$1,824/mes (bruto, incluye descuento de $20)"
+        },
+        "notes": {
+          "en": "QMB at 100% FPL; SLMB limit is $2,184/mo; QI limit is $2,455/mo",
+          "es": "QMB al 100% FPL; límite SLMB es $2,184/mes; límite QI es $2,455/mes"
+        }
+      },
+      {
+        "size": "3",
+        "incomeLimit": {
+          "en": "~$2,298/month (QMB); ~$2,757/month (QI)",
+          "es": "~$2,298/mes (QMB); ~$2,757/mes (QI)"
+        },
+        "notes": {
+          "en": "Contact your state Medicaid office for 3-person household exact 2026 figure",
+          "es": "Contacte su agencia de Medicaid estatal para la cifra exacta de 2026 para hogar de 3 personas"
+        }
+      },
+      {
+        "size": "4",
+        "incomeLimit": {
+          "en": "~$2,772/month (QMB); ~$3,323/month (QI)",
+          "es": "~$2,772/mes (QMB); ~$3,323/mes (QI)"
+        },
+        "notes": {
+          "en": "Contact your state Medicaid office for 4-person household exact 2026 figure",
+          "es": "Contacte su agencia de Medicaid estatal para la cifra exacta de 2026 para hogar de 4 personas"
+        }
+      },
+      {
+        "size": "5",
+        "incomeLimit": {
+          "en": "~$3,246/month (QMB); ~$3,889/month (QI)",
+          "es": "~$3,246/mes (QMB); ~$3,889/mes (QI)"
+        },
+        "notes": {
+          "en": "Verify with your state; MSPs typically follow Medicaid household counting rules",
+          "es": "Verifique con su estado; los MSP generalmente siguen las reglas de conteo de hogares de Medicaid"
+        }
+      },
+      {
+        "size": "6",
+        "incomeLimit": {
+          "en": "~$3,720/month (QMB); ~$4,459/month (QI)",
+          "es": "~$3,720/mes (QMB); ~$4,459/mes (QI)"
+        },
+        "notes": {
+          "en": "Verify with your state Medicaid agency for exact figures",
+          "es": "Verifique con su agencia de Medicaid estatal para cifras exactas"
+        }
+      },
+      {
+        "size": "7",
+        "incomeLimit": {
+          "en": "~$4,194/month (QMB); ~$5,025/month (QI)",
+          "es": "~$4,194/mes (QMB); ~$5,025/mes (QI)"
+        },
+        "notes": {
+          "en": "Verify with your state Medicaid agency for exact figures",
+          "es": "Verifique con su agencia de Medicaid estatal para cifras exactas"
+        }
+      },
+      {
+        "size": "8",
+        "incomeLimit": {
+          "en": "~$4,668/month (QMB); ~$5,593/month (QI)",
+          "es": "~$4,668/mes (QMB); ~$5,593/mes (QI)"
+        },
+        "notes": {
+          "en": "Verify with your state Medicaid agency for exact figures",
+          "es": "Verifique con su agencia de Medicaid estatal para cifras exactas"
+        }
+      },
+      {
+        "size": "Each additional",
+        "incomeLimit": {
+          "en": "+~$474/month per additional person (QMB)",
+          "es": "+~$474/mes por persona adicional (QMB)"
+        },
+        "notes": {
+          "en": "Based on 2026 FPL increment of $4,540/year ($378/mo) plus $20 disregard; verify with state",
+          "es": "Basado en el incremento FPL 2026 de $4,540/año ($378/mes) más descuento de $20; verificar con el estado"
+        }
+      }
+    ],
+    "footnote": {
+      "en": "The household-size table above shows the QMB federal floor (100% FPL + $20 disregard) with approximate QI ceiling (135% FPL + $20 disregard). Rows 3 through 8 and 'each additional' are calculated from the 2026 FPL scale and should be confirmed with your state. Many states have higher limits. Alaska and Hawaii have separate, higher FPL tables.",
+      "es": "La tabla de tamaño de hogar anterior muestra el piso federal de QMB (100% FPL + descuento de $20) con el techo aproximado de QI (135% FPL + descuento de $20). Las filas 3 a 8 y 'cada adicional' se calculan a partir de la escala FPL 2026 y deben confirmarse con su estado. Muchos estados tienen límites más altos. Alaska y Hawái tienen tablas FPL separadas y más altas."
+    },
+    "source": "2026 Federal Poverty Level guidelines (HHS), SSA.gov MSP limits, NCOA"
+  },
+
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Step 1: Check income and resources. Use the 2026 limits in the table above. Remember to subtract the $20/month general income disregard from your gross monthly income before comparing.",
+        "es": "Paso 1: Verifique ingresos y recursos. Use los límites de 2026 en la tabla anterior. Recuerde restar el descuento general de ingresos de $20/mes de su ingreso mensual bruto antes de comparar."
+      },
+      {
+        "en": "Step 2: Contact your state Medicaid agency. MSPs are NOT administered by Social Security. Go to medicaid.gov or call your state's Medicaid office to request an MSP application form.",
+        "es": "Paso 2: Contacte su agencia de Medicaid estatal. Los MSP NO son administrados por el Seguro Social. Vaya a medicaid.gov o llame a la oficina de Medicaid de su estado para solicitar un formulario de solicitud de MSP."
+      },
+      {
+        "en": "Step 3: Complete and submit the MSP application with your supporting documents. Some states offer online applications; others require mailing or visiting an office.",
+        "es": "Paso 3: Complete y envíe la solicitud de MSP con sus documentos de respaldo. Algunos estados ofrecen solicitudes en línea; otros requieren envío por correo o visita a una oficina."
+      },
+      {
+        "en": "Step 4: Wait for a determination. By law, states must process MSP applications within 45 days.",
+        "es": "Paso 4: Espere una determinación. Por ley, los estados deben procesar las solicitudes de MSP en 45 días."
+      },
+      {
+        "en": "Step 5: If approved, your state will notify Social Security to stop billing you for the Part B premium. QI beneficiaries must reapply each year because QI runs on an annual federal block grant.",
+        "es": "Paso 5: Si es aprobado, su estado notificará al Seguro Social para que deje de cobrarle la prima de la Parte B. Los beneficiarios de QI deben volver a solicitar cada año porque QI funciona con un subsidio federal anual."
+      },
+      {
+        "en": "Step 6: Check if you also qualify for Extra Help (Low Income Subsidy) for Part D. QMB, SLMB, and QI enrollment automatically qualifies you for Extra Help, which reduces prescription drug costs significantly.",
+        "es": "Paso 6: Verifique si también califica para Ayuda Adicional (Subsidio de Bajos Ingresos) para la Parte D. La inscripción en QMB, SLMB y QI lo califica automáticamente para Ayuda Adicional, lo que reduce significativamente los costos de medicamentos."
+      }
+    ],
+    "govStartingUrl": "https://www.medicaid.gov/about-us/contact-us/index.html",
+    "documentsNeeded": [
+      { "en": "Medicare card (showing Part A and Part B enrollment)", "es": "Tarjeta de Medicare (que muestre la inscripción en la Parte A y la Parte B)" },
+      { "en": "Proof of income: Social Security award letter, pay stubs, or pension statement", "es": "Prueba de ingresos: carta de concesión del Seguro Social, talones de pago o estado de cuenta de pensión" },
+      { "en": "Photo ID or Social Security card", "es": "Identificación con foto o tarjeta del Seguro Social" },
+      { "en": "Proof of resources if your state requires: bank statements, investment account statements (last 2 to 3 months)", "es": "Prueba de recursos si su estado lo requiere: estados de cuenta bancarios, estados de cuenta de inversión (últimos 2 a 3 meses)" },
+      { "en": "Proof of residency: utility bill or lease agreement", "es": "Prueba de residencia: recibo de servicios públicos o contrato de arrendamiento" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Income is above the state's MSP limit for your household size", "es": "El ingreso está por encima del límite de MSP del estado para el tamaño de su hogar" },
+      { "en": "Resources exceed the limit (though many states have no resource test)", "es": "Los recursos exceden el límite (aunque muchos estados no tienen examen de recursos)" },
+      { "en": "Not enrolled in Medicare Part A and Part B", "es": "No estar inscrito en Medicare Parte A y Parte B" },
+      { "en": "QI program closed for the year due to funding cap", "es": "Programa QI cerrado por el año debido al límite de financiamiento" }
+    ],
+    "deadline": {
+      "en": "QMB, SLMB, and QDWI are available year-round with no enrollment deadline. QI is funded by an annual federal block grant and may close to new applicants once the cap is reached, so apply early in the calendar year.",
+      "es": "QMB, SLMB y QDWI están disponibles durante todo el año sin fecha límite de inscripción. QI es financiado por un subsidio federal anual y puede cerrarse para nuevos solicitantes una vez que se alcanza el límite, así que solicite temprano en el año calendario."
+    }
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "What Each MSP Program Covers in 2026",
+        "es": "Qué cubre cada programa MSP en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The four MSP tiers provide different levels of financial relief. QMB is the most comprehensive. SLMB and QI are narrower but still valuable because the Part B premium of $202.90 per month in 2026 adds up to $2,434.80 per year.",
+          "es": "Los cuatro niveles de MSP ofrecen diferentes niveles de alivio financiero. QMB es el más completo. SLMB y QI son más limitados pero siguen siendo valiosos porque la prima de la Parte B de $202.90 al mes en 2026 suma $2,434.80 al año."
+        }
+      ],
+      "list": [
+        {
+          "en": "QMB: Part A premium (if you do not have premium-free Part A), Part B premium ($202.90/mo), Part A inpatient deductible ($1,736 per benefit period in 2026), Part B deductible ($283 in 2026), and all Medicare coinsurance and copays.",
+          "es": "QMB: Prima de la Parte A (si no tiene la Parte A sin prima), prima de la Parte B ($202.90/mes), deducible de hospitalización de la Parte A ($1,736 por período de beneficio en 2026), deducible de la Parte B ($283 en 2026) y todos los coseguros y copagos de Medicare."
+        },
+        {
+          "en": "SLMB: Part B premium only. You still pay Part A costs, deductibles, and coinsurance.",
+          "es": "SLMB: Solo la prima de la Parte B. Usted sigue pagando los costos de la Parte A, deducibles y coseguros."
+        },
+        {
+          "en": "QI: Part B premium only, same as SLMB. QI is funded by a federal block grant and enrollment closes when funding runs out each year. Reapply annually.",
+          "es": "QI: Solo la prima de la Parte B, igual que SLMB. QI es financiado por un subsidio federal y la inscripción se cierra cuando el financiamiento se agota cada año. Vuelva a solicitar anualmente."
+        },
+        {
+          "en": "QDWI: Part A premium only (up to $565/month in 2026 for those with fewer than 30 quarters of Medicare-covered work). For working individuals under 65 who lost premium-free Part A when they returned to work.",
+          "es": "QDWI: Solo prima de la Parte A (hasta $565/mes en 2026 para quienes tienen menos de 30 trimestres de trabajo cubierto por Medicare). Para personas menores de 65 años con discapacidad que perdieron la Parte A sin prima cuando regresaron al trabajo."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "States With Higher Income Limits or No Resource Test",
+        "es": "Estados con límites de ingresos más altos o sin examen de recursos"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal law sets a minimum floor for MSP eligibility, but states can be more generous. As of 2026, the following states have eliminated the resource test for MSPs, meaning you qualify based on income alone regardless of savings or other assets: Alabama, Arizona, Connecticut, Delaware, Louisiana, Maine, Massachusetts, Mississippi, New Mexico, New York, Oregon, Vermont, and the District of Columbia.",
+          "es": "La ley federal establece un mínimo para la elegibilidad de MSP, pero los estados pueden ser más generosos. A partir de 2026, los siguientes estados han eliminado el examen de recursos para MSP, lo que significa que califica solo en base a ingresos independientemente de ahorros u otros activos: Alabama, Arizona, Connecticut, Delaware, Louisiana, Maine, Massachusetts, Mississippi, Nuevo Mexico, Nueva York, Oregon, Vermont y el Distrito de Columbia."
+        },
+        {
+          "en": "California has a very high resource limit of $130,000 for individuals and $195,000 for couples in 2026, which effectively functions like no limit for most applicants. Some states also use higher income thresholds than the federal floor, and a handful cover categories of people who do not qualify under the federal rules. If you live in any of the 40 states that have expanded Medicaid, you may also qualify for full Medicaid, which provides additional coverage on top of MSP benefits.",
+          "es": "California tiene un límite de recursos muy alto de $130,000 para personas individuales y $195,000 para parejas en 2026, lo que efectivamente funciona como sin límite para la mayoría de los solicitantes. Algunos estados también usan umbrales de ingresos más altos que el piso federal, y algunos cubren categorías de personas que no califican bajo las reglas federales. Si vive en cualquiera de los 40 estados que han expandido Medicaid, también puede calificar para Medicaid completo, que proporciona cobertura adicional además de los beneficios de MSP."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "States with no MSP resource test as of 2026",
+          "es": "Estados sin examen de recursos MSP a partir de 2026"
+        },
+        "headers": {
+          "en": ["State", "Resource Test", "Notes"],
+          "es": ["Estado", "Examen de recursos", "Notas"]
+        },
+        "rows": [
+          {
+            "en": ["Alabama", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Alabama", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["Arizona", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Arizona", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["California", "$130,000 individual / $195,000 couple", "Very high limit; effectively no limit for most"],
+            "es": ["California", "$130,000 individual / $195,000 pareja", "Límite muy alto; efectivamente sin límite para la mayoría"]
+          },
+          {
+            "en": ["Connecticut", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Connecticut", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["Delaware", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Delaware", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["Louisiana", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Louisiana", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["Maine", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Maine", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["Massachusetts", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Massachusetts", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["Mississippi", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Mississippi", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["New Mexico", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Nuevo Mexico", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["New York", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Nueva York", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["Oregon", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Oregon", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["Vermont", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["Vermont", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          },
+          {
+            "en": ["DC", "None", "Income-only test for QMB/SLMB/QI"],
+            "es": ["DC", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+          }
+        ],
+        "footnote": {
+          "en": "All other states use the federal resource limits: $9,950 for individuals and $14,910 for couples in 2026 (certain assets are excluded, including your primary home, one car, personal belongings, and life insurance with cash value up to $1,500). Contact your state Medicaid agency for the current rules.",
+          "es": "Todos los demás estados usan los límites de recursos federales: $9,950 para individuos y $14,910 para parejas en 2026 (ciertos activos están excluidos, incluyendo su residencia principal, un automóvil, pertenencias personales y seguro de vida con valor en efectivo hasta $1,500). Contacte su agencia de Medicaid estatal para las reglas actuales."
+        },
+        "source": "NCOA, MedicareInteractive.org, state Medicaid agencies"
+      }
+    },
+    {
+      "heading": {
+        "en": "Extra Help and Part D: The Automatic Bonus of MSP Enrollment",
+        "es": "Ayuda Adicional y Parte D: El bono automatico de la inscripcion en MSP"
+      },
+      "paragraphs": [
+        {
+          "en": "When you are enrolled in QMB, SLMB, or QI, you automatically qualify for Extra Help (also called the Low Income Subsidy, or LIS) for Medicare Part D prescription drug coverage. This happens automatically, without a separate application. Extra Help in 2026 caps your out-of-pocket Part D drug costs and reduces or eliminates monthly plan premiums. In 2026, the Part D out-of-pocket cap for all beneficiaries is $2,100, and Extra Help beneficiaries pay far less, often $0 to $4.50 per generic and $0 to $11.20 per brand-name drug.",
+          "es": "Cuando está inscrito en QMB, SLMB o QI, califica automáticamente para Ayuda Adicional (también llamada Subsidio de Bajos Ingresos, o LIS) para la cobertura de medicamentos recetados de la Parte D de Medicare. Esto sucede automáticamente, sin una solicitud separada. La Ayuda Adicional en 2026 limita sus costos de medicamentos de la Parte D de su bolsillo y reduce o elimina las primas mensuales del plan. En 2026, el tope de gastos de la Parte D para todos los beneficiarios es $2,100, y los beneficiarios de Ayuda Adicional pagan mucho menos, a menudo $0 a $4.50 por genérico y $0 a $11.20 por medicamento de marca."
+        },
+        {
+          "en": "QDWI enrollment does not automatically confer Extra Help, but QDWI beneficiaries may apply separately for Extra Help if their income and resources fall within Part D LIS limits.",
+          "es": "La inscripción en QDWI no confiere automáticamente Ayuda Adicional, pero los beneficiarios de QDWI pueden solicitar Ayuda Adicional por separado si sus ingresos y recursos están dentro de los límites del LIS de la Parte D."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Does Not Count as Income or a Resource for MSP",
+        "es": "Qué no se cuenta como ingreso o recurso para MSP"
+      },
+      "paragraphs": [
+        {
+          "en": "Many people incorrectly assume they do not qualify because they own a home or have some savings. The MSP rules exclude several common assets and income sources from the calculation.",
+          "es": "Muchas personas asumen incorrectamente que no califican porque son dueñas de una casa o tienen algunos ahorros. Las reglas de MSP excluyen varios activos e ingresos comunes del cálculo."
+        }
+      ],
+      "list": [
+        {
+          "en": "Resources NOT counted: your primary home, one car, household furnishings and personal items, life insurance with cash value up to $1,500, burial plot, and burial fund up to $1,500.",
+          "es": "Recursos que NO se cuentan: su residencia principal, un automóvil, muebles del hogar y artículos personales, seguro de vida con valor en efectivo hasta $1,500, lote de entierro y fondo de entierro hasta $1,500."
+        },
+        {
+          "en": "Income NOT counted: $20/month general income disregard (applied first, before any other rule); $65/month earned income disregard for QDWI; SNAP benefits; energy assistance payments.",
+          "es": "Ingresos que NO se cuentan: descuento general de ingresos de $20/mes (aplicado primero, antes de cualquier otra regla); descuento de ingresos ganados de $65/mes para QDWI; beneficios SNAP; pagos de asistencia de energía."
+        },
+        {
+          "en": "Some states exclude additional income sources. For example, several states do not count part-time earned income or certain types of pension income. Check with your state Medicaid agency.",
+          "es": "Algunos estados excluyen fuentes de ingresos adicionales. Por ejemplo, varios estados no cuentan ingresos ganados a tiempo parcial o ciertos tipos de ingresos de pensión. Consulte con su agencia de Medicaid estatal."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "MSP and Medicaid: The Dual-Eligible Angle",
+        "es": "MSP y Medicaid: El angulo de doble elegibilidad"
+      },
+      "paragraphs": [
+        {
+          "en": "If your income is low enough to qualify for QMB and you also meet your state's full Medicaid income limits, you may qualify as fully dual-eligible (Medicare plus full Medicaid). Full dual-eligibles get all MSP benefits plus Medicaid coverage for services Medicare does not cover, such as dental, vision, hearing, and long-term care. About 12 million Americans are currently dual-eligible. The 40 states that have expanded Medicaid under the ACA have higher Medicaid income limits, making dual eligibility more accessible.",
+          "es": "Si su ingreso es suficientemente bajo para calificar para QMB y también cumple los límites de ingresos de Medicaid completo de su estado, puede calificar como completamente dualmente elegible (Medicare más Medicaid completo). Los completamente dualmente elegibles obtienen todos los beneficios de MSP más la cobertura de Medicaid para servicios que Medicare no cubre, como dental, visión, audición y atención a largo plazo. Alrededor de 12 millones de estadounidenses son actualmente dualmente elegibles. Los 40 estados que han expandido Medicaid bajo la ACA tienen límites de ingresos de Medicaid más altos, haciendo que la doble elegibilidad sea más accesible."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the income limit for the Medicare Savings Program in 2026?",
+        "answer": "The 2026 federal income limits are: QMB (100% FPL) up to $1,350/month individual or $1,824/month couple; SLMB (120% FPL) up to $1,616/month individual or $2,184/month couple; QI (135% FPL) up to $1,816/month individual or $2,455/month couple. These include the $20/month general income disregard. Many states have higher limits, so always check with your state Medicaid agency even if you think you are over the limit."
+      },
+      {
+        "question": "Does the Medicare Savings Program cover Part A costs?",
+        "answer": "QMB (the most generous tier) covers Part A premiums if you do not have premium-free Part A, plus the Part A inpatient deductible of $1,736 per benefit period in 2026, and all Part A coinsurance. SLMB, QI, and most other MSP tiers cover Part B premium only. QDWI covers Part A premium only for working disabled individuals under 65."
+      },
+      {
+        "question": "Do I have to apply for the Medicare Savings Program through Social Security?",
+        "answer": "No. You apply for MSPs through your state Medicaid agency, NOT the Social Security Administration. Look up your state's Medicaid office at medicaid.gov/about-us/contact-us or call 1-800-MEDICARE (1-800-633-4227) to be connected to your state. Once approved, your state notifies Social Security to stop billing you for the Part B premium."
+      },
+      {
+        "question": "What is the asset limit for the Medicare Savings Program in 2026?",
+        "answer": "For most states in 2026, the resource limit is $9,950 for individuals and $14,910 for couples (QMB, SLMB, QI). These limits exclude your home, car, household belongings, and a burial fund up to $1,500. However, 12 states plus DC have eliminated the resource test entirely: AL, AZ, CT, DE, LA, MA, ME, MS, NM, NY, OR, VT, and DC. California allows up to $130,000/$195,000."
+      },
+      {
+        "question": "Does QI enrollment renew automatically or do I have to reapply each year?",
+        "answer": "QI (Qualifying Individual) does NOT renew automatically. Because QI is funded by an annual federal block grant with a funding cap, you must reapply every year. Applications open at the beginning of each calendar year and close when the funding cap is reached. Apply early in the year to secure your spot. QMB and SLMB do renew through the standard Medicaid renewal process (annual review in most states)."
+      },
+      {
+        "question": "If I qualify for an MSP, do I automatically get Extra Help for Part D?",
+        "answer": "Yes. Enrollment in QMB, SLMB, or QI automatically qualifies you for Extra Help (the Part D Low Income Subsidy) with no separate application needed. Extra Help in 2026 caps your Part D drug costs and typically reduces or eliminates your monthly plan premium. The 2026 Part D out-of-pocket cap is $2,100 for all beneficiaries; Extra Help members pay far less."
+      },
+      {
+        "question": "What is QDWI and who qualifies?",
+        "answer": "QDWI (Qualified Disabled Working Individual) is the fourth MSP tier, designed for a narrow group: people under age 65 with a disability who returned to work, lost their premium-free Part A as a result, and need help paying the Part A premium. In 2026, QDWI income limits are much higher than other MSPs (up to about $5,405/month individual with disregards). The program covers Part A premium only and has lower resource limits of $4,000 individual/$6,000 couple."
+      },
+      {
+        "question": "Can I qualify for an MSP if my state has not expanded Medicaid?",
+        "answer": "Yes. MSPs are separate from the ACA Medicaid expansion and exist in all 50 states and DC regardless of expansion status. Even in non-expansion states like Texas and Florida, you can qualify for QMB, SLMB, QI, or QDWI if you meet the income limits, because MSPs are federally mandated. What you cannot get in a non-expansion state is full Medicaid coverage alongside Medicare."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es el límite de ingresos para el Programa de Ahorros de Medicare en 2026?",
+        "answer": "Los límites de ingresos federales de 2026 son: QMB (100% FPL) hasta $1,350/mes individual o $1,824/mes pareja; SLMB (120% FPL) hasta $1,616/mes individual o $2,184/mes pareja; QI (135% FPL) hasta $1,816/mes individual o $2,455/mes pareja. Estos incluyen el descuento general de ingresos de $20/mes. Muchos estados tienen límites más altos, así que siempre verifique con su agencia de Medicaid estatal incluso si cree que supera el límite."
+      },
+      {
+        "question": "¿El Programa de Ahorros de Medicare cubre los costos de la Parte A?",
+        "answer": "QMB (el nivel más generoso) cubre las primas de la Parte A si no tiene la Parte A sin prima, más el deducible de hospitalización de la Parte A de $1,736 por período de beneficio en 2026, y todo el coseguro de la Parte A. SLMB, QI y la mayoría de los otros niveles de MSP cubren solo la prima de la Parte B. QDWI cubre solo la prima de la Parte A para personas con discapacidad que trabajan y tienen menos de 65 años."
+      },
+      {
+        "question": "¿Tengo que solicitar el Programa de Ahorros de Medicare a través del Seguro Social?",
+        "answer": "No. Solicita los MSP a través de su agencia de Medicaid estatal, NO la Administración del Seguro Social. Busque la oficina de Medicaid de su estado en medicaid.gov/about-us/contact-us o llame al 1-800-MEDICARE (1-800-633-4227) para conectarse con su estado. Una vez aprobado, su estado notifica al Seguro Social para que deje de cobrarle la prima de la Parte B."
+      },
+      {
+        "question": "¿Cuál es el límite de activos para el Programa de Ahorros de Medicare en 2026?",
+        "answer": "Para la mayoría de los estados en 2026, el límite de recursos es $9,950 para individuos y $14,910 para parejas (QMB, SLMB, QI). Estos límites excluyen su casa, automóvil, pertenencias del hogar y un fondo de entierro hasta $1,500. Sin embargo, 12 estados más DC han eliminado el examen de recursos completamente: AL, AZ, CT, DE, LA, MA, ME, MS, NM, NY, OR, VT y DC. California permite hasta $130,000/$195,000."
+      },
+      {
+        "question": "¿La inscripción en QI se renueva automáticamente o tengo que volver a solicitar cada año?",
+        "answer": "QI (Individuo Calificado) NO se renueva automáticamente. Debido a que QI es financiado por un subsidio federal anual con un límite de financiamiento, debe volver a solicitar cada año. Las solicitudes abren al comienzo de cada año calendario y se cierran cuando se alcanza el límite de financiamiento. Solicite temprano en el año para asegurar su lugar. QMB y SLMB se renuevan a través del proceso estándar de renovación de Medicaid."
+      },
+      {
+        "question": "Si califico para un MSP, ¿automáticamente obtengo Ayuda Adicional para la Parte D?",
+        "answer": "Sí. La inscripción en QMB, SLMB o QI lo califica automáticamente para Ayuda Adicional (el Subsidio de Bajos Ingresos de la Parte D) sin necesidad de una solicitud separada. La Ayuda Adicional en 2026 limita sus costos de medicamentos de la Parte D y típicamente reduce o elimina su prima mensual del plan. El tope de gastos de la Parte D de 2026 es $2,100 para todos los beneficiarios; los miembros de Ayuda Adicional pagan mucho menos."
+      },
+      {
+        "question": "¿Qué es QDWI y quién califica?",
+        "answer": "QDWI (Individuo Discapacitado que Trabaja Calificado) es el cuarto nivel de MSP, diseñado para un grupo reducido: personas menores de 65 años con discapacidad que regresaron al trabajo, perdieron su Parte A sin prima como resultado, y necesitan ayuda para pagar la prima de la Parte A. En 2026, los límites de ingresos de QDWI son mucho más altos que otros MSP (hasta aproximadamente $5,405/mes individual con descuentos). El programa cubre solo la prima de la Parte A y tiene límites de recursos más bajos de $4,000 individual/$6,000 pareja."
+      },
+      {
+        "question": "¿Puedo calificar para un MSP si mi estado no ha expandido Medicaid?",
+        "answer": "Sí. Los MSP son separados de la expansión de Medicaid de la ACA y existen en los 50 estados y DC independientemente del estado de expansión. Incluso en estados sin expansión como Texas y Florida, puede calificar para QMB, SLMB, QI o QDWI si cumple los límites de ingresos, porque los MSP son obligatorios por ley federal. Lo que no puede obtener en un estado sin expansión es la cobertura completa de Medicaid junto con Medicare."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Check Medicare Eligibility",
+        "es": "Verifique la elegibilidad de Medicare"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits by State",
+        "es": "Límites de ingresos de Medicaid por estado"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "2026 Federal Poverty Level Chart",
+        "es": "Tabla del Nivel Federal de Pobreza 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Find Out What Benefits You Qualify For",
+        "es": "Descubra a qué beneficios califica"
+      },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicare.gov: Medicare Savings Programs",
+      "url": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+      "note": {
+        "en": "Official CMS page describing all four MSP tiers, what they cover, and how to apply.",
+        "es": "Página oficial de CMS que describe los cuatro niveles de MSP, qué cubren y cómo solicitarlos."
+      }
+    },
+    {
+      "name": "SSA.gov: Medicare Savings Programs",
+      "url": "https://www.ssa.gov/medicare/medicare-information/medicare-savings-programs",
+      "note": {
+        "en": "Social Security Administration overview of MSP income and resource limits for 2026.",
+        "es": "Descripción general de la Administración del Seguro Social de los límites de ingresos y recursos de MSP para 2026."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Contact Your State Medicaid Agency",
+      "url": "https://www.medicaid.gov/about-us/contact-us/index.html",
+      "note": {
+        "en": "Directory of state Medicaid agencies where MSP applications are submitted.",
+        "es": "Directorio de agencias de Medicaid estatales donde se presentan las solicitudes de MSP."
+      }
+    },
+    {
+      "name": "NCOA: What Are the 4 Types of Medicare Savings Programs? (2026)",
+      "url": "https://www.ncoa.org/article/what-are-the-4-types-of-medicare-savings-programs/",
+      "note": {
+        "en": "National Council on Aging detailed breakdown of 2026 MSP income and resource limits including Alaska and Hawaii figures.",
+        "es": "Desglose detallado del Consejo Nacional sobre el Envejecimiento de los límites de ingresos y recursos de MSP de 2026 incluyendo cifras de Alaska y Hawái."
+      }
+    },
+    {
+      "name": "Center for Medicare Advocacy: Medicare Savings Programs",
+      "url": "https://medicareadvocacy.org/medicare-info/medicare-savings-programs/",
+      "note": {
+        "en": "Advocacy organization summary of MSP coverage details, income disregards, and application process.",
+        "es": "Resumen de la organización de defensa sobre detalles de cobertura de MSP, descuentos de ingresos y proceso de solicitud."
+      }
+    }
+  ]
+}
