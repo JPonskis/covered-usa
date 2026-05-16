@@ -1,18 +1,29 @@
 #!/usr/bin/env node
 // CoveredUSA Drip Publish — Phase 1 of the bulk-production pipeline.
 //
-// Reads the "Master Backlog" tab on the CoveredUSA Sheet, finds rows with
-// Status=Ready, derives the expected JSON file path per template, verifies the
-// file exists in this repo, then commits + pushes them in a single batch.
+// ARCHITECTURE (staging-branch flow, since 2026-05-15):
+//   1. Bulk producers write JSON files to the `drip-queue` git branch (NOT
+//      main). Vercel auto-deploys main only, so files on drip-queue stay
+//      hidden. This branch is the queue.
+//   2. Producers mark Master Backlog rows Status=Ready in the Google Sheet
+//      once their JSON is on drip-queue.
+//   3. This cron (daily 02:00 UTC) reads Status=Ready rows, sorts by
+//      priority + demand, picks up to MAX_PER_DAY, then for each one runs
+//      `git checkout origin/drip-queue -- <path>` to promote that file
+//      from drip-queue into main's working tree, then commits + pushes
+//      main → Vercel deploys those N pages.
+//   4. Cron sleeps for Vercel, submits the URLs to IndexNow (Bing/Yandex),
+//      then stamps Master Backlog with Status=Published / PublishedDate /
+//      PublishedURL. If a row had a sheet_row_id back-ref to SEO Ideas, it
+//      appends a note to that source row.
 //
-// After push it sleeps for Vercel deploy, submits the new live URLs to
-// IndexNow (Bing/Yandex), and stamps the Master Backlog row with
-// Status=Published / PublishedDate / PublishedURL. If the row was migrated
-// from SEO Ideas (sheet_row_id populated), it also appends a back-reference
-// note to that source row.
+// Backwards-compatible: if drip-queue doesn't exist on origin (legacy state
+// or first run), the cron falls back to "main-only" mode and just publishes
+// files already present on main. This is what happens for content the
+// human pushes directly to main as a one-off.
 //
 // PURE PUBLISHER — no writing, no AI calls, no JSON generation. Pages must
-// already exist on disk under content/data/<subdir>/.
+// exist either on `drip-queue` (preferred) or already on main.
 //
 // Usage:
 //   node scripts/coveredusa-drip-publish.js              # ship up to MAX_PER_DAY
@@ -340,6 +351,21 @@ async function main() {
   const candidates = ready.slice(0, limit);
   console.log(`[2] Top ${candidates.length} candidates after sort + cap.`);
 
+  // ── Step 2.5: fetch latest drip-queue ref so we can promote staged files ──
+  // Architecture: bulk-production writes JSON files to the `drip-queue` branch
+  // (Vercel ignores it). The cron promotes N files/day from drip-queue → main.
+  // This gives us a true 15/day publish throttle even when many files are
+  // queued. If drip-queue doesn't exist (e.g. legacy push-to-main flow), we
+  // fall back to main-only mode and just check fs.existsSync.
+  let dripQueueAvailable = false;
+  try {
+    sh('git fetch origin drip-queue 2>&1 || git fetch origin drip-queue:refs/remotes/origin/drip-queue 2>&1');
+    dripQueueAvailable = true;
+    console.log('  [✓] drip-queue branch fetched.');
+  } catch (e) {
+    console.warn('  [!] drip-queue branch not found on origin — running in main-only mode.');
+  }
+
   // Resolve file paths + URLs.
   const shipReady = [];
   const skipped = [];
@@ -354,13 +380,33 @@ async function main() {
       skipped.push({ row, reason: `bad route "${row.route}"` });
       continue;
     }
+    // If the file isn't already on main's working tree, try to promote it
+    // from drip-queue. `git checkout origin/drip-queue -- <path>` brings it
+    // into the working tree AND stages it in one shot.
+    let promotedFromQueue = false;
+    if (!fs.existsSync(filePath) && dripQueueAvailable) {
+      const relPath = path.relative(REPO_ROOT, filePath);
+      try {
+        execSync(`git checkout origin/drip-queue -- "${relPath}"`, {
+          cwd: REPO_ROOT, stdio: ['ignore', 'pipe', 'pipe'], encoding: 'utf8',
+        });
+        if (fs.existsSync(filePath)) {
+          promotedFromQueue = true;
+          console.log(`  [↓] Promoted from drip-queue: ${relPath}`);
+        }
+      } catch (e) {
+        // File not on drip-queue either — fall through to skip.
+      }
+    }
     if (!fs.existsSync(filePath)) {
-      skipped.push({ row, reason: `file missing: ${path.relative(REPO_ROOT, filePath)}` });
+      const where = dripQueueAvailable ? 'main AND drip-queue' : 'main';
+      skipped.push({ row, reason: `file missing on ${where}: ${path.relative(REPO_ROOT, filePath)}` });
       continue;
     }
     row._filePath = filePath;
     row._liveUrl = liveUrl;
     row._relPath = path.relative(REPO_ROOT, filePath);
+    row._promotedFromQueue = promotedFromQueue;
     shipReady.push(row);
   }
 

@@ -1,7 +1,6 @@
 # Jacob Workflow — How to Write a CoveredUSA Page
 
-**Version:** 1.0
-**Date:** 2026-05-15
+**Version:** 1.1 (staging-branch flow as of 2026-05-15 evening)
 **Audience:** Jacob (the human writing pages). Companion ops doc for Phase 4 of `BUILD_PLAN.md`.
 **Companion files:** `JACOB_QUEUE_TOP_50.md` (auto-regenerable next-50 queue), `MASTER_BACKLOG.csv` (full 2,344-row backlog), `BUILD_PLAN.md` (the plan you signed off on).
 
@@ -9,7 +8,39 @@
 
 ## 1. The high-level flow (one paragraph)
 
-Open the Master Backlog tab, switch to the "Group 1: Ready to Write" filter view, pick the top row, spawn the writer agent named for that template with the row's TOPIC/STATE/YEAR args, the writer drops a JSON file at the conventional `content/data/<subdir>/<slug>.json` path while the verifier auto-fixes drift, you mark Status=Ready in column S, and the daily 2am UTC drip cron commits + pushes + IndexNow-pings + flips Status=Published. Repeat. No batching, no waves, no manual deploys.
+Open the Master Backlog tab, switch to the "Group 1: Ready to Write" filter view, pick the top row, spawn the writer agent named for that template with the row's TOPIC/STATE/YEAR args. The writer drops a JSON file at the conventional `content/data/<subdir>/<slug>.json` path while the verifier auto-fixes drift. You commit the file to the **`drip-queue`** branch (NOT main — Vercel ignores drip-queue so the page stays hidden), push, then mark Status=Ready in column S of the Master Backlog. The daily 2am UTC drip cron picks the top 15 Status=Ready rows, promotes those JSON files from `drip-queue` → `main` via `git checkout`, pushes main, IndexNow-pings, and flips Status=Published. Repeat as fast as you can write. No matter how many you queue, only 15/day go live.
+
+---
+
+## 1.5. CRITICAL: where to commit your finished JSON files
+
+**Always commit to the `drip-queue` branch. Never push to main directly.**
+
+Why: pushing JSON to main triggers an immediate Vercel deploy → page goes live the same minute. That bypasses the drip throttle and risks Bing seeing a publishing spike. The whole staging-branch architecture exists to make sure go-live is paced at 15/day regardless of how fast you write.
+
+The flow looks like this:
+
+```bash
+# 1. You wrote a new page (writer agent dropped the file on disk)
+ls content/data/procedures/cataract-surgery.json   # exists, on main's working tree
+
+# 2. Switch to drip-queue and commit there
+git checkout drip-queue
+git pull origin drip-queue
+git add content/data/procedures/cataract-surgery.json
+git commit -m "drip-queue: cataract-surgery procedure"
+git push origin drip-queue
+
+# 3. Switch back to main (clean working tree on main; the file is now ONLY on drip-queue)
+git checkout main
+
+# 4. Mark the Master Backlog row Status=Ready in the Sheet (column S)
+# Tomorrow's 2am UTC cron will pick it up + ship to main + IndexNow.
+```
+
+The drip-publish cron handles the rest: reads Master Backlog for Status=Ready rows, picks top 15 by priority + demand, runs `git checkout origin/drip-queue -- <path>` to bring each file into main's working tree, commits + pushes main, sleeps 60s for Vercel, IndexNow-submits, marks Status=Published.
+
+**If a file is already on main** (e.g., one-off direct push or older content), the cron just publishes from there — backwards compatible.
 
 ---
 
