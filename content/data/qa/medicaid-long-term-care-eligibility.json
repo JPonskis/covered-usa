@@ -1,0 +1,536 @@
+{
+  "slug": "medicaid-long-term-care-eligibility",
+  "subtype": "state-eligibility",
+  "pageType": "eligibility",
+  "topicCluster": "medicaid-eligibility-long-term-care",
+  "stateBrand": "Medicaid",
+  "category": "Medicaid",
+  "topic": "Medicaid Long-Term Care Eligibility",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "8 min read",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "keyTerms": {
+    "en": [
+      "medicaid long-term care",
+      "nursing home Medicaid",
+      "asset limits Medicaid",
+      "spend-down Medicaid",
+      "look-back period"
+    ],
+    "es": [
+      "medicaid cuidado a largo plazo",
+      "hogar de ancianos Medicaid",
+      "exencion HCBS",
+      "limites de activos Medicaid",
+      "spend-down Medicaid",
+      "periodo de revision"
+    ]
+  },
+  "question": {
+    "en": "Do I Qualify for Medicaid Long-Term Care in 2026? (Nursing Home + HCBS)",
+    "es": "¿Califico para Medicaid de Cuidado a Largo Plazo en 2026? (Hogares de Ancianos + HCBS)"
+  },
+  "shortAnswer": {
+    "en": "It depends on your income, assets, and medical need level.",
+    "es": "Depende de sus ingresos, activos y nivel de necesidad médica."
+  },
+  "fullAnswer": {
+    "en": "It depends on three factors: medical necessity (you must need a nursing-home level of care), income (most states cap eligibility at around $2,982 per month in 2026 or use a spend-down pathway), and assets (the limit is approximately $2,000 for a single person in most states). Spousal impoverishment protections shield a community spouse from losing all shared savings. HCBS waiver programs offer an alternative to nursing home placement, but waitlists in many states run months to years. A 5-year look-back period penalizes asset transfers made to qualify artificially.",
+    "es": "Depende de tres factores: necesidad médica (debe necesitar un nivel de atención de hogar de ancianos), ingresos (la mayoria de los estados limitan la elegibilidad a aproximadamente $2,982 por mes en 2026 o usan una ruta de spend-down), y activos (el limite es aproximadamente $2,000 para una persona soltera en la mayoria de los estados). Las protecciones contra el empobrecimiento del conyuge protegen al conyuge comunitario de perder todos los ahorros compartidos. Los programas de exencion HCBS ofrecen una alternativa a la colocacion en hogar de ancianos, pero las listas de espera en muchos estados duran meses o anos. Un periodo de revision de 5 anos penaliza las transferencias de activos realizadas para calificar artificialmente."
+  },
+  "meta": {
+    "title": {
+      "en": "Medicaid Long-Term Care Eligibility 2026: Nursing Home + HCBS | CoveredUSA",
+      "es": "Elegibilidad Medicaid Cuidado a Largo Plazo 2026: Hogar de Ancianos + HCBS | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicaid long-term care requires medical necessity, income under ~$2,982/mo, and assets under ~$2,000 in 2026. Learn HCBS waivers, spousal protections, and the 5-year look-back.",
+      "es": "Medicaid de cuidado a largo plazo requiere necesidad medica, ingresos bajo ~$2,982/mes y activos bajo ~$2,000 en 2026. Conozca exenciones HCBS y protecciones conyugales."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Do I Qualify for Medicaid Long-Term Care in 2026? (Nursing Home + HCBS)",
+      "es": "¿Califico para Medicaid de Cuidado a Largo Plazo en 2026? (Hogares de Ancianos + HCBS)"
+    }
+  },
+  "introParagraphs": [
+    {
+      "en": "Medicaid is the primary payer for long-term care in the United States, covering roughly 62% of all nursing home residents and funding most of the country's home and community-based services programs. Medicare pays only for short-term skilled nursing facility stays up to 100 days. Private long-term care insurance covers fewer than 7% of Americans. For most middle-income families facing a chronic care situation, Medicaid is the only realistic path to indefinite coverage.",
+      "es": "Medicaid es el pagador principal de cuidado a largo plazo en los Estados Unidos, cubriendo aproximadamente el 62% de todos los residentes de hogares de ancianos y financiando la mayoria de los programas de servicios basados en el hogar y la comunidad del pais. Medicare solo paga por estadias de enfermeria especializada a corto plazo de hasta 100 dias. El seguro privado de cuidado a largo plazo cubre a menos del 7% de los estadounidenses. Para la mayoria de las familias de ingresos medios que enfrentan una situacion de cuidado cronico, Medicaid es el unico camino realista hacia cobertura indefinida."
+    },
+    {
+      "en": "Qualifying is not automatic. Medicaid long-term care has three separate gatekeepers: a medical need standard, an income test, and an asset test. Each state administers its own rules within federal minimums, so thresholds vary. This guide covers the 2026 federal parameters, the state-level variation bands, spousal impoverishment protections, HCBS waiver access, the 5-year look-back rule, and the step-by-step application process.",
+      "es": "Calificar no es automatico. Medicaid de cuidado a largo plazo tiene tres puertas de acceso separadas: un estandar de necesidad medica, una prueba de ingresos y una prueba de activos. Cada estado administra sus propias reglas dentro de los minimos federales, por lo que los umbrales varian. Esta guia cubre los parametros federales de 2026, las bandas de variacion a nivel estatal, las protecciones contra el empobrecimiento del conyuge, el acceso a exenciones HCBS, la regla de revision de 5 anos y el proceso de solicitud paso a paso."
+    }
+  ],
+  "householdSizeTable": {
+    "caption": {
+      "en": "Medicaid Long-Term Care income limits by household size 2026 (nursing home applicant)",
+      "es": "Limites de ingresos de Medicaid Cuidado a Largo Plazo por tamano del hogar 2026 (solicitante de hogar de ancianos)"
+    },
+    "year": 2026,
+    "rows": [
+      {
+        "size": "1",
+        "incomeLimit": {
+          "en": "$2,982/mo (income-cap states)",
+          "es": "$2,982/mes (estados con tope de ingresos)"
+        },
+        "notes": {
+          "en": "300% of 2026 SSI FBR ($994/mo). Spend-down states have no hard cap.",
+          "es": "300% del FBR SSI 2026 ($994/mes). Estados de spend-down no tienen tope fijo."
+        }
+      },
+      {
+        "size": "2",
+        "incomeLimit": {
+          "en": "$2,982/mo applicant; spouse protected separately",
+          "es": "$2,982/mes solicitante; conyuge protegido por separado"
+        },
+        "notes": {
+          "en": "Married couples: community spouse income is not counted. MMMNA protects $2,643.75 to $4,066.50/mo for community spouse (2026).",
+          "es": "Parejas casadas: ingresos del conyuge comunitario no se cuentan. MMMNA protege $2,643.75 a $4,066.50/mes para el conyuge comunitario (2026)."
+        }
+      },
+      {
+        "size": "3",
+        "incomeLimit": {
+          "en": "Applicant-only income counted; state rules apply",
+          "es": "Solo ingresos del solicitante se cuentan; aplican reglas estatales"
+        },
+        "notes": {
+          "en": "Long-term care Medicaid counts only the nursing home resident's income, not the full household.",
+          "es": "Medicaid de cuidado a largo plazo cuenta solo los ingresos del residente del hogar de ancianos, no del hogar completo."
+        }
+      },
+      {
+        "size": "4",
+        "incomeLimit": {
+          "en": "Applicant-only income counted; state rules apply",
+          "es": "Solo ingresos del solicitante se cuentan; aplican reglas estatales"
+        },
+        "notes": {
+          "en": "Other household members' income is disregarded for institutional Medicaid.",
+          "es": "Los ingresos de otros miembros del hogar se ignoran para Medicaid institucional."
+        }
+      },
+      {
+        "size": "5",
+        "incomeLimit": {
+          "en": "Applicant-only income counted; state rules apply",
+          "es": "Solo ingresos del solicitante se cuentan; aplican reglas estatales"
+        },
+        "notes": {
+          "en": "Income from adult children living in the home does not count toward applicant's income.",
+          "es": "Los ingresos de los hijos adultos que viven en el hogar no cuentan para los ingresos del solicitante."
+        }
+      },
+      {
+        "size": "6",
+        "incomeLimit": {
+          "en": "Applicant-only income counted; state rules apply",
+          "es": "Solo ingresos del solicitante se cuentan; aplican reglas estatales"
+        },
+        "notes": {
+          "en": "Larger households do not raise the nursing home applicant's income threshold.",
+          "es": "Hogares mas grandes no aumentan el umbral de ingresos del solicitante del hogar de ancianos."
+        }
+      },
+      {
+        "size": "7",
+        "incomeLimit": {
+          "en": "Applicant-only income counted; state rules apply",
+          "es": "Solo ingresos del solicitante se cuentan; aplican reglas estatales"
+        },
+        "notes": {
+          "en": "Community spouse may have a separate HCBS budget. Consult your state Medicaid office.",
+          "es": "El conyuge comunitario puede tener un presupuesto HCBS separado. Consulte su oficina estatal de Medicaid."
+        }
+      },
+      {
+        "size": "8",
+        "incomeLimit": {
+          "en": "Applicant-only income counted; state rules apply",
+          "es": "Solo ingresos del solicitante se cuentan; aplican reglas estatales"
+        },
+        "notes": {
+          "en": "For HCBS waivers, some states use a different income counting method for multiple household members.",
+          "es": "Para exenciones HCBS, algunos estados usan un metodo diferente de conteo de ingresos para multiples miembros del hogar."
+        }
+      },
+      {
+        "size": "Each additional",
+        "incomeLimit": {
+          "en": "No change to applicant's cap in most states",
+          "es": "Sin cambio al tope del solicitante en la mayoria de los estados"
+        },
+        "notes": {
+          "en": "Institutional Medicaid is applicant-specific, not household-size-based like MAGI Medicaid.",
+          "es": "Medicaid institucional es especifico del solicitante, no basado en el tamano del hogar como Medicaid MAGI."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "Long-term care Medicaid uses non-MAGI rules. Income is measured against the applicant's own income only. The $2,982/mo cap (income-cap states) equals 300% of the 2026 SSI Federal Benefit Rate ($994/mo). Spend-down states have no hard cap but require you to spend excess income on medical bills before Medicaid kicks in. Asset limit is approximately $2,000 for a single applicant in most states; the community spouse protected resource amount is up to $162,660 in 2026 per CMS.",
+      "es": "Medicaid de cuidado a largo plazo usa reglas no-MAGI. Los ingresos se miden solo contra los ingresos propios del solicitante. El tope de $2,982/mes (estados con tope de ingresos) equivale al 300% de la Tasa de Beneficio Federal SSI de 2026 ($994/mes). Los estados de spend-down no tienen tope fijo pero requieren que gaste el exceso de ingresos en facturas medicas antes de que Medicaid intervenga. El limite de activos es aproximadamente $2,000 para un solicitante individual en la mayoria de los estados; el monto de recursos protegidos del conyuge comunitario es hasta $162,660 en 2026 segun CMS."
+    },
+    "source": "CMS Medicaid.gov Spousal Impoverishment Standards 2026, ASPE 2026 Poverty Guidelines, SSA SSI FBR 2026"
+  },
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Step 1: Get a functional assessment. Contact your state Medicaid agency or a hospital discharge planner. The state will send a nurse or social worker to conduct a Needs Assessment (sometimes called a Level of Care or LOC assessment) to confirm you need nursing-home-level care. Without this assessment, the application cannot proceed.",
+        "es": "Paso 1: Obtenga una evaluacion funcional. Comuniquese con su agencia estatal de Medicaid o un planificador de alta hospitalaria. El estado enviara una enfermera o trabajador social para realizar una Evaluacion de Necesidades (a veces llamada evaluacion de Nivel de Cuidado o LOC) para confirmar que necesita atencion a nivel de hogar de ancianos. Sin esta evaluacion, la solicitud no puede proceder."
+      },
+      {
+        "en": "Step 2: Gather financial documents. Collect 5 years of bank statements, investment account records, real estate deeds, life insurance policies, and any documents showing asset transfers. The look-back period covers all transfers in the 60 months before your application date.",
+        "es": "Paso 2: Reunir documentos financieros. Reuna 5 anos de estados de cuenta bancarios, registros de cuentas de inversion, escrituras de bienes raices, polizas de seguro de vida y cualquier documento que muestre transferencias de activos. El periodo de revision cubre todas las transferencias en los 60 meses anteriores a la fecha de su solicitud."
+      },
+      {
+        "en": "Step 3: Submit the application to your state Medicaid agency. Applications can usually be submitted online via your state Medicaid portal, by mail, or in person at a county social services office. The federal starting point for state contacts is medicaid.gov. Nursing home staff often help with applications for residents already admitted.",
+        "es": "Paso 3: Presente la solicitud a su agencia estatal de Medicaid. Las solicitudes generalmente pueden enviarse en linea a traves del portal de Medicaid de su estado, por correo o en persona en una oficina de servicios sociales del condado. El punto de partida federal para contactos estatales es medicaid.gov. El personal del hogar de ancianos a menudo ayuda con las solicitudes para residentes ya admitidos."
+      },
+      {
+        "en": "Step 4: Complete the asset verification interview. A Medicaid eligibility worker will review your financial records in detail. For married applicants, a Community Spouse Resource Assessment (CSRA) will calculate how much the at-home spouse can keep. Be prepared to explain any transfers or gifts made in the past 5 years.",
+        "es": "Paso 4: Complete la entrevista de verificacion de activos. Un trabajador de elegibilidad de Medicaid revisara sus registros financieros en detalle. Para solicitantes casados, una Evaluacion de Recursos del Conyuge Comunitario (CSRA) calculara cuanto puede conservar el conyuge en casa. Este preparado para explicar cualquier transferencia o donacion realizada en los ultimos 5 anos."
+      },
+      {
+        "en": "Step 5: Receive a determination and enroll. Approval timelines vary by state, typically 45 to 90 days. If approved for a nursing home, the facility will coordinate billing directly with Medicaid. If approved for an HCBS waiver, a care coordinator will help build your service plan. If denied, you have the right to appeal within the timeframe listed on the denial notice.",
+        "es": "Paso 5: Recibir una determinacion e inscribirse. Los plazos de aprobacion varian por estado, tipicamente de 45 a 90 dias. Si es aprobado para un hogar de ancianos, la instalacion coordinara la facturacion directamente con Medicaid. Si es aprobado para una exencion HCBS, un coordinador de cuidado le ayudara a construir su plan de servicios. Si es denegado, tiene derecho a apelar dentro del plazo indicado en el aviso de denegacion."
+      }
+    ],
+    "govStartingUrl": "https://www.medicaid.gov/medicaid/long-term-services-supports/index.html",
+    "documentsNeeded": [
+      {
+        "en": "Government-issued photo ID (driver's license, passport, or state ID)",
+        "es": "Identificacion con foto emitida por el gobierno (licencia de conducir, pasaporte o ID estatal)"
+      },
+      {
+        "en": "Social Security card or number for the applicant",
+        "es": "Tarjeta de Seguro Social o numero para el solicitante"
+      },
+      {
+        "en": "60 months (5 years) of bank and financial account statements",
+        "es": "60 meses (5 anos) de estados de cuenta bancarios y financieros"
+      },
+      {
+        "en": "Documentation of all assets: real estate deeds, vehicle titles, life insurance cash values, retirement accounts",
+        "es": "Documentacion de todos los activos: escrituras de bienes raices, titulos de vehiculos, valores en efectivo de seguros de vida, cuentas de jubilacion"
+      },
+      {
+        "en": "Proof of income: Social Security award letter, pension statements, annuity contracts",
+        "es": "Prueba de ingresos: carta de adjudicacion del Seguro Social, estados de cuenta de pension, contratos de anualidades"
+      },
+      {
+        "en": "Records of any gifts or asset transfers made in the past 5 years (including property transfers to children)",
+        "es": "Registros de donaciones o transferencias de activos realizadas en los ultimos 5 anos (incluidas transferencias de propiedad a hijos)"
+      },
+      {
+        "en": "Medicare card and any supplemental insurance cards",
+        "es": "Tarjeta de Medicare y cualquier tarjeta de seguro suplementario"
+      },
+      {
+        "en": "Physician's statement or medical records confirming nursing-home-level care need",
+        "es": "Declaracion del medico o registros medicos que confirmen la necesidad de atencion a nivel de hogar de ancianos"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Assets above the $2,000 limit (single applicant): undisclosed savings, investment accounts, or cash value life insurance",
+        "es": "Activos por encima del limite de $2,000 (solicitante individual): ahorros no declarados, cuentas de inversion o valor en efectivo del seguro de vida"
+      },
+      {
+        "en": "Penalty period from a disqualifying asset transfer in the 5-year look-back window",
+        "es": "Periodo de penalizacion por una transferencia de activos descalificadora en la ventana de revision de 5 anos"
+      },
+      {
+        "en": "Income above the state's income cap with no spend-down pathway (income-cap states only)",
+        "es": "Ingresos por encima del tope de ingresos del estado sin ruta de spend-down (solo estados con tope de ingresos)"
+      },
+      {
+        "en": "Failure to meet the nursing-home level of care standard in the functional assessment",
+        "es": "No cumplir con el estandar de nivel de cuidado de hogar de ancianos en la evaluacion funcional"
+      },
+      {
+        "en": "Missing or incomplete documentation, particularly gaps in the 60-month financial record",
+        "es": "Documentacion faltante o incompleta, particularmente brechas en el registro financiero de 60 meses"
+      }
+    ],
+    "deadline": {
+      "en": "Medicaid long-term care has no enrollment window. Applications are accepted year-round. Nursing home coverage can be retroactive up to 3 months if you were eligible during that period.",
+      "es": "Medicaid de cuidado a largo plazo no tiene ventana de inscripcion. Las solicitudes se aceptan durante todo el ano. La cobertura del hogar de ancianos puede ser retroactiva hasta 3 meses si fue elegible durante ese periodo."
+    }
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: It Depends on Three Tests",
+        "es": "Respuesta Directa: Depende de Tres Pruebas"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on three simultaneous tests: a medical necessity test (functional need for nursing-home-level care), an income test (~$2,982/month cap in income-cap states or spend-down in others), and an asset test (assets under ~$2,000 for a single applicant in most states). Passing all three opens Medicaid long-term care coverage, which can include nursing home placement or an HCBS waiver allowing care at home.",
+          "es": "Depende de tres pruebas simultaneas: necesidad medica (necesita atencion a nivel de hogar de ancianos), prueba de ingresos (limite de ~$2,982/mes en estados con tope o gasto en otros), y prueba de activos (activos por debajo de ~$2,000 para una persona soltera en la mayoria de los estados). Aprobar las tres abre la cobertura de Medicaid para cuidados de largo plazo, que puede incluir hogar de ancianos o una exencion HCBS para recibir atencion en casa."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid Long-Term Care Income Limits in 2026",
+        "es": "Limites de Ingresos de Medicaid para Cuidado a Largo Plazo en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid long-term care income rules are fundamentally different from standard Medicaid (MAGI Medicaid). Standard Medicaid counts household income and compares it to a percentage of the federal poverty level. Long-term care Medicaid counts only the applicant's own income, and the threshold is set by a separate standard: 300% of the SSI Federal Benefit Rate (FBR). For 2026, the SSI FBR is $994 per month, which makes the income cap for nursing home Medicaid $2,982 per month in income-cap states.",
+          "es": "Las reglas de ingresos de Medicaid para cuidado a largo plazo son fundamentalmente diferentes del Medicaid estandar (Medicaid MAGI). El Medicaid estandar cuenta los ingresos del hogar y los compara con un porcentaje del nivel federal de pobreza. Medicaid de cuidado a largo plazo cuenta solo los ingresos propios del solicitante, y el umbral se establece por un estandar separado: el 300% de la Tasa de Beneficio Federal (FBR) del SSI. Para 2026, el FBR del SSI es de $994 por mes, lo que hace que el tope de ingresos para Medicaid en hogares de ancianos sea de $2,982 por mes en estados con tope de ingresos."
+        },
+        {
+          "en": "States fall into two categories. Income-cap states (also called 209(b) states or cap states) enforce a hard ceiling: if your income exceeds $2,982 per month in 2026, you are ineligible for nursing home Medicaid even by one dollar unless you establish a Qualified Income Trust (QIT), also called a Miller Trust. Spend-down states have no hard cap: you can have income above any threshold, but you must spend down the excess on qualifying medical expenses each month before Medicaid covers the remainder. Roughly half of states use each approach.",
+          "es": "Los estados se dividen en dos categorias. Los estados con tope de ingresos (tambien llamados estados 209(b) o estados con tope) imponen un techo fijo: si sus ingresos superan $2,982 por mes en 2026, no es elegible para Medicaid en hogares de ancianos ni por un dolar a menos que establezca un Fideicomiso de Ingresos Calificados (QIT), tambien llamado Miller Trust. Los estados de spend-down no tienen tope fijo: puede tener ingresos por encima de cualquier umbral, pero debe gastar el exceso en gastos medicos calificados cada mes antes de que Medicaid cubra el resto. Aproximadamente la mitad de los estados usa cada enfoque."
+        },
+        {
+          "en": "A Qualified Income Trust (Miller Trust) is a legal arrangement that resolves the income-cap problem in cap states. Excess income is deposited into the trust each month. Funds in the trust are used to pay the nursing home's required patient pay amount (the amount you contribute from your income toward your own care) and certain allowable expenses. The trust is irrevocable; Medicaid receives any remaining funds upon death. An elder law attorney typically establishes a Miller Trust for a few hundred dollars.",
+          "es": "Un Fideicomiso de Ingresos Calificados (Miller Trust) es un acuerdo legal que resuelve el problema del tope de ingresos en estados con tope. Los ingresos excedentes se depositan en el fideicomiso cada mes. Los fondos del fideicomiso se usan para pagar el monto de pago del paciente requerido por el hogar de ancianos (el monto que usted contribuye de sus ingresos hacia su propio cuidado) y ciertos gastos permitidos. El fideicomiso es irrevocable; Medicaid recibe los fondos restantes al fallecimiento. Un abogado especializado en elderlaw tipicamente establece un Miller Trust por unos pocos cientos de dolares."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid Long-Term Care Asset Limits in 2026",
+        "es": "Limites de Activos de Medicaid para Cuidado a Largo Plazo en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid long-term care asset limits are strict by design: the program is intended as a payer of last resort after private resources are exhausted. For a single applicant, the countable asset limit is approximately $2,000 in most states in 2026. A handful of states have set higher limits (California raised its limit to $130,000 and plans to fully eliminate the asset test for nursing home Medicaid starting January 2024 under AB 133; check current California DHCS guidance for the 2026 status). Countable assets include checking and savings accounts, investment accounts, non-primary-residence real estate, cash value life insurance, and certain annuities.",
+          "es": "Los limites de activos de Medicaid para cuidado a largo plazo son estrictos por diseno: el programa esta destinado a ser un pagador de ultimo recurso despues de que se agoten los recursos privados. Para un solicitante individual, el limite de activos contables es aproximadamente $2,000 en la mayoria de los estados en 2026. Un punanado de estados ha establecido limites mas altos (California aumento su limite a $130,000 y planea eliminar completamente la prueba de activos para Medicaid en hogares de ancianos a partir de enero de 2024 bajo AB 133; verifique la orientacion actual de California DHCS para el estado de 2026). Los activos contables incluyen cuentas corrientes y de ahorro, cuentas de inversion, bienes raices que no son residencia principal, valor en efectivo del seguro de vida y ciertas anualidades."
+        },
+        {
+          "en": "Exempt (non-countable) assets include the primary home (if you intend to return or a spouse or disabled child lives there), one vehicle, personal belongings and household goods, prepaid funeral and burial funds up to state limits, and term life insurance with no cash value. The primary home exemption is limited: Medicaid can recover the value of the home from the estate after death through Medicaid Estate Recovery. Every state is required to pursue estate recovery for long-term care costs paid on behalf of beneficiaries age 55 and older.",
+          "es": "Los activos exentos (no contables) incluyen la residencia principal (si tiene intencion de regresar o un conyuge o hijo discapacitado vive alli), un vehiculo, bienes personales y enseres del hogar, fondos de funeral y entierro prepagados hasta los limites estatales, y seguro de vida a termino sin valor en efectivo. La exencion de la residencia principal es limitada: Medicaid puede recuperar el valor de la vivienda del patrimonio despues de la muerte a traves de la Recuperacion del Patrimonio de Medicaid. Cada estado esta obligado a perseguir la recuperacion del patrimonio por los costos de cuidado a largo plazo pagados en nombre de beneficiarios de 55 anos o mas."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Spousal Impoverishment Protections in 2026",
+        "es": "Protecciones contra el Empobrecimiento del Conyuge en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal spousal impoverishment rules under the Medicare Catastrophic Coverage Act of 1988 prevent Medicaid from requiring a community spouse (the spouse who remains at home) to spend down to poverty before the institutionalized spouse qualifies. For 2026, the Community Spouse Resource Allowance (CSRA) lets the community spouse keep up to $162,660 in countable assets, regardless of what the institutionalized spouse must spend down. The minimum CSRA floor is $32,532 in 2026, so even in states with tighter rules, the community spouse keeps at least that amount.",
+          "es": "Las reglas federales de proteccion contra el empobrecimiento del conyuge bajo la Ley de Cobertura Catastrofica de Medicare de 1988 evitan que Medicaid requiera que un conyuge comunitario (el conyuge que permanece en casa) gaste hasta la pobreza antes de que el conyuge institucionalizado califique. Para 2026, la Asignacion de Recursos del Conyuge Comunitario (CSRA) permite al conyuge comunitario conservar hasta $162,660 en activos contables, independientemente de lo que el conyuge institucionalizado deba gastar. El minimo de la CSRA es de $32,532 en 2026, por lo que incluso en estados con reglas mas estrictas, el conyuge comunitario conserva al menos esa cantidad."
+        },
+        {
+          "en": "The Minimum Monthly Maintenance Needs Allowance (MMMNA) protects the community spouse's income. For 2026, the MMMNA ranges from $2,643.75 to $4,066.50 per month, depending on the state. If the community spouse's own income falls below the MMMNA floor, the institutionalized spouse can divert part of their income to the community spouse to bring it up to the minimum. A spousal allowance calculation is done at the time of the Medicaid eligibility determination. A fair hearing can be requested if the community spouse believes the standard allowance is insufficient to meet basic household expenses.",
+          "es": "La Asignacion Minima Mensual de Necesidades de Mantenimiento (MMMNA) protege los ingresos del conyuge comunitario. Para 2026, la MMMNA oscila entre $2,643.75 y $4,066.50 por mes, segun el estado. Si los ingresos propios del conyuge comunitario caen por debajo del minimo de la MMMNA, el conyuge institucionalizado puede desviar parte de sus ingresos al conyuge comunitario para llevarlo al minimo. Se realiza un calculo de asignacion conyugal en el momento de la determinacion de elegibilidad de Medicaid. Se puede solicitar una audiencia justa si el conyuge comunitario cree que la asignacion estandar es insuficiente para cubrir los gastos basicos del hogar."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "HCBS Waivers: Alternatives to Nursing Home Placement",
+        "es": "Exenciones HCBS: Alternativas a la Colocacion en Hogar de Ancianos"
+      },
+      "paragraphs": [
+        {
+          "en": "Home and Community-Based Services (HCBS) waivers allow Medicaid to fund long-term care outside of nursing home settings: at the person's home, in adult day programs, or in assisted living facilities. HCBS waivers require the same nursing-home level of care standard as institutional Medicaid, meaning you must be assessed as needing the same level of support you would receive in a nursing home. Services typically covered include personal care attendants, adult day health programs, home health aides, meal delivery, transportation, respite care for family caregivers, and assistive technology.",
+          "es": "Las exenciones de Servicios Basados en el Hogar y la Comunidad (HCBS) permiten a Medicaid financiar el cuidado a largo plazo fuera de los entornos de hogares de ancianos: en el hogar de la persona, en programas de dia para adultos o en instalaciones de vida asistida. Las exenciones HCBS requieren el mismo estandar de nivel de cuidado de hogar de ancianos que el Medicaid institucional, lo que significa que debe ser evaluado como que necesita el mismo nivel de apoyo que recibiria en un hogar de ancianos. Los servicios tipicamente cubiertos incluyen asistentes de cuidado personal, programas de salud para adultos de dia, ayudantes de salud en el hogar, entrega de comidas, transporte, cuidado de relevo para cuidadores familiares y tecnologia de asistencia."
+        },
+        {
+          "en": "HCBS waitlists are a serious problem. Because HCBS slots are capped (unlike nursing home Medicaid, which is an entitlement with no cap), many states have waitlists that run from several months to over a decade. As of 2026, more than 700,000 Americans are on HCBS waiver waitlists nationally, per CMS data. People already in nursing homes are typically not placed on HCBS waitlists; the waiver is designed for community-dwelling individuals who meet the nursing-home need standard but want to avoid institutional placement. If you or a family member is approaching nursing-home eligibility, applying for the HCBS waiver as early as possible is critical.",
+          "es": "Las listas de espera de HCBS son un problema grave. Debido a que los cupos de HCBS estan limitados (a diferencia del Medicaid de hogar de ancianos, que es un derecho sin limite), muchos estados tienen listas de espera que van desde varios meses hasta mas de una decada. A partir de 2026, mas de 700,000 estadounidenses estan en listas de espera de exenciones HCBS a nivel nacional, segun datos de CMS. Las personas que ya estan en hogares de ancianos tipicamente no se colocan en listas de espera de HCBS; la exencion esta disenada para personas que viven en la comunidad que cumplen el estandar de necesidad de hogar de ancianos pero quieren evitar la colocacion institucional. Si usted o un familiar se acerca a la elegibilidad de hogar de ancianos, solicitar la exencion HCBS lo antes posible es fundamental."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The 5-Year Look-Back Period: What It Is and How It Works",
+        "es": "El Periodo de Revision de 5 Anos: Que Es y Como Funciona"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal law requires states to examine the 60 months (5 years) of financial history before a nursing home Medicaid application for any asset transfers made for less than fair market value. This is the look-back period. Transfers of money, property, or other assets to family members or others during the look-back window create a penalty period during which Medicaid will not pay for nursing home care. The penalty period is calculated by dividing the total transferred amount by the average monthly nursing home cost in your state (called the private-pay rate). For example, if you transferred $60,000 in assets and your state's average monthly nursing home cost is $8,000, the penalty period would be 7.5 months.",
+          "es": "La ley federal requiere que los estados examinen los 60 meses (5 anos) de historial financiero antes de una solicitud de Medicaid para hogar de ancianos en busca de transferencias de activos realizadas por menos del valor justo de mercado. Este es el periodo de revision. Las transferencias de dinero, propiedad u otros activos a familiares u otros durante la ventana de revision crean un periodo de penalizacion durante el cual Medicaid no pagara el cuidado en hogar de ancianos. El periodo de penalizacion se calcula dividiendo el monto total transferido por el costo mensual promedio del hogar de ancianos en su estado (llamado la tarifa de pago privado). Por ejemplo, si tranfirio $60,000 en activos y el costo mensual promedio de hogar de ancianos en su estado es $8,000, el periodo de penalizacion seria de 7.5 meses."
+        },
+        {
+          "en": "Certain transfers are exempt from the look-back and do not create a penalty period: transfers to a spouse, transfers of the primary home to a caregiver child who has lived in the home for at least 2 years and whose care delayed nursing home admission, transfers to a disabled child, and transfers to a sibling who has an equity interest in the home and has lived there for at least 1 year. Transfers that were part of a legal estate plan completed before the look-back window are also outside the review scope. The look-back period does NOT apply to HCBS Medicaid in most states (though some states have begun extending it to waivers as well; verify with your state).",
+          "es": "Ciertas transferencias estan exentas del periodo de revision y no crean un periodo de penalizacion: transferencias al conyuge, transferencias de la residencia principal a un hijo cuidador que ha vivido en el hogar durante al menos 2 anos y cuyo cuidado retraso la admision al hogar de ancianos, transferencias a un hijo discapacitado, y transferencias a un hermano que tiene un interes patrimonial en el hogar y ha vivido alli durante al menos 1 ano. Las transferencias que formaban parte de un plan patrimonial legal completado antes de la ventana de revision tambien estan fuera del alcance de la revision. El periodo de revision NO se aplica al Medicaid HCBS en la mayoria de los estados (aunque algunos estados han comenzado a extenderlo a las exenciones tambien; verifique con su estado)."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medical Necessity: How the Level of Care Assessment Works",
+        "es": "Necesidad Medica: Como Funciona la Evaluacion del Nivel de Cuidado"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid long-term care is not available for custodial care based solely on age or preference. Applicants must demonstrate a clinical need for nursing-home-level services. States conduct a Level of Care (LOC) assessment that typically measures functional limitations using Activities of Daily Living (ADLs): bathing, dressing, eating, toileting, transferring (getting in and out of bed or chairs), and continence. Most states require documented limitations in at least 2 to 3 ADLs before approving nursing home Medicaid. Cognitive impairment from dementia or Alzheimer's disease can independently satisfy the medical necessity requirement in many states.",
+          "es": "Medicaid de cuidado a largo plazo no esta disponible para cuidado custodia basado unicamente en edad o preferencia. Los solicitantes deben demostrar una necesidad clinica de servicios a nivel de hogar de ancianos. Los estados realizan una evaluacion del Nivel de Cuidado (LOC) que tipicamente mide las limitaciones funcionales usando Actividades de la Vida Diaria (ADLs): banarse, vestirse, comer, ir al bano, transferirse (entrar y salir de cama o sillas) y continencia. La mayoria de los estados requieren limitaciones documentadas en al menos 2 a 3 ADLs antes de aprobar Medicaid para hogar de ancianos. El deterioro cognitivo por demencia o enfermedad de Alzheimer puede satisfacer independientemente el requisito de necesidad medica en muchos estados."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Appeal a Medicaid Long-Term Care Denial",
+        "es": "Como Apelar una Denegacion de Medicaid de Cuidado a Largo Plazo"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid long-term care denials are common on the first application, particularly when the look-back review surfaces unexplained asset transfers or the financial documentation is incomplete. Every denial must come with a written notice explaining the specific reason and the appeal deadline. Federal Medicaid regulations require states to provide a state fair hearing to any applicant who is denied or has benefits reduced. The standard appeal window is 90 days from the date of the denial notice, though some states have shorter windows. Requesting the appeal in writing within the deadline is critical.",
+          "es": "Las denegaciones de Medicaid de cuidado a largo plazo son comunes en la primera solicitud, particularmente cuando la revision del periodo de revision descubre transferencias de activos inexplicadas o la documentacion financiera esta incompleta. Cada denegacion debe venir con un aviso escrito que explique la razon especifica y el plazo de apelacion. Las regulaciones federales de Medicaid requieren que los estados proporcionen una audiencia justa estatal a cualquier solicitante que sea denegado o tenga beneficios reducidos. La ventana de apelacion estandar es de 90 dias desde la fecha del aviso de denegacion, aunque algunos estados tienen ventanas mas cortas. Solicitar la apelacion por escrito dentro del plazo es fundamental."
+        },
+        {
+          "en": "For penalty period denials related to asset transfers, the remedy is either waiting out the penalty period or demonstrating that the transfer was exempt (caregiver child, sibling with equity interest, etc.). An elder law attorney can often identify exempt transfer categories that the state's eligibility worker missed. Medicaid.gov publishes the State Medicaid agency contact list; the State Health Insurance Assistance Program (SHIP) offers free counseling and can provide referrals to legal aid for complex cases.",
+          "es": "Para las denegaciones de periodo de penalizacion relacionadas con transferencias de activos, el remedio es esperar el periodo de penalizacion o demostrar que la transferencia era exenta (hijo cuidador, hermano con interes patrimonial, etc.). Un abogado especializado en elderlaw a menudo puede identificar categorias de transferencia exentas que el trabajador de elegibilidad del estado paso por alto. Medicaid.gov publica la lista de contactos de agencias estatales de Medicaid; el Programa de Asistencia de Seguro de Salud del Estado (SHIP) ofrece asesoramiento gratuito y puede proporcionar referencias a ayuda legal para casos complejos."
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the income limit for Medicaid nursing home coverage in 2026?",
+        "answer": "In income-cap states, the limit is $2,982 per month in 2026 (300% of the SSI Federal Benefit Rate of $994/month). If your income exceeds this, a Qualified Income Trust (Miller Trust) can resolve the cap. In spend-down states, there is no hard income cap: you spend excess income on medical bills each month, and Medicaid covers the rest. Roughly half of states use each approach."
+      },
+      {
+        "question": "What is the asset limit for Medicaid long-term care?",
+        "answer": "Most states set the countable asset limit at approximately $2,000 for a single applicant in 2026. Exempt assets include the primary home (while you intend to return or a spouse lives there), one vehicle, and personal belongings. If married, the community spouse can keep up to $162,660 in countable assets in 2026 under the Community Spouse Resource Allowance federal protection."
+      },
+      {
+        "question": "What is the 5-year look-back period?",
+        "answer": "Federal law requires Medicaid to review 60 months of financial history before a nursing home application. Any asset transfer made for less than fair market value during that window creates a penalty period. The penalty length equals the transferred amount divided by your state's average monthly private-pay nursing home cost. Exempt transfers include those to a spouse, a disabled child, or a caregiver child who lived in the home for at least 2 years."
+      },
+      {
+        "question": "Can I get Medicaid to pay for home care instead of a nursing home?",
+        "answer": "Possibly, through an HCBS (Home and Community-Based Services) waiver. HCBS waivers pay for personal care aides, adult day programs, home health, meal delivery, and other supports at home or in assisted living. Eligibility requires the same nursing-home level of care standard. The problem is waitlists: more than 700,000 people nationally were on HCBS waiver waitlists as of 2026. Apply as early as possible."
+      },
+      {
+        "question": "How are married couples treated when one spouse needs a nursing home?",
+        "answer": "Federal spousal impoverishment protections apply. The community spouse (at home) can keep up to $162,660 in assets in 2026 (Community Spouse Resource Allowance) and is guaranteed a minimum monthly income of $2,643.75 to $4,066.50 (Minimum Monthly Maintenance Needs Allowance) in 2026. The institutionalized spouse applies Medicaid's asset and income rules only to their own share."
+      },
+      {
+        "question": "Does Medicare pay for nursing home care long term?",
+        "answer": "No. Medicare Part A covers skilled nursing facility care for up to 100 days per benefit period only if it follows a qualifying 3-day inpatient hospital stay and the care is for skilled rehabilitation (not custodial care). After 100 days, Medicare pays nothing. For indefinite long-term care, Medicaid is the primary payer once private resources are exhausted."
+      },
+      {
+        "question": "What happens to my home if Medicaid pays for my nursing home?",
+        "answer": "Medicaid can recover nursing home costs from your estate after death through Medicaid Estate Recovery. Every state must pursue recovery for costs paid to beneficiaries age 55 and older. The primary home is exempt while you are alive if a spouse or disabled child lives there, but it can become subject to estate recovery after the last protected resident dies. Some states also have expanded estate recovery that reaches non-probate assets like living trusts."
+      },
+      {
+        "question": "How long does Medicaid long-term care approval take?",
+        "answer": "Typically 45 to 90 days from the date of a complete application, but the 5-year look-back review of financial records can extend this if records are missing or complex. Nursing home coverage can be retroactive up to 3 months if you were eligible during that period. HCBS waiver approvals may take longer due to waitlists. Working with the nursing home's social worker or an elder law attorney can speed document collection."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cual es el limite de ingresos para la cobertura de Medicaid en hogares de ancianos en 2026?",
+        "answer": "En estados con tope de ingresos, el limite es de $2,982 por mes en 2026 (300% de la Tasa de Beneficio Federal del SSI de $994/mes). Si sus ingresos superan esto, un Fideicomiso de Ingresos Calificados (Miller Trust) puede resolver el tope. En estados de spend-down, no hay tope de ingresos fijo: gasta el exceso de ingresos en facturas medicas cada mes, y Medicaid cubre el resto."
+      },
+      {
+        "question": "¿Cual es el limite de activos para Medicaid de cuidado a largo plazo?",
+        "answer": "La mayoria de los estados establece el limite de activos contables en aproximadamente $2,000 para un solicitante individual en 2026. Los activos exentos incluyen la residencia principal, un vehiculo y bienes personales. Si esta casado, el conyuge comunitario puede conservar hasta $162,660 en activos contables en 2026 bajo la proteccion federal de la Asignacion de Recursos del Conyuge Comunitario."
+      },
+      {
+        "question": "¿Que es el periodo de revision de 5 anos?",
+        "answer": "La ley federal requiere que Medicaid revise 60 meses de historial financiero antes de una solicitud de hogar de ancianos. Cualquier transferencia de activos realizada por menos del valor justo de mercado durante esa ventana crea un periodo de penalizacion. La duracion de la penalizacion equivale al monto transferido dividido por el costo mensual promedio de pago privado del hogar de ancianos en su estado. Las transferencias exentas incluyen las realizadas al conyuge, un hijo discapacitado o un hijo cuidador que vivio en el hogar durante al menos 2 anos."
+      },
+      {
+        "question": "¿Puede Medicaid pagar por cuidado en el hogar en lugar de un hogar de ancianos?",
+        "answer": "Es posible, a traves de una exencion HCBS (Servicios Basados en el Hogar y la Comunidad). Las exenciones HCBS pagan asistentes de cuidado personal, programas de dia para adultos, salud en el hogar, entrega de comidas y otros apoyos en casa o en vida asistida. La elegibilidad requiere el mismo estandar de nivel de cuidado de hogar de ancianos. El problema son las listas de espera: mas de 700,000 personas a nivel nacional estaban en listas de espera de exenciones HCBS en 2026."
+      },
+      {
+        "question": "¿Como se trata a las parejas casadas cuando un conyuge necesita un hogar de ancianos?",
+        "answer": "Se aplican las protecciones federales contra el empobrecimiento del conyuge. El conyuge comunitario (en casa) puede conservar hasta $162,660 en activos en 2026 y tiene garantizado un ingreso mensual minimo de $2,643.75 a $4,066.50 en 2026. El conyuge institucionalizado aplica las reglas de activos e ingresos de Medicaid solo a su propia parte."
+      },
+      {
+        "question": "¿Medicare paga el cuidado en hogares de ancianos a largo plazo?",
+        "answer": "No. Medicare Parte A cubre la atencion en instalaciones de enfermeria especializada hasta 100 dias por periodo de beneficio solo si sigue una hospitalizacion calificada de 3 dias y el cuidado es para rehabilitacion especializada (no cuidado custodial). Despues de 100 dias, Medicare no paga nada. Para cuidado a largo plazo indefinido, Medicaid es el pagador principal una vez que se agoten los recursos privados."
+      },
+      {
+        "question": "¿Que pasa con mi casa si Medicaid paga mi hogar de ancianos?",
+        "answer": "Medicaid puede recuperar los costos del hogar de ancianos de su patrimonio despues de la muerte a traves de la Recuperacion del Patrimonio de Medicaid. Cada estado debe perseguir la recuperacion de los costos pagados a beneficiarios de 55 anos o mas. La residencia principal esta exenta mientras viva si un conyuge o hijo discapacitado vive alli, pero puede quedar sujeta a la recuperacion del patrimonio despues de que fallezca el ultimo residente protegido."
+      },
+      {
+        "question": "¿Cuanto tiempo tarda la aprobacion de Medicaid de cuidado a largo plazo?",
+        "answer": "Tipicamente de 45 a 90 dias desde la fecha de una solicitud completa, pero la revision del periodo de revision de 5 anos de los registros financieros puede extender esto si los registros faltan o son complejos. La cobertura del hogar de ancianos puede ser retroactiva hasta 3 meses si fue elegible durante ese periodo. Las aprobaciones de exenciones HCBS pueden tomar mas tiempo debido a las listas de espera."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Does Medicaid Cover Nursing Home Care?",
+        "es": "¿Medicaid cubre hogares de ancianos?"
+      },
+      "href": "/qa/does-medicaid-cover-nursing-home"
+    },
+    {
+      "label": {
+        "en": "Does Medicaid Cover Home Health Care?",
+        "es": "¿Medicaid cubre cuidado en el hogar?"
+      },
+      "href": "/qa/does-medicaid-cover-home-health-care"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits by State",
+        "es": "Limites de ingresos de Medicaid por estado"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Check Your Eligibility",
+        "es": "Verifique su elegibilidad"
+      },
+      "href": "/screener"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Medicaid.gov: Long-Term Services and Supports",
+      "url": "https://www.medicaid.gov/medicaid/long-term-services-supports/index.html",
+      "note": {
+        "en": "Official CMS overview of Medicaid long-term care programs, HCBS waivers, and spousal impoverishment standards.",
+        "es": "Vision general oficial de CMS de los programas de cuidado a largo plazo de Medicaid, exenciones HCBS y estandares de empobrecimiento del conyuge."
+      }
+    },
+    {
+      "name": "CMS: Spousal Impoverishment Standards 2026",
+      "url": "https://www.cms.gov/medicare-medicaid-coordination/medicaid-ffs/spousal-impoverishment",
+      "note": {
+        "en": "CMS annual spousal impoverishment standards: Community Spouse Resource Allowance up to $162,660 and MMMNA $2,643.75 to $4,066.50 for 2026.",
+        "es": "Estandares anuales de empobrecimiento del conyuge de CMS: Asignacion de Recursos del Conyuge Comunitario hasta $162,660 y MMMNA $2,643.75 a $4,066.50 para 2026."
+      }
+    },
+    {
+      "name": "KFF: Medicaid Long-Term Services and Supports",
+      "url": "https://www.kff.org/medicaid/fact-sheet/medicaid-long-term-services-and-supports/",
+      "note": {
+        "en": "KFF analysis of Medicaid LTSS spending, HCBS waiver waitlists, and state-by-state program variation.",
+        "es": "Analisis de KFF sobre el gasto en LTSS de Medicaid, listas de espera de exenciones HCBS y variacion del programa por estado."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Medicaid Estate Recovery",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/estate-recovery/index.html",
+      "note": {
+        "en": "Federal rules on Medicaid estate recovery for long-term care costs paid for beneficiaries age 55 and older.",
+        "es": "Reglas federales sobre la recuperacion del patrimonio de Medicaid por costos de cuidado a largo plazo pagados para beneficiarios de 55 anos o mas."
+      }
+    },
+    {
+      "name": "SSA: SSI Federal Benefit Rate 2026",
+      "url": "https://www.ssa.gov/ssi/text-benefits-ussi.htm",
+      "note": {
+        "en": "The 2026 SSI Federal Benefit Rate ($994/month) is the basis for the $2,982/month nursing home Medicaid income cap (300% of SSI FBR) in income-cap states.",
+        "es": "La Tasa de Beneficio Federal del SSI de 2026 ($994/mes) es la base para el tope de ingresos de Medicaid para hogares de ancianos de $2,982/mes (300% del FBR del SSI) en estados con tope de ingresos."
+      }
+    }
+  ]
+}

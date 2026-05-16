@@ -1,0 +1,626 @@
+{
+  "slug": "do-i-qualify-medicaid-no-income",
+  "subtype": "coverage",
+  "pageType": "coverage",
+  "topicCluster": "medicaid-coverage",
+  "keyTerms": {
+    "en": [
+      "medicaid no income",
+      "zero income medicaid",
+      "medicaid coverage gap",
+      "medicaid expansion",
+      "SSI medicaid",
+      "MAGI income"
+    ],
+    "es": [
+      "medicaid sin ingresos",
+      "medicaid cero ingresos",
+      "brecha de cobertura medicaid",
+      "expansion medicaid",
+      "SSI medicaid",
+      "ingresos MAGI"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "question": {
+    "en": "Do I Qualify for Medicaid With No Income in 2026?",
+    "es": "¿Califico para Medicaid Sin Ingresos en 2026?"
+  },
+  "shortAnswer": {
+    "en": "It depends on your state. Expansion states: yes. Non-expansion: often no.",
+    "es": "Depende de su estado. Estados con expansión: sí. Sin expansión: generalmente no."
+  },
+  "fullAnswer": {
+    "en": "It depends on which state you live in. In the 40 states (plus DC) that have expanded Medicaid under the ACA, adults with zero income qualify automatically because $0 falls below the 138% FPL income ceiling (which is $22,025 per year for a single adult in 2026). In the 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming), most adults with no income do not qualify unless they are pregnant, have a qualifying disability, or are a parent of dependent children below a very low income threshold. SSI recipients are automatically enrolled in Medicaid in most states regardless of expansion status.",
+    "es": "Depende del estado donde viva. En los 40 estados (más DC) que han expandido Medicaid bajo el ACA, los adultos con cero ingresos califican automáticamente porque $0 está por debajo del límite del 138% FPL (que es $22,025 al año para un adulto soltero en 2026). En los 10 estados sin expansión (Alabama, Florida, Georgia, Kansas, Mississippi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming), la mayoría de adultos sin ingresos no califican a menos que sean mujeres embarazadas, tengan una discapacidad calificante o sean padres de hijos dependientes por debajo de un umbral de ingresos muy bajo. Los beneficiarios del SSI se inscriben automáticamente en Medicaid en la mayoría de los estados independientemente del estado de expansión."
+  },
+  "category": "Medicaid",
+  "topic": "Medicaid Eligibility With No Income",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "7 min read",
+  "meta": {
+    "title": {
+      "en": "Do I Qualify for Medicaid With No Income? (2026) | CoveredUSA",
+      "es": "¿Califico para Medicaid Sin Ingresos? (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Zero income qualifies you for Medicaid in expansion states. In 10 non-expansion states adults with no income often fall in the coverage gap. SSI recipients auto-qualify. 2026 rules.",
+      "es": "Cero ingresos le califica para Medicaid en estados con expansión. En 10 estados sin expansión, adultos sin ingresos caen en la brecha de cobertura. Beneficiarios SSI califican automáticamente. Reglas 2026."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Do I Qualify for Medicaid With No Income? (2026)",
+      "es": "¿Califico para Medicaid Sin Ingresos? (2026)"
+    }
+  },
+  "introParagraphs": [
+    {
+      "en": "Zero income sounds like the clearest possible Medicaid qualification. No earnings means you are below every income threshold, right? Not exactly. Medicaid eligibility with no income depends heavily on one factor: whether your state has expanded Medicaid under the Affordable Care Act. In 2026, that single variable determines whether having no income automatically qualifies you or leaves you in a coverage gap with no affordable path to insurance.",
+      "es": "Tener cero ingresos suena como la calificación más clara posible para Medicaid. No tener ganancias significa que está por debajo de todo límite de ingresos, ¿verdad? No exactamente. La elegibilidad de Medicaid sin ingresos depende en gran medida de un factor: si su estado ha expandido Medicaid bajo la Ley de Cuidado de Salud Asequible. En 2026, esa única variable determina si no tener ingresos le califica automáticamente o le deja en una brecha de cobertura sin camino asequible hacia el seguro médico."
+    },
+    {
+      "en": "Medicaid is the federal-state health insurance program covering roughly 80 million low-income Americans. Eligibility rules differ by state, by age, by household composition, and by whether someone receives Supplemental Security Income (SSI). This guide covers all the key scenarios for 2026: expansion states, non-expansion states, the coverage gap, SSI automatic enrollment, and what MAGI rules mean when your income is literally $0.",
+      "es": "Medicaid es el programa federal-estatal de seguro médico que cubre aproximadamente 80 millones de estadounidenses de bajos ingresos. Las reglas de elegibilidad difieren por estado, por edad, por composición del hogar y por si alguien recibe Ingreso de Seguridad Suplementario (SSI). Esta guía cubre todos los escenarios clave para 2026: estados con expansión, estados sin expansión, la brecha de cobertura, la inscripción automática por SSI y qué significan las reglas MAGI cuando sus ingresos son literalmente $0."
+    }
+  ],
+  "coverageBreakdown": {
+    "headers": {
+      "en": [
+        "Situation",
+        "Expansion States (40 + DC)",
+        "Non-Expansion States (10)",
+        "Notes"
+      ],
+      "es": [
+        "Situación",
+        "Estados con expansión (40 + DC)",
+        "Estados sin expansión (10)",
+        "Notas"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Adult, age 19-64, no income, no disability",
+            "es": "Adulto, 19-64 años, sin ingresos, sin discapacidad"
+          },
+          {
+            "value": {
+              "en": "Qualifies",
+              "es": "Califica"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Usually does not qualify",
+              "es": "Generalmente no califica"
+            },
+            "status": "no"
+          },
+          {
+            "en": "$0 falls below 138% FPL in expansion states; adults not a covered category in most non-expansion states",
+            "es": "$0 está por debajo del 138% FPL en estados con expansión; adultos no son categoría cubierta en la mayoría de estados sin expansión"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "SSI recipient, any state",
+            "es": "Beneficiario SSI, cualquier estado"
+          },
+          {
+            "value": {
+              "en": "Auto-enrolled",
+              "es": "Inscripción automática"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Auto-enrolled in most states",
+              "es": "Inscripción automática en la mayoría de estados"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "32 states use 'SSI criteria' and automatically enroll SSI recipients; 11 states use 209(b) option with slightly different rules",
+            "es": "32 estados usan 'criterios SSI' e inscriben automáticamente a beneficiarios del SSI; 11 estados usan la opción 209(b) con reglas ligeramente diferentes"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Pregnant adult, no income",
+            "es": "Adulta embarazada, sin ingresos"
+          },
+          {
+            "value": {
+              "en": "Qualifies",
+              "es": "Califica"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Qualifies",
+              "es": "Califica"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Pregnant women are a mandatory Medicaid category in all 50 states; income threshold typically 185% to 213% FPL in 2026",
+            "es": "Las mujeres embarazadas son una categoría obligatoria de Medicaid en los 50 estados; el umbral de ingresos es típicamente del 185% al 213% FPL en 2026"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Child under 19, no income household",
+            "es": "Niño menor de 19 años, hogar sin ingresos"
+          },
+          {
+            "value": {
+              "en": "Qualifies",
+              "es": "Califica"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Qualifies",
+              "es": "Califica"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Children covered through Medicaid or CHIP in all 50 states; income thresholds 200% to 317% FPL depending on state",
+            "es": "Niños cubiertos a través de Medicaid o CHIP en los 50 estados; umbrales de ingresos del 200% al 317% FPL según el estado"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Adult in the coverage gap (non-expansion, no disability, no children)",
+            "es": "Adulto en la brecha de cobertura (sin expansión, sin discapacidad, sin hijos)"
+          },
+          {
+            "value": {
+              "en": "N/A (expansion states have no gap)",
+              "es": "N/A (estados con expansión no tienen brecha)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "No Medicaid, no ACA subsidy",
+              "es": "Sin Medicaid, sin subsidio ACA"
+            },
+            "status": "no"
+          },
+          {
+            "en": "In 2026 income too low for ACA PTCs (which start at 100% FPL = $15,960) but state Medicaid excludes non-disabled adults; no coverage available",
+            "es": "En 2026 ingresos demasiado bajos para créditos ACA (que comienzan en 100% FPL = $15,960) pero Medicaid del estado excluye adultos sin discapacidad; sin cobertura disponible"
+          }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Medicaid eligibility with no income by scenario, 2026. Expansion states use 138% FPL as the income ceiling for the adult group; non-expansion states have no adult Medicaid category except specific groups. Source: Medicaid.gov, KFF Medicaid Expansion Tracker 2026, ASPE 2026 Federal Poverty Guidelines.",
+      "es": "Elegibilidad de Medicaid sin ingresos por escenario, 2026. Los estados con expansión usan 138% FPL como límite de ingresos para el grupo de adultos; los estados sin expansión no tienen categoría de Medicaid para adultos excepto grupos específicos. Fuente: Medicaid.gov, KFF Rastreador de Expansión Medicaid 2026, ASPE Pautas de Pobreza Federal 2026."
+    },
+    "source": "Medicaid.gov Eligibility, KFF Medicaid Expansion Tracker 2026, ASPE 2026 FPL Guidelines"
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Zero Income and Medicaid in 2026",
+        "es": "Respuesta directa: Cero ingresos y Medicaid en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on your state. Expansion states (40 plus DC): zero income qualifies adults because $0 falls below the 138% FPL ceiling ($22,025 per year in 2026). Non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming): most adults without a disability or dependent children do not qualify at any income level. SSI recipients auto-enroll in most states. Pregnant adults and children qualify in all 50 states.",
+          "es": "Depende de su estado. Estados con expansión (40 más DC): cero ingresos califica a adultos porque $0 está por debajo del límite del 138% FPL ($22,025 por año en 2026). Estados sin expansión (Alabama, Florida, Georgia, Kansas, Mississippi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming): la mayoría de adultos sin discapacidad o hijos dependientes no califican con ningún nivel de ingresos. Los beneficiarios del SSI se inscriben automáticamente en la mayoría de estados. Adultas embarazadas y niños califican en los 50 estados."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Expansion States: $0 Income Qualifies Adults",
+        "es": "Estados con expansión: $0 de ingresos califica a adultos"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid expansion, authorized by the ACA in 2010, extended coverage to adults earning up to 138% of the federal poverty level. In 2026, that threshold is $22,025 per year for a single adult (based on the 2026 FPL of $15,960). Because zero income is lower than any positive threshold, adults living in expansion states with no income qualify for Medicaid as long as they meet the other eligibility requirements: U.S. citizenship or qualified immigration status, state residency, and age 19 to 64. North Carolina expanded in December 2023. South Dakota expanded in July 2023. That brings the expansion total to 40 states plus DC as of 2026.",
+          "es": "La expansión de Medicaid, autorizada por el ACA en 2010, extendió la cobertura a adultos que ganan hasta el 138% del nivel federal de pobreza. En 2026, ese umbral es $22,025 por año para un adulto soltero (basado en el FPL 2026 de $15,960). Como cero ingresos es menor que cualquier umbral positivo, los adultos que viven en estados con expansión sin ingresos califican para Medicaid siempre que cumplan los otros requisitos de elegibilidad: ciudadanía estadounidense o estado migratorio calificado, residencia estatal y edad de 19 a 64 años. Carolina del Norte expandió en diciembre de 2023. Dakota del Sur expandió en julio de 2023. Eso lleva el total de expansión a 40 estados más DC en 2026."
+        },
+        {
+          "en": "Medicaid expansion uses MAGI (Modified Adjusted Gross Income) to count income. Under MAGI rules, zero earned income with no taxable benefits means your MAGI is $0. Some forms of income are excluded from MAGI entirely: SSI payments, child support received, most VA benefits, and workers' compensation. If your only income is one of these excluded types, your MAGI may still be $0 even if you receive regular payments, making you eligible in expansion states.",
+          "es": "La expansión de Medicaid usa el MAGI (Ingreso Bruto Ajustado Modificado) para contar ingresos. Bajo las reglas MAGI, cero ingresos ganados sin beneficios gravables significa que su MAGI es $0. Algunas formas de ingreso se excluyen completamente del MAGI: pagos del SSI, manutención de hijos recibida, la mayoría de beneficios del VA y compensación laboral. Si su único ingreso es uno de estos tipos excluidos, su MAGI puede seguir siendo $0 aunque reciba pagos regulares, haciéndole elegible en estados con expansión."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Non-Expansion States and the Coverage Gap",
+        "es": "Estados sin expansión y la brecha de cobertura"
+      },
+      "paragraphs": [
+        {
+          "en": "In the 10 states that have not expanded Medicaid, the coverage gap is the central problem for adults with no income. Traditional Medicaid in non-expansion states covers very limited adult groups: pregnant women, parents of dependent children below very low income thresholds (often under 50% to 100% FPL), people with qualifying disabilities, and seniors. Non-disabled, non-pregnant adults without dependent children are typically excluded from Medicaid coverage altogether in these states, even at zero income.",
+          "es": "En los 10 estados que no han expandido Medicaid, la brecha de cobertura es el problema central para adultos sin ingresos. Medicaid tradicional en estados sin expansión cubre grupos de adultos muy limitados: mujeres embarazadas, padres de hijos dependientes por debajo de umbrales de ingresos muy bajos (a menudo menos del 50% al 100% FPL), personas con discapacidades calificantes y personas mayores. Los adultos sin discapacidad, no embarazados y sin hijos dependientes generalmente quedan excluidos de la cobertura de Medicaid en estos estados, incluso con cero ingresos."
+        },
+        {
+          "en": "The coverage gap is a specific policy term: it describes adults in non-expansion states whose income falls between $0 and 100% FPL ($15,960 for one person in 2026). These individuals earn too little to qualify for ACA marketplace premium tax credits (which start at 100% FPL) but do not qualify for Medicaid under state rules. The result is that having no income in a non-expansion state often means having no affordable coverage option at all. Roughly 1.5 million adults fell in this gap as of early 2026.",
+          "es": "La brecha de cobertura es un término político específico: describe a adultos en estados sin expansión cuyos ingresos caen entre $0 y el 100% FPL ($15,960 para una persona en 2026). Estas personas ganan muy poco para calificar para créditos de prima del mercado ACA (que comienzan en 100% FPL) pero no califican para Medicaid bajo las reglas estatales. El resultado es que no tener ingresos en un estado sin expansión a menudo significa no tener ninguna opción de cobertura asequible. Aproximadamente 1.5 millones de adultos estaban en esta brecha a principios de 2026."
+        }
+      ],
+      "list": [
+        {
+          "en": "Alabama: adults without qualifying disability or children almost never covered.",
+          "es": "Alabama: adultos sin discapacidad calificante o hijos casi nunca cubiertos."
+        },
+        {
+          "en": "Florida: parents covered up to 32% FPL; childless adults not covered.",
+          "es": "Florida: padres cubiertos hasta el 32% FPL; adultos sin hijos no cubiertos."
+        },
+        {
+          "en": "Georgia: limited expansion launched 2023 (Pathways) requires 80 hours/month work for adults 19-64; zero income does not satisfy the work requirement.",
+          "es": "Georgia: expansión limitada iniciada en 2023 (Pathways) requiere 80 horas/mes de trabajo para adultos 19-64; cero ingresos no satisface el requisito de trabajo."
+        },
+        {
+          "en": "Texas: parents covered up to 16% FPL; childless adults: no coverage.",
+          "es": "Texas: padres cubiertos hasta el 16% FPL; adultos sin hijos: sin cobertura."
+        },
+        {
+          "en": "Wisconsin: covers childless adults to 100% FPL under a 1115 waiver, making it an unusual non-expansion state where zero income does qualify adults.",
+          "es": "Wisconsin: cubre adultos sin hijos hasta el 100% FPL bajo una exención 1115, siendo un estado sin expansión inusual donde cero ingresos sí califica a adultos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "SSI Recipients: Automatic Medicaid Enrollment",
+        "es": "Beneficiarios del SSI: Inscripción automática en Medicaid"
+      },
+      "paragraphs": [
+        {
+          "en": "Supplemental Security Income (SSI) is a federal cash assistance program for people who are aged, blind, or disabled with very limited income and resources. SSI recipients automatically receive Medicaid in 32 states and DC because these states use SSI eligibility criteria as the gateway to Medicaid. In 2026, the federal SSI benefit is $994 per month for an individual. Because SSI is excluded from MAGI calculations, a person whose only income is SSI has a MAGI of $0 for Medicaid purposes, which means they qualify on income grounds even if the automatic SSI linkage did not exist.",
+          "es": "El Ingreso de Seguridad Suplementario (SSI) es un programa federal de asistencia en efectivo para personas ancianas, ciegas o discapacitadas con ingresos y recursos muy limitados. Los beneficiarios del SSI reciben automáticamente Medicaid en 32 estados y DC porque estos estados usan los criterios de elegibilidad del SSI como puerta de entrada a Medicaid. En 2026, el beneficio federal del SSI es $994 por mes para un individuo. Como el SSI está excluido de los cálculos MAGI, una persona cuyo único ingreso es el SSI tiene un MAGI de $0 para propósitos de Medicaid."
+        },
+        {
+          "en": "Eleven states use the 209(b) option, which allows them to apply eligibility criteria more restrictive than SSI, though they must still cover SSI recipients who meet their specific rules. The 209(b) states are Connecticut, Hawaii, Illinois, Indiana, Minnesota, Missouri, New Hampshire, North Dakota, Ohio, Oklahoma, and Virginia. Residents of 209(b) states who receive SSI should confirm their Medicaid status with their state Medicaid agency, as automatic enrollment does not always apply. The remaining seven states (Arkansas, Kansas, Mississippi, North Carolina, North Dakota, Oklahoma, West Virginia) have separate state supplement programs that interact with Medicaid eligibility differently.",
+          "es": "Once estados usan la opción 209(b), que les permite aplicar criterios de elegibilidad más restrictivos que el SSI, aunque aún deben cubrir a los beneficiarios del SSI que cumplen sus reglas específicas. Los estados 209(b) son Connecticut, Hawaii, Illinois, Indiana, Minnesota, Missouri, New Hampshire, North Dakota, Ohio, Oklahoma y Virginia. Los residentes de estados 209(b) que reciben SSI deben confirmar su estado de Medicaid con su agencia estatal de Medicaid."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What MAGI Means When Income Is Zero",
+        "es": "Qué significa MAGI cuando los ingresos son cero"
+      },
+      "paragraphs": [
+        {
+          "en": "MAGI stands for Modified Adjusted Gross Income. Medicaid expansion eligibility uses MAGI rather than asset tests or spend-down calculations for most working-age adults. MAGI equals Adjusted Gross Income from your federal tax return plus any tax-exempt interest income plus the non-taxable portion of Social Security benefits. If your income is genuinely zero across all of these sources, your MAGI is $0, placing you comfortably below the 138% FPL limit in expansion states.",
+          "es": "MAGI significa Ingreso Bruto Ajustado Modificado. La elegibilidad de la expansión de Medicaid usa MAGI en lugar de pruebas de activos o cálculos de reducción para la mayoría de adultos en edad laboral. MAGI equivale al Ingreso Bruto Ajustado de su declaración de impuestos federal más cualquier ingreso de intereses exentos de impuestos más la parte no gravable de los beneficios del Seguro Social. Si sus ingresos son genuinamente cero en todas estas fuentes, su MAGI es $0."
+        },
+        {
+          "en": "Income excluded from MAGI under federal Medicaid rules in 2026 includes: SSI payments, child support received, gifts and inheritances (not income), most veterans' disability payments, workers' compensation, Temporary Assistance for Needy Families (TANF) and other means-tested public benefits, and lump-sum distributions from the prior year if already spent. Wages, self-employment income, unemployment compensation, Social Security retirement benefits (taxable portion), alimony received (for pre-2019 agreements), and rental income all count toward MAGI.",
+          "es": "Los ingresos excluidos del MAGI bajo las reglas federales de Medicaid en 2026 incluyen: pagos del SSI, manutención de hijos recibida, regalos y herencias (no son ingresos), la mayoría de pagos de discapacidad del VA, compensación laboral, TANF y otros beneficios públicos sujetos a comprobación de medios, y distribuciones de suma global del año anterior si ya se gastaron. Los salarios, ingresos por trabajo por cuenta propia, compensación por desempleo, beneficios de jubilación del Seguro Social (porción gravable), pensión alimenticia recibida (para acuerdos pre-2019) e ingresos por alquiler cuentan hacia el MAGI."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Special Medicaid Categories That Cover Zero-Income Adults Everywhere",
+        "es": "Categorías especiales de Medicaid que cubren adultos sin ingresos en todos los estados"
+      },
+      "paragraphs": [
+        {
+          "en": "Certain groups qualify for Medicaid in all 50 states regardless of expansion status, and all of these groups qualify when income is zero.",
+          "es": "Ciertos grupos califican para Medicaid en los 50 estados independientemente del estado de expansión, y todos estos grupos califican cuando los ingresos son cero."
+        }
+      ],
+      "list": [
+        {
+          "en": "Pregnant women: mandatory Medicaid category in all 50 states. Income threshold typically 185% to 213% FPL in 2026, so zero income qualifies in all states.",
+          "es": "Mujeres embarazadas: categoría obligatoria de Medicaid en los 50 estados. Umbral de ingresos típicamente del 185% al 213% FPL en 2026, por lo que cero ingresos califica en todos los estados."
+        },
+        {
+          "en": "Children under 19: covered through Medicaid or CHIP in all 50 states. Income thresholds range from 133% to 317% FPL depending on state and age.",
+          "es": "Niños menores de 19 años: cubiertos a través de Medicaid o CHIP en los 50 estados. Los umbrales de ingresos van del 133% al 317% FPL según el estado y la edad."
+        },
+        {
+          "en": "People receiving SSI: automatically enrolled in most states; $0 MAGI qualifies income test even in non-SSI-linked states.",
+          "es": "Personas que reciben SSI: se inscriben automáticamente en la mayoría de estados; $0 MAGI califica la prueba de ingresos incluso en estados no vinculados al SSI."
+        },
+        {
+          "en": "Seniors age 65 and older: Medicare-Medicaid dual eligibility applies at low income; full Medicaid covers cost-sharing and services Medicare does not cover.",
+          "es": "Personas mayores de 65 años: la elegibilidad dual Medicare-Medicaid aplica con ingresos bajos; Medicaid completo cubre los costos compartidos y servicios que Medicare no cubre."
+        },
+        {
+          "en": "People with qualifying disabilities (receiving SSDI or meeting SSA disability criteria): eligible under traditional Medicaid in all 50 states.",
+          "es": "Personas con discapacidades calificantes (que reciben SSDI o cumplen criterios de discapacidad de la SSA): elegibles bajo Medicaid tradicional en los 50 estados."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives If You Are in the Coverage Gap",
+        "es": "Alternativas si está en la brecha de cobertura"
+      },
+      "paragraphs": [
+        {
+          "en": "Adults in non-expansion states with zero income and no qualifying disability face the coverage gap. Federal law does not require those states to cover them, and the ACA marketplace is unavailable because marketplace subsidies (Premium Tax Credits) require income at or above 100% FPL ($15,960 in 2026). Practical options available to coverage-gap adults include federally qualified health centers, free clinics, state and local indigent care programs, community health centers, and hospital charity care programs.",
+          "es": "Los adultos en estados sin expansión con cero ingresos y sin discapacidad calificante enfrentan la brecha de cobertura. La ley federal no obliga a esos estados a cubrirlos, y el mercado ACA no está disponible porque los subsidios del mercado (Créditos de Prima Fiscal) requieren ingresos iguales o superiores al 100% FPL ($15,960 en 2026). Las opciones prácticas disponibles para adultos en la brecha de cobertura incluyen centros de salud federalmente calificados, clínicas gratuitas, programas de atención a indigentes estatales y locales, centros de salud comunitarios y programas de atención caritativa hospitalaria."
+        },
+        {
+          "en": "If you gain any income, even modest wages, in a non-expansion state, you may suddenly become eligible for ACA marketplace coverage with substantial subsidies. At exactly 100% FPL ($15,960 for one person in 2026), you gain access to heavily subsidized silver marketplace plans. Some advocates recommend that coverage-gap residents report a small amount of expected income to unlock marketplace access; the legality and prudence of this approach depends on your specific situation and state rules, and you should consult with a navigator or enrollment assister before doing so.",
+          "es": "Si obtiene cualquier ingreso, incluso salarios modestos, en un estado sin expansión, puede volverse elegible repentinamente para cobertura del mercado ACA con subsidios sustanciales. Exactamente al 100% FPL ($15,960 para una persona en 2026), obtiene acceso a planes silver del mercado con subsidios considerables. Algunos defensores recomiendan que los residentes en la brecha de cobertura reporten una pequeña cantidad de ingresos esperados para desbloquear el acceso al mercado; la legalidad y prudencia de este enfoque depende de su situación específica y las reglas estatales."
+        }
+      ],
+      "list": [
+        {
+          "en": "Federally Qualified Health Centers (FQHCs): sliding-scale fee primary care based on income; visit hrsa.gov/find-health-center to locate one.",
+          "es": "Centros de Salud Federalmente Calificados (FQHCs): atención primaria de tarifa deslizante basada en ingresos; visite hrsa.gov/find-health-center para localizar uno."
+        },
+        {
+          "en": "Free Clinics: volunteer-staffed clinics serving uninsured patients at no cost; find them at freeclinics.us.",
+          "es": "Clínicas gratuitas: clínicas con personal voluntario que atienden a pacientes sin seguro sin costo; encuentrelas en freeclinics.us."
+        },
+        {
+          "en": "Hospital charity care: most nonprofit hospitals are federally required to have financial assistance programs; ask the billing office for a charity care application.",
+          "es": "Atención caritativa hospitalaria: la mayoría de hospitales sin fines de lucro están obligados federalmente a tener programas de asistencia financiera; solicite en el departamento de facturación una solicitud de atención caritativa."
+        },
+        {
+          "en": "Ryan White HIV/AIDS Program: for HIV-positive individuals in any state, provides medical care regardless of insurance status.",
+          "es": "Programa Ryan White HIV/SIDA: para personas VIH positivas en cualquier estado, proporciona atención médica independientemente del estado del seguro."
+        },
+        {
+          "en": "Medicaid emergency coverage: all states must provide emergency Medicaid to otherwise-ineligible individuals for emergency conditions; immigration status may affect non-emergency coverage.",
+          "es": "Cobertura de emergencia de Medicaid: todos los estados deben proporcionar Medicaid de emergencia a personas que de otro modo no serían elegibles para condiciones de emergencia; el estado migratorio puede afectar la cobertura no urgente."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Apply for Medicaid With No Income",
+        "es": "Cómo solicitar Medicaid sin ingresos"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid has no annual enrollment window. Applications are accepted year-round. Coverage can start the first day of the month you apply or even retroactively for up to three months in some states. The application process is the same whether your income is zero or just low, but you will need to document your zero-income status with a signed self-attestation or supporting documentation.",
+          "es": "Medicaid no tiene ventana de inscripción anual. Las solicitudes se aceptan durante todo el año. La cobertura puede comenzar el primer día del mes en que solicita o incluso retroactivamente hasta tres meses en algunos estados. El proceso de solicitud es el mismo ya sea que sus ingresos sean cero o simplemente bajos, pero necesitará documentar su estado de cero ingresos con una auto-declaración firmada o documentación de respaldo."
+        }
+      ]
+    }
+  ],
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Step 1: Confirm your state's expansion status. Go to medicaid.gov or kff.org to check whether your state has expanded Medicaid. This determines whether zero income qualifies you.",
+        "es": "Paso 1: Confirme el estado de expansión de su estado. Vaya a medicaid.gov o kff.org para verificar si su estado ha expandido Medicaid. Esto determina si cero ingresos le califica."
+      },
+      {
+        "en": "Step 2: Gather your documents. You will need proof of identity (driver's license, state ID, or passport), proof of residency (utility bill, lease, or bank statement with state address), your Social Security number, and documentation of zero income (bank statements showing no deposits, self-attestation form, or letter from any former employer confirming no current employment).",
+        "es": "Paso 2: Reúna sus documentos. Necesitará prueba de identidad (licencia de conducir, identificación estatal o pasaporte), prueba de residencia (factura de servicios, contrato de arrendamiento o estado de cuenta bancario con dirección estatal), su número de Seguro Social y documentación de cero ingresos (estados de cuenta bancarios sin depósitos, formulario de auto-declaración o carta del empleador confirmando que no hay empleo actual)."
+      },
+      {
+        "en": "Step 3: Apply online at healthcare.gov or your state Medicaid portal. Healthcare.gov routes to Medicaid automatically when income falls below 100% FPL in expansion states. You can also apply in person at your county social services office or through a Medicaid navigator.",
+        "es": "Paso 3: Solicite en línea en healthcare.gov o el portal estatal de Medicaid. Healthcare.gov redirige a Medicaid automáticamente cuando los ingresos caen por debajo del 100% FPL en estados con expansión. También puede solicitar en persona en la oficina de servicios sociales del condado o a través de un navegador de Medicaid."
+      },
+      {
+        "en": "Step 4: Attest to zero income. On the application, enter $0 for all income fields that apply. Many states accept self-attestation for zero income without requiring additional documentation, but have bank statements available in case verification is requested.",
+        "es": "Paso 4: Declare cero ingresos. En la solicitud, ingrese $0 en todos los campos de ingresos que apliquen. Muchos estados aceptan auto-declaración para cero ingresos sin requerir documentación adicional, pero tenga estados de cuenta bancarios disponibles en caso de que se solicite verificación."
+      },
+      {
+        "en": "Step 5: Wait for a determination. States must respond within 45 days for most Medicaid applications (90 days for disability-based). If approved, coverage may begin the first day of the application month or be retroactive up to three months in states offering retroactive coverage.",
+        "es": "Paso 5: Espere una determinación. Los estados deben responder dentro de los 45 días para la mayoría de solicitudes de Medicaid (90 días para las basadas en discapacidad). Si se aprueba, la cobertura puede comenzar el primer día del mes de solicitud o ser retroactiva hasta tres meses en estados que ofrecen cobertura retroactiva."
+      }
+    ],
+    "govStartingUrl": "https://www.healthcare.gov/medicaid-chip/",
+    "documentsNeeded": [
+      {
+        "en": "Photo ID: driver's license, state ID card, or passport.",
+        "es": "Identificación con foto: licencia de conducir, tarjeta de identificación estatal o pasaporte."
+      },
+      {
+        "en": "Social Security number (or proof you have applied for one).",
+        "es": "Número de Seguro Social (o prueba de que ha solicitado uno)."
+      },
+      {
+        "en": "Proof of state residency: utility bill, lease agreement, bank statement, or government mail with current address.",
+        "es": "Prueba de residencia estatal: factura de servicios públicos, contrato de arrendamiento, estado de cuenta bancario o correo gubernamental con dirección actual."
+      },
+      {
+        "en": "Zero income documentation: recent bank statements showing no income, employer separation letter, or self-attestation statement (most states accept this).",
+        "es": "Documentación de cero ingresos: estados de cuenta bancarios recientes sin ingresos, carta de separación del empleador o declaración de auto-declaración (la mayoría de estados la aceptan)."
+      },
+      {
+        "en": "Immigration or citizenship documentation if applicable: U.S. birth certificate, naturalization certificate, or immigration documents.",
+        "es": "Documentación de inmigración o ciudadanía si aplica: certificado de nacimiento de EE.UU., certificado de naturalización o documentos de inmigración."
+      },
+      {
+        "en": "SSI award letter if you receive SSI (speeds up enrollment in SSI-linked states).",
+        "es": "Carta de concesión del SSI si recibe SSI (acelera la inscripción en estados vinculados al SSI)."
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "State has not expanded Medicaid and applicant does not fall in a covered category (the most common reason adults with zero income are denied in non-expansion states).",
+        "es": "El estado no ha expandido Medicaid y el solicitante no cae en una categoría cubierta (la razón más común por la que adultos sin ingresos son denegados en estados sin expansión)."
+      },
+      {
+        "en": "Failure to verify identity or residency: documents not submitted or not accepted.",
+        "es": "No verificar identidad o residencia: documentos no enviados o no aceptados."
+      },
+      {
+        "en": "Immigration status does not qualify: undocumented immigrants are generally not eligible for full Medicaid (emergency Medicaid is available).",
+        "es": "El estado migratorio no califica: los inmigrantes indocumentados generalmente no son elegibles para Medicaid completo (el Medicaid de emergencia está disponible)."
+      },
+      {
+        "en": "Missing or incomplete application: questions left blank or required information not provided.",
+        "es": "Solicitud incompleta o con información faltante: preguntas en blanco o información requerida no proporcionada."
+      },
+      {
+        "en": "Age or category mismatch: applicant outside the covered age range or not in a covered Medicaid category for that state.",
+        "es": "Desajuste de edad o categoría: solicitante fuera del rango de edad cubierto o no en una categoría de Medicaid cubierta para ese estado."
+      }
+    ],
+    "deadline": {
+      "en": "Year-round. Medicaid has no enrollment window. Apply any time.",
+      "es": "Durante todo el año. Medicaid no tiene ventana de inscripción. Solicite en cualquier momento."
+    }
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "Can I get Medicaid if I have no job and no income?",
+        "answer": "Yes, if you live in one of the 40 expansion states plus DC. Your $0 income falls below the 2026 threshold of $22,025 per year (138% FPL for one person). In the 10 non-expansion states, most adults without a disability or dependent children do not qualify for Medicaid even with zero income, because those states have not created an adult Medicaid category for non-disabled individuals."
+      },
+      {
+        "question": "What is the coverage gap and does it affect people with no income?",
+        "answer": "The coverage gap affects adults in non-expansion states whose income is below 100% FPL ($15,960 for one person in 2026). These individuals earn too little for ACA marketplace subsidies, which start at 100% FPL, but are not covered by their state Medicaid because the state has not expanded. People with zero income in these 10 states are in the coverage gap and have no ACA-subsidized option."
+      },
+      {
+        "question": "Does receiving SSI mean I automatically get Medicaid?",
+        "answer": "In most states, yes. 32 states and DC automatically enroll SSI recipients in Medicaid because they use SSI eligibility criteria as the Medicaid gateway. 11 states use the 209(b) option with slightly different criteria. SSI payments are also excluded from MAGI, so your Medicaid income for expansion-state purposes is $0 even if you receive the $994 per month federal SSI benefit in 2026."
+      },
+      {
+        "question": "What income counts for Medicaid when I have no earned income?",
+        "answer": "Medicaid expansion uses MAGI (Modified Adjusted Gross Income). Zero wages means zero MAGI unless you have other taxable income. Income excluded from MAGI includes SSI, child support received, most VA disability payments, workers' compensation, and TANF. The taxable portion of Social Security retirement benefits does count. If your only income comes from excluded sources, your MAGI remains $0."
+      },
+      {
+        "question": "Can undocumented immigrants with no income get Medicaid?",
+        "answer": "Generally no for full Medicaid coverage. Federal rules bar undocumented immigrants from full Medicaid benefits regardless of income. Emergency Medicaid is available to undocumented individuals in all 50 states for emergency medical conditions. Some states fund state-only Medicaid programs for certain groups regardless of immigration status, particularly for children and pregnant women."
+      },
+      {
+        "question": "Does Medicaid have an asset test for people with no income?",
+        "answer": "Not for the expansion adult group. Medicaid expansion uses MAGI-based income rules with no asset test for adults age 19 to 64 under the expansion group. Traditional Medicaid categories (seniors, people with disabilities) may have asset limits. SSI itself has a resource limit of $2,000 for an individual in 2026, but qualifying for SSI links you to Medicaid, which may then have no separate asset test in your state."
+      },
+      {
+        "question": "Is my Medicaid coverage at risk if I start earning income?",
+        "answer": "Not immediately in expansion states. In expansion states, your Medicaid continues until your MAGI exceeds 138% FPL ($22,025 for one person in 2026). You must report income changes to your state Medicaid agency, typically within 30 days. If your income rises above 138% FPL, you lose Medicaid but gain access to ACA marketplace plans. A special enrollment period allows you to switch without a gap in coverage."
+      },
+      {
+        "question": "What should I do if I am denied Medicaid because of the coverage gap?",
+        "answer": "Request a written denial notice with the specific reason. You have the right to a state fair hearing to appeal the decision. Contact a local navigator or benefits counselor through benefits.gov or by calling 211 to explore alternatives: federally qualified health centers, free clinics, and hospital charity care programs provide care regardless of insurance status."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Puedo obtener Medicaid si no tengo trabajo ni ingresos?",
+        "answer": "Sí, si vive en uno de los 40 estados con expansión más DC. Sus $0 de ingresos caen por debajo del umbral de 2026 de $22,025 por año (138% FPL para una persona). En los 10 estados sin expansión, la mayoría de adultos sin discapacidad o hijos dependientes no califican para Medicaid incluso con cero ingresos, porque esos estados no han creado una categoría de Medicaid para adultos sin discapacidad."
+      },
+      {
+        "question": "¿Qué es la brecha de cobertura y afecta a personas sin ingresos?",
+        "answer": "La brecha de cobertura afecta a adultos en estados sin expansión cuyos ingresos están por debajo del 100% FPL ($15,960 para una persona en 2026). Estas personas ganan muy poco para los subsidios del mercado ACA, que comienzan en el 100% FPL, pero no están cubiertos por Medicaid de su estado porque el estado no ha expandido. Las personas con cero ingresos en estos 10 estados están en la brecha de cobertura y no tienen opción subsidiada por el ACA."
+      },
+      {
+        "question": "¿Recibir SSI significa que automáticamente obtengo Medicaid?",
+        "answer": "En la mayoría de estados, sí. 32 estados y DC inscriben automáticamente a los beneficiarios del SSI en Medicaid porque usan los criterios de elegibilidad del SSI como puerta de entrada a Medicaid. 11 estados usan la opción 209(b) con criterios ligeramente diferentes. Los pagos del SSI también están excluidos del MAGI, por lo que sus ingresos de Medicaid para propósitos de estado con expansión son $0 incluso si recibe el beneficio federal del SSI de $994 por mes en 2026."
+      },
+      {
+        "question": "¿Qué ingresos cuentan para Medicaid cuando no tengo ingresos ganados?",
+        "answer": "La expansión de Medicaid usa MAGI (Ingreso Bruto Ajustado Modificado). Cero salarios significa cero MAGI a menos que tenga otros ingresos gravables. Los ingresos excluidos del MAGI incluyen SSI, manutención de hijos recibida, la mayoría de pagos de discapacidad del VA, compensación laboral y TANF. La porción gravable de los beneficios de jubilación del Seguro Social sí cuenta. Si sus únicos ingresos provienen de fuentes excluidas, su MAGI permanece en $0."
+      },
+      {
+        "question": "¿Pueden los inmigrantes indocumentados sin ingresos obtener Medicaid?",
+        "answer": "Generalmente no para cobertura completa de Medicaid. Las reglas federales excluyen a los inmigrantes indocumentados de los beneficios completos de Medicaid independientemente de los ingresos. El Medicaid de emergencia está disponible para personas indocumentadas en los 50 estados para condiciones médicas de emergencia. Algunos estados financian programas Medicaid solo estatales para ciertos grupos independientemente del estado migratorio."
+      },
+      {
+        "question": "¿Medicaid tiene una prueba de activos para personas sin ingresos?",
+        "answer": "No para el grupo de adultos con expansión. La expansión de Medicaid usa reglas de ingresos basadas en MAGI sin prueba de activos para adultos de 19 a 64 años bajo el grupo de expansión. Las categorías tradicionales de Medicaid (personas mayores, personas con discapacidades) pueden tener límites de activos. El propio SSI tiene un límite de recursos de $2,000 para un individuo en 2026, pero calificar para el SSI le vincula a Medicaid."
+      },
+      {
+        "question": "¿Mi cobertura de Medicaid está en riesgo si empiezo a ganar ingresos?",
+        "answer": "No inmediatamente en estados con expansión. En estados con expansión, su Medicaid continúa hasta que su MAGI supere el 138% FPL ($22,025 para una persona en 2026). Debe reportar cambios de ingresos a su agencia estatal de Medicaid, generalmente dentro de los 30 días. Si sus ingresos superan el 138% FPL, pierde Medicaid pero obtiene acceso a planes del mercado ACA. Un período de inscripción especial le permite cambiar sin brecha en la cobertura."
+      },
+      {
+        "question": "¿Qué debo hacer si me niegan Medicaid por la brecha de cobertura?",
+        "answer": "Solicite un aviso de denegación por escrito con la razón específica. Tiene derecho a una audiencia justa estatal para apelar la decisión. Comuníquese con un navegador o consejero de beneficios local a través de benefits.gov o llamando al 211 para explorar alternativas: los centros de salud federalmente calificados, las clínicas gratuitas y los programas de atención caritativa hospitalaria brindan atención independientemente del estado del seguro."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicaid Income Limits by State 2026",
+        "es": "Límites de ingresos de Medicaid por estado 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "What Counts as Income for Medicaid?",
+        "es": "¿Qué cuenta como ingreso para Medicaid?"
+      },
+      "href": "/qa/what-counts-as-income-for-medicaid"
+    },
+    {
+      "label": {
+        "en": "Can I Get Medicaid If I Work?",
+        "es": "¿Puedo obtener Medicaid si trabajo?"
+      },
+      "href": "/qa/can-i-get-medicaid-if-i-work"
+    },
+    {
+      "label": {
+        "en": "Check Your Medicaid Eligibility",
+        "es": "Verifique su elegibilidad de Medicaid"
+      },
+      "href": "/screener"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Official CMS overview of federal Medicaid eligibility rules, mandatory and optional coverage groups, and MAGI-based income counting methodology.",
+        "es": "Resumen oficial de CMS de las reglas federales de elegibilidad de Medicaid, grupos de cobertura obligatorios y opcionales, y metodología de conteo de ingresos basada en MAGI."
+      }
+    },
+    {
+      "name": "KFF: Status of State Medicaid Expansion Decisions 2026",
+      "url": "https://www.kff.org/medicaid/issue-brief/status-of-state-medicaid-expansion-decisions-interactive-map/",
+      "note": {
+        "en": "Interactive map and data tracking which states have expanded Medicaid, including North Carolina (December 2023) and South Dakota (July 2023) expansions.",
+        "es": "Mapa interactivo y datos que rastrean qué estados han expandido Medicaid, incluyendo las expansiones de Carolina del Norte (diciembre 2023) y Dakota del Sur (julio 2023)."
+      }
+    },
+    {
+      "name": "ASPE: 2026 Federal Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Official HHS 2026 federal poverty guidelines used to calculate Medicaid income thresholds: $15,960 for household of 1 in 48 contiguous states plus DC.",
+        "es": "Pautas oficiales de pobreza federal de HHS para 2026 utilizadas para calcular los umbrales de ingresos de Medicaid: $15,960 para hogar de 1 en los 48 estados contiguos más DC."
+      }
+    },
+    {
+      "name": "KFF: The Coverage Gap: Uninsured Poor Adults in States that Do Not Expand Medicaid",
+      "url": "https://www.kff.org/medicaid/issue-brief/the-coverage-gap-uninsured-poor-adults-in-states-that-do-not-expand-medicaid/",
+      "note": {
+        "en": "KFF analysis of the coverage gap in non-expansion states, including estimates of the number of adults affected and income ranges of those in the gap.",
+        "es": "Análisis de KFF de la brecha de cobertura en estados sin expansión, incluyendo estimaciones del número de adultos afectados y rangos de ingresos de quienes están en la brecha."
+      }
+    },
+    {
+      "name": "Medicaid.gov: MAGI-Based Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/magi-based-eligibility/index.html",
+      "note": {
+        "en": "CMS explanation of Modified Adjusted Gross Income rules for Medicaid, including which income types are excluded from MAGI calculations.",
+        "es": "Explicación de CMS de las reglas del Ingreso Bruto Ajustado Modificado para Medicaid, incluyendo qué tipos de ingresos están excluidos de los cálculos MAGI."
+      }
+    }
+  ]
+}
