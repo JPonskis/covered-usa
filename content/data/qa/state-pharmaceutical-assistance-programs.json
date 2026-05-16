@@ -1,0 +1,646 @@
+{
+  "slug": "state-pharmaceutical-assistance-programs",
+  "subtype": "state-eligibility",
+  "topicCluster": "prescription-drugs-spap",
+  "stateBrand": "SPAP",
+  "pageType": "eligibility",
+  "question": {
+    "en": "What Are State Pharmaceutical Assistance Programs (SPAPs)?",
+    "es": "¿Qué Son los Programas Estatales de Asistencia Farmacéutica (SPAP)?"
+  },
+  "shortAnswer": {
+    "en": "Yes, if you live in one of ~14 states with an active SPAP in 2026.",
+    "es": "Sí, si vive en uno de los ~14 estados con un SPAP activo en 2026."
+  },
+  "fullAnswer": {
+    "en": "State Pharmaceutical Assistance Programs (SPAPs) are state-funded programs that help Medicare beneficiaries pay for prescription drug costs beyond what Medicare Part D covers, including premiums, deductibles, and copays. Roughly 14 states run active SPAPs in 2026, each with its own income limits, age requirements, and benefit structures. SPAP payments count toward your Part D True Out-of-Pocket (TrOOP) total, accelerating when you hit the 2026 catastrophic cap of $2,100. You can receive both SPAP benefits and Medicare Part D Extra Help (LIS) at the same time.",
+    "es": "Los Programas Estatales de Asistencia Farmacéutica (SPAP) son programas financiados por los estados que ayudan a los beneficiarios de Medicare a pagar los costos de medicamentos recetados más allá de lo que cubre la Parte D de Medicare, incluyendo primas, deducibles y copagos. Aproximadamente 14 estados tienen SPAP activos en 2026, cada uno con sus propios límites de ingresos, requisitos de edad y estructuras de beneficios. Los pagos del SPAP cuentan para su total True Out-of-Pocket (TrOOP) de la Parte D, acelerando cuándo alcanza el límite catastrófico de 2026 de $2,100. Puede recibir beneficios de SPAP y Extra Help de Medicare Parte D (LIS) al mismo tiempo."
+  },
+  "category": "Prescription Drugs",
+  "topic": "State Pharmaceutical Assistance Programs (SPAPs) by State 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "7 min read",
+  "keyTerms": {
+    "en": ["SPAP", "state pharmaceutical assistance program", "Medicare Part D help", "prescription drug assistance 2026", "EPIC NY", "PAAD NJ", "PACE Pennsylvania"],
+    "es": ["SPAP", "programa estatal de asistencia farmacéutica", "ayuda para Medicare Parte D", "asistencia para medicamentos 2026", "EPIC NY", "PAAD NJ", "PACE Pensilvania"]
+  },
+  "isLighthouse": false,
+  "meta": {
+    "title": {
+      "en": "State Pharmaceutical Assistance Programs (SPAPs) 2026 | CoveredUSA",
+      "es": "Programas Estatales de Asistencia Farmacéutica (SPAP) 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Find 2026 SPAP programs by state. NY EPIC, NJ PAAD, PA PACE, MA Prescription Advantage, and more. Income limits, eligibility, and how to apply.",
+      "es": "Encuentre los programas SPAP 2026 por estado. NY EPIC, NJ PAAD, PA PACE, MA Prescription Advantage y más. Límites de ingresos, elegibilidad y cómo solicitar."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "State Pharmaceutical Assistance Programs (SPAPs) by State 2026",
+      "es": "Programas Estatales de Asistencia Farmacéutica (SPAP) por Estado 2026"
+    }
+  },
+  "introParagraphs": [
+    {
+      "en": "Medicare Part D helps cover prescription drugs, but premiums, deductibles, and copays still add up fast. State Pharmaceutical Assistance Programs (SPAPs) are the safety net on top of that: state-funded programs that pay part or all of your out-of-pocket drug costs. If you live in one of the roughly 14 states with an active SPAP in 2026, you may qualify for significant additional relief, regardless of whether you already receive Medicare Extra Help (LIS).",
+      "es": "La Parte D de Medicare ayuda a cubrir medicamentos recetados, pero las primas, los deducibles y los copagos aún se acumulan rápidamente. Los Programas Estatales de Asistencia Farmacéutica (SPAP) son la red de seguridad adicional: programas financiados por el estado que pagan parte o todos sus costos de medicamentos de bolsillo. Si vive en uno de los aproximadamente 14 estados con un SPAP activo en 2026, puede calificar para un alivio adicional significativo, independientemente de si ya recibe Extra Help (LIS) de Medicare."
+    },
+    {
+      "en": "This guide covers which states have active SPAPs in 2026, the income and age limits for each major program, how SPAPs interact with Medicare Part D and Extra Help, and how to apply. The 2026 Part D out-of-pocket cap is $2,100. SPAP payments count toward that cap, meaning SPAP members often reach catastrophic coverage faster and pay nothing out of pocket for the rest of the year.",
+      "es": "Esta guía cubre qué estados tienen SPAP activos en 2026, los límites de ingresos y edad para cada programa principal, cómo los SPAP interactúan con Medicare Parte D y Extra Help, y cómo solicitar. El límite de gastos de bolsillo de la Parte D de 2026 es $2,100. Los pagos del SPAP cuentan para ese límite, lo que significa que los miembros del SPAP a menudo alcanzan la cobertura catastrófica más rápido y no pagan nada de bolsillo por el resto del año."
+    }
+  ],
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["State Program", "Age/Disability", "Income Limit (Single)", "Income Limit (Couple)", "What It Covers"],
+      "es": ["Programa estatal", "Edad/Discapacidad", "Límite de ingresos (individual)", "Límite de ingresos (pareja)", "Qué cubre"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "NY EPIC (Elderly Pharmaceutical Insurance Coverage)", "es": "NY EPIC (Cobertura de Seguro Farmacéutico para Adultos Mayores)" },
+          { "en": "Age 65+", "es": "65 o más" },
+          { "value": { "en": "Up to $75,000/year", "es": "Hasta $75,000/año" }, "status": "yes" },
+          { "value": { "en": "Up to $100,000/year", "es": "Hasta $100,000/año" }, "status": "yes" },
+          { "en": "Part D premiums (up to $23K income) + copay reduction; 2-tier Fee/Deductible plan", "es": "Primas de la Parte D (hasta $23K de ingresos) + reducción de copagos; plan de 2 niveles de Cuota/Deducible" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "NJ PAAD (Pharmaceutical Assistance to the Aged and Disabled)", "es": "NJ PAAD (Asistencia Farmacéutica para Personas Mayores y con Discapacidad)" },
+          { "en": "Age 65+ or disabled", "es": "65+ o con discapacidad" },
+          { "value": { "en": "Under $54,943/year", "es": "Menos de $54,943/año" }, "status": "yes" },
+          { "value": { "en": "Under $62,390/year", "es": "Menos de $62,390/año" }, "status": "yes" },
+          { "en": "Copays capped at $5 generic / $7 brand; Part D premium assistance", "es": "Copagos limitados a $5 genérico / $7 de marca; asistencia con primas de la Parte D" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "NJ Senior Gold Prescription Discount", "es": "NJ Senior Gold Descuento de Recetas" },
+          { "en": "Age 65+", "es": "65 o más" },
+          { "value": { "en": "$54,943 to $64,943/year", "es": "$54,943 a $64,943/año" }, "status": "partial" },
+          { "value": { "en": "$62,390 to $72,390/year", "es": "$62,390 a $72,390/año" }, "status": "partial" },
+          { "en": "Discounts on any drug copay over $15; accelerates Part D catastrophic coverage", "es": "Descuentos en copagos superiores a $15; acelera la cobertura catastrófica de la Parte D" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "PA PACE (Pharmaceutical Assistance Contract for the Elderly)", "es": "PA PACE (Contrato de Asistencia Farmacéutica para Adultos Mayores)" },
+          { "en": "Age 65+", "es": "65 o más" },
+          { "value": { "en": "Up to $14,500/year", "es": "Hasta $14,500/año" }, "status": "yes" },
+          { "value": { "en": "Up to $17,700/year", "es": "Hasta $17,700/año" }, "status": "yes" },
+          { "en": "Low copays on covered drugs; wraps around Part D", "es": "Copagos bajos en medicamentos cubiertos; complementa la Parte D" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "PA PACENET (higher-income tier of PACE)", "es": "PA PACENET (nivel de mayores ingresos de PACE)" },
+          { "en": "Age 65+", "es": "65 o más" },
+          { "value": { "en": "$14,501 to $45,000/year (as of July 2026)", "es": "$14,501 a $45,000/año (a partir de julio 2026)" }, "status": "partial" },
+          { "value": { "en": "$17,701 to $55,000/year (as of July 2026)", "es": "$17,701 a $55,000/año (a partir de julio 2026)" }, "status": "partial" },
+          { "en": "Annual deductible then copay assistance; Part D coordination", "es": "Deducible anual y luego asistencia con copagos; coordinación con la Parte D" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "MA Prescription Advantage", "es": "MA Prescription Advantage" },
+          { "en": "Age 65+ or disabled", "es": "65+ o con discapacidad" },
+          { "value": { "en": "Up to 500% FPL (~$79,800/year single)", "es": "Hasta 500% FPL (~$79,800/año individual)" }, "status": "yes" },
+          { "value": { "en": "Up to 500% FPL (~$108,200/year couple)", "es": "Hasta 500% FPL (~$108,200/año pareja)" }, "status": "yes" },
+          { "en": "Copay and premium assistance scaled to income; no asset test", "es": "Asistencia con copagos y primas según ingresos; sin prueba de activos" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "MD SPDAP (Senior Prescription Drug Assistance Program)", "es": "MD SPDAP (Programa de Asistencia para Medicamentos para Adultos Mayores)" },
+          { "en": "Age 65+", "es": "65 o más" },
+          { "value": { "en": "Up to 300% FPL (~$47,880/year single)", "es": "Hasta 300% FPL (~$47,880/año individual)" }, "status": "yes" },
+          { "value": { "en": "Up to 300% FPL (~$64,920/year couple)", "es": "Hasta 300% FPL (~$64,920/año pareja)" }, "status": "yes" },
+          { "en": "Up to $100/month premium subsidy; no coverage gap subsidy for 2026", "es": "Hasta $100/mes de subsidio de prima; sin subsidio de brecha de cobertura en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "WI SeniorCare", "es": "WI SeniorCare" },
+          { "en": "Age 65+", "es": "65 o más" },
+          { "value": { "en": "4 tiers up to 240% FPL (~$38,304/year single)", "es": "4 niveles hasta 240% FPL (~$38,304/año individual)" }, "status": "partial" },
+          { "value": { "en": "4 tiers up to 240% FPL (~$51,936/year couple)", "es": "4 niveles hasta 240% FPL (~$51,936/año pareja)" }, "status": "partial" },
+          { "en": "$5/$15 copays at lowest tier; $30/year enrollment fee; alternative to Part D", "es": "Copagos de $5/$15 en el nivel más bajo; cuota de inscripción de $30/año; alternativa a la Parte D" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "VT VPharm", "es": "VT VPharm" },
+          { "en": "Age 65+ or disabled", "es": "65+ o con discapacidad" },
+          { "value": { "en": "Up to 225% FPL (~$2,991/month single; 3 income tiers)", "es": "Hasta 225% FPL (~$2,991/mes individual; 3 niveles de ingresos)" }, "status": "partial" },
+          { "value": { "en": "Up to 225% FPL (~$4,060/month couple; 3 income tiers)", "es": "Hasta 225% FPL (~$4,060/mes pareja; 3 niveles de ingresos)" }, "status": "partial" },
+          { "en": "Monthly premiums of $15, $20, or $50 based on income; prescription cost-share reduction", "es": "Primas mensuales de $15, $20 o $50 según ingresos; reducción del costo compartido de medicamentos" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Income limits shown are annual gross income. Some programs use prior-year income. PACENET income limits increase effective July 1, 2026 under newly enacted Pennsylvania legislation. 500% FPL figures for MA based on 2026 HHS guidelines for a 1- and 2-person household.",
+      "es": "Los límites de ingresos mostrados son ingresos brutos anuales. Algunos programas utilizan ingresos del año anterior. Los límites de ingresos de PACENET aumentan a partir del 1 de julio de 2026 bajo la nueva legislación de Pensilvania. Las cifras del 500% del FPL para MA se basan en las guías HHS 2026 para hogares de 1 y 2 personas."
+    },
+    "source": "NY Dept of Health EPIC 2026, NJ Div of Aging Services, PA Dept of Aging, Mass.gov Prescription Advantage, Maryland SPDAP, WI DHS SeniorCare, VT Agency of Human Services"
+  },
+  "householdSizeTable": {
+    "caption": {
+      "en": "2026 Medicare Part D Extra Help (LIS) Income Limit by Household Size (150% FPL) -- the federal floor below all SPAPs",
+      "es": "Límite de ingresos de Extra Help (LIS) de la Parte D de Medicare 2026 por tamaño de hogar (150% FPL) -- el piso federal por debajo de todos los SPAP"
+    },
+    "year": 2026,
+    "rows": [
+      {
+        "size": "1",
+        "incomeLimit": {
+          "en": "$23,940/year ($1,995/month)",
+          "es": "$23,940/año ($1,995/mes)"
+        },
+        "notes": {
+          "en": "150% FPL; auto-qualify if on Medicaid, MSP, or SSI",
+          "es": "150% del FPL; calificación automática con Medicaid, MSP o SSI"
+        }
+      },
+      {
+        "size": "2",
+        "incomeLimit": {
+          "en": "$32,460/year ($2,705/month)",
+          "es": "$32,460/año ($2,705/mes)"
+        },
+        "notes": {
+          "en": "150% FPL for 2-person household",
+          "es": "150% del FPL para hogar de 2 personas"
+        }
+      },
+      {
+        "size": "3",
+        "incomeLimit": {
+          "en": "$40,980/year ($3,415/month)",
+          "es": "$40,980/año ($3,415/mes)"
+        },
+        "notes": {
+          "en": "150% FPL for 3-person household",
+          "es": "150% del FPL para hogar de 3 personas"
+        }
+      },
+      {
+        "size": "4",
+        "incomeLimit": {
+          "en": "$49,500/year ($4,125/month)",
+          "es": "$49,500/año ($4,125/mes)"
+        },
+        "notes": {
+          "en": "150% FPL for 4-person household",
+          "es": "150% del FPL para hogar de 4 personas"
+        }
+      },
+      {
+        "size": "5",
+        "incomeLimit": {
+          "en": "$58,020/year ($4,835/month)",
+          "es": "$58,020/año ($4,835/mes)"
+        },
+        "notes": {
+          "en": "150% FPL for 5-person household",
+          "es": "150% del FPL para hogar de 5 personas"
+        }
+      },
+      {
+        "size": "6",
+        "incomeLimit": {
+          "en": "$66,540/year ($5,545/month)",
+          "es": "$66,540/año ($5,545/mes)"
+        },
+        "notes": {
+          "en": "150% FPL for 6-person household",
+          "es": "150% del FPL para hogar de 6 personas"
+        }
+      },
+      {
+        "size": "7",
+        "incomeLimit": {
+          "en": "$75,060/year ($6,255/month)",
+          "es": "$75,060/año ($6,255/mes)"
+        },
+        "notes": {
+          "en": "150% FPL for 7-person household",
+          "es": "150% del FPL para hogar de 7 personas"
+        }
+      },
+      {
+        "size": "8",
+        "incomeLimit": {
+          "en": "$83,580/year ($6,965/month)",
+          "es": "$83,580/año ($6,965/mes)"
+        },
+        "notes": {
+          "en": "150% FPL for 8-person household",
+          "es": "150% del FPL para hogar de 8 personas"
+        }
+      },
+      {
+        "size": "Each additional",
+        "incomeLimit": {
+          "en": "+$8,520/year (+$710/month)",
+          "es": "+$8,520/año (+$710/mes)"
+        },
+        "notes": {
+          "en": "Add per each additional person beyond 8",
+          "es": "Agregue por cada persona adicional más de 8"
+        }
+      }
+    ],
+    "footnote": {
+      "en": "These are the 2026 federal Extra Help (LIS) income limits, calculated at 150% of the 2026 FPL ($15,960 for individual, 48 contiguous states). Individual SPAPs have higher income limits than Extra Help and are listed in the program comparison table above. If you qualify for Extra Help, check your state's SPAP too -- you can receive both.",
+      "es": "Estos son los límites de ingresos de Extra Help (LIS) federales de 2026, calculados al 150% del FPL de 2026 ($15,960 para individual, 48 estados contiguos). Los SPAP individuales tienen límites de ingresos más altos que Extra Help y se enumeran en la tabla de comparación de programas anterior. Si califica para Extra Help, revise también el SPAP de su estado -- puede recibir ambos."
+    },
+    "source": "CMS LIS Resource Limits Memo CY2026; 2026 HHS Federal Poverty Guidelines"
+  },
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Find your state's SPAP using the Medicare.gov Plan Finder or the NCOA BenefitsCheckUp tool at benefitscheckup.org.",
+        "es": "Encuentre el SPAP de su estado usando el buscador de planes de Medicare.gov o la herramienta BenefitsCheckUp de NCOA en benefitscheckup.org."
+      },
+      {
+        "en": "Confirm you are enrolled in a Medicare Part D drug plan or Medicare Advantage plan with drug coverage. Most SPAPs require active Part D enrollment as a condition of participation.",
+        "es": "Confirme que está inscrito en un plan de medicamentos de la Parte D de Medicare o en un plan Medicare Advantage con cobertura de medicamentos. La mayoría de los SPAP requieren inscripción activa en la Parte D como condición de participación."
+      },
+      {
+        "en": "Gather proof of income (federal tax return or SSA benefits statement), proof of Medicare enrollment (Medicare card or Medicare Summary Notice), and proof of state residency (driver's license or utility bill).",
+        "es": "Reúna comprobante de ingresos (declaración de impuestos federal o estado de cuenta de beneficios del SSA), comprobante de inscripción en Medicare (tarjeta de Medicare o Aviso de Resumen de Medicare) y comprobante de residencia estatal (licencia de conducir o recibo de servicios públicos)."
+      },
+      {
+        "en": "Complete the application for your specific state program. Each SPAP has its own application form and portal (links listed in the sources section below).",
+        "es": "Complete la solicitud para su programa estatal específico. Cada SPAP tiene su propio formulario de solicitud y portal (enlaces listados en la sección de fuentes a continuación)."
+      },
+      {
+        "en": "Submit your application by mail, online, or by phone depending on what your state's program allows. NY EPIC and NJ PAAD accept phone and mail applications. MA Prescription Advantage accepts online applications at prescriptionadvantagema.org.",
+        "es": "Envíe su solicitud por correo postal, en línea o por teléfono según lo que permita el programa de su estado. NY EPIC y NJ PAAD aceptan solicitudes por teléfono y por correo. MA Prescription Advantage acepta solicitudes en línea en prescriptionadvantagema.org."
+      },
+      {
+        "en": "Once approved, present your SPAP card or ID at the pharmacy alongside your Medicare Part D card. The pharmacy system coordinates billing between Part D and your SPAP automatically.",
+        "es": "Una vez aprobado, presente su tarjeta o identificación de SPAP en la farmacia junto con su tarjeta de la Parte D de Medicare. El sistema de la farmacia coordina la facturación entre la Parte D y su SPAP automáticamente."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/plan-compare/",
+    "documentsNeeded": [
+      {
+        "en": "Medicare card or Medicare Summary Notice showing Part D enrollment",
+        "es": "Tarjeta de Medicare o Aviso de Resumen de Medicare que muestre la inscripción en la Parte D"
+      },
+      {
+        "en": "Most recent federal tax return or Social Security award letter showing annual income",
+        "es": "Declaración de impuestos federal más reciente o carta de adjudicación del Seguro Social que muestre los ingresos anuales"
+      },
+      {
+        "en": "Proof of state residency (driver's license, state ID, or recent utility bill)",
+        "es": "Comprobante de residencia estatal (licencia de conducir, identificación estatal o recibo reciente de servicios públicos)"
+      },
+      {
+        "en": "Bank statements or SSA benefits letter if program uses a prior-year income calculation",
+        "es": "Estados de cuenta bancarios o carta de beneficios del SSA si el programa usa un cálculo de ingresos del año anterior"
+      },
+      {
+        "en": "Date of birth documentation (passport or birth certificate) if age 65+ requirement is not already established by Medicare enrollment",
+        "es": "Documentación de fecha de nacimiento (pasaporte o acta de nacimiento) si el requisito de 65 o más no está ya establecido por la inscripción en Medicare"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Not enrolled in a Medicare Part D plan (most SPAPs require active Part D coverage)",
+        "es": "No está inscrito en un plan de la Parte D de Medicare (la mayoría de los SPAP requieren cobertura activa de la Parte D)"
+      },
+      {
+        "en": "Income above the program's annual limit based on prior-year tax return",
+        "es": "Ingresos por encima del límite anual del programa según la declaración de impuestos del año anterior"
+      },
+      {
+        "en": "Not a resident of the state running the SPAP (state residency is strictly required)",
+        "es": "No es residente del estado que administra el SPAP (la residencia estatal es estrictamente requerida)"
+      },
+      {
+        "en": "Below the minimum age (most programs require age 65+; some accept disabled individuals under 65)",
+        "es": "Por debajo de la edad mínima (la mayoría de los programas requieren 65 o más; algunos aceptan personas con discapacidad menores de 65)"
+      },
+      {
+        "en": "Application submitted outside the program's enrollment window (some SPAPs have annual open enrollment periods)",
+        "es": "Solicitud presentada fuera del período de inscripción del programa (algunos SPAP tienen períodos de inscripción abierta anuales)"
+      }
+    ],
+    "deadline": {
+      "en": "Most SPAPs enroll year-round; WI SeniorCare has an annual enrollment period. Check your specific state program for deadlines.",
+      "es": "La mayoría de los SPAP inscriben durante todo el año; WI SeniorCare tiene un período de inscripción anual. Consulte su programa estatal específico para conocer los plazos."
+    }
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "How SPAPs Work With Medicare Part D in 2026",
+        "es": "Cómo Funcionan los SPAP con Medicare Parte D en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "SPAPs are secondary payers to Medicare Part D. When you fill a prescription, Part D pays first. Your SPAP then covers some or all of your remaining cost-share, depending on your program's benefit design. The key mechanical detail: SPAP payments count toward your TrOOP (True Out-of-Pocket) total under Part D. The 2026 Part D out-of-pocket cap is $2,100. Because SPAP contributions accelerate your TrOOP, members often reach the catastrophic phase earlier in the calendar year and pay $0 out of pocket after that.",
+          "es": "Los SPAP son pagadores secundarios de Medicare Parte D. Cuando surte una receta, la Parte D paga primero. Su SPAP luego cubre parte o todo su costo restante, según el diseño de beneficios de su programa. El detalle mecánico clave: los pagos del SPAP cuentan para su total TrOOP (Gasto Real de Bolsillo) bajo la Parte D. El límite de gastos de bolsillo de la Parte D de 2026 es $2,100. Dado que las contribuciones del SPAP aceleran su TrOOP, los miembros a menudo alcanzan la fase catastrófica antes en el año calendario y pagan $0 de bolsillo después de eso."
+        },
+        {
+          "en": "CMS exchanges data files with SPAPs to coordinate benefits and calculate TrOOP correctly. Pharmacies in states with active SPAPs are connected to this coordination system. You do not need to manually submit claims -- present both your Part D card and your SPAP card at the counter and the pharmacy handles the rest.",
+          "es": "CMS intercambia archivos de datos con los SPAP para coordinar beneficios y calcular el TrOOP correctamente. Las farmacias en estados con SPAP activos están conectadas a este sistema de coordinación. No necesita presentar reclamos manualmente -- presente tanto su tarjeta de la Parte D como su tarjeta de SPAP en el mostrador y la farmacia maneja el resto."
+        }
+      ],
+      "list": [
+        {
+          "en": "Most SPAPs require you to be enrolled in a Part D plan as a prerequisite. Wisconsin SeniorCare is one exception -- it can serve as an alternative to Part D for members who choose not to enroll in a standard Part D plan.",
+          "es": "La mayoría de los SPAP requieren que esté inscrito en un plan de la Parte D como requisito previo. Wisconsin SeniorCare es una excepción -- puede servir como alternativa a la Parte D para miembros que optan por no inscribirse en un plan estándar de la Parte D."
+        },
+        {
+          "en": "SPAPs are considered creditable coverage for Part D purposes. If your SPAP is your only drug coverage and it counts as creditable, you will not face a late enrollment penalty when you later join a Part D plan.",
+          "es": "Los SPAP se consideran cobertura acreditable a efectos de la Parte D. Si su SPAP es su única cobertura de medicamentos y cuenta como acreditable, no enfrentará una penalización por inscripción tardía cuando posteriormente se una a un plan de la Parte D."
+        },
+        {
+          "en": "The 2026 Part D $35/month insulin cap applies regardless of SPAP status. SPAP members also benefit from this IRA-mandated cap.",
+          "es": "El límite mensual de $35 para insulina de la Parte D de 2026 se aplica independientemente del estado del SPAP. Los miembros del SPAP también se benefician de este límite ordenado por la IRA."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Can You Get Both SPAP and Extra Help (LIS)?",
+        "es": "¿Puede Obtener Tanto el SPAP como Extra Help (LIS)?"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes. SPAPs and Medicare Part D Extra Help (also called the Low-Income Subsidy, or LIS) are separate programs and you can receive both at the same time. Extra Help is a federal program administered by the Social Security Administration that covers Part D premiums, deductibles, and copays for individuals with income at or below 150% of the Federal Poverty Level ($23,940/year for a single person in 2026). In 2026, everyone who qualifies for Extra Help receives full benefits, with copays capped at $5.10 for generics and $12.65 for brand-name drugs.",
+          "es": "Sí. Los SPAP y Extra Help de Medicare Parte D (también llamado Subsidio de Bajos Ingresos, o LIS) son programas separados y puede recibir ambos al mismo tiempo. Extra Help es un programa federal administrado por la Administración del Seguro Social que cubre primas, deducibles y copagos de la Parte D para personas con ingresos iguales o inferiores al 150% del Nivel de Pobreza Federal ($23,940/año para una persona en 2026). En 2026, todos los que califican para Extra Help reciben beneficios completos, con copagos limitados a $5.10 para genéricos y $12.65 para medicamentos de marca."
+        },
+        {
+          "en": "If you already receive Extra Help, your state SPAP can still help with remaining costs that Extra Help does not fully eliminate, or can pay your Part D premium if Extra Help does not cover your specific plan's premium in full. NY EPIC, for example, explicitly coordinates with both Extra Help and standard Part D plans. NJ PAAD also layers on top of any Extra Help benefit you already receive.",
+          "es": "Si ya recibe Extra Help, el SPAP de su estado aún puede ayudar con los costos restantes que Extra Help no elimina completamente, o puede pagar su prima de la Parte D si Extra Help no cubre completamente la prima de su plan específico. NY EPIC, por ejemplo, coordina explícitamente con Extra Help y planes estándar de la Parte D. NJ PAAD también se superpone sobre cualquier beneficio de Extra Help que ya reciba."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "States Without an Active SPAP in 2026: What To Do",
+        "es": "Estados Sin un SPAP Activo en 2026: Qué Hacer"
+      },
+      "paragraphs": [
+        {
+          "en": "If you live in a state that does not have an active SPAP in 2026, you have several alternative pathways to reduce prescription drug costs. The IRA's $2,100 Part D out-of-pocket cap, effective in 2026, already eliminates the old coverage gap (donut hole) for all Part D enrollees. Beyond that:",
+          "es": "Si vive en un estado que no tiene un SPAP activo en 2026, tiene varias vías alternativas para reducir los costos de medicamentos recetados. El límite de gastos de bolsillo de la Parte D de $2,100 de la IRA, vigente en 2026, ya elimina la antigua brecha de cobertura (donut hole) para todos los inscritos en la Parte D. Más allá de eso:"
+        }
+      ],
+      "list": [
+        {
+          "en": "Apply for Medicare Part D Extra Help (LIS) through SSA at ssa.gov/medicare/part-d-extra-help if your income is at or below 150% FPL. This is available in every state.",
+          "es": "Solicite Extra Help (LIS) de Medicare Parte D a través del SSA en ssa.gov/medicare/part-d-extra-help si sus ingresos son iguales o inferiores al 150% del FPL. Esto está disponible en todos los estados."
+        },
+        {
+          "en": "Apply for a Medicare Savings Program (MSP) through your state Medicaid office. MSPs cover Part B premiums and may cover Part D costs if you are dual-eligible.",
+          "es": "Solicite un Programa de Ahorro de Medicare (MSP) a través de la oficina de Medicaid de su estado. Los MSP cubren las primas de la Parte B y pueden cubrir los costos de la Parte D si es elegible dual."
+        },
+        {
+          "en": "Check manufacturer patient assistance programs. Most brand-name drug manufacturers offer PAPs for low-income Medicare beneficiaries, often covering $0 cost shares for specific medications.",
+          "es": "Verifique los programas de asistencia al paciente del fabricante. La mayoría de los fabricantes de medicamentos de marca ofrecen PAP para beneficiarios de Medicare de bajos ingresos, a menudo cubriendo $0 en costos compartidos para medicamentos específicos."
+        },
+        {
+          "en": "Use GoodRx, NeedyMeds, or other prescription discount programs at participating pharmacies. These cannot be used simultaneously with Part D, but can be cheaper for certain drugs if you pay cash.",
+          "es": "Use GoodRx, NeedyMeds u otros programas de descuento de recetas en farmacias participantes. Estos no pueden usarse simultáneamente con la Parte D, pero pueden ser más baratos para ciertos medicamentos si paga en efectivo."
+        },
+        {
+          "en": "Request the $35/month insulin cap that the IRA mandates for all Part D plans. All 2026 Part D plans must cap insulin at $35 per month per covered insulin product.",
+          "es": "Solicite el límite mensual de $35 para insulina que la IRA exige para todos los planes de la Parte D. Todos los planes de la Parte D de 2026 deben limitar la insulina a $35 por mes por producto de insulina cubierto."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Dual-Eligible Beneficiaries and SPAPs",
+        "es": "Beneficiarios de Doble Elegibilidad y los SPAP"
+      },
+      "paragraphs": [
+        {
+          "en": "About 12 million Americans are dual-eligible -- they qualify for both Medicare and Medicaid. If you are dual-eligible, your prescription drug costs are largely covered by Medicaid acting as a secondary payer to Part D. Full dual-eligibles automatically qualify for Extra Help and pay near-zero drug copays. SPAPs generally offer the most additional value to Medicare beneficiaries who are above the Extra Help income threshold but still struggling with drug costs -- the gap between 150% FPL and each state's SPAP income ceiling.",
+          "es": "Alrededor de 12 millones de estadounidenses son de doble elegibilidad -- califican tanto para Medicare como para Medicaid. Si es de doble elegibilidad, sus costos de medicamentos recetados están cubiertos en gran medida por Medicaid actuando como pagador secundario de la Parte D. Los de doble elegibilidad completa califican automáticamente para Extra Help y pagan copagos de medicamentos casi nulos. Los SPAP generalmente ofrecen el mayor valor adicional a los beneficiarios de Medicare que están por encima del umbral de ingresos de Extra Help pero aún tienen dificultades con los costos de medicamentos -- la brecha entre el 150% del FPL y el límite de ingresos del SPAP de cada estado."
+        },
+        {
+          "en": "If you are approaching dual-eligibility -- income near 138% FPL -- apply for Medicaid first. Medicaid eligibility in expansion states provides comprehensive drug coverage and auto-enrolls you in Extra Help. Contact your state Medicaid office or use the CoveredUSA screener below to check your eligibility for multiple programs at once.",
+          "es": "Si se acerca a la doble elegibilidad -- ingresos cerca del 138% del FPL -- solicite Medicaid primero. La elegibilidad de Medicaid en estados de expansión proporciona cobertura integral de medicamentos y lo inscribe automáticamente en Extra Help. Comuníquese con la oficina de Medicaid de su estado o use el verificador de elegibilidad de CoveredUSA a continuación para verificar su elegibilidad para múltiples programas a la vez."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "State-by-State SPAP Application Links",
+        "es": "Enlaces de Solicitud de SPAP por Estado"
+      },
+      "paragraphs": [
+        {
+          "en": "Each SPAP has its own application portal. Below are the starting points for the major 2026 programs. Use the NCOA BenefitsCheckUp tool (benefitscheckup.org) or Medicare.gov if your state is not listed here.",
+          "es": "Cada SPAP tiene su propio portal de solicitud. A continuación se presentan los puntos de partida para los principales programas de 2026. Use la herramienta BenefitsCheckUp de NCOA (benefitscheckup.org) o Medicare.gov si su estado no está en la lista aquí."
+        }
+      ],
+      "list": [
+        {
+          "en": "New York EPIC: Call 1-800-332-3742 or visit health.ny.gov/health_care/epic/",
+          "es": "Nueva York EPIC: Llame al 1-800-332-3742 o visite health.ny.gov/health_care/epic/"
+        },
+        {
+          "en": "New Jersey PAAD and Senior Gold: Apply at NJSave (njsave.nj.gov) or call 1-800-792-9745",
+          "es": "Nueva Jersey PAAD y Senior Gold: Solicite en NJSave (njsave.nj.gov) o llame al 1-800-792-9745"
+        },
+        {
+          "en": "Pennsylvania PACE and PACENET: Call 1-800-225-7223 or visit pa.gov and search PACE",
+          "es": "Pensilvania PACE y PACENET: Llame al 1-800-225-7223 o visite pa.gov y busque PACE"
+        },
+        {
+          "en": "Massachusetts Prescription Advantage: Apply online at prescriptionadvantagema.org or call 1-800-243-4636",
+          "es": "Massachusetts Prescription Advantage: Solicite en línea en prescriptionadvantagema.org o llame al 1-800-243-4636"
+        },
+        {
+          "en": "Maryland SPDAP: Apply at marylandspdap.com or call 1-800-551-5995",
+          "es": "Maryland SPDAP: Solicite en marylandspdap.com o llame al 1-800-551-5995"
+        },
+        {
+          "en": "Wisconsin SeniorCare: Visit dhs.wisconsin.gov/seniorcare or call 1-800-657-2038",
+          "es": "Wisconsin SeniorCare: Visite dhs.wisconsin.gov/seniorcare o llame al 1-800-657-2038"
+        },
+        {
+          "en": "Vermont VPharm: Contact Vermont Agency of Human Services at 1-800-250-8427",
+          "es": "Vermont VPharm: Comuníquese con la Agencia de Servicios Humanos de Vermont al 1-800-250-8427"
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "What is a State Pharmaceutical Assistance Program (SPAP)?",
+        "answer": "An SPAP is a state-funded program that helps Medicare beneficiaries pay for prescription drug costs beyond what Medicare Part D covers. SPAPs can pay premiums, deductibles, and copays. Roughly 14 states have active SPAPs in 2026. Each state runs its own program with different income limits, age requirements, and benefit amounts. SPAP payments count toward your Part D out-of-pocket total."
+      },
+      {
+        "question": "Which states have a pharmaceutical assistance program for seniors in 2026?",
+        "answer": "Active SPAPs in 2026 include New York (EPIC), New Jersey (PAAD and Senior Gold), Pennsylvania (PACE and PACENET), Massachusetts (Prescription Advantage), Maryland (SPDAP), Wisconsin (SeniorCare), Vermont (VPharm), Delaware (DPAP), Connecticut (ConnPACE, limited), and several others. The number has declined from 23 states in 2004 to roughly 14 in 2026. If your state is not listed, check Medicare.gov or benefitscheckup.org."
+      },
+      {
+        "question": "Can I get a SPAP and Medicare Extra Help at the same time?",
+        "answer": "Yes. SPAPs and Medicare Part D Extra Help (LIS) are separate programs and you can receive both simultaneously. Extra Help covers federal cost-sharing for individuals up to 150% FPL ($23,940/year for a single person in 2026). If your income is above Extra Help limits but within your SPAP's higher limit, the SPAP covers additional drug costs. If you already get Extra Help, your state SPAP can still reduce remaining costs."
+      },
+      {
+        "question": "What is the income limit for New York EPIC in 2026?",
+        "answer": "New York EPIC covers residents age 65 and older with annual income up to $75,000 for singles and up to $100,000 for couples. EPIC has two tiers. The Fee Plan covers income up to $20,000 (single) or $26,000 (couple) and offers premium assistance plus $3/$20 copays. The Deductible Plan covers income from $20,001 to $75,000 (single) and includes an annual deductible before cost-sharing begins."
+      },
+      {
+        "question": "What is the income limit for NJ PAAD in 2026?",
+        "answer": "NJ PAAD (Pharmaceutical Assistance to the Aged and Disabled) covers New Jersey residents age 65 and older, or disabled adults, with income under $54,943 per year for singles and under $62,390 per year for couples. PAAD caps copays at $5 for generics and $7 for brand-name drugs and assists with monthly Part D premiums. Apply at njsave.nj.gov."
+      },
+      {
+        "question": "How do I apply for a SPAP in my state?",
+        "answer": "Each SPAP has its own application process. Start by confirming you are enrolled in a Medicare Part D plan. Then visit your state program's website or call its helpline. NY EPIC accepts phone applications at 1-800-332-3742. NJ PAAD and Senior Gold applications go through NJSave at njsave.nj.gov. PA PACE and PACENET applications go through pa.gov. MA Prescription Advantage accepts online applications at prescriptionadvantagema.org. Use benefitscheckup.org to check eligibility for multiple programs at once."
+      },
+      {
+        "question": "Does SPAP coverage count toward the 2026 Part D out-of-pocket cap?",
+        "answer": "Yes. SPAP payments count toward your True Out-of-Pocket (TrOOP) total under Medicare Part D. The 2026 Part D catastrophic cap is $2,100. Because SPAP contributions accelerate your TrOOP, SPAP members often hit the $2,100 cap earlier in the year and pay $0 for covered drugs for the rest of the year. This is one of the most significant financial benefits of enrolling in a SPAP."
+      },
+      {
+        "question": "What if my state does not have an SPAP in 2026?",
+        "answer": "If your state has no active SPAP, apply for Medicare Part D Extra Help (LIS) through SSA at ssa.gov/medicare/part-d-extra-help if your income is at or below 150% FPL. Also check whether you qualify for a Medicare Savings Program (MSP) through your state Medicaid office, which can cover Part B premiums. The IRA's 2026 $2,100 Part D out-of-pocket cap and $35/month insulin cap apply in all states regardless of whether an SPAP exists."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué es un Programa Estatal de Asistencia Farmacéutica (SPAP)?",
+        "answer": "Un SPAP es un programa financiado por el estado que ayuda a los beneficiarios de Medicare a pagar los costos de medicamentos recetados más allá de lo que cubre la Parte D de Medicare. Los SPAP pueden pagar primas, deducibles y copagos. Aproximadamente 14 estados tienen SPAP activos en 2026. Cada estado administra su propio programa con diferentes límites de ingresos, requisitos de edad y montos de beneficios. Los pagos del SPAP cuentan para su total de gastos de bolsillo de la Parte D."
+      },
+      {
+        "question": "¿Qué estados tienen un programa de asistencia farmacéutica para personas mayores en 2026?",
+        "answer": "Los SPAP activos en 2026 incluyen Nueva York (EPIC), Nueva Jersey (PAAD y Senior Gold), Pensilvania (PACE y PACENET), Massachusetts (Prescription Advantage), Maryland (SPDAP), Wisconsin (SeniorCare), Vermont (VPharm), Delaware (DPAP), Connecticut (ConnPACE, limitado) y varios otros. El número ha disminuido de 23 estados en 2004 a aproximadamente 14 en 2026. Si su estado no está en la lista, consulte Medicare.gov o benefitscheckup.org."
+      },
+      {
+        "question": "¿Puedo recibir un SPAP y Extra Help de Medicare al mismo tiempo?",
+        "answer": "Sí. Los SPAP y Extra Help de Medicare Parte D (LIS) son programas separados y puede recibir ambos simultáneamente. Extra Help cubre el costo compartido federal para personas con hasta el 150% del FPL ($23,940/año para una persona en 2026). Si sus ingresos están por encima de los límites de Extra Help pero dentro del límite más alto de su SPAP, el SPAP cubre costos de medicamentos adicionales. Si ya recibe Extra Help, el SPAP de su estado aún puede reducir los costos restantes."
+      },
+      {
+        "question": "¿Cuál es el límite de ingresos para EPIC de Nueva York en 2026?",
+        "answer": "EPIC de Nueva York cubre residentes de 65 años o más con ingresos anuales hasta $75,000 para individuos y hasta $100,000 para parejas. EPIC tiene dos niveles. El Plan de Cuota cubre ingresos hasta $20,000 (individual) o $26,000 (pareja) y ofrece asistencia con primas más copagos de $3/$20. El Plan de Deducible cubre ingresos de $20,001 a $75,000 (individual) e incluye un deducible anual antes de que comience el costo compartido."
+      },
+      {
+        "question": "¿Cuál es el límite de ingresos para NJ PAAD en 2026?",
+        "answer": "NJ PAAD cubre residentes de Nueva Jersey de 65 años o más, o adultos con discapacidad, con ingresos menores de $54,943 por año para individuos y menores de $62,390 por año para parejas. PAAD limita los copagos a $5 para genéricos y $7 para medicamentos de marca y ayuda con las primas mensuales de la Parte D. Solicite en njsave.nj.gov."
+      },
+      {
+        "question": "¿Cómo solicito un SPAP en mi estado?",
+        "answer": "Cada SPAP tiene su propio proceso de solicitud. Comience confirmando que está inscrito en un plan de la Parte D de Medicare. Luego visite el sitio web del programa de su estado o llame a su línea de ayuda. NY EPIC acepta solicitudes por teléfono al 1-800-332-3742. Las solicitudes de NJ PAAD y Senior Gold van a través de NJSave en njsave.nj.gov. Las solicitudes de PA PACE y PACENET van a través de pa.gov. MA Prescription Advantage acepta solicitudes en línea en prescriptionadvantagema.org. Use benefitscheckup.org para verificar la elegibilidad para múltiples programas a la vez."
+      },
+      {
+        "question": "¿Los pagos del SPAP cuentan para el límite de gastos de bolsillo de la Parte D de 2026?",
+        "answer": "Sí. Los pagos del SPAP cuentan para su total True Out-of-Pocket (TrOOP) bajo Medicare Parte D. El límite catastrófico de la Parte D de 2026 es $2,100. Dado que las contribuciones del SPAP aceleran su TrOOP, los miembros del SPAP a menudo alcanzan el límite de $2,100 antes en el año y pagan $0 por medicamentos cubiertos por el resto del año. Este es uno de los beneficios financieros más significativos de inscribirse en un SPAP."
+      },
+      {
+        "question": "¿Qué pasa si mi estado no tiene un SPAP en 2026?",
+        "answer": "Si su estado no tiene un SPAP activo, solicite Extra Help (LIS) de Medicare Parte D a través del SSA en ssa.gov/medicare/part-d-extra-help si sus ingresos son iguales o inferiores al 150% del FPL. También verifique si califica para un Programa de Ahorro de Medicare (MSP) a través de la oficina de Medicaid de su estado, que puede cubrir las primas de la Parte B. El límite de gastos de bolsillo de la Parte D de $2,100 de 2026 de la IRA y el límite mensual de insulina de $35 se aplican en todos los estados, independientemente de si existe un SPAP."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Check Your Eligibility for Benefits",
+        "es": "Verifique su elegibilidad para beneficios"
+      },
+      "href": "/screener"
+    },
+    {
+      "label": {
+        "en": "Medicare Eligibility Guide",
+        "es": "Guía de elegibilidad de Medicare"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level Chart 2026",
+        "es": "Tabla del Nivel de Pobreza Federal 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Extra Help Medicare Part D Eligibility",
+        "es": "Elegibilidad de Extra Help de Medicare Parte D"
+      },
+      "href": "/qa/extra-help-eligibility-2026"
+    }
+  ],
+  "sources": [
+    {
+      "name": "NY Department of Health: EPIC 2026 Program Highlights",
+      "url": "https://www.health.state.ny.us/health_care/epic/member_info/program_highlights_2026.htm",
+      "note": {
+        "en": "Official 2026 EPIC income limits, fee schedule, and deductible plan details from the New York State Department of Health.",
+        "es": "Límites de ingresos oficiales de EPIC 2026, tabla de tarifas y detalles del plan de deducible del Departamento de Salud del Estado de Nueva York."
+      }
+    },
+    {
+      "name": "NJ Division of Aging Services: PAAD and Senior Gold",
+      "url": "https://www.nj.gov/humanservices/doas/services/l-p/paad/",
+      "note": {
+        "en": "Official NJ PAAD and Senior Gold program overview with 2026 income eligibility limits.",
+        "es": "Descripción general oficial de PAAD y Senior Gold de NJ con límites de elegibilidad de ingresos 2026."
+      }
+    },
+    {
+      "name": "CMS: Coordinating Prescription Drug Benefits (SPAP)",
+      "url": "https://www.cms.gov/medicare/coordination-benefits-recovery/prescription-drug-assistance-programs/coordinating-benefits",
+      "note": {
+        "en": "CMS official guidance on how SPAPs coordinate with Medicare Part D, TrOOP calculation, and data exchange rules.",
+        "es": "Guía oficial de CMS sobre cómo los SPAP se coordinan con Medicare Parte D, el cálculo de TrOOP y las reglas de intercambio de datos."
+      }
+    },
+    {
+      "name": "Mass.gov: Prescription Advantage Program",
+      "url": "https://www.mass.gov/info-details/prescription-advantage",
+      "note": {
+        "en": "Massachusetts Prescription Advantage eligibility including the 500% FPL income ceiling for seniors age 65 and older.",
+        "es": "Elegibilidad de Prescription Advantage de Massachusetts, incluido el límite de ingresos del 500% del FPL para personas mayores de 65 años."
+      }
+    },
+    {
+      "name": "Maryland SPDAP: Program and Subsidies",
+      "url": "https://marylandspdap.com/",
+      "note": {
+        "en": "Maryland Senior Prescription Drug Assistance Program official site with 2026 premium subsidy amounts and eligibility at or below 300% FPL.",
+        "es": "Sitio oficial del Programa de Asistencia para Medicamentos para Adultos Mayores de Maryland con montos de subsidio de primas 2026 y elegibilidad hasta el 300% del FPL."
+      }
+    },
+    {
+      "name": "WI Department of Health Services: SeniorCare Annual Income Limits",
+      "url": "https://www.dhs.wisconsin.gov/seniorcare/fpl.htm",
+      "note": {
+        "en": "Official Wisconsin SeniorCare 2026 income tiers, copay schedule, and annual enrollment fee information.",
+        "es": "Niveles de ingresos oficiales de Wisconsin SeniorCare 2026, tabla de copagos e información sobre la tarifa de inscripción anual."
+      }
+    },
+    {
+      "name": "CMS: CY2026 LIS Resource and Cost-Sharing Limits Memo",
+      "url": "https://www.cms.gov/files/document/cy2026-lis-resource-limits-memo.pdf",
+      "note": {
+        "en": "CMS official 2026 Extra Help (LIS) income and asset limits used for the household-size income reference table.",
+        "es": "Límites oficiales de ingresos y activos de Extra Help (LIS) de CMS para 2026 utilizados en la tabla de referencia de ingresos por tamaño de hogar."
+      }
+    },
+    {
+      "name": "PA Department of Aging: PACE and PACENET",
+      "url": "https://www.pa.gov/services/aging/apply-for-the-pharmaceutical-assistance-contract-for-the-elderly",
+      "note": {
+        "en": "Pennsylvania PACE and PACENET eligibility including the 2026 PACENET income limit increase effective July 1, 2026.",
+        "es": "Elegibilidad de PACE y PACENET de Pensilvania, incluido el aumento del límite de ingresos de PACENET efectivo el 1 de julio de 2026."
+      }
+    }
+  ]
+}
