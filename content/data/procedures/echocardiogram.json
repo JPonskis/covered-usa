@@ -72,15 +72,15 @@
     }
   },
   "quickAnswer": {
-    "en": "As of 2026, a transthoracic echocardiogram (TTE) costs a national median of approximately $1,800 without insurance. Independent cardiology clinics charge $1,000 to $2,200; hospital outpatient departments charge $2,000 to $3,500 for the same study. A transesophageal echocardiogram (TEE) runs $1,800 to $5,000 due to sedation and additional procedural complexity. Medicare pays approximately $210 for the professional component of a complete TTE under the 2026 Physician Fee Schedule, plus a facility rate of $450 to $650 under the Hospital Outpatient PPS. You pay 20 percent coinsurance after meeting the 2026 Part B deductible of $283.",
-    "es": "A partir de 2026, un ecocardiograma transtorácico (TTE) cuesta una mediana nacional de aproximadamente $1,800 sin seguro. Las clínicas de cardiología independientes cobran entre $1,000 y $2,200; los departamentos ambulatorios de hospitales cobran entre $2,000 y $3,500 por el mismo estudio. Un ecocardiograma transesofágico (TEE) cuesta entre $1,800 y $5,000 debido a la sedación y complejidad adicional. Medicare paga aproximadamente $210 por el componente profesional de un TTE completo bajo el Programa de Tarifas Médicas 2026, más una tarifa de instalación de $450 a $650 bajo el OPPS del Hospital. Usted paga el 20 por ciento de coseguro después de cumplir con el deducible de la Parte B 2026 de $283."
+    "en": "As of 2026, a transthoracic echocardiogram (TTE) costs a national median of approximately $1,800 without insurance. Independent cardiology clinics charge $1,000 to $2,200; hospital outpatient departments charge $2,000 to $3,500 for the same study. A transesophageal echocardiogram (TEE) runs $1,800 to $5,000 due to sedation and additional procedural complexity. Under the 2026 Physician Fee Schedule, the combined non-facility rate (professional interpretation plus technical component) for a complete TTE is approximately $198. At a hospital outpatient department, the facility receives approximately $482 under the Hospital Outpatient PPS. You pay 20 percent coinsurance after meeting the 2026 Part B deductible of $283.",
+    "es": "A partir de 2026, un ecocardiograma transtorácico (TTE) cuesta una mediana nacional de aproximadamente $1,800 sin seguro. Las clínicas de cardiología independientes cobran entre $1,000 y $2,200; los departamentos ambulatorios de hospitales cobran entre $2,000 y $3,500 por el mismo estudio. Un ecocardiograma transesofágico (TEE) cuesta entre $1,800 y $5,000 debido a la sedación y complejidad adicional. Bajo el Programa de Tarifas Médicas 2026, la tarifa no institucional combinada (interpretación profesional más componente técnico) para un TTE completo es de aproximadamente $198. En un departamento ambulatorio del hospital, la instalación recibe aproximadamente $482 bajo el OPPS del Hospital. Usted paga el 20 por ciento de coseguro después de cumplir con el deducible de la Parte B 2026 de $283."
   },
   "pricing": {
     "nationalMedian": 1800,
     "nationalLow": 1000,
     "nationalHigh": 5000,
-    "medicarePfsRate": 210,
-    "medicareOppsRate": 550,
+    "medicarePfsRate": 198,
+    "medicareOppsRate": 482,
     "medicareCoinsurancePct": 20,
     "partBDeductibleYear": 2026,
     "partBDeductibleAmount": 283
@@ -108,8 +108,8 @@
         },
         "rangeWithoutInsurance": "$1,000 to $2,200",
         "medicareRate": {
-          "en": "$210 (professional) + ~$290 (technical)",
-          "es": "$210 (profesional) + ~$290 (técnico)"
+          "en": "~$68 (professional) + ~$130 (technical) = ~$198 global",
+          "es": "~$68 (profesional) + ~$130 (técnico) = ~$198 global"
         }
       },
       {
@@ -119,8 +119,8 @@
         },
         "rangeWithoutInsurance": "$2,000 to $3,500",
         "medicareRate": {
-          "en": "$210 (professional) + ~$550 (facility OPPS)",
-          "es": "$210 (profesional) + ~$550 (instalación OPPS)"
+          "en": "~$68 (professional) + ~$482 (facility OPPS)",
+          "es": "~$68 (profesional) + ~$482 (instalación OPPS)"
         }
       },
       {
@@ -130,8 +130,8 @@
         },
         "rangeWithoutInsurance": "$2,500 to $5,000",
         "medicareRate": {
-          "en": "$295 (professional) + ~$650 (facility OPPS)",
-          "es": "$295 (profesional) + ~$650 (instalación OPPS)"
+          "en": "~$105 (professional) + ~$650 (facility OPPS)",
+          "es": "~$105 (profesional) + ~$650 (instalación OPPS)"
         }
       },
       {
@@ -152,8 +152,8 @@
         "es": "Los departamentos ambulatorios de hospitales facturan los ecocardiogramas a tarifas de instalación que incorporan gastos generales, personal y costos de equipo distribuidos en todo el sistema hospitalario. Las clínicas de cardiología independientes y los laboratorios de eco especializados operan con mucho menos gasto general y compiten en precios. Las imágenes cardíacas y la calidad clínica del estudio son las mismas. Lo que difiere es el código de facturación y el recargo de la instalación."
       },
       {
-        "en": "The 2026 Medicare Physician Fee Schedule pays approximately $210 for the cardiologist's professional component of a complete transthoracic echocardiogram. On top of that, the technical component (equipment and sonographer) is paid at roughly $290 at an independent clinic versus $550 at a hospital outpatient department under the Hospital Outpatient PPS. That $260 difference in the Medicare-allowed technical rate translates into $500 to $1,500 more in cash prices at hospitals.",
-        "es": "El Programa de Tarifas Médicas 2026 de Medicare paga aproximadamente $210 por el componente profesional del cardiólogo de un ecocardiograma transtorácico completo. Además, el componente técnico (equipo y sonografista) se paga a aproximadamente $290 en una clínica independiente versus $550 en un departamento ambulatorio del hospital bajo el OPPS del Hospital. Esa diferencia de $260 en la tarifa técnica permitida por Medicare se traduce en $500 a $1,500 más en precios en efectivo en los hospitales."
+        "en": "The 2026 Medicare Physician Fee Schedule pays approximately $68 for the cardiologist's professional interpretation of a complete transthoracic echocardiogram. The technical component (equipment and sonographer) is paid at roughly $130 at an independent clinic, for a combined non-facility global rate of approximately $198. At a hospital outpatient department, the facility receives approximately $482 under the Hospital Outpatient PPS, on top of the $68 professional fee. That difference in the Medicare-allowed facility rate translates into $500 to $1,500 more in cash prices at hospitals.",
+        "es": "El Programa de Tarifas Médicas 2026 de Medicare paga aproximadamente $68 por la interpretación profesional del cardiólogo de un ecocardiograma transtorácico completo. El componente técnico (equipo y sonografista) se paga a aproximadamente $130 en una clínica independiente, para una tarifa global no institucional combinada de aproximadamente $198. En un departamento ambulatorio del hospital, la instalación recibe aproximadamente $482 bajo el OPPS del Hospital, además del honorario profesional de $68. Esa diferencia en la tarifa de instalación permitida por Medicare se traduce en $500 a $1,500 más en precios en efectivo en los hospitales."
       },
       {
         "en": "The practical takeaway: if your cardiologist performs echocardiograms in an affiliated hospital outpatient department and also in an independent echo lab, ask to schedule at the independent location. You are likely to save $500 to $1,500 on the facility fee alone without any change to the quality of the study or the interpreting cardiologist.",
@@ -260,8 +260,8 @@
         "es": "Medicare Parte B cubre los ecocardiogramas cuando son médicamente necesarios y ordenados por un proveedor inscrito en Medicare. El ecocardiograma no es un servicio preventivo del USPSTF para la población general, por lo que no aplica el mandato de prevención gratuita de la ACA. El procedimiento debe documentarse como médicamente indicado, como la evaluación de dolor en el pecho, disnea, insuficiencia cardíaca, arritmia o enfermedad valvular. Un eco de rutina ordenado sin justificación clínica está sujeto a denegación."
       },
       {
-        "en": "In 2026, Medicare pays approximately $210 for the cardiologist's professional interpretation of a complete TTE (the global rate for a non-facility setting, which includes both professional and technical components, is approximately $500). At a hospital outpatient department, the facility receives an additional payment of approximately $550 under the Hospital Outpatient PPS. Your share under original Medicare is 20 percent of the Medicare-allowed amount after meeting the 2026 Part B deductible of $283. A Medigap supplement plan typically covers that 20 percent coinsurance.",
-        "es": "En 2026, Medicare paga aproximadamente $210 por la interpretación profesional del cardiólogo de un TTE completo (la tarifa global para un entorno no institucional, que incluye los componentes profesionales y técnicos, es de aproximadamente $500). En un departamento ambulatorio del hospital, la instalación recibe un pago adicional de aproximadamente $550 bajo el OPPS del Hospital. Su participación bajo Medicare original es el 20 por ciento del monto permitido por Medicare después de cumplir con el deducible de la Parte B 2026 de $283. Un plan suplementario Medigap típicamente cubre ese coseguro del 20 por ciento."
+        "en": "In 2026, Medicare pays approximately $68 for the cardiologist's professional interpretation of a complete TTE (modifier 26). The global rate for a non-facility setting, which includes both the professional and technical components, is approximately $198. At a hospital outpatient department, the facility receives an additional payment of approximately $482 under the Hospital Outpatient PPS. Your share under original Medicare is 20 percent of the Medicare-allowed amount after meeting the 2026 Part B deductible of $283. A Medigap supplement plan typically covers that 20 percent coinsurance.",
+        "es": "En 2026, Medicare paga aproximadamente $68 por la interpretación profesional del cardiólogo de un TTE completo (modificador 26). La tarifa global para un entorno no institucional, que incluye los componentes profesional y técnico, es de aproximadamente $198. En un departamento ambulatorio del hospital, la instalación recibe un pago adicional de aproximadamente $482 bajo el OPPS del Hospital. Su participación bajo Medicare original es el 20 por ciento del monto permitido por Medicare después de cumplir con el deducible de la Parte B 2026 de $283. Un plan suplementario Medigap típicamente cubre ese coseguro del 20 por ciento."
       },
       {
         "en": "Under the No Surprises Act, if you are uninsured or choosing to pay out of pocket, your provider must give you a Good Faith Estimate (GFE) at least 3 business days before a scheduled echocardiogram. The GFE must itemize expected charges from all providers involved, including the cardiologist, the echo technician or sonographer, and any facility fees. Hold on to this document.",
@@ -349,7 +349,7 @@
       },
       {
         "question": "How much does Medicare pay for an echocardiogram in 2026?",
-        "answer": "In 2026, Medicare pays approximately $210 for the cardiologist's professional interpretation of a complete TTE under the Physician Fee Schedule. The technical component (equipment and sonographer) adds roughly $290 at an independent clinic or $550 at a hospital outpatient department. Your share is 20 percent of the Medicare-allowed amount after meeting the 2026 Part B deductible of $283. Medicare Advantage plans often require prior authorization for repeat echos within 12 months."
+        "answer": "In 2026, Medicare pays approximately $68 for the cardiologist's professional interpretation of a complete TTE (modifier 26 only) under the Physician Fee Schedule. The combined non-facility global rate (professional plus technical) is approximately $198. At a hospital outpatient department, the facility receives approximately $482 under the OPPS. Your share is 20 percent of the Medicare-allowed amount after meeting the 2026 Part B deductible of $283. Medicare Advantage plans often require prior authorization for repeat echos within 12 months."
       },
       {
         "question": "Does Medicare cover echocardiograms?",
@@ -387,7 +387,7 @@
       },
       {
         "question": "¿Cuánto paga Medicare por un ecocardiograma en 2026?",
-        "answer": "En 2026, Medicare paga aproximadamente $210 por la interpretación profesional del cardiólogo de un TTE completo bajo el Programa de Tarifas Médicas. El componente técnico (equipo y sonografista) agrega aproximadamente $290 en una clínica independiente o $550 en un departamento ambulatorio del hospital. Su participación es el 20 por ciento del monto permitido por Medicare después de cumplir con el deducible de la Parte B 2026 de $283. Los planes Medicare Advantage a menudo requieren autorización previa para ecos repetidos en 12 meses."
+        "answer": "En 2026, Medicare paga aproximadamente $68 por la interpretación profesional del cardiólogo de un TTE completo (solo modificador 26) bajo el Programa de Tarifas Médicas. La tarifa global no institucional combinada (profesional más técnica) es de aproximadamente $198. En un departamento ambulatorio del hospital, la instalación recibe aproximadamente $482 bajo el OPPS. Su participación es el 20 por ciento del monto permitido por Medicare después de cumplir con el deducible de la Parte B 2026 de $283. Los planes Medicare Advantage a menudo requieren autorización previa para ecos repetidos en 12 meses."
       },
       {
         "question": "¿Medicare cubre los ecocardiogramas?",
