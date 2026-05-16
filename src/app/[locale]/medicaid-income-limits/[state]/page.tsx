@@ -16,6 +16,7 @@ import {
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
+import ReactMarkdown from 'react-markdown';
 import {
   getAllMedicaidStateSlugs,
   getMedicaidStateData,
@@ -304,7 +305,7 @@ export default async function MedicaidStateIncomeLimitsPage({
           <BlogDropCap />
 
           {data.introParagraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           {/* Household-size income limit table — the FANOUT §3.3 mandatory artifact */}

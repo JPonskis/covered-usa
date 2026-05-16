@@ -1,0 +1,401 @@
+{
+  "slug": "medigap-vs-medicare-advantage",
+  "subtype": "coverage",
+  "pageType": "coverage",
+  "topicCluster": "medicare-advantage-vs-original-plus-medigap",
+  "keyTerms": {
+    "en": ["medigap vs medicare advantage", "medicare supplement vs medicare advantage 2026", "which medicare plan covers more", "medigap plan g 2026", "medicare advantage moop 2026"],
+    "es": ["medigap vs medicare advantage", "suplemento medicare vs medicare advantage 2026", "cual plan medicare cubre mas", "plan g medigap 2026", "moop medicare advantage 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "question": {
+    "en": "Medigap vs Medicare Advantage: Which Covers More in 2026?",
+    "es": "Medigap vs Medicare Advantage: ¿Cuál cubre más en 2026?"
+  },
+  "shortAnswer": {
+    "en": "It depends on your priorities: Medigap for predictability, MA for extras.",
+    "es": "Depende de sus prioridades: Medigap para previsibilidad, MA para extras."
+  },
+  "fullAnswer": {
+    "en": "It depends on your healthcare priorities and budget. Medigap (Medicare Supplement) paired with Original Medicare covers nearly all cost-sharing at any provider in the country, giving you predictable out-of-pocket costs in exchange for a higher monthly premium. Medicare Advantage (Part C) typically carries a lower or $0 monthly premium plus added benefits like dental, vision, and hearing, but locks you into a network, may require prior authorization, and exposes you to an in-network maximum out-of-pocket of up to $9,250 in 2026. Neither option is universally better: people who travel frequently or have complex conditions often prefer Medigap, while healthier beneficiaries who stay local often come out ahead with Medicare Advantage.",
+    "es": "Depende de sus prioridades de salud y presupuesto. Medigap (Suplemento de Medicare) combinado con Medicare Original cubre casi todos los costos compartidos con cualquier proveedor en el país, ofreciendo costos predecibles a cambio de una prima mensual más alta. Medicare Advantage (Parte C) generalmente tiene una prima mensual baja o de $0 más beneficios adicionales como dental, vision y audicion, pero lo limita a una red de proveedores, puede requerir autorizacion previa y lo expone a un maximo de gastos de bolsillo dentro de la red de hasta $9,250 en 2026. Ninguna opcion es universalmente mejor: las personas que viajan frecuentemente o tienen condiciones complejas frecuentemente prefieren Medigap, mientras que los beneficiarios mas saludables que permanecen localmente frecuentemente salen mejor con Medicare Advantage."
+  },
+
+  "category": "Medicare",
+  "topic": "Medigap vs Medicare Advantage Comparison",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-15",
+  "readingTime": "7 min read",
+
+  "meta": {
+    "title": {
+      "en": "Medigap vs Medicare Advantage: Which Covers More in 2026? | CoveredUSA",
+      "es": "Medigap vs Medicare Advantage: ¿Cuál cubre más en 2026? | CoveredUSA"
+    },
+    "description": {
+      "en": "Compare Medigap (Medicare Supplement) vs Medicare Advantage in 2026: costs, networks, MOOP caps, dental/vision, and which covers more for your situation.",
+      "es": "Compare Medigap (Suplemento de Medicare) vs Medicare Advantage en 2026: costos, redes, limites de gastos de bolsillo, dental/vision y cual cubre mas para su situacion."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Medigap vs Medicare Advantage: Which Covers More in 2026?",
+      "es": "Medigap vs Medicare Advantage: ¿Cuál cubre más en 2026?"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "About 55% of Medicare beneficiaries now enroll in Medicare Advantage plans, according to KFF 2026 data, while the rest stay in Original Medicare, and many pair it with a Medigap (Medicare Supplement) policy. Both paths deliver Medicare-covered benefits, but the structure of your out-of-pocket costs, the providers you can see, and the extra benefits you access look very different depending on which route you take.",
+      "es": "Alrededor del 55% de los beneficiarios de Medicare ahora se inscriben en planes de Medicare Advantage, segun datos de KFF 2026, mientras el resto permanece en Medicare Original y muchos lo complementan con una poliza Medigap (Suplemento de Medicare). Ambos caminos entregan los beneficios cubiertos por Medicare, pero la estructura de sus gastos de bolsillo, los proveedores que puede ver y los beneficios adicionales a los que accede son muy diferentes segun la ruta que elija."
+    },
+    {
+      "en": "This guide compares Medigap and Medicare Advantage across the dimensions that matter most: cost predictability, provider access, supplemental benefits, and what happens when you need serious care. All cost figures reference 2026 CMS benchmarks.",
+      "es": "Esta guia compara Medigap y Medicare Advantage en las dimensiones mas importantes: previsibilidad de costos, acceso a proveedores, beneficios suplementarios y lo que sucede cuando necesita atencion seria. Todas las cifras de costos hacen referencia a los parametros de CMS para 2026."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Feature", "Original Medicare + Medigap", "Medicare Advantage (Part C)"],
+      "es": ["Caracteristica", "Medicare Original + Medigap", "Medicare Advantage (Parte C)"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Monthly premium (2026)", "es": "Prima mensual (2026)" },
+          { "en": "Part B ($202.90) + Medigap Plan G (est. $80 to $300 depending on age and state)", "es": "Parte B ($202.90) + Plan G Medigap (est. $80 a $300 segun edad y estado)" },
+          { "en": "Part B ($202.90) + MA plan premium (often $0 to $50)", "es": "Parte B ($202.90) + prima del plan MA (frecuentemente $0 a $50)" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Annual out-of-pocket cap (2026)", "es": "Limite anual de gastos de bolsillo (2026)" },
+          { "value": { "en": "Near $0 after premium (Medigap Plan G covers nearly all cost-sharing)", "es": "Cerca de $0 despues de la prima (Plan G Medigap cubre casi todos los costos compartidos)" }, "status": "yes" },
+          { "value": { "en": "Up to $9,250 in-network MOOP cap (2026 CMS limit)", "es": "Hasta $9,250 dentro de la red MOOP (limite CMS 2026)" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Provider network", "es": "Red de proveedores" },
+          { "value": { "en": "Any provider that accepts Medicare nationwide", "es": "Cualquier proveedor que acepte Medicare en todo el pais" }, "status": "yes" },
+          { "value": { "en": "HMO or PPO network (out-of-network may cost more or not be covered)", "es": "Red HMO o PPO (fuera de la red puede costar mas o no estar cubierto)" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Prior authorization requirements", "es": "Requisitos de autorizacion previa" },
+          { "value": { "en": "Generally none (Original Medicare sets coverage rules)", "es": "Generalmente ninguna (Medicare Original establece las reglas de cobertura)" }, "status": "yes" },
+          { "value": { "en": "Common for specialist visits, hospitalizations, imaging, some drugs", "es": "Comun para visitas a especialistas, hospitalizaciones, imagenes, algunos medicamentos" }, "status": "no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Dental, vision, hearing benefits", "es": "Beneficios dentales, vision y audicion" },
+          { "value": { "en": "Not included (Original Medicare excludes routine dental, vision, and hearing)", "es": "No incluidos (Medicare Original excluye dental, vision y audicion de rutina)" }, "status": "no" },
+          { "value": { "en": "Often included; scope and dollar caps vary by plan", "es": "Frecuentemente incluidos; alcance y limites en dolares varian por plan" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Prescription drug coverage", "es": "Cobertura de medicamentos recetados" },
+          { "en": "Requires a separate Medicare Part D standalone plan (PDP)", "es": "Requiere un plan separado de Medicare Parte D independiente (PDP)" },
+          { "en": "Usually bundled as an MAPD plan at no added premium", "es": "Generalmente incluido como plan MAPD sin prima adicional" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Enrollment / switching flexibility", "es": "Flexibilidad de inscripcion y cambio" },
+          { "en": "Medigap: guaranteed issue only at Initial Enrollment; medical underwriting applies later in most states", "es": "Medigap: emision garantizada solo en la inscripcion inicial; suscripcion medica aplica despues en la mayoria de los estados" },
+          { "en": "Annual Election Period (Oct 15 to Dec 7); MA Open Enrollment Jan 1 to Mar 31, 2026 allows one plan switch", "es": "Periodo Anual de Eleccion (15 oct a 7 dic); Inscripcion Abierta MA 1 ene a 31 mar 2026 permite un cambio de plan" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Medigap Plan G is the most popular plan for new Medicare enrollees as of 2026. It covers the Part A hospital deductible ($1,736 in 2026), Part B coinsurance (20%), skilled nursing facility coinsurance, and foreign travel emergency care. The one gap is the Part B deductible ($283 in 2026), which beneficiaries pay once annually. Medicare Advantage MOOP figures reflect the 2026 CMS maximum allowed limit; actual plan MOOP may be lower.",
+      "es": "Medigap Plan G es el plan mas popular para nuevos inscritos de Medicare a partir de 2026. Cubre el deducible hospitalario de la Parte A ($1,736 en 2026), coseguro de la Parte B (20%), coseguro de instalaciones de enfermeria especializada y atencion de emergencia en el extranjero. La unica brecha es el deducible de la Parte B ($283 en 2026), que los beneficiarios pagan una vez al ano. Las cifras de MOOP de Medicare Advantage reflejan el limite maximo permitido por CMS para 2026; el MOOP real del plan puede ser menor."
+    },
+    "source": "CMS Medicare Plan Finder 2026, CMS Medicare Advantage MOOP Final Rule 2026, KFF Medicare Advantage 2026 Enrollment Data"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Which Covers More?",
+        "es": "Respuesta directa: ¿Cuál cubre más?"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on your priorities. Medigap paired with Original Medicare covers more of your cost-sharing: after you pay the 2026 Part B deductible of $283, Plan G picks up virtually every covered Medicare expense for the rest of the year. Medicare Advantage covers more types of services by adding dental, vision, and hearing, but caps your financial protection at the 2026 in-network MOOP of up to $9,250. Neither option is universally superior.",
+          "es": "Depende de sus prioridades. Medigap combinado con Medicare Original cubre mas de sus costos compartidos: despues de pagar el deducible de la Parte B de 2026 de $283, el Plan G cubre virtualmente todos los gastos de Medicare cubiertos por el resto del ano. Medicare Advantage cubre mas tipos de servicios al agregar dental, vision y audicion, pero limita su proteccion financiera al MOOP dentro de la red de 2026 de hasta $9,250. Ninguna opcion es universalmente superior."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How Original Medicare Plus Medigap Works in 2026",
+        "es": "Cómo funciona Medicare Original más Medigap en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare (Parts A and B) covers the bulk of hospital and medical services, but leaves significant cost gaps. Medicare Part A carries a 2026 inpatient deductible of $1,736 per benefit period. Medicare Part B charges a 2026 annual deductible of $283, then 20% coinsurance on everything else with no annual cap. Without supplemental coverage, a serious illness could cost a beneficiary tens of thousands of dollars. Medigap policies fill these gaps.",
+          "es": "Medicare Original (Partes A y B) cubre la mayor parte de los servicios hospitalarios y medicos, pero deja brechas de costos significativas. La Parte A de Medicare tiene un deducible de hospitalizacion de 2026 de $1,736 por periodo de beneficio. La Parte B de Medicare cobra un deducible anual de 2026 de $283, luego 20% de coseguro en todo lo demas sin limite anual. Sin cobertura suplementaria, una enfermedad grave podria costarle a un beneficiario decenas de miles de dolares. Las polizas Medigap llenan estas brechas."
+        },
+        {
+          "en": "Medigap Plan G, the most popular plan sold to new Medicare enrollees in 2026, covers the Part A deductible ($1,736 in 2026), Part B coinsurance (20% of all covered services), skilled nursing facility coinsurance, and foreign travel emergency care up to policy limits. The only gap beneficiaries pay is the Part B deductible of $283 once per year. After that single annual payment, Plan G holders typically face $0 in claims cost-sharing for the rest of the year. Medigap Plan N offers a lower monthly premium with small office visit copays (up to $20) and emergency room copays ($50 when not admitted).",
+          "es": "Medigap Plan G, el plan mas popular vendido a nuevos inscritos de Medicare en 2026, cubre el deducible de la Parte A ($1,736 en 2026), coseguro de la Parte B (20% de todos los servicios cubiertos), coseguro de instalaciones de enfermeria especializada y atencion de emergencia en el extranjero hasta los limites de la poliza. La unica brecha que pagan los beneficiarios es el deducible de la Parte B de $283 una vez al ano. Despues de ese unico pago anual, los titulares del Plan G tipicamente enfrentan $0 en costos compartidos de reclamaciones por el resto del ano. Medigap Plan N ofrece una prima mensual mas baja con pequenos copagos de visita medica (hasta $20) y copagos de sala de emergencias ($50 cuando no se ingresa)."
+        },
+        {
+          "en": "One critical caveat on Medigap: outside of your Initial Enrollment Period (the 6-month window starting when you turn 65 and enroll in Part B), most states allow insurers to use medical underwriting. Applying for Medigap later in life can result in coverage denial or higher premiums based on health status. Massachusetts, Maine, and New York are exceptions, requiring guaranteed issue year-round.",
+          "es": "Una advertencia critica sobre Medigap: fuera de su Periodo de Inscripcion Inicial (la ventana de 6 meses que comienza cuando cumple 65 anos y se inscribe en la Parte B), la mayoria de los estados permite a los aseguradores usar suscripcion medica. Solicitar Medigap mas tarde en la vida puede resultar en rechazo de cobertura o primas mas altas segun el estado de salud. Massachusetts, Maine y Nueva York son excepciones, requiriendo emision garantizada durante todo el ano."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How Medicare Advantage Works in 2026",
+        "es": "Cómo funciona Medicare Advantage en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Advantage (Part C) plans are offered by private insurers under contract with CMS. They must cover everything Original Medicare covers, but they can structure cost-sharing differently and add benefits. In 2026, roughly 55% of Medicare beneficiaries are enrolled in Medicare Advantage, according to KFF, and most plans bundle prescription drug coverage (MAPD plans). The 2026 CMS rules set the maximum allowed in-network MOOP at $9,250. Individual plans often set their MOOP lower, but beneficiaries in plans that hit the cap can owe thousands before it kicks in.",
+          "es": "Los planes de Medicare Advantage (Parte C) son ofrecidos por aseguradores privados bajo contrato con CMS. Deben cubrir todo lo que cubre Medicare Original, pero pueden estructurar los costos compartidos de manera diferente y agregar beneficios. En 2026, aproximadamente el 55% de los beneficiarios de Medicare estan inscritos en Medicare Advantage, segun KFF, y la mayoria de los planes incluyen cobertura de medicamentos recetados (planes MAPD). Las reglas de CMS para 2026 establecen el MOOP maximo permitido dentro de la red en $9,250. Los planes individuales frecuentemente establecen su MOOP mas bajo, pero los beneficiarios en planes que alcanzan el limite pueden deber miles antes de que entre en vigor."
+        },
+        {
+          "en": "Medicare Advantage plans frequently include supplemental benefits that Original Medicare excludes. Routine dental (cleanings, X-rays, extractions), routine vision (eye exams, frames, lenses), and hearing (exams, hearing aids) are offered by most plans in 2026, though dollar limits and covered services vary significantly by plan and county. Some plans also include fitness memberships (SilverSneakers and similar programs), telehealth, over-the-counter allowances, and transportation to medical appointments.",
+          "es": "Los planes de Medicare Advantage frecuentemente incluyen beneficios suplementarios que Medicare Original excluye. Dental de rutina (limpiezas, radiografias, extracciones), vision de rutina (examenes oculares, monturas, lentes) y audicion (examenes, audifonos) son ofrecidos por la mayoria de los planes en 2026, aunque los limites en dolares y los servicios cubiertos varian significativamente por plan y condado. Algunos planes tambien incluyen membresias de gimnasio (SilverSneakers y programas similares), telesalud, asignaciones para medicamentos sin receta y transporte a citas medicas."
+        },
+        {
+          "en": "Prior authorization is the most common friction point in Medicare Advantage. Plans can require pre-approval for specialist visits, inpatient hospitalizations, imaging, durable medical equipment, and some Part D drugs. CMS strengthened prior auth rules for 2024 and 2026, requiring plans to respond faster and apply clinical criteria consistently, but prior auth remains more common in Medicare Advantage than in Original Medicare.",
+          "es": "La autorizacion previa es el punto de friccion mas comun en Medicare Advantage. Los planes pueden requerir aprobacion previa para visitas a especialistas, hospitalizaciones, imagenes, equipo medico durable y algunos medicamentos de la Parte D. CMS fortalecio las reglas de autorizacion previa para 2024 y 2026, requiriendo que los planes respondan mas rapido y apliquen criterios clinicos de manera consistente, pero la autorizacion previa sigue siendo mas comun en Medicare Advantage que en Medicare Original."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Cost Comparison: Real Numbers for 2026",
+        "es": "Comparación de costos: números reales para 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The 2026 Part B standard premium is $202.90 per month for all Medicare beneficiaries, whether they choose Original Medicare plus Medigap or Medicare Advantage. That baseline applies to both paths. The difference is what comes on top. A Medicare Advantage plan with a $0 plan premium means total Medicare spending of roughly $202.90 per month before any claims, but out-of-pocket costs on claims can reach the 2026 MOOP cap of $9,250 in a bad year. Plan G Medigap premiums in 2026 typically run $80 to $300 per month for a 65-year-old depending on state and insurer, meaning total monthly cost of roughly $283 to $503 before any claims, but claims cost-sharing after the $283 Part B deductible is effectively zero for covered services.",
+          "es": "La prima estandar de la Parte B de 2026 es $202.90 por mes para todos los beneficiarios de Medicare, ya sea que elijan Medicare Original mas Medigap o Medicare Advantage. Esa base aplica a ambos caminos. La diferencia es lo que viene encima. Un plan de Medicare Advantage con una prima de plan de $0 significa gasto total de Medicare de aproximadamente $202.90 por mes antes de cualquier reclamacion, pero los gastos de bolsillo en reclamaciones pueden alcanzar el limite MOOP de 2026 de $9,250 en un mal ano. Las primas de Medigap Plan G en 2026 tipicamente oscilan entre $80 y $300 por mes para una persona de 65 anos dependiendo del estado y el asegurador, lo que significa un costo mensual total de aproximadamente $283 a $503 antes de cualquier reclamacion, pero el costo compartido de reclamaciones despues del deducible de la Parte B de $283 es efectivamente cero para los servicios cubiertos."
+        },
+        {
+          "en": "For a beneficiary with few claims, Medicare Advantage can be significantly cheaper in total annual spend. For a beneficiary who needs surgery, extended hospitalization, or ongoing specialist care, Medigap often comes out ahead. The 2026 Part A inpatient hospital deductible of $1,736 per benefit period would be absorbed by Medigap Plan G but billed to a Medicare Advantage enrollee against their deductible and toward their MOOP.",
+          "es": "Para un beneficiario con pocas reclamaciones, Medicare Advantage puede ser significativamente mas barato en gasto anual total. Para un beneficiario que necesita cirugia, hospitalizacion extendida o atencion especializada continua, Medigap frecuentemente sale mejor. El deducible de hospital de la Parte A de 2026 de $1,736 por periodo de beneficio seria absorbido por Medigap Plan G pero facturado a un inscrito de Medicare Advantage contra su deducible y hacia su MOOP."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Provider Access and Travel: Where the Gap Is Sharpest",
+        "es": "Acceso a proveedores y viajes: donde la brecha es más pronunciada"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare plus Medigap allows a beneficiary to see any provider in the United States who accepts Medicare assignment, which is the vast majority of physicians and hospitals. Medigap works identically nationwide: your Plan G follows you from California to Florida to any rural clinic that takes Medicare. Medicare Advantage plans are county-based. An HMO plan typically requires you to use in-network providers except in emergencies. A PPO plan allows out-of-network use but at significantly higher cost-sharing. Beneficiaries who travel frequently, maintain dual residences, or live in rural areas with thin MA network penetration are often better served by Original Medicare plus Medigap.",
+          "es": "Medicare Original mas Medigap permite a un beneficiario ver a cualquier proveedor en los Estados Unidos que acepte la asignacion de Medicare, que es la gran mayoria de medicos y hospitales. Medigap funciona identicamente en todo el pais: su Plan G lo acompaña de California a Florida a cualquier clinica rural que acepte Medicare. Los planes de Medicare Advantage son basados en el condado. Un plan HMO tipicamente requiere que use proveedores dentro de la red excepto en emergencias. Un plan PPO permite el uso fuera de la red pero con costos compartidos significativamente mas altos. Los beneficiarios que viajan frecuentemente, mantienen residencias en dos lugares, o viven en areas rurales con poca penetracion de la red MA frecuentemente son mejor atendidos por Medicare Original mas Medigap."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives and Dual-Eligible Considerations",
+        "es": "Alternativas y consideraciones para elegibles duales"
+      },
+      "paragraphs": [
+        {
+          "en": "Beneficiaries who cannot afford Medigap premiums or who are in poor health and face underwriting have several alternatives. Standalone Part D Prescription Drug Plans (PDPs) pair with Original Medicare to cover drugs without a Medigap policy, leaving the cost-sharing gaps open but keeping drug coverage in place. Special Needs Plans (SNPs) are a subset of Medicare Advantage designed for people with specific chronic conditions (C-SNPs), dual-eligible beneficiaries (D-SNPs), or institutionalized beneficiaries (I-SNPs). D-SNPs coordinate Medicare and Medicaid benefits and can eliminate most cost-sharing for the roughly 12 million Americans who qualify for both programs.",
+          "es": "Los beneficiarios que no pueden pagar las primas de Medigap o que tienen mala salud y enfrentan suscripcion tienen varias alternativas. Los planes de medicamentos recetados (PDPs) independientes de la Parte D se combinan con Medicare Original para cubrir medicamentos sin una poliza Medigap, dejando las brechas de costos compartidos abiertas pero manteniendo la cobertura de medicamentos en su lugar. Los Planes de Necesidades Especiales (SNPs) son un subconjunto de Medicare Advantage disenados para personas con condiciones cronicas especificas (C-SNPs), beneficiarios elegibles dobles (D-SNPs) o beneficiarios institucionalizados (I-SNPs). Los D-SNPs coordinan los beneficios de Medicare y Medicaid y pueden eliminar la mayoria de los costos compartidos para los aproximadamente 12 millones de estadounidenses que califican para ambos programas."
+        },
+        {
+          "en": "Beneficiaries who already have Medicare Advantage and want to switch back to Original Medicare plus Medigap should plan carefully. Switching MA to Original Medicare is permitted during the Annual Election Period (October 15 to December 7, 2026 for 2027 coverage) or the MA Open Enrollment Period (January 1 to March 31, 2026 for 2026 coverage). However, in most states, dropping MA to return to Original Medicare then applying for Medigap triggers medical underwriting. The State Health Insurance Assistance Program (SHIP) offers free one-on-one counseling at medicare.gov/plan-compare to help beneficiaries evaluate options before switching.",
+          "es": "Los beneficiarios que ya tienen Medicare Advantage y quieren volver a Medicare Original mas Medigap deben planificar cuidadosamente. Cambiar de MA a Medicare Original esta permitido durante el Periodo Anual de Eleccion (15 de octubre al 7 de diciembre de 2026 para cobertura de 2027) o el Periodo de Inscripcion Abierta de MA (1 de enero al 31 de marzo de 2026 para cobertura de 2026). Sin embargo, en la mayoria de los estados, dejar MA para volver a Medicare Original y luego solicitar Medigap activa la suscripcion medica. El Programa de Asistencia de Seguro de Salud del Estado (SHIP) ofrece asesoria individual gratuita en medicare.gov/plan-compare para ayudar a los beneficiarios a evaluar opciones antes de cambiar."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Find and Compare Plans in 2026",
+        "es": "Cómo encontrar y comparar planes en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The official comparison tool for Medicare plans is the Medicare Plan Finder at medicare.gov/plan-compare. Enter your ZIP code, current medications, and preferred providers to see Medicare Advantage and Part D plans available in your county with real cost estimates. For Medigap, the Plan Finder shows available policies by insurer with premium estimates; because Medigap benefits are standardized by letter (Plan G is Plan G at every insurer), premium is the primary variable. The Annual Election Period (October 15 to December 7 each year) is the primary window to switch between Original Medicare, Medigap, and Medicare Advantage for the following year.",
+          "es": "La herramienta oficial de comparacion para los planes de Medicare es el Buscador de Planes de Medicare en medicare.gov/plan-compare. Ingrese su codigo postal, medicamentos actuales y proveedores preferidos para ver los planes de Medicare Advantage y Parte D disponibles en su condado con estimaciones de costos reales. Para Medigap, el Buscador de Planes muestra las polizas disponibles por asegurador con estimaciones de primas; como los beneficios de Medigap estan estandarizados por letra (Plan G es Plan G en cada asegurador), la prima es la variable principal. El Periodo Anual de Eleccion (15 de octubre al 7 de diciembre de cada ano) es la ventana principal para cambiar entre Medicare Original, Medigap y Medicare Advantage para el ano siguiente."
+        }
+      ],
+      "list": [
+        { "en": "Step 1: Go to medicare.gov/plan-compare and enter your ZIP code.", "es": "Paso 1: Vaya a medicare.gov/plan-compare e ingrese su codigo postal." },
+        { "en": "Step 2: Enter your current prescriptions to see accurate Part D and MAPD drug cost estimates.", "es": "Paso 2: Ingrese sus recetas actuales para ver estimaciones precisas de costos de medicamentos de la Parte D y MAPD." },
+        { "en": "Step 3: Check whether your current doctors and preferred hospital are in-network for any MA plan you are considering.", "es": "Paso 3: Verifique si sus medicos actuales y el hospital preferido estan dentro de la red para cualquier plan MA que este considerando." },
+        { "en": "Step 4: Compare total estimated annual cost (premium plus projected cost-sharing) not just monthly premium.", "es": "Paso 4: Compare el costo anual total estimado (prima mas costos compartidos proyectados) no solo la prima mensual." },
+        { "en": "Step 5: Contact your local SHIP counselor (free, no sales) at shiphelp.org for unbiased help before enrolling.", "es": "Paso 5: Contacte a su consejero local de SHIP (gratuito, sin ventas) en shiphelp.org para ayuda imparcial antes de inscribirse." }
+      ]
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Confirm you are enrolled in Medicare Parts A and B (required before choosing Medigap or Medicare Advantage).", "es": "Paso 1: Confirme que esta inscrito en las Partes A y B de Medicare (requerido antes de elegir Medigap o Medicare Advantage)." },
+      { "en": "Step 2: Use the Medicare Plan Finder at medicare.gov/plan-compare to browse Medicare Advantage plans in your county and Medigap options from multiple insurers.", "es": "Paso 2: Use el Buscador de Planes de Medicare en medicare.gov/plan-compare para explorar los planes de Medicare Advantage en su condado y las opciones de Medigap de multiples aseguradores." },
+      { "en": "Step 3: If choosing Medicare Advantage, enroll during your Initial Enrollment Period, Annual Election Period (Oct 15 to Dec 7), or a qualifying Special Enrollment Period.", "es": "Paso 3: Si elige Medicare Advantage, inscribase durante su Periodo de Inscripcion Inicial, Periodo Anual de Eleccion (15 oct a 7 dic) o un Periodo de Inscripcion Especial calificado." },
+      { "en": "Step 4: If choosing Medigap, apply during your 6-month Initial Enrollment Period (starts when you turn 65 and enroll in Part B) to guarantee coverage without medical underwriting.", "es": "Paso 4: Si elige Medigap, solicite durante su Periodo de Inscripcion Inicial de 6 meses (comienza cuando cumple 65 anos y se inscribe en la Parte B) para garantizar cobertura sin suscripcion medica." },
+      { "en": "Step 5: Call 1-800-MEDICARE or contact your state SHIP (State Health Insurance Assistance Program) for free, unbiased counseling at shiphelp.org.", "es": "Paso 5: Llame al 1-800-MEDICARE o contacte a su SHIP estatal (Programa de Asistencia de Seguro de Salud del Estado) para asesoria gratuita e imparcial en shiphelp.org." }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/plan-compare",
+    "documentsNeeded": [
+      { "en": "Medicare card (showing your Medicare number and Part A/B effective dates)", "es": "Tarjeta de Medicare (mostrando su numero de Medicare y fechas efectivas de la Parte A/B)" },
+      { "en": "List of current prescription medications (drug name, dosage, frequency) for accurate Part D cost estimates", "es": "Lista de medicamentos recetados actuales (nombre del medicamento, dosis, frecuencia) para estimaciones precisas de costos de la Parte D" },
+      { "en": "Names of current doctors and preferred hospital to verify in-network status", "es": "Nombres de medicos actuales y hospital preferido para verificar el estado dentro de la red" },
+      { "en": "Social Security number (required for Medigap application underwriting)", "es": "Numero de Seguro Social (requerido para la suscripcion de solicitud de Medigap)" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Applying for Medigap outside of Initial Enrollment Period without a guaranteed-issue right triggers medical underwriting in most states, which can result in denial or higher premiums based on health history.", "es": "Solicitar Medigap fuera del Periodo de Inscripcion Inicial sin un derecho de emision garantizada activa la suscripcion medica en la mayoria de los estados, lo que puede resultar en rechazo o primas mas altas segun el historial de salud." },
+      { "en": "Enrolling in Medicare Advantage outside of a valid enrollment window (you must wait for the next AEP or a qualifying SEP).", "es": "Inscribirse en Medicare Advantage fuera de una ventana de inscripcion valida (debe esperar el proximo Periodo Anual de Eleccion o un PEE calificado)." },
+      { "en": "Missing the MA Open Enrollment Period (January 1 to March 31) if you want to switch MA plans or return to Original Medicare mid-year.", "es": "Perder el Periodo de Inscripcion Abierta de MA (1 de enero al 31 de marzo) si desea cambiar de plan MA o volver a Medicare Original a mitad de ano." }
+    ],
+    "deadline": {
+      "en": "Annual Election Period: October 15 to December 7, 2026 (coverage begins January 1, 2027). MA Open Enrollment Period: January 1 to March 31, 2026 (one plan switch allowed).",
+      "es": "Periodo Anual de Eleccion: 15 de octubre al 7 de diciembre de 2026 (la cobertura comienza el 1 de enero de 2027). Periodo de Inscripcion Abierta de MA: 1 de enero al 31 de marzo de 2026 (se permite un cambio de plan)."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Does Medigap or Medicare Advantage cover more overall in 2026?",
+        "answer": "Medigap (Plan G) covers more of your cost-sharing for Medicare-covered services: after the $283 Part B deductible, it pays nearly all claims costs. Medicare Advantage covers more types of services by adding dental, vision, and hearing that Original Medicare excludes. Which covers more for you depends on how much care you use and what types of services matter most."
+      },
+      {
+        "question": "What is the 2026 Medicare Advantage maximum out-of-pocket (MOOP)?",
+        "answer": "CMS set the 2026 in-network MOOP cap for Medicare Advantage at $9,250. Individual plans may set lower MOOPs. Once you reach the MOOP, the plan pays 100% of covered in-network costs for the rest of the year. Out-of-network costs may have a separate, higher MOOP or no cap depending on plan type."
+      },
+      {
+        "question": "Can I switch from Medicare Advantage back to Medigap?",
+        "answer": "Yes, but timing and health status matter. You can leave Medicare Advantage during the Annual Election Period (October 15 to December 7 each year) or the MA Open Enrollment Period (January 1 to March 31). Returning to Original Medicare is automatic, but applying for Medigap in most states then requires you to pass medical underwriting. Massachusetts, Maine, and New York are exceptions with guaranteed-issue rules."
+      },
+      {
+        "question": "Does Medigap cover dental in 2026?",
+        "answer": "No. Medigap supplements Original Medicare, which does not cover routine dental, vision, or hearing. Medigap Plan G covers Medicare-approved services only. To get dental alongside Medigap, you must purchase a separate standalone dental plan. Medicare Advantage plans frequently include routine dental as part of the package."
+      },
+      {
+        "question": "What is Medigap Plan G and how does it differ from Plan N in 2026?",
+        "answer": "Plan G covers all Medicare cost-sharing except the Part B deductible ($283 in 2026). Plan N covers the same list but adds small copays: up to $20 per office visit and $50 per emergency room visit when not admitted. Plan N typically has a lower monthly premium than Plan G. If you rarely visit the doctor, Plan N may cost less annually; if you use care frequently, Plan G saves on copays."
+      },
+      {
+        "question": "Does Medicare Advantage require prior authorization in 2026?",
+        "answer": "Yes, most Medicare Advantage plans require prior authorization for services like specialist visits, inpatient hospital stays, imaging (CT, MRI), durable medical equipment, and some specialty drugs. CMS tightened prior auth rules for 2026 to require faster decisions and consistent clinical criteria, but prior authorization remains a key structural difference between Medicare Advantage and Original Medicare."
+      },
+      {
+        "question": "Which is better for someone with a chronic condition in 2026?",
+        "answer": "Beneficiaries with complex or costly chronic conditions often benefit from Medigap because predictable cost-sharing (near-zero after deductible) reduces financial risk and any-provider access eliminates network constraints. Medicare Advantage Special Needs Plans (C-SNPs) designed for specific conditions can also be a strong option if your specialists are in-network. Compare total estimated annual cost, not just monthly premium."
+      },
+      {
+        "question": "Is Medicare Advantage or Medigap better for travel?",
+        "answer": "Medigap is generally better for frequent travelers. Original Medicare plus a Medigap policy works at any Medicare-accepting provider nationwide. Medicare Advantage plans are county-based networks. Most MA plans cover only emergency and urgently needed care outside the service area. Medigap Plan G also includes foreign travel emergency coverage (80% after a $250 deductible, up to a $50,000 lifetime limit)."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Medigap o Medicare Advantage cubre más en general en 2026?",
+        "answer": "Medigap (Plan G) cubre mas de sus costos compartidos para servicios cubiertos por Medicare: despues del deducible de la Parte B de $283, paga casi todos los costos de reclamaciones. Medicare Advantage cubre mas tipos de servicios al agregar dental, vision y audicion que Medicare Original excluye. Cual cubre mas para usted depende de cuanta atencion usa y que tipos de servicios son mas importantes."
+      },
+      {
+        "question": "¿Cuál es el maximo de gastos de bolsillo (MOOP) de Medicare Advantage para 2026?",
+        "answer": "CMS establecio el limite MOOP dentro de la red de 2026 para Medicare Advantage en $9,250. Los planes individuales pueden establecer MOOPs mas bajos. Una vez que alcanza el MOOP, el plan paga el 100% de los costos cubiertos dentro de la red por el resto del ano. Los costos fuera de la red pueden tener un MOOP separado mas alto o sin limite segun el tipo de plan."
+      },
+      {
+        "question": "¿Puedo cambiar de Medicare Advantage a Medigap?",
+        "answer": "Si, pero el momento y el estado de salud importan. Puede dejar Medicare Advantage durante el Periodo Anual de Eleccion (15 de octubre al 7 de diciembre de cada ano) o el Periodo de Inscripcion Abierta de MA (1 de enero al 31 de marzo). Volver a Medicare Original es automatico, pero solicitar Medigap en la mayoria de los estados requiere pasar por suscripcion medica. Massachusetts, Maine y Nueva York son excepciones con reglas de emision garantizada."
+      },
+      {
+        "question": "¿Medigap cubre dental en 2026?",
+        "answer": "No. Medigap complementa Medicare Original, que no cubre dental, vision ni audicion de rutina. Medigap Plan G cubre solo los servicios aprobados por Medicare. Para obtener dental junto con Medigap, debe comprar un plan dental independiente por separado. Los planes de Medicare Advantage frecuentemente incluyen dental de rutina como parte del paquete."
+      },
+      {
+        "question": "¿Qué es Medigap Plan G y en qué se diferencia del Plan N en 2026?",
+        "answer": "El Plan G cubre todos los costos compartidos de Medicare excepto el deducible de la Parte B ($283 en 2026). El Plan N cubre la misma lista pero agrega pequenos copagos: hasta $20 por visita medica y $50 por visita a la sala de emergencias cuando no se ingresa. El Plan N tipicamente tiene una prima mensual mas baja que el Plan G. Si raramente visita al medico, el Plan N puede costar menos anualmente; si usa atencion frecuentemente, el Plan G ahorra en copagos."
+      },
+      {
+        "question": "¿Medicare Advantage requiere autorizacion previa en 2026?",
+        "answer": "Si, la mayoria de los planes de Medicare Advantage requieren autorizacion previa para servicios como visitas a especialistas, hospitalizaciones, imagenes (TC, IRM), equipo medico durable y algunos medicamentos especiales. CMS restringio las reglas de autorizacion previa para 2026 para requerir decisiones mas rapidas y criterios clinicos consistentes, pero la autorizacion previa sigue siendo una diferencia estructural clave entre Medicare Advantage y Medicare Original."
+      },
+      {
+        "question": "¿Cuál es mejor para alguien con una condicion cronica en 2026?",
+        "answer": "Los beneficiarios con condiciones cronicas complejas o costosas frecuentemente se benefician de Medigap porque los costos compartidos predecibles (cercanos a cero despues del deducible) reducen el riesgo financiero y el acceso a cualquier proveedor elimina las restricciones de red. Los Planes de Necesidades Especiales (C-SNPs) de Medicare Advantage disenados para condiciones especificas tambien pueden ser una opcion solida si sus especialistas estan dentro de la red."
+      },
+      {
+        "question": "¿Es mejor Medicare Advantage o Medigap para viajes?",
+        "answer": "Medigap es generalmente mejor para viajeros frecuentes. Medicare Original mas una poliza Medigap funciona en cualquier proveedor que acepte Medicare en todo el pais. Los planes de Medicare Advantage son redes basadas en el condado. La mayoria de los planes MA cubren solo atencion de emergencia y urgente fuera del area de servicio. Medigap Plan G tambien incluye cobertura de emergencia en viajes internacionales (80% despues de un deducible de $250, hasta un limite de por vida de $50,000)."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Does Medicare Advantage Cover Dental?", "es": "¿Medicare Advantage Cubre Dental?" },
+      "href": "/qa/does-medicare-advantage-cover-dental"
+    },
+    {
+      "label": { "en": "Does Medicare Advantage Cover Hearing?", "es": "¿Medicare Advantage Cubre Audicion?" },
+      "href": "/qa/does-medicare-advantage-cover-hearing"
+    },
+    {
+      "label": { "en": "Medicare Eligibility: Can I Get Medicare Under 65?", "es": "Elegibilidad de Medicare: ¿Puedo obtener Medicare antes de los 65?" },
+      "href": "/qa/can-i-get-medicare-under-65"
+    },
+    {
+      "label": { "en": "Find and Compare Medicare Plans (Medicare.gov)", "es": "Encuentre y compare planes de Medicare (Medicare.gov)" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicare.gov: Plan Compare Tool",
+      "url": "https://www.medicare.gov/plan-compare",
+      "note": {
+        "en": "Official CMS tool for comparing Medicare Advantage, Part D, and Medigap plans by ZIP code and drug list.",
+        "es": "Herramienta oficial de CMS para comparar planes de Medicare Advantage, Parte D y Medigap por codigo postal y lista de medicamentos."
+      }
+    },
+    {
+      "name": "CMS: Medicare Advantage MOOP Final Rule 2026",
+      "url": "https://www.cms.gov/medicare/health-drug-plans/medicareadvtgspecialneeds",
+      "note": {
+        "en": "CMS 2026 Medicare Advantage and Part D final rule establishing the $9,250 in-network MOOP cap and prior authorization requirements.",
+        "es": "Regla final de CMS de 2026 para Medicare Advantage y Parte D que establece el limite MOOP dentro de la red de $9,250 y los requisitos de autorizacion previa."
+      }
+    },
+    {
+      "name": "KFF: Medicare Advantage 2026 Enrollment and Policy Trends",
+      "url": "https://www.kff.org/medicare/issue-brief/medicare-advantage-in-2026/",
+      "note": {
+        "en": "KFF analysis of 2026 Medicare Advantage enrollment reaching approximately 55% of Medicare beneficiaries, plan availability, and supplemental benefit trends.",
+        "es": "Analisis de KFF sobre la inscripcion de Medicare Advantage en 2026 que alcanza aproximadamente el 55% de los beneficiarios de Medicare, disponibilidad de planes y tendencias de beneficios suplementarios."
+      }
+    },
+    {
+      "name": "Medicare.gov: Medigap Overview",
+      "url": "https://www.medicare.gov/supplements-other-insurance/whats-medicare-supplement-insurance-medigap",
+      "note": {
+        "en": "Official CMS explanation of Medigap plan types, standardized benefits by letter (A through N), guaranteed issue rules, and enrollment timing.",
+        "es": "Explicacion oficial de CMS de los tipos de planes Medigap, beneficios estandarizados por letra (A a N), reglas de emision garantizada y momento de inscripcion."
+      }
+    },
+    {
+      "name": "SHIP National Technical Assistance Center",
+      "url": "https://www.shiphelp.org",
+      "note": {
+        "en": "Free, unbiased Medicare counseling available in every state through State Health Insurance Assistance Programs.",
+        "es": "Asesoria de Medicare gratuita e imparcial disponible en cada estado a traves de los Programas de Asistencia de Seguro de Salud del Estado."
+      }
+    }
+  ]
+}

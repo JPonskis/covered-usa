@@ -17,6 +17,7 @@ import {
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
+import ReactMarkdown from 'react-markdown';
 import {
   getAllMAStateSlugs,
   getMAStateBySlug,
@@ -283,7 +284,7 @@ export default async function MedicareAdvantageStatePage({
           <BlogDropCap />
 
           {data.introParagraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           {/* Market overview ─ carrier breakdown */}
@@ -422,7 +423,7 @@ export default async function MedicareAdvantageStatePage({
             <div key={i}>
               <h2>{pickLocale(section.heading, locale)}</h2>
               {section.paragraphs.map((p, j) => (
-                <p key={j}>{pickLocale(p, locale)}</p>
+                <ReactMarkdown key={j}>{pickLocale(p, locale) || ''}</ReactMarkdown>
               ))}
               {section.list && (
                 <ul>

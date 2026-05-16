@@ -17,6 +17,7 @@ import {
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
+import ReactMarkdown from 'react-markdown';
 import {
   getAllDrugSlugs,
   getDrugBySlug,
@@ -225,7 +226,7 @@ export default async function DrugPage({ params }: PageProps) {
           <BlogDropCap />
 
           {data.introParagraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           {data.iraNegotiation && (
@@ -318,7 +319,7 @@ export default async function DrugPage({ params }: PageProps) {
           <h2>{isEs ? 'Por qué los hospitales cobran tanto' : 'Why Hospitals Charge So Much'}</h2>
 
           {data.whyHospitalsCharge.paragraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           {/* HCPCS section (optional) */}
@@ -373,7 +374,7 @@ export default async function DrugPage({ params }: PageProps) {
                   : (isEs ? 'Medicare Parte D' : 'Medicare Part D')}
               </h2>
               {data.medicarePartD.paragraphs.map((p, i) => (
-                <p key={i}>{pickLocale(p, locale)}</p>
+                <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
               ))}
             </>
           )}

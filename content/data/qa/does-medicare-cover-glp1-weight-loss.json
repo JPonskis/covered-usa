@@ -21,13 +21,25 @@
   "ctaTarget": "screener",
   "lastUpdated": "2026-05-15",
   "readingTime": "6 min read",
-
   "keyTerms": {
-    "en": ["GLP-1 drugs", "Wegovy", "Zepbound", "Part D anti-obesity exclusion", "Bridge Program 2026", "cardiovascular indication"],
-    "es": ["medicamentos GLP-1", "Wegovy", "Zepbound", "exclusión antiobesidad Parte D", "Programa Puente 2026", "indicación cardiovascular"]
+    "en": [
+      "GLP-1 drugs",
+      "Wegovy",
+      "Zepbound",
+      "Part D anti-obesity exclusion",
+      "Bridge Program 2026",
+      "cardiovascular indication"
+    ],
+    "es": [
+      "medicamentos GLP-1",
+      "Wegovy",
+      "Zepbound",
+      "exclusión antiobesidad Parte D",
+      "Programa Puente 2026",
+      "indicación cardiovascular"
+    ]
   },
   "isLighthouse": false,
-
   "meta": {
     "title": {
       "en": "Does Medicare Cover GLP-1 Drugs for Weight Loss? (2026)",
@@ -38,14 +50,12 @@
       "es": "Medicare normalmente NO cubre medicamentos GLP-1 para bajar de peso. Dos excepciones: Wegovy para riesgo cardiovascular y el Programa Puente 2026-2027 ($50/mes)."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Does Medicare Cover GLP-1 Drugs for Weight Loss? (2026)",
       "es": "¿Medicare Cubre los Medicamentos GLP-1 para Perder Peso? (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "GLP-1 receptor agonists like Wegovy, Zepbound, and Ozempic have reshaped how millions of Americans approach obesity treatment. But for Medicare's 66 million beneficiaries, the coverage picture is complicated: a decades-old federal statute bans Part D from covering weight-loss drugs, yet two major 2024-2026 policy shifts have carved out real exceptions. Understanding exactly which drugs are covered, under what diagnosis, and for how long determines whether you pay $50 a month or $1,500 a month.",
@@ -56,51 +66,165 @@
       "es": "Esta página explica la exclusión estatutaria, ambas excepciones activas, qué nombres de marca específicos califican en 2026, y qué pueden hacer los beneficiarios que no califican para ninguna excepción."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Plan Type", "GLP-1 for Weight Loss Only", "Wegovy (CVD Indication)", "Bridge Program (Jul 2026 - Dec 2027)"],
-      "es": ["Tipo de plan", "GLP-1 solo para peso", "Wegovy (indicación CV)", "Programa Puente (jul 2026 - dic 2027)"]
+      "en": [
+        "Plan Type",
+        "GLP-1 for Weight Loss Only",
+        "Wegovy (CVD Indication)",
+        "Bridge Program (Jul 2026 - Dec 2027)"
+      ],
+      "es": [
+        "Tipo de plan",
+        "GLP-1 solo para peso",
+        "Wegovy (indicación CV)",
+        "Programa Puente (jul 2026 - dic 2027)"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Part A (Hospital)", "es": "Parte A (Hospital)" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" }
+          {
+            "en": "Part A (Hospital)",
+            "es": "Parte A (Hospital)"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Part B (Outpatient)", "es": "Parte B (Ambulatorio)" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" }
+          {
+            "en": "Part B (Outpatient)",
+            "es": "Parte B (Ambulatorio)"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Part D (Prescription Drug)", "es": "Parte D (Medicamentos)" },
-          { "value": { "en": "No (statutory exclusion)", "es": "No (exclusión estatutaria)" }, "status": "no" },
-          { "value": { "en": "Yes (Wegovy only)", "es": "Sí (solo Wegovy)" }, "status": "yes" },
-          { "value": { "en": "Yes (Wegovy, Zepbound, Foundayo, $50/mo)", "es": "Sí (Wegovy, Zepbound, Foundayo, $50/mes)" }, "status": "yes" }
+          {
+            "en": "Part D (Prescription Drug)",
+            "es": "Parte D (Medicamentos)"
+          },
+          {
+            "value": {
+              "en": "No (statutory exclusion)",
+              "es": "No (exclusión estatutaria)"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "Yes (Wegovy only)",
+              "es": "Sí (solo Wegovy)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Yes (Wegovy, Zepbound, Foundayo, $50/mo)",
+              "es": "Sí (Wegovy, Zepbound, Foundayo, $50/mes)"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare Advantage (Part C)", "es": "Medicare Advantage (Parte C)" },
-          { "value": { "en": "No (follows Part D exclusion)", "es": "No (sigue la exclusión de Parte D)" }, "status": "no" },
-          { "value": { "en": "Yes (Wegovy only)", "es": "Sí (solo Wegovy)" }, "status": "yes" },
-          { "value": { "en": "Yes (Bridge Program applies)", "es": "Sí (aplica Programa Puente)" }, "status": "yes" }
+          {
+            "en": "Medicare Advantage (Part C)",
+            "es": "Medicare Advantage (Parte C)"
+          },
+          {
+            "value": {
+              "en": "No (follows Part D exclusion)",
+              "es": "No (sigue la exclusión de Parte D)"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "Yes (Wegovy only)",
+              "es": "Sí (solo Wegovy)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Yes (Bridge Program applies)",
+              "es": "Sí (aplica Programa Puente)"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medigap (Supplement)", "es": "Medigap (Suplemento)" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" }
+          {
+            "en": "Medigap (Supplement)",
+            "es": "Medigap (Suplemento)"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          }
         ]
       }
     ],
@@ -110,8 +234,19 @@
     },
     "source": "CMS.gov, Medicare.gov, Social Security Act Section 1927(d)(2)(A)"
   },
-
   "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Does Medicare Cover GLP-1 Weight Loss Drugs?",
+        "es": "Respuesta Directa: ¿Medicare Cubre los Medicamentos GLP-1 para Bajar de Peso?"
+      },
+      "paragraphs": [
+        {
+          "en": "No, for most Medicare beneficiaries in 2026. Federal law explicitly excludes anti-obesity drugs from Part D coverage. Two narrow exceptions apply: Wegovy is covered for established cardiovascular disease, and the Medicare GLP-1 Bridge Program (July 1 to December 31, 2027) covers select GLP-1s at a $50/month copay for eligible beneficiaries.",
+          "es": "No, para la mayoria de los beneficiarios de Medicare en 2026. La ley federal excluye explicitamente los medicamentos contra la obesidad de la cobertura del Part D. Existen dos excepciones: Wegovy esta cubierto para enfermedades cardiovasculares establecidas, y el Programa Puente GLP-1 de Medicare (del 1 de julio al 31 de diciembre de 2027) cubre ciertos GLP-1 a $50/mes para beneficiarios elegibles."
+        }
+      ]
+    },
     {
       "heading": {
         "en": "Why Medicare Doesn't Cover Weight-Loss Drugs (The Statute)",
@@ -160,18 +295,36 @@
         }
       ],
       "list": [
-        { "en": "Wegovy (all formulations, injectable and oral) -- COVERED under Bridge Program", "es": "Wegovy (todas las formulaciones, inyectable y oral) -- CUBIERTO bajo el Programa Puente" },
-        { "en": "Zepbound KwikPen (tirzepatide) -- COVERED under Bridge Program", "es": "Zepbound KwikPen (tirzepatida) -- CUBIERTO bajo el Programa Puente" },
-        { "en": "Foundayo -- COVERED under Bridge Program", "es": "Foundayo -- CUBIERTO bajo el Programa Puente" },
-        { "en": "Ozempic (semaglutide, diabetes only) -- NOT covered for weight loss", "es": "Ozempic (semaglutida, solo diabetes) -- NO cubierto para bajar de peso" },
-        { "en": "Mounjaro (tirzepatide, diabetes only) -- NOT covered for weight loss", "es": "Mounjaro (tirzepatida, solo diabetes) -- NO cubierto para bajar de peso" },
-        { "en": "Zepbound single-dose pen or single-dose vial -- NOT covered (KwikPen only qualifies)", "es": "Pluma de dosis única o vial de dosis única de Zepbound -- NO cubierto (solo califica KwikPen)" }
+        {
+          "en": "Wegovy (all formulations, injectable and oral), COVERED under Bridge Program",
+          "es": "Wegovy (todas las formulaciones, inyectable y oral), CUBIERTO bajo el Programa Puente"
+        },
+        {
+          "en": "Zepbound KwikPen (tirzepatide), COVERED under Bridge Program",
+          "es": "Zepbound KwikPen (tirzepatida), CUBIERTO bajo el Programa Puente"
+        },
+        {
+          "en": "Foundayo, COVERED under Bridge Program",
+          "es": "Foundayo, CUBIERTO bajo el Programa Puente"
+        },
+        {
+          "en": "Ozempic (semaglutide, diabetes only), NOT covered for weight loss",
+          "es": "Ozempic (semaglutida, solo diabetes), NO cubierto para bajar de peso"
+        },
+        {
+          "en": "Mounjaro (tirzepatide, diabetes only), NOT covered for weight loss",
+          "es": "Mounjaro (tirzepatida, solo diabetes), NO cubierto para bajar de peso"
+        },
+        {
+          "en": "Zepbound single-dose pen or single-dose vial, NOT covered (KwikPen only qualifies)",
+          "es": "Pluma de dosis única o vial de dosis única de Zepbound, NO cubierto (solo califica KwikPen)"
+        }
       ]
     },
     {
       "heading": {
-        "en": "What Beneficiaries Outside Both Exceptions Pay in 2026",
-        "es": "Lo que pagan los beneficiarios fuera de ambas excepciones en 2026"
+        "en": "Alternatives and Costs for Beneficiaries Outside Both Exceptions",
+        "es": "Alternativas y Costos para Beneficiarios Fuera de Ambas Excepciones"
       },
       "paragraphs": [
         {
@@ -195,13 +348,12 @@
           "es": "Aproximadamente 12 millones de estadounidenses son elegibles duales (inscritos tanto en Medicare como en Medicaid). Para los beneficiarios de doble elegibilidad, Medicaid no está sujeto a la exclusión de medicamentos antiobesidad de la Parte D. Los programas estatales de Medicaid establecen sus propios formularios de medicamentos. Varios estados ya cubren Wegovy o Zepbound para el manejo de la obesidad bajo sus programas de Medicaid. Si su estado cubre estos medicamentos a través de Medicaid, puede acceder a ellos con las tasas de costo compartido de Medicaid (a menudo de $0 a $4 por receta) aunque Medicare no pague."
         },
         {
-          "en": "To check if you qualify for Medicaid alongside Medicare, use the eligibility screener. A single person with income below approximately $20,783 per year (133% of the 2026 FPL in expansion states) may qualify for full Medicaid in the 40 states and DC that have expanded coverage. The 10 non-expansion states (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY) have much lower income thresholds and may not cover this class of drug.",
-          "es": "Para verificar si califica para Medicaid junto con Medicare, use el verificador de elegibilidad. Una persona soltera con ingresos por debajo de aproximadamente $20,783 al año (133% del FPL de 2026 en estados de expansión) puede calificar para Medicaid completo en los 40 estados y DC que han expandido la cobertura. Los 10 estados que no han expandido (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY) tienen umbrales de ingresos mucho más bajos y pueden no cubrir esta clase de medicamento."
+          "en": "To check if you qualify for Medicaid alongside Medicare, use the eligibility screener. A single person with income below approximately $22,025 per year (138% of the 2026 FPL in expansion states, including the standard 5% MAGI disregard) may qualify for full Medicaid in the 40 states and DC that have expanded coverage. The 10 non-expansion states (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY) have much lower income thresholds and may not cover this class of drug.",
+          "es": "Para verificar si califica para Medicaid junto con Medicare, use el verificador de elegibilidad. Una persona soltera con ingresos por debajo de aproximadamente $22,025 al año (138% del FPL de 2026 en estados de expansión, incluido el descuento estándar del 5% de MAGI) puede calificar para Medicaid completo en los 40 estados y DC que han expandido la cobertura. Los 10 estados que no han expandido (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY) tienen umbrales de ingresos mucho más bajos y pueden no cubrir esta clase de medicamento."
         }
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -234,7 +386,7 @@
       },
       {
         "question": "Can dual-eligible Medicare-Medicaid beneficiaries get GLP-1s for free?",
-        "answer": "Possibly. Medicaid is not subject to the Part D anti-obesity drug exclusion, so state Medicaid programs can cover GLP-1s for obesity management. Several states already include Wegovy or Zepbound on their Medicaid formularies. Dual-eligible beneficiaries in those states may pay $0 to $4 per prescription. In expansion states, a single person earning below about $20,783 per year may qualify for both Medicare and Medicaid. Use a screener to check your state and income eligibility."
+        "answer": "Possibly. Medicaid is not subject to the Part D anti-obesity drug exclusion, so state Medicaid programs can cover GLP-1s for obesity management. Several states already include Wegovy or Zepbound on their Medicaid formularies. Dual-eligible beneficiaries in those states may pay $0 to $4 per prescription. In expansion states, a single person earning below about $22,025 per year (138% of the 2026 FPL) may qualify for both Medicare and Medicaid. Use a screener to check your state and income eligibility."
       }
     ],
     "es": [
@@ -268,11 +420,10 @@
       },
       {
         "question": "¿Los beneficiarios de doble elegibilidad Medicare-Medicaid pueden obtener GLP-1 gratis?",
-        "answer": "Posiblemente. Medicaid no está sujeto a la exclusión de medicamentos antiobesidad de la Parte D, por lo que los programas estatales de Medicaid pueden cubrir GLP-1 para el manejo de la obesidad. Varios estados ya incluyen Wegovy o Zepbound en sus formularios de Medicaid. Los beneficiarios de doble elegibilidad en esos estados pueden pagar de $0 a $4 por receta. En estados de expansión, una persona soltera con ingresos por debajo de aproximadamente $20,783 al año puede calificar para ambos programas."
+        "answer": "Posiblemente. Medicaid no está sujeto a la exclusión de medicamentos antiobesidad de la Parte D, por lo que los programas estatales de Medicaid pueden cubrir GLP-1 para el manejo de la obesidad. Varios estados ya incluyen Wegovy o Zepbound en sus formularios de Medicaid. Los beneficiarios de doble elegibilidad en esos estados pueden pagar de $0 a $4 por receta. En estados de expansión, una persona soltera con ingresos por debajo de aproximadamente $22,025 al año (138% del FPL de 2026) puede calificar para ambos programas."
       }
     ]
   },
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -334,26 +485,36 @@
       "es": "Programa Puente: del 1 de julio de 2026 al 31 de diciembre de 2027. Inscripción abierta de la Parte D para cambios de plan: del 15 de octubre al 7 de diciembre de 2026."
     }
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad para Medicare" },
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad para Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "Medicaid Income Limits", "es": "Limites de Ingresos de Medicaid" },
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Limites de Ingresos de Medicaid"
+      },
       "href": "/medicaid-income-limits"
     },
     {
-      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
+      "label": {
+        "en": "2026 Federal Poverty Level Chart",
+        "es": "Tabla del Nivel Federal de Pobreza 2026"
+      },
       "href": "/federal-poverty-level"
     },
     {
-      "label": { "en": "Check Your Benefits Eligibility", "es": "Verifique su Elegibilidad para Beneficios" },
+      "label": {
+        "en": "Check Your Benefits Eligibility",
+        "es": "Verifique su Elegibilidad para Beneficios"
+      },
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "Social Security Act Section 1927(d)(2)(A): Part D anti-obesity drug exclusion",

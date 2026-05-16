@@ -16,6 +16,7 @@ import {
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
+import ReactMarkdown from 'react-markdown';
 import {
   getAllEventSlugs,
   getEventBySlug,
@@ -243,7 +244,7 @@ export default async function TriggerEventPage({ params }: PageProps) {
           <BlogDropCap />
 
           {data.introParagraphs.map((p, i) => (
-            <p key={i}>{pickLocale(p, locale)}</p>
+            <ReactMarkdown key={i}>{pickLocale(p, locale) || ''}</ReactMarkdown>
           ))}
 
           <h2>
@@ -326,7 +327,7 @@ export default async function TriggerEventPage({ params }: PageProps) {
             <div key={i}>
               <h2>{pickLocale(section.heading, locale)}</h2>
               {section.paragraphs.map((p, j) => (
-                <p key={j}>{pickLocale(p, locale)}</p>
+                <ReactMarkdown key={j}>{pickLocale(p, locale) || ''}</ReactMarkdown>
               ))}
               {section.list && (
                 <ul>
