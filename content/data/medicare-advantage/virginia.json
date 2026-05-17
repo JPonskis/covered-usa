@@ -10,7 +10,6 @@
   "ctaTarget": "screener",
   "lastUpdated": "2026-05-15",
   "readingTime": "9 min read",
-
   "meta": {
     "title": {
       "en": "Medicare Advantage Plans in Virginia 2026 | CoveredUSA",
@@ -21,7 +20,6 @@
       "es": "143 planes Medicare Advantage en Virginia 2026. Prima ~$9/mes. Aseguradoras: Humana, UHC, Anthem, Aetna, Kaiser. AEP 15 oct a 7 dic 2026."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Medicare Advantage Plans in Virginia (2026)",
@@ -32,12 +30,10 @@
       "es": "Virginia tiene 143 planes Medicare Advantage disponibles en 2026, con aproximadamente 683,000 beneficiarios inscritos (39% de penetración MA). Prima promedio: ~$9/mes. Principales aseguradoras: Humana, UnitedHealthcare, Anthem, Aetna, Kaiser Permanente (Norte de VA)."
     }
   },
-
   "quickAnswer": {
     "en": "In 2026, Virginia has 143 Medicare Advantage plans available statewide and about 683,000 MA enrollees, representing a 39% MA penetration rate among Virginia's roughly 1.74 million Medicare beneficiaries. The average monthly premium is around $9, and all Medicare-eligible Virginians can access at least one $0-premium plan. Humana, UnitedHealthcare, Anthem Blue Cross Blue Shield, Aetna, and Kaiser Permanente (Northern Virginia only) lead the market. The Annual Election Period runs October 15 to December 7, 2026, for coverage starting January 1, 2027.",
     "es": "En 2026, Virginia tiene 143 planes Medicare Advantage disponibles a nivel estatal y aproximadamente 683,000 inscritos en MA, lo que representa una tasa de penetración MA del 39% entre los aproximadamente 1.74 millones de beneficiarios de Medicare de Virginia. La prima mensual promedio es de alrededor de $9, y todos los virginianos elegibles para Medicare pueden acceder a al menos un plan con prima de $0. Humana, UnitedHealthcare, Anthem Blue Cross Blue Shield, Aetna y Kaiser Permanente (solo Norte de Virginia) lideran el mercado. El Periodo Anual de Eleccion va del 15 de octubre al 7 de diciembre de 2026, para cobertura que comienza el 1 de enero de 2027."
   },
-
   "introParagraphs": [
     {
       "en": "Virginia is a mid-size Medicare Advantage market with 143 plans in 2026, serving about 683,000 enrollees across the state's 1.74 million Medicare beneficiaries. At 39% MA penetration, Virginia sits below the national average of roughly 54%, but the market has grown steadily from under 20% penetration in 2018. Urban corridors around Northern Virginia, Richmond, and Hampton Roads drive most enrollment, while the rural Southwest and Shenandoah Valley counties tend to have fewer plan choices and higher premiums.",
@@ -52,7 +48,6 @@
       "es": "Esta guia cubre el mercado Medicare Advantage de Virginia 2026: numero de planes, principales aseguradoras, desglose de tipos de planes, variacion por condado, que buscar al comprar y fechas clave de inscripcion. El Periodo Anual de Eleccion es del 15 de octubre al 7 de diciembre de 2026, para cobertura que comienza el 1 de enero de 2027."
     }
   ],
-
   "marketOverview": {
     "dataYear": 2026,
     "totalPlansAvailable": 143,
@@ -144,28 +139,77 @@
     ],
     "source": "healthinsurance.org Virginia Medicare data (January 2026), KFF Medicare Advantage 2026 Spotlight, CMS Medicare Plan Finder Q4 2025, NerdWallet Virginia Medicare Advantage 2026"
   },
-
   "planTypes": {
     "headers": {
-      "en": ["Plan Type", "Plans Available", "Avg Premium", "Best For"],
-      "es": ["Tipo de plan", "Planes disponibles", "Prima promedio", "Mejor para"]
+      "en": [
+        "Plan Type",
+        "Plans Available",
+        "Avg Premium",
+        "Best For"
+      ],
+      "es": [
+        "Tipo de plan",
+        "Planes disponibles",
+        "Prima promedio",
+        "Mejor para"
+      ]
     },
     "rows": [
       {
-        "en": ["HMO / HMO-POS", "72", "$6/mo", "Lower premiums, willing to use network providers; Kaiser HMO-POS adds some out-of-network flexibility"],
-        "es": ["HMO / HMO-POS", "72", "$6/mes", "Primas mas bajas, dispuesto a usar proveedores de la red; Kaiser HMO-POS agrega algo de flexibilidad fuera de la red"]
+        "en": [
+          "HMO / HMO-POS",
+          "72",
+          "$6/mo",
+          "Lower premiums, willing to use network providers; Kaiser HMO-POS adds some out-of-network flexibility"
+        ],
+        "es": [
+          "HMO / HMO-POS",
+          "72",
+          "$6/mes",
+          "Primas mas bajas, dispuesto a usar proveedores de la red; Kaiser HMO-POS agrega algo de flexibilidad fuera de la red"
+        ]
       },
       {
-        "en": ["PPO", "32", "$28/mo", "Flexibility to see out-of-network providers; popular with beneficiaries who travel or split time between states"],
-        "es": ["PPO", "32", "$28/mes", "Flexibilidad para ver proveedores fuera de la red; popular entre beneficiarios que viajan o dividen tiempo entre estados"]
+        "en": [
+          "PPO",
+          "32",
+          "$28/mo",
+          "Flexibility to see out-of-network providers; popular with beneficiaries who travel or split time between states"
+        ],
+        "es": [
+          "PPO",
+          "32",
+          "$28/mes",
+          "Flexibilidad para ver proveedores fuera de la red; popular entre beneficiarios que viajan o dividen tiempo entre estados"
+        ]
       },
       {
-        "en": ["Special Needs Plan (SNP)", "39", "$0/mo", "Dual-eligible (Medicare + Medicaid), chronic conditions (C-SNP), or institutional care (I-SNP)"],
-        "es": ["Plan de Necesidades Especiales (SNP)", "39", "$0/mes", "Doble elegible (Medicare + Medicaid), condiciones cronicas (C-SNP) o atencion institucional (I-SNP)"]
+        "en": [
+          "Special Needs Plan (SNP)",
+          "39",
+          "$0/mo",
+          "Dual-eligible (Medicare + Medicaid), chronic conditions (C-SNP), or institutional care (I-SNP)"
+        ],
+        "es": [
+          "Plan de Necesidades Especiales (SNP)",
+          "39",
+          "$0/mes",
+          "Doble elegible (Medicare + Medicaid), condiciones cronicas (C-SNP) o atencion institucional (I-SNP)"
+        ]
       },
       {
-        "en": ["PFFS (Private Fee-for-Service)", "4", "$18/mo", "Any provider that accepts terms; less common; limited plan options in VA"],
-        "es": ["PFFS (Tarifa por Servicio Privada)", "4", "$18/mes", "Cualquier proveedor que acepte los terminos; menos comun; opciones de plan limitadas en VA"]
+        "en": [
+          "PFFS (Private Fee-for-Service)",
+          "4",
+          "$18/mo",
+          "Any provider that accepts terms; less common; limited plan options in VA"
+        ],
+        "es": [
+          "PFFS (Tarifa por Servicio Privada)",
+          "4",
+          "$18/mes",
+          "Cualquier proveedor que acepte los terminos; menos comun; opciones de plan limitadas en VA"
+        ]
       }
     ],
     "footnote": {
@@ -174,7 +218,6 @@
     },
     "source": "CMS Medicare Plan Finder Q4 2025, medicare.org Virginia SNP Plans 2026"
   },
-
   "countyVariance": {
     "intro": {
       "en": "Plan availability and premiums vary substantially by Virginia county. Northern Virginia and Hampton Roads urban counties offer 35-45 plans per county. Rural counties in the southwestern coalfields and Shenandoah Valley typically have fewer plan choices. Premiums are lowest in competitive urban markets and highest in rural Southwest Virginia counties.",
@@ -248,7 +291,6 @@
     },
     "source": "CMS Medicare Plan Finder Q4 2025, MedicareAdvantage.com, medicare.org Virginia county data 2026"
   },
-
   "whatToLookFor": {
     "intro": {
       "en": "Picking a Medicare Advantage plan in Virginia is not just about premium. Here's what matters most in 2026:",
@@ -285,7 +327,6 @@
       }
     ]
   },
-
   "importantDates": {
     "intro": {
       "en": "Medicare has several enrollment windows each year. Missing a window can mean a gap in coverage or a late-enrollment penalty.",
@@ -364,7 +405,6 @@
       }
     ]
   },
-
   "stateExtras": {
     "intro": {
       "en": "Virginia has several market-specific features worth knowing when shopping Medicare Advantage in 2026:",
@@ -413,7 +453,6 @@
       }
     ]
   },
-
   "detailSections": [
     {
       "heading": {
@@ -422,11 +461,11 @@
       },
       "paragraphs": [
         {
-          "en": "Original Medicare (Parts A and B) gives you nationwide provider access and no prior authorization for most services. But it has no out-of-pocket maximum, no drug coverage (you need a separate Part D plan), and no dental or vision. Adding a Medigap supplement and standalone Part D in Virginia typically costs $150 to $350 per month in additional premiums beyond the standard Part B premium of $202.90/month.",
+          "en": "Original Medicare (Parts A and B) gives you nationwide provider access and no prior authorization for most services — see [Medigap vs Medicare Advantage](/en/qa/medigap-vs-medicare-advantage) if you're weighing the Original Medicare route. But it has no out-of-pocket maximum, no drug coverage (you need a separate Part D plan), and no dental or vision. Adding a Medigap supplement and standalone Part D in Virginia typically costs $150 to $350 per month in additional premiums beyond the standard Part B premium of $202.90/month.",
           "es": "Medicare Original (Partes A y B) le brinda acceso a proveedores en todo el pais y sin autorizacion previa para la mayoria de los servicios. Pero no tiene un maximo de gastos de bolsillo, no tiene cobertura de medicamentos (necesita un plan Part D separado) y no tiene cobertura dental ni de vision. Agregar un suplemento Medigap y Part D independiente en Virginia generalmente cuesta entre $150 y $350 adicionales por mes en primas, ademas de la prima estandar de la Parte B de $202.90/mes."
         },
         {
-          "en": "Medicare Advantage plans in Virginia bundle hospital, medical, and usually drug coverage into one plan, with a statewide average monthly premium of around $9 in 2026 (on top of Part B). The trade-off is a defined provider network, prior authorization for many services, and a geographic service area. If you split time between Virginia and another state, or need access to out-of-state specialists regularly, a PPO plan or Original Medicare plus Medigap is usually a better fit.",
+          "en": "Medicare Advantage plans in Virginia bundle hospital, medical, and usually drug coverage into one plan, with a statewide average monthly premium of around $9 in 2026 (on top of Part B). The trade-off is a defined provider network, prior authorization for many services, and a geographic service area. The plan also caps your annual [out-of-pocket maximum](/en/glossary/out-of-pocket-maximum), which Original Medicare does not. If you split time between Virginia and another state, or need access to out-of-state specialists regularly, a PPO plan or Original Medicare plus Medigap is usually a better fit.",
           "es": "Los planes Medicare Advantage en Virginia agrupan cobertura hospitalaria, medica y generalmente de medicamentos en un solo plan, con una prima mensual promedio en todo el estado de alrededor de $9 en 2026 (ademas de la Parte B). La contrapartida es una red de proveedores definida, autorizacion previa para muchos servicios y un area de servicio geografica. Si divide su tiempo entre Virginia y otro estado, o necesita acceso a especialistas fuera del estado con regularidad, un plan PPO o Medicare Original mas Medigap generalmente es una mejor opcion."
         },
         {
@@ -436,33 +475,89 @@
       ],
       "table": {
         "headers": {
-          "en": ["Feature", "Medicare Advantage (VA avg)", "Original Medicare + Medigap"],
-          "es": ["Caracteristica", "Medicare Advantage (prom. VA)", "Medicare Original + Medigap"]
+          "en": [
+            "Feature",
+            "Medicare Advantage (VA avg)",
+            "Original Medicare + Medigap"
+          ],
+          "es": [
+            "Caracteristica",
+            "Medicare Advantage (prom. VA)",
+            "Medicare Original + Medigap"
+          ]
         },
         "rows": [
           {
-            "en": ["Monthly premium (on top of Part B)", "~$9/mo", "~$150 to $350/mo (Medigap + Part D)"],
-            "es": ["Prima mensual (ademas de Parte B)", "~$9/mes", "~$150 a $350/mes (Medigap + Part D)"]
+            "en": [
+              "Monthly premium (on top of Part B)",
+              "~$9/mo",
+              "~$150 to $350/mo (Medigap + Part D)"
+            ],
+            "es": [
+              "Prima mensual (ademas de Parte B)",
+              "~$9/mes",
+              "~$150 a $350/mes (Medigap + Part D)"
+            ]
           },
           {
-            "en": ["Annual out-of-pocket maximum", "$4,500 to $9,250 (plan-set)", "None"],
-            "es": ["Maximo anual de gastos de bolsillo", "$4,500 a $9,250 (establecido por el plan)", "Ninguno"]
+            "en": [
+              "Annual out-of-pocket maximum",
+              "$4,500 to $9,250 (plan-set)",
+              "None"
+            ],
+            "es": [
+              "Maximo anual de gastos de bolsillo",
+              "$4,500 a $9,250 (establecido por el plan)",
+              "Ninguno"
+            ]
           },
           {
-            "en": ["Drug coverage", "Included in most plans (MA-PD)", "Separate Part D plan required"],
-            "es": ["Cobertura de medicamentos", "Incluida en la mayoria de planes (MA-PD)", "Se requiere plan Part D separado"]
+            "en": [
+              "Drug coverage",
+              "Included in most plans (MA-PD)",
+              "Separate Part D plan required"
+            ],
+            "es": [
+              "Cobertura de medicamentos",
+              "Incluida en la mayoria de planes (MA-PD)",
+              "Se requiere plan Part D separado"
+            ]
           },
           {
-            "en": ["Provider network", "In-network required (HMO) or preferred (PPO)", "Any provider that accepts Medicare"],
-            "es": ["Red de proveedores", "Dentro de la red requerida (HMO) o preferida (PPO)", "Cualquier proveedor que acepte Medicare"]
+            "en": [
+              "Provider network",
+              "In-network required (HMO) or preferred (PPO)",
+              "Any provider that accepts Medicare"
+            ],
+            "es": [
+              "Red de proveedores",
+              "Dentro de la red requerida (HMO) o preferida (PPO)",
+              "Cualquier proveedor que acepte Medicare"
+            ]
           },
           {
-            "en": ["Dental, vision, hearing", "Included (varies by plan)", "Not covered"],
-            "es": ["Dental, vision, audicion", "Incluido (varia por plan)", "No cubierto"]
+            "en": [
+              "Dental, vision, hearing",
+              "Included (varies by plan)",
+              "Not covered"
+            ],
+            "es": [
+              "Dental, vision, audicion",
+              "Incluido (varia por plan)",
+              "No cubierto"
+            ]
           },
           {
-            "en": ["Prior authorization", "Common for many services", "Rare"],
-            "es": ["Autorizacion previa", "Comun para muchos servicios", "Poco comun"]
+            "en": [
+              "Prior authorization",
+              "Common for many services",
+              "Rare"
+            ],
+            "es": [
+              "Autorizacion previa",
+              "Comun para muchos servicios",
+              "Poco comun"
+            ]
           }
         ],
         "footnote": {
@@ -479,11 +574,11 @@
       },
       "paragraphs": [
         {
-          "en": "CMS publishes Medicare Advantage Star Ratings each October, rating plans 1 to 5 stars across roughly 40 quality measures: management of chronic conditions like diabetes and cardiovascular disease, member complaints, customer service responsiveness, and Part D drug safety. Plans rated 4 stars or higher receive quality bonus payments from CMS, which carriers often reinvest in richer benefits, lower cost-sharing, and additional supplemental benefits.",
+          "en": "CMS publishes Medicare Advantage Star Ratings each October, rating plans 1 to 5 stars across roughly 40 quality measures: management of chronic conditions like diabetes and cardiovascular disease, member complaints, customer service responsiveness, and Part D drug safety. Higher-rated plans often include richer [dental](/en/qa/does-medicare-advantage-cover-dental) and vision benefits. Plans rated 4 stars or higher receive quality bonus payments from CMS, which carriers often reinvest in richer benefits, lower cost-sharing, and additional supplemental benefits.",
           "es": "CMS publica las Calificaciones de Estrellas de Medicare Advantage cada octubre, calificando los planes de 1 a 5 estrellas en aproximadamente 40 medidas de calidad: manejo de condiciones cronicas como diabetes y enfermedades cardiovasculares, quejas de miembros, capacidad de respuesta del servicio al cliente y seguridad de medicamentos Part D. Los planes calificados con 4 estrellas o mas reciben pagos de calidad de CMS, que las aseguradoras a menudo reinvierten en beneficios mas ricos, menor costo compartido y beneficios suplementarios adicionales."
         },
         {
-          "en": "Virginia's statewide weighted-average Star Rating for 2026 is approximately 3.8, near the national average. Kaiser Permanente Mid-Atlantic plans in Northern Virginia are the top-rated plans in the state (4.5 stars). Devoted Health and UnitedHealthcare both score around 4.0. Humana and Aetna Virginia plans are in the 3.5 range for 2026, reflecting national score declines for both carriers. A plan with 5 stars unlocks a special enrollment window that lets you switch into it any time between December 8 and November 30 the following year.",
+          "en": "Virginia's statewide weighted-average Star Rating for 2026 is approximately 3.8, near the national average. Kaiser Permanente Mid-Atlantic plans in Northern Virginia are the top-rated plans in the state (4.5 stars). Devoted Health and UnitedHealthcare both score around 4.0. Humana and Aetna Virginia plans are in the 3.5 range for 2026, reflecting national score declines for both carriers. A plan with 5 stars unlocks a [special enrollment window](/en/glossary/special-enrollment-period) that lets you switch into it any time between December 8 and November 30 the following year.",
           "es": "La calificacion promedio ponderada estatal de estrellas de Virginia para 2026 es de aproximadamente 3.8, cerca del promedio nacional. Los planes Kaiser Permanente del Atlantico Medio en el norte de Virginia son los planes mejor calificados del estado (4.5 estrellas). Devoted Health y UnitedHealthcare obtienen alrededor de 4.0. Los planes de Humana y Aetna en Virginia estan en el rango de 3.5 para 2026, reflejando las caidas de puntaje nacionales de ambas aseguradoras. Un plan con 5 estrellas desbloquea una ventana de inscripcion especial que le permite cambiarse a el en cualquier momento entre el 8 de diciembre y el 30 de noviembre del ano siguiente."
         }
       ]
@@ -495,7 +590,7 @@
       },
       "paragraphs": [
         {
-          "en": "To enroll in a Medicare Advantage plan in Virginia, you must be enrolled in Medicare Parts A and B. You can then enroll during your Initial Enrollment Period (around your 65th birthday), during the Annual Election Period (October 15 to December 7), or during a qualifying Special Enrollment Period. There are four ways to enroll:",
+          "en": "To enroll in a Medicare Advantage plan in Virginia, you must be enrolled in Medicare Parts A and B. You can then enroll during your Initial Enrollment Period (around your 65th birthday), during the Annual Election Period (October 15 to December 7), or during a qualifying [Special Enrollment Period](/en/glossary/special-enrollment-period). There are four ways to enroll:",
           "es": "Para inscribirse en un plan Medicare Advantage en Virginia, debe estar inscrito en Medicare Partes A y B. Luego puede inscribirse durante su Periodo de Inscripcion Inicial (alrededor de su 65 cumpleanos), durante el Periodo Anual de Eleccion (15 de octubre al 7 de diciembre) o durante un Periodo de Inscripcion Especial calificador. Hay cuatro formas de inscribirse:"
         },
         {
@@ -531,7 +626,6 @@
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -602,7 +696,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -633,7 +726,6 @@
       "href": "/medicare-advantage"
     }
   ],
-
   "sources": [
     {
       "name": "CMS Medicare Plan Finder (medicare.gov)",

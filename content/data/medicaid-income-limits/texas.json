@@ -47,7 +47,6 @@
       "Solicitud de Texas Medicaid 2026"
     ]
   },
-
   "meta": {
     "title": {
       "en": "Texas Medicaid Income Limits 2026 | CoveredUSA",
@@ -58,7 +57,6 @@
       "es": "Límites de ingresos de Texas Medicaid 2026 por tamaño de hogar para adultos, niños y embarazadas. Texas no expandió Medicaid — los adultos rara vez califican a menos que estén embarazadas, discapacitados o tengan 65+. Solicite en yourtexasbenefits.com."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Texas Medicaid Income Limits (2026)",
@@ -73,14 +71,13 @@
       "es": "Los límites de ingresos de Texas Medicaid en 2026 varían según la población porque Texas no expandió Medicaid. Los padres adultos con hijos dependientes califican solo si los ingresos están por debajo de aproximadamente el 17% del Nivel Federal de Pobreza (alrededor de $4,640 por año para una familia de tres). Las mujeres embarazadas califican hasta el 198% del FPL ($41,238 por año para un hogar de dos en 2026). Los niños califican hasta el 138% del FPL — aproximadamente $35,167 por año para una familia de tres. Los adultos sin hijos dependientes generalmente no califican sin importar los ingresos a menos que estén embarazadas, discapacitadas, o tengan 65+. Texas Medicaid es administrado por la Comisión de Salud y Servicios Humanos de Texas (HHSC); las solicitudes se envían en yourtexasbenefits.com o llamando al 2-1-1."
     }
   },
-
   "introParagraphs": [
     {
       "en": "Texas Medicaid is the largest non-expansion Medicaid program in the United States. Because Texas did not expand Medicaid under the Affordable Care Act, adult eligibility income limits are tied to pre-ACA TANF-related thresholds rather than the 138% FPL standard used in expansion states. The result is the well-known Texas Medicaid coverage gap: adults earning too much for legacy Medicaid (above ~17% FPL for parents) but too little for ACA marketplace subsidies (below 100% FPL) often have no affordable coverage option. The 2026 Federal Poverty Level — $15,960 for a single person in the 48 contiguous states, $33,000 for a family of four — is the anchor for every threshold below.",
       "es": "Texas Medicaid es el programa de Medicaid sin expansión más grande de los Estados Unidos. Debido a que Texas no expandió Medicaid bajo la Ley de Cuidado de Salud Asequible, los límites de ingresos de elegibilidad para adultos están vinculados a los umbrales relacionados con TANF previos al ACA en lugar del estándar del 138% del FPL utilizado en los estados de expansión. El resultado es la conocida brecha de cobertura de Texas Medicaid: los adultos que ganan demasiado para el Medicaid heredado (por encima de ~17% del FPL para los padres) pero muy poco para los subsidios del mercado del ACA (por debajo del 100% del FPL) a menudo no tienen una opción de cobertura asequible. El Nivel Federal de Pobreza 2026 — $15,960 para una persona soltera en los 48 estados contiguos, $33,000 para una familia de cuatro — es el ancla para cada umbral a continuación."
     },
     {
-      "en": "Eligibility in Texas Medicaid splits into four main population groups: adult parents and caretakers (the strict 17% FPL group), pregnant women (a much more generous 198% FPL group, with CHIP-Perinatal coverage extending up to 202% FPL for the unborn child even when the mother is undocumented), children under 19 (138% FPL Medicaid, then CHIP up to 201% FPL), and aged/blind/disabled adults (income and asset tests under SSI rules). Each group has its own application path, but most go through the same intake portal at yourtexasbenefits.com or the statewide 2-1-1 call line.",
+      "en": "Eligibility in Texas Medicaid splits into four main population groups: adult parents and caretakers (the strict 17% FPL group — see [state Medicaid expansion status](/en/qa/state-medicaid-expansion-status) for how TX compares to expansion states), pregnant women (a much more generous 198% FPL group, with CHIP-Perinatal coverage extending up to 202% FPL for the unborn child even when the mother is undocumented), children under 19 (138% FPL Medicaid, then CHIP up to 201% FPL), and aged/blind/disabled adults — those who [qualify for both Medicaid and Medicare](/en/qa/can-i-have-both-medicare-and-medicaid) can access dual-eligible plans (income and asset tests under SSI rules). Each group has its own application path — if you [have a job and wonder whether you still qualify](/en/qa/can-i-get-medicaid-with-job), Texas counts earned income differently for each group, but most go through the same intake portal at yourtexasbenefits.com or the statewide 2-1-1 call line.",
       "es": "La elegibilidad en Texas Medicaid se divide en cuatro grupos principales de población: padres y cuidadores adultos (el grupo estricto del 17% del FPL), mujeres embarazadas (un grupo mucho más generoso del 198% del FPL, con cobertura CHIP-Perinatal que se extiende hasta el 202% del FPL para el bebé por nacer incluso cuando la madre es indocumentada), niños menores de 19 años (138% FPL Medicaid, luego CHIP hasta el 201% FPL), y adultos mayores/ciegos/discapacitados (pruebas de ingresos y bienes según las reglas de SSI). Cada grupo tiene su propia ruta de solicitud, pero la mayoría pasa por el mismo portal de admisión en yourtexasbenefits.com o la línea de llamadas estatal 2-1-1."
     },
     {
@@ -88,7 +85,6 @@
       "es": "La tabla de tamaño de hogar a continuación muestra los límites de ingresos de Texas Medicaid 2026 en las tres poblaciones cubiertas. Si los ingresos de su hogar superan el límite relevante de Texas Medicaid pero están por debajo del 400% del FPL, casi con certeza califica para subsidios del mercado del ACA a través de Healthcare.gov. Si tiene un hijo cuyos ingresos familiares superan el límite de Medicaid para niños, consulte el programa CHIP de Texas (hasta el 201% del FPL). Si tiene 65 años o más con ingresos y activos limitados, consulte la sección Programas de Ahorro de Medicare a continuación."
     }
   ],
-
   "householdSizeTable": {
     "year": 2026,
     "caption": {
@@ -103,7 +99,10 @@
     "rows": [
       {
         "size": 1,
-        "label": { "en": "1 person", "es": "1 persona" },
+        "label": {
+          "en": "1 person",
+          "es": "1 persona"
+        },
         "annualIncomeAdult": 0,
         "annualIncomeChild": 22025,
         "annualIncomePregnant": 31601,
@@ -116,7 +115,10 @@
       },
       {
         "size": 2,
-        "label": { "en": "2 people", "es": "2 personas" },
+        "label": {
+          "en": "2 people",
+          "es": "2 personas"
+        },
         "annualIncomeAdult": 3678,
         "annualIncomeChild": 29863,
         "annualIncomePregnant": 42847,
@@ -129,7 +131,10 @@
       },
       {
         "size": 3,
-        "label": { "en": "3 people", "es": "3 personas" },
+        "label": {
+          "en": "3 people",
+          "es": "3 personas"
+        },
         "annualIncomeAdult": 4644,
         "annualIncomeChild": 37702,
         "annualIncomePregnant": 54094,
@@ -142,7 +147,10 @@
       },
       {
         "size": 4,
-        "label": { "en": "4 people", "es": "4 personas" },
+        "label": {
+          "en": "4 people",
+          "es": "4 personas"
+        },
         "annualIncomeAdult": 5610,
         "annualIncomeChild": 45540,
         "annualIncomePregnant": 65340,
@@ -155,7 +163,10 @@
       },
       {
         "size": 5,
-        "label": { "en": "5 people", "es": "5 personas" },
+        "label": {
+          "en": "5 people",
+          "es": "5 personas"
+        },
         "annualIncomeAdult": 6576,
         "annualIncomeChild": 53378,
         "annualIncomePregnant": 76586,
@@ -168,7 +179,10 @@
       },
       {
         "size": 6,
-        "label": { "en": "6 people", "es": "6 personas" },
+        "label": {
+          "en": "6 people",
+          "es": "6 personas"
+        },
         "annualIncomeAdult": 7541,
         "annualIncomeChild": 61217,
         "annualIncomePregnant": 87833,
@@ -181,7 +195,10 @@
       },
       {
         "size": 7,
-        "label": { "en": "7 people", "es": "7 personas" },
+        "label": {
+          "en": "7 people",
+          "es": "7 personas"
+        },
         "annualIncomeAdult": 8507,
         "annualIncomeChild": 69055,
         "annualIncomePregnant": 99079,
@@ -194,7 +211,10 @@
       },
       {
         "size": 8,
-        "label": { "en": "8 people", "es": "8 personas" },
+        "label": {
+          "en": "8 people",
+          "es": "8 personas"
+        },
         "annualIncomeAdult": 9472,
         "annualIncomeChild": 76894,
         "annualIncomePregnant": 110326,
@@ -223,7 +243,6 @@
       }
     ]
   },
-
   "eligibilityRequirements": {
     "intro": {
       "en": "Beyond income, Texas Medicaid applicants must meet the following non-income requirements. Each population group (adults, children, pregnant women, aged/blind/disabled) has its own version of these rules; the items below apply across the board.",
@@ -256,7 +275,6 @@
       }
     ]
   },
-
   "incomeSources": {
     "intro": {
       "en": "Texas Medicaid uses Modified Adjusted Gross Income (MAGI) rules for parents, children, and pregnant women, anchored to the household's projected annual income on the federal tax return. Aged/blind/disabled populations use SSI countable-income rules instead. The lists below cover the MAGI categories that handle the vast majority of Texas Medicaid applications.",
@@ -328,7 +346,6 @@
     ],
     "source": "Texas HHSC MAGI Income Manual + IRS Modified AGI definition (26 U.S.C. §36B(d)(2)(B))"
   },
-
   "applicationProcess": {
     "intro": {
       "en": "Texas Medicaid applications go through Your Texas Benefits, the statewide intake portal run by the Texas Health and Human Services Commission (HHSC). The same application captures Medicaid, CHIP, SNAP, TANF, and women's-health programs. You can apply online, by mail, by phone (2-1-1), or in person at any HHSC benefits office.",
@@ -427,7 +444,6 @@
       }
     ]
   },
-
   "chipCrossReference": {
     "heading": {
       "en": "If your child's family income is over the Texas Medicaid limit",
@@ -443,7 +459,6 @@
       "es": "Compare los límites de ingresos de CHIP y Medicaid en los 50 estados"
     }
   },
-
   "medicareSavingsProgramsCrossReference": {
     "heading": {
       "en": "If you are 65 or older with limited income — Medicare Savings Programs",
@@ -459,7 +474,6 @@
       "es": "Lea la guía de elegibilidad de Medicare"
     }
   },
-
   "faqs": {
     "en": [
       {
@@ -530,7 +544,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -568,7 +581,6 @@
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "Texas Health and Human Services Commission — Medicaid",

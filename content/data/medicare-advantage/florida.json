@@ -13,12 +13,28 @@
   "topicCluster": "medicare-advantage-state",
   "isLighthouse": false,
   "isDeprecated": false,
-
   "keyTerms": {
-    "en": ["Medicare Advantage Florida", "Florida MA plans 2026", "Florida Medicare enrollment", "Humana Florida Medicare", "Florida Blue Medicare", "SHINE Florida", "Medicare HMO PPO Florida", "Florida Medicare SNP", "dual eligible Florida Medicare"],
-    "es": ["Medicare Advantage Florida", "planes MA Florida 2026", "inscripcion Medicare Florida", "Humana Florida Medicare", "Florida Blue Medicare", "SHINE Florida", "Medicare HMO PPO Florida"]
+    "en": [
+      "Medicare Advantage Florida",
+      "Florida MA plans 2026",
+      "Florida Medicare enrollment",
+      "Humana Florida Medicare",
+      "Florida Blue Medicare",
+      "SHINE Florida",
+      "Medicare HMO PPO Florida",
+      "Florida Medicare SNP",
+      "dual eligible Florida Medicare"
+    ],
+    "es": [
+      "Medicare Advantage Florida",
+      "planes MA Florida 2026",
+      "inscripcion Medicare Florida",
+      "Humana Florida Medicare",
+      "Florida Blue Medicare",
+      "SHINE Florida",
+      "Medicare HMO PPO Florida"
+    ]
   },
-
   "meta": {
     "title": {
       "en": "Medicare Advantage Plans in Florida 2026 | CoveredUSA",
@@ -29,7 +45,6 @@
       "es": "611 planes Medicare Advantage en Florida 2026. Prima ~$2/mes. Aseguradoras: Humana, UnitedHealthcare, Aetna, Florida Blue. AEP 15 oct a 7 dic 2026."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Medicare Advantage Plans in Florida (2026)",
@@ -40,12 +55,10 @@
       "es": "Florida tiene 611 planes Medicare Advantage disponibles en 2026, con aproximadamente 3.1 millones de beneficiarios inscritos (alrededor del 60% de penetración MA, una de las más altas del pais). Prima promedio: $2/mes. Calificación promedio estatal: 4.0 estrellas."
     }
   },
-
   "quickAnswer": {
     "en": "Florida has 611 Medicare Advantage plans in 2026, covering about 3.1 million of the state's 5.2 million Medicare beneficiaries, a penetration rate of roughly 60%, which ranks Florida among the top states nationally. The statewide average monthly premium is approximately $2, with the majority of HMO plans available at $0 monthly cost. Humana is the largest carrier by plan count, followed by UnitedHealthcare, Aetna, Florida Blue, and Devoted Health. The Annual Election Period runs October 15 to December 7, 2026, for coverage starting January 1, 2027. Florida residents can get free plan counseling through the SHINE program at floridashine.org or 1-800-963-5337.",
     "es": "Florida tiene 611 planes Medicare Advantage en 2026, cubriendo aproximadamente 3.1 millones de los 5.2 millones de beneficiarios de Medicare del estado, una tasa de penetracion de aproximadamente 60%, que coloca a Florida entre los principales estados a nivel nacional. La prima mensual promedio estatal es de aproximadamente $2, con la mayoria de los planes HMO disponibles a $0 de costo mensual. Humana es la aseguradora mas grande por numero de planes, seguida por UnitedHealthcare, Aetna, Florida Blue y Devoted Health. El Periodo Anual de Eleccion es del 15 de octubre al 7 de diciembre de 2026, para cobertura que comienza el 1 de enero de 2027. Los residentes de Florida pueden obtener asesoria gratuita sobre planes a traves del programa SHINE en floridashine.org o llamando al 1-800-963-5337."
   },
-
   "introParagraphs": [
     {
       "en": "Florida is the largest Medicare Advantage market in the country by penetration rate and one of the most competitive by total plan offerings. About 3.1 million Floridians were enrolled in a Medicare Advantage plan in 2026, out of 5.2 million total Medicare beneficiaries, for a penetration rate of roughly 60%. That is well above the national average of approximately 54%, reflecting Florida's large retiree population concentrated in South Florida, Tampa Bay, the Space Coast, and the Gulf Coast. More than 611 plans are available statewide, giving most beneficiaries dozens of choices in competitive metro counties.",
@@ -60,7 +73,6 @@
       "es": "Los residentes de Florida que buscan Medicare Advantage en 2026 encontrarán que esta guía cubre cuántos planes están disponibles, qué aseguradoras lideran, qué buscar al comprar, las fechas clave de inscripción y qué protecciones relacionadas con huracanes existen para los beneficiarios de Florida. Los residentes de Florida que desean ayuda personalizada e imparcial para comparar planes pueden contactar el programa SHINE (Serving Health Insurance Needs of Elders) en floridashine.org o llamando al 1-800-963-5337. Los consejeros de SHINE son voluntarios financiados por el estado que no venden seguros."
     }
   ],
-
   "marketOverview": {
     "dataYear": 2026,
     "totalPlansAvailable": 611,
@@ -152,32 +164,91 @@
     ],
     "source": "Florida Medicare Advantage data: CMS 2026 MA Part D Landscape State Fact Sheet (cms.gov), KFF Medicare Advantage 2026 Spotlight, Healthline Florida Medicare 2026, NerdWallet Florida Medicare Advantage 2026 review"
   },
-
   "planTypes": {
     "headers": {
-      "en": ["Plan Type", "Plans Available", "Avg Premium", "Best For"],
-      "es": ["Tipo de plan", "Planes disponibles", "Prima promedio", "Mejor para"]
+      "en": [
+        "Plan Type",
+        "Plans Available",
+        "Avg Premium",
+        "Best For"
+      ],
+      "es": [
+        "Tipo de plan",
+        "Planes disponibles",
+        "Prima promedio",
+        "Mejor para"
+      ]
     },
     "rows": [
       {
-        "en": ["HMO", "320", "$0/mo", "Lower premiums, willing to use in-network providers"],
-        "es": ["HMO", "320", "$0/mes", "Primas mas bajas, dispuesto a usar proveedores de la red"]
+        "en": [
+          "HMO",
+          "320",
+          "$0/mo",
+          "Lower premiums, willing to use in-network providers"
+        ],
+        "es": [
+          "HMO",
+          "320",
+          "$0/mes",
+          "Primas mas bajas, dispuesto a usar proveedores de la red"
+        ]
       },
       {
-        "en": ["HMO-POS", "85", "$2/mo", "In-network HMO with some out-of-network flexibility at a higher cost share"],
-        "es": ["HMO-POS", "85", "$2/mes", "HMO dentro de la red con algo de flexibilidad fuera de la red a mayor costo compartido"]
+        "en": [
+          "HMO-POS",
+          "85",
+          "$2/mo",
+          "In-network HMO with some out-of-network flexibility at a higher cost share"
+        ],
+        "es": [
+          "HMO-POS",
+          "85",
+          "$2/mes",
+          "HMO dentro de la red con algo de flexibilidad fuera de la red a mayor costo compartido"
+        ]
       },
       {
-        "en": ["PPO", "120", "$18/mo", "Flexibility to see out-of-network providers without a referral"],
-        "es": ["PPO", "120", "$18/mes", "Flexibilidad para ver proveedores fuera de la red sin necesidad de referencia"]
+        "en": [
+          "PPO",
+          "120",
+          "$18/mo",
+          "Flexibility to see out-of-network providers without a referral"
+        ],
+        "es": [
+          "PPO",
+          "120",
+          "$18/mes",
+          "Flexibilidad para ver proveedores fuera de la red sin necesidad de referencia"
+        ]
       },
       {
-        "en": ["Special Needs Plan (SNP)", "80", "$0/mo", "Dual-eligible (Medicare + Medicaid), chronic conditions, or institutional care needs"],
-        "es": ["Plan de Necesidades Especiales (SNP)", "80", "$0/mes", "Doble elegible (Medicare + Medicaid), condiciones cronicas o necesidades de atencion institucional"]
+        "en": [
+          "Special Needs Plan (SNP)",
+          "80",
+          "$0/mo",
+          "Dual-eligible (Medicare + Medicaid), chronic conditions, or institutional care needs"
+        ],
+        "es": [
+          "Plan de Necesidades Especiales (SNP)",
+          "80",
+          "$0/mes",
+          "Doble elegible (Medicare + Medicaid), condiciones cronicas o necesidades de atencion institucional"
+        ]
       },
       {
-        "en": ["Regional PPO", "6", "$62/mo", "Multi-county PPO; broader geographic footprint but higher premiums"],
-        "es": ["PPO Regional", "6", "$62/mes", "PPO de multiples condados; mayor cobertura geografica pero primas mas altas"]
+        "en": [
+          "Regional PPO",
+          "6",
+          "$62/mo",
+          "Multi-county PPO; broader geographic footprint but higher premiums"
+        ],
+        "es": [
+          "PPO Regional",
+          "6",
+          "$62/mes",
+          "PPO de multiples condados; mayor cobertura geografica pero primas mas altas"
+        ]
       }
     ],
     "footnote": {
@@ -186,7 +257,6 @@
     },
     "source": "Florida Medicare Advantage plan type data: CMS 2026 MA Part D Landscape State Fact Sheet, MoneyGeek Florida Medicare Advantage 2026 analysis"
   },
-
   "countyVariance": {
     "intro": {
       "en": "Florida county-level plan availability swings widely. Miami-Dade and Broward lead the state with the most plans and the most carrier competition. Rural Panhandle counties can have a fraction of those options. Premiums and MOOP limits also vary: urban South Florida markets drive aggressive $0 premium competition, while rural counties have fewer carriers and occasionally higher premiums.",
@@ -272,7 +342,6 @@
     },
     "source": "Florida county-level plan data: CMS Medicare Plan Finder Q4 2025, MedicareAdvantage.com Florida 2026 county listings, Medicare.org Florida by county"
   },
-
   "whatToLookFor": {
     "intro": {
       "en": "Florida's MA market offers strong competition and low premiums, but plan quality and network depth vary significantly. Here is what to check before enrolling for 2026:",
@@ -305,7 +374,6 @@
       }
     ]
   },
-
   "importantDates": {
     "intro": {
       "en": "Florida Medicare Advantage enrollment follows federal windows, but the state's hurricane exposure adds a state-specific dynamic: disaster declarations can open enrollment outside the standard periods. Know the standard dates and the disaster SEP rule.",
@@ -370,7 +438,6 @@
       }
     ]
   },
-
   "stateExtras": {
     "intro": {
       "en": "Florida Medicare Advantage plans include several state-specific features that distinguish the Florida market from most other states:",
@@ -419,7 +486,6 @@
       }
     ]
   },
-
   "detailSections": [
     {
       "heading": {
@@ -428,11 +494,11 @@
       },
       "paragraphs": [
         {
-          "en": "Florida Medicare beneficiaries consistently choose Medicare Advantage over Original Medicare at one of the highest rates in the country, with roughly 60% enrolled in an MA plan. The financial math explains much of it: Original Medicare (Parts A and B) plus a Medigap supplement and a standalone Part D drug plan typically costs $200 to $350 per month in Florida, versus the average MA plan at around $2 per month and many HMOs at $0. Florida's 2026 standard Part B premium is $202.90 per month regardless of whether you choose MA or Original Medicare, but the Medigap layer adds substantial cost for those staying in Original Medicare.",
+          "en": "Florida Medicare beneficiaries consistently choose Medicare Advantage over Original Medicare at one of the highest rates in the country, with roughly 60% enrolled in an MA plan. The financial math explains much of it: Original Medicare (Parts A and B) plus a [Medigap supplement](/en/qa/medigap-vs-medicare-advantage) and a standalone Part D drug plan typically costs $200 to $350 per month in Florida, versus the average MA plan at around $2 per month and many HMOs at $0. Florida's 2026 standard Part B premium is $202.90 per month regardless of whether you choose MA or Original Medicare, but the Medigap layer adds substantial cost for those staying in Original Medicare.",
           "es": "Los beneficiarios de Medicare de Florida eligen consistentemente Medicare Advantage sobre Medicare Original a una de las tasas mas altas del pais, con aproximadamente el 60% inscrito en un plan MA. Las matematicas financieras explican gran parte: Medicare Original (Partes A y B) mas un suplemento Medigap y un plan independiente Part D de medicamentos tipicamente cuesta $200 a $350 por mes en Florida, versus el plan MA promedio a alrededor de $2 por mes y muchos HMOs a $0. La prima estandar Part B de Florida 2026 es $202.90 por mes independientemente de si elige MA o Medicare Original, pero la capa de Medigap agrega un costo sustancial para quienes permanecen en Medicare Original."
         },
         {
-          "en": "Florida retirees who travel or maintain homes in multiple states often weigh this decision differently. Original Medicare plus a Medigap supplement covers providers nationwide with no network restrictions and no prior authorization requirements for covered services. Medicare Advantage HMO plans, which dominate Florida, restrict you to a county-based service area network. If you visit family in Ohio for three months each year, or you spend summers at a lake house in the Carolinas, an MA PPO plan with national coverage or Original Medicare may serve you better than an HMO, even if the premium is higher. That snowbird calculus is worth running before enrolling.",
+          "en": "Florida retirees who travel or maintain homes in multiple states often weigh this decision differently. [Original Medicare plus a Medigap supplement](/en/glossary/medicare-advantage-vs-original-plus-medigap) covers providers nationwide with no network restrictions and no prior authorization requirements for covered services. Medicare Advantage HMO plans, which dominate Florida, restrict you to a county-based service area network. If you visit family in Ohio for three months each year, or you spend summers at a lake house in the Carolinas, an MA PPO plan with national coverage or Original Medicare may serve you better than an HMO, even if the premium is higher. That snowbird calculus is worth running before enrolling.",
           "es": "Los jubilados de Florida que viajan o mantienen hogares en varios estados a menudo consideran esta decision de manera diferente. Medicare Original mas un suplemento Medigap cubre proveedores en todo el pais sin restricciones de red y sin requisitos de autorizacion previa para servicios cubiertos. Los planes HMO de Medicare Advantage, que dominan Florida, lo restringen a una red de area de servicio basada en el condado. Si visita a familiares en Ohio durante tres meses cada ano, o pasa los veranos en una casa de campo en las Carolinas, un plan MA PPO con cobertura nacional o Medicare Original puede servirle mejor que un HMO, incluso si la prima es mas alta. Vale la pena calcular eso antes de inscribirse."
         },
         {
@@ -452,7 +518,7 @@
           "es": "CMS publica las Calificaciones de Estrellas de Medicare Advantage cada octubre, evaluando los planes en aproximadamente 40 medidas de calidad. Estas medidas caen en varias categorias: que tan bien los planes manejan condiciones cronicas como diabetes, enfermedades cardiacas y osteoporosis; velocidad de resolucion de quejas y apelaciones de los miembros; disponibilidad de servicio al cliente; y metricas de seguridad de medicamentos Part D como evitar medicamentos de alto riesgo en adultos mayores. Los planes que obtienen 4 estrellas o mas reciben pagos de bonos de calidad de CMS. Esos dolares de bonos son lo que financia los beneficios mas ricos de dental, vision, audicion y fitness comunes en el mercado competitivo de Florida."
         },
         {
-          "en": "Florida's 2026 Star Rating landscape is strong by national standards. Devoted Health holds a 5-star rating, the highest attainable, which activates a year-round Special Enrollment Period: any Medicare beneficiary can switch into a 5-star plan at any point during the year. Humana and UnitedHealthcare both carry 4.5-star ratings across their Florida books. Florida Blue's HMO plan holds 4.0 stars; its PPO plans rate 3.5 stars. WellCare comes in at 3.5 stars. The statewide weighted average is approximately 4.0 stars, above the national average of roughly 3.8. When comparing plans in Florida, focus on plans rated 4.0 or higher; plans below 3.5 may face funding pressure that leads to benefit reductions in future years.",
+          "en": "Florida's 2026 Star Rating landscape is strong by national standards. Devoted Health holds a 5-star rating, the highest attainable, which activates a year-round [Special Enrollment Period](/en/glossary/special-enrollment-period): any Medicare beneficiary can switch into a 5-star plan at any point during the year. Humana and UnitedHealthcare both carry 4.5-star ratings across their Florida books. Florida Blue's HMO plan holds 4.0 stars; its PPO plans rate 3.5 stars. WellCare comes in at 3.5 stars. The statewide weighted average is approximately 4.0 stars, above the national average of roughly 3.8. When comparing plans in Florida, focus on plans rated 4.0 or higher; plans below 3.5 may face funding pressure that leads to benefit reductions in future years.",
           "es": "El panorama de Calificaciones de Estrellas 2026 de Florida es solido segun los estandares nacionales. Devoted Health tiene una calificacion de 5 estrellas, la mas alta alcanzable, que activa un Periodo de Inscripcion Especial durante todo el ano: cualquier beneficiario de Medicare puede cambiarse a un plan de 5 estrellas en cualquier momento durante el ano. Humana y UnitedHealthcare tienen calificaciones de 4.5 estrellas en sus carteras de Florida. El plan HMO de Florida Blue tiene 4.0 estrellas; sus planes PPO tienen 3.5 estrellas. WellCare llega a 3.5 estrellas. El promedio ponderado estatal es de aproximadamente 4.0 estrellas, por encima del promedio nacional de aproximadamente 3.8. Al comparar planes en Florida, enfoquese en planes calificados con 4.0 o mas; los planes por debajo de 3.5 pueden enfrentar presion de financiamiento que lleva a reducciones de beneficios en anos futuros."
         }
       ]
@@ -464,7 +530,7 @@
       },
       "paragraphs": [
         {
-          "en": "Florida residents enrolling in Medicare Advantage for the first time follow a five-step process. The Florida SHINE program (floridashine.org) provides free assistance at any step, including in-person sessions at Area Agencies on Aging across all 67 counties.",
+          "en": "Florida residents enrolling in Medicare Advantage for the first time follow a five-step process. Confirm your doctors are [in the plan's network](/en/qa/can-i-keep-my-doctor-medicare-advantage) before you finalize a choice. The Florida SHINE program (floridashine.org) provides free assistance at any step, including in-person sessions at Area Agencies on Aging across all 67 counties.",
           "es": "Los residentes de Florida que se inscriben en Medicare Advantage por primera vez siguen un proceso de cinco pasos. El programa SHINE de Florida (floridashine.org) proporciona asistencia gratuita en cualquier paso, incluyendo sesiones en persona en las Agencias de Area en el Envejecimiento en los 67 condados."
         }
       ],
@@ -492,29 +558,65 @@
       ],
       "table": {
         "headers": {
-          "en": ["Common reason application may be delayed or denied", "What to do"],
-          "es": ["Razon comun por la que la solicitud puede retrasarse o denegarse", "Que hacer"]
+          "en": [
+            "Common reason application may be delayed or denied",
+            "What to do"
+          ],
+          "es": [
+            "Razon comun por la que la solicitud puede retrasarse o denegarse",
+            "Que hacer"
+          ]
         },
         "rows": [
           {
-            "en": ["Not yet enrolled in Medicare Part A and/or Part B", "Enroll at ssa.gov or your local Social Security office first"],
-            "es": ["Aun no inscrito en Medicare Parte A y/o Parte B", "Inscribase primero en ssa.gov o su oficina local del Seguro Social"]
+            "en": [
+              "Not yet enrolled in Medicare Part A and/or Part B",
+              "Enroll at ssa.gov or your local Social Security office first"
+            ],
+            "es": [
+              "Aun no inscrito en Medicare Parte A y/o Parte B",
+              "Inscribase primero en ssa.gov o su oficina local del Seguro Social"
+            ]
           },
           {
-            "en": ["Applying outside an eligible enrollment window (not AEP, IEP, or SEP)", "Wait for AEP (Oct 15 to Dec 7) or contact SHINE to check if an SEP applies"],
-            "es": ["Solicitando fuera de una ventana de inscripcion elegible (no AEP, IEP o SEP)", "Espere el AEP (15 oct al 7 dic) o contacte a SHINE para verificar si aplica un SEP"]
+            "en": [
+              "Applying outside an eligible enrollment window (not AEP, IEP, or SEP)",
+              "Wait for AEP (Oct 15 to Dec 7) or contact SHINE to check if an SEP applies"
+            ],
+            "es": [
+              "Solicitando fuera de una ventana de inscripcion elegible (no AEP, IEP o SEP)",
+              "Espere el AEP (15 oct al 7 dic) o contacte a SHINE para verificar si aplica un SEP"
+            ]
           },
           {
-            "en": ["Plan not available in your Florida county (service area mismatch)", "Re-search using your exact ZIP code at medicare.gov/plan-compare"],
-            "es": ["Plan no disponible en su condado de Florida (desajuste de area de servicio)", "Vuelva a buscar usando su codigo postal exacto en medicare.gov/plan-compare"]
+            "en": [
+              "Plan not available in your Florida county (service area mismatch)",
+              "Re-search using your exact ZIP code at medicare.gov/plan-compare"
+            ],
+            "es": [
+              "Plan no disponible en su condado de Florida (desajuste de area de servicio)",
+              "Vuelva a buscar usando su codigo postal exacto en medicare.gov/plan-compare"
+            ]
           },
           {
-            "en": ["End-stage renal disease (ESRD) enrollment restriction (pre-2021 plans)", "ESRD restriction was removed January 2021 under the CHRONIC Care Act; you may now enroll"],
-            "es": ["Restriccion de inscripcion por enfermedad renal en etapa terminal (planes anteriores a 2021)", "La restriccion de ESRD se elimino en enero de 2021 bajo la Ley CHRONIC Care; ahora puede inscribirse"]
+            "en": [
+              "End-stage renal disease (ESRD) enrollment restriction (pre-2021 plans)",
+              "ESRD restriction was removed January 2021 under the CHRONIC Care Act; you may now enroll"
+            ],
+            "es": [
+              "Restriccion de inscripcion por enfermedad renal en etapa terminal (planes anteriores a 2021)",
+              "La restriccion de ESRD se elimino en enero de 2021 bajo la Ley CHRONIC Care; ahora puede inscribirse"
+            ]
           },
           {
-            "en": ["Currently enrolled in a Medicaid managed care plan with a conflict", "Contact your local Medicaid office and ask about D-SNP coordination options"],
-            "es": ["Actualmente inscrito en un plan de atencion administrada de Medicaid con un conflicto", "Contacte su oficina local de Medicaid y pregunte sobre opciones de coordinacion D-SNP"]
+            "en": [
+              "Currently enrolled in a Medicaid managed care plan with a conflict",
+              "Contact your local Medicaid office and ask about D-SNP coordination options"
+            ],
+            "es": [
+              "Actualmente inscrito en un plan de atencion administrada de Medicaid con un conflicto",
+              "Contacte su oficina local de Medicaid y pregunte sobre opciones de coordinacion D-SNP"
+            ]
           }
         ],
         "footnote": {
@@ -537,33 +639,103 @@
       ],
       "table": {
         "headers": {
-          "en": ["Carrier", "Plan Type", "Star Rating", "Counties Available (sample)"],
-          "es": ["Aseguradora", "Tipo de plan", "Calificacion de Estrellas", "Condados disponibles (muestra)"]
+          "en": [
+            "Carrier",
+            "Plan Type",
+            "Star Rating",
+            "Counties Available (sample)"
+          ],
+          "es": [
+            "Aseguradora",
+            "Tipo de plan",
+            "Calificacion de Estrellas",
+            "Condados disponibles (muestra)"
+          ]
         },
         "rows": [
           {
-            "en": ["Devoted Health", "HMO", "5.0", "Miami-Dade, Broward, Palm Beach, Hillsborough, Orange"],
-            "es": ["Devoted Health", "HMO", "5.0", "Miami-Dade, Broward, Palm Beach, Hillsborough, Orange"]
+            "en": [
+              "Devoted Health",
+              "HMO",
+              "5.0",
+              "Miami-Dade, Broward, Palm Beach, Hillsborough, Orange"
+            ],
+            "es": [
+              "Devoted Health",
+              "HMO",
+              "5.0",
+              "Miami-Dade, Broward, Palm Beach, Hillsborough, Orange"
+            ]
           },
           {
-            "en": ["Humana", "HMO", "4.5", "Statewide (67 counties, $0 plans available in most)"],
-            "es": ["Humana", "HMO", "4.5", "Todo el estado (67 condados, planes de $0 disponibles en la mayoria)"]
+            "en": [
+              "Humana",
+              "HMO",
+              "4.5",
+              "Statewide (67 counties, $0 plans available in most)"
+            ],
+            "es": [
+              "Humana",
+              "HMO",
+              "4.5",
+              "Todo el estado (67 condados, planes de $0 disponibles en la mayoria)"
+            ]
           },
           {
-            "en": ["UnitedHealthcare", "HMO-POS", "4.5", "Miami-Dade, Broward, Hillsborough, Pinellas, Orange, Duval"],
-            "es": ["UnitedHealthcare", "HMO-POS", "4.5", "Miami-Dade, Broward, Hillsborough, Pinellas, Orange, Duval"]
+            "en": [
+              "UnitedHealthcare",
+              "HMO-POS",
+              "4.5",
+              "Miami-Dade, Broward, Hillsborough, Pinellas, Orange, Duval"
+            ],
+            "es": [
+              "UnitedHealthcare",
+              "HMO-POS",
+              "4.5",
+              "Miami-Dade, Broward, Hillsborough, Pinellas, Orange, Duval"
+            ]
           },
           {
-            "en": ["CarePlus Health Plans", "HMO", "4.5", "Miami-Dade, Broward, Palm Beach"],
-            "es": ["CarePlus Health Plans", "HMO", "4.5", "Miami-Dade, Broward, Palm Beach"]
+            "en": [
+              "CarePlus Health Plans",
+              "HMO",
+              "4.5",
+              "Miami-Dade, Broward, Palm Beach"
+            ],
+            "es": [
+              "CarePlus Health Plans",
+              "HMO",
+              "4.5",
+              "Miami-Dade, Broward, Palm Beach"
+            ]
           },
           {
-            "en": ["WellCare", "HMO", "3.5", "Statewide (most Florida counties)"],
-            "es": ["WellCare", "HMO", "3.5", "Todo el estado (la mayoria de los condados de Florida)"]
+            "en": [
+              "WellCare",
+              "HMO",
+              "3.5",
+              "Statewide (most Florida counties)"
+            ],
+            "es": [
+              "WellCare",
+              "HMO",
+              "3.5",
+              "Todo el estado (la mayoria de los condados de Florida)"
+            ]
           },
           {
-            "en": ["Florida Blue", "HMO", "4.0", "Statewide in select counties"],
-            "es": ["Florida Blue", "HMO", "4.0", "Todo el estado en condados seleccionados"]
+            "en": [
+              "Florida Blue",
+              "HMO",
+              "4.0",
+              "Statewide in select counties"
+            ],
+            "es": [
+              "Florida Blue",
+              "HMO",
+              "4.0",
+              "Todo el estado en condados seleccionados"
+            ]
           }
         ],
         "footnote": {
@@ -574,7 +746,6 @@
       }
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -653,7 +824,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -684,7 +854,6 @@
       "href": "/medicare-advantage"
     }
   ],
-
   "sources": [
     {
       "name": "CMS Medicare Plan Finder (medicare.gov/plan-compare)",

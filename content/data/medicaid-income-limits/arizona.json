@@ -48,7 +48,6 @@
       "Solicitud de AHCCCS 2026"
     ]
   },
-
   "meta": {
     "title": {
       "en": "AHCCCS Income Limits 2026 (Arizona Medicaid) | CoveredUSA",
@@ -59,7 +58,6 @@
       "es": "Límites de ingresos AHCCCS 2026 (Medicaid de Arizona) por tamaño de hogar. Arizona expandió Medicaid, los adultos califican hasta el 138% del FPL ($22,025 soltero, $45,540 familia de 4). Embarazadas hasta el 156% del FPL. KidsCare (CHIP) hasta el 200% del FPL. Solicite en healthearizonaplus.gov."
     }
   },
-
   "hero": {
     "h1": {
       "en": "AHCCCS Income Limits (Arizona Medicaid, 2026)",
@@ -74,14 +72,13 @@
       "es": "Los límites de ingresos de AHCCCS en 2026 se basan en el Nivel Federal de Pobreza. Un adulto soltero califica para AHCCCS Medicaid con ingresos anuales de hasta $22,025 (138% del FPL); una familia de cuatro califica hasta $45,540. Las mujeres embarazadas califican hasta el 156% del FPL ($51,480 por año para un hogar de cuatro), y los niños califican para AHCCCS hasta el 138% del FPL o KidsCare CHIP hasta el 200% del FPL ($66,000 por año para un hogar de cuatro). AHCCCS también administra el Sistema de Cuidado a Largo Plazo de Arizona (ALTCS) para miembros ancianos y discapacitados y Freedom to Work para adultos trabajadores con discapacidades. Solicite en línea en healthearizonaplus.gov, por teléfono al 1-855-HEA-PLUS (1-855-432-7587), o en persona en cualquier oficina de asistencia familiar del DES."
     }
   },
-
   "introParagraphs": [
     {
       "en": "AHCCCS (pronounced \"access\") covers about 2 million Arizonans, roughly one in four state residents. Arizona was one of the first non-Medicaid states to embrace the federal Medicaid expansion under the Affordable Care Act, restoring expansion coverage on January 1, 2014, after a brief enrollment freeze during the recession. The result is one of the most generous adult Medicaid programs in the Mountain West: any adult under 138% of the Federal Poverty Level qualifies, with no asset test for the MAGI categories. The 2026 Federal Poverty Level, $15,960 for a single person and $33,000 for a family of four in the 48 contiguous states, sets every income threshold below.",
       "es": "AHCCCS (pronunciado \"access\") cubre a aproximadamente 2 millones de residentes de Arizona, aproximadamente uno de cada cuatro habitantes del estado. Arizona fue uno de los primeros estados sin expansión de Medicaid en aceptar la expansión federal de Medicaid bajo la Ley de Cuidado de Salud Asequible, restaurando la cobertura de expansión el 1 de enero de 2014, después de una breve congelación de inscripciones durante la recesión. El resultado es uno de los programas de Medicaid para adultos más generosos del oeste montañoso: cualquier adulto por debajo del 138% del Nivel Federal de Pobreza califica, sin prueba de bienes para las categorías MAGI. El Nivel Federal de Pobreza 2026, $15,960 para una persona soltera y $33,000 para una familia de cuatro en los 48 estados contiguos, establece todos los umbrales de ingresos a continuación."
     },
     {
-      "en": "AHCCCS eligibility splits into five main groups: childless adults and parents (138% FPL via expansion), pregnant women (156% FPL with 12 months of postpartum coverage), children up to 138% FPL on AHCCCS plus KidsCare up to 200% FPL, aged/blind/disabled adults under SSI rules, and the Arizona Long Term Care System (ALTCS) for nursing-home and home-and-community-based-services beneficiaries. Each group has its own application path, but the vast majority go through the same intake portal at healthearizonaplus.gov, the state's combined Medicaid + SNAP + cash-assistance application run by the Department of Economic Security.",
+      "en": "AHCCCS eligibility splits into five main groups: childless adults and parents (138% FPL via [expansion](/en/qa/state-medicaid-expansion-status)), pregnant women (156% FPL with 12 months of postpartum coverage), children up to 138% FPL on AHCCCS plus KidsCare up to 200% FPL, aged/blind/disabled adults under SSI rules — those who [qualify for both Medicaid and Medicare](/en/qa/can-i-have-both-medicare-and-medicaid) may access D-SNP plans, and the Arizona Long Term Care System (ALTCS) for nursing-home and home-and-community-based-services beneficiaries. If you have a job, check [whether earned income affects eligibility](/en/qa/can-i-get-medicaid-with-job) — AHCCCS counts it differently for expansion vs non-expansion groups. Each group has its own application path, but the vast majority go through the same intake portal at healthearizonaplus.gov, the state's combined Medicaid + SNAP + cash-assistance application run by the Department of Economic Security.",
       "es": "La elegibilidad de AHCCCS se divide en cinco grupos principales: adultos sin hijos y padres (138% FPL vía expansión), mujeres embarazadas (156% FPL con 12 meses de cobertura postparto), niños hasta 138% FPL en AHCCCS más KidsCare hasta 200% FPL, adultos ancianos/ciegos/discapacitados bajo las reglas de SSI, y el Sistema de Cuidado a Largo Plazo de Arizona (ALTCS) para beneficiarios de hogares de ancianos y servicios en el hogar y la comunidad. Cada grupo tiene su propia ruta de solicitud, pero la gran mayoría pasa por el mismo portal de admisión en healthearizonaplus.gov, la solicitud combinada de Medicaid + SNAP + asistencia en efectivo del estado administrada por el Departamento de Seguridad Económica."
     },
     {
@@ -89,7 +86,6 @@
       "es": "La tabla de tamaño de hogar a continuación muestra los límites de ingresos de AHCCCS 2026 en las tres poblaciones MAGI cubiertas. Si los ingresos de su hogar superan el umbral relevante de AHCCCS pero están por debajo del 400% del FPL, casi con certeza califica para subsidios del mercado del ACA a través de Healthcare.gov. Si tiene un hijo cuyos ingresos familiares superan el límite de AHCCCS para niños, consulte KidsCare (CHIP de Arizona) hasta el 200% del FPL. Si tiene 65 años o más con ingresos y activos limitados, consulte la sección Programas de Ahorro de Medicare a continuación o el programa ALTCS para atención de nivel de centro de enfermería."
     }
   ],
-
   "householdSizeTable": {
     "year": 2026,
     "caption": {
@@ -104,7 +100,10 @@
     "rows": [
       {
         "size": 1,
-        "label": { "en": "1 person", "es": "1 persona" },
+        "label": {
+          "en": "1 person",
+          "es": "1 persona"
+        },
         "annualIncomeAdult": 22025,
         "annualIncomeChild": 22025,
         "annualIncomePregnant": 24898,
@@ -117,7 +116,10 @@
       },
       {
         "size": 2,
-        "label": { "en": "2 people", "es": "2 personas" },
+        "label": {
+          "en": "2 people",
+          "es": "2 personas"
+        },
         "annualIncomeAdult": 29863,
         "annualIncomeChild": 29863,
         "annualIncomePregnant": 33758,
@@ -130,7 +132,10 @@
       },
       {
         "size": 3,
-        "label": { "en": "3 people", "es": "3 personas" },
+        "label": {
+          "en": "3 people",
+          "es": "3 personas"
+        },
         "annualIncomeAdult": 37702,
         "annualIncomeChild": 37702,
         "annualIncomePregnant": 42619,
@@ -143,7 +148,10 @@
       },
       {
         "size": 4,
-        "label": { "en": "4 people", "es": "4 personas" },
+        "label": {
+          "en": "4 people",
+          "es": "4 personas"
+        },
         "annualIncomeAdult": 45540,
         "annualIncomeChild": 45540,
         "annualIncomePregnant": 51480,
@@ -156,7 +164,10 @@
       },
       {
         "size": 5,
-        "label": { "en": "5 people", "es": "5 personas" },
+        "label": {
+          "en": "5 people",
+          "es": "5 personas"
+        },
         "annualIncomeAdult": 53378,
         "annualIncomeChild": 53378,
         "annualIncomePregnant": 60341,
@@ -169,7 +180,10 @@
       },
       {
         "size": 6,
-        "label": { "en": "6 people", "es": "6 personas" },
+        "label": {
+          "en": "6 people",
+          "es": "6 personas"
+        },
         "annualIncomeAdult": 61217,
         "annualIncomeChild": 61217,
         "annualIncomePregnant": 69202,
@@ -182,7 +196,10 @@
       },
       {
         "size": 7,
-        "label": { "en": "7 people", "es": "7 personas" },
+        "label": {
+          "en": "7 people",
+          "es": "7 personas"
+        },
         "annualIncomeAdult": 69055,
         "annualIncomeChild": 69055,
         "annualIncomePregnant": 78062,
@@ -195,7 +212,10 @@
       },
       {
         "size": 8,
-        "label": { "en": "8 people", "es": "8 personas" },
+        "label": {
+          "en": "8 people",
+          "es": "8 personas"
+        },
         "annualIncomeAdult": 76894,
         "annualIncomeChild": 76894,
         "annualIncomePregnant": 86923,
@@ -224,7 +244,6 @@
       }
     ]
   },
-
   "eligibilityRequirements": {
     "intro": {
       "en": "Beyond income, AHCCCS applicants must meet the following non-income requirements. Each population group (adults, children, pregnant women, aged/blind/disabled, ALTCS) has its own version of these rules; the items below apply across the board for the MAGI categories that handle the vast majority of applications.",
@@ -257,7 +276,6 @@
       }
     ]
   },
-
   "incomeSources": {
     "intro": {
       "en": "AHCCCS uses Modified Adjusted Gross Income (MAGI) rules for adults, parents, children, and pregnant women, anchored to the household's projected annual income on the federal tax return. Aged/blind/disabled and ALTCS populations use SSI countable-income rules instead. The lists below cover the MAGI categories that handle the vast majority of AHCCCS applications.",
@@ -329,7 +347,6 @@
     ],
     "source": "AHCCCS Eligibility Policy Manual Chapter 600 (Income Eligibility) + IRS Modified AGI definition (26 U.S.C. §36B(d)(2)(B))"
   },
-
   "applicationProcess": {
     "intro": {
       "en": "AHCCCS applications go through Health-e-Arizona Plus, the statewide intake portal jointly run by AHCCCS and the Arizona Department of Economic Security (DES). The same application captures AHCCCS Medicaid, KidsCare CHIP, Nutrition Assistance (SNAP), and Cash Assistance (TANF). You can apply online, by phone (1-855-HEA-PLUS), by mail, or in person at any DES Family Assistance Office.",
@@ -428,7 +445,6 @@
       }
     ]
   },
-
   "chipCrossReference": {
     "heading": {
       "en": "If your child's family income is over the AHCCCS limit, KidsCare (Arizona CHIP)",
@@ -444,7 +460,6 @@
       "es": "Compare los límites de ingresos de CHIP y Medicaid en los 50 estados"
     }
   },
-
   "medicareSavingsProgramsCrossReference": {
     "heading": {
       "en": "If you are 65 or older with limited income, Medicare Savings Programs and ALTCS",
@@ -460,7 +475,6 @@
       "es": "Lea la guía de elegibilidad de Medicare"
     }
   },
-
   "faqs": {
     "en": [
       {
@@ -539,7 +553,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -577,7 +590,6 @@
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "AHCCCS, Arizona Health Care Cost Containment System",
