@@ -240,22 +240,6 @@ export default async function HomePage({
               className="card-elevated flex flex-col h-full"
               style={{ padding: '2rem', borderRadius: '16px' }}
             >
-              {/* Icon */}
-              <div
-                className="flex items-center justify-center mb-5 self-start"
-                style={{
-                  width: '48px',
-                  height: '48px',
-                  borderRadius: '12px',
-                  background: 'var(--primary-lightest)',
-                }}
-              >
-                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill={ICON_COLOR} opacity="0.2" stroke={ICON_COLOR} strokeWidth="1.5" />
-                  <path d="M10 11h4M12 9v4" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </div>
-
               <h2
                 className="text-xl font-bold mb-2"
                 style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
@@ -266,7 +250,7 @@ export default async function HomePage({
                 className="text-sm mb-6 flex-1 leading-relaxed"
                 style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
               >
-                Find out if you qualify for free or low-cost health insurance. Medicaid, ACA, Medicare, CHIP, and more — screened in 2 minutes.
+                Find out if you qualify for free or low-cost health insurance. Medicaid, ACA, Medicare, CHIP, and more. Screened in 2 minutes.
               </p>
 
               <Link
@@ -292,24 +276,6 @@ export default async function HomePage({
               className="card-elevated flex flex-col h-full"
               style={{ padding: '2rem', borderRadius: '16px' }}
             >
-              {/* Icon */}
-              <div
-                className="flex items-center justify-center mb-5 self-start"
-                style={{
-                  width: '48px',
-                  height: '48px',
-                  borderRadius: '12px',
-                  background: 'var(--primary-lightest)',
-                }}
-              >
-                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-                  <rect x="4" y="3" width="16" height="18" rx="3" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
-                  <path d="M8 8h8M8 12h8M8 16h5" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
-                  <circle cx="18" cy="17" r="4" fill="var(--error)" opacity="0.9" />
-                  <path d="M16.5 17h3M18 15.5v3" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </div>
-
               <h2
                 className="text-xl font-bold mb-2"
                 style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
@@ -320,7 +286,7 @@ export default async function HomePage({
                 className="text-sm mb-6 flex-1 leading-relaxed"
                 style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
               >
-                80% of hospital bills have errors. Upload yours and we'll flag overcharges, check for financial assistance, and write a dispute letter — free.
+                80% of hospital bills have errors. Upload yours and we'll flag overcharges, check for financial assistance, and write a dispute letter. Free.
               </p>
 
               <Link
