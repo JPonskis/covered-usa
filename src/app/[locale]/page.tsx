@@ -190,108 +190,190 @@ export default async function HomePage({
 
       {/* ── HERO ── */}
       <section className="warm-texture" style={{ position: 'relative', overflow: 'hidden' }}>
-        <div className="max-w-6xl mx-auto px-6 py-14 md:py-20 lg:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="max-w-5xl mx-auto px-6 py-12 md:py-16 lg:py-20">
 
-            {/* Left: text */}
-            <div>
-              {/* BenefitsUSA attribution */}
-              <a
-                href="https://benefitsusa.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="header-link inline-flex items-center gap-1.5 text-xs font-medium mb-5"
-                style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
+          {/* BenefitsUSA attribution */}
+          <div className="flex justify-center mb-6">
+            <a
+              href="https://benefitsusa.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="header-link inline-flex items-center gap-1.5 text-xs font-medium"
+              style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
+            >
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1L11 3.5V7c0 2.5-2 4.5-5 5C3 11.5 1 9.5 1 7V3.5L6 1z" fill="var(--primary)" opacity="0.2" stroke="var(--primary)" strokeWidth="1" />
+                <path d="M4 6l1.5 1.5L8 4.5" stroke="var(--primary)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span style={{ color: 'var(--text-secondary)' }}>A</span>
+              <span style={{ color: 'var(--primary)', fontWeight: 600 }}>BenefitsUSA</span>
+              <span style={{ color: 'var(--text-secondary)' }}>product</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" style={{ opacity: 0.4 }}>
+                <path d="M2 8L8 2M4 2h4v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </div>
+
+          {/* Headline */}
+          <div className="text-center mb-3">
+            <h1
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
+              style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em' }}
+            >
+              Free tools to help you save on healthcare
+            </h1>
+          </div>
+
+          {/* Subtitle */}
+          <p
+            className="text-center text-lg mb-10"
+            style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
+          >
+            No signup. No cost. Instant results.
+          </p>
+
+          {/* Two tool cards */}
+          <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto items-stretch">
+
+            {/* Card 1: Coverage Screener */}
+            <div
+              className="card-elevated flex flex-col h-full"
+              style={{ padding: '2rem', borderRadius: '16px' }}
+            >
+              {/* Icon */}
+              <div
+                className="flex items-center justify-center mb-5 self-start"
+                style={{
+                  width: '48px',
+                  height: '48px',
+                  borderRadius: '12px',
+                  background: 'var(--primary-lightest)',
+                }}
               >
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M6 1L11 3.5V7c0 2.5-2 4.5-5 5C3 11.5 1 9.5 1 7V3.5L6 1z" fill="var(--primary)" opacity="0.2" stroke="var(--primary)" strokeWidth="1" />
-                  <path d="M4 6l1.5 1.5L8 4.5" stroke="var(--primary)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill={ICON_COLOR} opacity="0.2" stroke={ICON_COLOR} strokeWidth="1.5" />
+                  <path d="M10 11h4M12 9v4" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
-                <span style={{ color: 'var(--text-secondary)' }}>A</span>
-                <span style={{ color: 'var(--primary)', fontWeight: 600 }}>BenefitsUSA</span>
-                <span style={{ color: 'var(--text-secondary)' }}>product</span>
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" style={{ opacity: 0.4 }}>
-                  <path d="M2 8L8 2M4 2h4v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </a>
+              </div>
 
-              <h1
-                className="text-4xl md:text-5xl lg:text-5xl font-bold mb-5 leading-tight"
-                style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em' }}
+              <h2
+                className="text-xl font-bold mb-2"
+                style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
               >
-                {t('headline')}
-              </h1>
-
+                Check Your Coverage
+              </h2>
               <p
-                className="text-lg md:text-xl mb-8 leading-relaxed"
+                className="text-sm mb-6 flex-1 leading-relaxed"
                 style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
               >
-                {th('subheadline')}
+                Find out if you qualify for free or low-cost health insurance. Medicaid, ACA, Medicare, CHIP, and more — screened in 2 minutes.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-start gap-4 mb-8">
-                <Link
-                  href={`/${locale}/screener`}
-                  className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2"
-                  style={{ fontSize: '1.05rem', boxShadow: 'var(--shadow-primary)' }}
-                >
-                  {t('cta')}
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-                <span className="flex items-center" style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-body)', paddingTop: '0.85rem' }}>
-                  {th('takesMinutes')}
-                </span>
-              </div>
-
-              <div className="flex flex-wrap gap-x-7 gap-y-3">
-                {[
-                  { text: t('trust1'), icon: (
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  )},
-                  { text: t('trust2'), icon: (
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
-                  )},
-                  { text: t('trust3'), icon: (
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <circle cx="12" cy="12" r="10" strokeWidth={2} />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-                    </svg>
-                  )},
-                ].map((badge) => (
-                  <span
-                    key={badge.text}
-                    className="flex items-center gap-2"
-                    style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-body)' }}
-                  >
-                    <span style={{ color: 'var(--primary)' }}>{badge.icon}</span>
-                    {badge.text}
-                  </span>
-                ))}
-              </div>
+              <Link
+                href={`/${locale}/screener`}
+                className="btn-primary inline-flex items-center justify-center gap-2"
+                style={{ boxShadow: 'var(--shadow-primary)' }}
+              >
+                {t('cta')}
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+              <p
+                className="text-center mt-3 text-xs"
+                style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body)' }}
+              >
+                {th('takesMinutes')}
+              </p>
             </div>
 
-            {/* Right: illustration */}
-            <div className="hidden lg:flex justify-center items-center" style={{
-              WebkitMaskImage: 'radial-gradient(ellipse 85% 80% at center, black 40%, transparent 72%)',
-              maskImage: 'radial-gradient(ellipse 85% 80% at center, black 40%, transparent 72%)',
-            }}>
-              <Image
-                src="/hero-illustration.png"
-                alt="Illustration of a young woman, older gentleman, and child standing together under a protective teal arc"
-                width={1024}
-                height={1536}
-                priority
-                style={{ width: '100%', maxWidth: '460px', height: 'auto' }}
-              />
+            {/* Card 2: Bill Analyzer */}
+            <div
+              className="card-elevated flex flex-col h-full"
+              style={{ padding: '2rem', borderRadius: '16px' }}
+            >
+              {/* Icon */}
+              <div
+                className="flex items-center justify-center mb-5 self-start"
+                style={{
+                  width: '48px',
+                  height: '48px',
+                  borderRadius: '12px',
+                  background: 'var(--primary-lightest)',
+                }}
+              >
+                <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+                  <rect x="4" y="3" width="16" height="18" rx="3" fill={ICON_COLOR} opacity="0.15" stroke={ICON_COLOR} strokeWidth="1.5" />
+                  <path d="M8 8h8M8 12h8M8 16h5" stroke={ICON_COLOR} strokeWidth="1.5" strokeLinecap="round" />
+                  <circle cx="18" cy="17" r="4" fill="var(--error)" opacity="0.9" />
+                  <path d="M16.5 17h3M18 15.5v3" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+              </div>
+
+              <h2
+                className="text-xl font-bold mb-2"
+                style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}
+              >
+                Analyze Your Hospital Bill
+              </h2>
+              <p
+                className="text-sm mb-6 flex-1 leading-relaxed"
+                style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-body)' }}
+              >
+                80% of hospital bills have errors. Upload yours and we'll flag overcharges, check for financial assistance, and write a dispute letter — free.
+              </p>
+
+              <Link
+                href={`/${locale}/medical-bill-analyzer`}
+                className="btn-primary inline-flex items-center justify-center gap-2"
+                style={{ boxShadow: 'var(--shadow-primary)' }}
+              >
+                Check My Bill
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+              <p
+                className="text-center mt-3 text-xs"
+                style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-body)' }}
+              >
+                30 seconds &middot; No signup required
+              </p>
             </div>
 
           </div>
+
+          {/* Trust badges */}
+          <div className="flex flex-wrap justify-center gap-x-7 gap-y-3 mt-8">
+            {[
+              { text: t('trust1'), icon: (
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              )},
+              { text: t('trust2'), icon: (
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              )},
+              { text: t('trust3'), icon: (
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <circle cx="12" cy="12" r="10" strokeWidth={2} />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                </svg>
+              )},
+            ].map((badge) => (
+              <span
+                key={badge.text}
+                className="flex items-center gap-2"
+                style={{ color: 'var(--text-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-body)' }}
+              >
+                <span style={{ color: 'var(--primary)' }}>{badge.icon}</span>
+                {badge.text}
+              </span>
+            ))}
+          </div>
+
         </div>
       </section>
 
