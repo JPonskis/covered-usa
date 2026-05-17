@@ -5,7 +5,6 @@
   "topicCluster": "medicare-coverage",
   "isLighthouse": false,
   "isDeprecated": false,
-
   "question": {
     "en": "Does Medicare Cover Skilled Nursing Facility Stays in 2026?",
     "es": "¿Medicare Cubre Estancias en Instalaciones de Enfermería Especializada en 2026?"
@@ -18,14 +17,12 @@
     "en": "Yes. Medicare Part A covers skilled nursing facility (SNF) care after a qualifying 3-consecutive-day inpatient hospital stay. Days 1-20 of an SNF stay are fully covered with $0 coinsurance. Days 21-100 require $217.00 per day in coinsurance in 2026. After day 100, Medicare stops paying and the patient pays 100%. Medicare covers only skilled care (nursing, physical therapy, occupational therapy, speech therapy) and does not cover custodial care such as help with bathing, dressing, or eating when no skilled need is present.",
     "es": "Sí. Medicare Parte A cubre la atención en instalaciones de enfermería especializada (SNF) después de una hospitalización calificada de 3 días consecutivos como paciente interno. Los días 1 a 20 de la estancia en SNF están totalmente cubiertos con $0 de coseguro. Los días 21 a 100 requieren $217.00 por día en coseguro en 2026. Después del día 100, Medicare deja de pagar y el paciente paga el 100%. Medicare cubre solo atención especializada (enfermería, fisioterapia, terapia ocupacional, terapia del habla) y no cubre atención de custodia como ayuda para bañarse, vestirse o comer cuando no hay necesidad especializada."
   },
-
   "category": "Medicare",
   "topic": "Medicare Skilled Nursing Facility Coverage",
   "medicalSpecialty": "Geriatric",
   "ctaTarget": "analyzer",
   "lastUpdated": "2026-05-15",
   "readingTime": "7 min read",
-
   "keyTerms": {
     "en": [
       "does medicare cover skilled nursing facility",
@@ -42,7 +39,6 @@
       "coseguro SNF 2026"
     ]
   },
-
   "meta": {
     "title": {
       "en": "Does Medicare Cover Skilled Nursing Facility Care? (2026) | CoveredUSA",
@@ -53,61 +49,128 @@
       "es": "Medicare Parte A cubre estancias SNF hasta 100 días por período de beneficio tras 3 días de hospitalización. Los días 1-20 son gratis; los días 21-100 cuestan $217/día en 2026."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Does Medicare Cover Skilled Nursing Facility Stays? (2026)",
       "es": "¿Medicare Cubre Estancias en Instalaciones de Enfermería Especializada? (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicare Part A covers skilled nursing facility (SNF) care, but with strict conditions that surprise many beneficiaries each year. The most common shock: observation stays at a hospital do not count toward the required 3-day inpatient admission, meaning patients who spend two nights in the hospital under observation status can be left with zero SNF coverage and a bill that runs $8,000 to $15,000 per month or more.",
       "es": "Medicare Parte A cubre la atención en instalaciones de enfermería especializada (SNF), pero con condiciones estrictas que sorprenden a muchos beneficiarios cada año. El error más frecuente: las estancias de observación en un hospital no cuentan para la hospitalización requerida de 3 días, lo que significa que los pacientes que pasan dos noches en el hospital bajo estatus de observación pueden quedarse sin cobertura SNF y con una factura de $8,000 a $15,000 por mes o más."
     },
     {
-      "en": "This guide explains exactly what Medicare covers in a skilled nursing facility in 2026, the day-by-day cost structure, what does not qualify for coverage, and the alternatives available when Medicare stops paying after day 100. All dollar figures are anchored to 2026 CMS-published rates.",
+      "en": "This guide explains exactly what Medicare covers in a skilled nursing facility in 2026, the day-by-day cost structure, what does not qualify for coverage, and the alternatives available when Medicare stops paying after day 100. For long-term nursing home coverage through Medicaid, see [Medicaid long-term care eligibility](/en/qa/medicaid-long-term-care-eligibility). All dollar figures are anchored to 2026 CMS-published rates.",
       "es": "Esta guía explica exactamente qué cubre Medicare en una instalación de enfermería especializada en 2026, la estructura de costos día a día, qué no califica para cobertura y las alternativas disponibles cuando Medicare deja de pagar después del día 100. Todas las cifras en dólares corresponden a las tarifas publicadas por CMS para 2026."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["SNF Stay Period", "Medicare Pays", "Patient Pays (2026)", "Notes"],
-      "es": ["Período de Estancia SNF", "Medicare Paga", "Paga el Paciente (2026)", "Notas"]
+      "en": [
+        "SNF Stay Period",
+        "Medicare Pays",
+        "Patient Pays (2026)",
+        "Notes"
+      ],
+      "es": [
+        "Período de Estancia SNF",
+        "Medicare Paga",
+        "Paga el Paciente (2026)",
+        "Notas"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Days 1-20 (per benefit period)", "es": "Días 1-20 (por período de beneficio)" },
-          { "value": { "en": "100% (fully covered)", "es": "100% (cobertura total)" }, "status": "yes" },
-          { "en": "$0 coinsurance", "es": "$0 de coseguro" },
-          { "en": "Requires qualifying 3-day inpatient hospital stay first; Part A deductible ($1,736) already paid at hospital", "es": "Requiere hospitalización calificada de 3 días primero; deducible Parte A ($1,736) ya pagado en el hospital" }
+          {
+            "en": "Days 1-20 (per benefit period)",
+            "es": "Días 1-20 (por período de beneficio)"
+          },
+          {
+            "value": {
+              "en": "100% (fully covered)",
+              "es": "100% (cobertura total)"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "$0 coinsurance",
+            "es": "$0 de coseguro"
+          },
+          {
+            "en": "Requires qualifying 3-day inpatient hospital stay first; Part A deductible ($1,736) already paid at hospital",
+            "es": "Requiere hospitalización calificada de 3 días primero; deducible Parte A ($1,736) ya pagado en el hospital"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Days 21-100 (per benefit period)", "es": "Días 21-100 (por período de beneficio)" },
-          { "value": { "en": "Partial (Medicare pays the rest)", "es": "Parcial (Medicare paga el resto)" }, "status": "partial" },
-          { "en": "$217.00 per day in 2026", "es": "$217.00 por día en 2026" },
-          { "en": "Daily coinsurance applies from day 21 through day 100; Medigap Plans C, D, F, G, M, N cover part or all of this coinsurance", "es": "El coseguro diario aplica del día 21 al día 100; los Planes Medigap C, D, F, G, M, N cubren parte o todo este coseguro" }
+          {
+            "en": "Days 21-100 (per benefit period)",
+            "es": "Días 21-100 (por período de beneficio)"
+          },
+          {
+            "value": {
+              "en": "Partial (Medicare pays the rest)",
+              "es": "Parcial (Medicare paga el resto)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "$217.00 per day in 2026",
+            "es": "$217.00 por día en 2026"
+          },
+          {
+            "en": "Daily coinsurance applies from day 21 through day 100; Medigap Plans C, D, F, G, M, N cover part or all of this coinsurance",
+            "es": "El coseguro diario aplica del día 21 al día 100; los Planes Medigap C, D, F, G, M, N cubren parte o todo este coseguro"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Days 101+ (per benefit period)", "es": "Días 101+ (por período de beneficio)" },
-          { "value": { "en": "No (Medicare stops paying)", "es": "No (Medicare deja de pagar)" }, "status": "no" },
-          { "en": "100% of cost (patient responsibility)", "es": "100% del costo (responsabilidad del paciente)" },
-          { "en": "At this point, options include Medicaid long-term care, Medicare Advantage extended SNF benefit, or private pay", "es": "En este punto, las opciones incluyen Medicaid de cuidado a largo plazo, beneficio SNF extendido de Medicare Advantage o pago privado" }
+          {
+            "en": "Days 101+ (per benefit period)",
+            "es": "Días 101+ (por período de beneficio)"
+          },
+          {
+            "value": {
+              "en": "No (Medicare stops paying)",
+              "es": "No (Medicare deja de pagar)"
+            },
+            "status": "no"
+          },
+          {
+            "en": "100% of cost (patient responsibility)",
+            "es": "100% del costo (responsabilidad del paciente)"
+          },
+          {
+            "en": "At this point, options include Medicaid long-term care, Medicare Advantage extended SNF benefit, or private pay",
+            "es": "En este punto, las opciones incluyen Medicaid de cuidado a largo plazo, beneficio SNF extendido de Medicare Advantage o pago privado"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare Advantage (Part C) SNF coverage", "es": "Cobertura SNF de Medicare Advantage (Parte C)" },
-          { "value": { "en": "Varies by plan", "es": "Varía según el plan" }, "status": "partial" },
-          { "en": "Plan-set copay (often $0-$200/day for days 1-20; varies for days 21-100)", "es": "Copago establecido por el plan (frecuentemente $0-$200/día para días 1-20; varía para días 21-100)" },
-          { "en": "Some MA plans extend SNF coverage beyond 100 days; prior authorization almost always required", "es": "Algunos planes MA extienden la cobertura SNF más allá de 100 días; casi siempre se requiere autorización previa" }
+          {
+            "en": "Medicare Advantage (Part C) SNF coverage",
+            "es": "Cobertura SNF de Medicare Advantage (Parte C)"
+          },
+          {
+            "value": {
+              "en": "Varies by plan",
+              "es": "Varía según el plan"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Plan-set copay (often $0-$200/day for days 1-20; varies for days 21-100)",
+            "es": "Copago establecido por el plan (frecuentemente $0-$200/día para días 1-20; varía para días 21-100)"
+          },
+          {
+            "en": "Some MA plans extend SNF coverage beyond 100 days; prior authorization almost always required",
+            "es": "Algunos planes MA extienden la cobertura SNF más allá de 100 días; casi siempre se requiere autorización previa"
+          }
         ]
       }
     ],
@@ -117,7 +180,6 @@
     },
     "source": "CMS 2026 Medicare Parts A and B Premiums and Deductibles Fact Sheet, medicare.gov/coverage/skilled-nursing-facility-care"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -186,7 +248,7 @@
       },
       "paragraphs": [
         {
-          "en": "After Medicare's 100-day SNF benefit is exhausted, or for stays that never qualified for coverage, the full cost of skilled nursing facility care falls to the patient or their family. According to Genworth's 2025 Cost of Care Survey and FAIR Health data, median SNF costs in 2026 range from $275 to $400 per day for a semi-private room, or $9,000 to $13,000 per month, with significant regional variation. Private room costs run $350 to $550 per day nationally, or $10,500 to $16,500 per month. In high-cost markets such as the San Francisco Bay Area and New York City, private rooms can exceed $600 per day.",
+          "en": "After Medicare's 100-day SNF benefit is exhausted, or for stays that never qualified for coverage, the full cost of skilled nursing facility care falls to the patient or their family. For the complete nursing home coverage picture, see [does Medicare cover nursing home care](/en/qa/does-medicare-cover-nursing-home). According to Genworth's 2025 Cost of Care Survey and FAIR Health data, median SNF costs in 2026 range from $275 to $400 per day for a semi-private room, or $9,000 to $13,000 per month, with significant regional variation. Private room costs run $350 to $550 per day nationally, or $10,500 to $16,500 per month. In high-cost markets such as the San Francisco Bay Area and New York City, private rooms can exceed $600 per day.",
           "es": "Después de que se agota el beneficio SNF de 100 días de Medicare, o para estancias que nunca calificaron para cobertura, el costo total de la atención en instalaciones de enfermería especializada recae sobre el paciente o su familia. Según la Encuesta de Costos de Atención 2025 de Genworth y datos de FAIR Health, los costos medianos de SNF en 2026 oscilan entre $275 y $400 por día para una habitación semiprivada, o $9,000 a $13,000 por mes, con variación regional significativa. Los costos de habitación privada oscilan entre $350 y $550 por día a nivel nacional, o $10,500 a $16,500 por mes."
         },
         {
@@ -202,7 +264,7 @@
       },
       "paragraphs": [
         {
-          "en": "For beneficiaries who exhaust the 100-day Medicare SNF benefit or whose stay never qualifies, four primary alternatives exist. Medicaid long-term care is the most common safety net for financially eligible beneficiaries. Medicaid covers nursing home stays indefinitely for people who meet the income and asset limits, which vary by state. Importantly, someone who enters a skilled nursing facility paying privately may spend down their assets to Medicaid eligibility levels and then apply, a process called Medicaid spend-down. This transition is legally and financially complex; elder law attorneys and SHIP (State Health Insurance Assistance Program) counselors can help navigate it.",
+          "en": "For beneficiaries who exhaust the 100-day Medicare SNF benefit or whose stay never qualifies, four primary alternatives exist. [Medicaid long-term care](/en/qa/medicaid-long-term-care-eligibility) is the most common safety net for financially eligible beneficiaries. Medicaid covers nursing home stays indefinitely for people who meet the income and asset limits, which vary by state. Importantly, someone who enters a skilled nursing facility paying privately may spend down their assets to Medicaid eligibility levels and then apply, a process called Medicaid spend-down. This transition is legally and financially complex; elder law attorneys and SHIP (State Health Insurance Assistance Program) counselors can help navigate it.",
           "es": "Para los beneficiarios que agotan el beneficio SNF de Medicare de 100 días o cuya estancia nunca califica, existen cuatro alternativas principales. La atención a largo plazo de Medicaid es la red de seguridad más común para los beneficiarios con elegibilidad financiera. Medicaid cubre las estancias en hogares de ancianos indefinidamente para personas que cumplen los límites de ingresos y activos, que varían por estado. Una persona que ingresa a una instalación de enfermería especializada pagando de manera privada puede reducir sus activos hasta los niveles de elegibilidad de Medicaid y luego solicitar el beneficio, un proceso llamado reducción de activos de Medicaid."
         }
       ],
@@ -270,13 +332,12 @@
       },
       "paragraphs": [
         {
-          "en": "Original Medicare leaves a substantial financial gap for SNF stays longer than 20 days. Medigap (Medicare Supplement Insurance) policies can close this gap. Six standardized Medigap plan letters cover the Part A SNF coinsurance: Plans C, D, F, G, M, and N. Plans F and C are no longer available to beneficiaries who became newly eligible for Medicare after January 1, 2020, but remain available to those who enrolled before that date. Plans G and N are the most common among newer enrollees and both cover SNF coinsurance fully for days 21-100, eliminating the $217.00 per day charge in 2026. Plan M covers 50% of the SNF coinsurance, and Plan D covers it in full.",
+          "en": "Original Medicare leaves a substantial financial gap for SNF stays longer than 20 days. [Medigap (Medicare Supplement Insurance)](/en/qa/medigap-vs-medicare-advantage) policies can close this gap. Six standardized Medigap plan letters cover the Part A SNF coinsurance: Plans C, D, F, G, M, and N. Plans F and C are no longer available to beneficiaries who became newly eligible for Medicare after January 1, 2020, but remain available to those who enrolled before that date. Plans G and N are the most common among newer enrollees and both cover SNF coinsurance fully for days 21-100, eliminating the $217.00 per day charge in 2026. Plan M covers 50% of the SNF coinsurance, and Plan D covers it in full.",
           "es": "Medicare Original deja una brecha financiera sustancial para estancias SNF de más de 20 días. Las pólizas Medigap (Seguro Suplementario de Medicare) pueden cerrar esta brecha. Seis letras de plan Medigap estandarizadas cubren el coseguro SNF de la Parte A: Planes C, D, F, G, M y N. Los Planes F y C ya no están disponibles para los beneficiarios que se volvieron nuevamente elegibles para Medicare después del 1 de enero de 2020, pero permanecen disponibles para quienes se inscribieron antes de esa fecha. Los Planes G y N son los más comunes entre los nuevos inscritos y ambos cubren el coseguro SNF completamente para los días 21-100, eliminando el cargo de $217.00 por día en 2026."
         }
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -347,7 +408,6 @@
       }
     ]
   },
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -425,7 +485,6 @@
       "es": "El beneficio SNF de Medicare Parte A está disponible durante todo el año. No aplica ningún período de inscripción. Los cambios de plan de Medicare Advantage ocurren durante la Inscripción Anual (15 de octubre al 7 de diciembre de 2026) o el Período de Inscripción Abierta de Medicare Advantage (1 de enero al 31 de marzo de 2026)."
     }
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -456,7 +515,6 @@
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "CMS: 2026 Medicare Parts A and B Premiums and Deductibles",

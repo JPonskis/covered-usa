@@ -4,12 +4,23 @@
   "pageType": "coverage",
   "topicCluster": "medicare-coverage",
   "keyTerms": {
-    "en": ["does medicare cover pap smear", "medicare pap smear coverage 2026", "medicare cervical cancer screening", "medicare preventive gynecology", "pap test medicare cost"],
-    "es": ["medicare cubre papanicolau", "cobertura papanicolau medicare 2026", "examen papanicolau medicare", "deteccion cancer cervical medicare", "costo papanicolau medicare"]
+    "en": [
+      "does medicare cover pap smear",
+      "medicare pap smear coverage 2026",
+      "medicare cervical cancer screening",
+      "medicare preventive gynecology",
+      "pap test medicare cost"
+    ],
+    "es": [
+      "medicare cubre papanicolau",
+      "cobertura papanicolau medicare 2026",
+      "examen papanicolau medicare",
+      "deteccion cancer cervical medicare",
+      "costo papanicolau medicare"
+    ]
   },
   "isLighthouse": false,
   "isDeprecated": false,
-
   "question": {
     "en": "Does Medicare Cover Pap Smears?",
     "es": "¿Medicare Cubre el Papanicolau?"
@@ -28,7 +39,6 @@
   "ctaTarget": "screener",
   "lastUpdated": "2026-05-15",
   "readingTime": "6 min read",
-
   "meta": {
     "title": {
       "en": "Does Medicare Cover Pap Smears? (2026) | CoveredUSA",
@@ -39,61 +49,128 @@
       "es": "Sí. Medicare Parte B cubre el Papanicolau cada 24 meses sin costo para mujeres de riesgo promedio. Mujeres de alto riesgo califican para detección anual. Reglas 2026."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Does Medicare Cover Pap Smears? (2026)",
       "es": "¿Medicare Cubre el Papanicolau? (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Cervical cancer is largely preventable with regular screening, and Medicare treats the Pap smear as a core preventive benefit, not an elective test. For most women on Medicare, the annual question is not whether it is covered, but how often and at what cost. The answer on cost is straightforward: $0 when billed correctly as a preventive service by a participating provider. The answer on frequency depends on your risk level, and getting that classification right matters because the billing code the provider uses determines whether you pay nothing or face a deductible and 20% coinsurance.",
       "es": "El cáncer cervical es en gran medida prevenible con detección regular, y Medicare trata el Papanicolau como un beneficio preventivo fundamental. Para la mayoría de las mujeres en Medicare, la pregunta no es si está cubierto, sino con qué frecuencia y a qué costo. La respuesta sobre el costo es directa: $0 cuando se factura correctamente como servicio preventivo por un proveedor participante. La respuesta sobre frecuencia depende de su nivel de riesgo, y clasificar correctamente ese nivel importa porque el código de facturación que usa el proveedor determina si paga nada o enfrenta un deducible y coseguro del 20%."
     },
     {
-      "en": "Medicare Part B has covered cervical and vaginal cancer screenings since 1998. In 2026, the benefit also covers HPV co-testing alongside the Pap, a pelvic exam, and a clinical breast exam, all at no cost during the same preventive visit. This guide explains the frequency rules, how high-risk eligibility works, what can trigger unexpected cost-sharing, and how Medicare Advantage plans handle the same benefit.",
+      "en": "Medicare Part B has covered cervical and vaginal cancer screenings since 1998. In 2026, the benefit also covers HPV co-testing alongside the Pap, a pelvic exam, and a clinical breast exam, all at no cost during the same preventive visit. This guide explains the frequency rules, how high-risk eligibility works, what can trigger unexpected cost-sharing, and how Medicare Advantage plans handle the same benefit. For comparison, [colonoscopy costs](/en/cost/colonoscopy) and [mammogram costs](/en/cost/mammogram) are covered under separate preventive benefit rules.",
       "es": "Medicare Parte B ha cubierto las detecciones de cáncer cervical y vaginal desde 1998. En 2026, el beneficio también cubre la co-prueba del VPH junto con el Papanicolau, un examen pélvico y un examen clínico de mama, todo sin costo durante la misma visita preventiva. Esta guía explica las reglas de frecuencia, cómo funciona la elegibilidad de alto riesgo, qué puede generar costos inesperados y cómo los planes de Medicare Advantage manejan el mismo beneficio."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Plan Type", "Pap Smear Coverage (2026)", "Frequency", "Your Cost"],
-      "es": ["Tipo de plan", "Cobertura del Papanicolau (2026)", "Frecuencia", "Su costo"]
+      "en": [
+        "Plan Type",
+        "Pap Smear Coverage (2026)",
+        "Frequency",
+        "Your Cost"
+      ],
+      "es": [
+        "Tipo de plan",
+        "Cobertura del Papanicolau (2026)",
+        "Frecuencia",
+        "Su costo"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Original Medicare (Part B)", "es": "Medicare Original (Parte B)" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
-          { "en": "Every 24 months (average risk); every 12 months (high risk)", "es": "Cada 24 meses (riesgo promedio); cada 12 meses (alto riesgo)" },
-          { "en": "$0 when billed preventive; $283 deductible + 20% if billed diagnostic (2026)", "es": "$0 cuando se factura como preventivo; deducible de $283 + 20% si se factura como diagnóstico (2026)" }
+          {
+            "en": "Original Medicare (Part B)",
+            "es": "Medicare Original (Parte B)"
+          },
+          {
+            "value": {
+              "en": "Yes",
+              "es": "Sí"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Every 24 months (average risk); every 12 months (high risk)",
+            "es": "Cada 24 meses (riesgo promedio); cada 12 meses (alto riesgo)"
+          },
+          {
+            "en": "$0 when billed preventive; $283 deductible + 20% if billed diagnostic (2026)",
+            "es": "$0 cuando se factura como preventivo; deducible de $283 + 20% si se factura como diagnóstico (2026)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare Advantage (Part C)", "es": "Medicare Advantage (Parte C)" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
-          { "en": "Must match Original Medicare at minimum; many plans cover annually", "es": "Debe igualar Medicare Original como mínimo; muchos planes cubren anualmente" },
-          { "en": "$0 for preventive; check plan-specific cost-sharing for diagnostic visits", "es": "$0 para preventivo; consulte el coseguro específico del plan para visitas de diagnóstico" }
+          {
+            "en": "Medicare Advantage (Part C)",
+            "es": "Medicare Advantage (Parte C)"
+          },
+          {
+            "value": {
+              "en": "Yes",
+              "es": "Sí"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Must match Original Medicare at minimum; many plans cover annually",
+            "es": "Debe igualar Medicare Original como mínimo; muchos planes cubren anualmente"
+          },
+          {
+            "en": "$0 for preventive; check plan-specific cost-sharing for diagnostic visits",
+            "es": "$0 para preventivo; consulte el coseguro específico del plan para visitas de diagnóstico"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medigap (Medicare Supplement)", "es": "Medigap (Suplemento de Medicare)" },
-          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
-          { "en": "Follows Original Medicare frequency rules", "es": "Sigue las reglas de frecuencia de Medicare Original" },
-          { "en": "Fills Part B cost-sharing on diagnostic visits; preventive is already $0", "es": "Cubre el costo compartido de la Parte B en visitas diagnósticas; preventivo ya es $0" }
+          {
+            "en": "Medigap (Medicare Supplement)",
+            "es": "Medigap (Suplemento de Medicare)"
+          },
+          {
+            "value": {
+              "en": "Partial",
+              "es": "Parcial"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Follows Original Medicare frequency rules",
+            "es": "Sigue las reglas de frecuencia de Medicare Original"
+          },
+          {
+            "en": "Fills Part B cost-sharing on diagnostic visits; preventive is already $0",
+            "es": "Cubre el costo compartido de la Parte B en visitas diagnósticas; preventivo ya es $0"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Standalone supplemental (private)", "es": "Suplemento independiente (privado)" },
-          { "value": { "en": "Varies", "es": "Varía" }, "status": "partial" },
-          { "en": "Some women's health riders cover additional screenings", "es": "Algunos complementos de salud femenina cubren detecciones adicionales" },
-          { "en": "Varies by policy; check plan documents", "es": "Varía según la póliza; consulte los documentos del plan" }
+          {
+            "en": "Standalone supplemental (private)",
+            "es": "Suplemento independiente (privado)"
+          },
+          {
+            "value": {
+              "en": "Varies",
+              "es": "Varía"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Some women's health riders cover additional screenings",
+            "es": "Algunos complementos de salud femenina cubren detecciones adicionales"
+          },
+          {
+            "en": "Varies by policy; check plan documents",
+            "es": "Varía según la póliza; consulte los documentos del plan"
+          }
         ]
       }
     ],
@@ -103,7 +180,6 @@
     },
     "source": "Medicare.gov Preventive Services, CMS Publication 10050, 42 CFR 410.56"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -156,7 +232,7 @@
       },
       "paragraphs": [
         {
-          "en": "Medicare's $0 preventive benefit applies only when the Pap smear is the primary reason for the visit and is billed under preventive codes. The cost can flip to subject to cost-sharing in two common situations. First, if you mention a symptom or concern during the visit (pelvic pain, discharge, irregular bleeding), the provider may recode part or all of the visit as diagnostic. The 2026 Part B deductible is $283, and after meeting it, you pay 20% coinsurance on the remaining balance. Second, if the provider does not participate in Medicare or does not accept assignment, they can charge up to 15% above the Medicare-approved amount (the limiting charge), and the $0 preventive rule does not protect you from that extra charge.",
+          "en": "Medicare's $0 preventive benefit applies only when the Pap smear is the primary reason for the visit and is billed under preventive codes. The cost can flip to subject to cost-sharing in two common situations. First, if you mention a symptom or concern during the visit (pelvic pain, discharge, irregular bleeding), the provider may recode part or all of the visit as diagnostic. The 2026 Part B [deductible](/en/glossary/deductible) is $283, and after meeting it, you pay 20% coinsurance on the remaining balance. Second, if the provider does not participate in Medicare or does not accept assignment, they can charge up to 15% above the Medicare-approved amount (the limiting charge), and the $0 preventive rule does not protect you from that extra charge.",
           "es": "El beneficio preventivo de $0 de Medicare aplica solo cuando el Papanicolau es la razón principal de la visita y se factura bajo códigos preventivos. El costo puede cambiar para estar sujeto a costos compartidos en dos situaciones comunes. Primero, si menciona un síntoma o preocupación durante la visita (dolor pélvico, flujo vaginal, sangrado irregular), el proveedor puede recodificar parte o toda la visita como de diagnóstico. El deducible de la Parte B de 2026 es $283, y después de cumplirlo, paga un coseguro del 20% sobre el saldo restante. Segundo, si el proveedor no participa en Medicare o no acepta la asignación, puede cobrar hasta un 15% por encima del monto aprobado por Medicare (el cargo límite), y la regla preventiva de $0 no lo protege de ese cargo adicional."
         },
         {
@@ -176,7 +252,7 @@
           "es": "Los planes Medicare Advantage (Parte C) están obligados por ley federal a cubrir todos los servicios preventivos de Medicare Original, incluido el Papanicolau, sin costo cuando son proporcionados por proveedores dentro de la red. Muchos planes Medicare Advantage van más allá de Medicare Original: algunos cubren el Papanicolau anualmente para todos los miembros independientemente del nivel de riesgo, y algunos cubren detecciones adicionales de salud femenina más allá del beneficio estándar. Sin embargo, debe ver a un proveedor dentro de la red para obtener el beneficio preventivo de $0. Ir fuera de la red puede resultar en costos compartidos incluso para servicios preventivos, dependiendo del tipo de plan."
         },
         {
-          "en": "To compare Medicare Advantage plans on preventive benefit details, use the Medicare Plan Finder at medicare.gov/plan-compare. The Annual Election Period (AEP) runs October 15 through December 7 each year, with coverage starting January 1. The Medicare Advantage Open Enrollment Period (OEP) runs January 1 through March 31, 2026, and allows one plan switch. Outside those windows, you can switch plans only if you qualify for a Special Enrollment Period.",
+          "en": "To compare Medicare Advantage plans on preventive benefit details, use the Medicare Plan Finder at medicare.gov/plan-compare. The [Annual Enrollment Period](/en/glossary/open-enrollment-period) (AEP) runs October 15 through December 7 each year, with coverage starting January 1. The Medicare Advantage Open Enrollment Period (OEP) runs January 1 through March 31, 2026, and allows one plan switch. Outside those windows, you can switch plans only if you qualify for a Special Enrollment Period.",
           "es": "Para comparar planes Medicare Advantage en detalles de beneficios preventivos, use el Buscador de Planes de Medicare en medicare.gov/plan-compare. El Período Anual de Elección (AEP) se extiende del 15 de octubre al 7 de diciembre de cada año, con cobertura que comienza el 1 de enero. El Período de Inscripción Abierta de Medicare Advantage (OEP) se extiende del 1 de enero al 31 de marzo de 2026, y permite un cambio de plan. Fuera de esas ventanas, puede cambiar de plan solo si califica para un Período de Inscripción Especial."
         }
       ]
@@ -205,11 +281,26 @@
         }
       ],
       "list": [
-        { "en": "Step 1: Confirm provider accepts Medicare assignment at medicare.gov/care-compare", "es": "Paso 1: Confirme que el proveedor acepta la asignación de Medicare en medicare.gov/care-compare" },
-        { "en": "Step 2: Tell the front desk you are scheduling a preventive Medicare Pap smear visit", "es": "Paso 2: Informe al personal de recepción que está programando una visita preventiva de Papanicolau de Medicare" },
-        { "en": "Step 3: Confirm your risk category (average vs. high risk) so the correct frequency code is used", "es": "Paso 3: Confirme su categoría de riesgo (promedio versus alto riesgo) para que se use el código de frecuencia correcto" },
-        { "en": "Step 4: If you have additional symptoms, ask for a split-bill between preventive and diagnostic services", "es": "Paso 4: Si tiene síntomas adicionales, solicite una facturación dividida entre servicios preventivos y de diagnóstico" },
-        { "en": "Step 5: After the visit, verify the claim on mymedicare.gov under the Preventive Services tab", "es": "Paso 5: Después de la visita, verifique la reclamación en mymedicare.gov bajo la pestaña de Servicios Preventivos" }
+        {
+          "en": "Step 1: Confirm provider accepts Medicare assignment at medicare.gov/care-compare",
+          "es": "Paso 1: Confirme que el proveedor acepta la asignación de Medicare en medicare.gov/care-compare"
+        },
+        {
+          "en": "Step 2: Tell the front desk you are scheduling a preventive Medicare Pap smear visit",
+          "es": "Paso 2: Informe al personal de recepción que está programando una visita preventiva de Papanicolau de Medicare"
+        },
+        {
+          "en": "Step 3: Confirm your risk category (average vs. high risk) so the correct frequency code is used",
+          "es": "Paso 3: Confirme su categoría de riesgo (promedio versus alto riesgo) para que se use el código de frecuencia correcto"
+        },
+        {
+          "en": "Step 4: If you have additional symptoms, ask for a split-bill between preventive and diagnostic services",
+          "es": "Paso 4: Si tiene síntomas adicionales, solicite una facturación dividida entre servicios preventivos y de diagnóstico"
+        },
+        {
+          "en": "Step 5: After the visit, verify the claim on mymedicare.gov under the Preventive Services tab",
+          "es": "Paso 5: Después de la visita, verifique la reclamación en mymedicare.gov bajo la pestaña de Servicios Preventivos"
+        }
       ]
     },
     {
@@ -225,35 +316,75 @@
       ]
     }
   ],
-
   "howToApply": {
     "numberedSteps": [
-      { "en": "Step 1: Confirm your provider accepts Medicare assignment. Use the Care Compare tool at medicare.gov/care-compare or call 1-800-MEDICARE (1-800-633-4227).", "es": "Paso 1: Confirme que su proveedor acepta la asignación de Medicare. Use la herramienta Care Compare en medicare.gov/care-compare o llame al 1-800-MEDICARE (1-800-633-4227)." },
-      { "en": "Step 2: Schedule the visit as a preventive Medicare screening. Tell the scheduler you want to use your Part B preventive Pap smear benefit.", "es": "Paso 2: Programe la visita como una detección preventiva de Medicare. Informe al programador que desea usar su beneficio preventivo de Papanicolau de la Parte B." },
-      { "en": "Step 3: At the visit, confirm your risk status (average or high risk) with the provider so the correct screening frequency is applied.", "es": "Paso 3: En la visita, confirme su estado de riesgo (promedio o alto riesgo) con el proveedor para que se aplique la frecuencia de detección correcta." },
-      { "en": "Step 4: After the visit, review your Medicare Summary Notice or log into mymedicare.gov to confirm $0 was billed under preventive codes.", "es": "Paso 4: Después de la visita, revise su Aviso de Resumen de Medicare o inicie sesión en mymedicare.gov para confirmar que se facturaron $0 bajo códigos preventivos." },
-      { "en": "Step 5: If you received an unexpected bill, call your provider's billing department and cite Medicare Benefit Policy Manual Chapter 15, Section 280. If the issue persists, call 1-800-MEDICARE to file a billing complaint.", "es": "Paso 5: Si recibió una factura inesperada, llame al departamento de facturación de su proveedor y cite el Manual de Política de Beneficios de Medicare, Capítulo 15, Sección 280. Si el problema persiste, llame al 1-800-MEDICARE para presentar una queja de facturación." }
+      {
+        "en": "Step 1: Confirm your provider accepts Medicare assignment. Use the Care Compare tool at medicare.gov/care-compare or call 1-800-MEDICARE (1-800-633-4227).",
+        "es": "Paso 1: Confirme que su proveedor acepta la asignación de Medicare. Use la herramienta Care Compare en medicare.gov/care-compare o llame al 1-800-MEDICARE (1-800-633-4227)."
+      },
+      {
+        "en": "Step 2: Schedule the visit as a preventive Medicare screening. Tell the scheduler you want to use your Part B preventive Pap smear benefit.",
+        "es": "Paso 2: Programe la visita como una detección preventiva de Medicare. Informe al programador que desea usar su beneficio preventivo de Papanicolau de la Parte B."
+      },
+      {
+        "en": "Step 3: At the visit, confirm your risk status (average or high risk) with the provider so the correct screening frequency is applied.",
+        "es": "Paso 3: En la visita, confirme su estado de riesgo (promedio o alto riesgo) con el proveedor para que se aplique la frecuencia de detección correcta."
+      },
+      {
+        "en": "Step 4: After the visit, review your Medicare Summary Notice or log into mymedicare.gov to confirm $0 was billed under preventive codes.",
+        "es": "Paso 4: Después de la visita, revise su Aviso de Resumen de Medicare o inicie sesión en mymedicare.gov para confirmar que se facturaron $0 bajo códigos preventivos."
+      },
+      {
+        "en": "Step 5: If you received an unexpected bill, call your provider's billing department and cite Medicare Benefit Policy Manual Chapter 15, Section 280. If the issue persists, call 1-800-MEDICARE to file a billing complaint.",
+        "es": "Paso 5: Si recibió una factura inesperada, llame al departamento de facturación de su proveedor y cite el Manual de Política de Beneficios de Medicare, Capítulo 15, Sección 280. Si el problema persiste, llame al 1-800-MEDICARE para presentar una queja de facturación."
+      }
     ],
     "govStartingUrl": "https://www.medicare.gov/coverage/cervical-vaginal-cancer-screenings",
     "documentsNeeded": [
-      { "en": "Medicare card or Medicare Beneficiary Identifier (MBI) number", "es": "Tarjeta de Medicare o número de Identificador de Beneficiario de Medicare (MBI)" },
-      { "en": "Medigap or Medicare Advantage card if applicable", "es": "Tarjeta de Medigap o Medicare Advantage si aplica" },
-      { "en": "Documentation of high-risk factors (prior abnormal Pap result, physician note) if claiming annual frequency", "es": "Documentación de factores de alto riesgo (resultado previo anormal de Papanicolau, nota médica) si solicita frecuencia anual" },
-      { "en": "Date of last Pap smear to confirm you are within the eligible screening window", "es": "Fecha del último Papanicolau para confirmar que está dentro de la ventana de detección elegible" }
+      {
+        "en": "Medicare card or Medicare Beneficiary Identifier (MBI) number",
+        "es": "Tarjeta de Medicare o número de Identificador de Beneficiario de Medicare (MBI)"
+      },
+      {
+        "en": "Medigap or Medicare Advantage card if applicable",
+        "es": "Tarjeta de Medigap o Medicare Advantage si aplica"
+      },
+      {
+        "en": "Documentation of high-risk factors (prior abnormal Pap result, physician note) if claiming annual frequency",
+        "es": "Documentación de factores de alto riesgo (resultado previo anormal de Papanicolau, nota médica) si solicita frecuencia anual"
+      },
+      {
+        "en": "Date of last Pap smear to confirm you are within the eligible screening window",
+        "es": "Fecha del último Papanicolau para confirmar que está dentro de la ventana de detección elegible"
+      }
     ],
     "commonDenialReasons": [
-      { "en": "Pap smear performed too soon (within 24 months for average-risk, or within 12 months for high-risk) without new documentation of changed risk status", "es": "Papanicolau realizado demasiado pronto (dentro de 24 meses para riesgo promedio, o dentro de 12 meses para alto riesgo) sin nueva documentación de cambio en el estado de riesgo" },
-      { "en": "Provider billed a diagnostic code instead of preventive codes Q0091 and G0101", "es": "El proveedor facturó un código de diagnóstico en lugar de los códigos preventivos Q0091 y G0101" },
-      { "en": "Provider does not accept Medicare assignment, resulting in excess charges not covered by Part B", "es": "El proveedor no acepta la asignación de Medicare, resultando en cargos en exceso no cubiertos por la Parte B" },
-      { "en": "High-risk status not documented in medical record before billing for annual screening", "es": "Estado de alto riesgo no documentado en el registro médico antes de facturar la detección anual" },
-      { "en": "Patient is enrolled in Medicare Advantage but saw an out-of-network provider without authorization", "es": "La paciente está inscrita en Medicare Advantage pero vio a un proveedor fuera de la red sin autorización" }
+      {
+        "en": "Pap smear performed too soon (within 24 months for average-risk, or within 12 months for high-risk) without new documentation of changed risk status",
+        "es": "Papanicolau realizado demasiado pronto (dentro de 24 meses para riesgo promedio, o dentro de 12 meses para alto riesgo) sin nueva documentación de cambio en el estado de riesgo"
+      },
+      {
+        "en": "Provider billed a diagnostic code instead of preventive codes Q0091 and G0101",
+        "es": "El proveedor facturó un código de diagnóstico en lugar de los códigos preventivos Q0091 y G0101"
+      },
+      {
+        "en": "Provider does not accept Medicare assignment, resulting in excess charges not covered by Part B",
+        "es": "El proveedor no acepta la asignación de Medicare, resultando en cargos en exceso no cubiertos por la Parte B"
+      },
+      {
+        "en": "High-risk status not documented in medical record before billing for annual screening",
+        "es": "Estado de alto riesgo no documentado en el registro médico antes de facturar la detección anual"
+      },
+      {
+        "en": "Patient is enrolled in Medicare Advantage but saw an out-of-network provider without authorization",
+        "es": "La paciente está inscrita en Medicare Advantage pero vio a un proveedor fuera de la red sin autorización"
+      }
     ],
     "deadline": {
       "en": "No enrollment window. Medicare preventive benefits are available year-round. Schedule when you are within your eligible screening window.",
       "es": "Sin ventana de inscripción. Los beneficios preventivos de Medicare están disponibles durante todo el año. Programe cuando esté dentro de su ventana de detección elegible."
     }
   },
-
   "faqs": {
     "en": [
       {
@@ -324,26 +455,36 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Does Medicare Cover Mammograms?", "es": "¿Medicare Cubre las Mamografías?" },
+      "label": {
+        "en": "Does Medicare Cover Mammograms?",
+        "es": "¿Medicare Cubre las Mamografías?"
+      },
       "href": "/qa/does-medicare-cover-mammogram"
     },
     {
-      "label": { "en": "Does Medicare Cover Preventive Care?", "es": "¿Medicare Cubre la Atención Preventiva?" },
+      "label": {
+        "en": "Does Medicare Cover Preventive Care?",
+        "es": "¿Medicare Cubre la Atención Preventiva?"
+      },
       "href": "/qa/does-medicare-cover-preventive-care"
     },
     {
-      "label": { "en": "Medicare Part B Coverage Guide 2026", "es": "Guía de Cobertura de Medicare Parte B 2026" },
+      "label": {
+        "en": "Medicare Part B Coverage Guide 2026",
+        "es": "Guía de Cobertura de Medicare Parte B 2026"
+      },
       "href": "/medicare/part-b"
     },
     {
-      "label": { "en": "Compare Medicare Plans", "es": "Compare Planes de Medicare" },
+      "label": {
+        "en": "Compare Medicare Plans",
+        "es": "Compare Planes de Medicare"
+      },
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "Medicare.gov: Cervical and Vaginal Cancer Screenings",

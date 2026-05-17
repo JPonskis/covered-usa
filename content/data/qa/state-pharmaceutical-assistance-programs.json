@@ -23,8 +23,24 @@
   "lastUpdated": "2026-05-15",
   "readingTime": "7 min read",
   "keyTerms": {
-    "en": ["SPAP", "state pharmaceutical assistance program", "Medicare Part D help", "prescription drug assistance 2026", "EPIC NY", "PAAD NJ", "PACE Pennsylvania"],
-    "es": ["SPAP", "programa estatal de asistencia farmacéutica", "ayuda para Medicare Parte D", "asistencia para medicamentos 2026", "EPIC NY", "PAAD NJ", "PACE Pensilvania"]
+    "en": [
+      "SPAP",
+      "state pharmaceutical assistance program",
+      "Medicare Part D help",
+      "prescription drug assistance 2026",
+      "EPIC NY",
+      "PAAD NJ",
+      "PACE Pennsylvania"
+    ],
+    "es": [
+      "SPAP",
+      "programa estatal de asistencia farmacéutica",
+      "ayuda para Medicare Parte D",
+      "asistencia para medicamentos 2026",
+      "EPIC NY",
+      "PAAD NJ",
+      "PACE Pensilvania"
+    ]
   },
   "isLighthouse": false,
   "meta": {
@@ -49,95 +65,296 @@
       "es": "La Parte D de Medicare ayuda a cubrir medicamentos recetados, pero las primas, los deducibles y los copagos aún se acumulan rápidamente. Los Programas Estatales de Asistencia Farmacéutica (SPAP) son la red de seguridad adicional: programas financiados por el estado que pagan parte o todos sus costos de medicamentos de bolsillo. Si vive en uno de los aproximadamente 14 estados con un SPAP activo en 2026, puede calificar para un alivio adicional significativo, independientemente de si ya recibe Extra Help (LIS) de Medicare."
     },
     {
-      "en": "This guide covers which states have active SPAPs in 2026, the income and age limits for each major program, how SPAPs interact with Medicare Part D and Extra Help, and how to apply. The 2026 Part D out-of-pocket cap is $2,100. SPAP payments count toward that cap, meaning SPAP members often reach catastrophic coverage faster and pay nothing out of pocket for the rest of the year.",
+      "en": "This guide covers which states have active SPAPs in 2026, the income and age limits for each major program, how SPAPs interact with [Medicare Part D](/en/glossary/medicare-part-d) and [Extra Help](/en/qa/extra-help-eligibility), and how to apply. The 2026 Part D out-of-pocket cap is $2,100. SPAP payments count toward that cap, meaning SPAP members often reach catastrophic coverage faster and pay nothing out of pocket for the rest of the year.",
       "es": "Esta guía cubre qué estados tienen SPAP activos en 2026, los límites de ingresos y edad para cada programa principal, cómo los SPAP interactúan con Medicare Parte D y Extra Help, y cómo solicitar. El límite de gastos de bolsillo de la Parte D de 2026 es $2,100. Los pagos del SPAP cuentan para ese límite, lo que significa que los miembros del SPAP a menudo alcanzan la cobertura catastrófica más rápido y no pagan nada de bolsillo por el resto del año."
     }
   ],
   "coverageBreakdown": {
     "headers": {
-      "en": ["State Program", "Age/Disability", "Income Limit (Single)", "Income Limit (Couple)", "What It Covers"],
-      "es": ["Programa estatal", "Edad/Discapacidad", "Límite de ingresos (individual)", "Límite de ingresos (pareja)", "Qué cubre"]
+      "en": [
+        "State Program",
+        "Age/Disability",
+        "Income Limit (Single)",
+        "Income Limit (Couple)",
+        "What It Covers"
+      ],
+      "es": [
+        "Programa estatal",
+        "Edad/Discapacidad",
+        "Límite de ingresos (individual)",
+        "Límite de ingresos (pareja)",
+        "Qué cubre"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "NY EPIC (Elderly Pharmaceutical Insurance Coverage)", "es": "NY EPIC (Cobertura de Seguro Farmacéutico para Adultos Mayores)" },
-          { "en": "Age 65+", "es": "65 o más" },
-          { "value": { "en": "Up to $75,000/year", "es": "Hasta $75,000/año" }, "status": "yes" },
-          { "value": { "en": "Up to $100,000/year", "es": "Hasta $100,000/año" }, "status": "yes" },
-          { "en": "Part D premiums (up to $23K income) + copay reduction; 2-tier Fee/Deductible plan", "es": "Primas de la Parte D (hasta $23K de ingresos) + reducción de copagos; plan de 2 niveles de Cuota/Deducible" }
+          {
+            "en": "NY EPIC (Elderly Pharmaceutical Insurance Coverage)",
+            "es": "NY EPIC (Cobertura de Seguro Farmacéutico para Adultos Mayores)"
+          },
+          {
+            "en": "Age 65+",
+            "es": "65 o más"
+          },
+          {
+            "value": {
+              "en": "Up to $75,000/year",
+              "es": "Hasta $75,000/año"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Up to $100,000/year",
+              "es": "Hasta $100,000/año"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Part D premiums (up to $23K income) + copay reduction; 2-tier Fee/Deductible plan",
+            "es": "Primas de la Parte D (hasta $23K de ingresos) + reducción de copagos; plan de 2 niveles de Cuota/Deducible"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "NJ PAAD (Pharmaceutical Assistance to the Aged and Disabled)", "es": "NJ PAAD (Asistencia Farmacéutica para Personas Mayores y con Discapacidad)" },
-          { "en": "Age 65+ or disabled", "es": "65+ o con discapacidad" },
-          { "value": { "en": "Under $54,943/year", "es": "Menos de $54,943/año" }, "status": "yes" },
-          { "value": { "en": "Under $62,390/year", "es": "Menos de $62,390/año" }, "status": "yes" },
-          { "en": "Copays capped at $5 generic / $7 brand; Part D premium assistance", "es": "Copagos limitados a $5 genérico / $7 de marca; asistencia con primas de la Parte D" }
+          {
+            "en": "NJ PAAD (Pharmaceutical Assistance to the Aged and Disabled)",
+            "es": "NJ PAAD (Asistencia Farmacéutica para Personas Mayores y con Discapacidad)"
+          },
+          {
+            "en": "Age 65+ or disabled",
+            "es": "65+ o con discapacidad"
+          },
+          {
+            "value": {
+              "en": "Under $54,943/year",
+              "es": "Menos de $54,943/año"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Under $62,390/year",
+              "es": "Menos de $62,390/año"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Copays capped at $5 generic / $7 brand; Part D premium assistance",
+            "es": "Copagos limitados a $5 genérico / $7 de marca; asistencia con primas de la Parte D"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "NJ Senior Gold Prescription Discount", "es": "NJ Senior Gold Descuento de Recetas" },
-          { "en": "Age 65+", "es": "65 o más" },
-          { "value": { "en": "$54,943 to $64,943/year", "es": "$54,943 a $64,943/año" }, "status": "partial" },
-          { "value": { "en": "$62,390 to $72,390/year", "es": "$62,390 a $72,390/año" }, "status": "partial" },
-          { "en": "Discounts on any drug copay over $15; accelerates Part D catastrophic coverage", "es": "Descuentos en copagos superiores a $15; acelera la cobertura catastrófica de la Parte D" }
+          {
+            "en": "NJ Senior Gold Prescription Discount",
+            "es": "NJ Senior Gold Descuento de Recetas"
+          },
+          {
+            "en": "Age 65+",
+            "es": "65 o más"
+          },
+          {
+            "value": {
+              "en": "$54,943 to $64,943/year",
+              "es": "$54,943 a $64,943/año"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "$62,390 to $72,390/year",
+              "es": "$62,390 a $72,390/año"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Discounts on any drug copay over $15; accelerates Part D catastrophic coverage",
+            "es": "Descuentos en copagos superiores a $15; acelera la cobertura catastrófica de la Parte D"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "PA PACE (Pharmaceutical Assistance Contract for the Elderly)", "es": "PA PACE (Contrato de Asistencia Farmacéutica para Adultos Mayores)" },
-          { "en": "Age 65+", "es": "65 o más" },
-          { "value": { "en": "Up to $14,500/year", "es": "Hasta $14,500/año" }, "status": "yes" },
-          { "value": { "en": "Up to $17,700/year", "es": "Hasta $17,700/año" }, "status": "yes" },
-          { "en": "Low copays on covered drugs; wraps around Part D", "es": "Copagos bajos en medicamentos cubiertos; complementa la Parte D" }
+          {
+            "en": "PA PACE (Pharmaceutical Assistance Contract for the Elderly)",
+            "es": "PA PACE (Contrato de Asistencia Farmacéutica para Adultos Mayores)"
+          },
+          {
+            "en": "Age 65+",
+            "es": "65 o más"
+          },
+          {
+            "value": {
+              "en": "Up to $14,500/year",
+              "es": "Hasta $14,500/año"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Up to $17,700/year",
+              "es": "Hasta $17,700/año"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Low copays on covered drugs; wraps around Part D",
+            "es": "Copagos bajos en medicamentos cubiertos; complementa la Parte D"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "PA PACENET (higher-income tier of PACE)", "es": "PA PACENET (nivel de mayores ingresos de PACE)" },
-          { "en": "Age 65+", "es": "65 o más" },
-          { "value": { "en": "$14,501 to $45,000/year (as of July 2026)", "es": "$14,501 a $45,000/año (a partir de julio 2026)" }, "status": "partial" },
-          { "value": { "en": "$17,701 to $55,000/year (as of July 2026)", "es": "$17,701 a $55,000/año (a partir de julio 2026)" }, "status": "partial" },
-          { "en": "Annual deductible then copay assistance; Part D coordination", "es": "Deducible anual y luego asistencia con copagos; coordinación con la Parte D" }
+          {
+            "en": "PA PACENET (higher-income tier of PACE)",
+            "es": "PA PACENET (nivel de mayores ingresos de PACE)"
+          },
+          {
+            "en": "Age 65+",
+            "es": "65 o más"
+          },
+          {
+            "value": {
+              "en": "$14,501 to $45,000/year (as of July 2026)",
+              "es": "$14,501 a $45,000/año (a partir de julio 2026)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "$17,701 to $55,000/year (as of July 2026)",
+              "es": "$17,701 a $55,000/año (a partir de julio 2026)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Annual deductible then copay assistance; Part D coordination",
+            "es": "Deducible anual y luego asistencia con copagos; coordinación con la Parte D"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "MA Prescription Advantage", "es": "MA Prescription Advantage" },
-          { "en": "Age 65+ or disabled", "es": "65+ o con discapacidad" },
-          { "value": { "en": "Up to 500% FPL (~$79,800/year single)", "es": "Hasta 500% FPL (~$79,800/año individual)" }, "status": "yes" },
-          { "value": { "en": "Up to 500% FPL (~$108,200/year couple)", "es": "Hasta 500% FPL (~$108,200/año pareja)" }, "status": "yes" },
-          { "en": "Copay and premium assistance scaled to income; no asset test", "es": "Asistencia con copagos y primas según ingresos; sin prueba de activos" }
+          {
+            "en": "MA Prescription Advantage",
+            "es": "MA Prescription Advantage"
+          },
+          {
+            "en": "Age 65+ or disabled",
+            "es": "65+ o con discapacidad"
+          },
+          {
+            "value": {
+              "en": "Up to 500% FPL (~$79,800/year single)",
+              "es": "Hasta 500% FPL (~$79,800/año individual)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Up to 500% FPL (~$108,200/year couple)",
+              "es": "Hasta 500% FPL (~$108,200/año pareja)"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Copay and premium assistance scaled to income; no asset test",
+            "es": "Asistencia con copagos y primas según ingresos; sin prueba de activos"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "MD SPDAP (Senior Prescription Drug Assistance Program)", "es": "MD SPDAP (Programa de Asistencia para Medicamentos para Adultos Mayores)" },
-          { "en": "Age 65+", "es": "65 o más" },
-          { "value": { "en": "Up to 300% FPL (~$47,880/year single)", "es": "Hasta 300% FPL (~$47,880/año individual)" }, "status": "yes" },
-          { "value": { "en": "Up to 300% FPL (~$64,920/year couple)", "es": "Hasta 300% FPL (~$64,920/año pareja)" }, "status": "yes" },
-          { "en": "Up to $100/month premium subsidy; no coverage gap subsidy for 2026", "es": "Hasta $100/mes de subsidio de prima; sin subsidio de brecha de cobertura en 2026" }
+          {
+            "en": "MD SPDAP (Senior Prescription Drug Assistance Program)",
+            "es": "MD SPDAP (Programa de Asistencia para Medicamentos para Adultos Mayores)"
+          },
+          {
+            "en": "Age 65+",
+            "es": "65 o más"
+          },
+          {
+            "value": {
+              "en": "Up to 300% FPL (~$47,880/year single)",
+              "es": "Hasta 300% FPL (~$47,880/año individual)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Up to 300% FPL (~$64,920/year couple)",
+              "es": "Hasta 300% FPL (~$64,920/año pareja)"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Up to $100/month premium subsidy; no coverage gap subsidy for 2026",
+            "es": "Hasta $100/mes de subsidio de prima; sin subsidio de brecha de cobertura en 2026"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "WI SeniorCare", "es": "WI SeniorCare" },
-          { "en": "Age 65+", "es": "65 o más" },
-          { "value": { "en": "4 tiers up to 240% FPL (~$38,304/year single)", "es": "4 niveles hasta 240% FPL (~$38,304/año individual)" }, "status": "partial" },
-          { "value": { "en": "4 tiers up to 240% FPL (~$51,936/year couple)", "es": "4 niveles hasta 240% FPL (~$51,936/año pareja)" }, "status": "partial" },
-          { "en": "$5/$15 copays at lowest tier; $30/year enrollment fee; alternative to Part D", "es": "Copagos de $5/$15 en el nivel más bajo; cuota de inscripción de $30/año; alternativa a la Parte D" }
+          {
+            "en": "WI SeniorCare",
+            "es": "WI SeniorCare"
+          },
+          {
+            "en": "Age 65+",
+            "es": "65 o más"
+          },
+          {
+            "value": {
+              "en": "4 tiers up to 240% FPL (~$38,304/year single)",
+              "es": "4 niveles hasta 240% FPL (~$38,304/año individual)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "4 tiers up to 240% FPL (~$51,936/year couple)",
+              "es": "4 niveles hasta 240% FPL (~$51,936/año pareja)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "$5/$15 copays at lowest tier; $30/year enrollment fee; alternative to Part D",
+            "es": "Copagos de $5/$15 en el nivel más bajo; cuota de inscripción de $30/año; alternativa a la Parte D"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "VT VPharm", "es": "VT VPharm" },
-          { "en": "Age 65+ or disabled", "es": "65+ o con discapacidad" },
-          { "value": { "en": "Up to 225% FPL (~$2,991/month single; 3 income tiers)", "es": "Hasta 225% FPL (~$2,991/mes individual; 3 niveles de ingresos)" }, "status": "partial" },
-          { "value": { "en": "Up to 225% FPL (~$4,060/month couple; 3 income tiers)", "es": "Hasta 225% FPL (~$4,060/mes pareja; 3 niveles de ingresos)" }, "status": "partial" },
-          { "en": "Monthly premiums of $15, $20, or $50 based on income; prescription cost-share reduction", "es": "Primas mensuales de $15, $20 o $50 según ingresos; reducción del costo compartido de medicamentos" }
+          {
+            "en": "VT VPharm",
+            "es": "VT VPharm"
+          },
+          {
+            "en": "Age 65+ or disabled",
+            "es": "65+ o con discapacidad"
+          },
+          {
+            "value": {
+              "en": "Up to 225% FPL (~$2,991/month single; 3 income tiers)",
+              "es": "Hasta 225% FPL (~$2,991/mes individual; 3 niveles de ingresos)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "Up to 225% FPL (~$4,060/month couple; 3 income tiers)",
+              "es": "Hasta 225% FPL (~$4,060/mes pareja; 3 niveles de ingresos)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Monthly premiums of $15, $20, or $50 based on income; prescription cost-share reduction",
+            "es": "Primas mensuales de $15, $20 o $50 según ingresos; reducción del costo compartido de medicamentos"
+          }
         ]
       }
     ],
@@ -345,7 +562,7 @@
       },
       "paragraphs": [
         {
-          "en": "SPAPs are secondary payers to Medicare Part D. When you fill a prescription, Part D pays first. Your SPAP then covers some or all of your remaining cost-share, depending on your program's benefit design. The key mechanical detail: SPAP payments count toward your TrOOP (True Out-of-Pocket) total under Part D. The 2026 Part D out-of-pocket cap is $2,100. Because SPAP contributions accelerate your TrOOP, members often reach the catastrophic phase earlier in the calendar year and pay $0 out of pocket after that.",
+          "en": "SPAPs are secondary payers to [Medicare Part D](/en/qa/does-medicare-cover-prescription-drugs). When you fill a prescription, Part D pays first. Your SPAP then covers some or all of your remaining cost-share, depending on your program's benefit design. The key mechanical detail: SPAP payments count toward your TrOOP (True Out-of-Pocket) total under Part D. The 2026 Part D out-of-pocket cap is $2,100. Because SPAP contributions accelerate your TrOOP, members often reach the catastrophic phase earlier in the calendar year and pay $0 out of pocket after that.",
           "es": "Los SPAP son pagadores secundarios de Medicare Parte D. Cuando surte una receta, la Parte D paga primero. Su SPAP luego cubre parte o todo su costo restante, según el diseño de beneficios de su programa. El detalle mecánico clave: los pagos del SPAP cuentan para su total TrOOP (Gasto Real de Bolsillo) bajo la Parte D. El límite de gastos de bolsillo de la Parte D de 2026 es $2,100. Dado que las contribuciones del SPAP aceleran su TrOOP, los miembros a menudo alcanzan la fase catastrófica antes en el año calendario y pagan $0 de bolsillo después de eso."
         },
         {
@@ -375,7 +592,7 @@
       },
       "paragraphs": [
         {
-          "en": "Yes. SPAPs and Medicare Part D Extra Help (also called the Low-Income Subsidy, or LIS) are separate programs and you can receive both at the same time. Extra Help is a federal program administered by the Social Security Administration that covers Part D premiums, deductibles, and copays for individuals with income at or below 150% of the Federal Poverty Level ($23,940/year for a single person in 2026). In 2026, everyone who qualifies for Extra Help receives full benefits, with copays capped at $5.10 for generics and $12.65 for brand-name drugs.",
+          "en": "Yes. SPAPs and [Medicare Part D Extra Help](/en/qa/extra-help-eligibility) (also called the Low-Income Subsidy, or LIS) are separate programs and you can receive both at the same time. Extra Help is a federal program administered by the Social Security Administration that covers Part D premiums, deductibles, and copays for individuals with income at or below 150% of the Federal Poverty Level ($23,940/year for a single person in 2026). In 2026, everyone who qualifies for Extra Help receives full benefits, with copays capped at $5.10 for generics and $12.65 for brand-name drugs.",
           "es": "Sí. Los SPAP y Extra Help de Medicare Parte D (también llamado Subsidio de Bajos Ingresos, o LIS) son programas separados y puede recibir ambos al mismo tiempo. Extra Help es un programa federal administrado por la Administración del Seguro Social que cubre primas, deducibles y copagos de la Parte D para personas con ingresos iguales o inferiores al 150% del Nivel de Pobreza Federal ($23,940/año para una persona en 2026). En 2026, todos los que califican para Extra Help reciben beneficios completos, con copagos limitados a $5.10 para genéricos y $12.65 para medicamentos de marca."
         },
         {
@@ -391,7 +608,7 @@
       },
       "paragraphs": [
         {
-          "en": "If you live in a state that does not have an active SPAP in 2026, you have several alternative pathways to reduce prescription drug costs. The IRA's $2,100 Part D out-of-pocket cap, effective in 2026, already eliminates the old coverage gap (donut hole) for all Part D enrollees. Beyond that:",
+          "en": "If you live in a state that does not have an active SPAP in 2026, you have several alternative pathways to reduce prescription drug costs. The IRA's $2,100 Part D [out-of-pocket cap](/en/glossary/out-of-pocket-maximum), effective in 2026, already eliminates the old coverage gap (donut hole) for all Part D enrollees. Beyond that:",
           "es": "Si vive en un estado que no tiene un SPAP activo en 2026, tiene varias vías alternativas para reducir los costos de medicamentos recetados. El límite de gastos de bolsillo de la Parte D de $2,100 de la IRA, vigente en 2026, ya elimina la antigua brecha de cobertura (donut hole) para todos los inscritos en la Parte D. Más allá de eso:"
         }
       ],
@@ -425,7 +642,7 @@
       },
       "paragraphs": [
         {
-          "en": "About 12 million Americans are dual-eligible: they qualify for both Medicare and Medicaid. If you are dual-eligible, your prescription drug costs are largely covered by Medicaid acting as a secondary payer to Part D. Full dual-eligibles automatically qualify for Extra Help and pay near-zero drug copays. SPAPs generally offer the most additional value to Medicare beneficiaries who are above the Extra Help income threshold but still struggling with drug costs: the gap between 150% FPL and each state's SPAP income ceiling.",
+          "en": "About 12 million Americans are dual-eligible: they qualify for [both Medicare and Medicaid](/en/qa/can-i-have-both-medicare-and-medicaid). If you are dual-eligible, your prescription drug costs are largely covered by Medicaid acting as a secondary payer to Part D. Full dual-eligibles automatically qualify for Extra Help and pay near-zero drug copays. SPAPs generally offer the most additional value to Medicare beneficiaries who are above the Extra Help income threshold but still struggling with drug costs: the gap between 150% FPL and each state's SPAP income ceiling.",
           "es": "Alrededor de 12 millones de estadounidenses son de doble elegibilidad: califican tanto para Medicare como para Medicaid. Si es de doble elegibilidad, sus costos de medicamentos recetados están cubiertos en gran medida por Medicaid actuando como pagador secundario de la Parte D. Los de doble elegibilidad completa califican automáticamente para Extra Help y pagan copagos de medicamentos casi nulos. Los SPAP generalmente ofrecen el mayor valor adicional a los beneficiarios de Medicare que están por encima del umbral de ingresos de Extra Help pero aún tienen dificultades con los costos de medicamentos: la brecha entre el 150% del FPL y el límite de ingresos del SPAP de cada estado."
         },
         {

@@ -4,8 +4,19 @@
   "pageType": "coverage",
   "topicCluster": "medicare-coverage",
   "keyTerms": {
-    "en": ["does medicare cover prescription drugs", "medicare prescription drug coverage 2026", "medicare part d 2026", "original medicare drug coverage", "medicare drug plan"],
-    "es": ["medicare cubre medicamentos recetados", "cobertura de medicamentos medicare 2026", "medicare parte d 2026", "medicamentos recetados medicare original"]
+    "en": [
+      "does medicare cover prescription drugs",
+      "medicare prescription drug coverage 2026",
+      "medicare part d 2026",
+      "original medicare drug coverage",
+      "medicare drug plan"
+    ],
+    "es": [
+      "medicare cubre medicamentos recetados",
+      "cobertura de medicamentos medicare 2026",
+      "medicare parte d 2026",
+      "medicamentos recetados medicare original"
+    ]
   },
   "isLighthouse": false,
   "isDeprecated": false,
@@ -27,7 +38,6 @@
   "ctaTarget": "analyzer",
   "lastUpdated": "2026-05-15",
   "readingTime": "7 min read",
-
   "meta": {
     "title": {
       "en": "Does Medicare Cover Prescription Drugs in 2026? | CoveredUSA",
@@ -38,69 +48,151 @@
       "es": "Medicare Original (Partes A y B) NO cubre la mayoría de los medicamentos ambulatorios. La Parte D cubre medicamentos de farmacia con un límite de $2,100 en 2026. Conozca sus opciones."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Does Original Medicare Cover Prescription Drugs in 2026?",
       "es": "¿Medicare Original Cubre Medicamentos Recetados en 2026?"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Original Medicare covers hospital stays (Part A) and doctor visits (Part B), but prescription drugs picked up at a pharmacy are a different story. When Medicare was created in 1965, outpatient drug coverage was not included, and that gap persisted for nearly four decades. Congress added voluntary prescription drug coverage in 2003 through the Medicare Modernization Act, creating Medicare Part D, which took effect January 1, 2006. In 2026, Part D carries a $2,100 annual out-of-pocket cap per the Inflation Reduction Act of 2022, the first hard cap in the program's history.",
       "es": "Medicare Original cubre las hospitalizaciones (Parte A) y las visitas al médico (Parte B), pero los medicamentos recetados que se recogen en una farmacia son una historia diferente. Cuando se creó Medicare en 1965, no se incluyó cobertura de medicamentos ambulatorios, y esa brecha persistió durante casi cuatro décadas. El Congreso añadió cobertura voluntaria de medicamentos recetados en 2003 mediante la Ley de Modernización de Medicare, creando la Parte D de Medicare, que entró en vigencia el 1 de enero de 2006. En 2026, la Parte D tiene un límite anual de gastos de bolsillo de $2,100 según la Ley de Reducción de la Inflación de 2022."
     },
     {
-      "en": "This guide explains the distinction between Part B drug coverage (clinical-setting drugs), Part D drug coverage (pharmacy drugs), and what happens if you skip drug coverage entirely. It also covers the 2026 Part D changes that directly reduce what Medicare beneficiaries pay at the pharmacy counter.",
+      "en": "This guide explains the distinction between Part B drug coverage (clinical-setting drugs), Part D drug coverage (pharmacy drugs), and what happens if you skip drug coverage entirely. It also covers the 2026 Part D changes that directly reduce what Medicare beneficiaries pay at the pharmacy counter. Low-income beneficiaries can further reduce costs through [Extra Help eligibility](/en/qa/extra-help-eligibility).",
       "es": "Esta guía explica la distinción entre la cobertura de medicamentos de la Parte B (medicamentos en entorno clínico), la cobertura de la Parte D (medicamentos de farmacia) y qué sucede si omite la cobertura de medicamentos por completo. También cubre los cambios de la Parte D en 2026 que reducen directamente lo que pagan los beneficiarios de Medicare en el mostrador de farmacia."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Coverage Type", "Covers Outpatient Rx Drugs?", "Key Detail", "2026 OOP Exposure"],
-      "es": ["Tipo de cobertura", "¿Cubre medicamentos recetados ambulatorios?", "Detalle clave", "Exposición de gastos en 2026"]
+      "en": [
+        "Coverage Type",
+        "Covers Outpatient Rx Drugs?",
+        "Key Detail",
+        "2026 OOP Exposure"
+      ],
+      "es": [
+        "Tipo de cobertura",
+        "¿Cubre medicamentos recetados ambulatorios?",
+        "Detalle clave",
+        "Exposición de gastos en 2026"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Original Medicare: Part A (Hospital)", "es": "Medicare Original: Parte A (Hospital)" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "en": "Covers drugs administered during a covered inpatient hospital stay only", "es": "Cubre medicamentos administrados durante una estancia hospitalaria cubierta únicamente" },
-          { "en": "Not applicable to outpatient pharmacy", "es": "No aplica para farmacia ambulatoria" }
+          {
+            "en": "Original Medicare: Part A (Hospital)",
+            "es": "Medicare Original: Parte A (Hospital)"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Covers drugs administered during a covered inpatient hospital stay only",
+            "es": "Cubre medicamentos administrados durante una estancia hospitalaria cubierta únicamente"
+          },
+          {
+            "en": "Not applicable to outpatient pharmacy",
+            "es": "No aplica para farmacia ambulatoria"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Original Medicare: Part B (Medical)", "es": "Medicare Original: Parte B (Médica)" },
-          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
-          { "en": "Covers specific drugs given in a clinical setting: infusions, injections, some oral cancer drugs, insulin used with a pump; you pay 20% after the 2026 $283 Part B deductible", "es": "Cubre medicamentos específicos administrados en entorno clínico: infusiones, inyecciones, algunos medicamentos orales contra el cáncer, insulina con bomba; usted paga el 20% después del deducible de la Parte B de $283 en 2026" },
-          { "en": "20% coinsurance after $283 deductible; no Part B OOP cap", "es": "20% coseguro después del deducible de $283; sin límite de gastos de bolsillo en la Parte B" }
+          {
+            "en": "Original Medicare: Part B (Medical)",
+            "es": "Medicare Original: Parte B (Médica)"
+          },
+          {
+            "value": {
+              "en": "Partial",
+              "es": "Parcial"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Covers specific drugs given in a clinical setting: infusions, injections, some oral cancer drugs, insulin used with a pump; you pay 20% after the 2026 $283 Part B deductible",
+            "es": "Cubre medicamentos específicos administrados en entorno clínico: infusiones, inyecciones, algunos medicamentos orales contra el cáncer, insulina con bomba; usted paga el 20% después del deducible de la Parte B de $283 en 2026"
+          },
+          {
+            "en": "20% coinsurance after $283 deductible; no Part B OOP cap",
+            "es": "20% coseguro después del deducible de $283; sin límite de gastos de bolsillo en la Parte B"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare Part D (Prescription Drug Plan)", "es": "Medicare Parte D (Plan de Medicamentos Recetados)" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
-          { "en": "Standalone PDP covers outpatient pharmacy drugs on the plan's formulary; insulin capped at $35/month per the Inflation Reduction Act of 2022; $2,100 annual OOP cap in 2026", "es": "PDP independiente cubre medicamentos de farmacia ambulatoria en el formulario del plan; insulina con límite de $35/mes según la Ley de Reducción de la Inflación de 2022; límite de gastos de bolsillo anual de $2,100 en 2026" },
-          { "en": "$2,100 maximum OOP in 2026 (IRA 2022 cap)", "es": "$2,100 máximo de gastos de bolsillo en 2026 (límite de la IRA 2022)" }
+          {
+            "en": "Medicare Part D (Prescription Drug Plan)",
+            "es": "Medicare Parte D (Plan de Medicamentos Recetados)"
+          },
+          {
+            "value": {
+              "en": "Yes",
+              "es": "Sí"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Standalone PDP covers outpatient pharmacy drugs on the plan's formulary; insulin capped at $35/month per the Inflation Reduction Act of 2022; $2,100 annual OOP cap in 2026",
+            "es": "PDP independiente cubre medicamentos de farmacia ambulatoria en el formulario del plan; insulina con límite de $35/mes según la Ley de Reducción de la Inflación de 2022; límite de gastos de bolsillo anual de $2,100 en 2026"
+          },
+          {
+            "en": "$2,100 maximum OOP in 2026 (IRA 2022 cap)",
+            "es": "$2,100 máximo de gastos de bolsillo en 2026 (límite de la IRA 2022)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare Advantage with Drug Coverage (MA-PD)", "es": "Medicare Advantage con cobertura de medicamentos (MA-PD)" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
-          { "en": "Bundles Parts A, B, and D into one private plan; must cover at least the same drug categories as standalone Part D; many plans offer $0 premium for the drug portion", "es": "Combina las Partes A, B y D en un plan privado; debe cubrir al menos las mismas categorías de medicamentos que la Parte D independiente; muchos planes ofrecen prima de $0 para la porción de medicamentos" },
-          { "en": "Same $2,100 Part D OOP cap applies; may have separate medical OOP cap", "es": "Aplica el mismo límite de $2,100 de la Parte D; puede tener un límite de gastos médicos separado" }
+          {
+            "en": "Medicare Advantage with Drug Coverage (MA-PD)",
+            "es": "Medicare Advantage con cobertura de medicamentos (MA-PD)"
+          },
+          {
+            "value": {
+              "en": "Yes",
+              "es": "Sí"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Bundles Parts A, B, and D into one private plan; must cover at least the same drug categories as standalone Part D; many plans offer $0 premium for the drug portion",
+            "es": "Combina las Partes A, B y D en un plan privado; debe cubrir al menos las mismas categorías de medicamentos que la Parte D independiente; muchos planes ofrecen prima de $0 para la porción de medicamentos"
+          },
+          {
+            "en": "Same $2,100 Part D OOP cap applies; may have separate medical OOP cap",
+            "es": "Aplica el mismo límite de $2,100 de la Parte D; puede tener un límite de gastos médicos separado"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medigap (Medicare Supplement)", "es": "Medigap (Suplemento de Medicare)" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "en": "Medigap covers Part A and Part B cost-sharing; it does not cover Part D outpatient drugs. Medigap enrollees must also buy a separate Part D plan for pharmacy coverage.", "es": "Medigap cubre los costos compartidos de las Partes A y B; no cubre los medicamentos ambulatorios de la Parte D. Los inscritos en Medigap también deben comprar un plan separado de la Parte D para cobertura de farmacia." },
-          { "en": "Part D needed separately; late enrollment penalty if delayed", "es": "La Parte D se necesita por separado; penalización por inscripción tardía si se retrasa" }
+          {
+            "en": "Medigap (Medicare Supplement)",
+            "es": "Medigap (Suplemento de Medicare)"
+          },
+          {
+            "value": {
+              "en": "No",
+              "es": "No"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Medigap covers Part A and Part B cost-sharing; it does not cover Part D outpatient drugs. Medigap enrollees must also buy a separate Part D plan for pharmacy coverage.",
+            "es": "Medigap cubre los costos compartidos de las Partes A y B; no cubre los medicamentos ambulatorios de la Parte D. Los inscritos en Medigap también deben comprar un plan separado de la Parte D para cobertura de farmacia."
+          },
+          {
+            "en": "Part D needed separately; late enrollment penalty if delayed",
+            "es": "La Parte D se necesita por separado; penalización por inscripción tardía si se retrasa"
+          }
         ]
       }
     ],
@@ -110,7 +202,6 @@
     },
     "source": "CMS.gov: Medicare Prescription Drug Coverage, Medicare.gov Part D Basics, KFF Medicare Part D in 2026"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -135,18 +226,39 @@
           "es": "La Parte B de Medicare cubre los medicamentos que son administrados por un proveedor en un entorno clínico, no los que se administran uno mismo en casa desde un frasco de farmacia. La lista de medicamentos de la Parte B incluye: medicamentos de quimioterapia administrados por infusión o inyección en el consultorio de un médico o clínica ambulatoria; ciertos medicamentos orales contra el cáncer que tienen el mismo ingrediente activo que una versión intravenosa; medicamentos administrados mediante bomba de infusión; medicamentos para la osteoporosis en mujeres que califican; vacunas incluyendo la vacuna contra la gripe, neumocócica y hepatitis B para beneficiarios en riesgo; agentes estimuladores de la eritropoyesis (ESA) para pacientes en diálisis; e insulina administrada a través de una bomba externa (no pluma ni jeringa)."
         },
         {
-          "en": "Part B drug cost-sharing in 2026 is typically 20% coinsurance after the 2026 Part B deductible of $283. Because Part B has no out-of-pocket maximum, a long course of expensive infusion chemotherapy can result in significant cost exposure unless you have a Medigap plan (Plans C, D, F, G, M, and N all cover Part B coinsurance) or dual Medicaid coverage.",
+          "en": "Part B drug cost-sharing in 2026 is typically 20% coinsurance after the 2026 Part B deductible of $283. Because Part B has no [out-of-pocket maximum](/en/glossary/out-of-pocket-maximum), a long course of expensive infusion chemotherapy can result in significant cost exposure unless you have a Medigap plan (Plans C, D, F, G, M, and N all cover Part B coinsurance) or dual Medicaid coverage.",
           "es": "El coseguro de medicamentos de la Parte B en 2026 es típicamente del 20% después del deducible de la Parte B de $283 en 2026. Debido a que la Parte B no tiene un máximo de gastos de bolsillo, un ciclo largo de quimioterapia de infusión costosa puede resultar en una exposición significativa de costos a menos que tenga un plan Medigap (los Planes C, D, F, G, M y N cubren el coseguro de la Parte B) o cobertura dual de Medicaid."
         }
       ],
       "list": [
-        { "en": "Infusion chemotherapy (oncology clinic or hospital outpatient)", "es": "Quimioterapia de infusión (clínica de oncología o hospital ambulatorio)" },
-        { "en": "Certain oral cancer drugs (same active ingredient as an IV formulation)", "es": "Ciertos medicamentos orales contra el cáncer (mismo ingrediente activo que una formulación IV)" },
-        { "en": "Immunosuppressive drugs after a Medicare-covered organ transplant", "es": "Medicamentos inmunosupresores después de un trasplante de órgano cubierto por Medicare" },
-        { "en": "Drugs given by infusion pump (e.g., pain management at home via Medicare-approved pump)", "es": "Medicamentos administrados por bomba de infusión" },
-        { "en": "ESAs (erythropoietin) for dialysis-related anemia", "es": "ESA (eritropoyetina) para anemia relacionada con diálisis" },
-        { "en": "Flu, pneumococcal, COVID-19, and hepatitis B vaccines (no cost-sharing for preventive vaccines)", "es": "Vacunas contra la gripe, neumocócica, COVID-19 y hepatitis B (sin costos compartidos para vacunas preventivas)" },
-        { "en": "Insulin via external pump (NOT insulin via pen, vial, or syringe, which is Part D)", "es": "Insulina mediante bomba externa (NO insulina con pluma, frasco o jeringa, que es Parte D)" }
+        {
+          "en": "Infusion chemotherapy (oncology clinic or hospital outpatient)",
+          "es": "Quimioterapia de infusión (clínica de oncología o hospital ambulatorio)"
+        },
+        {
+          "en": "Certain oral cancer drugs (same active ingredient as an IV formulation)",
+          "es": "Ciertos medicamentos orales contra el cáncer (mismo ingrediente activo que una formulación IV)"
+        },
+        {
+          "en": "Immunosuppressive drugs after a Medicare-covered organ transplant",
+          "es": "Medicamentos inmunosupresores después de un trasplante de órgano cubierto por Medicare"
+        },
+        {
+          "en": "Drugs given by infusion pump (e.g., pain management at home via Medicare-approved pump)",
+          "es": "Medicamentos administrados por bomba de infusión"
+        },
+        {
+          "en": "ESAs (erythropoietin) for dialysis-related anemia",
+          "es": "ESA (eritropoyetina) para anemia relacionada con diálisis"
+        },
+        {
+          "en": "Flu, pneumococcal, COVID-19, and hepatitis B vaccines (no cost-sharing for preventive vaccines)",
+          "es": "Vacunas contra la gripe, neumocócica, COVID-19 y hepatitis B (sin costos compartidos para vacunas preventivas)"
+        },
+        {
+          "en": "Insulin via external pump (NOT insulin via pen, vial, or syringe, which is Part D)",
+          "es": "Insulina mediante bomba externa (NO insulina con pluma, frasco o jeringa, que es Parte D)"
+        }
       ]
     },
     {
@@ -156,7 +268,7 @@
       },
       "paragraphs": [
         {
-          "en": "Medicare Part D is the outpatient prescription drug benefit created by the Medicare Modernization Act of 2003 and operational since January 1, 2006. Part D is voluntary but carries a late enrollment penalty, so most beneficiaries enroll when first eligible. In 2026, every Part D plan (whether standalone PDP or an MA-PD) must have a formulary that covers drugs in six protected classes: antidepressants, antipsychotics, anticonvulsants, immunosuppressants for organ transplant, antiretrovirals for HIV, and anticancer drugs. All other therapeutic classes must include at least two drugs per class.",
+          "en": "[Medicare Part D](/en/glossary/medicare-part-d) is the outpatient prescription drug benefit created by the Medicare Modernization Act of 2003 and operational since January 1, 2006. Part D is voluntary but carries a late enrollment penalty, so most beneficiaries enroll when first eligible. In 2026, every Part D plan (whether standalone PDP or an MA-PD) must have a formulary that covers drugs in six protected classes: antidepressants, antipsychotics, anticonvulsants, immunosuppressants for organ transplant, antiretrovirals for HIV, and anticancer drugs. All other therapeutic classes must include at least two drugs per class.",
           "es": "La Parte D de Medicare es el beneficio de medicamentos recetados ambulatorios creado por la Ley de Modernización de Medicare de 2003 y en funcionamiento desde el 1 de enero de 2006. La Parte D es voluntaria pero tiene una penalización por inscripción tardía, por lo que la mayoría de los beneficiarios se inscriben cuando son elegibles por primera vez. En 2026, cada plan de la Parte D (ya sea PDP independiente o MA-PD) debe tener un formulario que cubra medicamentos en seis clases protegidas: antidepresivos, antipsicóticos, anticonvulsivos, inmunosupresores para trasplante de órganos, antirretrovirales para el VIH y medicamentos anticancerígenos. Todas las demás clases terapéuticas deben incluir al menos dos medicamentos por clase."
         },
         {
@@ -170,15 +282,78 @@
           "es": "Estructura de beneficio de la Parte D de Medicare 2026 (números clave)"
         },
         "headers": {
-          "en": ["Phase", "2026 Value", "What You Pay"],
-          "es": ["Fase", "Valor 2026", "Lo que usted paga"]
+          "en": [
+            "Phase",
+            "2026 Value",
+            "What You Pay"
+          ],
+          "es": [
+            "Fase",
+            "Valor 2026",
+            "Lo que usted paga"
+          ]
         },
         "rows": [
-          { "en": ["Deductible (max allowed)", "$615 in 2026", "100% of drug costs until deductible met; many plans have $0 deductible for preferred generics"], "es": ["Deducible (máximo permitido)", "$615 en 2026", "100% del costo de medicamentos hasta cubrir el deducible; muchos planes tienen deducible de $0 para genéricos preferidos"] },
-          { "en": ["Initial coverage", "After deductible up to OOP cap", "Copays or coinsurance set by each plan (e.g., $0-$10 generic, 25-33% brand)"], "es": ["Cobertura inicial", "Después del deducible hasta el límite de gastos", "Copagos o coseguro establecidos por cada plan (ej. $0-$10 genérico, 25-33% de marca)"] },
-          { "en": ["Out-of-pocket cap", "$2,100 in 2026", "After $2,100 in covered OOP spending, the plan pays 100% for the rest of the year"], "es": ["Límite de gastos de bolsillo", "$2,100 en 2026", "Después de $2,100 en gastos cubiertos de bolsillo, el plan paga el 100% por el resto del año"] },
-          { "en": ["Insulin cap (IRA 2022)", "$35/month per covered insulin product", "Applies regardless of which deductible phase you are in"], "es": ["Límite de insulina (IRA 2022)", "$35/mes por producto de insulina cubierto", "Aplica independientemente de la fase del deducible en que se encuentre"] },
-          { "en": ["Monthly premium (2026 average)", "Varies; national average near $40-$55/month for standalone PDP", "Paid even if you use no drugs; non-payment triggers disenrollment"], "es": ["Prima mensual (promedio 2026)", "Varía; promedio nacional cerca de $40-$55/mes para PDP independiente", "Se paga aunque no use medicamentos; el impago activa la desinscripción"] }
+          {
+            "en": [
+              "Deductible (max allowed)",
+              "$615 in 2026",
+              "100% of drug costs until deductible met; many plans have $0 deductible for preferred generics"
+            ],
+            "es": [
+              "Deducible (máximo permitido)",
+              "$615 en 2026",
+              "100% del costo de medicamentos hasta cubrir el deducible; muchos planes tienen deducible de $0 para genéricos preferidos"
+            ]
+          },
+          {
+            "en": [
+              "Initial coverage",
+              "After deductible up to OOP cap",
+              "Copays or coinsurance set by each plan (e.g., $0-$10 generic, 25-33% brand)"
+            ],
+            "es": [
+              "Cobertura inicial",
+              "Después del deducible hasta el límite de gastos",
+              "Copagos o coseguro establecidos por cada plan (ej. $0-$10 genérico, 25-33% de marca)"
+            ]
+          },
+          {
+            "en": [
+              "Out-of-pocket cap",
+              "$2,100 in 2026",
+              "After $2,100 in covered OOP spending, the plan pays 100% for the rest of the year"
+            ],
+            "es": [
+              "Límite de gastos de bolsillo",
+              "$2,100 en 2026",
+              "Después de $2,100 en gastos cubiertos de bolsillo, el plan paga el 100% por el resto del año"
+            ]
+          },
+          {
+            "en": [
+              "Insulin cap (IRA 2022)",
+              "$35/month per covered insulin product",
+              "Applies regardless of which deductible phase you are in"
+            ],
+            "es": [
+              "Límite de insulina (IRA 2022)",
+              "$35/mes por producto de insulina cubierto",
+              "Aplica independientemente de la fase del deducible en que se encuentre"
+            ]
+          },
+          {
+            "en": [
+              "Monthly premium (2026 average)",
+              "Varies; national average near $40-$55/month for standalone PDP",
+              "Paid even if you use no drugs; non-payment triggers disenrollment"
+            ],
+            "es": [
+              "Prima mensual (promedio 2026)",
+              "Varía; promedio nacional cerca de $40-$55/mes para PDP independiente",
+              "Se paga aunque no use medicamentos; el impago activa la desinscripción"
+            ]
+          }
         ],
         "footnote": {
           "en": "Source: CMS 2026 Part D Landscape File, Medicare.gov. The $2,100 OOP cap is for covered drugs only. Premiums and non-formulary drug costs do not count toward the cap. The M3P installment plan is available for enrollees who prefer spreading costs.",
@@ -214,7 +389,7 @@
           "es": "Omitir la Parte D cuando se es elegible por primera vez es costoso si se queda sin cobertura de medicamentos acreditable por 63 o más días consecutivos. La cobertura acreditable significa cobertura que es al menos tan buena como la Parte D estándar de Medicare (ejemplos comunes: cobertura de medicamentos del plan de salud grupal del empleador, TRICARE, beneficios de medicamentos de VA, planes FEHB y cobertura de jubilados que cumple el estándar acreditable). Si le falta cobertura acreditable por 63 o más días consecutivos y luego se inscribe en la Parte D más tarde, CMS evalúa una penalización permanente por inscripción tardía igual al 1% de la prima base nacional del beneficiario por mes que estuvo sin cobertura."
         },
         {
-          "en": "Veterans who use VA drug benefits have creditable coverage and are protected from the late enrollment penalty as long as they maintain VA coverage. Low-income beneficiaries who qualify for Extra Help (the Part D Low-Income Subsidy, or LIS) are exempt from the late enrollment penalty entirely and can enroll or switch plans at any time of year.",
+          "en": "Veterans who use VA drug benefits have creditable coverage and are protected from the late enrollment penalty as long as they maintain VA coverage. Low-income beneficiaries who qualify for [Extra Help](/en/qa/extra-help-eligibility) (the Part D Low-Income Subsidy, or LIS) are exempt from the late enrollment penalty entirely and can enroll or switch plans at any time of year.",
           "es": "Los veteranos que usan los beneficios de medicamentos de VA tienen cobertura acreditable y están protegidos de la penalización por inscripción tardía siempre que mantengan la cobertura de VA. Los beneficiarios de bajos ingresos que califican para Extra Help (el Subsidio de Bajos Ingresos de la Parte D, o LIS) están exentos de la penalización por inscripción tardía por completo y pueden inscribirse o cambiar de plan en cualquier momento del año."
         }
       ]
@@ -226,7 +401,7 @@
       },
       "paragraphs": [
         {
-          "en": "Extra Help is a federal program that subsidizes Part D premiums, deductibles, and copays for beneficiaries with limited income and resources. In 2026, Extra Help eligibility extends to individuals with incomes up to 150% of the federal poverty level (approximately $23,940 for a single person in 2026) and limited assets. Full Extra Help (Level 1) eliminates the deductible and caps copays at $4.50 for generics and $11.20 for brand drugs. Partial Extra Help reduces premiums and deductibles on a sliding scale. Dual-eligible beneficiaries (Medicare plus Medicaid) are automatically enrolled in Extra Help.",
+          "en": "Extra Help is a federal program that subsidizes Part D premiums, [deductibles](/en/glossary/deductible), and copays for beneficiaries with limited income and resources. In 2026, Extra Help eligibility extends to individuals with incomes up to 150% of the federal poverty level (approximately $23,940 for a single person in 2026) and limited assets. Full Extra Help (Level 1) eliminates the deductible and caps copays at $4.50 for generics and $11.20 for brand drugs. Partial Extra Help reduces premiums and deductibles on a sliding scale. Dual-eligible beneficiaries (Medicare plus Medicaid) are automatically enrolled in Extra Help.",
           "es": "Extra Help es un programa federal que subsidia las primas, deducibles y copagos de la Parte D para beneficiarios con ingresos y recursos limitados. En 2026, la elegibilidad para Extra Help se extiende a personas con ingresos hasta el 150% del nivel federal de pobreza (aproximadamente $23,940 para una sola persona en 2026) y activos limitados. El Extra Help completo (Nivel 1) elimina el deducible y limita los copagos a $4.50 para medicamentos genéricos y $11.20 para medicamentos de marca. El Extra Help parcial reduce las primas y deducibles según una escala deslizante. Los beneficiarios con doble elegibilidad (Medicare más Medicaid) están inscritos automáticamente en Extra Help."
         },
         {
@@ -247,11 +422,26 @@
         }
       ],
       "list": [
-        { "en": "GoodRx and similar discount cards: negotiate discounts below retail price at participating pharmacies; may beat Part D copays for low-cost generics but do not count toward the Part D OOP cap.", "es": "GoodRx y tarjetas de descuento similares: negocian descuentos por debajo del precio minorista en farmacias participantes; pueden superar los copagos de la Parte D para genéricos de bajo costo pero no cuentan para el límite de gastos de bolsillo de la Parte D." },
-        { "en": "Manufacturer patient assistance programs: branded drug manufacturers offer free or reduced-cost drugs to qualifying low-income patients who apply directly; income and insurance criteria vary by program.", "es": "Programas de asistencia al paciente del fabricante: los fabricantes de medicamentos de marca ofrecen medicamentos gratuitos o a precio reducido a pacientes de bajos ingresos que califican que solicitan directamente; los criterios de ingresos y seguro varían por programa." },
-        { "en": "VA and TRICARE drug benefits: Veterans Affairs and military retiree coverage are creditable alternatives to Part D and typically offer lower drug costs through the VA formulary system.", "es": "Beneficios de medicamentos de VA y TRICARE: la cobertura de Asuntos de Veteranos y jubilados militares son alternativas acreditables a la Parte D y típicamente ofrecen costos de medicamentos más bajos a través del sistema de formulario de VA." },
-        { "en": "PACE (Program of All-Inclusive Care for the Elderly): for dual-eligible beneficiaries aged 55 or older, PACE includes pharmacy services bundled with comprehensive long-term care services.", "es": "PACE (Programa de Atención Integral para Personas Mayores): para beneficiarios de doble elegibilidad de 55 años o más, PACE incluye servicios de farmacia junto con servicios integrales de atención a largo plazo." },
-        { "en": "Retiree drug coverage through former employer: many large employers offer retiree drug plans that are creditable coverage; confirm with your HR or benefits administrator before retiring.", "es": "Cobertura de medicamentos para jubilados a través del empleador anterior: muchos grandes empleadores ofrecen planes de medicamentos para jubilados que son cobertura acreditable; confirme con su departamento de RR.HH. o administrador de beneficios antes de jubilarse." }
+        {
+          "en": "GoodRx and similar discount cards: negotiate discounts below retail price at participating pharmacies; may beat Part D copays for low-cost generics but do not count toward the Part D OOP cap.",
+          "es": "GoodRx y tarjetas de descuento similares: negocian descuentos por debajo del precio minorista en farmacias participantes; pueden superar los copagos de la Parte D para genéricos de bajo costo pero no cuentan para el límite de gastos de bolsillo de la Parte D."
+        },
+        {
+          "en": "Manufacturer patient assistance programs: branded drug manufacturers offer free or reduced-cost drugs to qualifying low-income patients who apply directly; income and insurance criteria vary by program.",
+          "es": "Programas de asistencia al paciente del fabricante: los fabricantes de medicamentos de marca ofrecen medicamentos gratuitos o a precio reducido a pacientes de bajos ingresos que califican que solicitan directamente; los criterios de ingresos y seguro varían por programa."
+        },
+        {
+          "en": "VA and TRICARE drug benefits: Veterans Affairs and military retiree coverage are creditable alternatives to Part D and typically offer lower drug costs through the VA formulary system.",
+          "es": "Beneficios de medicamentos de VA y TRICARE: la cobertura de Asuntos de Veteranos y jubilados militares son alternativas acreditables a la Parte D y típicamente ofrecen costos de medicamentos más bajos a través del sistema de formulario de VA."
+        },
+        {
+          "en": "PACE (Program of All-Inclusive Care for the Elderly): for dual-eligible beneficiaries aged 55 or older, PACE includes pharmacy services bundled with comprehensive long-term care services.",
+          "es": "PACE (Programa de Atención Integral para Personas Mayores): para beneficiarios de doble elegibilidad de 55 años o más, PACE incluye servicios de farmacia junto con servicios integrales de atención a largo plazo."
+        },
+        {
+          "en": "Retiree drug coverage through former employer: many large employers offer retiree drug plans that are creditable coverage; confirm with your HR or benefits administrator before retiring.",
+          "es": "Cobertura de medicamentos para jubilados a través del empleador anterior: muchos grandes empleadores ofrecen planes de medicamentos para jubilados que son cobertura acreditable; confirme con su departamento de RR.HH. o administrador de beneficios antes de jubilarse."
+        }
       ]
     },
     {
@@ -266,43 +456,98 @@
         }
       ],
       "list": [
-        { "en": "Step 1: Gather your current drug list. Write down every prescription with dosage and frequency before comparing plans.", "es": "Paso 1: Reúna su lista de medicamentos actual. Anote cada receta con dosis y frecuencia antes de comparar planes." },
-        { "en": "Step 2: Go to Medicare.gov/plan-compare and enter your ZIP code, drugs, and preferred pharmacies. The tool shows formulary coverage, tier placement, and estimated annual cost for each plan.", "es": "Paso 2: Vaya a Medicare.gov/plan-compare e ingrese su código postal, medicamentos y farmacias preferidas. La herramienta muestra la cobertura del formulario, el nivel de clasificación y el costo anual estimado para cada plan." },
-        { "en": "Step 3: Check whether Extra Help applies. Call Social Security at 1-800-772-1213 or apply at ssa.gov/medicare/part-d-extra-help if your income is below 150% FPL.", "es": "Paso 3: Verifique si aplica Extra Help. Llame al Seguro Social al 1-800-772-1213 o solicite en ssa.gov/medicare/part-d-extra-help si su ingreso es inferior al 150% del FPL." },
-        { "en": "Step 4: Enroll directly through the plan's website, by calling 1-800-MEDICARE (1-800-633-4227), or by completing a paper enrollment form.", "es": "Paso 4: Inscríbase directamente a través del sitio web del plan, llamando al 1-800-MEDICARE (1-800-633-4227), o completando un formulario de inscripción en papel." },
-        { "en": "Step 5: Request a medication review from your pharmacist after enrolling to confirm all your drugs are on the new plan's formulary and at which cost-sharing tier.", "es": "Paso 5: Solicite una revisión de medicamentos a su farmacéutico después de inscribirse para confirmar que todos sus medicamentos están en el formulario del nuevo plan y en qué nivel de costo compartido." }
+        {
+          "en": "Step 1: Gather your current drug list. Write down every prescription with dosage and frequency before comparing plans.",
+          "es": "Paso 1: Reúna su lista de medicamentos actual. Anote cada receta con dosis y frecuencia antes de comparar planes."
+        },
+        {
+          "en": "Step 2: Go to Medicare.gov/plan-compare and enter your ZIP code, drugs, and preferred pharmacies. The tool shows formulary coverage, tier placement, and estimated annual cost for each plan.",
+          "es": "Paso 2: Vaya a Medicare.gov/plan-compare e ingrese su código postal, medicamentos y farmacias preferidas. La herramienta muestra la cobertura del formulario, el nivel de clasificación y el costo anual estimado para cada plan."
+        },
+        {
+          "en": "Step 3: Check whether Extra Help applies. Call Social Security at 1-800-772-1213 or apply at ssa.gov/medicare/part-d-extra-help if your income is below 150% FPL.",
+          "es": "Paso 3: Verifique si aplica Extra Help. Llame al Seguro Social al 1-800-772-1213 o solicite en ssa.gov/medicare/part-d-extra-help si su ingreso es inferior al 150% del FPL."
+        },
+        {
+          "en": "Step 4: Enroll directly through the plan's website, by calling 1-800-MEDICARE (1-800-633-4227), or by completing a paper enrollment form.",
+          "es": "Paso 4: Inscríbase directamente a través del sitio web del plan, llamando al 1-800-MEDICARE (1-800-633-4227), o completando un formulario de inscripción en papel."
+        },
+        {
+          "en": "Step 5: Request a medication review from your pharmacist after enrolling to confirm all your drugs are on the new plan's formulary and at which cost-sharing tier.",
+          "es": "Paso 5: Solicite una revisión de medicamentos a su farmacéutico después de inscribirse para confirmar que todos sus medicamentos están en el formulario del nuevo plan y en qué nivel de costo compartido."
+        }
       ]
     }
   ],
-
   "howToApply": {
     "numberedSteps": [
-      { "en": "Step 1: List every prescription drug you take with the dosage and how often you take it. This is your input into the Medicare plan comparison tool.", "es": "Paso 1: Enumere todos los medicamentos recetados que toma con la dosis y con qué frecuencia los toma. Esta es su entrada en la herramienta de comparación de planes de Medicare." },
-      { "en": "Step 2: Visit Medicare.gov/plan-compare, enter your drugs and pharmacies, and compare standalone Part D plans (PDPs) or Medicare Advantage plans with drug coverage (MA-PDs) available in your area.", "es": "Paso 2: Visite Medicare.gov/plan-compare, ingrese sus medicamentos y farmacias, y compare los planes de la Parte D independientes (PDP) o los planes de Medicare Advantage con cobertura de medicamentos (MA-PD) disponibles en su área." },
-      { "en": "Step 3: Check your income. If you are at or below 150% FPL in 2026 (about $23,940 for a single person), apply for Extra Help through SSA at ssa.gov/medicare/part-d-extra-help.", "es": "Paso 3: Verifique sus ingresos. Si está en o por debajo del 150% del FPL en 2026 (aproximadamente $23,940 para una sola persona), solicite Extra Help a través de SSA en ssa.gov/medicare/part-d-extra-help." },
-      { "en": "Step 4: Enroll in your chosen plan during your Initial Enrollment Period (7 months around your 65th birthday) or the Annual Enrollment Period (October 15 to December 7, 2026).", "es": "Paso 4: Inscríbase en el plan elegido durante su Período de Inscripción Inicial (7 meses alrededor de su cumpleaños número 65) o el Período Anual de Elección (15 de octubre al 7 de diciembre de 2026)." },
-      { "en": "Step 5: Keep a record of your creditable drug coverage dates if you have employer or VA coverage. You will need to document these dates to avoid a late enrollment penalty when you eventually join Part D.", "es": "Paso 5: Guarde un registro de las fechas de cobertura de medicamentos acreditable si tiene cobertura del empleador o VA. Necesitará documentar estas fechas para evitar una penalización por inscripción tardía cuando eventualmente se una a la Parte D." }
+      {
+        "en": "Step 1: List every prescription drug you take with the dosage and how often you take it. This is your input into the Medicare plan comparison tool.",
+        "es": "Paso 1: Enumere todos los medicamentos recetados que toma con la dosis y con qué frecuencia los toma. Esta es su entrada en la herramienta de comparación de planes de Medicare."
+      },
+      {
+        "en": "Step 2: Visit Medicare.gov/plan-compare, enter your drugs and pharmacies, and compare standalone Part D plans (PDPs) or Medicare Advantage plans with drug coverage (MA-PDs) available in your area.",
+        "es": "Paso 2: Visite Medicare.gov/plan-compare, ingrese sus medicamentos y farmacias, y compare los planes de la Parte D independientes (PDP) o los planes de Medicare Advantage con cobertura de medicamentos (MA-PD) disponibles en su área."
+      },
+      {
+        "en": "Step 3: Check your income. If you are at or below 150% FPL in 2026 (about $23,940 for a single person), apply for Extra Help through SSA at ssa.gov/medicare/part-d-extra-help.",
+        "es": "Paso 3: Verifique sus ingresos. Si está en o por debajo del 150% del FPL en 2026 (aproximadamente $23,940 para una sola persona), solicite Extra Help a través de SSA en ssa.gov/medicare/part-d-extra-help."
+      },
+      {
+        "en": "Step 4: Enroll in your chosen plan during your Initial Enrollment Period (7 months around your 65th birthday) or the Annual Enrollment Period (October 15 to December 7, 2026).",
+        "es": "Paso 4: Inscríbase en el plan elegido durante su Período de Inscripción Inicial (7 meses alrededor de su cumpleaños número 65) o el Período Anual de Elección (15 de octubre al 7 de diciembre de 2026)."
+      },
+      {
+        "en": "Step 5: Keep a record of your creditable drug coverage dates if you have employer or VA coverage. You will need to document these dates to avoid a late enrollment penalty when you eventually join Part D.",
+        "es": "Paso 5: Guarde un registro de las fechas de cobertura de medicamentos acreditable si tiene cobertura del empleador o VA. Necesitará documentar estas fechas para evitar una penalización por inscripción tardía cuando eventualmente se una a la Parte D."
+      }
     ],
     "govStartingUrl": "https://www.medicare.gov/plan-compare",
     "documentsNeeded": [
-      { "en": "Medicare card (your Medicare number)", "es": "Tarjeta de Medicare (su número de Medicare)" },
-      { "en": "List of all prescription drugs with dosages and frequencies", "es": "Lista de todos los medicamentos recetados con dosis y frecuencias" },
-      { "en": "Preferred pharmacy name and ZIP code", "es": "Nombre y código postal de la farmacia preferida" },
-      { "en": "Evidence of creditable coverage from employer or VA (if applicable)", "es": "Evidencia de cobertura acreditable del empleador o VA (si aplica)" },
-      { "en": "Income information if applying for Extra Help (tax return, Social Security award letter)", "es": "Información de ingresos si solicita Extra Help (declaración de impuestos, carta de adjudicación del Seguro Social)" }
+      {
+        "en": "Medicare card (your Medicare number)",
+        "es": "Tarjeta de Medicare (su número de Medicare)"
+      },
+      {
+        "en": "List of all prescription drugs with dosages and frequencies",
+        "es": "Lista de todos los medicamentos recetados con dosis y frecuencias"
+      },
+      {
+        "en": "Preferred pharmacy name and ZIP code",
+        "es": "Nombre y código postal de la farmacia preferida"
+      },
+      {
+        "en": "Evidence of creditable coverage from employer or VA (if applicable)",
+        "es": "Evidencia de cobertura acreditable del empleador o VA (si aplica)"
+      },
+      {
+        "en": "Income information if applying for Extra Help (tax return, Social Security award letter)",
+        "es": "Información de ingresos si solicita Extra Help (declaración de impuestos, carta de adjudicación del Seguro Social)"
+      }
     ],
     "commonDenialReasons": [
-      { "en": "Drug not on the plan's formulary (solution: request a formulary exception or switch plans during AEP)", "es": "El medicamento no está en el formulario del plan (solución: solicitar una excepción de formulario o cambiar de plan durante el AEP)" },
-      { "en": "Prior authorization required for specific drugs (solution: have your prescriber submit a PA request with supporting clinical documentation)", "es": "Se requiere autorización previa para medicamentos específicos (solución: que su prescriptor envíe una solicitud de PA con documentación clínica de respaldo)" },
-      { "en": "Step therapy requirement (plan requires trying a lower-tier drug first before covering the requested drug)", "es": "Requisito de terapia escalonada (el plan requiere probar primero un medicamento de nivel inferior antes de cubrir el medicamento solicitado)" },
-      { "en": "Quantity limit exceeded (solution: request a quantity limit exception with a medical necessity letter from your doctor)", "es": "Límite de cantidad excedido (solución: solicitar una excepción de límite de cantidad con una carta de necesidad médica de su médico)" }
+      {
+        "en": "Drug not on the plan's formulary (solution: request a formulary exception or switch plans during AEP)",
+        "es": "El medicamento no está en el formulario del plan (solución: solicitar una excepción de formulario o cambiar de plan durante el AEP)"
+      },
+      {
+        "en": "Prior authorization required for specific drugs (solution: have your prescriber submit a PA request with supporting clinical documentation)",
+        "es": "Se requiere autorización previa para medicamentos específicos (solución: que su prescriptor envíe una solicitud de PA con documentación clínica de respaldo)"
+      },
+      {
+        "en": "Step therapy requirement (plan requires trying a lower-tier drug first before covering the requested drug)",
+        "es": "Requisito de terapia escalonada (el plan requiere probar primero un medicamento de nivel inferior antes de cubrir el medicamento solicitado)"
+      },
+      {
+        "en": "Quantity limit exceeded (solution: request a quantity limit exception with a medical necessity letter from your doctor)",
+        "es": "Límite de cantidad excedido (solución: solicitar una excepción de límite de cantidad con una carta de necesidad médica de su médico)"
+      }
     ],
     "deadline": {
       "en": "Annual Enrollment Period: October 15 to December 7, 2026 (coverage starts January 1, 2027). Initial Enrollment Period: 7-month window around your 65th birthday.",
       "es": "Período Anual de Elección: 15 de octubre al 7 de diciembre de 2026 (cobertura comienza el 1 de enero de 2027). Período de Inscripción Inicial: ventana de 7 meses alrededor de su cumpleaños número 65."
     }
   },
-
   "faqs": {
     "en": [
       {
@@ -373,26 +618,36 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Medicare Part D Plans in Your Area", "es": "Planes de la Parte D de Medicare en su área" },
+      "label": {
+        "en": "Medicare Part D Plans in Your Area",
+        "es": "Planes de la Parte D de Medicare en su área"
+      },
       "href": "/medicare/part-d"
     },
     {
-      "label": { "en": "Does Medicare Cover Hearing Aids?", "es": "¿Medicare cubre audífonos?" },
+      "label": {
+        "en": "Does Medicare Cover Hearing Aids?",
+        "es": "¿Medicare cubre audífonos?"
+      },
       "href": "/qa/does-medicare-cover-hearing-aids"
     },
     {
-      "label": { "en": "Medicare Advantage Plans for 2026", "es": "Planes de Medicare Advantage para 2026" },
+      "label": {
+        "en": "Medicare Advantage Plans for 2026",
+        "es": "Planes de Medicare Advantage para 2026"
+      },
       "href": "/medicare-advantage"
     },
     {
-      "label": { "en": "Check Your Medicare Eligibility", "es": "Verifique su elegibilidad de Medicare" },
+      "label": {
+        "en": "Check Your Medicare Eligibility",
+        "es": "Verifique su elegibilidad de Medicare"
+      },
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "Medicare.gov: Drug Coverage (Part D)",

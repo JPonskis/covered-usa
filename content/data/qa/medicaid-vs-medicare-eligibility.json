@@ -21,7 +21,6 @@
   "topicCluster": "medicaid-coverage",
   "lastUpdated": "2026-05-15",
   "readingTime": "6 min read",
-
   "meta": {
     "title": {
       "en": "Medicaid vs Medicare Eligibility Differences (2026) | CoveredUSA",
@@ -32,92 +31,220 @@
       "es": "Medicare usa reglas de edad y discapacidad. Medicaid usa reglas de ingresos y categoría. Vea la comparación de elegibilidad 2026, límites de ingresos y reglas de doble elegibilidad."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Medicaid vs Medicare: Eligibility Differences (2026)",
       "es": "Medicaid vs Medicare: Diferencias de Elegibilidad (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicare and Medicaid are both government health programs, but they work very differently. Medicare is a federal program with national eligibility rules tied to age or disability. Medicaid is a joint federal-state program where each state sets its own rules within federal guidelines. The result: who qualifies for each program, and how much they pay, differs dramatically.",
       "es": "Medicare y Medicaid son programas de salud del gobierno, pero funcionan de manera muy diferente. Medicare es un programa federal con reglas nacionales de elegibilidad vinculadas a la edad o discapacidad. Medicaid es un programa federal-estatal conjunto donde cada estado establece sus propias reglas dentro de las pautas federales. El resultado: quién califica para cada programa, y cuánto paga, difiere dramáticamente."
     },
     {
-      "en": "This guide breaks down the 2026 eligibility rules for both programs side by side, covers who qualifies for both at the same time (dual-eligible), and explains how to apply.",
+      "en": "This guide breaks down the 2026 eligibility rules for both programs side by side, covers who qualifies for [both at the same time (dual-eligible)](/en/qa/can-i-have-both-medicare-and-medicaid), and explains how to apply. For a coverage comparison, see [Medicare vs. Medicaid coverage](/en/qa/medicare-vs-medicaid-coverage).",
       "es": "Esta guía desglosa las reglas de elegibilidad 2026 para ambos programas en paralelo, cubre quién califica para ambos al mismo tiempo (doble elegible), y explica cómo aplicar."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Eligibility Factor", "Medicare (2026)", "Medicaid (2026)"],
-      "es": ["Factor de elegibilidad", "Medicare (2026)", "Medicaid (2026)"]
+      "en": [
+        "Eligibility Factor",
+        "Medicare (2026)",
+        "Medicaid (2026)"
+      ],
+      "es": [
+        "Factor de elegibilidad",
+        "Medicare (2026)",
+        "Medicaid (2026)"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Primary basis", "es": "Base principal" },
-          { "en": "Age or disability", "es": "Edad o discapacidad" },
-          { "en": "Income and categorical group", "es": "Ingresos y grupo categórico" }
+          {
+            "en": "Primary basis",
+            "es": "Base principal"
+          },
+          {
+            "en": "Age or disability",
+            "es": "Edad o discapacidad"
+          },
+          {
+            "en": "Income and categorical group",
+            "es": "Ingresos y grupo categórico"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Age requirement", "es": "Requisito de edad" },
-          { "value": { "en": "Age 65+", "es": "65 anos o mas" }, "status": "yes" },
-          { "value": { "en": "All ages covered (newborn through senior)", "es": "Todas las edades cubiertas (recien nacido hasta adulto mayor)" }, "status": "yes" }
+          {
+            "en": "Age requirement",
+            "es": "Requisito de edad"
+          },
+          {
+            "value": {
+              "en": "Age 65+",
+              "es": "65 anos o mas"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "All ages covered (newborn through senior)",
+              "es": "Todas las edades cubiertas (recien nacido hasta adulto mayor)"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Disability pathway", "es": "Via de discapacidad" },
-          { "value": { "en": "SSDI after 24-month wait (ALS: immediate)", "es": "SSDI tras espera de 24 meses (ELA: inmediata)" }, "status": "partial" },
-          { "value": { "en": "SSI recipients qualify automatically", "es": "Beneficiarios de SSI califican automaticamente" }, "status": "yes" }
+          {
+            "en": "Disability pathway",
+            "es": "Via de discapacidad"
+          },
+          {
+            "value": {
+              "en": "SSDI after 24-month wait (ALS: immediate)",
+              "es": "SSDI tras espera de 24 meses (ELA: inmediata)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "SSI recipients qualify automatically",
+              "es": "Beneficiarios de SSI califican automaticamente"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Income test", "es": "Prueba de ingresos" },
-          { "value": { "en": "Any income (test waived)", "es": "Cualquier ingreso (prueba exenta)" }, "status": "yes" },
-          { "value": { "en": "138% FPL in expansion states (~$20,782/yr single adult)", "es": "138% FPL en estados de expansion (~$20,782/ano adulto soltero)" }, "status": "partial" }
+          {
+            "en": "Income test",
+            "es": "Prueba de ingresos"
+          },
+          {
+            "value": {
+              "en": "Any income (test waived)",
+              "es": "Cualquier ingreso (prueba exenta)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "138% FPL in expansion states (~$20,782/yr single adult)",
+              "es": "138% FPL en estados de expansion (~$20,782/ano adulto soltero)"
+            },
+            "status": "partial"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Asset test", "es": "Prueba de activos" },
-          { "value": { "en": "Any assets (test waived)", "es": "Cualquier activo (prueba exenta)" }, "status": "yes" },
-          { "value": { "en": "Waived for MAGI groups; applies for elderly/disabled Medicaid", "es": "Exenta para grupos MAGI; aplica para Medicaid de ancianos/discapacitados" }, "status": "partial" }
+          {
+            "en": "Asset test",
+            "es": "Prueba de activos"
+          },
+          {
+            "value": {
+              "en": "Any assets (test waived)",
+              "es": "Cualquier activo (prueba exenta)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Waived for MAGI groups; applies for elderly/disabled Medicaid",
+              "es": "Exenta para grupos MAGI; aplica para Medicaid de ancianos/discapacitados"
+            },
+            "status": "partial"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Citizenship requirement", "es": "Requisito de ciudadania" },
-          { "en": "US citizen or qualifying legal resident (5-yr bar may apply)", "es": "Ciudadano americano o residente legal calificado (puede aplicar barra de 5 anos)" },
-          { "en": "US citizen or qualifying legal resident (5-yr bar may apply)", "es": "Ciudadano americano o residente legal calificado (puede aplicar barra de 5 anos)" }
+          {
+            "en": "Citizenship requirement",
+            "es": "Requisito de ciudadania"
+          },
+          {
+            "en": "US citizen or qualifying legal resident (5-yr bar may apply)",
+            "es": "Ciudadano americano o residente legal calificado (puede aplicar barra de 5 anos)"
+          },
+          {
+            "en": "US citizen or qualifying legal resident (5-yr bar may apply)",
+            "es": "Ciudadano americano o residente legal calificado (puede aplicar barra de 5 anos)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "ESRD (kidney failure)", "es": "ESRD (falla renal)" },
-          { "value": { "en": "Yes, any age (coverage starts month 4 of dialysis)", "es": "Si, cualquier edad (cobertura inicia mes 4 de dialisis)" }, "status": "yes" },
-          { "value": { "en": "Covered if income-eligible; state-dependent", "es": "Cubierto si es elegible por ingresos; depende del estado" }, "status": "partial" }
+          {
+            "en": "ESRD (kidney failure)",
+            "es": "ESRD (falla renal)"
+          },
+          {
+            "value": {
+              "en": "Yes, any age (coverage starts month 4 of dialysis)",
+              "es": "Si, cualquier edad (cobertura inicia mes 4 de dialisis)"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Covered if income-eligible; state-dependent",
+              "es": "Cubierto si es elegible por ingresos; depende del estado"
+            },
+            "status": "partial"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Children", "es": "Ninos" },
-          { "value": { "en": "Not covered (use CHIP or Medicaid)", "es": "No cubierto (usar CHIP o Medicaid)" }, "status": "no" },
-          { "value": { "en": "Yes, up to 133-350% FPL depending on state", "es": "Si, hasta 133-350% FPL segun el estado" }, "status": "yes" }
+          {
+            "en": "Children",
+            "es": "Ninos"
+          },
+          {
+            "value": {
+              "en": "Not covered (use CHIP or Medicaid)",
+              "es": "No cubierto (usar CHIP o Medicaid)"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "Yes, up to 133-350% FPL depending on state",
+              "es": "Si, hasta 133-350% FPL segun el estado"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Pregnant women", "es": "Mujeres embarazadas" },
-          { "value": { "en": "No specific pregnancy pathway", "es": "Sin via especifica por embarazo" }, "status": "no" },
-          { "value": { "en": "Yes, most states 138-220% FPL", "es": "Si, mayoria de estados 138-220% FPL" }, "status": "yes" }
+          {
+            "en": "Pregnant women",
+            "es": "Mujeres embarazadas"
+          },
+          {
+            "value": {
+              "en": "No specific pregnancy pathway",
+              "es": "Sin via especifica por embarazo"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "Yes, most states 138-220% FPL",
+              "es": "Si, mayoria de estados 138-220% FPL"
+            },
+            "status": "yes"
+          }
         ]
       }
     ],
@@ -127,7 +254,6 @@
     },
     "source": "CMS.gov, Medicaid.gov, Medicare.gov, KFF Medicaid Eligibility Levels 2026"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -170,7 +296,7 @@
       },
       "paragraphs": [
         {
-          "en": "Medicaid eligibility requires two things: belonging to a covered category AND meeting income limits. Unlike Medicare, Medicaid has NO national income limit that applies to all adults. The limits depend on both your state and your category.",
+          "en": "Medicaid eligibility requires two things: belonging to a covered category AND meeting [income limits](/en/medicaid-income-limits). Unlike Medicare, Medicaid has NO national income limit that applies to all adults. The limits depend on both your state and your category.",
           "es": "La elegibilidad para Medicaid requiere dos cosas: pertenecer a una categoria cubierta Y cumplir los limites de ingresos. A diferencia de Medicare, Medicaid NO tiene limite nacional de ingresos que aplique a todos los adultos. Los limites dependen tanto de su estado como de su categoria."
         },
         {
@@ -208,7 +334,7 @@
       },
       "paragraphs": [
         {
-          "en": "The table below shows the annual MAGI income limits at 138% FPL for expansion-state adult Medicaid in 2026. These apply in the 40 states and DC that have adopted the ACA expansion. Children's limits and pregnancy limits are often higher.",
+          "en": "The table below shows the annual [MAGI](/en/glossary/magi) income limits at 138% FPL for expansion-state adult Medicaid in 2026. These apply in the 40 states and DC that have adopted the ACA expansion. Children's limits and pregnancy limits are often higher.",
           "es": "La siguiente tabla muestra los limites de ingresos MAGI anuales al 138% FPL para Medicaid de adultos en estados de expansion en 2026. Estos aplican en los 40 estados mas DC que han adoptado la expansion de la ACA. Los limites para ninos y embarazo frecuentemente son mas altos."
         }
       ],
@@ -218,19 +344,126 @@
           "es": "Limites de Ingresos de Medicaid 2026 para Adultos de Expansion por Tamano de Hogar (138% FPL, 48 estados contiguos)"
         },
         "headers": {
-          "en": ["Household Size", "Annual Income Limit (138% FPL)", "Monthly Income Limit"],
-          "es": ["Tamano del hogar", "Limite anual de ingresos (138% FPL)", "Limite mensual de ingresos"]
+          "en": [
+            "Household Size",
+            "Annual Income Limit (138% FPL)",
+            "Monthly Income Limit"
+          ],
+          "es": [
+            "Tamano del hogar",
+            "Limite anual de ingresos (138% FPL)",
+            "Limite mensual de ingresos"
+          ]
         },
         "rows": [
-          { "en": ["1", "$22,025", "$1,836"], "es": ["1", "$22,025", "$1,836"] },
-          { "en": ["2", "$29,684", "$2,474"], "es": ["2", "$29,684", "$2,474"] },
-          { "en": ["3", "$37,343", "$3,112"], "es": ["3", "$37,343", "$3,112"] },
-          { "en": ["4", "$45,001", "$3,750"], "es": ["4", "$45,001", "$3,750"] },
-          { "en": ["5", "$52,659", "$4,388"], "es": ["5", "$52,659", "$4,388"] },
-          { "en": ["6", "$60,318", "$5,027"], "es": ["6", "$60,318", "$5,027"] },
-          { "en": ["7", "$67,976", "$5,665"], "es": ["7", "$67,976", "$5,665"] },
-          { "en": ["8", "$75,635", "$6,303"], "es": ["8", "$75,635", "$6,303"] },
-          { "en": ["Each additional", "+$7,659/year", "+$638/month"], "es": ["Cada persona adicional", "+$7,659/ano", "+$638/mes"] }
+          {
+            "en": [
+              "1",
+              "$22,025",
+              "$1,836"
+            ],
+            "es": [
+              "1",
+              "$22,025",
+              "$1,836"
+            ]
+          },
+          {
+            "en": [
+              "2",
+              "$29,684",
+              "$2,474"
+            ],
+            "es": [
+              "2",
+              "$29,684",
+              "$2,474"
+            ]
+          },
+          {
+            "en": [
+              "3",
+              "$37,343",
+              "$3,112"
+            ],
+            "es": [
+              "3",
+              "$37,343",
+              "$3,112"
+            ]
+          },
+          {
+            "en": [
+              "4",
+              "$45,001",
+              "$3,750"
+            ],
+            "es": [
+              "4",
+              "$45,001",
+              "$3,750"
+            ]
+          },
+          {
+            "en": [
+              "5",
+              "$52,659",
+              "$4,388"
+            ],
+            "es": [
+              "5",
+              "$52,659",
+              "$4,388"
+            ]
+          },
+          {
+            "en": [
+              "6",
+              "$60,318",
+              "$5,027"
+            ],
+            "es": [
+              "6",
+              "$60,318",
+              "$5,027"
+            ]
+          },
+          {
+            "en": [
+              "7",
+              "$67,976",
+              "$5,665"
+            ],
+            "es": [
+              "7",
+              "$67,976",
+              "$5,665"
+            ]
+          },
+          {
+            "en": [
+              "8",
+              "$75,635",
+              "$6,303"
+            ],
+            "es": [
+              "8",
+              "$75,635",
+              "$6,303"
+            ]
+          },
+          {
+            "en": [
+              "Each additional",
+              "+$7,659/year",
+              "+$638/month"
+            ],
+            "es": [
+              "Cada persona adicional",
+              "+$7,659/ano",
+              "+$638/mes"
+            ]
+          }
         ],
         "footnote": {
           "en": "Based on 2026 HHS poverty guidelines (48 contiguous states). Alaska and Hawaii have higher FPL figures. These limits apply to expansion adults only. Children, pregnant women, elderly, and disabled may qualify at different thresholds. Non-expansion states do not use this table.",
@@ -246,7 +479,7 @@
       },
       "paragraphs": [
         {
-          "en": "Approximately 12 million Americans are dual-eligible, meaning they qualify for both Medicare and Medicaid at the same time. This is the most comprehensive public health coverage available in the United States.",
+          "en": "Approximately 12 million Americans are dual-eligible, meaning they qualify for [both Medicare and Medicaid](/en/qa/can-i-have-both-medicare-and-medicaid) at the same time. This is the most comprehensive public health coverage available in the United States.",
           "es": "Aproximadamente 12 millones de estadounidenses son doble elegibles, lo que significa que califican para Medicare y Medicaid al mismo tiempo. Esta es la cobertura de salud publica mas completa disponible en los Estados Unidos."
         },
         {
@@ -282,7 +515,7 @@
       },
       "paragraphs": [
         {
-          "en": "Medicare applications go through the Social Security Administration. If you are already receiving Social Security retirement benefits or SSDI, you are enrolled in Medicare automatically. If not, apply at SSA.gov or call 1-800-772-1213. Your Initial Enrollment Period is a 7-month window centered on your 65th birthday month.",
+          "en": "Medicare applications go through the Social Security Administration. Low-income Medicare beneficiaries should also check [Extra Help eligibility](/en/qa/extra-help-eligibility) for Part D drug cost assistance. If you are already receiving Social Security retirement benefits or SSDI, you are enrolled in Medicare automatically. If not, apply at SSA.gov or call 1-800-772-1213. Your Initial Enrollment Period is a 7-month window centered on your 65th birthday month.",
           "es": "Las solicitudes de Medicare se procesan a traves de la Administracion del Seguro Social. Si ya esta recibiendo beneficios de retiro del Seguro Social o SSDI, se inscribira en Medicare automaticamente. Si no, solicite en SSA.gov o llame al 1-800-772-1213. Su Periodo de Inscripcion Inicial es una ventana de 7 meses centrada en el mes de su cumpleanos 65."
         },
         {
@@ -292,7 +525,6 @@
       ]
     }
   ],
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -370,7 +602,6 @@
       "es": "Medicare: Periodo de Inscripcion Inicial de 7 meses alrededor de su cumpleanos 65. Medicaid: durante todo el ano, sin periodo de inscripcion."
     }
   },
-
   "keyTerms": {
     "en": [
       "Medicare eligibility 2026",
@@ -389,7 +620,6 @@
       "periodo de espera Medicare SSDI"
     ]
   },
-
   "faqs": {
     "en": [
       {
@@ -460,26 +690,36 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Check Your Medicare Eligibility", "es": "Verifique su Elegibilidad de Medicare" },
+      "label": {
+        "en": "Check Your Medicare Eligibility",
+        "es": "Verifique su Elegibilidad de Medicare"
+      },
       "href": "/medicare-eligibility"
     },
     {
-      "label": { "en": "Medicaid Income Limits by State 2026", "es": "Limites de Ingresos de Medicaid por Estado 2026" },
+      "label": {
+        "en": "Medicaid Income Limits by State 2026",
+        "es": "Limites de Ingresos de Medicaid por Estado 2026"
+      },
       "href": "/medicaid-income-limits"
     },
     {
-      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
+      "label": {
+        "en": "2026 Federal Poverty Level Chart",
+        "es": "Tabla del Nivel Federal de Pobreza 2026"
+      },
       "href": "/federal-poverty-level"
     },
     {
-      "label": { "en": "Benefits Eligibility Screener", "es": "Verificador de Elegibilidad de Beneficios" },
+      "label": {
+        "en": "Benefits Eligibility Screener",
+        "es": "Verificador de Elegibilidad de Beneficios"
+      },
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "CMS: Original Medicare Part A and B Eligibility and Enrollment",

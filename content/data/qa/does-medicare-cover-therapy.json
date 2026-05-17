@@ -21,7 +21,6 @@
   },
   "isLighthouse": false,
   "isDeprecated": false,
-
   "question": {
     "en": "Does Medicare Cover Therapy?",
     "es": "¿Medicare Cubre la Terapia?"
@@ -34,14 +33,12 @@
     "en": "Yes. Medicare Part B covers physical therapy (PT), occupational therapy (OT), speech-language pathology (SLP), and outpatient mental health therapy including psychotherapy and counseling from licensed social workers, psychologists, and mental health counselors (added in 2024 under the CAA 2023). After the 2026 Part B deductible of $283, you pay 20% coinsurance with no annual visit cap, though a $2,480 combined PT and SLP threshold triggers a KX modifier requirement to confirm medical necessity. Inpatient therapy in a skilled nursing facility or rehab hospital bills under Part A instead.",
     "es": "Sí. Medicare Parte B cubre terapia física (PT), terapia ocupacional (OT), patología del habla y lenguaje (SLP) y terapia de salud mental ambulatoria, incluyendo psicoterapia y consejería de trabajadores sociales licenciados, psicólogos y consejeros de salud mental (agregados en 2024 bajo la CAA 2023). Después del deducible de la Parte B de $283 en 2026, usted paga el 20% de coseguro sin límite anual de visitas, aunque un umbral combinado de PT y SLP de $2,480 activa el requisito del modificador KX para confirmar la necesidad médica. La terapia para pacientes hospitalizados en una instalación de enfermería especializada o en un hospital de rehabilitación se factura bajo la Parte A."
   },
-
   "category": "Medicare",
   "topic": "Medicare Therapy Coverage (PT, OT, Mental Health) 2026",
   "medicalSpecialty": "PhysicalTherapy",
   "ctaTarget": "screener",
   "lastUpdated": "2026-05-15",
   "readingTime": "7 min read",
-
   "meta": {
     "title": {
       "en": "Does Medicare Cover Therapy? PT, OT, Mental Health (2026) | CoveredUSA",
@@ -52,77 +49,174 @@
       "es": "Sí. Medicare Parte B cubre PT, OT, terapia del habla y salud mental en 2026. 20% coseguro después de $283 de deducible. Telesalud extendida hasta 2027."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Does Medicare Cover Therapy? (2026)",
       "es": "¿Medicare Cubre la Terapia? (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicare covers a broad range of therapy services in 2026, from physical rehabilitation after a hip replacement to weekly psychotherapy sessions for depression. The coverage rules differ by therapy type and by care setting, which is the most common source of confusion among beneficiaries. Knowing which Medicare part applies and what the annual threshold rules mean can prevent large unexpected bills.",
       "es": "Medicare cubre una amplia gama de servicios de terapia en 2026, desde la rehabilitación física después de un reemplazo de cadera hasta las sesiones semanales de psicoterapia para la depresión. Las reglas de cobertura difieren según el tipo de terapia y el entorno de atención, lo que es la fuente más común de confusión entre los beneficiarios. Conocer qué parte de Medicare aplica y qué significan las reglas de umbral anual puede evitar facturas inesperadas importantes."
     },
     {
-      "en": "This guide covers every therapy type Medicare pays for in 2026: physical therapy, occupational therapy, speech-language pathology, and mental health therapy. It explains the 20% coinsurance rule, the $2,480 therapy threshold and KX modifier, telehealth therapy access extended through December 31, 2027, and what Medicare Advantage plans may add on top.",
+      "en": "This guide covers every therapy type Medicare pays for in 2026: physical therapy, occupational therapy, speech-language pathology, and [mental health therapy](/en/qa/does-medicare-cover-mental-health). It explains the 20% coinsurance rule, the $2,480 therapy threshold and KX modifier, telehealth therapy access extended through December 31, 2027, and what Medicare Advantage plans may add on top.",
       "es": "Esta guía cubre cada tipo de terapia que Medicare paga en 2026: terapia física, terapia ocupacional, patología del habla y lenguaje y terapia de salud mental. Explica la regla del 20% de coseguro, el umbral de terapia de $2,480 y el modificador KX, el acceso a terapia por telesalud extendido hasta el 31 de diciembre de 2027, y lo que los planes Medicare Advantage pueden agregar."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Therapy Type", "Medicare Coverage", "Setting", "2026 Cost-Share"],
-      "es": ["Tipo de terapia", "Cobertura Medicare", "Entorno", "Coseguro 2026"]
+      "en": [
+        "Therapy Type",
+        "Medicare Coverage",
+        "Setting",
+        "2026 Cost-Share"
+      ],
+      "es": [
+        "Tipo de terapia",
+        "Cobertura Medicare",
+        "Entorno",
+        "Coseguro 2026"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Physical Therapy (PT)", "es": "Terapia Física (PT)" },
-          { "value": { "en": "Covered under Part B", "es": "Cubierta bajo Parte B" }, "status": "yes" },
-          { "en": "Outpatient clinic, hospital outpatient, telehealth (through Dec 31, 2027)", "es": "Clínica ambulatoria, hospital ambulatorio, telesalud (hasta el 31 dic 2027)" },
-          { "en": "20% after $283 deductible; no annual visit cap; KX modifier above $2,480 combined PT+SLP", "es": "20% después de $283 de deducible; sin límite anual de visitas; modificador KX por encima de $2,480 combinado PT+SLP" }
+          {
+            "en": "Physical Therapy (PT)",
+            "es": "Terapia Física (PT)"
+          },
+          {
+            "value": {
+              "en": "Covered under Part B",
+              "es": "Cubierta bajo Parte B"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Outpatient clinic, hospital outpatient, telehealth (through Dec 31, 2027)",
+            "es": "Clínica ambulatoria, hospital ambulatorio, telesalud (hasta el 31 dic 2027)"
+          },
+          {
+            "en": "20% after $283 deductible; no annual visit cap; KX modifier above $2,480 combined PT+SLP",
+            "es": "20% después de $283 de deducible; sin límite anual de visitas; modificador KX por encima de $2,480 combinado PT+SLP"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Occupational Therapy (OT)", "es": "Terapia Ocupacional (OT)" },
-          { "value": { "en": "Covered under Part B", "es": "Cubierta bajo Parte B" }, "status": "yes" },
-          { "en": "Outpatient clinic, hospital outpatient, telehealth (through Dec 31, 2027)", "es": "Clínica ambulatoria, hospital ambulatorio, telesalud (hasta el 31 dic 2027)" },
-          { "en": "20% after $283 deductible; $2,480 separate OT threshold applies (OT is tracked separately from PT+SLP)", "es": "20% después de $283 de deducible; umbral de $2,480 separado para OT (OT se rastrea por separado de PT+SLP)" }
+          {
+            "en": "Occupational Therapy (OT)",
+            "es": "Terapia Ocupacional (OT)"
+          },
+          {
+            "value": {
+              "en": "Covered under Part B",
+              "es": "Cubierta bajo Parte B"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Outpatient clinic, hospital outpatient, telehealth (through Dec 31, 2027)",
+            "es": "Clínica ambulatoria, hospital ambulatorio, telesalud (hasta el 31 dic 2027)"
+          },
+          {
+            "en": "20% after $283 deductible; $2,480 separate OT threshold applies (OT is tracked separately from PT+SLP)",
+            "es": "20% después de $283 de deducible; umbral de $2,480 separado para OT (OT se rastrea por separado de PT+SLP)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Speech-Language Pathology (SLP)", "es": "Patología del Habla y Lenguaje (SLP)" },
-          { "value": { "en": "Covered under Part B", "es": "Cubierta bajo Parte B" }, "status": "yes" },
-          { "en": "Outpatient clinic, hospital outpatient, telehealth (through Dec 31, 2027)", "es": "Clínica ambulatoria, hospital ambulatorio, telesalud (hasta el 31 dic 2027)" },
-          { "en": "20% after $283 deductible; combined with PT toward the $2,480 threshold", "es": "20% después de $283 de deducible; combinado con PT hacia el umbral de $2,480" }
+          {
+            "en": "Speech-Language Pathology (SLP)",
+            "es": "Patología del Habla y Lenguaje (SLP)"
+          },
+          {
+            "value": {
+              "en": "Covered under Part B",
+              "es": "Cubierta bajo Parte B"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Outpatient clinic, hospital outpatient, telehealth (through Dec 31, 2027)",
+            "es": "Clínica ambulatoria, hospital ambulatorio, telesalud (hasta el 31 dic 2027)"
+          },
+          {
+            "en": "20% after $283 deductible; combined with PT toward the $2,480 threshold",
+            "es": "20% después de $283 de deducible; combinado con PT hacia el umbral de $2,480"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Outpatient Mental Health Therapy (psychotherapy, counseling)", "es": "Terapia de Salud Mental Ambulatoria (psicoterapia, consejería)" },
-          { "value": { "en": "Covered under Part B", "es": "Cubierta bajo Parte B" }, "status": "yes" },
-          { "en": "Outpatient clinic, telehealth (through Dec 31, 2027); psychologists, LCSWs, mental health counselors, marriage/family therapists all eligible since 2024", "es": "Clínica ambulatoria, telesalud (hasta el 31 dic 2027); psicólogos, LCSW, consejeros de salud mental, terapeutas matrimoniales/familiares elegibles desde 2024" },
-          { "en": "20% after $283 deductible; no annual visit cap; tracked separately from PT/OT/SLP", "es": "20% después de $283 de deducible; sin límite anual de visitas; se rastrea por separado de PT/OT/SLP" }
+          {
+            "en": "Outpatient Mental Health Therapy (psychotherapy, counseling)",
+            "es": "Terapia de Salud Mental Ambulatoria (psicoterapia, consejería)"
+          },
+          {
+            "value": {
+              "en": "Covered under Part B",
+              "es": "Cubierta bajo Parte B"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Outpatient clinic, telehealth (through Dec 31, 2027); psychologists, LCSWs, mental health counselors, marriage/family therapists all eligible since 2024",
+            "es": "Clínica ambulatoria, telesalud (hasta el 31 dic 2027); psicólogos, LCSW, consejeros de salud mental, terapeutas matrimoniales/familiares elegibles desde 2024"
+          },
+          {
+            "en": "20% after $283 deductible; no annual visit cap; tracked separately from PT/OT/SLP",
+            "es": "20% después de $283 de deducible; sin límite anual de visitas; se rastrea por separado de PT/OT/SLP"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Inpatient Rehab Therapy (SNF or rehab hospital)", "es": "Terapia de Rehabilitación para Pacientes Hospitalizados (SNF o hospital de rehabilitación)" },
-          { "value": { "en": "Covered under Part A", "es": "Cubierta bajo Parte A" }, "status": "yes" },
-          { "en": "Skilled Nursing Facility (SNF), inpatient rehabilitation facility (IRF)", "es": "Instalación de Enfermería Especializada (SNF), instalación de rehabilitación para pacientes hospitalizados (IRF)" },
-          { "en": "Days 1-20 in SNF: $0; days 21-100: $217 per day coinsurance (2026); IRF: $1,736 Part A deductible per benefit period", "es": "Días 1-20 en SNF: $0; días 21-100: $217 por día de coseguro (2026); IRF: deducible de Parte A de $1,736 por período de beneficio" }
+          {
+            "en": "Inpatient Rehab Therapy (SNF or rehab hospital)",
+            "es": "Terapia de Rehabilitación para Pacientes Hospitalizados (SNF o hospital de rehabilitación)"
+          },
+          {
+            "value": {
+              "en": "Covered under Part A",
+              "es": "Cubierta bajo Parte A"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Skilled Nursing Facility (SNF), inpatient rehabilitation facility (IRF)",
+            "es": "Instalación de Enfermería Especializada (SNF), instalación de rehabilitación para pacientes hospitalizados (IRF)"
+          },
+          {
+            "en": "Days 1-20 in SNF: $0; days 21-100: $217 per day coinsurance (2026); IRF: $1,736 Part A deductible per benefit period",
+            "es": "Días 1-20 en SNF: $0; días 21-100: $217 por día de coseguro (2026); IRF: deducible de Parte A de $1,736 por período de beneficio"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare Advantage (Part C) Therapy", "es": "Medicare Advantage (Parte C) Terapia" },
-          { "value": { "en": "All Original Medicare therapy types required; some plans add extras", "es": "Todos los tipos de terapia de Medicare Original son requeridos; algunos planes agregan extras" }, "status": "partial" },
-          { "en": "Must cover all Part B therapy types; may add chiropractic, acupuncture, extra PT/OT visits", "es": "Debe cubrir todos los tipos de terapia de la Parte B; puede agregar quiropráctico, acupuntura, visitas adicionales de PT/OT" },
-          { "en": "Copay and deductible vary by plan; check your plan's Evidence of Coverage for the 2026 benefit year", "es": "El copago y el deducible varían por plan; consulte la Evidencia de Cobertura de su plan para el año de beneficios 2026" }
+          {
+            "en": "Medicare Advantage (Part C) Therapy",
+            "es": "Medicare Advantage (Parte C) Terapia"
+          },
+          {
+            "value": {
+              "en": "All Original Medicare therapy types required; some plans add extras",
+              "es": "Todos los tipos de terapia de Medicare Original son requeridos; algunos planes agregan extras"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Must cover all Part B therapy types; may add chiropractic, acupuncture, extra PT/OT visits",
+            "es": "Debe cubrir todos los tipos de terapia de la Parte B; puede agregar quiropráctico, acupuntura, visitas adicionales de PT/OT"
+          },
+          {
+            "en": "Copay and deductible vary by plan; check your plan's Evidence of Coverage for the 2026 benefit year",
+            "es": "El copago y el deducible varían por plan; consulte la Evidencia de Cobertura de su plan para el año de beneficios 2026"
+          }
         ]
       }
     ],
@@ -132,7 +226,6 @@
     },
     "source": "Medicare.gov, CMS Benefit Policy Manual Chapter 15, CMS 2026 Therapy Thresholds Notice, CAA 2026"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -141,7 +234,7 @@
       },
       "paragraphs": [
         {
-          "en": "Yes. Medicare covers physical therapy, occupational therapy, speech-language pathology, and outpatient mental health therapy under Part B. After the 2026 Part B deductible of $283, you pay 20% coinsurance with no annual visit cap. Inpatient therapy in a skilled nursing facility or rehabilitation hospital bills under Part A with different cost-sharing. Medicare Advantage plans must cover all the same therapy types and may offer extras.",
+          "en": "Yes. Medicare covers physical therapy, occupational therapy, speech-language pathology, and outpatient mental health therapy under Part B. After the 2026 Part B [deductible](/en/glossary/deductible) of $283, you pay 20% coinsurance with no annual visit cap. Inpatient therapy in a skilled nursing facility or rehabilitation hospital bills under Part A with different cost-sharing. Medicare Advantage plans must cover all the same therapy types and may offer extras.",
           "es": "Sí. Medicare cubre terapia física, terapia ocupacional, patología del habla y lenguaje y terapia de salud mental ambulatoria bajo la Parte B. Después del deducible de la Parte B de $283 en 2026, usted paga el 20% de coseguro sin límite anual de visitas. La terapia para pacientes hospitalizados en una instalación de enfermería especializada o en un hospital de rehabilitación se factura bajo la Parte A con un costo compartido diferente. Los planes Medicare Advantage deben cubrir todos los mismos tipos de terapia y pueden ofrecer beneficios adicionales."
         }
       ]
@@ -201,7 +294,7 @@
       },
       "paragraphs": [
         {
-          "en": "Medicare telehealth therapy is available through December 31, 2027, under the Consolidated Appropriations Act of 2026 (CAA 2026), which extended pandemic-era telehealth flexibilities. Physical therapy, occupational therapy, speech-language pathology, and mental health therapy can all be delivered via two-way audio-video platforms. Importantly, CAA 2026 removed the requirement to have an in-person visit before accessing telehealth mental health therapy, which had been a barrier for rural and homebound beneficiaries. You can receive therapy via telehealth from your home as long as the therapist is licensed in the state where you are located.",
+          "en": "[Medicare telehealth therapy](/en/qa/does-medicare-cover-telehealth) is available through December 31, 2027, under the Consolidated Appropriations Act of 2026 (CAA 2026), which extended pandemic-era telehealth flexibilities. Physical therapy, occupational therapy, speech-language pathology, and mental health therapy can all be delivered via two-way audio-video platforms. Importantly, CAA 2026 removed the requirement to have an in-person visit before accessing telehealth mental health therapy, which had been a barrier for rural and homebound beneficiaries. You can receive therapy via telehealth from your home as long as the therapist is licensed in the state where you are located.",
           "es": "La terapia por telesalud de Medicare está disponible hasta el 31 de diciembre de 2027, bajo la Ley de Asignaciones Consolidadas de 2026 (CAA 2026), que extendió las flexibilidades de telesalud de la era pandémica. La terapia física, la terapia ocupacional, la patología del habla y lenguaje y la terapia de salud mental se pueden entregar a través de plataformas de audio y video bidireccionales. Significativamente, la CAA 2026 eliminó el requisito de tener una visita en persona antes de acceder a la terapia de salud mental por telesalud, lo que había sido una barrera para los beneficiarios rurales y confinados en casa. Puede recibir terapia a través de telesalud desde su hogar siempre que el terapeuta esté licenciado en el estado donde usted se encuentra."
         },
         {
@@ -217,7 +310,7 @@
       },
       "paragraphs": [
         {
-          "en": "Medicare Advantage (Part C) plans must cover all therapy services that Original Medicare covers, including PT, OT, SLP, and mental health therapy. Beyond that floor, many Medicare Advantage plans offer enhanced therapy benefits in 2026. Common additions include chiropractic care visits beyond Medicare's standard manipulation-only coverage, acupuncture for chronic low back pain (up to 20 visits per year in some plans), extra PT or OT visits above Original Medicare thresholds without requiring a KX modifier process, and fitness or physical activity program memberships. Use the Medicare Plan Finder at medicare.gov to compare therapy benefits across Medicare Advantage plans available in your zip code for the 2026 plan year.",
+          "en": "[Medicare Advantage](/en/qa/medicare-advantage-vs-original-medicare) (Part C) plans must cover all therapy services that Original Medicare covers, including PT, OT, SLP, and mental health therapy. Beyond that floor, many Medicare Advantage plans offer enhanced therapy benefits in 2026. Common additions include chiropractic care visits beyond Medicare's standard manipulation-only coverage, acupuncture for chronic low back pain (up to 20 visits per year in some plans), extra PT or OT visits above Original Medicare thresholds without requiring a KX modifier process, and fitness or physical activity program memberships. Use the Medicare Plan Finder at medicare.gov to compare therapy benefits across Medicare Advantage plans available in your zip code for the 2026 plan year.",
           "es": "Los planes Medicare Advantage (Parte C) deben cubrir todos los servicios de terapia que cubre Medicare Original, incluyendo PT, OT, SLP y terapia de salud mental. Más allá de ese piso, muchos planes Medicare Advantage ofrecen beneficios de terapia mejorados en 2026. Las adiciones comunes incluyen visitas de atención quiropráctica más allá de la cobertura de manipulación estándar de Medicare, acupuntura para dolor lumbar crónico (hasta 20 visitas por año en algunos planes), visitas adicionales de PT u OT más allá de los umbrales de Medicare Original sin requerir un proceso de modificador KX, y membresías de programas de ejercicio o actividad física. Use el Buscador de Planes de Medicare en medicare.gov para comparar los beneficios de terapia entre los planes Medicare Advantage disponibles en su código postal para el año de plan 2026."
         }
       ]
@@ -229,7 +322,7 @@
       },
       "paragraphs": [
         {
-          "en": "When therapy is delivered during a skilled nursing facility (SNF) stay or an inpatient rehabilitation facility (IRF) stay, Medicare Part A applies, not Part B. The cost-sharing structure is different. For a SNF stay, Medicare Part A covers days 1 through 20 at $0 cost to you in 2026, then days 21 through 100 require a $217 per day coinsurance payment. After 100 days, Part A SNF benefits are exhausted for that benefit period. For an inpatient rehabilitation facility admission, the 2026 Part A deductible of $1,736 applies per benefit period.",
+          "en": "When therapy is delivered during a [skilled nursing facility (SNF)](/en/qa/does-medicare-cover-skilled-nursing) stay or an inpatient rehabilitation facility (IRF) stay, Medicare Part A applies, not Part B. The cost-sharing structure is different. For a SNF stay, Medicare Part A covers days 1 through 20 at $0 cost to you in 2026, then days 21 through 100 require a $217 per day coinsurance payment. After 100 days, Part A SNF benefits are exhausted for that benefit period. For an inpatient rehabilitation facility admission, the 2026 Part A deductible of $1,736 applies per benefit period.",
           "es": "Cuando la terapia se brinda durante una estadía en una instalación de enfermería especializada (SNF) o en una instalación de rehabilitación para pacientes hospitalizados (IRF), se aplica la Parte A de Medicare, no la Parte B. La estructura de costo compartido es diferente. Para una estadía en SNF, la Parte A de Medicare cubre los días 1 al 20 sin costo para usted en 2026, luego los días 21 al 100 requieren un pago de coseguro de $217 por día. Después de 100 días, los beneficios de SNF de la Parte A se agotan para ese período de beneficio. Para una admisión en una instalación de rehabilitación para pacientes hospitalizados, se aplica el deducible de la Parte A de $1,736 en 2026 por período de beneficio."
         },
         {
@@ -303,7 +396,6 @@
       ]
     }
   ],
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -377,7 +469,6 @@
       "es": "La cobertura de terapia de Medicare Parte B es durante todo el año. No se aplica ningún período de inscripción específicamente a los servicios de terapia. Su umbral anual de terapia ($2,480 para PT+SLP; $2,480 por separado para OT) se restablece el 1 de enero de cada año. El acceso a terapia por telesalud se extiende hasta el 31 de diciembre de 2027."
     }
   },
-
   "faqs": {
     "en": [
       {
@@ -448,7 +539,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -479,7 +569,6 @@
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "Medicare.gov: Outpatient Therapy Coverage",

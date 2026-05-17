@@ -21,9 +21,7 @@
   "ctaTarget": "screener",
   "lastUpdated": "2026-05-15",
   "readingTime": "6 min read",
-
   "stateBrand": "Medicare Savings Program",
-
   "keyTerms": {
     "en": [
       "QMB Qualified Medicare Beneficiary",
@@ -42,9 +40,7 @@
       "Ayuda Adicional Parte D LIS"
     ]
   },
-
   "isLighthouse": false,
-
   "meta": {
     "title": {
       "en": "Medicare Savings Program Eligibility by State 2026 | CoveredUSA",
@@ -55,14 +51,12 @@
       "es": "Límites de ingresos y recursos 2026 para los programas QMB, SLMB, QI y QDWI por estado. Descubra si califica y cómo solicitarlo."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Medicare Savings Program (MSP) Eligibility by State (2026)",
       "es": "Elegibilidad del Programa de Ahorros de Medicare (MSP) por Estado (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "If you have Medicare and a limited income, you may qualify for a Medicare Savings Program (MSP) that pays some or all of your Medicare premiums, deductibles, and copays for you. In 2026, the standard Part B premium alone is $202.90 per month, so qualifying for even the most basic MSP tier saves you over $2,400 per year.",
@@ -73,47 +67,142 @@
       "es": "Los MSP son administrados por el programa de Medicaid de cada estado. La ley federal establece un mínimo de ingresos, pero muchos estados han aumentado esos límites o eliminado completamente el examen de recursos, lo que significa que más personas califican de lo que sugieren las cifras federales. Esta guía cubre los cuatro niveles de MSP, los límites de ingresos y recursos federales de 2026, qué estados son más generosos y exactamente cómo solicitar."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["MSP Program", "FPL Range", "Monthly Income (Individual)", "Monthly Income (Couple)", "What It Pays"],
-      "es": ["Programa MSP", "Rango FPL", "Ingreso mensual (individual)", "Ingreso mensual (pareja)", "Qué paga"]
+      "en": [
+        "MSP Program",
+        "FPL Range",
+        "Monthly Income (Individual)",
+        "Monthly Income (Couple)",
+        "What It Pays"
+      ],
+      "es": [
+        "Programa MSP",
+        "Rango FPL",
+        "Ingreso mensual (individual)",
+        "Ingreso mensual (pareja)",
+        "Qué paga"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "QMB (Qualified Medicare Beneficiary)", "es": "QMB (Beneficiario Calificado de Medicare)" },
-          { "en": "Up to 100% FPL", "es": "Hasta 100% FPL" },
-          { "value": { "en": "$1,350/mo", "es": "$1,350/mes" }, "status": "yes" },
-          { "value": { "en": "$1,824/mo", "es": "$1,824/mes" }, "status": "yes" },
-          { "en": "Part A + B premiums, deductibles, coinsurance, copays", "es": "Primas Parte A + B, deducibles, coseguro, copagos" }
+          {
+            "en": "QMB (Qualified Medicare Beneficiary)",
+            "es": "QMB (Beneficiario Calificado de Medicare)"
+          },
+          {
+            "en": "Up to 100% FPL",
+            "es": "Hasta 100% FPL"
+          },
+          {
+            "value": {
+              "en": "$1,350/mo",
+              "es": "$1,350/mes"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "$1,824/mo",
+              "es": "$1,824/mes"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Part A + B premiums, deductibles, coinsurance, copays",
+            "es": "Primas Parte A + B, deducibles, coseguro, copagos"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "SLMB (Specified Low-Income Beneficiary)", "es": "SLMB (Beneficiario de Bajos Ingresos Especificado)" },
-          { "en": "100% to 120% FPL", "es": "100% a 120% FPL" },
-          { "value": { "en": "$1,616/mo", "es": "$1,616/mes" }, "status": "partial" },
-          { "value": { "en": "$2,184/mo", "es": "$2,184/mes" }, "status": "partial" },
-          { "en": "Part B premium only ($202.90/mo in 2026)", "es": "Solo prima Parte B ($202.90/mes en 2026)" }
+          {
+            "en": "SLMB (Specified Low-Income Beneficiary)",
+            "es": "SLMB (Beneficiario de Bajos Ingresos Especificado)"
+          },
+          {
+            "en": "100% to 120% FPL",
+            "es": "100% a 120% FPL"
+          },
+          {
+            "value": {
+              "en": "$1,616/mo",
+              "es": "$1,616/mes"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "$2,184/mo",
+              "es": "$2,184/mes"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Part B premium only ($202.90/mo in 2026)",
+            "es": "Solo prima Parte B ($202.90/mes en 2026)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "QI (Qualifying Individual)", "es": "QI (Individuo Calificado)" },
-          { "en": "120% to 135% FPL", "es": "120% a 135% FPL" },
-          { "value": { "en": "$1,816/mo", "es": "$1,816/mes" }, "status": "partial" },
-          { "value": { "en": "$2,455/mo", "es": "$2,455/mes" }, "status": "partial" },
-          { "en": "Part B premium only; first-come basis, enrollment may close", "es": "Solo prima Parte B; por orden de llegada, inscripción puede cerrarse" }
+          {
+            "en": "QI (Qualifying Individual)",
+            "es": "QI (Individuo Calificado)"
+          },
+          {
+            "en": "120% to 135% FPL",
+            "es": "120% a 135% FPL"
+          },
+          {
+            "value": {
+              "en": "$1,816/mo",
+              "es": "$1,816/mes"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "$2,455/mo",
+              "es": "$2,455/mes"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Part B premium only; first-come basis, enrollment may close",
+            "es": "Solo prima Parte B; por orden de llegada, inscripción puede cerrarse"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "QDWI (Qualified Disabled Working Individual)", "es": "QDWI (Discapacitado Calificado que Trabaja)" },
-          { "en": "Up to 200% FPL (with disregards)", "es": "Hasta 200% FPL (con descuentos)" },
-          { "value": { "en": "Up to ~$5,405/mo", "es": "Hasta ~$5,405/mes" }, "status": "partial" },
-          { "value": { "en": "Up to ~$7,299/mo", "es": "Hasta ~$7,299/mes" }, "status": "partial" },
-          { "en": "Part A premium only; for working disabled under age 65", "es": "Solo prima Parte A; para discapacitados que trabajan menores de 65 años" }
+          {
+            "en": "QDWI (Qualified Disabled Working Individual)",
+            "es": "QDWI (Discapacitado Calificado que Trabaja)"
+          },
+          {
+            "en": "Up to 200% FPL (with disregards)",
+            "es": "Hasta 200% FPL (con descuentos)"
+          },
+          {
+            "value": {
+              "en": "Up to ~$5,405/mo",
+              "es": "Hasta ~$5,405/mes"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "Up to ~$7,299/mo",
+              "es": "Hasta ~$7,299/mes"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Part A premium only; for working disabled under age 65",
+            "es": "Solo prima Parte A; para discapacitados que trabajan menores de 65 años"
+          }
         ]
       }
     ],
@@ -123,7 +212,6 @@
     },
     "source": "NCOA 2026 MSP limits, SSA.gov, Medicare.gov"
   },
-
   "householdSizeTable": {
     "caption": {
       "en": "2026 Medicare Savings Program QMB Income Limits by Household Size (48 States + DC, federal floor)",
@@ -237,7 +325,6 @@
     },
     "source": "2026 Federal Poverty Level guidelines (HHS), SSA.gov MSP limits, NCOA"
   },
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -267,24 +354,50 @@
     ],
     "govStartingUrl": "https://www.medicaid.gov/about-us/contact-us/index.html",
     "documentsNeeded": [
-      { "en": "Medicare card (showing Part A and Part B enrollment)", "es": "Tarjeta de Medicare (que muestre la inscripción en la Parte A y la Parte B)" },
-      { "en": "Proof of income: Social Security award letter, pay stubs, or pension statement", "es": "Prueba de ingresos: carta de concesión del Seguro Social, talones de pago o estado de cuenta de pensión" },
-      { "en": "Photo ID or Social Security card", "es": "Identificación con foto o tarjeta del Seguro Social" },
-      { "en": "Proof of resources if your state requires: bank statements, investment account statements (last 2 to 3 months)", "es": "Prueba de recursos si su estado lo requiere: estados de cuenta bancarios, estados de cuenta de inversión (últimos 2 a 3 meses)" },
-      { "en": "Proof of residency: utility bill or lease agreement", "es": "Prueba de residencia: recibo de servicios públicos o contrato de arrendamiento" }
+      {
+        "en": "Medicare card (showing Part A and Part B enrollment)",
+        "es": "Tarjeta de Medicare (que muestre la inscripción en la Parte A y la Parte B)"
+      },
+      {
+        "en": "Proof of income: Social Security award letter, pay stubs, or pension statement",
+        "es": "Prueba de ingresos: carta de concesión del Seguro Social, talones de pago o estado de cuenta de pensión"
+      },
+      {
+        "en": "Photo ID or Social Security card",
+        "es": "Identificación con foto o tarjeta del Seguro Social"
+      },
+      {
+        "en": "Proof of resources if your state requires: bank statements, investment account statements (last 2 to 3 months)",
+        "es": "Prueba de recursos si su estado lo requiere: estados de cuenta bancarios, estados de cuenta de inversión (últimos 2 a 3 meses)"
+      },
+      {
+        "en": "Proof of residency: utility bill or lease agreement",
+        "es": "Prueba de residencia: recibo de servicios públicos o contrato de arrendamiento"
+      }
     ],
     "commonDenialReasons": [
-      { "en": "Income is above the state's MSP limit for your household size", "es": "El ingreso está por encima del límite de MSP del estado para el tamaño de su hogar" },
-      { "en": "Resources exceed the limit (though many states have no resource test)", "es": "Los recursos exceden el límite (aunque muchos estados no tienen examen de recursos)" },
-      { "en": "Not enrolled in Medicare Part A and Part B", "es": "No estar inscrito en Medicare Parte A y Parte B" },
-      { "en": "QI program closed for the year due to funding cap", "es": "Programa QI cerrado por el año debido al límite de financiamiento" }
+      {
+        "en": "Income is above the state's MSP limit for your household size",
+        "es": "El ingreso está por encima del límite de MSP del estado para el tamaño de su hogar"
+      },
+      {
+        "en": "Resources exceed the limit (though many states have no resource test)",
+        "es": "Los recursos exceden el límite (aunque muchos estados no tienen examen de recursos)"
+      },
+      {
+        "en": "Not enrolled in Medicare Part A and Part B",
+        "es": "No estar inscrito en Medicare Parte A y Parte B"
+      },
+      {
+        "en": "QI program closed for the year due to funding cap",
+        "es": "Programa QI cerrado por el año debido al límite de financiamiento"
+      }
     ],
     "deadline": {
       "en": "QMB, SLMB, and QDWI are available year-round with no enrollment deadline. QI is funded by an annual federal block grant and may close to new applicants once the cap is reached, so apply early in the calendar year.",
       "es": "QMB, SLMB y QDWI están disponibles durante todo el año sin fecha límite de inscripción. QI es financiado por un subsidio federal anual y puede cerrarse para nuevos solicitantes una vez que se alcanza el límite, así que solicite temprano en el año calendario."
     }
   },
-
   "detailSections": [
     {
       "heading": {
@@ -293,7 +406,7 @@
       },
       "paragraphs": [
         {
-          "en": "The four MSP tiers provide different levels of financial relief. QMB is the most comprehensive. SLMB and QI are narrower but still valuable because the Part B premium of $202.90 per month in 2026 adds up to $2,434.80 per year.",
+          "en": "The four MSP tiers provide different levels of financial relief. QMB is the most comprehensive. For the full Medicare cost structure, see [Medicare free or cost](/en/qa/medicare-free-or-cost). SLMB and QI are narrower but still valuable because the Part B premium of $202.90 per month in 2026 adds up to $2,434.80 per year.",
           "es": "Los cuatro niveles de MSP ofrecen diferentes niveles de alivio financiero. QMB es el más completo. SLMB y QI son más limitados pero siguen siendo valiosos porque la prima de la Parte B de $202.90 al mes en 2026 suma $2,434.80 al año."
         }
       ],
@@ -337,65 +450,185 @@
           "es": "Estados sin examen de recursos MSP a partir de 2026"
         },
         "headers": {
-          "en": ["State", "Resource Test", "Notes"],
-          "es": ["Estado", "Examen de recursos", "Notas"]
+          "en": [
+            "State",
+            "Resource Test",
+            "Notes"
+          ],
+          "es": [
+            "Estado",
+            "Examen de recursos",
+            "Notas"
+          ]
         },
         "rows": [
           {
-            "en": ["Alabama", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Alabama", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Alabama",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Alabama",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["Arizona", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Arizona", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Arizona",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Arizona",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["California", "$130,000 individual / $195,000 couple", "Very high limit; effectively no limit for most"],
-            "es": ["California", "$130,000 individual / $195,000 pareja", "Límite muy alto; efectivamente sin límite para la mayoría"]
+            "en": [
+              "California",
+              "$130,000 individual / $195,000 couple",
+              "Very high limit; effectively no limit for most"
+            ],
+            "es": [
+              "California",
+              "$130,000 individual / $195,000 pareja",
+              "Límite muy alto; efectivamente sin límite para la mayoría"
+            ]
           },
           {
-            "en": ["Connecticut", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Connecticut", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Connecticut",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Connecticut",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["Delaware", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Delaware", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Delaware",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Delaware",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["Louisiana", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Louisiana", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Louisiana",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Louisiana",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["Maine", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Maine", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Maine",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Maine",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["Massachusetts", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Massachusetts", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Massachusetts",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Massachusetts",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["Mississippi", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Mississippi", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Mississippi",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Mississippi",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["New Mexico", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Nuevo Mexico", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "New Mexico",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Nuevo Mexico",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["New York", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Nueva York", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "New York",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Nueva York",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["Oregon", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Oregon", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Oregon",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Oregon",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["Vermont", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["Vermont", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "Vermont",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "Vermont",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           },
           {
-            "en": ["DC", "None", "Income-only test for QMB/SLMB/QI"],
-            "es": ["DC", "Ninguno", "Solo prueba de ingresos para QMB/SLMB/QI"]
+            "en": [
+              "DC",
+              "None",
+              "Income-only test for QMB/SLMB/QI"
+            ],
+            "es": [
+              "DC",
+              "Ninguno",
+              "Solo prueba de ingresos para QMB/SLMB/QI"
+            ]
           }
         ],
         "footnote": {
@@ -412,7 +645,7 @@
       },
       "paragraphs": [
         {
-          "en": "When you are enrolled in QMB, SLMB, or QI, you automatically qualify for Extra Help (also called the Low Income Subsidy, or LIS) for Medicare Part D prescription drug coverage. This happens automatically, without a separate application. Extra Help in 2026 caps your out-of-pocket Part D drug costs and reduces or eliminates monthly plan premiums. In 2026, the Part D out-of-pocket cap for all beneficiaries is $2,100, and Extra Help beneficiaries pay far less, often $0 to $4.50 per generic and $0 to $11.20 per brand-name drug.",
+          "en": "When you are enrolled in QMB, SLMB, or QI, you automatically qualify for [Extra Help](/en/qa/extra-help-eligibility) (also called the Low Income Subsidy, or LIS) for [Medicare Part D](/en/glossary/medicare-part-d) prescription drug coverage. This happens automatically, without a separate application. Extra Help in 2026 caps your out-of-pocket Part D drug costs and reduces or eliminates monthly plan premiums. In 2026, the Part D out-of-pocket cap for all beneficiaries is $2,100, and Extra Help beneficiaries pay far less, often $0 to $4.50 per generic and $0 to $11.20 per brand-name drug.",
           "es": "Cuando está inscrito en QMB, SLMB o QI, califica automáticamente para Ayuda Adicional (también llamada Subsidio de Bajos Ingresos, o LIS) para la cobertura de medicamentos recetados de la Parte D de Medicare. Esto sucede automáticamente, sin una solicitud separada. La Ayuda Adicional en 2026 limita sus costos de medicamentos de la Parte D de su bolsillo y reduce o elimina las primas mensuales del plan. En 2026, el tope de gastos de la Parte D para todos los beneficiarios es $2,100, y los beneficiarios de Ayuda Adicional pagan mucho menos, a menudo $0 a $4.50 por genérico y $0 a $11.20 por medicamento de marca."
         },
         {
@@ -454,13 +687,12 @@
       },
       "paragraphs": [
         {
-          "en": "If your income is low enough to qualify for QMB and you also meet your state's full Medicaid income limits, you may qualify as fully dual-eligible (Medicare plus full Medicaid). Full dual-eligibles get all MSP benefits plus Medicaid coverage for services Medicare does not cover, such as dental, vision, hearing, and long-term care. About 12 million Americans are currently dual-eligible. The 40 states that have expanded Medicaid under the ACA have higher Medicaid income limits, making dual eligibility more accessible.",
+          "en": "If your income is low enough to qualify for QMB and you also meet your state's full Medicaid income limits, you may qualify as fully dual-eligible ([Medicare plus full Medicaid](/en/qa/can-i-have-both-medicare-and-medicaid)). Full dual-eligibles get all MSP benefits plus Medicaid coverage for services Medicare does not cover, such as dental, vision, hearing, and long-term care. About 12 million Americans are currently dual-eligible. The 40 states that have expanded Medicaid under the ACA have higher Medicaid income limits, making dual eligibility more accessible.",
           "es": "Si su ingreso es suficientemente bajo para calificar para QMB y también cumple los límites de ingresos de Medicaid completo de su estado, puede calificar como completamente dualmente elegible (Medicare más Medicaid completo). Los completamente dualmente elegibles obtienen todos los beneficios de MSP más la cobertura de Medicaid para servicios que Medicare no cubre, como dental, visión, audición y atención a largo plazo. Alrededor de 12 millones de estadounidenses son actualmente dualmente elegibles. Los 40 estados que han expandido Medicaid bajo la ACA tienen límites de ingresos de Medicaid más altos, haciendo que la doble elegibilidad sea más accesible."
         }
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -531,7 +763,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -562,7 +793,6 @@
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "Medicare.gov: Medicare Savings Programs",

@@ -22,7 +22,6 @@
   "lastUpdated": "2026-05-15",
   "readingTime": "6 min read",
   "isLighthouse": false,
-
   "keyTerms": {
     "en": [
       "skilled nursing facility",
@@ -41,7 +40,6 @@
       "SNF cobertura"
     ]
   },
-
   "meta": {
     "title": {
       "en": "Does Medicare Cover Nursing Home Care? (2026) | CoveredUSA",
@@ -52,69 +50,151 @@
       "es": "Medicare cubre enfermería especializada a corto plazo (hasta 100 días). Los días 21-100 cuestan $217/día en 2026. El cuidado custodial a largo plazo NO está cubierto — Medicaid sí lo cubre."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Does Medicare Cover Nursing Home Care? (2026)",
       "es": "¿Medicare Cubre el Cuidado en Hogar de Ancianos? (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicare covers nursing home care, but only in a specific and limited way: short-term skilled care after a hospital stay. The program does not pay for the type of long-term care that most nursing home residents need. Understanding this distinction can prevent a devastating financial surprise.",
       "es": "Medicare cubre el cuidado en hogar de ancianos, pero solo de forma específica y limitada: cuidado especializado a corto plazo después de una hospitalización. El programa no paga por el tipo de cuidado a largo plazo que la mayoría de los residentes de hogares de ancianos necesita. Entender esta distinción puede prevenir una sorpresa financiera devastadora."
     },
     {
-      "en": "This guide covers every Medicare nursing home rule in 2026: the 3-day qualifying hospital stay requirement, the 100-day coverage limit, the $217 per day coinsurance for days 21 through 100, what skilled care means versus custodial care, and how Medicaid fills the gap for those who qualify.",
+      "en": "This guide covers every Medicare nursing home rule in 2026: the 3-day qualifying hospital stay requirement, the 100-day coverage limit, the $217 per day coinsurance for days 21 through 100, what skilled care means versus custodial care, and how Medicaid fills the gap for those who qualify. For long-term care eligibility requirements, see [Medicaid long-term care eligibility](/en/qa/medicaid-long-term-care-eligibility).",
       "es": "Esta guía cubre cada regla de Medicare para hogares de ancianos en 2026: el requisito de estadía hospitalaria de 3 días, el límite de cobertura de 100 días, el copago de $217 por día para los días 21 al 100, qué significa cuidado especializado versus custodial, y cómo Medicaid llena el vacío para quienes califican."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Plan Type", "SNF / Nursing Home", "Days Covered", "Your Cost (2026)"],
-      "es": ["Tipo de plan", "SNF / Hogar de ancianos", "Días cubiertos", "Su costo (2026)"]
+      "en": [
+        "Plan Type",
+        "SNF / Nursing Home",
+        "Days Covered",
+        "Your Cost (2026)"
+      ],
+      "es": [
+        "Tipo de plan",
+        "SNF / Hogar de ancianos",
+        "Días cubiertos",
+        "Su costo (2026)"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Original Medicare (Part A)", "es": "Medicare Original (Parte A)" },
-          { "value": { "en": "Yes (skilled care only)", "es": "Sí (solo cuidado especializado)" }, "status": "partial" },
-          { "en": "Up to 100 days per benefit period", "es": "Hasta 100 días por período de beneficio" },
-          { "en": "Days 1-20: $0 after $1,736 Part A deductible. Days 21-100: $217/day. Day 101+: 100% out of pocket", "es": "Días 1-20: $0 tras deducible de $1,736 Parte A. Días 21-100: $217/día. Día 101+: 100% a cargo del paciente" }
+          {
+            "en": "Original Medicare (Part A)",
+            "es": "Medicare Original (Parte A)"
+          },
+          {
+            "value": {
+              "en": "Yes (skilled care only)",
+              "es": "Sí (solo cuidado especializado)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Up to 100 days per benefit period",
+            "es": "Hasta 100 días por período de beneficio"
+          },
+          {
+            "en": "Days 1-20: $0 after $1,736 Part A deductible. Days 21-100: $217/day. Day 101+: 100% out of pocket",
+            "es": "Días 1-20: $0 tras deducible de $1,736 Parte A. Días 21-100: $217/día. Día 101+: 100% a cargo del paciente"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare Advantage (Part C)", "es": "Medicare Advantage (Parte C)" },
-          { "value": { "en": "Yes (may waive 3-day rule)", "es": "Sí (puede omitir la regla de 3 días)" }, "status": "partial" },
-          { "en": "Typically up to 100 days; varies by plan", "es": "Típicamente hasta 100 días; varía por plan" },
-          { "en": "Varies by plan; prior authorization usually required; must use in-network SNF", "es": "Varía por plan; generalmente se requiere autorización previa; debe usar SNF en la red" }
+          {
+            "en": "Medicare Advantage (Part C)",
+            "es": "Medicare Advantage (Parte C)"
+          },
+          {
+            "value": {
+              "en": "Yes (may waive 3-day rule)",
+              "es": "Sí (puede omitir la regla de 3 días)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Typically up to 100 days; varies by plan",
+            "es": "Típicamente hasta 100 días; varía por plan"
+          },
+          {
+            "en": "Varies by plan; prior authorization usually required; must use in-network SNF",
+            "es": "Varía por plan; generalmente se requiere autorización previa; debe usar SNF en la red"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medigap (Supplement)", "es": "Medigap (Suplemento)" },
-          { "value": { "en": "Partial (covers coinsurance only)", "es": "Parcial (solo cubre el copago)" }, "status": "partial" },
-          { "en": "Covers the $217/day coinsurance for days 21-100 (plan-dependent)", "es": "Cubre el copago de $217/día para los días 21-100 (depende del plan)" },
-          { "en": "Plans C, D, F, G, M, N cover SNF coinsurance; check your specific plan", "es": "Los planes C, D, F, G, M, N cubren el copago de SNF; verifique su plan específico" }
+          {
+            "en": "Medigap (Supplement)",
+            "es": "Medigap (Suplemento)"
+          },
+          {
+            "value": {
+              "en": "Partial (covers coinsurance only)",
+              "es": "Parcial (solo cubre el copago)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Covers the $217/day coinsurance for days 21-100 (plan-dependent)",
+            "es": "Cubre el copago de $217/día para los días 21-100 (depende del plan)"
+          },
+          {
+            "en": "Plans C, D, F, G, M, N cover SNF coinsurance; check your specific plan",
+            "es": "Los planes C, D, F, G, M, N cubren el copago de SNF; verifique su plan específico"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Long-term custodial care (nursing home)", "es": "Cuidado custodial a largo plazo (hogar de ancianos)" },
-          { "value": { "en": "No (Medicare never covers)", "es": "No (Medicare nunca cubre)" }, "status": "no" },
-          { "en": "Not covered at all", "es": "No cubierto en absoluto" },
-          { "en": "100% out of pocket unless Medicaid-eligible ($7,000 to $10,000+/month average)", "es": "100% a cargo del paciente a menos que sea elegible para Medicaid ($7,000 a $10,000+/mes en promedio)" }
+          {
+            "en": "Long-term custodial care (nursing home)",
+            "es": "Cuidado custodial a largo plazo (hogar de ancianos)"
+          },
+          {
+            "value": {
+              "en": "No (Medicare never covers)",
+              "es": "No (Medicare nunca cubre)"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Not covered at all",
+            "es": "No cubierto en absoluto"
+          },
+          {
+            "en": "100% out of pocket unless Medicaid-eligible ($7,000 to $10,000+/month average)",
+            "es": "100% a cargo del paciente a menos que sea elegible para Medicaid ($7,000 a $10,000+/mes en promedio)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicaid (separate program)", "es": "Medicaid (programa separado)" },
-          { "value": { "en": "Yes (long-term custodial care)", "es": "Sí (cuidado custodial a largo plazo)" }, "status": "yes" },
-          { "en": "Unlimited, for those who qualify financially and medically", "es": "Ilimitado, para quienes califican financiera y médicamente" },
-          { "en": "Little to no cost for eligibles; income and asset limits apply", "es": "Sin costo o costo mínimo para elegibles; se aplican límites de ingresos y activos" }
+          {
+            "en": "Medicaid (separate program)",
+            "es": "Medicaid (programa separado)"
+          },
+          {
+            "value": {
+              "en": "Yes (long-term custodial care)",
+              "es": "Sí (cuidado custodial a largo plazo)"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Unlimited, for those who qualify financially and medically",
+            "es": "Ilimitado, para quienes califican financiera y médicamente"
+          },
+          {
+            "en": "Little to no cost for eligibles; income and asset limits apply",
+            "es": "Sin costo o costo mínimo para elegibles; se aplican límites de ingresos y activos"
+          }
         ]
       }
     ],
@@ -124,7 +204,6 @@
     },
     "source": "CMS CY 2026 Medicare Part A Deductible and Coinsurance Notice; Medicare.gov SNF Coverage"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -133,7 +212,7 @@
       },
       "paragraphs": [
         {
-          "en": "Medicare will only pay for skilled nursing facility care when all four of the following conditions are met. Missing any single condition means Medicare will not cover the stay.",
+          "en": "Medicare will only pay for skilled nursing facility care when all four of the following conditions are met. (Medicaid covers long-term [nursing home care](/en/qa/does-medicaid-cover-nursing-home) for those who qualify financially.) Missing any single condition means Medicare will not cover the stay.",
           "es": "Medicare solo pagará por el cuidado en instalación de enfermería especializada cuando se cumplan las cuatro condiciones siguientes. Si falta alguna condición, Medicare no cubrirá la estadía."
         }
       ],
@@ -189,29 +268,65 @@
           "es": "Cuidado especializado (Medicare cubre) vs. cuidado custodial (Medicare NO cubre)"
         },
         "headers": {
-          "en": ["Skilled Care (Medicare Covers)", "Custodial Care (Medicare Does NOT Cover)"],
-          "es": ["Cuidado especializado (Medicare cubre)", "Cuidado custodial (Medicare NO cubre)"]
+          "en": [
+            "Skilled Care (Medicare Covers)",
+            "Custodial Care (Medicare Does NOT Cover)"
+          ],
+          "es": [
+            "Cuidado especializado (Medicare cubre)",
+            "Cuidado custodial (Medicare NO cubre)"
+          ]
         },
         "rows": [
           {
-            "en": ["Physical therapy after a hip replacement", "Help with walking or getting around"],
-            "es": ["Fisioterapia después de reemplazo de cadera", "Ayuda para caminar o moverse"]
+            "en": [
+              "Physical therapy after a hip replacement",
+              "Help with walking or getting around"
+            ],
+            "es": [
+              "Fisioterapia después de reemplazo de cadera",
+              "Ayuda para caminar o moverse"
+            ]
           },
           {
-            "en": ["IV antibiotics or wound care requiring a nurse", "Help with bathing, dressing, grooming"],
-            "es": ["Antibióticos IV o cuidado de heridas que requiere enfermera", "Ayuda para bañarse, vestirse, arreglarse"]
+            "en": [
+              "IV antibiotics or wound care requiring a nurse",
+              "Help with bathing, dressing, grooming"
+            ],
+            "es": [
+              "Antibióticos IV o cuidado de heridas que requiere enfermera",
+              "Ayuda para bañarse, vestirse, arreglarse"
+            ]
           },
           {
-            "en": ["Occupational therapy to recover daily function", "Help with eating or meal preparation"],
-            "es": ["Terapia ocupacional para recuperar función diaria", "Ayuda para comer o preparar comidas"]
+            "en": [
+              "Occupational therapy to recover daily function",
+              "Help with eating or meal preparation"
+            ],
+            "es": [
+              "Terapia ocupacional para recuperar función diaria",
+              "Ayuda para comer o preparar comidas"
+            ]
           },
           {
-            "en": ["Speech therapy after a stroke", "Supervision or reminders for medications"],
-            "es": ["Terapia del habla después de un derrame cerebral", "Supervisión o recordatorios para medicamentos"]
+            "en": [
+              "Speech therapy after a stroke",
+              "Supervision or reminders for medications"
+            ],
+            "es": [
+              "Terapia del habla después de un derrame cerebral",
+              "Supervisión o recordatorios para medicamentos"
+            ]
           },
           {
-            "en": ["Monitoring of complex medical conditions", "Assistance with toileting or incontinence care"],
-            "es": ["Monitoreo de condiciones médicas complejas", "Asistencia con uso del baño o cuidado por incontinencia"]
+            "en": [
+              "Monitoring of complex medical conditions",
+              "Assistance with toileting or incontinence care"
+            ],
+            "es": [
+              "Monitoreo de condiciones médicas complejas",
+              "Asistencia con uso del baño o cuidado por incontinencia"
+            ]
           }
         ],
         "footnote": {
@@ -262,7 +377,7 @@
           "es": "Después del día 100, o cuando el cuidado especializado ya no es necesario, la cobertura de Medicare para el cuidado en hogar de ancianos termina completamente. En ese punto, la mayoría de las personas enfrenta uno de tres caminos: pago privado (a $7,000 a $10,000 o más por mes), seguro de cuidado a largo plazo (si se adquirió antes de que surgiera la necesidad), o Medicaid."
         },
         {
-          "en": "Nursing home care for people aged 21 and older is a mandatory Medicaid benefit in all 50 states. To qualify for Medicaid nursing home coverage, applicants must meet both income limits and asset limits set by their state. In 2026, a single Medicaid nursing home applicant typically must have income below $2,982 per month and countable assets below $2,000. A community spouse (the spouse who remains at home) may retain up to $157,920 in assets. Medicaid eligibility rules vary significantly by state and are administered separately from Medicare — use our screener to check eligibility.",
+          "en": "Nursing home care for people aged 21 and older is a mandatory Medicaid benefit in all 50 states. To qualify for Medicaid nursing home coverage, applicants must meet both income limits and asset limits set by their state. In 2026, a single Medicaid nursing home applicant typically must have income below $2,982 per month and countable assets below $2,000. See [Medicaid income limits](/en/medicaid-income-limits) for the full breakdown by state. A community spouse (the spouse who remains at home) may retain up to $157,920 in assets. Medicaid eligibility rules vary significantly by state and are administered separately from Medicare — use our screener to check eligibility.",
           "es": "El cuidado en hogar de ancianos para personas de 21 años o más es un beneficio obligatorio de Medicaid en los 50 estados. Para calificar para la cobertura de hogar de ancianos de Medicaid, los solicitantes deben cumplir tanto los límites de ingresos como los límites de activos establecidos por su estado. En 2026, un solicitante soltero de Medicaid para hogar de ancianos típicamente debe tener ingresos por debajo de $2,982 por mes y activos contables por debajo de $2,000. Un cónyuge comunitario (el cónyuge que permanece en casa) puede retener hasta $157,920 en activos. Las reglas de elegibilidad de Medicaid varían significativamente por estado y se administran por separado de Medicare — use nuestro verificador para verificar la elegibilidad."
         }
       ]
@@ -274,13 +389,12 @@
       },
       "paragraphs": [
         {
-          "en": "If you have Original Medicare, a Medigap (Medicare Supplement) plan can cover the $217 per day coinsurance for SNF days 21 through 100. Medigap plans C, D, F, G, M, and N all include SNF coinsurance coverage. Plan F covers the Part A deductible as well, but Plan F is only available if you were eligible for Medicare before January 1, 2020. Plans K and L cover a percentage of the SNF coinsurance. No Medigap plan covers custodial nursing home care — that coverage gap remains regardless of which supplement you carry.",
+          "en": "If you have Original Medicare, a [Medigap (Medicare Supplement) plan](/en/qa/medigap-vs-medicare-advantage) can cover the $217 per day coinsurance for SNF days 21 through 100. Medigap plans C, D, F, G, M, and N all include SNF coinsurance coverage. Plan F covers the Part A deductible as well, but Plan F is only available if you were eligible for Medicare before January 1, 2020. Plans K and L cover a percentage of the SNF coinsurance. No Medigap plan covers custodial nursing home care — that coverage gap remains regardless of which supplement you carry.",
           "es": "Si tiene Medicare Original, un plan Medigap (Suplemento de Medicare) puede cubrir el copago de $217 por día para los días 21 al 100 de SNF. Los planes Medigap C, D, F, G, M y N incluyen cobertura de copago de SNF. El Plan F también cubre el deducible de la Parte A, pero solo está disponible si era elegible para Medicare antes del 1 de enero de 2020. Los planes K y L cubren un porcentaje del copago de SNF. Ningún plan Medigap cubre el cuidado custodial en hogar de ancianos; esa brecha de cobertura permanece independientemente del suplemento que tenga."
         }
       ]
     }
   ],
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -350,7 +464,6 @@
       "es": "La cobertura de SNF de Medicare no tiene fecha límite de inscripción; la cobertura aplica según sea necesario después de una estadía hospitalaria calificante, durante todo el año."
     }
   },
-
   "faqs": {
     "en": [
       {
@@ -421,7 +534,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -452,7 +564,6 @@
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "Medicare.gov: Skilled Nursing Facility (SNF) Care",

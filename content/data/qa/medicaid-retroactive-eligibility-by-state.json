@@ -21,30 +21,24 @@
   },
   "isLighthouse": false,
   "isDeprecated": false,
-
   "question": {
     "en": "Medicaid Retroactive Eligibility (3-Month Look-Back) by State 2026",
     "es": "Elegibilidad Retroactiva de Medicaid (Período de 3 Meses) por Estado 2026"
   },
-
   "shortAnswer": {
     "en": "It depends on your state. Most states still cover up to 3 months back.",
     "es": "Depende de su estado. La mayoría cubre hasta 3 meses anteriores."
   },
-
   "fullAnswer": {
     "en": "It depends on your state. Federal law historically required states to cover Medicaid-eligible medical bills incurred up to 3 calendar months before the month of application, provided the person would have qualified at the time of service. As of 2026, roughly a dozen states have eliminated or shortened this retroactive window through Section 1115 waivers or state plan amendments, while the majority of states still provide the full 3-month look-back. Critically, the One Big Beautiful Bill Act (signed July 4, 2025) will cut the federal retroactive period to 1 month for Medicaid expansion adults and 2 months for traditional enrollees and CHIP starting January 1, 2027, meaning 2026 may be the last year the full 3-month protection is widely available.",
     "es": "Depende de su estado. La ley federal históricamente requería que los estados cubrieran las facturas médicas elegibles para Medicaid incurridas hasta 3 meses calendario antes del mes de solicitud, siempre que la persona hubiera calificado en el momento del servicio. A partir de 2026, aproximadamente una docena de estados han eliminado o acortado esta ventana retroactiva a través de exenciones de la Sección 1115 o enmiendas al plan estatal, mientras que la mayoría de los estados aún proporcionan el período retroactivo completo de 3 meses. La Ley One Big Beautiful Bill (firmada el 4 de julio de 2025) reducirá el período retroactivo federal a 1 mes para los adultos de expansión de Medicaid y 2 meses para los inscritos tradicionales y CHIP a partir del 1 de enero de 2027, lo que significa que 2026 puede ser el último año en que la protección completa de 3 meses esté ampliamente disponible."
   },
-
   "category": "Medicaid",
   "topic": "Medicaid Retroactive Eligibility by State",
   "medicalSpecialty": "PublicHealth",
   "ctaTarget": "screener",
-
   "lastUpdated": "2026-05-15",
   "readingTime": "7 min read",
-
   "meta": {
     "title": {
       "en": "Medicaid Retroactive Eligibility by State (2026) | CoveredUSA",
@@ -55,14 +49,12 @@
       "es": "¿Medicaid cubre facturas anteriores a su solicitud? La mayoría permite 3 meses en 2026, pero una docena de estados ha eliminado o acortado ese período. Tabla completa por estado."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Medicaid Retroactive Eligibility (3-Month Look-Back) by State (2026)",
       "es": "Elegibilidad Retroactiva de Medicaid (Período de 3 Meses) por Estado (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "When you apply for Medicaid, you may already have medical bills sitting unpaid from weeks or months before you filed. Federal law has long required states to look back up to 3 calendar months before the application month and pay those bills, as long as you would have qualified at the time of service. In 2026, that federal rule is still in force for most states. But roughly a dozen states have received federal approval to eliminate or shorten the retroactive window, leaving applicants in those states responsible for bills that Medicaid would otherwise cover.",
@@ -73,115 +65,319 @@
       "es": "Esta guía explica cómo funciona el período retroactivo de 3 meses, qué estados han eliminado o reducido la cobertura retroactiva en 2026, qué grupos casi siempre conservan la protección (mujeres embarazadas, niños, pacientes de cuidado a largo plazo), y qué significa la Ley One Big Beautiful Bill para la cobertura retroactiva a partir del 1 de enero de 2027."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["State / Program", "Retroactive Period (2026)", "Exceptions Retained", "Mechanism"],
-      "es": ["Estado / Programa", "Período Retroactivo (2026)", "Excepciones Retenidas", "Mecanismo"]
+      "en": [
+        "State / Program",
+        "Retroactive Period (2026)",
+        "Exceptions Retained",
+        "Mechanism"
+      ],
+      "es": [
+        "Estado / Programa",
+        "Período Retroactivo (2026)",
+        "Excepciones Retenidas",
+        "Mecanismo"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Most states (including CA, NY, IL, TX, PA, OH, MI, WA, CO, NJ, MN and others)", "es": "Mayoría de estados (incluye CA, NY, IL, TX, PA, OH, MI, WA, CO, NJ, MN y otros)" },
-          { "value": { "en": "Full 3 months", "es": "3 meses completos" }, "status": "yes" },
-          { "en": "All eligible groups", "es": "Todos los grupos elegibles" },
-          { "en": "Federal default (Medicaid Act Section 1902(a)(34))", "es": "Requisito federal predeterminado (Sección 1902(a)(34) de la Ley Medicaid)" }
+          {
+            "en": "Most states (including CA, NY, IL, TX, PA, OH, MI, WA, CO, NJ, MN and others)",
+            "es": "Mayoría de estados (incluye CA, NY, IL, TX, PA, OH, MI, WA, CO, NJ, MN y otros)"
+          },
+          {
+            "value": {
+              "en": "Full 3 months",
+              "es": "3 meses completos"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "All eligible groups",
+            "es": "Todos los grupos elegibles"
+          },
+          {
+            "en": "Federal default (Medicaid Act Section 1902(a)(34))",
+            "es": "Requisito federal predeterminado (Sección 1902(a)(34) de la Ley Medicaid)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Arizona (AHCCCS)", "es": "Arizona (AHCCCS)" },
-          { "value": { "en": "Eliminated for most adults", "es": "Eliminado para la mayoría de adultos" }, "status": "no" },
-          { "en": "Long-term care applicants retain limited retroactive coverage", "es": "Solicitantes de cuidado a largo plazo conservan cobertura retroactiva limitada" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "Arizona (AHCCCS)",
+            "es": "Arizona (AHCCCS)"
+          },
+          {
+            "value": {
+              "en": "Eliminated for most adults",
+              "es": "Eliminado para la mayoría de adultos"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Long-term care applicants retain limited retroactive coverage",
+            "es": "Solicitantes de cuidado a largo plazo conservan cobertura retroactiva limitada"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Arkansas (ARHOME)", "es": "Arkansas (ARHOME)" },
-          { "value": { "en": "30 days", "es": "30 días" }, "status": "partial" },
-          { "en": "Pregnant women and children retain broader coverage", "es": "Mujeres embarazadas y niños conservan cobertura más amplia" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "Arkansas (ARHOME)",
+            "es": "Arkansas (ARHOME)"
+          },
+          {
+            "value": {
+              "en": "30 days",
+              "es": "30 días"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Pregnant women and children retain broader coverage",
+            "es": "Mujeres embarazadas y niños conservan cobertura más amplia"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Delaware", "es": "Delaware" },
-          { "value": { "en": "Eliminated for most adults", "es": "Eliminado para la mayoría de adultos" }, "status": "no" },
-          { "en": "Nursing home residents, pregnant women, children under 19", "es": "Residentes de hogares de ancianos, mujeres embarazadas, niños menores de 19" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "Delaware",
+            "es": "Delaware"
+          },
+          {
+            "value": {
+              "en": "Eliminated for most adults",
+              "es": "Eliminado para la mayoría de adultos"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Nursing home residents, pregnant women, children under 19",
+            "es": "Residentes de hogares de ancianos, mujeres embarazadas, niños menores de 19"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Florida", "es": "Florida" },
-          { "value": { "en": "Eliminated for adults", "es": "Eliminado para adultos" }, "status": "no" },
-          { "en": "Pregnant women, children under 21", "es": "Mujeres embarazadas, niños menores de 21" },
-          { "en": "Section 1115 waiver / State policy", "es": "Exención Sección 1115 / Política estatal" }
+          {
+            "en": "Florida",
+            "es": "Florida"
+          },
+          {
+            "value": {
+              "en": "Eliminated for adults",
+              "es": "Eliminado para adultos"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Pregnant women, children under 21",
+            "es": "Mujeres embarazadas, niños menores de 21"
+          },
+          {
+            "en": "Section 1115 waiver / State policy",
+            "es": "Exención Sección 1115 / Política estatal"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Georgia", "es": "Georgia" },
-          { "value": { "en": "Eliminated for most", "es": "Eliminado para la mayoría" }, "status": "no" },
-          { "en": "Aged, blind, and disabled populations", "es": "Poblaciones de edad avanzada, ciegos y discapacitados" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "Georgia",
+            "es": "Georgia"
+          },
+          {
+            "value": {
+              "en": "Eliminated for most",
+              "es": "Eliminado para la mayoría"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Aged, blind, and disabled populations",
+            "es": "Poblaciones de edad avanzada, ciegos y discapacitados"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Hawaii (Med-QUEST)", "es": "Hawaii (Med-QUEST)" },
-          { "value": { "en": "10 days", "es": "10 días" }, "status": "partial" },
-          { "en": "Long-term care applicants retain 3-month period", "es": "Solicitantes de cuidado a largo plazo conservan período de 3 meses" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "Hawaii (Med-QUEST)",
+            "es": "Hawaii (Med-QUEST)"
+          },
+          {
+            "value": {
+              "en": "10 days",
+              "es": "10 días"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Long-term care applicants retain 3-month period",
+            "es": "Solicitantes de cuidado a largo plazo conservan período de 3 meses"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Indiana (HIP)", "es": "Indiana (HIP)" },
-          { "value": { "en": "Eliminated for expansion adults", "es": "Eliminado para adultos de expansión" }, "status": "no" },
-          { "en": "Pregnant women, children, seniors, people with disabilities", "es": "Mujeres embarazadas, niños, personas mayores, personas con discapacidades" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "Indiana (HIP)",
+            "es": "Indiana (HIP)"
+          },
+          {
+            "value": {
+              "en": "Eliminated for expansion adults",
+              "es": "Eliminado para adultos de expansión"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Pregnant women, children, seniors, people with disabilities",
+            "es": "Mujeres embarazadas, niños, personas mayores, personas con discapacidades"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Iowa", "es": "Iowa" },
-          { "value": { "en": "Eliminated for most adults", "es": "Eliminado para la mayoría de adultos" }, "status": "no" },
-          { "en": "Pregnant women, children under 19, nursing home residents", "es": "Mujeres embarazadas, niños menores de 19, residentes de hogares de ancianos" },
-          { "en": "Section 1115 waiver (approved 2017)", "es": "Exención Sección 1115 (aprobada 2017)" }
+          {
+            "en": "Iowa",
+            "es": "Iowa"
+          },
+          {
+            "value": {
+              "en": "Eliminated for most adults",
+              "es": "Eliminado para la mayoría de adultos"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Pregnant women, children under 19, nursing home residents",
+            "es": "Mujeres embarazadas, niños menores de 19, residentes de hogares de ancianos"
+          },
+          {
+            "en": "Section 1115 waiver (approved 2017)",
+            "es": "Exención Sección 1115 (aprobada 2017)"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "New Hampshire", "es": "New Hampshire" },
-          { "value": { "en": "Eliminated for expansion adults", "es": "Eliminado para adultos de expansión" }, "status": "no" },
-          { "en": "Pregnant women, infants under 1, children under 19, parents, aged/blind/disabled", "es": "Mujeres embarazadas, infantes menores de 1 año, niños menores de 19, padres, edad avanzada/ciegos/discapacitados" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "New Hampshire",
+            "es": "New Hampshire"
+          },
+          {
+            "value": {
+              "en": "Eliminated for expansion adults",
+              "es": "Eliminado para adultos de expansión"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Pregnant women, infants under 1, children under 19, parents, aged/blind/disabled",
+            "es": "Mujeres embarazadas, infantes menores de 1 año, niños menores de 19, padres, edad avanzada/ciegos/discapacitados"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Oklahoma (SoonerCare)", "es": "Oklahoma (SoonerCare)" },
-          { "value": { "en": "Eliminated for most adults", "es": "Eliminado para la mayoría de adultos" }, "status": "no" },
-          { "en": "Pregnant women, children under 19", "es": "Mujeres embarazadas, niños menores de 19" },
-          { "en": "State plan amendment", "es": "Enmienda al plan estatal" }
+          {
+            "en": "Oklahoma (SoonerCare)",
+            "es": "Oklahoma (SoonerCare)"
+          },
+          {
+            "value": {
+              "en": "Eliminated for most adults",
+              "es": "Eliminado para la mayoría de adultos"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Pregnant women, children under 19",
+            "es": "Mujeres embarazadas, niños menores de 19"
+          },
+          {
+            "en": "State plan amendment",
+            "es": "Enmienda al plan estatal"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Tennessee (TennCare)", "es": "Tennessee (TennCare)" },
-          { "value": { "en": "Eliminated for most adults", "es": "Eliminado para la mayoría de adultos" }, "status": "no" },
-          { "en": "Pregnant women, infants, children under 19", "es": "Mujeres embarazadas, infantes, niños menores de 19" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "Tennessee (TennCare)",
+            "es": "Tennessee (TennCare)"
+          },
+          {
+            "value": {
+              "en": "Eliminated for most adults",
+              "es": "Eliminado para la mayoría de adultos"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Pregnant women, infants, children under 19",
+            "es": "Mujeres embarazadas, infantes, niños menores de 19"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Utah", "es": "Utah" },
-          { "value": { "en": "Eliminated for adults over 19", "es": "Eliminado para adultos mayores de 19" }, "status": "no" },
-          { "en": "Children under 19 retain full 3-month period", "es": "Niños menores de 19 conservan el período completo de 3 meses" },
-          { "en": "Section 1115 waiver", "es": "Exención Sección 1115" }
+          {
+            "en": "Utah",
+            "es": "Utah"
+          },
+          {
+            "value": {
+              "en": "Eliminated for adults over 19",
+              "es": "Eliminado para adultos mayores de 19"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Children under 19 retain full 3-month period",
+            "es": "Niños menores de 19 conservan el período completo de 3 meses"
+          },
+          {
+            "en": "Section 1115 waiver",
+            "es": "Exención Sección 1115"
+          }
         ]
       }
     ],
@@ -191,7 +387,6 @@
     },
     "source": "Triage Cancer State Retroactive Medicaid Tracker 2025, KFF Medicaid Retroactive Coverage Waivers Brief, CMS Section 1115 Waiver Approvals, Justice in Aging H.R. 1 Analysis 2025"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -228,7 +423,7 @@
       },
       "paragraphs": [
         {
-          "en": "Retroactive Medicaid is most consequential for large, unexpected medical bills. A person who has a health crisis, goes to the emergency room, and then applies for Medicaid within the following weeks can have those hospital bills covered if they qualified at the time. Without retroactive coverage, the hospital bills from before the application date remain the patient's responsibility. Hospitals and health systems in states with full retroactive coverage actively encourage patients who receive emergency care to apply for Medicaid quickly, because the 3-month window allows them to recover costs from a prior admission.",
+          "en": "Retroactive Medicaid is most consequential for large, unexpected medical bills. This includes hospital stays, ER visits, and [mental health](/en/qa/does-medicaid-cover-mental-health) services. A person who has a health crisis, goes to the emergency room, and then applies for Medicaid within the following weeks can have those hospital bills covered if they qualified at the time. Without retroactive coverage, the hospital bills from before the application date remain the patient's responsibility. Hospitals and health systems in states with full retroactive coverage actively encourage patients who receive emergency care to apply for Medicaid quickly, because the 3-month window allows them to recover costs from a prior admission.",
           "es": "Medicaid retroactivo es más importante para facturas médicas grandes e inesperadas. Una persona que tiene una crisis de salud, va a la sala de emergencias y luego solicita Medicaid en las semanas siguientes puede tener esas facturas hospitalarias cubiertas si calificaba en ese momento. Sin cobertura retroactiva, las facturas hospitalarias de antes de la fecha de solicitud siguen siendo responsabilidad del paciente. Los hospitales y sistemas de salud en estados con cobertura retroactiva completa alientan activamente a los pacientes que reciben atención de emergencia a solicitar Medicaid rápidamente."
         },
         {
@@ -244,7 +439,7 @@
       },
       "paragraphs": [
         {
-          "en": "As of 2026, approximately 12 states have obtained approval to limit the retroactive window. Most did so through Section 1115 demonstration waivers, which allow states to waive standard Medicaid requirements with CMS approval. A few states made changes through state plan amendments (SPAs). The common pattern in these states is to eliminate retroactive coverage for the ACA expansion adult population (adults aged 19-64 who are not pregnant, not disabled, and not in long-term care) while preserving it for protected groups.",
+          "en": "As of 2026, approximately 12 states have obtained approval to limit the retroactive window. See [state Medicaid expansion status](/en/qa/state-medicaid-expansion-status) for context on how each state administers Medicaid. Most did so through Section 1115 demonstration waivers, which allow states to waive standard Medicaid requirements with CMS approval. A few states made changes through state plan amendments (SPAs). The common pattern in these states is to eliminate retroactive coverage for the ACA expansion adult population (adults aged 19-64 who are not pregnant, not disabled, and not in long-term care) while preserving it for protected groups.",
           "es": "A partir de 2026, aproximadamente 12 estados han obtenido aprobación para limitar la ventana retroactiva. La mayoría lo hicieron a través de exenciones de demostración de la Sección 1115, que permiten a los estados renunciar a los requisitos estándar de Medicaid con aprobación de CMS. Algunos estados hicieron cambios a través de enmiendas al plan estatal (SPAs). El patrón común en estos estados es eliminar la cobertura retroactiva para la población adulta de expansión del ACA (adultos de 19 a 64 años que no están embarazadas, no están discapacitados y no están en cuidado a largo plazo) mientras la conservan para grupos protegidos."
         },
         {
@@ -276,7 +471,7 @@
       },
       "paragraphs": [
         {
-          "en": "Even in states that have restricted retroactive coverage for general adults, several groups almost universally retain the full 3-month look-back window in 2026. Pregnant women retain full retroactive coverage in nearly every state, including all states that have eliminated it for other adults. The strong federal interest in prenatal care creates a near-universal protection for this group. Children under 19 similarly retain retroactive coverage in almost all states with waivers. Long-term care applicants (nursing home or home and community-based services waiver applicants) typically retain some form of retroactive coverage even in restrictive states, because the Medicaid long-term care application process routinely takes several months, and applying the restriction to that group would create severe financial hardship.",
+          "en": "Even in states that have restricted retroactive coverage for general adults, several groups almost universally retain the full 3-month look-back window in 2026. [Pregnant women](/en/qa/pregnancy-medicaid-by-state) retain full retroactive coverage in nearly every state, including all states that have eliminated it for other adults. The strong federal interest in prenatal care creates a near-universal protection for this group. Children under 19 similarly retain retroactive coverage in almost all states with waivers. Long-term care applicants (nursing home or home and community-based services waiver applicants) typically retain some form of retroactive coverage even in restrictive states, because the Medicaid long-term care application process routinely takes several months, and applying the restriction to that group would create severe financial hardship.",
           "es": "Incluso en los estados que han restringido la cobertura retroactiva para adultos en general, varios grupos casi universalmente conservan la ventana completa de 3 meses en 2026. Las mujeres embarazadas conservan cobertura retroactiva completa en casi todos los estados, incluidos todos los estados que la han eliminado para otros adultos. Los niños menores de 19 años también conservan cobertura retroactiva en casi todos los estados con exenciones. Los solicitantes de cuidado a largo plazo (solicitantes de hogar de ancianos o exención de servicios en el hogar y la comunidad) típicamente conservan alguna forma de cobertura retroactiva incluso en estados restrictivos."
         },
         {
@@ -292,7 +487,7 @@
       },
       "paragraphs": [
         {
-          "en": "To maximize retroactive coverage in 2026, apply for Medicaid as soon as possible after receiving medical services. The earlier you apply, the more months of the 3-month look-back window remain open. If you received care on February 10 and apply in May, only February falls within the 3-month window. If you apply in March, you may preserve coverage for February and March. States with full retroactive eligibility include the retroactive period evaluation as part of the standard application, so you generally do not need a separate form. Inform the caseworker that you had services prior to applying and request that the retroactive period be evaluated.",
+          "en": "To maximize retroactive coverage in 2026, apply for Medicaid as soon as possible after receiving medical services. If you are pregnant, [pregnancy Medicaid](/en/qa/pregnancy-medicaid-by-state) has even more favorable retroactive rules. The earlier you apply, the more months of the 3-month look-back window remain open. If you received care on February 10 and apply in May, only February falls within the 3-month window. If you apply in March, you may preserve coverage for February and March. States with full retroactive eligibility include the retroactive period evaluation as part of the standard application, so you generally do not need a separate form. Inform the caseworker that you had services prior to applying and request that the retroactive period be evaluated.",
           "es": "Para maximizar la cobertura retroactiva en 2026, solicite Medicaid tan pronto como sea posible después de recibir servicios médicos. Cuanto antes solicite, más meses de la ventana de 3 meses permanecen abiertos. Si recibió atención el 10 de febrero y solicita en mayo, solo febrero cae dentro de la ventana de 3 meses. Si solicita en marzo, puede preservar la cobertura para febrero y marzo. Los estados con elegibilidad retroactiva completa incluyen la evaluación del período retroactivo como parte de la solicitud estándar."
         }
       ],
@@ -354,7 +549,6 @@
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -425,7 +619,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -456,7 +649,6 @@
       "href": "/federal-poverty-level"
     }
   ],
-
   "sources": [
     {
       "name": "Medicaid.gov: Eligibility (Section 1902(a)(34) Retroactive Coverage Requirement)",

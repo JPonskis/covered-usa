@@ -12,10 +12,20 @@
   "isLighthouse": false,
   "isDeprecated": false,
   "keyTerms": {
-    "en": ["medicaid income limit 2026", "how much can you make and get medicaid", "medicaid eligibility income 2026", "138% FPL medicaid", "medicaid income by household size"],
-    "es": ["limite de ingresos medicaid 2026", "elegibilidad medicaid ingresos 2026", "138% nivel federal de pobreza medicaid", "cuanto puedo ganar y tener medicaid"]
+    "en": [
+      "medicaid income limit 2026",
+      "how much can you make and get medicaid",
+      "medicaid eligibility income 2026",
+      "138% FPL medicaid",
+      "medicaid income by household size"
+    ],
+    "es": [
+      "limite de ingresos medicaid 2026",
+      "elegibilidad medicaid ingresos 2026",
+      "138% nivel federal de pobreza medicaid",
+      "cuanto puedo ganar y tener medicaid"
+    ]
   },
-
   "question": {
     "en": "How Much Can You Make and Still Get Medicaid in 2026?",
     "es": "¿Cuánto Puedo Ganar y Aun Obtener Medicaid en 2026?"
@@ -28,7 +38,6 @@
     "en": "It depends on your state and household size. Adults in the 41 Medicaid expansion states (including DC) can earn up to 138% of the 2026 Federal Poverty Level, which is $22,025 a year for a single person or $45,540 for a family of four. Adults in the 10 non-expansion states face much stricter limits, often below 50% FPL for parents and nearly impossible income thresholds for childless adults, creating a coverage gap. Children qualify at higher income levels through Medicaid and CHIP, typically 200% to 300% FPL depending on the state.",
     "es": "Depende de su estado y tamaño de hogar. Los adultos en los 41 estados con expansión de Medicaid (incluido DC) pueden ganar hasta el 138% del Nivel Federal de Pobreza 2026, que es $22,025 al año para una persona o $45,540 para una familia de cuatro. Los adultos en los 10 estados sin expansión enfrentan límites mucho más estrictos, a menudo por debajo del 50% FPL para padres y umbrales casi imposibles para adultos sin hijos, creando una brecha de cobertura. Los niños califican a niveles de ingresos más altos a través de Medicaid y CHIP, generalmente del 200% al 300% FPL según el estado."
   },
-
   "meta": {
     "title": {
       "en": "How Much Can You Make and Still Get Medicaid? (2026) | CoveredUSA",
@@ -39,25 +48,22 @@
       "es": "Límites de ingresos de Medicaid en 2026: estados de expansión permiten hasta $22,025/año (individuo) o $45,540 (familia de 4). Estados sin expansión son mucho más bajos. Tabla completa por tamaño de hogar."
     }
   },
-
   "hero": {
     "h1": {
       "en": "How Much Can You Make and Still Get Medicaid? (2026)",
       "es": "¿Cuánto Puedo Ganar y Aun Obtener Medicaid? (2026)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicaid covers more than 80 million Americans, yet millions more go uninsured because they assume they earn too much to qualify. The income limit is not one number. Medicaid sets a different threshold depending on your state, your household size, which category you fit (adult, parent, child, pregnant, disabled), and whether your state has expanded under the Affordable Care Act. This guide gives you the 2026 numbers for every household size, explains the expansion versus non-expansion gap, and shows you how to apply.",
       "es": "Medicaid cubre a más de 80 millones de estadounidenses, pero millones más no tienen seguro porque asumen que ganan demasiado para calificar. El límite de ingresos no es un número único. Medicaid establece umbrales diferentes según su estado, tamaño del hogar, categoría (adulto, padre, niño, embarazada, persona con discapacidad) y si su estado ha expandido la cobertura bajo la Ley de Cuidado de Salud Asequible. Esta guía le da los números de 2026 para cada tamaño de hogar, explica la brecha entre estados de expansión y sin expansión, y le muestra cómo solicitar."
     },
     {
-      "en": "The key concept to understand first is Modified Adjusted Gross Income, or MAGI. Since 2014, most working-age Medicaid enrollees are evaluated on MAGI, not assets. That means the government counts your taxable income, not your savings account. If you have a car, a house, or a retirement account, those do not count against you in MAGI-based Medicaid. What counts is your wages, self-employment income, alimony, and most other taxable income sources in 2026.",
+      "en": "The key concept to understand first is Modified Adjusted Gross Income, or [MAGI](/en/glossary/magi). Since 2014, most working-age Medicaid enrollees are evaluated on MAGI, not assets. That means the government counts your taxable income, not your savings account. If you have a car, a house, or a retirement account, those do not count against you in MAGI-based Medicaid. What counts is your wages, self-employment income, alimony, and most other taxable income sources in 2026.",
       "es": "El concepto clave para entender primero es el Ingreso Bruto Ajustado Modificado, o MAGI. Desde 2014, la mayoría de los inscritos en Medicaid en edad laboral son evaluados por MAGI, no por activos. Eso significa que el gobierno cuenta sus ingresos gravables, no su cuenta de ahorros. Si tiene un automóvil, una casa o una cuenta de jubilación, estos no cuentan en su contra bajo Medicaid basado en MAGI. Lo que cuenta son sus salarios, ingresos por trabajo independiente, pensión alimenticia y la mayoría de otras fuentes de ingresos gravables en 2026."
     }
   ],
-
   "householdSizeTable": {
     "caption": {
       "en": "Medicaid income limits by household size 2026 (expansion states, 138% FPL)",
@@ -67,48 +73,102 @@
     "rows": [
       {
         "size": "1",
-        "incomeLimit": { "en": "$22,025/yr", "es": "$22,025/año" },
-        "notes": { "en": "138% FPL for a single adult", "es": "138% FPL para un adulto soltero" }
+        "incomeLimit": {
+          "en": "$22,025/yr",
+          "es": "$22,025/año"
+        },
+        "notes": {
+          "en": "138% FPL for a single adult",
+          "es": "138% FPL para un adulto soltero"
+        }
       },
       {
         "size": "2",
-        "incomeLimit": { "en": "$29,863/yr", "es": "$29,863/año" },
-        "notes": { "en": "138% FPL for a 2-person household", "es": "138% FPL para hogar de 2 personas" }
+        "incomeLimit": {
+          "en": "$29,863/yr",
+          "es": "$29,863/año"
+        },
+        "notes": {
+          "en": "138% FPL for a 2-person household",
+          "es": "138% FPL para hogar de 2 personas"
+        }
       },
       {
         "size": "3",
-        "incomeLimit": { "en": "$37,702/yr", "es": "$37,702/año" },
-        "notes": { "en": "138% FPL for a 3-person household", "es": "138% FPL para hogar de 3 personas" }
+        "incomeLimit": {
+          "en": "$37,702/yr",
+          "es": "$37,702/año"
+        },
+        "notes": {
+          "en": "138% FPL for a 3-person household",
+          "es": "138% FPL para hogar de 3 personas"
+        }
       },
       {
         "size": "4",
-        "incomeLimit": { "en": "$45,540/yr", "es": "$45,540/año" },
-        "notes": { "en": "138% FPL for a family of 4", "es": "138% FPL para familia de 4" }
+        "incomeLimit": {
+          "en": "$45,540/yr",
+          "es": "$45,540/año"
+        },
+        "notes": {
+          "en": "138% FPL for a family of 4",
+          "es": "138% FPL para familia de 4"
+        }
       },
       {
         "size": "5",
-        "incomeLimit": { "en": "$53,378/yr", "es": "$53,378/año" },
-        "notes": { "en": "138% FPL for a 5-person household", "es": "138% FPL para hogar de 5 personas" }
+        "incomeLimit": {
+          "en": "$53,378/yr",
+          "es": "$53,378/año"
+        },
+        "notes": {
+          "en": "138% FPL for a 5-person household",
+          "es": "138% FPL para hogar de 5 personas"
+        }
       },
       {
         "size": "6",
-        "incomeLimit": { "en": "$61,217/yr", "es": "$61,217/año" },
-        "notes": { "en": "138% FPL for a 6-person household", "es": "138% FPL para hogar de 6 personas" }
+        "incomeLimit": {
+          "en": "$61,217/yr",
+          "es": "$61,217/año"
+        },
+        "notes": {
+          "en": "138% FPL for a 6-person household",
+          "es": "138% FPL para hogar de 6 personas"
+        }
       },
       {
         "size": "7",
-        "incomeLimit": { "en": "$69,055/yr", "es": "$69,055/año" },
-        "notes": { "en": "138% FPL for a 7-person household", "es": "138% FPL para hogar de 7 personas" }
+        "incomeLimit": {
+          "en": "$69,055/yr",
+          "es": "$69,055/año"
+        },
+        "notes": {
+          "en": "138% FPL for a 7-person household",
+          "es": "138% FPL para hogar de 7 personas"
+        }
       },
       {
         "size": "8",
-        "incomeLimit": { "en": "$76,894/yr", "es": "$76,894/año" },
-        "notes": { "en": "138% FPL for an 8-person household", "es": "138% FPL para hogar de 8 personas" }
+        "incomeLimit": {
+          "en": "$76,894/yr",
+          "es": "$76,894/año"
+        },
+        "notes": {
+          "en": "138% FPL for an 8-person household",
+          "es": "138% FPL para hogar de 8 personas"
+        }
       },
       {
         "size": "Each additional",
-        "incomeLimit": { "en": "+$7,838/yr", "es": "+$7,838/año" },
-        "notes": { "en": "138% of the $5,680 per-person FPL increment", "es": "138% del incremento FPL de $5,680 por persona" }
+        "incomeLimit": {
+          "en": "+$7,838/yr",
+          "es": "+$7,838/año"
+        },
+        "notes": {
+          "en": "138% of the $5,680 per-person FPL increment",
+          "es": "138% del incremento FPL de $5,680 por persona"
+        }
       }
     ],
     "footnote": {
@@ -117,7 +177,6 @@
     },
     "source": "HHS ASPE 2026 Poverty Guidelines (aspe.hhs.gov), Medicaid.gov Eligibility"
   },
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -203,7 +262,6 @@
       "es": "Medicaid no tiene ventana de inscripción. Puede solicitar cualquier día del año."
     }
   },
-
   "detailSections": [
     {
       "heading": {
@@ -212,7 +270,7 @@
       },
       "paragraphs": [
         {
-          "en": "It depends on your state. Adults in the 41 Medicaid expansion states (including DC) can earn up to 138% FPL, which is $22,025 per year for one person or $45,540 for a family of four in 2026. Adults in the 10 non-expansion states face much lower limits, often below 50% FPL for parents and effectively zero for childless adults. Children qualify at higher levels through CHIP.",
+          "en": "It depends on your state. See [Medicaid income limits by state](/en/medicaid-income-limits) for precise figures. Adults in the 41 Medicaid expansion states (including DC) can earn up to 138% FPL, which is $22,025 per year for one person or $45,540 for a family of four in 2026. Adults in the 10 non-expansion states face much lower limits, often below 50% FPL for parents and effectively zero for childless adults. Children qualify at higher levels through CHIP.",
           "es": "Depende de su estado. Los adultos en los 41 estados con expansión de Medicaid (incluido DC) pueden ganar hasta el 138% FPL, que es $22,025 al año para una persona o $45,540 para una familia de cuatro en 2026. Los adultos en los 10 estados sin expansión enfrentan límites mucho más bajos, a menudo por debajo del 50% FPL para padres y efectivamente cero para adultos sin hijos. Los niños califican a niveles más altos a través de CHIP."
         }
       ]
@@ -240,7 +298,7 @@
       },
       "paragraphs": [
         {
-          "en": "Medicaid expansion was created by the ACA in 2010 and allowed any state to extend Medicaid to adults earning up to 138% FPL, with the federal government paying 90% of the cost. As of 2026, 41 states (including DC) have adopted expansion. The 10 states that have not are Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming.",
+          "en": "[Medicaid expansion](/en/qa/state-medicaid-expansion-status) was created by the ACA in 2010 and allowed any state to extend Medicaid to adults earning up to 138% FPL, with the federal government paying 90% of the cost. As of 2026, 41 states (including DC) have adopted expansion. The 10 states that have not are Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming.",
           "es": "La expansión de Medicaid fue creada por la ACA en 2010 y permitió a cualquier estado extender Medicaid a adultos que ganan hasta el 138% FPL, con el gobierno federal pagando el 90% del costo. A partir de 2026, 41 estados (incluido DC) han adoptado la expansión. Los 10 estados que no lo han hecho son Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming."
         },
         {
@@ -260,7 +318,7 @@
       },
       "paragraphs": [
         {
-          "en": "Children qualify for Medicaid and CHIP at higher income levels than adults. In most states, children qualify for Medicaid up to 138% FPL and for CHIP up to 200% to 300% FPL. Some states like New York and California cover children at up to 400% FPL through separate CHIP programs. Income eligibility for children has never depended on whether the state expanded adult Medicaid.",
+          "en": "Children qualify for Medicaid and [CHIP](/en/qa/chip-eligibility-by-state) at higher income levels than adults. In most states, children qualify for Medicaid up to 138% FPL and for CHIP up to 200% to 300% FPL. Some states like New York and California cover children at up to 400% FPL through separate CHIP programs. Income eligibility for children has never depended on whether the state expanded adult Medicaid.",
           "es": "Los niños califican para Medicaid y CHIP a niveles de ingresos más altos que los adultos. En la mayoría de los estados, los niños califican para Medicaid hasta el 138% FPL y para CHIP hasta el 200% al 300% FPL. Algunos estados como Nueva York y California cubren a niños hasta el 400% FPL a través de programas CHIP separados. La elegibilidad por ingresos para niños nunca ha dependido de si el estado expandió Medicaid para adultos."
         },
         {
@@ -280,7 +338,7 @@
       },
       "paragraphs": [
         {
-          "en": "MAGI stands for Modified Adjusted Gross Income. Medicaid adopted MAGI-based counting for most working-age adults starting in 2014 under the ACA. MAGI counts taxable income before deductions. The following DOES count toward your 2026 Medicaid income limit: wages and salaries, self-employment net income, tips, alimony received (for agreements finalized before 2019), Social Security benefits that are taxable, unemployment compensation, and rental income.",
+          "en": "MAGI stands for Modified Adjusted Gross Income. For the full breakdown, see [what counts as income for Medicaid](/en/qa/what-counts-as-income-for-medicaid). Medicaid adopted MAGI-based counting for most working-age adults starting in 2014 under the ACA. MAGI counts taxable income before deductions. The following DOES count toward your 2026 Medicaid income limit: wages and salaries, self-employment net income, tips, alimony received (for agreements finalized before 2019), Social Security benefits that are taxable, unemployment compensation, and rental income.",
           "es": "MAGI significa Ingreso Bruto Ajustado Modificado. Medicaid adoptó el conteo basado en MAGI para la mayoría de los adultos en edad de trabajar a partir de 2014 bajo la ACA. MAGI cuenta los ingresos gravables antes de deducciones. Lo siguiente SÍ cuenta para su límite de ingresos de Medicaid 2026: salarios y sueldos, ingresos netos de trabajo independiente, propinas, pensión alimenticia recibida (para acuerdos finalizados antes de 2019), beneficios del Seguro Social que son gravables, compensación por desempleo e ingresos por alquiler."
         },
         {
@@ -346,7 +404,6 @@
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -417,7 +474,6 @@
       }
     ]
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -448,7 +504,6 @@
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "HHS ASPE: 2026 Poverty Guidelines",
