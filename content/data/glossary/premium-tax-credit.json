@@ -1,156 +1,175 @@
 {
- "slug": "premium-tax-credit",
- "term": {
- "en": "Premium Tax Credit (PTC)",
- "es": "Crédito Tributario para la Prima (PTC)"
- },
- "alternateNames": ["PTC", "Advance Premium Tax Credit", "APTC", "ACA subsidy", "Marketplace subsidy"],
- "definition": {
- "en": "The Premium Tax Credit (PTC) is a federal subsidy that lowers ACA Marketplace health insurance premiums for households earning between 100% and 400% of the Federal Poverty Level. For 2026 plan-year coverage, eligibility now stops at 400% FPL ($62,600 for a single filer) because the enhanced PTCs from ARPA and the Inflation Reduction Act expired January 1, 2026.",
- "es": "El Crédito Tributario para la Prima (PTC) es un subsidio federal que reduce las primas del seguro médico del Mercado de ACA para hogares con ingresos entre el 100% y el 400% del Nivel Federal de Pobreza. Para la cobertura de 2026, la elegibilidad termina al 400% FPL ($62,600 para una persona) porque los PTC mejorados de ARPA y la Ley de Reducción de Inflación expiraron el 1 de enero de 2026."
- },
- "category": "ACA",
- "topic": "Premium Tax Credit",
- "medicalSpecialty": "PublicHealth",
- "ctaTarget": "screener",
- "lastUpdated": "2026-05-15",
- "readingTime": "3 min read",
- "meta": {
- "title": {
- "en": "Premium Tax Credit (PTC): 2026 ACA Subsidy Guide",
- "es": "Crédito Tributario para la Prima (PTC): Guía 2026"
- },
- "description": {
- "en": "2026 Premium Tax Credit (PTC) cuts ACA Marketplace premiums for households up to 400% FPL ($62,600 single). Eligibility, income table, return of the cliff.",
- "es": "El PTC 2026 reduce primas del Mercado de ACA hasta el 400% FPL ($62,600 solo). Elegibilidad, tabla y el regreso del precipicio."
- }
- },
- "hero": {
- "h1": {
- "en": "What Is a Premium Tax Credit?",
- "es": "¿Qué es un Crédito Tributario para la Prima?"
- },
- "subhero": {
- "en": "A 2026 federal subsidy that lowers ACA Marketplace premiums for households between 100% and 400% of the Federal Poverty Level. Above $62,600 single income, you pay the full premium.",
- "es": "Un subsidio federal 2026 que reduce primas del Mercado de ACA para hogares entre 100% y 400% del Nivel Federal de Pobreza. Por encima de $62,600 (1 persona), paga la prima completa."
- }
- },
- "quickDefinition": {
- "en": "The Premium Tax Credit is a 2026 ACA subsidy that lowers Marketplace premiums for households between 100% and 400% of the [Federal Poverty Level](/federal-poverty-level). Below 138% FPL in expansion states (Medi-Cal in California, MNsure in Minnesota, BadgerCare in Wisconsin), most households go to [Medicaid](/medicaid-income-limits) instead. Above 400% FPL the cliff returned for 2026 , you pay the full premium.",
- "es": "El Crédito Tributario para la Prima es un subsidio de ACA 2026 que reduce primas del Mercado para hogares entre 100% y 400% del Nivel Federal de Pobreza. Por debajo del 138% FPL en estados de expansión (Medi-Cal en California, MNsure en Minnesota, BadgerCare en Wisconsin), la mayoría va a Medicaid. Por encima del 400% el precipicio regresó para 2026."
- },
- "introParagraphs": [],
- "annualLimits": {
- "headers": {
- "en": ["Household size", "100% FPL (PTC floor)", "138% FPL (Medicaid cap in expansion states)", "400% FPL (PTC ceiling)"],
- "es": ["Tamaño del hogar", "100% FPL (mínimo PTC)", "138% FPL (tope Medicaid)", "400% FPL (tope PTC)"]
- },
- "rows": [
- { "en": ["1", "$15,650", "$21,597", "$62,600"], "es": ["1", "$15,650", "$21,597", "$62,600"] },
- { "en": ["2", "$21,150", "$29,187", "$84,600"], "es": ["2", "$21,150", "$29,187", "$84,600"] },
- { "en": ["3", "$26,650", "$36,777", "$106,600"], "es": ["3", "$26,650", "$36,777", "$106,600"] },
- { "en": ["4", "$32,150", "$44,367", "$128,600"], "es": ["4", "$32,150", "$44,367", "$128,600"] },
- { "en": ["Each additional", "+$5,500", "+$7,590", "+$22,000"], "es": ["Adicional", "+$5,500", "+$7,590", "+$22,000"] }
- ],
- "footnote": {
- "en": "2026 PTC chart by household size. Uses 2025 HHS Poverty Guidelines (aspe.hhs.gov), the standard for 2026 plan-year subsidy calculation. Source: IRS Form 8962 and CMS.",
- "es": "Tabla PTC 2026 por tamaño del hogar. Usa las Pautas de Pobreza HHS 2025, estándar para subsidios del año 2026. Fuente: IRS y CMS."
- },
- "source": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines"
- },
- "workedExample": {
- "intro": {
- "en": "Worked example for 2026: a single filer earning $30,000 in Texas (about 192% FPL) shopping the Marketplace.",
- "es": "Ejemplo 2026: una persona soltera que gana $30,000 en Texas (aprox. 192% FPL) en el Mercado."
- },
- "headers": {
- "en": ["Item", "Amount"],
- "es": ["Concepto", "Monto"]
- },
- "rows": [
- { "en": ["Annual income", "$30,000"], "es": ["Ingreso anual", "$30,000"] },
- { "en": ["FPL percentage", "192%"], "es": ["Porcentaje FPL", "192%"] },
- { "en": ["Benchmark Silver premium", "$450/mo"], "es": ["Prima Plata referencia", "$450/mes"] },
- { "en": ["Expected contribution (~6.6% of income)", "$165/mo"], "es": ["Contribución (~6.6%)", "$165/mes"] },
- { "en": ["Monthly PTC (APTC)", "$285/mo"], "es": ["PTC mensual (APTC)", "$285/mes"] }
- ],
- "footnote": {
- "en": "Source: KFF 2026 subsidy calculator (kff.org). PTC varies by state, age, and benchmark plan. Contribution percentages reflect 2026 post-ARPA levels.",
- "es": "Fuente: calculadora KFF 2026. El PTC varía por estado, edad y plan."
- }
- },
- "detailSections": [],
- "faqs": {
- "en": [
- {
- "question": "Who qualifies for the 2026 Premium Tax Credit?",
- "answer": "Households earning 100% to 400% of the Federal Poverty Level who are not eligible for affordable employer coverage, Medicare, or Medicaid. In 2026 the cliff returned: above 400% FPL ($62,600 single, $128,600 family of 4) you pay full Marketplace premium with no subsidy."
- },
- {
- "question": "What changed in 2026 for the PTC?",
- "answer": "The enhanced Premium Tax Credits from the American Rescue Plan Act and the Inflation Reduction Act expired January 1, 2026. Households above 400% FPL no longer qualify for any PTC, and households between 100% and 400% FPL pay a higher percentage of income toward premiums than in 2021 through 2025. See the [2026 ACA income limits](/aca-income-limits) for current contribution percentages."
- },
- {
- "question": "Can I get both Medicaid and the Premium Tax Credit?",
- "answer": "No. If you qualify for Medicaid through programs like Medi-Cal, MNsure routing, BadgerCare, or AHCCCS, the PTC is not available because Medicaid coverage is considered comprehensive. The PTC starts at the income threshold where Medicaid eligibility ends (138% FPL in expansion states, 100% FPL in non-expansion states)."
- },
- {
- "question": "How do I claim the Premium Tax Credit?",
- "answer": "Apply at [HealthCare.gov](https://www.healthcare.gov) or your state Marketplace. Take the credit in advance (APTC) to lower monthly premiums or claim it on your tax return using IRS Form 8962. Report income changes promptly to avoid owing money at tax time."
- }
- ],
- "es": [
- {
- "question": "¿Quién califica para el PTC 2026?",
- "answer": "Hogares que ganan entre el 100% y el 400% del Nivel Federal de Pobreza, que no califican para cobertura asequible del empleador, Medicare ni Medicaid. En 2026 regresó el precipicio: por encima del 400% FPL ($62,600 una persona, $128,600 familia de 4) paga la prima completa sin subsidio."
- },
- {
- "question": "¿Qué cambió en 2026 para el PTC?",
- "answer": "Los PTC mejorados del Plan de Rescate Americano y la Ley de Reducción de Inflación expiraron el 1 de enero de 2026. Hogares sobre el 400% FPL ya no califican para ningún PTC, y entre 100% y 400% FPL pagan un porcentaje mayor del ingreso hacia primas que en 2021 a 2025. Vea los límites ACA 2026 para porcentajes actuales."
- },
- {
- "question": "¿Puedo recibir Medicaid y el PTC al mismo tiempo?",
- "answer": "No. Si califica para Medicaid mediante programas como Medi-Cal, MNsure, BadgerCare o AHCCCS, el PTC no está disponible porque Medicaid se considera cobertura completa. El PTC empieza donde termina Medicaid (138% FPL en estados de expansión, 100% FPL sin expansión)."
- },
- {
- "question": "¿Cómo reclamo el PTC?",
- "answer": "Solicite en HealthCare.gov o su Mercado estatal. Puede tomar el crédito por adelantado (APTC) para reducir primas mensuales o reclamarlo en su declaración con el Formulario 8962 del IRS. Reporte cambios de ingreso durante el año para evitar deudas al declarar."
- }
- ]
- },
- "relatedLinks": [
- { "label": { "en": "Federal Poverty Level (2026)", "es": "Nivel Federal de Pobreza (2026)" }, "href": "/federal-poverty-level" },
- { "label": { "en": "ACA Income Limits", "es": "Límites de Ingreso de ACA" }, "href": "/aca-income-limits" },
- { "label": { "en": "Medicaid Income Limits", "es": "Límites de Ingreso de Medicaid" }, "href": "/medicaid-income-limits" },
- { "label": { "en": "Check eligibility with our screener", "es": "Verifique elegibilidad con el evaluador" }, "href": "/screener" }
- ],
- "sources": [
- {
- "name": "HealthCare.gov , Premium Tax Credit",
- "url": "https://www.healthcare.gov/glossary/premium-tax-credit/",
- "note": { "en": "Official ACA PTC definition and eligibility.", "es": "Definición oficial del PTC y elegibilidad." }
- },
- {
- "name": "IRS , Form 8962 Instructions",
- "url": "https://www.irs.gov/forms-pubs/about-form-8962",
- "note": { "en": "IRS PTC calculation and reconciliation form.", "es": "Cálculo del PTC y reconciliación." }
- },
- {
- "name": "HHS ASPE , 2025 Poverty Guidelines",
- "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
- "note": { "en": "FPL thresholds used for 2026 PTC eligibility.", "es": "Umbrales FPL usados para elegibilidad PTC 2026." }
- },
- {
- "name": "KFF , 2026 Marketplace Subsidy Calculator",
- "url": "https://www.kff.org/interactive/subsidy-calculator/",
- "note": { "en": "Plan-by-state PTC estimate tool.", "es": "Herramienta de estimación del PTC por estado." }
- }
- ],
- "topicCluster": "premium-tax-credit",
- "keyTerms": {
- "en": ["Premium Tax Credit", "PTC", "APTC", "ACA subsidy", "Marketplace subsidy", "premium tax credit 2026", "qualify for premium tax credit"],
- "es": ["Crédito Tributario para la Prima", "PTC", "subsidio de ACA", "subsidio del Mercado", "PTC 2026"]
- },
- "isLighthouse": false,
- "isDeprecated": false
+  "slug": "premium-tax-credit",
+  "term": {
+    "en": "Premium Tax Credit (PTC)",
+    "es": "Crédito Tributario para la Prima (PTC)"
+  },
+  "alternateNames": ["PTC", "ACA subsidy", "marketplace subsidy", "Obamacare subsidy", "advance premium tax credit", "APTC"],
+  "definition": {
+    "en": "The Premium Tax Credit (PTC) is a federal tax credit that lowers monthly health insurance premiums for people who buy coverage through the ACA Marketplace and earn between 100% and 400% of the [federal poverty level](/federal-poverty-level) in 2026. The enhanced credits that removed the 400% income cap expired January 1, 2026.",
+    "es": "El Crédito Tributario para la Prima (PTC) es un crédito fiscal federal que reduce las primas mensuales del seguro de salud para personas que compran cobertura en el Mercado de ACA y ganan entre el 100% y el 400% del [nivel federal de pobreza](/federal-poverty-level) en 2026. Los créditos mejorados que eliminaban el límite del 400% expiraron el 1 de enero de 2026."
+  },
+  "category": "ACA",
+  "topic": "ACA Premium Tax Credit",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-17",
+  "readingTime": "2 min read",
+  "meta": {
+    "title": {
+      "en": "Premium Tax Credit (PTC): 2026 Rules After the Cliff Returns",
+      "es": "Crédito Tributario para la Prima (PTC): Reglas 2026"
+    },
+    "description": {
+      "en": "The 400% FPL subsidy cliff is back for 2026. Learn who qualifies for the PTC, income limits, and how the credit is calculated under 2026 ACA rules.",
+      "es": "El límite del 400% FPL regresó para 2026. Descubre quién califica para el PTC, límites de ingresos y cómo se calcula el crédito bajo las reglas de ACA 2026."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "What Is the Premium Tax Credit (PTC)?",
+      "es": "¿Qué Es el Crédito Tributario para la Prima (PTC)?"
+    },
+    "subhero": {
+      "en": "The PTC lowers ACA Marketplace premiums for households earning 100%-400% of the federal poverty level in 2026. Earners above 400% FPL (about $63,840 for a single person) pay the full benchmark premium after the enhanced credits expired January 1, 2026.",
+      "es": "El PTC reduce las primas del Mercado de ACA para hogares que ganan entre el 100% y el 400% del nivel federal de pobreza en 2026. Las personas con ingresos superiores al 400% FPL (aproximadamente $63,840 para una sola persona) pagan la prima de referencia completa después de que los créditos mejorados expiraron el 1 de enero de 2026."
+    }
+  },
+  "quickDefinition": {
+    "en": "The PTC lowers monthly ACA Marketplace premiums for households with incomes between 100% and 400% of the [federal poverty level](/federal-poverty-level) in 2026. Enhanced credits that removed the 400% cap expired January 1, 2026. The credit equals the benchmark plan cost minus your required contribution, capped at 9.96% of income at 400% FPL per [IRS Rev. Proc. 2025-25](https://www.irs.gov/pub/irs-drop/rp-25-25.pdf). See full 2026 thresholds at [ACA income limits](/aca-income-limits).",
+    "es": "El PTC reduce las primas mensuales del Mercado de ACA para hogares con ingresos entre el 100% y el 400% del [nivel federal de pobreza](/federal-poverty-level) en 2026. Los créditos mejorados que eliminaban el límite del 400% expiraron el 1 de enero de 2026. El crédito equivale al costo del plan de referencia menos la contribución requerida, limitada al 9.96% de los ingresos al 400% FPL según [IRS Rev. Proc. 2025-25](https://www.irs.gov/pub/irs-drop/rp-25-25.pdf). Ver los umbrales completos de 2026 en [límites de ingresos de ACA](/aca-income-limits)."
+  },
+  "introParagraphs": [],
+  "annualLimits": {
+    "headers": {
+      "en": ["Household Size", "100% FPL (2026)", "400% FPL (2026)", "Notes"],
+      "es": ["Tamaño del hogar", "100% FPL (2026)", "400% FPL (2026)", "Notas"]
+    },
+    "rows": [
+      {
+        "en": ["1", "$15,960", "$63,840", "PTC eligibility window"],
+        "es": ["1", "$15,960", "$63,840", "Ventana de elegibilidad PTC"]
+      },
+      {
+        "en": ["2", "$21,640", "$86,560", ""],
+        "es": ["2", "$21,640", "$86,560", ""]
+      },
+      {
+        "en": ["4", "$33,000", "$132,000", ""],
+        "es": ["4", "$33,000", "$132,000", ""]
+      },
+      {
+        "en": ["8", "$55,720", "$222,880", ""],
+        "es": ["8", "$55,720", "$222,880", ""]
+      }
+    ],
+    "footnote": {
+      "en": "Source: HHS 2026 Poverty Guidelines (aspe.hhs.gov). Income based on MAGI. Medicaid covers below 138% FPL in expansion states; see [Medicaid income limits](/medicaid-income-limits).",
+      "es": "Fuente: Guías de Pobreza HHS 2026 (aspe.hhs.gov). Ingresos basados en MAGI. Medicaid cubre por debajo del 138% FPL en estados de expansión; ver [límites de ingresos de Medicaid](/medicaid-income-limits)."
+    },
+    "source": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines"
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "2026 Cliff vs. 2021-2025 Enhanced Credits",
+        "es": "El Límite de 2026 vs. los Créditos Mejorados de 2021-2025"
+      },
+      "paragraphs": [
+        {
+          "en": "From 2021 through 2025, the American Rescue Plan Act and Inflation Reduction Act removed the 400% FPL cap for all enrollees. Those provisions expired January 1, 2026. Under 2026 rules, a single person earning $64,000 (401% FPL) receives no PTC and pays the full benchmark premium. A person earning $62,000 (388% FPL) still qualifies. Per [healthcare.gov](https://www.healthcare.gov/glossary/premium-tax-credit/), the credit equals the benchmark plan cost minus the required contribution, capped at 9.96% of income at 400% FPL.",
+          "es": "De 2021 a 2025, la Ley del Plan de Rescate Americano y la Ley de Reducción de la Inflación eliminaron el límite del 400% FPL y limitaron los costos de primas al 8.5% de los ingresos para todos los inscritos. Esas disposiciones expiraron el 1 de enero de 2026. Bajo las reglas de 2026, una persona soltera que gana $64,000 (aproximadamente 401% FPL) no recibe PTC y paga la prima de referencia completa. Una persona que gana $62,000 (388% FPL) aún califica. Según [healthcare.gov](https://www.healthcare.gov/glossary/premium-tax-credit/), el crédito equivale al costo del plan de referencia menos la contribución requerida (hasta el 9.96% de los ingresos al 400% FPL según IRS Rev. Proc. 2025-25)."
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "Who qualifies for the PTC in 2026?",
+        "answer": "For 2026, households earning 100%-400% of the federal poverty level and enrolled in an ACA Marketplace plan qualify. A household of 1 needs income between $15,960 and $63,840; a household of 4 needs $33,000-$132,000. You must not have access to affordable employer coverage or Medicare or Medicaid. Income is measured as MAGI on your federal tax return."
+      },
+      {
+        "question": "What happened to the enhanced premium tax credits?",
+        "answer": "The American Rescue Plan Act (2021) and Inflation Reduction Act (2022) temporarily removed the 400% FPL income cap and lowered costs for all income levels through 2025. Those enhanced credits expired January 1, 2026. Congress has not extended them as of mid-2026. KFF estimates average marketplace premiums increased 114% for those affected by the cliff returning."
+      },
+      {
+        "question": "How is the 2026 PTC amount calculated?",
+        "answer": "The credit equals the lesser of your benchmark plan premium or the excess of the benchmark plan over your required contribution. At 400% FPL in 2026, the required contribution is capped at 9.96% of household income per IRS Rev. Proc. 2025-25. You can claim the credit in advance (lowering monthly payments) or as a lump-sum credit when you file Form 8962."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Quién califica para el PTC en 2026?",
+        "answer": "Para 2026, los hogares que ganan entre el 100% y el 400% del nivel federal de pobreza e inscritos en un plan del Mercado de ACA califican. Un hogar de 1 persona necesita ingresos entre $15,960 y $63,840; un hogar de 4 necesita entre $33,000 y $132,000. No debe tener acceso a cobertura del empleador asequible, Medicare o Medicaid. Los ingresos se miden como MAGI en su declaración federal de impuestos."
+      },
+      {
+        "question": "¿Qué pasó con los créditos tributarios para la prima mejorados?",
+        "answer": "La Ley del Plan de Rescate Americano (2021) y la Ley de Reducción de la Inflación (2022) eliminaron temporalmente el límite del 400% FPL y redujeron los costos para todos los niveles de ingresos hasta 2025. Esos créditos mejorados expiraron el 1 de enero de 2026. El Congreso no los ha extendido hasta mediados de 2026. KFF estima que las primas promedio del mercado aumentaron un 114% para los afectados por el regreso del límite."
+      },
+      {
+        "question": "¿Cómo se calcula el monto del PTC de 2026?",
+        "answer": "El crédito equivale al menor entre su prima del plan de referencia o el exceso del plan de referencia sobre su contribución requerida. Al 400% FPL en 2026, la contribución requerida está limitada al 9.96% de los ingresos del hogar según IRS Rev. Proc. 2025-25. Puede reclamar el crédito por adelantado (reduciendo los pagos mensuales) o como un crédito global al presentar el Formulario 8962."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": { "en": "Federal Poverty Level (2026)", "es": "Nivel Federal de Pobreza (2026)" },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": { "en": "ACA Income Limits", "es": "Límites de Ingresos de ACA" },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": { "en": "ACA Marketplace Subsidy Eligibility", "es": "Elegibilidad para Subsidios del Mercado de ACA" },
+      "href": "/qa/aca-marketplace-subsidy-eligibility"
+    },
+    {
+      "label": { "en": "Check if you qualify for a subsidy", "es": "Verifica si calificas para un subsidio" },
+      "href": "/screener"
+    }
+  ],
+  "sources": [
+    {
+      "name": "IRS Rev. Proc. 2025-25 — 2026 PTC Applicable Percentages",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-25.pdf",
+      "note": {
+        "en": "Official IRS guidance setting the 9.96% required contribution percentage and applicable percentage table for 2026.",
+        "es": "Guía oficial del IRS que establece el porcentaje de contribución requerida del 9.96% y la tabla de porcentajes aplicables para 2026."
+      }
+    },
+    {
+      "name": "HealthCare.gov — Premium Tax Credit Glossary",
+      "url": "https://www.healthcare.gov/glossary/premium-tax-credit/",
+      "note": {
+        "en": "Official ACA definition and eligibility overview for the premium tax credit.",
+        "es": "Definición oficial de ACA y resumen de elegibilidad para el crédito tributario para la prima."
+      }
+    },
+    {
+      "name": "KFF — ACA Marketplace Premiums After Enhanced Tax Credit Expiration",
+      "url": "https://www.kff.org/affordable-care-act/aca-marketplace-premium-payments-would-more-than-double-on-average-next-year-if-enhanced-premium-tax-credits-expire/",
+      "note": {
+        "en": "KFF analysis estimating 114% average premium increase for enrollees affected by the return of the 400% FPL cliff in 2026.",
+        "es": "Análisis de KFF que estima un aumento promedio del 114% en las primas para los inscritos afectados por el regreso del límite del 400% FPL en 2026."
+      }
+    },
+    {
+      "name": "HHS ASPE — 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "2026 federal poverty level thresholds used to calculate PTC eligibility and amounts.",
+        "es": "Umbrales del nivel federal de pobreza de 2026 utilizados para calcular la elegibilidad y los montos del PTC."
+      }
+    }
+  ],
+  "topicCluster": "premium-tax-credit",
+  "keyTerms": {
+    "en": ["premium tax credit", "PTC", "ACA subsidy", "marketplace subsidy", "qualify for premium tax credit", "premium tax credit 2026", "advance premium tax credit"],
+    "es": ["crédito tributario para la prima", "PTC", "subsidio de ACA", "subsidio del mercado", "calificar para crédito tributario 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
 }
