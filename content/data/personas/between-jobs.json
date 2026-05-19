@@ -1,0 +1,556 @@
+{
+  "slug": "between-jobs",
+  "personaName": {
+    "en": "People Between Jobs",
+    "es": "Personas Entre Empleos"
+  },
+  "shortName": {
+    "en": "Between Jobs",
+    "es": "Entre Empleos"
+  },
+  "category": "Employment Status",
+  "topic": "Health Insurance Between Jobs 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-05-19",
+  "readingTime": "10 min read",
+  "topicCluster": "persona",
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "keyTerms": {
+    "en": [
+      "between jobs",
+      "recently uninsured",
+      "displaced worker",
+      "post-employment",
+      "job seeker",
+      "COBRA continuation",
+      "job loss",
+      "between-jobs",
+      "unemployment",
+      "laid-off"
+    ],
+    "es": [
+      "entre empleos",
+      "trabajador desplazado",
+      "perdida de cobertura de empleo",
+      "seguro medico desempleado",
+      "inscrito post-empleo",
+      "continuacion COBRA"
+    ]
+  },
+
+  "meta": {
+    "title": {
+      "en": "Health Insurance Between Jobs 2026: COBRA vs Marketplace | CoveredUSA",
+      "es": "Seguro Médico Entre Empleos 2026: COBRA vs Mercado | CoveredUSA"
+    },
+    "description": {
+      "en": "Lost job coverage? Compare COBRA vs ACA Marketplace for 2026. Learn SEP windows, subsidy eligibility, and how to avoid a coverage gap when between jobs.",
+      "es": "¿Perdiste cobertura de empleo? Compara COBRA vs Mercado ACA 2026. Ventanas SEP, elegibilidad para subsidios y cómo evitar brechas de cobertura entre empleos."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Health Insurance Between Jobs in 2026: COBRA, Marketplace, and Medicaid",
+      "es": "Seguro Médico Entre Empleos en 2026: COBRA, Mercado y Medicaid"
+    },
+    "subhero": {
+      "en": "Losing job-based coverage triggers a 60-day Special Enrollment Period. For most displaced workers, an ACA Marketplace plan with subsidies costs 40 to 70 percent less than COBRA. Here are your real options ranked by cost.",
+      "es": "Perder la cobertura de empleo activa un Período de Inscripción Especial de 60 días. Para la mayoría de los trabajadores desplazados, un plan del Mercado ACA con subsidios cuesta entre 40 y 70 por ciento menos que COBRA. Aquí están sus opciones reales ordenadas por costo."
+    }
+  },
+
+  "quickAnswer": {
+    "en": "People between jobs who lose employer-sponsored coverage have four main paths: (1) ACA Marketplace with Premium Tax Credits if projected annual income falls under 400% FPL ($63,840 single / $132,000 family of four in 2026), (2) Medicaid if income drops to 138% FPL ($22,025 single) in an expansion state, (3) COBRA continuation for up to 18 months at 102% of the full premium, or (4) joining a spouse's employer plan within 60 days. For most recently uninsured workers, a Marketplace plan accessed through the 60-day job-loss SEP delivers the lowest net cost. Form 7206 does not apply here because this persona has no self-employment income to deduct against.",
+    "es": "Las personas entre empleos que pierden la cobertura del empleador tienen cuatro caminos principales: (1) Mercado ACA con Créditos Fiscales de Prima si el ingreso anual proyectado cae por debajo del 400% FPL ($63,840 individual / $132,000 familia de cuatro en 2026), (2) Medicaid si el ingreso cae al 138% FPL ($22,025 individual) en un estado de expansión, (3) continuación COBRA por hasta 18 meses al 102% de la prima completa, o (4) unirse al plan del empleador del cónyuge dentro de los 60 días. Para la mayoría de los trabajadores recién sin cobertura, un plan del Mercado accedido a través del SEP por pérdida de empleo de 60 días entrega el menor costo neto."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Losing a job is stressful enough without a coverage gap turning a doctor visit into a five-figure bill. Laid-off workers, recently uninsured employees, and anyone transitioning out of employer-sponsored coverage face a ticking 60-day clock: that is the Special Enrollment Period window HealthCare.gov opens the moment job-based health insurance ends. Miss it and you wait until open enrollment in November unless another qualifying life event occurs.",
+      "es": "Perder un trabajo ya es suficientemente estresante sin que una brecha de cobertura convierta una visita médica en una factura de cinco cifras. Los trabajadores despedidos, los empleados recién sin cobertura y quienes transicionan fuera de la cobertura patrocinada por el empleador enfrentan un reloj de 60 días: ese es el período de inscripción especial que HealthCare.gov abre en el momento en que termina el seguro médico de trabajo. Piérdalo y debe esperar hasta la inscripción abierta en noviembre, a menos que ocurra otro evento calificador."
+    },
+    {
+      "en": "Between-jobs workers, job seekers, and post-employment enrollees tend to focus on COBRA because it is familiar. But COBRA continuation at 102% of the full premium typically runs $600 to $1,800 per month for individual coverage in 2026. A displaced worker whose income drops during the job search will usually qualify for substantial Premium Tax Credits on the Marketplace, bringing a comparable plan to $200 to $500 per month. This guide walks through every real option with 2026 cost anchors, the subsidy eligibility thresholds, and the SEP mechanics that matter most.",
+      "es": "Los trabajadores entre empleos, los buscadores de trabajo y los inscritos post-empleo tienden a enfocarse en COBRA porque es familiar. Pero la continuación COBRA al 102% de la prima completa típicamente cuesta $600 a $1,800 al mes para cobertura individual en 2026. Un trabajador desplazado cuyo ingreso cae durante la búsqueda de empleo normalmente calificará para Créditos Fiscales de Prima sustanciales en el Mercado, llevando un plan comparable a $200 a $500 al mes. Esta guía recorre cada opción real con costos anclados en 2026, los umbrales de elegibilidad para subsidios y los mecanismos SEP que más importan."
+    }
+  ],
+
+  "optionsOverview": {
+    "headers": {
+      "en": ["Option", "Best for", "Typical 2026 cost"],
+      "es": ["Opción", "Mejor para", "Costo típico 2026"]
+    },
+    "rows": [
+      {
+        "en": ["ACA Marketplace with Premium Tax Credits (SEP)", "Most displaced workers with income under 400% FPL", "$0 to $500/month after credits"],
+        "es": ["Mercado ACA con Créditos Fiscales de Prima (SEP)", "Mayoría de trabajadores desplazados con ingreso bajo 400% FPL", "$0 a $500/mes después de créditos"]
+      },
+      {
+        "en": ["Medicaid (expansion states)", "Job-loss households at or below 138% FPL ($22,025 single in 2026)", "$0 premium in most expansion states"],
+        "es": ["Medicaid (estados de expansión)", "Hogares con pérdida de empleo al 138% FPL o menos ($22,025 individual 2026)", "$0 prima en la mayoría de estados de expansión"]
+      },
+      {
+        "en": ["COBRA continuation coverage", "Active mid-treatment or mid-deductible-year cases needing plan continuity", "$600 to $1,800/month (full premium + 2% admin)"],
+        "es": ["Cobertura de continuación COBRA", "Casos activos en tratamiento o a mitad del año del deducible que necesitan continuidad del plan", "$600 a $1,800/mes (prima completa + 2% admin)"]
+      },
+      {
+        "en": ["Spouse's employer plan", "Married post-employment enrollees with an employed spouse", "$0 to $400/month (pretax payroll deduction)"],
+        "es": ["Plan del empleador del cónyuge", "Inscritos post-empleo casados con cónyuge empleado", "$0 a $400/mes (deducción de nómina antes de impuestos)"]
+      }
+    ],
+    "footnote": {
+      "en": "The 2026 subsidy cliff is back: enhanced PTCs from ARPA/IRA expired January 1, 2026. Subsidies phase down as income climbs toward 400% FPL and stop entirely at 400%. Above that threshold, displaced workers pay full unsubsidized premiums.",
+      "es": "El tope de subsidio 2026 ha regresado: los PTC mejorados de ARPA/IRA expiraron el 1 de enero de 2026. Los subsidios disminuyen a medida que el ingreso se acerca al 400% FPL y se detienen completamente en el 400%. Por encima de ese umbral, los trabajadores desplazados pagan primas completas sin subsidio."
+    },
+    "source": "HealthCare.gov, DOL.gov, KFF, CMS"
+  },
+
+  "optionDetails": [
+    {
+      "heading": {
+        "en": "Option 1: ACA Marketplace Plan via Job-Loss SEP",
+        "es": "Opción 1: Plan del Mercado ACA mediante SEP por pérdida de empleo"
+      },
+      "paragraphs": [
+        {
+          "en": "For most recently uninsured workers, the ACA Marketplace accessed through the 60-day job-loss Special Enrollment Period is the cheapest path. Losing employer-sponsored health insurance is a qualifying life event that opens a 60-day SEP window on HealthCare.gov or your state exchange. Coverage can start the first day of the month after your old plan ends, so a gap of a few days to a few weeks is possible but can usually be minimized by timing your SEP application. The key variable is your projected annual Modified Adjusted Gross Income (MAGI) for 2026: that number determines whether you receive Premium Tax Credits and how large they are.",
+          "es": "Para la mayoría de los trabajadores recién sin cobertura, el Mercado ACA accedido a través del SEP de pérdida de empleo de 60 días es el camino más barato. Perder el seguro médico patrocinado por el empleador es un evento calificador de vida que abre una ventana SEP de 60 días en HealthCare.gov o el intercambio de su estado. La cobertura puede comenzar el primer día del mes siguiente a que termine su plan anterior, por lo que es posible una brecha de unos días a unas semanas, pero generalmente se puede minimizar cronometrando la solicitud SEP. La variable clave es su Ingreso Bruto Ajustado Modificado (MAGI) anual proyectado para 2026: ese número determina si recibe Créditos Fiscales de Prima y cuán grandes son."
+        },
+        {
+          "en": "Between-jobs workers projecting annual MAGI under 400% FPL ($63,840 for a single filer, $132,000 for a household of four in 2026) qualify for the Premium Tax Credit. Subsidies phase down as income climbs and stop at exactly 400% FPL: there is no longer a cliff-free zone above that line because the enhanced subsidies from the Inflation Reduction Act (signed August 16, 2022) expired January 1, 2026. A displaced worker expecting $35,000 in income for the year should check Silver plan cost-sharing reductions (CSRs) as well: CSRs are only available on Silver tier plans and cut deductibles and copays significantly for those below 250% FPL ($39,900 single in 2026). At tax time, the IRS reconciles your advance credits against actual MAGI using Form 1095-A from the Marketplace.",
+          "es": "Los trabajadores entre empleos que proyectan un MAGI anual por debajo del 400% FPL ($63,840 para un declarante individual, $132,000 para un hogar de cuatro personas en 2026) califican para el Crédito Fiscal de Prima. Los subsidios disminuyen a medida que el ingreso sube y se detienen exactamente al 400% FPL: ya no existe una zona sin tope por encima de esa línea porque los subsidios mejorados de la Ley de Reducción de Inflación (firmada el 16 de agosto de 2022) expiraron el 1 de enero de 2026. Un trabajador desplazado que espera $35,000 en ingresos para el año también debe revisar las reducciones de costos compartidos (CSRs) del plan Silver: los CSRs solo están disponibles en planes de nivel Silver y reducen significativamente los deducibles y copagos para quienes están por debajo del 250% FPL ($39,900 individual en 2026)."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Option 2: Medicaid After Job Loss",
+        "es": "Opción 2: Medicaid después de perder el empleo"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid eligibility for recently uninsured workers is based on current monthly income, not annual income. That distinction matters: a laid-off worker with $0 income in the months after job loss may qualify for Medicaid immediately, even if they earned $60,000 earlier in the year. In the 40 states plus the District of Columbia that have expanded Medicaid as of 2026, coverage is available for adults with household income at or below 138% FPL. In 2026 that is $22,025 for a single person and $45,540 for a family of four (2026 HHS ASPE poverty guidelines). Non-expansion states (mostly in the South and Midwest) use much narrower eligibility rules, often limiting adult Medicaid to parents or people with disabilities.",
+          "es": "La elegibilidad para Medicaid para trabajadores recién sin cobertura se basa en el ingreso mensual actual, no en el ingreso anual. Esa distinción importa: un trabajador despedido con $0 de ingreso en los meses después de la pérdida de empleo puede calificar para Medicaid de inmediato, incluso si ganó $60,000 antes en el año. En los 40 estados más el Distrito de Columbia que han expandido Medicaid a partir de 2026, la cobertura está disponible para adultos con ingreso familiar al 138% FPL o menos. En 2026 eso es $22,025 para una persona sola y $45,540 para una familia de cuatro (pautas de pobreza HHS ASPE 2026). Los estados sin expansión (principalmente en el Sur y el Medio Oeste) usan reglas de elegibilidad mucho más estrechas."
+        },
+        {
+          "en": "Job seekers and displaced workers who land a Marketplace plan and later see income fall below 138% FPL should report the change to HealthCare.gov immediately. The Marketplace will redirect them to Medicaid in expansion states. Moving from a Marketplace plan to Medicaid is not a gap: Medicaid coverage can begin the first day of the month the application is submitted in most states. Apply through HealthCare.gov (which routes to your state Medicaid agency) or directly at your state Medicaid portal. Documents typically needed: proof of identity, Social Security number, current address, and documentation of income loss such as a layoff letter or final pay stub.",
+          "es": "Los buscadores de trabajo y los trabajadores desplazados que obtienen un plan del Mercado y luego ven el ingreso caer por debajo del 138% FPL deben reportar el cambio a HealthCare.gov de inmediato. El Mercado los redirigirá a Medicaid en los estados de expansión. Pasar de un plan del Mercado a Medicaid no genera brecha: la cobertura de Medicaid puede comenzar el primer día del mes en que se presenta la solicitud en la mayoría de los estados."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Option 3: COBRA Continuation Coverage",
+        "es": "Opción 3: Cobertura de continuación COBRA"
+      },
+      "paragraphs": [
+        {
+          "en": "COBRA (the Consolidated Omnibus Budget Reconciliation Act) lets post-employment enrollees keep their former employer's health plan for up to 18 months after job loss or reduction in hours. The catch: you now pay 102% of the total premium, meaning both the employee and employer share plus a 2% administrative fee. That $200 monthly employee contribution typically becomes $900 to $1,400 per month in 2026, and a family plan can run $1,800 to $2,200 or more. COBRA does not offer subsidies. The Department of Labor (DOL) requires employers to provide a COBRA election notice within 14 days of the plan administrator learning of the qualifying event, and you have 60 days to elect COBRA after receiving that notice.",
+          "es": "COBRA (la Ley Ómnibus Consolidada de Reconciliación Presupuestaria) permite a los inscritos post-empleo mantener el plan de salud del empleador anterior por hasta 18 meses después de la pérdida de empleo o reducción de horas. El problema: ahora paga el 102% de la prima total, es decir, tanto la parte del empleado como la del empleador más un cargo administrativo del 2%. Esa contribución mensual de $200 del empleado típicamente se convierte en $900 a $1,400 al mes en 2026, y un plan familiar puede costar $1,800 a $2,200 o más. COBRA no ofrece subsidios."
+        },
+        {
+          "en": "COBRA is rarely the best financial choice for displaced workers who qualify for Marketplace subsidies. The primary use case is continuity of care: if you are mid-treatment with a specific oncologist, mid-pregnancy with an OB who is not in any Marketplace network, or have already paid $4,000 toward a $5,000 deductible late in the year, the cost of switching networks may exceed the COBRA premium premium. Otherwise, recently uninsured workers should run the Marketplace comparison first. One important timing note: electing COBRA and simultaneously applying for a Marketplace plan through the same SEP window is allowed. You can compare both plans before the COBRA election deadline without losing Marketplace access.",
+          "es": "COBRA rara vez es la mejor opción financiera para los trabajadores desplazados que califican para subsidios del Mercado. El caso de uso principal es la continuidad de la atención: si está en medio de un tratamiento con un oncólogo específico, a mitad del embarazo con un OB que no está en ninguna red del Mercado, o ya pagó $4,000 hacia un deducible de $5,000 a finales del año, el costo de cambiar de red puede superar la prima de COBRA. De lo contrario, los trabajadores recién sin cobertura deben comparar el Mercado primero."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Option 4: Spouse's or Domestic Partner's Employer Plan",
+        "es": "Opción 4: Plan del empleador del cónyuge o pareja doméstica"
+      },
+      "paragraphs": [
+        {
+          "en": "Losing job-based coverage is a qualifying life event that opens a 30-day (sometimes 60-day, depending on the plan) special enrollment window to join a spouse's or domestic partner's employer plan. This is often the cheapest option for post-employment enrollees with an employed partner because employer plans are paid pretax through payroll, and the employer often subsidizes 50 to 80 percent of the premium. Check the plan's open enrollment and qualifying-event windows with your spouse's HR department immediately after job loss: missing this window forces you to wait until the next open enrollment cycle.",
+          "es": "Perder la cobertura de empleo es un evento calificador de vida que abre una ventana de inscripción especial de 30 días (a veces 60 días, dependiendo del plan) para unirse al plan del empleador del cónyuge o pareja doméstica. Esta suele ser la opción más económica para los inscritos post-empleo con una pareja empleada porque los planes del empleador se pagan antes de impuestos a través de la nómina, y el empleador frecuentemente subsidia del 50 al 80 por ciento de la prima. Consulte con el departamento de recursos humanos del cónyuge inmediatamente después de la pérdida de empleo: perder esta ventana lo obliga a esperar hasta el siguiente ciclo de inscripción abierta."
+        }
+      ]
+    }
+  ],
+
+  "traps": {
+    "intro": {
+      "en": "Between-jobs workers face aggressive marketing of plans that look cheap but leave gaps in crisis moments. Avoid these:",
+      "es": "Los trabajadores entre empleos enfrentan comercialización agresiva de planes que parecen baratos pero dejan brechas en momentos de crisis. Evite estos:"
+    },
+    "headers": {
+      "en": ["Trap", "Why to avoid"],
+      "es": ["Trampa", "Por qué evitarlo"]
+    },
+    "rows": [
+      {
+        "en": ["Short-term limited-duration plans sold as 'bridge coverage'", "These plans are not required to cover pre-existing conditions and can deny claims retroactively. A single hospitalization can produce a six-figure bill the plan refuses to pay. They do not count as minimum essential coverage, so you cannot use them to bridge to an ACA plan and claim continuous coverage."],
+        "es": ["Planes a corto plazo de duración limitada vendidos como 'cobertura puente'", "Estos planes no están obligados a cubrir condiciones preexistentes y pueden negar reclamaciones retroactivamente. Una sola hospitalización puede producir una factura de seis cifras que el plan se niega a pagar."]
+      },
+      {
+        "en": ["Missing the 60-day SEP window", "If a post-employment enrollee misses the 60-day Marketplace SEP after job loss, they cannot buy ACA coverage until open enrollment (November 1 to January 15). An uninsured gap of several months is the result. Set a calendar reminder on the last day of employer coverage."],
+        "es": ["Perder la ventana SEP de 60 días", "Si un inscrito post-empleo pierde el SEP del Mercado de 60 días después de la pérdida de empleo, no puede comprar cobertura ACA hasta la inscripción abierta (1 de noviembre al 15 de enero). El resultado es una brecha sin seguro de varios meses."]
+      },
+      {
+        "en": ["Health share ministries (Medi-Share, Liberty HealthShare, Samaritan)", "NOT insurance. No legal obligation to pay claims. Pre-existing conditions routinely excluded. Lifestyle clauses (mental health, substance use, reproductive care) can disqualify entire categories. Marketed heavily to gap-period consumers."],
+        "es": ["Ministerios de compartir salud (Medi-Share, Liberty HealthShare, Samaritan)", "NO son seguros. No hay obligación legal de pagar reclamaciones. Condiciones preexistentes rutinariamente excluidas. Cláusulas de estilo de vida pueden descalificar categorías enteras."]
+      },
+      {
+        "en": ["Underestimating 2026 MAGI and losing subsidy repayment protection", "Displaced workers often project income too low during job loss and receive large advance Premium Tax Credits. If they land a new W-2 job mid-year, the higher final income may require repaying a portion of credits at tax time via Section 1095-A reconciliation. Update the Marketplace within 30 days of starting new employment."],
+        "es": ["Subestimar el MAGI 2026 y perder la protección de reembolso de subsidios", "Los trabajadores desplazados frecuentemente proyectan ingresos demasiado bajos durante la pérdida de empleo y reciben grandes Créditos Fiscales de Prima por adelantado. Si consiguen un nuevo empleo W-2 a mitad de año, el ingreso final más alto puede requerir devolver parte de los créditos al momento de declarar impuestos mediante la reconciliación del Formulario 1095-A."]
+      },
+      {
+        "en": ["Assuming COBRA is automatic or free during notice periods", "COBRA requires an affirmative election and has a premium due from day one of COBRA coverage. Employer-paid coverage during a notice or severance period is separate from COBRA and ends when that period ends. Failing to elect COBRA within 60 days terminates the right permanently."],
+        "es": ["Asumir que COBRA es automático o gratuito durante períodos de aviso", "COBRA requiere una elección afirmativa y tiene una prima debida desde el primer día de cobertura COBRA. La cobertura pagada por el empleador durante un período de aviso o liquidación es separada de COBRA y termina cuando ese período termina."]
+      }
+    ],
+    "footnote": {
+      "en": "Verify any plan is sold on healthcare.gov or a state exchange and covers all 10 ACA essential health benefits. If a broker offers an off-exchange plan with a much lower premium, ask specifically whether it covers pre-existing conditions and what the annual and lifetime benefit caps are.",
+      "es": "Verifique que cualquier plan se venda en healthcare.gov o un intercambio estatal y cubra los 10 beneficios esenciales de salud del ACA. Si un agente ofrece un plan fuera del intercambio con una prima mucho más baja, pregunte específicamente si cubre condiciones preexistentes y cuáles son los topes anuales y de por vida."
+    },
+    "source": "KFF Health News, DOL.gov, CMS, Consumer Reports"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Premium Tax Credit (PTC) eligibility for people between jobs in 2026",
+        "es": "Elegibilidad para el Crédito Fiscal de Prima (PTC) para personas entre empleos en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Recently uninsured workers and displaced workers projecting their 2026 MAGI need to know one number: 400% of the Federal Poverty Level. In 2026 that is $63,840 for a single filer and $132,000 for a household of four. Below that line, the Premium Tax Credit (PTC) phases down as income climbs: subsidies do not snap off at 250% or 300% FPL, they shrink. At 400% FPL they stop entirely. Above 400% FPL you pay full sticker price. The enhanced PTCs that temporarily eliminated the cliff from 2021 to 2025 expired January 1, 2026, so between-jobs workers now face the original ACA subsidy structure.",
+          "es": "Los trabajadores recién sin cobertura y los trabajadores desplazados que proyectan su MAGI 2026 necesitan conocer un número: el 400% del Nivel Federal de Pobreza. En 2026 eso es $63,840 para un declarante individual y $132,000 para un hogar de cuatro personas. Por debajo de esa línea, el Crédito Fiscal de Prima (PTC) disminuye a medida que el ingreso sube: los subsidios no se cortan abruptamente al 250% o 300% FPL, se reducen. Al 400% FPL se detienen por completo. Por encima del 400% FPL paga el precio completo."
+        },
+        {
+          "en": "Post-employment enrollees face a unique MAGI projection problem: income changes mid-year when a new job starts. The Marketplace issues advance Premium Tax Credits based on a full-year projection. If a job seeker earns $25,000 while unemployed for six months and then earns $55,000 annualized for the second half of the year, the full-year MAGI lands near $52,500, potentially in a much higher bracket than the unemployment months suggested. Update your Marketplace income estimate within 30 days of starting a new job. The IRS reconciles final advance credits against actual MAGI at tax time via Form 1095-A (the statement the Marketplace sends in January). A larger-than-expected income can produce a credit repayment on your tax return.",
+          "es": "Los inscritos post-empleo enfrentan un problema único de proyección de MAGI: el ingreso cambia a mitad de año cuando comienza un nuevo trabajo. El Mercado emite Créditos Fiscales de Prima anticipados basados en una proyección de año completo. Si un buscador de trabajo gana $25,000 desempleado durante seis meses y luego gana $55,000 anualizados en la segunda mitad del año, el MAGI del año completo aterriza cerca de $52,500. Actualice su estimación de ingreso en el Mercado dentro de los 30 días de comenzar un nuevo trabajo."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "2026 PTC eligibility thresholds by household size (48 contiguous states + DC)",
+          "es": "Umbrales de elegibilidad PTC 2026 por tamaño de hogar (48 estados contiguos + DC)"
+        },
+        "headers": {
+          "en": ["Household size", "138% FPL (Medicaid threshold)", "250% FPL (max CSR eligibility)", "400% FPL (subsidy cliff)"],
+          "es": ["Tamaño de hogar", "138% FPL (umbral Medicaid)", "250% FPL (max elegibilidad CSR)", "400% FPL (tope de subsidio)"]
+        },
+        "rows": [
+          { "en": ["1", "$22,025", "$39,900", "$63,840"], "es": ["1", "$22,025", "$39,900", "$63,840"] },
+          { "en": ["2", "$29,777", "$53,940", "$86,240"], "es": ["2", "$29,777", "$53,940", "$86,240"] },
+          { "en": ["3", "$37,457", "$67,940", "$108,600"], "es": ["3", "$37,457", "$67,940", "$108,600"] },
+          { "en": ["4", "$45,540", "$82,040", "$132,000"], "es": ["4", "$45,540", "$82,040", "$132,000"] },
+          { "en": ["5", "$53,220", "$96,040", "$154,400"], "es": ["5", "$53,220", "$96,040", "$154,400"] },
+          { "en": ["6", "$60,900", "$110,040", "$176,800"], "es": ["6", "$60,900", "$110,040", "$176,800"] },
+          { "en": ["7", "$68,580", "$124,040", "$199,200"], "es": ["7", "$68,580", "$124,040", "$199,200"] },
+          { "en": ["8", "$76,260", "$138,040", "$221,600"], "es": ["8", "$76,260", "$138,040", "$221,600"] },
+          { "en": ["Each additional", "+$7,680", "+$14,000", "+$22,400"], "es": ["Cada persona adicional", "+$7,680", "+$14,000", "+$22,400"] }
+        ],
+        "footnote": {
+          "en": "138% FPL figures based on 2026 HHS ASPE poverty guidelines: $15,960 per-person base plus $5,680 per-additional-person increment. 250% and 400% FPL are derived multiples. Alaska and Hawaii have higher FPL guidelines.",
+          "es": "Los valores del 138% FPL se basan en las pautas de pobreza HHS ASPE 2026: base de $15,960 por persona más un incremento de $5,680 por persona adicional. El 250% y 400% FPL son múltiplos derivados."
+        },
+        "source": "HHS ASPE 2026 Poverty Guidelines; HealthCare.gov subsidy estimator"
+      }
+    },
+    {
+      "heading": {
+        "en": "HSA and HDHP fit for people between jobs in 2026",
+        "es": "Compatibilidad de HSA y HDHP para personas entre empleos en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Between-jobs workers who choose an HSA-qualified High-Deductible Health Plan (HDHP) on the Marketplace can still open and contribute to a Health Savings Account. An HSA is not tied to an employer: you own it and take it with you regardless of job status. To qualify to contribute in 2026, you must be enrolled in a qualifying HDHP (minimum deductible of $1,700 for self-only coverage or $3,400 for family coverage per IRS Revenue Procedure 2025-19) and not be covered by another plan that is not an HDHP. The 2026 HSA contribution limit is $4,400 for self-only coverage and $8,750 for family coverage, with a $1,000 catch-up contribution allowed at age 55 and older.",
+          "es": "Los trabajadores entre empleos que eligen un Plan con Deducible Alto (HDHP) compatible con HSA en el Mercado aún pueden abrir y contribuir a una Cuenta de Ahorros para la Salud (HSA). Una HSA no está vinculada a un empleador: usted la posee y la lleva independientemente del estado laboral. Para calificar para contribuir en 2026, debe estar inscrito en un HDHP calificado (deducible mínimo de $1,700 para cobertura individual o $3,400 para cobertura familiar según el Procedimiento de Ingresos IRS 2025-19) y no estar cubierto por otro plan que no sea HDHP."
+        },
+        {
+          "en": "The HSA triple tax advantage is particularly valuable for displaced workers managing cash flow: contributions are tax-deductible above the line (reducing income tax and next year's PTC calculation), growth is tax-free, and qualified medical withdrawals are tax-free. A key point for between-jobs workers: if you are collecting state or federal unemployment compensation, you can use existing HSA funds to pay health insurance premiums tax-free, including COBRA premiums. This exception does not apply when you are employed. Flexible Spending Accounts (FSAs), by contrast, are employer-only benefit structures, and most post-employment enrollees have no FSA access once their employer plan ends. An HSA is the only tax-advantaged medical account available to between-jobs workers.",
+          "es": "La ventaja fiscal triple de la HSA es particularmente valiosa para los trabajadores desplazados que administran el flujo de efectivo: las contribuciones son deducibles de impuestos above-the-line, el crecimiento es libre de impuestos y los retiros médicos calificados son libres de impuestos. Un punto clave para los trabajadores entre empleos: si está recibiendo compensación por desempleo estatal o federal, puede usar los fondos HSA existentes para pagar primas de seguro médico libres de impuestos, incluidas las primas de COBRA. Las Cuentas de Gastos Flexibles (FSAs), por el contrario, son estructuras de beneficio exclusivas del empleador, y la mayoría de los inscritos post-empleo no tienen acceso a una FSA una vez que termina su plan del empleador."
+        }
+      ],
+      "list": [
+        {
+          "en": "2026 HDHP minimum deductible: $1,700 self-only / $3,400 family (IRS Rev. Proc. 2025-19)",
+          "es": "Deducible mínimo HDHP 2026: $1,700 individual / $3,400 familiar (IRS Rev. Proc. 2025-19)"
+        },
+        {
+          "en": "2026 HDHP maximum out-of-pocket: $8,500 self-only / $17,000 family",
+          "es": "Maximo desembolso HDHP 2026: $8,500 individual / $17,000 familiar"
+        },
+        {
+          "en": "2026 HSA contribution limit: $4,400 self-only / $8,750 family + $1,000 catch-up at age 55+",
+          "es": "Límite de contribución HSA 2026: $4,400 individual / $8,750 familiar + $1,000 adicional a los 55+"
+        },
+        {
+          "en": "HSA funds can pay COBRA premiums tax-free while receiving unemployment compensation",
+          "es": "Los fondos HSA pueden pagar primas COBRA libres de impuestos mientras recibe compensación por desempleo"
+        },
+        {
+          "en": "FSA is employer-only: not available to most between-jobs workers",
+          "es": "FSA es exclusivo del empleador: no disponible para la mayoría de trabajadores entre empleos"
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Marketplace Special Enrollment Period (SEP) triggers for people between jobs",
+        "es": "Activadores del Período de Inscripción Especial (SEP) del Mercado para personas entre empleos"
+      },
+      "paragraphs": [
+        {
+          "en": "A Marketplace Special Enrollment Period is a time window outside of Open Enrollment when job seekers and recently uninsured workers can buy or change ACA coverage. The standard SEP window is 60 days from the qualifying event. For between-jobs workers, the most common qualifying events are: losing employer-sponsored coverage (including voluntary resignation, layoff, reduction in hours, or employer plan termination), marriage or divorce, adding a new child (birth or adoption), permanent relocation to a new state or service area, income change that causes a Medicaid gain or loss, and turning 26 and aging off a parent's plan. SEP coverage can start the first day of the month after the qualifying event if you apply before the 15th of the month following the event.",
+          "es": "Un Período de Inscripción Especial del Mercado es una ventana de tiempo fuera de la Inscripción Abierta cuando los buscadores de trabajo y los trabajadores recién sin cobertura pueden comprar o cambiar la cobertura ACA. La ventana SEP estándar es de 60 días desde el evento calificador. Para los trabajadores entre empleos, los eventos calificadores más comunes son: perder la cobertura patrocinada por el empleador (incluyendo renuncia voluntaria, despido, reducción de horas o terminación del plan del empleador), matrimonio o divorcio, agregar un nuevo hijo, reubicación permanente a un nuevo estado o área de servicio, cambio de ingreso que causa una ganancia o pérdida de Medicaid, y cumplir 26 años y salir del plan de los padres."
+        },
+        {
+          "en": "Post-employment enrollees should apply on HealthCare.gov as soon as possible after the qualifying event rather than waiting until day 59. The application asks for the date coverage ended (or will end), and HealthCare.gov displays the earliest available plan start date. In many cases, coverage can begin the first day of the following month. For the loss-of-coverage SEP specifically, you can apply up to 60 days in advance of when coverage will end, allowing you to line up seamless coverage with no gap day. For between-jobs workers managing the COBRA election simultaneously, you do NOT have to choose COBRA before applying for a Marketplace plan: both SEP windows run concurrently and you can compare both before electing either.",
+          "es": "Los inscritos post-empleo deben solicitar en HealthCare.gov tan pronto como sea posible después del evento calificador en lugar de esperar hasta el día 59. Para el SEP de pérdida de cobertura específicamente, puede solicitar hasta 60 días antes de que la cobertura termine, lo que le permite alinear cobertura continua sin día de brecha."
+        }
+      ],
+      "list": [
+        {
+          "en": "Loss of employer-sponsored health coverage: 60-day SEP window (most common trigger for between-jobs workers)",
+          "es": "Pérdida de cobertura de salud patrocinada por el empleador: ventana SEP de 60 días (detonante más común para trabajadores entre empleos)"
+        },
+        {
+          "en": "Income change causing Medicaid gain or loss: 60-day SEP window (report to HealthCare.gov within 30 days for seamless transition)",
+          "es": "Cambio de ingreso que causa ganancia o pérdida de Medicaid: ventana SEP de 60 días"
+        },
+        {
+          "en": "Marriage: 60-day SEP window from date of marriage",
+          "es": "Matrimonio: ventana SEP de 60 días desde la fecha del matrimonio"
+        },
+        {
+          "en": "Divorce or legal separation causing loss of coverage: 60-day SEP window",
+          "es": "Divorcio o separación legal que causa pérdida de cobertura: ventana SEP de 60 días"
+        },
+        {
+          "en": "Birth, adoption, or placement for foster care: 60-day SEP window",
+          "es": "Nacimiento, adopción o colocación para cuidado de crianza: ventana SEP de 60 días"
+        },
+        {
+          "en": "Permanent move to a new state or service area: 60-day SEP window",
+          "es": "Mudanza permanente a un nuevo estado o área de servicio: ventana SEP de 60 días"
+        },
+        {
+          "en": "Turning 26 and aging off a parent's ACA plan: 60-day SEP window from 26th birthday",
+          "es": "Cumplir 26 años y salir del plan ACA de los padres: ventana SEP de 60 días desde el 26 cumpleaños"
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Form 7206 and self-employment health insurance deduction: not applicable for most between-jobs workers",
+        "es": "Formulario 7206 y deducción de seguro médico para autónomos: no aplica para la mayoría de trabajadores entre empleos"
+      },
+      "paragraphs": [
+        {
+          "en": "Form 7206 does not apply to most people between jobs because the self-employed health insurance deduction requires net self-employment income. A displaced worker receiving unemployment compensation, severance pay, or W-2 income from a prior employer has no Schedule C net profit to deduct premiums against. W-2 workers deduct health insurance premiums through pretax payroll contributions if their employer offers a Section 125 (cafeteria) plan, but that deduction ends when employment ends. Between-jobs workers who take on freelance or 1099 contract work during their job search may have a partial deduction for the months they had SE income, calculated on Form 7206 for those specific months.",
+          "es": "El Formulario 7206 no se aplica a la mayoría de las personas entre empleos porque la deducción de seguro médico para autónomos requiere ingreso neto del trabajo independiente. Un trabajador desplazado que recibe compensación por desempleo, pago por liquidación o ingresos W-2 de un empleador anterior no tiene ganancias netas del Schedule C contra las cuales deducir las primas. Los trabajadores entre empleos que aceptan trabajo freelance o de contratista 1099 durante su búsqueda de empleo pueden tener una deducción parcial para los meses en que tuvieron ingreso SE, calculada en el Formulario 7206 para esos meses específicos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to enroll: step-by-step for between-jobs workers in 2026",
+        "es": "Cómo inscribirse: paso a paso para trabajadores entre empleos en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Recently uninsured workers should begin the Marketplace application process before employer coverage actually ends, since the loss-of-coverage SEP allows applications up to 60 days before the coverage end date. Starting early maximizes plan-start options and avoids any coverage gap. The starting URL for all 50 states is healthcare.gov; residents of state-based exchanges (California, New York, Massachusetts, and 15 other states) are redirected to their state portal automatically. Have documents ready before starting the application.",
+          "es": "Los trabajadores recién sin cobertura deben comenzar el proceso de solicitud del Mercado antes de que la cobertura del empleador termine, ya que el SEP de pérdida de cobertura permite solicitudes hasta 60 días antes de la fecha de finalización de la cobertura. La URL de inicio para los 50 estados es healthcare.gov. Tenga los documentos listos antes de comenzar la solicitud."
+        },
+        {
+          "en": "Common reasons Marketplace applications are denied or delayed: (1) income estimate outside the valid range (must be at least $0; must be a reasonable annual projection), (2) immigration status documentation not matching USCIS records, (3) Social Security number verification failure requiring manual review, (4) failure to submit employer-coverage loss documentation within 30 days of request, (5) applying after the 60-day SEP window has closed. Rejected applications can be appealed through the Marketplace appeals process; meantime, Medicaid may serve as a bridge in expansion states.",
+          "es": "Razones comunes por las que las solicitudes del Mercado son denegadas o retrasadas: (1) estimación de ingresos fuera del rango válido, (2) documentación de estado migratorio que no coincide con los registros del USCIS, (3) falla en la verificación del número de Seguro Social, (4) falta de presentación de documentación de pérdida de cobertura del empleador dentro de los 30 días de la solicitud, (5) solicitud después de que la ventana SEP de 60 días ha cerrado."
+        }
+      ],
+      "list": [
+        {
+          "en": "Step 1: Note the exact date your employer coverage ends (or will end). Start the clock.",
+          "es": "Paso 1: Anote la fecha exacta en que su cobertura del empleador termina (o terminará). Comience el conteo."
+        },
+        {
+          "en": "Step 2: Gather documents: government-issued photo ID, Social Security number, employer termination letter or HR written confirmation of coverage end date, most recent pay stubs or W-2, and an income projection for the rest of 2026.",
+          "es": "Paso 2: Reúna documentos: identificación fotográfica emitida por el gobierno, número de Seguro Social, carta de terminación del empleador o confirmación escrita de la fecha de finalización de la cobertura, talones de pago más recientes o W-2, y una proyección de ingresos para el resto del 2026."
+        },
+        {
+          "en": "Step 3: Go to healthcare.gov (or your state exchange portal). Create or log in to your account. Start a new application, selecting 'I lost or will lose coverage from a job' as your SEP reason.",
+          "es": "Paso 3: Vaya a healthcare.gov (o el portal de su intercambio estatal). Cree o inicie sesión en su cuenta. Inicie una nueva solicitud, seleccionando 'Perdí o perderé cobertura de un trabajo' como razón SEP."
+        },
+        {
+          "en": "Step 4: Enter household size and your 2026 projected MAGI. The system checks Medicaid eligibility first (in expansion states) and routes you to ACA plans if income is above 138% FPL.",
+          "es": "Paso 4: Ingrese el tamaño del hogar y su MAGI proyectado 2026. El sistema verifica la elegibilidad de Medicaid primero (en estados de expansión) y lo dirige a planes ACA si el ingreso está por encima del 138% FPL."
+        },
+        {
+          "en": "Step 5: Compare plans by total annual cost (premium + deductible + average copays for your expected care), not just monthly premium. Use the Marketplace plan comparison tool to sort by total estimated cost.",
+          "es": "Paso 5: Compare planes por costo total anual (prima + deducible + copagos promedio para la atención esperada), no solo prima mensual. Use la herramienta de comparación de planes del Mercado para ordenar por costo total estimado."
+        },
+        {
+          "en": "Step 6: Enroll and note your plan start date. If there is a coverage gap between the old plan's end and new plan's start, ask if a hardship exemption is available (this can also enable catastrophic plan access for those under 30 or in a hardship situation).",
+          "es": "Paso 6: Inscríbase y anote la fecha de inicio de su plan. Si hay una brecha de cobertura entre el final del plan anterior y el inicio del nuevo plan, pregunte si hay una exención por dificultad disponible."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Catastrophic plan eligibility for people between jobs in 2026",
+        "es": "Elegibilidad para plan catastrófico para personas entre empleos en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Catastrophic plans on the ACA Marketplace are available to two groups: (1) people under age 30, and (2) people of any age who qualify for a hardship exemption. A hardship exemption may be granted if you experienced homelessness, eviction, foreclosure, domestic violence, death of a family member, or other extraordinary hardship. For recently uninsured workers under 30 who are between jobs, a catastrophic plan is a legitimate low-premium option: the 2026 ACA Marketplace out-of-pocket maximum is $10,600 for an individual, which equals the catastrophic plan deductible. Premiums for catastrophic plans typically run $100 to $250 per month, making them the cheapest monthly cost option if you are healthy and under 30.",
+          "es": "Los planes catastróficos en el Mercado ACA están disponibles para dos grupos: (1) personas menores de 30 años, y (2) personas de cualquier edad que califican para una exención por dificultad. Para los trabajadores recién sin cobertura menores de 30 años que están entre empleos, un plan catastrófico es una opción legítima de prima baja: el máximo de desembolso del Mercado ACA 2026 es $10,600 para un individuo, que equivale al deducible del plan catastrófico. Las primas para los planes catastróficos típicamente oscilan entre $100 y $250 al mes."
+        },
+        {
+          "en": "Catastrophic plans do not qualify for Premium Tax Credits. A displaced worker under 30 who qualifies for a PTC should compare the catastrophic plan's full premium against a subsidized Bronze plan's after-credit premium before assuming the catastrophic plan is cheaper. People 30 and older between jobs do not qualify for catastrophic plans unless they have an approved hardship exemption. For over-30 between-jobs workers, the Bronze HDHP on the ACA Marketplace is the comparable low-premium option and does qualify for Premium Tax Credits.",
+          "es": "Los planes catastróficos no califican para Créditos Fiscales de Prima. Un trabajador desplazado menor de 30 años que califica para un PTC debe comparar la prima completa del plan catastrófico contra la prima después del crédito de un plan Bronze subsidiado antes de asumir que el plan catastrófico es más barato. Las personas de 30 años o más entre empleos no califican para planes catastróficos a menos que tengan una exención por dificultad aprobada."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the cheapest health insurance option for someone between jobs in 2026?",
+        "answer": "For most recently uninsured workers, a subsidized ACA Marketplace plan accessed through the 60-day job-loss SEP is the cheapest option. Displaced workers with projected annual income under 400% FPL ($63,840 single in 2026) qualify for Premium Tax Credits that can reduce a Bronze plan premium to $0 to $300 per month. If income drops below 138% FPL ($22,025 single in 2026) in an expansion state, Medicaid is free. COBRA is almost always the most expensive option at $600 to $1,800 per month for the same coverage, and it does not offer subsidies."
+      },
+      {
+        "question": "How long do I have to sign up for a Marketplace plan after losing job coverage?",
+        "answer": "You have 60 days from the date your employer-sponsored coverage ends to enroll in a Marketplace plan through a Special Enrollment Period. Coverage can start as soon as the first day of the month following your coverage loss. You can also apply up to 60 days before coverage ends, allowing you to line up continuous coverage with no gap. Missing the 60-day SEP window means you must wait for Open Enrollment starting November 1, unless another qualifying life event occurs."
+      },
+      {
+        "question": "Do I qualify for the Premium Tax Credit if I am between jobs?",
+        "answer": "You qualify for the Premium Tax Credit if your projected 2026 Modified Adjusted Gross Income (MAGI) falls between 100% FPL and 400% FPL for your household size, and you enroll in a qualifying Marketplace plan. Job-loss income counts differently depending on the source: unemployment compensation counts as MAGI, severance pay counts, investment income counts. If income is projected below 138% FPL in an expansion state, you will be directed to Medicaid instead of a subsidized Marketplace plan. Report the income number carefully because the IRS reconciles advance credits against actual MAGI using Form 1095-A at tax time."
+      },
+      {
+        "question": "Is COBRA worth it for someone who just got laid off?",
+        "answer": "Rarely, for most laid-off workers. COBRA continuation lets you keep your former employer plan for up to 18 months but at 102% of the full premium, typically $600 to $1,800 per month for individual coverage in 2026. The only clear use case is continuity of care: if you are mid-treatment with a specialist who is not in any Marketplace plan network, or have already met a large portion of your deductible late in the year, COBRA may be worth the premium. Most displaced workers will save substantially more on a subsidized Marketplace plan. Apply to both simultaneously: you can compare the COBRA notice with Marketplace quotes before the 60-day election deadline."
+      },
+      {
+        "question": "Can I use an HSA if I am between jobs in 2026?",
+        "answer": "Yes, if you are enrolled in a qualifying High-Deductible Health Plan. An HSA is portable and stays with you regardless of employment status. You can continue contributing to an existing HSA in 2026 ($4,400 self-only / $8,750 family limit, plus $1,000 catch-up at age 55+) as long as you are on an HDHP. A special rule for unemployed people: you can use existing HSA funds to pay COBRA premiums or other health insurance premiums tax-free while receiving unemployment compensation. Flexible Spending Accounts (FSAs) are employer-only and are not available to between-jobs workers."
+      },
+      {
+        "question": "What counts as income for ACA subsidies when I am between jobs?",
+        "answer": "Modified Adjusted Gross Income (MAGI) for ACA subsidy purposes includes: wages and salary from any W-2 employment during the year, unemployment compensation (fully included), severance pay, investment income (dividends, capital gains, interest), rental income, Social Security benefits (partially), and any self-employment income from freelance or 1099 contract work. MAGI does not include gifts, inheritances, most disability payments, or Supplemental Security Income (SSI). If your income for the year will be much lower than last year, use your actual projected 2026 number, not last year's income. The Marketplace uses projected income to set advance credits."
+      },
+      {
+        "question": "When can I enroll in a Marketplace plan outside of open enrollment if I am between jobs?",
+        "answer": "Losing employer-sponsored coverage opens a 60-day Marketplace Special Enrollment Period. Other SEP triggers relevant to between-jobs workers include: marriage or divorce that causes coverage loss, having a baby or adopting a child, permanently moving to a new state or service area, income change that causes Medicaid eligibility to begin or end, and turning 26 and aging off a parent's plan. Each event has a 60-day window from the event date. Apply at healthcare.gov as soon as possible after the event rather than waiting until close to the deadline."
+      },
+      {
+        "question": "Can I get a catastrophic health plan if I am between jobs?",
+        "answer": "If you are under 30, yes: catastrophic plans are available on the ACA Marketplace without any additional qualification. Premiums run roughly $100 to $250 per month in 2026, but the deductible equals the ACA out-of-pocket maximum ($10,600 individual in 2026), and catastrophic plans do not qualify for Premium Tax Credits. If you qualify for a subsidy, compare a subsidized Bronze plan against the catastrophic plan full premium before choosing. If you are 30 or older, catastrophic plans require an approved hardship exemption, which may be available after certain events like eviction or domestic violence."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la opción de seguro médico más barata para alguien entre empleos en 2026?",
+        "answer": "Para la mayoría de los trabajadores recién sin cobertura, un plan del Mercado ACA subsidiado a través del SEP de pérdida de empleo de 60 días es la opción más barata. Los trabajadores desplazados con ingresos anuales proyectados por debajo del 400% FPL ($63,840 individual en 2026) califican para Créditos Fiscales de Prima que pueden reducir una prima del plan Bronze a $0 a $300 al mes. Si el ingreso cae por debajo del 138% FPL ($22,025 individual en 2026) en un estado de expansión, Medicaid es gratuito. COBRA es casi siempre la opción más cara a $600 a $1,800 al mes por la misma cobertura y no ofrece subsidios."
+      },
+      {
+        "question": "¿Cuánto tiempo tengo para inscribirme en un plan del Mercado después de perder la cobertura del empleo?",
+        "answer": "Tiene 60 días desde la fecha en que termina la cobertura patrocinada por el empleador para inscribirse en un plan del Mercado a través de un Período de Inscripción Especial. La cobertura puede comenzar el primer día del mes siguiente a la pérdida de cobertura. También puede solicitar hasta 60 días antes de que termine la cobertura para alinear cobertura continua sin brecha. Perder la ventana SEP de 60 días significa que debe esperar a la Inscripción Abierta a partir del 1 de noviembre."
+      },
+      {
+        "question": "¿Califico para el Crédito Fiscal de Prima si estoy entre empleos?",
+        "answer": "Califica para el Crédito Fiscal de Prima si su MAGI proyectado para 2026 cae entre el 100% FPL y el 400% FPL para su tamaño de hogar, y se inscribe en un plan del Mercado calificado. La compensación por desempleo cuenta como MAGI, también el pago por liquidación e ingresos de inversiones. Si el ingreso se proyecta por debajo del 138% FPL en un estado de expansión, será dirigido a Medicaid. El IRS reconcilia los créditos anticipados contra el MAGI real usando el Formulario 1095-A al momento de declarar impuestos."
+      },
+      {
+        "question": "¿Vale la pena COBRA para alguien que acaba de ser despedido?",
+        "answer": "Rara vez, para la mayoría de los trabajadores despedidos. COBRA permite mantener el plan del empleador anterior hasta 18 meses pero al 102% de la prima completa, típicamente $600 a $1,800 al mes en 2026. El único caso claro de uso es la continuidad de la atención: si está en medio de un tratamiento con un especialista que no está en ninguna red del Mercado, o ya ha pagado gran parte de su deducible. La mayoría de los trabajadores desplazados ahorrarán sustancialmente más con un plan del Mercado subsidiado."
+      },
+      {
+        "question": "¿Puedo usar una HSA si estoy entre empleos en 2026?",
+        "answer": "Sí, si está inscrito en un Plan con Deducible Alto calificado. Una HSA es portable y permanece con usted independientemente del estado laboral. Puede continuar contribuyendo a una HSA existente en 2026 ($4,400 individual / $8,750 familiar, más $1,000 adicional a los 55+) siempre que esté en un HDHP. Regla especial para desempleados: puede usar los fondos HSA existentes para pagar primas de COBRA u otras primas de seguro médico libres de impuestos mientras recibe compensación por desempleo. Las FSAs son exclusivas del empleador y no están disponibles para trabajadores entre empleos."
+      },
+      {
+        "question": "¿Qué cuenta como ingreso para los subsidios ACA cuando estoy entre empleos?",
+        "answer": "El MAGI para subsidios ACA incluye: salarios de cualquier empleo W-2 durante el año, compensación por desempleo (totalmente incluida), pago por liquidación, ingresos de inversiones, ingresos de alquiler, beneficios del Seguro Social (parcialmente) e ingresos del trabajo independiente o freelance. El MAGI no incluye regalos, herencias, la mayoría de pagos por discapacidad o SSI. Use su número proyectado real para 2026, no el ingreso del año anterior."
+      },
+      {
+        "question": "¿Cuándo puedo inscribirme en un plan del Mercado fuera de la inscripción abierta si estoy entre empleos?",
+        "answer": "Perder la cobertura patrocinada por el empleador abre un Período de Inscripción Especial del Mercado de 60 días. Otros activadores SEP relevantes incluyen: matrimonio o divorcio que causa pérdida de cobertura, tener un bebé, mudarse permanentemente a un nuevo estado o área de servicio, cambio de ingreso que causa inicio o fin de elegibilidad de Medicaid, y cumplir 26 años. Cada evento tiene una ventana de 60 días desde la fecha del evento. Solicite en healthcare.gov tan pronto como sea posible."
+      },
+      {
+        "question": "¿Puedo obtener un plan catastrófico si estoy entre empleos?",
+        "answer": "Si tiene menos de 30 años, sí: los planes catastróficos están disponibles en el Mercado ACA sin calificación adicional. Las primas son aproximadamente $100 a $250 al mes en 2026, pero el deducible equivale al máximo de desembolso ACA ($10,600 individual en 2026) y los planes catastróficos no califican para Créditos Fiscales de Prima. Si tiene 30 años o más, los planes catastróficos requieren una exención por dificultad aprobada."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Am I eligible for ACA subsidies? Run the free screener",
+        "es": "¿Soy elegible para subsidios ACA? Use el evaluador gratuito"
+      },
+      "href": "/screener"
+    },
+    {
+      "label": {
+        "en": "2026 Medicaid Income Limits by Household Size",
+        "es": "Límites de Ingresos de Medicaid 2026 por Tamaño de Hogar"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Losing Job Coverage: Your SEP Options",
+        "es": "Perder Cobertura del Empleo: Sus Opciones SEP"
+      },
+      "href": "/event/losing-job-coverage"
+    },
+    {
+      "label": {
+        "en": "ACA Income Limits and Subsidy Thresholds 2026",
+        "es": "Límites de Ingresos ACA y Umbrales de Subsidio 2026"
+      },
+      "href": "/aca-income-limits"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Losing Job-Based Coverage Options",
+      "url": "https://www.healthcare.gov/have-job-based-coverage/if-you-lose-job-based-coverage/",
+      "note": {
+        "en": "Official Marketplace guidance on SEP eligibility and enrollment after job loss.",
+        "es": "Guía oficial del Mercado sobre elegibilidad SEP e inscripción tras pérdida de empleo."
+      }
+    },
+    {
+      "name": "DOL.gov: COBRA Continuation Coverage",
+      "url": "https://www.dol.gov/agencies/ebsa/laws-and-regulations/laws/cobra",
+      "note": {
+        "en": "Department of Labor COBRA election rules, premium caps (102%), and 18-month duration.",
+        "es": "Reglas de elección COBRA del Departamento de Trabajo, topes de prima (102%) y duración de 18 meses."
+      }
+    },
+    {
+      "name": "KFF: ACA Premium Tax Credits and Subsidy Cliff 2026",
+      "url": "https://www.kff.org/health-reform/issue-brief/explaining-health-care-reform-questions-about-health-insurance-subsidies/",
+      "note": {
+        "en": "Analysis of the 400% FPL subsidy cliff returning for 2026 after enhanced PTCs expired.",
+        "es": "Análisis del retorno del tope de subsidio del 400% FPL para 2026 tras la expiración de los PTC mejorados."
+      }
+    },
+    {
+      "name": "IRS Revenue Procedure 2025-19: 2026 HSA and HDHP Limits",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "note": {
+        "en": "Official 2026 HSA contribution limits ($4,400 self / $8,750 family) and HDHP minimum deductibles ($1,700 self / $3,400 family).",
+        "es": "Límites oficiales de contribución HSA 2026 ($4,400 individual / $8,750 familiar) y deducibles mínimos HDHP ($1,700 individual / $3,400 familiar)."
+      }
+    },
+    {
+      "name": "CMS: Special Enrollment Periods (SEP) Job Aid, March 2026",
+      "url": "https://www.cms.gov/files/document/special-enrollment-periods-march-2026.pdf",
+      "note": {
+        "en": "CMS comprehensive guide to SEP qualifying events, windows, and documentation requirements.",
+        "es": "Guía integral de CMS sobre eventos calificadores SEP, ventanas y requisitos de documentación."
+      }
+    }
+  ]
+}
