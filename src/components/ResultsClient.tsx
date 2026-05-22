@@ -14,6 +14,7 @@ export interface ResultsClientProps {
   secondaryPrograms: ProgramResult[];
   notEligible: ProgramResult[];
   isMedicareFlow?: boolean;
+  isAcaBrokerState?: boolean;
 }
 
 /* ---- Phone Capture Form ---- */
@@ -220,15 +221,18 @@ export default function ResultsClient({
   secondaryPrograms,
   notEligible,
   isMedicareFlow = false,
+  isAcaBrokerState = false,
 }: ResultsClientProps) {
   const es = locale === 'es';
   const showPhoneCapture =
     isMedicareFlow ||
-    (primaryProgram && ['aca', 'medicare'].includes(primaryProgram.id));
+    (primaryProgram?.id === 'aca' && isAcaBrokerState) ||
+    (primaryProgram?.id === 'medicare');
   const showClinics =
     !isMedicareFlow && primaryProgram && primaryProgram.id === 'medicaid';
-  // HealthSherpa is ACA-only. Medicare flows get a Medicare.gov self-serve link instead.
-  const showHealthSherpa = !isMedicareFlow && primaryProgram && primaryProgram.id === 'aca';
+  // HealthSherpa is ACA-only, and only for the 18 FFM states Aaron serves.
+  // Medicare flows get a Medicare.gov self-serve link instead.
+  const showHealthSherpa = !isMedicareFlow && primaryProgram && primaryProgram.id === 'aca' && isAcaBrokerState;
   const showMedicareGov = isMedicareFlow || (primaryProgram && primaryProgram.id === 'medicare');
 
   // Language toggle URL
@@ -336,7 +340,7 @@ export default function ResultsClient({
                   <div className="flex-1 h-px bg-[var(--border-light)]" />
                 </div>
                 <a
-                  href={`https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_source=benefitsusa&utm_medium=screener&utm_campaign=benefitsusa&utm_content=${submissionId}`}
+                  href={`https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=benefitsusa&utm_content=${submissionId}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] font-semibold text-sm hover:bg-[var(--primary)] hover:text-white transition-all"

@@ -7,6 +7,7 @@ import { getFPLPercent } from '@/lib/bill-analyzer/types'
 import { checkEligibility } from '@/lib/eligibility'
 import type { ProgramResult } from '@/lib/eligibility'
 import { setPendingFile, getPendingFile, clearPendingFile } from '@/lib/bill-analyzer/fileStore'
+import { isBrokerAcaState } from '@/lib/ffm-states'
 
 type Step = 'upload' | 'about-you' | 'analyzing' | 'results' | 'letter'
 type InsuranceStatus = 'yes' | 'no' | 'not_sure' | ''
@@ -318,7 +319,7 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
   }
 
   function getProgramCTAUrl(id: string): string {
-    if (id === 'aca') return 'https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_source=coveredusa&utm_medium=bill_analyzer'
+    if (id === 'aca') return 'https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=benefitsusa'
     if (id === 'medicaid') return 'https://www.healthcare.gov/medicaid-chip/'
     if (id === 'chip') return 'https://www.healthcare.gov/medicaid-chip/'
     if (id === 'va-healthcare') return 'https://www.va.gov/health-care/apply-for-health-care-form-10-10ez/introduction'
@@ -1133,8 +1134,8 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
                     </span>
                   </div>
 
-                  {/* ACA: Phone capture + HealthSherpa */}
-                  {program.id === 'aca' && (
+                  {/* ACA: Phone capture + HealthSherpa — only for FFM states Aaron serves */}
+                  {program.id === 'aca' && isBrokerAcaState(getBestState()) && (
                     <>
                       {billLeadDone ? (
                         <div className="rounded-xl p-5 text-center" style={{ background: 'var(--success-light)' }}>
@@ -1183,7 +1184,7 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
                           <div className="flex-1 h-px bg-[var(--border-light)]" />
                         </div>
                         <a
-                          href={`https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_source=coveredusa&utm_medium=bill_analyzer&utm_content=${resultId ?? ''}`}
+                          href={`https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=benefitsusa&utm_content=${resultId ?? ''}`}
                           target="_blank" rel="noopener noreferrer"
                           className="cta-btn w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 font-semibold text-sm transition-all hover:opacity-90"
                           style={{ borderColor: '#0d9488', color: '#0d9488', background: 'white' }}

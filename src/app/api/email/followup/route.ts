@@ -13,7 +13,7 @@ import { buildUnsubscribeUrl } from '@/app/api/unsubscribe/route';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const HEALTHSHERPA_BASE = 'https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_source=coveredusa&utm_medium=email&utm_campaign=followup';
+const HEALTHSHERPA_BASE = 'https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=benefitsusa';
 
 interface Submission {
   id: string;

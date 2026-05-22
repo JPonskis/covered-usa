@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabaseAdmin } from '@/lib/supabase-admin';
+import { postToBrokerDialer, buildScreenerNote } from '@/lib/broker-posting';
+import { isBrokerAcaState } from '@/lib/ffm-states';
 
 // Simple in-memory rate limiter: 5 requests per IP per hour
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
@@ -77,6 +79,42 @@ export async function POST(req: NextRequest) {
     } catch (dbErr) {
       // Best-effort — don't block the user if the insert fails
       console.error('bill-analyzer-lead DB insert error:', dbErr);
+    }
+
+    // Post to broker dialer for ACA-eligible leads in FFM states
+    // Only ACA for now (Medicare agreement not yet signed)
+    const isAcaEligible = (eligiblePrograms as string[]).includes('aca');
+    if (isAcaEligible && isBrokerAcaState(state || '')) {
+      try {
+        const notes = buildScreenerNote({
+          source: 'coveredusa',
+          leadType: 'health',
+          language: 'en',
+          submissionId: 'bill-analyzer-' + Date.now(),
+          screener: {
+            state: state || null,
+            income: income || null,
+            household_size: householdSize || null,
+            insurance_status: insuranceStatus === 'yes' ? 'insured' : 'uninsured',
+            results: { programs: (eligiblePrograms as string[]).map((id: string) => ({ id, eligible: true })) },
+          },
+        });
+        await postToBrokerDialer({
+          firstName: firstName || '',
+          lastName: '',
+          email: email || '',
+          phone,
+          zip: '',
+          state: state || undefined,
+          language: 'en',
+          submissionId: 'bill-' + tcpaTimestamp,
+          leadType: 'health',
+          source: 'coveredusa',
+          notes,
+        });
+      } catch (brokerErr) {
+        console.error('Bill analyzer broker post failed:', brokerErr);
+      }
     }
 
     return NextResponse.json({ success: true });

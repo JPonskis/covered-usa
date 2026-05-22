@@ -62,8 +62,7 @@ export function buildScreenerNote(opts: {
   const { source, leadType, language, submissionId, screener } = opts;
   const lines: string[] = [];
 
-  lines.push(`=== ${source.toUpperCase()} SCREENER ANSWERS ===`);
-  lines.push(`Source: ${source}`);
+  lines.push(`=== SCREENER ANSWERS ===`);
   lines.push(`Lead type: ${leadType}`);
   lines.push(`Submission ID: ${submissionId}`);
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { supabaseAdmin } from '@/lib/supabase-admin';
 import type { ProgramResult } from '@/lib/eligibility';
 import ResultsClient from '@/components/ResultsClient';
+import { isBrokerAcaState } from '@/lib/ffm-states';
 
 export const metadata: Metadata = {
   title: 'Your Health Insurance Results | CoveredUSA',
@@ -65,6 +66,8 @@ export default async function ResultsPage({ params }: Props) {
       </div>
     );
   }
+
+  const isAcaBrokerState = isBrokerAcaState(submission.state || '');
 
   // Detect Medicare flow from the focus signal we encoded into insurance_source
   // when the screener was taken with ?focus=medicare ("medicare:<status>:<needs>").
@@ -141,6 +144,7 @@ export default async function ResultsPage({ params }: Props) {
       secondaryPrograms={secondaryPrograms}
       notEligible={notEligible}
       isMedicareFlow={isMedicareFlow}
+      isAcaBrokerState={isAcaBrokerState}
     />
   );
 }

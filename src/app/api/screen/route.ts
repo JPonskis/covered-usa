@@ -9,7 +9,7 @@ import type { ProgramResult } from '@/lib/eligibility';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const HEALTHSHERPA_BASE = 'https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_source=benefitsusa&utm_medium=email&utm_campaign=benefitsusa';
+const HEALTHSHERPA_BASE = 'https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=benefitsusa';
 
 // Simple in-memory rate limiter: 10 requests per IP per minute
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();

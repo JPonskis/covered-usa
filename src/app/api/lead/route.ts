@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabaseAdmin } from '@/lib/supabase-admin';
 import { postToBrokerDialer, buildScreenerNote, type ScreenerRow } from '@/lib/broker-posting';
+import { isBrokerAcaState } from '@/lib/ffm-states';
 
 // Simple in-memory rate limiter: 5 requests per IP per hour
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
@@ -149,6 +150,13 @@ export async function POST(req: NextRequest) {
         );
         // Bail out before posting. The lead is still in covered_usa_submissions
         // so when the Medicare agreement is signed we can backfill / re-post if needed.
+        return NextResponse.json({ success: true });
+      }
+
+      // ACA leads only post for the 18 FFM states Aaron serves.
+      // Medicare posting is gated by BROKER_MEDICARE_ENABLED separately.
+      if (leadType === 'health' && !isBrokerAcaState(sub?.state || '')) {
+        console.log(`ACA lead ${submissionId} from non-FFM state (${sub?.state}) — broker post skipped`);
         return NextResponse.json({ success: true });
       }
 
