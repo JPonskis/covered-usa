@@ -89,7 +89,7 @@ export async function POST(req: NextRequest) {
       };
 
       const notes = buildScreenerNote({
-        source: 'coveredusa',
+        source: 'benefitsusa',
         leadType,
         language,
         submissionId,
@@ -108,7 +108,7 @@ export async function POST(req: NextRequest) {
         ipAddress: ip,
         submissionId,
         leadType,
-        source: 'coveredusa',
+        source: 'benefitsusa',
         notes,
       });
     } catch (brokerErr) {
