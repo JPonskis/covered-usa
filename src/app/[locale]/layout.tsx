@@ -34,13 +34,14 @@ export default async function LocaleLayout({
   const tl = await getTranslations({ locale, namespace: 'layout' });
   const otherLocale = locale === 'en' ? 'es' : 'en';
 
-  // Hide site nav + site footer on ad-landing routes (/comenzar) so users
-  // see ONLY the landing page's own minimal chrome. Middleware exposes
-  // the pathname via x-pathname header. Note: route group (landing) parent
-  // layouts still apply per Next.js routing — we explicitly suppress them.
+  // Hide site nav + site footer on ad-funnel routes (/comenzar, /screener)
+  // so users see only focused conversion chrome — no Bill Analyzer / About
+  // distractions to pull them away. Middleware exposes the pathname via
+  // x-pathname header (Next.js doesn't otherwise pass it server-side).
+  // /results keeps the site chrome since by then the user has converted.
   const h = await headers();
   const pathname = h.get('x-pathname') || '';
-  const isAdLandingRoute = /\/(comenzar)(\/|$)/.test(pathname);
+  const isAdLandingRoute = /\/(comenzar|screener)(\/|$)/.test(pathname);
 
   if (isAdLandingRoute) {
     return (
