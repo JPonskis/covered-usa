@@ -137,6 +137,21 @@ export async function POST(req: NextRequest) {
         screener: screenerForNote,
       });
 
+      // Per-leadType gating: Aaron's current agreement is ACA-only.
+      // Medicare leads stay inert until BROKER_MEDICARE_ENABLED=true on Vercel,
+      // which we flip ONLY after the Medicare (Dan) agreement is signed.
+      // ACA leads always post when BROKER_POST_URL is set.
+      const medicareEnabled = process.env.BROKER_MEDICARE_ENABLED === 'true';
+      if (leadType === 'medicare' && !medicareEnabled) {
+        console.log(
+          `Medicare lead ${submissionId} saved to Supabase but broker post SKIPPED ` +
+          `(BROKER_MEDICARE_ENABLED not set — Medicare agreement pending)`
+        );
+        // Bail out before posting. The lead is still in covered_usa_submissions
+        // so when the Medicare agreement is signed we can backfill / re-post if needed.
+        return NextResponse.json({ success: true });
+      }
+
       // Append ad campaign tag if present, so Aaron's TLD CRM tracking_id
       // breaks out per-ad performance (e.g. benefitsusa:facebook:spanish-aca-v1:medicare).
       // The :leadType suffix is appended by broker-posting.ts automatically.
