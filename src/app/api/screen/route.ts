@@ -52,6 +52,10 @@ export async function POST(req: NextRequest) {
       firstName,
       email,
       language,
+      utmSource,
+      utmMedium,
+      utmCampaign,
+      referrerUrl,
     } = body;
 
     const state = getStateFromZip(String(zipCode)) || 'TX';
@@ -99,6 +103,10 @@ export async function POST(req: NextRequest) {
           .filter(p => p.eligible === true || p.eligible === 'maybe')
           .map(p => p.id),
         language: language || 'en',
+        utm_source: utmSource || null,
+        utm_medium: utmMedium || null,
+        utm_campaign: utmCampaign || null,
+        referral_url: referrerUrl || null,
       })
       .select('id')
       .single();

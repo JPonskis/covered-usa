@@ -5,6 +5,8 @@ import { routing } from '@/i18n/routing';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileBottomBar from '@/components/MobileBottomBar';
+import AnalyticsTracker from '@/components/AnalyticsTracker';
+import MetaPixel from '@/components/MetaPixel';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -33,6 +35,8 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider>
+      <MetaPixel />
+      <AnalyticsTracker />
       <header style={{
         background: 'var(--primary-deeper)',
         color: 'white',

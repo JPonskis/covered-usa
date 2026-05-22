@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
       const { data: sub } = await supabaseAdmin
         .from('covered_usa_submissions')
         .select(
-          'first_name, email, state, zip_code, age, household_size, annual_income, employment_status, is_pregnant, has_disability, is_veteran, currently_insured, insurance_source, language, eligible_programs'
+          'first_name, email, state, zip_code, age, household_size, annual_income, employment_status, is_pregnant, has_disability, is_veteran, currently_insured, insurance_source, language, eligible_programs, utm_source, utm_campaign'
         )
         .eq('id', submissionId)
         .single();
@@ -96,6 +96,13 @@ export async function POST(req: NextRequest) {
         screener: screenerForNote,
       });
 
+      // Append ad campaign tag if present, so Aaron's TLD CRM tracking_id
+      // breaks out per-ad performance (e.g. benefitsusa:facebook:spanish-aca-v1:health)
+      const adCampaign = sub?.utm_campaign || null;
+      const sourceWithCampaign = adCampaign
+        ? `benefitsusa:${sub?.utm_source || 'ad'}:${adCampaign}`
+        : 'benefitsusa';
+
       await postToBrokerDialer({
         firstName: sub?.first_name || '',
         lastName: '',
@@ -108,7 +115,7 @@ export async function POST(req: NextRequest) {
         ipAddress: ip,
         submissionId,
         leadType,
-        source: 'benefitsusa',
+        source: sourceWithCampaign,
         notes,
       });
     } catch (brokerErr) {

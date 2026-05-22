@@ -154,6 +154,13 @@ export default function ScreenerContent({ locale }: { locale: string }) {
       const state = getStateFromZip(formData.zipCode) || '';
       const incomeRaw = Number(formData.annualIncome.replace(/,/g, '')) || 0;
 
+      // Pull UTM attribution captured by AnalyticsTracker on first landing
+      let attribution: Record<string, string> | null = null;
+      try {
+        const raw = sessionStorage.getItem('coveredusa_attribution');
+        if (raw) attribution = JSON.parse(raw);
+      } catch { /* sessionStorage blocked */ }
+
       const payload = {
         zipCode: formData.zipCode,
         state,
@@ -169,6 +176,11 @@ export default function ScreenerContent({ locale }: { locale: string }) {
         firstName: formData.firstName,
         email: formData.email,
         language: locale,
+        utmSource: attribution?.utmSource || null,
+        utmMedium: attribution?.utmMedium || null,
+        utmCampaign: attribution?.utmCampaign || null,
+        referrerUrl: attribution?.referrerUrl || null,
+        landingPage: attribution?.landingPage || null,
       };
 
       const res = await fetch('/api/screen', {

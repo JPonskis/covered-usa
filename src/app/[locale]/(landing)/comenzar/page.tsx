@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -107,6 +107,8 @@ export default async function ComenzarPage({
   setRequestLocale(locale);
 
   const c = content[locale as keyof typeof content] ?? content.en;
+  const tf = await getTranslations({ locale, namespace: 'footer' });
+  const tpmoDisclaimer = tf('medicare');
 
   return (
     <div
@@ -365,24 +367,30 @@ export default async function ComenzarPage({
       <footer
         style={{
           background: 'var(--text-primary)',
-          padding: '1.25rem 1.5rem',
+          padding: '1.5rem 1.5rem',
           textAlign: 'center',
         }}
       >
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <Link
-            href={`/${locale}/privacy`}
-            style={{
-              color: 'rgba(255,255,255,0.4)',
-              fontSize: '0.8rem',
-              textDecoration: 'underline',
-            }}
-          >
-            {c.privacyLabel}
-          </Link>
-          <span style={{ color: 'rgba(255,255,255,0.2)', fontSize: '0.8rem' }}>|</span>
-          <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.8rem', margin: 0 }}>
-            {c.disclaimer}
+        <div className="max-w-2xl mx-auto">
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-3">
+            <Link
+              href={`/${locale}/privacy`}
+              style={{
+                color: 'rgba(255,255,255,0.4)',
+                fontSize: '0.8rem',
+                textDecoration: 'underline',
+              }}
+            >
+              {c.privacyLabel}
+            </Link>
+            <span style={{ color: 'rgba(255,255,255,0.2)', fontSize: '0.8rem' }}>|</span>
+            <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.8rem', margin: 0 }}>
+              {c.disclaimer}
+            </p>
+          </div>
+          {/* TPMO disclaimer — required for any Medicare-related marketing per CMS guidance */}
+          <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.7rem', lineHeight: 1.5, margin: 0, maxWidth: '40rem', marginInline: 'auto' }}>
+            {tpmoDisclaimer}
           </p>
         </div>
       </footer>

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import type { ProgramResult } from '@/lib/eligibility';
 import NearbyClinics from '@/components/NearbyClinics';
+import { trackLead } from '@/components/MetaPixel';
 
 export interface ResultsClientProps {
   submissionId: string;
@@ -55,6 +56,8 @@ function PhoneCaptureForm({
         }),
       });
       if (!res.ok) throw new Error('Failed');
+      // Fire Meta Pixel Lead event for ad-conversion optimization (no-op if pixel not installed)
+      trackLead();
       setDone(true);
     } catch {
       setError(
