@@ -27,24 +27,44 @@ export function CtaButton({ locale, label, size = 'xl' }: CtaButtonProps) {
   const query = passthroughParams.toString();
   const screenerHref = `/${locale}/screener${query ? `?${query}` : ''}`;
 
-  const padding = size === 'xl' ? '1rem 2.5rem' : '0.875rem 2rem';
-  const fontSize = size === 'xl' ? '1.125rem' : '1rem';
+  const isXl = size === 'xl';
 
   return (
     <Link
       href={screenerHref}
-      className="btn-primary"
+      className="cta-btn"
       style={{
-        padding,
-        fontSize,
+        display: 'inline-flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '0.5rem',
+        padding: isXl ? '1rem 2.5rem' : '0.875rem 2rem',
+        fontSize: isXl ? '1.125rem' : '1rem',
         fontWeight: 700,
         letterSpacing: '-0.01em',
-        boxShadow: '0 4px 20px rgba(3,105,161,0.4)',
+        fontFamily: 'var(--font-display), -apple-system, sans-serif',
+        color: '#ffffff',
+        background: '#0d9488',
+        borderRadius: '12px',
+        border: 'none',
+        textDecoration: 'none',
+        boxShadow: '0 4px 14px rgba(13,148,136,0.35)',
+        transition: 'all 0.2s ease',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = '#0f766e';
+        e.currentTarget.style.transform = 'translateY(-1px)';
+        e.currentTarget.style.boxShadow = '0 6px 20px rgba(13,148,136,0.45)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = '#0d9488';
+        e.currentTarget.style.transform = 'translateY(0)';
+        e.currentTarget.style.boxShadow = '0 4px 14px rgba(13,148,136,0.35)';
       }}
     >
       {label}
-      <svg className="w-5 h-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M5 12h14M12 5l7 7-7 7" />
       </svg>
     </Link>
   );
