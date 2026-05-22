@@ -127,6 +127,7 @@ export default async function ComenzarPage({
   const c = isMedicareFocus ? localeContent.medicare : localeContent.default;
   const tf = await getTranslations({ locale, namespace: 'footer' });
   const tpmoDisclaimer = tf('medicare');
+  const tpmoMultiPlan = tf('tpmoMultiPlan');
 
   return (
     <div
@@ -179,6 +180,46 @@ export default async function ComenzarPage({
           </Link>
         </div>
       </header>
+
+      {/* TPMO disclaimer band — only on Medicare variant. Placed ABOVE the hero
+          so it's the first thing on screen for any mobile viewport. CMS guidance:
+          "clear and conspicuous" placement. Includes both the gov-not-endorsed
+          line AND the verbatim multi-plan disclosure (42 CFR § 422.2267(e)(41)). */}
+      {isMedicareFocus && (
+        <section
+          aria-label="Medicare TPMO disclaimer"
+          style={{
+            background: '#fff8e6',
+            borderBottom: '1px solid #f1d68a',
+            padding: '0.875rem 1.5rem',
+            textAlign: 'center',
+          }}
+        >
+          <div className="max-w-3xl mx-auto" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            <p
+              style={{
+                fontSize: '0.8rem',
+                lineHeight: 1.5,
+                color: '#6b5500',
+                margin: 0,
+                fontWeight: 600,
+              }}
+            >
+              {tpmoDisclaimer}
+            </p>
+            <p
+              style={{
+                fontSize: '0.8rem',
+                lineHeight: 1.5,
+                color: '#6b5500',
+                margin: 0,
+              }}
+            >
+              {tpmoMultiPlan}
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* Hero */}
       <main style={{ flex: 1 }}>
@@ -264,33 +305,6 @@ export default async function ComenzarPage({
             ))}
           </div>
         </section>
-
-        {/* Above-fold TPMO disclaimer — only on Medicare variant.
-            CMS guidance is "clear and conspicuous" placement on any Medicare-related marketing. */}
-        {isMedicareFocus && (
-          <section
-            aria-label="Medicare disclaimer"
-            style={{
-              background: '#fff8e6',
-              borderTop: '1px solid #f1d68a',
-              borderBottom: '1px solid #f1d68a',
-              padding: '1rem 1.5rem',
-              textAlign: 'center',
-            }}
-          >
-            <p
-              className="max-w-2xl mx-auto"
-              style={{
-                fontSize: '0.85rem',
-                lineHeight: 1.55,
-                color: '#6b5500',
-                margin: 0,
-              }}
-            >
-              {tpmoDisclaimer}
-            </p>
-          </section>
-        )}
 
         {/* Social proof stat */}
         <section

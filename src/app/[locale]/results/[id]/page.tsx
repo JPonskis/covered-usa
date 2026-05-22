@@ -66,6 +66,23 @@ export default async function ResultsPage({ params }: Props) {
     );
   }
 
+  // Detect Medicare flow from the focus signal we encoded into insurance_source
+  // when the screener was taken with ?focus=medicare ("medicare:<status>:<needs>").
+  const rawInsuranceSource = String(submission.insurance_source || '');
+  const isMedicareFlow = rawInsuranceSource.startsWith('medicare:');
+
+  // CRITICAL: normalize insurance_source before passing to checkEligibility.
+  // Otherwise the raw string "medicare:partAB:compareAdvantage" never matches the
+  // ScreenerInput enum (insuranceSource === 'medicare'), and downstream eligibility
+  // checks for ACA/Medicaid silently misfire — Medicare-flow users could land on
+  // a Medicaid-as-primary results page they never asked for.
+  const normalizedInsuranceSource: 'employer' | 'aca' | 'medicaid' | 'medicare' | 'none' | undefined =
+    isMedicareFlow
+      ? 'medicare'
+      : ((['employer', 'aca', 'medicaid', 'medicare', 'none'] as const).includes(rawInsuranceSource as 'employer' | 'aca' | 'medicaid' | 'medicare' | 'none')
+          ? (rawInsuranceSource as 'employer' | 'aca' | 'medicaid' | 'medicare' | 'none')
+          : undefined);
+
   // Results are stored in eligible_programs, but we need full ProgramResult objects.
   // Re-run eligibility check from stored submission data.
   const { checkEligibility } = await import('@/lib/eligibility');
@@ -78,7 +95,7 @@ export default async function ResultsPage({ params }: Props) {
     isPregnant: submission.is_pregnant,
     hasDisability: submission.has_disability,
     currentlyInsured: submission.currently_insured,
-    insuranceSource: submission.insurance_source || undefined,
+    insuranceSource: normalizedInsuranceSource,
     citizenshipStatus: submission.citizenship_status || undefined,
     isVeteran: submission.is_veteran,
     numChildren: submission.num_children,
@@ -101,17 +118,18 @@ export default async function ResultsPage({ params }: Props) {
   const aca = confirmed.find((r) => r.id === 'aca');
   const medicaid = confirmed.find((r) => r.id === 'medicaid');
 
-  if (medicare) primaryProgram = medicare;
+  if (isMedicareFlow) {
+    // Medicare-flow user always sees Medicare as primary, regardless of strict
+    // eligibility outcome (a 63-year-old "approaching" or even a 60-62 user still
+    // gets Medicare framing because that's what they clicked the ad for).
+    primaryProgram = medicare || results.find((r) => r.id === 'medicare') || null;
+  } else if (medicare) primaryProgram = medicare;
   else if (aca) primaryProgram = aca;
   else if (medicaid) primaryProgram = medicaid;
   else primaryProgram = confirmed[0] || eligible[0] || null;
 
   const secondaryPrograms = eligible.filter((r) => r !== primaryProgram);
   const notEligible = results.filter((r) => r.eligible === false);
-
-  // Detect Medicare flow from the focus signal we encoded into insurance_source
-  // when the screener was taken with ?focus=medicare.
-  const isMedicareFlow = String(submission.insurance_source || '').startsWith('medicare:');
 
   return (
     <ResultsClient

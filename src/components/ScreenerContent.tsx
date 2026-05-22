@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { getStateFromZip } from '@/lib/states/zipToState';
 
 type MedicareStatus = '' | 'none' | 'partAB' | 'advantage' | 'supplement' | 'unsure';
@@ -53,6 +54,21 @@ export default function ScreenerContent({ locale, focus }: { locale: string; foc
   const [validationError, setValidationError] = useState('');
 
   const otherLocale = locale === 'es' ? 'en' : 'es';
+
+  // Preserve focus + UTM params when toggling language so a Medicare-flow
+  // Spanish user clicking "EN" still lands on /en/screener?focus=medicare with
+  // their ad attribution intact (not back to the generic ACA screener).
+  const searchParams = useSearchParams();
+  const preservedQuery = (() => {
+    const passthrough = new URLSearchParams();
+    ['focus', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach((key) => {
+      const v = searchParams.get(key);
+      if (v) passthrough.set(key, v);
+    });
+    const q = passthrough.toString();
+    return q ? `?${q}` : '';
+  })();
+  const otherLocaleHref = `/${otherLocale}/screener${preservedQuery}`;
 
   const brandPrimary = 'var(--primary)';
   const brandPrimaryHex = '#0d9488';
@@ -107,15 +123,28 @@ export default function ScreenerContent({ locale, focus }: { locale: string; foc
           : 'ZIP code not recognized. Please double-check.';
       }
       const minAge = isMedicareFocus ? 60 : 18;
-      if (!formData.age || isNaN(Number(formData.age)) || Number(formData.age) < minAge || Number(formData.age) > 100) {
+      const ageNum = Number(formData.age);
+      const ageValid = formData.age && !isNaN(ageNum) && ageNum > 0 && ageNum <= 100;
+      if (!ageValid) {
+        // Generic input-validation error (covers empty, non-numeric, > 100)
+        return locale === 'es'
+          ? (isMedicareFocus
+              ? 'Por favor ingresa una edad válida (60–100).'
+              : 'Por favor ingresa una edad válida (18–100).')
+          : (isMedicareFocus
+              ? 'Please enter a valid age (60–100).'
+              : 'Please enter a valid age (18–100).');
+      }
+      if (ageNum < minAge) {
+        // Distinct from input-validation: tell them what to do if they're under the floor
         if (isMedicareFocus) {
           return locale === 'es'
-            ? 'Medicare comienza a los 65 años. Si tienes menos de 60, regresa al inicio para opciones de ACA.'
-            : 'Medicare starts at age 65. If you are under 60, go back to start for ACA options.';
+            ? 'Esta comparación de Medicare es para personas de 60 años o más. Para otras opciones de seguro médico, regresa al inicio.'
+            : 'This Medicare comparison is for ages 60 and up. For other health coverage options, go back to start.';
         }
         return locale === 'es'
-          ? 'Por favor ingresa una edad válida (18–100).'
-          : 'Please enter a valid age (18–100).';
+          ? 'Esta verificación es para adultos (18+). Por favor verifica tu edad.'
+          : 'This screener is for adults (18+). Please double-check your age.';
       }
     }
     if (step === 2) {
@@ -266,7 +295,7 @@ export default function ScreenerContent({ locale, focus }: { locale: string; foc
           </Link>
           <div className="flex items-center gap-3">
             <a
-              href={`/${otherLocale}/screener`}
+              href={otherLocaleHref}
               className="text-xs font-medium px-2.5 py-1 rounded-full border transition-all"
               style={{ borderColor: brandPrimaryHex, color: brandPrimaryHex, background: 'white' }}
             >

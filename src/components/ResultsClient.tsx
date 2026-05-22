@@ -152,9 +152,13 @@ function PhoneCaptureForm({
             className="mt-0.5"
           />
           <span className="text-xs text-[var(--text-muted)] leading-relaxed">
-            {es
-              ? 'Al marcar esta casilla, acepto ser contactado por un agente de seguros con licencia por teléfono o mensaje de texto. El consentimiento no es necesario para comprar un seguro.'
-              : 'By checking this box, I agree to be contacted by a licensed insurance agent via phone or text. Consent is not required to purchase insurance.'}
+            {isMedicareFlow
+              ? (es
+                  ? 'Al marcar esta casilla, doy mi consentimiento previo expreso por escrito para ser contactado por Help Plan Advocates y sus agentes Medicare con licencia, mediante llamadas telefónicas y mensajes de texto SMS, incluyendo mediante el uso de un sistema de marcación telefónica automática y mensajes pregrabados, al número proporcionado, sobre planes Medicare Advantage, Medicare Supplement, y Parte D — incluso si mi número está en una lista de No Llamar. Responda STOP para cancelar. Pueden aplicarse tarifas de mensajes y datos. Mi consentimiento no es una condición para comprar ningún seguro.'
+                  : 'By checking this box, I give my prior express written consent to be contacted by Help Plan Advocates and its licensed Medicare agents via phone calls and SMS text messages, including through the use of an automatic telephone dialing system and prerecorded messages, at the number provided, regarding Medicare Advantage, Medicare Supplement, and Part D plans — even if my number is on a Do-Not-Call list. Reply STOP to opt out. Message and data rates may apply. Consent is not a condition of purchasing any insurance.')
+              : (es
+                  ? 'Al marcar esta casilla, doy mi consentimiento previo expreso por escrito para ser contactado por Help Plan Advocates, una agencia de seguros con licencia, mediante llamadas telefónicas y mensajes de texto SMS, incluyendo mediante el uso de un sistema de marcación telefónica automática, al número proporcionado. Responda STOP para cancelar. Pueden aplicarse tarifas de mensajes y datos. Mi consentimiento no es una condición para comprar ningún seguro.'
+                  : 'By checking this box, I give my prior express written consent to be contacted by Help Plan Advocates, a licensed insurance agency, by phone calls and SMS text messages, including through the use of an automatic telephone dialing system, at the phone number provided. Reply STOP to opt out. Message and data rates may apply. Consent is not a condition of purchasing any insurance.')}
           </span>
         </label>
 

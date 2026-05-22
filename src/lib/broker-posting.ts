@@ -45,6 +45,11 @@ export interface ScreenerRow {
       estimatedValue?: number;
     }>;
   } | null;
+  // Medicare-flow only: human-readable status + needs labels mapped from enum codes
+  medicareDetails?: {
+    statusLabel: string;
+    needsLabel: string;
+  } | null;
 }
 
 export function buildScreenerNote(opts: {
@@ -85,7 +90,12 @@ export function buildScreenerNote(opts: {
 
     if (screener.employment_status) lines.push(`Employment: ${screener.employment_status}`);
 
-    if (screener.insurance_status) {
+    if (screener.medicareDetails) {
+      lines.push('');
+      lines.push('-- MEDICARE STATUS --');
+      lines.push(`Current coverage: ${screener.medicareDetails.statusLabel}`);
+      lines.push(`Looking for: ${screener.medicareDetails.needsLabel}`);
+    } else if (screener.insurance_status) {
       lines.push('');
       lines.push('-- INSURANCE --');
       lines.push(`Currently: ${screener.insurance_status}`);

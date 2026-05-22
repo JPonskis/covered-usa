@@ -87,11 +87,23 @@ export async function POST(req: NextRequest) {
         ? 'medicare'
         : (programs.includes('medicare') ? 'medicare' : 'health');
 
-      // Insurance status note: for Medicare flow describe their Medicare situation;
-      // for ACA flow use the original insured/uninsured framing.
-      const insuranceStatusForNote = isMedicareFlow
-        ? `Medicare status: ${medicareStatus || 'unknown'} | Needs help with: ${medicareNeeds || 'unspecified'}`
-        : (sub?.currently_insured ? `insured (${sub?.insurance_source || 'source unknown'})` : 'uninsured');
+      // Map Medicare enum codes to human-readable labels for Aaron's agents.
+      // These match the screener labels the user saw, so the agent can reference them in conversation.
+      const MEDICARE_STATUS_LABELS: Record<string, string> = {
+        none: 'Not enrolled in Medicare yet',
+        partAB: 'Original Medicare (Part A and/or B)',
+        advantage: 'Medicare Advantage (Part C)',
+        supplement: 'Original Medicare + Medicare Supplement (Medigap)',
+        unsure: 'Not sure',
+      };
+      const MEDICARE_NEEDS_LABELS: Record<string, string> = {
+        newToMedicare: 'New to Medicare (or turning 65 soon)',
+        compareAdvantage: 'Comparing Medicare Advantage plans',
+        compareSupplement: 'Comparing Medicare Supplement (Medigap) plans',
+        partD: 'Help with prescription drug (Part D) coverage',
+        lostCoverage: 'Lost or losing current coverage',
+        other: 'Other / not sure',
+      };
 
       const screenerForNote: ScreenerRow = {
         state: sub?.state ?? null,
@@ -101,12 +113,20 @@ export async function POST(req: NextRequest) {
         household_size: isMedicareFlow ? null : (sub?.household_size ?? null),
         income: isMedicareFlow ? null : (sub?.annual_income ?? null),
         employment_status: isMedicareFlow ? null : (sub?.employment_status ?? null),
-        insurance_status: insuranceStatusForNote,
+        insurance_status: isMedicareFlow
+          ? null
+          : (sub?.currently_insured ? `insured (${sub?.insurance_source || 'source unknown'})` : 'uninsured'),
         is_pregnant: isMedicareFlow ? null : (sub?.is_pregnant ?? null),
         has_disability: isMedicareFlow ? null : (sub?.has_disability ?? null),
         is_veteran: isMedicareFlow ? null : (sub?.is_veteran ?? null),
         locale: language,
         results: { programs: programs.map((id: string) => ({ id, eligible: true })) },
+        medicareDetails: isMedicareFlow
+          ? {
+              statusLabel: MEDICARE_STATUS_LABELS[medicareStatus || ''] || (medicareStatus || 'unknown'),
+              needsLabel: MEDICARE_NEEDS_LABELS[medicareNeeds || ''] || (medicareNeeds || 'unspecified'),
+            }
+          : null,
       };
 
       const notes = buildScreenerNote({
