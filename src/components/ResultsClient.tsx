@@ -343,7 +343,7 @@ export default function ResultsClient({
                   href={`https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=benefitsusa&utm_content=${submissionId}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] font-semibold text-sm hover:bg-[var(--primary)] hover:text-white transition-all"
+                  className="cta-btn w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] font-semibold text-sm hover:bg-[var(--primary)] hover:text-white transition-all"
                 >
                   {es ? 'Aplicar yo mismo en HealthSherpa' : 'Apply Yourself on HealthSherpa'}
                   <span className="text-xs opacity-70">↗</span>
