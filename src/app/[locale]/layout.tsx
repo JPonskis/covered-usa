@@ -1,6 +1,7 @@
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { headers } from 'next/headers';
 import { routing } from '@/i18n/routing';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -32,6 +33,24 @@ export default async function LocaleLayout({
   const tf = await getTranslations({ locale, namespace: 'footer' });
   const tl = await getTranslations({ locale, namespace: 'layout' });
   const otherLocale = locale === 'en' ? 'es' : 'en';
+
+  // Hide site nav + site footer on ad-landing routes (/comenzar) so users
+  // see ONLY the landing page's own minimal chrome. Middleware exposes
+  // the pathname via x-pathname header. Note: route group (landing) parent
+  // layouts still apply per Next.js routing — we explicitly suppress them.
+  const h = await headers();
+  const pathname = h.get('x-pathname') || '';
+  const isAdLandingRoute = /\/(comenzar)(\/|$)/.test(pathname);
+
+  if (isAdLandingRoute) {
+    return (
+      <NextIntlClientProvider>
+        <MetaPixel />
+        <AnalyticsTracker />
+        {children}
+      </NextIntlClientProvider>
+    );
+  }
 
   return (
     <NextIntlClientProvider>

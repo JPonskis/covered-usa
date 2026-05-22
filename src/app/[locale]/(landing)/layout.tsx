@@ -2,8 +2,9 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
-import AnalyticsTracker from '@/components/AnalyticsTracker';
-import MetaPixel from '@/components/MetaPixel';
+// Note: MetaPixel + AnalyticsTracker are mounted by [locale]/layout.tsx
+// (which detects ad-landing routes and skips the site chrome but still
+// mounts trackers). No need to mount them again here.
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -24,11 +25,5 @@ export default async function LandingLayout({
 
   setRequestLocale(locale);
 
-  return (
-    <NextIntlClientProvider>
-      <MetaPixel />
-      <AnalyticsTracker />
-      {children}
-    </NextIntlClientProvider>
-  );
+  return <NextIntlClientProvider>{children}</NextIntlClientProvider>;
 }
