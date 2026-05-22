@@ -32,13 +32,13 @@ export function CtaButton({ locale, label, size = 'xl' }: CtaButtonProps) {
   return (
     <Link
       href={screenerHref}
-      className="cta-btn"
+      className="cta-btn w-full sm:w-auto"
       style={{
         display: 'inline-flex',
         alignItems: 'center',
         justifyContent: 'center',
         gap: '0.5rem',
-        padding: isXl ? '1rem 2.5rem' : '0.875rem 2rem',
+        padding: isXl ? '1.125rem 3rem' : '0.875rem 2rem',
         fontSize: isXl ? '1.125rem' : '1rem',
         fontWeight: 700,
         letterSpacing: '-0.01em',
@@ -48,6 +48,7 @@ export function CtaButton({ locale, label, size = 'xl' }: CtaButtonProps) {
         borderRadius: '12px',
         border: 'none',
         textDecoration: 'none',
+        maxWidth: '24rem',
         boxShadow: '0 4px 14px rgba(13,148,136,0.35)',
         transition: 'all 0.2s ease',
       }}

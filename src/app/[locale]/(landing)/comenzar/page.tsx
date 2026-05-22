@@ -270,28 +270,28 @@ export default async function ComenzarPage({
       )}
 
       <main style={{ flex: 1 }}>
-        {/* Hero — light background, CTA pops */}
+        {/* Hero — warm light background, CTA pops */}
         <section
           style={{
-            background: '#ffffff',
+            background: 'linear-gradient(180deg, #fafaf9 0%, #ffffff 100%)',
             padding: '3.5rem 1.5rem 3rem',
             textAlign: 'center',
             position: 'relative',
             overflow: 'hidden',
           }}
         >
-          {/* Subtle decorative background */}
+          {/* Subtle warm decorative glow */}
           <div
             aria-hidden="true"
             style={{
               position: 'absolute',
-              top: '-120px',
+              top: '-80px',
               left: '50%',
               transform: 'translateX(-50%)',
-              width: '600px',
-              height: '600px',
+              width: '500px',
+              height: '500px',
               borderRadius: '50%',
-              background: 'radial-gradient(circle, rgba(13,148,136,0.05) 0%, transparent 70%)',
+              background: 'radial-gradient(circle, rgba(13,148,136,0.04) 0%, rgba(253,248,243,0.5) 50%, transparent 70%)',
               pointerEvents: 'none',
             }}
           />
