@@ -1,14 +1,19 @@
-// Federally Facilitated Marketplace (FFM) states where Help Plan Advocates
-// can handle ACA enrollment. ACA lead capture only shows for these states.
-// Medicare leads are accepted in almost all states (no filtering needed).
+// States where Agent Boost Marketing (Help Plan Advocates) accepts ACA leads.
+// Per Aaron Allan email 2026-05-20. Medicare leads are accepted in all 50 states
+// (verified via Agent Boost's "licensed in all 50 states" marketing).
+//
+// ACA lead capture / "Get Expert Help" CTA only shows for these states.
+// Medicare lead capture has no state restriction.
 
 export const FFM_STATES = new Set([
-  'AL', 'AK', 'AZ', 'AR', 'DE', 'FL', 'GA', 'HI',
-  'IL', 'IN', 'IA', 'KS', 'LA', 'MI', 'MS', 'MO',
-  'MT', 'NE', 'NH', 'NC', 'ND', 'OH', 'OK', 'OR',
-  'SC', 'SD', 'TN', 'TX', 'UT', 'VA', 'WV', 'WI', 'WY',
+  'AL', 'AR', 'AZ', 'FL', 'GA', 'IA', 'IN', 'KS',
+  'MI', 'MO', 'MS', 'NC', 'NE', 'OH', 'OK', 'SC',
+  'TN', 'TX',
 ]);
 
 export function isFFMState(stateCode: string): boolean {
   return FFM_STATES.has(stateCode.toUpperCase());
 }
+
+// Semantic alias — call this when gating ACA lead capture
+export const isBrokerAcaState = isFFMState;
