@@ -30,7 +30,7 @@ These are national averages. Your actual 2026 premium depends on the specific pl
 
 If your 2024 modified adjusted gross income (MAGI) exceeded $109,000 as a single filer or $218,000 as a joint filer, you pay an additional surcharge on top of your plan premium in 2026. This is called the Income-Related Monthly Adjustment Amount, or IRMAA. The SSA uses your 2024 tax return to calculate 2026 IRMAA liability.
 
-**2026 Medicare Part D IRMAA Surcharges -- Individual Filers**
+**2026 Medicare Part D IRMAA Surcharges: Individual Filers**
 
 | 2024 Individual MAGI | Monthly Part D Surcharge (2026) |
 |---|---|
@@ -41,7 +41,7 @@ If your 2024 modified adjusted gross income (MAGI) exceeded $109,000 as a single
 | $205,001 to $499,999 | +$83.30 |
 | $500,000 or more | +$91.00 |
 
-**2026 Medicare Part D IRMAA Surcharges -- Married Filing Jointly**
+**2026 Medicare Part D IRMAA Surcharges: Married Filing Jointly**
 
 | 2024 Joint MAGI | Monthly Part D Surcharge (2026) |
 |---|---|
@@ -56,7 +56,7 @@ Source: [IRMAA Group 2026 Bracket Data](https://www.irmaagroup.com/brackets). Th
 
 ## 2026 Part D Deductible
 
-The maximum allowable Part D deductible in 2026 is **$615 per year**. Not every plan charges this amount -- some plans have a lower deductible, and some have no deductible at all, often with a slightly higher monthly premium to compensate.
+The maximum allowable Part D deductible in 2026 is **$615 per year**. Not every plan charges this amount. Some plans have a lower deductible, and some have no deductible at all, often with a slightly higher monthly premium to compensate.
 
 During the deductible phase, you pay 100% of the cost of covered drugs until you reach your plan's deductible threshold. Low-income enrollees receiving Extra Help (see below) typically have no deductible.
 
@@ -66,7 +66,7 @@ The single most important change to Medicare Part D in recent years is the out-o
 
 Once your cumulative out-of-pocket spending on covered Part D drugs reaches $2,100 in a calendar year, you pay **$0** for all covered prescription drugs for the rest of the year. This applies whether you are buying generics or expensive brand-name medications.
 
-The 2026 cap is a modest increase from the $2,000 cap that applied in 2025 (the first year the cap was in place). Before 2025, there was no hard cap -- costs could run into tens of thousands of dollars in what was called the catastrophic coverage phase.
+The 2026 cap is a modest increase from the $2,000 cap that applied in 2025 (the first year the cap was in place). Before 2025, there was no hard cap, and costs could run into tens of thousands of dollars in what was called the catastrophic coverage phase.
 
 ### What Counts Toward the $2,100 Cap?
 
@@ -87,7 +87,7 @@ Part D coverage no longer has the old "donut hole" coverage gap that confused mi
 | Initial coverage phase (after deductible, up to $2,100 OOP) | 25% coinsurance |
 | Catastrophic phase (after $2,100 OOP) | $0 |
 
-During the initial coverage phase, your plan covers 65% of costs and drug manufacturers cover 10% of brand-name drug costs. Once you hit $2,100 out-of-pocket, you enter catastrophic coverage where Medicare picks up 20%, your plan covers 60%, and manufacturers cover 20% on brands -- but you pay nothing.
+During the initial coverage phase, your plan covers 65% of costs and drug manufacturers cover 10% of brand-name drug costs. Once you hit $2,100 out-of-pocket, you enter catastrophic coverage where Medicare picks up 20%, your plan covers 60%, and manufacturers cover 20% on brands, but you pay nothing.
 
 ## The Medicare Donut Hole in 2026: It Is Gone
 
@@ -112,7 +112,7 @@ Source: [Medicare Extra Help 2026 via DisabilityExchange.org](https://disability
 
 ### Extra Help Resource Limits 2026
 
-In addition to income, your countable resources (savings, investments -- not your home or car) must be at or below:
+In addition to income, your countable resources (savings, investments, not your home or car) must be at or below:
 
 | Filing Status | 2026 Resource Limit |
 |---|---|
@@ -142,7 +142,7 @@ If you are not auto-enrolled but think you may qualify, you need to apply separa
 
 ## Extra Help and Medicare Savings Programs: Double Benefits
 
-Medicare beneficiaries with low incomes may qualify for both Extra Help on Part D AND a Medicare Savings Program (MSP) that helps cover Part B premiums and cost-sharing. The four MSP categories -- QMB, SLMB, QI, and QDWI -- have income limits at or below 200% of the Federal Poverty Level.
+Medicare beneficiaries with low incomes may qualify for both Extra Help on Part D AND a Medicare Savings Program (MSP) that helps cover Part B premiums and cost-sharing. The four MSP categories (QMB, SLMB, QI, and QDWI) have income limits at or below 200% of the Federal Poverty Level.
 
 If you qualify for a Medicare Savings Program, you are automatically enrolled in Extra Help as well. Check your eligibility at [CoveredUSA](/screener) to see whether you qualify for both programs.
 
@@ -159,10 +159,10 @@ If you qualify for a Medicare Savings Program, you are automatically enrolled in
 
 1. **Confirm Medicare eligibility.** You must be enrolled in Medicare Part A and/or Part B before you can join a Part D plan.
 2. **Compare plans at Medicare Plan Finder.** Go to [Medicare.gov/plan-compare](https://www.medicare.gov/plan-compare) and enter your ZIP code and the medications you take. The tool shows 2026 premiums, deductibles, and estimated annual drug costs for every plan in your area.
-3. **Check your drugs are on the formulary.** Every Part D plan has a formulary (list of covered drugs). Make sure your prescriptions are covered -- and at what tier -- before selecting a plan.
+3. **Check your drugs are on the formulary.** Every Part D plan has a formulary (list of covered drugs). Make sure your prescriptions are covered (and at what tier) before selecting a plan.
 4. **Apply online, by phone, or through a licensed agent.** You can enroll directly at Medicare.gov, call 1-800-MEDICARE (1-800-633-4227), or work with a licensed insurance agent at no cost to you.
 5. **Apply for Extra Help separately if needed.** Apply at [SSA.gov/extrahelp](https://www.ssa.gov/extrahelp/) or call the Social Security Administration at 1-800-772-1213.
-6. **Verify your enrollment confirmation.** After enrolling, you will receive a confirmation and a new insurance card. Keep this card -- you will need it at the pharmacy.
+6. **Verify your enrollment confirmation.** After enrolling, you will receive a confirmation and a new insurance card. Keep this card. You will need it at the pharmacy.
 
 ### Documents You May Need
 
@@ -191,9 +191,9 @@ Choosing the right Part D plan requires comparing your specific drugs, doses, an
 
 - **SHIP (State Health Insurance Assistance Program):** Free, unbiased Medicare counseling from trained counselors in every state. Find your local SHIP at [shiphelp.org](https://www.shiphelp.org).
 - **Medicare.gov Plan Compare tool:** Compare real 2026 costs at [Medicare.gov](https://www.medicare.gov/plan-compare).
-- **CoveredUSA Screener:** Not sure which Medicare programs you qualify for, including Extra Help and Medicare Savings Programs? [Check your eligibility at CoveredUSA](/screener) -- it takes 2 minutes and is free.
+- **CoveredUSA Screener:** Not sure which Medicare programs you qualify for, including Extra Help and Medicare Savings Programs? [Check your eligibility at CoveredUSA](/screener). It takes 2 minutes and is free.
 
-Check your eligibility now at CoveredUSA -- it takes 2 minutes.
+Check your eligibility now at CoveredUSA. It takes 2 minutes.
 
 ## Frequently Asked Questions
 
