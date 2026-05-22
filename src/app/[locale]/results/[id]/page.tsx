@@ -109,6 +109,10 @@ export default async function ResultsPage({ params }: Props) {
   const secondaryPrograms = eligible.filter((r) => r !== primaryProgram);
   const notEligible = results.filter((r) => r.eligible === false);
 
+  // Detect Medicare flow from the focus signal we encoded into insurance_source
+  // when the screener was taken with ?focus=medicare.
+  const isMedicareFlow = String(submission.insurance_source || '').startsWith('medicare:');
+
   return (
     <ResultsClient
       submissionId={id}
@@ -118,6 +122,7 @@ export default async function ResultsPage({ params }: Props) {
       primaryProgram={primaryProgram}
       secondaryPrograms={secondaryPrograms}
       notEligible={notEligible}
+      isMedicareFlow={isMedicareFlow}
     />
   );
 }

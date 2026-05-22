@@ -9,9 +9,12 @@ export const metadata: Metadata = {
 
 interface Props {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ focus?: string }>;
 }
 
-export default async function ScreenerPage({ params }: Props) {
+export default async function ScreenerPage({ params, searchParams }: Props) {
   const { locale } = await params;
-  return <ScreenerContent locale={locale} />;
+  const { focus } = await searchParams;
+  const focusValue = focus === 'medicare' ? 'medicare' : undefined;
+  return <ScreenerContent locale={locale} focus={focusValue} />;
 }

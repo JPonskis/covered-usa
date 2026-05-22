@@ -13,15 +13,18 @@ export interface ResultsClientProps {
   primaryProgram: ProgramResult | null;
   secondaryPrograms: ProgramResult[];
   notEligible: ProgramResult[];
+  isMedicareFlow?: boolean;
 }
 
 /* ---- Phone Capture Form ---- */
 function PhoneCaptureForm({
   submissionId,
   locale,
+  isMedicareFlow = false,
 }: {
   submissionId: string;
   locale: string;
+  isMedicareFlow?: boolean;
 }) {
   const es = locale === 'es';
   const [phone, setPhone] = useState('');
@@ -102,12 +105,18 @@ function PhoneCaptureForm({
   return (
     <div className="bg-[var(--cream)] rounded-xl p-5 mt-6">
       <h3 className="text-base font-semibold text-[var(--text-primary)] mb-1">
-        {es ? '¿Quieres ayuda gratuita para inscribirte?' : 'Want help choosing a health plan?'}
+        {isMedicareFlow
+          ? (es ? '¿Quieres ayuda comparando planes Medicare?' : 'Want help comparing Medicare plans?')
+          : (es ? '¿Quieres ayuda gratuita para inscribirte?' : 'Want help choosing a health plan?')}
       </h3>
       <p className="text-sm text-[var(--text-secondary)] mb-4">
-        {es
-          ? 'Un agente con licencia puede comparar tus opciones, asegurar que tus subsidios se apliquen correctamente y manejar la inscripción por ti. Este servicio es 100% gratuito, los agentes son pagados por las compañías de seguros, no por ti.'
-          : 'A licensed agent can help you compare marketplace plans, make sure any subsidies are applied correctly, and handle enrollment for you. This service is 100% free to you — agents are paid by insurance companies, not by you.'}
+        {isMedicareFlow
+          ? (es
+              ? 'Un agente Medicare con licencia puede comparar planes Medicare Advantage, Medicare Supplement y Parte D en tu área — sin costo para ti. Sin presión, sin compromiso.'
+              : 'A licensed Medicare agent can compare Medicare Advantage, Medicare Supplement, and Part D plans in your area — at no cost to you. No pressure, no commitment.')
+          : (es
+              ? 'Un agente con licencia puede comparar tus opciones, asegurar que tus subsidios se apliquen correctamente y manejar la inscripción por ti. Este servicio es 100% gratuito, los agentes son pagados por las compañías de seguros, no por ti.'
+              : 'A licensed agent can help you compare marketplace plans, make sure any subsidies are applied correctly, and handle enrollment for you. This service is 100% free to you — agents are paid by insurance companies, not by you.')}
       </p>
 
       {/* Trust badges */}
@@ -168,6 +177,20 @@ function PhoneCaptureForm({
             : 'Get Free Guidance'}
         </button>
       </form>
+
+      {/* Secondary "Or call now" path — visible on all flows but especially valuable for 65+ Medicare audience */}
+      <div className="mt-4 pt-4 border-t border-[var(--border-light)] text-center">
+        <p className="text-xs text-[var(--text-muted)] mb-1">
+          {es ? 'O llama ahora directamente:' : 'Or call directly now:'}
+        </p>
+        <a
+          href="tel:8558192471"
+          className="text-base font-semibold"
+          style={{ color: 'var(--primary)' }}
+        >
+          (855) 819-2471
+        </a>
+      </div>
     </div>
   );
 }
@@ -192,14 +215,17 @@ export default function ResultsClient({
   primaryProgram,
   secondaryPrograms,
   notEligible,
+  isMedicareFlow = false,
 }: ResultsClientProps) {
   const es = locale === 'es';
   const showPhoneCapture =
-    primaryProgram &&
-    ['aca', 'medicare'].includes(primaryProgram.id);
+    isMedicareFlow ||
+    (primaryProgram && ['aca', 'medicare'].includes(primaryProgram.id));
   const showClinics =
-    primaryProgram && primaryProgram.id === 'medicaid';
-  const showHealthSherpa = primaryProgram && primaryProgram.id === 'aca';
+    !isMedicareFlow && primaryProgram && primaryProgram.id === 'medicaid';
+  // HealthSherpa is ACA-only. Medicare flows get a Medicare.gov self-serve link instead.
+  const showHealthSherpa = !isMedicareFlow && primaryProgram && primaryProgram.id === 'aca';
+  const showMedicareGov = isMedicareFlow || (primaryProgram && primaryProgram.id === 'medicare');
 
   // Language toggle URL
   const altLocale = es ? 'en' : 'es';
@@ -292,7 +318,7 @@ export default function ResultsClient({
 
             {/* Phone Capture for ACA or Medicare */}
             {showPhoneCapture && (
-              <PhoneCaptureForm submissionId={submissionId} locale={locale} />
+              <PhoneCaptureForm submissionId={submissionId} locale={locale} isMedicareFlow={isMedicareFlow} />
             )}
 
             {/* HealthSherpa self-apply for ACA — secondary button below phone capture */}
@@ -312,6 +338,28 @@ export default function ResultsClient({
                   className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] font-semibold text-sm hover:bg-[var(--primary)] hover:text-white transition-all"
                 >
                   {es ? 'Aplicar yo mismo en HealthSherpa' : 'Apply Yourself on HealthSherpa'}
+                  <span className="text-xs opacity-70">↗</span>
+                </a>
+              </div>
+            )}
+
+            {/* Medicare.gov self-apply for Medicare flow */}
+            {showMedicareGov && (
+              <div className="mt-3">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-1 h-px bg-[var(--border-light)]" />
+                  <span className="text-xs text-[var(--text-muted)] font-medium">
+                    {es ? 'o' : 'or'}
+                  </span>
+                  <div className="flex-1 h-px bg-[var(--border-light)]" />
+                </div>
+                <a
+                  href="https://www.medicare.gov/plan-compare"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 border-[var(--primary)] text-[var(--primary)] font-semibold text-sm hover:bg-[var(--primary)] hover:text-white transition-all"
+                >
+                  {es ? 'Comparar planes en Medicare.gov' : 'Compare plans on Medicare.gov'}
                   <span className="text-xs opacity-70">↗</span>
                 </a>
               </div>

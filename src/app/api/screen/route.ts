@@ -56,14 +56,29 @@ export async function POST(req: NextRequest) {
       utmMedium,
       utmCampaign,
       referrerUrl,
+      focus,
+      medicareStatus,
+      medicareNeeds,
     } = body;
+
+    const isMedicareFocus = focus === 'medicare';
 
     const state = getStateFromZip(String(zipCode)) || 'TX';
 
     const parsedAge = parseInt(String(age), 10);
-    const parsedHouseholdSize = parseInt(String(householdSize), 10);
-    const parsedNumChildren = parseInt(String(numChildren || 0), 10);
-    const parsedIncome = Number(String(annualIncome || '0').replace(/,/g, ''));
+    // Medicare flow doesn't collect household/income/flags — provide defaults
+    const parsedHouseholdSize = isMedicareFocus ? 1 : parseInt(String(householdSize), 10);
+    const parsedNumChildren = isMedicareFocus ? 0 : parseInt(String(numChildren || 0), 10);
+    const parsedIncome = isMedicareFocus ? 0 : Number(String(annualIncome || '0').replace(/,/g, ''));
+
+    // For Medicare flow: derive currentlyInsured + insuranceSource from medicareStatus
+    const medicareEnrolled = ['partAB', 'advantage', 'supplement'].includes(String(medicareStatus));
+    const effectiveCurrentlyInsured = isMedicareFocus ? medicareEnrolled : Boolean(currentlyInsured);
+    // Encode focus + Medicare details into insurance_source so /api/lead can detect downstream
+    // (avoids needing a new schema column). Format: "medicare:<status>:<needs>"
+    const effectiveInsuranceSource = isMedicareFocus
+      ? `medicare:${medicareStatus || 'unsure'}:${medicareNeeds || 'other'}`
+      : (insuranceSource || null);
 
     const input = {
       state,
@@ -71,16 +86,26 @@ export async function POST(req: NextRequest) {
       householdSize: parsedHouseholdSize,
       annualIncome: parsedIncome,
       employmentStatus: 'employed' as const,
-      isPregnant: Boolean(isPregnant),
-      hasDisability: Boolean(hasDisability),
-      currentlyInsured: Boolean(currentlyInsured),
-      insuranceSource: insuranceSource || undefined,
-      isVeteran: Boolean(isVeteran),
+      isPregnant: isMedicareFocus ? false : Boolean(isPregnant),
+      hasDisability: isMedicareFocus ? false : Boolean(hasDisability),
+      currentlyInsured: effectiveCurrentlyInsured,
+      insuranceSource: isMedicareFocus ? 'medicare' : (insuranceSource || undefined),
+      isVeteran: isMedicareFocus ? false : Boolean(isVeteran),
       numChildren: parsedNumChildren,
       language: language || 'en',
     };
 
     const results = checkEligibility(input);
+
+    // For Medicare flow, force 'medicare' into eligible_programs even if age 60-64
+    // (so downstream /api/lead recognizes this as a Medicare lead and Aaron's team
+    // gets a Medicare-tagged lead regardless of strict eligibility cutoff).
+    const eligibleProgramIds = results.programs
+      .filter((p: { eligible: boolean | string }) => p.eligible === true || p.eligible === 'maybe')
+      .map((p: { id: string }) => p.id);
+    if (isMedicareFocus && !eligibleProgramIds.includes('medicare')) {
+      eligibleProgramIds.unshift('medicare');
+    }
 
     const { data, error } = await supabaseAdmin
       .from('covered_usa_submissions')
@@ -91,17 +116,15 @@ export async function POST(req: NextRequest) {
         household_size: parsedHouseholdSize,
         annual_income: parsedIncome,
         employment_status: 'employed',
-        is_pregnant: Boolean(isPregnant),
-        has_disability: Boolean(hasDisability),
-        currently_insured: Boolean(currentlyInsured),
-        insurance_source: insuranceSource || null,
-        is_veteran: Boolean(isVeteran),
+        is_pregnant: isMedicareFocus ? false : Boolean(isPregnant),
+        has_disability: isMedicareFocus ? false : Boolean(hasDisability),
+        currently_insured: effectiveCurrentlyInsured,
+        insurance_source: effectiveInsuranceSource,
+        is_veteran: isMedicareFocus ? false : Boolean(isVeteran),
         num_children: parsedNumChildren,
         first_name: firstName || null,
         email: email || null,
-        eligible_programs: results.programs
-          .filter(p => p.eligible === true || p.eligible === 'maybe')
-          .map(p => p.id),
+        eligible_programs: eligibleProgramIds,
         language: language || 'en',
         utm_source: utmSource || null,
         utm_medium: utmMedium || null,

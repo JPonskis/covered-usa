@@ -13,14 +13,18 @@ export function CtaButton({ locale, label, size = 'xl' }: CtaButtonProps) {
   const searchParams = useSearchParams();
 
   const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
-  const utmParams = new URLSearchParams();
+  const passthroughParams = new URLSearchParams();
 
   utmKeys.forEach((key) => {
     const val = searchParams.get(key);
-    if (val) utmParams.set(key, val);
+    if (val) passthroughParams.set(key, val);
   });
 
-  const query = utmParams.toString();
+  // Forward focus=medicare so the screener can swap to its Medicare-tailored question set
+  const focus = searchParams.get('focus');
+  if (focus === 'medicare') passthroughParams.set('focus', 'medicare');
+
+  const query = passthroughParams.toString();
   const screenerHref = `/${locale}/screener${query ? `?${query}` : ''}`;
 
   const padding = size === 'xl' ? '1rem 2.5rem' : '0.875rem 2rem';

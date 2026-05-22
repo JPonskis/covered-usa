@@ -4,6 +4,9 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { getStateFromZip } from '@/lib/states/zipToState';
 
+type MedicareStatus = '' | 'none' | 'partAB' | 'advantage' | 'supplement' | 'unsure';
+type MedicareNeeds = '' | 'newToMedicare' | 'compareAdvantage' | 'compareSupplement' | 'partD' | 'lostCoverage' | 'other';
+
 interface FormData {
   zipCode: string;
   age: string;
@@ -17,6 +20,9 @@ interface FormData {
   insuranceSource: string;
   firstName: string;
   email: string;
+  // Medicare-flow only
+  medicareStatus: MedicareStatus;
+  medicareNeeds: MedicareNeeds;
 }
 
 const initialFormData: FormData = {
@@ -32,11 +38,14 @@ const initialFormData: FormData = {
   insuranceSource: '',
   firstName: '',
   email: '',
+  medicareStatus: '',
+  medicareNeeds: '',
 };
 
 const TOTAL_STEPS = 3;
 
-export default function ScreenerContent({ locale }: { locale: string }) {
+export default function ScreenerContent({ locale, focus }: { locale: string; focus?: 'medicare' }) {
+  const isMedicareFocus = focus === 'medicare';
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -97,17 +106,36 @@ export default function ScreenerContent({ locale }: { locale: string }) {
           ? 'Código postal no reconocido. Por favor verifica.'
           : 'ZIP code not recognized. Please double-check.';
       }
-      if (!formData.age || isNaN(Number(formData.age)) || Number(formData.age) < 18 || Number(formData.age) > 100) {
+      const minAge = isMedicareFocus ? 60 : 18;
+      if (!formData.age || isNaN(Number(formData.age)) || Number(formData.age) < minAge || Number(formData.age) > 100) {
+        if (isMedicareFocus) {
+          return locale === 'es'
+            ? 'Medicare comienza a los 65 años. Si tienes menos de 60, regresa al inicio para opciones de ACA.'
+            : 'Medicare starts at age 65. If you are under 60, go back to start for ACA options.';
+        }
         return locale === 'es'
           ? 'Por favor ingresa una edad válida (18–100).'
           : 'Please enter a valid age (18–100).';
       }
     }
     if (step === 2) {
-      if (!formData.annualIncome || isNaN(Number(formData.annualIncome.replace(/,/g, ''))) || Number(formData.annualIncome.replace(/,/g, '')) <= 0) {
-        return locale === 'es'
-          ? 'Por favor ingresa el ingreso anual de tu hogar.'
-          : 'Please enter your annual household income.';
+      if (isMedicareFocus) {
+        if (!formData.medicareStatus) {
+          return locale === 'es'
+            ? 'Por favor selecciona tu situación actual con Medicare.'
+            : 'Please select your current Medicare situation.';
+        }
+        if (!formData.medicareNeeds) {
+          return locale === 'es'
+            ? 'Por favor selecciona con qué necesitas ayuda.'
+            : 'Please select what you need help with.';
+        }
+      } else {
+        if (!formData.annualIncome || isNaN(Number(formData.annualIncome.replace(/,/g, ''))) || Number(formData.annualIncome.replace(/,/g, '')) <= 0) {
+          return locale === 'es'
+            ? 'Por favor ingresa el ingreso anual de tu hogar.'
+            : 'Please enter your annual household income.';
+        }
       }
     }
     if (step === 3) {
@@ -181,6 +209,9 @@ export default function ScreenerContent({ locale }: { locale: string }) {
         utmCampaign: attribution?.utmCampaign || null,
         referrerUrl: attribution?.referrerUrl || null,
         landingPage: attribution?.landingPage || null,
+        focus: isMedicareFocus ? 'medicare' : null,
+        medicareStatus: isMedicareFocus ? formData.medicareStatus : null,
+        medicareNeeds: isMedicareFocus ? formData.medicareNeeds : null,
       };
 
       const res = await fetch('/api/screen', {
@@ -250,7 +281,9 @@ export default function ScreenerContent({ locale }: { locale: string }) {
         {/* Page title */}
         <div className="mb-6">
           <h1 className="text-2xl font-bold text-[var(--text-primary)]">
-            {locale === 'es' ? 'Verificador de Cobertura de Salud' : 'Health Coverage Screener'}
+            {isMedicareFocus
+              ? (locale === 'es' ? 'Comparador de Planes Medicare' : 'Medicare Plan Comparison')
+              : (locale === 'es' ? 'Verificador de Cobertura de Salud' : 'Health Coverage Screener')}
           </h1>
         </div>
 
@@ -327,10 +360,17 @@ export default function ScreenerContent({ locale }: { locale: string }) {
                 <label className={labelStyles}>
                   {locale === 'es' ? 'Edad' : 'Age'}
                 </label>
+                {isMedicareFocus && (
+                  <p className="text-sm text-[var(--text-muted)] mb-2">
+                    {locale === 'es'
+                      ? 'Medicare comienza a los 65. Si te falta poco, todavía podemos ayudarte a planear.'
+                      : 'Medicare starts at 65. If you\'re close, we can still help you plan ahead.'}
+                  </p>
+                )}
                 <input
                   type="number"
                   inputMode="numeric"
-                  min={18}
+                  min={isMedicareFocus ? 60 : 18}
                   max={100}
                   value={formData.age}
                   onChange={(e) => updateField('age', e.target.value)}
@@ -340,58 +380,141 @@ export default function ScreenerContent({ locale }: { locale: string }) {
                 />
               </div>
 
-              {/* Household size */}
-              <div>
-                <label className={labelStyles}>
-                  {locale === 'es' ? 'Tamaño del Hogar' : 'Household Size'}
-                </label>
-                <p className="text-sm text-[var(--text-muted)] mb-2">
-                  {locale === 'es'
-                    ? 'Incluye a ti mismo, pareja e hijos dependientes.'
-                    : 'Include yourself, your partner, and any dependents.'}
-                </p>
-                <select
-                  value={formData.householdSize}
-                  onChange={(e) => updateField('householdSize', e.target.value)}
-                  className={selectStyles}
-                >
-                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
-                    <option key={n} value={n}>
-                      {n}{' '}
-                      {n === 1
-                        ? locale === 'es'
-                          ? 'persona'
-                          : 'person'
-                        : locale === 'es'
-                        ? 'personas'
-                        : 'people'}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              {/* Household size + children — hidden on Medicare flow */}
+              {!isMedicareFocus && (
+                <>
+                  <div>
+                    <label className={labelStyles}>
+                      {locale === 'es' ? 'Tamaño del Hogar' : 'Household Size'}
+                    </label>
+                    <p className="text-sm text-[var(--text-muted)] mb-2">
+                      {locale === 'es'
+                        ? 'Incluye a ti mismo, pareja e hijos dependientes.'
+                        : 'Include yourself, your partner, and any dependents.'}
+                    </p>
+                    <select
+                      value={formData.householdSize}
+                      onChange={(e) => updateField('householdSize', e.target.value)}
+                      className={selectStyles}
+                    >
+                      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+                        <option key={n} value={n}>
+                          {n}{' '}
+                          {n === 1
+                            ? locale === 'es'
+                              ? 'persona'
+                              : 'person'
+                            : locale === 'es'
+                            ? 'personas'
+                            : 'people'}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
 
-              {/* Children under 19 */}
-              <div>
-                <label className={labelStyles}>
-                  {locale === 'es' ? 'Hijos Menores de 19' : 'Children Under 19'}
-                </label>
-                <select
-                  value={formData.numChildren}
-                  onChange={(e) => updateField('numChildren', e.target.value)}
-                  className={selectStyles}
-                >
-                  {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
-                    <option key={n} value={n}>
-                      {n}
-                    </option>
-                  ))}
-                </select>
-              </div>
+                  <div>
+                    <label className={labelStyles}>
+                      {locale === 'es' ? 'Hijos Menores de 19' : 'Children Under 19'}
+                    </label>
+                    <select
+                      value={formData.numChildren}
+                      onChange={(e) => updateField('numChildren', e.target.value)}
+                      className={selectStyles}
+                    >
+                      {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
+                        <option key={n} value={n}>
+                          {n}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </>
+              )}
             </div>
           )}
 
           {/* ---- Step 2: Your Situation ---- */}
-          {step === 2 && (
+          {step === 2 && isMedicareFocus && (
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-xl font-semibold text-[var(--text-primary)] mb-1">
+                  {locale === 'es' ? 'Tu situación con Medicare' : 'Your Medicare situation'}
+                </h2>
+                <p className="text-sm text-[var(--text-muted)]">
+                  {locale === 'es'
+                    ? 'Esto nos ayuda a recomendar los planes correctos en tu área.'
+                    : 'This helps us recommend the right plans available in your area.'}
+                </p>
+              </div>
+
+              {/* Medicare status */}
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? '¿Tienes Medicare actualmente?' : 'Do you currently have Medicare?'}
+                </label>
+                <div className="space-y-2">
+                  {([
+                    { v: 'none', en: 'No, not enrolled in Medicare yet', es: 'No, todavía no estoy inscrito en Medicare' },
+                    { v: 'partAB', en: 'Yes — Original Medicare (Part A and/or B)', es: 'Sí — Medicare Original (Parte A y/o B)' },
+                    { v: 'advantage', en: 'Yes — Medicare Advantage (Part C)', es: 'Sí — Medicare Advantage (Parte C)' },
+                    { v: 'supplement', en: 'Yes — Original Medicare + Medicare Supplement (Medigap)', es: 'Sí — Medicare Original + Medicare Supplement (Medigap)' },
+                    { v: 'unsure', en: 'Not sure', es: 'No estoy seguro/a' },
+                  ] as const).map((opt) => {
+                    const selected = formData.medicareStatus === opt.v;
+                    return (
+                      <button
+                        key={opt.v}
+                        type="button"
+                        onClick={() => updateField('medicareStatus', opt.v as MedicareStatus)}
+                        className="w-full text-left py-3 px-4 rounded-lg border-2 font-medium transition-all"
+                        style={selected
+                          ? { borderColor: brandPrimaryHex, backgroundColor: brandPrimaryHex, color: 'white' }
+                          : {}
+                        }
+                      >
+                        {locale === 'es' ? opt.es : opt.en}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Medicare needs */}
+              <div>
+                <label className={labelStyles}>
+                  {locale === 'es' ? '¿En qué necesitas ayuda?' : 'What do you need help with?'}
+                </label>
+                <div className="space-y-2">
+                  {([
+                    { v: 'newToMedicare', en: 'I\'m new to Medicare (or turning 65 soon)', es: 'Soy nuevo/a en Medicare (o cumpliré 65 pronto)' },
+                    { v: 'compareAdvantage', en: 'Compare Medicare Advantage plans', es: 'Comparar planes Medicare Advantage' },
+                    { v: 'compareSupplement', en: 'Compare Medicare Supplement (Medigap) plans', es: 'Comparar planes Medicare Supplement (Medigap)' },
+                    { v: 'partD', en: 'Help with prescription drug (Part D) coverage', es: 'Ayuda con cobertura de medicamentos (Parte D)' },
+                    { v: 'lostCoverage', en: 'I lost or am losing my current coverage', es: 'Perdí o estoy perdiendo mi cobertura actual' },
+                    { v: 'other', en: 'Something else / not sure', es: 'Otra cosa / no estoy seguro/a' },
+                  ] as const).map((opt) => {
+                    const selected = formData.medicareNeeds === opt.v;
+                    return (
+                      <button
+                        key={opt.v}
+                        type="button"
+                        onClick={() => updateField('medicareNeeds', opt.v as MedicareNeeds)}
+                        className="w-full text-left py-3 px-4 rounded-lg border-2 font-medium transition-all"
+                        style={selected
+                          ? { borderColor: brandPrimaryHex, backgroundColor: brandPrimaryHex, color: 'white' }
+                          : {}
+                        }
+                      >
+                        {locale === 'es' ? opt.es : opt.en}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {step === 2 && !isMedicareFocus && (
             <div className="space-y-6">
               <div>
                 <h2 className="text-xl font-semibold text-[var(--text-primary)] mb-1">

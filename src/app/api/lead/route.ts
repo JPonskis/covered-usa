@@ -69,21 +69,42 @@ export async function POST(req: NextRequest) {
 
       const language = (sub?.language === 'es' ? 'es' : 'en') as 'en' | 'es';
 
-      // Determine lead type from eligible programs (ACA → health, Medicare → medicare)
+      // Detect Medicare flow via the "medicare:<status>:<needs>" prefix we wrote
+      // to insurance_source from /api/screen when focus=medicare came in.
+      const isource = String(sub?.insurance_source || '');
+      const isMedicareFlow = isource.startsWith('medicare:');
+      let medicareStatus: string | null = null;
+      let medicareNeeds: string | null = null;
+      if (isMedicareFlow) {
+        const parts = isource.split(':');
+        medicareStatus = parts[1] || null;
+        medicareNeeds = parts[2] || null;
+      }
+
+      // Lead type: Medicare flow → 'medicare' always. ACA flow → infer from eligible_programs.
       const programs: string[] = (sub?.eligible_programs as string[]) || [];
-      const leadType = programs.includes('medicare') ? 'medicare' : 'health';
+      const leadType = isMedicareFlow
+        ? 'medicare'
+        : (programs.includes('medicare') ? 'medicare' : 'health');
+
+      // Insurance status note: for Medicare flow describe their Medicare situation;
+      // for ACA flow use the original insured/uninsured framing.
+      const insuranceStatusForNote = isMedicareFlow
+        ? `Medicare status: ${medicareStatus || 'unknown'} | Needs help with: ${medicareNeeds || 'unspecified'}`
+        : (sub?.currently_insured ? `insured (${sub?.insurance_source || 'source unknown'})` : 'uninsured');
 
       const screenerForNote: ScreenerRow = {
         state: sub?.state ?? null,
         zip_code: sub?.zip_code ?? null,
         age: sub?.age ?? null,
-        household_size: sub?.household_size ?? null,
-        income: sub?.annual_income ?? null,
-        employment_status: sub?.employment_status ?? null,
-        insurance_status: sub?.currently_insured ? `insured (${sub?.insurance_source || 'source unknown'})` : 'uninsured',
-        is_pregnant: sub?.is_pregnant ?? null,
-        has_disability: sub?.has_disability ?? null,
-        is_veteran: sub?.is_veteran ?? null,
+        // Medicare flow: hide noisy ACA-flow fields that don't apply
+        household_size: isMedicareFlow ? null : (sub?.household_size ?? null),
+        income: isMedicareFlow ? null : (sub?.annual_income ?? null),
+        employment_status: isMedicareFlow ? null : (sub?.employment_status ?? null),
+        insurance_status: insuranceStatusForNote,
+        is_pregnant: isMedicareFlow ? null : (sub?.is_pregnant ?? null),
+        has_disability: isMedicareFlow ? null : (sub?.has_disability ?? null),
+        is_veteran: isMedicareFlow ? null : (sub?.is_veteran ?? null),
         locale: language,
         results: { programs: programs.map((id: string) => ({ id, eligible: true })) },
       };
@@ -97,7 +118,8 @@ export async function POST(req: NextRequest) {
       });
 
       // Append ad campaign tag if present, so Aaron's TLD CRM tracking_id
-      // breaks out per-ad performance (e.g. benefitsusa:facebook:spanish-aca-v1:health)
+      // breaks out per-ad performance (e.g. benefitsusa:facebook:spanish-aca-v1:medicare).
+      // The :leadType suffix is appended by broker-posting.ts automatically.
       const adCampaign = sub?.utm_campaign || null;
       const sourceWithCampaign = adCampaign
         ? `benefitsusa:${sub?.utm_source || 'ad'}:${adCampaign}`

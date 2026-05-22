@@ -30,75 +30,91 @@ export async function generateMetadata({
   };
 }
 
-// Content keyed by locale
+// Content keyed by (locale, focus). focus="medicare" overrides default ACA-friendly copy.
 const content = {
   es: {
-    badge: 'Verificación gratuita de elegibilidad',
-    headline: '¿Calificas para seguro médico gratis?',
-    sub: '2 minutos. 100% gratis. Sin compromiso.',
-    cta: 'Verificar Mi Elegibilidad Gratis →',
-    trustBadges: ['✓ Gratis', '✓ Confidencial', '✓ Sin registro', '✓ En Español'],
-    statHeadline: 'Más de 25 millones de estadounidenses califican para cobertura y no lo saben.',
-    stepsTitle: 'Así de fácil',
-    steps: [
-      {
-        num: '1',
-        title: 'Responde 10 preguntas rápidas',
-        desc: 'Cuéntanos sobre tu hogar, ingresos y estado. Tarda menos de 2 minutos.',
-      },
-      {
-        num: '2',
-        title: 'Ve para qué programas calificas',
-        desc: 'Revisamos Medicaid, ACA, Medicare, CHIP y más — al instante.',
-      },
-      {
-        num: '3',
-        title: 'Recibe ayuda para inscribirte gratis',
-        desc: 'Te conectamos con un agente en tu idioma. Sin costo, sin presión.',
-      },
-    ],
-    ctaBottom: 'Verificar Mi Elegibilidad Gratis →',
-    disclaimer: 'CoveredUSA no es una agencia del gobierno. Servicio gratuito.',
-    privacyLabel: 'Privacidad',
+    default: {
+      badge: 'Verificación gratuita de elegibilidad',
+      headline: '¿Calificas para seguro médico gratis?',
+      sub: '2 minutos. 100% gratis. Sin compromiso.',
+      cta: 'Verificar Mi Elegibilidad Gratis →',
+      trustBadges: ['✓ Gratis', '✓ Confidencial', '✓ Sin registro', '✓ En Español'],
+      statHeadline: 'Más de 25 millones de estadounidenses califican para cobertura y no lo saben.',
+      stepsTitle: 'Así de fácil',
+      steps: [
+        { num: '1', title: 'Responde 10 preguntas rápidas', desc: 'Cuéntanos sobre tu hogar, ingresos y estado. Tarda menos de 2 minutos.' },
+        { num: '2', title: 'Ve para qué programas calificas', desc: 'Revisamos Medicaid, ACA, Medicare, CHIP y más — al instante.' },
+        { num: '3', title: 'Recibe ayuda para inscribirte gratis', desc: 'Te conectamos con un agente en tu idioma. Sin costo, sin presión.' },
+      ],
+      ctaBottom: 'Verificar Mi Elegibilidad Gratis →',
+      disclaimer: 'CoveredUSA no es una agencia del gobierno. Servicio gratuito.',
+      privacyLabel: 'Privacidad',
+    },
+    medicare: {
+      badge: 'Comparación gratuita de planes Medicare',
+      headline: 'Compara planes Medicare en tu área — ayuda gratuita de un agente con licencia',
+      sub: '2 minutos. 100% gratis. Sin compromiso.',
+      cta: 'Comparar Planes Medicare Gratis →',
+      trustBadges: ['✓ Gratis', '✓ Agentes con licencia', '✓ Sin registro', '✓ En Español'],
+      statHeadline: 'Los planes Medicare cambian cada año. Asegúrate de que el tuyo aún funcione para ti.',
+      stepsTitle: 'Tres pasos, dos minutos',
+      steps: [
+        { num: '1', title: 'Cuéntanos sobre tu situación Medicare', desc: 'Dinos tu código postal, edad y si ya tienes Medicare. Toma un minuto.' },
+        { num: '2', title: 'Ve los planes disponibles donde vives', desc: 'Revisamos Medicare Advantage, Medicare Supplement y opciones de Parte D en tu área.' },
+        { num: '3', title: 'Recibe ayuda de un agente Medicare con licencia', desc: 'Un agente con licencia te guía sin costo. Sin presión, nunca.' },
+      ],
+      ctaBottom: 'Comparar Planes Medicare Gratis →',
+      disclaimer: 'CoveredUSA no es una agencia del gobierno. Servicio gratuito.',
+      privacyLabel: 'Privacidad',
+    },
   },
   en: {
-    badge: 'Free Eligibility Check',
-    headline: 'Do You Qualify for Free Health Insurance?',
-    sub: '2 minutes. 100% free. No commitment.',
-    cta: 'Check My Eligibility Free →',
-    trustBadges: ['✓ Free', '✓ Confidential', '✓ No sign-up', '✓ In Spanish'],
-    statHeadline:
-      'More than 25 million Americans qualify for health coverage and don\'t know it.',
-    stepsTitle: 'Three steps, two minutes',
-    steps: [
-      {
-        num: '1',
-        title: 'Answer 10 quick questions',
-        desc: 'Tell us about your household, income, and state. Under 2 minutes.',
-      },
-      {
-        num: '2',
-        title: 'See which programs you qualify for',
-        desc: 'We check Medicaid, ACA, Medicare, CHIP and more — instantly.',
-      },
-      {
-        num: '3',
-        title: 'Get free help enrolling',
-        desc: 'We connect you with a licensed agent who speaks your language. No cost, no pressure.',
-      },
-    ],
-    ctaBottom: 'Check My Eligibility Free →',
-    disclaimer: 'CoveredUSA is not a government agency. Free service.',
-    privacyLabel: 'Privacy',
+    default: {
+      badge: 'Free Eligibility Check',
+      headline: 'Do You Qualify for Free Health Insurance?',
+      sub: '2 minutes. 100% free. No commitment.',
+      cta: 'Check My Eligibility Free →',
+      trustBadges: ['✓ Free', '✓ Confidential', '✓ No sign-up', '✓ In Spanish'],
+      statHeadline: 'More than 25 million Americans qualify for health coverage and don\'t know it.',
+      stepsTitle: 'Three steps, two minutes',
+      steps: [
+        { num: '1', title: 'Answer 10 quick questions', desc: 'Tell us about your household, income, and state. Under 2 minutes.' },
+        { num: '2', title: 'See which programs you qualify for', desc: 'We check Medicaid, ACA, Medicare, CHIP and more — instantly.' },
+        { num: '3', title: 'Get free help enrolling', desc: 'We connect you with a licensed agent who speaks your language. No cost, no pressure.' },
+      ],
+      ctaBottom: 'Check My Eligibility Free →',
+      disclaimer: 'CoveredUSA is not a government agency. Free service.',
+      privacyLabel: 'Privacy',
+    },
+    medicare: {
+      badge: 'Free Medicare Plan Comparison',
+      headline: 'Compare Medicare Plans in Your Area — Free Help from a Licensed Agent',
+      sub: '2 minutes. 100% free. No commitment.',
+      cta: 'Compare Medicare Plans Free →',
+      trustBadges: ['✓ Free', '✓ Licensed agents', '✓ No sign-up', '✓ In Spanish'],
+      statHeadline: 'Medicare plans change every year. Make sure yours still works for you.',
+      stepsTitle: 'Three steps, two minutes',
+      steps: [
+        { num: '1', title: 'Tell us about your Medicare situation', desc: 'ZIP, age, and whether you have Medicare already. Takes a minute.' },
+        { num: '2', title: 'See plans available where you live', desc: 'We check Medicare Advantage, Medicare Supplement, and Part D options in your area.' },
+        { num: '3', title: 'Get help from a licensed Medicare agent', desc: 'A licensed agent walks you through your options at no cost. No pressure, ever.' },
+      ],
+      ctaBottom: 'Compare Medicare Plans Free →',
+      disclaimer: 'CoveredUSA is not a government agency. Free service.',
+      privacyLabel: 'Privacy',
+    },
   },
 };
 
 export default async function ComenzarPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ focus?: string }>;
 }) {
   const { locale } = await params;
+  const { focus } = await searchParams;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
@@ -106,7 +122,9 @@ export default async function ComenzarPage({
 
   setRequestLocale(locale);
 
-  const c = content[locale as keyof typeof content] ?? content.en;
+  const localeContent = content[locale as keyof typeof content] ?? content.en;
+  const isMedicareFocus = focus === 'medicare';
+  const c = isMedicareFocus ? localeContent.medicare : localeContent.default;
   const tf = await getTranslations({ locale, namespace: 'footer' });
   const tpmoDisclaimer = tf('medicare');
 
@@ -246,6 +264,33 @@ export default async function ComenzarPage({
             ))}
           </div>
         </section>
+
+        {/* Above-fold TPMO disclaimer — only on Medicare variant.
+            CMS guidance is "clear and conspicuous" placement on any Medicare-related marketing. */}
+        {isMedicareFocus && (
+          <section
+            aria-label="Medicare disclaimer"
+            style={{
+              background: '#fff8e6',
+              borderTop: '1px solid #f1d68a',
+              borderBottom: '1px solid #f1d68a',
+              padding: '1rem 1.5rem',
+              textAlign: 'center',
+            }}
+          >
+            <p
+              className="max-w-2xl mx-auto"
+              style={{
+                fontSize: '0.85rem',
+                lineHeight: 1.55,
+                color: '#6b5500',
+                margin: 0,
+              }}
+            >
+              {tpmoDisclaimer}
+            </p>
+          </section>
+        )}
 
         {/* Social proof stat */}
         <section
