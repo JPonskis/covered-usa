@@ -399,23 +399,17 @@ export function InlineScreener({ locale }: { locale: string }) {
         >
           {hasPrimary ? (
             <>
-              <div style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style={{ display: 'inline' }}>
-                  <circle cx="12" cy="12" r="10" fill="#22c55e" opacity="0.15" />
-                  <path d="M9 12l2 2 4-4" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1C1A16', margin: '0 0 0.5rem', fontFamily: 'var(--font-display)' }}>
+              <p style={{ fontSize: '0.75rem', fontWeight: 700, color: '#0f766e', textTransform: 'uppercase', letterSpacing: '0.1em', margin: '0 0 0.75rem' }}>
                 {c.resultTitle}
-              </h3>
-              <p style={{ color: '#57534e', fontSize: '0.95rem', margin: '0 0 0.75rem', lineHeight: 1.5 }}>
+              </p>
+              <p style={{ color: '#57534e', fontSize: '0.9rem', margin: '0 0 0.5rem', lineHeight: 1.5 }}>
                 {c.resultMayQualify}
               </p>
-              <p style={{ fontWeight: 700, color: '#1C1A16', fontSize: '1.05rem', margin: '0 0 0.25rem' }}>
+              <p style={{ fontWeight: 700, color: '#1C1A16', fontSize: '1.1rem', margin: '0 0 0.5rem', fontFamily: 'var(--font-display)' }}>
                 {programName}
               </p>
               {result.primary!.estimatedValue > 0 && (
-                <p style={{ color: '#16a34a', fontWeight: 800, fontSize: '1.5rem', margin: '0.25rem 0 0', fontFamily: 'var(--font-display)' }}>
+                <p style={{ color: '#16a34a', fontWeight: 800, fontSize: '1.625rem', margin: 0, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
                   {c.worthUpTo} {formatCurrency(result.primary!.estimatedValue)}{c.perYear}
                 </p>
               )}
@@ -623,10 +617,6 @@ export function InlineScreener({ locale }: { locale: string }) {
           textAlign: 'center',
         }}
       >
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style={{ display: 'inline', marginBottom: '0.75rem' }}>
-          <circle cx="12" cy="12" r="10" fill="#22c55e" opacity="0.15" />
-          <path d="M9 12l2 2 4-4" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
         <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1C1A16', margin: '0 0 0.5rem', fontFamily: 'var(--font-display)' }}>
           {c.confirmTitle}
         </h3>
