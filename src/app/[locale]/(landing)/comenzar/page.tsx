@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
-import { CtaButton } from './cta-button';
+import { InlineScreener } from './inline-screener';
 
 export async function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -201,7 +201,7 @@ export default async function ComenzarPage({
       <main style={{ flex: 1 }}>
 
         {/* Hero — warm cream, not cold white */}
-        <section style={{ background: '#FDF8F3', padding: '3rem 1.5rem 2.5rem', textAlign: 'center' }}>
+        <section id="top" style={{ background: '#FDF8F3', padding: '3rem 1.5rem 2.5rem', textAlign: 'center' }}>
 
           {/* Badge — no pulsing dot */}
           <div
@@ -230,16 +230,9 @@ export default async function ComenzarPage({
             {c.sub}
           </p>
 
-          {/* CTA */}
-          <Suspense
-            fallback={
-              <Link href={`/${locale}/screener`} className="btn-primary cta-btn"
-                style={{ padding: '1.125rem 3rem', fontSize: '1.125rem', fontWeight: 700, borderRadius: '10px', boxShadow: '0 4px 16px rgba(13,148,136,0.3)' }}>
-                {c.cta}
-              </Link>
-            }
-          >
-            <CtaButton locale={locale} label={c.cta} size="xl" />
+          {/* Inline eligibility checker */}
+          <Suspense fallback={<div style={{ height: '200px' }} />}>
+            <InlineScreener locale={locale} />
           </Suspense>
 
           {/* Trust row */}
@@ -348,21 +341,36 @@ export default async function ComenzarPage({
           </div>
         </section>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA — scrolls to top form */}
         <section style={{ background: '#FDF8F3', padding: '3rem 1.5rem 3.5rem', textAlign: 'center', borderTop: '1px solid #ede8e3' }}>
           <p style={{ fontSize: '1.25rem', fontWeight: 700, color: '#1C1A16', marginBottom: '1.5rem', fontFamily: 'var(--font-display)' }}>
             {c.bottomPrompt}
           </p>
-          <Suspense
-            fallback={
-              <Link href={`/${locale}/screener`} className="btn-primary cta-btn"
-                style={{ padding: '1.125rem 3rem', fontSize: '1.125rem', fontWeight: 700, borderRadius: '10px', boxShadow: '0 4px 16px rgba(13,148,136,0.3)' }}>
-                {c.ctaBottom}
-              </Link>
-            }
+          <a
+            href="#top"
+            className="cta-btn"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem',
+              padding: '1.125rem 3rem',
+              fontSize: '1.125rem',
+              fontWeight: 700,
+              fontFamily: 'var(--font-display), -apple-system, sans-serif',
+              color: '#ffffff',
+              background: '#0d9488',
+              borderRadius: '12px',
+              border: 'none',
+              textDecoration: 'none',
+              boxShadow: '0 4px 14px rgba(13,148,136,0.35)',
+            }}
           >
-            <CtaButton locale={locale} label={c.ctaBottom} size="xl" />
-          </Suspense>
+            {c.ctaBottom}
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </a>
           <p style={{ color: '#a8a29e', fontSize: '0.8rem', marginTop: '1.25rem' }}>{c.disclaimer}</p>
         </section>
       </main>
