@@ -168,9 +168,13 @@ export async function POST(req: NextRequest) {
         ? `benefitsusa:${sub?.utm_source || 'ad'}:${adCampaign}`
         : 'benefitsusa';
 
+      const nameParts = (sub?.first_name || '').split(/\s+/);
+      const brokerFirstName = nameParts[0] || '';
+      const brokerLastName = nameParts.slice(1).join(' ') || '';
+
       await postToBrokerDialer({
-        firstName: sub?.first_name || '',
-        lastName: '',
+        firstName: brokerFirstName,
+        lastName: brokerLastName,
         email: sub?.email || '',
         phone,
         zip: sub?.zip_code || '',

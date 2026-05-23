@@ -43,11 +43,13 @@ const t = {
     selfDesc: 'Browse and compare plans directly.',
     selfBtn: 'Browse plans',
     // Lead form
-    nameLabel: 'First name',
-    namePlaceholder: 'Your first name',
+    nameLabel: 'Full name',
+    namePlaceholder: 'First and last name',
+    emailLabel: 'Email',
+    emailPlaceholder: 'you@email.com',
     phoneLabel: 'Phone number',
     phonePlaceholder: '(555) 123-4567',
-    tcpaText: 'By submitting, I agree to be contacted by a licensed agent by phone or text at the number provided. This is not a condition of purchase. Message and data rates may apply.',
+    tcpaText: 'By submitting, I agree to be contacted by a licensed agent by phone, text, or email. This is not a condition of purchase. Message and data rates may apply.',
     submitLead: 'Request a callback',
     submitting: 'Submitting...',
     // Confirmation
@@ -79,11 +81,13 @@ const t = {
     selfTitle: 'Inscríbete por tu cuenta',
     selfDesc: 'Compara planes directamente.',
     selfBtn: 'Ver planes',
-    nameLabel: 'Nombre',
-    namePlaceholder: 'Tu nombre',
+    nameLabel: 'Nombre completo',
+    namePlaceholder: 'Nombre y apellido',
+    emailLabel: 'Correo electrónico',
+    emailPlaceholder: 'tu@email.com',
     phoneLabel: 'Teléfono',
     phonePlaceholder: '(555) 123-4567',
-    tcpaText: 'Al enviar, acepto ser contactado por un agente con licencia por teléfono o mensaje de texto al número proporcionado. Esto no es condición de compra. Pueden aplicar tarifas de mensajes y datos.',
+    tcpaText: 'Al enviar, acepto ser contactado por un agente con licencia por teléfono, mensaje de texto o correo electrónico. Esto no es condición de compra. Pueden aplicar tarifas de mensajes y datos.',
     submitLead: 'Solicitar llamada',
     submitting: 'Enviando...',
     confirmTitle: '¡Listo!',
@@ -145,7 +149,8 @@ export function InlineScreener({ locale }: { locale: string }) {
   const [result, setResult] = useState<QuickResult | null>(null);
 
   // Lead form
-  const [firstName, setFirstName] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [tcpa, setTcpa] = useState(false);
   const [leadLoading, setLeadLoading] = useState(false);
@@ -205,7 +210,7 @@ export function InlineScreener({ locale }: { locale: string }) {
   }
 
   async function handleLeadSubmit() {
-    if (!firstName.trim() || phone.replace(/[^0-9]/g, '').length < 10 || !tcpa) return;
+    if (!fullName.trim() || phone.replace(/[^0-9]/g, '').length < 10 || !tcpa) return;
 
     setLeadLoading(true);
 
@@ -227,8 +232,9 @@ export function InlineScreener({ locale }: { locale: string }) {
           isVeteran: false,
           currentlyInsured: false,
           insuranceSource: 'none',
-          firstName: firstName.trim(),
-          email: null,
+          firstName: fullName.trim().split(/\s+/)[0] || fullName.trim(),
+          lastName: fullName.trim().split(/\s+/).slice(1).join(' ') || '',
+          email: email.trim() || null,
           language: locale,
           ...utms,
         }),
@@ -519,16 +525,29 @@ export function InlineScreener({ locale }: { locale: string }) {
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            {/* First name */}
+            {/* Full name */}
             <div>
               <label style={labelStyle}>{c.nameLabel}</label>
               <input
                 type="text"
                 placeholder={c.namePlaceholder}
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
                 style={inputStyle}
                 aria-label={c.nameLabel}
+              />
+            </div>
+
+            {/* Email */}
+            <div>
+              <label style={labelStyle}>{c.emailLabel}</label>
+              <input
+                type="email"
+                placeholder={c.emailPlaceholder}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                style={inputStyle}
+                aria-label={c.emailLabel}
               />
             </div>
 
@@ -566,7 +585,7 @@ export function InlineScreener({ locale }: { locale: string }) {
             {/* Submit */}
             <button
               onClick={handleLeadSubmit}
-              disabled={leadLoading || !firstName.trim() || phone.replace(/[^0-9]/g, '').length < 10 || !tcpa}
+              disabled={leadLoading || !fullName.trim() || phone.replace(/[^0-9]/g, '').length < 10 || !tcpa}
               className="cta-btn"
               style={{
                 display: 'flex',
@@ -579,10 +598,10 @@ export function InlineScreener({ locale }: { locale: string }) {
                 fontWeight: 700,
                 fontFamily: 'var(--font-display), -apple-system, sans-serif',
                 color: '#ffffff',
-                background: (leadLoading || !firstName.trim() || phone.replace(/[^0-9]/g, '').length < 10 || !tcpa) ? '#a8a29e' : '#0d9488',
+                background: (leadLoading || !fullName.trim() || phone.replace(/[^0-9]/g, '').length < 10 || !tcpa) ? '#a8a29e' : '#0d9488',
                 borderRadius: '12px',
                 border: 'none',
-                cursor: (leadLoading || !firstName.trim() || phone.replace(/[^0-9]/g, '').length < 10 || !tcpa) ? 'not-allowed' : 'pointer',
+                cursor: (leadLoading || !fullName.trim() || phone.replace(/[^0-9]/g, '').length < 10 || !tcpa) ? 'not-allowed' : 'pointer',
                 boxShadow: '0 4px 14px rgba(13,148,136,0.35)',
                 transition: 'all 0.2s ease',
               }}
