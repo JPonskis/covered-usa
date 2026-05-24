@@ -48,7 +48,7 @@ Starting April 1, 2026, the MRF must also include the median, 10th percentile, a
 
 Despite the rule being in effect since 2021, compliance has been uneven. Patient Rights Advocate found that full compliance dropped to 21.1% of hospitals as of a late-2024 audit. CMS itself has issued civil monetary penalties against a small number of hospitals, with 2025 fines ranging from $32,301 (small Louisiana facility) to $309,738 (Arkansas Methodist Medical Center), according to [CMS enforcement data](https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency/enforcement-actions).
 
-The 2026 enforcement acceleration is the most significant change for patients. CMS began accelerated enforcement starting April 1, 2026, with penalties up to $5,547 per day for non-compliant facilities, up from $300 per day when the rule first took effect.
+The 2026 enforcement acceleration is the most significant change for patients. CMS began accelerated enforcement starting April 1, 2026, with penalties up to $5,500 per day for non-compliant facilities, up from $300 per day when the rule first took effect.
 
 Hospitals avoid full compliance for a few reasons:
 
@@ -180,7 +180,7 @@ Yes, this is one of the most practical uses. If the hospital's published MRF sho
 
 ### What are the penalties for hospitals that do not comply in 2026?
 
-Penalties reach up to $5,547 per day for non-compliance. CMS can also require a corrective action plan and issue a public written warning. For the 2026 rule specifically, hospitals may reduce a civil monetary penalty by 35% if they waive their right to an Administrative Law Judge hearing, according to [CMS enforcement information](https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency/enforcement-actions). That penalty reduction is not available for the most serious violations, like failing to post an MRF at all.
+Penalties reach up to $5,500 per day for non-compliance for the largest hospitals (more than 550 beds), with smaller hospitals fined $10 per bed per day. CMS can also require a corrective action plan and issue a public written warning. For the 2026 rule specifically, hospitals may reduce a civil monetary penalty by 35% if they waive their right to an Administrative Law Judge hearing, according to [CMS enforcement information](https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency/enforcement-actions). That penalty reduction is not available for the most serious violations, like failing to post an MRF at all.
 
 ### What is the difference between the gross charge and the cash price?
 
