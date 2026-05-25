@@ -41,9 +41,41 @@ export function checkMedicaid(input: ScreenerInput): ProgramResult {
     nextSteps: `Apply at ${applicationUrl} or call ${phone}`
   };
 
+  // Age 65+: dual-eligibility pathway. About 12 million Americans receive
+  // BOTH Medicare and Medicaid simultaneously — Medicaid covers Medicare
+  // premiums + copays plus services Medicare doesn't (long-term care, dental,
+  // vision). Aged Medicaid exists in every state, including non-expansion
+  // states. Income limits are typically at or near SSI level (~75% FPL) for
+  // "full" duals, with broader pathways up to 138% FPL when state spend-down
+  // or Medicare Savings Programs are layered in. The results page already
+  // surfaces Medicare as the primary program — Medicaid here is presented as
+  // an additional benefit, not a replacement.
   if (age >= 65) {
-    result.reason = 'Age 65+ - you qualify for Medicare instead';
-    result.nextSteps = 'Enroll in Medicare at medicare.gov or call 1-800-MEDICARE';
+    const fplAged100 = getFPL(householdSize, 100, state);
+    const fplAged138 = getFPL(householdSize, 138, state);
+
+    if (annualIncome <= fplAged100) {
+      result.eligible = true;
+      result.eligibilityStatus = 'likely_eligible';
+      result.estimatedValue = 8000;
+      result.reason = `Income at ${fplPercent}% FPL likely qualifies for "dual eligibility" — ${programName} alongside Medicare. ${programName} can cover your Medicare premiums, copays, long-term care, dental, and vision.`;
+      result.nextSteps = `Apply for ${programName} at ${applicationUrl} or call ${phone}. Mention you are 65+ applying for aged/blind/disabled Medicaid.`;
+      return result;
+    }
+
+    if (annualIncome <= fplAged138) {
+      result.eligible = 'maybe';
+      result.eligibilityStatus = 'may_qualify';
+      result.estimatedValue = 4000;
+      result.reason = `Income at ${fplPercent}% FPL may qualify for partial ${programName} or a Medicare Savings Program. State limits vary.`;
+      result.nextSteps = `Apply at ${applicationUrl} or call ${phone}.`;
+      return result;
+    }
+
+    result.eligible = false;
+    result.eligibilityStatus = 'not_eligible';
+    result.reason = `Income at ${fplPercent}% FPL exceeds typical aged ${programName} limits (~138% FPL).`;
+    result.nextSteps = `Medicare is your primary coverage. If income is close to the limit, check Medicare Savings Programs below.`;
     return result;
   }
 
