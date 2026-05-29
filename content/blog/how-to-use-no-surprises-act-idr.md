@@ -9,9 +9,9 @@ target: "analyzer"
 
 The No Surprises Act took effect January 1, 2022, and gives patients nationwide a set of concrete rights when unexpected out-of-network charges show up on a medical bill. The law created two separate dispute processes: the Federal Independent Dispute Resolution (IDR) process, which runs between providers and health plans, and the Patient-Provider Dispute Resolution (PPDR) process, which uninsured or self-pay patients can use directly. Knowing which process applies to your situation, and exactly how to trigger it, is what turns a scary bill into a solvable problem.
 
-> **Quick Answer:** If you received a surprise bill after an emergency, an involuntary out-of-network provider visit, or air ambulance services, the No Surprises Act caps your cost at the in-network amount. The IDR process itself settles payment disputes between your insurer and the provider -- your out-of-pocket maximum stays the same regardless of the IDR outcome. For uninsured or self-pay patients whose final bill is at least $400 more than the written estimate, a separate Patient-Provider Dispute Resolution process is available at cms.gov/medical-bill-rights.
+> **Quick Answer:** If you received a surprise bill after an emergency, an involuntary out-of-network provider visit, or air ambulance services, the No Surprises Act caps your cost at the in-network amount. The IDR process itself settles payment disputes between your insurer and the provider, your out-of-pocket maximum stays the same regardless of the IDR outcome. For uninsured or self-pay patients whose final bill is at least $400 more than the written estimate, a separate Patient-Provider Dispute Resolution process is available at cms.gov/medical-bill-rights.
 
-Before uploading any bill, it helps to understand what you are actually looking at. The [CoveredUSA Bill Analyzer](https://coveredusa.org/medical-bill-analyzer) compares each line item on your hospital bill against the Medicare allowable rate and flags charges that are statistically overpriced, duplicate, or commonly upcoded -- giving you a clear picture of where the real problems are before you file any formal dispute.
+Before uploading any bill, it helps to understand what you are actually looking at. The [CoveredUSA Bill Analyzer](https://coveredusa.org/medical-bill-analyzer) compares each line item on your hospital bill against the Medicare allowable rate and flags charges that are statistically overpriced, duplicate, or commonly upcoded, giving you a clear picture of where the real problems are before you file any formal dispute.
 
 ## What the No Surprises Act Actually Covers in 2026
 
@@ -21,7 +21,7 @@ The No Surprises Act protects insured patients in three situations:
 2. **Non-emergency care at in-network facilities** where the treating provider (anesthesiologist, radiologist, assistant surgeon) is out-of-network and you did not voluntarily choose them
 3. **Air ambulance services** from out-of-network providers
 
-When any of these apply, your cost-sharing (deductible, copay, coinsurance) is calculated as if the care had been in-network. The provider and your insurance company then negotiate the payment difference -- but that negotiation does not affect what you owe.
+When any of these apply, your cost-sharing (deductible, copay, coinsurance) is calculated as if the care had been in-network. The provider and your insurance company then negotiate the payment difference, but that negotiation does not affect what you owe.
 
 What the law does NOT cover:
 
@@ -42,7 +42,7 @@ Understanding which track applies saves time and frustration.
 | Insured patient, insurer denies a claim improperly | Internal appeal, then external review | Patient | None |
 | Any patient, provider violates No Surprises Act | Complaint to No Surprises Help Desk | Patient | None |
 
-For most insured patients, you will not directly file an IDR claim. The IDR process happens between your provider and your insurer -- your job is to make sure your insurer is applying in-network cost-sharing to the disputed services and to file a complaint if they are not.
+For most insured patients, you will not directly file an IDR claim. The IDR process happens between your provider and your insurer. Your job is to make sure your insurer is applying in-network cost-sharing to the disputed services and to file a complaint if they are not.
 
 ## Step-by-Step: What To Do When You Receive a Surprise Bill
 
@@ -58,7 +58,7 @@ Call the member services number on your insurance card and ask specifically:
 - Was a Qualifying Payment Amount (QPA) calculated?
 - Did the insurer initiate open negotiation with the provider?
 
-The QPA is the benchmark number -- it is roughly the median in-network rate for the service in your geographic area. Under the No Surprises Act, your cost-sharing should be based on the QPA, not the provider's full billed charge.
+The QPA is the benchmark number. It is roughly the median in-network rate for the service in your geographic area. Under the No Surprises Act, your cost-sharing should be based on the QPA, not the provider's full billed charge.
 
 ### Step 3: File an Internal Appeal if Your Insurer Gets It Wrong
 
@@ -80,7 +80,7 @@ CMS investigates complaints and can refer cases to state regulators where applic
 
 ## Step-by-Step: The Federal IDR Process (for Providers and Insurers)
 
-Even though patients do not file IDR cases directly, understanding this process matters because it determines how much your provider ultimately gets paid -- and whether they pursue you for the remainder.
+Even though patients do not file IDR cases directly, understanding this process matters because it determines how much your provider ultimately gets paid, and whether they pursue you for the remainder.
 
 ### Step 1: Initial Payment or Denial (Day 0)
 
@@ -88,7 +88,7 @@ Your insurer pays the provider the initial payment or issues a denial. This star
 
 ### Step 2: Open Negotiation Period (30 Business Days)
 
-The insurer and provider must attempt to negotiate a final payment amount. Either party can initiate by sending a written notice. Both sides exchange offers, supporting data, and documentation. If they reach an agreement, the process ends here -- no IDR needed.
+The insurer and provider must attempt to negotiate a final payment amount. Either party can initiate by sending a written notice. Both sides exchange offers, supporting data, and documentation. If they reach an agreement, the process ends here, no IDR needed.
 
 ### Step 3: Initiate the Federal IDR Process (Within 4 Business Days After Negotiation Closes)
 
@@ -110,7 +110,7 @@ Each party submits:
 - The QPA (the insurer must disclose this to the provider)
 - Supporting documentation for why their offer is appropriate
 
-The IDR entity uses a "baseball arbitration" model -- it must pick one party's offer in full. It cannot split the difference. The 2026 final rule [published by HHS](https://www.hhs.gov/press-room/federal-rule-takes-aim-health-care-bureaucracy-reducing-dispute-fees-boosting-transparency.html) reaffirmed that the QPA should be the starting presumption, with the IDR entity required to justify any deviation.
+The IDR entity uses a "baseball arbitration" model. It must pick one party's offer in full. It cannot split the difference. The 2026 final rule [published by HHS](https://www.hhs.gov/press-room/federal-rule-takes-aim-health-care-bureaucracy-reducing-dispute-fees-boosting-transparency.html) reaffirmed that the QPA should be the starting presumption, with the IDR entity required to justify any deviation.
 
 ### Step 6: IDR Entity Issues a Decision
 
@@ -161,7 +161,7 @@ HHS finalized a major update to the IDR rules on May 28, 2026. Key changes:
 - **In-portal negotiation tools** added to encourage settlement before arbitration
 - **Stronger QPA disclosure requirements** so providers receive clearer benchmark information upfront
 
-The rule reflects congressional pressure to fix a backlog problem -- by late 2024, the IDR system had processed over 900,000 disputes, far more than originally projected, creating significant delays. The streamlined platform and reduced fees are designed to clear the backlog and reduce unnecessary filings.
+The rule reflects congressional pressure to fix a backlog problem. By late 2024, the IDR system had processed over 900,000 disputes, far more than originally projected, creating significant delays. The streamlined platform and reduced fees are designed to clear the backlog and reduce unnecessary filings.
 
 ## How to Read Your Bill Before Filing Any Dispute
 
@@ -193,11 +193,11 @@ Knowing the specific error type strengthens your case in any dispute process.
 
 ### What is the No Surprises Act IDR process in plain terms?
 
-The IDR process is a binding arbitration system where your insurance company and your out-of-network provider each submit a payment offer, and a neutral third-party arbitrator picks one. It runs between the insurer and provider -- patients are protected by a cap on their cost-sharing from the start, regardless of how the arbitration turns out.
+The IDR process is a binding arbitration system where your insurance company and your out-of-network provider each submit a payment offer, and a neutral third-party arbitrator picks one. It runs between the insurer and provider. Patients are protected by a cap on their cost-sharing from the start, regardless of how the arbitration turns out.
 
 ### Can I personally file an IDR dispute against my provider or insurer?
 
-Not directly. The Federal IDR process is available to providers, facilities, and health plans -- not individual patients. However, patients can file complaints with the No Surprises Help Desk (1-800-985-3059) if they believe a provider or insurer is violating the law. Uninsured patients have a separate process called PPDR.
+Not directly. The Federal IDR process is available to providers, facilities, and health plans, not individual patients. However, patients can file complaints with the No Surprises Help Desk (1-800-985-3059) if they believe a provider or insurer is violating the law. Uninsured patients have a separate process called PPDR.
 
 ### What is the $400 threshold for patient disputes?
 

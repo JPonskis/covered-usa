@@ -63,9 +63,9 @@ The [HealthWell Foundation](https://www.healthwellfoundation.org/) is one of the
 
 | FPL Tier | Household of 1 (approx.) | Household of 4 (approx.) |
 |---|---|---|
-| 300% FPL | $45,180 | $93,600 |
-| 400% FPL | $60,240 | $124,800 |
-| 500% FPL | $75,300 | $156,000 |
+| 300% FPL | $47,880 | $99,000 |
+| 400% FPL | $63,840 | $132,000 |
+| 500% FPL | $79,800 | $165,000 |
 
 *Source: [HealthWell Foundation FPL Guidelines](https://www.healthwellfoundation.org/about/federal-poverty-level-guidelines/) and [aspe.hhs.gov](https://aspe.hhs.gov/) 2026 federal poverty guidelines. Exact FPL tier varies by individual disease fund.*
 
@@ -90,13 +90,13 @@ HealthWell funds can be temporarily closed when they run out of money. Check the
 
 | Household Size | 400% FPL (2026) | 500% FPL (2026) |
 |---|---|---|
-| 1 | $60,240 | $75,300 |
-| 2 | $81,760 | $102,200 |
-| 3 | $103,280 | $129,100 |
-| 4 | $124,800 | $156,000 |
-| 5 | $146,320 | $182,900 |
-| 6 | $167,840 | $209,800 |
-| Each additional | +$21,520 | +$26,900 |
+| 1 | $63,840 | $79,800 |
+| 2 | $86,560 | $108,200 |
+| 3 | $109,280 | $136,600 |
+| 4 | $132,000 | $165,000 |
+| 5 | $154,720 | $193,400 |
+| 6 | $177,440 | $221,800 |
+| Each additional | +$22,720 | +$28,400 |
 
 *Income limits based on 2026 federal poverty guidelines published by [aspe.hhs.gov](https://aspe.hhs.gov/). Exact percentage (400% or 500%) depends on the specific TAF disease program.*
 
@@ -117,17 +117,17 @@ To check if your disease has an open fund: visit [tafcares.org](https://tafcares
 - Treatment in the United States
 - Household income at or below 500% of the Federal Poverty Level
 
-**Good Days Income Limits -- 500% FPL (2026)**
+**Good Days Income Limits: 500% FPL (2026)**
 
 | Household Size | Annual Income Limit |
 |---|---|
-| 1 | $75,300 |
-| 2 | $102,200 |
-| 3 | $129,100 |
-| 4 | $156,000 |
-| 5 | $182,900 |
-| 6 | $209,800 |
-| Each additional | +$26,900 |
+| 1 | $79,800 |
+| 2 | $108,200 |
+| 3 | $136,600 |
+| 4 | $165,000 |
+| 5 | $193,400 |
+| 6 | $221,800 |
+| Each additional | +$28,400 |
 
 *Based on 2026 FPL guidelines from [aspe.hhs.gov](https://aspe.hhs.gov/).*
 
@@ -145,8 +145,8 @@ Contact: 877-968-7233
 
 | Fund Income Tier | Household of 1 | Household of 2 | Household of 4 |
 |---|---|---|---|
-| 300% FPL | $45,180 | $61,320 | $93,600 |
-| 400% FPL | $60,240 | $81,760 | $124,800 |
+| 300% FPL | $47,880 | $64,920 | $99,000 |
+| 400% FPL | $63,840 | $86,560 | $132,000 |
 
 *Each disease fund carries either a 300% or 400% FPL cap. Cost-of-living index adjustments are available in high-cost areas. Source: [copays.org](https://copays.org/) and [aspe.hhs.gov](https://aspe.hhs.gov/) 2026 guidelines.*
 
@@ -208,11 +208,11 @@ Funds regularly hit their annual funding caps and close to new applicants mid-ye
 
 ## How Disease-Specific Funds Interact With Medicare
 
-Medicare beneficiaries face a particular challenge: commercial copay coupons from manufacturers cannot legally be used by Medicare patients. However, independent charitable patient assistance organizations are permitted to assist Medicare Part D enrollees, provided the program operates under CMS safe harbor guidelines.
+Medicare beneficiaries face a particular challenge: commercial copay coupons from manufacturers cannot legally be used by Medicare patients. However, independent charitable patient assistance organizations are permitted to assist Medicare Part D enrollees, provided the program operates under [HHS OIG safe harbor guidelines](https://oig.hhs.gov/compliance/alerts/special-advisory-bulletins/).
 
 HealthWell Foundation, Good Days, TAF, and Patient Advocate Foundation all maintain Medicare-specific disease funds. If you have Medicare and need help with Part D drug costs, look specifically for funds labeled "Medicare Access" or "Medicare Part D" when searching fund databases.
 
-For 2026, the Medicare Part D out-of-pocket cap is $2,000 per year under the Inflation Reduction Act changes. Even with this cap, the $2,000 can represent a major burden for patients on fixed incomes. Charity funds can help cover the gap between your current spending and that cap.
+For 2026, the [Medicare Part D out-of-pocket cap](https://www.cms.gov/newsroom/fact-sheets/final-cy-2026-part-d-redesign-program-instructions) is $2,100 per year under the Inflation Reduction Act changes. Even with this cap, the $2,100 can represent a major burden for patients on fixed incomes. Charity funds can help cover the gap between your current spending and that cap.
 
 ---
 
@@ -228,7 +228,7 @@ Yes, in almost all cases. Independent charity funds are designed to cover cost-s
 
 ### What is the income limit for most disease charity funds?
 
-Most disease-specific charity funds set income limits at 300% to 500% of the federal poverty level (FPL). For a household of one, 400% FPL in 2026 is approximately $60,240. For a household of four, it is approximately $124,800. The exact limit depends on the specific fund and organization. High-cost-of-living areas may qualify for an upward adjustment.
+Most disease-specific charity funds set income limits at 300% to 500% of the federal poverty level (FPL). For a household of one, 400% FPL in 2026 is approximately $63,840. For a household of four, it is approximately $132,000. The exact limit depends on the specific fund and organization. High-cost-of-living areas may qualify for an upward adjustment.
 
 ### Can I receive assistance from more than one disease fund at the same time?
 
@@ -240,7 +240,7 @@ Funds close when their annual donations are exhausted. You should check back reg
 
 ### Are these programs available to Medicare patients?
 
-Yes. Independent charitable foundations like HealthWell, TAF, Good Days, and Patient Advocate Foundation operate Medicare-specific disease funds that are compliant with CMS safe harbor guidelines. Commercial manufacturer copay programs cannot legally be used by Medicare beneficiaries, but independent charity funds can. Look for funds labeled "Medicare Access" or "Medicare Part D."
+Yes. Independent charitable foundations like HealthWell, TAF, Good Days, and Patient Advocate Foundation operate Medicare-specific disease funds that are compliant with OIG safe harbor guidelines. Commercial manufacturer copay programs cannot legally be used by Medicare beneficiaries, but independent charity funds can. Look for funds labeled "Medicare Access" or "Medicare Part D."
 
 ### How do I find disease-specific funds for rare diseases?
 
@@ -256,6 +256,6 @@ The TotalAssist program, a merger of PAN Foundation and Patient Advocate Foundat
 
 Disease-specific charity funds cover your cost-sharing, but they require insurance in the first place. If you do not currently have health coverage, you may qualify for Medicaid at no cost, an ACA Marketplace plan with subsidies that bring premiums to $0-50 per month, or Medicare if you are 65 or older or have a qualifying disability.
 
-Check your eligibility now at CoveredUSA -- it takes 2 minutes.
+Check your eligibility now at CoveredUSA. It takes 2 minutes.
 
 [Check My Eligibility](/screener)

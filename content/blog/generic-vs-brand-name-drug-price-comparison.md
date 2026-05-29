@@ -17,7 +17,7 @@ This 2026 comparison covers real-world cash prices, Medicare out-of-pocket estim
 
 A brand-name drug maker spends an average of over a billion dollars on clinical trials and FDA approval before a single pill ships. Patent protection lets the company recoup that investment with premium pricing for 20 years. When patents expire, other manufacturers can produce the same molecule, driving fierce price competition.
 
-The [FDA](https://www.fda.gov/drugs/frequently-asked-questions-popular-topics/generic-drugs-questions-answers) requires generic manufacturers to prove bioequivalence, meaning the generic delivers the same active ingredient in the same amount at the same rate as the original. "Same drug, lower price" is not marketing spin -- it is federal law. Generic competitors drive prices down fast: a single generic entrant typically cuts prices by 30 percent; five or more competitors push prices down by 85 percent or more.
+The [FDA](https://www.fda.gov/drugs/frequently-asked-questions-popular-topics/generic-drugs-questions-answers) requires generic manufacturers to prove bioequivalence, meaning the generic delivers the same active ingredient in the same amount at the same rate as the original. "Same drug, lower price" is not marketing spin. It is federal law. Generic competitors drive prices down fast: a single generic entrant typically cuts prices by 30 percent; five or more competitors push prices down by 85 percent or more.
 
 ## 2026 Price Comparison: 30 Most Prescribed Medications
 
@@ -72,7 +72,7 @@ Medicare beneficiaries face a tiered copay structure that makes the generic vs. 
 | Tier 4 | Non-preferred brand-name | $85 to $100 |
 | Tier 5 | Specialty drugs | 25% to 33% coinsurance |
 
-The 2026 Part D redesign caps total out-of-pocket drug costs at $2,100 for the full year -- a significant improvement over prior years. For beneficiaries who qualify for Extra Help (Low Income Subsidy), copays are capped at $5.10 for generics and $12.65 for brand-name drugs in 2026.
+The 2026 Part D redesign caps total out-of-pocket drug costs at $2,100 for the full year, a significant improvement over prior years. For beneficiaries who qualify for Extra Help (Low Income Subsidy), copays are capped at $5.10 for generics and $12.65 for brand-name drugs in 2026.
 
 If you are on Medicare and taking a brand-name drug that has a generic, ask your plan's pharmacist which tier the generic falls on. Switching a single Tier 4 medication to a Tier 1 generic can save $960 or more per year.
 
@@ -96,13 +96,13 @@ Federally qualified health centers (FQHCs) operate under the [340B Drug Pricing 
 **Patient assistance programs**
 Most large pharmaceutical companies offer free or reduced-cost brand-name drugs to uninsured patients with low income. NeedyMeds.org maintains a searchable database.
 
-If you have no health insurance at all, you may qualify for Medicaid, an ACA marketplace plan with premium subsidies, or Medicare. [Check your eligibility now at CoveredUSA](/screener) -- it takes 2 minutes.
+If you have no health insurance at all, you may qualify for Medicaid, an ACA marketplace plan with premium subsidies, or Medicare. [Check your eligibility now at CoveredUSA](/screener). It takes 2 minutes.
 
 ## How to Switch From Brand to Generic: A Step-by-Step Guide
 
 Switching is straightforward in most cases, but a few medications require extra care. Follow these steps to make the change safely.
 
-**Enrollment window:** You can request a generic switch at any pharmacy visit. There is no enrollment period -- the switch takes effect the next time you fill the prescription.
+**Enrollment window:** You can request a generic switch at any pharmacy visit. There is no enrollment period. The switch takes effect the next time you fill the prescription.
 
 **Step 1: Check that a generic exists.** The [FDA's Orange Book](https://www.accessdata.fda.gov/scripts/cder/ob/) lists all approved generic equivalents. Search by brand name or active ingredient.
 
@@ -127,7 +127,7 @@ Switching is straightforward in most cases, but a few medications require extra 
 
 ## Medications Where Brand May Be Preferred
 
-For most drugs, generics are identical in every practical sense. A small group of medications with a narrow therapeutic index -- where small dose differences matter clinically -- deserve a conversation with your doctor before switching:
+For most drugs, generics are identical in every practical sense. A small group of medications with a narrow therapeutic index (where small dose differences matter clinically) deserve a conversation with your doctor before switching:
 
 - **Levothyroxine (Synthroid):** Some endocrinologists prefer sticking to one manufacturer's version (brand or generic) to avoid minor formulation variation. TSH levels should be rechecked after any switch.
 - **Warfarin (Coumadin):** INR monitoring is required regardless. If you switch, more frequent monitoring for a few weeks is prudent.
@@ -150,7 +150,7 @@ The cheapest path to prescriptions runs through health coverage, even if you pay
 
 ## How Much Could You Save? A Real-World Example
 
-Consider a 58-year-old with high cholesterol, high blood pressure, acid reflux, and depression -- a common combination for adults in that age range. Using brand-name prescriptions:
+Consider a 58-year-old with high cholesterol, high blood pressure, acid reflux, and depression, a common combination for adults in that age range. Using brand-name prescriptions:
 
 | Condition | Brand Name | Monthly Brand Cost |
 |-----------|-----------|-------------------|
@@ -170,7 +170,7 @@ Switching to generics:
 | Depression | Sertraline 50 mg | $12 |
 | **Total** | | **$36/month** |
 
-**Annual savings: roughly $9,168.** This is money that could instead go toward copays, food, rent, or savings -- and the clinical outcome is the same.
+**Annual savings: roughly $9,168.** This is money that could instead go toward copays, food, rent, or savings, and the clinical outcome is the same.
 
 ## Frequently Asked Questions
 
@@ -188,7 +188,7 @@ Medicare Part D covers both, but places generics on lower-cost tiers. In 2026, p
 
 ### Can I save money on drugs I take every day even without insurance?
 
-Yes. Discount programs like GoodRx, RxSaver, and SingleCare are free to use and often price generics below what insured patients pay. Walmart's $4 generic program and Costco's generic pricing are among the lowest nationally for cash-paying customers. But the best long-term solution is obtaining health coverage -- Medicaid, ACA subsidies, or Medicare may make your monthly drug costs close to zero.
+Yes. Discount programs like GoodRx, RxSaver, and SingleCare are free to use and often price generics below what insured patients pay. Walmart's $4 generic program and Costco's generic pricing are among the lowest nationally for cash-paying customers. But the best long-term solution is obtaining health coverage. Medicaid, ACA subsidies, or Medicare may make your monthly drug costs close to zero.
 
 ### What is the $2,100 out-of-pocket cap for Medicare Part D in 2026?
 
@@ -200,7 +200,7 @@ No. Drugs still under patent protection have no generic version. Biologic drugs 
 
 ### How do I find out if my specific drug has a generic?
 
-Go to the [FDA Orange Book](https://www.accessdata.fda.gov/scripts/cder/ob/) and search by brand name or active ingredient. You can also ask your pharmacist directly -- pharmacists are required by law to tell you if a generic is available and what it costs.
+Go to the [FDA Orange Book](https://www.accessdata.fda.gov/scripts/cder/ob/) and search by brand name or active ingredient. You can also ask your pharmacist directly. Pharmacists are required by law to tell you if a generic is available and what it costs.
 
 ### What should I do if I cannot afford my prescriptions at all?
 
@@ -214,4 +214,4 @@ Start with NeedyMeds.org for patient assistance programs. Then check GoodRx or R
 - [FDA Generic Drugs: Questions and Answers](https://www.fda.gov/drugs/frequently-asked-questions-popular-topics/generic-drugs-questions-answers)
 - [Medicare.gov Part D Cost Information](https://www.medicare.gov/health-drug-plans/part-d/basics/costs)
 - [CMS Negotiated Drug Price Program](https://www.cms.gov)
-- [KFF Health System Tracker -- Prescription Drug Spending](https://kff.org/health-costs/)
+- [KFF Health System Tracker: Prescription Drug Spending](https://kff.org/health-costs/)

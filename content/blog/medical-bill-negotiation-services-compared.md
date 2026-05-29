@@ -9,19 +9,19 @@ target: "analyzer"
 
 > **Quick Answer:** As of 2026, the top medical bill negotiation services include Goodbill (20% fee, $1,000 cap), Resolve Medical Bills (10-25% tiered, 70% success rate), and Dollar For (free, charity care only). The CoveredUSA Bill Analyzer is a free, instant alternative that compares every charge on your bill to the 2026 Medicare rate and surfaces charity care eligibility before you pay anyone a percentage.
 
-About 80% of U.S. hospital bills contain at least one error, according to research compiled by the Medical Billing Advocates of America. The average overcharge on a bill exceeding $10,000 runs roughly $1,300. Before you pay a negotiation service 20-40% of your savings, it helps to know exactly what you are dealing with. The [CoveredUSA Bill Analyzer](/medical-bill-analyzer) scans your itemized hospital bill, compares each CPT-coded charge to the 2026 Medicare reimbursement rate, and flags specific line items to dispute -- all at no cost. Once you know what errors exist, you can decide whether to handle the dispute yourself or hire a service.
+About 80% of U.S. hospital bills contain at least one error, according to research compiled by the Medical Billing Advocates of America. The average overcharge on a bill exceeding $10,000 runs roughly $1,300. Before you pay a negotiation service 20-40% of your savings, it helps to know exactly what you are dealing with. The [CoveredUSA Bill Analyzer](/medical-bill-analyzer) scans your itemized hospital bill, compares each CPT-coded charge to the 2026 Medicare reimbursement rate, and flags specific line items to dispute, all at no cost. Once you know what errors exist, you can decide whether to handle the dispute yourself or hire a service.
 
 This guide compares 10 medical bill negotiation services side by side, including fees, what each service does and does not cover, and when each one makes sense for your situation.
 
 ## What Medical Bill Negotiation Services Actually Do
 
-Medical bill negotiation services review your hospital or medical bills for errors, duplicate charges, and upcoding. They then negotiate directly with the provider on your behalf to reduce the balance. Some also screen for hospital charity care programs -- also called financial assistance -- that can eliminate bills entirely for patients below certain income thresholds.
+Medical bill negotiation services review your hospital or medical bills for errors, duplicate charges, and upcoding. They then negotiate directly with the provider on your behalf to reduce the balance. Some also screen for hospital charity care programs, also called financial assistance, that can eliminate bills entirely for patients below certain income thresholds.
 
 There are three general categories:
 
-1. **Full-service negotiators** -- They audit your bill, negotiate, appeal denials, and handle paperwork. You pay a percentage of savings if they succeed.
-2. **Charity care specialists** -- They identify and apply for hospital financial assistance programs on your behalf. Most are free or nonprofit.
-3. **DIY-assist tools** -- They analyze your bill and give you a dispute roadmap, but you do the actual negotiating.
+1. **Full-service negotiators**. They audit your bill, negotiate, appeal denials, and handle paperwork. You pay a percentage of savings if they succeed.
+2. **Charity care specialists**. They identify and apply for hospital financial assistance programs on your behalf. Most are free or nonprofit.
+3. **DIY-assist tools**. They analyze your bill and give you a dispute roadmap, but you do the actual negotiating.
 
 Understanding which category fits your situation saves you money on the service itself.
 
@@ -48,7 +48,7 @@ Fees and success rates are based on each company's published 2026 information an
 
 The CoveredUSA Bill Analyzer is a free tool at [coveredusa.org/medical-bill-analyzer](/medical-bill-analyzer) that compares each line on your itemized bill to the Medicare reimbursement rate for that procedure code. It identifies upcoding, duplicate charges, and unbundling errors, then tells you which specific charges to dispute and why. It also checks your income against hospital charity care thresholds to see if you qualify for a full or partial write-off.
 
-Unlike the services below, the CoveredUSA Bill Analyzer does not negotiate for you -- it gives you the data to negotiate yourself or to know exactly what to hand off to a professional advocate. Most people find that once they have a line-by-line comparison showing their hospital charged $4,200 for a procedure Medicare reimburses at $900, the conversation with the billing department becomes much shorter.
+Unlike the services below, the CoveredUSA Bill Analyzer does not negotiate for you. It gives you the data to negotiate yourself or to know exactly what to hand off to a professional advocate. Most people find that once they have a line-by-line comparison showing their hospital charged $4,200 for a procedure Medicare reimburses at $900, the conversation with the billing department becomes much shorter.
 
 **Fee:** Free  
 **Works with collections:** N/A (analysis tool)  
@@ -74,7 +74,7 @@ The $1,000 cap makes Goodbill particularly attractive on very large bills. If Go
 
 Resolve assigns a dedicated advocate who handles negotiation, appeals, and financial assistance applications. Resolve's tiered fee structure means larger savings carry a lower percentage rate. The service requires a $249-$499 upfront deposit that is applied to the final success fee or refunded if Resolve cannot lower your bill.
 
-Resolve's published average savings rate is 60%, with a 70% success rate across cases -- meaning roughly 3 in 10 cases result in no reduction. The service accepts bills that have gone to collections, which Goodbill does not, making it an option when the debt is already in a collection agency's hands.
+Resolve's published average savings rate is 60%, with a 70% success rate across cases, meaning roughly 3 in 10 cases result in no reduction. The service accepts bills that have gone to collections, which Goodbill does not, making it an option when the debt is already in a collection agency's hands.
 
 **Fee:** 10-25% tiered (no cap)  
 **Minimum bill size:** $5,000  
@@ -89,18 +89,21 @@ The lack of a fee cap means a very large successful negotiation costs more in ab
 
 **Best for:** Patients whose income qualifies for hospital charity care but who do not know how to apply.
 
-Dollar For is a national nonprofit that focuses exclusively on hospital charity care applications. It does not negotiate bills or dispute charges -- it identifies whether your hospital has a financial assistance program and handles the paperwork to apply. In 2025, Dollar For helped patients eliminate $55 million in hospital bills, per KFF Health News reporting.
+Dollar For is a national nonprofit that focuses exclusively on hospital charity care applications. It does not negotiate bills or dispute charges. It identifies whether your hospital has a financial assistance program and handles the paperwork to apply. In 2025, Dollar For helped patients eliminate $55 million in hospital bills, per KFF Health News reporting.
 
-Under Section 501(r) of the Internal Revenue Code, all nonprofit hospitals (roughly 60% of U.S. hospitals) are required to offer charity care to qualifying patients. Most set full write-offs at incomes up to 200% of the Federal Poverty Level (FPL) and partial discounts up to 400% FPL. For 2026, 200% FPL is approximately $31,920 for a single person and $65,520 for a family of four.
+Under Section 501(r) of the Internal Revenue Code, all nonprofit hospitals (roughly 60% of U.S. hospitals) are required to offer charity care to qualifying patients. Most set full write-offs at incomes up to 200% of the Federal Poverty Level (FPL) and partial discounts up to 400% FPL. For 2026, 200% FPL is $31,920 for a single person and $66,000 for a family of four.
 
 | Household Size | 200% FPL (2026) | 400% FPL (2026) |
 |---|---|---|
 | 1 | $31,920 | $63,840 |
-| 2 | $43,320 | $86,640 |
-| 3 | $54,720 | $109,440 |
-| 4 | $66,120 | $132,240 |
-| 5 | $77,520 | $155,040 |
-| 6 | $88,920 | $177,840 |
+| 2 | $43,280 | $86,560 |
+| 3 | $54,640 | $109,280 |
+| 4 | $66,000 | $132,000 |
+| 5 | $77,360 | $154,720 |
+| 6 | $88,720 | $177,440 |
+| 7 | $100,080 | $200,160 |
+| 8 | $111,440 | $222,880 |
+| Each additional | +$11,360 | +$22,720 |
 
 Source: [aspe.hhs.gov 2026 Federal Poverty Guidelines](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)
 
@@ -174,12 +177,12 @@ The right service depends on three factors: your income level, the size of your 
 
 Most patients are unaware that nonprofit hospitals are legally required to offer financial assistance. Here is the process to apply directly, without hiring a service.
 
-**Enrollment window:** You can apply for charity care at most hospitals before, during, or after receiving care. Many hospitals retroactively apply charity care to bills already issued. Submit as early as possible -- some hospitals require applications within 240 days of the billing statement date per IRS Section 501(r) rules.
+**Enrollment window:** You can apply for charity care at most hospitals before, during, or after receiving care. Many hospitals retroactively apply charity care to bills already issued. Submit as early as possible, since some hospitals require applications within 240 days of the billing statement date per IRS Section 501(r) rules.
 
 **Application steps:**
 
 1. Request the hospital's Financial Assistance Policy (FAP) and application form from the billing department. Under [IRS Section 501(r)](https://www.irs.gov/charities-non-profits/charitable-organizations/requirements-for-501c3-hospitals-under-the-affordable-care-act-section-501r), nonprofit hospitals are required to provide this on request.
-2. Look up the hospital's specific income thresholds -- many exceed the 200% FPL minimum required by law.
+2. Look up the hospital's specific income thresholds. Many exceed the 200% FPL minimum required by law.
 3. Gather your documents (list below).
 4. Submit the completed application with supporting documents to the billing department or financial assistance office.
 5. Follow up in writing within 2 weeks if you have not received a decision.
@@ -198,7 +201,7 @@ Most patients are unaware that nonprofit hospitals are legally required to offer
 - Incomplete documentation (missing income proof or tax return)
 - Application submitted after the hospital's deadline
 - Hospital is for-profit and not subject to 501(r) requirements
-- Household income slightly above the threshold -- ask about partial discount tiers
+- Household income slightly above the threshold (ask about partial discount tiers)
 - Wrong application form submitted (some hospitals have separate forms for uninsured vs. insured patients)
 
 ## Frequently Asked Questions
@@ -217,11 +220,11 @@ They can be, particularly on large bills. If Goodbill negotiates $10,000 off a $
 
 ### What is the difference between medical bill negotiation and charity care?
 
-Negotiation reduces what you owe through error correction or direct bargaining with the provider. Charity care (financial assistance) is a separate program that nonprofit hospitals are legally required to offer patients below certain income thresholds -- often resulting in a complete bill write-off. Charity care is income-based; negotiation is not. Some services, including Goodbill and Resolve, screen for both.
+Negotiation reduces what you owe through error correction or direct bargaining with the provider. Charity care (financial assistance) is a separate program that nonprofit hospitals are legally required to offer patients below certain income thresholds, often resulting in a complete bill write-off. Charity care is income-based; negotiation is not. Some services, including Goodbill and Resolve, screen for both.
 
 ### Can I negotiate my own medical bill without a service?
 
-Yes. Call the hospital billing department, ask for an itemized bill, and request a comparison to the hospital's chargemaster rates and Medicare rates for each procedure. The CoveredUSA Bill Analyzer automates this comparison for you -- upload your bill and it identifies specific overcharges with the supporting Medicare rate data, giving you the exact information you need to make the call.
+Yes. Call the hospital billing department, ask for an itemized bill, and request a comparison to the hospital's chargemaster rates and Medicare rates for each procedure. The CoveredUSA Bill Analyzer automates this comparison for you. Upload your bill and it identifies specific overcharges with the supporting Medicare rate data, giving you the exact information you need to make the call.
 
 ### What is the free CoveredUSA Bill Analyzer and how does it work?
 
@@ -233,7 +236,7 @@ Using a negotiation service does not itself affect credit. However, if a bill is
 
 ### What income qualifies for hospital charity care in 2026?
 
-Most nonprofit hospitals provide full write-offs for patients with household income at or below 200% of the Federal Poverty Level. For 2026, that is $31,920 for a single person and $66,120 for a family of four, per [aspe.hhs.gov](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines). Partial discounts typically extend to 400% FPL. Some hospitals are more generous -- eligibility thresholds range from 41% to 600% FPL depending on the institution, according to a Health Affairs study.
+Most nonprofit hospitals provide full write-offs for patients with household income at or below 200% of the Federal Poverty Level. For 2026, that is $31,920 for a single person and $66,000 for a family of four, per [aspe.hhs.gov](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines). Partial discounts typically extend to 400% FPL. Some hospitals are more generous. Eligibility thresholds range from 41% to 600% FPL depending on the institution, according to a Health Affairs study.
 
 ### Do I need to hire someone to get charity care?
 

@@ -50,13 +50,15 @@ Drug manufacturers offer two types of cost-reduction programs that are often lum
 
 | Household Size | 100% FPL (2026) | 200% FPL | 400% FPL |
 |---|---|---|---|
-| 1 | $15,060 | $30,120 | $60,240 |
-| 2 | $20,440 | $40,880 | $81,760 |
-| 3 | $25,820 | $51,640 | $103,280 |
-| 4 | $31,200 | $62,400 | $124,800 |
-| 5 | $36,580 | $73,160 | $146,320 |
-| 6 | $41,960 | $83,920 | $167,840 |
-| Each additional | +$5,380 | +$10,760 | +$21,520 |
+| 1 | $15,960 | $31,920 | $63,840 |
+| 2 | $21,640 | $43,280 | $86,560 |
+| 3 | $27,320 | $54,640 | $109,280 |
+| 4 | $33,000 | $66,000 | $132,000 |
+| 5 | $38,680 | $77,360 | $154,720 |
+| 6 | $44,360 | $88,720 | $177,440 |
+| 7 | $50,040 | $100,080 | $200,160 |
+| 8 | $55,720 | $111,440 | $222,880 |
+| Each additional | +$5,680 | +$11,360 | +$22,720 |
 
 *Source: [ASPE HHS 2026 Federal Poverty Guidelines](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)*
 
@@ -210,7 +212,7 @@ GoodRx Gold is a paid subscription tier at approximately $9.99 per month ($19.99
 
 ### Where can I find out if I qualify for Medicaid or ACA subsidies to reduce prescription costs?
 
-If your household income is below 138% of the Federal Poverty Level and you live in a Medicaid expansion state, you likely qualify for Medicaid, which covers most prescriptions at little or no cost. If your income is between 100% and 400% FPL, you may qualify for ACA subsidies that lower your monthly premium and drug costs. [Check your eligibility now at CoveredUSA](/screener) -- it takes 2 minutes.
+If your household income is below 138% of the Federal Poverty Level and you live in a Medicaid expansion state, you likely qualify for Medicaid, which covers most prescriptions at little or no cost. If your income is between 100% and 400% FPL, you may qualify for ACA subsidies that lower your monthly premium and drug costs. [Check your eligibility now at CoveredUSA](/screener), it takes 2 minutes.
 
 ### Does Cost Plus Drugs carry brand-name drugs?
 

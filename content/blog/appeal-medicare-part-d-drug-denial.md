@@ -209,4 +209,4 @@ You can switch Part D plans during the Annual Enrollment Period (October 15 to D
 
 *Sources: [Medicare.gov - Drug Plan Appeals](https://www.medicare.gov/providers-services/claims-appeals-complaints/appeals/drug-plans) | [CMS Appeals Overview](https://www.cms.gov/medicare/appeals-grievances/prescription-drug/appeals-overview) | [CMS Coverage Determinations](https://www.cms.gov/medicare/appeals-grievances/prescription-drug/coverage-determinations) | [CMS Exceptions](https://www.cms.gov/medicare/appeals-grievances/prescription-drug/exceptions)*
 
-*CoveredUSA is not connected with or endorsed by the United States government or the federal Medicare program. Check your eligibility now at CoveredUSA -- it takes 2 minutes.*
+*CoveredUSA is not connected with or endorsed by the United States government or the federal Medicare program. Check your eligibility now at CoveredUSA, it takes 2 minutes.*

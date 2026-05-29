@@ -136,10 +136,10 @@ Every nonprofit hospital in the United States, about 60% of all hospitals, is le
 | Above 400% FPL | Varies by hospital policy |
 
 For reference, 200% of the 2026 Federal Poverty Level equals:
-- $30,120 for a household of 1
-- $40,880 for a household of 2
-- $51,640 for a household of 3
-- $62,400 for a household of 4
+- $31,920 for a household of 1
+- $43,280 for a household of 2
+- $54,640 for a household of 3
+- $66,000 for a household of 4
 
 Source: [aspe.hhs.gov 2026 Poverty Guidelines](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines).
 
@@ -157,9 +157,9 @@ If you identify a specific error, submit a written dispute to the hospital billi
 
 Yes, dramatically. The figures above are the amounts hospitals bill, not what patients pay out of pocket.
 
-For Medicare patients, the 2026 Part A inpatient deductible is $1,676 per benefit period. Days 1 through 60 are covered after the deductible. Days 61 through 90 require a $419 per-day coinsurance. After 90 days, lifetime reserve days kick in at $838 per day.
+For Medicare patients, the 2026 Part A inpatient deductible is $1,736 per benefit period. Days 1 through 60 are covered after the deductible. Days 61 through 90 require a $434 per-day coinsurance. After 90 days, lifetime reserve days kick in at $868 per day.
 
-For patients with employer-sponsored insurance or ACA marketplace plans, out-of-pocket exposure depends on the plan's deductible, coinsurance rate, and out-of-pocket maximum. The 2026 ACA out-of-pocket maximum is $9,200 for an individual and $18,400 for a family. No matter how large the hospital bill, a marketplace enrollee cannot be required to pay more than that in-network.
+For patients with employer-sponsored insurance or ACA marketplace plans, out-of-pocket exposure depends on the plan's deductible, coinsurance rate, and out-of-pocket maximum. The 2026 ACA out-of-pocket maximum is $10,600 for an individual and $21,200 for a family. No matter how large the hospital bill, a marketplace enrollee cannot be required to pay more than that in-network.
 
 For Medicaid patients, cost-sharing is minimal or zero in most states. Medicaid managed to cover 87.3 million people in 2024 at substantially lower out-of-pocket cost than private insurance.
 
@@ -187,7 +187,7 @@ Request an itemized bill and compare each line item against the hospital's publi
 
 ### What is hospital charity care and who qualifies?
 
-Charity care is a free or reduced-cost care program that every nonprofit hospital is legally required to offer under IRS Section 501(r). Patients with household income up to 200% of the Federal Poverty Level ($62,400 for a family of four in 2026) typically qualify for 100% free care. Patients between 200% and 400% FPL often receive 25% to 75% discounts. You can apply after your bill arrives, even if it has already been sent to collections.
+Charity care is a free or reduced-cost care program that every nonprofit hospital is legally required to offer under IRS Section 501(r). Patients with household income up to 200% of the Federal Poverty Level ($66,000 for a family of four in 2026) typically qualify for 100% free care. Patients between 200% and 400% FPL often receive 25% to 75% discounts. You can apply after your bill arrives, even if it has already been sent to collections.
 
 ### Can I negotiate a hospital bill after it is already due?
 

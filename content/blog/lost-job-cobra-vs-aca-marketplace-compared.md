@@ -46,14 +46,14 @@ The national average benchmark Silver plan for a 40-year-old costs about $625 pe
 
 | Household Size | 100% FPL (minimum for subsidy) | 400% FPL (subsidy cutoff) |
 |---|---|---|
-| 1 | $15,060 | $60,240 |
-| 2 | $20,440 | $81,760 |
-| 3 | $25,820 | $103,280 |
-| 4 | $31,200 | $124,800 |
-| 5 | $36,580 | $146,320 |
-| 6 | $41,960 | $167,840 |
-| 7 | $47,340 | $189,360 |
-| 8 | $52,720 | $210,880 |
+| 1 | $15,650 | $62,600 |
+| 2 | $21,150 | $84,600 |
+| 3 | $26,650 | $106,600 |
+| 4 | $32,150 | $128,600 |
+| 5 | $37,650 | $150,600 |
+| 6 | $43,150 | $172,600 |
+| 7 | $48,650 | $194,600 |
+| 8 | $54,150 | $216,600 |
 
 Source: 2025 FPL figures used for 2026 Marketplace subsidy calculations, per [aspe.hhs.gov](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines). If your income is at or below 138% FPL and your state expanded Medicaid, you likely qualify for Medicaid instead (which costs even less).
 
@@ -175,7 +175,7 @@ If you decide COBRA is better for your situation:
 
 ## What If My Income Is Below 100% FPL?
 
-If your 2026 income falls below 100% FPL (roughly $15,060 for a single person), you generally do not qualify for Marketplace subsidies. You may qualify for Medicaid instead if your state has expanded Medicaid under the ACA. Medicaid covers adults with incomes up to 138% FPL in expansion states and is free or nearly free.
+If your 2026 income falls below 100% FPL (roughly $15,650 for a single person), you generally do not qualify for Marketplace subsidies. You may qualify for Medicaid instead if your state has expanded Medicaid under the ACA. Medicaid covers adults with incomes up to 138% FPL in expansion states and is free or nearly free.
 
 Check your state's Medicaid eligibility at [medicaid.gov](https://www.medicaid.gov). You can also run a free screener at CoveredUSA to see which programs you qualify for based on your actual income and household.
 
@@ -221,4 +221,4 @@ Possibly. If your income after job loss falls at or below 138% of the Federal Po
 
 Deciding between COBRA and the ACA Marketplace depends on your specific income, household size, and health needs. The fastest way to see which programs you qualify for is to run a free eligibility check.
 
-Check your eligibility now at CoveredUSA -- it takes 2 minutes. The screener at [/screener](/screener) shows whether you qualify for ACA subsidies, Medicaid, or other coverage options based on your actual 2026 income and family size.
+Check your eligibility now at CoveredUSA, it takes 2 minutes. The screener at [/screener](/screener) shows whether you qualify for ACA subsidies, Medicaid, or other coverage options based on your actual 2026 income and family size.
