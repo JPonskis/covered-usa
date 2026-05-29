@@ -2,7 +2,7 @@
 title: "What Is an Advanced EOB Under the No Surprises Act? (2026 Status)"
 description: "An advanced EOB tells insured patients their estimated costs before scheduled care. Learn what it includes, how it works, and its current 2026 implementation status."
 date: "2026-05-28"
-slug: "advanced-eob-no-surprises-act-2026"
+slug: "advanced-eob-no-surprises-act"
 keywords: ["advanced EOB", "No Surprises Act", "advanced explanation of benefits", "medical bill transparency", "surprise billing"]
 target: "analyzer"
 ---

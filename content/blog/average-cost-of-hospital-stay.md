@@ -2,7 +2,7 @@
 title: "The True Cost of a Hospital Stay: 2026 Statistical Reference"
 description: "The average U.S. hospital stay costs $16,667 in 2026. See costs by condition, state, and ICU vs standard care, plus how to cut your bill."
 date: "2026-05-28"
-slug: "average-cost-of-hospital-stay-2026"
+slug: "average-cost-of-hospital-stay"
 keywords: ["average cost of hospital stay", "hospital stay cost 2026", "hospital bill statistics", "cost per day hospital", "medical bill overcharges"]
 target: "analyzer"
 ---
