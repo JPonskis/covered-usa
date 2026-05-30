@@ -4,12 +4,20 @@
   "pageType": "coverage",
   "topicCluster": "medicaid-eligibility",
   "keyTerms": {
-    "en": ["dual eligible medicare medicaid", "can i have both medicare and medicaid", "medicare savings program 2026", "QMB SLMB dual eligible", "dual SNP D-SNP 2026"],
-    "es": ["elegible dual medicare medicaid", "tener medicare y medicaid al mismo tiempo", "programa de ahorros de medicare 2026", "QMB SLMB elegible dual"]
+    "en": [
+      "dual eligible medicare medicaid",
+      "can i have both medicare and medicaid",
+      "QMB SLMB dual eligible",
+      "dual SNP D-SNP 2026"
+    ],
+    "es": [
+      "elegible dual medicare medicaid",
+      "tener medicare y medicaid al mismo tiempo",
+      "QMB SLMB elegible dual"
+    ]
   },
   "isLighthouse": false,
   "isDeprecated": false,
-
   "question": {
     "en": "Can I Have Both Medicare and Medicaid in 2026? (Dual Eligibility)",
     "es": "¿Puedo tener Medicare y Medicaid al mismo tiempo en 2026? (Elegibilidad Dual)"
@@ -28,7 +36,6 @@
   "ctaTarget": "screener",
   "lastUpdated": "2026-05-15",
   "readingTime": "7 min read",
-
   "meta": {
     "title": {
       "en": "Can I Have Both Medicare and Medicaid in 2026? | CoveredUSA",
@@ -39,14 +46,12 @@
       "es": "Sí. Alrededor de 12.5 millones de elegibles duales tienen ambos programas. Medicare paga primero; Medicaid cubre los costos compartidos. Programas QMB, SLMB, QI explicados para 2026."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Can I Have Both Medicare and Medicaid in 2026? (Dual Eligibility)",
       "es": "¿Puedo tener Medicare y Medicaid al mismo tiempo en 2026? (Elegibilidad Dual)"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicare covers hospital care, doctor visits, and prescription drugs for people 65 and older and certain people with disabilities. Medicaid covers low-income Americans across all ages. Because millions of older and disabled Americans are both low-income and Medicare-eligible, the two programs overlap in a defined category called dual eligibility. As of 2024, roughly 12.5 million people held both Medicare and Medicaid simultaneously, according to KFF analysis of CMS data.",
@@ -57,43 +62,124 @@
       "es": "La elegibilidad dual no es automática. Debe calificar por separado para cada programa. La elegibilidad de Medicare se basa en la edad (65+) o el estado de discapacidad (después de 24 meses de Seguro de Discapacidad del Seguro Social). La elegibilidad de Medicaid se basa en los ingresos y el umbral varía por estado. Esta guía explica quién califica, cómo los dos programas coordinan pagos, qué Programas de Ahorros de Medicare ayudan con los costos y cómo inscribirse en ambos."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Program Level", "Who Qualifies (2026)", "What Medicaid Pays", "Extra Help / LIS"],
-      "es": ["Nivel de programa", "Quién califica (2026)", "Lo que paga Medicaid", "Ayuda Extra / LIS"]
+      "en": [
+        "Program Level",
+        "Who Qualifies (2026)",
+        "What Medicaid Pays",
+        "Extra Help / LIS"
+      ],
+      "es": [
+        "Nivel de programa",
+        "Quién califica (2026)",
+        "Lo que paga Medicaid",
+        "Ayuda Extra / LIS"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Full Dual Eligible (Full Benefit)", "es": "Elegible Dual Completo (Beneficio Completo)" },
-          { "value": { "en": "Qualifies for full Medicaid + Medicare", "es": "Califica para Medicaid completo + Medicare" }, "status": "yes" },
-          { "en": "Medicaid pays Part B premium ($202.90/mo in 2026), Part A and Part B deductibles, copays, and services Medicare does not cover (dental, vision, LTSS)", "es": "Medicaid paga la prima de la Parte B ($202.90/mes en 2026), deducibles de Parte A y Parte B, copagos y servicios que Medicare no cubre (dental, visión, LTSS)" },
-          { "value": { "en": "Yes. Automatic Extra Help: $0 drug plan premium, $5.10/$12.65 copays in 2026", "es": "Sí. Ayuda Extra automática: $0 prima plan de medicamentos, copagos de $5.10/$12.65 en 2026" }, "status": "yes" }
+          {
+            "en": "Full Dual Eligible (Full Benefit)",
+            "es": "Elegible Dual Completo (Beneficio Completo)"
+          },
+          {
+            "value": {
+              "en": "Qualifies for full Medicaid + Medicare",
+              "es": "Califica para Medicaid completo + Medicare"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Medicaid pays Part B premium ($202.90/mo in 2026), Part A and Part B deductibles, copays, and services Medicare does not cover (dental, vision, LTSS)",
+            "es": "Medicaid paga la prima de la Parte B ($202.90/mes en 2026), deducibles de Parte A y Parte B, copagos y servicios que Medicare no cubre (dental, visión, LTSS)"
+          },
+          {
+            "value": {
+              "en": "Yes. Automatic Extra Help: $0 drug plan premium, $5.10/$12.65 copays in 2026",
+              "es": "Sí. Ayuda Extra automática: $0 prima plan de medicamentos, copagos de $5.10/$12.65 en 2026"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "QMB: Qualified Medicare Beneficiary", "es": "QMB: Beneficiario Calificado de Medicare" },
-          { "value": { "en": "Income at or below 100% FPL ($15,960 hh-1 in 2026)", "es": "Ingresos hasta el 100% FPL ($15,960 hogar-1 en 2026)" }, "status": "partial" },
-          { "en": "Medicaid pays Part B premium, Part A and B deductibles, coinsurance, and copays. Providers cannot bill QMB enrollees for Medicare cost-sharing (a federal prohibition).", "es": "Medicaid paga la prima de la Parte B, deducibles de Parte A y B, coseguro y copagos. Los proveedores no pueden facturar a inscritos QMB por costos compartidos de Medicare (prohibición federal)." },
-          { "value": { "en": "Yes. Automatic Extra Help at full subsidy level", "es": "Sí. Ayuda Extra automática al nivel de subsidio completo" }, "status": "yes" }
+          {
+            "en": "QMB: Qualified Medicare Beneficiary",
+            "es": "QMB: Beneficiario Calificado de Medicare"
+          },
+          {
+            "value": {
+              "en": "Income at or below 100% FPL ($15,960 hh-1 in 2026)",
+              "es": "Ingresos hasta el 100% FPL ($15,960 hogar-1 en 2026)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Medicaid pays Part B premium, Part A and B deductibles, coinsurance, and copays. Providers cannot bill QMB enrollees for Medicare cost-sharing (a federal prohibition).",
+            "es": "Medicaid paga la prima de la Parte B, deducibles de Parte A y B, coseguro y copagos. Los proveedores no pueden facturar a inscritos QMB por costos compartidos de Medicare (prohibición federal)."
+          },
+          {
+            "value": {
+              "en": "Yes. Automatic Extra Help at full subsidy level",
+              "es": "Sí. Ayuda Extra automática al nivel de subsidio completo"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "SLMB: Specified Low-Income Medicare Beneficiary", "es": "SLMB: Beneficiario de Medicare de Bajos Ingresos Especificado" },
-          { "value": { "en": "Income 100% to 120% FPL ($15,960 to $19,152 hh-1 in 2026)", "es": "Ingresos del 100% al 120% FPL ($15,960 a $19,152 hogar-1 en 2026)" }, "status": "partial" },
-          { "en": "Medicaid pays Part B premium only ($202.90/month in 2026). Does not pay deductibles or copays.", "es": "Medicaid paga solo la prima de la Parte B ($202.90/mes en 2026). No paga deducibles ni copagos." },
-          { "value": { "en": "Yes. Automatic Extra Help", "es": "Sí. Ayuda Extra automática" }, "status": "yes" }
+          {
+            "en": "SLMB: Specified Low-Income Medicare Beneficiary",
+            "es": "SLMB: Beneficiario de Medicare de Bajos Ingresos Especificado"
+          },
+          {
+            "value": {
+              "en": "Income 100% to 120% FPL ($15,960 to $19,152 hh-1 in 2026)",
+              "es": "Ingresos del 100% al 120% FPL ($15,960 a $19,152 hogar-1 en 2026)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Medicaid pays Part B premium only ($202.90/month in 2026). Does not pay deductibles or copays.",
+            "es": "Medicaid paga solo la prima de la Parte B ($202.90/mes en 2026). No paga deducibles ni copagos."
+          },
+          {
+            "value": {
+              "en": "Yes. Automatic Extra Help",
+              "es": "Sí. Ayuda Extra automática"
+            },
+            "status": "yes"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "QI: Qualifying Individual", "es": "QI: Individuo Calificado" },
-          { "value": { "en": "Income 120% to 135% FPL ($19,152 to $21,546 hh-1 in 2026)", "es": "Ingresos del 120% al 135% FPL ($19,152 a $21,546 hogar-1 en 2026)" }, "status": "partial" },
-          { "en": "Medicaid pays Part B premium only. QI slots are limited and funded by annual congressional allocation. First-come, first-served each January.", "es": "Medicaid paga solo la prima de la Parte B. Los cupos QI son limitados y financiados por asignación anual del Congreso. Orden de llegada cada enero." },
-          { "value": { "en": "Yes. Automatic Extra Help", "es": "Sí. Ayuda Extra automática" }, "status": "yes" }
+          {
+            "en": "QI: Qualifying Individual",
+            "es": "QI: Individuo Calificado"
+          },
+          {
+            "value": {
+              "en": "Income 120% to 135% FPL ($19,152 to $21,546 hh-1 in 2026)",
+              "es": "Ingresos del 120% al 135% FPL ($19,152 a $21,546 hogar-1 en 2026)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Medicaid pays Part B premium only. QI slots are limited and funded by annual congressional allocation. First-come, first-served each January.",
+            "es": "Medicaid paga solo la prima de la Parte B. Los cupos QI son limitados y financiados por asignación anual del Congreso. Orden de llegada cada enero."
+          },
+          {
+            "value": {
+              "en": "Yes. Automatic Extra Help",
+              "es": "Sí. Ayuda Extra automática"
+            },
+            "status": "yes"
+          }
         ]
       }
     ],
@@ -103,7 +189,6 @@
     },
     "source": "CMS Medicare Savings Programs 2026, Medicare.gov MSP page, KFF Dual Eligible Enrollment 2024"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -288,7 +373,6 @@
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -359,7 +443,6 @@
       }
     ]
   },
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -437,7 +520,6 @@
       "es": "Todo el año: las solicitudes de Medicaid y MSP no tienen ventana de inscripción anual. Solicite en cualquier momento."
     }
   },
-
   "relatedLinks": [
     {
       "label": {
@@ -468,7 +550,6 @@
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
       "name": "Medicare.gov: Medicare Savings Programs",
