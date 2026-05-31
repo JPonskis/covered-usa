@@ -99,9 +99,11 @@ Model: pick a strong model (the agents do real research). Network: **Full**. Rep
 > cat /tmp/stuck.json
 > ```
 >
-> - **Target volume (buffer-first):** if `ready_count` from `--stats` is **< 100**, set N = **20**.
->   If `ready_count` is **>= 100**, set N = **15**. (The Mac Mini drains 15/day; writing 20 until the
->   buffer is ~100 deep gives a cushion, then steady-state 15.)
+> - **SPIKE MODE:** if the env var `SPIKE` equals `1`, set N = **1** and skip the buffer logic. Use
+>   this for the first de-risking run. Remove `SPIKE` from the environment once the 1-page run is clean.
+> - **Target volume (buffer-first):** otherwise, if `ready_count` from `--stats` is **< 100**, set
+>   N = **20**. If `ready_count` is **>= 100**, set N = **15**. (The Mac Mini drains 15/day; writing 20
+>   until the buffer is ~100 deep gives a cushion, then steady-state 15.)
 > - **Recovery:** if `/tmp/stuck.json` has `total > 0`, build an updates array reverting each stuck
 >   row to blank Status with a note, and apply it with
 >   `node scripts/cloud/coveredusa-batch-update-status.js /tmp/recover.json`.
@@ -208,9 +210,10 @@ Model: pick a strong model (the agents do real research). Network: **Full**. Rep
   cloud can clone `JPonskis/covered-usa`.
 - **Branch push:** enable **Allow unrestricted branch pushes** for covered-usa (drip-queue is not a
   `claude/` branch).
-- **De-risk first:** before scheduling, use **Run now** with N forced to 1 (or write `pick 1`) to
-  prove the full chain in the cloud — agent spawn, Sheets read/write, .gov WebFetch, JSON write,
-  drip-queue push, Telegram. Only after a clean 1-page run, enable the daily 2 AM PT schedule.
+- **De-risk first:** add `SPIKE=1` to the environment variables, then click **Run now**. That forces
+  a single-page run to prove the full chain in the cloud — agent spawn, Sheets read/write, .gov
+  WebFetch, JSON write, drip-queue push, Telegram. After a clean 1-page run, remove `SPIKE` and enable
+  the daily 2 AM PT schedule.
 
 ## Coexistence with existing crons (all on the Mac Mini, unchanged)
 - `coveredusa-drip-publish` @ 02:00 UTC — publishes Status=Ready (the consumer of this routine).
