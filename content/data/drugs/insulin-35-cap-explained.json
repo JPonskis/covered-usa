@@ -1,0 +1,807 @@
+{
+  "slug": "insulin-35-cap-explained",
+  "drugName": {
+    "en": "Insulin (The $35 Cap Explained)",
+    "es": "Insulina (El Límite de $35 Explicado)"
+  },
+  "shortName": {
+    "en": "Insulin $35 Cap",
+    "es": "Límite de $35 de Insulina"
+  },
+  "nonProprietaryName": "insulin (various formulations)",
+  "brandNames": [
+    "Humalog",
+    "Lantus",
+    "NovoLog",
+    "Basaglar",
+    "Tresiba",
+    "Levemir"
+  ],
+  "drugClass": {
+    "en": "Insulin analog (rapid-acting, intermediate-acting, and long-acting basal formulations)",
+    "es": "Análogo de insulina (formulaciones de acción rápida, intermedia y basal prolongada)"
+  },
+  "routeOfAdministration": "Injection",
+  "medicalSpecialty": "Endocrine",
+  "lastUpdated": "2026-05-31",
+  "ctaTarget": "analyzer",
+  "readingTime": "8 min read",
+  "hcpcsJCodes": ["J1815", "J1817"],
+  "topicCluster": "drug-cost",
+  "keyTerms": {
+    "en": [
+      "insulin $35 cap",
+      "insulin $35 cap 2026",
+      "Medicare insulin $35 per month",
+      "insulin Inflation Reduction Act",
+      "insulin patient assistance program",
+      "insulin cost without insurance 2026"
+    ],
+    "es": [
+      "límite de $35 de insulina",
+      "límite de $35 de insulina 2026",
+      "insulina Medicare $35 por mes",
+      "insulina Ley de Reducción de la Inflación",
+      "programa de asistencia al paciente insulina"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "meta": {
+    "title": {
+      "en": "The $35 Insulin Cap in 2026: Who Qualifies? | CoveredUSA",
+      "es": "El Límite de $35 de Insulina en 2026: ¿Quién Califica? | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicare caps insulin at $35/month under the IRA. No federal cap for commercial plans, but 30+ states have limits. PAP options and eligibility for 2026.",
+      "es": "Medicare limita la insulina a $35/mes bajo la IRA. Sin límite federal comercial, pero 30+ estados tienen límites. Opciones PAP y elegibilidad 2026."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "The $35 Insulin Cap in 2026: Medicare, Commercial Plans, and Who Qualifies",
+      "es": "El Límite de $35 de Insulina en 2026: Medicare, Planes Comerciales y Quién Califica"
+    },
+    "subhero": {
+      "en": "The Inflation Reduction Act of 2022 capped insulin out-of-pocket costs at $35 per month for all Medicare Part D enrollees, effective January 2023. The cap also applies under Medicare Part B for insulin used in pumps, effective July 2023. No deductible applies to insulin under either Part B or Part D in 2026. Commercial health plans have no equivalent federal cap as of 2026, but over 30 states have enacted their own insulin copay limits for state-regulated plans. Manufacturer programs from Lilly, Novo Nordisk, and Sanofi extend $35-per-month pricing to millions of uninsured and commercially-insured patients outside Medicare.",
+      "es": "La Ley de Reducción de la Inflación de 2022 limitó los costos de bolsillo de insulina a $35 por mes para todos los inscritos en Medicare Parte D, efectivo enero 2023. El límite también aplica bajo Medicare Parte B para insulina usada en bombas, efectivo julio 2023. No aplica ningún deducible a la insulina bajo la Parte B o la Parte D en 2026. Los planes de salud comerciales no tienen un límite federal equivalente a partir de 2026, pero más de 30 estados han promulgado sus propios límites de copago de insulina para planes regulados estatalmente."
+    }
+  },
+  "quickAnswer": {
+    "en": "In 2026, Medicare Part D and Part B enrollees pay no more than $35 per month for covered insulin, with no deductible, regardless of which plan or insulin brand they use. The $35 cap is from the Inflation Reduction Act of 2022, effective January 1, 2023. Commercial insurance plans have no federal $35 insulin cap as of 2026, but California, Colorado, Illinois, New Jersey, New York, Connecticut, and about 30 other states have enacted state-level caps. Manufacturer patient assistance programs from Eli Lilly, Novo Nordisk, and Sanofi extend $35-per-month pricing to uninsured patients and commercially-insured patients without state caps. Medicaid covers insulin in all 50 states with a typical $1 to $4 copay.",
+    "es": "En 2026, los inscritos en Medicare Parte D y Parte B pagan no más de $35 por mes por insulina cubierta, sin deducible, independientemente del plan o marca de insulina que usen. El límite de $35 proviene de la Ley de Reducción de la Inflación de 2022, vigente desde el 1 de enero de 2023. Los planes de seguro comerciales no tienen un límite federal de $35 para insulina a partir de 2026, pero California, Colorado, Illinois, Nueva Jersey, Nueva York, Connecticut y aproximadamente 30 otros estados han promulgado límites a nivel estatal. Los programas de asistencia al paciente de Eli Lilly, Novo Nordisk y Sanofi extienden precios de $35 por mes a pacientes sin seguro y pacientes con seguro comercial sin límites estatales."
+  },
+  "pricing": {
+    "medicareAspPerUnit": 12,
+    "medicareAspUnit": {
+      "en": "per unit (Medicare Part B ASP rate, hospital-administered insulin)",
+      "es": "por unidad (tarifa Medicare Parte B ASP, insulina administrada en hospital)"
+    },
+    "retailLow": 25,
+    "retailHigh": 300,
+    "retailUnit": {
+      "en": "per vial (cash, without insurance; OTC human insulin starts at $25; analogs $72 to $300)",
+      "es": "por vial (en efectivo, sin seguro; insulina humana sin receta desde $25; análogos $72 a $300)"
+    },
+    "inpatientLow": 200,
+    "inpatientHigh": 500,
+    "inpatientUnit": {
+      "en": "per dose (inpatient facility billing rate)",
+      "es": "por dosis (tarifa de facturación hospitalaria)"
+    },
+    "medicarePartDMonthlyCap": 35,
+    "medicaidCopayLow": 1,
+    "medicaidCopayHigh": 4,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283,
+    "partDAnnualOopCap": 2100
+  },
+  "introParagraphs": [
+    {
+      "en": "Insulin is a life-sustaining medication for millions of Americans with type 1 and type 2 diabetes. Before the Inflation Reduction Act of 2022, Medicare Part D enrollees could pay hundreds of dollars per month for insulin depending on their plan's formulary tier and deductible status. The IRA changed that: starting January 1, 2023, all Medicare Part D plans must cap insulin out-of-pocket cost at $35 per one-month supply, and no deductible may apply to any covered insulin product. A parallel Part B provision capped insulin used in insulin pumps at $35 per month beginning July 1, 2023. For 2026, those caps remain in force and unchanged.",
+      "es": "La insulina es un medicamento que sostiene la vida de millones de estadounidenses con diabetes tipo 1 y tipo 2. Antes de la Ley de Reducción de la Inflación de 2022, los inscritos en Medicare Parte D podían pagar cientos de dólares por mes por insulina dependiendo del nivel del formulario de su plan y el estado del deducible. La IRA cambió eso: a partir del 1 de enero de 2023, todos los planes de Medicare Parte D deben limitar el costo de bolsillo de insulina a $35 por suministro de un mes, y ningún deducible puede aplicarse a ningún producto de insulina cubierto."
+    },
+    {
+      "en": "Three critical distinctions every insulin patient needs to understand in 2026. First, the $35 cap is a Medicare-only federal protection. Commercial employer plans and ACA Marketplace plans have no equivalent federal cap, though over 30 states have enacted their own insulin pricing laws for state-regulated plans. Second, the cap is per insulin product per month, not per fill or per vial. Third, the IRA cap covers all insulin types that a plan includes on its formulary: rapid-acting, short-acting, intermediate-acting, and long-acting formulations in both vial and pen form. If your Medicare plan covers an insulin, you pay no more than $35 for it in 2026, even before meeting your deductible. Patients who want to compare all Part D insulin costs can use the Medicare Plan Finder at medicare.gov.",
+      "es": "Tres distinciones críticas que todo paciente de insulina debe entender en 2026. Primero, el límite de $35 es una protección federal exclusiva de Medicare. Los planes de empleadores comerciales y los planes del Mercado ACA no tienen un límite federal equivalente, aunque más de 30 estados han promulgado sus propias leyes de precios de insulina para planes regulados estatalmente. Segundo, el límite es por producto de insulina por mes, no por surtido o por vial. Tercero, el límite de la IRA cubre todos los tipos de insulina que un plan incluye en su formulario."
+    },
+    {
+      "en": "Patients without Medicare coverage are not left without options in 2026. The three major insulin manufacturers all operate programs that cap or eliminate out-of-pocket insulin costs regardless of Medicare status. Eli Lilly's Insulin Value Program caps cost at $35 per month for any Lilly insulin with no income test required. Novo Nordisk's NovoCare Patient Assistance Program provides free insulin for patients whose household income is at or below 400 percent of the federal poverty level. Sanofi Patient Connection offers free insulin for income-qualified patients and a $35-per-month copay savings program for commercially-insured patients. For low-income patients who may qualify for Medicaid, insulin coverage is available in all 50 states with a nominal $1 to $4 copay. Check the federal poverty level eligibility requirements to see if you qualify for Medicaid or these manufacturer programs.",
+      "es": "Los pacientes sin cobertura de Medicare no quedan sin opciones en 2026. Los tres principales fabricantes de insulina operan programas que limitan o eliminan los costos de bolsillo de insulina independientemente del estado de Medicare. El Lilly Insulin Value Program limita el costo a $35 por mes para cualquier insulina Lilly sin requisito de prueba de ingresos. El Programa de Asistencia al Paciente NovoCare de Novo Nordisk proporciona insulina gratuita para pacientes cuyo ingreso familiar está en o por debajo del 400 por ciento del nivel federal de pobreza."
+    }
+  ],
+  "pointOfPay": {
+    "rows": [
+      {
+        "pointOfPay": {
+          "en": "Medicare Part D (2026)",
+          "es": "Medicare Parte D (2026)"
+        },
+        "cost": {
+          "en": "$35/month maximum per insulin product",
+          "es": "$35/mes máximo por producto de insulina"
+        },
+        "notes": {
+          "en": "No deductible applies. IRA-mandated cap, effective January 1, 2023. Applies to all covered insulins on your plan's formulary.",
+          "es": "No aplica deducible. Límite mandatado por IRA, efectivo 1 de enero de 2023. Aplica a todas las insulinas cubiertas en el formulario de su plan."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicare Part B (insulin pump, 2026)",
+          "es": "Medicare Parte B (bomba de insulina, 2026)"
+        },
+        "cost": {
+          "en": "$35/month maximum",
+          "es": "$35/mes máximo"
+        },
+        "notes": {
+          "en": "Applies to insulin used in durable medical equipment (insulin pumps). IRA cap effective July 1, 2023. Separate from Part D; 20% coinsurance applies to pump equipment.",
+          "es": "Aplica a insulina usada en equipos médicos duraderos (bombas de insulina). Límite IRA efectivo 1 de julio de 2023."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Commercial insurance (no state cap)",
+          "es": "Seguro comercial (sin límite estatal)"
+        },
+        "cost": {
+          "en": "$50 - $500+/month",
+          "es": "$50 - $500+/mes"
+        },
+        "notes": {
+          "en": "No federal cap as of 2026. Cost varies by plan formulary tier and deductible. Manufacturer savings cards often reduce to $35/month.",
+          "es": "Sin límite federal a partir de 2026. El costo varía según el nivel del formulario del plan y el deducible."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Commercial insurance (state cap states)",
+          "es": "Seguro comercial (estados con límite)"
+        },
+        "cost": {
+          "en": "$25 - $35/month (state-regulated plans only)",
+          "es": "$25 - $35/mes (solo planes regulados estatalmente)"
+        },
+        "notes": {
+          "en": "California ($35), Colorado ($35), Illinois ($35), New Jersey ($35), New York ($100), Connecticut ($25), and 25+ more states have enacted insulin copay caps for state-regulated plans. ERISA self-funded employer plans are exempt from state laws.",
+          "es": "California ($35), Colorado ($35), Illinois ($35), Nueva Jersey ($35), Nueva York ($100), Connecticut ($25) y más de 25 otros estados han promulgado límites de copago de insulina para planes regulados estatalmente."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Pharmacy counter (retail, cash without insurance)",
+          "es": "Mostrador de farmacia (al por menor, en efectivo sin seguro)"
+        },
+        "cost": {
+          "en": "$25 - $300/vial",
+          "es": "$25 - $300/vial"
+        },
+        "notes": {
+          "en": "Walmart ReliOn OTC human insulin: $24.88/vial. ReliOn NovoLog analog (Rx): $72.88/vial. Brand analogs like Humalog/Lantus: $160 to $300/vial without any savings program.",
+          "es": "Walmart ReliOn insulina humana sin receta: $24.88/vial. ReliOn NovoLog análoga (Rx): $72.88/vial. Análogos de marca como Humalog/Lantus: $160 a $300/vial sin ningún programa de ahorro."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicaid (all 50 states)",
+          "es": "Medicaid (todos los 50 estados)"
+        },
+        "cost": {
+          "en": "$1 - $4/prescription",
+          "es": "$1 - $4/receta"
+        },
+        "notes": {
+          "en": "Insulin is covered in all 50 states under Medicaid with nominal copay. Prior authorization may apply depending on insulin type and state.",
+          "es": "La insulina está cubierta en los 50 estados bajo Medicaid con copago nominal. La autorización previa puede aplicar según el tipo de insulina y el estado."
+        }
+      }
+    ],
+    "tableFootnote": {
+      "en": "Retail prices verified via GoodRx and Walmart pricing, May 2026. Medicare caps reflect IRA 2022 statute. State commercial caps apply only to fully-insured state-regulated plans, not ERISA self-funded employer plans.",
+      "es": "Precios minoristas verificados a través de GoodRx y precios de Walmart, mayo de 2026. Los límites de Medicare reflejan el estatuto de IRA 2022. Los límites comerciales estatales aplican solo a planes totalmente asegurados regulados estatalmente, no a planes de empleadores autofinanciados bajo ERISA."
+    },
+    "tableSource": "CMS IRA Medicare insulin cap, state insulin cap laws (ADA tracker), Walmart pharmacy, GoodRx 2026"
+  },
+  "whyHospitalsCharge": {
+    "paragraphs": [
+      {
+        "en": "Hospital inpatient insulin billing operates entirely outside the $35 cap. When a patient is admitted to a hospital and requires insulin during their stay, the hospital bills insulin under Medicare Part A (inpatient) or as a facility charge under commercial insurance, not under Medicare Part D. The $35 per month Part D cap only applies to insulin dispensed at a pharmacy counter. During an inpatient stay, hospitals routinely bill insulin at $200 to $500 per dose or more, compared to the Medicare Part B Average Sales Price of approximately $12 per unit. That gap is a markup of 10 to 40 times the government's reference price.",
+        "es": "La facturación hospitalaria de insulina interna opera completamente fuera del límite de $35. Cuando un paciente es admitido en un hospital y requiere insulina durante su estancia, el hospital factura la insulina bajo Medicare Parte A (hospitalización) o como un cargo de instalación bajo seguro comercial, no bajo Medicare Parte D. El límite de $35 al mes de la Parte D solo aplica a la insulina dispensada en el mostrador de una farmacia."
+      },
+      {
+        "en": "Three structural factors drive inpatient insulin markup. First, hospitals purchase insulin at a negotiated acquisition cost but bill at a chargemaster rate that can be 10 to 40 times higher. Second, administration fees, nursing time, and sterile preparation charges are stacked on top of the drug charge itself. Third, insulin is dosed frequently (sometimes multiple times per day in intensive care), so even a modest per-dose markup compounds quickly over a multi-day admission. Patients who receive a hospital bill showing insulin charges above $200 per dose should request an itemized statement, identify the HCPCS J1815 or J1817 line item, and compare the billed amount to the 2026 Medicare ASP rate of roughly $12 per unit as a baseline for dispute.",
+        "es": "Tres factores estructurales impulsan el aumento del precio de la insulina hospitalaria. Primero, los hospitales compran insulina a un costo de adquisición negociado pero facturan a una tarifa de lista que puede ser 10 a 40 veces mayor. Segundo, las tarifas de administración, el tiempo de enfermería y los cargos de preparación estéril se acumulan además del cargo del medicamento. Tercero, la insulina se dosifica frecuentemente, por lo que incluso un modesto aumento por dosis se acumula rápidamente durante una admisión de varios días."
+      },
+      {
+        "en": "Patients who are discharged from a hospital and need to fill an insulin prescription at a pharmacy for the first time are often surprised to find the cost significantly lower than what appeared on their inpatient bill. Part D protections and manufacturer savings programs apply at the pharmacy counter, not in the hospital. If you were charged hospital rates for insulin and want to dispute the markup, the CoveredUSA Medical Bill Analyzer can identify the specific line items and generate a dispute letter referencing the 2026 Medicare ASP benchmark.",
+        "es": "Los pacientes que son dados de alta de un hospital y necesitan surtir una receta de insulina en una farmacia por primera vez a menudo se sorprenden al encontrar que el costo es significativamente más bajo que lo que apareció en su factura hospitalaria. Las protecciones de la Parte D y los programas de ahorro del fabricante aplican en el mostrador de la farmacia, no en el hospital."
+      }
+    ]
+  },
+  "hcpcsSection": {
+    "intro": {
+      "en": "When insulin is administered in a hospital or clinical setting, it appears on your bill under HCPCS Level II J-codes. These codes are public domain and let you identify and challenge inflated charges:",
+      "es": "Cuando se administra insulina en un hospital o entorno clínico, aparece en su factura bajo los códigos J del Nivel II de HCPCS. Estos códigos son de dominio público y le permiten identificar y disputar cargos inflados:"
+    },
+    "rows": [
+      {
+        "code": "J1815",
+        "description": {
+          "en": "Insulin injection, per 5 units",
+          "es": "Inyección de insulina, por 5 unidades"
+        },
+        "whatToLookFor": {
+          "en": "Standard billing code for hospital-administered insulin. A billed unit price above $3 to $5 (for 5 units at the $12/unit ASP rate) signals potential overcharge.",
+          "es": "Código de facturación estándar para insulina administrada en hospital. Un precio unitario facturado superior a $3 a $5 señala un posible sobrecargo."
+        }
+      },
+      {
+        "code": "J1817",
+        "description": {
+          "en": "Insulin for insulin pump, per 50 units",
+          "es": "Insulina para bomba de insulina, por 50 unidades"
+        },
+        "whatToLookFor": {
+          "en": "Used for insulin pump supplies. The $35/month Part B cap applies to insulin used with durable medical equipment pumps. Look for this code if you use an insulin pump.",
+          "es": "Usado para suministros de bomba de insulina. El límite de $35/mes de la Parte B aplica a la insulina usada con bombas de equipo médico duradero."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "HCPCS J-codes are public-domain codes published by CMS. They are not the same as NDC codes. J1815 and J1817 apply to clinical-setting billing only; pharmacy counter fills are billed under a different system.",
+      "es": "Los códigos J del HCPCS son códigos de dominio público publicados por CMS. No son los mismos que los códigos NDC. J1815 y J1817 aplican solo a la facturación en entornos clínicos; los surtidos en el mostrador de la farmacia se facturan bajo un sistema diferente."
+    },
+    "source": "CMS HCPCS Level II 2026 coding, CMS Medicare Part B Drug Average Sales Price"
+  },
+  "patientAssistancePrograms": {
+    "intro": {
+      "en": "Patients without Medicare, or commercially-insured patients without adequate state cap protections, have three major manufacturer programs that replicate or exceed the $35-per-month floor. None of the three programs requires Medicare eligibility. Retail cash-price insulin runs $72 to $300 per vial for analog formulations in 2026, so the savings from these programs are substantial. The key rule: manufacturer copay savings cards cannot be used with Medicare, Medicaid, TRICARE, or VA benefits under the federal anti-kickback statute (42 U.S.C. section 1320a-7b). If you have any government insurance, use the income-based PAP track instead.",
+      "es": "Los pacientes sin Medicare, o los pacientes con seguro comercial sin protecciones adecuadas de límite estatal, tienen tres grandes programas del fabricante que replican o superan el piso de $35 por mes. Ninguno de los tres programas requiere elegibilidad de Medicare. La insulina en efectivo al por menor cuesta de $72 a $300 por vial para formulaciones análogas en 2026, por lo que los ahorros de estos programas son sustanciales."
+    },
+    "rows": [
+      {
+        "program": "Lilly Insulin Value Program",
+        "costBenefit": {
+          "en": "$35/month for any Lilly insulin (Humalog, Basaglar, Rezvoglar, Humulin). No income test. Available to commercially-insured and uninsured patients.",
+          "es": "$35/mes para cualquier insulina Lilly (Humalog, Basaglar, Rezvoglar, Humulin). Sin prueba de ingresos. Disponible para pacientes con seguro comercial y sin seguro."
+        },
+        "howToApply": "insulinaffordability.lilly.com"
+      },
+      {
+        "program": "Novo Nordisk NovoCare Patient Assistance Program",
+        "costBenefit": {
+          "en": "Free NovoLog, Tresiba, or Levemir for patients at or below 400% FPL (Medicare/no insurance). Commercially-insured patients with higher incomes can access MyInsulinRx digital savings.",
+          "es": "NovoLog, Tresiba o Levemir gratuito para pacientes al 400% FPL o menos (Medicare/sin seguro). Pacientes con seguro comercial con ingresos más altos pueden acceder a los ahorros digitales MyInsulinRx."
+        },
+        "howToApply": "novocare.com/pap"
+      },
+      {
+        "program": "Sanofi Patient Connection",
+        "costBenefit": {
+          "en": "Free Lantus, Toujeo, or Admelog for income-qualified patients at or below 400% FPL. Commercially-insured patients pay $35/month through the Insulins Valyou Savings Program.",
+          "es": "Lantus, Toujeo o Admelog gratuito para pacientes calificados por ingresos al 400% del FPL o menos. Pacientes con seguro comercial pagan $35/mes a través del Programa de Ahorros Insulins Valyou."
+        },
+        "howToApply": "sanofipatientconnection.com"
+      },
+      {
+        "program": "Walmart ReliOn Insulin (OTC)",
+        "costBenefit": {
+          "en": "$24.88/vial for ReliOn human insulin (Regular/NPH) without a prescription. ReliOn NovoLog analog: $72.88/vial (Rx required). No program enrollment needed.",
+          "es": "$24.88/vial para insulina humana ReliOn (Regular/NPH) sin receta. ReliOn NovoLog análoga: $72.88/vial (se requiere receta). No se necesita inscripción en ningún programa."
+        },
+        "howToApply": "walmart.com/pharmacy"
+      }
+    ],
+    "footnote": {
+      "en": "Manufacturer savings cards, manufacturer coupons, and copay programs (Lilly Insulin Value Program, Sanofi Insulins Valyou) are not available to Medicare, Medicaid, TRICARE, or VA beneficiaries under the federal anti-kickback statute (42 U.S.C. section 1320a-7b). If you have government insurance, use the income-based free-drug PAP track: NovoCare PAP for Novo Nordisk insulins, Sanofi Patient Connection PAP for Sanofi insulins, or the Lilly Cares Foundation for Lilly insulins. Manufacturer copay programs are for commercially-insured and uninsured patients only.",
+      "es": "Las tarjetas de ahorro y los programas de copago del fabricante no están disponibles para los beneficiarios de Medicare, Medicaid, TRICARE o VA bajo el estatuto federal anti-soborno. Si tiene seguro del gobierno, use el programa PAP de medicamento gratuito basado en ingresos."
+    },
+    "source": "Lilly Insulin Value Program (insulinaffordability.lilly.com), Novo Nordisk NovoCare (novocare.com), Sanofi Patient Connection (sanofipatientconnection.com), Walmart pharmacy"
+  },
+  "medicarePartD": {
+    "hasSpecificCap": true,
+    "paragraphs": [
+      {
+        "en": "Medicare Part D enrollees pay a maximum of $35 per month for every covered insulin product on their plan's formulary in 2026. The cap is mandated by the Inflation Reduction Act of 2022 (Public Law 117-169, signed August 16, 2022) and took effect January 1, 2023. The cap is not a discount or coupon: it is a statutory ceiling. No deductible applies to insulin under Part D in 2026. If your pharmacy charged you more than $35 in a calendar month for an insulin covered by your plan, that is a billing error and you should call your plan's member services number immediately. Starting in 2026, the plan calculates your cost as the lesser of: $35, 25 percent of the negotiated price, or 25 percent of the Maximum Fair Price if the insulin is subject to IRA price negotiation.",
+        "es": "Los inscritos en Medicare Parte D pagan un máximo de $35 por mes por cada producto de insulina cubierto en el formulario de su plan en 2026. El límite está mandatado por la Ley de Reducción de la Inflación de 2022 (Ley Pública 117-169, firmada el 16 de agosto de 2022) y entró en vigor el 1 de enero de 2023. El límite no es un descuento o cupón: es un techo estatutario. No aplica ningún deducible a la insulina bajo la Parte D en 2026."
+      },
+      {
+        "en": "A separate $35 per month Medicare Part B cap applies to insulin used with insulin pumps that qualify as durable medical equipment, effective July 1, 2023. Part B insulin coverage is distinct from Part D: Part B covers only insulin delivered by a Medicare-covered pump, while Part D covers all other prescription insulin. For Part B, the standard 20 percent coinsurance and the $283 annual Part B deductible apply to the pump equipment and supplies, but the insulin itself is capped at $35 per month. Patients who use both a pump (Part B) and multiple daily injections (Part D) benefit from both caps.",
+        "es": "Un límite separado de $35 por mes de Medicare Parte B aplica a la insulina usada con bombas de insulina que califican como equipo médico duradero, efectivo el 1 de julio de 2023. La cobertura de insulina de la Parte B es distinta de la Parte D: la Parte B cubre solo la insulina entregada por una bomba cubierta por Medicare, mientras que la Parte D cubre toda otra insulina recetada."
+      },
+      {
+        "en": "Medicare Part D does not cover insulin used for weight loss or any off-label purpose. All insulin covered under Part D must be for the treatment of diabetes. The $35 cap applies only to the insulins your specific plan covers; if a preferred insulin is not on your plan's formulary, ask your prescriber to submit a formulary exception request. CMS data shows that approximately 3.3 million Medicare Part D enrollees use insulin, and all of them benefit from this cap in 2026. Patients with very low income may also qualify for Medicare Extra Help, which can further reduce Part D costs on other medications to near zero.",
+        "es": "Medicare Parte D no cubre la insulina usada para pérdida de peso o cualquier propósito fuera de etiqueta. Toda insulina cubierta bajo la Parte D debe ser para el tratamiento de la diabetes. El límite de $35 aplica solo a las insulinas que cubre su plan específico; si una insulina preferida no está en el formulario de su plan, pida a su prescriptor que presente una solicitud de excepción al formulario."
+      }
+    ]
+  },
+  "commonBillingErrors": {
+    "intro": {
+      "en": "If you have Medicare Part D and paid more than $35 per month for insulin, or received a hospital bill with insulin charges over $200 per dose, check for these common errors before paying:",
+      "es": "Si tiene Medicare Parte D y pagó más de $35 por mes por insulina, o recibió una factura hospitalaria con cargos de insulina superiores a $200 por dosis, verifique estos errores comunes antes de pagar:"
+    },
+    "items": [
+      {
+        "en": "Deductible applied to insulin at a Part D pharmacy: the IRA cap removes the deductible for insulin. If your plan charged you the deductible amount before applying the $35 cap, request a billing correction and refund from your plan.",
+        "es": "Deducible aplicado a la insulina en una farmacia Parte D: el límite de la IRA elimina el deducible para la insulina. Si su plan le cobró el monto del deducible antes de aplicar el límite de $35, solicite una corrección de facturación y reembolso a su plan."
+      },
+      {
+        "en": "Manufacturer savings card applied to a Medicare claim: federal law bars manufacturer copay cards from Medicare, Medicaid, TRICARE, and VA claims. If a pharmacy applied a savings card to a Medicare claim, the claim may be reversed, leaving you responsible for the balance. The correct path for Medicare patients is the income-based manufacturer PAP, not the savings card.",
+        "es": "Tarjeta de ahorro del fabricante aplicada a un reclamo de Medicare: la ley federal prohíbe las tarjetas de copago del fabricante en reclamos de Medicare, Medicaid, TRICARE y VA."
+      },
+      {
+        "en": "Wrong insulin dispensed and billed at a higher-tier copay: if your plan substituted a formulary insulin without your prescriber's agreement, you may be entitled to a tier exception to pay the lower-tier amount. Request a formulary exception or step-therapy override.",
+        "es": "Insulina incorrecta dispensada y facturada a un copago de nivel más alto: si su plan sustituyó una insulina del formulario sin el acuerdo de su prescriptor, puede tener derecho a una excepción de nivel para pagar el monto de nivel más bajo."
+      },
+      {
+        "en": "Hospital inpatient insulin billed at $200+ per dose: inpatient insulin is not covered by the $35 Part D cap. However, charges above $100 per vial equivalent (far above the $12 Medicare ASP rate) are common dispute targets. Request an itemized bill with J-codes, then contact the hospital's billing department to request a reduction to the Medicare rate.",
+        "es": "Insulina hospitalaria facturada a $200+ por dosis: la insulina hospitalaria no está cubierta por el límite de $35 de la Parte D. Sin embargo, los cargos por encima de $100 por equivalente de vial son objetivos comunes de disputa."
+      },
+      {
+        "en": "Insulin pump insulin billed under Part D instead of Part B: if you use a Medicare-covered insulin pump, your pump insulin should be billed under Part B (with the $35 cap), not Part D. Getting it billed under the wrong part can result in higher cost-sharing. Ask your durable medical equipment supplier which benefit is being billed.",
+        "es": "Insulina para bomba de insulina facturada bajo la Parte D en lugar de la Parte B: si usa una bomba de insulina cubierta por Medicare, su insulina para la bomba debe facturarse bajo la Parte B (con el límite de $35), no la Parte D."
+      },
+      {
+        "en": "Commercial plan applying a deductible to insulin in a state with a copay cap law: if you live in California, Colorado, Illinois, New Jersey, New York, or Connecticut (among others), your state-regulated commercial plan may be required to cap insulin without applying a deductible. Check your state's insurance commissioner website to see if your plan type is covered by your state's insulin cap law. Note: ERISA self-funded employer plans are exempt from state insurance laws.",
+        "es": "Plan comercial aplicando un deducible a la insulina en un estado con ley de límite de copago: si vive en California, Colorado, Illinois, Nueva Jersey, Nueva York o Connecticut (entre otros), su plan comercial regulado estatalmente puede estar obligado a limitar la insulina sin aplicar un deducible."
+      }
+    ]
+  },
+  "pharmacyPriceComparison": {
+    "caption": {
+      "en": "Insulin price by pharmacy (2026)",
+      "es": "Precio de insulina por farmacia (2026)"
+    },
+    "rows": [
+      {
+        "pharmacy": "Walmart (ReliOn OTC)",
+        "price": {
+          "en": "$24.88/vial (human insulin, no Rx)",
+          "es": "$24.88/vial (insulina humana, sin receta)"
+        },
+        "notes": {
+          "en": "ReliOn Regular (R) and NPH (N) are older human insulin formulations, not analogs. Ask pharmacist. Refrigeration required. ReliOn NovoLog analog: $72.88/vial (Rx required).",
+          "es": "ReliOn Regular (R) y NPH (N) son formulaciones de insulina humana más antiguas, no análogos. Solicitar al farmacéutico. Requiere refrigeración. ReliOn NovoLog análoga: $72.88/vial (se requiere receta)."
+        }
+      },
+      {
+        "pharmacy": "Costco Member Prescription",
+        "price": {
+          "en": "$35 - $85/vial (analog, with Costco Rx program)",
+          "es": "$35 - $85/vial (análoga, con programa Rx de Costco)"
+        },
+        "notes": {
+          "en": "Costco offers some of the lowest cash prices for brand analog insulin. Basaglar and insulin glargine generics run as low as $35/vial. Membership not required to use pharmacy.",
+          "es": "Costco ofrece algunos de los precios en efectivo más bajos para insulina análoga de marca. Basaglar e insulina glargina genérica llegan a tan poco como $35/vial."
+        }
+      },
+      {
+        "pharmacy": "Kroger Rx Savings Club",
+        "price": {
+          "en": "$58 - $120/vial (analog formulations with GoodRx coupon)",
+          "es": "$58 - $120/vial (formulaciones análogas con cupón GoodRx)"
+        },
+        "notes": {
+          "en": "Cash prices vary significantly by insulin type. Insulin glargine (Lantus generic) starts around $58/vial with GoodRx at Kroger. Annual $36 club membership reduces costs further.",
+          "es": "Los precios en efectivo varían significativamente según el tipo de insulina. La insulina glargina (genérica de Lantus) comienza alrededor de $58/vial con GoodRx en Kroger."
+        }
+      },
+      {
+        "pharmacy": "CVS w/ GoodRx coupon",
+        "price": {
+          "en": "$34 - $175/vial (varies by insulin type)",
+          "es": "$34 - $175/vial (varía según el tipo de insulina)"
+        },
+        "notes": {
+          "en": "Humalog at CVS with GoodRx runs approximately $34/vial. Lantus cash (without coupon) is near $422/vial; GoodRx brings it to $35 to $50. Prices vary by ZIP code and availability.",
+          "es": "Humalog en CVS con GoodRx cuesta aproximadamente $34/vial. El precio en efectivo de Lantus (sin cupón) ronda los $422/vial; GoodRx lo reduce a $35 a $50."
+        }
+      },
+      {
+        "pharmacy": "Walgreens",
+        "price": {
+          "en": "$45 - $300/vial (cash, varies by formulation)",
+          "es": "$45 - $300/vial (en efectivo, varía según la formulación)"
+        },
+        "notes": {
+          "en": "Walgreens cash prices for insulin analogs are among the highest without a coupon or savings program. GoodRx at Walgreens can reduce Lantus to near $50/vial. Walgreens Prescription Savings Club provides modest additional discount.",
+          "es": "Los precios en efectivo de Walgreens para insulinas análogas están entre los más altos sin cupón o programa de ahorro. GoodRx en Walgreens puede reducir Lantus a cerca de $50/vial."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "Cash prices verified May 2026 via GoodRx.com and chain member-program pricing. Prices vary by ZIP code, insulin strength (U-100 vs U-500), and pack size (vial vs pen). Manufacturer savings programs ($35/month) and Part D coverage will be lower than any cash price listed here for eligible patients.",
+      "es": "Precios en efectivo verificados en mayo de 2026 a través de GoodRx.com y precios de programas de membresía de cadenas. Los precios varían según el código postal, la concentración de insulina (U-100 vs U-500) y el tamaño del envase (vial vs pluma)."
+    },
+    "source": "GoodRx 2026, Walmart ReliOn pharmacy, Costco Member Prescription Program, Kroger Rx Savings Club, Walgreens"
+  },
+  "genericBiosimilarStatus": {
+    "hasGeneric": false,
+    "genericName": null,
+    "patentExpiry": null,
+    "biosimilars": [
+      {
+        "brand": "Basaglar",
+        "manufacturer": "Eli Lilly",
+        "relativeCost": {
+          "en": "Approximately 15 to 20 percent lower than Lantus reference price; included in Lilly $35/month program",
+          "es": "Aproximadamente 15 a 20 por ciento más bajo que el precio de referencia de Lantus; incluido en el programa Lilly de $35/mes"
+        }
+      },
+      {
+        "brand": "Semglee",
+        "manufacturer": "Viatris/Biocon",
+        "relativeCost": {
+          "en": "Approximately 65 percent lower list price than Lantus; FDA-designated interchangeable biosimilar",
+          "es": "Precio de lista aproximadamente 65 por ciento más bajo que Lantus; biosimilar intercambiable designado por FDA"
+        }
+      },
+      {
+        "brand": "Rezvoglar",
+        "manufacturer": "Eli Lilly",
+        "relativeCost": {
+          "en": "Approximately 65 percent lower list price than Lantus; FDA-designated interchangeable biosimilar for insulin glargine",
+          "es": "Precio de lista aproximadamente 65 por ciento más bajo que Lantus; biosimilar intercambiable designado por FDA para insulina glargina"
+        }
+      }
+    ],
+    "note": {
+      "en": "Insulin is a biologic, not a small-molecule drug, so there are biosimilars rather than traditional generics. As of 2026, Basaglar, Semglee, and Rezvoglar are FDA-approved biosimilars to Lantus (insulin glargine). For rapid-acting insulin, Merilog (insulin aspart biosimilar) received FDA approval as a biosimilar to NovoLog. No traditional generic equivalent for insulin exists. Under the IRA $35 Medicare cap, the cost difference between the reference biologic and its biosimilar is largely irrelevant for Medicare patients, since all cost $35 or less per month.",
+      "es": "La insulina es un biológico, no un medicamento de molécula pequeña, por lo que existen biosimilares en lugar de genéricos tradicionales. A partir de 2026, Basaglar, Semglee y Rezvoglar son biosimilares aprobados por la FDA para Lantus (insulina glargina). Para insulina de acción rápida, Merilog (biosimilar de insulina aspart) recibió la aprobación de la FDA como biosimilar de NovoLog."
+    }
+  },
+  "papEligibilityTable": {
+    "caption": {
+      "en": "PAP eligibility by household size (2026): 400% FPL threshold for Novo Nordisk and Sanofi programs",
+      "es": "Elegibilidad PAP por tamaño del hogar (2026): umbral del 400% del FPL para programas de Novo Nordisk y Sanofi"
+    },
+    "fplPctReferenced": 400,
+    "rows": [
+      {
+        "householdSize": 1,
+        "incomeThreshold": 63840,
+        "incomeLabel": {
+          "en": "≤ $63,840",
+          "es": "≤ $63,840"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 2,
+        "incomeThreshold": 86560,
+        "incomeLabel": {
+          "en": "≤ $86,560",
+          "es": "≤ $86,560"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 3,
+        "incomeThreshold": 109280,
+        "incomeLabel": {
+          "en": "≤ $109,280",
+          "es": "≤ $109,280"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 4,
+        "incomeThreshold": 132000,
+        "incomeLabel": {
+          "en": "≤ $132,000",
+          "es": "≤ $132,000"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 5,
+        "incomeThreshold": 154720,
+        "incomeLabel": {
+          "en": "≤ $154,720",
+          "es": "≤ $154,720"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 6,
+        "incomeThreshold": 177440,
+        "incomeLabel": {
+          "en": "≤ $177,440",
+          "es": "≤ $177,440"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 7,
+        "incomeThreshold": 200160,
+        "incomeLabel": {
+          "en": "≤ $200,160",
+          "es": "≤ $200,160"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 8,
+        "incomeThreshold": 222880,
+        "incomeLabel": {
+          "en": "≤ $222,880",
+          "es": "≤ $222,880"
+        },
+        "fplPct": 400
+      },
+      {
+        "householdSize": "Each additional person",
+        "incomeThreshold": 22720,
+        "incomeLabel": {
+          "en": "+ $22,720",
+          "es": "+ $22,720"
+        },
+        "fplPct": 400
+      }
+    ],
+    "year": 2026,
+    "source": "HHS 2026 federal poverty guidelines, https://aspe.hhs.gov/poverty-guidelines"
+  },
+  "denialAlternatives": {
+    "appealSteps": [
+      {
+        "en": "Step 1: Request a written denial notice (Explanation of Benefits or denial letter) from your plan within 60 days of the denial. The notice must state the specific reason for denial and your appeal rights.",
+        "es": "Paso 1: Solicite un aviso de denegación por escrito (Explicación de Beneficios o carta de denegación) de su plan dentro de los 60 días de la denegación."
+      },
+      {
+        "en": "Step 2: File a formal internal appeal with your plan. For Part D insulin, cite the IRA $35 statutory cap (42 U.S.C. section 1395w-102) and request that the plan apply the cap without a deductible. For commercial plans, cite your state's insulin copay cap statute if applicable.",
+        "es": "Paso 2: Presente una apelación interna formal con su plan. Para insulina de la Parte D, cite el límite estatutario de $35 de IRA y solicite que el plan aplique el límite sin deducible."
+      },
+      {
+        "en": "Step 3: Ask your prescriber to file a peer-to-peer review or a formulary exception request if your specific insulin brand is not on the formulary. A formulary exception can get a non-covered insulin covered at the lowest tier copay.",
+        "es": "Paso 3: Pida a su prescriptor que presente una revisión entre iguales o una solicitud de excepción al formulario si su marca específica de insulina no está en el formulario."
+      },
+      {
+        "en": "Step 4: If the internal appeal is denied, request an external independent review. Medicare Part D appeals escalate to the Independent Review Entity (IRE). Commercial plan appeals escalate through your state's Department of Insurance external review process.",
+        "es": "Paso 4: Si se niega la apelación interna, solicite una revisión externa independiente. Las apelaciones de la Parte D de Medicare escalan a la Entidad de Revisión Independiente (IRE)."
+      },
+      {
+        "en": "Step 5: While the appeal is pending, contact the manufacturer PAP directly to obtain emergency supply. All three major insulin makers (Lilly, Novo Nordisk, Sanofi) have programs that can bridge gaps during insurance disputes.",
+        "es": "Paso 5: Mientras la apelación está pendiente, comuníquese directamente con el PAP del fabricante para obtener suministro de emergencia. Los tres principales fabricantes de insulina tienen programas que pueden cubrir brechas durante disputas de seguro."
+      }
+    ],
+    "stepTherapyOverride": {
+      "en": "If your commercial plan requires you to try a lower-cost insulin first (step therapy) before covering your prescribed insulin, ask your prescriber to file a step-therapy override. A valid override reason includes: prior treatment failure on the required first-step insulin, medical contraindication to the alternative, or clinical urgency. Many states have enacted step-therapy override laws requiring commercial plans to issue a decision within 72 hours of an urgent request. For Medicare Part D, prior authorization and step therapy requirements for insulin are regulated by CMS.",
+      "es": "Si su plan comercial le exige probar una insulina de menor costo primero (terapia escalonada) antes de cubrir su insulina prescrita, pida a su prescriptor que presente una anulación de terapia escalonada. Una razón válida incluye: fracaso de tratamiento previo con la insulina de primer paso requerida, contraindicación médica a la alternativa o urgencia clínica."
+    },
+    "papFallback": {
+      "en": "If commercial insurance denials and appeals fail, apply for the manufacturer PAP for your specific insulin brand. Lilly Insulin Value Program ($35/month, no income test) covers Humalog, Basaglar, Rezvoglar, and Humulin. NovoCare covers NovoLog, Tresiba, and Levemir for income-eligible patients (at or below 400% FPL). Sanofi Patient Connection covers Lantus, Toujeo, and Admelog for income-eligible patients (at or below 400% FPL). All three PAPs provide medication free or at $35/month while commercial insurance disputes are resolved.",
+      "es": "Si las denegaciones y apelaciones del seguro comercial fallan, solicite el PAP del fabricante para su marca específica de insulina. Lilly Insulin Value Program ($35/mes, sin prueba de ingresos) cubre Humalog, Basaglar, Rezvoglar y Humulin. NovoCare cubre NovoLog, Tresiba y Levemir para pacientes elegibles por ingresos (al 400% del FPL o menos)."
+    },
+    "genericAlternative": {
+      "en": "Biosimilar alternatives to brand insulin can cost 15 to 65 percent less at list price. Basaglar, Semglee, and Rezvoglar are FDA-approved interchangeable biosimilars to Lantus (insulin glargine). Your pharmacist may be able to substitute an interchangeable biosimilar automatically in most states, which can reduce your copay under a commercial plan formulary. Under the IRA Medicare $35 cap, the cost difference between the reference biologic and the biosimilar is largely eliminated for Medicare patients.",
+      "es": "Las alternativas biosimilares a la insulina de marca pueden costar de 15 a 65 por ciento menos al precio de lista. Basaglar, Semglee y Rezvoglar son biosimilares intercambiables aprobados por la FDA para Lantus (insulina glargina). Su farmacéutico puede sustituir un biosimilar intercambiable automáticamente en la mayoría de los estados."
+    }
+  },
+  "howToApplyPap": {
+    "programName": "Novo Nordisk NovoCare Patient Assistance Program",
+    "numberedSteps": [
+      {
+        "en": "Step 1: Determine your eligibility. You must have Medicare or no prescription drug insurance, your household income must be at or below 400% FPL (see table above), and you must be a US resident. Medicare patients with income below 150% FPL must also show proof they applied for and were denied Part D Extra Help.",
+        "es": "Paso 1: Determine su elegibilidad. Debe tener Medicare o ningún seguro de medicamentos recetados, su ingreso familiar debe estar al 400% del FPL o menos, y debe ser residente de EE.UU."
+      },
+      {
+        "en": "Step 2: Visit novocare.com/pap or call 1-844-668-6463 to begin the application. Download the patient application form (PDF) from the NovoCare website or request a paper form by phone.",
+        "es": "Paso 2: Visite novocare.com/pap o llame al 1-844-668-6463 para comenzar la solicitud. Descargue el formulario de solicitud del paciente (PDF) del sitio web de NovoCare o solicite un formulario en papel por teléfono."
+      },
+      {
+        "en": "Step 3: Gather required documents: signed prescription from your US-licensed prescriber, proof of household income (two most recent federal tax returns or four consecutive pay stubs), proof of US residency (utility bill, lease, or government ID), and confirmation of Medicare or lack of prescription insurance.",
+        "es": "Paso 3: Reúna los documentos requeridos: receta firmada de su prescriptor con licencia en EE.UU., prueba de ingreso del hogar (las dos declaraciones de impuestos federales más recientes o cuatro talones de pago consecutivos), prueba de residencia en EE.UU., y confirmación de Medicare o falta de seguro de prescripción."
+      },
+      {
+        "en": "Step 4: Complete both the patient section and the prescriber section of the application form. Your doctor must sign and date the prescriber portion. Submit by fax or mail per the instructions on the form. Processing typically takes 7 to 14 business days.",
+        "es": "Paso 4: Complete tanto la sección del paciente como la sección del prescriptor del formulario de solicitud. Su médico debe firmar y fechar la porción del prescriptor. Envíe por fax o correo según las instrucciones del formulario."
+      },
+      {
+        "en": "Step 5: If approved, Novo Nordisk ships your insulin directly to your home or to your prescriber's office at no cost. Enrollment is typically annual; you must reapply each year to maintain access.",
+        "es": "Paso 5: Si es aprobado, Novo Nordisk envía su insulina directamente a su hogar o al consultorio de su prescriptor sin costo. La inscripción es típicamente anual; debe volver a solicitar cada año para mantener el acceso."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/basics/costs/help/drug-costs",
+    "manufacturerStartingUrl": "https://www.novocare.com/diabetes/help-with-costs/pap.html",
+    "documentsNeeded": [
+      {
+        "en": "Signed prescription from a US-licensed prescriber (NovoCare accepted insulins: NovoLog, Tresiba, Levemir)",
+        "es": "Receta firmada de un prescriptor con licencia en EE.UU. (insulinas aceptadas por NovoCare: NovoLog, Tresiba, Levemir)"
+      },
+      {
+        "en": "Proof of household income: two most recent federal tax returns OR four consecutive pay stubs",
+        "es": "Prueba de ingreso del hogar: las dos declaraciones de impuestos federales más recientes O cuatro talones de pago consecutivos"
+      },
+      {
+        "en": "Proof of US residency: utility bill, lease agreement, or government-issued ID with US address",
+        "es": "Prueba de residencia en EE.UU.: factura de servicios, contrato de arrendamiento, o identificación emitida por el gobierno con dirección en EE.UU."
+      },
+      {
+        "en": "Medicare card (if applicable) showing Medicare enrollment and coverage dates",
+        "es": "Tarjeta de Medicare (si aplica) que muestre la inscripción en Medicare y las fechas de cobertura"
+      },
+      {
+        "en": "For Medicare patients with income below 150% FPL: denial letter from Social Security Administration showing Extra Help was applied for and denied",
+        "es": "Para pacientes de Medicare con ingresos por debajo del 150% del FPL: carta de denegación de la Administración del Seguro Social que muestre que se solicitó Extra Help y fue denegado"
+      },
+      {
+        "en": "Statement confirming you do not have other prescription drug insurance that covers the insulin",
+        "es": "Declaración confirmando que no tiene otro seguro de medicamentos recetados que cubra la insulina"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Household income exceeds 400% FPL threshold for your household size (or 200% FPL for uninsured patients in some programs)",
+        "es": "El ingreso del hogar supera el umbral del 400% del FPL para su tamaño de hogar (o 200% del FPL para pacientes sin seguro en algunos programas)"
+      },
+      {
+        "en": "Patient has active prescription drug insurance coverage that could cover the insulin (commercial or Part D plan)",
+        "es": "El paciente tiene cobertura de seguro de medicamentos recetados activa que podría cubrir la insulina (plan comercial o Parte D)"
+      },
+      {
+        "en": "Incomplete application: missing prescriber signature, missing income documents, or patient section not fully filled out",
+        "es": "Solicitud incompleta: falta la firma del prescriptor, faltan documentos de ingresos, o la sección del paciente no está completamente llena"
+      },
+      {
+        "en": "Medicare patients who did not provide proof of Extra Help denial (required when income is below 150% FPL)",
+        "es": "Pacientes de Medicare que no proporcionaron prueba de denegación de Extra Help (requerido cuando el ingreso está por debajo del 150% del FPL)"
+      },
+      {
+        "en": "Patient is not a US resident or citizen, or proof of residency was not included with the application",
+        "es": "El paciente no es residente o ciudadano de EE.UU., o no se incluyó prueba de residencia con la solicitud"
+      }
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "Does the $35 insulin cap apply to my commercial insurance in 2026?",
+        "answer": "No, not at the federal level. The $35 per month insulin cap is a Medicare-only benefit under the Inflation Reduction Act of 2022. Commercial health plans, including ACA Marketplace plans and employer group plans, have no equivalent federal cap as of 2026. However, over 30 states have enacted insulin copay caps for state-regulated commercial plans: California ($35), Colorado ($35), Illinois ($35), New Jersey ($35), New York ($100), and Connecticut ($25) are among them. Important limitation: ERISA self-funded employer plans are exempt from state insurance laws, so many large employer plans may not be subject to state caps even if your state has one."
+      },
+      {
+        "question": "Is there a generic or biosimilar for insulin in 2026?",
+        "answer": "Insulin has no traditional generic equivalent because it is a biologic, not a small-molecule drug. However, FDA-approved biosimilars are available. For long-acting insulin glargine (the molecule in Lantus), three biosimilars are approved: Basaglar (Eli Lilly), Semglee (Viatris/Biocon), and Rezvoglar (Eli Lilly). Semglee and Rezvoglar carry FDA interchangeable biosimilar designation, meaning pharmacists can substitute them for Lantus automatically in most states. For rapid-acting insulin, the FDA approved Merilog as a biosimilar to NovoLog (insulin aspart) as of 2026. Under the Medicare $35 cap, the cost difference between reference biologics and biosimilars is largely eliminated for Medicare patients."
+      },
+      {
+        "question": "How do I apply for the manufacturer patient assistance program for insulin?",
+        "answer": "All three major insulin makers have patient assistance programs. For Novo Nordisk NovoCare PAP (NovoLog, Tresiba, Levemir): visit novocare.com/pap or call 1-844-668-6463. You need proof of income at or below 400% FPL, a signed prescription, and proof of US residency. For Lilly Insulin Value Program (Humalog, Basaglar, Rezvoglar): visit insulinaffordability.lilly.com. No income test required; program is open to commercially-insured and uninsured patients at $35/month. For Sanofi Patient Connection (Lantus, Toujeo, Admelog): visit sanofipatientconnection.com or call 1-888-847-4877. Income at or below 400% FPL required for free drug; commercially-insured patients pay $35/month through the copay program. Note: none of these savings card or copay programs can be used with Medicare, Medicaid, TRICARE, or VA."
+      },
+      {
+        "question": "Can I use a manufacturer insulin savings card with Medicare?",
+        "answer": "No. Federal anti-kickback law (42 U.S.C. section 1320a-7b) bars manufacturer copay savings cards from being used by anyone with Medicare, Medicaid, TRICARE, or VA coverage. This is not a policy preference: it is a federal legal prohibition. If you have Medicare Part D, the IRA's $35 per month cap is your statutory protection, and it is stronger than any savings card since it covers all formulary insulins with no deductible. Medicare patients who still cannot afford insulin should apply for the manufacturer's income-based patient assistance program, which operates separately from the savings cards and is legally available to Medicare beneficiaries."
+      },
+      {
+        "question": "Does the IRA $35 insulin cap apply in the hospital?",
+        "answer": "No. The $35 cap applies to insulin dispensed at a pharmacy counter under Medicare Part D, and to insulin used in durable medical equipment pumps under Medicare Part B. Inpatient hospital insulin is billed under Medicare Part A (hospital insurance) or facility charges under commercial plans, not under Part D. During a hospital stay, you can be charged $200 to $500 or more per dose for insulin, and the $35 cap does not limit those charges. If you receive an unexpectedly large hospital bill for insulin, request an itemized statement, compare J-code J1815 charges to the 2026 Medicare ASP rate of roughly $12 per unit, and dispute charges that are more than two to three times that rate."
+      },
+      {
+        "question": "What is the difference between the Medicare Part D and Part B insulin caps?",
+        "answer": "Both caps are $35 per month per insulin product under the 2026 rules. The distinction is what they cover. Medicare Part D covers insulin purchased at a pharmacy counter for self-injection (pens and vials). The Part D $35 cap effective January 1, 2023, applies to all insulins on your plan's formulary with no deductible. Medicare Part B covers insulin used in insulin pumps that qualify as durable medical equipment. The Part B $35 cap effective July 1, 2023, applies only to that pump-delivered insulin. Standard 20 percent Part B coinsurance and the $283 Part B deductible still apply to the pump equipment and supplies, just not to the insulin itself."
+      },
+      {
+        "question": "Do I qualify for the manufacturer patient assistance program for insulin?",
+        "answer": "Eligibility depends on which manufacturer makes your insulin and which program track you are applying for. For the income-based free-drug PAP (Novo Nordisk and Sanofi): you generally need household income at or below 400% of the federal poverty level. For a household of one, that is $63,840 in 2026. For a household of four, that is $132,000 in 2026. You must also be a US resident with Medicare coverage or no prescription insurance. For Eli Lilly's Insulin Value Program: no income test. Any commercially-insured or uninsured patient can pay $35/month regardless of income. TRICARE, VA, Medicaid, and Medicare savings-card tracks all have different eligibility rules."
+      },
+      {
+        "question": "What if my insurance denies coverage for my insulin?",
+        "answer": "Start by requesting the written denial reason. For Medicare Part D, any insulin covered by your plan must be provided at $35/month with no deductible under the IRA cap. If the plan denies the claim, file an internal appeal citing 42 U.S.C. section 1395w-102. If your specific insulin is not on the formulary, your prescriber can file a formulary exception request. For commercial insurance, check if your state has an insulin copay cap law. File a step-therapy override if the plan requires a different insulin first. While appealing, contact the manufacturer PAP for your insulin brand to get a bridge supply at $35/month or free during the dispute."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿El límite de $35 de insulina aplica a mi seguro comercial en 2026?",
+        "answer": "No, no a nivel federal. El límite de $35 por mes de insulina es un beneficio exclusivo de Medicare bajo la Ley de Reducción de la Inflación de 2022. Los planes de salud comerciales, incluidos los planes del Mercado ACA y los planes de grupo de empleadores, no tienen un límite federal equivalente a partir de 2026. Sin embargo, más de 30 estados han promulgado límites de copago de insulina para planes comerciales regulados estatalmente: California ($35), Colorado ($35), Illinois ($35), Nueva Jersey ($35), Nueva York ($100) y Connecticut ($25) están entre ellos. Limitación importante: los planes de empleadores autofinanciados bajo ERISA están exentos de las leyes de seguro estatal."
+      },
+      {
+        "question": "¿Hay un genérico o biosimilar para la insulina en 2026?",
+        "answer": "La insulina no tiene un equivalente genérico tradicional porque es un biológico, no un medicamento de molécula pequeña. Sin embargo, hay biosimilares aprobados por la FDA. Para la insulina glargina de acción prolongada (la molécula en Lantus), hay tres biosimilares aprobados: Basaglar (Eli Lilly), Semglee (Viatris/Biocon) y Rezvoglar (Eli Lilly). Semglee y Rezvoglar tienen la designación de biosimilar intercambiable de la FDA, lo que significa que los farmacéuticos pueden sustituirlos por Lantus automáticamente en la mayoría de los estados."
+      },
+      {
+        "question": "¿Cómo solicito el programa de asistencia al paciente del fabricante para insulina?",
+        "answer": "Los tres principales fabricantes de insulina tienen programas de asistencia al paciente. Para NovoCare de Novo Nordisk (NovoLog, Tresiba, Levemir): visite novocare.com/pap o llame al 1-844-668-6463. Necesita prueba de ingresos al 400% del FPL o menos, una receta firmada y prueba de residencia en EE.UU. Para Lilly Insulin Value Program (Humalog, Basaglar, Rezvoglar): visite insulinaffordability.lilly.com. No se requiere prueba de ingresos. Para Sanofi Patient Connection (Lantus, Toujeo, Admelog): visite sanofipatientconnection.com o llame al 1-888-847-4877."
+      },
+      {
+        "question": "¿Puedo usar una tarjeta de ahorros de insulina del fabricante con Medicare?",
+        "answer": "No. La ley federal anti-soborno (42 U.S.C. sección 1320a-7b) prohíbe que las tarjetas de ahorro de copago del fabricante sean utilizadas por cualquier persona con cobertura de Medicare, Medicaid, TRICARE o VA. Si tiene Medicare Parte D, el límite de $35 por mes de la IRA es su protección estatutaria, y es más fuerte que cualquier tarjeta de ahorro ya que cubre todas las insulinas del formulario sin deducible. Los pacientes de Medicare que aún no puedan pagar la insulina deben solicitar el programa de asistencia al paciente basado en ingresos del fabricante."
+      },
+      {
+        "question": "¿El límite de $35 de insulina de la IRA aplica en el hospital?",
+        "answer": "No. El límite de $35 aplica a la insulina dispensada en el mostrador de una farmacia bajo Medicare Parte D, y a la insulina usada en bombas de equipo médico duradero bajo Medicare Parte B. La insulina hospitalaria interna se factura bajo Medicare Parte A (seguro hospitalario) o cargos de instalación bajo planes comerciales, no bajo la Parte D. Durante una estancia hospitalaria, puede cobrarle $200 a $500 o más por dosis de insulina, y el límite de $35 no limita esos cargos."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre los límites de insulina de Medicare Parte D y Parte B?",
+        "answer": "Ambos límites son de $35 por mes por producto de insulina bajo las reglas de 2026. La distinción es lo que cubren. Medicare Parte D cubre la insulina comprada en el mostrador de una farmacia para autoinyección. El límite de $35 de la Parte D efectivo el 1 de enero de 2023 aplica a todas las insulinas en el formulario de su plan sin deducible. Medicare Parte B cubre la insulina usada en bombas de insulina que califican como equipo médico duradero. El límite de $35 de la Parte B efectivo el 1 de julio de 2023 aplica solo a esa insulina entregada por bomba."
+      },
+      {
+        "question": "¿Califico para el programa de asistencia al paciente del fabricante para insulina?",
+        "answer": "La elegibilidad depende de qué fabricante hace su insulina y qué pista de programa está solicitando. Para el PAP de medicamento gratuito basado en ingresos (Novo Nordisk y Sanofi): generalmente necesita ingresos del hogar al 400% del nivel federal de pobreza o menos. Para un hogar de una persona, eso es $63,840 en 2026. Para un hogar de cuatro, es $132,000 en 2026. Para el Lilly Insulin Value Program: no hay prueba de ingresos. Cualquier paciente con seguro comercial o sin seguro puede pagar $35/mes independientemente de los ingresos."
+      },
+      {
+        "question": "¿Qué pasa si mi seguro niega la cobertura de mi insulina?",
+        "answer": "Comience solicitando la razón de la negación por escrito. Para Medicare Parte D, cualquier insulina cubierta por su plan debe proporcionarse a $35/mes sin deducible bajo el límite de la IRA. Si el plan niega el reclamo, presente una apelación interna citando 42 U.S.C. sección 1395w-102. Si su insulina específica no está en el formulario, su prescriptor puede presentar una solicitud de excepción al formulario. Para seguro comercial, verifique si su estado tiene una ley de límite de copago de insulina. Mientras apela, contacte el PAP del fabricante para obtener un suministro puente a $35/mes o gratis durante la disputa."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Insulin Cost Guide",
+        "es": "Guía de Costo de Insulina"
+      },
+      "href": "/drug/insulin-cost"
+    },
+    {
+      "label": {
+        "en": "Humalog Cost",
+        "es": "Costo de Humalog"
+      },
+      "href": "/drug/humalog-cost"
+    },
+    {
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Límites de Ingresos de Medicaid"
+      },
+      "href": "/medicaid-income-limits"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMS Inflation Reduction Act and Medicare: Insulin Provisions",
+      "url": "https://www.cms.gov/inflation-reduction-act-and-medicare",
+      "note": {
+        "en": "Official CMS summary of IRA Medicare insulin cap provisions for Part D (effective January 1, 2023) and Part B (effective July 1, 2023).",
+        "es": "Resumen oficial de CMS de las disposiciones del límite de insulina Medicare IRA para la Parte D (efectivo 1 de enero de 2023) y la Parte B (efectivo 1 de julio de 2023)."
+      }
+    },
+    {
+      "name": "KFF: The Facts About the $35 Insulin Copay Cap in Medicare",
+      "url": "https://www.kff.org/medicare/the-facts-about-the-35-insulin-copay-cap-in-medicare/",
+      "note": {
+        "en": "KFF analysis of the IRA $35 insulin cap, covering which insulins are included, how many Medicare beneficiaries benefit, and Part B vs Part D distinctions.",
+        "es": "Análisis de KFF sobre el límite de insulina de $35 de la IRA, que cubre qué insulinas están incluidas y cuántos beneficiarios de Medicare se benefician."
+      }
+    },
+    {
+      "name": "FDA Biosimilar Product Information: Insulin Biosimilars",
+      "url": "https://www.fda.gov/drugs/biosimilars/biosimilar-product-information",
+      "note": {
+        "en": "FDA registry of approved insulin biosimilars including Semglee, Rezvoglar, and newly approved Merilog for rapid-acting insulin aspart.",
+        "es": "Registro de la FDA de biosimilares de insulina aprobados, incluidos Semglee, Rezvoglar y el recientemente aprobado Merilog para insulina aspart de acción rápida."
+      }
+    },
+    {
+      "name": "ASPE HHS: 2026 Federal Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "2026 federal poverty guidelines used to calculate PAP eligibility thresholds ($15,960 base for household of one; $5,680 per additional person).",
+        "es": "Pautas de pobreza federal 2026 usadas para calcular los umbrales de elegibilidad PAP ($15,960 base para hogar de uno; $5,680 por persona adicional)."
+      }
+    },
+    {
+      "name": "Novo Nordisk NovoCare Patient Assistance Program",
+      "url": "https://www.novocare.com/diabetes/help-with-costs/pap.html",
+      "note": {
+        "en": "Official NovoCare PAP page with income eligibility requirements, 2026 program changes, and application instructions.",
+        "es": "Página oficial del PAP de NovoCare con requisitos de elegibilidad de ingresos, cambios en el programa 2026 e instrucciones de solicitud."
+      }
+    },
+    {
+      "name": "CMS Medicare Part B Drug Average Sales Price: Insulin",
+      "url": "https://www.cms.gov/medicare/medicare-part-b-drug-average-sales-price",
+      "note": {
+        "en": "Quarterly CMS publication of the Medicare Part B ASP rate for hospital-administered insulin (J1815, J1817), used as the baseline for hospital billing dispute calculations.",
+        "es": "Publicación trimestral de CMS de la tarifa ASP de Medicare Parte B para insulina administrada en hospital, usada como línea base para cálculos de disputa de facturación hospitalaria."
+      }
+    }
+  ]
+}
