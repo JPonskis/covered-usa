@@ -117,6 +117,22 @@ const TEMPLATE_TO_PREFIX = {
   'track-d': '/medicaid-income-limits',
 };
 
+// Template -> the prebuild validator that gates it. `npm run prebuild` chains
+// these with &&, so ANY bad file fails the whole Vercel build. The publisher
+// must therefore never promote a page that its validator rejects.
+// (track-d has no prebuild validator, so it isn't gated.)
+const VALIDATOR_FOR = {
+  procedure: 'validate-procedures.js',
+  drug: 'validate-drugs.js',
+  persona: 'validate-personas.js',
+  event: 'validate-events.js',
+  'event-x-state': 'validate-events.js',
+  qa: 'validate-qa.js',
+  'qa-x-state': 'validate-qa.js',
+  glossary: 'validate-glossary.js',
+  'ma-state': 'validate-medicare-advantage.js',
+};
+
 // ────────────────────────────────────────────────────────────────────────────
 // CLI args
 // ────────────────────────────────────────────────────────────────────────────
@@ -252,6 +268,30 @@ function routeForSlug(oldRoute, actualSlug) {
   return r.replace(/[^/]+$/, actualSlug);
 }
 
+// Run the prebuild validators for the templates we're about to ship and return
+// the SET of slugs flagged bad (❌). A flagged page would fail `npm run build`'s
+// prebuild step and break the entire Vercel deploy, so it must never reach main.
+// The validators scan all files of a type; we only act on the slugs WE promoted.
+function validatePromotedSlugs(rows) {
+  const flagged = new Set();
+  const validators = new Set(
+    rows.map(r => VALIDATOR_FOR[(r.template || '').trim()]).filter(Boolean)
+  );
+  for (const v of validators) {
+    let out = '';
+    try {
+      out = execSync(`node scripts/${v}`, { cwd: REPO_ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+    } catch (e) {
+      out = `${e.stdout || ''}\n${e.stderr || ''}`; // validator exits non-zero on bad files
+    }
+    for (const line of out.split('\n')) {
+      const m = line.match(/❌\s+([A-Za-z0-9._-]+)\.json/);
+      if (m) flagged.add(m[1]);
+    }
+  }
+  return flagged;
+}
+
 // ────────────────────────────────────────────────────────────────────────────
 // Sheet read
 // ────────────────────────────────────────────────────────────────────────────
@@ -346,6 +386,23 @@ async function markPublished(sheets, shipped) {
     requestBody: { valueInputOption: 'RAW', data },
   });
   console.log(`  Sheet: marked ${shipped.length} rows Status=Published${fixed ? ` (self-healed ${fixed} slug/route mismatches)` : ''}.`);
+}
+
+// Park rows we refused to publish because they fail their validator: revert to
+// blank Status + a held note, so they don't sit falsely Ready and a human/regen
+// can fix them. Status=blank, notes (col R).
+async function markHeld(sheets, rows, reason) {
+  if (!rows.length) return;
+  const data = [];
+  for (const row of rows) {
+    data.push({ range: `${MASTER_TAB}!S${row._sheetRow}`, values: [['']] });
+    data.push({ range: `${MASTER_TAB}!R${row._sheetRow}`, values: [[`held ${TODAY}: ${reason}`]] });
+  }
+  await sheets.spreadsheets.values.batchUpdate({
+    spreadsheetId: SHEET_ID,
+    requestBody: { valueInputOption: 'RAW', data },
+  });
+  console.log(`  Sheet: parked ${rows.length} build-failing rows (Status=blank + held note).`);
 }
 
 // For rows that came from SEO Ideas (sheet_row_id populated), append a
@@ -514,6 +571,35 @@ async function main() {
     row._actualRoute = actualRoute;
     row._needsSheetFix = res.needsSheetFix;
     shipReady.push(row);
+  }
+
+  // ── Build-gate: never promote a page that fails its prebuild validator ──
+  // A flagged page would fail `npm run build` (validators chained with &&) and
+  // break the entire Vercel deploy — exactly the incident this guards against.
+  // Drop + un-promote failures so only build-passing pages reach main.
+  const validationFailed = [];
+  if (shipReady.length) {
+    const flagged = validatePromotedSlugs(shipReady);
+    if (flagged.size) {
+      const survivors = [];
+      for (const row of shipReady) {
+        if (flagged.has(row._actualSlug)) {
+          try { execSync(`git restore --staged --worktree -- "${row._relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (e) { /* best effort */ }
+          validationFailed.push(row);
+          skipped.push({ row, reason: `validation-failed (would break build): ${row._relPath}` });
+        } else {
+          survivors.push(row);
+        }
+      }
+      shipReady.length = 0;
+      shipReady.push(...survivors);
+      console.log(`  [build-gate] dropped ${validationFailed.length} page(s) that fail their validator; kept off main.`);
+    }
+  }
+  // Park the dropped rows (real runs only) so they don't sit falsely Ready.
+  if (!DRY && validationFailed.length) {
+    try { await markHeld(sheets, validationFailed, 'failed prebuild validator; regenerate'); }
+    catch (e) { console.error('  markHeld failed:', e.message); }
   }
 
   console.log(`[3] ${shipReady.length} ready to ship, ${skipped.length} skipped.`);
