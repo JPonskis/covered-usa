@@ -102,6 +102,21 @@ const TEMPLATE_TO_DIR = {
   template: null,              // sentinel/placeholder rows
 };
 
+// Route prefix per template — used to reconstruct a route when the sheet's
+// route column is blank/malformed but the file resolved fine.
+const TEMPLATE_TO_PREFIX = {
+  procedure: '/cost',
+  drug: '/drug',
+  persona: '/for',
+  event: '/event',
+  'event-x-state': '/event',
+  qa: '/qa',
+  'qa-x-state': '/qa',
+  glossary: '/glossary',
+  'ma-state': '/medicare-advantage',
+  'track-d': '/medicaid-income-limits',
+};
+
 // ────────────────────────────────────────────────────────────────────────────
 // CLI args
 // ────────────────────────────────────────────────────────────────────────────
@@ -142,8 +157,8 @@ function sh(cmd, opts = {}) {
 // Build the live URL for a row. The Master Backlog `route` column already
 // holds the canonical path (e.g. /cost/cataract-surgery, /qa/foo-bar) so we
 // just prefix the host. /en/ default; /es/* paths render as-is.
-function liveUrlFor(row) {
-  const route = (row.route || '').trim();
+function liveUrlFor(route) {
+  route = (route || '').trim();
   if (!route.startsWith('/')) return null;
   // Spanish twin rows have routes like /es/medicare-advantage/georgia.
   // English template rows have routes like /cost/cataract-surgery — render at /en/...
@@ -153,20 +168,88 @@ function liveUrlFor(row) {
   return `https://${HOST}/en${route}`;
 }
 
-// Map a row to its expected JSON file path (or null if template is deferred).
-function expectedFilePathFor(row) {
+// ── Slug resolution helpers ──────────────────────────────────────────────────
+// The join key across the pipeline is the slug. Writers strip years to pass
+// GATE A, so a sheet topic_slug like "jardiance-medicare-2026" can map to a file
+// named "jardiance-medicare.json". We resolve the ACTUAL file deterministically
+// so a slug drift can never strand a written page.
+
+// Strip any 4-digit year (1900-2099) segment from a slug and tidy hyphens.
+function stripYear(slug) {
+  return String(slug || '')
+    .replace(/-(19|20)\d{2}(?=-|$)/g, '')
+    .replace(/(^|-)(19|20)\d{2}-/g, '$1')
+    .replace(/--+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+const norm = s => stripYear(String(s || '').toLowerCase());
+
+// Does a path exist on origin/drip-queue? (no working-tree changes)
+function existsOnDripQueue(relPath) {
+  try {
+    execSync(`git cat-file -e "origin/drip-queue:${relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' });
+    return true;
+  } catch { return false; }
+}
+
+// Slugs of JSON files in a template dir on origin/drip-queue.
+function listDripDirSlugs(dir) {
+  try {
+    const out = execSync(`git ls-tree -r --name-only origin/drip-queue -- content/data/${dir}/`, { cwd: REPO_ROOT, encoding: 'utf8' });
+    return out.trim().split('\n').filter(f => f.endsWith('.json'))
+      .map(f => f.replace(/^content\/data\/[^/]+\//, '').replace(/\.json$/, ''));
+  } catch { return []; }
+}
+
+// Resolve the actual file for a Ready row.
+// Returns { dir, slug, relPath, source:'main'|'drip', needsSheetFix } on success,
+// { skipReason } for deferred/unknown template or missing slug,
+// or { dir, slug:null, relPath:null } when no file is written anywhere yet.
+function resolveFileForRow(row, dripQueueAvailable) {
   const tmpl = (row.template || '').trim();
   const dir = TEMPLATE_TO_DIR[tmpl];
-  if (dir === undefined) {
-    return { path: null, reason: `unknown-template "${tmpl}"` };
+  if (dir === undefined) return { skipReason: `unknown-template "${tmpl}"` };
+  if (dir === null) return { skipReason: `deferred-template "${tmpl}"` };
+  const sheetSlug = (row.topic_slug || '').trim();
+  if (!sheetSlug) return { skipReason: 'missing topic_slug' };
+
+  // Deterministic candidates: exact, year-stripped, lowercased, both.
+  // (Writers lowercase filenames; the cloud routine runs on case-sensitive Linux.)
+  const cands = [];
+  for (const c of [sheetSlug, stripYear(sheetSlug), sheetSlug.toLowerCase(), stripYear(sheetSlug).toLowerCase()]) {
+    if (c && !cands.includes(c)) cands.push(c);
   }
-  if (dir === null) {
-    return { path: null, reason: `deferred-template "${tmpl}"` };
+
+  for (const slug of cands) {
+    const relPath = `content/data/${dir}/${slug}.json`;
+    if (fs.existsSync(path.join(REPO_ROOT, relPath))) {
+      return { dir, slug, relPath, source: 'main', needsSheetFix: slug !== sheetSlug };
+    }
+    if (dripQueueAvailable && existsOnDripQueue(relPath)) {
+      return { dir, slug, relPath, source: 'drip', needsSheetFix: slug !== sheetSlug };
+    }
   }
-  const slug = (row.topic_slug || '').trim();
-  if (!slug) return { path: null, reason: 'missing topic_slug' };
-  const filePath = path.join(CONTENT_DATA, dir, `${slug}.json`);
-  return { path: filePath, reason: null };
+
+  // Last resort: a UNIQUE normalized (year-stripped, lowercased) match in the
+  // template dir on drip-queue. Only used when exactly one file matches, so we
+  // never guess between ambiguous candidates.
+  if (dripQueueAvailable) {
+    const want = norm(sheetSlug);
+    const matches = listDripDirSlugs(dir).filter(s => norm(s) === want);
+    if (matches.length === 1) {
+      const slug = matches[0];
+      return { dir, slug, relPath: `content/data/${dir}/${slug}.json`, source: 'drip', needsSheetFix: slug !== sheetSlug };
+    }
+  }
+  return { dir, slug: null, relPath: null };
+}
+
+// Corrected route = swap the final path segment for the actual slug.
+function routeForSlug(oldRoute, actualSlug) {
+  const r = (oldRoute || '').trim();
+  if (!r.startsWith('/')) return r;
+  return r.replace(/[^/]+$/, actualSlug);
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -247,11 +330,22 @@ async function markPublished(sheets, shipped) {
     range: `${MASTER_TAB}!S${row._sheetRow}:U${row._sheetRow}`,
     values: [['Published', TODAY, row._liveUrl]],
   }));
+  // Self-heal: if we resolved this row via a slug fallback (sheet slug had a
+  // year / drifted from the actual filename), correct topic_slug (D) + route (C)
+  // so future lookups are exact and the published URL matches the sheet.
+  let fixed = 0;
+  for (const row of shipped) {
+    if (row._needsSheetFix && row._actualSlug) {
+      data.push({ range: `${MASTER_TAB}!C${row._sheetRow}`, values: [[row._actualRoute]] });
+      data.push({ range: `${MASTER_TAB}!D${row._sheetRow}`, values: [[row._actualSlug]] });
+      fixed++;
+    }
+  }
   await sheets.spreadsheets.values.batchUpdate({
     spreadsheetId: SHEET_ID,
     requestBody: { valueInputOption: 'RAW', data },
   });
-  console.log(`  Sheet: marked ${shipped.length} rows Status=Published.`);
+  console.log(`  Sheet: marked ${shipped.length} rows Status=Published${fixed ? ` (self-healed ${fixed} slug/route mismatches)` : ''}.`);
 }
 
 // For rows that came from SEO Ideas (sheet_row_id populated), append a
@@ -348,15 +442,11 @@ async function main() {
     return db - da;
   });
 
-  const candidates = ready.slice(0, limit);
-  console.log(`[2] Top ${candidates.length} candidates after sort + cap.`);
-
-  // ── Step 2.5: fetch latest drip-queue ref so we can promote staged files ──
+  // ── Step 2.5: fetch latest drip-queue ref so we can resolve/promote files ──
   // Architecture: bulk-production writes JSON files to the `drip-queue` branch
   // (Vercel ignores it). The cron promotes N files/day from drip-queue → main.
-  // This gives us a true 15/day publish throttle even when many files are
-  // queued. If drip-queue doesn't exist (e.g. legacy push-to-main flow), we
-  // fall back to main-only mode and just check fs.existsSync.
+  // If drip-queue doesn't exist (legacy push-to-main flow), fall back to
+  // main-only mode and just check fs.existsSync.
   let dripQueueAvailable = false;
   try {
     sh('git fetch origin drip-queue 2>&1 || git fetch origin drip-queue:refs/remotes/origin/drip-queue 2>&1');
@@ -366,47 +456,63 @@ async function main() {
     console.warn('  [!] drip-queue branch not found on origin — running in main-only mode.');
   }
 
-  // Resolve file paths + URLs.
-  const shipReady = [];
-  const skipped = [];
-  for (const row of candidates) {
-    const { path: filePath, reason } = expectedFilePathFor(row);
-    const liveUrl = liveUrlFor(row);
-    if (!filePath) {
-      skipped.push({ row, reason });
+  // Resolve EVERY Ready row to a real file FIRST, then cap. Rows whose file
+  // isn't written yet (or whose slug can't be resolved) never burn a daily slot
+  // — only genuinely-shippable rows count toward MAX_PER_DAY. This is the fix
+  // for the "skips waste the cap" bug.
+  const resolved = [];      // rows mapping to a real file (main or drip-queue)
+  const skipped = [];       // deferred / unknown-template / bad-route / duplicate-file
+  const seenRel = new Set();// dedup: two Ready rows must never map to the same file
+  let noFileYet = 0;        // Ready but not written anywhere yet (normal, not an error)
+  for (const row of ready) {
+    const res = resolveFileForRow(row, dripQueueAvailable);
+    if (res.skipReason) { skipped.push({ row, reason: res.skipReason }); continue; }
+    if (!res.relPath) { noFileYet++; continue; }
+    if (seenRel.has(res.relPath)) {
+      skipped.push({ row, reason: `duplicate-file: another Ready row already maps to ${res.relPath}` });
       continue;
     }
+    // Route: prefer the (possibly corrected) sheet route; if it's blank/malformed,
+    // reconstruct from the template prefix + the actual slug so a junk route can't
+    // strand an otherwise-shippable page.
+    let actualRoute = res.needsSheetFix ? routeForSlug(row.route, res.slug) : (row.route || '').trim();
+    let liveUrl = liveUrlFor(actualRoute);
     if (!liveUrl) {
-      skipped.push({ row, reason: `bad route "${row.route}"` });
-      continue;
+      const prefix = TEMPLATE_TO_PREFIX[(row.template || '').trim()];
+      if (prefix) { actualRoute = `${prefix}/${res.slug}`; liveUrl = liveUrlFor(actualRoute); }
     }
-    // If the file isn't already on main's working tree, try to promote it
-    // from drip-queue. `git checkout origin/drip-queue -- <path>` brings it
-    // into the working tree AND stages it in one shot.
-    let promotedFromQueue = false;
-    if (!fs.existsSync(filePath) && dripQueueAvailable) {
-      const relPath = path.relative(REPO_ROOT, filePath);
+    if (!liveUrl) { skipped.push({ row, reason: `bad route "${row.route}" (could not reconstruct)` }); continue; }
+    if (actualRoute !== (row.route || '').trim()) res.needsSheetFix = true; // self-heal route on publish
+    seenRel.add(res.relPath);
+    resolved.push({ row, res, actualRoute, liveUrl });
+  }
+  console.log(`[2] ${resolved.length} Ready rows resolve to a real file; ${noFileYet} not-written-yet; ${skipped.length} skipped (template/route). Capping at ${limit}.`);
+
+  // Cap AFTER resolution — guarantees up to `limit` REAL pages ship.
+  const toShip = resolved.slice(0, limit);
+
+  // Promote the chosen files from drip-queue into main's working tree.
+  const shipReady = [];
+  for (const { row, res, actualRoute, liveUrl } of toShip) {
+    const absPath = path.join(REPO_ROOT, res.relPath);
+    if (res.source === 'drip' && !fs.existsSync(absPath)) {
       try {
-        execSync(`git checkout origin/drip-queue -- "${relPath}"`, {
+        execSync(`git checkout origin/drip-queue -- "${res.relPath}"`, {
           cwd: REPO_ROOT, stdio: ['ignore', 'pipe', 'pipe'], encoding: 'utf8',
         });
-        if (fs.existsSync(filePath)) {
-          promotedFromQueue = true;
-          console.log(`  [↓] Promoted from drip-queue: ${relPath}`);
-        }
-      } catch (e) {
-        // File not on drip-queue either — fall through to skip.
-      }
+        console.log(`  [↓] Promoted from drip-queue: ${res.relPath}`);
+      } catch (e) { /* fall through to existence check */ }
     }
-    if (!fs.existsSync(filePath)) {
-      const where = dripQueueAvailable ? 'main AND drip-queue' : 'main';
-      skipped.push({ row, reason: `file missing on ${where}: ${path.relative(REPO_ROOT, filePath)}` });
+    if (!fs.existsSync(absPath)) {
+      skipped.push({ row, reason: `file vanished during promote: ${res.relPath}` });
       continue;
     }
-    row._filePath = filePath;
+    row._filePath = absPath;
+    row._relPath = res.relPath;
     row._liveUrl = liveUrl;
-    row._relPath = path.relative(REPO_ROOT, filePath);
-    row._promotedFromQueue = promotedFromQueue;
+    row._actualSlug = res.slug;
+    row._actualRoute = actualRoute;
+    row._needsSheetFix = res.needsSheetFix;
     shipReady.push(row);
   }
 

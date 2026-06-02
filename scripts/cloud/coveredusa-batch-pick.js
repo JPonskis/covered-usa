@@ -54,7 +54,7 @@ function buildAuth() {
     catch (e) { throw new Error('GOOGLE_SERVICE_ACCOUNT_JSON is set but not valid JSON: ' + e.message); }
     return new google.auth.GoogleAuth({
       credentials: creds,
-      scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
   }
   const keyFile = process.env.GOOGLE_SA_KEYFILE
@@ -64,7 +64,7 @@ function buildAuth() {
   }
   return new google.auth.GoogleAuth({
     keyFile,
-    scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   });
 }
 
@@ -87,12 +87,29 @@ async function getSheet() {
   return { COL, data: rows.slice(1).map((r, i) => ({ sheetRow: i + 2, cells: r })) };
 }
 
+// Strip any 4-digit year (1900-2099) from a slug and tidy hyphens. The writers'
+// GATE A forbids years in slugs, so we normalize here at pick time and write the
+// clean slug back to the sheet — that way the file the writer creates, the sheet
+// topic_slug, and the publisher lookup all agree from the start.
+function normalizeSlug(slug) {
+  return String(slug || '')
+    .toLowerCase() // writers lowercase filenames; the cloud routine runs on case-sensitive Linux
+    .replace(/-(19|20)\d{2}(?=-|$)/g, '')
+    .replace(/(^|-)(19|20)\d{2}-/g, '$1')
+    .replace(/--+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 function buildRowObject(COL, row) {
   const get = (col) => (row.cells[COL[col]] || '').trim();
   const template = get('template');
   const config = TEMPLATE_CONFIG[template];
   if (!config) return null;
-  const slug = get('topic_slug');
+  const rawSlug = get('topic_slug');
+  const slug = normalizeSlug(rawSlug);
+  const rawRoute = get('route');
+  const slugFixed = !!slug && slug !== rawSlug;
+  const route = (slugFixed && rawRoute) ? rawRoute.replace(/[^/]+$/, slug) : rawRoute;
   const state = get('state');
   const title = get('title');
   const subtype = get('subtype');
@@ -100,8 +117,10 @@ function buildRowObject(COL, row) {
     row_id: get('row_id'),
     sheet_row: row.sheetRow,
     template,
-    route: get('route'),
+    route,
     topic_slug: slug,
+    raw_topic_slug: rawSlug,
+    slug_fixed: slugFixed,
     state,
     title,
     priority: parseInt(get('priority'), 10) || 999,
@@ -125,7 +144,7 @@ function buildRowObject(COL, row) {
 }
 
 function filterAndSort(COL, data) {
-  return data
+  const sorted = data
     .map(r => buildRowObject(COL, r))
     .filter(r => r !== null)
     .filter(r => !DEFERRED_TEMPLATES.has(r.template))
@@ -136,6 +155,14 @@ function filterAndSort(COL, data) {
     .filter(r => !r.status || r.status === '')
     .filter(r => !fs.existsSync(r.output_file_absolute))
     .sort((a, b) => a.priority - b.priority || b.demand_score - a.demand_score);
+  // Dedup by output file: two rows whose slugs normalize to the same file (e.g.
+  // foo-2025 and foo-2026 -> foo) must not both be picked in one batch.
+  const seen = new Set();
+  return sorted.filter(r => {
+    if (seen.has(r.output_file)) return false;
+    seen.add(r.output_file);
+    return true;
+  });
 }
 
 async function main() {
@@ -183,6 +210,34 @@ async function main() {
 
   const filtered = filterAndSort(COL, data);
   const picked = filtered.slice(0, count);
+
+  // Persist normalized slugs back to the sheet so the file the writer creates,
+  // the sheet topic_slug, and the publisher lookup all agree. Collision-guarded:
+  // never write a clean slug that another row already uses.
+  const fixes = picked.filter(r => r.slug_fixed);
+  if (fixes.length) {
+    const slugCol = COL['topic_slug'];
+    const taken = new Set();
+    data.forEach(d => { const s = (d.cells[slugCol] || '').trim(); if (s) taken.add(s); });
+    const colLetter = i => { let s = ''; i++; while (i > 0) { const m = (i - 1) % 26; s = String.fromCharCode(65 + m) + s; i = (i - m - 1) / 26; } return s; };
+    const slugL = colLetter(COL['topic_slug']);
+    const routeL = colLetter(COL['route']);
+    const updates = [];
+    const applied = [];
+    for (const r of fixes) {
+      if (taken.has(r.topic_slug)) continue; // collision: leave raw, publisher fallback resolves
+      taken.add(r.topic_slug);
+      updates.push({ range: `'${TAB}'!${slugL}${r.sheet_row}`, values: [[r.topic_slug]] });
+      if (r.route) updates.push({ range: `'${TAB}'!${routeL}${r.sheet_row}`, values: [[r.route]] });
+      applied.push(`${r.raw_topic_slug} -> ${r.topic_slug}`);
+    }
+    if (updates.length) {
+      const sheets = google.sheets({ version: 'v4', auth: buildAuth() });
+      await sheets.spreadsheets.values.batchUpdate({ spreadsheetId: SHEET_ID, requestBody: { valueInputOption: 'RAW', data: updates } });
+      console.error(`[pick] normalized ${applied.length} year-slug(s) in sheet: ${applied.join('; ')}`);
+    }
+  }
+
   const byTemplate = {};
   picked.forEach(r => { byTemplate[r.template] = (byTemplate[r.template] || 0) + 1; });
 
