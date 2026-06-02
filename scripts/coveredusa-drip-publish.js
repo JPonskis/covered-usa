@@ -557,6 +557,10 @@ async function main() {
       console.log(`  Staged ${staged.length} files.`);
       const msg = `drip-publish: ship ${shipReady.length} template pages ${TODAY}`;
       sh(`git commit -m "${msg}"`);
+      // Sync with any concurrent push (e.g. a manual run on another host) before
+      // pushing, so the publisher never fails on a non-fast-forward. Promoted
+      // files are additive, so the rebase is conflict-free in practice.
+      sh('git pull --rebase origin main');
       sh(`git push origin main`);
       console.log('  Pushed.');
     }
