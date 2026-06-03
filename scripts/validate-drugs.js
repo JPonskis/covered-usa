@@ -218,6 +218,28 @@ function validateDrug(slug, data) {
   return errors;
 }
 
+// Auto-fix known 2026 anchor fact drift before validation.
+// These are deterministic corrections — LLM verifiers occasionally miss them,
+// so we fix in-place here rather than blocking the build.
+function autoFixDrug(filePath, data) {
+  const fixes = [];
+  const p = data.pricing || {};
+
+  if (p.partBDeductibleYear === 2026 && p.partDAnnualOopCap === 2000) {
+    data.pricing.partDAnnualOopCap = 2100;
+    fixes.push('partDAnnualOopCap 2000 → 2100');
+  }
+  if (p.partBDeductibleYear === 2026 && p.partBDeductibleAmount === 226) {
+    data.pricing.partBDeductibleAmount = 283;
+    fixes.push('partBDeductibleAmount 226 → 283');
+  }
+
+  if (fixes.length) {
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
+  }
+  return fixes;
+}
+
 function main() {
   if (!fs.existsSync(DRUGS_DIR)) {
     // Acceptable: drugs dir might not exist yet on first deploy
@@ -242,6 +264,10 @@ function main() {
       totalErrors++;
       badFiles++;
       continue;
+    }
+    const fixed = autoFixDrug(filePath, data);
+    if (fixed.length) {
+      console.log(`  🔧 ${file}: auto-fixed ${fixed.join(', ')}`);
     }
     const errors = validateDrug(slug, data);
     const cq = validateContentQuality(slug, data);

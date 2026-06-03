@@ -600,6 +600,29 @@ async function main() {
   if (!DRY && validationFailed.length) {
     try { await markHeld(sheets, validationFailed, 'failed prebuild validator; regenerate'); }
     catch (e) { console.error('  markHeld failed:', e.message); }
+
+    // Remove bad files from drip-queue so they don't accumulate and don't
+    // trigger repeated Vercel preview build failures on every cron push.
+    if (dripQueueAvailable) {
+      console.log(`  [cleanup] removing ${validationFailed.length} bad file(s) from drip-queue...`);
+      for (const row of validationFailed) {
+        const relPath = row._relPath;
+        const slug = row._actualSlug || relPath.split('/').pop().replace(/\.json$/, '');
+        const tmpBranch = `cleanup-${slug}-${Date.now()}`;
+        try {
+          execSync(`git checkout --quiet -b ${tmpBranch} origin/drip-queue`, { cwd: REPO_ROOT, stdio: 'ignore' });
+          execSync(`git rm --quiet --force "${relPath}" 2>/dev/null || true`, { cwd: REPO_ROOT, stdio: 'ignore' });
+          execSync(`git commit --quiet -m "cleanup: remove validation-failed file ${slug}" 2>/dev/null || true`, { cwd: REPO_ROOT, stdio: 'ignore' });
+          execSync(`git push --force-with-lease origin ${tmpBranch}:drip-queue`, { cwd: REPO_ROOT, stdio: 'ignore' });
+          console.log(`    [✓] removed from drip-queue: ${relPath}`);
+        } catch (e) {
+          console.warn(`    [!] could not remove ${relPath} from drip-queue: ${e.message.slice(0, 120)}`);
+        } finally {
+          try { execSync(`git checkout --quiet main`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (_) {}
+          try { execSync(`git branch -D ${tmpBranch}`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (_) {}
+        }
+      }
+    }
   }
 
   console.log(`[3] ${shipReady.length} ready to ship, ${skipped.length} skipped.`);
