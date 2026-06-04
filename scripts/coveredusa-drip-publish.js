@@ -326,23 +326,44 @@ function linkIndexCollisionPhrases() {
 }
 
 // Full build-gate: runs the EXACT prebuild Vercel runs (per-file validators +
-// the cross-page link-index builder) against the promoted working tree, and
-// returns the SET of OUR promoted slugs that would break the build. We hold only
-// our own pages — never the existing pages already live on main.
+// the cross-page link-index builder) against the promoted working tree.
+// Returns { validatorBad: Set<slug>, collisionPhrases: string[] } so callers can
+// AUTO-FIX collisions (mechanical) and regenerate validator failures (need prose).
 function runBuildGate(rows) {
-  const flagged = validatePromotedSlugs(rows);
-  const phrases = linkIndexCollisionPhrases();
-  if (phrases.length) {
-    for (const row of rows) {
-      try {
-        const d = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, row._relPath), 'utf8'));
-        const kt = d.keyTerms || {};
-        const all = [...(kt.en || []), ...(kt.es || [])];
-        if (phrases.some(p => all.includes(p))) flagged.add(row._actualSlug);
-      } catch (_) { /* unreadable; validators will have caught shape issues */ }
-    }
+  return {
+    validatorBad: validatePromotedSlugs(rows),
+    collisionPhrases: linkIndexCollisionPhrases(),
+  };
+}
+
+// Self-heal: remove the given phrases from a page's keyTerms (en + es). Tries a
+// line-level edit first (preserves the file's formatting); falls back to a JSON
+// rewrite if that would produce invalid JSON. Returns true if the file changed.
+function stripPhrasesFromKeyTerms(filePath, phrases) {
+  let raw;
+  try { raw = fs.readFileSync(filePath, 'utf8'); } catch (_) { return false; }
+  const kept = raw.split('\n').filter(l => {
+    const t = l.trim();
+    return !phrases.some(p => t === `"${p}",` || t === `"${p}"`);
+  });
+  const out = kept.join('\n');
+  if (out !== raw) {
+    try { JSON.parse(out); fs.writeFileSync(filePath, out); return true; } catch (_) { /* fall through to JSON rewrite */ }
   }
-  return flagged;
+  try {
+    const d = JSON.parse(raw);
+    const kt = d.keyTerms || {};
+    let changed = false;
+    for (const lang of ['en', 'es']) {
+      if (Array.isArray(kt[lang])) {
+        const before = kt[lang].length;
+        kt[lang] = kt[lang].filter(p => !phrases.includes(p));
+        if (kt[lang].length !== before) changed = true;
+      }
+    }
+    if (changed) { fs.writeFileSync(filePath, JSON.stringify(d, null, 2) + '\n'); return true; }
+  } catch (_) { /* unreadable JSON; leave to the validator path */ }
+  return false;
 }
 
 // Poll Vercel for the production deployment of `sha` until it resolves or times
@@ -648,49 +669,69 @@ async function main() {
     shipReady.push(row);
   }
 
-  // ── Build-gate: never push a state that fails the prebuild ──
-  // Runs the EXACT prebuild Vercel runs (per-file validators + the cross-page
-  // link-index builder) against the promoted working tree. Any of OUR pages that
-  // would break it are un-promoted + parked, so only build-passing pages reach
-  // main. This catches BOTH a per-file validator failure AND a keyTerms
-  // collision — the two freezes we hit.
+  // ── Build-gate: self-heal what's mechanical, regenerate the rest, never freeze ──
+  // Runs the EXACT prebuild Vercel runs (validators + cross-page link-index):
+  //   - keyword collisions → AUTO-FIX: trim the duplicate phrase from the page,
+  //     then publish it (deterministic + safe). The writer can't fix these
+  //     because it writes each page blind to the rest of the corpus.
+  //   - validator failures → can't be fixed mechanically here → sent back to the
+  //     writer to regenerate (Status=blank). Not held forever.
+  // A final guard aborts the push only if it somehow can't reach a clean state.
   const validationFailed = [];
+  let healed = 0;
   if (shipReady.length) {
-    const flagged = runBuildGate(shipReady);
-    if (flagged.size) {
-      const survivors = [];
-      for (const row of shipReady) {
-        if (flagged.has(row._actualSlug)) {
-          try { execSync(`git restore --staged --worktree -- "${row._relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (e) { /* best effort */ }
-          validationFailed.push(row);
-          skipped.push({ row, reason: `build-gate: would break the build, held: ${row._relPath}` });
-        } else {
-          survivors.push(row);
-        }
-      }
-      shipReady.length = 0;
-      shipReady.push(...survivors);
-      console.log(`  [build-gate] held ${validationFailed.length} page(s) that fail the prebuild; kept off main.`);
+    for (let pass = 0; pass < 3; pass++) {
+      const gate = runBuildGate(shipReady);
+      if (!gate.validatorBad.size && !gate.collisionPhrases.length) break; // clean
 
-      // Re-run the gate on the survivors. If the prebuild STILL fails we can't
-      // safely pin the culprit — ABORT the whole push so main never breaks,
-      // un-promote everything, park the held rows, and alert for manual review.
-      if (shipReady.length && runBuildGate(shipReady).size) {
+      // (1) Self-heal keyword collisions in place — then they publish.
+      if (gate.collisionPhrases.length) {
+        for (const row of shipReady) {
+          if (stripPhrasesFromKeyTerms(path.join(REPO_ROOT, row._relPath), gate.collisionPhrases)) healed++;
+        }
+        console.log(`  [self-heal] trimmed colliding keyword(s): ${gate.collisionPhrases.join(', ')}`);
+      }
+
+      // (2) Validator failures need a rewrite — send back to the writer.
+      if (gate.validatorBad.size) {
+        const survivors = [];
+        for (const row of shipReady) {
+          if (gate.validatorBad.has(row._actualSlug)) {
+            try { execSync(`git restore --staged --worktree -- "${row._relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (e) { /* best effort */ }
+            validationFailed.push(row);
+            skipped.push({ row, reason: `needs rewrite → sent to regenerate: ${row._relPath}` });
+          } else {
+            survivors.push(row);
+          }
+        }
+        shipReady.length = 0;
+        shipReady.push(...survivors);
+      }
+    }
+    if (healed) console.log(`  [self-heal] auto-resolved keyword collisions on ${healed} page(s); they will publish.`);
+
+    // Final guard: if we still can't reach a clean build, abort the push entirely
+    // (main never breaks) and send everything left back to regenerate.
+    if (shipReady.length) {
+      const finalGate = runBuildGate(shipReady);
+      if (finalGate.validatorBad.size || finalGate.collisionPhrases.length) {
         for (const row of shipReady) {
           try { execSync(`git restore --staged --worktree -- "${row._relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (e) { /* best effort */ }
+          validationFailed.push(row);
         }
-        console.error('  [build-gate] prebuild STILL failing after holding culprits — ABORTING push to protect main.');
+        shipReady.length = 0;
+        console.error('  [build-gate] could not reach a clean build after self-heal — ABORTING push to protect main.');
         if (!DRY) {
-          try { await markHeld(sheets, validationFailed, 'failed prebuild (build-gate)'); } catch (e) { /* best effort */ }
-          sendTelegram(`CoveredUSA drip-publish ${TODAY}: ABORTED — prebuild still failing after holding ${validationFailed.length} page(s). Main NOT touched. Manual review needed.`);
+          try { await markHeld(sheets, validationFailed, 'could not auto-heal; sent to regenerate'); } catch (e) { /* best effort */ }
+          sendTelegram(`CoveredUSA drip-publish ${TODAY}: ABORTED — could not reach a clean build after auto-heal. Main NOT touched. ${validationFailed.length} sent to regenerate.`);
         }
         return;
       }
     }
   }
-  // Park the held rows (real runs only) so they don't sit falsely Ready.
+  // Send the un-fixable rows back to the writer to regenerate (real runs only).
   if (!DRY && validationFailed.length) {
-    try { await markHeld(sheets, validationFailed, 'failed prebuild (build-gate); regenerate'); }
+    try { await markHeld(sheets, validationFailed, 'sent to regenerate (auto-heal)'); }
     catch (e) { console.error('  markHeld failed:', e.message); }
   }
 
