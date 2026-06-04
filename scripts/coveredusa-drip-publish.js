@@ -78,6 +78,14 @@ if (!GOOGLEAPIS_PATH) {
 }
 const { google } = require(GOOGLEAPIS_PATH);
 
+// Vercel token (for verifying the deploy actually built after we push).
+const VERCEL_TOKEN_CANDIDATES = [
+  '/Users/frankthebot/clawd/.secrets/vercel-token.txt',
+  '/Users/jacobposner/clawd/.secrets/vercel-token.txt',
+];
+const VERCEL_TOKEN_FILE = VERCEL_TOKEN_CANDIDATES.find(p => fs.existsSync(p));
+const VERCEL_TOKEN = VERCEL_TOKEN_FILE ? fs.readFileSync(VERCEL_TOKEN_FILE, 'utf8').trim() : null;
+
 // Maps `template` value → directory under content/data/.
 // Templates listed as DEFER are part of Phase 5 and will be skipped with a
 // "deferred-template" reason until their routes/components ship.
@@ -290,6 +298,73 @@ function validatePromotedSlugs(rows) {
     }
   }
   return flagged;
+}
+
+// Run the cross-page link-index builder (the LAST prebuild step) and return the
+// keyword phrases it reports as collisions. A collision exits non-zero and fails
+// the whole Vercel build — the per-file validators can't see it because it's a
+// cross-page conflict. Reverts the regenerated link-index so the working tree
+// stays clean for the push (the build regenerates it anyway).
+function linkIndexCollisionPhrases() {
+  let out = '';
+  let ok = true;
+  try {
+    out = execSync('node scripts/coveredusa-build-link-index.js', { cwd: REPO_ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  } catch (e) {
+    ok = false;
+    out = `${e.stdout || ''}\n${e.stderr || ''}`;
+  }
+  try { execSync('git checkout -- content/link-index.json', { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (_) {}
+  const phrases = [];
+  if (!ok) {
+    for (const line of out.split('\n')) {
+      const m = line.match(/❌ phrase "(.+?)" \((?:en|es)\)/);
+      if (m) phrases.push(m[1]);
+    }
+  }
+  return phrases;
+}
+
+// Full build-gate: runs the EXACT prebuild Vercel runs (per-file validators +
+// the cross-page link-index builder) against the promoted working tree, and
+// returns the SET of OUR promoted slugs that would break the build. We hold only
+// our own pages — never the existing pages already live on main.
+function runBuildGate(rows) {
+  const flagged = validatePromotedSlugs(rows);
+  const phrases = linkIndexCollisionPhrases();
+  if (phrases.length) {
+    for (const row of rows) {
+      try {
+        const d = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, row._relPath), 'utf8'));
+        const kt = d.keyTerms || {};
+        const all = [...(kt.en || []), ...(kt.es || [])];
+        if (phrases.some(p => all.includes(p))) flagged.add(row._actualSlug);
+      } catch (_) { /* unreadable; validators will have caught shape issues */ }
+    }
+  }
+  return flagged;
+}
+
+// Poll Vercel for the production deployment of `sha` until it resolves or times
+// out. Returns 'READY' | 'ERROR' | 'CANCELED' | 'UNKNOWN'. This is the safety net
+// so the cron never reports "shipped" while the site is actually frozen.
+async function verifyDeploy(sha) {
+  if (!VERCEL_TOKEN) return 'UNKNOWN';
+  const short = (sha || '').slice(0, 7);
+  for (let attempt = 0; attempt < 12; attempt++) { // ~6 minutes
+    try {
+      const r = await fetch('https://api.vercel.com/v6/deployments?limit=10&projectId=covered-usa&target=production', {
+        headers: { Authorization: `Bearer ${VERCEL_TOKEN}` },
+      });
+      const j = await r.json();
+      const deps = j.deployments || [];
+      const dep = deps.find(d => d.meta && (d.meta.githubCommitSha || '').startsWith(short)) || deps[0];
+      const state = dep && (dep.state || dep.readyState);
+      if (state === 'READY' || state === 'ERROR' || state === 'CANCELED') return state;
+    } catch (e) { /* transient — keep polling */ }
+    await sleep(30_000);
+  }
+  return 'UNKNOWN';
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -573,56 +648,50 @@ async function main() {
     shipReady.push(row);
   }
 
-  // ── Build-gate: never promote a page that fails its prebuild validator ──
-  // A flagged page would fail `npm run build` (validators chained with &&) and
-  // break the entire Vercel deploy — exactly the incident this guards against.
-  // Drop + un-promote failures so only build-passing pages reach main.
+  // ── Build-gate: never push a state that fails the prebuild ──
+  // Runs the EXACT prebuild Vercel runs (per-file validators + the cross-page
+  // link-index builder) against the promoted working tree. Any of OUR pages that
+  // would break it are un-promoted + parked, so only build-passing pages reach
+  // main. This catches BOTH a per-file validator failure AND a keyTerms
+  // collision — the two freezes we hit.
   const validationFailed = [];
   if (shipReady.length) {
-    const flagged = validatePromotedSlugs(shipReady);
+    const flagged = runBuildGate(shipReady);
     if (flagged.size) {
       const survivors = [];
       for (const row of shipReady) {
         if (flagged.has(row._actualSlug)) {
           try { execSync(`git restore --staged --worktree -- "${row._relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (e) { /* best effort */ }
           validationFailed.push(row);
-          skipped.push({ row, reason: `validation-failed (would break build): ${row._relPath}` });
+          skipped.push({ row, reason: `build-gate: would break the build, held: ${row._relPath}` });
         } else {
           survivors.push(row);
         }
       }
       shipReady.length = 0;
       shipReady.push(...survivors);
-      console.log(`  [build-gate] dropped ${validationFailed.length} page(s) that fail their validator; kept off main.`);
-    }
-  }
-  // Park the dropped rows (real runs only) so they don't sit falsely Ready.
-  if (!DRY && validationFailed.length) {
-    try { await markHeld(sheets, validationFailed, 'failed prebuild validator; regenerate'); }
-    catch (e) { console.error('  markHeld failed:', e.message); }
+      console.log(`  [build-gate] held ${validationFailed.length} page(s) that fail the prebuild; kept off main.`);
 
-    // Remove bad files from drip-queue so they don't accumulate and don't
-    // trigger repeated Vercel preview build failures on every cron push.
-    if (dripQueueAvailable) {
-      console.log(`  [cleanup] removing ${validationFailed.length} bad file(s) from drip-queue...`);
-      for (const row of validationFailed) {
-        const relPath = row._relPath;
-        const slug = row._actualSlug || relPath.split('/').pop().replace(/\.json$/, '');
-        const tmpBranch = `cleanup-${slug}-${Date.now()}`;
-        try {
-          execSync(`git checkout --quiet -b ${tmpBranch} origin/drip-queue`, { cwd: REPO_ROOT, stdio: 'ignore' });
-          execSync(`git rm --quiet --force "${relPath}" 2>/dev/null || true`, { cwd: REPO_ROOT, stdio: 'ignore' });
-          execSync(`git commit --quiet -m "cleanup: remove validation-failed file ${slug}" 2>/dev/null || true`, { cwd: REPO_ROOT, stdio: 'ignore' });
-          execSync(`git push --force-with-lease origin ${tmpBranch}:drip-queue`, { cwd: REPO_ROOT, stdio: 'ignore' });
-          console.log(`    [✓] removed from drip-queue: ${relPath}`);
-        } catch (e) {
-          console.warn(`    [!] could not remove ${relPath} from drip-queue: ${e.message.slice(0, 120)}`);
-        } finally {
-          try { execSync(`git checkout --quiet main`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (_) {}
-          try { execSync(`git branch -D ${tmpBranch}`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (_) {}
+      // Re-run the gate on the survivors. If the prebuild STILL fails we can't
+      // safely pin the culprit — ABORT the whole push so main never breaks,
+      // un-promote everything, park the held rows, and alert for manual review.
+      if (shipReady.length && runBuildGate(shipReady).size) {
+        for (const row of shipReady) {
+          try { execSync(`git restore --staged --worktree -- "${row._relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (e) { /* best effort */ }
         }
+        console.error('  [build-gate] prebuild STILL failing after holding culprits — ABORTING push to protect main.');
+        if (!DRY) {
+          try { await markHeld(sheets, validationFailed, 'failed prebuild (build-gate)'); } catch (e) { /* best effort */ }
+          sendTelegram(`CoveredUSA drip-publish ${TODAY}: ABORTED — prebuild still failing after holding ${validationFailed.length} page(s). Main NOT touched. Manual review needed.`);
+        }
+        return;
       }
     }
+  }
+  // Park the held rows (real runs only) so they don't sit falsely Ready.
+  if (!DRY && validationFailed.length) {
+    try { await markHeld(sheets, validationFailed, 'failed prebuild (build-gate); regenerate'); }
+    catch (e) { console.error('  markHeld failed:', e.message); }
   }
 
   console.log(`[3] ${shipReady.length} ready to ship, ${skipped.length} skipped.`);
@@ -679,9 +748,21 @@ async function main() {
     throw e;
   }
 
-  // ── Step 5: wait for Vercel ──
-  console.log(`\n[5] Sleeping ${VERCEL_DEPLOY_WAIT_MS / 1000}s for Vercel deploy...`);
-  await sleep(VERCEL_DEPLOY_WAIT_MS);
+  // ── Step 5: verify the deploy actually built (don't trust "pushed" == "live") ──
+  const deployedSha = sh('git rev-parse HEAD').trim();
+  console.log(`\n[5] Verifying Vercel production deploy of ${deployedSha.slice(0, 7)}...`);
+  await sleep(VERCEL_DEPLOY_WAIT_MS); // let the deploy register before polling
+  const deployState = await verifyDeploy(deployedSha);
+  console.log(`  Deploy state: ${deployState}`);
+  if (deployState === 'ERROR' || deployState === 'CANCELED') {
+    console.error('  [FATAL] Vercel build did NOT go live. Skipping IndexNow + Published-marking; pages stay Ready to retry.');
+    sendTelegram(`CoveredUSA drip-publish ${TODAY}: pushed ${shipReady.length} pages but the Vercel build came back ${deployState} — pages are NOT live and were NOT marked Published (they will retry). Investigate commit ${deployedSha.slice(0, 7)}.`);
+    console.log(`\n────────────────────────────────────────\nDEPLOY ${deployState}. ${shipReady.length} pages pushed but NOT live. ${TODAY}`);
+    return;
+  }
+  if (deployState === 'UNKNOWN') {
+    console.warn('  [!] Could not confirm deploy state via Vercel API. Proceeding — the build-gate already passed the full prebuild locally.');
+  }
 
   // ── Step 6: IndexNow ──
   console.log(`\n[6] Submitting ${shipReady.length} URLs to IndexNow...`);
