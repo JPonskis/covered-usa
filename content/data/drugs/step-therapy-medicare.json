@@ -1,0 +1,648 @@
+{
+  "slug": "step-therapy-medicare",
+  "topicCluster": "drug-cost",
+  "keyTerms": {
+    "en": [
+      "step therapy Medicare Part D",
+      "step therapy exception Medicare 2026",
+      "how to get step therapy override",
+      "Medicare Part D prior authorization",
+      "formulary tier exception Medicare",
+      "Medicare drug coverage denial appeal 2026"
+    ],
+    "es": [
+      "terapia escalonada Medicare Parte D",
+      "excepcion terapia escalonada Medicare 2026",
+      "como obtener excepcion terapia escalonada",
+      "autorizacion previa Medicare Parte D",
+      "apelacion cobertura medicamento Medicare 2026"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "ctaTarget": "analyzer",
+  "drugName": {
+    "en": "Step Therapy in Medicare Part D 2026: How to Get the Drug Your Doctor Wants",
+    "es": "Terapia Escalonada en Medicare Parte D 2026: Como Obtener el Medicamento que su Doctor Quiere"
+  },
+  "shortName": {
+    "en": "Step Therapy Medicare 2026",
+    "es": "Terapia Escalonada Medicare 2026"
+  },
+  "nonProprietaryName": "Medicare Part D step therapy exception and prior authorization process (2026)",
+  "brandNames": [
+    "Part D Prescription Drug Plan (PDP)",
+    "Medicare Advantage Prescription Drug Plan (MAPD)",
+    "Medicare Plan Finder",
+    "CMS Coverage Determination"
+  ],
+  "drugClass": {
+    "en": "Medicare Part D utilization management policy (step therapy, prior authorization, formulary tier)",
+    "es": "Politica de manejo de utilizacion de Medicare Parte D (terapia escalonada, autorizacion previa, nivel de formulario)"
+  },
+  "routeOfAdministration": "Oral",
+  "medicalSpecialty": "General Practice",
+  "lastUpdated": "2026-06-01",
+  "readingTime": "8 min read",
+  "hcpcsJCodes": [],
+  "meta": {
+    "title": {
+      "en": "Step Therapy in Medicare Part D 2026: Override Guide | CoveredUSA",
+      "es": "Terapia Escalonada Medicare Parte D 2026: Guia de Excepcion | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicare Part D step therapy requires trying cheaper drugs first. Plans decide exceptions in 72 hours. 2026 guide to override step therapy and appeal denials.",
+      "es": "La terapia escalonada de Medicare Parte D requiere probar medicamentos mas baratos primero. En 2026, los planes deben decidir excepciones en 72 horas. Aprenda a obtener una excepcion."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Step Therapy in Medicare Part D 2026: How to Get the Drug Your Doctor Prescribed",
+      "es": "Terapia Escalonada en Medicare Parte D 2026: Como Obtener el Medicamento que su Doctor Receto"
+    },
+    "subhero": {
+      "en": "Step therapy is a type of prior authorization that requires Medicare Part D enrollees to try lower-cost drugs before a plan will cover a more expensive preferred medication. In 2026, plans must respond to a standard step-therapy exception request within 72 hours, or 24 hours for expedited requests. Six protected drug classes are largely shielded from step therapy. Antiretrovirals (anti-HIV drugs) cannot be subject to step therapy at all. For all other drugs, a detailed prescriber letter citing medical necessity, contraindications, or treatment failure is the fastest path to an override.",
+      "es": "La terapia escalonada es un tipo de autorizacion previa que requiere que los inscritos en Medicare Parte D prueben medicamentos de menor costo antes de que un plan cubra un medicamento preferido mas costoso. En 2026, los planes deben responder a una solicitud estandar de excepcion de terapia escalonada en 72 horas, o 24 horas para solicitudes urgentes. Seis clases protegidas de medicamentos estan en gran medida protegidas de la terapia escalonada. Los antiretrovirales (medicamentos anti-VIH) no pueden estar sujetos a terapia escalonada en absoluto. Para todos los demas medicamentos, una carta detallada del prescriptor que cite necesidad medica, contraindicaciones o fracaso del tratamiento es el camino mas rapido hacia una excepcion."
+    }
+  },
+  "quickAnswer": {
+    "en": "In 2026, Medicare Part D plans use step therapy to require you to try less-expensive drugs first before covering your doctor's first-choice medication. To get past step therapy, you or your prescriber must file a formulary exception request with your plan. The plan must respond within 72 hours (24 hours expedited). Valid grounds include: the required drug is contraindicated, likely to cause adverse effects, was already tried and failed, or is less effective for your specific condition. If the plan denies, you have a five-level appeals process ending at Federal District Court. Patients who already take a drug before enrolling in a plan generally cannot be forced to switch under step therapy.",
+    "es": "En 2026, los planes de Medicare Parte D usan la terapia escalonada para exigir que pruebe primero medicamentos menos costosos antes de cubrir el medicamento de primera eleccion de su doctor. Para superar la terapia escalonada, usted o su prescriptor deben presentar una solicitud de excepcion de formulario ante su plan. El plan debe responder en 72 horas (24 horas urgente). Los fundamentos validos incluyen: el medicamento requerido esta contraindicado, puede causar efectos adversos, ya se probo y fallo, o es menos eficaz para su condicion especifica. Si el plan deniega, tiene un proceso de apelacion de cinco niveles que termina en el Tribunal Federal de Distrito. Los pacientes que ya toman un medicamento antes de inscribirse en un plan generalmente no pueden ser forzados a cambiar bajo la terapia escalonada."
+  },
+  "pricing": {
+    "medicareAspPerUnit": null,
+    "medicareAspUnit": null,
+    "retailLow": 0,
+    "retailHigh": 2100,
+    "retailUnit": {
+      "en": "per year (Part D OOP cap 2026)",
+      "es": "por ano (limite de gastos de bolsillo Parte D 2026)"
+    },
+    "inpatientLow": 0,
+    "inpatientHigh": 615,
+    "inpatientUnit": {
+      "en": "per year (2026 Part D maximum deductible)",
+      "es": "por ano (deducible maximo de la Parte D 2026)"
+    },
+    "medicarePartDMonthlyCap": null,
+    "medicaidCopayLow": 0,
+    "medicaidCopayHigh": 13,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283,
+    "partDAnnualOopCap": 2100
+  },
+  "introParagraphs": [
+    {
+      "en": "Step therapy is a cost-management tool that Medicare Part D plans use to control spending on prescription drugs. Under step therapy, your plan requires you to try one or more lower-cost drugs in the same therapeutic category before it will pay for your doctor's first-choice medication. Plans adopted step therapy more aggressively in 2026 as they respond to the Part D benefit redesign under the Inflation Reduction Act: Avalere Health found that prior authorization usage for covered brand drugs rose by an average of three percentage points for standalone Prescription Drug Plans and two percentage points for Medicare Advantage Prescription Drug Plans between 2025 and 2026.",
+      "es": "La terapia escalonada es una herramienta de gestion de costos que los planes de Medicare Parte D utilizan para controlar el gasto en medicamentos recetados. Con la terapia escalonada, su plan le exige que pruebe uno o mas medicamentos de menor costo en la misma categoria terapeutica antes de que pague por el medicamento de primera eleccion de su doctor. Los planes adoptaron la terapia escalonada de manera mas agresiva en 2026 al responder al rediseno del beneficio de la Parte D bajo la Ley de Reduccion de la Inflacion: Avalere Health encontro que el uso de autorizacion previa para medicamentos de marca cubiertos aumento un promedio de tres puntos porcentuales para los Planes de Medicamentos Recetados independientes y dos puntos porcentuales para los Planes de Medicamentos Recetados de Medicare Advantage entre 2025 y 2026."
+    },
+    {
+      "en": "Medicare Part D plans distinguish between three main utilization-management tools: formulary tier placement (which determines your copay or coinsurance level), prior authorization (a one-time clinical review required before filling), and step therapy (a specific type of prior authorization requiring you to try and fail a cheaper drug first). Step therapy applies only when you are newly starting a treatment. Plans cannot apply step therapy to require switching a stable patient off a medication they were already taking when they joined the plan. The 2026 Part D annual out-of-pocket cap of $2,100 is separate from step therapy restrictions, but reaching the cap provides relief regardless of formulary tier placement.",
+      "es": "Los planes de Medicare Parte D distinguen entre tres herramientas principales de manejo de la utilizacion: ubicacion en el nivel del formulario (que determina su nivel de copago o coseguro), autorizacion previa (una revision clinica puntual requerida antes de surtir el medicamento) y terapia escalonada (un tipo especifico de autorizacion previa que le exige probar y fallar con un medicamento mas barato primero). La terapia escalonada se aplica solo cuando usted esta comenzando un tratamiento nuevo. Los planes no pueden aplicar la terapia escalonada para exigir que un paciente estable cambie un medicamento que ya estaba tomando cuando se unio al plan. El limite anual de gastos de bolsillo de la Parte D de $2,100 para 2026 es independiente de las restricciones de terapia escalonada, pero alcanzar el limite proporciona alivio independientemente de la colocacion en el nivel del formulario."
+    },
+    {
+      "en": "Federal law and CMS rules protect certain patients from the harshest effects of step therapy. Six drug categories are designated protected classes under Medicare Part D: immunosuppressants, antidepressants, antipsychotics, anticonvulsants, antiretrovirals, and antineoplastics. Plans must cover substantially all drugs in these classes regardless of formulary tier, but five of the six categories can still have step therapy applied for new patients. Only antiretrovirals (anti-HIV medications) are fully exempt from step therapy requirements. Patients fighting step therapy on drugs in the other five protected classes still have a strong exception pathway because the clinical stakes of disrupting a psychiatric, oncology, or organ-transplant regimen are recognized in CMS guidance. According to CMS, antiretroviral drugs cannot be subject to prior authorization or step therapy under Medicare Part D rules, per the Parts C and D Enrollee Grievances, Organization/Coverage Determinations, and Appeals Guidance.",
+      "es": "La ley federal y las reglas de CMS protegen a ciertos pacientes de los efectos mas severos de la terapia escalonada. Seis categorias de medicamentos son designadas como clases protegidas bajo Medicare Parte D: inmunosupresores, antidepresivos, antipsicoticos, anticonvulsivos, antiretrovirales y antineoplasticos. Los planes deben cubrir sustancialmente todos los medicamentos en estas clases independientemente del nivel del formulario, pero cinco de las seis categorias aun pueden tener terapia escalonada aplicada para nuevos pacientes. Solo los antiretrovirales (medicamentos anti-VIH) estan completamente exentos de los requisitos de terapia escalonada. Los pacientes que luchan contra la terapia escalonada en medicamentos en las otras cinco clases protegidas aun tienen un fuerte camino de excepcion porque las apuestas clinicas de interrumpir un regimen psiquiatrico, oncologico o de trasplante de organos son reconocidas en la orientacion de CMS."
+    }
+  ],
+  "pointOfPay": {
+    "rows": [
+      {
+        "pointOfPay": {
+          "en": "Step-1 drug (plan's required first-try)",
+          "es": "Medicamento Paso-1 (primer intento requerido por el plan)"
+        },
+        "cost": {
+          "en": "$0 to $47/month (preferred generic/brand tier copay)",
+          "es": "$0 a $47/mes (copago de nivel generico/marca preferida)"
+        },
+        "notes": {
+          "en": "The drug your plan requires you to try first; usually a generic or lower-tier brand",
+          "es": "El medicamento que su plan le exige probar primero; generalmente un generico o marca de nivel inferior"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Target drug (after step therapy override)",
+          "es": "Medicamento objetivo (despues de excepcion de terapia escalonada)"
+        },
+        "cost": {
+          "en": "$47 to $100+/month (formulary tier 3-4 copay or coinsurance)",
+          "es": "$47 a $100+/mes (copago o coseguro de nivel 3-4 del formulario)"
+        },
+        "notes": {
+          "en": "Once your exception is approved, your plan covers the target drug at its formulary tier rate",
+          "es": "Una vez aprobada su excepcion, su plan cubre el medicamento objetivo a la tasa del nivel de formulario correspondiente"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Target drug without override (cash pay)",
+          "es": "Medicamento objetivo sin excepcion (pago en efectivo)"
+        },
+        "cost": {
+          "en": "$200 to $1,350+/month (retail cash)",
+          "es": "$200 a $1,350+/mes (precio de efectivo al por menor)"
+        },
+        "notes": {
+          "en": "Full retail cash price if the plan denies coverage and the exception process fails",
+          "es": "Precio completo en efectivo si el plan deniega la cobertura y el proceso de excepcion falla"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicare Part D OOP cap (2026)",
+          "es": "Limite de gastos de bolsillo Medicare Parte D (2026)"
+        },
+        "cost": {
+          "en": "$2,100/year maximum",
+          "es": "$2,100/ano maximo"
+        },
+        "notes": {
+          "en": "After $2,100 in OOP spending on covered drugs, you pay $0 for covered drugs the rest of the year",
+          "es": "Despues de $2,100 en gastos de bolsillo en medicamentos cubiertos, paga $0 por el resto del ano"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicaid / Extra Help",
+          "es": "Medicaid / Ayuda Extra"
+        },
+        "cost": {
+          "en": "$1 to $13/drug (full LIS enrollee)",
+          "es": "$1 a $13/medicamento (inscrito en LIS completo)"
+        },
+        "notes": {
+          "en": "Low Income Subsidy (Extra Help) reduces cost-sharing; step therapy rules still apply but patient advocacy organizations can help navigate",
+          "es": "El Subsidio de Bajos Ingresos (Ayuda Extra) reduce el costo compartido; las reglas de terapia escalonada aun aplican pero organizaciones de defensa del paciente pueden ayudar"
+        }
+      }
+    ],
+    "tableFootnote": {
+      "en": "Copay ranges reflect 2026 standard Part D formulary tier benchmarks from CMS. Your actual cost depends on your plan's specific cost-sharing design. The $2,100 OOP cap applies after the deductible and initial coverage phases. Premiums do not count toward the OOP cap.",
+      "es": "Los rangos de copago reflejan los parametros de nivel del formulario estandar de la Parte D 2026 de CMS. Su costo real depende del diseno especifico de costo compartido de su plan. El limite de gastos de bolsillo de $2,100 aplica despues de las fases de deducible y cobertura inicial. Las primas no cuentan para el limite de gastos de bolsillo."
+    },
+    "tableSource": "CMS Final CY 2026 Part D Redesign Program Instructions; CMS Exceptions Guidance; Medicare.gov Plan Rules"
+  },
+  "whyHospitalsCharge": {
+    "paragraphs": [
+      {
+        "en": "Plans impose step therapy because specialty and branded drugs can cost hundreds to thousands of dollars per month, and less-expensive generics or older branded medications often treat the same condition effectively for most patients. From the plan's perspective, requiring a trial of a $10 generic before covering a $500 branded drug is rational cost management. From the patient's perspective, step therapy delays access to care and forces a trial-and-error period that may involve weeks of suboptimal treatment, side effects, or wasted time. The financial pressure driving more step therapy in 2026 is real: plans are responding to Part D benefit redesign by shifting more utilization management onto prescribers and patients.",
+        "es": "Los planes imponen la terapia escalonada porque los medicamentos especiales y de marca pueden costar cientos o miles de dolares por mes, y los medicamentos genericos menos costosos o los medicamentos de marca mas antiguos a menudo tratan la misma condicion de manera efectiva para la mayoria de los pacientes. Desde la perspectiva del plan, requerir una prueba de un generico de $10 antes de cubrir un medicamento de marca de $500 es una gestion de costos racional. Desde la perspectiva del paciente, la terapia escalonada retrasa el acceso a la atencion y obliga a un periodo de prueba y error que puede implicar semanas de tratamiento suboptimo, efectos secundarios o tiempo perdido. La presion financiera que impulsa mas terapia escalonada en 2026 es real: los planes estan respondiendo al rediseno del beneficio de la Parte D cambiando mas gestion de la utilizacion a los prescriptores y pacientes."
+      },
+      {
+        "en": "When step therapy results in a gap in care or suboptimal treatment, the downstream costs can exceed the drug cost savings. A patient stabilized on a specific antidepressant who is forced to try a less-expensive alternative may relapse, requiring an emergency department visit or hospitalization that costs far more than the drug price difference. This clinical and economic argument is exactly what CMS exception rules are designed to accommodate. The prescriber's supporting statement for a formulary exception is most persuasive when it documents specific adverse effects or documented treatment failure with the required step drug, not just a general preference for the requested drug.",
+        "es": "Cuando la terapia escalonada resulta en una brecha en la atencion o un tratamiento suboptimo, los costos indirectos pueden superar los ahorros en el costo del medicamento. Un paciente estabilizado con un antidepresivo especifico que es forzado a probar una alternativa menos costosa puede recaer, requiriendo una visita a urgencias o una hospitalizacion que cuesta mucho mas que la diferencia en el precio del medicamento. Este argumento clinico y economico es exactamente lo que las reglas de excepcion de CMS estan disenadas para acomodar. La declaracion de apoyo del prescriptor para una excepcion de formulario es mas persuasiva cuando documenta efectos adversos especificos o fracaso documentado del tratamiento con el medicamento de paso requerido, no solo una preferencia general por el medicamento solicitado."
+      },
+      {
+        "en": "Patients who are new to Medicare Part D have a specific protection worth knowing in 2026: if you were already stabilized on a drug before you joined your current plan, the plan cannot apply step therapy to force you to switch to a different drug in the same class. This transition protection does not last indefinitely, but it gives you time to work with your prescriber to document your clinical history and file an exception request before any forced switch takes effect. Contact your plan within 30 days of enrollment if you learn that your current medication is subject to step therapy restrictions, and ask your prescriber to submit a supporting statement immediately.",
+        "es": "Los pacientes nuevos en Medicare Parte D tienen una proteccion especifica que vale la pena conocer en 2026: si ya estaba estabilizado con un medicamento antes de unirse a su plan actual, el plan no puede aplicar la terapia escalonada para obligarlo a cambiar a un medicamento diferente en la misma clase. Esta proteccion de transicion no dura indefinidamente, pero le da tiempo para trabajar con su prescriptor para documentar su historial clinico y presentar una solicitud de excepcion antes de que entre en vigor cualquier cambio forzado. Comuniquese con su plan dentro de los 30 dias de inscripcion si descubre que su medicamento actual esta sujeto a restricciones de terapia escalonada, y pida a su prescriptor que presente una declaracion de apoyo de inmediato."
+      }
+    ]
+  },
+  "patientAssistancePrograms": {
+    "intro": {
+      "en": "When a Medicare Part D plan denies coverage through step therapy, patients have several assistance pathways beyond the appeals process. Manufacturer patient assistance programs (PAPs) are available for income-qualified patients regardless of insurance status. Generic alternatives, Medicaid (for dual-eligible patients), and Extra Help (Low Income Subsidy) can reduce out-of-pocket exposure while appeals are pending. The anti-kickback statute (42 U.S.C. Section 1320a-7b) bars manufacturers from offering copay assistance cards to Medicare, Medicaid, TRICARE, or VA beneficiaries, so income-based PAPs are the correct channel for government-insured patients.",
+      "es": "Cuando un plan de Medicare Parte D deniega la cobertura mediante terapia escalonada, los pacientes tienen varias vias de asistencia mas alla del proceso de apelacion. Los programas de asistencia al paciente (PAP) del fabricante estan disponibles para pacientes calificados por ingresos independientemente del estado del seguro. Las alternativas genericas, Medicaid (para pacientes con doble elegibilidad) y la Ayuda Extra (Subsidio de Bajos Ingresos) pueden reducir la exposicion de gastos de bolsillo mientras estan pendientes las apelaciones. El estatuto anti-soborno (42 U.S.C. Seccion 1320a-7b) prohibe a los fabricantes ofrecer tarjetas de asistencia de copago a beneficiarios de Medicare, Medicaid, TRICARE o VA, por lo que los PAP basados en ingresos son el canal correcto para los pacientes asegurados por el gobierno."
+    },
+    "rows": [
+      {
+        "program": "Manufacturer Patient Assistance Program (PAP)",
+        "costBenefit": {
+          "en": "Free or low-cost drug supply for income-eligible patients (typically below 300 to 400% FPL); apply directly with the drug's manufacturer",
+          "es": "Suministro de medicamentos gratuito o de bajo costo para pacientes calificados por ingresos (tipicamente por debajo del 300 al 400% del FPL); solicite directamente al fabricante del medicamento"
+        },
+        "howToApply": "needymeds.org"
+      },
+      {
+        "program": "Medicare Extra Help (Low Income Subsidy)",
+        "costBenefit": {
+          "en": "$0 Part D deductible; $1.60 to $12.65 per drug copay; step therapy rules still apply but reduced cost means step-1 drugs cost nearly nothing",
+          "es": "$0 de deducible de la Parte D; copago de $1.60 a $12.65 por medicamento; las reglas de terapia escalonada siguen aplicando pero el costo reducido significa que los medicamentos del paso 1 cuestan casi nada"
+        },
+        "howToApply": "ssa.gov/extrahelp"
+      },
+      {
+        "program": "NeedyMeds Drug Discount Programs",
+        "costBenefit": {
+          "en": "Free drug discount card accepted at most US pharmacies; variable savings on brand and generic drugs while exception appeals are pending",
+          "es": "Tarjeta de descuento de medicamentos gratuita aceptada en la mayoria de las farmacias de EE.UU.; ahorros variables en medicamentos de marca y genericos mientras estan pendientes las apelaciones de excepcion"
+        },
+        "howToApply": "needymeds.org"
+      },
+      {
+        "program": "State Pharmaceutical Assistance Programs (SPAPs)",
+        "costBenefit": {
+          "en": "Available in 24 states; may wrap around Part D to cover drugs denied under step therapy; eligibility and benefit levels vary significantly by state",
+          "es": "Disponible en 24 estados; puede complementar la Parte D para cubrir medicamentos denegados bajo terapia escalonada; la elegibilidad y los niveles de beneficios varian significativamente por estado"
+        },
+        "howToApply": "medicare.gov/plan-compare"
+      }
+    ],
+    "footnote": {
+      "en": "Manufacturer savings cards (copay assistance programs) cannot be used by Medicare, Medicaid, TRICARE, or VA beneficiaries under federal anti-kickback law (42 U.S.C. Section 1320a-7b). If you have government insurance and your target drug is denied under step therapy, use the manufacturer's income-based patient assistance program instead of a copay card. Search for the specific manufacturer PAP on needymeds.org or by calling 1-800-503-6897.",
+      "es": "Las tarjetas de ahorro del fabricante (programas de asistencia de copago) no pueden ser utilizadas por beneficiarios de Medicare, Medicaid, TRICARE o VA bajo la ley federal anti-soborno (42 U.S.C. Seccion 1320a-7b). Si tiene seguro del gobierno y su medicamento objetivo es denegado bajo terapia escalonada, use el programa de asistencia al paciente basado en ingresos del fabricante en lugar de una tarjeta de copago. Busque el PAP especifico del fabricante en needymeds.org o llamando al 1-800-503-6897."
+    },
+    "source": "NeedyMeds.org, SSA Extra Help program, Medicare.gov Plan Finder, CMS Anti-Kickback Statute guidance"
+  },
+  "medicarePartD": {
+    "hasSpecificCap": false,
+    "paragraphs": [
+      {
+        "en": "Medicare Part D step therapy rules are set at the plan level, which means the restrictions you face depend entirely on which plan you enrolled in. CMS publishes the formulary file for every approved Part D plan, showing which drugs have step therapy, prior authorization, or quantity limits. You can review your plan's drug list restrictions using the Medicare Plan Finder at medicare.gov/plan-compare. The 2026 plan year formulary is your binding document; if a drug you need is subject to step therapy in your current plan, you can switch plans during the Annual Enrollment Period (October 15 through December 7 each year, effective January 1), or file an exception request at any time during the plan year.",
+        "es": "Las reglas de terapia escalonada de Medicare Parte D se establecen a nivel del plan, lo que significa que las restricciones que enfrenta dependen completamente del plan en el que se inscribio. CMS publica el archivo de formulario para cada plan aprobado de la Parte D, que muestra que medicamentos tienen terapia escalonada, autorizacion previa o limites de cantidad. Puede revisar las restricciones de la lista de medicamentos de su plan usando el buscador de planes de Medicare en medicare.gov/plan-compare. El formulario del ano del plan 2026 es su documento vinculante; si un medicamento que necesita esta sujeto a terapia escalonada en su plan actual, puede cambiar de plan durante el Periodo de Inscripcion Anual (del 15 de octubre al 7 de diciembre de cada ano, vigente desde el 1 de enero), o presentar una solicitud de excepcion en cualquier momento durante el ano del plan."
+      },
+      {
+        "en": "The Inflation Reduction Act of 2022 did not directly restrict step therapy, but the benefit redesign it introduced is driving more plans to tighten utilization management in 2026. Under the redesigned benefit, plans bear a higher share of catastrophic-phase drug costs, which gives them a stronger financial incentive to limit use of high-cost specialty drugs. The six protected drug classes under Medicare Part D remain intact in 2026, and the IRA's $2,100 annual out-of-pocket cap applies once you exhaust the initial coverage phase. For patients with high-cost specialty drugs subject to step therapy, reaching the $2,100 OOP cap provides significant relief for the remainder of the calendar year.",
+        "es": "La Ley de Reduccion de la Inflacion de 2022 no restringio directamente la terapia escalonada, pero el rediseno del beneficio que introdujo esta impulsando a mas planes a reforzar el manejo de la utilizacion en 2026. Bajo el beneficio rediseñado, los planes soportan una mayor proporcion de los costos de medicamentos en la fase catastrofica, lo que les da un incentivo financiero mas fuerte para limitar el uso de medicamentos especiales de alto costo. Las seis clases protegidas de medicamentos bajo Medicare Parte D permanecen intactas en 2026, y el limite anual de gastos de bolsillo de $2,100 de la IRA aplica una vez que agota la fase de cobertura inicial. Para pacientes con medicamentos especiales de alto costo sujetos a terapia escalonada, alcanzar el limite de gastos de bolsillo de $2,100 proporciona un alivio significativo por el resto del ano calendario."
+      },
+      {
+        "en": "Patients with Medicaid and Medicare (dual eligibles) face step therapy rules set by their plan, but Medicaid may separately cover a drug that Medicare Part D denies. State Medicaid programs have their own formulary management rules, and in many states Medicaid covers drugs at a nominal $1 to $4 copay without the same step therapy hurdles. If you are dual eligible and your Medicare Part D plan denies a drug under step therapy, ask your state Medicaid agency whether the drug is covered under Medicaid as a complement to your Medicare Part D coverage. A patient assistance program search on needymeds.org can also identify manufacturer PAPs available regardless of the appeal outcome.",
+        "es": "Los pacientes con Medicaid y Medicare (doble elegibles) enfrentan reglas de terapia escalonada establecidas por su plan, pero Medicaid puede cubrir por separado un medicamento que Medicare Parte D deniega. Los programas estatales de Medicaid tienen sus propias reglas de manejo de formulario, y en muchos estados Medicaid cubre medicamentos con un copago nominal de $1 a $4 sin los mismos obstaculos de terapia escalonada. Si es doble elegible y su plan de Medicare Parte D deniega un medicamento bajo terapia escalonada, pregunte a la agencia estatal de Medicaid si el medicamento esta cubierto bajo Medicaid como complemento de su cobertura de Medicare Parte D."
+      }
+    ]
+  },
+  "commonBillingErrors": {
+    "intro": {
+      "en": "After a step therapy exception is approved, patients sometimes still encounter billing errors at the pharmacy counter. If you were approved for an exception but the pharmacy charges you the non-covered or out-of-network cash price, check for these issues:",
+      "es": "Despues de que se aprueba una excepcion de terapia escalonada, los pacientes a veces siguen encontrando errores de facturacion en el mostrador de la farmacia. Si se aprobo su excepcion pero la farmacia le cobra el precio en efectivo no cubierto o fuera de la red, verifique estos problemas:"
+    },
+    "items": [
+      {
+        "en": "Exception approval not entered in the plan's claims system: ask your plan to send a real-time authorization number to the pharmacy before you fill the prescription",
+        "es": "Aprobacion de excepcion no ingresada en el sistema de reclamos del plan: pida a su plan que envie un numero de autorizacion en tiempo real a la farmacia antes de surtir la receta"
+      },
+      {
+        "en": "Pharmacy running the claim under the wrong plan or benefit network; verify your Member ID, BIN, PCN, and Group number match your current plan's insurance card",
+        "es": "Farmacia procesando el reclamo bajo el plan o red de beneficios incorrectos; verifique que su ID de miembro, BIN, PCN y numero de grupo coincidan con la tarjeta de seguro de su plan actual"
+      },
+      {
+        "en": "Step therapy restriction re-applied when your prescription is refilled if the plan's system auto-resets the utilization management flag at the start of a new plan year",
+        "es": "Restriccion de terapia escalonada reaplicada cuando se re-surte su receta si el sistema del plan restablece automaticamente el indicador de manejo de utilizacion al inicio de un nuevo ano del plan"
+      },
+      {
+        "en": "Exception approved for a different strength or dosage form than what your prescriber ordered; confirm the authorized NDC matches the dispensed product",
+        "es": "Excepcion aprobada para una concentracion o forma de dosificacion diferente a la que ordeno su prescriptor; confirme que el NDC autorizado coincide con el producto dispensado"
+      },
+      {
+        "en": "Charged full out-of-pocket after your $2,100 annual cap is reached; track your cumulative Part D spending and dispute any charge after the $2,100 threshold",
+        "es": "Cobrado el gasto total de bolsillo despues de que se alcanza su limite anual de $2,100; rastree su gasto acumulado de la Parte D y dispute cualquier cargo despues del umbral de $2,100"
+      }
+    ]
+  },
+  "pharmacyPriceComparison": {
+    "caption": {
+      "en": "Step therapy exception filing resources by pharmacy chain (2026)",
+      "es": "Recursos para presentar excepciones de terapia escalonada por cadena de farmacia (2026)"
+    },
+    "rows": [
+      {
+        "pharmacy": "Walmart Pharmacy",
+        "price": {
+          "en": "$4 to $10 (30-day generic alternative)",
+          "es": "$4 a $10 (alternativa generica de 30 dias)"
+        },
+        "notes": {
+          "en": "Walmart $4 Generic Prescription Program includes many step-1 alternatives (metformin, lisinopril, atorvastatin). If your plan's required step drug is on this list, your cost is $4 regardless of deductible status.",
+          "es": "El Programa de Medicamentos Genericos de $4 de Walmart incluye muchas alternativas de paso 1 (metformina, lisinopril, atorvastatina). Si el medicamento requerido por su plan esta en esta lista, su costo es $4 independientemente del estado del deducible."
+        }
+      },
+      {
+        "pharmacy": "Costco Member Prescription Program",
+        "price": {
+          "en": "$5 to $25 (30-day generic or low-tier brand)",
+          "es": "$5 a $25 (generico de 30 dias o marca de nivel bajo)"
+        },
+        "notes": {
+          "en": "Costco's member prescription program offers competitive pricing on many step-therapy required drugs. Non-members can use the pharmacy with GoodRx pricing.",
+          "es": "El programa de medicamentos para miembros de Costco ofrece precios competitivos en muchos medicamentos requeridos por la terapia escalonada. Los no miembros pueden usar la farmacia con precios de GoodRx."
+        }
+      },
+      {
+        "pharmacy": "Kroger Rx Savings Club",
+        "price": {
+          "en": "$10.99 to $36 (30-day supply)",
+          "es": "$10.99 a $36 (suministro de 30 dias)"
+        },
+        "notes": {
+          "en": "Annual $36 membership; covers many generic alternatives required under step therapy. No insurance required for the savings club price.",
+          "es": "Membresia anual de $36; cubre muchas alternativas genericas requeridas bajo la terapia escalonada. No se requiere seguro para el precio del club de ahorro."
+        }
+      },
+      {
+        "pharmacy": "CVS w/ GoodRx coupon",
+        "price": {
+          "en": "$10 to $40 (30-day, varies by drug)",
+          "es": "$10 a $40 (30 dias, varia segun el medicamento)"
+        },
+        "notes": {
+          "en": "GoodRx coupons at CVS are often lower than your plan copay for step-1 generics. You can use GoodRx as a cash-pay option while your step-therapy exception is being processed.",
+          "es": "Los cupones de GoodRx en CVS a menudo son mas bajos que el copago de su plan para genericos del paso 1. Puede usar GoodRx como opcion de pago en efectivo mientras se procesa su excepcion de terapia escalonada."
+        }
+      },
+      {
+        "pharmacy": "Walgreens",
+        "price": {
+          "en": "$15 to $50 (30-day cash, varies by drug)",
+          "es": "$15 a $50 (30 dias en efectivo, varia segun el medicamento)"
+        },
+        "notes": {
+          "en": "Walgreens Prescription Savings Club reduces prices on many generics. Ask the pharmacist to file a step-therapy exception appeal on your behalf using the plan's real-time adjudication system.",
+          "es": "El Club de Ahorros de Medicamentos de Walgreens reduce los precios en muchos genericos. Pida al farmaceutico que presente una apelacion de excepcion de terapia escalonada en su nombre usando el sistema de adjudicacion en tiempo real del plan."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "Prices reflect 2026 cash and member-program rates for common step-therapy required generic drugs. Your step-1 required drug may differ. GoodRx cash-pay prices can be used while a step-therapy exception is pending with your plan. Verified June 2026 via GoodRx and chain member-program pricing.",
+      "es": "Los precios reflejan las tarifas de efectivo y del programa para miembros de 2026 para medicamentos genericos comunes requeridos por la terapia escalonada. Su medicamento requerido del paso 1 puede ser diferente. Los precios de pago en efectivo de GoodRx se pueden usar mientras una excepcion de terapia escalonada esta pendiente con su plan. Verificado en junio de 2026."
+    },
+    "source": "GoodRx, Walmart $4 Generic Prescription Program, Costco Member Prescription Program, Kroger Rx Savings Club, Medicare.gov Plan Finder"
+  },
+  "genericBiosimilarStatus": {
+    "hasGeneric": null,
+    "genericName": null,
+    "patentExpiry": null,
+    "biosimilars": null,
+    "note": {
+      "en": "This page covers the Medicare Part D step therapy exception process, not a single drug. Step therapy most commonly affects brand-name drugs with available generic alternatives. If your prescribed drug has a generic or biosimilar equivalent, your plan's step therapy requirement may be satisfied by the generic. Ask your prescriber whether a generic or biosimilar is clinically appropriate for your condition before filing an exception.",
+      "es": "Esta pagina cubre el proceso de excepcion de terapia escalonada de Medicare Parte D, no un solo medicamento. La terapia escalonada afecta con mayor frecuencia a los medicamentos de marca con alternativas genericas disponibles. Si su medicamento recetado tiene un equivalente generico o biosimilar, el requisito de terapia escalonada de su plan puede satisfacerse con el generico. Pregunte a su prescriptor si un generico o biosimilar es clinicamente apropiado para su condicion antes de presentar una excepcion."
+    }
+  },
+  "papEligibilityTable": {
+    "caption": {
+      "en": "Manufacturer PAP eligibility by household size (2026)",
+      "es": "Elegibilidad del PAP del fabricante por tamano del hogar (2026)"
+    },
+    "fplPctReferenced": 400,
+    "rows": [
+      {"householdSize": 1, "incomeThreshold": 63840, "incomeLabel": {"en": "<= $63,840", "es": "<= $63,840"}, "fplPct": 400},
+      {"householdSize": 2, "incomeThreshold": 86560, "incomeLabel": {"en": "<= $86,560", "es": "<= $86,560"}, "fplPct": 400},
+      {"householdSize": 3, "incomeThreshold": 109280, "incomeLabel": {"en": "<= $109,280", "es": "<= $109,280"}, "fplPct": 400},
+      {"householdSize": 4, "incomeThreshold": 132000, "incomeLabel": {"en": "<= $132,000", "es": "<= $132,000"}, "fplPct": 400},
+      {"householdSize": 5, "incomeThreshold": 154720, "incomeLabel": {"en": "<= $154,720", "es": "<= $154,720"}, "fplPct": 400},
+      {"householdSize": 6, "incomeThreshold": 177440, "incomeLabel": {"en": "<= $177,440", "es": "<= $177,440"}, "fplPct": 400},
+      {"householdSize": 7, "incomeThreshold": 200160, "incomeLabel": {"en": "<= $200,160", "es": "<= $200,160"}, "fplPct": 400},
+      {"householdSize": 8, "incomeThreshold": 222880, "incomeLabel": {"en": "<= $222,880", "es": "<= $222,880"}, "fplPct": 400},
+      {"householdSize": "Each additional person", "incomeThreshold": 22720, "incomeLabel": {"en": "+ $22,720", "es": "+ $22,720"}, "fplPct": 400}
+    ],
+    "year": 2026,
+    "source": "HHS 2026 federal poverty guidelines, https://aspe.hhs.gov/poverty-guidelines"
+  },
+  "denialAlternatives": {
+    "appealSteps": [
+      {
+        "en": "Step 1: Request a written denial notice from your plan. When your plan denies a drug under step therapy, you are entitled to a written Coverage Determination within 72 hours of your request. If you or your prescriber believes your health requires an urgent decision, ask for an expedited determination and the plan must respond within 24 hours.",
+        "es": "Paso 1: Solicite un aviso de denegacion por escrito a su plan. Cuando su plan deniega un medicamento bajo terapia escalonada, tiene derecho a una Determinacion de Cobertura por escrito dentro de las 72 horas de su solicitud. Si usted o su prescriptor cree que su salud requiere una decision urgente, solicite una determinacion urgente y el plan debe responder en 24 horas."
+      },
+      {
+        "en": "Step 2: File a formal appeal (redetermination) with your plan within 60 days of the denial. This is the plan-level appeal; the plan has 7 days to decide (72 hours expedited). Include your prescriber's letter citing specific medical necessity, contraindications to the step-1 drug, or documented treatment failure.",
+        "es": "Paso 2: Presente una apelacion formal (redeterminacion) con su plan dentro de los 60 dias de la denegacion. Esta es la apelacion a nivel del plan; el plan tiene 7 dias para decidir (72 horas urgente). Incluya la carta de su prescriptor citando necesidad medica especifica, contraindicaciones al medicamento del paso 1, o fracaso documentado del tratamiento."
+      },
+      {
+        "en": "Step 3: Escalate to the Independent Review Entity (IRE) within 60 days of the plan's redetermination denial. The IRE is an independent third party contracted by CMS. The IRE must decide within 7 days (72 hours expedited). As of May 2026, the Part D IRE transitioned to C2C Innovative Solutions, Inc.; contact your plan for the current IRE submission address.",
+        "es": "Paso 3: Escale a la Entidad de Revision Independiente (IRE) dentro de los 60 dias de la denegacion de redeterminacion del plan. La IRE es un tercero independiente contratado por CMS. La IRE debe decidir en 7 dias (72 horas urgente). A partir de mayo de 2026, la IRE de la Parte D paso a C2C Innovative Solutions, Inc.; comuniquese con su plan para obtener la direccion de presentacion actual de la IRE."
+      },
+      {
+        "en": "Step 4: Request a hearing with the Office of Medicare Hearings and Appeals (OMHA) within 60 days of the IRE denial, if the drug costs at least $200 (2026 threshold). OMHA has 90 days to decide (10 days expedited). This level involves an Administrative Law Judge hearing and is frequently where denials are overturned with proper documentation.",
+        "es": "Paso 4: Solicite una audiencia ante la Oficina de Audiencias y Apelaciones de Medicare (OMHA) dentro de los 60 dias de la denegacion de la IRE, si el medicamento cuesta al menos $200 (umbral 2026). OMHA tiene 90 dias para decidir (10 dias urgente). Este nivel involucra una audiencia ante un Juez de Derecho Administrativo y es frecuentemente donde se revocan las denegaciones con documentacion adecuada."
+      }
+    ],
+    "stepTherapyOverride": {
+      "en": "If your plan requires you to try cheaper alternatives first under step therapy, ask your prescriber to submit a peer-to-peer review request with the plan's medical director. Your prescriber should cite: (1) specific adverse effects you experienced or are contraindicated for with the step-1 drug, (2) clinical evidence that the target drug is more effective for your particular condition or subpopulation, or (3) your prior treatment history showing failure of the required step drug. A letter on prescriber letterhead with ICD-10 diagnosis codes and NDC for the requested drug is more effective than a phone call alone.",
+      "es": "Si su plan le exige probar alternativas mas baratas primero bajo la terapia escalonada, pida a su prescriptor que envie una solicitud de revision entre pares al director medico del plan. Su prescriptor debe citar: (1) efectos adversos especificos que experimento o para los que esta contraindicado con el medicamento del paso 1, (2) evidencia clinica de que el medicamento objetivo es mas eficaz para su condicion o subpoblacion particular, o (3) su historial de tratamiento previo que muestra el fracaso del medicamento de paso requerido."
+    },
+    "papFallback": {
+      "en": "If appeals fail and the drug remains uncovered, search for the manufacturer's patient assistance program on needymeds.org. Most branded drug manufacturers operate income-based PAPs that provide free or heavily discounted drug supplies to patients whose income is at or below 300 to 400 percent of the Federal Poverty Level. PAPs for Medicare patients are separate from copay cards and are not blocked by the anti-kickback statute.",
+      "es": "Si las apelaciones fallan y el medicamento sigue sin cobertura, busque el programa de asistencia al paciente del fabricante en needymeds.org. La mayoria de los fabricantes de medicamentos de marca operan PAPs basados en ingresos que proporcionan suministros de medicamentos gratuitos o con grandes descuentos a pacientes cuyos ingresos estan al 300 a 400 por ciento del Nivel de Pobreza Federal o por debajo."
+    },
+    "genericAlternative": {
+      "en": "Generic or biosimilar alternative: if a generic or biosimilar equivalent of your prescribed drug exists, your plan's step therapy requirement may be satisfied by the generic, often at $4 to $15 per 30-day supply. Discuss with your prescriber whether the generic is therapeutically equivalent for your condition before abandoning an exception request.",
+      "es": "Alternativa generica o biosimilar: si existe un equivalente generico o biosimilar de su medicamento recetado, el requisito de terapia escalonada de su plan puede satisfacerse con el generico, a menudo a $4 a $15 por suministro de 30 dias. Hable con su prescriptor sobre si el generico es terapeuticamente equivalente para su condicion antes de abandonar una solicitud de excepcion."
+    }
+  },
+  "howToApplyPap": {
+    "programName": "Medicare Part D Step Therapy Exception Request (Formulary Exception)",
+    "numberedSteps": [
+      {
+        "en": "Step 1: Call your plan's member services number (on the back of your insurance card) and ask for the formulary exception request process. Request the written form or the fax number for prescriber submissions. Confirm whether the exception is for step therapy (formulary exception) or formulary non-coverage (non-formulary exception), as these are filed differently.",
+        "es": "Paso 1: Llame al numero de servicios para miembros de su plan (en el reverso de su tarjeta de seguro) y solicite el proceso de solicitud de excepcion de formulario. Solicite el formulario escrito o el numero de fax para envios del prescriptor. Confirme si la excepcion es por terapia escalonada (excepcion de formulario) o por no cobertura del formulario (excepcion fuera de formulario), ya que estas se presentan de manera diferente."
+      },
+      {
+        "en": "Step 2: Ask your prescriber to prepare a supporting statement. The letter must explain why the required step drug is medically inappropriate for you. The strongest letters include: (a) an ICD-10 diagnosis code for your condition, (b) the NDC or drug name for both the requested drug and the step-1 drug, (c) a specific statement that the step-1 drug is contraindicated, was previously tried and failed, or will cause adverse effects, and (d) clinical documentation such as lab results, prior refill history, or published guidelines supporting the requested drug.",
+        "es": "Paso 2: Pida a su prescriptor que prepare una declaracion de apoyo. La carta debe explicar por que el medicamento de paso requerido es medicamente inapropiado para usted. Las cartas mas solidas incluyen: (a) un codigo de diagnostico ICD-10 para su condicion, (b) el NDC o nombre del medicamento tanto del medicamento solicitado como del medicamento del paso 1, (c) una declaracion especifica de que el medicamento del paso 1 esta contraindicado, fue probado previamente y fallo, o causara efectos adversos, y (d) documentacion clinica como resultados de laboratorio, historial previo de surtido o guias clinicas publicadas que respalden el medicamento solicitado."
+      },
+      {
+        "en": "Step 3: Submit the exception request and prescriber statement to your plan by fax, phone, or online portal. Keep a copy of everything submitted. Note the date and time of submission and the name of the representative you spoke with. The plan must provide a decision within 72 hours for standard requests, or 24 hours for expedited requests when your health is at risk.",
+        "es": "Paso 3: Envie la solicitud de excepcion y la declaracion del prescriptor a su plan por fax, telefono o portal en linea. Guarde una copia de todo lo enviado. Anote la fecha y hora de la presentacion y el nombre del representante con quien hablo. El plan debe proporcionar una decision dentro de las 72 horas para solicitudes estandar, o 24 horas para solicitudes urgentes cuando su salud esta en riesgo."
+      },
+      {
+        "en": "Step 4: If the plan approves the exception, confirm the authorization number and have your plan communicate it to your preferred pharmacy before you attempt to fill the prescription. If the plan denies, request the written denial notice and file a formal appeal (redetermination) within 60 days.",
+        "es": "Paso 4: Si el plan aprueba la excepcion, confirme el numero de autorizacion y haga que su plan lo comunique a su farmacia preferida antes de intentar surtir la receta. Si el plan deniega, solicite el aviso de denegacion por escrito y presente una apelacion formal (redeterminacion) dentro de los 60 dias."
+      },
+      {
+        "en": "Step 5: If the plan-level appeal is denied, escalate to the Independent Review Entity (IRE) within 60 days. If the IRE denies and the drug costs at least $200, escalate to an OMHA Administrative Law Judge hearing. Each appeal level is an independent decision; many denials are overturned at the IRE or OMHA level when complete clinical documentation is submitted. Visit medicare.gov or call 1-800-MEDICARE (1-800-633-4227) for help at any stage.",
+        "es": "Paso 5: Si se deniega la apelacion a nivel del plan, escale a la Entidad de Revision Independiente (IRE) dentro de los 60 dias. Si la IRE deniega y el medicamento cuesta al menos $200, escale a una audiencia ante un Juez de Derecho Administrativo de OMHA. Cada nivel de apelacion es una decision independiente; muchas denegaciones se revocan a nivel de la IRE o OMHA cuando se presenta documentacion clinica completa. Visite medicare.gov o llame al 1-800-MEDICARE (1-800-633-4227) para obtener ayuda en cualquier etapa."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/plan-rules",
+    "manufacturerStartingUrl": "https://www.needymeds.org/",
+    "documentsNeeded": [
+      {
+        "en": "Prescriber's supporting letter (on letterhead) citing ICD-10 code, requested drug NDC, and specific grounds for exception (contraindication, adverse effect, or treatment failure)",
+        "es": "Carta de apoyo del prescriptor (en papel membretado) que cite el codigo ICD-10, el NDC del medicamento solicitado y los fundamentos especificos de la excepcion (contraindicacion, efecto adverso o fracaso del tratamiento)"
+      },
+      {
+        "en": "Your plan's Member ID, Group number, BIN, and PCN (found on your insurance card)",
+        "es": "Su ID de miembro del plan, numero de grupo, BIN y PCN (que se encuentran en su tarjeta de seguro)"
+      },
+      {
+        "en": "Written denial notice from the plan (for Step 2 and beyond)",
+        "es": "Aviso de denegacion por escrito del plan (para el Paso 2 en adelante)"
+      },
+      {
+        "en": "Documentation of previous drug trials: pharmacy refill history, lab results, or medical records showing the step-1 drug was tried and failed or is contraindicated",
+        "es": "Documentacion de ensayos previos de medicamentos: historial de resurtido de farmacia, resultados de laboratorio o registros medicos que muestren que el medicamento del paso 1 fue probado y fallo o esta contraindicado"
+      },
+      {
+        "en": "Clinical guidelines or published evidence supporting the requested drug (optional but strengthens the request)",
+        "es": "Guias clinicas o evidencia publicada que respalde el medicamento solicitado (opcional pero fortalece la solicitud)"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Prescriber's supporting statement is too vague, citing only a general preference for the requested drug without specific clinical grounds",
+        "es": "La declaracion de apoyo del prescriptor es demasiado vaga, citando solo una preferencia general por el medicamento solicitado sin fundamentos clinicos especificos"
+      },
+      {
+        "en": "No documentation of prior trial of the step-1 drug, or the trial period was shorter than the plan's required duration",
+        "es": "Sin documentacion del ensayo previo del medicamento del paso 1, o el periodo de prueba fue mas corto que la duracion requerida por el plan"
+      },
+      {
+        "en": "The wrong exception type was filed (tiering exception vs. formulary exception vs. step-therapy waiver)",
+        "es": "Se presento el tipo de excepcion incorrecto (excepcion de nivel vs. excepcion de formulario vs. exencion de terapia escalonada)"
+      },
+      {
+        "en": "Submission missed the 60-day window from the date of the prior denial notice",
+        "es": "La presentacion perdio el plazo de 60 dias a partir de la fecha del aviso de denegacion anterior"
+      }
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "What is step therapy in Medicare Part D?",
+        "answer": "Step therapy is a type of prior authorization that your Medicare Part D plan uses to require you to try a less-expensive drug before covering a more expensive preferred medication. For example, if your doctor prescribes a brand-name drug, your plan may require you to try a generic in the same drug class first. If the generic is ineffective or causes adverse effects, you can request an exception to move to the brand-name drug. Step therapy cannot be applied to drugs you were already taking before you enrolled in the plan, and antiretroviral (anti-HIV) drugs are fully exempt from step therapy under federal rules."
+      },
+      {
+        "question": "How do I file a step therapy exception request with Medicare Part D in 2026?",
+        "answer": "Call your plan's member services number and ask to file a formulary exception for step therapy. Your prescriber must submit a supporting statement explaining why the required step-1 drug is medically inappropriate for you. Grounds include: the step drug is contraindicated, was previously tried and failed, or is likely to cause adverse effects. The plan must respond within 72 hours for a standard request, or 24 hours if expedited because your health is at risk. If approved, the plan covers the requested drug at its formulary tier copay. If denied, you have 60 days to file an appeal (redetermination)."
+      },
+      {
+        "question": "Can I use a manufacturer coupon or savings card with Medicare Part D when denied under step therapy?",
+        "answer": "No. Federal anti-kickback law (42 U.S.C. Section 1320a-7b) bars manufacturer copay cards and savings coupons from being used by Medicare, Medicaid, TRICARE, or VA beneficiaries. If your drug is denied under step therapy and you need it while an appeal is pending, the correct channel is the manufacturer's patient assistance program (PAP), which provides free or discounted supply to income-eligible patients. PAPs are separate from copay cards and are legal for Medicare patients. Search for the specific drug's PAP on needymeds.org."
+      },
+      {
+        "question": "Is there a generic or biosimilar alternative to the drug my plan is denying?",
+        "answer": "It depends on the specific drug. Many commonly denied brand-name drugs have FDA-approved generic equivalents that satisfy the plan's step therapy requirements. Biologics may have approved biosimilars. If your plan's step-1 drug is a generic alternative to your target drug, and you try the generic and it fails, that failure is documented grounds for a step-therapy exception. If no generic exists, the exception must rest on contraindication or medical necessity grounds. Ask your prescriber to search the FDA Drugs database (drugs.fda.gov) for approved generics or biosimilars for your medication."
+      },
+      {
+        "question": "What are the 2026 Medicare Part D appeal timeline rules for step therapy denials?",
+        "answer": "The 2026 Part D appeal process has five levels. Level 1: the plan must decide your exception request within 72 hours (24 hours expedited). Level 2: plan redetermination within 7 days (72 hours expedited). Level 3: Independent Review Entity reconsideration within 7 days (72 hours expedited). Level 4: OMHA Administrative Law Judge hearing within 90 days (10 days expedited), if the drug costs at least $200. Level 5: Federal District Court, if the drug costs at least $1,960. File each successive appeal within 60 days of the prior denial. Each level is an independent decision and denials are frequently overturned when complete clinical documentation is submitted."
+      },
+      {
+        "question": "Does the Inflation Reduction Act of 2022 affect step therapy in Medicare Part D?",
+        "answer": "The Inflation Reduction Act of 2022 did not restrict step therapy directly, but its Part D benefit redesign is driving plans to use step therapy more aggressively in 2026. Under the redesigned benefit, plans bear a higher share of catastrophic-phase drug costs, giving them stronger financial incentive to limit use of high-cost specialty drugs through utilization management. The IRA did establish the $2,100 annual out-of-pocket cap and the Maximum Fair Price for 10 negotiated drugs effective January 1, 2026, which separate from step therapy, do reduce patient cost exposure once utilization management is cleared."
+      },
+      {
+        "question": "Can Medicare Part D force me to switch drugs I was already taking before I joined the plan?",
+        "answer": "Generally no. Medicare Part D rules include transition protection for patients who are new to a plan. If you were already stabilized on a drug when you enrolled, the plan must provide a temporary supply of your current drug, typically a 30-day supply, while you and your prescriber have time to file an exception request. Step therapy can only apply to new drug treatment initiation, not to existing stable therapy. Contact your plan within 30 days of enrollment if you discover your current medication is subject to step therapy restrictions."
+      },
+      {
+        "question": "What does Medicare Part D step therapy mean for Medicaid-eligible patients?",
+        "answer": "Patients who are enrolled in both Medicaid and Medicare (dual eligibles) face step therapy rules from their Medicare Part D plan, but Medicaid may separately cover the drug that Medicare denies. State Medicaid programs have their own formularies and in many states cover drugs at a $1 to $4 copay without the same hurdles. If you are dual-eligible and your Part D plan denies a drug under step therapy, ask your state Medicaid office whether the drug is covered separately. Extra Help (Low Income Subsidy) also reduces Part D cost-sharing to $1.60 to $12.65 per drug, making the step-1 drug nearly free while an appeal is pending."
+      }
+    ],
+    "es": [
+      {
+        "question": "Que es la terapia escalonada en Medicare Parte D?",
+        "answer": "La terapia escalonada es un tipo de autorizacion previa que su plan de Medicare Parte D usa para exigirle que pruebe un medicamento menos costoso antes de cubrir un medicamento preferido mas caro. Por ejemplo, si su doctor receta un medicamento de marca, su plan puede exigirle que primero pruebe un generico en la misma clase de medicamentos. Si el generico no es efectivo o causa efectos adversos, puede solicitar una excepcion para pasar al medicamento de marca. La terapia escalonada no se puede aplicar a medicamentos que ya estaba tomando antes de inscribirse en el plan, y los medicamentos antiretrovirales (anti-VIH) estan completamente exentos de la terapia escalonada bajo las reglas federales."
+      },
+      {
+        "question": "Como presento una solicitud de excepcion de terapia escalonada con Medicare Parte D en 2026?",
+        "answer": "Llame al numero de servicios para miembros de su plan y solicite presentar una excepcion de formulario por terapia escalonada. Su prescriptor debe enviar una declaracion de apoyo explicando por que el medicamento requerido del paso 1 es medicamente inapropiado para usted. Los fundamentos incluyen: el medicamento del paso esta contraindicado, fue probado previamente y fallo, o probablemente cause efectos adversos. El plan debe responder en 72 horas para una solicitud estandar, o 24 horas si es urgente porque su salud esta en riesgo. Si se aprueba, el plan cubre el medicamento solicitado al copago de su nivel de formulario. Si se deniega, tiene 60 dias para presentar una apelacion."
+      },
+      {
+        "question": "Puedo usar un cupon del fabricante o tarjeta de ahorros con Medicare Parte D cuando se me deniega bajo la terapia escalonada?",
+        "answer": "No. La ley federal anti-soborno (42 U.S.C. Seccion 1320a-7b) prohibe que las tarjetas de copago y cupones de ahorro del fabricante sean utilizados por beneficiarios de Medicare, Medicaid, TRICARE o VA. Si su medicamento es denegado bajo terapia escalonada y lo necesita mientras una apelacion esta pendiente, el canal correcto es el programa de asistencia al paciente (PAP) del fabricante, que proporciona suministro gratuito o con descuento a pacientes calificados por ingresos. Los PAP son independientes de las tarjetas de copago y son legales para pacientes de Medicare. Busque el PAP del medicamento especifico en needymeds.org."
+      },
+      {
+        "question": "Hay una alternativa generica o biosimilar al medicamento que mi plan esta denegando?",
+        "answer": "Depende del medicamento especifico. Muchos medicamentos de marca comumente denegados tienen equivalentes genericos aprobados por la FDA que satisfacen los requisitos de terapia escalonada del plan. Los biologicos pueden tener biosimilares aprobados. Si el medicamento del paso 1 de su plan es una alternativa generica a su medicamento objetivo, y lo prueba y falla, ese fracaso es fundamento documentado para una excepcion de terapia escalonada. Si no existe generico, la excepcion debe basarse en contraindicacion o necesidad medica. Pida a su prescriptor que busque en la base de datos de medicamentos de la FDA (drugs.fda.gov) los genericos o biosimilares aprobados para su medicamento."
+      },
+      {
+        "question": "Cuales son las reglas de plazo de apelacion de Medicare Parte D 2026 para denegaciones de terapia escalonada?",
+        "answer": "El proceso de apelacion de la Parte D 2026 tiene cinco niveles. Nivel 1: el plan debe decidir su solicitud de excepcion en 72 horas (24 horas urgente). Nivel 2: redeterminacion del plan en 7 dias (72 horas urgente). Nivel 3: reconsideracion de la Entidad de Revision Independiente en 7 dias (72 horas urgente). Nivel 4: audiencia del Juez de Derecho Administrativo de OMHA en 90 dias (10 dias urgente), si el medicamento cuesta al menos $200. Nivel 5: Tribunal Federal de Distrito, si el medicamento cuesta al menos $1,960. Presente cada apelacion sucesiva dentro de los 60 dias de la denegacion anterior."
+      },
+      {
+        "question": "La Ley de Reduccion de la Inflacion de 2022 afecta la terapia escalonada en Medicare Parte D?",
+        "answer": "La Ley de Reduccion de la Inflacion de 2022 no restringio la terapia escalonada directamente, pero su rediseno del beneficio de la Parte D esta impulsando a los planes a usar la terapia escalonada de manera mas agresiva en 2026. Bajo el beneficio rediseñado, los planes soportan una mayor proporcion de los costos de medicamentos en la fase catastrofica, dandoles un incentivo financiero mas fuerte para limitar el uso de medicamentos especiales de alto costo. La IRA si establecio el limite anual de gastos de bolsillo de $2,100 y el Precio Maximo Justo para 10 medicamentos negociados vigentes desde el 1 de enero de 2026."
+      },
+      {
+        "question": "Puede Medicare Parte D obligarme a cambiar medicamentos que ya estaba tomando antes de unirme al plan?",
+        "answer": "Generalmente no. Las reglas de Medicare Parte D incluyen proteccion de transicion para pacientes nuevos en un plan. Si ya estaba estabilizado con un medicamento cuando se inscribio, el plan debe proporcionar un suministro temporal de su medicamento actual, tipicamente un suministro de 30 dias, mientras usted y su prescriptor tienen tiempo para presentar una solicitud de excepcion. La terapia escalonada solo puede aplicarse al inicio de un nuevo tratamiento, no a la terapia estable existente."
+      },
+      {
+        "question": "Que significa la terapia escalonada de Medicare Parte D para los pacientes con elegibilidad para Medicaid?",
+        "answer": "Los pacientes inscritos en Medicaid y Medicare (doble elegibles) enfrentan reglas de terapia escalonada de su plan de Medicare Parte D, pero Medicaid puede cubrir por separado el medicamento que Medicare deniega. Los programas estatales de Medicaid tienen sus propios formularios y en muchos estados cubren medicamentos con un copago de $1 a $4 sin los mismos obstaculos. Si es doble elegible y su plan de la Parte D deniega un medicamento bajo terapia escalonada, pregunte a su oficina estatal de Medicaid si el medicamento esta cubierto por separado. La Ayuda Extra (Subsidio de Bajos Ingresos) tambien reduce el costo compartido de la Parte D a $1.60 a $12.65 por medicamento."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad de Medicare"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Medicas"
+      },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Limites de Ingresos de Medicaid"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level Guidelines",
+        "es": "Guias del Nivel Federal de Pobreza"
+      },
+      "href": "/federal-poverty-level"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMS Medicare Part D Exceptions Guidance",
+      "url": "https://www.cms.gov/medicare/appeals-grievances/prescription-drug/exceptions",
+      "note": {
+        "en": "Official CMS page on Part D formulary exceptions including step therapy waiver grounds and timelines.",
+        "es": "Pagina oficial de CMS sobre excepciones de formulario de la Parte D, incluyendo los fundamentos y plazos para la exencion de terapia escalonada."
+      }
+    },
+    {
+      "name": "Medicare.gov: Drug Plan Rules (Prior Authorization, Step Therapy, Quantity Limits)",
+      "url": "https://www.medicare.gov/health-drug-plans/part-d/what-drug-plans-cover/plan-rules",
+      "note": {
+        "en": "Medicare.gov explanation of plan utilization management tools including step therapy and how to request an exception.",
+        "es": "Explicacion de Medicare.gov de las herramientas de manejo de la utilizacion del plan incluyendo la terapia escalonada y como solicitar una excepcion."
+      }
+    },
+    {
+      "name": "CMS Part D Coverage Determinations Guidance",
+      "url": "https://www.cms.gov/medicare/appeals-grievances/prescription-drug/coverage-determinations",
+      "note": {
+        "en": "CMS guidance on coverage determination timelines (72-hour standard, 24-hour expedited) for Part D exception requests.",
+        "es": "Orientacion de CMS sobre los plazos de determinacion de cobertura (72 horas estandar, 24 horas urgente) para solicitudes de excepcion de la Parte D."
+      }
+    },
+    {
+      "name": "CMS Final CY 2026 Part D Redesign Program Instructions",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/final-cy-2026-part-d-redesign-program-instructions",
+      "note": {
+        "en": "2026 Part D benefit parameters including $615 deductible maximum and $2,100 OOP cap; the redesigned benefit structure driving increased utilization management.",
+        "es": "Parametros del beneficio de la Parte D 2026 incluyendo el maximo de deducible de $615 y el limite de gastos de bolsillo de $2,100; la estructura de beneficio rediseñada que impulsa un mayor manejo de la utilizacion."
+      }
+    },
+    {
+      "name": "NeedyMeds Patient Assistance Program Database",
+      "url": "https://www.needymeds.org/",
+      "note": {
+        "en": "Directory of manufacturer PAPs, copay cards, and pharmacy discounts for drugs denied under step therapy.",
+        "es": "Directorio de PAPs de fabricantes, tarjetas de copago y descuentos de farmacia para medicamentos denegados bajo terapia escalonada."
+      }
+    },
+    {
+      "name": "NCOA: How to Appeal a Medicare Part D Denial",
+      "url": "https://www.ncoa.org/article/appealing-part-d-coverage-denial/",
+      "note": {
+        "en": "Step-by-step guide to the five-level Part D appeals process, including timelines and OMHA thresholds.",
+        "es": "Guia paso a paso del proceso de apelacion de cinco niveles de la Parte D, incluyendo plazos y umbrales de OMHA."
+      }
+    },
+    {
+      "name": "FDA Drugs@FDA Database",
+      "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-data-files",
+      "note": {
+        "en": "FDA database for confirming approved generics and biosimilars relevant to step therapy alternative drug identification.",
+        "es": "Base de datos de la FDA para confirmar genericos y biosimilares aprobados relevantes para la identificacion de medicamentos alternativos de terapia escalonada."
+      }
+    }
+  ]
+}
