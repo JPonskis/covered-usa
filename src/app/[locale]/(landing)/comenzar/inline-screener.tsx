@@ -178,6 +178,7 @@ export function InlineScreener({ locale }: { locale: string }) {
     setLoading(true);
 
     try {
+      const utms = getUtmParams();
       const res = await fetch('/api/quick-check', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -185,6 +186,9 @@ export function InlineScreener({ locale }: { locale: string }) {
           zipCode: cleanZip,
           householdSize: parseInt(household, 10),
           annualIncome: parseIncomeValue(income),
+          utm_source: utms.utm_source || null,
+          utm_campaign: utms.utm_campaign || null,
+          locale,
         }),
       });
 

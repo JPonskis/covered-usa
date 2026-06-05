@@ -3,6 +3,7 @@ import { checkEligibility } from '@/lib/eligibility';
 import { getStateFromZip } from '@/lib/states/zipToState';
 import { isBrokerAcaState } from '@/lib/ffm-states';
 import { getFPLPercentage } from '@/lib/eligibility/fpl';
+import { supabaseAdmin } from '@/lib/supabase-admin';
 
 // In-memory rate limiter: 15 requests per IP per minute
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
@@ -69,6 +70,22 @@ export async function POST(req: NextRequest) {
     );
 
     const primary = eligible[0] || null;
+
+    // Log anonymous screener start — no PII, just funnel visibility
+    const utmSource = req.headers.get('x-utm-source') || body.utm_source || null;
+    const utmCampaign = req.headers.get('x-utm-campaign') || body.utm_campaign || null;
+    const locale = body.locale || null;
+    supabaseAdmin.from('covered_usa_screener_starts').insert({
+      state,
+      zip_code: String(zipCode),
+      utm_source: utmSource,
+      utm_campaign: utmCampaign,
+      language: locale,
+      has_eligible_program: eligible.length > 0,
+      primary_program: primary?.id || null,
+    }).then(({ error }) => {
+      if (error && error.code !== '42P01') console.error('Screener start log error:', error);
+    });
 
     return NextResponse.json({
       state,
