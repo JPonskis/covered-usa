@@ -1,0 +1,718 @@
+{
+  "slug": "medicare-part-d-late-enrollment-penalty",
+  "topicCluster": "drug-cost",
+  "keyTerms": {
+    "en": [
+      "Medicare Part D late enrollment penalty",
+      "Medicare Part D late enrollment penalty 2026",
+      "Part D penalty calculation 2026",
+      "Medicare Part D late enrollment penalty how to avoid",
+      "Medicare Part D late enrollment penalty appeal",
+      "creditable drug coverage Medicare"
+    ],
+    "es": [
+      "penalidad por inscripcion tardia Medicare Parte D",
+      "penalidad inscripcion tardia Parte D 2026",
+      "calculo penalidad Parte D 2026",
+      "cobertura de medicamentos acreditable Medicare",
+      "apelar penalidad inscripcion tardia Medicare"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "ctaTarget": "analyzer",
+  "drugName": {
+    "en": "Medicare Part D Late Enrollment Penalty 2026",
+    "es": "Penalidad por Inscripcion Tardia de Medicare Parte D 2026"
+  },
+  "shortName": {
+    "en": "Part D Late Enrollment Penalty",
+    "es": "Penalidad de Inscripcion Tardia Parte D"
+  },
+  "nonProprietaryName": "Medicare Part D late enrollment penalty (national base beneficiary premium calculation)",
+  "brandNames": [
+    "Medicare Part D",
+    "Prescription Drug Plan (PDP)",
+    "Medicare Advantage Prescription Drug Plan (MAPD)",
+    "Extra Help / Low Income Subsidy (LIS)",
+    "Medicare Prescription Payment Plan"
+  ],
+  "drugClass": {
+    "en": "Medicare prescription drug benefit policy (enrollment penalty and creditable coverage rules)",
+    "es": "Politica de beneficio de medicamentos recetados de Medicare (reglas de penalidad de inscripcion y cobertura acreditable)"
+  },
+  "routeOfAdministration": "Oral",
+  "medicalSpecialty": "General Practice",
+  "lastUpdated": "2026-06-02",
+  "readingTime": "8 min read",
+  "hcpcsJCodes": [],
+  "meta": {
+    "title": {
+      "en": "Medicare Part D Penalty 2026: How to Calculate and Avoid | CoveredUSA",
+      "es": "Penalidad Inscripcion Tardia Medicare Parte D 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "2026 Part D penalty: 1% x $38.99 x uncovered months, permanent. 12-mo gap = $4.70/mo forever. Creditable coverage, appeal, and Extra Help waiver.",
+      "es": "Penalidad Parte D 2026: 1% x $38.99 x meses sin cobertura, permanente. Brecha de 12 meses = $4.70/mes para siempre. Cobertura acreditable y apelacion."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Medicare Part D Late Enrollment Penalty 2026: How to Calculate and Avoid It",
+      "es": "Penalidad por Inscripcion Tardia de Medicare Parte D 2026: Como Calcularla y Evitarla"
+    },
+    "subhero": {
+      "en": "In 2026, the Medicare Part D late enrollment penalty equals 1% of the $38.99 national base beneficiary premium multiplied by every full month you were eligible for Part D but lacked creditable drug coverage. A 12-month gap costs $4.70 per month forever. A 36-month gap costs roughly $14.00 per month for life. The penalty resets upward each year as the base premium rises. You can avoid it entirely by enrolling during your Initial Enrollment Period, maintaining creditable coverage, or qualifying for Extra Help. This page covers the 2026 formula, creditable coverage rules, the Special Enrollment Period clock, how to appeal a penalty you believe was wrongly assessed, and the Extra Help waiver.",
+      "es": "En 2026, la penalidad por inscripcion tardia de Medicare Parte D equivale al 1% de la prima base nacional de beneficiario de $38.99 multiplicada por cada mes completo en que fue elegible para la Parte D pero no tenia cobertura de medicamentos acreditable. Una brecha de 12 meses cuesta $4.70 por mes para siempre. Una brecha de 36 meses cuesta aproximadamente $14.00 por mes de por vida. La penalidad sube cada ano a medida que aumenta la prima base. Puede evitarla por completo inscribiendose durante su Periodo de Inscripcion Inicial, manteniendo cobertura acreditable, o calificando para Extra Help."
+    }
+  },
+  "quickAnswer": {
+    "en": "The 2026 Medicare Part D late enrollment penalty is 1% of the $38.99 national base beneficiary premium for each full uncovered month (rounded to the nearest $0.10), added to your Part D premium permanently. A 24-month gap adds $9.40 per month to your premium for as long as you have Part D coverage. The penalty does not apply if you had creditable drug coverage (employer plan, VA, TRICARE, FEHB, or other coverage at least as good as Medicare standard), enrolled during your Initial Enrollment Period, or qualify for the federal Extra Help program. You have 63 days after losing creditable coverage to enroll in Part D before the penalty clock starts. You can appeal a penalty through the Independent Review Entity (IRE) within 60 days of receiving the penalty notice.",
+    "es": "La penalidad por inscripcion tardia de Medicare Parte D en 2026 es el 1% de la prima base nacional de beneficiario de $38.99 por cada mes completo sin cobertura (redondeado a los $0.10 mas cercanos), agregada a su prima de Parte D de forma permanente. Una brecha de 24 meses agrega $9.40 por mes a su prima mientras tenga cobertura de Parte D. La penalidad no aplica si tenia cobertura de medicamentos acreditable (plan de empleador, VA, TRICARE, FEHB u otra cobertura al menos tan buena como el estandar de Medicare), se inscribio durante su Periodo de Inscripcion Inicial, o califica para el programa federal Extra Help. Tiene 63 dias despues de perder la cobertura acreditable para inscribirse en la Parte D antes de que empiece el contador de penalidad. Puede apelar una penalidad a traves de la Entidad de Revision Independiente (IRE) dentro de los 60 dias de recibir el aviso de penalidad."
+  },
+  "pricing": {
+    "medicareAspPerUnit": null,
+    "medicareAspUnit": null,
+    "retailLow": 0,
+    "retailHigh": 38,
+    "retailUnit": {
+      "en": "monthly penalty per uncovered month (rounded to nearest $0.10)",
+      "es": "penalidad mensual por mes sin cobertura (redondeado a los $0.10 mas cercanos)"
+    },
+    "inpatientLow": 0,
+    "inpatientHigh": 0,
+    "inpatientUnit": {
+      "en": "not applicable (penalty applies to premium, not inpatient charges)",
+      "es": "no aplica (la penalidad aplica a la prima, no a cargos hospitalarios)"
+    },
+    "medicarePartDMonthlyCap": null,
+    "medicaidCopayLow": 0,
+    "medicaidCopayHigh": 0,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283,
+    "partDAnnualOopCap": 2100
+  },
+  "introParagraphs": [
+    {
+      "en": "Medicare Part D late enrollment penalties exist to encourage continuous prescription drug coverage. Congress created the penalty in the Medicare Modernization Act of 2003 to prevent beneficiaries from waiting until they are sick to sign up for drug coverage, which would destabilize the Part D insurance pool. The penalty is calculated using the national base beneficiary premium, which CMS sets each year. For 2026, CMS set the base beneficiary premium at $38.99 per month, up from $36.78 in 2025, a 6% increase that directly raises the cost of any existing penalty as well as new ones.",
+      "es": "Las penalidades por inscripcion tardia de Medicare Parte D existen para alentar la cobertura continua de medicamentos recetados. El Congreso creo la penalidad en la Ley de Modernizacion de Medicare de 2003 para evitar que los beneficiarios esperen hasta estar enfermos para inscribirse en la cobertura de medicamentos, lo que desestabilizaria el fondo de seguros de la Parte D. La penalidad se calcula usando la prima base nacional de beneficiario, que CMS establece cada ano. Para 2026, CMS fijo la prima base de beneficiario en $38.99 por mes, frente a $36.78 en 2025, un aumento del 6% que eleva directamente el costo de cualquier penalidad existente y de las nuevas."
+    },
+    {
+      "en": "The penalty formula is: uncovered months times 1% times $38.99, rounded to the nearest $0.10. Every full month without creditable drug coverage after your Initial Enrollment Period closes adds 1% to the multiplier. A person who went 12 months without coverage pays $4.70 per month (rounded) on top of their regular plan premium, permanently. A person who went 36 months pays approximately $14.00 per month permanently. Because the base premium adjusts upward each year, the dollar amount of your penalty can increase even if your uncovered months stay the same. The Inflation Reduction Act capped annual increases in the base premium at 6% through 2029, which partially limits penalty inflation.",
+      "es": "La formula de la penalidad es: meses sin cobertura por 1% por $38.99, redondeado a los $0.10 mas cercanos. Cada mes completo sin cobertura de medicamentos acreditable despues de que cierra su Periodo de Inscripcion Inicial agrega un 1% al multiplicador. Una persona que estuvo 12 meses sin cobertura paga $4.70 por mes (redondeado) sobre su prima regular del plan, de forma permanente. Una persona que estuvo 36 meses paga aproximadamente $14.00 por mes de forma permanente. Debido a que la prima base se ajusta hacia arriba cada ano, el monto en dolares de su penalidad puede aumentar incluso si sus meses sin cobertura permanecen igual. La Ley de Reduccion de la Inflacion limito los aumentos anuales de la prima base al 6% hasta 2029, lo que limita parcialmente la inflacion de la penalidad."
+    },
+    {
+      "en": "Two rules dominate the penalty landscape. First, creditable coverage: any drug coverage that is expected to pay at least as much as Medicare's standard Part D benefit protects you from the penalty while you hold it. Employer-sponsored plans, FEHB, TRICARE, VA drug benefits, and many union plans are creditable. COBRA coverage and retiree coverage can also be creditable, but they do not qualify you for a Special Enrollment Period when they end (you need a different SEP for those). Second, the 63-day clock: once you lose creditable coverage, you have exactly 63 days to enroll in a Part D plan before the penalty period begins. Medicare Part D coverage and the Inflation Reduction Act $2,100 annual out-of-pocket cap both apply regardless of whether you paid a late enrollment penalty.",
+      "es": "Dos reglas dominan el panorama de penalidades. Primero, la cobertura acreditable: cualquier cobertura de medicamentos que se espera que pague al menos tanto como el beneficio estandar de la Parte D de Medicare lo protege de la penalidad mientras la mantenga. Los planes patrocinados por empleadores, FEHB, TRICARE, beneficios de medicamentos de VA y muchos planes sindicales son acreditables. La cobertura COBRA y la cobertura de jubilados tambien pueden ser acreditables, pero no le califican para un Periodo de Inscripcion Especial cuando terminan. Segundo, el contador de 63 dias: una vez que pierde la cobertura acreditable, tiene exactamente 63 dias para inscribirse en un plan de Parte D antes de que comience el periodo de penalidad."
+    }
+  ],
+  "pointOfPay": {
+    "rows": [
+      {
+        "pointOfPay": {
+          "en": "12 uncovered months (2026 penalty)",
+          "es": "12 meses sin cobertura (penalidad 2026)"
+        },
+        "cost": {
+          "en": "$4.70/month added to premium, permanently",
+          "es": "$4.70/mes agregados a la prima, permanentemente"
+        },
+        "notes": {
+          "en": "12 x 1% x $38.99 = $4.68, rounded to $4.70; rises each year with the base premium",
+          "es": "12 x 1% x $38.99 = $4.68, redondeado a $4.70; sube cada ano con la prima base"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "24 uncovered months (2026 penalty)",
+          "es": "24 meses sin cobertura (penalidad 2026)"
+        },
+        "cost": {
+          "en": "$9.40/month added to premium, permanently",
+          "es": "$9.40/mes agregados a la prima, permanentemente"
+        },
+        "notes": {
+          "en": "24 x 1% x $38.99 = $9.36, rounded to $9.40; a 2-year gap costs over $112/year in penalties",
+          "es": "24 x 1% x $38.99 = $9.36, redondeado a $9.40; una brecha de 2 anos cuesta mas de $112/ano en penalidades"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "36 uncovered months (2026 penalty)",
+          "es": "36 meses sin cobertura (penalidad 2026)"
+        },
+        "cost": {
+          "en": "$14.00/month added to premium, permanently",
+          "es": "$14.00/mes agregados a la prima, permanentemente"
+        },
+        "notes": {
+          "en": "36 x 1% x $38.99 = $14.04, rounded to $14.00; a 3-year gap costs over $168/year in penalties",
+          "es": "36 x 1% x $38.99 = $14.04, redondeado a $14.00; una brecha de 3 anos cuesta mas de $168/ano en penalidades"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Extra Help / Low Income Subsidy (LIS) enrollees",
+          "es": "Inscritos en Extra Help / Subsidio de Bajos Ingresos (LIS)"
+        },
+        "cost": {
+          "en": "$0 penalty (waived)",
+          "es": "$0 de penalidad (exenta)"
+        },
+        "notes": {
+          "en": "Qualifying for federal Extra Help waives the late enrollment penalty entirely, regardless of how long you waited",
+          "es": "Calificar para Extra Help federal exime completamente la penalidad por inscripcion tardia, independientemente de cuanto tiempo espero"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Creditable coverage maintained throughout",
+          "es": "Cobertura acreditable mantenida durante todo el periodo"
+        },
+        "cost": {
+          "en": "$0 penalty",
+          "es": "$0 de penalidad"
+        },
+        "notes": {
+          "en": "Employer plan, VA, TRICARE, FEHB, or other qualifying creditable coverage maintained continuously; no penalty upon enrollment in Part D",
+          "es": "Plan de empleador, VA, TRICARE, FEHB u otra cobertura acreditable calificadora mantenida de forma continua; sin penalidad al inscribirse en la Parte D"
+        }
+      }
+    ],
+    "tableFootnote": {
+      "en": "Penalty amounts calculated using the 2026 national base beneficiary premium of $38.99 (CMS, July 2025). Penalty is rounded to the nearest $0.10 per CMS regulation. Dollar amount rises each year as the base premium increases.",
+      "es": "Montos de penalidad calculados usando la prima base nacional de beneficiario de 2026 de $38.99 (CMS, julio 2025). La penalidad se redondea a los $0.10 mas cercanos segun la regulacion de CMS. El monto en dolares aumenta cada ano a medida que aumenta la prima base."
+    },
+    "tableSource": "CMS Medicare Part D 2026 National Base Beneficiary Premium announcement, July 28 2025; CMS Late Enrollment Penalty regulations 42 CFR 423.46"
+  },
+  "whyHospitalsCharge": {
+    "paragraphs": [
+      {
+        "en": "The Medicare Part D late enrollment penalty compounds over time in three ways. First, the dollar amount is permanent: unlike a short-term surcharge, the penalty follows you for as long as you have any Part D coverage, even if you switch plans, switch from a standalone PDP to a Medicare Advantage plan with drug coverage, or move between states. Second, the dollar amount rises annually: because the penalty percentage stays the same (your uncovered months do not change) but the base premium rises each year, the actual monthly dollar added to your bill increases year over year. A 24-month gap that cost $8.36 per month in 2024 costs $9.40 per month in 2026. Third, the compounding effect is invisible at enrollment: most people receiving a penalty notice do not realize the future-year dollar impact. A 24-month gap assessed in 2026 could cost $120 to $160 per year in added premiums by the early 2030s if base premiums continue rising.",
+        "es": "La penalidad por inscripcion tardia de Medicare Parte D se acumula con el tiempo de tres maneras. Primero, el monto en dolares es permanente: a diferencia de un recargo a corto plazo, la penalidad le sigue mientras tenga cualquier cobertura de Parte D, incluso si cambia de planes. Segundo, el monto en dolares aumenta anualmente: debido a que el porcentaje de penalidad permanece igual pero la prima base sube cada ano, el monto mensual real agregado a su factura aumenta ano tras ano. Tercero, el efecto acumulativo es invisible al momento de la inscripcion: la mayoria de las personas que reciben un aviso de penalidad no se dan cuenta del impacto en dolares en anos futuros."
+      },
+      {
+        "en": "Three structural factors drive why the penalty bites harder than most beneficiaries expect. The formula uses the national base premium, not your actual plan premium, so even if you chose a $0-premium plan the penalty still compounds off $38.99. The penalty recalculates with each plan year's base premium update, meaning a low-premium year does not lock in a low penalty forever. And critically, the penalty starts counting from the end of your Initial Enrollment Period, not from the date you first needed prescription drugs, so even healthy 65-year-olds who take no medications still owe the penalty if they delay enrollment beyond their IEP window without creditable coverage.",
+        "es": "Tres factores estructurales explican por que la penalidad es mas dura de lo que la mayoria de los beneficiarios esperan. La formula usa la prima base nacional, no la prima real de su plan, por lo que incluso si eligio un plan de prima de $0 la penalidad sigue acumulandose sobre $38.99. La penalidad se recalcula con la actualizacion de la prima base de cada ano del plan. Y fundamentalmente, la penalidad comienza a contar desde el final de su Periodo de Inscripcion Inicial, no desde la fecha en que necesito medicamentos por primera vez, por lo que incluso los beneficiarios sanos de 65 anos que no toman medicamentos aun deben la penalidad si retrasan la inscripcion mas alla de su ventana IEP sin cobertura acreditable."
+      },
+      {
+        "en": "Patients who received a late enrollment penalty notice and believe it was calculated incorrectly have the right to appeal. The most common successful appeal grounds are: proof of creditable coverage the plan did not know about, employer notification errors where the plan told the beneficiary their coverage was not creditable when it was, and documented inability to enroll due to a serious medical emergency. The appeal goes to the Independent Review Entity (IRE), currently C2C Innovative Solutions, within 60 days of the penalty notice date. The IRE has 90 days to issue a final decision. Free help navigating the appeal is available through State Health Insurance Assistance Programs (SHIPs) at 1-877-839-2675.",
+        "es": "Los pacientes que recibieron un aviso de penalidad por inscripcion tardia y creen que fue calculada incorrectamente tienen derecho a apelar. Los motivos de apelacion exitosa mas comunes son: prueba de cobertura acreditable que el plan no conocia, errores de notificacion del empleador, e incapacidad documentada para inscribirse debido a una emergencia medica grave. La apelacion va a la Entidad de Revision Independiente (IRE), actualmente C2C Innovative Solutions, dentro de los 60 dias de la fecha del aviso de penalidad. La IRE tiene 90 dias para emitir una decision final. Ayuda gratuita para navegar la apelacion esta disponible a traves de los Programas Estatales de Asistencia de Seguros de Salud (SHIPs) al 1-877-839-2675."
+      }
+    ]
+  },
+  "patientAssistancePrograms": {
+    "intro": {
+      "en": "Beneficiaries with low income may qualify for Medicare Extra Help (the Part D Low Income Subsidy), which not only reduces Part D cost-sharing but also waives the late enrollment penalty entirely. Extra Help is not a manufacturer patient assistance program but a federal entitlement program administered by the Social Security Administration. In 2026, Extra Help is available to individuals with income at or below 150% of the Federal Poverty Level ($23,475 per year for a single person) and limited assets ($18,090 individual / $36,100 couple).",
+      "es": "Los beneficiarios con bajos ingresos pueden calificar para Medicare Extra Help (el Subsidio de Bajos Ingresos de la Parte D), que no solo reduce el costo compartido de la Parte D sino que tambien exime completamente la penalidad por inscripcion tardia. Extra Help no es un programa de asistencia al paciente del fabricante sino un programa de derecho federal administrado por la Administracion del Seguro Social. En 2026, Extra Help esta disponible para personas con ingresos iguales o inferiores al 150% del Nivel de Pobreza Federal ($23,475 por ano para una persona soltera) y activos limitados ($18,090 individual / $36,100 pareja)."
+    },
+    "rows": [
+      {
+        "program": "Medicare Extra Help (Low Income Subsidy, LIS)",
+        "costBenefit": {
+          "en": "Waives the Part D late enrollment penalty entirely; $0 deductible; $1.60 to $12.65 per drug copay; $0 after OOP cap",
+          "es": "Exime completamente la penalidad por inscripcion tardia de la Parte D; $0 de deducible; copago de $1.60 a $12.65 por medicamento; $0 despues del limite de gastos de bolsillo"
+        },
+        "howToApply": "ssa.gov/extrahelp"
+      },
+      {
+        "program": "State Health Insurance Assistance Programs (SHIPs)",
+        "costBenefit": {
+          "en": "Free counseling to navigate Part D enrollment, penalty appeals, and creditable coverage disputes; available in all 50 states",
+          "es": "Asesoria gratuita para navegar la inscripcion en la Parte D, apelaciones de penalidades y disputas de cobertura acreditable; disponible en los 50 estados"
+        },
+        "howToApply": "shiphelp.org (call 1-877-839-2675)"
+      },
+      {
+        "program": "NeedyMeds Drug Assistance Program Directory",
+        "costBenefit": {
+          "en": "Directory of manufacturer patient assistance programs for specific drugs if cost-sharing remains a burden even after Part D enrollment",
+          "es": "Directorio de programas de asistencia al paciente de fabricantes para medicamentos especificos si el costo compartido sigue siendo una carga incluso despues de la inscripcion en la Parte D"
+        },
+        "howToApply": "needymeds.org"
+      }
+    ],
+    "footnote": {
+      "en": "Manufacturer savings cards and copay assistance programs are not available to Medicare beneficiaries under federal anti-kickback statute (42 U.S.C. 1320a-7b). If you have Medicare, use Extra Help, SHIP counseling, or manufacturer patient assistance programs (PAPs) that are income-based and Medicare-compliant, not commercial savings cards.",
+      "es": "Las tarjetas de ahorro de fabricantes y los programas de asistencia de copago no estan disponibles para beneficiarios de Medicare bajo el estatuto federal anti-soborno (42 U.S.C. 1320a-7b). Si tiene Medicare, use Extra Help, asesoria SHIP, o programas de asistencia al paciente (PAP) del fabricante que sean basados en ingresos y cumplan con Medicare, no tarjetas comerciales de ahorro."
+    },
+    "source": "SSA Extra Help program (ssa.gov/extrahelp), SHIP National Technical Assistance Center (shiphelp.org), NeedyMeds.org"
+  },
+  "medicarePartD": {
+    "hasSpecificCap": false,
+    "paragraphs": [
+      {
+        "en": "Medicare Part D is the outpatient prescription drug benefit added to Medicare in 2006 under the Medicare Modernization Act. Enrollment is voluntary, but beneficiaries who choose not to enroll when first eligible and later decide to join face the late enrollment penalty unless they had continuous creditable coverage in the interim. In 2026, Part D plans follow a two-stage benefit structure under the Inflation Reduction Act: a deductible period (up to $615 maximum) and an initial coverage period with roughly 25% coinsurance until the $2,100 annual out-of-pocket cap is reached. The late enrollment penalty is assessed on top of whatever plan premium you would otherwise pay and does not affect how your actual drug costs count toward the $2,100 OOP cap.",
+        "es": "Medicare Parte D es el beneficio de medicamentos recetados ambulatorios agregado a Medicare en 2006 bajo la Ley de Modernizacion de Medicare. La inscripcion es voluntaria, pero los beneficiarios que deciden no inscribirse cuando son elegibles por primera vez y luego deciden unirse enfrentan la penalidad por inscripcion tardia a menos que hayan tenido cobertura acreditable continua en el interim. En 2026, los planes de Parte D siguen una estructura de beneficio de dos etapas bajo la Ley de Reduccion de la Inflacion: un periodo de deducible (hasta un maximo de $615) y un periodo de cobertura inicial con aproximadamente el 25% de coseguro hasta que se alcanza el limite anual de gastos de bolsillo de $2,100."
+      },
+      {
+        "en": "The Initial Enrollment Period (IEP) for Part D is a 7-month window: the three months before the month you turn 65, the month you turn 65, and the three months after. If you miss your IEP and have no creditable coverage, every full month you are uncovered adds to your penalty. The Annual Enrollment Period (October 15 to December 7) lets you enroll for the following January, but the penalty accrual continues until your coverage actually starts. Workers covered by employer-sponsored insurance who turn 65 do not need to enroll in Part D immediately as long as the employer plan qualifies as creditable coverage, but they must enroll in Part D within 63 days of losing that employer coverage to avoid the penalty.",
+        "es": "El Periodo de Inscripcion Inicial (IEP) para la Parte D es una ventana de 7 meses: los tres meses antes del mes en que cumple 65 anos, el mes en que cumple 65 anos y los tres meses posteriores. Si se pierde su IEP y no tiene cobertura acreditable, cada mes completo sin cobertura se agrega a su penalidad. El Periodo de Inscripcion Anual (del 15 de octubre al 7 de diciembre) le permite inscribirse para el siguiente enero, pero la acumulacion de penalidad continua hasta que su cobertura realmente comience."
+      },
+      {
+        "en": "Creditable coverage under Medicare Part D rules means coverage that is actuarially equivalent to or better than the standard Part D benefit. Employers and other plan sponsors are required to notify covered beneficiaries annually before October 15 whether their coverage is creditable or not. Losing that annual notice, or receiving an incorrect notice that coverage was creditable when it was not, are valid grounds for an appeal if you are assessed a late enrollment penalty later. The Inflation Reduction Act did not change the creditable coverage definition or the 63-day clock, but the $2,100 OOP cap and $35 insulin cap apply to all Part D enrollees regardless of whether they paid a late enrollment penalty.",
+        "es": "La cobertura acreditable bajo las reglas de Medicare Parte D significa cobertura que es actuarialmente equivalente o mejor que el beneficio estandar de la Parte D. Los empleadores y otros patrocinadores de planes deben notificar a los beneficiarios cubiertos anualmente antes del 15 de octubre si su cobertura es acreditable o no. Perder ese aviso anual, o recibir un aviso incorrecto de que la cobertura era acreditable cuando no lo era, son motivos validos para una apelacion si luego le aplican una penalidad por inscripcion tardia."
+      }
+    ]
+  },
+  "commonBillingErrors": {
+    "intro": {
+      "en": "Beneficiaries receiving a Part D late enrollment penalty notice should verify these common calculation errors before accepting the penalty:",
+      "es": "Los beneficiarios que reciben un aviso de penalidad por inscripcion tardia de la Parte D deben verificar estos errores de calculo comunes antes de aceptar la penalidad:"
+    },
+    "items": [
+      {
+        "en": "Uncovered months counted that overlap with a period of creditable employer, FEHB, VA, or TRICARE coverage: provide the employer's CMS creditable coverage notice (typically issued each October) as proof.",
+        "es": "Meses sin cobertura contados que se superponen con un periodo de cobertura acreditable del empleador, FEHB, VA o TRICARE: proporcione el aviso de cobertura acreditable de CMS del empleador (emitido tipicamente cada octubre) como prueba."
+      },
+      {
+        "en": "Penalty start date set to the 66th birthday instead of the end of the 7-month Initial Enrollment Period: the IEP closes 3 months after the month you turn 65, not at your birthday.",
+        "es": "Fecha de inicio de la penalidad establecida en el cumpleanos numero 66 en lugar del final del Periodo de Inscripcion Inicial de 7 meses: el IEP cierra 3 meses despues del mes en que cumple 65 anos, no en su cumpleanos."
+      },
+      {
+        "en": "COBRA continuation coverage counted as non-creditable: many COBRA plans from large employers are creditable (actuarially equivalent to Part D standard benefit). Request the creditable coverage determination letter from the plan administrator.",
+        "es": "Cobertura de continuacion COBRA contada como no acreditable: muchos planes COBRA de empleadores grandes son acreditables. Solicite la carta de determinacion de cobertura acreditable al administrador del plan."
+      },
+      {
+        "en": "Penalty assessed to an Extra Help recipient who should be exempt: if you receive the federal Low Income Subsidy, file an appeal immediately with your Part D plan and SSA.",
+        "es": "Penalidad aplicada a un receptor de Extra Help que deberia estar exento: si recibe el Subsidio de Bajos Ingresos federal, presente una apelacion de inmediato con su plan de Parte D y SSA."
+      },
+      {
+        "en": "Months counted beyond the enrollment date: penalty accrual must stop the month before your Part D coverage took effect, not the month you filed the application.",
+        "es": "Meses contados mas alla de la fecha de inscripcion: la acumulacion de penalidad debe detenerse el mes anterior a que su cobertura de Parte D entro en vigor, no el mes en que presento la solicitud."
+      }
+    ]
+  },
+  "pharmacyPriceComparison": {
+    "caption": {
+      "en": "Medicare Part D late enrollment penalty dollar cost by months uncovered (2026)",
+      "es": "Costo en dolares de la penalidad por inscripcion tardia de Parte D segun meses sin cobertura (2026)"
+    },
+    "rows": [
+      {
+        "pharmacy": "6 months uncovered",
+        "price": {
+          "en": "$2.30/month penalty",
+          "es": "$2.30/mes de penalidad"
+        },
+        "notes": {
+          "en": "6 x 1% x $38.99 = $2.34, rounded to $2.30; over 10 years adds up to at least $276",
+          "es": "6 x 1% x $38.99 = $2.34, redondeado a $2.30; en 10 anos suma al menos $276"
+        }
+      },
+      {
+        "pharmacy": "12 months uncovered",
+        "price": {
+          "en": "$4.70/month penalty",
+          "es": "$4.70/mes de penalidad"
+        },
+        "notes": {
+          "en": "12 x 1% x $38.99 = $4.68, rounded to $4.70; over 10 years adds up to at least $564",
+          "es": "12 x 1% x $38.99 = $4.68, redondeado a $4.70; en 10 anos suma al menos $564"
+        }
+      },
+      {
+        "pharmacy": "24 months uncovered",
+        "price": {
+          "en": "$9.40/month penalty",
+          "es": "$9.40/mes de penalidad"
+        },
+        "notes": {
+          "en": "24 x 1% x $38.99 = $9.36, rounded to $9.40; over 10 years adds up to at least $1,128",
+          "es": "24 x 1% x $38.99 = $9.36, redondeado a $9.40; en 10 anos suma al menos $1,128"
+        }
+      },
+      {
+        "pharmacy": "36 months uncovered",
+        "price": {
+          "en": "$14.00/month penalty",
+          "es": "$14.00/mes de penalidad"
+        },
+        "notes": {
+          "en": "36 x 1% x $38.99 = $14.04, rounded to $14.00; over 10 years adds up to at least $1,680",
+          "es": "36 x 1% x $38.99 = $14.04, redondeado a $14.00; en 10 anos suma al menos $1,680"
+        }
+      },
+      {
+        "pharmacy": "60 months uncovered",
+        "price": {
+          "en": "$23.40/month penalty",
+          "es": "$23.40/mes de penalidad"
+        },
+        "notes": {
+          "en": "60 x 1% x $38.99 = $23.39, rounded to $23.40; over 10 years adds up to at least $2,808",
+          "es": "60 x 1% x $38.99 = $23.39, redondeado a $23.40; en 10 anos suma al menos $2,808"
+        }
+      }
+    ],
+    "footnote": {
+      "en": "Penalty amounts use the 2026 national base beneficiary premium of $38.99 (CMS, July 28 2025). The base premium rises annually (up to 6% per year cap under IRA through 2029), so actual future monthly penalty amounts will be higher than these 2026 figures. 10-year estimates assume the 2026 rate holds constant (conservative floor).",
+      "es": "Los montos de penalidad usan la prima base nacional de beneficiario de 2026 de $38.99 (CMS, 28 de julio de 2025). La prima base aumenta anualmente (hasta un 6% por ano bajo la IRA hasta 2029), por lo que los montos reales de penalidad mensual futura seran mas altos que estas cifras de 2026. Las estimaciones de 10 anos asumen que la tasa de 2026 permanece constante (piso conservador)."
+    },
+    "source": "CMS 2026 Medicare Part D National Base Beneficiary Premium ($38.99); CMS 42 CFR 423.46 penalty calculation regulation"
+  },
+  "genericBiosimilarStatus": {
+    "hasGeneric": false,
+    "genericName": null,
+    "patentExpiry": null,
+    "biosimilars": null,
+    "note": {
+      "en": "The Medicare Part D late enrollment penalty is a federal regulatory formula, not a pharmaceutical product. There is no generic or biosimilar equivalent. The penalty is calculated using the CMS-published national base beneficiary premium and applies to all Part D plans equally. The only way to eliminate the penalty is to qualify for Extra Help, successfully appeal with proof of creditable coverage, or never incur it by enrolling during your Initial Enrollment Period.",
+      "es": "La penalidad por inscripcion tardia de Medicare Parte D es una formula regulatoria federal, no un producto farmaceutico. No hay equivalente generico ni biosimilar. La penalidad se calcula usando la prima base nacional de beneficiario publicada por CMS y aplica a todos los planes de Parte D por igual. La unica manera de eliminar la penalidad es calificar para Extra Help, apelar exitosamente con prueba de cobertura acreditable, o nunca incurrirla inscribiendose durante su Periodo de Inscripcion Inicial."
+    }
+  },
+  "papEligibilityTable": {
+    "caption": {
+      "en": "Extra Help eligibility by household size (2026)",
+      "es": "Elegibilidad de Extra Help por tamano del hogar (2026)"
+    },
+    "fplPctReferenced": 150,
+    "rows": [
+      {
+        "householdSize": 1,
+        "incomeThreshold": 23940,
+        "incomeLabel": {
+          "en": "Up to $23,940",
+          "es": "Hasta $23,940"
+        },
+        "fplPct": 150
+      },
+      {
+        "householdSize": 2,
+        "incomeThreshold": 32460,
+        "incomeLabel": {
+          "en": "Up to $32,460",
+          "es": "Hasta $32,460"
+        },
+        "fplPct": 150
+      },
+      {
+        "householdSize": 3,
+        "incomeThreshold": 40980,
+        "incomeLabel": {
+          "en": "Up to $40,980",
+          "es": "Hasta $40,980"
+        },
+        "fplPct": 150
+      },
+      {
+        "householdSize": 4,
+        "incomeThreshold": 49500,
+        "incomeLabel": {
+          "en": "Up to $49,500",
+          "es": "Hasta $49,500"
+        },
+        "fplPct": 150
+      },
+      {
+        "householdSize": 5,
+        "incomeThreshold": 58020,
+        "incomeLabel": {
+          "en": "Up to $58,020",
+          "es": "Hasta $58,020"
+        },
+        "fplPct": 150
+      },
+      {
+        "householdSize": 6,
+        "incomeThreshold": 66540,
+        "incomeLabel": {
+          "en": "Up to $66,540",
+          "es": "Hasta $66,540"
+        },
+        "fplPct": 150
+      },
+      {
+        "householdSize": 7,
+        "incomeThreshold": 75060,
+        "incomeLabel": {
+          "en": "Up to $75,060",
+          "es": "Hasta $75,060"
+        },
+        "fplPct": 150
+      },
+      {
+        "householdSize": 8,
+        "incomeThreshold": 83580,
+        "incomeLabel": {
+          "en": "Up to $83,580",
+          "es": "Hasta $83,580"
+        },
+        "fplPct": 150
+      },
+      {
+        "householdSize": "Each additional person",
+        "incomeThreshold": 8520,
+        "incomeLabel": {
+          "en": "+ $8,520",
+          "es": "+ $8,520"
+        },
+        "fplPct": 150
+      }
+    ],
+    "year": 2026,
+    "source": "HHS 2026 federal poverty guidelines (2026 base: $15,960 per year / $1,330 per month for household of 1; 150% FPL calculated by CoveredUSA), https://aspe.hhs.gov/poverty-guidelines"
+  },
+  "denialAlternatives": {
+    "appealSteps": [
+      {
+        "en": "Step 1: Request a written penalty notice from your Part D plan if you have not already received one. The notice must state the number of uncovered months used in the calculation and the dollar amount of the penalty. Review it for accuracy against your own records.",
+        "es": "Paso 1: Solicite un aviso de penalidad por escrito a su plan de Parte D si aun no lo ha recibido. El aviso debe indicar la cantidad de meses sin cobertura utilizados en el calculo y el monto en dolares de la penalidad. Reviselo para verificar su exactitud con sus propios registros."
+      },
+      {
+        "en": "Step 2: File a formal reconsideration request within 60 days of the date on the penalty letter. Use the CMS Part D Late Enrollment Penalty Reconsideration Request Form (available at cms.gov) or write your own letter to the Independent Review Entity (IRE): C2C Innovative Solutions, 301 W. Bay St., Suite 600, Jacksonville, FL 32202. Fax: (833) 946-1912.",
+        "es": "Paso 2: Presente una solicitud formal de reconsideracion dentro de los 60 dias de la fecha en la carta de penalidad. Use el Formulario de Solicitud de Reconsideracion de Penalidad por Inscripcion Tardia de la Parte D de CMS o escriba su propia carta a la Entidad de Revision Independiente (IRE): C2C Innovative Solutions, 301 W. Bay St., Suite 600, Jacksonville, FL 32202."
+      },
+      {
+        "en": "Step 3: Gather supporting documentation of creditable coverage: annual creditable coverage notices from your employer (issued each fall before October 15), VA or TRICARE coverage letters, FEHB plan confirmation letters, or insurance cards with effective dates covering the disputed period.",
+        "es": "Paso 3: Recopile documentacion de respaldo de cobertura acreditable: avisos anuales de cobertura acreditable de su empleador (emitidos cada otono antes del 15 de octubre), cartas de cobertura de VA o TRICARE, cartas de confirmacion del plan FEHB, o tarjetas de seguro con fechas de vigencia que cubran el periodo en disputa."
+      },
+      {
+        "en": "Step 4: Submit the appeal package to the IRE by the 60-day deadline. The IRE will notify you of its final decision within 90 calendar days. If you win, your plan must remove the penalty retroactively and refund any amounts paid. If you lose, further appeals are limited but SHIP counselors (1-877-839-2675) can advise on next steps.",
+        "es": "Paso 4: Envie el paquete de apelacion a la IRE antes del plazo de 60 dias. La IRE le notificara su decision final dentro de los 90 dias calendario. Si gana, su plan debe eliminar la penalidad retroactivamente y reembolsar los montos pagados. Si pierde, las apelaciones adicionales son limitadas pero los consejeros SHIP (1-877-839-2675) pueden asesorar sobre los proximos pasos."
+      }
+    ],
+    "stepTherapyOverride": {
+      "en": "Step therapy does not apply to Part D late enrollment penalties (it is a formulary concept, not an enrollment penalty concept). The equivalent override here is applying for Extra Help: if you qualify for the federal Low Income Subsidy at any point, your plan must waive the late enrollment penalty going forward. Apply through Social Security at ssa.gov/extrahelp or call 1-800-772-1213.",
+      "es": "La terapia escalonada no aplica a las penalidades por inscripcion tardia de la Parte D (es un concepto de formulario, no de penalidad de inscripcion). La alternativa equivalente aqui es solicitar Extra Help: si califica para el Subsidio de Bajos Ingresos federal en cualquier momento, su plan debe eximir la penalidad por inscripcion tardia en adelante. Solicite a traves de la Seguridad Social en ssa.gov/extrahelp o llame al 1-800-772-1213."
+    },
+    "papFallback": {
+      "en": "If appeals fail, consider applying for Extra Help (the Part D Low Income Subsidy) if your income is at or below 150% FPL. Extra Help waives the penalty entirely for qualifying beneficiaries. Additionally, State Health Insurance Assistance Programs (SHIPs) provide free one-on-one help appealing penalties and navigating coverage options at no cost to you (call 1-877-839-2675).",
+      "es": "Si las apelaciones fracasan, considere solicitar Extra Help (el Subsidio de Bajos Ingresos de la Parte D) si sus ingresos son iguales o inferiores al 150% del FPL. Extra Help exime completamente la penalidad para los beneficiarios que califican. Ademas, los Programas Estatales de Asistencia de Seguros de Salud (SHIPs) brindan ayuda individual gratuita para apelar penalidades y navegar opciones de cobertura sin costo para usted."
+    },
+    "genericAlternative": null
+  },
+  "howToApplyPap": {
+    "programName": "Medicare Extra Help (Low Income Subsidy)",
+    "numberedSteps": [
+      {
+        "en": "Step 1: Visit ssa.gov/extrahelp or call 1-800-772-1213 (TTY 1-800-325-0778) to start the Extra Help application. The application is also available in paper form at your local Social Security office.",
+        "es": "Paso 1: Visite ssa.gov/extrahelp o llame al 1-800-772-1213 (TTY 1-800-325-0778) para comenzar la solicitud de Extra Help. La solicitud tambien esta disponible en formato de papel en su oficina local del Seguro Social."
+      },
+      {
+        "en": "Step 2: Complete the Social Security Application for Extra Help with Medicare Prescription Drug Plan Costs (Form SSA-1020). Complete all sections including income, resources, and Medicare enrollment information.",
+        "es": "Paso 2: Complete la Solicitud del Seguro Social para Extra Help con los Costos del Plan de Medicamentos Recetados de Medicare (Formulario SSA-1020). Complete todas las secciones incluyendo ingresos, recursos e informacion de inscripcion en Medicare."
+      },
+      {
+        "en": "Step 3: Gather required documents and submit with your application: recent tax return or Social Security award letter for income verification, bank and investment account statements for resource verification, Medicare card showing Part A and/or Part B enrollment, and if applicable, proof that you already have a Part D plan.",
+        "es": "Paso 3: Recopile los documentos requeridos y envielos con su solicitud: declaracion de impuestos reciente o carta de adjudicacion del Seguro Social para verificacion de ingresos, estados de cuenta bancarios y de inversion para verificacion de recursos, tarjeta de Medicare que muestre la inscripcion en la Parte A y/o Parte B, y si aplica, prueba de que ya tiene un plan de Parte D."
+      },
+      {
+        "en": "Step 4: SSA processes the application and notifies you of eligibility. If approved, SSA automatically notifies CMS, which in turn notifies your Part D plan to remove the late enrollment penalty and apply the appropriate Extra Help cost-sharing level (full or partial subsidy).",
+        "es": "Paso 4: SSA procesa la solicitud y le notifica su elegibilidad. Si es aprobado, SSA notifica automaticamente a CMS, quien a su vez notifica a su plan de Parte D para eliminar la penalidad por inscripcion tardia y aplicar el nivel apropiado de costo compartido de Extra Help."
+      },
+      {
+        "en": "Step 5: If you do not already have a Part D plan and are newly approved for Extra Help, you will receive a Special Enrollment Period to join a plan. Extra Help recipients may switch plans once per quarter in the first three quarters of the year plus during the Annual Enrollment Period.",
+        "es": "Paso 5: Si aun no tiene un plan de Parte D y es nuevamente aprobado para Extra Help, recibira un Periodo de Inscripcion Especial para unirse a un plan. Los receptores de Extra Help pueden cambiar de plan una vez por trimestre en los primeros tres trimestres del ano mas durante el Periodo de Inscripcion Anual."
+      }
+    ],
+    "govStartingUrl": "https://www.ssa.gov/extrahelp",
+    "manufacturerStartingUrl": "https://www.medicare.gov/basics/costs/help/drug-costs",
+    "documentsNeeded": [
+      {
+        "en": "Most recent federal tax return or Social Security award letter (proof of income)",
+        "es": "Declaracion de impuestos federal mas reciente o carta de adjudicacion del Seguro Social (prueba de ingresos)"
+      },
+      {
+        "en": "Bank account statements for all checking and savings accounts (within the last 3 months)",
+        "es": "Estados de cuenta bancarios de todas las cuentas corrientes y de ahorro (en los ultimos 3 meses)"
+      },
+      {
+        "en": "Investment and retirement account statements (IRA, 401k, brokerage) to document resources",
+        "es": "Estados de cuenta de inversiones y cuentas de jubilacion (IRA, 401k, corretaje) para documentar recursos"
+      },
+      {
+        "en": "Medicare card showing Part A and/or Part B enrollment and effective dates",
+        "es": "Tarjeta de Medicare que muestre la inscripcion en la Parte A y/o Parte B y las fechas de vigencia"
+      },
+      {
+        "en": "If already enrolled in Part D: Part D plan name and member ID number",
+        "es": "Si ya esta inscrito en la Parte D: nombre del plan de Parte D y numero de identificacion de miembro"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Household income exceeds 150% FPL for your household size (see eligibility table above for 2026 thresholds)",
+        "es": "Los ingresos del hogar superan el 150% del FPL para el tamano de su hogar (consulte la tabla de elegibilidad anterior para los umbrales de 2026)"
+      },
+      {
+        "en": "Resources (assets) exceed the 2026 limit of $18,090 for an individual or $36,100 for a couple",
+        "es": "Los recursos (activos) superan el limite de 2026 de $18,090 para un individuo o $36,100 para una pareja"
+      },
+      {
+        "en": "Incomplete application form or missing required documentation",
+        "es": "Formulario de solicitud incompleto o falta de documentacion requerida"
+      },
+      {
+        "en": "Not enrolled in Medicare Part A and/or Part B (required for Part D eligibility)",
+        "es": "No inscrito en Medicare Parte A y/o Parte B (requerido para elegibilidad en la Parte D)"
+      }
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "How is the Medicare Part D late enrollment penalty calculated in 2026?",
+        "answer": "The 2026 Part D late enrollment penalty equals 1% of the national base beneficiary premium ($38.99) multiplied by the number of full months you were eligible for Part D but had no creditable drug coverage, rounded to the nearest $0.10. A 12-month gap costs $4.70 per month. A 24-month gap costs $9.40 per month. A 36-month gap costs approximately $14.00 per month. The penalty is added to your Part D plan premium permanently and recalculates upward each year as the base premium rises."
+      },
+      {
+        "question": "Is there a generic or other way to avoid the Part D late enrollment penalty entirely?",
+        "answer": "Three paths avoid the penalty entirely. First, enroll during your 7-month Initial Enrollment Period when you first become Medicare-eligible. Second, maintain continuous creditable drug coverage (employer plan, VA, TRICARE, FEHB, or other coverage actuarially equivalent to Part D standard) with no gap longer than 63 days, then enroll in Part D within 63 days of losing that coverage. Third, qualify for Medicare Extra Help (Low Income Subsidy), which waives the penalty for income-eligible beneficiaries at or below 150% of the Federal Poverty Level. There is no generic equivalent to the penalty because it is a regulatory formula, not a pharmaceutical product."
+      },
+      {
+        "question": "How do I apply for Medicare Extra Help to waive the Part D late enrollment penalty?",
+        "answer": "Apply for Extra Help online at ssa.gov/extrahelp, call Social Security at 1-800-772-1213, or visit a local Social Security office. You will need to complete Form SSA-1020 with information on your income and resources. In 2026, income must be at or below 150% of FPL ($23,940 for a single person) and assets below $18,090 (individual) or $36,100 (couple). If approved, SSA notifies CMS and your Part D plan automatically removes the late enrollment penalty and applies Extra Help cost-sharing."
+      },
+      {
+        "question": "Can I use a manufacturer savings card with Medicare to offset the Part D penalty?",
+        "answer": "No. Federal anti-kickback statute (42 U.S.C. 1320a-7b) bars Medicare beneficiaries from using manufacturer copay savings cards. The Part D late enrollment penalty is an enrollment surcharge added to your premium, not a drug copay, so even if a savings card were allowed it could not offset the penalty. Medicare beneficiaries with affordability concerns should apply for Extra Help (ssa.gov/extrahelp), contact SHIP counselors (1-877-839-2675), or ask their prescribers about manufacturer patient assistance programs that are income-based and Medicare-compliant."
+      },
+      {
+        "question": "What if my Part D plan incorrectly assessed a late enrollment penalty?",
+        "answer": "You have 60 days from the date on the penalty notice to file a formal reconsideration with the Independent Review Entity (IRE), currently C2C Innovative Solutions (fax: 833-946-1912). Common winning grounds include: documented creditable employer or TRICARE coverage during the disputed months, an incorrect or missing annual creditable coverage notice from your employer, or a medical emergency that prevented timely enrollment. The IRE must issue a decision within 90 days. Free appeal help is available from SHIP counselors at 1-877-839-2675."
+      },
+      {
+        "question": "Does the Inflation Reduction Act affect the Part D late enrollment penalty?",
+        "answer": "The Inflation Reduction Act of 2022 did not eliminate or change the formula for the Part D late enrollment penalty. However, the IRA capped annual increases in the national base beneficiary premium at 6% per year through 2029, which limits (but does not stop) how fast penalty dollar amounts rise each year. The IRA's $2,100 annual out-of-pocket cap, $35 insulin cap, and Maximum Fair Prices for 10 negotiated drugs all apply to Part D enrollees regardless of whether they paid a late enrollment penalty."
+      },
+      {
+        "question": "What counts as creditable prescription drug coverage under Medicare Part D?",
+        "answer": "Creditable coverage is any drug coverage expected to pay at least as much as Medicare's standard Part D benefit, on average. Qualifying sources include: employer-sponsored group health plans (including COBRA from large employers), Federal Employees Health Benefits (FEHB) plans, TRICARE, VA drug benefits, state pharmaceutical assistance programs, and certain Medigap policies. Employer plans must send you an annual notice before October 15 confirming whether their coverage is creditable. If you did not receive this notice, or received an incorrect one, that can be grounds for a late enrollment penalty appeal."
+      },
+      {
+        "question": "What is the Medicare Part D formulary tier system and how does it affect my costs?",
+        "answer": "Medicare Part D plans organize covered drugs into formulary tiers, typically numbered 1 through 5 or 6. Tier 1 (preferred generics) carries the lowest copay, often $0 to $10. Tier 2 (non-preferred generics) runs $10 to $30. Tier 3 (preferred brands) runs $40 to $60. Tier 4 (non-preferred brands) and Tier 5 (specialty drugs) require coinsurance of 25% to 33% until the $2,100 annual out-of-pocket cap is reached. If your drug is on a high tier, ask your prescriber for a formulary tier exception, which requires medical necessity documentation. prior authorization is also common for Tier 3 and above drugs. A manufacturer coupon or commercial savings card cannot be used with Medicare under federal anti-kickback law. All of these cost-sharing amounts apply on top of any late enrollment penalty you are already paying."
+      }
+    ],
+    "es": [
+      {
+        "question": "Como se calcula la penalidad por inscripcion tardia de Medicare Parte D en 2026?",
+        "answer": "La penalidad por inscripcion tardia de la Parte D en 2026 equivale al 1% de la prima base nacional de beneficiario ($38.99) multiplicada por la cantidad de meses completos en que fue elegible para la Parte D pero no tenia cobertura de medicamentos acreditable, redondeado a los $0.10 mas cercanos. Una brecha de 12 meses cuesta $4.70 por mes. Una brecha de 24 meses cuesta $9.40 por mes. Una brecha de 36 meses cuesta aproximadamente $14.00 por mes. La penalidad se agrega a la prima de su plan de Parte D de forma permanente y se recalcula hacia arriba cada ano a medida que aumenta la prima base."
+      },
+      {
+        "question": "Hay alguna forma de evitar completamente la penalidad por inscripcion tardia de la Parte D?",
+        "answer": "Tres caminos evitan la penalidad por completo. Primero, inscribirse durante su Periodo de Inscripcion Inicial de 7 meses cuando se vuelve elegible para Medicare por primera vez. Segundo, mantener cobertura de medicamentos acreditable continua sin brecha de mas de 63 dias, luego inscribirse en la Parte D dentro de los 63 dias de perder esa cobertura. Tercero, calificar para Medicare Extra Help (Subsidio de Bajos Ingresos), que exime la penalidad para beneficiarios con ingresos elegibles al 150% del FPL o menos."
+      },
+      {
+        "question": "Como solicito Medicare Extra Help para eximir la penalidad por inscripcion tardia de la Parte D?",
+        "answer": "Solicite Extra Help en linea en ssa.gov/extrahelp, llame al Seguro Social al 1-800-772-1213, o visite una oficina local del Seguro Social. Debera completar el Formulario SSA-1020 con informacion sobre sus ingresos y recursos. En 2026, los ingresos deben ser iguales o inferiores al 150% del FPL ($23,940 para una persona soltera) y los activos por debajo de $18,090 (individual) o $36,100 (pareja). Si es aprobado, SSA notifica a CMS y su plan de Parte D elimina automaticamente la penalidad."
+      },
+      {
+        "question": "Puedo usar una tarjeta de ahorro del fabricante con Medicare para compensar la penalidad de la Parte D?",
+        "answer": "No. El estatuto federal anti-soborno (42 U.S.C. 1320a-7b) prohibe que los beneficiarios de Medicare usen tarjetas de ahorro de copago del fabricante. La penalidad por inscripcion tardia de la Parte D es un recargo de inscripcion agregado a su prima, no un copago de medicamentos. Los beneficiarios de Medicare con preocupaciones de asequibilidad deben solicitar Extra Help (ssa.gov/extrahelp), contactar consejeros SHIP (1-877-839-2675), o preguntar a sus prescriptores sobre programas de asistencia al paciente del fabricante que sean basados en ingresos y cumplan con Medicare."
+      },
+      {
+        "question": "Que hago si mi plan de Parte D evaluo incorrectamente una penalidad por inscripcion tardia?",
+        "answer": "Tiene 60 dias desde la fecha del aviso de penalidad para presentar una reconsideracion formal ante la Entidad de Revision Independiente (IRE), actualmente C2C Innovative Solutions (fax: 833-946-1912). Los motivos ganadores comunes incluyen: cobertura acreditable documentada del empleador o TRICARE durante los meses en disputa, un aviso incorrecto o faltante de cobertura acreditable anual de su empleador, o una emergencia medica que impidio la inscripcion oportuna. La IRE debe emitir una decision dentro de los 90 dias. Ayuda gratuita para apelar esta disponible de los consejeros SHIP al 1-877-839-2675."
+      },
+      {
+        "question": "La Ley de Reduccion de la Inflacion afecta la penalidad por inscripcion tardia de la Parte D?",
+        "answer": "La Ley de Reduccion de la Inflacion de 2022 no elimino ni cambio la formula de la penalidad por inscripcion tardia de la Parte D. Sin embargo, la IRA limito los aumentos anuales de la prima base nacional de beneficiario al 6% por ano hasta 2029, lo que limita (pero no detiene) la velocidad con que los montos de penalidad en dolares aumentan cada ano. El limite anual de gastos de bolsillo de $2,100 de la IRA, el limite de insulina de $35, y los Precios Maximos Justos para 10 medicamentos negociados aplican a los inscritos en la Parte D independientemente de si pagaron una penalidad por inscripcion tardia."
+      },
+      {
+        "question": "Que cuenta como cobertura de medicamentos recetados acreditable bajo Medicare Parte D?",
+        "answer": "La cobertura acreditable es cualquier cobertura de medicamentos que se espera que pague al menos tanto como el beneficio estandar de la Parte D de Medicare, en promedio. Las fuentes calificadas incluyen: planes de salud grupales patrocinados por empleadores (incluido COBRA de grandes empleadores), planes del Programa de Beneficios de Salud para Empleados Federales (FEHB), TRICARE, beneficios de medicamentos de VA, programas estatales de asistencia farmaceutica, y ciertas polizas Medigap. Los planes del empleador deben enviarle un aviso anual antes del 15 de octubre confirmando si su cobertura es acreditable."
+      },
+      {
+        "question": "Como funciona el sistema de niveles del formulario de Medicare Parte D y como afecta mis costos?",
+        "answer": "Los planes de Medicare Parte D organizan los medicamentos cubiertos en niveles de formulario, tipicamente numerados del 1 al 5 o 6. El Nivel 1 (genericos preferidos) tiene el copago mas bajo. El Nivel 2 (genericos no preferidos) generalmente $10 a $30. El Nivel 3 (marcas preferidas) $40 a $60. Los Niveles 4 y 5 (medicamentos especiales) requieren coseguro del 25% al 33% hasta que se alcanza el limite anual de gastos de bolsillo de $2,100. Si su medicamento esta en un nivel alto, pida a su prescriptor una excepcion de nivel de formulario, que requiere documentacion de necesidad medica. La autorizacion previa tambien es comun para medicamentos de Nivel 3 y superiores. Los cupones del fabricante y las tarjetas comerciales de ahorro no pueden usarse con Medicare bajo la ley federal anti-soborno."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad de Medicare"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Medicas"
+      },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level Guidelines 2026",
+        "es": "Guias del Nivel de Pobreza Federal 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Limites de Ingresos de Medicaid"
+      },
+      "href": "/medicaid-income-limits"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMS 2026 Medicare Part D National Base Beneficiary Premium (July 28, 2025)",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-part-d-bid-information-and-part-d-premium-stabilization-demonstration-parameters",
+      "note": {
+        "en": "Official CMS announcement of the 2026 national base beneficiary premium of $38.99, used to calculate the Part D late enrollment penalty.",
+        "es": "Anuncio oficial de CMS de la prima base nacional de beneficiario de 2026 de $38.99, utilizada para calcular la penalidad por inscripcion tardia de la Parte D."
+      }
+    },
+    {
+      "name": "CMS Late Enrollment Penalty Appeals",
+      "url": "https://www.cms.gov/medicare/appeals-grievances/prescription-drug/late-enrollment-penalty-appeals",
+      "note": {
+        "en": "Official CMS page on the LEP appeal process, reconsideration request forms, and the Independent Review Entity (IRE).",
+        "es": "Pagina oficial de CMS sobre el proceso de apelacion de la penalidad LEP, formularios de solicitud de reconsideracion y la Entidad de Revision Independiente (IRE)."
+      }
+    },
+    {
+      "name": "CMS Creditable Coverage and Late Enrollment Penalty",
+      "url": "https://www.cms.gov/medicare/enrollment-renewal/part-d-plans/creditable-coverage-and-late-enrollment-penalty",
+      "note": {
+        "en": "CMS guidance on what qualifies as creditable prescription drug coverage and how it interacts with the late enrollment penalty.",
+        "es": "Guia de CMS sobre lo que califica como cobertura de medicamentos recetados acreditable y como interactua con la penalidad por inscripcion tardia."
+      }
+    },
+    {
+      "name": "Medicare.gov: Avoid Late Enrollment Penalties",
+      "url": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
+      "note": {
+        "en": "Official Medicare.gov page with plain-language explanation of how to avoid Part D late enrollment penalties.",
+        "es": "Pagina oficial de Medicare.gov con explicacion en lenguaje sencillo de como evitar las penalidades por inscripcion tardia de la Parte D."
+      }
+    },
+    {
+      "name": "NCOA: Medicare Part D Late Enrollment Penalty Guide",
+      "url": "https://www.ncoa.org/article/medicare-part-d-late-enrollment-penalty/",
+      "note": {
+        "en": "National Council on Aging guide to the Part D late enrollment penalty, including worked calculation examples.",
+        "es": "Guia del Consejo Nacional del Envejecimiento sobre la penalidad por inscripcion tardia de la Parte D, incluidos ejemplos de calculos."
+      }
+    },
+    {
+      "name": "SSA Extra Help Application (Form SSA-1020)",
+      "url": "https://www.ssa.gov/extrahelp",
+      "note": {
+        "en": "Social Security Administration online application portal for Medicare Extra Help (Low Income Subsidy), which waives the Part D late enrollment penalty for qualifying beneficiaries.",
+        "es": "Portal de solicitud en linea de la Administracion del Seguro Social para Medicare Extra Help (Subsidio de Bajos Ingresos), que exime la penalidad por inscripcion tardia de la Parte D para los beneficiarios que califican."
+      }
+    },
+    {
+      "name": "HHS 2026 Federal Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/poverty-guidelines",
+      "note": {
+        "en": "Official HHS poverty guidelines used to calculate Extra Help eligibility thresholds referenced in the PAP eligibility table.",
+        "es": "Guias oficiales de pobreza de HHS utilizadas para calcular los umbrales de elegibilidad de Extra Help referenciados en la tabla de elegibilidad PAP."
+      }
+    },
+    {
+      "name": "FDA Drug Approvals and Databases (Drugs@FDA)",
+      "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-fda-approved-drug-products",
+      "note": {
+        "en": "FDA database of approved prescription drug products; relevant for verifying which drugs have FDA-approved generic equivalents vs. those still under patent protection, which affects Part D formulary placement and cost-sharing tiers.",
+        "es": "Base de datos de la FDA de productos farmaceuticos aprobados; relevante para verificar que medicamentos tienen equivalentes genericos aprobados por la FDA frente a los que aun estan bajo proteccion de patente, lo que afecta la colocacion en el formulario de la Parte D y los niveles de costo compartido."
+      }
+    }
+  ]
+}

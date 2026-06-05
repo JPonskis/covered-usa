@@ -1,0 +1,197 @@
+{
+  "slug": "household-size",
+  "term": {
+    "en": "Household Size",
+    "es": "Tamaño del Hogar"
+  },
+  "alternateNames": [
+    "tax household",
+    "family size",
+    "household members",
+    "household composition"
+  ],
+  "definition": {
+    "en": "Household size is the count of people whose income and coverage status are considered together when determining eligibility for ACA subsidies or Medicaid. For ACA premium tax credits, the household equals the tax filer, their spouse, and all claimed dependents. Medicaid calculates household size separately for each member using MAGI-based rules that can differ from the tax return.",
+    "es": "El tamaño del hogar es la cantidad de personas cuyo ingreso y estatus de cobertura se consideran juntos al determinar la elegibilidad para subsidios de la ACA o Medicaid. Para los créditos tributarios de la ACA, el hogar incluye al declarante, su cónyuge y todos los dependientes reclamados. Medicaid calcula el tamaño del hogar de forma separada para cada miembro usando reglas basadas en MAGI que pueden diferir de la declaración de impuestos."
+  },
+  "category": "ACA",
+  "topic": "What Counts as a Household for ACA + Medicaid (2026 Rules)",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-02",
+  "readingTime": "2 min read",
+  "meta": {
+    "title": {
+      "en": "Household Size: ACA + Medicaid Definition (2026)",
+      "es": "Tamaño del Hogar: Definición ACA + Medicaid (2026)"
+    },
+    "description": {
+      "en": "Learn how ACA and Medicaid count household size in 2026. ACA uses your tax return; Medicaid applies per-member rules that may differ.",
+      "es": "Conozca cómo la ACA y Medicaid calculan el tamaño del hogar en 2026. La ACA usa su declaración de impuestos; Medicaid aplica reglas por miembro que pueden diferir."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "What Is Household Size?",
+      "es": "¿Qué es el Tamaño del Hogar?"
+    },
+    "subhero": {
+      "en": "Household size determines how many people's incomes are pooled for ACA subsidy or Medicaid eligibility in 2026. ACA uses your tax household; Medicaid applies a per-member count that can differ for the same family.",
+      "es": "El tamaño del hogar determina cuántas personas agrupan sus ingresos para la elegibilidad de subsidios de la ACA o Medicaid en 2026. La ACA usa su hogar fiscal; Medicaid aplica un conteo por miembro que puede diferir para la misma familia."
+    }
+  },
+  "quickDefinition": {
+    "en": "Household size is the count of people whose incomes are pooled when comparing to the [Federal Poverty Level](/federal-poverty-level). For ACA credits, your household is your tax return: you, your spouse (if filing jointly), and claimed dependents. Medicaid assigns each person their own count; a parent and child in the same home can have different household sizes. Per [HealthCare.gov](https://www.healthcare.gov/income-and-household-information/household-size/), this number directly sets your [ACA income limits](/aca-income-limits) and [Medicaid income limits](/medicaid-income-limits).",
+    "es": "El tamaño del hogar es la cantidad de personas que se cuentan juntas al comparar el ingreso con el [Nivel Federal de Pobreza](/federal-poverty-level). Para los créditos tributarios de la ACA, su hogar es su declaración de impuestos: usted, su cónyuge (si presenta conjuntamente) y los dependientes que reclama. Medicaid asigna a cada persona su propio conteo del hogar, por lo que un padre y un hijo en el mismo domicilio pueden tener tamaños de hogar diferentes. Obtener este número correctamente es el primer paso hacia los [límites de ingresos de la ACA](/aca-income-limits) y los [límites de ingresos de Medicaid](/medicaid-income-limits) exactos."
+  },
+  "introParagraphs": [],
+  "detailSections": [
+    {
+      "heading": {
+        "en": "ACA Household vs. Medicaid Household: Key Differences",
+        "es": "Hogar ACA vs. Hogar Medicaid: Diferencias Clave"
+      },
+      "paragraphs": [
+        {
+          "en": "The ACA treats the entire tax return as one household. Non-applicant dependents and a non-enrolling spouse still count toward the total. Married couples must file jointly to receive premium tax credits; three narrow exceptions exist (domestic violence, abandoned spouse, head-of-household). Medicaid applies the starting point person by person. A pregnant person adds one to their own count per expected baby, raising the income threshold.",
+          "es": "La ACA trata toda la unidad fiscal como un solo hogar. Cada persona en su declaración federal cuenta, incluso los dependientes que no solicitan cobertura y un cónyuge que no necesita cobertura. Las parejas casadas deben presentar conjuntamente para recibir créditos tributarios de prima (existen tres excepciones limitadas: violencia doméstica, cónyuge abandonado y separación de jefe de familia). Medicaid usa el mismo punto de partida fiscal pero lo aplica persona por persona. Una persona embarazada cuenta como ella misma más el número de bebés esperados, lo que puede elevar el tamaño del hogar y aumentar los umbrales de ingresos para esa persona."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "ACA vs. Medicaid household rules (2026 comparison)",
+          "es": "Reglas del hogar ACA vs. Medicaid (comparación 2026)"
+        },
+        "headers": {
+          "en": ["Rule", "ACA / Premium Tax Credit", "MAGI Medicaid"],
+          "es": ["Regla", "ACA / Crédito Tributario de Prima", "Medicaid MAGI"]
+        },
+        "rows": [
+          {
+            "en": ["Base unit", "One count per tax return", "Separate count per member"],
+            "es": ["Unidad base", "Un conteo por declaración de impuestos", "Conteo separado por miembro"]
+          },
+          {
+            "en": ["Spouse", "Always included if filing jointly", "Included if living together"],
+            "es": ["Cónyuge", "Siempre incluido si presenta conjuntamente", "Incluido si viven juntos"]
+          },
+          {
+            "en": ["Dependents", "All claimed dependents", "Match tax filer's household"],
+            "es": ["Dependientes", "Todos los dependientes reclamados", "Coinciden con el hogar del declarante"]
+          },
+          {
+            "en": ["Pregnancy", "Not adjusted", "Count as +1 per expected baby"],
+            "es": ["Embarazo", "Sin ajuste", "Contar como +1 por bebé esperado"]
+          }
+        ],
+        "footnote": {
+          "en": "Source: HealthCare.gov household guidance; Medicaid MAGI rules (42 CFR 435.603).",
+          "es": "Fuente: Guía de hogar de HealthCare.gov; reglas MAGI de Medicaid (42 CFR 435.603)."
+        },
+        "source": "https://www.healthcare.gov/income-and-household-information/household-size/"
+      }
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "Does a non-dependent adult child count in my household for ACA subsidies?",
+        "answer": "No. An adult child who files their own tax return is not your dependent, so they form a separate one-person household for [ACA income limits](/aca-income-limits). They can still enroll on your plan up to age 26, but their subsidy eligibility is calculated on their own income and household size, not yours."
+      },
+      {
+        "question": "How does household size affect the income threshold I must meet?",
+        "answer": "A larger household size raises the dollar amount at each Federal Poverty Level percentage. In 2026, 100% FPL for a household of 1 is $15,960; for a household of 4 it is $33,000. A family of 4 can earn more and still qualify for Medicaid at 138% FPL or ACA subsidies. Full chart: [Federal Poverty Level](/federal-poverty-level)."
+      },
+      {
+        "question": "I am pregnant. Does my unborn baby count in my household size for Medicaid?",
+        "answer": "Yes, for Medicaid. A pregnant person counts as themselves plus the number of babies expected. So a single pregnant woman expecting one baby is a household of 2 for MAGI Medicaid purposes in 2026. This raises her income threshold and can make her eligible at a higher income. ACA does not adjust household size for pregnancy."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuenta un hijo adulto no dependiente en mi hogar para los subsidios de la ACA?",
+        "answer": "No. Un hijo adulto que presenta su propia declaración de impuestos no es su dependiente, por lo que forma un hogar separado de una persona para los [límites de ingresos de la ACA](/aca-income-limits). Puede seguir inscribiéndose en su plan hasta los 26 años, pero su elegibilidad para subsidios se calcula con base en su propio ingreso y tamaño del hogar, no el de usted."
+      },
+      {
+        "question": "¿Cómo afecta el tamaño del hogar al umbral de ingresos que debo cumplir?",
+        "answer": "Un tamaño de hogar mayor eleva el monto en dólares que corresponde a cada porcentaje del Nivel Federal de Pobreza. En 2026, el 100% del FPL para un hogar de 1 es $15,960; para un hogar de 4 es $33,000. Una familia de 4 puede ganar más que un adulto soltero y aún calificar para Medicaid al 138% del FPL o subsidios de la ACA. Consulte la tabla completa de 2026 en el [Nivel Federal de Pobreza](/federal-poverty-level)."
+      },
+      {
+        "question": "Estoy embarazada. ¿Cuenta mi bebé por nacer en el tamaño de mi hogar para Medicaid?",
+        "answer": "Sí, para Medicaid. Una persona embarazada cuenta como ella misma más el número de bebés esperados. Por lo tanto, una mujer soltera embarazada que espera un bebé tiene un hogar de 2 para los fines de Medicaid MAGI en 2026. Esto eleva su umbral de ingresos y puede hacerla elegible con un ingreso mayor. La ACA no ajusta el tamaño del hogar por embarazo."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": { "en": "Federal Poverty Level (2026)", "es": "Nivel Federal de Pobreza (2026)" },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": { "en": "Medicaid Income Limits", "es": "Límites de Ingresos de Medicaid" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "ACA Income Limits", "es": "Límites de Ingresos de la ACA" },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+  "sources": [
+    {
+      "name": "HealthCare.gov — Who's included in your household",
+      "url": "https://www.healthcare.gov/income-and-household-information/household-size/",
+      "note": {
+        "en": "Official ACA Marketplace definition of household size for subsidy eligibility.",
+        "es": "Definición oficial del tamaño del hogar del Mercado de la ACA para la elegibilidad de subsidios."
+      }
+    },
+    {
+      "name": "CMS — Household Size and Income (Marketplace Technical Assistance)",
+      "url": "https://www.cms.gov/marketplace/technical-assistance-resources/household-size-income",
+      "note": {
+        "en": "CMS module explaining MAGI household counting rules for Marketplace and Medicaid.",
+        "es": "Módulo de CMS que explica las reglas de conteo del hogar MAGI para el Mercado y Medicaid."
+      }
+    },
+    {
+      "name": "KFF — ACA Subsidy Eligibility and Household Size",
+      "url": "https://www.kff.org/affordable-care-act/issue-brief/explaining-health-care-reform-questions-about-health-insurance-subsidies/",
+      "note": {
+        "en": "KFF analysis of household composition rules and subsidy eligibility thresholds.",
+        "es": "Análisis de KFF sobre las reglas de composición del hogar y los umbrales de elegibilidad para subsidios."
+      }
+    },
+    {
+      "name": "HHS ASPE — 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "2026 Federal Poverty Level thresholds used to set ACA and Medicaid income limits by household size.",
+        "es": "Umbrales del Nivel Federal de Pobreza 2026 utilizados para establecer los límites de ingresos de la ACA y Medicaid por tamaño del hogar."
+      }
+    }
+  ],
+  "topicCluster": "income-eligibility",
+  "keyTerms": {
+    "en": [
+      "household size",
+      "tax household",
+      "household size for ACA",
+      "household size for Medicaid",
+      "how to count household members 2026",
+      "family size health insurance"
+    ],
+    "es": [
+      "tamaño del hogar",
+      "hogar fiscal",
+      "tamaño del hogar para la ACA",
+      "tamaño del hogar para Medicaid",
+      "cómo contar los miembros del hogar 2026"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
