@@ -1,0 +1,544 @@
+{
+  "slug": "ssdi-approved-medicare",
+  "eventName": {
+    "en": "SSDI Approved (Medicare 24-Month Wait)",
+    "es": "SSDI Aprobado (Espera de 24 Meses para Medicare)"
+  },
+  "category": "Age Milestone",
+  "topic": "Medicare Eligibility After SSDI Approval: The 24-Month Waiting Period",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-06",
+  "readingTime": "9 min read",
+
+  "topicCluster": "event-medicare-iep",
+  "keyTerms": {
+    "en": [
+      "SSDI Medicare 24 month waiting period 2026",
+      "Medicare eligibility after disability approval",
+      "SSDI approved health insurance during waiting period",
+      "disability Medicare gap coverage 2026",
+      "ALS ESRD Medicare no waiting period",
+      "SSDI Marketplace special enrollment period"
+    ],
+    "es": [
+      "SSDI Medicare espera 24 meses 2026",
+      "elegibilidad Medicare tras aprobacion discapacidad",
+      "seguro medico durante espera SSDI 2026",
+      "cobertura brecha discapacidad Medicare",
+      "SSDI período inscripción especial Mercado"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "meta": {
+    "title": {
+      "en": "SSDI Approved? Medicare 24-Month Wait Explained (2026)",
+      "es": "SSDI Aprobado: Espera de 24 Meses para Medicare 2026"
+    },
+    "description": {
+      "en": "SSDI approval starts a 24-month Medicare clock. Gap-coverage options: Medicaid, ACA Marketplace with subsidies, and the ALS/ESRD exceptions that waive the wait.",
+      "es": "Aprobacion de SSDI inicia un reloj de 24 meses para Medicare. Conozca sus opciones durante la brecha: Medicaid, planes del Mercado ACA, y excepciones ALS/ESRD."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Just Got SSDI Approved? Here Is When Medicare Starts and What to Do in the Meantime",
+      "es": "Aprobaron Su SSDI? Aqui Esta Cuando Comienza Medicare y Que Hacer Mientras Tanto"
+    },
+    "subhero": {
+      "en": "Most SSDI recipients wait 24 months from their first disability payment before Medicare begins. You need coverage now. Three options can bridge that gap, starting today.",
+      "es": "La mayoria de beneficiarios de SSDI esperan 24 meses desde su primer pago de discapacidad antes de que Medicare comience. Necesita cobertura ahora. Tres opciones pueden cubrir esa brecha, comenzando hoy."
+    }
+  },
+
+  "urgency": {
+    "kind": "window",
+    "heading": {
+      "en": "Your Medicare clock starts with your first SSDI payment, not your approval date",
+      "es": "Su reloj de Medicare comienza con su primer pago de SSDI, no la fecha de aprobacion"
+    },
+    "body": {
+      "en": "The 24-month Medicare waiting period runs from Month 1 of SSDI entitlement through Month 24. Because Social Security also imposes a separate 5-month waiting period before SSDI payments begin, most people wait roughly 29 months total from disability onset before Medicare coverage starts. ALS diagnosis waives the wait entirely. ESRD (end-stage renal disease) requires only a 3-month dialysis wait. For everyone else, the Marketplace Special Enrollment Period triggered by losing prior coverage gives you 60 days to enroll in a bridge plan.",
+      "es": "El periodo de espera de 24 meses para Medicare va desde el Mes 1 de derecho al SSDI hasta el Mes 24. Porque el Seguro Social tambien impone un periodo de espera de 5 meses separado antes de que comiencen los pagos de SSDI, la mayoria de personas espera aproximadamente 29 meses totales desde el inicio de la discapacidad antes de que comience la cobertura de Medicare. El diagnostico de ALS elimina la espera por completo. La ESRD (enfermedad renal en etapa terminal) requiere solo una espera de 3 meses de dialisis. Para todos los demas, el Periodo de Inscripcion Especial del Mercado activa 60 dias para inscribirse en un plan puente."
+    },
+    "totalTimeISO8601": "P24M",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Marketplace SEP after losing prior coverage",
+          "es": "SEP del Mercado tras perder cobertura previa"
+        },
+        "days": 60
+      },
+      {
+        "label": {
+          "en": "Medicaid (if income qualifies, year-round)",
+          "es": "Medicaid (si el ingreso califica, todo el ano)"
+        },
+        "days": null
+      },
+      {
+        "label": {
+          "en": "ALS exception: Medicare starts Month 1 of SSDI (no wait)",
+          "es": "Excepcion ALS: Medicare comienza el Mes 1 de SSDI (sin espera)"
+        },
+        "days": null
+      }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "Getting SSDI approved starts a 24-month clock before Medicare Parts A and B begin. Most people also waited 5 months before SSDI payments started, so the real gap from disability onset to Medicare is roughly 29 months. During that window, you have three options: (1) Medicaid, if your monthly SSDI payment falls under 138% of FPL in an expansion state (in 2026, about $22,025 for a single person), (2) ACA Marketplace coverage with premium tax credits, or (3) employer-sponsored coverage if a working spouse carries a plan. ALS diagnosis bypasses the wait entirely. ESRD requires only a 3-month dialysis wait. If you lost employer coverage when your disability began, you trigger a 60-day Marketplace Special Enrollment Period.",
+    "es": "La aprobacion de SSDI inicia un reloj de 24 meses antes de que comiencen las Partes A y B de Medicare. La mayoria tambien espero 5 meses antes de que comenzaran los pagos de SSDI, por lo que la brecha real desde el inicio de la discapacidad hasta Medicare es aproximadamente 29 meses. Durante esa ventana, tiene tres opciones: (1) Medicaid, si su pago mensual de SSDI cae bajo el 138% del FPL en un estado de expansion (en 2026, alrededor de $22,025 para una persona sola), (2) cobertura del Mercado ACA con creditos fiscales de prima, o (3) cobertura del empleador si un conyuge trabajador tiene un plan. El diagnostico de ALS evita la espera por completo. La ESRD requiere solo una espera de 3 meses de dialisis. Si perdio cobertura del empleador cuando comenzo su discapacidad, activa un Periodo de Inscripcion Especial del Mercado de 60 dias."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "SSDI approval is a milestone most people fight for months or years to reach. Once it arrives, a new and often unspoken problem surfaces: Medicare, the federal health coverage that comes with SSDI, does not start for 24 months from your first disability payment. For someone who became disabled while employed, that gap can mean thousands of dollars in uninsured medical costs precisely when their health needs are highest and their income has just dropped to a disability payment averaging $1,630 per month in 2026. The 24-month waiting period was built into the Social Security Amendments of 1972 as a cost-containment mechanism. Congress has never removed it, though it carved out exceptions for ALS and end-stage renal disease. Understanding when your personal Medicare start date falls, and what covers you until then, is not optional planning. It is the most urgent financial and health decision you face in the first week after your SSDI approval letter arrives.",
+      "es": "La aprobacion del SSDI es un hito por el que la mayoria de personas lucha durante meses o anos. Una vez que llega, surge un nuevo problema a menudo no mencionado: Medicare, la cobertura federal de salud que viene con el SSDI, no comienza hasta 24 meses despues de su primer pago de discapacidad. Para alguien que quedo discapacitado mientras estaba empleado, esa brecha puede significar miles de dolares en costos medicos sin seguro, precisamente cuando sus necesidades de salud son mas altas y sus ingresos acaban de caer a un pago de discapacidad que promedia $1,630 al mes en 2026. El periodo de espera de 24 meses se incorporo en las Enmiendas de Seguridad Social de 1972 como mecanismo de contencion de costos. El Congreso nunca lo ha eliminado, aunque hizo excepciones para ALS y enfermedad renal en etapa terminal. Comprender cuando cae su fecha personal de inicio de Medicare, y que lo cubre hasta entonces, no es planificacion opcional. Es la decision financiera y de salud mas urgente que enfrenta en la primera semana tras recibir su carta de aprobacion de SSDI."
+    },
+    {
+      "en": "Three bridge-coverage paths are available in 2026 during the Medicare waiting period, and this guide explains exactly how the 24-month clock works, how to calculate your personal Medicare start date, and which path fits your situation. Most SSDI recipients in Medicaid expansion states qualify for Medicaid at their monthly benefit level, which is typically under 138% of the Federal Poverty Level. If Medicaid is not available in your state or your income is above the threshold, ACA Marketplace coverage with premium tax credits is the next best option. SSDI recipients can check their projected Medicare start date through their SSA.gov account and compare Medicaid income limits for their state through medicaid.gov. For those with ALS or ESRD, the process is different and faster. For everyone else, the steps in this guide can get coverage in place within two weeks of reading this page.",
+      "es": "Esta guia explica exactamente como funciona el reloj de 24 meses, como calcular su fecha personal de inicio de Medicare, y los tres caminos de cobertura puente disponibles en 2026. La mayoria de beneficiarios de SSDI en estados de expansion de Medicaid califican para Medicaid en su nivel de beneficio mensual, que tipicamente esta bajo el 138% del Nivel Federal de Pobreza. Si Medicaid no esta disponible en su estado o su ingreso esta sobre el umbral, la cobertura del Mercado ACA con creditos fiscales de prima es la siguiente mejor opcion. Los beneficiarios de SSDI pueden verificar su fecha proyectada de inicio de Medicare a traves de su cuenta SSA.gov y comparar los limites de ingresos de Medicaid para su estado a traves de medicaid.gov. Para quienes tienen ALS o ESRD, el proceso es diferente y mas rapido. Para todos los demas, los pasos en esta guia pueden establecer cobertura dentro de dos semanas de leer esta pagina."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Calculate your exact Medicare start date",
+        "es": "Calcule su fecha exacta de inicio de Medicare"
+      },
+      "text": {
+        "en": "Log in to your SSA.gov account and locate your SSDI entitlement date, which is the first month your disability benefits were payable (typically the 6th month after your established disability onset date, after the mandatory 5-month SSDI waiting period). Count forward exactly 24 months from that entitlement date. That is Month 25, when Part A and Part B begin. Write down that date and count back 60 days to set a reminder to confirm your Medicare enrollment.",
+        "es": "Inicie sesion en su cuenta de SSA.gov y localice su fecha de derecho al SSDI, que es el primer mes en que sus beneficios de discapacidad fueron pagaderos (tipicamente el 6to mes despues de su fecha establecida de inicio de discapacidad, despues del periodo obligatorio de espera de 5 meses del SSDI). Cuente hacia adelante exactamente 24 meses desde esa fecha de derecho. Ese es el Mes 25, cuando comienzan las Partes A y B. Anote esa fecha y cuente 60 dias atras para establecer un recordatorio para confirmar su inscripcion en Medicare."
+      }
+    },
+    {
+      "name": {
+        "en": "Check if you qualify for ALS or ESRD exception",
+        "es": "Verifique si califica para la excepcion de ALS o ESRD"
+      },
+      "text": {
+        "en": "If your SSDI-qualifying disability is amyotrophic lateral sclerosis (ALS), Medicare begins in Month 1 of SSDI entitlement. No waiting period applies. Apply immediately through your local Social Security Administration office or by calling SSA at 1-800-772-1213. If your disability is end-stage renal disease and you are on dialysis, Medicare typically starts the 4th month of dialysis. Apply directly through SSA for ESRD Medicare. Kidney transplant recipients may qualify sooner.",
+        "es": "Si su discapacidad que califica para SSDI es esclerosis lateral amiotrofica (ALS), Medicare comienza en el Mes 1 de derecho al SSDI. No aplica periodo de espera. Solicite de inmediato a traves de su oficina local de la Administracion del Seguro Social o llamando al SSA al 1-800-772-1213. Si su discapacidad es enfermedad renal en etapa terminal y esta en dialisis, Medicare tipicamente comienza el 4to mes de dialisis. Solicite Medicare ESRD directamente a traves del SSA. Los receptores de trasplante de rinon pueden calificar antes."
+      }
+    },
+    {
+      "name": {
+        "en": "Apply for Medicaid immediately if income qualifies",
+        "es": "Solicite Medicaid de inmediato si el ingreso califica"
+      },
+      "text": {
+        "en": "In the 40 Medicaid expansion states plus DC, apply for Medicaid through your state Medicaid agency or through healthcare.gov. If your monthly SSDI payment is under 138% of FPL (about $1,835 per month for a single person in 2026 in most states), you likely qualify. Medicaid enrollment is year-round with no deadline. In non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming), Medicaid eligibility for non-elderly adults is much stricter, and you may need to apply through a disability-based pathway. Check your state Medicaid agency directly.",
+        "es": "En los 40 estados de expansion de Medicaid mas DC, solicite Medicaid a traves de su agencia estatal de Medicaid o a traves de healthcare.gov. Si su pago mensual de SSDI esta bajo el 138% del FPL (alrededor de $1,835 al mes para una persona sola en 2026 en la mayoria de los estados), probablemente califica. La inscripcion de Medicaid es todo el ano sin fecha limite. En los estados sin expansion (Alabama, Florida, Georgia, Kansas, Mississippi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming), la elegibilidad de Medicaid para adultos no ancianos es mucho mas estricta, y puede necesitar solicitar a traves de una via basada en discapacidad. Consulte directamente con la agencia estatal de Medicaid."
+      }
+    },
+    {
+      "name": {
+        "en": "If not Medicaid-eligible, enroll in ACA Marketplace coverage",
+        "es": "Si no es elegible para Medicaid, inscribase en cobertura del Mercado ACA"
+      },
+      "text": {
+        "en": "SSDI recipients who lost employer coverage when their disability began qualify for a 60-day Marketplace Special Enrollment Period triggered by that coverage loss. Apply at healthcare.gov within 60 days of your coverage loss date. SSDI income counts as MAGI for ACA subsidy calculations. If your annual SSDI income is at least 100% of FPL (about $15,960 single in 2026), you qualify for premium tax credits. Most SSDI recipients on fixed disability income qualify for Silver plans with cost-sharing reductions that significantly lower deductibles and copays. When Medicare starts at Month 25, you must drop the Marketplace plan since it is illegal to sell a Marketplace plan to someone who has Medicare Part A.",
+        "es": "Los beneficiarios de SSDI que perdieron cobertura del empleador cuando comenzo su discapacidad califican para un Periodo de Inscripcion Especial del Mercado de 60 dias activado por esa perdida de cobertura. Solicite en healthcare.gov dentro de los 60 dias de su fecha de perdida de cobertura. El ingreso de SSDI cuenta como MAGI para los calculos de subsidios del ACA. Si su ingreso anual de SSDI es al menos el 100% del FPL (alrededor de $15,960 individual en 2026), califica para creditos fiscales de prima. La mayoria de beneficiarios de SSDI con ingresos de discapacidad fijos califican para planes Silver con reducciones de costos compartidos que reducen significativamente los deducibles y copagos. Cuando Medicare comienza en el Mes 25, debe cancelar el plan del Mercado ya que es ilegal vender un plan del Mercado a alguien que tiene la Parte A de Medicare."
+      }
+    },
+    {
+      "name": {
+        "en": "Consider a working spouse's employer plan as a bridge",
+        "es": "Considere el plan del empleador de un conyuge trabajador como puente"
+      },
+      "text": {
+        "en": "If your spouse is employed and their employer plan allows dependent enrollment, losing your own coverage due to disability is a qualifying life event for your spouse's plan. Your spouse's HR department typically allows a 30-day enrollment window for this qualifying event. Compare the cost of the employer plan against Medicaid eligibility and Marketplace subsidies before enrolling, as employer plans often carry higher premiums for dependents than subsidized Marketplace Silver plans.",
+        "es": "Si su conyuge esta empleado y el plan de su empleador permite la inscripcion de dependientes, perder su propia cobertura debido a discapacidad es un evento calificado de vida para el plan de su conyuge. El departamento de recursos humanos de su conyuge tipicamente permite una ventana de inscripcion de 30 dias para este evento calificado. Compare el costo del plan del empleador contra la elegibilidad de Medicaid y los subsidios del Mercado antes de inscribirse, ya que los planes del empleador a menudo tienen primas mas altas para dependientes que los planes Silver del Mercado subsidiados."
+      }
+    },
+    {
+      "name": {
+        "en": "Prepare for automatic Medicare enrollment at Month 25",
+        "es": "Preparese para la inscripcion automatica en Medicare en el Mes 25"
+      },
+      "text": {
+        "en": "Social Security will automatically enroll you in Medicare Parts A and B approximately 3 months before your 24-month waiting period ends. You will receive your red, white, and blue Medicare card in the mail. At that point, compare Original Medicare (Parts A plus B plus a separate Part D drug plan and optional Medigap supplement) against Medicare Advantage (Part C bundled plan). In 2026, Part B costs $202.90 per month with a $283 deductible. Notify your Marketplace plan of your Medicare start date and cancel it to avoid owing back subsidies.",
+        "es": "El Seguro Social lo inscribira automaticamente en las Partes A y B de Medicare aproximadamente 3 meses antes de que termine su periodo de espera de 24 meses. Recibira su tarjeta de Medicare roja, blanca y azul por correo. En ese momento, compare el Medicare Original (Partes A mas B mas un plan separado de medicamentos de la Parte D y suplemento Medigap opcional) contra Medicare Advantage (plan agrupado de la Parte C). En 2026, la Parte B cuesta $202.90 al mes con un deducible de $283. Notifique a su plan del Mercado sobre su fecha de inicio de Medicare y cancelelo para evitar deber subsidios."
+      }
+    },
+    {
+      "name": {
+        "en": "Apply for Medicare Savings Program and Extra Help at Month 25",
+        "es": "Solicite el Programa de Ahorros de Medicare y Ayuda Adicional en el Mes 25"
+      },
+      "text": {
+        "en": "When Medicare starts, check eligibility for Medicare Savings Programs (MSP), which can pay your Part B premium of $202.90 per month if your income is under roughly 135% of FPL. Also apply for Extra Help (the Low-Income Subsidy), which in 2026 caps your Part D drug copays at a few dollars per prescription and eliminates the Part D late enrollment penalty if you were uninsured during part of the 24-month gap. Apply through SSA.gov or your state Medicaid agency. These programs are not automatic and require a separate application.",
+        "es": "Cuando comience Medicare, verifique la elegibilidad para los Programas de Ahorros de Medicare (MSP), que pueden pagar su prima de la Parte B de $202.90 al mes si su ingreso esta bajo aproximadamente el 135% del FPL. Tambien solicite Ayuda Adicional (el Subsidio de Bajos Ingresos), que en 2026 limita sus copagos de medicamentos de la Parte D a unos dolares por receta y elimina la multa por inscripcion tardia de la Parte D si no tuvo seguro durante parte de la brecha de 24 meses. Solicite a traves de SSA.gov o su agencia estatal de Medicaid. Estos programas no son automaticos y requieren una solicitud separada."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opcion", "Costo tipico", "Mejor para", "Fecha limite"]
+    },
+    "rows": [
+      {
+        "en": ["Medicaid (expansion states)", "Free or near-free", "SSDI income under 138% FPL (~$1,835/mo single, 2026)", "Year-round, no deadline"],
+        "es": ["Medicaid (estados de expansion)", "Gratis o casi gratis", "Ingreso SSDI bajo 138% FPL (~$1,835/mes individual, 2026)", "Todo el ano, sin fecha limite"]
+      },
+      {
+        "en": ["ACA Marketplace (subsidized Silver plan)", "$10 to $200/mo after premium tax credits", "SSDI income 100-400% FPL; not Medicaid-eligible", "60-day SEP from coverage loss date"],
+        "es": ["Mercado ACA (plan Silver subsidiado)", "$10 a $200/mes despues de creditos fiscales", "Ingreso SSDI 100-400% FPL; no elegible para Medicaid", "SEP de 60 dias desde perdida de cobertura"]
+      },
+      {
+        "en": ["Spouse's employer plan", "Varies; often $200-$600/mo employee + dependent", "Married; working spouse has employer coverage", "30 days from qualifying life event"],
+        "es": ["Plan del empleador del conyuge", "Varia; a menudo $200-$600/mes empleado + dependiente", "Casado; conyuge trabajador tiene cobertura del empleador", "30 dias desde evento calificado de vida"]
+      },
+      {
+        "en": ["COBRA from prior employer", "102% of full premium: typically $500-$2,000+/mo", "Need to preserve specific specialist or met deductible", "60 days from coverage loss; up to 18 months"],
+        "es": ["COBRA del empleador anterior", "102% de la prima completa: tipicamente $500-$2,000+/mes", "Necesita preservar especialista especifico o deducible cumplido", "60 dias desde perdida de cobertura; hasta 18 meses"]
+      },
+      {
+        "en": ["Medicare (ALS exception)", "$202.90/mo Part B; Part A free (10-yr work history)", "ALS diagnosis: no 24-month wait", "Month 1 of SSDI entitlement"],
+        "es": ["Medicare (excepcion ALS)", "$202.90/mes Parte B; Parte A gratis (historial laboral 10 anos)", "Diagnostico de ALS: sin espera de 24 meses", "Mes 1 de derecho al SSDI"]
+      },
+      {
+        "en": ["Medicare (ESRD exception)", "$202.90/mo Part B; Part A free (10-yr work history)", "End-stage renal disease on dialysis or post-transplant", "Month 4 of dialysis (apply immediately through SSA)"],
+        "es": ["Medicare (excepcion ESRD)", "$202.90/mes Parte B; Parte A gratis (historial laboral 10 anos)", "Enfermedad renal en etapa terminal en dialisis o post-trasplante", "Mes 4 de dialisis (solicite de inmediato a traves del SSA)"]
+      }
+    ],
+    "footnote": {
+      "en": "Medicare Part A is premium-free if you (or a spouse) worked at least 10 years in Medicare-covered employment. The 2026 Part B standard premium is $202.90/month. Medicaid income thresholds listed are for 2026 in the 48 contiguous states plus DC. Alaska and Hawaii have higher thresholds. Non-expansion state Medicaid for non-elderly adults without dependents typically covers far fewer people than the 138% FPL expansion threshold.",
+      "es": "La Parte A de Medicare es gratuita si usted (o su conyuge) trabajo al menos 10 anos en empleo cubierto por Medicare. La prima estandar de la Parte B 2026 es $202.90/mes. Los umbrales de ingresos de Medicaid listados son para 2026 en los 48 estados contiguos mas DC. Alaska y Hawaii tienen umbrales mas altos. Medicaid en estados sin expansion para adultos no ancianos sin dependientes tipicamente cubre a muchas menos personas que el umbral de expansion del 138% FPL."
+    },
+    "source": "SSA.gov, CMS.gov 2026 Medicare premiums, healthcare.gov, medicaid.gov, KFF Medicaid eligibility data 2026"
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "Common and costly mistakes SSDI recipients make while navigating the 24-month Medicare gap:",
+      "es": "Errores comunes y costosos que cometen los beneficiarios de SSDI al navegar la brecha de 24 meses de Medicare:"
+    },
+    "items": [
+      {
+        "en": "Confusing the SSDI approval date with the Medicare start date. Medicare begins 24 months from your first SSDI payment, not from the date Social Security approved your claim. These can differ by many months.",
+        "es": "Confundir la fecha de aprobacion de SSDI con la fecha de inicio de Medicare. Medicare comienza 24 meses desde su primer pago de SSDI, no desde la fecha en que el Seguro Social aprobo su solicitud. Estas pueden diferir por muchos meses."
+      },
+      {
+        "en": "Failing to apply for Medicaid immediately. In expansion states, most SSDI recipients qualify for Medicaid based on their monthly benefit income. Waiting months before applying means months of unnecessary uninsured costs.",
+        "es": "No solicitar Medicaid de inmediato. En estados de expansion, la mayoria de beneficiarios de SSDI califican para Medicaid basado en su ingreso mensual de beneficios. Esperar meses antes de solicitar significa meses de costos innecesarios sin seguro."
+      },
+      {
+        "en": "Missing the 60-day Marketplace Special Enrollment Period after losing employer coverage. This SEP opens when you leave your job or your employer coverage ends due to your disability. Missing it means waiting until November Open Enrollment.",
+        "es": "Perder el Periodo de Inscripcion Especial del Mercado de 60 dias despues de perder la cobertura del empleador. Este SEP se abre cuando deja su trabajo o su cobertura del empleador termina debido a su discapacidad. Perderlo significa esperar hasta la Inscripcion Abierta de noviembre."
+      },
+      {
+        "en": "Keeping the Marketplace plan after Medicare Part A begins. Once Part A starts at Month 25, it is illegal for the Marketplace to sell you a subsidized plan. Failing to cancel means you will owe back the premium tax credits you received.",
+        "es": "Mantener el plan del Mercado despues de que comience la Parte A de Medicare. Una vez que la Parte A comienza en el Mes 25, es ilegal que el Mercado le venda un plan subsidiado. No cancelar significa que debera devolver los creditos fiscales de prima que recibio."
+      },
+      {
+        "en": "Not applying for Extra Help and Medicare Savings Programs when Medicare starts. These programs are not automatic and can eliminate or drastically reduce your Part B premium and Part D drug copays if your income qualifies.",
+        "es": "No solicitar Ayuda Adicional y Programas de Ahorros de Medicare cuando comienza Medicare. Estos programas no son automaticos y pueden eliminar o reducir drasticamente su prima de la Parte B y copagos de medicamentos de la Parte D si su ingreso califica."
+      },
+      {
+        "en": "Assuming ALS or ESRD automatically waive the wait without any action. ALS recipients still need to apply through SSA to trigger immediate Medicare enrollment. ESRD recipients must apply directly through SSA and begin the process before or during dialysis.",
+        "es": "Asumir que ALS o ESRD automaticamente eliminan la espera sin ninguna accion. Los beneficiarios de ALS aun necesitan solicitar a traves del SSA para activar la inscripcion inmediata en Medicare. Los beneficiarios de ESRD deben solicitar directamente a traves del SSA y comenzar el proceso antes o durante la dialisis."
+      }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "How the 24-Month Clock Actually Works: Entitlement Date vs. Approval Date",
+        "es": "Como Funciona Realmente el Reloj de 24 Meses: Fecha de Derecho vs. Fecha de Aprobacion"
+      },
+      "paragraphs": [
+        {
+          "en": "Most SSDI recipients receive their approval letter months after their actual disability onset date. Social Security processes the application retroactively and establishes a disability onset date. After that date is set, a mandatory 5-month waiting period applies before SSDI payments can begin. Month 6 after onset is Month 1 of SSDI entitlement, which is also Month 1 of the Medicare clock. The 24-month Medicare waiting period runs from that first entitlement month, not from the approval letter date and not from when checks physically arrive in the mail. This means someone who became disabled in January 2025, waited through the 5-month SSDI gap, and started receiving SSDI payments in June 2025 will have Medicare start in June 2027. The 29-month total gap (5 months SSDI waiting plus 24 months Medicare waiting) is the most common experience.",
+          "es": "La mayoria de beneficiarios de SSDI reciben su carta de aprobacion meses despues de su fecha real de inicio de discapacidad. El Seguro Social procesa la solicitud de forma retroactiva y establece una fecha de inicio de discapacidad. Despues de que se establece esa fecha, aplica un periodo de espera obligatorio de 5 meses antes de que puedan comenzar los pagos del SSDI. El Mes 6 despues del inicio es el Mes 1 de derecho al SSDI, que tambien es el Mes 1 del reloj de Medicare. El periodo de espera de 24 meses de Medicare corre desde ese primer mes de derecho, no desde la fecha de la carta de aprobacion y no desde cuando los cheques llegan fisicamente por correo. Esto significa que alguien que quedo discapacitado en enero de 2025, espero el periodo de 5 meses del SSDI, y comenzo a recibir pagos del SSDI en junio de 2025 tendra Medicare a partir de junio de 2027. La brecha total de 29 meses (5 meses de espera del SSDI mas 24 meses de espera de Medicare) es la experiencia mas comun."
+        },
+        {
+          "en": "Backpay complicates the picture for applicants whose claims are approved after a long processing delay. Social Security may award up to 12 months of retroactive SSDI benefits (going back to the month of application, not further than the onset date minus the 5-month waiting period). If the retroactive award covers months that count toward the 24-month Medicare clock, your Medicare start date may be earlier than you realize. Confirm your entitlement date in writing with the Social Security Administration by calling 1-800-772-1213 or visiting your local SSA office. Do not calculate this date yourself from the approval letter alone.",
+          "es": "Los pagos retroactivos complican el panorama para los solicitantes cuyas solicitudes son aprobadas despues de un largo retraso en el procesamiento. El Seguro Social puede otorgar hasta 12 meses de beneficios retroactivos del SSDI (remontandose al mes de solicitud, no mas alla de la fecha de inicio menos el periodo de espera de 5 meses). Si el otorgamiento retroactivo cubre meses que cuentan para el reloj de 24 meses de Medicare, su fecha de inicio de Medicare puede ser anterior a lo que cree. Confirme su fecha de derecho por escrito con la Administracion del Seguro Social llamando al 1-800-772-1213 o visitando su oficina local del SSA. No calcule esta fecha usted mismo solo a partir de la carta de aprobacion."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid During the Gap: Expansion States, Non-Expansion States, and the SSDI Income Math",
+        "es": "Medicaid Durante la Brecha: Estados de Expansion, Estados Sin Expansion, y la Matematica del Ingreso SSDI"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid is the most important bridge option for most SSDI recipients because the average 2026 SSDI payment of approximately $1,630 per month falls at or below the 138% FPL Medicaid expansion threshold of about $1,835 per month for a single person. In the 40 Medicaid expansion states plus DC, this means most SSDI recipients qualify the moment their disability payments begin. State Medicaid programs go by different names depending on where you live. California operates Medi-Cal, Arizona operates AHCCCS (Arizona Health Care Cost Containment System), Massachusetts operates MassHealth, Connecticut operates HUSKY Health, and New Jersey operates NJ FamilyCare. Apply through your state Medicaid agency or at healthcare.gov, which routes your application automatically. Medicaid has no enrollment deadline and no SEP window. Apply the day after your SSDI approval letter arrives.",
+          "es": "Medicaid es la opcion de puente mas importante para la mayoria de beneficiarios de SSDI porque el pago promedio de SSDI de 2026 de aproximadamente $1,630 al mes cae igual o por debajo del umbral de expansion de Medicaid del 138% FPL de aproximadamente $1,835 al mes para una persona sola. En los 40 estados de expansion de Medicaid mas DC, esto significa que la mayoria de beneficiarios de SSDI califican en el momento en que comienzan sus pagos de discapacidad. Los programas estatales de Medicaid tienen diferentes nombres segun donde viva. California opera Medi-Cal, Arizona opera AHCCCS (Sistema de Contencion de Costos de Atencion Medica de Arizona), Massachusetts opera MassHealth, Connecticut opera HUSKY Health, y Nueva Jersey opera NJ FamilyCare. Solicite a traves de su agencia estatal de Medicaid o en healthcare.gov, que enruta su solicitud automaticamente. Medicaid no tiene fecha limite de inscripcion ni ventana SEP. Solicite el dia despues de que llegue su carta de aprobacion de SSDI."
+        },
+        {
+          "en": "Non-expansion states present a harder path. Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming did not expand Medicaid under the ACA. In these states, Medicaid eligibility for non-elderly adults without dependents is typically restricted to those with income far below 100% FPL or those who also receive Supplemental Security Income (SSI, which has a 2026 individual income limit of $994 per month). An SSDI recipient with monthly payments of $1,200 in Texas, for example, may earn too much for traditional Medicaid but too little to afford unsubsidized coverage. The ACA Marketplace is the primary safety net in non-expansion states for SSDI recipients who do not also qualify for SSI. With SSDI income at or above 100% of FPL, premium tax credits are available.",
+          "es": "Los estados sin expansion presentan un camino mas dificil. Alabama, Florida, Georgia, Kansas, Mississippi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming no expandieron Medicaid bajo el ACA. En estos estados, la elegibilidad de Medicaid para adultos no ancianos sin dependientes tipicamente se restringe a aquellos con ingresos muy por debajo del 100% FPL o aquellos que tambien reciben Ingreso de Seguridad Suplementario (SSI, que tiene un limite de ingresos individuales de 2026 de $994 al mes). Un beneficiario de SSDI con pagos mensuales de $1,200 en Texas, por ejemplo, puede ganar demasiado para Medicaid tradicional pero demasiado poco para cobertura sin subsidio. El Mercado ACA es la principal red de seguridad en los estados sin expansion para beneficiarios de SSDI que tampoco califican para SSI. Con ingresos de SSDI en o por encima del 100% del FPL, los creditos fiscales de prima estan disponibles."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "ALS and ESRD Exceptions: Medicare Without the 24-Month Wait",
+        "es": "Excepciones ALS y ESRD: Medicare Sin la Espera de 24 Meses"
+      },
+      "paragraphs": [
+        {
+          "en": "Congress carved two permanent exceptions into the 24-month Medicare waiting period. Amyotrophic lateral sclerosis (ALS, also called Lou Gehrig's disease) qualifies for Medicare immediately in Month 1 of SSDI entitlement. No additional application is required beyond the standard SSDI approval; Social Security automatically triggers Medicare enrollment when ALS is the established disabling condition. ALS Medicare coverage includes Part A hospital coverage and Part B outpatient coverage from the first entitlement month. End-stage renal disease (ESRD) qualifies under a different rule: Medicare starts in Month 4 of regular dialysis, or the month of a kidney transplant (or one month before a scheduled transplant). ESRD-based Medicare requires a direct application through the Social Security Administration; it does not flow automatically from SSDI. Call SSA at 1-800-772-1213 or apply online at SSA.gov to start the ESRD Medicare process as soon as dialysis begins.",
+          "es": "El Congreso incorporo dos excepciones permanentes al periodo de espera de 24 meses de Medicare. La esclerosis lateral amiotrofica (ALS, tambien llamada enfermedad de Lou Gehrig) califica para Medicare de inmediato en el Mes 1 de derecho al SSDI. No se requiere ninguna solicitud adicional mas alla de la aprobacion estandar del SSDI; el Seguro Social activa automaticamente la inscripcion en Medicare cuando ALS es la condicion discapacitante establecida. La cobertura Medicare de ALS incluye la cobertura hospitalaria de la Parte A y la cobertura ambulatoria de la Parte B desde el primer mes de derecho. La enfermedad renal en etapa terminal (ESRD) califica bajo una regla diferente: Medicare comienza en el Mes 4 de dialisis regular, o el mes de un trasplante de rinon (o un mes antes de un trasplante programado). El Medicare basado en ESRD requiere una solicitud directa a traves de la Administracion del Seguro Social; no fluye automaticamente del SSDI. Llame al SSA al 1-800-772-1213 o solicite en linea en SSA.gov para iniciar el proceso de Medicare por ESRD tan pronto como comience la dialisis."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Happens When Medicare Finally Starts: The Month 25 Transition Checklist",
+        "es": "Que Pasa Cuando Medicare Finalmente Comienza: La Lista de Verificacion de Transicion del Mes 25"
+      },
+      "paragraphs": [
+        {
+          "en": "Three months before your 24-month waiting period ends, Social Security mails your Medicare card automatically. Once Part A starts, you must take four actions to avoid costly mistakes. First, cancel any Marketplace plan immediately. Medicare Part A counts as minimum essential coverage, making you ineligible for premium tax credits. Continuing a subsidized Marketplace plan after Part A starts means owing back those subsidies at tax time. Second, enroll in Part B unless you have active large-employer group coverage (20 or more employees) that will continue. The 2026 Part B premium is $202.90 per month. Declining Part B at this point without qualifying coverage triggers the 10% per year lifetime penalty. Third, choose between Original Medicare and Medicare Advantage. Original Medicare (Parts A and B) pairs with a Part D drug plan and optional Medigap supplement. Medicare Advantage (Part C) bundles coverage into one private-insurer plan. If you had Medicaid as bridge coverage, check whether your state's Medicaid program can continue alongside Medicare as a dual-eligible plan, which can cover your Part B premium and drug copays. Fourth, apply for Extra Help and the Medicare Savings Program if your income is under roughly 135% of FPL in 2026, which is about $21,547 for a single person.",
+          "es": "Tres meses antes de que termine su periodo de espera de 24 meses, el Seguro Social le envia automaticamente su tarjeta de Medicare. Una vez que comienza la Parte A, debe tomar cuatro acciones para evitar errores costosos. Primero, cancele cualquier plan del Mercado de inmediato. La Parte A de Medicare cuenta como cobertura esencial minima, haciendolo inelegible para creditos fiscales de prima. Continuar un plan del Mercado subsidiado despues de que comienza la Parte A significa deber esos subsidios en la declaracion de impuestos. Segundo, inscribase en la Parte B a menos que tenga cobertura grupal activa de un empleador grande (20 o mas empleados) que continuara. La prima de la Parte B 2026 es $202.90 al mes. Rechazar la Parte B en este punto sin cobertura calificada activa la multa permanente del 10% por ano. Tercero, elija entre Medicare Original y Medicare Advantage. Medicare Original (Partes A y B) se combina con un plan de medicamentos de la Parte D y un suplemento Medigap opcional. Medicare Advantage (Parte C) agrupa la cobertura en un plan de aseguradora privada. Si tenia Medicaid como cobertura puente, verifique si el programa Medicaid de su estado puede continuar junto con Medicare como un plan de doble elegibilidad, que puede cubrir su prima de la Parte B y copagos de medicamentos. Cuarto, solicite Ayuda Adicional y el Programa de Ahorros de Medicare si su ingreso esta bajo aproximadamente el 135% del FPL en 2026, que es aproximadamente $21,547 para una persona sola."
+        }
+      ]
+    }
+  ],
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid income limits during SSDI Medicare waiting period, 2026 (48 contiguous states + DC)",
+      "headers": ["Household size", "138% FPL (Medicaid expansion threshold)", "100% FPL (Marketplace subsidy floor)"],
+      "rows": [
+        ["1", "$22,025/yr ($1,835/mo)", "$15,960/yr ($1,330/mo)"],
+        ["2", "$29,863/yr ($2,489/mo)", "$21,640/yr ($1,803/mo)"],
+        ["3", "$37,702/yr ($3,142/mo)", "$27,320/yr ($2,277/mo)"],
+        ["4", "$45,540/yr ($3,795/mo)", "$33,000/yr ($2,750/mo)"],
+        ["5", "$53,378/yr ($4,448/mo)", "$38,680/yr ($3,223/mo)"],
+        ["6", "$61,217/yr ($5,101/mo)", "$44,360/yr ($3,697/mo)"],
+        ["7", "$69,055/yr ($5,755/mo)", "$50,040/yr ($4,170/mo)"],
+        ["8", "$76,894/yr ($6,408/mo)", "$55,720/yr ($4,643/mo)"],
+        ["Each additional person", "+ $7,838/yr (+ $653/mo)", "+ $5,680/yr (+ $473/mo)"]
+      ],
+      "footnote": "Medicaid in the 40 expansion states plus DC uses 138% FPL as the income ceiling for non-elderly adults. The 10 non-expansion states have stricter limits, often far below 100% FPL for adults without dependents. The 400% FPL ACA subsidy cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026. SSDI income counts as MAGI for Marketplace subsidy calculations.",
+      "source": "HHS ASPE 2026 Poverty Guidelines; CMS Medicaid eligibility data 2026; healthcare.gov"
+    },
+    "es": {
+      "caption": "Limites de ingresos de Medicaid durante el periodo de espera de Medicare por SSDI, 2026 (48 estados contiguos + DC)",
+      "headers": ["Tamano del hogar", "138% FPL (umbral de expansion Medicaid)", "100% FPL (piso de subsidio Mercado)"],
+      "rows": [
+        ["1", "$22,025/ano ($1,835/mes)", "$15,960/ano ($1,330/mes)"],
+        ["2", "$29,863/ano ($2,489/mes)", "$21,640/ano ($1,803/mes)"],
+        ["3", "$37,702/ano ($3,142/mes)", "$27,320/ano ($2,277/mes)"],
+        ["4", "$45,540/ano ($3,795/mes)", "$33,000/ano ($2,750/mes)"],
+        ["5", "$53,378/ano ($4,448/mes)", "$38,680/ano ($3,223/mes)"],
+        ["6", "$61,217/ano ($5,101/mes)", "$44,360/ano ($3,697/mes)"],
+        ["7", "$69,055/ano ($5,755/mes)", "$50,040/ano ($4,170/mes)"],
+        ["8", "$76,894/ano ($6,408/mes)", "$55,720/ano ($4,643/mes)"],
+        ["Cada persona adicional", "+ $7,838/ano (+ $653/mes)", "+ $5,680/ano (+ $473/mes)"]
+      ],
+      "footnote": "Medicaid en los 40 estados de expansion mas DC usa el 138% FPL como techo de ingresos para adultos no ancianos. Los 10 estados sin expansion tienen limites mas estrictos, a menudo muy por debajo del 100% FPL para adultos sin dependientes. El precipicio de subsidio ACA del 400% FPL regreso para 2026 despues de que los creditos fiscales de prima mejorados expiraron el 1 de enero de 2026. El ingreso de SSDI cuenta como MAGI para los calculos de subsidios del Mercado.",
+      "source": "Pautas de Pobreza HHS ASPE 2026; datos de elegibilidad Medicaid CMS 2026; healthcare.gov"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "SSDI award letter from Social Security Administration showing your entitlement date and monthly benefit amount",
+      "SSA Notice of Award or my Social Security online account printout confirming SSDI entitlement start month (critical for calculating Medicare start date)",
+      "Social Security numbers for all household members applying for coverage",
+      "Proof of prior employer coverage loss (termination letter, COBRA notice, or employer benefit termination letter) if applying for a 60-day Marketplace SEP",
+      "Recent income documentation: SSDI benefit statement plus any other household income (spouse wages, investment income, unemployment) for Marketplace subsidy MAGI calculation",
+      "Current address and ZIP code (determines plan availability and Medicaid agency routing)",
+      "Medical records or physician documentation of ALS or ESRD diagnosis if claiming the Medicare exception waiver",
+      "Dialysis center documentation of dialysis start date if applying for ESRD Medicare"
+    ],
+    "es": [
+      "Carta de adjudicacion del SSDI de la Administracion del Seguro Social que muestra su fecha de derecho y monto mensual de beneficios",
+      "Aviso de Adjudicacion del SSA o impresion de cuenta en linea de mi Seguro Social confirmando el mes de inicio de derecho al SSDI (critico para calcular la fecha de inicio de Medicare)",
+      "Numeros de Seguro Social para todos los miembros del hogar que solicitan cobertura",
+      "Prueba de perdida de cobertura previa del empleador (carta de terminacion, aviso de COBRA, o carta de terminacion de beneficios del empleador) si solicita un SEP del Mercado de 60 dias",
+      "Documentacion de ingresos reciente: estado de beneficios del SSDI mas cualquier otro ingreso del hogar (salario del conyuge, ingresos de inversiones, desempleo) para el calculo del MAGI del subsidio del Mercado",
+      "Direccion actual y codigo postal (determina disponibilidad del plan y enrutamiento de agencia Medicaid)",
+      "Registros medicos o documentacion del medico de diagnostico de ALS o ESRD si reclama la exencion de espera de Medicare",
+      "Documentacion del centro de dialisis de la fecha de inicio de dialisis si solicita Medicare ESRD"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Applying for Medicare directly instead of waiting for automatic enrollment: SSDI recipients are auto-enrolled by Social Security at Month 25; applying directly to CMS without SSA coordination can create billing errors. If you believe your auto-enrollment is overdue, call SSA at 1-800-772-1213 rather than applying through medicare.gov independently.",
+      "Claiming ALS or ESRD exception without completing the SSA application process: the exception is not automatic upon diagnosis. ALS auto-enrollment does flow from SSDI, but ESRD requires a separate direct SSA application.",
+      "Missing the 60-day Marketplace SEP after employer coverage ends due to disability: many newly disabled people wait until they feel settled before dealing with insurance. The 60-day clock runs from the day coverage ends, regardless of how you are feeling.",
+      "Reporting projected income incorrectly on Marketplace applications: SSDI income is fixed and predictable, but if you also have a working spouse or part-time income, annualize it correctly for the MAGI calculation. Underreporting leads to excess subsidy repayment at tax time.",
+      "Continuing a subsidized Marketplace plan after Medicare Part A begins: this is the most financially dangerous mistake, resulting in repayment of all premium tax credits received after Medicare Part A started."
+    ],
+    "es": [
+      "Solicitar Medicare directamente en lugar de esperar la inscripcion automatica: los beneficiarios del SSDI son inscritos automaticamente por el Seguro Social en el Mes 25; solicitar directamente a CMS sin coordinacion del SSA puede crear errores de facturacion. Si cree que su inscripcion automatica esta atrasada, llame al SSA al 1-800-772-1213 en lugar de solicitar a traves de medicare.gov de forma independiente.",
+      "Reclamar la excepcion de ALS o ESRD sin completar el proceso de solicitud del SSA: la excepcion no es automatica al diagnostico. La inscripcion automatica de ALS si fluye del SSDI, pero ESRD requiere una solicitud directa separada al SSA.",
+      "Perder el SEP del Mercado de 60 dias despues de que la cobertura del empleador termina debido a la discapacidad: muchas personas recien discapacitadas esperan hasta sentirse establecidas antes de ocuparse del seguro. El reloj de 60 dias corre desde el dia en que termina la cobertura, independientemente de como se sienta.",
+      "Reportar el ingreso proyectado incorrectamente en las solicitudes del Mercado: el ingreso del SSDI es fijo y predecible, pero si tambien tiene un conyuge trabajador o ingresos a tiempo parcial, anualicelos correctamente para el calculo del MAGI. Reportar de menos lleva al reembolso de subsidios excesivos en la declaracion de impuestos.",
+      "Continuar un plan del Mercado subsidiado despues de que comienza la Parte A de Medicare: este es el error financieramente mas peligroso, resultando en el reembolso de todos los creditos fiscales de prima recibidos despues de que comenzo la Parte A de Medicare."
+    ]
+  },
+
+  "comparisonNarrative": {
+    "heading": {
+      "en": "Medicaid vs Marketplace vs COBRA During the SSDI Gap: Which Should You Choose?",
+      "es": "Medicaid vs Mercado vs COBRA Durante la Brecha del SSDI: Cual Debe Elegir?"
+    },
+    "body": {
+      "en": "Three coverage pathways open during the 24-month Medicare waiting period after SSDI approval. Medicaid is the clear first choice for anyone in an expansion state whose monthly SSDI benefit falls under 138% of FPL (roughly $1,835 per month for a single person in 2026). Medicaid costs nothing, has no enrollment deadline, and provides comprehensive coverage including prescriptions, specialists, and mental health services. The ACA Marketplace is the fallback for SSDI recipients in non-expansion states or those whose income exceeds Medicaid limits. SSDI income counts as Modified Adjusted Gross Income for premium tax credit calculations. At annual SSDI income between 100% and 400% of FPL (approximately $15,960 to $63,840 for a single person in 2026), premium tax credits apply and most people land in subsidized Silver plans at $10 to $200 per month. COBRA is rarely the right answer for SSDI recipients because it charges 102% of the full premium (typically $500 to $2,000 per month), and SSDI monthly benefits average only $1,630 in 2026. The only scenario where COBRA makes sense is if you have an ongoing specialist treatment relationship that exists in no Marketplace network and you need 6 to 12 months to complete that treatment before Medicare starts. The decision framework is simple: check Medicaid eligibility first (free, year-round); if not eligible, enroll in a subsidized Marketplace Silver plan within the 60-day SEP; consider COBRA only as a last resort for active treatment preservation.",
+      "es": "Tres caminos de cobertura se abren durante el periodo de espera de 24 meses de Medicare despues de la aprobacion del SSDI. Medicaid es la primera opcion clara para cualquier persona en un estado de expansion cuyo beneficio mensual del SSDI cae bajo el 138% del FPL (aproximadamente $1,835 al mes para una persona sola en 2026). Medicaid no cuesta nada, no tiene fecha limite de inscripcion, y proporciona cobertura integral que incluye recetas, especialistas y servicios de salud mental. El Mercado ACA es la alternativa para beneficiarios de SSDI en estados sin expansion o aquellos cuyo ingreso supera los limites de Medicaid. El ingreso del SSDI cuenta como Ingreso Bruto Ajustado Modificado para los calculos de creditos fiscales de prima. Con ingresos anuales de SSDI entre el 100% y el 400% del FPL (aproximadamente $15,960 a $63,840 para una persona sola en 2026), aplican creditos fiscales de prima y la mayoria de personas terminan en planes Silver subsidiados de $10 a $200 al mes. COBRA raramente es la respuesta correcta para beneficiarios de SSDI porque cobra el 102% de la prima completa (tipicamente $500 a $2,000 al mes), y los beneficios mensuales promedio del SSDI son solo $1,630 en 2026. El unico escenario donde COBRA tiene sentido es si tiene una relacion de tratamiento continua con un especialista que no existe en ninguna red del Mercado y necesita 6 a 12 meses para completar ese tratamiento antes de que comience Medicare. El marco de decision es simple: verifique primero la elegibilidad de Medicaid (gratis, todo el ano); si no es elegible, inscribase en un plan Silver del Mercado subsidiado dentro del SEP de 60 dias; considere COBRA solo como ultimo recurso para la preservacion del tratamiento activo."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "When exactly does my Medicare start after SSDI approval?",
+        "answer": "Medicare begins in Month 25 of your SSDI entitlement, not 24 months from your approval letter. Your SSDI entitlement date is the first month your disability payments were payable, typically the 6th month after your established disability onset date (because of the mandatory 5-month SSDI waiting period). Log in to SSA.gov or call Social Security at 1-800-772-1213 to confirm your exact entitlement date. Count forward 24 months from that date. Social Security will mail your Medicare card automatically about 3 months before that date."
+      },
+      {
+        "question": "What health coverage can I get during the 24-month Medicare waiting period?",
+        "answer": "Three options bridge the gap. First, Medicaid: in the 40 expansion states plus DC, apply through your state Medicaid agency or healthcare.gov immediately after SSDI approval. Average SSDI income in 2026 ($1,630 per month) falls under the 138% FPL Medicaid threshold for most states. Second, ACA Marketplace coverage with premium tax credits: if you lost employer coverage when your disability began, you have a 60-day Special Enrollment Period. Apply at healthcare.gov. SSDI income counts as MAGI for subsidy eligibility. Third, a spouse's employer plan if applicable, using the qualifying life event of your coverage loss."
+      },
+      {
+        "question": "Do I have to wait 24 months if I have ALS or end-stage renal disease?",
+        "answer": "No. ALS (amyotrophic lateral sclerosis) qualifies for Medicare immediately in Month 1 of SSDI entitlement, with no 24-month waiting period. Social Security automatically triggers Medicare enrollment when ALS is the established disabling condition. ESRD (end-stage renal disease) qualifies for Medicare in Month 4 of regular dialysis or the month of a kidney transplant. ESRD-based Medicare requires a direct application through SSA. Call SSA at 1-800-772-1213 as soon as you begin dialysis."
+      },
+      {
+        "question": "Does SSDI income count toward ACA Marketplace subsidy eligibility?",
+        "answer": "Yes. SSDI benefits count as income in the Modified Adjusted Gross Income (MAGI) calculation used for ACA premium tax credit eligibility. If your annual SSDI income is at least 100% of FPL (about $15,960 for a single person in 2026), you qualify for premium tax credits on a Marketplace plan. Lower SSDI income combined with the Medicaid threshold means many SSDI recipients qualify for Medicaid rather than Marketplace coverage, which is the better deal. Check Medicaid eligibility first at healthcare.gov."
+      },
+      {
+        "question": "What happens to my Marketplace plan when Medicare starts at Month 25?",
+        "answer": "When Medicare Part A begins at Month 25, you must cancel your Marketplace plan. Federal law prohibits selling a subsidized Marketplace plan to anyone who has Medicare Part A. Continuing a Marketplace plan after Part A starts means you are no longer eligible for premium tax credits, and the IRS will require repayment of any credits received after your Part A start date. Notify your Marketplace plan as soon as you confirm your Medicare start date. Coverage gaps of a day or two during the handoff are not penalized."
+      },
+      {
+        "question": "What if I miss the 60-day SEP window for Marketplace coverage?",
+        "answer": "Missing the 60-day Marketplace Special Enrollment Period after your employer coverage ends means you must wait until the next ACA Open Enrollment Period (November 1 through January 15 for 2027 coverage) unless another qualifying life event occurs. Medicaid enrollment remains year-round and is not affected by SEP deadlines. If you are in a non-expansion state and cannot access Medicaid, check whether your state has a low-income subsidy program or contact your State Health Insurance Assistance Program (SHIP) for guidance on alternative options."
+      },
+      {
+        "question": "Will I be automatically enrolled in Medicare at Month 25?",
+        "answer": "Yes. Social Security automatically enrolls SSDI recipients in Medicare Parts A and B after 24 months of SSDI entitlement. You will receive your Medicare card in the mail approximately 3 months before your coverage start date. Part B is included in automatic enrollment, which means you will owe the $202.90 per month 2026 Part B premium starting at Month 25 unless you actively decline Part B in writing (which is rarely advisable). If you want to decline Part B because you have active large-employer group coverage, you must contact SSA before your Medicare start date."
+      },
+      {
+        "question": "Can I get Extra Help for Part D drugs or the Medicare Savings Program when Medicare starts?",
+        "answer": "Yes, but you must apply separately for both. The Medicare Savings Program can pay your 2026 Part B premium of $202.90 per month if your income is under roughly 135% of FPL (about $21,547 for a single person). Extra Help (the Low-Income Subsidy) caps your Part D drug copays at a few dollars per prescription and waives the Part D late enrollment penalty if you were uninsured for any portion of the 24-month gap. Apply for both programs through SSA.gov or your state Medicaid agency at the same time you receive your Medicare card."
+      }
+    ],
+    "es": [
+      {
+        "question": "Cuando exactamente comienza mi Medicare despues de la aprobacion del SSDI?",
+        "answer": "Medicare comienza en el Mes 25 de su derecho al SSDI, no 24 meses despues de su carta de aprobacion. Su fecha de derecho al SSDI es el primer mes en que sus pagos de discapacidad fueron pagaderos, tipicamente el 6to mes despues de su fecha establecida de inicio de discapacidad (debido al periodo obligatorio de espera de 5 meses del SSDI). Inicie sesion en SSA.gov o llame al Seguro Social al 1-800-772-1213 para confirmar su fecha exacta de derecho. Cuente hacia adelante 24 meses desde esa fecha. El Seguro Social le enviara su tarjeta de Medicare automaticamente aproximadamente 3 meses antes de esa fecha."
+      },
+      {
+        "question": "Que cobertura de salud puedo obtener durante el periodo de espera de 24 meses de Medicare?",
+        "answer": "Tres opciones cubren la brecha. Primero, Medicaid: en los 40 estados de expansion mas DC, solicite a traves de su agencia estatal de Medicaid o healthcare.gov de inmediato despues de la aprobacion del SSDI. El ingreso promedio del SSDI en 2026 ($1,630 al mes) cae bajo el umbral Medicaid del 138% FPL para la mayoria de los estados. Segundo, cobertura del Mercado ACA con creditos fiscales de prima: si perdio cobertura del empleador cuando comenzo su discapacidad, tiene un Periodo de Inscripcion Especial de 60 dias. Solicite en healthcare.gov. El ingreso del SSDI cuenta como MAGI para la elegibilidad de subsidios. Tercero, el plan del empleador de un conyuge si aplica, usando el evento calificado de vida de su perdida de cobertura."
+      },
+      {
+        "question": "Tengo que esperar 24 meses si tengo ALS o enfermedad renal en etapa terminal?",
+        "answer": "No. ALS (esclerosis lateral amiotrofica) califica para Medicare de inmediato en el Mes 1 de derecho al SSDI, sin periodo de espera de 24 meses. El Seguro Social activa automaticamente la inscripcion en Medicare cuando ALS es la condicion discapacitante establecida. ESRD (enfermedad renal en etapa terminal) califica para Medicare en el Mes 4 de dialisis regular o el mes de un trasplante de rinon. El Medicare basado en ESRD requiere una solicitud directa a traves del SSA. Llame al SSA al 1-800-772-1213 tan pronto como comience la dialisis."
+      },
+      {
+        "question": "El ingreso del SSDI cuenta para la elegibilidad de subsidios del Mercado ACA?",
+        "answer": "Si. Los beneficios del SSDI cuentan como ingreso en el calculo del Ingreso Bruto Ajustado Modificado (MAGI) utilizado para la elegibilidad de creditos fiscales de prima del ACA. Si su ingreso anual del SSDI es al menos el 100% del FPL (alrededor de $15,960 para una persona sola en 2026), califica para creditos fiscales de prima en un plan del Mercado. El ingreso mas bajo del SSDI combinado con el umbral de Medicaid significa que muchos beneficiarios del SSDI califican para Medicaid en lugar de cobertura del Mercado, lo que es mejor. Verifique primero la elegibilidad de Medicaid en healthcare.gov."
+      },
+      {
+        "question": "Que pasa con mi plan del Mercado cuando comienza Medicare en el Mes 25?",
+        "answer": "Cuando la Parte A de Medicare comienza en el Mes 25, debe cancelar su plan del Mercado. La ley federal prohibe vender un plan del Mercado subsidiado a alguien que tiene la Parte A de Medicare. Continuar un plan del Mercado despues de que comienza la Parte A significa que ya no es elegible para creditos fiscales de prima, y el IRS requerira el reembolso de cualquier credito recibido despues de su fecha de inicio de la Parte A. Notifique a su plan del Mercado tan pronto como confirme su fecha de inicio de Medicare."
+      },
+      {
+        "question": "Que pasa si pierdo la ventana SEP de 60 dias para cobertura del Mercado?",
+        "answer": "Perder el Periodo de Inscripcion Especial del Mercado de 60 dias despues de que termina su cobertura del empleador significa que debe esperar hasta el proximo Periodo de Inscripcion Abierta del ACA (del 1 de noviembre al 15 de enero para cobertura 2027) a menos que ocurra otro evento calificado de vida. La inscripcion de Medicaid permanece todo el ano y no se ve afectada por las fechas limite del SEP. Si esta en un estado sin expansion y no puede acceder a Medicaid, comuniquese con su Programa de Asistencia de Seguro de Salud del Estado (SHIP) para orientacion."
+      },
+      {
+        "question": "Me inscribiran automaticamente en Medicare en el Mes 25?",
+        "answer": "Si. El Seguro Social inscribe automaticamente a los beneficiarios del SSDI en las Partes A y B de Medicare despues de 24 meses de derecho al SSDI. Recibira su tarjeta de Medicare por correo aproximadamente 3 meses antes de su fecha de inicio de cobertura. La Parte B esta incluida en la inscripcion automatica, lo que significa que debera la prima de la Parte B 2026 de $202.90 al mes comenzando en el Mes 25 a menos que decline activamente la Parte B por escrito (lo cual raramente es aconsejable)."
+      },
+      {
+        "question": "Puedo obtener Ayuda Adicional para medicamentos de la Parte D o el Programa de Ahorros de Medicare cuando comience Medicare?",
+        "answer": "Si, pero debe solicitar por separado para ambos. El Programa de Ahorros de Medicare puede pagar su prima de la Parte B 2026 de $202.90 al mes si su ingreso es bajo aproximadamente el 135% del FPL (alrededor de $21,547 para una persona sola). Ayuda Adicional (el Subsidio de Bajos Ingresos) limita sus copagos de medicamentos de la Parte D a unos dolares por receta y exime la multa por inscripcion tardia de la Parte D si no tuvo seguro por alguna parte de la brecha de 24 meses. Solicite ambos programas a traves de SSA.gov o su agencia estatal de Medicaid al mismo tiempo que reciba su tarjeta de Medicare."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicare Eligibility 2026",
+        "es": "Elegibilidad de Medicare 2026"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Limites de Ingresos Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Tabla del FPL 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "ACA Income Limits 2026",
+        "es": "Limites de Ingresos ACA 2026"
+      },
+      "href": "/aca-income-limits"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Health coverage options for people who get SSDI",
+      "url": "https://www.healthcare.gov/people-with-disabilities/ssdi-and-medicare/",
+      "note": {
+        "en": "Official CMS guidance on Marketplace coverage during the 24-month SSDI Medicare waiting period, subsidy eligibility, and the prohibition on selling Marketplace plans to Medicare Part A holders.",
+        "es": "Guia oficial de CMS sobre cobertura del Mercado durante el periodo de espera de 24 meses de Medicare por SSDI, elegibilidad de subsidios, y la prohibicion de vender planes del Mercado a titulares de la Parte A de Medicare."
+      }
+    },
+    {
+      "name": "CMS: Original Medicare Part A and B Eligibility and Enrollment",
+      "url": "https://www.cms.gov/medicare/enrollment-renewal/original-part-a-b",
+      "note": {
+        "en": "CMS enrollment rules for disability-based Medicare eligibility including the 24-month rule, ALS exception, and ESRD exception.",
+        "es": "Reglas de inscripcion de CMS para elegibilidad de Medicare basada en discapacidad incluyendo la regla de 24 meses, excepcion de ALS y excepcion de ESRD."
+      }
+    },
+    {
+      "name": "SSA.gov: Medicare information for disability research",
+      "url": "https://www.ssa.gov/disabilityresearch/wi/medicare.htm",
+      "note": {
+        "en": "Social Security Administration detail on when Medicare begins for SSDI recipients, entitlement date calculations, and automatic enrollment process.",
+        "es": "Detalle de la Administracion del Seguro Social sobre cuando comienza Medicare para beneficiarios del SSDI, calculos de fecha de derecho y proceso de inscripcion automatica."
+      }
+    },
+    {
+      "name": "KFF: SSDI and Marketplace coverage FAQ",
+      "url": "https://www.kff.org/faqs/faqs-health-insurance-marketplace-and-the-aca/medicare-and-the-marketplace/",
+      "note": {
+        "en": "KFF analysis of Marketplace coverage eligibility, premium tax credit rules, and Medicaid options for SSDI recipients during the Medicare waiting period.",
+        "es": "Analisis de KFF sobre elegibilidad de cobertura del Mercado, reglas de credito fiscal de prima y opciones de Medicaid para beneficiarios del SSDI durante el periodo de espera de Medicare."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility policy for people with disabilities",
+      "url": "https://www.medicaid.gov/medicaid/eligibility-policy",
+      "note": {
+        "en": "Medicaid eligibility pathways for people with disabilities in expansion and non-expansion states, year-round enrollment rules.",
+        "es": "Vias de elegibilidad de Medicaid para personas con discapacidades en estados de expansion y sin expansion, reglas de inscripcion todo el ano."
+      }
+    }
+  ]
+}
