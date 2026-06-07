@@ -2,60 +2,81 @@
   "slug": "medicare-working-after-65-cobra",
   "eventName": {
     "en": "On COBRA After 65",
-    "es": "En COBRA Después de los 65"
+    "es": "Con COBRA Despues de los 65"
   },
   "category": "Age Milestone",
-  "topic": "Medicare Part B Enrollment After 65 When On COBRA",
+  "topic": "Medicare Enrollment for People on COBRA After Turning 65",
   "medicalSpecialty": "PublicHealth",
   "ctaTarget": "screener",
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-07",
   "readingTime": "9 min read",
+
+  "topicCluster": "event-medicare-iep",
+  "keyTerms": {
+    "en": [
+      "COBRA after 65 Medicare enrollment",
+      "do I need Medicare if I have COBRA 2026",
+      "COBRA vs Medicare Part B after 65",
+      "Medicare Part B penalty COBRA 2026",
+      "enroll Medicare while on COBRA",
+      "COBRA 65 birthday Medicare deadline"
+    ],
+    "es": [
+      "COBRA despues de 65 inscripcion Medicare",
+      "necesito Medicare si tengo COBRA 2026",
+      "COBRA vs Medicare Parte B despues de 65",
+      "multa Parte B Medicare COBRA 2026",
+      "inscribirse Medicare con COBRA"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
 
   "meta": {
     "title": {
-      "en": "On COBRA After 65? Medicare Part B Rules 2026 | CoveredUSA",
-      "es": "COBRA y Medicare Parte B Después de los 65 2026 | CoveredUSA"
+      "en": "On COBRA After 65? Enroll in Medicare Now | 2026",
+      "es": "Con COBRA Despues de 65? Inscribase en Medicare Ya | 2026"
     },
     "description": {
-      "en": "COBRA does not count as creditable employer coverage. Enroll in Medicare Part B within your 8-month SEP or face a 10% per year lifetime penalty.",
-      "es": "COBRA no cuenta como cobertura activa del empleador. Inscríbase en la Parte B de Medicare en 8 meses o enfrente multas permanentes del 10% al año."
+      "en": "COBRA does not protect you from Part B late penalties. Turning 65 starts your 7-month enrollment window. Learn the 2026 rules before the deadline passes.",
+      "es": "COBRA no protege contra multas tardias de la Parte B de Medicare. Cumplir 65 inicia su ventana de 7 meses. Conozca las reglas 2026 antes de que venza el plazo."
     }
   },
 
   "hero": {
     "h1": {
       "en": "On COBRA After 65? You Still Need to Enroll in Medicare Part B",
-      "es": "¿En COBRA Después de los 65? Aún Necesita Inscribirse en la Parte B de Medicare"
+      "es": "Con COBRA Despues de 65? Aun Necesita Inscribirse en la Parte B de Medicare"
     },
     "subhero": {
-      "en": "COBRA is not active employer coverage. Your 8-month Medicare Special Enrollment Period starts the day your active employment ends, not when COBRA expires. Miss it and you pay 10% more for Part B every year for the rest of your life.",
-      "es": "COBRA no es cobertura activa del empleador. Su Período de Inscripción Especial de 8 meses de Medicare comienza el día que termina su empleo activo, no cuando vence COBRA. Pérdalo y pagará 10% más por la Parte B cada año por el resto de su vida."
+      "en": "COBRA does not count as active employer coverage. Your 7-month Medicare Initial Enrollment Period starts 3 months before your 65th birthday. Miss it and you face a 10% per year lifetime penalty on your Part B premium.",
+      "es": "COBRA no cuenta como cobertura activa del empleador. Su Periodo de Inscripcion Inicial de Medicare de 7 meses comienza 3 meses antes de cumplir 65. Si lo pierde, enfrentara una multa del 10% al ano de por vida en su prima de la Parte B."
     }
   },
 
   "urgency": {
-    "kind": "deadline",
+    "kind": "window",
     "heading": {
-      "en": "You have 8 months from when your active employment ends to enroll in Part B",
-      "es": "Tiene 8 meses desde que termina su empleo activo para inscribirse en la Parte B"
+      "en": "Your Medicare enrollment window is 7 months centered on your 65th birthday",
+      "es": "Su ventana de inscripcion de Medicare es de 7 meses centrada en su cumpleanos 65"
     },
     "body": {
-      "en": "The 8-month Special Enrollment Period for Medicare Part B begins the month after your employment or employer group health coverage ends, whichever comes first. For example, if your last day of work is June 30, 2026, your SEP runs from July 1, 2026 through February 28, 2027. COBRA does NOT extend this window. Waiting until COBRA expires can mean missing the SEP entirely and facing a permanent penalty.",
-      "es": "El Período de Inscripción Especial de 8 meses para la Parte B de Medicare comienza el mes después de que termina su empleo o cobertura grupal, lo que ocurra primero. Por ejemplo, si su último día de trabajo es el 30 de junio de 2026, su SEP va del 1 de julio de 2026 al 28 de febrero de 2027. COBRA NO extiende esta ventana. Esperar hasta que COBRA expire puede significar perder el SEP por completo y enfrentar una multa permanente."
+      "en": "The Initial Enrollment Period (IEP) runs from 3 months before your 65th birthday month through 3 months after. For example, if your birthday is September 15, 2026, your IEP runs from June 1 through December 31, 2026. COBRA coverage does not pause or extend this window. Miss the IEP without a qualifying Special Enrollment Period and Part B adds a 10% penalty for every 12-month period you delayed, permanently added to your premium for the rest of your life.",
+      "es": "El Periodo de Inscripcion Inicial (IEP) se extiende desde 3 meses antes del mes de su 65 cumpleanos hasta 3 meses despues. Por ejemplo, si su cumpleanos es el 15 de septiembre de 2026, su IEP va del 1 de junio al 31 de diciembre de 2026. La cobertura COBRA no pausa ni extiende esta ventana. Si pierde el IEP sin un Periodo de Inscripcion Especial calificado, la Parte B agrega una multa del 10% por cada periodo de 12 meses que retrase, permanentemente sumada a su prima de por vida."
     },
-    "totalTimeISO8601": "P8M",
+    "totalTimeISO8601": "P7M",
     "secondaryDeadlines": [
       {
         "label": {
-          "en": "Part D drug coverage (avoid 1%/mo lifetime penalty)",
-          "es": "Cobertura de medicamentos Parte D (evitar multa de 1%/mes)"
+          "en": "Part D drug coverage (63-day grace after Part A/B effective date)",
+          "es": "Cobertura de medicamentos Parte D (gracia de 63 dias despues de la fecha efectiva de Parte A/B)"
         },
         "days": 63
       },
       {
         "label": {
-          "en": "Medigap guaranteed-issue window (6 months from Part B start)",
-          "es": "Ventana de emisión garantizada de Medigap (6 meses desde inicio Parte B)"
+          "en": "Medigap open enrollment (6 months from Part B effective date)",
+          "es": "Inscripcion abierta Medigap (6 meses desde la fecha efectiva de la Parte B)"
         },
         "days": 180
       }
@@ -63,90 +84,90 @@
   },
 
   "quickAnswer": {
-    "en": "If you are 65 or older and on COBRA, you almost certainly need to enroll in Medicare Part B now. COBRA is continuation coverage, not active employer coverage, so it does not give you the right to delay Part B enrollment without penalty. Your 8-month Special Enrollment Period started when your active job-based coverage ended (the date employment ended, not when COBRA began). In 2026, Part B costs $202.90 per month with a $283 deductible. Every 12-month period you delay past the SEP adds a permanent 10% to your Part B premium for the rest of your life. The only exception: if you are still actively employed at a company with 20 or more employees (yours or your spouse's) and covered under that active group plan.",
-    "es": "Si tiene 65 años o más y está en COBRA, casi con certeza necesita inscribirse en la Parte B de Medicare ahora. COBRA es cobertura de continuación, no cobertura activa del empleador, por lo que no le da derecho a retrasar la inscripción en la Parte B sin multa. Su Período de Inscripción Especial de 8 meses comenzó cuando terminó su cobertura activa del trabajo (la fecha en que terminó el empleo, no cuando comenzó COBRA). En 2026, la Parte B cuesta $202.90 al mes con un deducible de $283. Cada período de 12 meses que retrasa más allá del SEP agrega un 10% permanente a su prima de la Parte B por el resto de su vida. La única excepción: si todavía está empleado activamente en una empresa con 20 o más empleados (suya o de su cónyuge) y cubierto bajo ese plan grupal activo."
+    "en": "Yes, you almost certainly need to enroll in Medicare Part B even if you are on COBRA after turning 65. COBRA is not treated as active employer coverage under Medicare rules, so it does not let you delay Part B without triggering a lifetime penalty. Your 7-month Initial Enrollment Period (IEP) opens 3 months before your 65th birthday and closes 3 months after. Enroll at SSA.gov during that window. If you already missed the IEP because you assumed COBRA protected you, your next option is Medicare General Enrollment Period (January 1 to March 31) with coverage starting July 1, plus the Part B penalty. In 2026, the standard Part B premium is $202.90 per month, and the 10% per year late penalty is permanent.",
+    "es": "Si, casi con certeza necesita inscribirse en la Parte B de Medicare aunque tenga COBRA despues de cumplir 65. COBRA no se considera cobertura activa del empleador bajo las reglas de Medicare, por lo que no le permite retrasar la Parte B sin activar una multa de por vida. Su Periodo de Inscripcion Inicial (IEP) de 7 meses se abre 3 meses antes de su cumpleanos 65 y cierra 3 meses despues. Inscribase en SSA.gov durante esa ventana. Si ya perdio el IEP asumiendo que COBRA lo protegia, su proxima opcion es el Periodo de Inscripcion General de Medicare (del 1 de enero al 31 de marzo) con cobertura a partir del 1 de julio, mas la multa de la Parte B. En 2026, la prima estandar de la Parte B es de $202.90 al mes, y la multa del 10% anual es permanente."
   },
 
   "introParagraphs": [
     {
-      "en": "COBRA coverage after age 65 creates one of Medicare's most dangerous misunderstandings. Many people believe that as long as they have COBRA, they can delay Medicare Part B without penalty. That is incorrect. COBRA is continuation of a former employer's group health plan, not active employer coverage under a current job. The Medicare Secondary Payer rules treat these two types of coverage completely differently. Active employer group coverage from a current employer with 20 or more employees is creditable coverage that lets you delay Part B. COBRA is not. The 8-month Medicare Special Enrollment Period clock begins ticking when you stop being actively employed, regardless of whether you elect COBRA. A person who retired on May 1, 2026, elected COBRA through October 2027, but did not enroll in Part B until November 2027 would face a permanent penalty, because their SEP expired in January 2027, eight months after the May 2026 employment end date. Medicare.gov confirms this distinction explicitly, and the Social Security Administration (SSA) uses it to assess late-enrollment penalties during benefit claims. Thousands of retirees make this costly mistake each year. The good news: understanding the rule precisely means you can avoid the penalty entirely.",
-      "es": "La cobertura COBRA después de los 65 años crea uno de los malentendidos más peligrosos de Medicare. Muchas personas creen que mientras tengan COBRA, pueden retrasar la Parte B de Medicare sin multa. Eso es incorrecto. COBRA es la continuación del plan de salud grupal de un empleador anterior, no cobertura activa del empleador de un trabajo actual. Las reglas del Pagador Secundario de Medicare tratan estos dos tipos de cobertura de manera completamente diferente. La cobertura grupal activa del empleador de un empleador actual con 20 o más empleados es cobertura acreditable que le permite retrasar la Parte B. COBRA no lo es. El reloj del Período de Inscripción Especial de 8 meses de Medicare comienza a contar cuando deja de estar empleado activamente, independientemente de si elige COBRA. Una persona que se jubiló el 1 de mayo de 2026, eligió COBRA hasta octubre de 2027, pero no se inscribió en la Parte B hasta noviembre de 2027 enfrentaría una multa permanente, porque su SEP expiró en enero de 2027, ocho meses después de la fecha de fin de empleo de mayo de 2026. Medicare.gov confirma esta distinción explícitamente, y la Administración del Seguro Social (SSA) la usa para evaluar multas por inscripción tardía durante las reclamaciones de beneficios. Miles de jubilados cometen este costoso error cada año."
+      "en": "COBRA continuation coverage is one of the most misunderstood concepts in US health insurance, especially at age 65. Thousands of people each year assume that keeping COBRA after turning 65 protects them from Medicare deadlines. That assumption costs them thousands of dollars in lifetime penalties. Medicare rules are clear on this point: COBRA is not active employer coverage. The Special Enrollment Period that lets workers delay Part B without penalty is reserved for people who are still actively employed at a job with a group health plan sponsored by an employer with 20 or more employees. COBRA, retiree health plans, individual market plans, and severance coverage do not qualify. Turning 65 while on COBRA means your 7-month Initial Enrollment Period (IEP) is running whether you use it or not. Missing it triggers a 10% Part B premium penalty for every 12-month period you were eligible but did not enroll, and that penalty follows you for the rest of your life. At the 2026 standard Part B premium of $202.90 per month, two years of delay adds roughly $40 per month, permanently. Over a 20-year retirement, that compounds to more than $9,600 in unnecessary cost.",
+      "es": "La cobertura de continuacion COBRA es uno de los conceptos mas malinterpretados del seguro de salud en Estados Unidos, especialmente a los 65 anos. Miles de personas cada ano asumen que mantener COBRA despues de cumplir 65 los protege de los plazos de Medicare. Esa suposicion les cuesta miles de dolares en multas de por vida. Las reglas de Medicare son claras al respecto: COBRA no es cobertura activa del empleador. El Periodo de Inscripcion Especial que permite a los trabajadores retrasar la Parte B sin penalizacion esta reservado para personas que todavia estan empleadas activamente en un trabajo con un plan de salud grupal patrocinado por un empleador con 20 o mas empleados. COBRA, planes de jubilados, planes individuales y cobertura de indemnizacion no califican. Cumplir 65 mientras tiene COBRA significa que su Periodo de Inscripcion Inicial (IEP) de 7 meses esta corriendo lo use o no. Perderlo activa una multa del 10% en la prima de la Parte B por cada periodo de 12 meses que fue elegible pero no se inscribio, y esa multa lo acompana el resto de su vida. A la prima estandar de la Parte B de 2026 de $202.90 al mes, dos anos de retraso agregan aproximadamente $40 al mes, permanentemente."
     },
     {
-      "en": "Three rules govern Medicare enrollment for people 65 and older who have or had employer coverage. First: employer size matters. If your former or current employer has 20 or more employees, Medicare is secondary to the group plan while you are actively employed. Once employment ends, Medicare Part B enrollment must happen within an 8-month Special Enrollment Period per Medicare's SEP rules. Second: COBRA is NOT active employer coverage. Electing COBRA after retirement does not pause or extend your SEP. Third: retiree health coverage (plans offered by your former employer to retirees, separate from COBRA) also does NOT count as active employer coverage for the Part B delay rule. Only a current job's group health plan qualifies. If you have any doubt about whether your situation qualifies for a legitimate Part B delay, call Social Security at 1-800-772-1213 or visit SSA.gov before acting. An incorrect delay costs real money: at the 2026 Part B standard premium of $202.90, a two-year delay adds roughly $40 per month to your premium forever. Check your Medicare eligibility to confirm your enrollment window.",
-      "es": "Tres reglas rigen la inscripción en Medicare para personas de 65 años o más que tienen o tuvieron cobertura del empleador. Primera: el tamaño del empleador importa. Si su empleador anterior o actual tiene 20 o más empleados, Medicare es secundario al plan grupal mientras está empleado activamente. Una vez que termina el empleo, la inscripción en la Parte B de Medicare debe ocurrir dentro de un Período de Inscripción Especial de 8 meses. Segunda: COBRA NO es cobertura activa del empleador. Elegir COBRA después de la jubilación no pausa ni extiende su SEP. Tercera: la cobertura de salud para jubilados (planes ofrecidos por su ex empleador a jubilados, separados de COBRA) tampoco cuenta como cobertura activa del empleador para la regla de retraso de la Parte B. Solo el plan de salud grupal de un trabajo actual califica. Si tiene alguna duda sobre si su situación califica para un retraso legítimo de la Parte B, llame al Seguro Social al 1-800-772-1213 o visite SSA.gov antes de actuar."
+      "en": "Medicare eligibility is not the same as COBRA eligibility, and the two clocks run independently. COBRA gives you 18 months (or up to 36 months for certain qualifying events like divorce or death of the covered employee) of continued group coverage after your active employment ends. Medicare IEP gives you exactly 7 months centered on your 65th birthday to enroll in Part A and Part B. If you leave your job at 63 and spend two years on COBRA, you will turn 65 while still on COBRA, and your IEP will open 3 months before your 65th birthday month regardless of how much COBRA time you have left. Many people in this situation hold COBRA through the IEP because they do not realize the deadline is passing. The right action for almost everyone turning 65 on COBRA is to enroll in Medicare Part A and Part B during the IEP, and then use Medicare as primary payer with COBRA stepping in as secondary for any cost-sharing gaps. Medicare eligibility and enrollment rules come from medicare.gov and the Social Security Administration at ssa.gov. Check the Medicare eligibility requirements section before making any enrollment decision based on a broker recommendation or plan comparison alone.",
+      "es": "La elegibilidad para Medicare no es lo mismo que la elegibilidad para COBRA, y los dos relojes corren de manera independiente. COBRA le ofrece 18 meses (o hasta 36 meses para ciertos eventos calificados como divorcio o muerte del empleado cubierto) de cobertura grupal continua despues de que termine su empleo activo. El IEP de Medicare le da exactamente 7 meses centrados en su 65 cumpleanos para inscribirse en las Partes A y B. Si deja su trabajo a los 63 anos y pasa dos anos con COBRA, cumplira 65 todavia con COBRA, y su IEP se abrira 3 meses antes del mes de su 65 cumpleanos sin importar cuanto tiempo de COBRA le quede. Muchas personas en esta situacion mantienen COBRA durante el IEP porque no se dan cuenta de que el plazo esta pasando. La accion correcta para casi todos los que cumplen 65 con COBRA es inscribirse en las Partes A y B de Medicare durante el IEP, y luego usar Medicare como pagador primario con COBRA actuando como secundario para cualquier brecha de costo compartido."
     }
   ],
 
   "steps": [
     {
       "name": {
-        "en": "Identify your Part B enrollment situation",
-        "es": "Identifique su situación de inscripción en la Parte B"
+        "en": "Confirm your exact IEP dates based on your birthday",
+        "es": "Confirme sus fechas exactas del IEP segun su cumpleanos"
       },
       "text": {
-        "en": "Confirm whether you are (A) still actively employed at a 20-or-more-employee company with active group health coverage, (B) on COBRA after retirement or job loss, or (C) covered by retiree health insurance. Only situation A qualifies for a legitimate Part B delay. If you are in situation B or C and are already 65, your 8-month SEP may be running or may have already expired. Check your employment end date, then calculate 8 months forward to determine if your SEP window is still open.",
-        "es": "Confirme si usted está (A) todavía empleado activamente en una empresa de 20 o más empleados con cobertura grupal activa, (B) en COBRA después de jubilarse o perder el trabajo, o (C) cubierto por seguro de salud para jubilados. Solo la situación A califica para un retraso legítimo de la Parte B. Si está en la situación B o C y ya tiene 65 años, su SEP de 8 meses puede estar en curso o puede haber expirado ya. Verifique su fecha de fin de empleo, luego calcule 8 meses hacia adelante para determinar si su ventana SEP todavía está abierta."
+        "en": "Calculate your Initial Enrollment Period by finding the first day of the month 3 months before your 65th birthday month and the last day of the 3rd month after. If your birthday is October 12, 2026, your IEP runs July 1 through January 31, 2027. Enroll in the first 3 months for coverage to begin on your birthday month. Enroll in your birthday month or later and coverage starts the month after enrollment. Log in to SSA.gov or call 1-800-772-1213 to check whether auto-enrollment applies to you.",
+        "es": "Calcule su Periodo de Inscripcion Inicial encontrando el primer dia del mes 3 meses antes del mes de su 65 cumpleanos y el ultimo dia del 3er mes despues. Si su cumpleanos es el 12 de octubre de 2026, su IEP corre del 1 de julio al 31 de enero de 2027. Inscribase en los primeros 3 meses para que la cobertura comience en el mes de su cumpleanos. Inscribase en su mes de cumpleanos o despues y la cobertura comienza el mes siguiente. Inicie sesion en SSA.gov o llame al 1-800-772-1213 para verificar si la inscripcion automatica aplica para usted."
       }
     },
     {
       "name": {
-        "en": "Calculate your 8-month Special Enrollment Period start and end dates",
-        "es": "Calcule las fechas de inicio y fin de su Período de Inscripción Especial de 8 meses"
+        "en": "Verify that your COBRA does not qualify as an active employer plan for delay",
+        "es": "Verifique que su COBRA no califica como plan activo del empleador para retrasar la inscripcion"
       },
       "text": {
-        "en": "The 8-month Part B Special Enrollment Period begins the month after active employment ends or the month after employer group health coverage ends, whichever comes first. If the last day of active employment was June 30, 2026, the SEP starts July 1, 2026 and ends February 28, 2027. COBRA election does not change these dates. Write these dates down and set a calendar reminder at the 6-month mark so you have two months of buffer to enroll before the SEP closes.",
-        "es": "Su Período de Inscripción Especial de 8 meses para la Parte B comienza el mes después de que termine su empleo activo o el mes después de que termine su cobertura grupal del empleador, lo que ocurra primero. Si su último día de empleo activo fue el 30 de junio de 2026, el SEP comienza el 1 de julio de 2026 y termina el 28 de febrero de 2027. La elección de COBRA no cambia estas fechas. Anote estas fechas y establezca un recordatorio en el calendario a los 6 meses para tener dos meses de margen para inscribirse antes de que el SEP cierre."
+        "en": "COBRA continuation coverage is almost never treated as active employer coverage under Medicare Secondary Payer rules for purposes of delaying Part B. The delay exception applies only when you are currently employed at a company with 20 or more employees and are enrolled in that active group health plan. Call your former employer's HR department and confirm in writing whether your COBRA qualifies for the Medicare employer-plan delay. For 99% of COBRA enrollees turning 65, the answer is no, and you must enroll in Part B during your IEP.",
+        "es": "La cobertura de continuacion COBRA casi nunca se trata como cobertura activa del empleador bajo las reglas del Pagador Secundario de Medicare para retrasar la Parte B. La excepcion de retraso solo aplica cuando usted esta actualmente empleado en una empresa con 20 o mas empleados e inscrito en ese plan de salud grupal activo. Llame al departamento de recursos humanos de su ex empleador y confirme por escrito si su COBRA califica para el retraso del plan del empleador de Medicare. Para el 99% de los inscritos en COBRA que cumplen 65, la respuesta es no, y debe inscribirse en la Parte B durante su IEP."
       }
     },
     {
       "name": {
-        "en": "Enroll in Part B at SSA.gov or by calling Social Security",
-        "es": "Inscríbase en la Parte B en SSA.gov o llamando al Seguro Social"
+        "en": "Enroll in Medicare Part A and Part B at SSA.gov",
+        "es": "Inscribase en las Partes A y B de Medicare en SSA.gov"
       },
       "text": {
-        "en": "Apply for Medicare Part B at SSA.gov/medicare/sign-up or by calling Social Security at 1-800-772-1213. You will need your employment end date and, if enrolling under the employer SEP, documentation confirming your prior employer group health coverage. Do not wait for COBRA to expire. Applying early in your 8-month SEP means Part B coverage starts the month after enrollment, rather than being delayed by months.",
-        "es": "Solicite la Parte B de Medicare en SSA.gov/medicare/sign-up o llamando al Seguro Social al 1-800-772-1213. Necesitará su fecha de fin de empleo y, si se inscribe bajo el SEP del empleador, documentación que confirme su cobertura grupal anterior del empleador. No espere a que COBRA expire. Solicitar al principio de su SEP de 8 meses significa que la cobertura de la Parte B comienza el mes después de la inscripción, en lugar de retrasarse varios meses."
+        "en": "Apply online at SSA.gov/medicare or call 1-800-772-1213 to enroll in both Part A and Part B during your IEP. Most people qualify for premium-free Part A if they (or a spouse) worked at least 10 years in Medicare-covered employment. Part B costs $202.90 per month in 2026 with a $283 annual deductible. After enrolling, Medicare becomes your primary payer and your COBRA becomes secondary, meaning COBRA may cover some cost-sharing that Medicare leaves open. You can elect to keep COBRA running alongside Medicare as secondary coverage during whatever COBRA time remains.",
+        "es": "Solicite en linea en SSA.gov/medicare o llame al 1-800-772-1213 para inscribirse en las Partes A y B durante su IEP. La mayoria de personas califican para la Parte A sin prima si ellas (o un conyugue) trabajaron al menos 10 anos en empleo cubierto por Medicare. La Parte B cuesta $202.90 al mes en 2026 con un deducible anual de $283. Despues de inscribirse, Medicare se convierte en su pagador primario y su COBRA en secundario, lo que significa que COBRA puede cubrir algunos costos compartidos que Medicare deja abiertos. Puede optar por mantener COBRA junto con Medicare como cobertura secundaria durante el tiempo de COBRA que reste."
       }
     },
     {
       "name": {
-        "en": "Choose between Original Medicare and Medicare Advantage",
-        "es": "Elija entre Medicare Original y Medicare Advantage"
+        "en": "Compare Medicare Advantage versus Original Medicare plus a Medigap supplement",
+        "es": "Compare Medicare Advantage versus Medicare Original mas un suplemento Medigap"
       },
       "text": {
-        "en": "Once enrolled in Part B, decide whether to stay in Original Medicare (Parts A and B) or switch to a Medicare Advantage plan. Original Medicare lets you see any doctor who accepts Medicare nationwide and pairs with a separate Part D drug plan and optional Medigap supplement. Medicare Advantage bundles everything into one private plan with lower premiums but a provider network and prior-authorization rules. Compare plan networks against your current doctors using medicare.gov's Plan Finder before you commit.",
-        "es": "Una vez inscrito en la Parte B, decida si permanecer en Medicare Original (Partes A y B) o cambiar a un plan Medicare Advantage. Medicare Original le permite ver a cualquier médico que acepte Medicare en todo el país y se combina con un plan separado de la Parte D y un suplemento Medigap opcional. Medicare Advantage agrupa todo en un plan privado con primas más bajas pero una red de proveedores y reglas de autorización previa. Compare las redes de planes con sus médicos actuales usando el Buscador de Planes de medicare.gov antes de comprometerse."
+        "en": "Once enrolled in Part A and Part B, choose how to receive your benefits. Original Medicare (Parts A and B) lets you see any provider that accepts Medicare nationwide, with a Medigap policy covering most out-of-pocket costs and a standalone Part D plan for prescriptions. Medicare Advantage (Part C) bundles everything through a private insurer, often at $0 additional premium over your Part B cost, but requires you to use a network. Your one-time guaranteed-issue Medigap enrollment window opens the month you are both 65 and enrolled in Part B. Missing that 6-month window means Medigap insurers in most states can deny you or charge more based on your health.",
+        "es": "Una vez inscrito en las Partes A y B, elija como recibir sus beneficios. Medicare Original (Partes A y B) le permite ver cualquier proveedor que acepte Medicare en todo el pais, con una poliza Medigap cubriendo la mayoria de costos de su bolsillo y un plan separado de la Parte D para recetas. Medicare Advantage (Parte C) agrupa todo a traves de una aseguradora privada, a menudo sin prima adicional sobre el costo de la Parte B, pero requiere que use una red. Su ventana unica de inscripcion garantizada de Medigap se abre el mes en que tiene 65 anos Y esta inscrito en la Parte B."
       }
     },
     {
       "name": {
-        "en": "Enroll in Part D drug coverage within 63 days of Part B start",
-        "es": "Inscríbase en la cobertura de medicamentos Parte D dentro de los 63 días del inicio de la Parte B"
+        "en": "Enroll in Part D drug coverage within 63 days of Medicare becoming effective",
+        "es": "Inscribase en cobertura de medicamentos de la Parte D dentro de los 63 dias posteriores a que Medicare sea efectivo"
       },
       "text": {
-        "en": "After enrolling in Part B, you have 63 days to enroll in a Part D prescription drug plan without a late-enrollment penalty. Going 63 or more days without creditable drug coverage after becoming Medicare-eligible triggers a 1% per month lifetime Part D penalty added to your premium. If you choose Medicare Advantage, the plan typically includes Part D. If you choose Original Medicare, compare Part D plans at medicare.gov and enroll immediately after Part B activates.",
-        "es": "Después de inscribirse en la Parte B, tiene 63 días para inscribirse en un plan de medicamentos de la Parte D sin multa por inscripción tardía. Pasar 63 días o más sin cobertura de medicamentos acreditable después de ser elegible para Medicare activa una multa permanente de la Parte D del 1% al mes añadida a su prima. Si elige Medicare Advantage, el plan normalmente incluye la Parte D. Si elige Medicare Original, compare planes de la Parte D en medicare.gov e inscríbase inmediatamente después de que la Parte B se active."
+        "en": "Medicare Part D prescription drug coverage must be enrolled within 63 days of your Part A and Part B effective date to avoid a separate 1% per month lifetime late penalty. Check whether your existing COBRA plan includes creditable drug coverage (coverage at least as good as standard Part D). If it does, you may be able to delay Part D without penalty while COBRA runs. Get this confirmation in writing from your COBRA plan administrator before relying on it. If your COBRA drug coverage is not creditable, enroll in Part D immediately through Medicare.gov or a private plan finder.",
+        "es": "La cobertura de medicamentos recetados de la Parte D de Medicare debe inscribirse dentro de los 63 dias de la fecha efectiva de las Partes A y B para evitar una multa por retraso permanente separada del 1% al mes. Verifique si su plan COBRA existente incluye cobertura de medicamentos acreditable (cobertura al menos tan buena como la Parte D estandar). Si es asi, puede retrasar la Parte D sin penalizacion mientras corre COBRA. Obtenga esta confirmacion por escrito del administrador de su plan COBRA antes de confiar en ella."
       }
     },
     {
       "name": {
-        "en": "Apply for Medigap within your 6-month guaranteed-issue window",
-        "es": "Solicite Medigap dentro de su ventana de emisión garantizada de 6 meses"
+        "en": "Decide whether to keep COBRA as secondary coverage or cancel it",
+        "es": "Decida si mantener COBRA como cobertura secundaria o cancelarlo"
       },
       "text": {
-        "en": "If you choose Original Medicare, apply for Medigap (Medicare Supplement Insurance) within the 6-month guaranteed-issue window that begins the first month you are both 65 or older and enrolled in Part B. During this window, insurers cannot deny you or charge more based on your health history. After it closes, Medigap underwriting can permanently price you out in most states. Contact private insurers directly or use your State Health Insurance Assistance Program (SHIP) for free counseling at shiptacenter.org.",
-        "es": "Si elige Medicare Original, solicite Medigap (Seguro Suplementario de Medicare) dentro de la ventana de emisión garantizada de 6 meses que comienza el primer mes en que tiene 65 años o más y está inscrito en la Parte B. Durante esta ventana, las aseguradoras no pueden negarle ni cobrarle más según su historial de salud. Después de que cierre, la suscripción de Medigap puede excluirle permanentemente en la mayoría de los estados. Comuníquese directamente con aseguradoras privadas o use su Programa de Asistencia de Seguro de Salud del Estado (SHIP) para asesoramiento gratuito en shiptacenter.org."
+        "en": "After Medicare enrollment is complete, calculate whether keeping COBRA as secondary coverage is worth the monthly premium. COBRA charges 102% of the full group premium, typically $400 to $900 per month for individual coverage. Medicare plus a Medigap plan often delivers comparable or better protection for less. Use the Medicare plan finder at medicare.gov to compare your options. If you keep COBRA alongside Medicare, Medicare pays first and COBRA covers remaining cost-sharing for the balance of your COBRA period. Once your COBRA ends, you can switch to Medigap, Medicare Advantage, or standalone Part D as needed.",
+        "es": "Despues de que la inscripcion en Medicare este completa, calcule si mantener COBRA como cobertura secundaria vale la prima mensual. COBRA cobra el 102% de la prima grupal completa, tipicamente $400 a $900 al mes para cobertura individual. Medicare mas un plan Medigap a menudo ofrece proteccion comparable o mejor por menos. Use el buscador de planes de Medicare en medicare.gov para comparar sus opciones. Si mantiene COBRA junto con Medicare, Medicare paga primero y COBRA cubre el costo compartido restante durante el resto de su periodo COBRA."
       }
     },
     {
       "name": {
-        "en": "Check whether you qualify for Medicare Savings Programs or Extra Help",
-        "es": "Verifique si califica para los Programas de Ahorros de Medicare o Ayuda Adicional"
+        "en": "If you missed the IEP, enroll in the Medicare General Enrollment Period",
+        "es": "Si perdio el IEP, inscribase en el Periodo de Inscripcion General de Medicare"
       },
       "text": {
-        "en": "If your income is below roughly 135% of the Federal Poverty Level (about $24,555 for a single person in 2026), apply for a Medicare Savings Program through your state Medicaid agency. QMB status pays your Part B premium entirely ($202.90/month in 2026). Extra Help (Low-Income Subsidy) caps Part D copays at a few dollars per prescription. Apply year-round at Medicaid.gov or through your state Medicaid agency, both of which have online portals. You do not need to be on Medicaid to receive Extra Help.",
-        "es": "Si su ingreso está por debajo de aproximadamente el 135% del Nivel Federal de Pobreza (alrededor de $24,555 para una sola persona en 2026), solicite un Programa de Ahorros de Medicare a través de su agencia estatal de Medicaid. El estado QMB paga su prima de la Parte B por completo ($202.90/mes en 2026). La Ayuda Adicional (Subsidio de Bajos Ingresos) limita los copagos de la Parte D a unos pocos dólares por receta. Solicite durante todo el año en Medicaid.gov o a través de su agencia estatal de Medicaid. No necesita estar en Medicaid para recibir Ayuda Adicional."
+        "en": "Missing the IEP while on COBRA means waiting for the Medicare General Enrollment Period (GEP), which runs January 1 through March 31 each year, with coverage starting July 1 of that year. Call Social Security at 1-800-772-1213 to confirm your eligibility and calculate your Part B late penalty. The penalty is 10% for each full 12-month period without Part B coverage past your IEP. Contact your State Health Insurance Assistance Program (SHIP) for free one-on-one counseling: find your local SHIP at shiptacenter.org.",
+        "es": "Perder el IEP mientras tiene COBRA significa esperar el Periodo de Inscripcion General de Medicare (GEP), que corre del 1 de enero al 31 de marzo de cada ano, con cobertura a partir del 1 de julio de ese ano. Llame al Seguro Social al 1-800-772-1213 para confirmar su elegibilidad y calcular su multa por retraso de la Parte B. La multa es del 10% por cada periodo completo de 12 meses sin cobertura de la Parte B despues de su IEP."
       }
     }
   ],
@@ -154,66 +175,66 @@
   "optionsComparison": {
     "headers": {
       "en": ["Option", "Typical cost", "Best for", "Deadline"],
-      "es": ["Opción", "Costo típico", "Mejor para", "Fecha límite"]
+      "es": ["Opcion", "Costo tipico", "Mejor para", "Fecha limite"]
     },
     "rows": [
       {
-        "en": ["Enroll in Part B now (Original Medicare)", "$202.90/mo Part B + $0 Part A (most people)", "Retired or on COBRA and 65+; want any-doctor flexibility", "8-month SEP from employment end"],
-        "es": ["Inscribirse en la Parte B ahora (Medicare Original)", "$202.90/mes Parte B + $0 Parte A (mayoría)", "Jubilado o en COBRA con 65+; quiere flexibilidad con cualquier médico", "SEP de 8 meses desde fin de empleo"]
+        "en": ["Medicare Part A + Part B (enroll during IEP)", "$0 Part A (most people) + $202.90/mo Part B (2026)", "Everyone turning 65 on COBRA who cannot prove active employer plan", "7-month IEP centered on 65th birthday"],
+        "es": ["Partes A + B de Medicare (inscribirse durante el IEP)", "$0 Parte A (mayoria) + $202.90/mes Parte B (2026)", "Todos los que cumplen 65 con COBRA y no pueden demostrar plan activo del empleador", "IEP de 7 meses centrado en el 65 cumpleanos"]
       },
       {
-        "en": ["Enroll in Medicare Advantage (Part C)", "$202.90/mo Part B + $0 to $50/mo plan premium (often $0)", "Lower monthly cost, willing to use a network, want bundled drugs", "Same 8-month SEP window"],
-        "es": ["Inscribirse en Medicare Advantage (Parte C)", "$202.90/mes Parte B + $0 a $50/mes prima del plan", "Menor costo mensual, dispuesto a usar una red, quiere medicamentos incluidos", "La misma ventana SEP de 8 meses"]
+        "en": ["Medicare + Medigap supplement (Original Medicare path)", "$202.90/mo Part B + $100 to $300/mo Medigap Plan G or N", "Predictable out-of-pocket, any-doctor access, travel flexibility", "Guaranteed-issue Medigap window: 6 months from Part B effective date"],
+        "es": ["Medicare + suplemento Medigap (ruta Medicare Original)", "$202.90/mes Parte B + $100 a $300/mes Plan G o N de Medigap", "Gastos predecibles, acceso a cualquier medico, flexibilidad de viaje", "Ventana Medigap garantizada: 6 meses desde la fecha efectiva de la Parte B"]
       },
       {
-        "en": ["Delay Part B (still actively employed, 20+ employee plan)", "$0 Part B until retirement; keep employer plan cost", "Still working at company with 20+ employees, enrolled in active group plan", "8-month SEP starts when active coverage ends"],
-        "es": ["Retrasar la Parte B (aún empleado activo, plan de 20+ empleados)", "$0 Parte B hasta jubilarse; mantiene costo del plan del empleador", "Todavía trabajando en empresa de 20+ empleados, inscrito en plan grupal activo", "SEP de 8 meses comienza al terminar cobertura activa"]
+        "en": ["Medicare Advantage (Part C)", "$202.90/mo Part B + $0 to $50/mo plan premium (often $0)", "Lower monthly cost, willing to use a network, bundled Part D", "7-month IEP, then yearly Oct 15 to Dec 7 AEP"],
+        "es": ["Medicare Advantage (Parte C)", "$202.90/mes Parte B + $0 a $50/mes prima del plan (frecuentemente $0)", "Costo mensual mas bajo, dispuesto a usar una red, Parte D incluida", "IEP de 7 meses, luego AEP anual del 15 oct al 7 dic"]
       },
       {
-        "en": ["COBRA only (no Part B enrollment)", "COBRA: $400 to $900/mo individual; $1,200 to $2,800/mo family. PLUS permanent 10%/year Part B penalty", "Not recommended for 65+. May be unavoidable during grace period", "SEP runs concurrently; do not delay"],
-        "es": ["Solo COBRA (sin inscripción en la Parte B)", "COBRA: $400 a $900/mes individual; $1,200 a $2,800/mes familiar. MAS multa permanente 10%/año Parte B", "No recomendado para 65+. Puede ser inevitable durante período de gracia", "SEP corre concurrentemente; no retrase"]
+        "en": ["COBRA alongside Medicare as secondary", "102% of full group premium: $400 to $900/mo individual", "Short-term bridge to fill cost-sharing gaps, ongoing specialist care", "Keep while Medicare is primary; cancel when value drops vs Medigap"],
+        "es": ["COBRA junto con Medicare como secundario", "102% de la prima grupal completa: $400 a $900/mes individual", "Puente a corto plazo para cubrir brechas de costo compartido, atencion de especialista en curso", "Mantener mientras Medicare es primario; cancelar cuando el valor baje vs Medigap"]
       },
       {
-        "en": ["Medicare Savings Program (QMB/SLMB) + Medicare", "$0 Part B premium if QMB (income under ~135% FPL)", "Low-income retirees needing Part B cost relief", "Year-round via state Medicaid agency"],
-        "es": ["Programa de Ahorros de Medicare (QMB/SLMB) + Medicare", "$0 prima Parte B si QMB (ingreso bajo ~135% FPL)", "Jubilados de bajos ingresos que necesitan alivio de costo de la Parte B", "Todo el año a través de agencia estatal de Medicaid"]
+        "en": ["Medicare General Enrollment Period (missed IEP)", "$202.90/mo + 10% per year late penalty (permanent)", "Anyone who missed IEP while assuming COBRA protected them", "Jan 1 to Mar 31 each year; coverage starts July 1"],
+        "es": ["Periodo de Inscripcion General de Medicare (perdio el IEP)", "$202.90/mes + multa permanente del 10% por ano de retraso", "Quien perdio el IEP asumiendo que COBRA los protegia", "Del 1 de enero al 31 de marzo cada ano; cobertura comienza el 1 de julio"]
       }
     ],
     "footnote": {
-      "en": "2026 Part B standard premium is $202.90/mo; higher earners pay additional IRMAA surcharges. Part A is premium-free for most people who worked 10+ years in Medicare-covered employment. COBRA coverage does NOT substitute for Part B enrollment and does not extend the 8-month SEP clock.",
-      "es": "La prima estándar de la Parte B 2026 es $202.90/mes; los de mayores ingresos pagan recargos IRMAA adicionales. La Parte A es gratuita para la mayoría que trabajó 10+ años en empleo cubierto por Medicare. La cobertura COBRA NO sustituye la inscripción en la Parte B y no extiende el reloj del SEP de 8 meses."
+      "en": "2026 Part B standard premium is $202.90/month. Higher earners pay more via IRMAA (Income-Related Monthly Adjustment Amount). Part A is premium-free for most people with 10+ years of Medicare-covered work. COBRA costs vary by employer plan. Medigap Plan G is the most comprehensive plan available to new enrollees in 2026 (Plan F closed to new enrollees since 2020).",
+      "es": "La prima estandar de la Parte B 2026 es $202.90/mes. Los que ganan mas pagan mas via IRMAA. La Parte A es gratuita para la mayoria de personas con 10+ anos de trabajo cubierto por Medicare. Los costos de COBRA varian segun el plan del empleador. El Plan G de Medigap es el plan mas completo disponible para nuevos inscritos en 2026 (el Plan F esta cerrado para nuevos inscritos desde 2020)."
     },
-    "source": "Medicare.gov, CMS 2026 Part B premium announcement, Social Security Administration, IRS COBRA guidance"
+    "source": "Medicare.gov, CMS 2026 Part B premium announcement, Social Security Administration, medicare.gov/basics/costs/medicare-costs/avoid-penalties"
   },
 
   "commonMistakes": {
     "intro": {
-      "en": "The most expensive mistakes people make about Medicare and COBRA after age 65. Several of these penalties are permanent:",
-      "es": "Los errores más costosos que la gente comete sobre Medicare y COBRA después de los 65 años. Varias de estas multas son permanentes:"
+      "en": "The most costly mistakes people on COBRA make around their 65th birthday. Most of these penalties are permanent:",
+      "es": "Los errores mas costosos que las personas con COBRA cometen cerca de su 65 cumpleanos. La mayoria de estas multas son permanentes:"
     },
     "items": [
       {
-        "en": "Assuming COBRA counts as active employer coverage. COBRA is continuation coverage, not active job-based coverage. Electing COBRA after retirement does not give you the right to delay Part B. Your 8-month SEP starts when employment ends, not when COBRA ends.",
-        "es": "Asumir que COBRA cuenta como cobertura activa del empleador. COBRA es cobertura de continuación, no cobertura activa del trabajo. Elegir COBRA después de jubilarse no le da derecho a retrasar la Parte B. Su SEP de 8 meses comienza cuando termina el empleo, no cuando vence COBRA."
+        "en": "Assuming COBRA protects you from the Part B enrollment deadline. COBRA is NOT active employer coverage under Medicare rules. The 8-month SEP for delaying Part B applies only to people with active employer plans from current employment at a company with 20 or more employees. On COBRA, your IEP clock is ticking.",
+        "es": "Asumir que COBRA lo protege del plazo de inscripcion de la Parte B. COBRA NO es cobertura activa del empleador bajo las reglas de Medicare. El SEP de 8 meses para retrasar la Parte B aplica solo a personas con planes activos del empleador de empleo actual en una empresa con 20 o mas empleados. Con COBRA, su reloj del IEP esta corriendo."
       },
       {
-        "en": "Waiting until COBRA expires to enroll in Part B. COBRA can last 18 to 36 months. If your 8-month SEP has already passed when COBRA expires, you face the General Enrollment Period (January to March each year) and a permanent Part B late-enrollment penalty.",
-        "es": "Esperar hasta que COBRA expire para inscribirse en la Parte B. COBRA puede durar de 18 a 36 meses. Si su SEP de 8 meses ya pasó cuando COBRA vence, se enfrenta al Período de Inscripción General (enero a marzo de cada año) y una multa permanente de inscripción tardía de la Parte B."
+        "en": "Waiting until COBRA ends to enroll in Medicare. If your IEP already passed while you were on COBRA, you must wait for the General Enrollment Period (January 1 to March 31), pay the late penalty, and start coverage July 1. That gap and penalty are both avoidable by enrolling during the IEP.",
+        "es": "Esperar hasta que COBRA termine para inscribirse en Medicare. Si su IEP ya paso mientras tenia COBRA, debe esperar el Periodo de Inscripcion General (del 1 de enero al 31 de marzo), pagar la multa tardea, y comenzar cobertura el 1 de julio. Esa brecha y multa son evitables si se inscribe durante el IEP."
       },
       {
-        "en": "Confusing retiree health coverage with active employer coverage. A former employer's retiree health plan, however generous, does not count as creditable employer coverage for the Part B delay rule. Retirees on former employer health plans must enroll in Part B at 65 or use the 8-month SEP if it applies.",
-        "es": "Confundir la cobertura de salud para jubilados con la cobertura activa del empleador. El plan de salud para jubilados de un ex empleador, por generoso que sea, no cuenta como cobertura acreditable del empleador para la regla de retraso de la Parte B. Los jubilados en planes de salud de ex empleadores deben inscribirse en la Parte B a los 65 o usar el SEP de 8 meses si aplica."
+        "en": "Skipping Part B because Part A is free. Part A covers hospital inpatient care but does not cover outpatient doctor visits, lab work, durable medical equipment, or most specialists. Part B covers all of those, and skipping it leaves a major coverage gap. COBRA filling in for Part B is expensive insurance when Medicare Part B at $202.90 per month would cover the same services as the primary payer.",
+        "es": "Saltarse la Parte B porque la Parte A es gratuita. La Parte A cubre atencion hospitalaria de internados pero no cubre visitas medicas ambulatorias, laboratorios, equipo medico duradero, ni la mayoria de especialistas. La Parte B cubre todo eso, y saltarsela deja una brecha de cobertura importante."
       },
       {
-        "en": "Skipping Part D drug coverage because COBRA includes drugs. Once COBRA ends, going 63 or more days without creditable drug coverage triggers a permanent 1% per month Part D penalty. Even a short gap between COBRA and Part D enrollment can create a lifetime penalty.",
-        "es": "Omitir la cobertura de medicamentos Parte D porque COBRA incluye medicamentos. Una vez que COBRA termina, pasar 63 días o más sin cobertura de medicamentos acreditable activa una multa permanente de la Parte D del 1% al mes. Incluso una brecha corta entre COBRA y la inscripción en la Parte D puede crear una multa de por vida."
+        "en": "Missing the 6-month guaranteed-issue Medigap window. If you choose Original Medicare, your guaranteed-issue window for Medigap opens the first month you are both 65 and enrolled in Part B. After it closes, Medigap insurers in most states can deny you or charge significantly more based on your health history.",
+        "es": "Perder la ventana de 6 meses de emision garantizada de Medigap. Si elige Medicare Original, su ventana garantizada de Medigap se abre el primer mes en que tiene 65 anos Y esta inscrito en la Parte B. Despues de que cierra, las aseguradoras Medigap en la mayoria de estados pueden negarle o cobrarle significativamente mas basado en su historial de salud."
       },
       {
-        "en": "Missing the Medigap guaranteed-issue window. The 6-month Medigap Open Enrollment Period that starts when you turn 65 AND enroll in Part B is your only guaranteed right to buy Medigap without medical underwriting. People who delay Part B lose the guaranteed window and may be denied or charged higher premiums based on health status.",
-        "es": "Perder la ventana de emisión garantizada de Medigap. El Período de Inscripción Abierta de Medigap de 6 meses que comienza cuando cumple 65 años Y se inscribe en la Parte B es su único derecho garantizado de comprar Medigap sin suscripción médica. Las personas que retrasan la Parte B pierden la ventana garantizada y pueden ser rechazadas o cobradas primas más altas según su estado de salud."
+        "en": "Going without Part D drug coverage for more than 63 days. Even if your current COBRA plan includes drugs, verify in writing that the drug coverage is creditable (as good as standard Part D). Non-creditable drug coverage triggers the 1% per month lifetime Part D late penalty for every month without qualifying drug coverage after your Part B effective date.",
+        "es": "Quedarse sin cobertura de medicamentos de la Parte D por mas de 63 dias. Aunque su plan COBRA actual incluya medicamentos, verifique por escrito que la cobertura de medicamentos sea acreditable (tan buena como la Parte D estandar). La cobertura no acreditable activa la multa tardea permanente de la Parte D del 1% al mes."
       },
       {
-        "en": "Not checking for Medicare Savings Programs. If your income dropped after retirement, you may qualify for QMB, SLMB, or QI status through your state Medicaid agency, which can pay your Part B premium ($202.90/month in 2026) and reduce cost-sharing. These programs require a separate application at your state Medicaid agency or Medicaid.gov.",
-        "es": "No verificar los Programas de Ahorros de Medicare. Si sus ingresos bajaron después de jubilarse, puede calificar para el estado QMB, SLMB o QI a través de su agencia estatal de Medicaid, que puede pagar su prima de la Parte B ($202.90/mes en 2026) y reducir el costo compartido. Estos programas requieren una solicitud separada en su agencia estatal de Medicaid o Medicaid.gov."
+        "en": "Paying for COBRA without comparing it to Medicare plus a Medigap plan. COBRA at 102% of the full group premium often costs $500 to $900 per month for individual coverage. Medicare Part B at $202.90 plus a Medigap Plan G at $100 to $200 per month frequently delivers equivalent or better coverage at lower total cost, especially once Medicare becomes your primary payer.",
+        "es": "Pagar COBRA sin compararlo con Medicare mas un plan Medigap. COBRA al 102% de la prima grupal completa frecuentemente cuesta $500 a $900 al mes para cobertura individual. La Parte B de Medicare a $202.90 mas un Plan G de Medigap a $100 a $200 al mes frecuentemente entrega cobertura equivalente o mejor a menor costo total."
       }
     ]
   },
@@ -221,155 +242,216 @@
   "detailSections": [
     {
       "heading": {
-        "en": "Why COBRA Does Not Count as Active Employer Coverage for Medicare",
-        "es": "Por Que COBRA No Cuenta como Cobertura Activa del Empleador para Medicare"
+        "en": "COBRA vs Medicare as Primary Payer: How They Work Together",
+        "es": "COBRA vs Medicare como Pagador Primario: Como Funcionan Juntos"
       },
       "paragraphs": [
         {
-          "en": "Medicare's Secondary Payer rules were written to coordinate coverage between Medicare and employer-sponsored group health plans while a person is still working. The key phrase is 'still working.' Federal law (specifically the Medicare Secondary Payer statute at 42 U.S.C. Section 1395y(b)(1)(A)) grants the right to delay Part B without penalty only when an active employer's group health plan covers the Medicare-eligible person because of that person's or their spouse's current employment. COBRA fails this test on two counts: the employment has already ended, and COBRA is technically a right to purchase continuation coverage, not a benefit tied to active employment. The Social Security Administration is explicit in its guidance that COBRA, retiree health plans, and Veterans Affairs coverage do not count as active employer coverage for the Part B SEP trigger. Thousands of people each year incorrectly rely on COBRA to protect their Part B enrollment window and end up with permanent penalties.",
-          "es": "Las reglas del Pagador Secundario de Medicare fueron escritas para coordinar la cobertura entre Medicare y los planes de salud grupales patrocinados por el empleador mientras una persona todavía trabaja. La frase clave es 'todavía trabajando.' La ley federal (específicamente el estatuto del Pagador Secundario de Medicare en 42 U.S.C. Sección 1395y(b)(1)(A)) otorga el derecho de retrasar la Parte B sin multa solo cuando el plan de salud grupal de un empleador activo cubre a la persona elegible para Medicare debido al empleo actual de esa persona o de su cónyuge. COBRA falla esta prueba en dos aspectos: el empleo ya ha terminado, y COBRA es técnicamente un derecho de comprar cobertura de continuación, no un beneficio vinculado al empleo activo. La Administración del Seguro Social es explícita en su guía de que COBRA, los planes de salud para jubilados y la cobertura de Asuntos de Veteranos no cuentan como cobertura activa del empleador para el disparador del SEP de la Parte B."
+          "en": "Medicare Secondary Payer (MSP) rules govern what happens when a Medicare-eligible person also has other coverage. For someone turning 65 on COBRA, the rule is straightforward: Medicare pays first (primary), and COBRA pays second (secondary) for any remaining cost-sharing. COBRA is explicitly designed under the Medicare Secondary Payer statute to yield to Medicare once the person becomes Medicare-eligible and actually enrolls. This means keeping COBRA after enrolling in Medicare Part A and Part B can make sense as a short-term gap filler. COBRA may cover your Part A hospital deductible ($1,736 in 2026), your Part B 20% coinsurance for outpatient services, and Part B's $283 annual deductible. Whether the COBRA premium is worth those benefits depends entirely on your remaining COBRA period, your health status, and whether a Medigap plan would serve you better for less.",
+          "es": "Las reglas del Pagador Secundario de Medicare (MSP) rigen lo que sucede cuando una persona elegible para Medicare tambien tiene otra cobertura. Para alguien que cumple 65 con COBRA, la regla es directa: Medicare paga primero (primario), y COBRA paga segundo (secundario) por cualquier costo compartido restante. COBRA esta explicitamente disenado bajo el estatuto del Pagador Secundario de Medicare para ceder ante Medicare una vez que la persona se vuelve elegible para Medicare y se inscribe efectivamente. Esto significa que mantener COBRA despues de inscribirse en las Partes A y B de Medicare puede tener sentido como complemento a corto plazo."
         },
         {
-          "en": "The practical result: a person who retires at 65, elects COBRA, and waits 18 months for COBRA to expire before enrolling in Part B will face a 10% permanent Part B premium increase for the rest of their life. At the 2026 Part B standard premium of $202.90, that adds $20.29 per month, or about $243 per year, compounding upward each year as the base premium rises with annual CMS adjustments. Over 20 years of retirement, a two-year Part B delay costs roughly $4,800 to $6,000 in excess premiums in today's dollars, assuming modest annual CMS premium increases. The Part B late-enrollment penalty formula is: 10% for each full 12-month period that Medicare Part B could have been in effect but was not, multiplied by the current-year premium. The penalty is recalculated each year using the current premium, so it grows in dollar terms even though the percentage stays fixed.",
-          "es": "El resultado práctico: una persona que se jubila a los 65 años, elige COBRA y espera 18 meses para que COBRA expire antes de inscribirse en la Parte B enfrentará un aumento permanente del 10% en la prima de la Parte B por el resto de su vida. A la prima estándar de la Parte B de 2026 de $202.90, eso agrega $20.29 al mes, o aproximadamente $243 al año, componiéndose hacia arriba cada año a medida que la prima base aumenta con los ajustes anuales de CMS. Durante 20 años de jubilación, un retraso de dos años en la Parte B cuesta aproximadamente $4,800 a $6,000 en primas excesivas en dólares de hoy."
+          "en": "Three coverage scenarios are common for someone on COBRA who turns 65. Scenario 1: Retire or leave job before 65, then turn 65 while still within the COBRA period. The IEP opens 3 months before the 65th birthday month. Enroll in Medicare during the IEP, Medicare becomes primary, COBRA becomes secondary. Scenario 2: Still employed at age 65 at a 20-employee plan, then retire and elect COBRA. The 8-month SEP for delaying Part B starts from the end of active employment (or end of the employer group plan, whichever is first), not from the end of COBRA. The 8-month clock is your window. Scenario 3: Turn 65 while on a former spouse's COBRA following divorce. Divorce triggers a COBRA qualifying event, but the resulting COBRA coverage does not count as active employer coverage. The IEP based on the 65th birthday governs.",
+          "es": "Tres escenarios de cobertura son comunes para alguien con COBRA que cumple 65. Escenario 1: Se jubila o deja el trabajo antes de los 65, luego cumple 65 todavia dentro del periodo COBRA. El IEP se abre 3 meses antes del mes del 65 cumpleanos. Inscribase en Medicare durante el IEP, Medicare se convierte en primario, COBRA en secundario. Escenario 2: Todavia empleado a los 65 en un plan de 20 empleados, luego se jubila y elige COBRA. El SEP de 8 meses para retrasar la Parte B comienza desde el final del empleo activo, no desde el final de COBRA. Escenario 3: Cumple 65 con COBRA de un ex conyugue tras divorcio. El divorcio activa un evento calificador de COBRA, pero la cobertura COBRA resultante no cuenta como cobertura activa del empleador."
         }
       ]
     },
     {
       "heading": {
-        "en": "The 20-Employee Rule: When Your Employer Size Determines Your Medicare Timing",
-        "es": "La Regla de 20 Empleados: Cuando el Tamano del Empleador Determina su Calendario de Medicare"
+        "en": "Part D Drug Coverage and COBRA: What Counts as Creditable Coverage",
+        "es": "Cobertura de Medicamentos Parte D y COBRA: Que Cuenta como Cobertura Acreditable"
       },
       "paragraphs": [
         {
-          "en": "Employer size is the threshold variable in Medicare coordination. For employers with 20 or more employees, federal law requires the employer's group health plan to be the primary payer for active employees (and their spouses) who are Medicare-eligible. Medicare pays second. Under this setup, an active employee age 65 or older can legitimately decline or delay Part B enrollment because the employer plan is covering the gap. The 8-month Special Enrollment Period then applies when active employment or active group coverage ends, whichever is first. For employers with fewer than 20 employees, the rule flips. Medicare becomes primary at age 65, and the employer's plan pays second. Small-employer coverage does not allow Part B delay without penalty. If you turned 65 while working for a small employer (under 20 employees) and did not enroll in Part B, you may already have a late-enrollment penalty exposure that started on your 65th birthday. Confirm your employer's size with HR before making any Medicare enrollment decision.",
-          "es": "El tamaño del empleador es la variable umbral en la coordinación de Medicare. Para empleadores con 20 o más empleados, la ley federal requiere que el plan de salud grupal del empleador sea el pagador principal para los empleados activos (y sus cónyuges) que son elegibles para Medicare. Medicare paga segundo. Bajo esta configuración, un empleado activo de 65 años o más puede legítimamente rechazar o retrasar la inscripción en la Parte B porque el plan del empleador cubre la brecha. El Período de Inscripción Especial de 8 meses se aplica cuando termina el empleo activo o la cobertura grupal activa, lo que ocurra primero. Para empleadores con menos de 20 empleados, la regla se invierte. Medicare se vuelve primario a los 65 años, y el plan del empleador paga segundo."
+          "en": "Part D prescription drug coverage rules differ from Part B rules when COBRA is involved. For Part B, COBRA never counts for delay purposes. For Part D, COBRA drug coverage MAY count as creditable coverage if the plan actuary certifies it meets or exceeds the standard Part D benefit level. Most major group health plans that include drug coverage (including many COBRA plans) do qualify as creditable. Your employer plan administrator is required to send you a Notice of Creditable Coverage or Non-Creditable Coverage each fall, and again when your coverage changes. Keep that notice. If your COBRA drug coverage is creditable, you can delay Part D enrollment without penalty for as long as your COBRA drug coverage continues. Once COBRA ends, you have 63 days to enroll in a Part D plan without penalty.",
+          "es": "Las reglas de cobertura de medicamentos de la Parte D difieren de las reglas de la Parte B cuando se involucra COBRA. Para la Parte B, COBRA nunca cuenta para propositos de retraso. Para la Parte D, la cobertura de medicamentos COBRA PUEDE contar como cobertura acreditable si el actuario del plan certifica que cumple o supera el nivel de beneficio estandar de la Parte D. Su administrador del plan de empleador esta obligado a enviarle un Aviso de Cobertura Acreditable o No Acreditable cada otono. Si su cobertura de medicamentos COBRA es acreditable, puede retrasar la inscripcion en la Parte D sin penalizacion mientras dure su cobertura de medicamentos COBRA."
         },
         {
-          "en": "Spouse's employer coverage counts too. If you are 65 and your spouse under 65 is still actively employed at a company with 20 or more employees, and you are enrolled in that employer's group health plan as a dependent, you can delay Part B without penalty while that active coverage continues. When your spouse retires or loses that job, your 8-month SEP begins. This is one of the few scenarios where a person over 65 has a legitimate Part B delay that is not tied to their own employment. Social Security and Medicare confirm this in their joint guidance at Medicare.gov. Document the active-employment status in writing (ask HR for a letter confirming active coverage) so you can present proof to SSA when you enroll during the SEP.",
-          "es": "La cobertura del empleador del cónyuge también cuenta. Si tiene 65 años y su cónyuge menor de 65 todavía está empleado activamente en una empresa con 20 o más empleados, y está inscrito en el plan de salud grupal de ese empleador como dependiente, puede retrasar la Parte B sin multa mientras esa cobertura activa continúa. Cuando su cónyuge se jubile o pierda ese trabajo, comienza su SEP de 8 meses. Esta es una de las pocas situaciones en que una persona mayor de 65 años tiene un retraso legítimo de la Parte B que no está vinculado a su propio empleo."
+          "en": "Medicare Part D in 2026 has an out-of-pocket cap of $2,100 under the Inflation Reduction Act, a significant improvement from pre-IRA years. The $35 per month insulin cap also applies to Medicare Part D plans in 2026. Before deciding whether to keep COBRA drug coverage or switch to a Part D plan immediately, compare your specific drug list against Part D plan formularies at medicare.gov using the plan finder tool. Lower-income enrollees may qualify for Extra Help (Low-Income Subsidy), which caps Part D premiums near $0 and reduces copays to a few dollars per prescription. Apply for Extra Help at SSA.gov.",
+          "es": "La Parte D de Medicare en 2026 tiene un limite de gastos de bolsillo de $2,100 bajo la Ley de Reduccion de la Inflacion, una mejora significativa frente a anos anteriores a la IRA. El limite de $35 al mes para insulina tambien aplica a los planes de la Parte D de Medicare en 2026. Antes de decidir si mantener la cobertura de medicamentos COBRA o cambiar inmediatamente a un plan de la Parte D, compare su lista especifica de medicamentos con los formularios de planes de la Parte D en medicare.gov usando la herramienta de busqueda de planes."
         }
       ]
     },
     {
       "heading": {
-        "en": "Documents You Need to Enroll in Medicare Part B Under the Employer SEP",
-        "es": "Documentos Necesarios para Inscribirse en la Parte B de Medicare Bajo el SEP del Empleador"
+        "en": "The 8-Month Special Enrollment Period: When It Applies and When It Does Not",
+        "es": "El Periodo de Inscripcion Especial de 8 Meses: Cuando Aplica y Cuando No"
       },
       "paragraphs": [
         {
-          "en": "Enrolling in Part B under the employer-coverage Special Enrollment Period requires proof that you had creditable employer group health coverage and that coverage has now ended. Social Security typically asks for a letter from your former employer or former employer's insurance carrier on company letterhead confirming the dates your group health coverage was active and the date it ended. The CMS Form CMS-L564 (Request for Employment Information) is the standard form for this purpose. Your former employer completes Section B of the form to document your active coverage dates. Submit the completed CMS-L564 together with your Part B application (CMS Form CMS-40B). Without this documentation, SSA may classify your enrollment as a General Enrollment Period entry rather than an SEP entry, which affects when your coverage starts and whether a penalty applies.",
-          "es": "Inscribirse en la Parte B bajo el Período de Inscripción Especial de cobertura del empleador requiere prueba de que tuvo cobertura grupal acreditable del empleador y que esa cobertura ha terminado ahora. El Seguro Social generalmente solicita una carta de su ex empleador o aseguradora del ex empleador en papel membretado de la empresa confirmando las fechas en que su cobertura grupal estuvo activa y la fecha en que terminó. El Formulario CMS-L564 (Solicitud de Información de Empleo) es el formulario estándar para este propósito. Su ex empleador completa la Sección B del formulario para documentar sus fechas de cobertura activa. Envíe el CMS-L564 completado junto con su solicitud de la Parte B (Formulario CMS-40B)."
+          "en": "The Medicare Part B Special Enrollment Period for workers past 65 is 8 months, starting from the end of active employment or the end of the employer group health plan coverage, whichever comes first. This SEP is the protection that lets someone still working past 65 delay Part B without penalty. Understanding exactly when this SEP applies requires answering three questions: Are you (or your spouse) currently employed? Does the employer have 20 or more employees? Are you enrolled in the employer's active group health plan right now? All three must be yes for the delay to be penalty-free. Once employment ends, the 8-month SEP begins regardless of whether COBRA is elected. Electing COBRA does not restart the 8-month clock and does not give you a new SEP. If you let the 8-month SEP expire while on COBRA (thinking COBRA was extending your deadline), you will owe the late penalty.",
+          "es": "El Periodo de Inscripcion Especial de la Parte B de Medicare para trabajadores mayores de 65 es de 8 meses, comenzando desde el final del empleo activo o el final de la cobertura del plan de salud grupal del empleador, lo que ocurra primero. Este SEP es la proteccion que permite a alguien que trabaja mas alla de los 65 retrasar la Parte B sin penalizacion. Una vez que termina el empleo, el SEP de 8 meses comienza independientemente de si se elige COBRA. Elegir COBRA no reinicia el reloj de 8 meses y no le da un nuevo SEP. Si deja que el SEP de 8 meses expire mientras tiene COBRA (pensando que COBRA extendia su plazo), debera la multa tardea."
+        },
+        {
+          "en": "Retiree health plans operate under the same rule as COBRA for Medicare enrollment purposes: they do not count as active employer coverage and do not trigger the 8-month SEP. The same applies to coverage from a spouse's COBRA, severance-based coverage, and individual market plans. The only coverage that lets you delay Part B at 65 without penalty is an active group health plan from current employment at a covered employer (20 or more employees). Medicare.gov's working-past-65 section at medicare.gov/basics/get-started-with-medicare/medicare-basics/working-past-65 has the authoritative guidance. Your State Health Insurance Assistance Program (SHIP) offers free counseling to help you navigate enrollment decisions: find your SHIP at shiptacenter.org.",
+          "es": "Los planes de salud para jubilados operan bajo la misma regla que COBRA para propositos de inscripcion de Medicare: no cuentan como cobertura activa del empleador y no activan el SEP de 8 meses. Lo mismo aplica a la cobertura del COBRA de un conyugue, cobertura basada en indemnizacion, y planes del mercado individual. La unica cobertura que le permite retrasar la Parte B a los 65 sin penalizacion es un plan de salud grupal activo del empleo actual en un empleador cubierto (20 o mas empleados)."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "2026 Medicare Cost Summary for New Enrollees Turning 65 on COBRA",
+        "es": "Resumen de Costos de Medicare 2026 para Nuevos Inscritos que Cumplen 65 con COBRA"
+      },
+      "paragraphs": [
+        {
+          "en": "Understanding the 2026 Medicare cost structure helps you decide whether to keep COBRA as secondary coverage, add Medigap, or switch to Medicare Advantage. Part A (hospital insurance) is premium-free for people (or spouses) with 40 or more quarters of Medicare-covered work. Those with 30 to 39 quarters pay $311 per month. Those with fewer than 30 quarters pay $565 per month. Part A carries a $1,736 per-benefit-period hospital deductible in 2026. Part B (medical insurance) costs $202.90 per month at standard premium with a $283 annual deductible and 20% coinsurance after the deductible on most outpatient services. Higher-income enrollees pay IRMAA surcharges. Part D out-of-pocket is capped at $2,100 for 2026 under the Inflation Reduction Act. Medicare Advantage plans in 2026 have a federal in-network out-of-pocket maximum ceiling of $9,250. Medigap Plan G covers the Part B deductible, the Part A deductible, and Part B coinsurance, with premiums ranging from roughly $100 to $300 per month depending on age, location, and insurer.",
+          "es": "Comprender la estructura de costos de Medicare 2026 le ayuda a decidir si mantener COBRA como cobertura secundaria, agregar Medigap, o cambiar a Medicare Advantage. La Parte A (seguro hospitalario) es gratuita para personas (o conyuges) con 40 o mas trimestres de trabajo cubierto por Medicare. Quienes tienen 30 a 39 trimestres pagan $311 al mes. La Parte B (seguro medico) cuesta $202.90 al mes a prima estandar con un deducible anual de $283 y coseguro del 20% despues del deducible en la mayoria de servicios ambulatorios. Los gastos de bolsillo de la Parte D tienen un tope de $2,100 para 2026 bajo la Ley de Reduccion de la Inflacion. Los planes de Medicare Advantage en 2026 tienen un techo federal de gastos de bolsillo en red de $9,250."
         }
       ],
-      "list": [
-        {
-          "en": "CMS Form CMS-L564 (Request for Employment Information), completed by your employer or their insurance carrier",
-          "es": "Formulario CMS CMS-L564 (Solicitud de Información de Empleo), completado por su empleador o su aseguradora"
+      "table": {
+        "caption": {
+          "en": "2026 Medicare Standard Cost Reference: Part A, Part B, Part D",
+          "es": "Referencia de Costos Estandar de Medicare 2026: Partes A, B y D"
         },
-        {
-          "en": "CMS Form CMS-40B (Application for Enrollment in Part B), your Part B enrollment application",
-          "es": "Formulario CMS CMS-40B (Solicitud de Inscripción en la Parte B), su solicitud de inscripción en la Parte B"
+        "headers": {
+          "en": ["Coverage", "2026 Premium", "2026 Deductible / Cost-Sharing"],
+          "es": ["Cobertura", "Prima 2026", "Deducible / Costo Compartido 2026"]
         },
-        {
-          "en": "Letter from employer on company letterhead confirming active coverage dates and termination date",
-          "es": "Carta del empleador en papel membretado de la empresa confirmando fechas de cobertura activa y fecha de terminación"
+        "rows": [
+          {
+            "en": ["Part A (40+ quarters)", "$0/mo", "$1,736 per hospital benefit period"],
+            "es": ["Parte A (40+ trimestres)", "$0/mes", "$1,736 por periodo de beneficios hospitalarios"]
+          },
+          {
+            "en": ["Part A (30-39 quarters)", "$311/mo", "$1,736 per hospital benefit period"],
+            "es": ["Parte A (30-39 trimestres)", "$311/mes", "$1,736 por periodo de beneficios hospitalarios"]
+          },
+          {
+            "en": ["Part A (less than 30 quarters)", "$565/mo", "$1,736 per hospital benefit period"],
+            "es": ["Parte A (menos de 30 trimestres)", "$565/mes", "$1,736 por periodo de beneficios hospitalarios"]
+          },
+          {
+            "en": ["Part B (standard)", "$202.90/mo", "$283/yr deductible + 20% coinsurance"],
+            "es": ["Parte B (estandar)", "$202.90/mes", "Deducible $283/ano + coseguro del 20%"]
+          },
+          {
+            "en": ["Part D (varies by plan)", "$0 to $80/mo typical", "$2,100 annual OOP cap (IRA 2022)"],
+            "es": ["Parte D (varia segun plan)", "$0 a $80/mes tipico", "Tope anual de gastos de bolsillo $2,100 (IRA 2022)"]
+          },
+          {
+            "en": ["Medicare Advantage (Part C)", "$202.90/mo Part B + $0 to $50 plan premium (often $0)", "Federal MOOP ceiling $9,250 in-network (2026)"],
+            "es": ["Medicare Advantage (Parte C)", "$202.90/mes Parte B + $0 a $50 prima del plan (frecuentemente $0)", "Techo federal MOOP $9,250 en red (2026)"]
+          },
+          {
+            "en": ["Medigap Plan G (typical)", "$100 to $300/mo", "Covers Part B deductible, Part A deductible, Part B coinsurance"],
+            "es": ["Plan G Medigap (tipico)", "$100 a $300/mes", "Cubre deducible Parte B, deducible Parte A, coseguro Parte B"]
+          }
+        ],
+        "footnote": {
+          "en": "Source: CMS 2026 Medicare Parts A and B Premiums and Deductibles fact sheet. IRMAA surcharges apply to Part B and Part D for higher-income enrollees. Medicare Advantage plan premiums vary by carrier and county. Medigap premiums vary by state, age, and insurer.",
+          "es": "Fuente: Hoja informativa de CMS sobre primas y deducibles de las Partes A y B de Medicare 2026. Los recargos IRMAA aplican a las Partes B y D para inscritos con ingresos mas altos. Las primas de Medicare Advantage varian segun aseguradora y condado."
         },
-        {
-          "en": "Your Medicare card (showing Part A enrollment date if already enrolled)",
-          "es": "Su tarjeta de Medicare (mostrando la fecha de inscripción en la Parte A si ya está inscrito)"
-        },
-        {
-          "en": "Social Security number and proof of age (passport or birth certificate)",
-          "es": "Número de Seguro Social y prueba de edad (pasaporte o acta de nacimiento)"
-        },
-        {
-          "en": "COBRA election notice (as a secondary document showing the transition from active coverage, though COBRA itself is not creditable for the delay rule)",
-          "es": "Aviso de elección de COBRA (como documento secundario que muestra la transición desde cobertura activa, aunque COBRA en sí no es acreditable para la regla de retraso)"
-        }
-      ]
-    },
-    {
-      "heading": {
-        "en": "Medicare Costs in 2026 and What Drops After COBRA",
-        "es": "Costos de Medicare en 2026 y Lo Que Baja Despues de COBRA"
-      },
-      "paragraphs": [
-        {
-          "en": "Medicare Part A is premium-free for most people who worked at least 10 years (40 quarters) in Medicare-covered employment. Part A does carry a $1,736 per-benefit-period hospital deductible in 2026, but there is no monthly premium for most people. Part B costs $202.90 per month in 2026 (the standard premium; higher-income enrollees pay IRMAA surcharges on top). Part B has a $283 annual deductible in 2026 and then covers 80% of approved services after that, leaving a 20% coinsurance gap that Medigap or Medicare Advantage can fill. Compare this to COBRA: the average single-person COBRA premium for employer-sponsored coverage runs $400 to $900 per month in 2026 (102% of the full employer-plus-employee premium). Most people switching from COBRA to Medicare Part B see a significant reduction in monthly premiums, assuming they do not need the COBRA plan's specific provider network for ongoing care. The 2026 Medicare Advantage MOOP (maximum out-of-pocket) for in-network services is capped federally at $9,250, down from $9,350 in 2025. Original Medicare has no cap on out-of-pocket costs without Medigap, which is why Medigap enrollment during the guaranteed-issue window is critical.",
-          "es": "La Parte A de Medicare es gratuita para la mayoría de las personas que trabajaron al menos 10 años (40 trimestres) en empleo cubierto por Medicare. La Parte A lleva un deducible hospitalario de $1,736 por período de beneficios en 2026, pero no hay prima mensual para la mayoría de las personas. La Parte B cuesta $202.90 al mes en 2026 (la prima estándar; los inscritos de mayores ingresos pagan recargos IRMAA adicionales). La Parte B tiene un deducible anual de $283 en 2026 y luego cubre el 80% de los servicios aprobados después de eso, dejando una brecha de coseguro del 20% que Medigap o Medicare Advantage puede llenar. Compare esto con COBRA: la prima promedio de COBRA para una sola persona en cobertura patrocinada por el empleador oscila entre $400 y $900 al mes en 2026. La mayoría de las personas que cambian de COBRA a la Parte B de Medicare ven una reducción significativa en las primas mensuales."
-        }
-      ]
+        "source": "CMS 2026 Medicare Parts A and B Premiums and Deductibles; Medicare.gov plan finder; IRS Rev. Proc. 2025-19"
+      }
     }
   ],
+
+  "documentsNeeded": {
+    "en": [
+      "Social Security card and Medicare card (if you already have one)",
+      "Proof of prior employer coverage: COBRA election notice or Certificate of Creditable Coverage from former employer",
+      "Birth certificate or passport confirming your date of birth for Medicare enrollment at SSA.gov",
+      "Written Notice of Creditable Drug Coverage from your COBRA plan administrator (required if delaying Part D)",
+      "Recent W-2 or tax return to document work history for Part A premium determination",
+      "Letter from current or former employer confirming employment end date and group health plan coverage end date (needed if claiming 8-month SEP eligibility)",
+      "Medicare Summary Notice or IRMAA determination if already receiving Social Security income above standard thresholds"
+    ],
+    "es": [
+      "Tarjeta de Seguro Social y tarjeta de Medicare (si ya tiene una)",
+      "Prueba de cobertura anterior del empleador: aviso de eleccion de COBRA o Certificado de Cobertura Acreditable del ex empleador",
+      "Acta de nacimiento o pasaporte confirmando su fecha de nacimiento para la inscripcion en Medicare en SSA.gov",
+      "Aviso por escrito de Cobertura de Medicamentos Acreditable del administrador de su plan COBRA (requerido si retrasa la Parte D)",
+      "W-2 reciente o declaracion de impuestos para documentar el historial laboral para la determinacion de la prima de la Parte A",
+      "Carta del empleador actual o anterior confirmando la fecha de fin de empleo y la fecha de fin de cobertura del plan de salud grupal",
+      "Aviso de Resumen de Medicare o determinacion IRMAA si ya recibe ingresos del Seguro Social por encima de los umbrales estandar"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Applying for Medicare Part B late after assuming COBRA extended the enrollment deadline (results in permanent late enrollment penalty, not a denial, but adds permanent cost)",
+      "Missing the 8-month SEP window after active employment ended while on COBRA (the SEP starts from end of employment, not end of COBRA)",
+      "Failing to provide proof that drug coverage was creditable when attempting to avoid a Part D late penalty (non-creditable COBRA drug coverage triggers the penalty)",
+      "Attempting to claim the employer-plan delay SEP based on COBRA coverage rather than current active employment with a 20-employee plan",
+      "Assuming auto-enrollment in Medicare while on COBRA (auto-enrollment only happens for those already collecting Social Security or Railroad Retirement before turning 65)"
+    ],
+    "es": [
+      "Solicitar la Parte B de Medicare tarde asumiendo que COBRA extendio el plazo de inscripcion (resulta en multa permanente por inscripcion tardea, no en una denegacion, pero agrega costo permanente)",
+      "Perder la ventana SEP de 8 meses despues de que termino el empleo activo mientras tenia COBRA (el SEP comienza desde el final del empleo, no desde el final de COBRA)",
+      "No proporcionar prueba de que la cobertura de medicamentos era acreditable al intentar evitar una multa tardea de la Parte D (la cobertura de medicamentos COBRA no acreditable activa la multa)",
+      "Intentar reclamar el SEP de retraso del plan del empleador basado en cobertura COBRA en lugar de empleo activo actual con un plan de 20 empleados",
+      "Asumir la inscripcion automatica en Medicare mientras tiene COBRA (la inscripcion automatica solo ocurre para quienes ya cobran Seguro Social o Jubilacion del Ferrocarril antes de cumplir 65)"
+    ]
+  },
 
   "faqs": {
     "en": [
       {
-        "question": "Does COBRA count as creditable coverage to delay Medicare Part B?",
-        "answer": "No. COBRA is continuation coverage, not active employer group health coverage. Federal law only allows you to delay Medicare Part B without penalty if you are covered under an active employer group health plan due to your own or your spouse's current employment. COBRA begins after employment ends, so it does not meet this test. Your 8-month Special Enrollment Period for Part B starts when active employment ends, not when COBRA ends. Relying on COBRA to delay Part B is the most common reason people receive permanent Part B late-enrollment penalties."
+        "question": "Do I need to enroll in Medicare Part B if I have COBRA coverage after turning 65?",
+        "answer": "Yes, in almost every case. COBRA is not treated as active employer coverage under Medicare rules, so it does not let you delay Part B enrollment. Your 7-month Initial Enrollment Period (IEP) opens 3 months before your 65th birthday month and closes 3 months after. Miss it without a qualifying exception, and you face a 10% per year permanent penalty on your Part B premium. At the 2026 standard premium of $202.90 per month, two years of delay adds roughly $40 per month for the rest of your life. The only situation where you can delay Part B penalty-free is if you are currently employed at a company with 20 or more employees and enrolled in that active group health plan."
       },
       {
-        "question": "When exactly does my 8-month Medicare Part B Special Enrollment Period start?",
-        "answer": "The 8-month Special Enrollment Period begins the month after employer group health coverage ends or the month after active employment ends, whichever comes first. For example, if the last day of active employment is August 31, 2026, the SEP starts September 1, 2026 and ends April 30, 2027. This timeline does not change if you elect COBRA. If covered under a spouse's active employer plan (at a 20-plus-employee company), the SEP starts when the spouse's employment or coverage ends."
+        "question": "When exactly does my Medicare Initial Enrollment Period start if I am on COBRA?",
+        "answer": "Your Initial Enrollment Period (IEP) is based entirely on your 65th birthday, not on your COBRA start or end date. The IEP opens on the first day of the month that is 3 months before your birthday month and closes on the last day of the 3rd month after your birthday month. Example: if your birthday is November 20, 2026, your IEP runs August 1, 2026 through February 28, 2027. COBRA has no bearing on these dates. Enroll in the first 3 months of the IEP for Part B coverage to begin on your birthday month. Enroll later in the IEP and coverage starts the month after enrollment."
       },
       {
-        "question": "What is the Part B late-enrollment penalty if I miss my Medicare SEP?",
-        "answer": "The Part B late-enrollment penalty is 10% of the current standard Part B premium for each full 12-month period you could have had Part B but did not enroll. The penalty is permanent. In 2026, the standard Part B premium is $202.90 per month. A two-year delay adds 20%, or about $40.58 per month, forever. The penalty grows in dollar terms each year because it is recalculated against the current year's premium. Missing the SEP and waiting for the General Enrollment Period (January to March each year) also delays coverage start until July, creating additional months without Part B coverage."
+        "question": "What happens if I wait until my COBRA runs out to enroll in Medicare?",
+        "answer": "If your IEP already passed by the time your COBRA ends, you will need to wait for the Medicare General Enrollment Period (January 1 through March 31 each year), with Part B coverage starting July 1 of that year. You will also pay a permanent Part B late enrollment penalty of 10% for each 12-month period you were eligible but not enrolled. Additionally, if your COBRA drug coverage was not creditable, you will also owe a Part D late penalty. The only way to avoid these penalties is to enroll in Part B during your 7-month IEP or within the 8-month SEP that starts when active employer coverage ends."
       },
       {
-        "question": "Can I drop COBRA and enroll in Medicare Part B at any time?",
-        "answer": "Yes, but you must enroll in Part B within your 8-month Special Enrollment Period, which started when your active employment ended. If your SEP is still open, you can drop COBRA and enroll in Part B at any time before the SEP closes. Apply at SSA.gov or call Social Security at 1-800-772-1213 with your CMS-L564 form completed by your former employer. Do not wait. If your 8-month SEP has already expired, you must wait for the General Enrollment Period (January 1 to March 31) and will face a late-enrollment penalty plus a July 1 coverage start date."
+        "question": "Is COBRA drug coverage creditable for Medicare Part D?",
+        "answer": "Whether COBRA drug coverage counts for Part D delay depends on your specific plan. Unlike Part B rules, where COBRA never counts for delay, COBRA drug coverage CAN be creditable for Part D if the plan actuary certifies it meets or exceeds the standard Part D benefit. Your plan administrator is required to send you a Notice of Creditable or Non-Creditable Coverage each fall and when your coverage changes. Keep this notice. If it says creditable, you can delay Part D without penalty while COBRA drug coverage continues. Once COBRA ends, you have 63 days to enroll in a Part D plan without penalty. Contact your COBRA administrator directly if you did not receive the notice."
       },
       {
-        "question": "Does my employer's size matter for Medicare enrollment after retirement?",
-        "answer": "Yes, employer size is the critical variable. If your employer had 20 or more employees, their group health plan was required by law to be primary while you were actively employed, allowing a legitimate Part B delay. If your employer had fewer than 20 employees, Medicare was already primary at age 65 even while you were working, meaning you should have enrolled in Part B at 65 or during your Initial Enrollment Period. Small-employer coverage does not qualify as creditable employer coverage for the Part B delay rule. Contact HR or your insurance carrier to confirm your employer's size and how your plan coordinated with Medicare."
+        "question": "Can I keep COBRA alongside Medicare?",
+        "answer": "Yes. After you enroll in Medicare Parts A and B, you can keep your COBRA coverage running as secondary insurance for whatever time remains on your COBRA clock (up to 18 months from your qualifying event, or up to 36 months for certain events). Under Medicare Secondary Payer rules, Medicare pays first and COBRA pays second, potentially covering your Part A hospital deductible ($1,736 in 2026), your Part B 20% coinsurance, and your Part B deductible ($283 in 2026). Whether keeping COBRA as secondary is cost-effective compared to a Medigap plan depends on your COBRA premium, remaining COBRA months, and your expected healthcare use."
       },
       {
-        "question": "What if I already missed my Part B Special Enrollment Period while on COBRA?",
-        "answer": "If your 8-month SEP has expired, you must enroll during the General Enrollment Period, which runs January 1 through March 31 each year. Coverage under a GEP enrollment starts July 1. You will also face a permanent Part B late-enrollment penalty of 10% per 12-month period of delay. Contact your State Health Insurance Assistance Program (SHIP) for free counseling at shiptacenter.org. In rare cases, you may qualify for a Special Enrollment Period based on another qualifying event, such as losing COBRA coverage itself (though this is not a recognized Medicare SEP trigger on its own). File an appeal with SSA if you believe the delay was due to misinformation from your employer or a government agency."
+        "question": "What if I retired early and have been on COBRA for a year before turning 65?",
+        "answer": "Early retirement before 65 followed by COBRA is the most common scenario people face. If you retired before 65 and elected COBRA, your Medicare IEP opens on its normal schedule: 3 months before your 65th birthday month, the birthday month, and 3 months after. Your COBRA clock and Medicare IEP are completely independent of each other. Enroll in Medicare Parts A and B during your IEP. Once Medicare is active, it becomes your primary payer and COBRA becomes secondary for whatever COBRA time remains. Many people in this situation elect to keep COBRA as secondary through the end of their COBRA period, then switch to a Medigap or Medicare Advantage plan when COBRA expires."
       },
       {
-        "question": "Can I have both COBRA and Medicare at the same time?",
-        "answer": "Yes, but Medicare becomes your primary insurer and COBRA pays second. Once you are enrolled in Medicare, your COBRA plan cannot deny claims for services Medicare covers. However, carrying both is usually expensive and unnecessary. COBRA premiums average $400 to $900 per month for an individual in 2026, on top of the $202.90 Part B premium. Many people choose to drop COBRA once Medicare begins. Keep COBRA only if your current providers are not in any Medicare-accepting practice or you are mid-treatment with a specific specialist whose continuity of care requires the COBRA network."
+        "question": "Do I automatically get enrolled in Medicare at 65 if I am on COBRA?",
+        "answer": "No. Automatic enrollment in Medicare Parts A and B at 65 only occurs if you are already receiving Social Security or Railroad Retirement Board benefits before your 65th birthday. If you retired and are on COBRA but not yet collecting Social Security (which is common for people who delay claiming to age 67 or 70), you must actively enroll in Medicare. Apply at SSA.gov/medicare or call 1-800-772-1213. Most financial planners recommend delaying Social Security for the higher benefit, but this means Medicare enrollment is not automatic."
       },
       {
-        "question": "How do I apply for Medicare Part B under the employer-coverage Special Enrollment Period?",
-        "answer": "Submit CMS Form CMS-40B (Application for Enrollment in Part B) and CMS Form CMS-L564 (Request for Employment Information) to Social Security. Your former employer completes Section B of Form CMS-L564 to document active coverage dates. You can apply online at SSA.gov, by calling 1-800-772-1213, or at your local Social Security office. Bring or upload your Medicare card, proof of age, and the completed CMS-L564. Processing typically takes 2 to 4 weeks. Enroll as early as possible within the 8-month window so Part B coverage begins the month after you apply."
+        "question": "What is the Medicare General Enrollment Period and when do I use it?",
+        "answer": "The Medicare General Enrollment Period (GEP) runs January 1 through March 31 each year, with Part B coverage starting July 1 of the same year. The GEP is your fallback if you missed the 7-month IEP and do not qualify for a Special Enrollment Period. During the GEP, you can sign up for Part A and Part B. If you missed your IEP while on COBRA, call Social Security at 1-800-772-1213 to calculate your late penalty and confirm your GEP enrollment options. The penalty begins accruing from the month after your IEP ended, not from the date COBRA ends."
       }
     ],
     "es": [
       {
-        "question": "¿COBRA cuenta como cobertura acreditable para retrasar la Parte B de Medicare?",
-        "answer": "No. COBRA es cobertura de continuación, no cobertura grupal activa del empleador. La ley federal solo le permite retrasar la Parte B de Medicare sin multa si está cubierto bajo un plan de salud grupal activo del empleador debido al empleo actual suyo o de su cónyuge. COBRA comienza después de que termina el empleo, por lo que no cumple esta condición. Su Período de Inscripción Especial de 8 meses para la Parte B comienza cuando termina el empleo activo, no cuando vence COBRA. Confiar en COBRA para retrasar la Parte B es la razón más común por la que las personas reciben multas permanentes de inscripción tardía de la Parte B."
+        "question": "Necesito inscribirme en la Parte B de Medicare si tengo cobertura COBRA despues de cumplir 65?",
+        "answer": "Si, en casi todos los casos. COBRA no se considera cobertura activa del empleador bajo las reglas de Medicare, por lo que no le permite retrasar la inscripcion en la Parte B. Su Periodo de Inscripcion Inicial (IEP) de 7 meses se abre 3 meses antes del mes de su 65 cumpleanos y cierra 3 meses despues. Si lo pierde sin una excepcion calificada, enfrenta una multa permanente del 10% al ano en su prima de la Parte B. A la prima estandar de 2026 de $202.90 al mes, dos anos de retraso agrega aproximadamente $40 al mes por el resto de su vida. La unica situacion donde puede retrasar la Parte B sin penalizacion es si actualmente trabaja en una empresa con 20 o mas empleados e inscrito en ese plan de salud grupal activo."
       },
       {
-        "question": "¿Cuándo exactamente comienza mi Período de Inscripción Especial de 8 meses para la Parte B de Medicare?",
-        "answer": "Su Período de Inscripción Especial de 8 meses comienza el mes después de que termina su cobertura grupal del empleador o el mes después de que termina su empleo activo, lo que ocurra primero. Por ejemplo, si su último día de empleo activo es el 31 de agosto de 2026, su SEP comienza el 1 de septiembre de 2026 y termina el 30 de abril de 2027. Este calendario no cambia si elige COBRA. Si está cubierto bajo el plan activo del empleador de su cónyuge (en una empresa de 20 o más empleados), el SEP comienza cuando termina el empleo o la cobertura de su cónyuge."
+        "question": "Cuando exactamente comienza mi Periodo de Inscripcion Inicial de Medicare si tengo COBRA?",
+        "answer": "Su Periodo de Inscripcion Inicial (IEP) se basa completamente en su 65 cumpleanos, no en la fecha de inicio o fin de su COBRA. El IEP se abre el primer dia del mes que es 3 meses antes del mes de su cumpleanos y cierra el ultimo dia del 3er mes despues. Ejemplo: si su cumpleanos es el 20 de noviembre de 2026, su IEP va del 1 de agosto de 2026 al 28 de febrero de 2027. COBRA no tiene ninguna influencia en estas fechas. Inscribase en los primeros 3 meses del IEP para que la cobertura de la Parte B comience en el mes de su cumpleanos."
       },
       {
-        "question": "¿Cuál es la multa por inscripción tardía de la Parte B si pierdo mi SEP de Medicare?",
-        "answer": "La multa por inscripción tardía de la Parte B es el 10% de la prima estándar actual de la Parte B por cada período completo de 12 meses en que podría haber tenido la Parte B pero no se inscribió. La multa es permanente. En 2026, la prima estándar de la Parte B es $202.90 al mes. Un retraso de dos años agrega el 20%, o aproximadamente $40.58 al mes, para siempre. La multa crece en términos de dólares cada año porque se recalcula contra la prima del año actual."
+        "question": "Que sucede si espero hasta que se acabe mi COBRA para inscribirme en Medicare?",
+        "answer": "Si su IEP ya paso para cuando termina su COBRA, necesitara esperar el Periodo de Inscripcion General de Medicare (del 1 de enero al 31 de marzo cada ano), con cobertura de la Parte B comenzando el 1 de julio de ese ano. Tambien pagara una multa permanente por inscripcion tardea de la Parte B del 10% por cada periodo de 12 meses que fue elegible pero no estuvo inscrito. Adicionalmente, si su cobertura de medicamentos COBRA no era acreditable, tambien debera una multa tardea de la Parte D."
       },
       {
-        "question": "¿Puedo cancelar COBRA e inscribirme en la Parte B de Medicare en cualquier momento?",
-        "answer": "Sí, pero debe inscribirse en la Parte B dentro de su Período de Inscripción Especial de 8 meses, que comenzó cuando terminó su empleo activo. Si su SEP todavía está abierto, puede cancelar COBRA e inscribirse en la Parte B en cualquier momento antes de que el SEP cierre. Solicite en SSA.gov o llame al Seguro Social al 1-800-772-1213 con su formulario CMS-L564 completado por su ex empleador. No espere. Si su SEP de 8 meses ya expiró, debe esperar al Período de Inscripción General (1 de enero al 31 de marzo) y enfrentará una multa de inscripción tardía más una fecha de inicio de cobertura del 1 de julio."
+        "question": "La cobertura de medicamentos COBRA es acreditable para la Parte D de Medicare?",
+        "answer": "Depende de su plan COBRA especifico. A diferencia de las reglas de la Parte B (donde COBRA nunca cuenta para retrasar), la cobertura de medicamentos COBRA PUEDE ser acreditable para la Parte D si el actuario del plan certifica que cumple o supera el beneficio estandar de la Parte D. Su administrador del plan esta obligado a enviarle un Aviso de Cobertura Acreditable o No Acreditable. Guardelo. Si dice acreditable, puede retrasar la Parte D sin penalizacion mientras continua la cobertura de medicamentos COBRA. Una vez que COBRA termine, tiene 63 dias para inscribirse en un plan de la Parte D sin penalizacion."
       },
       {
-        "question": "¿Importa el tamaño de mi empleador para la inscripción en Medicare después de la jubilación?",
-        "answer": "Sí, el tamaño del empleador es la variable crítica. Si su empleador tenía 20 o más empleados, su plan de salud grupal era requerido por ley para ser primario mientras estaba empleado activamente, permitiendo un retraso legítimo de la Parte B. Si su empleador tenía menos de 20 empleados, Medicare ya era primario a los 65 años incluso mientras trabajaba, lo que significa que debería haberse inscrito en la Parte B a los 65 años. La cobertura de empleadores pequeños no califica como cobertura acreditable del empleador para la regla de retraso de la Parte B."
+        "question": "Puedo mantener COBRA junto con Medicare?",
+        "answer": "Si. Despues de inscribirse en las Partes A y B de Medicare, puede mantener su cobertura COBRA como seguro secundario por el tiempo que reste en su reloj COBRA (hasta 18 meses desde su evento calificador, o hasta 36 meses para ciertos eventos). Bajo las reglas del Pagador Secundario de Medicare, Medicare paga primero y COBRA paga segundo, potencialmente cubriendo su deducible hospitalario de la Parte A ($1,736 en 2026), su coseguro del 20% de la Parte B, y su deducible de la Parte B ($283 en 2026)."
       },
       {
-        "question": "¿Qué pasa si ya perdí mi Período de Inscripción Especial de la Parte B mientras estaba en COBRA?",
-        "answer": "Si su SEP de 8 meses ha expirado, debe inscribirse durante el Período de Inscripción General, que va del 1 de enero al 31 de marzo de cada año. La cobertura bajo una inscripción del PIG comienza el 1 de julio. También enfrentará una multa permanente de inscripción tardía de la Parte B del 10% por cada período de 12 meses de retraso. Comuníquese con su Programa de Asistencia de Seguro de Salud del Estado (SHIP) para asesoramiento gratuito en shiptacenter.org."
+        "question": "Que pasa si me jubile anticipadamente y he tenido COBRA por un ano antes de cumplir 65?",
+        "answer": "Este es el escenario mas comun para COBRA a los 65. Si se jubilo antes de los 65 y eligio COBRA, su IEP de Medicare se abre en su programa normal (3 meses antes del mes de su 65 cumpleanos). Su reloj COBRA y el IEP de Medicare son completamente independientes. Debe inscribirse en las Partes A y B de Medicare durante su IEP. Una vez que Medicare este activo, se convierte en su pagador primario y COBRA en secundario por el tiempo COBRA que reste."
       },
       {
-        "question": "¿Puedo tener COBRA y Medicare al mismo tiempo?",
-        "answer": "Sí, pero Medicare se convierte en su aseguradora principal y COBRA paga segundo. Una vez inscrito en Medicare, su plan COBRA no puede rechazar reclamaciones por servicios que cubre Medicare. Sin embargo, tener ambos generalmente es costoso e innecesario. Las primas de COBRA promedian $400 a $900 al mes para un individuo en 2026, además de la prima de la Parte B de $202.90. Muchas personas eligen cancelar COBRA una vez que comienza Medicare. Mantenga COBRA solo si sus proveedores actuales no aceptan Medicare o está en tratamiento con un especialista cuya continuidad de atención requiere la red de COBRA."
+        "question": "Me inscriben automaticamente en Medicare a los 65 si tengo COBRA?",
+        "answer": "No. La inscripcion automatica en las Partes A y B de Medicare a los 65 solo ocurre si ya recibe beneficios del Seguro Social o de la Junta de Jubilacion del Ferrocarril antes de su 65 cumpleanos. Si se jubilo y tiene COBRA pero aun no cobra el Seguro Social (lo cual es comun para personas que retrasan la reclamacion hasta los 67 o 70 anos), debe inscribirse activamente en Medicare. Solicite en SSA.gov/medicare o llame al 1-800-772-1213."
       },
       {
-        "question": "¿Cómo solicito la Parte B de Medicare bajo el Período de Inscripción Especial de cobertura del empleador?",
-        "answer": "Envíe el Formulario CMS CMS-40B (Solicitud de Inscripción en la Parte B) y el Formulario CMS CMS-L564 (Solicitud de Información de Empleo) al Seguro Social. Su ex empleador completa la Sección B del Formulario CMS-L564 para documentar las fechas de cobertura activa. Puede solicitar en línea en SSA.gov, llamando al 1-800-772-1213, o en su oficina local del Seguro Social. Traiga o cargue su tarjeta de Medicare, prueba de edad y el CMS-L564 completado. El procesamiento generalmente toma de 2 a 4 semanas."
+        "question": "Que es el Periodo de Inscripcion General de Medicare y cuando se usa?",
+        "answer": "El Periodo de Inscripcion General (GEP) de Medicare corre del 1 de enero al 31 de marzo de cada ano, con cobertura de la Parte B comenzando el 1 de julio del mismo ano. El GEP es su alternativa si perdio el IEP de 7 meses y no califica para un Periodo de Inscripcion Especial. Si perdio su IEP mientras tenia COBRA, llame al Seguro Social al 1-800-772-1213 para calcular su multa tardea y confirmar sus opciones de inscripcion en el GEP."
       }
     ]
   },
@@ -384,6 +466,13 @@
     },
     {
       "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Limites de Ingresos Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
         "en": "Federal Poverty Level 2026",
         "es": "Nivel Federal de Pobreza 2026"
       },
@@ -391,125 +480,61 @@
     },
     {
       "label": {
-        "en": "Medicaid Income Limits 2026",
-        "es": "Límites de Ingresos de Medicaid 2026"
+        "en": "Medicare Annual Election Period",
+        "es": "Periodo de Eleccion Anual de Medicare"
       },
-      "href": "/medicaid-income-limits"
-    },
-    {
-      "label": {
-        "en": "Medicare Advantage vs Original Medicare",
-        "es": "Medicare Advantage vs Medicare Original"
-      },
-      "href": "/qa/medicare-advantage-vs-original-medicare"
+      "href": "/event/medicare-aep"
     }
   ],
 
   "sources": [
     {
-      "name": "Medicare.gov: Employer or union coverage and Medicare",
-      "url": "https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/employer-union-coverage-and-medicare",
+      "name": "Medicare.gov: COBRA Coverage and Medicare",
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/working-past-65/cobra-coverage",
       "note": {
-        "en": "Official Medicare guidance on when employer coverage allows Part B delay and when COBRA and retiree coverage do not qualify.",
-        "es": "Guía oficial de Medicare sobre cuándo la cobertura del empleador permite retrasar la Parte B y cuándo COBRA y la cobertura para jubilados no califican."
-      }
-    },
-    {
-      "name": "Social Security Administration: Medicare Special Enrollment Period",
-      "url": "https://www.ssa.gov/pubs/EN-05-10041.pdf",
-      "note": {
-        "en": "SSA publication explaining the 8-month employer-coverage SEP, required forms CMS-L564 and CMS-40B, and how COBRA interacts with Part B enrollment.",
-        "es": "Publicación de la SSA que explica el SEP de 8 meses de cobertura del empleador, los formularios requeridos CMS-L564 y CMS-40B, y cómo COBRA interactúa con la inscripción en la Parte B."
+        "en": "Official Medicare guidance confirming COBRA does not count as active employer coverage for purposes of delaying Part B enrollment, and the 8-month SEP rules.",
+        "es": "Guia oficial de Medicare confirmando que COBRA no cuenta como cobertura activa del empleador para retrasar la inscripcion en la Parte B, y las reglas del SEP de 8 meses."
       }
     },
     {
       "name": "CMS: 2026 Medicare Parts A and B Premiums and Deductibles",
-      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-and-deductibles",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
       "note": {
-        "en": "Source for 2026 Part B premium ($202.90), Part B deductible ($283), Part A hospital deductible ($1,736), and IRMAA thresholds.",
-        "es": "Fuente de la prima de la Parte B 2026 ($202.90), deducible de la Parte B ($283), deducible hospitalario de la Parte A ($1,736) y umbrales de IRMAA."
+        "en": "Source for 2026 Part B standard premium ($202.90/mo), Part B deductible ($283), Part A hospital deductible ($1,736), and Part A premium tiers for those with fewer qualifying quarters.",
+        "es": "Fuente de la prima estandar de la Parte B 2026 ($202.90/mes), deducible de la Parte B ($283), deducible hospitalario de la Parte A ($1,736), y niveles de prima de la Parte A."
       }
     },
     {
-      "name": "Medicare.gov: Part B late enrollment penalties",
+      "name": "Social Security Administration: Apply for Medicare",
+      "url": "https://www.ssa.gov/medicare/sign-up",
+      "note": {
+        "en": "The enrollment portal for Medicare Parts A and B for people not automatically enrolled. Contains IEP and SEP enrollment instructions.",
+        "es": "El portal de inscripcion para las Partes A y B de Medicare para personas que no se inscriben automaticamente. Contiene instrucciones del IEP y SEP."
+      }
+    },
+    {
+      "name": "Medicare.gov: Avoid Late Enrollment Penalties",
       "url": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
       "note": {
-        "en": "Official explanation of the 10% per 12-month period Part B late-enrollment penalty, how it compounds, and the General Enrollment Period as a fallback.",
-        "es": "Explicación oficial de la multa de inscripción tardía de la Parte B del 10% por período de 12 meses, cómo se acumula y el Período de Inscripción General como alternativa."
+        "en": "Official guidance on Part B 10% per year lifetime penalty and Part D 1% per month lifetime penalty, including how the penalty is calculated and when it begins.",
+        "es": "Guia oficial sobre la multa permanente del 10% al ano de la Parte B y la multa permanente del 1% al mes de la Parte D, incluyendo como se calcula y cuando comienza."
       }
     },
     {
-      "name": "IRS: COBRA Continuation Coverage Frequently Asked Questions",
-      "url": "https://www.irs.gov/affordable-care-act/cobra-continuation-coverage-frequently-asked-questions",
+      "name": "U.S. Department of Labor: COBRA Continuation Health Coverage FAQs",
+      "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-health-coverage-workers",
       "note": {
-        "en": "IRS guidance on COBRA eligibility, cost rules (102% of full premium), 18 to 36 month duration, and interaction with other coverage.",
-        "es": "Guía del IRS sobre elegibilidad de COBRA, reglas de costo (102% de la prima completa), duración de 18 a 36 meses e interacción con otra cobertura."
+        "en": "DOL guidance on COBRA qualifying events, election windows, duration, and premium rules including the 102% of full premium cost rule.",
+        "es": "Guia del DOL sobre eventos calificadores de COBRA, ventanas de eleccion, duracion, y reglas de prima incluyendo la regla del 102% del costo de prima completa."
       }
     },
     {
-      "name": "KFF: Medicare Secondary Payer and Employer Coverage Coordination",
-      "url": "https://www.kff.org/medicare/issue-brief/medicare-and-employer-coverage-coordination/",
+      "name": "KFF: Medicare Enrollment Deadlines and Penalties",
+      "url": "https://www.kff.org/medicare/fact-sheet/medicare-enrollment-deadlines-and-late-enrollment-penalties/",
       "note": {
-        "en": "KFF analysis of Medicare Secondary Payer rules, employer size thresholds, and common enrollment mistakes for people approaching 65 with employer coverage.",
-        "es": "Análisis de KFF de las reglas del Pagador Secundario de Medicare, umbrales de tamaño del empleador y errores comunes de inscripción para personas que se acercan a los 65 con cobertura del empleador."
+        "en": "KFF analysis of Medicare enrollment periods, late penalty calculation, and the common mistake of relying on COBRA to delay Part B enrollment.",
+        "es": "Analisis de KFF de los periodos de inscripcion de Medicare, calculo de la multa tardea, y el error comun de depender de COBRA para retrasar la inscripcion en la Parte B."
       }
     }
-  ],
-
-  "documentsNeeded": {
-    "en": [
-      "CMS Form CMS-L564 (Request for Employment Information), completed by your former employer confirming your active group health coverage dates and termination date",
-      "CMS Form CMS-40B (Application for Enrollment in Medicare Part B), your Part B enrollment form submitted to Social Security",
-      "Medicare card (showing Part A enrollment, if already enrolled; most people get automatic Part A at 65 based on Social Security record)",
-      "Proof of age: U.S. passport, birth certificate, or other government-issued ID",
-      "Social Security number",
-      "COBRA election notice and premium payment records (as secondary documentation of the transition from active coverage)",
-      "Letter from employer on company letterhead confirming the number of employees and your active coverage period (backup to the CMS-L564 if the form is delayed)"
-    ],
-    "es": [
-      "Formulario CMS CMS-L564 (Solicitud de Información de Empleo), completado por su ex empleador confirmando las fechas de su cobertura grupal activa y la fecha de terminación",
-      "Formulario CMS CMS-40B (Solicitud de Inscripción en la Parte B de Medicare), su formulario de inscripción en la Parte B enviado al Seguro Social",
-      "Tarjeta de Medicare (mostrando la inscripción en la Parte A, si ya está inscrito; la mayoría obtiene la Parte A automáticamente a los 65 según el registro del Seguro Social)",
-      "Prueba de edad: pasaporte de EE.UU., acta de nacimiento, u otra identificación emitida por el gobierno",
-      "Número de Seguro Social",
-      "Aviso de elección de COBRA y registros de pago de primas (como documentación secundaria de la transición desde cobertura activa)",
-      "Carta del empleador en papel membretado confirmando el número de empleados y su período de cobertura activa (respaldo al CMS-L564 si el formulario se retrasa)"
-    ]
-  },
-
-  "commonDenialReasons": {
-    "en": [
-      "Missing the 8-month Special Enrollment Period by relying on COBRA to extend the window (COBRA does not extend the SEP; the clock starts at employment end, not COBRA expiration)",
-      "Failing to submit CMS Form CMS-L564 with the Part B application, causing SSA to treat the enrollment as a General Enrollment Period entry with a penalty rather than an SEP entry",
-      "Former employer with fewer than 20 employees: small-employer coverage does not qualify for the Part B delay rule, so the SEP argument is invalid and a penalty applies from age 65",
-      "Retiree health coverage or VA coverage mistakenly treated as active employer coverage for the Part B delay rule (neither qualifies)",
-      "Enrolling during the correct SEP window but missing the Medigap guaranteed-issue window by not enrolling in Medigap within 6 months of Part B start date"
-    ],
-    "es": [
-      "Perder el Período de Inscripción Especial de 8 meses al confiar en COBRA para extender la ventana (COBRA no extiende el SEP; el reloj comienza al final del empleo, no al vencimiento de COBRA)",
-      "No presentar el Formulario CMS CMS-L564 con la solicitud de la Parte B, lo que hace que la SSA trate la inscripción como una entrada del Período de Inscripción General con una multa en lugar de una entrada del SEP",
-      "Ex empleador con menos de 20 empleados: la cobertura de empleadores pequeños no califica para la regla de retraso de la Parte B, por lo que el argumento del SEP es inválido y se aplica una multa desde los 65 años",
-      "Cobertura de salud para jubilados o cobertura de VA tratada erróneamente como cobertura activa del empleador para la regla de retraso de la Parte B (ninguna califica)",
-      "Inscribirse durante la ventana SEP correcta pero perder la ventana de emisión garantizada de Medigap al no inscribirse en Medigap dentro de los 6 meses de la fecha de inicio de la Parte B"
-    ]
-  },
-
-  "topicCluster": "event-medicare-iep",
-  "keyTerms": {
-    "en": [
-      "COBRA after 65 Medicare Part B",
-      "Medicare Part B enrollment after retirement 2026",
-      "8-month Medicare Special Enrollment Period employer coverage",
-      "COBRA vs Medicare after 65",
-      "Medicare Part B late enrollment penalty COBRA"
-    ],
-    "es": [
-      "COBRA despues de 65 Parte B Medicare",
-      "inscripcion Parte B Medicare despues jubilacion 2026",
-      "periodo inscripcion especial 8 meses cobertura empleador",
-      "COBRA vs Medicare despues de 65"
-    ]
-  },
-  "isLighthouse": false,
-  "isDeprecated": false
+  ]
 }

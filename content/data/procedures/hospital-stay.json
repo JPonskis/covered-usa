@@ -1,413 +1,470 @@
 {
   "slug": "hospital-stay",
   "procedureName": {
-    "en": "Hospital Stay (Inpatient Admission)",
-    "es": "Hospitalización (Ingreso Hospitalario)"
+    "en": "Hospital Stay",
+    "es": "Hospitalización"
   },
   "shortName": {
     "en": "Hospital Stay",
     "es": "Hospitalización"
   },
-  "procedureType": "Therapeutic",
+  "procedureType": "Diagnostic",
   "medicalSpecialty": "Hospital Medicine",
-  "lastUpdated": "2026-06-06",
+  "lastUpdated": "2026-06-07",
   "ctaTarget": "analyzer",
   "readingTime": "10 min read",
   "hcpcsCodes": [],
+  "topicCluster": "procedure-cost",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "keyTerms": {
+    "en": [
+      "hospital stay cost without insurance",
+      "hospital stay cost without insurance 2026",
+      "how much does a hospital stay cost per day",
+      "hospital stay good faith estimate",
+      "hospital inpatient cost cash pay 2026"
+    ],
+    "es": [
+      "costo de hospitalizacion sin seguro",
+      "costo de hospitalizacion sin seguro 2026",
+      "cuanto cuesta una hospitalizacion",
+      "estimacion de buena fe hospitalizacion"
+    ]
+  },
   "meta": {
     "title": {
-      "en": "Hospital Stay Cost Per Day 2026: Inpatient Pricing | CoveredUSA",
-      "es": "Costo de Hospitalización por Día 2026: Precios | CoveredUSA"
+      "en": "Hospital Stay Cost Per Day in 2026 | CoveredUSA",
+      "es": "Costo de Hospitalización por Día 2026 | CoveredUSA"
     },
     "description": {
-      "en": "Hospital stay cost in 2026: $3,000 to $4,800/day without insurance. Medicare Part A deductible $1,736. ICU vs med-surg rates, Good Faith Estimate rights.",
-      "es": "Costo de hospitalización 2026: $3,000 a $4,800/día sin seguro. Deducible Medicare Parte A $1,736. UCI vs médico-quirúrgico y Estimación de Buena Fe."
+      "en": "Hospital stay costs $2,500 to $10,000+ per day in 2026 without insurance. Medicare Part A deductible is $1,736. Compare inpatient costs by type and site.",
+      "es": "Hospitalización cuesta $2,500 a $10,000+ por día en 2026 sin seguro. Deducible Medicare Parte A es $1,736. Compare costos por tipo de servicio."
     }
   },
   "hero": {
     "h1": {
       "en": "How Much Does a Hospital Stay Cost Per Day in 2026?",
-      "es": "¿Cuánto cuesta una hospitalización por día en 2026?"
+      "es": "¿Cuánto Cuesta una Hospitalización por Día en 2026?"
     },
     "subhero": {
-      "en": "Without insurance, a hospital inpatient stay costs an average of $3,297 per day nationally in 2026, based on KFF analysis of AHA hospital survey data. A typical 5-day stay runs $16,500 to $20,000 at chargemaster rates before any self-pay discount. The largest cost driver is the type of unit (medical-surgical vs ICU), hospital ownership, and geography, with California averaging $4,744 per day versus Mississippi at $1,401.",
-      "es": "Sin seguro, una hospitalización cuesta en promedio $3,297 por día a nivel nacional en 2026, según el análisis de KFF de datos de la Asociación Americana de Hospitales. Una estadía típica de 5 días cuesta entre $16,500 y $20,000 a precios de lista antes de cualquier descuento para autopago. El mayor factor de costo es el tipo de unidad (médico-quirúrgico vs UCI), la titularidad del hospital y la geografía."
+      "en": "A hospital inpatient stay costs $2,500 to $10,000 or more per day without insurance in 2026, with a national average of roughly $3,300 per adjusted inpatient day. The five-day average stay totals $12,000 to $50,000 before insurer negotiations. Site of service, service type (medical vs. surgical vs. ICU), and geographic market are the three largest cost drivers.",
+      "es": "Una hospitalización cuesta entre $2,500 y $10,000 o más por día sin seguro en 2026, con un promedio nacional de aproximadamente $3,300 por día ajustado de hospitalización. La estadía promedio de cinco días suma entre $12,000 y $50,000 antes de negociaciones del seguro. El tipo de servicio (médico, quirúrgico o UCI) y el mercado geográfico son los factores de costo más importantes."
     }
   },
   "quickAnswer": {
-    "en": "As of 2026, the average hospital inpatient stay costs $3,297 per day nationally without insurance, or roughly $16,700 for the U.S. median stay length of 5.4 days (KFF 2024 AHA data). The range spans from about $5,000 for a short uncomplicated admission at a rural community hospital to $50,000 or more for a multi-day stay in an intensive care unit at a major academic medical center. Under Medicare Part A in 2026, beneficiaries pay a $1,736 deductible per benefit period and $0 per day for days 1 through 60; days 61 through 90 cost $434 per day. Uninsured patients have the right to request a written Good Faith Estimate before admission for any scheduled procedure under the No Surprises Act (effective January 1, 2022).",
-    "es": "A partir de 2026, la hospitalización promedio cuesta $3,297 por día a nivel nacional sin seguro, o aproximadamente $16,700 para la duración media de estadía en EE.UU. de 5.4 días (datos KFF 2024 AHA). El rango oscila entre $5,000 para una admisión corta sin complicaciones en un hospital comunitario rural hasta $50,000 o más para una estadía de varios días en una unidad de cuidados intensivos en un centro médico académico. Bajo Medicare Parte A en 2026, los beneficiarios pagan un deducible de $1,736 por período de beneficio y $0 por día para los días 1 al 60; los días 61 al 90 cuestan $434 por día."
+    "en": "In 2026, a hospital inpatient stay costs roughly $2,500 to $10,000 per day without insurance, with the national average expense per adjusted inpatient day at $3,297 (2024 KFF data, adjusted for 2026). Under Medicare Part A, beneficiaries pay a $1,736 deductible for days 1 through 60 in a benefit period, then $434 per day for days 61 through 90, with no additional daily charge for the first 60 days. Uninsured patients have the right to a written Good Faith Estimate before any scheduled inpatient admission under the No Surprises Act. Hospital charity-care programs and financial assistance policies can reduce bills by 40 to 100 percent for qualifying low-income patients.",
+    "es": "En 2026, una hospitalización cuesta aproximadamente $2,500 a $10,000 por día sin seguro, con un gasto promedio nacional de $3,297 por día ajustado de hospitalización (datos KFF 2024, ajustados para 2026). Bajo Medicare Parte A, los beneficiarios pagan un deducible de $1,736 por los días 1 al 60 en un período de beneficios, luego $434 por día para los días 61 al 90. Los pacientes sin seguro tienen derecho a una Estimación de Buena Fe escrita antes de cualquier hospitalización programada bajo la Ley de No Sorpresas. Los programas de asistencia benéfica hospitalaria pueden reducir las facturas entre un 40 y un 100 por ciento para pacientes de bajos ingresos calificados."
   },
   "pricing": {
-    "nationalMedian": 16700,
+    "nationalMedian": 15000,
     "nationalLow": 5000,
     "nationalHigh": 50000,
-    "medicarePfsRate": 13600,
-    "medicareCoinsurancePct": 0,
+    "medicarePfsRate": 1736,
+    "medicareCoinsurancePct": 20,
     "partBDeductibleYear": 2026,
     "partBDeductibleAmount": 283
   },
   "introParagraphs": [
     {
-      "en": "Hospital inpatient admissions are the single largest category of U.S. healthcare spending, accounting for roughly 30 percent of all personal health care expenditures. About 36 million inpatient stays occur each year in American hospitals, with an average length of 5.4 days. The cost of that stay varies enormously by diagnosis, hospital type, geography, and whether the patient has insurance coverage. KFF analysis of 2024 American Hospital Association survey data puts the national average at $3,297 per adjusted inpatient day, but that figure masks a range from $1,401 per day in Mississippi to $4,744 per day in California. For uninsured patients, the bill arrives at or near full chargemaster rates unless the patient actively requests a self-pay discount or qualifies for the hospital's financial assistance program.",
-      "es": "Las hospitalizaciones de pacientes internados son la categoría individual más grande de gastos de atención médica en EE.UU., representando aproximadamente el 30 por ciento de todos los gastos de atención médica personal. Alrededor de 36 millones de hospitalizaciones ocurren cada año en hospitales estadounidenses, con una duración media de 5.4 días. El costo de esa estadía varía enormemente según el diagnóstico, el tipo de hospital, la geografía y si el paciente tiene cobertura de seguro. El análisis de KFF de datos de la Encuesta 2024 de la AHA sitúa el promedio nacional en $3,297 por día de internación ajustado, pero esa cifra oculta un rango desde $1,401 por día en Mississippi hasta $4,744 por día en California."
+      "en": "A hospital inpatient stay is one of the most expensive single healthcare events a patient can face. According to KFF State Health Facts, the national average hospital expense per adjusted inpatient day reached $3,297 in 2024, with California hospitals averaging $4,744 per day and Mississippi hospitals averaging $1,401 per day. Adjusted for the 2.6 percent FY 2026 Medicare IPPS rate increase, the 2026 cost benchmark sits at approximately $3,383 per adjusted inpatient day for the national midpoint. For a typical five-day stay, billed charges before insurer discounts range from $12,000 to $50,000 depending on the type of admission, the service line, and the geographic market.",
+      "es": "Una hospitalización es uno de los eventos de salud más costosos que puede enfrentar un paciente. Según los Datos Estatales de Salud de KFF, el gasto promedio nacional del hospital por día ajustado de hospitalización alcanzó $3,297 en 2024, con hospitales de California promediando $4,744 por día y hospitales de Mississippi promediando $1,401 por día. Para la estadía promedio de cinco días, los cargos facturados antes de los descuentos del seguro van desde $12,000 hasta $50,000 según el tipo de ingreso, la línea de servicio y el mercado geográfico."
     },
     {
-      "en": "One of the most consequential and least understood billing distinctions in the U.S. hospital system is the difference between inpatient status and observation status. Inpatient admission triggers Medicare Part A coverage, meaning the patient pays a single $1,736 deductible per benefit period (2026) and $0 per day for the first 60 days. Observation status, by contrast, is billed as outpatient care under Medicare Part B, meaning the patient faces 20 percent coinsurance on each separately billed service plus the 2026 Part B deductible of $283. Perhaps more importantly, a patient kept in observation status does not qualify for Medicare-covered skilled nursing facility (SNF) care afterward, because SNF coverage requires a prior three-day qualifying inpatient stay. The 2015 NOTICE Act requires hospitals to notify Medicare beneficiaries within 36 hours when they are placed on observation status.",
-      "es": "Una de las distinciones de facturación más importantes y menos comprendidas en el sistema hospitalario de EE.UU. es la diferencia entre el estatus de paciente internado y el estatus de observación. La admisión como paciente internado activa la cobertura de Medicare Parte A, lo que significa que el paciente paga un deducible único de $1,736 por período de beneficio (2026) y $0 por día durante los primeros 60 días. El estatus de observación, por el contrario, se factura como atención ambulatoria bajo Medicare Parte B, lo que significa que el paciente enfrenta un coseguro del 20 por ciento en cada servicio facturado por separado más el deducible de la Parte B 2026 de $283."
+      "en": "Medicare Part A covers inpatient hospital stays under the Diagnosis-Related Group (DRG) system, in which CMS pays a single bundled amount per admission based on the principal diagnosis. Medicare beneficiaries owe the 2026 Part A deductible of $1,736 for the first 60 days of a hospital stay in a benefit period, and $434 per day for days 61 through 90. For a straightforward five-day medical admission, the Medicare beneficiary's out-of-pocket cost is simply the $1,736 deductible, assuming the deductible has not been met in the benefit period. Medigap supplemental plans (Plan G, Plan N) cover some or all of the Part A deductible depending on the plan, and Medicare Advantage plans have their own cost-sharing structures that vary by carrier and county.",
+      "es": "Medicare Parte A cubre las hospitalizaciones bajo el sistema de Grupos de Diagnóstico Relacionado (DRG), en el que CMS paga una cantidad global por admisión basada en el diagnóstico principal. Los beneficiarios de Medicare adeudan el deducible de Parte A de $1,736 por los primeros 60 días de hospitalización en un período de beneficios, y $434 por día para los días 61 al 90. Para una hospitalización médica sencilla de cinco días, el costo de bolsillo del beneficiario de Medicare es simplemente el deducible de $1,736. Los planes complementarios Medigap (Plan G, Plan N) cubren parte o la totalidad del deducible de la Parte A."
     },
     {
-      "en": "This guide covers what an inpatient hospital stay costs without insurance in 2026, what Medicare Part A pays by day range, the ICU versus medical-surgical cost differential, state-by-state cost variation, and how to request a Good Faith Estimate and dispute an unexpected bill under the No Surprises Act. The 2026 Medicare inpatient deductible of $1,736 and coinsurance amounts are confirmed by the CMS 2026 Medicare Parts A and B Premiums and Deductibles fact sheet at cms.gov. The FY 2026 Inpatient Prospective Payment System final rule, which governs hospital DRG payment rates, is published at cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps.",
-      "es": "Esta guía cubre lo que cuesta una hospitalización sin seguro en 2026, lo que paga Medicare Parte A según el rango de días, el diferencial de costo entre UCI y médico-quirúrgico, la variación de costos por estado y cómo solicitar una Estimación de Buena Fe y disputar una factura inesperada bajo la Ley de No Sorpresas. El deducible de hospitalización 2026 de Medicare de $1,736 y los montos de coseguro están confirmados en la hoja informativa de CMS sobre Primas y Deducibles de Medicare Partes A y B 2026."
+      "en": "Uninsured and self-pay patients have two layers of protection when facing a hospital bill in 2026. First, the No Surprises Act (effective January 1, 2022) requires hospitals to provide a written Good Faith Estimate of expected charges before any scheduled inpatient admission. Second, nonprofit hospitals are required under IRS Section 501(r) to maintain a written financial assistance policy covering emergency and medically necessary care, with charity-care eligibility commonly extending to patients earning up to 200 to 400 percent of the federal poverty level. The 2026 FPL is $15,960 for a household of one in the 48 contiguous states and D.C. Patients who qualify can receive bills pegged closer to Medicare or Medicaid rates rather than the chargemaster list price.",
+      "es": "Los pacientes sin seguro y de autopago tienen dos capas de protección al enfrentar una factura hospitalaria en 2026. Primero, la Ley de No Sorpresas (vigente desde el 1 de enero de 2022) requiere que los hospitales proporcionen una Estimación de Buena Fe escrita de los cargos esperados antes de cualquier hospitalización programada. Segundo, los hospitales sin fines de lucro deben mantener una política de asistencia financiera bajo la Sección 501(r) del IRS que cubre atención de emergencia y médicamente necesaria, con elegibilidad de asistencia benéfica que comúnmente se extiende a pacientes que ganan hasta el 200 al 400 por ciento del nivel federal de pobreza."
     }
   ],
   "siteOfService": {
     "rows": [
       {
         "siteName": {
-          "en": "Medical-surgical unit (community hospital)",
-          "es": "Unidad médico-quirúrgica (hospital comunitario)"
+          "en": "General acute care hospital (medical admission)",
+          "es": "Hospital de cuidado agudo general (ingreso médico)"
         },
-        "rangeWithoutInsurance": "$1,500 to $3,500 per day",
+        "rangeWithoutInsurance": "$5,000 to $20,000 per stay",
         "medicareRate": {
-          "en": "Bundled in DRG (Part A pays, 0 patient cost days 1-60)",
-          "es": "Incluido en DRG (Parte A paga, costo $0 días 1-60)"
+          "en": "$1,736 deductible (days 1-60)",
+          "es": "$1,736 deducible (días 1-60)"
         }
       },
       {
         "siteName": {
-          "en": "Medical-surgical unit (academic medical center)",
-          "es": "Unidad médico-quirúrgica (centro médico académico)"
+          "en": "General acute care hospital (surgical admission)",
+          "es": "Hospital de cuidado agudo general (ingreso quirúrgico)"
         },
-        "rangeWithoutInsurance": "$3,500 to $6,500 per day",
+        "rangeWithoutInsurance": "$15,000 to $50,000 per stay",
         "medicareRate": {
-          "en": "Bundled in DRG (Part A pays, 0 patient cost days 1-60)",
-          "es": "Incluido en DRG (Parte A paga, costo $0 días 1-60)"
+          "en": "$1,736 deductible bundled in DRG",
+          "es": "$1,736 deducible incluido en DRG"
         }
       },
       {
         "siteName": {
-          "en": "Intensive care unit (ICU)",
-          "es": "Unidad de cuidados intensivos (UCI)"
+          "en": "Intensive Care Unit (ICU)",
+          "es": "Unidad de Cuidados Intensivos (UCI)"
         },
-        "rangeWithoutInsurance": "$7,000 to $20,000 per day",
+        "rangeWithoutInsurance": "$4,000 to $10,000 per day",
         "medicareRate": {
-          "en": "Bundled in DRG (higher-weight DRG reflects ICU resources)",
-          "es": "Incluido en DRG (DRG de mayor peso refleja recursos de UCI)"
+          "en": "Bundled in DRG (Part A)",
+          "es": "Incluido en DRG (Parte A)"
         }
       },
       {
         "siteName": {
-          "en": "Observation status (billed as outpatient, not inpatient)",
-          "es": "Estatus de observación (facturado como ambulatorio, no internado)"
+          "en": "Maternity / Labor and Delivery",
+          "es": "Maternidad / Parto y Nacimiento"
         },
-        "rangeWithoutInsurance": "$1,200 to $3,000 per day",
+        "rangeWithoutInsurance": "$8,000 to $20,000 per stay",
         "medicareRate": {
-          "en": "20% coinsurance per service under Part B (not Part A DRG)",
-          "es": "20% coseguro por servicio bajo Parte B (no DRG Parte A)"
+          "en": "$1,736 deductible (DRG 767-768)",
+          "es": "$1,736 deducible (DRG 767-768)"
+        }
+      },
+      {
+        "siteName": {
+          "en": "Critical Access Hospital (rural)",
+          "es": "Hospital de Acceso Crítico (rural)"
+        },
+        "rangeWithoutInsurance": "$3,000 to $12,000 per stay",
+        "medicareRate": {
+          "en": "Cost-based reimbursement (101% of cost)",
+          "es": "Reembolso basado en costos (101% del costo)"
         }
       }
     ],
     "explanationParagraphs": [
       {
-        "en": "Hospital inpatient cost variation in 2026 is driven primarily by three structural factors: the type of care unit, hospital ownership and teaching status, and geography. A medical-surgical bed at a rural nonprofit hospital might cost $1,500 to $2,000 per day in chargemaster list price, while the identical admission at a major academic medical center in California or New York can exceed $6,500 per day. The intensive care unit adds specialized staffing, monitoring equipment, and pharmaceutical costs that typically push per-day billing to $7,000 to $20,000. Hospital chargemaster rates, the published list prices, are largely fictional numbers for patients with any form of negotiated coverage. What insurers actually pay is 40 to 60 percent below chargemaster. Self-pay patients who do not negotiate face the highest published price.",
-        "es": "La variación del costo hospitalario de pacientes internados en 2026 está impulsada principalmente por tres factores estructurales: el tipo de unidad de atención, la titularidad y el estatus académico del hospital, y la geografía. Una cama médico-quirúrgica en un hospital sin fines de lucro rural puede costar $1,500 a $2,000 por día en el precio de lista del chargemaster, mientras que la misma admisión en un importante centro médico académico en California o Nueva York puede superar $6,500 por día. La unidad de cuidados intensivos agrega personal especializado, equipos de monitoreo y costos farmacéuticos que típicamente elevan la facturación diaria a $7,000 a $20,000."
+        "en": "The 2026 billing differential for an inpatient stay is driven primarily by the DRG assigned at discharge, not by a per-day charge rate. CMS pays a single bundled amount per admission based on the principal diagnosis and any significant comorbidities or complications. A straightforward pneumonia admission (DRG 193) pays Medicare roughly $5,500 in 2026, while a complex heart failure admission with major complications (DRG 291) pays approximately $15,000. For chargemaster-priced uninsured patients, those same admissions are billed at 2 to 5 times the Medicare rate before any hospital discount is applied. The chargemaster is the hospital's gross price list; almost no payer, commercial or government, pays the chargemaster rate in full.",
+        "es": "El diferencial de facturación en 2026 para una hospitalización está impulsado principalmente por el DRG asignado al alta, no por una tarifa diaria. CMS paga una cantidad global por admisión basada en el diagnóstico principal. Para pacientes sin seguro con precio de chargemaster, esas mismas admisiones se facturan a 2 o 5 veces la tarifa de Medicare antes de aplicar cualquier descuento hospitalario. El chargemaster es la lista de precios brutos del hospital; casi ningún pagador, comercial o gubernamental, paga la tarifa completa del chargemaster."
       },
       {
-        "en": "The observation status distinction creates a separate and often costlier billing track for Medicare beneficiaries. Patients placed in observation status are technically outpatients, even if they spend two or three nights in a hospital bed. Under observation, Medicare Part B covers services at 20 percent coinsurance after the $283 Part B deductible (2026), compared to the flat $1,736 Part A deductible that covers all care for days 1 through 60 under inpatient status. The financial consequence is largest for patients who need skilled nursing facility care after hospitalization: observation status does not count toward the required three-day qualifying inpatient stay that Medicare requires before it covers SNF care. Hospitals must provide the Medicare Outpatient Observation Notice (MOON) to any Medicare or Medicaid patient in observation status for more than 24 hours.",
-        "es": "La distinción del estatus de observación crea una vía de facturación separada y a menudo más costosa para los beneficiarios de Medicare. Los pacientes colocados en estatus de observación son técnicamente pacientes ambulatorios, incluso si pasan dos o tres noches en una cama de hospital. Bajo observación, Medicare Parte B cubre servicios con un coseguro del 20 por ciento después del deducible de $283 de la Parte B (2026), en comparación con el deducible fijo de $1,736 de la Parte A que cubre toda la atención de los días 1 al 60 bajo estatus de internado."
+        "en": "ICU days are the most expensive component of any inpatient stay, averaging $3,800 to $9,000 per ICU day in billed charges, with Day 1 often exceeding $7,000 due to admission and stabilization costs. The practical cost difference between a general medical floor and an ICU can be $4,000 to $6,000 per day in chargemaster billing terms. For Medicare beneficiaries, ICU days are covered as part of the DRG bundle, so the out-of-pocket cost does not change based on unit type as long as the stay is within the first 60 days of a benefit period. Uninsured patients, however, see the full room-type differential in their billed charges.",
+        "es": "Los días de UCI son el componente más costoso de cualquier hospitalización, promediando $3,800 a $9,000 por día de UCI en cargos facturados. Para los beneficiarios de Medicare, los días de UCI están cubiertos como parte del paquete DRG, por lo que el costo de bolsillo no cambia según el tipo de unidad siempre que la estadía esté dentro de los primeros 60 días de un período de beneficios. Los pacientes sin seguro, sin embargo, ven el diferencial completo de tipo de habitación en sus cargos facturados."
       },
       {
-        "en": "For self-pay patients in 2026, the most effective cost-reduction lever is the hospital's financial assistance policy, also called charity care. Under IRS Section 501(r), every nonprofit hospital (which constitutes the majority of U.S. hospitals) must maintain a written financial assistance policy and offer free or discounted care to patients below specified income thresholds. Most provide free care below 200 percent of the Federal Poverty Level and discounts of 50 to 75 percent for patients up to 300 to 400 percent FPL. Ask the hospital billing department or social worker for the financial assistance application before your stay, or within 30 days of discharge.",
-        "es": "Para los pacientes de autopago en 2026, la palanca de reducción de costos más efectiva es la política de asistencia financiera del hospital, también llamada atención benéfica. Bajo la Sección 501(r) del IRS, cada hospital sin fines de lucro debe mantener una política escrita de asistencia financiera y ofrecer atención gratuita o con descuento a los pacientes por debajo de los umbrales de ingresos especificados. La mayoría proporciona atención gratuita por debajo del 200 por ciento del Nivel Federal de Pobreza y descuentos del 50 al 75 por ciento para pacientes hasta el 300 al 400 por ciento del FPL."
+        "en": "Critical Access Hospitals (CAHs), which serve rural communities under a CMS designation, are reimbursed at 101 percent of their allowable costs rather than at the DRG rate. CAH cash prices tend to be lower than major urban medical centers because their underlying cost structures are lower, but the absence of negotiated insurer rates can still leave uninsured patients with unexpectedly large bills. CAH patients retain all No Surprises Act protections including the right to a written Good Faith Estimate and the right to use the federal patient-provider dispute resolution portal.",
+        "es": "Los Hospitales de Acceso Crítico (CAH), que sirven a comunidades rurales bajo una designación de CMS, son reembolsados al 101 por ciento de sus costos permitidos. Los precios al contado de los CAH tienden a ser más bajos que los grandes centros médicos urbanos, pero la ausencia de tarifas negociadas del asegurador puede dejar a los pacientes sin seguro con facturas inesperadamente grandes. Los pacientes de CAH conservan todas las protecciones de la Ley de No Sorpresas."
       }
     ],
     "tableFootnote": {
-      "en": "Per-day ranges reflect chargemaster list prices before any self-pay discount or insurance negotiation. 2026 Medicare rates reflect the FY 2026 IPPS DRG-based payment structure; the patient cost for Medicare days 1-60 is $0 after the $1,736 Part A deductible. ICU per-day rates are from hospital price transparency files and FAIR Health Consumer 2025-2026 data. Observation status is billed under Part B at 20% coinsurance per service.",
-      "es": "Los rangos por día reflejan los precios de lista del chargemaster antes de cualquier descuento para autopago o negociación con el seguro. Las tarifas de Medicare 2026 reflejan la estructura de pago basada en DRG del IPPS FY 2026; el costo para el paciente de Medicare de los días 1 a 60 es $0 después del deducible de $1,736 de la Parte A. Las tarifas de UCI por día provienen de archivos de transparencia de precios hospitalarios y datos de FAIR Health Consumer 2025-2026."
+      "en": "Per-stay ranges reflect billed chargemaster charges for uninsured patients before hospital discount policies are applied. 2026 Medicare rates reflect Part A DRG bundled payments; the $1,736 deductible is the beneficiary's only cost for stays of 60 days or fewer in a benefit period. Ranges sourced from KFF Hospital Expenses per Inpatient Day (2024), FAIR Health Consumer, and CMS FY 2026 IPPS Final Rule. Individual hospital pricing varies significantly by geographic market, DRG complexity, and payor mix.",
+      "es": "Los rangos por estadía reflejan los cargos del chargemaster para pacientes sin seguro antes de aplicar políticas de descuento hospitalario. Las tarifas de Medicare 2026 reflejan los pagos DRG agrupados de la Parte A. Los rangos proceden de KFF Hospital Expenses per Inpatient Day (2024), FAIR Health Consumer y la Regla Final CMS FY 2026 IPPS."
     },
-    "tableSource": "KFF State Health Facts (AHA Annual Survey 2024), CMS FY 2026 IPPS Final Rule, FAIR Health Consumer 2026, CMS Hospital Price Transparency"
+    "tableSource": "KFF Hospital Expenses per Adjusted Inpatient Day 2024, CMS FY 2026 IPPS Final Rule, CMS 2026 Medicare Part A Deductible and Coinsurance Fact Sheet, FAIR Health Consumer"
   },
   "variants": {
     "heading": {
-      "en": "Hospital Stay Cost by Type of Care in 2026",
-      "es": "Costo de Hospitalización por Tipo de Atención en 2026"
+      "en": "Hospital Stay Cost by Admission Type and Length in 2026",
+      "es": "Costo de Hospitalización por Tipo de Ingreso y Duración en 2026"
     },
     "intro": {
-      "en": "The type of care required during a hospital stay is the single largest determinant of daily cost. A routine medical admission for monitoring and medication differs dramatically in billing from a surgical admission requiring an operating room, anesthesia, and post-operative ICU time. The table below shows 2026 typical per-day ranges for the most common care settings within an inpatient admission.",
-      "es": "El tipo de atención requerida durante una hospitalización es el determinante más grande del costo diario. Una admisión médica de rutina para monitoreo y medicación difiere dramáticamente en facturación de una admisión quirúrgica que requiere quirófano, anestesia y tiempo postoperatorio en UCI. La tabla siguiente muestra rangos típicos por día en 2026 para los entornos de atención más comunes dentro de una hospitalización."
+      "en": "Hospital inpatient costs vary dramatically by the reason for admission and the length of stay. A one-night observation stay for a chest-pain workup looks very different from a five-day post-surgical recovery or a 10-day sepsis admission. The table below reflects 2026 typical billed ranges for uninsured patients and what Medicare beneficiaries owe under Part A cost-sharing.",
+      "es": "Los costos de hospitalización varían drásticamente según el motivo del ingreso y la duración de la estadía. La tabla a continuación refleja los rangos facturados típicos de 2026 para pacientes sin seguro y lo que adeudan los beneficiarios de Medicare bajo el costo compartido de la Parte A."
     },
     "headers": {
       "en": [
-        "Care type",
-        "Typical daily rate (without insurance)",
-        "Typical total stay cost",
-        "Medicare Part A patient cost"
+        "Admission Type",
+        "Typical Length",
+        "Billed Range (Uninsured)",
+        "Medicare Part A Cost"
       ],
       "es": [
-        "Tipo de atención",
-        "Tarifa diaria típica (sin seguro)",
-        "Costo total típico de estadía",
-        "Costo al paciente Medicare Parte A"
+        "Tipo de Ingreso",
+        "Duración Típica",
+        "Rango Facturado (Sin Seguro)",
+        "Costo Medicare Parte A"
       ]
     },
     "rows": [
       {
         "en": [
-          "General medical (routine monitoring, medication)",
-          "$1,500 to $3,500 per day",
-          "$3,000 to $12,000 (2-4 day stay)",
-          "$1,736 deductible, then $0/day (days 1-60)"
+          "Observation stay (not full admission)",
+          "1 to 2 days",
+          "$3,000 to $8,000",
+          "Part B applies (20% coinsurance), NOT Part A"
         ],
         "es": [
-          "Médico general (monitoreo rutinario, medicación)",
-          "$1,500 a $3,500 por día",
-          "$3,000 a $12,000 (estadía de 2-4 días)",
-          "Deducible $1,736, luego $0/día (días 1-60)"
+          "Estancia de observación (no ingreso completo)",
+          "1 a 2 días",
+          "$3,000 a $8,000",
+          "Aplica Parte B (20% coseguro), NO Parte A"
         ]
       },
       {
         "en": [
-          "Post-surgical recovery (medical-surgical unit)",
-          "$2,500 to $5,000 per day",
-          "$7,500 to $20,000 (3-5 day stay)",
-          "$1,736 deductible, then $0/day (days 1-60)"
+          "Short medical admission (pneumonia, UTI, dehydration)",
+          "2 to 4 days",
+          "$5,000 to $15,000",
+          "$1,736 deductible only"
         ],
         "es": [
-          "Recuperación posquirúrgica (unidad médico-quirúrgica)",
-          "$2,500 a $5,000 por día",
-          "$7,500 a $20,000 (estadía de 3-5 días)",
-          "Deducible $1,736, luego $0/día (días 1-60)"
+          "Ingreso médico corto (neumonía, ITU, deshidratación)",
+          "2 a 4 días",
+          "$5,000 a $15,000",
+          "Solo deducible de $1,736"
         ]
       },
       {
         "en": [
-          "Step-down / intermediate care unit",
-          "$4,000 to $8,000 per day",
-          "$12,000 to $32,000 (3-5 day stay)",
-          "$1,736 deductible, then $0/day (days 1-60)"
+          "Cardiac / heart failure admission",
+          "3 to 6 days",
+          "$10,000 to $30,000",
+          "$1,736 deductible only (days 1-60)"
         ],
         "es": [
-          "Unidad de cuidado intermedio",
-          "$4,000 a $8,000 por día",
-          "$12,000 a $32,000 (estadía de 3-5 días)",
-          "Deducible $1,736, luego $0/día (días 1-60)"
+          "Ingreso cardíaco / insuficiencia cardíaca",
+          "3 a 6 días",
+          "$10,000 a $30,000",
+          "Solo deducible de $1,736 (días 1-60)"
         ]
       },
       {
         "en": [
-          "Intensive care unit (ICU / critical care)",
-          "$7,000 to $20,000 per day",
-          "$35,000 to $100,000+ (5-10 day stay)",
-          "$1,736 deductible, then $0/day (days 1-60); $434/day (days 61-90)"
+          "Surgical admission (hip/knee replacement, appendectomy)",
+          "2 to 5 days",
+          "$20,000 to $50,000",
+          "$1,736 deductible only (days 1-60)"
         ],
         "es": [
-          "Unidad de cuidados intensivos (UCI / cuidados críticos)",
-          "$7,000 a $20,000 por día",
-          "$35,000 a $100,000+ (estadía de 5-10 días)",
-          "Deducible $1,736, luego $0/día (días 1-60); $434/día (días 61-90)"
+          "Ingreso quirúrgico (reemplazo de cadera/rodilla, apendicectomía)",
+          "2 a 5 días",
+          "$20,000 a $50,000",
+          "Solo deducible de $1,736 (días 1-60)"
         ]
       },
       {
         "en": [
-          "Observation status (outpatient designation)",
-          "$1,200 to $3,000 per day",
-          "$2,400 to $9,000 (2-3 day stay)",
-          "Part B: 20% coinsurance per service after $283 deductible"
+          "ICU admission (sepsis, stroke, respiratory failure)",
+          "5 to 14 days",
+          "$30,000 to $150,000+",
+          "$1,736 deductible + $434/day after day 60"
         ],
         "es": [
-          "Estatus de observación (designación ambulatoria)",
-          "$1,200 a $3,000 por día",
-          "$2,400 a $9,000 (estadía de 2-3 días)",
-          "Parte B: 20% coseguro por servicio después de $283 deducible"
+          "Ingreso a UCI (sepsis, derrame, insuficiencia respiratoria)",
+          "5 a 14 días",
+          "$30,000 a $150,000+",
+          "$1,736 deducible + $434/día después del día 60"
+        ]
+      },
+      {
+        "en": [
+          "Maternity / vaginal delivery",
+          "2 days",
+          "$8,000 to $15,000",
+          "$1,736 deductible only"
+        ],
+        "es": [
+          "Maternidad / parto vaginal",
+          "2 días",
+          "$8,000 a $15,000",
+          "Solo deducible de $1,736"
+        ]
+      },
+      {
+        "en": [
+          "Maternity / C-section",
+          "3 to 4 days",
+          "$12,000 to $25,000",
+          "$1,736 deductible only"
+        ],
+        "es": [
+          "Maternidad / cesárea",
+          "3 a 4 días",
+          "$12,000 a $25,000",
+          "Solo deducible de $1,736"
         ]
       }
     ],
     "footnote": {
-      "en": "Per-day chargemaster rates reflect 2026 hospital price transparency data and FAIR Health Consumer benchmarks. Actual self-pay rates after hospital financial assistance or negotiated discount are typically 40 to 60 percent lower. Medicare pays hospitals a flat DRG-based amount regardless of actual days; the patient cost structure above reflects the 2026 Part A beneficiary cost-sharing schedule. Observation status is NOT inpatient: it is billed under Part B and does not count toward the 3-day inpatient qualifying stay required for Medicare SNF coverage.",
-      "es": "Las tarifas del chargemaster por día reflejan datos de transparencia de precios hospitalarios 2026 y referencias de FAIR Health Consumer. Las tarifas reales de autopago después de la asistencia financiera hospitalaria o el descuento negociado suelen ser de 40 a 60 por ciento más bajas. Medicare paga a los hospitales un monto fijo basado en DRG independientemente de los días reales; la estructura de costos al paciente anterior refleja el calendario de costos compartidos del beneficiario de la Parte A 2026."
+      "en": "Observation stays are billed as outpatient (Part B) even when the patient spends the night in a hospital bed. This is a critical distinction: Medicare beneficiaries in observation status cannot transition directly to Medicare-covered skilled nursing facility care, which requires a qualifying three-day inpatient admission. If you are in the hospital overnight, always ask the treating physician whether you are admitted as an inpatient or held in observation status.",
+      "es": "Las estancias de observación se facturan como ambulatorias (Parte B) incluso cuando el paciente pasa la noche en una cama hospitalaria. Esta es una distinción crítica: los beneficiarios de Medicare en estado de observación no pueden pasar directamente a la atención en instalaciones de enfermería especializada cubierta por Medicare. Si está en el hospital de noche, siempre pregunte al médico si está ingresado como paciente interno o en estado de observación."
     },
-    "source": "CMS FY 2026 IPPS Final Rule, CMS Hospital Price Transparency data, FAIR Health Consumer 2026, KFF Hospital Expenses per Inpatient Day (2024 AHA data)"
+    "source": "KFF Hospital Expenses per Adjusted Inpatient Day 2024, CMS FY 2026 IPPS Final Rule, CMS 2026 Medicare Part A Fact Sheet, AHRQ Healthcare Cost and Utilization Project"
   },
   "medicareSection": {
     "paragraphs": [
       {
-        "en": "Original Medicare covers inpatient hospital care under Medicare Part A, not Medicare Part B. The 2026 Part A inpatient hospital deductible is $1,736 per benefit period, an increase of $60 from $1,676 in 2025 (confirmed by the CMS 2026 Medicare Parts A and B Premiums and Deductibles fact sheet). Once the $1,736 deductible is paid, Original Medicare covers all approved charges for days 1 through 60 at $0 per day. For days 61 through 90, the patient pays $434 per day in 2026. For days 91 and beyond, the patient can use up to 60 lifetime reserve days at $868 per day in 2026. A benefit period begins on the day of admission and ends when the patient has been out of the hospital or SNF for 60 consecutive days. A new benefit period, and a new $1,736 deductible, begins with the next admission.",
-        "es": "Medicare Original cubre la atención hospitalaria de pacientes internados bajo Medicare Parte A, no Medicare Parte B. El deducible de hospitalización de la Parte A 2026 es de $1,736 por período de beneficio, un aumento de $60 desde $1,676 en 2025 (confirmado por la hoja informativa de CMS sobre Primas y Deducibles de Medicare Partes A y B 2026). Una vez pagado el deducible de $1,736, Medicare Original cubre todos los cargos aprobados para los días 1 al 60 a $0 por día. Para los días 61 al 90, el paciente paga $434 por día en 2026. Para los días 91 en adelante, el paciente puede usar hasta 60 días de reserva de por vida a $868 por día en 2026."
+        "en": "Medicare Part A covers inpatient hospital stays for Medicare beneficiaries who are formally admitted as inpatients by a physician's order. For 2026, the Part A inpatient hospital deductible is $1,736. This single deductible covers all hospital charges for the first 60 days of a covered inpatient stay in a benefit period. Days 61 through 90 cost $434 per day in coinsurance. Medicare beneficiaries have 60 lifetime reserve days available for stays that extend past 90 days, at $868 per day. Once lifetime reserve days are exhausted, Medicare pays nothing and the patient is responsible for the full cost. Original Medicare does not cap total annual out-of-pocket costs, which is one reason Medigap supplemental plans are popular among beneficiaries with serious or chronic illnesses.",
+        "es": "Medicare Parte A cubre las hospitalizaciones para los beneficiarios de Medicare que son admitidos formalmente como pacientes internos. Para 2026, el deducible de hospitalización de la Parte A es $1,736. Este único deducible cubre todos los cargos hospitalarios por los primeros 60 días de una estadía interna cubierta en un período de beneficios. Los días 61 al 90 cuestan $434 por día en coseguro. Los beneficiarios de Medicare tienen 60 días de reserva de por vida disponibles para estadías que se extienden más allá de los 90 días, a $868 por día. El Medicare Original no tiene un límite en los gastos anuales totales de bolsillo, razón por la cual los planes suplementarios Medigap son populares."
       },
       {
-        "en": "Medicare Advantage plans (Part C) must cover the same inpatient benefits as Original Medicare but apply their own cost-sharing structures, which can differ significantly from Original Medicare. Most Medicare Advantage plans cap inpatient cost-sharing at a fixed copay per day (often $250 to $600 per day for the first several days), with a separate annual out-of-pocket maximum of no more than $9,350 (2026 statutory cap for in-network services). Medigap supplemental insurance policies (Plans A through N) fill the Part A deductible gap on Original Medicare: Plan G, the most comprehensive Medigap plan for new enrollees, covers the $1,736 Part A deductible, the daily coinsurance for days 61 through 90, and the lifetime reserve day coinsurance. Patients on Medicare Advantage who need a planned hospitalization should review their plan's Summary of Benefits, available at medicare.gov, to understand daily copay amounts and the out-of-pocket maximum before admission.",
-        "es": "Los planes Medicare Advantage (Parte C) deben cubrir los mismos beneficios de hospitalización que Medicare Original, pero aplican sus propias estructuras de costos compartidos, que pueden diferir significativamente. La mayoría de los planes Medicare Advantage limitan el costo compartido de hospitalización a un copago fijo por día (a menudo $250 a $600 por día durante los primeros días), con un máximo de gastos de bolsillo anual separado de no más de $9,350 (límite estatutario 2026 para servicios dentro de la red). Las pólizas de seguro suplementario Medigap (Planes A al N) cubren la brecha del deducible de la Parte A en Medicare Original."
+        "en": "Medicare Advantage plans cover inpatient hospital stays using their own cost-sharing structures, which vary by carrier and county. A Medicare Advantage plan may have a per-day copayment (for example, $250 per day for days 1 through 7) or a per-admission deductible, rather than the single Part A deductible. Medicare Advantage plans must cap annual out-of-pocket costs at the federally mandated limit (in 2026, $9,250 for in-network costs and $13,900 for combined in-network and out-of-network costs). Medicare Advantage plans also require prior authorization for inpatient admissions at most hospitals, so calling the plan before or immediately after an admission is a critical cost-management step. Medigap plans that supplement Original Medicare (Plan G, Plan N) cover the $1,736 Part A deductible in full (Plan G) or in part (Plan N), effectively eliminating most inpatient cost-sharing for beneficiaries with Medigap coverage.",
+        "es": "Los planes de Medicare Advantage cubren las hospitalizaciones usando sus propias estructuras de costo compartido, que varían según la aseguradora y el condado. Los planes de Medicare Advantage deben limitar los costos anuales de bolsillo al límite federal obligatorio (en 2026, $9,250 para costos dentro de la red y $13,900 para costos combinados dentro y fuera de la red). Los planes Medigap que suplementan al Medicare Original (Plan G, Plan N) cubren el deducible de Parte A de $1,736 en su totalidad (Plan G) o en parte (Plan N)."
       },
       {
-        "en": "Commercial ACA-compliant plan members who face a planned inpatient admission typically encounter two cost-sharing layers: the annual deductible (which can range from $1,500 to $9,200 for an individual on a high-deductible health plan in 2026) and, after the deductible is met, an inpatient coinsurance of typically 20 to 30 percent. The ACA-compliant plan out-of-pocket maximum for 2026 is $9,200 for individual coverage, meaning once a patient spends $9,200 in-network, the plan covers 100 percent of additional in-network costs for the remainder of the plan year. For high-deductible health plan (HDHP) enrollees, the deductible must be fully satisfied before the plan begins paying any inpatient costs. Prior authorization is required by virtually all commercial insurers and Medicare Advantage plans for non-emergency inpatient admissions.",
-        "es": "Los miembros de planes ACA-compliant que enfrentan una hospitalización planificada típicamente encuentran dos capas de costos compartidos: el deducible anual (que puede variar de $1,500 a $9,200 para un individuo en un plan de deducible alto en 2026) y, después de cumplir el deducible, un coseguro de hospitalización típicamente del 20 al 30 por ciento. El máximo de gastos de bolsillo del plan ACA para 2026 es de $9,200 para cobertura individual."
+        "en": "For patients with commercial insurance, an ACA-compliant plan covers medically necessary inpatient hospital care, but the patient's out-of-pocket exposure depends on whether the hospital is in-network, whether the plan has a deductible, and whether the plan is an HDHP (high-deductible health plan). A typical employer-sponsored plan in 2026 has an individual deductible of $1,500 to $3,500 and an out-of-pocket maximum of $4,000 to $8,500. ACA-compliant plan members admitted to an in-network hospital apply their deductible and coinsurance (typically 20 to 30 percent) until the out-of-pocket maximum is reached. Out-of-network hospital admissions can result in significantly higher cost-sharing; the No Surprises Act protects patients from balance billing by out-of-network emergency providers, but scheduled inpatient admissions at out-of-network hospitals are not covered by the NSA's balance-billing protections.",
+        "es": "Para pacientes con seguro comercial, un plan ACA cubre la hospitalización médicamente necesaria, pero la exposición de bolsillo del paciente depende de si el hospital está dentro de la red, si el plan tiene deducible y si el plan es un HDHP. Los miembros de un plan ACA dentro de la red aplican su deducible y coseguro (típicamente del 20 al 30 por ciento) hasta alcanzar el máximo de bolsillo. La Ley de No Sorpresas protege a los pacientes de facturación de saldo por proveedores de emergencias fuera de la red."
       },
       {
-        "en": "Under the No Surprises Act, effective January 1, 2022, any patient paying cash or who is uninsured has the right to a written Good Faith Estimate from any provider or facility before a scheduled hospital service. For a hospital admission scheduled at least 10 business days in advance, the hospital must furnish the Good Faith Estimate at least 3 business days before admission. For an admission scheduled 3 to 9 business days out, the GFE must arrive at least 1 business day before. Emergency admissions are excluded from the advance GFE requirement, but the patient retains all other No Surprises Act rights once admitted. The federal consumer guidance is at healthcare.gov/health-care-law-protections and the CMS portal is at cms.gov/nosurprisesact.",
-        "es": "Bajo la Ley de No Sorpresas, vigente desde el 1 de enero de 2022, cualquier paciente que pague en efectivo o que no tenga seguro tiene derecho a recibir una Estimación de Buena Fe escrita de cualquier proveedor o instalación antes de un servicio hospitalario programado. Para una hospitalización programada con al menos 10 días hábiles de anticipación, el hospital debe proporcionar la Estimación de Buena Fe al menos 3 días hábiles antes de la admisión."
+        "en": "Under the No Surprises Act, which took effect January 1, 2022, every patient paying cash or without insurance coverage has the right to a written Good Faith Estimate from the hospital before any scheduled inpatient admission. For an admission scheduled at least 10 business days in advance, the hospital must furnish the Good Faith Estimate at least 3 business days before the admission date. For admissions scheduled 3 to 9 business days in advance, the Good Faith Estimate arrives at least 1 business day before the admission. Emergency hospital admissions are not subject to advance GFE requirements, but patients can always request a cost estimate after stabilization. The federal resource portal is at cms.gov/nosurprisesact. Hospitals must include in the GFE the expected facility charges, the professional fees for each attending physician and any consulting specialists, anesthesia charges, expected diagnostic tests ordered, and the anticipated length of stay.",
+        "es": "Bajo la Ley de No Sorpresas, vigente desde el 1 de enero de 2022, todo paciente que paga en efectivo o sin cobertura de seguro tiene derecho a una Estimación de Buena Fe escrita del hospital antes de cualquier ingreso hospitalario programado. Para un ingreso programado con al menos 10 días hábiles de anticipación, el hospital debe proporcionar la Estimación de Buena Fe al menos 3 días hábiles antes de la fecha de ingreso. El portal de recursos federales está en cms.gov/nosurprisesact."
       },
       {
-        "en": "To request a Good Faith Estimate for a hospital stay in 2026, follow these five steps. First, call the hospital's billing or financial counseling department and identify yourself as self-pay or uninsured. Second, ask for a written Good Faith Estimate that includes the expected room and board charges by day range, all anticipated procedures and their diagnosis and procedure codes, anesthesia estimates, laboratory and imaging charges, physician professional fees (which are often billed separately by the attending physician, surgeon, anesthesiologist, and radiologist), and the total expected facility cost. Third, provide your ZIP code and describe the planned admission so the hospital can pull the correct DRG estimate. Fourth, confirm the timing: the GFE must arrive 3 business days before admission if scheduled 10 or more business days out, or 1 business day before if scheduled 3 to 9 business days out. Fifth, keep the written GFE: if the final bill exceeds the GFE by $400 or more, you have the right to file a patient-provider dispute resolution (PPDR) claim within 120 days of the bill date at cms.gov/nosurprisesact.",
-        "es": "Para solicitar una Estimación de Buena Fe para una hospitalización en 2026, siga estos cinco pasos. Primero, llame al departamento de facturación o asesoría financiera del hospital e identifíquese como paciente de autopago o sin seguro. Segundo, solicite una Estimación de Buena Fe escrita que incluya los cargos esperados de habitación y alimentación por rango de días, todos los procedimientos anticipados con sus códigos, estimaciones de anestesia, cargos de laboratorio e imágenes, honorarios profesionales médicos, y el costo total esperado de la instalación. Tercero, proporcione su código postal y describa la admisión planificada. Cuarto, confirme el plazo: la GFE debe llegar 3 días hábiles antes de la admisión si se programa con 10 o más días hábiles de anticipación. Quinto, guarde la GFE escrita: si la factura final supera la GFE en $400 o más, tiene derecho a presentar un reclamo de resolución de disputas proveedor-paciente dentro de los 120 días de la fecha de la factura."
+        "en": "To request a Good Faith Estimate for a hospital stay in 2026, follow these steps: (1) Contact the hospital's patient financial services or billing department before scheduling the admission and identify yourself as self-pay or uninsured. (2) Ask for a written Good Faith Estimate that itemizes the facility fee, room and board charges, expected physician professional fees (attending, hospitalist, anesthesiologist, specialists), anticipated diagnostic tests (labs, imaging), and any medications or supplies included in the DRG bundle. (3) Provide the admitting diagnosis or planned procedure, your ZIP code, and any complicating conditions the hospital should factor in. (4) Confirm the delivery timing: 3 business days before admission if scheduled 10 or more business days out, or 1 business day before admission if scheduled 3 to 9 business days out. (5) Keep the written Good Faith Estimate. If the final bill from any single provider exceeds the Good Faith Estimate by $400 or more, you have 120 days from the date of the bill to submit a patient-provider dispute resolution claim at the federal portal listed at cms.gov/nosurprisesact.",
+        "es": "Para solicitar una Estimación de Buena Fe para una hospitalización en 2026, siga estos pasos: (1) Contacte el departamento de servicios financieros del paciente del hospital e identifíquese como autopagante o sin seguro. (2) Solicite una Estimación de Buena Fe por escrito que detalle el cargo de instalación, los cargos de habitación, los honorarios profesionales médicos esperados y las pruebas diagnósticas anticipadas. (3) Proporcione el diagnóstico de ingreso o el procedimiento planificado y su código postal. (4) Confirme el plazo de entrega: 3 días hábiles antes del ingreso si está programado con 10 o más días hábiles de anticipación. (5) Conserve la Estimación de Buena Fe escrita. Si la factura final supera la Estimación en $400 o más, tiene 120 días desde la fecha de la factura para presentar una reclamación en cms.gov/nosurprisesact."
       },
       {
-        "en": "A Good Faith Estimate for a hospital stay is not a guaranteed final bill, and inpatient admissions carry the highest risk of estimate divergence of any scheduled healthcare service. Common reasons the actual hospital bill exceeds the Good Faith Estimate include: the patient's condition requires a longer stay than expected, the patient is transferred to a higher-acuity unit (for example, from a medical-surgical floor to the ICU), unexpected diagnostic procedures or surgeries become necessary during the admission, additional specialist physicians are consulted and bill separately, laboratory or imaging results require additional treatment not in the original estimate, pharmacy charges for drugs administered during the stay exceed the estimate, and physician professional fees from out-of-network specialists (covered by the No Surprises Act for emergency services; consult cms.gov/nosurprisesact for the full list of protections). If the final bill exceeds the Good Faith Estimate by $400 or more, the patient has 120 days from the bill date to file a PPDR claim at the federal patient-provider dispute resolution portal.",
-        "es": "Una Estimación de Buena Fe para una hospitalización no es una factura final garantizada, y las hospitalizaciones tienen el mayor riesgo de divergencia de estimaciones de cualquier servicio de salud programado. Las razones comunes por las que la factura real del hospital supera la Estimación de Buena Fe incluyen: la condición del paciente requiere una estadía más larga de lo esperado, el paciente es transferido a una unidad de mayor acuidad, se vuelven necesarios procedimientos diagnósticos o cirugías inesperados, médicos especialistas adicionales son consultados y facturan por separado, y las tarifas de médicos fuera de la red de especialistas."
+        "en": "A Good Faith Estimate for a hospital stay is not a guaranteed final bill. Common reasons that actual charges exceed the GFE include: a longer-than-anticipated length of stay due to slow recovery or complications; transfer to an ICU or step-down unit not anticipated at admission; additional consultations by specialist physicians not listed in the original estimate; additional imaging or lab tests ordered during the stay; and supplies or implants (such as orthopedic hardware) that carry separate billing codes. If you receive a final bill that exceeds the GFE by $400 or more from any single provider, file the patient-provider dispute resolution claim within 120 days. The federal dispute resolution portal is at cms.gov/nosurprisesact.",
+        "es": "Una Estimación de Buena Fe para una hospitalización no es una factura final garantizada. Las razones comunes por las que los cargos reales superan la Estimación incluyen: una estadía más larga de lo anticipado debido a recuperación lenta o complicaciones; transferencia a una UCI; consultas adicionales de médicos especialistas; imágenes o análisis de laboratorio adicionales; y suministros o implantes que tienen códigos de facturación separados. Si recibe una factura final que supera la Estimación en $400 o más, presente la reclamación dentro de los 120 días."
       }
     ]
   },
   "factorsAffectingCost": {
     "items": [
       {
-        "en": "Type of care unit: medical-surgical rooms average $1,500 to $3,500 per day in 2026, while ICU care runs $7,000 to $20,000 per day due to specialized staffing ratios, monitoring equipment, and pharmaceutical intensity.",
-        "es": "Tipo de unidad de atención: las habitaciones médico-quirúrgicas promedian $1,500 a $3,500 por día en 2026, mientras que la atención en UCI cuesta $7,000 a $20,000 por día por los ratios de personal especializado, equipos de monitoreo e intensidad farmacéutica."
+        "en": "Admission type and DRG complexity: a medical admission for a simple condition (DRG 193 pneumonia, approximately $5,500 Medicare rate) costs a fraction of a complex surgical or ICU admission (DRG 291 heart failure with major complications, approximately $15,000 Medicare rate). Uninsured chargemaster prices are 2 to 5 times the Medicare DRG rate.",
+        "es": "Tipo de ingreso y complejidad del DRG: una admisión médica por una condición simple cuesta una fracción de una admisión quirúrgica o de UCI compleja. Los precios del chargemaster para pacientes sin seguro son de 2 a 5 veces la tarifa DRG de Medicare."
       },
       {
-        "en": "Inpatient vs observation status billing: inpatient status means Medicare Part A covers the stay (one $1,736 deductible, $0/day for days 1-60); observation status means Part B covers at 20 percent coinsurance per service and does not count toward the 3-day SNF qualifying stay.",
-        "es": "Facturación de estatus de internado vs observación: el estatus de internado significa que Medicare Parte A cubre la estadía (un deducible de $1,736, $0/día para los días 1-60); el estatus de observación significa que la Parte B cubre con un coseguro del 20 por ciento por servicio."
+        "en": "Length of stay: each additional inpatient day adds $2,500 to $10,000 or more in billed charges depending on service level. ICU days ($4,000 to $10,000 each in billed charges) cost roughly 3 times more than general medical floor days ($1,200 to $3,500 each). Under Medicare Part A, days 1 through 60 in a benefit period are covered by the single $1,736 deductible; days 61 through 90 add $434 per day.",
+        "es": "Duración de la estadía: cada día adicional de hospitalización agrega $2,500 a $10,000 o más en cargos facturados según el nivel de servicio. Los días de UCI cuestan aproximadamente 3 veces más que los días de piso médico general. Bajo Medicare Parte A, los días 1 al 60 están cubiertos por el único deducible de $1,736."
       },
       {
-        "en": "Geographic region: KFF 2024 AHA data shows California at $4,744 per adjusted inpatient day and Mississippi at $1,401. States with higher labor costs, cost of living, and concentrated hospital markets consistently show higher per-day rates.",
-        "es": "Región geográfica: los datos de KFF 2024 AHA muestran a California con $4,744 por día de internación ajustado y a Mississippi con $1,401. Los estados con mayores costos laborales y de vida muestran consistentemente tarifas más altas por día."
+        "en": "Observation status versus inpatient admission: patients held in observation status are billed as hospital outpatient under Medicare Part B (20 percent coinsurance after the $283 Part B deductible) rather than under Part A. Observation status patients do not accumulate the three qualifying inpatient days needed to trigger Medicare-covered skilled nursing facility care. Always ask your care team explicitly whether you have been formally admitted.",
+        "es": "Estado de observación versus ingreso de paciente interno: los pacientes en estado de observación son facturados como pacientes ambulatorios del hospital bajo Medicare Parte B (coseguro del 20% después del deducible de Parte B de $283) en lugar de Parte A. Los pacientes en observación no acumulan los tres días de ingreso calificados necesarios para la atención en instalaciones de enfermería especializada cubierta por Medicare."
       },
       {
-        "en": "Hospital charity care and financial assistance programs: under IRS Section 501(r), every nonprofit hospital must maintain a written financial assistance policy. Most provide free care below 200 percent FPL and discounts of 50 to 75 percent for patients up to 300 to 400 percent FPL. Ask the hospital social worker or billing department for the financial assistance application before discharge. This is the most powerful cost-reduction lever for uninsured patients facing a large hospital bill.",
-        "es": "Programas de atención benéfica y asistencia financiera hospitalaria: bajo la Sección 501(r) del IRS, cada hospital sin fines de lucro debe mantener una política escrita de asistencia financiera. La mayoría proporciona atención gratuita por debajo del 200 por ciento del FPL y descuentos del 50 al 75 por ciento para pacientes hasta el 300 al 400 por ciento del FPL."
+        "en": "Self-pay programs at independent facilities: for planned surgical admissions, some ambulatory surgery centers (ASCs) can perform procedures that would otherwise require a short inpatient stay at 30 to 60 percent below hospital chargemaster cash prices. Negotiated self-pay bundles at ASCs often include the surgeon, facility, and anesthesia in a single flat rate. Ask the surgeon whether an ASC-based same-day or 23-hour stay is clinically appropriate.",
+        "es": "Programas de autopago en instalaciones independientes: para admisiones quirúrgicas planificadas, algunos centros de cirugía ambulatoria (ASC) pueden realizar procedimientos a un 30 a 60 por ciento por debajo de los precios al contado del chargemaster del hospital. Los paquetes negociados de autopago en ASC a menudo incluyen el cirujano, la instalación y la anestesia en una tarifa única."
       },
       {
-        "en": "Negotiated self-pay or cash-pay discount from the hospital chargemaster: uninsured patients who do not apply for charity care but identify themselves as self-pay can request the hospital's self-pay discount from the chargemaster list price, typically 40 to 60 percent off. The CMS hospital price transparency rule (effective January 1, 2021) requires hospitals to publish a discounted cash price for self-pay patients alongside chargemaster rates. Ask for the discounted cash price in writing.",
-        "es": "Descuento negociado de autopago en el precio del chargemaster: los pacientes no asegurados que no solicitan atención benéfica pero se identifican como de autopago pueden solicitar el descuento del hospital sobre el precio de lista del chargemaster, típicamente del 40 al 60 por ciento. La regla de transparencia de precios hospitalarios de CMS requiere que los hospitales publiquen un precio en efectivo con descuento para pacientes de autopago."
+        "en": "Hospital chargemaster discount ask: most hospitals, especially nonprofits subject to IRS Section 501(r), publish a formal financial assistance policy and a self-pay discount schedule. Qualifying patients can receive bills discounted 20 to 100 percent below the chargemaster rate, with the deepest discounts for patients below 200 percent of the federal poverty level. Ask patient financial services before or immediately after admission for the self-pay discount policy and the financial assistance application.",
+        "es": "Solicitud de descuento en el chargemaster del hospital: la mayoría de los hospitales publican una política formal de asistencia financiera y un programa de descuento para autopago. Los pacientes calificados pueden recibir facturas con descuentos del 20 al 100 por ciento por debajo de la tarifa del chargemaster. Pregunte a los servicios financieros del paciente antes o inmediatamente después del ingreso."
       },
       {
-        "en": "Separately billed physician professional fees: in most hospital admissions, the attending physician, surgeon, anesthesiologist, intensivist, radiologist, and consulting specialists all bill independently of the facility. An inpatient stay generating $20,000 in facility charges can generate an additional $5,000 to $15,000 in separate physician bills. Verify network status for each billing physician before an elective admission.",
-        "es": "Honorarios profesionales médicos facturados por separado: en la mayoría de las hospitalizaciones, el médico tratante, el cirujano, el anestesiólogo, el intensivista, el radiólogo y los especialistas consultores facturan independientemente de la instalación. Una hospitalización que genera $20,000 en cargos de instalación puede generar $5,000 a $15,000 adicionales en facturas médicas separadas."
+        "en": "Sliding-scale care at Federally Qualified Health Centers (FQHCs): FQHCs provide primary care and some preventive services on a sliding-scale fee basis; however, they do not provide inpatient hospital care. For patients who need post-acute follow-up after a hospital discharge, an FQHC can provide follow-up care at fees based on household size and income, down to $0 for households below 100 percent of the federal poverty level. For more information, see the federal poverty level reference at /federal-poverty-level.",
+        "es": "Atención en escala móvil en Centros de Salud Calificados Federalmente (FQHC): los FQHC proporcionan atención primaria y algunos servicios preventivos en base a tarifas en escala móvil. Para el seguimiento post-agudo después del alta hospitalaria, un FQHC puede proporcionar atención a tarifas basadas en el tamaño del hogar y los ingresos, hasta $0 para hogares por debajo del 100 por ciento del nivel federal de pobreza."
       },
       {
-        "en": "Sliding-scale Federally Qualified Health Center (FQHC) referral for pre- and post-hospital care: FQHCs do not provide inpatient hospital care, but they can provide pre-admission workups and post-discharge follow-up at sliding-scale fees based on household income. Patients below 100 percent of the Federal Poverty Level may qualify for free FQHC visits, reducing total care costs. Use hrsa.gov/find-a-health-center to locate the nearest FQHC.",
-        "es": "Derivación a un Centro de Salud Calificado Federalmente (FQHC) de escala móvil para atención pre y post-hospitalaria: los FQHC no brindan atención hospitalaria de internados, pero pueden proporcionar evaluaciones previas a la admisión y seguimiento post-alta con tarifas de escala móvil basadas en el ingreso familiar."
+        "en": "Geographic market: 2024 KFF data shows hospital expenses per adjusted inpatient day ranging from $1,401 in Mississippi to $4,744 in California, a 3.4-to-1 ratio. Urban markets in the Northeast, West Coast, and major metros consistently post the highest inpatient costs. Rural markets and Southern states tend to post lower per-day costs, though critical access hospitals may charge higher rates relative to what Medicare pays for non-Medicare patients.",
+        "es": "Mercado geográfico: los datos de KFF 2024 muestran que los gastos hospitalarios por día ajustado de hospitalización van desde $1,401 en Mississippi hasta $4,744 en California. Los mercados urbanos en el noreste, la costa oeste y las principales áreas metropolitanas publican consistentemente los costos de hospitalización más altos."
       },
       {
-        "en": "Prior authorization requirements: commercial insurers and Medicare Advantage plans require prior authorization for all non-emergency elective inpatient admissions. Failure to obtain prior authorization, or admission to an out-of-network facility without emergency circumstances, can result in full patient liability for the stay. Confirm prior authorization status before every planned admission.",
-        "es": "Requisitos de autorización previa: los aseguradores comerciales y los planes Medicare Advantage requieren autorización previa para todas las hospitalizaciones electivas no urgentes. No obtener la autorización previa puede resultar en plena responsabilidad del paciente por la estadía. Confirme el estado de autorización previa antes de cada admisión planificada."
+        "en": "Prior authorization requirements: Medicare Advantage and most commercial plans require prior authorization for planned inpatient admissions. For emergency admissions, prior authorization requirements are suspended during the emergency but the hospital or a family member should notify the insurer within 24 to 48 hours of an emergency admission to avoid retrospective authorization denial. A retrospective denial can convert a covered admission into a full self-pay bill.",
+        "es": "Requisitos de autorización previa: los planes de Medicare Advantage y la mayoría de los planes comerciales requieren autorización previa para admisiones hospitalarias planificadas. Para admisiones de emergencia, el hospital o un familiar debe notificar a la aseguradora dentro de las 24 a 48 horas del ingreso para evitar una denegación retroactiva."
       }
     ]
   },
   "commonBillingErrors": {
     "intro": {
-      "en": "Hospital inpatient bills are among the most error-prone in U.S. healthcare, with studies estimating that 80 percent or more of hospital bills contain at least one error. Request an itemized bill before paying anything, and review it for these common patterns:",
-      "es": "Las facturas hospitalarias de pacientes internados son de las más propensas a errores en la atención médica de EE.UU., con estudios que estiman que el 80 por ciento o más de las facturas hospitalarias contienen al menos un error. Solicite una factura detallada antes de pagar cualquier cosa y revísela para detectar estos patrones comunes:"
+      "en": "Hospital inpatient bills are among the most error-prone in U.S. healthcare, with studies estimating that 80 percent of hospital bills contain at least one error. These are the most common billing errors to check before paying a hospital bill:",
+      "es": "Las facturas de hospitalización son de las más propensas a errores en la atención médica de EE.UU., con estudios que estiman que el 80 por ciento de las facturas hospitalarias contienen al menos un error. Estos son los errores de facturación más comunes a verificar antes de pagar una factura hospitalaria:"
     },
     "items": [
       {
-        "en": "Observation status applied to a multi-night stay when the patient should have been formally admitted as inpatient: if you were in a hospital bed for two or more nights and received skilled-nursing-level care, ask the physician to write an inpatient admission order retroactively. File a Medicare claim appeal if observation status is applied without medical justification.",
-        "es": "Estatus de observación aplicado a una estadía de varias noches cuando el paciente debería haber sido admitido formalmente como internado: si estuvo en una cama de hospital por dos o más noches y recibió atención de nivel de enfermería especializada, pida al médico que escriba una orden de admisión de internado retroactivamente."
+        "en": "Duplicate charges: the same service billed twice (especially for lab tests, medications, or daily room charges). Request an itemized bill and cross-reference each charge with your medical records.",
+        "es": "Cargos duplicados: el mismo servicio facturado dos veces (especialmente análisis de laboratorio, medicamentos o cargos diarios de habitación). Solicite una factura detallada y compare cada cargo con sus registros médicos."
       },
       {
-        "en": "Duplicate charges for the same room, medication, or procedure on consecutive days: review the itemized bill line by line and flag any item that appears on multiple dates without a clinical reason for repetition.",
-        "es": "Cargos duplicados por la misma habitación, medicamento o procedimiento en días consecutivos: revise la factura detallada línea por línea y marque cualquier artículo que aparezca en varias fechas sin una razón clínica para la repetición."
+        "en": "Incorrect DRG assignment: the DRG code drives the Medicare reimbursement and often the insurer's allowed amount. An incorrect principal diagnosis or failure to document a complication can result in either overbilling (if a more expensive DRG is assigned incorrectly) or underbilling. Patients have the right to appeal a DRG assignment with supporting medical records.",
+        "es": "Asignación incorrecta del DRG: el código DRG determina el reembolso de Medicare y a menudo el monto permitido del asegurador. Un diagnóstico principal incorrecto puede resultar en una facturación excesiva. Los pacientes tienen derecho a apelar una asignación de DRG con registros médicos de respaldo."
       },
       {
-        "en": "Out-of-network specialist billed at full rates when the patient was admitted to an in-network facility: under the No Surprises Act (effective January 2022), for emergency admissions and non-emergency services at in-network facilities, out-of-network providers must not balance-bill more than in-network cost-sharing limits. Do not pay an out-of-network balance bill from a specialist you did not choose before checking NSA protections at cms.gov/nosurprisesact.",
-        "es": "Especialista fuera de la red facturado a tarifas completas cuando el paciente fue admitido en una instalación dentro de la red: bajo la Ley de No Sorpresas, para admisiones de emergencia y servicios no urgentes en instalaciones dentro de la red, los proveedores fuera de la red no pueden facturar el saldo más allá de los límites de costos compartidos dentro de la red."
+        "en": "Observation-status billing when inpatient admission was warranted: if the clinical team wrote orders for observation status but the physician documentation supports a full inpatient admission, the hospital may be required to reclassify. Request a Beneficiary and Family Centered Care Quality Improvement Organization (BFCC-QIO) review if you believe you should have been admitted as an inpatient.",
+        "es": "Facturación de estado de observación cuando estaba justificado el ingreso como paciente interno: si la documentación del médico respalda un ingreso completo como paciente interno, el hospital puede estar obligado a reclasificar. Solicite una revisión del BFCC-QIO si cree que debería haber sido admitido como paciente interno."
       },
       {
-        "en": "Medications billed at retail pharmacy prices instead of the hospital formulary rate: hospitals sometimes charge $50 to $200 for a single dose of a medication that costs pennies at cost. Ask for an itemized medication list and compare to typical drug costs.",
-        "es": "Medicamentos facturados a precios de farmacia al por menor en lugar de la tarifa del formulario del hospital: los hospitales a veces cobran $50 a $200 por una dosis única de un medicamento que cuesta centavos al costo."
+        "en": "Out-of-network specialist billed at full chargemaster rate when the facility is in-network: under the No Surprises Act, out-of-network providers who treat you at an in-network facility during an inpatient stay (such as a consulting cardiologist or radiologist) cannot balance-bill you beyond your in-network cost-sharing. Dispute any out-of-network bill from a specialist who treated you in-hospital.",
+        "es": "Especialista fuera de la red facturado a la tarifa completa del chargemaster cuando la instalación está dentro de la red: bajo la Ley de No Sorpresas, los proveedores fuera de la red que lo tratan en una instalación dentro de la red durante una hospitalización no pueden facturarle más allá de su costo compartido dentro de la red."
       },
       {
-        "en": "Physician consultation billed at attending level (high-complexity, long time) when the note does not support that level: ask your physician to review any evaluation-and-management charge coded at the highest level (Level 5, CPT 99233 for inpatient) and confirm the documentation supports it.",
-        "es": "Consulta médica facturada al nivel de médico tratante (alta complejidad, tiempo largo) cuando la nota no lo justifica: pida a su médico que revise cualquier cargo de evaluación y manejo codificado al nivel más alto y confirme que la documentación lo respalda."
+        "en": "Medications billed at retail price instead of the hospital's acquisition cost or a reasonable self-pay rate: hospitals maintain a separate formulary cost basis for inpatient medications. If you are uninsured, ask for the self-pay medication cost schedule before admission for any known medications that will be administered.",
+        "es": "Medicamentos facturados al precio minorista en lugar del costo de adquisición del hospital: los hospitales mantienen una base de costo de formulario separada para medicamentos internos. Si no tiene seguro, pregunte sobre el programa de costo de medicamentos para autopago antes del ingreso."
       },
       {
-        "en": "Supply or implant charged separately from the DRG when it should be bundled: under Medicare IPPS, most routine supplies are bundled into the DRG payment and should not generate a separate patient-facing charge. Flag any line item for 'medical supplies' or 'implants' on a Medicare bill and ask the billing department to confirm it is not bundled.",
-        "es": "Suministro o implante cobrado por separado del DRG cuando debería estar incluido: bajo el IPPS de Medicare, la mayoría de los suministros rutinarios están incluidos en el pago del DRG y no deberían generar un cargo separado para el paciente."
+        "en": "Retained hospital implants or supplies not removed from the bill: if a procedure was cancelled or a supply was returned unused, the item should be removed from the bill. This is a common error on surgical admissions where multiple implant sizes are prepared in the operating room but only one is used.",
+        "es": "Implantes o suministros hospitalarios retenidos que no se eliminaron de la factura: si un procedimiento fue cancelado o un suministro fue devuelto sin usar, el artículo debe eliminarse de la factura. Este es un error común en admisiones quirúrgicas donde se preparan múltiples tamaños de implantes."
       }
     ]
   },
   "faqs": {
     "en": [
       {
-        "question": "How much does a hospital stay cost per day without insurance in 2026?",
-        "answer": "Without insurance, the average hospital stay costs $3,297 per adjusted inpatient day nationally in 2026, based on KFF analysis of 2024 AHA survey data. A typical 5-day stay runs $16,500 to $20,000 at chargemaster list prices. The range is wide: California averages $4,744 per day, Mississippi $1,401. ICU care adds a dramatic premium, running $7,000 to $20,000 per day. Uninsured patients who do not apply for charity care or negotiate a self-pay discount typically receive a bill at or near full chargemaster rates, which can be 60 to 100 percent above what insurers actually pay."
+        "question": "How much does a hospital stay cost without insurance in 2026?",
+        "answer": "A hospital inpatient stay costs $5,000 to $50,000 or more without insurance in 2026, depending on the type of admission, length of stay, and geographic market. The national average hospital expense per adjusted inpatient day is $3,297 (2024 KFF data). A typical short medical admission of 3 to 4 days runs $10,000 to $20,000 in billed charges. A complex surgical or ICU admission can exceed $100,000. Uninsured patients should immediately ask the hospital's billing department about financial assistance, self-pay discounts, and the hospital's charity-care policy, which can reduce bills by 40 to 100 percent."
       },
       {
-        "question": "What does Medicare Part A pay for a hospital stay in 2026?",
-        "answer": "Under Original Medicare Part A in 2026, the inpatient hospital deductible is $1,736 per benefit period. After paying that deductible, the patient pays $0 per day for days 1 through 60. For days 61 through 90, the patient pays $434 per day. Days 91 and beyond use up to 60 lifetime reserve days at $868 per day. Medicare Advantage plans cover the same core benefits but apply different daily copays and have an annual out-of-pocket maximum of no more than $9,350 for in-network services in 2026. Medigap Plan G covers the $1,736 Part A deductible and all inpatient daily coinsurance for enrollees on Original Medicare."
+        "question": "What does Medicare pay for a hospital stay in 2026?",
+        "answer": "Medicare Part A pays the hospital a bundled DRG payment that covers all inpatient services. The Medicare beneficiary owes the 2026 Part A deductible of $1,736 for days 1 through 60 of a covered hospital stay in a benefit period. Days 61 through 90 cost $434 per day. Lifetime reserve days (a one-time pool of 60 days) cost $868 per day. For most short stays of 5 to 7 days, the patient pays only the $1,736 deductible. Medicare Advantage plans have their own copayment structures. Medigap Plan G covers the full $1,736 deductible, leaving the beneficiary with no additional inpatient hospital cost-sharing."
       },
       {
         "question": "How do I request a Good Faith Estimate for a hospital stay?",
-        "answer": "Call the hospital's billing or financial counseling department and identify yourself as self-pay or uninsured. Ask for a written Good Faith Estimate that includes room and board charges, all anticipated procedures with their codes, anesthesia estimates, laboratory and imaging charges, and separately billed physician fees. Provide your ZIP code and planned admission date. Under the No Surprises Act, if the admission is scheduled 10 or more business days out, the hospital must provide the GFE at least 3 business days before. If scheduled 3 to 9 business days out, the GFE must arrive 1 business day before. Keep the written GFE: if your final bill exceeds the estimate by $400 or more, you can file a dispute at cms.gov/nosurprisesact within 120 days."
+        "answer": "Contact the hospital's patient financial services department before your scheduled admission and identify yourself as self-pay or uninsured. Ask for a written Good Faith Estimate that includes the expected facility charges, room and board, all physician professional fees (hospitalist, attending, anesthesiologist, consulting specialists), anticipated lab and imaging charges, and the expected length of stay. If your admission is scheduled at least 10 business days out, the hospital must provide the estimate at least 3 business days before your admission date. If scheduled 3 to 9 business days out, the estimate arrives at least 1 business day before. Keep the written estimate. If the final bill exceeds it by $400 or more per provider, you have 120 days to file a dispute at cms.gov/nosurprisesact."
       },
       {
         "question": "What is the No Surprises Act and does it apply to hospital stays?",
-        "answer": "The No Surprises Act, effective January 1, 2022, protects patients from unexpected out-of-network charges in certain hospital settings. For emergency hospital stays, the law prohibits out-of-network providers from balance-billing patients beyond in-network cost-sharing amounts, regardless of where the care was delivered. For non-emergency services at in-network hospitals, out-of-network specialists (such as anesthesiologists, radiologists, or hospitalists) cannot balance-bill unless the patient gives informed written consent and waives NSA protections at least 72 hours before the service. The No Surprises Act also guarantees the Good Faith Estimate right for self-pay and uninsured patients. Full consumer guidance is at healthcare.gov/health-care-law-protections."
+        "answer": "The No Surprises Act took effect January 1, 2022 and provides two key protections for hospital patients. First, uninsured and self-pay patients have the right to a written Good Faith Estimate before any scheduled hospital service. Second, insured patients receiving emergency care or scheduled care at an in-network facility cannot be balance-billed by out-of-network providers (such as emergency physicians, hospitalists, radiologists, or anesthesiologists) who treat them during that admission. If an out-of-network specialist bills you at rates above your in-network cost-sharing during an inpatient stay, you can file a complaint at the No Surprises Act help desk. The federal consumer portal is at cms.gov/nosurprisesact."
       },
       {
         "question": "How do I get a written cash-pay quote for a hospital stay?",
-        "answer": "Contact the hospital's financial counseling or patient accounts department and ask for the self-pay or cash price for your planned admission, not the chargemaster rate. Under the 2021 CMS hospital price transparency rule, every hospital must publish a discounted cash price for self-pay patients alongside chargemaster rates. For a planned procedure, ask for the bundled cash price that includes the facility fee, operating room, anesthesia, and routine supplies. Get the quote in writing before admission. If the hospital cannot provide a specific cash price, request a Good Faith Estimate under the No Surprises Act. Independent or specialty hospitals sometimes offer flat-rate surgery packages that are 30 to 50 percent below major medical center rates for common elective procedures."
+        "answer": "Call the hospital's patient financial services or admissions department before your scheduled procedure and ask two questions: (1) What is the self-pay or cash-pay price for my expected admission, and does it include all physician fees, anesthesia, lab, and imaging? (2) Does the hospital have a financial assistance or charity-care program I may qualify for? Get the price in writing as a formal Good Faith Estimate. Under CMS hospital price transparency rules, hospitals must also publish their standard charges and discounted cash prices in a machine-readable file. You can search hospital price files at cms.gov/hospital-price-transparency. For planned surgical procedures, compare the hospital outpatient cash price against ambulatory surgery center rates, which are typically 30 to 60 percent lower."
       },
       {
         "question": "Can I negotiate a hospital bill after the fact?",
-        "answer": "Yes, and patients who negotiate or apply for financial assistance typically reduce hospital bills by 30 to 70 percent. Apply for the hospital's financial assistance (charity care) program immediately: under IRS Section 501(r), every nonprofit hospital must accept applications for up to 240 days after the first billing statement. Ask the billing department for a prompt-pay or lump-sum settlement discount (typically 20 to 40 percent off the remaining balance for cash payment within 30 days). If your bill exceeds your Good Faith Estimate by $400 or more, file a patient-provider dispute resolution (PPDR) claim at cms.gov/nosurprisesact within 120 days of the bill date. A medical billing advocate can often identify duplicate charges, upcoded services, or unbundled items that reduce the total."
+        "answer": "Yes. Hospital bills are among the most negotiable in U.S. healthcare. After receiving a bill, ask the hospital for an itemized statement and compare it against the Good Faith Estimate if you received one. Common negotiation strategies include: requesting the hospital's self-pay or charity-care discount (many nonprofit hospitals offer 20 to 60 percent reductions); offering a lump-sum cash-pay-now settlement (hospitals often accept 40 to 60 cents on the dollar for prompt payment); setting up a zero-interest payment plan if you cannot pay the negotiated amount immediately; and filing a patient-provider dispute resolution claim at cms.gov/nosurprisesact if the bill exceeds the Good Faith Estimate by $400 or more. Medical bill negotiation advocates report typical reductions of 30 to 50 percent from the initial billed amount."
       },
       {
-        "question": "What is the difference between hospital inpatient and observation status cost?",
-        "answer": "The financial difference is significant. Inpatient status triggers Medicare Part A: one $1,736 deductible per benefit period (2026), then $0 per day for days 1 to 60. Observation status is billed under Medicare Part B as an outpatient service: 20 percent coinsurance on each separately billed service after the $283 Part B deductible (2026). For a 3-night hospital stay, inpatient status costs the Medicare patient $1,736 total; observation status can generate $1,500 to $4,000 or more in Part B cost-sharing depending on the services provided. Critically, observation status does not count toward the 3-day qualifying inpatient stay required before Medicare covers skilled nursing facility care after hospitalization."
+        "question": "What is the difference between inpatient admission and observation status?",
+        "answer": "Inpatient admission means a physician has formally ordered you to be admitted as a hospital inpatient, and Medicare Part A (or your commercial plan's inpatient benefit) applies. Observation status means you are being monitored in the hospital as a technical outpatient, even if you spend one or more nights in a hospital bed. Under Medicare, observation patients are billed under Part B (20 percent coinsurance after the $283 Part B deductible), not Part A, and observation days do not count toward the three qualifying inpatient days required for Medicare-covered skilled nursing facility care. Always ask the care team in writing whether you have been formally admitted. If you disagree with an observation-status designation, ask to speak with the hospital's patient advocate and request a BFCC-QIO review."
       },
       {
         "question": "Will my insurance cover a hospital stay?",
-        "answer": "Most commercial health insurance plans, ACA-compliant plans, and government programs (Medicare, Medicaid) cover inpatient hospital stays for medically necessary admissions. Coverage details vary: HDHP plans require the full deductible (up to $9,200 individual in 2026) before covering inpatient costs; then typically 20 to 30 percent coinsurance applies until the annual out-of-pocket maximum of $9,200 is met. Nearly all commercial and Medicare Advantage plans require prior authorization for non-emergency elective admissions. Emergency admissions are covered regardless of prior authorization under federal law. Medicaid covers inpatient stays with minimal to no patient cost-sharing, depending on the state. Check your plan's Summary of Benefits at healthcare.gov or medicare.gov before any planned admission."
+        "answer": "Most ACA-compliant health plans cover medically necessary inpatient hospital stays after you meet your annual deductible and pay your coinsurance (typically 20 to 30 percent) until you reach the plan's out-of-pocket maximum. For 2026, ACA plans cap individual out-of-pocket costs at $10,600. Prior authorization is required by most commercial plans and Medicare Advantage for planned admissions. Emergency admissions are covered without prior authorization, but you or a family member should notify the insurer within 24 to 48 hours to avoid a retrospective denial. If admitted to an out-of-network hospital for an emergency, the No Surprises Act limits your cost-sharing to your in-network cost-sharing levels for emergency services. Always confirm with your insurer that the hospital and attending physicians are in-network before a planned admission."
       },
       {
-        "question": "What is the difference between a hospital inpatient stay and an ER visit?",
-        "answer": "An emergency room (ER) visit is an outpatient encounter, billed under a facility emergency department E/M code with a professional fee from the ER physician. An inpatient hospital stay occurs when the physician writes an inpatient admission order, formally admitting the patient after the ER or directly. ER visits typically cost $500 to $3,500 per visit depending on acuity level (Level 1 through Level 5), while a full inpatient stay adds room, board, nursing, medications, and ancillary services on top of any procedure costs. A patient who spends 12 hours in the ER without a formal inpatient admission order is still an outpatient, even if occupying an ER bed overnight. That distinction matters significantly for Medicare cost-sharing and SNF eligibility."
+        "question": "What is the difference between a hospital inpatient stay and a skilled nursing facility stay?",
+        "answer": "A hospital inpatient stay is acute care, typically for a new illness, injury, or surgery requiring 24-hour monitoring by physicians and nurses. A skilled nursing facility (SNF) stay is post-acute rehabilitative care following a hospital discharge. Under Medicare Part A, SNF coverage requires a qualifying three-night inpatient hospital stay. Medicare covers SNF care with no cost-sharing for days 1 through 20, then $217 per day for days 21 through 100 in 2026. After day 100, Medicare pays nothing and the patient transitions to Medicaid (if eligible), a long-term care insurance policy, or private pay. Observation-status hospital nights do not count toward the qualifying three-day inpatient stay for SNF coverage, which is why inpatient-vs-observation status is such a high-stakes distinction for Medicare beneficiaries."
       },
       {
-        "question": "How does the Medicare Part A deductible work if I am hospitalized multiple times in a year?",
-        "answer": "Medicare Part A uses a benefit period structure, not a calendar-year structure. Each benefit period begins on the day of admission and ends when the patient has not received inpatient hospital or skilled nursing facility care for 60 consecutive days. A new benefit period, and a new $1,736 deductible (2026), begins with the next admission after that 60-day gap. A patient hospitalized twice in the same calendar year but with a 60-day gap between stays pays two $1,736 deductibles. A patient with continuous inpatient or SNF care within 60 days of the prior stay remains in the same benefit period and does not pay the deductible again. Medigap policies such as Plan G cover each Part A deductible regardless of how many benefit periods occur in a year."
+        "question": "What financial assistance programs can reduce a hospital bill?",
+        "answer": "Several programs can significantly reduce a hospital bill for uninsured or underinsured patients. Nonprofit hospitals are legally required to offer charity care under IRS Section 501(r), typically for patients earning up to 200 to 400 percent of the federal poverty level. Medicaid retroactive eligibility can cover a hospital bill after the fact if you enroll within the application window. State pharmaceutical assistance programs and state-funded indigent care programs may cover specific costs. The Hill-Burton program (federal) provides free or reduced-cost care at some participating facilities. After discharge, the medical bill analyzer at /medical-bill-analyzer can help identify billing errors and negotiation opportunities. Federally Qualified Health Centers provide primary and preventive care on a sliding-scale basis for follow-up care after a hospital discharge."
       }
     ],
     "es": [
       {
-        "question": "¿Cuánto cuesta una hospitalización por día sin seguro en 2026?",
-        "answer": "Sin seguro, la hospitalización promedio cuesta $3,297 por día de internación ajustado a nivel nacional en 2026, según el análisis de KFF de los datos de la Encuesta AHA 2024. Una estadía típica de 5 días cuesta entre $16,500 y $20,000 a precios de lista del chargemaster. El rango es amplio: California promedia $4,744 por día, Mississippi $1,401. La atención en UCI agrega un costo significativo: $7,000 a $20,000 por día. Los pacientes no asegurados que no solicitan atención benéfica ni negocian un descuento para autopago típicamente reciben una factura al precio de lista completo del chargemaster, que puede ser del 60 al 100 por ciento por encima de lo que realmente pagan los aseguradores."
+        "question": "¿Cuánto cuesta una hospitalización sin seguro en 2026?",
+        "answer": "Una hospitalización cuesta de $5,000 a $50,000 o más sin seguro en 2026, dependiendo del tipo de ingreso, la duración de la estadía y el mercado geográfico. El gasto promedio nacional del hospital por día ajustado de hospitalización es de $3,297 (datos KFF 2024). Una hospitalización médica corta típica de 3 a 4 días cuesta de $10,000 a $20,000 en cargos facturados. Los pacientes sin seguro deben preguntar de inmediato al departamento de facturación del hospital sobre asistencia financiera, descuentos de autopago y la política de atención benéfica, que puede reducir las facturas entre un 40 y un 100 por ciento."
       },
       {
-        "question": "¿Qué paga Medicare Parte A por una hospitalización en 2026?",
-        "answer": "Bajo Medicare Original Parte A en 2026, el deducible de hospitalización es de $1,736 por período de beneficio. Después de pagar ese deducible, el paciente paga $0 por día para los días 1 al 60. Para los días 61 al 90, el paciente paga $434 por día. Los días 91 en adelante usan hasta 60 días de reserva de por vida a $868 por día. Los planes Medicare Advantage cubren los mismos beneficios básicos pero aplican diferentes copagos diarios y tienen un máximo anual de gastos de bolsillo de no más de $9,350 para servicios dentro de la red en 2026. El Plan G de Medigap cubre el deducible de $1,736 de la Parte A y todo el coseguro diario de hospitalización para los afiliados en Medicare Original."
+        "question": "¿Cuánto paga Medicare por una hospitalización en 2026?",
+        "answer": "Medicare Parte A paga al hospital un pago DRG agrupado que cubre todos los servicios de hospitalización. El beneficiario de Medicare debe el deducible de Parte A de 2026 de $1,736 por los días 1 al 60 de una estadía hospitalaria cubierta en un período de beneficios. Los días 61 al 90 cuestan $434 por día. Para la mayoría de las estadías cortas de 5 a 7 días, el paciente paga solo el deducible de $1,736. Los planes de Medicare Advantage tienen sus propias estructuras de copago. El Plan G de Medigap cubre el deducible completo de $1,736."
       },
       {
         "question": "¿Cómo solicito una Estimación de Buena Fe para una hospitalización?",
-        "answer": "Llame al departamento de facturación o asesoría financiera del hospital e identifíquese como paciente de autopago o sin seguro. Solicite una Estimación de Buena Fe escrita que incluya los cargos de habitación y alimentación, todos los procedimientos anticipados con sus códigos, estimaciones de anestesia, cargos de laboratorio e imágenes y honorarios médicos facturados por separado. Bajo la Ley de No Sorpresas, si la admisión está programada con 10 o más días hábiles de anticipación, el hospital debe proporcionar la Estimación al menos 3 días hábiles antes. Si está programada con 3 a 9 días hábiles de anticipación, debe llegar 1 día hábil antes. Guarde la Estimación de Buena Fe escrita: si su factura final supera la estimación en $400 o más, puede presentar una disputa en cms.gov/nosurprisesact dentro de los 120 días."
+        "answer": "Contacte el departamento de servicios financieros del paciente del hospital antes de su ingreso programado e identifíquese como autopagante o sin seguro. Solicite una Estimación de Buena Fe escrita que incluya los cargos de instalación esperados, todos los honorarios médicos profesionales, los cargos de laboratorio e imágenes anticipados y la duración esperada de la estadía. Si su ingreso está programado con al menos 10 días hábiles de anticipación, el hospital debe proporcionar la estimación al menos 3 días hábiles antes. Conserve la estimación escrita. Si la factura final supera la estimación en $400 o más por proveedor, tiene 120 días para presentar una disputa en cms.gov/nosurprisesact."
       },
       {
-        "question": "¿Qué es la Ley de No Sorpresas y se aplica a las hospitalizaciones?",
-        "answer": "La Ley de No Sorpresas, vigente desde el 1 de enero de 2022, protege a los pacientes de cargos inesperados fuera de la red en ciertos entornos hospitalarios. Para hospitalizaciones de emergencia, la ley prohíbe a los proveedores fuera de la red facturar el saldo a los pacientes más allá de los montos de costos compartidos dentro de la red. Para servicios no urgentes en hospitales dentro de la red, los especialistas fuera de la red no pueden facturar el saldo sin el consentimiento escrito informado del paciente. La Ley de No Sorpresas también garantiza el derecho a la Estimación de Buena Fe para pacientes de autopago y sin seguro. La guía completa para consumidores está en healthcare.gov."
+        "question": "¿Qué es la Ley de No Sorpresas y aplica a las hospitalizaciones?",
+        "answer": "La Ley de No Sorpresas entró en vigor el 1 de enero de 2022 y brinda dos protecciones clave para los pacientes hospitalizados. Primero, los pacientes sin seguro y de autopago tienen derecho a una Estimación de Buena Fe escrita antes de cualquier servicio hospitalario programado. Segundo, los pacientes asegurados que reciben atención de emergencia o atención programada en una instalación dentro de la red no pueden ser facturados por el exceso de saldo por proveedores fuera de la red (como médicos de emergencias, hospitalistas, radiólogos o anestesiólogos) que los tratan durante esa admisión. El portal federal del consumidor está en cms.gov/nosurprisesact."
       },
       {
-        "question": "¿Cómo obtengo una cotización de precio de autopago para una hospitalización?",
-        "answer": "Contacte el departamento de asesoría financiera del hospital y pregunte por el precio de autopago o en efectivo para su admisión planificada, no el precio del chargemaster. Bajo la regla de transparencia de precios hospitalarios de CMS de 2021, cada hospital debe publicar un precio en efectivo con descuento para pacientes de autopago. Para un procedimiento planificado, pida el precio en paquete que incluya el cargo de instalación, el quirófano, la anestesia y los suministros rutinarios. Obtenga la cotización por escrito antes de la admisión. Si el hospital no puede proporcionar un precio específico, solicite una Estimación de Buena Fe bajo la Ley de No Sorpresas."
+        "question": "¿Cómo obtengo una cotización de precio al contado para una hospitalización?",
+        "answer": "Llame al departamento de servicios financieros del paciente del hospital antes del procedimiento programado y haga dos preguntas: (1) ¿Cuál es el precio de autopago o pago en efectivo para mi ingreso esperado, e incluye todos los honorarios médicos, anestesia, laboratorio e imágenes? (2) ¿El hospital tiene un programa de asistencia financiera o atención benéfica para el que pueda calificar? Obtenga el precio por escrito como una Estimación de Buena Fe formal. Para procedimientos quirúrgicos planificados, compare el precio al contado del hospital con las tarifas de los centros de cirugía ambulatoria, que son típicamente del 30 al 60 por ciento más bajas."
       },
       {
-        "question": "¿Puedo negociar una factura hospitalaria después de recibirla?",
-        "answer": "Sí, y los pacientes que negocian o solicitan asistencia financiera típicamente reducen las facturas hospitalarias entre un 30 y un 70 por ciento. Solicite inmediatamente el programa de asistencia financiera del hospital: bajo la Sección 501(r) del IRS, cada hospital sin fines de lucro debe aceptar solicitudes hasta 240 días después del primer estado de cuenta. Pregunte al departamento de facturación por un descuento por pago rápido o liquidación de suma global. Si su factura supera su Estimación de Buena Fe en $400 o más, presente un reclamo de resolución de disputas en cms.gov/nosurprisesact dentro de los 120 días. Un defensor de facturación médica puede identificar cargos duplicados o servicios sobrecodificados."
+        "question": "¿Puedo negociar una factura hospitalaria después?",
+        "answer": "Sí. Las facturas hospitalarias son de las más negociables en la atención médica de EE.UU. Después de recibir una factura, solicite un estado detallado y compárelo con la Estimación de Buena Fe si recibió una. Las estrategias comunes de negociación incluyen: solicitar el descuento de autopago o atención benéfica del hospital (muchos hospitales sin fines de lucro ofrecen reducciones del 20 al 60 por ciento); ofrecer un acuerdo de pago en efectivo a suma global (los hospitales a menudo aceptan de 40 a 60 centavos por dólar por pago inmediato); y presentar una reclamación de resolución de disputas en cms.gov/nosurprisesact si la factura supera la Estimación de Buena Fe en $400 o más."
       },
       {
-        "question": "¿Cuál es la diferencia entre el costo de internado y el estatus de observación?",
-        "answer": "La diferencia financiera es significativa. El estatus de internado activa Medicare Parte A: un deducible de $1,736 por período de beneficio (2026), luego $0 por día para los días 1 a 60. El estatus de observación se factura bajo Medicare Parte B como servicio ambulatorio: coseguro del 20 por ciento en cada servicio facturado por separado después del deducible de $283 de la Parte B (2026). Para una estadía de 3 noches, el estatus de internado cuesta al paciente de Medicare $1,736 en total; el estatus de observación puede generar de $1,500 a $4,000 o más. Fundamentalmente, el estatus de observación no cuenta hacia la estadía de internado de 3 días requerida antes de que Medicare cubra la atención en una instalación de enfermería especializada."
+        "question": "¿Cuál es la diferencia entre ingreso como paciente interno y estado de observación?",
+        "answer": "El ingreso como paciente interno significa que un médico ha ordenado formalmente su admisión como paciente interno del hospital y se aplica Medicare Parte A. El estado de observación significa que está siendo monitoreado en el hospital como paciente técnicamente ambulatorio, aunque pase una o más noches en una cama hospitalaria. Bajo Medicare, los pacientes en observación se facturan bajo la Parte B (coseguro del 20% después del deducible de Parte B de $283), y los días de observación no cuentan para los tres días de ingreso calificados requeridos para la atención en instalaciones de enfermería especializada cubierta por Medicare."
       },
       {
         "question": "¿Mi seguro cubrirá una hospitalización?",
-        "answer": "La mayoría de los planes de seguro médico comerciales, los planes ACA y los programas gubernamentales (Medicare, Medicaid) cubren las hospitalizaciones médicamente necesarias. Los detalles de cobertura varían: los planes HDHP requieren el deducible completo (hasta $9,200 individual en 2026) antes de cubrir los costos de hospitalización; luego típicamente se aplica un coseguro del 20 al 30 por ciento hasta alcanzar el máximo de gastos de bolsillo anual de $9,200. Casi todos los planes comerciales y de Medicare Advantage requieren autorización previa para admisiones electivas no urgentes. Las admisiones de emergencia están cubiertas independientemente de la autorización previa bajo la ley federal. Verifique el Resumen de Beneficios de su plan en healthcare.gov o medicare.gov antes de cualquier admisión planificada."
+        "answer": "La mayoría de los planes ACA cubren las hospitalizaciones médicamente necesarias después de que cumpla con su deducible anual y pague su coseguro (típicamente del 20 al 30 por ciento) hasta alcanzar el máximo de bolsillo del plan. Para 2026, los planes ACA limitan los costos de bolsillo individuales a $10,600. La mayoría de los planes comerciales y Medicare Advantage requieren autorización previa para ingresos planificados. Las admisiones de emergencia están cubiertas sin autorización previa, pero usted o un familiar debe notificar a la aseguradora dentro de las 24 a 48 horas para evitar una denegación retroactiva."
       },
       {
-        "question": "¿Cuál es la diferencia entre una hospitalización de internado y una visita a urgencias?",
-        "answer": "Una visita a urgencias es un encuentro ambulatorio, facturado bajo un código E/M del departamento de urgencias con un honorario profesional del médico de urgencias. Una hospitalización de internado ocurre cuando el médico escribe una orden de admisión de internado. Las visitas a urgencias típicamente cuestan $500 a $3,500 por visita según el nivel de acuidad (Nivel 1 al 5), mientras que una hospitalización completa agrega habitación, alimentación, enfermería, medicamentos y servicios auxiliares. Un paciente que pasa 12 horas en urgencias sin una orden formal de admisión de internado sigue siendo ambulatorio, incluso si ocupa una cama de urgencias durante la noche. Esa distinción es importante para los costos compartidos de Medicare y la elegibilidad para SNF."
+        "question": "¿Cuál es la diferencia entre una hospitalización y una estadía en una instalación de enfermería especializada?",
+        "answer": "Una hospitalización es atención aguda, típicamente para una nueva enfermedad, lesión o cirugía que requiere monitoreo las 24 horas. Una estadía en una instalación de enfermería especializada (SNF) es atención rehabilitativa post-aguda después del alta hospitalaria. Bajo Medicare Parte A, la cobertura de SNF requiere una estadía hospitalaria de tres noches como paciente interno calificado. Medicare cubre la atención SNF sin costo compartido para los días 1 al 20, luego $217 por día para los días 21 al 100 en 2026. Las noches de observación no cuentan para la estadía calificada de tres días como paciente interno para la cobertura de SNF."
       },
       {
-        "question": "¿Cómo funciona el deducible de Medicare Parte A si soy hospitalizado varias veces en un año?",
-        "answer": "Medicare Parte A usa una estructura de período de beneficio, no una estructura de año calendario. Cada período de beneficio comienza el día de la admisión y termina cuando el paciente no ha recibido atención hospitalaria de internado o en instalación de enfermería especializada durante 60 días consecutivos. Un nuevo período de beneficio, y un nuevo deducible de $1,736 (2026), comienza con la próxima admisión después de esa brecha de 60 días. Un paciente hospitalizado dos veces en el mismo año calendario pero con una brecha de 60 días entre estadías paga dos deducibles de $1,736. Las pólizas Medigap como el Plan G cubren cada deducible de la Parte A independientemente de cuántos períodos de beneficio ocurran en un año."
+        "question": "¿Qué programas de asistencia financiera pueden reducir una factura hospitalaria?",
+        "answer": "Varios programas pueden reducir significativamente una factura hospitalaria. Los hospitales sin fines de lucro deben ofrecer atención benéfica bajo la Sección 501(r) del IRS, típicamente para pacientes que ganan hasta el 200 al 400 por ciento del nivel federal de pobreza. La elegibilidad retroactiva de Medicaid puede cubrir una factura hospitalaria después del hecho si se inscribe dentro de la ventana de solicitud. Después del alta, el analizador de facturas médicas en /medical-bill-analyzer puede ayudar a identificar errores de facturación y oportunidades de negociación. Los Centros de Salud Calificados Federalmente proporcionan atención primaria y preventiva en base a escala móvil para el seguimiento post-hospitalario."
       }
     ]
   },
@@ -435,124 +492,110 @@
     },
     {
       "label": {
-        "en": "Federal Poverty Level Guide",
-        "es": "Guía del Nivel Federal de Pobreza"
+        "en": "Federal Poverty Level",
+        "es": "Nivel Federal de Pobreza"
       },
       "href": "/federal-poverty-level"
     }
   ],
   "sources": [
     {
-      "name": "KFF Hospital Expenses per Adjusted Inpatient Day (AHA 2024 data)",
-      "url": "https://www.kff.org/health-costs/state-indicator/expenses-per-inpatient-day/",
-      "note": {
-        "en": "National average of $3,297 per adjusted inpatient day in 2024; state-by-state breakdown from California ($4,744) to Mississippi ($1,401).",
-        "es": "Promedio nacional de $3,297 por día de internación ajustado en 2024; desglose por estado de California ($4,744) a Mississippi ($1,401)."
-      }
-    },
-    {
       "name": "CMS 2026 Medicare Parts A and B Premiums and Deductibles Fact Sheet",
       "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
       "note": {
-        "en": "2026 Part A inpatient hospital deductible: $1,736; days 61-90 coinsurance: $434/day; lifetime reserve days: $868/day; 2026 Part B deductible: $283; Part B premium: $202.90/mo.",
-        "es": "Deducible de hospitalización Parte A 2026: $1,736; coseguro días 61-90: $434/día; días de reserva de por vida: $868/día; deducible Parte B 2026: $283; prima Parte B: $202.90/mes."
+        "en": "2026 Medicare Part A inpatient hospital deductible ($1,736), daily coinsurance amounts for days 61-90 ($434/day) and lifetime reserve days ($868/day), and SNF coinsurance ($217/day for days 21-100).",
+        "es": "Deducible de hospitalización de Medicare Parte A 2026 ($1,736), montos de coseguro diarios para los días 61-90 ($434/día) y días de reserva de por vida ($868/día), y coseguro SNF ($217/día para los días 21-100)."
       }
     },
     {
-      "name": "CMS FY 2026 Hospital Inpatient Prospective Payment System (IPPS) Final Rule",
+      "name": "KFF Hospital Expenses per Adjusted Inpatient Day (State Health Facts)",
+      "url": "https://www.kff.org/health-costs/state-indicator/expenses-per-inpatient-day/",
+      "note": {
+        "en": "National average hospital expense per adjusted inpatient day: $3,297 (2024 data). State-level breakdown from California ($4,744) to Mississippi ($1,401). Source: American Hospital Association annual survey.",
+        "es": "Gasto promedio nacional del hospital por día ajustado de hospitalización: $3,297 (datos 2024). Desglose por estado desde California ($4,744) hasta Mississippi ($1,401)."
+      }
+    },
+    {
+      "name": "CMS FY 2026 IPPS Final Rule Fact Sheet",
       "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2026-hospital-inpatient-prospective-payment-system-ipps-and-long-term-care-hospital-prospective-0",
       "note": {
-        "en": "FY 2026 IPPS final rule effective October 1, 2025: 2.6 percent payment rate update, 772 MS-DRGs, and $5.0 billion net increase in hospital payments.",
-        "es": "Regla final IPPS FY 2026 vigente desde el 1 de octubre de 2025: actualización de tarifas del 2.6 por ciento, 772 MS-DRG, y aumento neto de $5.0 mil millones en pagos hospitalarios."
+        "en": "FY 2026 IPPS final rule establishing a 2.6 percent operating payment rate increase for general acute care hospitals, DRG weight updates, and total estimated $5 billion increase in hospital payments for FY 2026.",
+        "es": "Regla final IPPS FY 2026 que establece un aumento del 2.6 por ciento en las tasas de pago operativo para hospitales de cuidado agudo general, actualizaciones del peso DRG y aumento total estimado de $5 mil millones en pagos hospitalarios."
       }
     },
     {
-      "name": "HealthCare.gov Health Care Law Protections (No Surprises Act)",
-      "url": "https://www.healthcare.gov/health-care-law-protections/",
-      "note": {
-        "en": "Consumer guidance on No Surprises Act protections, including Good Faith Estimate rights for self-pay and uninsured patients and balance-billing protections for emergency and non-emergency services.",
-        "es": "Guía para consumidores sobre las protecciones de la Ley de No Sorpresas, incluyendo los derechos de Estimación de Buena Fe para pacientes sin seguro y las protecciones contra facturas sorpresa."
-      }
-    },
-    {
-      "name": "CMS No Surprises Act Consumer Portal",
+      "name": "CMS No Surprises Act Consumer Resources",
       "url": "https://www.cms.gov/nosurprisesact",
       "note": {
-        "en": "Federal portal for filing patient-provider dispute resolution (PPDR) claims when a final bill exceeds the Good Faith Estimate by $400 or more; consumer guidance on the No Surprises Act.",
-        "es": "Portal federal para presentar reclamos de resolución de disputas proveedor-paciente cuando una factura final supera la Estimación de Buena Fe en $400 o más."
+        "en": "Consumer guidance on Good Faith Estimate rights for uninsured and self-pay patients, patient-provider dispute resolution portal, and balance billing protections under the No Surprises Act effective January 1, 2022.",
+        "es": "Guía para consumidores sobre los derechos a una Estimación de Buena Fe para pacientes sin seguro y de autopago, portal de resolución de disputas paciente-proveedor, y protecciones contra facturación de saldo bajo la Ley de No Sorpresas."
       }
     },
     {
-      "name": "Medicare.gov Inpatient Hospital Care Coverage",
-      "url": "https://www.medicare.gov/coverage/inpatient-hospital-care",
+      "name": "FAIR Health Consumer: Estimating Costs for a Hospital Stay",
+      "url": "https://www.fairhealthconsumer.org/insurance-basics/your-costs/estimating-costs-for-a-hospital-stay",
       "note": {
-        "en": "Medicare coverage of inpatient hospital stays, including the benefit period structure, Part A deductible, and daily coinsurance amounts for 2026.",
-        "es": "Cobertura de Medicare para hospitalizaciones de internados, incluyendo la estructura del período de beneficio, el deducible de la Parte A y los montos de coseguro diario para 2026."
+        "en": "Consumer guidance on how to estimate and compare inpatient hospital costs, including how to read an itemized bill and compare chargemaster prices against allowed amounts.",
+        "es": "Guía para consumidores sobre cómo estimar y comparar los costos de hospitalización, incluyendo cómo leer una factura detallada y comparar los precios del chargemaster con los montos permitidos."
+      }
+    },
+    {
+      "name": "healthcare.gov: Hospital Care Coverage",
+      "url": "https://www.healthcare.gov/coverage/inpatient-care/",
+      "note": {
+        "en": "ACA requirements for inpatient hospital coverage on marketplace plans, including essential health benefit status, cost-sharing structures, and prior authorization requirements for planned admissions.",
+        "es": "Requisitos de la ACA para la cobertura de hospitalización en planes del mercado, incluyendo el estado de beneficio esencial de salud, estructuras de costo compartido y requisitos de autorización previa."
       }
     }
   ],
-  "topicCluster": "procedure-cost",
-  "keyTerms": {
-    "en": [
-      "hospital stay cost per day without insurance",
-      "hospital stay cost per day without insurance 2026",
-      "how much does a hospital stay cost",
-      "hospital stay good faith estimate",
-      "hospital inpatient cost 2026"
-    ],
-    "es": [
-      "costo de hospitalización por día sin seguro",
-      "costo de hospitalización 2026",
-      "cuanto cuesta una hospitalización",
-      "estimación de buena fe hospitalización"
-    ]
-  },
-  "isLighthouse": false,
-  "isDeprecated": false,
   "goodFaithEstimate": {
     "numberedSteps": [
-      "Call the hospital's billing or financial counseling department and identify yourself as self-pay or uninsured before scheduling any planned admission.",
-      "Ask for a written Good Faith Estimate that includes: room and board charges by expected day range, all planned procedures with their diagnosis and procedure codes, anesthesia fee estimate, laboratory and imaging charges, physician professional fees (attending, surgeon, anesthesiologist, radiologist, consulting specialists, each billed separately), pharmacy costs for anticipated medications, and the total expected facility cost.",
-      "Provide your ZIP code, the planned admission date, and a description of the planned procedure or diagnosis so the hospital can calculate the correct DRG estimate.",
-      "Confirm the GFE delivery timing: if the admission is scheduled 10 or more business days out, the hospital must deliver the written GFE at least 3 business days before admission; if scheduled 3 to 9 business days out, the GFE must arrive at least 1 business day before admission.",
-      "Keep the written Good Faith Estimate on file: if your final hospital bill exceeds the GFE by $400 or more, you have the right to file a patient-provider dispute resolution (PPDR) claim within 120 days of the bill date at cms.gov/nosurprisesact."
+      "Contact the hospital's patient financial services or billing department before your scheduled admission and identify yourself as self-pay or uninsured.",
+      "Ask for a written Good Faith Estimate that includes the expected facility charges, room and board, physician professional fees for all providers (hospitalist, attending, anesthesiologist, consulting specialists), anticipated lab and imaging charges, medications, and any implants or supplies.",
+      "Provide the admitting diagnosis or planned procedure name, your ZIP code, and any known complicating conditions the hospital should factor into the estimate.",
+      "Confirm the delivery timing: 3 business days before admission if scheduled 10 or more business days out, or 1 business day before admission if scheduled 3 to 9 business days out.",
+      "Keep the written Good Faith Estimate. If the final bill from any single provider exceeds the estimate by $400 or more, you have 120 days from the date of the bill to file a patient-provider dispute resolution claim at cms.gov/nosurprisesact.",
+      "For emergency admissions, advance GFEs are not required, but you can still request a cost estimate from patient financial services after stabilization.",
+      "Compare the GFE against any prior authorization or pre-service determination from your insurer if you have coverage, to verify that all expected services are pre-authorized."
     ],
     "govStartingUrl": "https://www.cms.gov/nosurprisesact",
     "documentsToBring": [
-      "Photo ID (driver's license or passport)",
-      "Insurance card if any (even if secondary or lapsed)",
-      "Physician referral or hospitalist order for the admission",
+      "Photo ID (driver's license or state ID)",
+      "Insurance card (if you have any coverage, even partial)",
+      "Referral or order from your primary care physician or specialist if required",
       "List of current medications and dosages",
-      "Prior imaging, lab results, or surgical reports relevant to the admission",
-      "Any prior Good Faith Estimate or price quote received from the hospital",
-      "Income documentation if applying for financial assistance at admission"
+      "Prior imaging results or lab reports relevant to the admission",
+      "Any prior authorization number issued by your insurer",
+      "Financial information (pay stubs, tax return) if applying for charity care or financial assistance at the same time"
     ],
     "commonReasonsQuoteChanges": [
-      "Longer-than-expected stay due to complications or slow recovery",
-      "Transfer to a higher-acuity unit (from medical-surgical floor to ICU)",
-      "Unexpected diagnostic procedures or surgeries needed during the admission",
-      "Additional specialist consultants called in who bill separately",
-      "Pharmacy charges for drugs administered during the stay that exceed the estimate",
-      "Out-of-network physician charges for specialists the patient did not select"
+      "Longer-than-anticipated length of stay due to slow recovery, complications, or infection",
+      "Transfer to an ICU or step-down unit not anticipated at the time of the original estimate",
+      "Additional consultations by specialist physicians not listed in the original Good Faith Estimate",
+      "Additional imaging, lab tests, or procedures ordered during the stay based on new clinical findings",
+      "Implants, orthopedic hardware, or surgical supplies that carry separate billing codes and were not listed in the estimate",
+      "Medications administered during the stay at formulary costs higher than estimated"
     ],
-    "deadline": "3 business days before service if scheduled 10 or more business days out; 1 business day before service if scheduled 3 to 9 business days out"
+    "deadline": "3 business days before admission if scheduled 10 or more business days out; 1 business day before admission if scheduled 3 to 9 business days out"
   },
   "selfPayPrograms": {
     "dedicatedSection": true,
     "programTypes": [
-      "Hospital charity care and financial assistance (IRS Section 501(r) required for all nonprofit hospitals)",
-      "Hospital chargemaster self-pay or cash-pay discount (40 to 60 percent off chargemaster list price)",
-      "Sliding-scale Federally Qualified Health Center care for pre- and post-hospital outpatient services",
-      "Negotiated lump-sum or prompt-pay settlement discount on unpaid balances (20 to 40 percent reduction)",
-      "State hospital financial assistance laws (California, Connecticut, Illinois, Maryland, New York, Washington, and others require charity care for all hospitals)"
+      "Hospital charity-care and financial assistance programs (IRS Section 501(r) required for nonprofits)",
+      "Hospital self-pay or cash-pay discount schedule (20 to 60 percent below chargemaster)",
+      "Ambulatory surgery center cash bundles for qualifying planned procedures (30 to 60 percent below hospital chargemaster)",
+      "Medicaid retroactive eligibility (covers hospital bills after the fact within the application window)",
+      "Hill-Burton free and reduced-cost care at federally funded participating facilities",
+      "Sliding-scale follow-up care at Federally Qualified Health Centers after hospital discharge"
     ],
-    "typicalDiscountRange": "40 to 70 percent below chargemaster cash price after financial assistance or negotiated self-pay discount",
+    "typicalDiscountRange": "30 to 60 percent below hospital chargemaster cash price for self-pay discount programs; up to 100 percent for charity-care-eligible patients below 200 percent FPL",
     "howToAsk": [
-      "Before or at admission, ask the hospital billing or social work department: 'Do you have a financial assistance or charity care program? Can I apply today?'",
-      "Ask for the self-pay or discounted cash price for your admission in writing, not the chargemaster rate.",
-      "Request a written Good Faith Estimate under the No Surprises Act so you have a baseline to compare against the final bill.",
-      "Ask whether the cash price includes physician professional fees or whether attending physicians, surgeons, and anesthesiologists bill separately.",
-      "After discharge, ask for a prompt-pay or lump-sum settlement discount: many hospitals reduce balances 20 to 40 percent for cash payment within 30 days."
+      "Call the hospital's patient financial services department before admission and ask: 'What is your self-pay or cash-pay discount policy?'",
+      "Ask: 'Do you have a charity-care or financial assistance program, and what income level qualifies?'",
+      "Get the discounted price in writing as a formal Good Faith Estimate before the admission date",
+      "Ask whether the cash price includes all physician fees, anesthesia, lab, and imaging, or whether those are billed separately",
+      "Ask about a same-day payment discount or settlement rate if you can pay promptly after discharge",
+      "Compare the hospital's cash price against the ambulatory surgery center rate if the procedure may qualify for outpatient setting"
     ]
   }
 }
