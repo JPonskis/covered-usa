@@ -1,0 +1,607 @@
+{
+  "slug": "gig-worker-transition",
+  "eventName": {
+    "en": "Going 1099 (W-2 to Self-Employed)",
+    "es": "Pasando a 1099 (Empleado a Trabajador Independiente)"
+  },
+  "category": "Income Change",
+  "topic": "Health Insurance After Switching from W-2 to Self-Employment",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-10",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "Going 1099 in 2026? Health Insurance After W-2 to Self-Employed",
+      "es": "¿Pasando a 1099 en 2026? Seguro Médico al Ser Trabajador Independiente"
+    },
+    "description": {
+      "en": "Lost employer health coverage going 1099 or self-employed? You have 60 days to enroll. Compare ACA Marketplace, COBRA, and HSA plans for gig workers in 2026.",
+      "es": "¿Pasas a 1099 en 2026? Tienes 60 dias desde la perdida de cobertura. Compara planes ACA con subsidios, COBRA y HSA para trabajadores independientes."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Going 1099 in 2026? Here Is How to Replace Your Employer Health Insurance",
+      "es": "¿Pasando a 1099 en 2026? Aqui Esta Como Reemplazar Su Seguro Medico del Empleador"
+    },
+    "subhero": {
+      "en": "Losing employer-sponsored coverage when you go self-employed triggers a 60-day Special Enrollment Period. Most 1099 workers pay far less than COBRA once ACA subsidies and the self-employment health insurance deduction are factored in.",
+      "es": "Perder la cobertura del empleador al convertirse en trabajador independiente activa un Periodo de Inscripcion Especial de 60 dias. La mayoria de trabajadores 1099 pagan mucho menos que COBRA una vez que se consideran los subsidios del ACA y la deduccion de seguro medico por trabajo independiente."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from your last day of employer coverage",
+      "es": "Tiene 60 dias desde su ultimo dia de cobertura del empleador"
+    },
+    "body": {
+      "en": "Your loss-of-coverage Special Enrollment Period runs 60 days from the date employer coverage ends. For example, if your W-2 coverage ends July 31, 2026, your SEP window closes September 29, 2026. Miss that window and you must wait until the next ACA Open Enrollment Period (November 1 through January 15, 2027) unless another qualifying life event occurs. Medicaid enrollment is available year-round if your projected self-employment income qualifies.",
+      "es": "Su Periodo de Inscripcion Especial por perdida de cobertura dura 60 dias desde la fecha en que termina la cobertura del empleador. Por ejemplo, si su cobertura W-2 termina el 31 de julio de 2026, su ventana de SEP cierra el 29 de septiembre de 2026. Si pierde esa ventana, debe esperar hasta el siguiente Periodo de Inscripcion Abierta del ACA (del 1 de noviembre al 15 de enero de 2027) a menos que ocurra otro evento calificador de vida. La inscripcion en Medicaid esta disponible todo el ano si su ingreso proyectado por trabajo independiente califica."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "COBRA election window",
+          "es": "Ventana de eleccion COBRA"
+        },
+        "days": 60
+      },
+      {
+        "label": {
+          "en": "Spouse employer plan (if applicable)",
+          "es": "Plan del empleador del conyuge (si aplica)"
+        },
+        "days": 30
+      },
+      {
+        "label": {
+          "en": "Medicaid (if income qualifies)",
+          "es": "Medicaid (si el ingreso califica)"
+        },
+        "days": null
+      }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "Switching from a W-2 job to 1099 or self-employment almost always means losing employer-sponsored health insurance, which triggers a 60-day loss-of-coverage Special Enrollment Period (SEP) under the ACA. Your three best options in 2026 are: (1) an ACA Marketplace plan with premium tax credits, typically $0 to $300 per month after subsidies for most 1099 workers; (2) Medicaid if your projected annual self-employment income falls under 138% of the Federal Poverty Level (about $22,025 for a single person in 2026); or (3) COBRA continuation of your old plan, at 102% of the full premium, which ranges from $400 to $900 per month for an individual. For most new 1099 workers who project moderate income, an ACA Silver plan with subsidies beats COBRA on cost. The self-employed health insurance deduction on IRS Schedule 1 further reduces your after-tax premium cost.",
+    "es": "Cambiar de un trabajo W-2 a 1099 o trabajo independiente casi siempre significa perder el seguro medico del empleador, lo que activa un Periodo de Inscripcion Especial (SEP) de 60 dias por perdida de cobertura bajo el ACA. Sus tres mejores opciones en 2026 son: (1) un plan del Mercado ACA con creditos fiscales de prima, tipicamente $0 a $300 al mes despues de subsidios para la mayoria de trabajadores 1099; (2) Medicaid si su ingreso anual proyectado por trabajo independiente cae por debajo del 138% del Nivel de Pobreza Federal (alrededor de $22,025 para una sola persona en 2026); o (3) continuacion COBRA de su plan anterior, al 102% de la prima completa, que oscila entre $400 y $900 al mes para un individuo. Para la mayoria de nuevos trabajadores 1099 con ingresos moderados proyectados, un plan Silver del ACA con subsidios supera a COBRA en costo. La deduccion de seguro medico para trabajadores independientes en el Anexo 1 del IRS reduce aun mas el costo de su prima despues de impuestos."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Going 1099 is one of the most common income-change triggers for losing health coverage in 2026. When you leave a W-2 job to freelance, consult, drive for a rideshare platform, or start your own business, your employer-sponsored health plan ends, often on the last day of the month in which you leave. That single event opens a 60-day loss-of-coverage Special Enrollment Period under the Affordable Care Act, giving you access to ACA Marketplace plans regardless of the annual Open Enrollment calendar. The transition also changes your income profile in ways that affect subsidy eligibility: your projected self-employment income for the rest of the year is what the Marketplace uses to calculate premium tax credits, not your former W-2 salary. Many new 1099 workers dramatically under-estimate their subsidy size because they compare the ACA premium to their current take-home pay rather than to their newly projected annual income. Understanding the Medicaid income limits, the ACA income limits, and the self-employment health insurance deduction all together is the key to making the right decision within your 60-day window.",
+      "es": "Pasar a 1099 es uno de los desencadenantes mas comunes de cambio de ingresos para perder cobertura de salud en 2026. Cuando deja un trabajo W-2 para trabajar de forma independiente, consultar, manejar para una plataforma de transporte compartido o iniciar su propio negocio, su plan de salud patrocinado por el empleador termina, a menudo el ultimo dia del mes en que se va. Ese evento unico abre un Periodo de Inscripcion Especial de 60 dias por perdida de cobertura bajo la Ley de Cuidado de Salud Asequible, dando acceso a planes del Mercado ACA independientemente del calendario anual de Inscripcion Abierta. La transicion tambien cambia su perfil de ingresos de maneras que afectan la elegibilidad para subsidios: su ingreso proyectado por trabajo independiente para el resto del ano es lo que el Mercado usa para calcular los creditos fiscales de prima, no su salario W-2 anterior. Muchos nuevos trabajadores 1099 subestiman dramaticamente el tamano de su subsidio porque comparan la prima del ACA con su pago actual en mano en lugar de con su ingreso anual recien proyectado. Comprender los limites de ingresos de Medicaid, los limites de ingresos del ACA y la deduccion de seguro medico para trabajadores independientes en conjunto es la clave para tomar la decision correcta dentro de su ventana de 60 dias."
+    },
+    {
+      "en": "Three facts you must know before the 60-day clock runs out. First, the Marketplace calculates your subsidy based on your projected income for the calendar year, using Modified Adjusted Gross Income (MAGI). If you go 1099 in July, you use the projected income from July through December, not your January through June W-2 earnings. Second, the self-employed health insurance deduction under IRS Section 162(l) lets you deduct 100% of your health insurance premiums from your federal taxable income, reducing the real after-tax cost of any Marketplace or individual plan. Third, if your projected 2026 self-employment net income is under 138% of the Federal Poverty Level for your household size (about $22,025 for a single person in the 40 expansion states plus DC), Medicaid is free and available year-round. Knowing these three facts converts what feels like a coverage crisis into a manageable enrollment decision. Use the ACA income limits reference and the federal poverty level guidelines to run the numbers before you decide between a Marketplace plan, COBRA, or Medicaid.",
+      "es": "Tres hechos que debe conocer antes de que expire el plazo de 60 dias. Primero, el Mercado calcula su subsidio basandose en su ingreso proyectado para el ano calendario, usando el Ingreso Bruto Ajustado Modificado (MAGI). Si pasa a 1099 en julio, usa el ingreso proyectado de julio a diciembre, no sus ganancias W-2 de enero a junio. Segundo, la deduccion de seguro medico para trabajadores independientes bajo la Seccion 162(l) del IRS le permite deducir el 100% de sus primas de seguro medico de su ingreso imponible federal, reduciendo el costo real despues de impuestos de cualquier plan del Mercado o individual. Tercero, si su ingreso neto proyectado de trabajo independiente 2026 esta por debajo del 138% del Nivel de Pobreza Federal para el tamano de su hogar (alrededor de $22,025 para una sola persona en los 40 estados de expansion mas DC), Medicaid es gratuito y disponible todo el ano. Conocer estos tres hechos convierte lo que parece una crisis de cobertura en una decision de inscripcion manejable. Use la referencia de limites de ingresos del ACA y las pautas del nivel de pobreza federal para hacer los calculos antes de decidir entre un plan del Mercado, COBRA o Medicaid."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Confirm your coverage end date and start your 60-day clock",
+        "es": "Confirme su fecha de fin de cobertura e inicie su plazo de 60 dias"
+      },
+      "text": {
+        "en": "Call your employer's HR department or benefits administrator to get the exact date your group health plan ends. Most W-2 employers end coverage on the last day of the month you separate. Your 60-day SEP window starts the day after coverage ends. Write this date down: it is the single most important deadline in this process. Request a HIPAA Certificate of Creditable Coverage from your old insurer for documentation.",
+        "es": "Llame al departamento de recursos humanos de su empleador o al administrador de beneficios para obtener la fecha exacta en que termina su plan de salud grupal. La mayoria de empleadores W-2 terminan la cobertura el ultimo dia del mes en que se separa. Su ventana SEP de 60 dias comienza el dia despues de que termina la cobertura. Anote esta fecha: es el plazo mas importante de este proceso. Solicite un Certificado HIPAA de Cobertura Acreditable de su antiguo asegurador para documentacion."
+      }
+    },
+    {
+      "name": {
+        "en": "Project your 2026 net self-employment income for MAGI calculation",
+        "es": "Proyecte su ingreso neto de trabajo independiente 2026 para el calculo MAGI"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov or your state Marketplace and enter your projected household income for 2026 using Modified Adjusted Gross Income (MAGI). For self-employed workers, MAGI is your estimated net profit (gross 1099 income minus business deductions) plus any W-2 income earned before the transition. Use a conservative but realistic estimate: understating income can trigger subsidy repayment at tax time via Form 1095-A reconciliation on your 1040. If your projected MAGI is under 138% of FPL for your household size, Medicaid likely costs nothing.",
+        "es": "Inicie sesion en healthcare.gov o su Mercado estatal e ingrese su ingreso familiar proyectado para 2026 usando el Ingreso Bruto Ajustado Modificado (MAGI). Para los trabajadores independientes, el MAGI es su ganancia neta estimada (ingreso bruto 1099 menos deducciones comerciales) mas cualquier ingreso W-2 ganado antes de la transicion. Use una estimacion conservadora pero realista: subestimar el ingreso puede desencadenar el reembolso del subsidio a la hora de declarar impuestos a traves de la reconciliacion del Formulario 1095-A en su 1040. Si su MAGI proyectado esta por debajo del 138% del FPL para el tamano de su hogar, Medicaid probablemente no le costara nada."
+      }
+    },
+    {
+      "name": {
+        "en": "Check Medicaid eligibility at your state agency before comparing Marketplace plans",
+        "es": "Verifique la elegibilidad de Medicaid en la agencia estatal antes de comparar planes del Mercado"
+      },
+      "text": {
+        "en": "Apply for Medicaid through your state Medicaid agency or through healthcare.gov before selecting a Marketplace plan. In the 40 expansion states plus DC, eligibility is based on projected household income under 138% FPL, which in 2026 equals about $22,025 for a single person or $45,540 for a family of four. Medicaid is year-round, so missing the 60-day SEP does not affect Medicaid access. State programs use different brand names: California's Medi-Cal, Arizona's AHCCCS, Washington's Apple Health, Massachusetts' MassHealth, Wisconsin's BadgerCare. Check your state program directly if you are near the income threshold.",
+        "es": "Solicite Medicaid a traves de la agencia estatal de Medicaid o a traves de healthcare.gov antes de seleccionar un plan del Mercado. En los 40 estados de expansion mas DC, la elegibilidad se basa en el ingreso familiar proyectado por debajo del 138% FPL, que en 2026 equivale a aproximadamente $22,025 para una sola persona o $45,540 para una familia de cuatro. Medicaid es durante todo el ano, por lo que perder el SEP de 60 dias no afecta el acceso a Medicaid. Los programas estatales usan nombres de marca diferentes: Medi-Cal de California, AHCCCS de Arizona, Apple Health de Washington, MassHealth de Massachusetts, BadgerCare de Wisconsin. Consulte directamente su programa estatal si esta cerca del umbral de ingresos."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare ACA Marketplace plans and calculate your after-subsidy premium",
+        "es": "Compare planes del Mercado ACA y calcule su prima despues del subsidio"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov (or your state's Marketplace portal) and use the plan comparison tool to see Silver, Gold, and Bronze plans available at your ZIP code for your 2026 SEP window. The Marketplace will apply your projected premium tax credit automatically. Most 1099 workers at 200% to 400% FPL find Silver plans range from $30 to $250 per month after credits. For 2026, the ACA subsidy cliff returned at 400% FPL after enhanced subsidies from the American Rescue Plan expired January 1, 2026. Pay careful attention to provider networks against your current doctors before finalizing a plan. Save your 1095-A form at year end for IRS reconciliation.",
+        "es": "Inicie sesion en healthcare.gov (o el portal del Mercado de su estado) y use la herramienta de comparacion de planes para ver los planes Silver, Gold y Bronze disponibles en su codigo postal para su ventana SEP de 2026. El Mercado aplicara automaticamente su credito fiscal de prima proyectado. La mayoria de los trabajadores 1099 al 200% al 400% FPL encuentran que los planes Silver oscilan entre $30 y $250 al mes despues de creditos. Para 2026, el acantilado de subsidios del ACA regreso al 400% FPL despues de que los subsidios mejorados del Plan de Rescate Americano expiraron el 1 de enero de 2026. Preste mucha atencion a las redes de proveedores con respecto a sus medicos actuales antes de finalizar un plan. Guarde su formulario 1095-A a fin de ano para la reconciliacion del IRS."
+      }
+    },
+    {
+      "name": {
+        "en": "Evaluate COBRA only as a fallback, not your default",
+        "es": "Evalua COBRA solo como respaldo, no como opcion predeterminada"
+      },
+      "text": {
+        "en": "Elect COBRA continuation coverage through your former employer's COBRA administrator within 60 days of your coverage loss. COBRA charges 102% of the full group premium, covering both the employer and employee share plus a 2% administrative fee. For 2026, typical COBRA costs run $450 to $900 per month for an individual plan and $1,200 to $2,800 per month for a family plan. Federal COBRA applies to employers with 20 or more employees; smaller employers may offer state mini-COBRA programs. COBRA's primary advantage is keeping your current provider network and any partially-met deductible for the calendar year. Compare this specific benefit against the potential savings of an ACA Marketplace plan before electing.",
+        "es": "Elija la cobertura de continuacion COBRA a traves del administrador COBRA de su ex empleador dentro de los 60 dias de su perdida de cobertura. COBRA cobra el 102% de la prima grupal completa, cubriendo la parte del empleador y del empleado mas una tarifa administrativa del 2%. Para 2026, los costos tipicos de COBRA van de $450 a $900 al mes para un plan individual y de $1,200 a $2,800 al mes para un plan familiar. El COBRA federal se aplica a empleadores con 20 o mas empleados; los empleadores mas pequenos pueden ofrecer programas estatales de mini-COBRA. La ventaja principal de COBRA es mantener su red de proveedores actual y cualquier deducible parcialmente cumplido para el ano calendario. Compare este beneficio especifico con los ahorros potenciales de un plan del Mercado ACA antes de elegir."
+      }
+    },
+    {
+      "name": {
+        "en": "Claim the self-employed health insurance deduction on IRS Schedule 1",
+        "es": "Reclame la deduccion de seguro medico para trabajadores independientes en el Anexo 1 del IRS"
+      },
+      "text": {
+        "en": "Self-employed individuals who pay for their own health insurance premiums, including Marketplace plan premiums, COBRA premiums, and dental and vision coverage, can deduct 100% of those premiums from federal taxable income under IRS Section 162(l). Enter the deduction on Schedule 1 (Form 1040), Line 17. This deduction reduces your MAGI for income tax purposes but does not reduce your MAGI for ACA subsidy calculation purposes. The deduction is not available for any month you were eligible for employer-sponsored coverage. Keep all 1095-A forms (Marketplace coverage), 1095-B forms (Medicaid/CHIP), and payment records for your tax preparer.",
+        "es": "Los trabajadores independientes que pagan por sus propias primas de seguro medico, incluidas las primas del plan del Mercado, las primas de COBRA y la cobertura dental y de vision, pueden deducir el 100% de esas primas de su ingreso imponible federal bajo la Seccion 162(l) del IRS. Ingrese la deduccion en el Anexo 1 (Formulario 1040), Linea 17. Esta deduccion reduce su MAGI para fines del impuesto sobre la renta, pero no reduce su MAGI para propositos de calculo de subsidios del ACA. La deduccion no esta disponible para ningun mes en que fuera elegible para la cobertura patrocinada por el empleador. Conserve todos los formularios 1095-A (cobertura del Mercado), formularios 1095-B (Medicaid/CHIP) y registros de pago para su preparador de impuestos."
+      }
+    },
+    {
+      "name": {
+        "en": "Consider an HSA-qualified High Deductible Health Plan if your income is stable",
+        "es": "Considere un Plan de Salud con Deducible Alto calificado para HSA si su ingreso es estable"
+      },
+      "text": {
+        "en": "For 1099 workers with stable, higher self-employment income, a High Deductible Health Plan (HDHP) paired with a Health Savings Account (HSA) can provide a triple tax advantage: contributions to the HSA are pre-tax, growth is tax-free, and withdrawals for qualified medical expenses are tax-free. In 2026, the minimum HDHP deductible is $1,700 for self-only coverage and $3,400 for family coverage per IRS Rev. Proc. 2025-19. The 2026 HSA contribution limit is $4,400 for self-only and $8,750 for family coverage. HDHPs often carry lower monthly premiums than Silver plans, making the combination attractive for healthy 1099 workers who can fund the HSA. Verify that any HDHP you compare is also ACA-compliant (covers essential health benefits) before enrolling.",
+        "es": "Para los trabajadores 1099 con ingresos de trabajo independiente estables y mas altos, un Plan de Salud con Deducible Alto (HDHP) combinado con una Cuenta de Ahorros para Salud (HSA) puede proporcionar una triple ventaja fiscal: las contribuciones a la HSA son antes de impuestos, el crecimiento esta libre de impuestos y los retiros para gastos medicos calificados estan libres de impuestos. En 2026, el deducible minimo del HDHP es $1,700 para cobertura individual y $3,400 para cobertura familiar segun IRS Rev. Proc. 2025-19. El limite de contribucion a la HSA 2026 es $4,400 para cobertura individual y $8,750 para cobertura familiar. Los HDHP a menudo tienen primas mensuales mas bajas que los planes Silver, haciendo que la combinacion sea atractiva para los trabajadores 1099 saludables que pueden financiar la HSA. Verifique que cualquier HDHP que compare tambien sea compatible con el ACA (cubre los beneficios esenciales de salud) antes de inscribirse."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opcion", "Costo tipico", "Mejor para", "Fecha limite"]
+    },
+    "rows": [
+      {
+        "en": ["ACA Marketplace Silver Plan (with subsidies)", "$30 to $250/mo after 2026 premium tax credits", "Most 1099 workers earning 138% to 400% FPL", "60-day SEP from coverage loss"],
+        "es": ["Plan Silver del Mercado ACA (con subsidios)", "$30 a $250/mes despues de creditos fiscales 2026", "La mayoria de trabajadores 1099 que ganan entre 138% y 400% FPL", "SEP de 60 dias desde la perdida de cobertura"]
+      },
+      {
+        "en": ["Medicaid (expansion states)", "Free or near-free", "Income under 138% FPL ($22,025 single, $45,540 family of 4 in 2026)", "Year-round enrollment"],
+        "es": ["Medicaid (estados de expansion)", "Gratuito o casi gratuito", "Ingreso bajo 138% FPL ($22,025 individual, $45,540 familia de 4 en 2026)", "Inscripcion todo el ano"]
+      },
+      {
+        "en": ["COBRA Continuation", "$450 to $2,800/mo (102% of full premium)", "Need to keep current providers or mid-year met deductible", "60 days from coverage loss"],
+        "es": ["Continuacion COBRA", "$450 a $2,800/mes (102% de la prima completa)", "Necesitas mantener proveedores actuales o deducible cumplido a mitad de ano", "60 dias desde la perdida de cobertura"]
+      },
+      {
+        "en": ["HDHP + HSA", "$150 to $400/mo premium + HSA contributions up to $4,400 (self) or $8,750 (family)", "Higher-income 1099 workers in good health wanting tax-advantaged savings", "60-day SEP from coverage loss"],
+        "es": ["HDHP + HSA", "$150 a $400/mes de prima + contribuciones HSA hasta $4,400 (individual) o $8,750 (familiar)", "Trabajadores 1099 de mayores ingresos y buena salud que buscan ahorros con ventajas fiscales", "SEP de 60 dias desde la perdida de cobertura"]
+      },
+      {
+        "en": ["Spouse or domestic partner employer plan", "Varies (often cheapest if available)", "Married/partnered with a W-2 spouse who has employer coverage", "30 days from qualifying event"],
+        "es": ["Plan del empleador del conyuge o pareja", "Varia (a menudo la mas barata si esta disponible)", "Casado o en pareja con un conyuge W-2 con cobertura del empleador", "30 dias desde el evento calificador"]
+      }
+    ],
+    "footnote": {
+      "en": "ACA Marketplace costs reflect 2026 premium tax credit levels. The 400% FPL subsidy cliff returned January 1, 2026, after enhanced subsidies under the American Rescue Plan expired. Medicaid income thresholds are for 2026 in the 48 contiguous states plus DC. COBRA costs are estimates; verify with your plan administrator. HDHP deductible minimums per IRS Rev. Proc. 2025-19.",
+      "es": "Los costos del Mercado ACA reflejan los niveles de credito fiscal de prima 2026. El acantilado de subsidios del 400% FPL regreso el 1 de enero de 2026, despues de que expiraron los subsidios mejorados bajo el Plan de Rescate Americano. Los umbrales de ingresos de Medicaid son para 2026 en los 48 estados contiguos mas DC. Los costos de COBRA son estimaciones; verifique con el administrador de su plan. Deducibles minimos del HDHP segun IRS Rev. Proc. 2025-19."
+    },
+    "source": "healthcare.gov, Medicaid.gov, IRS Section 162(l), IRS Rev. Proc. 2025-19, KFF 2026 Marketplace Premium Analysis"
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "The most costly mistakes 1099 workers make during the 60-day coverage transition window:",
+      "es": "Los errores mas costosos que cometen los trabajadores 1099 durante la ventana de transicion de cobertura de 60 dias:"
+    },
+    "items": [
+      {
+        "en": "Using your old W-2 salary as your projected income. The Marketplace uses projected income for the rest of the calendar year after transition, not your annualized prior salary. A July departure means only six months of self-employment income counts toward your 2026 MAGI.",
+        "es": "Usar su salario W-2 anterior como ingreso proyectado. El Mercado usa el ingreso proyectado para el resto del ano calendario despues de la transicion, no su salario anterior anualizado. Una salida en julio significa que solo seis meses de ingresos por trabajo independiente cuentan para su MAGI 2026."
+      },
+      {
+        "en": "Defaulting to COBRA without running the subsidy calculator. COBRA at 102% of full premium typically costs $5,400 to $10,800 per year for an individual. A comparable ACA Silver plan after 2026 premium tax credits often costs $360 to $3,000 per year for the same person.",
+        "es": "Elegir COBRA por defecto sin usar la calculadora de subsidios. COBRA al 102% de la prima completa tipicamente cuesta de $5,400 a $10,800 al ano para un individuo. Un plan Silver del ACA comparable despues de los creditos fiscales de prima 2026 a menudo cuesta de $360 a $3,000 al ano para la misma persona."
+      },
+      {
+        "en": "Missing the 60-day SEP window. Once the window closes, you are locked out of the Marketplace until November 1 through January 15, 2027, unless another qualifying life event occurs. Medicaid remains open, but ACA subsidized plans do not.",
+        "es": "Perder la ventana SEP de 60 dias. Una vez que la ventana se cierra, queda excluido del Mercado hasta el 1 de noviembre al 15 de enero de 2027, a menos que ocurra otro evento calificador de vida. Medicaid sigue abierto, pero los planes subsidiados del ACA no."
+      },
+      {
+        "en": "Forgetting to claim the self-employed health insurance deduction on IRS Schedule 1. This deduction can reduce your federal taxable income by $3,000 to $15,000 or more depending on your premium and household, materially lowering your effective cost of coverage.",
+        "es": "Olvidar reclamar la deduccion de seguro medico para trabajadores independientes en el Anexo 1 del IRS. Esta deduccion puede reducir su ingreso imponible federal en $3,000 a $15,000 o mas dependiendo de su prima y hogar, reduciendo materialmente su costo efectivo de cobertura."
+      },
+      {
+        "en": "Choosing an HDHP without confirming HSA eligibility. If you enroll in Medicare Part A, have a spouse with an FSA, or carry any non-HDHP supplemental coverage, you lose HSA contribution eligibility. Confirm eligibility with your tax advisor before funding the account.",
+        "es": "Elegir un HDHP sin confirmar la elegibilidad para HSA. Si se inscribe en Medicare Parte A, tiene un conyuge con una FSA o lleva cualquier cobertura suplementaria que no sea HDHP, pierde la elegibilidad de contribucion a la HSA. Confirme la elegibilidad con su asesor fiscal antes de financiar la cuenta."
+      },
+      {
+        "en": "Assuming the self-employment health insurance deduction reduces your ACA subsidy MAGI. It does not. The deduction lowers your income tax bill, but ACA premium tax credits are calculated on a separate MAGI figure that does not subtract Schedule 1 health insurance premiums. Over-estimating the combined effect can lead to a subsidy repayment surprise when you file your 1040 with a Form 1095-A.",
+        "es": "Asumir que la deduccion de seguro medico para trabajadores independientes reduce su MAGI de subsidio ACA. No lo hace. La deduccion baja su factura del impuesto sobre la renta, pero los creditos fiscales de prima del ACA se calculan en una cifra MAGI separada que no resta las primas de seguro medico del Anexo 1. Sobreestimar el efecto combinado puede llevar a una sorpresa de reembolso de subsidio cuando presenta su 1040 con el Formulario 1095-A."
+      }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "COBRA vs ACA Marketplace vs Medicaid: Which Should a 1099 Worker Choose?",
+        "es": "COBRA vs Mercado ACA vs Medicaid: ?Que Debe Elegir un Trabajador 1099?"
+      },
+      "paragraphs": [
+        {
+          "en": "Losing W-2 employer coverage in 2026 opens three primary pathways for 1099 workers. COBRA keeps your old plan intact at 102% of the full premium, including both the employer and employee share plus a 2% admin fee. For most workers, this means paying three to five times what they paid as a W-2 employee. A worker previously paying $150 per month toward a $600 group plan will pay $612 per month under COBRA because the employer's $450 contribution disappears. COBRA's value is limited to two scenarios: you have ongoing treatment with a specialist who accepts your current plan but not any ACA Marketplace plan in your area, or you have already met a large calendar-year deductible that you want to preserve through December 31.",
+          "es": "Perder la cobertura del empleador W-2 en 2026 abre tres vias principales para los trabajadores 1099. COBRA mantiene su plan anterior intacto al 102% de la prima completa, incluyendo la parte del empleador y del empleado mas una tarifa de administracion del 2%. Para la mayoria de los trabajadores, esto significa pagar tres a cinco veces lo que pagaban como empleado W-2. Un trabajador que anteriormente pagaba $150 al mes hacia un plan grupal de $600 pagara $612 al mes bajo COBRA porque la contribucion de $450 del empleador desaparece. El valor de COBRA se limita a dos escenarios: tiene tratamiento continuo con un especialista que acepta su plan actual pero no ningun plan del Mercado ACA en su area, o ya ha cumplido un gran deducible del ano calendario que desea preservar hasta el 31 de diciembre."
+        },
+        {
+          "en": "ACA Marketplace plans through healthcare.gov are the most common right choice for new 1099 workers at moderate income levels. Premium tax credits in 2026 are calculated as the difference between the benchmark Silver plan premium and a capped percentage of your projected household MAGI, ranging from roughly 2% of income at 138% FPL to 8.5% of income at 400% FPL. For a single 1099 worker projecting $35,000 in net self-employment income for 2026, the ACA subsidy calculator typically yields a Silver plan at $75 to $180 per month after credits, compared to $500 to $700 per month for COBRA. The 400% FPL subsidy cliff returned for 2026, so workers projecting income above $63,840 (single) receive no premium tax credit. For those workers, compare Bronze HDHP plans paired with HSA contributions to COBRA cost.",
+          "es": "Los planes del Mercado ACA a traves de healthcare.gov son la opcion correcta mas comun para los nuevos trabajadores 1099 con niveles de ingresos moderados. Los creditos fiscales de prima en 2026 se calculan como la diferencia entre la prima del plan Silver de referencia y un porcentaje limitado de su MAGI familiar proyectado, que va desde aproximadamente el 2% de los ingresos al 138% FPL hasta el 8.5% de los ingresos al 400% FPL. Para un solo trabajador 1099 que proyecta $35,000 en ingresos netos de trabajo independiente para 2026, la calculadora de subsidios del ACA tipicamente produce un plan Silver de $75 a $180 al mes despues de creditos, en comparacion con $500 a $700 al mes para COBRA. El acantilado de subsidios del 400% FPL regreso para 2026, por lo que los trabajadores que proyectan ingresos superiores a $63,840 (individual) no reciben credito fiscal de prima. Para esos trabajadores, compare los planes HDHP Bronze combinados con contribuciones a la HSA con el costo de COBRA."
+        },
+        {
+          "en": "Medicaid is the correct answer for 1099 workers whose projected net self-employment income for the remainder of 2026 falls under 138% FPL for their household size. That threshold in 2026 is $22,025 for a single person and $45,540 for a family of four in the 40 expansion states plus DC. Medicaid is year-round and costs nothing in expansion states for most adults. State programs operate under different brand names: Medi-Cal in California, AHCCCS in Arizona, Apple Health in Washington, MassHealth in Massachusetts, BadgerCare in Wisconsin, HUSKY Health in Connecticut. In the 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming), income limits for adults without dependents are typically far below 138% FPL, creating a coverage gap that the Marketplace fills for some but not all income levels.",
+          "es": "Medicaid es la respuesta correcta para los trabajadores 1099 cuyo ingreso neto proyectado de trabajo independiente para el resto de 2026 cae por debajo del 138% FPL para el tamano de su hogar. Ese umbral en 2026 es $22,025 para una sola persona y $45,540 para una familia de cuatro en los 40 estados de expansion mas DC. Medicaid es durante todo el ano y no cuesta nada en estados de expansion para la mayoria de adultos. Los programas estatales operan bajo diferentes nombres de marca: Medi-Cal en California, AHCCCS en Arizona, Apple Health en Washington, MassHealth en Massachusetts, BadgerCare en Wisconsin, HUSKY Health en Connecticut. En los 10 estados sin expansion (Alabama, Florida, Georgia, Kansas, Mississippi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming), los limites de ingresos para adultos sin dependientes tipicamente estan muy por debajo del 138% FPL, creando una brecha de cobertura que el Mercado llena para algunos pero no para todos los niveles de ingresos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Self-Employment Health Insurance Deduction and MAGI: What 1099 Workers Must Know",
+        "es": "Deduccion de Seguro Medico para Trabajadores Independientes y MAGI: Lo que los Trabajadores 1099 Deben Saber"
+      },
+      "paragraphs": [
+        {
+          "en": "The self-employed health insurance deduction under IRS Section 162(l) is one of the most valuable and most misunderstood tax provisions for 1099 workers. The deduction allows you to subtract 100% of premiums paid for health, dental, and qualified long-term care insurance from your gross federal taxable income on Schedule 1 (Form 1040), Line 17. For a 1099 worker paying $400 per month for a Marketplace Silver plan, that is $4,800 in annual deductions against self-employment income, saving roughly $1,200 to $1,800 in federal taxes at typical effective rates. The deduction applies to premiums paid for yourself, your spouse, your dependents, and any child under age 27 at year end, even if the child is not your dependent for tax purposes.",
+          "es": "La deduccion de seguro medico para trabajadores independientes bajo la Seccion 162(l) del IRS es una de las disposiciones fiscales mas valiosas y mas malentendidas para los trabajadores 1099. La deduccion le permite restar el 100% de las primas pagadas por seguros de salud, dental y de cuidado a largo plazo calificados de su ingreso imponible federal bruto en el Anexo 1 (Formulario 1040), Linea 17. Para un trabajador 1099 que paga $400 al mes por un plan Silver del Mercado, eso son $4,800 en deducciones anuales contra el ingreso de trabajo independiente, ahorrando aproximadamente $1,200 a $1,800 en impuestos federales a tasas efectivas tipicas. La deduccion se aplica a las primas pagadas por usted mismo, su conyuge, sus dependientes y cualquier hijo menor de 27 anos al final del ano, incluso si el hijo no es su dependiente a efectos fiscales."
+        },
+        {
+          "en": "Critical distinction: the Schedule 1 self-employment health insurance deduction does NOT reduce your MAGI for ACA premium tax credit purposes. Two separate MAGI computations exist. For income tax, the Schedule 1 deduction reduces your adjusted gross income. For ACA subsidy purposes, the Marketplace calculates a separate MAGI that adds back certain deductions including self-employment health insurance premiums. Practically, this means a 1099 worker projecting $45,000 in net self-employment income who pays $5,000 in health insurance premiums will have a $40,000 AGI for income tax but a $45,000 MAGI for ACA subsidy calculation. Failing to understand this distinction causes both over-claiming of subsidies during the year and surprise repayment via Form 1095-A at tax time. Work with a tax professional familiar with Schedule C filers to reconcile both calculations before choosing your plan.",
+          "es": "Distincion critica: la deduccion de seguro medico para trabajadores independientes del Anexo 1 NO reduce su MAGI para fines del credito fiscal de prima del ACA. Existen dos calculos MAGI separados. Para el impuesto sobre la renta, la deduccion del Anexo 1 reduce su ingreso bruto ajustado. Para fines del subsidio del ACA, el Mercado calcula un MAGI separado que agrega de nuevo ciertas deducciones incluidas las primas de seguro medico para trabajadores independientes. En la practica, esto significa que un trabajador 1099 que proyecta $45,000 en ingresos netos de trabajo independiente y paga $5,000 en primas de seguro medico tendra un AGI de $40,000 para el impuesto sobre la renta pero un MAGI de $45,000 para el calculo del subsidio del ACA. No entender esta distincion causa tanto una reclamacion excesiva de subsidios durante el ano como un reembolso sorpresa a traves del Formulario 1095-A a la hora de declarar impuestos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid Eligibility After Going 1099: Income Thresholds by Household Size (2026)",
+        "es": "Elegibilidad para Medicaid al Pasar a 1099: Umbrales de Ingresos por Tamano del Hogar (2026)"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid eligibility for 1099 workers in the 40 expansion states plus DC is based on projected household MAGI, not last year's tax return. When you transition from W-2 to self-employment mid-year, the relevant income figure is your projected net self-employment earnings for the remainder of the calendar year plus any W-2 income already earned. The income floor for Medicaid expansion in 2026 is 138% of the Federal Poverty Level, which for a single person is approximately $22,025 and for a family of four is approximately $45,540 in the 48 contiguous states and DC. Alaska and Hawaii have higher thresholds. State Medicaid agencies can help you calculate your projected MAGI if you are uncertain, and Medicaid enrollment is always year-round in expansion states, so you can apply even after the 60-day ACA SEP window closes.",
+          "es": "La elegibilidad para Medicaid de los trabajadores 1099 en los 40 estados de expansion mas DC se basa en el MAGI familiar proyectado, no en la declaracion de impuestos del ano pasado. Cuando pasa de W-2 a trabajo independiente a mitad de ano, la cifra de ingresos relevante es sus ganancias netas proyectadas de trabajo independiente para el resto del ano calendario mas cualquier ingreso W-2 ya ganado. El piso de ingresos para la expansion de Medicaid en 2026 es el 138% del Nivel de Pobreza Federal, que para una sola persona es aproximadamente $22,025 y para una familia de cuatro es aproximadamente $45,540 en los 48 estados contiguos y DC. Alaska y Hawaii tienen umbrales mas altos. Las agencias estatales de Medicaid pueden ayudarle a calcular su MAGI proyectado si no esta seguro, y la inscripcion en Medicaid siempre es durante todo el ano en los estados de expansion, por lo que puede solicitar incluso despues de que cierre la ventana SEP de 60 dias del ACA."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Medicaid + ACA Subsidy Income Thresholds by Household Size (2026, 48 States + DC)",
+          "es": "Umbrales de Ingresos Medicaid + Subsidio ACA por Tamano del Hogar (2026, 48 Estados + DC)"
+        },
+        "headers": {
+          "en": ["Household size", "138% FPL (Medicaid expansion)", "400% FPL (ACA subsidy ceiling 2026)"],
+          "es": ["Tamano del hogar", "138% FPL (expansion Medicaid)", "400% FPL (tope de subsidio ACA 2026)"]
+        },
+        "rows": [
+          {
+            "en": ["1", "$22,025", "$63,840"],
+            "es": ["1", "$22,025", "$63,840"]
+          },
+          {
+            "en": ["2", "$29,864", "$86,560"],
+            "es": ["2", "$29,864", "$86,560"]
+          },
+          {
+            "en": ["3", "$37,702", "$109,280"],
+            "es": ["3", "$37,702", "$109,280"]
+          },
+          {
+            "en": ["4", "$45,540", "$132,000"],
+            "es": ["4", "$45,540", "$132,000"]
+          },
+          {
+            "en": ["5", "$53,379", "$154,720"],
+            "es": ["5", "$53,379", "$154,720"]
+          },
+          {
+            "en": ["6", "$61,217", "$177,440"],
+            "es": ["6", "$61,217", "$177,440"]
+          },
+          {
+            "en": ["7", "$69,056", "$200,160"],
+            "es": ["7", "$69,056", "$200,160"]
+          },
+          {
+            "en": ["8", "$76,894", "$222,880"],
+            "es": ["8", "$76,894", "$222,880"]
+          },
+          {
+            "en": ["Each additional person", "+ $7,839", "+ $22,720"],
+            "es": ["Cada persona adicional", "+ $7,839", "+ $22,720"]
+          }
+        ],
+        "footnote": {
+          "en": "Alaska and Hawaii have higher FPL thresholds. The 400% FPL ACA subsidy cliff returned January 1, 2026, after enhanced PTCs under ARPA and IRA expired. Above $63,840 (single) or $132,000 (family of 4), no premium tax credit is available for 2026 Marketplace plans.",
+          "es": "Alaska y Hawaii tienen umbrales FPL mas altos. El acantilado de subsidios ACA del 400% FPL regreso el 1 de enero de 2026, despues de que expiraron los PTCs mejorados bajo ARPA e IRA. Por encima de $63,840 (individual) o $132,000 (familia de 4), no hay credito fiscal de prima disponible para los planes del Mercado 2026."
+        },
+        "source": "HHS ASPE 2026 Poverty Guidelines; CMS ACA premium tax credit thresholds 2026"
+      }
+    }
+  ],
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid + ACA Subsidy Income Limits, 2026 (48 Contiguous States + DC)",
+      "headers": ["Household size", "138% FPL (Medicaid)", "400% FPL (subsidy ceiling pre-cliff)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,864", "$86,560"],
+        ["3", "$37,702", "$109,280"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,379", "$154,720"],
+        ["6", "$61,217", "$177,440"],
+        ["7", "$69,056", "$200,160"],
+        ["8", "$76,894", "$222,880"],
+        ["Each additional", "+ $7,839", "+ $22,720"]
+      ],
+      "footnote": "Alaska and Hawaii thresholds are higher. The 400% FPL subsidy cliff returned for 2026 after enhanced PTCs expired Jan 1, 2026.",
+      "source": "HHS ASPE 2026 Poverty Guidelines + CMS ACA premium tax credit thresholds"
+    },
+    "es": {
+      "caption": "Limites de Ingresos Medicaid + Subsidio ACA, 2026 (48 Estados Contiguos + DC)",
+      "headers": ["Tamano del hogar", "138% FPL (Medicaid)", "400% FPL (tope de subsidio pre-acantilado)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,864", "$86,560"],
+        ["3", "$37,702", "$109,280"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,379", "$154,720"],
+        ["6", "$61,217", "$177,440"],
+        ["7", "$69,056", "$200,160"],
+        ["8", "$76,894", "$222,880"],
+        ["Cada persona adicional", "+ $7,839", "+ $22,720"]
+      ],
+      "footnote": "Los umbrales de Alaska y Hawaii son mas altos. El acantilado de subsidios del 400% FPL regreso para 2026 despues de que los PTCs mejorados expiraron el 1 de enero de 2026.",
+      "source": "Pautas de Pobreza HHS ASPE 2026 + umbrales de credito fiscal de prima CMS ACA"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "Proof of prior employer coverage loss: COBRA election notice, termination letter, or HIPAA Certificate of Creditable Coverage from former employer's insurer",
+      "Last day of employer coverage confirmation in writing (email or letter from HR or benefits administrator)",
+      "Social Security numbers for all household members applying for coverage",
+      "Proof of 1099 or self-employment status: signed contracts, business license, first invoice, or Schedule C from most recent tax return",
+      "Projected 2026 net self-employment income estimate (gross 1099 revenue minus anticipated business deductions)",
+      "W-2 income earned January through separation date (for full-year MAGI calculation)",
+      "Current home address and ZIP code (for plan availability and network lookup)",
+      "Birth certificates or adoption papers for any dependents being added to coverage"
+    ],
+    "es": [
+      "Prueba de perdida de cobertura del empleador anterior: aviso de eleccion COBRA, carta de terminacion o Certificado HIPAA de Cobertura Acreditable del asegurador del ex empleador",
+      "Confirmacion por escrito del ultimo dia de cobertura del empleador (correo electronico o carta de recursos humanos o administrador de beneficios)",
+      "Numeros de Seguro Social para todos los miembros del hogar que solicitan cobertura",
+      "Prueba de estatus 1099 o de trabajo independiente: contratos firmados, licencia comercial, primera factura o Anexo C de la declaracion de impuestos mas reciente",
+      "Estimacion del ingreso neto proyectado de trabajo independiente 2026 (ingresos brutos 1099 menos deducciones comerciales anticipadas)",
+      "Ingresos W-2 ganados desde enero hasta la fecha de separacion (para el calculo MAGI del ano completo)",
+      "Direccion actual y codigo postal (para disponibilidad del plan y consulta de red)",
+      "Certificados de nacimiento o papeles de adopcion para cualquier dependiente que se agregue a la cobertura"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Applying after the 60-day SEP window closed without another qualifying life event (the most common reason Marketplace denies the SEP application)",
+      "Insufficient proof of prior W-2 coverage loss: no COBRA notice, no termination letter, and no HIPAA Certificate of Creditable Coverage submitted with application",
+      "Reporting prior-year W-2 annual income instead of projected current-year self-employment income, resulting in no subsidy or wrong subsidy amount",
+      "Failing to confirm Medicaid eligibility first when projected income is near 138% FPL, leading to enrollment in a subsidized Marketplace plan that costs money when Medicaid would have been free",
+      "Choosing a plan whose network does not include current primary care physician or specialist, discovered only after the 60-day enrollment window closes"
+    ],
+    "es": [
+      "Solicitar despues de que cierre la ventana SEP de 60 dias sin otro evento calificador de vida (la razon mas comun por la que el Mercado rechaza la solicitud SEP)",
+      "Prueba insuficiente de perdida de cobertura W-2 anterior: sin aviso COBRA, sin carta de terminacion y sin Certificado HIPAA de Cobertura Acreditable presentado con la solicitud",
+      "Reportar el ingreso anual W-2 del ano anterior en lugar del ingreso proyectado por trabajo independiente del ano actual, resultando en ningun subsidio o monto de subsidio incorrecto",
+      "No confirmar primero la elegibilidad para Medicaid cuando el ingreso proyectado esta cerca del 138% FPL, llevando a la inscripcion en un plan del Mercado subsidiado que cuesta dinero cuando Medicaid hubiera sido gratuito",
+      "Elegir un plan cuya red no incluye al medico de atencion primaria o especialista actual, descubierto solo despues de que cierra la ventana de inscripcion de 60 dias"
+    ]
+  },
+
+  "comparisonNarrative": {
+    "heading": {
+      "en": "COBRA vs ACA Marketplace vs Medicaid vs HDHP+HSA: The 1099 Worker Decision Matrix",
+      "es": "COBRA vs Mercado ACA vs Medicaid vs HDHP+HSA: La Matriz de Decision del Trabajador 1099"
+    },
+    "body": {
+      "en": "Four pathways open when W-2 employer coverage ends and 1099 work begins. COBRA preserves your current plan at 102% of the full premium, covering both the employer share you never paid and a 2% admin fee. A plan where your employer paid $450 and you paid $150 becomes $612 under COBRA. COBRA costs $5,000 to $15,000 per year for most individuals and families, making it the right answer only when you have ongoing treatment with a specialist outside any Marketplace network, or when you have already met a large calendar-year deductible you want to preserve through December 31. ACA Marketplace plans are the right answer for most new 1099 workers earning between 138% FPL and 400% FPL in 2026. Premium tax credits reduce the benchmark Silver plan to a capped percentage of your projected MAGI, ranging from 2% of income at 138% FPL to 8.5% at 400% FPL. For a single person projecting $35,000 in 2026 net self-employment income, the typical result is a Silver plan at $80 to $175 per month after credits, versus $500 to $700 per month for COBRA. Medicaid is the right answer when projected 2026 net self-employment income falls under 138% FPL (about $22,025 single, $45,540 family of four in expansion states). Medicaid costs nothing and is year-round, so it remains available even if you miss the 60-day ACA SEP window. HDHP paired with HSA contributions is the right answer for higher-income 1099 workers above the 400% FPL cliff ($63,840 single in 2026) who want to reduce out-of-pocket cost through tax-advantaged savings. The 2026 HSA limit of $4,400 (self-only) or $8,750 (family) invested pre-tax can outweigh the higher deductible exposure for workers in good health.",
+      "es": "Cuatro vias se abren cuando la cobertura del empleador W-2 termina y comienza el trabajo 1099. COBRA preserva su plan actual al 102% de la prima completa, cubriendo tanto la parte del empleador que nunca pago como una tarifa de administracion del 2%. Un plan donde su empleador pagaba $450 y usted pagaba $150 se convierte en $612 bajo COBRA. COBRA cuesta de $5,000 a $15,000 al ano para la mayoria de individuos y familias, haciendo que sea la respuesta correcta solo cuando tiene tratamiento continuo con un especialista fuera de cualquier red del Mercado, o cuando ya ha cumplido un gran deducible del ano calendario que desea preservar hasta el 31 de diciembre. Los planes del Mercado ACA son la respuesta correcta para la mayoria de los nuevos trabajadores 1099 que ganan entre el 138% FPL y el 400% FPL en 2026. Los creditos fiscales de prima reducen el plan Silver de referencia a un porcentaje limitado de su MAGI proyectado, que va desde el 2% de los ingresos al 138% FPL hasta el 8.5% al 400% FPL. Para una sola persona que proyecta $35,000 en ingresos netos de trabajo independiente en 2026, el resultado tipico es un plan Silver de $80 a $175 al mes despues de creditos, frente a $500 a $700 al mes para COBRA. Medicaid es la respuesta correcta cuando el ingreso neto proyectado de trabajo independiente 2026 cae por debajo del 138% FPL (alrededor de $22,025 para uno, $45,540 para familia de cuatro en estados de expansion). Medicaid no cuesta nada y es durante todo el ano, por lo que sigue disponible incluso si pierde la ventana SEP de 60 dias del ACA. HDHP combinado con contribuciones a la HSA es la respuesta correcta para los trabajadores 1099 de mayores ingresos por encima del acantilado del 400% FPL ($63,840 para uno en 2026) que desean reducir el costo de bolsillo a traves de ahorros con ventajas fiscales."
+    }
+  },
+
+  "stateRules": [
+    {
+      "state": "California",
+      "rule": "Self-employed workers can purchase coverage through Covered California, the state Marketplace, and may qualify for Medi-Cal (California Medicaid) year-round if income qualifies. California also offers state-funded premium assistance beyond federal subsidies for some income levels. Mini-COBRA (Cal-COBRA) extends continuation coverage to plans issued through insurers licensed in California, including small group plans not covered by federal COBRA, for up to 36 months.",
+      "sourceUrl": "https://www.coveredca.gov/individuals-and-families/health-coverage/special-enrollment/"
+    },
+    {
+      "state": "New York",
+      "rule": "Self-employed New Yorkers enroll through NY State of Health (the state Marketplace). NY-COBRA (state continuation) applies to fully-insured small group plans. New York Medicaid (NY Medicaid) is available year-round for income-qualifying 1099 workers. New York also extends state-sponsored Small Business Health Options Program (SHOP) access to self-employed individuals.",
+      "sourceUrl": "https://nystateofhealth.ny.gov/individual/landing"
+    },
+    {
+      "state": "Texas",
+      "rule": "Texas has not expanded Medicaid, so 1099 workers in Texas with projected income below 100% FPL (about $15,060 single in 2026) face a coverage gap: they do not qualify for Medicaid (Texas Medicaid covers only specific categories) and do not qualify for ACA subsidies (which require income at 100% FPL or above). Workers at 100% to 400% FPL can use healthcare.gov for subsidized Marketplace plans.",
+      "sourceUrl": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/"
+    },
+    {
+      "state": "Florida",
+      "rule": "Florida has not expanded Medicaid. Self-employed Floridians at incomes below 100% FPL face the same coverage gap as Texas. Florida also does not offer state-level continuation coverage for small group plans (no state mini-COBRA). Federal COBRA applies only to employers with 20 or more employees.",
+      "sourceUrl": "https://ahca.myflorida.com/medicaid/index.shtml"
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the SEP window after going from W-2 to 1099?",
+        "answer": "Losing employer-sponsored health insurance when you leave a W-2 job to go 1099 or self-employed triggers a 60-day loss-of-coverage Special Enrollment Period under the ACA. The 60-day clock starts the day after your employer group coverage ends, which is typically the last day of the month you separate from your employer. For example, if coverage ends August 31, 2026, your SEP window runs through October 30, 2026. Enroll in a Marketplace plan before that date or you must wait until Open Enrollment (November 1 through January 15, 2027). Medicaid is year-round and is not restricted to the 60-day window."
+      },
+      {
+        "question": "How do I document a W-2 to 1099 transition for a Marketplace SEP application?",
+        "answer": "Healthcare.gov requires proof that you lost qualifying employer-sponsored health coverage. Acceptable documents include: a COBRA election notice from your former employer, a letter from your employer confirming your last day of coverage, a HIPAA Certificate of Creditable Coverage from your former group health insurer, or a signed separation agreement that references benefits termination. You do not need to prove 1099 status to apply for the SEP itself; you only need to show that qualifying employer coverage ended. When you enter your projected income on healthcare.gov for subsidy purposes, you may be asked to provide a Schedule C from your most recent tax return or a signed statement of projected income."
+      },
+      {
+        "question": "What if I miss the 60-day SEP window after going 1099?",
+        "answer": "Missing the 60-day loss-of-coverage SEP window locks you out of ACA Marketplace plans with premium tax credits until the next Open Enrollment Period, which for 2027 coverage runs November 1 through January 15, 2027. During the gap, Medicaid remains available year-round if your projected income qualifies. COBRA continuation can be elected up to 60 days after the qualifying event but is not part of the Marketplace SEP. Short-term limited-duration plans are available outside the SEP but do not cover pre-existing conditions and do not fulfill the ACA minimum essential coverage requirements."
+      },
+      {
+        "question": "Does going 1099 affect my ACA subsidy eligibility for the rest of the year?",
+        "answer": "Yes, but often in your favor. The Marketplace calculates your 2026 premium tax credit based on your projected full-year household MAGI. If you go 1099 mid-year after earning W-2 wages in the first part of the year, your projected annual income is the W-2 wages already earned plus the estimated net self-employment income for the remaining months. If your total projected 2026 MAGI lands between 100% FPL and 400% FPL for your household size, you qualify for premium tax credits. Many workers transitioning mid-year to lower self-employment income qualify for larger subsidies than they expect. Reconcile the credits against actual income on Form 8962 filed with your 1040 each April."
+      },
+      {
+        "question": "Can I deduct health insurance premiums as a self-employed person?",
+        "answer": "Yes. Under IRS Section 162(l), self-employed individuals who operate as sole proprietors, single-member LLCs, S-corporation shareholders owning more than 2%, or partners can deduct 100% of health, dental, and qualified long-term care insurance premiums paid for themselves, their spouse, their dependents, and children under 27, on Schedule 1 (Form 1040), Line 17. The deduction is limited to your net self-employment income for the year; you cannot deduct more than you earn. The deduction applies to any month you were not eligible for employer-sponsored coverage, including COBRA. Importantly, this deduction reduces your regular income tax MAGI but does not reduce your ACA subsidy MAGI calculation."
+      },
+      {
+        "question": "Is an HDHP with an HSA a good option after going 1099?",
+        "answer": "For 1099 workers with stable income above the ACA subsidy range (roughly above $63,840 single or $132,000 family of four in 2026), a High Deductible Health Plan paired with a Health Savings Account often makes strong sense. The 2026 HDHP minimum deductible is $1,700 self-only or $3,400 family per IRS Rev. Proc. 2025-19. The 2026 HSA contribution limit is $4,400 self-only or $8,750 family. Contributions are pre-tax, growth is tax-free, and qualified withdrawal is tax-free, a triple tax advantage not available with standard plans. The risk: HDHPs have higher cost-sharing before the deductible, so workers with frequent medical needs or ongoing prescriptions may pay more out of pocket."
+      },
+      {
+        "question": "Do I qualify for Medicaid after going 1099?",
+        "answer": "Medicaid eligibility depends on your projected net self-employment income for 2026, not your previous W-2 salary. In the 40 expansion states plus DC, eligibility is based on income under 138% FPL: about $22,025 for a single person, $29,864 for two, $37,702 for three, and $45,540 for a family of four in 2026. Medicaid uses Modified Adjusted Gross Income and includes net self-employment earnings minus business deductions, so accurately projecting your net income matters. Medicaid is year-round with no enrollment deadline, so you can apply through your state Medicaid agency or at healthcare.gov at any time. In the 10 non-expansion states, income limits are much lower and most non-disabled adults without dependents do not qualify."
+      },
+      {
+        "question": "What is COBRA and when should a new 1099 worker use it?",
+        "answer": "COBRA (Consolidated Omnibus Budget Reconciliation Act) allows you to continue your former employer's group health plan for 18 months (36 months in some cases, such as divorce) by paying 102% of the full premium, meaning you pay both the employer and employee share plus a 2% administration fee. For most workers, this triples to quintuples the previous paycheck deduction. For 2026, typical individual COBRA costs range from $450 to $900 per month and family COBRA from $1,200 to $2,800 per month. COBRA makes sense in two situations: you have ongoing treatment with a specialist not in any Marketplace network in your area, or you have met a large calendar-year deductible and want to avoid resetting it by switching plans. In virtually all other scenarios, the ACA Marketplace with subsidies or Medicaid will be less expensive."
+      }
+    ],
+    "es": [
+      {
+        "question": "?Cual es la ventana SEP despues de pasar de W-2 a 1099?",
+        "answer": "Perder el seguro de salud patrocinado por el empleador cuando deja un trabajo W-2 para pasar a 1099 o trabajo independiente activa un Periodo de Inscripcion Especial de 60 dias por perdida de cobertura bajo el ACA. El plazo de 60 dias comienza el dia despues de que termina la cobertura grupal del empleador, que tipicamente es el ultimo dia del mes en que se separa de su empleador. Por ejemplo, si la cobertura termina el 31 de agosto de 2026, su ventana SEP va hasta el 30 de octubre de 2026. Inscribase en un plan del Mercado antes de esa fecha o debera esperar hasta la Inscripcion Abierta (del 1 de noviembre al 15 de enero de 2027). Medicaid es durante todo el ano y no esta restringido a la ventana de 60 dias."
+      },
+      {
+        "question": "?Como documento una transicion de W-2 a 1099 para una solicitud SEP del Mercado?",
+        "answer": "Healthcare.gov requiere prueba de que perdio cobertura de salud calificada patrocinada por el empleador. Los documentos aceptables incluyen: un aviso de eleccion COBRA de su ex empleador, una carta de su empleador confirmando su ultimo dia de cobertura, un Certificado HIPAA de Cobertura Acreditable de su antiguo asegurador de salud grupal, o un acuerdo de separacion firmado que haga referencia a la terminacion de beneficios. No necesita probar el estatus 1099 para solicitar el SEP en si; solo necesita demostrar que la cobertura del empleador calificada termino. Cuando ingresa su ingreso proyectado en healthcare.gov para propositos de subsidios, es posible que se le pida proporcionar un Anexo C de su declaracion de impuestos mas reciente o una declaracion firmada de ingreso proyectado."
+      },
+      {
+        "question": "?Que pasa si pierdo la ventana SEP de 60 dias despues de pasar a 1099?",
+        "answer": "Perder la ventana SEP de 60 dias por perdida de cobertura lo excluye de los planes del Mercado ACA con creditos fiscales de prima hasta el siguiente Periodo de Inscripcion Abierta, que para la cobertura 2027 va del 1 de noviembre al 15 de enero de 2027. Durante el intervalo, Medicaid sigue disponible todo el ano si su ingreso proyectado califica. La continuacion COBRA puede elegirse hasta 60 dias despues del evento calificador, pero no es parte del SEP del Mercado. Los planes a corto plazo de duracion limitada estan disponibles fuera del SEP, pero no cubren condiciones preexistentes y no cumplen con los requisitos de cobertura esencial minima del ACA."
+      },
+      {
+        "question": "?Pasar a 1099 afecta mi elegibilidad para el subsidio ACA por el resto del ano?",
+        "answer": "Si, pero a menudo a su favor. El Mercado calcula su credito fiscal de prima 2026 basandose en su MAGI familiar proyectado para todo el ano. Si pasa a 1099 a mitad de ano despues de ganar salarios W-2 en la primera parte del ano, su ingreso anual proyectado es los salarios W-2 ya ganados mas el ingreso neto estimado de trabajo independiente para los meses restantes. Si su MAGI proyectado total 2026 cae entre el 100% FPL y el 400% FPL para el tamano de su hogar, califica para creditos fiscales de prima. Muchos trabajadores que transicionan a mitad de ano a ingresos de trabajo independiente mas bajos califican para subsidios mas grandes de lo que esperan. Reconcilie los creditos con el ingreso real en el Formulario 8962 presentado con su 1040 cada abril."
+      },
+      {
+        "question": "?Puedo deducir las primas de seguro medico como trabajador independiente?",
+        "answer": "Si. Bajo la Seccion 162(l) del IRS, los trabajadores independientes que operan como propietarios individuales, LLC de un solo miembro, accionistas de corporaciones S con mas del 2%, o socios pueden deducir el 100% de las primas de seguro medico, dental y de cuidado a largo plazo calificado pagadas para ellos mismos, su conyuge, sus dependientes e hijos menores de 27 anos, en el Anexo 1 (Formulario 1040), Linea 17. La deduccion esta limitada a su ingreso neto de trabajo independiente para el ano; no puede deducir mas de lo que gana. Importante: esta deduccion reduce su MAGI del impuesto sobre la renta normal, pero no reduce su calculo MAGI del subsidio ACA."
+      },
+      {
+        "question": "?Es un HDHP con HSA una buena opcion despues de pasar a 1099?",
+        "answer": "Para los trabajadores 1099 con ingresos estables por encima del rango de subsidios del ACA (aproximadamente por encima de $63,840 individual o $132,000 familia de cuatro en 2026), un Plan de Salud con Deducible Alto combinado con una Cuenta de Ahorros para Salud a menudo tiene mucho sentido. El deducible minimo del HDHP 2026 es $1,700 para cobertura individual o $3,400 para familia segun IRS Rev. Proc. 2025-19. El limite de contribucion a la HSA 2026 es $4,400 individual o $8,750 familiar. Las contribuciones son antes de impuestos, el crecimiento esta libre de impuestos y el retiro calificado esta libre de impuestos, una triple ventaja fiscal no disponible con planes estandar. El riesgo: los HDHP tienen mayor costo compartido antes del deducible, por lo que los trabajadores con necesidades medicas frecuentes pueden pagar mas de su bolsillo."
+      },
+      {
+        "question": "?Califico para Medicaid despues de pasar a 1099?",
+        "answer": "La elegibilidad para Medicaid depende de su ingreso neto proyectado de trabajo independiente para 2026, no de su salario W-2 anterior. En los 40 estados de expansion mas DC, la elegibilidad se basa en ingresos por debajo del 138% FPL: aproximadamente $22,025 para una sola persona, $29,864 para dos, $37,702 para tres y $45,540 para una familia de cuatro en 2026. Medicaid usa el Ingreso Bruto Ajustado Modificado e incluye las ganancias netas de trabajo independiente menos las deducciones comerciales, por lo que proyectar con precision su ingreso neto es importante. Medicaid es durante todo el ano sin plazo de inscripcion, por lo que puede solicitar a traves de su agencia estatal de Medicaid o en healthcare.gov en cualquier momento."
+      },
+      {
+        "question": "?Que es COBRA y cuando debe usarlo un nuevo trabajador 1099?",
+        "answer": "COBRA (Ley Omnibus Consolidada de Reconciliacion Presupuestaria) le permite continuar el plan de salud grupal de su ex empleador durante 18 meses (36 meses en algunos casos) pagando el 102% de la prima completa, lo que significa que paga tanto la parte del empleador como la del empleado mas una tarifa de administracion del 2%. Para la mayoria de los trabajadores, esto triplica o quintuplica la deduccion anterior del cheque de pago. Para 2026, los costos tipicos de COBRA individual van de $450 a $900 al mes y el COBRA familiar de $1,200 a $2,800 al mes. COBRA tiene sentido en dos situaciones: tiene tratamiento continuo con un especialista que no esta en ninguna red del Mercado en su area, o ha cumplido un gran deducible del ano calendario y quiere evitar reiniciarlo cambiando de plan. En practicamente todos los demas escenarios, el Mercado ACA con subsidios o Medicaid sera menos costoso."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Limites de Ingresos Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "ACA Income Limits 2026",
+        "es": "Limites de Ingresos ACA 2026"
+      },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Tabla del FPL 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Health Insurance for 1099 Contractors",
+        "es": "Seguro Medico para Contratistas 1099"
+      },
+      "href": "/for/1099-contractors"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Special Enrollment Period for loss of coverage",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/your-options/",
+      "note": {
+        "en": "Official ACA SEP guidance after losing job-based or other qualifying coverage. Confirms the 60-day window from coverage loss.",
+        "es": "Guia oficial del SEP del ACA despues de perder cobertura del trabajo u otra cobertura calificada. Confirma la ventana de 60 dias desde la perdida de cobertura."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Medicaid Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid enrollment for income-qualifying self-employed individuals and 1099 workers in expansion states.",
+        "es": "Inscripcion de Medicaid durante todo el ano para trabajadores independientes y contratistas 1099 que califican por ingresos en estados de expansion."
+      }
+    },
+    {
+      "name": "IRS: Self-Employed Health Insurance Deduction (Publication 535)",
+      "url": "https://www.irs.gov/publications/p535",
+      "note": {
+        "en": "IRS guidance on Section 162(l) self-employed health insurance deduction, including eligibility, COBRA premiums, and interaction with HSA contributions.",
+        "es": "Guia del IRS sobre la deduccion de seguro medico para trabajadores independientes bajo la Seccion 162(l), incluida la elegibilidad, las primas COBRA y la interaccion con las contribuciones HSA."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/poverty-guidelines",
+      "note": {
+        "en": "Official 2026 Federal Poverty Level guidelines used for Medicaid 138% FPL and ACA 400% FPL income threshold calculations.",
+        "es": "Pautas oficiales del Nivel de Pobreza Federal 2026 utilizadas para los calculos del umbral de ingresos del 138% FPL de Medicaid y el 400% FPL del ACA."
+      }
+    },
+    {
+      "name": "IRS Rev. Proc. 2025-19: 2026 HDHP and HSA Inflation Adjustments",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "note": {
+        "en": "Official 2026 HDHP minimum deductible ($1,700 self-only, $3,400 family) and HSA contribution limits ($4,400 self-only, $8,750 family).",
+        "es": "Deducibles minimos oficiales del HDHP 2026 ($1,700 individual, $3,400 familiar) y limites de contribucion a la HSA ($4,400 individual, $8,750 familiar)."
+      }
+    }
+  ],
+
+  "topicCluster": "event-sep",
+  "keyTerms": {
+    "en": [
+      "going 1099 health insurance 2026",
+      "W-2 to self-employed health coverage SEP",
+      "self-employed health insurance 2026",
+      "gig worker special enrollment period",
+      "freelancer health insurance options 2026",
+      "1099 contractor health insurance SEP"
+    ],
+    "es": [
+      "pasando a 1099 seguro medico 2026",
+      "trabajador independiente periodo de inscripcion especial",
+      "seguro medico trabajador independiente 2026",
+      "contratista 1099 opciones de cobertura medica"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
