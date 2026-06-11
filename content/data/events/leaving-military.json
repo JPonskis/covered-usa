@@ -1,0 +1,565 @@
+{
+  "slug": "leaving-military",
+  "eventName": {
+    "en": "Leaving Military Service",
+    "es": "Dejando el Servicio Militar"
+  },
+  "category": "Lost Other Coverage",
+  "topic": "Special Enrollment Period after Leaving Military Service and Losing TRICARE",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-11",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "Leaving Military Service? Health Insurance After TRICARE 2026",
+      "es": "Saliendo del Servicio Militar? Seguro Medico Despues de TRICARE 2026"
+    },
+    "description": {
+      "en": "TRICARE ends on your last duty day. You have 60 days to enroll in an ACA Marketplace plan or CHCBP. Compare all options including VA health care.",
+      "es": "TRICARE termina en su ultimo dia de servicio. Tiene 60 dias para inscribirse en un plan del Mercado ACA o CHCBP. Compare todas las opciones incluido VA."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Leaving Military Service in 2026? Here Is How to Replace Your TRICARE Coverage",
+      "es": "Saliendo del Servicio Militar en 2026? Como Reemplazar su Cobertura TRICARE"
+    },
+    "subhero": {
+      "en": "TRICARE ends at 11:59 PM on your last duty day. You have 60 days from that date to enroll in a new health plan before you lose SEP eligibility.",
+      "es": "TRICARE termina a las 11:59 PM en su ultimo dia de servicio. Tiene 60 dias desde esa fecha para inscribirse en un nuevo plan de salud antes de perder la elegibilidad del SEP."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from your last duty day to enroll in new coverage",
+      "es": "Tiene 60 dias desde su ultimo dia de servicio para inscribirse en nueva cobertura"
+    },
+    "body": {
+      "en": "TRICARE ends on your separation date. The ACA Marketplace Special Enrollment Period triggered by loss of TRICARE coverage runs for 60 days from that date. For example, if you separate on August 1, 2026, your SEP window closes September 30, 2026. Miss that window and you may have to wait until the next ACA Open Enrollment in November 2026 for January 2027 coverage.",
+      "es": "TRICARE termina en su fecha de separacion. El Periodo de Inscripcion Especial del Mercado ACA activado por la perdida de cobertura TRICARE dura 60 dias desde esa fecha. Por ejemplo, si se separa el 1 de agosto de 2026, su ventana del SEP cierra el 30 de septiembre de 2026. Si pierde esa ventana, puede tener que esperar hasta la proxima Inscripcion Abierta del ACA en noviembre de 2026."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      {
+        "label": { "en": "CHCBP enrollment deadline", "es": "Fecha limite de inscripcion en CHCBP" },
+        "days": 60
+      },
+      {
+        "label": { "en": "VA health care enrollment (no deadline for most veterans)", "es": "Inscripcion en VA (sin fecha limite para la mayoria de veteranos)" },
+        "days": null
+      },
+      {
+        "label": { "en": "Medicaid (if income qualifies)", "es": "Medicaid (si el ingreso califica)" },
+        "days": null
+      }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "When you leave military service, TRICARE ends on your last duty day, triggering a 60-day Special Enrollment Period for ACA Marketplace plans. Your main options are: (1) ACA Marketplace plan with premium tax credits (typically $10 to $300/mo after subsidies if income qualifies), (2) CHCBP continuation coverage similar to TRICARE Select at $2,103/quarter individual in 2026, (3) VA health care if you have qualifying service and a disability rating or meet income tests, (4) Medicaid if your new income falls under 138% FPL in an expansion state. Most separating service members pay far less for Marketplace coverage than CHCBP once subsidies are factored in. Check all four options before defaulting to CHCBP.",
+    "es": "Cuando sale del servicio militar, TRICARE termina en su ultimo dia de servicio, activando un Periodo de Inscripcion Especial de 60 dias para planes del Mercado ACA. Sus principales opciones son: (1) plan del Mercado ACA con creditos fiscales de prima (tipicamente $10 a $300/mes despues de subsidios si el ingreso califica), (2) cobertura de continuacion CHCBP similar a TRICARE Select a $2,103 por trimestre individual en 2026, (3) atencion medica del VA si tiene servicio calificado y una calificacion de discapacidad o cumple las pruebas de ingresos, (4) Medicaid si su nuevo ingreso cae por debajo del 138% FPL en un estado con expansion."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Leaving military service is one of the most disorienting health-insurance transitions in the American system. TRICARE covers roughly 9.6 million service members and their families, and most have never had to shop for civilian coverage before. The clock starts the moment you separate: TRICARE ends at 11:59 PM on your last official duty day, per tricare.mil. What happens next depends on whether you qualify for TAMP, whether your income qualifies for ACA subsidies or Medicaid, and whether VA health care is a realistic option for your situation. The 60-day Special Enrollment Period triggered by loss of TRICARE coverage is the same qualifying life event mechanism used by anyone losing employer-sponsored health insurance under ACA Section 1311(c)(6). The window is real, the deadline is hard, and the options are more affordable than most separating service members expect.",
+      "es": "Salir del servicio militar es una de las transiciones de seguro de salud mas desconcertantes en el sistema estadounidense. TRICARE cubre aproximadamente 9.6 millones de miembros del servicio y sus familias, y la mayoria nunca ha tenido que buscar cobertura civil antes. El reloj comienza en el momento en que se separa: TRICARE termina a las 11:59 PM en su ultimo dia oficial de servicio, segun tricare.mil. Lo que sucede despues depende de si califica para TAMP, si sus ingresos califican para subsidios ACA o Medicaid, y si la atencion medica del VA es una opcion realista para su situacion. El Periodo de Inscripcion Especial de 60 dias activado por la perdida de cobertura TRICARE es el mismo mecanismo de evento calificador de vida utilizado por cualquier persona que pierde seguro patrocinado por el empleador bajo la Seccion 1311(c)(6) del ACA."
+    },
+    {
+      "en": "Three paths exist for replacing TRICARE in 2026. First, TAMP gives some separating service members 180 days of free transitional TRICARE coverage, but eligibility is limited to involuntary separations and specific qualifying categories. Second, the ACA Marketplace 60-day SEP window is available to all separating service members, and after a drop in income from military pay, most qualify for substantial premium tax credits that make Marketplace Silver plans far cheaper than CHCBP. Third, VA health care is year-round and does not require a qualifying life event, but access depends on your disability rating, service history, and income. Understanding which path applies to you, and acting within the 60-day window, is the single most important financial decision you will make in your first weeks as a civilian. The Medicaid income limits that income-gate the subsidy decision are covered in detail below. For general ACA subsidy income limits, see the ACA income limits guide at coveredusa.org.",
+      "es": "Existen tres caminos para reemplazar TRICARE en 2026. Primero, TAMP le da a algunos miembros del servicio que se separan 180 dias de cobertura TRICARE de transicion gratuita, pero la elegibilidad se limita a separaciones involuntarias y categorias calificadoras especificas. Segundo, la ventana del SEP de 60 dias del Mercado ACA esta disponible para todos los miembros del servicio que se separan, y despues de una caida en los ingresos del sueldo militar, la mayoria califica para creditos fiscales de prima sustanciales. Tercero, la atencion medica del VA es durante todo el ano y no requiere un evento calificador de vida, pero el acceso depende de su calificacion de discapacidad, historial de servicio e ingresos."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Confirm your TRICARE end date and TAMP eligibility",
+        "es": "Confirme su fecha de finalizacion de TRICARE y elegibilidad para TAMP"
+      },
+      "text": {
+        "en": "TRICARE ends at 11:59 PM on your last duty day. Log into the Defense Enrollment Eligibility Reporting System (DEERS) at dmdc.osd.mil or contact your unit's transition office to confirm your exact separation date and whether your discharge type qualifies for TAMP. TAMP provides 180 days of premium-free transitional TRICARE coverage for involuntary separations, Selected Reserve transitions, and sole-survivorship discharges. If you qualify for TAMP, your 60-day ACA Marketplace SEP clock starts when TAMP ends, not on your separation date.",
+        "es": "TRICARE termina a las 11:59 PM en su ultimo dia de servicio. Inicie sesion en el Sistema de Reporte de Elegibilidad de Inscripcion de Defensa (DEERS) en dmdc.osd.mil o contacte a la oficina de transicion de su unidad para confirmar su fecha exacta de separacion y si su tipo de baja califica para TAMP. TAMP proporciona 180 dias de cobertura TRICARE de transicion sin prima para separaciones involuntarias, transiciones a la Reserva Seleccionada y bajas por supervivencia unica."
+      }
+    },
+    {
+      "name": {
+        "en": "Apply for VA health care within your priority-group window",
+        "es": "Solicite atencion medica del VA dentro de su ventana de grupo de prioridad"
+      },
+      "text": {
+        "en": "Apply for VA health care at va.gov/health-care/apply. Veterans discharged after September 11, 2001 who served in a combat theater are eligible for 10 years of enhanced VA benefits under the combat veteran provision. The PACT Act of 2022 further expanded eligibility for veterans exposed to toxic substances including burn pits. VA health care is not a substitute for full civilian coverage for all veterans, but for those with service-connected conditions or a disability rating, VA care is typically comprehensive and low-cost or free.",
+        "es": "Solicite atencion medica del VA en va.gov/health-care/apply. Los veteranos dados de baja despues del 11 de septiembre de 2001 que sirvieron en un teatro de combate son elegibles para 10 anos de beneficios mejorados del VA bajo la disposicion de veterano de combate. La Ley PACT de 2022 expandio aun mas la elegibilidad para veteranos expuestos a sustancias toxicas incluyendo pozos de quema."
+      }
+    },
+    {
+      "name": {
+        "en": "Calculate your projected 2026 household income for subsidy and Medicaid eligibility",
+        "es": "Calcule su ingreso familiar proyectado 2026 para elegibilidad de subsidio y Medicaid"
+      },
+      "text": {
+        "en": "Use only what you will actually earn going forward in civilian life, not your military pay that is ending. Military base pay, BAH, and BAS do not count for ACA subsidy purposes once your service ends. In the 40 Medicaid expansion states plus DC, anyone under 138% FPL qualifies for Medicaid year-round. For 2026 that is $22,025 for a single person or $45,540 for a family of 4 per HHS ASPE 2026 Poverty Guidelines. Above that threshold, ACA premium tax credits apply up to 400% FPL ($63,840 single, $132,000 family of 4) for 2026.",
+        "es": "Use solo lo que realmente ganara en la vida civil, no su paga militar que esta terminando. El pago base militar, BAH y BAS no cuentan para los propositos de subsidio ACA una vez que su servicio termina. En los 40 estados de expansion de Medicaid mas DC, cualquier persona por debajo del 138% FPL califica para Medicaid durante todo el ano. Para 2026 eso es $22,025 para una sola persona o $45,540 para una familia de 4 segun las Pautas de Pobreza 2026 del HHS ASPE."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare ACA Marketplace plans vs CHCBP using the 60-day SEP window",
+        "es": "Compare planes del Mercado ACA vs CHCBP usando la ventana del SEP de 60 dias"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov and enter your loss-of-coverage date as your qualifying life event. The Marketplace SEP for loss of TRICARE coverage gives you 60 days from your separation date (or TAMP end date) to enroll. Compare the subsidized Marketplace Silver plan premium against CHCBP at $2,103 per quarter ($701/month) for an individual in 2026. For most transitioning service members whose income drops, ACA Marketplace plans with premium tax credits are substantially cheaper than CHCBP. CHCBP provides TRICARE Select-equivalent coverage and is administered by Humana Military at 1-800-444-5445.",
+        "es": "Inicie sesion en healthcare.gov e ingrese su fecha de perdida de cobertura como su evento calificador de vida. El SEP del Mercado por perdida de cobertura TRICARE le da 60 dias desde su fecha de separacion (o fecha de finalizacion de TAMP) para inscribirse. Compare la prima del plan Silver del Mercado subsidiado contra CHCBP a $2,103 por trimestre ($701/mes) para un individuo en 2026. Para la mayoria de los miembros del servicio en transicion cuyos ingresos caen, los planes del Mercado ACA con creditos fiscales de prima son sustancialmente mas baratos que CHCBP."
+      }
+    },
+    {
+      "name": {
+        "en": "Enroll in Medicaid if your income qualifies or apply for Marketplace SEP",
+        "es": "Inscribase en Medicaid si su ingreso califica o solicite el SEP del Mercado"
+      },
+      "text": {
+        "en": "Submit your Medicaid application through your state Medicaid agency or healthcare.gov. Medicaid enrollment is year-round with no deadline. If you do not qualify for Medicaid, enroll in a Marketplace Marketplace SEP plan at healthcare.gov before the 60-day window closes. You will need to upload your DD-214 or separation paperwork as proof of the qualifying life event. Coverage under a Marketplace plan can begin as early as the first day of the month after enrollment.",
+        "es": "Presente su solicitud de Medicaid a traves de su agencia estatal de Medicaid o healthcare.gov. La inscripcion en Medicaid es durante todo el ano sin fecha limite. Si no califica para Medicaid, inscribase en un plan SEP del Mercado en healthcare.gov antes de que cierre la ventana de 60 dias. Necesitara subir su DD-214 o documentacion de separacion como prueba del evento calificador de vida."
+      }
+    },
+    {
+      "name": {
+        "en": "Decide on CHCBP only as a gap bridge if switching providers or finishing treatment",
+        "es": "Decida sobre CHCBP solo como puente de brecha si cambia de proveedor o termina tratamiento"
+      },
+      "text": {
+        "en": "CHCBP provides coverage equivalent to TRICARE Select for up to 18 months (36 months for certain family members). Purchase CHCBP within 60 days of losing TRICARE by completing DD Form 2837 and mailing it with the first quarterly payment to Humana Military at P.O. Box 740072, Louisville, KY 40201. At $2,103 per quarter in 2026, CHCBP costs $8,412 annually for an individual. Factor this against subsidized Marketplace options before committing. CHCBP makes sense mainly if you are mid-treatment with a specific TRICARE-network provider not available in any Marketplace plan.",
+        "es": "CHCBP proporciona cobertura equivalente a TRICARE Select por hasta 18 meses (36 meses para ciertos miembros de la familia). Compre CHCBP dentro de los 60 dias de perder TRICARE completando el Formulario DD 2837 y enviandolo con el primer pago trimestral a Humana Military en P.O. Box 740072, Louisville, KY 40201. A $2,103 por trimestre en 2026, CHCBP cuesta $8,412 anuales para un individuo. Tenga en cuenta esto frente a las opciones del Mercado subsidiadas antes de comprometerse."
+      }
+    },
+    {
+      "name": {
+        "en": "Add dependents and confirm DEERS records are updated",
+        "es": "Agregue dependientes y confirme que los registros DEERS esten actualizados"
+      },
+      "text": {
+        "en": "Update your DEERS record at dmdc.osd.mil within 60 days of separation to remove family members from TRICARE eligibility and ensure they are enrolled in whatever new plan you select. If you enroll a family member in a Marketplace plan, their effective coverage date aligns with yours. Children may qualify for CHIP at incomes up to 200 to 300% FPL depending on your state, even if you do not qualify for Medicaid. CHIP enrollment is year-round with no deadline.",
+        "es": "Actualice su registro DEERS en dmdc.osd.mil dentro de los 60 dias de la separacion para eliminar a los miembros de la familia de la elegibilidad TRICARE y asegurarse de que esten inscritos en el nuevo plan que seleccione. Los ninos pueden calificar para CHIP con ingresos de hasta 200 a 300% FPL dependiendo de su estado, aunque usted no califique para Medicaid. La inscripcion en CHIP es durante todo el ano sin fecha limite."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opcion", "Costo tipico", "Mejor para", "Fecha limite"]
+    },
+    "rows": [
+      {
+        "en": ["ACA Marketplace (SEP)", "$10 to $300/mo after premium tax credits (2026)", "Most separating service members with income drop", "60-day SEP from TRICARE loss"],
+        "es": ["Mercado ACA (SEP)", "$10 a $300/mes despues de creditos fiscales de prima (2026)", "La mayoria de miembros del servicio en transicion con caida de ingresos", "SEP de 60 dias desde perdida de TRICARE"]
+      },
+      {
+        "en": ["CHCBP", "$2,103/quarter ($701/mo) individual; $5,339/quarter family (2026)", "Mid-treatment with TRICARE-network provider not in any Marketplace plan", "60 days from TRICARE loss"],
+        "es": ["CHCBP", "$2,103/trimestre ($701/mes) individual; $5,339/trimestre familia (2026)", "Tratamiento en curso con proveedor de red TRICARE no disponible en ningun plan del Mercado", "60 dias desde perdida de TRICARE"]
+      },
+      {
+        "en": ["VA Health Care", "Free to low-cost depending on priority group and service-connected status", "Veterans with disability rating, combat service post-9/11, or PACT Act exposure", "Year-round; apply at va.gov"],
+        "es": ["Atencion Medica del VA", "Gratuita a bajo costo dependiendo del grupo de prioridad y estado relacionado con el servicio", "Veteranos con calificacion de discapacidad, servicio de combate post-11/9 o exposicion bajo la Ley PACT", "Todo el ano; solicitar en va.gov"]
+      },
+      {
+        "en": ["Medicaid", "Free or near-free", "Income under 138% FPL ($22,025 single, $45,540 family of 4 in 2026)", "Year-round in expansion states"],
+        "es": ["Medicaid", "Gratuito o casi gratuito", "Ingreso por debajo del 138% FPL ($22,025 individual, $45,540 familia de 4 en 2026)", "Todo el ano en estados con expansion"]
+      },
+      {
+        "en": ["TAMP", "Free (180 days)", "Involuntary separations and specific qualifying discharge categories only", "Starts automatically at separation if eligible"],
+        "es": ["TAMP", "Gratuito (180 dias)", "Solo separaciones involuntarias y categorias especificas de baja calificadora", "Comienza automaticamente en la separacion si es elegible"]
+      },
+      {
+        "en": ["Spouse's employer plan", "Varies (often cheaper than CHCBP)", "Married with employed spouse whose employer offers a qualifying life event window", "30 days from TRICARE loss"],
+        "es": ["Plan del empleador del conyuge", "Varia (a menudo mas barato que CHCBP)", "Casado con conyuge empleado cuyo empleador ofrece una ventana de evento calificador de vida", "30 dias desde perdida de TRICARE"]
+      }
+    ],
+    "footnote": {
+      "en": "CHCBP costs reflect 2026 quarterly premiums per tricare.mil. ACA Marketplace costs depend on projected 2026 income and household size. The 400% FPL ACA subsidy cliff returned for 2026 after enhanced PTCs expired January 1, 2026. Military BAH and BAS end at separation and do not count as MAGI income for ACA subsidy calculation after discharge.",
+      "es": "Los costos de CHCBP reflejan las primas trimestrales de 2026 segun tricare.mil. Los costos del Mercado ACA dependen del ingreso proyectado 2026 y el tamano del hogar. El precipicio de subsidio ACA del 400% FPL regreso para 2026 despues de que los PTC mejorados expiraron el 1 de enero de 2026. BAH y BAS militar terminan en la separacion y no cuentan como ingreso MAGI para el calculo de subsidio ACA despues de la baja."
+    },
+    "source": "TRICARE.mil 2026 costs and fees, healthcare.gov SEP rules, CMS ACA premium tax credit thresholds, VA.gov eligibility"
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "The most expensive mistakes veterans and separating service members make when transitioning off TRICARE:",
+      "es": "Los errores mas costosos que cometen los veteranos y miembros del servicio que se separan al hacer la transicion de TRICARE:"
+    },
+    "items": [
+      {
+        "en": "Defaulting to CHCBP without comparing Marketplace plans. CHCBP costs $8,412 per year for individual coverage in 2026. Most separating service members with a drop in income qualify for ACA Marketplace Silver plans that cost $50 to $200 per month after premium tax credits.",
+        "es": "Elegir CHCBP por defecto sin comparar planes del Mercado. CHCBP cuesta $8,412 al ano para cobertura individual en 2026. La mayoria de los miembros del servicio que se separan con una caida en los ingresos califican para planes Silver del Mercado ACA que cuestan $50 a $200 al mes despues de creditos fiscales de prima."
+      },
+      {
+        "en": "Missing the 60-day SEP window. Without enrolling during the TRICARE-loss SEP, you are uninsured or must wait until the next ACA Open Enrollment in November 2026 for January 2027 coverage.",
+        "es": "Perderse la ventana del SEP de 60 dias. Sin inscribirse durante el SEP de perdida de TRICARE, no tendra seguro o debera esperar hasta la proxima Inscripcion Abierta del ACA en noviembre de 2026."
+      },
+      {
+        "en": "Including military BAH and BAS in income estimates. Basic Allowance for Housing and Basic Allowance for Subsistence are non-taxable military allowances. They do not count as MAGI for ACA subsidy or Medicaid eligibility once your service ends. Counting them inflates your income estimate and may cause you to miss a Medicaid or subsidy threshold.",
+        "es": "Incluir BAH y BAS militares en las estimaciones de ingresos. La Asignacion Basica de Vivienda y la Asignacion Basica de Subsistencia son asignaciones militares no gravables. No cuentan como MAGI para el subsidio ACA o la elegibilidad de Medicaid una vez que su servicio termina."
+      },
+      {
+        "en": "Not checking VA health care eligibility. Veterans who served in a combat theater after November 11, 1998 and were discharged after September 11, 2001 qualify for up to 10 years of enhanced VA benefits at no cost. Many separating veterans skip VA enrollment and pay for coverage they would otherwise receive free.",
+        "es": "No verificar la elegibilidad para la atencion medica del VA. Los veteranos que sirvieron en un teatro de combate despues del 11 de noviembre de 1998 y fueron dados de baja despues del 11 de septiembre de 2001 califican para hasta 10 anos de beneficios mejorados del VA sin costo."
+      },
+      {
+        "en": "Assuming TAMP applies automatically. TAMP is not available to all separating service members. Voluntary separations under most circumstances do not qualify. Verify TAMP eligibility with your unit transition assistance program before assuming 180-day coverage.",
+        "es": "Asumir que TAMP se aplica automaticamente. TAMP no esta disponible para todos los miembros del servicio que se separan. Las separaciones voluntarias bajo la mayoria de circunstancias no califican. Verifique la elegibilidad de TAMP con el programa de asistencia de transicion de su unidad antes de asumir 180 dias de cobertura."
+      },
+      {
+        "en": "Forgetting to update DEERS records and enroll children in CHIP. Children may qualify for CHIP at incomes up to 200 to 300% FPL depending on the state, even if you do not qualify for Medicaid yourself. CHIP enrollment is year-round and premiums are very low or free.",
+        "es": "Olvidar actualizar los registros DEERS e inscribir a los ninos en CHIP. Los ninos pueden calificar para CHIP con ingresos de hasta 200 a 300% FPL dependiendo del estado, aunque usted no califique para Medicaid. La inscripcion en CHIP es durante todo el ano."
+      }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "CHCBP vs ACA Marketplace vs VA: Which Coverage Should You Choose After TRICARE?",
+        "es": "CHCBP vs Mercado ACA vs VA: Que Cobertura Debe Elegir Despues de TRICARE?"
+      },
+      "paragraphs": [
+        {
+          "en": "Separating from active duty in 2026 opens three primary pathways beyond TRICARE. CHCBP preserves your TRICARE Select-equivalent coverage at 100% of the full premium plus a 2% administrative fee, administered by Humana Military. For 2026 that means $2,103 per quarter ($701/month) for an individual or $5,339 per quarter ($1,780/month) for a family. CHCBP is rarely the cheapest option once Marketplace subsidies are factored in, and it terminates after 18 months (36 months for certain family members after divorce or death of sponsor). ACA Marketplace plans drop most transitioning service members to $10 to $300 per month after premium tax credits per the 2026 KFF Marketplace Premium Snapshot, with the trade-off that you may need to change providers if your previous TRICARE-network physicians are not in the Marketplace plan's network.",
+          "es": "Separarse del servicio activo en 2026 abre tres caminos principales mas alla de TRICARE. CHCBP preserva su cobertura equivalente a TRICARE Select al 100% de la prima completa mas una tarifa administrativa del 2%, administrada por Humana Military. Para 2026 eso significa $2,103 por trimestre ($701/mes) para un individuo o $5,339 por trimestre ($1,780/mes) para una familia. CHCBP rara vez es la opcion mas economica una vez que se tienen en cuenta los subsidios del Mercado."
+        },
+        {
+          "en": "VA health care stands apart from both CHCBP and the Marketplace because it does not require a qualifying life event and has no enrollment deadline for most veterans. Veterans assigned to Priority Groups 1 through 6 receive care at little to no cost; those in Priority Groups 7 and 8 may have income-based copays. The PACT Act of 2022 dramatically expanded VA eligibility for veterans exposed to burn pits, Agent Orange, and other toxic substances, so many veterans who assumed they did not qualify now do. The decision matrix for 2026 is: Medicaid first (free, year-round, if projected income is under 138% FPL); then VA health care (if eligible, use it for service-connected conditions at minimum); then Marketplace with premium tax credits (the most common path for separating service members with civilian income); CHCBP only as a bridge for ongoing treatment mid-course with a TRICARE-network specialist not available through any Marketplace plan.",
+          "es": "La atencion medica del VA se distingue tanto de CHCBP como del Mercado porque no requiere un evento calificador de vida y no tiene fecha limite de inscripcion para la mayoria de los veteranos. Los veteranos asignados a los Grupos de Prioridad 1 al 6 reciben atencion a muy bajo costo o sin costo; los de los Grupos de Prioridad 7 y 8 pueden tener copagos basados en ingresos. La Ley PACT de 2022 expandio dramaticamente la elegibilidad del VA para veteranos expuestos a pozos de quema, Agente Naranja y otras sustancias toxicas."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Documents You Will Need to Enroll After Leaving Military Service",
+        "es": "Documentos Que Necesitara para Inscribirse Despues de Dejar el Servicio Militar"
+      },
+      "paragraphs": [
+        {
+          "en": "The DD-214 Certificate of Release or Discharge from Active Duty is the single most important document for post-military health coverage. Healthcare.gov accepts a copy of your DD-214 or a TRICARE termination notice as proof of the qualifying life event for the ACA Marketplace SEP. For VA health care enrollment at va.gov/health-care/apply, you will need your DD-214 plus information on any service-connected conditions and prior VA claims. For CHCBP enrollment, you submit DD Form 2837 along with your first quarterly premium payment mailed to Humana Military. For Medicaid applications, you will need proof of identity, proof of state residency, and your Social Security number. Processing times vary: Marketplace coverage typically begins the first day of the month following enrollment; VA enrollment processing takes 7 to 10 business days on average but can take longer for PACT Act claims.",
+          "es": "El DD-214 Certificado de Liberacion o Baja del Servicio Activo es el documento mas importante para la cobertura de salud post-militar. Healthcare.gov acepta una copia de su DD-214 o un aviso de terminacion de TRICARE como prueba del evento calificador de vida para el SEP del Mercado ACA. Para la inscripcion en atencion medica del VA en va.gov/health-care/apply, necesitara su DD-214 mas informacion sobre cualquier condicion relacionada con el servicio y reclamos previos del VA."
+        }
+      ],
+      "list": [
+        {
+          "en": "DD-214 Certificate of Release or Discharge from Active Duty (primary proof of qualifying life event)",
+          "es": "DD-214 Certificado de Liberacion o Baja del Servicio Activo (prueba principal del evento calificador de vida)"
+        },
+        {
+          "en": "TRICARE termination notice or separation orders (alternate SEP documentation for healthcare.gov)",
+          "es": "Aviso de terminacion de TRICARE u ordenes de separacion (documentacion alternativa del SEP para healthcare.gov)"
+        },
+        {
+          "en": "Social Security numbers for everyone applying (yourself plus all dependents)",
+          "es": "Numeros de Seguro Social para todos los que solicitan (usted mas todos los dependientes)"
+        },
+        {
+          "en": "Current address and ZIP code (for plan availability check)",
+          "es": "Direccion actual y codigo postal (para verificacion de disponibilidad de planes)"
+        },
+        {
+          "en": "Proof of projected 2026 income (most recent LES or civilian offer letter if available)",
+          "es": "Prueba de ingreso proyectado 2026 (LES mas reciente o carta de oferta civil si esta disponible)"
+        },
+        {
+          "en": "DD Form 2837 (for CHCBP enrollment via Humana Military)",
+          "es": "Formulario DD 2837 (para inscripcion en CHCBP a traves de Humana Military)"
+        },
+        {
+          "en": "Birth certificates for dependents being added to civilian coverage",
+          "es": "Actas de nacimiento para los dependientes que se agregan a la cobertura civil"
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid Eligibility After Leaving Military Service in 2026",
+        "es": "Elegibilidad de Medicaid Despues de Dejar el Servicio Militar en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Leaving military service often triggers Medicaid eligibility that did not exist while on active duty, because military base pay that previously pushed income above the Medicaid threshold ends at separation. Medicaid is income-gated at 138% of the Federal Poverty Level in the 40 expansion states plus DC. For 2026 that means $22,025 for a single person or $45,540 for a family of 4 per HHS ASPE 2026 Poverty Guidelines. State Medicaid programs go by different names depending on where you settle after separation: California's Medi-Cal, Arizona's AHCCCS, Wisconsin's BadgerCare, Massachusetts's MassHealth, Connecticut's HUSKY Health, Washington's Apple Health, Oregon's OHP (Oregon Health Plan). The 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming) have much stricter income limits, typically below 100% FPL for non-disabled adults, which can leave a coverage gap. If you land in a non-expansion state with low income, a $0-premium Bronze Marketplace plan may be available, and you should check the ACA income limits page at coveredusa.org for the exact 2026 thresholds. Medicaid enrollment is year-round with no qualifying event required.",
+          "es": "Dejar el servicio militar a menudo activa la elegibilidad para Medicaid que no existia mientras estaba en servicio activo, porque el sueldo base militar que anteriormente empujaba los ingresos por encima del umbral de Medicaid termina en la separacion. Medicaid esta limitado por ingresos al 138% del Nivel Federal de Pobreza en los 40 estados con expansion mas DC. Para 2026 eso significa $22,025 para una sola persona o $45,540 para una familia de 4 segun las Pautas de Pobreza 2026 del HHS ASPE. Los programas estatales de Medicaid tienen diferentes nombres dependiendo de donde se establezca despues de la separacion: Medi-Cal de California, AHCCCS de Arizona, BadgerCare de Wisconsin, MassHealth de Massachusetts, HUSKY Health de Connecticut, Apple Health de Washington, OHP de Oregon."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "TRICARE Reserve Select After Separation: Guard and Reserve Option",
+        "es": "TRICARE Reserve Select Despues de la Separacion: Opcion de Guardia y Reserva"
+      },
+      "paragraphs": [
+        {
+          "en": "Service members who transition directly from active duty to the National Guard or Selected Reserve the day after separation may be eligible to purchase TRICARE Reserve Select (TRS) rather than entering the civilian insurance market at all. TRS provides TRICARE Select-equivalent coverage at group rates substantially below CHCBP individual pricing. To qualify, you must join the Guard or Reserve immediately upon separation (the day after). TRS enrollment deadlines follow the TRICARE qualifying life event 90-day window. If you are considering a Guard or Reserve career post-separation, evaluate TRS alongside Marketplace plans and CHCBP before your separation date. Many Reserve and Guard members also qualify for the ACA Marketplace 60-day SEP window if TRS does not work out, since any gap in coverage triggers a separate qualifying event.",
+          "es": "Los miembros del servicio que hacen la transicion directamente del servicio activo a la Guardia Nacional o la Reserva Seleccionada el dia despues de la separacion pueden ser elegibles para comprar TRICARE Reserve Select (TRS) en lugar de entrar al mercado de seguros civiles. TRS proporciona cobertura equivalente a TRICARE Select a tarifas de grupo sustancialmente por debajo del precio individual de CHCBP. Para calificar, debe unirse a la Guardia o la Reserva inmediatamente al momento de la separacion (el dia despues)."
+        }
+      ]
+    }
+  ],
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid and ACA subsidy income limits, 2026 (48 contiguous states and DC)",
+      "headers": ["Household size", "138% FPL (Medicaid expansion threshold)", "400% FPL (ACA subsidy cliff 2026)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,820", "$86,400"],
+        ["3", "$37,615", "$108,960"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,335", "$154,560"],
+        ["6", "$61,130", "$177,120"],
+        ["7", "$68,925", "$199,680"],
+        ["8", "$76,720", "$222,240"],
+        ["Each additional person", "+ $7,795", "+ $22,560"]
+      ],
+      "footnote": "Alaska and Hawaii have higher FPL thresholds. The 400% FPL ACA subsidy cliff returned for plan year 2026 after enhanced PTCs under ARPA/IRA expired January 1, 2026. Military BAH and BAS do not count as MAGI income after separation. 10 non-expansion states (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY) have much lower Medicaid income limits for adults.",
+      "source": "HHS ASPE 2026 Poverty Guidelines; CMS ACA premium tax credit thresholds 2026"
+    },
+    "es": {
+      "caption": "Limites de ingresos de Medicaid y subsidio ACA, 2026 (48 estados contiguos y DC)",
+      "headers": ["Tamano del hogar", "138% FPL (umbral de expansion de Medicaid)", "400% FPL (precipicio de subsidio ACA 2026)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,820", "$86,400"],
+        ["3", "$37,615", "$108,960"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,335", "$154,560"],
+        ["6", "$61,130", "$177,120"],
+        ["7", "$68,925", "$199,680"],
+        ["8", "$76,720", "$222,240"],
+        ["Cada persona adicional", "+ $7,795", "+ $22,560"]
+      ],
+      "footnote": "Alaska y Hawaii tienen umbrales de FPL mas altos. El precipicio de subsidio ACA del 400% FPL regreso para el ano de plan 2026 despues de que los PTC mejorados bajo ARPA/IRA expiraron el 1 de enero de 2026. BAH y BAS militar no cuentan como ingreso MAGI despues de la separacion. Los 10 estados sin expansion (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY) tienen limites de ingresos de Medicaid mucho mas bajos para adultos.",
+      "source": "Pautas de Pobreza 2026 del HHS ASPE; umbrales del credito fiscal de prima ACA del CMS 2026"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "DD-214 Certificate of Release or Discharge from Active Duty (primary proof of qualifying life event for ACA Marketplace SEP and VA enrollment)",
+      "TRICARE termination notice or separation orders (alternate SEP documentation accepted by healthcare.gov)",
+      "Social Security numbers for yourself and all dependents being added to coverage",
+      "Current address and ZIP code for plan availability lookup",
+      "Proof of projected 2026 income (most recent Leave and Earnings Statement or civilian offer letter)",
+      "DD Form 2837 completed and signed (required only for CHCBP enrollment via Humana Military)",
+      "Birth certificates for dependent children being added to a civilian plan",
+      "Marriage certificate if adding a spouse who was not previously on your TRICARE coverage"
+    ],
+    "es": [
+      "DD-214 Certificado de Liberacion o Baja del Servicio Activo (prueba principal del evento calificador de vida para SEP del Mercado ACA e inscripcion en VA)",
+      "Aviso de terminacion de TRICARE u ordenes de separacion (documentacion alternativa del SEP aceptada por healthcare.gov)",
+      "Numeros de Seguro Social para usted y todos los dependientes que se agregan a la cobertura",
+      "Direccion actual y codigo postal para la busqueda de disponibilidad de planes",
+      "Prueba de ingreso proyectado 2026 (Declaracion de Licencia y Ganancias mas reciente o carta de oferta civil)",
+      "Formulario DD 2837 completado y firmado (requerido solo para inscripcion en CHCBP a traves de Humana Military)",
+      "Actas de nacimiento de los hijos dependientes que se agregan a un plan civil",
+      "Certificado de matrimonio si se agrega un conyuge que no estaba previamente en su cobertura TRICARE"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Missing the 60-day SEP window after TRICARE loss (application submitted after Day 60 from separation date or TAMP end date)",
+      "Insufficient documentation of the qualifying life event (no DD-214, no TRICARE termination notice, no separation orders uploaded to healthcare.gov)",
+      "Including non-taxable military allowances (BAH, BAS) in projected income estimate, which inflates MAGI and may disqualify you from Medicaid or reduce subsidy amount",
+      "Applying without checking VA health care first (veterans with service-connected conditions or combat service may receive comprehensive care at no cost through VA priority groups 1 through 6)",
+      "Enrolling in CHCBP reflexively at $8,412 per year when ACA Marketplace plans with subsidies cost $600 to $3,600 per year for comparable coverage levels"
+    ],
+    "es": [
+      "Perderse la ventana del SEP de 60 dias despues de la perdida de TRICARE (solicitud presentada despues del Dia 60 desde la fecha de separacion o fecha de finalizacion de TAMP)",
+      "Documentacion insuficiente del evento calificador de vida (sin DD-214, sin aviso de terminacion de TRICARE, sin ordenes de separacion cargadas en healthcare.gov)",
+      "Incluir asignaciones militares no gravables (BAH, BAS) en la estimacion de ingresos proyectada, lo que infla el MAGI y puede descalificarlo de Medicaid o reducir el monto del subsidio",
+      "Solicitar sin verificar primero la atencion medica del VA (los veteranos con condiciones relacionadas con el servicio o servicio de combate pueden recibir atencion integral sin costo a traves de los grupos de prioridad del VA 1 al 6)",
+      "Inscribirse en CHCBP reflexivamente a $8,412 por ano cuando los planes del Mercado ACA con subsidios cuestan $600 a $3,600 por ano para niveles de cobertura comparables"
+    ]
+  },
+
+  "comparisonNarrative": {
+    "heading": {
+      "en": "CHCBP vs ACA Marketplace vs VA Health Care: The 2026 Decision Matrix for Separating Service Members",
+      "es": "CHCBP vs Mercado ACA vs Atencion Medica del VA: La Matriz de Decision 2026 para Miembros del Servicio que se Separan"
+    },
+    "body": {
+      "en": "Separating from active duty in 2026 opens four pathways. CHCBP preserves your TRICARE Select-equivalent coverage at 100% of the full premium. At $2,103 per quarter in 2026 per tricare.mil, CHCBP costs $8,412 annually for individuals and $21,356 for families. ACA Marketplace plans drop most transitioning service members to $10 to $300 per month after premium tax credits, with the trade-off of potential provider network changes. VA health care is effectively free for veterans with disability ratings in Priority Groups 1 through 6 and for combat veterans within the 10-year post-discharge enhanced-benefit window. Medicaid is year-round and free for those whose projected income falls under 138% FPL ($22,025 single, $45,540 family of 4 in 2026). The decision matrix for 2026 is: check VA eligibility first (it costs nothing extra to use if you qualify); check Medicaid second (free, year-round, if income qualifies); then compare Marketplace premium tax credits against CHCBP cost; CHCBP only as a last resort when mid-treatment with a TRICARE-network specialist not in any Marketplace plan. Section 9831 of HIPAA covers the qualifying-life-event trigger for the ACA Marketplace SEP when TRICARE coverage ends.",
+      "es": "Separarse del servicio activo en 2026 abre cuatro caminos. CHCBP preserva su cobertura equivalente a TRICARE Select al 100% de la prima completa. A $2,103 por trimestre en 2026 segun tricare.mil, CHCBP cuesta $8,412 anuales para individuos y $21,356 para familias. Los planes del Mercado ACA reducen a la mayoria de los miembros del servicio en transicion a $10 a $300 al mes despues de los creditos fiscales de prima, con el inconveniente de posibles cambios en la red de proveedores. La atencion medica del VA es efectivamente gratuita para los veteranos con calificaciones de discapacidad en los Grupos de Prioridad 1 al 6 y para los veteranos de combate dentro de la ventana de beneficios mejorados de 10 anos despues de la baja. Medicaid es durante todo el ano y gratuito para aquellos cuyo ingreso proyectado cae por debajo del 138% FPL ($22,025 individual, $45,540 familia de 4 en 2026). La seccion 9831 de HIPAA cubre el disparador de evento calificador de vida para el SEP del Mercado ACA cuando la cobertura TRICARE termina."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "When exactly does my TRICARE coverage end when I leave the military?",
+        "answer": "TRICARE ends at 11:59 PM on your last official duty day per tricare.mil. This is the date your separation orders specify as your release from active duty. Terminal leave does not extend your TRICARE end date; you continue receiving active duty TRICARE benefits during terminal leave, but those end on the last day of terminal leave when you formally separate. Your 60-day ACA Marketplace Special Enrollment Period begins the day after that date."
+      },
+      {
+        "question": "What is the SEP window for losing TRICARE after military separation?",
+        "answer": "You have 60 days from the date you lose TRICARE coverage to enroll in an ACA Marketplace plan under the loss-of-coverage Special Enrollment Period. For example, if your TRICARE ends September 30, 2026, your SEP window closes November 29, 2026. If you qualify for TAMP (180-day free transitional TRICARE), the 60-day Marketplace SEP clock starts when TAMP ends, not on your separation date. Medicaid has no deadline and can be applied for year-round."
+      },
+      {
+        "question": "Is CHCBP worth it after leaving the military in 2026?",
+        "answer": "Rarely. CHCBP charges 100% of the full TRICARE Select premium plus a 2% administrative fee. In 2026 that is $2,103 per quarter ($701 per month) for an individual or $5,339 per quarter ($1,780 per month) for a family, per tricare.mil. ACA Marketplace plans with premium tax credits are almost always cheaper for separating service members whose civilian income is below 400% FPL ($63,840 for a single person in 2026). CHCBP makes sense only if you are actively mid-treatment with a specific provider who is not available in any Marketplace plan network, or if you need the full six weeks of CHCBP to finalize a critical procedure."
+      },
+      {
+        "question": "How do I document my TRICARE loss for the ACA Marketplace SEP?",
+        "answer": "Upload your DD-214 Certificate of Release or Discharge from Active Duty to healthcare.gov as proof of the qualifying life event. If your DD-214 has not yet been issued, a TRICARE termination notice, separation orders, or a letter from your unit confirming your separation date are also accepted. You typically have 30 days after selecting a Marketplace plan to submit documentation. Keep a copy of your separation orders and TRICARE end-date confirmation from DEERS."
+      },
+      {
+        "question": "Do I qualify for VA health care after leaving the military?",
+        "answer": "Most veterans who served on active duty and received an honorable or general discharge qualify for at least some VA health care. Veterans who served in a combat theater after November 11, 1998 and were discharged after September 11, 2001 qualify for enhanced benefits for 10 years post-discharge at no cost. The PACT Act of 2022 expanded eligibility further for veterans exposed to burn pits, Agent Orange, and other toxic substances. Apply at va.gov/health-care/apply. VA health care does not replace civilian insurance for all conditions but can dramatically reduce out-of-pocket costs for service-connected conditions."
+      },
+      {
+        "question": "What happens to my children's coverage when I leave the military?",
+        "answer": "Your children lose TRICARE eligibility when your active duty TRICARE ends. Children may qualify for CHIP at household incomes up to 200 to 300% FPL depending on your state, even if you do not qualify for Medicaid yourself. CHIP enrollment is year-round with no qualifying event required. If your income is above CHIP limits, enroll children in a Marketplace family plan under the TRICARE-loss 60-day SEP. Update your DEERS record within 60 days of separation so family members are properly removed from TRICARE and eligible for their new coverage."
+      },
+      {
+        "question": "Can I get Medicaid after leaving the military?",
+        "answer": "Yes, if your projected 2026 household income falls under 138% FPL in one of the 40 Medicaid expansion states plus DC. For 2026 that is $22,025 for a single person or $45,540 for a family of 4 per HHS ASPE 2026 Poverty Guidelines. Military base pay ends at separation and does not count as MAGI income for Medicaid eligibility once your service ends, so many veterans who were ineligible on active duty suddenly qualify. Apply through your state Medicaid agency or healthcare.gov. Medicaid enrollment is year-round with no deadline."
+      },
+      {
+        "question": "What if I miss the 60-day Special Enrollment Period after losing TRICARE?",
+        "answer": "If you miss the 60-day loss-of-coverage SEP without enrolling in a Marketplace plan, you typically have to wait until the next ACA Open Enrollment Period, which runs November 1 through January 15 each year, for January coverage. For 2026 coverage the OEP already passed; the next OEP (November 1, 2026 through January 15, 2027) is the earliest chance to enroll for 2027 coverage. Medicaid enrollment is always open regardless of SEP windows. VA health care enrollment has no SEP requirement. CHCBP must also be purchased within 60 days of TRICARE loss, so that option closes too if you wait."
+      }
+    ],
+    "es": [
+      {
+        "question": "Cuando termina exactamente mi cobertura TRICARE cuando salgo del ejercito?",
+        "answer": "TRICARE termina a las 11:59 PM en su ultimo dia oficial de servicio segun tricare.mil. Esta es la fecha que sus ordenes de separacion especifican como su liberacion del servicio activo. La licencia terminal no extiende su fecha de finalizacion de TRICARE; continua recibiendo los beneficios TRICARE de servicio activo durante la licencia terminal, pero estos terminan en el ultimo dia de la licencia terminal cuando se separa formalmente. Su Periodo de Inscripcion Especial del Mercado ACA de 60 dias comienza al dia siguiente de esa fecha."
+      },
+      {
+        "question": "Cual es la ventana del SEP por perder TRICARE despues de la separacion militar?",
+        "answer": "Tiene 60 dias desde la fecha en que pierde la cobertura TRICARE para inscribirse en un plan del Mercado ACA bajo el Periodo de Inscripcion Especial por perdida de cobertura. Por ejemplo, si su TRICARE termina el 30 de septiembre de 2026, su ventana del SEP cierra el 29 de noviembre de 2026. Si califica para TAMP (TRICARE transitorio gratuito de 180 dias), el reloj del SEP del Mercado de 60 dias comienza cuando TAMP termina, no en su fecha de separacion. Medicaid no tiene fecha limite y se puede solicitar todo el ano."
+      },
+      {
+        "question": "Vale la pena CHCBP despues de salir del ejercito en 2026?",
+        "answer": "Rara vez. CHCBP cobra el 100% de la prima completa de TRICARE Select mas una tarifa administrativa del 2%. En 2026 eso es $2,103 por trimestre ($701 por mes) para un individuo o $5,339 por trimestre ($1,780 por mes) para una familia, segun tricare.mil. Los planes del Mercado ACA con creditos fiscales de prima son casi siempre mas baratos para los miembros del servicio que se separan cuyos ingresos civiles estan por debajo del 400% FPL ($63,840 para una sola persona en 2026). CHCBP tiene sentido solo si esta activamente en medio de un tratamiento con un proveedor especifico que no esta disponible en ninguna red de planes del Mercado."
+      },
+      {
+        "question": "Como documento mi perdida de TRICARE para el SEP del Mercado ACA?",
+        "answer": "Cargue su DD-214 Certificado de Liberacion o Baja del Servicio Activo en healthcare.gov como prueba del evento calificador de vida. Si su DD-214 aun no ha sido emitido, un aviso de terminacion de TRICARE, ordenes de separacion o una carta de su unidad confirmando su fecha de separacion tambien son aceptados. Generalmente tiene 30 dias despues de seleccionar un plan del Mercado para enviar la documentacion. Guarde una copia de sus ordenes de separacion y la confirmacion de la fecha de finalizacion de TRICARE de DEERS."
+      },
+      {
+        "question": "Califico para la atencion medica del VA despues de salir del ejercito?",
+        "answer": "La mayoria de los veteranos que sirvieron en servicio activo y recibieron una baja honrosa o general califican para al menos algo de atencion medica del VA. Los veteranos que sirvieron en un teatro de combate despues del 11 de noviembre de 1998 y fueron dados de baja despues del 11 de septiembre de 2001 califican para beneficios mejorados por 10 anos despues de la baja sin costo. La Ley PACT de 2022 expandio la elegibilidad aun mas para los veteranos expuestos a pozos de quema, Agente Naranja y otras sustancias toxicas. Solicite en va.gov/health-care/apply."
+      },
+      {
+        "question": "Que pasa con la cobertura de mis hijos cuando salgo del ejercito?",
+        "answer": "Sus hijos pierden la elegibilidad TRICARE cuando su TRICARE de servicio activo termina. Los ninos pueden calificar para CHIP con ingresos del hogar de hasta 200 a 300% FPL dependiendo de su estado, aunque usted no califique para Medicaid. La inscripcion en CHIP es durante todo el ano sin requerir un evento calificador. Si sus ingresos estan por encima de los limites de CHIP, inscribir a los ninos en un plan familiar del Mercado bajo el SEP de perdida de TRICARE de 60 dias. Actualice su registro DEERS dentro de los 60 dias de la separacion."
+      },
+      {
+        "question": "Puedo obtener Medicaid despues de salir del ejercito?",
+        "answer": "Si, si su ingreso familiar proyectado 2026 cae por debajo del 138% FPL en uno de los 40 estados con expansion de Medicaid mas DC. Para 2026 eso es $22,025 para una sola persona o $45,540 para una familia de 4 segun las Pautas de Pobreza 2026 del HHS ASPE. El sueldo base militar termina en la separacion y no cuenta como ingreso MAGI para la elegibilidad de Medicaid una vez que su servicio termina, por lo que muchos veteranos que no eran elegibles en servicio activo de repente califican. Solicite a traves de su agencia estatal de Medicaid o healthcare.gov."
+      },
+      {
+        "question": "Que pasa si pierdo el Periodo de Inscripcion Especial de 60 dias despues de perder TRICARE?",
+        "answer": "Si pierde el SEP de perdida de cobertura de 60 dias sin inscribirse en un plan del Mercado, generalmente tendra que esperar hasta el siguiente Periodo de Inscripcion Abierta del ACA, que va del 1 de noviembre al 15 de enero cada ano, para cobertura de enero. La inscripcion en Medicaid siempre esta abierta sin importar las ventanas del SEP. La inscripcion en atencion medica del VA no tiene requisito de SEP. CHCBP tambien debe comprarse dentro de los 60 dias de la perdida de TRICARE, por lo que esa opcion tambien se cierra si espera."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Medicaid Income Limits 2026", "es": "Limites de Ingresos de Medicaid 2026" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "ACA Income Limits 2026", "es": "Limites de Ingresos ACA 2026" },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": { "en": "Federal Poverty Level 2026", "es": "Nivel Federal de Pobreza 2026" },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": { "en": "Just Lost Your Job? Health Insurance Options", "es": "Acaba de Perder su Trabajo? Opciones de Seguro Medico" },
+      "href": "/event/just-lost-job-health-insurance"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "TRICARE.mil: Separating From Active Duty",
+      "url": "https://www.tricare.mil/LifeEvents/Separating",
+      "note": {
+        "en": "Official TRICARE guidance on coverage end dates and transition options when leaving active duty military service.",
+        "es": "Guia oficial de TRICARE sobre fechas de finalizacion de cobertura y opciones de transicion al dejar el servicio militar activo."
+      }
+    },
+    {
+      "name": "TRICARE.mil: CHCBP 2026 Premiums and Costs",
+      "url": "https://tricare.mil/Costs/AllCosts/CHCBP",
+      "note": {
+        "en": "Source for 2026 CHCBP quarterly premiums: $2,103 individual, $5,339 family. Coverage purchased in 90-day increments via Humana Military.",
+        "es": "Fuente de las primas trimestrales CHCBP 2026: $2,103 individual, $5,339 familia. Cobertura adquirida en incrementos de 90 dias a traves de Humana Military."
+      }
+    },
+    {
+      "name": "TRICARE.mil: Transitional Assistance Management Program (TAMP)",
+      "url": "https://tricare.mil/tamp",
+      "note": {
+        "en": "Official eligibility requirements and benefits for the 180-day premium-free TAMP transitional coverage program.",
+        "es": "Requisitos de elegibilidad y beneficios oficiales para el programa de cobertura de transicion TAMP de 180 dias sin prima."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Special Enrollment Period after Loss of Coverage",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/",
+      "note": {
+        "en": "Official ACA Marketplace SEP rules for loss of minimum essential coverage including TRICARE. 60-day window from coverage loss date.",
+        "es": "Reglas oficiales del SEP del Mercado ACA por perdida de cobertura esencial minima incluyendo TRICARE. Ventana de 60 dias desde la fecha de perdida de cobertura."
+      }
+    },
+    {
+      "name": "VA.gov: Eligibility for VA Health Care",
+      "url": "https://www.va.gov/health-care/eligibility/",
+      "note": {
+        "en": "Official VA health care eligibility requirements including PACT Act expansion, combat veteran enhanced benefits, and priority group system.",
+        "es": "Requisitos de elegibilidad oficiales para la atencion medica del VA incluyendo la expansion de la Ley PACT, beneficios mejorados para veteranos de combate y sistema de grupos de prioridad."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid enrollment guidance and income eligibility thresholds for expansion and non-expansion states.",
+        "es": "Guia de inscripcion en Medicaid durante todo el ano y umbrales de elegibilidad de ingresos para estados con y sin expansion."
+      }
+    },
+    {
+      "name": "KFF: Health Insurance Coverage for Veterans and Active Duty Military 2026",
+      "url": "https://www.kff.org/uninsured/issue-brief/health-coverage-of-veterans/",
+      "note": {
+        "en": "KFF analysis of health coverage transitions for separating military service members and VA enrollment patterns.",
+        "es": "Analisis de KFF sobre transiciones de cobertura de salud para miembros del servicio militar que se separan y patrones de inscripcion en VA."
+      }
+    }
+  ],
+
+  "topicCluster": "event-sep",
+  "keyTerms": {
+    "en": [
+      "leaving military service health insurance 2026",
+      "TRICARE special enrollment period",
+      "health insurance after military separation",
+      "CHCBP vs ACA marketplace military",
+      "losing TRICARE coverage SEP",
+      "veteran health insurance options 2026"
+    ],
+    "es": [
+      "seguro medico al salir del servicio militar 2026",
+      "periodo de inscripcion especial TRICARE",
+      "seguro de salud despues de separacion militar",
+      "CHCBP vs mercado ACA militar",
+      "opciones de seguro veteranos 2026"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
