@@ -1,0 +1,506 @@
+{
+  "slug": "doctor-visit",
+  "procedureName": {
+    "en": "Primary Care Doctor Visit",
+    "es": "Visita al Médico de Atención Primaria"
+  },
+  "shortName": {
+    "en": "Doctor Visit",
+    "es": "Visita al Médico"
+  },
+  "procedureType": "Diagnostic",
+  "medicalSpecialty": "Primary Care",
+  "lastUpdated": "2026-06-07",
+  "ctaTarget": "analyzer",
+  "readingTime": "10 min read",
+  "hcpcsCodes": ["G2211"],
+  "topicCluster": "procedure-cost",
+  "keyTerms": {
+    "en": [
+      "doctor visit cost without insurance",
+      "doctor visit cost without insurance 2026",
+      "how much does a doctor visit cost",
+      "primary care visit good faith estimate",
+      "doctor visit cash pay price 2026"
+    ],
+    "es": [
+      "costo de visita al medico sin seguro",
+      "costo de visita al medico 2026",
+      "cuanto cuesta una visita al medico",
+      "estimacion de buena fe visita medico"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "meta": {
+    "title": {
+      "en": "Doctor Visit Cost Without Insurance 2026 | CoveredUSA",
+      "es": "Costo Visita al Médico sin Seguro 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Primary care visit costs $75 to $300 without insurance in 2026. Medicare pays $90 to $136. Compare office vs hospital pricing. Get a Good Faith Estimate.",
+      "es": "Visita al médico de atención primaria cuesta $75 a $300 sin seguro en 2026. Medicare paga $90 a $136. Compare precios en consultorio vs clínica hospitalaria."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "How Much Does a Doctor Visit Cost Without Insurance in 2026?",
+      "es": "¿Cuánto Cuesta una Visita al Médico sin Seguro en 2026?"
+    },
+    "subhero": {
+      "en": "Without insurance, a primary care doctor visit typically costs $75 to $300 in 2026, with a national median around $160 for an established-patient visit. The single biggest cost driver is where you are seen: an independent physician office charges the physician fee only, while a hospital-owned outpatient clinic can add a separate facility fee of $150 to $500 on top of that same physician charge.",
+      "es": "Sin seguro, una visita al médico de atención primaria típicamente cuesta $75 a $300 en 2026, con una mediana nacional de aproximadamente $160 para una visita de paciente establecido. El factor de costo más importante es dónde se atiende: un consultorio médico independiente cobra solo el honorario del médico, mientras que una clínica ambulatoria de hospital puede agregar un cargo de instalación separado de $150 a $500 además del mismo honorario médico."
+    }
+  },
+  "quickAnswer": {
+    "en": "As of 2026, a primary care doctor visit costs $75 to $300 without insurance at an independent physician office, and $200 to $600 or more at a hospital-owned outpatient clinic (which adds a facility fee). The national median for an established-patient office visit (the most common visit type) is approximately $160. Under the 2026 Medicare Physician Fee Schedule, Medicare pays approximately $90 for a Level 3 established-patient visit and $136 for a Level 4 visit at a non-facility. Under the No Surprises Act, any self-pay or uninsured patient has the right to a written Good Faith Estimate before the visit. A routine wellness exam is covered at 100% with no cost-sharing on ACA-compliant plans.",
+    "es": "A partir de 2026, una visita al médico de atención primaria cuesta $75 a $300 sin seguro en un consultorio médico independiente, y $200 a $600 o más en una clínica ambulatoria de hospital (que agrega un cargo de instalación). La mediana nacional para una visita de paciente establecido es aproximadamente $160. Bajo el PFS de Medicare 2026, Medicare paga aproximadamente $90 por una visita de Nivel 3 y $136 por una de Nivel 4. Bajo la Ley de No Sorpresas, cualquier paciente sin seguro o que paga por su cuenta tiene derecho a una Estimación de Buena Fe escrita antes de la visita."
+  },
+  "pricing": {
+    "nationalMedian": 160,
+    "nationalLow": 75,
+    "nationalHigh": 300,
+    "medicarePfsRate": 113,
+    "medicareOppsRate": 180,
+    "medicareCoinsurancePct": 20,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283
+  },
+  "introParagraphs": [
+    {
+      "en": "A primary care doctor visit is the most common medical encounter in the United States, with roughly 860 million office visits occurring each year according to CDC data. For the uninsured, the sticker price of a routine visit can be an obstacle even when care is needed. The good news: cash prices vary enormously by setting, and self-pay patients who know what to ask can often access the same care for 50 to 70 percent less than the published chargemaster rate. This guide covers what a doctor visit actually costs without insurance in 2026, what Medicare pays, where site of service drives the biggest price swings, and how to protect yourself using the Good Faith Estimate rights established by the No Surprises Act.",
+      "es": "Una visita al médico de atención primaria es el encuentro médico más común en los Estados Unidos, con aproximadamente 860 millones de visitas al consultorio al año según datos del CDC. Para los no asegurados, el precio de una visita de rutina puede ser un obstáculo incluso cuando se necesita atención. La buena noticia: los precios al contado varían enormemente según el entorno, y los pacientes que pagan de su bolsillo y saben qué preguntar a menudo pueden acceder a la misma atención por un 50 a 70 por ciento menos que la tarifa publicada en el chargemaster. Esta guía cubre lo que realmente cuesta una visita al médico sin seguro en 2026, lo que paga Medicare, dónde el lugar de servicio genera las mayores diferencias de precio, y cómo protegerse usando los derechos de Estimación de Buena Fe establecidos por la Ley de No Sorpresas."
+    },
+    {
+      "en": "Primary care visits are billed using Evaluation and Management codes that reflect visit complexity. A Level 3 established-patient visit (the most common encounter) covers a straightforward problem like a blood pressure check, an earache, or a medication renewal. A Level 4 visit covers more complex decision-making such as managing multiple chronic conditions or reviewing labs with abnormal findings. A Level 5 visit is reserved for high-complexity medical decisions. New-patient visits are coded and priced separately and run higher in every setting. In addition to the physician charge, many hospital-owned clinics now assess a separate facility fee using provider-based billing, a practice that can double the total bill for a visit that is clinically identical to one at an independent office.",
+      "es": "Las visitas de atención primaria se facturan utilizando códigos de Evaluación y Manejo que reflejan la complejidad de la visita. Una visita de Nivel 3 para paciente establecido (el encuentro más común) cubre un problema sencillo como revisión de presión arterial, dolor de oído o renovación de medicamento. Una visita de Nivel 4 cubre toma de decisiones más complejas como el manejo de múltiples condiciones crónicas o revisión de análisis con hallazgos anormales. Una visita de Nivel 5 se reserva para decisiones médicas de alta complejidad. Las visitas de pacientes nuevos se codifican y se cobran por separado y son más altas en todos los entornos. Además del cargo del médico, muchas clínicas de propiedad hospitalaria ahora evalúan un cargo separado de instalación mediante facturación basada en proveedor, una práctica que puede duplicar la factura total por una visita clínicamente idéntica a la de un consultorio independiente."
+    },
+    {
+      "en": "For patients who lack insurance, several affordable pathways exist. Federally Qualified Health Centers (FQHCs) offer primary care on a sliding-scale fee schedule, often $20 to $80 per visit regardless of visit complexity. Direct Primary Care (DPC) practices charge a flat monthly membership of $50 to $150 and include unlimited visits at no additional per-visit cost, covering most routine primary care needs. Both options qualify as alternative-care arrangements under the ACA-compliant plan waiver framework, though DPC is not health insurance and does not cover hospitalization, imaging, or specialist care. The full landscape of low-cost options, including how to use a written Good Faith Estimate to compare prices before scheduling, is detailed below.",
+      "es": "Para los pacientes sin seguro, existen varias vías asequibles. Los Centros de Salud Calificados Federalmente (FQHCs) ofrecen atención primaria en una escala de honorarios deslizante, a menudo $20 a $80 por visita independientemente de la complejidad. Las prácticas de Atención Primaria Directa (DPC) cobran una membresía mensual fija de $50 a $150 e incluyen visitas ilimitadas sin costo adicional por visita, cubriendo la mayoría de las necesidades de atención primaria de rutina. La Ley de No Sorpresas, en vigor desde enero de 2022, garantiza a los pacientes sin seguro el derecho a recibir una Estimación de Buena Fe antes de su visita programada."
+    }
+  ],
+  "siteOfService": {
+    "rows": [
+      {
+        "siteName": {
+          "en": "Independent physician office (established patient, Level 3)",
+          "es": "Consultorio médico independiente (paciente establecido, Nivel 3)"
+        },
+        "rangeWithoutInsurance": "$75 to $150",
+        "medicareRate": {
+          "en": "$90 (2026 PFS non-facility)",
+          "es": "$90 (PFS 2026 no instalación)"
+        }
+      },
+      {
+        "siteName": {
+          "en": "Independent physician office (established patient, Level 4)",
+          "es": "Consultorio médico independiente (paciente establecido, Nivel 4)"
+        },
+        "rangeWithoutInsurance": "$130 to $220",
+        "medicareRate": {
+          "en": "$136 (2026 PFS non-facility)",
+          "es": "$136 (PFS 2026 no instalación)"
+        }
+      },
+      {
+        "siteName": {
+          "en": "Hospital outpatient clinic (physician fee + facility fee)",
+          "es": "Clínica ambulatoria hospitalaria (honorario médico + cargo de instalación)"
+        },
+        "rangeWithoutInsurance": "$200 to $600",
+        "medicareRate": {
+          "en": "$84 physician + ~$96 facility (2026 OPPS)",
+          "es": "$84 médico + ~$96 instalación (OPPS 2026)"
+        }
+      },
+      {
+        "siteName": {
+          "en": "Retail clinic / urgent care (minor illness visit)",
+          "es": "Clínica minorista / atención urgente (visita por enfermedad leve)"
+        },
+        "rangeWithoutInsurance": "$80 to $200",
+        "medicareRate": {
+          "en": "Varies; typically not a Medicare primary care setting",
+          "es": "Varía; generalmente no es un entorno de atención primaria de Medicare"
+        }
+      },
+      {
+        "siteName": {
+          "en": "Federally Qualified Health Center (FQHC), sliding scale",
+          "es": "Centro de Salud Calificado Federalmente (FQHC), escala deslizante"
+        },
+        "rangeWithoutInsurance": "$20 to $80 (income-adjusted)",
+        "medicareRate": {
+          "en": "$208 encounter rate (2026 FQHC PPS national base)",
+          "es": "$208 tarifa de encuentro (base nacional FQHC PPS 2026)"
+        }
+      }
+    ],
+    "explanationParagraphs": [
+      {
+        "en": "The 2026 site-of-service cost differential for a primary care visit is driven almost entirely by facility fees. At an independent physician office, the physician submits a single claim for the professional service, and the patient is billed only for that professional fee. When a hospital system acquires that same physician's practice and begins billing under a provider-based designation, the clinic adds a separate facility charge to every visit using a different billing code, even though the patient is sitting in the same chair seeing the same doctor. According to a 2026 PIRG analysis of hospital price transparency data, hospital outpatient clinics charged, on average, two to three times more than independent physician offices for identical evaluation and management visits. The 2026 CMS Hospital Price Transparency rule now requires all hospitals to publish standard charges, making it possible to compare before scheduling.",
+        "es": "La diferencia de costo 2026 entre los sitios de servicio para una visita de atención primaria está impulsada casi en su totalidad por los cargos de instalación. En un consultorio médico independiente, el médico presenta un solo reclamo por el servicio profesional y al paciente solo se le cobra ese honorario profesional. Cuando un sistema hospitalario adquiere la práctica de ese mismo médico y comienza a facturar bajo una designación basada en proveedor, la clínica agrega un cargo de instalación separado a cada visita usando un código de facturación diferente, aunque el paciente esté sentado en la misma silla viendo al mismo médico. Según un análisis PIRG 2026 de datos de transparencia de precios hospitalarios, las clínicas ambulatorias de hospitales cobraron, en promedio, dos a tres veces más que los consultorios médicos independientes por visitas de evaluación y manejo idénticas."
+      },
+      {
+        "en": "The practical impact on a self-pay patient is significant. At an independent office, an established-patient Level 4 visit carries a cash price of $130 to $220 in 2026. At a hospital outpatient clinic billing under provider-based rules, that same Level 4 visit can produce two separate bills totaling $200 to $600: one from the physician for the professional component and one from the hospital for the facility component. Self-pay patients are entitled to ask, before scheduling, whether the clinic bills under hospital outpatient rates or as an independent office. Most independent offices also honor a self-pay or prompt-pay discount of 20 to 40 percent off their chargemaster price when asked at time of service.",
+        "es": "El impacto práctico en un paciente que paga por su cuenta es significativo. En un consultorio independiente, una visita de Nivel 4 para paciente establecido tiene un precio al contado de $130 a $220 en 2026. En una clínica ambulatoria de hospital que factura bajo reglas de proveedor basado, esa misma visita de Nivel 4 puede producir dos facturas separadas que suman $200 a $600: una del médico por el componente profesional y otra del hospital por el componente de instalación. Los pacientes sin seguro tienen derecho a preguntar, antes de programar, si la clínica factura bajo tarifas hospitalarias ambulatorias o como consultorio independiente. La mayoría de los consultorios independientes también otorgan un descuento de autopago o pago inmediato del 20 al 40 por ciento sobre su precio de chargemaster cuando se solicita al momento del servicio."
+      }
+    ],
+    "tableFootnote": {
+      "en": "2026 Medicare rates for non-facility E/M codes reflect the 2026 PFS conversion factor of $33.40 per RVU. OPPS/facility rates are approximate averages for Ambulatory Payment Classification (APC) clinic visit codes. Without-insurance ranges reflect FAIR Health Consumer 2026 data and CMS Hospital Price Transparency national averages. FQHC encounter rate reflects 2026 PPS rate; patient charge is income-adjusted per HRSA sliding fee requirements.",
+      "es": "Las tarifas de Medicare 2026 para códigos E/M no instalación reflejan el factor de conversión PFS 2026 de $33.40 por RVU. Las tarifas OPPS/instalación son promedios aproximados para códigos de visita de clínica APC. Los rangos sin seguro reflejan datos de FAIR Health Consumer 2026 y promedios nacionales de Transparencia de Precios CMS. La tarifa de encuentro FQHC refleja la tasa PPS 2026; el cargo al paciente se ajusta según los ingresos por los requisitos de honorarios deslizantes de HRSA."
+    },
+    "tableSource": "CMS 2026 Physician Fee Schedule, CMS Hospital OPPS 2026, FAIR Health Consumer 2026, HRSA FQHC Program 2026, PIRG Outpatient Outrage 2026"
+  },
+  "variants": {
+    "heading": {
+      "en": "Doctor Visit Cost by Visit Type in 2026",
+      "es": "Costo de Visita al Médico por Tipo de Visita en 2026"
+    },
+    "intro": {
+      "en": "Primary care visits are priced by complexity level and by whether you are a new or established patient. A new patient visit always runs higher because the physician must review your complete medical and social history. The visit level is determined by the physician based on the complexity of medical decision-making and the time spent, not by the patient's choice. Prices below are 2026 cash-pay ranges at independent physician offices, before any self-pay discount negotiation.",
+      "es": "Las visitas de atención primaria se cobran por nivel de complejidad y por si usted es un paciente nuevo o establecido. Una visita de paciente nuevo siempre es más cara porque el médico debe revisar su historial médico y social completo. El nivel de visita lo determina el médico según la complejidad de la toma de decisiones médicas y el tiempo dedicado, no la elección del paciente. Los precios a continuación son rangos de pago al contado 2026 en consultorios médicos independientes, antes de cualquier negociación de descuento de autopago."
+    },
+    "headers": {
+      "en": ["Visit Type", "Range Without Insurance", "Medicare 2026 Rate"],
+      "es": ["Tipo de Visita", "Rango Sin Seguro", "Tarifa Medicare 2026"]
+    },
+    "rows": [
+      {
+        "en": ["New patient, Level 3 (99203)", "$120 to $200", "~$110"],
+        "es": ["Paciente nuevo, Nivel 3 (99203)", "$120 a $200", "~$110"]
+      },
+      {
+        "en": ["New patient, Level 4 (99204)", "$180 to $300", "~$165"],
+        "es": ["Paciente nuevo, Nivel 4 (99204)", "$180 a $300", "~$165"]
+      },
+      {
+        "en": ["Established patient, Level 3 (99213)", "$75 to $150", "~$90"],
+        "es": ["Paciente establecido, Nivel 3 (99213)", "$75 a $150", "~$90"]
+      },
+      {
+        "en": ["Established patient, Level 4 (99214)", "$130 to $220", "~$136"],
+        "es": ["Paciente establecido, Nivel 4 (99214)", "$130 a $220", "~$136"]
+      },
+      {
+        "en": ["Annual wellness visit (Medicare, G0439)", "$0 (Medicare Part B, no cost-sharing)", "$126 (PFS 2026)"],
+        "es": ["Visita de bienestar anual (Medicare, G0439)", "$0 (Medicare Parte B, sin costo compartido)", "$126 (PFS 2026)"]
+      },
+      {
+        "en": ["Preventive wellness exam, ACA plan (in-network)", "$0 (ACA-compliant plan, no cost-sharing)", "N/A (not Medicare)"],
+        "es": ["Examen preventivo de bienestar, plan ACA (en red)", "$0 (plan ACA, sin costo compartido)", "N/A (no es Medicare)"]
+      },
+      {
+        "en": ["Telehealth visit (video or phone)", "$40 to $90", "~$90 (parity with in-person 2026)"],
+        "es": ["Visita de telesalud (video o teléfono)", "$40 a $90", "~$90 (paridad con presencial 2026)"]
+      }
+    ],
+    "footnote": {
+      "en": "CPT codes for E/M visits (99203, 99204, 99213, 99214) are AMA-licensed and appear here for reference only; they are not included in the HCPCS field. Medicare 2026 rates are national averages using the $33.40 PFS conversion factor; your local rate may differ by geographic practice cost index (GPCI). The annual wellness visit code G0439 (established Medicare beneficiary) and its companion G0438 (initial AWV) are public-domain HCPCS Level II codes. ACA preventive wellness exams are covered at 100% for in-network providers with no deductible, copay, or coinsurance when the visit is coded as preventive, not problem-focused.",
+      "es": "Los códigos CPT para visitas E/M (99203, 99204, 99213, 99214) tienen licencia AMA y aparecen aquí solo como referencia; no se incluyen en el campo HCPCS. Las tarifas Medicare 2026 son promedios nacionales usando el factor de conversión PFS de $33.40; su tarifa local puede variar según el índice de costo de práctica geográfica (GPCI). El código de visita de bienestar anual G0439 (beneficiario Medicare establecido) y su complemento G0438 (AWV inicial) son códigos HCPCS Nivel II de dominio público. Los exámenes preventivos de bienestar ACA están cubiertos al 100% para proveedores en red sin deducible, copago o coseguro cuando la visita se codifica como preventiva, no por problema."
+    },
+    "source": "CMS 2026 Physician Fee Schedule, ACA preventive care guidance, FAIR Health Consumer 2026"
+  },
+  "medicareSection": {
+    "paragraphs": [
+      {
+        "en": "Original Medicare Part B covers most medically necessary doctor visits at 80 percent of the Medicare-approved amount after the 2026 Part B deductible of $283. For a Level 3 established-patient visit at a non-facility setting, Medicare approves approximately $90 in 2026; the beneficiary pays 20 percent coinsurance, or about $18, after the deductible is met. For a Level 4 visit, Medicare approves approximately $136; the 20 percent coinsurance is about $27. Medicare Advantage plans may have different cost-sharing structures, including copays ranging from $0 to $40 per visit depending on the plan's Summary of Benefits. Medigap (supplemental) policies pay the 20 percent coinsurance that Original Medicare leaves to the beneficiary, reducing out-of-pocket to near zero for covered visits. Annual Wellness Visits (HCPCS G0438 initial, G0439 subsequent) are covered at 100 percent by Medicare Part B with no deductible and no coinsurance.",
+        "es": "Medicare Original Parte B cubre la mayoría de las visitas médicas médicamente necesarias al 80 por ciento del monto aprobado por Medicare después del deducible de la Parte B 2026 de $283. Para una visita de Nivel 3 de paciente establecido en un entorno no instalación, Medicare aprueba aproximadamente $90 en 2026; el beneficiario paga el 20 por ciento de coseguro, o aproximadamente $18, después de cumplir el deducible. Para una visita de Nivel 4, Medicare aprueba aproximadamente $136; el coseguro del 20 por ciento es aproximadamente $27. Los planes Medicare Advantage pueden tener diferentes estructuras de costo compartido, incluyendo copagos de $0 a $40 por visita según el Resumen de Beneficios del plan. Las pólizas Medigap pagan el coseguro del 20 por ciento que Medicare Original deja al beneficiario, reduciendo el gasto de bolsillo a casi cero por las visitas cubiertas."
+      },
+      {
+        "en": "Commercial insurance plans, including ACA-compliant plans, cover problem-focused office visits subject to the plan's deductible, copay, and coinsurance. Most ACA plans assign a fixed copay for primary care visits, typically $20 to $50 for in-network visits on PPO and HMO plans. On High-Deductible Health Plans (HDHPs) linked to Health Savings Accounts (HSAs), the patient pays the full physician fee until the deductible is met; after the deductible, the plan pays its share. Preventive wellness exams (annual physicals coded as preventive, not problem-focused) are covered at 100 percent with no cost-sharing on ACA-compliant plans in-network, regardless of deductible. The key distinction: a visit coded as preventive carries no cost-sharing; a visit coded as problem-focused (even in the same appointment) can trigger a copay or deductible. Patients with Medicare Advantage should check the plan's prior authorization requirements, as some MA plans require pre-authorization for specialist referrals triggered at a primary care visit.",
+        "es": "Los planes de seguro comerciales, incluyendo los planes ACA, cubren las visitas de consultorio orientadas a problemas sujetas al deducible, copago y coseguro del plan. La mayoría de los planes ACA asignan un copago fijo para visitas de atención primaria, típicamente $20 a $50 para visitas en red en planes PPO y HMO. En los Planes de Salud con Deducible Alto (HDHPs) vinculados a Cuentas de Ahorro de Salud (HSAs), el paciente paga el honorario médico completo hasta cumplir el deducible; después del deducible, el plan paga su parte. Los exámenes preventivos de bienestar (físicos anuales codificados como preventivos, no orientados a problemas) están cubiertos al 100 por ciento sin costo compartido en planes ACA en red, independientemente del deducible."
+      },
+      {
+        "en": "The No Surprises Act, effective January 1, 2022, gives every self-pay and uninsured patient the right to a written Good Faith Estimate before a scheduled healthcare service, including a routine primary care doctor visit. Under the federal rules published by CMS, a provider must furnish the Good Faith Estimate at least 3 business days before service when the appointment is scheduled 10 or more business days in advance, and at least 1 business day before service when the appointment is scheduled 3 to 9 business days out. For walk-in visits scheduled with less than 3 business days notice, no advance Good Faith Estimate is legally required, but the patient can still request one verbally. The Good Faith Estimate must be in writing and must include the expected charges for the physician visit, any lab work ordered during the same encounter, and any other items or services expected as part of the same scheduling block. The federal consumer portal for Good Faith Estimate guidance is cms.gov/nosurprisesact.",
+        "es": "La Ley de No Sorpresas, en vigor desde el 1 de enero de 2022, da a cada paciente sin seguro o que paga por su cuenta el derecho a una Estimación de Buena Fe escrita antes de un servicio de salud programado, incluyendo una visita de rutina al médico de atención primaria. Bajo las reglas federales publicadas por CMS, un proveedor debe proporcionar la Estimación de Buena Fe al menos 3 días hábiles antes del servicio cuando la cita se programa con 10 o más días hábiles de anticipación, y al menos 1 día hábil antes del servicio cuando la cita se programa de 3 a 9 días hábiles antes. Para visitas sin cita programadas con menos de 3 días hábiles de anticipación, no se requiere legalmente una Estimación de Buena Fe anticipada, pero el paciente aún puede solicitarla verbalmente."
+      },
+      {
+        "en": "To request a Good Faith Estimate for a primary care doctor visit in 2026, follow these five steps. First, call the physician's office and identify yourself as self-pay or uninsured, or state that you do not plan to use insurance for this visit. Second, ask for a written Good Faith Estimate that itemizes the expected charges for the visit level (Level 3 or Level 4), any laboratory tests likely to be ordered during the encounter, any imaging referrals if the physician plans to order them at the same visit, and whether the clinic bills under hospital outpatient rates or as an independent office. Third, provide your ZIP code so the office can confirm any geography-based pricing adjustments. Fourth, confirm the timing: the written estimate must arrive at least 3 business days before your appointment if scheduled 10 or more business days out. Fifth, keep the written Good Faith Estimate because if your final bill exceeds the estimate by $400 or more, you have 120 days from the date of the bill to file a patient-provider dispute resolution claim through the federal portal at cms.gov/nosurprisesact.",
+        "es": "Para solicitar una Estimación de Buena Fe para una visita al médico de atención primaria en 2026, siga estos cinco pasos. Primero, llame al consultorio médico e identifíquese como paciente sin seguro o que paga de su bolsillo. Segundo, solicite una Estimación de Buena Fe escrita que detalle los cargos esperados por el nivel de visita, cualquier análisis de laboratorio probable, y si la clínica factura bajo tarifas hospitalarias ambulatorias o como consultorio independiente. Tercero, proporcione su código postal. Cuarto, confirme el plazo: el estimado escrito debe llegar al menos 3 días hábiles antes de su cita si se programó con 10 o más días hábiles de anticipación. Quinto, conserve la Estimación de Buena Fe porque si su factura final excede el estimado en $400 o más, tiene 120 días desde la fecha de la factura para presentar un reclamo de resolución de disputas paciente-proveedor a través del portal federal en cms.gov/nosurprisesact."
+      },
+      {
+        "en": "A Good Faith Estimate for a doctor visit is not a guaranteed final bill. Common reasons the actual charges exceed the initial estimate include: laboratory tests ordered during the visit that were not anticipated in the estimate, a visit coded at a higher complexity level than originally quoted because the physician spent additional time or made more complex decisions, a referral to a specialist ordered during the visit that is billed separately, vaccine administration added during the encounter, and a facility fee added by a hospital-owned clinic that was not disclosed upfront. Patients who receive a bill that exceeds the Good Faith Estimate by $400 or more should gather the original written estimate and the itemized final bill, then submit a patient-provider dispute resolution request at cms.gov/nosurprisesact within 120 days of the bill date.",
+        "es": "Una Estimación de Buena Fe para una visita médica no es una factura final garantizada. Las razones comunes por las que los cargos reales superan el estimado incluyen: pruebas de laboratorio ordenadas durante la visita que no se anticiparon en el estimado, una visita codificada a un nivel de complejidad mayor porque el médico pasó tiempo adicional, una derivación a un especialista ordenada durante la visita que se factura por separado, administración de vacunas añadida durante el encuentro, y un cargo de instalación añadido por una clínica de propiedad hospitalaria que no se divulgó por adelantado. Los pacientes que reciben una factura que excede la Estimación de Buena Fe en $400 o más deben reunir el estimado escrito original y la factura final detallada, y luego presentar una solicitud de resolución de disputas a través de cms.gov/nosurprisesact dentro de los 120 días de la fecha de la factura."
+      }
+    ]
+  },
+  "factorsAffectingCost": {
+    "items": [
+      {
+        "en": "Site of service: independent physician office versus hospital-owned outpatient clinic. Hospital-based clinics add a separate facility fee of $150 to $500 on top of the physician fee, while an independent office bills the physician fee only. Always ask whether the clinic is designated as a hospital outpatient department before scheduling.",
+        "es": "Sitio de servicio: consultorio médico independiente versus clínica ambulatoria de propiedad hospitalaria. Las clínicas hospitalarias agregan un cargo de instalación separado de $150 a $500 además del honorario del médico, mientras que un consultorio independiente solo factura el honorario del médico. Siempre pregunte si la clínica está designada como departamento ambulatorio del hospital antes de programar."
+      },
+      {
+        "en": "Visit complexity level (Level 3 versus Level 4 versus Level 5). The physician determines the visit level based on the complexity of medical decision-making. A Level 3 straightforward visit at an independent office runs $75 to $150; a Level 4 visit with complex decision-making runs $130 to $220. Patients cannot choose the level, but they can confirm what was billed.",
+        "es": "Nivel de complejidad de la visita (Nivel 3 versus Nivel 4 versus Nivel 5). El médico determina el nivel de visita según la complejidad de la toma de decisiones médicas. Una visita directa de Nivel 3 en un consultorio independiente cuesta $75 a $150; una visita de Nivel 4 con toma de decisiones complejas cuesta $130 a $220."
+      },
+      {
+        "en": "New patient versus established patient status. New-patient visits are always coded and priced separately at a higher rate because the physician must perform a comprehensive history and review. A new Level 4 patient visit runs $180 to $300, while an established Level 4 visit runs $130 to $220, at independent offices in 2026.",
+        "es": "Estado de paciente nuevo versus establecido. Las visitas de paciente nuevo siempre se codifican y cobran por separado a una tarifa más alta porque el médico debe realizar un historial completo y revisión. Una visita de Nivel 4 de paciente nuevo cuesta $180 a $300, mientras que una visita de Nivel 4 establecido cuesta $130 a $220, en consultorios independientes en 2026."
+      },
+      {
+        "en": "Independent physician office cash-pay discounts (chargemaster self-pay discount): most independent physician offices publish a self-pay discount policy of 20 to 40 percent off their chargemaster list price. Ask explicitly at the time of scheduling: 'What is your self-pay cash price?' Some offices apply the discount automatically when a patient identifies as uninsured; others require the patient to request it. Getting the reduced price in writing protects you under the Good Faith Estimate framework.",
+        "es": "Descuentos de pago al contado en consultorios médicos independientes (descuento de autopago del chargemaster): la mayoría de los consultorios médicos independientes publican una política de descuento de autopago del 20 al 40 por ciento sobre su precio de lista del chargemaster. Pregunte explícitamente al programar: '¿Cuál es su precio en efectivo de autopago?' Algunos consultorios aplican el descuento automáticamente cuando un paciente se identifica como sin seguro; otros requieren que el paciente lo solicite."
+      },
+      {
+        "en": "Sliding-scale Federally Qualified Health Centers (FQHCs): FQHCs are federally funded community clinics required by HRSA to offer a sliding-fee schedule based on household income and size. Patients at or below 100 percent of the 2026 federal poverty level pay a nominal fee, often $20 to $50 per visit. Patients between 100 and 200 percent FPL pay a partial fee. No patient can be turned away for inability to pay. There are more than 1,400 FQHC organizations operating approximately 14,000 sites nationwide. Use the HRSA health center finder at findahealthcenter.hrsa.gov to locate the nearest FQHC.",
+        "es": "Centros de Salud Calificados Federalmente (FQHCs) con escala deslizante: los FQHCs son clínicas comunitarias financiadas federalmente y requeridas por HRSA a ofrecer una escala de honorarios deslizante basada en los ingresos y el tamaño del hogar. Los pacientes al 100 por ciento o por debajo del nivel de pobreza federal 2026 pagan una tarifa nominal, a menudo $20 a $50 por visita. Los pacientes entre el 100 y 200 por ciento FPL pagan una tarifa parcial. Ningún paciente puede ser rechazado por incapacidad de pago."
+      },
+      {
+        "en": "Direct Primary Care (DPC) membership practices: DPC practices charge a flat monthly membership fee of $50 to $150 for individual adults and include unlimited office visits at no additional per-visit charge. Lab work, generic medications, and minor procedures are often available at near-cost pricing. Starting January 1, 2026, patients in High-Deductible Health Plans can use HSA funds to pay DPC membership fees up to $150 per month (individual) or $300 per month (family). DPC covers primary care only and is not a substitute for insurance covering hospitalization, specialist care, or imaging.",
+        "es": "Prácticas de membresía de Atención Primaria Directa (DPC): las prácticas DPC cobran una tarifa mensual de membresía fija de $50 a $150 para adultos individuales e incluyen visitas al consultorio ilimitadas sin cargo adicional por visita. Los análisis de laboratorio, medicamentos genéricos y procedimientos menores a menudo están disponibles a precios cercanos al costo. Desde el 1 de enero de 2026, los pacientes en Planes de Salud con Deducible Alto pueden usar fondos HSA para pagar las tarifas de membresía DPC hasta $150 por mes (individual) o $300 por mes (familiar)."
+      },
+      {
+        "en": "Laboratory tests and imaging ordered during the visit: the physician visit charge covers the encounter only. Blood work, urinalysis, rapid strep or flu tests, and any imaging referrals are billed separately. A basic metabolic panel can add $30 to $100; a complete blood count adds $10 to $50; a lipid panel adds $20 to $80. Always ask the physician whether the tests are necessary at this visit or whether they can be deferred to a lab with lower self-pay rates such as Quest Diagnostics or LabCorp, which publish cash prices online.",
+        "es": "Análisis de laboratorio e imágenes ordenados durante la visita: el cargo de la visita médica cubre solo el encuentro. Los análisis de sangre, urianálisis, pruebas rápidas de estreptococo o gripe y cualquier derivación de imágenes se facturan por separado. Un panel metabólico básico puede agregar $30 a $100; un hemograma completo agrega $10 a $50; un panel de lípidos agrega $20 a $80."
+      },
+      {
+        "en": "Geographic region and insurance network: urban Northeast and California markets tend to run 20 to 40 percent above national median rates; rural Midwest and Southeast markets tend to run below. For patients with insurance, the network status of the physician determines cost-sharing: in-network visits apply the contracted copay or coinsurance rate, while out-of-network visits may trigger significantly higher cost-sharing or full balance billing in states without additional protections.",
+        "es": "Región geográfica y red de seguros: los mercados urbanos del noreste y California tienden a ser del 20 al 40 por ciento por encima de las tarifas medianas nacionales; los mercados rurales del medio oeste y sureste tienden a ser más bajos. Para pacientes con seguro, el estado de la red del médico determina el costo compartido: las visitas en red aplican la tasa de copago o coseguro contratada, mientras que las visitas fuera de la red pueden generar un costo compartido significativamente mayor."
+      }
+    ]
+  },
+  "commonBillingErrors": {
+    "intro": {
+      "en": "Primary care doctor visits produce more billing errors than most patients realize. The most costly errors involve facility fee additions at hospital-acquired practices, preventive-visit code mismatches, and out-of-network ancillary charges. Check for these before paying:",
+      "es": "Las visitas al médico de atención primaria producen más errores de facturación de lo que la mayoría de los pacientes se dan cuenta. Los errores más costosos involucran adiciones de cargos de instalación en prácticas adquiridas por hospitales, discrepancias en códigos de visita preventiva y cargos auxiliares fuera de la red. Verifique estos antes de pagar:"
+    },
+    "items": [
+      {
+        "en": "Preventive exam billed as problem-focused when both were discussed in the same appointment. If you raised a health concern during an annual physical, some offices split the bill into a preventive visit (covered at $0) plus a separate problem-focused visit (subject to deductible and copay). This is legal but must be disclosed. Ask for an itemized bill and verify both codes were actually billed.",
+        "es": "Examen preventivo facturado como orientado a problemas cuando ambos se discutieron en la misma cita. Si planteó una preocupación de salud durante un físico anual, algunos consultorios dividen la factura en una visita preventiva (cubierta en $0) más una visita separada orientada a problemas (sujeta a deducible y copago). Esto es legal pero debe divulgarse. Solicite una factura detallada y verifique que ambos códigos se facturaron realmente."
+      },
+      {
+        "en": "Facility fee charged by a hospital-owned clinic not disclosed before scheduling. When a physician practice is acquired by a hospital and reclassified as a provider-based outpatient department, patients begin receiving two bills instead of one. The facility fee must be disclosed in advance but is frequently not. If you receive an unexpected facility fee, ask whether the clinic's designation changed, and dispute the charge if no prior written notice was given.",
+        "es": "Cargo de instalación cobrado por una clínica de propiedad hospitalaria no divulgado antes de programar. Cuando una práctica médica es adquirida por un hospital y reclasificada como departamento ambulatorio basado en proveedor, los pacientes comienzan a recibir dos facturas en lugar de una. El cargo de instalación debe divulgarse por adelantado pero frecuentemente no se hace. Si recibe un cargo de instalación inesperado, pregunte si la designación de la clínica cambió y dispute el cargo si no se dio aviso escrito previo."
+      },
+      {
+        "en": "Lab work billed at hospital outpatient rates when collected at a hospital-affiliated clinic. Blood drawn at a hospital-owned clinic may be processed through the hospital laboratory at OPPS rates, which are often 2 to 5 times higher than Quest Diagnostics or LabCorp self-pay cash prices. Ask to have lab work sent to an independent reference laboratory if you are uninsured.",
+        "es": "Análisis de laboratorio facturados a tarifas hospitalarias ambulatorias cuando se recolectan en una clínica afiliada al hospital. La sangre extraída en una clínica de propiedad hospitalaria puede procesarse a través del laboratorio del hospital a tarifas OPPS, que a menudo son 2 a 5 veces más altas que los precios al contado de autopago de Quest Diagnostics o LabCorp. Pida que los análisis se envíen a un laboratorio de referencia independiente si no tiene seguro."
+      },
+      {
+        "en": "Visit level upcoded from Level 3 to Level 4 or Level 5 without documented justification. Physicians occasionally bill a higher-complexity visit code than the clinical record supports. If your bill reflects a Level 4 or Level 5 visit for what felt like a brief medication renewal or routine check-in, request the clinical documentation (the visit note) and compare it to the code requirements. Medicare publishes the documentation requirements for each E/M level.",
+        "es": "Nivel de visita sobrecodificado de Nivel 3 a Nivel 4 o Nivel 5 sin justificación documentada. Los médicos ocasionalmente facturan un código de visita de mayor complejidad del que admite el expediente clínico. Si su factura refleja una visita de Nivel 4 o Nivel 5 por lo que pareció una breve renovación de medicamento o revisión de rutina, solicite la documentación clínica (la nota de la visita) y compárela con los requisitos del código."
+      },
+      {
+        "en": "Out-of-network specialist consultation billed during the same visit. If your primary care physician brings in a specialist to consult during your appointment, that specialist may bill separately and may be out-of-network even if the primary care physician is in-network. Under the No Surprises Act, out-of-network consultation charges in a provider-based setting may be subject to NSA balance-billing protections if you did not provide written consent to the out-of-network rate.",
+        "es": "Consulta de especialista fuera de la red facturada durante la misma visita. Si su médico de atención primaria llama a un especialista para consultar durante su cita, ese especialista puede facturar por separado y puede estar fuera de la red aunque el médico de atención primaria esté en la red. Bajo la Ley de No Sorpresas, los cargos de consulta fuera de la red en un entorno basado en proveedor pueden estar sujetos a las protecciones NSA contra facturación de saldo si usted no dio consentimiento escrito a la tarifa fuera de la red."
+      }
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "How much does a doctor visit cost without insurance in 2026?",
+        "answer": "At an independent physician office in 2026, a primary care visit costs approximately $75 to $150 for a Level 3 established-patient visit and $130 to $220 for a Level 4 established-patient visit. New-patient visits run $120 to $300 depending on complexity. At a hospital-owned outpatient clinic, the same visits can cost $200 to $600 because of an additional facility fee. The national median for an established-patient visit is approximately $160. These ranges reflect physician fees only; any lab work, imaging, or vaccines ordered during the visit are billed separately and add to the total."
+      },
+      {
+        "question": "What does Medicare pay for a doctor visit in 2026?",
+        "answer": "Under the 2026 Medicare Physician Fee Schedule, Medicare Part B pays approximately $90 for a Level 3 established-patient office visit and $136 for a Level 4 visit at a non-facility (independent office) setting. The beneficiary pays 20 percent coinsurance after meeting the 2026 Part B deductible of $283. For a Level 3 visit costing $90, that is roughly $18 out of pocket after the deductible. Medicare Advantage plans may charge a flat copay instead, typically $0 to $40. Annual Wellness Visits (G0439) are covered at 100 percent with no cost-sharing. Medigap supplements pay the 20 percent coinsurance that Original Medicare leaves to the beneficiary."
+      },
+      {
+        "question": "How do I request a Good Faith Estimate for a primary care doctor visit?",
+        "answer": "Under the No Surprises Act, any self-pay or uninsured patient has the right to a written Good Faith Estimate before a scheduled doctor visit. Call the physician's office and identify yourself as self-pay or uninsured. Ask for a written estimate itemizing the expected physician charge, any likely lab tests, and whether the clinic adds a hospital facility fee. If the appointment is 10 or more business days out, the estimate must be provided at least 3 business days before the visit. If scheduled 3 to 9 business days out, the estimate must arrive at least 1 business day before. Keep the written estimate because if the final bill exceeds the estimate by $400 or more, you can file a dispute at cms.gov/nosurprisesact within 120 days."
+      },
+      {
+        "question": "What is the No Surprises Act and does it apply to doctor visits?",
+        "answer": "The No Surprises Act took effect January 1, 2022, and applies to most scheduled healthcare services including primary care doctor visits. For self-pay and uninsured patients, the Act requires providers to furnish a written Good Faith Estimate of expected charges before the appointment. For patients with insurance, the Act limits out-of-network balance billing in emergency settings and in non-emergency situations where the patient did not voluntarily choose an out-of-network provider. The Act does not cap what providers charge; it ensures patients receive advance price transparency. If your final bill exceeds the Good Faith Estimate by $400 or more, you have 120 days from the bill date to file a patient-provider dispute resolution claim at cms.gov/nosurprisesact. The Act covers physician offices, hospital outpatient clinics, and urgent care centers."
+      },
+      {
+        "question": "How do I get a written cash-pay quote for a doctor visit?",
+        "answer": "Call the physician's office before scheduling and ask two specific questions: 'What is your self-pay cash price for an established-patient visit?' and 'Do you add a facility fee, or are you an independent physician office?' Most independent offices will quote a flat self-pay cash price of $75 to $150 for a Level 3 visit, often 20 to 40 percent below their standard chargemaster rate. Get the quote in writing before your appointment, either via email or as a written Good Faith Estimate. For Federally Qualified Health Centers, you can request a sliding-scale fee estimate based on your household income. For Direct Primary Care practices, ask about the monthly membership fee and what services it includes."
+      },
+      {
+        "question": "Can I negotiate a doctor visit bill after the fact?",
+        "answer": "Yes. Most physician offices and hospital-owned clinics will negotiate a payment reduction for uninsured or self-pay patients who offer prompt payment. A typical approach: call the billing department and offer to pay a lump sum for 50 to 70 percent of the balance within 30 days. Many offices accept these offers because it avoids the cost of collections. If the final bill exceeds the Good Faith Estimate by $400 or more, you have a stronger legal lever: file a patient-provider dispute resolution claim at cms.gov/nosurprisesact within 120 days. For medical debt that has already gone to collections, the CFPB 2026 rule limits medical debt reporting on credit reports, giving patients additional negotiating leverage."
+      },
+      {
+        "question": "What is the difference between a hospital outpatient clinic and an independent physician office visit?",
+        "answer": "Clinically, the visit is identical. The cost difference arises from billing designations. An independent physician office bills only a professional fee for the physician's time and expertise. A hospital outpatient clinic that is designated as a 'provider-based' department bills two separate charges: a professional fee for the physician plus a facility fee for using the hospital's infrastructure, even if that infrastructure is a converted strip-mall clinic miles from the main campus. The facility fee adds $150 to $500 in 2026. Before scheduling, ask explicitly: 'Is this clinic a hospital outpatient department, or is it an independent practice?' The answer determines whether you will receive one bill or two."
+      },
+      {
+        "question": "Is a routine doctor visit covered by ACA preventive care?",
+        "answer": "Annual preventive wellness exams are covered at 100 percent with no deductible, copay, or coinsurance on ACA-compliant plans when performed by an in-network provider and coded as a preventive visit. This includes the annual physical, age-appropriate screenings (blood pressure, cholesterol, diabetes screening), and immunizations. However, if you raise a specific health concern during that same appointment and the physician addresses it, the problem-focused portion may be split into a separate billing code subject to your deductible and copay. USPSTF-recommended screenings that may be ordered at a primary care visit, such as blood pressure measurement, lipid screening, and diabetes screening for eligible patients, are separately covered as preventive services. Routine sick visits (earaches, colds, medication renewals) are not preventive and are subject to standard cost-sharing."
+      },
+      {
+        "question": "What is the difference between a primary care doctor visit and an urgent care visit?",
+        "answer": "A primary care visit is scheduled in advance with your regular physician or a designated primary care provider. Urgent care visits are walk-in or same-day appointments at a retail clinic or freestanding urgent care center for non-emergency acute conditions. Cost-wise in 2026, an urgent care visit typically runs $80 to $200 self-pay, compared to $75 to $150 for an established primary care visit at an independent office. Urgent care is convenient but does not include continuity of care, chronic disease management, or coordination of specialist referrals. Primary care physicians can also bill the complexity add-on code G2211 for Medicare beneficiaries when serving as the longitudinal care focal point, adding approximately $16 to $19 per visit for complex ongoing conditions, a service urgent care clinics generally cannot provide."
+      },
+      {
+        "question": "What low-cost options exist for doctor visits without insurance in 2026?",
+        "answer": "Four alternatives to full-price physician offices exist for uninsured adults. First, Federally Qualified Health Centers (FQHCs) charge on a sliding scale, often $20 to $80 per visit based on income; no patient is turned away. Find one at findahealthcenter.hrsa.gov. Second, Direct Primary Care practices charge $50 to $150 per month for unlimited office visits. Third, telehealth platforms charge $40 to $90 per video or phone visit for routine concerns. Fourth, retail clinics at pharmacies charge $80 to $150 for minor illness visits and some preventive screenings. None of these replace comprehensive insurance for hospitalization, specialist care, or expensive imaging, but they cover the majority of primary care needs at a fraction of the chargemaster cost."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuánto cuesta una visita al médico sin seguro en 2026?",
+        "answer": "En un consultorio médico independiente en 2026, una visita de atención primaria cuesta aproximadamente $75 a $150 para una visita de Nivel 3 de paciente establecido y $130 a $220 para una de Nivel 4. Las visitas de paciente nuevo oscilan entre $120 y $300 según la complejidad. En una clínica ambulatoria de propiedad hospitalaria, las mismas visitas pueden costar $200 a $600 debido a un cargo adicional de instalación. La mediana nacional para una visita de paciente establecido es aproximadamente $160. Estos rangos reflejan solo los honorarios del médico; cualquier análisis de laboratorio, imágenes o vacunas ordenados durante la visita se facturan por separado y se agregan al total."
+      },
+      {
+        "question": "¿Cuánto paga Medicare por una visita al médico en 2026?",
+        "answer": "Bajo el PFS de Medicare 2026, la Parte B de Medicare Original paga aproximadamente $90 por una visita de Nivel 3 de paciente establecido y $136 por una visita de Nivel 4 en un entorno no instalación. El beneficiario paga el 20 por ciento de coseguro después de cumplir el deducible de la Parte B 2026 de $283. Para una visita de Nivel 3 de $90, eso es aproximadamente $18 de bolsillo después del deducible. Los planes Medicare Advantage pueden cobrar un copago fijo en su lugar, típicamente $0 a $40. Las Visitas de Bienestar Anual (G0439) están cubiertas al 100 por ciento sin costos compartidos. Medigap paga el coseguro del 20 por ciento que Medicare Original deja al beneficiario."
+      },
+      {
+        "question": "¿Cómo solicito una Estimación de Buena Fe para una visita al médico?",
+        "answer": "Bajo la Ley de No Sorpresas, cualquier paciente sin seguro tiene derecho a una Estimación de Buena Fe escrita antes de una visita médica programada. Llame al consultorio médico e identifíquese como paciente sin seguro. Solicite un estimado escrito que detalle el cargo esperado del médico, cualquier análisis de laboratorio probable, y si la clínica agrega un cargo de instalación hospitalaria. Si la cita es con 10 o más días hábiles de anticipación, el estimado debe proporcionarse al menos 3 días hábiles antes de la visita. Si se programa de 3 a 9 días hábiles antes, el estimado debe llegar al menos 1 día hábil antes. Conserve el estimado escrito porque si la factura final excede el estimado en $400 o más, puede presentar una disputa en cms.gov/nosurprisesact dentro de 120 días."
+      },
+      {
+        "question": "¿Qué es la Ley de No Sorpresas y aplica a las visitas al médico?",
+        "answer": "La Ley de No Sorpresas entró en vigor el 1 de enero de 2022 y aplica a la mayoría de los servicios de salud programados, incluyendo visitas al médico de atención primaria. Para pacientes sin seguro, la Ley requiere que los proveedores proporcionen una Estimación de Buena Fe escrita de los cargos esperados antes de la cita. Para pacientes con seguro, la Ley limita la facturación de saldo fuera de la red en emergencias y en situaciones no urgentes donde el paciente no eligió voluntariamente un proveedor fuera de la red. Si su factura final excede la Estimación de Buena Fe en $400 o más, tiene 120 días desde la fecha de la factura para presentar un reclamo de resolución de disputas en cms.gov/nosurprisesact."
+      },
+      {
+        "question": "¿Cómo obtengo una cotización de pago en efectivo por una visita al médico?",
+        "answer": "Llame al consultorio médico antes de programar y haga dos preguntas específicas: '¿Cuál es su precio de autopago en efectivo para una visita de paciente establecido?' y '¿Agregan un cargo de instalación o son un consultorio médico independiente?' La mayoría de los consultorios independientes cotizarán un precio fijo de autopago de $75 a $150 para una visita de Nivel 3, a menudo del 20 al 40 por ciento por debajo de su tarifa de chargemaster estándar. Obtenga la cotización por escrito antes de su cita. Para los FQHCs, puede solicitar un estimado de tarifa deslizante basado en los ingresos de su hogar."
+      },
+      {
+        "question": "¿Puedo negociar una factura de visita al médico después de recibirla?",
+        "answer": "Sí. La mayoría de los consultorios médicos y clínicas aceptarán negociar una reducción de pago para pacientes sin seguro que ofrezcan pago inmediato. Un enfoque típico: llame al departamento de facturación y ofrezca pagar una suma global del 50 al 70 por ciento del saldo dentro de 30 días. Muchos consultorios aceptan estas ofertas porque evita el costo de cobranzas. Si la factura final excede la Estimación de Buena Fe en $400 o más, tiene un recurso legal más fuerte: presente un reclamo de resolución de disputas en cms.gov/nosurprisesact dentro de los 120 días."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre una clínica ambulatoria hospitalaria y un consultorio médico independiente?",
+        "answer": "Clínicamente, la visita es idéntica. La diferencia de costo surge de las designaciones de facturación. Un consultorio médico independiente solo factura un honorario profesional por el tiempo del médico. Una clínica ambulatoria hospitalaria designada como departamento 'basado en proveedor' factura dos cargos separados: un honorario profesional para el médico más un cargo de instalación por usar la infraestructura del hospital. El cargo de instalación agrega $150 a $500 en 2026. Antes de programar, pregunte explícitamente: '¿Esta clínica es un departamento ambulatorio del hospital o una práctica independiente?' La respuesta determina si recibirá una factura o dos."
+      },
+      {
+        "question": "¿Una visita de rutina al médico está cubierta por los servicios preventivos del ACA?",
+        "answer": "Los exámenes preventivos de bienestar anuales están cubiertos al 100 por ciento sin deducible, copago o coseguro en los planes ACA cuando los realiza un proveedor en la red y se codifican como visita preventiva. Esto incluye el físico anual, exámenes apropiados para la edad y vacunaciones. Sin embargo, si plantea una preocupación de salud específica durante esa misma cita y el médico la atiende, la parte orientada a problemas puede dividirse en un código de facturación separado sujeto a su deducible y copago. Las visitas de enfermedad de rutina (dolor de oído, resfriados, renovaciones de medicamentos) no son preventivas y están sujetas al costo compartido estándar."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre una visita al médico de atención primaria y una visita a clínica de atención urgente?",
+        "answer": "Una visita de atención primaria se programa con anticipación con su médico habitual. Las visitas de atención urgente son citas de entrada directa o el mismo día en una clínica minorista o centro de atención urgente para condiciones agudas no urgentes. En cuanto al costo en 2026, una visita de atención urgente típicamente cuesta $80 a $200 de autopago, en comparación con $75 a $150 para una visita de atención primaria establecida en un consultorio independiente. La atención urgente es conveniente pero no incluye continuidad de atención, manejo de enfermedades crónicas ni coordinación de derivaciones a especialistas."
+      },
+      {
+        "question": "¿Qué opciones de bajo costo existen para visitas al médico sin seguro en 2026?",
+        "answer": "Existen cuatro alternativas a los consultorios médicos de precio completo para adultos sin seguro. Primero, los Centros de Salud Calificados Federalmente (FQHCs) cobran en escala deslizante, a menudo $20 a $80 por visita según los ingresos; ningún paciente es rechazado. Encuéntrelos en findahealthcenter.hrsa.gov. Segundo, las prácticas de Atención Primaria Directa cobran $50 a $150 por mes por visitas ilimitadas al consultorio. Tercero, las plataformas de telesalud cobran $40 a $90 por visita de video o teléfono para preocupaciones de rutina. Cuarto, las clínicas minoristas en farmacias cobran $80 a $150 por visitas de enfermedades leves y algunas pruebas de detección preventiva."
+      }
+    ]
+  },
+  "goodFaithEstimate": {
+    "numberedSteps": [
+      "Call the physician's office and identify yourself as self-pay, uninsured, or not planning to use insurance for this visit.",
+      "Ask for a written Good Faith Estimate that itemizes: the expected visit level charge (Level 3 or Level 4), any laboratory tests expected during the encounter, whether the clinic adds a hospital facility fee, and the name and NPI of the billing provider.",
+      "Provide your ZIP code so the office can confirm any geography-based pricing adjustments.",
+      "Confirm the timing: the written estimate must be delivered at least 3 business days before the appointment if scheduled 10 or more business days out, or at least 1 business day before if scheduled 3 to 9 business days out.",
+      "Keep the written Good Faith Estimate in a safe place. If your final bill exceeds the estimate by $400 or more, you have 120 days from the date of the bill to file a patient-provider dispute resolution claim at cms.gov/nosurprisesact."
+    ],
+    "govStartingUrl": "https://www.cms.gov/nosurprisesact",
+    "documentsToBring": [
+      "Photo ID",
+      "Insurance card (if any coverage exists, even partial)",
+      "List of current medications and dosages",
+      "Referral from another physician (if required by the practice)",
+      "Any recent lab results or imaging reports relevant to the visit",
+      "Payment method (cash, credit card, or HSA/FSA card)"
+    ],
+    "commonReasonsQuoteChanges": [
+      "Lab tests ordered during the visit that were not anticipated in the Good Faith Estimate",
+      "Visit complexity determined by the physician to be a higher level (Level 4 instead of Level 3) than initially quoted",
+      "A facility fee added by a hospital-owned clinic not disclosed in the original estimate",
+      "Vaccine or immunization administered during the encounter and billed separately",
+      "A specialist consultation brought in during the same appointment billed under a separate NPI"
+    ],
+    "deadline": "3 business days before service if scheduled 10 or more business days out; 1 business day before service if scheduled 3 to 9 business days out"
+  },
+  "selfPayPrograms": {
+    "dedicatedSection": true,
+    "programTypes": [
+      "Independent physician office self-pay cash discount (20 to 40 percent off chargemaster)",
+      "Sliding-scale Federally Qualified Health Center (FQHC)",
+      "Direct Primary Care (DPC) membership practice",
+      "Telehealth platform (video or phone, $40 to $90)",
+      "Retail clinic at pharmacy (minor illness, $80 to $150)",
+      "Post-bill negotiation with billing department (lump-sum settlement offer)"
+    ],
+    "typicalDiscountRange": "30 to 60 percent below hospital outpatient chargemaster cash price when using an independent office or FQHC",
+    "howToAsk": [
+      "Call before scheduling and ask: 'What is your self-pay cash price for an established-patient visit?'",
+      "Ask: 'Are you an independent physician office or a hospital outpatient department? Do you add a facility fee?'",
+      "Get the quoted price in writing as a Good Faith Estimate before your appointment",
+      "Ask if the cash price includes any labs ordered at the visit or if those are billed separately",
+      "Ask about a same-day or prompt-pay discount if you are paying at the time of service",
+      "Compare the cash price to your insurance plan's negotiated rate if you have any coverage before deciding which to use"
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "No Surprises Act",
+        "es": "Ley de No Sorpresas"
+      },
+      "href": "/no-surprises-act"
+    },
+    {
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad para Medicare"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Urgent Care Visit Cost",
+        "es": "Costo de Visita a Clínica de Atención Urgente"
+      },
+      "href": "/cost/urgent-care"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMS 2026 Medicare Physician Fee Schedule Final Rule (CMS-1832-F)",
+      "url": "https://www.cms.gov/medicare/payment/fee-schedules/physician",
+      "note": {
+        "en": "2026 PFS conversion factor ($33.40/RVU) and non-facility payment rates for office evaluation and management codes; includes G2211 complexity add-on.",
+        "es": "Factor de conversión PFS 2026 ($33.40/RVU) y tarifas de pago no instalación para códigos de evaluación y manejo en consultorio; incluye el complemento de complejidad G2211."
+      }
+    },
+    {
+      "name": "CMS No Surprises Act Consumer Resources",
+      "url": "https://www.cms.gov/nosurprisesact",
+      "note": {
+        "en": "Federal portal for Good Faith Estimate guidance, patient-provider dispute resolution (PPDR) claim process, and No Surprises Act consumer fact sheets effective January 1, 2022.",
+        "es": "Portal federal para orientación sobre Estimación de Buena Fe, proceso de reclamación de resolución de disputas paciente-proveedor (PPDR) y hojas informativas de la Ley de No Sorpresas vigentes desde el 1 de enero de 2022."
+      }
+    },
+    {
+      "name": "FAIR Health Consumer Medical Pricing Tool",
+      "url": "https://www.fairhealthconsumer.org/",
+      "note": {
+        "en": "National benchmark data for physician office visit cash prices (E/M codes) by ZIP code; 2026 estimates for established and new patient visits at independent and hospital-based settings.",
+        "es": "Datos de referencia nacionales para precios al contado de visitas al consultorio médico (códigos E/M) por código postal; estimados 2026 para visitas de paciente establecido y nuevo en entornos independientes y hospitalarios."
+      }
+    },
+    {
+      "name": "KFF: Eight Trends Shaping 2026 Health Care Costs",
+      "url": "https://www.kff.org/health-costs/eight-trends-shaping-2026-health-care-costs/",
+      "note": {
+        "en": "KFF analysis of 2026 cost drivers including ACA deductible increases, provider consolidation (hospital acquisition of physician practices), and affordability challenges for uninsured adults.",
+        "es": "Análisis KFF de los factores de costo 2026 incluyendo aumentos de deducibles ACA, consolidación de proveedores (adquisición hospitalaria de prácticas médicas) y desafíos de asequibilidad para adultos sin seguro."
+      }
+    },
+    {
+      "name": "HRSA Health Resources and Services Administration: FQHC Sliding Fee Discount Program",
+      "url": "https://bphc.hrsa.gov/compliance/site-visits/site-visit-protocol/sliding-fee-discount-program",
+      "note": {
+        "en": "HRSA requirements for sliding-scale fee schedules at Federally Qualified Health Centers; 2026 federal poverty level thresholds for patient eligibility tiers.",
+        "es": "Requisitos HRSA para escalas de honorarios deslizantes en Centros de Salud Calificados Federalmente; umbrales del nivel de pobreza federal 2026 para niveles de elegibilidad del paciente."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Preventive Care Benefits",
+      "url": "https://www.healthcare.gov/coverage/preventive-care-benefits/",
+      "note": {
+        "en": "ACA requirement that health plans cover USPSTF-recommended preventive services at 100 percent with no cost-sharing; applies to annual wellness exams and age-appropriate screenings at primary care visits.",
+        "es": "Requisito ACA de que los planes de salud cubran los servicios preventivos recomendados por el USPSTF al 100 por ciento sin costo compartido; aplica a exámenes de bienestar anuales y exámenes apropiados para la edad en visitas de atención primaria."
+      }
+    }
+  ]
+}

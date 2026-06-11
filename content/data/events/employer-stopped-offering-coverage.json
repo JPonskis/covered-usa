@@ -1,0 +1,532 @@
+{
+  "slug": "employer-stopped-offering-coverage",
+  "eventName": {
+    "en": "My Employer Stopped Offering Health Insurance",
+    "es": "Mi Empleador Dejó de Ofrecer Seguro Médico"
+  },
+  "category": "Lost Other Coverage",
+  "topic": "My Employer Just Stopped Offering Health Insurance: SEP and Next Steps 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-07",
+  "readingTime": "9 min read",
+
+  "topicCluster": "event-sep",
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "keyTerms": {
+    "en": [
+      "employer stopped offering health insurance 2026",
+      "employer dropped health insurance special enrollment period",
+      "lost employer coverage sep 2026",
+      "what to do when employer stops offering health insurance",
+      "employer no longer offers health insurance options"
+    ],
+    "es": [
+      "empleador dejó de ofrecer seguro médico 2026",
+      "período de inscripción especial cobertura perdida empleador",
+      "empleador elimina seguro médico opciones 2026",
+      "qué hacer cuando el empleador quita el seguro",
+      "seguro médico sin cobertura del empleador 2026"
+    ]
+  },
+
+  "meta": {
+    "title": {
+      "en": "Employer Stopped Offering Health Insurance? Next Steps 2026",
+      "es": "¿Empleador Quita Seguro Médico? Próximos Pasos 2026"
+    },
+    "description": {
+      "en": "Your employer dropping coverage triggers a 60-day Special Enrollment Period. Compare ACA Marketplace plans, Medicaid, and COBRA options for 2026.",
+      "es": "Si su empleador quita la cobertura, tiene 60 días de Período de Inscripción Especial. Compare planes del Mercado ACA, Medicaid y COBRA en 2026."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Your Employer Just Dropped Health Insurance Coverage: What to Do in 2026",
+      "es": "Su Empleador Eliminó el Seguro Médico: Qué Hacer en 2026"
+    },
+    "subhero": {
+      "en": "Losing employer-sponsored coverage triggers a 60-day Special Enrollment Period. Most people qualify for ACA Marketplace subsidies that bring monthly premiums to $10 to $300, and Medicaid is available year-round if your income qualifies.",
+      "es": "Perder cobertura del empleador activa un Período de Inscripción Especial de 60 días. La mayoría califica para subsidios del Mercado ACA que reducen las primas a $10 a $300 al mes, y Medicaid está disponible todo el año si sus ingresos califican."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from your last day of employer coverage",
+      "es": "Tiene 60 días desde su último día de cobertura del empleador"
+    },
+    "body": {
+      "en": "Your 60-day Loss-of-Coverage SEP runs from the date your employer plan ends. For example, if coverage ends August 1, 2026, your SEP window closes September 30, 2026. Miss that window and you may have to wait until ACA Open Enrollment in November 2026 (for January 2027 coverage) unless another qualifying life event occurs. Medicaid enrollment is the one exception: year-round, no deadline.",
+      "es": "Su ventana del SEP de Pérdida de Cobertura de 60 días comienza desde la fecha en que termina el plan del empleador. Por ejemplo, si la cobertura termina el 1 de agosto de 2026, su ventana cierra el 30 de septiembre de 2026. Si pierde esa ventana, puede que tenga que esperar hasta la Inscripción Abierta de ACA en noviembre de 2026 (para cobertura de enero de 2027), a menos que ocurra otro evento calificador. La inscripción en Medicaid es la excepción: todo el año, sin fecha límite."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Spouse's employer plan (if applicable)",
+          "es": "Plan del empleador del cónyuge (si aplica)"
+        },
+        "days": 30
+      },
+      {
+        "label": {
+          "en": "Medicaid (if income qualifies at 138% FPL)",
+          "es": "Medicaid (si el ingreso califica al 138% FPL)"
+        },
+        "days": null
+      },
+      {
+        "label": {
+          "en": "COBRA election window",
+          "es": "Ventana de elección de COBRA"
+        },
+        "days": 60
+      }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "When your employer stops offering health insurance, you qualify for a 60-day Loss-of-Coverage Special Enrollment Period (SEP). Your main options are: (1) ACA Marketplace plan with subsidies at healthcare.gov (typically $10 to $300/month after Premium Tax Credits for most income levels in 2026), (2) Medicaid if household income is under 138% FPL in an expansion state (free, year-round), (3) a spouse's employer plan within 30 days, or (4) COBRA continuation at 102% of the full premium (typically $400 to $900/month for a single person in 2026). Most people in this situation pay far less on the Marketplace than they expect once 2026 subsidies are applied. The ACA subsidy cliff returned for 2026 after enhanced PTCs expired January 1, 2026, so verifying your exact household income against the 400% FPL threshold of $63,840 for a single person matters.",
+    "es": "Cuando su empleador deja de ofrecer seguro médico, califica para un Período de Inscripción Especial (SEP) de Pérdida de Cobertura de 60 días. Sus opciones principales son: (1) plan del Mercado ACA con subsidios en healthcare.gov (típicamente $10 a $300/mes después de Créditos Fiscales de Prima para la mayoría de niveles de ingresos en 2026), (2) Medicaid si el ingreso del hogar está bajo el 138% FPL en un estado de expansión (gratis, todo el año), (3) plan del empleador de un cónyuge en 30 días, o (4) continuación COBRA al 102% de la prima completa (típicamente $400 a $900/mes para una persona sola en 2026). La mayoría de personas en esta situación pagan mucho menos en el Mercado de lo que esperan una vez aplicados los subsidios de 2026."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Receiving notice that your employer is dropping health insurance coverage ranks among the most stressful financial surprises a working adult can face. Employers with fewer than 50 full-time equivalent employees are not required under the ACA to offer coverage at all, and even large employers can restructure benefits with as little as 60 days' written notice. When that notice arrives, the clock starts immediately. Federal law grants you a Loss-of-Coverage Special Enrollment Period (SEP) under HIPAA Section 9831 and ACA rules. You have exactly 60 days from the date coverage ends, not from the date you received the notice, to enroll in an ACA Marketplace plan. The 60-day window is strict: missing it means waiting until ACA Open Enrollment in November 2026 unless a second qualifying life event occurs. Most families in this situation are surprised to learn that ACA Marketplace plans with Premium Tax Credits cost far less than COBRA, and that Medicaid covers anyone under 138% FPL year-round in the 40 expansion states plus DC. The fastest path forward is to compare all four options with real income numbers before your coverage lapses.",
+      "es": "Recibir aviso de que su empleador está eliminando la cobertura de seguro médico es una de las sorpresas financieras más estresantes que puede enfrentar un adulto trabajador. Los empleadores con menos de 50 empleados equivalentes a tiempo completo no están obligados bajo la ACA a ofrecer cobertura, y hasta las empresas grandes pueden reestructurar beneficios con tan solo 60 días de aviso escrito. Cuando llega ese aviso, el reloj comienza de inmediato. La ley federal le otorga un Período de Inscripción Especial (SEP) de Pérdida de Cobertura bajo la Sección 9831 de HIPAA y las reglas del ACA. Tiene exactamente 60 días desde la fecha en que termina la cobertura, no desde la fecha en que recibió el aviso, para inscribirse en un plan del Mercado ACA. La ventana de 60 días es estricta: perderla significa esperar hasta la Inscripción Abierta ACA en noviembre de 2026, a menos que ocurra un segundo evento calificador."
+    },
+    {
+      "en": "Four pathways open the moment your employer-sponsored coverage ends. ACA Marketplace plans through healthcare.gov are the most common choice: Premium Tax Credits reduce premiums dramatically for incomes between 100% and 400% of the Federal Poverty Level, which in 2026 means $15,960 to $63,840 for a single person or $33,000 to $132,000 for a family of four. Medicaid is the right first step if your projected annual income falls under 138% FPL (approximately $22,025 for one person or $45,540 for a family of four in 2026 in the 40 expansion states). Enrolling through a spouse's employer plan is often the cheapest option when available, but the window is only 30 days. COBRA preserves your existing provider network but typically costs $400 to $900 per month for individual coverage and $1,200 to $2,800 for family coverage at the full 102% premium. For a detailed comparison of all options, check the ACA income limits and Medicaid income limits pages. Understanding which path costs less requires calculating your 2026 projected household income before the first day of your SEP.",
+      "es": "Cuatro rutas se abren en el momento en que termina su cobertura patrocinada por el empleador. Los planes del Mercado ACA a través de healthcare.gov son la opción más común: los Créditos Fiscales de Prima reducen dramáticamente las primas para ingresos entre el 100% y el 400% del Nivel Federal de Pobreza, que en 2026 significa $15,960 a $63,840 para una persona sola o $33,000 a $132,000 para una familia de cuatro. Medicaid es el primer paso correcto si su ingreso anual proyectado cae bajo el 138% FPL (aproximadamente $22,025 para una persona o $45,540 para una familia de cuatro en 2026 en los 40 estados de expansión). Inscribirse en el plan del empleador de un cónyuge suele ser la opción más barata cuando está disponible, pero la ventana es de solo 30 días. COBRA preserva su red de proveedores existente, pero típicamente cuesta $400 a $900 al mes para cobertura individual y $1,200 a $2,800 para cobertura familiar."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Confirm your coverage end date in writing",
+        "es": "Confirme su fecha de fin de cobertura por escrito"
+      },
+      "text": {
+        "en": "Request a written termination notice or benefits discontinuation letter from your HR department. The letter must state the last day of coverage: this is the date your 60-day SEP clock starts, not the date of the employer's announcement. The letter also serves as documentation for your Marketplace SEP application at healthcare.gov. Without this letter, Marketplace verification may delay your enrollment.",
+        "es": "Solicite a su departamento de recursos humanos una carta de terminación escrita o carta de discontinuación de beneficios. La carta debe indicar el último día de cobertura: esta es la fecha en que comienza el reloj de 60 días de su SEP, no la fecha del anuncio del empleador. La carta también sirve como documentación para su solicitud de SEP en healthcare.gov."
+      }
+    },
+    {
+      "name": {
+        "en": "Calculate your projected 2026 household income",
+        "es": "Calcule su ingreso del hogar proyectado para 2026"
+      },
+      "text": {
+        "en": "ACA subsidies and Medicaid eligibility both use Modified Adjusted Gross Income (MAGI) based on projected annual income for the current year, not last year's. Add up all household income sources: wages, self-employment, unemployment, interest, and Social Security. If your income is under 138% FPL (about $22,025 single or $45,540 for a family of four in 2026), apply for Medicaid first. If income falls between 100% and 400% FPL ($15,960 to $63,840 single in 2026), you qualify for Marketplace Premium Tax Credits. Above 400% FPL, you pay full premiums but can still use the Marketplace.",
+        "es": "Los subsidios del ACA y la elegibilidad de Medicaid usan el Ingreso Bruto Ajustado Modificado (MAGI) basado en el ingreso anual proyectado para el año en curso, no el del año pasado. Sume todas las fuentes de ingreso del hogar: salarios, trabajo por cuenta propia, desempleo, intereses y Seguro Social. Si su ingreso está bajo el 138% FPL (aproximadamente $22,025 para uno o $45,540 para familia de cuatro en 2026), solicite Medicaid primero."
+      }
+    },
+    {
+      "name": {
+        "en": "Check Medicaid eligibility before shopping Marketplace plans",
+        "es": "Verifique la elegibilidad de Medicaid antes de buscar planes del Mercado"
+      },
+      "text": {
+        "en": "Apply for Medicaid through your state Medicaid agency or through healthcare.gov at any time, year-round. Medicaid in the 40 expansion states plus DC covers anyone under 138% FPL with no premium and minimal cost-sharing. State programs go by different names: Medi-Cal in California, AHCCCS in Arizona, BadgerCare in Wisconsin, MassHealth in Massachusetts, Apple Health in Washington, HUSKY Health in Connecticut. If you live in one of the 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming), Medicaid income limits are much stricter, and the Marketplace is often your only subsidized path.",
+        "es": "Solicite Medicaid a través de la agencia estatal de Medicaid o a través de healthcare.gov en cualquier momento, durante todo el año. Medicaid en los 40 estados de expansión más DC cubre a cualquiera bajo el 138% FPL sin prima y con costos compartidos mínimos. Los programas estatales tienen diferentes nombres: Medi-Cal en California, AHCCCS en Arizona, BadgerCare en Wisconsin, MassHealth en Massachusetts, Apple Health en Washington, HUSKY Health en Connecticut."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare ACA Marketplace plans at healthcare.gov using your 60-day SEP",
+        "es": "Compare planes del Mercado ACA en healthcare.gov usando su SEP de 60 días"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov (or your state exchange if applicable) and report the qualifying life event: loss of employer-sponsored coverage. Upload your termination letter as documentation. Enter your projected 2026 income to see your exact Premium Tax Credit amount. Compare Bronze, Silver, and Gold plans side by side, focusing on monthly premium after subsidy, annual deductible, and your current providers' network status. Silver plans with cost-sharing reductions are often the best value for incomes under 250% FPL. The 2026 ACA out-of-pocket maximum is $10,600 for an individual and $21,200 for a family.",
+        "es": "Inicie sesión en healthcare.gov (o su mercado estatal si aplica) e informe el evento calificador de vida: pérdida de cobertura patrocinada por el empleador. Suba su carta de terminación como documentación. Ingrese su ingreso proyectado de 2026 para ver su monto exacto de Crédito Fiscal de Prima. Compare planes Bronze, Silver y Gold lado a lado, enfocándose en la prima mensual después del subsidio, el deducible anual y el estado de la red de sus proveedores actuales."
+      }
+    },
+    {
+      "name": {
+        "en": "Evaluate your spouse's employer plan as a low-cost alternative",
+        "es": "Evalúe el plan del empleador de su cónyuge como alternativa de bajo costo"
+      },
+      "text": {
+        "en": "Losing your own employer-sponsored coverage is also a qualifying life event under your spouse's employer plan. Your spouse's HR department typically allows you to enroll within 30 days of your coverage loss date, though some plans allow 60 days. Call HR directly, confirm the Special Enrollment deadline, and compare the employee-plus-spouse premium against your Marketplace options. Employer group plans often have lower premiums than individual Marketplace plans even after subsidies, depending on how much the spouse's employer contributes.",
+        "es": "Perder su propia cobertura patrocinada por el empleador también es un evento calificador de vida bajo el plan del empleador de su cónyuge. El departamento de recursos humanos de su cónyuge típicamente le permite inscribirse en 30 días desde la fecha de pérdida de cobertura. Llame a recursos humanos directamente, confirme el plazo del SEP y compare la prima del empleado más cónyuge con sus opciones del Mercado."
+      }
+    },
+    {
+      "name": {
+        "en": "Consider COBRA only if you have active treatment requiring network continuity",
+        "es": "Considere COBRA solo si tiene tratamiento activo que requiera continuidad de red"
+      },
+      "text": {
+        "en": "COBRA election gives you up to 18 months of continuation coverage on your current employer plan at 102% of the full premium (your share plus the employer's share plus a 2% administrative fee). COBRA applies to employers with 20 or more employees; smaller employers may offer state mini-COBRA. Submit your COBRA election notice within 60 days of coverage loss. COBRA makes financial sense only when: you have ongoing treatment with a specialist not in any Marketplace network, or you have already met a large deductible for 2026 and need to preserve that cost-sharing through the calendar year.",
+        "es": "La elección de COBRA le da hasta 18 meses de cobertura de continuación en su plan actual del empleador al 102% de la prima completa (su parte más la del empleador más una tarifa administrativa del 2%). COBRA aplica a empleadores con 20 o más empleados. Presente su aviso de elección de COBRA en 60 días desde la pérdida de cobertura. COBRA tiene sentido financiero solo cuando: tiene tratamiento continuo con un especialista que no está en ninguna red del Mercado, o ya ha alcanzado un deducible grande para 2026."
+      }
+    },
+    {
+      "name": {
+        "en": "Enroll and submit documentation before Day 60",
+        "es": "Inscríbase y envíe documentación antes del Día 60"
+      },
+      "text": {
+        "en": "Submit your application and select a plan before the 60-day SEP closes. Your new Marketplace coverage can begin as soon as the first of the month after you enroll or, in some cases, on the first of the month your coverage ends. Keep a copy of your application confirmation and your 1095-A form (which you will receive in January) for filing your 2026 federal tax return. If your income changes during the year, report it to healthcare.gov to avoid a subsidy reconciliation surprise at tax time.",
+        "es": "Envíe su solicitud y seleccione un plan antes de que cierre el SEP de 60 días. Su nueva cobertura del Mercado puede comenzar el primero del mes después de inscribirse o, en algunos casos, el primero del mes en que termina su cobertura. Guarde una copia de la confirmación de su solicitud y su formulario 1095-A (que recibirá en enero) para presentar su declaración de impuestos federales de 2026."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opción", "Costo típico", "Mejor para", "Fecha límite"]
+    },
+    "rows": [
+      {
+        "en": ["ACA Marketplace (with subsidies)", "$10 to $300/mo after 2026 Premium Tax Credits", "Incomes 100% to 400% FPL ($15,960 to $63,840 single)", "60-day Loss-of-Coverage SEP"],
+        "es": ["Mercado ACA (con subsidios)", "$10 a $300/mes después de Créditos Fiscales de Prima 2026", "Ingresos del 100% al 400% FPL ($15,960 a $63,840 para uno)", "SEP de Pérdida de Cobertura de 60 días"]
+      },
+      {
+        "en": ["Medicaid", "Free or near-free", "Income under 138% FPL (approx. $22,025 single, $45,540 family of 4 in 2026)", "Year-round, no deadline"],
+        "es": ["Medicaid", "Gratis o casi gratis", "Ingreso bajo 138% FPL (aprox. $22,025 para uno, $45,540 familia de 4 en 2026)", "Todo el año, sin fecha límite"]
+      },
+      {
+        "en": ["Spouse's employer plan", "Varies (often cheaper than Marketplace)", "Married with employed spouse whose plan accepts mid-year adds", "30 days from loss"],
+        "es": ["Plan del empleador del cónyuge", "Varía (a menudo más barato que el Mercado)", "Casado con cónyuge empleado cuyo plan acepta adiciones en el año", "30 días desde la pérdida"]
+      },
+      {
+        "en": ["COBRA", "$400 to $900+/mo individual; $1,200 to $2,800/mo family (102% full premium)", "Active treatment with specialist not in any Marketplace network; or large deductible already met in 2026", "60 days to elect"],
+        "es": ["COBRA", "$400 a $900+/mes individual; $1,200 a $2,800/mes familia (102% prima completa)", "Tratamiento activo con especialista fuera de redes del Mercado; o deducible grande ya alcanzado en 2026", "60 días para elegir"]
+      },
+      {
+        "en": ["State mini-COBRA (small employers)", "Same as COBRA cost rules; duration varies by state", "Employers with fewer than 20 employees in states with mini-COBRA laws", "Varies by state (typically 60 days)"],
+        "es": ["Mini-COBRA estatal (empleadores pequeños)", "Mismas reglas de costo que COBRA; duración varía por estado", "Empleadores con menos de 20 empleados en estados con leyes de mini-COBRA", "Varía por estado (típicamente 60 días)"]
+      }
+    ],
+    "footnote": {
+      "en": "ACA Marketplace costs depend on your 2026 projected income and household size. The 400% FPL subsidy cliff returned for 2026 after enhanced PTCs expired January 1, 2026. Incomes above $63,840 (single) or $132,000 (family of 4) no longer receive subsidies. COBRA is almost always more expensive than a subsidized Marketplace plan. Medicaid is free if income qualifies and is always the first check.",
+      "es": "Los costos del Mercado ACA dependen de su ingreso proyectado de 2026 y el tamaño del hogar. El tope de subsidio del 400% FPL regresó para 2026 después de que los PTCs mejorados expiraron el 1 de enero de 2026. Ingresos sobre $63,840 (individual) o $132,000 (familia de 4) ya no reciben subsidios. COBRA es casi siempre más caro que un plan del Mercado con subsidio. Medicaid es gratuito si el ingreso califica y siempre es la primera verificación."
+    },
+    "source": "healthcare.gov, Medicaid.gov, IRS COBRA guidance, KFF 2026 Employer Health Benefits Survey"
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "Five costly mistakes people make when their employer drops health insurance coverage:",
+      "es": "Cinco errores costosos que la gente comete cuando el empleador elimina la cobertura:"
+    },
+    "items": [
+      {
+        "en": "Missing the 60-day SEP by waiting for the COBRA notice. COBRA election paperwork arrives weeks after coverage ends. Do not wait for it. Your Marketplace SEP clock is already running from your coverage end date, not the COBRA notice date.",
+        "es": "Perder el SEP de 60 días esperando el aviso de COBRA. Los documentos de elección de COBRA llegan semanas después de que termina la cobertura. No espere por ello. Su reloj del SEP del Mercado ya está corriendo desde la fecha de fin de cobertura, no la fecha del aviso de COBRA."
+      },
+      {
+        "en": "Using last year's income instead of projected current-year income. ACA subsidy calculations use your projected 2026 income. If your employer's contribution was pushing you above subsidy thresholds, losing that situation may now make you eligible for large Premium Tax Credits.",
+        "es": "Usar el ingreso del año pasado en lugar del ingreso proyectado del año en curso. Los cálculos de subsidios del ACA usan su ingreso proyectado de 2026. Si la contribución de su empleador lo empujaba sobre los umbrales de subsidio, perder esa situación ahora puede hacerlo elegible para grandes Créditos Fiscales de Prima."
+      },
+      {
+        "en": "Defaulting to COBRA without comparing Marketplace plans. COBRA at 102% of the full premium is rarely cheaper than a subsidized Marketplace Silver plan. Always get Marketplace premium estimates first by entering your income at healthcare.gov.",
+        "es": "Optar por COBRA sin comparar planes del Mercado. COBRA al 102% de la prima completa rara vez es más barato que un plan Silver del Mercado con subsidio. Siempre obtenga estimados de primas del Mercado primero ingresando su ingreso en healthcare.gov."
+      },
+      {
+        "en": "Forgetting to check if your employer had fewer than 20 employees. Federal COBRA applies only to employers with 20 or more employees. If your employer is smaller, you need state mini-COBRA laws (where available) or jump straight to the Marketplace or Medicaid.",
+        "es": "Olvidar verificar si su empleador tenía menos de 20 empleados. El COBRA federal aplica solo a empleadores con 20 o más empleados. Si su empleador es más pequeño, necesita las leyes estatales de mini-COBRA (donde estén disponibles) o ir directamente al Mercado o Medicaid."
+      },
+      {
+        "en": "Not verifying Medicaid eligibility before paying for a Marketplace plan. If your current income qualifies for Medicaid (under 138% FPL in expansion states), Medicaid is free comprehensive coverage with no premium. Paying Marketplace premiums when Medicaid is available wastes money.",
+        "es": "No verificar la elegibilidad de Medicaid antes de pagar por un plan del Mercado. Si su ingreso actual califica para Medicaid (bajo 138% FPL en estados de expansión), Medicaid es cobertura completa gratuita sin prima. Pagar primas del Mercado cuando Medicaid está disponible es un desperdicio de dinero."
+      },
+      {
+        "en": "Assuming coverage is retroactive when it is not. ACA Marketplace coverage starts the first of the month after enrollment (or the first of the month coverage ends, depending on timing). Check the effective date carefully. Any gap between your old coverage end and new coverage start means paying out of pocket for care received during that gap.",
+        "es": "Asumir que la cobertura es retroactiva cuando no lo es. La cobertura del Mercado ACA comienza el primero del mes después de la inscripción. Verifique la fecha de vigencia cuidadosamente. Cualquier brecha entre el fin de su cobertura anterior y el inicio de la nueva cobertura significa pagar de su bolsillo por la atención recibida durante esa brecha."
+      }
+    ]
+  },
+
+  "comparisonNarrative": {
+    "heading": {
+      "en": "COBRA vs Marketplace vs Spouse's Plan: Which Should You Choose?",
+      "es": "COBRA vs Mercado vs Plan del Cónyuge: ¿Cuál Debe Elegir?"
+    },
+    "body": {
+      "en": "After losing employer-sponsored coverage in 2026, three pathways compete on cost and continuity. COBRA preserves your existing plan at 102% of the full group premium, which for an employer plan covering a single adult typically runs $400 to $900 per month and for a family plan typically runs $1,200 to $2,800 per month. COBRA's advantage is pure network continuity: your current doctors, specialists, and prescription formulary stay the same. COBRA's disadvantage is cost: you are paying both your old employee share and the employer's contribution simultaneously, plus the 2% administrative fee. ACA Marketplace plans, by contrast, offer income-based Premium Tax Credits that in 2026 reduce most Silver plan premiums to $10 to $300 per month for incomes between 100% and 400% FPL. Per the 2026 KFF Employer Health Benefits Survey, average employer plans cost $8,951 annually for single coverage and $25,572 for family coverage, meaning COBRA on a family plan averages over $2,100 per month before subsidies. A Marketplace Silver plan for a family of four with income at 200% FPL ($66,000 in 2026) can cost under $200 per month after PTCs. A spouse's employer plan is often the cheapest option when available: if your spouse's employer contributes heavily to premiums and the plan network includes your providers, adding yourself to your spouse's plan at the 30-day qualifying event window typically costs less than any other path. The decision framework: check Medicaid first (free if income qualifies under 138% FPL); then evaluate the spouse's employer plan (30-day window, call HR immediately); then compare Marketplace with actual subsidy calculations at healthcare.gov; use COBRA only as a last resort to preserve a specific specialist relationship or a met deductible that cannot be replicated in any Marketplace network.",
+      "es": "Después de perder la cobertura patrocinada por el empleador en 2026, tres rutas compiten en costo y continuidad. COBRA preserva su plan existente al 102% de la prima grupal completa, que para un plan de empleador que cubre a un adulto soltero típicamente cuesta $400 a $900 por mes y para un plan familiar típicamente cuesta $1,200 a $2,800 por mes. Los planes del Mercado ACA ofrecen Créditos Fiscales de Prima basados en ingresos que en 2026 reducen la mayoría de primas de planes Silver a $10 a $300 por mes para ingresos entre el 100% y el 400% del FPL. El plan del empleador de un cónyuge es a menudo la opción más barata cuando está disponible. El marco de decisión: verificar Medicaid primero (gratis si el ingreso califica bajo el 138% FPL); luego evaluar el plan del empleador del cónyuge (ventana de 30 días, llamar a recursos humanos de inmediato); luego comparar el Mercado con cálculos reales de subsidio en healthcare.gov; usar COBRA solo como último recurso para preservar una relación específica con un especialista o un deducible alcanzado que no se puede replicar en ninguna red del Mercado."
+    }
+  },
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid and ACA subsidy income limits, 2026 (48 contiguous states + DC)",
+      "headers": ["Household size", "138% FPL (Medicaid expansion cutoff)", "400% FPL (ACA subsidy cliff)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,820", "$86,400"],
+        ["3", "$37,615", "$108,960"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,335", "$154,560"],
+        ["6", "$61,130", "$177,120"],
+        ["7", "$68,925", "$199,680"],
+        ["8", "$76,720", "$222,240"],
+        ["Each additional person", "+ $7,795", "+ $22,560"]
+      ],
+      "footnote": "Alaska and Hawaii have higher FPL thresholds. The 400% FPL subsidy cliff returned for 2026 after enhanced PTCs from ARPA/IRA expired January 1, 2026. Incomes above 400% FPL no longer receive Premium Tax Credits in 2026.",
+      "source": "HHS ASPE 2026 Poverty Guidelines; CMS ACA premium tax credit thresholds 2026"
+    },
+    "es": {
+      "caption": "Límites de ingresos de Medicaid y subsidios ACA, 2026 (48 estados contiguos + DC)",
+      "headers": ["Tamaño del hogar", "138% FPL (corte de expansión de Medicaid)", "400% FPL (tope de subsidio ACA)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,820", "$86,400"],
+        ["3", "$37,615", "$108,960"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,335", "$154,560"],
+        ["6", "$61,130", "$177,120"],
+        ["7", "$68,925", "$199,680"],
+        ["8", "$76,720", "$222,240"],
+        ["Cada persona adicional", "+ $7,795", "+ $22,560"]
+      ],
+      "footnote": "Alaska y Hawaii tienen umbrales FPL más altos. El tope de subsidio del 400% FPL regresó para 2026 después de que los PTCs mejorados de ARPA/IRA expiraron el 1 de enero de 2026.",
+      "source": "Pautas de Pobreza HHS ASPE 2026; Umbrales de crédito fiscal de prima ACA de CMS 2026"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "Written termination notice or benefits discontinuation letter from employer stating the last day of coverage (required for Marketplace SEP verification)",
+      "Social Security numbers for every household member applying for coverage",
+      "Proof of current address (ZIP code determines plan availability at healthcare.gov)",
+      "Recent pay stubs or income documentation to calculate projected 2026 household MAGI",
+      "Current insurance card (to look up existing providers' names for network comparison)",
+      "COBRA election notice (arrives 30 to 44 days after coverage loss; useful for cost comparison but not needed to start SEP)",
+      "Birth certificates for any dependents you are adding to a new plan",
+      "Most recent federal tax return (for Medicaid applications requiring prior-year income verification)"
+    ],
+    "es": [
+      "Aviso de terminación escrito o carta de discontinuación de beneficios del empleador indicando el último día de cobertura (requerido para la verificación del SEP en el Mercado)",
+      "Números de Seguro Social para cada miembro del hogar que solicita cobertura",
+      "Prueba de dirección actual (el código postal determina la disponibilidad del plan en healthcare.gov)",
+      "Recibos de pago recientes o documentación de ingresos para calcular el MAGI proyectado del hogar 2026",
+      "Tarjeta de seguro actual (para buscar los nombres de los proveedores existentes para comparación de redes)",
+      "Aviso de elección de COBRA (llega 30 a 44 días después de la pérdida de cobertura; útil para comparación de costos pero no necesario para iniciar el SEP)",
+      "Actas de nacimiento para cualquier dependiente que esté añadiendo a un nuevo plan",
+      "Declaración federal de impuestos más reciente (para solicitudes de Medicaid que requieran verificación de ingresos del año anterior)"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "SEP window expired: application submitted after Day 60 from coverage loss date. Marketplace verifies the qualifying event date against the plan end date; late applications are rejected.",
+      "Insufficient documentation: no employer termination letter or only a verbal notification. Healthcare.gov requires written proof of qualifying event for Loss-of-Coverage SEPs.",
+      "Income reported incorrectly: using prior-year (2025) income instead of projected 2026 income, which may inflate or deflate the subsidy calculation.",
+      "Applying to the wrong program: attempting a Marketplace plan when Medicaid applies (income under 138% FPL), resulting in unnecessary premium payments.",
+      "COBRA confusion: waiting for the COBRA election notice before starting the Marketplace SEP. The two 60-day clocks run concurrently from the coverage loss date, not sequentially."
+    ],
+    "es": [
+      "Ventana de SEP expirada: solicitud presentada después del Día 60 desde la fecha de pérdida de cobertura. El Mercado verifica la fecha del evento calificador con la fecha de fin del plan; las solicitudes tardías son rechazadas.",
+      "Documentación insuficiente: sin carta de terminación del empleador o solo notificación verbal. Healthcare.gov requiere prueba escrita del evento calificador para SEPs de Pérdida de Cobertura.",
+      "Ingreso reportado incorrectamente: usar el ingreso del año anterior (2025) en lugar del ingreso proyectado de 2026, lo que puede inflar o deflactar el cálculo del subsidio.",
+      "Solicitud al programa incorrecto: intentar un plan del Mercado cuando aplica Medicaid (ingreso bajo 138% FPL), resultando en pagos de primas innecesarios.",
+      "Confusión con COBRA: esperar el aviso de elección de COBRA antes de iniciar el SEP del Mercado. Los dos relojes de 60 días corren concurrentemente desde la fecha de pérdida de cobertura, no secuencialmente."
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Medicaid Eligibility After Losing Employer Coverage in 2026",
+        "es": "Elegibilidad de Medicaid Después de Perder Cobertura del Empleador en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Losing employer-sponsored coverage in 2026 often triggers Medicaid eligibility you did not have while receiving employer benefits. Medicaid is income-gated at 138% of the Federal Poverty Level in the 40 expansion states plus DC, which for 2026 means $22,025 for a single person or $45,540 for a family of four. Because employer plan premiums sometimes push workers just above Medicaid income limits due to cafeteria plan pre-tax contributions, losing that income structure can shift your actual MAGI below the Medicaid threshold. Medicaid enrollment is year-round with no enrollment period deadline, making it uniquely forgiving compared to the Marketplace's strict 60-day SEP. Apply through healthcare.gov or directly through your state Medicaid agency. State programs vary by name: California's Medi-Cal, Arizona's AHCCCS, Washington's Apple Health, Wisconsin's BadgerCare, Massachusetts's MassHealth, Connecticut's HUSKY Health, Tennessee's TennCare, and New Jersey's NJ FamilyCare. CHIP (Children's Health Insurance Program) covers children in families with incomes up to 200% to 300% FPL depending on the state, even if a parent does not qualify for Medicaid, with enrollment available year-round at very low or no cost.",
+          "es": "Perder la cobertura patrocinada por el empleador en 2026 a menudo activa la elegibilidad de Medicaid que no tenía mientras recibía los beneficios del empleador. Medicaid tiene un límite de ingresos del 138% del Nivel Federal de Pobreza en los 40 estados de expansión más DC, que para 2026 significa $22,025 para una persona sola o $45,540 para una familia de cuatro. La inscripción en Medicaid es durante todo el año sin fecha límite de período de inscripción. Solicite a través de healthcare.gov o directamente a través de la agencia estatal de Medicaid. Los programas estatales varían por nombre: Medi-Cal de California, AHCCCS de Arizona, Apple Health de Washington, BadgerCare de Wisconsin, MassHealth de Massachusetts, HUSKY Health de Connecticut, TennCare de Tennessee y NJ FamilyCare de Nueva Jersey. CHIP cubre a los niños en familias con ingresos de hasta el 200% al 300% del FPL según el estado."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Small Employer Coverage Loss: COBRA Does Not Apply, What Does",
+        "es": "Pérdida de Cobertura de Empleador Pequeño: COBRA No Aplica, Qué Aplica"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal COBRA continuation coverage applies only to group health plans sponsored by employers with 20 or more employees. Workers who lose coverage from a small employer (fewer than 20 employees) are not entitled to federal COBRA. Several states have enacted mini-COBRA laws that extend continuation coverage rights to employees of smaller employers: California (Cal-COBRA, up to 36 months), New York (extends to employers with 2 to 19 employees), Illinois, and several others. To find out if your small employer's state has mini-COBRA, contact your state's Department of Insurance. Regardless of COBRA status, all workers losing employer coverage qualify for the Marketplace Loss-of-Coverage SEP. The 60-day SEP window and all Marketplace subsidy options are the same whether your employer had 5 employees or 5,000. Medicaid and CHIP eligibility are also completely independent of employer size.",
+          "es": "La cobertura de continuación COBRA federal aplica solo a planes de salud grupales patrocinados por empleadores con 20 o más empleados. Los trabajadores que pierden cobertura de un empleador pequeño (menos de 20 empleados) no tienen derecho al COBRA federal. Varios estados han promulgado leyes de mini-COBRA que extienden los derechos de cobertura de continuación a empleados de empleadores más pequeños: California (Cal-COBRA, hasta 36 meses), Nueva York (extiende a empleadores con 2 a 19 empleados), Illinois y varios más. Independientemente del estado de COBRA, todos los trabajadores que pierden cobertura del empleador califican para el SEP de Pérdida de Cobertura del Mercado. La ventana del SEP de 60 días y todas las opciones de subsidio del Mercado son las mismas ya sea que su empleador tuviera 5 empleados o 5,000."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Documents You Need and Why Each One Matters",
+        "es": "Documentos Que Necesita y Por Qué Cada Uno Importa"
+      },
+      "paragraphs": [
+        {
+          "en": "Three document categories determine how smoothly your SEP enrollment proceeds. First, the qualifying event proof: your employer's written termination notice or benefits discontinuation letter. Healthcare.gov verifies qualifying events, and the Marketplace may put your application on hold if you submit without this letter. Get the letter from HR in writing before your last day if possible. Second, income documentation: recent pay stubs or a letter from your employer confirming your final paycheck amount. For Marketplace applications, you declare projected income, not past income. If you expect reduced income during the gap period (while job-searching, for example), use your realistic projected annual income, not your former full-year salary. Lower projected income equals a larger Premium Tax Credit. Third, your Social Security number and those of each household member. Healthcare.gov verifies SSNs against Social Security Administration records. A mismatch creates a data-match issue that can delay enrollment by weeks. Confirm every household member's SSN is current before applying.",
+          "es": "Tres categorías de documentos determinan qué tan fluida transcurre su inscripción en el SEP. Primero, la prueba del evento calificador: el aviso de terminación escrito de su empleador o carta de discontinuación de beneficios. Healthcare.gov verifica los eventos calificadores, y el Mercado puede poner su solicitud en espera si presenta sin esta carta. Segundo, documentación de ingresos: recibos de pago recientes o carta de su empleador confirmando su último cheque. Para solicitudes del Mercado, declara el ingreso proyectado, no el ingreso pasado. Tercero, su número de Seguro Social y los de cada miembro del hogar."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Happens to Your Children's Coverage When Your Employer Plan Ends",
+        "es": "Qué Pasa con la Cobertura de Sus Hijos Cuando Termina el Plan del Empleador"
+      },
+      "paragraphs": [
+        {
+          "en": "Children covered under your employer plan also lose coverage on the same date and qualify for the same 60-day SEP. However, children may have additional options unavailable to adults. CHIP covers children in families with incomes up to 200% to 300% FPL depending on state, and in some states up to 400% FPL, with enrollment open year-round. Premiums for CHIP are typically $0 to $50 per child per month, making CHIP far cheaper than adding children to a Marketplace plan for families with incomes in the CHIP eligibility range. Each state's CHIP program has its own brand name: Pennsylvania's CHIP, New Jersey's NJ FamilyCare, Connecticut's HUSKY Health, Wisconsin's BadgerCare, Illinois's AllKids. Apply for CHIP through your state Medicaid agency or through healthcare.gov, which screens for both Medicaid and CHIP eligibility simultaneously. Children can also be added to a Marketplace family plan during the SEP or enrolled in a parent's new employer plan if applicable.",
+          "es": "Los niños cubiertos bajo el plan de su empleador también pierden cobertura en la misma fecha y califican para el mismo SEP de 60 días. Sin embargo, los niños pueden tener opciones adicionales no disponibles para adultos. CHIP cubre a los niños en familias con ingresos de hasta el 200% al 300% FPL según el estado, y en algunos estados hasta el 400% FPL, con inscripción abierta todo el año. Las primas de CHIP son típicamente $0 a $50 por niño al mes. Cada programa CHIP estatal tiene su propio nombre: el CHIP de Pennsylvania, NJ FamilyCare de Nueva Jersey, HUSKY Health de Connecticut, BadgerCare de Wisconsin, AllKids de Illinois. Solicite CHIP a través de su agencia estatal de Medicaid o a través de healthcare.gov."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the SEP window when my employer stops offering health insurance?",
+        "answer": "Losing employer-sponsored coverage triggers a 60-day Loss-of-Coverage Special Enrollment Period (SEP) at healthcare.gov. The window opens on the first day after your coverage ends and closes exactly 60 days later. For example, if your employer plan ends August 1, 2026, your SEP closes September 30, 2026. You must select a plan and submit your application before Day 60. New coverage typically starts the first of the month after you enroll."
+      },
+      {
+        "question": "Does federal COBRA apply if my employer has fewer than 20 employees?",
+        "answer": "Federal COBRA applies only to employers with 20 or more employees. If your employer had fewer than 20 employees, you are not entitled to federal COBRA continuation coverage. Several states have mini-COBRA laws covering smaller employers, including California (Cal-COBRA), New York, and Illinois. Regardless of COBRA status, all workers losing employer coverage qualify for the ACA Marketplace Loss-of-Coverage SEP. Call your state's Department of Insurance to check mini-COBRA availability in your state."
+      },
+      {
+        "question": "How do I document the qualifying event for my ACA Marketplace SEP application?",
+        "answer": "Healthcare.gov requires written proof that your employer-sponsored coverage ended. Acceptable documentation includes: a letter from your employer or HR department stating the last day of coverage, a COBRA election notice (which shows the coverage end date), or an explanation of benefits with a termination date. Log into healthcare.gov, report 'loss of other health insurance coverage' as your qualifying life event, and upload the documentation when prompted. Processing typically takes 1 to 5 business days for verification."
+      },
+      {
+        "question": "What if I miss the 60-day SEP window after my employer drops coverage?",
+        "answer": "Missing the 60-day Loss-of-Coverage SEP means you cannot enroll in an ACA Marketplace plan until the next Open Enrollment Period, which for 2027 coverage begins November 1, 2026. That creates a coverage gap. Medicaid remains available year-round if your income qualifies (under 138% FPL in expansion states). CHIP enrollment for children is also year-round. If another qualifying life event occurs before Open Enrollment (marriage, birth, move to a new state), that triggers a new SEP."
+      },
+      {
+        "question": "Is COBRA worth it when my employer stops offering insurance?",
+        "answer": "COBRA is rarely the best financial choice. COBRA charges 102% of the full group premium, the employee share plus the employer's contribution plus a 2% administrative fee. For individual coverage, that typically runs $400 to $900 per month in 2026. A subsidized ACA Marketplace Silver plan can cost $10 to $200 per month for most income levels. The only times COBRA beats the Marketplace: you have ongoing treatment with a specialist who is not in any available Marketplace network, or you have already met a large deductible for the 2026 calendar year and need to protect that cost-sharing through December 31."
+      },
+      {
+        "question": "Can I get Medicaid after my employer stops offering health insurance?",
+        "answer": "Yes, if your projected annual household income falls under 138% FPL in one of the 40 Medicaid expansion states plus DC. For 2026 that is approximately $22,025 for a single person or $45,540 for a family of four. Medicaid enrollment is year-round with no deadline. Apply through your state Medicaid agency or at healthcare.gov, which screens for both Medicaid and Marketplace eligibility together. In non-expansion states, Medicaid income limits are much stricter, and the Marketplace may be your only subsidized option."
+      },
+      {
+        "question": "What state-specific rules affect my options after losing employer coverage?",
+        "answer": "State Medicaid expansion status is the most important factor. The 40 expansion states plus DC offer Medicaid to adults under 138% FPL. The 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming) have much stricter income limits for adults. State mini-COBRA laws matter if your employer had fewer than 20 employees. California's Cal-COBRA, for instance, extends continuation coverage to 36 months for small employer groups. Your state insurance commissioner's website lists any state-specific continuation coverage rules."
+      },
+      {
+        "question": "What does my 1095-A form have to do with losing employer coverage?",
+        "answer": "When you enroll in an ACA Marketplace plan after losing employer coverage, you will receive a 1095-A form (Health Insurance Marketplace Statement) in January for the following year's tax filing. The 1095-A reports the premium tax credits paid on your behalf and is required to file Form 8962 (Premium Tax Credit reconciliation) on your federal return. If you received more subsidy than your actual income justified (because your income was higher than projected), you will owe the difference. If your actual income was lower, you receive a credit. Report income changes to healthcare.gov during the year to avoid a large reconciliation surprise."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la ventana del SEP cuando mi empleador deja de ofrecer seguro médico?",
+        "answer": "Perder la cobertura patrocinada por el empleador activa un Período de Inscripción Especial (SEP) de Pérdida de Cobertura de 60 días en healthcare.gov. La ventana abre el primer día después de que termina su cobertura y cierra exactamente 60 días después. Por ejemplo, si el plan de su empleador termina el 1 de agosto de 2026, su SEP cierra el 30 de septiembre de 2026. Debe seleccionar un plan y presentar su solicitud antes del Día 60. La nueva cobertura típicamente comienza el primero del mes después de inscribirse."
+      },
+      {
+        "question": "¿Aplica el COBRA federal si mi empleador tiene menos de 20 empleados?",
+        "answer": "El COBRA federal aplica solo a empleadores con 20 o más empleados. Si su empleador tenía menos de 20 empleados, no tiene derecho al COBRA federal. Varios estados tienen leyes de mini-COBRA que cubren a empleadores más pequeños, incluyendo California (Cal-COBRA), Nueva York e Illinois. Independientemente del estado de COBRA, todos los trabajadores que pierden cobertura del empleador califican para el SEP de Pérdida de Cobertura del Mercado ACA. Llame al Departamento de Seguros de su estado para verificar la disponibilidad del mini-COBRA."
+      },
+      {
+        "question": "¿Cómo documento el evento calificador para mi solicitud de SEP en el Mercado ACA?",
+        "answer": "Healthcare.gov requiere prueba escrita de que su cobertura patrocinada por el empleador terminó. La documentación aceptable incluye: carta de su empleador o departamento de recursos humanos indicando el último día de cobertura, aviso de elección de COBRA (que muestra la fecha de fin de cobertura), o explicación de beneficios con fecha de terminación. Inicie sesión en healthcare.gov, reporte 'pérdida de otra cobertura de seguro médico' como su evento calificador de vida y suba la documentación cuando se le solicite."
+      },
+      {
+        "question": "¿Qué pasa si pierdo la ventana del SEP de 60 días después de que el empleador elimine la cobertura?",
+        "answer": "Perder el SEP de Pérdida de Cobertura de 60 días significa que no puede inscribirse en un plan del Mercado ACA hasta el siguiente Período de Inscripción Abierta, que para cobertura de 2027 comienza el 1 de noviembre de 2026. Medicaid permanece disponible todo el año si su ingreso califica (bajo el 138% FPL en estados de expansión). La inscripción en CHIP para niños también es durante todo el año. Si ocurre otro evento calificador de vida antes de la Inscripción Abierta (matrimonio, nacimiento, mudanza a un nuevo estado), eso activa un nuevo SEP."
+      },
+      {
+        "question": "¿Vale la pena COBRA cuando el empleador deja de ofrecer seguro?",
+        "answer": "COBRA rara vez es la mejor opción financiera. COBRA cobra el 102% de la prima grupal completa, la parte del empleado más la contribución del empleador más una tarifa administrativa del 2%. Para cobertura individual, eso típicamente cuesta $400 a $900 al mes en 2026. Un plan Silver del Mercado ACA con subsidio puede costar $10 a $200 al mes para la mayoría de niveles de ingresos. COBRA supera al Mercado solo cuando: tiene tratamiento continuo con un especialista que no está en ninguna red disponible del Mercado, o ya alcanzó un deducible grande para el año calendario 2026."
+      },
+      {
+        "question": "¿Puedo obtener Medicaid después de que el empleador deje de ofrecer seguro médico?",
+        "answer": "Sí, si su ingreso anual proyectado del hogar cae bajo el 138% FPL en uno de los 40 estados de expansión de Medicaid más DC. Para 2026 eso es aproximadamente $22,025 para una persona sola o $45,540 para una familia de cuatro. La inscripción en Medicaid es durante todo el año sin fecha límite. Solicite a través de su agencia estatal de Medicaid o en healthcare.gov, que verifica elegibilidad de Medicaid y del Mercado al mismo tiempo."
+      },
+      {
+        "question": "¿Qué reglas estatales específicas afectan mis opciones después de perder la cobertura del empleador?",
+        "answer": "El estado de expansión de Medicaid de su estado es el factor más importante. Los 40 estados de expansión más DC ofrecen Medicaid a adultos bajo el 138% FPL. Los 10 estados no expansión (Alabama, Florida, Georgia, Kansas, Mississippi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming) tienen límites de ingresos mucho más estrictos para adultos. Las leyes estatales de mini-COBRA importan si su empleador tenía menos de 20 empleados. Cal-COBRA de California, por ejemplo, extiende la cobertura de continuación hasta 36 meses para grupos de empleadores pequeños."
+      },
+      {
+        "question": "¿Qué tiene que ver mi formulario 1095-A con perder la cobertura del empleador?",
+        "answer": "Cuando se inscribe en un plan del Mercado ACA después de perder la cobertura del empleador, recibirá un formulario 1095-A (Declaración del Mercado de Seguros de Salud) en enero para la declaración de impuestos del año siguiente. El 1095-A reporta los créditos fiscales de prima pagados en su nombre y se requiere para presentar el Formulario 8962 (reconciliación del Crédito Fiscal de Prima) en su declaración federal. Si recibió más subsidio del que justificó su ingreso real, deberá la diferencia. Reporte cambios de ingreso a healthcare.gov durante el año para evitar una sorpresa grande de reconciliación."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Límites de Ingresos de Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "ACA Income Limits 2026",
+        "es": "Límites de Ingresos ACA 2026"
+      },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Nivel Federal de Pobreza 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Just Lost Your Job? Health Insurance Options",
+        "es": "¿Acaba de Perder Su Trabajo? Opciones de Seguro Médico"
+      },
+      "href": "/event/just-lost-job-health-insurance"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Special Enrollment Period for loss of coverage",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/your-options/",
+      "note": {
+        "en": "Official guidance on the 60-day Loss-of-Coverage SEP, qualifying events, and Marketplace enrollment outside Open Enrollment.",
+        "es": "Guía oficial sobre el SEP de Pérdida de Cobertura de 60 días, eventos calificadores e inscripción en el Mercado fuera de la Inscripción Abierta."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid enrollment rules, expansion state income thresholds, and how loss of employer coverage triggers Medicaid screening.",
+        "es": "Reglas de inscripción de Medicaid durante todo el año, umbrales de ingresos de estados de expansión y cómo la pérdida de cobertura del empleador activa la verificación de Medicaid."
+      }
+    },
+    {
+      "name": "IRS: COBRA Continuation Coverage Frequently Asked Questions",
+      "url": "https://www.irs.gov/affordable-care-act/cobra-continuation-coverage-frequently-asked-questions",
+      "note": {
+        "en": "COBRA eligibility rules, employer size thresholds (20+ employees), 60-day election window, and 102% premium rule.",
+        "es": "Reglas de elegibilidad de COBRA, umbrales de tamaño del empleador (20+ empleados), ventana de elección de 60 días y regla de prima del 102%."
+      }
+    },
+    {
+      "name": "KFF: Employer Health Benefits Survey 2026",
+      "url": "https://www.kff.org/health-costs/report/2026-employer-health-benefits-survey/",
+      "note": {
+        "en": "Source for average employer plan premium benchmarks used in COBRA cost comparisons. Referenced for single and family premium averages in 2026.",
+        "es": "Fuente para los puntos de referencia promedio de primas de planes de empleadores utilizados en comparaciones de costos de COBRA. Referenciado para promedios de primas individuales y familiares en 2026."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "2026 Federal Poverty Level guidelines used for Medicaid expansion cutoff (138% FPL) and ACA subsidy thresholds (100% to 400% FPL).",
+        "es": "Pautas de nivel federal de pobreza 2026 usadas para el corte de expansión de Medicaid (138% FPL) y los umbrales de subsidio ACA (100% al 400% FPL)."
+      }
+    }
+  ]
+}
