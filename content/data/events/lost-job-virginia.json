@@ -1,0 +1,596 @@
+{
+  "slug": "lost-job-virginia",
+  "eventName": {
+    "en": "Just Lost Your Job in Virginia",
+    "es": "Acaba de Perder Su Trabajo en Virginia"
+  },
+  "category": "Job Loss",
+  "topic": "Special Enrollment Period after Job Loss in Virginia",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-12",
+  "readingTime": "9 min read",
+  "topicCluster": "event-sep",
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "keyTerms": {
+    "en": [
+      "lost job Virginia health insurance 2026",
+      "Virginia job loss special enrollment period",
+      "CoverVA Medicaid after job loss",
+      "Virginia Insurance Marketplace SEP 2026",
+      "COBRA vs Virginia Marketplace 2026",
+      "Virginia Medicaid income limits 2026"
+    ],
+    "es": [
+      "perdida de trabajo Virginia seguro medico 2026",
+      "periodo inscripcion especial Virginia desempleo",
+      "CoverVA Medicaid perder trabajo 2026",
+      "Mercado de Seguros Virginia SEP 2026",
+      "limites ingresos Medicaid Virginia 2026"
+    ]
+  },
+
+  "meta": {
+    "title": {
+      "en": "Lost Your Job in Virginia? Health Insurance Options 2026",
+      "es": "¿Perdio Trabajo en Virginia? Opciones de Seguro 2026"
+    },
+    "description": {
+      "en": "Lost job-based coverage in Virginia? You have 60 days to enroll. Compare CoverVA Medicaid, Virginia Marketplace plans, and COBRA for 2026.",
+      "es": "¿Perdo cobertura laboral en Virginia? Tiene 60 dias para inscribirse. Compare CoverVA Medicaid, Mercado de Virginia y COBRA en 2026."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Just Lost Your Job in Virginia? Here Are Your 2026 Health Insurance Options",
+      "es": "¿Acaba de Perder Su Trabajo en Virginia? Sus Opciones de Seguro Medico 2026"
+    },
+    "subhero": {
+      "en": "You have 60 days from your last day of coverage to enroll through Virginia's Insurance Marketplace or CoverVA Medicaid. Most Virginians in this situation qualify for subsidies that cut costs dramatically.",
+      "es": "Tiene 60 dias desde su ultimo dia de cobertura para inscribirse en el Mercado de Seguros de Virginia o en CoverVA Medicaid. La mayoria de virginianos en esta situacion califican para subsidios que reducen costos drasticamente."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from your Virginia coverage loss date",
+      "es": "Tiene 60 dias desde la fecha de perdida de cobertura en Virginia"
+    },
+    "body": {
+      "en": "Virginia's 60-day Special Enrollment Period runs from the day after your employer coverage ends through Day 60. For example, if your coverage ends June 30, 2026, your Virginia Marketplace SEP closes August 29, 2026. Miss that window and you must wait until Virginia's next Open Enrollment Period, which runs November 1 through January 30, 2027. CoverVA Medicaid has no deadline and accepts applications year-round.",
+      "es": "El Periodo de Inscripcion Especial de 60 dias en Virginia comienza el dia despues de que termina su cobertura del empleador y termina el Dia 60. Por ejemplo, si su cobertura termina el 30 de junio de 2026, su SEP del Mercado de Virginia cierra el 29 de agosto de 2026. Si pierde esa ventana, debe esperar hasta el proximo Periodo de Inscripcion Abierta de Virginia, que va del 1 de noviembre al 30 de enero de 2027. CoverVA Medicaid no tiene fecha limite y acepta solicitudes todo el ano."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Spouse's employer plan (Virginia or federal job)",
+          "es": "Plan del empleador del conyuge"
+        },
+        "days": 30
+      },
+      {
+        "label": {
+          "en": "CoverVA Medicaid (if income qualifies)",
+          "es": "CoverVA Medicaid (si el ingreso califica)"
+        },
+        "days": null
+      }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "Losing job-based coverage in Virginia triggers a 60-day Special Enrollment Period for Virginia's Insurance Marketplace. Your three main options are: (1) CoverVA Medicaid if your new income is under 138% FPL (about $22,025 for a single person or $45,540 for a family of 4 in 2026), free year-round coverage through DMAS; (2) A plan through Virginia's state-based Marketplace at marketplace.virginia.gov, where more than 78% of 2026 enrollees qualified for subsidies averaging $461/month, cutting net premiums to about $124/month; or (3) COBRA continuation at 102% of your full former premium, typically $500 to $2,000/month, which is rarely the cheapest option. Check CoverVA Medicaid first, then compare Virginia Marketplace plans before defaulting to COBRA.",
+    "es": "Perder cobertura laboral en Virginia activa un Periodo de Inscripcion Especial de 60 dias para el Mercado de Seguros de Virginia. Sus tres opciones principales son: (1) CoverVA Medicaid si su nuevo ingreso es menor al 138% FPL (alrededor de $22,025 para una persona sola o $45,540 para una familia de 4 en 2026), cobertura gratuita todo el ano a traves de DMAS; (2) Un plan a traves del Mercado de Virginia en marketplace.virginia.gov, donde mas del 78% de los inscritos en 2026 calificaron para subsidios de $461/mes en promedio, reduciendo las primas netas a $124/mes; o (3) continuacion COBRA al 102% de la prima completa anterior, tipicamente $500 a $2,000/mes, que rara vez es la opcion mas economica."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Losing a job in Virginia means losing employer-sponsored health coverage, often the same day or 30 days after your last paycheck. Virginia is one of the 40 states plus DC that expanded Medicaid under the ACA, so a sharp drop in income may make you eligible for CoverVA Medicaid through the Virginia Department of Medical Assistance Services (DMAS) immediately. For those above the Medicaid income threshold, Virginia operates its own state-based Insurance Marketplace at marketplace.virginia.gov, separate from the federal healthcare.gov platform. Virginia's 2026 Open Enrollment Period ran from November 1, 2025, through January 30, 2026 (an extended deadline compared to the federal January 15 cutoff), so outside that window you need a qualifying life event like job loss to enroll. The job-loss Special Enrollment Period gives you exactly 60 days. Most Virginians who act within that window pay far less for 2026 Marketplace coverage than they would have expected, because APTC subsidies averaged $461/month for eligible enrollees, reducing net premiums to roughly $124/month per the Virginia Insurance Marketplace 2026 enrollment report.",
+      "es": "Perder un trabajo en Virginia significa perder la cobertura de salud patrocinada por el empleador, a menudo el mismo dia o 30 dias despues de su ultimo cheque de pago. Virginia es uno de los 40 estados mas DC que expandio Medicaid bajo la ACA, por lo que una caida brusca de ingresos puede hacerle elegible para CoverVA Medicaid a traves del Departamento de Servicios de Asistencia Medica de Virginia (DMAS) de inmediato. Para quienes esten por encima del umbral de ingresos de Medicaid, Virginia opera su propio Mercado de Seguros estatal en marketplace.virginia.gov, separado de la plataforma federal healthcare.gov. El Periodo de Inscripcion Abierta 2026 de Virginia corrio del 1 de noviembre de 2025 al 30 de enero de 2026. Fuera de ese periodo, necesita un evento calificador de vida como la perdida de empleo para inscribirse. El Periodo de Inscripcion Especial por perdida de trabajo le da exactamente 60 dias."
+    },
+    {
+      "en": "Virginia's coverage landscape after job loss has three tiers. CoverVA Medicaid covers adults 19-64 earning under 138% FPL: no premiums, no deductibles, comprehensive benefits through managed care organizations like Anthem HealthKeepers Plus, Molina, and Optima Health. Virginia's Insurance Marketplace covers those above the Medicaid line but below 400% FPL with premium tax credits; Silver plans often cost under $50/month after subsidies in Virginia's mid-tier counties per KFF 2026 Virginia Marketplace analysis. COBRA covers everyone at 102% of the full group premium but is almost always the most expensive path. This guide walks through the 7 steps to evaluate all three options within your 60-day Virginia SEP window and explains how to document your qualifying life event for Virginia's Marketplace or apply for CoverVA Medicaid at commonhelp.virginia.gov. Virginia residents can also call Virginia's Insurance Marketplace at 1-888-687-1501 for free enrollment assistance.",
+      "es": "El panorama de cobertura de Virginia despues de perder el trabajo tiene tres niveles. CoverVA Medicaid cubre adultos de 19 a 64 anos que ganan menos del 138% FPL, sin primas, sin deducibles, con beneficios completos. El Mercado de Seguros de Virginia cubre a quienes estan por encima de la linea de Medicaid pero por debajo del 400% FPL con creditos fiscales de prima. COBRA cubre a todos al 102% de la prima completa del grupo, pero casi siempre es la opcion mas cara. Esta guia explica los 7 pasos para evaluar las tres opciones dentro de su ventana de 60 dias del SEP de Virginia."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Confirm your Virginia coverage end date and start the 60-day clock",
+        "es": "Confirme la fecha de fin de cobertura en Virginia y comience el conteo de 60 dias"
+      },
+      "text": {
+        "en": "Call your former Virginia employer's HR department or benefits administrator to get the exact date your employer-sponsored coverage ends. Coverage often continues through the end of the month of termination. Your 60-day Virginia Marketplace SEP starts the day after coverage ends, not the day you were laid off. Document this date: Virginia's Insurance Marketplace will require proof of coverage loss.",
+        "es": "Llame al departamento de Recursos Humanos o al administrador de beneficios de su ex empleador en Virginia para obtener la fecha exacta en que termina su cobertura. La cobertura suele continuar hasta el fin del mes de la terminacion. Su SEP de 60 dias del Mercado de Virginia comienza el dia despues de que termina la cobertura, no el dia en que fue despedido. Documente esta fecha."
+      }
+    },
+    {
+      "name": {
+        "en": "Calculate your projected 2026 Virginia household income",
+        "es": "Calcule su ingreso familiar proyectado de 2026 en Virginia"
+      },
+      "text": {
+        "en": "Virginia Marketplace subsidies and CoverVA Medicaid eligibility both depend on projected Modified Adjusted Gross Income (MAGI) for the full 2026 calendar year, not your former salary. Include unemployment compensation (it counts as income under MAGI), any freelance or part-time income you expect to earn, and any spouse income. For a single person earning under $22,025 in 2026 or a family of 4 under $45,540 in 2026, CoverVA Medicaid is likely the right first call. For incomes between those thresholds and $63,840 (single) or $132,000 (family of 4) in 2026, Virginia Marketplace subsidies apply.",
+        "es": "Los subsidios del Mercado de Virginia y la elegibilidad de CoverVA Medicaid dependen del Ingreso Bruto Ajustado Modificado (MAGI) proyectado para todo el ano calendario 2026, no su salario anterior. Incluya la compensacion por desempleo (cuenta como ingreso bajo MAGI), cualquier ingreso de trabajo independiente o a tiempo parcial, e ingresos del conyuge. Para una persona sola con ingresos menores a $22,025 en 2026 o una familia de 4 menores a $45,540 en 2026, CoverVA Medicaid es probablemente la mejor primera opcion."
+      }
+    },
+    {
+      "name": {
+        "en": "Apply for CoverVA Medicaid first if income qualifies",
+        "es": "Solicite CoverVA Medicaid primero si el ingreso califica"
+      },
+      "text": {
+        "en": "Virginia's Medicaid program (CoverVA) covers adults 19-64 at up to 138% FPL: no premium, no deductible, dental and vision included for most enrollees. Apply year-round at commonhelp.virginia.gov or call DMAS at 1-855-242-8282, Monday-Friday 8 a.m. to 7 p.m. Virginia processes most Medicaid applications within a few days. CoverVA has no 60-day deadline: you can apply any time.",
+        "es": "El programa Medicaid de Virginia (CoverVA) cubre adultos de 19 a 64 anos hasta el 138% FPL, sin prima, sin deducible, con dental y vision incluidos para la mayoria de los inscritos. Solicite todo el ano en commonhelp.virginia.gov o llame a DMAS al 1-855-242-8282, de lunes a viernes de 8 a.m. a 7 p.m. Virginia procesa la mayoria de las solicitudes de Medicaid en pocos dias. CoverVA no tiene un plazo de 60 dias."
+      }
+    },
+    {
+      "name": {
+        "en": "If income is above Medicaid limits, shop Virginia's Insurance Marketplace",
+        "es": "Si el ingreso supera los limites de Medicaid, busque en el Mercado de Seguros de Virginia"
+      },
+      "text": {
+        "en": "Go to marketplace.virginia.gov to compare plans and calculate your 2026 premium tax credits. Virginia's state-based Marketplace is separate from healthcare.gov, so you must use marketplace.virginia.gov for Virginia plans. Enter your projected 2026 household income to see your subsidy amount. Most Virginia Silver plans cost under $150/month after APTC for moderate-income households. Compare Bronze (lower premium, higher deductible) vs Silver (CSR cost-sharing reductions available if income is under 250% FPL) vs Gold (best for high expected healthcare use).",
+        "es": "Vaya a marketplace.virginia.gov para comparar planes y calcular sus creditos fiscales de prima 2026. El Mercado estatal de Virginia es separado de healthcare.gov, por lo que debe usar marketplace.virginia.gov para los planes de Virginia. Ingrese su ingreso familiar proyectado de 2026 para ver el monto de su subsidio. La mayoria de los planes Silver de Virginia cuestan menos de $150/mes despues del APTC para hogares de ingreso moderado."
+      }
+    },
+    {
+      "name": {
+        "en": "Gather documents required to prove your Virginia qualifying life event",
+        "es": "Reuna los documentos requeridos para probar su evento calificador de vida en Virginia"
+      },
+      "text": {
+        "en": "Virginia's Insurance Marketplace requires proof of your qualifying event within 30 days of selecting a plan. Submit a termination letter from your Virginia employer, a COBRA election notice, a letter from your health insurer confirming coverage end date, or your most recent pay stub showing your last day of employment. For CoverVA Medicaid, bring Social Security numbers for all household members, proof of Virginia residency, and income documentation including recent pay stubs or an unemployment benefit award letter.",
+        "es": "El Mercado de Seguros de Virginia requiere prueba de su evento calificador dentro de los 30 dias posteriores a la seleccion de un plan. Presente una carta de terminacion de su empleador en Virginia, un aviso de eleccion de COBRA, una carta de su aseguradora confirmando la fecha de fin de cobertura, o su ultimo talonario de pago. Para CoverVA Medicaid, traiga numeros de Seguro Social para todos los miembros del hogar, prueba de residencia en Virginia, y documentacion de ingresos."
+      }
+    },
+    {
+      "name": {
+        "en": "Evaluate COBRA as a fallback for specific situations only",
+        "es": "Evaloe COBRA como alternativa solo en situaciones especificas"
+      },
+      "text": {
+        "en": "COBRA continuation coverage charges 102% of the full premium your employer was paying. For most Virginia employer plans in 2026, that means $500 to $900/month for individual coverage or $1,400 to $2,800/month for family coverage. Virginia's Insurance Marketplace plans with APTC subsidies are almost always cheaper. COBRA is worth considering only if: you have ongoing treatment with a specialist who is out-of-network on all Virginia Marketplace plans; you have nearly met a large deductible for the calendar year; or you expect to return to comparable employment within 90 days.",
+        "es": "La continuacion de cobertura COBRA cobra el 102% de la prima completa que su empleador estaba pagando. Para la mayoria de los planes de empleadores de Virginia en 2026, eso significa $500 a $900/mes para cobertura individual o $1,400 a $2,800/mes para cobertura familiar. Los planes del Mercado de Seguros de Virginia con subsidios APTC son casi siempre mas economicos. COBRA vale la pena considerar solo si: tiene tratamiento continuo con un especialista que esta fuera de la red en todos los planes del Mercado de Virginia; casi ha alcanzado un deducible grande; o espera volver a un empleo comparable dentro de los 90 dias."
+      }
+    },
+    {
+      "name": {
+        "en": "Enroll and submit documentation before your Virginia 60-day SEP closes",
+        "es": "Inscribase y envie documentacion antes de que cierre su SEP de 60 dias en Virginia"
+      },
+      "text": {
+        "en": "Complete your enrollment at marketplace.virginia.gov or commonhelp.virginia.gov before Day 60. Virginia Marketplace coverage typically starts the first day of the month after your plan selection, so enroll early in the month to minimize any gap. For questions, call Virginia's Insurance Marketplace at 1-888-687-1501 (TTY: 711). After enrollment, watch for your 1095-A tax form from Virginia's Marketplace in January 2027: you will need it to reconcile your advance premium tax credit on your 2026 federal income tax return.",
+        "es": "Complete su inscripcion en marketplace.virginia.gov o commonhelp.virginia.gov antes del Dia 60. La cobertura del Mercado de Virginia generalmente comienza el primer dia del mes despues de la seleccion del plan. Para preguntas, llame al Mercado de Seguros de Virginia al 1-888-687-1501 (TTY: 711). Despues de inscribirse, espere su formulario 1095-A del Mercado de Virginia en enero de 2027."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opcion", "Costo tipico", "Mejor para", "Fecha limite"]
+    },
+    "rows": [
+      {
+        "en": ["CoverVA Medicaid", "Free (no premium, no deductible)", "Virginia adults 19-64 under 138% FPL ($22,025 single / $45,540 family of 4 in 2026)", "Year-round, no deadline"],
+        "es": ["CoverVA Medicaid", "Gratis (sin prima, sin deducible)", "Adultos de Virginia 19-64 bajo el 138% FPL ($22,025 soltero / $45,540 familia de 4 en 2026)", "Todo el ano, sin fecha limite"]
+      },
+      {
+        "en": ["Virginia Insurance Marketplace (with APTC subsidy)", "$10 to $300/mo after subsidies (avg net premium $124/mo in 2026)", "Most Virginians above Medicaid line; 78%+ qualified for subsidies in 2026", "60-day SEP from coverage loss"],
+        "es": ["Mercado de Seguros de Virginia (con subsidio APTC)", "$10 a $300/mes despues de subsidios (prima neta promedio $124/mes en 2026)", "La mayoria de virginianos por encima de la linea de Medicaid; mas del 78% califico para subsidios en 2026", "SEP de 60 dias desde perdida de cobertura"]
+      },
+      {
+        "en": ["COBRA (continuation of employer plan)", "$500 to $2,800+/mo (102% of full group premium)", "Ongoing treatment with an out-of-network specialist, or nearly-met annual deductible", "60 days from loss to elect; coverage up to 18 months"],
+        "es": ["COBRA (continuacion del plan del empleador)", "$500 a $2,800+/mes (102% de la prima completa del grupo)", "Tratamiento continuo con especialista fuera de red, o deducible anual casi alcanzado", "60 dias desde la perdida para elegir; cobertura hasta 18 meses"]
+      },
+      {
+        "en": ["Spouse's employer plan", "Varies (often cheaper than COBRA, especially for family coverage)", "Married with a Virginia-employed or federally-employed spouse", "30 days from coverage loss"],
+        "es": ["Plan del empleador del conyuge", "Varia (a menudo mas barato que COBRA, especialmente para cobertura familiar)", "Casado con conyuge empleado en Virginia o federalmente", "30 dias desde perdida de cobertura"]
+      },
+      {
+        "en": ["CHIP (Children's Health Insurance Program)", "Low or no premium for children", "Children in the household up to 200-300% FPL in Virginia (year-round enrollment)", "Year-round, no deadline"],
+        "es": ["CHIP (Programa de Seguro de Salud para Ninos)", "Prima baja o sin prima para ninos", "Ninos en el hogar hasta el 200-300% FPL en Virginia (inscripcion todo el ano)", "Todo el ano, sin fecha limite"]
+      }
+    ],
+    "footnote": {
+      "en": "Virginia Insurance Marketplace subsidy data from Virginia State Corporation Commission 2026 enrollment report. CoverVA Medicaid income limits based on 2026 HHS ASPE Federal Poverty Guidelines. COBRA cost estimates reflect typical Virginia employer group plan premiums per KFF 2026 Employer Health Benefits Survey.",
+      "es": "Datos de subsidio del Mercado de Seguros de Virginia del informe de inscripcion 2026 de la Comision de Corporaciones del Estado de Virginia. Limites de ingresos de CoverVA Medicaid basados en las Guias de Pobreza Federal 2026 HHS ASPE. Estimaciones de costo de COBRA reflejan primas tipicas de planes de grupos de empleadores de Virginia."
+    },
+    "source": "marketplace.virginia.gov, coverva.dmas.virginia.gov, healthcare.gov, kff.org, IRS COBRA guidance"
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "The most costly mistakes Virginia residents make after losing job-based coverage in 2026:",
+      "es": "Los errores mas costosos que cometen los residentes de Virginia despues de perder cobertura laboral en 2026:"
+    },
+    "items": [
+      {
+        "en": "Going to healthcare.gov instead of Virginia's Marketplace. Virginia operates its own state-based exchange at marketplace.virginia.gov. Applying on the federal platform will not show Virginia-specific plans or process correctly for Virginia residents.",
+        "es": "Ir a healthcare.gov en lugar del Mercado de Virginia. Virginia opera su propio intercambio estatal en marketplace.virginia.gov. Aplicar en la plataforma federal no mostrara los planes especificos de Virginia ni se procesara correctamente para los residentes de Virginia."
+      },
+      {
+        "en": "Defaulting to COBRA without checking Virginia Marketplace or CoverVA first. COBRA in 2026 averages $500 to $2,800/month for Virginia group plans. Virginia Marketplace plans with subsidies average $124/month net. The math almost never favors COBRA for recently unemployed Virginians.",
+        "es": "Elegir COBRA sin verificar primero el Mercado de Virginia o CoverVA. COBRA en 2026 promedia $500 a $2,800/mes para los planes de grupo de Virginia. Los planes del Mercado de Virginia con subsidios promedian $124/mes neto. Las matematicas casi nunca favorecen COBRA para los virginianos recientemente desempleados."
+      },
+      {
+        "en": "Using your old Virginia salary to estimate 2026 income. Virginia Marketplace subsidies are calculated on your projected income for the rest of 2026, not what you earned before losing your job. Using your former annual salary inflates your subsidy calculation and could result in owing money back on your 2026 tax return.",
+        "es": "Usar su salario anterior en Virginia para estimar el ingreso de 2026. Los subsidios del Mercado de Virginia se calculan sobre el ingreso proyectado para el resto de 2026, no lo que gano antes de perder su trabajo. Usar su salario anual anterior infla el calculo de su subsidio."
+      },
+      {
+        "en": "Forgetting that unemployment compensation counts as income. Virginia unemployment benefits count toward MAGI for both Virginia Marketplace subsidy and CoverVA Medicaid eligibility calculations. Include your expected weekly benefit amount in your 2026 income projection.",
+        "es": "Olvidar que la compensacion por desempleo cuenta como ingreso. Los beneficios de desempleo de Virginia cuentan hacia el MAGI para los calculos de elegibilidad del subsidio del Mercado de Virginia y de CoverVA Medicaid. Incluya el monto de su beneficio semanal esperado en su proyeccion de ingresos de 2026."
+      },
+      {
+        "en": "Missing the 60-day Virginia SEP window. Without an active SEP, Virginia residents must wait until the next Open Enrollment Period, which runs November 1, 2026 through January 30, 2027 for 2027 coverage. A coverage gap can result in large out-of-pocket medical bills.",
+        "es": "Perder la ventana del SEP de 60 dias de Virginia. Sin un SEP activo, los residentes de Virginia deben esperar hasta el proximo Periodo de Inscripcion Abierta, que va del 1 de noviembre de 2026 al 30 de enero de 2027 para la cobertura de 2027. Una brecha de cobertura puede resultar en grandes facturas medicas."
+      },
+      {
+        "en": "Skipping CoverVA Medicaid for children. Virginia children may qualify for CHIP through CoverVA even if the parent does not qualify for Medicaid. Virginia CHIP income limits reach up to 200-300% FPL for children, with year-round enrollment and low or zero premiums.",
+        "es": "Omitir CoverVA Medicaid para los ninos. Los ninos de Virginia pueden calificar para CHIP a traves de CoverVA incluso si el padre no califica para Medicaid. Los limites de ingresos del CHIP de Virginia llegan hasta el 200-300% FPL para ninos, con inscripcion todo el ano y primas bajas o cero."
+      }
+    ]
+  },
+
+  "comparisonNarrative": {
+    "heading": {
+      "en": "COBRA vs Virginia Marketplace vs CoverVA Medicaid: Which Should You Choose?",
+      "es": "COBRA vs Mercado de Virginia vs CoverVA Medicaid: ¿Cual Debe Elegir?"
+    },
+    "body": {
+      "en": "Virginia residents who lose job-based coverage in 2026 face three distinct pathways, and the right choice depends almost entirely on your projected 2026 household income. CoverVA Medicaid is the first check: if your new annual income falls under 138% FPL (under $22,025 for a single person or under $45,540 for a family of 4 in 2026), apply at commonhelp.virginia.gov immediately. CoverVA Medicaid has no premium, no deductible, and covers dental and vision for most adult enrollees through managed care organizations including Anthem HealthKeepers Plus, Molina Healthcare of Virginia, and Optima Health. Virginia's Insurance Marketplace is the right call for most Virginians above the Medicaid line. Virginia's state-based exchange at marketplace.virginia.gov offers plans from multiple carriers, and in 2026 more than 78% of enrollees qualified for advance premium tax credits that averaged $461/month, reducing net premiums to roughly $124/month. Silver plans are often the best value after job loss because cost-sharing reductions (CSR) apply when income is under 250% FPL, dramatically lowering deductibles and copays on top of the premium subsidy. COBRA is almost never the cost-effective choice for recently unemployed Virginians, but it makes sense in two narrow cases: you are receiving treatment from a specialist who is not in any Virginia Marketplace plan network, or you have met a large portion of your 2026 deductible and expect significant medical use before year-end. COBRA for a Virginia group plan runs $500 to $900/month for individual coverage and $1,400 to $2,800/month for family coverage in 2026, paid entirely by the employee plus a 2% administrative fee. A spouse's employer plan, when available, is often the least expensive option, and most Virginia employers offer a 30-day SEP for newly eligible dependents following a qualifying life event. Section 9831 of HIPAA guarantees this right for employer-sponsored plans of 20 or more employees.",
+      "es": "Los residentes de Virginia que pierden cobertura laboral en 2026 enfrentan tres vias distintas, y la eleccion correcta depende casi totalmente del ingreso familiar proyectado para 2026. CoverVA Medicaid es la primera verificacion: si su nuevo ingreso anual cae por debajo del 138% FPL, solicite en commonhelp.virginia.gov de inmediato. El Mercado de Seguros de Virginia es la opcion correcta para la mayoria de los virginianos por encima de la linea de Medicaid. En 2026, mas del 78% de los inscritos en el Mercado de Virginia calificaron para creditos fiscales de prima anticipados que promediaron $461/mes, reduciendo las primas netas a aproximadamente $124/mes. COBRA casi nunca es la opcion rentable para los virginianos recientemente desempleados, pero tiene sentido en dos casos estrechos: tratamiento con un especialista fuera de la red de todos los planes del Mercado de Virginia, o deducible de 2026 casi alcanzado."
+    }
+  },
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "Virginia Medicaid (CoverVA) and ACA Marketplace Subsidy Income Limits, 2026",
+      "headers": ["Household size", "138% FPL: CoverVA Medicaid (Virginia)", "400% FPL: ACA subsidy ceiling (48 states + DC)"],
+      "rows": [
+        ["1", "$22,025/yr", "$63,840/yr"],
+        ["2", "$29,820/yr", "$86,400/yr"],
+        ["3", "$37,615/yr", "$108,960/yr"],
+        ["4", "$45,540/yr", "$132,000/yr"],
+        ["5", "$53,335/yr", "$154,560/yr"],
+        ["6", "$61,130/yr", "$177,120/yr"],
+        ["7", "$68,925/yr", "$199,680/yr"],
+        ["8", "$76,720/yr", "$222,240/yr"],
+        ["Each additional person", "+ $7,795/yr", "+ $22,560/yr"]
+      ],
+      "footnote": "Virginia expanded Medicaid under the ACA in 2019. Adults 19-64 earning under 138% FPL qualify for CoverVA Medicaid with no premium or deductible. The 400% FPL ACA subsidy cliff returned for 2026 after enhanced premium tax credits from the American Rescue Plan Act and Inflation Reduction Act expired January 1, 2026. Income between 100% and 400% FPL qualifies for Virginia Marketplace premium tax credits on a sliding scale. Virginia CHIP covers children through age 18 at higher income thresholds (up to 200-300% FPL depending on the child's age and program).",
+      "source": "HHS ASPE 2026 Federal Poverty Guidelines; Virginia DMAS CoverVA eligibility rules; CMS ACA premium tax credit thresholds"
+    },
+    "es": {
+      "caption": "Limites de Ingresos de CoverVA Medicaid de Virginia y Subsidios del Mercado ACA, 2026",
+      "headers": ["Tamano del hogar", "138% FPL: CoverVA Medicaid (Virginia)", "400% FPL: techo de subsidio ACA (48 estados + DC)"],
+      "rows": [
+        ["1", "$22,025/ano", "$63,840/ano"],
+        ["2", "$29,820/ano", "$86,400/ano"],
+        ["3", "$37,615/ano", "$108,960/ano"],
+        ["4", "$45,540/ano", "$132,000/ano"],
+        ["5", "$53,335/ano", "$154,560/ano"],
+        ["6", "$61,130/ano", "$177,120/ano"],
+        ["7", "$68,925/ano", "$199,680/ano"],
+        ["8", "$76,720/ano", "$222,240/ano"],
+        ["Cada persona adicional", "+ $7,795/ano", "+ $22,560/ano"]
+      ],
+      "footnote": "Virginia expandio Medicaid bajo la ACA en 2019. Los adultos de 19 a 64 anos que ganan menos del 138% FPL califican para CoverVA Medicaid sin prima ni deducible. El precipicio del subsidio ACA del 400% FPL regreso para 2026 despues de que los creditos fiscales de prima mejorados expiraron el 1 de enero de 2026.",
+      "source": "Guias de Pobreza Federal HHS ASPE 2026; reglas de elegibilidad Virginia DMAS CoverVA; umbrales de credito fiscal de prima ACA de CMS"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "Termination letter from Virginia employer or COBRA election notice confirming coverage end date (required by Virginia's Marketplace to verify qualifying life event)",
+      "Letter from health insurer confirming coverage loss date (acceptable alternative to termination letter)",
+      "Social Security numbers for all household members applying for coverage",
+      "Proof of Virginia residency (utility bill, lease, Virginia driver's license, or bank statement)",
+      "Recent pay stubs or unemployment compensation award letter from the Virginia Employment Commission (VEC) for income verification",
+      "Birth certificates for dependent children being added to coverage",
+      "Information on any other health coverage available to the household (e.g., spouse's employer plan details)",
+      "2025 federal tax return (helpful but not required) for income verification reference"
+    ],
+    "es": [
+      "Carta de terminacion del empleador de Virginia o aviso de eleccion de COBRA que confirme la fecha de fin de cobertura (requerido por el Mercado de Virginia para verificar el evento calificador de vida)",
+      "Carta de la aseguradora de salud confirmando la fecha de perdida de cobertura (alternativa aceptable a la carta de terminacion)",
+      "Numeros de Seguro Social para todos los miembros del hogar que solicitan cobertura",
+      "Prueba de residencia en Virginia (factura de servicios publicos, contrato de arrendamiento, licencia de conducir de Virginia, o estado de cuenta bancario)",
+      "Talonarios de pago recientes o carta de adjudicacion de compensacion por desempleo de la Comision de Empleo de Virginia (VEC) para verificacion de ingresos",
+      "Actas de nacimiento de los hijos dependientes que se agregaran a la cobertura",
+      "Informacion sobre cualquier otra cobertura de salud disponible para el hogar (por ejemplo, detalles del plan del empleador del conyuge)",
+      "Declaracion de impuestos federales de 2025 (util pero no requerida) para referencia de verificacion de ingresos"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Missing Virginia's 60-day SEP window: submitting the application after Day 60 from the coverage loss date. Virginia's Marketplace cannot backdate enrollment after the SEP closes.",
+      "Insufficient documentation of the qualifying event: Virginia's Marketplace requires proof of coverage loss (termination letter, COBRA notice, or insurer letter) submitted within 30 days of selecting a plan. Missing this document cancels the enrollment.",
+      "Reporting 2025 or prior-year income instead of projected 2026 income: Subsidy calculations use your projected current-year MAGI, not last year's salary. Overreporting income can eliminate subsidies you qualify for.",
+      "Not applying for CoverVA Medicaid before the Virginia Marketplace: Virginians whose income falls under 138% FPL must enroll in Medicaid (not Marketplace); enrolling in a Marketplace plan when Medicaid-eligible may trigger subsidy ineligibility.",
+      "Applying through healthcare.gov instead of Virginia's Marketplace at marketplace.virginia.gov: Virginia is a state-based exchange; federal platform applications do not route correctly for Virginia residents."
+    ],
+    "es": [
+      "Perder la ventana del SEP de 60 dias de Virginia: presentar la solicitud despues del Dia 60 desde la fecha de perdida de cobertura. El Mercado de Virginia no puede antedatar la inscripcion despues de que el SEP cierra.",
+      "Documentacion insuficiente del evento calificador: el Mercado de Virginia requiere prueba de perdida de cobertura presentada dentro de los 30 dias posteriores a la seleccion de un plan. La falta de este documento cancela la inscripcion.",
+      "Reportar ingresos de 2025 o anos anteriores en lugar del ingreso proyectado de 2026: Los calculos de subsidios usan su MAGI proyectado del ano actual, no el salario del ano pasado.",
+      "No solicitar CoverVA Medicaid antes del Mercado de Virginia: Los virginianos cuyos ingresos caen por debajo del 138% FPL deben inscribirse en Medicaid, no en el Mercado.",
+      "Solicitar a traves de healthcare.gov en lugar del Mercado de Virginia en marketplace.virginia.gov: Virginia es un intercambio estatal; las solicitudes en la plataforma federal no se procesan correctamente para los residentes de Virginia."
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "CoverVA Medicaid: Virginia's Free Coverage Option After Job Loss",
+        "es": "CoverVA Medicaid: La Opcion de Cobertura Gratuita de Virginia Despues de Perder el Trabajo"
+      },
+      "paragraphs": [
+        {
+          "en": "CoverVA is the Virginia Department of Medical Assistance Services (DMAS) brand for the state's Medicaid program. Virginia expanded Medicaid under the ACA in January 2019, covering adults ages 19 to 64 with household incomes up to 138% FPL (in 2026, that is $22,025 for a single person and $45,540 for a family of 4. CoverVA Medicaid has no premium, no deductible, and no annual enrollment window. Virginians who lose job-based coverage and project income below the 138% FPL threshold should apply immediately at commonhelp.virginia.gov or by calling DMAS at 1-855-242-8282. Most applications are processed within a few business days. Benefits include primary and specialist care, emergency services, mental health and substance use treatment, prescription drugs, and for many enrollees dental and vision coverage through managed care organizations like Anthem HealthKeepers Plus, Molina Healthcare of Virginia, Optima Health (Sentara), and United Healthcare Community Plan.",
+          "es": "CoverVA es la marca del Departamento de Servicios de Asistencia Medica de Virginia (DMAS) para el programa Medicaid del estado. Virginia expandio Medicaid bajo la ACA en enero de 2019, cubriendo adultos de 19 a 64 anos con ingresos familiares hasta el 138% FPL. En 2026, eso es $22,025 para una persona sola y $45,540 para una familia de 4. CoverVA Medicaid no tiene prima, no tiene deducible y no tiene un periodo de inscripcion anual. Los virginianos que pierden cobertura laboral y proyectan ingresos por debajo del umbral del 138% FPL deben solicitar de inmediato en commonhelp.virginia.gov o llamando a DMAS al 1-855-242-8282. La mayoria de las solicitudes se procesan dentro de unos pocos dias habiles."
+        },
+        {
+          "en": "Virginia children under 19 may qualify for CHIP (marketed under CoverVA) at higher income thresholds: up to 200% FPL for most children and up to 300% FPL for children in certain age groups for most children and up to 300% FPL for children in certain age groups. Virginia CHIP enrollment is also year-round with no deadline. If the parent does not qualify for CoverVA Medicaid but the household income is under $37,615 (family of 3) or $45,540 (family of 4) in 2026, the children likely qualify for CHIP separately. Apply at the same commonhelp.virginia.gov portal, which routes the application to the right Virginia program based on household income.",
+          "es": "Los ninos de Virginia menores de 19 anos pueden calificar para CHIP (comercializado bajo CoverVA) con umbrales de ingresos mas altos: hasta el 200% FPL para la mayoria de los ninos y hasta el 300% FPL para ninos en ciertos grupos de edad para la mayoria de los ninos y hasta el 300% FPL para ninos en ciertos grupos de edad. La inscripcion de CHIP de Virginia tambien es todo el ano sin fecha limite. Si el padre no califica para CoverVA Medicaid pero el ingreso del hogar es menor a $37,615 (familia de 3) o $45,540 (familia de 4) en 2026, los ninos probablemente califiquen para CHIP por separado."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Virginia's State-Based Marketplace: How It Differs from Healthcare.gov",
+        "es": "El Mercado Estatal de Virginia: Como Difiere de Healthcare.gov"
+      },
+      "paragraphs": [
+        {
+          "en": "Virginia launched its own state-based insurance exchange in fall 2023, replacing its previous use of the federal healthcare.gov platform. Virginia residents must enroll through marketplace.virginia.gov; applying on the federal platform will not work for Virginia-specific plans. The Virginia's Insurance Marketplace is operated under the oversight of the Virginia State Corporation Commission (SCC) Bureau of Insurance and the Virginia Health Benefit Exchange. For job-loss SEP enrollments, go directly to marketplace.virginia.gov, select 'Special Enrollment,' choose 'Loss of Coverage' as your qualifying event, and enter your projected 2026 household income to see your APTC subsidy amount before selecting a plan. Virginia's 2026 Open Enrollment Period ended January 30, 2026 (15 days later than the federal January 15 deadline), so Virginia residents have a slightly longer window each year. Outside open enrollment, job loss is among the most common qualifying events that open a 60-day Virginia Marketplace SEP.",
+          "es": "Virginia lanzo su propio intercambio de seguros estatal en otono de 2023, reemplazando su uso anterior de la plataforma federal healthcare.gov. Los residentes de Virginia deben inscribirse a traves de marketplace.virginia.gov. Para inscripciones SEP por perdida de trabajo, vaya directamente a marketplace.virginia.gov, seleccione 'Inscripcion Especial,' elija 'Perdida de Cobertura' como su evento calificador, e ingrese su ingreso familiar proyectado de 2026 para ver el monto de su subsidio APTC antes de seleccionar un plan. El Periodo de Inscripcion Abierta de Virginia 2026 termino el 30 de enero de 2026, 15 dias despues del plazo federal del 15 de enero."
+        },
+        {
+          "en": "Virginia Marketplace plans are offered by multiple carriers including Anthem HealthKeepers, CareFirst BlueChoice, Optima Health (Sentara), and others depending on the county. The 2026 average net premium after APTC for Virginia subsidy-eligible enrollees was approximately $124/month per Virginia SCC enrollment data, compared to an unsubsidized benchmark Silver plan cost that varies by age and region. Virginians with income between 100% and 250% FPL also qualify for cost-sharing reductions (CSR) on Silver plans, which can reduce deductibles from the 2026 ACA marketplace standard out-of-pocket maximum of $10,600 to as low as $700 for the highest CSR tier. Silver plans with CSR represent the best value for most moderate-income Virginia households after job loss.",
+          "es": "Los planes del Mercado de Virginia son ofrecidos por multiples aseguradoras incluyendo Anthem HealthKeepers, CareFirst BlueChoice, Optima Health (Sentara), y otras dependiendo del condado. La prima neta promedio despues del APTC para los inscritos elegibles para subsidio de Virginia en 2026 fue aproximadamente $124/mes. Los virginianos con ingresos entre el 100% y el 250% FPL tambien califican para reducciones de costos compartidos (CSR) en planes Silver, lo que puede reducir los deducibles significativamente."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Virginia ACA Subsidy Income Limits and 2026 FPL Thresholds",
+        "es": "Limites de Ingresos para Subsidios ACA de Virginia y Umbrales FPL 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Virginia follows the 48-state Federal Poverty Level guidelines published by HHS ASPE. For 2026, the key income thresholds for Virginians after job loss are: Under 138% FPL (under $22,025 single / $45,540 family of 4): CoverVA Medicaid, free, year-round. Between 138% and 400% FPL ($22,025 to $63,840 single / $45,540 to $132,000 family of 4): Virginia Marketplace premium tax credits on a sliding scale; the lower the income above the Medicaid line, the larger the subsidy. Above 400% FPL: no premium tax credits in 2026; the ACA subsidy cliff returned after enhanced PTCs from the American Rescue Plan Act and Inflation Reduction Act expired January 1, 2026. Virginians above 400% FPL who lose job coverage may still benefit from comparing unsubsidized Marketplace plan costs against COBRA: Marketplace individual premiums often run $400 to $700/month unsubsidized for a 40-year-old in Virginia's mid-tier counties, versus COBRA at $700 to $900/month for the same person.",
+          "es": "Virginia sigue las pautas del Nivel Federal de Pobreza de 48 estados publicadas por HHS ASPE. Para 2026, los umbrales de ingresos clave para los virginianos despues de perder el trabajo son: Por debajo del 138% FPL: CoverVA Medicaid, gratuito, todo el ano. Entre el 138% y el 400% FPL: creditos fiscales de prima del Mercado de Virginia en escala progresiva. Por encima del 400% FPL: sin creditos fiscales de prima en 2026; el precipicio del subsidio ACA regreso despues de que los creditos fiscales mejorados expiraron el 1 de enero de 2026. Los virginianos por encima del 400% FPL que pierden cobertura laboral aun pueden beneficiarse de comparar los costos de los planes del Mercado no subsidiados con COBRA."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Virginia Medicaid and ACA Marketplace Income Thresholds by Household Size, 2026",
+          "es": "Umbrales de Ingresos de Medicaid de Virginia y del Mercado ACA por Tamano del Hogar, 2026"
+        },
+        "headers": {
+          "en": ["Household size", "CoverVA Medicaid (138% FPL)", "ACA subsidy ceiling (400% FPL)"],
+          "es": ["Tamano del hogar", "CoverVA Medicaid (138% FPL)", "Techo de subsidio ACA (400% FPL)"]
+        },
+        "rows": [
+          {
+            "en": ["1 person", "$22,025/yr", "$63,840/yr"],
+            "es": ["1 persona", "$22,025/ano", "$63,840/ano"]
+          },
+          {
+            "en": ["2 people", "$29,820/yr", "$86,400/yr"],
+            "es": ["2 personas", "$29,820/ano", "$86,400/ano"]
+          },
+          {
+            "en": ["3 people", "$37,615/yr", "$108,960/yr"],
+            "es": ["3 personas", "$37,615/ano", "$108,960/ano"]
+          },
+          {
+            "en": ["4 people", "$45,540/yr", "$132,000/yr"],
+            "es": ["4 personas", "$45,540/ano", "$132,000/ano"]
+          },
+          {
+            "en": ["5 people", "$53,335/yr", "$154,560/yr"],
+            "es": ["5 personas", "$53,335/ano", "$154,560/ano"]
+          }
+        ],
+        "footnote": {
+          "en": "Based on 2026 HHS ASPE Federal Poverty Guidelines. Virginia follows 48-state guidelines (not Alaska or Hawaii). Income thresholds updated January 13, 2026 per Virginia DMAS.",
+          "es": "Basado en las Guias de Pobreza Federal HHS ASPE 2026. Virginia sigue las directrices de los 48 estados. Umbrales de ingresos actualizados el 13 de enero de 2026 segun Virginia DMAS."
+        },
+        "source": "HHS ASPE 2026 Federal Poverty Guidelines; Virginia DMAS CoverVA eligibility"
+      }
+    },
+    {
+      "heading": {
+        "en": "State-Specific Virginia Rules That Affect Job-Loss Coverage Decisions",
+        "es": "Reglas Especificas del Estado de Virginia que Afectan las Decisiones de Cobertura por Perdida de Trabajo"
+      },
+      "paragraphs": [
+        {
+          "en": "Virginia's state-based exchange has several rules that differ from the federal marketplace and from neighboring states. Virginia's Open Enrollment Period runs through January 30 each year, 15 days longer than the federal January 15 deadline, giving Virginians a small additional window to shop plans during annual enrollment. Virginia does not have a state continuation coverage law equivalent to California's Cal-COBRA for small employers; federal COBRA applies to employers with 20 or more employees, and employees of smaller Virginia employers (under 20 workers) may have more limited continuation options. Virginia Medicaid, administered through CoverVA, does NOT have a 30-day retroactive eligibility rule that some other states offer; coverage typically starts the month of approval, not the month of application. Virginia's CHIP program covers children through age 18 (standard age) with no state extension to age 21 or higher. Virginia also participates in the federal Navigator program and has certified application counselors available statewide for free in-person or phone enrollment assistance; call 1-888-687-1501 (Virginia's Marketplace) or 1-855-242-8282 (DMAS/CoverVA) for referral.",
+          "es": "El intercambio estatal de Virginia tiene varias reglas que difieren del mercado federal y de los estados vecinos. El Periodo de Inscripcion Abierta de Virginia dura hasta el 30 de enero cada ano, 15 dias mas largo que el plazo federal del 15 de enero. Virginia no tiene una ley de cobertura de continuacion estatal equivalente a Cal-COBRA de California para empleadores pequenos; el COBRA federal se aplica a empleadores con 20 o mas empleados. Virginia Medicaid, administrado a traves de CoverVA, NO tiene una regla de elegibilidad retroactiva de 30 dias que algunos otros estados ofrecen. El programa CHIP de Virginia cubre a los ninos hasta los 18 anos sin extension estatal a los 21 anos o mas."
+        }
+      ]
+    }
+  ],
+
+  "stateRules": [
+    {
+      "state": "Virginia",
+      "rule": "Virginia operates its own state-based Insurance Marketplace at marketplace.virginia.gov, separate from healthcare.gov. Virginia's 2026 OEP ran November 1, 2025 through January 30, 2026 (15 days longer than the federal January 15 deadline). Job-loss SEP is 60 days from coverage loss date.",
+      "sourceUrl": "https://www.marketplace.virginia.gov/special-enrollment"
+    },
+    {
+      "state": "Virginia",
+      "rule": "CoverVA Medicaid (DMAS) covers adults 19-64 at up to 138% FPL with no premium, no deductible. Virginia expanded Medicaid January 2019. Apply at commonhelp.virginia.gov or call 1-855-242-8282. Year-round enrollment, no deadline.",
+      "sourceUrl": "https://coverva.dmas.virginia.gov/learn/coverage-for-adults/adults-19-64-years-old/"
+    },
+    {
+      "state": "Virginia",
+      "rule": "Virginia has no state mini-COBRA law for employers with under 20 employees. Federal COBRA applies to Virginia employers with 20 or more employees for up to 18 months after job loss.",
+      "sourceUrl": "https://help.marketplace.virginia.gov/hc/en-us/articles/11972795491853-COBRA-Coverage-and-Virginia-s-Insurance-Marketplace"
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "How long do I have to get health insurance after losing my job in Virginia?",
+        "answer": "Virginia gives you a 60-day Special Enrollment Period (SEP) starting the day after your employer-sponsored coverage ends. During those 60 days, you can enroll in a plan through Virginia's Insurance Marketplace at marketplace.virginia.gov. CoverVA Medicaid has no deadline and accepts applications year-round. Your spouse's employer plan typically has a 30-day window from your coverage loss date. Virginia's next Open Enrollment Period runs November 1, 2026 through January 30, 2027 if you miss the SEP."
+      },
+      {
+        "question": "Do I use healthcare.gov or a different website to enroll in Virginia after losing my job?",
+        "answer": "Virginia operates its own state-based Insurance Marketplace at marketplace.virginia.gov, not the federal healthcare.gov platform. Virginia residents must use marketplace.virginia.gov to shop for and enroll in ACA Marketplace plans. For CoverVA Medicaid, use commonhelp.virginia.gov or call DMAS at 1-855-242-8282. Applying at healthcare.gov will not show Virginia-specific plans and may not process correctly for Virginia residents."
+      },
+      {
+        "question": "Do I qualify for CoverVA Medicaid after losing my job in Virginia?",
+        "answer": "Virginia adults ages 19 to 64 who project income under 138% FPL qualify for CoverVA Medicaid. In 2026, that threshold is $22,025 for a single person and $45,540 for a family of 4. CoverVA has no premium, no deductible, and enrollment is year-round. Losing your job and projecting unemployment compensation as your only income often puts Virginians well under the 138% FPL line. Apply at commonhelp.virginia.gov. Virginia processed most 2026 applications within a few business days of submission."
+      },
+      {
+        "question": "Is COBRA worth it after losing a job in Virginia?",
+        "answer": "Almost never, for most Virginia residents who lose job coverage in 2026. COBRA charges 102% of the full group premium, typically $500 to $900/month for individual coverage or $1,400 to $2,800/month for family coverage in Virginia employer plans. Virginia's Insurance Marketplace plans with advance premium tax credits averaged a net premium of $124/month in 2026, with more than 78% of enrollees qualifying for subsidies. COBRA makes sense only if you have ongoing treatment with a specialist who is out-of-network on every Virginia Marketplace plan, or if you have met most of your 2026 deductible."
+      },
+      {
+        "question": "What if I miss the 60-day Special Enrollment Period in Virginia?",
+        "answer": "If you miss Virginia's 60-day SEP after losing job coverage, you must wait until the next Open Enrollment Period. Virginia's runs November 1, 2026 through January 30, 2027 for 2027 coverage. CoverVA Medicaid is the exception: it accepts applications year-round with no deadline. Missing the SEP window and going uninsured risks large out-of-pocket bills. Virginia has no state subsidy or safety-net program that fills the gap outside of Medicaid and the federal Marketplace SEP rules."
+      },
+      {
+        "question": "Does unemployment compensation count as income for Virginia Marketplace subsidies and Medicaid?",
+        "answer": "Yes. Virginia unemployment compensation from the Virginia Employment Commission (VEC) counts as Modified Adjusted Gross Income (MAGI) for both Virginia Marketplace premium tax credit calculations and CoverVA Medicaid eligibility. Include your expected weekly benefit amount times the number of weeks you project receiving benefits in your 2026 income estimate. Using your former salary instead of projected unemployment income inflates your subsidy calculation and may result in owing money back at tax time via Form 8962."
+      },
+      {
+        "question": "What documents does Virginia's Insurance Marketplace require to prove job loss?",
+        "answer": "Virginia's Marketplace requires proof of your qualifying life event within 30 days of selecting a plan. Acceptable documents include: a termination letter from your Virginia employer confirming the last day of coverage, a COBRA election notice from your employer or plan administrator, or a letter from your health insurer confirming the coverage end date. For CoverVA Medicaid, you need Social Security numbers for all household members, proof of Virginia residency, and recent pay stubs or a VEC unemployment award letter. Missing the documentation deadline cancels the enrollment even if you applied within 60 days."
+      },
+      {
+        "question": "What happens to my children's coverage after I lose my job in Virginia?",
+        "answer": "Virginia children under 19 may qualify for CHIP through CoverVA even if the parent does not qualify for Medicaid. Virginia CHIP income limits reach up to 200-300% FPL for children depending on age group, well above the adult Medicaid limit. CHIP enrollment is year-round with no deadline and premiums are low or zero. Apply at commonhelp.virginia.gov. Additionally, children are covered by the same 60-day Virginia Marketplace SEP as adults if you choose a Marketplace plan, and their premium tax credits are calculated as part of the household subsidy."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuanto tiempo tengo para obtener seguro medico despues de perder mi trabajo en Virginia?",
+        "answer": "Virginia le da un Periodo de Inscripcion Especial (SEP) de 60 dias que comienza el dia despues de que termina su cobertura patrocinada por el empleador. Durante esos 60 dias, puede inscribirse en un plan a traves del Mercado de Seguros de Virginia en marketplace.virginia.gov. CoverVA Medicaid no tiene fecha limite y acepta solicitudes todo el ano. El plan del empleador de su conyuge generalmente tiene una ventana de 30 dias desde la fecha de perdida de su cobertura. El proximo Periodo de Inscripcion Abierta de Virginia va del 1 de noviembre de 2026 al 30 de enero de 2027 si pierde el SEP."
+      },
+      {
+        "question": "¿Uso healthcare.gov u otro sitio web para inscribirme en Virginia despues de perder mi trabajo?",
+        "answer": "Virginia opera su propio Mercado de Seguros estatal en marketplace.virginia.gov, no la plataforma federal healthcare.gov. Los residentes de Virginia deben usar marketplace.virginia.gov para buscar e inscribirse en planes ACA del Mercado. Para CoverVA Medicaid, use commonhelp.virginia.gov o llame a DMAS al 1-855-242-8282. Aplicar en healthcare.gov no mostrara los planes especificos de Virginia y puede no procesarse correctamente para los residentes de Virginia."
+      },
+      {
+        "question": "¿Califico para CoverVA Medicaid despues de perder mi trabajo en Virginia?",
+        "answer": "Los adultos de Virginia de 19 a 64 anos que proyectan ingresos por debajo del 138% FPL califican para CoverVA Medicaid. En 2026, ese umbral es $22,025 para una persona sola y $45,540 para una familia de 4. CoverVA no tiene prima, no tiene deducible, y la inscripcion es todo el ano. Perder su trabajo y proyectar la compensacion por desempleo como su unico ingreso a menudo pone a los virginianos bien por debajo de la linea del 138% FPL. Solicite en commonhelp.virginia.gov."
+      },
+      {
+        "question": "¿Vale la pena COBRA despues de perder un trabajo en Virginia?",
+        "answer": "Casi nunca, para la mayoria de los residentes de Virginia que pierden cobertura laboral en 2026. COBRA cobra el 102% de la prima completa del grupo, tipicamente $500 a $900/mes para cobertura individual o $1,400 a $2,800/mes para cobertura familiar en los planes de empleadores de Virginia. Los planes del Mercado de Seguros de Virginia con creditos fiscales de prima anticipados promediaron una prima neta de $124/mes en 2026, con mas del 78% de los inscritos calificando para subsidios. COBRA tiene sentido solo si tiene tratamiento continuo con un especialista fuera de la red en cada plan del Mercado de Virginia, o si ha alcanzado la mayor parte de su deducible de 2026."
+      },
+      {
+        "question": "¿Que pasa si pierdo el Periodo de Inscripcion Especial de 60 dias en Virginia?",
+        "answer": "Si pierde el SEP de 60 dias de Virginia despues de perder la cobertura laboral, debe esperar hasta el proximo Periodo de Inscripcion Abierta, que va del 1 de noviembre de 2026 al 30 de enero de 2027 para la cobertura de 2027. CoverVA Medicaid es la excepcion: acepta solicitudes todo el ano sin fecha limite. Perder la ventana del SEP y quedarse sin seguro arriesga grandes facturas medicas de bolsillo."
+      },
+      {
+        "question": "¿La compensacion por desempleo cuenta como ingreso para los subsidios del Mercado de Virginia y Medicaid?",
+        "answer": "Si. La compensacion por desempleo de Virginia de la Comision de Empleo de Virginia (VEC) cuenta como Ingreso Bruto Ajustado Modificado (MAGI) para los calculos de credito fiscal de prima del Mercado de Virginia y la elegibilidad de CoverVA Medicaid. Incluya el monto de su beneficio semanal esperado multiplicado por el numero de semanas que proyecta recibir beneficios en su estimacion de ingresos de 2026. Usar su salario anterior en lugar del ingreso proyectado por desempleo infla su calculo de subsidio."
+      },
+      {
+        "question": "¿Que documentos requiere el Mercado de Seguros de Virginia para probar la perdida de trabajo?",
+        "answer": "El Mercado de Virginia requiere prueba de su evento calificador de vida dentro de los 30 dias posteriores a la seleccion de un plan. Los documentos aceptables incluyen: carta de terminacion de su empleador en Virginia confirmando el ultimo dia de cobertura, aviso de eleccion de COBRA, o carta de su aseguradora confirmando la fecha de fin de cobertura. Para CoverVA Medicaid, necesita numeros de Seguro Social para todos los miembros del hogar, prueba de residencia en Virginia, y talonarios de pago recientes o carta de adjudicacion de desempleo de la VEC."
+      },
+      {
+        "question": "¿Que pasa con la cobertura de mis hijos despues de perder mi trabajo en Virginia?",
+        "answer": "Los ninos de Virginia menores de 19 anos pueden calificar para CHIP a traves de CoverVA incluso si el padre no califica para Medicaid. Los limites de ingresos del CHIP de Virginia llegan hasta el 200-300% FPL para ninos dependiendo del grupo de edad, muy por encima del limite de Medicaid para adultos. La inscripcion de CHIP es todo el ano sin fecha limite y las primas son bajas o cero. Solicite en commonhelp.virginia.gov. Ademas, los ninos estan cubiertos por el mismo SEP de 60 dias del Mercado de Virginia que los adultos."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Limites de Ingresos Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "ACA Income Limits 2026",
+        "es": "Limites de Ingresos ACA 2026"
+      },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Nivel Federal de Pobreza 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Recently Lost Employer Coverage",
+        "es": "Recien Perdio Cobertura del Empleador"
+      },
+      "href": "/for/recently-lost-employer-coverage"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Virginia's Insurance Marketplace: Losing job-based coverage",
+      "url": "https://help.marketplace.virginia.gov/hc/en-us/articles/11972798822157-Losing-job-based-coverage",
+      "note": {
+        "en": "Official Virginia state-based Marketplace guidance for job-loss SEP enrollment.",
+        "es": "Guia oficial del Mercado estatal de Virginia para la inscripcion SEP por perdida de trabajo."
+      }
+    },
+    {
+      "name": "CoverVA DMAS: Adults 19-64 Medicaid eligibility",
+      "url": "https://coverva.dmas.virginia.gov/learn/coverage-for-adults/adults-19-64-years-old/",
+      "note": {
+        "en": "Virginia DMAS official CoverVA Medicaid eligibility rules for expanded adult coverage.",
+        "es": "Reglas oficiales de elegibilidad de CoverVA Medicaid de Virginia DMAS para cobertura de adultos expandida."
+      }
+    },
+    {
+      "name": "HealthCare.gov: If you lose job-based coverage",
+      "url": "https://www.healthcare.gov/have-job-based-coverage/if-you-lose-job-based-coverage/",
+      "note": {
+        "en": "Federal SEP rules for loss of job-based coverage : applicable to Virginia for federal COBRA and HIPAA rules.",
+        "es": "Reglas federales del SEP por perdida de cobertura laboral, aplicables a Virginia para COBRA federal y reglas HIPAA."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Federal Medicaid eligibility guidance including year-round enrollment rules.",
+        "es": "Guia federal de elegibilidad de Medicaid incluyendo reglas de inscripcion durante todo el ano."
+      }
+    },
+    {
+      "name": "KFF: Virginia Marketplace Enrollment 2026",
+      "url": "https://www.kff.org/health-reform/state-indicator/marketplace-enrollment/",
+      "note": {
+        "en": "KFF 2026 Virginia ACA Marketplace enrollment data including subsidy eligibility and average net premium analysis.",
+        "es": "Datos de inscripcion ACA del Mercado de Virginia de KFF 2026 incluyendo elegibilidad de subsidios y analisis de prima neta promedio."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Official 2026 Federal Poverty Level guidelines used for CoverVA Medicaid and ACA subsidy income thresholds.",
+        "es": "Guias oficiales del Nivel Federal de Pobreza 2026 utilizadas para los umbrales de ingresos de CoverVA Medicaid y los subsidios ACA."
+      }
+    }
+  ]
+}
