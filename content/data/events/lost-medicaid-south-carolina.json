@@ -353,15 +353,15 @@
       "caption": "ACA Marketplace Subsidy Income Limits and SC Healthy Connections Thresholds, 2026 (48 contiguous states + DC)",
       "headers": ["Household size", "100% FPL (ACA floor in non-expansion SC)", "138% FPL (Medicaid in expansion states)", "400% FPL (ACA subsidy cliff, back for 2026)"],
       "rows": [
-        ["1", "$19,578", "$27,018", "$78,312"],
-        ["2", "$26,508", "$36,581", "$106,032"],
-        ["3", "$33,438", "$46,144", "$133,752"],
-        ["4", "$40,368", "$55,708", "$161,472"],
-        ["5", "$47,298", "$65,271", "$189,192"],
-        ["6", "$54,228", "$74,835", "$216,912"],
-        ["7", "$61,158", "$84,398", "$244,632"],
-        ["8", "$68,088", "$93,961", "$272,352"],
-        ["Each additional", "+ $6,930", "+ $9,563", "+ $27,720"]
+        ["1", "$15,960", "$22,025", "$63,840"],
+        ["2", "$21,640", "$29,863", "$86,560"],
+        ["3", "$27,320", "$37,702", "$109,280"],
+        ["4", "$33,000", "$45,540", "$132,000"],
+        ["5", "$38,680", "$53,378", "$154,720"],
+        ["6", "$44,360", "$61,217", "$177,440"],
+        ["7", "$50,040", "$69,055", "$200,160"],
+        ["8", "$55,720", "$76,894", "$222,880"],
+        ["Each additional", "+ $5,680", "+ $7,838", "+ $22,720"]
       ],
       "footnote": "In South Carolina (non-expansion), ACA subsidies start at 100% FPL, not 138% FPL. Adults below 100% FPL are in the coverage gap. The 400% FPL cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026. Alaska and Hawaii have higher FPL thresholds.",
       "source": "HHS ASPE 2026 Poverty Guidelines, CMS ACA premium tax credit thresholds 2026"
@@ -370,15 +370,15 @@
       "caption": "Limites de Ingresos de Subsidios del Mercado ACA y Umbrales de Healthy Connections de SC, 2026 (48 estados contiguos + DC)",
       "headers": ["Tamano del hogar", "100% FPL (piso ACA en SC no expansion)", "138% FPL (Medicaid en estados de expansion)", "400% FPL (techo de subsidio ACA, de vuelta en 2026)"],
       "rows": [
-        ["1", "$19,578", "$27,018", "$78,312"],
-        ["2", "$26,508", "$36,581", "$106,032"],
-        ["3", "$33,438", "$46,144", "$133,752"],
-        ["4", "$40,368", "$55,708", "$161,472"],
-        ["5", "$47,298", "$65,271", "$189,192"],
-        ["6", "$54,228", "$74,835", "$216,912"],
-        ["7", "$61,158", "$84,398", "$244,632"],
-        ["8", "$68,088", "$93,961", "$272,352"],
-        ["Cada persona adicional", "+ $6,930", "+ $9,563", "+ $27,720"]
+        ["1", "$15,960", "$22,025", "$63,840"],
+        ["2", "$21,640", "$29,863", "$86,560"],
+        ["3", "$27,320", "$37,702", "$109,280"],
+        ["4", "$33,000", "$45,540", "$132,000"],
+        ["5", "$38,680", "$53,378", "$154,720"],
+        ["6", "$44,360", "$61,217", "$177,440"],
+        ["7", "$50,040", "$69,055", "$200,160"],
+        ["8", "$55,720", "$76,894", "$222,880"],
+        ["Cada persona adicional", "+ $5,680", "+ $7,838", "+ $22,720"]
       ],
       "footnote": "En Carolina del Sur (no expansion), los subsidios del ACA comienzan en el 100% FPL, no en el 138% FPL. Los adultos por debajo del 100% FPL estan en la brecha de cobertura. El techo del 400% FPL regreso para 2026 despues de que los creditos fiscales de prima mejorados expiraron el 1 de enero de 2026.",
       "source": "Directrices de Pobreza HHS ASPE 2026, Umbrales de credito fiscal de prima ACA CMS 2026"
@@ -464,7 +464,7 @@
       },
       {
         "question": "What is the coverage gap in South Carolina and do I fall into it?",
-        "answer": "The South Carolina coverage gap affects non-disabled, childless adults between 19 and 64 whose annual income is below 100% FPL (below $19,578 for an individual in 2026). South Carolina has not expanded Medicaid under the ACA, so these adults are not eligible for Healthy Connections Medicaid. They also do not qualify for ACA Marketplace subsidies, which require income of at least 100% FPL in non-expansion states. If you are a parent with a dependent child in the household, you may qualify for Healthy Connections at up to 62% FPL. If you are pregnant, you may qualify at up to 194% FPL. Otherwise, free and charitable clinics and FQHCs (federally qualified health centers) across South Carolina provide sliding-scale care regardless of insurance status."
+        "answer": "The South Carolina coverage gap affects non-disabled, childless adults between 19 and 64 whose annual income is below 100% FPL (below $15,960 for an individual in 2026). South Carolina has not expanded Medicaid under the ACA, so these adults are not eligible for Healthy Connections Medicaid. They also do not qualify for ACA Marketplace subsidies, which require income of at least 100% FPL in non-expansion states. If you are a parent with a dependent child in the household, you may qualify for Healthy Connections at up to 62% FPL. If you are pregnant, you may qualify at up to 194% FPL. Otherwise, free and charitable clinics and FQHCs (federally qualified health centers) across South Carolina provide sliding-scale care regardless of insurance status."
       },
       {
         "question": "How do I prove I lost Medicaid to enroll in an ACA Marketplace plan in South Carolina?",
@@ -498,7 +498,7 @@
       },
       {
         "question": "Que es la brecha de cobertura en Carolina del Sur y caigo en ella?",
-        "answer": "La brecha de cobertura de Carolina del Sur afecta a los adultos sin discapacidades y sin hijos entre 19 y 64 anos cuyo ingreso anual es inferior al 100% FPL (menos de $19,578 para un individuo en 2026). Carolina del Sur no ha expandido Medicaid bajo el ACA, por lo que estos adultos no son elegibles para Healthy Connections Medicaid. Tampoco califican para los subsidios del Mercado ACA, que requieren un ingreso de al menos el 100% FPL en estados de no expansion. Si es padre con un hijo dependiente en el hogar, puede calificar para Healthy Connections hasta el 62% FPL. Si esta embarazada, puede calificar hasta el 194% FPL."
+        "answer": "La brecha de cobertura de Carolina del Sur afecta a los adultos sin discapacidades y sin hijos entre 19 y 64 anos cuyo ingreso anual es inferior al 100% FPL (menos de $15,960 para un individuo en 2026). Carolina del Sur no ha expandido Medicaid bajo el ACA, por lo que estos adultos no son elegibles para Healthy Connections Medicaid. Tampoco califican para los subsidios del Mercado ACA, que requieren un ingreso de al menos el 100% FPL en estados de no expansion. Si es padre con un hijo dependiente en el hogar, puede calificar para Healthy Connections hasta el 62% FPL. Si esta embarazada, puede calificar hasta el 194% FPL."
       },
       {
         "question": "Como demuestro que perdi Medicaid para inscribirme en un plan del Mercado ACA en Carolina del Sur?",
