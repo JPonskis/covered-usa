@@ -1,0 +1,522 @@
+{
+  "slug": "exceeded-income-cap",
+  "eventName": {
+    "en": "Income Exceeded 400% FPL",
+    "es": "Ingresos Superaron el 400% del FPL"
+  },
+  "category": "Income Change",
+  "topic": "ACA Subsidy Cliff Survival Guide: Income Exceeded 400% FPL in 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-11",
+  "readingTime": "9 min read",
+
+  "topicCluster": "event-sep",
+  "keyTerms": {
+    "en": [
+      "income exceeded 400 percent FPL 2026",
+      "lost premium tax credit 2026",
+      "over income limit ACA marketplace",
+      "aca subsidy repayment 2026",
+      "special enrollment period income change"
+    ],
+    "es": [
+      "ingresos superaron 400 por ciento FPL 2026",
+      "precipicio subsidio ACA 2026",
+      "perdida credito fiscal prima 2026",
+      "sobre limite ingreso mercado ACA 2026",
+      "reembolso subsidio ACA 2026"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "meta": {
+    "title": {
+      "en": "Income Over 400% FPL? ACA Subsidy Cliff Guide 2026",
+      "es": "Ingresos Sobre 400% FPL? Guia Subsidio ACA 2026"
+    },
+    "description": {
+      "en": "Income over 400% FPL means no ACA premium tax credit in 2026. Learn what to do now: plan options, repayment rules, and how to avoid a big tax bill.",
+      "es": "Ingresos sobre 400% FPL significan sin credito fiscal de prima ACA en 2026. Aprenda sus opciones, reglas de reembolso y como evitar una factura fiscal grande."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Income Exceeded 400% FPL in 2026? Here Is Your ACA Subsidy Cliff Survival Guide",
+      "es": "Ingresos Superaron el 400% del FPL en 2026? Guia de Supervivencia del Precipicio ACA"
+    },
+    "subhero": {
+      "en": "The ACA enhanced subsidy extension expired January 1, 2026. If your 2026 household income exceeds $63,840 (single) or $132,000 (family of 4), you lose all premium tax credits. You have 60 days from an income-change qualifying event to switch plans, and must report income changes within 30 days to avoid a surprise repayment bill at tax time.",
+      "es": "La extension de subsidio mejorado del ACA vencio el 1 de enero de 2026. Si su ingreso del hogar 2026 supera $63,840 (individual) o $132,000 (familia de 4), pierde todos los creditos fiscales de prima. Tiene 60 dias desde un evento calificador de cambio de ingreso para cambiar planes."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "Report income changes within 30 days; you have 60 days to switch plans",
+      "es": "Reporte cambios de ingreso en 30 dias; tiene 60 dias para cambiar planes"
+    },
+    "body": {
+      "en": "A midyear income jump past 400% FPL triggers a qualifying life event and a 60-day Special Enrollment Period. Report the change promptly on healthcare.gov to stop advance premium tax credits before they accumulate into a repayment liability. For example, if your income crosses the cliff on July 1, 2026, your 60-day SEP window runs July 1 through August 30, 2026. Miss it and you remain on an unsubsidized plan at full premium until the next ACA Open Enrollment in November 2026.",
+      "es": "Un aumento de ingreso a mitad de ano por encima del 400% FPL activa un evento calificador de vida y un Periodo de Inscripcion Especial de 60 dias. Reporte el cambio de inmediato en healthcare.gov para detener los creditos fiscales anticipados antes de que se acumulen en una obligacion de reembolso. Por ejemplo, si sus ingresos superan el limite el 1 de julio de 2026, su ventana SEP corre del 1 de julio al 30 de agosto de 2026."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Report income change on healthcare.gov (stop advance credits)",
+          "es": "Reportar cambio de ingreso en healthcare.gov (detener creditos anticipados)"
+        },
+        "days": 30
+      },
+      {
+        "label": {
+          "en": "Medicaid (if income drops back below 138% FPL)",
+          "es": "Medicaid (si el ingreso baja al 138% FPL)"
+        },
+        "days": null
+      }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "The ACA subsidy cliff returned for 2026 after enhanced Premium Tax Credits expired January 1, 2026. If your Modified Adjusted Gross Income (MAGI) exceeds 400% of the Federal Poverty Level, which is $63,840 for a single person or $132,000 for a family of 4 in 2026, you no longer qualify for any Marketplace premium tax credit. You have three options: (1) report the income change on healthcare.gov and switch to a full-price Bronze or Catastrophic plan during the 60-day SEP, (2) join an employer plan within 30 days if a spouse or new job offers one, or (3) explore short-term health plans or HSA-qualified HDHPs as cost-control tools for high earners. You must also report the change promptly to stop advance credit overpayments that trigger repayment at tax time on IRS Form 8962.",
+    "es": "El precipicio de subsidio del ACA regreso en 2026 tras el vencimiento de los Creditos Fiscales de Prima mejorados el 1 de enero de 2026. Si su Ingreso Bruto Ajustado Modificado (MAGI) supera el 400% del Nivel Federal de Pobreza, que es $63,840 para una persona o $132,000 para una familia de 4 en 2026, ya no califica para ningun credito fiscal de prima del Mercado. Tiene tres opciones: (1) reportar el cambio de ingreso en healthcare.gov y cambiar a un plan Bronze o Catastrofico de precio completo durante el SEP de 60 dias, (2) unirse al plan de un empleador en 30 dias si un conyuge o nuevo trabajo lo ofrece, o (3) explorar planes de salud a corto plazo o HDHPs calificados para HSA como herramientas de control de costos para altos ingresos."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "The ACA subsidy cliff is real again in 2026. Enhanced Premium Tax Credits introduced by the American Rescue Plan Act in 2021 and extended through the Inflation Reduction Act expired on January 1, 2026, restoring the hard 400% Federal Poverty Level income ceiling that existed before 2021. For a single person, that ceiling is $63,840 in Modified Adjusted Gross Income for 2026. For a family of four, it is $132,000. One dollar over that line and every dollar of advance premium tax credit you received must be repaid to the IRS at tax time via Form 8962. For households whose income is volatile, freelancers with a good quarter, employees who receive a year-end bonus, or small business owners whose profits spike, the cliff can turn a $150 per month Marketplace premium into an unexpected $3,000 to $12,000 tax bill. This guide explains how to act fast, legally reduce your exposure, and make the right plan-change decision when your income crosses 400% FPL in 2026.",
+      "es": "El precipicio de subsidio del ACA es real de nuevo en 2026. Los Creditos Fiscales de Prima mejorados introducidos por la Ley del Plan de Rescate Americano en 2021 y extendidos por la Ley de Reduccion de la Inflacion expiraron el 1 de enero de 2026, restaurando el limite estricto del 400% del Nivel Federal de Pobreza que existia antes de 2021. Para una persona soltera, ese limite es $63,840 en Ingreso Bruto Ajustado Modificado para 2026. Para una familia de cuatro, es $132,000. Un dolar sobre esa linea y cada dolar de credito fiscal anticipado que recibio debe ser reembolsado al IRS en la declaracion de impuestos mediante el Formulario 8962. Para hogares con ingresos volatiles, trabajadores independientes con un buen trimestre, empleados que reciben bonificacion de fin de ano, o duenos de pequenos negocios con ganancias variables, el precipicio puede convertir una prima del Mercado de $150 al mes en una factura fiscal inesperada de $3,000 a $12,000."
+    },
+    {
+      "en": "Understanding how to navigate the 2026 ACA subsidy cliff requires knowing three things: first, how the 400% FPL income threshold interacts with your specific household size (the ACA income limits table below shows the exact 2026 cutoffs by family size); second, what your options are during the 60-day Special Enrollment Period that a qualifying income-change event triggers; and third, how to use legal income-reduction strategies such as maximizing HSA contributions ($4,400 for self-only / $8,750 for family in 2026), traditional IRA contributions, and self-employed health insurance deductions via IRS Form 7206, which reduce your MAGI and can pull your income back below the cliff. The ACA income limits for subsidies at healthcare.gov confirm that projected 2026 MAGI, not last year's income, determines eligibility, which means proactive income management mid-year can save thousands in premium tax credit repayment.",
+      "es": "Entender como navegar el precipicio de subsidio del ACA 2026 requiere conocer tres cosas: primero, como el umbral de ingresos del 400% FPL interactua con el tamano especifico de su hogar; segundo, cuales son sus opciones durante el Periodo de Inscripcion Especial de 60 dias que activa un evento calificador de cambio de ingreso; y tercero, como usar estrategias legales de reduccion de ingresos, como maximizar las contribuciones a la HSA ($4,400 individual / $8,750 familia en 2026), contribuciones a IRA tradicional, y la deduccion de seguro de salud para trabajadores independientes mediante el Formulario 7206 del IRS, que reducen su MAGI y pueden llevar sus ingresos por debajo del precipicio."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Calculate your revised 2026 MAGI projection immediately",
+        "es": "Calcule de inmediato su proyeccion MAGI 2026 revisada"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov and update your projected household income for 2026 as soon as your income changes. The ACA Marketplace uses projected annual Modified Adjusted Gross Income (MAGI), not year-to-date income. If you received a bonus, promotion, or income spike that will push your full-year income over the 400% FPL threshold ($63,840 single, $132,000 family of 4 in 2026), update immediately to stop further advance credit payments.",
+        "es": "Inicie sesion en healthcare.gov y actualice su ingreso anual proyectado del hogar para 2026 tan pronto como cambie su ingreso. El Mercado ACA usa el Ingreso Bruto Ajustado Modificado (MAGI) anual proyectado, no el ingreso acumulado. Si recibio una bonificacion, ascenso o aumento de ingreso que llevara su ingreso anual completo por encima del umbral del 400% FPL ($63,840 individual, $132,000 familia de 4 en 2026), actualice de inmediato para detener mas pagos de credito anticipado."
+      }
+    },
+    {
+      "name": {
+        "en": "Check whether legal MAGI-reduction moves can pull you back under the cliff",
+        "es": "Verifique si movimientos legales de reduccion de MAGI pueden llevarlo de regreso bajo el precipicio"
+      },
+      "text": {
+        "en": "Several IRS-approved deductions reduce MAGI and can restore subsidy eligibility. Maximizing a 2026 HSA contribution ($4,400 self-only / $8,750 family, per IRS Rev. Proc. 2025-19) requires enrollment in an HSA-qualified High Deductible Health Plan (HDHP). Contributing to a traditional IRA reduces MAGI dollar for dollar for those within AGI phaseout limits. Self-employed individuals can deduct 100% of health insurance premiums paid via IRS Form 7206, further reducing MAGI. Calculate the gap between your projected MAGI and the 400% FPL ceiling before assuming you must go over.",
+        "es": "Varias deducciones aprobadas por el IRS reducen el MAGI y pueden restaurar la elegibilidad para subsidios. Maximizar una contribucion a la HSA de 2026 ($4,400 individual / $8,750 familia, segun IRS Rev. Proc. 2025-19) requiere inscripcion en un Plan de Salud con Deducible Alto (HDHP) calificado para HSA. Contribuir a un IRA tradicional reduce el MAGI dolar por dolar para quienes esten dentro de los limites de eliminacion gradual. Los trabajadores independientes pueden deducir el 100% de las primas de seguro de salud pagadas mediante el Formulario 7206 del IRS."
+      }
+    },
+    {
+      "name": {
+        "en": "Report the income change on healthcare.gov to trigger your 60-day SEP",
+        "es": "Reporte el cambio de ingreso en healthcare.gov para activar su SEP de 60 dias"
+      },
+      "text": {
+        "en": "Report your income change as a qualifying life event on healthcare.gov within 30 days of the income change. This stops advance premium tax credits from accumulating further, and opens a 60-day Special Enrollment Period to compare and switch plans. If you are not on healthcare.gov (you have a state-based Exchange), go to your state marketplace portal. Stopping the advance credits immediately limits your repayment exposure on IRS Form 8962.",
+        "es": "Reporte su cambio de ingreso como evento calificador de vida en healthcare.gov dentro de los 30 dias posteriores al cambio de ingreso. Esto detiene la acumulacion de creditos fiscales anticipados y abre un Periodo de Inscripcion Especial de 60 dias para comparar y cambiar planes. Si no esta en healthcare.gov (tiene un Mercado estatal), vaya al portal del mercado de su estado."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare your plan options during the 60-day SEP window",
+        "es": "Compare sus opciones de plan durante la ventana SEP de 60 dias"
+      },
+      "text": {
+        "en": "During the 60-day Marketplace SEP, compare Bronze, Silver, Gold, and Catastrophic plans at full unsubsidized price. Catastrophic plans (available to adults under 30 or those with a hardship exemption) have the lowest premiums but a deductible equal to the 2026 ACA out-of-pocket maximum of $10,600 individual. Bronze plans typically cost $150 to $450 per month without subsidies but have lower out-of-pocket costs than Catastrophic plans. If your employer or a spouse's employer offers a Special Enrollment Period for a qualifying event, joining that plan within 30 days is often cheaper than a full-price Marketplace plan.",
+        "es": "Durante el SEP del Mercado de 60 dias, compare planes Bronze, Silver, Gold y Catastroficos a precio completo sin subsidios. Los planes Catastroficos (disponibles para adultos menores de 30 anos o con exencion por dificultades) tienen las primas mas bajas pero un deducible igual al maximo de desembolso del ACA 2026 de $10,600 individual. Los planes Bronze tipicamente cuestan $150 a $450 al mes sin subsidios."
+      }
+    },
+    {
+      "name": {
+        "en": "Enroll in an HSA-eligible HDHP if you choose a high-deductible plan",
+        "es": "Inscribase en un HDHP elegible para HSA si elige un plan de deducible alto"
+      },
+      "text": {
+        "en": "High earners who cross the 400% FPL cliff often benefit from pairing an HSA-eligible High Deductible Health Plan (HDHP) with a Health Savings Account. The 2026 HDHP minimum deductible is $1,700 self-only / $3,400 family (IRS Rev. Proc. 2025-19). HSA contributions of up to $4,400 (self) or $8,750 (family) reduce your 2026 taxable income and future MAGI if the account is used for qualified medical expenses. HSA funds roll over indefinitely. Open an HSA at any bank or credit union that offers them and contribute the 2026 maximum before December 31.",
+        "es": "Los altos ingresos que cruzan el precipicio del 400% FPL a menudo se benefician de combinar un Plan de Salud con Deducible Alto (HDHP) elegible para HSA con una Cuenta de Ahorros para Salud. El deducible minimo del HDHP 2026 es $1,700 individual / $3,400 familiar (IRS Rev. Proc. 2025-19). Las contribuciones a la HSA de hasta $4,400 (individual) o $8,750 (familia) reducen su ingreso imponible de 2026 y el MAGI futuro."
+      }
+    },
+    {
+      "name": {
+        "en": "File IRS Form 8962 accurately at tax time to reconcile any overpaid credits",
+        "es": "Presente el Formulario 8962 del IRS con precision en la declaracion de impuestos para reconciliar creditos sobrepagados"
+      },
+      "text": {
+        "en": "At tax time, file IRS Form 8962 (Premium Tax Credit) to reconcile the advance credits you received against what you actually qualified for based on your final 2026 income. If your actual MAGI exceeded 400% FPL, you must repay ALL advance credits received for months when you were over the limit. There is no longer an ARPA-era repayment cap for 2026 tax returns. Calculate your repayment liability early using your 1095-A (sent by the Marketplace by January 31, 2027) to avoid underpayment penalties.",
+        "es": "En la declaracion de impuestos, presente el Formulario 8962 del IRS (Credito Fiscal de Prima) para reconciliar los creditos anticipados recibidos con lo que realmente califico segun su ingreso final de 2026. Si su MAGI real supero el 400% FPL, debe reembolsar TODOS los creditos anticipados recibidos por los meses en que supero el limite. Calcule su obligacion de reembolso con anticipacion usando su 1095-A (enviado por el Mercado antes del 31 de enero de 2027)."
+      }
+    },
+    {
+      "name": {
+        "en": "Plan ahead for 2027 Open Enrollment to avoid the cliff entirely",
+        "es": "Planifique con anticipacion la Inscripcion Abierta 2027 para evitar el precipicio completamente"
+      },
+      "text": {
+        "en": "The 2027 ACA Open Enrollment Period runs November 1 through January 15, 2027. If your income will remain above 400% FPL in 2027, enroll in an unsubsidized plan from the start, or maximize MAGI-reducing strategies before enrollment. For 2027 coverage, check ACA income limits at healthcare.gov in October 2026 when new plan-year premiums are announced. Consider a standalone dental and vision plan alongside an HDHP to contain total benefit costs above the subsidy cliff.",
+        "es": "El Periodo de Inscripcion Abierta del ACA 2027 corre del 1 de noviembre al 15 de enero de 2027. Si su ingreso permanecera por encima del 400% FPL en 2027, inscribase en un plan sin subsidio desde el principio, o maximice estrategias de reduccion de MAGI antes de la inscripcion. Para la cobertura de 2027, revise los limites de ingreso ACA en healthcare.gov en octubre de 2026 cuando se anuncien las nuevas primas del ano del plan."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opcion", "Costo tipico", "Mejor para", "Fecha limite"]
+    },
+    "rows": [
+      {
+        "en": ["ACA Marketplace Bronze (unsubsidized)", "$150 to $450/mo individual (2026, no credits)", "Healthy, high-income earner who wants lower premium + OOP risk", "60-day SEP from income-change event"],
+        "es": ["Mercado ACA Bronze (sin subsidio)", "$150 a $450/mes individual (2026, sin creditos)", "Persona sana de altos ingresos que quiere prima baja + riesgo de desembolso", "SEP de 60 dias desde evento de cambio de ingreso"]
+      },
+      {
+        "en": ["ACA Catastrophic plan", "$100 to $300/mo; deductible = $10,600 OOP max (2026)", "Adults under 30 OR hardship exemption; want lowest possible premium", "60-day SEP from income-change event; or OEP"],
+        "es": ["Plan Catastrofico ACA", "$100 a $300/mes; deducible = $10,600 maximo de desembolso (2026)", "Adultos menores de 30 anos O exencion por dificultad; quieren prima minima", "SEP de 60 dias desde evento de cambio de ingreso; o Inscripcion Abierta"]
+      },
+      {
+        "en": ["HSA-qualified HDHP (Marketplace or employer)", "$200 to $600/mo; min deductible $1,700 single (2026)", "High earner who wants to offset premium cost with HSA tax savings ($4,400/$8,750 in 2026)", "60-day SEP or employer 30-day SEP"],
+        "es": ["HDHP calificado para HSA (Mercado o empleador)", "$200 a $600/mes; deducible minimo $1,700 individual (2026)", "Alto ingreso que quiere compensar costo de prima con ahorros fiscales HSA ($4,400/$8,750 en 2026)", "SEP de 60 dias o SEP de empleador de 30 dias"]
+      },
+      {
+        "en": ["Spouse's or new employer's group plan", "Varies; employee share often $100 to $350/mo", "New job or spouse with employer coverage available", "30 days from qualifying event"],
+        "es": ["Plan grupal del conyuge o nuevo empleador", "Varia; participacion del empleado a menudo $100 a $350/mes", "Nuevo empleo o conyuge con cobertura del empleador disponible", "30 dias desde evento calificador"]
+      },
+      {
+        "en": ["Medicaid (if income drops back to 138% FPL threshold)", "Free or near-free", "Income falls below 138% FPL ($22,025 single, $45,540 family of 4 in 2026) in expansion states", "Year-round enrollment"],
+        "es": ["Medicaid (si el ingreso cae al umbral del 138% FPL)", "Gratis o casi gratis", "Ingreso cae por debajo del 138% FPL ($22,025 individual, $45,540 familia de 4 en 2026) en estados de expansion", "Inscripcion todo el ano"]
+      }
+    ],
+    "footnote": {
+      "en": "2026 ACA individual out-of-pocket maximum is $10,600; family is $21,200 (HHS NBPP June 2025 revision). Catastrophic plan deductible equals the OOP max. HDHP minimum deductible is $1,700 self-only / $3,400 family per IRS Rev. Proc. 2025-19. Marketplace unsubsidized premium estimates are national averages and vary by age, tobacco use, and ZIP code.",
+      "es": "El maximo de desembolso individual del ACA 2026 es $10,600; familiar es $21,200 (revision NBPP de HHS de junio 2025). El deducible del plan catastrofico es igual al maximo de desembolso. El deducible minimo del HDHP es $1,700 individual / $3,400 familiar segun IRS Rev. Proc. 2025-19."
+    },
+    "source": "healthcare.gov, IRS Rev. Proc. 2025-19, HHS ASPE 2026 Poverty Guidelines, CMS NBPP 2026"
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "The most expensive mistakes people make when income crosses the 400% FPL cliff in 2026:",
+      "es": "Los errores mas costosos que la gente comete cuando los ingresos superan el precipicio del 400% FPL en 2026:"
+    },
+    "items": [
+      {
+        "en": "Not reporting the income change promptly on healthcare.gov. Advance premium tax credits keep paying even after you cross the cliff, accumulating a full-repayment liability on Form 8962. Every month you delay costs more.",
+        "es": "No reportar el cambio de ingreso de inmediato en healthcare.gov. Los creditos fiscales anticipados siguen pagando incluso despues de cruzar el precipicio, acumulando una obligacion de reembolso total en el Formulario 8962. Cada mes que retrase cuesta mas."
+      },
+      {
+        "en": "Forgetting that enhanced PTCs expired January 1, 2026. Many enrollees assume the above-400%-FPL subsidy protection from 2021-2025 still applies. It does not for 2026 coverage years. The full cliff is back.",
+        "es": "Olvidar que los PTCs mejorados expiraron el 1 de enero de 2026. Muchos inscritos asumen que la proteccion de subsidio por encima del 400% FPL de 2021-2025 todavia aplica. No aplica para los anos de cobertura 2026."
+      },
+      {
+        "en": "Using last year's income instead of projected 2026 income. The Marketplace calculates eligibility on projected annual income. A year-end bonus that pushes final income over the cliff triggers repayment even if month-by-month income looked fine.",
+        "es": "Usar los ingresos del ano pasado en lugar del ingreso proyectado de 2026. El Mercado calcula la elegibilidad en el ingreso anual proyectado. Una bonificacion de fin de ano que empuja el ingreso final sobre el precipicio activa el reembolso aunque mes a mes el ingreso pareciera bien."
+      },
+      {
+        "en": "Missing MAGI-reduction opportunities. HSA contributions, traditional IRA contributions, and the self-employed health insurance deduction via IRS Form 7206 can pull MAGI below 400% FPL and restore full subsidy eligibility. Most people skip this analysis.",
+        "es": "Perder oportunidades de reduccion de MAGI. Las contribuciones a la HSA, las contribuciones al IRA tradicional y la deduccion de seguro de salud para trabajadores independientes mediante el Formulario 7206 del IRS pueden llevar el MAGI por debajo del 400% FPL y restaurar la elegibilidad completa para subsidios."
+      },
+      {
+        "en": "Assuming COBRA is the only option after losing employer coverage mid-year when income changes. A Marketplace SEP is often available simultaneously, and at high incomes COBRA (102% of full premium, typically $500 to $2,000/mo for an individual) may cost more than an unsubsidized Bronze plan.",
+        "es": "Asumir que COBRA es la unica opcion despues de perder cobertura del empleador a mitad de ano cuando los ingresos cambian. Un SEP del Mercado a menudo esta disponible simultaneamente, y a altos ingresos COBRA (102% de la prima completa, tipicamente $500 a $2,000/mes individual) puede costar mas que un plan Bronze sin subsidio."
+      },
+      {
+        "en": "Not checking whether a Catastrophic plan hardship exemption applies. Adults 30 and over who have experienced a qualifying hardship (affordability certificate, natural disaster, domestic violence, eviction) can access Catastrophic plan pricing, which is often the lowest available premium above the cliff.",
+        "es": "No verificar si aplica una exencion por dificultad para plan catastrofico. Los adultos de 30 anos o mas que han experimentado una dificultad calificada (certificado de asequibilidad, desastre natural, violencia domestica, desahucio) pueden acceder a precios de planes catastroficos, que a menudo son la prima mas baja disponible sobre el precipicio."
+      }
+    ]
+  },
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "2026 ACA Subsidy Eligibility Income Thresholds by Household Size (48 contiguous states + DC)",
+      "headers": ["Household size", "138% FPL (Medicaid expansion line)", "400% FPL (Subsidy cliff 2026)", "Notes"],
+      "rows": [
+        ["1", "$22,025", "$63,840", "Above $63,840: no PTC; full Marketplace premium"],
+        ["2", "$29,820", "$86,400", "Above $86,400: no PTC for a household of 2"],
+        ["3", "$37,615", "$108,960", "Above $108,960: no PTC for a household of 3"],
+        ["4", "$45,540", "$132,000", "Above $132,000: no PTC for a household of 4"],
+        ["5", "$53,335", "$154,560", "Above $154,560: no PTC for a household of 5"],
+        ["6", "$61,130", "$177,120", "Above $177,120: no PTC for a household of 6"],
+        ["7", "$68,925", "$199,680", "Above $199,680: no PTC for a household of 7"],
+        ["8", "$76,720", "$222,240", "Above $222,240: no PTC for a household of 8"],
+        ["Each additional person", "+ $7,795", "+ $22,560", "Add to previous row for larger households"]
+      ],
+      "footnote": "Alaska and Hawaii have higher FPL thresholds. The 400% FPL subsidy cliff returned for 2026 after enhanced PTCs (American Rescue Plan / Inflation Reduction Act) expired January 1, 2026. Income is measured as MAGI per IRS definition for ACA purposes.",
+      "source": "HHS ASPE 2026 Poverty Guidelines; CMS ACA premium tax credit thresholds"
+    },
+    "es": {
+      "caption": "Umbrales de ingreso de elegibilidad para subsidios ACA 2026 por tamano del hogar (48 estados contiguos + DC)",
+      "headers": ["Tamano del hogar", "138% FPL (linea de expansion Medicaid)", "400% FPL (precipicio de subsidio 2026)", "Notas"],
+      "rows": [
+        ["1", "$22,025", "$63,840", "Por encima de $63,840: sin PTC; prima completa del Mercado"],
+        ["2", "$29,820", "$86,400", "Por encima de $86,400: sin PTC para un hogar de 2"],
+        ["3", "$37,615", "$108,960", "Por encima de $108,960: sin PTC para un hogar de 3"],
+        ["4", "$45,540", "$132,000", "Por encima de $132,000: sin PTC para un hogar de 4"],
+        ["5", "$53,335", "$154,560", "Por encima de $154,560: sin PTC para un hogar de 5"],
+        ["6", "$61,130", "$177,120", "Por encima de $177,120: sin PTC para un hogar de 6"],
+        ["7", "$68,925", "$199,680", "Por encima de $199,680: sin PTC para un hogar de 7"],
+        ["8", "$76,720", "$222,240", "Por encima de $222,240: sin PTC para un hogar de 8"],
+        ["Cada persona adicional", "+ $7,795", "+ $22,560", "Agregar a la fila anterior para hogares mas grandes"]
+      ],
+      "footnote": "Alaska y Hawaii tienen umbrales FPL mas altos. El precipicio de subsidio del 400% FPL regreso en 2026 despues de que los PTCs mejorados (Plan de Rescate Americano / Ley de Reduccion de la Inflacion) expiraron el 1 de enero de 2026.",
+      "source": "HHS ASPE 2026 Poverty Guidelines; umbrales de credito fiscal de prima del ACA de CMS"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "Proof of income change: pay stub showing new salary, signed employment contract, self-employment income statement, or 1099 for the current year showing projected annual income",
+      "Social Security numbers for all household members applying for coverage",
+      "Current address (ZIP code determines plan availability on healthcare.gov)",
+      "Previous year's tax return (IRS Form 1040) to verify prior-year baseline income and compare to 2026 projection",
+      "1095-A (Health Insurance Marketplace Statement) from your current plan year, required to file IRS Form 8962 and reconcile advance credits",
+      "Documentation of any MAGI-reducing contributions: HSA contribution records, IRA contribution confirmation, or self-employed health insurance premium receipts for IRS Form 7206",
+      "Employer documentation if joining a spouse's or new employer's plan: summary plan description and 30-day SEP qualifying event notice"
+    ],
+    "es": [
+      "Prueba del cambio de ingreso: recibo de pago con nuevo salario, contrato de empleo firmado, declaracion de ingresos por cuenta propia, o 1099 del ano actual con ingreso anual proyectado",
+      "Numeros de Seguro Social de todos los miembros del hogar que solicitan cobertura",
+      "Direccion actual (el codigo postal determina la disponibilidad del plan en healthcare.gov)",
+      "Declaracion de impuestos del ano anterior (Formulario 1040 del IRS) para verificar el ingreso base del ano anterior y comparar con la proyeccion de 2026",
+      "1095-A (Declaracion del Mercado de Seguros de Salud) del ano del plan actual, requerido para presentar el Formulario 8962 del IRS y reconciliar creditos anticipados",
+      "Documentacion de contribuciones reductoras de MAGI: registros de contribucion a HSA, confirmacion de contribucion a IRA, o recibos de primas de seguro de salud para trabajadores independientes para el Formulario 7206 del IRS",
+      "Documentacion del empleador si se une al plan de un conyuge o nuevo empleador: descripcion del plan resumido y aviso de evento calificador SEP de 30 dias"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Income projection too low: enrollee projects income under 400% FPL to claim credits, but actual final income (including bonuses, freelance income, capital gains) exceeds the cliff, triggering mandatory full repayment on Form 8962",
+      "Missing the 60-day SEP window after an income-change qualifying event, leaving enrollee on an unsubsidized plan at full premium until the next Open Enrollment in November 2026",
+      "Failing to report income change on healthcare.gov, causing advance credits to continue accumulating after crossing the cliff",
+      "Not documenting the qualifying income-change event with supporting evidence (pay stub, employer letter, or tax statement), which can cause the Marketplace to reject the SEP application",
+      "Applying for a Catastrophic plan without having a valid hardship exemption certificate or being under age 30, causing plan enrollment denial"
+    ],
+    "es": [
+      "Proyeccion de ingreso demasiado baja: el inscrito proyecta ingreso por debajo del 400% FPL para reclamar creditos, pero el ingreso final real (incluyendo bonificaciones, ingreso de trabajo independiente, ganancias de capital) supera el precipicio, lo que activa el reembolso completo obligatorio en el Formulario 8962",
+      "Perder la ventana SEP de 60 dias despues de un evento calificador de cambio de ingreso, dejando al inscrito en un plan sin subsidio a prima completa hasta la siguiente Inscripcion Abierta en noviembre de 2026",
+      "No reportar el cambio de ingreso en healthcare.gov, lo que provoca que los creditos anticipados sigan acumulandose despues de cruzar el precipicio",
+      "No documentar el evento calificador de cambio de ingreso con evidencia de apoyo (talonario de pago, carta del empleador o declaracion de impuestos), lo que puede causar que el Mercado rechace la solicitud SEP",
+      "Solicitar un plan catastrofico sin tener un certificado de exencion por dificultad valido o ser menor de 30 anos, lo que provoca el rechazo de la inscripcion al plan"
+    ]
+  },
+
+  "comparisonNarrative": {
+    "heading": {
+      "en": "Full-Price Bronze vs HDHP vs COBRA vs Employer Plan: Which Should You Choose Above the Cliff?",
+      "es": "Bronze a Precio Completo vs HDHP vs COBRA vs Plan del Empleador: Cual Elegir por Encima del Precipicio?"
+    },
+    "body": {
+      "en": "Once your 2026 income exceeds 400% FPL, the Marketplace stops being the automatic best deal. Four pathways remain, each with a different cost-versus-flexibility trade-off. A full-price Marketplace Bronze plan typically runs $150 to $450 per month for an individual depending on age and region, with a deductible of $4,000 to $7,000 before comprehensive coverage kicks in. An HSA-qualified HDHP (either on the Marketplace or through an employer) pairs a higher deductible with substantial HSA tax savings: the 2026 contribution limit is $4,400 self-only or $8,750 for family, fully deductible from income and reducing your MAGI for future years. COBRA costs 102% of the full premium, typically $500 to $2,000 per month for an individual, and is almost never the cheapest option above the cliff because you are paying both employee and employer share plus a 2% admin fee. A spouse's employer plan or a new employer's group plan, if available, is often the winner: employer contributions reduce the actual premium cost to $100 to $350 per month for the employee share, and the employer's 30-day SEP window runs simultaneously with the Marketplace 60-day SEP. The decision tree for 2026: join employer plan first if available; HDHP second if you can max the HSA; Bronze Marketplace third if no employer plan; COBRA only if ongoing treatment with a specific out-of-network provider makes plan continuity worth the premium.",
+      "es": "Una vez que sus ingresos de 2026 superen el 400% FPL, el Mercado deja de ser automaticamente la mejor opcion. Cuatro caminos permanecen, cada uno con una relacion costo-flexibilidad diferente. Un plan Bronze del Mercado a precio completo tipicamente cuesta $150 a $450 al mes para un individuo segun edad y region, con un deducible de $4,000 a $7,000 antes de que la cobertura completa entre en vigor. Un HDHP calificado para HSA (ya sea en el Mercado o a traves de un empleador) combina un deducible mas alto con ahorros fiscales sustanciales de la HSA: el limite de contribucion 2026 es $4,400 individual o $8,750 familiar, totalmente deducible del ingreso. COBRA cuesta el 102% de la prima completa, tipicamente $500 a $2,000 al mes para un individuo, y casi nunca es la opcion mas economica por encima del precipicio. El plan de un conyuge o nuevo empleador, si esta disponible, a menudo es el ganador: las contribuciones del empleador reducen el costo real de la prima a $100 a $350 al mes para la participacion del empleado."
+    }
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "How the 2026 ACA Subsidy Cliff Works: The Hard Return of 400% FPL",
+        "es": "Como Funciona el Precipicio de Subsidio ACA 2026: El Regreso del 400% FPL"
+      },
+      "paragraphs": [
+        {
+          "en": "From 2021 through 2025, the American Rescue Plan Act and the Inflation Reduction Act eliminated the hard 400% FPL income ceiling for ACA Premium Tax Credits, allowing households above that threshold to receive some subsidy as long as premiums would have exceeded 8.5% of income. Those enhanced provisions expired on January 1, 2026, and Congress did not extend them. The result is a sharp funding cliff: a household of one earning $63,840 in 2026 MAGI qualifies for meaningful premium tax credits; a household of one earning $63,841 qualifies for nothing. The same pattern applies at every household size, creating a powerful incentive to actively manage projected income and use MAGI-reducing strategies during the year.",
+          "es": "Desde 2021 hasta 2025, la Ley del Plan de Rescate Americano y la Ley de Reduccion de la Inflacion eliminaron el limite estricto del 400% FPL para los Creditos Fiscales de Prima del ACA, permitiendo que los hogares por encima de ese umbral recibieran algun subsidio siempre que las primas hubieran superado el 8.5% del ingreso. Esas disposiciones mejoradas expiraron el 1 de enero de 2026 y el Congreso no las extendio. El resultado es un precipicio de financiamiento agudo: un hogar de uno que gana $63,840 en MAGI 2026 califica para creditos fiscales de prima significativos; un hogar de uno que gana $63,841 no califica para nada."
+        },
+        {
+          "en": "For households whose income fluctuates during the year, the cliff creates planning complexity. The Marketplace calculates eligibility on projected annual MAGI, not month-by-month income. A consultant who earns $55,000 in the first six months but lands a $20,000 project in August has a full-year MAGI of $75,000, which is over the 400% FPL line for a household of one. Every month of advance credits received at the $55,000 projection must be repaid when the actual $75,000 income is reported on the annual tax return. The IRS collects this repayment via Form 8962, which reconciles the advance credits shown on Form 1095-A against actual MAGI. There is no cap on repayment for 2026 tax years; the full overpayment is owed.",
+          "es": "Para los hogares cuyos ingresos fluctuan durante el ano, el precipicio crea complejidad de planificacion. El Mercado calcula la elegibilidad en el MAGI anual proyectado, no mes a mes. Un consultor que gana $55,000 en los primeros seis meses pero consigue un proyecto de $20,000 en agosto tiene un MAGI de ano completo de $75,000, que supera la linea del 400% FPL para un hogar de uno. Cada mes de creditos anticipados recibidos a la proyeccion de $55,000 debe ser reembolsado cuando el ingreso real de $75,000 se reporta en la declaracion de impuestos anual."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "MAGI-Reduction Strategies for 2026: How to Stay Below the Cliff",
+        "es": "Estrategias de Reduccion de MAGI para 2026: Como Mantenerse por Debajo del Precipicio"
+      },
+      "paragraphs": [
+        {
+          "en": "Several IRS-sanctioned strategies reduce Modified Adjusted Gross Income (MAGI) for ACA purposes and can restore subsidy eligibility for households near the 400% FPL threshold. Health Savings Account contributions are the most powerful tool for people enrolled in an HSA-eligible HDHP: the 2026 contribution limit is $4,400 for self-only coverage or $8,750 for family coverage (IRS Rev. Proc. 2025-19), and every dollar contributed reduces MAGI dollar for dollar. A family of four with $136,000 in projected income ($4,000 over the $132,000 cliff) can restore full subsidy eligibility simply by contributing $4,000 or more to an HSA before December 31. Traditional IRA contributions also reduce MAGI, but only if the taxpayer and spouse are not covered by an employer retirement plan or are within the AGI phaseout range for deductible contributions.",
+          "es": "Varias estrategias sancionadas por el IRS reducen el Ingreso Bruto Ajustado Modificado (MAGI) para propositos del ACA y pueden restaurar la elegibilidad para subsidios en hogares cercanos al umbral del 400% FPL. Las contribuciones a la Cuenta de Ahorros para Salud son la herramienta mas poderosa para personas inscritas en un HDHP elegible para HSA: el limite de contribucion 2026 es $4,400 para cobertura individual o $8,750 para cobertura familiar (IRS Rev. Proc. 2025-19), y cada dolar contribuido reduce el MAGI dolar por dolar. Una familia de cuatro con $136,000 en ingreso proyectado ($4,000 sobre el precipicio de $132,000) puede restaurar la elegibilidad completa para subsidios simplemente contribuyendo $4,000 o mas a una HSA antes del 31 de diciembre."
+        },
+        {
+          "en": "Self-employed individuals and small business owners have an additional powerful MAGI-reduction tool: the self-employed health insurance premium deduction under IRS Code Section 162(l), claimed on Schedule 1 via Form 7206. This deduction covers 100% of health insurance premiums paid for the taxpayer, spouse, and dependents, provided the business had net profit for the year. A self-employed individual paying $500 per month for an unsubsidized Bronze plan generates a $6,000 annual deduction that reduces MAGI by $6,000, potentially keeping projected income below the 400% FPL ceiling. Freelancers, 1099 contractors, and sole proprietors who cross the cliff mid-year should calculate whether the premium deduction combined with retirement contributions (SEP-IRA up to 25% of net self-employment income) can restore subsidy eligibility for the full year.",
+          "es": "Los trabajadores independientes y propietarios de pequenos negocios tienen una herramienta adicional poderosa de reduccion de MAGI: la deduccion de prima de seguro de salud para trabajadores independientes bajo la Seccion 162(l) del Codigo del IRS, reclamada en el Anexo 1 mediante el Formulario 7206. Esta deduccion cubre el 100% de las primas de seguro de salud pagadas por el contribuyente, conyuge y dependientes, siempre que el negocio tuviera ganancias netas durante el ano. Un trabajador independiente que paga $500 al mes por un plan Bronze sin subsidio genera una deduccion anual de $6,000 que reduce el MAGI en $6,000."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Form 8962 and the 1095-A: How ACA Repayment Works at Tax Time",
+        "es": "Formulario 8962 y el 1095-A: Como Funciona el Reembolso ACA en la Declaracion de Impuestos"
+      },
+      "paragraphs": [
+        {
+          "en": "Every Marketplace enrollee who received advance Premium Tax Credits must file IRS Form 8962 with their annual tax return. The Marketplace sends Form 1095-A by January 31 of the following year (so January 31, 2027 for 2026 coverage), which shows the monthly premium for the second-lowest-cost Silver plan in your area, your actual plan premium, and the advance credits paid on your behalf. Form 8962 uses this data plus your actual final MAGI to calculate whether you received too much, too little, or the exact right amount of advance credit. If your actual 2026 MAGI exceeded 400% FPL even by one dollar, the entire year's advance credits must be repaid, because no dollar of credit was legally owed above the cliff threshold.",
+          "es": "Cada inscrito del Mercado que recibio Creditos Fiscales de Prima anticipados debe presentar el Formulario 8962 del IRS con su declaracion de impuestos anual. El Mercado envia el Formulario 1095-A antes del 31 de enero del ano siguiente (es decir, el 31 de enero de 2027 para la cobertura de 2026), que muestra la prima mensual del plan Silver de segundo costo mas bajo en su area, su prima de plan real y los creditos anticipados pagados en su nombre."
+        },
+        {
+          "en": "Minimizing Form 8962 repayment risk requires mid-year income monitoring. If a self-employed person or employee receives unexpected income in October, November, or December of 2026 that pushes annual MAGI over the 400% FPL threshold, the repayment for those few months may be manageable. However, if high income was present for most of 2026 without a timely healthcare.gov update to stop advance credits, the full-year repayment can reach $3,000 to $20,000 depending on household size and plan premium. The safest practice: log in to healthcare.gov quarterly to confirm income projections are accurate, and update immediately after any income event (bonus, large contract, stock-option exercise, or capital gains realization) that might affect 2026 MAGI.",
+          "es": "Minimizar el riesgo de reembolso del Formulario 8962 requiere monitoreo de ingresos a mitad de ano. Si una persona independiente o empleado recibe ingresos inesperados en octubre, noviembre o diciembre de 2026 que llevan el MAGI anual sobre el umbral del 400% FPL, el reembolso por esos pocos meses puede ser manejable. Sin embargo, si los ingresos altos estuvieron presentes durante la mayor parte de 2026 sin una actualizacion oportuna de healthcare.gov para detener los creditos anticipados, el reembolso de ano completo puede llegar a $3,000 a $20,000 segun el tamano del hogar y la prima del plan."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the 400% FPL income limit for ACA subsidies in 2026?",
+        "answer": "In 2026, the ACA premium tax credit cutoff is 400% of the Federal Poverty Level. That is $63,840 for a household of one, $86,400 for a household of two, $108,960 for a household of three, and $132,000 for a household of four. Alaska and Hawaii have higher thresholds. One dollar above these limits eliminates all premium tax credit eligibility for that tax year because the enhanced PTC provisions that removed the cliff from 2021 through 2025 expired on January 1, 2026. These thresholds apply to your 2026 Modified Adjusted Gross Income (MAGI), not your gross salary."
+      },
+      {
+        "question": "Do I have to repay all my 2026 premium tax credits if I go over 400% FPL?",
+        "answer": "Yes, for 2026. The repayment cap that applied during 2021-2025 under the American Rescue Plan is gone. If your actual 2026 MAGI exceeds 400% FPL, you must repay all advance premium tax credits received during the months you were over the limit, with no cap. The IRS collects this through Form 8962, which you file with your annual tax return. Your Form 1095-A (sent by the Marketplace by January 31, 2027) shows the advance credits you received each month. Repayment is treated as additional income tax owed, payable by the April 15, 2027 filing deadline."
+      },
+      {
+        "question": "What is my 60-day Special Enrollment Period if my income changes mid-year?",
+        "answer": "A significant income change is a qualifying life event under IRS and CMS rules. If your income crosses the 400% FPL threshold during 2026, you can report it as a qualifying event on healthcare.gov, which opens a 60-day Special Enrollment Period to compare and switch Marketplace plans. The 60-day window starts from the date of the income change. For example, a bonus paid on August 1, 2026 that pushes your MAGI over the cliff opens a SEP from August 1 through September 29, 2026. During this window, you can switch to an unsubsidized plan without needing to wait for November Open Enrollment."
+      },
+      {
+        "question": "Can I reduce my MAGI to stay under the 400% FPL limit?",
+        "answer": "Yes. Several strategies reduce MAGI for ACA purposes. Maximizing HSA contributions (up to $4,400 self-only or $8,750 family in 2026, per IRS Rev. Proc. 2025-19) reduces MAGI dollar for dollar, but requires enrollment in an HSA-eligible HDHP. Traditional IRA contributions are MAGI-reducing if you are within the phaseout range. Self-employed individuals can deduct 100% of health insurance premiums via IRS Form 7206. Contributing to a SEP-IRA (up to 25% of net self-employment income) also reduces MAGI. Calculate your gap to the 400% FPL ceiling before assuming you must pay full premium. A $5,000 gap can often be closed with HSA and IRA contributions alone."
+      },
+      {
+        "question": "What ACA plan options do I have once I am over 400% FPL with no subsidy?",
+        "answer": "Four realistic options exist when you exceed 400% FPL in 2026. First, a full-price Marketplace Bronze plan, typically $150 to $450/mo for an individual, with a high deductible but comprehensive network. Second, an HSA-qualified HDHP paired with maximum HSA contributions ($4,400/$8,750 in 2026), which offsets premium cost with significant tax savings. Third, an employer group plan through a spouse or new job, where employer contributions typically lower your share to $100 to $350/mo. Fourth, a Catastrophic plan if you are under 30 or qualify for a hardship exemption, with the lowest monthly premium but a deductible equal to the 2026 ACA OOP maximum of $10,600. COBRA is technically available but costs 102% of full premium and is rarely the cheapest option."
+      },
+      {
+        "question": "How do I document an income-change qualifying event for a Marketplace SEP?",
+        "answer": "Log in to healthcare.gov and report the change using the 'Report a life change' function. You will need to provide documentation of the income change, which typically includes a recent pay stub showing the new salary, a signed employment contract or promotion letter, a 1099 or profit-and-loss statement if self-employed, or documentation of a one-time event such as a stock-option exercise or capital-gain realization. The Marketplace may request the documentation electronically within a 30-day upload window. Uploading promptly avoids plan enrollment delays or SEP denials due to missing documentation."
+      },
+      {
+        "question": "Does the ACA subsidy cliff apply differently for self-employed people?",
+        "answer": "The same 400% FPL MAGI threshold applies regardless of employment type. However, self-employed individuals have more MAGI-reduction tools available. The self-employed health insurance deduction (IRS Form 7206) lets you deduct 100% of health insurance premiums from MAGI, which can meaningfully push income below the cliff. SEP-IRA contributions (up to 25% of net self-employment income or $70,000 in 2026, whichever is less) also reduce MAGI. A freelancer projecting $72,000 in net income can reduce MAGI to below $63,840 by combining a $6,000 health insurance deduction with HSA contributions, potentially restoring full subsidy eligibility for 2026."
+      },
+      {
+        "question": "What happens at the 2027 Open Enrollment if I am still above 400% FPL?",
+        "answer": "The 2027 ACA Open Enrollment Period runs November 1, 2026 through January 15, 2027. If your projected 2027 MAGI will remain above the 400% FPL threshold (which depends on whether Congress extends enhanced PTCs before 2027), enroll without advance credits to avoid any repayment risk. Healthcare.gov will show unsubsidized plan options during the enrollment window. Visit healthcare.gov beginning November 1, 2026 to compare 2027 plan premiums. Choosing an HSA-qualified HDHP at 2027 enrollment and maximizing HSA contributions early in 2027 is the highest-leverage first step for high earners planning to stay above the cliff."
+      }
+    ],
+    "es": [
+      {
+        "question": "Cual es el limite de ingreso del 400% FPL para subsidios ACA en 2026?",
+        "answer": "En 2026, el limite del credito fiscal de prima del ACA es el 400% del Nivel Federal de Pobreza. Eso es $63,840 para un hogar de uno, $86,400 para un hogar de dos, $108,960 para un hogar de tres, y $132,000 para un hogar de cuatro. Alaska y Hawaii tienen umbrales mas altos. Un dolar por encima de estos limites elimina toda elegibilidad de credito fiscal de prima para ese ano fiscal porque las disposiciones de PTC mejoradas que eliminaron el precipicio de 2021 a 2025 expiraron el 1 de enero de 2026. Estos umbrales se aplican a su Ingreso Bruto Ajustado Modificado (MAGI) de 2026, no a su salario bruto."
+      },
+      {
+        "question": "Tengo que reembolsar todos mis creditos fiscales de prima de 2026 si supero el 400% FPL?",
+        "answer": "Si, para 2026. El limite de reembolso que aplicaba durante 2021-2025 bajo el Plan de Rescate Americano ha desaparecido. Si su MAGI real de 2026 supera el 400% FPL, debe reembolsar todos los creditos fiscales anticipados recibidos durante los meses en que estuvo sobre el limite, sin tope. El IRS los cobra mediante el Formulario 8962, que presenta con su declaracion de impuestos anual. Su Formulario 1095-A (enviado por el Mercado antes del 31 de enero de 2027) muestra los creditos anticipados que recibio cada mes."
+      },
+      {
+        "question": "Cual es mi Periodo de Inscripcion Especial de 60 dias si mis ingresos cambian a mitad de ano?",
+        "answer": "Un cambio significativo de ingreso es un evento calificador de vida segun las reglas del IRS y CMS. Si sus ingresos cruzan el umbral del 400% FPL durante 2026, puede reportarlo como evento calificador en healthcare.gov, lo que abre un Periodo de Inscripcion Especial de 60 dias para comparar y cambiar planes del Mercado. La ventana de 60 dias comienza desde la fecha del cambio de ingreso. Por ejemplo, una bonificacion pagada el 1 de agosto de 2026 que lleva su MAGI sobre el precipicio abre un SEP del 1 de agosto al 29 de septiembre de 2026."
+      },
+      {
+        "question": "Puedo reducir mi MAGI para mantenerme bajo el limite del 400% FPL?",
+        "answer": "Si. Varias estrategias reducen el MAGI para propositos del ACA. Maximizar las contribuciones a la HSA (hasta $4,400 individual o $8,750 familiar en 2026, segun IRS Rev. Proc. 2025-19) reduce el MAGI dolar por dolar, pero requiere inscripcion en un HDHP elegible para HSA. Las contribuciones al IRA tradicional reducen el MAGI si esta dentro del rango de eliminacion gradual. Los trabajadores independientes pueden deducir el 100% de las primas de seguro de salud mediante el Formulario 7206 del IRS. Una brecha de $5,000 a menudo puede cerrarse solo con contribuciones a la HSA e IRA."
+      },
+      {
+        "question": "Que opciones de plan ACA tengo una vez que supero el 400% FPL sin subsidio?",
+        "answer": "Existen cuatro opciones realistas cuando supera el 400% FPL en 2026. Primero, un plan Bronze del Mercado a precio completo, tipicamente $150 a $450/mes para un individuo, con deducible alto pero red completa. Segundo, un HDHP calificado para HSA combinado con contribuciones maximas a la HSA ($4,400/$8,750 en 2026), que compensa el costo de la prima con ahorros fiscales significativos. Tercero, un plan grupal del empleador a traves de un conyuge o nuevo trabajo. Cuarto, un plan catastrofico si tiene menos de 30 anos o califica para exencion por dificultad, con la prima mensual mas baja pero un deducible igual al maximo de desembolso ACA 2026 de $10,600."
+      },
+      {
+        "question": "Como documento un evento calificador de cambio de ingreso para un SEP del Mercado?",
+        "answer": "Inicie sesion en healthcare.gov y reporte el cambio usando la funcion 'Reportar un cambio de vida'. Debera proporcionar documentacion del cambio de ingreso, que tipicamente incluye un talonario de pago reciente con el nuevo salario, un contrato de empleo firmado o carta de ascenso, un 1099 o estado de ganancias y perdidas si es trabajador independiente, o documentacion de un evento unico como ejercicio de opciones de acciones o realizacion de ganancias de capital. El Mercado puede solicitar la documentacion electronica dentro de una ventana de carga de 30 dias."
+      },
+      {
+        "question": "El precipicio de subsidio ACA aplica de manera diferente para los trabajadores independientes?",
+        "answer": "El mismo umbral de MAGI del 400% FPL aplica independientemente del tipo de empleo. Sin embargo, los trabajadores independientes tienen mas herramientas de reduccion de MAGI disponibles. La deduccion de seguro de salud para trabajadores independientes (Formulario 7206 del IRS) le permite deducir el 100% de las primas de seguro de salud del MAGI, lo que puede llevar significativamente los ingresos por debajo del precipicio. Las contribuciones al SEP-IRA (hasta el 25% del ingreso neto por cuenta propia o $70,000 en 2026) tambien reducen el MAGI."
+      },
+      {
+        "question": "Que sucede en la Inscripcion Abierta 2027 si todavia estoy por encima del 400% FPL?",
+        "answer": "El Periodo de Inscripcion Abierta del ACA 2027 corre del 1 de noviembre de 2026 al 15 de enero de 2027. Si su MAGI proyectado de 2027 permanecera por encima del umbral del 400% FPL, inscribase sin creditos anticipados para evitar cualquier riesgo de reembolso. Healthcare.gov mostrara opciones de planes sin subsidio durante la ventana de inscripcion. Visite healthcare.gov a partir del 1 de noviembre de 2026 para comparar las primas del plan 2027. Elegir un HDHP calificado para HSA en la inscripcion 2027 y maximizar las contribuciones a la HSA a principios de 2027 es el primer paso de mayor impacto para altos ingresos que planean mantenerse por encima del precipicio."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "ACA Income Limits 2026",
+        "es": "Limites de Ingresos ACA 2026"
+      },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Nivel Federal de Pobreza 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Limites de Ingresos Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Check Your Coverage Options",
+        "es": "Verifique Sus Opciones de Cobertura"
+      },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Special Enrollment Period for income changes",
+      "url": "https://www.healthcare.gov/reporting-changes/when-to-report/",
+      "note": {
+        "en": "Official guidance on reporting income changes and triggering a SEP on the ACA Marketplace.",
+        "es": "Guia oficial sobre reportar cambios de ingreso y activar un SEP en el Mercado ACA."
+      }
+    },
+    {
+      "name": "IRS: Premium Tax Credit (Form 8962 instructions)",
+      "url": "https://www.irs.gov/forms-pubs/about-form-8962",
+      "note": {
+        "en": "IRS Form 8962 instructions covering advance credit reconciliation, repayment rules, and the 400% FPL income limit for 2026.",
+        "es": "Instrucciones del Formulario 8962 del IRS sobre reconciliacion de creditos anticipados, reglas de reembolso y el limite de ingreso del 400% FPL para 2026."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Official 2026 Federal Poverty Level thresholds used to compute ACA subsidy eligibility cutoffs at 100%, 138%, and 400% FPL.",
+        "es": "Umbrales oficiales del Nivel Federal de Pobreza 2026 utilizados para calcular los limites de elegibilidad de subsidio ACA al 100%, 138% y 400% FPL."
+      }
+    },
+    {
+      "name": "KFF: ACA Premium Tax Credit Eligibility and Enrollment",
+      "url": "https://www.kff.org/affordable-care-act/issue-brief/the-premium-tax-credit-the-basics/",
+      "note": {
+        "en": "KFF analysis of 2026 ACA subsidy cliff mechanics, enhanced PTC expiration impact, and enrollment implications for households above 400% FPL.",
+        "es": "Analisis de KFF sobre la mecanica del precipicio de subsidio ACA 2026, el impacto de la expiracion del PTC mejorado y las implicaciones de inscripcion para hogares por encima del 400% FPL."
+      }
+    },
+    {
+      "name": "IRS Rev. Proc. 2025-19: 2026 HSA Contribution Limits and HDHP Thresholds",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "note": {
+        "en": "IRS-published 2026 HSA contribution limits ($4,400 self-only / $8,750 family) and HDHP minimum deductible ($1,700 self-only / $3,400 family).",
+        "es": "Limites de contribucion HSA 2026 publicados por el IRS ($4,400 individual / $8,750 familiar) y deducible minimo HDHP ($1,700 individual / $3,400 familiar)."
+      }
+    }
+  ]
+}

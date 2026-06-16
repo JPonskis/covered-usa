@@ -1,0 +1,519 @@
+{
+  "slug": "lost-subsidy-sep",
+  "eventName": {
+    "en": "Lost Your ACA Subsidy",
+    "es": "Perdió Su Subsidio del ACA"
+  },
+  "category": "Income Change",
+  "topic": "Special Enrollment Period after ACA Subsidy Loss in 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-11",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "Lost Your ACA Subsidy in 2026? Income Change SEP Guide",
+      "es": "¿Perdió Su Subsidio ACA en 2026? Guía del SEP por Cambio de Ingresos"
+    },
+    "description": {
+      "en": "Lost your ACA premium tax credit in 2026? An income change triggers a 60-day SEP. Compare Medicaid, Marketplace, and COBRA options before the clock runs out.",
+      "es": "¿Perdió su crédito ACA en 2026? Un cambio de ingresos activa un SEP de 60 días. Compare Medicaid, Mercado y COBRA antes de que se acabe el tiempo."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Lost Your ACA Subsidy in 2026? Here Are Your Next Steps",
+      "es": "¿Perdió Su Subsidio del ACA en 2026? Aquí Están Sus Próximos Pasos"
+    },
+    "subhero": {
+      "en": "An income change that disqualifies you from premium tax credits triggers a 60-day Special Enrollment Period. Most people have better options than paying full Marketplace price.",
+      "es": "Un cambio de ingresos que lo descalifica para los créditos fiscales de prima activa un Período de Inscripción Especial de 60 días. La mayoría de personas tiene mejores opciones que pagar el precio completo del Mercado."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from the income change date",
+      "es": "Tiene 60 días desde la fecha del cambio de ingresos"
+    },
+    "body": {
+      "en": "Your 60-day SEP window runs from the date your income changed (for example, June 15, 2026 through August 14, 2026 if your income changed on June 15, 2026). Miss that window and you must wait until the ACA Open Enrollment Period beginning November 1, 2026 for 2027 coverage. Medicaid enrollment is year-round if your income now falls below 138% FPL.",
+      "es": "Su ventana del SEP de 60 días corre desde la fecha en que cambió su ingreso (por ejemplo, del 15 de junio al 14 de agosto de 2026 si sus ingresos cambiaron el 15 de junio de 2026). Si pierde esa ventana, debe esperar hasta el Período de Inscripción Abierta del ACA que comienza el 1 de noviembre de 2026 para cobertura 2027. La inscripción en Medicaid es todo el año si su ingreso ahora cae por debajo del 138% del FPL."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      { "label": { "en": "Medicaid (if income now under 138% FPL)", "es": "Medicaid (si el ingreso ahora está bajo el 138% FPL)" }, "days": null },
+      { "label": { "en": "COBRA election (if also lost employer coverage)", "es": "Elección de COBRA (si también perdió cobertura del empleador)" }, "days": 60 }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "Losing your ACA premium tax credit (subsidy) because your income increased above 400% FPL in 2026 is a qualifying life event that opens a 60-day Special Enrollment Period. Three paths forward exist: (1) pay the full unsubsidized Marketplace premium and stay on your current plan, (2) switch to a lower-cost Marketplace plan within the 60-day SEP window, or (3) if income dropped and not increased, check whether Medicaid now covers you at 138% FPL for free. For 2026, the 400% FPL subsidy cliff returned after enhanced premium tax credits from the American Rescue Plan expired on January 1, 2026. Households earning above $63,840 (single) or $132,000 (family of 4) in 2026 no longer qualify for any ACA subsidy.",
+    "es": "Perder su crédito fiscal de prima del ACA (subsidio) porque sus ingresos aumentaron por encima del 400% del FPL en 2026 es un evento calificado de vida que abre un Período de Inscripción Especial de 60 días. Existen tres caminos: (1) pagar la prima completa del Mercado sin subsidio y mantenerse en su plan actual, (2) cambiarse a un plan del Mercado de menor costo dentro de la ventana del SEP de 60 días, o (3) si el ingreso bajó y no subió, verificar si Medicaid ahora lo cubre al 138% del FPL de forma gratuita. Para 2026, el precipicio del subsidio al 400% del FPL regresó después de que los créditos fiscales de prima mejorados del Plan de Rescate Americano expiraron el 1 de enero de 2026."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "ACA premium tax credits (PTCs) in 2026 are strictly income-gated. Because the enhanced premium tax credits from the American Rescue Plan Act (ARPA) and Inflation Reduction Act (IRA) expired on January 1, 2026, the 400% FPL subsidy cliff is fully back. For a single-person household in 2026, that cliff sits at $63,840. For a family of 4, it sits at $132,000. If your Modified Adjusted Gross Income (MAGI) moves above those lines mid-year, your Advance Premium Tax Credit (APTC) either drops sharply or disappears entirely, and your monthly Marketplace premium can jump hundreds of dollars overnight. Healthcare.gov reports income changes to your state exchange within 5 to 10 business days of the update. Your insurer then adjusts your monthly bill. The jump is jarring, and many enrollees land on this page within days of seeing a new, much higher premium bill or receiving a notice from their insurer that their APTC is being reduced.",
+      "es": "Los créditos fiscales de prima (PTC) del ACA en 2026 están estrictamente limitados por ingresos. Debido a que los créditos fiscales de prima mejorados de la Ley del Plan de Rescate Americano (ARPA) y la Ley de Reducción de la Inflación (IRA) expiraron el 1 de enero de 2026, el precipicio del subsidio al 400% del FPL está totalmente de regreso. Para un hogar unipersonal en 2026, ese precipicio se sitúa en $63,840. Para una familia de 4, se sitúa en $132,000. Si su Ingreso Bruto Ajustado Modificado (MAGI) supera esas líneas a mitad de año, su Crédito Fiscal de Prima Anticipado (APTC) cae bruscamente o desaparece por completo, y su prima mensual del Mercado puede saltar cientos de dólares de la noche a la mañana."
+    },
+    {
+      "en": "Losing your ACA subsidy in 2026 does not mean you are stuck with an unaffordable bill. An income change is a qualifying life event under federal SEP rules per healthcare.gov, which means a 60-day window opens from the date of the income change. During that window, you can switch to a different Marketplace plan, add or remove dependents, or re-evaluate your full coverage picture. More importantly, if your income dropped rather than rose, you may now qualify for Medicaid year-round with no deadline. Understanding the ACA income limits and how they interact with your current household size is the first step. This guide covers the 6 decisive steps, the comparison table of your real options for 2026, and the five most common mistakes people make that cost thousands. Check the Medicaid income limits to confirm your Medicaid eligibility threshold, and review the ACA income limits to understand the 400% FPL subsidy cliff that applies to your 2026 plan year.",
+      "es": "Perder su subsidio del ACA en 2026 no significa que está atascado con una factura inasequible. Un cambio de ingresos es un evento calificado de vida según las reglas federales del SEP de healthcare.gov, lo que significa que se abre una ventana de 60 días desde la fecha del cambio de ingresos. Durante esa ventana, puede cambiarse a un plan del Mercado diferente, agregar o eliminar dependientes, o reevaluar todo su panorama de cobertura. Más importante aún, si sus ingresos bajaron en lugar de subir, ahora puede calificar para Medicaid durante todo el año sin fecha límite. Comprender los límites de ingresos del ACA y cómo interactúan con el tamaño actual de su hogar es el primer paso."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Calculate your actual 2026 projected MAGI",
+        "es": "Calcule su MAGI proyectado real para 2026"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov or your state Marketplace account and update your income to reflect your current projected Modified Adjusted Gross Income (MAGI) for 2026. Use what you expect to earn for the full calendar year, not just year-to-date. Include wages, self-employment net income, Social Security, unemployment compensation, and any rental income. Do not include Supplemental Security Income (SSI) or child support. Your APTC adjusts immediately when you submit the update.",
+        "es": "Inicie sesión en healthcare.gov o en la cuenta del Mercado de su estado y actualice sus ingresos para reflejar su Ingreso Bruto Ajustado Modificado (MAGI) proyectado actual para 2026. Use lo que espera ganar durante todo el año calendario, no solo hasta la fecha. Incluya salarios, ingresos netos por trabajo independiente, Seguro Social, compensación por desempleo e ingresos por alquiler. No incluya el Ingreso de Seguridad Suplementario (SSI) ni la manutención de hijos."
+      }
+    },
+    {
+      "name": {
+        "en": "Check whether you now qualify for Medicaid (income dropped below 138% FPL)",
+        "es": "Verifique si ahora califica para Medicaid (ingresos cayeron por debajo del 138% del FPL)"
+      },
+      "text": {
+        "en": "In the 40 Medicaid expansion states plus DC, any household with income under 138% FPL qualifies for Medicaid year-round with no deadline. For 2026, that threshold is $22,025 for a single person and $45,540 for a family of 4. Apply directly through your state Medicaid agency or at healthcare.gov. State programs have different brand names: California's Medi-Cal, Arizona's AHCCCS, Wisconsin's BadgerCare, Massachusetts's MassHealth, Connecticut's HUSKY Health, Oregon's OHP. If you qualify, Medicaid is free and ends the need for a Marketplace plan entirely.",
+        "es": "En los 40 estados con expansión de Medicaid más DC, cualquier hogar con ingresos por debajo del 138% del FPL califica para Medicaid todo el año sin fecha límite. Para 2026, ese umbral es $22,025 para una sola persona y $45,540 para una familia de 4. Solicite directamente a través de su agencia estatal de Medicaid o en healthcare.gov. Los programas estatales tienen diferentes nombres: Medi-Cal de California, AHCCCS de Arizona, BadgerCare de Wisconsin, MassHealth de Massachusetts, HUSKY Health de Connecticut, OHP de Oregón."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare Marketplace plans within your 60-day SEP window",
+        "es": "Compare los planes del Mercado dentro de su ventana de SEP de 60 días"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov and use the Plan Compare tool to see all available plans at your updated income. If your income crossed the 400% FPL subsidy cliff in 2026 (above $63,840 single or $132,000 for family of 4), compare Bronze plans, which carry the lowest premiums but higher deductibles, against Silver or Gold. At incomes above the cliff, the 2026 ACA Marketplace out-of-pocket maximum caps at $10,600 for individuals and $21,200 for families. Check whether a Catastrophic plan applies if you are under 30 or qualify for a hardship exemption.",
+        "es": "Inicie sesión en healthcare.gov y use la herramienta de Comparación de Planes para ver todos los planes disponibles con sus ingresos actualizados. Si sus ingresos cruzaron el precipicio del subsidio al 400% del FPL en 2026 (más de $63,840 individual o $132,000 para familia de 4), compare los planes Bronze, que tienen las primas más bajas pero deducibles más altos, contra Silver o Gold. A ingresos por encima del precipicio, el máximo de gastos de bolsillo del Mercado ACA 2026 es $10,600 para individuos y $21,200 para familias."
+      }
+    },
+    {
+      "name": {
+        "en": "Request the income-change SEP and enroll within 60 days",
+        "es": "Solicite el SEP por cambio de ingresos e inscríbase dentro de 60 días"
+      },
+      "text": {
+        "en": "When updating your income on healthcare.gov or your state exchange, select the qualifying life event option labeled 'Change in household income.' The system will document your 60-day Marketplace SEP window automatically. Submit any requested documentation of the income change (pay stub, offer letter, termination letter, or tax form). Enroll in your new plan before Day 60. Coverage under the new plan typically starts the first of the month following enrollment.",
+        "es": "Al actualizar sus ingresos en healthcare.gov o en su intercambio estatal, seleccione la opción de evento calificado de vida denominada 'Cambio en el ingreso del hogar.' El sistema documentará automáticamente su ventana del SEP del Mercado de 60 días. Envíe cualquier documentación solicitada del cambio de ingresos (talón de pago, carta de oferta, carta de terminación o formulario fiscal). Inscríbase en su nuevo plan antes del Día 60."
+      }
+    },
+    {
+      "name": {
+        "en": "Evaluate COBRA if you also lost employer coverage at the same time",
+        "es": "Evalúe COBRA si también perdió cobertura del empleador al mismo tiempo"
+      },
+      "text": {
+        "en": "COBRA continuation coverage applies only if you had employer-sponsored insurance, not a Marketplace plan. If you lost employer coverage simultaneously with the income change, COBRA charges 102% of the full group premium (employer plus employee share plus a 2% administrative fee), typically $400 to $900 per month for individual coverage in 2026. COBRA lasts up to 18 months for most qualifying events. Compare the full COBRA cost against unsubsidized Marketplace plans before electing COBRA. Most people who qualify for neither subsidy nor Medicaid find that an unsubsidized Bronze or Silver Marketplace plan costs less than COBRA.",
+        "es": "La cobertura de continuación COBRA solo se aplica si tenía seguro patrocinado por el empleador, no un plan del Mercado. Si perdió la cobertura del empleador simultáneamente con el cambio de ingresos, COBRA cobra el 102% de la prima grupal completa (parte del empleador más la del empleado más una tarifa administrativa del 2%), típicamente $400 a $900 al mes para cobertura individual en 2026. Compare el costo total de COBRA contra los planes del Mercado sin subsidio antes de elegir COBRA."
+      }
+    },
+    {
+      "name": {
+        "en": "Plan for 1095-A reconciliation and avoid a repayment surprise at tax time",
+        "es": "Planifique para la reconciliación del 1095-A y evite una sorpresa de reembolso en la temporada de impuestos"
+      },
+      "text": {
+        "en": "If you received Advance Premium Tax Credits in 2026 but your actual annual MAGI turned out higher than projected, you will owe the difference back to the IRS on Form 8962 using the 1095-A your Marketplace sends in January 2027. To minimize repayment, update your income projection at healthcare.gov promptly whenever it changes during the year. The IRS caps repayment amounts on a sliding scale (up to $3,800 for incomes 400% FPL or above, with no cap for incomes exceeding 400% FPL in 2026). Accurate income reporting is the single most important subsidy-management action you can take.",
+        "es": "Si recibió Créditos Fiscales de Prima Anticipados en 2026 pero su MAGI anual real resultó ser mayor de lo proyectado, deberá la diferencia al IRS en el Formulario 8962 usando el 1095-A que su Mercado envíe en enero de 2027. Para minimizar el reembolso, actualice su proyección de ingresos en healthcare.gov de inmediato cada vez que cambie durante el año. El IRS limita los montos de reembolso en una escala progresiva (hasta $3,800 para ingresos al 400% del FPL o más, sin límite para ingresos que superen el 400% del FPL en 2026)."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opción", "Costo típico", "Mejor para", "Fecha límite"]
+    },
+    "rows": [
+      {
+        "en": ["Medicaid (income under 138% FPL)", "Free or near-free", "Income dropped: single under $22,025 or family of 4 under $45,540 in 2026", "Year-round, no deadline"],
+        "es": ["Medicaid (ingresos bajo 138% FPL)", "Gratis o casi gratis", "Ingreso cayó: individual bajo $22,025 o familia de 4 bajo $45,540 en 2026", "Todo el año, sin fecha límite"]
+      },
+      {
+        "en": ["ACA Marketplace with remaining subsidy (100%-400% FPL)", "$10 to $400/mo after subsidies", "Income increased but still under 400% FPL ($63,840 single or $132,000 family of 4 in 2026)", "60-day SEP from income change"],
+        "es": ["Mercado ACA con subsidio restante (100%-400% FPL)", "$10 a $400/mes después de subsidios", "Ingreso aumentó pero aún bajo 400% FPL ($63,840 individual o $132,000 familia de 4 en 2026)", "SEP de 60 días desde el cambio de ingresos"]
+      },
+      {
+        "en": ["Unsubsidized ACA Marketplace plan (above 400% FPL)", "$400 to $1,200+/mo (Bronze to Gold, no subsidy)", "Income exceeds 400% FPL cliff; want to stay on Marketplace coverage", "60-day SEP from income change"],
+        "es": ["Plan del Mercado ACA sin subsidio (sobre 400% FPL)", "$400 a $1,200+/mes (Bronze a Gold, sin subsidio)", "Ingresos superan el precipicio del 400% FPL; desea mantenerse en cobertura del Mercado", "SEP de 60 días desde el cambio de ingresos"]
+      },
+      {
+        "en": ["COBRA (only if also losing employer coverage)", "$400 to $2,000+/mo (102% of full group premium)", "Need to retain specific providers or a nearly-met deductible", "60 days from qualifying event"],
+        "es": ["COBRA (solo si también pierde cobertura del empleador)", "$400 a $2,000+/mes (102% de la prima grupal completa)", "Necesita mantener proveedores específicos o un deducible casi cumplido", "60 días desde el evento calificador"]
+      },
+      {
+        "en": ["CHIP (children only)", "Low or free (typically under 200-300% FPL by state)", "Children in household who qualify even when adults do not", "Year-round enrollment"],
+        "es": ["CHIP (solo niños)", "Bajo o gratis (típicamente bajo 200-300% FPL según estado)", "Niños en el hogar que califican aunque los adultos no califiquen", "Inscripción todo el año"]
+      }
+    ],
+    "footnote": {
+      "en": "2026 ACA subsidy cliff returned to 400% FPL after enhanced PTCs from ARPA and IRA expired January 1, 2026. ACA Marketplace OOP maximum in 2026 is $10,600 individual and $21,200 family (HHS June 2025 NBPP revision).",
+      "es": "El precipicio del subsidio ACA 2026 regresó al 400% del FPL después de que los PTC mejorados de ARPA e IRA expiraron el 1 de enero de 2026. El máximo de gastos de bolsillo del Mercado ACA en 2026 es $10,600 individual y $21,200 familiar (revisión HHS NBPP junio 2025)."
+    },
+    "source": "healthcare.gov, HHS ASPE 2026 Poverty Guidelines, IRS Rev. Proc. 2025-19, CMS 2026 NBPP"
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "The most expensive errors people make after losing an ACA subsidy in 2026:",
+      "es": "Los errores más costosos que comete la gente después de perder un subsidio del ACA en 2026:"
+    },
+    "items": [
+      {
+        "en": "Reporting full-year prior income instead of projected forward income. ACA subsidies use projected annual MAGI, not last year's tax return. If your income changed mid-year, report only what you expect to earn for the full 2026 calendar year.",
+        "es": "Reportar el ingreso anual anterior completo en lugar del ingreso proyectado hacia adelante. Los subsidios del ACA usan el MAGI anual proyectado, no la declaración de impuestos del año pasado. Si su ingreso cambió a mitad de año, reporte solo lo que espera ganar durante todo el año calendario 2026."
+      },
+      {
+        "en": "Missing the 60-day SEP window. Once the window closes, you must wait until the ACA Open Enrollment Period beginning November 1, 2026 for 2027 plans. Update your income on healthcare.gov immediately after the change.",
+        "es": "Perder la ventana del SEP de 60 días. Una vez que la ventana se cierra, debe esperar hasta el Período de Inscripción Abierta del ACA que comienza el 1 de noviembre de 2026 para los planes de 2027. Actualice sus ingresos en healthcare.gov inmediatamente después del cambio."
+      },
+      {
+        "en": "Defaulting to COBRA when a Marketplace plan is cheaper. If you only lost a Marketplace subsidy (no employer plan loss), COBRA does not apply. If you also lost employer coverage, compare COBRA against an unsubsidized Marketplace Bronze plan before electing.",
+        "es": "Optar por defecto por COBRA cuando un plan del Mercado es más barato. Si solo perdió un subsidio del Mercado (sin pérdida de un plan del empleador), COBRA no aplica. Si también perdió cobertura del empleador, compare COBRA contra un plan Bronze del Mercado sin subsidio antes de elegir."
+      },
+      {
+        "en": "Not checking Medicaid first when income dropped. A mid-year income drop below 138% FPL in an expansion state qualifies you for free Medicaid year-round. Many people pay Marketplace premiums they no longer need to pay.",
+        "es": "No verificar Medicaid primero cuando el ingreso bajó. Una caída de ingresos a mitad de año por debajo del 138% del FPL en un estado con expansión lo califica para Medicaid gratuito todo el año. Muchas personas pagan primas del Mercado que ya no necesitan pagar."
+      },
+      {
+        "en": "Skipping 1095-A reconciliation. If you received advance premium tax credits in 2026 based on a projected income that turned out lower than actual, the IRS will recover the excess via Form 8962. Updating your income on healthcare.gov during the year reduces the end-of-year repayment shock.",
+        "es": "Saltarse la reconciliación del 1095-A. Si recibió créditos fiscales de prima anticipados en 2026 basados en un ingreso proyectado que resultó ser menor que el real, el IRS recuperará el exceso a través del Formulario 8962. Actualizar sus ingresos en healthcare.gov durante el año reduce la sorpresa de reembolso a fin de año."
+      },
+      {
+        "en": "Assuming the ACA subsidy cliff extension still applies in 2026. Enhanced premium tax credits expired January 1, 2026. Any 2025 guidance saying the cliff is extended is outdated. For 2026, households above 400% FPL receive zero subsidy.",
+        "es": "Asumir que la extensión del precipicio del subsidio ACA todavía aplica en 2026. Los créditos fiscales de prima mejorados expiraron el 1 de enero de 2026. Cualquier guía de 2025 que diga que el precipicio se ha extendido está desactualizada. Para 2026, los hogares por encima del 400% del FPL no reciben subsidio."
+      }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "The 2026 Subsidy Cliff: What Changed and Who Is Affected",
+        "es": "El Precipicio del Subsidio 2026: Qué Cambió y Quién Se Ve Afectado"
+      },
+      "paragraphs": [
+        {
+          "en": "ACA Marketplace premium tax credits from 2021 through 2025 were temporarily enhanced under the American Rescue Plan Act (ARPA) and extended by the Inflation Reduction Act (IRA). Those enhancements removed the 400% FPL income ceiling on subsidy eligibility and made premiums as low as $0 for many middle-income households. Both enhancements expired January 1, 2026, restoring the original ACA subsidy structure. For 2026, the income ceiling for any premium tax credit is 400% of the Federal Poverty Level, equal to $63,840 for a single-person household and $132,000 for a family of 4 in the 48 contiguous states and DC (based on HHS ASPE 2026 Poverty Guidelines). Households with MAGI above those thresholds receive zero federal premium tax credit. The shift was immediate and affected approximately 5 million enrollees who had subsidies under the enhanced rules but cross the 400% cliff under the restored 2026 rules, according to KFF analysis of 2025-2026 enrollment transitions.",
+          "es": "Los créditos fiscales de prima del Mercado ACA de 2021 a 2025 fueron temporalmente mejorados bajo la Ley del Plan de Rescate Americano (ARPA) y extendidos por la Ley de Reducción de la Inflación (IRA). Esas mejoras eliminaron el límite de ingresos del 400% del FPL para la elegibilidad de subsidios y redujeron las primas hasta $0 para muchos hogares de ingresos medios. Ambas mejoras expiraron el 1 de enero de 2026, restaurando la estructura original de subsidios del ACA. Para 2026, el límite de ingresos para cualquier crédito fiscal de prima es el 400% del Nivel Federal de Pobreza, equivalente a $63,840 para un hogar unipersonal y $132,000 para una familia de 4 en los 48 estados contiguos más DC."
+        },
+        {
+          "en": "Mid-year income changes compound the cliff problem. An individual who starts 2026 at $55,000 annual income (below the $63,840 cliff) and receives a raise or takes a second job that pushes projected annual MAGI to $70,000 crosses the cliff mid-year. Healthcare.gov instructs all enrollees to report income changes promptly. When you update income above 400% FPL, the system terminates your APTC and your insurer raises your monthly premium to the full unsubsidized rate. The reporting obligation matters for another reason: if you do not report promptly and continue receiving APTC you no longer qualify for, the IRS will assess the full repayment on Form 8962 at tax time, with no cap for incomes over 400% FPL in 2026. The safest strategy is to report immediately, even though doing so eliminates your subsidy.",
+          "es": "Los cambios de ingresos a mitad de año complican el problema del precipicio. Una persona que comienza 2026 con un ingreso anual de $55,000 (por debajo del precipicio de $63,840) y recibe un aumento o toma un segundo trabajo que lleva el MAGI anual proyectado a $70,000 cruza el precipicio a mitad de año. Healthcare.gov instruye a todos los inscritos a reportar los cambios de ingresos de inmediato. Cuando actualiza los ingresos por encima del 400% del FPL, el sistema termina su APTC y su aseguradora eleva su prima mensual a la tarifa completa sin subsidio."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid Eligibility After an Income Drop in 2026",
+        "es": "Elegibilidad de Medicaid Después de una Caída de Ingresos en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid is income-gated at 138% FPL in the 40 expansion states plus DC. A mid-year income drop that brings your household MAGI below that threshold qualifies you for Medicaid immediately, with no SEP window and no deadline. State Medicaid programs use different brand names: California calls it Medi-Cal; Arizona uses AHCCCS (the state's full program name); Wisconsin uses BadgerCare; Massachusetts uses MassHealth; Connecticut uses HUSKY Health; Oregon uses OHP (Oregon Health Plan); Washington uses Apple Health; Tennessee uses TennCare; Indiana uses HIP (Healthy Indiana Plan). Using your state's brand name in your search will get you to the right enrollment portal faster than searching generically for 'Medicaid.' If you live in one of the 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming), the 138% FPL threshold does not apply to non-disabled adults, and a Medicaid pivot may not be available unless you qualify through another pathway such as pregnancy, disability, or age.",
+          "es": "Medicaid está limitado al 138% del FPL en los 40 estados con expansión más DC. Una caída de ingresos a mitad de año que lleva su MAGI del hogar por debajo de ese umbral lo califica para Medicaid de inmediato, sin ventana del SEP y sin fecha límite. Los programas estatales de Medicaid usan diferentes nombres de marca: California lo llama Medi-Cal; Arizona usa AHCCCS; Wisconsin usa BadgerCare; Massachusetts usa MassHealth; Connecticut usa HUSKY Health; Oregón usa OHP; Washington usa Apple Health; Tennessee usa TennCare; Indiana usa HIP. Si vive en uno de los 10 estados sin expansión (Alabama, Florida, Georgia, Kansas, Mississippi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming), el umbral del 138% del FPL no aplica a adultos sin discapacidad."
+        },
+        {
+          "en": "CHIP (Children's Health Insurance Program) remains available year-round for children in households that do not qualify for Medicaid but have income under the state CHIP income ceiling, typically 200% to 300% FPL depending on the state. If your adult household income increased above subsidy range but your children's household-size income calculation still falls within CHIP limits, they may enroll separately. All 50 states plus DC operate CHIP programs. Enrollment is year-round and co-pays are very low. Even when adults lose ACA subsidies and cannot afford full Marketplace premiums, children in the household almost always have a Medicaid or CHIP coverage path at no cost.",
+          "es": "CHIP (Programa de Seguro de Salud para Niños) sigue disponible todo el año para los niños en hogares que no califican para Medicaid pero tienen ingresos por debajo del límite de ingresos CHIP del estado, típicamente del 200% al 300% del FPL según el estado. Si el ingreso del hogar del adulto aumentó por encima del rango de subsidios pero el cálculo de ingresos de sus hijos aún cae dentro de los límites de CHIP, pueden inscribirse por separado. Los 50 estados más DC operan programas CHIP."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Medicaid and ACA Subsidy Income Limits by Household Size, 2026 (48 States + DC)",
+          "es": "Límites de Ingresos de Medicaid y Subsidios ACA por Tamaño del Hogar, 2026 (48 estados + DC)"
+        },
+        "headers": {
+          "en": ["Household size", "138% FPL (Medicaid expansion)", "400% FPL (ACA subsidy cliff 2026)"],
+          "es": ["Tamaño del hogar", "138% FPL (expansión Medicaid)", "400% FPL (precipicio subsidio ACA 2026)"]
+        },
+        "rows": [
+          { "en": ["1", "$22,025", "$63,840"], "es": ["1", "$22,025", "$63,840"] },
+          { "en": ["2", "$29,820", "$86,400"], "es": ["2", "$29,820", "$86,400"] },
+          { "en": ["3", "$37,615", "$108,960"], "es": ["3", "$37,615", "$108,960"] },
+          { "en": ["4", "$45,540", "$132,000"], "es": ["4", "$45,540", "$132,000"] },
+          { "en": ["5", "$53,335", "$154,560"], "es": ["5", "$53,335", "$154,560"] },
+          { "en": ["6", "$61,130", "$177,120"], "es": ["6", "$61,130", "$177,120"] },
+          { "en": ["7", "$68,925", "$199,680"], "es": ["7", "$68,925", "$199,680"] },
+          { "en": ["8", "$76,720", "$222,240"], "es": ["8", "$76,720", "$222,240"] },
+          { "en": ["Each additional person", "+ $7,795", "+ $22,560"], "es": ["Cada persona adicional", "+ $7,795", "+ $22,560"] }
+        ],
+        "footnote": {
+          "en": "Alaska and Hawaii have higher FPL thresholds. The 400% FPL subsidy cliff is fully reinstated for 2026 after enhanced PTCs expired January 1, 2026. Source: HHS ASPE 2026 Poverty Guidelines.",
+          "es": "Alaska y Hawaii tienen umbrales del FPL más altos. El precipicio del subsidio al 400% del FPL está totalmente reinstaurado para 2026 después de que los PTC mejorados expiraron el 1 de enero de 2026. Fuente: Directrices de Pobreza HHS ASPE 2026."
+        },
+        "source": "HHS ASPE 2026 Poverty Guidelines, CMS ACA premium tax credit thresholds"
+      }
+    },
+    {
+      "heading": {
+        "en": "Documents You Will Need for the Income-Change SEP Application",
+        "es": "Documentos Que Necesitará para la Solicitud del SEP por Cambio de Ingresos"
+      },
+      "paragraphs": [
+        {
+          "en": "Marketplace SEP applications for income changes require documentation verifying the change. Healthcare.gov may ask for proof within 30 days of enrollment. Having documents ready speeds up enrollment and prevents your coverage from being terminated post-enrollment for missing verification. The type of documentation depends on what caused the income change: a new job requires recent pay stubs or an offer letter showing salary; a job loss requires a termination letter or final pay stub; self-employment income changes require a profit-and-loss statement or bank statements. Social Security income changes require a benefit award letter from the SSA. If you are also enrolling dependents or removing them, birth certificates or divorce decrees may be required. The federal poverty level and ACA income limits pages explain how each income source is counted for MAGI, so you can build your income projection accurately.",
+          "es": "Las solicitudes del SEP del Mercado por cambios de ingresos requieren documentación que verifique el cambio. Healthcare.gov puede solicitar pruebas dentro de los 30 días posteriores a la inscripción. Tener los documentos listos acelera la inscripción e impide que su cobertura sea cancelada después de la inscripción por falta de verificación. El tipo de documentación depende de qué causó el cambio de ingresos: un nuevo trabajo requiere talones de pago recientes o una carta de oferta que indique el salario; una pérdida de trabajo requiere una carta de terminación o talón de pago final; los cambios de ingresos por trabajo independiente requieren un estado de pérdidas y ganancias o extractos bancarios."
+        }
+      ],
+      "list": [
+        {
+          "en": "Recent pay stubs (last 2-3) showing current salary or hourly rate, or an employer offer letter confirming new compensation",
+          "es": "Talones de pago recientes (últimos 2-3) que muestren el salario actual o la tarifa por hora, o una carta de oferta del empleador que confirme la nueva compensación"
+        },
+        {
+          "en": "Termination or layoff letter from employer (if income dropped due to job loss)",
+          "es": "Carta de terminación o despido del empleador (si el ingreso bajó debido a pérdida de empleo)"
+        },
+        {
+          "en": "Unemployment award letter showing weekly benefit amount (unemployment counts as MAGI income for subsidy calculations)",
+          "es": "Carta de concesión de desempleo que muestre el monto del beneficio semanal (el desempleo cuenta como ingreso MAGI para el cálculo de subsidios)"
+        },
+        {
+          "en": "Self-employment profit-and-loss statement or 3-6 months of business bank statements",
+          "es": "Estado de pérdidas y ganancias de trabajo independiente o extractos bancarios comerciales de 3 a 6 meses"
+        },
+        {
+          "en": "Social Security benefit award letter (if Social Security income changed)",
+          "es": "Carta de concesión de beneficios del Seguro Social (si cambió el ingreso del Seguro Social)"
+        },
+        {
+          "en": "Social Security numbers for all household members applying",
+          "es": "Números de Seguro Social de todos los miembros del hogar que soliciten"
+        },
+        {
+          "en": "Prior 1095-A form (if reconciling prior-year APTC with the IRS via Form 8962)",
+          "es": "Formulario 1095-A anterior (si reconcilia el APTC del año anterior con el IRS a través del Formulario 8962)"
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the SEP window after losing an ACA subsidy due to an income change in 2026?",
+        "answer": "An income change that affects your ACA premium tax credit eligibility is a qualifying life event that opens a 60-day Special Enrollment Period (SEP) under federal Marketplace rules per healthcare.gov. Your 60-day window starts on the date of the income change. For example, if your income changed on July 1, 2026, your SEP runs through August 30, 2026. During this window, you can switch plans, change metal tiers, or add or remove dependents. If your income dropped below 138% FPL, Medicaid enrollment is year-round with no deadline and no SEP required."
+      },
+      {
+        "question": "Did the ACA subsidy cliff return for 2026?",
+        "answer": "Yes. Enhanced premium tax credits introduced by the American Rescue Plan Act (ARPA) in 2021 and extended by the Inflation Reduction Act (IRA) through 2025 both expired January 1, 2026. The original 400% FPL income ceiling is fully restored for 2026 Marketplace coverage. Households with Modified Adjusted Gross Income (MAGI) above 400% FPL (above $63,840 for a single person or $132,000 for a family of 4 in the 48 contiguous states and DC) receive zero federal premium tax credit in 2026. Any guidance saying the cliff is extended or removed is outdated as of January 1, 2026."
+      },
+      {
+        "question": "How do I document an income change for the Marketplace SEP application?",
+        "answer": "Healthcare.gov requires evidence of the income change event within 30 days of enrollment under a Marketplace SEP. Acceptable documentation includes: recent pay stubs (typically the last 2-3) showing current salary for a new job or raise; a termination or layoff letter for a job loss; a self-employment profit-and-loss statement or recent business bank statements; or a Social Security benefit award letter if your Social Security income changed. Log in to healthcare.gov, select your qualifying life event as 'Change in household income,' and upload documents as prompted. Incomplete documentation can delay coverage or trigger post-enrollment verification that terminates coverage."
+      },
+      {
+        "question": "What if I miss the 60-day SEP after losing my subsidy?",
+        "answer": "Missing the 60-day SEP window for a Marketplace income change means you generally cannot make mid-year plan changes until the next ACA Open Enrollment Period, which for 2027 coverage begins November 1, 2026. Your current Marketplace plan continues at the unsubsidized premium. If your income later drops below 138% FPL in a Medicaid expansion state, Medicaid enrollment remains year-round regardless of missing the SEP. If another qualifying life event occurs (job loss, marriage, birth, move), a new 60-day window opens from that event's date."
+      },
+      {
+        "question": "Do I qualify for Medicaid if I lost my ACA subsidy because my income dropped?",
+        "answer": "Possibly, and it is the first thing to check. In the 40 Medicaid expansion states plus DC, any household with 2026 income under 138% FPL qualifies for Medicaid year-round with no deadline. For 2026, that means under $22,025 for a single person and under $45,540 for a family of 4 (HHS ASPE 2026 Poverty Guidelines). Medicaid enrollment is handled through healthcare.gov or your state Medicaid agency. State programs use different names: Medi-Cal (California), AHCCCS (Arizona), BadgerCare (Wisconsin), MassHealth (Massachusetts), HUSKY Health (Connecticut). If you qualify for Medicaid, you can disenroll from your Marketplace plan without a penalty. The 10 non-expansion states have much stricter income thresholds for non-disabled adults."
+      },
+      {
+        "question": "What happens to my 1095-A and IRS subsidy reconciliation after I lose my ACA subsidy?",
+        "answer": "Your Marketplace sends a Form 1095-A in January 2027 summarizing all advance premium tax credits (APTC) paid on your behalf during 2026. You reconcile those credits on IRS Form 8962 when you file your 2026 federal tax return. If your actual 2026 MAGI was higher than projected and you received more APTC than you were entitled to, you owe the excess back. For 2026, the IRS repayment cap was removed for households with income above 400% FPL (meaning full repayment is owed with no limit). For households under 400% FPL, repayment caps apply on a sliding scale. Updating your income estimate on healthcare.gov throughout the year when it changes is the best way to minimize the repayment amount."
+      },
+      {
+        "question": "What are the CHIP options for my children if I lose my adult ACA subsidy?",
+        "answer": "CHIP (Children's Health Insurance Program) covers children in households with income too high for Medicaid but below the state CHIP ceiling, typically 200% to 300% FPL depending on the state. CHIP enrollment is year-round with no deadline, and premiums are very low or free. Even when your adult income is above the ACA subsidy range (above 400% FPL in 2026), your children may still qualify for CHIP based on household size and income. All 50 states and DC operate CHIP programs. Apply through healthcare.gov or your state Medicaid/CHIP agency. Some states have brand names for their CHIP programs (AllKids in Illinois, HUSKY Health in Connecticut, NJ FamilyCare in New Jersey, PA CHIP in Pennsylvania)."
+      },
+      {
+        "question": "Is COBRA an option if I only lost an ACA Marketplace subsidy (not employer coverage)?",
+        "answer": "No. COBRA continuation coverage applies only to people who had employer-sponsored group health insurance and then lost that coverage due to a qualifying event. COBRA does not apply to ACA Marketplace plans purchased individually. If you had only a Marketplace plan and lost your subsidy, your options are to pay the full unsubsidized Marketplace premium, switch to a different Marketplace plan during your 60-day SEP window, enroll in Medicaid if eligible, or enroll in CHIP for children. COBRA becomes relevant only if you simultaneously lose employer-sponsored coverage along with losing your Marketplace subsidy, which would be a separate triggering event."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la ventana del SEP después de perder un subsidio del ACA por un cambio de ingresos en 2026?",
+        "answer": "Un cambio de ingresos que afecta su elegibilidad para el crédito fiscal de prima del ACA es un evento calificado de vida que abre un Período de Inscripción Especial (SEP) de 60 días bajo las reglas federales del Mercado según healthcare.gov. Su ventana de 60 días comienza en la fecha del cambio de ingresos. Por ejemplo, si sus ingresos cambiaron el 1 de julio de 2026, su SEP corre hasta el 30 de agosto de 2026. Durante esta ventana, puede cambiar de plan, cambiar de nivel metálico, o agregar o eliminar dependientes. Si sus ingresos cayeron por debajo del 138% del FPL, la inscripción en Medicaid es todo el año sin fecha límite."
+      },
+      {
+        "question": "¿Volvió el precipicio del subsidio ACA para 2026?",
+        "answer": "Sí. Los créditos fiscales de prima mejorados introducidos por la Ley del Plan de Rescate Americano (ARPA) en 2021 y extendidos por la Ley de Reducción de la Inflación (IRA) hasta 2025 expiraron ambos el 1 de enero de 2026. El límite original de ingresos del 400% del FPL está totalmente restaurado para la cobertura del Mercado 2026. Los hogares con Ingreso Bruto Ajustado Modificado (MAGI) superior al 400% del FPL (más de $63,840 para una sola persona o $132,000 para una familia de 4 en los 48 estados contiguos más DC) no reciben crédito fiscal de prima federal en 2026."
+      },
+      {
+        "question": "¿Cómo documento un cambio de ingresos para la solicitud del SEP del Mercado?",
+        "answer": "Healthcare.gov requiere evidencia del evento de cambio de ingresos dentro de los 30 días posteriores a la inscripción bajo un SEP del Mercado. La documentación aceptable incluye: talones de pago recientes (típicamente los últimos 2-3) que muestren el salario actual para un nuevo trabajo o aumento; una carta de terminación o despido por pérdida de empleo; un estado de pérdidas y ganancias de trabajo independiente o extractos bancarios comerciales recientes; o una carta de concesión de beneficios del Seguro Social si cambió su ingreso del Seguro Social. Inicie sesión en healthcare.gov, seleccione su evento calificado de vida como 'Cambio en el ingreso del hogar,' y suba los documentos según se le indique."
+      },
+      {
+        "question": "¿Qué pasa si pierdo el SEP de 60 días después de perder mi subsidio?",
+        "answer": "Perder la ventana del SEP de 60 días para un cambio de ingresos del Mercado significa que generalmente no puede hacer cambios de plan a mitad de año hasta el próximo Período de Inscripción Abierta del ACA, que para la cobertura 2027 comienza el 1 de noviembre de 2026. Su plan actual del Mercado continúa a la prima sin subsidio. Si sus ingresos bajan posteriormente por debajo del 138% del FPL en un estado con expansión de Medicaid, la inscripción en Medicaid permanece disponible todo el año independientemente de que haya perdido el SEP."
+      },
+      {
+        "question": "¿Califico para Medicaid si perdí mi subsidio del ACA porque bajaron mis ingresos?",
+        "answer": "Posiblemente, y es lo primero que debe verificar. En los 40 estados con expansión de Medicaid más DC, cualquier hogar con ingresos de 2026 por debajo del 138% del FPL califica para Medicaid todo el año sin fecha límite. Para 2026, eso significa menos de $22,025 para una sola persona y menos de $45,540 para una familia de 4 (Directrices de Pobreza HHS ASPE 2026). Los programas estatales usan diferentes nombres: Medi-Cal (California), AHCCCS (Arizona), BadgerCare (Wisconsin), MassHealth (Massachusetts), HUSKY Health (Connecticut). Si califica para Medicaid, puede desinscribirse de su plan del Mercado sin penalización."
+      },
+      {
+        "question": "¿Qué pasa con mi 1095-A y la reconciliación de subsidios del IRS después de perder mi subsidio del ACA?",
+        "answer": "Su Mercado envía el Formulario 1095-A en enero de 2027 resumiendo todos los créditos fiscales de prima anticipados (APTC) pagados en su nombre durante 2026. Usted reconcilia esos créditos en el Formulario 8962 del IRS cuando presenta su declaración federal de impuestos de 2026. Si su MAGI real de 2026 fue mayor de lo proyectado y recibió más APTC del que tenía derecho, debe devolver el exceso. Para 2026, el límite de reembolso del IRS fue eliminado para hogares con ingresos superiores al 400% del FPL. Actualizar su estimación de ingresos en healthcare.gov durante todo el año es la mejor manera de minimizar el monto del reembolso."
+      },
+      {
+        "question": "¿Cuáles son las opciones de CHIP para mis hijos si pierdo mi subsidio del ACA para adultos?",
+        "answer": "CHIP (Programa de Seguro de Salud para Niños) cubre a los niños en hogares con ingresos demasiado altos para Medicaid pero por debajo del límite CHIP del estado, típicamente del 200% al 300% del FPL según el estado. La inscripción en CHIP es todo el año sin fecha límite, y las primas son muy bajas o gratuitas. Incluso cuando sus ingresos de adulto están por encima del rango de subsidios del ACA (más del 400% del FPL en 2026), sus hijos aún pueden calificar para CHIP según el tamaño del hogar y los ingresos. Los 50 estados más DC operan programas CHIP. Algunos estados tienen nombres de marca para sus programas CHIP (AllKids en Illinois, HUSKY Health en Connecticut, NJ FamilyCare en Nueva Jersey)."
+      },
+      {
+        "question": "¿Es COBRA una opción si solo perdí un subsidio del Mercado ACA (no cobertura del empleador)?",
+        "answer": "No. La cobertura de continuación COBRA solo aplica a personas que tenían seguro de salud grupal patrocinado por el empleador y luego perdieron esa cobertura debido a un evento calificador. COBRA no aplica a los planes del Mercado ACA comprados individualmente. Si solo tenía un plan del Mercado y perdió su subsidio, sus opciones son pagar la prima completa del Mercado sin subsidio, cambiarse a un plan diferente durante su ventana del SEP de 60 días, inscribirse en Medicaid si es elegible, o inscribir a los niños en CHIP. COBRA solo es relevante si simultáneamente pierde cobertura patrocinada por el empleador."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    { "label": { "en": "ACA Income Limits 2026", "es": "Límites de Ingresos ACA 2026" }, "href": "/aca-income-limits" },
+    { "label": { "en": "Medicaid Income Limits 2026", "es": "Límites de Ingresos Medicaid 2026" }, "href": "/medicaid-income-limits" },
+    { "label": { "en": "Federal Poverty Level 2026", "es": "Tabla del FPL 2026" }, "href": "/federal-poverty-level" },
+    { "label": { "en": "Check Your Coverage Options", "es": "Verifique Sus Opciones de Cobertura" }, "href": "/screener" }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Special Enrollment Periods for income changes",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/",
+      "note": {
+        "en": "Official federal SEP rules for income changes as qualifying life events; 60-day window documentation.",
+        "es": "Reglas federales oficiales del SEP para cambios de ingresos como eventos calificados de vida; documentación de la ventana de 60 días."
+      }
+    },
+    {
+      "name": "IRS: Rev. Proc. 2025-19, Premium Tax Credit Eligibility 2026",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "note": {
+        "en": "Authoritative source for 2026 premium tax credit income thresholds and the restoration of the 400% FPL cliff.",
+        "es": "Fuente autorizada para los umbrales de ingresos del crédito fiscal de prima 2026 y la restauración del precipicio del 400% del FPL."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Source for 2026 Federal Poverty Level thresholds used to calculate Medicaid (138% FPL) and ACA subsidy eligibility (400% FPL).",
+        "es": "Fuente para los umbrales del Nivel Federal de Pobreza 2026 usados para calcular la elegibilidad de Medicaid (138% FPL) y subsidios ACA (400% FPL)."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid enrollment rules and expansion state coverage at 138% FPL.",
+        "es": "Reglas de inscripción de Medicaid durante todo el año y cobertura en estados con expansión al 138% del FPL."
+      }
+    },
+    {
+      "name": "KFF: ACA Marketplace Enrollment and Subsidy Analysis 2026",
+      "url": "https://www.kff.org/health-reform/issue-brief/aca-marketplace-enrollment-2026/",
+      "note": {
+        "en": "Analysis of 2026 Marketplace enrollment transitions after enhanced PTC expiration; subsidy-cliff impact estimates.",
+        "es": "Análisis de las transiciones de inscripción del Mercado 2026 después del vencimiento del PTC mejorado; estimaciones del impacto del precipicio del subsidio."
+      }
+    }
+  ],
+
+  "topicCluster": "event-sep",
+  "keyTerms": {
+    "en": [
+      "lost ACA subsidy special enrollment period 2026",
+      "income change SEP marketplace 2026",
+      "400% FPL subsidy cliff 2026",
+      "ACA premium tax credit income change qualifying event",
+      "lost premium tax credit 2026",
+      "marketplace income change 60-day window"
+    ],
+    "es": [
+      "perdió subsidio ACA período de inscripción especial 2026",
+      "cambio de ingresos SEP mercado 2026",
+      "precipicio subsidio 400% FPL 2026",
+      "crédito fiscal de prima evento calificador 2026"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid and ACA Subsidy Income Thresholds by Household Size, 2026 (48 Contiguous States + DC)",
+      "headers": ["Household size", "138% FPL (Medicaid expansion cutoff)", "400% FPL (ACA subsidy cliff 2026)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,820", "$86,400"],
+        ["3", "$37,615", "$108,960"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,335", "$154,560"],
+        ["6", "$61,130", "$177,120"],
+        ["7", "$68,925", "$199,680"],
+        ["8", "$76,720", "$222,240"],
+        ["Each additional person", "+ $7,795", "+ $22,560"]
+      ],
+      "footnote": "Alaska and Hawaii have higher FPL thresholds. The 400% FPL subsidy cliff returned for 2026 after enhanced PTCs expired January 1, 2026. Incomes at or above 400% FPL receive zero ACA premium tax credit in 2026.",
+      "source": "HHS ASPE 2026 Poverty Guidelines; CMS ACA premium tax credit thresholds"
+    },
+    "es": {
+      "caption": "Umbrales de Ingresos de Medicaid y Subsidios ACA por Tamaño del Hogar, 2026 (48 estados contiguos + DC)",
+      "headers": ["Tamaño del hogar", "138% FPL (límite expansión Medicaid)", "400% FPL (precipicio subsidio ACA 2026)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,820", "$86,400"],
+        ["3", "$37,615", "$108,960"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,335", "$154,560"],
+        ["6", "$61,130", "$177,120"],
+        ["7", "$68,925", "$199,680"],
+        ["8", "$76,720", "$222,240"],
+        ["Cada persona adicional", "+ $7,795", "+ $22,560"]
+      ],
+      "footnote": "Alaska y Hawaii tienen umbrales del FPL más altos. El precipicio del subsidio al 400% del FPL regresó para 2026 después de que los PTC mejorados expiraron el 1 de enero de 2026. Los ingresos en o por encima del 400% del FPL no reciben crédito fiscal de prima ACA en 2026.",
+      "source": "Directrices de Pobreza HHS ASPE 2026; umbrales del crédito fiscal de prima ACA de CMS"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "Recent pay stubs (last 2-3) showing current salary or hourly rate, or employer offer letter confirming new compensation amount",
+      "Termination or layoff letter from employer (if income dropped due to job loss)",
+      "Unemployment benefit award letter showing weekly benefit amount (unemployment counts as MAGI income)",
+      "Self-employment profit-and-loss statement or 3-6 months of business bank statements",
+      "Social Security benefit award letter (if Social Security or SSDI income changed)",
+      "Social Security numbers for all household members enrolling",
+      "Prior year 1095-A form (if reconciling previous APTC with IRS via Form 8962)",
+      "Birth certificates or adoption papers for dependents being added to the plan"
+    ],
+    "es": [
+      "Talones de pago recientes (últimos 2-3) que muestren el salario o tarifa por hora actual, o carta de oferta del empleador que confirme el nuevo monto de compensación",
+      "Carta de terminación o despido del empleador (si el ingreso bajó debido a pérdida de empleo)",
+      "Carta de concesión de beneficios por desempleo que muestre el monto del beneficio semanal (el desempleo cuenta como ingreso MAGI)",
+      "Estado de pérdidas y ganancias de trabajo independiente o extractos bancarios comerciales de 3 a 6 meses",
+      "Carta de concesión de beneficios del Seguro Social (si cambió el ingreso del Seguro Social o SSDI)",
+      "Números de Seguro Social de todos los miembros del hogar que se inscriban",
+      "Formulario 1095-A del año anterior (si reconcilia APTC previo con el IRS mediante el Formulario 8962)",
+      "Actas de nacimiento o papeles de adopción para los dependientes que se agreguen al plan"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Submitted income documentation after the 30-day post-enrollment verification deadline, causing the Marketplace to terminate coverage retroactively",
+      "Reported prior-year tax return income instead of projected current-year 2026 MAGI, resulting in an incorrect subsidy amount or ineligibility determination",
+      "Missing the 60-day SEP window entirely and applying as if still in the SEP after Day 60, which the system rejects",
+      "Claiming a Medicaid pathway in a non-expansion state at 138% FPL when the state's actual Medicaid cutoff for non-disabled adults is far lower",
+      "Attempting to enroll in COBRA for a Marketplace plan (COBRA only applies to employer-sponsored group plans, not individual ACA Marketplace plans)"
+    ],
+    "es": [
+      "Documentación de ingresos enviada después del plazo de verificación de 30 días post-inscripción, haciendo que el Mercado cancele la cobertura retroactivamente",
+      "Ingreso reportado de la declaración de impuestos del año anterior en lugar del MAGI proyectado para 2026, resultando en un monto de subsidio incorrecto o determinación de inelegibilidad",
+      "Perder la ventana del SEP de 60 días por completo y solicitar como si todavía estuviera en el SEP después del Día 60, lo cual el sistema rechaza",
+      "Reclamar una ruta de Medicaid en un estado sin expansión al 138% del FPL cuando el límite real de Medicaid del estado para adultos sin discapacidad es mucho menor",
+      "Intentar inscribirse en COBRA para un plan del Mercado (COBRA solo aplica a planes grupales patrocinados por el empleador, no a planes individuales del Mercado ACA)"
+    ]
+  }
+}

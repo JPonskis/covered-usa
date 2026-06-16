@@ -1,0 +1,521 @@
+{
+  "slug": "income-jump-aca",
+  "eventName": {
+    "en": "Income Spiked Mid-Year",
+    "es": "Ingreso Aumentó a Mitad de Año"
+  },
+  "category": "Income Change",
+  "topic": "Avoiding ACA Subsidy Clawback After Mid-Year Income Spike",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-11",
+  "readingTime": "9 min read",
+
+  "topicCluster": "event-sep",
+  "keyTerms": {
+    "en": [
+      "income change ACA subsidy 2026",
+      "mid-year income increase marketplace clawback",
+      "ACA subsidy repayment 2026",
+      "report income change healthcare.gov",
+      "APTC reconciliation 2026",
+      "how to avoid ACA subsidy clawback"
+    ],
+    "es": [
+      "cambio de ingresos subsidio ACA 2026",
+      "aumento de ingresos a mitad de año reembolso ACA",
+      "reconciliación APTC 2026",
+      "reportar cambio de ingresos healthcare.gov",
+      "cómo evitar reembolso de subsidio ACA"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "meta": {
+    "title": {
+      "en": "Income Spiked Mid-Year? Avoid ACA Subsidy Clawback 2026",
+      "es": "¿Ingreso Aumentó a Mitad de Año? Evite Reembolso ACA 2026"
+    },
+    "description": {
+      "en": "Income spiked mid-year 2026? Report changes to healthcare.gov within 30 days to lower your APTC and avoid an IRS clawback on Form 8962 at tax time.",
+      "es": "¿Ingreso aumentó a mitad de 2026? Reporte cambios en healthcare.gov en 30 días para reducir su APTC y evitar reembolso al IRS en el Formulario 8962."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Income Spiked Mid-Year in 2026? Here's How to Avoid an ACA Subsidy Clawback",
+      "es": "¿Sus Ingresos Aumentaron a Mitad de 2026? Así Evita el Reembolso del Subsidio ACA"
+    },
+    "subhero": {
+      "en": "Report the change to healthcare.gov within 30 days. If you wait until tax time, the IRS will recapture excess premium tax credits through Form 8962, and you may owe hundreds or thousands of dollars.",
+      "es": "Reporte el cambio en healthcare.gov en 30 días. Si espera hasta la declaración de impuestos, el IRS reclamará los créditos fiscales de prima en exceso mediante el Formulario 8962 y podría deber cientos o miles de dólares."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "Report income changes within 30 days to avoid a year-end IRS clawback",
+      "es": "Reporte cambios de ingreso en 30 días para evitar reembolso al IRS a fin de año"
+    },
+    "body": {
+      "en": "Every month you receive excess Advanced Premium Tax Credits (APTC) based on your old lower income is money the IRS will recover via Form 8962 at tax filing. For a mid-year income jump from $30,000 to $60,000 (single person, 2026), waiting the full year could create a clawback of $2,000 to $5,000. Report promptly at healthcare.gov or call 1-800-318-2596 to update your income estimate and lower your monthly APTC for the remaining months of 2026.",
+      "es": "Cada mes que recibe Créditos Fiscales de Prima Anticipados (APTC) en exceso basados en su ingreso anterior más bajo es dinero que el IRS recuperará mediante el Formulario 8962 al declarar impuestos. Para un aumento de ingresos a mitad de año de $30,000 a $60,000 (persona soltera, 2026), esperar todo el año podría crear un reembolso de $2,000 a $5,000. Reporte de inmediato en healthcare.gov o llame al 1-800-318-2596 para actualizar su estimación de ingresos y reducir su APTC mensual por los meses restantes de 2026."
+    },
+    "totalTimeISO8601": "P30D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Year-end reconciliation on Form 8962 (tax filing deadline)",
+          "es": "Reconciliación a fin de año en Formulario 8962 (fecha límite de impuestos)"
+        },
+        "days": null
+      },
+      {
+        "label": {
+          "en": "2027 ACA Open Enrollment (if you want to switch plans based on new income)",
+          "es": "Inscripción Abierta ACA 2027 (si desea cambiar de plan según nuevos ingresos)"
+        },
+        "days": null
+      }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "A mid-year income spike in 2026 means you may have received more Advanced Premium Tax Credits (APTC) than your new income justifies. Report the change to healthcare.gov within 30 days to reduce your monthly APTC going forward. At tax time, IRS Form 8962 reconciles total APTC received against your actual 2026 income, and you must repay any excess, subject to repayment caps for incomes under 400% FPL ($63,840 for a single person in 2026). Key actions: update your Marketplace income estimate, consider whether Medicaid still applies if income drops later, and check whether your new income puts you above the 400% FPL cliff, which eliminates subsidies entirely for 2026.",
+    "es": "Un aumento de ingresos a mitad de 2026 significa que es posible que haya recibido más Créditos Fiscales de Prima Anticipados (APTC) de lo que justifica su nuevo ingreso. Reporte el cambio en healthcare.gov en 30 días para reducir su APTC mensual. Al declarar impuestos, el Formulario 8962 del IRS reconcilia el total de APTC recibido con su ingreso real de 2026 y debe reembolsar cualquier exceso, sujeto a límites de reembolso para ingresos bajo el 400% FPL ($63,840 para una persona en 2026). Acciones clave: actualice su estimación de ingresos en el Mercado, considere si Medicaid todavía aplica si los ingresos bajan después, y verifique si su nuevo ingreso lo pone por encima del límite del 400% FPL, que elimina los subsidios por completo para 2026."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "ACA Marketplace subsidies in 2026 are based on your projected annual Modified Adjusted Gross Income (MAGI), not your actual income as it happens. When you enrolled, you estimated your income for the year. Marketplace advance premium tax credits (APTC) were calculated on that estimate and sent directly to your insurer each month to reduce your premium. If your income jumps mid-year, because you got a raise, took a new job, won a freelance contract, received a bonus, sold property, or any other income event, the APTC you are still receiving may be larger than what you actually qualify for based on your new, higher income. The IRS does not discover this mismatch until you file your 2026 federal tax return using Form 8962. At that point, the IRS calculates how much APTC you received versus how much you deserved given your actual annual income, and you owe the difference back. For 2026, the ACA subsidy cliff has returned: enhanced premium tax credits from the American Rescue Plan Act and Inflation Reduction Act expired on January 1, 2026. Income above 400% FPL ($63,840 for a single person, $132,000 for a family of 4) receives zero subsidy. If your income spike pushed you past 400% FPL, every dollar of APTC you received after crossing that line is subject to repayment in full.",
+      "es": "Los subsidios del Mercado ACA en 2026 se basan en su Ingreso Bruto Ajustado Modificado (MAGI) proyectado anual, no en su ingreso real conforme ocurre. Cuando se inscribió, estimó su ingreso para el año. Los créditos fiscales de prima anticipados (APTC) del Mercado se calcularon con base en esa estimación y se enviaron directamente a su aseguradora cada mes para reducir su prima. Si su ingreso aumenta a mitad de año, porque obtuvo un aumento, tomó un nuevo trabajo, ganó un contrato independiente, recibió un bono, vendió una propiedad u otro evento de ingresos, el APTC que sigue recibiendo puede ser mayor de lo que realmente califica según su nuevo ingreso más alto. El IRS no descubre esta discrepancia hasta que presenta su declaración de impuestos federal de 2026 usando el Formulario 8962. En ese momento, el IRS calcula cuánto APTC recibió versus cuánto merecía dado su ingreso anual real, y usted debe devolver la diferencia. Para 2026, el precipicio de subsidios del ACA ha regresado: los créditos fiscales de prima mejorados de la Ley del Plan de Rescate Americano y la Ley de Reducción de Inflación expiraron el 1 de enero de 2026. Los ingresos por encima del 400% FPL ($63,840 para una persona, $132,000 para una familia de 4) no reciben subsidio."
+    },
+    {
+      "en": "Reporting your income change to healthcare.gov as soon as possible, ideally within 30 days, is the most direct way to limit clawback exposure. When you update your income, the Marketplace recalculates your APTC for the remaining months of 2026. You will receive less subsidy each month going forward, but you will not owe a large lump sum at tax time. Most people who miss this step discover the problem in February or March of the following year, when they receive their 1095-A form and try to file their return, only to find they owe the IRS thousands of dollars they were not expecting. This guide walks you through the exact steps to update your income, the repayment cap rules that may limit how much you owe, how to decide between reducing your APTC or waiving it entirely, and what happens if your income is volatile and hard to predict. ACA income limits and related Medicaid income limits for 2026 are also covered so you can understand where the boundaries sit. Unemployment compensation, side income, investment gains, and alimony all count as MAGI under IRS rules, so even one-time income events can push you over a threshold.",
+      "es": "Reportar su cambio de ingresos en healthcare.gov lo antes posible, idealmente en 30 días, es la forma más directa de limitar la exposición al reembolso. Cuando actualiza su ingreso, el Mercado recalcula su APTC para los meses restantes de 2026. Recibirá menos subsidio cada mes en adelante, pero no deberá una gran suma al presentar sus impuestos. La mayoría de personas que omiten este paso descubren el problema en febrero o marzo del año siguiente, cuando reciben el formulario 1095-A e intentan declarar sus impuestos, solo para encontrar que deben miles de dólares al IRS que no esperaban. Esta guía explica los pasos exactos para actualizar su ingreso, las reglas de límite de reembolso que pueden limitar cuánto debe, cómo decidir entre reducir su APTC o renunciarlo completamente, y qué sucede si su ingreso es volátil. Los límites de ingresos del ACA y los límites de ingresos de Medicaid relacionados para 2026 también se cubren."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": {
+        "en": "Calculate your new projected annual MAGI for 2026",
+        "es": "Calcule su nuevo MAGI anual proyectado para 2026"
+      },
+      "text": {
+        "en": "Add all income sources you expect to receive for the full calendar year 2026, not just the new income starting now. MAGI includes wages, self-employment income, unemployment compensation, Social Security (taxable portion), investment gains, alimony received, and rental income. Exclude Medicaid benefits, child support received, and veterans disability payments. Use IRS Publication 974 or the healthcare.gov income estimator to confirm what counts. Compare your new projected MAGI against the 2026 ACA income limits: 138% FPL for Medicaid ($22,025 single, $45,540 family of 4) and 400% FPL for the subsidy ceiling ($63,840 single, $132,000 family of 4).",
+        "es": "Sume todas las fuentes de ingreso que espera recibir durante el año calendario 2026 completo, no solo los nuevos ingresos a partir de ahora. El MAGI incluye salarios, ingresos por trabajo independiente, compensación por desempleo, Seguro Social (porción gravable), ganancias de inversiones, pensión alimenticia recibida e ingresos de alquiler. Excluya los beneficios de Medicaid, la manutención de hijos recibida y los pagos por discapacidad de veteranos. Consulte la Publicación 974 del IRS o el estimador de ingresos de healthcare.gov para confirmar qué cuenta."
+      }
+    },
+    {
+      "name": {
+        "en": "Log in to healthcare.gov and report your income change",
+        "es": "Ingrese a healthcare.gov y reporte su cambio de ingresos"
+      },
+      "text": {
+        "en": "Log in to your healthcare.gov account, open your current 2026 application, and select 'Report a life change' or 'Update my application.' Choose 'Income change' and enter your revised projected annual MAGI. The system will instantly recalculate your eligibility. If you use a state-based Marketplace such as Covered California, MNsure, kynect (Kentucky), or Connect for Health Colorado, log in to that state portal instead. Do not call the Marketplace first; the online update is faster and creates a documented record of when you reported. Keep a screenshot of the confirmation screen showing the date you submitted the update.",
+        "es": "Inicie sesión en su cuenta de healthcare.gov, abra su solicitud actual de 2026 y seleccione 'Reportar un cambio de vida' o 'Actualizar mi solicitud.' Elija 'Cambio de ingresos' e ingrese su MAGI anual proyectado revisado. El sistema recalculará su elegibilidad de inmediato. Si usa un Mercado estatal como Covered California, MNsure, kynect (Kentucky) o Connect for Health Colorado, inicie sesión en ese portal estatal. No llame primero al Mercado; la actualización en línea es más rápida y crea un registro documentado de cuándo reportó. Guarde una captura de pantalla de la pantalla de confirmación con la fecha de envío."
+      }
+    },
+    {
+      "name": {
+        "en": "Decide whether to reduce your APTC or waive it entirely",
+        "es": "Decida si reducir su APTC o renunciarlo por completo"
+      },
+      "text": {
+        "en": "After you submit the income update, the Marketplace will offer you a new, lower APTC amount based on your revised income. You have three choices: (1) accept the lower APTC and pay a higher monthly premium but reduce clawback risk, (2) waive APTC entirely and pay the full premium each month, then claim the full allowable credit on Form 8962 when you file (safest if income is volatile or hard to predict for the year), or (3) keep your current APTC and accept that you will owe some amount at tax filing (acceptable if your income spike was temporary). For income above 400% FPL ($63,840 single in 2026), the correct answer is waive APTC entirely, since no subsidy applies at that income level.",
+        "es": "Después de enviar la actualización de ingresos, el Mercado le ofrecerá un nuevo monto APTC más bajo basado en su ingreso revisado. Tiene tres opciones: (1) aceptar el APTC más bajo y pagar una prima mensual más alta pero reducir el riesgo de reembolso, (2) renunciar al APTC completamente y pagar la prima completa cada mes, luego reclamar el crédito permitido en el Formulario 8962 al declarar (más seguro si el ingreso es volátil), o (3) mantener su APTC actual y aceptar que deberá alguna cantidad al declarar impuestos."
+      }
+    },
+    {
+      "name": {
+        "en": "Check whether your income spike triggers a Special Enrollment Period for a plan change",
+        "es": "Verifique si su aumento de ingresos activa un Período de Inscripción Especial para cambiar de plan"
+      },
+      "text": {
+        "en": "A mid-year income increase alone does not trigger a standard ACA Special Enrollment Period to switch plans. You will keep your current 2026 Marketplace plan. However, if the income change accompanies another qualifying life event, such as a job change that ends employer coverage, a move to a new service area, or a change in household size, you will have a 60-day SEP window to enroll in a different plan. Use that window to compare plans at your new income level, particularly if a higher income disqualifies you from Cost-Sharing Reduction (CSR) on Silver plans or if your new income allows you to choose a Gold plan with lower out-of-pocket costs given reduced subsidies.",
+        "es": "Un aumento de ingresos a mitad de año por sí solo no activa un Período de Inscripción Especial (SEP) estándar del ACA para cambiar de plan. Mantendrá su plan actual del Mercado 2026. Sin embargo, si el cambio de ingresos acompaña otro evento calificador de vida, como un cambio de trabajo que termina la cobertura del empleador, una mudanza a una nueva área de servicio o un cambio en el tamaño del hogar, tendrá una ventana SEP de 60 días para inscribirse en un plan diferente."
+      }
+    },
+    {
+      "name": {
+        "en": "Understand your Form 8962 repayment caps before tax season",
+        "es": "Comprenda sus límites de reembolso del Formulario 8962 antes de la temporada de impuestos"
+      },
+      "text": {
+        "en": "IRS Form 8962 reconciles your actual 2026 income against the APTC you received. If you received excess APTC, the repayment is capped based on your final 2026 income as a percentage of FPL, but only if your income stays under 400% FPL for the full year. For 2026, the repayment cap for a single person at 100-200% FPL is $375; at 200-300% FPL it is $950; at 300-400% FPL it is $1,575. If your income exceeds 400% FPL ($63,840 single, $132,000 family of 4), there is NO cap and you must repay 100% of excess APTC received. Download Form 8962 and IRS Publication 974 from irs.gov to calculate your exact exposure before filing. Also obtain your 1095-A from healthcare.gov, which lists all APTC paid on your behalf during 2026.",
+        "es": "El Formulario 8962 del IRS reconcilia su ingreso real de 2026 con el APTC que recibió. Si recibió APTC en exceso, el reembolso está limitado según su ingreso final de 2026 como porcentaje del FPL, pero solo si su ingreso se mantiene bajo el 400% FPL durante todo el año. Para 2026, el límite de reembolso para una persona soltera al 100-200% FPL es $375; al 200-300% FPL es $950; al 300-400% FPL es $1,575. Si su ingreso supera el 400% FPL ($63,840 individual, $132,000 familia de 4), NO hay límite y debe reembolsar el 100% del APTC en exceso recibido."
+      }
+    },
+    {
+      "name": {
+        "en": "Gather and save documentation for your income change",
+        "es": "Recopile y guarde documentación para su cambio de ingresos"
+      },
+      "text": {
+        "en": "Save records that document when your income change occurred and what your new income level is. Useful documents include your offer letter or first pay stub from a new employer, a signed contract for freelance work showing the payment amount and date, brokerage statements showing the date of a capital gain or sale, or any letter confirming a raise with the effective date. These records protect you if the IRS questions the timing of your APTC reduction. When you file your 2026 return, attach your 1095-A, complete Form 8962, and cross-reference the income figure on your Form 1040 line 11. Use the IRS APTC estimator at irs.gov if you want to calculate your likely refund or balance before filing.",
+        "es": "Guarde registros que documenten cuándo ocurrió su cambio de ingresos y cuál es su nuevo nivel de ingresos. Documentos útiles incluyen su carta de oferta o primer talón de pago de un nuevo empleador, un contrato firmado para trabajo independiente que muestre el monto y la fecha de pago, estados de cuenta de corretaje que muestren la fecha de una ganancia de capital o venta, o cualquier carta que confirme un aumento con la fecha de vigencia. Al presentar su declaración de 2026, adjunte su 1095-A, complete el Formulario 8962 y compare el ingreso en la línea 11 del Formulario 1040."
+      }
+    },
+    {
+      "name": {
+        "en": "If income drops again later in 2026, report that change too",
+        "es": "Si los ingresos bajan de nuevo más adelante en 2026, reporte ese cambio también"
+      },
+      "text": {
+        "en": "Income volatility is common for freelancers, gig workers, small business owners, and anyone with variable pay. If your income drops after the spike, return to healthcare.gov and report the lower income. Your APTC will be recalculated upward, lowering your monthly premium again. Medicaid is year-round with no deadline for enrollment, so if your income falls under 138% FPL ($22,025 single in 2026), apply immediately through your state Medicaid agency or healthcare.gov. Keep all income update confirmation emails for your records.",
+        "es": "La volatilidad de ingresos es común para trabajadores independientes, trabajadores de plataformas, dueños de pequeñas empresas y cualquier persona con pago variable. Si sus ingresos bajan después del aumento, regrese a healthcare.gov y reporte el ingreso más bajo. Su APTC se recalculará al alza, reduciendo de nuevo su prima mensual. Medicaid es de inscripción año redondo sin fecha límite, así que si su ingreso cae por debajo del 138% FPL ($22,025 individual en 2026), aplique de inmediato a través de su agencia estatal de Medicaid o healthcare.gov."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opción", "Costo típico", "Mejor para", "Fecha límite"]
+    },
+    "rows": [
+      {
+        "en": ["Report income to Marketplace immediately, reduce APTC", "Higher monthly premium; lower or no clawback at tax time", "Anyone whose income spiked by $10,000+ and expects to stay at higher income", "30 days from income change (report ASAP)"],
+        "es": ["Reportar ingreso al Mercado de inmediato, reducir APTC", "Prima mensual más alta; reembolso menor o nulo al declarar impuestos", "Cualquier persona cuyo ingreso aumentó $10,000+ y espera mantenerse en ingreso más alto", "30 días desde el cambio de ingreso (reportar lo antes posible)"]
+      },
+      {
+        "en": ["Waive APTC entirely, pay full premium, claim credit at tax filing", "Full premium each month (no subsidy during year); potential refund at filing", "Volatile income; income near 400% FPL cliff; prefer certainty over monthly savings", "Any time during plan year at healthcare.gov"],
+        "es": ["Renunciar al APTC completamente, pagar prima completa, reclamar crédito al declarar", "Prima completa cada mes (sin subsidio durante el año); posible reembolso al declarar", "Ingresos volátiles; ingresos cerca del límite del 400% FPL; prefiere certeza sobre ahorros mensuales", "En cualquier momento durante el año del plan en healthcare.gov"]
+      },
+      {
+        "en": ["Keep current APTC, accept partial clawback at tax filing", "Lower monthly premium continues; clawback capped at $375-$1,575 if under 400% FPL", "Temporary income spike expected to reverse before year-end; income stays under 400% FPL", "No action required (but risky if income stays high)"],
+        "es": ["Mantener APTC actual, aceptar reembolso parcial al declarar impuestos", "Prima mensual más baja continúa; reembolso limitado a $375-$1,575 si está bajo el 400% FPL", "Aumento temporal de ingresos esperado que se revertirá antes de fin de año; ingresos bajo 400% FPL", "No se requiere acción (pero riesgoso si los ingresos se mantienen altos)"]
+      },
+      {
+        "en": ["Switch to employer plan if job change triggered income spike", "Employer plan premium (often lower than full Marketplace cost)", "Job change brought new employer coverage; new employer offers SEP within 30 days of hire", "30-day enrollment window at new employer (also triggers 60-day Marketplace SEP to drop old plan)"],
+        "es": ["Cambiar al plan del empleador si el cambio de trabajo generó el aumento de ingresos", "Prima del plan del empleador (a menudo más baja que el costo completo del Mercado)", "Cambio de trabajo que trajo nueva cobertura del empleador; nuevo empleador ofrece SEP dentro de 30 días de contratación", "Ventana de inscripción de 30 días en el nuevo empleador (también activa SEP de 60 días del Mercado para cancelar el plan anterior)"]
+      },
+      {
+        "en": ["Medicaid (if income later drops under 138% FPL)", "Free or near-free", "Income drops back down after spike; expansion state; household under $22,025 single / $45,540 family of 4 (2026)", "Year-round, no deadline"],
+        "es": ["Medicaid (si el ingreso baja después bajo el 138% FPL)", "Gratis o casi gratis", "El ingreso baja de nuevo después del aumento; estado con expansión; hogar bajo $22,025 individual / $45,540 familia de 4 (2026)", "Todo el año, sin fecha límite"]
+      }
+    ],
+    "footnote": {
+      "en": "2026 ACA subsidy cliff restored: income above 400% FPL ($63,840 single, $132,000 family of 4) receives zero premium tax credit. Enhanced PTCs from ARPA and the Inflation Reduction Act expired January 1, 2026. IRS repayment caps apply only if final 2026 MAGI remains under 400% FPL.",
+      "es": "Precipicio de subsidios ACA 2026 restaurado: los ingresos por encima del 400% FPL ($63,840 individual, $132,000 familia de 4) no reciben crédito fiscal de prima. Los PTC mejorados de ARPA y la Ley de Reducción de Inflación expiraron el 1 de enero de 2026. Los límites de reembolso del IRS aplican solo si el MAGI final de 2026 se mantiene bajo el 400% FPL."
+    },
+    "source": "IRS Publication 974 (2026), healthcare.gov APTC update guidance, KFF 2026 ACA Marketplace analysis"
+  },
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "2026 ACA Subsidy Thresholds and Medicaid Eligibility by Household Size (48 contiguous states + DC)",
+      "headers": ["Household size", "138% FPL (Medicaid expansion line)", "400% FPL (subsidy cliff 2026)", "Monthly APTC repayment cap at 300-400% FPL"],
+      "rows": [
+        ["1", "$22,025", "$63,840", "$1,575"],
+        ["2", "$29,820", "$86,400", "$1,575"],
+        ["3", "$37,615", "$108,960", "$3,150"],
+        ["4", "$45,540", "$132,000", "$3,150"],
+        ["5", "$53,335", "$154,560", "$3,150"],
+        ["6", "$61,130", "$177,120", "$3,150"],
+        ["7", "$68,925", "$199,680", "$4,725"],
+        ["8", "$76,720", "$222,240", "$4,725"],
+        ["Each additional person", "+ $7,795", "+ $22,560", "Varies by income band"]
+      ],
+      "footnote": "Alaska and Hawaii have higher FPL thresholds. The 400% FPL cliff returned January 1, 2026 after enhanced PTCs expired. Repayment caps apply only when final annual MAGI is under 400% FPL; above 400% FPL, 100% of excess APTC is owed. Repayment cap figures are from IRS Rev. Proc. 2026-22 (projected; verify on irs.gov before filing).",
+      "source": "HHS ASPE 2026 Poverty Guidelines; IRS Publication 974; IRS Rev. Proc. 2026-22"
+    },
+    "es": {
+      "caption": "Umbrales de Subsidios ACA 2026 y Elegibilidad de Medicaid por Tamaño del Hogar (48 estados contiguos + DC)",
+      "headers": ["Tamaño del hogar", "138% FPL (línea de expansión Medicaid)", "400% FPL (límite subsidio 2026)", "Límite de reembolso APTC mensual al 300-400% FPL"],
+      "rows": [
+        ["1", "$22,025", "$63,840", "$1,575"],
+        ["2", "$29,820", "$86,400", "$1,575"],
+        ["3", "$37,615", "$108,960", "$3,150"],
+        ["4", "$45,540", "$132,000", "$3,150"],
+        ["5", "$53,335", "$154,560", "$3,150"],
+        ["6", "$61,130", "$177,120", "$3,150"],
+        ["7", "$68,925", "$199,680", "$4,725"],
+        ["8", "$76,720", "$222,240", "$4,725"],
+        ["Cada persona adicional", "+ $7,795", "+ $22,560", "Varía según tramo de ingresos"]
+      ],
+      "footnote": "Alaska y Hawái tienen umbrales FPL más altos. El precipicio del 400% FPL regresó el 1 de enero de 2026 después de que expiraron los PTC mejorados. Los límites de reembolso aplican solo cuando el MAGI anual final está bajo el 400% FPL; por encima del 400% FPL, se debe el 100% del APTC en exceso.",
+      "source": "HHS ASPE Guías de Pobreza 2026; Publicación 974 del IRS; IRS Rev. Proc. 2026-22"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "Recent pay stubs or offer letter showing new salary or wages (documents the income change date and amount)",
+      "Signed contract or payment confirmation for freelance or consulting income (self-employment income documentation)",
+      "Brokerage or bank statements showing capital gains, dividend income, or asset sale proceeds received in 2026",
+      "Social Security numbers for all household members applying for coverage adjustments",
+      "1095-A form from healthcare.gov showing all APTC paid on your behalf year-to-date (available in your healthcare.gov account under 'Tax forms')",
+      "IRS Form 8962 (download from irs.gov) to calculate Premium Tax Credit reconciliation for your 2026 tax return",
+      "Screenshot or email confirmation from healthcare.gov showing the date you reported the income change and the new APTC amount",
+      "Any letter documenting a raise, bonus award, or alimony change with an effective date (establishes the reporting timeline)"
+    ],
+    "es": [
+      "Talones de pago recientes o carta de oferta que muestre el nuevo salario o wages (documenta la fecha y el monto del cambio de ingresos)",
+      "Contrato firmado o confirmación de pago por ingresos independientes o de consultoría (documentación de ingresos por trabajo propio)",
+      "Estados de cuenta de corretaje o banco que muestren ganancias de capital, ingresos por dividendos o ganancias de venta de activos recibidos en 2026",
+      "Números de Seguro Social de todos los miembros del hogar que solicitan ajustes de cobertura",
+      "Formulario 1095-A de healthcare.gov que muestra todos los APTC pagados en su nombre hasta la fecha (disponible en su cuenta de healthcare.gov en 'Formularios fiscales')",
+      "Formulario 8962 del IRS (descargar de irs.gov) para calcular la reconciliación del Crédito Fiscal de Prima para su declaración de impuestos de 2026",
+      "Captura de pantalla o confirmación por correo de healthcare.gov que muestre la fecha en que reportó el cambio de ingresos y el nuevo monto APTC",
+      "Cualquier carta que documente un aumento, bono o cambio de pensión alimenticia con fecha de vigencia (establece el calendario de reporte)"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Failing to report the income change at all, then owing the full excess APTC at tax time with no repayment cap protection if income exceeded 400% FPL",
+      "Reporting only the new monthly wage without annualizing, causing the Marketplace to underestimate the full-year income and issue an insufficient APTC reduction",
+      "Forgetting to include one-time income events such as a capital gain, bonus, lawsuit settlement, or cryptocurrency sale that pushed MAGI over a threshold",
+      "Updating income on the wrong form (calling the insurer instead of updating healthcare.gov directly), which does not change the APTC amount sent to the insurer",
+      "Missing the 1095-A on the tax return entirely, which causes the IRS to flag the return for incomplete reconciliation and delay any refund"
+    ],
+    "es": [
+      "No reportar el cambio de ingresos en absoluto, luego deber todo el APTC en exceso al presentar impuestos sin protección del límite de reembolso si los ingresos superaron el 400% FPL",
+      "Reportar solo el nuevo salario mensual sin anualizarlo, causando que el Mercado subestime el ingreso del año completo y emita una reducción insuficiente del APTC",
+      "Olvidar incluir eventos de ingresos únicos como una ganancia de capital, bono, acuerdo de demanda o venta de criptomonedas que empujó el MAGI sobre un umbral",
+      "Actualizar el ingreso en el formulario incorrecto (llamar a la aseguradora en lugar de actualizar directamente healthcare.gov), lo que no cambia el monto APTC enviado a la aseguradora",
+      "Omitir el 1095-A en la declaración de impuestos por completo, lo que hace que el IRS marque la declaración por reconciliación incompleta y retrase cualquier reembolso"
+    ]
+  },
+
+  "commonMistakes": {
+    "intro": {
+      "en": "The costliest mistakes people make after a mid-year income spike on an ACA Marketplace plan:",
+      "es": "Los errores más costosos que cometen las personas después de un aumento de ingresos a mitad de año con un plan del Mercado ACA:"
+    },
+    "items": [
+      {
+        "en": "Not reporting the income increase to healthcare.gov promptly. Every month of excess APTC after a spike adds to the tax-time clawback. Reporting within 30 days limits future exposure.",
+        "es": "No reportar el aumento de ingresos en healthcare.gov de inmediato. Cada mes de APTC en exceso después del aumento se suma al reembolso en la temporada de impuestos. Reportar en 30 días limita la exposición futura."
+      },
+      {
+        "en": "Assuming the 400% FPL repayment cap still applies after 2025. Enhanced PTCs expired January 1, 2026. Anyone above 400% FPL ($63,840 single) owes 100% of excess APTC back, with no cap.",
+        "es": "Asumir que el límite de reembolso del 400% FPL todavía aplica después de 2025. Los PTC mejorados expiraron el 1 de enero de 2026. Cualquier persona por encima del 400% FPL ($63,840 individual) debe devolver el 100% del APTC en exceso, sin límite."
+      },
+      {
+        "en": "Forgetting that one-time income counts as MAGI. A single freelance contract, a capital gain from selling stock, or an inherited IRA distribution all count toward your 2026 MAGI for subsidy purposes.",
+        "es": "Olvidar que el ingreso único cuenta como MAGI. Un solo contrato independiente, una ganancia de capital por vender acciones o una distribución de IRA heredada cuentan para su MAGI de 2026 a efectos de subsidio."
+      },
+      {
+        "en": "Not obtaining the 1095-A and completing Form 8962 before filing. Tax preparers who skip this step file an incomplete return that the IRS will reject or audit.",
+        "es": "No obtener el 1095-A y completar el Formulario 8962 antes de declarar. Los preparadores de impuestos que omiten este paso presentan una declaración incompleta que el IRS rechazará o auditará."
+      },
+      {
+        "en": "Confusing the income update process with a plan change. Reporting income to healthcare.gov changes your APTC but does not switch your plan. To change plans, you need a qualifying life event and an active SEP window.",
+        "es": "Confundir el proceso de actualización de ingresos con un cambio de plan. Reportar ingresos a healthcare.gov cambia su APTC pero no cambia su plan. Para cambiar de plan, necesita un evento calificador de vida y una ventana SEP activa."
+      }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "How the ACA Premium Tax Credit Reconciliation Works in 2026",
+        "es": "Cómo Funciona la Reconciliación del Crédito Fiscal de Prima ACA en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "ACA Marketplace premium tax credits in 2026 are paid in advance directly to your insurer each month. These advance payments are called Advanced Premium Tax Credits (APTC). The IRS uses your estimated annual MAGI to determine how much APTC you qualify for. At tax time, IRS Form 8962 reconciles the APTC you actually received against what you were entitled to based on your real 2026 income. Form 8962 is not optional: any household that received APTC must file it. If you received more APTC than you were entitled to, you repay the excess as an additional tax on your federal return. If you received less than you were entitled to (because your income ended up lower than estimated), you receive the difference as a refund.",
+          "es": "Los créditos fiscales de prima del Mercado ACA en 2026 se pagan por anticipado directamente a su aseguradora cada mes. Estos pagos anticipados se denominan Créditos Fiscales de Prima Anticipados (APTC). El IRS usa su MAGI anual estimado para determinar cuánto APTC califica. Al presentar impuestos, el Formulario 8962 del IRS reconcilia el APTC que recibió realmente con lo que tenía derecho según su ingreso real de 2026. El Formulario 8962 no es opcional: cualquier hogar que haya recibido APTC debe presentarlo."
+        },
+        {
+          "en": "The 2026 subsidy cliff matters here critically. Enhanced premium tax credits from ARPA (2021) and the Inflation Reduction Act (2022) extended ACA subsidies above 400% FPL and reduced premiums for everyone. Those enhancements expired on January 1, 2026. Under 2026 law, anyone with MAGI above 400% FPL ($63,840 for a single person, $132,000 for a family of 4 using 2026 FPL figures) is entitled to zero premium tax credit. If you received APTC based on an income estimate below 400% FPL and your actual income turned out to be above 400% FPL, you owe back every dollar of APTC you received for the months after your income crossed the 400% line, with no repayment cap. This is the scenario that creates the largest clawback bills: a worker who estimated $55,000, received $4,000 in APTC for the year, then received a $25,000 bonus and ended at $80,000, owes the full $4,000 back without any cap.",
+          "es": "El precipicio de subsidios de 2026 es crucial aquí. Los créditos fiscales de prima mejorados de ARPA (2021) y la Ley de Reducción de Inflación (2022) extendieron los subsidios ACA por encima del 400% FPL y redujeron las primas para todos. Esas mejoras expiraron el 1 de enero de 2026. Bajo la ley de 2026, cualquier persona con MAGI superior al 400% FPL ($63,840 para una persona, $132,000 para una familia de 4) tiene derecho a cero crédito fiscal de prima. Si recibió APTC basado en una estimación de ingresos por debajo del 400% FPL y su ingreso real resultó ser superior al 400% FPL, debe devolver cada dólar de APTC que recibió sin límite de reembolso."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "APTC Repayment Caps in 2026: What You Actually Owe If Under 400% FPL",
+        "es": "Límites de Reembolso APTC en 2026: Lo que Realmente Debe si Está Bajo el 400% FPL"
+      },
+      "paragraphs": [
+        {
+          "en": "IRS repayment caps exist to protect lower-income households who underestimate their income but stay under 400% FPL for the full year. For tax year 2026, the IRS establishes repayment caps in its annual Revenue Procedure. Using the most recent IRS guidance (Rev. Proc. 2026-22 projected; verify at irs.gov before filing), the caps are structured by income band expressed as a percentage of FPL: at 100-200% FPL, the cap is approximately $375 for individuals and $750 for families; at 200-300% FPL, approximately $950 individual and $1,900 family; at 300-400% FPL, approximately $1,575 individual and $3,150 family. These caps apply only when your final 2026 MAGI lands between 100% and 400% FPL. If your income falls below 100% FPL in a non-expansion state and you received APTC (the coverage gap scenario), different rules apply. Consult the irs.gov instructions for Form 8962 for the exact table for 2026.",
+          "es": "Los límites de reembolso del IRS existen para proteger a los hogares de menores ingresos que subestiman su ingreso pero se mantienen bajo el 400% FPL durante todo el año. Para el año fiscal 2026, los límites establecidos según la guía más reciente del IRS son: al 100-200% FPL, el límite es aproximadamente $375 para individuos y $750 para familias; al 200-300% FPL, aproximadamente $950 individual y $1,900 familiar; al 300-400% FPL, aproximadamente $1,575 individual y $3,150 familiar. Estos límites aplican solo cuando su MAGI final de 2026 queda entre el 100% y el 400% FPL."
+        },
+        {
+          "en": "Proactive income reporting to healthcare.gov after a mid-year spike can prevent these caps from ever becoming relevant. For every month you update your income before receiving excess APTC, you eliminate the repayment entirely for that month. For example, a single person who earns $55,000 in the first half of 2026 and then jumps to $75,000 annualized in July should report that change immediately. Reporting in July means the Marketplace stops sending excess APTC from August through December. The January to June APTC excess, now calculated against the actual full-year income, may still create a modest clawback, but the second-half exposure is eliminated. This month-by-month math is why every financial advisor and tax preparer recommends reporting income changes as soon as they occur rather than waiting for year-end reconciliation.",
+          "es": "El reporte proactivo de ingresos a healthcare.gov después de un aumento a mitad de año puede evitar que estos límites sean relevantes. Por cada mes que actualiza su ingreso antes de recibir APTC en exceso, elimina el reembolso por completo para ese mes. El cálculo mes a mes es por eso que todo asesor financiero y preparador de impuestos recomienda reportar cambios de ingresos tan pronto ocurren en lugar de esperar la reconciliación de fin de año."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "When a Mid-Year Income Spike Also Triggers a Special Enrollment Period",
+        "es": "Cuando un Aumento de Ingresos a Mitad de Año También Activa un Período de Inscripción Especial"
+      },
+      "paragraphs": [
+        {
+          "en": "A pure income increase, with no other change, does not trigger a Special Enrollment Period under ACA rules. You cannot switch Marketplace plans mid-year simply because your income went up. You keep your current 2026 plan and adjust your APTC going forward. However, three scenarios commonly combine a mid-year income spike with a simultaneous qualifying life event that does trigger a 60-day SEP window.",
+          "es": "Un aumento de ingresos puro, sin ningún otro cambio, no activa un Período de Inscripción Especial bajo las reglas ACA. No puede cambiar de plan del Mercado a mitad de año simplemente porque sus ingresos aumentaron. Sin embargo, tres escenarios combinan comúnmente un aumento de ingresos a mitad de año con un evento calificador de vida simultáneo que sí activa una ventana SEP de 60 días."
+        },
+        {
+          "en": "Scenario 1: New job that brings employer coverage. A job change that increases income often simultaneously ends your current Marketplace plan eligibility, since you now have access to employer-sponsored coverage. This loss-of-Marketplace-status, or the new offer of employer coverage at work, triggers a standard 60-day loss-of-coverage SEP. Use the 60-day window to enroll in the employer plan or to drop your Marketplace plan (if you choose the employer option). Scenario 2: Move to a new state or new Marketplace service area. Relocation triggers a 60-day Move / Relocation SEP. At your new income level, different plans at different premium points may be available. Scenario 3: Household size change. Marriage, birth, or a dependent aging onto or off of your plan can combine with an income change to trigger a 60-day Family Change SEP. In all three scenarios, the 60-day window starts from the qualifying life event date, not from the income change date. The qualifying life event is the trigger; the income change is an input into the new plan selection calculation.",
+          "es": "Escenario 1: Nuevo trabajo que trae cobertura del empleador. Un cambio de trabajo que aumenta los ingresos a menudo termina simultáneamente su elegibilidad para el plan del Mercado actual, ya que ahora tiene acceso a cobertura patrocinada por el empleador. Esto activa un SEP estándar de pérdida de cobertura de 60 días. Escenario 2: Mudanza a un nuevo estado o nueva área de servicio del Mercado. La reubicación activa un SEP de Mudanza de 60 días. Escenario 3: Cambio en el tamaño del hogar. El matrimonio, el nacimiento o un dependiente que cumple la mayoría de edad en su plan puede combinarse con un cambio de ingresos para activar un SEP de Cambio Familiar de 60 días."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "State-Based Marketplace Portals: Where to Report If You Are Not on healthcare.gov",
+        "es": "Portales del Mercado Estatal: Dónde Reportar si No Está en healthcare.gov"
+      },
+      "paragraphs": [
+        {
+          "en": "Seventeen states plus the District of Columbia operate their own ACA Marketplace portals rather than using the federal healthcare.gov platform. If you enrolled through one of these state-based exchanges, you must report your income change through that state's portal, not healthcare.gov. The state portals are: Covered California (CA), Connect for Health Colorado (CO), Access Health CT (CT), DC Health Link (DC), Hawaii Health Connector (HI), Your Health Idaho (ID), Get Covered Illinois (IL), MNsure (Minnesota), Nevada Health Link (NV), HealthSource RI (RI), GetCoveredNJ (NJ), New Mexico BeWellNM (NM), New York State of Health (NY), Pennie (PA), kynect (KY), Maryland Health Connection (MD), and Washington Healthplanfinder (WA). When you log in to your state portal, look for an option labeled 'Report a Change,' 'Update My Information,' or 'Income Change.' The process mirrors healthcare.gov but the timeline and confirmation screens may differ by state. Medi-Cal (California's Medicaid) and Washington Apple Health both allow year-round enrollment for income drops below 138% FPL through those same state portals.",
+          "es": "Diecisiete estados más el Distrito de Columbia operan sus propios portales del Mercado ACA en lugar de usar la plataforma federal healthcare.gov. Si se inscribió a través de uno de estos intercambios estatales, debe reportar su cambio de ingresos a través del portal de ese estado. Los portales estatales son: Covered California (CA), Connect for Health Colorado (CO), Access Health CT (CT), DC Health Link (DC), Hawaii Health Connector (HI), Your Health Idaho (ID), Get Covered Illinois (IL), MNsure (Minnesota), Nevada Health Link (NV), HealthSource RI (RI), GetCoveredNJ (NJ), New Mexico BeWellNM (NM), New York State of Health (NY), Pennie (PA), kynect (Kentucky), Maryland Health Connection (MD) y Washington Healthplanfinder (WA). Medi-Cal (Medicaid de California) y Washington Apple Health permiten inscripción durante todo el año para caídas de ingresos por debajo del 138% FPL a través de esos mismos portales estatales."
+        }
+      ]
+    }
+  ],
+
+  "comparisonNarrative": {
+    "heading": {
+      "en": "Reduce APTC Now vs Waive APTC vs Accept Clawback: Which Should You Choose?",
+      "es": "Reducir APTC Ahora vs Renunciar al APTC vs Aceptar el Reembolso: ¿Cuál Debe Elegir?"
+    },
+    "body": {
+      "en": "Three strategies exist for managing a mid-year income spike on an ACA Marketplace plan in 2026. Reducing your APTC immediately by reporting to healthcare.gov is the most common recommendation: your monthly premium increases, but the tax-time clawback shrinks proportionally. For a single person who earned $40,000 in the first half of 2026 and then got a job at $80,000 annualized starting July 1, reporting immediately reduces or eliminates APTC for the July through December months, limiting the Form 8962 reconciliation to the first-half excess only. Waiving APTC entirely, paying the full unsubsidized premium each month, and then claiming the full allowable credit at year-end is the safest strategy for volatile income: freelancers with uncertain annual totals, small business owners whose net profit fluctuates, and anyone near the 400% FPL cliff who risks a total clawback. Accepting the clawback makes sense only when the income spike is temporary, you are confident your final annual income stays under 400% FPL, and the IRS repayment cap (up to $1,575 individual, $3,150 family for 300-400% FPL incomes in 2026) limits your exposure to an acceptable level. The decision matrix for 2026: if final MAGI will exceed $63,840 (single) or $132,000 (family of 4), waive APTC immediately because no repayment cap applies above 400% FPL. If final MAGI will stay under 400% FPL, calculate whether the cap-limited clawback is less painful than higher monthly premiums for the rest of the year.",
+      "es": "Tres estrategias existen para manejar un aumento de ingresos a mitad de año con un plan del Mercado ACA en 2026. Reducir su APTC de inmediato reportando a healthcare.gov es la recomendación más común: su prima mensual aumenta, pero el reembolso en el momento de impuestos disminuye proporcionalmente. Renunciar al APTC completamente, pagar la prima completa sin subsidio cada mes y luego reclamar el crédito permitido completo a fin de año es la estrategia más segura para ingresos volátiles: trabajadores independientes con totales anuales inciertos, dueños de pequeñas empresas cuya ganancia neta fluctúa y cualquier persona cerca del límite del 400% FPL que arriesga un reembolso total. Aceptar el reembolso tiene sentido solo cuando el aumento es temporal, está seguro de que su ingreso anual final permanecerá bajo el 400% FPL y el límite de reembolso del IRS limita su exposición a un nivel aceptable. La matriz de decisión para 2026: si el MAGI final superará $63,840 (individual) o $132,000 (familia de 4), renuncia al APTC de inmediato porque no aplica límite de reembolso por encima del 400% FPL."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What happens if I don't report a mid-year income increase to healthcare.gov?",
+        "answer": "Every month you receive APTC based on your old, lower income estimate creates excess credit that the IRS will recover through Form 8962 when you file your 2026 federal tax return. If your final 2026 MAGI stays under 400% FPL ($63,840 single, $132,000 family of 4), a repayment cap limits your liability to $375 to $1,575 depending on your income band. If your income exceeded 400% FPL at any point and you received APTC during those months, you owe 100% of that excess back with no cap. The IRS will add the clawback to your 2026 tax liability, potentially eliminating your refund or creating a balance due you may not have budgeted for."
+      },
+      {
+        "question": "How do I update my income on healthcare.gov after a raise or new job?",
+        "answer": "Log in to healthcare.gov, select your 2026 Marketplace application, and click 'Report a life change.' Choose the income change option, enter your new projected annual MAGI (annualize your new monthly or bi-weekly income), and submit. The Marketplace will display a new APTC calculation. You can accept the lower APTC, reduce it further, or waive it entirely. Save the confirmation screen with the submission date. If you enrolled through a state Marketplace such as Covered California, MNsure, Pennie, or kynect, use that state's portal instead of healthcare.gov. The income update takes effect on the first day of the following month after you submit."
+      },
+      {
+        "question": "Does a mid-year income increase trigger a Special Enrollment Period?",
+        "answer": "No. A pure income increase, with no other qualifying life event, does not trigger an ACA Special Enrollment Period. You cannot switch Marketplace plans based solely on income changes mid-year. Your 60-day SEP window only opens if a separate qualifying life event occurs simultaneously: losing employer coverage when you change jobs, moving to a new state or service area, a change in household size from marriage or birth, or losing Medicaid eligibility because your income rose above 138% FPL. In that last case, loss of Medicaid triggers a 60-day SEP to enroll in a Marketplace plan, which is an important qualifying life event for people who previously qualified for Medicaid."
+      },
+      {
+        "question": "What is the ACA subsidy repayment cap and does it still apply in 2026?",
+        "answer": "The IRS repayment cap limits how much excess APTC you must repay if your final annual MAGI stays between 100% and 400% FPL. For 2026, the caps are approximately $375 to $1,575 for individuals and $750 to $3,150 for families depending on income band (verify the exact 2026 figures in IRS Rev. Proc. 2026-22 at irs.gov). The critical 2026 change: enhanced premium tax credits from ARPA and the Inflation Reduction Act expired January 1, 2026. If your final MAGI exceeds 400% FPL ($63,840 single, $132,000 family of 4), no repayment cap applies and you owe back 100% of excess APTC received above the 400% FPL threshold."
+      },
+      {
+        "question": "What counts as income for ACA subsidy purposes after a job change?",
+        "answer": "ACA Marketplace subsidies use Modified Adjusted Gross Income (MAGI) as defined by the IRS, which includes wages and salaries, self-employment net income, unemployment compensation, taxable Social Security benefits, alimony received under pre-2019 divorce decrees, rental income net of expenses, capital gains, dividend income, and most other taxable income. MAGI excludes child support received, SNAP and TANF benefits, veterans disability payments, worker's compensation, and certain student financial aid. When you change jobs mid-year, use your actual earnings to date plus your expected earnings for the remainder of 2026 to project your full-year MAGI. Include severance pay, sign-on bonuses, and any contractor income during gaps in employment."
+      },
+      {
+        "question": "What if my income fluctuates and I can't accurately predict my annual MAGI?",
+        "answer": "Variable income, common among freelancers, gig workers, small business owners, and commission-based workers, makes APTC management difficult. Two strategies work best. First, estimate conservatively (higher) if you expect income to continue rising, which protects you from a large clawback at year-end. Second, waive APTC entirely and pay the full unsubsidized premium each month, then claim the full allowable credit when you file your 2026 return using Form 8962. The waive-and-reconcile approach eliminates clawback risk entirely and can result in a refund if your actual income ends lower than expected. Some tax advisors also recommend quarterly reviews of your income estimate and updating healthcare.gov each quarter to stay aligned with actual earnings."
+      },
+      {
+        "question": "What is Form 8962 and do I have to file it?",
+        "answer": "IRS Form 8962, the Premium Tax Credit form, is required for every household that enrolled in a Marketplace plan and received any APTC during the tax year. You must attach Form 8962 to your federal income tax return. To complete it, you need your 1095-A form from healthcare.gov (or your state Marketplace), which lists the monthly APTC paid on your behalf and the Marketplace's benchmark Silver plan premium. Form 8962 calculates whether you received the right amount of APTC given your actual annual income, resulting in either additional tax owed (if you received too much APTC) or an additional refund (if you received too little). Skipping Form 8962 when you received APTC causes the IRS to flag your return and delay processing. Download the form and instructions at irs.gov."
+      },
+      {
+        "question": "Can I get Medicaid if my income drops again after the spike?",
+        "answer": "Yes. Medicaid enrollment is year-round with no deadline in all 40 expansion states plus DC. If your income drops below 138% FPL ($22,025 for a single person, $45,540 for a family of 4 in 2026) at any point, apply immediately through healthcare.gov or your state Medicaid agency. Medicaid in expansion states charges little to no premium. State Medicaid programs include Medi-Cal in California, Apple Health in Washington, MassHealth in Massachusetts, BadgerCare in Wisconsin, AHCCCS in Arizona, and TennCare in Tennessee. Loss of Medicaid eligibility when your income rises above 138% FPL triggers a 60-day Special Enrollment Period to enroll in a Marketplace plan, so the two programs serve as a safety net for fluctuating incomes."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué pasa si no reporto un aumento de ingresos a mitad de año en healthcare.gov?",
+        "answer": "Cada mes que recibe APTC basado en su estimación de ingresos anterior más baja crea un crédito en exceso que el IRS recuperará mediante el Formulario 8962 al presentar su declaración federal de impuestos de 2026. Si su MAGI final de 2026 permanece bajo el 400% FPL ($63,840 individual, $132,000 familia de 4), un límite de reembolso limita su responsabilidad a $375 a $1,575 según su tramo de ingresos. Si sus ingresos superaron el 400% FPL y recibió APTC durante esos meses, debe devolver el 100% de ese exceso sin límite. El IRS añadirá el reembolso a su obligación tributaria de 2026, potencialmente eliminando su reembolso o creando un saldo a pagar."
+      },
+      {
+        "question": "¿Cómo actualizo mis ingresos en healthcare.gov después de un aumento o nuevo trabajo?",
+        "answer": "Inicie sesión en healthcare.gov, seleccione su solicitud del Mercado de 2026 y haga clic en 'Reportar un cambio de vida.' Elija la opción de cambio de ingresos, ingrese su nuevo MAGI anual proyectado (anualice su nuevo ingreso mensual o quincenal) y envíe. El Mercado mostrará un nuevo cálculo de APTC. Puede aceptar el APTC más bajo, reducirlo más o renunciarlo por completo. Guarde la pantalla de confirmación con la fecha de envío. Si se inscribió a través de un Mercado estatal como Covered California, MNsure, Pennie o kynect, use el portal de ese estado en lugar de healthcare.gov."
+      },
+      {
+        "question": "¿Un aumento de ingresos a mitad de año activa un Período de Inscripción Especial?",
+        "answer": "No. Un aumento de ingresos puro, sin otro evento calificador de vida, no activa un Período de Inscripción Especial ACA. No puede cambiar de plan del Mercado basándose únicamente en cambios de ingresos a mitad de año. Su ventana SEP de 60 días solo se abre si ocurre simultáneamente un evento calificador de vida separado: perder cobertura del empleador al cambiar de trabajo, mudarse a un nuevo estado o área de servicio, un cambio en el tamaño del hogar por matrimonio o nacimiento, o perder elegibilidad de Medicaid porque sus ingresos superaron el 138% FPL."
+      },
+      {
+        "question": "¿Qué es el límite de reembolso del subsidio ACA y todavía aplica en 2026?",
+        "answer": "El límite de reembolso del IRS limita cuánto APTC en exceso debe reembolsar si su MAGI anual final permanece entre el 100% y el 400% FPL. Para 2026, los límites son aproximadamente $375 a $1,575 para individuos y $750 a $3,150 para familias según el tramo de ingresos. El cambio crítico de 2026: los créditos fiscales de prima mejorados de ARPA y la Ley de Reducción de Inflación expiraron el 1 de enero de 2026. Si su MAGI final supera el 400% FPL ($63,840 individual, $132,000 familia de 4), no aplica límite de reembolso y debe devolver el 100% del APTC en exceso."
+      },
+      {
+        "question": "¿Qué cuenta como ingreso para los subsidios ACA después de un cambio de trabajo?",
+        "answer": "Los subsidios del Mercado ACA usan el Ingreso Bruto Ajustado Modificado (MAGI) según lo define el IRS, que incluye salarios, ingresos netos de trabajo independiente, compensación por desempleo, beneficios gravables del Seguro Social, pensión alimenticia recibida bajo decretos de divorcio anteriores a 2019, ingresos de alquiler netos de gastos, ganancias de capital, ingresos por dividendos y la mayoría de otros ingresos gravables. Cuando cambia de trabajo a mitad de año, use sus ganancias reales hasta la fecha más sus ganancias esperadas para el resto de 2026 para proyectar su MAGI del año completo."
+      },
+      {
+        "question": "¿Qué pasa si mis ingresos fluctúan y no puedo predecir con precisión mi MAGI anual?",
+        "answer": "Los ingresos variables, comunes entre trabajadores independientes, trabajadores de plataformas, dueños de pequeñas empresas y trabajadores a comisión, hacen difícil la gestión del APTC. Dos estrategias funcionan mejor. Primero, estime de manera conservadora (más alto) si espera que los ingresos continúen aumentando, lo que lo protege de un gran reembolso a fin de año. Segundo, renuncie al APTC completamente y pague la prima completa sin subsidio cada mes, luego reclame el crédito permitido completo al presentar su declaración de 2026 usando el Formulario 8962. Algunos asesores fiscales también recomiendan revisiones trimestrales de su estimación de ingresos."
+      },
+      {
+        "question": "¿Qué es el Formulario 8962 y debo presentarlo?",
+        "answer": "El Formulario 8962 del IRS, el formulario de Crédito Fiscal de Prima, es obligatorio para todo hogar que se inscribió en un plan del Mercado y recibió cualquier APTC durante el año fiscal. Debe adjuntar el Formulario 8962 a su declaración de impuestos federal. Para completarlo, necesita el formulario 1095-A de healthcare.gov, que lista el APTC mensual pagado en su nombre. El Formulario 8962 calcula si recibió el monto correcto de APTC dado su ingreso anual real, resultando en impuestos adicionales adeudados o un reembolso adicional. Descargue el formulario e instrucciones en irs.gov."
+      },
+      {
+        "question": "¿Puedo obtener Medicaid si mis ingresos bajan de nuevo después del aumento?",
+        "answer": "Sí. La inscripción en Medicaid es durante todo el año sin fecha límite en los 40 estados de expansión más DC. Si sus ingresos bajan por debajo del 138% FPL ($22,025 para una persona, $45,540 para una familia de 4 en 2026), aplique de inmediato a través de healthcare.gov o su agencia estatal de Medicaid. Los programas estatales de Medicaid incluyen Medi-Cal en California, Apple Health en Washington, MassHealth en Massachusetts, BadgerCare en Wisconsin, AHCCCS en Arizona y TennCare en Tennessee. La pérdida de elegibilidad de Medicaid cuando sus ingresos superan el 138% FPL activa un Período de Inscripción Especial de 60 días para inscribirse en un plan del Mercado."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "ACA Income Limits 2026", "es": "Límites de Ingresos ACA 2026" },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": { "en": "Federal Poverty Level 2026", "es": "Nivel Federal de Pobreza 2026" },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": { "en": "Medicaid Income Limits 2026", "es": "Límites de Ingresos Medicaid 2026" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "Health Insurance Screener", "es": "Examinador de Seguro de Salud" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "IRS Publication 974: Premium Tax Credit",
+      "url": "https://www.irs.gov/publications/p974",
+      "note": {
+        "en": "Authoritative IRS guidance on APTC advance payments, reconciliation, repayment caps, and Form 8962 instructions.",
+        "es": "Guía autorizada del IRS sobre pagos anticipados APTC, reconciliación, límites de reembolso e instrucciones del Formulario 8962."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Report income and household changes",
+      "url": "https://www.healthcare.gov/reporting-changes/why-report-changes/",
+      "note": {
+        "en": "Official guidance on why and how to report mid-year income changes to update APTC and avoid year-end repayment.",
+        "es": "Guía oficial sobre por qué y cómo reportar cambios de ingresos a mitad de año para actualizar el APTC y evitar reembolso a fin de año."
+      }
+    },
+    {
+      "name": "HHS ASPE 2026 Federal Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "2026 Federal Poverty Level guidelines used to calculate 138% FPL (Medicaid) and 400% FPL (ACA subsidy cliff) income thresholds.",
+        "es": "Guías del Nivel Federal de Pobreza de 2026 usadas para calcular los umbrales de ingresos del 138% FPL (Medicaid) y 400% FPL (precipicio de subsidios ACA)."
+      }
+    },
+    {
+      "name": "KFF: ACA Premium Tax Credit Changes After ARPA Expiration 2026",
+      "url": "https://www.kff.org/affordable-care-act/issue-brief/",
+      "note": {
+        "en": "KFF analysis of the return of the 400% FPL subsidy cliff in 2026 after enhanced PTCs from ARPA and IRA expired January 1, 2026.",
+        "es": "Análisis de KFF sobre el regreso del precipicio de subsidios del 400% FPL en 2026 después de que los PTC mejorados de ARPA y la IRA expiraron el 1 de enero de 2026."
+      }
+    },
+    {
+      "name": "CMS.gov: Marketplace Special Enrollment Periods",
+      "url": "https://www.cms.gov/marketplace/outreach-and-education/understanding-the-marketplace",
+      "note": {
+        "en": "CMS guidance on qualifying life events and SEP eligibility rules, confirming that income changes alone do not trigger a new SEP.",
+        "es": "Guía de CMS sobre eventos calificadores de vida y reglas de elegibilidad SEP, confirmando que los cambios de ingresos por sí solos no activan un nuevo SEP."
+      }
+    }
+  ]
+}
