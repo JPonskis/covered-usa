@@ -1,0 +1,530 @@
+{
+  "slug": "medicare-savings-program-minnesota",
+  "subtype": "state-eligibility",
+  "topicCluster": "medicaid-eligibility-minnesota",
+  "stateBrand": "Minnesota Medical Assistance",
+  "pageType": "eligibility",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "keyTerms": {
+    "en": ["Medicare Savings Program Minnesota", "QMB Minnesota 2026", "SLMB Minnesota 2026", "Minnesota Medicare cost help", "Minnesota MSP income limits 2026", "Minnesota Medical Assistance Medicare"],
+    "es": ["Programa de Ahorros de Medicare Minnesota", "QMB Minnesota 2026", "SLMB Minnesota 2026", "ayuda costos Medicare Minnesota", "limites ingresos MSP Minnesota 2026", "Asistencia Medica Minnesota Medicare"]
+  },
+  "question": {
+    "en": "Do I Qualify for a Medicare Savings Program in Minnesota? (2026)",
+    "es": "¿Califico para un Programa de Ahorros de Medicare en Minnesota? (2026)"
+  },
+  "shortAnswer": {
+    "en": "Yes, if your monthly income is at or below $1,781 (single) or $2,400 (married).",
+    "es": "Si, si sus ingresos mensuales son de $1,781 o menos (individual) o $2,400 (matrimonio)."
+  },
+  "fullAnswer": {
+    "en": "Yes, if you have Medicare Part A or Part B and your income is below the 2026 Minnesota threshold for one of four programs (QMB, SLMB, QI, or QDWI). Minnesota runs these programs under its Medical Assistance system and uses state-funded, more generous asset limits ($10,000 for individuals, $18,000 for married couples for QMB, SLMB, and QI) than the federal floor. Enrollment also qualifies you automatically for Extra Help on Part D prescription costs, worth up to $5,700 a year.",
+    "es": "Si, si tiene Medicare Parte A o Parte B y sus ingresos estan por debajo del umbral 2026 de Minnesota para uno de los cuatro programas (QMB, SLMB, QI o QDWI). Minnesota administra estos programas bajo su sistema de Asistencia Medica y utiliza limites de activos mas generosos financiados por el estado ($10,000 para individuos, $18,000 para parejas casadas en QMB, SLMB y QI) que el piso federal. La inscripcion tambien lo califica automaticamente para la Ayuda Adicional en los costos de medicamentos de la Parte D, con un valor de hasta $5,700 al año."
+  },
+  "category": "Medicare",
+  "topic": "Minnesota Medicare Savings Programs Eligibility 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-06-14",
+  "readingTime": "7 min read",
+
+  "meta": {
+    "title": {
+      "en": "Minnesota Medicare Savings Programs: 2026 Eligibility Guide | CoveredUSA",
+      "es": "Programas de Ahorros de Medicare en Minnesota: Guia de Elegibilidad 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "2026 Minnesota Medicare Savings Program eligibility: QMB, SLMB, QI, and QDWI income limits, asset limits, benefits, and how to apply through Minnesota Medical Assistance.",
+      "es": "Elegibilidad 2026 para Programas de Ahorros de Medicare en Minnesota: limites de ingresos y activos QMB, SLMB, QI y QDWI, beneficios y como solicitar a traves de la Asistencia Medica de Minnesota."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Do I Qualify for a Medicare Savings Program in Minnesota? (2026)",
+      "es": "¿Califico para un Programa de Ahorros de Medicare en Minnesota? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Minnesota Medicare Savings Programs (MSP) are joint federal-state programs that pay some or all Medicare costs for residents with limited income and assets. Minnesota administers these programs through its Medical Assistance (Medicaid) system and, as of 2026, sets asset limits higher than the federal minimums, making more Minnesotans eligible than they might expect. The four programs cover different expenses: QMB pays your Medicare premiums, deductibles, and cost-sharing; SLMB and QI pay only the Part B premium; and QDWI pays the Part A premium for disabled workers under 65.",
+      "es": "Los Programas de Ahorros de Medicare (MSP) de Minnesota son programas federales-estatales conjuntos que pagan algunos o todos los costos de Medicare para residentes con ingresos y activos limitados. Minnesota administra estos programas a traves de su sistema de Asistencia Medica (Medicaid) y, a partir de 2026, establece limites de activos mas altos que los minimos federales, lo que hace que mas minnesotanos sean elegibles de lo que podrian esperar. Los cuatro programas cubren diferentes gastos: QMB paga sus primas de Medicare, deducibles y costos compartidos; SLMB y QI pagan solo la prima de la Parte B; y QDWI paga la prima de la Parte A para trabajadores discapacitados menores de 65 anos."
+    },
+    {
+      "en": "Every Minnesota resident enrolled in any MSP tier also qualifies automatically for Extra Help (Part D Low Income Subsidy), which caps drug costs at $5.10 for generics and $12.65 for brand-name drugs per fill in 2026, eliminating the standard Part D deductible and annual out-of-pocket cap structure. This page covers 2026 income and asset limits, what each program pays for, how to apply through your Minnesota county human services office, and what to do if you are denied.",
+      "es": "Cada residente de Minnesota inscrito en cualquier nivel de MSP tambien califica automaticamente para la Ayuda Adicional (Subsidio de Bajos Ingresos de la Parte D), que limita los costos de medicamentos a $5.10 para genericos y $12.65 para medicamentos de marca por surtido en 2026, eliminando el deducible estandar de la Parte D y la estructura del limite anual de gastos de bolsillo. Esta pagina cubre los limites de ingresos y activos 2026, que paga cada programa, como solicitar a traves de su oficina de servicios humanos del condado de Minnesota, y que hacer si se le niega."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Program", "Monthly Income Limit (Individual)", "Monthly Income Limit (Married)", "What Minnesota Pays"],
+      "es": ["Programa", "Limite de Ingresos Mensual (Individual)", "Limite de Ingresos Mensual (Matrimonio)", "Lo que Paga Minnesota"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "QMB (Qualified Medicare Beneficiary)", "es": "QMB (Beneficiario Calificado de Medicare)" },
+          { "en": "$1,325/month", "es": "$1,325/mes" },
+          { "en": "$1,784/month", "es": "$1,784/mes" },
+          { "value": { "en": "Part A + B premiums, deductibles, copays, coinsurance", "es": "Primas Parte A + B, deducibles, copagos, coseguro" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "SLMB (Specified Low-Income Beneficiary)", "es": "SLMB (Beneficiario de Medicare de Bajos Ingresos Especificado)" },
+          { "en": "$1,585/month", "es": "$1,585/mes" },
+          { "en": "$2,135/month", "es": "$2,135/mes" },
+          { "value": { "en": "Part B premium only ($202.90/month in 2026)", "es": "Prima Parte B solamente ($202.90/mes en 2026)" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "QI (Qualifying Individual)", "es": "QI (Individuo Calificado)" },
+          { "en": "$1,781/month", "es": "$1,781/mes" },
+          { "en": "$2,400/month", "es": "$2,400/mes" },
+          { "value": { "en": "Part B premium only; first-come first-served", "es": "Prima Parte B solamente; por orden de llegada" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "QDWI (Qualified Disabled Working Individual)", "es": "QDWI (Individuo Discapacitado Trabajador Calificado)" },
+          { "en": "$2,629/month", "es": "$2,629/mes" },
+          { "en": "$3,456/month", "es": "$3,456/mes" },
+          { "value": { "en": "Part A premium only; must be under 65 and employed", "es": "Prima Parte A solamente; debe tener menos de 65 anos y estar empleado" }, "status": "partial" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Minnesota income limits are set by the state under its Medical Assistance program and are recalculated July 1 each year. Asset limits for QMB, SLMB, and QI: $10,000 individual / $18,000 married couple (higher than the 2026 federal floor of $9,950 / $14,910). QDWI asset limits: $4,000 individual / $6,000 married. All enrollees in any tier automatically receive Part D Extra Help.",
+      "es": "Los limites de ingresos de Minnesota son establecidos por el estado bajo su programa de Asistencia Medica y se recalculan el 1 de julio de cada ano. Limites de activos para QMB, SLMB y QI: $10,000 individual / $18,000 pareja casada (mas alto que el piso federal 2026 de $9,950 / $14,910). Limites de activos QDWI: $4,000 individual / $6,000 casado. Todos los inscritos en cualquier nivel reciben automaticamente la Ayuda Adicional de la Parte D."
+    },
+    "source": "LawHelpMN.org 2026 MSP Fact Sheet (S-16), Minnesota DHS Medical Assistance MSP Policy, NCOA 2026 MSP Coverage Guide"
+  },
+
+  "householdSizeTable": {
+    "caption": {
+      "en": "Minnesota Medicare Savings Programs income limits by household size 2026",
+      "es": "Limites de ingresos de los Programas de Ahorros de Medicare de Minnesota por tamano del hogar 2026"
+    },
+    "year": 2026,
+    "rows": [
+      {
+        "size": "1",
+        "incomeLimit": { "en": "$1,325/month (QMB) to $1,781/month (QI)", "es": "$1,325/mes (QMB) a $1,781/mes (QI)" },
+        "notes": { "en": "Individual; MSP uses individual/couple only, not full household scale", "es": "Individual; MSP usa solo individual/pareja, no escala completa de hogar" }
+      },
+      {
+        "size": "2",
+        "incomeLimit": { "en": "$1,784/month (QMB) to $2,400/month (QI)", "es": "$1,784/mes (QMB) a $2,400/mes (QI)" },
+        "notes": { "en": "Married couple living together", "es": "Pareja casada que vive junta" }
+      },
+      {
+        "size": "3",
+        "incomeLimit": { "en": "See county agency: MSP does not use a household-of-3 scale", "es": "Consulte la agencia del condado: MSP no usa escala de hogar de 3" },
+        "notes": { "en": "MSP eligibility is based on the applicant and spouse only", "es": "La elegibilidad de MSP se basa unicamente en el solicitante y el conyuge" }
+      },
+      {
+        "size": "4",
+        "incomeLimit": { "en": "See county agency: MSP does not use a household-of-4 scale", "es": "Consulte la agencia del condado: MSP no usa escala de hogar de 4" },
+        "notes": { "en": "MSP eligibility is based on the applicant and spouse only", "es": "La elegibilidad de MSP se basa unicamente en el solicitante y el conyuge" }
+      },
+      {
+        "size": "5",
+        "incomeLimit": { "en": "See county agency: MSP does not use a household-of-5 scale", "es": "Consulte la agencia del condado: MSP no usa escala de hogar de 5" },
+        "notes": { "en": "MSP eligibility is based on the applicant and spouse only", "es": "La elegibilidad de MSP se basa unicamente en el solicitante y el conyuge" }
+      },
+      {
+        "size": "6",
+        "incomeLimit": { "en": "See county agency: MSP does not use a household-of-6 scale", "es": "Consulte la agencia del condado: MSP no usa escala de hogar de 6" },
+        "notes": { "en": "MSP eligibility is based on the applicant and spouse only", "es": "La elegibilidad de MSP se basa unicamente en el solicitante y el conyuge" }
+      },
+      {
+        "size": "7",
+        "incomeLimit": { "en": "See county agency: MSP does not use a household-of-7 scale", "es": "Consulte la agencia del condado: MSP no usa escala de hogar de 7" },
+        "notes": { "en": "MSP eligibility is based on the applicant and spouse only", "es": "La elegibilidad de MSP se basa unicamente en el solicitante y el conyuge" }
+      },
+      {
+        "size": "8",
+        "incomeLimit": { "en": "See county agency: MSP does not use a household-of-8 scale", "es": "Consulte la agencia del condado: MSP no usa escala de hogar de 8" },
+        "notes": { "en": "MSP eligibility is based on the applicant and spouse only", "es": "La elegibilidad de MSP se basa unicamente en el solicitante y el conyuge" }
+      },
+      {
+        "size": "Each additional",
+        "incomeLimit": { "en": "N/A: MSP counts applicant + spouse only, not additional household members", "es": "N/A: MSP cuenta solo al solicitante y al conyuge, no a miembros adicionales del hogar" },
+        "notes": { "en": "Children and dependents do not increase the MSP income limit", "es": "Los hijos y dependientes no aumentan el limite de ingresos de MSP" }
+      }
+    ],
+    "footnote": {
+      "en": "Medicare Savings Programs use a two-person maximum household for income calculations: the applicant alone or the applicant plus a spouse. Unlike standard Medicaid (Medical Assistance), MSP does not apply a per-person increment for households larger than two. Income limits above reflect the range from the most restrictive program (QMB) to the most generous (QI). Limits reset July 1, 2026.",
+      "es": "Los Programas de Ahorros de Medicare utilizan un maximo de dos personas para los calculos de ingresos del hogar: el solicitante solo o el solicitante mas un conyuge. A diferencia de Medicaid estandar (Asistencia Medica), MSP no aplica un incremento por persona para hogares mayores de dos. Los limites de ingresos anteriores reflejan el rango desde el programa mas restrictivo (QMB) hasta el mas generoso (QI). Los limites se restablecen el 1 de julio de 2026."
+    },
+    "source": "LawHelpMN.org Medicare Savings Programs Fact Sheet 2026 (S-16), Minnesota DHS Eligibility Policy Manual Section 4.2"
+  },
+
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Step 1: Confirm you have Medicare. You must currently have Medicare Part A or Part B (or both). If you are not yet enrolled in Medicare, contact Social Security at 1-800-772-1213 first.",
+        "es": "Paso 1: Confirme que tiene Medicare. Debe tener actualmente Medicare Parte A o Parte B (o ambas). Si aun no esta inscrito en Medicare, comuniquese primero con el Seguro Social al 1-800-772-1213."
+      },
+      {
+        "en": "Step 2: Gather your documents. Collect proof of Medicare enrollment, recent income verification (pay stubs, Social Security award letter, pension statement), bank and asset statements, and proof of Minnesota residency.",
+        "es": "Paso 2: Reuna sus documentos. Recopile prueba de inscripcion en Medicare, verificacion de ingresos recientes (talones de pago, carta de adjudicacion del Seguro Social, estado de cuenta de pension), estados de cuenta bancarios y de activos, y prueba de residencia en Minnesota."
+      },
+      {
+        "en": "Step 3: Complete the application. Use form DHS-3876 (MHCP Application for Certain Populations). Download it at mn.gov/dhs or call your county human services office to have one mailed to you.",
+        "es": "Paso 3: Complete la solicitud. Use el formulario DHS-3876 (Solicitud MHCP para Ciertas Poblaciones). Descarguela en mn.gov/dhs o llame a la oficina de servicios humanos de su condado para que se la envien por correo."
+      },
+      {
+        "en": "Step 4: Submit to your county or tribal human services office. Drop off, mail, or fax the completed form with your documentation. Minnesota has 87 counties; find your local office at mn.gov/dhs/county-directory.",
+        "es": "Paso 4: Envie a la oficina de servicios humanos de su condado o tribu. Entregue, envie por correo o por fax el formulario completo con su documentacion. Minnesota tiene 87 condados; encuentre su oficina local en mn.gov/dhs/county-directory."
+      },
+      {
+        "en": "Step 5: Await a written determination. The county agency must send you a written decision. If approved, Minnesota Medical Assistance will begin paying your Medicare cost-sharing going forward. QMB status also requires your Medicare providers to stop billing you for cost-sharing.",
+        "es": "Paso 5: Espere una determinacion escrita. La agencia del condado debe enviarle una decision por escrito. Si se aprueba, la Asistencia Medica de Minnesota comenzara a pagar sus costos compartidos de Medicare en adelante. El estado de QMB tambien requiere que sus proveedores de Medicare dejen de cobrarle por costos compartidos."
+      }
+    ],
+    "govStartingUrl": "https://mn.gov/dhs/people-we-serve/seniors/health-care/health-care-programs/programs-and-services/help-with-medicare-costs.jsp",
+    "documentsNeeded": [
+      { "en": "Medicare card showing Part A and/or Part B enrollment", "es": "Tarjeta de Medicare que muestra la inscripcion en la Parte A y/o Parte B" },
+      { "en": "Proof of income: Social Security award letter, recent pay stubs, pension statements, or 1099 forms", "es": "Prueba de ingresos: carta de adjudicacion del Seguro Social, talones de pago recientes, estados de cuenta de pension o formularios 1099" },
+      { "en": "Bank statements (checking, savings) for the past 1 to 3 months", "es": "Estados de cuenta bancarios (corriente, ahorros) de los ultimos 1 a 3 meses" },
+      { "en": "Other asset documentation: CDs, stocks, bonds, life insurance cash value", "es": "Otra documentacion de activos: CD, acciones, bonos, valor en efectivo del seguro de vida" },
+      { "en": "Proof of Minnesota residency: utility bill, lease, or official mail with your address", "es": "Prueba de residencia en Minnesota: factura de servicios publicos, contrato de arrendamiento o correo oficial con su direccion" },
+      { "en": "Identity documents: driver's license, state ID, or passport", "es": "Documentos de identidad: licencia de conducir, identificacion estatal o pasaporte" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Income above the program threshold for your marital status (most common reason)", "es": "Ingresos por encima del umbral del programa para su estado civil (razon mas comun)" },
+      { "en": "Assets exceeding the limit ($10,000 individual or $18,000 married for QMB, SLMB, QI in 2026)", "es": "Activos que superan el limite ($10,000 individual o $18,000 casado para QMB, SLMB, QI en 2026)" },
+      { "en": "Not enrolled in Medicare Part A or Part B at time of application", "es": "No inscrito en Medicare Parte A o Parte B al momento de la solicitud" },
+      { "en": "Missing or incomplete documentation submitted with the application", "es": "Documentacion faltante o incompleta enviada con la solicitud" },
+      { "en": "QI program funding exhausted for the year (QI is first-come, first-served)", "es": "Fondos del programa QI agotados para el ano (QI es por orden de llegada)" }
+    ],
+    "deadline": {
+      "en": "Year-round: Minnesota MSP has no enrollment window. Apply any time. Income limits reset July 1, 2026.",
+      "es": "Durante todo el ano: el MSP de Minnesota no tiene periodo de inscripcion. Solicite en cualquier momento. Los limites de ingresos se restablecen el 1 de julio de 2026."
+    }
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Quick Answer: Which Minnesota MSP Tier Do You Qualify For?",
+        "es": "Respuesta Rapida: ¿A Que Nivel de MSP de Minnesota Califica Usted?"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes, Minnesota Medicare beneficiaries with income below $1,781 a month (single) or $2,400 a month (married couple) qualify for at least one MSP tier in 2026. Eligibility requires current Medicare Part A or Part B enrollment, Minnesota residency, and assets below $10,000 (individual) or $18,000 (married couple). QMB covers Part A and Part B premiums plus all cost-sharing. SLMB and QI pay only the Part B premium of $202.90 a month.",
+          "es": "Si, los beneficiarios de Medicare en Minnesota con ingresos inferiores a $1,781 al mes (individual) o $2,400 al mes (pareja casada) califican para al menos un nivel de MSP en 2026. La elegibilidad requiere inscripcion actual en Medicare Parte A o Parte B, residencia en Minnesota y activos por debajo de $10,000 (individual) o $18,000 (pareja casada). QMB cubre las primas de la Parte A y la Parte B mas todos los costos compartidos. SLMB y QI pagan solo la prima de la Parte B de $202.90 al mes."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Minnesota MSP Income Limits by Program (2026)",
+        "es": "Limites de Ingresos del MSP de Minnesota por Programa (2026)"
+      },
+      "paragraphs": [
+        {
+          "en": "Minnesota sets MSP income limits through its Medical Assistance program. These limits are slightly different from the federal standard and reset each July 1. For the period January 1 to June 30, 2026, Minnesota's thresholds are listed below. MSP does not use MAGI (Modified Adjusted Gross Income) as standard Medicaid does. Instead, MSP uses Method B income calculations, which allow deductions for disability-related work expenses and certain earned income. Family size and household composition work differently in MSP than in Medicaid expansion: MSP counts only the applicant and a spouse, not children or other household members, for income limit purposes.",
+          "es": "Minnesota establece los limites de ingresos de MSP a traves de su programa de Asistencia Medica. Estos limites son ligeramente diferentes del estandar federal y se restablecen cada 1 de julio. Para el periodo del 1 de enero al 30 de junio de 2026, los umbrales de Minnesota se enumeran a continuacion. MSP no usa MAGI (Ingreso Bruto Ajustado Modificado) como lo hace Medicaid estandar. En cambio, MSP usa calculos de ingresos del Metodo B, que permiten deducciones para gastos de trabajo relacionados con discapacidad y ciertos ingresos ganados. El tamano de la familia y la composicion del hogar funcionan de manera diferente en MSP que en la expansion de Medicaid: MSP cuenta solo al solicitante y un conyuge, no a los hijos u otros miembros del hogar, para los propositos del limite de ingresos."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Minnesota Medicare Savings Programs income and asset limits by program type 2026",
+          "es": "Limites de ingresos y activos de los Programas de Ahorros de Medicare de Minnesota por tipo de programa 2026"
+        },
+        "headers": {
+          "en": ["Program", "Individual Income/mo", "Couple Income/mo", "Asset Limit (Individual)", "Asset Limit (Couple)", "Benefits Paid"],
+          "es": ["Programa", "Ingreso Individual/mes", "Ingreso Pareja/mes", "Limite de Activos (Individual)", "Limite de Activos (Pareja)", "Beneficios Pagados"]
+        },
+        "rows": [
+          {
+            "en": ["QMB", "$1,325", "$1,784", "$10,000", "$18,000", "Part A + B premiums, deductibles, copays, coinsurance"],
+            "es": ["QMB", "$1,325", "$1,784", "$10,000", "$18,000", "Primas Parte A + B, deducibles, copagos, coseguro"]
+          },
+          {
+            "en": ["SLMB", "$1,585", "$2,135", "$10,000", "$18,000", "Part B premium only ($202.90/month)"],
+            "es": ["SLMB", "$1,585", "$2,135", "$10,000", "$18,000", "Prima Parte B solamente ($202.90/mes)"]
+          },
+          {
+            "en": ["QI", "$1,781", "$2,400", "$10,000", "$18,000", "Part B premium only; first-come, first-served"],
+            "es": ["QI", "$1,781", "$2,400", "$10,000", "$18,000", "Prima Parte B solamente; por orden de llegada"]
+          },
+          {
+            "en": ["QDWI", "$2,629", "$3,456", "$4,000", "$6,000", "Part A premium only; must be employed, under 65"],
+            "es": ["QDWI", "$2,629", "$3,456", "$4,000", "$6,000", "Prima Parte A solamente; debe estar empleado, menor de 65"]
+          }
+        ],
+        "footnote": {
+          "en": "Minnesota asset limits for QMB, SLMB, and QI ($10,000 / $18,000) exceed the 2026 federal floor ($9,950 / $14,910), reflecting state-funded expansion. All income and asset figures are for January 1 to June 30, 2026; thresholds adjust July 1, 2026.",
+          "es": "Los limites de activos de Minnesota para QMB, SLMB y QI ($10,000 / $18,000) superan el piso federal 2026 ($9,950 / $14,910), lo que refleja la expansion financiada por el estado. Todas las cifras de ingresos y activos son para el 1 de enero al 30 de junio de 2026; los umbrales se ajustan el 1 de julio de 2026."
+        },
+        "source": "LawHelpMN.org 2026 MSP Fact Sheet S-16, Minnesota DHS Eligibility Policy Manual Section 4.2"
+      }
+    },
+    {
+      "heading": {
+        "en": "What Each Minnesota MSP Tier Covers in 2026",
+        "es": "Lo que Cubre Cada Nivel del MSP de Minnesota en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Minnesota's QMB program is the most comprehensive of the four tiers. QMB covers the Part A hospital insurance premium (if you owe one, typically $285 to $518 a month in 2026 if you have fewer than 30 quarters of work history), the Part B premium of $202.90 a month in 2026, the Part A inpatient deductible of $1,736 per benefit period in 2026, the Part B deductible of $283 in 2026, and all Medicare coinsurance and copayments. Critically, federal law prohibits any Medicare provider from billing QMB enrollees for cost-sharing. If a provider bills you, you can report them to the Minnesota Department of Human Services.",
+          "es": "El programa QMB de Minnesota es el mas completo de los cuatro niveles. QMB cubre la prima del seguro de hospitalizacion de la Parte A (si la debe, tipicamente $285 a $518 al mes en 2026 si tiene menos de 30 trimestres de historial laboral), la prima de la Parte B de $202.90 al mes en 2026, el deducible de hospitalizacion de la Parte A de $1,736 por periodo de beneficios en 2026, el deducible de la Parte B de $283 en 2026 y todos los coseguros y copagos de Medicare. Fundamentalmente, la ley federal prohibe que cualquier proveedor de Medicare cobre a los inscritos en QMB por costos compartidos. Si un proveedor le cobra, puede reportarlo al Departamento de Servicios Humanos de Minnesota."
+        },
+        {
+          "en": "SLMB and QI both pay only the Part B premium of $202.90 a month in 2026, saving enrollees about $2,435 a year. The distinction between SLMB and QI is that QI has limited federal funding and is awarded on a first-come, first-served basis within each calendar year. Once QI funding runs out statewide, new applicants are waitlisted until the next funding year begins. SLMB does not face this restriction. QDWI covers only the Part A premium for individuals under 65 who are disabled and have returned to work at or above the substantial gainful activity level.",
+          "es": "SLMB y QI pagan unicamente la prima de la Parte B de $202.90 al mes en 2026, ahorrando a los inscritos aproximadamente $2,435 al ano. La distincion entre SLMB y QI es que QI tiene financiamiento federal limitado y se otorga por orden de llegada dentro de cada ano calendario. Una vez que el financiamiento de QI se agota en todo el estado, los nuevos solicitantes quedan en lista de espera hasta que comience el proximo ano de financiamiento. SLMB no enfrenta esta restriccion. QDWI cubre solo la prima de la Parte A para personas menores de 65 anos que son discapacitadas y han vuelto al trabajo al nivel de actividad laboral sustancial o por encima de este."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Minnesota's State-Funded Asset Limit Expansion",
+        "es": "Expansion del Limite de Activos Financiada por el Estado de Minnesota"
+      },
+      "paragraphs": [
+        {
+          "en": "Minnesota uses state Medicaid funds to set asset limits for QMB, SLMB, and QI above the federal floor. In 2026, the federal asset limits for these programs are $9,950 for an individual and $14,910 for a married couple. Minnesota sets its limits at $10,000 for an individual and $18,000 for a married couple. The gap is largest for married couples: Minnesota allows $3,090 more in assets than the federal floor before a couple becomes ineligible. This reflects Minnesota's state policy decision to extend MSP to more Medicare beneficiaries with modest savings.",
+          "es": "Minnesota utiliza fondos estatales de Medicaid para establecer limites de activos para QMB, SLMB y QI por encima del piso federal. En 2026, los limites federales de activos para estos programas son $9,950 para un individuo y $14,910 para una pareja casada. Minnesota establece sus limites en $10,000 para un individuo y $18,000 para una pareja casada. La brecha es mayor para las parejas casadas: Minnesota permite $3,090 mas en activos que el piso federal antes de que una pareja sea inelegible. Esto refleja la decision de politica estatal de Minnesota de extender MSP a mas beneficiarios de Medicare con ahorros modestos."
+        },
+        {
+          "en": "Minnesota also does not count certain assets when determining eligibility. Excluded assets include your primary home (regardless of value), one vehicle, household furnishings and personal items, prepaid burial plans and life insurance with face value under $1,500, and business assets needed for self-employment. This exclusion list means many Minnesotans who believe they have too many assets still qualify for MSP once excluded items are subtracted from the countable asset total.",
+          "es": "Minnesota tampoco cuenta ciertos activos al determinar la elegibilidad. Los activos excluidos incluyen su residencia principal (independientemente del valor), un vehiculo, muebles y articulos personales del hogar, planes de entierro prepagados y seguro de vida con valor nominal inferior a $1,500, y activos comerciales necesarios para el trabajo por cuenta propia. Esta lista de exclusiones significa que muchos minnesotanos que creen tener demasiados activos aun califican para MSP una vez que se restan los articulos excluidos del total de activos computables."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Part D Extra Help: The Automatic Bonus of Minnesota MSP Enrollment",
+        "es": "Ayuda Adicional de la Parte D: El Bono Automatico de la Inscripcion en MSP de Minnesota"
+      },
+      "paragraphs": [
+        {
+          "en": "Every Minnesota resident enrolled in any MSP tier automatically receives Part D Extra Help (also called Low Income Subsidy, or LIS). Social Security Administration is notified by Minnesota DHS after enrollment, and Extra Help is applied without a separate application. In 2026, Extra Help for full-benefit dual-eligible QMB enrollees means no Part D premium (as long as enrolled in a benchmark plan), no Part D deductible, and copays of $5.10 for generics and $12.65 for brand-name drugs per fill. SLMB and QI enrollees receive a similar subsidy, with slightly different copay tiers.",
+          "es": "Cada residente de Minnesota inscrito en cualquier nivel de MSP recibe automaticamente la Ayuda Adicional de la Parte D (tambien llamada Subsidio de Bajos Ingresos o LIS). La Administracion del Seguro Social es notificada por el DHS de Minnesota despues de la inscripcion, y la Ayuda Adicional se aplica sin una solicitud separada. En 2026, la Ayuda Adicional para los inscritos en QMB con elegibilidad dual de beneficio completo significa sin prima de la Parte D (siempre que este inscrito en un plan de referencia), sin deducible de la Parte D y copagos de $5.10 para genericos y $12.65 para medicamentos de marca por surtido. Los inscritos en SLMB y QI reciben un subsidio similar, con niveles de copago ligeramente diferentes."
+        },
+        {
+          "en": "The combined value of MSP and Extra Help for a QMB enrollee in Minnesota can reach $8,000 to $10,000 per year in saved Medicare costs, depending on the person's health utilization. For a beneficiary hospitalized once a year, QMB eliminates the $1,736 Part A deductible plus 20% coinsurance on physician and outpatient services (which is uncapped in Original Medicare without a Medigap policy). That coinsurance exposure alone can reach several thousand dollars in a single hospitalization episode.",
+          "es": "El valor combinado de MSP y la Ayuda Adicional para un inscrito en QMB en Minnesota puede alcanzar $8,000 a $10,000 por ano en costos de Medicare ahorrados, dependiendo de la utilizacion de salud de la persona. Para un beneficiario hospitalizado una vez al ano, QMB elimina el deducible de la Parte A de $1,736 mas el 20% de coseguro en servicios medicos y ambulatorios (que no tiene limite en Medicare Original sin una poliza Medigap). Esa exposicion al coseguro sola puede alcanzar varios miles de dolares en un solo episodio de hospitalizacion."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Apply for Minnesota Medical Assistance MSP",
+        "es": "Como Solicitar el MSP de Asistencia Medica de Minnesota"
+      },
+      "paragraphs": [
+        {
+          "en": "Minnesota MSP applications are submitted to your county or tribal human services office using form DHS-3876. Minnesota has 87 counties; find your local office using the directory at mn.gov/dhs. The Minnesota Aging Pathways (SHIP) counselors at 1-800-333-2433 provide free application assistance Monday through Friday, 8 a.m. to 4:30 p.m. Unlike some state programs, Minnesota does not require a separate MSP application if you are already applying for Medical Assistance (MA); the county agency screens for both simultaneously.",
+          "es": "Las solicitudes de MSP de Minnesota se presentan en la oficina de servicios humanos de su condado o tribu utilizando el formulario DHS-3876. Minnesota tiene 87 condados; encuentre su oficina local usando el directorio en mn.gov/dhs. Los consejeros de Minnesota Aging Pathways (SHIP) al 1-800-333-2433 brindan asistencia gratuita para la solicitud de lunes a viernes, de 8 a.m. a 4:30 p.m. A diferencia de algunos programas estatales, Minnesota no requiere una solicitud de MSP separada si ya esta solicitando Asistencia Medica (MA); la agencia del condado evalua ambas simultaneamente."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Is Minnesota a Medicaid Expansion State? (MSP Context)",
+        "es": "¿Es Minnesota un Estado de Expansion de Medicaid? (Contexto de MSP)"
+      },
+      "paragraphs": [
+        {
+          "en": "Minnesota is a full Medicaid expansion state. Adults ages 19 to 64 with incomes at or below 138% of the Federal Poverty Level ($22,025 a year for an individual in 2026) qualify for Medical Assistance (MA), Minnesota's Medicaid program. However, Medicare Savings Programs are separate from MA expansion: MSP is available to Medicare beneficiaries of any age (typically 65+ or disabled individuals under 65 with Medicare). MSP does not use the ACA expansion income standard of 138% FPL; instead it uses separate income brackets set by federal statute and adjusted by Minnesota annually.",
+          "es": "Minnesota es un estado de expansion de Medicaid completa. Los adultos de 19 a 64 anos con ingresos iguales o inferiores al 138% del Nivel de Pobreza Federal ($22,025 al ano para un individuo en 2026) califican para la Asistencia Medica (MA), el programa Medicaid de Minnesota. Sin embargo, los Programas de Ahorros de Medicare son separados de la expansion de MA: MSP esta disponible para los beneficiarios de Medicare de cualquier edad (tipicamente 65+ o personas discapacitadas menores de 65 anos con Medicare). MSP no utiliza el estandar de ingresos de expansion del ACA del 138% FPL; en cambio, utiliza categorias de ingresos separadas establecidas por el estatuto federal y ajustadas por Minnesota anualmente."
+        },
+        {
+          "en": "Minnesota's MSP income limits are distinct from and generally lower than the MA expansion threshold, because MSP was designed for people already on Medicare (who are on fixed incomes at Social Security-level amounts), not for working-age adults. A Minnesota resident who has Medicare and income between the MSP limit and 138% FPL would not qualify for MSP but might qualify for MA if they also meet other MA eligibility criteria (such as disability basis).",
+          "es": "Los limites de ingresos de MSP de Minnesota son distintos y generalmente mas bajos que el umbral de expansion de MA, porque MSP fue disenado para personas que ya estan en Medicare (que tienen ingresos fijos a niveles del Seguro Social), no para adultos en edad de trabajar. Un residente de Minnesota que tiene Medicare e ingresos entre el limite de MSP y el 138% FPL no calificaria para MSP pero podria calificar para MA si tambien cumple otros criterios de elegibilidad de MA (como base de discapacidad)."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Common Reasons Minnesota MSP Applications Are Denied",
+        "es": "Razones Comunes por las que se Niegan las Solicitudes de MSP de Minnesota"
+      },
+      "paragraphs": [
+        {
+          "en": "Minnesota county agencies deny MSP applications for predictable reasons. The most frequent is income above the QI threshold of $1,781 a month for individuals. Many applicants are over-income for all four programs and need to look at Medicare Advantage plans with low cost-sharing or Medigap policies instead. The second common reason is assets above the limit: although Minnesota's $10,000 / $18,000 limits for QMB, SLMB, and QI are generous, applicants with significant savings accounts or non-excluded investments may exceed them. Reviewing which assets are excluded (home, one vehicle, prepaid burial, household goods) before applying can prevent this denial.",
+          "es": "Las agencias de los condados de Minnesota niegan las solicitudes de MSP por razones predecibles. La mas frecuente es ingresos por encima del umbral de QI de $1,781 al mes para individuos. Muchos solicitantes tienen ingresos excesivos para los cuatro programas y necesitan buscar planes Medicare Advantage con costos compartidos bajos o polizas Medigap en su lugar. La segunda razon comun son activos por encima del limite: aunque los limites de $10,000 / $18,000 de Minnesota para QMB, SLMB y QI son generosos, los solicitantes con cuentas de ahorro significativas o inversiones no excluidas pueden superarlos. Revisar que activos estan excluidos (hogar, un vehiculo, entierro prepagado, bienes del hogar) antes de solicitar puede prevenir esta denegacion."
+        }
+      ],
+      "list": [
+        {
+          "en": "Income over program threshold: QI limit of $1,781/month (individual) or $2,400/month (married) in 2026 is the outer ceiling.",
+          "es": "Ingresos por encima del umbral del programa: el limite de QI de $1,781/mes (individual) o $2,400/mes (casado) en 2026 es el techo externo."
+        },
+        {
+          "en": "Countable assets above $10,000 (individual) or $18,000 (married) for QMB, SLMB, or QI; or above $4,000 / $6,000 for QDWI.",
+          "es": "Activos computables por encima de $10,000 (individual) o $18,000 (casado) para QMB, SLMB o QI; o por encima de $4,000 / $6,000 para QDWI."
+        },
+        {
+          "en": "Not enrolled in Medicare Part A or Part B at time of application.",
+          "es": "No inscrito en Medicare Parte A o Parte B al momento de la solicitud."
+        },
+        {
+          "en": "Missing documentation: income proof, asset statements, or identity verification not submitted.",
+          "es": "Documentacion faltante: prueba de ingresos, estados de cuenta de activos o verificacion de identidad no enviados."
+        },
+        {
+          "en": "QI program funding exhausted statewide (QI is first-come, first-served with limited federal appropriation each year).",
+          "es": "Financiamiento del programa QI agotado en todo el estado (QI es por orden de llegada con apropiacion federal limitada cada ano)."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Appeal a Minnesota MSP Denial",
+        "es": "Como Apelar una Denegacion de MSP en Minnesota"
+      },
+      "paragraphs": [
+        {
+          "en": "Minnesota Medical Assistance program participants have a right to appeal any adverse action. When your MSP application is denied, the county agency must provide written notice including the specific reason and your appeal rights. You may appeal to the county agency directly, to MinnesotaCare Operations, or directly to the Minnesota DHS State Appeals Office for a fair hearing. To preserve benefits during the appeal, request a continuation of benefits in writing within 10 days of receiving the denial notice. The appeals timeline allows you to challenge errors such as miscounted income, incorrectly counted assets, or administrative mistakes.",
+          "es": "Los participantes del programa de Asistencia Medica de Minnesota tienen derecho a apelar cualquier accion adversa. Cuando se deniega su solicitud de MSP, la agencia del condado debe proporcionar un aviso escrito que incluya la razon especifica y sus derechos de apelacion. Puede apelar a la agencia del condado directamente, a las Operaciones de MinnesotaCare, o directamente a la Oficina de Apelaciones del Estado del DHS de Minnesota para una audiencia justa. Para preservar los beneficios durante la apelacion, solicite una continuacion de beneficios por escrito dentro de los 10 dias posteriores a recibir el aviso de denegacion. El calendario de apelaciones le permite impugnar errores como ingresos mal contados, activos contados incorrectamente o errores administrativos."
+        },
+        {
+          "en": "Minnesota Aging Pathways at 1-800-333-2433 can advise on the appeal process at no charge. If the internal appeal fails, federally funded legal aid (Legal Aid Society of Minnesota or Mid-Minnesota Legal Aid) can represent eligible applicants in fair hearings at no cost. The State Fair Hearing outcome is binding on the county agency.",
+          "es": "Minnesota Aging Pathways al 1-800-333-2433 puede asesorar sobre el proceso de apelacion sin costo. Si la apelacion interna falla, la asistencia legal financiada federalmente (Legal Aid Society of Minnesota o Mid-Minnesota Legal Aid) puede representar a los solicitantes elegibles en audiencias justas sin costo. El resultado de la Audiencia Justa del Estado es vinculante para la agencia del condado."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the income limit for a single person to get QMB in Minnesota in 2026?",
+        "answer": "The 2026 QMB income limit for a single person in Minnesota is $1,325 per month (approximately $15,900 per year). This limit is set by Minnesota Medical Assistance and resets each July 1. If your income is above $1,325 but below $1,585, you may qualify for SLMB instead, which covers the Part B premium of $202.90 a month."
+      },
+      {
+        "question": "What does QMB cover in Minnesota?",
+        "answer": "QMB (Qualified Medicare Beneficiary) is Minnesota's most comprehensive MSP tier. In 2026, QMB pays your Medicare Part A and Part B premiums, the Part A inpatient deductible ($1,736 per benefit period), the Part B deductible ($283), and all Medicare coinsurance and copayments. Federal law prohibits Medicare providers from billing QMB enrollees for any cost-sharing. QMB enrollment also qualifies you for Part D Extra Help automatically."
+      },
+      {
+        "question": "Does Minnesota have an asset limit for Medicare Savings Programs?",
+        "answer": "Yes, but Minnesota's asset limits are higher than the federal floor. For QMB, SLMB, and QI in 2026, Minnesota allows $10,000 in assets for individuals and $18,000 for married couples. The federal minimums are $9,950 and $14,910. Several categories are excluded from the asset count: your primary home, one vehicle, household furnishings, prepaid burial plans, and life insurance with a face value under $1,500."
+      },
+      {
+        "question": "What is the difference between SLMB and QI in Minnesota?",
+        "answer": "Both SLMB and QI pay only the Medicare Part B premium of $202.90 per month in 2026. The difference is income limit and funding. SLMB covers individuals earning up to $1,585 a month; QI covers those earning up to $1,781 a month. QI has limited federal funding and is awarded on a first-come, first-served basis each year. Once QI funds are exhausted statewide, new applicants wait until the next year. SLMB has no such funding cap."
+      },
+      {
+        "question": "How do I apply for Medicare Savings Programs in Minnesota?",
+        "answer": "Apply using form DHS-3876 (MHCP Application for Certain Populations) through your county or tribal human services office. Bring your Medicare card, proof of income, bank statements, and Minnesota residency documentation. Minnesota Aging Pathways at 1-800-333-2433 provides free help completing the application. There is no enrollment window; you can apply any month of the year."
+      },
+      {
+        "question": "Does enrolling in an MSP automatically get me Part D Extra Help in Minnesota?",
+        "answer": "Yes. Enrollment in any Minnesota MSP tier (QMB, SLMB, QI, or QDWI) automatically qualifies you for Part D Extra Help (Low Income Subsidy) without a separate application. In 2026, Extra Help for QMB enrollees means $0 Part D premium (on a benchmark plan), no deductible, and drug copays of $5.10 for generics and $12.65 for brand-name drugs per fill. Minnesota DHS notifies Social Security after your MSP enrollment is confirmed."
+      },
+      {
+        "question": "Can I get a Medicare Savings Program in Minnesota if I also have employer retiree coverage?",
+        "answer": "Yes, in most cases. MSP eligibility does not require you to have only Medicare. If you have Medicare plus retiree employer coverage, MSP can still pay your Medicare premiums and cost-sharing. QMB protection means Medicare providers cannot bill you for Medicare cost-sharing even if you have secondary insurance. Contact Minnesota Aging Pathways at 1-800-333-2433 to confirm how your specific coverage combination interacts with MSP."
+      },
+      {
+        "question": "What happens if my MSP application is denied in Minnesota?",
+        "answer": "You have the right to appeal. The county agency must send a written denial with the specific reason. Request a fair hearing through the Minnesota DHS State Appeals Office. To keep benefits during the appeal, submit a request for continuation of benefits within 10 days of receiving the denial. Minnesota Aging Pathways (1-800-333-2433) and Legal Aid Society of Minnesota can assist with appeals at no cost."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cual es el limite de ingresos para una persona soltera para obtener QMB en Minnesota en 2026?",
+        "answer": "El limite de ingresos de QMB 2026 para una persona soltera en Minnesota es $1,325 por mes (aproximadamente $15,900 por ano). Este limite lo establece la Asistencia Medica de Minnesota y se restablece cada 1 de julio. Si sus ingresos estan por encima de $1,325 pero por debajo de $1,585, puede calificar para SLMB en cambio, que cubre la prima de la Parte B de $202.90 al mes."
+      },
+      {
+        "question": "¿Que cubre QMB en Minnesota?",
+        "answer": "QMB (Beneficiario Calificado de Medicare) es el nivel de MSP mas completo de Minnesota. En 2026, QMB paga sus primas de Medicare Parte A y Parte B, el deducible de hospitalizacion de la Parte A ($1,736 por periodo de beneficios), el deducible de la Parte B ($283) y todo el coseguro y copagos de Medicare. La ley federal prohibe a los proveedores de Medicare cobrar a los inscritos en QMB por cualquier costo compartido. La inscripcion en QMB tambien le califica para la Ayuda Adicional de la Parte D automaticamente."
+      },
+      {
+        "question": "¿Minnesota tiene un limite de activos para los Programas de Ahorros de Medicare?",
+        "answer": "Si, pero los limites de activos de Minnesota son mas altos que el piso federal. Para QMB, SLMB y QI en 2026, Minnesota permite $10,000 en activos para individuos y $18,000 para parejas casadas. Los minimos federales son $9,950 y $14,910. Varias categorias estan excluidas del recuento de activos: su residencia principal, un vehiculo, muebles del hogar, planes de entierro prepagados y seguro de vida con valor nominal inferior a $1,500."
+      },
+      {
+        "question": "¿Cual es la diferencia entre SLMB y QI en Minnesota?",
+        "answer": "Tanto SLMB como QI pagan solo la prima de Medicare Parte B de $202.90 por mes en 2026. La diferencia es el limite de ingresos y el financiamiento. SLMB cubre a individuos que ganan hasta $1,585 al mes; QI cubre a quienes ganan hasta $1,781 al mes. QI tiene financiamiento federal limitado y se otorga por orden de llegada cada ano. Una vez que los fondos de QI se agotan en todo el estado, los nuevos solicitantes esperan hasta el proximo ano. SLMB no tiene tal limite de financiamiento."
+      },
+      {
+        "question": "¿Como solicito los Programas de Ahorros de Medicare en Minnesota?",
+        "answer": "Solicite usando el formulario DHS-3876 (Solicitud MHCP para Ciertas Poblaciones) a traves de la oficina de servicios humanos de su condado o tribu. Traiga su tarjeta de Medicare, prueba de ingresos, estados de cuenta bancarios y documentacion de residencia en Minnesota. Minnesota Aging Pathways al 1-800-333-2433 brinda ayuda gratuita para completar la solicitud. No hay periodo de inscripcion; puede solicitar cualquier mes del ano."
+      },
+      {
+        "question": "¿La inscripcion en un MSP me da automaticamente la Ayuda Adicional de la Parte D en Minnesota?",
+        "answer": "Si. La inscripcion en cualquier nivel de MSP de Minnesota (QMB, SLMB, QI o QDWI) lo califica automaticamente para la Ayuda Adicional de la Parte D (Subsidio de Bajos Ingresos) sin una solicitud separada. En 2026, la Ayuda Adicional para los inscritos en QMB significa $0 de prima de la Parte D (en un plan de referencia), sin deducible y copagos de medicamentos de $5.10 para genericos y $12.65 para medicamentos de marca por surtido. El DHS de Minnesota notifica al Seguro Social despues de que se confirme su inscripcion en MSP."
+      },
+      {
+        "question": "¿Puedo obtener un Programa de Ahorros de Medicare en Minnesota si tambien tengo cobertura de jubilado del empleador?",
+        "answer": "Si, en la mayoria de los casos. La elegibilidad de MSP no requiere que tenga solo Medicare. Si tiene Medicare mas cobertura de jubilado del empleador, MSP aun puede pagar sus primas y costos compartidos de Medicare. La proteccion QMB significa que los proveedores de Medicare no pueden cobrarle por costos compartidos de Medicare incluso si tiene seguro secundario. Comuniquese con Minnesota Aging Pathways al 1-800-333-2433 para confirmar como interactua su combinacion especifica de cobertura con MSP."
+      },
+      {
+        "question": "¿Que sucede si se rechaza mi solicitud de MSP en Minnesota?",
+        "answer": "Tiene derecho a apelar. La agencia del condado debe enviar una denegacion por escrito con la razon especifica. Solicite una audiencia justa a traves de la Oficina de Apelaciones del Estado del DHS de Minnesota. Para mantener los beneficios durante la apelacion, presente una solicitud de continuacion de beneficios dentro de los 10 dias posteriores a recibir la denegacion. Minnesota Aging Pathways (1-800-333-2433) y Legal Aid Society of Minnesota pueden ayudar con las apelaciones sin costo."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Medicare Savings Programs National Overview", "es": "Vision General Nacional de los Programas de Ahorros de Medicare" },
+      "href": "/en/qa/what-are-medicare-savings-programs"
+    },
+    {
+      "label": { "en": "Medicaid Income Limits by State", "es": "Limites de Ingresos de Medicaid por Estado" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "Can I Have Both Medicare and Medicaid?", "es": "¿Puedo tener Medicare y Medicaid?" },
+      "href": "/en/qa/can-i-have-both-medicare-and-medicaid"
+    },
+    {
+      "label": { "en": "Check Your Medicare Eligibility", "es": "Verifique su Elegibilidad de Medicare" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "LawHelpMN.org: Medicare Savings Programs Fact Sheet 2026 (S-16)",
+      "url": "https://www.lawhelpmn.org/self-help-library/fact-sheet/medicare-savings-programs",
+      "note": {
+        "en": "Minnesota-specific 2026 MSP income and asset limits for QMB, SLMB, QI, and QDWI. Primary reference for all Minnesota income thresholds on this page.",
+        "es": "Limites de ingresos y activos de MSP especificos de Minnesota 2026 para QMB, SLMB, QI y QDWI. Referencia principal para todos los umbrales de ingresos de Minnesota en esta pagina."
+      }
+    },
+    {
+      "name": "Minnesota DHS: Eligibility Policy Manual Section 4.2 Medicare Savings Programs",
+      "url": "https://hcopub.dhs.state.mn.us/epm/4_2.htm",
+      "note": {
+        "en": "Official Minnesota DHS policy manual governing MSP eligibility, income calculations, asset exclusions, and application procedures for Minnesota Medical Assistance.",
+        "es": "Manual de politica oficial del DHS de Minnesota que rige la elegibilidad de MSP, calculos de ingresos, exclusiones de activos y procedimientos de solicitud para la Asistencia Medica de Minnesota."
+      }
+    },
+    {
+      "name": "Medicare.gov: Medicare Savings Programs",
+      "url": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+      "note": {
+        "en": "CMS official page describing all four MSP program types, what they cover, and the federal income and asset baseline limits.",
+        "es": "Pagina oficial de CMS que describe los cuatro tipos de programas MSP, lo que cubren y los limites de ingresos y activos de referencia federal."
+      }
+    },
+    {
+      "name": "NCOA: 2026 Medicare Savings Programs Eligibility and Coverage Guide",
+      "url": "https://www.ncoa.org/article/what-are-the-4-types-of-medicare-savings-programs/",
+      "note": {
+        "en": "National Council on Aging 2026 MSP guide with income limits, benefit details, and comparison of all four program tiers nationally.",
+        "es": "Guia MSP 2026 del Consejo Nacional sobre el Envejecimiento con limites de ingresos, detalles de beneficios y comparacion de los cuatro niveles de programas a nivel nacional."
+      }
+    },
+    {
+      "name": "Minnesota DHS: MSP Application Process (Section 4.2.1.1)",
+      "url": "https://hcopub.dhs.state.mn.us/epm/4_2_1_1.htm",
+      "note": {
+        "en": "Minnesota DHS policy on MSP application procedures, form DHS-3876, county agency submission, and streamlined enrollment rules.",
+        "es": "Politica del DHS de Minnesota sobre procedimientos de solicitud de MSP, formulario DHS-3876, envio a la agencia del condado y reglas de inscripcion simplificada."
+      }
+    }
+  ]
+}
