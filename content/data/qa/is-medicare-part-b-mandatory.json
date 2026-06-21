@@ -3,473 +3,455 @@
   "subtype": "coverage",
   "pageType": "coverage",
   "topicCluster": "medicare-coverage",
-  "keyTerms": {
-    "en": ["is medicare part b mandatory", "medicare part b enrollment penalty 2026", "medicare late enrollment penalty", "can i skip medicare part b", "medicare part b required"],
-    "es": ["medicare parte b obligatorio", "penalidad inscripcion tardia medicare parte b 2026", "se puede omitir medicare parte b", "medicare parte b requerido"]
-  },
-  "isLighthouse": false,
-  "isDeprecated": false,
-  "question": {
-    "en": "Is Medicare Part B Mandatory in 2026?",
-    "es": "¿Es Medicare Parte B Obligatorio en 2026?"
-  },
-  "shortAnswer": {
-    "en": "It depends. Part B is optional, but skipping it without creditable coverage triggers a permanent penalty.",
-    "es": "Depende. La Parte B es opcional, pero omitirla sin cobertura acreditable genera una penalidad permanente."
-  },
-  "fullAnswer": {
-    "en": "It depends on your coverage situation. Medicare Part B is not legally mandatory, but refusing it without creditable alternative coverage (such as an active employer plan from an employer with 20 or more employees) triggers a permanent late-enrollment penalty of 10 percent of the 2026 standard premium ($202.90 per month) for every 12 months you were eligible but unenrolled. Most people should enroll in Part B when first eligible unless they have a qualifying reason to delay. Creditable employer coverage, TRICARE for Life, and a few other situations allow penalty-free delay. COBRA, retiree coverage, and marketplace plans do NOT qualify as creditable coverage for Part B delay purposes.",
-    "es": "Depende de su situacion de cobertura. Medicare Parte B no es legalmente obligatorio, pero rechazarlo sin cobertura alternativa acreditable (como un plan activo del empleador de una empresa con 20 o mas empleados) genera una penalidad permanente de inscripcion tardia del 10 por ciento de la prima estandar de 2026 ($202.90 por mes) por cada 12 meses que fue elegible pero no estaba inscrito. La mayoria de las personas debe inscribirse en la Parte B cuando sea elegible por primera vez, a menos que tengan una razon calificada para retrasar. La cobertura activa del empleador acreditable, TRICARE for Life y algunas otras situaciones permiten retrasar sin penalidad. COBRA, la cobertura para jubilados y los planes del mercado NO califican como cobertura acreditable para retrasar la Parte B."
-  },
   "category": "Medicare",
-  "topic": "Medicare Part B Enrollment and Late Penalty",
+  "topic": "Medicare Part B Enrollment and Late Enrollment Penalty",
   "medicalSpecialty": "PublicHealth",
   "ctaTarget": "screener",
-  "lastUpdated": "2026-06-18",
+  "lastUpdated": "2026-06-21",
   "readingTime": "7 min read",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "keyTerms": {
+    "en": ["is medicare part b mandatory", "medicare part b late enrollment penalty", "medicare part b enrollment 2026", "delay medicare part b", "medicare part b penalty calculator"],
+    "es": ["es obligatoria medicare parte b", "penalidad inscripcion tardia medicare parte b", "inscripcion medicare parte b 2026", "retrasar medicare parte b", "penalidad medicare parte b calculo"]
+  },
+
+  "question": {
+    "en": "Is Medicare Part B Mandatory in 2026?",
+    "es": "¿Es Obligatoria Medicare Parte B en 2026?"
+  },
+
+  "shortAnswer": {
+    "en": "No. Part B is voluntary, but late enrollment adds a permanent 10%/year penalty.",
+    "es": "No. La Parte B es voluntaria, pero inscribirse tarde agrega penalidad permanente del 10%/ano."
+  },
+
+  "fullAnswer": {
+    "en": "No. Medicare Part B is legally voluntary in 2026, but delaying without a Special Enrollment Period (SEP) triggers a permanent late enrollment penalty of 10% per full 12-month period you went without coverage. That penalty stays for life. The only penalty-free delay is active coverage through a group health plan from a current employer with 20 or more employees.",
+    "es": "No. Medicare Parte B es legalmente voluntaria en 2026, pero retrasarla sin un Periodo de Inscripcion Especial (SEP) genera una penalidad permanente del 10% por cada periodo completo de 12 meses sin cobertura. Esa penalidad es de por vida. El unico retraso sin penalidad es cobertura activa mediante un plan de salud grupal de un empleador actual con 20 o mas empleados."
+  },
 
   "meta": {
     "title": {
-      "en": "Is Medicare Part B Mandatory in 2026? Late Penalty Explained | CoveredUSA",
-      "es": "¿Es Medicare Parte B Obligatorio en 2026? Penalidad por Tardanza | CoveredUSA"
+      "en": "Is Medicare Part B Mandatory? (2026 Penalty Rules) | CoveredUSA",
+      "es": "¿Es Obligatoria Medicare Parte B? (Reglas de Penalidad 2026) | CoveredUSA"
     },
     "description": {
-      "en": "Medicare Part B is optional but skipping it without creditable coverage costs you a permanent 10% per year penalty on the $202.90/mo 2026 premium. Rules, exceptions, and enrollment windows explained.",
-      "es": "Medicare Parte B es opcional, pero omitirlo sin cobertura acreditable genera una penalidad permanente del 10% por ano sobre la prima de $202.90/mes en 2026. Reglas, excepciones y ventanas de inscripcion explicadas."
+      "en": "Medicare Part B is voluntary in 2026, but skipping it without an employer SEP adds a permanent 10%-per-year penalty to your $202.90 monthly premium. Learn when you can safely delay.",
+      "es": "Medicare Parte B es voluntaria en 2026, pero omitirla sin SEP de empleador agrega penalidad permanente del 10% por ano a su prima de $202.90/mes. Aprenda cuando puede retrasarla."
     }
   },
 
   "hero": {
     "h1": {
-      "en": "Is Medicare Part B Mandatory in 2026?",
-      "es": "¿Es Medicare Parte B Obligatorio en 2026?"
+      "en": "Is Medicare Part B Mandatory in 2026? (Late Enrollment Penalty)",
+      "es": "¿Es Obligatoria Medicare Parte B en 2026? (Penalidad por Inscripcion Tardia)"
     }
   },
 
   "introParagraphs": [
     {
-      "en": "Medicare Part B covers outpatient care, physician visits, preventive services, durable medical equipment, and most services you receive outside a hospital. Unlike Medicare Part A (hospital coverage), which is free for most people who worked 40 or more quarters, Part B carries a monthly premium of $202.90 in 2026. Because it costs money, many people turning 65 wonder whether they can opt out. The short answer is yes, you can skip Part B, but doing so without a qualifying reason creates a permanent financial penalty that most people regret.",
-      "es": "Medicare Parte B cubre atención ambulatoria, visitas al médico, servicios preventivos, equipo médico duradero y la mayoría de los servicios que recibe fuera de un hospital. A diferencia de Medicare Parte A (cobertura hospitalaria), que es gratuita para la mayoría de las personas que trabajaron 40 o más trimestres, la Parte B tiene una prima mensual de $202.90 en 2026. Como tiene un costo, muchas personas que cumplen 65 años se preguntan si pueden rechazarla. La respuesta corta es sí, puede omitir la Parte B, pero hacerlo sin una razón calificada crea una penalidad financiera permanente que la mayoría lamenta."
+      "en": "Medicare Part B is the outpatient coverage component of Original Medicare, paying for doctor visits, lab tests, preventive screenings, durable medical equipment, and most outpatient services after you meet the 2026 deductible of $283. The standard 2026 monthly premium is $202.90. Many people turning 65 assume Part B enrollment is automatic and required, but the legal answer is no: Medicare Part B enrollment is voluntary.",
+      "es": "Medicare Parte B es el componente de cobertura ambulatoria de Medicare Original, que paga visitas medicas, pruebas de laboratorio, examenes preventivos, equipo medico duradero y la mayoria de los servicios ambulatorios despues de alcanzar el deducible de $283 en 2026. La prima mensual estandar de 2026 es $202.90. Muchas personas que cumplen 65 anos asumen que la Parte B es automatica y obligatoria, pero la respuesta legal es no: la inscripcion en la Parte B es voluntaria."
     },
     {
-      "en": "This guide covers the 2026 rules for Part B enrollment, exactly when delaying is safe (and when it is not), how the permanent late-enrollment penalty is calculated, which coverage types actually qualify you to delay, and the enrollment windows you must know. For a broader look at how Part B fits with employer coverage, see [Do I Need Medicare If I Have Employer Insurance](/en/qa/do-i-need-medicare-if-i-have-employer-insurance). To understand all four parts of Medicare, see [can I get Medicare under 65](/en/qa/can-i-get-medicare-under-65).",
-      "es": "Esta guía cubre las reglas de 2026 para la inscripción en la Parte B, exactamente cuándo es seguro retrasar (y cuándo no), cómo se calcula la penalidad permanente por inscripción tardía, qué tipos de cobertura realmente califican para retrasar, y las ventanas de inscripción que debe conocer. Para una visión más amplia de cómo la Parte B se combina con la cobertura del empleador, consulte [¿Necesito Medicare si tengo seguro del empleador?](/es/qa/do-i-need-medicare-if-i-have-employer-insurance)."
+      "en": "The reason most people should still enroll is the late enrollment penalty: a permanent 10% premium surcharge for each full 12-month period you delayed without qualifying for a Special Enrollment Period. For most people, the only safe reason to delay Part B is active employer coverage through a large-group plan from a company with 20 or more employees. This guide explains the rules, the penalty calculation, and the enrollment windows available in 2026.",
+      "es": "La razon por la que la mayoria de las personas deberian inscribirse de todos modos es la penalidad por inscripcion tardia: un recargo permanente del 10% por cada periodo completo de 12 meses sin un Periodo de Inscripcion Especial. Para la mayoria, la unica razon segura para retrasar la Parte B es cobertura activa del empleador a traves de un plan de grupo grande de una empresa con 20 o mas empleados. Esta guia explica las reglas, el calculo de la penalidad y los periodos de inscripcion disponibles en 2026."
     }
   ],
 
   "coverageBreakdown": {
     "headers": {
-      "en": ["Your Situation", "Can You Delay Part B Penalty-Free?", "What Qualifies as Creditable Coverage", "Risk If You Skip Without Qualifier"],
-      "es": ["Su situación", "¿Puede retrasar la Parte B sin penalidad?", "Qué califica como cobertura acreditable", "Riesgo si omite sin calificador"]
+      "en": ["Situation", "Part B Required?", "Penalty Applies?", "Enrollment Window"],
+      "es": ["Situacion", "¿Parte B requerida?", "¿Aplica penalidad?", "Periodo de inscripcion"]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Active employer coverage, large employer (20+ employees)", "es": "Cobertura activa del empleador grande (20+ empleados)" },
-          { "value": { "en": "Yes, delay penalty-free", "es": "Sí, retrasar sin penalidad" }, "status": "yes" },
-          { "en": "Employer group health plan is primary; counts as creditable for Part B and Part D", "es": "El plan de salud grupal del empleador es primario; cuenta como acreditable para la Parte B y la Parte D" },
-          { "en": "Low: enroll within 8-month SEP after coverage ends to avoid any penalty", "es": "Bajo: inscribirse dentro del SEP de 8 meses después de que termine la cobertura para evitar penalidad" }
+          { "en": "Turning 65, no employer coverage", "es": "Cumple 65 anos, sin cobertura de empleador" },
+          { "value": { "en": "Strongly recommended", "es": "Muy recomendada" }, "status": "partial" },
+          { "value": { "en": "Yes, if IEP missed", "es": "Si, si se pierde el PII" }, "status": "yes" },
+          { "en": "7-month IEP: 3 months before birthday month, birthday month, 3 months after", "es": "PII de 7 meses: 3 antes del mes de cumpleanos, mes de cumpleanos, 3 despues" }
         ]
       },
       {
         "cells": [
-          { "en": "Small employer (under 20 employees)", "es": "Empleador pequeño (menos de 20 empleados)" },
-          { "value": { "en": "No, must enroll at 65", "es": "No, debe inscribirse a los 65" }, "status": "no" },
-          { "en": "Small employer plans are not primary; Medicare is the primary payer for workers at small employers", "es": "Los planes de empleadores pequeños no son primarios; Medicare es el pagador principal para trabajadores en empleadores pequeños" },
-          { "en": "High: plan pays only residual after Medicare's share, leaving large unpaid balances plus permanent penalty", "es": "Alto: el plan paga solo el residual después de la parte de Medicare, dejando grandes saldos sin pagar más penalidad permanente" }
+          { "en": "Collecting Social Security at 65", "es": "Recibiendo Seguro Social al cumplir 65" },
+          { "value": { "en": "Auto-enrolled (can opt out)", "es": "Inscripcion automatica (puede rechazar)" }, "status": "partial" },
+          { "value": { "en": "Yes, if you opt out and re-enroll later", "es": "Si, si rechaza y se reinscribe despues" }, "status": "yes" },
+          { "en": "Automatically enrolled; must opt out in writing to avoid Part B", "es": "Inscripcion automatica; debe rechazar por escrito para evitar la Parte B" }
         ]
       },
       {
         "cells": [
-          { "en": "COBRA continuation coverage", "es": "Cobertura de continuación COBRA" },
-          { "value": { "en": "No, COBRA is not creditable", "es": "No, COBRA no es acreditable" }, "status": "no" },
-          { "en": "CMS classifies COBRA as continuation coverage, not active employer coverage; does not qualify for penalty-free delay", "es": "CMS clasifica COBRA como cobertura de continuación, no cobertura activa del empleador; no califica para retraso sin penalidad" },
-          { "en": "High: 8-month SEP clock runs during COBRA; missing it forces General Enrollment Period and permanent penalty", "es": "Alto: el reloj del SEP de 8 meses corre durante COBRA; perderlo obliga al Período de Inscripción General y penalidad permanente" }
+          { "en": "Covered by employer group plan (20+ employee company), actively working", "es": "Con cobertura de plan grupal de empleador (empresa de 20+ empleados), activamente trabajando" },
+          { "value": { "en": "Can legally delay", "es": "Puede retrasarla legalmente" }, "status": "yes" },
+          { "value": { "en": "No penalty during active employment", "es": "Sin penalidad durante empleo activo" }, "status": "yes" },
+          { "en": "8-month SEP after employment or coverage ends", "es": "SEP de 8 meses despues de que termine el empleo o la cobertura" }
         ]
       },
       {
         "cells": [
-          { "en": "ACA marketplace plan or retiree health coverage", "es": "Plan del mercado ACA o cobertura de salud para jubilados" },
-          { "value": { "en": "No, neither qualifies", "es": "No, ninguna califica" }, "status": "no" },
-          { "en": "ACA marketplace plans and retiree health coverage do not count as creditable employer coverage for Part B delay", "es": "Los planes del mercado ACA y la cobertura de salud para jubilados no cuentan como cobertura acreditable del empleador para retrasar la Parte B" },
-          { "en": "High: permanent 10% per year penalty accrues; must wait for GEP (January 1 through March 31) to enroll", "es": "Alto: acumula penalidad permanente del 10% por año; debe esperar el PIG (1 de enero al 31 de marzo) para inscribirse" }
+          { "en": "On COBRA, retiree health coverage, or individual market plan", "es": "En COBRA, cobertura de salud de jubilado o plan de mercado individual" },
+          { "value": { "en": "Not eligible for SEP delay", "es": "No elegible para retraso SEP" }, "status": "no" },
+          { "value": { "en": "Penalty applies on late enrollment", "es": "Penalidad aplica en inscripcion tardia" }, "status": "no" },
+          { "en": "Must enroll during IEP or face penalty; GEP is January 1 to March 31 each year", "es": "Debe inscribirse durante el PII o enfrentar penalidad; PIG es del 1 enero al 31 marzo cada ano" }
         ]
       },
       {
         "cells": [
-          { "en": "TRICARE for Life (military retirees)", "es": "TRICARE for Life (jubilados militares)" },
-          { "value": { "en": "Partial: Part B is required to keep TRICARE for Life", "es": "Parcial: la Parte B es requerida para conservar TRICARE for Life" }, "status": "partial" },
-          { "en": "TRICARE for Life requires enrollment in both Part A and Part B; delaying Part B means losing TRICARE for Life", "es": "TRICARE for Life requiere inscripción en la Parte A y la Parte B; retrasar la Parte B significa perder TRICARE for Life" },
-          { "en": "Very high for military retirees: loss of TRICARE for Life benefit is not recoverable until Part B is active", "es": "Muy alto para jubilados militares: la pérdida del beneficio TRICARE for Life no es recuperable hasta que la Parte B esté activa" }
+          { "en": "Enrolled in Medicare Advantage (Part C)", "es": "Inscrito en Medicare Advantage (Parte C)" },
+          { "value": { "en": "Part B required as prerequisite", "es": "Parte B requerida como prerequisito" }, "status": "yes" },
+          { "value": { "en": "Depends on when you enrolled in Part B", "es": "Depende de cuando se inscribio en Parte B" }, "status": "partial" },
+          { "en": "Must have both Part A and Part B to join any Medicare Advantage plan", "es": "Debe tener tanto la Parte A como la Parte B para unirse a cualquier plan Medicare Advantage" }
         ]
       }
     ],
     "footnote": {
-      "en": "Medicare Part B mandatory enrollment rules by situation in 2026. The 2026 standard Part B premium is $202.90 per month. Higher earners pay more under Income-Related Monthly Adjustment Amount (IRMAA) brackets. The late-enrollment penalty is calculated on the standard premium, not your individual premium. Source: CMS Medicare Enrollment Guidelines, Medicare.gov 2026.",
-      "es": "Reglas de inscripción obligatoria de Medicare Parte B por situación en 2026. La prima estándar de la Parte B en 2026 es de $202.90 por mes. Las personas con mayores ingresos pagan más bajo los tramos IRMAA. La penalidad por inscripción tardía se calcula sobre la prima estándar, no su prima individual."
+      "en": "Part B is legally voluntary but practically essential for most Medicare beneficiaries. The standard 2026 Part B premium is $202.90/month before any late enrollment penalty surcharge. Higher-income enrollees pay Income-Related Monthly Adjustment Amounts (IRMAA) above the standard premium. Medicare Part B coverage by situation 2026.",
+      "es": "La Parte B es legalmente voluntaria pero practicamente esencial para la mayoria de los beneficiarios de Medicare. La prima estandar de la Parte B en 2026 es $202.90/mes antes de cualquier recargo por penalidad de inscripcion tardia. Los inscritos de mayores ingresos pagan Ajustes de Montos Mensuales Relacionados con los Ingresos (IRMAA) por encima de la prima estandar."
     },
-    "source": "CMS Medicare Enrollment Guidelines 2026, Medicare.gov, CMS IRMAA Thresholds 2026"
+    "source": "CMS 2026 Medicare Parts B Premiums and Deductibles Fact Sheet; Medicare.gov Avoid Penalties"
   },
 
   "detailSections": [
     {
       "heading": {
-        "en": "Direct Answer: Part B Is Optional but the Penalty Is Permanent",
-        "es": "Respuesta directa: la Parte B es opcional pero la penalidad es permanente"
+        "en": "Direct Answer: Is Medicare Part B Mandatory?",
+        "es": "Respuesta directa: ¿Es obligatoria Medicare Parte B?"
       },
       "paragraphs": [
         {
-          "en": "It depends on whether you have qualifying coverage. Medicare Part B is not legally required. No law forces enrollment. However, skipping Part B without creditable alternative coverage, meaning active employer coverage from an employer with 20 or more employees, TRICARE for Life, or certain other qualifying situations, triggers a permanent late-enrollment penalty. The penalty is 10 percent of the standard Part B premium ($202.90 in 2026) for each 12-month period you were eligible but uninsured. That penalty never goes away.",
-          "es": "Depende de si tiene cobertura calificada. Medicare Parte B no es legalmente obligatorio. Ninguna ley lo obliga a inscribirse. Sin embargo, omitir la Parte B sin cobertura alternativa acreditable, es decir, cobertura activa del empleador de una empresa con 20 o más empleados, TRICARE for Life u otras situaciones calificadas, genera una penalidad permanente por inscripción tardía. La penalidad es del 10 por ciento de la prima estándar de la Parte B ($202.90 en 2026) por cada periodo de 12 meses que fue elegible pero no estaba asegurado. Esa penalidad nunca desaparece."
+          "en": "No. Medicare Part B is voluntary in 2026. Declining or delaying enrollment without a valid Special Enrollment Period triggers a permanent late enrollment penalty: 10% of the standard 2026 premium ($202.90/month) for each full 12-month period without Part B. Miss two years and your surcharge is 20% for life. The only penalty-free delay is active employer group health plan coverage from a company with 20 or more employees.",
+          "es": "No. Medicare Parte B es voluntaria en 2026. Rechazarla o retrasarla sin un Periodo de Inscripcion Especial valido genera una penalidad permanente de inscripcion tardia: 10% de la prima estandar de 2026 ($202.90/mes) por cada periodo completo de 12 meses sin Parte B. Si pierde dos anos, el recargo es del 20% para siempre. El unico retraso sin penalidad es cobertura activa del plan de salud grupal de un empleador con 20 o mas empleados."
         }
       ]
     },
     {
       "heading": {
-        "en": "When Delaying Medicare Part B Is Safe (Valid Reasons to Wait)",
-        "es": "Cuándo es seguro retrasar Medicare Parte B (razones válidas para esperar)"
+        "en": "When Medicare Automatically Enrolls You in Part B",
+        "es": "Cuando Medicare lo inscribe automaticamente en la Parte B"
       },
       "paragraphs": [
         {
-          "en": "Medicare Part B delay without penalty requires active creditable coverage. Three situations qualify clearly. First, active employer group health insurance from an employer with 20 or more total employees nationwide makes you eligible to delay Part B. The employer plan is the primary payer; Medicare would be secondary and provides little additional value while you pay the premium. Second, coverage through a spouse's active employer plan at an employer with 20 or more employees also qualifies, because the spouse's employer plan pays primary for both of you. Third, TRICARE active-duty family member coverage (not TRICARE for Life, which requires Part B) can qualify while the sponsor is on active duty.",
-          "es": "Retrasar Medicare Parte B sin penalidad requiere cobertura acreditable activa. Tres situaciones califican claramente. Primero, seguro de salud grupal activo del empleador de una empresa con 20 o más empleados totales a nivel nacional le permite retrasar la Parte B. El plan del empleador es el pagador principal; Medicare sería secundario y proporciona poco valor adicional mientras paga la prima. Segundo, la cobertura a través del plan de empleador activo del cónyuge en una empresa con 20 o más empleados también califica, porque el plan del empleador del cónyuge paga como principal para ambos. Tercero, la cobertura de TRICARE para miembros de la familia en servicio activo (no TRICARE for Life, que requiere la Parte B) puede calificar mientras el patrocinador esté en servicio activo."
+          "en": "Medicare automatically enrolls you in both Part A and Part B if you are already receiving Social Security or Railroad Retirement Board (RRB) benefits at least 4 months before your Medicare eligibility date. Your red, white, and blue Medicare card arrives in the mail roughly 3 months before your 65th birthday. Part B coverage begins on the first day of the month you turn 65.",
+          "es": "Medicare lo inscribe automaticamente en la Parte A y la Parte B si ya recibe beneficios del Seguro Social o de la Junta de Jubilacion Ferroviaria (RRB) al menos 4 meses antes de su fecha de elegibilidad. Su tarjeta de Medicare roja, blanca y azul llega por correo aproximadamente 3 meses antes de su cumpleanos numero 65. La cobertura de la Parte B comienza el primer dia del mes en que cumple 65 anos."
         },
         {
-          "en": "When your qualifying coverage ends, Medicare gives you an 8-month Special Enrollment Period (SEP) to sign up for Part B without any late penalty. The 8-month clock starts the month after your employment ends or your group health plan coverage ends, whichever comes first. Do not wait the full 8 months: enrollment processing takes 4 to 8 weeks, so enrolling within the first 60 days of the SEP ensures no coverage gap. Visit medicare.gov or call 1-800-MEDICARE (1-800-633-4227) to use the SEP.",
-          "es": "Cuando su cobertura calificada termine, Medicare le da un Período de Inscripción Especial (SEP) de 8 meses para inscribirse en la Parte B sin penalidad tardía. El reloj de 8 meses comienza el mes después de que su empleo o su cobertura del plan de salud grupal terminen, lo que ocurra primero. No espere los 8 meses completos: el procesamiento de la inscripción tarda de 4 a 8 semanas, por lo que inscribirse dentro de los primeros 60 días del SEP garantiza que no haya brecha de cobertura. Visite medicare.gov o llame al 1-800-MEDICARE (1-800-633-4227) para usar el SEP."
+          "en": "Auto-enrollment is not irrevocable. You can refuse Part B by returning the Medicare card with the Part B opt-out section completed. If you later want Part B, you will face the late enrollment penalty unless you qualify for an SEP. Puerto Rico residents who are auto-enrolled receive Part A only; they must separately and actively apply for Part B.",
+          "es": "La inscripcion automatica no es irrevocable. Puede rechazar la Parte B devolviendo la tarjeta de Medicare con la seccion de opcion de rechazo completada. Si mas tarde desea la Parte B, enfrentara la penalidad de inscripcion tardia a menos que califique para un SEP. Los residentes de Puerto Rico que son inscritos automaticamente reciben solo la Parte A; deben solicitar la Parte B por separado y activamente."
         }
       ]
     },
     {
       "heading": {
-        "en": "When Delaying Part B Creates a Problem (Invalid Reasons That Trigger the Penalty)",
-        "es": "Cuándo retrasar la Parte B crea un problema (razones inválidas que generan penalidad)"
+        "en": "Medicare Part B Late Enrollment Penalty: How It Is Calculated in 2026",
+        "es": "Penalidad por inscripcion tardia de Medicare Parte B: como se calcula en 2026"
       },
       "paragraphs": [
         {
-          "en": "Several common coverage types do NOT qualify as creditable coverage for delaying Medicare Part B. COBRA continuation coverage is not active employer coverage. CMS classifies it as continuation coverage, and the Part B delay clock runs during COBRA. If you use COBRA after leaving a job instead of enrolling in Medicare within 8 months, your SEP window expires. When COBRA eventually ends, you cannot claim a new SEP. You must wait for the General Enrollment Period (January 1 through March 31, with coverage starting July 1) and will owe the permanent late-enrollment penalty.",
-          "es": "Varios tipos comunes de cobertura NO califican como cobertura acreditable para retrasar Medicare Parte B. La cobertura de continuación COBRA no es cobertura activa del empleador. CMS la clasifica como cobertura de continuación, y el reloj de retraso de la Parte B corre durante COBRA. Si usa COBRA después de dejar un trabajo en lugar de inscribirse en Medicare dentro de 8 meses, su ventana del SEP expira. Cuando COBRA eventualmente termina, no puede reclamar un nuevo SEP. Debe esperar el Período de Inscripción General (del 1 de enero al 31 de marzo, con cobertura que comienza el 1 de julio) y deberá la penalidad permanente por inscripción tardía."
-        },
-        {
-          "en": "ACA marketplace plans also do not count as creditable coverage for Part B delay. Buying a plan through healthcare.gov after turning 65 instead of enrolling in Medicare Part B results in the same problem: the late-enrollment penalty accrues for every month you are Part B-eligible but not enrolled. Retiree health coverage from a former employer likewise does not qualify: most retiree plans require you to enroll in Medicare and designate Medicare as primary. Using a retiree plan without Part B is likely to result in claim denials from the retiree plan.",
-          "es": "Los planes del mercado ACA tampoco cuentan como cobertura acreditable para retrasar la Parte B. Comprar un plan a través de healthcare.gov después de cumplir 65 años en lugar de inscribirse en Medicare Parte B resulta en el mismo problema: la penalidad por inscripción tardía se acumula por cada mes que es elegible para la Parte B pero no está inscrito. La cobertura de salud para jubilados de un empleador anterior tampoco califica: la mayoría de los planes para jubilados requieren que se inscriba en Medicare y designe a Medicare como primario. Usar un plan para jubilados sin la Parte B probablemente resultará en denegaciones de reclamaciones."
-        }
-      ]
-    },
-    {
-      "heading": {
-        "en": "How the Permanent Late-Enrollment Penalty Is Calculated (2026 Numbers)",
-        "es": "Cómo se calcula la penalidad permanente por inscripción tardía (cifras de 2026)"
-      },
-      "paragraphs": [
-        {
-          "en": "The Medicare Part B late-enrollment penalty is 10 percent of the standard Part B premium for each full 12-month period you were eligible for Part B but did not enroll and did not have creditable coverage. The 2026 standard Part B premium is $202.90 per month. One year of unexcused delay adds $20.29 per month to your premium permanently. Two years of delay adds $40.58 per month permanently. Ten years of delay adds $202.90 per month, effectively doubling your premium. These amounts are calculated from the standard premium; if you pay IRMAA surcharges because of higher income, the penalty still uses the base $202.90 figure.",
-          "es": "La penalidad por inscripción tardía de Medicare Parte B es el 10 por ciento de la prima estándar de la Parte B por cada período completo de 12 meses que fue elegible para la Parte B pero no se inscribió y no tenía cobertura acreditable. La prima estándar de la Parte B en 2026 es de $202.90 por mes. Un año de retraso injustificado agrega $20.29 por mes a su prima permanentemente. Dos años de retraso agregan $40.58 por mes permanentemente. Diez años de retraso agregan $202.90 por mes, duplicando efectivamente su prima. Estos montos se calculan desde la prima estándar; si paga recargos IRMAA debido a ingresos más altos, la penalidad sigue usando la cifra base de $202.90."
-        },
-        {
-          "en": "Part D drug coverage carries a separate late-enrollment penalty if you go without creditable drug coverage after becoming Medicare-eligible. The penalty is approximately 1 percent of the national base beneficiary premium per month of gap. In 2026 the national base beneficiary premium is approximately $38.99 per month, so each month of gap adds about $0.39 per month permanently. A 24-month gap without drug coverage adds roughly $9.36 per month to your Part D premium for life. Original Medicare Part B does not include prescription drug coverage; you need a standalone Part D plan or a Medicare Advantage plan that includes Part D to avoid this separate penalty.",
-          "es": "La cobertura de medicamentos Parte D tiene una penalidad separada por inscripción tardía si permanece sin cobertura acreditable de medicamentos después de ser elegible para Medicare. La penalidad es aproximadamente el 1 por ciento de la prima base nacional del beneficiario por mes de brecha. En 2026, la prima base nacional del beneficiario es aproximadamente $38.99 por mes, por lo que cada mes de brecha agrega alrededor de $0.39 por mes permanentemente. Una brecha de 24 meses sin cobertura de medicamentos agrega aproximadamente $9.36 por mes a su prima de la Parte D de por vida."
+          "en": "The Part B late enrollment penalty adds 10% to the standard monthly premium for each full 12-month period you were eligible but not enrolled in Original Medicare. Partial years do not count. The penalty applies to the current year's standard premium, which means it adjusts upward each year as the standard premium changes. In 2026, the standard premium is $202.90/month, so each year of delay adds approximately $20.29/month to your premium.",
+          "es": "La penalidad de inscripcion tardia de la Parte B agrega un 10% a la prima mensual estandar por cada periodo completo de 12 meses en que era elegible pero no estaba inscrito en Medicare Original. Los anos parciales no cuentan. La penalidad se aplica a la prima estandar del ano actual, lo que significa que aumenta cada ano a medida que CMS fija una nueva prima estandar. En 2026, la prima estandar es $202.90/mes, por lo que cada ano de retraso agrega aproximadamente $20.29/mes a su prima."
         }
       ],
       "table": {
         "caption": {
-          "en": "Medicare Part B late-enrollment penalty by years of delay (2026 standard premium $202.90/month)",
-          "es": "Penalidad por inscripción tardía de Medicare Parte B por años de retraso (prima estándar de 2026 $202.90/mes)"
+          "en": "Medicare Part B late enrollment penalty examples by years delayed (2026 premium base: $202.90/month)",
+          "es": "Ejemplos de penalidad por inscripcion tardia de Medicare Parte B segun anos de retraso (base 2026: $202.90/mes)"
         },
         "headers": {
-          "en": ["Years of Unexcused Delay", "Penalty Percentage", "Monthly Premium Increase", "New Monthly Premium (2026)"],
-          "es": ["Años de retraso injustificado", "Porcentaje de penalidad", "Aumento mensual de prima", "Nueva prima mensual (2026)"]
+          "en": ["Years Delayed", "Penalty Surcharge", "2026 Monthly Premium with Penalty", "Lifetime Extra Cost (10 years)"],
+          "es": ["Anos de retraso", "Recargo de penalidad", "Prima mensual 2026 con penalidad", "Costo extra de por vida (10 anos)"]
         },
         "rows": [
           {
-            "en": ["1 year", "10%", "+$20.29/mo", "$223.19/mo"],
-            "es": ["1 año", "10%", "+$20.29/mes", "$223.19/mes"]
+            "en": ["1 full year", "+10%", "$223.19/month", "+$2,434"],
+            "es": ["1 ano completo", "+10%", "$223.19/mes", "+$2,434"]
           },
           {
-            "en": ["2 years", "20%", "+$40.58/mo", "$243.48/mo"],
-            "es": ["2 años", "20%", "+$40.58/mes", "$243.48/mes"]
+            "en": ["2 full years", "+20%", "$243.48/month", "+$4,868"],
+            "es": ["2 anos completos", "+20%", "$243.48/mes", "+$4,868"]
           },
           {
-            "en": ["3 years", "30%", "+$60.87/mo", "$263.77/mo"],
-            "es": ["3 años", "30%", "+$60.87/mes", "$263.77/mes"]
+            "en": ["3 full years", "+30%", "$263.77/month", "+$7,302"],
+            "es": ["3 anos completos", "+30%", "$263.77/mes", "+$7,302"]
           },
           {
-            "en": ["5 years", "50%", "+$101.45/mo", "$304.35/mo"],
-            "es": ["5 años", "50%", "+$101.45/mes", "$304.35/mes"]
+            "en": ["5 full years", "+50%", "$304.35/month", "+$12,171"],
+            "es": ["5 anos completos", "+50%", "$304.35/mes", "+$12,171"]
           },
           {
-            "en": ["10 years", "100%", "+$202.90/mo", "$405.80/mo"],
-            "es": ["10 años", "100%", "+$202.90/mes", "$405.80/mes"]
+            "en": ["10 full years", "+100%", "$405.80/month", "+$24,341"],
+            "es": ["10 anos completos", "+100%", "$405.80/mes", "+$24,341"]
           }
         ],
         "footnote": {
-          "en": "Penalty calculated on 2026 standard Part B premium of $202.90/month. Penalty is permanent and applies for the remainder of your enrollment in Medicare Part B. IRMAA surcharges (for higher earners) are added on top of this already-inflated amount.",
-          "es": "Penalidad calculada sobre la prima estándar de la Parte B de 2026 de $202.90/mes. La penalidad es permanente y se aplica durante el resto de su inscripción en Medicare Parte B. Los recargos IRMAA (para personas con mayores ingresos) se suman sobre este monto ya inflado."
+          "en": "Penalty dollar amounts shown use the 2026 standard premium of $202.90. The actual monthly dollar amount adjusts each year as CMS sets a new standard premium. Lifetime extra cost estimate assumes 10 years of enrollment at the 2026 premium constant for illustration only.",
+          "es": "Los montos de penalidad mostrados usan la prima estandar de 2026 de $202.90. El monto mensual real en dolares se ajusta cada ano a medida que CMS establece una nueva prima estandar. La estimacion del costo extra de por vida asume 10 anos de inscripcion usando la prima de 2026 como constante solo para ilustracion."
         },
-        "source": "Medicare.gov: Part B Late Enrollment Penalty, CMS 2026"
+        "source": "CMS 2026 Medicare Parts B Premiums and Deductibles Fact Sheet"
       }
     },
     {
       "heading": {
-        "en": "Medicare Part B Enrollment Windows: Initial, Special, and General",
-        "es": "Ventanas de inscripción de Medicare Parte B: inicial, especial y general"
+        "en": "The Employer Group Health Plan Exception: When Delaying Part B Is Safe",
+        "es": "La excepcion del plan de salud grupal del empleador: cuando es seguro retrasar la Parte B"
       },
       "paragraphs": [
         {
-          "en": "Medicare Part B has three distinct enrollment periods. The Initial Enrollment Period (IEP) is a 7-month window that spans 3 months before your 65th birthday month, the birthday month itself, and 3 months after. Enrolling in the first 3 months of your IEP starts Part B coverage on the first day of your birthday month. Enrolling in the birthday month or the 3 months after causes a 1-to-3-month coverage delay. If you miss your IEP and do not have a qualifying reason for late enrollment, you must wait for the General Enrollment Period.",
-          "es": "Medicare Parte B tiene tres períodos de inscripción distintos. El Período de Inscripción Inicial (IEP) es una ventana de 7 meses que abarca los 3 meses antes del mes de su 65 cumpleaños, el mes del cumpleaños y los 3 meses posteriores. Inscribirse en los primeros 3 meses de su IEP inicia la cobertura de la Parte B el primer día del mes de su cumpleaños. Inscribirse en el mes del cumpleaños o en los 3 meses posteriores provoca un retraso de 1 a 3 meses en la cobertura. Si pierde su IEP y no tiene una razón calificada para la inscripción tardía, debe esperar el Período de Inscripción General."
+          "en": "Medicare Part B can be safely delayed without penalty if you are actively working and covered by a group health plan from your own current employer (or your spouse's current employer) where the company has 20 or more employees. Both conditions must be true at the same time: the job must be active (not retired), and the employer must have 20 or more employees. Under this rule, the employer plan pays first and Medicare pays second (secondary payer rules), so you can defer Part B while your employer plan handles most claims.",
+          "es": "Medicare Parte B puede retrasarse de forma segura sin penalidad si esta trabajando activamente y tiene cobertura de un plan de salud grupal de su propio empleador actual (o del empleador actual de su conyuge) donde la empresa tiene 20 o mas empleados. Ambas condiciones deben cumplirse al mismo tiempo: el trabajo debe ser activo (no jubilado), y el empleador debe tener 20 o mas empleados. Bajo esta regla, el plan del empleador paga primero y Medicare paga segundo."
         },
         {
-          "en": "The Special Enrollment Period (SEP) applies when you delayed Part B for a qualifying reason (active employer coverage from a 20-plus-employee employer). The SEP is 8 months long, starting the month after your employment or employer coverage ends, whichever comes first. The General Enrollment Period (GEP) runs from January 1 through March 31 each year, with coverage starting July 1. The GEP is the fallback for those who missed the IEP without a valid reason: it comes with the permanent late-enrollment penalty calculated from the date of original eligibility.",
-          "es": "El Período de Inscripción Especial (SEP) aplica cuando retrasó la Parte B por una razón calificada (cobertura activa del empleador de una empresa con 20 o más empleados). El SEP dura 8 meses, comenzando el mes después de que su empleo o cobertura del empleador terminen, lo que ocurra primero. El Período de Inscripción General (GEP) va del 1 de enero al 31 de marzo de cada año, con cobertura que comienza el 1 de julio. El GEP es el recurso alternativo para quienes perdieron el IEP sin una razón válida: viene con la penalidad permanente por inscripción tardía calculada desde la fecha de elegibilidad original."
+          "en": "When active employment ends or the group coverage terminates (whichever comes first), an 8-month Special Enrollment Period begins. You must enroll in Part B within those 8 months to avoid the late enrollment penalty. Common mistake: many people confuse COBRA with active employer coverage. COBRA is continuation coverage after employment ends and does not qualify for the SEP exception. Retiree health plans and marketplace individual plans also do not count. Waiting beyond the 8-month SEP window means you must wait for the General Enrollment Period (January 1 to March 31) with coverage starting the following month, and the full penalty applies.",
+          "es": "Cuando termina el empleo activo o la cobertura grupal (lo que ocurra primero), comienza un Periodo de Inscripcion Especial de 8 meses. Debe inscribirse en la Parte B dentro de esos 8 meses para evitar la penalidad. Error comun: muchas personas confunden COBRA con cobertura activa del empleador. COBRA es cobertura de continuacion despues de que termina el empleo y no califica para la excepcion SEP. Los planes de salud de jubilados y los planes individuales del mercado tampoco cuentan. Esperar mas alla de la ventana SEP de 8 meses significa esperar el Periodo de Inscripcion General (del 1 de enero al 31 de marzo) con cobertura que comienza el mes siguiente, mas la penalidad completa aplica."
         }
       ]
     },
     {
       "heading": {
-        "en": "Part B and Medicare Advantage: Enrollment Is Still Required",
-        "es": "Parte B y Medicare Advantage: la inscripción sigue siendo necesaria"
+        "en": "Enrollment Windows for Part B in 2026",
+        "es": "Ventanas de inscripcion para la Parte B en 2026"
       },
       "paragraphs": [
         {
-          "en": "Medicare Advantage (Part C) plans replace Original Medicare Parts A and B with a private managed care plan. However, enrolling in Medicare Advantage does not eliminate the need for Part B. Medicare rules require you to be enrolled in both Part A and Part B to join any Medicare Advantage plan. If you never enrolled in Part B and want Medicare Advantage coverage, you must first enroll in Part B (paying whatever penalty has accumulated), then enroll in a Medicare Advantage plan during the Annual Enrollment Period (AEP) from October 15 through December 7, 2026, with coverage starting January 1, 2027, or during another qualifying enrollment period.",
-          "es": "Los planes de Medicare Advantage (Parte C) reemplazan Medicare Original Partes A y B con un plan de atención administrada privado. Sin embargo, inscribirse en Medicare Advantage no elimina la necesidad de la Parte B. Las reglas de Medicare requieren que esté inscrito en la Parte A y la Parte B para unirse a cualquier plan de Medicare Advantage. Si nunca se inscribió en la Parte B y quiere cobertura de Medicare Advantage, primero debe inscribirse en la Parte B (pagando cualquier penalidad acumulada), luego inscribirse en un plan de Medicare Advantage durante el Período de Elección Anual (AEP) del 15 de octubre al 7 de diciembre de 2026, con cobertura que comienza el 1 de enero de 2027."
+          "en": "Original Medicare Part B offers three enrollment windows in 2026. The Initial Enrollment Period (IEP) is the 7-month window centered on your 65th birthday: it opens 3 months before the month you turn 65, includes your birthday month, and closes 3 months after. Enrolling in the first 3 months of the IEP means Part B starts on the first day of your birthday month. Enrolling in your birthday month or later means coverage starts 1 to 3 months after signup.",
+          "es": "Medicare Original Parte B ofrece tres ventanas de inscripcion en 2026. El Periodo de Inscripcion Inicial (PII) es la ventana de 7 meses centrada en su 65 cumpleanos: abre 3 meses antes del mes en que cumple 65, incluye su mes de cumpleanos y cierra 3 meses despues. Inscribirse en los primeros 3 meses del PII significa que la Parte B comienza el primer dia de su mes de cumpleanos. Inscribirse en su mes de cumpleanos o despues significa que la cobertura comienza 1 a 3 meses despues de la inscripcion."
         },
         {
-          "en": "Original Medicare Part B covers outpatient care including the 2026 Part B deductible of $283 and 20 percent coinsurance on most services. Medicare Advantage plans include the same minimum outpatient benefit but often add dental, vision, hearing, and fitness programs. Both Original Medicare and Medicare Advantage depend entirely on Part B enrollment. No Part B means no outpatient coverage under either option.",
-          "es": "Medicare Original Parte B cubre atención ambulatoria, incluido el deducible de la Parte B de 2026 de $283 y el coseguro del 20 por ciento en la mayoría de los servicios. Los planes de Medicare Advantage incluyen el mismo beneficio mínimo para pacientes ambulatorios, pero a menudo agregan dental, visión, audición y programas de acondicionamiento físico. Tanto Medicare Original como Medicare Advantage dependen completamente de la inscripción en la Parte B. Sin la Parte B no hay cobertura ambulatoria bajo ninguna de las dos opciones."
+          "en": "The Special Enrollment Period (SEP) for employer coverage runs for 8 months after employment or group coverage ends. Coverage starts the first day of the month after you enroll. The General Enrollment Period (GEP) is January 1 through March 31 each year, available for anyone who missed the IEP and does not qualify for an SEP. A 2023 CMS rule change means GEP coverage now starts on the first of the month after you enroll. The late enrollment penalty still applies during GEP enrollment if you missed your IEP or SEP.",
+          "es": "El Periodo de Inscripcion Especial (SEP) para cobertura de empleador dura 8 meses despues de que termina el empleo o la cobertura grupal. La cobertura comienza el primer dia del mes despues de inscribirse. El Periodo de Inscripcion General (PIG) es del 1 de enero al 31 de marzo de cada ano, disponible para quienes perdieron el PII y no califican para un SEP. Un cambio de regla de CMS de 2023 hace que la cobertura del PIG ahora comience el primero del mes despues de inscribirse. La penalidad de inscripcion tardia aplica durante la inscripcion al PIG si perdio su PII o SEP."
         }
       ]
     },
     {
       "heading": {
-        "en": "Alternatives If You Need to Limit Monthly Costs",
-        "es": "Alternativas si necesita limitar los costos mensuales"
+        "en": "Medicare Part B and Medicare Advantage in 2026",
+        "es": "Medicare Parte B y Medicare Advantage en 2026"
       },
       "paragraphs": [
         {
-          "en": "Medicare Part B cannot be avoided permanently without penalty unless you have creditable coverage, but several programs help lower the premium and cost-sharing for those who qualify. The Medicare Savings Programs (MSPs) are state Medicaid programs that pay Part B premiums for people with limited income and resources. Qualified Medicare Beneficiary (QMB), Specified Low-Income Medicare Beneficiary (SLMB), and Qualifying Individual (QI) programs cover the $202.90 per month Part B premium fully or partially depending on income. Roughly 9 million Medicare beneficiaries qualify for MSP help but are not enrolled. Contact your state Medicaid office or call 1-800-MEDICARE to apply.",
-          "es": "Medicare Parte B no puede evitarse permanentemente sin penalidad a menos que tenga cobertura acreditable, pero varios programas ayudan a reducir la prima y el costo compartido para quienes califican. Los Programas de Ahorro de Medicare (MSPs) son programas estatales de Medicaid que pagan las primas de la Parte B para personas con ingresos y recursos limitados. Los programas de Beneficiario Calificado de Medicare (QMB), Beneficiario de Medicare de Bajos Ingresos Especificado (SLMB) e Individuo Calificado (QI) cubren la prima mensual de $202.90 de la Parte B total o parcialmente dependiendo de los ingresos. Aproximadamente 9 millones de beneficiarios de Medicare califican para la ayuda del MSP pero no están inscritos. Comuníquese con la oficina estatal de Medicaid o llame al 1-800-MEDICARE para solicitar."
+          "en": "Medicare Advantage (Part C) plans are private plans that replace Original Medicare (Part A and Part B). To enroll in any Medicare Advantage plan, you must first have both Medicare Part A and Medicare Part B active. The Medicare Advantage plan then covers your Part A and Part B benefits (and usually additional benefits like dental, vision, and hearing). If you want a Medicare Advantage plan, Part B is effectively required because without it you cannot join any Medicare Advantage plan.",
+          "es": "Los planes Medicare Advantage (Parte C) son planes privados que reemplazan a Medicare Original (Parte A y Parte B). Para inscribirse en cualquier plan Medicare Advantage, primero debe tener activos tanto Medicare Parte A como Medicare Parte B. El plan Medicare Advantage luego cubre sus beneficios de Parte A y Parte B (y generalmente beneficios adicionales como dental, vision y audicion). Si desea un plan Medicare Advantage, la Parte B es efectivamente necesaria porque sin ella no puede unirse a ningun plan Medicare Advantage."
         },
         {
-          "en": "Extra Help (Low Income Subsidy) from the Social Security Administration reduces Part D prescription drug costs for eligible Medicare beneficiaries. Dual-eligible beneficiaries (those enrolled in both Medicare and Medicaid) automatically receive Extra Help and have their Part B premiums covered by Medicaid. About 12 million Americans have both Medicare and Medicaid. If you are near the Medicaid income limit, check [Can I Have Both Medicare and Medicaid](/en/qa/can-i-have-both-medicare-and-medicaid) for the 2026 dual-eligibility rules.",
-          "es": "La Ayuda Adicional (Subsidio de Bajos Ingresos) de la Administración del Seguro Social reduce los costos de medicamentos de la Parte D para los beneficiarios de Medicare elegibles. Los beneficiarios de doble elegibilidad (los inscritos tanto en Medicare como en Medicaid) reciben automáticamente Ayuda Adicional y tienen sus primas de la Parte B cubiertas por Medicaid. Alrededor de 12 millones de estadounidenses tienen tanto Medicare como Medicaid. Si está cerca del límite de ingresos de Medicaid, consulte [¿Puedo tener Medicare y Medicaid?](/es/qa/can-i-have-both-medicare-and-medicaid) para las reglas de doble elegibilidad de 2026."
+          "en": "Medicare Advantage Annual Enrollment Period (AEP) runs October 15 through December 7, 2026, with coverage starting January 1, 2027. The Medicare Advantage Open Enrollment Period (OEP) runs January 1 through March 31, 2026, and allows one plan switch. Both require active Part B enrollment as a prerequisite. Dual-eligible beneficiaries (those with both Medicare and Medicaid, numbering approximately 12 million Americans) often access Dual Eligible Special Needs Plans (D-SNPs) that coordinate both programs, and these also require active Part B.",
+          "es": "El Periodo de Inscripcion Anual (AEP) de Medicare Advantage se extiende del 15 de octubre al 7 de diciembre de 2026, con cobertura que comienza el 1 de enero de 2027. El Periodo de Inscripcion Abierta (OEP) de Medicare Advantage va del 1 de enero al 31 de marzo de 2026 y permite un cambio de plan. Ambos requieren inscripcion activa en la Parte B como prerequisito. Los beneficiarios con doble elegibilidad (los que tienen Medicare y Medicaid, aproximadamente 12 millones de estadounidenses) acceden a Planes de Necesidades Especiales para Doble Elegibles (D-SNP) que tambien requieren la Parte B activa."
         }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Original Medicare Part B Covers and Why Most Beneficiaries Need It",
+        "es": "Lo que cubre Medicare Original Parte B y por que la mayoria de los beneficiarios la necesitan"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare Part B covers two broad categories: medically necessary services (doctor visits, outpatient surgery, mental health services, ambulance services, durable medical equipment) and preventive services (annual wellness visits, cancer screenings, flu shots, cardiovascular screenings). The 2026 Medicare Part B deductible is $283. After meeting the deductible, Medicare Part B pays 80% of the Medicare-approved amount, and you pay the remaining 20% coinsurance with no annual cap unless you have Medigap (Medicare Supplement Insurance) or Medicaid.",
+          "es": "Medicare Original Parte B cubre dos categorias amplias: servicios medicamente necesarios (visitas al medico, cirugia ambulatoria, servicios de salud mental, servicios de ambulancia, equipo medico duradero) y servicios preventivos (visitas anuales de bienestar, examenes de cancer, vacunas contra la gripe, examenes cardiovasculares). El deducible de Medicare Parte B en 2026 es $283. Despues de cumplir el deducible, Medicare Parte B paga el 80% del monto aprobado por Medicare, y usted paga el 20% restante de coseguro sin limite anual a menos que tenga Medigap o Medicaid."
+        },
+        {
+          "en": "The unlimited 20% coinsurance is the primary financial risk of relying on Original Medicare Part B without supplemental coverage. Medigap plans pick up the 20% coinsurance for most covered services. Standalone Part D coverage (prescription drug coverage) is also separate from Part B. Medicare Part A covers inpatient hospital stays, skilled nursing facilities, and hospice, but Part A alone leaves a large outpatient care gap. Without Part B altogether, you bear the full cost of outpatient care, which for a single outpatient procedure can represent thousands of dollars even at Medicare-approved rates.",
+          "es": "El coseguro ilimitado del 20% es el principal riesgo financiero de depender de Medicare Original Parte B sin cobertura suplementaria. Los planes Medigap cubren el 20% del coseguro para la mayoria de los servicios cubiertos. La cobertura de Parte D independiente (cobertura de medicamentos recetados) tambien es independiente de la Parte B. Medicare Parte A cubre hospitalizaciones, instalaciones de enfermeria especializada y hospicio, pero la Parte A sola deja un gran vacio en atencion ambulatoria. Sin la Parte B, asume el costo total de la atencion ambulatoria, que puede representar miles de dolares incluso a tarifas aprobadas por Medicare."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives If You Genuinely Do Not Want Medicare Part B",
+        "es": "Alternativas si genuinamente no desea Medicare Parte B"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Part B is voluntary, so there are situations where declining or delaying it makes sense. The following are the legitimate scenarios where you can forgo Part B without penalty or with minimal impact. Outside these scenarios, declining Part B exposes you to the permanent late enrollment penalty and full out-of-pocket costs for outpatient care.",
+          "es": "Medicare Parte B es voluntaria, por lo que hay situaciones en las que rechazarla o retrasarla tiene sentido. Los siguientes son los escenarios legitimos donde puede prescindir de la Parte B sin penalidad o con impacto minimo. Fuera de estos escenarios, rechazar la Parte B lo expone a la penalidad permanente de inscripcion tardia y a los costos totales de bolsillo por atencion ambulatoria."
+        }
+      ],
+      "list": [
+        { "en": "Active large-group employer coverage: If you or your spouse actively work for a company with 20 or more employees and that plan covers you, you may safely delay Part B. Enroll within the 8-month SEP when that coverage ends.", "es": "Cobertura activa del empleador de grupo grande: Si usted o su conyuge trabajan activamente para una empresa con 20 o mas empleados y ese plan lo cubre, puede retrasar la Parte B de forma segura. Inscribase dentro del SEP de 8 meses cuando esa cobertura termine." },
+        { "en": "VA healthcare: Veterans with VA healthcare access can use VA benefits instead of Medicare Part B for most outpatient care at VA facilities. However, the VA does not cover care at non-VA facilities, and if you later want Part B, the late enrollment penalty still applies unless a SEP qualifies you.", "es": "Atencion medica de VA: Los veteranos con acceso a la atencion medica de VA pueden usar los beneficios de VA en lugar de Medicare Parte B para la mayoria de la atencion ambulatoria en instalaciones de VA. Sin embargo, VA no cubre atencion en instalaciones no VA, y si mas tarde desea la Parte B, aplica la penalidad de inscripcion tardia a menos que un SEP lo califique." },
+        { "en": "TRICARE for Life (military retirees): Military retirees and their dependents enrolled in TRICARE for Life must have Medicare Part A but TRICARE for Life acts as secondary payer alongside Part B. Declining Part B causes loss of TRICARE for Life benefits, so this is generally not a viable alternative for this population.", "es": "TRICARE para la Vida (jubilados militares): Los jubilados militares y sus dependientes inscritos en TRICARE para la Vida deben tener Medicare Parte A, pero TRICARE para la Vida actua como pagador secundario junto con la Parte B. Rechazar la Parte B causa la perdida de los beneficios de TRICARE para la Vida, por lo que generalmente no es una alternativa viable para esta poblacion." },
+        { "en": "Medicaid-covered individuals: People enrolled in both Medicare and Medicaid (dual-eligible, approximately 12 million Americans) may have reduced cost exposure for outpatient care through Medicaid, but most dual-eligible programs still require active Medicare Part B enrollment. Dropping Part B typically reduces Medicaid wraparound benefits.", "es": "Personas cubiertas por Medicaid: Las personas inscritas en Medicare y Medicaid (doble elegibilidad, aproximadamente 12 millones de estadounidenses) pueden tener menor exposicion a costos por atencion ambulatoria a traves de Medicaid, pero la mayoria de los programas de doble elegibilidad aun requieren inscripcion activa en Medicare Parte B. Eliminar la Parte B tipicamente reduce los beneficios complementarios de Medicaid." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Enroll in Medicare Part B in 2026",
+        "es": "Como inscribirse en Medicare Parte B en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Part B enrollment in 2026 starts at medicare.gov or by calling Social Security at 1-800-772-1213. For those not automatically enrolled (not yet receiving Social Security), the Social Security Administration handles Part B enrollment using Form CMS-40B (Application for Enrollment in Medicare Part B). Applications can be submitted online at ssa.gov, by phone, or in person at a Social Security office.",
+          "es": "La inscripcion en Medicare Parte B en 2026 comienza en medicare.gov o llamando al Seguro Social al 1-800-772-1213. Para quienes no se inscriben automaticamente (que aun no reciben Seguro Social), la Administracion del Seguro Social maneja la inscripcion usando el Formulario CMS-40B (Solicitud de Inscripcion en Medicare Parte B). Las solicitudes se pueden enviar en linea en ssa.gov, por telefono o en persona en una oficina del Seguro Social."
+        }
+      ],
+      "list": [
+        { "en": "Step 1: Confirm your enrollment window. Check whether you are in your IEP (7-month window around your 65th birthday) or whether you have an SEP active because you recently left active employer coverage.", "es": "Paso 1: Confirme su ventana de elegibilidad. Verifique si esta en su PII (ventana de 7 meses alrededor de su 65 cumpleanos) o si tiene un SEP activo porque recientemente dejo la cobertura activa del empleador." },
+        { "en": "Step 2: Gather documents. You will need your Medicare card or Part A award letter, proof of prior employer coverage if claiming an SEP (CMS-L564 form completed by your employer), and your Social Security number.", "es": "Paso 2: Reuna documentos. Necesitara su tarjeta de Medicare o carta de concesion de la Parte A, prueba de cobertura previa del empleador si reclama un SEP (formulario CMS-L564 completado por su empleador) y su numero de Seguro Social." },
+        { "en": "Step 3: Submit CMS-40B to Social Security. Apply online at ssa.gov, by calling 1-800-772-1213, or in person at your nearest SSA office. If claiming a SEP, submit CMS-L564 at the same time to document employer coverage.", "es": "Paso 3: Envie el CMS-40B al Seguro Social. Solicite en linea en ssa.gov, llamando al 1-800-772-1213 o en persona en su oficina SSA mas cercana. Si reclama un SEP, envie el CMS-L564 al mismo tiempo para documentar la cobertura del empleador." },
+        { "en": "Step 4: Confirm your effective date. Coverage starts the first of the month after SSA processes your enrollment. Log into Medicare.gov to confirm your Part B effective date.", "es": "Paso 4: Confirme su fecha efectiva. La cobertura comienza el primero del mes despues de que la SSA procese su inscripcion. Inicie sesion en Medicare.gov para confirmar su fecha efectiva de la Parte B." },
+        { "en": "Step 5: Choose supplemental coverage. After Part B is active, evaluate Medigap plans to cover the 20% coinsurance, or Medicare Advantage plans that bundle Part A, Part B, and usually Medicare Part D (prescription drug coverage) into one plan.", "es": "Paso 5: Elija cobertura suplementaria. Despues de que la Parte B este activa, evalue los planes Medigap para cubrir el 20% de coseguro, o los planes Medicare Advantage que combinan la Parte A, la Parte B y generalmente Medicare Parte D en un solo plan." }
       ]
     }
   ],
 
   "howToApply": {
     "numberedSteps": [
-      {
-        "en": "Step 1: Determine your situation. Do you have active employer coverage from an employer with 20 or more employees? If yes, you can delay Part B. If no, enroll at age 65 during your Initial Enrollment Period.",
-        "es": "Paso 1: Determine su situación. ¿Tiene cobertura activa del empleador de una empresa con 20 o más empleados? Si es así, puede retrasar la Parte B. Si no, inscríbase a los 65 años durante su Período de Inscripción Inicial."
-      },
-      {
-        "en": "Step 2: Enroll online at medicare.gov, by calling Social Security at 1-800-772-1213, or by visiting your local Social Security office. Enrollment in Part B typically happens through Social Security, not through Medicare directly.",
-        "es": "Paso 2: Inscríbase en línea en medicare.gov, llamando al Seguro Social al 1-800-772-1213, o visitando su oficina local del Seguro Social. La inscripción en la Parte B generalmente ocurre a través del Seguro Social, no directamente a través de Medicare."
-      },
-      {
-        "en": "Step 3: If delaying Part B due to active employer coverage, keep documentation. When employer coverage ends, gather your coverage termination letter and employment separation documents before enrolling via the 8-month SEP.",
-        "es": "Paso 3: Si retrasa la Parte B debido a cobertura activa del empleador, guarde documentación. Cuando la cobertura del empleador termine, reúna su carta de terminación de cobertura y documentos de separación laboral antes de inscribirse a través del SEP de 8 meses."
-      },
-      {
-        "en": "Step 4: Enroll during the SEP within the first 60 days (not the full 8 months) to avoid any gap between losing employer coverage and starting Medicare Part B. Coverage can take 4 to 8 weeks to process.",
-        "es": "Paso 4: Inscríbase durante el SEP dentro de los primeros 60 días (no los 8 meses completos) para evitar cualquier brecha entre perder la cobertura del empleador e iniciar Medicare Parte B. La cobertura puede tardar de 4 a 8 semanas en procesarse."
-      },
-      {
-        "en": "Step 5: After enrolling in Part B, use the Medicare Plan Finder at medicare.gov/plan-compare to select a standalone Medicare Part D drug plan or a Medicare Advantage plan that includes drug coverage, to avoid a separate Medicare Part D late-enrollment penalty. If you want supplemental coverage that fills in Part B cost-sharing gaps, consider a Medigap (Medicare Supplement Insurance) plan, available only after you enroll in Original Medicare Parts A and B.",
-        "es": "Paso 5: Después de inscribirse en la Parte B, use el Buscador de Planes de Medicare en medicare.gov/plan-compare para seleccionar un plan de medicamentos Medicare Parte D independiente o un plan de Medicare Advantage que incluya cobertura de medicamentos, para evitar una penalidad separada por inscripción tardía de Medicare Parte D. Si desea cobertura suplementaria que cubra las brechas de costo compartido de la Parte B, considere un plan Medigap (Seguro Suplementario de Medicare), disponible solo después de inscribirse en Medicare Original Partes A y B."
-      }
+      { "en": "Step 1: Determine your enrollment window. If you are turning 65, your IEP opens 3 months before your birthday month. If leaving active employer coverage, your 8-month SEP starts the day that employment or group coverage ends.", "es": "Paso 1: Determine su ventana de inscripcion. Si cumple 65 anos, su PII abre 3 meses antes de su mes de cumpleanos. Si deja la cobertura activa del empleador, su SEP de 8 meses comienza el dia en que ese empleo o cobertura grupal termina." },
+      { "en": "Step 2: Gather required documents. Medicare card or Part A confirmation letter; CMS-L564 (employer coverage form) if claiming SEP; Social Security number; insurance documentation showing prior group health coverage dates.", "es": "Paso 2: Reuna documentos requeridos. Tarjeta de Medicare o carta de confirmacion de la Parte A; CMS-L564 (formulario de cobertura del empleador) si reclama SEP; numero de Seguro Social; documentacion de seguro que muestre fechas de cobertura de salud grupal previa." },
+      { "en": "Step 3: Submit CMS-40B Application for Part B. Apply online at ssa.gov/medicare, call SSA at 1-800-772-1213, or visit a local Social Security office in person. Mail-in option is also available.", "es": "Paso 3: Envie la solicitud CMS-40B para la Parte B. Solicite en linea en ssa.gov/medicare, llame a la SSA al 1-800-772-1213 o visite una oficina local del Seguro Social en persona. La opcion de correo postal tambien esta disponible." },
+      { "en": "Step 4: Verify your effective date and premium. CMS will confirm your Part B start date. Log into Medicare.gov or call 1-800-MEDICARE (1-800-633-4227) to verify. If a late enrollment penalty applies, CMS will notify you of the adjusted premium amount.", "es": "Paso 4: Verifique su fecha efectiva y prima. CMS confirmara su fecha de inicio de la Parte B. Inicie sesion en Medicare.gov o llame al 1-800-MEDICARE (1-800-633-4227) para verificar. Si aplica una penalidad de inscripcion tardia, CMS le notificara el monto de prima ajustado." },
+      { "en": "Step 5: Enroll in supplemental coverage. Once Part B is active, use the Medicare Plan Finder at medicare.gov/plan-compare to evaluate Medicare Advantage or Medigap options that reduce your 20% coinsurance exposure.", "es": "Paso 5: Inscribase en cobertura suplementaria. Una vez que la Parte B este activa, use el Buscador de Planes de Medicare en medicare.gov/plan-compare para evaluar las opciones de Medicare Advantage o Medigap que reducen su exposicion al coseguro del 20%." }
     ],
-    "govStartingUrl": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/how-and-when-you-can-sign-up-for-medicare",
+    "govStartingUrl": "https://www.ssa.gov/medicare/plan/when-to-sign-up",
     "documentsNeeded": [
-      {
-        "en": "Social Security card or Medicare number (from SSA.gov)",
-        "es": "Tarjeta del Seguro Social o número de Medicare (de SSA.gov)"
-      },
-      {
-        "en": "Employer group health plan card and plan summary (to verify creditable coverage status and employer size)",
-        "es": "Tarjeta del plan de salud grupal del empleador y resumen del plan (para verificar el estado de cobertura acreditable y el tamaño del empleador)"
-      },
-      {
-        "en": "Written confirmation from employer of total employee count (important for establishing the 20-employee threshold)",
-        "es": "Confirmación escrita del empleador sobre el número total de empleados (importante para establecer el umbral de 20 empleados)"
-      },
-      {
-        "en": "Letter confirming coverage end date (needed when enrolling via SEP after employer coverage ends)",
-        "es": "Carta que confirme la fecha de fin de cobertura (necesaria al inscribirse a través del SEP después de que termine la cobertura del empleador)"
-      },
-      {
-        "en": "Proof of employment separation date if enrolling via the Special Enrollment Period",
-        "es": "Prueba de la fecha de separación laboral si se inscribe a través del Período de Inscripción Especial"
-      }
+      { "en": "Medicare card or Part A enrollment confirmation letter", "es": "Tarjeta de Medicare o carta de confirmacion de inscripcion en la Parte A" },
+      { "en": "Social Security number for yourself (and spouse if claiming spousal employer coverage SEP)", "es": "Numero de Seguro Social para usted (y conyuge si reclama SEP de cobertura del empleador del conyuge)" },
+      { "en": "CMS-L564 (Request for Employment Information) completed by your employer, if claiming SEP for employer group health coverage", "es": "CMS-L564 (Solicitud de Informacion de Empleo) completado por su empleador, si reclama SEP por cobertura de salud grupal del empleador" },
+      { "en": "Documentation of prior group health coverage dates (insurance card, benefit statements) if requesting SEP", "es": "Documentacion de fechas de cobertura de salud grupal previa (tarjeta de seguro, estados de beneficios) si solicita SEP" },
+      { "en": "Photo ID (driver's license, state ID, or passport)", "es": "Identificacion con foto (licencia de conducir, identificacion estatal o pasaporte)" }
     ],
     "commonDenialReasons": [
-      {
-        "en": "Missed the 8-month Special Enrollment Period after employer coverage ended (forces GEP and permanent late-enrollment penalty)",
-        "es": "Se perdió el Período de Inscripción Especial de 8 meses después de que terminó la cobertura del empleador (obliga al GEP y penalidad permanente por inscripción tardía)"
-      },
-      {
-        "en": "Mistakenly treating COBRA as qualifying creditable coverage for delaying Part B (COBRA is not active employer coverage under CMS rules)",
-        "es": "Tratar erróneamente COBRA como cobertura acreditable calificada para retrasar la Parte B (COBRA no es cobertura activa del empleador según las reglas de CMS)"
-      },
-      {
-        "en": "Using an ACA marketplace plan or retiree health coverage instead of Part B (neither qualifies for penalty-free delay)",
-        "es": "Usar un plan del mercado ACA o cobertura de salud para jubilados en lugar de la Parte B (ninguno califica para retraso sin penalidad)"
-      },
-      {
-        "en": "Working for a small employer (under 20 employees) and delaying Part B (Medicare is primary for small employer workers; delay causes large unpaid claim balances)",
-        "es": "Trabajar para un empleador pequeño (menos de 20 empleados) y retrasar la Parte B (Medicare es primario para trabajadores de empleadores pequeños; el retraso causa grandes saldos de reclamaciones sin pagar)"
-      }
+      { "en": "Applying outside the IEP or SEP window without a qualifying exception, resulting in being directed to wait for the General Enrollment Period with penalty", "es": "Solicitar fuera de la ventana PII o SEP sin una excepcion calificante, lo que resulta en tener que esperar el Periodo de Inscripcion General con penalidad" },
+      { "en": "Claiming SEP based on COBRA or retiree health plan coverage, which does not qualify for the employer SEP exception", "es": "Reclamar SEP basado en cobertura COBRA o plan de salud de jubilado, que no califica para la excepcion SEP del empleador" },
+      { "en": "CMS-L564 not completed or not signed by employer, causing the SEP claim to be rejected", "es": "CMS-L564 no completado o no firmado por el empleador, lo que hace que el reclamo SEP sea rechazado" },
+      { "en": "Employer has fewer than 20 employees, disqualifying the group health plan from triggering the SEP exception", "es": "El empleador tiene menos de 20 empleados, lo que descalifica al plan de salud grupal de activar la excepcion SEP" }
     ],
     "deadline": {
-      "en": "Initial Enrollment Period: 7-month window centered on your 65th birthday. Special Enrollment Period: 8 months after active employer coverage or employment ends. General Enrollment Period: January 1 through March 31 each year, coverage starts July 1.",
-      "es": "Período de Inscripción Inicial: ventana de 7 meses centrada en su 65 cumpleaños. Período de Inscripción Especial: 8 meses después de que termine la cobertura activa del empleador o el empleo. Período de Inscripción General: del 1 de enero al 31 de marzo de cada año, la cobertura comienza el 1 de julio."
+      "en": "IEP: 7 months centered on your 65th birthday. Employer SEP: 8 months from job or coverage end date. GEP: January 1 to March 31 annually (coverage starts first of the following month).",
+      "es": "PII: 7 meses centrados en su 65 cumpleanos. SEP de empleador: 8 meses desde la fecha de fin del trabajo o cobertura. PIG: 1 de enero al 31 de marzo anualmente (cobertura comienza el primero del mes siguiente)."
     }
   },
 
   "faqs": {
     "en": [
       {
-        "question": "Is Medicare Part B required by law?",
-        "answer": "No. Medicare Part B is not legally mandatory. You can refuse it. However, refusing Part B without qualifying creditable coverage (active employer coverage from a 20-plus-employee employer, TRICARE for Life, etc.) permanently locks in a late-enrollment penalty of 10 percent of the 2026 standard premium ($202.90/month) for every 12 months you delayed. For most people without qualifying coverage, refusing Part B is far more expensive than enrolling."
+        "question": "Is Medicare Part B mandatory when you turn 65?",
+        "answer": "No. Medicare Part B is legally voluntary at any age, including when you turn 65. However, if you skip it and do not have qualifying employer coverage, you will pay a permanent late enrollment penalty of 10% per full year delayed when you eventually sign up. For most people without active employer coverage, enrolling during the 7-month Initial Enrollment Period around their 65th birthday is strongly advisable."
       },
       {
-        "question": "What happens if I never sign up for Medicare Part B?",
-        "answer": "If you never enroll in Part B and do not have qualifying creditable coverage, you accumulate a permanent late-enrollment penalty of 10 percent per year of delay. You also have no Medicare outpatient coverage, meaning all physician visits, outpatient procedures, preventive care, and durable medical equipment are fully out of pocket. You cannot join a Medicare Advantage plan without Part B. To enroll after missing your window, you must wait for the General Enrollment Period (January 1 through March 31), with coverage starting July 1."
+        "question": "What is the Medicare Part B late enrollment penalty in 2026?",
+        "answer": "The 2026 Part B late enrollment penalty is 10% of the standard monthly premium ($202.90) for each full 12-month period you were eligible but not enrolled. If you delayed 3 full years, your premium is 30% higher than the standard rate, permanently. Partial years do not trigger an additional penalty tier. The dollar penalty adjusts each year as CMS sets a new standard premium."
       },
       {
-        "question": "Can I drop Medicare Part B if I do not want to pay the premium?",
-        "answer": "Yes, you can voluntarily disenroll from Part B by contacting Social Security at 1-800-772-1213 or visiting a Social Security office. However, once you drop Part B, re-enrolling requires waiting for the General Enrollment Period (January 1 through March 31) and you will owe the permanent late-enrollment penalty for the months you were without Part B. Dropping Part B is almost never advisable unless you have gained qualifying creditable coverage (such as returning to work at a large employer)."
+        "question": "Can I delay Medicare Part B if I have employer insurance?",
+        "answer": "Yes, but only if you are actively working (not retired) and your employer group health plan is through a company with 20 or more employees. When your employment or coverage ends, you have an 8-month Special Enrollment Period to sign up for Part B without penalty. COBRA does not count as active employer coverage for this SEP, and neither do retiree plans or individual market plans."
       },
       {
-        "question": "Does having an ACA marketplace plan let me delay Medicare Part B without penalty?",
-        "answer": "No. ACA marketplace plans do not count as creditable coverage for Medicare Part B delay purposes. If you buy a marketplace plan instead of enrolling in Medicare Part B after age 65, the Part B late-enrollment penalty clock runs from the date you first became eligible. When you eventually do enroll, you will owe the permanent penalty for every 12-month period of unexcused delay. Additionally, most marketplace plans lose subsidy eligibility once you are Medicare-eligible, making them more expensive."
+        "question": "What happens if I miss my Initial Enrollment Period for Part B?",
+        "answer": "If you miss your IEP and do not have a qualifying SEP, you must wait for the General Enrollment Period (January 1 through March 31 each year). Coverage starts on the first of the month after you enroll. You will also owe the late enrollment penalty equal to 10% per full year delayed, and that surcharge is permanent for the life of your Part B coverage."
       },
       {
-        "question": "What is the 2026 Medicare Part B premium and deductible?",
-        "answer": "The 2026 standard Medicare Part B premium is $202.90 per month. Higher earners pay more under the Income-Related Monthly Adjustment Amount (IRMAA) brackets, ranging from $202.90 to $689.90 per month depending on income reported 2 years prior (2024 tax return). The 2026 Part B annual deductible is $283. After the deductible, Original Medicare pays 80 percent of covered outpatient services; you pay 20 percent coinsurance with no annual cap under Original Medicare alone."
+        "question": "Is Medicare Part B required to join Medicare Advantage?",
+        "answer": "Yes. To enroll in any Medicare Advantage (Part C) plan, you must already have both Medicare Part A and Medicare Part B active. If you decline Part B, you are ineligible for Medicare Advantage. The 2026 Medicare Advantage Annual Enrollment Period runs October 15 through December 7, 2026, with coverage beginning January 1, 2027."
       },
       {
-        "question": "Does COBRA count as creditable coverage for delaying Medicare Part B?",
-        "answer": "No. CMS explicitly classifies COBRA as continuation coverage, not active employer group health plan coverage. The 8-month Special Enrollment Period clock runs during COBRA. If your employer coverage ended and you went on COBRA instead of enrolling in Medicare within 8 months, your SEP expired. You must now use the General Enrollment Period and will owe the permanent late-enrollment penalty for the gap period."
+        "question": "Does COBRA let me delay Medicare Part B without a penalty?",
+        "answer": "No. COBRA is continuation coverage after you leave a job, not active employer coverage. CMS rules are explicit: only a group health plan through current active employment qualifies for the Part B delay exception. If you rely on COBRA instead of enrolling in Part B during your IEP, you will face the late enrollment penalty when you eventually sign up."
       },
       {
-        "question": "Can I have Medicare Part A without Part B?",
-        "answer": "Yes. Medicare Part A (hospital coverage) and Part B (outpatient coverage) are enrolled separately. Part A is free for most people who worked 40 or more quarters and is almost always worth enrolling in at 65, even with employer coverage. Part B carries a $202.90 per month premium in 2026 and can be delayed penalty-free with qualifying employer coverage. Many workers at large employers enroll in free Part A at 65 and delay paid Part B until they retire."
+        "question": "What does Medicare Part B cover in 2026?",
+        "answer": "Medicare Part B covers outpatient care including doctor visits, outpatient surgery, mental health services, lab tests, diagnostic imaging, ambulance services, durable medical equipment, and preventive services (flu shots, cancer screenings, annual wellness visits). The 2026 Part B deductible is $283. After the deductible, Part B pays 80% of the Medicare-approved amount; you pay the 20% coinsurance with no annual cap unless you add Medigap or have Medicaid."
       },
       {
-        "question": "Do Medicare Savings Programs help pay the Part B premium?",
-        "answer": "Yes. Medicare Savings Programs (MSPs) are state Medicaid programs that help pay Part B premiums for beneficiaries with limited income. The Qualified Medicare Beneficiary (QMB) program pays the full $202.90 Part B premium, the Part A and B deductibles, and coinsurance for people with incomes at or below 100 percent of the federal poverty level. The Specified Low-Income Medicare Beneficiary (SLMB) program pays the Part B premium for incomes between 100 percent and 120 percent FPL. About 9 million beneficiaries qualify but are not enrolled. Apply through your state Medicaid office."
+        "question": "How much does Medicare Part B cost per month in 2026?",
+        "answer": "The standard 2026 Medicare Part B premium is $202.90 per month. Higher-income beneficiaries pay more through the Income-Related Monthly Adjustment Amount (IRMAA); individuals with 2024 income above $109,000 pay a higher tier. If you have a late enrollment penalty, add 10% per delayed year to the $202.90 base. Most beneficiaries have the premium deducted directly from their Social Security check."
       }
     ],
     "es": [
       {
-        "question": "¿Es Medicare Parte B requerido por ley?",
-        "answer": "No. Medicare Parte B no es legalmente obligatorio. Puede rechazarlo. Sin embargo, rechazar la Parte B sin cobertura acreditable calificada (cobertura activa del empleador de una empresa con 20 o más empleados, TRICARE for Life, etc.) genera permanentemente una penalidad por inscripción tardía del 10 por ciento de la prima estándar de 2026 ($202.90/mes) por cada 12 meses de retraso. Para la mayoría de las personas sin cobertura calificada, rechazar la Parte B es mucho más costoso que inscribirse."
+        "question": "¿Es obligatoria Medicare Parte B cuando cumple 65 anos?",
+        "answer": "No. Medicare Parte B es legalmente voluntaria a cualquier edad, incluso cuando cumple 65 anos. Sin embargo, si la omite y no tiene cobertura calificante del empleador, pagara una penalidad permanente de inscripcion tardia del 10% por cada ano completo de retraso cuando finalmente se inscriba. Para la mayoria de las personas sin cobertura activa del empleador, inscribirse durante el Periodo de Inscripcion Inicial de 7 meses alrededor de su 65 cumpleanos es muy recomendable."
       },
       {
-        "question": "¿Qué pasa si nunca me inscribo en Medicare Parte B?",
-        "answer": "Si nunca se inscribe en la Parte B y no tiene cobertura acreditable calificada, acumula una penalidad permanente por inscripción tardía del 10 por ciento por año de retraso. Tampoco tiene cobertura ambulatoria de Medicare, lo que significa que todas las visitas al médico, procedimientos ambulatorios, atención preventiva y equipo médico duradero corren completamente por su cuenta. No puede unirse a un plan de Medicare Advantage sin la Parte B. Para inscribirse después de perder su ventana, debe esperar el Período de Inscripción General (del 1 de enero al 31 de marzo), con cobertura que comienza el 1 de julio."
+        "question": "¿Cual es la penalidad por inscripcion tardia de Medicare Parte B en 2026?",
+        "answer": "La penalidad de inscripcion tardia de la Parte B en 2026 es el 10% de la prima mensual estandar ($202.90) por cada periodo completo de 12 meses en que era elegible pero no estaba inscrito. Si retras 3 anos completos, su prima es un 30% mas alta que la tarifa estandar, permanentemente. Los anos parciales no activan un nivel de penalidad adicional. La penalidad en dolares se ajusta cada ano a medida que CMS cambia la prima estandar."
       },
       {
-        "question": "¿Puedo cancelar Medicare Parte B si no quiero pagar la prima?",
-        "answer": "Sí, puede darse de baja voluntariamente de la Parte B comunicándose con el Seguro Social al 1-800-772-1213 o visitando una oficina del Seguro Social. Sin embargo, una vez que cancela la Parte B, volver a inscribirse requiere esperar el Período de Inscripción General (del 1 de enero al 31 de marzo) y deberá la penalidad permanente por inscripción tardía por los meses sin la Parte B. Cancelar la Parte B casi nunca es aconsejable a menos que haya obtenido cobertura acreditable calificada."
+        "question": "¿Puedo retrasar Medicare Parte B si tengo seguro del empleador?",
+        "answer": "Si, pero solo si esta trabajando activamente (no jubilado) y su plan de salud grupal del empleador es a traves de una empresa con 20 o mas empleados. Cuando su empleo o cobertura termina, tiene un Periodo de Inscripcion Especial de 8 meses para inscribirse en la Parte B sin penalidad. COBRA no cuenta como cobertura activa del empleador para este SEP, tampoco los planes de jubilados ni los planes individuales del mercado."
       },
       {
-        "question": "¿Tener un plan del mercado ACA me permite retrasar Medicare Parte B sin penalidad?",
-        "answer": "No. Los planes del mercado ACA no cuentan como cobertura acreditable para retrasar Medicare Parte B. Si compra un plan del mercado en lugar de inscribirse en Medicare Parte B después de los 65 años, el reloj de la penalidad por inscripción tardía de la Parte B corre desde la fecha en que fue elegible por primera vez. Cuando finalmente se inscriba, deberá la penalidad permanente por cada período de 12 meses de retraso injustificado."
+        "question": "¿Que pasa si pierdo mi Periodo de Inscripcion Inicial para la Parte B?",
+        "answer": "Si pierde su PII y no tiene un SEP calificante, debe esperar el Periodo de Inscripcion General (del 1 de enero al 31 de marzo cada ano). La cobertura comienza el primero del mes despues de inscribirse. Tambien debera la penalidad de inscripcion tardia igual al 10% por ano completo de retraso, y ese recargo es permanente durante toda su cobertura de Parte B."
       },
       {
-        "question": "¿Cuáles son la prima y el deducible de Medicare Parte B en 2026?",
-        "answer": "La prima estándar de Medicare Parte B en 2026 es de $202.90 por mes. Las personas con mayores ingresos pagan más bajo los tramos IRMAA, que van de $202.90 a $689.90 por mes según los ingresos reportados 2 años antes (declaración de impuestos de 2024). El deducible anual de la Parte B en 2026 es de $283. Después del deducible, Medicare Original paga el 80 por ciento de los servicios ambulatorios cubiertos; usted paga el 20 por ciento de coseguro."
+        "question": "¿Se requiere Medicare Parte B para unirse a Medicare Advantage?",
+        "answer": "Si. Para inscribirse en cualquier plan Medicare Advantage (Parte C), ya debe tener activos tanto Medicare Parte A como Medicare Parte B. Si rechaza la Parte B, no es elegible para Medicare Advantage. El Periodo de Inscripcion Anual de Medicare Advantage 2026 se extiende del 15 de octubre al 7 de diciembre de 2026 con cobertura que comienza el 1 de enero de 2027."
       },
       {
-        "question": "¿COBRA cuenta como cobertura acreditable para retrasar Medicare Parte B?",
-        "answer": "No. CMS clasifica explícitamente COBRA como cobertura de continuación, no como cobertura activa del plan de salud grupal del empleador. El reloj del Período de Inscripción Especial de 8 meses corre durante COBRA. Si su cobertura del empleador terminó y pasó a COBRA en lugar de inscribirse en Medicare dentro de 8 meses, su SEP expiró. Ahora debe usar el Período de Inscripción General y deberá la penalidad permanente por inscripción tardía."
+        "question": "¿COBRA me permite retrasar Medicare Parte B sin penalidad?",
+        "answer": "No. COBRA es cobertura de continuacion despues de dejar un trabajo, no cobertura activa del empleador. Las reglas de CMS son explicitas: solo un plan de salud grupal a traves de empleo activo actual califica para la excepcion de retraso de la Parte B. Si se basa en COBRA en lugar de inscribirse en la Parte B durante su PII, enfrentara la penalidad de inscripcion tardia cuando finalmente se inscriba."
       },
       {
-        "question": "¿Puedo tener Medicare Parte A sin la Parte B?",
-        "answer": "Sí. Medicare Parte A (cobertura hospitalaria) y Parte B (cobertura ambulatoria) se inscriben por separado. La Parte A es gratuita para la mayoría de las personas que trabajaron 40 o más trimestres y casi siempre vale la pena inscribirse a los 65 años, incluso con cobertura del empleador. La Parte B tiene una prima de $202.90 por mes en 2026 y puede retrasarse sin penalidad con cobertura calificada del empleador. Muchos trabajadores en empleadores grandes se inscriben en la Parte A gratuita a los 65 años y retrasan la Parte B de pago hasta que se jubilan."
+        "question": "¿Que cubre Medicare Parte B en 2026?",
+        "answer": "Medicare Parte B cubre atencion ambulatoria incluyendo visitas al medico, cirugia ambulatoria, servicios de salud mental, pruebas de laboratorio, imagenologia diagnostica, servicios de ambulancia, equipo medico duradero y servicios preventivos. El deducible de la Parte B en 2026 es $283. Despues del deducible, la Parte B paga el 80% del monto aprobado por Medicare; usted paga el 20% del coseguro sin limite anual a menos que agregue Medigap o tenga Medicaid."
       },
       {
-        "question": "¿Los Programas de Ahorro de Medicare ayudan a pagar la prima de la Parte B?",
-        "answer": "Sí. Los Programas de Ahorro de Medicare (MSPs) son programas estatales de Medicaid que ayudan a pagar las primas de la Parte B para beneficiarios con ingresos limitados. El programa de Beneficiario Calificado de Medicare (QMB) paga la prima completa de $202.90 de la Parte B, los deducibles de la Parte A y B, y el coseguro para personas con ingresos iguales o inferiores al 100 por ciento del nivel federal de pobreza. El programa SLMB paga la prima de la Parte B para ingresos entre el 100 y el 120 por ciento del FPL. Aproximadamente 9 millones de beneficiarios califican pero no están inscritos."
+        "question": "¿Cuanto cuesta Medicare Parte B por mes en 2026?",
+        "answer": "La prima mensual estandar de Medicare Parte B en 2026 es $202.90. Los beneficiarios de mayores ingresos pagan mas a traves del Ajuste de Monto Mensual Relacionado con los Ingresos (IRMAA). Si tiene una penalidad de inscripcion tardia, agregue el 10% por ano de retraso a la base de $202.90. La mayoria de los beneficiarios tienen la prima deducida directamente de su cheque del Seguro Social."
       }
     ]
   },
 
   "relatedLinks": [
     {
-      "label": {
-        "en": "Do I Need Medicare If I Have Employer Insurance?",
-        "es": "¿Necesito Medicare si tengo seguro del empleador?"
-      },
-      "href": "/qa/do-i-need-medicare-if-i-have-employer-insurance"
+      "label": { "en": "Do I Need Medicare If I Have Employer Insurance?", "es": "¿Necesito Medicare Si Tengo Seguro del Empleador?" },
+      "href": "/en/qa/do-i-need-medicare-if-i-have-employer-insurance"
     },
     {
-      "label": {
-        "en": "Can I Have Both Medicare and Medicaid?",
-        "es": "¿Puedo tener Medicare y Medicaid al mismo tiempo?"
-      },
-      "href": "/qa/can-i-have-both-medicare-and-medicaid"
+      "label": { "en": "Can I Get Medicare Under 65?", "es": "¿Puedo Obtener Medicare Antes de los 65?" },
+      "href": "/en/qa/can-i-get-medicare-under-65"
     },
     {
-      "label": {
-        "en": "Can I Get Medicare Under 65?",
-        "es": "¿Puedo obtener Medicare antes de los 65 años?"
-      },
-      "href": "/qa/can-i-get-medicare-under-65"
+      "label": { "en": "Can I Switch from Medicare Advantage to Original Medicare?", "es": "¿Puedo Cambiar de Medicare Advantage a Medicare Original?" },
+      "href": "/en/qa/can-i-switch-from-medicare-advantage-to-original"
     },
     {
-      "label": {
-        "en": "Check Your Medicare Eligibility",
-        "es": "Verifique su elegibilidad de Medicare"
-      },
+      "label": { "en": "Check Your Medicare Eligibility", "es": "Verifique Su Elegibilidad de Medicare" },
       "href": "/screener"
     }
   ],
 
   "sources": [
     {
-      "name": "Medicare.gov: How and When to Sign Up for Medicare Part B",
-      "url": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/how-and-when-you-can-sign-up-for-medicare",
+      "name": "CMS: 2026 Medicare Parts B Premiums and Deductibles Fact Sheet",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
       "note": {
-        "en": "Official Medicare.gov guidance on Initial Enrollment Period, Special Enrollment Period, General Enrollment Period, and conditions for penalty-free Part B delay.",
-        "es": "Guía oficial de Medicare.gov sobre el Período de Inscripción Inicial, el Período de Inscripción Especial, el Período de Inscripción General y las condiciones para retrasar la Parte B sin penalidad."
+        "en": "Official CMS announcement of the 2026 standard Part B premium ($202.90/month) and deductible ($283).",
+        "es": "Anuncio oficial de CMS sobre la prima estandar de la Parte B en 2026 ($202.90/mes) y el deducible ($283)."
       }
     },
     {
-      "name": "Medicare.gov: Part B Late Enrollment Penalty",
+      "name": "Medicare.gov: Avoid Late Enrollment Penalties",
       "url": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
       "note": {
-        "en": "Official explanation of the permanent 10 percent per 12-month period Part B late-enrollment penalty, including how it is calculated from the standard premium.",
-        "es": "Explicación oficial de la penalidad permanente del 10 por ciento por período de 12 meses por inscripción tardía de la Parte B, incluido cómo se calcula desde la prima estándar."
+        "en": "Official Medicare.gov guidance on the 10%-per-year Part B late enrollment penalty rules, SEP exceptions, and how to calculate the surcharge.",
+        "es": "Guia oficial de Medicare.gov sobre las reglas de penalidad de inscripcion tardia del 10% por ano de la Parte B, excepciones SEP y como calcular el recargo."
       }
     },
     {
-      "name": "CMS: Medicare Secondary Payer (MSP) Manual, Chapter 1",
-      "url": "https://www.cms.gov/medicare/coordination-of-benefits-and-recovery/coordination-of-benefits-and-recovery-overview/medicare-secondary-payer",
+      "name": "CMS: Original Medicare Part A and B Eligibility and Enrollment",
+      "url": "https://www.cms.gov/medicare/enrollment-renewal/original-part-a-b",
       "note": {
-        "en": "CMS rules on the 20-employee threshold, COBRA classification as continuation coverage (not active employer coverage), and how employer size determines who pays primary.",
-        "es": "Reglas de CMS sobre el umbral de 20 empleados, la clasificación de COBRA como cobertura de continuación (no cobertura activa del empleador) y cómo el tamaño del empleador determina quién paga como principal."
+        "en": "CMS overview of IEP, SEP, and GEP enrollment windows, auto-enrollment rules, and the employer group health plan SEP conditions for Part B delay.",
+        "es": "Resumen de CMS de las ventanas de inscripcion PII, SEP y PIG, reglas de inscripcion automatica y condiciones del SEP del plan de salud grupal del empleador para el retraso de la Parte B."
       }
     },
     {
-      "name": "KFF: Medicare Enrollment and the Late Enrollment Penalty",
-      "url": "https://www.kff.org/medicare/issue-brief/medicare-and-employer-coverage/",
+      "name": "SSA: When to Sign Up for Medicare",
+      "url": "https://www.ssa.gov/medicare/plan/when-to-sign-up",
       "note": {
-        "en": "KFF analysis of Medicare Part B and Part D enrollment decisions, late-enrollment penalty mechanics, and enrollment period rules for workers with employer coverage.",
-        "es": "Análisis de KFF sobre las decisiones de inscripción en Medicare Parte B y Parte D, la mecánica de la penalidad por inscripción tardía y las reglas del período de inscripción para trabajadores con cobertura del empleador."
+        "en": "SSA guidance on enrollment timing for individuals not yet receiving Social Security benefits and the CMS-40B application process for Part B.",
+        "es": "Guia de la SSA sobre el momento de inscripcion para personas que aun no reciben beneficios del Seguro Social y el proceso de solicitud CMS-40B para la Parte B."
       }
     },
     {
-      "name": "SSA.gov: Enrolling in Medicare Part B",
-      "url": "https://www.ssa.gov/benefits/medicare/",
+      "name": "KFF: Medicare Late Enrollment Penalties FAQ",
+      "url": "https://www.kff.org/medicare/issue-brief/an-overview-of-medicare/",
       "note": {
-        "en": "Social Security Administration guidance on enrolling in Medicare Part B, including online application process and documentation needed for Special Enrollment Period claims.",
-        "es": "Guía de la Administración del Seguro Social sobre la inscripción en Medicare Parte B, incluido el proceso de solicitud en línea y la documentación necesaria para las reclamaciones del Período de Inscripción Especial."
+        "en": "KFF analysis of Part B late enrollment penalty avoidance options, including the employer SEP exception conditions and General Enrollment Period rules.",
+        "es": "Analisis de KFF de las opciones para evitar la penalidad de inscripcion tardia de la Parte B, incluyendo las condiciones de excepcion SEP del empleador y las reglas del Periodo de Inscripcion General."
       }
     }
   ]
