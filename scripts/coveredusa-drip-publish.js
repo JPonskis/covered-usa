@@ -570,6 +570,27 @@ async function main() {
   console.log(`  Limit: ${limit} (MAX_PER_DAY=${MAX_PER_DAY})`);
   console.log('');
 
+  // ── Step 0: ensure we publish from `main` ──────────────────────────────
+  // Vercel deploys `main` only. The cron commits to whatever branch is checked
+  // out and then `git push origin main` pushes the LOCAL main ref. If the repo
+  // was left on a feature branch (e.g. a half-finished bill-analyzer-upgrade),
+  // the new commits land on that branch and the push is a silent no-op — pages
+  // get committed but never deploy and 404 in production. (This happened
+  // 2026-06-20…22: 3 days of drip pages stranded on bill-analyzer-upgrade.)
+  // Force main checked out and synced to origin before promoting/committing.
+  if (!DRY) {
+    const branch = sh('git rev-parse --abbrev-ref HEAD').trim();
+    if (branch !== 'main') {
+      console.warn(`  [!] Repo was on "${branch}" — switching to main before publishing.`);
+      try { sh('git stash push -u -m drip-autostash'); } catch (_) {}
+      sh('git checkout main');
+      try { sh('git stash pop'); } catch (_) { /* nothing stashed / no conflict */ }
+    }
+    sh('git fetch origin main 2>&1');
+    sh('git reset --hard origin/main 2>&1');
+    console.log('  [✓] On main, synced to origin/main.');
+  }
+
   const sheets = await getSheets();
 
   console.log(`[1] Reading ${MASTER_TAB} tab...`);
