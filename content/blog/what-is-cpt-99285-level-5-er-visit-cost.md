@@ -1,5 +1,5 @@
 ---
-title: "What Is CPT Code 99285? Why Level 5 ER Visits Cost So Much"
+title: "CPT Code 99285: Level 5 ER Visit Cost Explained"
 description: "CPT 99285 is the highest-level ER billing code. Learn what qualifies, why hospitals overuse it, and how to dispute a Level 5 charge on your bill in 2026."
 date: "2026-05-15"
 slug: "what-is-cpt-99285-level-5-er-visit-cost"

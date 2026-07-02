@@ -1,5 +1,5 @@
 ---
-title: "2026 Federal Poverty Level Guidelines by Household Size"
+title: "What Is the Federal Poverty Level for 2026? Full Guidelines"
 description: "2026 FPL guidelines by household size for 48 states, Alaska, and Hawaii. Includes ACA subsidy thresholds, Medicaid limits, and CHIP cutoffs."
 date: "2026-05-12"
 slug: "federal-poverty-level-2026-guidelines"
