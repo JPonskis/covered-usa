@@ -5,11 +5,16 @@
  * - Income: 100% - 400% FPL (subsidy cliff returned in 2026)
  * - Not eligible for Medicare
  * - Not eligible for Medicaid (income > 138% FPL in expansion states)
- * - Not offered affordable employer coverage (affordability = 9.02% of income)
+ * - Not offered affordable employer coverage (affordability = 9.96% of income,
+ *   2026 value per IRS Rev. Proc. 2025-25)
+ *
+ * NOTE: PTC boundary math (100%/400%) uses PRIOR-YEAR (2025) FPL guidelines
+ * per 26 CFR 1.36B-1(h). The 138% Medicaid-referral check uses current-year
+ * (2026) FPL because Medicaid eligibility uses current-year guidelines.
  */
 
 import { ScreenerInput, ProgramResult } from '../types';
-import { getFPL, getFPLPercentage } from '../fpl';
+import { getFPL, getFPLPrior, getFPLPercentagePrior } from '../fpl';
 import { getStateData, getStateName } from '../../states';
 
 export function checkACA(input: ScreenerInput): ProgramResult {
@@ -20,10 +25,12 @@ export function checkACA(input: ScreenerInput): ProgramResult {
   const medicaidName = stateData?.medicaid?.localName || `${stateName} Medicaid`;
   const medicaidUrl = stateData?.medicaid?.applicationUrl || 'https://www.healthcare.gov/medicaid-chip/';
 
-  const fpl100 = getFPL(householdSize, 100, state);
+  // PTC boundaries use prior-year (2025) FPL per 26 CFR 1.36B-1(h)
+  const fpl100 = getFPLPrior(householdSize, 100, state);
+  const fpl400 = getFPLPrior(householdSize, 400, state);
+  const fplPercent = getFPLPercentagePrior(annualIncome, householdSize, state);
+  // Medicaid referral uses current-year (2026) FPL
   const fpl138 = getFPL(householdSize, 138, state);
-  const fpl400 = getFPL(householdSize, 400, state);
-  const fplPercent = getFPLPercentage(annualIncome, householdSize);
 
   const result: ProgramResult = {
     id: 'aca',
@@ -32,7 +39,7 @@ export function checkACA(input: ScreenerInput): ProgramResult {
     eligibilityStatus: 'not_eligible',
     estimatedValue: 0,
     reason: '',
-    nextSteps: 'Visit HealthCare.gov during Open Enrollment (Nov 1 - Jan 15) or if you have a qualifying life event.'
+    nextSteps: 'Visit HealthCare.gov during Open Enrollment or if you have a qualifying life event. Open Enrollment starts November 1. End dates vary by state and may change this year, so check HealthCare.gov for your deadline.'
   };
 
   // Medicare-eligible people don't get ACA subsidies
@@ -74,7 +81,7 @@ export function checkACA(input: ScreenerInput): ProgramResult {
   if (currentlyInsured && insuranceSource === 'employer') {
     result.eligible = 'maybe';
     result.eligibilityStatus = 'may_qualify';
-    result.reason = 'You may qualify if your employer plan is unaffordable (costs > 9.02% of income)';
+    result.reason = 'You may qualify if your employer plan is unaffordable (costs > 9.96% of income)';
     result.estimatedValue = estimateACAValue(fplPercent, householdSize);
     return result;
   }

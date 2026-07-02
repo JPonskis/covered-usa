@@ -20,7 +20,7 @@ export function checkVAHealthcare(input: ScreenerInput): ProgramResult {
     eligibilityStatus: 'not_eligible',
     estimatedValue: 0,
     reason: '',
-    nextSteps: 'Apply at VA.gov/health-care/apply or call 1-877-222-8387'
+    nextSteps: 'Apply at https://www.va.gov/health-care/how-to-apply/ or call 1-877-222-8387'
   };
 
   if (!isVeteran) {

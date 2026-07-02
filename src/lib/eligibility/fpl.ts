@@ -11,6 +11,13 @@ import { getStateData } from '../states';
 const FPL_BASE = 15960; // Base for 1 person household
 const FPL_INCREMENT = 5680; // Amount added per additional person
 
+// 2025 Federal Poverty Level guidelines (48 contiguous states + DC)
+// ACA Premium Tax Credit eligibility for a coverage year uses the PRIOR
+// year's poverty guidelines (26 CFR 1.36B-1(h)). So 2026 coverage-year PTC
+// math uses these 2025 figures. Medicaid/MSP/CHIP use current-year (2026).
+const FPL_BASE_PRIOR = 15650; // 2025 base for 1 person household
+const FPL_INCREMENT_PRIOR = 5500; // 2025 amount added per additional person
+
 // FPL adjustments for Alaska and Hawaii
 const FPL_ADJUSTMENTS: Record<string, number> = {
   'AK': 1.25,
@@ -55,6 +62,36 @@ export function getFPL(householdSize: number, percentage: number = 100, state?: 
  */
 export function getFPLPercentage(income: number, householdSize: number, state?: string): number {
   const fpl100 = getFPL(householdSize, 100, state);
+  return Math.round((income / fpl100) * 100);
+}
+
+/**
+ * PRIOR-YEAR (2025) Federal Poverty Level for a given household size and percentage.
+ * Use for ACA Premium Tax Credit math only — PTC for a coverage year uses the
+ * prior year's guidelines (26 CFR 1.36B-1(h)). Medicaid/MSP/CHIP use current-year.
+ * Same state-adjustment behavior as getFPL (AK 1.25x, HI 1.15x).
+ */
+export function getFPLPrior(householdSize: number, percentage: number = 100, state?: string): number {
+  const size = Math.max(1, householdSize);
+  let base = FPL_BASE_PRIOR + (Math.max(0, size - 1) * FPL_INCREMENT_PRIOR);
+
+  if (state) {
+    const normalizedState = state.toUpperCase();
+    const adjustment = FPL_ADJUSTMENTS[normalizedState];
+    if (adjustment) {
+      base = Math.round(base * adjustment);
+    }
+  }
+
+  return Math.round(base * (percentage / 100));
+}
+
+/**
+ * Calculate what percentage of PRIOR-YEAR (2025) FPL a given income represents.
+ * Use for ACA Premium Tax Credit math only (26 CFR 1.36B-1(h)).
+ */
+export function getFPLPercentagePrior(income: number, householdSize: number, state?: string): number {
+  const fpl100 = getFPLPrior(householdSize, 100, state);
   return Math.round((income / fpl100) * 100);
 }
 

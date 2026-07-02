@@ -413,19 +413,21 @@ export default function ResultsClient({
                   <p className="text-sm text-[var(--text-secondary)] mb-3">
                     {prog.reason}
                   </p>
-                  {prog.nextSteps && (
-                    <a
-                      href={
-                        prog.nextSteps.match(/https?:\/\/[^\s)]+/)?.[0] ||
-                        '#'
-                      }
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-medium text-[var(--primary)] hover:underline"
-                    >
-                      {es ? 'Solicitar Ahora →' : 'Apply Now →'}
-                    </a>
-                  )}
+                  {(() => {
+                    const applyUrl = prog.nextSteps?.match(/https?:\/\/[^\s)]+/)?.[0];
+                    // No URL in nextSteps -> no Apply Now link (avoids dead '#' href)
+                    if (!applyUrl) return null;
+                    return (
+                      <a
+                        href={applyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-[var(--primary)] hover:underline"
+                      >
+                        {es ? 'Solicitar Ahora →' : 'Apply Now →'}
+                      </a>
+                    );
+                  })()}
                 </div>
               ))}
             </div>

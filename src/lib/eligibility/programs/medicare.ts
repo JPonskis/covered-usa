@@ -30,7 +30,7 @@ export function checkMedicare(input: ScreenerInput): ProgramResult {
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = 0;
     result.reason = 'Age 65+ qualifies for Medicare';
-    result.nextSteps = 'If not already enrolled, sign up at medicare.gov. Initial Enrollment Period is 3 months before to 3 months after your 65th birthday.';
+    result.nextSteps = 'If not already enrolled, sign up at medicare.gov. Initial Enrollment Period is 3 months before to 3 months after the month you turn 65.';
     return result;
   }
 
@@ -48,7 +48,7 @@ export function checkMedicare(input: ScreenerInput): ProgramResult {
   if (hasDisability) {
     result.eligible = false;
     result.eligibilityStatus = 'not_eligible';
-    result.reason = 'Medicare for people under 65 requires receiving SSDI for at least 24 months. Check ACA or Medicaid options below.';
+    result.reason = 'Medicare for people under 65 generally requires receiving SSDI for at least 24 months. Exceptions: ALS qualifies immediately with no 24-month wait, and ESRD (kidney failure needing dialysis or a transplant) has its own pathway at any age. Check ACA or Medicaid options below.';
     result.nextSteps = 'If you are already receiving SSDI and have been for 24+ months, you qualify for Medicare automatically. Call Social Security at 1-800-772-1213 to confirm.';
     return result;
   }

@@ -41,8 +41,8 @@ const content = {
       cta: 'Verificar mi elegibilidad',
       trustRow: ['100% gratis', 'Confidencial', 'Sin registro', 'En español'],
       marqueeLine: 'Con la confianza de organizaciones comunitarias en todo el país',
-      statNumber: '25M+',
-      statText: 'estadounidenses califican para cobertura de salud y no lo saben.',
+      statNumber: 'Millones',
+      statText: 'de estadounidenses califican para cobertura médica gratuita o de bajo costo y no lo saben.',
       stepsTitle: 'Así de fácil',
       steps: [
         { num: '1', title: 'Responde unas preguntas rápidas', desc: 'Sobre tu hogar, ingresos y estado. Menos de 2 minutos.' },
@@ -62,8 +62,8 @@ const content = {
       cta: 'Comparar planes Medicare',
       trustRow: ['100% gratis', 'Agentes con licencia', 'Confidencial', 'En español'],
       marqueeLine: 'Con la confianza de organizaciones comunitarias en todo el país',
-      statNumber: '25M+',
-      statText: 'Los planes Medicare cambian cada año. Asegúrate de que el tuyo aún funcione para ti.',
+      statNumber: '$0',
+      statText: 'Costo de revisar tus opciones de Medicare. Los planes cambian cada año. Asegúrate de que el tuyo aún funcione para ti.',
       stepsTitle: 'Tres pasos sencillos',
       steps: [
         { num: '1', title: 'Cuéntanos tu situación', desc: 'Tu código postal, edad y si ya tienes Medicare.' },
@@ -85,8 +85,8 @@ const content = {
       cta: 'Check my eligibility',
       trustRow: ['100% free', 'Confidential', 'No sign-up needed', 'Available in Spanish'],
       marqueeLine: 'Trusted by community organizations across the country',
-      statNumber: '25M+',
-      statText: 'Americans qualify for health coverage and don\'t know it.',
+      statNumber: 'Millions',
+      statText: 'of Americans qualify for free or low-cost health coverage and don\'t know it.',
       stepsTitle: 'How it works',
       steps: [
         { num: '1', title: 'Answer a few quick questions', desc: 'About your household, income, and state. Under 2 minutes.' },
@@ -106,8 +106,8 @@ const content = {
       cta: 'Compare Medicare plans',
       trustRow: ['100% free', 'Licensed agents', 'Confidential', 'Available in Spanish'],
       marqueeLine: 'Trusted by community organizations across the country',
-      statNumber: '25M+',
-      statText: 'Medicare plans change every year. Make sure yours still works for you.',
+      statNumber: '$0',
+      statText: 'Cost to review your Medicare options. Plans change every year. Make sure yours still works for you.',
       stepsTitle: 'How it works',
       steps: [
         { num: '1', title: 'Tell us your situation', desc: 'Your ZIP, age, and whether you already have Medicare.' },

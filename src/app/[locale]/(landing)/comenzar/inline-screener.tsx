@@ -229,7 +229,8 @@ export function InlineScreener({ locale }: { locale: string }) {
           zipCode: zip.replace(/\s/g, ''),
           age: 35,
           householdSize: parseInt(household, 10),
-          numChildren: Math.max(0, parseInt(household, 10) - 1),
+          // Quick-check doesn't collect ages/children, so don't invent them
+          numChildren: 0,
           annualIncome: parseIncomeValue(income),
           isPregnant: false,
           hasDisability: false,

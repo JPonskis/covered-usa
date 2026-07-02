@@ -43,14 +43,14 @@ export function checkMedicareSavings(input: ScreenerInput): ProgramResult {
     return result;
   }
 
-  const fplPercent = getFPLPercentage(annualIncome, householdSize);
+  const fplPercent = getFPLPercentage(annualIncome, householdSize, input.state);
 
   if (fplPercent < 100) {
     result.eligible = true;
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = PROGRAM_VALUES.qmb;
     result.name = 'Medicare Savings Program (QMB)';
-    result.reason = `Income at ${fplPercent}% FPL qualifies for QMB - covers Part A & B premiums, deductibles, and coinsurance`;
+    result.reason = `Income at ${fplPercent}% FPL qualifies for QMB - covers Part A & B premiums, deductibles, and coinsurance. Most states also apply a resource limit (about $9,950 for an individual or $14,910 for a couple in 2026); some states, like NY, have no asset test.`;
     return result;
   }
 
@@ -59,7 +59,7 @@ export function checkMedicareSavings(input: ScreenerInput): ProgramResult {
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = PROGRAM_VALUES.slmb;
     result.name = 'Medicare Savings Program (SLMB)';
-    result.reason = `Income at ${fplPercent}% FPL qualifies for SLMB - covers Part B premium (~$${Math.round(PART_B_PREMIUM_MONTHLY)}/month)`;
+    result.reason = `Income at ${fplPercent}% FPL qualifies for SLMB - covers Part B premium (~$${Math.round(PART_B_PREMIUM_MONTHLY)}/month). Most states also apply a resource limit (about $9,950 for an individual or $14,910 for a couple in 2026); some states, like NY, have no asset test.`;
     return result;
   }
 
@@ -68,7 +68,7 @@ export function checkMedicareSavings(input: ScreenerInput): ProgramResult {
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = PROGRAM_VALUES.qi;
     result.name = 'Medicare Savings Program (QI)';
-    result.reason = `Income at ${fplPercent}% FPL qualifies for QI - covers Part B premium (~$${Math.round(PART_B_PREMIUM_MONTHLY)}/month)`;
+    result.reason = `Income at ${fplPercent}% FPL qualifies for QI - covers Part B premium (~$${Math.round(PART_B_PREMIUM_MONTHLY)}/month). Most states also apply a resource limit (about $9,950 for an individual or $14,910 for a couple in 2026); some states, like NY, have no asset test.`;
     return result;
   }
 

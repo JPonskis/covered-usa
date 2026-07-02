@@ -1,8 +1,8 @@
 /**
  * Medicaid Eligibility Checker (All States)
  *
- * Expansion states (38 + DC): Adults 19-64 qualify at 138% FPL
- * Non-expansion states (12): Very limited adult coverage
+ * Expansion states (41 states including DC have expanded): Adults 19-64 qualify at 138% FPL
+ * Non-expansion states (10: AL, FL, GA, KS, MS, SC, TN, TX, WI, WY): Very limited adult coverage
  * Children: Generally up to 200-300% FPL
  * Pregnant women: Generally up to 185-200% FPL
  */
@@ -74,7 +74,7 @@ export function checkMedicaid(input: ScreenerInput): ProgramResult {
 
     result.eligible = false;
     result.eligibilityStatus = 'not_eligible';
-    result.reason = `Income at ${fplPercent}% FPL exceeds typical aged ${programName} limits (~138% FPL).`;
+    result.reason = `Income at ${fplPercent}% FPL exceeds aged/disabled full-benefit ${programName} limits, which in most states are near the SSI level (roughly 75-100% FPL).`;
     result.nextSteps = `Medicare is your primary coverage. If income is close to the limit, check Medicare Savings Programs below.`;
     return result;
   }

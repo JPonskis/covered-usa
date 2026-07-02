@@ -91,7 +91,7 @@ const FAQS = [
   },
   {
     question: 'What if I am offered health insurance through my job?',
-    answer: 'If your employer offers health insurance that meets ACA minimum value standards and costs less than 9.02% of your household income, you generally do not qualify for ACA marketplace subsidies. If the employer plan is too expensive or inadequate, you may still qualify.',
+    answer: 'If your employer offers health insurance that meets ACA minimum value standards and costs less than 9.96% of your household income, you generally do not qualify for ACA marketplace subsidies. If the employer plan is too expensive or inadequate, you may still qualify.',
   },
 ];
 
