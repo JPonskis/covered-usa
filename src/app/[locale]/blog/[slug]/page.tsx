@@ -103,6 +103,112 @@ const CTA_PATHS = {
   analyzer: 'medical-bill-analyzer',
 } as const;
 
+// ─── PROGRAM-MATCHED SCREENER COPY ────────────────────────────────────────────
+// Screener posts all point to the SAME /screener path with the SAME UTM params.
+// Only the heading/desc/button text changes, chosen by the article's topic so a
+// Medicare post pitches Medicare, an ACA post pitches ACA subsidies, etc.
+
+type ProgramKey = 'medicare' | 'aca' | 'medicaid' | 'drug' | 'dental_vision' | 'general';
+
+// Classify a screener post by matching slug + keywords (case-insensitive).
+// First match wins. Priority order handles overlaps (e.g. "Medicare Part D" → medicare).
+function detectScreenerProgram(slug: string, keywords: string[]): ProgramKey {
+  const hay = `${slug} ${keywords.join(' ')}`.toLowerCase();
+  const has = (terms: string[]) => terms.some((t) => hay.includes(t));
+
+  if (has(['medicare', 'medigap', 'part-d', 'part d', 'part-b', 'part b', 'dual-eligible', 'dual eligible', 'medicare-savings', 'medicare savings', ' lis', 'low-income subsidy', 'extra help'])) {
+    return 'medicare';
+  }
+  if (has(['aca', 'obamacare', 'marketplace', 'premium tax credit', 'premium-tax-credit', 'subsidy', 'subsidies', 'cost-sharing', 'cost sharing', 'family glitch', 'family-glitch', 'special enrollment', 'special-enrollment', 'open enrollment', 'open-enrollment', 'healthcare.gov'])) {
+    return 'aca';
+  }
+  if (has(['medicaid', 'chip', 'expansion'])) {
+    return 'medicaid';
+  }
+  if (has(['prescription', 'drug', '340b', 'medication', 'pharmacy', 'insulin', 'copay', 'patient assistance', 'patient-assistance', 'goodrx'])) {
+    return 'drug';
+  }
+  if (has(['dental', 'vision', 'eye', 'glasses', 'orthodont'])) {
+    return 'dental_vision';
+  }
+  return 'general';
+}
+
+const SCREENER_PROGRAM_COPY: Record<ProgramKey, { en: CTAVariant; es: CTAVariant }> = {
+  medicare: {
+    en: {
+      heading: 'You may qualify for a $0 premium Medicare plan.',
+      desc: 'Our 2-minute screener checks Medicare Advantage, Part D drug coverage, and help paying your Part B premium. Many people on Medicare miss savings they already qualify for.',
+      midBtn: 'See my Medicare savings, free',
+      endBtn: 'See my Medicare savings, free',
+    },
+    es: {
+      heading: 'Puede que califique para un plan Medicare de $0 de prima.',
+      desc: 'Nuestro evaluador de 2 minutos revisa Medicare Advantage, la cobertura de medicamentos Parte D y ayuda para pagar su prima de la Parte B. Muchas personas con Medicare no aprovechan ahorros que ya les corresponden.',
+      midBtn: 'Ver mis ahorros de Medicare, gratis',
+      endBtn: 'Ver mis ahorros de Medicare, gratis',
+    },
+  },
+  aca: {
+    en: {
+      heading: 'Most people qualify for a $0/month marketplace plan.',
+      desc: 'Our 2-minute screener checks your ACA subsidy and shows what you would actually pay. Most people who apply qualify for help that can bring their premium to $0 a month.',
+      midBtn: 'See my marketplace plans, free',
+      endBtn: 'See my marketplace plans, free',
+    },
+    es: {
+      heading: 'La mayoría califica para un plan del mercado de $0 al mes.',
+      desc: 'Nuestro evaluador de 2 minutos revisa su subsidio de ACA y le muestra lo que en verdad pagaría. La mayoría de quienes solicitan reciben ayuda que puede dejar su prima en $0 al mes.',
+      midBtn: 'Ver mis planes del mercado, gratis',
+      endBtn: 'Ver mis planes del mercado, gratis',
+    },
+  },
+  medicaid: {
+    en: {
+      heading: 'You may qualify for free Medicaid coverage.',
+      desc: 'Our 2-minute screener checks Medicaid and CHIP eligibility in your state. If you qualify, coverage costs $0 a month with no deductible, and it covers doctor visits, hospital care, and prescriptions.',
+      midBtn: 'Check my Medicaid eligibility, free',
+      endBtn: 'Check my Medicaid eligibility, free',
+    },
+    es: {
+      heading: 'Puede que califique para cobertura gratuita de Medicaid.',
+      desc: 'Nuestro evaluador de 2 minutos revisa si califica para Medicaid y CHIP en su estado. Si califica, la cobertura cuesta $0 al mes y sin deducible, e incluye visitas al médico, atención hospitalaria y medicamentos.',
+      midBtn: 'Revisar si califico para Medicaid, gratis',
+      endBtn: 'Revisar si califico para Medicaid, gratis',
+    },
+  },
+  drug: {
+    en: {
+      heading: 'You could cut your prescription costs by 20 to 80%.',
+      desc: 'Our 2-minute screener checks the coverage and assistance programs you qualify for, from Medicaid to Part D Extra Help. Many people overpay for medications they could be getting for far less.',
+      midBtn: 'Lower my drug costs, free',
+      endBtn: 'Lower my drug costs, free',
+    },
+    es: {
+      heading: 'Podría reducir el costo de sus medicamentos entre 20 y 80%.',
+      desc: 'Nuestro evaluador de 2 minutos revisa la cobertura y los programas de ayuda para los que califica, desde Medicaid hasta la Ayuda Adicional de la Parte D. Muchas personas pagan de más por medicamentos que podrían conseguir por mucho menos.',
+      midBtn: 'Reducir el costo de mis medicamentos, gratis',
+      endBtn: 'Reducir el costo de mis medicamentos, gratis',
+    },
+  },
+  dental_vision: {
+    en: {
+      heading: 'You may qualify for free dental and vision coverage.',
+      desc: 'Our 2-minute screener checks Medicaid, CHIP, and marketplace plans that include dental and vision. Many people qualify for coverage that pays for exams, glasses, and cleanings.',
+      midBtn: 'Check my dental and vision options, free',
+      endBtn: 'Check my dental and vision options, free',
+    },
+    es: {
+      heading: 'Puede que califique para cobertura dental y de la vista gratuita.',
+      desc: 'Nuestro evaluador de 2 minutos revisa Medicaid, CHIP y planes del mercado que incluyen servicios dentales y de la vista. Muchas personas califican para cobertura que paga exámenes, lentes y limpiezas.',
+      midBtn: 'Ver mis opciones dentales y de vista, gratis',
+      endBtn: 'Ver mis opciones dentales y de vista, gratis',
+    },
+  },
+  // Fallback: the original generic screener copy, kept verbatim.
+  general: CTA_COPY.screener,
+};
+
 // ──────────────────────────────────────────────────────────────────────────────
 
 export default async function LocaleBlogPostPage({ params }: PageProps) {
@@ -127,7 +233,10 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
   };
 
   const ctaTarget: 'screener' | 'analyzer' = post.target === 'analyzer' ? 'analyzer' : 'screener';
-  const cta = CTA_COPY[ctaTarget][isEs ? 'es' : 'en'];
+  const cta =
+    ctaTarget === 'screener'
+      ? SCREENER_PROGRAM_COPY[detectScreenerProgram(slug, post.keywords || [])][isEs ? 'es' : 'en']
+      : CTA_COPY[ctaTarget][isEs ? 'es' : 'en'];
   const ctaPath = CTA_PATHS[ctaTarget];
 
   // JSON-LD schemas
