@@ -1,0 +1,407 @@
+{
+  "slug": "medicaid-spend-down-eligibility",
+  "subtype": "coverage",
+  "pageType": "coverage",
+  "question": {
+    "en": "How Does Medicaid Spend-Down Work in 2026?",
+    "es": "¿Cómo Funciona el Spend-Down de Medicaid en 2026?"
+  },
+  "shortAnswer": {
+    "en": "It depends on your state: some let you spend excess income on medical bills to qualify.",
+    "es": "Depende de su estado: algunos permiten gastar el ingreso excedente en facturas médicas para calificar."
+  },
+  "fullAnswer": {
+    "en": "It depends on where you live. About 32 states plus DC run a Medicaid medically needy (also called share-of-cost) program that lets people whose income is too high for regular Medicaid spend the excess on medical bills until it falls to the state's medically needy income limit (MNIL), then Medicaid pays the rest for that budget period of 1 to 6 months. The other roughly 25 income cap states do not allow spend-down for long-term care Medicaid; applicants over the cap (300% of the SSI federal benefit rate, $2,982 a month for an individual in 2026) must set up a Qualified Income Trust (Miller Trust) instead. Most MAGI-based Medicaid groups, ACA expansion adults especially, have no spend-down option at all.",
+    "es": "Depende de dónde viva. Aproximadamente 32 estados más DC operan un programa de Medicaid medicamente necesario (también llamado costo compartido) que permite a las personas cuyo ingreso es demasiado alto para Medicaid regular gastar el exceso en facturas médicas hasta que baje al límite de ingresos medicamente necesario (MNIL) de su estado, y luego Medicaid paga el resto durante ese período de 1 a 6 meses. Los otros aproximadamente 25 estados con tope de ingresos no permiten el spend-down para Medicaid de cuidado a largo plazo; los solicitantes por encima del tope (300% de la tasa federal de beneficio del SSI, $2,982 al mes para un individuo en 2026) deben establecer un Fideicomiso de Ingreso Calificado (Miller Trust). La mayoría de los grupos de Medicaid basados en MAGI, especialmente los adultos de expansión del ACA, no tienen ninguna opción de spend-down."
+  },
+  "category": "Medicaid",
+  "topic": "Medicaid Spend-Down and Medically Needy Eligibility",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-07-07",
+  "readingTime": "8 min read",
+  "topicCluster": "medicaid-coverage",
+  "keyTerms": {
+    "en": ["medicaid spend down", "medically needy income limit 2026", "how does medicaid spend down work", "qualified income trust miller trust", "medicaid share of cost"],
+    "es": ["reduccion de ingresos de medicaid", "limite de ingresos medicamente necesario 2026", "como funciona el spend down de medicaid", "fideicomiso de ingreso calificado", "medicaid costo compartido"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "meta": {
+    "title": {
+      "en": "How Does Medicaid Spend-Down Work in 2026? | CoveredUSA",
+      "es": "¿Cómo Funciona el Spend-Down de Medicaid en 2026? | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicaid spend-down lets people over the income limit qualify by paying down excess income on medical bills. See 2026 rules, MNILs, and income cap states.",
+      "es": "El spend-down de Medicaid permite calificar pagando el ingreso excedente en facturas médicas. Vea las reglas de 2026, los MNIL y los estados con tope de ingresos."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "How Does Medicaid Spend-Down Work? (2026)",
+      "es": "¿Cómo Funciona el Spend-Down de Medicaid? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Medicaid spend-down (also called medically needy or share-of-cost Medicaid) is the mechanism that lets someone whose income is above the regular Medicaid limit still qualify by incurring enough medical expenses to bring their countable income down to the state's threshold. It exists specifically for people who need Medicaid but earn slightly too much, often seniors on Social Security, people with disabilities, or nursing home residents whose income is a few hundred dollars over the cutoff.",
+      "es": "El spend-down de Medicaid (también llamado medicamente necesario o costo compartido) es el mecanismo que permite a alguien cuyo ingreso está por encima del límite regular de Medicaid calificar de todas formas al incurrir suficientes gastos médicos para bajar su ingreso contable al umbral del estado. Existe específicamente para personas que necesitan Medicaid pero ganan un poco demasiado, a menudo personas mayores con Seguro Social, personas con discapacidades o residentes de hogares de ancianos cuyo ingreso está unos cientos de dólares por encima del límite."
+    },
+    {
+      "en": "This guide breaks down how the 2026 spend-down calculation works, which states offer it, what the income cap alternative looks like, and what to do if your state does not have a medically needy program. For the broader income-eligibility picture, see [Medicaid income limits](/en/medicaid-income-limits) and check [your eligibility](/en/screener) directly.",
+      "es": "Esta guía explica cómo funciona el cálculo de spend-down de 2026, qué estados lo ofrecen, cómo es la alternativa de tope de ingresos y qué hacer si su estado no tiene un programa medicamente necesario. Para el panorama más amplio de elegibilidad por ingresos, vea los límites de ingresos de Medicaid."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Eligibility Pathway", "Spend-Down Available (2026)?", "How It Works", "Where It Applies"],
+      "es": ["Vía de Elegibilidad", "¿Spend-Down Disponible (2026)?", "Cómo Funciona", "Dónde Aplica"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Medically needy / share-of-cost Medicaid (non-institutional)", "es": "Medicaid medicamente necesario / costo compartido (no institucional)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Spend income above the state's medically needy income limit (MNIL) on medical bills each budget period", "es": "Gastar el ingreso por encima del MNIL del estado en facturas médicas cada período" },
+          { "en": "About 32 states plus DC in 2026", "es": "Aproximadamente 32 estados más DC en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Nursing home Medicaid in spend-down states", "es": "Medicaid de hogar de ancianos en estados con spend-down" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Same medically needy math applies to institutional care, usually a lower MNIL than community cases", "es": "Se aplica el mismo cálculo medicamente necesario, generalmente con un MNIL más bajo" },
+          { "en": "States with a medically needy program", "es": "Estados con programa medicamente necesario" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "HCBS waiver Medicaid (home and community-based services)", "es": "Medicaid de exención HCBS (servicios en el hogar y la comunidad)" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Most states use the 300% special income group instead of spend-down for waiver applicants", "es": "La mayoría de los estados usan el grupo de ingreso especial del 300% en lugar del spend-down" },
+          { "en": "Varies; check your state waiver rules", "es": "Varía; consulte las reglas de su estado" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Long-term care Medicaid in income cap states", "es": "Medicaid de cuidado a largo plazo en estados con tope de ingresos" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" },
+          { "en": "Spend-down not allowed; income over 300% of the SSI federal benefit rate ($2,982/month individual, 2026) requires a Qualified Income Trust (Miller Trust)", "es": "No se permite el spend-down; el ingreso sobre 300% de la tasa de beneficio federal SSI ($2,982/mes, 2026) requiere un Fideicomiso de Ingreso Calificado" },
+          { "en": "About 25 income cap states", "es": "Aproximadamente 25 estados con tope de ingresos" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "MAGI Medicaid (children, pregnant women, caretakers, ACA expansion adults)", "es": "Medicaid basado en MAGI (niños, embarazadas, cuidadores, adultos de expansión ACA)" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "No spend-down for expansion adults; pregnant women, children, and caretaker relatives may use the medically needy option only in states that adopt it for those groups", "es": "Sin spend-down para adultos de expansión; embarazadas, niños y cuidadores pueden usar la opción medicamente necesaria solo en estados que la adoptan para esos grupos" },
+          { "en": "Federal mandatory medically needy groups where the state elects the program", "es": "Grupos federales medicamente necesarios obligatorios donde el estado elige el programa" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "A state that elects the medically needy option must cover pregnant women, children under 18, and parents/caretaker relatives at minimum; it may extend the option to aged, blind, and disabled individuals. States that do not elect the medically needy option have no spend-down pathway at all for any group.",
+      "es": "Un estado que elige la opción medicamente necesaria debe cubrir como mínimo a mujeres embarazadas, niños menores de 18 años y padres o cuidadores; puede extender la opción a personas mayores, ciegas o con discapacidades. Los estados que no eligen la opción no tienen ninguna vía de spend-down."
+    },
+    "source": "Medicaid.gov Eligibility Policy, Medicaid.gov Implementation Guide: Handling Excess Income (Spenddown), 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct answer: how Medicaid spend-down works",
+        "es": "Respuesta directa: cómo funciona el spend-down de Medicaid"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on your state. Roughly 32 states plus DC let you spend-down: pay medical bills until your income drops to the state's medically needy income limit, then Medicaid covers the rest of that 1 to 6 month period. Income cap states use a Qualified Income Trust instead, and MAGI groups like ACA expansion adults usually have no spend-down option in 2026.",
+          "es": "Depende de su estado. Aproximadamente 32 estados más DC permiten el spend-down: pagar facturas médicas hasta que el ingreso baje al límite medicamente necesario del estado, y luego Medicaid cubre el resto de ese período de 1 a 6 meses."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What a Medicaid spend-down actually means",
+        "es": "Qué significa realmente un spend-down de Medicaid"
+      },
+      "paragraphs": [
+        {
+          "en": "Every state sets a medically needy income limit (MNIL): the maximum monthly income Medicaid will disregard once someone qualifies as medically needy. If your countable income is above your state's regular Medicaid limit but you have significant medical needs, the medically needy pathway lets you subtract, or spend down, the difference between your income and the MNIL by incurring medical or remedial care expenses. Once your incurred bills equal that spend-down amount for the budget period, Medicaid pays for covered services for the remainder of the period.",
+          "es": "Cada estado establece un límite de ingresos medicamente necesario (MNIL): el ingreso mensual máximo que Medicaid pasará por alto una vez que alguien califique como medicamente necesario. Si su ingreso contable está por encima del límite regular de Medicaid de su estado pero tiene necesidades médicas significativas, la vía medicamente necesaria le permite restar, o gastar, la diferencia entre su ingreso y el MNIL incurriendo en gastos médicos o de cuidado remedial."
+        },
+        {
+          "en": "The 2026 medically needy income limits range widely by state, from around $425 a month for an individual in Pennsylvania to more than $1,300 a month in states like Minnesota, because each state sets its own MNIL and the federal government only requires a floor for mandatory groups. Federal rules cap the budget period at 6 months maximum; several states use a shorter 1 or 3 month period instead.",
+          "es": "Los límites de ingresos medicamente necesarios de 2026 varían ampliamente por estado, desde alrededor de $425 al mes en Pensilvania hasta más de $1,300 al mes en estados como Minnesota, porque cada estado establece su propio MNIL. Las reglas federales limitan el período presupuestario a un máximo de 6 meses."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Which states have a Medicaid spend-down program in 2026",
+        "es": "Qué estados tienen un programa de spend-down de Medicaid en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "About 32 states plus the District of Columbia currently run a medically needy program for at least one Medicaid category: Arkansas, California, Connecticut, Florida, Georgia, Hawaii, Illinois, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nebraska, New Hampshire, New Jersey, New York, North Carolina, North Dakota, Pennsylvania, Rhode Island, Utah, Vermont, Virginia, Washington, West Virginia, and Wisconsin. The remaining states either use only strict income cutoffs plus a Qualified Income Trust for long-term care, or have no medically needy option at all.",
+          "es": "Aproximadamente 32 estados más el Distrito de Columbia operan actualmente un programa medicamente necesario para al menos una categoría de Medicaid: Arkansas, California, Connecticut, Florida, Georgia, Hawái, Illinois, Iowa, Kansas, Kentucky, Luisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nebraska, New Hampshire, Nueva Jersey, Nueva York, Carolina del Norte, Dakota del Norte, Pensilvania, Rhode Island, Utah, Vermont, Virginia, Washington, Virginia Occidental y Wisconsin."
+        },
+        {
+          "en": "Coverage under the medically needy option is not identical to full Medicaid in every state: some states cover the same full benefit package, while others cover a narrower set of services for medically needy enrollees. Always confirm which benefit package applies through your state Medicaid agency before assuming full coverage.",
+          "es": "La cobertura bajo la opción medicamente necesaria no es idéntica a Medicaid completo en todos los estados: algunos cubren el mismo paquete de beneficios completo, mientras que otros cubren un conjunto más limitado de servicios."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Income cap states: Qualified Income Trusts instead of spend-down",
+        "es": "Estados con tope de ingresos: fideicomisos de ingreso calificado en lugar de spend-down"
+      },
+      "paragraphs": [
+        {
+          "en": "About 25 states, mostly in the South and West, are income cap states for long-term care Medicaid: they do not allow spend-down at all for nursing home or HCBS waiver applicants. Instead, the income limit for long-term care Medicaid in these states is set at 300% of the SSI federal benefit rate, which is $2,982 a month for an individual in 2026 (300% of the $994 monthly SSI federal benefit rate). If your income is above that cap, the workaround is a Qualified Income Trust, commonly called a Miller Trust: an irrevocable trust that receives your excess income each month so it no longer counts toward the Medicaid limit.",
+          "es": "Aproximadamente 25 estados, principalmente en el Sur y el Oeste, son estados con tope de ingresos para Medicaid de cuidado a largo plazo: no permiten el spend-down en absoluto para solicitantes de hogares de ancianos o exenciones HCBS. En su lugar, el límite de ingresos para Medicaid de cuidado a largo plazo en estos estados se fija en 300% de la tasa de beneficio federal del SSI, que es $2,982 al mes para un individuo en 2026."
+        },
+        {
+          "en": "A Miller Trust must be set up correctly (an attorney or elder-law specialist typically drafts it) and the state Medicaid agency, not the applicant, is named as the remainder beneficiary. Money deposited into the trust each month can only be used for specific allowed purposes, including a personal needs allowance, a spouse's income allowance, and the applicant's share of cost.",
+          "es": "Un Miller Trust debe establecerse correctamente y la agencia estatal de Medicaid, no el solicitante, se nombra como beneficiario del remanente. El dinero depositado en el fideicomiso cada mes solo puede usarse para propósitos específicos permitidos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Step-by-step: a Medicaid spend-down calculation example",
+        "es": "Paso a paso: un ejemplo de cálculo de spend-down de Medicaid"
+      },
+      "paragraphs": [
+        {
+          "en": "Say a state sets its medically needy income limit at $1,000 a month for an individual and someone's countable income is $1,300 a month. The spend-down amount is the $300 difference. Over a 3-month budget period, that person must incur $900 in unreimbursed medical or remedial expenses (doctor visits, prescriptions, hospital bills, even old medical debt in some states) before Medicaid picks up the rest of the covered costs for the remainder of that period.",
+          "es": "Digamos que un estado fija su límite de ingresos medicamente necesario en $1,000 al mes para un individuo y el ingreso contable de alguien es $1,300 al mes. El monto de spend-down es la diferencia de $300. Durante un período presupuestario de 3 meses, esa persona debe incurrir en $900 de gastos médicos no reembolsados antes de que Medicaid cubra el resto de los costos cubiertos para el resto de ese período."
+        }
+      ],
+      "list": [
+        { "en": "Step 1: The state calculates your countable monthly income using its Medicaid income-counting rules.", "es": "Paso 1: El estado calcula su ingreso mensual contable usando sus reglas de conteo de ingresos de Medicaid." },
+        { "en": "Step 2: The state subtracts the medically needy income limit (MNIL) from your countable income to get the spend-down amount.", "es": "Paso 2: El estado resta el límite de ingresos medicamente necesario (MNIL) de su ingreso contable para obtener el monto de spend-down." },
+        { "en": "Step 3: You submit bills, paid or unpaid, for medical and remedial care incurred during the budget period.", "es": "Paso 3: Usted presenta facturas, pagadas o no, por cuidado médico y remedial incurrido durante el período presupuestario." },
+        { "en": "Step 4: Once your incurred bills equal the spend-down amount, Medicaid coverage begins for the rest of that budget period.", "es": "Paso 4: Una vez que sus facturas incurridas igualan el monto de spend-down, la cobertura de Medicaid comienza para el resto de ese período." },
+        { "en": "Step 5: When the budget period ends, the process starts over for the next period.", "es": "Paso 5: Cuando termina el período presupuestario, el proceso comienza de nuevo para el siguiente período." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Who can actually use the spend-down pathway",
+        "es": "Quién puede usar realmente la vía de spend-down"
+      },
+      "paragraphs": [
+        {
+          "en": "Spend-down is primarily used by non-MAGI Medicaid populations: people age 65 and older, people who are blind or disabled, and nursing home or HCBS waiver applicants whose income is a modest amount over the limit. States that elect the medically needy option must also extend it to three mandatory groups: pregnant women, children under 18, and parents or caretaker relatives, though a state may choose not to extend it to aged, blind, or disabled individuals separately under a 209(b) rule.",
+          "es": "El spend-down se usa principalmente por poblaciones de Medicaid no basadas en MAGI: personas de 65 años o más, personas ciegas o con discapacidades, y solicitantes de hogares de ancianos o exenciones HCBS cuyo ingreso está modestamente por encima del límite. Los estados que eligen la opción medicamente necesaria también deben extenderla a tres grupos obligatorios: mujeres embarazadas, niños menores de 18 años y padres o cuidadores."
+        },
+        {
+          "en": "Adults who qualify through the ACA Medicaid expansion group, generally adults under 138% of the federal poverty level in the 40 states plus DC that expanded, are a MAGI category and cannot use spend-down even in states that offer the medically needy option to other groups. Their eligibility is a hard income cutoff with no exceptions for medical bills.",
+          "es": "Los adultos que califican a través del grupo de expansión de Medicaid del ACA, generalmente adultos bajo 138% del nivel federal de pobreza, son una categoría MAGI y no pueden usar el spend-down incluso en estados que ofrecen la opción medicamente necesaria a otros grupos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How Medicaid spend-down interacts with Medicare for dual-eligible seniors",
+        "es": "Cómo interactúa el spend-down de Medicaid con Medicare para personas mayores con doble elegibilidad"
+      },
+      "paragraphs": [
+        {
+          "en": "A large share of people using the spend-down pathway are 65 or older and already enrolled in Original Medicare, which has no income test of its own for Medicare Part A hospital coverage or Part B medical coverage. Once someone spends down and becomes fully Medicaid-eligible for that budget period, Medicaid can pick up Medicare Part A and Part B cost-sharing, which often means a standalone Medigap policy is no longer worth paying for since Medicaid covers the same gaps. Someone enrolled in Medicare Advantage instead of Original Medicare may become eligible to switch into a Dual-Eligible Special Needs Plan (D-SNP) once Medicaid eligibility is established through spend-down.",
+          "es": "Una gran parte de las personas que usan la vía de spend-down tienen 65 años o más y ya están inscritas en Medicare Original, que no tiene una prueba de ingresos propia para la cobertura hospitalaria de la Parte A o la cobertura médica de la Parte B. Una vez que alguien hace el spend-down y se vuelve elegible para Medicaid completo durante ese período, Medicaid puede cubrir el costo compartido de las Partes A y B de Medicare."
+        },
+        {
+          "en": "Medicare Part D drug coverage is affected too: someone who becomes Medicaid-eligible through spend-down for even one month is typically deemed eligible for the Part D Extra Help low-income subsidy, which caps drug copays for the rest of the calendar year regardless of whether the spend-down continues every month.",
+          "es": "La cobertura de medicamentos de la Parte D de Medicare también se ve afectada: alguien que se vuelve elegible para Medicaid a través del spend-down, incluso por un mes, típicamente se considera elegible para el subsidio de bajos ingresos Extra Help de la Parte D."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives if your state does not offer spend-down",
+        "es": "Alternativas si su estado no ofrece spend-down"
+      },
+      "paragraphs": [
+        {
+          "en": "If you live in one of the roughly 25 income cap states and do not qualify for regular Medicaid, five alternatives are worth checking in 2026 before assuming you have no options.",
+          "es": "Si vive en uno de los aproximadamente 25 estados con tope de ingresos y no califica para Medicaid regular, vale la pena revisar cinco alternativas en 2026 antes de asumir que no tiene opciones."
+        }
+      ],
+      "list": [
+        { "en": "Qualified Income Trust (Miller Trust): the standard fix in income cap states for long-term care Medicaid; deposit excess income monthly so it is excluded from the eligibility calculation.", "es": "Fideicomiso de Ingreso Calificado (Miller Trust): la solución estándar en estados con tope de ingresos para Medicaid de cuidado a largo plazo." },
+        { "en": "Medicare Savings Programs (QMB, SLMB, QI): for people on Medicare with limited income who do not qualify for full Medicaid, these state-run programs pay Medicare Part B premiums and sometimes cost-sharing.", "es": "Programas de Ahorro de Medicare (QMB, SLMB, QI): para personas con Medicare e ingresos limitados que no califican para Medicaid completo." },
+        { "en": "ACA marketplace subsidies: if you are under 65 and your income is too high for Medicaid with no spend-down option, an ACA-compliant marketplace plan must cover the 10 essential health benefits and cannot deny you or charge more for a preexisting condition.", "es": "Subsidios del mercado ACA: si tiene menos de 65 años y su ingreso es demasiado alto para Medicaid sin opción de spend-down, un plan del mercado conforme al ACA debe cubrir los 10 beneficios esenciales de salud." },
+        { "en": "Part D Extra Help / state pharmacy assistance programs: help offset prescription costs for people who do not qualify for full Medicaid but still have limited income.", "es": "Extra Help de la Parte D / programas estatales de asistencia farmacéutica: ayudan a compensar los costos de medicamentos recetados." },
+        { "en": "HCBS waiver 300% special income group: many states use a separate income standard, 300% of the SSI federal benefit rate, specifically for home and community-based waiver applicants instead of medically needy spend-down.", "es": "Grupo de ingreso especial del 300% para exenciones HCBS: muchos estados usan un estándar de ingresos separado para solicitantes de exenciones en el hogar y la comunidad." }
+      ]
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Contact your state Medicaid agency to ask whether it offers a medically needy or share-of-cost program and what the current MNIL is for your household size.", "es": "Paso 1: Contacte a la agencia estatal de Medicaid para preguntar si ofrece un programa medicamente necesario y cuál es el MNIL actual." },
+      { "en": "Step 2: Gather proof of income, medical bills (paid and unpaid), and any existing insurance statements for the budget period.", "es": "Paso 2: Reúna comprobantes de ingresos, facturas médicas (pagadas y no pagadas) y estados de cuenta de seguro." },
+      { "en": "Step 3: Apply through your state Medicaid portal or in person, and specifically request the medically needy or spend-down determination if your income is above the regular limit.", "es": "Paso 3: Solicite a través del portal estatal de Medicaid o en persona, y pida específicamente la determinación medicamente necesaria." },
+      { "en": "Step 4: Submit medical bills as you incur them during the budget period to document your spend-down amount.", "es": "Paso 4: Presente las facturas médicas a medida que las incurre durante el período presupuestario." },
+      { "en": "Step 5: If your state uses an income cap instead, ask an elder-law attorney or your Medicaid caseworker about setting up a Qualified Income Trust before you reapply.", "es": "Paso 5: Si su estado usa un tope de ingresos, pregunte a un abogado especializado en derecho de adultos mayores sobre establecer un Fideicomiso de Ingreso Calificado." }
+    ],
+    "govStartingUrl": "https://www.medicaid.gov/medicaid/eligibility-policy",
+    "documentsNeeded": [
+      { "en": "Proof of monthly income (Social Security award letter, pension statements, pay stubs)", "es": "Comprobante de ingreso mensual (carta de adjudicación del Seguro Social, estados de pensión)" },
+      { "en": "Unpaid and paid medical bills for the current budget period", "es": "Facturas médicas pagadas y no pagadas del período presupuestario actual" },
+      { "en": "Proof of identity and state residency", "es": "Prueba de identidad y residencia estatal" },
+      { "en": "Existing health insurance cards or statements, including Medicare", "es": "Tarjetas o estados de cuenta de seguro médico existentes, incluido Medicare" },
+      { "en": "Bank statements and asset documentation for non-MAGI categories that apply an asset test", "es": "Estados de cuenta bancarios y documentación de activos para categorías no MAGI con prueba de activos" }
+    ],
+    "commonDenialReasons": [
+      { "en": "State has no medically needy program and applicant assumed spend-down was available", "es": "El estado no tiene programa medicamente necesario y el solicitante asumió que el spend-down estaba disponible" },
+      { "en": "Incurred medical bills did not reach the full spend-down amount for the budget period", "es": "Las facturas médicas incurridas no alcanzaron el monto completo de spend-down para el período" },
+      { "en": "Qualified Income Trust set up incorrectly or missing required deposits in an income cap state", "es": "Fideicomiso de Ingreso Calificado establecido incorrectamente o depósitos faltantes" },
+      { "en": "Asset limit exceeded for non-MAGI categories, separate from the income spend-down calculation", "es": "Límite de activos excedido para categorías no MAGI, separado del cálculo de spend-down de ingresos" }
+    ],
+    "deadline": {
+      "en": "Year-round. Medicaid spend-down has no open enrollment window; budget periods restart continuously (1 to 6 months depending on the state).",
+      "es": "Todo el año. El spend-down de Medicaid no tiene un período de inscripción abierta; los períodos presupuestarios se reinician continuamente."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is a Medicaid spend-down in simple terms?",
+        "answer": "A Medicaid spend-down is a way for people whose income is too high for regular Medicaid to still qualify by incurring enough medical expenses to bring their income down to their state's medically needy income limit (MNIL). Once incurred bills equal the spend-down amount for the budget period, Medicaid pays for covered services for the rest of that period. About 32 states plus DC offer this option in 2026."
+      },
+      {
+        "question": "How do I calculate my Medicaid spend-down amount?",
+        "answer": "Subtract your state's medically needy income limit (MNIL) from your countable monthly income; the difference is your spend-down amount for that budget period. For example, if the MNIL is $1,000 a month and your countable income is $1,300, your spend-down amount is $300 per month, or $900 over a 3-month budget period. Your state Medicaid agency can confirm the exact MNIL and budget period length for your household size."
+      },
+      {
+        "question": "Which states have Medicaid spend-down (medically needy) programs in 2026?",
+        "answer": "About 32 states plus DC run a medically needy program in 2026, including California, New York, Florida, Illinois, Massachusetts, and Pennsylvania. The remaining roughly 18 states have no spend-down pathway; long-term care applicants in those states typically use a Qualified Income Trust instead once their income exceeds 300% of the SSI federal benefit rate ($2,982/month individual, 2026)."
+      },
+      {
+        "question": "What counts as a medical expense for Medicaid spend-down?",
+        "answer": "States generally count doctor visits, hospital bills, prescription drugs, dental and vision care, medical equipment, home health aides, and even old unpaid medical debt toward your spend-down amount. Health insurance premiums, including Medicare Part B premiums, also typically count. Ask your state Medicaid caseworker for the specific list of allowable expenses, since it varies by state."
+      },
+      {
+        "question": "What is a Qualified Income Trust and do I need one?",
+        "answer": "A Qualified Income Trust (also called a Miller Trust) is an irrevocable trust used in roughly 25 income cap states for long-term care Medicaid, where spend-down is not allowed. If your income exceeds 300% of the SSI federal benefit rate ($2,982/month individual, 2026), depositing the excess into a properly structured Qualified Income Trust each month excludes it from the Medicaid eligibility calculation. You generally need one only if you live in an income cap state and are applying for nursing home or HCBS waiver Medicaid."
+      },
+      {
+        "question": "Can I use spend-down for ACA Medicaid expansion coverage?",
+        "answer": "No. Adults who qualify through the ACA Medicaid expansion group (up to 138% of the federal poverty level in 2026) are a MAGI category, and MAGI Medicaid has no spend-down option in any state. If your income is above 138% FPL and you are under 65, look at ACA marketplace subsidies instead of spend-down."
+      },
+      {
+        "question": "How long does a Medicaid spend-down budget period last?",
+        "answer": "Federal rules cap the budget period at a maximum of 6 months, but states can choose shorter periods. Many states use a 1-month period, meaning you must meet your spend-down amount every single month to stay eligible for that month, while others use 3 or 6-month periods that let you accumulate medical bills over a longer stretch."
+      },
+      {
+        "question": "What happens if I don't incur enough medical expenses to meet my spend-down?",
+        "answer": "If your incurred medical bills fall short of the spend-down amount for that budget period, you are not eligible for Medicaid coverage for that period; you remain responsible for your medical bills out of pocket. You can reapply and try again for the next budget period once new medical bills accumulate."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué es un spend-down de Medicaid en términos simples?",
+        "answer": "Un spend-down de Medicaid es una forma de calificar para personas cuyo ingreso es demasiado alto para Medicaid regular, al incurrir suficientes gastos médicos para bajar su ingreso al límite de ingresos medicamente necesario (MNIL) de su estado. Una vez que las facturas incurridas igualan el monto de spend-down, Medicaid paga los servicios cubiertos para el resto de ese período. Aproximadamente 32 estados más DC ofrecen esta opción en 2026."
+      },
+      {
+        "question": "¿Cómo calculo mi monto de spend-down de Medicaid?",
+        "answer": "Reste el límite de ingresos medicamente necesario (MNIL) de su estado de su ingreso mensual contable; la diferencia es su monto de spend-down para ese período. Por ejemplo, si el MNIL es $1,000 al mes y su ingreso contable es $1,300, su monto de spend-down es $300 al mes, o $900 durante un período de 3 meses."
+      },
+      {
+        "question": "¿Qué estados tienen programas de spend-down (medicamente necesario) de Medicaid en 2026?",
+        "answer": "Aproximadamente 32 estados más DC operan un programa medicamente necesario en 2026, incluyendo California, Nueva York, Florida, Illinois, Massachusetts y Pensilvania. Los aproximadamente 18 estados restantes no tienen vía de spend-down; los solicitantes de cuidado a largo plazo en esos estados típicamente usan un Fideicomiso de Ingreso Calificado."
+      },
+      {
+        "question": "¿Qué cuenta como gasto médico para el spend-down de Medicaid?",
+        "answer": "Los estados generalmente cuentan visitas al médico, facturas de hospital, medicamentos recetados, cuidado dental y de la vista, equipo médico, asistentes de salud en el hogar, e incluso deuda médica antigua no pagada hacia su monto de spend-down. Las primas de seguro médico, incluidas las primas de la Parte B de Medicare, también suelen contar."
+      },
+      {
+        "question": "¿Qué es un Fideicomiso de Ingreso Calificado y lo necesito?",
+        "answer": "Un Fideicomiso de Ingreso Calificado (también llamado Miller Trust) es un fideicomiso irrevocable usado en aproximadamente 25 estados con tope de ingresos para Medicaid de cuidado a largo plazo, donde no se permite el spend-down. Si su ingreso excede 300% de la tasa de beneficio federal del SSI ($2,982/mes individual, 2026), depositar el exceso en un fideicomiso correctamente estructurado excluye ese ingreso del cálculo de elegibilidad."
+      },
+      {
+        "question": "¿Puedo usar el spend-down para la cobertura de expansión de Medicaid del ACA?",
+        "answer": "No. Los adultos que califican a través del grupo de expansión de Medicaid del ACA (hasta 138% del nivel federal de pobreza en 2026) son una categoría MAGI, y Medicaid basado en MAGI no tiene opción de spend-down en ningún estado. Si su ingreso está por encima del 138% FPL y tiene menos de 65 años, considere los subsidios del mercado ACA en su lugar."
+      },
+      {
+        "question": "¿Cuánto dura un período presupuestario de spend-down de Medicaid?",
+        "answer": "Las reglas federales limitan el período presupuestario a un máximo de 6 meses, pero los estados pueden elegir períodos más cortos. Muchos estados usan un período de 1 mes, lo que significa que debe cumplir su monto de spend-down cada mes para mantenerse elegible ese mes, mientras que otros usan períodos de 3 o 6 meses."
+      },
+      {
+        "question": "¿Qué pasa si no incurro en suficientes gastos médicos para cumplir mi spend-down?",
+        "answer": "Si sus facturas médicas incurridas no alcanzan el monto de spend-down para ese período presupuestario, no es elegible para la cobertura de Medicaid durante ese período; usted sigue siendo responsable de sus facturas médicas de su bolsillo. Puede volver a solicitar para el siguiente período una vez que se acumulen nuevas facturas médicas."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Medicaid Income Limits by State", "es": "Límites de Ingresos de Medicaid por Estado" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": { "en": "Does Medicaid Cover Nursing Home Care?", "es": "¿Medicaid Cubre el Cuidado en Hogares de Ancianos?" },
+      "href": "/qa/does-medicaid-cover-nursing-home-care"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicaid.gov: Eligibility Policy",
+      "url": "https://www.medicaid.gov/medicaid/eligibility-policy",
+      "note": {
+        "en": "Official CMS overview of MAGI and non-MAGI eligibility groups, including the medically needy option.",
+        "es": "Resumen oficial de CMS de los grupos de elegibilidad MAGI y no MAGI, incluida la opción medicamente necesaria."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Implementation Guide, Handling Excess Income (Spenddown)",
+      "url": "https://www.medicaid.gov/resources-for-states/downloads/macpro-ig-handling-excess-income-spenddown.pdf",
+      "note": {
+        "en": "Federal implementation guide defining the medically needy income level, spend-down calculation, and 6-month maximum budget period.",
+        "es": "Guía federal de implementación que define el nivel de ingresos medicamente necesario, el cálculo de spend-down y el período presupuestario máximo de 6 meses."
+      }
+    },
+    {
+      "name": "SSA.gov: SSI Federal Payment Amounts for 2026",
+      "url": "https://www.ssa.gov/oact/cola/SSI.html",
+      "note": {
+        "en": "Official 2026 SSI federal benefit rate ($994/month individual), the basis for the 300% income cap ($2,982/month) used in income cap states.",
+        "es": "Tasa oficial de beneficio federal del SSI de 2026 ($994/mes individual), la base para el tope de ingresos del 300% ($2,982/mes)."
+      }
+    },
+    {
+      "name": "MACPAC: Medicaid 101, Eligibility",
+      "url": "https://www.macpac.gov/medicaid-101/eligibility/",
+      "note": {
+        "en": "Nonpartisan federal advisory commission overview of MAGI vs. non-MAGI Medicaid eligibility pathways and state options.",
+        "es": "Resumen de la comisión asesora federal no partidista sobre las vías de elegibilidad de Medicaid MAGI y no MAGI."
+      }
+    },
+    {
+      "name": "ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Federal poverty level figures used to calculate the 138% FPL threshold for ACA Medicaid expansion adults.",
+        "es": "Cifras del nivel federal de pobreza usadas para calcular el umbral del 138% FPL para adultos de expansión de Medicaid del ACA."
+      }
+    }
+  ]
+}
