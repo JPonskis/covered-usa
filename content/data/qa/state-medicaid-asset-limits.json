@@ -1,0 +1,429 @@
+{
+  "slug": "state-medicaid-asset-limits",
+  "subtype": "coverage",
+  "question": {
+    "en": "What are the Medicaid asset limits by state in 2026?",
+    "es": "¿Cuáles son los límites de activos de Medicaid por estado en 2026?"
+  },
+  "shortAnswer": {
+    "en": "It depends: MAGI Medicaid has no asset test; ABD Medicaid caps at $2,000.",
+    "es": "Depende: Medicaid MAGI no tiene límite de activos; Medicaid ABD sí, en $2,000."
+  },
+  "fullAnswer": {
+    "en": "It depends on which Medicaid pathway applies to you. Most Medicaid enrollees, including ACA expansion adults, children, and pregnant women, face no asset test at all in 2026; eligibility rests on income alone. Aged, Blind and Disabled Medicaid and Nursing Home or HCBS Medicaid still apply a federal asset limit of $2,000 for an individual (higher in California, New York, and a few other states).",
+    "es": "Depende de qué vía de Medicaid le corresponda. La mayoría de los inscritos en Medicaid, incluidos los adultos de la expansión del ACA, los niños y las mujeres embarazadas, no enfrentan ninguna prueba de activos en 2026: la elegibilidad depende solo del ingreso. Medicaid para Ancianos, Ciegos y Discapacitados (ABD) y Medicaid de hogares de ancianos o HCBS todavía aplican un límite federal de activos de $2,000 para una persona (más alto en California, Nueva York y algunos otros estados)."
+  },
+  "category": "Medicaid",
+  "topic": "Medicaid Asset Limits 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "pageType": "coverage",
+  "lastUpdated": "2026-07-05",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "Medicaid Asset Limits by State (2026) | CoveredUSA",
+      "es": "Límites de Activos de Medicaid por Estado (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "See 2026 Medicaid asset limits for MAGI, ABD, and nursing home Medicaid by category, plus CSRA and home equity rules for married couples applying for coverage.",
+      "es": "Vea los límites de activos de Medicaid 2026 para MAGI, ABD y hogares de ancianos, más reglas de CSRA y equidad de vivienda para parejas que solicitan cobertura."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Medicaid Asset Limits by State (2026)",
+      "es": "Límites de Activos de Medicaid por Estado (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Medicaid asset limits determine whether an applicant's savings, investments, and property disqualify them from coverage, and the 2026 answer depends entirely on which Medicaid pathway a person needs. Modified Adjusted Gross Income (MAGI) Medicaid, the pathway covering most children, pregnant women, and adults under ACA expansion, has no asset test in any state; only income counts toward eligibility. Aged, Blind and Disabled (ABD) Medicaid and Nursing Home or Home and Community-Based Services (HCBS) Medicaid still use a federal floor of $2,000 in countable assets for an individual, a figure the Social Security Administration has not adjusted since 1989.",
+      "es": "Los límites de activos de Medicaid determinan si los ahorros, inversiones y propiedades de un solicitante lo descalifican de la cobertura, y la respuesta en 2026 depende por completo de qué vía de Medicaid necesite la persona. Medicaid de Ingreso Bruto Ajustado Modificado (MAGI), la vía que cubre a la mayoría de los niños, mujeres embarazadas y adultos de la expansión del ACA, no tiene prueba de activos en ningún estado; solo el ingreso cuenta para la elegibilidad. Medicaid para Ancianos, Ciegos y Discapacitados (ABD) y Medicaid de hogares de ancianos o HCBS todavía usan un piso federal de $2,000 en activos contables para una persona, cifra que la Administración del Seguro Social no ha ajustado desde 1989."
+    },
+    {
+      "en": "California, New York, and a handful of other states set 2026 asset limits well above that federal floor, while married couples applying for long-term care Medicaid receive extra protection under federal spousal impoverishment rules. This guide breaks down the 2026 asset limit by Medicaid category, compares five states side by side, and explains what happens when an applicant's assets exceed the limit. Check Medicaid income limits by state for the income side of eligibility, since assets and income are evaluated separately.",
+      "es": "California, Nueva York y algunos otros estados fijan límites de activos 2026 muy por encima de ese piso federal, mientras que las parejas casadas que solicitan Medicaid de cuidado a largo plazo reciben protección adicional bajo las reglas federales de empobrecimiento conyugal. Esta guía desglosa el límite de activos 2026 por categoría de Medicaid, compara cinco estados y explica qué sucede cuando los activos de un solicitante superan el límite. Consulte los límites de ingresos de Medicaid por estado para el lado de ingresos de la elegibilidad, ya que los activos y el ingreso se evalúan por separado."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Medicaid Category", "Asset Test in 2026?", "Individual Limit", "Couple / Notes"],
+      "es": ["Categoría de Medicaid", "¿Prueba de Activos en 2026?", "Límite Individual", "Pareja / Notas"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "MAGI Medicaid (ACA expansion adults, children, pregnant women)", "es": "Medicaid MAGI (adultos de expansión ACA, niños, embarazadas)" },
+          { "value": { "en": "No asset test", "es": "Sin prueba de activos" }, "status": "no" },
+          { "en": "None; income (MAGI) only", "es": "Ninguno; solo ingreso (MAGI)" },
+          { "en": "Applies in all 50 states and DC in 2026", "es": "Aplica en los 50 estados y DC en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Aged, Blind and Disabled (ABD) Medicaid", "es": "Medicaid para Ancianos, Ciegos y Discapacitados (ABD)" },
+          { "value": { "en": "Yes, asset test applies", "es": "Sí, aplica prueba de activos" }, "status": "yes" },
+          { "en": "$2,000 (2026 federal floor, most states)", "es": "$2,000 (piso federal 2026, mayoría de estados)" },
+          { "en": "$3,000 for a couple; California and New York set higher 2026 limits", "es": "$3,000 para pareja; California y Nueva York fijan límites 2026 más altos" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Nursing Home and HCBS Waiver Medicaid", "es": "Medicaid de Hogar de Ancianos y Exención HCBS" },
+          { "value": { "en": "Yes, asset test applies", "es": "Sí, aplica prueba de activos" }, "status": "yes" },
+          { "en": "$2,000 (2026 federal floor for the applicant spouse)", "es": "$2,000 (piso federal 2026 para el cónyuge solicitante)" },
+          { "en": "Non-applicant spouse keeps up to $162,660 via CSRA in 2026", "es": "El cónyuge no solicitante conserva hasta $162,660 vía CSRA en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Savings Programs (QMB, SLMB, QI)", "es": "Programas de Ahorro de Medicare (QMB, SLMB, QI)" },
+          { "value": { "en": "Partial, higher limit", "es": "Parcial, límite más alto" }, "status": "partial" },
+          { "en": "$9,950 in 2026, same limit across QMB, SLMB, and QI", "es": "$9,950 en 2026, mismo límite para QMB, SLMB y QI" },
+          { "en": "$14,910 for a couple, same across all three programs; some states waive the test in 2026", "es": "$14,910 para pareja, mismo límite para los tres programas; algunos estados eliminan la prueba en 2026" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Figures reflect the 2026 federal floor. States may set higher limits for ABD, Nursing Home, HCBS, and Medicare Savings Program categories; MAGI Medicaid never has an asset test, in any state, in any year.",
+      "es": "Las cifras reflejan el piso federal 2026. Los estados pueden fijar límites más altos para las categorías ABD, Hogar de Ancianos, HCBS y Programas de Ahorro de Medicare; Medicaid MAGI nunca tiene prueba de activos, en ningún estado, en ningún año."
+    },
+    "source": "Medicaid.gov, SSA.gov, CMS 2026 LIS Resource Limits Memo, KFF Medicaid Eligibility Levels 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Quick answer: does Medicaid have an asset limit in 2026?",
+        "es": "Respuesta rápida: ¿Medicaid tiene un límite de activos en 2026?"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on which Medicaid pathway applies to you. Most Medicaid enrollees, including ACA expansion adults, children, and pregnant women, face no asset test at all in 2026; eligibility rests on income alone. Aged, Blind and Disabled Medicaid and Nursing Home or HCBS Medicaid still apply a federal asset limit of $2,000 for an individual (higher in California, New York, and a few other states).",
+          "es": "Depende de qué vía de Medicaid le corresponda. La mayoría de los inscritos en Medicaid, incluidos los adultos de la expansión del ACA, los niños y las mujeres embarazadas, no enfrentan ninguna prueba de activos en 2026: la elegibilidad depende solo del ingreso. Medicaid para Ancianos, Ciegos y Discapacitados (ABD) y Medicaid de hogares de ancianos o HCBS todavía aplican un límite federal de activos de $2,000 para una persona (más alto en California, Nueva York y algunos otros estados)."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What counts toward the Medicaid asset limit in 2026",
+        "es": "Qué cuenta para el límite de activos de Medicaid en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Countable assets in 2026 include cash, checking and savings account balances, certificates of deposit, stocks, bonds, mutual funds, second vehicles, second homes, and most non-retirement investment accounts. Caseworkers add up the countable total on the date of application, then compare it against the limit for the applicant's Medicaid category. Retirement accounts count in some states and are exempt in others, so a 401(k) or IRA balance can change the outcome of an application depending on where the applicant lives.",
+          "es": "Los activos contables en 2026 incluyen efectivo, saldos de cuentas corrientes y de ahorro, certificados de depósito, acciones, bonos, fondos mutuos, segundos vehículos, segundas viviendas y la mayoría de las cuentas de inversión que no son de jubilación. Los trabajadores de casos suman el total contable en la fecha de la solicitud y lo comparan con el límite de la categoría de Medicaid del solicitante. Las cuentas de jubilación cuentan en algunos estados y están exentas en otros."
+        },
+        {
+          "en": "Exempt assets never count against the 2026 limit no matter the state. The primary home is exempt up to the home equity limit described below, one vehicle of any value is exempt, household goods and personal effects are exempt, a pre-paid burial plot or irrevocable funeral trust up to a state-set cap is exempt, and term life insurance is exempt regardless of face value. Whole life insurance is exempt only if the combined face value stays under $1,500.",
+          "es": "Los activos exentos nunca cuentan contra el límite 2026, sin importar el estado. La vivienda principal está exenta hasta el límite de equidad de vivienda descrito abajo, un vehículo de cualquier valor está exento, los bienes del hogar y efectos personales están exentos, una parcela funeraria prepagada o un fideicomiso funerario irrevocable hasta un tope estatal está exento, y el seguro de vida a término está exento sin importar el valor nominal. El seguro de vida entera está exento solo si el valor nominal combinado se mantiene por debajo de $1,500."
+        }
+      ],
+      "list": [
+        {
+          "en": "Countable: cash, bank accounts, CDs, stocks, bonds, second vehicles, second homes, most non-retirement investment accounts",
+          "es": "Contable: efectivo, cuentas bancarias, CDs, acciones, bonos, segundos vehículos, segundas viviendas, la mayoría de cuentas de inversión no jubilatorias"
+        },
+        {
+          "en": "Exempt: primary home (up to the equity limit), one vehicle, household goods, a pre-paid burial trust up to a state cap, term life insurance, whole life insurance under $1,500 face value",
+          "es": "Exento: vivienda principal (hasta el límite de equidad), un vehículo, bienes del hogar, un fideicomiso funerario prepagado hasta un tope estatal, seguro de vida a término, seguro de vida entera bajo $1,500 de valor nominal"
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "MAGI Medicaid has no asset test in 2026",
+        "es": "Medicaid MAGI no tiene prueba de activos en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "MAGI Medicaid covers the large majority of Medicaid enrollees nationwide in 2026: children through CHIP-funded Medicaid, pregnant women, parents and caretaker relatives under state income limits, and adults covered by ACA expansion in the 40 states plus DC that adopted it. None of these groups face a savings or property test; a caseworker checks Modified Adjusted Gross Income against the state's percentage of the federal poverty level and stops there.",
+          "es": "Medicaid MAGI cubre a la gran mayoría de los inscritos en Medicaid a nivel nacional en 2026: niños a través de Medicaid financiado por CHIP, mujeres embarazadas, padres y parientes cuidadores bajo los límites de ingresos estatales, y adultos cubiertos por la expansión del ACA en los 40 estados más DC que la adoptaron. Ninguno de estos grupos enfrenta una prueba de ahorros o propiedad."
+        },
+        {
+          "en": "The MAGI versus Non-MAGI split matters in 2026 because most people who ask about a Medicaid asset limit do not actually need to worry about one. The asset test only applies to Non-MAGI pathways: primarily Aged, Blind and Disabled Medicaid, Nursing Home and HCBS waiver Medicaid, and Medicare Savings Programs for dual-eligible beneficiaries. The 10 states that have not expanded Medicaid under the ACA (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming) still follow MAGI rules, with no asset test, for the populations they do cover in 2026.",
+          "es": "La división entre MAGI y Non-MAGI importa en 2026 porque la mayoría de las personas que preguntan sobre un límite de activos de Medicaid en realidad no necesitan preocuparse por uno. La prueba de activos solo aplica a las vías Non-MAGI: principalmente Medicaid ABD, Medicaid de Hogar de Ancianos y exención HCBS, y Programas de Ahorro de Medicare para beneficiarios de elegibilidad dual. Los 10 estados que no han expandido Medicaid bajo el ACA (Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming) siguen las reglas MAGI, sin prueba de activos, para las poblaciones que sí cubren en 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "2026 asset limits for Aged, Blind and Disabled and Nursing Home Medicaid",
+        "es": "Límites de activos 2026 para Medicaid ABD y de Hogar de Ancianos"
+      },
+      "paragraphs": [
+        {
+          "en": "Aged, Blind and Disabled (ABD) Medicaid and Nursing Home Medicaid share the same federal starting point in 2026: $2,000 in countable assets for an individual and $3,000 for a couple, both figures set by the Supplemental Security Income program and unchanged since 1989. HCBS waiver programs, which pay for home health aides, adult day care, and assisted living support so an enrollee can avoid a nursing facility, use the same $2,000 individual limit in most states.",
+          "es": "Medicaid para Ancianos, Ciegos y Discapacitados (ABD) y Medicaid de Hogar de Ancianos comparten el mismo punto de partida federal en 2026: $2,000 en activos contables para una persona y $3,000 para una pareja, cifras fijadas por el programa de Seguridad de Ingreso Suplementario sin cambios desde 1989. Los programas de exención HCBS usan el mismo límite individual de $2,000 en la mayoría de los estados."
+        },
+        {
+          "en": "Medicare Savings Programs sit in between. QMB, SLMB, and QI all use the same 2026 resource limit of $9,950 for an individual and $14,910 for a couple. A primary home and one vehicle are exempt from the Medicare Savings Program test just as they are for ABD Medicaid. Connecticut, Delaware, Louisiana, Maine, and Mississippi waive the asset test for Medicare Savings Programs entirely in 2026.",
+          "es": "Los Programas de Ahorro de Medicare se ubican en un punto intermedio. QMB, SLMB y QI usan el mismo límite de recursos 2026: $9,950 para una persona y $14,910 para una pareja. Connecticut, Delaware, Louisiana, Maine y Misisipi eliminan la prueba de activos para los Programas de Ahorro de Medicare por completo en 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How five states compare on 2026 Medicaid asset limits",
+        "es": "Cómo se comparan cinco estados en los límites de activos de Medicaid 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal law sets the $2,000 individual floor, but states can raise it for Non-MAGI Medicaid, and five states illustrate how far that discretion can stretch in 2026.",
+          "es": "La ley federal fija el piso individual de $2,000, pero los estados pueden aumentarlo para Medicaid Non-MAGI, y cinco estados muestran hasta dónde puede llegar esa discreción en 2026."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "2026 Medicaid asset limits by state (individual applicant)",
+          "es": "Límites de activos de Medicaid 2026 por estado (solicitante individual)"
+        },
+        "headers": {
+          "en": ["State", "2026 Individual Asset Limit", "Notes"],
+          "es": ["Estado", "Límite de Activos Individual 2026", "Notas"]
+        },
+        "rows": [
+          { "en": ["Most states (federal floor)", "$2,000", "Also the ABD Medicaid limit; $3,000 for a couple in 2026"], "es": ["La mayoría de los estados (piso federal)", "$2,000", "También el límite de Medicaid ABD; $3,000 para pareja en 2026"] },
+          { "en": ["California (Medi-Cal)", "$130,000", "Reinstated January 1, 2026 for Non-MAGI Medi-Cal; plus $65,000 per additional household member"], "es": ["California (Medi-Cal)", "$130,000", "Restablecido el 1 de enero de 2026 para Medi-Cal Non-MAGI; más $65,000 por cada miembro adicional del hogar"] },
+          { "en": ["New York", "About $33,038", "Non-MAGI resource limit well above the federal floor in 2026"], "es": ["Nueva York", "Aproximadamente $33,038", "Límite de recursos Non-MAGI muy por encima del piso federal en 2026"] },
+          { "en": ["Texas", "$2,000", "Follows the federal floor for ABD and Nursing Home Medicaid in 2026"], "es": ["Texas", "$2,000", "Sigue el piso federal para Medicaid ABD y de Hogar de Ancianos en 2026"] },
+          { "en": ["Florida", "$2,000 individual / $3,000 couple", "Follows the federal floor for ABD and Nursing Home Medicaid in 2026"], "es": ["Florida", "$2,000 individual / $3,000 pareja", "Sigue el piso federal para Medicaid ABD y de Hogar de Ancianos en 2026"] }
+        ],
+        "footnote": {
+          "en": "State asset limits change frequently through budget action; confirm current 2026 figures with the state Medicaid agency before applying.",
+          "es": "Los límites de activos estatales cambian con frecuencia por acción presupuestaria; confirme las cifras actuales de 2026 con la agencia estatal de Medicaid antes de solicitar."
+        },
+        "source": "California DHCS Non-MAGI Asset Limit Guidance 2026, Medicaid Planning Assistance State Eligibility Tables 2026, KFF State Health Facts"
+      }
+    },
+    {
+      "heading": {
+        "en": "Spousal protections: CSRA and home equity limits in 2026",
+        "es": "Protecciones conyugales: CSRA y límites de equidad de vivienda en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal spousal impoverishment rules protect the non-applicant spouse when only one partner in a married couple needs Nursing Home or HCBS Medicaid. In 2026, the Community Spouse Resource Allowance (CSRA) lets the non-applicant spouse keep between $32,532 and $162,660 in countable assets, an increase from the 2025 maximum of $157,920. States choose where in that range to set their own standard, and the applicant spouse still must bring personal countable assets down to $2,000.",
+          "es": "Las reglas federales de empobrecimiento conyugal protegen al cónyuge no solicitante cuando solo un miembro de una pareja casada necesita Medicaid de Hogar de Ancianos o HCBS. En 2026, la Asignación de Recursos del Cónyuge en la Comunidad (CSRA) permite al cónyuge no solicitante conservar entre $32,532 y $162,660 en activos contables, un aumento desde el máximo de $157,920 en 2025. El cónyuge solicitante todavía debe reducir sus activos contables personales a $2,000."
+        },
+        {
+          "en": "The home equity limit works separately from the CSRA. In 2026, states must exclude at least $752,000 in home equity, and states may raise that exclusion up to $1,130,000; twelve states and DC use the higher figure. California does not apply any home equity limit for Nursing Home or HCBS Medicaid in 2026. The home stays exempt entirely while the community spouse or a dependent relative continues to live there, regardless of its market value.",
+          "es": "El límite de equidad de vivienda funciona por separado de la CSRA. En 2026, los estados deben excluir al menos $752,000 en equidad de vivienda, y los estados pueden elevar esa exclusión hasta $1,130,000; doce estados y DC usan la cifra más alta. California no aplica ningún límite de equidad de vivienda para Medicaid de Hogar de Ancianos o HCBS en 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What happens if you exceed the Medicaid asset limit in 2026",
+        "es": "Qué sucede si supera el límite de activos de Medicaid en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Assets above the 2026 limit do not permanently disqualify an applicant; most states allow a spend-down, where the applicant pays down countable assets on allowed expenses such as medical bills, home repairs, or a pre-paid burial plan, until the total falls under the limit. Caseworkers also review a 60-month look-back period on Nursing Home and HCBS Medicaid applications, checking for asset transfers or gifts made below fair market value; transfers inside that window can trigger a penalty period during which Medicaid will not pay for long-term care.",
+          "es": "Los activos por encima del límite 2026 no descalifican permanentemente a un solicitante; la mayoría de los estados permiten un spend-down, donde el solicitante reduce activos contables en gastos permitidos como facturas médicas, reparaciones del hogar o un plan funerario prepagado, hasta que el total quede bajo el límite. Los trabajadores de casos también revisan un período de revisión de 60 meses en las solicitudes de Medicaid de Hogar de Ancianos y HCBS."
+        },
+        {
+          "en": "Applicants who expect to exceed the 2026 limit have several legitimate options. An elder law attorney can structure a Medicaid-compliant annuity that converts a lump sum into an income stream, which is not a countable asset. Married couples can maximize the CSRA before applying. Some states offer a Qualified Income Trust (Miller Trust) for income above the limit, a separate tool from asset planning. Families should also compare Medicare Savings Program limits, since a person who does not qualify for full Medicaid may still qualify for QMB, SLMB, or QI to cover Medicare premiums and cost-sharing.",
+          "es": "Los solicitantes que esperan superar el límite 2026 tienen varias opciones legítimas. Un abogado de derecho de adultos mayores puede estructurar una anualidad compatible con Medicaid que convierte una suma global en un flujo de ingresos, que no es un activo contable. Las parejas casadas pueden maximizar la CSRA antes de solicitar. Algunos estados ofrecen un Fideicomiso de Ingreso Calificado (Miller Trust) para ingresos por encima del límite."
+        }
+      ],
+      "list": [
+        {
+          "en": "Spend down countable assets on medical bills, home repairs, or a pre-paid burial trust",
+          "es": "Reducir activos contables en facturas médicas, reparaciones del hogar o un fideicomiso funerario prepagado"
+        },
+        {
+          "en": "Work with an elder law attorney on a Medicaid-compliant annuity or trust",
+          "es": "Trabajar con un abogado de derecho de adultos mayores en una anualidad o fideicomiso compatible con Medicaid"
+        },
+        {
+          "en": "Maximize the Community Spouse Resource Allowance if married",
+          "es": "Maximizar la Asignación de Recursos del Cónyuge en la Comunidad si está casado"
+        },
+        {
+          "en": "Check Medicare Savings Program (QMB, SLMB, QI) limits, which run far higher than ABD Medicaid",
+          "es": "Verificar los límites de los Programas de Ahorro de Medicare (QMB, SLMB, QI), que son mucho más altos que Medicaid ABD"
+        },
+        {
+          "en": "Confirm the current state-specific limit before making any transfer, since a 60-month look-back applies",
+          "es": "Confirmar el límite estatal actual antes de hacer cualquier transferencia, ya que aplica una revisión de 60 meses"
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the Medicaid asset limit for 2026?",
+        "answer": "It depends on the pathway. MAGI Medicaid, which covers most children, pregnant women, and ACA expansion adults, has no asset limit in 2026. Aged, Blind and Disabled Medicaid and Nursing Home or HCBS Medicaid use a federal floor of $2,000 for an individual and $3,000 for a couple, though California, New York, and other states set higher limits."
+      },
+      {
+        "question": "Does Medicaid count my house as an asset in 2026?",
+        "answer": "Usually not. Your primary home is exempt from the Medicaid asset test up to a home equity limit of $752,000 in most states in 2026, rising to $1,130,000 in twelve states and DC. California applies no home equity limit at all. The home stays exempt while a spouse or dependent relative continues living there."
+      },
+      {
+        "question": "What is the difference between MAGI and Non-MAGI Medicaid asset rules?",
+        "answer": "MAGI Medicaid, covering ACA expansion adults, children, and pregnant women, never applies an asset test in any state; only income matters. Non-MAGI Medicaid, covering Aged, Blind and Disabled applicants and Nursing Home or HCBS Medicaid, applies a federal asset floor of $2,000 for an individual in 2026, with some states setting a higher limit."
+      },
+      {
+        "question": "How much can a spouse keep if their partner needs nursing home Medicaid in 2026?",
+        "answer": "Under the 2026 Community Spouse Resource Allowance, the non-applicant spouse can keep between $32,532 and $162,660 in countable assets, depending on the state and the couple's total resources. The applicant spouse must still bring personal countable assets down to $2,000 to qualify for Nursing Home or HCBS Medicaid."
+      },
+      {
+        "question": "Which states have higher Medicaid asset limits than the federal floor in 2026?",
+        "answer": "California reinstated a Non-MAGI asset limit of $130,000 for an individual on January 1, 2026, plus $65,000 per additional household member. New York sets its Non-MAGI resource limit at roughly $33,038 for an individual. Most other states, including Texas and Florida, follow the federal floor of $2,000 in 2026."
+      },
+      {
+        "question": "What happens if I have too many assets for Medicaid in 2026?",
+        "answer": "Most states allow a spend-down: paying countable assets toward medical bills, home repairs, or a pre-paid burial plan until the total falls under the limit. Nursing Home and HCBS Medicaid applications also review a 60-month look-back period for asset transfers, and transfers below fair market value can trigger a penalty period."
+      },
+      {
+        "question": "Do Medicare Savings Programs have asset limits in 2026?",
+        "answer": "Yes, but the limits run higher than ABD Medicaid. QMB, SLMB, and QI all use the same 2026 resource limit of about $9,950 for an individual and $14,910 for a couple. Connecticut, Delaware, Louisiana, Maine, and Mississippi waive the asset test for these programs entirely."
+      },
+      {
+        "question": "What is the Medicaid look-back period for asset transfers?",
+        "answer": "For Nursing Home and HCBS Medicaid, most states review a 60-month (5-year) look-back period on the application date, checking for gifts or asset transfers made below fair market value. Transfers inside that window can trigger a penalty period during which Medicaid will not pay for long-term care services."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es el límite de activos de Medicaid para 2026?",
+        "answer": "Depende de la vía. Medicaid MAGI, que cubre a la mayoría de los niños, mujeres embarazadas y adultos de la expansión del ACA, no tiene límite de activos en 2026. Medicaid ABD y Medicaid de Hogar de Ancianos o HCBS usan un piso federal de $2,000 para una persona y $3,000 para una pareja."
+      },
+      {
+        "question": "¿Medicaid cuenta mi casa como un activo en 2026?",
+        "answer": "Usualmente no. Su vivienda principal está exenta de la prueba de activos de Medicaid hasta un límite de equidad de $752,000 en la mayoría de los estados en 2026, subiendo a $1,130,000 en doce estados y DC. California no aplica ningún límite de equidad de vivienda."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre las reglas de activos MAGI y Non-MAGI de Medicaid?",
+        "answer": "Medicaid MAGI, que cubre a adultos de expansión ACA, niños y embarazadas, nunca aplica prueba de activos en ningún estado; solo importa el ingreso. Medicaid Non-MAGI, que cubre a solicitantes ABD y Medicaid de Hogar de Ancianos o HCBS, aplica un piso federal de activos de $2,000 para una persona en 2026."
+      },
+      {
+        "question": "¿Cuánto puede conservar un cónyuge si su pareja necesita Medicaid de hogar de ancianos en 2026?",
+        "answer": "Bajo la Asignación de Recursos del Cónyuge en la Comunidad de 2026, el cónyuge no solicitante puede conservar entre $32,532 y $162,660 en activos contables, según el estado y los recursos totales de la pareja. El cónyuge solicitante todavía debe reducir sus activos contables personales a $2,000."
+      },
+      {
+        "question": "¿Qué estados tienen límites de activos de Medicaid más altos que el piso federal en 2026?",
+        "answer": "California restableció un límite de activos Non-MAGI de $130,000 para una persona el 1 de enero de 2026, más $65,000 por cada miembro adicional del hogar. Nueva York fija su límite de recursos Non-MAGI en aproximadamente $33,038 para una persona. La mayoría de los demás estados siguen el piso federal de $2,000."
+      },
+      {
+        "question": "¿Qué pasa si tengo demasiados activos para Medicaid en 2026?",
+        "answer": "La mayoría de los estados permiten un spend-down: pagar activos contables en facturas médicas, reparaciones del hogar o un plan funerario prepagado hasta que el total quede bajo el límite. Las solicitudes de Medicaid de Hogar de Ancianos y HCBS también revisan un período de 60 meses para transferencias de activos."
+      },
+      {
+        "question": "¿Los Programas de Ahorro de Medicare tienen límites de activos en 2026?",
+        "answer": "Sí, pero los límites son más altos que Medicaid ABD. QMB, SLMB y QI usan el mismo límite de recursos 2026: aproximadamente $9,950 para una persona y $14,910 para una pareja. Connecticut, Delaware, Louisiana, Maine y Misisipi eliminan la prueba de activos para estos programas."
+      },
+      {
+        "question": "¿Cuál es el período de revisión de Medicaid para transferencias de activos?",
+        "answer": "Para Medicaid de Hogar de Ancianos y HCBS, la mayoría de los estados revisan un período de 60 meses (5 años) en la fecha de la solicitud, buscando regalos o transferencias de activos hechas por debajo del valor justo de mercado. Las transferencias dentro de ese período pueden generar un período de penalización."
+      }
+    ]
+  },
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Confirm which Medicaid pathway applies to you (MAGI or Non-MAGI) before assuming an asset test applies in 2026.", "es": "Paso 1: Confirme qué vía de Medicaid le corresponde (MAGI o Non-MAGI) antes de asumir que aplica una prueba de activos en 2026." },
+      { "en": "Step 2: Gather 2026 asset documentation: bank statements, investment account statements, vehicle titles, and life insurance policies for the past 60 months.", "es": "Paso 2: Reúna documentación de activos 2026: estados de cuenta bancarios, de inversión, títulos de vehículos y pólizas de seguro de vida de los últimos 60 meses." },
+      { "en": "Step 3: Contact your state Medicaid agency or Area Agency on Aging to confirm the current 2026 asset limit and any state-specific exemptions.", "es": "Paso 3: Contacte a la agencia estatal de Medicaid o la Agencia de Área sobre el Envejecimiento para confirmar el límite de activos 2026 y exenciones estatales." },
+      { "en": "Step 4: Apply through your state Medicaid portal or in person, and disclose all assets accurately since a 60-month look-back applies to Nursing Home Medicaid.", "es": "Paso 4: Solicite a través del portal estatal de Medicaid o en persona, y declare todos los activos con precisión ya que aplica una revisión de 60 meses." },
+      { "en": "Step 5: If your assets exceed the limit, consult an elder law attorney about spend-down or Medicaid-compliant annuity options before transferring anything.", "es": "Paso 5: Si sus activos superan el límite, consulte a un abogado de derecho de adultos mayores sobre opciones de spend-down o anualidades compatibles con Medicaid antes de transferir nada." }
+    ],
+    "govStartingUrl": "https://www.medicaid.gov/about-us/where-can-i-get-medicaid-information/index.html",
+    "documentsNeeded": [
+      { "en": "Bank and investment account statements for the past 60 months (Nursing Home/HCBS applications)", "es": "Estados de cuenta bancarios y de inversión de los últimos 60 meses (solicitudes de Hogar de Ancianos/HCBS)" },
+      { "en": "Vehicle titles and registration", "es": "Títulos y registro de vehículos" },
+      { "en": "Life insurance policy statements showing face value", "es": "Estados de póliza de seguro de vida que muestren el valor nominal" },
+      { "en": "Deed or mortgage statement for the primary home", "es": "Escritura o estado de hipoteca de la vivienda principal" },
+      { "en": "Marriage certificate and spouse's asset documentation, if applying for CSRA protection", "es": "Acta de matrimonio y documentación de activos del cónyuge, si solicita protección CSRA" },
+      { "en": "Proof of any large asset transfers or gifts made in the past 5 years", "es": "Prueba de cualquier transferencia grande de activos o regalo hecho en los últimos 5 años" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Countable assets exceed the 2026 limit for the applicant's Medicaid category", "es": "Los activos contables superan el límite 2026 para la categoría de Medicaid del solicitante" },
+      { "en": "Undisclosed or unverified asset transfers within the 60-month look-back period", "es": "Transferencias de activos no reveladas o no verificadas dentro del período de revisión de 60 meses" },
+      { "en": "Missing documentation on retirement accounts or life insurance face value", "es": "Falta documentación sobre cuentas de jubilación o el valor nominal del seguro de vida" },
+      { "en": "Applying under the wrong Medicaid pathway (Non-MAGI limits applied when MAGI rules should govern)", "es": "Solicitar bajo la vía de Medicaid incorrecta (límites Non-MAGI aplicados cuando debían regir reglas MAGI)" }
+    ],
+    "deadline": {
+      "en": "Medicaid has no enrollment window; asset rules apply year-round in 2026.",
+      "es": "Medicaid no tiene ventana de inscripción; las reglas de activos aplican todo el año en 2026."
+    }
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Medicaid Income Limits by State", "es": "Límites de Ingresos de Medicaid por Estado" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "Medicaid Long-Term Care Eligibility", "es": "Elegibilidad de Medicaid para Cuidado a Largo Plazo" },
+      "href": "/qa/medicaid-long-term-care-eligibility"
+    },
+    {
+      "label": { "en": "Does Medicaid Cover Nursing Home Care?", "es": "¿Medicaid Cubre el Cuidado en Hogar de Ancianos?" },
+      "href": "/qa/does-medicaid-cover-nursing-home"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicaid.gov: Spousal Impoverishment",
+      "url": "https://www.medicaid.gov/medicaid/eligibility-policy/spousal-impoverishment/index.html",
+      "note": {
+        "en": "Official CMS guidance on 2026 Community Spouse Resource Allowance rules and spousal asset protections.",
+        "es": "Guía oficial de CMS sobre las reglas 2026 de la Asignación de Recursos del Cónyuge en la Comunidad."
+      }
+    },
+    {
+      "name": "SSA.gov: Understanding SSI Resources",
+      "url": "https://www.ssa.gov/ssi/text-resources-ussi.htm",
+      "note": {
+        "en": "Social Security Administration explanation of the $2,000/$3,000 SSI resource limit that anchors ABD Medicaid asset rules.",
+        "es": "Explicación de la Administración del Seguro Social sobre el límite de recursos SSI de $2,000/$3,000."
+      }
+    },
+    {
+      "name": "KFF: Medicaid Eligibility Levels for Older Adults and People with Disabilities (Non-MAGI) in 2026",
+      "url": "https://www.kff.org/medicaid/medicaid-eligibility-levels-for-older-adults-and-people-with-disabilities-non-magi-in-2026/",
+      "note": {
+        "en": "State-by-state 2026 Non-MAGI Medicaid asset and income limit data.",
+        "es": "Datos estatales 2026 de límites de activos e ingresos de Medicaid Non-MAGI."
+      }
+    },
+    {
+      "name": "California DHCS: Asset Limit Changes for Non-MAGI Medi-Cal",
+      "url": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/Asset-Limit-Changes-for-Non-MAGI-Medi-Cal.aspx",
+      "note": {
+        "en": "State guidance on California's January 1, 2026 reinstatement of the Non-MAGI Medi-Cal asset limit at $130,000.",
+        "es": "Guía estatal sobre el restablecimiento del 1 de enero de 2026 del límite de activos Non-MAGI de Medi-Cal en $130,000."
+      }
+    },
+    {
+      "name": "CMS: CY 2026 Low-Income Subsidy Resource Limits Memo",
+      "url": "https://www.cms.gov/files/document/cy2026-lis-resource-limits-memo.pdf",
+      "note": {
+        "en": "Federal memo setting 2026 resource limits used by Medicare Savings Programs and Part D Low-Income Subsidy.",
+        "es": "Memo federal que fija los límites de recursos 2026 usados por los Programas de Ahorro de Medicare y el Subsidio de Bajos Ingresos de la Parte D."
+      }
+    }
+  ],
+
+  "topicCluster": "medicaid-coverage",
+  "keyTerms": {
+    "en": ["medicaid asset limits 2026", "medicaid asset limit by state", "does medicaid have an asset limit", "medicaid resource limit 2026", "nursing home medicaid asset limit"],
+    "es": ["límites de activos de medicaid 2026", "límite de activos por estado medicaid", "medicaid tiene límite de activos", "límite de recursos medicaid 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
