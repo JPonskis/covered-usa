@@ -1,0 +1,422 @@
+{
+  "slug": "does-medicare-cover-pre-existing-conditions",
+  "subtype": "coverage",
+  "topicCluster": "medicare-coverage",
+  "pageType": "coverage",
+  "question": {
+    "en": "Does Medicare Cover Pre-Existing Conditions?",
+    "es": "¿Medicare Cubre Condiciones Preexistentes?"
+  },
+  "shortAnswer": {
+    "en": "Yes. Medicare covers pre-existing conditions with no waiting period.",
+    "es": "Sí. Medicare cubre condiciones preexistentes sin período de espera."
+  },
+  "fullAnswer": {
+    "en": "Yes. Original Medicare (Parts A and B), Medicare Advantage (Part C), and Medicare Part D all cover pre-existing conditions immediately, with no waiting period, no medical questionnaire, and no higher premium based on health status. Medicare Advantage plans also cannot deny enrollment to people with End-Stage Renal Disease (ESRD) as of 2026, a protection the 21st Century Cures Act added starting January 1, 2021. The one exception is Medigap (Medicare Supplement) insurance: outside your one-time 6-month Medigap Open Enrollment Period or a guaranteed-issue situation, insurers in most states can medically underwrite applicants, charge more based on health history, or impose up to a 6-month pre-existing condition waiting period.",
+    "es": "Sí. Medicare Original (Partes A y B), Medicare Advantage (Parte C) y la Parte D de Medicare cubren condiciones preexistentes de inmediato, sin período de espera, sin cuestionario médico y sin prima más alta por estado de salud. Los planes Medicare Advantage tampoco pueden negar la inscripción a personas con Enfermedad Renal en Etapa Terminal (ESRD) a partir de 2026, una protección que la Ley Cures del Siglo XXI agregó desde el 1 de enero de 2021. La única excepción es el seguro Medigap (Suplemento de Medicare): fuera de su Período de Inscripción Abierta de Medigap de 6 meses (único en la vida) o una situación de emisión garantizada, las aseguradoras en la mayoría de los estados pueden hacer suscripción médica, cobrar más según el historial de salud, o imponer hasta 6 meses de período de espera por condición preexistente."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Pre-Existing Condition Coverage",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-07-10",
+  "readingTime": "9 min read",
+
+  "keyTerms": {
+    "en": ["does medicare cover pre-existing conditions", "medicare pre-existing condition coverage 2026", "medigap pre-existing condition waiting period", "medicare guaranteed issue", "medicare medical underwriting"],
+    "es": ["medicare cubre condiciones preexistentes", "cobertura de condiciones preexistentes medicare 2026", "período de espera medigap condiciones preexistentes", "emisión garantizada medicare", "suscripción médica medicare"]
+  },
+
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "meta": {
+    "title": {
+      "en": "Does Medicare Cover Pre-Existing Conditions? (2026) | CoveredUSA",
+      "es": "¿Medicare Cubre Condiciones Preexistentes? (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Yes. Original Medicare, Medicare Advantage, and Part D cover pre-existing conditions with no waiting period. Medigap is the one exception in 2026.",
+      "es": "Sí. Medicare Original, Medicare Advantage y la Parte D cubren condiciones preexistentes sin período de espera. Medigap es la única excepción en 2026."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Does Medicare Cover Pre-Existing Conditions? (2026)",
+      "es": "¿Medicare Cubre Condiciones Preexistentes? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Before the Affordable Care Act, millions of Americans under 65 were denied individual health insurance or charged more because of a prior diagnosis. Medicare has never worked that way. Since the program began in 1965, eligibility for Original Medicare has been based on age or disability, not a health questionnaire, so a cancer diagnosis, diabetes, heart disease, or any other pre-existing condition has never blocked someone from enrolling. Since 2014, ACA-compliant individual market plans must also cover pre-existing conditions as part of their essential health benefits requirement, but that is a separate law that came decades after Medicare's own rules.",
+      "es": "Antes de la Ley del Cuidado de Salud a Bajo Precio, millones de estadounidenses menores de 65 años eran rechazados para seguro individual o pagaban más por un diagnóstico previo. Medicare nunca ha funcionado así. Desde que el programa comenzó en 1965, la elegibilidad para Medicare Original se basa en la edad o la discapacidad, no en un cuestionario de salud, así que un diagnóstico de cáncer, diabetes, enfermedad cardíaca o cualquier otra condición preexistente nunca ha impedido que alguien se inscriba. Desde 2014, los planes conformes con ACA en el mercado individual también deben cubrir condiciones preexistentes como parte de su requisito de beneficios esenciales de salud, pero esa es una ley separada que llegó décadas después de las propias reglas de Medicare."
+    },
+    {
+      "en": "The one real wrinkle is Medigap (Medicare Supplement) insurance, which can medically underwrite applicants outside specific windows. This guide walks through exactly how Original Medicare, Medicare Advantage, Part D, and Medigap each treat pre-existing conditions in 2026, what the ESRD rule change in 2021 means, and how to protect your guaranteed-issue rights. For a side-by-side comparison of Medigap and Medicare Advantage, see [Medigap vs. Medicare Advantage](/en/qa/medigap-vs-medicare-advantage).",
+      "es": "El único detalle real es el seguro Medigap (Suplemento de Medicare), que puede hacer suscripción médica a los solicitantes fuera de ventanas específicas. Esta guía explica exactamente cómo Medicare Original, Medicare Advantage, la Parte D y Medigap tratan las condiciones preexistentes en 2026, qué significa el cambio de regla de ESRD en 2021, y cómo proteger sus derechos de emisión garantizada."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Coverage Type", "Pre-Existing Conditions Covered?", "Health Questions to Enroll?", "Key Rule"],
+      "es": ["Tipo de cobertura", "¿Cubre condiciones preexistentes?", "¿Preguntas de salud para inscribirse?", "Regla clave"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Original Medicare Part A (hospital)", "es": "Medicare Original Parte A (hospital)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "No", "es": "No" },
+          { "en": "Guaranteed based on age 65+ or disability, no medical underwriting", "es": "Garantizado por edad 65+ o discapacidad, sin suscripción médica" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Original Medicare Part B (medical)", "es": "Medicare Original Parte B (médico)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "No", "es": "No" },
+          { "en": "Guaranteed enrollment; standard 2026 deductible ($283) and 20% coinsurance apply to everyone equally", "es": "Inscripción garantizada; deducible estándar 2026 ($283) y coaseguro del 20% aplican por igual" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Advantage (Part C)", "es": "Medicare Advantage (Parte C)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "No", "es": "No" },
+          { "en": "Must accept all Medicare-eligible applicants, including ESRD patients since January 1, 2021", "es": "Debe aceptar a todos los solicitantes elegibles para Medicare, incluyendo pacientes con ESRD desde el 1 de enero de 2021" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Part D (drug plans)", "es": "Parte D de Medicare (planes de medicamentos)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "No", "es": "No" },
+          { "en": "Guaranteed issue; late enrollment penalty is a timing penalty, not a health-based denial", "es": "Emisión garantizada; la penalización por inscripción tardía es por tiempo, no por salud" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medigap (Medicare Supplement)", "es": "Medigap (Suplemento de Medicare)" },
+          { "value": { "en": "Depends on timing", "es": "Depende del momento" }, "status": "partial" },
+          { "en": "Yes, outside guaranteed-issue windows in most states", "es": "Sí, fuera de las ventanas de emisión garantizada en la mayoría de los estados" },
+          { "en": "Guaranteed issue only during your 6-month Open Enrollment Period or a qualifying event", "es": "Emisión garantizada solo durante su Período de Inscripción Abierta de 6 meses o un evento calificado" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Medicare pre-existing condition coverage by plan type, 2026: Original Medicare, Medicare Advantage, and Part D are federally guaranteed regardless of health status once you meet age or disability requirements. Medigap is medically underwritten in most states outside your one-time enrollment window; a handful of states (Connecticut, Massachusetts, Maine, New York) require insurers to offer continuous or annual guaranteed-issue Medigap coverage in 2026.",
+      "es": "Cobertura de condiciones preexistentes de Medicare por tipo de plan, 2026: Medicare Original, Medicare Advantage y la Parte D están garantizados federalmente sin importar el estado de salud una vez que cumple los requisitos de edad o discapacidad. Medigap tiene suscripción médica en la mayoría de los estados fuera de su ventana de inscripción única; algunos estados (Connecticut, Massachusetts, Maine, Nueva York) requieren cobertura Medigap de emisión garantizada continua o anual en 2026."
+    },
+    "source": "Medicare.gov, CMS, 21st Century Cures Act (P.L. 114-255), KFF 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer",
+        "es": "Respuesta Directa"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes. Original Medicare, Medicare Advantage, and Medicare Part D all cover people with pre-existing conditions with no waiting period and no health questions on enrollment. The one exception is Medigap (Medicare Supplement) insurance: outside your one-time 6-month Medigap Open Enrollment Period, insurers in most states can medically underwrite applicants and impose up to a 6-month pre-existing condition waiting period.",
+          "es": "Sí. Medicare Original, Medicare Advantage y la Parte D de Medicare cubren a las personas con condiciones preexistentes sin período de espera y sin preguntas de salud al inscribirse. La única excepción es el seguro Medigap (Suplemento de Medicare): fuera de su Período de Inscripción Abierta de Medigap de 6 meses, las aseguradoras en la mayoría de los estados pueden hacer suscripción médica e imponer hasta 6 meses de período de espera por condición preexistente."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Original Medicare Covers for Pre-Existing Conditions",
+        "es": "Qué cubre Medicare Original para condiciones preexistentes"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare is a federal entitlement program. Eligibility turns on age (65 or older), a qualifying disability, or a diagnosis of End-Stage Renal Disease (ESRD) or amyotrophic lateral sclerosis (ALS), not on passing a health screening. The Social Security Administration automatically enrolls most people who already receive Social Security benefits; everyone else applies through SSA without answering a single medical question. There is no application form field asking about prior diagnoses, current treatments, or preexisting condition history for Part A or Part B.",
+          "es": "Medicare Original es un programa federal de derecho. La elegibilidad depende de la edad (65 años o más), una discapacidad calificada, o un diagnóstico de Enfermedad Renal en Etapa Terminal (ESRD) o esclerosis lateral amiotrófica (ALS), no de pasar un examen de salud. La Administración del Seguro Social inscribe automáticamente a la mayoría de las personas que ya reciben beneficios del Seguro Social; todos los demás solicitan a través de SSA sin responder ni una sola pregunta médica."
+        },
+        {
+          "en": "Once your coverage starts, Part A and Part B pay their share of medically necessary care for any condition you already had, whether that is ongoing cancer treatment, dialysis, a heart condition, or a mental health diagnosis. You pay the same standard cost-sharing as everyone else: the 2026 Part A inpatient deductible is $1,736 per benefit period, and the 2026 Part B deductible is $283 followed by 20% coinsurance. Your bill is never higher and your coverage is never delayed because of a preexisting condition.",
+          "es": "Una vez que comienza su cobertura, la Parte A y la Parte B pagan su parte de la atención médicamente necesaria para cualquier condición que ya tuviera, ya sea tratamiento continuo de cáncer, diálisis, una condición cardíaca o un diagnóstico de salud mental. Usted paga el mismo costo compartido estándar que todos: el deducible de hospitalización de la Parte A en 2026 es $1,736 por período de beneficios, y el deducible de la Parte B en 2026 es $283 seguido de 20% de coaseguro. Su factura nunca es más alta y su cobertura nunca se retrasa por una condición preexistente."
+        }
+      ],
+      "list": [
+        { "en": "Cancer treatment already underway when Medicare starts: covered from day one", "es": "Tratamiento de cáncer ya en curso cuando comienza Medicare: cubierto desde el primer día" },
+        { "en": "Diabetes, heart disease, COPD, and other chronic conditions: covered from day one", "es": "Diabetes, enfermedad cardíaca, EPOC y otras condiciones crónicas: cubiertas desde el primer día" },
+        { "en": "End-Stage Renal Disease (ESRD): a pre-existing condition that grants early Medicare eligibility rather than blocking it", "es": "Enfermedad Renal en Etapa Terminal (ESRD): una condición preexistente que otorga elegibilidad temprana para Medicare en lugar de bloquearla" },
+        { "en": "Mental health conditions: covered under Part A (inpatient) and Part B (outpatient) with the same cost-sharing as physical conditions", "es": "Condiciones de salud mental: cubiertas bajo la Parte A (hospitalización) y la Parte B (ambulatorio) con el mismo costo compartido que las condiciones físicas" }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicare Advantage and Pre-Existing Conditions, Including ESRD",
+        "es": "Medicare Advantage y condiciones preexistentes, incluyendo ESRD"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal law requires every Medicare Advantage plan to accept any Medicare-eligible applicant who applies during a valid enrollment period, regardless of health status or pre-existing conditions. A plan cannot charge you a higher premium, add a waiting period, or reject your application because of diabetes, cancer, a heart condition, or any other diagnosis. This guaranteed-issue rule has applied to Medicare Advantage since the program's creation.",
+          "es": "La ley federal requiere que cada plan Medicare Advantage acepte a cualquier solicitante elegible para Medicare que aplique durante un período de inscripción válido, sin importar el estado de salud o las condiciones preexistentes. Un plan no puede cobrarle una prima más alta, agregar un período de espera, o rechazar su solicitud debido a diabetes, cáncer, una condición cardíaca, o cualquier otro diagnóstico."
+        },
+        {
+          "en": "ESRD was the one carve-out for decades: people with End-Stage Renal Disease generally could not join a new Medicare Advantage plan, with narrow exceptions. The 21st Century Cures Act, signed into law in December 2016, ended that restriction effective January 1, 2021. As of 2026, Medicare Advantage plans, including Special Needs Plans, must accept ESRD-eligible beneficiaries just like anyone else. Enrollment being guaranteed does not mean every service is automatically approved; plans can still require prior authorization or use a provider network, but that applies equally to all enrollees and is not a pre-existing condition denial.",
+          "es": "ESRD fue la única excepción durante décadas: las personas con Enfermedad Renal en Etapa Terminal generalmente no podían unirse a un nuevo plan Medicare Advantage, con excepciones limitadas. La Ley Cures del Siglo XXI, promulgada en diciembre de 2016, terminó esa restricción a partir del 1 de enero de 2021. A partir de 2026, los planes Medicare Advantage, incluyendo los Planes de Necesidades Especiales, deben aceptar a beneficiarios elegibles por ESRD igual que a cualquier otra persona."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The One Exception: Medigap and Medical Underwriting",
+        "es": "La única excepción: Medigap y la suscripción médica"
+      },
+      "paragraphs": [
+        {
+          "en": "Medigap works differently from every other piece of Medicare. Federal law guarantees you the right to buy any Medigap policy sold in your state, at the best available rate, with no medical underwriting, during a one-time 6-month Medigap Open Enrollment Period that starts the month you are both 65 or older and enrolled in Part B. During that window, an insurer cannot deny you, charge you more, or delay coverage for any pre-existing condition.",
+          "es": "Medigap funciona diferente a cualquier otra parte de Medicare. La ley federal le garantiza el derecho a comprar cualquier póliza Medigap vendida en su estado, a la mejor tarifa disponible, sin suscripción médica, durante un Período de Inscripción Abierta de Medigap de 6 meses, único en la vida, que comienza el mes en que cumple 65 años o más y está inscrito en la Parte B."
+        },
+        {
+          "en": "Outside that window, or if you apply for Medigap later in life without a qualifying guaranteed-issue event, insurers in most states can ask health questions, deny your application, charge you a higher premium, or impose a pre-existing condition waiting period of up to 6 months, during which the Medigap policy will not pay your out-of-pocket costs related to that condition (Original Medicare still pays its normal share). If you had at least 6 months of continuous prior creditable coverage, such as employer insurance or Original Medicare itself, before applying, that waiting period is shortened or waived entirely under federal creditable-coverage credit rules.",
+          "es": "Fuera de esa ventana, o si solicita Medigap más tarde en la vida sin un evento de emisión garantizada calificado, las aseguradoras en la mayoría de los estados pueden hacer preguntas de salud, negar su solicitud, cobrarle una prima más alta, o imponer un período de espera por condición preexistente de hasta 6 meses, durante el cual la póliza Medigap no pagará sus costos de bolsillo relacionados con esa condición (Medicare Original sigue pagando su parte normal). Si tuvo al menos 6 meses de cobertura previa acreditable continua, como seguro de empleador o el propio Medicare Original, antes de solicitar, ese período de espera se reduce o se elimina por completo."
+        }
+      ],
+      "list": [
+        { "en": "Guaranteed-issue trigger: your Medicare Advantage plan leaves your area or you move out of its service area", "es": "Evento de emisión garantizada: su plan Medicare Advantage sale de su área o usted se muda fuera de su área de servicio" },
+        { "en": "Guaranteed-issue trigger: your employer group health coverage ends", "es": "Evento de emisión garantizada: termina su cobertura grupal de empleador" },
+        { "en": "Guaranteed-issue trigger: you tried Medicare Advantage for the first time and switch back to Original Medicare within your first 12 months (trial right)", "es": "Evento de emisión garantizada: probó Medicare Advantage por primera vez y regresa a Medicare Original dentro de los primeros 12 meses (derecho de prueba)" },
+        { "en": "No guaranteed-issue trigger: simply deciding you want Medigap years after your Initial Enrollment Period ended, with no qualifying event", "es": "Sin evento de emisión garantizada: simplemente decidir que quiere Medigap años después de que terminó su Período de Inscripción Inicial, sin un evento calificado" }
+      ],
+      "table": {
+        "caption": {
+          "en": "States requiring continuous or extra Medigap guaranteed-issue protection for pre-existing conditions (2026)",
+          "es": "Estados que requieren protección continua o adicional de emisión garantizada de Medigap para condiciones preexistentes (2026)"
+        },
+        "headers": {
+          "en": ["State", "Protection Type", "What It Means"],
+          "es": ["Estado", "Tipo de protección", "Qué significa"]
+        },
+        "rows": [
+          { "en": ["Connecticut", "Continuous open enrollment", "Insurers must sell Medigap year-round with no medical underwriting, at any age"], "es": ["Connecticut", "Inscripción abierta continua", "Las aseguradoras deben vender Medigap todo el año sin suscripción médica, a cualquier edad"] },
+          { "en": ["Massachusetts", "Continuous open enrollment", "Guaranteed issue year-round for eligible Medicare beneficiaries"], "es": ["Massachusetts", "Inscripción abierta continua", "Emisión garantizada todo el año para beneficiarios elegibles de Medicare"] },
+          { "en": ["Maine", "One 30-day window per year", "Guaranteed issue once a year to switch to an equal or lesser-benefit Medigap plan"], "es": ["Maine", "Una ventana de 30 días al año", "Emisión garantizada una vez al año para cambiar a un plan Medigap igual o de menor beneficio"] },
+          { "en": ["New York", "Continuous open enrollment", "Guaranteed issue year-round regardless of age or health status"], "es": ["Nueva York", "Inscripción abierta continua", "Emisión garantizada todo el año sin importar edad o estado de salud"] },
+          { "en": ["California and several other states", "Birthday rule", "30 to 60 day window around your birthday to switch to an equal or lesser Medigap plan without underwriting; not a full open enrollment"], "es": ["California y varios otros estados", "Regla del cumpleaños", "Ventana de 30 a 60 días alrededor de su cumpleaños para cambiar a un plan Medigap igual o menor sin suscripción; no es una inscripción abierta completa"] }
+        ],
+        "footnote": {
+          "en": "State Medigap protections change periodically. Confirm current rules with your state insurance department or a SHIP counselor before relying on a birthday rule or continuous open enrollment provision.",
+          "es": "Las protecciones estatales de Medigap cambian periódicamente. Confirme las reglas actuales con el departamento de seguros de su estado o un consejero SHIP."
+        },
+        "source": "NAIC, state Departments of Insurance, KFF Medigap issue brief 2026"
+      }
+    },
+    {
+      "heading": {
+        "en": "Cost of Waiting: Late Enrollment Penalties in 2026",
+        "es": "Costo de esperar: penalizaciones por inscripción tardía en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "A pre-existing condition never blocks Medicare coverage, but delaying enrollment when you do not have other creditable coverage triggers permanent penalties unrelated to your health. If you delay Part B past your Initial Enrollment Period without qualifying employer coverage, your premium permanently increases 10% for every full 12-month period you were eligible but not enrolled, added on top of the 2026 standard Part B premium of $202.90 a month for as long as you have Medicare.",
+          "es": "Una condición preexistente nunca bloquea la cobertura de Medicare, pero retrasar la inscripción cuando no tiene otra cobertura acreditable genera penalizaciones permanentes que no tienen relación con su salud. Si retrasa la Parte B más allá de su Período de Inscripción Inicial sin cobertura de empleador calificada, su prima aumenta permanentemente 10% por cada período completo de 12 meses en que fue elegible pero no se inscribió, sumado a la prima estándar de la Parte B en 2026 de $202.90 al mes por el tiempo que tenga Medicare."
+        },
+        {
+          "en": "Part D works similarly: if you go 63 or more consecutive days without creditable prescription drug coverage after your Initial Enrollment Period, you owe a late enrollment penalty of roughly 1% of the national base beneficiary premium for every month you went uncovered, permanently added to your monthly Part D premium. Both penalties are entirely about enrollment timing. They apply the same way to a perfectly healthy enrollee as to someone with a serious pre-existing condition.",
+          "es": "La Parte D funciona de manera similar: si pasa 63 días o más consecutivos sin cobertura acreditable de medicamentos recetados después de su Período de Inscripción Inicial, debe una penalización de inscripción tardía de aproximadamente 1% de la prima base nacional del beneficiario por cada mes sin cobertura, sumada permanentemente a su prima mensual de la Parte D. Ambas penalizaciones se tratan por completo del momento de inscripción, no de su estado de salud."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Eligibility and Enrollment: No Health Questions Asked",
+        "es": "Elegibilidad e inscripción: sin preguntas de salud"
+      },
+      "paragraphs": [
+        {
+          "en": "You qualify for Medicare at 65, after 24 months of Social Security Disability Insurance payments, immediately upon a diagnosis of ALS, or upon starting dialysis or receiving a kidney transplant for ESRD. None of these paths require a health screening; ESRD and ALS are themselves pre-existing conditions that grant early access to Medicare rather than something that gets you excluded.",
+          "es": "Usted califica para Medicare a los 65 años, después de 24 meses de pagos del Seguro por Discapacidad del Seguro Social, inmediatamente al diagnóstico de ALS, o al comenzar diálisis o recibir un trasplante de riñón por ESRD. Ninguna de estas vías requiere un examen de salud; ESRD y ALS son en sí mismas condiciones preexistentes que otorgan acceso temprano a Medicare en lugar de algo que lo excluye."
+        },
+        {
+          "en": "Your Initial Enrollment Period runs 7 months: the 3 months before your 65th birthday month, your birthday month, and the 3 months after. Miss it without qualifying employer coverage and you wait for the General Enrollment Period, January 1 through March 31 each year, with coverage starting the month after you enroll. Enrolling in Part A, Part B, Medicare Advantage, or Part D never involves disclosing your diagnoses; the Medigap Open Enrollment Period described above is the only Medicare-related window where health history matters.",
+          "es": "Su Período de Inscripción Inicial dura 7 meses: los 3 meses antes de su mes de cumpleaños número 65, su mes de cumpleaños, y los 3 meses después. Si lo pierde sin cobertura de empleador calificada, espera al Período de Inscripción General, del 1 de enero al 31 de marzo cada año. Inscribirse en la Parte A, Parte B, Medicare Advantage o la Parte D nunca implica revelar sus diagnósticos; el Período de Inscripción Abierta de Medigap descrito arriba es la única ventana relacionada con Medicare donde el historial de salud importa."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Get the Right Coverage With a Pre-Existing Condition",
+        "es": "Cómo obtener la cobertura correcta con una condición preexistente"
+      },
+      "paragraphs": [
+        {
+          "en": "Enroll in Part B during your Initial Enrollment Period even if you feel healthy and are still working part time; doing so starts the clock on your one-time Medigap Open Enrollment Period, which is the single most valuable window if you ever want a Medigap policy. If you want Medigap, apply within that 6-month window so no insurer can ask you a single health question. If you are past that window, check the state table above and contact your State Health Insurance Assistance Program (SHIP) for free, unbiased counseling on whether your state offers continuous or birthday-rule guaranteed issue.",
+          "es": "Inscríbase en la Parte B durante su Período de Inscripción Inicial aunque se sienta saludable y siga trabajando medio tiempo; hacerlo inicia el reloj de su Período de Inscripción Abierta de Medigap único en la vida. Si quiere Medigap, solicite dentro de esa ventana de 6 meses para que ninguna aseguradora le haga ni una sola pregunta de salud. Si ya pasó esa ventana, revise la tabla estatal arriba y contacte a su Programa Estatal de Asistencia de Seguro de Salud (SHIP) para asesoría gratuita e imparcial."
+        }
+      ],
+      "list": [
+        { "en": "Use Medicare's official Plan Finder at medicare.gov/plan-compare to compare Medicare Advantage and Part D plans; no plan on that tool can reject you for a pre-existing condition", "es": "Use el Buscador de Planes oficial de Medicare en medicare.gov/plan-compare para comparar planes Medicare Advantage y Parte D; ningún plan puede rechazarlo por una condición preexistente" },
+        { "en": "Keep proof of any prior creditable health coverage; it can shorten or eliminate a Medigap pre-existing condition waiting period", "es": "Guarde comprobantes de cualquier cobertura de salud acreditable previa; puede acortar o eliminar un período de espera de Medigap por condición preexistente" },
+        { "en": "If you are dual-eligible for [Medicare and Medicaid](/en/qa/can-i-have-both-medicare-and-medicaid), Medicaid can cover Medigap-style cost-sharing without any medical underwriting at all", "es": "Si es elegible dual para Medicare y Medicaid, Medicaid puede cubrir el costo compartido estilo Medigap sin ninguna suscripción médica" },
+        { "en": "Call 1-800-MEDICARE (1-800-633-4227) or your SHIP counselor before assuming you cannot get a specific type of coverage because of a diagnosis", "es": "Llame al 1-800-MEDICARE (1-800-633-4227) o a su consejero SHIP antes de asumir que no puede obtener un tipo específico de cobertura por un diagnóstico" }
+      ]
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Mark your Initial Enrollment Period, the 7-month window centered on your 65th birthday month, on your calendar.", "es": "Paso 1: Marque su Período de Inscripción Inicial, la ventana de 7 meses centrada en su mes de cumpleaños número 65, en su calendario." },
+      { "en": "Step 2: Enroll in Part B during that window even if you have no current health issues; this action starts your one-time 6-month Medigap Open Enrollment Period.", "es": "Paso 2: Inscríbase en la Parte B durante esa ventana aunque no tenga problemas de salud actuales; esto inicia su Período de Inscripción Abierta de Medigap de 6 meses único en la vida." },
+      { "en": "Step 3: If you want Medigap, apply within that 6-month window so guaranteed issue applies and no health questions are asked.", "es": "Paso 3: Si quiere Medigap, solicite dentro de esa ventana de 6 meses para que aplique la emisión garantizada y no se hagan preguntas de salud." },
+      { "en": "Step 4: Compare Medicare Advantage and Part D plans at medicare.gov/plan-compare; enrollment in these plans is guaranteed regardless of any pre-existing condition.", "es": "Paso 4: Compare planes Medicare Advantage y Parte D en medicare.gov/plan-compare; la inscripción en estos planes está garantizada sin importar ninguna condición preexistente." },
+      { "en": "Step 5: If you missed your Medigap window, contact your State Health Insurance Assistance Program (SHIP) to check for a state-specific continuous or birthday-rule guaranteed-issue option.", "es": "Paso 5: Si perdió su ventana de Medigap, contacte a su Programa Estatal de Asistencia de Seguro de Salud (SHIP) para verificar una opción estatal de emisión garantizada continua o de regla de cumpleaños." }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/basics/get-started-with-medicare",
+    "documentsNeeded": [
+      { "en": "Medicare card showing your Medicare number and Part A/Part B effective dates", "es": "Tarjeta de Medicare que muestra su número de Medicare y fechas de vigencia de la Parte A/Parte B" },
+      { "en": "Proof of any prior creditable health coverage (employer plan letter, COBRA notice, or prior policy declaration page)", "es": "Comprobante de cualquier cobertura de salud acreditable previa (carta del plan del empleador, aviso COBRA, o página de declaración de póliza previa)" },
+      { "en": "List of current prescriptions and prescribing doctors, for comparing Part D and Medicare Advantage formularies", "es": "Lista de medicamentos actuales y médicos que los recetan, para comparar formularios de Parte D y Medicare Advantage" },
+      { "en": "Social Security number and date of Part B enrollment, to calculate your Medigap Open Enrollment Period window", "es": "Número de Seguro Social y fecha de inscripción en la Parte B, para calcular su ventana del Período de Inscripción Abierta de Medigap" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Applying for Medigap outside your 6-month Open Enrollment Period or a guaranteed-issue event, in a state without continuous protections", "es": "Solicitar Medigap fuera de su Período de Inscripción Abierta de 6 meses o un evento de emisión garantizada, en un estado sin protecciones continuas" },
+      { "en": "Failing to disclose a health condition accurately on a medically underwritten Medigap application, which can lead to a rescinded policy later", "es": "No revelar con precisión una condición de salud en una solicitud de Medigap con suscripción médica, lo que puede llevar a que se cancele la póliza después" },
+      { "en": "Gaps in prior creditable coverage longer than 63 days, which can trigger the full 6-month Medigap pre-existing condition waiting period", "es": "Interrupciones en la cobertura acreditable previa mayores a 63 días, lo que puede activar el período de espera completo de 6 meses de Medigap" },
+      { "en": "Trying to enroll in Medicare Advantage or Part D outside a valid enrollment period; this is a timing rule, not a health-based denial", "es": "Intentar inscribirse en Medicare Advantage o Parte D fuera de un período de inscripción válido; esto es una regla de tiempo, no una negación por salud" }
+    ],
+    "deadline": {
+      "en": "Initial Enrollment Period: 7 months around your 65th birthday. Medigap Open Enrollment Period: one-time 6 months starting the month you are 65+ with Part B. Medicare Advantage and Part D Annual Enrollment: October 15 to December 7, 2026.",
+      "es": "Período de Inscripción Inicial: 7 meses alrededor de su cumpleaños número 65. Período de Inscripción Abierta de Medigap: 6 meses únicos, comenzando el mes en que cumple 65+ con la Parte B. Inscripción Anual de Medicare Advantage y Parte D: 15 de octubre al 7 de diciembre de 2026."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Does Original Medicare deny coverage for pre-existing conditions?",
+        "answer": "No. Original Medicare Part A and Part B never deny coverage based on a pre-existing condition. Eligibility is based on age (65 or older), disability, or a diagnosis of ESRD or ALS, not on your health history. Once enrolled, Medicare pays its share of medically necessary care for any condition you already had, subject only to the standard 2026 deductibles and coinsurance that apply to every enrollee."
+      },
+      {
+        "question": "Can a Medicare Advantage plan reject me because of a pre-existing condition?",
+        "answer": "No. Federal law requires every Medicare Advantage plan to accept any Medicare-eligible applicant who enrolls during a valid enrollment period, regardless of health status. This includes people with End-Stage Renal Disease (ESRD), who were excluded from most Medicare Advantage plans before the 21st Century Cures Act ended that restriction on January 1, 2021."
+      },
+      {
+        "question": "Does Medigap cover pre-existing conditions?",
+        "answer": "It depends on timing. During your one-time 6-month Medigap Open Enrollment Period, or during a guaranteed-issue event, insurers cannot deny you or impose a waiting period for any pre-existing condition. Outside those windows, insurers in most states can medically underwrite you, charge more, or impose up to a 6-month waiting period before the policy pays for care related to that condition."
+      },
+      {
+        "question": "What is the Medigap pre-existing condition waiting period?",
+        "answer": "It is a period of up to 6 months during which a Medigap policy will not pay out-of-pocket costs tied to a pre-existing condition, even though the policy is otherwise active and Original Medicare still pays its normal share. The waiting period is reduced or eliminated if you had at least 6 months of continuous creditable coverage before applying, and it only applies when you enroll outside your guaranteed-issue window."
+      },
+      {
+        "question": "What happens if I delay Medicare enrollment?",
+        "answer": "Delaying Part B without qualifying employer coverage adds a permanent 10% premium penalty for each full 12-month period you were eligible but not enrolled, on top of the 2026 standard Part B premium of $202.90 a month. Delaying Part D more than 63 days without creditable drug coverage adds a separate permanent penalty of roughly 1% of the national base beneficiary premium per uncovered month. Neither penalty is connected to a pre-existing condition; both are purely about enrollment timing."
+      },
+      {
+        "question": "Can I be denied Medicare Part D for a pre-existing condition?",
+        "answer": "No. Every Part D plan must accept any Medicare-eligible applicant who enrolls during a valid enrollment period, regardless of health status or the number of prescriptions you take. A late enrollment penalty can apply if you go 63 or more days without creditable drug coverage, but that penalty is about timing, not your health history."
+      },
+      {
+        "question": "Are ESRD and ALS patients eligible for Medicare before age 65?",
+        "answer": "Yes. People diagnosed with amyotrophic lateral sclerosis (ALS) qualify for Medicare immediately, with no waiting period. People with End-Stage Renal Disease (ESRD) generally qualify starting the fourth month of dialysis or immediately upon a kidney transplant. Both conditions grant early access to Medicare rather than blocking coverage, the opposite of how pre-existing conditions worked in the pre-ACA individual insurance market."
+      },
+      {
+        "question": "Which states offer extra Medigap protection for pre-existing conditions?",
+        "answer": "Connecticut, Massachusetts, and New York require insurers to offer Medigap on a continuous, year-round guaranteed-issue basis regardless of age or health status. Maine offers one 30-day guaranteed-issue window per year. California and several other states use a narrower birthday rule that lets you switch to an equal or lesser-benefit Medigap plan without underwriting during a 30 to 60 day window around your birthday."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Medicare Original niega cobertura por condiciones preexistentes?",
+        "answer": "No. La Parte A y la Parte B de Medicare Original nunca niegan cobertura por una condición preexistente. La elegibilidad se basa en la edad (65 años o más), discapacidad, o un diagnóstico de ESRD o ALS, no en su historial de salud. Una vez inscrito, Medicare paga su parte de la atención médicamente necesaria para cualquier condición que ya tuviera."
+      },
+      {
+        "question": "¿Un plan Medicare Advantage puede rechazarme por una condición preexistente?",
+        "answer": "No. La ley federal requiere que cada plan Medicare Advantage acepte a cualquier solicitante elegible para Medicare que se inscriba durante un período de inscripción válido, sin importar el estado de salud. Esto incluye a personas con Enfermedad Renal en Etapa Terminal (ESRD), quienes estaban excluidas de la mayoría de los planes Medicare Advantage antes de que la Ley Cures del Siglo XXI terminara esa restricción el 1 de enero de 2021."
+      },
+      {
+        "question": "¿Medigap cubre condiciones preexistentes?",
+        "answer": "Depende del momento. Durante su Período de Inscripción Abierta de Medigap de 6 meses, único en la vida, o durante un evento de emisión garantizada, las aseguradoras no pueden negarle cobertura ni imponer un período de espera por ninguna condición preexistente. Fuera de esas ventanas, las aseguradoras en la mayoría de los estados pueden hacer suscripción médica, cobrar más, o imponer hasta 6 meses de período de espera."
+      },
+      {
+        "question": "¿Qué es el período de espera de Medigap por condición preexistente?",
+        "answer": "Es un período de hasta 6 meses durante el cual una póliza Medigap no pagará los costos de bolsillo relacionados con una condición preexistente, aunque la póliza esté activa y Medicare Original siga pagando su parte normal. El período de espera se reduce o elimina si tuvo al menos 6 meses de cobertura acreditable continua antes de solicitar."
+      },
+      {
+        "question": "¿Qué pasa si retraso mi inscripción en Medicare?",
+        "answer": "Retrasar la Parte B sin cobertura de empleador calificada agrega una penalización permanente del 10% de prima por cada período completo de 12 meses en que fue elegible pero no se inscribió, sobre la prima estándar de la Parte B en 2026 de $202.90 al mes. Retrasar la Parte D más de 63 días sin cobertura acreditable de medicamentos agrega una penalización separada de aproximadamente 1% de la prima base nacional por mes sin cobertura."
+      },
+      {
+        "question": "¿Pueden negarme la Parte D de Medicare por una condición preexistente?",
+        "answer": "No. Cada plan de la Parte D debe aceptar a cualquier solicitante elegible para Medicare que se inscriba durante un período de inscripción válido, sin importar el estado de salud o el número de medicamentos que toma. Puede aplicar una penalización por inscripción tardía si pasa 63 días o más sin cobertura acreditable de medicamentos, pero esa penalización es por tiempo, no por su historial de salud."
+      },
+      {
+        "question": "¿Los pacientes con ESRD y ALS son elegibles para Medicare antes de los 65 años?",
+        "answer": "Sí. Las personas diagnosticadas con esclerosis lateral amiotrófica (ALS) califican para Medicare de inmediato, sin período de espera. Las personas con Enfermedad Renal en Etapa Terminal (ESRD) generalmente califican a partir del cuarto mes de diálisis o inmediatamente después de un trasplante de riñón. Ambas condiciones otorgan acceso temprano a Medicare en lugar de bloquear la cobertura."
+      },
+      {
+        "question": "¿Qué estados ofrecen protección adicional de Medigap para condiciones preexistentes?",
+        "answer": "Connecticut, Massachusetts y Nueva York requieren que las aseguradoras ofrezcan Medigap de forma continua todo el año con emisión garantizada, sin importar la edad o el estado de salud. Maine ofrece una ventana de emisión garantizada de 30 días una vez al año. California y varios otros estados usan una regla del cumpleaños más limitada."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Check Medicare Eligibility", "es": "Verificar Elegibilidad de Medicare" },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": { "en": "Medigap vs. Medicare Advantage", "es": "Medigap vs. Medicare Advantage" },
+      "href": "/qa/medigap-vs-medicare-advantage"
+    },
+    {
+      "label": { "en": "Can I Have Both Medicare and Medicaid?", "es": "¿Puedo Tener Medicare y Medicaid a la Vez?" },
+      "href": "/qa/can-i-have-both-medicare-and-medicaid"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicare.gov: Medigap and Pre-Existing Conditions",
+      "url": "https://www.medicare.gov/health-drug-plans/medigap/basics/enrollment",
+      "note": {
+        "en": "Official CMS explanation of the Medigap Open Enrollment Period and guaranteed-issue rights for pre-existing conditions.",
+        "es": "Explicación oficial de CMS del Período de Inscripción Abierta de Medigap y los derechos de emisión garantizada para condiciones preexistentes."
+      }
+    },
+    {
+      "name": "Medicare.gov: Costs 2026",
+      "url": "https://www.medicare.gov/basics/costs/medicare-costs",
+      "note": {
+        "en": "Official 2026 Medicare Part A and Part B deductible, premium, and coinsurance figures cited throughout this page.",
+        "es": "Cifras oficiales 2026 de deducibles, primas y coaseguro de la Parte A y Parte B citadas en esta página."
+      }
+    },
+    {
+      "name": "Congress.gov: 21st Century Cures Act (P.L. 114-255)",
+      "url": "https://www.congress.gov/bill/114th-congress/house-bill/34",
+      "note": {
+        "en": "Federal statute ending the Medicare Advantage restriction on ESRD enrollees, effective January 1, 2021.",
+        "es": "Estatuto federal que terminó la restricción de Medicare Advantage para inscritos con ESRD, efectiva el 1 de enero de 2021."
+      }
+    },
+    {
+      "name": "KFF: Medigap Enrollment and Consumer Protections",
+      "url": "https://www.kff.org/medicare/issue-brief/medigap-enrollment-and-consumer-protections-vary-across-states/",
+      "note": {
+        "en": "KFF analysis of state-by-state Medigap guaranteed-issue and continuous open enrollment protections.",
+        "es": "Análisis de KFF de las protecciones estatales de emisión garantizada e inscripción abierta continua de Medigap."
+      }
+    },
+    {
+      "name": "CMS: Medicare Late Enrollment Penalties",
+      "url": "https://www.cms.gov/medicare/enrollment-renewal/coverage-you/enrollment-periods",
+      "note": {
+        "en": "CMS guidance on Part B and Part D late enrollment penalty calculations, distinct from pre-existing condition rules.",
+        "es": "Guía de CMS sobre el cálculo de penalizaciones por inscripción tardía de la Parte B y Parte D, distinto de las reglas de condiciones preexistentes."
+      }
+    }
+  ]
+}

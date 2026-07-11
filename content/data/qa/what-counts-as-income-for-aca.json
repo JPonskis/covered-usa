@@ -1,0 +1,409 @@
+{
+  "slug": "what-counts-as-income-for-aca",
+  "question": {
+    "en": "What Counts as Income for ACA Subsidies in 2026?",
+    "es": "¿Qué Cuenta Como Ingreso para los Subsidios del ACA en 2026?"
+  },
+  "shortAnswer": {
+    "en": "Depends on the source: MAGI counts most taxable income, not gifts or SSI.",
+    "es": "Depende de la fuente: MAGI cuenta la mayoria del ingreso gravable, no SSI ni regalos."
+  },
+  "fullAnswer": {
+    "en": "Depends on the type of income. ACA premium tax credits use Modified Adjusted Gross Income (MAGI), which counts wages, self-employment earnings, Social Security benefits (including the non-taxable portion), unemployment compensation, tax-exempt interest, and capital gains. MAGI excludes Supplemental Security Income (SSI), child support received, gifts, and pre-tax payroll deductions like retirement contributions. The Marketplace adds up MAGI for every tax household member required to file a return, then compares that total to the 2025 federal poverty guidelines (the year Marketplace plans use for 2026 coverage) to size the premium tax credit. Because the enhanced premium tax credits expired January 1, 2026, income above 400% of the federal poverty level receives no subsidy at all.",
+    "es": "Depende del tipo de ingreso. Los creditos fiscales para primas del ACA usan el Ingreso Bruto Ajustado Modificado (MAGI), que cuenta salarios, ingresos por trabajo independiente, beneficios del Seguro Social (incluida la parte no gravable), compensacion por desempleo, intereses exentos de impuestos y ganancias de capital. MAGI excluye el Ingreso Suplementario de Seguridad (SSI), la manutencion infantil recibida, los regalos y las deducciones de nomina antes de impuestos como las contribuciones de jubilacion. El Mercado suma el MAGI de cada miembro del hogar fiscal obligado a declarar, luego compara ese total con las pautas federales de pobreza de 2025 (el año que usan los planes del Mercado para la cobertura de 2026) para calcular el credito fiscal para primas. Debido a que los creditos fiscales mejorados expiraron el 1 de enero de 2026, el ingreso por encima del 400% del nivel federal de pobreza no recibe ningun subsidio."
+  },
+  "category": "ACA",
+  "topic": "ACA Premium Tax Credit Income (MAGI)",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "pageType": "definition",
+  "subtype": "coverage",
+  "topicCluster": "aca-coverage",
+  "keyTerms": {
+    "en": ["what counts as income for aca subsidies", "aca magi 2026", "aca subsidy income limits 2026", "modified adjusted gross income aca"],
+    "es": ["que cuenta como ingreso para subsidios aca", "magi aca 2026", "limites de ingreso subsidio aca 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "lastUpdated": "2026-07-10",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "What Counts as Income for ACA Subsidies? (2026) | CoveredUSA",
+      "es": "¿Qué Cuenta Como Ingreso ACA? (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "ACA subsidies use MAGI: wages, self-employment, Social Security, and capital gains count in 2026. SSI, gifts, and child support do not. Full 2026 breakdown.",
+      "es": "Los subsidios ACA usan MAGI: salarios, trabajo independiente, Seguro Social y ganancias de capital cuentan en 2026. SSI, regalos y manutencion no. Guia completa."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "What Counts as Income for ACA Subsidies in 2026?",
+      "es": "¿Qué Cuenta Como Ingreso para los Subsidios del ACA en 2026?"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Modified Adjusted Gross Income, or MAGI, is the single number that decides how large a 2026 ACA premium tax credit a household receives, and getting it wrong is the most common reason Marketplace enrollees are surprised by a tax bill or a smaller subsidy than expected. MAGI is not the same as gross income, take-home pay, or the income figure Medicaid uses in every case, and several income types that feel like they should count (gifts, child support, SSI) legally do not.",
+      "es": "El Ingreso Bruto Ajustado Modificado, o MAGI, es el numero que decide cuan grande sera un credito fiscal para primas del ACA en 2026, y calcularlo mal es la razon mas comun por la que los inscritos en el Mercado se sorprenden con una factura de impuestos o un subsidio menor al esperado. MAGI no es lo mismo que el ingreso bruto, el salario neto, o la cifra que Medicaid usa en cada caso, y varios tipos de ingreso que parecen deberian contar (regalos, manutencion infantil, SSI) legalmente no cuentan."
+    },
+    {
+      "en": "2026 ACA subsidy rules break down into what counts as income, what does not, whose income in the household counts, and why the return of the 400% federal poverty level subsidy cliff in 2026 makes an accurate MAGI estimate more important than it has been in years. MAGI drives subsidy size only; it does not affect whether an ACA-compliant plan covers the 10 essential health benefits categories or whether a preexisting condition can be used to deny coverage, since both are guaranteed regardless of income. For the Medicaid version of this question, see [what counts as income for Medicaid](/en/qa/what-counts-as-income-for-medicaid). Check [Medicaid income limits](/en/medicaid-income-limits) if your income is closer to that threshold.",
+      "es": "Las reglas de subsidio ACA de 2026 se dividen en que cuenta como ingreso, que no cuenta, de quien en el hogar cuenta el ingreso, y por que el regreso del limite del 400% del nivel federal de pobreza en 2026 hace que una estimacion precisa de MAGI sea mas importante que en años anteriores."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Income Type", "Counted in MAGI?", "Examples", "2026 Notes"],
+      "es": ["Tipo de Ingreso", "¿Cuenta en MAGI?", "Ejemplos", "Notas 2026"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Wages, salaries, tips", "es": "Salarios, sueldos, propinas" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "W-2 income before pre-tax deductions are removed", "es": "Ingreso W-2 antes de deducciones antes de impuestos" },
+          { "en": "Reported on Form 1040 line 1", "es": "Reportado en el Formulario 1040 línea 1" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Self-employment / 1099 income", "es": "Trabajo independiente / ingreso 1099" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Net profit after deductible business expenses", "es": "Ganancia neta después de gastos comerciales deducibles" },
+          { "en": "Use Schedule C net income, not gross receipts", "es": "Use ingreso neto del Anexo C, no ingresos brutos" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Social Security benefits", "es": "Beneficios del Seguro Social" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Retirement, disability (SSDI), and survivor benefits", "es": "Jubilación, discapacidad (SSDI) y beneficios de sobreviviente" },
+          { "en": "Full amount counts, including the non-taxable portion", "es": "Cuenta el monto total, incluida la porción no gravable" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Unemployment compensation", "es": "Compensación por desempleo" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "State unemployment insurance benefits", "es": "Beneficios de seguro de desempleo estatal" },
+          { "en": "Counts in full for 2026 MAGI purposes", "es": "Cuenta completamente para efectos de MAGI 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Tax-exempt interest and capital gains", "es": "Intereses exentos y ganancias de capital" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Municipal bond interest, stock and property sale gains", "es": "Intereses de bonos municipales, ganancias por venta de acciones y propiedad" },
+          { "en": "Tax-exempt interest is added back to AGI to reach MAGI", "es": "El interés exento se suma de nuevo al AGI para llegar a MAGI" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Taxable pension and retirement distributions", "es": "Distribuciones de pensión y jubilación gravables" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "IRA and 401(k) withdrawals, taxable pension income", "es": "Retiros de IRA y 401(k), ingreso de pensión gravable" },
+          { "en": "Only the taxable portion counts; return of basis does not", "es": "Solo cuenta la porción gravable; el retorno de capital no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "SSI, child support, gifts, inheritances", "es": "SSI, manutención infantil, regalos, herencias" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" },
+          { "en": "Supplemental Security Income, support payments, one-time gifts", "es": "Ingreso Suplementario de Seguridad, pagos de manutención, regalos únicos" },
+          { "en": "Excluded from MAGI under federal Marketplace rules", "es": "Excluido de MAGI bajo reglas federales del Mercado" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "MAGI for ACA subsidies is IRS adjusted gross income (AGI) plus any tax-exempt interest, non-taxable Social Security, and excluded foreign income. It is calculated the same way for premium tax credits and cost-sharing reductions, and is close to (but not identical to) the MAGI Medicaid uses for eligibility.",
+      "es": "El MAGI para subsidios ACA es el ingreso bruto ajustado (AGI) del IRS más cualquier interés exento de impuestos, Seguro Social no gravable e ingreso extranjero excluido. Se calcula igual para créditos fiscales para primas y reducciones de costos compartidos, y es cercano (pero no idéntico) al MAGI que usa Medicaid."
+    },
+    "source": "HealthCare.gov Income and Household Information, IRS Publication 974, KFF Marketplace MAGI FAQ 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: What Counts as Income for ACA Subsidies",
+        "es": "Respuesta Directa: Qué Cuenta Como Ingreso para Subsidios ACA"
+      },
+      "paragraphs": [
+        {
+          "en": "Depends on the income source. ACA subsidies use Modified Adjusted Gross Income (MAGI), which counts wages, self-employment income, Social Security benefits, unemployment pay, tax-exempt interest, and capital gains. MAGI excludes SSI, child support, gifts, and pre-tax payroll deductions. The Marketplace totals MAGI for everyone in your tax household required to file, then compares it to the 2025 federal poverty guidelines used for 2026 coverage. Income above 400% of the federal poverty level gets no premium tax credit in 2026.",
+          "es": "Depende de la fuente del ingreso. Los subsidios ACA usan el Ingreso Bruto Ajustado Modificado (MAGI), que cuenta salarios, ingreso por trabajo independiente, beneficios del Seguro Social, pago por desempleo, intereses exentos y ganancias de capital. MAGI excluye SSI, manutención infantil, regalos y deducciones de nómina antes de impuestos. El Mercado totaliza el MAGI de todos en su hogar fiscal obligados a declarar."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Counts as Income: The 2026 MAGI Formula",
+        "es": "Qué Cuenta Como Ingreso: La Fórmula MAGI de 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "MAGI starts with adjusted gross income (AGI), the number on Form 1040 line 11, and adds back three items: tax-exempt interest, non-taxable Social Security benefits, and excluded foreign earned income. For most households filing a simple return, MAGI and AGI end up close to the same number because the add-backs are small or zero. For 2026 ACA subsidy purposes, the following all count as income:",
+          "es": "MAGI comienza con el ingreso bruto ajustado (AGI), el número en la línea 11 del Formulario 1040, y suma tres elementos: intereses exentos de impuestos, beneficios del Seguro Social no gravables e ingreso extranjero ganado excluido. Para la mayoría de los hogares que presentan una declaración simple, MAGI y AGI terminan siendo casi el mismo número."
+        }
+      ],
+      "list": [
+        { "en": "Wages, salaries, tips, and bonuses reported on a W-2, before any pre-tax deductions are removed by an employer.", "es": "Salarios, sueldos, propinas y bonos reportados en un W-2, antes de que se remuevan las deducciones antes de impuestos." },
+        { "en": "Net self-employment or 1099 / gig income, meaning revenue minus deductible business expenses (Schedule C or Schedule SE net earnings).", "es": "Ingreso neto de trabajo independiente o 1099 / gig, es decir, ingresos menos gastos comerciales deducibles." },
+        { "en": "Social Security retirement, disability (SSDI), and survivor benefits, counted in full even though only part may be taxable.", "es": "Beneficios de jubilación, discapacidad (SSDI) y sobreviviente del Seguro Social, contados en su totalidad." },
+        { "en": "Unemployment compensation paid by a state agency.", "es": "Compensación por desempleo pagada por una agencia estatal." },
+        { "en": "Interest and dividends, including tax-exempt municipal bond interest that is added back for MAGI even though it is not taxed.", "es": "Intereses y dividendos, incluidos intereses de bonos municipales exentos que se suman de nuevo para MAGI." },
+        { "en": "Capital gains from selling stock, a second home, or other investment property.", "es": "Ganancias de capital por la venta de acciones, una segunda vivienda u otra propiedad de inversión." },
+        { "en": "Rental income and the taxable portion of pensions, annuities, and retirement account withdrawals.", "es": "Ingreso por alquiler y la porción gravable de pensiones, anualidades y retiros de cuentas de jubilación." },
+        { "en": "Alimony received, but only for divorce agreements finalized before January 1, 2019.", "es": "Manutención conyugal recibida, pero solo para acuerdos de divorcio finalizados antes del 1 de enero de 2019." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Does NOT Count as Income for ACA Subsidies",
+        "es": "Qué NO Cuenta Como Ingreso para Subsidios ACA"
+      },
+      "paragraphs": [
+        {
+          "en": "Several income sources that feel like money in the household budget are explicitly excluded from MAGI because federal Marketplace rules follow the IRS definition of taxable income rather than a broader cash-flow definition. Excluding an item does not mean it is hidden or ignored elsewhere; it simply is not added to the MAGI figure used to size a 2026 premium tax credit.",
+          "es": "Varias fuentes de ingreso que parecen dinero en el presupuesto del hogar están explícitamente excluidas de MAGI porque las reglas federales del Mercado siguen la definición del IRS de ingreso gravable en lugar de una definición más amplia de flujo de efectivo."
+        }
+      ],
+      "list": [
+        { "en": "Supplemental Security Income (SSI), which is a needs-based federal benefit, not Social Security retirement or disability income.", "es": "Ingreso Suplementario de Seguridad (SSI), que es un beneficio federal basado en necesidad, no jubilación o discapacidad del Seguro Social." },
+        { "en": "Child support received.", "es": "Manutención infantil recibida." },
+        { "en": "Gifts, inheritances, and life insurance payouts.", "es": "Regalos, herencias y pagos de seguro de vida." },
+        { "en": "Veterans disability benefits and workers' compensation.", "es": "Beneficios por discapacidad de veteranos y compensación laboral." },
+        { "en": "Pre-tax payroll deductions: 401(k) or 403(b) contributions, employer health insurance premiums, and health savings account (HSA) contributions taken out before wages are reported.", "es": "Deducciones de nómina antes de impuestos: contribuciones 401(k) o 403(b), primas de seguro de salud del empleador y contribuciones a cuenta de ahorro de salud (HSA)." },
+        { "en": "Federal financial aid used for tuition, and most scholarship or grant money used directly for education expenses.", "es": "Ayuda financiera federal usada para matrícula, y la mayoría del dinero de becas usado directamente para gastos educativos." },
+        { "en": "SNAP, TANF, and housing assistance benefits.", "es": "Beneficios de SNAP, TANF y asistencia de vivienda." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Whose Income Counts: Household MAGI, Not Just Yours",
+        "es": "De Quién Cuenta el Ingreso: MAGI del Hogar, No Solo el Suyo"
+      },
+      "paragraphs": [
+        {
+          "en": "The 2026 Marketplace application does not ask for the income of the person who is applying alone. It asks for the combined MAGI of every person in the tax household: the tax filer, the filer's spouse if filing jointly, and any tax dependents who are required to file their own return because their income exceeds the IRS filing threshold. A dependent's income below the filing threshold, such as a teenager's part-time summer job, is not added to household MAGI even though that person is on the same Marketplace application.",
+          "es": "La solicitud del Mercado de 2026 no pide solo el ingreso de la persona que solicita. Pide el MAGI combinado de cada persona en el hogar fiscal: el declarante, el cónyuge si presenta conjuntamente, y cualquier dependiente fiscal obligado a presentar su propia declaración porque su ingreso excede el umbral de presentación del IRS."
+        },
+        {
+          "en": "Because the Marketplace uses projected annual income for the full 2026 plan year rather than last year's tax return, applicants must estimate income going forward: a raise starting in March, a new job, or expected freelance contracts all need to be built into the estimate. Reporting a life change like a new job or marriage through HealthCare.gov as soon as it happens keeps the subsidy amount accurate and avoids a large repayment when the household reconciles income on Form 8962 at tax time.",
+          "es": "Debido a que el Mercado usa el ingreso anual proyectado para todo el año del plan 2026 en lugar de la declaración de impuestos del año anterior, los solicitantes deben estimar el ingreso futuro. Reportar un cambio de vida como un nuevo empleo o matrimonio a través de HealthCare.gov tan pronto como ocurra mantiene el monto del subsidio preciso."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The 400% FPL Subsidy Cliff Returns for 2026",
+        "es": "El Límite de Subsidio del 400% FPL Regresa para 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "For 2026 plan-year coverage, ACA Marketplace applications compare a household's MAGI against the 2025 federal poverty guidelines, which set the poverty line at $15,650 for a household of one and $32,150 for a household of four in the 48 contiguous states and DC. The enhanced premium tax credits created by the American Rescue Plan and extended through the Inflation Reduction Act expired on January 1, 2026, so the original ACA subsidy structure is back for 2026: households between 100% and 400% of the federal poverty level qualify for a premium tax credit, and households above 400% FPL get zero subsidy, no matter how small the overage.",
+          "es": "Para la cobertura del año 2026, las solicitudes del Mercado ACA comparan el MAGI de un hogar contra las pautas federales de pobreza de 2025, que fijan la línea de pobreza en $15,650 para un hogar de una persona y $32,150 para un hogar de cuatro en los 48 estados contiguos y DC. Los créditos fiscales mejorados creados por el Plan de Rescate Americano y extendidos a través de la Ley de Reducción de la Inflación expiraron el 1 de enero de 2026."
+        },
+        {
+          "en": "In dollar terms for 2026, 400% of the federal poverty level is $62,600 in MAGI for a household of one and $128,600 for a household of four. Under the applicable percentage table in IRS Rev. Proc. 2025-25, households pay roughly 2.10% of income toward the benchmark plan premium near 100% FPL, rising to close to 9.96% of income near 400% FPL, before the credit picks up the rest. Cross the 400% line by even one dollar of MAGI and the entire premium tax credit disappears for that plan year, which is why an accurate income estimate matters more in 2026 than it did while the enhanced credits were in effect.",
+          "es": "En términos de dólares para 2026, el 400% del nivel federal de pobreza es $62,600 de MAGI para un hogar de una persona y $128,600 para un hogar de cuatro. Bajo la tabla de porcentaje aplicable del IRS, los hogares pagan aproximadamente 2.10% del ingreso cerca del 100% FPL, subiendo a casi 9.96% cerca del 400% FPL, antes de que el crédito cubra el resto."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "If Your Income Is Hard to Predict: Self-Employed, Gig, and Seasonal Workers",
+        "es": "Si Su Ingreso Es Difícil de Predecir: Trabajadores Independientes, Gig y Temporales"
+      },
+      "paragraphs": [
+        {
+          "en": "Self-employed applicants, gig workers, and seasonal employees do not have a W-2 to project from, so the 2026 Marketplace application asks for a best estimate based on prior-year tax returns, current contracts, and expected business expenses. Overestimating income leads to a smaller monthly credit than necessary; underestimating leads to owing money back at tax time on Form 8962 if actual MAGI ends up higher than projected.",
+          "es": "Los solicitantes independientes, trabajadores gig y empleados temporales no tienen un W-2 del cual proyectar, así que la solicitud del Mercado de 2026 pide una mejor estimación basada en declaraciones de impuestos del año anterior, contratos actuales y gastos comerciales esperados."
+        },
+        {
+          "en": "Three practical steps reduce the risk of a large reconciliation bill. First, use net self-employment income (after deductible expenses), not gross revenue, when entering an estimate. Second, update the income estimate on HealthCare.gov whenever a contract ends, a new client starts, or seasonal work changes, rather than waiting for open enrollment. Third, keep a running log of 1099 income and expenses throughout 2026 so the year-end Schedule C matches what was reported to the Marketplace as closely as possible.",
+          "es": "Tres pasos prácticos reducen el riesgo de una gran factura de reconciliación. Primero, use el ingreso neto de trabajo independiente, no los ingresos brutos, al ingresar una estimación. Segundo, actualice la estimación de ingresos en HealthCare.gov cuando cambie el trabajo. Tercero, mantenga un registro de ingresos y gastos 1099 durante 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How This Differs from Medicare's Income Rules (IRMAA)",
+        "es": "En Qué Se Diferencia de las Reglas de Ingreso de Medicare (IRMAA)"
+      },
+      "paragraphs": [
+        {
+          "en": "MAGI is not exclusive to the ACA Marketplace. Original Medicare uses a similar but separate calculation to decide the Income-Related Monthly Adjustment Amount (IRMAA), an income-based surcharge added to Medicare Part B and Medicare Part D premiums for higher earners. Medicare's IRMAA MAGI looks back two tax years (2026 premiums use 2024 tax return MAGI) and includes the same core categories: wages, capital gains, taxable Social Security, and tax-exempt interest.",
+          "es": "MAGI no es exclusivo del Mercado ACA. Medicare Original usa un cálculo similar pero separado para decidir el Monto de Ajuste Mensual Relacionado con el Ingreso (IRMAA), un recargo basado en ingresos agregado a las primas de Medicare Parte B y Medicare Parte D para personas con ingresos más altos."
+        },
+        {
+          "en": "The practical difference matters for people approaching age 65: Medicare Part A is premium-free for most beneficiaries and carries no IRMAA surcharge, Medicare Advantage plan premiums can also carry a Part D IRMAA surcharge if the underlying plan includes drug coverage, and Medigap premiums are not income-adjusted at all. Someone leaving ACA Marketplace coverage for Original Medicare should not assume the MAGI figure that determined their 2026 premium tax credit will be the same figure Medicare uses for IRMAA two years later; each program calculates and looks back independently.",
+          "es": "La diferencia práctica importa para las personas que se acercan a los 65 años: las primas de los planes Medicare Advantage también pueden llevar un recargo IRMAA de la Parte D, mientras que las primas de Medigap no se ajustan por ingreso en absoluto."
+        }
+      ]
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Gather last year's tax return and current pay stubs, 1099s, or profit-and-loss statements to build a MAGI estimate for the full 2026 plan year.", "es": "Paso 1: Reúna la declaración de impuestos del año pasado y talones de pago actuales, 1099 o estados de pérdidas y ganancias para construir una estimación de MAGI para el año del plan 2026." },
+      { "en": "Step 2: Create or log into your HealthCare.gov account (or your state-based Marketplace account) and start or update your application.", "es": "Paso 2: Cree o inicie sesión en su cuenta de HealthCare.gov (o la cuenta de su Mercado estatal) y comience o actualice su solicitud." },
+      { "en": "Step 3: Enter projected annual MAGI for every tax household member required to file, including wages, self-employment net income, Social Security, and investment income.", "es": "Paso 3: Ingrese el MAGI anual proyectado para cada miembro del hogar fiscal obligado a declarar." },
+      { "en": "Step 4: Review the premium tax credit estimate the Marketplace calculates and compare it against the 2025 federal poverty guidelines shown on the application.", "es": "Paso 4: Revise la estimación del crédito fiscal para primas que calcula el Mercado y compárela con las pautas de pobreza federal de 2025." },
+      { "en": "Step 5: Report any income change (new job, raise, lost contract, marriage) during the year through your Marketplace account to keep the subsidy accurate and avoid a repayment surprise on Form 8962.", "es": "Paso 5: Reporte cualquier cambio de ingreso durante el año a través de su cuenta del Mercado para mantener el subsidio preciso y evitar una sorpresa de reembolso en el Formulario 8962." }
+    ],
+    "govStartingUrl": "https://www.healthcare.gov/income-and-household-information/income/",
+    "documentsNeeded": [
+      { "en": "Most recent federal tax return (Form 1040) for everyone in the tax household", "es": "Declaración de impuestos federal más reciente (Formulario 1040) de todos en el hogar fiscal" },
+      { "en": "Recent pay stubs or a wage and income statement", "es": "Talones de pago recientes o un estado de salario e ingresos" },
+      { "en": "1099 forms or a profit-and-loss statement for self-employment income", "es": "Formularios 1099 o un estado de pérdidas y ganancias para ingreso de trabajo independiente" },
+      { "en": "Social Security award letter showing monthly benefit amount", "es": "Carta de adjudicación del Seguro Social que muestra el monto mensual del beneficio" },
+      { "en": "Documentation of any expected income changes for the 2026 plan year", "es": "Documentación de cualquier cambio de ingreso esperado para el año del plan 2026" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Estimated MAGI is entered as gross revenue instead of net self-employment income, overstating income and understating the subsidy", "es": "El MAGI estimado se ingresa como ingreso bruto en lugar de ingreso neto de trabajo independiente" },
+      { "en": "A tax dependent's income is left out even though it exceeds the IRS filing threshold and should count toward household MAGI", "es": "Se omite el ingreso de un dependiente fiscal aunque exceda el umbral de presentación del IRS" },
+      { "en": "Non-taxable Social Security or tax-exempt interest is left off the application, understating MAGI", "es": "El Seguro Social no gravable o los intereses exentos se omiten de la solicitud, subestimando el MAGI" },
+      { "en": "Income is reported using last year's tax return instead of a current-year projection, missing a raise, new job, or lost income", "es": "El ingreso se reporta usando la declaración del año pasado en lugar de una proyección del año actual" }
+    ],
+    "deadline": { "en": "Open Enrollment for 2026 coverage ran November 1, 2025 through January 15, 2026; income changes can be reported year-round through a Special Enrollment Period", "es": "La Inscripción Abierta para la cobertura de 2026 fue del 1 de noviembre de 2025 al 15 de enero de 2026; los cambios de ingreso se pueden reportar todo el año" }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Does Social Security count as income for ACA subsidies in 2026?",
+        "answer": "Yes. Social Security retirement, disability (SSDI), and survivor benefits all count toward MAGI in full, including the portion that is not federally taxable. This is different from Supplemental Security Income (SSI), which is a separate needs-based program and does not count toward MAGI at all."
+      },
+      {
+        "question": "Does child support count as income for ACA subsidies?",
+        "answer": "No. Child support received is excluded from MAGI under federal Marketplace rules because it is not taxable income under IRS rules. Alimony received also does not count toward MAGI for divorce agreements finalized on or after January 1, 2019, though pre-2019 alimony agreements still count."
+      },
+      {
+        "question": "Do 401(k) contributions lower my MAGI for ACA subsidies?",
+        "answer": "Yes, indirectly. Pre-tax 401(k) and traditional IRA contributions reduce your adjusted gross income (AGI) before MAGI is calculated, which lowers your reported MAGI and can increase your 2026 premium tax credit. Roth 401(k) and Roth IRA contributions do not reduce MAGI because they are made with after-tax dollars."
+      },
+      {
+        "question": "What income do I use for ACA subsidies if I'm self-employed?",
+        "answer": "Use net self-employment income, meaning gross business revenue minus deductible business expenses, as reported on Schedule C. The Marketplace wants a projection of 2026 net income, not last year's actual net income, so update the estimate whenever contracts, clients, or expenses change materially during the year."
+      },
+      {
+        "question": "Does unemployment compensation count toward ACA subsidy income?",
+        "answer": "Yes. All state unemployment insurance benefits count in full toward MAGI for 2026 ACA subsidy purposes. This is unchanged from prior years; the temporary unemployment-income exclusion that applied only to 2020 tax returns is not in effect for 2026."
+      },
+      {
+        "question": "What happens if I estimate my 2026 income wrong for ACA subsidies?",
+        "answer": "You reconcile the difference on IRS Form 8962 when you file your 2026 tax return. If your actual MAGI ends up lower than estimated, you may get an additional credit as a tax refund. If actual MAGI is higher than estimated, especially if it crosses the 400% federal poverty level line, you may have to repay some or all of the premium tax credit you received."
+      },
+      {
+        "question": "Is the income Medicaid counts the same as the income the ACA Marketplace counts?",
+        "answer": "Mostly yes, but not always. Both Medicaid and the ACA Marketplace use MAGI-based methodology for most applicants, but Medicaid has additional state-specific rules and some populations (people over 65, people with disabilities applying through non-MAGI pathways) use a different, older income and asset test that the Marketplace does not use."
+      },
+      {
+        "question": "Does MAGI for ACA subsidies differ from MAGI for Medicare IRMAA?",
+        "answer": "Yes. Both start from adjusted gross income plus tax-exempt interest, but Medicare's Income-Related Monthly Adjustment Amount (IRMAA) for Medicare Part B and Medicare Part D premiums looks back two tax years, while ACA Marketplace MAGI uses a current-year projected estimate. A household's 2026 ACA subsidy MAGI and a Medicare enrollee's 2026 IRMAA MAGI (based on a 2024 tax return) are calculated independently and can differ significantly."
+      },
+      {
+        "question": "Does a preexisting condition change how income is counted for ACA subsidies?",
+        "answer": "No. MAGI-based premium tax credit eligibility is entirely separate from health status. ACA-compliant Marketplace plans must guarantee-issue coverage and cannot charge more, deny enrollment, or exclude essential health benefits because of a preexisting condition. Income determines only the size of the subsidy, not whether a plan will cover you."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿El Seguro Social cuenta como ingreso para los subsidios ACA en 2026?",
+        "answer": "Sí. Los beneficios de jubilación, discapacidad (SSDI) y sobreviviente del Seguro Social cuentan en su totalidad hacia el MAGI, incluida la porción no gravable federalmente. Esto es diferente del Ingreso Suplementario de Seguridad (SSI), que es un programa separado basado en necesidad y no cuenta hacia el MAGI en absoluto."
+      },
+      {
+        "question": "¿La manutención infantil cuenta como ingreso para los subsidios ACA?",
+        "answer": "No. La manutención infantil recibida está excluida del MAGI bajo las reglas federales del Mercado porque no es ingreso gravable según las reglas del IRS. La manutención conyugal recibida tampoco cuenta para acuerdos de divorcio finalizados a partir del 1 de enero de 2019."
+      },
+      {
+        "question": "¿Las contribuciones al 401(k) reducen mi MAGI para los subsidios ACA?",
+        "answer": "Sí, indirectamente. Las contribuciones antes de impuestos al 401(k) y a la IRA tradicional reducen su ingreso bruto ajustado (AGI) antes de que se calcule el MAGI, lo que reduce su MAGI reportado y puede aumentar su crédito fiscal para primas de 2026."
+      },
+      {
+        "question": "¿Qué ingreso uso para los subsidios ACA si soy independiente?",
+        "answer": "Use el ingreso neto de trabajo independiente, es decir, los ingresos brutos del negocio menos los gastos comerciales deducibles, como se reporta en el Anexo C. El Mercado quiere una proyección del ingreso neto de 2026, no el ingreso neto real del año pasado."
+      },
+      {
+        "question": "¿La compensación por desempleo cuenta hacia el ingreso de subsidio ACA?",
+        "answer": "Sí. Todos los beneficios de seguro de desempleo estatal cuentan en su totalidad hacia el MAGI para efectos de subsidio ACA de 2026. Esto no ha cambiado respecto a años anteriores."
+      },
+      {
+        "question": "¿Qué pasa si estimo mal mi ingreso de 2026 para los subsidios ACA?",
+        "answer": "Usted reconcilia la diferencia en el Formulario 8962 del IRS cuando presenta su declaración de impuestos de 2026. Si su MAGI real termina siendo menor al estimado, puede recibir un crédito adicional como reembolso de impuestos. Si es mayor, especialmente si cruza la línea del 400% del nivel federal de pobreza, puede tener que devolver parte o todo el crédito fiscal para primas recibido."
+      },
+      {
+        "question": "¿El ingreso que cuenta Medicaid es el mismo que el ingreso que cuenta el Mercado ACA?",
+        "answer": "En su mayoría sí, pero no siempre. Tanto Medicaid como el Mercado ACA usan metodología basada en MAGI para la mayoría de los solicitantes, pero Medicaid tiene reglas adicionales específicas del estado y algunas poblaciones usan una prueba de ingreso y activos diferente y más antigua que el Mercado no usa."
+      },
+      {
+        "question": "¿El MAGI para subsidios ACA difiere del MAGI para IRMAA de Medicare?",
+        "answer": "Sí. Ambos comienzan con el ingreso bruto ajustado más los intereses exentos de impuestos, pero el Monto de Ajuste Mensual Relacionado con el Ingreso (IRMAA) de Medicare para las primas de la Parte B y Parte D mira dos años fiscales atrás, mientras que el MAGI del Mercado ACA usa una estimación proyectada del año actual."
+      },
+      {
+        "question": "¿Una condición preexistente cambia cómo se cuenta el ingreso para subsidios ACA?",
+        "answer": "No. La elegibilidad del crédito fiscal para primas basada en MAGI es completamente separada del estado de salud. Los planes del Mercado que cumplen con ACA deben emitir cobertura garantizada y no pueden cobrar más, negar la inscripción, ni excluir beneficios esenciales de salud por una condición preexistente. El ingreso determina solo el tamaño del subsidio, no si un plan lo cubrirá."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "MAGI vs. AGI Explained", "es": "MAGI vs. AGI Explicado" },
+      "href": "/glossary/magi-vs-agi"
+    },
+    {
+      "label": { "en": "What Counts as Income for Medicaid", "es": "Qué Cuenta Como Ingreso para Medicaid" },
+      "href": "/qa/what-counts-as-income-for-medicaid"
+    },
+    {
+      "label": { "en": "2026 Federal Poverty Level Guidelines", "es": "Pautas del Nivel Federal de Pobreza 2026" },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": { "en": "Check Your Subsidy Eligibility", "es": "Verifique Su Elegibilidad de Subsidio" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: What's Included as Income",
+      "url": "https://www.healthcare.gov/income-and-household-information/income/",
+      "note": {
+        "en": "Official Marketplace guidance on MAGI, what income counts, and how household income is calculated for 2026 premium tax credits.",
+        "es": "Guía oficial del Mercado sobre MAGI, qué ingreso cuenta y cómo se calcula el ingreso del hogar para los créditos fiscales para primas de 2026."
+      }
+    },
+    {
+      "name": "KFF: What Income Is Counted in Determining Eligibility for Premium Tax Credits",
+      "url": "https://www.kff.org/faqs/faqs-health-insurance-marketplace-and-the-aca/help-paying-marketplace-premiums-defining-income-and-household/what-income-is-counted-in-determining-my-eligibility-for-premium-tax-credits/",
+      "note": {
+        "en": "KFF explainer on MAGI-based income counting for ACA Marketplace subsidies, including the 400% FPL cliff for 2026.",
+        "es": "Explicación de KFF sobre el conteo de ingreso basado en MAGI para subsidios del Mercado ACA, incluido el límite del 400% FPL para 2026."
+      }
+    },
+    {
+      "name": "ASPE: 2025 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "HHS federal poverty guidelines for 2025, the baseline year used by 2026 plan-year ACA Marketplace subsidy calculations.",
+        "es": "Pautas federales de pobreza de HHS para 2025, el año base usado por los cálculos de subsidio del Mercado ACA para el año del plan 2026."
+      }
+    },
+    {
+      "name": "IRS: Rev. Proc. 2025-25 (Premium Tax Credit Applicable Percentage Table)",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-25.pdf",
+      "note": {
+        "en": "IRS revenue procedure setting the 2026 applicable percentage table used to calculate premium tax credit amounts by income tier.",
+        "es": "Procedimiento de ingresos del IRS que establece la tabla de porcentaje aplicable de 2026 usada para calcular los montos de crédito fiscal para primas."
+      }
+    }
+  ]
+}
