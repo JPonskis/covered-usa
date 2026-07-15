@@ -277,11 +277,15 @@ function routeForSlug(oldRoute, actualSlug) {
 }
 
 // Run the prebuild validators for the templates we're about to ship and return
-// the SET of slugs flagged bad (❌). A flagged page would fail `npm run build`'s
+// a Map of slug -> its ❌ error lines. A flagged page would fail `npm run build`'s
 // prebuild step and break the entire Vercel deploy, so it must never reach main.
 // The validators scan all files of a type; we only act on the slugs WE promoted.
+// The error lines matter: they ride back to the sheet in the held note so the
+// regenerating writer knows WHAT failed. Before 2026-07-15 the note said only
+// "sent to regenerate" and the cloud writer reproduced the same defect daily
+// (oregon.json looped for 3 days on 8 missing es strings it was never told about).
 function validatePromotedSlugs(rows) {
-  const flagged = new Set();
+  const flagged = new Map(); // slug -> [error strings]
   const validators = new Set(
     rows.map(r => VALIDATOR_FOR[(r.template || '').trim()]).filter(Boolean)
   );
@@ -292,9 +296,17 @@ function validatePromotedSlugs(rows) {
     } catch (e) {
       out = `${e.stdout || ''}\n${e.stderr || ''}`; // validator exits non-zero on bad files
     }
+    let current = null; // slug whose indented "- error" lines we're collecting
     for (const line of out.split('\n')) {
       const m = line.match(/❌\s+([A-Za-z0-9._-]+)\.json/);
-      if (m) flagged.add(m[1]);
+      if (m) {
+        current = m[1];
+        if (!flagged.has(current)) flagged.set(current, []);
+        continue;
+      }
+      const err = line.match(/^\s+-\s+(.*)/);
+      if (current && err) flagged.get(current).push(err[1].trim());
+      else if (current && line.trim() && !err) current = null; // left the error block
     }
   }
   return flagged;
@@ -486,13 +498,21 @@ async function markPublished(sheets, shipped) {
 
 // Park rows we refused to publish because they fail their validator: revert to
 // blank Status + a held note, so they don't sit falsely Ready and a human/regen
-// can fix them. Status=blank, notes (col R).
+// can fix them. Status=blank, notes (col R). The note MUST carry the concrete
+// validator errors (row._gateErrors) — a bare "sent to regenerate" tells the
+// writer nothing and it will regenerate the identical defect (the oregon loop).
 async function markHeld(sheets, rows, reason) {
   if (!rows.length) return;
   const data = [];
   for (const row of rows) {
+    let note = `held ${TODAY}: ${reason}`;
+    if (row._gateErrors && row._gateErrors.length) {
+      // Cap the cell at ~900 chars so a pathological validator dump stays readable.
+      const detail = row._gateErrors.join(' | ');
+      note = `held ${TODAY}: FAILED BUILD GATE — fix exactly this: ${detail}`.slice(0, 900);
+    }
     data.push({ range: `${MASTER_TAB}!S${row._sheetRow}`, values: [['']] });
-    data.push({ range: `${MASTER_TAB}!R${row._sheetRow}`, values: [[`held ${TODAY}: ${reason}`]] });
+    data.push({ range: `${MASTER_TAB}!R${row._sheetRow}`, values: [[note]] });
   }
   await sheets.spreadsheets.values.batchUpdate({
     spreadsheetId: SHEET_ID,
@@ -719,6 +739,7 @@ async function main() {
         for (const row of shipReady) {
           if (gate.validatorBad.has(row._actualSlug)) {
             try { execSync(`git restore --staged --worktree -- "${row._relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (e) { /* best effort */ }
+            row._gateErrors = gate.validatorBad.get(row._actualSlug) || [];
             validationFailed.push(row);
             skipped.push({ row, reason: `needs rewrite → sent to regenerate: ${row._relPath}` });
           } else {
@@ -738,6 +759,9 @@ async function main() {
       if (finalGate.validatorBad.size || finalGate.collisionPhrases.length) {
         for (const row of shipReady) {
           try { execSync(`git restore --staged --worktree -- "${row._relPath}"`, { cwd: REPO_ROOT, stdio: 'ignore' }); } catch (e) { /* best effort */ }
+          if (finalGate.validatorBad.has(row._actualSlug)) {
+            row._gateErrors = finalGate.validatorBad.get(row._actualSlug) || [];
+          }
           validationFailed.push(row);
         }
         shipReady.length = 0;

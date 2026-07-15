@@ -138,9 +138,17 @@ Model: pick a strong model (the agents do real research). Network: **Full**. Rep
 > SUBTYPE: <subtype if the writer_args include one, else omit>
 > YEAR: 2026
 > OUTPUT_FILE: <output_file_absolute>
-> Follow your full pipeline (research -> draft JSON -> all GATES -> atomic write). Use $HOME/clawd
+> PRIOR_FAILURE: <prior_failure from the pick output, ONLY if non-empty, else omit the line>
+> Follow your full pipeline (research -> draft JSON -> all GATES -> atomic write). If PRIOR_FAILURE
+> is present, a previous attempt at this exact page was REJECTED by the publish build gate for the
+> reason quoted — fix that specific defect (e.g. add the named missing es translations) and
+> double-check that class of error across the whole file before writing. Use $HOME/clawd
 > paths as your agent instructions specify. End with your STEP 8 one-line JSON result.
 > ```
+>
+> (`prior_failure` is populated by batch-pick from the row's "held YYYY-MM-DD: ..." note. Without
+> this line the writer regenerates blind and reproduces the identical defect — oregon.json looped
+> for 3 days this way, 2026-07-11..15.)
 >
 > 3b. When the wave's writers finish, for every writer that returned status=success AND whose
 > OUTPUT_FILE exists on disk, spawn the matching verifier in PARALLEL (the writer agents cannot spawn

@@ -128,6 +128,11 @@ function buildRowObject(COL, row) {
     status: get('Status'),
     subtype,
     cta_target: get('cta_target'),
+    // A prior "held YYYY-MM-DD: ..." note means the publisher's build gate
+    // rejected an earlier attempt. Surface it so the orchestrator can tell the
+    // writer WHAT failed — without this, the writer regenerates blind and
+    // reproduces the identical defect (oregon.json looped 3 days, 2026-07-11..15).
+    prior_failure: /^held \d{4}-\d{2}-\d{2}:/.test((get('notes') || '').trim()) ? (get('notes') || '').trim() : '',
     writer_agent: config.agent,
     output_file: `${config.subdir}/${slug}.json`,
     output_file_absolute: path.join(COVERED_USA_ROOT, config.subdir, `${slug}.json`),
