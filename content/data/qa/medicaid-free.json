@@ -1,5 +1,5 @@
 {
-  "slug": "is-medicaid-free",
+  "slug": "medicaid-free",
   "question": {
     "en": "Is Medicaid Free in 2026? (Premiums and Copays by State)",
     "es": "¿Medicaid Es Gratis en 2026? (Primas y Copagos por Estado)"
@@ -22,12 +22,23 @@
   "readingTime": "9 min read",
   "topicCluster": "medicaid-coverage",
   "keyTerms": {
-    "en": ["is medicaid free 2026", "medicaid premiums and copays 2026", "medicaid cost sharing by state 2026", "does medicaid have monthly premiums", "medicaid 5 percent income cap"],
-    "es": ["medicaid es gratis 2026", "primas y copagos de medicaid 2026", "costos compartidos de medicaid por estado 2026", "medicaid tiene primas mensuales", "limite del 5 por ciento de medicaid"]
+    "en": [
+      "is medicaid free 2026",
+      "medicaid premiums and copays 2026",
+      "medicaid cost sharing by state 2026",
+      "does medicaid have monthly premiums",
+      "medicaid 5 percent income cap"
+    ],
+    "es": [
+      "medicaid es gratis 2026",
+      "primas y copagos de medicaid 2026",
+      "costos compartidos de medicaid por estado 2026",
+      "medicaid tiene primas mensuales",
+      "limite del 5 por ciento de medicaid"
+    ]
   },
   "isLighthouse": false,
   "isDeprecated": false,
-
   "meta": {
     "title": {
       "en": "Is Medicaid Free in 2026? Premiums & Copays by State | CoveredUSA",
@@ -38,14 +49,12 @@
       "es": "¿Medicaid es gratis en 2026? La mayoría paga $0, pero hay copagos nominales ($4 a $75), primas en algunos estados y costos de CHIP. Vea el desglose completo."
     }
   },
-
   "hero": {
     "h1": {
       "en": "Is Medicaid Free in 2026? Premiums and Copays by State",
       "es": "¿Medicaid Es Gratis en 2026? Primas y Copagos por Estado"
     }
   },
-
   "introParagraphs": [
     {
       "en": "Medicaid covers more Americans than any other health program in the country, and one of the most common questions from new enrollees is whether any of that coverage actually costs money. The short answer is that most enrollees pay absolutely nothing: no monthly premium, no copay, no deductible. But Medicaid is not free for every enrollee in every state, and understanding exactly who might owe something in 2026, and how much, keeps you from being surprised by a bill or overpaying a provider who applies the wrong cost-sharing rule.",
@@ -56,59 +65,176 @@
       "es": "Las reglas de costos compartidos de Medicaid se dividen en cinco partes a continuación: quiénes están totalmente exentos, los montos de copago nominal que permite la ley federal en 2026, qué estados cobran primas y bajo qué exenciones, el límite del 5% del ingreso que limita el costo total para todos, y qué hacer si le facturan algo que debería haber sido gratuito. Para un límite de ingresos específico de su estado, consulte los [límites de ingresos de Medicaid](/en/medicaid-income-limits), y vea la [tabla del Nivel Federal de Pobreza 2026](/en/federal-poverty-level) para conocer los números detrás de cada umbral en esta guía."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Enrollee Group", "Premiums Allowed?", "Copays / Cost Sharing", "2026 Notes"],
-      "es": ["Grupo de Inscritos", "¿Se Permiten Primas?", "Copagos / Costos Compartidos", "Notas 2026"]
+      "en": [
+        "Enrollee Group",
+        "Premiums Allowed?",
+        "Copays / Cost Sharing",
+        "2026 Notes"
+      ],
+      "es": [
+        "Grupo de Inscritos",
+        "¿Se Permiten Primas?",
+        "Copagos / Costos Compartidos",
+        "Notas 2026"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Children under 19", "es": "Niños menores de 19 años" },
-          { "value": { "en": "Not allowed", "es": "No se permite" }, "status": "yes" },
-          { "value": { "en": "Fully exempt", "es": "Totalmente exento" }, "status": "yes" },
-          { "en": "No cost ever, per 42 CFR 447.56", "es": "Nunca hay costo, según 42 CFR 447.56" }
+          {
+            "en": "Children under 19",
+            "es": "Niños menores de 19 años"
+          },
+          {
+            "value": {
+              "en": "Not allowed",
+              "es": "No se permite"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Fully exempt",
+              "es": "Totalmente exento"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "No cost ever, per 42 CFR 447.56",
+            "es": "Nunca hay costo, según 42 CFR 447.56"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Pregnant women (pregnancy-related care)", "es": "Mujeres embarazadas (cuidado relacionado con el embarazo)" },
-          { "value": { "en": "Not allowed", "es": "No se permite" }, "status": "yes" },
-          { "value": { "en": "Exempt for pregnancy-related services", "es": "Exento para servicios relacionados con el embarazo" }, "status": "yes" },
-          { "en": "Exemption covers pregnancy plus a 12-month postpartum period", "es": "La exención cubre el embarazo más 12 meses posparto" }
+          {
+            "en": "Pregnant women (pregnancy-related care)",
+            "es": "Mujeres embarazadas (cuidado relacionado con el embarazo)"
+          },
+          {
+            "value": {
+              "en": "Not allowed",
+              "es": "No se permite"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Exempt for pregnancy-related services",
+              "es": "Exento para servicios relacionados con el embarazo"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Exemption covers pregnancy plus a 12-month postpartum period",
+            "es": "La exención cubre el embarazo más 12 meses posparto"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Adults at or below 100% FPL", "es": "Adultos en o por debajo del 100% del FPL" },
-          { "value": { "en": "Not allowed", "es": "No se permite" }, "status": "yes" },
-          { "value": { "en": "Nominal only: $4 outpatient, up to $75 inpatient", "es": "Solo nominal: $4 ambulatorio, hasta $75 hospitalización" }, "status": "partial" },
-          { "en": "$15,960 for one person in 2026; provider cannot deny care for nonpayment", "es": "$15,960 para una persona en 2026; el proveedor no puede negar atención por falta de pago" }
+          {
+            "en": "Adults at or below 100% FPL",
+            "es": "Adultos en o por debajo del 100% del FPL"
+          },
+          {
+            "value": {
+              "en": "Not allowed",
+              "es": "No se permite"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Nominal only: $4 outpatient, up to $75 inpatient",
+              "es": "Solo nominal: $4 ambulatorio, hasta $75 hospitalización"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "$15,960 for one person in 2026; provider cannot deny care for nonpayment",
+            "es": "$15,960 para una persona en 2026; el proveedor no puede negar atención por falta de pago"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Adults 101% to 150% FPL", "es": "Adultos del 101% al 150% del FPL" },
-          { "value": { "en": "Not allowed", "es": "No se permite" }, "status": "yes" },
-          { "value": { "en": "Up to 10% of service cost", "es": "Hasta el 10% del costo del servicio" }, "status": "partial" },
-          { "en": "$16,120 to $23,940 for one person in 2026; still premium-exempt", "es": "$16,120 a $23,940 para una persona en 2026; aún exento de primas" }
+          {
+            "en": "Adults 101% to 150% FPL",
+            "es": "Adultos del 101% al 150% del FPL"
+          },
+          {
+            "value": {
+              "en": "Not allowed",
+              "es": "No se permite"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Up to 10% of service cost",
+              "es": "Hasta el 10% del costo del servicio"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "$16,120 to $23,940 for one person in 2026; still premium-exempt",
+            "es": "$16,120 a $23,940 para una persona en 2026; aún exento de primas"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Adults above 150% FPL (state waiver option)", "es": "Adultos por encima del 150% del FPL (opción de exención estatal)" },
-          { "value": { "en": "States may charge modest monthly premiums", "es": "Los estados pueden cobrar primas mensuales modestas" }, "status": "partial" },
-          { "value": { "en": "Up to 20% of service cost", "es": "Hasta el 20% del costo del servicio" }, "status": "no" },
-          { "en": "Combined premiums plus copays capped at 5% of income in 2026", "es": "Primas más copagos combinados limitados al 5% del ingreso en 2026" }
+          {
+            "en": "Adults above 150% FPL (state waiver option)",
+            "es": "Adultos por encima del 150% del FPL (opción de exención estatal)"
+          },
+          {
+            "value": {
+              "en": "States may charge modest monthly premiums",
+              "es": "Los estados pueden cobrar primas mensuales modestas"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "Up to 20% of service cost",
+              "es": "Hasta el 20% del costo del servicio"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Combined premiums plus copays capped at 5% of income in 2026",
+            "es": "Primas más copagos combinados limitados al 5% del ingreso en 2026"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Institutionalized enrollees (nursing facility)", "es": "Inscritos institucionalizados (centro de enfermería)" },
-          { "value": { "en": "Not applicable", "es": "No aplica" }, "status": "yes" },
-          { "value": { "en": "Patient-pay amount toward cost of care", "es": "Monto de pago del paciente hacia el costo del cuidado" }, "status": "no" },
-          { "en": "A personal needs allowance is protected from the patient-pay amount each month", "es": "Se protege una asignación de necesidades personales del monto de pago del paciente cada mes" }
+          {
+            "en": "Institutionalized enrollees (nursing facility)",
+            "es": "Inscritos institucionalizados (centro de enfermería)"
+          },
+          {
+            "value": {
+              "en": "Not applicable",
+              "es": "No aplica"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Patient-pay amount toward cost of care",
+              "es": "Monto de pago del paciente hacia el costo del cuidado"
+            },
+            "status": "no"
+          },
+          {
+            "en": "A personal needs allowance is protected from the patient-pay amount each month",
+            "es": "Se protege una asignación de necesidades personales del monto de pago del paciente cada mes"
+          }
         ]
       }
     ],
@@ -118,7 +244,6 @@
     },
     "source": "Medicaid.gov Cost Sharing Out of Pocket Costs; 42 CFR 447.52 and 447.56, 2026"
   },
-
   "detailSections": [
     {
       "heading": {
@@ -263,7 +388,6 @@
       ]
     }
   ],
-
   "faqs": {
     "en": [
       {
@@ -334,7 +458,6 @@
       }
     ]
   },
-
   "howToApply": {
     "numberedSteps": [
       {
@@ -400,26 +523,36 @@
       "es": "No hay fecha límite de inscripción para una revisión de costos compartidos; puede solicitar una en cualquier momento a través de la agencia estatal de Medicaid"
     }
   },
-
   "relatedLinks": [
     {
-      "label": { "en": "Medicaid Income Limits by State", "es": "Límites de Ingresos de Medicaid por Estado" },
+      "label": {
+        "en": "Medicaid Income Limits by State",
+        "es": "Límites de Ingresos de Medicaid por Estado"
+      },
       "href": "/medicaid-income-limits"
     },
     {
-      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
+      "label": {
+        "en": "2026 Federal Poverty Level Chart",
+        "es": "Tabla del Nivel Federal de Pobreza 2026"
+      },
       "href": "/federal-poverty-level"
     },
     {
-      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "label": {
+        "en": "Check Your Eligibility",
+        "es": "Verifique Su Elegibilidad"
+      },
       "href": "/screener"
     },
     {
-      "label": { "en": "Analyze a Medical Bill", "es": "Analizar una Factura Médica" },
+      "label": {
+        "en": "Analyze a Medical Bill",
+        "es": "Analizar una Factura Médica"
+      },
       "href": "/medical-bill-analyzer"
     }
   ],
-
   "sources": [
     {
       "name": "Medicaid.gov: Cost Sharing Out of Pocket Costs",
