@@ -1,5 +1,5 @@
 {
-  "slug": "is-zepbound-covered-by-insurance",
+  "slug": "zepbound-covered-by-insurance",
   "subtype": "coverage",
   "pageType": "coverage",
   "topicCluster": "medicare-coverage",
@@ -66,40 +66,122 @@
   ],
   "coverageBreakdown": {
     "headers": {
-      "en": ["Insurance Type", "Zepbound for Obesity", "Zepbound for Sleep Apnea (OSA)", "Notes"],
-      "es": ["Tipo de seguro", "Zepbound para obesidad", "Zepbound para apnea del sueño (AOS)", "Notas"]
+      "en": [
+        "Insurance Type",
+        "Zepbound for Obesity",
+        "Zepbound for Sleep Apnea (OSA)",
+        "Notes"
+      ],
+      "es": [
+        "Tipo de seguro",
+        "Zepbound para obesidad",
+        "Zepbound para apnea del sueño (AOS)",
+        "Notas"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Medicare Part D / Medicare Advantage", "es": "Parte D de Medicare / Medicare Advantage" },
-          { "value": { "en": "Partial (GLP-1 Bridge only)", "es": "Parcial (solo Puente GLP-1)" }, "status": "partial" },
-          { "value": { "en": "Partial (plan-dependent)", "es": "Parcial (según el plan)" }, "status": "partial" },
-          { "en": "GLP-1 Bridge Program covers the KwikPen formulation at $50/month starting July 1, 2026; standard Part D excludes weight-loss agents by statute", "es": "El Programa Puente GLP-1 cubre la formulación KwikPen a $50/mes a partir del 1 de julio de 2026; la Parte D estándar excluye los agentes para pérdida de peso por ley" }
+          {
+            "en": "Medicare Part D / Medicare Advantage",
+            "es": "Parte D de Medicare / Medicare Advantage"
+          },
+          {
+            "value": {
+              "en": "Partial (GLP-1 Bridge only)",
+              "es": "Parcial (solo Puente GLP-1)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "Partial (plan-dependent)",
+              "es": "Parcial (según el plan)"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "GLP-1 Bridge Program covers the KwikPen formulation at $50/month starting July 1, 2026; standard Part D excludes weight-loss agents by statute",
+            "es": "El Programa Puente GLP-1 cubre la formulación KwikPen a $50/mes a partir del 1 de julio de 2026; la Parte D estándar excluye los agentes para pérdida de peso por ley"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicaid (state programs)", "es": "Medicaid (programas estatales)" },
-          { "value": { "en": "Varies by state (~13 states)", "es": "Varía por estado (~13 estados)" }, "status": "partial" },
-          { "value": { "en": "Rarely, state-dependent", "es": "Raramente, según el estado" }, "status": "no" },
-          { "en": "Obesity coverage is optional for states; about 13 state Medicaid programs cover GLP-1s for obesity in 2026, down from 16 in 2025", "es": "La cobertura para obesidad es opcional para los estados; unos 13 programas estatales de Medicaid cubren GLP-1 para obesidad en 2026, una baja desde 16 en 2025" }
+          {
+            "en": "Medicaid (state programs)",
+            "es": "Medicaid (programas estatales)"
+          },
+          {
+            "value": {
+              "en": "Varies by state (~13 states)",
+              "es": "Varía por estado (~13 estados)"
+            },
+            "status": "partial"
+          },
+          {
+            "value": {
+              "en": "Rarely, state-dependent",
+              "es": "Raramente, según el estado"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Obesity coverage is optional for states; about 13 state Medicaid programs cover GLP-1s for obesity in 2026, down from 16 in 2025",
+            "es": "La cobertura para obesidad es opcional para los estados; unos 13 programas estatales de Medicaid cubren GLP-1 para obesidad en 2026, una baja desde 16 en 2025"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Commercial / employer-sponsored", "es": "Comercial / patrocinado por empleador" },
-          { "value": { "en": "Yes, at large employers", "es": "Sí, en grandes empleadores" }, "status": "yes" },
-          { "value": { "en": "Yes, more consistently", "es": "Sí, con más consistencia" }, "status": "yes" },
-          { "en": "About 43% of employers with 5,000-plus workers cover weight-loss GLP-1s in 2026 (64% at 20,000-plus); only 19% of employers with 200 to 999 workers do", "es": "Alrededor del 43% de los empleadores con más de 5,000 trabajadores cubren GLP-1 para pérdida de peso en 2026 (64% con más de 20,000); solo el 19% de los empleadores con 200 a 999 trabajadores lo hacen" }
+          {
+            "en": "Commercial / employer-sponsored",
+            "es": "Comercial / patrocinado por empleador"
+          },
+          {
+            "value": {
+              "en": "Yes, at large employers",
+              "es": "Sí, en grandes empleadores"
+            },
+            "status": "yes"
+          },
+          {
+            "value": {
+              "en": "Yes, more consistently",
+              "es": "Sí, con más consistencia"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "About 43% of employers with 5,000-plus workers cover weight-loss GLP-1s in 2026 (64% at 20,000-plus); only 19% of employers with 200 to 999 workers do",
+            "es": "Alrededor del 43% de los empleadores con más de 5,000 trabajadores cubren GLP-1 para pérdida de peso en 2026 (64% con más de 20,000); solo el 19% de los empleadores con 200 a 999 trabajadores lo hacen"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "ACA Marketplace plans", "es": "Planes del mercado ACA" },
-          { "value": { "en": "Rarely (about 9% of carriers)", "es": "Raramente (cerca del 9% de aseguradoras)" }, "status": "no" },
-          { "value": { "en": "Varies, plan-dependent", "es": "Varía, según el plan" }, "status": "partial" },
-          { "en": "Weight-loss drugs are not an Essential Health Benefit under the ACA, so only about 26 of roughly 300 Marketplace carriers in 9 states cover Zepbound for obesity in 2026", "es": "Los medicamentos para pérdida de peso no son un Beneficio Esencial de Salud bajo la ACA, por lo que solo unas 26 de aproximadamente 300 aseguradoras del Mercado en 9 estados cubren Zepbound para obesidad en 2026" }
+          {
+            "en": "ACA Marketplace plans",
+            "es": "Planes del mercado ACA"
+          },
+          {
+            "value": {
+              "en": "Rarely (about 9% of carriers)",
+              "es": "Raramente (cerca del 9% de aseguradoras)"
+            },
+            "status": "no"
+          },
+          {
+            "value": {
+              "en": "Varies, plan-dependent",
+              "es": "Varía, según el plan"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Weight-loss drugs are not an Essential Health Benefit under the ACA, so only about 26 of roughly 300 Marketplace carriers in 9 states cover Zepbound for obesity in 2026",
+            "es": "Los medicamentos para pérdida de peso no son un Beneficio Esencial de Salud bajo la ACA, por lo que solo unas 26 de aproximadamente 300 aseguradoras del Mercado en 9 estados cubren Zepbound para obesidad en 2026"
+          }
         ]
       }
     ],
@@ -432,19 +514,31 @@
   },
   "relatedLinks": [
     {
-      "label": { "en": "Does Medicare Cover Zepbound?", "es": "¿Medicare Cubre Zepbound?" },
+      "label": {
+        "en": "Does Medicare Cover Zepbound?",
+        "es": "¿Medicare Cubre Zepbound?"
+      },
       "href": "/qa/does-medicare-cover-zepbound"
     },
     {
-      "label": { "en": "Does Medicaid Cover GLP-1 Drugs by State?", "es": "¿Medicaid Cubre Medicamentos GLP-1 por Estado?" },
+      "label": {
+        "en": "Does Medicaid Cover GLP-1 Drugs by State?",
+        "es": "¿Medicaid Cubre Medicamentos GLP-1 por Estado?"
+      },
       "href": "/qa/does-medicaid-cover-glp1-by-state"
     },
     {
-      "label": { "en": "GLP-1 Class Cost Comparison", "es": "Comparación de Costos de la Clase GLP-1" },
+      "label": {
+        "en": "GLP-1 Class Cost Comparison",
+        "es": "Comparación de Costos de la Clase GLP-1"
+      },
       "href": "/qa/glp1-class-cost-comparison"
     },
     {
-      "label": { "en": "Check Your Insurance Eligibility", "es": "Verifique su Elegibilidad de Seguro" },
+      "label": {
+        "en": "Check Your Insurance Eligibility",
+        "es": "Verifique su Elegibilidad de Seguro"
+      },
       "href": "/screener"
     }
   ],
