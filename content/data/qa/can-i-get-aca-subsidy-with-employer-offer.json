@@ -1,0 +1,399 @@
+{
+  "slug": "can-i-get-aca-subsidy-with-employer-offer",
+  "subtype": "coverage",
+  "pageType": "coverage",
+  "topicCluster": "aca-coverage",
+  "keyTerms": {
+    "en": [
+      "can i get aca subsidy with employer offer",
+      "aca affordability threshold 2026",
+      "employer coverage firewall aca",
+      "family glitch fix 2026",
+      "minimum value employer plan aca",
+      "aca subsidy employer insurance 2026"
+    ],
+    "es": [
+      "puedo obtener subsidio aca con oferta del empleador",
+      "umbral de asequibilidad aca 2026",
+      "regla de cobertura del empleador aca",
+      "correccion brecha familiar 2026",
+      "valor minimo plan del empleador aca"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "question": {
+    "en": "Can I Get an ACA Subsidy With an Affordable Employer Offer?",
+    "es": "¿Puedo Obtener un Subsidio del ACA Si Tengo una Oferta Asequible del Empleador?"
+  },
+  "shortAnswer": {
+    "en": "No, not for yourself; family members are tested separately in 2026.",
+    "es": "No, no para usted; los familiares se evaluan por separado en 2026."
+  },
+  "fullAnswer": {
+    "en": "No. If your employer offers self-only coverage that costs 9.96% or less of your household income in 2026 and meets the ACA's 60% minimum value standard, you cannot claim a premium tax credit for yourself, even if you decline the plan and buy Marketplace coverage instead. The rule follows eligibility, not enrollment: turning down an affordable, minimum-value offer does not open the door to a subsidy. Your spouse and dependents are tested separately under the 2023 family glitch fix, so they may still qualify if adding them to your employer plan costs more than 9.96% of household income.",
+    "es": "No. Si su empleador ofrece cobertura individual que cuesta el 9.96% o menos de su ingreso familiar en 2026 y cumple con el estandar de valor minimo del 60% del ACA, no puede reclamar un credito fiscal de prima para usted mismo, incluso si rechaza el plan y compra cobertura del Mercado en su lugar. La regla sigue la elegibilidad, no la inscripcion: rechazar una oferta asequible y de valor minimo no abre la puerta a un subsidio. Su conyuge y dependientes se evaluan por separado bajo la correccion de la brecha familiar de 2023, por lo que aun pueden calificar si agregarlos a su plan del empleador cuesta mas del 9.96% del ingreso familiar."
+  },
+  "category": "ACA",
+  "topic": "ACA Premium Tax Credit Eligibility With Employer Coverage",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-08-08",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "ACA Subsidy With an Employer Offer? (2026) | CoveredUSA",
+      "es": "¿Subsidio ACA con Oferta del Empleador? (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "An affordable, minimum-value employer offer blocks your ACA subsidy in 2026. Learn the 9.96% test, the family glitch fix, and your alternatives.",
+      "es": "Una oferta asequible del empleador bloquea su subsidio ACA en 2026. Conozca la prueba del 9.96%, la correccion de la brecha familiar y sus alternativas."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Can I Get an ACA Subsidy With an Affordable Employer Offer? (2026)",
+      "es": "¿Puedo Obtener un Subsidio del ACA Si Tengo una Oferta Asequible del Empleador? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Millions of workers assume that declining their job's health plan automatically opens the door to a subsidized Marketplace policy. It does not. The ACA's employer-coverage rule, often called the firewall, blocks a premium tax credit for anyone who is offered coverage that is both affordable and meets minimum value, whether or not that person actually enrolls in it. Getting this wrong is one of the most common reasons Marketplace enrollees end up owing back a credit at tax time.",
+      "es": "Millones de trabajadores asumen que rechazar el plan de salud de su trabajo abre automaticamente la puerta a una poliza subsidiada del Mercado. No es asi. La regla de cobertura del empleador del ACA, a menudo llamada el cortafuegos, bloquea un credito fiscal de prima para cualquiera que reciba una oferta de cobertura asequible y de valor minimo, sin importar si esa persona realmente se inscribe. Entender mal esta regla es una de las razones mas comunes por las que los inscritos en el Mercado terminan debiendo un credito al momento de declarar impuestos."
+    },
+    {
+      "en": "This guide walks through the exact 2026 affordability threshold, how the family glitch fix changed the rules for spouses and dependents, when a small employer or an unenrolled COBRA offer does not count, and what to do if your employer's plan blocks your subsidy. For the broader income picture, see [who qualifies for ACA subsidies](/en/qa/who-qualifies-for-aca-subsidy) and [what counts as income for ACA subsidies](/en/qa/what-counts-as-income-for-aca).",
+      "es": "Esta guia repasa el umbral exacto de asequibilidad 2026, como la correccion de la brecha familiar cambio las reglas para conyuges y dependientes, cuando una oferta de un empleador pequeno o de COBRA sin inscripcion no cuenta, y que hacer si el plan de su empleador bloquea su subsidio."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Your employer-coverage situation", "PTC eligible for you?", "Why", "2026 rule"],
+      "es": ["Su situacion de cobertura del empleador", "Elegible para PTC?", "Por que", "Regla 2026"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Affordable self-only offer (9.96% or less of income) that meets minimum value", "es": "Oferta individual asequible (9.96% o menos del ingreso) que cumple valor minimo" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" },
+          { "en": "The offer counts as available affordable coverage, whether or not you enroll", "es": "La oferta cuenta como cobertura asequible disponible, se inscriba o no" },
+          { "en": "IRS Rev. Proc. 2025-25 sets the 9.96% threshold for 2026", "es": "El Proc. Rev. del IRS 2025-25 fija el umbral del 9.96% para 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Self-only offer costs more than 9.96% of household income", "es": "Oferta individual cuesta mas del 9.96% del ingreso familiar" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Offer is unaffordable, so the firewall does not apply", "es": "La oferta es inasequible, por lo que el cortafuegos no aplica" },
+          { "en": "Applies even if the employer pays most of the premium in dollar terms", "es": "Aplica incluso si el empleador paga la mayor parte de la prima en dolares" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Self-only offer is affordable but fails minimum value", "es": "Oferta individual es asequible pero no cumple valor minimo" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Both the price test and the 60% value test must pass to block a subsidy", "es": "Ambas pruebas, precio y valor del 60%, deben cumplirse para bloquear un subsidio" },
+          { "en": "Check Form 1095-C code or the plan's summary of benefits and coverage", "es": "Revise el codigo del Formulario 1095-C o el resumen de beneficios del plan" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Family coverage costs more than 9.96% of household income (family glitch fix)", "es": "Cobertura familiar cuesta mas del 9.96% del ingreso familiar (correccion brecha familiar)" },
+          { "value": { "en": "You: no. Family: possibly", "es": "Usted: no. Familia: posible" }, "status": "partial" },
+          { "en": "Family affordability is tested independently of the employee's self-only test", "es": "La asequibilidad familiar se evalua de forma independiente a la prueba individual del empleado" },
+          { "en": "Family glitch fix in effect since January 1, 2023 and still active in 2026", "es": "Correccion de la brecha familiar vigente desde el 1 de enero de 2023 y activa en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "No employer offer at all (small employer or part-time job)", "es": "Sin oferta del empleador (empleador pequeno o trabajo a tiempo parcial)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "No offer exists, so there is nothing to compare against 9.96%", "es": "No existe oferta, por lo que no hay nada que comparar contra el 9.96%" },
+          { "en": "Employers with under 50 full-time-equivalent employees have no offer mandate", "es": "Empleadores con menos de 50 empleados equivalentes a tiempo completo no tienen mandato" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Enrolled in COBRA or retiree health coverage", "es": "Inscrito en COBRA o cobertura de salud para jubilados" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" },
+          { "en": "Actual enrollment in either counts as having other coverage", "es": "La inscripcion real en cualquiera cuenta como tener otra cobertura" },
+          { "en": "Merely being eligible for COBRA or retiree coverage, without enrolling, does not block PTC", "es": "Solo ser elegible para COBRA o cobertura de jubilados, sin inscribirse, no bloquea el PTC" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "An employer offer must fail either the affordability test (more than 9.96% of household income in 2026 per IRS Rev. Proc. 2025-25) or the minimum value test (below 60% of covered costs) for a premium tax credit to become available. Passing both tests blocks a subsidy regardless of whether the employee enrolls.",
+      "es": "Una oferta del empleador debe fallar la prueba de asequibilidad (mas del 9.96% del ingreso familiar en 2026 segun el Proc. Rev. del IRS 2025-25) o la prueba de valor minimo (menos del 60% de los costos cubiertos) para que un credito fiscal de prima este disponible. Pasar ambas pruebas bloquea un subsidio sin importar si el empleado se inscribe."
+    },
+    "source": "IRS Rev. Proc. 2025-25; Healthcare.gov Marketplace Eligibility; KFF Employer Coverage and Premium Tax Credit Explainer 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct answer",
+        "es": "Respuesta directa"
+      },
+      "paragraphs": [
+        {
+          "en": "No. Employer-sponsored coverage that costs 9.96% or less of your 2026 household income for self-only coverage, and meets the ACA's 60% minimum value standard, blocks a premium tax credit for you, even if you skip the plan and buy Marketplace coverage instead. An unaffordable offer, a plan that fails minimum value, or no offer at all can still leave you eligible. Family members are tested separately under the 2023 family glitch fix.",
+          "es": "No. La cobertura patrocinada por el empleador que cuesta el 9.96% o menos de su ingreso familiar 2026 para cobertura individual, y cumple el estandar de valor minimo del 60% del ACA, bloquea un credito fiscal de prima para usted, aunque no tome el plan y compre cobertura del Mercado en su lugar. Una oferta inasequible, un plan que falla el valor minimo, o ninguna oferta pueden dejarlo elegible. Los familiares se evaluan por separado bajo la correccion de la brecha familiar de 2023."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Counts as 'Affordable' in 2026",
+        "es": "Que Significa 'Asequible' en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Affordability starts with a single IRS number. Under Revenue Procedure 2025-25, an employer's health plan is affordable for 2026 if the premium the employee pays for the cheapest self-only option is 9.96% or less of household income, up from 9.02% in 2025. A household earning $50,000 in 2026 clears the affordability test if the employee-only premium is $4,980 a year, or about $415 a month, or less. That figure looks only at the self-only premium; the cost of adding a spouse or children is irrelevant to the employee's own eligibility test.",
+          "es": "La asequibilidad comienza con un numero unico del IRS. Segun el Procedimiento de Ingresos 2025-25, el plan de salud de un empleador es asequible para 2026 si la prima que paga el empleado por la opcion individual mas barata es el 9.96% o menos del ingreso familiar, un aumento respecto al 9.02% de 2025. Un hogar que gana $50,000 en 2026 supera la prueba de asequibilidad si la prima solo para el empleado es de $4,980 al ano, o unos $415 al mes, o menos. Esa cifra solo considera la prima individual; el costo de agregar un conyuge o hijos es irrelevante para la prueba propia de elegibilidad del empleado."
+        },
+        {
+          "en": "Minimum value is the second test, and both must be met before an employer offer blocks a subsidy. A plan meets minimum value if it is designed to pay at least 60% of the total allowed cost of covered benefits and includes substantial coverage of physician and inpatient hospital services. Most standard employer group plans clear this bar easily. The exception is a bare-bones limited-benefit or fixed-indemnity plan that some employers layer on top of, or instead of, real coverage. An affordable offer that fails minimum value does not block a premium tax credit, even though the price alone looks reasonable.",
+          "es": "El valor minimo es la segunda prueba, y ambas deben cumplirse antes de que una oferta del empleador bloquee un subsidio. Un plan cumple el valor minimo si esta disenado para pagar al menos el 60% del costo total permitido de los beneficios cubiertos e incluye cobertura sustancial de servicios medicos y hospitalarios. La mayoria de los planes grupales estandar del empleador superan esta barra facilmente. La excepcion es un plan basico de beneficios limitados o de indemnizacion fija que algunos empleadores agregan encima de, o en lugar de, cobertura real. Una oferta asequible que no cumple el valor minimo no bloquea un credito fiscal de prima, aunque el precio por si solo parezca razonable."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The Family Glitch Fix: Family Coverage Gets Tested Separately",
+        "es": "La Correccion de la Brecha Familiar: la Cobertura Familiar se Evalua por Separado"
+      },
+      "paragraphs": [
+        {
+          "en": "Family coverage used to ride on the same 9.96% test as self-only coverage, and that created what advocates called the family glitch. Before 2023, the IRS only checked whether the employee's own self-only coverage was affordable, so a $200-a-month self-only premium could pass easily while adding a spouse and two kids pushed the family premium to $1,800 a month, well over 40% of household income, with no subsidy available to fix it. A final IRS rule effective January 1, 2023 fixed this gap, and the fix remains in place for 2026.",
+          "es": "La cobertura familiar solia evaluarse con la misma prueba del 9.96% que la cobertura individual, y eso creo lo que los defensores llamaron la brecha familiar. Antes de 2023, el IRS solo verificaba si la cobertura individual del empleado era asequible, por lo que una prima individual de $200 al mes podia pasar facilmente mientras que agregar un conyuge y dos hijos elevaba la prima familiar a $1,800 al mes, muy por encima del 40% del ingreso familiar, sin ningun subsidio disponible para corregirlo. Una regla final del IRS efectiva el 1 de enero de 2023 corrigio esta brecha, y la correccion sigue vigente en 2026."
+        },
+        {
+          "en": "Family affordability is now its own test. If the portion of the premium the employee would pay for family coverage exceeds 9.96% of household income in 2026, the employee's spouse and dependents can shop the Marketplace and claim a premium tax credit, even though the employee stays blocked because their own self-only offer is affordable. Coverage codes on the employer's Form 1095-C often signal which test applies; a benefits administrator or HR representative can confirm the actual dollar premiums for both the self-only and family tiers.",
+          "es": "La asequibilidad familiar es ahora su propia prueba. Si la porcion de la prima que el empleado pagaria por cobertura familiar excede el 9.96% del ingreso familiar en 2026, el conyuge y los dependientes del empleado pueden comprar en el Mercado y reclamar un credito fiscal de prima, aunque el empleado permanezca bloqueado porque su propia oferta individual es asequible. Los codigos de cobertura en el Formulario 1095-C del empleador a menudo indican que prueba aplica; un administrador de beneficios o representante de recursos humanos puede confirmar las primas exactas en dolares para ambos niveles."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Eligibility, Not Enrollment, Is What Blocks the Subsidy",
+        "es": "Elegibilidad, No Inscripcion, Es lo que Bloquea el Subsidio"
+      },
+      "paragraphs": [
+        {
+          "en": "Marketplace eligibility rules follow what you were offered, not what you signed up for. Declining an affordable, minimum-value employer plan and buying an ACA-compliant Marketplace policy with a premium tax credit anyway is not allowed. Healthcare.gov asks directly whether an offer of job-based coverage exists and whether it meets the price and value tests; answering that question incorrectly, intentionally or not, is a common reason a household later owes back an advance premium tax credit at tax time. Employers with 50 or more full-time-equivalent employees, called applicable large employers, generally must offer affordable, minimum-value coverage or risk a penalty under Internal Revenue Code Section 4980H if even one employee receives a subsidy.",
+          "es": "Las reglas de elegibilidad del Mercado siguen lo que le ofrecieron, no lo que usted eligio. Rechazar un plan asequible y de valor minimo del empleador y comprar una poliza del Mercado compatible con el ACA con un credito fiscal de prima de todos modos no esta permitido. Healthcare.gov pregunta directamente si existe una oferta de cobertura basada en el empleo y si cumple las pruebas de precio y valor; responder esa pregunta incorrectamente, de forma intencional o no, es una razon comun por la que un hogar termina debiendo un credito fiscal de prima anticipado al momento de declarar impuestos. Los empleadores con 50 o mas empleados equivalentes a tiempo completo, llamados grandes empleadores aplicables, generalmente deben ofrecer cobertura asequible y de valor minimo o enfrentan una penalidad bajo la Seccion 4980H del Codigo de Rentas Internas si un solo empleado recibe un subsidio."
+        },
+        {
+          "en": "Two carve-outs matter. First, employers with fewer than 50 full-time-equivalent employees are not required to offer coverage at all; if yours does not, no employer offer exists and the firewall never applies. Second, COBRA continuation coverage and retiree health coverage only count against you if you are actually enrolled, not merely eligible. Someone who qualifies for COBRA after a layoff but never enrolls can still shop the Marketplace for a subsidized plan. The same eligibility rule extends past employer coverage: anyone eligible for Medicare, including Original Medicare Part A alone, Medicaid, CHIP, or TRICARE also loses premium tax credit eligibility, regardless of employer status.",
+          "es": "Dos excepciones importan. Primero, los empleadores con menos de 50 empleados equivalentes a tiempo completo no estan obligados a ofrecer cobertura; si el suyo no lo hace, no existe oferta del empleador y el cortafuegos nunca aplica. Segundo, la cobertura de continuacion COBRA y la cobertura de salud para jubilados solo cuentan en su contra si esta realmente inscrito, no solo elegible. Alguien que califica para COBRA despues de un despido pero nunca se inscribe puede seguir comprando en el Mercado un plan subsidiado. La misma regla de elegibilidad se extiende mas alla de la cobertura del empleador: cualquiera elegible para Medicare, incluyendo solo la Parte A de Medicare Original, Medicaid, CHIP o TRICARE tambien pierde la elegibilidad para el credito fiscal de prima, sin importar la situacion laboral."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Why This Rule Matters More After the 2026 Subsidy Cliff Returned",
+        "es": "Por Que Esta Regla Importa Mas Tras el Regreso del Limite de Subsidio 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The enhanced premium tax credits from the American Rescue Plan Act and the Inflation Reduction Act expired December 31, 2025, so the original 400% federal poverty level subsidy cliff is back for the 2026 plan year. Marketplace subsidies for 2026 coverage use the 2025 federal poverty guidelines by statute, putting the 400% FPL cutoff at $62,600 for a single person, $84,600 for a two-person household, $106,600 for a household of three, and $128,600 for a family of four. Anyone above that line receives no premium tax credit at all, which makes correctly applying the employer-offer test even more consequential this year: a household that assumes it qualifies for a subsidy because its income sits under the cliff can still be shut out entirely by an affordable employer offer.",
+          "es": "Los creditos fiscales de prima mejorados de la Ley del Plan de Rescate Americano y la Ley de Reduccion de Inflacion expiraron el 31 de diciembre de 2025, por lo que el limite original del subsidio al 400% del nivel federal de pobreza regreso para el ano del plan 2026. Los subsidios del Mercado para la cobertura 2026 usan las pautas federales de pobreza de 2025 por estatuto, colocando el limite del 400% FPL en $62,600 para una persona sola, $84,600 para un hogar de dos, $106,600 para un hogar de tres y $128,600 para una familia de cuatro. Cualquiera por encima de esa linea no recibe ningun credito fiscal de prima, lo que hace que aplicar correctamente la prueba de oferta del empleador sea aun mas importante este ano: un hogar que asume que califica para un subsidio porque su ingreso esta por debajo del limite puede quedar completamente excluido por una oferta asequible del empleador."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "2026 ACA subsidy cliff income cutoffs by household size (400% FPL, 2025 guidelines)",
+          "es": "Limites de ingresos del subsidio ACA 2026 por tamano del hogar (400% FPL, pautas 2025)"
+        },
+        "headers": {
+          "en": ["Household size", "400% FPL cutoff (2026 plan year)"],
+          "es": ["Tamano del hogar", "Limite 400% FPL (ano de plan 2026)"]
+        },
+        "rows": [
+          { "en": ["1", "$62,600"], "es": ["1", "$62,600"] },
+          { "en": ["2", "$84,600"], "es": ["2", "$84,600"] },
+          { "en": ["3", "$106,600"], "es": ["3", "$106,600"] },
+          { "en": ["4", "$128,600"], "es": ["4", "$128,600"] },
+          { "en": ["Each additional", "+$22,000"], "es": ["Cada persona adicional", "+$22,000"] }
+        ],
+        "footnote": {
+          "en": "Cutoffs use 2025 HHS poverty guidelines applied to 2026 Marketplace coverage per 26 U.S.C. 36B. Households above 400% FPL receive no premium tax credit for 2026 regardless of their employer-offer status.",
+          "es": "Los limites usan las pautas de pobreza HHS 2025 aplicadas a la cobertura del Mercado 2026 segun 26 U.S.C. 36B. Los hogares por encima del 400% FPL no reciben ningun credito fiscal de prima para 2026 sin importar su situacion de oferta del empleador."
+        },
+        "source": "ASPE HHS 2025 Poverty Guidelines; 26 U.S.C. 36B"
+      }
+    },
+    {
+      "heading": {
+        "en": "How to Check Whether Your Employer's Offer Is Affordable",
+        "es": "Como Verificar si la Oferta de su Empleador es Asequible"
+      },
+      "paragraphs": [
+        {
+          "en": "Three sources answer the affordability question without guesswork. Ask your HR or benefits team for the exact employee-only premium for the lowest-cost plan that meets minimum value, then divide it by your best estimate of 2026 household income; if the result is 9.96% or less, the offer is affordable. Look at Form 1095-C if your employer issued one for a prior year: the employee-only premium line shows what the employer used for its own affordability safe harbor calculation. Or start a Healthcare.gov application, which asks about job-based coverage directly and flags whether an offer appears to make you ineligible for a subsidy.",
+          "es": "Tres fuentes responden la pregunta de asequibilidad sin adivinar. Pida a su equipo de recursos humanos o beneficios la prima exacta solo para el empleado del plan mas barato que cumpla el valor minimo, luego dividala entre su mejor estimacion del ingreso familiar 2026; si el resultado es el 9.96% o menos, la oferta es asequible. Revise el Formulario 1095-C si su empleador emitio uno para un ano anterior: la linea de la prima individual muestra lo que el empleador uso para su propio calculo de puerto seguro de asequibilidad. O inicie una solicitud en Healthcare.gov, que pregunta directamente sobre cobertura basada en el empleo y senala si una oferta parece hacerlo inelegible para un subsidio."
+        },
+        {
+          "en": "One distinction trips up a lot of applicants. Employers calculate affordability using their own safe harbors, W-2 wages, rate of pay, or the federal poverty line, because they only need a reasonable proxy for household income to avoid a penalty. Your actual premium tax credit eligibility uses your real household income reported on IRS Form 8962 at tax time, not the employer's safe harbor estimate. That gap means it is possible, though uncommon, for an employer to treat its own offer as affordable under a safe harbor while your actual income makes the same offer unaffordable for premium tax credit purposes, or the reverse.",
+          "es": "Una distincion confunde a muchos solicitantes. Los empleadores calculan la asequibilidad usando sus propios puertos seguros, salarios W-2, tarifa por hora o el nivel federal de pobreza, porque solo necesitan un indicador razonable del ingreso familiar para evitar una penalidad. Su elegibilidad real para el credito fiscal de prima usa su ingreso familiar real reportado en el Formulario 8962 del IRS al momento de declarar impuestos, no la estimacion de puerto seguro del empleador. Esa diferencia significa que es posible, aunque poco comun, que un empleador trate su propia oferta como asequible bajo un puerto seguro mientras que su ingreso real hace que la misma oferta sea inasequible para fines del credito fiscal de prima, o al reves."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives If Your Employer's Offer Blocks a Subsidy",
+        "es": "Alternativas Si la Oferta de su Empleador Bloquea un Subsidio"
+      },
+      "paragraphs": [
+        {
+          "en": "Losing subsidy eligibility because your employer's offer is affordable does not mean you have no options. A few paths can lower your real cost without a premium tax credit.",
+          "es": "Perder la elegibilidad de subsidio porque la oferta de su empleador es asequible no significa que no tenga opciones. Algunas rutas pueden reducir su costo real sin un credito fiscal de prima."
+        }
+      ],
+      "list": [
+        { "en": "Buy an ACA-compliant Marketplace plan at full price. You still get guaranteed issue coverage, no preexisting condition exclusions, and the 10 essential health benefits categories, just without a premium tax credit.", "es": "Compre un plan del Mercado compatible con el ACA a precio completo. Aun obtiene emision garantizada, sin exclusiones por condicion preexistente, y las 10 categorias de beneficios esenciales de salud, solo sin credito fiscal de prima." },
+        { "en": "Ask HR about a Section 125 premium-only or cafeteria plan. Paying your share of the employer premium with pre-tax payroll dollars lowers your taxable income even though it does not change the affordability percentage test.", "es": "Pregunte a recursos humanos sobre un plan Seccion 125 solo de prima o de cafeteria. Pagar su parte de la prima del empleador con dolares de nomina antes de impuestos reduce su ingreso gravable, aunque no cambia la prueba del porcentaje de asequibilidad." },
+        { "en": "Pair a high-deductible employer plan with a Health Savings Account. Pre-tax HSA contributions (2026 limit: $4,400 self-only, $8,750 family) reduce taxable income and build tax-free savings for medical costs.", "es": "Combine un plan de deducible alto del empleador con una Cuenta de Ahorros para la Salud. Las contribuciones HSA antes de impuestos (limite 2026: $4,400 individual, $8,750 familiar) reducen el ingreso gravable y crean ahorros libres de impuestos para gastos medicos." },
+        { "en": "Ask about a cash-in-lieu or opt-out payment. Some employers offer taxable cash to employees who decline coverage; that cash can help offset a full-price Marketplace premium.", "es": "Pregunte sobre un pago en efectivo en lugar de cobertura. Algunos empleadores ofrecen efectivo gravable a empleados que rechazan la cobertura; ese efectivo puede ayudar a cubrir una prima del Mercado a precio completo." },
+        { "en": "Check for a state-based supplemental subsidy program. A few states run their own additional premium assistance layered on top of federal rules; check your state exchange even if you are blocked from the federal premium tax credit.", "es": "Consulte si existe un programa suplementario de subsidio estatal. Algunos estados administran asistencia adicional de prima ademas de las reglas federales; consulte el intercambio de su estado incluso si esta bloqueado del credito fiscal de prima federal." }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the ACA employer-coverage firewall?",
+        "answer": "The firewall is the rule that blocks a premium tax credit for anyone offered affordable, minimum-value coverage through a job, whether or not they enroll in it. It exists so the federal government does not subsidize Marketplace coverage for people who already have access to reasonably priced job-based insurance. The firewall applies to the employee directly; spouses and dependents are tested separately under the 2023 family glitch fix."
+      },
+      {
+        "question": "What does 'affordable' mean for ACA purposes in 2026?",
+        "answer": "Under IRS Revenue Procedure 2025-25, an employer offer is affordable in 2026 if the employee-only premium for the cheapest qualifying plan is 9.96% or less of household income, up from 9.02% in 2025. Only the self-only premium counts for the employee's own eligibility test; family premiums are evaluated separately under the family glitch fix."
+      },
+      {
+        "question": "What is minimum value coverage?",
+        "answer": "A plan meets minimum value if it is designed to pay at least 60% of the total allowed cost of covered benefits and includes substantial coverage of physician and inpatient hospital services. Coverage must be both affordable and meet minimum value to block a premium tax credit; failing either test alone can still leave you subsidy-eligible."
+      },
+      {
+        "question": "Does the family glitch fix still apply in 2026?",
+        "answer": "Yes. The IRS rule that took effect January 1, 2023 remains in place for 2026. Family coverage affordability is tested against the cost of family, not self-only, coverage, so a spouse or dependent can qualify for a premium tax credit even when the employee's own self-only offer is affordable."
+      },
+      {
+        "question": "What if my employer doesn't offer coverage at all?",
+        "answer": "No offer means no firewall. Employers with fewer than 50 full-time-equivalent employees are not required to offer coverage under the ACA, and if they don't, nothing blocks you from claiming a premium tax credit based on income alone (100% to 400% of the federal poverty level for 2026 coverage)."
+      },
+      {
+        "question": "Does COBRA or retiree coverage block my subsidy eligibility?",
+        "answer": "Only if you actually enroll. Being merely eligible for COBRA continuation coverage or a retiree health plan after leaving a job does not disqualify you from a premium tax credit. Enrolling in either one counts as having other minimum essential coverage and can block PTC eligibility for the months you are enrolled."
+      },
+      {
+        "question": "What happens if I get a subsidy I wasn't eligible for?",
+        "answer": "You may have to repay some or all of the advance premium tax credit when you file your federal taxes on Form 8962. Update your Healthcare.gov application as soon as your job-based coverage offer or its cost changes to avoid owing a large reconciliation amount at tax time."
+      },
+      {
+        "question": "Does this rule affect people eligible for Medicare or Medicaid too?",
+        "answer": "Yes, the same structure applies. Anyone eligible for Medicare, including Original Medicare Part A alone, Medicaid, CHIP, or TRICARE cannot claim a premium tax credit, the same way someone with an affordable employer offer cannot. Each of these coverage types counts as minimum essential coverage that satisfies the ACA's other-coverage test."
+      }
+    ],
+    "es": [
+      {
+        "question": "Que es el cortafuegos de cobertura del empleador del ACA?",
+        "answer": "El cortafuegos es la regla que bloquea un credito fiscal de prima para cualquiera que reciba una oferta de cobertura asequible y de valor minimo a traves de un trabajo, se inscriba o no. Existe para que el gobierno federal no subsidie cobertura del Mercado para personas que ya tienen acceso a un seguro razonablemente asequible basado en el empleo. El cortafuegos aplica directamente al empleado; los conyuges y dependientes se evaluan por separado bajo la correccion de la brecha familiar de 2023."
+      },
+      {
+        "question": "Que significa 'asequible' para fines del ACA en 2026?",
+        "answer": "Segun el Procedimiento de Ingresos del IRS 2025-25, una oferta del empleador es asequible en 2026 si la prima individual del plan calificado mas barato es el 9.96% o menos del ingreso familiar, un aumento respecto al 9.02% de 2025. Solo la prima individual cuenta para la prueba propia de elegibilidad del empleado; las primas familiares se evaluan por separado bajo la correccion de la brecha familiar."
+      },
+      {
+        "question": "Que es la cobertura de valor minimo?",
+        "answer": "Un plan cumple el valor minimo si esta disenado para pagar al menos el 60% del costo total permitido de los beneficios cubiertos e incluye cobertura sustancial de servicios medicos y hospitalarios. La cobertura debe ser asequible y cumplir el valor minimo para bloquear un credito fiscal de prima; fallar cualquiera de las dos pruebas puede dejarlo elegible para un subsidio."
+      },
+      {
+        "question": "La correccion de la brecha familiar sigue aplicando en 2026?",
+        "answer": "Si. La regla del IRS que entro en vigor el 1 de enero de 2023 sigue vigente en 2026. La asequibilidad de la cobertura familiar se evalua contra el costo de la cobertura familiar, no individual, por lo que un conyuge o dependiente puede calificar para un credito fiscal de prima aunque la oferta individual del empleado sea asequible."
+      },
+      {
+        "question": "Que pasa si mi empleador no ofrece cobertura en absoluto?",
+        "answer": "Sin oferta no hay cortafuegos. Los empleadores con menos de 50 empleados equivalentes a tiempo completo no estan obligados a ofrecer cobertura bajo el ACA, y si no lo hacen, nada le impide reclamar un credito fiscal de prima basado solo en el ingreso (100% a 400% del nivel federal de pobreza para la cobertura 2026)."
+      },
+      {
+        "question": "COBRA o la cobertura de jubilados bloquean mi elegibilidad de subsidio?",
+        "answer": "Solo si realmente se inscribe. Ser meramente elegible para la continuacion COBRA o un plan de salud de jubilados despues de dejar un trabajo no lo descalifica de un credito fiscal de prima. Inscribirse en cualquiera de los dos cuenta como tener otra cobertura esencial minima y puede bloquear la elegibilidad de PTC durante los meses en que este inscrito."
+      },
+      {
+        "question": "Que pasa si recibo un subsidio para el que no era elegible?",
+        "answer": "Puede tener que devolver parte o la totalidad del credito fiscal de prima anticipado al presentar sus impuestos federales en el Formulario 8962. Actualice su solicitud de Healthcare.gov tan pronto como cambie su oferta de cobertura laboral o su costo para evitar deber un monto grande de reconciliacion al momento de declarar impuestos."
+      },
+      {
+        "question": "Esta regla afecta tambien a personas elegibles para Medicare o Medicaid?",
+        "answer": "Si, aplica la misma estructura. Cualquiera elegible para Medicare, incluyendo solo la Parte A de Medicare Original, Medicaid, CHIP o TRICARE no puede reclamar un credito fiscal de prima, de la misma forma que alguien con una oferta asequible del empleador no puede. Cada uno de estos tipos de cobertura cuenta como cobertura esencial minima que satisface la prueba de otra cobertura del ACA."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Who Qualifies for ACA Marketplace Subsidies?", "es": "Quien Califica para los Subsidios del Mercado ACA?" },
+      "href": "/qa/who-qualifies-for-aca-subsidy"
+    },
+    {
+      "label": { "en": "What Counts as Income for ACA Subsidies?", "es": "Que Cuenta Como Ingreso para los Subsidios del ACA?" },
+      "href": "/qa/what-counts-as-income-for-aca"
+    },
+    {
+      "label": { "en": "2026 Federal Poverty Level Guidelines", "es": "Pautas del Nivel Federal de Pobreza 2026" },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": { "en": "Check Your Coverage Eligibility", "es": "Verifique Su Elegibilidad de Cobertura" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "IRS Rev. Proc. 2025-25: 2026 Premium Tax Credit Affordability Percentage",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-25.pdf",
+      "note": {
+        "en": "Official IRS revenue procedure setting the 2026 employer-sponsored coverage affordability threshold at 9.96% of household income, up from 9.02% in 2025.",
+        "es": "Procedimiento oficial de ingresos del IRS que fija el umbral de asequibilidad de la cobertura patrocinada por el empleador 2026 en el 9.96% del ingreso familiar, un aumento respecto al 9.02% de 2025."
+      }
+    },
+    {
+      "name": "Healthcare.gov: Eligibility for the Premium Tax Credit",
+      "url": "https://www.healthcare.gov/lower-costs/qualifying-for-lower-costs/",
+      "note": {
+        "en": "Official CMS eligibility summary covering the employer-sponsored insurance affordability test, minimum value standard, and how a job-based offer interacts with Marketplace subsidies.",
+        "es": "Resumen oficial de elegibilidad de CMS que cubre la prueba de asequibilidad del seguro patrocinado por el empleador, el estandar de valor minimo, y como una oferta laboral interactua con los subsidios del Mercado."
+      }
+    },
+    {
+      "name": "IRS: Questions and Answers on the Premium Tax Credit",
+      "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit",
+      "note": {
+        "en": "IRS guidance on employer-sponsored coverage eligibility rules, the affordability and minimum value tests, and Form 8962 reconciliation for the premium tax credit.",
+        "es": "Guia del IRS sobre las reglas de elegibilidad de cobertura patrocinada por el empleador, las pruebas de asequibilidad y valor minimo, y la reconciliacion del Formulario 8962 para el credito fiscal de prima."
+      }
+    },
+    {
+      "name": "KFF: Navigating the Family Glitch Fix",
+      "url": "https://www.kff.org/private-insurance/navigating-the-family-glitch-fix-hurdles-for-consumers-with-employer-sponsored-coverage/",
+      "note": {
+        "en": "KFF analysis of the 2023 family glitch fix, how family-coverage affordability is now tested separately from self-only coverage, and remaining consumer confusion points.",
+        "es": "Analisis de KFF de la correccion de la brecha familiar de 2023, como la asequibilidad de la cobertura familiar ahora se evalua por separado de la cobertura individual, y los puntos de confusion restantes para los consumidores."
+      }
+    },
+    {
+      "name": "ASPE HHS 2025 Poverty Guidelines (used for 2026 Marketplace coverage)",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "2025 federal poverty guidelines from ASPE. The ACA Marketplace uses prior-year FPL by statute (26 U.S.C. 36B); these 2025 figures set the 400% FPL subsidy cliff for the 2026 plan year.",
+        "es": "Pautas de pobreza federal 2025 de ASPE. El Mercado ACA usa el FPL del ano anterior por estatuto (26 U.S.C. 36B); estas cifras de 2025 fijan el limite del subsidio al 400% FPL para el ano del plan 2026."
+      }
+    }
+  ]
+}
