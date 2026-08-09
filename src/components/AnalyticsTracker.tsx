@@ -27,6 +27,29 @@ const AI_REFERRERS = [
 ];
 
 const AI_SESSION_KEY = 'ai_referral_source';
+const SESSION_ID_KEY = 'cu_sid';
+
+/**
+ * Per-tab id so pageviews can be grouped into a visit — that's what turns
+ * "3,000 pageviews" into "how many people opened the bill analyzer".
+ * Returns null when storage is blocked (Safari private mode, sandboxed iframe);
+ * the pageview still gets recorded, it just can't be grouped.
+ */
+function getSessionId(): string | null {
+  try {
+    let sid = sessionStorage.getItem(SESSION_ID_KEY);
+    if (!sid) {
+      sid =
+        typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+          ? crypto.randomUUID()
+          : Math.random().toString(36).slice(2) + Date.now().toString(36);
+      sessionStorage.setItem(SESSION_ID_KEY, sid);
+    }
+    return sid;
+  } catch {
+    return null;
+  }
+}
 
 function detectAiReferrer(): { name: string } | null {
   // Check sessionStorage first (persists across pages within session)
@@ -120,6 +143,7 @@ export default function AnalyticsTracker() {
       path: pathname,
       referrer: document.referrer || null,
       user_agent: navigator.userAgent,
+      session_id: getSessionId(),
     };
 
     if (aiSource) {

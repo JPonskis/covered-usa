@@ -6,8 +6,10 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { submissionId, clinicId, clinicName, action, zipCode } = body;
 
-    // Fire and forget — don't crash if insert fails
-    supabaseAdmin
+    // Must be awaited: a serverless function can be frozen the moment it
+    // responds, so a floating promise here silently never lands.
+    // No clicked_at — the table stamps created_at itself.
+    const { error } = await supabaseAdmin
       .from('covered_usa_clinic_referrals')
       .insert({
         submission_id: submissionId || null,
@@ -15,15 +17,16 @@ export async function POST(req: NextRequest) {
         clinic_name: clinicName,
         action,
         zip_code: zipCode || null,
-        clicked_at: new Date().toISOString(),
-      })
-      .then(({ error }) => {
-        if (error) console.error('Clinic click tracking error:', error);
       });
+
+    if (error) {
+      console.error('[clinic-click] INSERT FAILED:', error.message, error);
+      return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+    }
 
     return NextResponse.json({ success: true });
   } catch (e) {
-    console.error('Clinic click error:', e);
-    return NextResponse.json({ success: true }); // Always return 200
+    console.error('[clinic-click] error:', e);
+    return NextResponse.json({ success: false, error: 'exception' }, { status: 500 });
   }
 }
