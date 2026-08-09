@@ -75,17 +75,22 @@ export async function POST(req: NextRequest) {
     const utmSource = req.headers.get('x-utm-source') || body.utm_source || null;
     const utmCampaign = req.headers.get('x-utm-campaign') || body.utm_campaign || null;
     const locale = body.locale || null;
-    supabaseAdmin.from('covered_usa_screener_starts').insert({
-      state,
-      zip_code: String(zipCode),
-      utm_source: utmSource,
-      utm_campaign: utmCampaign,
-      language: locale,
-      has_eligible_program: eligible.length > 0,
-      primary_program: primary?.id || null,
-    }).then(({ error }) => {
-      if (error && error.code !== '42P01') console.error('Screener start log error:', error);
-    });
+    // Awaited: Vercel can freeze the function the instant it responds, so a
+    // floating promise here would sometimes never land.
+    const { error: startError } = await supabaseAdmin
+      .from('covered_usa_screener_starts')
+      .insert({
+        state,
+        zip_code: String(zipCode),
+        utm_source: utmSource,
+        utm_campaign: utmCampaign,
+        language: locale,
+        has_eligible_program: eligible.length > 0,
+        primary_program: primary?.id || null,
+      });
+    if (startError && startError.code !== '42P01') {
+      console.error('[quick-check] SCREENER START LOG FAILED:', startError.message, startError);
+    }
 
     return NextResponse.json({
       state,
