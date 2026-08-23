@@ -1,223 +1,219 @@
 {
   "slug": "can-i-have-medicaid-and-aca",
   "subtype": "coverage",
-  "pageType": "coverage",
-  "topicCluster": "aca-coverage",
-  "keyTerms": {
-    "en": ["can i have aca and medicaid", "aca and medicaid at the same time 2026", "medicaid and marketplace insurance together", "aca medicaid overlap rules 2026", "medicaid disqualifies aca subsidy"],
-    "es": ["puedo tener aca y medicaid", "aca y medicaid al mismo tiempo 2026", "medicaid y mercado de seguros juntos", "reglas de superposicion aca medicaid 2026"]
-  },
-  "isLighthouse": false,
-  "isDeprecated": false,
   "question": {
     "en": "Can You Have Both ACA and Medicaid in 2026?",
-    "es": "¿Puede Tener ACA y Medicaid al Mismo Tiempo en 2026?"
+    "es": "¿Puede Tener Medicaid y un Plan del Mercado de ACA al Mismo Tiempo en 2026?"
   },
   "shortAnswer": {
-    "en": "No, not with subsidies. It's either Medicaid or ACA tax credits, not both.",
-    "es": "No, no con subsidios. Es Medicaid o créditos fiscales de ACA, no ambos."
+    "en": "No, in most cases; a few exceptions allow brief overlap.",
+    "es": "No, en la mayoría de los casos; existen algunas excepciones."
   },
   "fullAnswer": {
-    "en": "No, in most cases you cannot have both. Federal rule 26 U.S.C. 36B bars anyone eligible for Medicaid from receiving ACA marketplace premium tax credits, so the two programs are designed as either/or based on your household income against the 2026 federal poverty level. The narrow exceptions are split-household coverage (kids on Medicaid or CHIP while a parent uses marketplace subsidies), pregnancy-related Medicaid overlapping briefly with a marketplace plan during a coverage transition, and buying a full-price marketplace plan with no subsidy while Medicaid-eligible, which is legal but rarely worth the cost.",
-    "es": "No, en la mayoría de los casos no puede tener ambos. La regla federal 26 U.S.C. 36B prohíbe que cualquier persona elegible para Medicaid reciba créditos fiscales para primas del mercado de ACA, por lo que los dos programas están diseñados como uno u otro según el ingreso de su hogar frente al nivel federal de pobreza de 2026. Las excepciones limitadas son la cobertura dividida del hogar (niños en Medicaid o CHIP mientras un padre usa subsidios del mercado), Medicaid relacionado con el embarazo superponiéndose brevemente con un plan del mercado durante una transición de cobertura, y comprar un plan del mercado a precio completo sin subsidio mientras es elegible para Medicaid, lo cual es legal pero rara vez vale el costo."
+    "en": "No, in most cases. Medicaid eligibility ends ACA premium tax credit eligibility, so you must enroll in Medicaid instead of a subsidized Marketplace plan. In 2026, expansion-state adults qualify for Medicaid up to 138% of the federal poverty level ($22,025 for one person). A few exceptions, like pregnancy Medicaid, retroactive Medicaid, and split-eligibility households, allow brief or partial overlap.",
+    "es": "No, en la mayoría de los casos. La elegibilidad para Medicaid termina la elegibilidad para los créditos fiscales de prima del ACA, por lo que debe inscribirse en Medicaid en lugar de mantener un plan subsidiado del Mercado. En 2026, los adultos en estados de expansión califican para Medicaid hasta el 138% del nivel federal de pobreza ($22,025 para una persona). Algunas excepciones, como Medicaid por embarazo, Medicaid retroactivo y hogares con elegibilidad dividida, permiten una superposición breve o parcial."
   },
-  "category": "ACA",
-  "topic": "ACA and Medicaid Dual Enrollment Rules",
+  "category": "Coverage Q&A",
+  "topic": "ACA and Medicaid Dual Coverage Rules",
   "medicalSpecialty": "PublicHealth",
   "ctaTarget": "screener",
-  "lastUpdated": "2026-08-22",
+  "pageType": "coverage",
+  "lastUpdated": "2026-08-23",
   "readingTime": "8 min read",
 
   "meta": {
     "title": {
       "en": "Can You Have Both ACA and Medicaid in 2026? | CoveredUSA",
-      "es": "¿Puede Tener ACA y Medicaid en 2026? | CoveredUSA"
+      "es": "¿Medicaid y ACA al Mismo Tiempo en 2026? | CoveredUSA"
     },
     "description": {
-      "en": "No, not with subsidies in 2026: Medicaid eligibility blocks ACA premium tax credits. See exceptions, split-household rules, and what to do if income changes.",
-      "es": "No, no con subsidios en 2026: la elegibilidad para Medicaid bloquea los créditos fiscales de ACA. Vea las excepciones y qué hacer si cambia su ingreso."
+      "en": "No, in most cases. Medicaid eligibility ends ACA subsidies. See the 2026 rules, the 3 real exceptions, and what to do if you already have both.",
+      "es": "No, en la mayoría de los casos. La elegibilidad de Medicaid termina los subsidios de ACA. Vea las reglas 2026, las 3 excepciones reales y qué hacer si ya tiene ambos."
     }
   },
 
   "hero": {
     "h1": {
       "en": "Can You Have Both ACA and Medicaid in 2026?",
-      "es": "¿Puede Tener ACA y Medicaid al Mismo Tiempo en 2026?"
+      "es": "¿Puede Tener Medicaid y un Plan de ACA al Mismo Tiempo en 2026?"
     }
   },
 
   "introParagraphs": [
     {
-      "en": "Millions of households straddle the income line between Medicaid and the ACA marketplace every year, and the confusion is understandable: both programs cover essential health benefits, both use a version of Modified Adjusted Gross Income (MAGI) to check eligibility, and a small raise or a lost shift can flip a household from one to the other overnight. In 2026, the federal rule is strict on paper but has real seams in practice, especially for families where different members qualify for different programs.",
-      "es": "Millones de hogares se encuentran justo en la línea de ingresos entre Medicaid y el mercado de ACA cada año, y la confusión es comprensible: ambos programas cubren beneficios esenciales de salud, ambos usan una versión del Ingreso Bruto Ajustado Modificado (MAGI) para verificar la elegibilidad, y un pequeño aumento o un turno perdido puede cambiar a un hogar de uno a otro de la noche a la mañana. En 2026, la regla federal es estricta en el papel pero tiene grietas reales en la práctica, especialmente para familias donde diferentes miembros califican para diferentes programas."
+      "en": "Medicaid and the ACA Marketplace serve different income bands on purpose, and federal rule treats them as mutually exclusive for premium tax credit purposes. A household that qualifies for Medicaid cannot also collect subsidized Marketplace coverage for the same person in the same month, even though both programs share the same enrollment system at HealthCare.gov.",
+      "es": "Medicaid y el Mercado de ACA sirven a diferentes rangos de ingresos a propósito, y la regla federal los trata como mutuamente excluyentes para efectos de los créditos fiscales de prima. Un hogar que califica para Medicaid no puede también recibir cobertura subsidiada del Mercado para la misma persona en el mismo mes, aunque ambos programas compartan el mismo sistema de inscripción en HealthCare.gov."
     },
     {
-      "en": "CoveredUSA's guide below covers the federal rule that keeps ACA subsidies and Medicaid mutually exclusive, the real exceptions where overlap happens, what to do if your Medicaid eligibility changes mid-year while you hold a marketplace plan, and how this differs from Medicare-Medicaid dual eligibility. For income thresholds, see [Medicaid income limits](/en/medicaid-income-limits) and the [2026 federal poverty level chart](/en/federal-poverty-level).",
-      "es": "Esta guía cubre la regla federal que mantiene los subsidios de ACA y Medicaid mutuamente excluyentes, las excepciones reales donde ocurre la superposición, qué hacer si su elegibilidad para Medicaid cambia a mitad de año mientras tiene un plan del mercado, y cómo esto difiere de la elegibilidad dual Medicare-Medicaid. Para límites de ingresos, vea los límites de ingresos de Medicaid y la tabla del nivel federal de pobreza 2026."
+      "en": "The rest of this guide walks through the mutual-exclusivity rule for 2026, the real exceptions where a person legitimately holds both types of coverage at once, and what happens if the switch is not reported on time. For state-specific dollar thresholds, see the [Medicaid income limits by state](/en/medicaid-income-limits), and to check your own numbers, use the [eligibility screener](/screener).",
+      "es": "Esta guía explica la regla de exclusión mutua para 2026, las excepciones reales donde una persona legítimamente tiene ambos tipos de cobertura a la vez, y qué sucede si el cambio no se reporta a tiempo. Para los límites de ingresos específicos de su estado, consulte los [límites de ingresos de Medicaid por estado](/en/medicaid-income-limits), y use el [verificador de elegibilidad](/screener) para revisar sus propios números."
     }
   ],
 
   "coverageBreakdown": {
     "headers": {
-      "en": ["Household Situation (2026)", "Medicaid Eligible?", "ACA Subsidy Eligible?", "Can You Have Both?"],
-      "es": ["Situación del Hogar (2026)", "¿Elegible para Medicaid?", "¿Elegible para Subsidio ACA?", "¿Puede Tener Ambos?"]
+      "en": ["Situation", "Can You Have Both?", "What Applies", "Action Needed"],
+      "es": ["Situación", "¿Puede Tener Ambos?", "Qué Aplica", "Acción Necesaria"]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Adult under 138% FPL in a Medicaid expansion state ($22,025 for one person in 2026)", "es": "Adulto bajo 138% FPL en estado con expansión de Medicaid ($22,025 para una persona en 2026)" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Adult income under 138% FPL in a Medicaid expansion state", "es": "Adulto con ingreso menor al 138% FPL en un estado con expansión de Medicaid" },
           { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "No, Medicaid only", "es": "No, solo Medicaid" }, "status": "no" }
+          { "en": "Medicaid eligibility ends ACA premium tax credit eligibility; you must enroll in Medicaid instead", "es": "La elegibilidad de Medicaid termina la elegibilidad para créditos fiscales de ACA; debe inscribirse en Medicaid" },
+          { "en": "Report the Medicaid offer to the Marketplace within 30 days and cancel your Marketplace plan", "es": "Reporte la oferta de Medicaid al Mercado dentro de 30 días y cancele su plan del Mercado" }
         ]
       },
       {
         "cells": [
-          { "en": "Adult 139% to 400%+ FPL with no other qualifying coverage", "es": "Adulto de 139% a 400%+ FPL sin otra cobertura calificada" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
-          { "value": { "en": "No conflict, ACA only", "es": "Sin conflicto, solo ACA" }, "status": "yes" }
+          { "en": "Pregnant woman whose income qualifies for pregnancy Medicaid (commonly 185% to 322% FPL by state) while holding a Marketplace plan", "es": "Mujer embarazada cuyo ingreso califica para Medicaid por embarazo (comúnmente 185% a 322% FPL según el estado) mientras tiene un plan del Mercado" },
+          { "value": { "en": "Yes, limited scope", "es": "Sí, alcance limitado" }, "status": "yes" },
+          { "en": "Many states let pregnancy Medicaid pay pregnancy-related costs the Marketplace plan does not cover, alongside the existing policy", "es": "Muchos estados permiten que Medicaid por embarazo pague costos relacionados con el embarazo que el plan del Mercado no cubre, junto con la póliza existente" },
+          { "en": "Apply for pregnancy Medicaid through your state agency and confirm the state's coordination rules before dropping either plan", "es": "Solicite Medicaid por embarazo a través de su agencia estatal y confirme las reglas de coordinación del estado antes de cancelar cualquier plan" }
         ]
       },
       {
         "cells": [
-          { "en": "Pregnant woman above regular Medicaid limit but under her state's pregnancy-Medicaid threshold", "es": "Mujer embarazada sobre el límite regular de Medicaid pero bajo el umbral de Medicaid por embarazo de su estado" },
-          { "value": { "en": "Yes, pregnancy Medicaid", "es": "Sí, Medicaid por embarazo" }, "status": "yes" },
-          { "value": { "en": "Ends once Medicaid starts", "es": "Termina al iniciar Medicaid" }, "status": "partial" },
-          { "value": { "en": "Brief overlap during transition only", "es": "Solo superposición breve durante transición" }, "status": "partial" }
+          { "en": "Newly approved for retroactive Medicaid (covers up to 3 months before the application) while a Marketplace plan was still active", "es": "Recién aprobado para Medicaid retroactivo (cubre hasta 3 meses antes de la solicitud) mientras un plan del Mercado seguía activo" },
+          { "value": { "en": "Yes, temporarily", "es": "Sí, temporalmente" }, "status": "yes" },
+          { "en": "Overlap is common for the retroactive window; report the change promptly so future tax credits stop accruing", "es": "La superposición es común durante la ventana retroactiva; reporte el cambio pronto para que los créditos fiscales futuros dejen de acumularse" },
+          { "en": "Contact the Marketplace to end future premium tax credits once the Medicaid start date is confirmed", "es": "Contacte al Mercado para terminar los créditos fiscales futuros una vez confirmada la fecha de inicio de Medicaid" }
         ]
       },
       {
         "cells": [
-          { "en": "Parent's income too high for Medicaid, but children qualify for Medicaid or CHIP", "es": "Ingreso del padre demasiado alto para Medicaid, pero los hijos califican para Medicaid o CHIP" },
-          { "value": { "en": "Yes, children only", "es": "Sí, solo los hijos" }, "status": "partial" },
-          { "value": { "en": "Yes, for the parent", "es": "Sí, para el padre" }, "status": "yes" },
-          { "value": { "en": "Yes, split by household member", "es": "Sí, dividido por miembro del hogar" }, "status": "yes" }
+          { "en": "One household member qualifies for Medicaid or CHIP while another qualifies for subsidized Marketplace coverage", "es": "Un miembro del hogar califica para Medicaid o CHIP mientras otro califica para cobertura subsidiada del Mercado" },
+          { "value": { "en": "Yes, different people", "es": "Sí, personas diferentes" }, "status": "yes" },
+          { "en": "Split-eligibility households are common and allowed; each person enrolls in the program they individually qualify for", "es": "Los hogares con elegibilidad dividida son comunes y permitidos; cada persona se inscribe en el programa para el que califica individualmente" },
+          { "en": "List all household members on one Marketplace application so the system routes each person correctly", "es": "Incluya a todos los miembros del hogar en una sola solicitud del Mercado para que el sistema dirija a cada persona correctamente" }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare beneficiary who is also income-eligible for Medicaid (dual eligible)", "es": "Beneficiario de Medicare también elegible para Medicaid por ingresos (elegible dual)" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
-          { "value": { "en": "No, cannot buy subsidized ACA plan on Medicare", "es": "No, no puede comprar plan ACA subsidiado con Medicare" }, "status": "no" },
-          { "value": { "en": "No, this is Medicare+Medicaid, not ACA+Medicaid", "es": "No, esto es Medicare+Medicaid, no ACA+Medicaid" }, "status": "no" }
+          { "en": "Adult income above the state's low Medicaid limit but below 100% FPL in one of the 10 non-expansion states", "es": "Adulto con ingreso por encima del límite bajo de Medicaid del estado pero por debajo del 100% FPL en uno de los 10 estados sin expansión" },
+          { "value": { "en": "No, neither program", "es": "No, ningún programa" }, "status": "no" },
+          { "en": "Income is too high for that state's restrictive Medicaid limit but too low for full Marketplace subsidies, which only start at 100% FPL, so neither program applies", "es": "El ingreso es demasiado alto para el límite restrictivo de Medicaid de ese estado pero demasiado bajo para los subsidios completos del Mercado, que solo comienzan en el 100% FPL, por lo que ningún programa aplica" },
+          { "en": "Check Federally Qualified Health Centers, catastrophic plans, and CHIP for any children while confirming your exact FPL percentage every year", "es": "Consulte los Centros de Salud Federalmente Calificados, planes catastróficos y CHIP para los niños mientras confirma su porcentaje exacto de FPL cada año" }
         ]
       }
     ],
     "footnote": {
-      "en": "Eligibility for premium tax credits is governed by 26 U.S.C. 36B, which excludes anyone eligible for Medicaid, CHIP, or other minimum essential coverage. Household members are evaluated individually, so mixed households are common and legal.",
-      "es": "La elegibilidad para créditos fiscales de prima se rige por 26 U.S.C. 36B, que excluye a cualquier persona elegible para Medicaid, CHIP u otra cobertura esencial mínima. Los miembros del hogar se evalúan individualmente, por lo que los hogares mixtos son comunes y legales."
+      "en": "Adults below 100% FPL in the 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming) generally fall into the ACA coverage gap: too high-income for that state's Medicaid, too low-income for full Marketplace subsidies. That gap scenario is covered separately below.",
+      "es": "Los adultos por debajo del 100% FPL en los 10 estados sin expansión (Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming) generalmente caen en el vacío de cobertura del ACA: demasiado ingreso para el Medicaid de ese estado, muy poco ingreso para subsidios completos del Mercado. Ese escenario se cubre por separado más abajo."
     },
-    "source": "IRS 26 U.S.C. 36B, HealthCare.gov Medicaid and CHIP eligibility rules, KFF ACA-Medicaid interaction brief 2026"
+    "source": "Medicaid.gov, HealthCare.gov, KFF Medicaid Expansion Tracker 2026"
   },
 
   "detailSections": [
     {
       "heading": {
-        "en": "Direct answer",
-        "es": "Respuesta directa"
+        "en": "Direct Answer: Why ACA and Medicaid Rarely Overlap",
+        "es": "Respuesta Directa: Por Qué ACA y Medicaid Rara Vez Se Superponen"
       },
       "paragraphs": [
         {
-          "en": "No, you generally cannot have subsidized ACA marketplace coverage and Medicaid at the same time in 2026. Federal law makes Medicaid eligibility disqualify you from premium tax credits, so the two programs split households by income rather than overlap. The main exceptions: different family members qualifying for different programs, short transition overlaps, and buying a full-price unsubsidized marketplace plan while Medicaid-eligible.",
-          "es": "No, generalmente no puede tener cobertura subsidiada del mercado de ACA y Medicaid al mismo tiempo en 2026. La ley federal hace que la elegibilidad para Medicaid lo descalifique de los créditos fiscales de prima, por lo que los dos programas dividen a los hogares por ingreso en lugar de superponerse."
+          "en": "No, in most cases. Medicaid eligibility ends ACA premium tax credit eligibility, so you must enroll in Medicaid instead of a subsidized Marketplace plan. In 2026, expansion-state adults qualify for Medicaid up to 138% of the federal poverty level ($22,025 for one person). A few exceptions, like pregnancy Medicaid, retroactive Medicaid, and split-eligibility households, allow brief or partial overlap.",
+          "es": "No, en la mayoría de los casos. La elegibilidad para Medicaid termina la elegibilidad para los créditos fiscales de prima del ACA, por lo que debe inscribirse en Medicaid en lugar de un plan subsidiado del Mercado. En 2026, los adultos en estados de expansión califican para Medicaid hasta el 138% del nivel federal de pobreza ($22,025 para una persona). Algunas excepciones, como Medicaid por embarazo, Medicaid retroactivo y hogares con elegibilidad dividida, permiten una superposición breve o parcial."
         }
       ]
     },
     {
       "heading": {
-        "en": "Why the Programs Are Mutually Exclusive",
-        "es": "Por Qué los Programas Son Mutuamente Excluyentes"
+        "en": "The Federal Rule: Medicaid Eligibility Cancels ACA Subsidies",
+        "es": "La Regla Federal: La Elegibilidad de Medicaid Cancela los Subsidios de ACA"
       },
       "paragraphs": [
         {
-          "en": "The ACA built Medicaid and the marketplace as two halves of a single income ladder rather than two separate options a household can mix and match. Section 36B of the federal tax code, the statute that creates premium tax credits, specifically excludes anyone eligible for Medicaid, CHIP, or other minimum essential coverage from receiving a subsidy. When you apply on HealthCare.gov or a state exchange, the application checks your household's Modified Adjusted Gross Income (MAGI) against your state's 2026 Medicaid threshold first. If you fall under that line in a Medicaid expansion state (138% of the federal poverty level, or $22,025 for one person in 2026), the system routes you to Medicaid and does not offer subsidized marketplace coverage.",
-          "es": "El ACA construyó Medicaid y el mercado como dos mitades de una sola escalera de ingresos en lugar de dos opciones separadas que un hogar puede combinar. La Sección 36B del código fiscal federal excluye específicamente a cualquier persona elegible para Medicaid, CHIP u otra cobertura esencial mínima de recibir un subsidio. Cuando solicita en HealthCare.gov o un intercambio estatal, la solicitud verifica primero el Ingreso Bruto Ajustado Modificado (MAGI) de su hogar contra el umbral de Medicaid de su estado para 2026. Si cae bajo esa línea en un estado con expansión de Medicaid (138% del nivel federal de pobreza, o $22,025 para una persona en 2026), el sistema lo dirige a Medicaid y no ofrece cobertura de mercado subsidiada."
+          "en": "Federal law under the Affordable Care Act bars anyone found eligible for Medicaid from receiving advance premium tax credits (APTC) for a Marketplace plan in the same month. The Marketplace application checks Modified Adjusted Gross Income (MAGI) against your state's Medicaid threshold first, and only applicants above that line move on to subsidy calculations. In the 40 states plus DC that expanded Medicaid, adults qualify up to 138% of the federal poverty level, $22,025 for a household of one and $45,540 for a household of four in 2026. Marketplace subsidies pick up starting just above that line, so the two programs are designed to sit back to back rather than stack.",
+          "es": "La ley federal bajo la Ley de Cuidado de Salud a Bajo Precio prohíbe que cualquier persona elegible para Medicaid reciba créditos fiscales de prima anticipados (APTC) para un plan del Mercado en el mismo mes. La solicitud del Mercado revisa el Ingreso Bruto Ajustado Modificado (MAGI) contra el umbral de Medicaid de su estado primero, y solo los solicitantes por encima de esa línea pasan al cálculo de subsidios. En los 40 estados más DC que expandieron Medicaid, los adultos califican hasta el 138% del nivel federal de pobreza, $22,025 para un hogar de una persona y $45,540 para un hogar de cuatro en 2026. Los subsidios del Mercado comienzan justo por encima de esa línea, por lo que los dos programas están diseñados para ir uno tras otro en lugar de superponerse."
         },
         {
-          "en": "Federal design means the two programs are not competing options like Medicare Advantage versus Medigap. You do not pick whichever one has better benefits; your household MAGI determines which one applies to you, and the marketplace application enforces that automatically. Both ACA-compliant marketplace plans and Medicaid cover overlapping essential health benefits (preventive care, maternity, mental health, prescription drugs) and both must accept you regardless of any preexisting condition, so the exclusivity rule is about preventing duplicate federal subsidy spending, not about benefit gaps.",
-          "es": "Esta elección de diseño importa porque significa que los dos programas no son opciones que compiten. No elige el que tenga mejores beneficios; el MAGI de su hogar determina cuál aplica a usted, y la solicitud del mercado lo aplica automáticamente. Los planes del mercado compatibles con ACA y Medicaid cubren beneficios esenciales de salud superpuestos, por lo que la regla de exclusividad busca evitar el gasto duplicado de subsidios federales, no dejar vacíos en la cobertura."
+          "en": "Ten states, Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming, have not expanded Medicaid, so their Medicaid income limits sit far below 138% FPL for many adults. That gap matters more in 2026 because the enhanced premium tax credits from the American Rescue Plan and Inflation Reduction Act expired on January 1, 2026, and the original ACA subsidy cliff at 400% FPL returned. Households straddling these lines should recheck both programs every year.",
+          "es": "Diez estados, Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming, no han expandido Medicaid, por lo que sus límites de ingreso de Medicaid están muy por debajo del 138% FPL para muchos adultos. Esa brecha importa más en 2026 porque los créditos fiscales de prima mejorados del Plan de Rescate Americano y la Ley de Reducción de la Inflación expiraron el 1 de enero de 2026, y regresó el precipicio original de subsidios de ACA en el 400% FPL. Los hogares que están cerca de estas líneas deben revisar ambos programas cada año."
         }
       ]
     },
     {
       "heading": {
-        "en": "The Real Exceptions Where Overlap Happens",
-        "es": "Las Excepciones Reales Donde Ocurre la Superposición"
+        "en": "The 3 Real Exceptions Where Coverage Overlaps",
+        "es": "Las 3 Excepciones Reales Donde la Cobertura Se Superpone"
       },
       "paragraphs": [
         {
-          "en": "Three scenarios produce genuine overlap or near-overlap between Medicaid and ACA coverage in 2026. First, pregnancy-related Medicaid: many states extend Medicaid to pregnant women at a higher income threshold than regular adult Medicaid, and someone who was on a marketplace plan when she became pregnant can end up briefly holding both while the state processes the switch, though marketplace subsidies stop once Medicaid coverage is confirmed. Second, buying a full-price marketplace plan: nothing in federal law stops a Medicaid-eligible person from purchasing an unsubsidized ACA-compliant plan instead of enrolling in Medicaid, though almost nobody does this because Medicaid has no premiums and lower cost-sharing. Third, retroactive Medicaid: some states approve Medicaid coverage retroactive to the first day of the month of application, which can create a paper overlap with a marketplace plan you already paid for that month.",
-          "es": "Tres escenarios producen superposición genuina o casi superposición entre Medicaid y la cobertura de ACA en 2026. Primero, Medicaid por embarazo: muchos estados extienden Medicaid a mujeres embarazadas con un umbral de ingreso más alto que el Medicaid regular para adultos, y alguien que estaba en un plan del mercado cuando quedó embarazada puede terminar sosteniendo brevemente ambos mientras el estado procesa el cambio. Segundo, comprar un plan de mercado a precio completo: nada en la ley federal impide que una persona elegible para Medicaid compre un plan compatible con ACA sin subsidio en lugar de inscribirse en Medicaid. Tercero, Medicaid retroactivo: algunos estados aprueban la cobertura de Medicaid retroactiva al primer día del mes de la solicitud, lo que puede crear una superposición en papel con un plan de mercado que ya pagó ese mes."
+          "en": "Three legitimate situations create genuine overlap between Medicaid and a Marketplace plan in 2026, even though the general rule forbids stacking the two:",
+          "es": "Tres situaciones legítimas crean una superposición genuina entre Medicaid y un plan del Mercado en 2026, aunque la regla general prohíbe combinar ambos:"
+        }
+      ],
+      "list": [
+        { "en": "Pregnancy Medicaid: many states set pregnancy-related Medicaid income limits well above the regular adult limit, commonly 185% to 322% FPL in 2026 depending on the state. A pregnant woman already enrolled in a Marketplace plan can apply for pregnancy Medicaid, which pays pregnancy-related costs the Marketplace plan does not cover, alongside the existing policy.", "es": "Medicaid por embarazo: muchos estados fijan los límites de ingreso de Medicaid relacionado con el embarazo muy por encima del límite regular para adultos, comúnmente entre 185% y 322% FPL en 2026 según el estado. Una mujer embarazada ya inscrita en un plan del Mercado puede solicitar Medicaid por embarazo, que paga los costos relacionados con el embarazo que el plan del Mercado no cubre, junto con la póliza existente." },
+        { "en": "Retroactive Medicaid: Medicaid can cover up to three months before the application date. If that retroactive window falls while a Marketplace plan with tax credits was active, both technically covered the same period, though future tax credits should stop once the new Medicaid eligibility is confirmed.", "es": "Medicaid retroactivo: Medicaid puede cubrir hasta tres meses antes de la fecha de solicitud. Si esa ventana retroactiva cae mientras un plan del Mercado con créditos fiscales estaba activo, ambos técnicamente cubrieron el mismo período, aunque los créditos fiscales futuros deben detenerse una vez confirmada la nueva elegibilidad de Medicaid." },
+        { "en": "Split-eligibility households: one family member's income and category, such as being a child, pregnant, or disabled, can qualify them for Medicaid or CHIP while another family member on the same application qualifies only for subsidized Marketplace coverage. Each person enrolls in the program that matches their own eligibility.", "es": "Hogares con elegibilidad dividida: el ingreso y la categoría de un miembro de la familia, como ser niño, estar embarazada o tener una discapacidad, puede calificarlo para Medicaid o CHIP mientras otro miembro de la familia en la misma solicitud califica solo para cobertura subsidiada del Mercado. Cada persona se inscribe en el programa que corresponde a su propia elegibilidad." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Happens If You Don't Report the Switch",
+        "es": "Qué Sucede Si No Reporta el Cambio"
+      },
+      "paragraphs": [
+        {
+          "en": "Households that keep collecting advance premium tax credits after Medicaid coverage begins risk a repayment notice at tax time. According to HealthCare.gov guidance, if the Marketplace application reported income accurately and a later Medicaid approval was based on updated information, the household generally will not have to repay the credits already used. If the Medicaid approval instead reveals inaccurate reporting at the time of the original application, repayment can range from a few hundred dollars up to the full annual credit amount, sometimes several thousand dollars for a family plan in 2026, subject to income-based repayment caps.",
+          "es": "Los hogares que siguen recibiendo créditos fiscales de prima anticipados después de que comienza la cobertura de Medicaid corren el riesgo de recibir un aviso de reembolso al momento de declarar impuestos. Según la guía de HealthCare.gov, si la solicitud del Mercado reportó el ingreso con precisión y una aprobación posterior de Medicaid se basó en información actualizada, el hogar generalmente no tendrá que reembolsar los créditos ya usados. Si la aprobación de Medicaid en cambio revela información inexacta al momento de la solicitud original, el reembolso puede ir desde unos cientos de dólares hasta el monto completo del crédito anual, a veces varios miles de dólares para un plan familiar en 2026, sujeto a los límites de reembolso basados en ingresos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Switch From a Marketplace Plan to Medicaid",
+        "es": "Cómo Cambiar de un Plan del Mercado a Medicaid"
+      },
+      "paragraphs": [
+        {
+          "en": "Switching cleanly avoids both a coverage gap and a tax credit repayment problem. HealthCare.gov and every state Medicaid agency follow the same basic sequence in 2026:",
+          "es": "Cambiar de forma ordenada evita tanto un vacío de cobertura como un problema de reembolso de créditos fiscales. HealthCare.gov y cada agencia estatal de Medicaid siguen la misma secuencia básica en 2026:"
+        }
+      ],
+      "list": [
+        { "en": "Step 1: Wait for your state Medicaid agency's written eligibility determination before canceling anything.", "es": "Paso 1: Espere la determinación de elegibilidad por escrito de la agencia estatal de Medicaid antes de cancelar algo." },
+        { "en": "Step 2: Log in to HealthCare.gov, or your state-based Marketplace, and report the Medicaid approval as a life change.", "es": "Paso 2: Inicie sesión en HealthCare.gov, o el Mercado de su estado, y reporte la aprobación de Medicaid como un cambio de vida." },
+        { "en": "Step 3: End your Marketplace plan effective the day before Medicaid coverage starts to avoid a coverage gap.", "es": "Paso 3: Termine su plan del Mercado con efecto el día antes de que comience la cobertura de Medicaid para evitar un vacío de cobertura." },
+        { "en": "Step 4: Confirm your final Marketplace premium tax credits stop the same month Medicaid begins.", "es": "Paso 4: Confirme que sus créditos fiscales de prima del Mercado se detengan el mismo mes en que comienza Medicaid." },
+        { "en": "Step 5: Enroll in your state's Medicaid managed care plan and pick a primary care provider.", "es": "Paso 5: Inscríbase en el plan de cuidado administrado de Medicaid de su estado y elija un proveedor de atención primaria." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicare and Medicaid Together vs. ACA and Medicaid",
+        "es": "Medicare y Medicaid Juntos vs. ACA y Medicaid"
+      },
+      "paragraphs": [
+        {
+          "en": "Dual-eligible describes the roughly 12 million Americans who qualify for both Medicare and Medicaid at once, and that combination works completely differently from the ACA-and-Medicaid question above. Original Medicare pays first for a dual-eligible person, with Medicare Part A covering hospital stays, Medicare Part B covering outpatient care, and Medicare Part D covering prescription drugs, while Medicaid wraps around to cover cost-sharing, long-term care, and services Medicare does not reach. Many dual-eligible beneficiaries choose a Medicare Advantage Dual Special Needs Plan instead of Original Medicare, and Medigap policies generally are not sold to Medicaid-eligible dual enrollees because Medicaid already covers the cost-sharing Medigap would otherwise fill.",
+          "es": "Elegibilidad dual describe a los aproximadamente 12 millones de estadounidenses que califican para Medicare y Medicaid a la vez, y esa combinación funciona de manera completamente diferente a la pregunta de ACA y Medicaid anterior. Medicare Original, con la Parte A de cobertura hospitalaria y la Parte B de cobertura ambulatoria, paga primero para una persona con elegibilidad dual, Medicare Parte D cubre medicamentos recetados, y Medicaid cubre los costos compartidos, cuidado a largo plazo y servicios que Medicare no cubre. Muchos beneficiarios con elegibilidad dual eligen un Plan de Necesidades Especiales Dual de Medicare Advantage en lugar de Medicare Original, y las pólizas Medigap generalmente no se venden a inscritos duales elegibles para Medicaid porque Medicaid ya cubre los costos compartidos que Medigap cubriría."
         },
         {
-          "en": "The 10 states that have not expanded Medicaid (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming) create a fourth, harsher scenario: the ACA coverage gap. Adults in these states with income below 100% FPL do not qualify for marketplace subsidies (which start at 100% FPL) and often do not qualify for traditional Medicaid either unless they are pregnant, disabled, or caring for a dependent child under a low state-set income limit. That population gets neither program, not both.",
-          "es": "Los 10 estados que no han expandido Medicaid (Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming) crean un cuarto escenario, más severo: la brecha de cobertura de ACA. Los adultos en estos estados con ingresos por debajo del 100% FPL no califican para subsidios del mercado (que comienzan en 100% FPL) y a menudo tampoco califican para Medicaid tradicional a menos que estén embarazadas, discapacitadas o cuidando a un hijo dependiente bajo un límite de ingreso estatal bajo. Esa población no obtiene ningún programa, no ambos."
-        }
-      ]
-    },
-    {
-      "heading": {
-        "en": "If Your Income Changes Mid-Year on a Marketplace Plan",
-        "es": "Si Su Ingreso Cambia a Mitad de Año en un Plan de Mercado"
-      },
-      "paragraphs": [
-        {
-          "en": "You are required to report a household income drop to your marketplace within 30 days if it puts you under your state's 2026 Medicaid threshold. Once your state's Medicaid agency confirms eligibility, your marketplace premium tax credits stop and you must enroll in Medicaid to keep coverage without a gap. If you do not report the change and keep receiving advance premium tax credits while Medicaid-eligible, you may have to repay some or all of that subsidy when you file your federal taxes and reconcile it on IRS Form 8962, since the credit was calculated based on income that no longer reflected your Medicaid eligibility.",
-          "es": "Debe reportar una caída en el ingreso del hogar a su mercado dentro de 30 días si lo pone bajo el umbral de Medicaid de su estado para 2026. Una vez que la agencia de Medicaid de su estado confirma la elegibilidad, sus créditos fiscales de prima del mercado se detienen y debe inscribirse en Medicaid para mantener la cobertura sin interrupción. Si no reporta el cambio y sigue recibiendo créditos fiscales de prima anticipados mientras es elegible para Medicaid, es posible que deba reembolsar parte o todo ese subsidio al presentar sus impuestos federales y conciliarlo en el Formulario 8962 del IRS."
-        }
-      ]
-    },
-    {
-      "heading": {
-        "en": "Don't Confuse This With Medicare and Medicaid Dual Eligibility",
-        "es": "No Confunda Esto Con la Elegibilidad Dual de Medicare y Medicaid"
-      },
-      "paragraphs": [
-        {
-          "en": "A separate and unrelated concept is Medicare-Medicaid dual eligibility, which about 12 million Americans have. That combination is legal and common: Original Medicare (Medicare Part A hospital coverage and Medicare Part B outpatient coverage) or Medicare Advantage pays first, and Medicaid pays remaining cost-sharing and services Medicare does not cover, like long-term nursing home care. Someone on Medicare cannot enroll in a subsidized ACA marketplace plan at all, whether or not they also have Medicaid, because federal rule bars marketplace subsidies once you have Medicare Part A or Part B. Medigap policies and Medicare Part D drug plans are also separate from the ACA marketplace entirely.",
-          "es": "Un concepto separado y no relacionado es la elegibilidad dual de Medicare y Medicaid, que tienen aproximadamente 12 millones de estadounidenses. Esa combinación es legal y común: Medicare Original (Parte A cobertura hospitalaria y Parte B cobertura ambulatoria) o Medicare Advantage paga primero, y Medicaid paga los costos compartidos restantes y servicios que Medicare no cubre, como cuidado de enfermería a largo plazo. Alguien con Medicare no puede inscribirse en un plan de mercado ACA subsidiado en absoluto, tenga o no también Medicaid, porque la regla federal prohíbe los subsidios del mercado una vez que tiene Medicare Parte A o Parte B."
-        },
-        {
-          "en": "If you are asking this question because you or a family member is turning 65 or already has Medicare, see [can I have both Medicare and Medicaid](/en/qa/can-i-have-both-medicare-and-medicaid) for the dual-eligible rules, which are entirely different from the ACA-Medicaid question answered here.",
-          "es": "Si hace esta pregunta porque usted o un familiar está cumpliendo 65 años o ya tiene Medicare, consulte la guía sobre elegibilidad dual de Medicare y Medicaid, que son reglas completamente diferentes a la pregunta de ACA-Medicaid respondida aquí."
+          "en": "The ACA Marketplace and Medicaid rule is the opposite: the two are mutually exclusive for the same person in the same month, aside from the exceptions above. An ACA-compliant Marketplace plan must cover the 10 essential health benefits and cannot deny coverage or charge more for a preexisting condition, but once Medicaid eligibility is confirmed, the Marketplace plan is no longer available with tax credits for that person.",
+          "es": "La regla del Mercado de ACA y Medicaid es la opuesta: los dos son mutuamente excluyentes para la misma persona en el mismo mes, aparte de las excepciones anteriores. Un plan del Mercado conforme al ACA debe cubrir los 10 beneficios esenciales de salud y no puede negar cobertura ni cobrar más por una condición preexistente, pero una vez confirmada la elegibilidad de Medicaid, el plan del Mercado ya no está disponible con créditos fiscales para esa persona."
         }
       ]
     },
     {
       "heading": {
         "en": "Alternatives If You Don't Qualify for Either Program",
-        "es": "Alternativas Si No Califica Para Ningún Programa"
+        "es": "Alternativas Si No Califica Para Ninguno de los Dos Programas"
       },
       "paragraphs": [
         {
-          "en": "People who land in the ACA coverage gap, whose income is too high for Medicaid but too low or otherwise excluded from marketplace subsidies, or who simply need coverage while a Medicaid application is pending, have several concrete options in 2026:",
-          "es": "Las personas que caen en la brecha de cobertura de ACA, cuyo ingreso es demasiado alto para Medicaid pero demasiado bajo o excluido de los subsidios del mercado, o que simplemente necesitan cobertura mientras una solicitud de Medicaid está pendiente, tienen varias opciones concretas en 2026:"
+          "en": "Adults caught in the ACA coverage gap, income above a non-expansion state's Medicaid limit but below 100% FPL, do not automatically get help from either program in 2026. A short list of alternatives fills part of that hole:",
+          "es": "Los adultos atrapados en el vacío de cobertura del ACA, con ingreso por encima del límite de Medicaid de un estado sin expansión pero por debajo del 100% FPL, no reciben ayuda automática de ninguno de los dos programas en 2026. Una lista corta de alternativas llena parte de ese vacío:"
         }
       ],
       "list": [
-        { "en": "CHIP for children: kids in a household that is over the Medicaid income limit but under the CHIP limit (often 200% to 300% FPL depending on the state) can be covered separately from their parents' marketplace plan, usually for a low premium or free.", "es": "CHIP para niños: los niños en un hogar que supera el límite de ingreso de Medicaid pero está bajo el límite de CHIP (a menudo 200% a 300% FPL según el estado) pueden estar cubiertos separadamente del plan de mercado de sus padres, usualmente por una prima baja o gratis." },
-        { "en": "Full-price ACA marketplace plan: legal for anyone regardless of Medicaid eligibility, and worth comparing if you are close to the Medicaid income cutoff and expect a raise soon; you keep continuous ACA-compliant coverage without a gap.", "es": "Plan de mercado ACA a precio completo: legal para cualquier persona sin importar la elegibilidad para Medicaid, y vale la pena comparar si está cerca del límite de ingreso de Medicaid y espera un aumento pronto." },
-        { "en": "Employer-sponsored coverage: if either spouse has access to affordable employer coverage, that often disqualifies the household from ACA subsidies anyway, so enrolling directly may be the simplest path.", "es": "Cobertura patrocinada por el empleador: si cualquiera de los cónyuges tiene acceso a cobertura patrocinada por el empleador asequible, eso a menudo descalifica al hogar de los subsidios de ACA de todos modos." },
-        { "en": "COBRA continuation coverage: available for up to 18 to 36 months after a qualifying job loss or reduction in hours, though it is typically the most expensive option since you pay the full premium plus an administrative fee.", "es": "Cobertura de continuación COBRA: disponible hasta por 18 a 36 meses después de una pérdida de empleo calificada, aunque es típicamente la opción más costosa ya que paga la prima completa más una cuota administrativa." },
-        { "en": "Community health centers: Federally Qualified Health Centers (FQHCs) offer sliding-scale primary and preventive care based on income regardless of insurance status, a practical bridge while an application is pending.", "es": "Centros de salud comunitarios: los Centros de Salud Calificados Federalmente (FQHCs) ofrecen atención primaria y preventiva en escala móvil según el ingreso sin importar el estado del seguro." },
-        { "en": "State Basic Health Programs: Minnesota and New York run a Basic Health Program that covers people between roughly 138% and 200% FPL with lower premiums than standard marketplace plans, filling part of the gap between Medicaid and full-price ACA coverage.", "es": "Programas Básicos de Salud estatales: Minnesota y Nueva York operan un Programa Básico de Salud que cubre a personas entre aproximadamente 138% y 200% FPL con primas más bajas que los planes estándar del mercado." }
-      ]
-    },
-    {
-      "heading": {
-        "en": "How to Figure Out Which Program Applies to You",
-        "es": "Cómo Averiguar Qué Programa le Aplica"
-      },
-      "paragraphs": [
-        {
-          "en": "Start with a single application rather than guessing. Every state marketplace, whether HealthCare.gov or a state-run exchange, is required to screen your entire household for both Medicaid and marketplace subsidy eligibility at the same time, so you never have to apply twice or figure out the income math yourself. Use the 2026 federal poverty level ($15,960 for one person in the 48 contiguous states and DC, plus $5,500 for each additional household member) as a rough guide, then confirm your state's exact Medicaid threshold, since expansion states cover up to 138% FPL and non-expansion states set their own lower limits.",
-          "es": "Comience con una sola solicitud en lugar de adivinar. Cada mercado estatal, ya sea HealthCare.gov o un intercambio administrado por el estado, está obligado a evaluar a todo su hogar para elegibilidad de Medicaid y subsidio del mercado al mismo tiempo, por lo que nunca tiene que aplicar dos veces. Use el nivel federal de pobreza 2026 ($15,960 para una persona en los 48 estados contiguos y DC, más $5,500 por cada miembro adicional del hogar) como guía aproximada, luego confirme el umbral exacto de Medicaid de su estado."
-        },
-        {
-          "en": "One quirk worth knowing: the 2026 ACA marketplace uses the 2025 federal poverty guidelines ($15,650 for one person) to calculate premium tax credits, while state Medicaid agencies use the current 2026 guidelines to determine Medicaid eligibility. That one-year lag is standard and intentional, but it can create small mismatches near the cutoff line. Use CoveredUSA's screener to check both programs against your actual household numbers before you assume you know the answer.",
-          "es": "Una particularidad que vale la pena conocer: el mercado ACA 2026 usa las pautas federales de pobreza de 2025 ($15,650 para una persona) para calcular créditos fiscales de prima, mientras que las agencias estatales de Medicaid usan las pautas actuales de 2026 para determinar la elegibilidad de Medicaid. Ese retraso de un año es estándar e intencional, pero puede crear pequeños desajustes cerca de la línea de corte."
-        }
+        { "en": "Federally Qualified Health Centers (FQHCs): sliding-scale primary care and behavioral health regardless of insurance status.", "es": "Centros de Salud Federalmente Calificados (FQHCs): atención primaria y de salud conductual a escala móvil sin importar el estado de seguro." },
+        { "en": "Catastrophic Marketplace plans: available to anyone under 30 or with a hardship exemption, lower premium but a high deductible.", "es": "Planes catastróficos del Mercado: disponibles para cualquier persona menor de 30 años o con una exención por dificultades, prima más baja pero deducible alto." },
+        { "en": "CHIP for children: kids in the household often qualify for CHIP even when the parents fall in the coverage gap, with income limits well above the adult Medicaid line.", "es": "CHIP para niños: los niños del hogar a menudo califican para CHIP incluso cuando los padres caen en el vacío de cobertura, con límites de ingreso muy por encima de la línea de Medicaid para adultos." },
+        { "en": "State or county general-assistance programs: several non-expansion states run limited state-funded coverage for specific populations.", "es": "Programas estatales o de condado de asistencia general: varios estados sin expansión operan cobertura limitada financiada por el estado para poblaciones específicas." },
+        { "en": "Free navigator help: local Marketplace and Medicaid navigators can re-check every program at once at no cost.", "es": "Ayuda gratuita de navegadores: los navegadores locales del Mercado y de Medicaid pueden revisar todos los programas a la vez sin costo." }
       ]
     }
   ],
@@ -225,86 +221,82 @@
   "faqs": {
     "en": [
       {
-        "question": "Can I buy a full-price ACA marketplace plan if I qualify for Medicaid?",
-        "answer": "Yes. Nothing in federal law bars you from purchasing an unsubsidized ACA-compliant marketplace plan even if you are Medicaid-eligible. You just will not receive premium tax credits or cost-sharing reductions. Almost nobody chooses this route because Medicaid has no monthly premium and lower out-of-pocket costs, but it is legal."
+        "question": "Can I have Medicaid and an ACA Marketplace plan with subsidies at the same time in 2026?",
+        "answer": "Generally no. Federal rule blocks advance premium tax credits for anyone Medicaid finds eligible in the same month, so once your state confirms Medicaid eligibility, you must switch instead of keeping a subsidized Marketplace plan. Expansion-state adults qualify for Medicaid up to 138% of the federal poverty level in 2026, $22,025 for one person. A few narrow exceptions, covered above, allow brief overlap."
       },
       {
-        "question": "What happens if I get ACA subsidies and then become Medicaid-eligible mid-year?",
-        "answer": "You must report the income change to your marketplace within 30 days. Your premium tax credits stop once your state confirms Medicaid eligibility, and you should enroll in Medicaid to avoid a coverage gap. If you fail to report the change, you may owe back some or all of the advance premium tax credit when you reconcile it on IRS Form 8962 at tax time."
+        "question": "What happens if I get approved for Medicaid after I already have a Marketplace plan?",
+        "answer": "Wait for the written Medicaid determination, then report it to the Marketplace and end your Marketplace plan effective the day before Medicaid coverage starts. This avoids a coverage gap and stops future premium tax credits from accruing on a plan you no longer need."
       },
       {
-        "question": "Can my kids be on Medicaid or CHIP while I have an ACA marketplace plan?",
-        "answer": "Yes. Marketplace and Medicaid eligibility are determined per household member, not per household. It is common and fully legal for children to qualify for Medicaid or CHIP based on their own income test while a parent's income is too high for Medicaid and instead qualifies for ACA marketplace subsidies."
+        "question": "Will I have to repay ACA premium tax credits if I become eligible for Medicaid?",
+        "answer": "Usually not, as long as the income and household information on your original Marketplace application was accurate. If your Medicaid approval reflects information that was inaccurate or unreported when you applied for Marketplace coverage, you may owe some or all of the credit back, subject to 2026 income-based repayment caps."
       },
       {
-        "question": "Is Medicare and Medicaid dual eligibility the same as ACA and Medicaid?",
-        "answer": "No, they are completely different. Medicare-Medicaid dual eligibility (about 12 million Americans) is legal and common: Medicare pays first and Medicaid covers remaining costs. Once you have Medicare Part A or Part B, federal rules bar you from buying a subsidized ACA marketplace plan at all, so the ACA-Medicaid question in this article does not apply to Medicare beneficiaries."
+        "question": "Can a pregnant woman have both Medicaid and a Marketplace plan?",
+        "answer": "Yes, in many states. Pregnancy-related Medicaid income limits often run well above the regular adult limit, commonly 185% to 322% of the federal poverty level in 2026 depending on the state, so a pregnant woman already on a Marketplace plan can add pregnancy Medicaid, which pays pregnancy-related costs the Marketplace plan does not cover."
       },
       {
-        "question": "What income level determines whether I get Medicaid or ACA subsidies in 2026?",
-        "answer": "In the 40 states plus DC that expanded Medicaid, adults under 138% of the federal poverty level ($22,025 for one person in 2026) generally qualify for Medicaid, and those from 139% up to 400%+ FPL generally qualify for ACA marketplace subsidies instead. The 10 non-expansion states set their own, usually lower, Medicaid income limits."
+        "question": "Can one family member have Medicaid while another has a Marketplace plan?",
+        "answer": "Yes. Split-eligibility households are common. Each household member is evaluated individually: children often qualify for Medicaid or CHIP at higher income limits than adults, so a parent can hold a subsidized Marketplace plan while a child is enrolled in Medicaid or CHIP on the same household application."
       },
       {
-        "question": "Can a pregnant woman have both Medicaid and an ACA marketplace plan?",
-        "answer": "Only briefly, during a transition. Many states cover pregnant women under Medicaid at a higher income threshold than regular adult Medicaid. If she was on a marketplace plan when she became pregnant, there can be a short overlap while the state processes her Medicaid application, but marketplace premium tax credits stop once Medicaid pregnancy coverage is confirmed."
+        "question": "What if my state didn't expand Medicaid and I fall in the coverage gap?",
+        "answer": "Adults in the 10 non-expansion states, Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming, with income above the state's low Medicaid limit but below 100% of the federal poverty level generally do not qualify for either program. Federally Qualified Health Centers, catastrophic plans, and CHIP for any children in the household are the main fallback options."
       },
       {
-        "question": "Do I have to repay ACA subsidies if I was actually Medicaid-eligible?",
-        "answer": "Possibly. If you received advance premium tax credits during a period when your household income actually made you Medicaid-eligible and you did not report the change, the IRS reconciliation process on Form 8962 can require repayment of some or all of that subsidy, depending on your income relative to the federal poverty level."
+        "question": "Does having Medicare and Medicaid work the same way as ACA and Medicaid?",
+        "answer": "No. Dual-eligible describes about 12 million Americans who legitimately hold both Medicare and Medicaid at once, with Medicare paying first and Medicaid wrapping around the cost-sharing. That is different from the ACA Marketplace rule, which generally blocks Medicaid recipients from also collecting Marketplace premium tax credits."
       },
       {
-        "question": "How do the 10 non-expansion states affect the ACA-Medicaid choice?",
-        "answer": "Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming have not expanded Medicaid. Adults there with income under 100% FPL often qualify for neither traditional Medicaid nor ACA marketplace subsidies (which start at 100% FPL), creating what is known as the ACA coverage gap rather than an overlap."
+        "question": "How do I cancel my Marketplace plan once Medicaid starts?",
+        "answer": "Log in to HealthCare.gov or your state-based Marketplace, report the Medicaid approval as a life change, and select an end date the day before Medicaid coverage begins. HealthCare.gov's Medicaid and CHIP cancellation page walks through the exact screens for 2026 plans."
       }
     ],
     "es": [
       {
-        "question": "¿Puedo comprar un plan de mercado ACA a precio completo si califico para Medicaid?",
-        "answer": "Sí. Nada en la ley federal le impide comprar un plan de mercado compatible con ACA sin subsidio incluso si es elegible para Medicaid. Simplemente no recibirá créditos fiscales de prima ni reducciones de costos compartidos. Casi nadie elige esta ruta porque Medicaid no tiene prima mensual y costos de bolsillo más bajos, pero es legal."
+        "question": "¿Puedo tener Medicaid y un plan del Mercado de ACA con subsidios al mismo tiempo en 2026?",
+        "answer": "Generalmente no. La regla federal bloquea los créditos fiscales de prima anticipados para cualquier persona que Medicaid considere elegible en el mismo mes, así que una vez que su estado confirme la elegibilidad de Medicaid, debe cambiar en lugar de mantener un plan subsidiado del Mercado. Los adultos en estados de expansión califican para Medicaid hasta el 138% del nivel federal de pobreza en 2026, $22,025 para una persona. Algunas excepciones limitadas, cubiertas arriba, permiten una superposición breve."
       },
       {
-        "question": "¿Qué pasa si recibo subsidios de ACA y luego me vuelvo elegible para Medicaid a mitad de año?",
-        "answer": "Debe reportar el cambio de ingreso a su mercado dentro de 30 días. Sus créditos fiscales de prima se detienen una vez que su estado confirma la elegibilidad para Medicaid, y debe inscribirse en Medicaid para evitar una interrupción en la cobertura. Si no reporta el cambio, es posible que deba reembolsar parte o todo el crédito fiscal de prima anticipado al conciliarlo en el Formulario 8962 del IRS."
+        "question": "¿Qué sucede si me aprueban Medicaid después de que ya tengo un plan del Mercado?",
+        "answer": "Espere la determinación escrita de Medicaid, luego repórtela al Mercado y termine su plan del Mercado con efecto el día antes de que comience la cobertura de Medicaid. Esto evita un vacío de cobertura y detiene la acumulación de futuros créditos fiscales de prima en un plan que ya no necesita."
       },
       {
-        "question": "¿Pueden mis hijos estar en Medicaid o CHIP mientras yo tengo un plan de mercado ACA?",
-        "answer": "Sí. La elegibilidad del mercado y Medicaid se determina por miembro del hogar, no por hogar completo. Es común y totalmente legal que los niños califiquen para Medicaid o CHIP según su propia prueba de ingresos mientras el ingreso de un padre es demasiado alto para Medicaid y en su lugar califica para subsidios del mercado ACA."
+        "question": "¿Tendré que reembolsar los créditos fiscales de prima del ACA si me vuelvo elegible para Medicaid?",
+        "answer": "Generalmente no, siempre que la información de ingresos y hogar en su solicitud original del Mercado haya sido precisa. Si su aprobación de Medicaid refleja información inexacta o no reportada cuando solicitó la cobertura del Mercado, puede deber parte o todo el crédito, sujeto a los límites de reembolso basados en ingresos de 2026."
       },
       {
-        "question": "¿Es la elegibilidad dual de Medicare y Medicaid lo mismo que ACA y Medicaid?",
-        "answer": "No, son completamente diferentes. La elegibilidad dual de Medicare y Medicaid (aproximadamente 12 millones de estadounidenses) es legal y común: Medicare paga primero y Medicaid cubre los costos restantes. Una vez que tiene Medicare Parte A o Parte B, las reglas federales le prohíben comprar un plan de mercado ACA subsidiado, por lo que la pregunta de ACA-Medicaid no aplica a beneficiarios de Medicare."
+        "question": "¿Puede una mujer embarazada tener Medicaid y un plan del Mercado a la vez?",
+        "answer": "Sí, en muchos estados. Los límites de ingreso de Medicaid relacionados con el embarazo suelen estar muy por encima del límite regular para adultos, comúnmente entre 185% y 322% del nivel federal de pobreza en 2026 según el estado, por lo que una mujer embarazada que ya tiene un plan del Mercado puede agregar Medicaid por embarazo, que paga costos relacionados con el embarazo que el plan del Mercado no cubre."
       },
       {
-        "question": "¿Qué nivel de ingreso determina si obtengo Medicaid o subsidios ACA en 2026?",
-        "answer": "En los 40 estados más DC que expandieron Medicaid, los adultos bajo el 138% del nivel federal de pobreza ($22,025 para una persona en 2026) generalmente califican para Medicaid, y aquellos de 139% hasta 400%+ FPL generalmente califican para subsidios del mercado ACA. Los 10 estados sin expansión establecen sus propios límites de ingreso de Medicaid, usualmente más bajos."
+        "question": "¿Puede un miembro de la familia tener Medicaid mientras otro tiene un plan del Mercado?",
+        "answer": "Sí. Los hogares con elegibilidad dividida son comunes. Cada miembro del hogar se evalúa individualmente: los niños a menudo califican para Medicaid o CHIP con límites de ingreso más altos que los adultos, por lo que un padre puede tener un plan subsidiado del Mercado mientras un niño está inscrito en Medicaid o CHIP en la misma solicitud del hogar."
       },
       {
-        "question": "¿Puede una mujer embarazada tener Medicaid y un plan de mercado ACA al mismo tiempo?",
-        "answer": "Solo brevemente, durante una transición. Muchos estados cubren a mujeres embarazadas bajo Medicaid con un umbral de ingreso más alto que el Medicaid regular para adultos. Si estaba en un plan de mercado cuando quedó embarazada, puede haber una breve superposición mientras el estado procesa su solicitud de Medicaid."
+        "question": "¿Qué pasa si mi estado no expandió Medicaid y caigo en el vacío de cobertura?",
+        "answer": "Los adultos en los 10 estados sin expansión, Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming, con ingreso por encima del límite bajo de Medicaid del estado pero por debajo del 100% del nivel federal de pobreza generalmente no califican para ninguno de los dos programas. Los Centros de Salud Federalmente Calificados, los planes catastróficos y CHIP para los niños del hogar son las principales opciones de respaldo."
       },
       {
-        "question": "¿Tengo que reembolsar los subsidios de ACA si en realidad era elegible para Medicaid?",
-        "answer": "Posiblemente. Si recibió créditos fiscales de prima anticipados durante un período en que el ingreso de su hogar realmente lo hacía elegible para Medicaid y no reportó el cambio, el proceso de conciliación del IRS en el Formulario 8962 puede requerir el reembolso de parte o todo ese subsidio, dependiendo de su ingreso relativo al nivel federal de pobreza."
+        "question": "¿Tener Medicare y Medicaid funciona igual que ACA y Medicaid?",
+        "answer": "No. Elegibilidad dual describe a unos 12 millones de estadounidenses que legítimamente tienen Medicare y Medicaid a la vez, con Medicare pagando primero y Medicaid cubriendo los costos compartidos. Eso es diferente de la regla del Mercado de ACA, que generalmente bloquea a los beneficiarios de Medicaid de también recibir créditos fiscales de prima del Mercado."
       },
       {
-        "question": "¿Cómo afectan los 10 estados sin expansión a la elección entre ACA y Medicaid?",
-        "answer": "Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming no han expandido Medicaid. Los adultos allí con ingresos bajo el 100% FPL a menudo no califican ni para Medicaid tradicional ni para subsidios del mercado ACA (que comienzan en 100% FPL), creando lo que se conoce como la brecha de cobertura de ACA en lugar de una superposición."
+        "question": "¿Cómo cancelo mi plan del Mercado una vez que comienza Medicaid?",
+        "answer": "Inicie sesión en HealthCare.gov o el Mercado de su estado, reporte la aprobación de Medicaid como un cambio de vida, y seleccione una fecha de fin el día antes de que comience la cobertura de Medicaid. La página de cancelación de Medicaid y CHIP de HealthCare.gov guía a través de las pantallas exactas para los planes de 2026."
       }
     ]
   },
 
   "relatedLinks": [
     {
-      "label": { "en": "Can I Have Both Medicare and Medicaid?", "es": "¿Puedo Tener Medicare y Medicaid?" },
-      "href": "/qa/can-i-have-both-medicare-and-medicaid"
-    },
-    {
-      "label": { "en": "Who Qualifies for ACA Marketplace Subsidies?", "es": "¿Quién Califica para Subsidios del Mercado ACA?" },
-      "href": "/qa/aca-marketplace-subsidy-eligibility"
-    },
-    {
       "label": { "en": "Medicaid Income Limits by State", "es": "Límites de Ingresos de Medicaid por Estado" },
       "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
+      "href": "/federal-poverty-level"
     },
     {
       "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
@@ -314,44 +306,81 @@
 
   "sources": [
     {
-      "name": "HealthCare.gov: Medicaid and CHIP Eligibility",
-      "url": "https://www.healthcare.gov/medicaid-chip/",
+      "name": "HealthCare.gov: Changing from Marketplace to Medicaid or CHIP",
+      "url": "https://www.healthcare.gov/medicaid-chip/cancelling-marketplace-plan/",
       "note": {
-        "en": "Official rule that Medicaid eligibility disqualifies a household from ACA marketplace premium tax credits.",
-        "es": "Regla oficial de que la elegibilidad para Medicaid descalifica a un hogar de los créditos fiscales de prima del mercado ACA."
+        "en": "Official HealthCare.gov guidance on ending Marketplace coverage and stopping premium tax credits once Medicaid or CHIP eligibility is confirmed.",
+        "es": "Guía oficial de HealthCare.gov sobre cómo terminar la cobertura del Mercado y detener los créditos fiscales de prima una vez confirmada la elegibilidad de Medicaid o CHIP."
       }
     },
     {
       "name": "Medicaid.gov: Eligibility",
       "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
       "note": {
-        "en": "Federal Medicaid eligibility rules, MAGI methodology, and state expansion status used to determine the Medicaid-versus-marketplace line.",
-        "es": "Reglas federales de elegibilidad de Medicaid, metodología MAGI y estado de expansión estatal usados para determinar la línea Medicaid contra mercado."
+        "en": "Federal Medicaid eligibility rules, MAGI methodology, and the interaction with Marketplace subsidy eligibility.",
+        "es": "Reglas federales de elegibilidad de Medicaid, metodología MAGI e interacción con la elegibilidad de subsidios del Mercado."
       }
     },
     {
-      "name": "IRS: Premium Tax Credit, 26 U.S.C. 36B",
-      "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit",
+      "name": "KFF: The Coverage Gap in States That Have Not Expanded Medicaid",
+      "url": "https://www.kff.org/medicaid/issue-brief/the-coverage-gap-uninsured-poor-adults-in-states-that-do-not-expand-medicaid/",
       "note": {
-        "en": "Statutory basis for excluding Medicaid-eligible individuals from premium tax credits, and Form 8962 reconciliation rules.",
-        "es": "Base legal para excluir a personas elegibles para Medicaid de los créditos fiscales de prima, y reglas de conciliación del Formulario 8962."
-      }
-    },
-    {
-      "name": "KFF: 8 Things to Watch for the 2026 ACA Open Enrollment Period",
-      "url": "https://www.kff.org/affordable-care-act/8-things-to-watch-for-the-2026-aca-open-enrollment-period/",
-      "note": {
-        "en": "2026 marketplace analysis covering subsidy structure, income eligibility bands, and Medicaid expansion status by state.",
-        "es": "Análisis del mercado 2026 que cubre la estructura de subsidios, bandas de elegibilidad de ingresos y estado de expansión de Medicaid por estado."
+        "en": "Analysis of the 10 non-expansion states and the income band where residents qualify for neither Medicaid nor full Marketplace subsidies.",
+        "es": "Análisis de los 10 estados sin expansión y el rango de ingresos donde los residentes no califican ni para Medicaid ni para subsidios completos del Mercado."
       }
     },
     {
       "name": "ASPE: 2026 Poverty Guidelines",
       "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
       "note": {
-        "en": "Official 2026 federal poverty level figures used for both Medicaid and ACA marketplace eligibility calculations.",
-        "es": "Cifras oficiales del nivel federal de pobreza 2026 usadas para los cálculos de elegibilidad de Medicaid y del mercado ACA."
+        "en": "The federal poverty level figures used to calculate the 138% FPL Medicaid expansion threshold and Marketplace subsidy tiers.",
+        "es": "Las cifras del nivel federal de pobreza usadas para calcular el umbral de expansión de Medicaid del 138% FPL y los niveles de subsidio del Mercado."
+      }
+    },
+    {
+      "name": "HealthCare.gov: If Your Income Changes and You Might Qualify for Medicaid",
+      "url": "https://www.healthcare.gov/medicaid-to-marketplace/",
+      "note": {
+        "en": "HealthCare.gov guidance on staying covered during the switch between Medicaid/CHIP and Marketplace coverage.",
+        "es": "Guía de HealthCare.gov sobre cómo mantenerse cubierto durante el cambio entre Medicaid/CHIP y la cobertura del Mercado."
       }
     }
-  ]
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Wait for your state Medicaid agency's written eligibility determination before canceling anything.", "es": "Paso 1: Espere la determinación de elegibilidad por escrito de la agencia estatal de Medicaid antes de cancelar algo." },
+      { "en": "Step 2: Log in to HealthCare.gov, or your state-based Marketplace, and report the Medicaid approval as a life change.", "es": "Paso 2: Inicie sesión en HealthCare.gov, o el Mercado de su estado, y reporte la aprobación de Medicaid como un cambio de vida." },
+      { "en": "Step 3: End your Marketplace plan effective the day before Medicaid coverage starts to avoid a coverage gap.", "es": "Paso 3: Termine su plan del Mercado con efecto el día antes de que comience la cobertura de Medicaid para evitar un vacío de cobertura." },
+      { "en": "Step 4: Confirm your final Marketplace premium tax credits stop the same month Medicaid begins.", "es": "Paso 4: Confirme que sus créditos fiscales de prima del Mercado se detengan el mismo mes en que comienza Medicaid." },
+      { "en": "Step 5: Enroll in your state's Medicaid managed care plan and pick a primary care provider.", "es": "Paso 5: Inscríbase en el plan de cuidado administrado de Medicaid de su estado y elija un proveedor de atención primaria." }
+    ],
+    "govStartingUrl": "https://www.healthcare.gov/medicaid-chip/cancelling-marketplace-plan/",
+    "documentsNeeded": [
+      { "en": "Your state Medicaid approval or denial letter with the effective date", "es": "Su carta de aprobación o denegación de Medicaid del estado con la fecha efectiva" },
+      { "en": "HealthCare.gov or state-based Marketplace account login", "es": "Su inicio de sesión de HealthCare.gov o el Mercado de su estado" },
+      { "en": "Social Security numbers for every household member on the application", "es": "Números de Seguro Social de cada miembro del hogar en la solicitud" },
+      { "en": "Recent income documentation (pay stubs, tax return, or benefits award letter)", "es": "Documentación reciente de ingresos (talones de pago, declaración de impuestos o carta de beneficios)" },
+      { "en": "A list of current providers to check which ones accept the new Medicaid managed care plan", "es": "Una lista de proveedores actuales para verificar cuáles aceptan el nuevo plan de cuidado administrado de Medicaid" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Keeping the Marketplace plan active, and receiving tax credits, after the Medicaid start date, which can trigger a repayment notice", "es": "Mantener el plan del Mercado activo, y recibir créditos fiscales, después de la fecha de inicio de Medicaid, lo cual puede generar un aviso de reembolso" },
+      { "en": "Missing the 30-day window to report income or Medicaid status changes to the Marketplace", "es": "No cumplir con la ventana de 30 días para reportar cambios de ingreso o estado de Medicaid al Mercado" },
+      { "en": "Assuming Medicaid and Marketplace coverage overlap automatically without confirming the state agency's coordination rules", "es": "Suponer que la cobertura de Medicaid y del Mercado se superpone automáticamente sin confirmar las reglas de coordinación de la agencia estatal" },
+      { "en": "Not comparing provider networks before switching, which can disrupt ongoing care", "es": "No comparar las redes de proveedores antes de cambiar, lo cual puede interrumpir la atención en curso" },
+      { "en": "Confusing the Medicaid income-based rule with the age- or disability-based Medicare dual-eligible rule", "es": "Confundir la regla de Medicaid basada en ingresos con la regla de elegibilidad dual de Medicare basada en edad o discapacidad" }
+    ],
+    "deadline": {
+      "en": "No enrollment window for Medicaid itself; report a Medicaid approval to the Marketplace within 30 days to avoid a subsidy repayment issue",
+      "es": "No hay ventana de inscripción para Medicaid en sí; reporte una aprobación de Medicaid al Mercado dentro de 30 días para evitar un problema de reembolso de subsidio"
+    }
+  },
+
+  "topicCluster": "aca-coverage",
+  "keyTerms": {
+    "en": ["can you have aca and medicaid", "aca and medicaid at the same time 2026", "medicaid and marketplace subsidies", "aca medicaid overlap 2026"],
+    "es": ["puedo tener aca y medicaid", "aca y medicaid al mismo tiempo 2026", "medicaid y subsidios del mercado", "superposicion aca medicaid 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
 }
