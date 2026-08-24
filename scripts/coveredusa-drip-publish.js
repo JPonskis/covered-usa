@@ -669,7 +669,12 @@ async function main() {
     // Route: prefer the (possibly corrected) sheet route; if it's blank/malformed,
     // reconstruct from the template prefix + the actual slug so a junk route can't
     // strand an otherwise-shippable page.
-    let actualRoute = res.needsSheetFix ? routeForSlug(row.route, res.slug) : (row.route || '').trim();
+    // The resolved FILE slug IS the URL. A sheet route whose last segment disagrees
+    // with the resolved file records (and IndexNow-submits) a 404 even though the page
+    // shipped fine. Found 2026-08-24: 39 published drug rows had route /drug/<brand>
+    // while the file was drugs/<brand>-cost.json, live at /en/drug/<brand>-cost.
+    // So always reconcile the route tail, not only when the slug drifted from the sheet.
+    let actualRoute = routeForSlug(row.route, res.slug);
     let liveUrl = liveUrlFor(actualRoute);
     if (!liveUrl) {
       const prefix = TEMPLATE_TO_PREFIX[(row.template || '').trim()];
