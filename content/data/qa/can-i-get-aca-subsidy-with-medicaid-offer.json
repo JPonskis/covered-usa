@@ -1,222 +1,239 @@
 {
   "slug": "can-i-get-aca-subsidy-with-medicaid-offer",
   "subtype": "coverage",
+  "pageType": "coverage",
   "topicCluster": "aca-coverage",
   "keyTerms": {
-    "en": ["aca subsidy if eligible for medicaid", "premium tax credit medicaid eligibility 2026", "medicaid coverage gap aca subsidy", "minimum essential coverage medicaid"],
-    "es": ["subsidio de aca si es elegible para medicaid", "credito fiscal de prima elegibilidad medicaid 2026", "brecha de cobertura medicaid subsidio aca"]
+    "en": [
+      "can i get aca subsidy if i qualify for medicaid",
+      "aca subsidy medicaid eligible 2026",
+      "medicaid magi test premium tax credit",
+      "aca coverage gap non-expansion states",
+      "medicaid and marketplace subsidy at the same time",
+      "premium tax credit medicaid eligible 2026"
+    ],
+    "es": [
+      "puedo obtener subsidio aca si califico para medicaid",
+      "subsidio aca elegible medicaid 2026",
+      "prueba magi credito fiscal de prima",
+      "brecha de cobertura aca estados sin expansion",
+      "medicaid y subsidio del mercado al mismo tiempo"
+    ]
   },
   "isLighthouse": false,
   "isDeprecated": false,
   "question": {
     "en": "Can I Get an ACA Subsidy If I Qualify for Medicaid in 2026?",
-    "es": "¿Puedo Obtener un Subsidio de ACA Si Califico para Medicaid en 2026?"
+    "es": "¿Puedo Obtener un Subsidio del ACA Si Califico para Medicaid en 2026?"
   },
   "shortAnswer": {
-    "en": "No. Medicaid eligibility usually blocks ACA premium tax credits.",
-    "es": "No. Calificar para Medicaid generalmente bloquea los subsidios de ACA."
+    "en": "No, Medicaid eligibility blocks your ACA subsidy in 2026, with exceptions.",
+    "es": "No, Medicaid lo descalifica del subsidio ACA en 2026, con excepciones."
   },
   "fullAnswer": {
-    "en": "No, in most cases. Federal law disqualifies anyone determined eligible for full-benefit Medicaid from receiving ACA premium tax credits, even if you never actually enroll in Medicaid. Two exceptions matter in 2026: limited-benefit Medicaid, such as family-planning-only or emergency-only coverage, does not count as minimum essential coverage, and roughly 1.5 million adults in the 10 states that have not expanded Medicaid fall into a coverage gap, earning too little for subsidies but not qualifying for traditional Medicaid.",
-    "es": "No, en la mayoría de los casos. La ley federal descalifica a cualquier persona determinada elegible para Medicaid de beneficio completo de recibir créditos fiscales de prima de ACA, incluso si nunca se inscribe realmente en Medicaid. Dos excepciones importan en 2026: el Medicaid de beneficio limitado, como cobertura solo de planificación familiar o solo de emergencias, no cuenta como cobertura esencial mínima, y aproximadamente 1.5 millones de adultos en los 10 estados que no han expandido Medicaid caen en una brecha de cobertura, ganando muy poco para subsidios pero sin calificar para Medicaid tradicional."
+    "en": "No. Federal law under 26 U.S.C. Section 36B blocks anyone eligible for Medicaid, based on the Modified Adjusted Gross Income (MAGI) test, from claiming an ACA premium tax credit in 2026, even if that person skips Medicaid and buys a Marketplace plan instead. Eligibility, not enrollment, is what counts. Non-expansion states, mixed households, and Basic Health Program states create real exceptions worth checking before assuming you are stuck without a subsidy.",
+    "es": "No. La ley federal bajo la Seccion 36B del Codigo de Impuestos Internos impide que cualquier persona elegible para Medicaid, segun la prueba del Ingreso Bruto Ajustado Modificado (MAGI), reclame un credito fiscal de prima del ACA en 2026, incluso si esa persona omite Medicaid y compra un plan del Mercado en su lugar. La elegibilidad, no la inscripcion, es lo que cuenta. Los estados sin expansion, los hogares mixtos y los estados con Programa Basico de Salud crean excepciones reales que vale la pena revisar antes de asumir que no tiene opcion de subsidio."
   },
   "category": "ACA",
-  "topic": "ACA Premium Tax Credit and Medicaid Eligibility Interaction",
+  "topic": "ACA Premium Tax Credit Eligibility With Medicaid",
   "medicalSpecialty": "PublicHealth",
   "ctaTarget": "screener",
-  "pageType": "coverage",
-  "lastUpdated": "2026-08-22",
-  "readingTime": "8 min read",
+  "lastUpdated": "2026-08-25",
+  "readingTime": "9 min read",
 
   "meta": {
     "title": {
       "en": "ACA Subsidy If You Qualify for Medicaid? (2026) | CoveredUSA",
-      "es": "¿Subsidio de ACA Si Califica para Medicaid? (2026) | CoveredUSA"
+      "es": "¿Subsidio ACA Si Califica para Medicaid? (2026) | CoveredUSA"
     },
     "description": {
-      "en": "No, in most cases. Medicaid eligibility blocks ACA premium tax credits in 2026, with two exceptions: limited-benefit Medicaid and the 10-state coverage gap.",
-      "es": "No, en la mayoría de los casos. La elegibilidad para Medicaid bloquea los créditos de ACA en 2026, salvo Medicaid limitado y la brecha de cobertura en 10 estados."
+      "en": "Federal law blocks an ACA subsidy if you qualify for Medicaid in 2026. See the MAGI test, the non-expansion coverage gap, mixed households, and your options.",
+      "es": "La ley federal bloquea un subsidio ACA si califica para Medicaid en 2026. Conozca la prueba MAGI, la brecha de cobertura y sus opciones."
     }
   },
 
   "hero": {
     "h1": {
       "en": "Can I Get an ACA Subsidy If I Qualify for Medicaid? (2026)",
-      "es": "¿Puedo Obtener un Subsidio de ACA Si Califico para Medicaid? (2026)"
+      "es": "¿Puedo Obtener un Subsidio del ACA Si Califico para Medicaid? (2026)"
     }
   },
 
   "introParagraphs": [
     {
-      "en": "Marketplace subsidy applications trip up more people over this one rule than almost any other: if you are determined eligible for Medicaid, HealthCare.gov and state exchanges are legally required to route you to Medicaid instead of a subsidized marketplace plan, even if you would rather buy a private plan. The federal government treats Medicaid eligibility as minimum essential coverage (MEC), and MEC eligibility is one of the disqualifying factors for the premium tax credit under the Affordable Care Act.",
-      "es": "Las solicitudes de subsidio del Mercado tropiezan con esta única regla más que con casi cualquier otra: si se le determina elegible para Medicaid, HealthCare.gov y los intercambios estatales están legalmente obligados a dirigirlo a Medicaid en lugar de un plan subsidiado del Mercado, incluso si prefiere comprar un plan privado. El gobierno federal trata la elegibilidad para Medicaid como cobertura esencial mínima (MEC), y la elegibilidad para MEC es uno de los factores que descalifican para el crédito fiscal de prima bajo la Ley de Cuidado de Salud a Bajo Precio."
+      "en": "Healthcare.gov applications route every applicant one of two ways in 2026: toward Medicaid or toward a subsidized Marketplace plan, never toward both for the same person. Households near the income line often discover this the hard way, either by getting bumped out of the Marketplace shopping screen entirely or by owing back a premium tax credit at tax time because a family member turned out to be Medicaid-eligible for part of the year.",
+      "es": "Las solicitudes en Healthcare.gov dirigen a cada solicitante de una de dos formas en 2026: hacia Medicaid o hacia un plan subsidiado del Mercado, nunca hacia ambos para la misma persona. Los hogares cerca del limite de ingresos a menudo lo descubren de la manera dificil, al ser excluidos por completo de la pantalla de compras del Mercado o al deber un credito fiscal de prima al momento de declarar impuestos porque un familiar resulto ser elegible para Medicaid durante parte del ano."
     },
     {
-      "en": "CoveredUSA breaks down the exact 2026 rule below, the two real exceptions (limited-benefit Medicaid and the non-expansion coverage gap), what happens if you already have marketplace subsidies and get flagged for Medicaid mid-year, and how the rule interacts differently with Medicare. For the underlying numbers, see the [2026 federal poverty level chart](/en/federal-poverty-level) and [Medicaid income limits by state](/en/medicaid-income-limits).",
-      "es": "Esta guía detalla la regla exacta para 2026, las dos excepciones reales (Medicaid de beneficio limitado y la brecha de cobertura sin expansión), qué sucede si ya tiene subsidios del Mercado y es marcado para Medicaid a mitad de año, y cómo esto interactúa de manera diferente con Medicare. Para las cifras subyacentes, consulte la tabla del nivel federal de pobreza 2026 y los límites de ingresos de Medicaid por estado."
+      "en": "The MAGI test that decides which program you land in is the first stop in this guide, followed by why the 10 non-expansion states create a coverage gap that works in the opposite direction, how mixed-eligibility households split coverage legally, and what to do if a subsidy gets clawed back. For the mirror-image question about job-based coverage, see [can I get an ACA subsidy with an employer offer](/en/qa/can-i-get-aca-subsidy-with-employer-offer), and for the broader coexistence question see [can you have both ACA and Medicaid](/en/qa/can-i-have-medicaid-and-aca).",
+      "es": "Esta guia repasa la prueba MAGI que decide en que programa termina, por que los 10 estados sin expansion crean una brecha de cobertura que funciona en sentido contrario, como los hogares con elegibilidad mixta dividen la cobertura legalmente, y que hacer si le reclaman un subsidio. Para la pregunta reflejada sobre la cobertura laboral, consulte si puede obtener un subsidio ACA con una oferta del empleador."
     }
   ],
 
   "coverageBreakdown": {
     "headers": {
-      "en": ["Your Situation", "Medicaid Eligible", "ACA Subsidy Eligible (2026)", "Why"],
-      "es": ["Su Situación", "Elegible para Medicaid", "Elegible para Subsidio de ACA (2026)", "Por Qué"]
+      "en": ["Your situation", "PTC eligible?", "Why", "2026 detail"],
+      "es": ["Su situacion", "¿Elegible para PTC?", "Por que", "Detalle 2026"]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Full-benefit Medicaid eligible (income under 138% FPL, expansion state)", "es": "Elegible para Medicaid de beneficio completo (ingreso bajo 138% FPL, estado con expansión)" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Medicaid-eligible under the MAGI test in an expansion state (income at or below 138% FPL)", "es": "Elegible para Medicaid bajo la prueba MAGI en un estado con expansion (ingreso igual o menor al 138% del FPL)" },
           { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "en": "Federal law bars subsidies for anyone eligible for full-benefit Medicaid MEC in 2026", "es": "La ley federal prohíbe subsidios a quienes son elegibles para Medicaid de beneficio completo (MEC) en 2026" }
+          { "en": "26 U.S.C. Section 36B(c)(2)(B) disqualifies anyone Medicaid-eligible from a premium tax credit, whether or not they enroll", "es": "La Seccion 36B(c)(2)(B) descalifica a cualquier persona elegible para Medicaid de un credito fiscal, se inscriba o no" },
+          { "en": "138% FPL is about $22,025 for a household of 1 and $45,540 for a household of 4 in 2026", "es": "138% del FPL es aproximadamente $22,025 para un hogar de 1 y $45,540 para un hogar de 4 en 2026" }
         ]
       },
       {
         "cells": [
-          { "en": "Limited-benefit Medicaid only (family planning, emergency-only, pregnancy-only)", "es": "Solo Medicaid de beneficio limitado (planificación familiar, solo emergencias, solo embarazo)" },
-          { "value": { "en": "Yes (limited)", "es": "Sí (limitado)" }, "status": "partial" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
-          { "en": "Limited-benefit Medicaid does not count as minimum essential coverage in 2026", "es": "El Medicaid de beneficio limitado no cuenta como cobertura esencial mínima en 2026" }
+          { "en": "Income below 100% FPL in one of the 10 non-expansion states (the coverage gap)", "es": "Ingreso por debajo del 100% del FPL en uno de los 10 estados sin expansion (la brecha de cobertura)" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" },
+          { "en": "Marketplace subsidies start at 100% FPL by statute, and these states rarely extend Medicaid to childless adults below that line", "es": "Los subsidios del Mercado comienzan en el 100% del FPL por ley, y estos estados rara vez extienden Medicaid a adultos sin hijos por debajo de esa linea" },
+          { "en": "About 1.5 million adults sit in this gap nationally in 2026 per KFF estimates", "es": "Alrededor de 1.5 millones de adultos estan en esta brecha a nivel nacional en 2026 segun KFF" }
         ]
       },
       {
         "cells": [
-          { "en": "Income under 100% FPL in a non-expansion state (coverage gap)", "es": "Ingreso bajo 100% FPL en un estado sin expansión (brecha de cobertura)" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "en": "Income too low for subsidies, which start at 100% FPL, and too high for narrow non-expansion Medicaid rules in 2026", "es": "Ingreso muy bajo para subsidios, que comienzan en 100% FPL, y demasiado alto para las reglas estrechas de Medicaid sin expansión en 2026" }
+          { "en": "Income between 100% and 138% FPL in a non-expansion state", "es": "Ingreso entre 100% y 138% del FPL en un estado sin expansion" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Not Medicaid-eligible there, so the firewall never triggers and Marketplace subsidies apply normally", "es": "No es elegible para Medicaid alli, por lo que el bloqueo nunca se activa y los subsidios del Mercado aplican normalmente" },
+          { "en": "This same income band would be Medicaid-eligible, and subsidy-blocked, in an expansion state", "es": "Ese mismo rango de ingreso seria elegible para Medicaid, y bloqueado del subsidio, en un estado con expansion" }
         ]
       },
       {
         "cells": [
-          { "en": "Income 100% to 400% FPL, not Medicaid-eligible", "es": "Ingreso de 100% a 400% FPL, no elegible para Medicaid" },
-          { "value": { "en": "No", "es": "No" }, "status": "no" },
-          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
-          { "en": "Standard 2026 marketplace subsidy rules apply; the 400% FPL subsidy cliff returned January 1, 2026", "es": "Aplican las reglas estándar de subsidio del Mercado de 2026; el límite del 400% FPL regresó el 1 de enero de 2026" }
+          { "en": "Mixed household: kids qualify for Medicaid or CHIP, parents do not", "es": "Hogar mixto: los hijos califican para Medicaid o CHIP, los padres no" },
+          { "value": { "en": "Parents: yes. Kids: no", "es": "Padres: si. Hijos: no" }, "status": "partial" },
+          { "en": "Eligibility is tested person by person on one application, not household by household", "es": "La elegibilidad se evalua persona por persona en una sola solicitud, no por hogar" },
+          { "en": "Children often qualify for Medicaid or CHIP at 200% to 300% FPL, well above the adult cutoff", "es": "Los ninos suelen calificar para Medicaid o CHIP entre 200% y 300% del FPL, muy por encima del limite para adultos" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Living in a Basic Health Program state (New York, Minnesota, or Oregon) below its income cap", "es": "Vivir en un estado con Programa Basico de Salud (Nueva York, Minnesota u Oregon) por debajo de su limite de ingreso" },
+          { "value": { "en": "Neither program, a third option", "es": "Ninguno de los dos, una tercera opcion" }, "status": "partial" },
+          { "en": "The Essential Plan and MinnesotaCare replace Marketplace subsidies for this income band instead of competing with Medicaid", "es": "El Essential Plan y MinnesotaCare reemplazan los subsidios del Mercado para este rango de ingreso en lugar de competir con Medicaid" },
+          { "en": "Available in New York, Minnesota, and Oregon as of 2026", "es": "Disponible en Nueva York, Minnesota y Oregon a partir de 2026" }
         ]
       }
     ],
     "footnote": {
-      "en": "\"Eligible\" means eligible, not enrolled. HealthCare.gov and state marketplaces must screen for Medicaid eligibility before approving premium tax credits, so simply declining to enroll in Medicaid does not restore subsidy eligibility for full-benefit Medicaid categories.",
-      "es": "\"Elegible\" significa elegible, no inscrito. HealthCare.gov y los mercados estatales deben evaluar la elegibilidad para Medicaid antes de aprobar créditos fiscales de prima, por lo que simplemente rechazar la inscripción en Medicaid no restaura la elegibilidad para subsidios en las categorías de beneficio completo."
+      "en": "The federal rule comes from 26 U.S.C. Section 36B(c)(2)(B) and applies to Medicaid eligibility, not enrollment, and person by person rather than household by household, which is why the answer can differ for two people in the same home.",
+      "es": "La regla federal proviene de la Seccion 36B(c)(2)(B) del Codigo de Impuestos Internos y aplica a la elegibilidad, no a la inscripcion en Medicaid, y persona por persona en lugar de por hogar, por lo que la respuesta puede diferir entre dos personas del mismo hogar."
     },
-    "source": "IRS Eligibility for the Premium Tax Credit, Medicaid.gov, HealthCare.gov 2026 Marketplace Guidance"
+    "source": "Healthcare.gov, Medicaid.gov, KFF Medicaid Coverage Gap Tracker 2026"
   },
 
   "detailSections": [
     {
       "heading": {
-        "en": "Direct Answer: Does Medicaid Eligibility Block ACA Subsidies?",
-        "es": "Respuesta Directa: ¿La Elegibilidad para Medicaid Bloquea los Subsidios de ACA?"
+        "en": "Direct Answer",
+        "es": "Respuesta Directa"
       },
       "paragraphs": [
         {
-          "en": "No, in most cases. If you are determined eligible for full-benefit Medicaid, federal rules prohibit ACA premium tax credits for that coverage period in 2026, regardless of whether you enroll. The two exceptions are limited-benefit Medicaid and the coverage gap in the 10 states that have not expanded Medicaid.",
-          "es": "No, en la mayoría de los casos. Si se le determina elegible para Medicaid de beneficio completo, las reglas federales prohíben los créditos fiscales de prima de ACA para ese período de cobertura en 2026, sin importar si se inscribe. Las dos excepciones son el Medicaid de beneficio limitado y la brecha de cobertura en los 10 estados que no han expandido Medicaid."
+          "en": "No. Federal law under 26 U.S.C. Section 36B blocks anyone eligible for Medicaid, based on the Modified Adjusted Gross Income (MAGI) test, from claiming an ACA premium tax credit in 2026, even if that person skips Medicaid and buys a Marketplace plan instead. Eligibility, not enrollment, is what counts. Non-expansion states, mixed households, and Basic Health Program states create real exceptions worth checking before assuming you are stuck without a subsidy.",
+          "es": "No. La ley federal bajo la Seccion 36B del Codigo de Impuestos Internos impide que cualquier persona elegible para Medicaid, segun la prueba MAGI, reclame un credito fiscal de prima del ACA en 2026, incluso si omite Medicaid y compra un plan del Mercado en su lugar. La elegibilidad, no la inscripcion, es lo que cuenta. Los estados sin expansion, los hogares mixtos y los estados con Programa Basico de Salud crean excepciones reales."
         }
       ]
     },
     {
       "heading": {
-        "en": "Why Medicaid Eligibility, Not Enrollment, Disqualifies You",
-        "es": "Por Qué la Elegibilidad, No la Inscripción, Lo Descalifica"
+        "en": "What Counts as 'Medicaid-Eligible' for the Subsidy Test",
+        "es": "Que Significa Ser 'Elegible para Medicaid' para la Prueba del Subsidio"
       },
       "paragraphs": [
         {
-          "en": "Section 36B of the tax code, which governs the premium tax credit, disqualifies anyone eligible for minimum essential coverage through a government program, including Medicaid, CHIP, Medicare, and TRICARE. Full-benefit Medicaid is MEC. This is an eligibility test, not an enrollment test: if HealthCare.gov's real-time eligibility check determines your household income falls under your state's Medicaid threshold, the system routes you to Medicaid enrollment and will not release subsidized marketplace tax credits for that same coverage period, even if you never complete the Medicaid enrollment paperwork.",
-          "es": "La Sección 36B del código fiscal, que rige el crédito fiscal de prima, descalifica a cualquier persona elegible para cobertura esencial mínima a través de un programa gubernamental, incluyendo Medicaid, CHIP, Medicare y TRICARE. El Medicaid de beneficio completo es MEC. Esta es una prueba de elegibilidad, no de inscripción: si la verificación de elegibilidad en tiempo real de HealthCare.gov determina que el ingreso de su hogar está por debajo del umbral de Medicaid de su estado, el sistema lo dirige a la inscripción en Medicaid y no liberará créditos fiscales subsidiados del Mercado para ese mismo período de cobertura, incluso si nunca completa el papeleo de inscripción en Medicaid."
+          "en": "Modified Adjusted Gross Income, or MAGI, is the number a Healthcare.gov application runs against your state's Medicaid limit before it ever shows you a subsidized Marketplace plan. MAGI counts most taxable income, including wages, self-employment earnings, unemployment compensation, and taxable Social Security benefits, then compares that total to your state's 2026 Medicaid income limit for your household size. Fall at or under that limit and the application places you in Medicaid, regardless of whether you would rather have a Marketplace plan.",
+          "es": "El Ingreso Bruto Ajustado Modificado, o MAGI, es la cifra que una solicitud en Healthcare.gov compara con el limite de Medicaid de su estado antes de mostrarle un plan subsidiado del Mercado. El MAGI cuenta la mayoria del ingreso gravable, incluidos salarios, ingresos por trabajo por cuenta propia, compensacion por desempleo y beneficios gravables del Seguro Social, y luego compara ese total con el limite de ingresos de Medicaid de su estado en 2026 para el tamano de su hogar. Si su ingreso esta en o por debajo de ese limite, la solicitud lo coloca en Medicaid, sin importar si preferiria un plan del Mercado."
         },
         {
-          "en": "Employer coverage rules work differently. An offer of affordable employer coverage disqualifies you from subsidies too, but only if you are actually offered that coverage. Medicaid works purely on the eligibility determination itself, which is why the HealthCare.gov application asks detailed income and household questions before it will show you subsidized plans in 2026.",
-          "es": "Esto es diferente de la mayoría de las reglas de cobertura privada. Una oferta de cobertura de empleador asequible también lo descalifica de los subsidios, pero solo si realmente se le ofrece esa cobertura. Medicaid funciona puramente sobre la determinación de elegibilidad en sí, por eso la solicitud de HealthCare.gov hace preguntas detalladas sobre ingresos y hogar antes de mostrarle planes subsidiados en 2026."
+          "en": "The 40 states plus the District of Columbia that expanded Medicaid use a single adult cutoff of 138% of the federal poverty level in 2026, which works out to about $22,025 for a household of 1 and $45,540 for a household of 4. Cross that line and Medicaid eligibility ends, the firewall lifts, and a premium tax credit becomes available if your income also sits at or under 400% of the federal poverty level, the ceiling that returned for 2026 once the enhanced pandemic-era subsidies expired.",
+          "es": "Los 40 estados mas el Distrito de Columbia que expandieron Medicaid usan un limite unico para adultos del 138% del nivel federal de pobreza en 2026, lo que equivale a aproximadamente $22,025 para un hogar de 1 y $45,540 para un hogar de 4. Al superar esa linea, la elegibilidad de Medicaid termina, el bloqueo se levanta, y un credito fiscal de prima esta disponible si su ingreso tambien esta en o por debajo del 400% del nivel federal de pobreza, el limite que regreso para 2026 una vez que expiraron los subsidios mejorados de la era pandemica."
         }
       ]
     },
     {
       "heading": {
-        "en": "The ACA Coverage Gap: Too Poor for Subsidies, Not Eligible for Medicaid",
-        "es": "La Brecha de Cobertura de ACA: Demasiado Pobre para Subsidios, No Elegible para Medicaid"
+        "en": "The Non-Expansion Coverage Gap Works the Opposite Way",
+        "es": "La Brecha de Cobertura de los Estados Sin Expansion Funciona al Reves"
       },
       "paragraphs": [
         {
-          "en": "Ten states have not expanded Medicaid as of 2026: Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming. In those states, traditional Medicaid still covers only narrow categories such as pregnant women, children, and people with disabilities, often at income thresholds far below the federal poverty level. Meanwhile, ACA premium tax credits legally start at 100% FPL, which is $15,960 for a household of 1 and $33,000 for a household of 4 in the 48 contiguous states for 2026.",
-          "es": "Diez estados no han expandido Medicaid a partir de 2026: Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming. En esos estados, Medicaid tradicional todavía cubre solo categorías estrechas como mujeres embarazadas, niños y personas con discapacidades, a menudo con umbrales de ingreso muy por debajo del nivel federal de pobreza. Mientras tanto, los créditos fiscales de prima de ACA comienzan legalmente en 100% FPL, que es $15,960 para un hogar de 1 y $33,000 para un hogar de 4 en los 48 estados contiguos para 2026."
+          "en": "Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming have not expanded Medicaid, and their income limits for childless adults are often at or near 0% of the federal poverty level; many working-age adults without dependents cannot get Medicaid there no matter how little they earn. Because Marketplace premium tax credits only start at 100% of the federal poverty level by statute, someone earning less than that in a non-expansion state falls into what KFF calls the coverage gap: too poor for a subsidy, and not a Medicaid eligibility category in that state either.",
+          "es": "Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming no han expandido Medicaid, y sus limites de ingreso para adultos sin hijos suelen estar en o cerca del 0% del nivel federal de pobreza; muchos adultos en edad laboral sin dependientes no pueden obtener Medicaid alli sin importar cuan poco ganen. Debido a que los creditos fiscales de prima del Mercado solo comienzan en el 100% del nivel federal de pobreza por ley, alguien que gana menos que eso en un estado sin expansion cae en lo que KFF llama la brecha de cobertura: demasiado pobre para un subsidio, y sin categoria de elegibilidad de Medicaid en ese estado tampoco."
         },
         {
-          "en": "That gap between the narrow Medicaid income line and the 100% FPL subsidy floor traps roughly 1.5 million adults nationwide in 2026: too little income to qualify for a marketplace subsidy, too much (or the wrong category) to qualify for Medicaid in a non-expansion state. If you live in one of the 10 non-expansion states and your income is under 100% FPL, check whether your state runs a limited safety-net program, and confirm your exact status with a [Medicaid eligibility screener](/en/screener) before assuming you have no options.",
-          "es": "Esa brecha entre la línea estrecha de ingresos de Medicaid y el piso de 100% FPL de subsidios atrapa a aproximadamente 1.5 millones de adultos en todo el país en 2026: muy poco ingreso para calificar para un subsidio del Mercado, demasiado (o la categoría equivocada) para calificar para Medicaid en un estado sin expansión. Si vive en uno de los 10 estados sin expansión y su ingreso está bajo 100% FPL, verifique si su estado tiene un programa limitado de red de seguridad y confirme su estado exacto con un evaluador de elegibilidad de Medicaid antes de asumir que no tiene opciones."
+          "en": "Cross above 100% FPL in a non-expansion state and the picture flips: because you are still not Medicaid-eligible under that state's narrow rules, the firewall never triggers and you can claim a full premium tax credit on a Marketplace plan starting at 100% FPL, roughly $15,650 for a household of 1 using the 2025 guidelines the Marketplace applies to 2026 coverage. KFF estimates about 1.5 million adults nationwide sat in the coverage gap in 2026, concentrated in Texas and Florida.",
+          "es": "Al superar el 100% del FPL en un estado sin expansion, el panorama cambia: como todavia no es elegible para Medicaid bajo las reglas limitadas de ese estado, el bloqueo nunca se activa y puede reclamar un credito fiscal de prima completo en un plan del Mercado a partir del 100% del FPL. KFF estimo que alrededor de 1.5 millones de adultos a nivel nacional estaban en la brecha de cobertura en 2026, concentrados en Texas y Florida."
         }
       ]
     },
     {
       "heading": {
-        "en": "Exceptions: When Medicaid Does Not Block Your ACA Subsidy",
-        "es": "Excepciones: Cuándo Medicaid No Bloquea Su Subsidio de ACA"
+        "en": "Household Members Are Tested Separately",
+        "es": "Los Miembros del Hogar se Evaluan por Separado"
       },
       "paragraphs": [
         {
-          "en": "Not every Medicaid category counts as minimum essential coverage. Limited-benefit Medicaid programs, such as family-planning-only Medicaid, emergency-only Medicaid for non-citizens, tuberculosis-related Medicaid, and pregnancy-only Medicaid in some states, are excluded from the MEC definition in 2026. If your only Medicaid eligibility is through one of these limited programs, you can still qualify for a full ACA premium tax credit on a marketplace plan.",
-          "es": "No todas las categorías de Medicaid cuentan como cobertura esencial mínima. Los programas de Medicaid de beneficio limitado, como Medicaid solo de planificación familiar, Medicaid solo de emergencias para no ciudadanos, Medicaid relacionado con tuberculosis y Medicaid solo de embarazo en algunos estados, están excluidos de la definición de MEC en 2026. Si su única elegibilidad para Medicaid es a través de uno de estos programas limitados, aún puede calificar para un crédito fiscal de prima de ACA completo en un plan del Mercado."
+          "en": "Healthcare.gov evaluates every household member's Medicaid eligibility individually within one application, so a single family can legitimately split across programs. Children typically qualify for Medicaid or the Children's Health Insurance Program at income levels far above the adult cutoff, sometimes 200% to 300% of the federal poverty level depending on the state, while their parents' income sits above the lower adult Medicaid limit and qualifies them for a subsidized Marketplace plan instead.",
+          "es": "Healthcare.gov evalua la elegibilidad de Medicaid de cada miembro del hogar de forma individual dentro de una sola solicitud, por lo que una familia puede dividirse legitimamente entre programas. Los ninos suelen calificar para Medicaid o el Programa de Seguro Medico para Ninos con niveles de ingreso muy por encima del limite para adultos, a veces entre 200% y 300% del nivel federal de pobreza segun el estado, mientras que el ingreso de sus padres supera el limite mas bajo de Medicaid para adultos y los califica para un plan subsidiado del Mercado."
+        },
+        {
+          "en": "A family of four in a non-expansion state can see both parents receive Marketplace subsidies while both children enroll in the Children's Health Insurance Program, all from the same 2026 application and without any special paperwork. This split-coverage pattern is the most common form of Medicaid and Marketplace coexistence, and it does not violate the firewall because the rule applies to each person's own eligibility, not the household's combined income.",
+          "es": "Una familia de cuatro en un estado sin expansion puede ver que ambos padres reciben subsidios del Mercado mientras ambos hijos se inscriben en el Programa de Seguro Medico para Ninos, todo desde la misma solicitud 2026 y sin ningun tramite especial. Este patron de cobertura dividida es la forma mas comun de coexistencia entre Medicaid y el Mercado, y no viola el bloqueo porque la regla aplica a la elegibilidad de cada persona, no al ingreso combinado del hogar."
         }
       ]
     },
     {
       "heading": {
-        "en": "How the Medicaid Rule Differs From the Medicare Rule",
-        "es": "Cómo la Regla de Medicaid Difiere de la Regla de Medicare"
+        "en": "What Happens If You Get a Subsidy You Were Not Eligible For",
+        "es": "Que Pasa Si Recibe un Subsidio Para el que No Era Elegible"
       },
       "paragraphs": [
         {
-          "en": "Medicare eligibility interacts with subsidies differently than Medicaid eligibility does. Most people become eligible for premium-free Original Medicare Part A automatically at 65, and after a four-month grace period past that eligibility date, unenrolled premium-free Part A counts as MEC and can end subsidy eligibility going forward, similar to Medicaid. But if you would owe a premium for Part A, only actual enrollment, not mere eligibility, counts against your subsidy in 2026. Medicare Part B, which covers outpatient care, works the same enrollment-based way: signing up for Part B confirms MEC. Once someone enrolls in Medicare Advantage, a Medigap policy layered on Original Medicare, or Medicare Part D, that enrollment also confirms MEC and ends marketplace subsidy eligibility for that period.",
-          "es": "La elegibilidad para Medicare interactúa con los subsidios de manera diferente a la elegibilidad para Medicaid. La mayoría de las personas se vuelven elegibles automáticamente para la Parte A de Medicare Original sin prima a los 65 años, y después de un período de gracia de cuatro meses, la Parte A sin prima no inscrita cuenta como MEC y puede terminar la elegibilidad de subsidio en adelante, de forma similar a Medicaid. Pero si debiera pagar una prima por la Parte A, solo la inscripción real, no la mera elegibilidad, cuenta contra su subsidio en 2026. La Parte B de Medicare, que cubre la atención ambulatoria, funciona de la misma manera basada en inscripción: inscribirse en la Parte B confirma MEC. Una vez que alguien se inscribe en Medicare Advantage, una póliza Medigap sobre Medicare Original, o la Parte D de Medicare, esa inscripción también confirma MEC y termina la elegibilidad de subsidio del Mercado para ese período."
+          "en": "Getting this wrong has a real dollar cost. If the Marketplace pays an advance premium tax credit on your behalf and it later turns out you were Medicaid-eligible for part of 2026, you generally must repay the credit on IRS Form 8962 when you file. Repayment caps applied on 2025 returns ranged from $375 for a single filer under 200% of the federal poverty level up to $3,250 for filers between 300% and 400% of the poverty level, but those caps vanish entirely once income lands above 400% FPL.",
+          "es": "Equivocarse en esto tiene un costo real. Si el Mercado paga un credito fiscal de prima anticipado en su nombre y luego resulta que era elegible para Medicaid durante parte de 2026, generalmente debe reembolsar el credito en el Formulario 8962 del IRS al declarar impuestos. Los limites de reembolso aplicados en declaraciones de 2025 fueron desde $375 para un declarante soltero por debajo del 200% del nivel federal de pobreza hasta $3,250 para declarantes entre 300% y 400% del nivel de pobreza, pero esos limites desaparecen por completo cuando el ingreso supera el 400% del FPL."
+        },
+        {
+          "en": "The stakes are higher for 2026 because the enhanced premium tax credits from the American Rescue Plan Act and the Inflation Reduction Act expired on January 1, 2026, so the original 400% FPL subsidy cliff is back for this plan year. A household that becomes Medicaid-eligible mid-year has a 60-day Special Enrollment Period to report the change and switch coverage; reporting promptly through your Healthcare.gov account limits how many months of credit you might owe back.",
+          "es": "El riesgo es mayor para 2026 porque los creditos fiscales mejorados de la Ley del Plan de Rescate Americano y la Ley de Reduccion de la Inflacion expiraron el 1 de enero de 2026, por lo que el limite original del subsidio al 400% del FPL regreso para este ano del plan. Un hogar que se vuelve elegible para Medicaid a mitad de ano tiene un Periodo de Inscripcion Especial de 60 dias para informar el cambio y cambiar de cobertura; informarlo con prontitud a traves de su cuenta de Healthcare.gov limita cuantos meses de credito podria terminar debiendo."
         }
       ]
     },
     {
       "heading": {
-        "en": "What Happens If the Marketplace Later Finds You Medicaid-Eligible",
-        "es": "Qué Sucede Si el Mercado Luego Lo Encuentra Elegible para Medicaid"
+        "en": "This Is a Different Question From Medicare and Medicaid Dual Eligibility",
+        "es": "Esta Es una Pregunta Distinta a la Elegibilidad Dual de Medicare y Medicaid"
       },
       "paragraphs": [
         {
-          "en": "If you receive advance premium tax credits and your state later determines, through periodic income checks or a renewal, that you were actually Medicaid-eligible for part of the year, you may have to repay some or all of the excess subsidy when you file your federal tax return, using IRS Form 8962 to reconcile the amount. Report income changes to the marketplace as soon as they happen in 2026 to avoid a large repayment; a mid-year drop in income is a qualifying event that lets you update your application immediately rather than waiting for open enrollment.",
-          "es": "Si recibe créditos fiscales de prima anticipados y su estado luego determina, mediante verificaciones periódicas de ingresos o una renovación, que usted realmente era elegible para Medicaid durante parte del año, es posible que deba reembolsar parte o la totalidad del subsidio excedente al presentar su declaración federal de impuestos, usando el Formulario 8962 del IRS para conciliar el monto. Informe los cambios de ingresos al Mercado tan pronto como ocurran en 2026 para evitar un reembolso grande; una caída de ingresos a mitad de año es un evento calificado que le permite actualizar su solicitud de inmediato en lugar de esperar la inscripción abierta."
+          "en": "Roughly 12 million Americans are dual-eligible for Original Medicare and Medicaid, and that pairing works completely differently from the ACA subsidy question above. Original Medicare, made up of Medicare Part A for hospital care and Medicare Part B for outpatient and physician services, is available by age or disability regardless of income, and Medicaid wraps around it to cover premiums, cost-sharing, and long-term care. A dual-eligible beneficiary generally does not need a Medigap policy or an ACA plan at all, and neither Medicare Advantage nor Medicare Part D interacts with the premium tax credit rule described in this article.",
+          "es": "Aproximadamente 12 millones de estadounidenses son elegibles dualmente para Medicare Original y Medicaid, y esa combinacion funciona de manera completamente distinta a la pregunta del subsidio ACA anterior. Medicare Original, compuesto por la Parte A de Medicare para atencion hospitalaria y la Parte B de Medicare para servicios ambulatorios y medicos, esta disponible por edad o discapacidad sin importar el ingreso, y Medicaid lo complementa para cubrir primas, costos compartidos y cuidado a largo plazo. Un beneficiario con elegibilidad dual generalmente no necesita una poliza Medigap ni un plan del ACA, y ni Medicare Advantage ni la Parte D de Medicare interactuan con la regla del credito fiscal de prima descrita en este articulo."
+        },
+        {
+          "en": "If your real question is about turning 65 or qualifying for Medicare by disability while also holding Medicaid, the firewall in this article does not apply the same way: Medicare eligibility, not Medicaid, becomes the coverage that blocks a Marketplace premium tax credit once you are entitled to Part A. The Medicaid-blocks-ACA-subsidy rule covers people under 65 without a qualifying disability who are applying through the Marketplace for themselves or their household.",
+          "es": "Si su pregunta real es sobre cumplir 65 anos o calificar para Medicare por discapacidad mientras tambien tiene Medicaid, el bloqueo de este articulo no aplica de la misma forma: la elegibilidad para Medicare, no Medicaid, se convierte en la cobertura que bloquea un credito fiscal del Mercado una vez que tiene derecho a la Parte A. La regla de que Medicaid bloquea el subsidio ACA cubre a personas menores de 65 anos sin una discapacidad calificada que solicitan a traves del Mercado para si mismas o su hogar."
         }
       ]
     },
     {
       "heading": {
-        "en": "How to Find Out Which Coverage Applies to You in 2026",
-        "es": "Cómo Averiguar Qué Cobertura le Aplica en 2026"
+        "en": "Alternatives If Medicaid Eligibility Blocks Your Subsidy",
+        "es": "Alternativas Si la Elegibilidad de Medicaid Bloquea Su Subsidio"
       },
       "paragraphs": [
         {
-          "en": "The fastest way to know for certain is to run the actual application, not to estimate it yourself. HealthCare.gov, or your state-based marketplace, performs a single integrated eligibility determination that checks Medicaid, CHIP, and ACA-compliant marketplace subsidy eligibility at the same time, so you only have to apply once."
+          "en": "Losing subsidy eligibility because you qualify for Medicaid does not mean you have to accept Medicaid coverage or go without options. A few paths are worth checking before you decide.",
+          "es": "Perder la elegibilidad de subsidio porque califica para Medicaid no significa que deba aceptar la cobertura de Medicaid o quedarse sin opciones. Algunas rutas vale la pena revisar antes de decidir."
         }
       ],
       "list": [
-        { "en": "Step 1: Gather 2026 income documents (pay stubs, most recent tax return, self-employment records) for everyone in your tax household.", "es": "Paso 1: Reúna documentos de ingresos de 2026 (talones de pago, declaración de impuestos más reciente, registros de trabajo independiente) para todos en su hogar tributario." },
-        { "en": "Step 2: Apply through HealthCare.gov or your state marketplace and answer the household and income questions completely and accurately.", "es": "Paso 2: Solicite a través de HealthCare.gov o el mercado de su estado y responda completa y precisamente las preguntas de hogar e ingresos." },
-        { "en": "Step 3: Review the eligibility results screen, which will state plainly whether you were found Medicaid-eligible, subsidy-eligible, or neither.", "es": "Paso 3: Revise la pantalla de resultados de elegibilidad, que indicará claramente si se le encontró elegible para Medicaid, para subsidio, o ninguno." },
-        { "en": "Step 4: If routed to Medicaid but you believe the determination is wrong, request a fair hearing through your state Medicaid agency within the stated deadline, usually 60 to 90 days.", "es": "Paso 4: Si es dirigido a Medicaid pero cree que la determinación es incorrecta, solicite una audiencia justa a través de la agencia estatal de Medicaid dentro del plazo indicado, generalmente de 60 a 90 días." },
-        { "en": "Step 5: If found subsidy-eligible, compare plans and enroll before the 2026 coverage year deadline for your circumstances (open enrollment or a special enrollment period).", "es": "Paso 5: Si es elegible para subsidio, compare planes e inscríbase antes de la fecha límite del año de cobertura 2026 según su circunstancia (inscripción abierta o un período de inscripción especial)." }
-      ]
-    },
-    {
-      "heading": {
-        "en": "Alternatives If You Do Not Qualify for an ACA Subsidy",
-        "es": "Alternativas Si No Califica para un Subsidio de ACA"
-      },
-      "paragraphs": [
-        {
-          "en": "If you are Medicaid-eligible, enrolling in Medicaid itself is usually the strongest option: it typically has no monthly premium and lower out-of-pocket costs than any subsidized marketplace plan. If you are stuck in the non-expansion coverage gap, three paths exist: a full-price ACA-compliant marketplace plan (no subsidy, but still guarantees coverage for a preexisting condition and the 10 essential health benefits), a community health center that charges on a sliding fee scale based on income, or a short-term or fixed-indemnity plan as a stopgap, understanding those plans are not ACA-compliant and do not have to cover preexisting conditions."
-        }
-      ],
-      "list": [
-        { "en": "Full-price ACA-compliant marketplace plan: no subsidy, but guaranteed issue and essential health benefits coverage in 2026.", "es": "Plan del Mercado compatible con ACA a precio completo: sin subsidio, pero con emisión garantizada y cobertura de beneficios esenciales de salud en 2026." },
-        { "en": "Federally Qualified Health Center (FQHC): sliding-scale fees based on income, available regardless of subsidy or Medicaid status.", "es": "Centro de Salud Calificado Federalmente (FQHC): tarifas en escala móvil según el ingreso, disponibles sin importar el estado de subsidio o Medicaid." },
-        { "en": "Employer-sponsored coverage, if available, even without a premium contribution from the employer.", "es": "Cobertura patrocinada por el empleador, si está disponible, incluso sin una contribución de prima del empleador." },
-        { "en": "State-specific limited safety-net programs in some non-expansion states for specific conditions or populations.", "es": "Programas estatales limitados de red de seguridad en algunos estados sin expansión para condiciones o poblaciones específicas." }
+        { "en": "Enroll in Medicaid instead. It typically has $0 to very low premiums, no deductible in most states, and covers the same essential health benefits categories as an ACA-compliant plan, without any preexisting condition exclusion.", "es": "Inscribase en Medicaid en su lugar. Suele tener primas de $0 a muy bajas, sin deducible en la mayoria de los estados, y cubre las mismas categorias de beneficios esenciales de salud que un plan compatible con ACA, sin exclusion por condicion preexistente." },
+        { "en": "Buy a full-price, unsubsidized ACA-compliant Marketplace plan. Nothing in federal law bars a Medicaid-eligible person from doing this, though you receive no premium tax credit and pay the whole monthly premium.", "es": "Compre un plan del Mercado compatible con ACA a precio completo y sin subsidio. Nada en la ley federal impide esto a una persona elegible para Medicaid, aunque no recibira credito fiscal y pagara la prima mensual completa." },
+        { "en": "Check whether your state runs a Basic Health Program. New York's Essential Plan, Minnesota's MinnesotaCare, and Oregon's OHP Bridge cover residents with income too high for Medicaid but generally under 200% to 250% FPL, often for a $0 or low monthly premium in 2026.", "es": "Revise si su estado tiene un Programa Basico de Salud. El Essential Plan de Nueva York, MinnesotaCare de Minnesota y el OHP Bridge de Oregon cubren a residentes con ingreso demasiado alto para Medicaid pero generalmente por debajo del 200% al 250% del FPL, a menudo por una prima mensual de $0 o baja en 2026." },
+        { "en": "Ask your state Medicaid office about a medically needy spend-down program. Some states let higher-income households qualify for Medicaid by subtracting medical expenses from countable income, an option separate from the MAGI test used for the ACA firewall.", "es": "Pregunte a la oficina estatal de Medicaid sobre un programa de deduccion por necesidad medica. Algunos estados permiten que hogares de mayor ingreso califiquen para Medicaid restando gastos medicos del ingreso contable, una opcion separada de la prueba MAGI usada para el bloqueo del ACA." },
+        { "en": "Appeal the Medicaid eligibility determination if you believe it is wrong. A successful appeal restores Marketplace subsidy eligibility retroactively for the disputed period once the state corrects the record.", "es": "Apele la determinacion de elegibilidad de Medicaid si cree que es incorrecta. Una apelacion exitosa restaura la elegibilidad del subsidio del Mercado de forma retroactiva para el periodo en disputa una vez que el estado corrige el registro." }
       ]
     }
   ],
@@ -224,81 +241,85 @@
   "faqs": {
     "en": [
       {
-        "question": "Does Medicaid eligibility disqualify me from ACA premium tax credits?",
-        "answer": "Yes, in most cases. If you are determined eligible for full-benefit Medicaid, which counts as minimum essential coverage, federal rules under Internal Revenue Code Section 36B disqualify you from ACA premium tax credits for that coverage period in 2026, whether or not you actually enroll in Medicaid."
+        "question": "What income disqualifies me from an ACA subsidy because of Medicaid?",
+        "answer": "Any Modified Adjusted Gross Income at or under your state's 2026 Medicaid limit disqualifies you from a premium tax credit. In the 40 expansion states plus DC, that limit is 138% of the federal poverty level, about $22,025 for a household of 1 and $45,540 for a household of 4 in 2026. In the 10 non-expansion states, the adult Medicaid limit is usually much lower, sometimes near 0% FPL for childless adults, which is why more people there end up eligible for a subsidy instead."
       },
       {
-        "question": "What is the ACA Medicaid coverage gap and which states have it?",
-        "answer": "The coverage gap affects adults whose income is too low to qualify for ACA subsidies (which start at 100% FPL) but who do not qualify for narrow, non-expansion Medicaid. It exists in the 10 states that have not expanded Medicaid as of 2026: Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming, affecting roughly 1.5 million adults."
+        "question": "What is the ACA coverage gap and does it affect subsidy eligibility?",
+        "answer": "The coverage gap describes adults in the 10 non-expansion states who earn too little to hit the 100% FPL floor where Marketplace subsidies start, but too much (or the wrong category) to qualify for that state's narrow Medicaid rules. KFF estimated about 1.5 million adults nationally sat in this gap in 2026. It is the mirror image of the Medicaid-blocks-subsidy rule: instead of Medicaid eligibility blocking a subsidy, the absence of any eligible program blocks coverage entirely."
       },
       {
-        "question": "Does limited-benefit Medicaid, like family-planning-only coverage, block ACA subsidies?",
-        "answer": "No. Limited-benefit Medicaid programs, such as family-planning-only, emergency-only for non-citizens, tuberculosis-related, and pregnancy-only Medicaid in some states, do not meet the federal definition of minimum essential coverage. Eligibility for one of these programs alone does not disqualify you from an ACA premium tax credit in 2026."
+        "question": "Can I get a subsidy if my state did not expand Medicaid?",
+        "answer": "Yes, if your income is at or above 100% of the federal poverty level, roughly $15,650 for a household of 1 using the 2025 guidelines the Marketplace applies to 2026 coverage. Because non-expansion states rarely extend Medicaid to childless adults above that line, the firewall usually does not apply and full Marketplace subsidies, including the 400% FPL cliff that returned for 2026, are available."
       },
       {
-        "question": "What if the marketplace later determines I was Medicaid-eligible after I already got subsidies?",
-        "answer": "You may owe a repayment of some or all of the advance premium tax credit for the overlapping months when you file your federal tax return, reconciled on IRS Form 8962. Reporting income and household changes to the marketplace right away in 2026, rather than waiting for renewal, reduces the size of any repayment."
+        "question": "Can my kids be on Medicaid or CHIP while I get a Marketplace subsidy?",
+        "answer": "Yes. Healthcare.gov tests every household member's Medicaid eligibility separately on one application. Children often qualify for Medicaid or the Children's Health Insurance Program at 200% to 300% of the federal poverty level, well above the adult cutoff, so parents whose income is too high for Medicaid can receive a subsidized Marketplace plan while their kids stay on Medicaid or CHIP at little or no cost."
       },
       {
-        "question": "Can I decline Medicaid and buy an ACA marketplace plan anyway?",
-        "answer": "You can buy a full-price, unsubsidized ACA-compliant marketplace plan even if you are Medicaid-eligible, but you cannot receive premium tax credits for it. The eligibility determination, not your enrollment choice, is what disqualifies subsidies in 2026."
+        "question": "What if I got a subsidy but later turned out to be Medicaid-eligible?",
+        "answer": "You generally must repay the advance premium tax credit for the months you were actually Medicaid-eligible when you file IRS Form 8962. Repayment caps based on 2025 figures ranged from $375 to $3,250 depending on income, but there is no cap once household income lands above 400% of the federal poverty level for 2026. Reporting a Medicaid approval to the Marketplace within the 60-day Special Enrollment Period window limits the exposure."
       },
       {
-        "question": "Does Medicare eligibility work the same way as Medicaid eligibility for subsidies?",
-        "answer": "Not exactly. Most people become eligible for premium-free Original Medicare Part A at 65, and unenrolled eligibility ends subsidy eligibility after a four-month grace period, similar to Medicaid. But if you would owe a Part A premium, only actual enrollment in Medicare Part A, Medicare Advantage, or Medicare Part D counts against your marketplace subsidy in 2026, not mere eligibility."
+        "question": "What is a Basic Health Program state?",
+        "answer": "New York, Minnesota, and Oregon use a federal option called the Basic Health Program instead of routing moderate-income residents into subsidized Marketplace plans. New York's Essential Plan, Minnesota's MinnesotaCare, and Oregon's OHP Bridge cover people with income too high for Medicaid but generally under 200% to 250% of the federal poverty level, often for $0 to a low monthly premium in 2026, replacing rather than competing with a Marketplace subsidy."
       },
       {
-        "question": "Will my child's CHIP eligibility affect my own ACA subsidy eligibility?",
-        "answer": "No. CHIP eligibility affects only the child's own eligibility for a subsidized marketplace plan; it does not disqualify the parents or other household members from their own ACA premium tax credits in 2026, since minimum essential coverage rules apply per individual, not per household."
+        "question": "What if I disagree with my state's Medicaid eligibility determination?",
+        "answer": "You can appeal through your state Medicaid agency's fair hearing process. If the appeal succeeds and the state determines you were never Medicaid-eligible, your Marketplace premium tax credit eligibility is restored retroactively for the disputed period, and any repayment triggered by the incorrect Medicaid determination can be reversed."
       },
       {
-        "question": "Did the return of the ACA subsidy cliff in 2026 change how Medicaid eligibility interacts with subsidies?",
-        "answer": "No, the Medicaid-eligibility disqualification rule under Section 36B is unchanged for 2026. What changed is that the enhanced premium tax credits expired January 1, 2026, so the hard 400% FPL income cap returned: households above 400% FPL now get zero premium tax credit again, separate from the Medicaid rule."
+        "question": "Is this the same rule as Medicare and Medicaid dual eligibility?",
+        "answer": "No. Medicare and Medicaid dual eligibility, covering about 12 million Americans, pairs Original Medicare (Medicare Part A and Medicare Part B) or Medicare Advantage with Medicaid wraparound coverage and works regardless of income once someone qualifies by age or disability. The Medicaid-blocks-ACA-subsidy rule in this article applies only to people under 65 without a qualifying disability applying through the Marketplace."
       }
     ],
     "es": [
       {
-        "question": "¿La elegibilidad para Medicaid me descalifica de los créditos fiscales de prima de ACA?",
-        "answer": "Sí, en la mayoría de los casos. Si se le determina elegible para Medicaid de beneficio completo, que cuenta como cobertura esencial mínima, las reglas federales bajo la Sección 36B del Código de Rentas Internas lo descalifican de los créditos fiscales de prima de ACA para ese período de cobertura en 2026, se inscriba o no en Medicaid."
+        "question": "¿Que ingreso me descalifica de un subsidio ACA por Medicaid?",
+        "answer": "Cualquier Ingreso Bruto Ajustado Modificado igual o menor al limite de Medicaid de su estado en 2026 lo descalifica de un credito fiscal de prima. En los 40 estados con expansion mas DC, ese limite es el 138% del nivel federal de pobreza, unos $22,025 para un hogar de 1 y $45,540 para un hogar de 4 en 2026. En los 10 estados sin expansion, el limite para adultos suele ser mucho mas bajo."
       },
       {
-        "question": "¿Qué es la brecha de cobertura de Medicaid de ACA y qué estados la tienen?",
-        "answer": "La brecha de cobertura afecta a adultos cuyo ingreso es muy bajo para calificar para subsidios de ACA (que comienzan en 100% FPL) pero que no califican para Medicaid estrecho sin expansión. Existe en los 10 estados que no han expandido Medicaid a partir de 2026: Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming, afectando aproximadamente a 1.5 millones de adultos."
+        "question": "¿Que es la brecha de cobertura del ACA y afecta la elegibilidad del subsidio?",
+        "answer": "La brecha de cobertura describe a adultos en los 10 estados sin expansion que ganan demasiado poco para llegar al piso del 100% del FPL donde comienzan los subsidios del Mercado, pero demasiado (o la categoria equivocada) para calificar bajo las reglas limitadas de Medicaid de ese estado. KFF estimo que alrededor de 1.5 millones de adultos estaban en esta brecha a nivel nacional en 2026."
       },
       {
-        "question": "¿El Medicaid de beneficio limitado, como cobertura solo de planificación familiar, bloquea los subsidios de ACA?",
-        "answer": "No. Los programas de Medicaid de beneficio limitado, como solo planificación familiar, solo emergencias para no ciudadanos, relacionado con tuberculosis y solo embarazo en algunos estados, no cumplen con la definición federal de cobertura esencial mínima. La elegibilidad para uno de estos programas por sí sola no lo descalifica de un crédito fiscal de prima de ACA en 2026."
+        "question": "¿Puedo obtener un subsidio si mi estado no expandio Medicaid?",
+        "answer": "Si, si su ingreso esta en o por encima del 100% del nivel federal de pobreza, aproximadamente $15,650 para un hogar de 1 usando las pautas de 2025 que el Mercado aplica a la cobertura 2026. Como los estados sin expansion rara vez extienden Medicaid a adultos sin hijos por encima de esa linea, el bloqueo generalmente no aplica y los subsidios completos del Mercado estan disponibles."
       },
       {
-        "question": "¿Qué pasa si el Mercado luego determina que era elegible para Medicaid después de que ya recibí subsidios?",
-        "answer": "Es posible que deba reembolsar parte o la totalidad del crédito fiscal de prima anticipado para los meses superpuestos al presentar su declaración federal de impuestos, conciliado en el Formulario 8962 del IRS. Informar los cambios de ingresos y de hogar al Mercado de inmediato en 2026, en lugar de esperar la renovación, reduce el tamaño de cualquier reembolso."
+        "question": "¿Pueden mis hijos estar en Medicaid o CHIP mientras recibo un subsidio del Mercado?",
+        "answer": "Si. Healthcare.gov evalua la elegibilidad de Medicaid de cada miembro del hogar por separado en una sola solicitud. Los ninos a menudo califican para Medicaid o CHIP entre el 200% y 300% del nivel federal de pobreza, muy por encima del limite para adultos, asi que los padres pueden recibir un plan subsidiado del Mercado mientras sus hijos permanecen en Medicaid o CHIP."
       },
       {
-        "question": "¿Puedo rechazar Medicaid y comprar un plan del Mercado de ACA de todos modos?",
-        "answer": "Puede comprar un plan del Mercado compatible con ACA a precio completo, sin subsidio, incluso si es elegible para Medicaid, pero no puede recibir créditos fiscales de prima por él. La determinación de elegibilidad, no su elección de inscripción, es lo que descalifica los subsidios en 2026."
+        "question": "¿Que pasa si recibi un subsidio pero luego resulte ser elegible para Medicaid?",
+        "answer": "Generalmente debe reembolsar el credito fiscal de prima anticipado por los meses en que realmente era elegible para Medicaid al presentar el Formulario 8962 del IRS. Los limites de reembolso segun cifras de 2025 fueron de $375 a $3,250 segun el ingreso, pero no hay limite una vez que el ingreso del hogar supera el 400% del nivel federal de pobreza para 2026."
       },
       {
-        "question": "¿La elegibilidad para Medicare funciona igual que la elegibilidad para Medicaid en cuanto a los subsidios?",
-        "answer": "No exactamente. La mayoría de las personas se vuelven elegibles para la Parte A de Medicare Original sin prima a los 65 años, y la elegibilidad no inscrita termina la elegibilidad de subsidio después de un período de gracia de cuatro meses, similar a Medicaid. Pero si debiera pagar una prima de la Parte A, solo la inscripción real en la Parte A, Medicare Advantage o la Parte D cuenta contra su subsidio del Mercado en 2026, no la mera elegibilidad."
+        "question": "¿Que es un estado con Programa Basico de Salud?",
+        "answer": "Nueva York, Minnesota y Oregon usan una opcion federal llamada Programa Basico de Salud en lugar de dirigir a residentes de ingreso moderado hacia planes subsidiados del Mercado. El Essential Plan de Nueva York, MinnesotaCare de Minnesota y el OHP Bridge de Oregon cubren a personas con ingreso demasiado alto para Medicaid pero generalmente por debajo del 200% al 250% del FPL, a menudo por $0 a una prima baja en 2026."
       },
       {
-        "question": "¿La elegibilidad de CHIP de mi hijo afecta mi propia elegibilidad de subsidio de ACA?",
-        "answer": "No. La elegibilidad de CHIP afecta solo la elegibilidad del propio niño para un plan subsidiado del Mercado; no descalifica a los padres u otros miembros del hogar de sus propios créditos fiscales de prima de ACA en 2026, ya que las reglas de cobertura esencial mínima se aplican por individuo, no por hogar."
+        "question": "¿Que pasa si no estoy de acuerdo con la determinacion de elegibilidad de Medicaid de mi estado?",
+        "answer": "Puede apelar mediante el proceso de audiencia justa de la agencia estatal de Medicaid. Si la apelacion tiene exito y el estado determina que nunca fue elegible para Medicaid, su elegibilidad para el credito fiscal de prima del Mercado se restaura de forma retroactiva para el periodo en disputa."
       },
       {
-        "question": "¿El regreso del límite de subsidio de ACA en 2026 cambió cómo interactúa la elegibilidad de Medicaid con los subsidios?",
-        "answer": "No, la regla de descalificación por elegibilidad de Medicaid bajo la Sección 36B no cambió para 2026. Lo que cambió es que los créditos fiscales de prima mejorados expiraron el 1 de enero de 2026, por lo que regresó el límite estricto de 400% FPL: los hogares por encima de 400% FPL ahora reciben cero crédito fiscal de prima de nuevo, algo separado de la regla de Medicaid."
+        "question": "¿Es la misma regla que la elegibilidad dual de Medicare y Medicaid?",
+        "answer": "No. La elegibilidad dual de Medicare y Medicaid, que cubre a unos 12 millones de estadounidenses, combina Medicare Original (Parte A y Parte B) o Medicare Advantage con cobertura complementaria de Medicaid y funciona sin importar el ingreso una vez que alguien califica por edad o discapacidad. La regla de este articulo aplica solo a menores de 65 anos sin discapacidad calificada que solicitan a traves del Mercado."
       }
     ]
   },
 
   "relatedLinks": [
     {
-      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
-      "href": "/federal-poverty-level"
+      "label": { "en": "Can I Get an ACA Subsidy With an Employer Offer?", "es": "¿Puedo Obtener un Subsidio ACA con Oferta del Empleador?" },
+      "href": "/qa/can-i-get-aca-subsidy-with-employer-offer"
     },
     {
-      "label": { "en": "Medicaid Income Limits by State", "es": "Límites de Ingresos de Medicaid por Estado" },
+      "label": { "en": "Can You Have Both ACA and Medicaid?", "es": "¿Puedo Tener ACA y Medicaid?" },
+      "href": "/qa/can-i-have-medicaid-and-aca"
+    },
+    {
+      "label": { "en": "Medicaid Income Limits by State", "es": "Limites de Ingresos de Medicaid por Estado" },
       "href": "/medicaid-income-limits"
     },
     {
@@ -309,63 +330,44 @@
 
   "sources": [
     {
-      "name": "IRS: Eligibility for the Premium Tax Credit",
-      "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/eligibility-for-the-premium-tax-credit",
+      "name": "Healthcare.gov: Eligibility for the Premium Tax Credit",
+      "url": "https://www.healthcare.gov/lower-costs/qualifying-for-lower-costs/",
       "note": {
-        "en": "Official IRS guidance on Section 36B eligibility rules, including the minimum essential coverage disqualification for Medicaid, CHIP, and Medicare.",
-        "es": "Guía oficial del IRS sobre las reglas de elegibilidad de la Sección 36B, incluida la descalificación por cobertura esencial mínima para Medicaid, CHIP y Medicare."
+        "en": "Official CMS guidance on how Medicaid and CHIP eligibility interacts with Marketplace premium tax credit eligibility.",
+        "es": "Guia oficial de CMS sobre como la elegibilidad de Medicaid y CHIP interactua con la elegibilidad del credito fiscal de prima del Mercado."
       }
     },
     {
-      "name": "HealthCare.gov: Find Out If Your Medicaid Program Counts as Minimum Essential Coverage",
-      "url": "https://www.healthcare.gov/medicaid-limited-benefits/",
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
       "note": {
-        "en": "Official list of limited-benefit Medicaid programs that do not count as MEC and therefore do not block premium tax credit eligibility.",
-        "es": "Lista oficial de programas de Medicaid de beneficio limitado que no cuentan como MEC y por lo tanto no bloquean la elegibilidad del crédito fiscal de prima."
+        "en": "Federal overview of MAGI-based Medicaid eligibility rules and state expansion status.",
+        "es": "Resumen federal de las reglas de elegibilidad de Medicaid basadas en MAGI y el estado de expansion por estado."
       }
     },
     {
-      "name": "KFF: Who Is Eligible for Marketplace Premium Tax Credits?",
-      "url": "https://www.kff.org/faqs/faqs-health-insurance-marketplace-and-the-aca/help-paying-marketplace-premiums-the-basics/who-is-eligible-for-marketplace-premium-tax-credits/",
+      "name": "KFF: The Coverage Gap: Uninsured Poor Adults in States that Do Not Expand Medicaid",
+      "url": "https://www.kff.org/medicaid/issue-brief/the-coverage-gap-uninsured-poor-adults-in-states-that-do-not-expand-medicaid/",
       "note": {
-        "en": "KFF explainer on premium tax credit eligibility rules, the Medicaid coverage gap, and 2026 subsidy cliff details.",
-        "es": "Explicación de KFF sobre las reglas de elegibilidad del crédito fiscal de prima, la brecha de cobertura de Medicaid y detalles del límite de subsidio de 2026."
+        "en": "KFF analysis and state-by-state estimates of adults caught in the non-expansion coverage gap.",
+        "es": "Analisis de KFF y estimaciones estatales de adultos atrapados en la brecha de cobertura de estados sin expansion."
       }
     },
     {
-      "name": "ASPE: 2026 Poverty Guidelines",
+      "name": "Cornell Legal Information Institute: 26 U.S.C. Section 36B",
+      "url": "https://www.law.cornell.edu/uscode/text/26/36B",
+      "note": {
+        "en": "Full statutory text disqualifying Medicaid-eligible individuals from claiming premium tax credits.",
+        "es": "Texto completo de la ley que descalifica a las personas elegibles para Medicaid de reclamar creditos fiscales de prima."
+      }
+    },
+    {
+      "name": "ASPE HHS 2026 Poverty Guidelines",
       "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
       "note": {
-        "en": "Official 2026 federal poverty level figures used to calculate the 100% FPL premium tax credit floor and Medicaid expansion thresholds.",
-        "es": "Cifras oficiales del nivel federal de pobreza 2026 usadas para calcular el piso de 100% FPL del crédito fiscal de prima y los umbrales de expansión de Medicaid."
+        "en": "2026 federal poverty guidelines used to calculate Medicaid's 138% FPL expansion threshold.",
+        "es": "Pautas federales de pobreza 2026 usadas para calcular el umbral de expansion de Medicaid al 138% del FPL."
       }
     }
-  ],
-
-  "howToApply": {
-    "numberedSteps": [
-      { "en": "Step 1: Gather 2026 income documents (pay stubs, most recent tax return, self-employment records) for everyone in your tax household.", "es": "Paso 1: Reúna documentos de ingresos de 2026 (talones de pago, declaración de impuestos más reciente, registros de trabajo independiente) para todos en su hogar tributario." },
-      { "en": "Step 2: Apply through HealthCare.gov or your state marketplace during open enrollment (November 1, 2025 to January 15, 2026) or a qualifying special enrollment period.", "es": "Paso 2: Solicite a través de HealthCare.gov o el mercado de su estado durante la inscripción abierta (1 de noviembre de 2025 al 15 de enero de 2026) o un período de inscripción especial calificado." },
-      { "en": "Step 3: Answer the household and income questions completely so the single integrated eligibility check can screen for Medicaid, CHIP, and marketplace subsidies at once.", "es": "Paso 3: Responda las preguntas de hogar e ingresos por completo para que la verificación de elegibilidad integrada pueda evaluar Medicaid, CHIP y subsidios del Mercado a la vez." },
-      { "en": "Step 4: Review the results screen to see whether you were found Medicaid-eligible, subsidy-eligible, or neither, and enroll in the coverage you were matched to.", "es": "Paso 4: Revise la pantalla de resultados para ver si fue encontrado elegible para Medicaid, para subsidio, o ninguno, e inscríbase en la cobertura correspondiente." }
-    ],
-    "govStartingUrl": "https://www.healthcare.gov/",
-    "documentsNeeded": [
-      { "en": "Social Security numbers for every household member applying", "es": "Números de Seguro Social de cada miembro del hogar que solicita" },
-      { "en": "Proof of 2026 income (pay stubs, W-2, 1099, most recent tax return)", "es": "Comprobante de ingresos 2026 (talones de pago, W-2, 1099, declaración de impuestos más reciente)" },
-      { "en": "Immigration status documents, if applicable", "es": "Documentos de estatus migratorio, si corresponde" },
-      { "en": "Information on any current employer coverage offer, including the lowest-cost self-only premium", "es": "Información sobre cualquier oferta actual de cobertura del empleador, incluida la prima más baja solo para el empleado" },
-      { "en": "Household composition details (who counts as a dependent on your tax return)", "es": "Detalles de composición del hogar (quién cuenta como dependiente en su declaración de impuestos)" }
-    ],
-    "commonDenialReasons": [
-      { "en": "Household income falls under your state's Medicaid threshold, routing you to Medicaid instead of a subsidy in 2026", "es": "El ingreso del hogar está por debajo del umbral de Medicaid de su estado, dirigiéndolo a Medicaid en lugar de un subsidio en 2026" },
-      { "en": "Household income exceeds 400% FPL, triggering the 2026 subsidy cliff", "es": "El ingreso del hogar excede el 400% FPL, activando el límite de subsidio de 2026" },
-      { "en": "An affordable employer coverage offer is on file, which disqualifies subsidy eligibility", "es": "Hay una oferta de cobertura de empleador asequible registrada, lo cual descalifica la elegibilidad de subsidio" },
-      { "en": "Income under 100% FPL in a non-expansion state, landing in the coverage gap", "es": "Ingreso bajo 100% FPL en un estado sin expansión, cayendo en la brecha de cobertura" }
-    ],
-    "deadline": {
-      "en": "Open enrollment for 2026 marketplace coverage runs November 1, 2025 to January 15, 2026; Medicaid applications are accepted year-round.",
-      "es": "La inscripción abierta para la cobertura del Mercado 2026 va del 1 de noviembre de 2025 al 15 de enero de 2026; las solicitudes de Medicaid se aceptan todo el año."
-    }
-  }
+  ]
 }
