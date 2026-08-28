@@ -5,5 +5,6 @@ export { LastUpdated } from './LastUpdated';
 export { DatasetSchema } from './DatasetSchema';
 export { ScreenerCTA } from './ScreenerCTA';
 export { AnalyzerCTA } from './AnalyzerCTA';
+export { MmcCTA } from './MmcCTA';
 export { QuickAnswer } from './QuickAnswer';
 export { PullQuote } from './PullQuote';

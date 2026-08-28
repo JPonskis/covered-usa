@@ -14,6 +14,7 @@ import {
   ReferenceTable,
   DatasetSchema,
   AnalyzerCTA,
+  MmcCTA,
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
@@ -340,8 +341,15 @@ export default async function DrugPage({ params }: PageProps) {
           )}
         </div>
 
-        {/* Mid-article CTA */}
-        <AnalyzerCTA locale={locale} slug={`drug-${drug}-mid`} variant="inline" />
+        {/* Mid-article CTA. MMC PRD Phase 3: medicare drug pages (wegovy-medicare
+            and family) give the mid slot to the Medicare Money Check's
+            plan-vs-medications offer on BenefitsUSA (English only); the end
+            slot keeps the Bill Analyzer so both offers stay present. */}
+        {locale !== 'es' && drug.includes('medicare') ? (
+          <MmcCTA locale={locale} slug={`drug-${drug}`} audience="drugs" medium="mid-cta" />
+        ) : (
+          <AnalyzerCTA locale={locale} slug={`drug-${drug}-mid`} variant="inline" />
+        )}
 
         <div className="article-content">
           {/* Patient Assistance Programs (optional) */}

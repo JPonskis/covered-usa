@@ -134,6 +134,46 @@ function detectScreenerProgram(slug: string, keywords: string[]): ProgramKey {
   return 'general';
 }
 
+// ─── MMC CROSS-SITE (MMC PRD Phase 3, §7) ─────────────────────────────────────
+// English medicare posts route their CTAs to the Medicare Money Check on
+// BenefitsUSA (the purpose-built Medicare tool) instead of the generic
+// screener. The audience split is the PRD's own mapping. Copy is figure-free
+// (no dollar amounts to drift), hedged, no call promise, sister site named.
+type MmcAudience = 'enrolled' | 'pre65' | 'drugs';
+
+function detectMmcAudience(slug: string, keywords: string[]): MmcAudience {
+  const hay = `${slug} ${keywords.join(' ')}`.toLowerCase();
+  const has = (terms: string[]) => terms.some((t) => hay.includes(t));
+  if (has(['cobra', 'employer', 'hsa', 'retired-at', 'retiring', 'before-medicare', 'turning-65', 'turning 65', 'at-63', 'at-62', 'at-64', 'early retire'])) {
+    return 'pre65';
+  }
+  if (has(['irmaa', 'medigap', 'part-d', 'part d', 'drug', 'prescription', 'wegovy', 'ozempic', 'glp', 'insulin', 'supplement plan'])) {
+    return 'drugs';
+  }
+  return 'enrolled';
+}
+
+const MMC_CTA_COPY: Record<MmcAudience, CTAVariant> = {
+  enrolled: {
+    heading: 'Are you overpaying for Medicare?',
+    desc: 'About 5 questions show your exact dollar answer, from the state programs that pay the Part B premium back to prescription help. Free, on our sister site BenefitsUSA, and you see the result before it asks for anything.',
+    midBtn: 'Check what I might be owed',
+    endBtn: 'Check what I might be owed',
+  },
+  pre65: {
+    heading: 'Your Medicare window has exact dates, and a lifetime late penalty',
+    desc: 'Your opening and closing dates, computed from your birthday in about 60 seconds, with reminders before each one. Free, on our sister site BenefitsUSA.',
+    midBtn: 'Get my exact dates',
+    endBtn: 'Get my exact dates',
+  },
+  drugs: {
+    heading: 'Your drug plan re-prices every January. Your prescriptions did not move',
+    desc: 'A free hand-checked report of what your medications cost on your county’s plans, plus the switch dates that apply to you. On our sister site BenefitsUSA.',
+    midBtn: 'Check my plan against my meds',
+    endBtn: 'Check my plan against my meds',
+  },
+};
+
 const SCREENER_PROGRAM_COPY: Record<ProgramKey, { en: CTAVariant; es: CTAVariant }> = {
   medicare: {
     en: {
@@ -233,11 +273,19 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
   };
 
   const ctaTarget: 'screener' | 'analyzer' = post.target === 'analyzer' ? 'analyzer' : 'screener';
-  const cta =
-    ctaTarget === 'screener'
-      ? SCREENER_PROGRAM_COPY[detectScreenerProgram(slug, post.keywords || [])][isEs ? 'es' : 'en']
+  const screenerProgram = ctaTarget === 'screener' ? detectScreenerProgram(slug, post.keywords || []) : null;
+  // MMC PRD Phase 3: English medicare posts point at the Medicare Money Check.
+  const mmcAudience = !isEs && screenerProgram === 'medicare' ? detectMmcAudience(slug, post.keywords || []) : null;
+  const cta = mmcAudience
+    ? MMC_CTA_COPY[mmcAudience]
+    : screenerProgram
+      ? SCREENER_PROGRAM_COPY[screenerProgram][isEs ? 'es' : 'en']
       : CTA_COPY[ctaTarget][isEs ? 'es' : 'en'];
   const ctaPath = CTA_PATHS[ctaTarget];
+  const ctaHref = (medium: string) =>
+    mmcAudience
+      ? `https://benefitsusa.org/en/medicare-money-check?src=${encodeURIComponent(`coveredusa-${slug}`)}&utm_source=coveredusa&utm_medium=${medium}`
+      : `/${locale}/${ctaPath}?utm_source=blog&utm_medium=${medium}&utm_campaign=${encodeURIComponent(slug)}`;
 
   // JSON-LD schemas
   const articleSchema = {
@@ -395,7 +443,7 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
               </p>
             </div>
             <Link
-              href={`/${locale}/${ctaPath}?utm_source=blog&utm_medium=mid-cta&utm_campaign=${encodeURIComponent(slug)}`}
+              href={ctaHref('mid-cta')}
               className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm whitespace-nowrap transition-all hover:opacity-90"
               style={{ background: 'var(--teal)', color: '#fff', fontFamily: 'var(--font-display), Georgia, serif' }}
             >
@@ -433,7 +481,7 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
             </p>
           </div>
           <Link
-            href={`/${locale}/${ctaPath}?utm_source=blog&utm_medium=article&utm_campaign=${encodeURIComponent(slug)}`}
+            href={ctaHref('article')}
             className="flex-shrink-0 inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm whitespace-nowrap transition-all hover:opacity-90"
             style={{ background: 'var(--teal)', color: '#fff', fontFamily: 'var(--font-display), Georgia, serif' }}
           >

@@ -14,6 +14,7 @@ import {
   ReferenceTable,
   ScreenerCTA,
   AnalyzerCTA,
+  MmcCTA,
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
@@ -127,6 +128,15 @@ export default async function QAPage({ params }: PageProps) {
 
   // Choose CTA component based on ctaTarget
   const CTAComponent = data.ctaTarget === 'analyzer' ? AnalyzerCTA : ScreenerCTA;
+
+  // MMC PRD Phase 3: medicare Q&A pages give the MID slot to the Medicare
+  // Money Check on BenefitsUSA (English only); the end slot keeps this site's
+  // own CTA so both offers stay present. Drug-flavored medicare questions get
+  // the plan-vs-medications pitch, the rest the money-check pitch.
+  const isMedicareQa = locale !== 'es' && /(^|-)medicare(-|$)|medigap|irmaa/.test(question);
+  const mmcAudience: 'drugs' | 'enrolled' = /part-d|drug|prescription|ozempic|wegovy|glp|insulin|irmaa|medigap|extra-help/.test(question)
+    ? 'drugs'
+    : 'enrolled';
 
   const pageGraph = buildSchemaGraph(
     [medicalWebPageSchema, breadcrumbSchema, faqSchema, qaPageSchema],
@@ -257,7 +267,11 @@ export default async function QAPage({ params }: PageProps) {
         </div>
 
         {/* Mid-article CTA */}
-        <CTAComponent locale={locale} slug={`qa-${question}-mid`} variant="inline" />
+        {isMedicareQa ? (
+          <MmcCTA locale={locale} slug={`qa-${question}`} audience={mmcAudience} medium="mid-cta" />
+        ) : (
+          <CTAComponent locale={locale} slug={`qa-${question}-mid`} variant="inline" />
+        )}
 
         <div className="article-content">
           {/* Detail sections — render second half after mid CTA (per split rule above) */}
