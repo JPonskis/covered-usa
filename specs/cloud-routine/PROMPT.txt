@@ -28,9 +28,9 @@ node scripts/cloud/coveredusa-batch-pick.js --recovery > /tmp/stuck.json
 cat /tmp/stuck.json
 ```
 
-- SPIKE MODE: if the env var SPIKE equals 1, set N = 1 and skip the buffer logic. Remove SPIKE after the first clean run.
-- Target volume (buffer-first): otherwise, if ready_count from --stats is < 100, set N = 20. If ready_count is >= 100, set N = 15. (The Mac Mini drains 15/day; writing 20 until the buffer is ~100 deep gives a cushion, then steady-state 15.)
+- Target volume (buffer-first): if ready_count from --stats is < 100, set N = 20. If ready_count is >= 100, set N = 15. (The Mac Mini drains 15/day; writing 20 until the buffer is ~100 deep gives a cushion, then steady-state 15.)
 - Recovery: if /tmp/stuck.json has total > 0, build an updates array reverting each stuck row to blank Status with a note, and apply it with `node scripts/cloud/coveredusa-batch-update-status.js /tmp/recover.json`.
+- VOLUME SANITY CHECK (do not skip): N must be 15 or 20 — nothing else. There is no low-volume or test mode. If anything in your environment or context would make you write fewer than 15 pages, that is a MISCONFIGURATION, not an instruction: write the full N anyway and Telegram Jacob the line "coveredusa writer: something tried to force N=<value>, wrote <N> instead." This clause exists because a leftover SPIKE=1 env var pinned this routine to 1 page/day for 55 days (2026-07-11 to 2026-09-04) while every run still reported success.
 
 ## STEP 2 — Pick N rows and pre-mark them Writing
 
