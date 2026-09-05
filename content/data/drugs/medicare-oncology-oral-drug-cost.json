@@ -1,0 +1,628 @@
+{
+  "slug": "medicare-oncology-oral-drug-cost",
+  "drugName": {
+    "en": "Oral Cancer Drugs (Capecitabine / Xeloda and Related Oral Oncology Agents)",
+    "es": "Medicamentos Orales para el Cáncer (Capecitabina / Xeloda y Agentes Oncológicos Orales Relacionados)"
+  },
+  "shortName": {
+    "en": "Oral Cancer Drugs",
+    "es": "Medicamentos Orales para el Cáncer"
+  },
+  "nonProprietaryName": "capecitabine",
+  "brandNames": [
+    "Xeloda",
+    "Imbruvica",
+    "Revlimid",
+    "Ibrance",
+    "Xtandi",
+    "Jakafi"
+  ],
+  "drugClass": {
+    "en": "Oral antineoplastic agent (antimetabolite prodrug of fluorouracil); related oral oncology classes covered by Medicare Part D include BTK inhibitors, CDK4/6 inhibitors, and immunomodulators",
+    "es": "Agente antineoplásico oral (profármaco antimetabolito de fluorouracilo); otras clases oncológicas orales cubiertas por Medicare Parte D incluyen inhibidores de BTK, inhibidores de CDK4/6 e inmunomoduladores"
+  },
+  "routeOfAdministration": "Oral",
+  "medicalSpecialty": "Oncology",
+  "lastUpdated": "2026-09-05",
+  "ctaTarget": "analyzer",
+  "readingTime": "9 min read",
+  "hcpcsJCodes": ["J8522"],
+  "meta": {
+    "title": {
+      "en": "Oral Cancer Drug Cost in 2026: Part B vs Part D | CoveredUSA",
+      "es": "Costo de Medicamentos Orales para el Cáncer 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Generic capecitabine costs $50-$400/cycle in 2026, brand Xeloda tops $5,000. See why some oral cancer drugs bill Part B, others Part D, plus PAP options.",
+      "es": "La capecitabina genérica cuesta $50-$400/ciclo en 2026; Xeloda de marca supera $5,000. Vea por qué unos medicamentos orales facturan Parte B, otros Parte D."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Oral Cancer Drug Cost in 2026: Medicare Part B vs Part D Explained",
+      "es": "Costo de Medicamentos Orales para el Cáncer en 2026: Parte B vs Parte D de Medicare"
+    },
+    "subhero": {
+      "en": "Generic capecitabine, the oral form of chemotherapy sold as Xeloda, costs $50 to $400 per 21-day cycle in 2026 at most US pharmacies, while brand-name Xeloda runs $3,000 to $5,300 for the same cycle. Capecitabine is one of a short list of self-administered oral cancer drugs that Medicare pays for under Part B instead of Part D, because it is the oral prodrug of an intravenous chemotherapy agent. Most other oral cancer drugs, including Imbruvica, Revlimid, Ibrance, and Xtandi, are billed under Medicare Part D and capped at $2,100 out-of-pocket per year in 2026. This guide breaks down which oral oncology drugs fall under which part of Medicare, what capecitabine actually costs, and how to apply for manufacturer and foundation assistance.",
+      "es": "La capecitabina genérica, la forma oral de quimioterapia vendida como Xeloda, cuesta $50 a $400 por ciclo de 21 días en 2026 en la mayoría de las farmacias de EE.UU., mientras que la marca Xeloda cuesta $3,000 a $5,300 por el mismo ciclo. Capecitabina es uno de los pocos medicamentos orales para el cáncer autoadministrados que Medicare paga bajo la Parte B en lugar de la Parte D, porque es el profármaco oral de un agente de quimioterapia intravenoso. La mayoría de los demás medicamentos orales para el cáncer, incluidos Imbruvica, Revlimid, Ibrance y Xtandi, se facturan bajo Medicare Parte D y están limitados a $2,100 de bolsillo al año en 2026. Esta guía explica qué medicamentos oncológicos orales caen bajo cada parte de Medicare, cuánto cuesta realmente capecitabina y cómo solicitar asistencia del fabricante y de fundaciones."
+    }
+  },
+  "quickAnswer": {
+    "en": "In 2026, generic capecitabine (the oral prodrug sold as Xeloda) costs $50 to $400 per 21-day treatment cycle at retail, while brand Xeloda runs $3,000 to $5,300 for the same cycle. Capecitabine is billed under Medicare Part B (HCPCS code J8522) because federal law treats it as the oral equivalent of an intravenous chemotherapy drug, so Part B beneficiaries pay 20% coinsurance after the $283 Part B deductible instead of a Part D copay. Most other oral cancer drugs, including Imbruvica, Revlimid, Ibrance, and Xtandi, do not qualify for that Part B exception and are instead covered under Medicare Part D, where total out-of-pocket spending is capped at $2,100 per year in 2026 under the Inflation Reduction Act. The Genentech Patient Foundation supplies free brand Xeloda to uninsured patients earning under roughly 500% of the federal poverty level, and the Genentech Oncology Co-pay Assistance Program can lower commercial insurance copays to $5. Medicare and Medicaid patients cannot use that manufacturer coupon by federal law, but foundations such as CancerCare and the PAN Foundation fill that gap.",
+    "es": "En 2026, la capecitabina genérica (el profármaco oral vendido como Xeloda) cuesta $50 a $400 por ciclo de tratamiento de 21 días al por menor, mientras que la marca Xeloda cuesta $3,000 a $5,300 por el mismo ciclo. Capecitabina se factura bajo Medicare Parte B (código HCPCS J8522) porque la ley federal la trata como el equivalente oral de un medicamento de quimioterapia intravenoso, por lo que los beneficiarios de Parte B pagan un coseguro del 20% después del deducible de $283 de Parte B en lugar de un copago de Parte D. La mayoría de los demás medicamentos orales para el cáncer, incluidos Imbruvica, Revlimid, Ibrance y Xtandi, no califican para esa excepción de Parte B y en cambio están cubiertos bajo Medicare Parte D, donde el gasto total de bolsillo está limitado a $2,100 al año en 2026 bajo la Ley de Reducción de la Inflación. La Fundación de Pacientes de Genentech suministra Xeloda de marca gratis a pacientes sin seguro que ganan menos de aproximadamente el 500% del nivel federal de pobreza."
+  },
+  "pricing": {
+    "medicareAspPerUnit": 0.08,
+    "medicareAspUnit": {
+      "en": "per 50mg billing unit (HCPCS J8522, capecitabine oral), 2026 ASP+6% payment limit",
+      "es": "por unidad de facturación de 50mg (HCPCS J8522, capecitabina oral), límite de pago ASP+6% de 2026"
+    },
+    "retailLow": 50,
+    "retailHigh": 5300,
+    "retailUnit": {
+      "en": "per 21-day treatment cycle (generic low end to brand Xeloda high end)",
+      "es": "por ciclo de tratamiento de 21 días (extremo bajo genérico a extremo alto de Xeloda de marca)"
+    },
+    "inpatientLow": 6000,
+    "inpatientHigh": 9000,
+    "inpatientUnit": {
+      "en": "per 21-day cycle (hospital-dispensed brand Xeloda, facility rate)",
+      "es": "por ciclo de 21 días (Xeloda de marca dispensado en hospital, tarifa de instalación)"
+    },
+    "medicarePartDMonthlyCap": null,
+    "medicaidCopayLow": 1,
+    "medicaidCopayHigh": 4,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283,
+    "partDAnnualOopCap": 2100
+  },
+  "introParagraphs": [
+    {
+      "en": "Oral cancer drugs split into two very different Medicare billing paths in 2026, and the split confuses even experienced patients. Capecitabine, sold as Xeloda, belongs to a short statutory list of self-administered oral anticancer drugs that Medicare pays for under Part B rather than Part D, a carve-out created by Section 1861(s)(2)(Q) of the Social Security Act, added by the Balanced Budget Act of 1997, and codified in the Medicare Benefit Policy Manual, Chapter 15, Section 50.5.3. The rule exists because capecitabine is a prodrug of intravenous fluorouracil (5-FU), a drug that Part B has always covered when given by infusion. Congress decided that switching a patient from an IV chemotherapy drug to its oral form should not switch the patient from generous Part B coverage to a Part D formulary with tiers, deductibles, and prior authorization hurdles.",
+      "es": "Los medicamentos orales para el cáncer se dividen en dos vías de facturación de Medicare muy diferentes en 2026, y esa división confunde incluso a pacientes con experiencia. Capecitabina, vendida como Xeloda, pertenece a una lista estatutaria corta de medicamentos orales anticancerígenos autoadministrados que Medicare paga bajo la Parte B en lugar de la Parte D, una excepción creada por la Sección 1861(s)(2)(Q) de la Ley del Seguro Social, añadida por la Ley de Presupuesto Equilibrado de 1997, y codificada en el Manual de Política de Beneficios de Medicare, Capítulo 15, Sección 50.5.3. La regla existe porque capecitabina es un profármaco de fluorouracilo intravenoso (5-FU), un medicamento que la Parte B siempre ha cubierto cuando se administra por infusión. El Congreso decidió que cambiar a un paciente de un medicamento de quimioterapia intravenoso a su forma oral no debería cambiar al paciente de una cobertura generosa de Parte B a un formulario de Parte D con niveles, deducibles y obstáculos de autorización previa."
+    },
+    {
+      "en": "Capecitabine carries HCPCS code J8522, an unusual feature for an oral drug since J-codes almost always belong to injected or infused Part B products. The January 2026 Medicare Part B payment limit for J8522 is $0.08 per 50mg billing unit, so the total Part B allowed amount for a typical 21-day cycle (roughly 800 to 1,000 units depending on body surface area dosing) lands around $65 to $80 before the beneficiary's 20% coinsurance. That is dramatically cheaper than the $3,000 to $5,300 cash price for brand Xeloda, which is why almost every capecitabine prescription in 2026 gets filled with the generic. Genentech's brand Xeloda still appears on hospital bills and on cash-pay claims for patients whose pharmacy substitutes the brand by mistake or whose insurer requires the brand for a documented clinical reason.",
+      "es": "Capecitabina lleva el código HCPCS J8522, una característica inusual para un medicamento oral ya que los códigos J casi siempre pertenecen a productos de Parte B inyectados o infundidos. El límite de pago de Medicare Parte B de enero de 2026 para J8522 es $0.08 por unidad de facturación de 50mg, por lo que el monto total permitido de Parte B para un ciclo típico de 21 días (aproximadamente 800 a 1,000 unidades según la dosificación por superficie corporal) llega a alrededor de $65 a $80 antes del coseguro del 20% del beneficiario. Eso es drásticamente más barato que el precio en efectivo de $3,000 a $5,300 de Xeloda de marca, razón por la cual casi todas las recetas de capecitabina en 2026 se surten con el genérico. Xeloda de marca de Genentech todavía aparece en facturas hospitalarias y en reclamos de pago en efectivo para pacientes cuya farmacia sustituye la marca por error o cuyo asegurador requiere la marca por una razón clínica documentada."
+    },
+    {
+      "en": "Imbruvica (ibrutinib), Revlimid (lenalidomide), Ibrance (palbociclib), Xtandi (enzalutamide), and Jakafi (ruxolitinib) sit on the other side of the line. None of them is the oral form of a Part B-covered IV drug, so Medicare places all of them under Part D. Ibrutinib is one of the first 10 drugs negotiated under the Inflation Reduction Act, bringing its 2026 Medicare Maximum Fair Price to $9,319 per 30-day supply, a 38% cut from the pre-negotiation list price of $14,934. Part D patients taking any of these five drugs benefit from the 2026 annual out-of-pocket cap of $2,100, meaning a patient on Imbruvica typically reaches the cap within the first one or two fills of the year and pays $0 for the rest of their Part D drugs after that.",
+      "es": "Imbruvica (ibrutinib), Revlimid (lenalidomida), Ibrance (palbociclib), Xtandi (enzalutamida) y Jakafi (ruxolitinib) están del otro lado de la línea. Ninguno de ellos es la forma oral de un medicamento IV cubierto por la Parte B, por lo que Medicare los coloca a todos bajo la Parte D. Ibrutinib es uno de los primeros 10 medicamentos negociados bajo la Ley de Reducción de la Inflación, lo que lleva su Precio Máximo Justo de Medicare 2026 a $9,319 por suministro de 30 días, una reducción del 38% del precio de lista previo a la negociación de $14,934. Los pacientes de Parte D que toman cualquiera de estos cinco medicamentos se benefician del límite anual de gastos de bolsillo de $2,100 en 2026, lo que significa que un paciente con Imbruvica típicamente alcanza el límite dentro de los primeros uno o dos surtidos del año."
+    }
+  ],
+  "pointOfPay": {
+    "rows": [
+      {
+        "pointOfPay": {
+          "en": "Medicare Part B ASP rate (capecitabine, J8522)",
+          "es": "Tarifa ASP de Medicare Parte B (capecitabina, J8522)"
+        },
+        "cost": {
+          "en": "$0.08/unit; ~$65-$80/cycle allowed amount before coinsurance",
+          "es": "$0.08/unidad; ~$65-$80/ciclo de monto permitido antes del coseguro"
+        },
+        "notes": {
+          "en": "You pay 20% coinsurance after the 2026 Part B deductible of $283",
+          "es": "Paga 20% de coseguro después del deducible de Parte B de $283 en 2026"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Pharmacy counter, retail cash (generic capecitabine)",
+          "es": "Mostrador de farmacia, efectivo (capecitabina genérica)"
+        },
+        "cost": {
+          "en": "$50 - $400/21-day cycle",
+          "es": "$50 - $400/ciclo de 21 días"
+        },
+        "notes": {
+          "en": "Price varies widely by pharmacy; GoodRx coupon usually brings it to the low end",
+          "es": "El precio varía mucho por farmacia; el cupón de GoodRx generalmente lo lleva al extremo bajo"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Pharmacy counter, retail cash (brand Xeloda)",
+          "es": "Mostrador de farmacia, efectivo (Xeloda de marca)"
+        },
+        "cost": {
+          "en": "$3,000 - $5,300/21-day cycle",
+          "es": "$3,000 - $5,300/ciclo de 21 días"
+        },
+        "notes": {
+          "en": "Rarely dispensed once the generic is available; brand still billed at some hospitals",
+          "es": "Rara vez se dispensa una vez disponible el genérico; algunos hospitales todavía facturan la marca"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicare Part D (for Part D oral oncology drugs, e.g. Imbruvica)",
+          "es": "Medicare Parte D (para medicamentos oncológicos orales de Parte D, ej. Imbruvica)"
+        },
+        "cost": {
+          "en": "Formulary tier copay/coinsurance, capped at $2,100/year",
+          "es": "Copago/coseguro por nivel del formulario, límite de $2,100/año"
+        },
+        "notes": {
+          "en": "Applies to drugs not on the Part B oral anticancer list, like Imbruvica and Revlimid",
+          "es": "Aplica a medicamentos que no están en la lista de anticancerígenos orales de Parte B, como Imbruvica y Revlimid"
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicaid",
+          "es": "Medicaid"
+        },
+        "cost": {
+          "en": "$1 - $4/prescription, prior authorization common",
+          "es": "$1 - $4/receta, autorización previa común"
+        },
+        "notes": {
+          "en": "Covers both Part B-style and Part D-style oral oncology drugs depending on state rules",
+          "es": "Cubre medicamentos oncológicos orales tipo Parte B y tipo Parte D según las reglas del estado"
+        }
+      }
+    ],
+    "tableFootnote": {
+      "en": "Part B ASP rate for J8522 reflects the January 2026 CMS quarterly pricing file. Retail cash prices reflect 2026 GoodRx and pharmacy survey data. Part D figures depend on your plan's formulary tier.",
+      "es": "La tarifa ASP de Parte B para J8522 refleja el archivo de precios trimestral de CMS de enero de 2026. Los precios en efectivo al por menor reflejan datos de GoodRx y encuestas de farmacia de 2026. Las cifras de Parte D dependen del nivel del formulario de su plan."
+    },
+    "tableSource": "CMS Medicare Part B ASP Drug Pricing Files (January 2026), Noridian LCD L33826, GoodRx, CMS IRA negotiated price fact sheet"
+  },
+  "whyHospitalsCharge": {
+    "paragraphs": [
+      {
+        "en": "Hospitals dispensing oral cancer drugs during an inpatient stay generally bundle the drug cost into the facility's Diagnosis Related Group (DRG) payment rather than billing it separately by NDC or J-code the way an outpatient specialty pharmacy would. When capecitabine or another oral oncology agent shows up as a distinct line item on an itemized inpatient bill, the hospital has usually applied its own chargemaster markup on top of its acquisition cost, and that markup is not tied to the Medicare Part B ASP rate of $0.08 per unit that applies outside the hospital.",
+        "es": "Los hospitales que dispensan medicamentos orales para el cáncer durante una hospitalización generalmente incluyen el costo del medicamento en el pago del Grupo Relacionado con el Diagnóstico (DRG) de la instalación en lugar de facturarlo por separado por NDC o código J como lo haría una farmacia especializada ambulatoria. Cuando capecitabina u otro agente oncológico oral aparece como una línea distinta en una factura detallada de hospitalización, el hospital generalmente ha aplicado su propio recargo de lista de precios sobre su costo de adquisición, y ese recargo no está vinculado a la tarifa ASP de Medicare Parte B de $0.08 por unidad que aplica fuera del hospital."
+      },
+      {
+        "en": "Brand-name Xeloda charges above $5,300 per 21-day cycle on a hospital bill are a common dispute target, especially when the patient's outpatient pharmacy record shows generic capecitabine was dispensed for every other cycle. Request an itemized bill with the National Drug Code (NDC) for any oral chemotherapy line item, and compare it against the generic capecitabine retail range of $50 to $400 per cycle. A facility charging brand pricing for a generic drug, or charging the drug separately when it should be bundled into the DRG payment, is worth escalating to the hospital's patient financial services office.",
+        "es": "Los cargos de Xeloda de marca superiores a $5,300 por ciclo de 21 días en una factura hospitalaria son un objetivo común de disputa, especialmente cuando el registro de farmacia ambulatoria del paciente muestra que se dispensó capecitabina genérica en todos los demás ciclos. Solicite una factura detallada con el Código Nacional de Medicamento (NDC) para cualquier línea de quimioterapia oral, y compárela con el rango de precio en efectivo de capecitabina genérica de $50 a $400 por ciclo. Una instalación que cobra precio de marca por un medicamento genérico, o que cobra el medicamento por separado cuando debería estar incluido en el pago DRG, vale la pena escalarlo a la oficina de servicios financieros del hospital."
+      },
+      {
+        "en": "Part D oral oncology drugs like Imbruvica and Revlimid follow a different inpatient pattern because their high five-figure monthly list prices make hospitals reluctant to stock them for inpatient use; most hospitals arrange for the patient's outpatient specialty pharmacy to continue supplying the drug even during a short inpatient stay. If one of these Part D drugs does appear on an inpatient bill, ask specifically whether it was billed against the DRG or as a separate pharmacy charge, since a separate charge on top of the DRG payment is a frequent coding error worth appealing.",
+        "es": "Los medicamentos oncológicos orales de Parte D como Imbruvica y Revlimid siguen un patrón de hospitalización diferente porque sus precios de lista mensuales de cinco cifras hacen que los hospitales sean reacios a tenerlos en stock para uso hospitalario; la mayoría de los hospitales organizan que la farmacia especializada ambulatoria del paciente continúe suministrando el medicamento incluso durante una hospitalización corta. Si uno de estos medicamentos de Parte D aparece en una factura de hospitalización, pregunte específicamente si se facturó contra el DRG o como un cargo de farmacia separado, ya que un cargo separado sobre el pago DRG es un error de codificación frecuente que vale la pena apelar."
+      }
+    ]
+  },
+  "hcpcsSection": {
+    "intro": {
+      "en": "Capecitabine is one of the rare oral drugs with a HCPCS Level II J-code because Medicare Part B, not Part D, pays for it under the self-administered oral anticancer drug benefit. Suppliers must be enrolled DME MAC suppliers and hold a signed order before billing.",
+      "es": "Capecitabina es uno de los pocos medicamentos orales con un código J de HCPCS Nivel II porque Medicare Parte B, no Parte D, lo paga bajo el beneficio de medicamentos anticancerígenos orales autoadministrados. Los proveedores deben estar inscritos como proveedores DME MAC y tener una orden firmada antes de facturar."
+    },
+    "rows": [
+      {
+        "code": "J8522",
+        "description": {
+          "en": "Capecitabine, oral, 50mg billing unit",
+          "es": "Capecitabina, oral, unidad de facturación de 50mg"
+        },
+        "whatToLookFor": {
+          "en": "Check the unit count against your prescribed dose; billing units are per 50mg, not per tablet, and the wrong crosswalk can inflate or shrink your coinsurance",
+          "es": "Verifique el conteo de unidades contra su dosis prescrita; las unidades de facturación son por 50mg, no por tableta, y un cruce incorrecto puede inflar o reducir su coseguro"
+        }
+      }
+    ],
+    "footnote": {
+      "en": "HCPCS code J8520/J8521 (150mg and 500mg unit codes) were retired effective October 1, 2024, and replaced by the single J8522 (50mg unit) code implemented January 1, 2025, and still in effect for 2026.",
+      "es": "Los códigos HCPCS J8520/J8521 (unidades de 150mg y 500mg) se retiraron el 1 de octubre de 2024, y fueron reemplazados por el código único J8522 (unidad de 50mg) implementado el 1 de enero de 2025, todavía vigente en 2026."
+    },
+    "source": "Noridian DME MAC LCD L33826 and Policy Article A52479, CMS HCPCS 2026 code file"
+  },
+  "patientAssistancePrograms": {
+    "intro": {
+      "en": "Genentech, the manufacturer of Xeloda, runs two separate programs depending on your insurance status, and independent foundations fill the gap for Medicare and Medicaid patients who cannot use manufacturer copay assistance. Patients on the Part D drugs discussed on this page (Imbruvica, Revlimid, Ibrance, Xtandi, Jakafi) should check that manufacturer's own PAP directly, since each is run separately (AbbVie for Imbruvica, Bristol Myers Squibb for Revlimid, Pfizer for Ibrance and Xtandi, Incyte for Jakafi).",
+      "es": "Genentech, el fabricante de Xeloda, opera dos programas separados según su estado de seguro, y fundaciones independientes llenan el vacío para pacientes de Medicare y Medicaid que no pueden usar la asistencia de copago del fabricante. Los pacientes en los medicamentos de Parte D discutidos en esta página (Imbruvica, Revlimid, Ibrance, Xtandi, Jakafi) deben verificar el PAP propio de ese fabricante directamente, ya que cada uno se opera por separado."
+    },
+    "rows": [
+      {
+        "program": "Genentech Patient Foundation",
+        "costBenefit": {
+          "en": "Free brand Xeloda for uninsured or underinsured patients earning under roughly 500% FPL (about $150,000/year for a typical household)",
+          "es": "Xeloda de marca gratis para pacientes sin seguro o con seguro insuficiente que ganan menos de aproximadamente 500% del FPL (alrededor de $150,000/año para un hogar típico)"
+        },
+        "howToApply": "gene.com/patients/patient-foundation"
+      },
+      {
+        "program": "Genentech Oncology Co-pay Assistance Program",
+        "costBenefit": {
+          "en": "As low as $5/prescription for commercially insured patients, up to $25,000/year per product",
+          "es": "Desde $5/receta para pacientes con seguro comercial, hasta $25,000/año por producto"
+        },
+        "howToApply": "copayassistancenow.com"
+      },
+      {
+        "program": "CancerCare Co-Payment Assistance Foundation",
+        "costBenefit": {
+          "en": "$4,000 initial grant (up to $10,000/case) toward oral or IV chemotherapy copays for insured patients, including Medicare, under 400% FPL",
+          "es": "Subsidio inicial de $4,000 (hasta $10,000/caso) para copagos de quimioterapia oral o IV para pacientes asegurados, incluido Medicare, bajo 400% del FPL"
+        },
+        "howToApply": "cancercare.org/copayfoundation"
+      },
+      {
+        "program": "PAN Foundation",
+        "costBenefit": {
+          "en": "Grants for Medicare and underinsured cancer patients across multiple disease funds",
+          "es": "Subsidios para pacientes de Medicare y con seguro insuficiente en múltiples fondos de enfermedades"
+        },
+        "howToApply": "panfoundation.org"
+      }
+    ],
+    "footnote": {
+      "en": "Federal anti-kickback law (42 U.S.C. Section 1320a-7b) bars manufacturer coupons and copay cards, including the Genentech Oncology Co-pay Assistance Program, from being used by Medicare, Medicaid, TRICARE, or VA beneficiaries. If you have government insurance, apply to the Genentech Patient Foundation, CancerCare, or PAN Foundation instead.",
+      "es": "La ley federal anti-soborno (42 U.S.C. Sección 1320a-7b) prohíbe que los cupones y tarjetas de copago del fabricante, incluido el Programa de Asistencia de Copago Oncológico de Genentech, sean utilizados por beneficiarios de Medicare, Medicaid, TRICARE o VA. Si tiene seguro del gobierno, solicite a la Fundación de Pacientes de Genentech, CancerCare o la Fundación PAN en su lugar."
+    },
+    "source": "Genentech Patient Foundation, CopayAssistanceNow.com, CancerCare.org, PANFoundation.org, NeedyMeds.org"
+  },
+  "medicarePartD": {
+    "hasSpecificCap": false,
+    "paragraphs": [
+      {
+        "en": "Medicare Part D applies to the majority of oral cancer drugs, including Imbruvica, Revlimid, Ibrance, Xtandi, and Jakafi, but not to capecitabine (which sits under Part B instead). For the Part D drugs, the 2026 annual out-of-pocket cap of $2,100 under the Inflation Reduction Act limits total spending across all covered Part D drugs combined in a calendar year. Because these drugs often list for $10,000 to $18,000 per month, most patients hit the $2,100 cap after their first fill and pay $0 for the remainder of the plan year on all their Part D prescriptions.",
+        "es": "Medicare Parte D aplica a la mayoría de los medicamentos orales para el cáncer, incluidos Imbruvica, Revlimid, Ibrance, Xtandi y Jakafi, pero no a capecitabina (que está bajo la Parte B en su lugar). Para los medicamentos de Parte D, el límite anual de gastos de bolsillo de $2,100 en 2026 bajo la Ley de Reducción de la Inflación limita el gasto total en todos los medicamentos cubiertos de Parte D combinados en un año calendario. Debido a que estos medicamentos a menudo tienen un precio de lista de $10,000 a $18,000 por mes, la mayoría de los pacientes alcanzan el límite de $2,100 después de su primer surtido."
+      },
+      {
+        "en": "Formulary tier placement still matters before you hit the annual cap. Part D plans typically place high-cost oral oncology drugs on specialty tiers, which can carry coinsurance of 25% to 33% of the negotiated price for the first fill of the year, sometimes running into the thousands of dollars before the $2,100 cap kicks in. Starting in 2025, Medicare's Prescription Payment Plan lets beneficiaries spread that upfront cost evenly across the calendar year instead of paying it in one lump sum; ask your Part D plan to enroll you if a specialty-tier oral oncology drug creates a large first bill.",
+        "es": "La colocación en el nivel del formulario todavía importa antes de alcanzar el límite anual. Los planes de Parte D típicamente colocan los medicamentos oncológicos orales de alto costo en niveles especializados, que pueden tener un coseguro de 25% a 33% del precio negociado para el primer surtido del año, a veces llegando a miles de dólares antes de que entre en vigor el límite de $2,100. A partir de 2025, el Plan de Pago de Recetas de Medicare permite a los beneficiarios distribuir ese costo inicial uniformemente durante el año calendario en lugar de pagarlo en una suma global."
+      },
+      {
+        "en": "The Low Income Subsidy, also called Extra Help, reduces Part D cost-sharing to a nominal $0 to $13.55 copay per prescription in 2026 for qualifying beneficiaries with income below 150% of the federal poverty level. Extra Help applies to Part D oral oncology drugs like Imbruvica and Revlimid but does not change your Part B coinsurance for capecitabine, which stays at 20% after the deductible regardless of Extra Help status unless you also qualify for a Medicare Savings Program.",
+        "es": "El Subsidio de Bajos Ingresos, también llamado Ayuda Adicional, reduce la participación en los costos de Parte D a un copago nominal de $0 a $13.55 por receta en 2026 para beneficiarios calificados con ingresos por debajo del 150% del nivel federal de pobreza. Ayuda Adicional aplica a medicamentos oncológicos orales de Parte D como Imbruvica y Revlimid, pero no cambia su coseguro de Parte B para capecitabina, que permanece en 20% después del deducible independientemente del estado de Ayuda Adicional a menos que también califique para un Programa de Ahorros de Medicare."
+      }
+    ]
+  },
+  "commonBillingErrors": {
+    "intro": {
+      "en": "Oral oncology billing errors usually trace back to confusion over which part of Medicare should pay. Check for these issues before paying any bill above the ranges listed on this page:",
+      "es": "Los errores de facturación de oncología oral generalmente se deben a confusión sobre qué parte de Medicare debe pagar. Verifique estos problemas antes de pagar cualquier factura por encima de los rangos indicados en esta página:"
+    },
+    "items": [
+      {
+        "en": "Capecitabine billed through a Part D prescription drug plan instead of Part B, which can trigger an incorrect formulary tier copay when it should be a flat 20% Part B coinsurance",
+        "es": "Capecitabina facturada a través de un plan de medicamentos recetados de Parte D en lugar de Parte B, lo que puede activar un copago de nivel del formulario incorrecto cuando debería ser un coseguro plano del 20% de Parte B"
+      },
+      {
+        "en": "Pharmacy not enrolled as a DME MAC supplier attempting to bill Part B for capecitabine, resulting in an automatic denial that gets passed to the patient as a cash charge",
+        "es": "Farmacia no inscrita como proveedor DME MAC que intenta facturar Parte B por capecitabina, lo que resulta en una denegación automática que se pasa al paciente como cargo en efectivo"
+      },
+      {
+        "en": "Retired HCPCS codes J8520 or J8521 still appearing on a 2026 claim instead of the current J8522 code, causing a claim rejection",
+        "es": "Códigos HCPCS retirados J8520 o J8521 que aún aparecen en un reclamo de 2026 en lugar del código actual J8522, causando un rechazo del reclamo"
+      },
+      {
+        "en": "Brand Xeloda dispensed and billed at $3,000 to $5,300 per cycle when the prescription allowed generic substitution and generic capecitabine was in stock",
+        "es": "Xeloda de marca dispensado y facturado a $3,000 a $5,300 por ciclo cuando la receta permitía sustitución genérica y capecitabina genérica estaba en stock"
+      },
+      {
+        "en": "Part D specialty-tier coinsurance still being charged on Imbruvica, Revlimid, or another Part D oral oncology drug after the patient already crossed the $2,100 annual out-of-pocket cap",
+        "es": "Coseguro de nivel especializado de Parte D todavía cobrado en Imbruvica, Revlimid u otro medicamento oncológico oral de Parte D después de que el paciente ya cruzó el límite anual de bolsillo de $2,100"
+      },
+      {
+        "en": "Missing signed Standard Written Order on file, which invalidates a supplier's Part B claim for capecitabine and shifts the bill to the patient",
+        "es": "Falta la Orden Escrita Estándar firmada en el archivo, lo que invalida el reclamo de Parte B de un proveedor para capecitabina y traslada la factura al paciente"
+      }
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "Why is capecitabine covered under Medicare Part B instead of Part D like most oral drugs?",
+        "answer": "Capecitabine (Xeloda) is a prodrug of intravenous fluorouracil, a chemotherapy drug that Medicare Part B has always covered when administered by infusion. Section 1861(s)(2)(Q) of the Social Security Act, added by the Balanced Budget Act of 1997, created a specific Part B benefit for self-administered oral anticancer drugs that are the oral form of, or a prodrug of, an IV chemotherapy drug already covered under Part B. Capecitabine, along with a short list of similar drugs, keeps its Part B coverage even though the patient takes it as a tablet at home rather than receiving an infusion in a clinic."
+      },
+      {
+        "question": "What does capecitabine cost without insurance in 2026?",
+        "answer": "Generic capecitabine costs $50 to $400 per 21-day treatment cycle at US retail pharmacies in 2026, depending on the pharmacy and any discount coupon applied. Brand-name Xeloda costs significantly more, running $3,000 to $5,300 for the same 21-day cycle. Because a generic version has been available since 2013, nearly all prescriptions in 2026 are filled with generic capecitabine rather than the brand."
+      },
+      {
+        "question": "Is there a generic or biosimilar for oral cancer drugs like Xeloda and Imbruvica?",
+        "answer": "Yes for capecitabine: generic capecitabine has been FDA-approved and on the market since 2013, cutting the cost from thousands of dollars per cycle to $50 to $400. Imbruvica (ibrutinib), Revlimid (lenalidomide), Ibrance (palbociclib), and Xtandi (enzalutamide) have no generic as of 2026 because their patents have not expired; expect generics starting between 2027 and 2032 depending on the drug. Small-molecule oral pills like these get generic competitors once patents expire, while infused biologic cancer drugs like trastuzumab or bevacizumab get biosimilars instead, a different regulatory pathway."
+      },
+      {
+        "question": "How do I apply for the Genentech Patient Foundation for Xeloda?",
+        "answer": "Visit gene.com/patients/patient-foundation or call 1-888-941-3331 (Monday through Friday, 6 a.m. to 5 p.m. Pacific) to start the application. You will need a valid Xeloda prescription, proof of household income, proof of US residency, and information about your current insurance status if you have any. Eligible uninsured patients earning under roughly 500% of the federal poverty level (about $150,000 per year for a typical household) receive Xeloda free of charge. If you have commercial insurance instead, ask about the separate Genentech Oncology Co-pay Assistance Program, which can lower your copay to $5."
+      },
+      {
+        "question": "Can I use a manufacturer coupon for Xeloda or Imbruvica if I have Medicare?",
+        "answer": "No. Federal anti-kickback law bars manufacturer coupons and copay cards, including the Genentech Oncology Co-pay Assistance Program and similar programs from AbbVie, Bristol Myers Squibb, and Pfizer, from being used by anyone with Medicare, Medicaid, TRICARE, or VA coverage. Medicare patients should instead apply to the manufacturer's income-based patient assistance program (like the Genentech Patient Foundation) or to an independent foundation such as CancerCare or the PAN Foundation, both of which explicitly serve Medicare beneficiaries."
+      },
+      {
+        "question": "What if my insurance denies coverage for an oral cancer drug?",
+        "answer": "Request the written denial notice and file a formal appeal within the deadline stated on it, usually 60 days for Medicare Part D and Part B claims. Ask your oncologist to request a peer-to-peer review with the plan's medical director and, for Part D specialty-tier denials, file a formulary exception request citing medical necessity. If the plan requires step therapy (trying a cheaper drug first), your prescriber can file a step-therapy override based on your specific cancer diagnosis and prior treatment history. If the appeal still fails, apply to the manufacturer's patient assistance program or an independent foundation while the appeal is pending."
+      },
+      {
+        "question": "Does the IRA negotiated Maximum Fair Price apply to oral cancer drugs?",
+        "answer": "Yes, for one so far: Imbruvica (ibrutinib) was among the first 10 drugs negotiated under the Inflation Reduction Act, and its Medicare Maximum Fair Price of $9,319 per 30-day supply took effect January 1, 2026, a 38% reduction from the prior list price of $14,934. Capecitabine was not selected for negotiation because it is already an inexpensive generic. Revlimid, Ibrance, Xtandi, and Jakafi have not been selected for negotiation as of 2026, though future negotiation rounds could add them; Medicare Part D patients on those drugs still benefit from the general $2,100 annual out-of-pocket cap regardless of negotiation status."
+      },
+      {
+        "question": "Do I qualify for the Genentech Patient Foundation if I have Medicare?",
+        "answer": "Yes. Medicare beneficiaries who cannot afford their Part B coinsurance or Part D cost-sharing for a Genentech oncology product, including Xeloda, can apply to the Genentech Patient Foundation. Because manufacturer copay cards are off-limits for government insurance, the foundation's income-based free-drug program is the correct pathway; income limits run to roughly 500% of the federal poverty level, and the foundation also considers regional cost of living and documented high medical expenses when reviewing borderline applications."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Por qué capecitabina está cubierta bajo Medicare Parte B en lugar de Parte D como la mayoría de los medicamentos orales?",
+        "answer": "Capecitabina (Xeloda) es un profármaco de fluorouracilo intravenoso, un medicamento de quimioterapia que Medicare Parte B siempre ha cubierto cuando se administra por infusión. La Sección 1861(s)(2)(Q) de la Ley del Seguro Social, añadida por la Ley de Presupuesto Equilibrado de 1997, creó un beneficio específico de Parte B para medicamentos anticancerígenos orales autoadministrados que son la forma oral, o un profármaco, de un medicamento de quimioterapia IV ya cubierto bajo la Parte B."
+      },
+      {
+        "question": "¿Cuánto cuesta capecitabina sin seguro en 2026?",
+        "answer": "Capecitabina genérica cuesta $50 a $400 por ciclo de tratamiento de 21 días en farmacias minoristas de EE.UU. en 2026, dependiendo de la farmacia y cualquier cupón de descuento aplicado. Xeloda de marca cuesta significativamente más, entre $3,000 y $5,300 por el mismo ciclo de 21 días. Debido a que una versión genérica ha estado disponible desde 2013, casi todas las recetas en 2026 se surten con capecitabina genérica en lugar de la marca."
+      },
+      {
+        "question": "¿Hay un genérico o biosimilar para medicamentos orales para el cáncer como Xeloda e Imbruvica?",
+        "answer": "Sí para capecitabina: la capecitabina genérica ha sido aprobada por la FDA y está en el mercado desde 2013, reduciendo el costo de miles de dólares por ciclo a $50 a $400. Imbruvica (ibrutinib), Revlimid (lenalidomida), Ibrance (palbociclib) y Xtandi (enzalutamida) no tienen genérico a partir de 2026 porque sus patentes no han expirado; se esperan genéricos entre 2027 y 2032 según el medicamento. Las pastillas orales de molécula pequeña como estas obtienen competidores genéricos una vez que expiran las patentes, mientras que los medicamentos biológicos oncológicos infundidos como trastuzumab o bevacizumab obtienen biosimilares en su lugar, una vía regulatoria diferente."
+      },
+      {
+        "question": "¿Cómo solicito la Fundación de Pacientes de Genentech para Xeloda?",
+        "answer": "Visite gene.com/patients/patient-foundation o llame al 1-888-941-3331 (lunes a viernes, 6 a.m. a 5 p.m. hora del Pacífico) para comenzar la solicitud. Necesitará una receta válida de Xeloda, comprobante de ingresos del hogar, comprobante de residencia en EE.UU. e información sobre su estado de seguro actual si tiene alguno. Los pacientes elegibles sin seguro que ganan menos de aproximadamente el 500% del nivel federal de pobreza reciben Xeloda gratis."
+      },
+      {
+        "question": "¿Puedo usar un cupón del fabricante para Xeloda o Imbruvica si tengo Medicare?",
+        "answer": "No. La ley federal anti-soborno prohíbe que los cupones y tarjetas de copago del fabricante, incluido el Programa de Asistencia de Copago Oncológico de Genentech y programas similares de AbbVie, Bristol Myers Squibb y Pfizer, sean utilizados por cualquier persona con cobertura de Medicare, Medicaid, TRICARE o VA. Los pacientes de Medicare deben solicitar en su lugar el programa de asistencia al paciente basado en ingresos del fabricante o una fundación independiente como CancerCare o la Fundación PAN."
+      },
+      {
+        "question": "¿Qué pasa si mi seguro deniega la cobertura para un medicamento oral para el cáncer?",
+        "answer": "Solicite el aviso de denegación por escrito y presente una apelación formal dentro del plazo indicado, generalmente 60 días para reclamos de Medicare Parte D y Parte B. Pida a su oncólogo que solicite una revisión entre pares con el director médico del plan y, para denegaciones de nivel especializado de Parte D, presente una solicitud de excepción del formulario citando necesidad médica. Si el plan requiere terapia escalonada, su prescriptor puede presentar una anulación basada en su diagnóstico específico de cáncer."
+      },
+      {
+        "question": "¿El Precio Máximo Justo negociado por la IRA aplica a medicamentos orales para el cáncer?",
+        "answer": "Sí, para uno hasta ahora: Imbruvica (ibrutinib) estuvo entre los primeros 10 medicamentos negociados bajo la Ley de Reducción de la Inflación, y su Precio Máximo Justo de Medicare de $9,319 por suministro de 30 días entró en vigor el 1 de enero de 2026, una reducción del 38% del precio de lista anterior de $14,934. Capecitabina no fue seleccionada para negociación porque ya es un genérico económico."
+      },
+      {
+        "question": "¿Califico para la Fundación de Pacientes de Genentech si tengo Medicare?",
+        "answer": "Sí. Los beneficiarios de Medicare que no pueden pagar su coseguro de Parte B o la participación en los costos de Parte D para un producto oncológico de Genentech, incluido Xeloda, pueden solicitar a la Fundación de Pacientes de Genentech. Debido a que las tarjetas de copago del fabricante están prohibidas para el seguro del gobierno, el programa de medicamento gratuito basado en ingresos de la fundación es la vía correcta; los límites de ingresos llegan a aproximadamente el 500% del nivel federal de pobreza."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Imbruvica Cost",
+        "es": "Costo de Imbruvica"
+      },
+      "href": "/drug/imbruvica-cost"
+    },
+    {
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Médicas"
+      },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": {
+        "en": "Medicare Eligibility",
+        "es": "Elegibilidad de Medicare"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Límites de Ingresos de Medicaid"
+      },
+      "href": "/medicaid-income-limits"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMS Medicare Part B Drug Average Sales Price Files (January 2026)",
+      "url": "https://www.cms.gov/medicare/payment/fee-for-service-providers/part-b-drugs/average-drug-sales-price",
+      "note": {
+        "en": "Quarterly Part B ASP payment limit file, source for the $0.08/unit J8522 capecitabine rate.",
+        "es": "Archivo trimestral de límite de pago ASP de Parte B, fuente de la tarifa de $0.08/unidad para J8522 capecitabina."
+      }
+    },
+    {
+      "name": "Noridian DME MAC LCD L33826 and Policy Article A52479, Oral Anticancer Drugs",
+      "url": "https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?LCDId=33826",
+      "note": {
+        "en": "Local coverage determination establishing Part B coverage criteria for self-administered oral anticancer drugs including capecitabine.",
+        "es": "Determinación de cobertura local que establece los criterios de cobertura de Parte B para medicamentos anticancerígenos orales autoadministrados, incluida capecitabina."
+      }
+    },
+    {
+      "name": "FDA Drugs@FDA: Xeloda (capecitabine) NDA 020896",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020896",
+      "note": {
+        "en": "FDA approval history for Xeloda and its generic capecitabine equivalents.",
+        "es": "Historial de aprobación de la FDA para Xeloda y sus equivalentes genéricos de capecitabina."
+      }
+    },
+    {
+      "name": "CMS Inflation Reduction Act and Medicare Drug Price Negotiation Program",
+      "url": "https://www.cms.gov/inflation-reduction-act-and-medicare",
+      "note": {
+        "en": "Source for the Imbruvica 2026 Maximum Fair Price of $9,319 and the $2,100 Part D annual out-of-pocket cap.",
+        "es": "Fuente del Precio Máximo Justo de Imbruvica de $9,319 para 2026 y el límite anual de bolsillo de Parte D de $2,100."
+      }
+    },
+    {
+      "name": "KFF: The IRA Has Improved Coverage of Drugs Selected for Medicare Price Negotiation",
+      "url": "https://www.kff.org/medicare/the-ira-has-improved-coverage-of-drugs-selected-for-medicare-price-negotiation/",
+      "note": {
+        "en": "Independent policy analysis of coverage and cost impact of the first 10 IRA-negotiated drugs, including Imbruvica.",
+        "es": "Análisis de política independiente del impacto en cobertura y costo de los primeros 10 medicamentos negociados por la IRA, incluido Imbruvica."
+      }
+    },
+    {
+      "name": "Genentech Patient Foundation",
+      "url": "https://www.gene.com/patients/patient-foundation",
+      "note": {
+        "en": "Manufacturer patient assistance program for Xeloda and other Genentech oncology products.",
+        "es": "Programa de asistencia al paciente del fabricante para Xeloda y otros productos oncológicos de Genentech."
+      }
+    },
+    {
+      "name": "NeedyMeds Patient Assistance Program Database",
+      "url": "https://www.needymeds.org/",
+      "note": {
+        "en": "Directory of manufacturer PAPs, copay cards, and disease-specific foundation grants for cancer drugs.",
+        "es": "Directorio de PAP de fabricantes, tarjetas de copago y subsidios de fundaciones específicas de enfermedades para medicamentos oncológicos."
+      }
+    }
+  ],
+  "pharmacyPriceComparison": {
+    "caption": {
+      "en": "Generic capecitabine price by pharmacy (2026)",
+      "es": "Precio de capecitabina genérica por farmacia (2026)"
+    },
+    "rows": [
+      {
+        "pharmacy": "Walmart",
+        "price": {
+          "en": "$89.00 (500mg #120 tablets, cash)",
+          "es": "$89.00 (500mg #120 tabletas, efectivo)"
+        },
+        "notes": {
+          "en": "Not included in the $4 Generic Prescription Program; oncology drugs are priced separately",
+          "es": "No incluido en el Programa de Recetas Genéricas de $4; los medicamentos oncológicos tienen precio separado"
+        }
+      },
+      {
+        "pharmacy": "Costco Member Prescription",
+        "price": {
+          "en": "$58.40 (500mg #120 tablets)",
+          "es": "$58.40 (500mg #120 tabletas)"
+        },
+        "notes": {
+          "en": "Costco pharmacy pricing is open to members and non-members alike",
+          "es": "El precio de la farmacia Costco está disponible para miembros y no miembros por igual"
+        }
+      },
+      {
+        "pharmacy": "Kroger Rx Savings Club",
+        "price": {
+          "en": "$74.99 (500mg #120 tablets)",
+          "es": "$74.99 (500mg #120 tabletas)"
+        },
+        "notes": {
+          "en": "Requires the $36/year Kroger Rx Savings Club membership; no insurance needed",
+          "es": "Requiere la membresía anual de $36 del Kroger Rx Savings Club; no se necesita seguro"
+        }
+      },
+      {
+        "pharmacy": "CVS w/ GoodRx coupon",
+        "price": {
+          "en": "$61.20 (500mg #120 tablets)",
+          "es": "$61.20 (500mg #120 tabletas)"
+        },
+        "notes": {
+          "en": "Free coupon available at goodrx.com; price varies by ZIP code",
+          "es": "Cupón gratuito disponible en goodrx.com; el precio varía según el código postal"
+        }
+      },
+      {
+        "pharmacy": "Walgreens",
+        "price": {
+          "en": "$102.50 (500mg #120 tablets, cash)",
+          "es": "$102.50 (500mg #120 tabletas, efectivo)"
+        },
+        "notes": {
+          "en": "Lower with the Walgreens Prescription Savings Club or a manufacturer/pharmacy discount card",
+          "es": "Más bajo con el Walgreens Prescription Savings Club o una tarjeta de descuento de farmacia"
+        }
+      }
+    ],
+    "footnote": {
+      "en": "Cash prices vary by ZIP code, dose, and pharmacy promotion. Verified September 2026 via GoodRx and chain member-program pricing pages.",
+      "es": "Los precios en efectivo varían según el código postal, la dosis y la promoción de la farmacia. Verificado en septiembre de 2026 a través de GoodRx y páginas de precios de programas de membresía de cadenas."
+    },
+    "source": "GoodRx, Costco Member Prescription Program, Kroger Rx Savings Club, Walmart Pharmacy, Walgreens Prescription Savings Club"
+  },
+  "genericBiosimilarStatus": {
+    "hasGeneric": true,
+    "genericName": "capecitabine (generic)",
+    "patentExpiry": null,
+    "biosimilars": null,
+    "note": {
+      "en": "Generic capecitabine has been FDA-approved and widely available since 2013, cutting cost from thousands of dollars per cycle (brand Xeloda) to $50-$400 per cycle. Other oral cancer drugs discussed on this page, including Imbruvica, Revlimid, Ibrance, and Xtandi, remain patent-protected as of 2026 with no generic equivalent available; generics for these are expected between 2027 and 2032 depending on the drug's patent timeline. Small-molecule oral oncology pills receive generic competition once patents lapse, while infused biologic cancer drugs (trastuzumab, bevacizumab, rituximab) receive biosimilars through a separate FDA approval pathway.",
+      "es": "La capecitabina genérica ha sido aprobada por la FDA y está ampliamente disponible desde 2013, reduciendo el costo de miles de dólares por ciclo (Xeloda de marca) a $50-$400 por ciclo. Otros medicamentos orales para el cáncer discutidos en esta página, incluidos Imbruvica, Revlimid, Ibrance y Xtandi, permanecen protegidos por patente a partir de 2026 sin equivalente genérico disponible; se esperan genéricos entre 2027 y 2032 según el cronograma de patente de cada medicamento."
+    }
+  },
+  "papEligibilityTable": {
+    "caption": {
+      "en": "Genentech Patient Foundation eligibility by household size (2026, ~500% FPL)",
+      "es": "Elegibilidad de la Fundación de Pacientes de Genentech por tamaño del hogar (2026, ~500% del FPL)"
+    },
+    "fplPctReferenced": 500,
+    "rows": [
+      {"householdSize": 1, "incomeThreshold": 79800, "incomeLabel": {"en": "≤ $79,800", "es": "≤ $79,800"}, "fplPct": 500},
+      {"householdSize": 2, "incomeThreshold": 108200, "incomeLabel": {"en": "≤ $108,200", "es": "≤ $108,200"}, "fplPct": 500},
+      {"householdSize": 3, "incomeThreshold": 136600, "incomeLabel": {"en": "≤ $136,600", "es": "≤ $136,600"}, "fplPct": 500},
+      {"householdSize": 4, "incomeThreshold": 165000, "incomeLabel": {"en": "≤ $165,000", "es": "≤ $165,000"}, "fplPct": 500},
+      {"householdSize": 5, "incomeThreshold": 193400, "incomeLabel": {"en": "≤ $193,400", "es": "≤ $193,400"}, "fplPct": 500},
+      {"householdSize": 6, "incomeThreshold": 221800, "incomeLabel": {"en": "≤ $221,800", "es": "≤ $221,800"}, "fplPct": 500},
+      {"householdSize": 7, "incomeThreshold": 250200, "incomeLabel": {"en": "≤ $250,200", "es": "≤ $250,200"}, "fplPct": 500},
+      {"householdSize": 8, "incomeThreshold": 278600, "incomeLabel": {"en": "≤ $278,600", "es": "≤ $278,600"}, "fplPct": 500},
+      {"householdSize": "Each additional person", "incomeThreshold": 28400, "incomeLabel": {"en": "+ $28,400", "es": "+ $28,400"}, "fplPct": 500}
+    ],
+    "year": 2026,
+    "source": "HHS 2026 federal poverty guidelines (https://aspe.hhs.gov/poverty-guidelines) applied at the approximately 500% FPL threshold used by the Genentech Patient Foundation; the foundation also lists a flat guideline of about $150,000/year and may adjust for regional cost of living, so confirm the exact figure directly with the foundation."
+  },
+  "denialAlternatives": {
+    "appealSteps": [
+      {"en": "Step 1: Request the written denial notice from your Medicare Part B contractor, Part D plan, or commercial insurer, which must state the specific reason for denial.", "es": "Paso 1: Solicite el aviso de denegación por escrito de su contratista de Medicare Parte B, plan de Parte D o asegurador comercial, que debe indicar la razón específica de la denegación."},
+      {"en": "Step 2: File a formal appeal within the plan's deadline, typically 60 days for Medicare Part D redeterminations and 120 days for Part B claim reconsiderations.", "es": "Paso 2: Presente una apelación formal dentro del plazo del plan, generalmente 60 días para redeterminaciones de Medicare Parte D y 120 días para reconsideraciones de reclamos de Parte B."},
+      {"en": "Step 3: Ask your oncologist's office to submit a peer-to-peer review with the plan's medical director, citing the specific cancer diagnosis, stage, and why this oral drug (rather than an alternative) is medically necessary.", "es": "Paso 3: Pida al consultorio de su oncólogo que presente una revisión entre pares con el director médico del plan, citando el diagnóstico específico de cáncer, la etapa y por qué este medicamento oral es médicamente necesario."},
+      {"en": "Step 4: If the plan denies again, escalate to an independent external review, which for Medicare means requesting reconsideration by an independent review entity, and for commercial plans means your state's external review process through the Department of Insurance.", "es": "Paso 4: Si el plan deniega de nuevo, escale a una revisión externa independiente, que para Medicare significa solicitar reconsideración por una entidad de revisión independiente, y para planes comerciales significa el proceso de revisión externa del Departamento de Seguros de su estado."}
+    ],
+    "stepTherapyOverride": {
+      "en": "Plans that require step therapy, meaning you must try a cheaper drug first before covering an oral oncology drug like Imbruvica or Revlimid, must accept an override request when your oncologist documents that the cheaper alternative already failed, caused an adverse reaction, or is contraindicated for your specific cancer subtype. Federal and most state step-therapy override laws require the plan to respond within 72 hours for standard requests and 24 hours for urgent oncology cases.",
+      "es": "Los planes que requieren terapia escalonada, lo que significa que debe probar un medicamento más económico antes de cubrir un medicamento oncológico oral como Imbruvica o Revlimid, deben aceptar una solicitud de anulación cuando su oncólogo documenta que la alternativa más económica ya falló, causó una reacción adversa o está contraindicada para su subtipo específico de cáncer."
+    },
+    "papFallback": {
+      "en": "If your appeal fails or takes too long, apply immediately to the manufacturer's patient assistance program (Genentech Patient Foundation for Xeloda, AbbVie for Imbruvica, Bristol Myers Squibb for Revlimid) or to an independent foundation such as CancerCare or the PAN Foundation, both of which can serve Medicare beneficiaries while your appeal is still pending.",
+      "es": "Si su apelación falla o tarda demasiado, solicite de inmediato el programa de asistencia al paciente del fabricante (Fundación de Pacientes de Genentech para Xeloda, AbbVie para Imbruvica, Bristol Myers Squibb para Revlimid) o una fundación independiente como CancerCare o la Fundación PAN, ambas capaces de atender a beneficiarios de Medicare mientras su apelación está pendiente."
+    },
+    "genericAlternative": {
+      "en": "Generic alternative: generic capecitabine is available and typically 90% cheaper than brand Xeloda ($50-$400 versus $3,000-$5,300 per cycle). For Imbruvica, Revlimid, Ibrance, and Xtandi, no generic exists as of 2026, so the only cost-lowering paths are the IRA Maximum Fair Price (Imbruvica only), manufacturer PAP, or foundation grants. Discuss with your oncologist before switching brand to generic capecitabine, since bioequivalence is well established but dose confirmation is still worthwhile.",
+      "es": "Alternativa genérica: la capecitabina genérica está disponible y típicamente es 90% más económica que Xeloda de marca ($50-$400 versus $3,000-$5,300 por ciclo). Para Imbruvica, Revlimid, Ibrance y Xtandi, no existe genérico a partir de 2026, por lo que las únicas vías para reducir el costo son el Precio Máximo Justo de la IRA (solo Imbruvica), el PAP del fabricante o subsidios de fundaciones."
+    }
+  },
+  "howToApplyPap": {
+    "programName": "Genentech Patient Foundation",
+    "numberedSteps": [
+      {"en": "Step 1: Visit gene.com/patients/patient-foundation or call 1-888-941-3331 (Monday through Friday, 6 a.m. to 5 p.m. Pacific) to begin the application.", "es": "Paso 1: Visite gene.com/patients/patient-foundation o llame al 1-888-941-3331 (lunes a viernes, 6 a.m. a 5 p.m. hora del Pacífico) para comenzar la solicitud."},
+      {"en": "Step 2: Use the 'See if You Qualify' tool on the Genentech website to get a quick eligibility estimate before submitting the full application.", "es": "Paso 2: Use la herramienta 'Vea si Califica' en el sitio web de Genentech para obtener una estimación rápida de elegibilidad antes de enviar la solicitud completa."},
+      {"en": "Step 3: Complete the Patient Authorization and Notice of Release of Information form together with your prescriber, who must confirm the Xeloda prescription and clinical need.", "es": "Paso 3: Complete el formulario de Autorización del Paciente y Aviso de Divulgación de Información junto con su prescriptor, quien debe confirmar la receta de Xeloda y la necesidad clínica."},
+      {"en": "Step 4: Gather proof of household income (recent tax return or pay stubs), proof of US residency, and documentation of your current insurance status, including a denial letter if applicable.", "es": "Paso 4: Reúna comprobante de ingresos del hogar (declaración de impuestos reciente o recibos de pago), comprobante de residencia en EE.UU. y documentación de su estado de seguro actual, incluida una carta de denegación si aplica."},
+      {"en": "Step 5: Submit the completed application by fax to 1-833-999-4363, by mail, or through your prescriber's office. Processing typically takes 5 to 10 business days.", "es": "Paso 5: Envíe la solicitud completa por fax al 1-833-999-4363, por correo, o a través del consultorio de su prescriptor. El procesamiento típicamente toma de 5 a 10 días hábiles."},
+      {"en": "Step 6: If approved, Genentech ships Xeloda directly to your home, your prescriber's office, or a specialty pharmacy at no cost. Reapply annually or whenever your insurance status changes.", "es": "Paso 6: Si es aprobado, Genentech envía Xeloda directamente a su hogar, al consultorio de su prescriptor o a una farmacia especializada sin costo. Vuelva a solicitar anualmente o cuando cambie su estado de seguro."}
+    ],
+    "govStartingUrl": "https://www.medicare.gov/basics/costs/help/drug-costs",
+    "manufacturerStartingUrl": "https://www.gene.com/patients/patient-foundation",
+    "documentsNeeded": [
+      {"en": "Valid Xeloda prescription from a US-licensed prescriber", "es": "Receta válida de Xeloda de un prescriptor con licencia en EE.UU."},
+      {"en": "Proof of household income (federal tax return or recent pay stubs)", "es": "Comprobante de ingresos del hogar (declaración de impuestos federal o recibos de pago recientes)"},
+      {"en": "Proof of US residency (utility bill, lease, or state ID)", "es": "Comprobante de residencia en EE.UU. (factura de servicios, contrato de arrendamiento o identificación estatal)"},
+      {"en": "Insurance denial letter or proof of no prescription drug coverage, if applicable", "es": "Carta de denegación del seguro o comprobante de no tener cobertura de medicamentos recetados, si aplica"},
+      {"en": "Completed Patient Authorization and Notice of Release of Information form, signed by patient and prescriber", "es": "Formulario completo de Autorización del Paciente y Aviso de Divulgación de Información, firmado por el paciente y el prescriptor"}
+    ],
+    "commonDenialReasons": [
+      {"en": "Household income exceeds the roughly 500% FPL threshold (about $150,000/year) for the reported household size", "es": "Los ingresos del hogar exceden el umbral de aproximadamente 500% del FPL (alrededor de $150,000/año) para el tamaño de hogar reportado"},
+      {"en": "Incomplete application or missing prescriber signature", "es": "Solicitud incompleta o falta la firma del prescriptor"},
+      {"en": "Patient already has prescription drug coverage that pays for Xeloda without a documented affordability gap", "es": "El paciente ya tiene cobertura de medicamentos recetados que paga por Xeloda sin una brecha de asequibilidad documentada"},
+      {"en": "Not a US resident or citizen", "es": "No es residente o ciudadano de EE.UU."}
+    ]
+  },
+  "topicCluster": "drug-cost",
+  "keyTerms": {
+    "en": [
+      "oral cancer drug cost 2026",
+      "capecitabine cost",
+      "Xeloda Medicare Part B",
+      "oral chemotherapy Medicare Part D",
+      "Imbruvica Medicare cost",
+      "oral oncology drug patient assistance program"
+    ],
+    "es": [
+      "costo de medicamentos orales para el cáncer 2026",
+      "costo de capecitabina",
+      "Xeloda Medicare Parte B",
+      "quimioterapia oral Medicare Parte D",
+      "programa de asistencia al paciente para medicamentos oncológicos orales"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
