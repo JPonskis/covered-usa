@@ -5,6 +5,13 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { getStateFromZip } from '@/lib/states/zipToState';
 
+// Same key the pageview tracker writes (AnalyticsTracker: SESSION_ID_KEY).
+// Sending it with the submission is what lets a signup be joined back to the
+// article the visitor read before reaching the screener.
+function analyticsSessionId(): string | null {
+  try { return sessionStorage.getItem('cu_sid'); } catch { return null; }
+}
+
 type MedicareStatus = '' | 'none' | 'partAB' | 'advantage' | 'supplement' | 'unsure';
 type MedicareNeeds = '' | 'newToMedicare' | 'compareAdvantage' | 'compareSupplement' | 'partD' | 'lostCoverage' | 'other';
 
@@ -238,6 +245,7 @@ export default function ScreenerContent({ locale, focus }: { locale: string; foc
         utmCampaign: attribution?.utmCampaign || null,
         referrerUrl: attribution?.referrerUrl || null,
         landingPage: attribution?.landingPage || null,
+        sessionId: analyticsSessionId(),
         focus: isMedicareFocus ? 'medicare' : null,
         medicareStatus: isMedicareFocus ? formData.medicareStatus : null,
         medicareNeeds: isMedicareFocus ? formData.medicareNeeds : null,

@@ -3,6 +3,13 @@
 import { useState, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 
+// Same key the pageview tracker writes (AnalyticsTracker: SESSION_ID_KEY).
+// Sending it with the submission is what lets a signup be joined back to the
+// article the visitor read before reaching the screener.
+function analyticsSessionId(): string | null {
+  try { return sessionStorage.getItem('cu_sid'); } catch { return null; }
+}
+
 const HEALTHSHERPA_BASE = 'https://www.healthsherpa.com/?_agent_id=dan-hardle&utm_campaign=benefitsusa';
 
 interface QuickResult {
@@ -226,6 +233,7 @@ export function InlineScreener({ locale }: { locale: string }) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          sessionId: analyticsSessionId(),
           zipCode: zip.replace(/\s/g, ''),
           age: 35,
           householdSize: parseInt(household, 10),
