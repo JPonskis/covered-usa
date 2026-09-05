@@ -126,9 +126,15 @@ export default async function TriggerEventPage({ params }: PageProps) {
   // with non-Medicare ones (lost job, turning 26), so the mid slot only goes to
   // the Medicare Money Check when the event is actually a Medicare event.
   const isMedicareEvent = /(^|-)(medicare|medigap|irmaa)(-|$)|65/.test(event);
-  const mmcAudience: 'drugs' | 'enrolled' = /part-d|drug|prescription|irmaa|medigap|extra-help/.test(event)
-    ? 'drugs'
-    : 'enrolled';
+  // Audience order matters: someone turning 65 or retiring early is NOT on
+  // Medicare yet, so they get the enrollment-window/late-penalty pitch, not the
+  // "are you overpaying" one. Drug-flavored events get the medications pitch.
+  const mmcAudience: 'drugs' | 'enrolled' | 'pre65' =
+    /turning-65|pre-65|retired-early|initial-enrollment|when-retiring|working-after-65|cobra-decision|on-aca|spouse-on-medicare-you-not/.test(event)
+      ? 'pre65'
+      : /part-d|drug|prescription|irmaa|medigap|extra-help/.test(event)
+        ? 'drugs'
+        : 'enrolled';
 
   const pageGraph = buildSchemaGraph(
     [medicalWebPageSchema, breadcrumbSchema, faqSchema, howToSchema],
