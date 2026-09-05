@@ -1,0 +1,699 @@
+{
+  "slug": "medicaid-drug-formulary",
+  "drugName": {
+    "en": "Medicaid Prescription Drug Coverage and Formulary",
+    "es": "Cobertura y Formulario de Medicamentos Recetados de Medicaid"
+  },
+  "shortName": {
+    "en": "Medicaid Drug Formulary",
+    "es": "Formulario de Medicamentos de Medicaid"
+  },
+  "nonProprietaryName": "Covered outpatient drugs (all FDA-approved prescription medications listed on a state Medicaid Preferred Drug List)",
+  "brandNames": [
+    "Eliquis",
+    "Humira",
+    "Ozempic",
+    "Lipitor",
+    "Advair Diskus",
+    "Lantus"
+  ],
+  "drugClass": {
+    "en": "Program overview: the Medicaid Section 1927 outpatient prescription drug benefit, covering all FDA-approved drug classes",
+    "es": "Resumen del programa: el beneficio de medicamentos recetados ambulatorios de Medicaid bajo la Seccion 1927, que cubre todas las clases de medicamentos aprobados por la FDA"
+  },
+  "routeOfAdministration": "Oral",
+  "medicalSpecialty": "Primary Care",
+  "lastUpdated": "2026-09-05",
+  "ctaTarget": "analyzer",
+  "readingTime": "9 min read",
+  "hcpcsJCodes": [],
+  "topicCluster": "drug-cost",
+  "keyTerms": {
+    "en": [
+      "Medicaid prescription drug coverage",
+      "Medicaid formulary 2026",
+      "Medicaid Preferred Drug List",
+      "Medicaid drug copay 2026",
+      "Medicaid prior authorization drugs",
+      "Medicaid Drug Rebate Program"
+    ],
+    "es": [
+      "cobertura de medicamentos recetados de Medicaid",
+      "formulario de Medicaid 2026",
+      "lista de medicamentos preferidos de Medicaid",
+      "copago de medicamentos de Medicaid 2026",
+      "autorizacion previa de Medicaid"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "meta": {
+    "title": {
+      "en": "Medicaid Prescription Drug Coverage & Formulary 2026 | CoveredUSA",
+      "es": "Cobertura y Formulario de Medicamentos de Medicaid 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicaid covers most FDA-approved drugs in 2026, with copays capped at $4 to $8. See how Preferred Drug Lists, prior authorization, and appeals work.",
+      "es": "Medicaid cubre la mayoria de medicamentos aprobados por la FDA en 2026, con copagos de $4-$8. Vea como funcionan las listas de medicamentos preferidos."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "What Does Medicaid Cover for Prescription Drugs in 2026?",
+      "es": "Que Cubre Medicaid para Medicamentos Recetados en 2026?"
+    },
+    "subhero": {
+      "en": "Medicaid's outpatient prescription drug benefit, created by Section 1927 of the Social Security Act, requires nearly every state Medicaid program to cover virtually all FDA-approved drugs made by manufacturers that participate in the Medicaid Drug Rebate Program. States use a Preferred Drug List (PDL) and prior authorization rules to steer patients toward lower-cost options, but federal law caps what beneficiaries pay at nominal amounts of $4 for preferred drugs and $8 for non-preferred drugs in 2026. This guide explains how the formulary works, what a 2026 prescription actually costs at the pharmacy counter with and without Medicaid, and what to do if a specific drug is denied.",
+      "es": "El beneficio de medicamentos recetados ambulatorios de Medicaid, creado por la Seccion 1927 de la Ley del Seguro Social, exige que casi todos los programas estatales de Medicaid cubran virtualmente todos los medicamentos aprobados por la FDA de fabricantes que participan en el Programa de Reembolso de Medicamentos de Medicaid. Los estados usan una Lista de Medicamentos Preferidos (PDL) y reglas de autorizacion previa para dirigir a los pacientes hacia opciones de menor costo, pero la ley federal limita lo que pagan los beneficiarios a montos nominales de $4 para medicamentos preferidos y $8 para no preferidos en 2026. Esta guia explica como funciona el formulario, cuanto cuesta realmente una receta en 2026 con y sin Medicaid, y que hacer si se deniega un medicamento especifico."
+    }
+  },
+  "quickAnswer": {
+    "en": "In 2026, Medicaid must cover nearly all FDA-approved outpatient drugs from manufacturers enrolled in the Medicaid Drug Rebate Program, though states control which specific brand or generic is preferred through a state Preferred Drug List. Most beneficiaries pay a nominal copay of $0 to $4 for a preferred drug and up to $8 for a non-preferred drug requiring prior authorization; children, pregnant women, and nursing facility residents are exempt from copays entirely. Manufacturers pay Medicaid a rebate of at least 23.1% of average manufacturer price for brand-name drugs and 13% for generics, which is why Medicaid's net cost is far below the retail cash price. If a specific drug is denied or excluded from the formulary, patients can appeal, request a peer-to-peer review, or apply to a manufacturer patient assistance program using the Medicaid denial letter.",
+    "es": "En 2026, Medicaid debe cubrir casi todos los medicamentos ambulatorios aprobados por la FDA de fabricantes inscritos en el Programa de Reembolso de Medicamentos de Medicaid, aunque los estados controlan que marca o generico especifico es preferido mediante una Lista de Medicamentos Preferidos estatal. La mayoria de los beneficiarios pagan un copago nominal de $0 a $4 por un medicamento preferido y hasta $8 por uno no preferido que requiere autorizacion previa; los ninos, mujeres embarazadas y residentes de centros de enfermeria estan exentos de copagos. Los fabricantes pagan a Medicaid un reembolso de al menos 23.1% del precio promedio de fabricante para medicamentos de marca y 13% para genericos, por lo que el costo neto de Medicaid es mucho menor que el precio en efectivo minorista. Si se deniega o excluye un medicamento especifico del formulario, los pacientes pueden apelar, solicitar una revision entre pares, o presentar una solicitud a un programa de asistencia al paciente del fabricante usando la carta de denegacion de Medicaid."
+  },
+  "pricing": {
+    "medicareAspPerUnit": null,
+    "medicareAspUnit": null,
+    "retailLow": 4,
+    "retailHigh": 1500,
+    "retailUnit": {
+      "en": "per 30-day supply without Medicaid coverage (varies enormously by drug class, from cheap generics to specialty biologics)",
+      "es": "por suministro de 30 dias sin cobertura de Medicaid (varia enormemente segun la clase de medicamento, desde genericos economicos hasta biologicos especializados)"
+    },
+    "inpatientLow": 50,
+    "inpatientHigh": 5000,
+    "inpatientUnit": {
+      "en": "per hospital-stay drug charge (bundled into the facility payment for Medicaid inpatients)",
+      "es": "por cargo de medicamento durante hospitalizacion (agrupado en el pago de instalacion para pacientes internados de Medicaid)"
+    },
+    "medicarePartDMonthlyCap": null,
+    "medicaidCopayLow": 0,
+    "medicaidCopayHigh": 8,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283,
+    "partDAnnualOopCap": 2100
+  },
+  "introParagraphs": [
+    {
+      "en": "Medicaid's outpatient prescription drug benefit is authorized by Section 1927 of the Social Security Act (42 U.S.C. Section 1396r-8), added by the Omnibus Budget Reconciliation Act of 1990. Coverage of outpatient drugs is technically optional for states, but every state and the District of Columbia has chosen to cover it, making it a de facto universal Medicaid benefit for more than 71 million Americans in 2026 according to KFF enrollment data. The statute created the Medicaid Drug Rebate Program (MDRP): manufacturers must sign a rebate agreement with the Centers for Medicare & Medicaid Services and pay quarterly rebates in exchange for their drugs being covered by every participating state. Manufacturers that refuse to sign a rebate agreement generally cannot have their drugs covered by Medicaid, Medicare Part B, or Medicare Part D.",
+      "es": "El beneficio de medicamentos recetados ambulatorios de Medicaid esta autorizado por la Seccion 1927 de la Ley del Seguro Social (42 U.S.C. Seccion 1396r-8), agregada por la Ley Omnibus de Reconciliacion Presupuestaria de 1990. La cobertura de medicamentos ambulatorios es tecnicamente opcional para los estados, pero todos los estados y el Distrito de Columbia han optado por cubrirla, convirtiendola en un beneficio universal de facto de Medicaid para mas de 71 millones de estadounidenses en 2026 segun datos de inscripcion de KFF. El estatuto creo el Programa de Reembolso de Medicamentos de Medicaid (MDRP): los fabricantes deben firmar un acuerdo de reembolso con los Centros de Servicios de Medicare y Medicaid y pagar reembolsos trimestrales a cambio de que sus medicamentos sean cubiertos por cada estado participante."
+    },
+    {
+      "en": "State Preferred Drug Lists (PDLs) determine which specific drug within a therapeutic class gets covered without extra paperwork. A state's Pharmacy and Therapeutics (P&T) Committee, made up of physicians and pharmacists, reviews clinical evidence and negotiates supplemental rebates with manufacturers in exchange for preferred placement. A drug placed on the PDL is typically dispensed with no prior authorization and a $4 nominal copay in 2026; a non-preferred drug in the same class usually requires prior authorization and can carry an $8 copay. Federal law requires state Medicaid agencies to respond to a prior authorization request within 24 hours and to provide a 72-hour emergency supply of the requested drug while the review is pending. Nearly every state also mandates generic substitution: pharmacists must dispense the FDA-rated AB-equivalent generic unless the prescriber specifically writes 'brand medically necessary' and documents the clinical reason.",
+      "es": "Las Listas de Medicamentos Preferidos (PDL) estatales determinan que medicamento especifico dentro de una clase terapeutica se cubre sin tramites adicionales. El Comite de Farmacia y Terapeutica (P&T) de un estado, formado por medicos y farmaceuticos, revisa la evidencia clinica y negocia reembolsos suplementarios con los fabricantes a cambio de una colocacion preferida. Un medicamento colocado en la PDL generalmente se dispensa sin autorizacion previa y con un copago nominal de $4 en 2026; un medicamento no preferido en la misma clase usualmente requiere autorizacion previa y puede tener un copago de $8. La ley federal exige que las agencias estatales de Medicaid respondan a una solicitud de autorizacion previa dentro de 24 horas y proporcionen un suministro de emergencia de 72 horas mientras la revision esta pendiente."
+    },
+    {
+      "en": "Cost-sharing protections are stronger for Medicaid than for almost any other type of coverage. Federal regulation 42 CFR 447.54 caps prescription drug copays at nominal amounts for beneficiaries at or below 150% of the federal poverty level ($23,940 for an individual in 2026), and several groups are exempt from any copay regardless of income: children under 18, pregnant women through 60 days postpartum, nursing facility and institutionalized residents, people receiving hospice or emergency services, and American Indian or Alaska Native beneficiaries receiving services through an Indian Health Service provider. Dual-eligible beneficiaries, people enrolled in both Medicare and Medicaid, get their outpatient drugs through Medicare Part D as the primary payer with Medicaid wrapping around the cost-sharing; the Medicare Extra Help low-income subsidy caps their 2026 copay at $1.60 for generics and $4.90 for brand-name drugs. Check the [Medicaid income limits](/medicaid-income-limits) for your state and household size to see whether you qualify for these protections.",
+      "es": "Las protecciones de costo compartido son mas fuertes en Medicaid que en casi cualquier otro tipo de cobertura. El reglamento federal 42 CFR 447.54 limita los copagos de medicamentos recetados a montos nominales para beneficiarios en o por debajo del 150% del nivel federal de pobreza ($23,940 para un individuo en 2026), y varios grupos estan exentos de cualquier copago sin importar el ingreso: ninos menores de 18 anos, mujeres embarazadas hasta 60 dias posparto, residentes de centros de enfermeria e institucionalizados, personas que reciben servicios de cuidados paliativos o de emergencia, e indigenas americanos o nativos de Alaska que reciben servicios a traves de un proveedor del Servicio de Salud Indigena."
+    }
+  ],
+  "pointOfPay": {
+    "rows": [
+      {
+        "pointOfPay": {
+          "en": "Pharmacy counter (retail, cash, no Medicaid)",
+          "es": "Mostrador de farmacia (minorista, en efectivo, sin Medicaid)"
+        },
+        "cost": {
+          "en": "$4 - $1,500+/month",
+          "es": "$4 - $1,500+/mes"
+        },
+        "notes": {
+          "en": "Cash price without any coverage in 2026. Generics like metformin or lisinopril run about $4 to $15/month; brand-name specialty drugs like Humira or Eliquis can run $500 to $1,500+/month.",
+          "es": "Precio en efectivo sin ninguna cobertura en 2026. Los genericos como metformina o lisinopril cuestan alrededor de $4 a $15/mes; los medicamentos de marca especializados como Humira o Eliquis pueden costar $500 a $1,500+/mes."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicaid fee-for-service, preferred drug",
+          "es": "Medicaid de tarifa por servicio, medicamento preferido"
+        },
+        "cost": {
+          "en": "$0 - $4/prescription",
+          "es": "$0 - $4/receta"
+        },
+        "notes": {
+          "en": "No prior authorization required in most states. Copay applies only if household income is above the state's copay exemption threshold.",
+          "es": "No se requiere autorizacion previa en la mayoria de los estados. El copago aplica solo si el ingreso del hogar supera el umbral de exencion del estado."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicaid fee-for-service, non-preferred drug",
+          "es": "Medicaid de tarifa por servicio, medicamento no preferido"
+        },
+        "cost": {
+          "en": "$0 - $8/prescription",
+          "es": "$0 - $8/receta"
+        },
+        "notes": {
+          "en": "Prior authorization required. Federal law requires a decision within 24 hours and a 72-hour emergency supply while the review is pending.",
+          "es": "Se requiere autorizacion previa. La ley federal exige una decision dentro de 24 horas y un suministro de emergencia de 72 horas mientras la revision esta pendiente."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicaid managed care (MCO pharmacy benefit)",
+          "es": "Atencion administrada de Medicaid (beneficio de farmacia MCO)"
+        },
+        "cost": {
+          "en": "$0 - $8/prescription",
+          "es": "$0 - $8/receta"
+        },
+        "notes": {
+          "en": "Same federal nominal copay caps apply, but the MCO's own formulary tier and preferred drug placement can differ from the state's fee-for-service PDL.",
+          "es": "Aplican los mismos limites federales de copago nominal, pero el nivel de formulario y la colocacion de medicamentos preferidos de la MCO pueden diferir de la PDL estatal de tarifa por servicio."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Dual-eligible (Medicare Part D + Medicaid wraparound)",
+          "es": "Doble elegibilidad (Medicare Parte D + complemento de Medicaid)"
+        },
+        "cost": {
+          "en": "$1.60 - $4.90/prescription",
+          "es": "$1.60 - $4.90/receta"
+        },
+        "notes": {
+          "en": "2026 Extra Help (Low-Income Subsidy) copay amounts: $1.60 for generics, $4.90 for brand-name drugs. Medicare Part D is the primary payer; Medicaid covers remaining cost-sharing.",
+          "es": "Montos de copago de Extra Help (Subsidio de Bajos Ingresos) 2026: $1.60 para genericos, $4.90 para medicamentos de marca. Medicare Parte D es el pagador primario; Medicaid cubre el costo compartido restante."
+        }
+      }
+    ],
+    "tableFootnote": {
+      "en": "Copay amounts are set by federal regulation (42 CFR 447.54) and updated annually. Exempt groups (children, pregnant women, nursing facility residents, emergency and family planning services) pay $0 regardless of the drug's formulary tier.",
+      "es": "Los montos de copago son establecidos por el reglamento federal (42 CFR 447.54) y se actualizan anualmente. Los grupos exentos (ninos, mujeres embarazadas, residentes de centros de enfermeria, servicios de emergencia y planificacion familiar) pagan $0 sin importar el nivel del formulario del medicamento."
+    },
+    "tableSource": "Medicaid.gov State Prescription Drug Resources, 42 CFR Part 447, CMS 2026 Extra Help copay amounts, GoodRx"
+  },
+  "whyHospitalsCharge": {
+    "paragraphs": [
+      {
+        "en": "Outpatient formulary drugs rarely generate a separate Medicaid Rx copay when a beneficiary is admitted as a hospital inpatient. Instead, the hospital bills the drug as part of a bundled facility payment, typically a diagnosis-related-group (DRG) rate for fee-for-service Medicaid or a similar prospective payment for Medicaid managed care. Because the itemized bill still lists each drug's charge separately, patients often see a line item for a common formulary drug marked up to several times its outpatient retail price, even though the hospital's actual Medicaid reimbursement for that drug is bundled into the overall facility payment rather than paid per item.",
+        "es": "Los medicamentos ambulatorios del formulario rara vez generan un copago de Medicaid separado cuando un beneficiario es admitido como paciente hospitalizado. En cambio, el hospital factura el medicamento como parte de un pago de instalacion agrupado, generalmente una tarifa de grupo relacionado con el diagnostico (DRG) para Medicaid de tarifa por servicio o un pago prospectivo similar para la atencion administrada de Medicaid. Debido a que la factura detallada aun enumera el cargo de cada medicamento por separado, los pacientes a menudo ven una partida para un medicamento comun del formulario marcada varias veces por encima de su precio minorista ambulatorio."
+      },
+      {
+        "en": "Three structural factors drive these inflated line items above the outpatient formulary cost: facility handling fees layered onto the drug's acquisition cost, nursing administration charges even for a drug the patient could self-administer, and revenue-cycle coding that maps the drug to a higher-cost internal tier than its outpatient PDL classification. Medicaid beneficiaries who see a formulary drug billed at several hundred dollars above the retail rate should request an itemized bill, confirm the National Drug Code (NDC) matches the prescription, and use the [medical bill analyzer](/medical-bill-analyzer) to flag the line item for review. Federal law also prohibits Medicaid providers from balance-billing beneficiaries above the Medicaid-allowed rate, so any inpatient drug overcharge billed directly to a Medicaid patient may itself be a billing error worth disputing.",
+        "es": "Tres factores estructurales impulsan estas partidas infladas por encima del costo ambulatorio del formulario: tarifas de manejo de instalaciones sumadas al costo de adquisicion del medicamento, cargos de administracion de enfermeria incluso para un medicamento que el paciente podria autoadministrarse, y codificacion del ciclo de ingresos que asigna el medicamento a un nivel interno de mayor costo que su clasificacion ambulatoria en la PDL. Los beneficiarios de Medicaid que ven un medicamento del formulario facturado varios cientos de dolares por encima de la tarifa minorista deben solicitar una factura detallada y usar el analizador de facturas medicas para marcar la partida para revision."
+      }
+    ]
+  },
+  "patientAssistancePrograms": {
+    "intro": {
+      "en": "Manufacturer patient assistance programs (PAPs) generally exclude patients with active Medicaid coverage, because federal anti-kickback rules prohibit manufacturers from subsidizing government-insured patients' cost-sharing. PAPs remain relevant in two scenarios: for patients who are uninsured while a Medicaid application is pending, and for Medicaid enrollees whose specific drug was denied or excluded from the state Preferred Drug List and who can document that no other coverage applies to that drug. In both cases, a written Medicaid denial letter strengthens a PAP application.",
+      "es": "Los programas de asistencia al paciente (PAP) del fabricante generalmente excluyen a pacientes con cobertura activa de Medicaid, porque las reglas federales anti-soborno prohiben a los fabricantes subsidiar el costo compartido de pacientes asegurados por el gobierno. Los PAP siguen siendo relevantes en dos escenarios: para pacientes sin seguro mientras una solicitud de Medicaid esta pendiente, y para beneficiarios de Medicaid cuyo medicamento especifico fue denegado o excluido de la Lista de Medicamentos Preferidos estatal y que pueden documentar que ninguna otra cobertura aplica a ese medicamento."
+    },
+    "rows": [
+      {
+        "program": "NeedyMeds Patient Assistance Program Database",
+        "costBenefit": {
+          "en": "Free searchable directory of hundreds of manufacturer PAPs, disease-specific assistance funds, and drug discount cards, organized by drug name",
+          "es": "Directorio gratuito de busqueda de cientos de PAP de fabricantes, fondos de asistencia especificos por enfermedad y tarjetas de descuento de medicamentos, organizados por nombre de medicamento"
+        },
+        "howToApply": "needymeds.org"
+      },
+      {
+        "program": "RxAssist Patient Assistance Program Center",
+        "costBenefit": {
+          "en": "Directory maintained by a nonprofit that lists manufacturer PAP eligibility rules, income thresholds, and application forms by drug and manufacturer",
+          "es": "Directorio mantenido por una organizacion sin fines de lucro que enumera reglas de elegibilidad de PAP, umbrales de ingresos y formularios de solicitud por medicamento y fabricante"
+        },
+        "howToApply": "rxassist.org"
+      },
+      {
+        "program": "State Pharmaceutical Assistance Programs (SPAPs)",
+        "costBenefit": {
+          "en": "State-run programs (for example, New Jersey's PAAD and Pennsylvania's PACE) that supplement Medicaid or Medicare Part D drug costs for eligible seniors and people with disabilities in states that operate one",
+          "es": "Programas administrados por el estado (por ejemplo, PAAD de Nueva Jersey y PACE de Pensilvania) que complementan los costos de medicamentos de Medicaid o Medicare Parte D para adultos mayores y personas con discapacidades elegibles en los estados que operan uno"
+        },
+        "howToApply": "medicaid.gov"
+      },
+      {
+        "program": "Manufacturer-specific PAPs (example: Bristol Myers Squibb Patient Assistance Foundation, Lilly Cares Foundation, NovoCare)",
+        "costBenefit": {
+          "en": "Free or reduced-cost drug for uninsured patients, typically at incomes up to 300% to 400% of the federal poverty level; may accept a Medicaid denial letter for a specific excluded drug",
+          "es": "Medicamento gratuito o de costo reducido para pacientes sin seguro, tipicamente con ingresos de hasta 300% a 400% del nivel federal de pobreza; puede aceptar una carta de denegacion de Medicaid para un medicamento especifico excluido"
+        },
+        "howToApply": "manufacturer website"
+      }
+    ],
+    "footnote": {
+      "en": "Manufacturer copay cards and savings cards, sometimes called a manufacturer coupon, cannot be used by anyone with Medicare, Medicaid, TRICARE, or VA coverage under the federal anti-kickback statute (42 U.S.C. Section 1320a-7b). Applying a manufacturer coupon to a Medicaid claim is a compliance violation and can trigger a clawback from the pharmacy. If Medicaid does not cover your drug, apply for the income-based manufacturer PAP instead of a copay card.",
+      "es": "Las tarjetas de copago y ahorro del fabricante, a veces llamadas cupon del fabricante, no pueden ser utilizadas por nadie con cobertura de Medicare, Medicaid, TRICARE o VA bajo el estatuto federal anti-soborno (42 U.S.C. Seccion 1320a-7b). Aplicar un cupon del fabricante a un reclamo de Medicaid es una violacion de cumplimiento. Si Medicaid no cubre su medicamento, solicite el PAP basado en ingresos en lugar de una tarjeta de copago."
+    },
+    "source": "NeedyMeds.org, RxAssist.org, Medicaid.gov State Prescription Drug Resources, 42 U.S.C. Section 1320a-7b"
+  },
+  "medicarePartD": {
+    "hasSpecificCap": false,
+    "paragraphs": [
+      {
+        "en": "Dual-eligible beneficiaries, people enrolled in both Medicare and Medicaid, receive outpatient prescription drugs through Medicare Part D as the primary payer rather than through Medicaid directly. Medicaid's role for a dual-eligible beneficiary is to cover the Part D premium and reduce cost-sharing through the Extra Help low-income subsidy, which in 2026 caps copays at $1.60 for generic drugs and $4.90 for brand-name drugs for beneficiaries with the lowest incomes.",
+        "es": "Los beneficiarios con doble elegibilidad, personas inscritas tanto en Medicare como en Medicaid, reciben medicamentos recetados ambulatorios a traves de Medicare Parte D como pagador primario en lugar de a traves de Medicaid directamente. El papel de Medicaid para un beneficiario con doble elegibilidad es cubrir la prima de la Parte D y reducir el costo compartido a traves del subsidio de bajos ingresos Extra Help, que en 2026 limita los copagos a $1.60 para medicamentos genericos y $4.90 para medicamentos de marca."
+      },
+      {
+        "en": "Every Medicare Part D enrollee, dual-eligible or not, benefits from the $2,100 annual out-of-pocket cap set for 2026 under the Inflation Reduction Act of 2022. Once total out-of-pocket drug spending reaches $2,100 in a calendar year, the beneficiary pays $0 for the rest of the year on all covered Part D drugs. For a dual-eligible beneficiary already paying only $1.60 to $4.90 per prescription, the $2,100 cap rarely comes into play, but it matters for beneficiaries who lose Extra Help eligibility partway through the year.",
+        "es": "Todo inscrito en Medicare Parte D, con o sin doble elegibilidad, se beneficia del limite anual de bolsillo de $2,100 establecido para 2026 bajo la Ley de Reduccion de la Inflacion de 2022. Una vez que el gasto total de bolsillo en medicamentos alcanza $2,100 en un ano calendario, el beneficiario paga $0 por el resto del ano en todos los medicamentos cubiertos de la Parte D."
+      },
+      {
+        "en": "State Medicaid agencies remain the correct point of contact for drugs that Medicare Part D excludes by statute, such as certain over-the-counter products converted to prescription status or drugs used solely for weight loss. Medicaid coverage rules for those excluded categories are set independently by each state's own Preferred Drug List and vary widely, so a dual-eligible beneficiary denied a drug under Part D should confirm with the state Medicaid agency whether the state covers it as a Medicaid-only benefit.",
+        "es": "Las agencias estatales de Medicaid siguen siendo el punto de contacto correcto para medicamentos que Medicare Parte D excluye por estatuto, como ciertos productos de venta libre convertidos a estado de receta o medicamentos utilizados unicamente para perdida de peso. Las reglas de cobertura de Medicaid para esas categorias excluidas se establecen de forma independiente por la propia Lista de Medicamentos Preferidos de cada estado y varian ampliamente."
+      }
+    ]
+  },
+  "commonBillingErrors": {
+    "intro": {
+      "en": "Medicaid prescription drug billing errors are common because pharmacy claims move through multiple systems: the state PDL, the managed care organization's formulary, and federal cost-sharing rules. Check for these issues before paying a pharmacy bill or accepting a coverage denial:",
+      "es": "Los errores de facturacion de medicamentos recetados de Medicaid son comunes porque los reclamos de farmacia pasan por multiples sistemas: la PDL estatal, el formulario de la organizacion de atencion administrada y las reglas federales de costo compartido. Verifique estos problemas antes de pagar una factura de farmacia o aceptar una denegacion de cobertura:"
+    },
+    "items": [
+      {
+        "en": "Charged the full retail cash price instead of the Medicaid nominal copay. If a pharmacy charges $50 or more for a drug that should carry a $4 or $8 Medicaid copay, the claim was likely processed as cash-pay instead of through Medicaid. Ask the pharmacy to reprocess the claim using your Medicaid ID.",
+        "es": "Cobrado el precio minorista completo en efectivo en lugar del copago nominal de Medicaid. Si una farmacia cobra $50 o mas por un medicamento que deberia tener un copago de Medicaid de $4 u $8, el reclamo probablemente se proceso como pago en efectivo en lugar de a traves de Medicaid. Pida a la farmacia que reprocese el reclamo usando su identificacion de Medicaid."
+      },
+      {
+        "en": "Copay charged to an exempt population. Children under 18, pregnant women, nursing facility residents, and people receiving emergency or family planning services must pay $0 regardless of the drug's formulary tier. A copay charged to any of these groups is a billing error.",
+        "es": "Copago cobrado a una poblacion exenta. Los ninos menores de 18 anos, mujeres embarazadas, residentes de centros de enfermeria y personas que reciben servicios de emergencia o planificacion familiar deben pagar $0 sin importar el nivel del formulario. Un copago cobrado a cualquiera de estos grupos es un error de facturacion."
+      },
+      {
+        "en": "Non-preferred drug dispensed without the required prior authorization, then balance-billed to the patient. Federal law prohibits Medicaid providers from balance-billing beneficiaries above the Medicaid-allowed rate; a surprise bill for the difference should be disputed with the state Medicaid agency.",
+        "es": "Medicamento no preferido dispensado sin la autorizacion previa requerida, y luego facturado al paciente por la diferencia. La ley federal prohibe a los proveedores de Medicaid facturar a los beneficiarios por encima de la tarifa permitida por Medicaid."
+      },
+      {
+        "en": "Manufacturer coupon or savings card applied to a Medicaid claim in error. Federal anti-kickback rules bar manufacturers from supplementing Medicaid cost-sharing; if a coupon was applied, the pharmacy may face a manufacturer clawback that later shows up as an unexpected charge to the patient.",
+        "es": "Cupon o tarjeta de ahorro del fabricante aplicada por error a un reclamo de Medicaid. Las reglas federales anti-soborno prohiben a los fabricantes complementar el costo compartido de Medicaid; si se aplico un cupon, la farmacia puede enfrentar una recuperacion del fabricante que luego aparece como un cargo inesperado para el paciente."
+      },
+      {
+        "en": "72-hour emergency supply not provided while a prior authorization is pending. Federal regulation requires pharmacies to dispense at least a 72-hour emergency supply of a requested drug when a PA decision has not been made in time; refusal to do so is a compliance violation.",
+        "es": "No se proporciono el suministro de emergencia de 72 horas mientras una autorizacion previa esta pendiente. El reglamento federal exige que las farmacias dispensen al menos un suministro de emergencia de 72 horas de un medicamento solicitado cuando no se ha tomado una decision de autorizacion previa a tiempo."
+      },
+      {
+        "en": "Managed care and fee-for-service formulary mismatch. A drug preferred under the state's fee-for-service PDL may be non-preferred under a specific MCO's own formulary, or vice versa, causing an unexpected denial or higher tier when a beneficiary switches plans or providers.",
+        "es": "Discordancia entre el formulario de atencion administrada y el de tarifa por servicio. Un medicamento preferido bajo la PDL estatal de tarifa por servicio puede ser no preferido bajo el formulario propio de una MCO especifica, causando una denegacion inesperada o un nivel mas alto cuando un beneficiario cambia de plan o proveedor."
+      }
+    ]
+  },
+  "pharmacyPriceComparison": {
+    "caption": {
+      "en": "Metformin (common Medicaid-covered generic) cash price by pharmacy without coverage (2026)",
+      "es": "Precio en efectivo de metformina (generico comun cubierto por Medicaid) por farmacia sin cobertura (2026)"
+    },
+    "rows": [
+      {
+        "pharmacy": "Walmart $4 Generic Prescription Program",
+        "price": {
+          "en": "$4 (30-day supply, 500mg or 1000mg)",
+          "es": "$4 (suministro de 30 dias, 500mg o 1000mg)"
+        },
+        "notes": {
+          "en": "Included in Walmart's $4 Generic Prescription Program. This is the same nominal amount Medicaid charges for a preferred drug in 2026.",
+          "es": "Incluido en el Programa de Recetas Genericas de $4 de Walmart. Este es el mismo monto nominal que Medicaid cobra por un medicamento preferido en 2026."
+        }
+      },
+      {
+        "pharmacy": "Costco Member Prescription Program",
+        "price": {
+          "en": "$8.90 (30-day supply)",
+          "es": "$8.90 (suministro de 30 dias)"
+        },
+        "notes": {
+          "en": "Costco's pharmacy is open to non-members at the same price for prescriptions.",
+          "es": "La farmacia de Costco esta abierta a no miembros al mismo precio para recetas."
+        }
+      },
+      {
+        "pharmacy": "Kroger Rx Savings Club",
+        "price": {
+          "en": "$10.99 (30-day supply)",
+          "es": "$10.99 (suministro de 30 dias)"
+        },
+        "notes": {
+          "en": "Requires a $36/year membership; no insurance needed.",
+          "es": "Requiere una membresia de $36/ano; no se necesita seguro."
+        }
+      },
+      {
+        "pharmacy": "CVS w/ GoodRx coupon",
+        "price": {
+          "en": "$10 - $14 (30-day supply)",
+          "es": "$10 - $14 (suministro de 30 dias)"
+        },
+        "notes": {
+          "en": "Free GoodRx coupon available at goodrx.com; no membership required.",
+          "es": "Cupon gratuito de GoodRx disponible en goodrx.com; no se requiere membresia."
+        }
+      },
+      {
+        "pharmacy": "Walgreens",
+        "price": {
+          "en": "$15 - $20 (30-day cash price)",
+          "es": "$15 - $20 (precio en efectivo por 30 dias)"
+        },
+        "notes": {
+          "en": "Lower with the Walgreens Prescription Savings Club membership.",
+          "es": "Mas bajo con la membresia del Club de Ahorros de Recetas de Walgreens."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "Cash prices for this common generic vary by ZIP code and pharmacy promotion. A Medicaid beneficiary pays $0 to $4 for the same prescription regardless of the cash price shown here. Verified 2026 via GoodRx and chain member-program pricing.",
+      "es": "Los precios en efectivo para este generico comun varian segun el codigo postal y la promocion de la farmacia. Un beneficiario de Medicaid paga $0 a $4 por la misma receta sin importar el precio en efectivo mostrado aqui. Verificado en 2026 via GoodRx y precios de programas de miembros de cadenas."
+    },
+    "source": "GoodRx, Walmart $4 Generic Prescription Program, Costco Member Prescription Program, Kroger Rx Savings Club, Walgreens pharmacy"
+  },
+  "genericBiosimilarStatus": {
+    "hasGeneric": true,
+    "genericName": "State-mandated generic substitution: pharmacists must dispense the FDA AB-rated equivalent generic unless the prescriber specifies 'brand medically necessary'",
+    "patentExpiry": null,
+    "biosimilars": null,
+    "note": {
+      "en": "Medicaid's rebate statute treats generics and biosimilars differently from brand-name originals: the minimum rebate is 13% of average manufacturer price for generics versus 23.1% (or more, if greater than the gap to best price) for brand-name drugs. Nearly all states require generic substitution when a therapeutically equivalent generic exists, and more than 40 states now also allow pharmacists to substitute an FDA-designated 'interchangeable' biosimilar, such as insulin glargine biosimilars Semglee or Rezvoglar in place of Lantus, or several interchangeable Humira biosimilars, without needing a new prescriber authorization. Whether a specific biosimilar is preferred or non-preferred still depends on each state's own Preferred Drug List.",
+      "es": "El estatuto de reembolso de Medicaid trata a los genericos y biosimilares de manera diferente a los originales de marca: el reembolso minimo es 13% del precio promedio de fabricante para genericos frente a 23.1% (o mas, si es mayor que la brecha con el mejor precio) para medicamentos de marca. Casi todos los estados exigen la sustitucion generica cuando existe un generico terapeuticamente equivalente, y mas de 40 estados ahora tambien permiten a los farmaceuticos sustituir un biosimilar designado como 'intercambiable' por la FDA, como los biosimilares de insulina glargina Semglee o Rezvoglar en lugar de Lantus, sin necesitar una nueva autorizacion del prescriptor."
+    }
+  },
+  "papEligibilityTable": {
+    "caption": {
+      "en": "Manufacturer PAP eligibility fallback by household size, 400% FPL (2026)",
+      "es": "Respaldo de elegibilidad PAP del fabricante por tamano del hogar, 400% del FPL (2026)"
+    },
+    "fplPctReferenced": 400,
+    "rows": [
+      {
+        "householdSize": 1,
+        "incomeThreshold": 63840,
+        "incomeLabel": { "en": "<= $63,840", "es": "<= $63,840" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 2,
+        "incomeThreshold": 86560,
+        "incomeLabel": { "en": "<= $86,560", "es": "<= $86,560" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 3,
+        "incomeThreshold": 109280,
+        "incomeLabel": { "en": "<= $109,280", "es": "<= $109,280" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 4,
+        "incomeThreshold": 132000,
+        "incomeLabel": { "en": "<= $132,000", "es": "<= $132,000" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 5,
+        "incomeThreshold": 154720,
+        "incomeLabel": { "en": "<= $154,720", "es": "<= $154,720" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 6,
+        "incomeThreshold": 177440,
+        "incomeLabel": { "en": "<= $177,440", "es": "<= $177,440" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 7,
+        "incomeThreshold": 200160,
+        "incomeLabel": { "en": "<= $200,160", "es": "<= $200,160" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 8,
+        "incomeThreshold": 222880,
+        "incomeLabel": { "en": "<= $222,880", "es": "<= $222,880" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": "Each additional person",
+        "incomeThreshold": 22720,
+        "incomeLabel": { "en": "+ $22,720", "es": "+ $22,720" },
+        "fplPct": 400
+      }
+    ],
+    "year": 2026,
+    "source": "HHS 2026 federal poverty guidelines, https://aspe.hhs.gov/poverty-guidelines"
+  },
+  "denialAlternatives": {
+    "appealSteps": [
+      {
+        "en": "Step 1: Request a written denial notice from your state Medicaid agency or managed care organization. Federal regulation 42 CFR Part 438 requires a written notice stating the specific reason for denial, the clinical criteria used, and the deadline to appeal.",
+        "es": "Paso 1: Solicite un aviso de denegacion por escrito de su agencia estatal de Medicaid u organizacion de atencion administrada. El reglamento federal 42 CFR Parte 438 exige un aviso escrito que indique el motivo especifico de la denegacion, los criterios clinicos utilizados y el plazo para apelar."
+      },
+      {
+        "en": "Step 2: File a formal internal appeal within 60 days of the denial notice. Ask your prescriber to submit additional clinical documentation, including diagnosis history, prior treatment failures, and evidence that the requested drug is medically necessary compared with the preferred alternative.",
+        "es": "Paso 2: Presente una apelacion interna formal dentro de los 60 dias posteriores al aviso de denegacion. Pida a su prescriptor que envie documentacion clinica adicional, incluyendo historial de diagnostico, fallos de tratamientos previos y evidencia de que el medicamento solicitado es medicamente necesario en comparacion con la alternativa preferida."
+      },
+      {
+        "en": "Step 3: Request a peer-to-peer review between your prescriber and the plan's medical director. Most Medicaid managed care contracts require this option, and it resolves a meaningful share of formulary denials when the prescriber can discuss the full clinical picture directly.",
+        "es": "Paso 3: Solicite una revision entre pares entre su prescriptor y el director medico del plan. La mayoria de los contratos de atencion administrada de Medicaid requieren esta opcion, y resuelve una parte significativa de las denegaciones de formulario cuando el prescriptor puede discutir el cuadro clinico completo directamente."
+      },
+      {
+        "en": "Step 4: File a Medicaid fair hearing request with your state Medicaid agency if the internal appeal is denied. A fair hearing is a federal right for Medicaid beneficiaries under 42 CFR Section 431.220, and you can typically request one within 90 days of the adverse action. Many state legal aid organizations offer free help with fair hearings.",
+        "es": "Paso 4: Presente una solicitud de audiencia justa de Medicaid ante su agencia estatal de Medicaid si se deniega la apelacion interna. Una audiencia justa es un derecho federal para los beneficiarios de Medicaid bajo 42 CFR Seccion 431.220, y generalmente puede solicitarla dentro de los 90 dias de la accion adversa."
+      }
+    ],
+    "stepTherapyOverride": {
+      "en": "If your Medicaid plan requires you to try a preferred drug first before covering a non-preferred alternative (step therapy), ask your prescriber to file a step-therapy override request. An override is appropriate when you have a documented contraindication or intolerance to the preferred drug, you already tried it and it failed, or your clinical situation creates an urgent medical need for the non-preferred drug. Most states have step-therapy transparency laws that require the plan to respond to an override request within a defined timeframe, often 24 to 72 hours.",
+      "es": "Si su plan de Medicaid le exige probar un medicamento preferido antes de cubrir una alternativa no preferida (terapia escalonada), pida a su prescriptor que presente una solicitud de anulacion de terapia escalonada. Una anulacion es apropiada cuando tiene una contraindicacion o intolerancia documentada al medicamento preferido, ya lo probo y fallo, o su situacion clinica crea una necesidad medica urgente del medicamento no preferido."
+    },
+    "papFallback": {
+      "en": "If appeals fail and the drug remains permanently excluded from the state Preferred Drug List, apply to the manufacturer's patient assistance program through NeedyMeds.org or RxAssist.org, and include the written Medicaid denial letter with the application. Most manufacturer PAPs cap eligibility at 300% to 400% of the federal poverty level for patients who can document no other applicable drug coverage.",
+      "es": "Si las apelaciones fallan y el medicamento permanece permanentemente excluido de la Lista de Medicamentos Preferidos estatal, solicite el programa de asistencia al paciente del fabricante a traves de NeedyMeds.org o RxAssist.org, e incluya la carta de denegacion de Medicaid por escrito con la solicitud. La mayoria de los PAP de fabricantes limitan la elegibilidad al 300% a 400% del nivel federal de pobreza."
+    },
+    "genericAlternative": {
+      "en": "Ask your prescriber whether an FDA AB-rated generic, or for biologics an FDA-interchangeable biosimilar, is available and preferred on your state's formulary. A generic or interchangeable biosimilar substitution is almost always covered at the $0 to $4 nominal copay without prior authorization, and switching is often the fastest route to coverage when the brand-name original is non-preferred.",
+      "es": "Pregunte a su prescriptor si hay disponible un generico con calificacion AB de la FDA, o para biologicos un biosimilar intercambiable de la FDA, y si es preferido en el formulario de su estado. Una sustitucion por generico o biosimilar intercambiable casi siempre esta cubierta con el copago nominal de $0 a $4 sin autorizacion previa."
+    }
+  },
+  "howToApplyPap": {
+    "programName": "NeedyMeds Patient Assistance Program Directory and manufacturer-specific PAPs",
+    "numberedSteps": [
+      {
+        "en": "Step 1: Search needymeds.org or rxassist.org by the specific drug name to find every manufacturer PAP and discount program available for that drug. Call NeedyMeds at 1-800-503-6897 if you prefer phone assistance.",
+        "es": "Paso 1: Busque en needymeds.org o rxassist.org por el nombre especifico del medicamento para encontrar todos los PAP del fabricante y programas de descuento disponibles. Llame a NeedyMeds al 1-800-503-6897 si prefiere asistencia telefonica."
+      },
+      {
+        "en": "Step 2: Download the manufacturer's application form from the program page. Complete both the patient section and the prescriber section; most programs require your physician or nurse practitioner to sign an attestation.",
+        "es": "Paso 2: Descargue el formulario de solicitud del fabricante desde la pagina del programa. Complete tanto la seccion del paciente como la del prescriptor; la mayoria de los programas requieren que su medico o enfermero practicante firme una certificacion."
+      },
+      {
+        "en": "Step 3: Gather required documents: proof of household income (most recent tax return or 4 consecutive pay stubs), proof of US residency, a current prescription for the specific drug, and a signed statement of no other applicable drug coverage. If you have Medicaid but this specific drug was denied, include the written Medicaid denial letter.",
+        "es": "Paso 3: Reuna los documentos requeridos: prueba de ingresos del hogar (declaracion de impuestos mas reciente o 4 talones de pago consecutivos), prueba de residencia en EE.UU., una receta actual para el medicamento especifico, y una declaracion firmada de que no tiene otra cobertura de medicamentos aplicable. Si tiene Medicaid pero se le nego este medicamento especifico, incluya la carta de denegacion de Medicaid por escrito."
+      },
+      {
+        "en": "Step 4: Submit the completed application by fax, mail, or the manufacturer's online portal. Processing typically takes 7 to 21 business days depending on the manufacturer.",
+        "es": "Paso 4: Envie la solicitud completa por fax, correo o el portal en linea del fabricante. El procesamiento generalmente toma de 7 a 21 dias habiles dependiendo del fabricante."
+      },
+      {
+        "en": "Step 5: If approved, the manufacturer ships the drug directly to your home or your prescriber's office at no charge. Renewals are typically required annually and must include updated income documentation. Notify the program immediately if your Medicaid or insurance status changes during the program year.",
+        "es": "Paso 5: Si se aprueba, el fabricante envia el medicamento directamente a su domicilio o al consultorio de su prescriptor sin cargo. Las renovaciones generalmente se requieren anualmente e incluyen documentacion de ingresos actualizada."
+      }
+    ],
+    "govStartingUrl": "https://www.medicaid.gov/medicaid/prescription-drugs/index.html",
+    "manufacturerStartingUrl": "https://www.needymeds.org/",
+    "documentsNeeded": [
+      {
+        "en": "Most recent federal tax return OR 4 consecutive pay stubs showing total household income",
+        "es": "Declaracion de impuestos federales mas reciente O 4 talones de pago consecutivos que muestren el ingreso total del hogar"
+      },
+      {
+        "en": "Proof of US residency: utility bill, lease agreement, or government-issued ID with US address",
+        "es": "Prueba de residencia en EE.UU.: factura de servicios, contrato de arrendamiento o identificacion emitida por el gobierno con direccion en EE.UU."
+      },
+      {
+        "en": "Current prescription for the specific drug from a US-licensed prescriber",
+        "es": "Receta actual para el medicamento especifico de un prescriptor con licencia en EE.UU."
+      },
+      {
+        "en": "Signed statement that you have no active prescription drug coverage for this specific drug",
+        "es": "Declaracion firmada de que no tiene cobertura de medicamentos recetados activa para este medicamento especifico"
+      },
+      {
+        "en": "Written Medicaid denial letter, if Medicaid-eligible but the specific drug was denied or excluded from the formulary",
+        "es": "Carta de denegacion de Medicaid por escrito, si es elegible para Medicaid pero el medicamento especifico fue denegado o excluido del formulario"
+      },
+      {
+        "en": "Prescriber attestation section completed and signed by your physician or nurse practitioner",
+        "es": "Seccion de certificacion del prescriptor completada y firmada por su medico o enfermero practicante"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Household income exceeds the program's threshold (typically 300% to 400% of the federal poverty level)",
+        "es": "El ingreso del hogar supera el umbral del programa (tipicamente 300% a 400% del nivel federal de pobreza)"
+      },
+      {
+        "en": "Active Medicaid coverage exists with no written denial letter for the specific drug",
+        "es": "Existe cobertura activa de Medicaid sin una carta de denegacion escrita para el medicamento especifico"
+      },
+      {
+        "en": "Incomplete application: missing prescriber signature, income documentation, or required denial letter",
+        "es": "Solicitud incompleta: falta la firma del prescriptor, documentacion de ingresos o la carta de denegacion requerida"
+      },
+      {
+        "en": "Not a US resident, or the prescriber is not licensed in the United States",
+        "es": "No es residente de EE.UU., o el prescriptor no tiene licencia en Estados Unidos"
+      }
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "Is there a generic requirement under Medicaid prescription drug coverage?",
+        "answer": "Yes. Nearly every state requires pharmacists to dispense the FDA AB-rated generic equivalent instead of the brand-name original unless the prescriber writes 'brand medically necessary' and documents a clinical reason, which usually triggers extra prior authorization. Medicaid's rebate formula also rewards generics: manufacturers owe only a 13% minimum rebate on generics versus 23.1% or more on brand-name drugs. More than 40 states also allow pharmacists to substitute an FDA-interchangeable biosimilar for a reference biologic without a new prescription."
+      },
+      {
+        "question": "How do I apply for a manufacturer patient assistance program if Medicaid does not cover my drug?",
+        "answer": "1) Get a written Medicaid denial letter for the specific drug. 2) Search needymeds.org or rxassist.org for that drug's manufacturer PAP. 3) Complete the patient and prescriber sections of the application. 4) Submit proof of income, US residency, your prescription, and the Medicaid denial letter. Most manufacturer PAPs cap eligibility at 300% to 400% of the federal poverty level and process applications within 7 to 21 business days."
+      },
+      {
+        "question": "Can I use a manufacturer copay card or manufacturer coupon if I have Medicaid?",
+        "answer": "No. Federal anti-kickback law (42 U.S.C. Section 1320a-7b) prohibits anyone with Medicaid, Medicare, TRICARE, or VA coverage from using a manufacturer copay card or manufacturer coupon. These programs are for commercially insured or uninsured patients only. If Medicaid denies your drug, apply for the manufacturer's income-based patient assistance program instead, which does not violate anti-kickback rules."
+      },
+      {
+        "question": "What happens if Medicaid denies coverage for my prescription drug?",
+        "answer": "Request the written denial notice, which must state the reason and appeal deadline. File a formal internal appeal within 60 days with additional clinical documentation from your prescriber. Ask for a peer-to-peer review between your prescriber and the plan's medical director. If the internal appeal fails, request a Medicaid fair hearing through your state agency, a federal right you can exercise within about 90 days of the denial."
+      },
+      {
+        "question": "Does the IRA's Maximum Fair Price affect Medicaid drug prices?",
+        "answer": "Not directly for most drugs in 2026. The Inflation Reduction Act's Maximum Fair Price applies to Medicare Part B and Part D pricing for 10 selected drugs starting January 1, 2026, and does not replace Medicaid's own statutory rebate formula under Section 1927. Medicaid typically already receives a steep discount through its 23.1% minimum brand rebate plus supplemental state rebates, and federal guidance continues to clarify how negotiated units interact with Medicaid's best-price calculation to avoid duplicate discounting."
+      },
+      {
+        "question": "What does a prescription drug cost without Medicaid at the pharmacy counter?",
+        "answer": "It depends heavily on the drug. A generic like metformin runs about $4 to $20 for a 30-day supply at major chains including Walmart, Costco, and Kroger in 2026. A brand-name specialty drug without insurance can run $500 to $1,500 or more per month. With Medicaid, both cost the same nominal $0 to $4 copay for a preferred drug, which is why Medicaid coverage status matters most for expensive brand-name and biologic drugs."
+      },
+      {
+        "question": "Do I qualify for Medicaid prescription drug coverage, and what is the Preferred Drug List?",
+        "answer": "If you qualify for Medicaid based on your state's income limits, prescription drug coverage is included automatically; there is no separate drug-only Medicaid eligibility test. The Preferred Drug List (PDL) is the state's list of which specific drug within a class is covered without prior authorization. Check the [Medicaid income limits](/medicaid-income-limits) for your state and household size, and confirm your state's PDL for the specific drug you need through your state Medicaid agency or managed care plan."
+      },
+      {
+        "question": "What is the difference between Medicaid fee-for-service and Medicaid managed care pharmacy benefits?",
+        "answer": "Fee-for-service Medicaid pays pharmacies directly using the state's own Preferred Drug List and prior authorization rules. Medicaid managed care routes the pharmacy benefit through a managed care organization (MCO), which may run its own formulary and PA process that differs from the state's fee-for-service PDL. Both must honor the same federal nominal copay caps of $4 for preferred and $8 for non-preferred drugs, but which specific drug is preferred can differ between the two systems."
+      }
+    ],
+    "es": [
+      {
+        "question": "Hay un requisito de generico bajo la cobertura de medicamentos recetados de Medicaid?",
+        "answer": "Si. Casi todos los estados exigen que los farmaceuticos dispensen el equivalente generico con calificacion AB de la FDA en lugar del original de marca, a menos que el prescriptor escriba 'marca medicamente necesaria' y documente una razon clinica, lo que generalmente activa autorizacion previa adicional. La formula de reembolso de Medicaid tambien favorece los genericos: los fabricantes deben un reembolso minimo de solo 13% en genericos frente a 23.1% o mas en medicamentos de marca."
+      },
+      {
+        "question": "Como solicito un programa de asistencia al paciente del fabricante si Medicaid no cubre mi medicamento?",
+        "answer": "1) Obtenga una carta de denegacion de Medicaid por escrito para el medicamento especifico. 2) Busque en needymeds.org o rxassist.org el PAP del fabricante de ese medicamento. 3) Complete las secciones del paciente y del prescriptor de la solicitud. 4) Envie prueba de ingresos, residencia en EE.UU., su receta y la carta de denegacion de Medicaid. La mayoria de los PAP limitan la elegibilidad al 300% a 400% del nivel federal de pobreza."
+      },
+      {
+        "question": "Puedo usar una tarjeta de copago o cupon del fabricante si tengo Medicaid?",
+        "answer": "No. La ley federal anti-soborno (42 U.S.C. Seccion 1320a-7b) prohibe que cualquier persona con Medicaid, Medicare, TRICARE o VA use una tarjeta de copago o cupon del fabricante. Estos programas son solo para pacientes con seguro comercial o sin seguro. Si Medicaid deniega su medicamento, solicite el programa de asistencia al paciente basado en ingresos del fabricante en su lugar."
+      },
+      {
+        "question": "Que pasa si Medicaid deniega la cobertura de mi medicamento recetado?",
+        "answer": "Solicite el aviso de denegacion por escrito, que debe indicar el motivo y el plazo de apelacion. Presente una apelacion interna formal dentro de 60 dias con documentacion clinica adicional de su prescriptor. Pida una revision entre pares entre su prescriptor y el director medico del plan. Si la apelacion interna falla, solicite una audiencia justa de Medicaid a traves de su agencia estatal, un derecho federal que puede ejercer dentro de unos 90 dias de la denegacion."
+      },
+      {
+        "question": "El Precio Justo Maximo de la IRA afecta los precios de medicamentos de Medicaid?",
+        "answer": "No directamente para la mayoria de los medicamentos en 2026. El Precio Justo Maximo de la Ley de Reduccion de la Inflacion aplica a los precios de Medicare Parte B y Parte D para 10 medicamentos seleccionados a partir del 1 de enero de 2026, y no reemplaza la propia formula de reembolso estatutaria de Medicaid bajo la Seccion 1927. Medicaid tipicamente ya recibe un descuento significativo a traves de su reembolso minimo de marca del 23.1% mas reembolsos estatales suplementarios."
+      },
+      {
+        "question": "Cuanto cuesta un medicamento recetado sin Medicaid en el mostrador de la farmacia?",
+        "answer": "Depende mucho del medicamento. Un generico como la metformina cuesta alrededor de $4 a $20 por un suministro de 30 dias en cadenas principales como Walmart, Costco y Kroger en 2026. Un medicamento de marca especializado sin seguro puede costar $500 a $1,500 o mas por mes. Con Medicaid, ambos tienen el mismo copago nominal de $0 a $4 para un medicamento preferido."
+      },
+      {
+        "question": "Califico para la cobertura de medicamentos recetados de Medicaid, y que es la Lista de Medicamentos Preferidos?",
+        "answer": "Si califica para Medicaid segun los limites de ingresos de su estado, la cobertura de medicamentos recetados se incluye automaticamente; no hay una prueba de elegibilidad separada solo para medicamentos. La Lista de Medicamentos Preferidos (PDL) es la lista del estado de que medicamento especifico dentro de una clase esta cubierto sin autorizacion previa. Consulte los limites de ingresos de Medicaid para su estado y tamano de hogar."
+      },
+      {
+        "question": "Cual es la diferencia entre los beneficios de farmacia de Medicaid de tarifa por servicio y de atencion administrada?",
+        "answer": "Medicaid de tarifa por servicio paga directamente a las farmacias usando la propia Lista de Medicamentos Preferidos y reglas de autorizacion previa del estado. La atencion administrada de Medicaid dirige el beneficio de farmacia a traves de una organizacion de atencion administrada (MCO), que puede operar su propio formulario y proceso de autorizacion previa diferente al de la PDL estatal de tarifa por servicio. Ambos deben respetar los mismos limites federales de copago nominal de $4 para preferidos y $8 para no preferidos."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Limites de Ingresos de Medicaid"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Nivel Federal de Pobreza 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Medicare Extra Help 2026",
+        "es": "Ayuda Adicional de Medicare 2026"
+      },
+      "href": "/drug/medicare-extra-help"
+    },
+    {
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Medicas"
+      },
+      "href": "/medical-bill-analyzer"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Medicaid.gov: State Prescription Drug Resources",
+      "url": "https://www.medicaid.gov/medicaid/prescription-drugs/state-prescription-drug-resources",
+      "note": {
+        "en": "Federal guidance on the Medicaid outpatient drug benefit, Preferred Drug Lists, and state prior authorization rules.",
+        "es": "Guia federal sobre el beneficio de medicamentos ambulatorios de Medicaid, Listas de Medicamentos Preferidos y reglas estatales de autorizacion previa."
+      }
+    },
+    {
+      "name": "Social Security Act Section 1927 (Medicaid Drug Rebate Program statute)",
+      "url": "https://www.ssa.gov/OP_Home/ssact/title19/1927.htm",
+      "note": {
+        "en": "Statutory text establishing the Medicaid Drug Rebate Program, minimum rebate percentages, and drug coverage requirements.",
+        "es": "Texto legal que establece el Programa de Reembolso de Medicamentos de Medicaid, porcentajes minimos de reembolso y requisitos de cobertura."
+      }
+    },
+    {
+      "name": "eCFR: 42 CFR Part 447 Subpart A (cost sharing) and Subpart I (payment for drugs)",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-447",
+      "note": {
+        "en": "Federal regulation setting the nominal copay caps ($4 preferred / $8 non-preferred in 2026) and exempt populations.",
+        "es": "Reglamento federal que establece los limites de copago nominal ($4 preferido / $8 no preferido en 2026) y poblaciones exentas."
+      }
+    },
+    {
+      "name": "FDA: Drug Approvals and Databases",
+      "url": "https://www.fda.gov/drugs/drug-approvals-and-databases",
+      "note": {
+        "en": "FDA source for generic AB-rating equivalence determinations and biosimilar interchangeability designations referenced in state substitution laws.",
+        "es": "Fuente de la FDA para determinaciones de equivalencia de calificacion AB de genericos y designaciones de intercambiabilidad de biosimilares."
+      }
+    },
+    {
+      "name": "KFF: 5 Key Facts About Medicaid Prescription Drugs",
+      "url": "https://www.kff.org/medicaid/5-key-facts-about-medicaid-prescription-drugs/",
+      "note": {
+        "en": "Independent analysis of Medicaid drug spending, rebate structure, and state formulary variation.",
+        "es": "Analisis independiente del gasto en medicamentos de Medicaid, estructura de reembolso y variacion del formulario estatal."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Federal Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/poverty-guidelines",
+      "note": {
+        "en": "2026 federal poverty guidelines used for the 150% FPL Medicaid copay exemption threshold and manufacturer PAP income tables.",
+        "es": "Directrices federales de pobreza 2026 utilizadas para el umbral de exencion de copago de Medicaid del 150% del FPL y las tablas de ingresos de PAP."
+      }
+    },
+    {
+      "name": "NeedyMeds Patient Assistance Program Database",
+      "url": "https://www.needymeds.org/",
+      "note": {
+        "en": "Directory of manufacturer PAPs, drug discount cards, and state pharmaceutical assistance programs.",
+        "es": "Directorio de PAP de fabricantes, tarjetas de descuento de medicamentos y programas estatales de asistencia farmaceutica."
+      }
+    }
+  ]
+}
