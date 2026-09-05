@@ -1,9 +1,9 @@
 ---
-title: "Federal Poverty Level 2026 Chart: Income Limits by Household Size"
-description: "2026 FPL chart by household size. Find income limits for Medicaid, ACA subsidies, CHIP, WIC, and SNAP. Lookup tables for all 50 states."
+title: "ACA Subsidy Income Limits 2026: FPL Percentages by Household Size"
+description: "What percent of the federal poverty level you need for an ACA subsidy in 2026, by household size. Includes the Medicaid, CHIP, WIC, and SNAP cutoffs on the same chart."
 date: "2026-05-14"
 slug: "federal-poverty-level-chart"
-keywords: ["federal poverty level 2026 chart", "FPL 2026 by household size", "poverty guidelines 2026", "FPL chart household size", "income limits 2026"]
+keywords: ["aca subsidy income limits 2026", "fpl percentage for aca subsidy", "what percent of poverty level for obamacare", "aca subsidy household size 2026", "marketplace subsidy income chart 2026"]
 target: "screener"
 ---
 
