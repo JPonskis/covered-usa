@@ -3,8 +3,12 @@
 //
 // ARCHITECTURE (staging-branch flow, since 2026-05-15):
 //   1. Bulk producers write JSON files to the `drip-queue` git branch (NOT
-//      main). Vercel auto-deploys main only, so files on drip-queue stay
-//      hidden. This branch is the queue.
+//      main). Files on drip-queue stay hidden ONLY because the Vercel project's
+//      Ignored Build Step skips that branch (and the cloud runner's claude/*
+//      checkpoint branches): `case "$VERCEL_GIT_COMMIT_REF" in
+//      drip-queue|claude/*) exit 0;; *) exit 1;; esac`. Vercel's default is to
+//      preview-build EVERY branch, so removing that rule reintroduces a failed
+//      preview build (and an email) per checkpoint push. This branch is the queue.
 //   2. Producers mark Master Backlog rows Status=Ready in the Google Sheet
 //      once their JSON is on drip-queue.
 //   3. This cron (daily 02:00 UTC) reads Status=Ready rows, sorts by
