@@ -13,6 +13,7 @@ import {
   ReferenceTable,
   ScreenerCTA,
   AnalyzerCTA,
+  MmcCTA,
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
@@ -120,6 +121,14 @@ export default async function TriggerEventPage({ params }: PageProps) {
   };
 
   const CTAComponent = data.ctaTarget === 'analyzer' ? AnalyzerCTA : ScreenerCTA;
+
+  // MMC PRD Phase 3: this route mixes Medicare events (AEP, IEP, turning 65)
+  // with non-Medicare ones (lost job, turning 26), so the mid slot only goes to
+  // the Medicare Money Check when the event is actually a Medicare event.
+  const isMedicareEvent = /(^|-)(medicare|medigap|irmaa)(-|$)|65/.test(event);
+  const mmcAudience: 'drugs' | 'enrolled' = /part-d|drug|prescription|irmaa|medigap|extra-help/.test(event)
+    ? 'drugs'
+    : 'enrolled';
 
   const pageGraph = buildSchemaGraph(
     [medicalWebPageSchema, breadcrumbSchema, faqSchema, howToSchema],
@@ -309,7 +318,11 @@ export default async function TriggerEventPage({ params }: PageProps) {
         </div>
 
         {/* Mid-article CTA */}
-        <CTAComponent locale={locale} slug={`event-${event}-mid`} variant="inline" />
+        {isMedicareEvent ? (
+          <MmcCTA locale={locale} slug={`event-${event}`} audience={mmcAudience} medium="mid-cta" />
+        ) : (
+          <CTAComponent locale={locale} slug={`event-${event}-mid`} variant="inline" />
+        )}
 
         <div className="article-content">
           <h2>{isEs ? 'Errores comunes que cuestan a la gente miles' : 'Common Mistakes That Cost People Thousands'}</h2>

@@ -14,6 +14,7 @@ import {
   DatasetSchema,
   ScreenerCTA,
   AnalyzerCTA,
+  MmcCTA,
   type ReferenceTableCell,
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
@@ -360,12 +361,24 @@ export default async function MedicareAdvantageStatePage({
           )}
         </div>
 
-        {/* Mid-article CTA */}
-        <CTAComponent
-          locale={locale}
-          slug={`medicare-advantage-${state}-mid`}
-          variant="inline"
-        />
+        {/* Mid-article CTA — MMC PRD Phase 3: every page on this route is a
+            Medicare page, so the mid slot always goes to the Medicare Money
+            Check and the end slot keeps this site's own CTA. MmcCTA returns
+            null on es, so Spanish falls through to the normal CTA. */}
+        {locale === 'es' ? (
+          <CTAComponent
+            locale={locale}
+            slug={`medicare-advantage-${state}-mid`}
+            variant="inline"
+          />
+        ) : (
+          <MmcCTA
+            locale={locale}
+            slug={`medicare-advantage-${state}`}
+            audience="enrolled"
+            medium="mid-cta"
+          />
+        )}
 
         <div className="article-content">
           {/* What to look for */}
