@@ -25,8 +25,18 @@ function statusTextHeuristicMismatch(statusCell) {
   if (!statusCell || !statusCell.value || !statusCell.value.en) return null;
   const text = statusCell.value.en.toLowerCase();
   const status = statusCell.status;
-  // "yes" status should NOT contain explicit "no" or "varies"
-  if (status === 'yes' && /\b(no|varies|limited|partial|sometimes)\b/.test(text))
+  // "yes" status should NOT contain explicit "no" or "varies".
+  //
+  // The bare "no" is only a contradiction in VERDICT position — a cell that
+  // answers "No". Mid-sentence it is usually describing the absence of a
+  // BARRIER, which is the best possible news: "None; Alabama has no MSP asset
+  // test" is a correct `yes` (you are fine on assets) and matching \bno\b
+  // anywhere flagged it as a contradiction and parked the page. The hedges
+  // below still match anywhere, because "varies"/"limited"/"partial" genuinely
+  // do contradict a clean yes wherever they appear.
+  if (status === 'yes' && /^\s*no\b/.test(text))
+    return `status="yes" but text opens with "no": "${text}"`;
+  if (status === 'yes' && /\b(varies|limited|partial|sometimes)\b/.test(text))
     return `status="yes" but text contains "${text}"`;
   // "no" status should NOT contain explicit "yes" or "limited" or "partial"
   if (status === 'no' && /\b(yes|limited|partial|varies)\b/.test(text))
