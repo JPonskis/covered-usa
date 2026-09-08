@@ -53,12 +53,21 @@ export interface LocalizedFAQ {
 export interface CarrierRow {
   /** Carrier name as commonly known. Not localized — proper noun. */
   name: string;
-  /** Number of plans offered statewide. */
+  /** Number of plans offered statewide. Zero for a carrier that exited. */
   planCount: number;
-  /** Carrier-wide average Star Rating (1.0 to 5.0, half-step). */
-  averageStarRating: number;
-  /** Carrier-wide average monthly premium in USD. */
-  averagePremium: number;
+  /**
+   * Carrier-wide average Star Rating (1.0 to 5.0, half-step), or null when
+   * the carrier has no rated plans in the state. A carrier that exited has
+   * NO rating — it does not have a rating of zero, and rendering it as "0.0"
+   * reads as the worst possible CMS score. Renders as "—" when planCount is 0.
+   */
+  averageStarRating: number | null;
+  /**
+   * Carrier-wide average monthly premium in USD, or null when the carrier
+   * offers no plans. Zero here would read as "$0/mo" — i.e. the cheapest
+   * row on the table — for a carrier you cannot actually buy.
+   */
+  averagePremium: number | null;
   /** Optional carrier notes ("Dominant in NorCal; HMO-only", etc.). */
   notes?: LocalizedString;
 }
@@ -66,8 +75,18 @@ export interface CarrierRow {
 export interface MarketOverview {
   /** Plan year these stats describe (e.g., 2026). */
   dataYear: number;
-  /** Total MA plans available statewide. */
+  /** Total MA plans available statewide to INDIVIDUAL enrollees. */
   totalPlansAvailable: number;
+  /**
+   * Set true ONLY when the state genuinely has no individual-market MA plans
+   * (Alaska, 2026 — the only such state). This exists so that
+   * `totalPlansAvailable: 0` must be ASSERTED rather than inferred: for the
+   * other 50 files a zero means the writer's data fetch came back empty,
+   * which is a bug, not a fact. The validator requires this flag before it
+   * will accept a zero, and the page renders the no-market copy instead of
+   * claiming a $0 premium and a star rating for plans nobody can buy.
+   */
+  noIndividualMarket?: boolean;
   /** Enrolled MA beneficiaries statewide. */
   enrolledBeneficiaries: number;
   /** Statewide MA penetration rate (%) — MA enrollees / total Medicare eligibles. */
@@ -94,10 +113,18 @@ export interface PlanTypesSection {
 export interface CountyExample {
   /** County name as commonly known, e.g., "Los Angeles County". */
   county: LocalizedString;
-  /** Plans available in that county. */
+  /**
+   * Plans available in that county. Zero is a REAL value — rural counties
+   * in AK, MT, SD and VT genuinely have no MA plans offered, and that
+   * absence is usually the most useful fact in the table.
+   */
   planCount: number;
-  /** Average premium in that county (USD). */
-  averagePremium: number;
+  /**
+   * Average premium in that county (USD), or null where no plans are sold.
+   * With planCount 0 there is no average to report; "$0/mo" would read as
+   * free coverage in a county that has none. Renders as "—".
+   */
+  averagePremium: number | null;
   /** Optional shading: "urban", "rural", "mixed". */
   classification?: LocalizedString;
 }

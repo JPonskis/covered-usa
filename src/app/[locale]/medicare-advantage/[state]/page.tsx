@@ -109,13 +109,25 @@ export default async function MedicareAdvantageStatePage({
   const carrierHeaders = isEs
     ? ['Aseguradora', 'Planes', 'Calificación promedio', 'Prima promedio']
     : ['Carrier', 'Plans', 'Avg Star Rating', 'Avg Premium'];
+  // A carrier with no plans in the state (one that exited) has NO star
+  // rating and NO premium — not a rating of zero and not $0/mo. Rendering
+  // the raw numbers put "0.0" and "$0/mo" on the row, which reads as the
+  // cheapest, worst-rated plan on the table rather than "you cannot buy this".
+  const NOT_APPLICABLE = '—';
   const carrierRows: ReferenceTableCell[][] = data.marketOverview.topCarriers.map(
-    (c) => [
-      c.name,
-      c.planCount.toString(),
-      c.averageStarRating.toFixed(1),
-      `$${c.averagePremium.toFixed(0)}/mo`,
-    ]
+    (c) => {
+      const sold = c.planCount > 0;
+      return [
+        c.name,
+        c.planCount.toString(),
+        sold && c.averageStarRating != null
+          ? c.averageStarRating.toFixed(1)
+          : NOT_APPLICABLE,
+        sold && c.averagePremium != null
+          ? `$${c.averagePremium.toFixed(0)}/mo`
+          : NOT_APPLICABLE,
+      ];
+    }
   );
 
   // ─── Plan types table ──────────────────────────────────────────────
@@ -132,7 +144,12 @@ export default async function MedicareAdvantageStatePage({
     ? data.countyVariance.examples.map((ex) => [
         pickLocale(ex.county, locale),
         ex.planCount.toString(),
-        `$${ex.averagePremium.toFixed(0)}/mo`,
+        // Same rule as the carrier table: a county where no plans are sold
+        // has no average premium. "$0/mo" would advertise free coverage in
+        // a county that has none.
+        ex.planCount > 0 && ex.averagePremium != null
+          ? `$${ex.averagePremium.toFixed(0)}/mo`
+          : NOT_APPLICABLE,
       ])
     : null;
 
@@ -296,9 +313,17 @@ export default async function MedicareAdvantageStatePage({
           </h2>
 
           <p>
-            {isEs
-              ? `En ${data.marketOverview.dataYear}, ${stateName} tiene ${fmtNum(data.marketOverview.totalPlansAvailable)} planes de Medicare Advantage disponibles, con ${fmtNum(data.marketOverview.enrolledBeneficiaries)} beneficiarios inscritos (${data.marketOverview.penetrationPct.toFixed(0)}% de penetración). La prima mensual promedio es de $${data.marketOverview.averageMonthlyPremium.toFixed(0)} y la calificación promedio de estrellas es ${data.marketOverview.averageStarRating.toFixed(1)}.`
-              : `In ${data.marketOverview.dataYear}, ${stateName} has ${fmtNum(data.marketOverview.totalPlansAvailable)} Medicare Advantage plans available, with ${fmtNum(data.marketOverview.enrolledBeneficiaries)} beneficiaries enrolled (${data.marketOverview.penetrationPct.toFixed(0)}% MA penetration). The average monthly premium is $${data.marketOverview.averageMonthlyPremium.toFixed(0)} and the statewide average Star Rating is ${data.marketOverview.averageStarRating.toFixed(1)}.`}
+            {data.marketOverview.noIndividualMarket
+              ? // A state with no individual market has no average premium and
+                // no statewide star rating. The generic sentence rendered those
+                // as "$0" and a real-looking score, which reads as free, mediocre
+                // coverage rather than coverage you cannot buy at all.
+                isEs
+                ? `En ${data.marketOverview.dataYear}, ${stateName} no tiene planes de Medicare Advantage disponibles para inscripción individual. Alrededor de ${fmtNum(data.marketOverview.enrolledBeneficiaries)} beneficiarios tienen cobertura MA a través de planes grupales de empleador o sindicato (${data.marketOverview.penetrationPct.toFixed(1)}% de la población de Medicare del estado). El resto usa Medicare Original, por lo general con una póliza Medigap y un plan independiente de la Parte D.`
+                : `In ${data.marketOverview.dataYear}, ${stateName} has no Medicare Advantage plans available to individual enrollees. About ${fmtNum(data.marketOverview.enrolledBeneficiaries)} beneficiaries have MA coverage through employer or union group plans (${data.marketOverview.penetrationPct.toFixed(1)}% of the state's Medicare population). Everyone else uses Original Medicare, usually paired with a Medigap policy and a standalone Part D drug plan.`
+              : isEs
+                ? `En ${data.marketOverview.dataYear}, ${stateName} tiene ${fmtNum(data.marketOverview.totalPlansAvailable)} planes de Medicare Advantage disponibles, con ${fmtNum(data.marketOverview.enrolledBeneficiaries)} beneficiarios inscritos (${data.marketOverview.penetrationPct.toFixed(0)}% de penetración). La prima mensual promedio es de $${data.marketOverview.averageMonthlyPremium.toFixed(0)} y la calificación promedio de estrellas es ${data.marketOverview.averageStarRating.toFixed(1)}.`
+                : `In ${data.marketOverview.dataYear}, ${stateName} has ${fmtNum(data.marketOverview.totalPlansAvailable)} Medicare Advantage plans available, with ${fmtNum(data.marketOverview.enrolledBeneficiaries)} beneficiaries enrolled (${data.marketOverview.penetrationPct.toFixed(0)}% MA penetration). The average monthly premium is $${data.marketOverview.averageMonthlyPremium.toFixed(0)} and the statewide average Star Rating is ${data.marketOverview.averageStarRating.toFixed(1)}.`}
           </p>
 
           <div className="my-8">

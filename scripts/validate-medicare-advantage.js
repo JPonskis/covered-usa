@@ -210,8 +210,22 @@ function validateMAState(slug, data) {
       warn(
         `marketOverview.dataYear must be ${REQUIRED_DATA_YEAR} (got ${m.dataYear}); using stale-year data risks shipping wrong anchor facts`
       );
-    if (!isPositiveInt(m.totalPlansAvailable))
+    // Zero total plans is TRUE for exactly one state (Alaska has no
+    // individual-market MA plans at all) and is a silent data-fetch failure
+    // everywhere else. Distinguish the two by requiring the writer to assert
+    // it: a bare 0 is still rejected, a 0 + noIndividualMarket is accepted.
+    if (m.totalPlansAvailable === 0) {
+      if (m.noIndividualMarket !== true)
+        warn(
+          'marketOverview.totalPlansAvailable is 0 — set noIndividualMarket: true to assert the state genuinely has no individual-market plans, otherwise this is a failed data pull'
+        );
+    } else if (!isPositiveInt(m.totalPlansAvailable)) {
       warn('marketOverview.totalPlansAvailable must be a positive integer');
+    }
+    if (m.noIndividualMarket === true && m.totalPlansAvailable !== 0)
+      warn(
+        `marketOverview.noIndividualMarket is true but totalPlansAvailable is ${m.totalPlansAvailable}`
+      );
     if (!isPositiveInt(m.enrolledBeneficiaries))
       warn('marketOverview.enrolledBeneficiaries must be a positive integer');
     if (!isPercent(m.penetrationPct))
@@ -239,10 +253,36 @@ function validateMAState(slug, data) {
         } else {
           carrierPlanCountSum += c.planCount;
         }
-        if (!isStarRating(c.averageStarRating))
-          warn(`topCarriers[${i}].averageStarRating must be 1.0-5.0`);
-        if (!isNumber(c.averagePremium) || c.averagePremium < 0)
-          warn(`topCarriers[${i}].averagePremium must be a non-negative number`);
+        // A carrier with zero plans has EXITED the state. It has no star
+        // rating and no premium, so 0 / null / omitted are all acceptable
+        // there and the page renders "—". Demanding a 1.0-5.0 rating from a
+        // carrier that sells nothing is incoherent, and it silently parked
+        // Vermont — whose two exiting carriers are the story of the page.
+        const carrierSellsPlans = isNonNegativeInt(c.planCount) && c.planCount > 0;
+        if (carrierSellsPlans) {
+          if (!isStarRating(c.averageStarRating))
+            warn(`topCarriers[${i}].averageStarRating must be 1.0-5.0`);
+          if (!isNumber(c.averagePremium) || c.averagePremium < 0)
+            warn(
+              `topCarriers[${i}].averagePremium must be a non-negative number`
+            );
+        } else {
+          if (
+            c.averageStarRating != null &&
+            c.averageStarRating !== 0 &&
+            !isStarRating(c.averageStarRating)
+          )
+            warn(
+              `topCarriers[${i}].averageStarRating must be null, 0, or 1.0-5.0 when planCount is 0`
+            );
+          if (
+            c.averagePremium != null &&
+            (!isNumber(c.averagePremium) || c.averagePremium < 0)
+          )
+            warn(
+              `topCarriers[${i}].averagePremium must be null or a non-negative number when planCount is 0`
+            );
+        }
         if (
           isNumber(c.averagePremium) &&
           c.averagePremium > MONTHLY_PREMIUM_MAX
@@ -310,13 +350,27 @@ function validateMAState(slug, data) {
       cv.examples.forEach((e, i) => {
         if (!isLocalizedString(e.county))
           warn(`countyVariance.examples[${i}].county must be {en,es}`);
-        if (!isPositiveInt(e.planCount))
+        // Zero is a REAL value here, not a missing one: rural counties in
+        // AK, MT, SD and VT genuinely have no MA plans offered, and that
+        // absence is the most useful fact on a county-variance table. Use
+        // the non-negative check — isPositiveInt rejected 0 and silently
+        // parked four true pages.
+        if (!isNonNegativeInt(e.planCount))
           warn(
             `countyVariance.examples[${i}].planCount must be a non-negative integer`
           );
-        if (!isNumber(e.averagePremium) || e.averagePremium < 0)
+        // Same rule as topCarriers: no plans sold in the county means there
+        // is no average premium to report, so null is legitimate there.
+        if (
+          e.averagePremium != null &&
+          (!isNumber(e.averagePremium) || e.averagePremium < 0)
+        )
           warn(
             `countyVariance.examples[${i}].averagePremium must be a non-negative number`
+          );
+        if (e.averagePremium == null && isNonNegativeInt(e.planCount) && e.planCount > 0)
+          warn(
+            `countyVariance.examples[${i}].averagePremium is required when planCount > 0`
           );
         if (e.classification !== undefined && !isLocalizedString(e.classification))
           warn(`countyVariance.examples[${i}].classification must be {en,es}`);
