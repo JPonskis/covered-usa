@@ -65,6 +65,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedEntry('/medical-bill-analyzer', { changeFrequency: 'weekly', priority: 0.95 }),
     localizedEntry('/blog', { changeFrequency: 'daily', priority: 0.8 }),
     localizedEntry('/about', { changeFrequency: 'monthly', priority: 0.5 }),
+    localizedEntry('/editorial-standards', { changeFrequency: 'yearly', priority: 0.4 }),
+    localizedEntry('/contact', { changeFrequency: 'yearly', priority: 0.4 }),
     // Reference/data pages (AI citation optimized)
     localizedEntry('/medicaid-income-limits', { changeFrequency: 'yearly', priority: 0.8 }),
     localizedEntry('/medicare-eligibility', { changeFrequency: 'yearly', priority: 0.8 }),

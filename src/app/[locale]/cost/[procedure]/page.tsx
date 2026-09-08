@@ -18,6 +18,7 @@ import {
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
 import ReactMarkdown from 'react-markdown';
+import AdUnit from '@/components/ads/AdUnit';
 import {
   getAllProcedureSlugs,
   getProcedureBySlug,
@@ -248,6 +249,9 @@ export default async function ProcedureCostPage({ params }: PageProps) {
         {/* Mid-article CTA */}
         <AnalyzerCTA locale={locale} slug={`cost-${procedure}`} variant="inline" />
 
+        {/* Ads sit BELOW the mid CTA, never above it: conversion outranks ad revenue. */}
+        <AdUnit position="mid" />
+
         <div className="article-content">
           {/* Variant section (optional) */}
           {data.variants && variantHeaders && variantRows && (
@@ -326,6 +330,8 @@ export default async function ProcedureCostPage({ params }: PageProps) {
 
         {/* End CTA */}
         <AnalyzerCTA locale={locale} slug={`cost-${procedure}-end`} variant="inline" />
+
+        <AdUnit position="end" />
 
         {/* Related links */}
         {data.relatedLinks.length > 0 && (

@@ -8,6 +8,7 @@ import { buildSchemaGraph } from '@/lib/structured-data';
 import { setRequestLocale } from 'next-intl/server';
 import BlogDropCap from '@/components/BlogDropCap';
 import AuthorBio from '@/components/AuthorBio';
+import AdUnit from '@/components/ads/AdUnit';
 
 // ISR: cache blog pages for 1 week, build on-demand for new posts
 export const revalidate = 604800;
@@ -455,6 +456,11 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
           </div>
         )}
 
+        {/* Ads sit BELOW the mid CTA, never above it: conversion outranks ad
+            revenue. On a short post with no mid CTA there is no mid ad either,
+            because the first thing above it would be the article itself. */}
+        {showMidCta && <AdUnit position="mid" />}
+
         {showMidCta && (
           <div className="article-content">
             <MDXRemote
@@ -491,6 +497,8 @@ export default async function LocaleBlogPostPage({ params }: PageProps) {
             </svg>
           </Link>
         </div>
+
+        <AdUnit position="end" />
 
         {/* Related Posts */}
         {(() => {

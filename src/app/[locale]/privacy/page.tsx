@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 export async function generateMetadata({
@@ -21,6 +21,7 @@ export default async function PrivacyPolicy({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tp = await getTranslations({ locale, namespace: 'privacyPage' });
 
   return (
     <main className="min-h-screen bg-white">
@@ -32,7 +33,7 @@ export default async function PrivacyPolicy({
           Privacy Policy
         </h1>
         <p className="mb-10" style={{ color: 'var(--text-muted)' }}>
-          Last Updated: May 2026
+          Last Updated: September 2026
         </p>
 
         <div className="space-y-10 article-content">
@@ -78,14 +79,14 @@ export default async function PrivacyPolicy({
           <section>
             <h2>How We Share Your Information</h2>
             <p>
-              <strong>We do not sell your information to data brokers or marketing lists.</strong> We share your information only in the following circumstances:
+              <strong>We do not sell your personal information for money.</strong> Advertising cookies on our article pages may count as sharing under California law; see the Advertising section below. We share the information you give us only in the following circumstances:
             </p>
             <p>
-              <strong>With licensed insurance agents:</strong> If you choose to connect with an agent to help you enroll in coverage, we share your contact information and screener responses with licensed insurance professionals. This is the only sharing that may constitute a &quot;sale&quot; under California law. See our{' '}
+              <strong>With licensed insurance agents:</strong> If you choose to connect with an agent to help you enroll in coverage, we share your contact information and screener responses with licensed insurance professionals. Along with the advertising cookies described in the Advertising section below, this is the sharing that may constitute a &quot;sale&quot; or &quot;share&quot; under California law. See our{' '}
               <Link href={`/${locale}/do-not-sell`}>Do Not Sell</Link> page to opt out.
             </p>
             <p>
-              <strong>With service providers:</strong> We use third-party services to operate our website (hosting, analytics, error tracking). These providers only process your data on our behalf and are bound by confidentiality agreements.
+              <strong>With service providers:</strong> We use third-party services to operate our website (hosting, analytics, error tracking, and Google AdSense for advertising on article pages). Apart from Google AdSense, described in the Advertising section below, these providers only process your data on our behalf and are bound by confidentiality agreements.
             </p>
             <p>
               <strong>As required by law:</strong> We may disclose information if required by subpoena, court order, or other legal process.
@@ -110,7 +111,7 @@ export default async function PrivacyPolicy({
           <section>
             <h2>How Our Free Service Works</h2>
             <p>
-              CoveredUSA is free for users because we earn referral fees from insurance agents when users choose to connect with them. This is similar to how comparison websites and marketplaces work.
+              CoveredUSA is free for users because we earn referral fees from insurance agents when users choose to connect with them, and because our articles and guides carry display advertising. This is similar to how comparison websites and marketplaces work.
             </p>
             <p>
               <strong>Your eligibility results are yours regardless of what you do next.</strong> We never require you to speak with an agent or share your contact information to see your results.
@@ -142,8 +143,13 @@ export default async function PrivacyPolicy({
           <section>
             <h2>Cookies and Tracking</h2>
             <p>
-              We use cookies and similar tracking technologies to understand how visitors use our site and to improve the screener experience. We use analytics services such as Google Analytics. You can disable cookies in your browser settings, though this may affect site functionality.
+              We use cookies and similar tracking technologies to understand how visitors use our site and to improve the screener experience. We use analytics services such as Google Analytics. On our article and guide pages only, Google AdSense and its partners also set advertising cookies; see the Advertising section below. You can disable cookies in your browser settings, though this may affect site functionality.
             </p>
+          </section>
+
+          <section id="advertising">
+            <h2>{tp('advertisingHeading')}</h2>
+            <p>{tp('advertisingBody')}</p>
           </section>
 
           <section>

@@ -185,6 +185,16 @@ export default async function LocaleLayout({
                     Bill Analyzer
                   </Link>
                 </li>
+                <li>
+                  <Link href={`/${locale}/editorial-standards`} className="text-white/60 hover:text-white transition-colors">
+                    {tl('editorialStandards')}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={`/${locale}/contact`} className="text-white/60 hover:text-white transition-colors">
+                    {tl('contact')}
+                  </Link>
+                </li>
               </ul>
             </div>
 

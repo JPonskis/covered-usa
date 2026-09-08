@@ -19,6 +19,7 @@ import {
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
 import ReactMarkdown from 'react-markdown';
+import AdUnit from '@/components/ads/AdUnit';
 import {
   getAllQASlugs,
   getQABySlug,
@@ -273,6 +274,9 @@ export default async function QAPage({ params }: PageProps) {
           <CTAComponent locale={locale} slug={`qa-${question}-mid`} variant="inline" />
         )}
 
+        {/* Ads sit BELOW the mid CTA, never above it: conversion outranks ad revenue. */}
+        <AdUnit position="mid" />
+
         <div className="article-content">
           {/* Detail sections — render second half after mid CTA (per split rule above) */}
           {(() => {
@@ -327,6 +331,8 @@ export default async function QAPage({ params }: PageProps) {
 
         {/* End CTA */}
         <CTAComponent locale={locale} slug={`qa-${question}-end`} variant="inline" />
+
+        <AdUnit position="end" />
 
         {/* Related links */}
         {data.relatedLinks.length > 0 && (

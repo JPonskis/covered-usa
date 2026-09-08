@@ -19,6 +19,7 @@ import {
 } from '@/components/reference';
 import BlogDropCap from '@/components/BlogDropCap';
 import ReactMarkdown from 'react-markdown';
+import AdUnit from '@/components/ads/AdUnit';
 import {
   getAllDrugSlugs,
   getDrugBySlug,
@@ -351,6 +352,9 @@ export default async function DrugPage({ params }: PageProps) {
           <AnalyzerCTA locale={locale} slug={`drug-${drug}-mid`} variant="inline" />
         )}
 
+        {/* Ads sit BELOW the mid CTA, never above it: conversion outranks ad revenue. */}
+        <AdUnit position="mid" />
+
         <div className="article-content">
           {/* Patient Assistance Programs (optional) */}
           {data.patientAssistancePrograms && papRows && (
@@ -423,6 +427,8 @@ export default async function DrugPage({ params }: PageProps) {
 
         {/* End CTA */}
         <AnalyzerCTA locale={locale} slug={`drug-${drug}-end`} variant="inline" />
+
+        <AdUnit position="end" />
 
         {/* Related links */}
         {data.relatedLinks.length > 0 && (

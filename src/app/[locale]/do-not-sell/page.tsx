@@ -3,10 +3,12 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function DoNotSell() {
   const params = useParams();
   const locale = (params?.locale as string) || 'en';
+  const td = useTranslations('doNotSellPage');
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -41,7 +43,7 @@ export default function DoNotSell() {
           className="text-3xl font-bold mb-2"
           style={{ color: 'var(--text-primary)', fontFamily: 'var(--font-display)' }}
         >
-          Do Not Sell My Personal Information
+          Do Not Sell or Share My Personal Information
         </h1>
         <p className="mb-8" style={{ color: 'var(--text-muted)' }}>
           Your rights under the California Consumer Privacy Act (CCPA)
@@ -54,6 +56,7 @@ export default function DoNotSell() {
           <p>
             When you use our screener and choose to connect with a licensed insurance agent, we share your contact information and screener responses with that agent. This sharing may constitute a &quot;sale&quot; of personal information under CCPA.
           </p>
+          <p>{td('advertisingNote')}</p>
           <p>
             To opt out, enter your email address below. We will remove your information from any future data sharing with insurance agents and third-party partners within 15 business days.
           </p>
