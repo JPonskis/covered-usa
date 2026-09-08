@@ -86,6 +86,16 @@ If 2026 data isn't published yet for a specific number, you may use the most rec
 
 For each: `name` (proper noun, not localized), `planCount`, `averageStarRating`, `averagePremium`, optional `notes` (LocalizedString).
 
+**Carriers that EXITED the state.** List them — an exit is usually the most
+important thing that happened to that state's market, and readers who lost a
+plan are searching for exactly this. Give the carrier `planCount: 0` and set
+`averageStarRating` and `averagePremium` to `null` (or 0), because a carrier
+that sells nothing has no rating and no premium. Do NOT invent a rating for
+it: `0` used to render as "0.0 stars" and "$0/mo", which read as the cheapest
+row on the table for coverage nobody can buy. The page now renders "—" for
+both. Put the exit story (when, how many members displaced, why) in `notes`.
+A carrier with `planCount > 0` still requires a real 1.0-5.0 rating.
+
 **Carrier presence rules:**
 - **Kaiser Permanente** operates ONLY in: CA, CO, DC, GA, HI, MD, OR, VA, WA. Never list Kaiser in any other state.
 - **Common national carriers** to consider: UnitedHealthcare, Humana, Aetna (CVS), Anthem (Elevance), Cigna, WellCare (Centene), state Blue Cross plans where relevant.
@@ -193,12 +203,19 @@ This template is JSON, not markdown frontmatter — but the same hard fields app
 ### Required marketOverview fields
 
 - [ ] `dataYear` = 2026
-- [ ] `totalPlansAvailable` is a non-negative integer
+- [ ] `totalPlansAvailable` is a positive integer — UNLESS the state genuinely
+      has no individual-market MA plans, in which case use `0` **and** set
+      `noIndividualMarket: true` to assert that the zero is a researched fact.
+      Alaska is the only such state in 2026. Without the flag a bare `0` is
+      rejected, because in every other file it means your data pull came back
+      empty. Never set the flag to get past the gate: if you could not find the
+      plan count, that is a failed lookup, not a no-market state.
 - [ ] `enrolledBeneficiaries` is a non-negative integer
 - [ ] `penetrationPct` is between 0 and 100 (NOT 0–1)
 - [ ] `averageMonthlyPremium` is a non-negative number
 - [ ] `averageStarRating` is between 1.0 and 5.0
-- [ ] `topCarriers` has 5–10 rows, each fully populated, with `notes` containing geographic anchors
+- [ ] `topCarriers` has 5–10 rows, each fully populated, with `notes` containing geographic anchors — except carriers that exited, which carry `planCount: 0` and a null rating/premium (see "Carriers that EXITED the state" above)
+- [ ] `countyVariance.examples[].planCount` — `0` is a legitimate value and often the most useful row on the page (rural counties in AK, MT, SD and VT have no MA plans at all). Report the real zero rather than dropping the county, and set that county's `averagePremium` to `null`, since there is no average where nothing is sold
 - [ ] `source` is a non-empty string with the data source citation **AND includes the state name** (e.g., "KFF Medicare Advantage 2026 Florida Spotlight, CMS Medicare Plan Finder Q4 2025" — not bare "KFF Medicare Advantage 2026 Spotlight")
 
 ### Required other top-level fields

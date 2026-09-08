@@ -42,8 +42,17 @@ Run these BEFORE any WebSearch:
 5. `planTypes.rows[i]` cell counts match `planTypes.headers` cell count, for both en and es.
 6. Any `detailSections[].table` similarly checked.
 7. `marketOverview.penetrationPct` 0-100 (not 0.55 by mistake).
-8. `marketOverview.averageStarRating` and each `topCarriers[].averageStarRating` between 1.0 and 5.0.
+8. `marketOverview.averageStarRating` and each `topCarriers[].averageStarRating` between 1.0 and 5.0 —
+   EXCEPT a carrier with `planCount: 0`, which has exited the state and correctly carries a null (or 0)
+   rating and premium. Do not "fix" an exited carrier by inventing a rating, and do not delete the row:
+   the exit is usually the most important fact on the page. The site renders those cells as "—".
 9. State abbreviation matches the state name (CA = California, not CA = Colorado).
+10. `countyVariance.examples[].planCount` of `0` is a REAL value, not missing data — several rural
+    counties genuinely have no MA plans. Verify the zero against CMS/KFF like any other number, but
+    never flag it merely for being zero, and expect that county's `averagePremium` to be null.
+11. `marketOverview.totalPlansAvailable` of `0` is valid ONLY alongside `noIndividualMarket: true`
+    (Alaska, 2026 — the only state with no individual-market MA plans). A bare `0` without the flag
+    is a failed data pull: flag it, do not paper over it by guessing a plan count.
 
 **Internal contradiction → FLAG, never silently edit.** The writer drifting on a number in 4 different places means at most one of them is right; you can't pick.
 
@@ -87,7 +96,8 @@ If a carrier name looks invented or wrong-state → flag for review. Never auto-
 
 **Category D — Star Rating sanity:**
 
-- No carrier should have `averageStarRating > 5.0` or `< 1.0`.
+- No carrier with `planCount > 0` should have `averageStarRating > 5.0` or `< 1.0`. A carrier with
+  `planCount: 0` (exited the market) legitimately has no rating — leave it null/0, do not flag it.
 - 5-star plans are rare. If the writer claims a specific carrier in a state is "5.0 average," cross-check the CMS Star Ratings annual report. If they actually got 5, fine. If not, edit.
 
 **Category E — Source URLs:**
