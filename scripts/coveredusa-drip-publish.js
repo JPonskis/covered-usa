@@ -213,6 +213,33 @@ function stripYear(slug) {
 
 const norm = s => stripYear(String(s || '').toLowerCase());
 
+// Undo a dry run's promotions so `--dry-run` leaves the repo exactly as it
+// found it. Promoting uses `git checkout origin/drip-queue -- <path>`, which
+// writes the file AND stages it, so a dry run used to exit with a stack of
+// staged adds while printing "No writes performed" — untrue, and the next
+// real run inherited a dirty index. Unstage, then delete anything that isn't
+// on main (a promoted page is new to main by definition).
+function revertPromoted(relPaths) {
+  if (!relPaths || !relPaths.length) return;
+  for (const rel of relPaths) {
+    try {
+      execSync(`git restore --staged -- "${rel}"`, { cwd: REPO_ROOT, stdio: 'ignore' });
+    } catch (_) { /* best effort */ }
+    let onMain = true;
+    try {
+      execSync(`git cat-file -e "HEAD:${rel}"`, { cwd: REPO_ROOT, stdio: 'ignore' });
+    } catch (_) { onMain = false; }
+    if (onMain) {
+      try {
+        execSync(`git restore --worktree -- "${rel}"`, { cwd: REPO_ROOT, stdio: 'ignore' });
+      } catch (_) { /* best effort */ }
+    } else {
+      try { fs.unlinkSync(path.join(REPO_ROOT, rel)); } catch (_) { /* already gone */ }
+    }
+  }
+  console.log(`  [dry-run] Reverted ${relPaths.length} promoted file(s); repo left untouched.`);
+}
+
 // Does a path exist on origin/drip-queue? (no working-tree changes)
 function existsOnDripQueue(relPath) {
   try {
@@ -695,7 +722,11 @@ async function main() {
   const toShip = resolved.slice(0, limit);
 
   // Promote the chosen files from drip-queue into main's working tree.
+  // NOTE: `git checkout origin/drip-queue -- <path>` also STAGES the file.
+  // A dry run has to promote (the build gate validates the promoted tree),
+  // so it must undo the promotion before it exits — see revertPromoted().
   const shipReady = [];
+  const promotedPaths = [];
   for (const { row, res, actualRoute, liveUrl } of toShip) {
     const absPath = path.join(REPO_ROOT, res.relPath);
     if (res.source === 'drip' && !fs.existsSync(absPath)) {
@@ -703,6 +734,7 @@ async function main() {
         execSync(`git checkout origin/drip-queue -- "${res.relPath}"`, {
           cwd: REPO_ROOT, stdio: ['ignore', 'pipe', 'pipe'], encoding: 'utf8',
         });
+        promotedPaths.push(res.relPath);
         console.log(`  [↓] Promoted from drip-queue: ${res.relPath}`);
       } catch (e) { /* fall through to existence check */ }
     }
@@ -799,11 +831,13 @@ async function main() {
   }
 
   if (!shipReady.length) {
+    if (DRY) revertPromoted(promotedPaths);
     console.log('\n[done] Nothing valid to ship after filtering. (See SKIPs above.)');
     return;
   }
 
   if (DRY) {
+    revertPromoted(promotedPaths);
     console.log('\n[dry-run] Would commit + push + IndexNow + sheet-update for the SHIP rows above. No writes performed.');
     return;
   }
