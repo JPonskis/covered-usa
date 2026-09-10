@@ -1,0 +1,329 @@
+{
+  "slug": "medicare-dual-eligible-delaware",
+  "subtype": "state-eligibility",
+  "pageType": "eligibility",
+  "topicCluster": "medicaid-eligibility-delaware",
+  "stateBrand": "Delaware Medicaid",
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "question": {
+    "en": "What Do Dual Eligible Medicare and Medicaid Beneficiaries Get in Delaware? (2026)",
+    "es": "¿Qué Reciben los Beneficiarios de Doble Elegibilidad de Medicare y Medicaid en Delaware? (2026)"
+  },
+  "shortAnswer": {
+    "en": "It depends: full duals get Medicaid extras; partial duals get Medicare cost help.",
+    "es": "Depende: los duales completos reciben extras de Medicaid; los parciales solo ayuda con costos."
+  },
+  "fullAnswer": {
+    "en": "It depends on which dual eligible category applies to you in Delaware. Full-benefit dual eligibles get comprehensive Delaware Medicaid coverage on top of Medicare, including long-term care, dental, transportation, and personal care that Medicare does not cover. Partial duals, who qualify only for a Medicare Savings Program (QMB, SLMB, or QI), get help paying Medicare Part B premiums and, for QMB enrollees, deductibles and coinsurance too. Income and asset status determine which category you fall into.",
+    "es": "Depende de la categoría de doble elegibilidad que le corresponda en Delaware. Los duales de beneficio completo reciben cobertura integral de Delaware Medicaid además de Medicare, incluyendo cuidado a largo plazo, dental, transporte y cuidado personal que Medicare no cubre. Los duales parciales, que solo califican para un Programa de Ahorros de Medicare (QMB, SLMB o QI), reciben ayuda para pagar la prima de la Parte B de Medicare y, para los inscritos en QMB, también deducibles y coseguro. Los ingresos y el estado de activos determinan a qué categoría pertenece."
+  },
+  "category": "Medicaid",
+  "topic": "Dual Eligible Medicare and Medicaid Benefits Delaware 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-09-10",
+  "readingTime": "9 min read",
+
+  "keyTerms": {
+    "en": ["dual eligible Delaware", "Delaware Medicare and Medicaid", "QMB Delaware", "Delaware Medicare Savings Program", "Diamond State Health Plan dual eligible", "Delaware DMMA dual eligible"],
+    "es": ["doble elegibilidad Delaware", "Medicare y Medicaid Delaware", "QMB Delaware", "Programa de Ahorros de Medicare Delaware", "Diamond State Health Plan doble elegible", "DMMA Delaware doble elegible"]
+  },
+
+  "meta": {
+    "title": {
+      "en": "Dual Eligible Medicare and Medicaid in Delaware 2026 | CoveredUSA",
+      "es": "Doble Elegibilidad Medicare y Medicaid en Delaware 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Delaware dual eligibles get Medicare plus Medicaid. See 2026 income limits for QMB, SLMB, QI, and full Delaware Medicaid, what each covers, and how DMMA processes applications.",
+      "es": "Los duales de Delaware reciben Medicare y Medicaid. Vea los límites de ingresos 2026 para QMB, SLMB, QI y Delaware Medicaid completo, qué cubre cada uno, y cómo procesa DMMA las solicitudes."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Dual Eligible Medicare and Medicaid in Delaware: What You Get (2026)",
+      "es": "Doble Elegibilidad Medicare y Medicaid en Delaware: Qué Recibe (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Delaware residents enrolled in both Medicare and Medicaid are called dual eligibles, and the Division of Medicaid and Medical Assistance (DMMA) at the Delaware Department of Health and Social Services runs the Medicaid side of that pairing. In 2026, roughly 30,000 to 35,000 Delawareans fall into one of two dual eligible categories: full-benefit duals, who qualify for complete Delaware Medicaid coverage under the Diamond State Health Plan, and partial duals, who qualify only for a Medicare Savings Program (MSP) that pays some or all of their Medicare costs.",
+      "es": "Los residentes de Delaware inscritos tanto en Medicare como en Medicaid se llaman duales elegibles, y la División de Medicaid y Asistencia Médica (DMMA) del Departamento de Salud y Servicios Sociales de Delaware administra el lado de Medicaid de esa combinación. En 2026, aproximadamente 30,000 a 35,000 residentes de Delaware caen en una de dos categorías de doble elegibilidad: duales de beneficio completo, que califican para la cobertura completa de Delaware Medicaid bajo el Diamond State Health Plan, y duales parciales, que solo califican para un Programa de Ahorros de Medicare (MSP) que paga parte o la totalidad de sus costos de Medicare."
+    },
+    {
+      "en": "Which category applies depends almost entirely on income and, for some pathways, assets. This guide breaks down Delaware's 2026 income limits by household size for the Medicare Savings Programs, explains exactly what full duals versus partial duals get, and walks through how to apply through Delaware ASSIST or DMMA directly. For general dual eligible rules outside Delaware, see [can I have both Medicare and Medicaid](/qa/can-i-have-both-medicare-and-medicaid).",
+      "es": "La categoría que le corresponde depende casi por completo de los ingresos y, para algunas vías, de los activos. Esta guía detalla los límites de ingresos 2026 de Delaware por tamaño del hogar para los Programas de Ahorros de Medicare, explica exactamente qué reciben los duales completos frente a los parciales, y describe cómo solicitar a través de Delaware ASSIST o directamente con DMMA."
+    }
+  ],
+
+  "householdSizeTable": {
+    "caption": {
+      "en": "Delaware QMB (Medicare Savings Program) Income Limits by Household Size, 2026",
+      "es": "Límites de Ingresos QMB (Programa de Ahorros de Medicare) de Delaware por Tamaño del Hogar, 2026"
+    },
+    "year": 2026,
+    "rows": [
+      {"size": "1", "incomeLimit": {"en": "$16,200/year ($1,350/month)", "es": "$16,200/año ($1,350/mes)"}, "notes": {"en": "Single Medicare beneficiary", "es": "Beneficiario de Medicare soltero"}},
+      {"size": "2", "incomeLimit": {"en": "$21,888/year ($1,824/month)", "es": "$21,888/año ($1,824/mes)"}, "notes": {"en": "Married couple, both or one on Medicare", "es": "Pareja casada, ambos o uno con Medicare"}},
+      {"size": "3", "incomeLimit": {"en": "$27,560/year ($2,297/month)", "es": "$27,560/año ($2,297/mes)"}, "notes": {"en": "Uncommon; applies when a dependent counts in the household", "es": "Poco común; aplica cuando un dependiente cuenta en el hogar"}},
+      {"size": "4", "incomeLimit": {"en": "$33,240/year ($2,770/month)", "es": "$33,240/año ($2,770/mes)"}},
+      {"size": "5", "incomeLimit": {"en": "$38,920/year ($3,243/month)", "es": "$38,920/año ($3,243/mes)"}},
+      {"size": "6", "incomeLimit": {"en": "$44,600/year ($3,717/month)", "es": "$44,600/año ($3,717/mes)"}},
+      {"size": "7", "incomeLimit": {"en": "$50,280/year ($4,190/month)", "es": "$50,280/año ($4,190/mes)"}},
+      {"size": "8", "incomeLimit": {"en": "$55,960/year ($4,663/month)", "es": "$55,960/año ($4,663/mes)"}},
+      {"size": "Each additional", "incomeLimit": {"en": "Add $5,680/year ($473/month) per person", "es": "Agregar $5,680/año ($473/mes) por persona"}}
+    ],
+    "footnote": {
+      "en": "Figures are the Qualified Medicare Beneficiary (QMB) test: 100% of the 2026 federal poverty level plus a $20 monthly income disregard. QMB is the broadest Delaware Medicare Savings Program; SLMB reaches 120% FPL ($1,616/month for one person, $2,184 for a couple) and QI reaches 135% FPL ($1,816/month for one person, $2,455 for a couple). Delaware is one of a small group of states, along with Alabama, Arizona, Connecticut, DC, Louisiana, Maine, Mississippi, New Mexico, New York, Oregon, and Vermont, that has eliminated the MSP asset test entirely, so resources do not count against QMB, SLMB, or QI eligibility. Household sizes above 2 are rare for MSP applicants since most are individuals or married couples, but DMMA applies the same federal poverty level formula when dependents are part of the household.",
+      "es": "Las cifras corresponden a la prueba del Beneficiario Calificado de Medicare (QMB): 100% del nivel federal de pobreza 2026 más un descuento de ingreso mensual de $20. QMB es el Programa de Ahorros de Medicare más amplio de Delaware; SLMB llega al 120% del FPL ($1,616/mes para una persona, $2,184 para una pareja) y QI llega al 135% del FPL ($1,816/mes para una persona, $2,455 para una pareja). Delaware es uno de un grupo reducido de estados, junto con Alabama, Arizona, Connecticut, DC, Luisiana, Maine, Misisipi, Nuevo México, Nueva York, Oregón y Vermont, que ha eliminado por completo la prueba de activos de MSP."
+    },
+    "source": "Delaware DMMA Medicare Savings Program guidelines; HHS ASPE 2026 Federal Poverty Guidelines"
+  },
+
+  "howToApply": {
+    "govStartingUrl": "https://assist.dhss.delaware.gov",
+    "deadline": {
+      "en": "Year-round. Delaware Medicaid and the Medicare Savings Programs have no open enrollment window; you can apply any month.",
+      "es": "Todo el año. Delaware Medicaid y los Programas de Ahorros de Medicare no tienen período de inscripción abierta; puede solicitar en cualquier mes."
+    },
+    "numberedSteps": [
+      {"en": "Go to Delaware ASSIST at assist.dhss.delaware.gov and create a self-service account, or call the DMMA Medicaid Central Intake Unit at 1-866-940-8963 to apply by phone.", "es": "Vaya a Delaware ASSIST en assist.dhss.delaware.gov y cree una cuenta de autoservicio, o llame a la Unidad de Admisión Central de Medicaid de DMMA al 1-866-940-8963 para solicitar por teléfono."},
+      {"en": "Select the Medicaid application and indicate that you have Medicare (or are about to become eligible). This routes your file into the correct dual eligible category, full Medicaid or Medicare Savings Program only.", "es": "Seleccione la solicitud de Medicaid e indique que tiene Medicare (o que está por ser elegible). Esto dirige su expediente a la categoría de doble elegibilidad correcta, Medicaid completo o solo Programa de Ahorros de Medicare."},
+      {"en": "Enter household income, resources (if applying for full Medicaid; DMMA does not ask for resources on MSP-only applications), and Medicare enrollment details from your Medicare card.", "es": "Ingrese los ingresos del hogar, los recursos (si solicita Medicaid completo; DMMA no pide recursos en solicitudes solo de MSP) y los detalles de inscripción de Medicare de su tarjeta."},
+      {"en": "Upload supporting documents through Delaware ASSIST or mail them to your local DMMA office. DMMA may request additional verification within 30 days.", "es": "Cargue los documentos de respaldo a través de Delaware ASSIST o envíelos por correo a su oficina local de DMMA. DMMA puede solicitar verificación adicional dentro de 30 días."},
+      {"en": "Wait for your eligibility notice. DMMA is required to process most applications within 45 days (90 days if a disability determination is needed). If approved for a Medicare Savings Program, DMMA notifies the Social Security Administration to stop deducting the Part B premium from your Social Security check.", "es": "Espere su aviso de elegibilidad. DMMA debe procesar la mayoría de las solicitudes en 45 días (90 días si se necesita una determinación de discapacidad). Si es aprobado para un Programa de Ahorros de Medicare, DMMA notifica a la Administración del Seguro Social para dejar de deducir la prima de la Parte B de su cheque del Seguro Social."}
+    ],
+    "documentsNeeded": [
+      {"en": "Medicare card or proof of pending Medicare enrollment", "es": "Tarjeta de Medicare o prueba de inscripción pendiente en Medicare"},
+      {"en": "Photo ID (driver's license, state ID, or passport)", "es": "Identificación con foto (licencia de conducir, identificación estatal o pasaporte)"},
+      {"en": "Social Security number", "es": "Número de Seguro Social"},
+      {"en": "Proof of income for the past 30 days (Social Security award letter, pension statement, pay stubs)", "es": "Prueba de ingresos de los últimos 30 días (carta de adjudicación del Seguro Social, estado de pensión, talones de pago)"},
+      {"en": "Proof of Delaware residency (utility bill, lease, or bank statement)", "es": "Prueba de residencia en Delaware (factura de servicios, contrato de arrendamiento o estado de cuenta bancario)"},
+      {"en": "Bank statements and asset documentation, only required if applying for full Medicaid (not required for QMB, SLMB, or QI)", "es": "Estados de cuenta bancarios y documentación de activos, solo requeridos si solicita Medicaid completo (no se requiere para QMB, SLMB o QI)"}
+    ],
+    "commonDenialReasons": [
+      {"en": "Income above the applicable threshold: QMB, SLMB, and QI each have a hard income ceiling at 100%, 120%, and 135% of the 2026 federal poverty level. Even $1 over the limit results in denial for that specific program, though a lower tier may still apply.", "es": "Ingresos por encima del umbral aplicable: QMB, SLMB y QI tienen un límite de ingresos estricto al 100%, 120% y 135% del nivel federal de pobreza 2026. Incluso $1 por encima del límite resulta en denegación para ese programa específico."},
+      {"en": "Assets above the limit for full Medicaid: unlike the Medicare Savings Programs, full Delaware Medicaid for aged, blind, or disabled applicants still applies an asset test, generally $2,000 for an individual.", "es": "Activos por encima del límite para Medicaid completo: a diferencia de los Programas de Ahorros de Medicare, Delaware Medicaid completo para solicitantes de edad avanzada, ciegos o discapacitados aún aplica una prueba de activos, generalmente $2,000 para un individuo."},
+      {"en": "Missing Medicare enrollment proof: DMMA cannot approve a Medicare Savings Program application without confirmation that you are enrolled in or about to enroll in Medicare Part A.", "es": "Falta de prueba de inscripción en Medicare: DMMA no puede aprobar una solicitud de Programa de Ahorros de Medicare sin confirmación de que está inscrito o a punto de inscribirse en la Parte A de Medicare."},
+      {"en": "Incomplete or missing documentation: applications are frequently delayed or denied when income verification, identity documents, or Medicare information is missing.", "es": "Documentación incompleta o faltante: las solicitudes se retrasan o deniegan con frecuencia cuando falta verificación de ingresos, documentos de identidad o información de Medicare."},
+      {"en": "Residency not verified: DMMA requires proof of current Delaware residency; out-of-date or mismatched addresses commonly trigger denials.", "es": "Residencia no verificada: DMMA requiere prueba de residencia actual en Delaware; las direcciones desactualizadas o no coincidentes provocan denegaciones con frecuencia."}
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Your Dual Eligible Category Decides What You Get",
+        "es": "Respuesta Directa: Su Categoría de Doble Elegibilidad Decide Qué Recibe"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on your dual eligible category in Delaware. Full-benefit duals get complete Delaware Medicaid coverage on top of Medicare, including long-term care, dental, transportation, and personal care Medicare does not cover. Partial duals, who qualify only for a Medicare Savings Program (QMB, SLMB, or QI), get help with the Medicare Part B premium and, for QMB enrollees, deductibles and coinsurance too. Your household income against the 2026 federal poverty level decides which group applies.",
+          "es": "Depende de su categoría de doble elegibilidad en Delaware. Los duales de beneficio completo reciben cobertura completa de Delaware Medicaid además de Medicare, incluyendo cuidado a largo plazo, dental, transporte y cuidado personal que Medicare no cubre. Los duales parciales, que solo califican para un Programa de Ahorros de Medicare (QMB, SLMB o QI), reciben ayuda con la prima de la Parte B de Medicare y, para los inscritos en QMB, también deducibles y coseguro. Sus ingresos del hogar frente al nivel federal de pobreza 2026 deciden qué grupo le corresponde."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Full Dual Eligibles Get in Delaware",
+        "es": "Qué Reciben los Duales de Beneficio Completo en Delaware"
+      },
+      "paragraphs": [
+        {
+          "en": "Full-benefit dual eligibles in Delaware receive Medicare as their primary insurance and Delaware Medicaid as a wraparound. Medicaid pays Medicare's Part B premium ($202.90/month in 2026), the Part A inpatient deductible ($1,736 per benefit period in 2026), the Part B deductible ($283 in 2026), and the 20% coinsurance Original Medicare leaves behind. On top of that, Delaware Medicaid covers services Medicare does not, including long-term nursing facility care, home and community-based services through the Diamond State Health Plan Plus waiver, non-emergency medical transportation, adult dental care, and personal care assistance.",
+          "es": "Los duales de beneficio completo en Delaware reciben Medicare como seguro principal y Delaware Medicaid como cobertura complementaria. Medicaid paga la prima de la Parte B de Medicare ($202.90/mes en 2026), el deducible de hospitalización de la Parte A ($1,736 por período de beneficios en 2026), el deducible de la Parte B ($283 en 2026), y el coseguro del 20% que Medicare Original deja sin cubrir."
+        },
+        {
+          "en": "Delaware determines full Medicaid dual eligibility for most aged, blind, and disabled applicants through the SSI-linked pathway rather than the MAGI (Modified Adjusted Gross Income) rules used for ACA expansion adults. Anyone approved for Supplemental Security Income automatically qualifies for full Delaware Medicaid. The 2026 SSI federal benefit rate is about $994/month for an individual and $1,491/month for a couple. Delawareans needing nursing home or home and community-based long-term care can qualify at a higher standard, $2,982/month (300% of the SSI federal benefit rate) for a single applicant in 2026, with a $2,000 countable asset limit. Delaware is an income-cap state, so applicants over that limit generally need a Qualified Income Trust (sometimes called a Miller Trust) to become eligible.",
+          "es": "Delaware determina la doble elegibilidad completa de Medicaid para la mayoría de los solicitantes de edad avanzada, ciegos o discapacitados a través de la vía vinculada al SSI, en lugar de las reglas MAGI (Ingreso Bruto Ajustado Modificado) usadas para adultos de expansión ACA. Cualquiera aprobado para Seguridad de Ingreso Suplementario califica automáticamente para Delaware Medicaid completo. La tasa federal de beneficio SSI 2026 es aproximadamente $994/mes para un individuo y $1,491/mes para una pareja."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Partial Duals Get: QMB, SLMB, and QI Explained",
+        "es": "Qué Reciben los Duales Parciales: QMB, SLMB y QI Explicados"
+      },
+      "paragraphs": [
+        {
+          "en": "Delaware DMMA administers three Medicare Savings Programs for residents whose income is too high for full Medicaid but still limited. QMB (Qualified Medicare Beneficiary) is the most comprehensive: it pays the Part B premium plus the Part A and Part B deductibles, coinsurance, and copays, and federal law bars Delaware providers from billing QMB enrollees for those amounts. SLMB (Specified Low-Income Medicare Beneficiary) and QI (Qualifying Individual) pay only the Part B premium, worth $2,434.80 per year in 2026, but do not cover deductibles or coinsurance.",
+          "es": "DMMA de Delaware administra tres Programas de Ahorros de Medicare para residentes cuyos ingresos son demasiado altos para Medicaid completo pero aún limitados. QMB (Beneficiario Calificado de Medicare) es el más completo: paga la prima de la Parte B más los deducibles, coseguro y copagos de las Partes A y B, y la ley federal prohíbe a los proveedores de Delaware facturar a los inscritos en QMB por esos montos."
+        },
+        {
+          "en": "Delaware has eliminated the asset test for all three Medicare Savings Programs, so a partial dual's savings, retirement accounts, or a second vehicle will not disqualify them. Only income against the 2026 federal poverty level matters. QI has one added wrinkle: it is funded through a capped annual federal allocation, so DMMA processes QI applications on a first-come, first-served basis each year and existing QI enrollees get renewal priority over new applicants once the yearly funding is exhausted.",
+          "es": "Delaware ha eliminado la prueba de activos para los tres Programas de Ahorros de Medicare, por lo que los ahorros de un dual parcial, las cuentas de jubilación o un segundo vehículo no lo descalificarán. Solo importan los ingresos frente al nivel federal de pobreza 2026. QI tiene una particularidad adicional: se financia a través de una asignación federal anual limitada."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Delaware Medicare Savings Programs comparison, 2026",
+          "es": "Comparación de los Programas de Ahorros de Medicare de Delaware, 2026"
+        },
+        "headers": {
+          "en": ["Program", "Income limit (individual, 2026)", "What it pays"],
+          "es": ["Programa", "Límite de ingresos (individual, 2026)", "Qué paga"]
+        },
+        "rows": [
+          {"en": ["QMB", "100% FPL ($1,350/month)", "Part B premium, Part A/B deductibles, coinsurance, and copays"], "es": ["QMB", "100% del FPL ($1,350/mes)", "Prima de la Parte B, deducibles de las Partes A/B, coseguro y copagos"]},
+          {"en": ["SLMB", "120% FPL ($1,616/month)", "Part B premium only"], "es": ["SLMB", "120% del FPL ($1,616/mes)", "Solo la prima de la Parte B"]},
+          {"en": ["QI", "135% FPL ($1,816/month)", "Part B premium only; capped annual federal funding"], "es": ["QI", "135% del FPL ($1,816/mes)", "Solo la prima de la Parte B; financiamiento federal anual limitado"]},
+          {"en": ["Full Delaware Medicaid", "SSI-linked, about $994/month", "Everything above plus long-term care, dental, transportation, personal care"], "es": ["Delaware Medicaid completo", "Vinculado al SSI, aprox. $994/mes", "Todo lo anterior más cuidado a largo plazo, dental, transporte, cuidado personal"]}
+        ],
+        "footnote": {
+          "en": "Income limits reflect 2026 federal poverty guidelines plus the $20 monthly disregard applied by DMMA. Delaware has no asset test for QMB, SLMB, or QI.",
+          "es": "Los límites de ingresos reflejan las pautas de pobreza federal 2026 más el descuento mensual de $20 aplicado por DMMA. Delaware no tiene prueba de activos para QMB, SLMB o QI."
+        },
+        "source": "Delaware DMMA; Medicare.gov Medicare Savings Programs"
+      }
+    },
+    {
+      "heading": {
+        "en": "Delaware Medicaid Managed Care and D-SNP Changes for Dual Eligibles in 2026",
+        "es": "Cambios en la Atención Administrada de Delaware Medicaid y D-SNP para Duales en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Delaware full-benefit dual eligibles typically enroll in a Diamond State Health Plan managed care organization, either AmeriHealth Caritas Delaware, Delaware First Health, or Highmark Health Options, which coordinates the Medicaid wraparound benefits. Many full duals also choose a Medicare Dual Eligible Special Needs Plan (D-SNP), a type of Medicare Advantage plan built specifically to combine Medicare and Medicaid benefits into one card and one care team.",
+          "es": "Los duales de beneficio completo de Delaware normalmente se inscriben en una organización de atención administrada del Diamond State Health Plan, ya sea AmeriHealth Caritas Delaware, Delaware First Health o Highmark Health Options, que coordina los beneficios complementarios de Medicaid. Muchos duales completos también eligen un Plan de Necesidades Especiales de Doble Elegibilidad (D-SNP) de Medicare."
+        },
+        {
+          "en": "Effective January 1, 2026, Delaware requires D-SNPs to be exclusively aligned, meaning the Medicare company offering the D-SNP must also hold a Delaware Medicaid managed care contract from the same parent company. Only AmeriHealth VIP Care, Delaware First Health (Wellcare), and Highmark Health Options Duals meet that requirement as of 2026. Aetna, Cigna, and United D-SNPs exited the Delaware market, and enrollees in those plans had to pick a new D-SNP or Original Medicare during the Medicare Annual Enrollment Period, October 15 through December 7, 2025.",
+          "es": "A partir del 1 de enero de 2026, Delaware requiere que los D-SNP estén exclusivamente alineados, lo que significa que la compañía de Medicare que ofrece el D-SNP también debe tener un contrato de atención administrada de Delaware Medicaid de la misma empresa matriz. Solo AmeriHealth VIP Care, Delaware First Health (Wellcare) y Highmark Health Options Duals cumplen ese requisito a partir de 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Is Delaware a Medicaid Expansion State?",
+        "es": "¿Es Delaware un Estado de Expansión de Medicaid?"
+      },
+      "paragraphs": [
+        {
+          "en": "Delaware expanded Medicaid under the Affordable Care Act effective January 1, 2014, one of the original expansion states, so working-age Delawareans do not fall into the ACA gap that traps adults in the 10 non-expansion states. Adults ages 19 to 64 with MAGI household income at or below 138% of the 2026 federal poverty level ($22,025/year for one person, $45,540/year for a family of four) qualify for expansion Medicaid. This expansion pathway is separate from the dual eligible pathways described above: expansion adults are usually under 65 and not yet on Medicare, while dual eligibility applies once someone has Medicare, most often at 65 or due to a qualifying disability.",
+          "es": "Delaware expandió Medicaid bajo la Ley de Cuidado de Salud a Bajo Precio a partir del 1 de enero de 2014, uno de los estados de expansión originales, por lo que no existe una brecha de cobertura ACA para los residentes de Delaware en edad laboral. Los adultos de 19 a 64 años con ingresos del hogar MAGI iguales o inferiores al 138% del nivel federal de pobreza 2026 ($22,025/año para una persona, $45,540/año para una familia de cuatro) califican para Medicaid de expansión."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Apply for Dual Eligible Benefits in Delaware",
+        "es": "Cómo Solicitar Beneficios de Doble Elegibilidad en Delaware"
+      },
+      "paragraphs": [
+        {
+          "en": "DMMA accepts dual eligible applications year-round through Delaware ASSIST at assist.dhss.delaware.gov, by phone through the Medicaid Central Intake Unit at 1-866-940-8963, in person at a DMMA field office, or by mail. Marking that you already have Medicare, or are within three months of turning 65, routes the application correctly and speeds up processing. The application also asks about household composition, since a spouse's income or an ineligible spouse's earnings can affect the couple income limit. General questions can go to DMMA Customer Relations at 1-866-843-7212 or (302) 571-4900. See the full numbered steps, document checklist, and common denial reasons above.",
+          "es": "DMMA acepta solicitudes de doble elegibilidad durante todo el año a través de Delaware ASSIST en assist.dhss.delaware.gov, por teléfono a través de la Unidad de Admisión Central de Medicaid al 1-866-940-8963, en persona en una oficina local de DMMA, o por correo. Las preguntas generales pueden dirigirse a Relaciones con el Cliente de DMMA al 1-866-843-7212 o (302) 571-4900."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Appeal a Delaware Dual Eligible Denial",
+        "es": "Cómo Apelar una Denegación de Doble Elegibilidad en Delaware"
+      },
+      "paragraphs": [
+        {
+          "en": "Delaware applicants denied Medicaid, QMB, SLMB, or QI have the right to a fair hearing within 90 days of the denial notice. Requests go to the Delaware Division of Social Services Fair Hearing Unit, either by phone, mail, or through Delaware ASSIST. Coverage generally continues during the appeal if you request the hearing before your current benefits end. Bringing updated income documentation, especially if the denial was based on a temporary income spike such as a one-time pension payout, resolves many appeals without a full hearing.",
+          "es": "Los solicitantes de Delaware a quienes se les negó Medicaid, QMB, SLMB o QI tienen derecho a una audiencia justa dentro de los 90 días posteriores al aviso de denegación. Las solicitudes se envían a la Unidad de Audiencias Justas de la División de Servicios Sociales de Delaware, ya sea por teléfono, correo o a través de Delaware ASSIST."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {"question": "What is the income limit to be a dual eligible in Delaware in 2026?", "answer": "It depends on the program. QMB requires income at or below 100% FPL ($1,350/month for one person in 2026). SLMB allows up to 120% FPL ($1,616/month). QI allows up to 135% FPL ($1,816/month). Full Delaware Medicaid for aged or disabled applicants generally follows the SSI standard, about $994/month for an individual."},
+      {"question": "Does Delaware have an asset limit for Medicare Savings Programs?", "answer": "No. Delaware eliminated the asset test for QMB, SLMB, and QI, so savings, retirement accounts, and vehicles do not count against eligibility for those programs. Full Delaware Medicaid for long-term care still applies a $2,000 asset limit for a single applicant."},
+      {"question": "What is the difference between QMB and full Medicaid in Delaware?", "answer": "QMB only pays Medicare costs: the Part B premium, deductibles, coinsurance, and copays. Full Delaware Medicaid pays those same Medicare costs plus covers services Medicare does not, such as long-term nursing home care, home and community-based services, adult dental care, and non-emergency medical transportation."},
+      {"question": "How do I apply for QMB, SLMB, or QI in Delaware?", "answer": "Apply through Delaware ASSIST at assist.dhss.delaware.gov, or call the DMMA Medicaid Central Intake Unit at 1-866-940-8963. You do not need to report assets for a Medicare Savings Program application, only income and proof of Medicare enrollment."},
+      {"question": "Can I have a Medicare Advantage plan and be a dual eligible in Delaware?", "answer": "Yes. Many Delaware full duals enroll in a D-SNP (Dual Eligible Special Needs Plan), a type of Medicare Advantage plan designed for dual eligibles. Effective January 1, 2026, Delaware requires D-SNPs to be exclusively aligned with a Medicaid managed care contract; only AmeriHealth VIP Care, Delaware First Health, and Highmark Health Options Duals qualify."},
+      {"question": "What happens if my income changes and I no longer qualify for full Medicaid?", "answer": "Delaware DMMA reviews eligibility at renewal, typically annually. If your income rises above the full Medicaid threshold but stays under 135% FPL, DMMA can often shift you to a Medicare Savings Program (QMB, SLMB, or QI) instead of terminating coverage outright, so you keep at least partial dual eligible status."},
+      {"question": "Is Delaware a Medicaid expansion state?", "answer": "Yes. Delaware expanded Medicaid under the ACA effective January 1, 2014. Adults ages 19 to 64 with MAGI income at or below 138% FPL ($22,025/year for one person in 2026) qualify. This expansion pathway is separate from the dual eligible pathways available once someone enrolls in Medicare."},
+      {"question": "How long does a Delaware dual eligible application take to process?", "answer": "DMMA must process most Medicaid and Medicare Savings Program applications within 45 days, or 90 days if a disability determination is required. If approved, coverage can be retroactive to the first day of the application month, and QMB/SLMB/QI approval also stops future Part B premium deductions from Social Security."}
+    ],
+    "es": [
+      {"question": "¿Cuál es el límite de ingresos para ser dual elegible en Delaware en 2026?", "answer": "Depende del programa. QMB requiere ingresos iguales o inferiores al 100% del FPL ($1,350/mes para una persona en 2026). SLMB permite hasta el 120% del FPL ($1,616/mes). QI permite hasta el 135% del FPL ($1,816/mes). Delaware Medicaid completo para solicitantes de edad avanzada o discapacitados generalmente sigue el estándar SSI, aproximadamente $994/mes para un individuo."},
+      {"question": "¿Delaware tiene un límite de activos para los Programas de Ahorros de Medicare?", "answer": "No. Delaware eliminó la prueba de activos para QMB, SLMB y QI, por lo que los ahorros, las cuentas de jubilación y los vehículos no cuentan contra la elegibilidad para esos programas. Delaware Medicaid completo para cuidado a largo plazo aún aplica un límite de activos de $2,000 para un solicitante individual."},
+      {"question": "¿Cuál es la diferencia entre QMB y Medicaid completo en Delaware?", "answer": "QMB solo paga los costos de Medicare: la prima de la Parte B, deducibles, coseguro y copagos. Delaware Medicaid completo paga esos mismos costos de Medicare además de cubrir servicios que Medicare no cubre, como cuidado de enfermería a largo plazo, servicios en el hogar y la comunidad, cuidado dental para adultos y transporte médico no urgente."},
+      {"question": "¿Cómo solicito QMB, SLMB o QI en Delaware?", "answer": "Solicite a través de Delaware ASSIST en assist.dhss.delaware.gov, o llame a la Unidad de Admisión Central de Medicaid de DMMA al 1-866-940-8963. No necesita reportar activos para una solicitud de Programa de Ahorros de Medicare, solo ingresos y prueba de inscripción en Medicare."},
+      {"question": "¿Puedo tener un plan Medicare Advantage y ser dual elegible en Delaware?", "answer": "Sí. Muchos duales completos de Delaware se inscriben en un D-SNP (Plan de Necesidades Especiales de Doble Elegibilidad), un tipo de plan Medicare Advantage diseñado para duales elegibles. A partir del 1 de enero de 2026, Delaware requiere que los D-SNP estén exclusivamente alineados con un contrato de atención administrada de Medicaid."},
+      {"question": "¿Qué pasa si mis ingresos cambian y ya no califico para Medicaid completo?", "answer": "DMMA de Delaware revisa la elegibilidad en la renovación, típicamente cada año. Si sus ingresos aumentan por encima del umbral de Medicaid completo pero permanecen por debajo del 135% del FPL, DMMA a menudo puede cambiarlo a un Programa de Ahorros de Medicare en lugar de terminar la cobertura por completo."},
+      {"question": "¿Es Delaware un estado de expansión de Medicaid?", "answer": "Sí. Delaware expandió Medicaid bajo la ACA a partir del 1 de enero de 2014. Los adultos de 19 a 64 años con ingresos MAGI iguales o inferiores al 138% del FPL ($22,025/año para una persona en 2026) califican. Esta vía de expansión es independiente de las vías de doble elegibilidad disponibles una vez que alguien se inscribe en Medicare."},
+      {"question": "¿Cuánto tarda en procesarse una solicitud de doble elegibilidad en Delaware?", "answer": "DMMA debe procesar la mayoría de las solicitudes de Medicaid y de Programas de Ahorros de Medicare dentro de 45 días, o 90 días si se requiere una determinación de discapacidad. Si es aprobada, la cobertura puede ser retroactiva al primer día del mes de solicitud."}
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": {"en": "Can I Have Both Medicare and Medicaid?", "es": "¿Puedo Tener Medicare y Medicaid a la Vez?"},
+      "href": "/qa/can-i-have-both-medicare-and-medicaid"
+    },
+    {
+      "label": {"en": "Delaware Medicaid Income Limits 2026", "es": "Límites de Ingresos de Medicaid de Delaware 2026"},
+      "href": "/medicaid-income-limits/delaware"
+    },
+    {
+      "label": {"en": "Check Your Eligibility (Screener)", "es": "Verifique su Elegibilidad (Selector)"},
+      "href": "/screener"
+    },
+    {
+      "label": {"en": "Does Medicaid Cover Nursing Home Care?", "es": "¿Medicaid Cubre el Cuidado en un Hogar de Ancianos?"},
+      "href": "/qa/does-medicaid-cover-nursing-home"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Delaware DHSS DMMA: Medicaid Home",
+      "url": "https://dhss.delaware.gov/dmma/home/medicaid/",
+      "note": {
+        "en": "Official Delaware Division of Medicaid and Medical Assistance page describing Diamond State Health Plan coverage and eligibility pathways.",
+        "es": "Página oficial de la División de Medicaid y Asistencia Médica de Delaware que describe la cobertura y las vías de elegibilidad del Diamond State Health Plan."
+      }
+    },
+    {
+      "name": "Delaware DHSS DMMA: Dual Eligible Special Needs Plans",
+      "url": "https://dhss.delaware.gov/dmma/dsnp",
+      "note": {
+        "en": "Official DMMA page confirming Delaware's 2026 exclusively-aligned D-SNP requirement and the approved D-SNP carriers.",
+        "es": "Página oficial de DMMA que confirma el requisito de D-SNP exclusivamente alineado de Delaware para 2026 y las aseguradoras D-SNP aprobadas."
+      }
+    },
+    {
+      "name": "Medicare.gov: Medicare Savings Programs",
+      "url": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+      "note": {
+        "en": "Federal CMS overview of QMB, SLMB, and QI, including the 2026 Part B premium and deductible amounts used in this guide.",
+        "es": "Descripción general federal de CMS sobre QMB, SLMB y QI, incluyendo los montos de la prima y el deducible de la Parte B de 2026 usados en esta guía."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Federal Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Official HHS poverty guidelines used to calculate Delaware's 2026 QMB, SLMB, and QI income limits by household size.",
+        "es": "Pautas de pobreza oficiales de HHS usadas para calcular los límites de ingresos 2026 de QMB, SLMB y QI de Delaware por tamaño del hogar."
+      }
+    },
+    {
+      "name": "KFF: Medicaid's Role for Medicare Beneficiaries (Dual Eligibles)",
+      "url": "https://www.kff.org/medicaid/issue-brief/medicaids-role-for-medicare-beneficiaries/",
+      "note": {
+        "en": "KFF issue brief on full-benefit versus partial dual eligibility and how state Medicaid programs, including Delaware, structure Medicare Savings Programs.",
+        "es": "Informe de KFF sobre la doble elegibilidad de beneficio completo frente a parcial y cómo los programas estatales de Medicaid, incluido Delaware, estructuran los Programas de Ahorros de Medicare."
+      }
+    },
+    {
+      "name": "Delaware ASSIST",
+      "url": "https://assist.dhss.delaware.gov",
+      "note": {
+        "en": "Official Delaware self-service application portal for Medicaid, including QMB, SLMB, and QI applications.",
+        "es": "Portal oficial de solicitud de autoservicio de Delaware para Medicaid, incluidas las solicitudes de QMB, SLMB y QI."
+      }
+    }
+  ]
+}
