@@ -1,375 +1,410 @@
 {
   "slug": "medicare-dual-eligible-kansas",
   "subtype": "state-eligibility",
+  "topicCluster": "medicaid-eligibility-kansas",
+  "stateBrand": "KanCare",
+  "pageType": "eligibility",
   "question": {
-    "en": "Can You Have Medicare and Medicaid at the Same Time in Kansas?",
-    "es": "¿Puede Tener Medicare y Medicaid al Mismo Tiempo en Kansas?"
+    "en": "What Do Dual-Eligible Medicare and Medicaid Beneficiaries Get in Kansas?",
+    "es": "¿Qué Obtienen los Beneficiarios con Doble Elegibilidad de Medicare y Medicaid en Kansas?"
   },
   "shortAnswer": {
-    "en": "Yes, if you meet KanCare's income and asset limits while on Medicare.",
-    "es": "Sí, si cumple los límites de ingresos y bienes de KanCare con Medicare."
+    "en": "It depends: KanCare gives dual eligibles anywhere from premium help to full coverage.",
+    "es": "Depende: KanCare da desde ayuda con primas hasta cobertura completa a los duales."
   },
   "fullAnswer": {
-    "en": "Yes. Kansas residents enrolled in Medicare who also meet KanCare's income and asset limits qualify as dual eligible in 2026, meaning KanCare pays Medicare premiums, deductibles, and coinsurance and adds benefits Medicare does not cover, like long-term care and transportation. Kansas runs two dual-eligible pathways: Medicare Savings Programs (QMB, SLMB, and QI) that cover only Medicare cost-sharing, and full KanCare Medicaid for the aged, blind, and disabled that layers a complete Medicaid benefit package on top of Medicare.",
-    "es": "Sí. Los residentes de Kansas inscritos en Medicare que también cumplen los límites de ingresos y bienes de KanCare califican como doble elegibles en 2026, lo que significa que KanCare paga las primas, deducibles y coseguros de Medicare y agrega beneficios que Medicare no cubre, como cuidado a largo plazo y transporte. Kansas opera dos rutas de doble elegibilidad: los Programas de Ahorros de Medicare (QMB, SLMB y QI) que cubren solo los costos compartidos de Medicare, y KanCare Medicaid completo para personas mayores, ciegas y discapacitadas que añade un paquete completo de beneficios de Medicaid sobre Medicare."
+    "en": "It depends on which Kansas dual-eligible category you fall into in 2026. Full-benefit dual eligibles get complete KanCare Medicaid stacked on top of Medicare, adding long-term care, home care, and transportation Medicare does not cover. Medicare Savings Program (MSP) participants, QMB, SLMB, or QI, only get help paying Medicare premiums and cost-sharing, not the full Medicaid benefit package. Because Kansas has not expanded Medicaid, full dual eligibility for adults under 65 still runs through the aged, blind, and disabled pathway, tied to the SSI level of $994/month in 2026, rather than the higher 138% FPL threshold used in expansion states.",
+    "es": "Depende de en qué categoría dual de Kansas se encuentre en 2026. Los duales con beneficio completo obtienen Medicaid completo de KanCare sumado a Medicare, agregando cuidado a largo plazo, cuidado en casa y transporte que Medicare no cubre. Los participantes del Programa de Ahorros de Medicare (MSP), QMB, SLMB o QI, solo obtienen ayuda pagando las primas y los costos compartidos de Medicare, no el paquete completo de beneficios de Medicaid. Como Kansas no ha expandido Medicaid, la elegibilidad dual completa para adultos menores de 65 años todavía se determina por la vía de adultos mayores, ciegos y con discapacidad, ligada al nivel de SSI de $994/mes en 2026."
   },
   "category": "Medicaid",
-  "topic": "Dual Eligible Medicare and Medicaid Kansas",
-  "medicalSpecialty": "Geriatrics",
+  "topic": "Dual-Eligible Medicare and Medicaid Benefits in Kansas",
+  "medicalSpecialty": "PublicHealth",
   "ctaTarget": "screener",
-  "pageType": "eligibility",
-  "lastUpdated": "2026-09-10",
+  "lastUpdated": "2026-09-12",
   "readingTime": "9 min read",
+  "keyTerms": {
+    "en": ["dual eligible medicare medicaid kansas", "kancare dual eligible 2026", "kansas medicare savings program income limits", "qmb slmb qi kansas 2026", "kancare dual eligible benefits"],
+    "es": ["doble elegibilidad medicare medicaid kansas", "kancare doble elegibilidad 2026", "limites de ingresos programa de ahorros de medicare kansas", "qmb slmb qi kansas 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
 
   "meta": {
     "title": {
-      "en": "KanCare Dual Eligible: Medicare & Medicaid in Kansas 2026 | CoveredUSA",
-      "es": "KanCare Doble Elegible: Medicare y Medicaid en Kansas 2026 | CoveredUSA"
+      "en": "KanCare Dual Eligibility in Kansas (2026): What You Get | CoveredUSA",
+      "es": "KanCare: Doble Elegibilidad en Kansas (2026) | CoveredUSA"
     },
     "description": {
-      "en": "Kansas KanCare dual eligible guide 2026: QMB, SLMB, QI income limits, what Medicare and Medicaid cover together, and how to apply for KanCare.",
-      "es": "Guía de doble elegibilidad KanCare Kansas 2026: límites de ingresos QMB, SLMB, QI, lo que cubren Medicare y Medicaid juntos, y cómo solicitar KanCare."
+      "en": "KanCare gives Kansas dual eligibles Medicare Savings Program help or full Medicaid in 2026. See income limits, what each tier covers, and how to apply.",
+      "es": "KanCare da a los duales de Kansas ayuda del Programa de Ahorros de Medicare o Medicaid completo en 2026. Vea límites de ingresos y cómo solicitar."
     }
   },
 
   "hero": {
     "h1": {
-      "en": "KanCare Dual Eligible: Medicare and Medicaid in Kansas, What You Get (2026)",
-      "es": "KanCare Doble Elegible: Medicare y Medicaid en Kansas, Lo Que Recibe (2026)"
+      "en": "KanCare Dual Eligible Medicare and Medicaid in Kansas (2026): What You Get",
+      "es": "KanCare: Doble Elegibilidad de Medicare y Medicaid en Kansas (2026): Qué Obtiene"
     }
   },
 
   "introParagraphs": [
     {
-      "en": "Kansas seniors and people with disabilities who carry both Medicare and KanCare, the state's Medicaid program, are known as dual eligibles. Roughly 12 million Americans hold this status nationwide, and Kansas dual eligibles get two layers of coverage stacked on top of each other: Medicare pays first for hospital stays, doctor visits, and prescription drugs, and KanCare pays second, covering premiums, deductibles, coinsurance, and services Medicare skips entirely, such as long-term nursing home care and non-emergency medical transportation.",
-      "es": "Los adultos mayores y las personas con discapacidades de Kansas que tienen tanto Medicare como KanCare, el programa Medicaid del estado, se conocen como doble elegibles. Aproximadamente 12 millones de estadounidenses tienen este estatus a nivel nacional, y los doble elegibles de Kansas obtienen dos capas de cobertura superpuestas: Medicare paga primero por hospitalizaciones, visitas médicas y medicamentos recetados, y KanCare paga segundo, cubriendo primas, deducibles, coseguros y servicios que Medicare no cubre en absoluto, como cuidado de enfermería a largo plazo y transporte médico no urgente."
+      "en": "Kansas counts more than 90,000 dual-eligible residents, people enrolled in both Medicare and KanCare, the state's Medicaid program, at the same time. Reaching age 65 or qualifying for Medicare through a disability does not automatically hand a Kansan full Medicaid benefits; KanCare still runs its own income and asset tests, and what a dual-eligible Kansan actually receives depends heavily on which of several categories they land in.",
+      "es": "Kansas cuenta con más de 90,000 residentes con doble elegibilidad, personas inscritas tanto en Medicare como en KanCare, el programa de Medicaid del estado, al mismo tiempo. Cumplir 65 años o calificar para Medicare por discapacidad no le otorga automáticamente a un residente de Kansas los beneficios completos de Medicaid; KanCare aplica sus propias pruebas de ingresos y bienes, y lo que un dual de Kansas realmente recibe depende en gran medida de en cuál de varias categorías se encuentre."
     },
     {
-      "en": "Kansas offers two separate paths into dual-eligible status in 2026, and the path you qualify for determines exactly what you get. This guide breaks down KanCare's income and asset limits by household size, explains the difference between the Medicare Savings Programs (QMB, SLMB, and QI) and full KanCare Medicaid, and walks through how to apply. Check the [Medicaid income limits by state](/medicaid-income-limits) or the [2026 Federal Poverty Level chart](/federal-poverty-level) for national context.",
-      "es": "Kansas ofrece dos rutas separadas hacia el estatus de doble elegibilidad en 2026, y la ruta que califique determina exactamente lo que recibe. Esta guía detalla los límites de ingresos y bienes de KanCare por tamaño del hogar, explica la diferencia entre los Programas de Ahorros de Medicare (QMB, SLMB y QI) y KanCare Medicaid completo, y explica cómo solicitar."
+      "en": "KanCare's 2026 income limits for full Medicaid and for the three Medicare Savings Program tiers (QMB, SLMB, and QI) drive exactly what each tier gets you, covered below along with how to apply through the KEES self-service portal and why applications get denied. For the broader overlap rules, see [can I have both Medicare and Medicaid](/en/qa/can-i-have-both-medicare-and-medicaid). To check help paying premiums specifically, see [Medicare Extra Help in Kansas](/en/qa/medicare-extra-help-kansas).",
+      "es": "Los límites de ingresos de KanCare para 2026 para Medicaid completo y para los tres niveles del Programa de Ahorros de Medicare (QMB, SLMB y QI) determinan exactamente qué obtiene cada nivel, cómo solicitar a través del portal KEES, y por qué se niegan las solicitudes."
     }
   ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Dual-Eligible Category", "2026 Kansas Monthly Income Limit (Individual)", "What KanCare Pays", "Full Medicaid Benefit Package?"],
+      "es": ["Categoría Dual", "Límite de Ingreso Mensual 2026 en Kansas (Individual)", "Qué Paga KanCare", "¿Paquete Completo de Medicaid?"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Full Dual Eligible (Aged, Blind, Disabled Medicaid)", "es": "Dual Completo (Medicaid para Adultos Mayores, Ciegos, Discapacitados)" },
+          { "en": "$994 (SSI federal benefit rate, 2026)", "es": "$994 (tasa federal de beneficio SSI, 2026)" },
+          { "value": { "en": "Medicare premiums, deductibles, coinsurance, plus full KanCare benefits", "es": "Primas, deducibles y coseguro de Medicare, además de beneficios completos de KanCare" }, "status": "yes" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "QMB (Qualified Medicare Beneficiary)", "es": "QMB (Beneficiario Calificado de Medicare)" },
+          { "en": "$1,350 (100% FPL + $20 disregard, 2026)", "es": "$1,350 (100% FPL + $20 de descuento, 2026)" },
+          { "value": { "en": "Part A and B premiums, deductibles, coinsurance, and copayments", "es": "Primas de las Partes A y B, deducibles, coseguro y copagos" }, "status": "no" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "SLMB (Specified Low-Income Medicare Beneficiary)", "es": "SLMB (Beneficiario de Bajos Ingresos Especificado)" },
+          { "en": "$1,351 to $1,616 (100% to 120% FPL, 2026)", "es": "$1,351 a $1,616 (100% a 120% FPL, 2026)" },
+          { "value": { "en": "Part B premium only ($202.90/month in 2026)", "es": "Solo la prima de la Parte B ($202.90/mes en 2026)" }, "status": "no" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "QI (Qualifying Individual)", "es": "QI (Individuo Calificado)" },
+          { "en": "$1,617 to $1,816 (120% to 135% FPL, 2026)", "es": "$1,617 a $1,816 (120% a 135% FPL, 2026)" },
+          { "value": { "en": "Part B premium only; limited annual federal funding, first-come first-served", "es": "Solo la prima de la Parte B; fondos federales anuales limitados" }, "status": "no" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "All three Medicare Savings Program tiers also grant automatic Part D Extra Help (the Low-Income Subsidy) with no separate application. Couple income and asset limits run roughly 1.35 times the individual figures shown here. KanCare administers all four categories through the same eligibility system, KEES.",
+      "es": "Los tres niveles del Programa de Ahorros de Medicare también otorgan automáticamente Ayuda Adicional de la Parte D (Subsidio de Bajos Ingresos) sin solicitud separada. Los límites de ingreso y bienes para parejas son aproximadamente 1.35 veces las cifras individuales mostradas."
+    },
+    "source": "CMS Medicare Savings Programs 2026, Kansas Department of Health and Environment KanCare Eligibility Guidelines, Social Security Administration SSI Federal Benefit Rate 2026"
+  },
 
   "detailSections": [
     {
       "heading": {
-        "en": "Quick Answer: Dual Eligible in Kansas (2026)",
-        "es": "Respuesta Rápida: Doble Elegible en Kansas (2026)"
+        "en": "Direct Answer",
+        "es": "Respuesta Directa"
       },
       "paragraphs": [
         {
-          "en": "Yes. Kansans enrolled in Medicare who also meet KanCare's income and asset limits qualify as dual eligible in 2026. Full dual eligibles get Medicare plus complete KanCare Medicaid benefits, including long-term care and transportation. Kansans with slightly higher income may qualify only for a Medicare Savings Program (QMB, SLMB, or QI), which pays Medicare premiums and cost-sharing but not the full Medicaid benefit package.",
-          "es": "Sí. Los habitantes de Kansas inscritos en Medicare que también cumplen los límites de ingresos y bienes de KanCare califican como doble elegibles en 2026. Los doble elegibles completos obtienen Medicare más los beneficios completos de KanCare Medicaid, incluyendo cuidado a largo plazo y transporte. Quienes tienen ingresos un poco más altos pueden calificar solo para un Programa de Ahorros de Medicare (QMB, SLMB o QI), que paga las primas y costos compartidos de Medicare pero no el paquete completo de beneficios de Medicaid."
+          "en": "It depends on which category you fall into. Kansans on Medicare Part A or Part B can qualify as dual eligibles for full KanCare Medicaid or a Medicare Savings Program (QMB, SLMB, QI) once monthly income falls under Kansas's 2026 limits, from $994 for full Medicaid up to about $1,816 for QI. Full duals get Medicare cost-sharing help plus KanCare extras like long-term care. Apply through the KEES portal at kancare.ks.gov.",
+          "es": "Depende de en qué categoría se encuentre. Los residentes de Kansas ya inscritos en la Parte A o Parte B de Medicare pueden calificar como duales para Medicaid completo de KanCare o un Programa de Ahorros de Medicare (QMB, SLMB, QI) cuando el ingreso mensual está por debajo de los límites de Kansas para 2026, entre $994 y aproximadamente $1,816 según el nivel. Solicite a través del portal KEES en kancare.ks.gov."
         }
       ]
     },
     {
       "heading": {
-        "en": "What Is KanCare? Kansas's Medicaid Program",
-        "es": "¿Qué Es KanCare? El Programa Medicaid de Kansas"
+        "en": "What Full Dual Eligibility Gets You in Kansas",
+        "es": "Lo Que Obtiene con la Doble Elegibilidad Completa en Kansas"
       },
       "paragraphs": [
         {
-          "en": "KanCare is the brand name for Kansas's Medicaid program, launched statewide in January 2013 as a managed care system. The Kansas Department of Health and Environment (KDHE) Division of Health Care Finance oversees KanCare policy, while the Kansas Department for Children and Families (DCF) determines financial eligibility for most applicants, including the aged, blind, and disabled dual-eligible pathway. Three managed care organizations deliver KanCare benefits statewide: Healthy Blue Kansas, Sunflower Health Plan, and UnitedHealthcare Community Plan of Kansas.",
-          "es": "KanCare es el nombre de marca del programa Medicaid de Kansas, lanzado en todo el estado en enero de 2013 como un sistema de atención administrada. El Departamento de Salud y Medio Ambiente de Kansas (KDHE), División de Financiamiento de Atención Médica, supervisa la política de KanCare, mientras que el Departamento de Kansas para Niños y Familias (DCF) determina la elegibilidad financiera para la mayoría de los solicitantes. Tres organizaciones de atención administrada entregan los beneficios de KanCare: Healthy Blue Kansas, Sunflower Health Plan y UnitedHealthcare Community Plan of Kansas."
+          "en": "Kansas dual eligibles, meaning residents enrolled in both Medicare and KanCare, get a wider safety net than either program alone provides. Medicare stays the primary payer for hospital stays (Part A), doctor visits and outpatient care (Part B), and prescription drugs (Part D), while KanCare pays second, covering the premiums, deductibles, coinsurance, and copayments a full dual eligible would otherwise owe. KanCare also adds benefits Medicare does not cover at all, including long-term nursing facility care, home and community-based waiver services for people who would otherwise need a nursing home, non-emergency medical transportation (NEMT) to covered appointments, and limited adult dental and vision services.",
+          "es": "Los duales de Kansas, personas inscritas tanto en Medicare como en KanCare, obtienen una red de seguridad más amplia que cualquiera de los dos programas por separado. Medicare sigue siendo el pagador principal de las estadías hospitalarias (Parte A), las visitas médicas y atención ambulatoria (Parte B) y los medicamentos recetados (Parte D), mientras que KanCare paga en segundo lugar, cubriendo las primas, deducibles, coseguro y copagos que un dual completo pagaría de otro modo. KanCare también agrega beneficios que Medicare no cubre en absoluto, incluyendo cuidado en un centro de enfermería a largo plazo, servicios de exención comunitaria, transporte médico no urgente (NEMT) a citas cubiertas, y servicios dentales y de visión limitados para adultos."
         },
         {
-          "en": "Dual eligible status in Kansas is not a single program. KanCare and the federal Medicare Savings Programs work together but have different income tests, different asset tests, and different benefit packages, so the specific KanCare pathway a person qualifies for changes what they actually receive.",
-          "es": "El estatus de doble elegibilidad en Kansas no es un solo programa. KanCare y los Programas de Ahorros de Medicare federales trabajan juntos pero tienen diferentes pruebas de ingresos, diferentes pruebas de bienes y diferentes paquetes de beneficios, por lo que la ruta específica de KanCare que califique una persona cambia lo que realmente recibe."
-        }
-      ]
-    },
-    {
-      "heading": {
-        "en": "KanCare Income Limits by Household Size (2026)",
-        "es": "Límites de Ingresos de KanCare por Tamaño del Hogar (2026)"
-      },
-      "paragraphs": [
-        {
-          "en": "KanCare's Qualified Medicare Beneficiary (QMB) program, the main gateway to full Medicare cost-sharing help in Kansas, is capped at 100% of the federal poverty level plus a $20 general income disregard. The table below scales that 2026 threshold by household size using the standard federal poverty level increment. Most Kansas dual eligibles apply as an individual or a married couple, since QMB, SLMB, and QI eligibility is built around Social Security-style household counting rather than the larger family sizes used for children's Medicaid.",
-          "es": "El programa de Beneficiario Calificado de Medicare (QMB) de KanCare, la principal puerta de entrada a la ayuda completa con los costos compartidos de Medicare en Kansas, tiene un límite del 100% del nivel federal de pobreza más una exención general de ingresos de $20. La tabla a continuación escala ese umbral de 2026 por tamaño del hogar usando el incremento estándar del nivel federal de pobreza."
-        }
-      ]
-    },
-    {
-      "heading": {
-        "en": "What Full Dual Eligible Status Gets You in Kansas",
-        "es": "Lo Que Obtiene con Estatus de Doble Elegibilidad Completa en Kansas"
-      },
-      "paragraphs": [
-        {
-          "en": "Kansas dual eligibles who qualify for full KanCare Medicaid, not just a Medicare Savings Program, keep Medicare as their primary payer for hospital care, doctor visits, and prescription drugs, and KanCare wraps around it. KanCare pays the 2026 Medicare Part B premium of $202.90 a month, the $283 Part B deductible, and the $1,736 Part A hospital deductible for any inpatient stay, so a full dual eligible generally owes nothing out of pocket for Medicare-covered services.",
-          "es": "Los doble elegibles de Kansas que califican para KanCare Medicaid completo, no solo un Programa de Ahorros de Medicare, mantienen Medicare como su pagador principal para atención hospitalaria, visitas médicas y medicamentos recetados, y KanCare lo complementa. KanCare paga la prima mensual de la Parte B de Medicare de $202.90 en 2026, el deducible de la Parte B de $283, y el deducible hospitalario de la Parte A de $1,736 para cualquier estancia hospitalaria, por lo que un doble elegible completo generalmente no debe nada de su bolsillo por servicios cubiertos por Medicare."
-        },
-        {
-          "en": "KanCare also covers services Medicare does not pay for at all, which is the biggest practical benefit of full dual status.",
-          "es": "KanCare también cubre servicios que Medicare no paga en absoluto, lo cual es el mayor beneficio práctico del estatus de doble elegibilidad completa."
+          "en": "Most full dual eligibles in Kansas also qualify to enroll in a Dual Eligible Special Needs Plan (D-SNP), a type of Medicare Advantage plan built specifically for people with both Medicare and Medicaid. KanCare's managed care organizations, currently Sunflower Health Plan, UnitedHealthcare Community Plan, and Healthy Blue Kansas (which replaced Aetna Better Health of Kansas under the 2025-2027 contract), offer D-SNPs that typically carry a $0 monthly premium, cap out-of-pocket costs, and add extras such as an over-the-counter allowance, rides to medical appointments, and dental, vision, and hearing benefits beyond what Original Medicare covers. Kansas dual eligibles can generally switch D-SNPs monthly through the Dual Eligible Special Enrollment Period, unlike the general Medicare population, which is limited to the Annual Enrollment Period (October 15 to December 7, 2026) and the Medicare Advantage Open Enrollment Period (January 1 to March 31, 2026).",
+          "es": "La mayoría de los duales completos en Kansas también califican para inscribirse en un Plan de Necesidades Especiales para Duales (D-SNP), un tipo de plan Medicare Advantage diseñado específicamente para personas con Medicare y Medicaid. Las organizaciones de cuidado administrado de KanCare, actualmente Sunflower Health Plan, UnitedHealthcare Community Plan y Healthy Blue Kansas (que reemplazó a Aetna Better Health of Kansas bajo el contrato 2025-2027), ofrecen D-SNP que típicamente tienen una prima mensual de $0, limitan los costos de bolsillo y agregan extras como un subsidio para productos de venta libre, transporte a citas médicas, y beneficios dentales, de visión y auditivos más allá de lo que cubre Medicare Original."
         }
       ],
       "list": [
-        { "en": "Long-term nursing facility care: Medicare only covers up to 100 days of skilled nursing after a qualifying hospital stay; KanCare pays for custodial nursing home care indefinitely once approved.", "es": "Cuidado de enfermería a largo plazo: Medicare solo cubre hasta 100 días de enfermería especializada tras una hospitalización calificada; KanCare paga el cuidado de enfermería custodial indefinidamente una vez aprobado." },
-        { "en": "Non-emergency medical transportation (NEMT): rides to and from KanCare-covered appointments, arranged through the member's managed care plan.", "es": "Transporte médico no urgente (NEMT): viajes hacia y desde citas cubiertas por KanCare, organizados a través del plan de atención administrada del miembro." },
-        { "en": "Home and community-based services (HCBS) waivers: personal care attendants, adult day care, and home modifications for people who would otherwise need a nursing facility.", "es": "Exenciones de servicios en el hogar y la comunidad (HCBS): asistentes de cuidado personal, cuidado diurno para adultos y modificaciones en el hogar." },
-        { "en": "Limited adult dental, vision, and hearing services that Original Medicare excludes for most beneficiaries.", "es": "Servicios dentales, de visión y de audición limitados para adultos que Medicare Original excluye para la mayoría de los beneficiarios." },
-        { "en": "Automatic enrollment in Medicare Part D Extra Help (the Low-Income Subsidy), which caps prescription drug copays and eliminates the Part D deductible.", "es": "Inscripción automática en la Ayuda Adicional de la Parte D de Medicare (Subsidio de Bajos Ingresos), que limita los copagos de medicamentos recetados y elimina el deducible de la Parte D." }
+        { "en": "Medicare Part A and Part B premiums paid by KanCare (full duals and QMB)", "es": "Primas de la Parte A y Parte B de Medicare pagadas por KanCare (duales completos y QMB)" },
+        { "en": "Medicare deductibles and coinsurance covered (full duals and QMB)", "es": "Deducibles y coseguro de Medicare cubiertos (duales completos y QMB)" },
+        { "en": "Long-term nursing facility care, a Medicaid-only benefit Medicare does not cover", "es": "Cuidado en centro de enfermería a largo plazo, un beneficio exclusivo de Medicaid" },
+        { "en": "Home and community-based waiver services (in-home personal care, adult day health)", "es": "Servicios de exención comunitaria (cuidado personal en casa, cuidado diurno para adultos)" },
+        { "en": "Non-emergency medical transportation (NEMT) to and from covered appointments", "es": "Transporte médico no urgente (NEMT) hacia y desde citas cubiertas" },
+        { "en": "Access to $0-premium Dual Eligible Special Needs Plans (D-SNP) with extra benefits", "es": "Acceso a Planes de Necesidades Especiales para Duales (D-SNP) con prima de $0 y beneficios extra" }
       ]
     },
     {
       "heading": {
-        "en": "Medicare Savings Programs: QMB, SLMB, and QI in Kansas",
-        "es": "Programas de Ahorros de Medicare: QMB, SLMB y QI en Kansas"
+        "en": "Kansas Medicare Savings Program Tiers: QMB, SLMB, and QI",
+        "es": "Niveles del Programa de Ahorros de Medicare en Kansas: QMB, SLMB y QI"
       },
       "paragraphs": [
         {
-          "en": "Kansans who earn too much for full KanCare Medicaid but still fall within the federal Medicare Savings Program limits can still become dual eligible in a narrower sense. Kansas administers three tiers, each covering a different slice of Medicare cost-sharing, all processed through the same KanCare and DCF application.",
-          "es": "Los habitantes de Kansas que ganan demasiado para KanCare Medicaid completo pero aún caen dentro de los límites federales del Programa de Ahorros de Medicare pueden convertirse en doble elegibles en un sentido más limitado. Kansas administra tres niveles, cada uno cubriendo una porción diferente de los costos compartidos de Medicare, todos procesados a través de la misma solicitud de KanCare y DCF."
+          "en": "Kansans who do not qualify for full KanCare Medicaid may still qualify for a Medicare Savings Program (MSP), which KanCare administers to pay some or all Medicare costs based on income alone, with no medical underwriting. Kansas offers three MSP tiers, each tied to a percentage of the 2026 Federal Poverty Level (FPL): Qualified Medicare Beneficiary (QMB) at or below 100% FPL, Specified Low-Income Medicare Beneficiary (SLMB) between 100% and 120% FPL, and Qualifying Individual (QI) between 120% and 135% FPL. A fourth federal category, Qualified Disabled and Working Individual (QDWI), exists nationwide for people under 65 who lost Social Security Disability Insurance because they returned to work, and pays only the Medicare Part A premium.",
+          "es": "Los residentes de Kansas que no califican para Medicaid completo de KanCare aún pueden calificar para un Programa de Ahorros de Medicare (MSP), que KanCare administra para pagar parte o todos los costos de Medicare según el ingreso, sin evaluación médica. Kansas ofrece tres niveles de MSP, cada uno vinculado a un porcentaje del Nivel Federal de Pobreza (FPL) de 2026: Beneficiario Calificado de Medicare (QMB) en o por debajo del 100% del FPL, Beneficiario de Medicare de Bajos Ingresos Especificado (SLMB) entre 100% y 120% del FPL, e Individuo Calificado (QI) entre 120% y 135% del FPL. Una cuarta categoría federal, Individuo Discapacitado y Trabajador Calificado (QDWI), existe a nivel nacional para personas menores de 65 años que perdieron el Seguro por Incapacidad del Seguro Social por regresar a trabajar."
         }
       ],
       "table": {
         "caption": {
-          "en": "Kansas Medicare Savings Program income limits and benefits 2026",
-          "es": "Límites de ingresos y beneficios del Programa de Ahorros de Medicare de Kansas 2026"
+          "en": "KanCare Medicare Savings Program tiers by monthly income limit, Kansas 2026",
+          "es": "Niveles del Programa de Ahorros de Medicare de KanCare por límite de ingreso mensual, Kansas 2026"
         },
         "headers": {
-          "en": ["Program", "Monthly Income Limit (2026)", "What It Pays", "Resource Limit (2026)"],
-          "es": ["Programa", "Límite de Ingresos Mensual (2026)", "Qué Paga", "Límite de Recursos (2026)"]
+          "en": ["Tier", "Monthly Income Limit (Individual, 2026)", "What It Pays", "Asset Limit 2026"],
+          "es": ["Nivel", "Límite de Ingreso Mensual (Individual, 2026)", "Qué Paga", "Límite de Bienes 2026"]
         },
         "rows": [
-          { "en": ["QMB (Qualified Medicare Beneficiary)", "$1,350 individual / $1,824 couple", "Part A and B premiums plus all Medicare deductibles, coinsurance, and copays", "$9,950 individual / $14,910 couple"], "es": ["QMB (Beneficiario Calificado de Medicare)", "$1,350 individual / $1,824 pareja", "Primas de las Partes A y B más todos los deducibles, coseguros y copagos de Medicare", "$9,950 individual / $14,910 pareja"] },
-          { "en": ["SLMB (Specified Low-Income Medicare Beneficiary)", "$1,351 to $1,616 individual / $1,825 to $2,184 couple", "Part B premium only", "$9,950 individual / $14,910 couple"], "es": ["SLMB (Beneficiario de Medicare de Bajos Ingresos Especificado)", "$1,351 a $1,616 individual / $1,825 a $2,184 pareja", "Solo la prima de la Parte B", "$9,950 individual / $14,910 pareja"] },
-          { "en": ["QI (Qualifying Individual)", "$1,617 to $1,816 individual / $2,185 to $2,455 couple", "Part B premium only; funded first-come, first-served each year", "$9,950 individual / $14,910 couple"], "es": ["QI (Individuo Calificado)", "$1,617 a $1,816 individual / $2,185 a $2,455 pareja", "Solo la prima de la Parte B; financiado por orden de llegada cada año", "$9,950 individual / $14,910 pareja"] }
+          { "en": ["QMB (Qualified Medicare Beneficiary)", "$1,350", "Part A and B premiums, deductibles, coinsurance, and copayments", "$9,950 individual / $14,910 couple"], "es": ["QMB (Beneficiario Calificado de Medicare)", "$1,350", "Primas de las Partes A y B, deducibles, coseguro y copagos", "$9,950 individual / $14,910 pareja"] },
+          { "en": ["SLMB (Specified Low-Income Medicare Beneficiary)", "$1,616", "Part B premium only ($202.90/month in 2026)", "$9,950 individual / $14,910 couple"], "es": ["SLMB (Beneficiario de Bajos Ingresos Especificado)", "$1,616", "Solo la prima de la Parte B ($202.90/mes en 2026)", "$9,950 individual / $14,910 pareja"] },
+          { "en": ["QI (Qualifying Individual)", "$1,816", "Part B premium only; capped annual federal funding, first-come first-served", "$9,950 individual / $14,910 couple"], "es": ["QI (Individuo Calificado)", "$1,816", "Solo la prima de la Parte B; fondos federales anuales limitados", "$9,950 individual / $14,910 pareja"] },
+          { "en": ["QDWI (Qualified Disabled and Working Individual)", "about $2,700 (200% FPL)", "Part A premium only", "Higher limit; confirm with KanCare"], "es": ["QDWI (Individuo Discapacitado y Trabajador Calificado)", "aprox. $2,700 (200% FPL)", "Solo la prima de la Parte A", "Límite más alto; confirme con KanCare"] }
         ],
         "footnote": {
-          "en": "All three Kansas Medicare Savings Programs confer automatic eligibility for Medicare Part D Extra Help, even for applicants who do not qualify for full KanCare Medicaid. QI enrollees must reapply every year because Kansas receives a capped annual federal allotment for the program.",
-          "es": "Los tres Programas de Ahorros de Medicare de Kansas otorgan elegibilidad automática para la Ayuda Adicional de la Parte D de Medicare, incluso para solicitantes que no califican para KanCare Medicaid completo. Los inscritos en QI deben volver a solicitar cada año porque Kansas recibe una asignación federal anual limitada para el programa."
+          "en": "KanCare administers Medicare Savings Programs through the same application used for full Medicaid. Figures reflect 100%, 120%, and 135% of the 2026 Federal Poverty Level plus the $20 general income disregard applied to every MSP tier. Verify current dollar amounts with KanCare or the Kansas Department for Children and Families before applying.",
+          "es": "KanCare administra los Programas de Ahorros de Medicare a través de la misma solicitud usada para Medicaid completo. Las cifras reflejan 100%, 120% y 135% del Nivel Federal de Pobreza 2026 más el descuento general de ingreso de $20 aplicado a cada nivel de MSP."
         },
-        "source": "Kansas Department for Children and Families (DCF), KDHE KanCare 2026 Medicare Savings Program guidelines"
+        "source": "Kansas Department of Health and Environment KanCare Eligibility Guidelines, Medicaid.gov Medicare Savings Programs, CMS 2026 Medicare Parts A and B Premiums"
       }
     },
     {
       "heading": {
-        "en": "How to Apply for KanCare and Dual Eligible Status in Kansas",
-        "es": "Cómo Solicitar KanCare y el Estatus de Doble Elegibilidad en Kansas"
+        "en": "KanCare QMB Income Limits by Household Size (2026)",
+        "es": "Límites de Ingresos QMB de KanCare por Tamaño del Hogar (2026)"
       },
       "paragraphs": [
         {
-          "en": "Kansas processes KanCare Medicaid and all three Medicare Savings Programs through a single application handled by the Department for Children and Families (DCF). There is no enrollment window: you can apply for KanCare dual-eligible status any time of year.",
-          "es": "Kansas procesa KanCare Medicaid y los tres Programas de Ahorros de Medicare a través de una sola solicitud manejada por el Departamento para Niños y Familias (DCF). No hay período de inscripción: puede solicitar el estatus de doble elegibilidad de KanCare en cualquier época del año."
+          "en": "Kansas's Qualified Medicare Beneficiary (QMB) threshold is the broadest Medicare Savings Program income test and the one most KanCare dual-eligible applicants are screened against first. The table below shows the 2026 monthly income limit at 100% of the Federal Poverty Level, plus the $20 general income disregard KanCare applies to every MSP category, for household sizes 1 through 8. Kansans above the QMB limit may still qualify for the SLMB or QI tiers described above, which cover only the Part B premium rather than full Medicare cost-sharing.",
+          "es": "El umbral del Beneficiario Calificado de Medicare (QMB) de Kansas es la prueba de ingresos más amplia del Programa de Ahorros de Medicare y la primera con la que se evalúa a la mayoría de los solicitantes duales de KanCare. La tabla a continuación muestra el límite de ingreso mensual de 2026 al 100% del Nivel Federal de Pobreza, más el descuento general de ingreso de $20 que KanCare aplica a cada categoría de MSP, para tamaños de hogar de 1 a 8."
         }
-      ],
-      "list": [
-        { "en": "Step 1: Gather your documents, including your Medicare card, Social Security award letter or pay stubs, bank statements, and proof of Kansas residency.", "es": "Paso 1: Reúna sus documentos, incluyendo su tarjeta de Medicare, carta de otorgamiento del Seguro Social o talones de pago, estados de cuenta bancarios y comprobante de residencia en Kansas." },
-        { "en": "Step 2: Apply online through the KanCare Clearinghouse at kancare.ks.gov, or submit a paper application through DCF at dcf.ks.gov.", "es": "Paso 2: Solicite en línea a través del KanCare Clearinghouse en kancare.ks.gov, o presente una solicitud en papel a través de DCF en dcf.ks.gov." },
-        { "en": "Step 3: Indicate on the application that you are enrolled in Medicare and want to be screened for both full KanCare Medicaid and the Medicare Savings Programs (QMB, SLMB, QI).", "es": "Paso 3: Indique en la solicitud que está inscrito en Medicare y que desea ser evaluado tanto para KanCare Medicaid completo como para los Programas de Ahorros de Medicare (QMB, SLMB, QI)." },
-        { "en": "Step 4: Complete an interview with a DCF eligibility worker by phone if requested, and respond to any request for additional verification within the deadline stated in the notice.", "es": "Paso 4: Complete una entrevista con un trabajador de elegibilidad de DCF por teléfono si se solicita, y responda a cualquier solicitud de verificación adicional dentro del plazo indicado en el aviso." },
-        { "en": "Step 5: Wait for a determination, typically within 45 days for KanCare Medicaid or 90 days if a disability determination is required; Medicare Savings Program decisions are usually faster.", "es": "Paso 5: Espere una determinación, típicamente dentro de 45 días para KanCare Medicaid o 90 días si se requiere una determinación de discapacidad; las decisiones de los Programas de Ahorros de Medicare suelen ser más rápidas." },
-        { "en": "Step 6: If approved, choose or confirm your KanCare managed care organization (Healthy Blue Kansas, Sunflower Health Plan, or UnitedHealthcare Community Plan of Kansas) and consider whether a Medicare dual-eligible Special Needs Plan (D-SNP) fits your needs.", "es": "Paso 6: Si se aprueba, elija o confirme su organización de atención administrada de KanCare (Healthy Blue Kansas, Sunflower Health Plan o UnitedHealthcare Community Plan of Kansas) y considere si un Plan de Necesidades Especiales de doble elegibilidad de Medicare (D-SNP) se ajusta a sus necesidades." }
       ]
     },
     {
       "heading": {
-        "en": "Documents Needed to Apply for KanCare in Kansas",
-        "es": "Documentos Necesarios para Solicitar KanCare en Kansas"
+        "en": "How to Apply for Dual Eligible Benefits in Kansas",
+        "es": "Cómo Solicitar los Beneficios de Doble Elegibilidad en Kansas"
       },
       "paragraphs": [
         {
-          "en": "Kansas DCF eligibility workers verify both income and assets for KanCare dual-eligible applications, so gathering the right paperwork before you start speeds up the process considerably."
+          "en": "KanCare and every Medicare Savings Program tier use the same application, so you do not need to know in advance which category you qualify for; the Kansas Department for Children and Families (DCF), working with the Kansas Department of Health and Environment (KDHE), screens for full Medicaid, QMB, SLMB, and QI automatically. Applications are accepted year-round because KanCare, unlike Medicare, has no annual enrollment window.",
+          "es": "KanCare y cada nivel del Programa de Ahorros de Medicare usan la misma solicitud, por lo que no necesita saber de antemano en qué categoría califica; el Departamento para Niños y Familias de Kansas (DCF), junto con el Departamento de Salud y Ambiente de Kansas (KDHE), evalúa automáticamente para Medicaid completo, QMB, SLMB y QI. Las solicitudes se aceptan durante todo el año porque KanCare, a diferencia de Medicare, no tiene ventana de inscripción anual."
         }
       ],
       "list": [
-        { "en": "Social Security number for the applicant (and spouse, if applying as a couple)", "es": "Número de Seguro Social del solicitante (y cónyuge, si solicita como pareja)" },
-        { "en": "Medicare card or Medicare Beneficiary Identifier (MBI)", "es": "Tarjeta de Medicare o Identificador de Beneficiario de Medicare (MBI)" },
-        { "en": "Proof of income (Social Security award letter, pension statements, pay stubs, or 1099s)", "es": "Comprobante de ingresos (carta de otorgamiento del Seguro Social, estados de pensión, talones de pago o 1099)" },
-        { "en": "Bank statements and other asset documentation (checking, savings, life insurance cash value, vehicle titles)", "es": "Estados de cuenta bancarios y otra documentación de bienes (cuentas corrientes, ahorros, valor en efectivo de seguro de vida, títulos de vehículos)" },
-        { "en": "Proof of Kansas residency (utility bill, lease, or mortgage statement)", "es": "Comprobante de residencia en Kansas (factura de servicios, contrato de alquiler o estado de cuenta hipotecaria)" },
-        { "en": "Identity documents (driver's license, state ID, or birth certificate)", "es": "Documentos de identidad (licencia de conducir, identificación estatal o certificado de nacimiento)" },
-        { "en": "Household composition documentation (marriage certificate or proof of dependents, if applicable)", "es": "Documentación de composición del hogar (certificado de matrimonio o comprobante de dependientes, si corresponde)" },
-        { "en": "Immigration status documents, if the applicant is not a U.S. citizen", "es": "Documentos de estatus migratorio, si el solicitante no es ciudadano estadounidense" }
+        { "en": "Step 1: Gather your documents (Social Security card, Medicare card, income and asset proof, Kansas ID) before you start.", "es": "Paso 1: Reúna sus documentos (tarjeta de Seguro Social, tarjeta de Medicare, comprobantes de ingresos y bienes, identificación de Kansas) antes de comenzar." },
+        { "en": "Step 2: Apply online at the KEES self-service portal (cssp.kees.ks.gov), linked from kancare.ks.gov, the fastest method for most applicants.", "es": "Paso 2: Solicite en línea en el portal KEES (cssp.kees.ks.gov), enlazado desde kancare.ks.gov, el método más rápido para la mayoría de los solicitantes." },
+        { "en": "Step 3: Or call the KanCare Clearinghouse at 1-800-792-4884 (TTY 1-800-792-4292), or apply in person at your local DCF office.", "es": "Paso 3: O llame al Centro de Intercambio de KanCare al 1-800-792-4884 (TTY 1-800-792-4292), o solicite en persona en su oficina local de DCF." },
+        { "en": "Step 4: Respond to any verification requests promptly, uploading documents through the KEES portal to avoid delays.", "es": "Paso 4: Responda con prontitud a cualquier solicitud de verificación, subiendo documentos a través del portal KEES para evitar demoras." },
+        { "en": "Step 5: Receive your determination letter; DCF will state which category (full Medicaid, QMB, SLMB, or QI) you were approved for, if any.", "es": "Paso 5: Reciba su carta de determinación; DCF indicará en qué categoría (Medicaid completo, QMB, SLMB o QI) fue aprobado, si corresponde." },
+        { "en": "Step 6: If approved for full Medicaid, contact the Senior Health Insurance Counseling for Kansas (SHICK) program for free help choosing a Dual Eligible Special Needs Plan (D-SNP).", "es": "Paso 6: Si es aprobado para Medicaid completo, contacte al programa SHICK (Senior Health Insurance Counseling for Kansas) para obtener ayuda gratuita eligiendo un Plan D-SNP." }
       ]
     },
     {
       "heading": {
-        "en": "Is Kansas a Medicaid Expansion State? The ACA Coverage Gap",
-        "es": "¿Es Kansas un Estado de Expansión de Medicaid? La Brecha de Cobertura del ACA"
+        "en": "Documents Needed to Apply in Kansas",
+        "es": "Documentos Necesarios para Solicitar en Kansas"
       },
       "paragraphs": [
         {
-          "en": "Kansas has not expanded Medicaid and remains one of 10 states, along with Alabama, Florida, Georgia, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming, that have not adopted the ACA's Medicaid expansion to 138% of the federal poverty level as of 2026. Expansion legislation was introduced again in the Kansas legislature in early 2026 but had not passed as of this update.",
-          "es": "Kansas no ha expandido Medicaid y sigue siendo uno de 10 estados, junto con Alabama, Florida, Georgia, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming, que no han adoptado la expansión de Medicaid del ACA al 138% del nivel federal de pobreza a partir de 2026. Se presentó legislación de expansión nuevamente en la legislatura de Kansas a principios de 2026, pero no se había aprobado al momento de esta actualización."
+          "en": "KanCare asks for the same core documents whether you are applying for full Medicaid or a Medicare Savings Program. Having these ready before you start the KEES application speeds up the 45-day processing window DCF is generally required to meet.",
+          "es": "KanCare solicita los mismos documentos principales ya sea que solicite Medicaid completo o un Programa de Ahorros de Medicare. Tener estos listos antes de comenzar la solicitud en KEES acelera la ventana de procesamiento de 45 días que DCF generalmente debe cumplir."
+        }
+      ],
+      "list": [
+        { "en": "Social Security card or number for the applicant (and spouse, if married)", "es": "Tarjeta o número de Seguro Social del solicitante (y del cónyuge, si está casado)" },
+        { "en": "Medicare card showing Part A and/or Part B enrollment", "es": "Tarjeta de Medicare que muestre la inscripción en la Parte A y/o Parte B" },
+        { "en": "Proof of income (Social Security award letter, pension statements, pay stubs, tax return)", "es": "Comprobante de ingresos (carta de adjudicación del Seguro Social, estados de pensión, talones de pago, declaración de impuestos)" },
+        { "en": "Proof of assets (bank statements, life insurance policies, vehicle titles, retirement accounts)", "es": "Comprobante de bienes (estados de cuenta bancarios, pólizas de seguro de vida, títulos de vehículos, cuentas de jubilación)" },
+        { "en": "Proof of Kansas residency (utility bill, lease, or Kansas driver's license or ID)", "es": "Comprobante de residencia en Kansas (factura de servicios, contrato de arrendamiento, o licencia o identificación de Kansas)" },
+        { "en": "Household composition (marriage certificate or proof of who lives in your home)", "es": "Composición del hogar (acta de matrimonio o comprobante de quién vive en su hogar)" },
+        { "en": "Immigration status documents, if applicable", "es": "Documentos de estatus migratorio, si corresponde" }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Is Kansas a Medicaid Expansion State?",
+        "es": "¿Es Kansas un Estado de Expansión de Medicaid?"
+      },
+      "paragraphs": [
+        {
+          "en": "Kansas has not adopted the ACA's full Medicaid expansion, which would cover adults up to 138% of the Federal Poverty Level using MAGI (Modified Adjusted Gross Income) rules. Kansas is one of only 10 non-expansion states, alongside Alabama, Florida, Georgia, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming, meaning working-age adults without children or a qualifying disability generally cannot get KanCare no matter how low their income is. An estimated 28,000 Kansans fall into the ACA coverage gap: too much income for traditional KanCare, too little for Marketplace subsidies, which only begin at 100% FPL. Expansion legislation with a work requirement was introduced again in the Kansas Legislature in early 2026 but had not been enacted as of this writing.",
+          "es": "Kansas no ha adoptado la expansión completa de Medicaid del ACA, que cubriría a adultos hasta el 138% del Nivel Federal de Pobreza bajo las reglas MAGI (Ingreso Bruto Ajustado Modificado). Kansas es uno de solo 10 estados sin expansión, junto con Alabama, Florida, Georgia, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming. Se estima que 28,000 residentes de Kansas caen en el vacío de cobertura del ACA: demasiado ingreso para KanCare tradicional, muy poco para los subsidios del Mercado. Se introdujo de nuevo legislación de expansión con un requisito de trabajo en la Legislatura de Kansas a principios de 2026, pero no había sido aprobada al momento de esta publicación."
         },
         {
-          "en": "Kansas non-expansion status matters less for the dual-eligible pathway itself, since QMB, SLMB, QI, and the aged/blind/disabled KanCare Medicaid track are federal floor programs tied to Medicare enrollment and disability status, not the ACA expansion adult group. It matters a great deal for Kansans approaching 65 who are not yet on Medicare: roughly 28,000 Kansans fall into the coverage gap, earning too much for traditional KanCare (childless working-age adults generally do not qualify at all) but too little for ACA marketplace subsidies, which only start at 100% of the federal poverty level.",
-          "es": "El estatus de no expansión de Kansas importa menos para la ruta de doble elegibilidad en sí, ya que QMB, SLMB, QI y la vía de KanCare Medicaid para personas mayores, ciegas y discapacitadas son programas de piso federal vinculados a la inscripción en Medicare y el estatus de discapacidad, no al grupo de adultos de expansión del ACA. Importa mucho para los habitantes de Kansas que se acercan a los 65 años y aún no tienen Medicare: aproximadamente 28,000 habitantes de Kansas caen en la brecha de cobertura."
+          "en": "Kansas's non-expansion status matters far less for dual eligibles than for other adults, because full-Medicaid dual eligibility runs through the aged, blind, and disabled Medicaid pathway, which uses SSI-related income and asset counting rather than MAGI and has existed since Medicaid's creation, not the ACA expansion pathway. A Kansan who is 65 or older, or who has a qualifying disability, is screened under the aged/disabled rules regardless of whether Kansas ever expands Medicaid.",
+          "es": "El estatus de no expansión de Kansas importa mucho menos para los duales que para otros adultos, porque la elegibilidad para Medicaid completo se determina por la vía de Medicaid para adultos mayores, ciegos y con discapacidad, que usa el conteo de ingresos y bienes relacionado con SSI en lugar de MAGI. Un residente de Kansas de 65 años o más, o con una discapacidad calificada, se evalúa bajo las reglas de adultos mayores/con discapacidad sin importar si Kansas expande Medicaid."
         }
       ]
     },
     {
       "heading": {
-        "en": "Common Reasons KanCare Dual Eligible Applications Get Denied",
-        "es": "Razones Comunes por las que se Niegan las Solicitudes de Doble Elegibilidad de KanCare"
+        "en": "Common Denial Reasons and How to Appeal in Kansas",
+        "es": "Razones Comunes de Negación y Cómo Apelar en Kansas"
       },
       "paragraphs": [
         {
-          "en": "Kansas DCF denies KanCare and Medicare Savings Program applications for a handful of recurring reasons, and most are fixable with the right documentation or a follow-up appeal.",
-          "es": "El DCF de Kansas niega las solicitudes de KanCare y de los Programas de Ahorros de Medicare por un puñado de razones recurrentes, y la mayoría se pueden solucionar con la documentación correcta o una apelación de seguimiento."
+          "en": "KanCare and Medicare Savings Program applications are denied for a handful of predictable reasons, most of which are fixable if caught early. If your KEES application is denied, DCF must send a written notice explaining the specific reason and your appeal rights. If a KanCare managed care organization denies a service, you must first appeal directly with that plan, and if you want your services to continue during that appeal, you generally must ask within 10 calendar days of the appeal resolution notice.",
+          "es": "Las solicitudes de KanCare y del Programa de Ahorros de Medicare son negadas por un puñado de razones predecibles, la mayoría de las cuales se pueden corregir si se detectan a tiempo. Si su solicitud en KEES es negada, DCF debe enviar un aviso por escrito explicando la razón específica y sus derechos de apelación. Si una organización de cuidado administrado de KanCare niega un servicio, primero debe apelar directamente con ese plan."
         },
         {
-          "en": "If KanCare denies an application, the applicant has 30 days from the date of the denial notice to request a state fair hearing through the Kansas Office of Administrative Hearings, and benefits can sometimes continue during the appeal if the request is filed quickly enough. The denial notice itself must state the specific reason and cite the income or asset figure used.",
-          "es": "Si KanCare niega una solicitud, el solicitante tiene 30 días desde la fecha del aviso de denegación para solicitar una audiencia justa estatal a través de la Oficina de Audiencias Administrativas de Kansas, y los beneficios a veces pueden continuar durante la apelación si la solicitud se presenta con suficiente rapidez."
+          "en": "If the plan-level appeal does not resolve the issue, Kansans can request a state fair hearing through the Office of Administrative Hearings in Topeka. You generally have up to 123 calendar days from the date of the appeal resolution notice to request that hearing, one of the longer windows nationally, though acting quickly is always safer.",
+          "es": "Si la apelación a nivel de plan no resuelve el problema, los residentes de Kansas pueden solicitar una audiencia justa estatal ante la Oficina de Audiencias Administrativas en Topeka. Generalmente tiene hasta 123 días calendario desde la fecha del aviso de resolución de apelación para solicitar esa audiencia, una de las ventanas más largas a nivel nacional, aunque actuar rápido siempre es más seguro."
         }
       ],
       "list": [
-        { "en": "Income exceeds the QMB, SLMB, QI, or aged/blind/disabled KanCare limit for the applicant's household size", "es": "Los ingresos superan el límite de QMB, SLMB, QI o KanCare para personas mayores, ciegas o discapacitadas según el tamaño del hogar" },
-        { "en": "Countable assets exceed $2,000 (individual) or $3,000 (couple) for full KanCare Medicaid, or $9,950/$14,910 for the Medicare Savings Programs", "es": "Los bienes contables superan $2,000 (individual) o $3,000 (pareja) para KanCare Medicaid completo, o $9,950/$14,910 para los Programas de Ahorros de Medicare" },
-        { "en": "Missing or incomplete income and asset documentation within the DCF response deadline", "es": "Documentación de ingresos y bienes faltante o incompleta dentro del plazo de respuesta de DCF" },
-        { "en": "Failure to verify Kansas residency or identity", "es": "No verificar la residencia o identidad en Kansas" },
-        { "en": "Missed the annual QI reapplication window, since QI funding is capped and processed first-come, first-served", "es": "No cumplir con el plazo anual de resolicitud de QI, ya que el financiamiento de QI está limitado y se procesa por orden de llegada" }
+        { "en": "Countable income above the QMB, SLMB, QI, or full Medicaid limit for the household size", "es": "Ingreso contable por encima del límite de QMB, SLMB, QI o Medicaid completo para el tamaño del hogar" },
+        { "en": "Countable assets above the $9,950 (individual) or $14,910 (couple) resource limit", "es": "Bienes contables por encima del límite de recursos de $9,950 (individual) o $14,910 (pareja)" },
+        { "en": "Missing or incomplete verification documents within the response window", "es": "Documentos de verificación faltantes o incompletos dentro de la ventana de respuesta" },
+        { "en": "Not enrolled in Medicare Part A, which is required for QMB, SLMB, and QI eligibility", "es": "No estar inscrito en la Parte A de Medicare, requerido para la elegibilidad de QMB, SLMB y QI" },
+        { "en": "Failure to verify Kansas residency or identity", "es": "No verificar la residencia o identidad en Kansas" }
       ]
     }
   ],
 
   "householdSizeTable": {
     "caption": {
-      "en": "KanCare Medicare Savings Program (QMB) income limits by household size 2026",
-      "es": "Límites de ingresos del Programa de Ahorros de Medicare (QMB) de KanCare por tamaño del hogar 2026"
+      "en": "KanCare QMB (Qualified Medicare Beneficiary) monthly income limits by household size, Kansas 2026",
+      "es": "Límites de ingreso mensual QMB de KanCare por tamaño del hogar, Kansas 2026"
     },
     "year": 2026,
     "rows": [
-      { "size": "1", "incomeLimit": { "en": "$16,200", "es": "$16,200" }, "notes": { "en": "$1,350/month; the individual QMB limit most Kansas dual eligibles use", "es": "$1,350/mes; el límite individual de QMB" } },
-      { "size": "2", "incomeLimit": { "en": "$21,888", "es": "$21,888" }, "notes": { "en": "$1,824/month couple; the standard married-couple QMB limit", "es": "$1,824/mes pareja; límite estándar de QMB para pareja" } },
-      { "size": "3", "incomeLimit": { "en": "$27,388", "es": "$27,388" } },
-      { "size": "4", "incomeLimit": { "en": "$32,888", "es": "$32,888" } },
-      { "size": "5", "incomeLimit": { "en": "$38,388", "es": "$38,388" } },
-      { "size": "6", "incomeLimit": { "en": "$43,888", "es": "$43,888" } },
-      { "size": "7", "incomeLimit": { "en": "$49,388", "es": "$49,388" } },
-      { "size": "8", "incomeLimit": { "en": "$54,888", "es": "$54,888" } },
-      { "size": "Each additional", "incomeLimit": { "en": "+$5,500", "es": "+$5,500" } }
+      { "size": "1", "incomeLimit": { "en": "$1,350/month", "es": "$1,350/mes" }, "notes": { "en": "100% FPL + $20 disregard; most single senior/disabled applicants", "es": "100% FPL + $20 de descuento; solicitante individual" } },
+      { "size": "2", "incomeLimit": { "en": "$1,823/month", "es": "$1,823/mes" }, "notes": { "en": "Married couple applying together", "es": "Pareja casada solicitando juntos" } },
+      { "size": "3", "incomeLimit": { "en": "$2,297/month", "es": "$2,297/mes" } },
+      { "size": "4", "incomeLimit": { "en": "$2,770/month", "es": "$2,770/mes" } },
+      { "size": "5", "incomeLimit": { "en": "$3,243/month", "es": "$3,243/mes" } },
+      { "size": "6", "incomeLimit": { "en": "$3,717/month", "es": "$3,717/mes" } },
+      { "size": "7", "incomeLimit": { "en": "$4,190/month", "es": "$4,190/mes" } },
+      { "size": "8", "incomeLimit": { "en": "$4,663/month", "es": "$4,663/mes" } },
+      { "size": "Each additional", "incomeLimit": { "en": "+$473/month", "es": "+$473/mes" }, "notes": { "en": "Add for each person beyond 8 in household", "es": "Agregar por cada persona adicional más allá de 8 en el hogar" } }
     ],
     "footnote": {
-      "en": "Based on 2026 federal poverty guidelines at 100% FPL plus the $20 general income disregard used for the Qualified Medicare Beneficiary (QMB) program, KanCare's main full dual-eligible gateway. Most Kansas dual eligibles apply as household size 1 or 2. SLMB and QI use higher percentages (120% and 135% FPL); full KanCare Medicaid for the aged, blind, and disabled uses a separate, lower protected income level tied to the SSI federal benefit rate ($994/month individual, $1,491/month couple in 2026).",
-      "es": "Basado en las pautas federales de pobreza de 2026 al 100% del FPL más la exención general de ingresos de $20 usada para el programa de Beneficiario Calificado de Medicare (QMB), la principal puerta de entrada de KanCare a la doble elegibilidad completa. La mayoría de los doble elegibles de Kansas solicitan como tamaño de hogar 1 o 2."
+      "en": "Based on 100% of the 2026 Federal Poverty Guidelines (48 contiguous states plus DC) plus the $20 general income disregard KanCare applies to Medicare Savings Program eligibility. This is the QMB threshold; SLMB (120% FPL) and QI (135% FPL) allow higher income and are shown separately above. Full Medicaid dual eligibility for aged and disabled Kansans uses the lower SSI federal benefit rate of $994/month in 2026, not this QMB table.",
+      "es": "Basado en el 100% de las Pautas Federales de Pobreza 2026 (48 estados contiguos más DC) más el descuento general de ingreso de $20 que KanCare aplica a la elegibilidad del Programa de Ahorros de Medicare. Este es el umbral de QMB; SLMB (120% FPL) y QI (135% FPL) permiten mayores ingresos."
     },
-    "source": "Kansas Department for Children and Families (DCF) 2026 Medicare Savings Program guidelines; ASPE 2026 Poverty Guidelines"
+    "source": "ASPE 2026 Federal Poverty Guidelines, Kansas Department of Health and Environment KanCare Eligibility Guidelines, Medicaid.gov Medicare Savings Programs"
   },
 
   "howToApply": {
     "numberedSteps": [
-      { "en": "Step 1: Gather your documents, including your Medicare card, Social Security award letter or pay stubs, bank statements, and proof of Kansas residency.", "es": "Paso 1: Reúna sus documentos, incluyendo su tarjeta de Medicare, carta de otorgamiento del Seguro Social, estados de cuenta bancarios y comprobante de residencia en Kansas." },
-      { "en": "Step 2: Apply online through the KanCare Clearinghouse at kancare.ks.gov, or submit a paper application through DCF at dcf.ks.gov.", "es": "Paso 2: Solicite en línea a través del KanCare Clearinghouse en kancare.ks.gov, o presente una solicitud en papel a través de DCF en dcf.ks.gov." },
-      { "en": "Step 3: Indicate on the application that you are enrolled in Medicare and want to be screened for both full KanCare Medicaid and the Medicare Savings Programs.", "es": "Paso 3: Indique en la solicitud que está inscrito en Medicare y que desea ser evaluado para KanCare Medicaid completo y los Programas de Ahorros de Medicare." },
-      { "en": "Step 4: Complete a phone interview with a DCF eligibility worker if requested, and respond to any verification request before the stated deadline.", "es": "Paso 4: Complete una entrevista telefónica con un trabajador de elegibilidad de DCF si se solicita, y responda a cualquier solicitud de verificación antes del plazo indicado." },
-      { "en": "Step 5: Wait for a determination, typically within 45 days for KanCare Medicaid (longer if a disability determination is needed); Medicare Savings Program decisions are usually faster.", "es": "Paso 5: Espere una determinación, típicamente dentro de 45 días para KanCare Medicaid; las decisiones de los Programas de Ahorros de Medicare suelen ser más rápidas." },
-      { "en": "Step 6: If approved, confirm your KanCare managed care plan and consider whether a Medicare dual-eligible Special Needs Plan (D-SNP) fits your needs.", "es": "Paso 6: Si se aprueba, confirme su plan de atención administrada de KanCare y considere si un Plan de Necesidades Especiales de doble elegibilidad (D-SNP) se ajusta a sus necesidades." }
+      { "en": "Step 1: Gather your Social Security card, Medicare card, proof of income, proof of assets, and Kansas ID before you start.", "es": "Paso 1: Reúna su tarjeta de Seguro Social, tarjeta de Medicare, comprobante de ingresos, comprobante de bienes e identificación de Kansas antes de comenzar." },
+      { "en": "Step 2: Apply online at the KEES self-service portal (cssp.kees.ks.gov), linked from kancare.ks.gov; this single application screens for full Medicaid, QMB, SLMB, and QI.", "es": "Paso 2: Solicite en línea en el portal KEES (cssp.kees.ks.gov), enlazado desde kancare.ks.gov; esta solicitud evalúa para Medicaid completo, QMB, SLMB y QI." },
+      { "en": "Step 3: Or call the KanCare Clearinghouse at 1-800-792-4884, or visit your local Department for Children and Families office to apply in person.", "es": "Paso 3: O llame al Centro de Intercambio de KanCare al 1-800-792-4884, o visite su oficina local del Departamento para Niños y Familias para solicitar en persona." },
+      { "en": "Step 4: Respond to any document verification requests promptly through the KEES portal to avoid delays or denial.", "es": "Paso 4: Responda con prontitud a cualquier solicitud de verificación de documentos a través del portal KEES para evitar demoras o negación." },
+      { "en": "Step 5: Receive your determination letter stating which category, if any, you were approved for.", "es": "Paso 5: Reciba su carta de determinación indicando en qué categoría, si corresponde, fue aprobado." },
+      { "en": "Step 6: If approved, call the SHICK program for free help enrolling in a Dual Eligible Special Needs Plan (D-SNP).", "es": "Paso 6: Si es aprobado, llame al programa SHICK para obtener ayuda gratuita para inscribirse en un Plan D-SNP." }
     ],
     "govStartingUrl": "https://www.kancare.ks.gov/",
     "documentsNeeded": [
-      { "en": "Social Security number for the applicant (and spouse, if applying as a couple)", "es": "Número de Seguro Social del solicitante (y cónyuge, si corresponde)" },
-      { "en": "Medicare card or Medicare Beneficiary Identifier (MBI)", "es": "Tarjeta de Medicare o Identificador de Beneficiario de Medicare (MBI)" },
-      { "en": "Proof of income (Social Security award letter, pension statements, pay stubs, or 1099s)", "es": "Comprobante de ingresos (carta del Seguro Social, estados de pensión, talones de pago o 1099)" },
-      { "en": "Bank statements and other asset documentation", "es": "Estados de cuenta bancarios y otra documentación de bienes" },
-      { "en": "Proof of Kansas residency", "es": "Comprobante de residencia en Kansas" },
-      { "en": "Identity documents (driver's license, state ID, or birth certificate)", "es": "Documentos de identidad (licencia de conducir, identificación estatal o certificado de nacimiento)" },
-      { "en": "Household composition documentation (marriage certificate or proof of dependents, if applicable)", "es": "Documentación de composición del hogar, si corresponde" },
-      { "en": "Immigration status documents, if the applicant is not a U.S. citizen", "es": "Documentos de estatus migratorio, si corresponde" }
+      { "en": "Social Security card or number for every applicant", "es": "Tarjeta o número de Seguro Social para cada solicitante" },
+      { "en": "Medicare card showing Part A and/or Part B enrollment", "es": "Tarjeta de Medicare que muestre la inscripción en la Parte A y/o Parte B" },
+      { "en": "Proof of income (Social Security award letter, pension statements, pay stubs)", "es": "Comprobante de ingresos (carta de adjudicación del Seguro Social, estados de pensión, talones de pago)" },
+      { "en": "Proof of assets (bank statements, life insurance, vehicle titles, retirement accounts)", "es": "Comprobante de bienes (estados de cuenta bancarios, seguro de vida, títulos de vehículos, cuentas de jubilación)" },
+      { "en": "Proof of Kansas residency (utility bill, lease, or Kansas ID)", "es": "Comprobante de residencia en Kansas (factura de servicios, contrato de arrendamiento, o identificación de Kansas)" },
+      { "en": "Immigration status documents, if applicable", "es": "Documentos de estatus migratorio, si corresponde" }
     ],
     "commonDenialReasons": [
-      { "en": "Income exceeds the QMB, SLMB, QI, or aged/blind/disabled KanCare limit for the household size", "es": "Los ingresos superan el límite aplicable de KanCare según el tamaño del hogar" },
-      { "en": "Countable assets exceed the $2,000/$3,000 KanCare limit or the $9,950/$14,910 Medicare Savings Program limit", "es": "Los bienes contables superan el límite de KanCare o de los Programas de Ahorros de Medicare" },
-      { "en": "Missing or incomplete income and asset documentation", "es": "Documentación de ingresos y bienes faltante o incompleta" },
-      { "en": "Failure to verify Kansas residency or identity", "es": "No verificar la residencia o identidad en Kansas" },
-      { "en": "Missed the annual QI reapplication deadline, since QI funding is capped and first-come, first-served", "es": "No cumplir con el plazo anual de resolicitud de QI" }
+      { "en": "Countable income above the QMB, SLMB, QI, or full Medicaid limit for household size", "es": "Ingreso contable por encima del límite de QMB, SLMB, QI o Medicaid completo" },
+      { "en": "Countable assets above the $9,950 individual / $14,910 couple resource limit", "es": "Bienes contables por encima del límite de $9,950 individual / $14,910 pareja" },
+      { "en": "Missing or incomplete verification documents within the response window", "es": "Documentos de verificación faltantes o incompletos dentro de la ventana de respuesta" },
+      { "en": "Not enrolled in Medicare Part A, which is required for MSP eligibility", "es": "No estar inscrito en la Parte A de Medicare, requerido para la elegibilidad de MSP" }
     ],
     "deadline": {
-      "en": "Year-round; KanCare and the Medicare Savings Programs have no enrollment window, though QI has capped annual funding processed first-come, first-served.",
-      "es": "Todo el año; KanCare y los Programas de Ahorros de Medicare no tienen período de inscripción, aunque QI tiene financiamiento anual limitado procesado por orden de llegada."
+      "en": "Year-round; KanCare and Medicare Savings Programs have no enrollment window",
+      "es": "Todo el año; KanCare y los Programas de Ahorros de Medicare no tienen ventana de inscripción"
     }
   },
-
-  "stateBrand": "KanCare",
 
   "faqs": {
     "en": [
       {
-        "question": "What is the income limit to qualify as dual eligible in Kansas in 2026?",
-        "answer": "It depends on which pathway. The Qualified Medicare Beneficiary (QMB) program, the broadest dual-eligible path, caps monthly income at $1,350 for an individual and $1,824 for a couple in 2026. Full KanCare Medicaid for the aged, blind, and disabled uses a lower protected income level of $994 a month individual and $1,491 a month couple. SLMB and QI allow higher incomes but cover only the Part B premium."
+        "question": "What is the KanCare income limit for a household of 4 in 2026?",
+        "answer": "For the QMB Medicare Savings Program, a Kansas household of 4 qualifies with monthly income at or below $2,770 in 2026, which is 100% of the Federal Poverty Level plus the $20 general income disregard. Full-benefit dual eligibility for aged or disabled Kansans instead uses the lower SSI federal benefit rate, so most full-dual applicants are evaluated as individuals or couples rather than larger households."
       },
       {
-        "question": "What counts as income for KanCare's Medicare Savings Programs?",
-        "answer": "Kansas counts Social Security benefits, pensions, wages, and most other regular income when determining Medicare Savings Program and aged/blind/disabled KanCare eligibility, using non-MAGI (Modified Adjusted Gross Income) rules rather than the MAGI methodology used for children, pregnant women, and parents. DCF applies a $20 general income disregard and may exclude certain in-kind support depending on the applicant's living situation."
+        "question": "What counts as income for KanCare dual-eligible eligibility?",
+        "answer": "Dual-eligible Medicaid categories in Kansas use SSI-related, non-MAGI income counting, not the MAGI (Modified Adjusted Gross Income) rules used for children, pregnant women, and ACA marketplace subsidies. Countable income includes Social Security, pensions, and wages, with a $20 general disregard and additional work-income disregards for earned income. KanCare caseworkers can walk through your specific income sources during the application."
       },
       {
-        "question": "What documents do I need to apply for KanCare dual eligibility?",
-        "answer": "Kansas DCF requires a Medicare card, Social Security number, proof of income (award letters, pay stubs, or 1099s), bank statements and other asset documentation, proof of Kansas residency, and identity documents such as a driver's license or birth certificate. Applicants with dependents also need household composition documentation."
+        "question": "What documents do I need to apply for KanCare dual eligible benefits?",
+        "answer": "You need a Social Security card, your Medicare card showing Part A and/or Part B, proof of income (award letters, pay stubs, pension statements), proof of assets (bank statements, life insurance, vehicle titles), proof of Kansas residency, and immigration status documents if applicable. Gathering these before starting the KEES application avoids processing delays."
       },
       {
-        "question": "What happens if KanCare denies my dual-eligible application?",
-        "answer": "Kansas sends a written denial notice stating the specific reason, usually income or assets over the limit or missing documentation. Applicants have 30 days to request a state fair hearing through the Kansas Office of Administrative Hearings, and reapplying immediately with corrected documentation is also an option if the denial was due to a paperwork gap."
+        "question": "What happens if I'm denied KanCare or a Medicare Savings Program?",
+        "answer": "The Kansas Department for Children and Families sends a written denial notice explaining the specific reason, usually excess income, excess assets, or missing documents. For managed care service denials, you must first appeal with the plan, then you generally have up to 123 calendar days from the appeal resolution notice to request a state fair hearing through the Office of Administrative Hearings."
       },
       {
-        "question": "Can I work and still qualify for a Medicare Savings Program in Kansas?",
-        "answer": "Yes, as long as total countable monthly income, including wages, stays under the QMB, SLMB, or QI limit for the applicant's household size. Kansas does not have a special earned-income disregard for the Medicare Savings Programs beyond the standard $20 general income disregard, so working beneficiaries should track their gross income carefully against the 2026 thresholds."
+        "question": "Can I work and still qualify for a Kansas Medicare Savings Program?",
+        "answer": "Yes. Earned income gets a larger disregard than unearned income, so working Kansans near the QMB, SLMB, or QI limit may still qualify. QDWI specifically exists for people under 65 with disabilities who returned to work and lost Social Security Disability Insurance, allowing income up to roughly 200% of the Federal Poverty Level."
       },
       {
         "question": "Is Kansas a Medicaid expansion state?",
-        "answer": "No. Kansas is one of 10 states that has not expanded Medicaid to 138% of the federal poverty level under the ACA as of 2026. This does not directly affect the dual-eligible pathway, since QMB, SLMB, QI, and aged/blind/disabled KanCare Medicaid are federal floor programs, but it does leave roughly 28,000 working-age Kansans in a coverage gap before they reach Medicare eligibility at 65."
+        "answer": "No. Kansas is one of 10 states that has not adopted full ACA Medicaid expansion (138% FPL for adults). New expansion legislation with a work requirement was introduced in the Kansas Legislature in early 2026 but had not passed. This mostly affects non-disabled adults under 65; dual eligibles qualify through the separate aged and disabled Medicaid pathway regardless of Kansas's expansion status."
       },
       {
-        "question": "How long does the KanCare dual-eligible application take in Kansas?",
-        "answer": "Kansas DCF generally issues a KanCare Medicaid determination within 45 days, or up to 90 days if a disability determination is required. Medicare Savings Program (QMB, SLMB, QI) decisions are typically faster since they do not require a disability review, often landing within a few weeks of a complete application."
+        "question": "How long does the Kansas dual-eligible application process take?",
+        "answer": "The Kansas Department for Children and Families generally processes Medicaid and Medicare Savings Program applications within 45 days for most applicants, or up to 90 days if a disability determination is required. Applying online through the KEES self-service portal with complete documentation is typically the fastest path to a decision."
       },
       {
-        "question": "What is the difference between QMB, SLMB, and QI in Kansas?",
-        "answer": "QMB pays Medicare Part A and B premiums plus all deductibles, coinsurance, and copays, and enrollees owe nothing for Medicare-covered services. SLMB and QI pay only the Part B premium and have no cost-sharing help; QI also has capped annual funding and requires yearly reapplication, while SLMB does not. All three trigger automatic Medicare Part D Extra Help."
+        "question": "What is the difference between full dual eligible and QMB-only in Kansas?",
+        "answer": "A full dual eligible qualifies for complete KanCare Medicaid benefits, including long-term care and Medicaid-only services, plus Medicare cost-sharing help. A QMB-only beneficiary qualifies solely for the Medicare Savings Program: KanCare pays Medicare premiums, deductibles, and coinsurance, but does not add Medicaid's broader benefit package like long-term nursing care."
       }
     ],
     "es": [
       {
-        "question": "¿Cuál es el límite de ingresos para calificar como doble elegible en Kansas en 2026?",
-        "answer": "Depende de la ruta. El programa de Beneficiario Calificado de Medicare (QMB) limita el ingreso mensual a $1,350 para un individuo y $1,824 para una pareja en 2026. KanCare Medicaid completo para personas mayores, ciegas y discapacitadas usa un nivel de ingreso protegido más bajo de $994 al mes individual."
+        "question": "¿Cuál es el límite de ingresos de KanCare para un hogar de 4 en 2026?",
+        "answer": "Para el Programa de Ahorros de Medicare QMB, un hogar de Kansas de 4 personas califica con un ingreso mensual igual o menor a $2,770 en 2026, el 100% del Nivel Federal de Pobreza más el descuento general de $20. La doble elegibilidad completa para adultos mayores o discapacitados usa en cambio la tasa federal de beneficio SSI, más baja."
       },
       {
-        "question": "¿Qué cuenta como ingreso para los Programas de Ahorros de Medicare de KanCare?",
-        "answer": "Kansas cuenta los beneficios del Seguro Social, pensiones, salarios y la mayoría de otros ingresos regulares al determinar la elegibilidad, usando reglas no MAGI en lugar de la metodología MAGI usada para niños, mujeres embarazadas y padres. DCF aplica una exención general de ingresos de $20."
+        "question": "¿Qué cuenta como ingreso para la doble elegibilidad de KanCare?",
+        "answer": "Las categorías duales de Medicaid en Kansas usan el conteo de ingresos relacionado con SSI, no MAGI, que se usa para niños, mujeres embarazadas y subsidios del mercado del ACA. El ingreso contable incluye Seguro Social, pensiones y salarios, con un descuento general de $20 y descuentos adicionales por ingreso del trabajo."
       },
       {
-        "question": "¿Qué documentos necesito para solicitar la doble elegibilidad de KanCare?",
-        "answer": "DCF de Kansas requiere una tarjeta de Medicare, número de Seguro Social, comprobante de ingresos, estados de cuenta bancarios y otra documentación de bienes, comprobante de residencia en Kansas, y documentos de identidad."
+        "question": "¿Qué documentos necesito para solicitar los beneficios de doble elegibilidad de KanCare?",
+        "answer": "Necesita una tarjeta de Seguro Social, su tarjeta de Medicare que muestre la Parte A y/o Parte B, comprobante de ingresos, comprobante de bienes, comprobante de residencia en Kansas, y documentos de estatus migratorio si corresponde. Reunir estos antes de comenzar la solicitud en KEES evita demoras."
       },
       {
-        "question": "¿Qué pasa si KanCare niega mi solicitud de doble elegibilidad?",
-        "answer": "Kansas envía un aviso de denegación por escrito indicando la razón específica. Los solicitantes tienen 30 días para solicitar una audiencia justa estatal a través de la Oficina de Audiencias Administrativas de Kansas."
+        "question": "¿Qué pasa si me niegan KanCare o un Programa de Ahorros de Medicare?",
+        "answer": "El Departamento para Niños y Familias de Kansas envía un aviso de negación por escrito explicando la razón específica, generalmente exceso de ingreso, exceso de bienes o documentos faltantes. Para negaciones de servicios de cuidado administrado, primero debe apelar con el plan, y luego generalmente tiene hasta 123 días calendario para solicitar una audiencia justa estatal."
       },
       {
-        "question": "¿Puedo trabajar y aún calificar para un Programa de Ahorros de Medicare en Kansas?",
-        "answer": "Sí, siempre que el ingreso mensual contable total, incluyendo salarios, se mantenga por debajo del límite de QMB, SLMB o QI según el tamaño del hogar del solicitante."
+        "question": "¿Puedo trabajar y aún calificar para un Programa de Ahorros de Medicare de Kansas?",
+        "answer": "Sí. El ingreso ganado recibe un descuento mayor que el ingreso no ganado, por lo que los residentes de Kansas que trabajan cerca del límite de QMB, SLMB o QI aún pueden calificar. QDWI existe específicamente para personas menores de 65 años con discapacidades que regresaron a trabajar y perdieron el Seguro por Incapacidad del Seguro Social."
       },
       {
         "question": "¿Es Kansas un estado de expansión de Medicaid?",
-        "answer": "No. Kansas es uno de 10 estados que no ha expandido Medicaid al 138% del nivel federal de pobreza bajo el ACA a partir de 2026. Esto deja a aproximadamente 28,000 habitantes de Kansas en edad laboral en una brecha de cobertura."
+        "answer": "No. Kansas es uno de 10 estados que no ha adoptado la expansión completa de Medicaid del ACA (138% FPL para adultos). Se introdujo nueva legislación de expansión con un requisito de trabajo en la Legislatura de Kansas a principios de 2026, pero no se había aprobado. Los duales califican por la vía separada de Medicaid para adultos mayores y con discapacidad."
       },
       {
-        "question": "¿Cuánto tiempo tarda la solicitud de doble elegibilidad de KanCare en Kansas?",
-        "answer": "DCF de Kansas generalmente emite una determinación de KanCare Medicaid dentro de 45 días, o hasta 90 días si se requiere una determinación de discapacidad. Las decisiones de los Programas de Ahorros de Medicare suelen ser más rápidas."
+        "question": "¿Cuánto tiempo toma el proceso de solicitud dual en Kansas?",
+        "answer": "El Departamento para Niños y Familias de Kansas generalmente procesa las solicitudes de Medicaid y del Programa de Ahorros de Medicare dentro de 45 días para la mayoría de los solicitantes, o hasta 90 días si se requiere una determinación de discapacidad. Solicitar en línea a través del portal KEES con documentación completa suele ser el camino más rápido."
       },
       {
-        "question": "¿Cuál es la diferencia entre QMB, SLMB y QI en Kansas?",
-        "answer": "QMB paga las primas de las Partes A y B de Medicare más todos los deducibles, coseguros y copagos. SLMB y QI pagan solo la prima de la Parte B; QI también tiene financiamiento anual limitado y requiere resolicitud anual."
+        "question": "¿Cuál es la diferencia entre dual completo y solo QMB en Kansas?",
+        "answer": "Un dual completo califica para los beneficios completos de Medicaid de KanCare, incluyendo cuidado a largo plazo y servicios exclusivos de Medicaid, además de ayuda con los costos compartidos de Medicare. Un beneficiario solo QMB califica únicamente para el Programa de Ahorros de Medicare: KanCare paga primas, deducibles y coseguro, pero no agrega el paquete de beneficios más amplio de Medicaid."
       }
     ]
   },
 
   "relatedLinks": [
     {
+      "label": { "en": "Can I Have Both Medicare and Medicaid?", "es": "¿Puedo Tener Medicare y Medicaid a la Vez?" },
+      "href": "/qa/can-i-have-both-medicare-and-medicaid"
+    },
+    {
+      "label": { "en": "Medicare Extra Help in Kansas", "es": "Ayuda Adicional de Medicare en Kansas" },
+      "href": "/qa/medicare-extra-help-kansas"
+    },
+    {
       "label": { "en": "Medicaid Income Limits by State", "es": "Límites de Ingresos de Medicaid por Estado" },
       "href": "/medicaid-income-limits"
-    },
-    {
-      "label": { "en": "2026 Federal Poverty Level Chart", "es": "Tabla del Nivel Federal de Pobreza 2026" },
-      "href": "/federal-poverty-level"
-    },
-    {
-      "label": { "en": "Does Medicaid Cover Drug Rehab?", "es": "¿Medicaid Cubre Rehabilitación de Drogas?" },
-      "href": "/qa/does-medicaid-cover-rehab"
     },
     {
       "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
@@ -379,52 +414,52 @@
 
   "sources": [
     {
-      "name": "Medicaid.gov: Medicare and Medicaid Dual Eligibility",
-      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "name": "Medicaid.gov: Medicare Savings Programs",
+      "url": "https://www.medicaid.gov/medicare/medicare-savings-programs/index.html",
       "note": {
-        "en": "Official CMS overview of dual-eligible categories, including QMB, SLMB, and QI federal income methodology.",
-        "es": "Resumen oficial de CMS de las categorías de doble elegibilidad, incluyendo la metodología federal de ingresos de QMB, SLMB y QI."
+        "en": "Federal overview of QMB, SLMB, QI, and QDWI eligibility rules and what each tier pays for.",
+        "es": "Resumen federal de las reglas de elegibilidad de QMB, SLMB, QI y QDWI y lo que paga cada nivel."
       }
     },
     {
-      "name": "Medicare.gov: Get Help Paying Costs",
-      "url": "https://www.medicare.gov/basics/costs/help/medicaid",
+      "name": "Kansas Department of Health and Environment: KanCare Eligibility Guidelines",
+      "url": "https://www.kdhe.ks.gov/185/KanCare-Eligibility-Guidelines",
       "note": {
-        "en": "Medicare.gov explanation of how Medicaid and the Medicare Savings Programs help pay Medicare costs.",
-        "es": "Explicación de Medicare.gov sobre cómo Medicaid y los Programas de Ahorros de Medicare ayudan a pagar los costos de Medicare."
+        "en": "Kansas's official Medicaid agency page covering aged, blind, and disabled eligibility categories including dual-eligible pathways.",
+        "es": "Página oficial de la agencia de Medicaid de Kansas sobre categorías de elegibilidad para adultos mayores, ciegos y con discapacidad."
       }
     },
     {
-      "name": "KanCare (Kansas Department of Health and Environment)",
+      "name": "KanCare Official Site and KEES Self-Service Portal",
       "url": "https://www.kancare.ks.gov/",
       "note": {
-        "en": "Kansas's official KanCare portal for applications, managed care plan information, and program updates.",
-        "es": "Portal oficial de KanCare de Kansas para solicitudes, información de planes de atención administrada y actualizaciones del programa."
+        "en": "Official Kansas application portal for Medicaid, Medicare Savings Programs, appeals, and fair hearings.",
+        "es": "Portal oficial de solicitud de Kansas para Medicaid, Programas de Ahorros de Medicare, apelaciones y audiencias justas."
       }
     },
     {
-      "name": "Kansas Department for Children and Families (DCF)",
-      "url": "https://www.dcf.ks.gov/services/ees/pages/medicalassistance.aspx",
+      "name": "CMS: 2026 Medicare Parts A and B Premiums and Deductibles",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-and-deductibles",
       "note": {
-        "en": "Kansas DCF page on medical assistance eligibility determination, including the aged/blind/disabled and Medicare Savings Program pathways.",
-        "es": "Página de DCF de Kansas sobre determinación de elegibilidad de asistencia médica, incluyendo las rutas de personas mayores, ciegas, discapacitadas y Programas de Ahorros de Medicare."
+        "en": "Official CMS fact sheet with the 2026 Part A and Part B premium, deductible, and coinsurance amounts referenced throughout this page.",
+        "es": "Hoja informativa oficial de CMS con los montos de primas, deducibles y coseguro de 2026 de las Partes A y B."
+      }
+    },
+    {
+      "name": "ASPE: 2026 Federal Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Official HHS poverty guidelines used to calculate Kansas's Medicaid and Medicare Savings Program income limits.",
+        "es": "Pautas oficiales de pobreza de HHS usadas para calcular los límites de ingresos de Medicaid y del Programa de Ahorros de Medicare de Kansas."
       }
     },
     {
       "name": "KFF: Status of State Medicaid Expansion Decisions",
       "url": "https://www.kff.org/medicaid/issue-brief/status-of-state-medicaid-expansion-decisions/",
       "note": {
-        "en": "KFF tracker confirming Kansas remains a non-expansion state as of 2026 and estimating the ACA coverage gap population.",
-        "es": "Rastreador de KFF que confirma que Kansas sigue siendo un estado sin expansión a partir de 2026 y estima la población en la brecha de cobertura del ACA."
+        "en": "Independent tracker confirming Kansas's non-expansion status and the size of the ACA coverage gap.",
+        "es": "Rastreador independiente que confirma el estatus de no expansión de Kansas y el tamaño del vacío de cobertura del ACA."
       }
     }
-  ],
-
-  "topicCluster": "medicaid-eligibility-kansas",
-  "keyTerms": {
-    "en": ["dual eligible medicare medicaid kansas", "kancare dual eligible", "medicare savings program kansas 2026", "qmb slmb qi kansas", "kancare income limits 2026"],
-    "es": ["doble elegibilidad medicare medicaid kansas", "kancare doble elegible", "programa de ahorros de medicare kansas 2026", "limites de ingresos kancare 2026"]
-  },
-  "isLighthouse": false,
-  "isDeprecated": false
+  ]
 }

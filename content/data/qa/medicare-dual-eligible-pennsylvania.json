@@ -1,0 +1,365 @@
+{
+  "slug": "medicare-dual-eligible-pennsylvania",
+  "subtype": "state-eligibility",
+  "pageType": "eligibility",
+  "topicCluster": "medicaid-eligibility-pennsylvania",
+  "stateBrand": "Community HealthChoices (CHC)",
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "question": {
+    "en": "Do I Qualify as a Medicare-Medicaid Dual Eligible in Pennsylvania (2026)? What You Get",
+    "es": "¿Califico como Elegible Dual de Medicare y Medicaid en Pensilvania (2026)? Qué Obtiene"
+  },
+  "shortAnswer": {
+    "en": "Yes, if you have Medicare and meet Pennsylvania's Medical Assistance income and asset limits.",
+    "es": "Sí, si tiene Medicare y cumple los límites de ingresos y activos de la Asistencia Médica de Pensilvania."
+  },
+  "fullAnswer": {
+    "en": "Yes. You qualify as a dual eligible in Pennsylvania if you have Medicare Parts A and B and your income and assets fall within Pennsylvania Medical Assistance limits, about $1,016 a month for one person or up to $2,982 a month for long-term care in 2026. Medicaid then covers Medicare premiums, deductibles, and coinsurance, plus extras like nursing home care. Pennsylvania coordinates full duals 21 and older through Community HealthChoices (CHC), a mandatory managed care program.",
+    "es": "Sí. Usted califica como elegible dual en Pensilvania si tiene las Partes A y B de Medicare y sus ingresos y activos están dentro de los límites de la Asistencia Médica de Pensilvania, aproximadamente $1,016 al mes para una persona o hasta $2,982 al mes para cuidado a largo plazo en 2026. Medicaid entonces cubre las primas, deducibles y coseguro de Medicare, además de extras como el cuidado en hogar de ancianos. Pensilvania coordina a los duales completos de 21 años o más a través de Community HealthChoices (CHC), un programa de atención administrada obligatorio."
+  },
+  "category": "Medicaid",
+  "topic": "Pennsylvania Dual Eligible Medicare-Medicaid Coverage",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-09-12",
+  "readingTime": "9 min read",
+
+  "keyTerms": {
+    "en": ["dual eligible Pennsylvania", "Community HealthChoices Pennsylvania", "Pennsylvania Healthy Horizons dual eligible", "Medicare Medicaid dual eligible 2026", "QMB Pennsylvania 2026", "Pennsylvania Medical Assistance income limits"],
+    "es": ["elegible dual Pensilvania", "Community HealthChoices Pensilvania", "Healthy Horizons dual elegible Pensilvania", "elegible dual Medicare Medicaid 2026", "QMB Pensilvania 2026", "límites de ingresos Asistencia Médica Pensilvania"]
+  },
+
+  "meta": {
+    "title": {
+      "en": "Community HealthChoices: Pennsylvania Dual Eligibles 2026 | CoveredUSA",
+      "es": "Community HealthChoices: Elegibles Duales Pensilvania 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Community HealthChoices combines Medicare and Medicaid in Pennsylvania for full duals 21+. See 2026 income limits, what's covered, and how to apply.",
+      "es": "Community HealthChoices combina Medicare y Medicaid en Pensilvania para duales completos de 21+. Vea los límites de ingresos 2026, qué cubre y cómo solicitar."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Community HealthChoices: What Pennsylvania Dual Eligibles Get in 2026",
+      "es": "Community HealthChoices: Qué Obtienen los Elegibles Duales de Pensilvania en 2026"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Pennsylvania has one of the largest dual-eligible populations in the country, with roughly 460,000 residents enrolled in both Medicare and Medicaid at once. Pennsylvania Medical Assistance, administered by the Department of Human Services (DHS), fills the gaps Medicare leaves behind: premiums, deductibles, coinsurance, and long-term services Medicare does not cover at all, like ongoing nursing home care. Since 2018, Pennsylvania has coordinated most of this dual coverage through Community HealthChoices (CHC), a mandatory managed care program.",
+      "es": "Pensilvania tiene una de las poblaciones de doble elegibilidad más grandes del país, con aproximadamente 460,000 residentes inscritos en Medicare y Medicaid al mismo tiempo. La Asistencia Médica de Pensilvania, administrada por el Departamento de Servicios Humanos (DHS), cubre lo que Medicare deja sin pagar: primas, deducibles, coseguro y servicios a largo plazo que Medicare no cubre en absoluto, como el cuidado continuo en hogares de ancianos. Desde 2018, Pensilvania coordina la mayor parte de esta cobertura dual a través de Community HealthChoices (CHC), un programa de atención administrada obligatorio."
+    },
+    {
+      "en": "Pennsylvania dual eligibility is not one single program. Depending on your income, your need for long-term care, and your age, you land in Community HealthChoices, Pennsylvania's Healthy Horizons Medicare Savings Program, or regular HealthChoices managed care. This guide walks through Pennsylvania's 2026 income and asset limits, exactly what dual status gets you, and how to apply. For the Medicare Savings Program income tiers in detail, see [Pennsylvania Extra Help and Healthy Horizons limits](/en/qa/medicare-extra-help-pennsylvania), and check [Medicaid income limits by state](/en/medicaid-income-limits) and [the 2026 Federal Poverty Level chart](/en/federal-poverty-level) for the national picture.",
+      "es": "La elegibilidad dual en Pensilvania no es un solo programa. Dependiendo de sus ingresos, su necesidad de cuidado a largo plazo y su edad, usted termina en Community HealthChoices, el Programa Healthy Horizons de Ahorros de Medicare de Pensilvania, o la atención administrada regular de HealthChoices. Esta guía repasa los límites de ingresos y activos de Pensilvania para 2026, exactamente qué obtiene con el estatus dual y cómo solicitar. Para los niveles de ingresos del Programa de Ahorros de Medicare, vea los límites de Healthy Horizons de Pensilvania."
+    }
+  ],
+
+  "householdSizeTable": {
+    "caption": {
+      "en": "Pennsylvania Full Medicaid / Community HealthChoices Dual Eligible Income Limits by Household Size, 2026",
+      "es": "Límites de Ingresos para Medicaid Completo / Community HealthChoices Elegible Dual en Pensilvania por Tamaño del Hogar, 2026"
+    },
+    "year": 2026,
+    "rows": [
+      { "size": "1", "incomeLimit": { "en": "$15,960/year ($1,330/month), 100% FPL", "es": "$15,960/año ($1,330/mes), 100% del FPL" }, "notes": { "en": "Most Pennsylvania Healthy Horizons QMB applicants use this benchmark", "es": "La mayoría de los solicitantes QMB de Healthy Horizons usan este punto de referencia" } },
+      { "size": "2", "incomeLimit": { "en": "$21,640/year ($1,803/month)", "es": "$21,640/año ($1,803/mes)" }, "notes": { "en": "Married couple", "es": "Pareja casada" } },
+      { "size": "3", "incomeLimit": { "en": "$27,320/year ($2,277/month)", "es": "$27,320/año ($2,277/mes)" } },
+      { "size": "4", "incomeLimit": { "en": "$33,000/year ($2,750/month)", "es": "$33,000/año ($2,750/mes)" } },
+      { "size": "5", "incomeLimit": { "en": "$38,680/year ($3,223/month)", "es": "$38,680/año ($3,223/mes)" } },
+      { "size": "6", "incomeLimit": { "en": "$44,360/year ($3,697/month)", "es": "$44,360/año ($3,697/mes)" } },
+      { "size": "7", "incomeLimit": { "en": "$50,040/year ($4,170/month)", "es": "$50,040/año ($4,170/mes)" } },
+      { "size": "8", "incomeLimit": { "en": "$55,720/year ($4,643/month)", "es": "$55,720/año ($4,643/mes)" } },
+      { "size": "Each additional", "incomeLimit": { "en": "Add $5,680/year ($473/month) per person", "es": "Agregar $5,680/año ($473/mes) por persona" } }
+    ],
+    "footnote": {
+      "en": "Figures above are 100% of the 2026 federal poverty guidelines, the benchmark Pennsylvania's Healthy Horizons QMB tier uses (with a $20 general income disregard, QMB allows about $1,350/month for one person). Pennsylvania's regular, non-long-term-care Aged, Blind, and Disabled Medical Assistance category uses a lower, largely household-size-independent limit of about $1,016.10/month for one person or $1,524.30/month for a couple. Community HealthChoices (CHC), covering nursing facility and home-and-community-based long-term care, uses a special income limit of $2,982/month (300% of the SSI Federal Benefit Rate) regardless of household size, with an asset limit of $2,000 for a single applicant or $4,000 when both spouses apply.",
+      "es": "Las cifras anteriores son el 100% de las pautas de pobreza federal de 2026, el punto de referencia que usa el nivel QMB de Healthy Horizons de Pensilvania (con un descuento general de ingresos de $20, QMB permite aproximadamente $1,350/mes para una persona). La categoría regular de Asistencia Médica para Ancianos, Ciegos y Discapacitados de Pensilvania, sin cuidado a largo plazo, usa un límite más bajo de aproximadamente $1,016.10/mes para una persona o $1,524.30/mes para una pareja. Community HealthChoices (CHC), que cubre cuidado a largo plazo en instalaciones y en el hogar, usa un límite de ingreso especial de $2,982/mes (300% de la Tasa de Beneficio Federal de SSI), con un límite de activos de $2,000 para un solicitante soltero o $4,000 cuando ambos cónyuges solicitan."
+    },
+    "source": "HHS ASPE 2026 Federal Poverty Guidelines; Pennsylvania Department of Human Services Medical Assistance eligibility standards; CMS Medicare Savings Program guidance"
+  },
+
+  "howToApply": {
+    "govStartingUrl": "https://www.compass.dhs.pa.gov/",
+    "deadline": {
+      "en": "Year-round. Pennsylvania Medical Assistance and Community HealthChoices have no enrollment window, and applications can be filed any month.",
+      "es": "Todo el año. La Asistencia Médica de Pensilvania y Community HealthChoices no tienen periodo de inscripción, y las solicitudes pueden presentarse en cualquier mes."
+    },
+    "numberedSteps": [
+      { "en": "Confirm you are enrolled in Medicare Parts A and B. Dual eligibility in Pennsylvania always starts with active Medicare coverage.", "es": "Confirme que está inscrito en las Partes A y B de Medicare. La elegibilidad dual en Pensilvania siempre comienza con cobertura activa de Medicare." },
+      { "en": "Apply for Pennsylvania Medical Assistance through the COMPASS online portal (compass.dhs.pa.gov), the myCOMPASS PA mobile app, by phone, or in person at your County Assistance Office (CAO). Report income, assets, household composition, and any need for long-term care.", "es": "Solicite la Asistencia Médica de Pensilvania a través del portal en línea COMPASS (compass.dhs.pa.gov), la aplicación myCOMPASS PA, por teléfono, o en persona en su Oficina de Asistencia del Condado (CAO). Reporte ingresos, activos, composición del hogar y cualquier necesidad de cuidado a largo plazo." },
+      { "en": "Wait for an eligibility determination. Pennsylvania CAOs generally decide regular Medical Assistance cases within 45 days and disability-based or long-term-care cases within 90 days, which includes a level-of-care assessment for Community HealthChoices.", "es": "Espere una determinación de elegibilidad. Las CAO de Pensilvania generalmente deciden los casos regulares de Asistencia Médica en 45 días y los casos basados en discapacidad o cuidado a largo plazo en 90 días, lo que incluye una evaluación del nivel de cuidado para Community HealthChoices." },
+      { "en": "If you are approved for full Medical Assistance and are age 21 or older, enroll in a Community HealthChoices plan from AmeriHealth Caritas Pennsylvania (Keystone First CHC in the five-county Philadelphia region), PA Health & Wellness, or UPMC Community HealthChoices, or call Pennsylvania's PA MEDI counseling program at 1-800-783-7067 for free help comparing plans.", "es": "Si es aprobado para Asistencia Médica completa y tiene 21 años o más, inscríbase en un plan de Community HealthChoices de AmeriHealth Caritas Pennsylvania (Keystone First CHC en la región de cinco condados de Filadelfia), PA Health & Wellness, o UPMC Community HealthChoices, o llame al programa de consejería PA MEDI de Pensilvania al 1-800-783-7067 para ayuda gratuita comparando planes." },
+      { "en": "Start using both cards together. Medical Assistance automatically pays your Medicare Part B premium and cost-sharing going forward, and enrollment in any dual-eligible pathway also triggers automatic Extra Help for Medicare Part D drug costs.", "es": "Comience a usar ambas tarjetas juntas. La Asistencia Médica paga automáticamente su prima de la Parte B de Medicare y los costos compartidos en adelante, y la inscripción en cualquier vía de elegibilidad dual también activa Ayuda Adicional automática para los costos de medicamentos de la Parte D de Medicare." }
+    ],
+    "documentsNeeded": [
+      { "en": "Medicare card or Medicare Beneficiary Identifier (MBI) showing active Part A and Part B", "es": "Tarjeta de Medicare o Identificador de Beneficiario de Medicare (MBI) que muestre las Partes A y B activas" },
+      { "en": "Photo ID (Pennsylvania driver's license, state ID, or passport)", "es": "Identificación con foto (licencia de conducir de Pensilvania, identificación estatal o pasaporte)" },
+      { "en": "Proof of Pennsylvania residency (utility bill, lease, or piece of mail)", "es": "Prueba de residencia en Pensilvania (factura de servicios, contrato de arrendamiento o correo)" },
+      { "en": "Social Security number for every household member applying", "es": "Número de Seguro Social de cada miembro del hogar que solicita" },
+      { "en": "Proof of income (Social Security award letter, pension statements, pay stubs)", "es": "Prueba de ingresos (carta de adjudicación del Seguro Social, estados de pensión, talones de pago)" },
+      { "en": "Proof of assets and resources (bank statements, life insurance policies, vehicle titles), since Community HealthChoices and long-term care Medical Assistance apply a $2,000 single / $4,000 couple resource test", "es": "Prueba de activos y recursos (estados de cuenta bancaria, pólizas de seguro de vida, títulos de vehículos), ya que Community HealthChoices y la Asistencia Médica de cuidado a largo plazo aplican una prueba de recursos de $2,000 soltero / $4,000 pareja" },
+      { "en": "Documentation supporting a need for nursing-facility-level care, if applying through the Community HealthChoices long-term-care pathway rather than the regular Aged, Blind, and Disabled category", "es": "Documentación que respalde la necesidad de cuidado a nivel de instalación de cuidado, si solicita a través de la vía de cuidado a largo plazo de Community HealthChoices en lugar de la categoría regular de Ancianos, Ciegos y Discapacitados" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Income above the Pennsylvania regular Aged, Blind, and Disabled limit of about $1,016.10/month for one person, or above the $2,982/month Community HealthChoices long-term-care limit, in 2026. You may still qualify for a Healthy Horizons Medicare Savings Program at a higher income level.", "es": "Ingresos por encima del límite regular de Ancianos, Ciegos y Discapacitados de Pensilvania de aproximadamente $1,016.10/mes para una persona, o por encima del límite de cuidado a largo plazo de Community HealthChoices de $2,982/mes, en 2026. Aún puede calificar para un Programa Healthy Horizons con un nivel de ingresos más alto." },
+      { "en": "Assets above the $2,000 single / $4,000 couple resource limit for Community HealthChoices and long-term care Medical Assistance (your home and one vehicle are generally excluded)", "es": "Activos por encima del límite de recursos de $2,000 soltero / $4,000 pareja para Community HealthChoices y Asistencia Médica de cuidado a largo plazo (su casa y un vehículo generalmente están excluidos)" },
+      { "en": "Not yet enrolled in Medicare Part A and Part B, which is required before Pennsylvania processes any dual-eligible category", "es": "Aún no inscrito en la Parte A y Parte B de Medicare, requisito antes de que Pensilvania procese cualquier categoría de elegible dual" },
+      { "en": "Missing or incomplete income and asset documentation", "es": "Documentación de ingresos y activos faltante o incompleta" },
+      { "en": "Pennsylvania residency not verified, or a level-of-care assessment that does not support a nursing-facility level of need for the Community HealthChoices long-term-care pathway", "es": "Residencia en Pensilvania no verificada, o una evaluación del nivel de cuidado que no respalda un nivel de necesidad de instalación de cuidado para la vía de cuidado a largo plazo de Community HealthChoices" }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Do You Qualify as a Dual Eligible in Pennsylvania?",
+        "es": "Respuesta Directa: ¿Califica Como Elegible Dual en Pensilvania?"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes. You qualify as a dual eligible in Pennsylvania if you have Medicare Parts A and B and your income and assets fall within Pennsylvania Medical Assistance limits, about $1,016 a month for one person or up to $2,982 a month for long-term care in 2026. Medicaid then covers Medicare premiums, deductibles, and coinsurance, plus extras like nursing home care. Pennsylvania coordinates full duals 21 and older through Community HealthChoices (CHC), a mandatory managed care program.",
+          "es": "Sí. Usted califica como elegible dual en Pensilvania si tiene las Partes A y B de Medicare y sus ingresos y activos están dentro de los límites de la Asistencia Médica de Pensilvania, aproximadamente $1,016 al mes para una persona o hasta $2,982 al mes para cuidado a largo plazo en 2026. Medicaid entonces cubre las primas, deducibles y coseguro de Medicare, además de extras como el cuidado en hogar de ancianos. Pensilvania coordina a los duales completos de 21 años o más a través de Community HealthChoices (CHC), un programa de atención administrada obligatorio."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Pennsylvania's Dual Eligible Programs at a Glance",
+        "es": "Programas de Elegibles Duales de Pensilvania de un Vistazo"
+      },
+      "paragraphs": [
+        {
+          "en": "Pennsylvania sorts dual eligibles into three tiers depending on income and long-term care need. Full duals qualify for complete Pennsylvania Medical Assistance benefits on top of Medicare: about $1,016.10 a month for one person in the regular Aged, Blind, and Disabled category, or up to $2,982 a month if they need nursing-facility-level care through Community HealthChoices. Partial duals qualify only for Pennsylvania's Healthy Horizons Medicare Savings Program (QMB, SLMB, or QI), which pays Medicare premiums and cost-sharing but no additional Medical Assistance benefits, at income up to about $1,816 a month for one person in 2026.",
+          "es": "Pensilvania clasifica a los elegibles duales en tres niveles según el ingreso y la necesidad de cuidado a largo plazo. Los duales completos califican para beneficios completos de Asistencia Médica de Pensilvania además de Medicare: aproximadamente $1,016.10 al mes para una persona en la categoría regular de Ancianos, Ciegos y Discapacitados, o hasta $2,982 al mes si necesitan cuidado a nivel de instalación a través de Community HealthChoices. Los duales parciales solo califican para el Programa Healthy Horizons de Ahorros de Medicare de Pensilvania (QMB, SLMB o QI), con ingresos de hasta aproximadamente $1,816 al mes para una persona en 2026."
+        },
+        {
+          "en": "Pennsylvania residents age 21 and older who are full duals, need Medicaid long-term services and supports, or live in a Medicaid-funded nursing facility are required to enroll in Community HealthChoices, which launched region by region starting in southwestern Pennsylvania in January 2018 and reached the entire state by January 2020. Pennsylvania duals under 21 (a small population, often children with disabilities on Medicare through Social Security Disability Insurance) instead stay on regular HealthChoices managed care alongside their Medicare coverage.",
+          "es": "Los residentes de Pensilvania de 21 años o más que son duales completos, necesitan servicios y apoyos a largo plazo de Medicaid, o viven en una instalación de cuidado financiada por Medicaid, deben inscribirse en Community HealthChoices, que se lanzó región por región comenzando en el suroeste de Pensilvania en enero de 2018 y llegó a todo el estado en enero de 2020. Los duales de Pensilvania menores de 21 años, una población pequeña, permanecen en la atención administrada regular de HealthChoices junto con su cobertura de Medicare."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Dual Eligible Status Actually Gets You in Pennsylvania",
+        "es": "Qué Obtiene Realmente con el Estatus de Elegible Dual en Pensilvania"
+      },
+      "paragraphs": [
+        {
+          "en": "Pennsylvania dual eligibles get Medicare and Medicaid working together instead of separately. Medicare pays first for doctor visits, hospital stays, and prescription drugs, and Pennsylvania Medical Assistance pays second, covering costs Medicare leaves behind. In 2026, that means Medical Assistance pays your $202.90/month Part B premium, your $1,736 Part A hospital deductible, your $283 Part B deductible, and the 20% coinsurance Medicare Part B normally leaves you owing. Full duals also get Medical Assistance benefits Medicare does not offer at all: long-term nursing facility care, home and community-based services through Community HealthChoices, non-emergency medical transportation to appointments, and, depending on the plan, routine dental and vision services.",
+          "es": "Los duales de Pensilvania obtienen que Medicare y Medicaid trabajen juntos en lugar de por separado. Medicare paga primero por visitas médicas, estadías hospitalarias y medicamentos recetados, y la Asistencia Médica de Pensilvania paga segundo, cubriendo los costos que Medicare deja pendientes. En 2026, eso significa que la Asistencia Médica paga su prima de la Parte B de $202.90/mes, su deducible hospitalario de la Parte A de $1,736, su deducible de la Parte B de $283, y el coseguro del 20% que la Parte B de Medicare normalmente le deja debiendo. Los duales completos también obtienen beneficios que Medicare no ofrece en absoluto: cuidado en instalaciones de cuidado a largo plazo, servicios en el hogar y la comunidad a través de Community HealthChoices, transporte médico no urgente, y, dependiendo del plan, servicios dentales y de visión de rutina."
+        },
+        {
+          "en": "Every Pennsylvania dual, full or partial, is automatically enrolled in Extra Help (the Part D Low-Income Subsidy), which caps prescription drug copays at a few dollars per prescription and eliminates the Part D deductible. Full duals in Community HealthChoices also get one managed care organization coordinating both their Medicare-adjacent Medicaid benefits and their long-term services, so they are not juggling two separate systems for LTSS and cost-sharing.",
+          "es": "Todo dual de Pensilvania, completo o parcial, se inscribe automáticamente en Ayuda Adicional (el Subsidio de Bajos Ingresos de la Parte D), que limita los copagos de medicamentos recetados a unos pocos dólares por receta y elimina el deducible de la Parte D. Los duales completos en Community HealthChoices también obtienen una organización de atención administrada que coordina tanto sus beneficios de Medicaid como sus servicios a largo plazo, para que no tengan que manejar dos sistemas separados."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Community HealthChoices: Pennsylvania's Managed Care Program for Duals",
+        "es": "Community HealthChoices: El Programa de Atención Administrada de Pensilvania para Duales"
+      },
+      "paragraphs": [
+        {
+          "en": "Pennsylvania's Department of Human Services runs Community HealthChoices as mandatory managed care for three groups: dual eligibles age 21 and older, adults needing Medicaid long-term services and supports because they meet a nursing-facility level of care, and residents already living in a Medicaid-funded nursing facility. Three statewide managed care organizations carry Community HealthChoices: AmeriHealth Caritas Pennsylvania, branded Keystone First Community HealthChoices in the five-county Philadelphia region, PA Health & Wellness, and UPMC Community HealthChoices. Members pick one plan and keep their existing Medicare coverage, whether that is Original Medicare or a separate Medicare Advantage plan, since Community HealthChoices only manages the Medicaid side.",
+          "es": "El Departamento de Servicios Humanos de Pensilvania administra Community HealthChoices como atención administrada obligatoria para tres grupos: duales de 21 años o más, adultos que necesitan servicios y apoyos a largo plazo de Medicaid por cumplir un nivel de cuidado de instalación de cuidado, y residentes que ya viven en una instalación financiada por Medicaid. Tres organizaciones de atención administrada estatales ofrecen Community HealthChoices: AmeriHealth Caritas Pennsylvania, con la marca Keystone First Community HealthChoices en la región de cinco condados de Filadelfia, PA Health & Wellness, y UPMC Community HealthChoices."
+        },
+        {
+          "en": "Community HealthChoices rolled out region by region: southwestern Pennsylvania in January 2018, southeastern Pennsylvania (including Philadelphia) in January 2019, and the remaining Lehigh/Capital, Northeast, Northwest, and Southcentral regions by January 2020, making it statewide. Many Community HealthChoices members also qualify for a Dual Special Needs Plan (D-SNP) on the Medicare side, a type of Medicare Advantage plan built to coordinate with Medicaid, which can add zero-dollar drug copays and extra dental, vision, and hearing benefits on top of what Community HealthChoices provides.",
+          "es": "Community HealthChoices se implementó región por región: el suroeste de Pensilvania en enero de 2018, el sureste de Pensilvania (incluyendo Filadelfia) en enero de 2019, y las regiones restantes de Lehigh/Capital, Noreste, Noroeste y Centro-Sur para enero de 2020, alcanzando todo el estado. Muchos miembros de Community HealthChoices también califican para un Plan de Necesidades Especiales Duales (D-SNP) del lado de Medicare, que puede agregar copagos de medicamentos de cero dólares y beneficios adicionales de dental, visión y audición."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Why Duals Don't Use Regular HealthChoices or the ACA Expansion Group",
+        "es": "Por Qué los Duales No Usan HealthChoices Regular o el Grupo de Expansión ACA"
+      },
+      "paragraphs": [
+        {
+          "en": "Pennsylvania expanded Medicaid effective September 1, 2015, after Governor Tom Wolf replaced the prior administration's modified Healthy PA waiver with traditional ACA expansion, covering adults ages 21 to 64 with household income up to 138% FPL using MAGI (Modified Adjusted Gross Income) rules under the regular HealthChoices managed care umbrella. Because Pennsylvania expanded, most low-income working-age adults avoid the ACA coverage gap that still traps residents of the 10 states that never expanded Medicaid (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming).",
+          "es": "Pensilvania expandió Medicaid a partir del 1 de septiembre de 2015, después de que el gobernador Tom Wolf reemplazara la exención modificada de Healthy PA de la administración anterior con la expansión tradicional de la ACA, cubriendo a adultos de 21 a 64 años con ingresos del hogar de hasta el 138% del FPL usando reglas MAGI bajo el paraguas de atención administrada regular de HealthChoices. Debido a que Pensilvania se expandió, la mayoría de los adultos de bajos ingresos en edad de trabajar evitan la brecha de cobertura ACA que aún atrapa a residentes de los 10 estados que nunca expandieron Medicaid."
+        },
+        {
+          "en": "Once a Pennsylvania resident becomes entitled to Medicare, their Medicaid eligibility shifts away from the MAGI expansion group and regular HealthChoices entirely. Dual eligibles are evaluated under Non-MAGI, SSI-related income and resource rules instead, which is why the household-size income ladder above looks so different from the flat 138% FPL expansion threshold. Family size and household composition both matter less for the regular Aged, Blind, and Disabled category than for MAGI-based programs, since Pennsylvania evaluates most dual-eligible applicants as an individual or couple rather than a full household count.",
+          "es": "Una vez que un residente de Pensilvania tiene derecho a Medicare, su elegibilidad de Medicaid pasa completamente del grupo de expansión MAGI y de HealthChoices regular. Los duales se evalúan bajo reglas de ingresos y recursos Non-MAGI relacionadas con SSI, por lo que la composición del hogar y los activos contables importan mucho más para una solicitud de elegibilidad dual que para una solicitud de expansión de HealthChoices."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Apply for Dual Eligible Coverage in Pennsylvania",
+        "es": "Cómo Solicitar Cobertura de Elegible Dual en Pensilvania"
+      },
+      "paragraphs": [
+        {
+          "en": "Pennsylvania residents apply for the Medicaid half of dual eligibility through the COMPASS online portal at compass.dhs.pa.gov, the same system used for all Pennsylvania Medical Assistance categories, or through their local County Assistance Office (CAO). There is no separate dual-eligible application; caseworkers determine your category (regular Aged, Blind, and Disabled Medical Assistance, Community HealthChoices long-term care, or a Healthy Horizons Medicare Savings Program) based on the income, assets, and care needs you report. Once approved and enrolled in Medicare, Community HealthChoices plan enrollment for those 21 and older happens directly with AmeriHealth Caritas Pennsylvania, PA Health & Wellness, or UPMC Community HealthChoices, or with help from a free PA MEDI counselor.",
+          "es": "Los residentes de Pensilvania solicitan la parte de Medicaid de la elegibilidad dual a través del portal en línea COMPASS en compass.dhs.pa.gov, el mismo sistema usado para todas las categorías de Asistencia Médica de Pensilvania, o a través de su Oficina de Asistencia del Condado (CAO) local. No hay una solicitud separada para elegible dual; los trabajadores de casos determinan su categoría según el ingreso, los activos y las necesidades de cuidado que reporte. Una vez aprobado e inscrito en Medicare, la inscripción en un plan de Community HealthChoices para personas de 21 años o más se realiza directamente con AmeriHealth Caritas Pennsylvania, PA Health & Wellness, o UPMC Community HealthChoices, o con ayuda de un consejero gratuito de PA MEDI."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Common Reasons Applications Get Denied and How to Appeal",
+        "es": "Razones Comunes de Denegación y Cómo Apelar"
+      },
+      "paragraphs": [
+        {
+          "en": "Pennsylvania Medical Assistance denials for dual-eligible applicants most often come down to income slightly over the limit, unreported assets, or missing documentation, and Community HealthChoices applicants can also be denied if a level-of-care assessment does not find a nursing-facility level of need. The County Assistance Office must send a written denial notice explaining the specific reason and your appeal rights. Pennsylvania residents generally have 30 days from the notice date to request a state fair hearing, and requesting it within 10 days of the notice keeps benefits continuing while the appeal is pending.",
+          "es": "Las denegaciones de Asistencia Médica de Pensilvania para solicitantes de elegibilidad dual generalmente se deben a ingresos ligeramente por encima del límite, activos no reportados o documentación faltante, y los solicitantes de Community HealthChoices también pueden ser denegados si una evaluación del nivel de cuidado no encuentra un nivel de necesidad de instalación de cuidado. La Oficina de Asistencia del Condado debe enviar un aviso de denegación por escrito explicando la razón específica y sus derechos de apelación. Los residentes de Pensilvania generalmente tienen 30 días desde la fecha del aviso para solicitar una audiencia justa estatal."
+        },
+        {
+          "en": "Pennsylvania's free counseling program, PA MEDI, reachable at 1-800-783-7067, helps residents in every county with both the Medical Assistance application and any denial appeal at no cost, and the Pennsylvania Health Law Project also offers free legal help specifically for Community HealthChoices and long-term care denials.",
+          "es": "El programa gratuito de consejería de Pensilvania, PA MEDI, al que se puede llamar al 1-800-783-7067, ayuda a los residentes de cada condado tanto con la solicitud de Asistencia Médica como con cualquier apelación de denegación sin costo, y el Pennsylvania Health Law Project también ofrece ayuda legal gratuita específicamente para denegaciones de Community HealthChoices y cuidado a largo plazo."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the income limit to be a dual eligible in Pennsylvania in 2026?",
+        "answer": "Regular, non-long-term-care Medical Assistance dual eligibility in Pennsylvania generally requires income at or below about $1,016.10 a month for one person or $1,524.30 a month for a couple in 2026. Residents needing nursing-facility-level care can qualify through Community HealthChoices at up to $2,982 a month regardless of household size. If your income is higher, you may still qualify for the Healthy Horizons Medicare Savings Program at up to about $1,816 a month for one person."
+      },
+      {
+        "question": "What is Community HealthChoices and who has to enroll?",
+        "answer": "Community HealthChoices (CHC) is Pennsylvania's mandatory managed care program for Medicaid long-term services and supports. You must enroll if you are age 21 or older and are a Medicare-Medicaid dual eligible, need Medicaid-funded long-term services and supports, or live in a Medicaid-funded nursing facility. Three managed care organizations carry it: AmeriHealth Caritas Pennsylvania (Keystone First CHC in the Philadelphia region), PA Health & Wellness, and UPMC Community HealthChoices."
+      },
+      {
+        "question": "What is the difference between QMB, SLMB, and QI in Pennsylvania?",
+        "answer": "All three are tiers of Pennsylvania's Healthy Horizons Medicare Savings Program that pay Medicare costs without granting full Medical Assistance benefits. QMB (about $1,350/month for one person in 2026) pays Medicare Part A and B premiums plus all Medicare cost-sharing. SLMB (about $1,616/month) and QI (about $1,816/month) pay only the Part B premium. Enrollment in any of the three automatically triggers Extra Help for Part D drug costs."
+      },
+      {
+        "question": "What documents do I need to apply for dual eligible coverage in Pennsylvania?",
+        "answer": "You will need your Medicare card, a photo ID, proof of Pennsylvania residency, your Social Security number, proof of income such as a Social Security award letter or pay stubs, and proof of assets like bank statements, since Community HealthChoices and long-term care Medical Assistance apply a $2,000 single / $4,000 couple resource test. Apply through compass.dhs.pa.gov or your County Assistance Office."
+      },
+      {
+        "question": "What happens if my Pennsylvania dual-eligible Medicaid application is denied?",
+        "answer": "Your County Assistance Office sends a written denial notice with the specific reason and your appeal rights. You generally have 30 days from the notice to request a state fair hearing, and requesting within 10 days keeps benefits continuing during the appeal. Pennsylvania's free PA MEDI program at 1-800-783-7067 and the Pennsylvania Health Law Project can help you appeal."
+      },
+      {
+        "question": "Can I work and still be a dual eligible in Pennsylvania?",
+        "answer": "Yes, within limits. Pennsylvania's full Medicaid dual-eligible pathways use Non-MAGI, SSI-related income rules, which allow certain work-related and impairment-related expense deductions before counting your income against the roughly $1,016.10/month (2026) regular limit or the $2,982/month Community HealthChoices long-term-care limit. If earnings push you over the limit, a Healthy Horizons Medicare Savings Program tier may still apply."
+      },
+      {
+        "question": "Is Pennsylvania a Medicaid expansion state, and does that affect duals?",
+        "answer": "Yes. Pennsylvania expanded Medicaid to adults up to 138% FPL effective September 1, 2015, under Governor Tom Wolf. Expansion does not directly apply to dual eligibles, since Medicare entitlement moves you out of the MAGI expansion group. Instead, expansion means Pennsylvania avoids the ACA coverage gap for working-age adults, which indirectly helps residents approaching Medicare age transition smoothly into full Medical Assistance dual-eligible status."
+      },
+      {
+        "question": "What's the difference between Community HealthChoices and regular HealthChoices?",
+        "answer": "Regular HealthChoices is Pennsylvania's Medicaid managed care program for physical health services for the broader Medical Assistance population, including the ACA expansion group. Community HealthChoices (CHC) is a separate, mandatory program specifically for dual eligibles age 21+, people needing long-term services and supports, and nursing facility residents, and it also manages Medicaid long-term care benefits alongside Medicare."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es el límite de ingresos para ser elegible dual en Pensilvania en 2026?",
+        "answer": "La elegibilidad dual regular de Asistencia Médica sin cuidado a largo plazo en Pensilvania generalmente requiere ingresos iguales o inferiores a aproximadamente $1,016.10 al mes para una persona o $1,524.30 al mes para una pareja en 2026. Los residentes que necesitan cuidado a nivel de instalación pueden calificar a través de Community HealthChoices hasta $2,982 al mes sin importar el tamaño del hogar."
+      },
+      {
+        "question": "¿Qué es Community HealthChoices y quién debe inscribirse?",
+        "answer": "Community HealthChoices (CHC) es el programa de atención administrada obligatorio de Pensilvania para servicios y apoyos a largo plazo de Medicaid. Debe inscribirse si tiene 21 años o más y es elegible dual de Medicare y Medicaid, necesita servicios a largo plazo financiados por Medicaid, o vive en una instalación de cuidado financiada por Medicaid. Tres organizaciones de atención administrada lo ofrecen: AmeriHealth Caritas Pennsylvania (Keystone First CHC en la región de Filadelfia), PA Health & Wellness y UPMC Community HealthChoices."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre QMB, SLMB y QI en Pensilvania?",
+        "answer": "Los tres son niveles del Programa Healthy Horizons de Ahorros de Medicare de Pensilvania que pagan costos de Medicare sin otorgar beneficios completos de Asistencia Médica. QMB (aproximadamente $1,350/mes para una persona en 2026) paga las primas de las Partes A y B de Medicare además de todo el costo compartido. SLMB (aproximadamente $1,616/mes) y QI (aproximadamente $1,816/mes) pagan solo la prima de la Parte B."
+      },
+      {
+        "question": "¿Qué documentos necesito para solicitar cobertura de elegible dual en Pensilvania?",
+        "answer": "Necesitará su tarjeta de Medicare, una identificación con foto, prueba de residencia en Pensilvania, su número de Seguro Social, prueba de ingresos como una carta de adjudicación del Seguro Social o talones de pago, y prueba de activos como estados de cuenta bancaria, ya que Community HealthChoices y la Asistencia Médica de cuidado a largo plazo aplican una prueba de recursos de $2,000 soltero / $4,000 pareja."
+      },
+      {
+        "question": "¿Qué pasa si se deniega mi solicitud de Medicaid de elegible dual en Pensilvania?",
+        "answer": "Su Oficina de Asistencia del Condado envía un aviso de denegación por escrito con la razón específica y sus derechos de apelación. Generalmente tiene 30 días desde el aviso para solicitar una audiencia justa estatal, y solicitarla dentro de 10 días mantiene los beneficios continuando durante la apelación. El programa gratuito PA MEDI al 1-800-783-7067 puede ayudarlo a apelar."
+      },
+      {
+        "question": "¿Puedo trabajar y seguir siendo elegible dual en Pensilvania?",
+        "answer": "Sí, dentro de ciertos límites. Las vías de elegibilidad dual de Medicaid completo de Pensilvania usan reglas de ingresos no-MAGI relacionadas con SSI, que permiten ciertas deducciones de gastos relacionados con el trabajo antes de contar su ingreso contra el límite regular de aproximadamente $1,016.10/mes (2026) o el límite de cuidado a largo plazo de Community HealthChoices de $2,982/mes."
+      },
+      {
+        "question": "¿Es Pensilvania un estado de expansión de Medicaid, y afecta esto a los duales?",
+        "answer": "Sí. Pensilvania expandió Medicaid a adultos hasta el 138% del FPL a partir del 1 de septiembre de 2015, bajo el gobernador Tom Wolf. La expansión no aplica directamente a los elegibles duales, ya que el derecho a Medicare los saca del grupo de expansión MAGI. En cambio, la expansión significa que Pensilvania evita la brecha de cobertura ACA para adultos en edad laboral."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre Community HealthChoices y HealthChoices regular?",
+        "answer": "HealthChoices regular es el programa de atención administrada de Medicaid de Pensilvania para servicios de salud física para la población general de Asistencia Médica, incluyendo el grupo de expansión ACA. Community HealthChoices (CHC) es un programa separado y obligatorio específicamente para duales de 21 años o más, personas que necesitan servicios a largo plazo, y residentes de instalaciones de cuidado."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Pennsylvania Extra Help & Healthy Horizons Limits", "es": "Ayuda Adicional y Healthy Horizons de Pensilvania" },
+      "href": "/qa/medicare-extra-help-pennsylvania"
+    },
+    {
+      "label": { "en": "Pennsylvania PACE and PACENET: Do You Qualify?", "es": "PACE y PACENET de Pensilvania: ¿Califica Usted?" },
+      "href": "/qa/state-spap-pennsylvania-pace"
+    },
+    {
+      "label": { "en": "Medicaid Income Limits by State", "es": "Límites de Ingresos de Medicaid por Estado" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "Check Your Eligibility (Screener)", "es": "Verifique su Elegibilidad (Selector)" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Pennsylvania DHS: Community HealthChoices (CHC)",
+      "url": "https://www.pa.gov/agencies/dhs/resources/medicaid/chc",
+      "note": {
+        "en": "Official Pennsylvania Department of Human Services page describing Community HealthChoices eligibility, the three managed care organizations, and the 2018-2020 statewide rollout.",
+        "es": "Página oficial del Departamento de Servicios Humanos de Pensilvania que describe la elegibilidad de Community HealthChoices, las tres organizaciones de atención administrada y la implementación estatal 2018-2020."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Dual Eligible Individuals",
+      "url": "https://www.medicaid.gov/medicaid/eligibility-policy/seniors-medicare-and-medicaid-enrollees",
+      "note": {
+        "en": "Federal CMS overview of dual-eligible categories, including QMB, SLMB, and QI, that underpin Pennsylvania's Healthy Horizons Medicare Savings Program.",
+        "es": "Resumen federal de CMS de las categorías de elegibles duales, incluyendo QMB, SLMB y QI, que sustentan el Programa Healthy Horizons de Pensilvania."
+      }
+    },
+    {
+      "name": "Medicare.gov: Medicare Savings Programs",
+      "url": "https://www.medicare.gov/basics/costs/help/medicare-savings-programs",
+      "note": {
+        "en": "Official CMS explanation of QMB, SLMB, and QI benefits and 2026 national income limits used as the federal baseline Pennsylvania applies through Healthy Horizons.",
+        "es": "Explicación oficial de CMS de los beneficios QMB, SLMB y QI y los límites de ingresos nacionales de 2026 usados como base federal que aplica Pensilvania a través de Healthy Horizons."
+      }
+    },
+    {
+      "name": "Pennsylvania DHS: Apply for Community HealthChoices",
+      "url": "https://www.pa.gov/services/dhs/apply-for-community-healthchoices",
+      "note": {
+        "en": "Official Pennsylvania DHS application page for Community HealthChoices, including the COMPASS portal and County Assistance Office process.",
+        "es": "Página oficial de solicitud del DHS de Pensilvania para Community HealthChoices, incluyendo el portal COMPASS y el proceso de la Oficina de Asistencia del Condado."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Official HHS poverty guidelines used to calculate Pennsylvania's 100% FPL Healthy Horizons income limits by household size for 2026.",
+        "es": "Pautas de pobreza oficiales de HHS usadas para calcular los límites de ingresos de Healthy Horizons del 100% del FPL de Pensilvania por tamaño de hogar para 2026."
+      }
+    },
+    {
+      "name": "KFF: Status of State Medicaid Expansion Decisions",
+      "url": "https://www.kff.org/medicaid/issue-brief/status-of-state-medicaid-expansion-decisions-interactive-map/",
+      "note": {
+        "en": "KFF tracker confirming Pennsylvania expanded Medicaid to 138% FPL effective September 1, 2015, and listing the 10 states that have not expanded.",
+        "es": "Rastreador de KFF que confirma que Pensilvania expandió Medicaid al 138% del FPL a partir del 1 de septiembre de 2015, y enumera los 10 estados que no han expandido."
+      }
+    }
+  ]
+}
