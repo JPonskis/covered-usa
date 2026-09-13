@@ -1,0 +1,398 @@
+{
+  "slug": "medicare-cost-based-on-income",
+  "question": {
+    "en": "Does Medicare Cost More If You Have a Higher Income?",
+    "es": "¿Medicare Cuesta Más Si Tiene un Ingreso Más Alto?"
+  },
+  "shortAnswer": {
+    "en": "Yes. High earners pay IRMAA surcharges on Part B and Part D in 2026.",
+    "es": "Sí. Quienes ganan más pagan recargos IRMAA en la Parte B y D en 2026."
+  },
+  "fullAnswer": {
+    "en": "Yes. If your Modified Adjusted Gross Income (MAGI) on your 2024 tax return was above $109,000 (single) or $218,000 (married filing jointly), Medicare adds an Income-Related Monthly Adjustment Amount (IRMAA) to your 2026 Part B and Part D premiums. The 2026 Part B premium ranges from the standard $202.90 up to $689.90 a month across 6 income tiers, and the Part D surcharge ranges from $0 to $91.00 a month on top of your plan's regular premium. IRMAA applies the same way whether you have Original Medicare with a standalone Part D plan or a Medicare Advantage plan that includes drug coverage; Medigap premiums are never based on income.",
+    "es": "Sí. Si su Ingreso Bruto Ajustado Modificado (MAGI) en su declaración de impuestos de 2024 fue mayor a $109,000 (soltero) o $218,000 (casado declarando en conjunto), Medicare agrega un Monto de Ajuste Mensual Relacionado con el Ingreso (IRMAA) a sus primas de la Parte B y la Parte D en 2026. La prima de la Parte B en 2026 va desde el estándar de $202.90 hasta $689.90 al mes en 6 niveles de ingreso, y el recargo de la Parte D va de $0 a $91.00 al mes sobre la prima regular de su plan. El IRMAA aplica igual ya sea que tenga Medicare Original con un plan independiente de la Parte D o un plan Medicare Advantage que incluya cobertura de medicamentos; las primas de Medigap nunca se basan en el ingreso."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Cost Based on Income (IRMAA)",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "analyzer",
+  "pageType": "coverage",
+  "lastUpdated": "2026-09-13",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "Does Medicare Cost More If You Earn More? (2026) | CoveredUSA",
+      "es": "¿Medicare Cuesta Más Si Gana Más? (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Yes, Medicare Part B and Part D cost more for high earners in 2026 through IRMAA surcharges. See 2026 income brackets, dollar amounts, and how to appeal.",
+      "es": "Sí, la Parte B y D de Medicare cuestan más para quienes ganan más en 2026 por recargos IRMAA. Vea los tramos de ingreso 2026, montos y cómo apelar."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Does Medicare Cost More If You Have a Higher Income? (2026)",
+      "es": "¿Medicare Cuesta Más Si Tiene un Ingreso Más Alto? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Medicare Part B and Part D premiums are not one-size-fits-all. In 2026, roughly 8% of Medicare beneficiaries, the highest earners, pay significantly more than the standard $202.90 monthly Part B premium because of a federal surcharge called the Income-Related Monthly Adjustment Amount, or IRMAA. Social Security calculates IRMAA using a two-year lookback, so the Modified Adjusted Gross Income (MAGI) reported on your 2024 tax return determines what you pay in 2026. IRMAA applies whether you have Original Medicare with a standalone Part D drug plan or a Medicare Advantage plan that includes drug coverage (MA-PD). The surcharge does not buy extra benefits: it is added on top of your existing premium, and it does not change what Part A, Part B, or your drug plan actually covers.",
+      "es": "Las primas de la Parte B y la Parte D de Medicare no son iguales para todos. En 2026, aproximadamente el 8% de los beneficiarios de Medicare, quienes tienen los ingresos más altos, pagan considerablemente más que la prima estándar de $202.90 al mes de la Parte B debido a un recargo federal llamado Monto de Ajuste Mensual Relacionado con el Ingreso, o IRMAA. El Seguro Social calcula el IRMAA usando un periodo retrospectivo de dos años, por lo que el Ingreso Bruto Ajustado Modificado (MAGI) declarado en su formulario de impuestos de 2024 determina lo que paga en 2026. El IRMAA aplica ya sea que tenga Medicare Original con un plan independiente de la Parte D o un plan Medicare Advantage que incluya cobertura de medicamentos (MA-PD). El recargo no compra beneficios adicionales: se suma a su prima existente y no cambia lo que realmente cubren la Parte A, la Parte B o su plan de medicamentos."
+    },
+    {
+      "en": "The 2026 IRMAA income brackets and dollar amounts for Part B and Part D are broken down below, along with which plan types are affected and how to appeal if a life-changing event, such as retirement, divorce, or the death of a spouse, has lowered your income since 2024. If your income is closer to the poverty line, check whether a [Medicare Savings Program](/qa/medicare-savings-program-by-state) or the [Extra Help](/qa/extra-help-eligibility) program could lower your costs instead.",
+      "es": "Esta guía desglosa los tramos exactos de ingreso IRMAA para 2026 y los montos en dólares para la Parte B y la Parte D, muestra qué tipos de plan se ven afectados, y explica cómo apelar si un evento que cambia la vida, como jubilarse, divorciarse o la muerte de un cónyuge, redujo su ingreso desde 2024. Si su ingreso está más cerca del nivel de pobreza, verifique si un Programa de Ahorros de Medicare o el programa Extra Help podrían reducir sus costos."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Plan Type", "Income-Based Surcharge (IRMAA)?", "How It's Calculated", "2026 Cost Impact"],
+      "es": ["Tipo de Plan", "¿Recargo por Ingreso (IRMAA)?", "Cómo se Calcula", "Impacto en el Costo 2026"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Original Medicare (Part B)", "es": "Medicare Original (Parte B)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Social Security adds a surcharge on top of the standard premium based on your MAGI from 2 years earlier", "es": "El Seguro Social agrega un recargo sobre la prima estándar según su MAGI de hace 2 años" },
+          { "en": "$202.90 to $689.90 a month in 2026, depending on income tier", "es": "$202.90 a $689.90 al mes en 2026, según el nivel de ingreso" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Part D (standalone or Medicare Advantage with drug coverage)", "es": "Parte D de Medicare (independiente o Medicare Advantage con cobertura de medicamentos)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "A flat surcharge is added on top of your specific plan's premium, using the same MAGI brackets as Part B", "es": "Se agrega un recargo fijo sobre la prima de su plan específico, usando los mismos tramos de MAGI que la Parte B" },
+          { "en": "$0 to $91.00 a month extra in 2026, on top of your plan's premium", "es": "$0 a $91.00 adicionales al mes en 2026, sobre la prima de su plan" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Advantage (Part C) plan premium", "es": "Prima del plan Medicare Advantage (Parte C)" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "The Part C plan premium itself is set by the insurer, not by income, but enrollees still owe Part B IRMAA and Part D IRMAA if the plan includes drug coverage", "es": "La prima del plan Parte C la fija la aseguradora, no el ingreso, pero los inscritos igual deben el IRMAA de la Parte B y de la Parte D si el plan incluye cobertura de medicamentos" },
+          { "en": "Plan premium (often $0) plus your income-based Part B and Part D surcharges in 2026", "es": "Prima del plan (a menudo $0) más sus recargos de la Parte B y D según su ingreso en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medigap (Medicare Supplement)", "es": "Medigap (Seguro Suplementario de Medicare)" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" },
+          { "en": "Medigap premiums are set by age, health, and location under state rules, never by income", "es": "Las primas de Medigap se fijan por edad, salud y ubicación según reglas estatales, nunca por el ingreso" },
+          { "en": "No IRMAA surcharge; premiums vary by insurer, state, and plan letter in 2026", "es": "Sin recargo IRMAA; las primas varían por aseguradora, estado y letra del plan en 2026" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "IRMAA has applied to Part B premiums since 2007 and to Part D premiums since 2011. It is recalculated every year using a two-year income lookback, so your 2026 premium is based on the MAGI reported on your 2024 federal tax return.",
+      "es": "El IRMAA se aplica a las primas de la Parte B desde 2007 y a las de la Parte D desde 2011. Se recalcula cada año usando un periodo retrospectivo de dos años de ingreso, por lo que su prima de 2026 se basa en el MAGI declarado en su declaración de impuestos federal de 2024."
+    },
+    "source": "CMS 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet, SSA Publication No. 05-10536"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Yes, Medicare Costs More the More You Earn",
+        "es": "Respuesta Directa: Sí, Medicare Cuesta Más Cuanto Más Gana"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes. Medicare charges higher earners more for Part B and Part D through a surcharge called the Income-Related Monthly Adjustment Amount (IRMAA). Social Security looks at your Modified Adjusted Gross Income (MAGI) from two years earlier, so your 2024 tax return sets your 2026 premium. Singles above $109,000 and joint filers above $218,000 pay extra on top of the standard $202.90 Part B premium, up to $689.90 a month, plus a Part D surcharge up to $91.00 a month.",
+          "es": "Sí. Medicare cobra más a quienes ganan más por la Parte B y la Parte D mediante un recargo llamado Monto de Ajuste Mensual Relacionado con el Ingreso (IRMAA). El Seguro Social usa su Ingreso Bruto Ajustado Modificado (MAGI) de dos años antes, así que su declaración de impuestos de 2024 determina su prima de 2026. Los solteros con más de $109,000 y las parejas que declaran en conjunto con más de $218,000 pagan un extra sobre la prima estándar de $202.90 de la Parte B, hasta $689.90 al mes, más un recargo de la Parte D de hasta $91.00 al mes."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How IRMAA Works With Original Medicare (Part B and Part D)",
+        "es": "Cómo Funciona el IRMAA con Medicare Original (Parte B y Parte D)"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare has two premium-bearing parts: Part B (medical insurance) and, if you add a standalone drug plan, Part D. Both are subject to IRMAA. Social Security, not CMS, sends the IRMAA notice each fall, and it is based on the MAGI from the tax return filed two years before the coverage year, meaning your 2024 return sets your 2026 premium. If your income has since dropped due to a documented life-changing event, you can ask Social Security to use a more recent year instead of automatically waiting for the standard two-year lookback to catch up.",
+          "es": "Medicare Original tiene dos partes con prima: la Parte B (seguro médico) y, si agrega un plan de medicamentos independiente, la Parte D. Ambas están sujetas al IRMAA. El Seguro Social, no CMS, envía el aviso de IRMAA cada otoño, y se basa en el MAGI de la declaración de impuestos presentada dos años antes del año de cobertura, lo que significa que su declaración de 2024 determina su prima de 2026. Si su ingreso ha bajado desde entonces por un evento documentado que cambia la vida, puede pedirle al Seguro Social que use un año más reciente en lugar de esperar automáticamente el periodo retrospectivo estándar de dos años."
+        },
+        {
+          "en": "Medicare Part A (hospital insurance) is different: it has no IRMAA and, for the vast majority of beneficiaries who paid Medicare payroll taxes for at least 10 years, no premium at all in 2026. IRMAA only touches Part B and Part D. That means a retiree who owes the top Part B and Part D surcharges could pay $780.90 a month in 2026 just in premiums ($689.90 for Part B plus $91.00 for Part D), even though their Part A hospital coverage remains premium-free.",
+          "es": "La Parte A (seguro hospitalario) es diferente: no tiene IRMAA y, para la gran mayoría de los beneficiarios que pagaron impuestos de nómina de Medicare durante al menos 10 años, no tiene ninguna prima en 2026. El IRMAA solo afecta la Parte B y la Parte D. Eso significa que un jubilado que debe los recargos más altos de la Parte B y la Parte D podría pagar $780.90 al mes en 2026 solo en primas ($689.90 de la Parte B más $91.00 de la Parte D), aunque su cobertura hospitalaria de la Parte A siga sin prima."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicare Advantage and Part D Plans: The Surcharge Still Applies",
+        "es": "Medicare Advantage y los Planes de la Parte D: El Recargo Sigue Aplicando"
+      },
+      "paragraphs": [
+        {
+          "en": "Switching to Medicare Advantage does not make IRMAA go away. Medicare Advantage (Part C) plans replace Original Medicare's Part A and Part B benefits, but enrollees still owe Part B, and if the plan bundles drug coverage (an MA-PD plan), they still owe Part D IRMAA on top of it. Many Medicare Advantage plans advertise a $0 monthly plan premium, but that $0 refers only to the insurer's own charge; it does not cancel the Part B premium (standard or IRMAA-adjusted) that Social Security deducts, and it does not cancel any Part D IRMAA.",
+          "es": "Cambiarse a Medicare Advantage no elimina el IRMAA. Los planes Medicare Advantage (Parte C) reemplazan los beneficios de la Parte A y la Parte B de Medicare Original, pero los inscritos igual deben la Parte B, y si el plan incluye cobertura de medicamentos (un plan MA-PD), también deben el IRMAA de la Parte D además. Muchos planes Medicare Advantage anuncian una prima mensual de $0, pero ese $0 se refiere solo al cargo propio de la aseguradora; no cancela la prima de la Parte B (estándar o ajustada por IRMAA) que descuenta el Seguro Social, ni cancela ningún IRMAA de la Parte D."
+        },
+        {
+          "en": "The one place where plan choice can matter is the plan's own premium and the drug plan's IRMAA base rate. Because Part D IRMAA is a flat dollar amount added to whichever plan you choose, picking a lower-premium MA-PD or standalone Part D plan lowers your total bill even though it does not change the surcharge itself. For 2026, comparing plans on Medicare's Plan Finder at medicare.gov before your Medicare Advantage Open Enrollment window (January 1 to March 31, 2026) can reduce your out-of-pocket cost even if IRMAA still applies.",
+          "es": "El único lugar donde la elección del plan puede importar es en la prima propia del plan y en la base del IRMAA de la Parte D del plan de medicamentos. Como el IRMAA de la Parte D es un monto fijo que se agrega sin importar el plan que elija, escoger un plan MA-PD o de la Parte D independiente con prima más baja reduce su factura total aunque no cambie el recargo en sí. Para 2026, comparar planes en el Buscador de Planes de medicare.gov antes de su Período de Elección Abierta de Medicare Advantage (1 de enero al 31 de marzo de 2026) puede reducir su costo de bolsillo aunque el IRMAA siga aplicando."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "2026 IRMAA Brackets: Part B and Part D Costs by Income",
+        "es": "Tramos de IRMAA 2026: Costos de la Parte B y la Parte D según el Ingreso"
+      },
+      "paragraphs": [
+        {
+          "en": "The table below lists the full 2026 IRMAA bracket structure. Thresholds are based on your Modified Adjusted Gross Income (MAGI) from your 2024 tax return, and the brackets are indexed for inflation each year, so 2026 amounts are higher than the 2025 brackets.",
+          "es": "La siguiente tabla muestra la estructura completa de tramos de IRMAA para 2026. Los umbrales se basan en su Ingreso Bruto Ajustado Modificado (MAGI) de su declaración de impuestos de 2024, y los tramos se ajustan por inflación cada año, por lo que los montos de 2026 son más altos que los tramos de 2025."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "2026 Medicare IRMAA brackets: Part B and Part D costs by income",
+          "es": "Tramos de IRMAA de Medicare 2026: costos de la Parte B y la Parte D según el ingreso"
+        },
+        "headers": {
+          "en": ["2024 MAGI (Single)", "2024 MAGI (Married Filing Jointly)", "2026 Part B Premium", "2026 Part D Surcharge"],
+          "es": ["MAGI 2024 (Soltero)", "MAGI 2024 (Casado Declarando en Conjunto)", "Prima de la Parte B 2026", "Recargo de la Parte D 2026"]
+        },
+        "rows": [
+          { "en": ["$109,000 or less", "$218,000 or less", "$202.90 (standard, no surcharge)", "$0 (no surcharge)"], "es": ["$109,000 o menos", "$218,000 o menos", "$202.90 (estándar, sin recargo)", "$0 (sin recargo)"] },
+          { "en": ["$109,001 to $137,000", "$218,001 to $274,000", "$284.10", "$14.50"], "es": ["$109,001 a $137,000", "$218,001 a $274,000", "$284.10", "$14.50"] },
+          { "en": ["$137,001 to $171,000", "$274,001 to $342,000", "$405.80", "$37.50"], "es": ["$137,001 a $171,000", "$274,001 a $342,000", "$405.80", "$37.50"] },
+          { "en": ["$171,001 to $205,000", "$342,001 to $410,000", "$527.50", "$60.40"], "es": ["$171,001 a $205,000", "$342,001 a $410,000", "$527.50", "$60.40"] },
+          { "en": ["$205,001 to $499,999", "$410,001 to $749,999", "$649.30", "$83.30"], "es": ["$205,001 a $499,999", "$410,001 a $749,999", "$649.30", "$83.30"] },
+          { "en": ["$500,000 or more", "$750,000 or more", "$689.90", "$91.00"], "es": ["$500,000 o más", "$750,000 o más", "$689.90", "$91.00"] }
+        ],
+        "footnote": {
+          "en": "Amounts reflect the standard $202.90 Part B premium multiplied by the statutory 1.4x, 2.0x, 2.6x, 3.2x, and 3.4x tiers and rounded to the nearest $0.10. Married beneficiaries who file a separate tax return face a steeper 2-tier bracket starting near the same $109,000 threshold; confirm your exact amount on your official Social Security IRMAA determination notice.",
+          "es": "Los montos reflejan la prima estándar de $202.90 de la Parte B multiplicada por los niveles legales de 1.4x, 2.0x, 2.6x, 3.2x y 3.4x, redondeados al $0.10 más cercano. Los beneficiarios casados que presentan una declaración de impuestos por separado enfrentan un tramo más pronunciado de 2 niveles que comienza cerca del mismo umbral de $109,000; confirme su monto exacto en su aviso oficial de determinación de IRMAA del Seguro Social."
+        },
+        "source": "SSA Publication No. 05-10536, CMS 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet"
+      }
+    },
+    {
+      "heading": {
+        "en": "How to Appeal an IRMAA Determination",
+        "es": "Cómo Apelar una Determinación de IRMAA"
+      },
+      "paragraphs": [
+        {
+          "en": "If a life-changing event lowered your income after the tax year Social Security used, you do not have to wait two years for your premium to catch up. Qualifying events include marriage, divorce or annulment, death of a spouse, work stoppage or reduction, loss of income-producing property beyond your control, loss of pension income, or an employer settlement payment. You can file Form SSA-44 (Medicare Income-Related Monthly Adjustment Amount, Life-Changing Event) with evidence of both the event and your reduced income.",
+          "es": "Si un evento que cambia la vida redujo su ingreso después del año fiscal que usó el Seguro Social, no tiene que esperar dos años para que su prima se ajuste. Los eventos calificados incluyen matrimonio, divorcio o anulación, muerte del cónyuge, cese o reducción de trabajo, pérdida de propiedad que generaba ingresos por causas fuera de su control, pérdida de ingreso por pensión, o un pago de liquidación del empleador. Puede presentar el Formulario SSA-44 (Monto de Ajuste Mensual Relacionado con el Ingreso de Medicare, Evento que Cambia la Vida) con pruebas del evento y de su ingreso reducido."
+        },
+        {
+          "en": "If you believe Social Security used the wrong tax year or made a calculation error, rather than a life-changing event, you can instead request a reconsideration within 60 days of your IRMAA notice. You will need your notice, your tax return, and any documentation showing the correct MAGI. Most SSA-44 requests are decided within a few weeks, and if approved, the lower premium applies going forward and sometimes retroactively to the start of the coverage year.",
+          "es": "Si cree que el Seguro Social usó el año fiscal equivocado o cometió un error de cálculo, en lugar de un evento que cambia la vida, puede solicitar una reconsideración dentro de los 60 días de su aviso de IRMAA. Necesitará su aviso, su declaración de impuestos y cualquier documentación que muestre el MAGI correcto. La mayoría de las solicitudes SSA-44 se deciden en unas pocas semanas, y si se aprueban, la prima más baja aplica hacia adelante y a veces de forma retroactiva al inicio del año de cobertura."
+        }
+      ],
+      "list": [
+        { "en": "Marriage, divorce, or annulment", "es": "Matrimonio, divorcio o anulación" },
+        { "en": "Death of a spouse", "es": "Muerte del cónyuge" },
+        { "en": "You or your spouse stopped working or reduced hours", "es": "Usted o su cónyuge dejaron de trabajar o redujeron sus horas" },
+        { "en": "Loss of income-producing property because of a disaster or other event beyond your control", "es": "Pérdida de propiedad que generaba ingresos debido a un desastre u otro evento fuera de su control" },
+        { "en": "Loss of pension income", "es": "Pérdida de ingresos por pensión" },
+        { "en": "Employer settlement payment because of the employer's closure or bankruptcy", "es": "Pago de liquidación del empleador debido al cierre o quiebra de la empresa" }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medigap Premiums Are Never Based on Income",
+        "es": "Las Primas de Medigap Nunca se Basan en el Ingreso"
+      },
+      "paragraphs": [
+        {
+          "en": "Medigap, also called Medicare Supplement insurance, works completely differently from Part B and Part D. Insurers price Medigap policies using age, health status, tobacco use, and location, never MAGI. Outside your 6-month Medigap Open Enrollment Period, insurers in most states can use medical underwriting and may deny coverage or charge more because of a preexisting condition, but even then, pricing is never based on income. A retiree earning $500,000 a year and a retiree earning $30,000 a year pay the exact same Medigap premium for the same plan letter, insurer, and zip code in 2026. That makes Medigap an important budgeting tool for high earners who already owe the top IRMAA tiers on Part B: the supplemental coverage itself will not add an income penalty on top.",
+          "es": "Medigap, también llamado seguro suplementario de Medicare, funciona de manera completamente distinta a la Parte B y la Parte D. Las aseguradoras fijan el precio de las pólizas Medigap según la edad, el estado de salud, el uso de tabaco y la ubicación, nunca el MAGI. Fuera de su Período de Inscripción Abierta de Medigap de 6 meses, las aseguradoras en la mayoría de los estados pueden usar suscripción médica y podrían negar cobertura o cobrar más por una condición preexistente, pero aun así, el precio nunca se basa en el ingreso. Un jubilado que gana $500,000 al año y otro que gana $30,000 al año pagan exactamente la misma prima de Medigap por la misma letra de plan, aseguradora y código postal en 2026. Eso convierte a Medigap en una herramienta de presupuesto importante para quienes ganan más y ya deben los niveles más altos de IRMAA en la Parte B: la cobertura suplementaria en sí no agrega una penalización por ingreso."
+        },
+        {
+          "en": "The tradeoff is that Medigap does not include drug coverage, so most Medigap enrollees still pair it with a standalone Part D plan, and that Part D plan's IRMAA surcharge still applies if their income is above the threshold. Comparing Medigap plan letters (A through N) side by side with [Medicare Advantage](/qa/medigap-vs-medicare-advantage) can help higher-income beneficiaries decide whether the predictable Medigap premium or Medicare Advantage's typically lower plan premium (with its IRMAA-only cost variability) fits their 2026 budget better.",
+          "es": "La contraparte es que Medigap no incluye cobertura de medicamentos, así que la mayoría de los inscritos en Medigap la combinan con un plan independiente de la Parte D, y el recargo IRMAA de ese plan de la Parte D sigue aplicando si su ingreso supera el umbral. Comparar las letras de plan de Medigap (A a N) junto con Medicare Advantage puede ayudar a quienes ganan más a decidir si la prima predecible de Medigap o la prima típicamente más baja del plan de Medicare Advantage (con su variabilidad de costo solo por IRMAA) se ajusta mejor a su presupuesto de 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Where to Check Your IRMAA Notice and 2026 Costs",
+        "es": "Dónde Revisar su Aviso de IRMAA y sus Costos de 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Social Security mails IRMAA determination notices each fall, before the new premium year starts, and posts your current premium in your online my Social Security account at ssa.gov. Medicare.gov's Plan Finder shows plan premiums for Medicare Advantage, Part D, and Medigap so you can add your personal IRMAA amount on top and estimate your real 2026 monthly cost. If you also qualify for a Medicare Savings Program or Extra Help based on limited income and resources, those programs can offset Part B and Part D costs even for beneficiaries who are not paying IRMAA.",
+          "es": "El Seguro Social envía los avisos de determinación de IRMAA cada otoño, antes de que comience el nuevo año de primas, y publica su prima actual en su cuenta en línea de my Social Security en ssa.gov. El Buscador de Planes de medicare.gov muestra las primas de los planes de Medicare Advantage, la Parte D y Medigap para que pueda sumar su monto personal de IRMAA y calcular su costo mensual real de 2026. Si también califica para un Programa de Ahorros de Medicare o Extra Help por ingresos y recursos limitados, esos programas pueden compensar los costos de la Parte B y la Parte D incluso para beneficiarios que no pagan IRMAA."
+        },
+        {
+          "en": "The essential health benefits framework from the Affordable Care Act does not govern Medicare directly since Medicare is a separate federal program, but Medicare Advantage plans must still cover everything Original Medicare covers, and many voluntarily model extra benefits, like dental, vision, and hearing, on the kinds of categories ACA-compliant marketplace plans are required to include. Whichever plan type you choose, IRMAA is billed the same way: usually deducted automatically from your Social Security check alongside your standard Part B premium.",
+          "es": "El marco de beneficios esenciales de salud de la Ley de Cuidado de Salud a Bajo Precio (ACA) no rige a Medicare directamente porque Medicare es un programa federal aparte, pero los planes Medicare Advantage igual deben cubrir todo lo que cubre Medicare Original, y muchos modelan voluntariamente beneficios adicionales, como dental, visión y audición, según las categorías que los planes del mercado conformes con el ACA deben incluir. Sea cual sea el tipo de plan que elija, el IRMAA se cobra de la misma manera: usualmente se descuenta automáticamente de su cheque del Seguro Social junto con su prima estándar de la Parte B."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What income counts toward Medicare's IRMAA calculation?",
+        "answer": "Social Security uses your Modified Adjusted Gross Income (MAGI): adjusted gross income from your tax return plus tax-exempt interest, such as municipal bond interest. It includes wages, self-employment income, investment gains, pension and IRA withdrawals, and taxable Social Security benefits. Your 2026 IRMAA is based on the MAGI reported on your 2024 federal tax return, the most recent return the IRS has on file when Social Security sets premiums each fall."
+      },
+      {
+        "question": "Can I avoid IRMAA by switching to Medicare Advantage?",
+        "answer": "No. IRMAA is tied to your income, not your plan type. Medicare Advantage enrollees still owe the Part B IRMAA surcharge, and if their plan includes drug coverage, the Part D IRMAA surcharge too. Choosing a lower-premium plan can lower your total monthly bill, but it cannot cancel the income-based surcharge itself."
+      },
+      {
+        "question": "How do I appeal my 2026 IRMAA determination?",
+        "answer": "File Form SSA-44 if a life-changing event, such as retirement, divorce, or the death of a spouse, lowered your income after the tax year Social Security used. Attach proof of the event and your updated income. If you think Social Security used incorrect information rather than an outdated income year, request a reconsideration within 60 days of your notice instead."
+      },
+      {
+        "question": "What if my income has dropped since my 2024 tax return?",
+        "answer": "If the drop was caused by a qualifying life-changing event, like work reduction, divorce, or loss of pension income, submit Form SSA-44 with documentation so Social Security can use a more current estimate instead of the standard two-year lookback. Without a qualifying event, Social Security must wait for your income to actually change on a filed tax return before adjusting your premium."
+      },
+      {
+        "question": "Do Medicare Advantage and Part D use the same IRMAA brackets?",
+        "answer": "Yes. Part D IRMAA uses the identical MAGI thresholds as Part B: $109,000 for single filers and $218,000 for joint filers in 2026, rising through the same six tiers. The dollar surcharge amounts differ ($14.50 to $91.00 for Part D versus $284.10 to $689.90 in total Part B premium), but the income brackets that trigger each tier are the same."
+      },
+      {
+        "question": "Are Medigap premiums based on income like Part B and Part D?",
+        "answer": "No. Medigap premiums are set by age, health, tobacco use, and location under state insurance rules and never factor in your MAGI or IRMAA status. A high earner and a low earner pay the same Medigap premium for the identical plan letter, insurer, and zip code in 2026."
+      },
+      {
+        "question": "When will I find out my 2026 IRMAA amount?",
+        "answer": "Social Security typically mails IRMAA determination notices in the fall before the new premium year begins, using the most recent tax return the IRS has on file, generally your 2024 return for 2026 premiums. You can also check your current premium anytime in your online my Social Security account at ssa.gov."
+      },
+      {
+        "question": "What is the difference between the standard Part B premium and IRMAA?",
+        "answer": "The standard Part B premium is what roughly 92% of beneficiaries pay: $202.90 a month in 2026. IRMAA is an additional surcharge added only for the highest-earning roughly 8% of beneficiaries, based on their MAGI from two years earlier. IRMAA is not a separate program: it is simply a higher total premium for Part B and Part D."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué ingreso cuenta para el cálculo del IRMAA de Medicare?",
+        "answer": "El Seguro Social usa su Ingreso Bruto Ajustado Modificado (MAGI): el ingreso bruto ajustado de su declaración de impuestos más los intereses exentos de impuestos, como los de bonos municipales. Incluye salarios, ingresos por cuenta propia, ganancias de inversión, retiros de pensión e IRA, y beneficios del Seguro Social sujetos a impuestos. Su IRMAA de 2026 se basa en el MAGI declarado en su declaración de impuestos federal de 2024, la más reciente que el IRS tiene registrada cuando el Seguro Social fija las primas cada otoño."
+      },
+      {
+        "question": "¿Puedo evitar el IRMAA cambiándome a Medicare Advantage?",
+        "answer": "No. El IRMAA depende de su ingreso, no del tipo de plan. Los inscritos en Medicare Advantage igual deben el recargo IRMAA de la Parte B, y si su plan incluye cobertura de medicamentos, también el recargo IRMAA de la Parte D. Elegir un plan con prima más baja puede reducir su factura total, pero no puede cancelar el recargo basado en el ingreso."
+      },
+      {
+        "question": "¿Cómo apelo mi determinación de IRMAA de 2026?",
+        "answer": "Presente el Formulario SSA-44 si un evento que cambia la vida, como jubilarse, divorciarse o la muerte de un cónyuge, redujo su ingreso después del año fiscal que usó el Seguro Social. Adjunte prueba del evento y su ingreso actualizado. Si cree que el Seguro Social usó información incorrecta en lugar de un año de ingreso desactualizado, solicite una reconsideración dentro de los 60 días de su aviso."
+      },
+      {
+        "question": "¿Qué pasa si mi ingreso bajó desde mi declaración de impuestos de 2024?",
+        "answer": "Si la baja se debió a un evento calificado que cambia la vida, como reducción de trabajo, divorcio o pérdida de ingreso por pensión, presente el Formulario SSA-44 con documentación para que el Seguro Social use una estimación más actual en lugar del periodo retrospectivo estándar de dos años. Sin un evento calificado, el Seguro Social debe esperar a que su ingreso realmente cambie en una declaración de impuestos presentada antes de ajustar su prima."
+      },
+      {
+        "question": "¿Medicare Advantage y la Parte D usan los mismos tramos de IRMAA?",
+        "answer": "Sí. El IRMAA de la Parte D usa los mismos umbrales de MAGI que la Parte B: $109,000 para declarantes solteros y $218,000 para declarantes conjuntos en 2026, subiendo por los mismos seis niveles. Los montos del recargo difieren ($14.50 a $91.00 para la Parte D frente a $284.10 a $689.90 en la prima total de la Parte B), pero los tramos de ingreso que activan cada nivel son los mismos."
+      },
+      {
+        "question": "¿Las primas de Medigap se basan en el ingreso como la Parte B y la Parte D?",
+        "answer": "No. Las primas de Medigap se fijan según la edad, la salud, el uso de tabaco y la ubicación bajo reglas estatales de seguros, y nunca consideran su MAGI ni su estado de IRMAA. Alguien que gana mucho y alguien que gana poco pagan la misma prima de Medigap por la misma letra de plan, aseguradora y código postal en 2026."
+      },
+      {
+        "question": "¿Cuándo sabré mi monto de IRMAA de 2026?",
+        "answer": "El Seguro Social generalmente envía los avisos de determinación de IRMAA en otoño, antes de que comience el nuevo año de primas, usando la declaración de impuestos más reciente que el IRS tiene registrada, generalmente su declaración de 2024 para las primas de 2026. También puede revisar su prima actual en cualquier momento en su cuenta en línea de my Social Security en ssa.gov."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre la prima estándar de la Parte B y el IRMAA?",
+        "answer": "La prima estándar de la Parte B es lo que paga aproximadamente el 92% de los beneficiarios: $202.90 al mes en 2026. El IRMAA es un recargo adicional que se agrega solo para el aproximadamente 8% de beneficiarios con mayores ingresos, según su MAGI de dos años antes. El IRMAA no es un programa separado: es simplemente una prima total más alta para la Parte B y la Parte D."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Estimate Your Medicare Costs", "es": "Calcule sus Costos de Medicare" },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": { "en": "Medicare Savings Programs by State", "es": "Programas de Ahorros de Medicare por Estado" },
+      "href": "/qa/medicare-savings-program-by-state"
+    },
+    {
+      "label": { "en": "Extra Help Eligibility for Part D", "es": "Elegibilidad para Extra Help de la Parte D" },
+      "href": "/qa/extra-help-eligibility"
+    },
+    {
+      "label": { "en": "Medigap vs. Medicare Advantage", "es": "Medigap vs. Medicare Advantage" },
+      "href": "/qa/medigap-vs-medicare-advantage"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "CMS: 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+      "note": {
+        "en": "Official CMS release of the 2026 standard Part B premium ($202.90), Part A inpatient deductible ($1,736), and Part D IRMAA amounts.",
+        "es": "Publicación oficial de CMS de la prima estándar de la Parte B de 2026 ($202.90), el deducible hospitalario de la Parte A ($1,736) y los montos IRMAA de la Parte D."
+      }
+    },
+    {
+      "name": "Social Security Administration: Medicare Premiums, Rules for Higher-Income Beneficiaries (Publication No. 05-10536)",
+      "url": "https://www.ssa.gov/pubs/EN-05-10536.pdf",
+      "note": {
+        "en": "SSA's official explanation of how IRMAA is calculated, the MAGI lookback rule, and how to appeal using Form SSA-44.",
+        "es": "Explicación oficial de SSA sobre cómo se calcula el IRMAA, la regla del periodo retrospectivo de MAGI y cómo apelar con el Formulario SSA-44."
+      }
+    },
+    {
+      "name": "Social Security Administration: Request to Lower an IRMAA",
+      "url": "https://www.ssa.gov/medicare/lower-irmaa",
+      "note": {
+        "en": "Official SSA page to file Form SSA-44 online for a life-changing event, or to request a reconsideration of your IRMAA determination.",
+        "es": "Página oficial de SSA para presentar el Formulario SSA-44 en línea por un evento que cambia la vida, o para solicitar una reconsideración de su determinación de IRMAA."
+      }
+    },
+    {
+      "name": "KFF: Income-Relating Medicare Part B and Part D Premiums",
+      "url": "https://www.kff.org/medicare/income-relating-medicare-part-b-and-part/",
+      "note": {
+        "en": "KFF issue brief on the history and mechanics of income-related Medicare premiums, including bracket structure and revenue impact.",
+        "es": "Informe de KFF sobre la historia y mecánica de las primas de Medicare relacionadas con el ingreso, incluida la estructura de tramos y el impacto en los ingresos."
+      }
+    }
+  ],
+
+  "subtype": "coverage",
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": ["medicare cost based on income", "medicare irmaa 2026", "medicare premiums by income 2026", "irmaa brackets 2026", "medicare part b cost high income"],
+    "es": ["costo de medicare segun el ingreso", "irmaa medicare 2026", "primas de medicare segun ingreso 2026", "tramos irmaa 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Read your Social Security IRMAA notice carefully to see which income year and tax filing status Social Security used to set your 2026 premium.", "es": "Paso 1: Lea con cuidado su aviso de IRMAA del Seguro Social para ver qué año de ingreso y estado civil tributario usó el Seguro Social para fijar su prima de 2026." },
+      { "en": "Step 2: Decide whether you have a qualifying life-changing event (retirement, divorce, death of a spouse, work stoppage, loss of pension income, or loss of income-producing property) since the tax year Social Security used.", "es": "Paso 2: Determine si tiene un evento calificado que cambia la vida (jubilación, divorcio, muerte del cónyuge, cese de trabajo, pérdida de ingreso por pensión, o pérdida de propiedad que generaba ingresos) desde el año fiscal que usó el Seguro Social." },
+      { "en": "Step 3: Gather documentation, such as a pension letter, divorce decree, death certificate, or signed statement estimating your current income.", "es": "Paso 3: Reúna documentación, como una carta de pensión, un decreto de divorcio, un acta de defunción, o una declaración firmada que estime su ingreso actual." },
+      { "en": "Step 4: File Form SSA-44 online, by mail, or in person at your local Social Security office.", "es": "Paso 4: Presente el Formulario SSA-44 en línea, por correo, o en persona en su oficina local del Seguro Social." },
+      { "en": "Step 5: If you believe Social Security made an error rather than using an outdated income year, request a reconsideration within 60 days of your notice instead of filing Form SSA-44.", "es": "Paso 5: Si cree que el Seguro Social cometió un error en lugar de usar un año de ingreso desactualizado, solicite una reconsideración dentro de los 60 días de su aviso en lugar de presentar el Formulario SSA-44." },
+      { "en": "Step 6: Watch for Social Security's written decision and check your updated premium in your online my Social Security account or your next Social Security payment.", "es": "Paso 6: Esté atento a la decisión por escrito del Seguro Social y revise su prima actualizada en su cuenta en línea de my Social Security o en su próximo pago del Seguro Social." }
+    ],
+    "govStartingUrl": "https://www.ssa.gov/medicare/lower-irmaa",
+    "documentsNeeded": [
+      { "en": "Completed Form SSA-44 (Medicare Income-Related Monthly Adjustment Amount, Life-Changing Event)", "es": "Formulario SSA-44 completo (Monto de Ajuste Mensual Relacionado con el Ingreso de Medicare, Evento que Cambia la Vida)" },
+      { "en": "Proof of the life-changing event (marriage certificate, divorce decree, death certificate, or employer statement)", "es": "Prueba del evento que cambia la vida (certificado de matrimonio, decreto de divorcio, acta de defunción, o carta del empleador)" },
+      { "en": "Estimate or proof of your current-year income (pay stub, pension statement, or signed statement)", "es": "Estimación o prueba de su ingreso del año actual (recibo de pago, estado de cuenta de pensión, o declaración firmada)" },
+      { "en": "Your most recent IRMAA determination notice from Social Security", "es": "Su aviso más reciente de determinación de IRMAA del Seguro Social" },
+      { "en": "Your Social Security number and Medicare number", "es": "Su número de Seguro Social y su número de Medicare" }
+    ],
+    "commonDenialReasons": [
+      { "en": "The event does not match one of Social Security's 7 qualifying life-changing events", "es": "El evento no coincide con uno de los 7 eventos calificados que cambian la vida del Seguro Social" },
+      { "en": "Insufficient documentation of the income change", "es": "Documentación insuficiente del cambio de ingreso" },
+      { "en": "Income, even after the life-changing event, is still above the threshold for your bracket", "es": "El ingreso, incluso después del evento que cambia la vida, sigue por encima del umbral de su tramo" },
+      { "en": "Missed the 60-day window for a reconsideration request based on an SSA error", "es": "Se pasó el plazo de 60 días para solicitar una reconsideración por un error de SSA" }
+    ],
+    "deadline": {
+      "en": "No deadline to file Form SSA-44 for a life-changing event; reconsideration requests for an SSA error must be filed within 60 days of your IRMAA notice.",
+      "es": "No hay fecha límite para presentar el Formulario SSA-44 por un evento que cambia la vida; las solicitudes de reconsideración por un error de SSA deben presentarse dentro de los 60 días del aviso de IRMAA."
+    }
+  }
+}
