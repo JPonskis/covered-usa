@@ -1,0 +1,419 @@
+{
+  "slug": "medicare-to-pay-for-glp1",
+  "subtype": "coverage",
+  "topicCluster": "medicare-coverage",
+  "pageType": "coverage",
+  "question": {
+    "en": "Will Medicare Pay for GLP-1 Drugs in 2026?",
+    "es": "¿Medicare Pagará por Medicamentos GLP-1 en 2026?"
+  },
+  "shortAnswer": {
+    "en": "It depends: Medicare pays diabetes GLP-1s normally, weight-loss ones rarely.",
+    "es": "Depende: Medicare paga normal los GLP-1 de diabetes, rara vez los de peso."
+  },
+  "fullAnswer": {
+    "en": "It depends on why the drug is prescribed. For diabetes-indicated GLP-1s such as Ozempic, Mounjaro, Trulicity, and Rybelsus, Medicare Part D pays under the standard 2026 three-phase benefit: you cover the first $615 (deductible phase), pay 25% coinsurance in the initial coverage phase, then $0 once your spending reaches the $2,100 out-of-pocket cap. Medicare pays $0 toward a GLP-1 prescribed only for weight loss unless one of two exceptions applies: the Wegovy cardiovascular-risk indication, or the July 2026 through December 2027 GLP-1 Bridge Program, which pays through a flat $50-per-month beneficiary copay instead of the standard phases.",
+    "es": "Depende del motivo de la receta. Para GLP-1 con indicacion de diabetes como Ozempic, Mounjaro, Trulicity y Rybelsus, la Parte D de Medicare paga bajo el beneficio estandar de tres fases de 2026: usted cubre los primeros $615 (fase deducible), paga 25% de coaseguro en la fase de cobertura inicial, y luego $0 una vez que su gasto llega al tope de $2,100. Medicare paga $0 por un GLP-1 recetado solo para bajar de peso a menos que aplique una de dos excepciones: la indicacion cardiovascular de Wegovy, o el Programa Puente GLP-1 de julio 2026 a diciembre 2027, que paga mediante un copago fijo de $50 al mes en lugar de las fases estandar."
+  },
+  "category": "Prescription Drugs",
+  "topic": "Medicare GLP-1 Payment and Cost-Sharing",
+  "medicalSpecialty": "Endocrinology",
+  "ctaTarget": "analyzer",
+  "lastUpdated": "2026-09-15",
+  "readingTime": "8 min read",
+  "keyTerms": {
+    "en": [
+      "will medicare pay for glp-1",
+      "medicare glp-1 cost sharing 2026",
+      "medicare part d deductible 2026",
+      "glp-1 prior authorization medicare",
+      "medicare glp-1 bridge program copay"
+    ],
+    "es": [
+      "medicare pagara glp-1",
+      "costo compartido glp-1 medicare 2026",
+      "deducible parte d 2026",
+      "autorizacion previa glp-1 medicare",
+      "copago programa puente glp-1"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "meta": {
+    "title": {
+      "en": "Will Medicare Pay for GLP-1 Drugs? Cost-Sharing 2026 | CoveredUSA",
+      "es": "¿Medicare Pagara GLP-1? Costo Compartido 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicare pays standard Part D cost-sharing for diabetes GLP-1s in 2026: $615 deductible, 25% coinsurance, then $0 after the $2,100 cap. Weight-loss GLP-1s pay differently.",
+      "es": "Medicare paga costo compartido estandar de Parte D por GLP-1 de diabetes en 2026: deducible de $615, 25% de coaseguro, luego $0 tras el tope de $2,100. Los GLP-1 para peso pagan distinto."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Will Medicare Pay for GLP-1 Drugs? (2026)",
+      "es": "¿Medicare Pagara por Medicamentos GLP-1? (2026)"
+    }
+  },
+  "introParagraphs": [
+    {
+      "en": "Medicare beneficiaries asking whether the program will pay for a GLP-1 prescription are usually asking two different questions at once: is the drug covered at all, and if so, how much will Medicare actually pay versus how much comes out of my pocket. The payment side has its own separate set of rules from the coverage side. A drug can be technically covered and still leave you owing hundreds of dollars a month, depending on which phase of the 2026 Part D benefit you are in, which pharmacy tier the drug sits on, and whether prior authorization has cleared.",
+      "es": "Los beneficiarios de Medicare que preguntan si el programa pagara por una receta de GLP-1 suelen hacer dos preguntas distintas a la vez: si el medicamento esta cubierto y, de ser asi, cuanto pagara Medicare realmente frente a cuanto sale de su bolsillo. El lado del pago tiene sus propias reglas separadas del lado de la cobertura. Un medicamento puede estar tecnicamente cubierto y aun asi dejarle debiendo cientos de dolares al mes, segun la fase del beneficio de la Parte D de 2026 en la que se encuentre."
+    },
+    {
+      "en": "Payment mechanics are the focus of this page: the three-phase 2026 Part D cost structure, the actual dollar math for diabetes-indicated GLP-1s and for the two weight-loss payment paths, the prior authorization gate that has to clear before Medicare pays a claim, the appeals process when a plan refuses payment, and how Extra Help changes the math. For the underlying coverage question (which drugs qualify at all), see [does Medicare cover GLP-1 drugs for weight loss](/en/qa/does-medicare-cover-glp1-weight-loss). For Bridge Program mechanics in depth, see [Medicare GLP-1 Bridge Program](/en/drug/medicare-glp1-bridge-program).",
+      "es": "La mecanica de pago es el enfoque de esta pagina: la estructura de costos de tres fases de la Parte D en 2026, las matematicas reales para GLP-1 con indicacion de diabetes y para las dos vias de pago por peso, la autorizacion previa que debe aprobarse antes de que Medicare pague un reclamo, el proceso de apelacion cuando un plan rechaza el pago, y como la Ayuda Adicional cambia las cuentas."
+    }
+  ],
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Payment Scenario", "Deductible Phase (2026)", "Initial Coverage Phase (25% Coinsurance)", "Catastrophic Phase ($2,100 Cap Reached)"],
+      "es": ["Escenario de pago", "Fase deducible (2026)", "Fase de cobertura inicial (25% coaseguro)", "Fase catastrofica (tope de $2,100)"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Diabetes indication (Ozempic, Mounjaro, Trulicity, Rybelsus)", "es": "Indicacion de diabetes (Ozempic, Mounjaro, Trulicity, Rybelsus)" },
+          { "value": { "en": "You pay 100% up to $615", "es": "Usted paga 100% hasta $615" }, "status": "partial" },
+          { "value": { "en": "You pay about 25% (roughly $250 to $270/mo at list price)", "es": "Usted paga cerca de 25% (aprox. $250 a $270/mes a precio de lista)" }, "status": "partial" },
+          { "value": { "en": "You pay $0 for the rest of the year", "es": "Usted paga $0 el resto del ano" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Wegovy, cardiovascular-risk indication", "es": "Wegovy, indicacion de riesgo cardiovascular" },
+          { "value": { "en": "You pay 100% up to $615", "es": "Usted paga 100% hasta $615" }, "status": "partial" },
+          { "value": { "en": "You pay about 25% (roughly $335/mo at list price)", "es": "Usted paga cerca de 25% (aprox. $335/mes a precio de lista)" }, "status": "partial" },
+          { "value": { "en": "You pay $0 for the rest of the year", "es": "Usted paga $0 el resto del ano" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Bridge Program (Wegovy, Zepbound KwikPen, Foundayo, Jul 2026-Dec 2027)", "es": "Programa Puente (Wegovy, Zepbound KwikPen, Foundayo, jul 2026-dic 2027)" },
+          { "value": { "en": "Flat $50/mo, does not count toward deductible", "es": "$50/mes fijo, no cuenta hacia el deducible" }, "status": "yes" },
+          { "value": { "en": "Flat $50/mo, no coinsurance applies", "es": "$50/mes fijo, no aplica coaseguro" }, "status": "yes" },
+          { "value": { "en": "Flat $50/mo, does not count toward the $2,100 cap", "es": "$50/mes fijo, no cuenta hacia el tope de $2,100" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Weight-loss prescription outside both exceptions", "es": "Receta para bajar de peso fuera de ambas excepciones" },
+          { "value": { "en": "Medicare pays $0; you pay 100% (statutory exclusion)", "es": "Medicare paga $0; usted paga 100% (exclusion estatutaria)" }, "status": "no" },
+          { "value": { "en": "Medicare pays $0; you pay 100%", "es": "Medicare paga $0; usted paga 100%" }, "status": "no" },
+          { "value": { "en": "Medicare pays $0; you pay 100% (the cap never applies)", "es": "Medicare paga $0; usted paga 100% (el tope nunca aplica)" }, "status": "no" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "The Inflation Reduction Act of 2022 eliminated the old 'donut hole' coverage gap and initial coverage limit starting in 2025, replacing them with the current deductible, 25%-coinsurance, catastrophic three-phase structure. The 2026 deductible is $615 and the annual out-of-pocket cap is $2,100. Dollar estimates use approximate 2026 list prices (Ozempic about $998/month, Mounjaro about $1,080/month, Wegovy about $1,349/month) and will vary by plan formulary and pharmacy.",
+      "es": "La Ley de Reduccion de la Inflacion de 2022 elimino el antiguo vacio de cobertura y el limite de cobertura inicial a partir de 2025, reemplazandolos con la estructura actual de tres fases: deducible, 25% de coaseguro y catastrofica. El deducible de 2026 es $615 y el tope anual de gasto de bolsillo es $2,100."
+    },
+    "source": "CMS 2026 Part D benefit parameters, CMS Medicare GLP-1 Bridge program guidance"
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Will Medicare Pay for Your GLP-1?",
+        "es": "Respuesta Directa: ¿Medicare Pagara por su GLP-1?"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on the diagnosis code on the prescription, not the drug name alone. Ozempic, Mounjaro, Trulicity, and Rybelsus get paid under standard 2026 Part D cost-sharing when prescribed for type 2 diabetes. Wegovy, Zepbound, and Foundayo get paid only when the cardiovascular-risk indication or the 2026-2027 Bridge Program applies; otherwise Medicare pays nothing and the full list price falls on you.",
+          "es": "Depende del codigo de diagnostico en la receta, no solo del nombre del medicamento. Ozempic, Mounjaro, Trulicity y Rybelsus se pagan bajo el costo compartido estandar de la Parte D 2026 cuando se recetan para diabetes tipo 2. Wegovy, Zepbound y Foundayo se pagan solo cuando aplica la indicacion cardiovascular o el Programa Puente 2026-2027; de lo contrario Medicare no paga nada."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How Medicare Part D Payment Actually Works: The Three-Phase Structure",
+        "es": "Como Funciona Realmente el Pago de la Parte D: la Estructura de Tres Fases"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare does not pay for self-administered drugs like GLP-1 injectables at all; Medicare Part A (hospital) and Medicare Part B (outpatient medical) only pay for drugs given in a clinical setting. Payment for a GLP-1 you pick up at a pharmacy flows exclusively through Medicare Part D, whether that is a standalone Part D plan paired with Original Medicare, or the drug portion of a Medicare Advantage plan (MAPD). Medigap supplements never touch drug costs, so a Medigap policy does nothing to lower a GLP-1 bill.",
+          "es": "Medicare Original no paga en absoluto por medicamentos autoadministrados como los inyectables GLP-1; la Parte A de Medicare (hospital) y la Parte B de Medicare (medico ambulatorio) solo pagan medicamentos administrados en un entorno clinico. El pago de un GLP-1 que usted recoge en la farmacia fluye exclusivamente a traves de la Parte D de Medicare, ya sea un plan de Parte D independiente junto con Medicare Original, o la porcion de medicamentos de un plan Medicare Advantage (MAPD). Los suplementos Medigap nunca tocan los costos de medicamentos."
+        },
+        {
+          "en": "For 2026, every standard Part D plan follows the same three-phase payment structure that the Inflation Reduction Act of 2022 put in place starting in 2025. Phase one is the deductible: you pay 100% of the drug's negotiated price up to $615 before Medicare starts paying anything. Phase two is the initial coverage phase: Medicare's plan pays roughly 75% and you pay about 25% coinsurance on most brand drugs, continuing until your total out-of-pocket spending for the year hits $2,100. Phase three is catastrophic coverage: once you cross the $2,100 mark, your plan pays 100% and you pay $0 for covered drugs for the rest of the calendar year.",
+          "es": "Para 2026, todo plan estandar de Parte D sigue la misma estructura de pago de tres fases que la Ley de Reduccion de la Inflacion de 2022 establecio a partir de 2025. La fase uno es el deducible: usted paga el 100% del precio negociado del medicamento hasta $615 antes de que Medicare empiece a pagar algo. La fase dos es la cobertura inicial: el plan de Medicare paga aproximadamente 75% y usted paga cerca del 25% de coaseguro, hasta que su gasto de bolsillo total del ano llegue a $2,100. La fase tres es la cobertura catastrofica: una vez que cruza los $2,100, su plan paga 100% y usted paga $0 el resto del ano."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What You Actually Pay for Diabetes-Indicated GLP-1s in 2026",
+        "es": "Lo que Realmente Paga por GLP-1 con Indicacion de Diabetes en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Ozempic, Mounjaro, Trulicity, and Rybelsus carry FDA-approved diabetes indications, so Medicare Part D treats a diabetes-diagnosed prescription like any other covered specialty drug. Plans typically place these drugs on a specialty formulary tier, which usually means the 25% coinsurance described above rather than a small flat copay. At an approximate 2026 list price of $998 for Ozempic or $1,080 for Mounjaro, your 25% coinsurance during the initial coverage phase runs roughly $250 to $270 per fill before you have even met your $2,100 out-of-pocket cap for the year.",
+          "es": "Ozempic, Mounjaro, Trulicity y Rybelsus tienen indicaciones de diabetes aprobadas por la FDA, por lo que la Parte D de Medicare trata una receta con diagnostico de diabetes como cualquier otro medicamento especializado cubierto. Los planes suelen colocar estos medicamentos en un nivel de formulario especializado, lo que normalmente significa el coaseguro del 25% descrito arriba en lugar de un copago fijo pequeno. A un precio de lista aproximado de 2026 de $998 para Ozempic o $1,080 para Mounjaro, su coaseguro del 25% durante la fase de cobertura inicial ronda entre $250 y $270 por surtido."
+        },
+        {
+          "en": "Because specialty-tier coinsurance accumulates fast, most beneficiaries taking a diabetes GLP-1 every month reach the $2,100 catastrophic threshold within the first two to three fills of the year. After that, Medicare pays 100% of the negotiated price for the remaining months. Beneficiaries taking a diabetes GLP-1 alongside other high-cost drugs typically hit the cap even faster.",
+          "es": "Como el coaseguro de nivel especializado se acumula rapido, la mayoria de los beneficiarios que toman un GLP-1 de diabetes cada mes alcanzan el umbral catastrofico de $2,100 dentro de los primeros dos o tres surtidos del ano. Despues de eso, Medicare paga el 100% del precio negociado el resto de los meses."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What You Actually Pay Under the Two Weight-Loss Payment Paths",
+        "es": "Lo que Realmente Paga Bajo las Dos Vias de Pago por Peso"
+      },
+      "paragraphs": [
+        {
+          "en": "Wegovy prescribed for cardiovascular-risk reduction follows the same three-phase math as any covered specialty drug: 100% of the price up to the $615 deductible, then roughly 25% coinsurance (about $335 per month at an approximate $1,349 list price) until you hit the $2,100 cap, then $0. Standard formulary rules, tiering, and appeal rights apply exactly as they would for a diabetes GLP-1.",
+          "es": "Wegovy recetado para reducir el riesgo cardiovascular sigue las mismas matematicas de tres fases que cualquier medicamento especializado cubierto: 100% del precio hasta el deducible de $615, luego aproximadamente 25% de coaseguro (cerca de $335 al mes a un precio de lista aproximado de $1,349) hasta llegar al tope de $2,100, luego $0."
+        },
+        {
+          "en": "The Bridge Program works differently on purpose: it operates outside the normal Part D payment flow entirely, using a single CMS-run central processor rather than your plan's usual claims system. The beneficiary copay is a flat $50 per month for Wegovy, Zepbound (KwikPen formulation only), or Foundayo, and that $50 never counts toward your deductible or your $2,100 out-of-pocket cap. The catch on payment mechanics: Part D sponsors are not required to opt in to the Bridge Program, so not every plan pays this way. Call your plan directly to confirm it has activated Bridge Program payment before assuming the $50 rate applies.",
+          "es": "El Programa Puente funciona diferente a proposito: opera completamente fuera del flujo normal de pago de la Parte D, usando un procesador central manejado por CMS en lugar del sistema de reclamos habitual de su plan. El copago del beneficiario es un fijo de $50 al mes para Wegovy, Zepbound (solo formulacion KwikPen) o Foundayo, y ese $50 nunca cuenta hacia su deducible ni hacia su tope de $2,100. La trampa en la mecanica de pago: los patrocinadores de la Parte D no estan obligados a participar en el Programa Puente, asi que no todos los planes pagan de esta forma."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Prior Authorization: The Payment Gate Before Medicare Pays a Claim",
+        "es": "Autorizacion Previa: el Filtro de Pago Antes de que Medicare Pague un Reclamo"
+      },
+      "paragraphs": [
+        {
+          "en": "Most Part D plans require prior authorization before they will pay a GLP-1 claim, meaning your doctor's office must submit documentation proving the diagnosis code matches a covered indication before the pharmacy can process payment. For diabetes claims, that usually means an A1C result and an E11 diagnosis code. For the Wegovy cardiovascular exception, plans typically want documentation of established coronary artery disease, prior heart attack, or prior stroke plus a BMI of 27 or higher, coded specifically for MACE risk reduction rather than obesity. Some plans also require step therapy, meaning you must have tried and failed a cheaper drug like metformin first before Medicare will pay for a GLP-1.",
+          "es": "La mayoria de los planes de la Parte D requieren autorizacion previa antes de pagar un reclamo de GLP-1, lo que significa que el consultorio de su medico debe enviar documentacion que compruebe que el codigo de diagnostico coincide con una indicacion cubierta antes de que la farmacia pueda procesar el pago. Para reclamos de diabetes, eso suele significar un resultado de A1C y un codigo de diagnostico E11. Para la excepcion cardiovascular de Wegovy, los planes normalmente quieren documentacion de enfermedad arterial coronaria establecida, infarto previo o derrame cerebral previo mas un IMC de 27 o mayor."
+        },
+        {
+          "en": "If prior authorization has not cleared, the pharmacy's claim gets rejected at the register and you are quoted the full cash price, sometimes over $1,000, even for a drug your plan would otherwise pay for. Ask your prescriber's office to submit prior authorization paperwork before you go to the pharmacy, and ask the pharmacy to run a test claim so you know the payment status before you commit to a fill.",
+          "es": "Si la autorizacion previa no se ha aprobado, el reclamo de la farmacia se rechaza en la caja y le cotizan el precio completo en efectivo, a veces mas de $1,000, incluso por un medicamento que su plan pagaria de otra forma. Pida a la oficina de su medico que envie el papeleo de autorizacion previa antes de ir a la farmacia."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "If Medicare Won't Pay: How to Appeal a GLP-1 Payment Denial",
+        "es": "Si Medicare No Paga: Como Apelar una Denegacion de Pago de GLP-1"
+      },
+      "paragraphs": [
+        {
+          "en": "A payment denial starts with a coverage determination from your Part D plan, which you or your doctor can request before or after a pharmacy rejects a claim. If the plan still says no, you have the right to file a redetermination, the first formal appeal level: standard requests get a decision within 7 days, and expedited requests (when waiting could seriously harm your health) get a decision within 72 hours. If the redetermination also fails, the case moves to an independent review entity, then an Administrative Law Judge hearing for claims above a dollar threshold, then the Medicare Appeals Council, and finally federal court.",
+          "es": "Una denegacion de pago comienza con una determinacion de cobertura de su plan de la Parte D, que usted o su medico pueden solicitar antes o despues de que la farmacia rechace un reclamo. Si el plan aun dice que no, tiene derecho a presentar una redeterminacion, el primer nivel formal de apelacion: las solicitudes estandar reciben una decision en 7 dias, y las solicitudes aceleradas (cuando esperar podria danar seriamente su salud) reciben una decision en 72 horas."
+        },
+        {
+          "en": "A separate and often faster route is a formulary exception or tiering exception request, where your doctor argues the drug is medically necessary and asks the plan to cover it as if it were on a lower cost-sharing tier, or to waive a step-therapy requirement. This does not change whether the statutory weight-loss exclusion applies, but it can lower your coinsurance on an already-covered diabetes or CVD-indicated GLP-1.",
+          "es": "Una ruta separada y a menudo mas rapida es una solicitud de excepcion de formulario o de nivel, donde su medico argumenta que el medicamento es medicamente necesario y pide al plan que lo cubra como si estuviera en un nivel de costo compartido mas bajo, o que renuncie a un requisito de terapia escalonada."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Extra Help Lowers What You Pay for GLP-1s in 2026",
+        "es": "La Ayuda Adicional Reduce lo que Paga por GLP-1 en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The Low-Income Subsidy, known as Extra Help, changes the payment math entirely for beneficiaries who qualify. Everyone approved for Extra Help now receives the full subsidy level under the 2022 Inflation Reduction Act, which means a $0 Part D premium in most cases, a $0 deductible, and copay caps instead of 25% coinsurance: no more than $5.10 for a generic and $12.65 for a brand-name drug like Ozempic or Mounjaro in 2026. Full-benefit dual-eligible beneficiaries with income below the poverty level pay even less: $1.60 for generics and $4.90 for brand-name drugs.",
+          "es": "El Subsidio de Bajos Ingresos, conocido como Ayuda Adicional, cambia por completo las matematicas de pago para los beneficiarios que califican. Todos los aprobados para Ayuda Adicional ahora reciben el nivel de subsidio completo bajo la Ley de Reduccion de la Inflacion de 2022, lo que significa una prima de Parte D de $0 en la mayoria de los casos, un deducible de $0, y topes de copago en lugar de coaseguro del 25%: no mas de $5.10 por un generico y $12.65 por un medicamento de marca como Ozempic o Mounjaro en 2026."
+        },
+        {
+          "en": "Extra Help does not override the statutory weight-loss exclusion; it only lowers what you pay for a claim Medicare is already paying. If your GLP-1 is denied because it is prescribed solely for weight loss outside the two exceptions, Extra Help's copay caps do not apply because there is no Medicare-paid claim to cap in the first place.",
+          "es": "La Ayuda Adicional no anula la exclusion estatutaria de bajar de peso; solo reduce lo que paga por un reclamo que Medicare ya esta pagando. Si su GLP-1 es denegado porque se receta solo para bajar de peso fuera de las dos excepciones, los topes de copago de la Ayuda Adicional no aplican."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives If Medicare Won't Pay for Your GLP-1",
+        "es": "Alternativas Si Medicare No Paga por su GLP-1"
+      },
+      "paragraphs": [
+        {
+          "en": "If your prescription falls outside every path Medicare pays through, five alternatives are worth exploring before accepting the full list price.",
+          "es": "Si su receta queda fuera de toda via que Medicare paga, vale la pena explorar cinco alternativas antes de aceptar el precio de lista completo."
+        }
+      ],
+      "list": [
+        { "en": "Ask your doctor whether a covered diagnosis applies. If you have both diabetes and obesity, or both cardiovascular disease and obesity, documenting the covered diagnosis code (rather than obesity alone) can shift the same prescription onto a path Medicare pays.", "es": "Pregunte a su medico si aplica un diagnostico cubierto. Si tiene tanto diabetes como obesidad, o tanto enfermedad cardiovascular como obesidad, documentar el codigo de diagnostico cubierto puede cambiar la misma receta a una via que Medicare paga." },
+        { "en": "Manufacturer direct-pay cash programs. Novo Nordisk's NovoCare Pharmacy and Eli Lilly's LillyDirect sell GLP-1s at reduced self-pay prices, often in the $349 to $650 per month range depending on dose and product, without using insurance. These are cash-pay list prices, not manufacturer coupons, so federal healthcare program rules restricting copay coupons for Medicare beneficiaries generally do not block them.", "es": "Programas de pago directo del fabricante. NovoCare Pharmacy de Novo Nordisk y LillyDirect de Eli Lilly venden GLP-1 a precios reducidos de autopago, a menudo entre $349 y $650 al mes segun la dosis, sin usar seguro." },
+        { "en": "File a formulary or tiering exception. Even when a drug is technically excluded, a documented medical-necessity exception request occasionally succeeds where a routine claim would not, particularly for the CVD-indication pathway.", "es": "Presente una excepcion de formulario o de nivel. Incluso cuando un medicamento esta tecnicamente excluido, una solicitud de excepcion documentada por necesidad medica a veces tiene exito donde un reclamo rutinario no lo tendria." },
+        { "en": "Check state Medicaid if you are dual-eligible. Medicaid is not bound by the Part D anti-obesity exclusion, and several states already cover GLP-1s for obesity on their Medicaid formularies at Medicaid cost-sharing rates, often $0 to $4 per prescription.", "es": "Verifique Medicaid estatal si es elegible dual. Medicaid no esta sujeto a la exclusion antiobesidad de la Parte D, y varios estados ya cubren GLP-1 para obesidad en sus formularios de Medicaid, a menudo de $0 a $4 por receta." },
+        { "en": "If you have not yet enrolled in Medicare, weigh marketplace timing. ACA-compliant marketplace plans must cover prescription drugs as one of the ten essential health benefits, and preexisting condition protections mean an insurer cannot deny a plan or charge more because of an obesity or diabetes history. This only matters for the enrollment-timing decision itself, not for someone already on Medicare.", "es": "Si aun no se ha inscrito en Medicare, considere el momento del mercado. Los planes conformes con ACA deben cubrir medicamentos recetados como uno de los diez beneficios esenciales de salud, y las protecciones por condiciones preexistentes significan que un asegurador no puede negar un plan por historial de obesidad o diabetes." }
+      ]
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "Does Medicare Part D pay for Ozempic if I have diabetes?",
+        "answer": "Yes, under standard 2026 cost-sharing. Ozempic carries an FDA diabetes indication, so a diabetes-diagnosed prescription is a normal covered specialty drug: you pay up to $615 toward the deductible, then about 25% coinsurance (roughly $250/month at list price), then $0 once your out-of-pocket spending hits the $2,100 annual cap."
+      },
+      {
+        "question": "How much will I pay out of pocket for Mounjaro on Medicare in 2026?",
+        "answer": "For the diabetes indication, expect to pay 100% up to the $615 deductible, then roughly 25% coinsurance (about $270/month at an approximate $1,080 list price) until you reach the $2,100 out-of-pocket cap, after which Medicare pays 100% for the rest of the year. Mounjaro has no FDA weight-loss indication, so it does not qualify for the Bridge Program or the CVD exception."
+      },
+      {
+        "question": "Does the GLP-1 Bridge Program copay count toward my Part D deductible?",
+        "answer": "No. The Bridge Program's flat $50 per month copay for Wegovy, Zepbound KwikPen, or Foundayo does not count toward your Part D deductible or your $2,100 annual out-of-pocket cap. The Bridge Program processes payment outside the normal Part D claims flow through a CMS central processor, running July 1, 2026 through December 31, 2027."
+      },
+      {
+        "question": "What happens if my Part D plan denies payment for a GLP-1 drug?",
+        "answer": "You or your doctor can request a coverage determination, then file a redetermination if denied, the first formal appeal (7-day standard decision, 72-hour expedited). You can also request a formulary or tiering exception. If the redetermination fails, the case can proceed to an independent review entity, then an Administrative Law Judge, the Medicare Appeals Council, and federal court."
+      },
+      {
+        "question": "Do I need prior authorization before Medicare will pay for a GLP-1?",
+        "answer": "Almost always. Your doctor must submit documentation showing the diagnosis code matches a covered pathway, such as an A1C result for diabetes or documented cardiovascular disease plus BMI for Wegovy's CVD indication, before the pharmacy can process a paid claim. Without cleared prior authorization, the pharmacy will quote you the full cash price, often over $1,000."
+      },
+      {
+        "question": "Does Extra Help lower what I pay for GLP-1 drugs on Medicare?",
+        "answer": "Yes, if the drug is already on a path Medicare pays. Full-subsidy Extra Help enrollees pay no more than $5.10 for generics and $12.65 for brand-name drugs in 2026, or $1.60 and $4.90 respectively for full-benefit dual-eligible beneficiaries below the poverty level, instead of standard 25% coinsurance. Extra Help does not change whether a weight-loss-only prescription is covered at all."
+      },
+      {
+        "question": "Will every Medicare Part D plan pay through the Bridge Program?",
+        "answer": "Not necessarily. Part D sponsors are not required to opt into the GLP-1 Bridge Program, so some plans may not activate the $50/month payment path even though the eligible drugs and dates are federally set. Call your plan directly, or check the Medicare Plan Finder, to confirm your specific plan has opted in before assuming the $50 rate applies."
+      },
+      {
+        "question": "What if I'm prescribed a GLP-1 for both diabetes and weight loss?",
+        "answer": "Medicare pays based on the diagnosis code the claim is submitted under, not the reason you personally want the drug. If your doctor documents a covered diagnosis, like type 2 diabetes or established cardiovascular disease, Medicare pays under standard cost-sharing even though you may also be losing weight as a secondary benefit of the same prescription."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿La Parte D de Medicare paga Ozempic si tengo diabetes?",
+        "answer": "Si, bajo el costo compartido estandar de 2026. Ozempic tiene una indicacion de diabetes de la FDA, asi que una receta con diagnostico de diabetes es un medicamento especializado cubierto normal: usted paga hasta $615 hacia el deducible, luego cerca del 25% de coaseguro (aproximadamente $250/mes a precio de lista), luego $0 una vez que su gasto de bolsillo llega al tope anual de $2,100."
+      },
+      {
+        "question": "¿Cuanto pagare de mi bolsillo por Mounjaro en Medicare en 2026?",
+        "answer": "Para la indicacion de diabetes, espere pagar 100% hasta el deducible de $615, luego aproximadamente 25% de coaseguro (cerca de $270/mes a un precio de lista aproximado de $1,080) hasta llegar al tope de $2,100, despues del cual Medicare paga 100% el resto del ano. Mounjaro no tiene indicacion de la FDA para bajar de peso."
+      },
+      {
+        "question": "¿El copago del Programa Puente GLP-1 cuenta hacia mi deducible de la Parte D?",
+        "answer": "No. El copago fijo de $50 al mes del Programa Puente para Wegovy, Zepbound KwikPen o Foundayo no cuenta hacia su deducible de la Parte D ni hacia su tope anual de $2,100. El Programa Puente procesa el pago fuera del flujo normal de reclamos de la Parte D, del 1 de julio de 2026 al 31 de diciembre de 2027."
+      },
+      {
+        "question": "¿Que pasa si mi plan de la Parte D niega el pago de un medicamento GLP-1?",
+        "answer": "Usted o su medico pueden solicitar una determinacion de cobertura, luego presentar una redeterminacion si es denegada, la primera apelacion formal (decision estandar en 7 dias, acelerada en 72 horas). Tambien puede solicitar una excepcion de formulario o de nivel. Si la redeterminacion falla, el caso puede continuar a una entidad de revision independiente, un Juez de Derecho Administrativo, el Consejo de Apelaciones de Medicare y la corte federal."
+      },
+      {
+        "question": "¿Necesito autorizacion previa antes de que Medicare pague un GLP-1?",
+        "answer": "Casi siempre. Su medico debe enviar documentacion que muestre que el codigo de diagnostico coincide con una via cubierta, como un resultado de A1C para diabetes o enfermedad cardiovascular documentada mas IMC para la indicacion cardiovascular de Wegovy, antes de que la farmacia pueda procesar un reclamo pagado."
+      },
+      {
+        "question": "¿La Ayuda Adicional reduce lo que pago por medicamentos GLP-1 en Medicare?",
+        "answer": "Si, si el medicamento ya esta en una via que Medicare paga. Los inscritos con subsidio completo de Ayuda Adicional pagan no mas de $5.10 por genericos y $12.65 por medicamentos de marca en 2026, o $1.60 y $4.90 respectivamente para elegibles duales de beneficio completo bajo el nivel de pobreza, en lugar del coaseguro estandar del 25%."
+      },
+      {
+        "question": "¿Todos los planes de la Parte D de Medicare pagaran a traves del Programa Puente?",
+        "answer": "No necesariamente. Los patrocinadores de la Parte D no estan obligados a participar en el Programa Puente GLP-1, asi que algunos planes pueden no activar la via de pago de $50/mes aunque los medicamentos elegibles y las fechas esten fijados federalmente. Llame a su plan directamente para confirmar."
+      },
+      {
+        "question": "¿Que pasa si me recetan un GLP-1 tanto para diabetes como para bajar de peso?",
+        "answer": "Medicare paga segun el codigo de diagnostico bajo el cual se envia el reclamo, no la razon personal por la que usted quiere el medicamento. Si su medico documenta un diagnostico cubierto, como diabetes tipo 2 o enfermedad cardiovascular establecida, Medicare paga bajo el costo compartido estandar aunque tambien este bajando de peso como beneficio secundario."
+      }
+    ]
+  },
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Confirm your Part D plan type: standalone PDP paired with Original Medicare, or Medicare Advantage with drug coverage (MAPD), since both pay GLP-1 claims the same way.",
+        "es": "Confirme su tipo de plan de Parte D: PDP independiente junto con Medicare Original, o Medicare Advantage con cobertura de medicamentos (MAPD)."
+      },
+      {
+        "en": "Ask your prescriber to submit prior authorization documentation with the correct diagnosis code before you go to the pharmacy: A1C and E11 for diabetes, or CVD history and BMI for the Wegovy cardiovascular exception.",
+        "es": "Pida a su medico que envie la documentacion de autorizacion previa con el codigo de diagnostico correcto antes de ir a la farmacia."
+      },
+      {
+        "en": "Ask the pharmacy to run a test claim so you see the exact payment amount, including deductible status and coinsurance tier, before committing to a fill.",
+        "es": "Pida a la farmacia que corra un reclamo de prueba para ver el monto exacto del pago antes de comprometerse a surtir."
+      },
+      {
+        "en": "If prescribed for weight loss without a CVD diagnosis, call your plan to confirm it has opted into the Bridge Program (effective July 1, 2026) before assuming the $50/month rate applies.",
+        "es": "Si se receta para bajar de peso sin diagnostico cardiovascular, llame a su plan para confirmar que se ha incorporado al Programa Puente antes de asumir que aplica la tarifa de $50/mes."
+      },
+      {
+        "en": "If you qualify for Extra Help, confirm your subsidy level is applied at the pharmacy counter so your copay caps at $5.10/$12.65 (or $1.60/$4.90 for dual-eligible beneficiaries) instead of standard coinsurance.",
+        "es": "Si califica para Ayuda Adicional, confirme que su nivel de subsidio se aplique en la farmacia para que su copago tenga un tope de $5.10/$12.65."
+      },
+      {
+        "en": "If a claim is denied, request a coverage determination or formulary exception in writing, then file a redetermination within 60 days if still denied.",
+        "es": "Si un reclamo es denegado, solicite una determinacion de cobertura o excepcion de formulario por escrito, luego presente una redeterminacion dentro de 60 dias si sigue denegado."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/plan-compare/",
+    "documentsNeeded": [
+      { "en": "Medicare card confirming Part D or MAPD enrollment", "es": "Tarjeta de Medicare que confirme inscripcion en Parte D o MAPD" },
+      { "en": "Doctor's prescription with correct ICD-10 diagnosis code (E11 for diabetes, CVD codes for Wegovy exception)", "es": "Receta del medico con el codigo de diagnostico ICD-10 correcto" },
+      { "en": "A1C lab result (for diabetes-indicated claims)", "es": "Resultado de laboratorio A1C (para reclamos con indicacion de diabetes)" },
+      { "en": "Cardiovascular history documentation and BMI reading (for the Wegovy CVD exception)", "es": "Documentacion de historial cardiovascular y lectura de IMC (para la excepcion cardiovascular de Wegovy)" },
+      { "en": "Extra Help approval letter, if applicable, to confirm your copay cap level", "es": "Carta de aprobacion de Ayuda Adicional, si aplica, para confirmar su nivel de tope de copago" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Prior authorization missing or diagnosis code does not match a covered indication", "es": "Falta autorizacion previa o el codigo de diagnostico no coincide con una indicacion cubierta" },
+      { "en": "Prescription coded for obesity alone rather than diabetes or MACE risk reduction", "es": "Receta codificada solo para obesidad en lugar de diabetes o reduccion de riesgo MACE" },
+      { "en": "Plan has not opted into the Bridge Program, so the $50/month rate does not apply", "es": "El plan no se ha incorporado al Programa Puente, asi que la tarifa de $50/mes no aplica" },
+      { "en": "Wrong Zepbound formulation dispensed (single-dose pen or vial instead of KwikPen)", "es": "Formulacion incorrecta de Zepbound surtida (pluma o vial de dosis unica en lugar de KwikPen)" },
+      { "en": "Step therapy not completed (plan requires a trial of a cheaper drug first)", "es": "Terapia escalonada no completada (el plan requiere probar primero un medicamento mas barato)" }
+    ],
+    "deadline": {
+      "en": "Redetermination appeals must be filed within 60 days of a denial notice. Bridge Program payment window: July 1, 2026 to December 31, 2027. Part D open enrollment for plan changes: October 15 to December 7, 2026.",
+      "es": "Las apelaciones de redeterminacion deben presentarse dentro de 60 dias del aviso de denegacion. Ventana del Programa Puente: 1 de julio de 2026 al 31 de diciembre de 2027."
+    }
+  },
+  "relatedLinks": [
+    {
+      "label": { "en": "Does Medicare Cover GLP-1 for Weight Loss?", "es": "¿Medicare Cubre GLP-1 para Bajar de Peso?" },
+      "href": "/qa/does-medicare-cover-glp1-weight-loss"
+    },
+    {
+      "label": { "en": "Medicare GLP-1 Bridge Program", "es": "Programa Puente GLP-1 de Medicare" },
+      "href": "/drug/medicare-glp1-bridge-program"
+    },
+    {
+      "label": { "en": "Medicare Extra Help 2026", "es": "Ayuda Adicional de Medicare 2026" },
+      "href": "/drug/medicare-extra-help"
+    },
+    {
+      "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Medicas" },
+      "href": "/medical-bill-analyzer"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMS: Medicare GLP-1 Bridge",
+      "url": "https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge",
+      "note": {
+        "en": "Official CMS program page describing Bridge Program payment mechanics, eligible drugs, and plan participation rules.",
+        "es": "Pagina oficial de CMS que describe la mecanica de pago del Programa Puente, medicamentos elegibles y reglas de participacion de planes."
+      }
+    },
+    {
+      "name": "CMS: 2026 Medicare Part D Benefit Parameters",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/final-cy-2026-part-d-redesign-program-instructions",
+      "note": {
+        "en": "CMS fact sheet establishing the 2026 Part D deductible ($615), initial coverage coinsurance, and $2,100 out-of-pocket cap.",
+        "es": "Hoja informativa de CMS que establece el deducible de la Parte D 2026 ($615), el coaseguro de cobertura inicial y el tope de $2,100."
+      }
+    },
+    {
+      "name": "Medicare.gov: Costs in the Coverage Gap and Extra Help",
+      "url": "https://www.medicare.gov/basics/costs/help/drug-costs",
+      "note": {
+        "en": "Official Medicare.gov guidance on Part D payment phases and Extra Help copay caps for 2026.",
+        "es": "Guia oficial de Medicare.gov sobre las fases de pago de la Parte D y los topes de copago de Ayuda Adicional para 2026."
+      }
+    },
+    {
+      "name": "Social Security Act Section 1927(d)(2)(A)",
+      "url": "https://www.ssa.gov/OP_Home/ssact/title19/1927.htm",
+      "note": {
+        "en": "Federal statute excluding anti-obesity agents from routine Part D payment.",
+        "es": "Estatuto federal que excluye agentes antiobesidad del pago rutinario de la Parte D."
+      }
+    },
+    {
+      "name": "KFF: What to Know About the BALANCE Model and the Medicare GLP-1 Bridge",
+      "url": "https://www.kff.org/medicare/what-to-know-about-the-balance-model-for-glp-1s-in-medicare-and-medicaid/",
+      "note": {
+        "en": "KFF policy analysis of GLP-1 payment structures across Medicare and Medicaid, including Bridge Program plan opt-in mechanics.",
+        "es": "Analisis de politicas de KFF sobre las estructuras de pago de GLP-1 en Medicare y Medicaid, incluida la mecanica de participacion del Programa Puente."
+      }
+    }
+  ]
+}
