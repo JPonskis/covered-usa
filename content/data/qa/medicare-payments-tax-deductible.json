@@ -1,0 +1,413 @@
+{
+  "slug": "medicare-payments-tax-deductible",
+  "subtype": "coverage",
+  "question": {
+    "en": "Are Medicare Payments Tax Deductible in 2026?",
+    "es": "¿Los Pagos de Medicare Son Deducibles de Impuestos en 2026?"
+  },
+  "shortAnswer": {
+    "en": "Depends: only if you itemize and expenses exceed 7.5% of AGI.",
+    "es": "Depende: solo si detalla deducciones y supera el 7.5% del AGI."
+  },
+  "fullAnswer": {
+    "en": "Depends on whether you itemize. Medicare payments, including Part B and Part D premiums, deductibles, copays, and coinsurance, are tax deductible only if you itemize on Schedule A and your total qualified medical expenses exceed 7.5% of your adjusted gross income (AGI) in 2026. Most Medicare beneficiaries who take the $16,100 (single) or $32,200 (married) standard deduction get no additional tax benefit from these costs.",
+    "es": "Depende de si detalla deducciones. Los pagos de Medicare, incluidas las primas de la Parte B y la Parte D, deducibles, copagos y coseguro, son deducibles de impuestos solo si detalla deducciones en el Anexo A y sus gastos médicos calificados totales superan el 7.5% de su ingreso bruto ajustado (AGI) en 2026. La mayoría de los beneficiarios de Medicare que toman la deducción estándar de $16,100 (soltero) o $32,200 (casado) no obtienen ningún beneficio fiscal adicional de estos costos."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Payment Tax Deductibility",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "analyzer",
+  "pageType": "coverage",
+  "lastUpdated": "2026-09-15",
+  "readingTime": "8 min read",
+
+  "meta": {
+    "title": {
+      "en": "Are Medicare Payments Tax Deductible? (2026) | CoveredUSA",
+      "es": "¿Pagos de Medicare Son Deducibles de Impuestos? (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicare premiums, deductibles, copays, and coinsurance are deductible on Schedule A only above 7.5% of AGI in 2026. See rules, an example, and alternatives.",
+      "es": "Las primas, deducibles, copagos y coseguro de Medicare son deducibles en el Anexo A solo por encima del 7.5% del AGI en 2026. Vea reglas y alternativas."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Are Medicare Payments Tax Deductible? (2026)",
+      "es": "¿Los Pagos de Medicare Son Deducibles de Impuestos? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Roughly 68 million Americans rely on Medicare, and most of them pay thousands of dollars a year in premiums, deductibles, copays, and coinsurance even with coverage in place. The IRS treats those Medicare payments as ordinary medical expenses, not a special category, which means the same tax deductibility rules that apply to a hospital bill also apply to a Part B premium withheld from a Social Security check.",
+      "es": "Aproximadamente 68 millones de estadounidenses dependen de Medicare, y la mayoría paga miles de dólares al año en primas, deducibles, copagos y coseguro incluso con cobertura vigente. El IRS trata esos pagos de Medicare como gastos médicos ordinarios, no como una categoría especial, lo que significa que las mismas reglas de deducibilidad fiscal que aplican a una factura de hospital también aplican a una prima de la Parte B retenida de un cheque del Seguro Social."
+    },
+    {
+      "en": "CoveredUSA's guide below covers every type of Medicare out-of-pocket payment, not just premiums: deductibles, coinsurance, copays, and Medigap costs, and how they combine on Schedule A in 2026. For a deep dive focused specifically on premium deductibility and the self-employed health insurance deduction, see [are Medicare premiums tax deductible](/en/qa/medicare-premiums-tax-deductible). Use the [medical bill analyzer](/medical-bill-analyzer) to total your out-of-pocket Medicare costs for the year.",
+      "es": "La siguiente guía de CoveredUSA cubre todo tipo de pago de bolsillo de Medicare, no solo las primas: deducibles, coseguro, copagos y costos de Medigap, y cómo se combinan en el Anexo A en 2026. Para un análisis enfocado específicamente en la deducibilidad de primas y la deducción de seguro médico para trabajadores independientes, consulte [son deducibles las primas de Medicare](/en/qa/medicare-premiums-tax-deductible). Use el [analizador de facturas médicas](/medical-bill-analyzer) para totalizar sus costos de bolsillo de Medicare del año."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Medicare Payment Type", "Tax Deductible in 2026?", "Where It Goes on Your Return", "2026 Amount or Limit"],
+      "es": ["Tipo de pago de Medicare", "¿Deducible en 2026?", "Dónde va en su declaración", "Monto o límite 2026"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Part B premium (standard)", "es": "Prima de la Parte B (estándar)" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Schedule A, Line 1 (or Schedule 1, Line 17 if self-employed)", "es": "Anexo A, Línea 1 (o Anexo 1, Línea 17 si es trabajador independiente)" },
+          { "en": "$202.90/month ($2,434.80/year)", "es": "$202.90/mes ($2,434.80/año)" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Part D premium", "es": "Prima de la Parte D" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Schedule A, Line 1 (or Schedule 1, Line 17 if self-employed)", "es": "Anexo A, Línea 1 (o Anexo 1, Línea 17 si es trabajador independiente)" },
+          { "en": "Varies by plan; no standard amount", "es": "Varía según el plan; sin monto estándar" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medigap / Medicare Supplement premium", "es": "Prima de Medigap / Seguro Suplementario" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Schedule A, Line 1 (or Schedule 1, Line 17 if self-employed)", "es": "Anexo A, Línea 1 (o Anexo 1, Línea 17 si es trabajador independiente)" },
+          { "en": "Varies by plan letter and state", "es": "Varía según el plan y el estado" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Part A deductible (per benefit period)", "es": "Deducible de la Parte A (por período de beneficios)" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Schedule A, Line 1 only (not above-the-line eligible)", "es": "Solo Anexo A, Línea 1 (no elegible para deducción directa)" },
+          { "en": "$1,736 per benefit period", "es": "$1,736 por período de beneficios" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Part B deductible", "es": "Deducible de la Parte B" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Schedule A, Line 1 only (not above-the-line eligible)", "es": "Solo Anexo A, Línea 1 (no elegible para deducción directa)" },
+          { "en": "$283 annual", "es": "$283 anual" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Part B coinsurance (20%) and Medicare Advantage copays", "es": "Coseguro de la Parte B (20%) y copagos de Medicare Advantage" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Schedule A, Line 1 only (not above-the-line eligible)", "es": "Solo Anexo A, Línea 1 (no elegible para deducción directa)" },
+          { "en": "Varies by service; no annual cap under Original Medicare", "es": "Varía según el servicio; sin límite anual en Medicare Original" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "\"Partial\" means the payment counts toward total medical expenses but only produces a tax benefit for the portion above 7.5% of adjusted gross income (AGI) in 2026, and only if you itemize on Schedule A instead of taking the standard deduction. Premiums paid through pre-tax payroll deduction do not count because they were never taxed in the first place.",
+      "es": "\"Parcial\" significa que el pago cuenta para los gastos médicos totales, pero solo genera un beneficio fiscal para la porción que supera el 7.5% del ingreso bruto ajustado (AGI) en 2026, y solo si detalla deducciones en el Anexo A en lugar de tomar la deducción estándar. Las primas pagadas mediante deducción de nómina antes de impuestos no cuentan porque nunca fueron gravadas."
+    },
+    "source": "IRS Publication 502 (2026), IRS Schedule A Instructions, Medicare.gov 2026 Costs"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer",
+        "es": "Respuesta Directa"
+      },
+      "paragraphs": [
+        {
+          "en": "Depends on whether you itemize. Medicare payments, including Part B and Part D premiums, deductibles, copays, and coinsurance, are tax deductible only if you itemize on Schedule A and your total qualified medical expenses exceed 7.5% of your adjusted gross income (AGI) in 2026. Most Medicare beneficiaries who take the $16,100 (single) or $32,200 (married) standard deduction get no additional tax benefit from these costs.",
+          "es": "Depende de si detalla deducciones. Los pagos de Medicare, incluidas las primas de la Parte B y la Parte D, deducibles, copagos y coseguro, son deducibles de impuestos solo si detalla deducciones en el Anexo A y sus gastos médicos calificados totales superan el 7.5% de su ingreso bruto ajustado (AGI) en 2026. La mayoría de los beneficiarios de Medicare que toman la deducción estándar de $16,100 (soltero) o $32,200 (casado) no obtienen ningún beneficio fiscal adicional de estos costos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Counts as a Deductible Medicare Payment in 2026",
+        "es": "Qué Cuenta Como un Pago de Medicare Deducible en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The Internal Revenue Code defines a deductible medical expense broadly under Section 213(d), and Medicare payments fit squarely inside that definition. Medicare Part B premiums, Medicare Part D premiums, Medigap premiums, Medicare Advantage premiums, the 2026 Part A deductible of $1,736 per benefit period, the 2026 Part B deductible of $283, 20% Part B coinsurance, and copays for Medicare Advantage services all count toward total medical expenses on Schedule A. The IRS treats these payments the same way it treats a payment to a doctor or a hospital: as long as you paid with after-tax dollars and were not reimbursed, the amount is includable.",
+          "es": "El Código de Rentas Internas define un gasto médico deducible de manera amplia bajo la Sección 213(d), y los pagos de Medicare encajan directamente en esa definición. Las primas de la Parte B, las primas de la Parte D, las primas de Medigap, las primas de Medicare Advantage, el deducible de la Parte A de $1,736 por período de beneficios en 2026, el deducible de la Parte B de $283 en 2026, el coseguro del 20% de la Parte B y los copagos de servicios de Medicare Advantage cuentan para los gastos médicos totales en el Anexo A. El IRS trata estos pagos igual que un pago a un médico o un hospital: siempre que haya pagado con dólares después de impuestos y no haya sido reembolsado, el monto es incluible."
+        },
+        {
+          "en": "Premiums withheld directly from a Social Security check are still deductible even though you never physically write a check for them. Form SSA-1099, mailed each January, lists the total Part B premiums withheld for the prior year in Box 3, and that figure is the number to carry over to Schedule A, Line 1, alongside every other Medicare-related payment made during 2026.",
+          "es": "Las primas retenidas directamente de un cheque del Seguro Social siguen siendo deducibles aunque nunca escriba físicamente un cheque por ellas. El Formulario SSA-1099, enviado por correo cada enero, enumera el total de primas de la Parte B retenidas del año anterior en la Casilla 3, y esa cifra es el número que se traslada al Anexo A, Línea 1, junto con cualquier otro pago relacionado con Medicare realizado durante 2026."
+        }
+      ],
+      "list": [
+        { "en": "Part B premium (standard or IRMAA-adjusted)", "es": "Prima de la Parte B (estándar o ajustada por IRMAA)" },
+        { "en": "Part D premium (standard or IRMAA-adjusted)", "es": "Prima de la Parte D (estándar o ajustada por IRMAA)" },
+        { "en": "Medigap / Medicare Supplement premium", "es": "Prima de Medigap / Seguro Suplementario" },
+        { "en": "Medicare Advantage premium (if any)", "es": "Prima de Medicare Advantage (si aplica)" },
+        { "en": "Part A hospital deductible ($1,736 per benefit period, 2026)", "es": "Deducible hospitalario de la Parte A ($1,736 por período de beneficios, 2026)" },
+        { "en": "Part B annual deductible ($283, 2026)", "es": "Deducible anual de la Parte B ($283, 2026)" },
+        { "en": "20% Part B coinsurance for covered outpatient services", "es": "Coseguro del 20% de la Parte B para servicios ambulatorios cubiertos" },
+        { "en": "Medicare Advantage copays and coinsurance for covered services", "es": "Copagos y coseguro de Medicare Advantage para servicios cubiertos" }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The 7.5% AGI Threshold and Itemizing vs Standard Deduction",
+        "es": "El Umbral del 7.5% del AGI y Detallar vs. Deducción Estándar"
+      },
+      "paragraphs": [
+        {
+          "en": "Congress permanently locked the medical expense deduction floor at 7.5% of adjusted gross income via the Consolidated Appropriations Act, 2021, ending years of the threshold bouncing between 7.5% and 10%; the 2026 One Big Beautiful Bill Act tax changes left this floor unchanged. On Schedule A, Line 2 asks for AGI, Line 3 multiplies that figure by 7.5%, and Line 4 subtracts Line 3 from total medical expenses on Line 1. Only the amount above that floor becomes deductible, not the full total.",
+          "es": "El Congreso fijó permanentemente el piso de deducción de gastos médicos en el 7.5% del ingreso bruto ajustado mediante la Ley de Asignaciones Consolidadas de 2021, terminando años de que el umbral oscilara entre 7.5% y 10%; los cambios fiscales de 2026 de la Ley One Big Beautiful Bill no modificaron este piso. En el Anexo A, la Línea 2 pide el AGI, la Línea 3 multiplica esa cifra por 7.5%, y la Línea 4 resta la Línea 3 del total de gastos médicos en la Línea 1. Solo el monto por encima de ese piso se vuelve deducible, no el total completo."
+        },
+        {
+          "en": "The 2026 standard deduction is $16,100 for single filers, $32,200 for married couples filing jointly, and $24,150 for heads of household. Taxpayers age 65 or older get an additional standard deduction of $2,050 if single or $1,650 per spouse if married, which most Medicare beneficiaries qualify for automatically. Itemizing only helps if total itemized deductions, medical expenses above the 7.5% floor plus mortgage interest, state and local taxes up to the cap, and charitable gifts, exceed that combined standard deduction amount.",
+          "es": "La deducción estándar de 2026 es $16,100 para declarantes solteros, $32,200 para parejas casadas que declaran conjuntamente, y $24,150 para cabezas de familia. Los contribuyentes de 65 años o más obtienen una deducción estándar adicional de $2,050 si son solteros o $1,650 por cónyuge si están casados, algo que la mayoría de los beneficiarios de Medicare califica automáticamente. Detallar deducciones solo ayuda si el total de deducciones detalladas, gastos médicos por encima del piso del 7.5% más intereses hipotecarios, impuestos estatales y locales hasta el tope, y donaciones caritativas, supera ese monto combinado de deducción estándar."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "A Real Example: Adding Up a Year of Medicare Costs",
+        "es": "Un Ejemplo Real: Sumando un Año de Costos de Medicare"
+      },
+      "paragraphs": [
+        {
+          "en": "Consider a single 68-year-old with an AGI of $60,000 in 2026. Her 7.5% floor is $4,500. Over the year she paid $2,434.80 in standard Part B premiums, $283 for her Part B deductible, one $1,736 Part A deductible for a single hospital stay, $1,800 in Medigap Plan G premiums, and roughly $700 in Part B coinsurance for outpatient visits, for a total of $6,953.80 in Medicare-related medical expenses.",
+          "es": "Considere a una mujer soltera de 68 años con un AGI de $60,000 en 2026. Su piso del 7.5% es $4,500. Durante el año pagó $2,434.80 en primas estándar de la Parte B, $283 por su deducible de la Parte B, un deducible de la Parte A de $1,736 por una sola estadía hospitalaria, $1,800 en primas del Plan G de Medigap, y aproximadamente $700 en coseguro de la Parte B por visitas ambulatorias, para un total de $6,953.80 en gastos médicos relacionados con Medicare."
+        },
+        {
+          "en": "Subtracting her $4,500 floor from that $6,953.80 total leaves $2,453.80 in deductible medical expenses. That amount combines with any other itemized deductions, mortgage interest, state and local taxes up to $10,000, and charitable gifts, to form her total itemized deductions. Only if that combined total tops $18,150, her $16,100 single standard deduction plus her $2,050 age-65 addition, does itemizing actually lower her tax bill instead of just taking the standard deduction.",
+          "es": "Al restar su piso de $4,500 de ese total de $6,953.80 quedan $2,453.80 en gastos médicos deducibles. Ese monto se combina con cualquier otra deducción detallada, intereses hipotecarios, impuestos estatales y locales hasta $10,000, y donaciones caritativas, para formar el total de deducciones detalladas. Solo si ese total combinado supera $18,150, su deducción estándar de soltera de $16,100 más su adición de $2,050 por tener 65 años, detallar realmente reduce su factura de impuestos en lugar de simplemente tomar la deducción estándar."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Self-Employed Medicare Premiums Follow a Different Rule",
+        "es": "Las Primas de Medicare Para Trabajadores Independientes Siguen Otra Regla"
+      },
+      "paragraphs": [
+        {
+          "en": "Self-employed Medicare beneficiaries who show a net profit and are not eligible for employer-subsidized coverage through a spouse's job get a much better deal than the Schedule A route. The self-employed health insurance deduction lets them deduct Part B premiums, Part D premiums, Medigap premiums, and Medicare Advantage premiums directly on Schedule 1, Line 17, as an above-the-line adjustment to income, with no itemizing required and no 7.5% AGI floor to clear.",
+          "es": "Los beneficiarios de Medicare que trabajan por cuenta propia y muestran una ganancia neta, y que no son elegibles para cobertura subsidiada por un empleador a través del trabajo de un cónyuge, obtienen un trato mucho mejor que la vía del Anexo A. La deducción de seguro médico para trabajadores independientes les permite deducir las primas de la Parte B, la Parte D, Medigap y Medicare Advantage directamente en el Anexo 1, Línea 17, como un ajuste al ingreso previo a otras deducciones, sin necesidad de detallar y sin tener que superar el piso del 7.5% del AGI."
+        },
+        {
+          "en": "That above-the-line deduction only covers premiums, not deductibles, copays, or coinsurance, which still route through Schedule A if the taxpayer itemizes separately. For a full walkthrough of how the self-employed premium deduction interacts with Medicare, including income limits on the deduction, see [are Medicare premiums tax deductible](/en/qa/medicare-premiums-tax-deductible).",
+          "es": "Esa deducción previa a otras deducciones solo cubre primas, no deducibles, copagos ni coseguro, que aún se canalizan a través del Anexo A si el contribuyente detalla deducciones por separado. Para un análisis completo de cómo la deducción de primas para trabajadores independientes interactúa con Medicare, incluidos los límites de ingresos de la deducción, consulte [son deducibles las primas de Medicare](/en/qa/medicare-premiums-tax-deductible)."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicare Payments That Are NOT Tax Deductible",
+        "es": "Pagos de Medicare Que NO Son Deducibles de Impuestos"
+      },
+      "paragraphs": [
+        {
+          "en": "Premiums paid through a pre-tax payroll deduction, common for beneficiaries still working past 65 who stay on an employer plan combined with Medicare, cannot be deducted a second time on Schedule A because they were never included in taxable income in the first place. The same rule blocks any Medicare-related cost that insurance, an employer, or a health reimbursement arrangement already reimbursed.",
+          "es": "Las primas pagadas mediante deducción de nómina antes de impuestos, común para beneficiarios que siguen trabajando después de los 65 años y permanecen en un plan del empleador combinado con Medicare, no pueden deducirse por segunda vez en el Anexo A porque nunca se incluyeron en el ingreso gravable. La misma regla bloquea cualquier costo relacionado con Medicare que un seguro, un empleador o un arreglo de reembolso de salud ya haya reembolsado."
+        },
+        {
+          "en": "Cosmetic procedures that Medicare would not cover because they are not medically necessary stay non-deductible even if paid out of pocket, and long-term custodial care that is primarily personal assistance rather than medical care generally does not qualify either. Cost-sharing for Medicare Advantage extra benefits, such as a general fitness membership add-on, is not deductible unless a doctor prescribes it to treat a specific diagnosed condition, per IRS Publication 502.",
+          "es": "Los procedimientos cosméticos que Medicare no cubriría por no ser médicamente necesarios permanecen no deducibles incluso si se pagan de bolsillo, y el cuidado de custodia a largo plazo que es principalmente asistencia personal en lugar de atención médica tampoco suele calificar. El costo compartido de beneficios adicionales de Medicare Advantage, como una membresía general de acondicionamiento físico, no es deducible a menos que un médico la recete para tratar una condición diagnosticada específica, según la Publicación 502 del IRS."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Claim Medicare Payments on Your 2026 Tax Return",
+        "es": "Cómo Reclamar los Pagos de Medicare en su Declaración de Impuestos 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Schedule A (Form 1040) is the form for claiming Medicare-related medical expenses, and it only makes sense to file it if total itemized deductions beat the 2026 standard deduction. Tally every payment made in 2026: Part B and Part D premiums from Form SSA-1099 or plan statements, Medigap or Medicare Advantage premiums, the Part A and Part B deductibles, 20% Part B coinsurance, and any Medicare Advantage copays, then subtract 7.5% of AGI to find the deductible amount on Line 4.",
+          "es": "El Anexo A (Formulario 1040) es el formulario para reclamar gastos médicos relacionados con Medicare, y solo tiene sentido presentarlo si el total de deducciones detalladas supera la deducción estándar de 2026. Sume cada pago realizado en 2026: primas de la Parte B y la Parte D del Formulario SSA-1099 o estados de cuenta del plan, primas de Medigap o Medicare Advantage, los deducibles de la Parte A y la Parte B, el coseguro del 20% de la Parte B, y cualquier copago de Medicare Advantage, luego reste el 7.5% del AGI para encontrar el monto deducible en la Línea 4."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives If You Don't Itemize or Don't Clear the Threshold",
+        "es": "Alternativas Si No Detalla Deducciones o No Supera el Umbral"
+      },
+      "paragraphs": [
+        {
+          "en": "Most Medicare beneficiaries never clear the 7.5% AGI floor or come out ahead of the standard deduction. Several alternative strategies can still produce a tax benefit from Medicare-related costs.",
+          "es": "La mayoría de los beneficiarios de Medicare nunca supera el piso del 7.5% del AGI ni sale adelante de la deducción estándar. Varias estrategias alternativas aún pueden generar un beneficio fiscal a partir de los costos relacionados con Medicare."
+        }
+      ],
+      "list": [
+        { "en": "Self-employed health insurance deduction: sole proprietors, partners, and more-than-2%-S-corp shareholders 65 and older can deduct Medicare premiums above the line on Schedule 1, Line 17, without itemizing or clearing any AGI floor.", "es": "Deducción de seguro médico para trabajadores independientes: propietarios únicos, socios y accionistas de más del 2% en una S-corp de 65 años o más pueden deducir las primas de Medicare de forma directa en el Anexo 1, Línea 17, sin detallar deducciones ni superar ningún piso de AGI." },
+        { "en": "HSA look-back for premiums: funds already sitting in a Health Savings Account from before Medicare enrollment can still be withdrawn tax-free to pay Part B, Part D, and Medicare Advantage premiums (not Medigap), even though new HSA contributions stop once Medicare coverage begins.", "es": "Retiro retroactivo de HSA para primas: los fondos que ya están en una Cuenta de Ahorros de Salud desde antes de inscribirse en Medicare aún pueden retirarse libres de impuestos para pagar primas de la Parte B, la Parte D y Medicare Advantage (no Medigap), aunque las nuevas contribuciones a la HSA se detienen una vez que comienza la cobertura de Medicare." },
+        { "en": "Bunching medical expenses: scheduling elective procedures, buying a year of eyeglasses, or prepaying a Medigap premium in December instead of January can push one tax year's total medical expenses well above the 7.5% floor, then skip itemizing the following year.", "es": "Agrupar gastos médicos: programar procedimientos electivos, comprar anteojos para todo un año, o prepagar una prima de Medigap en diciembre en lugar de enero puede empujar el total de gastos médicos de un año fiscal muy por encima del piso del 7.5%, y luego omitir detallar deducciones al año siguiente." },
+        { "en": "State medical expense deductions: several states use a lower threshold than the federal 7.5% AGI floor, or none at all, for state income tax purposes, so out-of-pocket Medicare costs that produce no federal benefit may still lower a state tax bill.", "es": "Deducciones estatales de gastos médicos: varios estados usan un umbral más bajo que el piso federal del 7.5% del AGI, o ninguno en absoluto, para fines del impuesto estatal, por lo que los costos de bolsillo de Medicare que no producen beneficio federal aún podrían reducir una factura de impuestos estatal." },
+        { "en": "Free tax help for seniors: AARP Foundation Tax-Aide and the IRS Tax Counseling for the Elderly (TCE) program prepare returns for free and routinely catch overlooked Medicare-related deductions that self-filers miss.", "es": "Ayuda fiscal gratuita para personas mayores: AARP Foundation Tax-Aide y el programa de Asesoría Fiscal para Personas Mayores (TCE) del IRS preparan declaraciones de forma gratuita y regularmente detectan deducciones relacionadas con Medicare que los contribuyentes que declaran por sí mismos pasan por alto." }
+      ]
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Total all 2026 medical expenses, including Medicare Part B and Part D premiums, Medigap premiums, Part A and Part B deductibles, coinsurance, and copays paid with after-tax dollars.", "es": "Paso 1: Sume todos los gastos médicos de 2026, incluidas las primas de la Parte B y la Parte D de Medicare, primas de Medigap, deducibles de la Parte A y la Parte B, coseguro y copagos pagados con dólares después de impuestos." },
+      { "en": "Step 2: Get total premiums paid from Form SSA-1099 (Social Security benefit statement showing Part B premiums withheld) or the Medicare Advantage/Part D plan's annual statement.", "es": "Paso 2: Obtenga el total de primas pagadas del Formulario SSA-1099 (estado de cuenta del Seguro Social que muestra las primas de la Parte B retenidas) o del estado de cuenta anual del plan de Medicare Advantage o Parte D." },
+      { "en": "Step 3: Calculate AGI and multiply it by 7.5% using Schedule A, Line 2 and Line 3, to find the deduction floor.", "es": "Paso 3: Calcule el AGI y multiplíquelo por 7.5% usando el Anexo A, Línea 2 y Línea 3, para encontrar el piso de deducción." },
+      { "en": "Step 4: Subtract the 7.5% floor from total medical expenses on Schedule A, Line 4, to get the deductible amount.", "es": "Paso 4: Reste el piso del 7.5% de los gastos médicos totales en el Anexo A, Línea 4, para obtener el monto deducible." },
+      { "en": "Step 5: Compare total itemized deductions, medical plus mortgage interest, state and local taxes up to the cap, and charitable gifts, to the 2026 standard deduction before deciding to itemize.", "es": "Paso 5: Compare el total de deducciones detalladas, médicas más intereses hipotecarios, impuestos estatales y locales hasta el tope, y donaciones caritativas, con la deducción estándar de 2026 antes de decidir detallar." }
+    ],
+    "govStartingUrl": "https://www.irs.gov/publications/p502",
+    "documentsNeeded": [
+      { "en": "Form SSA-1099 (Social Security Benefit Statement) showing Part B premiums withheld", "es": "Formulario SSA-1099 (Estado de Cuenta de Beneficios del Seguro Social) que muestra las primas de la Parte B retenidas" },
+      { "en": "Annual statements from Part D and Medicare Advantage plans showing premiums paid", "es": "Estados de cuenta anuales de los planes de la Parte D y Medicare Advantage que muestran las primas pagadas" },
+      { "en": "Medigap or Medicare Supplement premium statements", "es": "Estados de cuenta de primas de Medigap o Seguro Suplementario" },
+      { "en": "Itemized receipts for coinsurance, copays, and deductibles paid to providers", "es": "Recibos detallados de coseguro, copagos y deducibles pagados a proveedores" },
+      { "en": "Explanation of Benefits (EOB) statements from Medicare showing amounts owed", "es": "Estados de Explicación de Beneficios (EOB) de Medicare que muestran los montos adeudados" },
+      { "en": "Prior-year tax return to compare standard vs itemized deduction amounts", "es": "Declaración de impuestos del año anterior para comparar la deducción estándar frente a la detallada" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Total itemized deductions did not exceed the 2026 standard deduction, so itemizing produced no additional benefit", "es": "El total de deducciones detalladas no superó la deducción estándar de 2026, por lo que detallar no produjo un beneficio adicional" },
+      { "en": "Total medical expenses did not exceed 7.5% of adjusted gross income", "es": "Los gastos médicos totales no superaron el 7.5% del ingreso bruto ajustado" },
+      { "en": "Premiums were paid with pre-tax payroll deductions, which are already excluded from taxable income and cannot be deducted again", "es": "Las primas se pagaron con deducciones de nómina antes de impuestos, que ya están excluidas del ingreso gravable y no se pueden deducir nuevamente" },
+      { "en": "Expenses were reimbursed by insurance, an employer, or a flexible spending account", "es": "Los gastos fueron reembolsados por un seguro, un empleador o una cuenta de gastos flexibles" },
+      { "en": "Missing documentation to substantiate the amount claimed if audited", "es": "Falta de documentación para respaldar el monto reclamado en caso de auditoría" }
+    ],
+    "deadline": {
+      "en": "No special deadline. Claim Medicare-related medical expenses when filing the 2026 return by the standard April 15, 2027 tax deadline (or October 15, 2027 with an extension).",
+      "es": "Sin fecha límite especial. Reclame los gastos médicos relacionados con Medicare al presentar la declaración de 2026 antes de la fecha límite estándar del 15 de abril de 2027 (o el 15 de octubre de 2027 con una extensión)."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Are Medicare Part B premiums tax deductible in 2026?",
+        "answer": "Yes, but only if you itemize. Part B premiums, whether paid directly or withheld from Social Security, count as a medical expense on Schedule A. Only the portion of your total medical expenses above 7.5% of your adjusted gross income becomes deductible, and only if your itemized total exceeds the 2026 standard deduction of $16,100 single or $32,200 married."
+      },
+      {
+        "question": "Can I deduct my Medicare Part A deductible?",
+        "answer": "Yes. The 2026 Part A hospital deductible of $1,736 per benefit period counts toward total medical expenses on Schedule A, Line 1, the same as any other out-of-pocket Medicare cost. It only produces a tax benefit once total medical expenses for the year exceed 7.5% of adjusted gross income."
+      },
+      {
+        "question": "What is the 7.5% AGI threshold for medical expense deductions?",
+        "answer": "The 7.5% floor means you can only deduct the portion of total medical expenses, including all Medicare premiums, deductibles, and coinsurance, that exceeds 7.5% of adjusted gross income. Congress made this threshold permanent for 2026 and beyond. For an AGI of $60,000, the floor is $4,500."
+      },
+      {
+        "question": "Do self-employed people deduct Medicare premiums differently?",
+        "answer": "Yes. Self-employed taxpayers 65 or older who show a net profit and lack access to employer-subsidized coverage through a spouse's job can deduct Part B, Part D, Medigap, and Medicare Advantage premiums above the line on Schedule 1, Line 17, with no itemizing and no 7.5% AGI floor to clear."
+      },
+      {
+        "question": "Are Medigap premiums tax deductible?",
+        "answer": "Yes, under the same rules as other Medicare premiums. Medigap premiums count as a medical expense on Schedule A if you itemize, and they are included in the self-employed health insurance deduction if you qualify for that above-the-line option instead."
+      },
+      {
+        "question": "Do I need to itemize to deduct Medicare costs?",
+        "answer": "Usually, yes. Medicare premiums, deductibles, copays, and coinsurance only produce a tax benefit through Schedule A itemized deductions, which requires forgoing the 2026 standard deduction. The exception is the self-employed health insurance deduction, which lets qualifying self-employed beneficiaries deduct premiums, not deductibles or copays, without itemizing."
+      },
+      {
+        "question": "Can I deduct Medicare Advantage copays and coinsurance?",
+        "answer": "Yes. Medicare Advantage copays and coinsurance for covered medical services count as qualified medical expenses on Schedule A, the same as Original Medicare cost-sharing. Extra benefits like fitness memberships or over-the-counter allowances generally do not qualify unless a doctor prescribes them for a specific diagnosed condition."
+      },
+      {
+        "question": "What Medicare-related costs are not tax deductible?",
+        "answer": "Premiums paid through pre-tax payroll deduction, any cost already reimbursed by insurance or an employer, cosmetic procedures Medicare would not cover as medically necessary, and long-term custodial care that is primarily personal assistance rather than medical care are not deductible, per IRS Publication 502."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Son deducibles de impuestos las primas de la Parte B de Medicare en 2026?",
+        "answer": "Sí, pero solo si detalla deducciones. Las primas de la Parte B, ya sea que se paguen directamente o se retengan del Seguro Social, cuentan como gasto médico en el Anexo A. Solo la porción de sus gastos médicos totales que supera el 7.5% de su ingreso bruto ajustado se vuelve deducible, y solo si su total detallado supera la deducción estándar de 2026 de $16,100 soltero o $32,200 casado."
+      },
+      {
+        "question": "¿Puedo deducir mi deducible de la Parte A de Medicare?",
+        "answer": "Sí. El deducible hospitalario de la Parte A de $1,736 por período de beneficios en 2026 cuenta para los gastos médicos totales en el Anexo A, Línea 1, igual que cualquier otro costo de bolsillo de Medicare. Solo produce un beneficio fiscal una vez que los gastos médicos totales del año superan el 7.5% del ingreso bruto ajustado."
+      },
+      {
+        "question": "¿Cuál es el umbral del 7.5% del AGI para deducciones de gastos médicos?",
+        "answer": "El piso del 7.5% significa que solo puede deducir la porción de gastos médicos totales, incluidas todas las primas, deducibles y coseguro de Medicare, que supera el 7.5% del ingreso bruto ajustado. El Congreso hizo permanente este umbral para 2026 en adelante. Para un AGI de $60,000, el piso es $4,500."
+      },
+      {
+        "question": "¿Los trabajadores independientes deducen las primas de Medicare de manera diferente?",
+        "answer": "Sí. Los contribuyentes independientes de 65 años o más que muestran una ganancia neta y no tienen acceso a cobertura subsidiada por un empleador a través del trabajo de un cónyuge pueden deducir las primas de la Parte B, la Parte D, Medigap y Medicare Advantage de forma directa en el Anexo 1, Línea 17, sin detallar deducciones ni superar el piso del 7.5% del AGI."
+      },
+      {
+        "question": "¿Son deducibles de impuestos las primas de Medigap?",
+        "answer": "Sí, bajo las mismas reglas que otras primas de Medicare. Las primas de Medigap cuentan como gasto médico en el Anexo A si detalla deducciones, y se incluyen en la deducción de seguro médico para trabajadores independientes si califica para esa opción directa."
+      },
+      {
+        "question": "¿Necesito detallar deducciones para deducir costos de Medicare?",
+        "answer": "Generalmente, sí. Las primas, deducibles, copagos y coseguro de Medicare solo producen un beneficio fiscal a través de deducciones detalladas del Anexo A, lo que requiere renunciar a la deducción estándar de 2026. La excepción es la deducción de seguro médico para trabajadores independientes, que permite a beneficiarios independientes calificados deducir primas, no deducibles ni copagos, sin detallar."
+      },
+      {
+        "question": "¿Puedo deducir los copagos y el coseguro de Medicare Advantage?",
+        "answer": "Sí. Los copagos y el coseguro de Medicare Advantage para servicios médicos cubiertos cuentan como gastos médicos calificados en el Anexo A, igual que el costo compartido de Medicare Original. Los beneficios adicionales como membresías de acondicionamiento físico generalmente no califican a menos que un médico los recete para una condición diagnosticada específica."
+      },
+      {
+        "question": "¿Qué costos relacionados con Medicare no son deducibles de impuestos?",
+        "answer": "Las primas pagadas mediante deducción de nómina antes de impuestos, cualquier costo ya reembolsado por un seguro o empleador, procedimientos cosméticos que Medicare no cubriría por no ser médicamente necesarios, y el cuidado de custodia a largo plazo que es principalmente asistencia personal no son deducibles, según la Publicación 502 del IRS."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Are Medicare Premiums Tax Deductible?", "es": "¿Son Deducibles las Primas de Medicare?" },
+      "href": "/qa/medicare-premiums-tax-deductible"
+    },
+    {
+      "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Médicas" },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad de Medicare" },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "IRS Publication 502: Medical and Dental Expenses (2026)",
+      "url": "https://www.irs.gov/publications/p502",
+      "note": {
+        "en": "Official IRS guidance on which medical expenses, including Medicare premiums, deductibles, and coinsurance, qualify for the Schedule A deduction and the 7.5% AGI floor.",
+        "es": "Guía oficial del IRS sobre qué gastos médicos, incluidas las primas, deducibles y coseguro de Medicare, califican para la deducción del Anexo A y el piso del 7.5% del AGI."
+      }
+    },
+    {
+      "name": "IRS: 2026 Tax Inflation Adjustments (Standard Deduction)",
+      "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "note": {
+        "en": "Official IRS release of 2026 standard deduction amounts and the additional standard deduction for taxpayers age 65 and older.",
+        "es": "Publicación oficial del IRS de los montos de la deducción estándar de 2026 y la deducción estándar adicional para contribuyentes de 65 años o más."
+      }
+    },
+    {
+      "name": "Medicare.gov: Costs (2026 Part A and Part B Premiums and Deductibles)",
+      "url": "https://www.medicare.gov/basics/costs/medicare-costs",
+      "note": {
+        "en": "Official CMS source for the 2026 Part A deductible, Part B deductible, and standard Part B premium used in the examples above.",
+        "es": "Fuente oficial de CMS para el deducible de la Parte A, el deducible de la Parte B y la prima estándar de la Parte B de 2026 usados en los ejemplos anteriores."
+      }
+    },
+    {
+      "name": "IRS: Schedule 1 (Form 1040) Instructions, Self-Employed Health Insurance Deduction",
+      "url": "https://www.irs.gov/instructions/i1040s1",
+      "note": {
+        "en": "Official IRS instructions for the above-the-line self-employed health insurance deduction on Schedule 1, Line 17, which covers Medicare premiums for qualifying self-employed taxpayers.",
+        "es": "Instrucciones oficiales del IRS para la deducción directa de seguro médico para trabajadores independientes en el Anexo 1, Línea 17, que cubre las primas de Medicare para contribuyentes independientes calificados."
+      }
+    }
+  ],
+
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": ["are medicare payments tax deductible", "medicare tax deduction 2026", "medicare out-of-pocket costs deductible", "medicare deductibles copays Schedule A"],
+    "es": ["los pagos de medicare son deducibles de impuestos", "deduccion de impuestos medicare 2026", "costos de bolsillo de medicare deducibles", "deducibles y copagos de medicare anexo a"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
