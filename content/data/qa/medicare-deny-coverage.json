@@ -1,0 +1,376 @@
+{
+  "slug": "medicare-deny-coverage",
+  "subtype": "coverage",
+  "question": {
+    "en": "Can Medicare Deny Coverage in 2026?",
+    "es": "¿Puede Medicare Negar la Cobertura en 2026?"
+  },
+  "shortAnswer": {
+    "en": "Yes. Medicare can deny coverage it finds medically unnecessary.",
+    "es": "Sí. Medicare puede negar cobertura que considere médicamente innecesaria."
+  },
+  "fullAnswer": {
+    "en": "Yes, Medicare can deny coverage. Original Medicare denies claims when a service is not medically necessary, experimental, or excluded under a National Coverage Determination (NCD) or Local Coverage Determination (LCD). Medicare Advantage plans deny coverage more often, mainly through prior authorization. Every denial carries appeal rights, and CMS's 2026 rule requires Medicare Advantage plans to decide standard prior authorization requests within 7 calendar days (72 hours if expedited) and state a specific reason for each denial.",
+    "es": "Sí, Medicare puede negar cobertura. Medicare Original niega reclamos cuando considera que un servicio no es médicamente necesario, es experimental, o está excluido bajo una Determinación de Cobertura Nacional (NCD) o una Determinación de Cobertura Local (LCD). Los planes Medicare Advantage niegan cobertura con más frecuencia, principalmente mediante autorización previa. Cada negación conlleva derechos de apelación, y la regla de CMS de 2026 exige que los planes Medicare Advantage decidan las solicitudes estándar de autorización previa en 7 días calendario (72 horas si es urgente) y den una razón específica para cada negación."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Coverage Denials and Appeals",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "pageType": "coverage",
+  "lastUpdated": "2026-09-16",
+  "readingTime": "8 min read",
+
+  "meta": {
+    "title": {
+      "en": "Can Medicare Deny Coverage in 2026? | CoveredUSA",
+      "es": "¿Puede Medicare Negar la Cobertura en 2026? | CoveredUSA"
+    },
+    "description": {
+      "en": "Yes, Medicare can deny coverage it calls medically unnecessary. See 2026 denial reasons by plan type, appeal deadlines, and how to fight back.",
+      "es": "Sí, Medicare puede negar cobertura que considere médicamente innecesaria. Vea razones de negación 2026, plazos de apelación y cómo apelar."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Can Medicare Deny Coverage? (2026)",
+      "es": "¿Puede Medicare Negar la Cobertura? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Medicare denies millions of claims and prior authorization requests every year, and the rules for when it can say no differ sharply depending on whether you have Original Medicare or a Medicare Advantage plan. In 2026, a new CMS rule (CMS-0057-F) forces Medicare Advantage insurers to move faster and explain denials more clearly, but the underlying right to deny coverage has not changed.",
+      "es": "Medicare niega millones de reclamos y solicitudes de autorización previa cada año, y las reglas sobre cuándo puede negar cobertura difieren mucho según si usted tiene Medicare Original o un plan Medicare Advantage. En 2026, una nueva regla de CMS (CMS-0057-F) obliga a las aseguradoras Medicare Advantage a actuar más rápido y explicar mejor sus negaciones, pero el derecho subyacente a negar cobertura no ha cambiado."
+    },
+    {
+      "en": "The sections below break down exactly when Medicare can deny coverage in 2026, how denial rules differ across Original Medicare, Medicare Advantage, Medicare Part D, and Medigap, and the five-level appeal process available to fight back. For related context, see [Medigap vs. Medicare Advantage](/en/qa/medigap-vs-medicare-advantage) and [switching from Medicare Advantage back to Original Medicare](/en/qa/can-i-switch-from-medicare-advantage-to-original).",
+      "es": "Las siguientes secciones detallan exactamente cuándo Medicare puede negar cobertura en 2026, cómo difieren las reglas de negación entre Medicare Original, Medicare Advantage, Medicare Parte D y Medigap, y el proceso de apelación de cinco niveles disponible para apelar. Para contexto relacionado, vea Medigap vs. Medicare Advantage y cómo cambiar de Medicare Advantage a Medicare Original."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Plan Type", "Can Deny Coverage?", "Common Denial Reasons (2026)", "Appeal Timeline (2026)"],
+      "es": ["Tipo de Plan", "¿Puede Negar Cobertura?", "Razones Comunes de Negación (2026)", "Plazo de Apelación (2026)"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Original Medicare (Part A and Part B)", "es": "Medicare Original (Parte A y Parte B)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Not medically necessary per an NCD or LCD, custodial care, experimental treatment", "es": "No médicamente necesario según una NCD o LCD, cuidado custodial, tratamiento experimental" },
+          { "en": "120 days to file a Level 1 Redetermination; MAC decides within 60 days", "es": "120 días para presentar una Redeterminación de Nivel 1; el MAC decide en 60 días" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Advantage (Part C)", "es": "Medicare Advantage (Parte C)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Prior authorization denial, out-of-network care, stricter plan medical necessity criteria", "es": "Negación de autorización previa, atención fuera de la red, criterios de necesidad médica más estrictos" },
+          { "en": "7-calendar-day standard prior authorization decision (72 hours if expedited) required in 2026; internal appeal, then Independent Review Entity", "es": "Decisión estándar de autorización previa en 7 días calendario (72 horas si es urgente) requerida en 2026; apelación interna, luego Entidad de Revisión Independiente" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Part D", "es": "Medicare Parte D" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Drug not on formulary, failed step therapy, exceeded quantity limit", "es": "Medicamento fuera del formulario, terapia escalonada no cumplida, límite de cantidad excedido" },
+          { "en": "72-hour standard coverage determination, 24-hour expedited; 7-day standard redetermination appeal", "es": "Determinación de cobertura estándar en 72 horas, 24 horas si es urgente; apelación de redeterminación estándar en 7 días" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medigap (Medicare Supplement)", "es": "Medigap (Suplemento de Medicare)" },
+          { "value": { "en": "No independent denial", "es": "Sin negación independiente" }, "status": "partial" },
+          { "en": "Cannot deny an already-approved Original Medicare claim; can deny new enrollment outside the guaranteed-issue window", "es": "No puede negar un reclamo ya aprobado por Medicare Original; puede negar inscripción nueva fuera del período de emisión garantizada" },
+          { "en": "Claim denials appeal through Original Medicare; enrollment denials appeal through the state insurance department", "es": "Las negaciones de reclamos se apelan a través de Medicare Original; las negaciones de inscripción se apelan ante el departamento estatal de seguros" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Medicare coverage denials by plan type in 2026: all four plan types can restrict what they pay, but only Original Medicare and Medicare Advantage make true medical-necessity denials. CMS's 2026 prior authorization rule (CMS-0057-F) now requires Medicare Advantage plans to give a specific reason and decide standard requests within 7 calendar days (72 hours if expedited).",
+      "es": "Negaciones de cobertura de Medicare por tipo de plan en 2026: los cuatro tipos de plan pueden restringir lo que pagan, pero solo Medicare Original y Medicare Advantage toman verdaderas decisiones de negación por necesidad médica. La regla de autorización previa de CMS de 2026 (CMS-0057-F) ahora exige que los planes Medicare Advantage den una razón específica y decidan las solicitudes estándar en 7 días calendario (72 horas si son urgentes)."
+    },
+    "source": "CMS.gov, Medicare.gov, KFF Medicare Advantage Prior Authorization Issue Brief 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer",
+        "es": "Respuesta Directa"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes, Medicare can deny coverage. Original Medicare denies claims when a service is not medically necessary, experimental, or excluded under a National Coverage Determination (NCD) or a Local Coverage Determination (LCD). Medicare Advantage plans deny coverage more often, mainly through prior authorization. Every denial carries appeal rights, and CMS's 2026 rule requires Medicare Advantage plans to decide standard prior authorization requests within 7 calendar days (72 hours if expedited) and state a specific reason for each denial.",
+          "es": "Sí, Medicare puede negar cobertura. Medicare Original niega reclamos cuando un servicio no es médicamente necesario, es experimental, o está excluido bajo una Determinación de Cobertura Nacional (NCD) o una Determinación de Cobertura Local (LCD). Los planes Medicare Advantage niegan cobertura con más frecuencia, principalmente mediante autorización previa. Cada negación conlleva derechos de apelación, y la regla de CMS de 2026 exige que los planes Medicare Advantage decidan las solicitudes estándar de autorización previa en 7 días calendario (72 horas si es urgente) y den una razón específica para cada negación."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How Original Medicare Denies Coverage in 2026",
+        "es": "Cómo Medicare Original Niega Cobertura en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare, meaning Medicare Part A and Medicare Part B combined, denies a claim when a Medicare Administrative Contractor (MAC) decides the service does not meet a National Coverage Determination (NCD) or Local Coverage Determination (LCD). NCDs are national rules set by CMS that apply everywhere; LCDs are regional rules set by each MAC and can vary by state. Common Original Medicare denials in 2026 include custodial care that does not require skilled nursing, cosmetic procedures, routine dental and vision care, and treatments CMS classifies as experimental or investigational. When a claim is denied, you receive a Medicare Summary Notice (MSN) every three months listing what was billed, what Medicare paid, and the specific reason for any denial, along with your appeal rights and deadline.",
+          "es": "Medicare Original, es decir, la Parte A y la Parte B de Medicare combinadas, niega un reclamo cuando un Contratista Administrativo de Medicare (MAC) decide que el servicio no cumple una Determinación de Cobertura Nacional (NCD) o Local (LCD). Las NCD son reglas nacionales establecidas por CMS que aplican en todas partes; las LCD son reglas regionales establecidas por cada MAC y pueden variar por estado. Las negaciones comunes de Medicare Original en 2026 incluyen cuidado custodial que no requiere enfermería especializada, procedimientos cosméticos, cuidado dental y de la vista de rutina, y tratamientos que CMS clasifica como experimentales. Cuando se niega un reclamo, usted recibe un Resumen de Medicare (MSN) cada tres meses que detalla lo facturado, lo que pagó Medicare y la razón específica de cualquier negación, junto con sus derechos y plazos de apelación."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Why Medicare Advantage Plans Deny More Often",
+        "es": "Por Qué los Planes Medicare Advantage Niegan Más Seguido"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Advantage plans denied 4.1 million of the 52.8 million prior authorization requests they processed in 2024, a denial rate of about 7.7 percent, according to KFF's analysis of CMS data. Only around 11.5 percent of denied requests were formally appealed, yet 80.7 percent of the ones that were appealed got overturned, meaning the original denial was wrong. Starting January 1, 2026, the CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F) requires every Medicare Advantage plan to decide standard prior authorization requests within 7 calendar days and expedited requests within 72 hours, and to give a specific clinical reason instead of a generic denial letter. Medicare Advantage plans can still apply stricter internal medical necessity criteria than Original Medicare for services without a specific NCD or LCD, which is the main reason denial rates run higher than traditional Medicare.",
+          "es": "Los planes Medicare Advantage negaron 4.1 millones de las 52.8 millones de solicitudes de autorización previa que procesaron en 2024, una tasa de negación de aproximadamente 7.7 por ciento, según el análisis de KFF sobre datos de CMS. Solo alrededor del 11.5 por ciento de las solicitudes negadas fueron apeladas formalmente, pero el 80.7 por ciento de las apeladas fueron revertidas, lo que significa que la negación original era incorrecta. A partir del 1 de enero de 2026, la Regla Final de Interoperabilidad y Autorización Previa de CMS (CMS-0057-F) exige que todo plan Medicare Advantage decida las solicitudes estándar de autorización previa en 7 días calendario y las urgentes en 72 horas, y que dé una razón clínica específica en vez de una carta de negación genérica. Los planes Medicare Advantage aún pueden aplicar criterios internos de necesidad médica más estrictos que Medicare Original para servicios sin una NCD o LCD específica, lo cual explica por qué sus tasas de negación son más altas."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Does Medicare Part D Deny Prescription Drug Coverage?",
+        "es": "¿La Parte D de Medicare Niega Cobertura de Medicamentos?"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Part D plans deny prescription drug coverage when a drug is not on the plan's formulary, when a cheaper alternative must be tried first under step therapy, or when a prescribed quantity exceeds the plan's limit. Every Part D denial, called a coverage determination, must be decided within 72 hours for a standard request and 24 hours for an expedited request in 2026. Your prescriber can request an exception if a formulary drug would be less effective or would cause an adverse reaction, and pharmacists must give you a written notice explaining the denial and how to appeal. Insulin remains capped at $35 per month under the Inflation Reduction Act regardless of formulary tier, and total out-of-pocket drug costs are capped at $2,100 in 2026.",
+          "es": "Los planes de la Parte D de Medicare niegan cobertura de medicamentos cuando un medicamento no está en el formulario del plan, cuando se debe probar primero una alternativa más económica bajo terapia escalonada, o cuando la cantidad recetada excede el límite del plan. Toda negación de la Parte D, llamada determinación de cobertura, debe decidirse en 72 horas para una solicitud estándar y 24 horas para una urgente en 2026. Su médico puede solicitar una excepción si un medicamento del formulario sería menos eficaz o causaría una reacción adversa, y las farmacias deben darle un aviso escrito explicando la negación y cómo apelar. La insulina permanece con un tope de $35 al mes en 2026 bajo la Ley de Reducción de la Inflación sin importar el nivel del formulario, y los costos totales de medicamentos de su bolsillo tienen un tope de $2,100 en 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medigap Does Not Deny Medical Claims, But It Has Limits",
+        "es": "Medigap No Niega Reclamos Médicos, Pero Tiene Límites"
+      },
+      "paragraphs": [
+        {
+          "en": "Medigap policies do not make medical necessity decisions, because Medigap only pays the deductibles, copayments, and coinsurance left over after Original Medicare approves a claim; if Original Medicare denies the underlying service, Medigap has nothing to pay. Medigap insurers can still deny you a policy or charge more based on health history if you apply outside your six-month Medigap Open Enrollment Period, which starts the month you turn 65 and enroll in Part B. Outside that window and outside a handful of state guaranteed-issue protections, Medigap medical underwriting works much like preexisting condition exclusions did in the individual market before the ACA banned them for ACA-compliant plans.",
+          "es": "Las pólizas Medigap no toman decisiones de necesidad médica, porque Medigap solo paga los deducibles, copagos y coseguros que quedan después de que Medicare Original aprueba un reclamo; si Medicare Original niega el servicio subyacente, Medigap no tiene nada que pagar. Las aseguradoras Medigap aún pueden negarle una póliza o cobrarle más según su historial de salud si solicita fuera de su Período de Inscripción Abierta de Medigap de seis meses, que comienza el mes en que cumple 65 años y se inscribe en la Parte B. Fuera de esa ventana y fuera de algunas protecciones estatales de emisión garantizada, la suscripción médica de Medigap funciona de forma parecida a las exclusiones por condición preexistente que existían en el mercado individual antes de que el ACA las prohibiera para los planes conformes con el ACA."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Appeal a Medicare Coverage Denial in 2026",
+        "es": "Cómo Apelar una Negación de Cobertura de Medicare en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Every Medicare denial, whether from Original Medicare, Medicare Advantage, or Part D, comes with a formal five-level appeal process, and deadlines are strict. Start by reading your denial notice (Medicare Summary Notice, Advance Beneficiary Notice, or plan denial letter) for the exact reason and the appeal deadline. Original Medicare appeals go through medicare.gov's claims and appeals process; Medicare Advantage and Part D appeals go directly through your plan first.",
+          "es": "Toda negación de Medicare, ya sea de Medicare Original, Medicare Advantage o la Parte D, tiene un proceso formal de apelación de cinco niveles, con plazos estrictos. Comience leyendo su aviso de negación (Resumen de Medicare, Aviso Anticipado, o carta de negación del plan) para conocer la razón exacta y el plazo de apelación. Las apelaciones de Medicare Original se procesan a través del sistema de reclamos y apelaciones de medicare.gov; las apelaciones de Medicare Advantage y la Parte D se dirigen primero a su plan."
+        }
+      ],
+      "list": [
+        { "en": "A copy of the denial notice (MSN, Advance Beneficiary Notice, or plan letter)", "es": "Una copia del aviso de negación (MSN, Aviso Anticipado, o carta del plan)" },
+        { "en": "A letter from your doctor explaining why the service was medically necessary", "es": "Una carta de su médico explicando por qué el servicio era médicamente necesario" },
+        { "en": "Medical records, test results, or imaging that support the claim", "es": "Registros médicos, resultados de pruebas o imágenes que respalden el reclamo" },
+        { "en": "The specific NCD, LCD, or plan policy number cited in the denial, if listed", "es": "El número específico de NCD, LCD, o política del plan citado en la negación, si aparece" }
+      ],
+      "table": {
+        "caption": {
+          "en": "Medicare appeal levels and deadlines 2026",
+          "es": "Niveles y plazos de apelación de Medicare 2026"
+        },
+        "headers": {
+          "en": ["Level", "Who Decides", "Deadline to File"],
+          "es": ["Nivel", "Quién Decide", "Plazo para Presentar"]
+        },
+        "rows": [
+          { "en": ["Level 1: Redetermination", "Your Medicare Administrative Contractor (MAC)", "120 days from the denial notice; MAC decides within 60 days"], "es": ["Nivel 1: Redeterminación", "Su Contratista Administrativo de Medicare (MAC)", "120 días desde el aviso de negación; el MAC decide en 60 días"] },
+          { "en": ["Level 2: Reconsideration", "Qualified Independent Contractor (QIC)", "180 days from the redetermination notice"], "es": ["Nivel 2: Reconsideración", "Contratista Independiente Calificado (QIC)", "180 días desde el aviso de redeterminación"] },
+          { "en": ["Level 3: ALJ Hearing", "Administrative Law Judge (OMHA)", "60 days from the reconsideration notice; case must involve at least $200 in 2026"], "es": ["Nivel 3: Audiencia ALJ", "Juez de Derecho Administrativo (OMHA)", "60 días desde el aviso de reconsideración; el caso debe involucrar al menos $200 en 2026"] },
+          { "en": ["Level 4: Medicare Appeals Council", "Medicare Appeals Council review board", "60 days from the ALJ decision"], "es": ["Nivel 4: Consejo de Apelaciones de Medicare", "Junta de revisión del Consejo de Apelaciones de Medicare", "60 días desde la decisión del ALJ"] },
+          { "en": ["Level 5: Federal District Court", "U.S. District Court", "60 days from the Council decision; case must involve at least $1,960 in 2026"], "es": ["Nivel 5: Corte Federal de Distrito", "Corte de Distrito de los Estados Unidos", "60 días desde la decisión del Consejo; el caso debe involucrar al menos $1,960 en 2026"] }
+        ],
+        "footnote": {
+          "en": "Medicare Advantage appeals follow a similar five-level path but start with the plan's internal reconsideration, then move to the Independent Review Entity (C2C Innovative Solutions, which replaced Maximus in 2026), then the ALJ, Council, and federal court.",
+          "es": "Las apelaciones de Medicare Advantage siguen una ruta similar de cinco niveles, pero comienzan con la reconsideración interna del plan, luego pasan a la Entidad de Revisión Independiente (C2C Innovative Solutions, que reemplazó a Maximus en 2026), después al ALJ, al Consejo y a la corte federal."
+        },
+        "source": "CMS.gov Medicare Parts A and B Appeals Process, Medicare.gov Claims and Appeals 2026"
+      }
+    },
+    {
+      "heading": {
+        "en": "Alternatives If Your Denial Is Upheld",
+        "es": "Alternativas Si Se Mantiene la Negación"
+      },
+      "paragraphs": [
+        {
+          "en": "A denial that survives all five appeal levels is not the end of your options. Every state has a free State Health Insurance Assistance Program (SHIP) counselor who can review your denial and help you file the next appeal at no cost; find yours at shiphelp.org. If a denied service falls outside what Original Medicare, Medicare Advantage, or Part D will ever cover, such as routine dental work or cosmetic procedures, a standalone supplemental dental, vision, or hearing policy can fill the gap. Family members under 65 who lose employer coverage because of a Medicare-eligible spouse's job change can shop ACA-compliant marketplace plans, which must cover the ten essential health benefits and cannot deny enrollment or charge more for a preexisting condition.",
+          "es": "Una negación que sobrevive los cinco niveles de apelación no es el final de sus opciones. Cada estado tiene un consejero gratuito del Programa Estatal de Asistencia sobre Seguros de Salud (SHIP) que puede revisar su negación y ayudarle a presentar la siguiente apelación sin costo; encuentre el suyo en shiphelp.org. Si un servicio negado queda fuera de lo que Medicare Original, Medicare Advantage o la Parte D cubrirán alguna vez, como trabajo dental de rutina o procedimientos cosméticos, una póliza suplementaria independiente de dental, visión o audición puede llenar ese vacío. Los familiares menores de 65 años que pierden cobertura de empleador por un cambio de trabajo de un cónyuge elegible para Medicare pueden comprar planes del mercado conformes con el ACA, que deben cubrir los diez beneficios esenciales de salud y no pueden negar inscripción ni cobrar más por una condición preexistente."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Can Original Medicare deny a claim in 2026?",
+        "answer": "Yes. Original Medicare denies a claim whenever a Medicare Administrative Contractor decides the service is not medically necessary, is experimental, or falls outside a National Coverage Determination (NCD) or Local Coverage Determination (LCD). Common denials include custodial care, cosmetic procedures, and routine dental or vision services. The denial reason appears on your Medicare Summary Notice along with the 120-day deadline to file a redetermination appeal."
+      },
+      {
+        "question": "Why do Medicare Advantage plans deny more claims than Original Medicare?",
+        "answer": "Medicare Advantage insurers denied about 7.7 percent of the 52.8 million prior authorization requests they processed in 2024, largely because plans can apply stricter internal medical necessity rules than Original Medicare for services without a specific NCD or LCD. KFF found that 80.7 percent of appealed Medicare Advantage denials were overturned, which suggests many initial denials are avoidable if you appeal in 2026."
+      },
+      {
+        "question": "What is a Local Coverage Determination (LCD)?",
+        "answer": "A Local Coverage Determination is a coverage rule written by a regional Medicare Administrative Contractor that decides whether a specific service is reasonable and medically necessary in that MAC's service area. LCDs fill gaps where CMS has not issued a National Coverage Determination, which is why the same service can be covered in one state and denied in another under Original Medicare in 2026."
+      },
+      {
+        "question": "How long do I have to appeal a Medicare denial in 2026?",
+        "answer": "You have 120 days from the date on your denial notice to file a Level 1 Redetermination Request with your Medicare Administrative Contractor. If that is denied, you have 180 days to request a Level 2 Reconsideration from a Qualified Independent Contractor, then 60 days for each further level, including the Administrative Law Judge hearing and Medicare Appeals Council."
+      },
+      {
+        "question": "Does Medicare Part D deny prescription drug coverage?",
+        "answer": "Yes. Part D plans deny a drug when it is not on the formulary, when step therapy requires trying a cheaper drug first, or when the prescribed quantity exceeds the plan's limit. Part D plans must decide a standard coverage determination within 72 hours and an expedited request within 24 hours in 2026, and your doctor can request a formulary exception."
+      },
+      {
+        "question": "Can Medigap deny me coverage?",
+        "answer": "Medigap cannot deny an already-approved Original Medicare claim, because it only pays the cost-sharing Original Medicare leaves behind. Medigap insurers can deny you a new policy or charge more based on your health if you apply outside your six-month Medigap Open Enrollment Period, which starts the month you turn 65 and enroll in Part B."
+      },
+      {
+        "question": "What happens if my Medicare appeal is denied at every level?",
+        "answer": "If the Medicare Appeals Council upholds the denial, you can file in U.S. District Court within 60 days, as long as the disputed amount reaches $1,960 in 2026. If your case does not meet that dollar threshold, a free State Health Insurance Assistance Program (SHIP) counselor can help you review remaining options, including standalone supplemental coverage for the denied service."
+      },
+      {
+        "question": "Is the Medicare Advantage prior authorization process changing in 2026?",
+        "answer": "Yes. The CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F) requires every Medicare Advantage plan to decide standard prior authorization requests within 7 calendar days and expedited requests within 72 hours starting January 1, 2026, and to state a specific reason for each denial instead of a generic one. The rule also requires more transparency about which services need prior authorization."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Puede Medicare Original negar un reclamo en 2026?",
+        "answer": "Sí. Medicare Original niega un reclamo cuando un Contratista Administrativo de Medicare decide que el servicio no es médicamente necesario, es experimental, o queda fuera de una Determinación de Cobertura Nacional (NCD) o Local (LCD). Las negaciones comunes incluyen cuidado custodial, procedimientos cosméticos y servicios dentales o de la vista de rutina. La razón de la negación aparece en su Resumen de Medicare junto con el plazo de 120 días para apelar."
+      },
+      {
+        "question": "¿Por qué los planes Medicare Advantage niegan más reclamos que Medicare Original?",
+        "answer": "Las aseguradoras Medicare Advantage negaron aproximadamente el 7.7 por ciento de las 52.8 millones de solicitudes de autorización previa que procesaron en 2024, en gran parte porque los planes pueden aplicar reglas internas de necesidad médica más estrictas que Medicare Original para servicios sin una NCD o LCD específica. KFF encontró que el 80.7 por ciento de las negaciones apeladas de Medicare Advantage fueron revertidas, lo que sugiere que muchas negaciones iniciales son evitables si apela en 2026."
+      },
+      {
+        "question": "¿Qué es una Determinación de Cobertura Local (LCD)?",
+        "answer": "Una Determinación de Cobertura Local es una regla de cobertura escrita por un Contratista Administrativo de Medicare regional que decide si un servicio específico es razonable y médicamente necesario en el área de ese MAC. Las LCD llenan vacíos donde CMS no ha emitido una Determinación de Cobertura Nacional, por lo que el mismo servicio puede estar cubierto en un estado y negado en otro bajo Medicare Original en 2026."
+      },
+      {
+        "question": "¿Cuánto tiempo tengo para apelar una negación de Medicare en 2026?",
+        "answer": "Tiene 120 días desde la fecha de su aviso de negación para presentar una Solicitud de Redeterminación de Nivel 1 con su Contratista Administrativo de Medicare. Si eso se niega, tiene 180 días para solicitar una Reconsideración de Nivel 2 ante un Contratista Independiente Calificado, luego 60 días para cada nivel adicional, incluyendo la audiencia ante el Juez de Derecho Administrativo y el Consejo de Apelaciones."
+      },
+      {
+        "question": "¿La Parte D de Medicare niega cobertura de medicamentos recetados?",
+        "answer": "Sí. Los planes de la Parte D niegan un medicamento cuando no está en el formulario, cuando la terapia escalonada requiere probar primero un medicamento más económico, o cuando la cantidad recetada excede el límite del plan. Los planes de la Parte D deben decidir una determinación de cobertura estándar en 72 horas y una urgente en 24 horas en 2026, y su médico puede solicitar una excepción del formulario."
+      },
+      {
+        "question": "¿Puede Medigap negarme cobertura?",
+        "answer": "Medigap no puede negar un reclamo ya aprobado por Medicare Original, porque solo paga los costos compartidos que Medicare Original deja pendientes. Las aseguradoras Medigap pueden negarle una póliza nueva o cobrarle más según su salud si solicita fuera de su Período de Inscripción Abierta de Medigap de seis meses, que comienza el mes en que cumple 65 años y se inscribe en la Parte B."
+      },
+      {
+        "question": "¿Qué pasa si mi apelación de Medicare es negada en todos los niveles?",
+        "answer": "Si el Consejo de Apelaciones de Medicare mantiene la negación, puede presentar su caso en la Corte de Distrito de los Estados Unidos dentro de 60 días, siempre que el monto en disputa alcance $1,960 en 2026. Si su caso no cumple ese umbral, un consejero gratuito del Programa Estatal de Asistencia sobre Seguros de Salud (SHIP) puede ayudarle a revisar las opciones restantes, incluyendo cobertura suplementaria independiente para el servicio negado."
+      },
+      {
+        "question": "¿Está cambiando el proceso de autorización previa de Medicare Advantage en 2026?",
+        "answer": "Sí. La Regla Final de Interoperabilidad y Autorización Previa de CMS (CMS-0057-F) exige que todo plan Medicare Advantage decida las solicitudes estándar de autorización previa en 7 días calendario y las urgentes en 72 horas a partir del 1 de enero de 2026, y que dé una razón específica para cada negación en lugar de una genérica. La regla también exige más transparencia sobre qué servicios necesitan autorización previa."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Medigap vs. Medicare Advantage", "es": "Medigap vs. Medicare Advantage" },
+      "href": "/qa/medigap-vs-medicare-advantage"
+    },
+    {
+      "label": { "en": "Can I Switch From Medicare Advantage to Original Medicare?", "es": "¿Puedo Cambiar de Medicare Advantage a Medicare Original?" },
+      "href": "/qa/can-i-switch-from-medicare-advantage-to-original"
+    },
+    {
+      "label": { "en": "What Is Prior Authorization?", "es": "¿Qué Es la Autorización Previa?" },
+      "href": "/glossary/prior-authorization"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicare.gov: Claims and Appeals",
+      "url": "https://www.medicare.gov/claims-and-appeals",
+      "note": {
+        "en": "Official Medicare guidance on how to read a Medicare Summary Notice and file the five-level appeals process.",
+        "es": "Guía oficial de Medicare sobre cómo leer un Resumen de Medicare y presentar el proceso de apelación de cinco niveles."
+      }
+    },
+    {
+      "name": "CMS.gov: Interoperability and Prior Authorization Final Rule (CMS-0057-F)",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f",
+      "note": {
+        "en": "CMS fact sheet on the 2026 rule requiring faster, more transparent Medicare Advantage prior authorization decisions.",
+        "es": "Hoja informativa de CMS sobre la regla de 2026 que exige decisiones de autorización previa de Medicare Advantage más rápidas y transparentes."
+      }
+    },
+    {
+      "name": "CMS.gov: Medicare Fee-for-Service Appeals Process",
+      "url": "https://www.cms.gov/medicare/appeals-grievances/fee-for-service",
+      "note": {
+        "en": "Official CMS description of the Original Medicare redetermination, reconsideration, ALJ, Council, and federal court appeal levels.",
+        "es": "Descripción oficial de CMS de los niveles de apelación de Medicare Original: redeterminación, reconsideración, ALJ, Consejo y corte federal."
+      }
+    },
+    {
+      "name": "KFF: Prior Authorization in Medicare Advantage Plans",
+      "url": "https://www.kff.org/medicare/issue-brief/prior-authorization-in-medicare-advantage-plans-how-many-denials-are-overturned-on-appeal/",
+      "note": {
+        "en": "KFF analysis of CMS data on Medicare Advantage prior authorization denial and appeal-overturn rates.",
+        "es": "Análisis de KFF sobre datos de CMS de tasas de negación y reversión de apelaciones de autorización previa de Medicare Advantage."
+      }
+    }
+  ],
+
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": ["can medicare deny coverage", "medicare coverage denial 2026", "medicare advantage prior authorization denial", "medicare appeal process 2026"],
+    "es": ["puede medicare negar cobertura", "negacion de cobertura medicare 2026", "negacion de autorizacion previa medicare advantage", "proceso de apelacion medicare 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Read your denial notice (Medicare Summary Notice, Advance Beneficiary Notice, or plan letter) to find the exact reason for the denial and your appeal deadline.", "es": "Paso 1: Lea su aviso de negación (Resumen de Medicare, Aviso Anticipado, o carta del plan) para conocer la razón exacta de la negación y su plazo de apelación." },
+      { "en": "Step 2: File a Level 1 appeal (a Redetermination Request for Original Medicare, or an internal appeal for Medicare Advantage and Part D) within 120 days (Original Medicare) or 60 days (Medicare Advantage and Part D) of the denial notice.", "es": "Paso 2: Presente una apelación de Nivel 1 (una Solicitud de Redeterminación para Medicare Original, o una apelación interna para Medicare Advantage y la Parte D) dentro de 120 días (Medicare Original) o 60 días (Medicare Advantage y Parte D) desde el aviso de negación." },
+      { "en": "Step 3: If Level 1 is denied, request a Level 2 Reconsideration from a Qualified Independent Contractor (Original Medicare) or the Independent Review Entity (Medicare Advantage and Part D) within 180 days.", "es": "Paso 3: Si se niega el Nivel 1, solicite una Reconsideración de Nivel 2 ante un Contratista Independiente Calificado (Medicare Original) o la Entidad de Revisión Independiente (Medicare Advantage y Parte D) dentro de 180 días." },
+      { "en": "Step 4: If Level 2 is denied and your case meets the $200 minimum for 2026, request a Level 3 hearing before an Administrative Law Judge within 60 days.", "es": "Paso 4: Si se niega el Nivel 2 y su caso cumple el mínimo de $200 para 2026, solicite una audiencia de Nivel 3 ante un Juez de Derecho Administrativo dentro de 60 días." },
+      { "en": "Step 5: Continue to the Medicare Appeals Council and, if needed, U.S. District Court (minimum $1,960 in 2026), each within 60 days of the prior decision.", "es": "Paso 5: Continúe al Consejo de Apelaciones de Medicare y, si es necesario, a la Corte de Distrito de los Estados Unidos (mínimo $1,960 en 2026), cada uno dentro de 60 días de la decisión anterior." }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/claims-and-appeals",
+    "documentsNeeded": [
+      { "en": "Denial notice (Medicare Summary Notice, Advance Beneficiary Notice, or plan denial letter)", "es": "Aviso de negación (Resumen de Medicare, Aviso Anticipado, o carta de negación del plan)" },
+      { "en": "Completed Redetermination Request Form (CMS-20027) for Original Medicare appeals", "es": "Formulario de Solicitud de Redeterminación completado (CMS-20027) para apelaciones de Medicare Original" },
+      { "en": "Letter of medical necessity from your treating physician", "es": "Carta de necesidad médica de su médico tratante" },
+      { "en": "Supporting medical records, test results, or imaging", "es": "Registros médicos de respaldo, resultados de pruebas, o imágenes" },
+      { "en": "Copy of the prior authorization request your provider submitted, if applicable", "es": "Copia de la solicitud de autorización previa que presentó su proveedor, si corresponde" },
+      { "en": "Explanation of Benefits (EOB) from your Medicare Advantage or Part D plan", "es": "Explicación de Beneficios (EOB) de su plan Medicare Advantage o Parte D" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Service judged not medically necessary under an NCD or LCD", "es": "Servicio considerado no médicamente necesario según una NCD o LCD" },
+      { "en": "Missing or incomplete prior authorization (Medicare Advantage)", "es": "Autorización previa faltante o incompleta (Medicare Advantage)" },
+      { "en": "Treatment considered experimental or investigational", "es": "Tratamiento considerado experimental o de investigación" },
+      { "en": "Care received from an out-of-network provider (Medicare Advantage)", "es": "Atención recibida de un proveedor fuera de la red (Medicare Advantage)" },
+      { "en": "Drug not on the plan's formulary or quantity limit exceeded (Part D)", "es": "Medicamento fuera del formulario del plan o límite de cantidad excedido (Parte D)" }
+    ],
+    "deadline": {
+      "en": "120 days from the denial notice to file a Level 1 Redetermination Request (Original Medicare) in 2026; 60 days for Medicare Advantage and Part D internal appeals",
+      "es": "120 días desde el aviso de negación para presentar una Solicitud de Redeterminación de Nivel 1 (Medicare Original) en 2026; 60 días para apelaciones internas de Medicare Advantage y Parte D"
+    }
+  }
+}
