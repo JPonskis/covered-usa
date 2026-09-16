@@ -1,0 +1,347 @@
+{
+  "slug": "medicare-advantage-plans-are-bad-reddit",
+  "subtype": "coverage",
+  "pageType": "coverage",
+  "topicCluster": "medicare-coverage",
+  "question": {
+    "en": "Why Are Medicare Advantage Plans Bad?",
+    "es": "¿Por qué los planes Medicare Advantage son malos?"
+  },
+  "shortAnswer": {
+    "en": "It depends: network limits and prior auth denials frustrate many enrollees.",
+    "es": "Depende: los límites de red y las autorizaciones negadas frustran a muchos."
+  },
+  "fullAnswer": {
+    "en": "It depends on what you value most, network flexibility or predictable extra benefits. Medicare Advantage plans often bundle low or $0 premiums with dental, vision, and hearing extras, but restrict care to a plan network and required prior authorization for at least some services for 99% of enrollees in 2026, with insurers denying about 12% of standard prior authorization requests in 2025. The complaints people search Reddit to confirm, inaccurate provider directories, delayed prior authorization decisions, and plans that exit a county or cut benefits at year's end, are documented by CMS and KFF, not just anecdotal. Original Medicare paired with a Medigap policy avoids network restrictions and most prior authorization but skips those extra benefits and generally costs more each month.",
+    "es": "Depende de lo que más valore, flexibilidad de red o beneficios adicionales predecibles. Los planes Medicare Advantage suelen combinar primas bajas o de $0 con extras dentales, de visión y auditivos, pero restringen la atención a una red de plan y exigen autorización previa para al menos algunos servicios al 99% de los inscritos en 2026, y las aseguradoras negaron cerca del 12% de las solicitudes estándar de autorización previa en 2025. Las quejas que la gente busca confirmar en Reddit, directorios de proveedores inexactos, decisiones de autorización previa retrasadas y planes que se retiran de un condado o recortan beneficios a fin de año, están documentadas por CMS y KFF, no son solo anécdotas. Medicare Original combinado con una póliza Medigap evita las restricciones de red y la mayoría de las autorizaciones previas, pero no incluye esos beneficios adicionales y generalmente cuesta más cada mes."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Advantage Plan Complaints and Limitations",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "analyzer",
+  "lastUpdated": "2026-09-16",
+  "readingTime": "10 min read",
+
+  "meta": {
+    "title": {
+      "en": "Why Are Medicare Advantage Plans Bad? Real 2026 Data | CoveredUSA",
+      "es": "¿Por Qué Medicare Advantage Es Malo? Datos 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicare Advantage complaints explained with 2026 data: network limits, prior authorization denial rates, MOOP caps, and real alternatives if it isn't working.",
+      "es": "Quejas sobre Medicare Advantage explicadas con datos de 2026: límites de red, tasas de negación de autorización previa y alternativas reales."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Why Are Medicare Advantage Plans Bad? (2026 Data)",
+      "es": "¿Por Qué los Planes Medicare Advantage Son Malos? (Datos 2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Searching Reddit for \"Medicare Advantage bad\" turns up thousands of personal stories about denied claims, doctors who suddenly left a network, and plans that vanished at the end of the year. Those stories are worth taking seriously, but a single forum post cannot tell you whether a specific complaint is common, rare, or unique to one insurer. This page replaces the anecdotes with the actual 2026 CMS and KFF data behind the most repeated complaints so you can judge for yourself.",
+      "es": "Buscar en Reddit \"Medicare Advantage malo\" muestra miles de historias personales sobre reclamos negados, médicos que salieron repentinamente de una red y planes que desaparecieron a fin de año. Esas historias merecen atención, pero una publicación de un foro no puede decirle si una queja específica es común, rara o exclusiva de una aseguradora. Esta página reemplaza las anécdotas con los datos reales de CMS y KFF de 2026 detrás de las quejas más repetidas para que usted mismo pueda juzgar."
+    },
+    {
+      "en": "Medicare Advantage is not universally bad. About 55% of the 64.2 million people eligible for Medicare Advantage have chosen it, most often for the $0 premiums and extra dental, vision, and hearing benefits. But it is a different structure than Original Medicare, and that structure creates specific, documented friction points: prior authorization, narrow networks, and plan instability. For the full side-by-side comparison, see [Medicare Advantage vs Original Medicare](/qa/medicare-advantage-vs-original-medicare). If a specific plan is not working for you, see [can I switch from Medicare Advantage to Original Medicare](/qa/can-i-switch-from-medicare-advantage-to-original).",
+      "es": "Medicare Advantage no es universalmente malo. Cerca del 55% de los 64.2 millones de personas elegibles para Medicare Advantage lo han elegido, con mayor frecuencia por las primas de $0 y los beneficios adicionales dentales, de visión y auditivos. Pero es una estructura diferente a Medicare Original, y esa estructura crea puntos de fricción específicos y documentados: autorización previa, redes limitadas e inestabilidad de planes. Para la comparación completa, consulte Medicare Advantage vs Medicare Original."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Feature", "Original Medicare (Parts A + B)", "Medicare Advantage (Part C)", "Medigap + Original Medicare"],
+      "es": ["Característica", "Medicare Original (Partes A + B)", "Medicare Advantage (Parte C)", "Medigap + Medicare Original"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Provider network", "es": "Red de proveedores" },
+          { "value": { "en": "Any provider who accepts Medicare nationwide", "es": "Cualquier proveedor que acepte Medicare a nivel nacional" }, "status": "yes" },
+          { "value": { "en": "Limited to plan network (HMO or PPO) in 2026", "es": "Limitado a la red del plan (HMO o PPO) en 2026" }, "status": "partial" },
+          { "value": { "en": "Any provider who accepts Medicare nationwide", "es": "Cualquier proveedor que acepte Medicare a nivel nacional" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Prior authorization required", "es": "Requiere autorización previa" },
+          { "value": { "en": "Rare, mostly certain DME and procedures", "es": "Raro, principalmente ciertos equipos y procedimientos" }, "status": "no" },
+          { "value": { "en": "Yes, 99% of enrollees are in plans requiring it for some services in 2026", "es": "Sí, el 99% de los inscritos están en planes que la exigen para algunos servicios en 2026" }, "status": "yes" },
+          { "value": { "en": "No, Medigap does not add prior authorization", "es": "No, Medigap no agrega autorización previa" }, "status": "no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Annual out-of-pocket maximum (2026)", "es": "Máximo anual de gastos de bolsillo (2026)" },
+          { "value": { "en": "None without Medigap; costs are uncapped", "es": "Ninguno sin Medigap; los costos no tienen límite" }, "status": "no" },
+          { "value": { "en": "Capped at $9,250 in-network by CMS rule", "es": "Limitado a $9,250 en la red por regla de CMS" }, "status": "yes" },
+          { "value": { "en": "Effectively near $0 for covered services with most Medigap plans", "es": "Efectivamente cerca de $0 para servicios cubiertos con la mayoría de los planes Medigap" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Extra benefits (dental, vision, hearing)", "es": "Beneficios adicionales (dental, visión, audición)" },
+          { "value": { "en": "Not included", "es": "No incluido" }, "status": "no" },
+          { "value": { "en": "Often included, varies significantly by plan", "es": "A menudo incluido, varía mucho según el plan" }, "status": "partial" },
+          { "value": { "en": "Not included; must buy standalone coverage", "es": "No incluido; debe comprar cobertura independiente" }, "status": "no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Plan stability year to year", "es": "Estabilidad del plan año tras año" },
+          { "value": { "en": "Never changes; the federal benefit is fixed", "es": "Nunca cambia; el beneficio federal es fijo" }, "status": "yes" },
+          { "value": { "en": "Plans can exit a county or change benefits at year's end", "es": "Los planes pueden salir de un condado o cambiar beneficios a fin de año" }, "status": "no" },
+          { "value": { "en": "Stable; Medigap policies are guaranteed renewable", "es": "Estable; las pólizas Medigap son garantizadas renovables" }, "status": "yes" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Medicare Advantage coverage by plan type 2026. The $9,250 in-network out-of-pocket limit is the CMS-mandated ceiling; the enrollment-weighted average actual limit is lower, around $5,421 in-network. Original Medicare has no such cap unless paired with Medigap.",
+      "es": "Cobertura de Medicare Advantage por tipo de plan 2026. El límite de $9,250 en la red es el techo obligatorio de CMS; el promedio real ponderado por inscripción es más bajo, alrededor de $5,421 en la red. Medicare Original no tiene tal límite a menos que se combine con Medigap."
+    },
+    "source": "CMS CY2026 Medicare Advantage MOOP and Cost Sharing Limit Calculations, KFF Medicare Advantage in 2026 brief"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "The Direct Answer",
+        "es": "La respuesta directa"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends. Medicare Advantage works well for many enrollees who stay in-network and stay healthy, but the common complaints are real: prior authorization, narrow networks, and inaccurate provider directories. In 2026, 99% of Medicare Advantage enrollees are in plans that require prior authorization for at least some services, and insurers denied roughly 12% of standard requests in 2025. Original Medicare paired with Medigap avoids these specific problems but costs more upfront and skips extra benefits like dental and hearing.",
+          "es": "Depende. Medicare Advantage funciona bien para muchos inscritos que se mantienen dentro de la red y saludables, pero las quejas comunes son reales: autorización previa, redes limitadas y directorios de proveedores inexactos. En 2026, el 99% de los inscritos en Medicare Advantage están en planes que exigen autorización previa para al menos algunos servicios, y las aseguradoras negaron cerca del 12% de las solicitudes estándar en 2025. Medicare Original combinado con Medigap evita estos problemas específicos, pero cuesta más por adelantado y omite beneficios adicionales como dental y audición."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Original Medicare Covers (and Why Some People Switch Back)",
+        "es": "Lo que cubre Medicare Original (y por qué algunos regresan a él)"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare covers hospital care under Medicare Part A and outpatient and physician care under Medicare Part B, with any provider nationwide who accepts Medicare assignment, and generally without a referral or prior authorization for routine services. The 2026 Part B deductible is $283, the standard Part B premium is $202.90 per month, and the Part A inpatient deductible is $1,736 per benefit period. Original Medicare does not cap total out-of-pocket spending, which is the single biggest reason enrollees who switch back from Medicare Advantage also buy a Medigap policy the same month.",
+          "es": "Medicare Original cubre atención hospitalaria bajo la Parte A de Medicare y atención ambulatoria y médica bajo la Parte B de Medicare, con cualquier proveedor a nivel nacional que acepte la asignación de Medicare, y generalmente sin referencia ni autorización previa para servicios rutinarios. El deducible de la Parte B en 2026 es de $283, la prima estándar de la Parte B es de $202.90 al mes, y el deducible hospitalario de la Parte A es de $1,736 por período de beneficios. Medicare Original no limita el gasto total de bolsillo, que es la razón principal por la que los inscritos que regresan de Medicare Advantage también compran una póliza Medigap ese mismo mes."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Medicare Advantage Restricts in 2026 (the Complaints Behind the Reddit Threads)",
+        "es": "Lo que Medicare Advantage restringe en 2026 (las quejas detrás de los foros de Reddit)"
+      },
+      "paragraphs": [
+        {
+          "en": "Prior authorization is the top documented complaint. Nearly all Medicare Advantage enrollees (99%) are in plans that require prior authorization for at least some services in 2026, according to KFF. Insurers submitted about 53 million prior authorization requests in 2024 and denied roughly 7.7% of them; by 2025, the standard-request denial rate rose to about 12%, and KFF found that 67% of denials that were appealed got overturned, evidence that plans are denying more requests than medical necessity alone would justify.",
+          "es": "La autorización previa es la queja principal documentada. Casi todos los inscritos en Medicare Advantage (99%) están en planes que exigen autorización previa para al menos algunos servicios en 2026, según KFF. Las aseguradoras presentaron cerca de 53 millones de solicitudes de autorización previa en 2024 y negaron aproximadamente el 7.7%; para 2025, la tasa de negación de solicitudes estándar subió a cerca del 12%, y KFF encontró que el 67% de las negaciones apeladas fueron revocadas, evidencia de que los planes están negando más solicitudes de lo que la necesidad médica por sí sola justificaría."
+        },
+        {
+          "en": "Provider directory accuracy is the second most common complaint, and it predates 2026: a CMS audit of Medicare Advantage online directories found that 52.6% of listed locations had at least one inaccuracy, such as a doctor no longer at that address or not accepting new patients. CMS now requires a minimum 85% directory accuracy rate and runs unannounced quarterly phone audits, but errors still surface often enough that calling a provider's office directly before an appointment remains the safest step.",
+          "es": "La precisión del directorio de proveedores es la segunda queja más común, y es anterior a 2026: una auditoría de CMS a los directorios en línea de Medicare Advantage encontró que el 52.6% de las ubicaciones listadas tenían al menos una inexactitud, como un médico que ya no estaba en esa dirección o que no aceptaba nuevos pacientes. CMS ahora exige una tasa mínima de precisión del directorio del 85% y realiza auditorías telefónicas trimestrales sin previo aviso, pero los errores siguen apareciendo con suficiente frecuencia como para que llamar directamente al consultorio antes de una cita siga siendo el paso más seguro."
+        },
+        {
+          "en": "Plan instability is the third complaint, and it is structural rather than an insurer failure: Medicare Advantage plans are annual contracts, so an insurer can exit a county, drop a hospital system from its network, or cut a supplemental benefit at the end of any calendar year. Enrollees only find out during the Annual Enrollment Period, October 15 to December 7, 2026, when their plan sends a required Annual Notice of Change. Original Medicare has no equivalent risk because the federal benefit does not change insurer by insurer.",
+          "es": "La inestabilidad del plan es la tercera queja, y es estructural más que un fallo de la aseguradora: los planes Medicare Advantage son contratos anuales, por lo que una aseguradora puede salir de un condado, eliminar un sistema hospitalario de su red o recortar un beneficio adicional al final de cualquier año calendario. Los inscritos solo se enteran durante el Período de Inscripción Anual, del 15 de octubre al 7 de diciembre de 2026, cuando su plan envía un Aviso Anual de Cambio obligatorio. Medicare Original no tiene un riesgo equivalente porque el beneficio federal no cambia según la aseguradora."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The Cost of Getting Coverage Wrong in 2026",
+        "es": "El costo de elegir mal la cobertura en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "CMS caps Medicare Advantage in-network out-of-pocket spending at $9,250 in 2026, and at $13,900 when combined in-network and out-of-network costs are counted, though the actual enrollment-weighted average limit plans offer is closer to $5,421 in-network. If a plan denies a prior authorization request and the appeal fails, the enrollee pays the full billed cost of that service until the plan's cap is reached, which can run into thousands of dollars for a single denied procedure or hospital stay. Medicare Part D also caps drug spending at $2,100 out of pocket in 2026 under the Inflation Reduction Act, a protection that applies whether you have Original Medicare with a standalone Part D plan or Medicare Advantage with drug coverage built in.",
+          "es": "CMS limita el gasto de bolsillo en la red de Medicare Advantage a $9,250 en 2026, y a $13,900 al combinar costos dentro y fuera de la red, aunque el límite promedio real ponderado por inscripción que ofrecen los planes es más cercano a $5,421 en la red. Si un plan niega una solicitud de autorización previa y la apelación falla, el inscrito paga el costo total facturado de ese servicio hasta alcanzar el límite del plan, lo cual puede sumar miles de dólares por un solo procedimiento u hospitalización negados. La Parte D de Medicare también limita el gasto en medicamentos a $2,100 de bolsillo en 2026 bajo la Ley de Reducción de la Inflación, una protección que aplica ya sea que tenga Medicare Original con un plan independiente de la Parte D o Medicare Advantage con cobertura de medicamentos incluida."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Standalone Supplemental Options: Medigap",
+        "es": "Opciones suplementarias independientes: Medigap"
+      },
+      "paragraphs": [
+        {
+          "en": "Medigap is the standalone insurance most people compare against Medicare Advantage because it solves the exact problem Medicare Advantage creates, an uncapped bill under Original Medicare, without adding a network or prior authorization. You get guaranteed-issue rights to buy any Medigap policy sold in your state, with no medical underwriting and no preexisting condition exclusion, during a 6-month window starting the month you turn 65 and enroll in Part B. Outside that window, insurers in most states can medically underwrite you and charge more, or decline coverage, based on your health history.",
+          "es": "Medigap es el seguro independiente que la mayoría de las personas compara con Medicare Advantage porque resuelve el problema exacto que crea Medicare Advantage, una factura sin límite bajo Medicare Original, sin agregar una red ni autorización previa. Usted tiene derechos de emisión garantizada para comprar cualquier póliza Medigap vendida en su estado, sin suscripción médica ni exclusión por condición preexistente, durante una ventana de 6 meses que comienza el mes en que cumple 65 años y se inscribe en la Parte B. Fuera de esa ventana, las aseguradoras en la mayoría de los estados pueden hacerle una suscripción médica y cobrarle más, o negarle la cobertura, según su historial de salud."
+        },
+        {
+          "en": "Federal law carves out one important exception for people who tried Medicare Advantage and did not like it: the trial right. If you enrolled in a Medicare Advantage plan when you first became eligible for Medicare, or you dropped a Medigap policy to try Medicare Advantage for the first time, the trial right guarantees you can switch back to Original Medicare and buy a Medigap policy with no medical underwriting within 12 months, no matter your health.",
+          "es": "La ley federal crea una excepción importante para quienes probaron Medicare Advantage y no les gustó: el derecho de prueba. Si se inscribió en un plan Medicare Advantage cuando fue elegible por primera vez para Medicare, o dejó una póliza Medigap para probar Medicare Advantage por primera vez, el derecho de prueba le garantiza que puede regresar a Medicare Original y comprar una póliza Medigap sin suscripción médica dentro de 12 meses, sin importar su salud."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Find a Medicare Advantage Plan That Actually Works for You",
+        "es": "Cómo encontrar un plan Medicare Advantage que realmente le funcione"
+      },
+      "paragraphs": [
+        {
+          "en": "If you want to stay in Medicare Advantage but avoid the common complaints, treat plan selection like due diligence, not a five-minute decision. Use Medicare's official Plan Finder at medicare.gov/plan-compare to compare 2026 plans by zip code, star rating, and specific drug formulary. A plan's overall star rating (1 to 5 stars) reflects CMS's measurement of member complaints, appeals, and customer service, so a plan rated 4 stars or higher has a documented track record of fewer of these specific problems."
+        },
+        {
+          "en": "Before enrolling, call every doctor and specialist you use directly and confirm they are in-network and currently accepting the specific plan, not just \"Medicare,\" since directory listings are wrong often enough that a phone call is worth 10 minutes. Ask your prior physician which services required prior authorization under their current plan, and request the plan's Evidence of Coverage document, which lists exactly which services need prior approval before you enroll rather than after."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives if Medicare Advantage Isn't Working for You",
+        "es": "Alternativas si Medicare Advantage no le está funcionando"
+      },
+      "paragraphs": [
+        {
+          "en": "If your current plan is causing the exact problems described above, you have several concrete options rather than waiting out the year. First, appeal a denial: KFF data shows 67% of appealed Medicare Advantage denials get overturned, so an appeal is usually worth the effort. Second, switch plans during the Medicare Advantage Open Enrollment Period, January 1 to March 31, 2026, which allows one plan switch or a return to Original Medicare. Third, if you qualify for the trial right described above, return to Original Medicare and buy a Medigap policy with guaranteed acceptance. Fourth, call your State Health Insurance Assistance Program (SHIP) for free, unbiased counseling, since SHIP counselors are not paid on commission and can review your specific complaint against your specific plan's rules. Fifth, during the Annual Enrollment Period, October 15 to December 7, 2026, you can switch to a different Medicare Advantage plan with a higher star rating or better network for your doctors."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Is it true that Medicare Advantage denies more claims than Original Medicare?",
+        "answer": "Denial data is not published the same way for both programs, but KFF found Medicare Advantage insurers denied about 12% of standard prior authorization requests in 2025, and 67% of appealed denials were overturned. Original Medicare rarely requires prior authorization at all, so the comparison mostly reflects how each program is structured, not just insurer behavior."
+      },
+      {
+        "question": "Does Original Medicare have the same network restrictions as Medicare Advantage?",
+        "answer": "No. Original Medicare works with any provider nationwide who accepts Medicare assignment, with no plan network at all. Medicare Advantage plans restrict you to an HMO or PPO network, and 99% of enrollees are in plans that also require prior authorization for at least some services in 2026."
+      },
+      {
+        "question": "What does it cost if Medicare Advantage denies a service I need?",
+        "answer": "You pay the full billed cost of the denied service out of pocket unless you win an appeal, and that spending counts toward your plan's out-of-pocket maximum, capped at $9,250 in-network in 2026. A single denied hospital stay or procedure can run into thousands of dollars before an appeal is resolved."
+      },
+      {
+        "question": "What standalone insurance can replace Medicare Advantage if I want more flexibility?",
+        "answer": "Medigap, paired with Original Medicare, is the standard alternative. It covers most of the cost-sharing Original Medicare leaves behind with no network and no prior authorization. You get guaranteed-issue pricing in your initial enrollment window or under a trial-right period if you are switching back from Medicare Advantage within 12 months."
+      },
+      {
+        "question": "Do complaints about Medicare Advantage vary by state?",
+        "answer": "Yes. Network adequacy, plan availability, and Medigap guaranteed-issue rules all vary by state. A few states, including New York, Connecticut, and Massachusetts, guarantee year-round Medigap issue regardless of health, which removes one of the biggest risks of switching back from Medicare Advantage."
+      },
+      {
+        "question": "When does Medicare Advantage actually require prior authorization?",
+        "answer": "Most commonly for hospital admissions, skilled nursing facility stays, home health services, durable medical equipment, and many specialty drugs or procedures. In 2026, 99% of Medicare Advantage enrollees are in a plan that requires it for at least one of these categories, according to KFF."
+      },
+      {
+        "question": "What are my alternatives if Medicare Advantage isn't working for me?",
+        "answer": "Appeal the specific denial, since 67% of appeals succeed. Switch plans during the Medicare Advantage Open Enrollment Period, January 1 to March 31, 2026. Use a trial right to return to Original Medicare with guaranteed-issue Medigap if eligible. Or call your State Health Insurance Assistance Program for free help reviewing your options."
+      },
+      {
+        "question": "What's the real difference between Medicare Advantage and Medigap?",
+        "answer": "Medicare Advantage (Part C) replaces Original Medicare with a private plan that caps costs and often adds dental, vision, and hearing benefits, but restricts you to a network and typically requires prior authorization. Medigap supplements Original Medicare, covering its cost-sharing gaps with no network and no prior authorization, but does not include those extra benefits and usually costs a fixed monthly premium."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Es cierto que Medicare Advantage niega más reclamos que Medicare Original?",
+        "answer": "Los datos de negación no se publican de la misma manera para ambos programas, pero KFF encontró que las aseguradoras de Medicare Advantage negaron cerca del 12% de las solicitudes estándar de autorización previa en 2025, y el 67% de las negaciones apeladas fueron revocadas. Medicare Original rara vez requiere autorización previa."
+      },
+      {
+        "question": "¿Medicare Original tiene las mismas restricciones de red que Medicare Advantage?",
+        "answer": "No. Medicare Original funciona con cualquier proveedor a nivel nacional que acepte la asignación de Medicare, sin ninguna red de plan. Los planes Medicare Advantage lo restringen a una red HMO o PPO, y el 99% de los inscritos están en planes que también exigen autorización previa para al menos algunos servicios en 2026."
+      },
+      {
+        "question": "¿Cuánto cuesta si Medicare Advantage niega un servicio que necesito?",
+        "answer": "Usted paga el costo total facturado del servicio negado de su bolsillo a menos que gane una apelación, y ese gasto cuenta para el máximo de gastos de bolsillo de su plan, limitado a $9,250 en la red en 2026. Una sola hospitalización o procedimiento negado puede sumar miles de dólares antes de resolver una apelación."
+      },
+      {
+        "question": "¿Qué seguro independiente puede reemplazar a Medicare Advantage si quiero más flexibilidad?",
+        "answer": "Medigap, combinado con Medicare Original, es la alternativa estándar. Cubre la mayoría de los costos compartidos que Medicare Original deja pendientes, sin red y sin autorización previa. Obtiene precios de emisión garantizada en su ventana de inscripción inicial o bajo un período de derecho de prueba si regresa desde Medicare Advantage dentro de 12 meses."
+      },
+      {
+        "question": "¿Las quejas sobre Medicare Advantage varían según el estado?",
+        "answer": "Sí. La adecuación de la red, la disponibilidad de planes y las reglas de emisión garantizada de Medigap varían según el estado. Algunos estados, incluidos Nueva York, Connecticut y Massachusetts, garantizan la emisión de Medigap durante todo el año sin importar la salud."
+      },
+      {
+        "question": "¿Cuándo exige realmente Medicare Advantage la autorización previa?",
+        "answer": "Más comúnmente para admisiones hospitalarias, estadías en centros de enfermería especializada, servicios de salud en el hogar, equipo médico duradero y muchos medicamentos o procedimientos especializados. En 2026, el 99% de los inscritos en Medicare Advantage están en un plan que la exige para al menos una de estas categorías, según KFF."
+      },
+      {
+        "question": "¿Cuáles son mis alternativas si Medicare Advantage no me está funcionando?",
+        "answer": "Apele la negación específica, ya que el 67% de las apelaciones tienen éxito. Cambie de plan durante el Período de Inscripción Abierta de Medicare Advantage, del 1 de enero al 31 de marzo de 2026. Use un derecho de prueba para regresar a Medicare Original con Medigap de emisión garantizada si es elegible. O llame a su Programa Estatal de Asistencia de Seguro de Salud para obtener ayuda gratuita."
+      },
+      {
+        "question": "¿Cuál es la diferencia real entre Medicare Advantage y Medigap?",
+        "answer": "Medicare Advantage (Parte C) reemplaza a Medicare Original con un plan privado que limita los costos y a menudo agrega beneficios dentales, de visión y auditivos, pero lo restringe a una red y generalmente exige autorización previa. Medigap complementa a Medicare Original, cubriendo sus brechas de costos compartidos sin red y sin autorización previa, pero no incluye esos beneficios adicionales."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Medicare Advantage vs Original Medicare", "es": "Medicare Advantage vs Medicare Original" },
+      "href": "/qa/medicare-advantage-vs-original-medicare"
+    },
+    {
+      "label": { "en": "Medigap vs Medicare Advantage", "es": "Medigap vs Medicare Advantage" },
+      "href": "/qa/medigap-vs-medicare-advantage"
+    },
+    {
+      "label": { "en": "Can I Switch from Medicare Advantage to Original Medicare?", "es": "¿Puedo Cambiar de Medicare Advantage a Medicare Original?" },
+      "href": "/qa/can-i-switch-from-medicare-advantage-to-original"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "KFF: Medicare Advantage in 2026: Premiums, Out-of-Pocket Limits, Supplemental Benefits, and Prior Authorization",
+      "url": "https://www.kff.org/medicare/medicare-advantage-in-2026-premiums-out-of-pocket-limits-supplemental-benefits-and-prior-authorization/",
+      "note": {
+        "en": "Source for the 2026 CMS out-of-pocket maximum figures and the 99% prior authorization enrollment share.",
+        "es": "Fuente de las cifras de máximo de gastos de bolsillo de CMS 2026 y la proporción del 99% de inscritos con autorización previa."
+      }
+    },
+    {
+      "name": "KFF: Medicare Advantage Insurers Made Nearly 53 Million Prior Authorization Determinations in 2024",
+      "url": "https://www.kff.org/medicare/medicare-advantage-insurers-made-nearly-53-million-prior-authorization-determinations-in-2024/",
+      "note": {
+        "en": "Source for the 2024 prior authorization volume, denial rate, and 2025 denial rate and appeal overturn data.",
+        "es": "Fuente del volumen de autorización previa de 2024, tasa de negación y datos de apelación de 2025."
+      }
+    },
+    {
+      "name": "CMS: Online Provider Directory Review Industry Report",
+      "url": "https://www.cms.gov/medicare/health-plans/managedcaremarketing/downloads/provider_directory_review_industry_report_round_2_updated_1-31-18.pdf",
+      "note": {
+        "en": "CMS audit finding that 52.6% of Medicare Advantage provider directory locations had at least one inaccuracy.",
+        "es": "Auditoría de CMS que encontró que el 52.6% de las ubicaciones de directorios de proveedores de Medicare Advantage tenían al menos una inexactitud."
+      }
+    },
+    {
+      "name": "Medicare.gov: Medicare Plan Finder",
+      "url": "https://www.medicare.gov/plan-compare",
+      "note": {
+        "en": "Official CMS tool for comparing Original Medicare, Medicare Advantage, and Part D plans by zip code and star rating for 2026.",
+        "es": "Herramienta oficial de CMS para comparar planes de Medicare Original, Medicare Advantage y Parte D por código postal y calificación de estrellas para 2026."
+      }
+    },
+    {
+      "name": "Medicare.gov: Medigap Overview",
+      "url": "https://www.medicare.gov/supplements-other-insurance/whats-medicare-supplement-insurance-medigap",
+      "note": {
+        "en": "Official CMS overview of Medigap guaranteed-issue rights, the initial enrollment window, and the trial right.",
+        "es": "Resumen oficial de CMS de los derechos de emisión garantizada de Medigap, la ventana de inscripción inicial y el derecho de prueba."
+      }
+    }
+  ],
+
+  "keyTerms": {
+    "en": ["why are medicare advantage plans bad", "medicare advantage complaints 2026", "medicare advantage prior authorization denial rate", "medicare advantage network restrictions", "medicare advantage vs medigap"],
+    "es": ["por que medicare advantage es malo", "quejas medicare advantage 2026", "autorizacion previa medicare advantage", "restricciones de red medicare advantage", "medicare advantage vs medigap"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
