@@ -1,0 +1,334 @@
+{
+  "slug": "medicare-cost-is-calculated",
+  "subtype": "coverage",
+  "question": {
+    "en": "How Is Medicare Cost Calculated?",
+    "es": "¿Cómo Se Calcula el Costo de Medicare?"
+  },
+  "shortAnswer": {
+    "en": "It depends on income, plan type, and enrollment timing.",
+    "es": "Depende de sus ingresos, el tipo de plan y su inscripción."
+  },
+  "fullAnswer": {
+    "en": "It depends on four factors: which Medicare parts you have, your income from two years prior, when you first enrolled, and whether you carry supplemental coverage. In 2026, Original Medicare charges a $202.90 monthly Part B premium and a $283 annual deductible, plus 20% coinsurance with no cap on your share of costs. Higher earners pay an Income-Related Monthly Adjustment Amount (IRMAA) on top of the standard premium, and late enrollment can add permanent penalties. Medicare Advantage, Medigap, and Part D each recalculate that formula differently.",
+    "es": "Depende de cuatro factores: qué partes de Medicare tiene, sus ingresos de hace dos años, cuándo se inscribió por primera vez y si tiene cobertura complementaria. En 2026, Medicare Original cobra una prima mensual de la Parte B de $202.90 y un deducible anual de $283, más un coaseguro del 20% sin límite en su parte de los costos. Las personas con ingresos más altos pagan un Monto de Ajuste Mensual Relacionado con los Ingresos (IRMAA) además de la prima estándar, y la inscripción tardía puede agregar penalidades permanentes. Medicare Advantage, Medigap y la Parte D recalculan esa fórmula de manera diferente."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Cost Calculation",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "analyzer",
+  "pageType": "coverage",
+  "lastUpdated": "2026-09-13",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "How Is Medicare Cost Calculated in 2026? | CoveredUSA",
+      "es": "¿Cómo Se Calcula el Costo de Medicare en 2026? | CoveredUSA"
+    },
+    "description": {
+      "en": "See how Medicare calculates your 2026 cost: the $202.90 Part B premium, $283 deductible, IRMAA surcharges, and Medicare Advantage out-of-pocket caps.",
+      "es": "Vea cómo Medicare calcula su costo en 2026: la prima de $202.90 de la Parte B, el deducible de $283, los recargos IRMAA y los límites de Medicare Advantage."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "How Is Medicare Cost Calculated? (2026)",
+      "es": "¿Cómo Se Calcula el Costo de Medicare? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Medicare cost looks confusing because it is really four separate calculations layered on top of each other: a base premium set by federal law, an income surcharge that only applies above certain thresholds, a penalty for enrolling late, and a coinsurance formula that changes depending on which parts and plans you choose. In 2026, the standard Part B premium is $202.90 a month and the Part B annual deductible is $283, but almost none of that is optional or negotiable. It is set every year by CMS using a formula tied to projected Medicare Part B spending.",
+      "es": "El costo de Medicare parece confuso porque en realidad son cuatro cálculos separados superpuestos: una prima base fijada por ley federal, un recargo por ingresos que solo aplica sobre ciertos umbrales, una penalidad por inscripción tardía y una fórmula de coaseguro que cambia según las partes y planes que elija. En 2026, la prima estándar de la Parte B es de $202.90 al mes y el deducible anual de la Parte B es de $283, pero casi nada de eso es opcional o negociable. CMS lo fija cada año usando una fórmula ligada al gasto proyectado de la Parte B de Medicare."
+    },
+    {
+      "en": "CoveredUSA breaks down each piece of the formula below: Original Medicare Part A and Part B costs, the Income-Related Monthly Adjustment Amount (IRMAA) that raises premiums for higher earners, how Medicare Advantage and Medigap change your out-of-pocket math, and what help exists if the calculated cost is more than you can pay. For a side-by-side comparison of plan types, see [Medicare Advantage vs Original Medicare](/qa/medicare-advantage-vs-original-medicare), and use the [bill analyzer](/medical-bill-analyzer) to check whether a specific charge matches what Medicare should have calculated.",
+      "es": "CoveredUSA detalla a continuación cada parte de la fórmula: los costos de la Parte A y Parte B de Medicare Original, el Monto de Ajuste Mensual Relacionado con los Ingresos (IRMAA) que eleva las primas de quienes ganan más, cómo Medicare Advantage y Medigap cambian sus cálculos de bolsillo, y qué ayuda existe si el costo calculado es más de lo que puede pagar."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Plan Type", "Monthly Premium (2026)", "Annual Deductible (2026)", "Out-of-Pocket Cap?"],
+      "es": ["Tipo de plan", "Prima mensual (2026)", "Deducible anual (2026)", "¿Límite de bolsillo?"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Original Medicare (Part A + Part B)", "es": "Medicare Original (Parte A + Parte B)" },
+          { "en": "$0 Part A for most (40+ work quarters); $202.90 Part B standard", "es": "$0 Parte A para la mayoría (40+ trimestres); $202.90 Parte B estándar" },
+          { "en": "$1,736 Part A per benefit period; $283 Part B per year", "es": "$1,736 Parte A por período de beneficios; $283 Parte B por año" },
+          { "value": { "en": "No annual cap", "es": "Sin límite anual" }, "status": "no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Advantage (Part C)", "es": "Medicare Advantage (Parte C)" },
+          { "en": "$11.02 average plus the $202.90 Part B premium", "es": "$11.02 promedio más la prima de $202.90 de la Parte B" },
+          { "en": "Varies by plan, commonly $0 to $500", "es": "Varía por plan, comúnmente $0 a $500" },
+          { "value": { "en": "$9,250 in-network cap (2026)", "es": "Límite de $9,250 en la red (2026)" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medigap (Plan G example)", "es": "Medigap (ejemplo Plan G)" },
+          { "en": "$110 to $200 for a 65-year-old, plus Part B premium", "es": "$110 a $200 para una persona de 65 años, más la prima de la Parte B" },
+          { "en": "$0 beyond the $283 Part B deductible", "es": "$0 más allá del deducible de $283 de la Parte B" },
+          { "value": { "en": "Covers nearly all remaining coinsurance", "es": "Cubre casi todo el coaseguro restante" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Part D (Prescription Drug Plan)", "es": "Parte D (Plan de Medicamentos)" },
+          { "en": "$38.99 national base premium (2026); plan premiums vary", "es": "$38.99 prima base nacional (2026); las primas del plan varían" },
+          { "en": "Up to $615 standard deductible", "es": "Hasta $615 de deducible estándar" },
+          { "value": { "en": "$2,100 true out-of-pocket cap (2026)", "es": "Límite real de bolsillo de $2,100 (2026)" }, "status": "yes" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Beneficiaries with 2024 income above $109,000 (single) or $218,000 (joint) pay an IRMAA surcharge on top of the Part B and Part D premiums shown here, regardless of which plan type they choose.",
+      "es": "Los beneficiarios con ingresos de 2024 superiores a $109,000 (soltero) o $218,000 (conjunto) pagan un recargo IRMAA además de las primas de la Parte B y Parte D mostradas aquí, sin importar el tipo de plan que elijan."
+    },
+    "source": "CMS 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet; KFF Medicare Advantage in 2026; CMS 2026 Part D Bid Announcement"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer",
+        "es": "Respuesta Directa"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on four things: which Medicare parts you have, your income from two years prior, when you first enrolled, and whether you carry supplemental coverage. In 2026, Original Medicare charges a $202.90 monthly Part B premium and a $283 annual deductible, with no cap on your share of costs. Add Medicare Advantage, Medigap, or Part D, and the formula changes again for each program.",
+          "es": "Depende de cuatro cosas: qué partes de Medicare tiene, sus ingresos de hace dos años, cuándo se inscribió por primera vez y si tiene cobertura complementaria. En 2026, Medicare Original cobra una prima mensual de la Parte B de $202.90 y un deducible anual de $283, sin límite en su parte de los costos. Al agregar Medicare Advantage, Medigap o la Parte D, la fórmula cambia de nuevo para cada programa."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The Four Inputs That Set Your Medicare Cost",
+        "es": "Las Cuatro Variables Que Fijan Su Costo de Medicare"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare cost is not one number; it is a formula with four inputs. First, which parts you are enrolled in: Part A (hospital), Part B (medical), Part C (Medicare Advantage), and Part D (drugs) each have their own premium and deductible schedule. Second, your Modified Adjusted Gross Income (MAGI) from two years earlier determines whether you pay a base premium or a higher, income-adjusted one through IRMAA. Third, when you enrolled matters: signing up for Part B or Part D late without qualifying coverage triggers a permanent monthly penalty added to your premium for as long as you are enrolled. Fourth, whether you layer on Medicare Advantage, Medigap, or a standalone Part D plan changes your deductible, coinsurance, and out-of-pocket exposure entirely.",
+          "es": "El costo de Medicare no es un solo número; es una fórmula con cuatro variables. Primero, en qué partes está inscrito: Parte A (hospital), Parte B (médico), Parte C (Medicare Advantage) y Parte D (medicamentos) tienen cada una su propio calendario de primas y deducibles. Segundo, su Ingreso Bruto Ajustado Modificado (MAGI) de hace dos años determina si paga una prima base o una más alta por IRMAA. Tercero, cuándo se inscribió importa: inscribirse tarde en la Parte B o Parte D sin cobertura calificada activa una penalidad mensual permanente agregada a su prima. Cuarto, si agrega Medicare Advantage, Medigap o un plan Parte D independiente, su deducible, coaseguro y exposición de bolsillo cambian por completo."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How Original Medicare Costs Are Calculated in 2026",
+        "es": "Cómo Se Calculan los Costos de Medicare Original en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare splits its calculation between Part A and Part B. About 99% of beneficiaries pay $0 for Part A because they or a spouse worked at least 40 quarters (10 years) paying Medicare payroll taxes. Those with 30 to 39 quarters pay a reduced Part A premium of $311 a month in 2026, and those with fewer than 30 quarters pay the full $565 a month. Once Part A applies, the inpatient hospital deductible is $1,736 per benefit period in 2026, followed by daily coinsurance of $434 for days 61 to 90, $868 per lifetime reserve day, and $217 a day for skilled nursing facility days 21 to 100.",
+          "es": "Medicare Original divide su cálculo entre la Parte A y la Parte B. Cerca del 99% de los beneficiarios pagan $0 por la Parte A porque ellos o su cónyuge trabajaron al menos 40 trimestres (10 años) pagando impuestos de Medicare. Quienes tienen de 30 a 39 trimestres pagan una prima reducida de la Parte A de $311 al mes en 2026, y quienes tienen menos de 30 trimestres pagan el total de $565 al mes. Una vez que aplica la Parte A, el deducible hospitalario es de $1,736 por período de beneficios en 2026, seguido de coaseguro diario de $434 para los días 61 a 90, $868 por día de reserva de por vida, y $217 al día para los días 21 a 100 en un centro de enfermería especializada."
+        },
+        {
+          "en": "Part B follows a separate calculation: the standard monthly premium is $202.90 in 2026, the annual deductible is $283, and after the deductible is met, Medicare pays 80% of the Medicare-approved amount for most services while you pay the remaining 20% coinsurance indefinitely, with no yearly out-of-pocket maximum. That uncapped 20% is the single biggest reason people add Medigap or switch to Medicare Advantage.",
+          "es": "La Parte B sigue un cálculo separado: la prima mensual estándar es de $202.90 en 2026, el deducible anual es de $283, y después de cumplir el deducible, Medicare paga el 80% del monto aprobado por Medicare para la mayoría de los servicios mientras usted paga el 20% de coaseguro restante de forma indefinida, sin un máximo anual de bolsillo. Ese 20% sin límite es la razón principal por la que las personas agregan Medigap o cambian a Medicare Advantage."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How IRMAA Raises Your Calculated Cost Based on Income",
+        "es": "Cómo IRMAA Aumenta Su Costo Calculado Según los Ingresos"
+      },
+      "paragraphs": [
+        {
+          "en": "IRMAA (Income-Related Monthly Adjustment Amount) is the surcharge the Social Security Administration adds to Part B and Part D premiums for higher earners, using tax returns from two years earlier. For 2026 premiums, the Social Security Administration looks at your 2024 MAGI. Individuals filing single with 2024 MAGI above $109,000, or couples filing jointly above $218,000, move into an IRMAA bracket. The Part B surcharge for 2026 ranges from $81.20 to $487.00 a month on top of the $202.90 standard premium, making the total Part B premium anywhere from $284.10 to $689.90 depending on the bracket. A separate Part D surcharge of $14.50 to $91.00 a month is added directly to your drug plan premium.",
+          "es": "IRMAA (Monto de Ajuste Mensual Relacionado con los Ingresos) es el recargo que la Administración del Seguro Social agrega a las primas de la Parte B y Parte D para quienes ganan más, usando las declaraciones de impuestos de hace dos años. Para las primas de 2026, se usa el MAGI de 2024. Las personas solteras con MAGI de 2024 superior a $109,000, o parejas que declaran juntas por encima de $218,000, entran en un rango de IRMAA. El recargo de la Parte B para 2026 va de $81.20 a $487.00 al mes además de la prima estándar de $202.90, haciendo que la prima total de la Parte B sea de $284.10 a $689.90 según el rango. Un recargo separado de la Parte D de $14.50 a $91.00 al mes se agrega directamente a la prima de su plan de medicamentos."
+        },
+        {
+          "en": "CMS estimates about 8% of Medicare beneficiaries pay an IRMAA surcharge in 2026. If your income dropped since 2024 because of retirement, divorce, or another life-changing event, you can file Form SSA-44 to ask Social Security to recalculate your IRMAA using more recent income instead of the two-year-old tax return.",
+          "es": "CMS estima que cerca del 8% de los beneficiarios de Medicare pagan un recargo IRMAA en 2026. Si sus ingresos bajaron desde 2024 por jubilación, divorcio u otro evento que cambia la vida, puede presentar el Formulario SSA-44 para pedirle al Seguro Social que recalcule su IRMAA usando ingresos más recientes en lugar de la declaración de impuestos de hace dos años."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How Medicare Advantage Recalculates the Cost",
+        "es": "Cómo Medicare Advantage Recalcula el Costo"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Advantage (Part C) replaces the uncapped Original Medicare formula with a plan-specific one that still requires you to keep paying your Part B premium. The average Medicare Advantage premium is $11.02 a month in 2026, and many plans charge $0. Instead of a flat 20% coinsurance forever, each plan sets its own copays and coinsurance for specific services, and by law every plan must cap total in-network out-of-pocket spending at $9,250 in 2026 (or $13,900 combined in-network and out-of-network). The enrollment-weighted average cap that plans actually set is lower, around $5,421, with HMOs averaging $4,636 and PPOs averaging $6,592.",
+          "es": "Medicare Advantage (Parte C) reemplaza la fórmula sin límite de Medicare Original con una específica del plan que aún requiere que siga pagando su prima de la Parte B. La prima promedio de Medicare Advantage es de $11.02 al mes en 2026, y muchos planes cobran $0. En lugar de un coaseguro fijo del 20% para siempre, cada plan fija sus propios copagos y coaseguros para servicios específicos, y por ley todo plan debe limitar el gasto total de bolsillo dentro de la red a $9,250 en 2026 (o $13,900 combinado dentro y fuera de la red). El promedio ponderado por inscripción que los planes realmente fijan es más bajo, alrededor de $5,421."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How Medigap and Part D Change the Math",
+        "es": "Cómo Medigap y la Parte D Cambian el Cálculo"
+      },
+      "paragraphs": [
+        {
+          "en": "Medigap does not replace Original Medicare's formula; it pays some or all of what that formula leaves you owing. A Medigap Plan G policy for a 65-year-old typically costs $110 to $200 a month in 2026 depending on state and underwriting, and in exchange it covers the Part A deductible, Part A coinsurance, and most of the Part B coinsurance that would otherwise be uncapped. You still pay the $283 Part B deductible yourself under Plan G, then Medigap picks up nearly everything else.",
+          "es": "Medigap no reemplaza la fórmula de Medicare Original; paga parte o todo lo que esa fórmula deja que usted deba. Una póliza Medigap Plan G para una persona de 65 años típicamente cuesta $110 a $200 al mes en 2026 según el estado, y a cambio cubre el deducible de la Parte A, el coaseguro de la Parte A y casi todo el coaseguro de la Parte B. Usted paga el deducible de $283 de la Parte B por su cuenta bajo el Plan G, y luego Medigap cubre casi todo lo demás."
+        },
+        {
+          "en": "Part D drug plans run on a separate formula entirely. The national base beneficiary premium is $38.99 a month in 2026, though actual plan premiums vary widely above and below that figure. Under the redesigned Part D benefit, you pay a deductible of up to $615, then roughly 25% coinsurance on covered drugs, until your true out-of-pocket spending hits $2,100 in 2026, after which the plan covers 100% of costs for the rest of the year. Insulin is capped separately at $35 a month regardless of which phase you are in.",
+          "es": "Los planes de medicamentos de la Parte D funcionan con una fórmula completamente separada. La prima base nacional del beneficiario es de $38.99 al mes en 2026, aunque las primas reales varían ampliamente. Bajo el beneficio rediseñado de la Parte D, usted paga un deducible de hasta $615, luego aproximadamente 25% de coaseguro en medicamentos cubiertos, hasta que su gasto real de bolsillo llegue a $2,100 en 2026, después de lo cual el plan cubre el 100% de los costos por el resto del año. La insulina tiene un límite separado de $35 al mes."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives If the Calculated Cost Is Too High",
+        "es": "Alternativas Si el Costo Calculado Es Demasiado Alto"
+      },
+      "paragraphs": [
+        {
+          "en": "Four programs can lower or eliminate the standard Medicare cost calculation for people with limited income and assets. Medicare Savings Programs (QMB, SLMB, and QI), run through each state's Medicaid agency, pay the Part B premium and, for QMB, also the Part A and Part B deductibles and coinsurance. Extra Help (the Part D Low-Income Subsidy) reduces or eliminates your Part D premium, deductible, and copays; see [Extra Help eligibility](/qa/extra-help-eligibility) for income limits by household size. About 12 million Americans qualify for both Medicare and Medicaid as dual-eligibles, in which case Medicaid picks up nearly all remaining cost-sharing. If your income is too high for those programs but you still want predictable costs, comparing Medicare Advantage and Medigap directly, as in [Medigap vs Medicare Advantage](/qa/medigap-vs-medicare-advantage), is the next step.",
+          "es": "Cuatro programas pueden reducir o eliminar el cálculo estándar del costo de Medicare para personas con ingresos y activos limitados. Los Programas de Ahorro de Medicare (QMB, SLMB y QI), administrados por la agencia estatal de Medicaid, pagan la prima de la Parte B y, para QMB, también los deducibles y coaseguros de la Parte A y Parte B. Ayuda Adicional (el Subsidio de Bajos Ingresos de la Parte D) reduce o elimina su prima, deducible y copagos de la Parte D. Cerca de 12 millones de estadounidenses califican como elegibles duales para Medicare y Medicaid, en cuyo caso Medicaid cubre casi todo el costo compartido restante."
+        },
+        {
+          "en": "To act on any of this, use the Medicare Plan Finder at medicare.gov to compare exact 2026 premiums and out-of-pocket caps by zip code, or call your State Health Insurance Assistance Program (SHIP) for free one-on-one help. The Annual Enrollment Period runs October 15 through December 7, 2026 for coverage starting January 1, 2027, and the Medicare Advantage Open Enrollment Period runs January 1 through March 31, 2026 for one plan switch.",
+          "es": "Para actuar, use el Buscador de Planes de Medicare en medicare.gov para comparar primas exactas de 2026 y límites de bolsillo por código postal, o llame a su Programa Estatal de Asistencia con el Seguro de Salud (SHIP) para ayuda gratuita. El Período de Inscripción Anual va del 15 de octubre al 7 de diciembre de 2026, y el Período de Inscripción Abierta de Medicare Advantage va del 1 de enero al 31 de marzo de 2026."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "How is my Medicare Part B premium calculated in 2026?",
+        "answer": "The standard Part B premium is set by CMS each year using a formula tied to projected Medicare Part B spending and is $202.90 a month in 2026. If your 2024 income was above $109,000 (single) or $218,000 (joint), an IRMAA surcharge is added on top, raising the total to as much as $689.90 a month."
+      },
+      {
+        "question": "What is IRMAA and how does it raise my Medicare cost?",
+        "answer": "IRMAA (Income-Related Monthly Adjustment Amount) is a surcharge added to Part B and Part D premiums for higher earners, based on your tax return from two years earlier. For 2026, it applies if your 2024 MAGI exceeded $109,000 single or $218,000 joint, adding $81.20 to $487.00 a month to Part B and $14.50 to $91.00 to Part D."
+      },
+      {
+        "question": "Does Medicare Advantage cost less than Original Medicare in 2026?",
+        "answer": "Often, yes, on the premium side: the average Medicare Advantage premium is $11.02 a month in 2026 versus the $202.90 Part B premium you pay either way. But Medicare Advantage shifts cost into plan-specific copays and coinsurance, capped at $9,250 in-network, so your total cost depends heavily on how much care you use."
+      },
+      {
+        "question": "What happens if I don't buy supplemental coverage?",
+        "answer": "Original Medicare's Part B coinsurance is 20% with no annual out-of-pocket maximum, so a serious illness or hospitalization can generate thousands of dollars in cost-sharing. Without Medigap or Medicare Advantage's built-in out-of-pocket cap, you carry that uncapped 20% coinsurance yourself for every covered service."
+      },
+      {
+        "question": "How much does Medigap cost in 2026?",
+        "answer": "A Medigap Plan G policy for a 65-year-old typically runs $110 to $200 a month in 2026, varying by state, gender, and underwriting class. In exchange, it covers most of the Part A and Part B cost-sharing that Original Medicare's formula leaves uncapped, aside from the $283 Part B deductible."
+      },
+      {
+        "question": "What is the Medicare Part D out-of-pocket cap in 2026?",
+        "answer": "The Part D true out-of-pocket cap is $2,100 in 2026, up from $2,000 in 2025. After you and your plan combine to spend that amount on covered drugs, your plan pays 100% of costs for the remainder of the calendar year. Insulin is separately capped at $35 a month."
+      },
+      {
+        "question": "Can I get help paying my Medicare costs if I have low income?",
+        "answer": "Yes. Medicare Savings Programs run through your state Medicaid agency can pay your Part B premium and, in some cases, your deductibles and coinsurance. Extra Help lowers Part D premiums and copays. About 12 million dual-eligible Americans qualify for both Medicare and Medicaid, which covers nearly all remaining cost-sharing."
+      },
+      {
+        "question": "What's the difference between Medicare Advantage and Medigap costs?",
+        "answer": "Medicare Advantage bundles Part A, Part B, and usually Part D into one plan with a low or $0 premium but variable copays capped at $9,250 in-network in 2026. Medigap keeps you on Original Medicare, adds a separate premium of $110 to $200 a month for Plan G, and covers most remaining coinsurance instead of capping it."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cómo se calcula mi prima de la Parte B de Medicare en 2026?",
+        "answer": "La prima estándar de la Parte B la fija CMS cada año con una fórmula ligada al gasto proyectado de la Parte B, y es de $202.90 al mes en 2026. Si sus ingresos de 2024 superaron $109,000 (soltero) o $218,000 (conjunto), se agrega un recargo IRMAA, elevando el total hasta $689.90 al mes."
+      },
+      {
+        "question": "¿Qué es IRMAA y cómo aumenta mi costo de Medicare?",
+        "answer": "IRMAA es un recargo agregado a las primas de la Parte B y Parte D para quienes ganan más, basado en la declaración de impuestos de hace dos años. Para 2026, aplica si su MAGI de 2024 superó $109,000 soltero o $218,000 conjunto, agregando $81.20 a $487.00 al mes a la Parte B y $14.50 a $91.00 a la Parte D."
+      },
+      {
+        "question": "¿Cuesta menos Medicare Advantage que Medicare Original en 2026?",
+        "answer": "A menudo sí en la prima: el promedio de Medicare Advantage es $11.02 al mes en 2026 frente a los $202.90 de la Parte B que paga de todos modos. Pero Medicare Advantage traslada el costo a copagos y coaseguros específicos del plan, limitados a $9,250 dentro de la red."
+      },
+      {
+        "question": "¿Qué pasa si no compro cobertura complementaria?",
+        "answer": "El coaseguro de la Parte B de Medicare Original es del 20% sin máximo anual de bolsillo, así que una enfermedad grave puede generar miles de dólares en costos compartidos. Sin Medigap o el límite integrado de Medicare Advantage, usted carga ese 20% sin límite por su cuenta."
+      },
+      {
+        "question": "¿Cuánto cuesta Medigap en 2026?",
+        "answer": "Una póliza Medigap Plan G para una persona de 65 años típicamente cuesta $110 a $200 al mes en 2026, variando por estado, género y clase de suscripción. A cambio, cubre casi todo el costo compartido de la Parte A y Parte B que Medicare Original deja sin límite, aparte del deducible de $283 de la Parte B."
+      },
+      {
+        "question": "¿Cuál es el límite de bolsillo de la Parte D de Medicare en 2026?",
+        "answer": "El límite real de bolsillo de la Parte D es de $2,100 en 2026, subiendo de $2,000 en 2025. Después de alcanzar ese monto combinado en medicamentos cubiertos, su plan paga el 100% de los costos por el resto del año. La insulina tiene un límite separado de $35 al mes."
+      },
+      {
+        "question": "¿Puedo obtener ayuda para pagar mis costos de Medicare si tengo bajos ingresos?",
+        "answer": "Sí. Los Programas de Ahorro de Medicare administrados por la agencia estatal de Medicaid pueden pagar su prima de la Parte B y, en algunos casos, sus deducibles y coaseguros. Ayuda Adicional reduce las primas y copagos de la Parte D. Cerca de 12 millones de estadounidenses son elegibles duales para Medicare y Medicaid."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre los costos de Medicare Advantage y Medigap?",
+        "answer": "Medicare Advantage agrupa la Parte A, Parte B y usualmente la Parte D en un plan con prima baja o $0 pero copagos variables limitados a $9,250 dentro de la red en 2026. Medigap lo mantiene en Medicare Original, agrega una prima separada de $110 a $200 al mes para el Plan G, y cubre casi todo el coaseguro restante en lugar de limitarlo."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Medicare Advantage vs Original Medicare", "es": "Medicare Advantage vs Medicare Original" },
+      "href": "/qa/medicare-advantage-vs-original-medicare"
+    },
+    {
+      "label": { "en": "Medigap vs Medicare Advantage", "es": "Medigap vs Medicare Advantage" },
+      "href": "/qa/medigap-vs-medicare-advantage"
+    },
+    {
+      "label": { "en": "What Is IRMAA?", "es": "¿Qué Es IRMAA?" },
+      "href": "/glossary/irmaa"
+    },
+    {
+      "label": { "en": "Extra Help Eligibility", "es": "Elegibilidad para Ayuda Adicional" },
+      "href": "/qa/extra-help-eligibility"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "CMS: 2026 Medicare Parts A & B Premiums and Deductibles",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+      "note": {
+        "en": "Official CMS fact sheet with the 2026 Part A and Part B premiums, deductibles, and coinsurance amounts.",
+        "es": "Hoja informativa oficial de CMS con las primas, deducibles y coaseguros de la Parte A y Parte B para 2026."
+      }
+    },
+    {
+      "name": "Medicare.gov: Medicare Costs 2026",
+      "url": "https://www.medicare.gov/publications/11579-medicare-costs.pdf",
+      "note": {
+        "en": "Medicare.gov's consumer-facing 2026 cost publication covering all four parts.",
+        "es": "Publicación de costos de 2026 de Medicare.gov dirigida a consumidores, cubriendo las cuatro partes."
+      }
+    },
+    {
+      "name": "KFF: Medicare Advantage in 2026",
+      "url": "https://www.kff.org/medicare/medicare-advantage-in-2026-premiums-out-of-pocket-limits-supplemental-benefits-and-prior-authorization/",
+      "note": {
+        "en": "KFF analysis of 2026 Medicare Advantage premiums, out-of-pocket limits, and plan design.",
+        "es": "Análisis de KFF de las primas, límites de bolsillo y diseño de planes de Medicare Advantage en 2026."
+      }
+    },
+    {
+      "name": "CMS: 2026 Part D Bid Information and IRMAA Brackets",
+      "url": "https://www.cms.gov/files/document/july-28-2026-parts-c-d-announcement.pdf",
+      "note": {
+        "en": "CMS's 2026 Part D national base beneficiary premium and standard benefit parameters.",
+        "es": "Prima base nacional de la Parte D de 2026 de CMS y parámetros del beneficio estándar."
+      }
+    }
+  ],
+
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": ["how is medicare cost calculated", "medicare cost calculation 2026", "medicare premium formula 2026"],
+    "es": ["como se calcula el costo de medicare", "calculo de costo de medicare 2026", "formula de prima de medicare 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
