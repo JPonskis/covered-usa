@@ -1,0 +1,407 @@
+{
+  "slug": "medicare-monthly-premium",
+  "subtype": "coverage",
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": ["medicare monthly premium 2026", "medicare part b premium 2026", "medicare irmaa 2026", "medicare part a premium 2026", "medicare advantage premium 2026"],
+    "es": ["prima mensual de medicare 2026", "prima de la parte b de medicare 2026", "irmaa de medicare 2026", "prima de la parte a de medicare 2026", "prima de medicare advantage 2026"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "question": {
+    "en": "What Is the Medicare Monthly Premium in 2026?",
+    "es": "¿Cuál Es La Prima Mensual De Medicare En 2026?"
+  },
+  "shortAnswer": {
+    "en": "It depends. The standard Medicare Part B premium is $202.90 a month in 2026.",
+    "es": "Depende. La prima estándar de la Parte B de Medicare es de $202.90 al mes en 2026."
+  },
+  "fullAnswer": {
+    "en": "It depends on which parts of Medicare you have and your income. In 2026, Medicare Part B costs $202.90 a month for most people, Medicare Part A is premium-free for about 99% of beneficiaries, and Medicare Part D carries a $38.99 national base premium. Higher earners pay an IRMAA surcharge that raises the Part B premium up to $689.90 a month and adds up to $91.00 to the Part D premium. Add a Medicare Advantage plan (often $0 to $14 a month) or a Medigap policy ($120 to $290 a month), and your total monthly premium depends entirely on which coverage you choose.",
+    "es": "Depende de qué partes de Medicare tenga y de sus ingresos. En 2026, la Parte B de Medicare cuesta $202.90 al mes para la mayoría, la Parte A de Medicare es gratuita para cerca del 99% de los beneficiarios, y la Parte D de Medicare tiene una prima base nacional de $38.99. Quienes ganan más pagan un recargo IRMAA que eleva la prima de la Parte B hasta $689.90 al mes y agrega hasta $91.00 a la prima de la Parte D. Si suma un plan Medicare Advantage (a menudo entre $0 y $14 al mes) o una póliza Medigap ($120 a $290 al mes), su prima mensual total depende por completo de la cobertura que elija."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Monthly Premium Costs",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "analyzer",
+  "pageType": "coverage",
+  "lastUpdated": "2026-09-17",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "What Is the Medicare Monthly Premium in 2026? | CoveredUSA",
+      "es": "¿Cuál Es La Prima Mensual De Medicare En 2026? | CoveredUSA"
+    },
+    "description": {
+      "en": "The standard Medicare Part B premium is $202.90/month in 2026. See Part A, Part D, IRMAA brackets, Medicare Advantage, and Medigap premiums by plan type.",
+      "es": "La prima estándar de la Parte B de Medicare es $202.90/mes en 2026. Vea las primas de Parte A, Parte D, IRMAA, Medicare Advantage y Medigap por tipo de plan."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "What Is the Medicare Monthly Premium in 2026?",
+      "es": "¿Cuál Es La Prima Mensual De Medicare En 2026?"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Medicare charges a monthly premium for most of its parts, and the amount you owe depends on which coverage you enroll in and how much income you reported two years earlier. The one premium nearly every beneficiary shares is Medicare Part B: $202.90 a month in 2026, set by CMS each fall for the following calendar year. Medicare Part A, Medicare Part D, Medicare Advantage, and Medigap each carry their own separate premium on top of or instead of that Part B charge.",
+      "es": "Medicare cobra una prima mensual para la mayoría de sus partes, y el monto que debe depende de la cobertura en la que se inscriba y de cuánto ingreso reportó dos años antes. La prima que casi todos los beneficiarios comparten es la de la Parte B de Medicare: $202.90 al mes en 2026, fijada por CMS cada otoño para el siguiente año calendario. La Parte A, la Parte D, Medicare Advantage y Medigap tienen cada una su propia prima, sumada a la Parte B o en su lugar."
+    },
+    {
+      "en": "The guide below breaks down the exact 2026 premium for every part of Medicare, the full IRMAA bracket table for higher earners, and what to do if you cannot afford the standard price. For the full monthly cost picture including deductibles and coinsurance, see [how much Medicare costs per month](/qa/medicare-cost-per-month). Check your [Medicare eligibility](/medicare-eligibility) if you are not yet enrolled.",
+      "es": "La guía a continuación detalla la prima exacta de 2026 para cada parte de Medicare, la tabla completa de niveles de IRMAA para quienes ganan más, y qué hacer si no puede pagar el precio estándar. Para el panorama completo de costo mensual incluyendo deducibles y coseguro, vea el desglose completo de costos de Medicare."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Medicare Part or Plan", "Standard Monthly Premium (2026)", "Highest Possible Premium with IRMAA (2026)", "Premium-Free Option?"],
+      "es": ["Parte de Medicare o Plan", "Prima Mensual Estándar (2026)", "Prima Más Alta Posible con IRMAA (2026)", "¿Opción Sin Prima?"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Medicare Part A (hospital insurance)", "es": "Parte A de Medicare (seguro hospitalario)" },
+          { "en": "$0/month for about 99% of beneficiaries (40+ work quarters)", "es": "$0/mes para cerca del 99% de los beneficiarios (40+ trimestres trabajados)" },
+          { "en": "$565/month for beneficiaries with fewer than 30 work quarters", "es": "$565/mes para beneficiarios con menos de 30 trimestres trabajados" },
+          { "value": { "en": "Yes, for most beneficiaries", "es": "Sí, para la mayoría de los beneficiarios" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Part B (medical insurance)", "es": "Parte B de Medicare (seguro médico)" },
+          { "en": "$202.90/month", "es": "$202.90/mes" },
+          { "en": "$689.90/month at 2024 individual income above $500,000", "es": "$689.90/mes con ingreso individual de 2024 superior a $500,000" },
+          { "value": { "en": "No premium-free option", "es": "Sin opción sin prima" }, "status": "no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Part D (prescription drug coverage)", "es": "Parte D de Medicare (cobertura de medicamentos)" },
+          { "en": "$38.99/month national base beneficiary premium", "es": "$38.99/mes prima base nacional" },
+          { "en": "Base premium plus up to $91.00/month IRMAA surcharge", "es": "Prima base más hasta $91.00/mes de recargo IRMAA" },
+          { "value": { "en": "No premium-free option", "es": "Sin opción sin prima" }, "status": "no" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Advantage (Part C)", "es": "Medicare Advantage (Parte C)" },
+          { "en": "$14.00/month average across all enrollees", "es": "$14.00/mes promedio entre todos los inscritos" },
+          { "en": "No separate IRMAA on the plan premium itself; Part B and Part D IRMAA can still apply", "es": "Sin IRMAA propio sobre la prima del plan; el IRMAA de la Parte B y la Parte D puede seguir aplicando" },
+          { "value": { "en": "Yes, 67% of MA-PD plans charge $0", "es": "Sí, el 67% de los planes MA-PD cobran $0" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medigap (Medicare Supplement)", "es": "Medigap (Seguro Suplementario)" },
+          { "en": "$120 to $290/month depending on plan letter, age, and state", "es": "$120 a $290/mes según la letra del plan, edad y estado" },
+          { "en": "No IRMAA; priced by private insurers, not based on income", "es": "Sin IRMAA; el precio lo fija la aseguradora privada, no el ingreso" },
+          { "value": { "en": "No premium-free option", "es": "Sin opción sin prima" }, "status": "no" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "CMS sets Part A, Part B, and Part D base premiums annually each fall. IRMAA surcharges use your Modified Adjusted Gross Income (MAGI) from the tax return filed two years earlier; your 2024 return sets your 2026 IRMAA tier.",
+      "es": "CMS fija las primas base de las Partes A, B y D cada otoño. Los recargos IRMAA usan su Ingreso Bruto Ajustado Modificado (MAGI) de la declaración de impuestos presentada dos años antes; su declaración de 2024 fija su nivel de IRMAA de 2026."
+    },
+    "source": "CMS 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet; CMS 2026 Part D National Base Beneficiary Premium Announcement; KFF Medicare Advantage 2026 Spotlight"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: The Medicare Premium in 2026",
+        "es": "Respuesta Directa: La Prima De Medicare En 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "It depends on which parts of Medicare you have and your income. Medicare Part B costs $202.90 a month for most people in 2026, Medicare Part A is free for about 99% of beneficiaries, and Medicare Part D carries a $38.99 base premium. Higher earners pay IRMAA, which raises the Part B premium as high as $689.90 a month. Add Medicare Advantage ($14.00 average) or Medigap ($120 to $290), and your total premium depends on your coverage choices.",
+          "es": "Depende de qué partes de Medicare tenga y de sus ingresos. La Parte B de Medicare cuesta $202.90 al mes para la mayoría en 2026, la Parte A de Medicare es gratuita para cerca del 99% de los beneficiarios, y la Parte D de Medicare tiene una prima base de $38.99. Quienes ganan más pagan IRMAA, que eleva la prima de la Parte B hasta $689.90 al mes. Sumando Medicare Advantage ($14.00 promedio) o Medigap ($120 a $290), su prima total depende de sus opciones de cobertura."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Standard Medicare Premiums by Part in 2026",
+        "es": "Primas Estándar De Medicare Por Parte En 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare and its companion parts charge several different monthly premiums depending on the coverage you choose, and none of them are optional once you enroll. Medicare Part A, hospital insurance, costs $0 a month for roughly 99% of beneficiaries who worked 40 or more quarters (about 10 years) and paid Medicare payroll taxes. Beneficiaries with 30 to 39 quarters pay $311 a month for Part A in 2026, and those with fewer than 30 quarters pay $565 a month, both reduced and full premiums set annually by CMS.",
+          "es": "Medicare Original y sus partes complementarias cobran varias primas mensuales distintas según la cobertura que elija, y ninguna es opcional una vez que se inscribe. La Parte A de Medicare, seguro hospitalario, cuesta $0 al mes para cerca del 99% de los beneficiarios que trabajaron 40 o más trimestres (unos 10 años) y pagaron impuestos de nómina de Medicare. Los beneficiarios con 30 a 39 trimestres pagan $311 al mes por la Parte A en 2026, y quienes tienen menos de 30 trimestres pagan $565 al mes, ambas primas reducida y completa fijadas anualmente por CMS."
+        },
+        {
+          "en": "Medicare Part B, medical insurance, costs $202.90 a month for most people in 2026, up $17.90 from the 2025 premium of $185.00. CMS credited part of that increase to rising physician and outpatient spending, while crediting new 2026 policy changes with holding the increase roughly $11 lower than it otherwise would have been. Medicare Part D, prescription drug coverage, carries a national base beneficiary premium of $38.99 a month in 2026, though your actual plan premium can run well above or below that base figure depending on the insurer and drug formulary.",
+          "es": "La Parte B de Medicare, seguro médico, cuesta $202.90 al mes para la mayoría en 2026, un aumento de $17.90 desde la prima de 2025 de $185.00. CMS atribuyó parte de ese aumento al mayor gasto médico y ambulatorio, mientras acreditaba a nuevos cambios de política de 2026 el haber contenido el aumento unos $11 menos de lo que habría sido. La Parte D de Medicare, cobertura de medicamentos recetados, tiene una prima base nacional de $38.99 al mes en 2026, aunque la prima real de su plan puede estar por encima o por debajo de esa cifra base según la aseguradora y el formulario."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicare Part B and Part D IRMAA Brackets for 2026",
+        "es": "Niveles De IRMAA De La Parte B Y La Parte D Para 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "IRMAA, the Income-Related Monthly Adjustment Amount, raises the Part B and Part D premiums for beneficiaries whose income exceeds set thresholds, using tax return data from two years earlier. Social Security checks your 2024 Modified Adjusted Gross Income (MAGI) to set your 2026 IRMAA tier, and the surcharge applies across five income brackets that top out at $500,000 for individuals and $750,000 for couples filing jointly. The table below lists every 2026 IRMAA bracket and its exact premium.",
+          "es": "IRMAA, el Monto de Ajuste Mensual Relacionado con el Ingreso, eleva las primas de la Parte B y la Parte D para beneficiarios cuyo ingreso supera ciertos umbrales, usando datos de la declaración de impuestos de dos años antes. El Seguro Social revisa su Ingreso Bruto Ajustado Modificado (MAGI) de 2024 para fijar su nivel de IRMAA de 2026, y el recargo aplica en cinco niveles de ingreso que llegan hasta $500,000 para individuos y $750,000 para parejas que declaran juntas. La tabla siguiente enumera cada nivel de IRMAA de 2026 y su prima exacta."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Medicare Part B and Part D IRMAA brackets 2026",
+          "es": "Niveles de IRMAA de la Parte B y la Parte D de Medicare 2026"
+        },
+        "headers": {
+          "en": ["2024 Income (Individual)", "2024 Income (Married Filing Jointly)", "Total Part B Premium (2026)", "Part D Monthly Surcharge (2026)"],
+          "es": ["Ingreso 2024 (Individual)", "Ingreso 2024 (Casado Declara Junto)", "Prima Total Parte B (2026)", "Recargo Mensual Parte D (2026)"]
+        },
+        "rows": [
+          { "en": ["$109,000 or less", "$218,000 or less", "$202.90", "$0"], "es": ["$109,000 o menos", "$218,000 o menos", "$202.90", "$0"] },
+          { "en": ["$109,001 to $137,000", "$218,001 to $274,000", "$284.10", "$14.50"], "es": ["$109,001 a $137,000", "$218,001 a $274,000", "$284.10", "$14.50"] },
+          { "en": ["$137,001 to $171,000", "$274,001 to $342,000", "$405.80", "$37.50"], "es": ["$137,001 a $171,000", "$274,001 a $342,000", "$405.80", "$37.50"] },
+          { "en": ["$171,001 to $205,000", "$342,001 to $410,000", "$527.50", "$60.40"], "es": ["$171,001 a $205,000", "$342,001 a $410,000", "$527.50", "$60.40"] },
+          { "en": ["$205,001 to $500,000", "$410,001 to $750,000", "$649.20", "$83.30"], "es": ["$205,001 a $500,000", "$410,001 a $750,000", "$649.20", "$83.30"] },
+          { "en": ["$500,001 or more", "$750,001 or more", "$689.90", "$91.00"], "es": ["$500,001 o más", "$750,001 o más", "$689.90", "$91.00"] }
+        ],
+        "footnote": {
+          "en": "IRMAA determinations use your 2024 tax return (filed in 2025) to set 2026 premiums. Brackets and dollar amounts are set annually by CMS and the Social Security Administration.",
+          "es": "Las determinaciones de IRMAA usan su declaración de impuestos de 2024 (presentada en 2025) para fijar las primas de 2026. Los niveles y montos los fija anualmente CMS junto con el Seguro Social."
+        },
+        "source": "CMS 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet; Social Security Administration 2026 Medicare IRMAA Table"
+      }
+    },
+    {
+      "heading": {
+        "en": "Medicare Advantage and Medigap Monthly Premiums in 2026",
+        "es": "Primas Mensuales De Medicare Advantage Y Medigap En 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Advantage plans set their own premiums on top of, or sometimes instead of, the standard Part B premium, and CMS projects the 2026 average at $14.00 a month across all enrollees, down from $16.40 in 2025. About 67% of Medicare Advantage plans that include drug coverage charge no premium beyond the standard Part B amount, and CMS estimates that 98% of beneficiaries have access to at least one $0-premium plan where they live.",
+          "es": "Los planes Medicare Advantage fijan su propia prima además de, o a veces en lugar de, la prima estándar de la Parte B, y CMS proyecta el promedio de 2026 en $14.00 al mes entre todos los inscritos, una baja desde $16.40 en 2025. Cerca del 67% de los planes Medicare Advantage que incluyen cobertura de medicamentos no cobran prima adicional a la Parte B estándar, y CMS estima que el 98% de los beneficiarios tiene acceso a al menos un plan con prima de $0 donde vive."
+        },
+        {
+          "en": "Medigap policies, sold by private insurers to fill Original Medicare's deductibles and coinsurance, are priced very differently because the government does not set the rate. Plan G, the most popular Medigap policy among new enrollees, averages roughly $220 a month at age 65 in 2026, with typical premiums ranging from $120 to $290 a month depending on the plan letter, your age, your state, and the insurer's underwriting rules. During the 6-month Medigap Open Enrollment Period, which starts the month you turn 65 and enroll in Part B, insurers cannot deny coverage or charge more because of a preexisting condition; outside that window, medical underwriting can raise the premium. Unlike an ACA-compliant marketplace plan, Medigap is not required to cover the ten essential health benefits categories, and it never bundles Part D drug coverage on its own.",
+          "es": "Las pólizas Medigap, vendidas por aseguradoras privadas para cubrir los deducibles y el coseguro de Medicare Original, tienen precios muy distintos porque el gobierno no fija la tarifa. El Plan G, la póliza Medigap más popular entre nuevos inscritos, promedia unos $220 al mes a los 65 años en 2026, con primas típicas de $120 a $290 al mes según la letra del plan, su edad, su estado y las reglas de suscripción de la aseguradora. Durante el Período de Inscripción Abierta de Medigap de 6 meses, que comienza el mes en que cumple 65 años y se inscribe en la Parte B, las aseguradoras no pueden negar cobertura ni cobrar más por una condición preexistente; fuera de ese período, la suscripción médica puede elevar la prima. A diferencia de un plan del mercado conforme al ACA, Medigap no está obligado a cubrir las diez categorías de beneficios esenciales de salud, y nunca incluye la cobertura de medicamentos de la Parte D por sí solo."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How IRMAA Is Calculated and When You Can Appeal",
+        "es": "Cómo Se Calcula IRMAA Y Cuándo Puede Apelar"
+      },
+      "paragraphs": [
+        {
+          "en": "Social Security determines your IRMAA bracket using your Modified Adjusted Gross Income (MAGI) from the tax return filed two years before the premium year, so your 2024 tax return sets your 2026 Medicare premium. MAGI for IRMAA purposes includes your adjusted gross income plus tax-exempt interest, and it captures capital gains, retirement account withdrawals, and other income sources that many beneficiaries do not expect to affect their premium.",
+          "es": "El Seguro Social determina su nivel de IRMAA usando su Ingreso Bruto Ajustado Modificado (MAGI) de la declaración de impuestos presentada dos años antes del año de la prima, por lo que su declaración de 2024 fija su prima de Medicare de 2026. El MAGI para fines de IRMAA incluye su ingreso bruto ajustado más los intereses exentos de impuestos, y capta ganancias de capital, retiros de cuentas de jubilación y otras fuentes de ingreso que muchos beneficiarios no esperan que afecten su prima."
+        },
+        {
+          "en": "Beneficiaries whose income dropped since the 2024 tax year because of retirement, divorce, the death of a spouse, or another qualifying life-changing event can request a new IRMAA determination using Social Security Form SSA-44, rather than waiting two years for the surcharge to catch up with lower income. The Social Security Administration processes these appeals directly and can adjust the premium retroactively to the start of the affected coverage year.",
+          "es": "Los beneficiarios cuyo ingreso bajó desde el año fiscal 2024 por jubilación, divorcio, muerte del cónyuge u otro evento calificado que cambia la vida pueden solicitar una nueva determinación de IRMAA usando el Formulario SSA-44 del Seguro Social, en lugar de esperar dos años a que el recargo alcance el ingreso más bajo. El Seguro Social procesa estas apelaciones directamente y puede ajustar la prima retroactivamente al inicio del año de cobertura afectado."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives If You Can't Afford the Standard Medicare Premium",
+        "es": "Alternativas Si No Puede Pagar La Prima Estándar De Medicare"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal and state programs exist specifically to cover or reduce Medicare premiums for beneficiaries with limited income and resources, and many eligible people never apply because they assume the standard premium is their only option.",
+          "es": "Existen programas federales y estatales diseñados específicamente para cubrir o reducir las primas de Medicare para beneficiarios con ingresos y recursos limitados, y muchas personas elegibles nunca solicitan porque asumen que la prima estándar es su única opción."
+        }
+      ],
+      "list": [
+        { "en": "Medicare Savings Programs (QMB, SLMB, QI): state Medicaid agencies pay your Part B premium, and the Qualified Medicare Beneficiary tier also covers deductibles and coinsurance, for beneficiaries who meet state income and asset limits.", "es": "Programas de Ahorro de Medicare (QMB, SLMB, QI): las agencias estatales de Medicaid pagan su prima de la Parte B, y el nivel QMB también cubre deducibles y coseguro, para beneficiarios que cumplen los límites estatales de ingresos y activos." },
+        { "en": "Extra Help (Part D Low-Income Subsidy): Social Security-administered assistance that covers most or all of your Part D premium and deductible for beneficiaries with limited income and resources.", "es": "Ayuda Adicional (Subsidio de Bajos Ingresos de la Parte D): asistencia administrada por el Seguro Social que cubre la mayoría o toda su prima y deducible de la Parte D para beneficiarios con ingresos y recursos limitados." },
+        { "en": "Full Medicaid dual-eligibility: about 12 million Americans qualify for both Medicare and Medicaid, and Medicaid typically pays the Part B premium plus cost-sharing that Original Medicare leaves behind.", "es": "Doble elegibilidad completa de Medicaid: unos 12 millones de estadounidenses califican para Medicare y Medicaid, y Medicaid generalmente paga la prima de la Parte B además de los costos compartidos que deja Medicare Original." },
+        { "en": "A $0-premium Medicare Advantage plan: choosing a Medicare Advantage plan with no premium beyond the standard Part B amount, available to about 98% of beneficiaries in 2026, trades network restrictions for a lower monthly bill.", "es": "Un plan Medicare Advantage con prima de $0: elegir un plan Medicare Advantage sin prima adicional a la Parte B estándar, disponible para cerca del 98% de los beneficiarios en 2026, cambia restricciones de red por una factura mensual más baja." },
+        { "en": "State Health Insurance Assistance Program (SHIP) counseling: free, unbiased local counselors help beneficiaries compare plan premiums and apply for Medicare Savings Programs or Extra Help at no cost.", "es": "Consejería del Programa Estatal de Asistencia de Seguro de Salud (SHIP): consejeros locales gratuitos e imparciales ayudan a los beneficiarios a comparar primas de planes y solicitar Programas de Ahorro de Medicare o Ayuda Adicional sin costo." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Enroll and Find Your Exact Premium",
+        "es": "Cómo Inscribirse Y Encontrar Su Prima Exacta"
+      },
+      "paragraphs": [
+        {
+          "en": "Beneficiaries receive their exact 2026 Medicare premium amount by mail from the Social Security Administration each fall, and the figure is also available anytime by logging into a My Social Security account at ssa.gov or checking Medicare.gov's Plan Finder tool. The Initial Enrollment Period for new beneficiaries runs 7 months, starting 3 months before the month you turn 65 and ending 3 months after, and enrolling on time helps most people avoid the Part B late enrollment penalty, a permanent 10% premium increase for every 12-month period of delayed enrollment.",
+          "es": "Los beneficiarios reciben el monto exacto de su prima de Medicare de 2026 por correo del Seguro Social cada otoño, y la cifra también está disponible en cualquier momento al iniciar sesión en una cuenta My Social Security en ssa.gov o al revisar la herramienta Plan Finder de Medicare.gov. El Período de Inscripción Inicial para nuevos beneficiarios dura 7 meses, comenzando 3 meses antes del mes en que cumple 65 años y terminando 3 meses después, e inscribirse a tiempo ayuda a la mayoría a evitar la penalidad por inscripción tardía de la Parte B, un aumento permanente del 10% de la prima por cada período de 12 meses de inscripción retrasada."
+        },
+        {
+          "en": "Comparing plan premiums before choosing coverage matters because the sticker price on a Medicare Advantage or Part D plan does not tell the whole story of what you will pay for the year. Medicare's official Plan Finder at medicare.gov lets beneficiaries enter their ZIP code and drug list to compare every available plan's premium, deductible, and estimated annual cost side by side before the Annual Enrollment Period, which runs October 15 through December 7, 2026, for coverage starting January 1, 2027.",
+          "es": "Comparar las primas de los planes antes de elegir cobertura importa porque el precio anunciado de un plan Medicare Advantage o de la Parte D no cuenta toda la historia de lo que pagará durante el año. El Plan Finder oficial de Medicare en medicare.gov permite a los beneficiarios ingresar su código postal y lista de medicamentos para comparar la prima, el deducible y el costo anual estimado de cada plan disponible antes del Período de Inscripción Anual, que va del 15 de octubre al 7 de diciembre de 2026, para cobertura que comienza el 1 de enero de 2027."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Why did my Medicare Part B premium go up in 2026?",
+        "answer": "The standard Medicare Part B premium rose to $202.90 a month in 2026, up $17.90 from $185.00 in 2025. CMS sets the premium every fall based on projected program spending, and rising physician and outpatient costs drove most of the increase. CMS has said the increase would have been roughly $11 higher without new 2026 Physician Fee Schedule changes targeting spending on skin substitute products."
+      },
+      {
+        "question": "What is IRMAA and who pays it?",
+        "answer": "IRMAA, the Income-Related Monthly Adjustment Amount, is a surcharge added to the Part B and Part D premiums for higher-income Medicare beneficiaries. In 2026, individuals with 2024 income above $109,000, or couples above $218,000, pay an extra $81.20 to $487.00 a month on Part B and up to $91.00 a month on Part D, across five income tiers set by CMS."
+      },
+      {
+        "question": "Is Medicare Part A ever free in 2026?",
+        "answer": "Yes, for about 99% of beneficiaries. Medicare Part A has no monthly premium if you or a spouse worked at least 40 quarters (about 10 years) and paid Medicare payroll taxes. Beneficiaries with 30 to 39 quarters pay $311 a month in 2026, and those with fewer than 30 quarters pay $565 a month."
+      },
+      {
+        "question": "How much is the Medicare Advantage premium in 2026?",
+        "answer": "CMS projects the average Medicare Advantage premium at $14.00 a month in 2026 across all enrollees, down from $16.40 in 2025. About 67% of Medicare Advantage plans that include drug coverage charge no premium beyond the standard Part B amount, and roughly 98% of beneficiaries can choose at least one $0-premium plan where they live."
+      },
+      {
+        "question": "How much is a Medigap premium in 2026?",
+        "answer": "Medigap premiums typically run $120 to $290 a month in 2026, depending on the plan letter, your age, your state, and the insurer, because private companies, not the government, set Medigap pricing. Plan G, the most popular choice for new enrollees, averages roughly $220 a month at age 65."
+      },
+      {
+        "question": "Can I appeal my Medicare IRMAA determination?",
+        "answer": "Yes. If your income dropped since your 2024 tax return because of retirement, divorce, the death of a spouse, or another qualifying life-changing event, you can file Social Security Form SSA-44 to request a new IRMAA determination based on more current income, rather than waiting for the standard two-year lookback to catch up."
+      },
+      {
+        "question": "What if I can't afford my Medicare premium?",
+        "answer": "Several programs can lower or eliminate your Medicare premium. Medicare Savings Programs (QMB, SLMB, QI) pay your Part B premium if you meet state income limits, Extra Help covers most of your Part D premium, and full Medicaid dual-eligibility, held by about 12 million Americans, typically covers the Part B premium plus other cost-sharing."
+      },
+      {
+        "question": "Does Medicare Part D have a separate premium from Part B?",
+        "answer": "Yes. Part D premiums are separate from and in addition to the Part B premium. CMS sets a $38.99 national base beneficiary premium for 2026, but actual Part D plan premiums vary by insurer and formulary, and higher earners pay an additional IRMAA surcharge of up to $91.00 a month specifically on their Part D premium."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Por qué subió mi prima de la Parte B de Medicare en 2026?",
+        "answer": "La prima estándar de la Parte B de Medicare subió a $202.90 al mes en 2026, un aumento de $17.90 desde $185.00 en 2025. CMS fija la prima cada otoño según el gasto proyectado del programa, y el aumento de costos médicos y ambulatorios impulsó la mayor parte del incremento. CMS ha dicho que el aumento habría sido unos $11 más alto sin los nuevos cambios de 2026 al Programa de Tarifas Médicas."
+      },
+      {
+        "question": "¿Qué es IRMAA y quién lo paga?",
+        "answer": "IRMAA, el Monto de Ajuste Mensual Relacionado con el Ingreso, es un recargo agregado a las primas de la Parte B y la Parte D para beneficiarios de Medicare de mayores ingresos. En 2026, individuos con ingreso 2024 superior a $109,000, o parejas por encima de $218,000, pagan entre $81.20 y $487.00 adicionales al mes en la Parte B y hasta $91.00 al mes en la Parte D, en cinco niveles de ingreso fijados por CMS."
+      },
+      {
+        "question": "¿La Parte A de Medicare es gratuita alguna vez en 2026?",
+        "answer": "Sí, para cerca del 99% de los beneficiarios. La Parte A de Medicare no tiene prima mensual si usted o su cónyuge trabajaron al menos 40 trimestres (unos 10 años) y pagaron impuestos de nómina de Medicare. Los beneficiarios con 30 a 39 trimestres pagan $311 al mes en 2026, y quienes tienen menos de 30 trimestres pagan $565 al mes."
+      },
+      {
+        "question": "¿Cuánto cuesta la prima de Medicare Advantage en 2026?",
+        "answer": "CMS proyecta la prima promedio de Medicare Advantage en $14.00 al mes en 2026 entre todos los inscritos, una baja desde $16.40 en 2025. Cerca del 67% de los planes Medicare Advantage que incluyen cobertura de medicamentos no cobran prima adicional a la Parte B estándar, y aproximadamente el 98% de los beneficiarios puede elegir al menos un plan con prima de $0 donde vive."
+      },
+      {
+        "question": "¿Cuánto cuesta una prima de Medigap en 2026?",
+        "answer": "Las primas de Medigap suelen costar entre $120 y $290 al mes en 2026, según la letra del plan, su edad, su estado y la aseguradora, porque las compañías privadas, no el gobierno, fijan el precio de Medigap. El Plan G, la opción más popular para nuevos inscritos, promedia unos $220 al mes a los 65 años."
+      },
+      {
+        "question": "¿Puedo apelar mi determinación de IRMAA de Medicare?",
+        "answer": "Sí. Si su ingreso bajó desde su declaración de impuestos de 2024 por jubilación, divorcio, muerte del cónyuge u otro evento calificado que cambia la vida, puede presentar el Formulario SSA-44 del Seguro Social para solicitar una nueva determinación de IRMAA basada en un ingreso más actual, en lugar de esperar el período estándar de dos años."
+      },
+      {
+        "question": "¿Qué pasa si no puedo pagar mi prima de Medicare?",
+        "answer": "Varios programas pueden reducir o eliminar su prima de Medicare. Los Programas de Ahorro de Medicare (QMB, SLMB, QI) pagan su prima de la Parte B si cumple los límites de ingresos estatales, la Ayuda Adicional cubre la mayoría de su prima de la Parte D, y la doble elegibilidad completa de Medicaid, que tienen unos 12 millones de estadounidenses, generalmente cubre la prima de la Parte B además de otros costos compartidos."
+      },
+      {
+        "question": "¿La Parte D de Medicare tiene una prima separada de la Parte B?",
+        "answer": "Sí. Las primas de la Parte D son separadas y adicionales a la prima de la Parte B. CMS fija una prima base nacional de $38.99 para 2026, pero las primas reales de los planes de la Parte D varían según la aseguradora y el formulario, y quienes ganan más pagan un recargo IRMAA adicional de hasta $91.00 al mes específicamente sobre su prima de la Parte D."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Full Monthly Medicare Cost Breakdown", "es": "Desglose Completo Del Costo Mensual De Medicare" },
+      "href": "/qa/medicare-cost-per-month"
+    },
+    {
+      "label": { "en": "Medicare Eligibility Requirements", "es": "Requisitos De Elegibilidad De Medicare" },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": { "en": "Medicare Advantage Plans by State", "es": "Planes Medicare Advantage Por Estado" },
+      "href": "/medicare-advantage"
+    },
+    {
+      "label": { "en": "Analyze Your Medical Bill", "es": "Analice Su Factura Médica" },
+      "href": "/medical-bill-analyzer"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicare.gov: Medicare Costs",
+      "url": "https://www.medicare.gov/basics/costs/medicare-costs",
+      "note": {
+        "en": "Official Medicare.gov overview of Part A, Part B, Part D, Medicare Advantage, and Medigap premiums.",
+        "es": "Resumen oficial de Medicare.gov de las primas de la Parte A, Parte B, Parte D, Medicare Advantage y Medigap."
+      }
+    },
+    {
+      "name": "CMS: 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+      "note": {
+        "en": "Official CMS fact sheet with the exact 2026 Part A and Part B premiums, deductibles, and IRMAA brackets.",
+        "es": "Hoja informativa oficial de CMS con las primas exactas de 2026 de la Parte A y Parte B, deducibles y niveles de IRMAA."
+      }
+    },
+    {
+      "name": "CMS: 2026 Part D National Average Bid and Base Beneficiary Premium Announcement",
+      "url": "https://www.cms.gov/files/document/july-28-2025-parts-c-d-announcement.pdf",
+      "note": {
+        "en": "CMS announcement setting the $38.99 national base beneficiary premium for Part D in 2026.",
+        "es": "Anuncio de CMS que fija la prima base nacional de $38.99 de la Parte D para 2026."
+      }
+    },
+    {
+      "name": "Federal Register: CY 2026 Part A Premiums for the Uninsured Aged",
+      "url": "https://www.federalregister.gov/documents/2025/11/19/2025-20250/medicare-program-cy-2026-part-a-premiums-for-the-uninsured-aged-and-for-certain-disabled-individuals",
+      "note": {
+        "en": "Federal notice setting the 2026 reduced ($311) and full ($565) Part A premiums for beneficiaries without 40 work quarters.",
+        "es": "Aviso federal que fija las primas de la Parte A de 2026 reducida ($311) y completa ($565) para beneficiarios sin 40 trimestres trabajados."
+      }
+    },
+    {
+      "name": "KFF: Medicare Advantage in 2026",
+      "url": "https://www.kff.org/medicare/medicare-advantage-in-2026-premiums-out-of-pocket-limits-supplemental-benefits-and-prior-authorization/",
+      "note": {
+        "en": "KFF analysis of 2026 Medicare Advantage premiums, out-of-pocket limits, and plan benefits.",
+        "es": "Análisis de KFF de las primas de Medicare Advantage de 2026, límites de gastos de bolsillo y beneficios de los planes."
+      }
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Find your exact premium. Log into your My Social Security account at ssa.gov or check the notice CMS mails each fall to see the exact 2026 premium and IRMAA tier that applies to you.", "es": "Paso 1: Encuentre su prima exacta. Inicie sesión en su cuenta My Social Security en ssa.gov o revise el aviso que CMS envía por correo cada otoño para ver la prima exacta de 2026 y el nivel de IRMAA que le corresponde." },
+      { "en": "Step 2: Compare plan premiums. Use Medicare's Plan Finder at medicare.gov to compare Medicare Advantage, Part D, and Medigap premiums side by side using your ZIP code and drug list.", "es": "Paso 2: Compare las primas de los planes. Use el Plan Finder de Medicare en medicare.gov para comparar primas de Medicare Advantage, Parte D y Medigap usando su código postal y lista de medicamentos." },
+      { "en": "Step 3: Enroll during your window. New beneficiaries have a 7-month Initial Enrollment Period around their 65th birthday; existing beneficiaries can change plans during the Annual Enrollment Period, October 15 through December 7, 2026.", "es": "Paso 3: Inscríbase durante su período. Los nuevos beneficiarios tienen un Período de Inscripción Inicial de 7 meses alrededor de su cumpleaños 65; los beneficiarios existentes pueden cambiar de plan durante el Período de Inscripción Anual, del 15 de octubre al 7 de diciembre de 2026." },
+      { "en": "Step 4: Apply for savings programs if eligible. Contact your state Medicaid office for Medicare Savings Programs or apply for Extra Help through Social Security if your income and resources are limited.", "es": "Paso 4: Solicite programas de ahorro si es elegible. Contacte a la oficina estatal de Medicaid para Programas de Ahorro de Medicare o solicite la Ayuda Adicional a través del Seguro Social si su ingreso y recursos son limitados." },
+      { "en": "Step 5: Set up payment. Most premiums are deducted automatically from Social Security benefits; if you are not yet collecting Social Security, Medicare bills you directly through Medicare Easy Pay or a mailed invoice.", "es": "Paso 5: Configure el pago. La mayoría de las primas se deducen automáticamente de los beneficios del Seguro Social; si aún no los recibe, Medicare le factura directamente mediante Medicare Easy Pay o una factura por correo." }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/basics/costs/medicare-costs",
+    "documentsNeeded": [
+      { "en": "Most recent Social Security or Medicare premium notice", "es": "Aviso más reciente de prima del Seguro Social o Medicare" },
+      { "en": "2024 federal tax return (for IRMAA verification)", "es": "Declaración de impuestos federal de 2024 (para verificación de IRMAA)" },
+      { "en": "Social Security number and Medicare number", "es": "Número de Seguro Social y número de Medicare" },
+      { "en": "Proof of income and resources (for Medicare Savings Programs or Extra Help applications)", "es": "Prueba de ingresos y recursos (para solicitudes de Programas de Ahorro de Medicare o Ayuda Adicional)" },
+      { "en": "Social Security Form SSA-44 (only if appealing an IRMAA determination)", "es": "Formulario SSA-44 del Seguro Social (solo si apela una determinación de IRMAA)" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Income or resources above the state's Medicare Savings Program limits", "es": "Ingresos o recursos por encima de los límites estatales del Programa de Ahorro de Medicare" },
+      { "en": "Missing or incomplete Form SSA-44 documentation for an IRMAA appeal", "es": "Documentación faltante o incompleta del Formulario SSA-44 para una apelación de IRMAA" },
+      { "en": "Reported life-changing event not on Social Security's approved list (retirement, divorce, and a spouse's death qualify; a stock market loss does not)", "es": "El evento reportado que cambia la vida no está en la lista aprobada del Seguro Social (jubilación, divorcio y muerte del cónyuge califican; una pérdida en el mercado de valores no)" },
+      { "en": "Applying more than 3 years after the tax year for a retroactive Extra Help redetermination", "es": "Solicitar más de 3 años después del año fiscal para una redeterminación retroactiva de la Ayuda Adicional" }
+    ],
+    "deadline": {
+      "en": "No enrollment window for premium payment itself; Initial Enrollment Period is 7 months around your 65th birthday, and Annual Enrollment Period runs October 15 to December 7, 2026",
+      "es": "No hay período de inscripción para el pago de la prima en sí; el Período de Inscripción Inicial es de 7 meses alrededor de su cumpleaños 65, y el Período de Inscripción Anual va del 15 de octubre al 7 de diciembre de 2026"
+    }
+  }
+}
