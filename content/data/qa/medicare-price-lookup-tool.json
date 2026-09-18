@@ -1,0 +1,319 @@
+{
+  "slug": "medicare-price-lookup-tool",
+  "subtype": "coverage",
+  "question": {
+    "en": "Does Medicare Have an Online Price Lookup Tool for Procedures?",
+    "es": "¿Tiene Medicare una Herramienta en Línea para Consultar Precios de Procedimientos?"
+  },
+  "shortAnswer": {
+    "en": "Yes. A free tool compares 2026 outpatient costs by site of care.",
+    "es": "Sí. Una herramienta gratuita compara costos ambulatorios de 2026 por sitio."
+  },
+  "fullAnswer": {
+    "en": "Yes. Medicare.gov runs a free Procedure Price Lookup tool that lets people with Original Medicare compare the national average 2026 out-of-pocket cost of roughly 3,900 outpatient procedures at a hospital outpatient department versus an ambulatory surgical center. The tool shows the Medicare-approved amount and the average copayment a beneficiary without Medigap would pay, but it does not include anesthesia, physician fees, or your specific hospital's negotiated price. It only applies to Original Medicare, not Medicare Advantage, and it is separate from CMS's Physician Fee Schedule Look-up Tool and the hospital price transparency files every hospital must post under 2026 federal rules.",
+    "es": "Sí. Medicare.gov ofrece la herramienta gratuita Procedure Price Lookup, que permite a las personas con Medicare Original comparar el costo promedio nacional de bolsillo de 2026 para aproximadamente 3,900 procedimientos ambulatorios en un departamento de hospital ambulatorio frente a un centro quirúrgico ambulatorio. La herramienta muestra el monto aprobado por Medicare y el copago promedio que pagaría un beneficiario sin Medigap, pero no incluye anestesia, honorarios médicos ni el precio negociado específico de su hospital. Solo aplica a Medicare Original, no a Medicare Advantage, y es diferente de la Herramienta de Consulta del Programa de Tarifas de Médicos de CMS y de los archivos de transparencia de precios hospitalarios que todo hospital debe publicar bajo las reglas federales de 2026."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Procedure Price Lookup Tool",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "analyzer",
+  "pageType": "coverage",
+  "lastUpdated": "2026-09-17",
+  "readingTime": "8 min read",
+
+  "meta": {
+    "title": {
+      "en": "Medicare Price Lookup Tool: How It Works in 2026 | CoveredUSA",
+      "es": "Herramienta de Precios de Medicare: Cómo Funciona en 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Yes, Medicare.gov's free Procedure Price Lookup tool compares 2026 outpatient costs at hospitals vs. surgery centers for about 3,900 procedures.",
+      "es": "Sí, la herramienta gratuita Procedure Price Lookup de Medicare.gov compara costos ambulatorios de 2026 en hospitales frente a centros quirúrgicos para unos 3,900 procedimientos."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Does Medicare Have a Price Lookup Tool for Procedures? (2026)",
+      "es": "¿Tiene Medicare una Herramienta para Consultar Precios de Procedimientos? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Choosing where to have an outpatient procedure, a hospital or a freestanding surgical center, can change what you pay out of pocket under Original Medicare. Since 2018, Medicare.gov has published a free Procedure Price Lookup tool built to make that cost difference visible before you schedule anything.",
+      "es": "Elegir dónde realizarse un procedimiento ambulatorio, en un hospital o en un centro quirúrgico independiente, puede cambiar lo que paga de su bolsillo bajo Medicare Original. Desde 2018, Medicare.gov ha publicado una herramienta gratuita, Procedure Price Lookup, diseñada para mostrar esa diferencia de costo antes de que programe cualquier cita."
+    },
+    {
+      "en": "CoveredUSA's breakdown below covers what the Medicare Procedure Price Lookup tool actually shows in 2026, what it leaves out, whether it works if you have Medicare Advantage, and where to find pricing information the tool does not cover. For a deeper look at a specific procedure's Medicare coverage, see [does Medicare cover cataract surgery](/qa/does-medicare-cover-cataract-surgery), and use the [Medical Bill Analyzer](/medical-bill-analyzer) if you already have a bill in hand and want to check it against Medicare's approved rates.",
+      "es": "El siguiente desglose de CoveredUSA explica lo que la herramienta Medicare Procedure Price Lookup realmente muestra en 2026, lo que deja fuera, si funciona si tiene Medicare Advantage, y dónde encontrar información de precios que la herramienta no cubre. Para más detalle sobre la cobertura de un procedimiento específico, vea [does Medicare cover cataract surgery](/qa/does-medicare-cover-cataract-surgery), y use el [Medical Bill Analyzer](/medical-bill-analyzer) si ya tiene una factura en mano y quiere compararla con las tarifas aprobadas por Medicare."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Price Tool", "Works for Original Medicare", "Works for Medicare Advantage", "What It Shows (2026)"],
+      "es": ["Herramienta de precios", "Funciona para Medicare Original", "Funciona para Medicare Advantage", "Qué muestra (2026)"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Medicare Procedure Price Lookup", "es": "Medicare Procedure Price Lookup" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" },
+          { "en": "National average cost at a hospital outpatient department vs. an ambulatory surgical center for about 3,900 procedures", "es": "Costo promedio nacional en un departamento de hospital ambulatorio frente a un centro quirúrgico ambulatorio para unos 3,900 procedimientos" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "CMS Physician Fee Schedule (PFS) Look-up Tool", "es": "Herramienta de Consulta del Programa de Tarifas de Médicos (PFS) de CMS" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "value": { "en": "Reference only", "es": "Solo referencia" }, "status": "partial" },
+          { "en": "Medicare-approved amount for a specific CPT or HCPCS billing code by geographic locality", "es": "Monto aprobado por Medicare para un código de facturación CPT o HCPCS específico según la localidad geográfica" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Hospital price transparency files", "es": "Archivos de transparencia de precios hospitalarios" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Each hospital's full standard charges, including payer-specific negotiated rates, in a machine-readable file", "es": "Los precios estándar completos de cada hospital, incluidas las tarifas negociadas por pagador, en un archivo legible por máquina" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Private cost-estimator tools (FAIR Health Consumer, Healthcare Bluebook)", "es": "Herramientas privadas de estimación de costos (FAIR Health Consumer, Healthcare Bluebook)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "ZIP-code-level estimated costs across a broader range of procedures than the government tools", "es": "Costos estimados a nivel de código postal para una gama más amplia de procedimientos que las herramientas gubernamentales" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "CMS updates the Procedure Price Lookup and Physician Fee Schedule data annually. Hospital price transparency files must be refreshed at least once a year under the CY 2026 OPPS/ASC Final Rule. None of these tools guarantee your final bill; always confirm your specific price with the facility's billing office before a scheduled procedure.",
+      "es": "CMS actualiza los datos de Procedure Price Lookup y del Programa de Tarifas de Médicos anualmente. Los archivos de transparencia de precios hospitalarios deben actualizarse al menos una vez al año bajo la Regla Final CY 2026 OPPS/ASC. Ninguna de estas herramientas garantiza su factura final; siempre confirme su precio específico con la oficina de facturación de la instalación antes de un procedimiento programado."
+    },
+    "source": "CMS Procedure Price Lookup, CMS Physician Fee Schedule Look-up Tool, CMS Hospital Price Transparency, Brookings Institution 2026 analysis"
+  },
+
+  "detailSections": [
+    {
+      "heading": { "en": "Direct Answer", "es": "Respuesta Directa" },
+      "paragraphs": [
+        {
+          "en": "Yes. Medicare.gov runs a free Procedure Price Lookup tool that compares 2026 national average out-of-pocket costs for about 3,900 outpatient procedures at a hospital outpatient department versus an ambulatory surgical center. It works for Original Medicare only, not Medicare Advantage, and excludes anesthesia and physician fees. It is separate from CMS's Physician Fee Schedule Look-up Tool and hospital price transparency files.",
+          "es": "Sí. Medicare.gov ofrece una herramienta gratuita, Procedure Price Lookup, que compara los costos promedio nacionales de bolsillo de 2026 para unos 3,900 procedimientos ambulatorios en un departamento de hospital ambulatorio frente a un centro quirúrgico ambulatorio. Funciona solo para Medicare Original, no para Medicare Advantage, y excluye anestesia y honorarios médicos. Es diferente de la Herramienta de Consulta del Programa de Tarifas de Médicos de CMS y de los archivos de transparencia de precios hospitalarios."
+        }
+      ]
+    },
+    {
+      "heading": { "en": "How the Medicare Procedure Price Lookup Tool Works", "es": "Cómo Funciona la Herramienta Medicare Procedure Price Lookup" },
+      "paragraphs": [
+        {
+          "en": "Medicare's Procedure Price Lookup tool covers roughly 3,900 common outpatient procedures in 2026, from cataract surgery to colonoscopies to joint injections. For each procedure, the tool shows two numbers: the national average total amount Medicare pays the facility, and the national average copayment a beneficiary with no supplemental (Medigap) coverage would owe under Original Medicare's standard 20% Medicare Part B coinsurance. CMS updates the underlying pricing data every year, so the 2026 figures reflect the current Medicare Part B deductible of $283 and the standard Part B premium of $202.90 a month. Unlike Medicare Part A hospital inpatient stays, every procedure in the tool is billed under Part B as an outpatient service.",
+          "es": "La herramienta Procedure Price Lookup de Medicare cubre aproximadamente 3,900 procedimientos ambulatorios comunes en 2026, desde cirugía de cataratas hasta colonoscopias e inyecciones articulares. Para cada procedimiento, la herramienta muestra dos cifras: el monto total promedio nacional que Medicare paga a la instalación, y el copago promedio nacional que un beneficiario sin cobertura suplementaria (Medigap) pagaría bajo el coseguro estándar de la Parte B de Medicare Original, del 20%. CMS actualiza los datos de precios cada año, por lo que las cifras de 2026 reflejan el deducible actual de la Parte B de Medicare de $283 y la prima estándar de la Parte B de $202.90 al mes. A diferencia de las estadías hospitalarias de la Parte A de Medicare, todo procedimiento en la herramienta se factura bajo la Parte B como servicio ambulatorio."
+        },
+        {
+          "en": "The tool exists specifically to compare two sites of service: a hospital outpatient department (HOPD) and an ambulatory surgical center (ASC). CMS pays these two settings under separate payment systems, so the same procedure, a knee arthroscopy or a cataract removal, can carry a different national average copayment depending on where it happens. That gap is the entire point of the tool: it lets you weigh a lower-cost ASC against a hospital setting before you schedule.",
+          "es": "La herramienta existe específicamente para comparar dos sitios de servicio: un departamento de hospital ambulatorio (HOPD) y un centro quirúrgico ambulatorio (ASC). CMS paga a estos dos entornos bajo sistemas de pago separados, por lo que el mismo procedimiento, una artroscopia de rodilla o la extracción de cataratas, puede tener un copago promedio nacional diferente según dónde se realice. Esa diferencia es el punto central de la herramienta: le permite sopesar un ASC de menor costo frente a un entorno hospitalario antes de programar la cita."
+        }
+      ]
+    },
+    {
+      "heading": { "en": "What the Tool Does Not Show", "es": "Lo Que la Herramienta No Muestra" },
+      "paragraphs": [
+        {
+          "en": "The Procedure Price Lookup tool has real limits, and knowing them prevents surprises. It shows national averages only, not the price at your specific hospital or surgical center, and it does not adjust for Medigap, Medicare Advantage, or Medicaid dual-eligible cost sharing. A Brookings Institution review found that for nearly 90% of the roughly 3,900 procedures in the tool, the 2026 average copayment gap between an HOPD and an ASC is under $500, so the tool is more useful for a handful of higher-cost procedures than for routine visits.",
+          "es": "La herramienta Procedure Price Lookup tiene límites reales, y conocerlos evita sorpresas. Muestra solo promedios nacionales, no el precio en su hospital o centro quirúrgico específico, y no se ajusta a Medigap, Medicare Advantage ni al costo compartido de personas con elegibilidad dual de Medicaid. Un análisis del Brookings Institution encontró que para casi el 90% de los aproximadamente 3,900 procedimientos en la herramienta, la diferencia de copago promedio de 2026 entre un HOPD y un ASC es menor a $500, por lo que la herramienta es más útil para un grupo reducido de procedimientos de mayor costo que para visitas rutinarias."
+        }
+      ],
+      "list": [
+        { "en": "Anesthesia charges", "es": "Cargos de anestesia" },
+        { "en": "The surgeon's or anesthesiologist's separate professional fee", "es": "El honorario profesional separado del cirujano o anestesiólogo" },
+        { "en": "Lab, pathology, and imaging charges billed separately", "es": "Cargos de laboratorio, patología e imágenes facturados por separado" },
+        { "en": "Your specific hospital's or ASC's actual negotiated price", "es": "El precio real negociado de su hospital o ASC específico" },
+        { "en": "Medicare Advantage, Medigap, or Medicaid cost-sharing adjustments", "es": "Ajustes de costos compartidos de Medicare Advantage, Medigap o Medicaid" }
+      ]
+    },
+    {
+      "heading": { "en": "Does It Work If You Have Medicare Advantage?", "es": "¿Funciona Si Tiene Medicare Advantage?" },
+      "paragraphs": [
+        {
+          "en": "No. The Procedure Price Lookup tool only reflects Original Medicare's fee-for-service payment rates and standard 20% Part B coinsurance. Medicare Advantage plans negotiate their own rates with in-network hospitals and ambulatory surgical centers, and cost sharing (copays, coinsurance, and out-of-pocket maximums) varies by plan. If you have a Medicare Advantage plan in 2026, call the member services number on your plan card or check your plan's own cost-estimator tool for an accurate quote, since Medicare's national averages will not match your plan's actual copay.",
+          "es": "No. La herramienta Procedure Price Lookup solo refleja las tarifas de pago por servicio de Medicare Original y el coseguro estándar del 20% de la Parte B. Los planes Medicare Advantage negocian sus propias tarifas con hospitales y centros quirúrgicos ambulatorios dentro de la red, y el costo compartido (copagos, coseguro y máximos de bolsillo) varía según el plan. Si tiene un plan Medicare Advantage en 2026, llame al número de servicios para miembros en su tarjeta de plan o revise la herramienta de estimación de costos propia de su plan, ya que los promedios nacionales de Medicare no coincidirán con el copago real de su plan."
+        }
+      ]
+    },
+    {
+      "heading": { "en": "Other Ways to Look Up Medicare Prices in 2026", "es": "Otras Formas de Consultar Precios de Medicare en 2026" },
+      "paragraphs": [
+        {
+          "en": "The Procedure Price Lookup tool is not the only government price resource. CMS's Physician Fee Schedule (PFS) Look-up Tool shows the Medicare-approved amount for a specific CPT or HCPCS code by geographic locality, information mainly used by providers and billing staff but open to the public. Separately, every U.S. hospital must post a machine-readable file of its standard charges under the federal Hospital Price Transparency rule. A revised CY 2026 OPPS/ASC Final Rule tightened those requirements starting January 1, 2026, with CMS delaying enforcement to April 1, 2026, requiring hospitals to use a Type 2 National Provider Identifier and a signed attestation naming the person who verified the data, a response to Executive Order 14221's February 2025 directive for more standardized, comparable pricing.",
+          "es": "La herramienta Procedure Price Lookup no es el único recurso gubernamental de precios. La Herramienta de Consulta del Programa de Tarifas de Médicos (PFS) de CMS muestra el monto aprobado por Medicare para un código de facturación CPT o HCPCS específico según la localidad geográfica, información utilizada principalmente por proveedores y personal de facturación pero abierta al público. Por separado, todo hospital de EE. UU. debe publicar un archivo legible por máquina con sus precios estándar bajo la regla federal de Transparencia de Precios Hospitalarios. Una Regla Final revisada CY 2026 OPPS/ASC endureció esos requisitos a partir del 1 de enero de 2026, con CMS retrasando la aplicación hasta el 1 de abril de 2026, exigiendo a los hospitales usar un Identificador Nacional de Proveedor Tipo 2 y una certificación firmada que nombre a la persona que verificó los datos, en respuesta a la directiva de la Orden Ejecutiva 14221 de febrero de 2025 para precios más estandarizados y comparables."
+        },
+        {
+          "en": "Private tools fill in gaps that the government sites leave open. FAIR Health Consumer and Healthcare Bluebook both let you search by ZIP code for estimated costs across a broader range of procedures, and they work whether you have Original Medicare, Medicare Advantage, or private insurance, though their estimates are not guarantees. For Medicare Part D prescription drug prices specifically, the Medicare Plan Finder at medicare.gov is the correct tool, not the Procedure Price Lookup tool, which covers outpatient procedures only.",
+          "es": "Las herramientas privadas llenan los vacíos que dejan los sitios gubernamentales. FAIR Health Consumer y Healthcare Bluebook permiten buscar por código postal costos estimados para una gama más amplia de procedimientos, y funcionan ya sea que tenga Medicare Original, Medicare Advantage o seguro privado, aunque sus estimaciones no son garantías. Para precios de medicamentos recetados de la Parte D de Medicare específicamente, el Buscador de Planes de Medicare en medicare.gov es la herramienta correcta, no la herramienta Procedure Price Lookup, que cubre solo procedimientos ambulatorios."
+        }
+      ]
+    },
+    {
+      "heading": { "en": "How to Use the Medicare Procedure Price Lookup Tool", "es": "Cómo Usar la Herramienta Medicare Procedure Price Lookup" },
+      "paragraphs": [
+        {
+          "en": "Using the tool takes about two minutes if you already know the name of your procedure.",
+          "es": "Usar la herramienta toma unos dos minutos si ya sabe el nombre de su procedimiento."
+        }
+      ],
+      "list": [
+        { "en": "Step 1: Go to medicare.gov/procedure-price-lookup and type the procedure name or its billing code into the search box.", "es": "Paso 1: Vaya a medicare.gov/procedure-price-lookup y escriba el nombre del procedimiento o su código de facturación en el cuadro de búsqueda." },
+        { "en": "Step 2: Select the exact procedure from the list of matches that appears as you type.", "es": "Paso 2: Seleccione el procedimiento exacto de la lista de coincidencias que aparece mientras escribe." },
+        { "en": "Step 3: Compare the national average total cost and copayment shown for a hospital outpatient department against an ambulatory surgical center.", "es": "Paso 3: Compare el costo total promedio nacional y el copago mostrados para un departamento de hospital ambulatorio frente a un centro quirúrgico ambulatorio." },
+        { "en": "Step 4: Note the 2026 Part B deductible ($283) and 20% coinsurance already built into the copayment estimate.", "es": "Paso 4: Tome nota del deducible de la Parte B de 2026 ($283) y el coseguro del 20% ya incluido en la estimación del copago." },
+        { "en": "Step 5: Call the facility's billing office to confirm your specific price before scheduling, since the tool shows national averages, not local prices.", "es": "Paso 5: Llame a la oficina de facturación de la instalación para confirmar su precio específico antes de programar, ya que la herramienta muestra promedios nacionales, no precios locales." }
+      ]
+    },
+    {
+      "heading": { "en": "Cost Context: What the Numbers Actually Mean", "es": "Contexto de Costos: Qué Significan Realmente las Cifras" },
+      "paragraphs": [
+        {
+          "en": "The dollar figures in the tool connect directly to Original Medicare's standard cost-sharing rules. In 2026, Part B carries a $283 annual deductible and a $202.90 standard monthly premium, and once you meet the deductible, Original Medicare pays 80% of the Medicare-approved amount for most outpatient procedures while you pay the remaining 20% coinsurance shown in the tool. If you carry a Medigap policy, it typically covers some or all of that 20% share, which is why the tool's copay estimate (built for someone without Medigap) usually runs higher than what a Medigap policyholder actually pays.",
+          "es": "Las cifras en dólares de la herramienta se relacionan directamente con las reglas estándar de costos compartidos de Medicare Original. En 2026, la Parte B tiene un deducible anual de $283 y una prima mensual estándar de $202.90, y una vez que alcanza el deducible, Medicare Original paga el 80% del monto aprobado por Medicare para la mayoría de los procedimientos ambulatorios mientras usted paga el 20% de coseguro restante que muestra la herramienta. Si tiene una póliza Medigap, esta generalmente cubre parte o todo ese 20%, por lo que la estimación de copago de la herramienta (calculada para alguien sin Medigap) suele ser más alta que lo que realmente paga un titular de Medigap."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the Medicare Procedure Price Lookup tool?",
+        "answer": "It is a free tool at medicare.gov/procedure-price-lookup that shows the 2026 national average total cost and copayment for about 3,900 outpatient procedures, comparing a hospital outpatient department against an ambulatory surgical center. It only reflects Original Medicare's fee-for-service payment rates, and CMS has updated it annually since it launched in 2018."
+      },
+      {
+        "question": "Does the Medicare Procedure Price Lookup tool work for Medicare Advantage plans?",
+        "answer": "No. It only shows Original Medicare's standard 20% Part B coinsurance and national average payment rates. Medicare Advantage plans set their own negotiated rates and cost sharing, so the tool's figures will not match your Medicare Advantage copay. Call your plan's member services line or use your plan's own cost-estimator tool instead."
+      },
+      {
+        "question": "What does the tool not include?",
+        "answer": "The tool leaves out anesthesia charges, the surgeon's or anesthesiologist's separate professional fee, lab and imaging charges billed separately, and your specific hospital's actual negotiated price, since it only shows 2026 national averages. It also does not adjust for Medigap, Medicare Advantage, or Medicaid cost sharing."
+      },
+      {
+        "question": "How is my out-of-pocket cost calculated in the tool?",
+        "answer": "The copayment shown assumes you have already met the 2026 Part B deductible of $283 and reflects Original Medicare's standard 20% coinsurance, calculated for a beneficiary with no Medigap coverage. If you have Medigap, your actual cost is usually lower because Medigap typically covers some or all of that 20% share."
+      },
+      {
+        "question": "What's the difference between the Procedure Price Lookup tool and the Physician Fee Schedule Look-up Tool?",
+        "answer": "The Procedure Price Lookup tool compares patient costs for about 3,900 outpatient procedures at a hospital outpatient department versus an ambulatory surgical center. CMS's separate Physician Fee Schedule (PFS) Look-up Tool shows the Medicare-approved payment amount for a specific CPT or HCPCS billing code by geographic locality, and it is used mainly by providers and billing staff."
+      },
+      {
+        "question": "Do hospitals have to post their own prices too?",
+        "answer": "Yes. Under the federal Hospital Price Transparency rule, every U.S. hospital must publish a machine-readable file of its standard charges, including payer-specific negotiated rates. A revised CY 2026 OPPS/ASC Final Rule tightened those requirements starting January 1, 2026, with CMS enforcement beginning April 1, 2026, including a required Type 2 National Provider Identifier and a signed attestation."
+      },
+      {
+        "question": "Are there other price-lookup tools besides Medicare's?",
+        "answer": "Yes. FAIR Health Consumer and Healthcare Bluebook let you search by ZIP code for estimated costs across a broader range of procedures than the Medicare tool covers, and they work for Original Medicare, Medicare Advantage, and private insurance alike, though their figures are estimates, not guarantees of your final bill."
+      },
+      {
+        "question": "Is the price shown in the tool exactly what I will pay?",
+        "answer": "No. The tool shows 2026 national averages, not your local hospital's or ASC's actual price. A Brookings Institution review found that for nearly 90% of the roughly 3,900 procedures covered, the average copayment gap between the two settings is under $500, so always confirm your specific price with the facility's billing office."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Qué es la herramienta Medicare Procedure Price Lookup?",
+        "answer": "Es una herramienta gratuita en medicare.gov/procedure-price-lookup que muestra el costo total promedio nacional y el copago de 2026 para unos 3,900 procedimientos ambulatorios, comparando un departamento de hospital ambulatorio con un centro quirúrgico ambulatorio. Solo refleja las tarifas de pago por servicio de Medicare Original, y CMS la actualiza anualmente desde su lanzamiento en 2018."
+      },
+      {
+        "question": "¿La herramienta Medicare Procedure Price Lookup funciona para planes Medicare Advantage?",
+        "answer": "No. Solo muestra el coseguro estándar del 20% de la Parte B de Medicare Original y las tarifas de pago promedio nacional. Los planes Medicare Advantage establecen sus propias tarifas negociadas y costos compartidos, por lo que las cifras de la herramienta no coincidirán con su copago de Medicare Advantage. Llame a la línea de servicios para miembros de su plan."
+      },
+      {
+        "question": "¿Qué no incluye la herramienta?",
+        "answer": "La herramienta no incluye cargos de anestesia, el honorario profesional separado del cirujano o anestesiólogo, cargos de laboratorio e imágenes facturados por separado, ni el precio real negociado de su hospital específico, ya que solo muestra promedios nacionales de 2026. Tampoco se ajusta a Medigap, Medicare Advantage o Medicaid."
+      },
+      {
+        "question": "¿Cómo se calcula mi costo de bolsillo en la herramienta?",
+        "answer": "El copago mostrado asume que ya alcanzó el deducible de la Parte B de 2026 de $283 y refleja el coseguro estándar del 20% de Medicare Original, calculado para un beneficiario sin cobertura Medigap. Si tiene Medigap, su costo real suele ser menor porque Medigap generalmente cubre parte o todo ese 20%."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre la herramienta Procedure Price Lookup y la Herramienta de Consulta del Programa de Tarifas de Médicos?",
+        "answer": "La herramienta Procedure Price Lookup compara los costos del paciente para unos 3,900 procedimientos ambulatorios en un departamento de hospital ambulatorio frente a un centro quirúrgico ambulatorio. La Herramienta de Consulta del Programa de Tarifas de Médicos (PFS) de CMS muestra el monto aprobado por Medicare para un código de facturación CPT o HCPCS específico según la localidad."
+      },
+      {
+        "question": "¿Los hospitales también deben publicar sus propios precios?",
+        "answer": "Sí. Bajo la regla federal de Transparencia de Precios Hospitalarios, todo hospital de EE. UU. debe publicar un archivo legible por máquina con sus precios estándar, incluidas las tarifas negociadas por pagador. Una Regla Final revisada CY 2026 OPPS/ASC endureció esos requisitos desde el 1 de enero de 2026, con aplicación de CMS a partir del 1 de abril de 2026."
+      },
+      {
+        "question": "¿Existen otras herramientas de consulta de precios además de la de Medicare?",
+        "answer": "Sí. FAIR Health Consumer y Healthcare Bluebook permiten buscar por código postal costos estimados para una gama más amplia de procedimientos que la herramienta de Medicare, y funcionan para Medicare Original, Medicare Advantage y seguro privado, aunque sus cifras son estimaciones, no garantías de su factura final."
+      },
+      {
+        "question": "¿El precio que muestra la herramienta es exactamente lo que pagaré?",
+        "answer": "No. La herramienta muestra promedios nacionales de 2026, no el precio real de su hospital o ASC local. Un análisis del Brookings Institution encontró que para casi el 90% de los procedimientos cubiertos, la diferencia de copago promedio entre ambos entornos es menor a $500, así que siempre confirme su precio específico con la oficina de facturación."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Analyze Your Medical Bill", "es": "Analice Su Factura Médica" },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": { "en": "Does Medicare Cover Cataract Surgery?", "es": "¿Medicare Cubre la Cirugía de Cataratas?" },
+      "href": "/qa/does-medicare-cover-cataract-surgery"
+    },
+    {
+      "label": { "en": "Medigap vs. Medicare Advantage", "es": "Medigap vs. Medicare Advantage" },
+      "href": "/qa/medigap-vs-medicare-advantage"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicare.gov: Procedure Price Lookup for Outpatient Services",
+      "url": "https://www.medicare.gov/procedure-price-lookup/",
+      "note": {
+        "en": "Official CMS consumer tool comparing 2026 national average outpatient procedure costs at hospital outpatient departments versus ambulatory surgical centers.",
+        "es": "Herramienta oficial de CMS para consumidores que compara los costos promedio nacionales de 2026 de procedimientos ambulatorios en departamentos de hospital frente a centros quirúrgicos ambulatorios."
+      }
+    },
+    {
+      "name": "CMS: Physician Fee Schedule (PFS) Look-Up Tool Overview",
+      "url": "https://www.cms.gov/medicare/physician-fee-schedule/search/overview",
+      "note": {
+        "en": "CMS overview of the separate Physician Fee Schedule Look-up Tool, used to find Medicare-approved amounts by CPT/HCPCS code and locality.",
+        "es": "Resumen de CMS sobre la Herramienta de Consulta del Programa de Tarifas de Médicos, usada para encontrar montos aprobados por Medicare según código CPT/HCPCS y localidad."
+      }
+    },
+    {
+      "name": "CMS: Hospital Price Transparency",
+      "url": "https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency",
+      "note": {
+        "en": "CMS hub for the federal Hospital Price Transparency rule, including the CY 2026 OPPS/ASC Final Rule requirements taking effect in 2026.",
+        "es": "Centro de CMS sobre la regla federal de Transparencia de Precios Hospitalarios, incluidos los requisitos de la Regla Final CY 2026 OPPS/ASC que entran en vigor en 2026."
+      }
+    },
+    {
+      "name": "Brookings Institution: Procedure Price Lookup, A Step Toward Transparency in the Health Care System",
+      "url": "https://www.brookings.edu/articles/procedure-price-lookup-a-step-toward-transparency-in-the-health-care-system/",
+      "note": {
+        "en": "Independent analysis of the Medicare Procedure Price Lookup tool's strengths and limitations, including the finding that most procedures show under a $500 copayment gap between settings.",
+        "es": "Análisis independiente de las fortalezas y limitaciones de la herramienta Medicare Procedure Price Lookup, incluido el hallazgo de que la mayoría de los procedimientos muestran una diferencia de copago menor a $500 entre entornos."
+      }
+    }
+  ],
+
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": ["medicare price lookup tool", "medicare procedure price lookup", "medicare cost lookup tool 2026", "medicare.gov procedure price lookup", "medicare outpatient cost comparison tool"],
+    "es": ["herramienta de consulta de precios de medicare", "consulta de precios de procedimientos medicare", "herramienta de costos de medicare 2026", "comparador de costos medicare.gov", "comparación de costos ambulatorios de medicare"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
