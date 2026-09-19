@@ -1,0 +1,381 @@
+{
+  "slug": "medicare-premiums-deductible",
+  "subtype": "coverage",
+  "question": {
+    "en": "Are Medicare Premiums Deductible in 2026?",
+    "es": "¿Son Deducibles las Primas de Medicare en 2026?"
+  },
+  "shortAnswer": {
+    "en": "Depends: deductible if self-employed or itemizing past 7.5% of AGI.",
+    "es": "Depende: son deducibles si es trabajador independiente o detalla deducciones por encima del 7.5% del AGI."
+  },
+  "fullAnswer": {
+    "en": "Medicare premiums are deductible in 2026, but the rules split along self-employment status. Self-employed taxpayers can deduct 100% of Part B, Part D, Medigap, and Medicare Advantage premiums above the line on Schedule 1, with no itemizing required and no 7.5% AGI floor. Everyone else can only deduct Medicare premiums by itemizing on Schedule A, and only the portion of total medical expenses above 7.5% of adjusted gross income counts. HSA funds can also pay Part B, Part D, and Medicare Advantage premiums tax-free, though not Medigap.",
+    "es": "Las primas de Medicare son deducibles en 2026, pero las reglas dependen de su situación laboral. Los trabajadores independientes pueden deducir el 100% de las primas de la Parte B, la Parte D, Medigap y Medicare Advantage como una deducción por encima de la línea en el Anexo 1, sin necesidad de detallar deducciones y sin el límite del 7.5% del AGI. Todos los demás solo pueden deducir las primas de Medicare si detallan deducciones en el Anexo A, y solo la parte de los gastos médicos totales que supere el 7.5% del ingreso bruto ajustado cuenta. Los fondos de una HSA también pueden pagar las primas de la Parte B, la Parte D y Medicare Advantage libres de impuestos, aunque no Medigap."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Premium Tax Deductibility",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "pageType": "coverage",
+  "lastUpdated": "2026-09-16",
+  "readingTime": "8 min read",
+
+  "meta": {
+    "title": {
+      "en": "Are Medicare Premiums Tax Deductible in 2026? | CoveredUSA",
+      "es": "¿Son Deducibles de Impuestos las Primas de Medicare en 2026? | CoveredUSA"
+    },
+    "description": {
+      "en": "Medicare premiums are deductible in 2026 if you itemize past the 7.5% AGI threshold or claim the self-employed health insurance deduction.",
+      "es": "Las primas de Medicare son deducibles en 2026 si detalla deducciones por encima del umbral del 7.5% del AGI o si es trabajador independiente."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Are Medicare Premiums Tax Deductible? (2026)",
+      "es": "¿Son Deducibles de Impuestos las Primas de Medicare? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "The 2026 standard Medicare Part B premium is $202.90 a month, and millions of enrollees want to know whether that money comes back at tax time. The short answer depends entirely on two things: whether you are self-employed and whether you itemize deductions instead of taking the standard deduction.",
+      "es": "La prima estándar de la Parte B de Medicare en 2026 es de $202.90 al mes, y millones de afiliados quieren saber si ese dinero se recupera al momento de declarar impuestos. La respuesta corta depende de dos factores: si usted es trabajador independiente y si detalla deducciones en lugar de tomar la deducción estándar."
+    },
+    {
+      "en": "Two filing paths determine the outcome: self-employment status and whether you itemize. This 2026 guide walks through the self-employed health insurance deduction on Schedule 1, the 7.5% AGI threshold on Schedule A, HSA withdrawal rules, and the exact steps to claim the deduction. For income-based ways to lower your premium instead of deducting it, see Extra Help eligibility and Medicare Savings Programs.",
+      "es": "Dos caminos de declaración determinan el resultado: la situación de trabajador independiente y si detalla deducciones. Esta guía de 2026 explica la deducción de seguro médico para trabajadores independientes en el Anexo 1, el umbral del 7.5% del AGI en el Anexo A, las reglas de retiro de una HSA y los pasos exactos para reclamar la deducción. Para formas de reducir su prima según sus ingresos en lugar de deducirla, consulte la Ayuda Adicional y los Programas de Ahorros de Medicare."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Taxpayer Scenario (2026)", "Can You Deduct Medicare Premiums?", "How the Deduction Works", "2026 Limit or Threshold"],
+      "es": ["Escenario del contribuyente (2026)", "¿Puede deducir las primas de Medicare?", "Cómo funciona la deducción", "Límite o umbral 2026"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Self-employed (sole proprietor, partner, or more-than-2% S-corp shareholder)", "es": "Trabajador independiente (dueño único, socio, o accionista de más del 2% en una S-corp)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "Above-the-line deduction on Schedule 1, Line 17; no itemizing needed", "es": "Deducción por encima de la línea en el Anexo 1, línea 17; no necesita detallar deducciones" },
+          { "en": "Capped at your net self-employment income for 2026", "es": "Limitado a su ingreso neto de trabajo independiente en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Itemizing taxpayer, not self-employed", "es": "Contribuyente que detalla deducciones, no independiente" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Itemize on Schedule A; only medical expenses above the threshold count", "es": "Detalle en el Anexo A; solo cuentan los gastos médicos por encima del umbral" },
+          { "en": "Only the amount above 7.5% of AGI in 2026 is deductible", "es": "Solo es deducible el monto que supera el 7.5% del AGI en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Standard-deduction taxpayer, not self-employed", "es": "Contribuyente con deducción estándar, no independiente" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" },
+          { "en": "Medicare premiums are not separately deductible without itemizing", "es": "Las primas de Medicare no son deducibles por separado sin detallar deducciones" },
+          { "en": "2026 standard deduction is $16,100 single / $32,200 married filing jointly instead", "es": "La deducción estándar 2026 es de $16,100 soltero / $32,200 casado declarando en conjunto" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "HSA holder using an existing HSA balance", "es": "Titular de HSA que usa un saldo existente" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Tax-free HSA withdrawal covers Part B, Part D, and Medicare Advantage premiums, but not Medigap", "es": "El retiro libre de impuestos de la HSA cubre primas de la Parte B, Parte D y Medicare Advantage, pero no Medigap" },
+          { "en": "Limited to your HSA balance; no new HSA contributions once Medicare enrollment begins", "es": "Limitado a su saldo de HSA; no puede hacer nuevas aportaciones tras inscribirse en Medicare" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Retiree with an employer retiree HRA", "es": "Jubilado con una HRA de jubilados del empleador" },
+          { "value": { "en": "Partial", "es": "Parcial" }, "status": "partial" },
+          { "en": "Premiums reimbursed tax-free through the HRA cannot also be claimed as an itemized deduction", "es": "Las primas reembolsadas libres de impuestos por la HRA no pueden reclamarse también como deducción detallada" },
+          { "en": "Limited to the employer's 2026 HRA allowance amount", "es": "Limitado al monto de asignación de la HRA del empleador en 2026" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Medicare Part A premiums (for the roughly 1% of enrollees without 40 quarters of work history) and IRMAA surcharges on Part B and Part D follow the same rules as the standard Part B premium in each scenario above.",
+      "es": "Las primas de la Parte A de Medicare (para el aproximadamente 1% de afiliados sin 40 trimestres de historial laboral) y los recargos IRMAA de la Parte B y la Parte D siguen las mismas reglas que la prima estándar de la Parte B en cada escenario anterior."
+    },
+    "source": "IRS Publication 502 (2026), IRS Schedule 1 Instructions (2026), IRS Publication 969 (2026)"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Are Medicare Premiums Deductible in 2026?",
+        "es": "Respuesta Directa: ¿Son Deducibles las Primas de Medicare en 2026?"
+      },
+      "paragraphs": [
+        {
+          "en": "Depends on your tax situation, but the split comes down to one factor: self-employment status. Self-employed taxpayers can deduct 100% of Medicare Part B, Part D, Medigap, and Medicare Advantage premiums above the line on Schedule 1, with no itemizing required. Everyone else can only deduct Medicare premiums by itemizing on Schedule A, and only the portion of total medical expenses that exceeds 7.5% of adjusted gross income in 2026 counts toward the deduction.",
+          "es": "Depende de su situación fiscal, pero la diferencia se reduce a un factor: la situación de trabajador independiente. Los trabajadores independientes pueden deducir el 100% de las primas de la Parte B, la Parte D, Medigap y Medicare Advantage por encima de la línea en el Anexo 1, sin necesidad de detallar deducciones. Todos los demás solo pueden deducir las primas de Medicare si detallan deducciones en el Anexo A, y solo la parte de los gastos médicos totales que supere el 7.5% del ingreso bruto ajustado en 2026 cuenta para la deducción."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Which Medicare Premiums Count as Deductible Medical Expenses",
+        "es": "Qué Primas de Medicare Cuentan Como Gastos Médicos Deducibles"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare premiums qualify as deductible medical expenses under Internal Revenue Code Section 213(d), the same provision that covers doctor visits, prescription drugs, and long-term care insurance. Part B premiums ($202.90 a month for most enrollees in 2026), Part D premiums, Medigap premiums, and Medicare Advantage premiums all count. Original Medicare enrollees who owe a monthly Part A premium ($311 or $565 in 2026, depending on work history) because they lack 40 quarters of work credits can deduct that premium too.",
+          "es": "Las primas de Medicare califican como gastos médicos deducibles bajo la Sección 213(d) del Código de Impuestos Internos, la misma disposición que cubre visitas al médico, medicamentos recetados y seguro de cuidado a largo plazo. Las primas de la Parte B ($202.90 al mes para la mayoría de los afiliados en 2026), las primas de la Parte D, las primas de Medigap y las primas de Medicare Advantage cuentan. Los afiliados a Medicare Original que deben una prima mensual de la Parte A ($311 o $565 en 2026, según su historial laboral) por no tener 40 trimestres de créditos laborales también pueden deducir esa prima."
+        },
+        {
+          "en": "Income-Related Monthly Adjustment Amount (IRMAA) surcharges on Medicare Part B and Medicare Part D also count as deductible premium costs in 2026, since the IRS treats the surcharge as part of the premium rather than a separate penalty. Long-term care insurance premiums are deductible too, subject to age-based dollar caps that adjust each year, and they stack with Medicare premiums when you calculate the 7.5% AGI threshold.",
+          "es": "Los recargos del Monto de Ajuste Mensual Relacionado con el Ingreso (IRMAA) de la Parte B y la Parte D también cuentan como costos de prima deducibles en 2026, ya que el IRS trata el recargo como parte de la prima y no como una penalización aparte. Las primas de seguro de cuidado a largo plazo también son deducibles, sujetas a límites en dólares según la edad que se ajustan cada año, y se suman a las primas de Medicare al calcular el umbral del 7.5% del AGI."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The Self-Employed Health Insurance Deduction for Medicare Premiums",
+        "es": "La Deducción de Seguro Médico para Trabajadores Independientes y las Primas de Medicare"
+      },
+      "paragraphs": [
+        {
+          "en": "Self-employed sole proprietors, partners, and more-than-2%-owners of an S corporation can deduct Medicare premiums as an above-the-line adjustment to income on Schedule 1, Line 17 of Form 1040. The deduction reduces adjusted gross income directly, so there is no need to itemize and the 7.5% AGI floor that applies to Schedule A never comes into play.",
+          "es": "Los trabajadores independientes que son dueños únicos, socios, o accionistas de más del 2% de una S-corp pueden deducir las primas de Medicare como un ajuste al ingreso por encima de la línea en el Anexo 1, línea 17 del Formulario 1040. La deducción reduce directamente el ingreso bruto ajustado, por lo que no es necesario detallar deducciones y el límite del 7.5% del AGI del Anexo A nunca aplica."
+        }
+      ],
+      "list": [
+        { "en": "The deduction cannot exceed your net self-employment income for 2026.", "es": "La deducción no puede superar su ingreso neto de trabajo independiente en 2026." },
+        { "en": "You, and your spouse if filing jointly, must not be eligible for subsidized coverage through an employer plan for the months claimed.", "es": "Usted, y su cónyuge si declara en conjunto, no deben ser elegibles para cobertura subsidiada de un plan de empleador durante los meses reclamados." },
+        { "en": "Covers Part B, Part D, Medigap, and Medicare Advantage premiums for you, your spouse, and your dependents.", "es": "Cubre las primas de la Parte B, la Parte D, Medigap y Medicare Advantage para usted, su cónyuge y sus dependientes." },
+        { "en": "S corporation shareholders who own more than 2% claim it through wages reported on Form W-2 plus their personal Form 1040, not directly on the corporate return.", "es": "Los accionistas de una S-corp que poseen más del 2% la reclaman mediante los salarios reportados en el Formulario W-2 más su Formulario 1040 personal, no directamente en la declaración corporativa." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Itemizing on Schedule A: the 7.5% AGI Threshold in 2026",
+        "es": "Detallar Deducciones en el Anexo A: el Umbral del 7.5% del AGI en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Retirees who are not self-employed can only deduct Medicare premiums by itemizing on Schedule A instead of taking the 2026 standard deduction ($16,100 single, $32,200 married filing jointly, $24,150 head of household). Total medical and dental expenses, including all Medicare premiums, must exceed 7.5% of adjusted gross income before any of it is deductible; only the amount above that threshold counts.",
+          "es": "Los jubilados que no son trabajadores independientes solo pueden deducir las primas de Medicare si detallan deducciones en el Anexo A en lugar de tomar la deducción estándar de 2026 ($16,100 soltero, $32,200 casado declarando en conjunto, $24,150 cabeza de familia). Los gastos médicos y dentales totales, incluidas todas las primas de Medicare, deben superar el 7.5% del ingreso bruto ajustado antes de que algo sea deducible; solo cuenta el monto por encima de ese umbral."
+        },
+        {
+          "en": "A retiree with $60,000 in 2026 adjusted gross income would need more than $4,500 in combined medical costs, Medicare premiums included, before the first deductible dollar appears. Taxpayers 65 or older also get an additional standard deduction ($2,050 single, $1,650 per qualifying spouse for 2026), which raises the bar for itemizing to make sense in the first place.",
+          "es": "Un jubilado con $60,000 de ingreso bruto ajustado en 2026 necesitaría más de $4,500 en costos médicos combinados, incluidas las primas de Medicare, antes de que aparezca el primer dólar deducible. Los contribuyentes de 65 años o más también reciben una deducción estándar adicional ($2,050 soltero, $1,650 por cónyuge calificado en 2026), lo cual eleva el punto en el que detallar deducciones tiene sentido."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Using an HSA to Pay Medicare Premiums Tax-Free",
+        "es": "Usar una HSA para Pagar Primas de Medicare Libres de Impuestos"
+      },
+      "paragraphs": [
+        {
+          "en": "Health Savings Account holders who enroll in Medicare can withdraw existing HSA funds tax-free to pay Part B, Part D, and Medicare Advantage premiums, even though new HSA contributions stop the month Medicare coverage begins. Medigap premiums are the one exception: the IRS does not allow tax-free HSA withdrawals for Medigap, so those premiums must go through the itemized-deduction or self-employed route instead.",
+          "es": "Los titulares de una Cuenta de Ahorros para la Salud (HSA) que se inscriben en Medicare pueden retirar fondos existentes de la HSA libres de impuestos para pagar primas de la Parte B, la Parte D y Medicare Advantage, aunque las nuevas aportaciones a la HSA se detienen el mes en que comienza la cobertura de Medicare. Las primas de Medigap son la única excepción: el IRS no permite retiros libres de impuestos de la HSA para Medigap, por lo que esas primas deben pasar por la deducción detallada o la ruta de trabajador independiente."
+        },
+        {
+          "en": "The 2026 HSA contribution limits are $4,400 for self-only coverage and $8,750 for family coverage, but those limits only matter for people who have not yet enrolled in Medicare. Building an HSA balance before enrolling gives you a tax-free pool to draw from for Medicare premiums for years afterward.",
+          "es": "Los límites de aportación a la HSA en 2026 son $4,400 para cobertura individual y $8,750 para cobertura familiar, pero esos límites solo importan para personas que aún no se han inscrito en Medicare. Acumular un saldo en la HSA antes de inscribirse le da un fondo libre de impuestos del cual retirar para pagar primas de Medicare durante años después."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Claim the Medicare Premium Deduction",
+        "es": "Cómo Reclamar la Deducción de las Primas de Medicare"
+      },
+      "paragraphs": [
+        {
+          "en": "Claiming the deduction correctly starts with confirming which category applies before opening a tax form. Two paths exist for the 2026 tax year, filed in early 2027: the above-the-line self-employed deduction or the itemized Schedule A deduction.",
+          "es": "Reclamar la deducción correctamente comienza por confirmar qué categoría aplica antes de abrir un formulario de impuestos. Existen dos caminos para el año fiscal 2026, declarado a principios de 2027: la deducción por encima de la línea para trabajadores independientes o la deducción detallada del Anexo A."
+        }
+      ],
+      "list": [
+        { "en": "Step 1: Total your 2026 Medicare premium payments using your Social Security benefit statement (Form SSA-1099) and Medicare Advantage or Part D billing records.", "es": "Paso 1: Sume sus pagos de primas de Medicare de 2026 usando su estado de beneficios del Seguro Social (Formulario SSA-1099) y los registros de facturación de Medicare Advantage o la Parte D." },
+        { "en": "Step 2: Determine your path. Self-employed filers use Schedule 1, Line 17. Non-self-employed filers itemize on Schedule A, Line 1.", "es": "Paso 2: Determine su camino. Los declarantes independientes usan el Anexo 1, línea 17. Los que no son independientes detallan en el Anexo A, línea 1." },
+        { "en": "Step 3: Add other qualifying medical costs (dental, vision, long-term care premiums) if itemizing, then subtract 7.5% of your 2026 AGI.", "es": "Paso 3: Agregue otros costos médicos elegibles (dental, visión, primas de cuidado a largo plazo) si detalla deducciones, y luego reste el 7.5% de su AGI de 2026." },
+        { "en": "Step 4: File Form 1040 with the correct schedule attached by April 15, 2027, or by October 15, 2027 with a filed extension.", "es": "Paso 4: Presente el Formulario 1040 con el anexo correcto antes del 15 de abril de 2027, o antes del 15 de octubre de 2027 con una extensión presentada." }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Alternatives if You Don't Qualify to Deduct Medicare Premiums",
+        "es": "Alternativas si No Califica para Deducir las Primas de Medicare"
+      },
+      "paragraphs": [
+        {
+          "en": "Taxpayers who take the 2026 standard deduction and are not self-employed still have options for lowering the real cost of Medicare premiums outside the tax code.",
+          "es": "Los contribuyentes que toman la deducción estándar de 2026 y no son trabajadores independientes todavía tienen opciones para reducir el costo real de las primas de Medicare fuera del código fiscal."
+        }
+      ],
+      "list": [
+        { "en": "Bunch medical expenses into one tax year (schedule elective procedures, stock up on prescriptions) to clear the 7.5% AGI threshold and itemize that year only.", "es": "Agrupe gastos médicos en un solo año fiscal (programe procedimientos electivos, compre medicamentos por adelantado) para superar el umbral del 7.5% del AGI y detallar deducciones solo ese año." },
+        { "en": "Apply for a Medicare Savings Program (MSP) through your state Medicaid office, which can pay your Part B premium directly if your income qualifies.", "es": "Solicite un Programa de Ahorros de Medicare (MSP) a través de la oficina estatal de Medicaid, que puede pagar directamente su prima de la Parte B si su ingreso califica." },
+        { "en": "Apply for Extra Help (the Part D Low-Income Subsidy) to reduce or eliminate Part D premiums and cost-sharing based on your 2026 income.", "es": "Solicite Ayuda Adicional (el subsidio de bajos ingresos de la Parte D) para reducir o eliminar las primas y los costos compartidos de la Parte D según su ingreso de 2026." },
+        { "en": "Contribute to an HSA before enrolling in Medicare so the balance is available tax-free for premiums later.", "es": "Aporte a una HSA antes de inscribirse en Medicare para que el saldo esté disponible libre de impuestos para primas más adelante." },
+        { "en": "Ask a former employer about a retiree Health Reimbursement Arrangement (HRA), which can reimburse Medicare premiums tax-free without an itemized deduction.", "es": "Pregunte a un antiguo empleador sobre una HRA de jubilados, que puede reembolsar primas de Medicare libres de impuestos sin necesidad de una deducción detallada." }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Can self-employed people deduct Medicare premiums in 2026?",
+        "answer": "Yes. Self-employed sole proprietors, partners, and more-than-2% S corporation shareholders can deduct 100% of Medicare Part B, Part D, Medigap, and Medicare Advantage premiums as an above-the-line deduction on Schedule 1, Line 17. No itemizing is required and the 7.5% AGI floor does not apply. The deduction cannot exceed your net self-employment income for 2026, and you cannot claim it for any month you were eligible for subsidized employer coverage."
+      },
+      {
+        "question": "Can I deduct my Medicare Part B premium if I take the standard deduction?",
+        "answer": "No. If you take the 2026 standard deduction ($16,100 single, $32,200 married filing jointly) instead of itemizing, you cannot separately deduct your Part B premium. Medicare premiums only become deductible when you itemize on Schedule A and your total medical expenses exceed 7.5% of your adjusted gross income, or when you qualify for the self-employed health insurance deduction."
+      },
+      {
+        "question": "Are Medigap premiums tax deductible in 2026?",
+        "answer": "Yes, under the same rules as other Medicare premiums. Medigap premiums count as qualified medical expenses on Schedule A if you itemize and exceed the 7.5% AGI threshold, and self-employed taxpayers can deduct them above the line on Schedule 1. The one exception is HSA funds: the IRS does not allow tax-free HSA withdrawals to pay Medigap premiums, unlike Part B, Part D, and Medicare Advantage."
+      },
+      {
+        "question": "Can I use my HSA to pay Medicare premiums?",
+        "answer": "Yes, for Part B, Part D, and Medicare Advantage premiums, once you are enrolled in Medicare. Withdrawals from an existing HSA balance to pay these premiums are tax-free. You cannot contribute new money to an HSA once Medicare coverage starts, and Medigap premiums are not an eligible HSA expense, so those still require the itemized or self-employed deduction route."
+      },
+      {
+        "question": "What is the 7.5% AGI threshold for medical expense deductions?",
+        "answer": "The 7.5% AGI threshold is the floor the IRS applies to itemized medical expenses: only the portion of your total medical costs, including Medicare premiums, that exceeds 7.5% of your adjusted gross income is deductible on Schedule A. For a retiree with $60,000 in 2026 AGI, the first $4,500 of medical costs is not deductible; only spending above that amount counts."
+      },
+      {
+        "question": "Can I deduct my spouse's Medicare premiums?",
+        "answer": "Yes. If you are self-employed, you can include your spouse's Medicare Part B, Part D, Medigap, and Medicare Advantage premiums in your above-the-line deduction on Schedule 1, as long as neither of you was eligible for subsidized employer coverage. If you itemize instead, you can include your spouse's premiums with your own medical expenses on Schedule A when calculating whether you clear the 7.5% AGI threshold."
+      },
+      {
+        "question": "Is the Medicare Part A premium deductible if I have to pay for it?",
+        "answer": "Yes. Most people do not pay a Part A premium because they have 40 quarters of Medicare-taxed work history, but people with 30 to 39 quarters pay a reduced 2026 premium of $311 a month, and those with fewer than 30 quarters pay the full 2026 premium of $565 a month. That premium is deductible under the same rules as Part B: above the line if self-employed, or itemized on Schedule A above the 7.5% AGI threshold otherwise."
+      },
+      {
+        "question": "Does a Medicare Advantage premium count as a deductible medical expense?",
+        "answer": "Yes. Medicare Advantage premiums are treated the same as Original Medicare premiums for tax purposes: deductible above the line if you are self-employed, deductible on Schedule A if you itemize and clear the 7.5% AGI threshold, and eligible for tax-free HSA withdrawals if you have an existing HSA balance. Some Medicare Advantage plans have a $0 premium in 2026, in which case there is nothing to deduct."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Pueden los trabajadores independientes deducir las primas de Medicare en 2026?",
+        "answer": "Sí. Los dueños únicos, socios y accionistas de más del 2% de una S-corp que son trabajadores independientes pueden deducir el 100% de las primas de la Parte B, la Parte D, Medigap y Medicare Advantage como una deducción por encima de la línea en el Anexo 1, línea 17. No se necesita detallar deducciones y el límite del 7.5% del AGI no aplica. La deducción no puede superar su ingreso neto de trabajo independiente en 2026, y no puede reclamarla por meses en los que era elegible para cobertura subsidiada de un empleador."
+      },
+      {
+        "question": "¿Puedo deducir mi prima de la Parte B de Medicare si tomo la deducción estándar?",
+        "answer": "No. Si toma la deducción estándar de 2026 ($16,100 soltero, $32,200 casado declarando en conjunto) en lugar de detallar deducciones, no puede deducir su prima de la Parte B por separado. Las primas de Medicare solo son deducibles cuando detalla deducciones en el Anexo A y sus gastos médicos totales superan el 7.5% de su ingreso bruto ajustado, o cuando califica para la deducción de seguro médico de trabajadores independientes."
+      },
+      {
+        "question": "¿Son deducibles de impuestos las primas de Medigap en 2026?",
+        "answer": "Sí, bajo las mismas reglas que otras primas de Medicare. Las primas de Medigap cuentan como gastos médicos calificados en el Anexo A si detalla deducciones y supera el umbral del 7.5% del AGI, y los trabajadores independientes pueden deducirlas por encima de la línea en el Anexo 1. La única excepción son los fondos de la HSA: el IRS no permite retiros libres de impuestos de la HSA para pagar primas de Medigap, a diferencia de la Parte B, la Parte D y Medicare Advantage."
+      },
+      {
+        "question": "¿Puedo usar mi HSA para pagar primas de Medicare?",
+        "answer": "Sí, para las primas de la Parte B, la Parte D y Medicare Advantage, una vez que esté inscrito en Medicare. Los retiros de un saldo existente de la HSA para pagar estas primas son libres de impuestos. No puede aportar dinero nuevo a una HSA una vez que comienza su cobertura de Medicare, y las primas de Medigap no son un gasto elegible de la HSA, por lo que aún requieren la ruta de deducción detallada o de trabajador independiente."
+      },
+      {
+        "question": "¿Qué es el umbral del 7.5% del AGI para las deducciones de gastos médicos?",
+        "answer": "El umbral del 7.5% del AGI es el piso que el IRS aplica a los gastos médicos detallados: solo es deducible en el Anexo A la parte de sus costos médicos totales, incluidas las primas de Medicare, que supere el 7.5% de su ingreso bruto ajustado. Para un jubilado con $60,000 de AGI en 2026, los primeros $4,500 de costos médicos no son deducibles; solo cuenta el gasto por encima de ese monto."
+      },
+      {
+        "question": "¿Puedo deducir las primas de Medicare de mi cónyuge?",
+        "answer": "Sí. Si es trabajador independiente, puede incluir las primas de la Parte B, la Parte D, Medigap y Medicare Advantage de su cónyuge en su deducción por encima de la línea en el Anexo 1, siempre que ninguno de los dos fuera elegible para cobertura subsidiada de un empleador. Si detalla deducciones en su lugar, puede incluir las primas de su cónyuge junto con sus propios gastos médicos en el Anexo A al calcular si supera el umbral del 7.5% del AGI."
+      },
+      {
+        "question": "¿Es deducible la prima de la Parte A de Medicare si tengo que pagarla?",
+        "answer": "Sí. La mayoría de las personas no pagan una prima de la Parte A porque tienen 40 trimestres de historial laboral gravado por Medicare, pero las personas con 30 a 39 trimestres pagan una prima reducida de 2026 de $311 al mes, y quienes tienen menos de 30 trimestres pagan la prima completa de 2026 de $565 al mes. Esa prima es deducible bajo las mismas reglas que la Parte B: por encima de la línea si es independiente, o detallada en el Anexo A por encima del umbral del 7.5% del AGI en caso contrario."
+      },
+      {
+        "question": "¿Cuenta una prima de Medicare Advantage como gasto médico deducible?",
+        "answer": "Sí. Las primas de Medicare Advantage se tratan igual que las primas de Medicare Original para efectos fiscales: deducibles por encima de la línea si es trabajador independiente, deducibles en el Anexo A si detalla deducciones y supera el umbral del 7.5% del AGI, y elegibles para retiros libres de impuestos de la HSA si tiene un saldo existente. Algunos planes Medicare Advantage tienen una prima de $0 en 2026, en cuyo caso no hay nada que deducir."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    { "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" }, "href": "/screener" },
+    { "label": { "en": "Extra Help (Part D) Eligibility", "es": "Elegibilidad para Ayuda Adicional (Parte D)" }, "href": "/qa/extra-help-eligibility" },
+    { "label": { "en": "Medicaid vs. Medicare Savings Programs", "es": "Medicaid vs. Programas de Ahorros de Medicare" }, "href": "/qa/medicaid-vs-medicare-savings-program" }
+  ],
+
+  "sources": [
+    {
+      "name": "IRS: Publication 502, Medical and Dental Expenses (2026)",
+      "url": "https://www.irs.gov/publications/p502",
+      "note": {
+        "en": "Official IRS guidance on which medical expenses, including Medicare premiums, qualify for the itemized deduction and the 7.5% AGI threshold.",
+        "es": "Guía oficial del IRS sobre qué gastos médicos, incluidas las primas de Medicare, califican para la deducción detallada y el umbral del 7.5% del AGI."
+      }
+    },
+    {
+      "name": "IRS: Deducting Health Insurance Premiums If You're Self-Employed",
+      "url": "https://www.irs.gov/newsroom/deducting-health-insurance-premiums-if-youre-self-employed",
+      "note": {
+        "en": "IRS explainer on the above-the-line self-employed health insurance deduction and how Medicare premiums qualify.",
+        "es": "Explicación del IRS sobre la deducción de seguro médico por encima de la línea para trabajadores independientes y cómo califican las primas de Medicare."
+      }
+    },
+    {
+      "name": "IRS: Publication 969, Health Savings Accounts (2026)",
+      "url": "https://www.irs.gov/publications/p969",
+      "note": {
+        "en": "IRS rules on tax-free HSA withdrawals for Medicare premiums and the exclusion of Medigap premiums.",
+        "es": "Reglas del IRS sobre retiros libres de impuestos de la HSA para primas de Medicare y la exclusión de las primas de Medigap."
+      }
+    },
+    {
+      "name": "IRS: 2026 Tax Inflation Adjustments",
+      "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+      "note": {
+        "en": "Official 2026 standard deduction amounts and additional senior standard deduction figures.",
+        "es": "Montos oficiales de la deducción estándar de 2026 y cifras de la deducción estándar adicional para personas mayores."
+      }
+    },
+    {
+      "name": "CMS: 2026 Medicare Parts A and B Premiums and Deductibles",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+      "note": {
+        "en": "Official CMS fact sheet with the 2026 Part A and Part B premium and deductible amounts used throughout this page.",
+        "es": "Hoja informativa oficial de CMS con los montos de primas y deducibles de la Parte A y la Parte B de 2026 usados en esta página."
+      }
+    }
+  ],
+
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": ["are medicare premiums tax deductible", "medicare premium deduction 2026", "self-employed health insurance deduction medicare"],
+    "es": ["son deducibles las primas de medicare", "deduccion primas medicare 2026", "deduccion seguro medico trabajadores independientes"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "howToApply": {
+    "numberedSteps": [
+      { "en": "Step 1: Total your 2026 Medicare premium payments using your Social Security benefit statement (Form SSA-1099) and Medicare Advantage or Part D billing records.", "es": "Paso 1: Sume sus pagos de primas de Medicare de 2026 usando su estado de beneficios del Seguro Social (Formulario SSA-1099) y los registros de facturación de Medicare Advantage o la Parte D." },
+      { "en": "Step 2: Determine your path. Self-employed filers use Schedule 1, Line 17. Non-self-employed filers itemize on Schedule A, Line 1.", "es": "Paso 2: Determine su camino. Los declarantes independientes usan el Anexo 1, línea 17. Los que no son independientes detallan en el Anexo A, línea 1." },
+      { "en": "Step 3: Add other qualifying medical costs if itemizing, then subtract 7.5% of your 2026 AGI to find your deductible amount.", "es": "Paso 3: Agregue otros costos médicos elegibles si detalla deducciones, y luego reste el 7.5% de su AGI de 2026 para encontrar su monto deducible." },
+      { "en": "Step 4: File Form 1040 with the correct schedule attached by April 15, 2027, or by October 15, 2027 with a filed extension.", "es": "Paso 4: Presente el Formulario 1040 con el anexo correcto antes del 15 de abril de 2027, o antes del 15 de octubre de 2027 con una extensión presentada." }
+    ],
+    "govStartingUrl": "https://www.irs.gov/publications/p502",
+    "documentsNeeded": [
+      { "en": "Social Security benefit statement (Form SSA-1099) showing Part B premiums withheld", "es": "Estado de beneficios del Seguro Social (Formulario SSA-1099) que muestre las primas de la Parte B retenidas" },
+      { "en": "Medicare Advantage or Part D plan billing statements for 2026", "es": "Estados de cuenta de facturación del plan Medicare Advantage o Parte D de 2026" },
+      { "en": "Medigap premium payment records for 2026", "es": "Registros de pago de primas de Medigap de 2026" },
+      { "en": "Prior-year adjusted gross income to estimate the 7.5% threshold", "es": "Ingreso bruto ajustado del año anterior para estimar el umbral del 7.5%" },
+      { "en": "Net self-employment income documentation (Schedule C or K-1) if claiming the self-employed deduction", "es": "Documentación del ingreso neto de trabajo independiente (Anexo C o K-1) si reclama la deducción de independiente" },
+      { "en": "HSA distribution records (Form 1099-SA) if using HSA funds for premiums", "es": "Registros de distribución de la HSA (Formulario 1099-SA) si usa fondos de la HSA para primas" }
+    ],
+    "commonDenialReasons": [
+      { "en": "Claiming premiums that were already reimbursed tax-free through a retiree HRA (double-dipping is not allowed)", "es": "Reclamar primas que ya fueron reembolsadas libres de impuestos a través de una HRA de jubilados (no se permite duplicar el beneficio)" },
+      { "en": "Self-employed deduction claimed above net self-employment income for the year", "es": "Deducción de trabajador independiente reclamada por encima del ingreso neto de trabajo independiente del año" },
+      { "en": "Itemized medical expenses that fall short of the 7.5% AGI floor", "es": "Gastos médicos detallados que no alcanzan el piso del 7.5% del AGI" },
+      { "en": "Attempting to pay Medigap premiums with tax-free HSA withdrawals, which the IRS does not allow", "es": "Intentar pagar primas de Medigap con retiros libres de impuestos de la HSA, lo cual el IRS no permite" },
+      { "en": "Missing documentation of premium payments when filing", "es": "Falta de documentación de los pagos de primas al declarar" }
+    ],
+    "deadline": {
+      "en": "Tax year 2026 return due April 15, 2027 (or October 15, 2027 with a filed extension)",
+      "es": "La declaración del año fiscal 2026 vence el 15 de abril de 2027 (o el 15 de octubre de 2027 con una extensión presentada)"
+    }
+  }
+}

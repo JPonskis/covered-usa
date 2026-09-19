@@ -1,0 +1,586 @@
+{
+  "slug": "enroll-in-medicare",
+  "eventName": {
+    "en": "Should I Enroll in Medicare?",
+    "es": "¿Debo Inscribirme en Medicare?"
+  },
+  "category": "Age Milestone",
+  "topic": "Medicare Enrollment Decision at Age 65",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-09-16",
+  "readingTime": "9 min read",
+  "meta": {
+    "title": {
+      "en": "Should I Enroll in Medicare? 2026 Decision Guide",
+      "es": "¿Debo Inscribirme en Medicare? Guía 2026"
+    },
+    "description": {
+      "en": "Deciding whether to enroll in Medicare at 65 in 2026? Compare working, COBRA, ACA, and retiree scenarios plus the penalties for waiting.",
+      "es": "¿Decidiendo si inscribirse en Medicare a los 65 en 2026? Compare trabajo, COBRA, ACA, y jubilación además de las multas por esperar."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Should I Enroll in Medicare? Here Is the 2026 Decision Guide",
+      "es": "¿Debo Inscribirme en Medicare? Aquí Está la Guía de Decisión 2026"
+    },
+    "subhero": {
+      "en": "Your 7-month Initial Enrollment Period starts 3 months before your 65th birthday. The right answer depends on whether you have active employer coverage, COBRA, an ACA plan, or nothing at all, and getting it wrong triggers a Part B penalty of 10% per year for life.",
+      "es": "Su Período de Inscripción Inicial de 7 meses comienza 3 meses antes de cumplir 65. La respuesta correcta depende de si tiene cobertura activa del empleador, COBRA, un plan ACA, o nada, y equivocarse activa una multa de la Parte B del 10% al año de por vida."
+    }
+  },
+  "urgency": {
+    "kind": "window",
+    "heading": {
+      "en": "Your decision window is the 7-month Initial Enrollment Period around your 65th birthday",
+      "es": "Su ventana de decisión es el Período de Inscripción Inicial de 7 meses alrededor de cumplir 65"
+    },
+    "body": {
+      "en": "The Initial Enrollment Period (IEP) runs from 3 months before your 65th birthday month, through the birthday month, to 3 months after. For example, if you turn 65 in August 2026, your IEP runs from May 1, 2026 through November 30, 2026. Since the BENES Act update, coverage starts the first day of the month after you enroll, no matter which month of the IEP you sign up in. Miss the IEP without a valid Special Enrollment Period and the Part B penalty is 10% per 12-month period, permanently.",
+      "es": "El Período de Inscripción Inicial (IEP) va desde 3 meses antes del mes de su cumpleaños 65, durante el mes de cumpleaños, hasta 3 meses después. Por ejemplo, si cumple 65 en agosto de 2026, su IEP va del 1 de mayo de 2026 al 30 de noviembre de 2026. Desde la actualización de la Ley BENES, la cobertura comienza el primer día del mes después de inscribirse. Si pierde el IEP sin un Período de Inscripción Especial válido, la multa de la Parte B es del 10% por cada período de 12 meses, de forma permanente."
+    },
+    "totalTimeISO8601": "P7M",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Employer-retirement SEP (Part B, 20+ employee firm)",
+          "es": "SEP de jubilación del empleador (Parte B, empresa 20+ empleados)"
+        },
+        "days": 240
+      },
+      {
+        "label": {
+          "en": "Part D 63-day creditable coverage rule",
+          "es": "Regla de cobertura acreditable de 63 días para la Parte D"
+        },
+        "days": 63
+      },
+      {
+        "label": {
+          "en": "Medigap guaranteed-issue window after Part B starts",
+          "es": "Ventana de emisión garantizada de Medigap tras iniciar la Parte B"
+        },
+        "days": 180
+      },
+      {
+        "label": {
+          "en": "COBRA election window",
+          "es": "Ventana de elección de COBRA"
+        },
+        "days": 60
+      }
+    ]
+  },
+  "quickAnswer": {
+    "en": "Most people should enroll in Medicare Part A and Part B during their 7-month Initial Enrollment Period (IEP) in 2026, even if they already have other coverage. The main exception is active employer group coverage from a company with 20 or more employees, which lets you delay Part B penalty-free until you retire. COBRA, retiree health plans, and ACA Marketplace plans do NOT count as a reason to delay: if you carry any of those at 65, you should enroll in Medicare on time. Skipping enrollment without a valid Special Enrollment Period triggers a 10% per year Part B penalty and a 1% per month Part D penalty, both permanent. Part A is free for most people with 10+ years of work history, so almost everyone should take it at 65 unless they are actively contributing to an HSA.",
+    "es": "La mayoría debe inscribirse en la Parte A y la Parte B de Medicare durante su Período de Inscripción Inicial (IEP) de 7 meses en 2026, aunque ya tenga otra cobertura. La excepción principal es la cobertura grupal activa de un empleador con 20 o más empleados, que le permite retrasar la Parte B sin multa hasta jubilarse. COBRA, los planes de jubilados, y los planes del Mercado ACA NO cuentan como razón para retrasar: si tiene alguno de estos a los 65, debe inscribirse en Medicare a tiempo. Saltarse la inscripción sin un Período de Inscripción Especial válido activa una multa de la Parte B del 10% al año y una multa de la Parte D del 1% al mes, ambas permanentes. La Parte A es gratis para la mayoría con 10+ años de historial laboral, así que casi todos deben tomarla a los 65 a menos que contribuyan activamente a una HSA."
+  },
+  "introParagraphs": [
+    {
+      "en": "Turning 65 in 2026 forces a decision that trips up more people than any other Medicare milestone: enroll now, or wait? The default assumption that Medicare enrollment automatically happens is wrong for most workers. Social Security only auto-enrolls people already collecting retirement benefits; everyone else has to actively sign up at SSA.gov during a specific window. The stakes are high in both directions. Enroll when you do not need to and you may pay for Part B on top of an existing employer premium for no added benefit. Delay when you should not and the Part B late penalty adds 10% to your premium for every 12-month period you went without coverage, for the rest of your life. Getting this decision right depends almost entirely on one variable: what other coverage you have on the day you turn 65. This single question, active employer group coverage or something else, determines whether the safest move is to sign up immediately or to legitimately wait, and confusing the two paths is the single most expensive mistake a new Medicare-eligible person can make in 2026. Insurance brokers, HR departments, and even some Social Security representatives routinely give incomplete answers, which is why a clear decision tree matters more than a generic checklist here.",
+      "es": "Cumplir 65 en 2026 obliga a tomar una decisión que confunde a más gente que cualquier otro hito de Medicare: ¿inscribirse ahora, o esperar? La suposición común de que la inscripción en Medicare ocurre automáticamente es incorrecta para la mayoría de los trabajadores. El Seguro Social solo inscribe automáticamente a quienes ya cobran beneficios de jubilación; todos los demás deben inscribirse activamente en SSA.gov durante una ventana específica. Las apuestas son altas en ambas direcciones. Inscribirse cuando no es necesario puede significar pagar la Parte B además de una prima del empleador existente sin beneficio adicional. Retrasarse cuando no debería añade 10% a la prima de la Parte B por cada período de 12 meses sin cobertura, por el resto de su vida. Acertar en esta decisión depende casi por completo de una sola variable: qué otra cobertura tiene el día que cumple 65. Esta única pregunta, cobertura grupal activa del empleador o algo distinto, determina si lo más seguro es inscribirse de inmediato o esperar de forma legítima, y confundir ambos caminos es el error más costoso que una persona recién elegible para Medicare puede cometer en 2026."
+    },
+    {
+      "en": "Five coverage scenarios cover nearly everyone turning 65 in 2026: still working with large-employer coverage (20 or more employees), still working with small-employer coverage, on COBRA continuation, on an ACA Marketplace plan, or retired with no other coverage. Each scenario has a different correct answer, and this guide walks through the decision tree for all five, plus the documents you need and the exact deadlines for each path. Employer size is the hinge that the entire decision swings on: it determines whether Medicare pays primary or secondary, and that in turn determines whether delaying carries a penalty. Marketplace enrollees face a separate trap because premium tax credit eligibility usually disappears the moment someone qualifies for premium-free Part A, whether or not they actually enroll, which quietly turns a subsidized plan into a full-price plan. Before you decide, confirm your Medicare eligibility at the [Medicare eligibility](/medicare-eligibility) page, and if your income is limited, check the [Medicaid income limits](/medicaid-income-limits) for 2026 to see whether dual Medicare and Medicaid coverage could eliminate most of your out-of-pocket costs. The [federal poverty level](/federal-poverty-level) figures for 2026 also determine whether a Medicare Savings Program can cover your Part B premium entirely.",
+      "es": "Cinco escenarios de cobertura cubren a casi todos los que cumplen 65 en 2026: todavía trabajando con cobertura de empleador grande (20 o más empleados), todavía trabajando con cobertura de empleador pequeño, en continuación COBRA, en un plan del Mercado ACA, o jubilado sin otra cobertura. Cada escenario tiene una respuesta correcta diferente, y esta guía recorre el árbol de decisión para los cinco, además de los documentos que necesita y los plazos exactos para cada ruta. El tamaño del empleador es la bisagra sobre la que gira toda la decisión: determina si Medicare paga primero o en segundo lugar, y eso a su vez determina si retrasarse conlleva una multa. Quienes tienen un plan del Mercado enfrentan una trampa aparte porque la elegibilidad del crédito fiscal de prima generalmente desaparece en el momento en que alguien califica para la Parte A sin prima, se inscriba o no, lo que convierte silenciosamente un plan subsidiado en un plan de precio completo."
+    }
+  ],
+  "steps": [
+    {
+      "name": {
+        "en": "Confirm whether Social Security will auto-enroll you",
+        "es": "Confirme si el Seguro Social lo inscribirá automáticamente"
+      },
+      "text": {
+        "en": "Log in to your account at SSA.gov to check whether you are already collecting Social Security or Railroad Retirement benefits. If so, Medicare mails your card and auto-enrolls you in Parts A and B about 3 months before your 65th birthday. If you have not filed for Social Security, you must actively apply for Medicare yourself; nobody signs you up automatically.",
+        "es": "Inicie sesión en su cuenta en SSA.gov para verificar si ya cobra beneficios del Seguro Social o Jubilación Ferroviaria. Si es así, Medicare le envía la tarjeta y lo inscribe automáticamente en las Partes A y B unos 3 meses antes de cumplir 65. Si no ha solicitado el Seguro Social, debe solicitar Medicare usted mismo."
+      }
+    },
+    {
+      "name": {
+        "en": "Identify your coverage scenario and employer size",
+        "es": "Identifique su escenario de cobertura y el tamaño de su empleador"
+      },
+      "text": {
+        "en": "Call HR or check your benefits portal to confirm your total US employee headcount if you are still working. Employer coverage from a company with 20 or more employees lets you delay Part B penalty-free. COBRA, retiree health plans, ACA Marketplace plans, and employer coverage from companies with fewer than 20 employees do NOT qualify for that delay under Medicare Secondary Payer rules.",
+        "es": "Llame a RRHH o revise su portal de beneficios para confirmar el total de empleados en EE.UU. si todavía trabaja. La cobertura de un empleador con 20 o más empleados le permite retrasar la Parte B sin multa. COBRA, planes de jubilados, planes del Mercado ACA, y empleadores con menos de 20 empleados NO califican para ese retraso."
+      }
+    },
+    {
+      "name": {
+        "en": "Enroll in premium-free Part A during your IEP",
+        "es": "Inscríbase en la Parte A sin prima durante su IEP"
+      },
+      "text": {
+        "en": "Apply at SSA.gov or call 1-800-772-1213 to enroll in Part A if you or a spouse worked 10 or more years in Medicare-covered employment. Part A costs $0 in premium for most people, so nearly everyone should take it at 65. The one exception: if you actively contribute to a Health Savings Account (HSA), enrolling in Part A stops your HSA contributions under IRC Section 223.",
+        "es": "Solicite en SSA.gov o llame al 1-800-772-1213 para inscribirse en la Parte A si usted o su cónyuge trabajaron 10 o más años en empleo cubierto por Medicare. La Parte A cuesta $0 de prima para la mayoría, así que casi todos deben tomarla a los 65. La única excepción: si contribuye activamente a una HSA."
+      }
+    },
+    {
+      "name": {
+        "en": "Decide on Part B based on your coverage scenario",
+        "es": "Decida sobre la Parte B según su escenario de cobertura"
+      },
+      "text": {
+        "en": "Enroll in Part B during your 7-month IEP unless you have active large-employer coverage (20 or more employees). If you are on COBRA, a retiree plan, or an ACA Marketplace plan, enroll in Part B on time: none of those qualify for a penalty-free delay, and staying on a subsidized ACA plan past 65 usually means losing the premium tax credit anyway once you are eligible for premium-free Part A.",
+        "es": "Inscríbase en la Parte B durante su IEP de 7 meses a menos que tenga cobertura activa de empleador grande (20 o más empleados). Si está en COBRA, un plan de jubilado, o un plan del Mercado ACA, inscríbase en la Parte B a tiempo: ninguno de esos califica para un retraso sin multa."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare Original Medicare with Medigap against Medicare Advantage",
+        "es": "Compare Medicare Original con Medigap frente a Medicare Advantage"
+      },
+      "text": {
+        "en": "Use the Medicare.gov Plan Finder with your ZIP code and current prescriptions to compare Original Medicare plus a Part D plan plus optional Medigap against a Medicare Advantage plan. Original Medicare with Medigap gives broader provider access; Medicare Advantage typically has a lower monthly premium but a network and the 2026 in-network out-of-pocket ceiling of $9,250.",
+        "es": "Use el Buscador de Planes de Medicare.gov con su código postal y medicamentos actuales para comparar Medicare Original más un plan de la Parte D más Medigap opcional contra un plan Medicare Advantage. Medicare Original con Medigap da acceso más amplio a proveedores; Medicare Advantage típicamente tiene una prima mensual más baja pero una red y el techo de gastos de bolsillo en red de 2026 de $9,250."
+      }
+    },
+    {
+      "name": {
+        "en": "Submit your enrollment before your IEP or SEP closes",
+        "es": "Presente su inscripción antes de que cierre su IEP o SEP"
+      },
+      "text": {
+        "en": "Apply online at SSA.gov, by phone at 1-800-772-1213, or at your local Social Security office before your 7-month IEP ends, or within your 8-month employer-retirement Special Enrollment Period if you delayed Part B legitimately. Missing both means waiting for the General Enrollment Period (January 1 through March 31 each year) plus the permanent Part B late penalty.",
+        "es": "Solicite en línea en SSA.gov, por teléfono al 1-800-772-1213, o en su oficina local del Seguro Social antes de que termine su IEP de 7 meses, o dentro de su Período de Inscripción Especial de 8 meses de jubilación del empleador si retrasó la Parte B legítimamente."
+      }
+    }
+  ],
+  "optionsComparison": {
+    "headers": {
+      "en": [
+        "Option",
+        "Typical cost",
+        "Best for",
+        "Deadline"
+      ],
+      "es": [
+        "Opción",
+        "Costo típico",
+        "Mejor para",
+        "Fecha límite"
+      ]
+    },
+    "rows": [
+      {
+        "en": [
+          "Enroll in Parts A and B now",
+          "$0 Part A (if 10+ work years) + $202.90/mo Part B (2026 standard)",
+          "Retirees, small-employer workers, anyone on COBRA/ACA/retiree coverage at 65",
+          "7-month IEP around your 65th birthday"
+        ],
+        "es": [
+          "Inscribirse en Partes A y B ahora",
+          "$0 Parte A (si 10+ años laborales) + $202.90/mes Parte B (estándar 2026)",
+          "Jubilados, trabajadores de empleador pequeño, cualquiera con COBRA/ACA/jubilado a los 65",
+          "IEP de 7 meses alrededor de cumplir 65"
+        ]
+      },
+      {
+        "en": [
+          "Enroll in Part A only, delay Part B",
+          "$0 Part A premium; keep paying employer premium",
+          "Active large-employer coverage (20+ employees), want free hospital backup",
+          "Part A anytime during 7-month IEP"
+        ],
+        "es": [
+          "Inscribirse solo en Parte A, retrasar Parte B",
+          "$0 prima Parte A; sigue pagando prima del empleador",
+          "Cobertura activa de empleador grande (20+ empleados), quiere respaldo hospitalario gratis",
+          "Parte A en cualquier momento del IEP de 7 meses"
+        ]
+      },
+      {
+        "en": [
+          "Delay all of Medicare (still working, large employer, HSA)",
+          "$0 Medicare cost; continue HSA contributions up to $4,400 self/$8,750 family (2026)",
+          "Actively contributing to an HSA and want to keep doing so",
+          "Enroll within 8-month SEP after active coverage ends"
+        ],
+        "es": [
+          "Retrasar todo Medicare (trabajando, empleador grande, HSA)",
+          "$0 costo Medicare; sigue contribuyendo a HSA hasta $4,400 individual/$8,750 familiar (2026)",
+          "Contribuye activamente a una HSA y quiere seguir haciéndolo",
+          "Inscribirse dentro del SEP de 8 meses tras terminar la cobertura activa"
+        ]
+      },
+      {
+        "en": [
+          "Stay on COBRA past 65 without enrolling",
+          "COBRA premium (102% of full cost) PLUS a permanent 10%/year Part B penalty later",
+          "Almost nobody; this is the most expensive mistake on this list",
+          "None; this is the option to avoid"
+        ],
+        "es": [
+          "Quedarse con COBRA después de los 65 sin inscribirse",
+          "Prima COBRA (102% del costo total) MÁS una multa permanente del 10%/año de la Parte B después",
+          "Casi nadie; es el error más caro de esta lista",
+          "Ninguna; es la opción que se debe evitar"
+        ]
+      },
+      {
+        "en": [
+          "Dual Medicare + Medicaid (income-qualified)",
+          "$0 or near-$0 with Medicare Savings Program paying Part B premium",
+          "Income near or under 135% FPL (about $21,546 individual in 2026)",
+          "Medicaid enrolls year-round"
+        ],
+        "es": [
+          "Medicare + Medicaid dual (califica por ingreso)",
+          "$0 o casi $0 con el Programa de Ahorros de Medicare pagando la prima de la Parte B",
+          "Ingreso cerca o bajo 135% FPL (aproximadamente $21,546 individual en 2026)",
+          "Medicaid se inscribe todo el año"
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "2026 Part B standard premium is $202.90/month with a $283 deductible; higher earners pay more through IRMAA. Part A carries a $1,736 hospital deductible per benefit period in 2026. Medicare Advantage in-network out-of-pocket ceiling for 2026 is $9,250.",
+      "es": "La prima estándar de la Parte B 2026 es $202.90/mes con un deducible de $283; quienes ganan más pagan más vía IRMAA. La Parte A tiene un deducible hospitalario de $1,736 por período de beneficio en 2026. El techo de gastos de bolsillo en red de Medicare Advantage para 2026 es $9,250."
+    },
+    "source": "Medicare.gov, Social Security Administration, CMS 2026 Part B premium fact sheet"
+  },
+  "commonMistakes": {
+    "intro": {
+      "en": "The most expensive mistakes people make when deciding whether to enroll in Medicare at 65. Most of these consequences are permanent:",
+      "es": "Los errores más costosos que la gente comete al decidir si inscribirse en Medicare a los 65. La mayoría de estas consecuencias son permanentes:"
+    },
+    "items": [
+      {
+        "en": "Assuming COBRA, retiree coverage, or an ACA Marketplace plan lets you delay Part B without penalty. None of them qualify under Medicare Secondary Payer rules. Only active large-employer group coverage (20 or more employees) does.",
+        "es": "Asumir que COBRA, la cobertura de jubilado, o un plan del Mercado ACA le permiten retrasar la Parte B sin multa. Ninguno califica bajo las reglas del Pagador Secundario de Medicare. Solo la cobertura grupal activa de empleador grande (20 o más empleados) califica."
+      },
+      {
+        "en": "Keeping a subsidized ACA Marketplace plan after becoming eligible for premium-free Part A. Eligibility for premium-free Part A generally ends your premium tax credit eligibility, even if you never enroll in Medicare, leaving you paying full price for an ACA plan you no longer need.",
+        "es": "Mantener un plan subsidiado del Mercado ACA después de calificar para la Parte A sin prima. La elegibilidad para la Parte A sin prima generalmente termina la elegibilidad para el crédito fiscal de prima, incluso si nunca se inscribe en Medicare."
+      },
+      {
+        "en": "Enrolling in Part A while still contributing to an HSA. Any Medicare enrollment, including premium-free Part A, makes further HSA contributions ineligible under IRC Section 223 and can trigger an IRS excess-contribution penalty once Part A applies retroactively up to 6 months.",
+        "es": "Inscribirse en la Parte A mientras todavía contribuye a una HSA. Cualquier inscripción en Medicare, incluida la Parte A sin prima, hace que las contribuciones adicionales a la HSA sean inelegibles y puede activar una penalización del IRS."
+      },
+      {
+        "en": "Going 63 or more days without creditable drug coverage after becoming Medicare-eligible. This triggers a permanent Part D penalty of 1% per month of the national base premium, even if you never fill a prescription.",
+        "es": "Pasar 63 días o más sin cobertura de medicamentos acreditable después de ser elegible para Medicare. Esto activa una multa permanente de la Parte D del 1% al mes de la prima base nacional."
+      },
+      {
+        "en": "Missing the 6-month Medigap guaranteed-issue window that starts the month you are both 65 and enrolled in Part B. After it closes, Medigap insurers in most states can deny you or charge more for pre-existing conditions.",
+        "es": "Perder la ventana de emisión garantizada de Medigap de 6 meses que comienza el mes en que cumple 65 Y está inscrito en la Parte B. Después de que cierre, las aseguradoras de Medigap en la mayoría de estados pueden negarle o cobrarle más."
+      },
+      {
+        "en": "Waiting for a bill or a letter to prompt enrollment. Nobody sends a reminder besides Social Security's own mailings, and by the time a gap in coverage shows up, the IEP has often already closed.",
+        "es": "Esperar una factura o carta para inscribirse. Nadie envía un recordatorio aparte de las cartas del propio Seguro Social, y para cuando aparece una brecha de cobertura, el IEP a menudo ya cerró."
+      }
+    ]
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Enroll Now vs Delay: Which Should You Choose?",
+        "es": "Inscribirse Ahora vs Retrasar: ¿Cuál Debe Elegir?"
+      },
+      "paragraphs": [
+        {
+          "en": "Three coverage situations decide whether enrolling now or delaying makes sense in 2026. Active large-employer coverage (20 or more employees, yours or a spouse's) is the only situation that supports a penalty-free Part B delay; the employer plan pays primary, Medicare would pay secondary, and you get an 8-month Special Enrollment Period once that coverage ends. COBRA continuation coverage looks similar to active employer coverage on paper but does not qualify under Medicare Secondary Payer rules; anyone on COBRA at 65 should enroll in Part B during the IEP to avoid a lifetime penalty, even though the monthly bill from the COBRA administrator can look identical to what was withheld from a paycheck the month before. ACA Marketplace plans carry a hidden trap: becoming eligible for premium-free Part A typically ends premium tax credit eligibility even before you enroll in Medicare, so staying on a subsidized Marketplace plan past 65 usually means paying full price without realizing it, since the Marketplace does not automatically flag the change. Retiree health plans purchased directly from a former employer fall into the same non-qualifying category as COBRA and should not be treated as a reason to delay Part B.",
+          "es": "Tres situaciones de cobertura deciden si inscribirse ahora o retrasar tiene sentido en 2026. La cobertura activa de empleador grande (20 o más empleados, suya o de un cónyuge) es la única situación que respalda un retraso de la Parte B sin multa; el plan del empleador paga primero, Medicare pagaría en segundo lugar, y obtiene un Período de Inscripción Especial de 8 meses una vez que esa cobertura termine. La cobertura de continuación COBRA se parece a la cobertura activa del empleador en papel pero no califica bajo las reglas del Pagador Secundario de Medicare; cualquiera con COBRA a los 65 debe inscribirse en la Parte B durante el IEP para evitar una multa de por vida, aunque la factura mensual del administrador de COBRA pueda parecer idéntica a lo que se retenía del cheque de pago el mes anterior. Los planes del Mercado ACA tienen una trampa oculta: calificar para la Parte A sin prima típicamente termina la elegibilidad del crédito fiscal de prima incluso antes de inscribirse en Medicare, ya que el Mercado no marca automáticamente el cambio. Los planes de jubilados comprados directamente a un antiguo empleador caen en la misma categoría que COBRA y no deben tratarse como razón para retrasar la Parte B."
+        },
+        {
+          "en": "Retirees with no other coverage face the simplest math: enroll in Parts A and B during the 7-month IEP, full stop. Waiting without a qualifying reason means a 10% per year Part B penalty that compounds for life, plus a coverage gap until the next General Enrollment Period (January 1 through March 31, with coverage now starting the month after enrollment per the BENES Act rather than the old July 1 rule). Workers who are actively contributing to a Health Savings Account (HSA) are the one group where delaying even Part A can make sense, because any Medicare enrollment stops future HSA contributions under IRC Section 223. Weigh the HSA's ongoing tax benefit against the cost of paying full employer premiums without Medicare's backup coverage before deciding to delay everything. Spouses add another layer: a younger spouse without their own Medicare eligibility often needs to stay on the working spouse's employer plan or the ACA Marketplace, which does not change the Medicare-eligible spouse's own enroll-or-delay decision but does affect the household's total premium math when comparing options side by side. Retirement itself is a qualifying life event for the non-Medicare spouse too, opening a 60-day window to enroll in a new Marketplace plan or a different employer plan if household coverage is shifting at the same time.",
+          "es": "Los jubilados sin otra cobertura enfrentan las matemáticas más simples: inscribirse en las Partes A y B durante el IEP de 7 meses, sin excepción. Esperar sin una razón calificada significa una multa de la Parte B del 10% al año que se acumula de por vida, más una brecha de cobertura hasta el próximo Período de Inscripción General (1 de enero al 31 de marzo, con cobertura ahora comenzando el mes después de inscribirse según la Ley BENES en lugar de la antigua regla del 1 de julio). Los trabajadores que contribuyen activamente a una HSA son el único grupo donde retrasar incluso la Parte A puede tener sentido, porque cualquier inscripción en Medicare detiene las contribuciones futuras a la HSA bajo la Sección 223 del IRC. Los cónyuges añaden otra capa: un cónyuge más joven sin su propia elegibilidad para Medicare a menudo necesita quedarse en el plan del empleador del cónyuge que trabaja o en el Mercado ACA, lo cual no cambia la propia decisión del cónyuge elegible para Medicare pero sí afecta las matemáticas de la prima total del hogar. La jubilación misma es un evento calificador de vida para el cónyuge sin Medicare, abriendo una ventana de 60 días para inscribirse en un nuevo plan del Mercado o un plan de empleador diferente si la cobertura del hogar cambia al mismo tiempo."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Documents You Need to Make the Enrollment Decision",
+        "es": "Documentos que Necesita para Tomar la Decisión de Inscripción"
+      },
+      "paragraphs": [
+        {
+          "en": "Gathering the right paperwork before your 65th birthday month prevents the single most common cause of enrollment delays: incomplete Special Enrollment Period applications. If you plan to delay Part B because of active large-employer coverage, Social Security will eventually require Form CMS-L564 (Request for Employment Information), which your employer must complete to confirm your active coverage dates. Keep every notice your HR department sends confirming plan status, because you will need it months or years later when that 8-month window opens, often long after the original HR contact has moved on or the paperwork has been archived. Workers who assume they can request these records retroactively from a former employer frequently discover that turnover in the HR department, company mergers, or simple recordkeeping gaps make last-minute documentation far harder to obtain than expected. Building a small physical or digital folder the year you turn 65, and updating it every time your coverage status changes, removes nearly all of the friction from whichever enrollment path you eventually take.",
+          "es": "Reunir los documentos correctos antes del mes de su cumpleaños 65 previene la causa más común de retrasos en la inscripción: solicitudes incompletas del Período de Inscripción Especial. Si planea retrasar la Parte B por cobertura activa de empleador grande, el Seguro Social eventualmente requerirá el Formulario CMS-L564, que su empleador debe completar para confirmar las fechas de su cobertura activa. Guarde cada aviso que su departamento de RRHH envíe confirmando el estado del plan, porque lo necesitará meses o años después cuando se abra esa ventana de 8 meses, a menudo mucho después de que el contacto original de RRHH haya cambiado de puesto o el papeleo se haya archivado. Los trabajadores que asumen que pueden solicitar estos registros de forma retroactiva a un antiguo empleador frecuentemente descubren que la rotación en el departamento de RRHH, las fusiones de empresas, o simples vacíos de mantenimiento de registros hacen que la documentación de último momento sea mucho más difícil de obtener de lo esperado."
+        }
+      ],
+      "list": [
+        {
+          "en": "Social Security number and a government-issued photo ID for the SSA.gov application",
+          "es": "Número de Seguro Social e identificación con foto emitida por el gobierno para la solicitud en SSA.gov"
+        },
+        {
+          "en": "Form CMS-L564 (Request for Employment Information), completed by your employer, if delaying Part B due to active large-employer coverage",
+          "es": "Formulario CMS-L564 (Solicitud de Información de Empleo), completado por su empleador, si retrasa la Parte B por cobertura activa de empleador grande"
+        },
+        {
+          "en": "Proof of work history (W-2s or Social Security earnings statement) to confirm premium-free Part A eligibility",
+          "es": "Prueba de historial laboral (formularios W-2 o estado de ganancias del Seguro Social) para confirmar elegibilidad para la Parte A sin prima"
+        },
+        {
+          "en": "Your COBRA election notice or ACA Marketplace enrollment confirmation, showing your current coverage type and start date",
+          "es": "Su aviso de elección de COBRA o confirmación de inscripción del Mercado ACA, mostrando su tipo de cobertura actual y fecha de inicio"
+        },
+        {
+          "en": "Annual Notice of Creditable Coverage for prescription drugs, from an employer plan or Marketplace plan, to avoid the Part D late penalty",
+          "es": "Aviso Anual de Cobertura Acreditable para medicamentos recetados, de un plan del empleador o del Mercado, para evitar la multa por inscripción tardía de la Parte D"
+        },
+        {
+          "en": "HSA plan summary and contribution records, if you are weighing whether to delay Medicare to keep contributing to a Health Savings Account",
+          "es": "Resumen del plan HSA y registros de contribuciones, si está considerando retrasar Medicare para seguir contribuyendo a una HSA"
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Happens If You Get the Decision Wrong",
+        "es": "Qué Pasa Si Se Equivoca en la Decisión"
+      },
+      "paragraphs": [
+        {
+          "en": "Two permanent penalties enforce Medicare's enrollment deadlines. The Part B late enrollment penalty adds 10% to your monthly premium for every full 12-month period you were eligible but not enrolled, without a valid exemption, and that surcharge never expires. At the 2026 standard Part B premium of $202.90, two years of delay without a valid reason adds roughly $40.58 every month for the rest of your life, and that dollar figure only grows in future years as the base Part B premium itself rises. The Part D late enrollment penalty works similarly but is based on months rather than years: 1% of the national base beneficiary premium for every month you went without creditable drug coverage after first becoming eligible, even if you filled zero prescriptions during that gap. Both penalties attach to the person, not the plan, so switching insurers or plan types later does not erase either surcharge; it simply carries forward onto whatever new premium applies.",
+          "es": "Dos multas permanentes hacen cumplir los plazos de inscripción de Medicare. La multa por inscripción tardía de la Parte B añade 10% a la prima mensual por cada período completo de 12 meses que fue elegible pero no se inscribió, sin una exención válida, y ese recargo nunca expira. A la prima estándar de la Parte B de 2026 de $202.90, dos años de retraso sin una razón válida añade aproximadamente $40.58 cada mes por el resto de su vida, y esa cifra solo crece en años futuros conforme sube la prima base de la Parte B. La multa por inscripción tardía de la Parte D funciona de forma similar pero se basa en meses en lugar de años: 1% de la prima base nacional de beneficiario por cada mes sin cobertura de medicamentos acreditable después de ser elegible por primera vez, incluso si no surtió ninguna receta durante ese lapso. Ambas multas se adhieren a la persona, no al plan, así que cambiar de aseguradora o tipo de plan después no borra ninguno de los dos recargos."
+        },
+        {
+          "en": "Beyond the financial penalty, missing the IEP without a qualifying SEP forces a wait for the General Enrollment Period, which runs January 1 through March 31 each year. Coverage now starts the first day of the month after you enroll during the GEP, a BENES Act improvement over the old rule that delayed coverage until every July 1 regardless of when in the window someone signed up. Still, a gap of weeks or months without Medicare while owing a permanent penalty is entirely avoidable by making the enroll-or-delay decision correctly the first time. Anyone unsure which category they fall into should call the State Health Insurance Assistance Program (SHIP) in their state for free, unbiased counseling before the IEP closes rather than after, since SHIP counselors cannot undo a penalty that has already been assessed but can prevent one from ever starting. Employer benefits administrators and insurance agents selling Medicare Advantage or Medigap plans are not a substitute for SHIP, since agents are compensated on enrollments rather than on giving neutral advice about whether enrolling now is even the right move.",
+          "es": "Más allá de la multa financiera, perder el IEP sin un SEP calificado obliga a esperar el Período de Inscripción General, que va del 1 de enero al 31 de marzo cada año. La cobertura ahora comienza el primer día del mes después de inscribirse durante el GEP, una mejora de la Ley BENES sobre la antigua regla que retrasaba la cobertura hasta cada 1 de julio sin importar en qué momento de la ventana alguien se inscribiera. Aun así, una brecha de semanas o meses sin Medicare mientras se debe una multa permanente es totalmente evitable tomando la decisión de inscribirse o retrasar correctamente desde el principio. Cualquiera que no esté seguro de en qué categoría cae debe llamar al Programa Estatal de Asistencia de Seguro de Salud (SHIP) de su estado para orientación gratuita e imparcial antes de que cierre el IEP. Los administradores de beneficios del empleador y los agentes de seguros que venden planes Medicare Advantage o Medigap no sustituyen a SHIP, ya que los agentes reciben comisión por inscripciones en lugar de dar consejo neutral sobre si inscribirse ahora es siquiera la decisión correcta."
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "Should I enroll in Medicare if I am still working at 65?",
+        "answer": "Your employer's size decides the answer. If your employer (or your spouse's) has 20 or more employees and you have active group coverage, you can delay Part B penalty-free and get an 8-month Special Enrollment Period when that coverage ends. If your employer has fewer than 20 employees, Medicare becomes your primary payer at 65, so you should enroll in both Part A and Part B during your 7-month Initial Enrollment Period to avoid the permanent Part B late penalty."
+      },
+      {
+        "question": "Should I enroll in Medicare if I have COBRA coverage?",
+        "answer": "Yes. COBRA continuation coverage does not count as active employer coverage under Medicare Secondary Payer rules, no matter how similar it looks to your old plan. Anyone on COBRA at 65 should enroll in Part B during the 7-month Initial Enrollment Period. Delaying because of COBRA is one of the most common and most expensive mistakes, since it triggers a 10% per year lifetime Part B penalty with no exception."
+      },
+      {
+        "question": "Should I enroll in Medicare if I have an ACA Marketplace plan?",
+        "answer": "Yes, in almost every case. Becoming eligible for premium-free Part A generally ends your eligibility for ACA premium tax credits, even before you actually enroll in Medicare. Staying on a subsidized Marketplace plan past 65 often means paying full, unsubsidized price without realizing your credit is gone, and reconciling that mismatch on your next Form 1095-A can trigger a repayment of credits you were not actually entitled to receive. Enroll in Medicare during your Initial Enrollment Period and drop the Marketplace plan to avoid double-paying."
+      },
+      {
+        "question": "What happens if I don't enroll in Medicare when I turn 65?",
+        "answer": "If you do not have a valid Special Enrollment Period, missing your 7-month Initial Enrollment Period means waiting for the General Enrollment Period, which runs January 1 through March 31 each year, with coverage starting the first day of the month after you enroll. You will also owe a permanent Part B penalty of 10% for every full 12-month period you went without coverage, and possibly a Part D penalty of 1% per month for lack of creditable drug coverage."
+      },
+      {
+        "question": "Is Part A free, and should I take it even if I delay Part B?",
+        "answer": "Part A is premium-free in 2026 for most people with 10 or more years of Medicare-covered work history, and almost everyone should enroll in it at 65, even while delaying Part B for active large-employer coverage. The one exception is workers actively contributing to a Health Savings Account (HSA): any Medicare enrollment, including free Part A, stops further HSA contributions under IRC Section 223."
+      },
+      {
+        "question": "How do I know if my employer coverage lets me delay Medicare?",
+        "answer": "Ask HR to confirm your employer's total US employee count across all locations, including part-time staff. If the total is 20 or more, and you have active group health coverage (not retiree coverage or COBRA), you can delay Part B penalty-free. Get written confirmation of your employer's size and your active-coverage dates, since Social Security will require Form CMS-L564 completed by your employer when you eventually enroll under the 8-month Special Enrollment Period."
+      },
+      {
+        "question": "Can I get Medicare and Medicaid at the same time if my income is low?",
+        "answer": "Yes. If your income is near or under about 135% of the Federal Poverty Level (roughly $21,546 for an individual in 2026), you may qualify for a Medicare Savings Program that pays your Part B premium, or full dual Medicare and Medicaid eligibility through your state's program, such as Medi-Cal in California or MassHealth in Massachusetts. Check the current federal poverty level and Medicaid income limits for your state and apply through your state Medicaid agency; enrollment is year-round with no deadline."
+      },
+      {
+        "question": "What is the deadline to decide between Original Medicare and Medicare Advantage?",
+        "answer": "You can pick either Original Medicare or Medicare Advantage at any point during your 7-month Initial Enrollment Period or during a valid Special Enrollment Period. If you choose Original Medicare and want a Medigap supplement, you get a one-time 6-month guaranteed-issue window starting the month you are both 65 and enrolled in Part B; after that, Medigap insurers in most states can medically underwrite you."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Debo inscribirme en Medicare si todavía trabajo a los 65?",
+        "answer": "Depende del tamaño de su empleador. Si su empleador (o el de su cónyuge) tiene 20 o más empleados y tiene cobertura grupal activa, puede retrasar la Parte B sin multa y obtener un Período de Inscripción Especial de 8 meses cuando esa cobertura termine. Si su empleador tiene menos de 20 empleados, Medicare se convierte en su pagador primario a los 65, así que debe inscribirse en la Parte A y la Parte B durante su Período de Inscripción Inicial de 7 meses para evitar la multa permanente de la Parte B."
+      },
+      {
+        "question": "¿Debo inscribirme en Medicare si tengo cobertura COBRA?",
+        "answer": "Sí. La cobertura de continuación COBRA no cuenta como cobertura activa del empleador bajo las reglas del Pagador Secundario de Medicare, sin importar cuán similar parezca a su plan anterior. Cualquiera con COBRA a los 65 debe inscribirse en la Parte B durante el Período de Inscripción Inicial de 7 meses. Retrasarse por COBRA es uno de los errores más comunes y costosos, ya que activa una multa permanente de la Parte B del 10% al año sin excepción."
+      },
+      {
+        "question": "¿Debo inscribirme en Medicare si tengo un plan del Mercado ACA?",
+        "answer": "Sí, en casi todos los casos. Calificar para la Parte A sin prima generalmente termina su elegibilidad para los créditos fiscales de prima del ACA, incluso antes de inscribirse realmente en Medicare. Quedarse con un plan subsidiado del Mercado después de los 65 a menudo significa pagar el precio completo sin subsidio sin darse cuenta de que perdió el crédito, y conciliar esa discrepancia en su próximo Formulario 1095-A puede activar un reembolso de créditos que no le correspondían. Inscríbase en Medicare durante su Período de Inscripción Inicial y cancele el plan del Mercado para evitar pagar dos veces."
+      },
+      {
+        "question": "¿Qué pasa si no me inscribo en Medicare cuando cumplo 65?",
+        "answer": "Si no tiene un Período de Inscripción Especial válido, perder su Período de Inscripción Inicial de 7 meses significa esperar el Período de Inscripción General, que va del 1 de enero al 31 de marzo cada año, con la cobertura comenzando el primer día del mes después de inscribirse. También deberá una multa permanente de la Parte B del 10% por cada período completo de 12 meses sin cobertura, y posiblemente una multa de la Parte D del 1% al mes."
+      },
+      {
+        "question": "¿Es gratis la Parte A, y debo tomarla aunque retrase la Parte B?",
+        "answer": "La Parte A no tiene prima en 2026 para la mayoría con 10 o más años de historial laboral cubierto por Medicare, y casi todos deben inscribirse en ella a los 65, incluso mientras retrasan la Parte B por cobertura activa de empleador grande. La única excepción son los trabajadores que contribuyen activamente a una HSA: cualquier inscripción en Medicare, incluida la Parte A gratuita, detiene las contribuciones adicionales a la HSA bajo la Sección 223 del IRC."
+      },
+      {
+        "question": "¿Cómo sé si la cobertura de mi empleador me permite retrasar Medicare?",
+        "answer": "Pida a RRHH que confirme el total de empleados de su empleador en EE.UU. en todas las ubicaciones, incluido el personal a tiempo parcial. Si el total es 20 o más, y tiene cobertura de salud grupal activa (no cobertura de jubilado ni COBRA), puede retrasar la Parte B sin multa. Obtenga confirmación por escrito del tamaño de su empleador y las fechas de su cobertura activa."
+      },
+      {
+        "question": "¿Puedo tener Medicare y Medicaid al mismo tiempo si mi ingreso es bajo?",
+        "answer": "Sí. Si su ingreso está cerca o por debajo de aproximadamente el 135% del Nivel Federal de Pobreza (aproximadamente $21,546 para un individuo en 2026), puede calificar para un Programa de Ahorros de Medicare que paga su prima de la Parte B, o elegibilidad dual completa de Medicare y Medicaid a través del programa de su estado, como Medi-Cal en California o MassHealth en Massachusetts. Verifique el nivel federal de pobreza actual y los límites de ingresos de Medicaid de su estado; la inscripción es todo el año sin fecha límite."
+      },
+      {
+        "question": "¿Cuál es el plazo para decidir entre Medicare Original y Medicare Advantage?",
+        "answer": "Puede elegir Medicare Original o Medicare Advantage en cualquier momento durante su Período de Inscripción Inicial de 7 meses o durante un Período de Inscripción Especial válido. Si elige Medicare Original y quiere un suplemento Medigap, obtiene una ventana única de emisión garantizada de 6 meses que comienza el mes en que cumple 65 Y está inscrito en la Parte B; después de eso, las aseguradoras de Medigap en la mayoría de los estados pueden suscribirlo médicamente."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicare Eligibility 2026",
+        "es": "Elegibilidad de Medicare 2026"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Nivel Federal de Pobreza 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Límites de Ingresos de Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Turning 65 (Medicare Eligibility)",
+        "es": "Cumpliendo 65 (Elegibilidad para Medicare)"
+      },
+      "href": "/event/turning-65-medicare"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Medicare.gov: When can I sign up for Medicare?",
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up/when-can-i-sign-up-for-medicare",
+      "note": {
+        "en": "Official IEP, employer-retirement SEP, and General Enrollment Period rules.",
+        "es": "Reglas oficiales del IEP, SEP de jubilación del empleador, y Período de Inscripción General."
+      }
+    },
+    {
+      "name": "Social Security Administration: Apply for Medicare",
+      "url": "https://www.ssa.gov/medicare/sign-up",
+      "note": {
+        "en": "Where to enroll if not auto-enrolled, plus Form CMS-L564 for the employer-retirement SEP.",
+        "es": "Dónde inscribirse si no es inscrito automáticamente, más el Formulario CMS-L564 para el SEP de jubilación del empleador."
+      }
+    },
+    {
+      "name": "CMS: 2026 Medicare Parts A and B Premiums and Deductibles",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+      "note": {
+        "en": "Source for the 2026 Part B premium ($202.90), Part B deductible ($283), and Part A hospital deductible ($1,736).",
+        "es": "Fuente de la prima de la Parte B 2026 ($202.90), deducible de la Parte B ($283), y deducible hospitalario de la Parte A ($1,736)."
+      }
+    },
+    {
+      "name": "Medicare.gov: Late enrollment penalties",
+      "url": "https://www.medicare.gov/basics/costs/medicare-costs/avoid-penalties",
+      "note": {
+        "en": "Part B 10% per year and Part D 1% per month lifetime penalty rules.",
+        "es": "Reglas de multa de por vida de la Parte B 10% al año y la Parte D 1% al mes."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Medicare and the Marketplace",
+      "url": "https://www.healthcare.gov/medicare/",
+      "note": {
+        "en": "Explains why premium tax credit eligibility generally ends once you qualify for premium-free Part A.",
+        "es": "Explica por qué la elegibilidad del crédito fiscal de prima generalmente termina al calificar para la Parte A sin prima."
+      }
+    },
+    {
+      "name": "KFF: An Overview of Medicare",
+      "url": "https://www.kff.org/medicare/issue-brief/an-overview-of-medicare/",
+      "note": {
+        "en": "Independent analysis of Medicare enrollment rules, coordination of benefits, and low-income assistance programs.",
+        "es": "Análisis independiente de las reglas de inscripción de Medicare, coordinación de beneficios, y programas de asistencia de bajos ingresos."
+      }
+    }
+  ],
+  "documentsNeeded": {
+    "en": [
+      "Social Security number and government-issued photo ID for the SSA.gov Medicare application",
+      "Form CMS-L564 (Request for Employment Information), completed by your employer, if delaying Part B due to active large-employer coverage",
+      "Proof of work history (W-2s or your Social Security earnings statement) to confirm premium-free Part A eligibility",
+      "COBRA election notice or ACA Marketplace enrollment confirmation showing your current coverage type and start date",
+      "Annual Notice of Creditable Coverage for prescription drugs from your employer or Marketplace plan",
+      "HSA plan summary and contribution records if weighing whether to delay Medicare to keep an HSA active",
+      "Marriage certificate or proof of spousal coverage if enrolling based on a spouse's employer plan"
+    ],
+    "es": [
+      "Número de Seguro Social e identificación con foto emitida por el gobierno para la solicitud de Medicare en SSA.gov",
+      "Formulario CMS-L564 (Solicitud de Información de Empleo), completado por su empleador, si retrasa la Parte B por cobertura activa de empleador grande",
+      "Prueba de historial laboral (formularios W-2 o estado de ganancias del Seguro Social) para confirmar elegibilidad para la Parte A sin prima",
+      "Aviso de elección de COBRA o confirmación de inscripción del Mercado ACA mostrando su tipo de cobertura actual y fecha de inicio",
+      "Aviso Anual de Cobertura Acreditable para medicamentos recetados de su empleador o plan del Mercado",
+      "Resumen del plan HSA y registros de contribuciones si está considerando retrasar Medicare para mantener una HSA activa",
+      "Certificado de matrimonio o prueba de cobertura del cónyuge si se inscribe basándose en el plan del empleador de un cónyuge"
+    ]
+  },
+  "commonDenialReasons": {
+    "en": [
+      "Applying to delay Part B based on COBRA or retiree coverage, which Social Security rejects because neither qualifies as active employer coverage under Medicare Secondary Payer rules",
+      "Submitting a Part B Special Enrollment Period application without Form CMS-L564 completed by the current employer, causing a default to the General Enrollment Period process",
+      "Applying after the 8-month employer-retirement SEP window has already closed",
+      "Reporting employer size incorrectly (counting only your local office instead of the employer's full US headcount across all locations)",
+      "Enrolling in Medicare Advantage or Medigap outside of the Initial Enrollment Period, a valid Special Enrollment Period, or the Medigap guaranteed-issue window"
+    ],
+    "es": [
+      "Solicitar retrasar la Parte B basándose en COBRA o cobertura de jubilado, lo cual el Seguro Social rechaza porque ninguno califica como cobertura activa del empleador bajo las reglas del Pagador Secundario de Medicare",
+      "Enviar una solicitud del Período de Inscripción Especial de la Parte B sin el Formulario CMS-L564 completado por el empleador actual, causando que se recurra al proceso del Período de Inscripción General",
+      "Solicitar después de que la ventana del SEP de jubilación del empleador de 8 meses ya haya cerrado",
+      "Reportar el tamaño del empleador incorrectamente (contando solo su oficina local en lugar del total de empleados del empleador en todo EE.UU.)",
+      "Inscribirse en Medicare Advantage o Medigap fuera del Período de Inscripción Inicial, un Período de Inscripción Especial válido, o la ventana de emisión garantizada de Medigap"
+    ]
+  },
+  "comparisonNarrative": {
+    "heading": {
+      "en": "Enroll Now vs Delay: Which Should You Choose?",
+      "es": "Inscribirse Ahora vs Retrasar: ¿Cuál Debe Elegir?"
+    },
+    "body": {
+      "en": "Coverage type decides this question, not age or income. Active large-employer group coverage (20 or more employees, yours or a spouse's) is the only scenario where delaying Part B carries no penalty, because that plan pays primary and Medicare would only duplicate it. COBRA, retiree health plans, and ACA Marketplace plans all fail the Medicare Secondary Payer test, so anyone in one of those three situations at 65 should enroll in Part B during the 7-month Initial Enrollment Period rather than assume the coverage they already have is good enough. Retirees with no other coverage have the most straightforward answer: enroll in Parts A and B on time, every time. The single carve-out that favors delay even without qualifying employer coverage is an active HSA, since any Medicare enrollment permanently stops future HSA contributions and the tax benefit of the account may outweigh a short delay for some workers who are still actively funding the account.",
+      "es": "El tipo de cobertura decide esta pregunta, no la edad ni el ingreso. La cobertura grupal activa de empleador grande (20 o más empleados, suya o de un cónyuge) es el único escenario donde retrasar la Parte B no tiene multa, porque ese plan paga primero y Medicare solo lo duplicaría. COBRA, los planes de jubilados, y los planes del Mercado ACA fallan la prueba del Pagador Secundario de Medicare, así que cualquiera en una de esas tres situaciones a los 65 debe inscribirse en la Parte B durante el Período de Inscripción Inicial de 7 meses en lugar de asumir que la cobertura que ya tiene es suficiente. Los jubilados sin otra cobertura tienen la respuesta más simple: inscribirse en las Partes A y B a tiempo, siempre. La única excepción que favorece retrasar incluso sin cobertura de empleador calificada es una HSA activa, ya que cualquier inscripción en Medicare detiene permanentemente las contribuciones futuras a la HSA."
+    }
+  },
+  "stateRules": [
+    {
+      "state": "California",
+      "rule": "Cal-COBRA extends continuation coverage for employers with 2-19 employees up to 36 months, but Cal-COBRA still does not count as active employer coverage for the Medicare Part B delay exemption. Enroll in Part B on time even while on Cal-COBRA.",
+      "sourceUrl": "https://www.dhcs.ca.gov/services/Pages/COBRA_info.aspx"
+    },
+    {
+      "state": "New York",
+      "rule": "New York's mini-COBRA covers employers with 2-19 employees for up to 36 months of continuation coverage, but it does not satisfy the Medicare Secondary Payer active-coverage test. Enroll in Medicare Part B on time regardless of mini-COBRA status.",
+      "sourceUrl": "https://www.dfs.ny.gov/consumers/health_insurance/cobra"
+    },
+    {
+      "state": "New Jersey",
+      "rule": "New Jersey's Continuation of Benefits law extends group coverage for employers with 2-50 employees for up to 18 months, but this state continuation coverage does not qualify as active employer coverage for delaying Medicare Part B.",
+      "sourceUrl": "https://www.state.nj.us/dobi/division_insurance/ihcseh/cobra.htm"
+    },
+    {
+      "state": "Florida",
+      "rule": "Florida's mini-COBRA applies to employers with 1-19 employees for 18 months of continuation coverage; like federal COBRA, it does not meet the active-coverage standard needed to delay Medicare Part B without penalty.",
+      "sourceUrl": "https://www.myfloridacfo.com/division/consumers/understanding-coverage/health-insurance/cobra"
+    }
+  ],
+  "topicCluster": "event-medicare-iep",
+  "keyTerms": {
+    "en": [
+      "should i enroll in medicare 2026",
+      "enroll in medicare or wait",
+      "medicare enrollment decision at 65",
+      "delay medicare part b employer coverage",
+      "medicare vs cobra vs aca at 65",
+      "medicare initial enrollment period 2026"
+    ],
+    "es": [
+      "debo inscribirme en medicare 2026",
+      "inscribirse en medicare o esperar",
+      "decision de inscripcion medicare a los 65",
+      "retrasar parte b medicare cobertura empleador",
+      "medicare vs cobra vs aca a los 65"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
