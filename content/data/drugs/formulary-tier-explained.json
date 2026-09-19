@@ -1,0 +1,624 @@
+{
+  "slug": "formulary-tier-explained",
+  "drugName": {
+    "en": "Prescription Drug Formulary Tiers (Tier 1, Tier 2, Tier 3, and Specialty Tier)",
+    "es": "Niveles del Formulario de Medicamentos Recetados (Nivel 1, Nivel 2, Nivel 3 y Nivel Especializado)"
+  },
+  "shortName": {
+    "en": "Formulary Tiers Explained",
+    "es": "Niveles del Formulario Explicados"
+  },
+  "nonProprietaryName": "Prescription drug formulary tier classification system (Tier 1 through specialty tier); not a specific drug",
+  "brandNames": [
+    "CVS Caremark",
+    "Express Scripts",
+    "OptumRx",
+    "Humana Pharmacy Solutions",
+    "Prime Therapeutics"
+  ],
+  "drugClass": {
+    "en": "Prescription drug benefit design concept (not a pharmacology class; the cost-sharing tier system used by Medicare Part D and commercial formularies to set copays and coinsurance)",
+    "es": "Concepto de diseno de beneficios de medicamentos recetados (no es una clase farmacologica; el sistema de niveles de costo compartido que usan Medicare Parte D y los formularios comerciales para fijar copagos y coaseguro)"
+  },
+  "routeOfAdministration": "Oral",
+  "medicalSpecialty": "Preventive Medicine",
+  "lastUpdated": "2026-09-19",
+  "readingTime": "9 min read",
+  "hcpcsJCodes": [],
+  "ctaTarget": "analyzer",
+  "topicCluster": "drug-cost",
+  "keyTerms": {
+    "en": ["formulary tier", "drug formulary tiers 2026", "tier 1 vs tier 2 vs tier 3", "specialty tier drugs", "Medicare Part D formulary", "tiering exception"],
+    "es": ["nivel del formulario", "niveles de formulario de medicamentos 2026", "nivel 1 vs nivel 2 vs nivel 3", "medicamentos de nivel especializado", "formulario de Medicare Parte D"]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "meta": {
+    "title": {
+      "en": "Tier 1 vs 2 vs 3 vs Specialty Drug Tiers (2026) | CoveredUSA",
+      "es": "Nivel 1 vs 2 vs 3 vs Especializado de Medicamentos (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Tier 1 generics cost $0-$10, specialty tier drugs run 25%-33% coinsurance in 2026. See Part D copay ranges by tier and how to appeal a high-tier denial.",
+      "es": "Nivel 1 cuesta $0-$10, Nivel Especializado tiene coaseguro de 25%-33% en 2026. Vea los rangos de copago de la Parte D por nivel y como apelar."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Formulary Tier 1 vs Tier 2 vs Tier 3 vs Specialty Tier: What Each Costs in 2026",
+      "es": "Nivel 1 vs Nivel 2 vs Nivel 3 vs Nivel Especializado del Formulario: Lo Que Cuesta Cada Uno en 2026"
+    },
+    "subhero": {
+      "en": "Every Medicare Part D and commercial health plan sorts covered medications into formulary tiers, a ranking that decides your copay or coinsurance at the pharmacy counter. In 2026, Tier 1 preferred generics run $0 to $10, while specialty-tier drugs, defined by CMS as those costing more than $950 a month, carry 25% to 33% coinsurance. This guide breaks down every tier, the 2026 Medicare Part D deductible and out-of-pocket cap, and how to request a formulary exception when your prescriber's chosen drug lands on a high tier.",
+      "es": "Todos los planes de Medicare Parte D y comerciales clasifican los medicamentos cubiertos en niveles del formulario, una clasificacion que determina su copago o coaseguro en la farmacia. En 2026, los genericos preferidos del Nivel 1 cuestan de $0 a $10, mientras que los medicamentos de Nivel Especializado, definidos por CMS como aquellos que cuestan mas de $950 al mes, tienen un coaseguro de 25% a 33%. Esta guia explica cada nivel, el deducible y el limite de gastos de bolsillo de Medicare Parte D 2026, y como solicitar una excepcion del formulario cuando el medicamento elegido por su medico cae en un nivel alto."
+    }
+  },
+  "quickAnswer": {
+    "en": "Drug formulary tiers determine how much you pay at the pharmacy counter. In 2026, Tier 1 preferred generics typically cost $0 to $10 for a 30-day supply, Tier 2 preferred brands or non-preferred generics run $10 to $45, Tier 3 non-preferred brands run $40 to $100 or 25% to 34% coinsurance, and the specialty tier, reserved for drugs costing more than $950 a month in 2026, carries 25% to 33% coinsurance. Medicare Part D's 2026 annual out-of-pocket cap is $2,100, after which covered drugs cost $0 for the rest of the year under Inflation Reduction Act rules. If your prescriber's chosen drug lands on a high tier, you can request a formulary or tiering exception, though specialty-tier drugs are generally excluded from that option since 2022.",
+    "es": "Los niveles del formulario de medicamentos determinan cuanto paga en la farmacia. En 2026, los genericos preferidos del Nivel 1 cuestan tipicamente $0 a $10 por un suministro de 30 dias, las marcas preferidas o genericos no preferidos del Nivel 2 cuestan $10 a $45, las marcas no preferidas del Nivel 3 cuestan $40 a $100 o 25% a 34% de coaseguro, y el Nivel Especializado, reservado para medicamentos que cuestan mas de $950 al mes en 2026, tiene un coaseguro de 25% a 33%. El limite anual de gastos de bolsillo de Medicare Parte D 2026 es de $2,100, despues del cual los medicamentos cubiertos cuestan $0 el resto del ano bajo las reglas de la Ley de Reduccion de la Inflacion. Si el medicamento elegido por su medico cae en un nivel alto, puede solicitar una excepcion del formulario o de nivel, aunque los medicamentos de Nivel Especializado generalmente estan excluidos de esa opcion desde 2022."
+  },
+  "pricing": {
+    "medicareAspPerUnit": null,
+    "medicareAspUnit": null,
+    "retailLow": 0,
+    "retailHigh": 950,
+    "retailUnit": {
+      "en": "per month (typical patient out-of-pocket cost across Tier 1 through Tier 4, 2026)",
+      "es": "por mes (costo tipico de bolsillo del paciente en los Niveles 1 a 4, 2026)"
+    },
+    "inpatientLow": 950,
+    "inpatientHigh": 12000,
+    "inpatientUnit": {
+      "en": "per month (specialty-tier drug list price / facility charge range, 2026)",
+      "es": "por mes (rango de precio de lista o cargo de instalacion de medicamentos de Nivel Especializado, 2026)"
+    },
+    "medicarePartDMonthlyCap": null,
+    "medicaidCopayLow": 1,
+    "medicaidCopayHigh": 4,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283,
+    "partDAnnualOopCap": 2100
+  },
+  "introParagraphs": [
+    {
+      "en": "Health insurers and Medicare Part D prescription drug plans divide every covered medication into formulary tiers, a ranking system that determines your copay or coinsurance at the pharmacy counter. Most 2026 formularies use four to six tiers: Tier 1 for preferred generics, Tier 2 for non-preferred generics or preferred brand-name drugs, Tier 3 for non-preferred brand-name drugs, Tier 4 for higher-cost non-preferred drugs, and a specialty tier for the most expensive biologics and rare-disease treatments. The tier assigned to your prescription, not just whether it is a brand or generic, is the single biggest factor in what you pay each month. A drug moved from Tier 2 to Tier 3 during an annual formulary update can double or triple a patient's copay without any change to the prescription itself.",
+      "es": "Las aseguradoras de salud y los planes de medicamentos recetados de Medicare Parte D dividen cada medicamento cubierto en niveles del formulario, un sistema de clasificacion que determina su copago o coaseguro en la farmacia. La mayoria de los formularios de 2026 usan de cuatro a seis niveles: Nivel 1 para genericos preferidos, Nivel 2 para genericos no preferidos o marcas preferidas, Nivel 3 para marcas no preferidas, Nivel 4 para medicamentos no preferidos de mayor costo, y un Nivel Especializado para los biologicos mas costosos y tratamientos de enfermedades raras. El nivel asignado a su receta, no solo si es de marca o generico, es el factor mas importante en lo que paga cada mes. Un medicamento movido del Nivel 2 al Nivel 3 durante una actualizacion anual del formulario puede duplicar o triplicar el copago de un paciente sin ningun cambio en la receta misma."
+    },
+    {
+      "en": "CMS sets the overall Part D benefit structure that formulary tiers operate inside. In 2026, the standard Part D deductible is $615, and the annual out-of-pocket cap is $2,100, the point at which covered drugs cost $0 for the remainder of the calendar year under Inflation Reduction Act rules. Within that structure, plans set their own tier count and cost-sharing amounts, subject to CMS review. Preferred brand-name drugs on Tier 3 typically carry coinsurance of 25% to 34% depending on plan type, according to KFF's 2026 Part D enrollment analysis. The specialty tier applies to any drug that costs more than $950 per month in 2026, per the CMS specialty-tier cost threshold, and specialty-tier coinsurance averages 25% to 28%.",
+      "es": "CMS establece la estructura general del beneficio de la Parte D dentro de la cual operan los niveles del formulario. En 2026, el deducible estandar de la Parte D es de $615, y el limite anual de gastos de bolsillo es de $2,100, el punto en el que los medicamentos cubiertos cuestan $0 el resto del ano calendario bajo las reglas de la Ley de Reduccion de la Inflacion. Dentro de esa estructura, los planes establecen su propio numero de niveles y montos de costo compartido, sujetos a revision de CMS. Las marcas preferidas del Nivel 3 tipicamente tienen un coaseguro de 25% a 34% segun el tipo de plan, de acuerdo con el analisis de inscripcion de la Parte D 2026 de KFF. El Nivel Especializado se aplica a cualquier medicamento que cueste mas de $950 al mes en 2026, segun el umbral de costo de CMS, y el coaseguro promedio del Nivel Especializado es de 25% a 28%."
+    },
+    {
+      "en": "Ten drugs entered Medicare's Maximum Fair Price program on January 1, 2026 under the Inflation Reduction Act of 2022, including Eliquis, Jardiance, and Enbrel. When a drug's negotiated Maximum Fair Price is lower than its prior list price, Part D plans generally pass that reduction through regardless of formulary tier placement, though the tier itself still determines whether prior authorization or step therapy applies before the plan approves the prescription. Medicaid, by contrast, uses a single preferred drug list rather than tiers, and copays are capped at $1 to $4 per prescription in most states in 2026. Patients moving between Medicare Part D and Medicaid, or applying for a low-income subsidy, should confirm which cost-sharing rules apply to their specific drug and plan.",
+      "es": "Diez medicamentos entraron al programa de Precio Justo Maximo de Medicare el 1 de enero de 2026 bajo la Ley de Reduccion de la Inflacion de 2022, incluyendo Eliquis, Jardiance y Enbrel. Cuando el Precio Justo Maximo negociado de un medicamento es menor que su precio de lista anterior, los planes de la Parte D generalmente transfieren esa reduccion sin importar el nivel del formulario, aunque el nivel en si sigue determinando si se requiere autorizacion previa o terapia escalonada antes de que el plan apruebe la receta. Medicaid, en cambio, usa una sola lista de medicamentos preferidos en lugar de niveles, y los copagos estan limitados a $1 a $4 por receta en la mayoria de los estados en 2026. Los pacientes que se mueven entre Medicare Parte D y Medicaid, o que solicitan un subsidio de bajos ingresos, deben confirmar que reglas de costo compartido aplican a su medicamento y plan especifico."
+    }
+  ],
+  "pointOfPay": {
+    "rows": [
+      {
+        "pointOfPay": {
+          "en": "Tier 1: Preferred generic",
+          "es": "Nivel 1: Generico preferido"
+        },
+        "cost": {
+          "en": "$0 - $10 (30-day supply, 2026)",
+          "es": "$0 - $10 (suministro de 30 dias, 2026)"
+        },
+        "notes": {
+          "en": "Lowest cost-sharing tier; nearly all common generics (atorvastatin, lisinopril, metformin) land here.",
+          "es": "Nivel de menor costo compartido; casi todos los genericos comunes (atorvastatina, lisinopril, metformina) caen aqui."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Tier 2: Non-preferred generic / preferred brand",
+          "es": "Nivel 2: Generico no preferido / marca preferida"
+        },
+        "cost": {
+          "en": "$10 - $45 (30-day supply, 2026)",
+          "es": "$10 - $45 (suministro de 30 dias, 2026)"
+        },
+        "notes": {
+          "en": "Some plans use a flat copay; others charge 15%-20% coinsurance instead.",
+          "es": "Algunos planes usan un copago fijo; otros cobran 15%-20% de coaseguro en su lugar."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Tier 3: Non-preferred brand",
+          "es": "Nivel 3: Marca no preferida"
+        },
+        "cost": {
+          "en": "$40 - $100 or 25% - 34% coinsurance (2026)",
+          "es": "$40 - $100 o 25% - 34% de coaseguro (2026)"
+        },
+        "notes": {
+          "en": "Prior authorization or step therapy is often required before the plan approves the fill.",
+          "es": "A menudo se requiere autorizacion previa o terapia escalonada antes de que el plan apruebe la receta."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Tier 4: Non-preferred / high-cost drug",
+          "es": "Nivel 4: Medicamento no preferido / de alto costo"
+        },
+        "cost": {
+          "en": "$90 - $150 or up to 40% coinsurance (2026)",
+          "es": "$90 - $150 o hasta 40% de coaseguro (2026)"
+        },
+        "notes": {
+          "en": "Some plans merge Tier 4 into the specialty tier instead of keeping it separate.",
+          "es": "Algunos planes fusionan el Nivel 4 con el Nivel Especializado en lugar de mantenerlo separado."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Specialty tier",
+          "es": "Nivel Especializado"
+        },
+        "cost": {
+          "en": "25% - 33% coinsurance on drugs over $950/month (2026)",
+          "es": "25% - 33% de coaseguro en medicamentos de mas de $950/mes (2026)"
+        },
+        "notes": {
+          "en": "CMS-defined cost threshold; generally excluded from tiering exceptions to a lower tier since 2022.",
+          "es": "Umbral de costo definido por CMS; generalmente excluido de excepciones de nivel a un nivel mas bajo desde 2022."
+        }
+      }
+    ],
+    "tableFootnote": {
+      "en": "Copay and coinsurance amounts vary by specific plan and state. The 2026 Part D annual out-of-pocket cap is $2,100 per the Inflation Reduction Act; costs drop to $0 for covered drugs once that cap is reached.",
+      "es": "Los montos de copago y coaseguro varian segun el plan y el estado especificos. El limite anual de gastos de bolsillo de la Parte D 2026 es de $2,100 segun la Ley de Reduccion de la Inflacion; los costos bajan a $0 para medicamentos cubiertos una vez alcanzado ese limite."
+    },
+    "tableSource": "CMS Medicare Part D 2026 benefit parameters; KFF Medicare Part D 2026 enrollment and cost-sharing analysis"
+  },
+  "whyHospitalsCharge": {
+    "paragraphs": [
+      {
+        "en": "Pharmacy benefit managers, primarily CVS Caremark, Express Scripts, and OptumRx, design most commercial and Part D formularies and negotiate rebates directly with drug manufacturers. Placement on a low tier is often the result of a rebate deal between the manufacturer and the PBM, not necessarily the clinical value of the drug. A brand-name drug with a large rebate can sometimes land on Tier 2 while a cheaper competitor sits on Tier 3, because the PBM's formulary committee weighs net cost after rebates, not list price.",
+        "es": "Los administradores de beneficios de farmacia, principalmente CVS Caremark, Express Scripts y OptumRx, disenan la mayoria de los formularios comerciales y de la Parte D y negocian descuentos directamente con los fabricantes de medicamentos. La colocacion en un nivel bajo suele ser el resultado de un acuerdo de descuento entre el fabricante y el PBM, no necesariamente el valor clinico del medicamento. Una marca con un gran descuento a veces cae en el Nivel 2 mientras un competidor mas barato queda en el Nivel 3, porque el comite del formulario del PBM evalua el costo neto despues de descuentos, no el precio de lista."
+      },
+      {
+        "en": "Specialty-tier drugs concentrate cost because they are biologics, gene therapies, or treatments for rare diseases that have no generic or biosimilar competition. Manufacturers set list prices with little competitive pressure, and CMS's 2026 specialty-tier threshold of $950 per month captures roughly 1,000 to 1,200 drugs nationally. When a specialty drug is administered by infusion in a clinic or hospital rather than picked up at a retail pharmacy, it may instead bill under the Medicare Part B medical benefit at facility rates, which can run far higher than the same drug's Part D specialty-tier coinsurance. Patients who receive a surprising hospital bill for an infused specialty drug can use the CoveredUSA Medical Bill Analyzer to check the charge against the Medicare ASP benchmark rate.",
+        "es": "Los medicamentos de Nivel Especializado concentran el costo porque son biologicos, terapias genicas o tratamientos para enfermedades raras que no tienen competencia de genericos o biosimilares. Los fabricantes fijan precios de lista con poca presion competitiva, y el umbral de Nivel Especializado de CMS de $950 al mes en 2026 abarca aproximadamente 1,000 a 1,200 medicamentos a nivel nacional. Cuando un medicamento especializado se administra por infusion en una clinica u hospital en lugar de recogerse en una farmacia minorista, puede facturarse bajo el beneficio medico de Medicare Parte B a tarifas de instalacion, que pueden ser mucho mas altas que el coaseguro de Nivel Especializado de la Parte D del mismo medicamento. Los pacientes que reciben una factura hospitalaria sorprendente por un medicamento especializado infundido pueden usar el Analizador de Facturas Medicas de CoveredUSA para verificar el cargo contra la tarifa de referencia ASP de Medicare."
+      },
+      {
+        "en": "Formulary tier placement changes at least once a year, typically each January, and sometimes mid-year when a new generic or biosimilar launches. A plan may move a brand-name drug from Tier 2 to Tier 3, or add a new generic to Tier 1, without notifying every enrollee individually. Reviewing your plan's formulary each fall during Medicare's Annual Enrollment Period, or checking your commercial plan's updated drug list each January, is the only reliable way to catch a tier change before it hits your pharmacy bill.",
+        "es": "La colocacion en el nivel del formulario cambia al menos una vez al ano, normalmente cada enero, y a veces a mitad de ano cuando se lanza un nuevo generico o biosimilar. Un plan puede mover una marca del Nivel 2 al Nivel 3, o agregar un nuevo generico al Nivel 1, sin notificar individualmente a cada inscrito. Revisar el formulario de su plan cada otono durante el Periodo de Inscripcion Anual de Medicare, o verificar la lista de medicamentos actualizada de su plan comercial cada enero, es la unica forma confiable de detectar un cambio de nivel antes de que afecte su factura de farmacia."
+      }
+    ]
+  },
+  "patientAssistancePrograms": {
+    "intro": {
+      "en": "When a prescribed drug lands on Tier 3, Tier 4, or the specialty tier and the coinsurance is still unaffordable, several assistance routes exist outside the formulary system itself. These options work whether or not a formulary exception is approved:",
+      "es": "Cuando un medicamento recetado cae en el Nivel 3, Nivel 4 o el Nivel Especializado y el coaseguro sigue siendo inasequible, existen varias vias de asistencia fuera del sistema del formulario en si. Estas opciones funcionan sin importar si se aprueba o no una excepcion del formulario:"
+    },
+    "rows": [
+      {
+        "program": "NeedyMeds Patient Assistance Program Database",
+        "costBenefit": {
+          "en": "Directory of manufacturer patient assistance programs offering free or reduced-cost brand drugs; income typically ≤ 400% FPL",
+          "es": "Directorio de programas de asistencia al paciente del fabricante que ofrecen medicamentos de marca gratis o a costo reducido; ingreso tipicamente ≤ 400% FPL"
+        },
+        "howToApply": "needymeds.org"
+      },
+      {
+        "program": "GoodRx (pharmacy discount coupon)",
+        "costBenefit": {
+          "en": "Up to 80% off retail cash price; sometimes cheaper than a Tier 3 copay; free, no enrollment",
+          "es": "Hasta 80% de descuento sobre el precio en efectivo; a veces mas barato que un copago del Nivel 3; gratis, sin inscripcion"
+        },
+        "howToApply": "goodrx.com"
+      },
+      {
+        "program": "Mark Cuban Cost Plus Drugs",
+        "costBenefit": {
+          "en": "Generic drugs near wholesale cost plus a $3 pharmacist fee; bypasses formulary tiers entirely",
+          "es": "Medicamentos genericos a costo casi mayorista mas una tarifa de farmaceutico de $3; evita por completo los niveles del formulario"
+        },
+        "howToApply": "costplusdrugs.com"
+      },
+      {
+        "program": "Medicare Part D Extra Help (Low-Income Subsidy)",
+        "costBenefit": {
+          "en": "Caps copays at $5.10 generic / $12.65 brand in 2026 regardless of formulary tier for qualifying income",
+          "es": "Limita los copagos a $5.10 generico / $12.65 marca en 2026 sin importar el nivel del formulario para ingresos calificados"
+        },
+        "howToApply": "ssa.gov/benefits/medicare/prescriptionhelp"
+      },
+      {
+        "program": "Manufacturer Patient Assistance Program (brand-specific)",
+        "costBenefit": {
+          "en": "Free drug for income-qualified, typically uninsured patients; requires per-drug enrollment",
+          "es": "Medicamento gratis para pacientes calificados por ingresos, tipicamente sin seguro; requiere inscripcion por medicamento"
+        },
+        "howToApply": "Search '[drug name] patient assistance program' or visit needymeds.org"
+      }
+    ],
+    "footnote": {
+      "en": "Manufacturer coupons and copay cards cannot be used by Medicare, Medicaid, TRICARE, or VA beneficiaries under the federal anti-kickback statute (42 U.S.C. § 1320a-7b), regardless of formulary tier. Income-based manufacturer patient assistance programs, which give the drug away rather than offering a coupon, remain available to Medicare and Medicaid enrollees.",
+      "es": "Los cupones y tarjetas de copago del fabricante no pueden ser usados por beneficiarios de Medicare, Medicaid, TRICARE o VA bajo el estatuto federal anti-soborno (42 U.S.C. § 1320a-7b), sin importar el nivel del formulario. Los programas de asistencia al paciente del fabricante basados en ingresos, que regalan el medicamento en lugar de ofrecer un cupon, siguen disponibles para beneficiarios de Medicare y Medicaid."
+    },
+    "source": "NeedyMeds.org, GoodRx.com, CostPlusDrugs.com, SSA.gov"
+  },
+  "medicarePartD": {
+    "hasSpecificCap": false,
+    "paragraphs": [
+      {
+        "en": "Medicare Part D enrollees pay formulary tier cost-sharing until they reach the plan's initial coverage limit, move through the coverage gap phase, and finally reach the $2,100 annual out-of-pocket cap set for 2026. Once that cap is reached, Part D covers 100% of costs for covered formulary drugs for the rest of the calendar year, a protection created by the Inflation Reduction Act of 2022. Tier placement matters most in the months before that cap is reached.",
+        "es": "Los inscritos en Medicare Parte D pagan el costo compartido del nivel del formulario hasta alcanzar el limite de cobertura inicial del plan, pasar por la fase de brecha de cobertura, y finalmente llegar al limite anual de gastos de bolsillo de $2,100 fijado para 2026. Una vez alcanzado ese limite, la Parte D cubre el 100% de los costos de los medicamentos del formulario cubiertos por el resto del ano calendario, una proteccion creada por la Ley de Reduccion de la Inflacion de 2022. La colocacion en el nivel importa mas en los meses antes de alcanzar ese limite."
+      },
+      {
+        "en": "Extra Help, Medicare's Low-Income Subsidy program, overrides standard formulary tier cost-sharing for enrollees with income up to roughly 150% of the federal poverty level in 2026. Full-subsidy enrollees pay no more than $1.60 for a generic or $4.90 for a brand-name drug if their income is at or below 100% FPL, and no more than $5.10 generic / $12.65 brand-name if their income is between 100% and 150% FPL, regardless of which tier the plan assigned the drug. Extra Help also eliminates the $615 deductible. Applications go through the Social Security Administration at ssa.gov.",
+        "es": "Extra Help, el programa de Subsidio de Bajos Ingresos de Medicare, anula el costo compartido estandar del nivel del formulario para inscritos con ingresos hasta aproximadamente 150% del nivel federal de pobreza en 2026. Los inscritos con subsidio completo pagan no mas de $1.60 por un generico o $4.90 por una marca si su ingreso esta en o por debajo del 100% FPL, y no mas de $5.10 generico / $12.65 marca si su ingreso esta entre 100% y 150% FPL, sin importar el nivel que el plan asigno al medicamento. Extra Help tambien elimina el deducible de $615. Las solicitudes se hacen a traves de la Administracion del Seguro Social en ssa.gov."
+      },
+      {
+        "en": "Ten drugs, including Eliquis, Jardiance, Xarelto, Januvia, Farxiga, Entresto, Enbrel, Imbruvica, Stelara, and Fiasp/NovoLog, carry a Medicare-negotiated Maximum Fair Price effective January 1, 2026 under the Inflation Reduction Act. Part D plans must offer these Maximum Fair Prices to enrollees regardless of the drug's formulary tier, which means a patient's out-of-pocket cost for these ten specific drugs is now capped closer to the negotiated price rather than the plan's normal tier coinsurance percentage.",
+        "es": "Diez medicamentos, incluyendo Eliquis, Jardiance, Xarelto, Januvia, Farxiga, Entresto, Enbrel, Imbruvica, Stelara y Fiasp/NovoLog, tienen un Precio Justo Maximo negociado por Medicare vigente desde el 1 de enero de 2026 bajo la Ley de Reduccion de la Inflacion. Los planes de la Parte D deben ofrecer estos Precios Justos Maximos a los inscritos sin importar el nivel del formulario del medicamento, lo que significa que el costo de bolsillo de un paciente para estos diez medicamentos especificos ahora esta limitado mas cerca del precio negociado que del porcentaje normal de coaseguro del nivel del plan."
+      }
+    ]
+  },
+  "commonBillingErrors": {
+    "intro": {
+      "en": "Common mistakes patients make with formulary tiers that lead to overpaying at the pharmacy counter:",
+      "es": "Errores comunes que cometen los pacientes con los niveles del formulario que llevan a pagar de mas en la farmacia:"
+    },
+    "items": [
+      {
+        "en": "Assuming a generic drug is automatically Tier 1. Some non-preferred generics sit on Tier 2 or even Tier 3 depending on the plan's rebate agreements.",
+        "es": "Suponer que un medicamento generico es automaticamente Nivel 1. Algunos genericos no preferidos estan en el Nivel 2 o incluso el Nivel 3 segun los acuerdos de descuento del plan."
+      },
+      {
+        "en": "Paying full non-preferred brand coinsurance without asking the prescriber to request a formulary exception first, even when a lower-tier clinical alternative may not exist.",
+        "es": "Pagar el coaseguro completo de marca no preferida sin pedirle primero al medico que solicite una excepcion del formulario, incluso cuando puede no existir una alternativa clinica de nivel mas bajo."
+      },
+      {
+        "en": "Not verifying that a mid-year formulary update moved a long-term prescription to a higher tier before refilling automatically through mail order.",
+        "es": "No verificar que una actualizacion del formulario a mitad de ano movio una receta de largo plazo a un nivel mas alto antes de resurtir automaticamente por correo."
+      },
+      {
+        "en": "Continuing to pay tier-based copays after reaching the 2026 Part D annual out-of-pocket cap of $2,100, when covered drugs should cost $0 for the rest of the year.",
+        "es": "Seguir pagando copagos basados en el nivel despues de alcanzar el limite anual de gastos de bolsillo de la Parte D 2026 de $2,100, cuando los medicamentos cubiertos deberian costar $0 el resto del ano."
+      },
+      {
+        "en": "Using a manufacturer coupon at the pharmacy while enrolled in Medicare Part D, which most pharmacy systems will reject or which violates the federal anti-kickback statute if it does process.",
+        "es": "Usar un cupon del fabricante en la farmacia mientras esta inscrito en Medicare Parte D, lo cual la mayoria de los sistemas de farmacia rechazaran o que viola el estatuto federal anti-soborno si llega a procesarse."
+      }
+    ]
+  },
+  "denialAlternatives": {
+    "appealSteps": [
+      {
+        "en": "Step 1: Request the written denial or coverage determination notice from your Part D plan, which explains the specific reason your drug was denied or placed on a high tier.",
+        "es": "Paso 1: Solicite el aviso escrito de denegacion o determinacion de cobertura de su plan de la Parte D, que explica la razon especifica por la que su medicamento fue denegado o colocado en un nivel alto."
+      },
+      {
+        "en": "Step 2: Ask your prescriber to file a tiering exception or coverage determination request with a supporting medical necessity statement during the same visit or call.",
+        "es": "Paso 2: Pida a su medico que presente una solicitud de excepcion de nivel o determinacion de cobertura con una declaracion de necesidad medica de respaldo durante la misma visita o llamada."
+      },
+      {
+        "en": "Step 3: If denied, file a formal redetermination appeal with your plan within 60 days of the denial notice; plans must respond within 7 days for standard requests or 72 hours for expedited ones.",
+        "es": "Paso 3: Si se deniega, presente una apelacion formal de redeterminacion con su plan dentro de 60 dias del aviso de denegacion; los planes deben responder en 7 dias para solicitudes estandar o 72 horas para las urgentes."
+      },
+      {
+        "en": "Step 4: If the plan upholds the denial, escalate to an Independent Review Entity, then an Administrative Law Judge if the disputed amount meets the 2026 threshold of approximately $200.",
+        "es": "Paso 4: Si el plan mantiene la denegacion, escale a una Entidad de Revision Independiente, y luego a un Juez de Derecho Administrativo si el monto en disputa cumple con el umbral de 2026 de aproximadamente $200."
+      }
+    ],
+    "stepTherapyOverride": {
+      "en": "If your plan requires you to try a lower-tier drug first before covering your prescriber's chosen medication (step therapy), your prescriber can request a step-therapy override by documenting that the required drug was already tried and failed, is contraindicated, or is expected to be ineffective based on your medical history.",
+      "es": "Si su plan requiere que primero pruebe un medicamento de nivel mas bajo antes de cubrir el medicamento elegido por su medico (terapia escalonada), su medico puede solicitar una anulacion de terapia escalonada documentando que el medicamento requerido ya se probo y fallo, esta contraindicado, o se espera que sea ineficaz segun su historial medico."
+    },
+    "papFallback": {
+      "en": "If every appeal level is exhausted, apply for a manufacturer patient assistance program through NeedyMeds.org or the manufacturer's website directly. These programs are not blocked for Medicare or Medicaid enrollees the way manufacturer coupons are, because they give the drug away rather than subsidizing a copay.",
+      "es": "Si se agotan todos los niveles de apelacion, solicite un programa de asistencia al paciente del fabricante a traves de NeedyMeds.org o directamente en el sitio web del fabricante. Estos programas no estan bloqueados para inscritos de Medicare o Medicaid como lo estan los cupones del fabricante, porque regalan el medicamento en lugar de subsidiar un copago."
+    },
+    "genericAlternative": {
+      "en": "Generic or biosimilar alternative: ask your prescriber whether a Tier 1 generic or a lower-cost biosimilar exists in the same therapeutic class. Switching to a chemically different but clinically equivalent drug in a lower tier is usually faster than winning an exception for the original prescription.",
+      "es": "Alternativa generica o biosimilar: pregunte a su medico si existe un generico del Nivel 1 o un biosimilar de menor costo en la misma clase terapeutica. Cambiar a un medicamento quimicamente diferente pero clinicamente equivalente en un nivel mas bajo suele ser mas rapido que ganar una excepcion para la receta original."
+    }
+  },
+  "genericBiosimilarStatus": {
+    "hasGeneric": true,
+    "genericName": null,
+    "patentExpiry": null,
+    "biosimilars": null,
+    "note": {
+      "en": "Formulary tier placement is not itself a drug, but generic status is the primary driver of Tier 1 placement. A biosimilar, the near-identical copy of a biologic, usually lands on Tier 2 or Tier 3 rather than the specialty tier once approved, cutting coinsurance substantially compared with the original brand-name biologic. Ask your pharmacist whether a generic or biosimilar version of your specific drug exists before accepting a high-tier brand-name assignment.",
+      "es": "La colocacion en el nivel del formulario no es un medicamento en si, pero el estatus de generico es el factor principal para la colocacion en el Nivel 1. Un biosimilar, la copia casi identica de un biologico, generalmente cae en el Nivel 2 o Nivel 3 en lugar del Nivel Especializado una vez aprobado, reduciendo sustancialmente el coaseguro en comparacion con el biologico de marca original. Pregunte a su farmaceutico si existe una version generica o biosimilar de su medicamento especifico antes de aceptar una asignacion de marca de nivel alto."
+    }
+  },
+  "pharmacyPriceComparison": {
+    "caption": {
+      "en": "Tier 1 generic cash price by pharmacy, example: atorvastatin 20mg (2026)",
+      "es": "Precio en efectivo de un generico de Nivel 1 por farmacia, ejemplo: atorvastatina 20mg (2026)"
+    },
+    "rows": [
+      {
+        "pharmacy": "Walmart $4 Generic Program",
+        "price": {
+          "en": "$4 (30-day supply, 2026)",
+          "es": "$4 (suministro de 30 dias, 2026)"
+        },
+        "notes": {
+          "en": "Included in Walmart's $4 Generic Prescription Program for common Tier 1 generics.",
+          "es": "Incluido en el Programa de Recetas Genericas de $4 de Walmart para genericos comunes del Nivel 1."
+        }
+      },
+      {
+        "pharmacy": "Costco Member Prescription",
+        "price": {
+          "en": "$8.50 (30-day supply, 2026)",
+          "es": "$8.50 (suministro de 30 dias, 2026)"
+        },
+        "notes": {
+          "en": "Costco pharmacy members and non-members pay the same cash price.",
+          "es": "Los miembros y no miembros de la farmacia Costco pagan el mismo precio en efectivo."
+        }
+      },
+      {
+        "pharmacy": "Kroger Rx Savings Club",
+        "price": {
+          "en": "$10.99 (30-day supply, 2026)",
+          "es": "$10.99 (suministro de 30 dias, 2026)"
+        },
+        "notes": {
+          "en": "Annual $36 membership fee; no insurance required.",
+          "es": "Tarifa de membresia anual de $36; no se requiere seguro."
+        }
+      },
+      {
+        "pharmacy": "CVS w/ GoodRx coupon",
+        "price": {
+          "en": "$12 - $15 (30-day supply, 2026)",
+          "es": "$12 - $15 (suministro de 30 dias, 2026)"
+        },
+        "notes": {
+          "en": "Free coupon available at goodrx.com; price varies by ZIP code.",
+          "es": "Cupon gratuito disponible en goodrx.com; el precio varia segun el codigo postal."
+        }
+      },
+      {
+        "pharmacy": "Walgreens",
+        "price": {
+          "en": "$18 - $22 (30-day cash price, 2026)",
+          "es": "$18 - $22 (precio en efectivo por 30 dias, 2026)"
+        },
+        "notes": {
+          "en": "Lower with the Walgreens Prescription Savings Club membership.",
+          "es": "Mas bajo con la membresia del Club de Ahorros de Recetas de Walgreens."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "Cash prices vary by ZIP code and pharmacy promotion. Verified September 2026 via GoodRx and chain member-program pricing. Comparing the cash price to your plan's Tier 1 copay before paying is worthwhile since generics are sometimes cheaper in cash than through insurance.",
+      "es": "Los precios en efectivo varian segun el codigo postal y la promocion de la farmacia. Verificado en septiembre de 2026 a traves de GoodRx y precios de programas de membresia de cadenas. Comparar el precio en efectivo con el copago del Nivel 1 de su plan antes de pagar vale la pena, ya que los genericos a veces son mas baratos en efectivo que a traves del seguro."
+    },
+    "source": "GoodRx, Walmart $4 Generic Prescription Program, Costco Member Prescription Program, Kroger Rx Savings Club"
+  },
+  "papEligibilityTable": {
+    "caption": {
+      "en": "Patient assistance program eligibility by household size (2026)",
+      "es": "Elegibilidad del programa de asistencia al paciente por tamano del hogar (2026)"
+    },
+    "fplPctReferenced": 400,
+    "rows": [
+      { "householdSize": 1, "incomeThreshold": 63840, "incomeLabel": { "en": "≤ $63,840", "es": "≤ $63,840" }, "fplPct": 400 },
+      { "householdSize": 2, "incomeThreshold": 86560, "incomeLabel": { "en": "≤ $86,560", "es": "≤ $86,560" }, "fplPct": 400 },
+      { "householdSize": 3, "incomeThreshold": 109280, "incomeLabel": { "en": "≤ $109,280", "es": "≤ $109,280" }, "fplPct": 400 },
+      { "householdSize": 4, "incomeThreshold": 132000, "incomeLabel": { "en": "≤ $132,000", "es": "≤ $132,000" }, "fplPct": 400 },
+      { "householdSize": 5, "incomeThreshold": 154720, "incomeLabel": { "en": "≤ $154,720", "es": "≤ $154,720" }, "fplPct": 400 },
+      { "householdSize": 6, "incomeThreshold": 177440, "incomeLabel": { "en": "≤ $177,440", "es": "≤ $177,440" }, "fplPct": 400 },
+      { "householdSize": 7, "incomeThreshold": 200160, "incomeLabel": { "en": "≤ $200,160", "es": "≤ $200,160" }, "fplPct": 400 },
+      { "householdSize": 8, "incomeThreshold": 222880, "incomeLabel": { "en": "≤ $222,880", "es": "≤ $222,880" }, "fplPct": 400 },
+      { "householdSize": "Each additional person", "incomeThreshold": 22720, "incomeLabel": { "en": "+ $22,720", "es": "+ $22,720" }, "fplPct": 400 }
+    ],
+    "year": 2026,
+    "source": "HHS 2026 federal poverty guidelines, https://aspe.hhs.gov/poverty-guidelines"
+  },
+  "howToApplyPap": {
+    "programName": "Part D Formulary / Tiering Exception Request",
+    "numberedSteps": [
+      {
+        "en": "Step 1: Ask your prescriber whether a lower-tier alternative in the same drug class is clinically appropriate. If yes, switching drugs is faster than an exception request.",
+        "es": "Paso 1: Pregunte a su medico si una alternativa de nivel mas bajo en la misma clase de medicamento es clinicamente apropiada. Si es asi, cambiar de medicamento es mas rapido que una solicitud de excepcion."
+      },
+      {
+        "en": "Step 2: If no lower-tier alternative works, have your prescriber submit a coverage determination request with a supporting statement explaining medical necessity, through your plan's provider portal or by fax.",
+        "es": "Paso 2: Si ninguna alternativa de nivel mas bajo funciona, pida a su medico que presente una solicitud de determinacion de cobertura con una declaracion de respaldo que explique la necesidad medica, a traves del portal de proveedores del plan o por fax."
+      },
+      {
+        "en": "Step 3: Your Part D plan must decide within 72 hours of receiving your prescriber's statement, or 24 hours for an expedited request if your health is at immediate risk.",
+        "es": "Paso 3: Su plan de la Parte D debe decidir dentro de 72 horas de recibir la declaracion de su medico, o 24 horas para una solicitud urgente si su salud esta en riesgo inmediato."
+      },
+      {
+        "en": "Step 4: If approved, you pay the lower tier's cost-sharing for the remainder of the plan year (through December 31, 2026). If denied, you can appeal to the plan's redetermination level within 60 days.",
+        "es": "Paso 4: Si se aprueba, paga el costo compartido del nivel mas bajo por el resto del ano del plan (hasta el 31 de diciembre de 2026). Si se deniega, puede apelar al nivel de redeterminacion del plan dentro de 60 dias."
+      },
+      {
+        "en": "Step 5: If the drug sits on the specialty tier, note that most plans have excluded specialty-tier drugs from tiering exceptions since 2022; pursue a manufacturer patient assistance program or GoodRx cash price instead.",
+        "es": "Paso 5: Si el medicamento esta en el Nivel Especializado, tenga en cuenta que la mayoria de los planes han excluido los medicamentos de Nivel Especializado de las excepciones de nivel desde 2022; busque un programa de asistencia al paciente del fabricante o el precio en efectivo de GoodRx en su lugar."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/basics/costs/help/drug-costs",
+    "manufacturerStartingUrl": "https://www.needymeds.org/",
+    "documentsNeeded": [
+      {
+        "en": "Prescriber's written statement of medical necessity for the specific drug, not just the drug class",
+        "es": "Declaracion escrita del medico de necesidad medica para el medicamento especifico, no solo la clase de medicamento"
+      },
+      {
+        "en": "Denial letter or coverage determination notice from your Part D plan",
+        "es": "Carta de denegacion o aviso de determinacion de cobertura de su plan de la Parte D"
+      },
+      {
+        "en": "List of lower-tier alternatives already tried, if applicable",
+        "es": "Lista de alternativas de nivel mas bajo ya probadas, si aplica"
+      },
+      {
+        "en": "Your Medicare Part D plan member ID and group number",
+        "es": "Su numero de identificacion de miembro y numero de grupo del plan de Medicare Parte D"
+      },
+      {
+        "en": "Proof of income if pursuing Extra Help/LIS or a manufacturer patient assistance program alongside the exception",
+        "es": "Comprobante de ingresos si busca Extra Help/LIS o un programa de asistencia al paciente del fabricante junto con la excepcion"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Prescriber's statement does not document why lower-tier alternatives are medically inappropriate",
+        "es": "La declaracion del medico no documenta por que las alternativas de nivel mas bajo son medicamente inapropiadas"
+      },
+      {
+        "en": "Drug is on the specialty tier, which most plans exclude from tiering exceptions since 2022",
+        "es": "El medicamento esta en el Nivel Especializado, que la mayoria de los planes excluyen de las excepciones de nivel desde 2022"
+      },
+      {
+        "en": "Request submitted without a supporting statement from the prescriber",
+        "es": "Solicitud presentada sin una declaracion de respaldo del medico"
+      },
+      {
+        "en": "Plan determines a covered lower-tier alternative is equally effective",
+        "es": "El plan determina que una alternativa cubierta de nivel mas bajo es igualmente efectiva"
+      }
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "What is a drug formulary tier, and how many tiers exist in 2026?",
+        "answer": "A formulary tier is the cost-sharing category a health plan assigns to each covered drug. Most 2026 Medicare Part D and commercial plans use four to six tiers: Tier 1 (preferred generics, $0-$10), Tier 2 (non-preferred generics or preferred brands, $10-$45), Tier 3 (non-preferred brands, $40-$100 or 25%-34% coinsurance), Tier 4 (higher-cost non-preferred drugs), and a specialty tier for drugs costing more than $950 a month in 2026. The tier, not the drug's brand or generic status alone, determines your copay or coinsurance at the pharmacy."
+      },
+      {
+        "question": "Are generic and biosimilar drugs always on Tier 1?",
+        "answer": "No. Most generics land on Tier 1, the lowest-cost tier, but some non-preferred generics are assigned to Tier 2 based on the plan's rebate agreements with the manufacturer. Biosimilars, the near-identical copies of biologic drugs, usually appear on Tier 2 or Tier 3 rather than the specialty tier, which still cuts coinsurance significantly compared with the original brand-name biologic. Always confirm the exact tier with your plan's formulary before assuming a generic or biosimilar is automatically Tier 1."
+      },
+      {
+        "question": "Can I use a manufacturer coupon or savings card for a specialty-tier drug if I have Medicare?",
+        "answer": "No. Federal anti-kickback law (42 U.S.C. § 1320a-7b) prohibits Medicare, Medicaid, TRICARE, and VA enrollees from using manufacturer copay cards or coupons on any formulary tier, including the specialty tier. Instead, apply for the drug's manufacturer patient assistance program, which gives the drug away to income-qualified patients rather than subsidizing a copay, or apply for Medicare Extra Help (Low-Income Subsidy) through the Social Security Administration."
+      },
+      {
+        "question": "What if my insurance denies coverage or places my drug on a high tier?",
+        "answer": "Ask your prescriber to request a formulary or tiering exception with a written medical necessity statement. Part D plans must decide within 72 hours (24 hours if expedited). If denied, you can file a redetermination appeal within 60 days, then escalate through up to five appeal levels. Specialty-tier drugs are generally excluded from tiering exceptions to a lower tier since 2022, so a manufacturer patient assistance program or a generic/biosimilar switch is usually the faster path for those drugs."
+      },
+      {
+        "question": "Does the Inflation Reduction Act change formulary tier costs in 2026?",
+        "answer": "Yes, for ten specific drugs. Eliquis, Jardiance, Xarelto, Januvia, Farxiga, Entresto, Enbrel, Imbruvica, Stelara, and Fiasp/NovoLog carry a Medicare-negotiated Maximum Fair Price effective January 1, 2026 under the Inflation Reduction Act, and Part D plans must pass that price through regardless of the drug's assigned tier. For every other drug, the law's main 2026 impact is the $2,100 annual Part D out-of-pocket cap and the elimination of cost-sharing after that cap is reached."
+      },
+      {
+        "question": "What does a specialty-tier drug cost without insurance in 2026?",
+        "answer": "Specialty-tier drugs, defined by CMS as costing more than $950 a month in 2026, often list for $2,000 to $20,000 or more per month in cash price without any coverage, since most are biologics or rare-disease treatments with no generic competition. With Part D coverage, specialty-tier coinsurance averages 25% to 28% until the $2,100 annual out-of-pocket cap is reached, after which the drug costs $0 for the rest of the year."
+      },
+      {
+        "question": "How do I apply for a tiering exception or a patient assistance program?",
+        "answer": "Start by asking your prescriber to submit a coverage determination request with a medical necessity statement to your Part D plan; a decision is required within 72 hours. If that is denied or your drug is on the specialty tier, apply directly to the manufacturer's patient assistance program (search '[drug name] patient assistance program' or visit needymeds.org) with proof of income, proof of insurance status, and your prescription. Most PAPs use an income cutoff around 400% of the federal poverty level."
+      },
+      {
+        "question": "What's the difference between a copay and coinsurance on a formulary tier?",
+        "answer": "A copay is a fixed dollar amount, such as $10 for a Tier 1 generic, regardless of the drug's actual cost. Coinsurance is a percentage of the drug's negotiated price, such as 25% for a Tier 3 non-preferred brand, so the dollar amount changes with the drug's price. Lower tiers (1 and 2) typically use flat copays, while higher tiers (3, 4, and specialty) increasingly use coinsurance in 2026, which is why costs on those tiers vary more between plans."
+      }
+    ],
+    "es": [
+      {
+        "question": "Que es un nivel del formulario de medicamentos, y cuantos niveles existen en 2026?",
+        "answer": "Un nivel del formulario es la categoria de costo compartido que un plan de salud asigna a cada medicamento cubierto. La mayoria de los planes de Medicare Parte D y comerciales de 2026 usan de cuatro a seis niveles: Nivel 1 (genericos preferidos, $0-$10), Nivel 2 (genericos no preferidos o marcas preferidas, $10-$45), Nivel 3 (marcas no preferidas, $40-$100 o 25%-34% de coaseguro), Nivel 4 (medicamentos no preferidos de mayor costo), y un Nivel Especializado para medicamentos que cuestan mas de $950 al mes en 2026. El nivel, no solo el estatus de marca o generico del medicamento, determina su copago o coaseguro en la farmacia."
+      },
+      {
+        "question": "Los medicamentos genericos y biosimilares siempre estan en el Nivel 1?",
+        "answer": "No. La mayoria de los genericos caen en el Nivel 1, el nivel de menor costo, pero algunos genericos no preferidos se asignan al Nivel 2 segun los acuerdos de descuento del plan con el fabricante. Los biosimilares, las copias casi identicas de medicamentos biologicos, generalmente aparecen en el Nivel 2 o Nivel 3 en lugar del Nivel Especializado, lo que sigue reduciendo significativamente el coaseguro en comparacion con el biologico de marca original. Siempre confirme el nivel exacto con el formulario de su plan antes de suponer que un generico o biosimilar es automaticamente Nivel 1."
+      },
+      {
+        "question": "Puedo usar un cupon o tarjeta de ahorro del fabricante para un medicamento de Nivel Especializado si tengo Medicare?",
+        "answer": "No. La ley federal anti-soborno (42 U.S.C. § 1320a-7b) prohibe a los beneficiarios de Medicare, Medicaid, TRICARE y VA usar tarjetas de copago o cupones del fabricante en cualquier nivel del formulario, incluyendo el Nivel Especializado. En su lugar, solicite el programa de asistencia al paciente del fabricante del medicamento, que regala el medicamento a pacientes calificados por ingresos en lugar de subsidiar un copago, o solicite Extra Help de Medicare (Subsidio de Bajos Ingresos) a traves de la Administracion del Seguro Social."
+      },
+      {
+        "question": "Que pasa si mi seguro deniega la cobertura o coloca mi medicamento en un nivel alto?",
+        "answer": "Pida a su medico que solicite una excepcion del formulario o de nivel con una declaracion escrita de necesidad medica. Los planes de la Parte D deben decidir dentro de 72 horas (24 horas si es urgente). Si se deniega, puede presentar una apelacion de redeterminacion dentro de 60 dias, y luego escalar hasta cinco niveles de apelacion. Los medicamentos de Nivel Especializado generalmente estan excluidos de las excepciones de nivel a un nivel mas bajo desde 2022, por lo que un programa de asistencia al paciente del fabricante o un cambio a generico/biosimilar suele ser el camino mas rapido para esos medicamentos."
+      },
+      {
+        "question": "La Ley de Reduccion de la Inflacion cambia los costos del nivel del formulario en 2026?",
+        "answer": "Si, para diez medicamentos especificos. Eliquis, Jardiance, Xarelto, Januvia, Farxiga, Entresto, Enbrel, Imbruvica, Stelara y Fiasp/NovoLog tienen un Precio Justo Maximo negociado por Medicare vigente desde el 1 de enero de 2026 bajo la Ley de Reduccion de la Inflacion, y los planes de la Parte D deben transferir ese precio sin importar el nivel asignado al medicamento. Para cualquier otro medicamento, el principal impacto de la ley en 2026 es el limite anual de gastos de bolsillo de la Parte D de $2,100 y la eliminacion del costo compartido despues de alcanzar ese limite."
+      },
+      {
+        "question": "Cuanto cuesta un medicamento de Nivel Especializado sin seguro en 2026?",
+        "answer": "Los medicamentos de Nivel Especializado, definidos por CMS como aquellos que cuestan mas de $950 al mes en 2026, a menudo tienen un precio de lista de $2,000 a $20,000 o mas al mes sin ninguna cobertura, ya que la mayoria son biologicos o tratamientos de enfermedades raras sin competencia generica. Con cobertura de la Parte D, el coaseguro promedio del Nivel Especializado es de 25% a 28% hasta alcanzar el limite anual de gastos de bolsillo de $2,100, despues del cual el medicamento cuesta $0 el resto del ano."
+      },
+      {
+        "question": "Como solicito una excepcion de nivel o un programa de asistencia al paciente?",
+        "answer": "Comience pidiendo a su medico que presente una solicitud de determinacion de cobertura con una declaracion de necesidad medica a su plan de la Parte D; se requiere una decision dentro de 72 horas. Si se deniega o su medicamento esta en el Nivel Especializado, solicite directamente el programa de asistencia al paciente del fabricante (busque 'programa de asistencia al paciente [nombre del medicamento]' o visite needymeds.org) con comprobante de ingresos, comprobante de estatus de seguro, y su receta. La mayoria de los PAP usan un limite de ingresos de alrededor del 400% del nivel federal de pobreza."
+      },
+      {
+        "question": "Cual es la diferencia entre un copago y coaseguro en un nivel del formulario?",
+        "answer": "Un copago es una cantidad fija en dolares, como $10 por un generico del Nivel 1, sin importar el costo real del medicamento. El coaseguro es un porcentaje del precio negociado del medicamento, como 25% por una marca no preferida del Nivel 3, por lo que la cantidad en dolares cambia con el precio del medicamento. Los niveles mas bajos (1 y 2) tipicamente usan copagos fijos, mientras que los niveles mas altos (3, 4 y especializado) usan cada vez mas coaseguro en 2026, por lo que los costos en esos niveles varian mas entre planes."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": { "en": "Medical Bill Analyzer", "es": "Analizador de Facturas Medicas" },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": { "en": "Medicare Eligibility", "es": "Elegibilidad de Medicare" },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": { "en": "Medicaid Income Limits", "es": "Limites de Ingresos de Medicaid" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "Copay Cards vs. GoodRx Coupons", "es": "Tarjetas de Copago vs. Cupones GoodRx" },
+      "href": "/drug/copay-card-vs-coupon"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMS: Medicare Prescription Drug Benefit Manual, Chapter 6 (Part D Drugs and Formulary Requirements)",
+      "url": "https://www.cms.gov/medicare/prescription-drug-coverage/prescriptiondrugcovcontra/downloads/part-d-benefits-manual-chapter-6.pdf",
+      "note": {
+        "en": "Federal rules governing formulary tier structure, exceptions process, and specialty-tier exclusions.",
+        "es": "Reglas federales que rigen la estructura de niveles del formulario, el proceso de excepciones y las exclusiones del Nivel Especializado."
+      }
+    },
+    {
+      "name": "KFF: Medicare Part D Enrollment, Premiums, and Cost Sharing in 2026",
+      "url": "https://www.kff.org/medicare/medicare-part-d-enrollment-premiums-and-cost-sharing-in-2026/",
+      "note": {
+        "en": "2026 deductible, out-of-pocket cap, specialty-tier cost threshold, and coinsurance by plan type.",
+        "es": "Deducible 2026, limite de gastos de bolsillo, umbral de costo del Nivel Especializado y coaseguro por tipo de plan."
+      }
+    },
+    {
+      "name": "FDA: Generic Drug Facts",
+      "url": "https://www.fda.gov/drugs/generic-drugs/generic-drug-facts",
+      "note": {
+        "en": "FDA overview of generic drug approval and equivalence standards relevant to Tier 1 placement.",
+        "es": "Resumen de la FDA sobre la aprobacion de genericos y estandares de equivalencia relevantes para la colocacion en el Nivel 1."
+      }
+    },
+    {
+      "name": "eCFR: 42 CFR 423.578, Exceptions Process",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-423/subpart-M/section-423.578",
+      "note": {
+        "en": "Federal regulation governing Part D formulary and tiering exception requests.",
+        "es": "Regulacion federal que rige las solicitudes de excepcion de formulario y nivel de la Parte D."
+      }
+    },
+    {
+      "name": "Medicare.gov: Help with Drug Costs",
+      "url": "https://www.medicare.gov/basics/costs/help/drug-costs",
+      "note": {
+        "en": "Explains Extra Help (Low-Income Subsidy) income limits and copay caps for 2026.",
+        "es": "Explica los limites de ingresos y topes de copago de Extra Help (Subsidio de Bajos Ingresos) para 2026."
+      }
+    },
+    {
+      "name": "NeedyMeds Patient Assistance Program Database",
+      "url": "https://www.needymeds.org/",
+      "note": {
+        "en": "Directory of manufacturer patient assistance programs for drugs on high formulary tiers.",
+        "es": "Directorio de programas de asistencia al paciente del fabricante para medicamentos en niveles altos del formulario."
+      }
+    }
+  ]
+}
