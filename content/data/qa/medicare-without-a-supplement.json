@@ -1,0 +1,414 @@
+{
+  "slug": "medicare-without-a-supplement",
+  "question": {
+    "en": "Can I Have Medicare Without a Supplement Plan?",
+    "es": "¿Puedo Tener Medicare Sin un Plan Suplementario (Medigap)?"
+  },
+  "shortAnswer": {
+    "en": "Yes, but Original Medicare alone has no yearly out-of-pocket cap.",
+    "es": "Sí, pero Medicare Original solo no tiene tope anual de gastos."
+  },
+  "fullAnswer": {
+    "en": "Yes. Original Medicare, Part A and Part B, works on its own and no federal rule requires you to buy a Medicare Supplement (Medigap) policy. Skip one, and you take on the Part A deductible ($1,736 per benefit period in 2026), the Part B deductible ($283 in 2026), and 20% coinsurance on most Part B services with no yearly out-of-pocket cap. Medicare Advantage, not Medigap, is the main way to cap that exposure.",
+    "es": "Sí. Medicare Original, Parte A y Parte B, funciona por sí solo y ninguna regla federal le obliga a comprar una póliza de Medicare Supplement (Medigap). Si no compra una, usted asume el deducible de la Parte A ($1,736 por período de beneficios en 2026), el deducible de la Parte B ($283 en 2026), y un coseguro del 20% en la mayoría de los servicios de la Parte B sin tope anual de gastos de bolsillo. Medicare Advantage, no Medigap, es la principal forma de limitar esa exposición."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Coverage Without a Supplement Plan",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "analyzer",
+  "pageType": "coverage",
+  "lastUpdated": "2026-09-17",
+  "readingTime": "8 min read",
+  "meta": {
+    "title": {
+      "en": "Can You Have Medicare Without a Supplement? (2026) | CoveredUSA",
+      "es": "¿Puede Tener Medicare Sin Medigap? (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Yes, Original Medicare works without Medigap, but 2026 coinsurance has no yearly cap. See real costs and alternatives like Medicare Advantage.",
+      "es": "Sí, Medicare Original funciona sin Medigap, pero el coseguro de 2026 no tiene tope anual. Vea los costos reales y alternativas como Medicare Advantage."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Can You Have Medicare Without a Supplement Plan? (2026)",
+      "es": "¿Puede Tener Medicare Sin un Plan Suplementario? (2026)"
+    }
+  },
+  "introParagraphs": [
+    {
+      "en": "Roughly one in three Medicare beneficiaries carries no Medigap policy and no Medicare Advantage out-of-pocket cap, relying on Original Medicare alone. That is legal and common, but it means Part A and Part B deductibles, coinsurance, and hospital charges land directly on you with no annual ceiling. Understanding exactly what Original Medicare pays on its own in 2026, and what a bad year could cost, is the first step to deciding whether to add a Medigap policy, switch to Medicare Advantage, or accept the risk.",
+      "es": "Aproximadamente uno de cada tres beneficiarios de Medicare no tiene póliza Medigap ni el tope de gastos de Medicare Advantage, y depende solo de Medicare Original. Eso es legal y común, pero significa que los deducibles, el coseguro y los cargos hospitalarios de la Parte A y la Parte B recaen directamente sobre usted sin límite anual. Entender exactamente qué paga Medicare Original por sí solo en 2026, y qué podría costar un mal año, es el primer paso para decidir si agregar una póliza Medigap, cambiar a Medicare Advantage, o aceptar el riesgo."
+    },
+    {
+      "en": "The numbers below break down what you pay with Original Medicare alone in 2026, how Medicare Advantage caps costs differently than Medigap, and what specific dollar exposure looks like for a hospital stay or extended skilled nursing care. For a full cost-benefit comparison, see [is Medicare Supplement worth it](/qa/medicare-supplement-worth-it). To estimate your own numbers, use the [Medical Bill Analyzer](/medical-bill-analyzer).",
+      "es": "Las cifras a continuación detallan lo que paga con Medicare Original solo en 2026, cómo Medicare Advantage limita los costos de manera diferente a Medigap, y cómo se ve la exposición en dólares específica para una hospitalización o atención de enfermería especializada prolongada. Para una comparación completa, vea [vale la pena Medigap](/qa/medicare-supplement-worth-it)."
+    }
+  ],
+  "coverageBreakdown": {
+    "headers": {
+      "en": [
+        "Coverage Setup",
+        "Annual Out-of-Pocket Cap",
+        "Typical Monthly Premium (2026)",
+        "Provider Network"
+      ],
+      "es": [
+        "Configuración de cobertura",
+        "Tope anual de gastos",
+        "Prima mensual típica (2026)",
+        "Red de proveedores"
+      ]
+    },
+    "rows": [
+      {
+        "cells": [
+          {
+            "en": "Original Medicare alone (no supplement)",
+            "es": "Medicare Original solo (sin suplemento)"
+          },
+          {
+            "value": {
+              "en": "No annual cap",
+              "es": "Sin tope anual"
+            },
+            "status": "no"
+          },
+          {
+            "en": "$202.90 Part B premium only",
+            "es": "Solo prima de Parte B de $202.90"
+          },
+          {
+            "en": "Any provider nationwide that accepts Medicare",
+            "es": "Cualquier proveedor a nivel nacional que acepte Medicare"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Original Medicare + Medigap (e.g., Plan G)",
+            "es": "Medicare Original + Medigap (ej. Plan G)"
+          },
+          {
+            "value": {
+              "en": "Near $0 out-of-pocket",
+              "es": "Casi $0 de bolsillo"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "$202.90 Part B + $110 to $480+ Medigap",
+            "es": "$202.90 Parte B + $110 a $480+ Medigap"
+          },
+          {
+            "en": "Any provider nationwide that accepts Medicare",
+            "es": "Cualquier proveedor a nivel nacional que acepte Medicare"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Medicare Advantage (in-network)",
+            "es": "Medicare Advantage (dentro de la red)"
+          },
+          {
+            "value": {
+              "en": "Capped at $9,250 (2026)",
+              "es": "Tope de $9,250 (2026)"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "$0 to $100+ (many $0-premium plans)",
+            "es": "$0 a $100+ (muchos planes con prima $0)"
+          },
+          {
+            "en": "Plan network only: HMO or PPO, often regional",
+            "es": "Solo red del plan: HMO o PPO, a menudo regional"
+          }
+        ]
+      },
+      {
+        "cells": [
+          {
+            "en": "Medicare Advantage + Medigap",
+            "es": "Medicare Advantage + Medigap"
+          },
+          {
+            "value": {
+              "en": "Not legal to combine",
+              "es": "No es legal combinarlos"
+            },
+            "status": "no"
+          },
+          {
+            "en": "Not applicable",
+            "es": "No aplica"
+          },
+          {
+            "en": "Insurers cannot sell Medigap to MA enrollees",
+            "es": "Las aseguradoras no pueden vender Medigap a inscritos en MA"
+          }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Original Medicare Part A and Part B have no built-in annual out-of-pocket maximum in 2026. Medicare Advantage plans are federally required to cap in-network cost-sharing at $9,250 in 2026 ($13,900 combined in-network and out-of-network); most plans set lower limits.",
+      "es": "Medicare Original Parte A y Parte B no tienen tope anual de gastos de bolsillo integrado en 2026. Los planes Medicare Advantage están obligados federalmente a limitar los costos compartidos dentro de la red a $9,250 en 2026 ($13,900 combinado); la mayoría de los planes fijan límites más bajos."
+    },
+    "source": "CMS 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet, KFF Medicare Advantage in 2026 Brief"
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Yes, But There Is No Cap",
+        "es": "Respuesta Directa: Sí, Pero No Hay Tope"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes. Original Medicare, Part A and Part B, works on its own and no federal rule requires you to buy a Medicare Supplement (Medigap) policy. Skip one, and you take on the Part A deductible ($1,736 per benefit period in 2026), the Part B deductible ($283 in 2026), and 20% coinsurance on most Part B services with no yearly out-of-pocket cap. Medicare Advantage, not Medigap, is the main way to cap that exposure.",
+          "es": "Sí. Medicare Original, Parte A y Parte B, funciona por sí solo y ninguna regla federal le obliga a comprar una póliza Medigap. Si no compra una, usted asume el deducible de la Parte A ($1,736 por período de beneficios en 2026), el deducible de la Parte B ($283 en 2026), y un coseguro del 20% en la mayoría de los servicios de la Parte B sin tope anual de gastos. Medicare Advantage, no Medigap, es la principal forma de limitar esa exposición."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Original Medicare Pays on Its Own in 2026",
+        "es": "Lo Que Paga Medicare Original Por Sí Solo en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare splits into two federal programs: Part A (hospital insurance) and Part B (medical insurance). Part A charges a $1,736 deductible per benefit period in 2026, and if a hospital stay runs past 60 days, coinsurance jumps to $434 a day for days 61 through 90 and $868 a day for lifetime reserve days beyond that. Skilled nursing facility care costs nothing for the first 20 days, then $217 a day for days 21 through 100 in 2026, all federal amounts published by CMS.",
+          "es": "Medicare Original se divide en dos programas federales: Parte A (seguro hospitalario) y Parte B (seguro médico). La Parte A cobra un deducible de $1,736 por período de beneficios en 2026, y si una hospitalización pasa de 60 días, el coseguro sube a $434 al día para los días 61 a 90 y $868 al día para los días de reserva vitalicios más allá de eso. La atención en enfermería especializada no cuesta nada los primeros 20 días, luego $217 al día para los días 21 a 100 en 2026, todas cifras federales publicadas por CMS."
+        },
+        {
+          "en": "Medicare Part B carries a $283 deductible in 2026, and after that you generally pay 20% coinsurance for doctor visits, outpatient care, durable medical equipment, and most other Medicare Part B services, plus the standard $202.90 monthly premium (higher for beneficiaries with income above IRMAA thresholds). Unlike ACA-compliant marketplace plans, which must cover the ten essential health benefits and cap total in-network cost-sharing, Original Medicare Part A and Part B have no built-in annual out-of-pocket maximum. Medicare Part D, by contrast, already has its own $2,100 out-of-pocket cap in 2026, which is why the gap sits specifically in Part A and Part B.",
+          "es": "La Parte B de Medicare tiene un deducible de $283 en 2026, y después de eso generalmente paga un coseguro del 20% para visitas médicas, atención ambulatoria, equipo médico duradero y la mayoría de los demás servicios de la Parte B de Medicare, además de la prima mensual estándar de $202.90 (más alta para beneficiarios con ingresos por encima de los umbrales IRMAA). A diferencia de los planes del mercado conformes con la Ley ACA, que deben cubrir los diez beneficios de salud esenciales y limitar el costo compartido total dentro de la red, Medicare Original Parte A y Parte B no tienen un máximo anual de gastos de bolsillo integrado. La Parte D de Medicare, en cambio, ya tiene su propio tope de gastos de bolsillo de $2,100 en 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Medicare Advantage Adds Instead of a Supplement",
+        "es": "Lo Que Añade Medicare Advantage en Lugar de un Suplemento"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Advantage is the most common substitute for a Medigap policy. Every Medicare Advantage plan is legally required to cap in-network out-of-pocket spending on Part A and Part B services at $9,250 in 2026, and the federal combined in-network-plus-out-of-network ceiling is $13,900. Most plans set their limit lower: the 2026 enrollment-weighted average is $5,421 in-network and $9,825 combined, according to KFF. Many Medicare Advantage plans also charge $0 monthly premiums and bundle in dental, vision, and hearing benefits that Original Medicare does not cover.",
+          "es": "Medicare Advantage es el sustituto más común de una póliza Medigap. Todo plan Medicare Advantage está legalmente obligado a limitar el gasto de bolsillo dentro de la red para servicios de Parte A y Parte B a $9,250 en 2026, y el límite federal combinado dentro y fuera de la red es $13,900. La mayoría de los planes fijan un límite más bajo: el promedio ponderado por inscripción en 2026 es $5,421 dentro de la red y $9,825 combinado, según KFF. Muchos planes Medicare Advantage también cobran primas mensuales de $0 e incluyen beneficios dentales, de visión y auditivos que Medicare Original no cubre."
+        },
+        {
+          "en": "The tradeoff is network. Medicare Advantage plans are typically HMOs or PPOs with a defined list of doctors and hospitals, prior authorization requirements for many services, and regional coverage areas, while Original Medicare works with any provider nationwide who accepts Medicare. You cannot buy a Medigap policy while enrolled in Medicare Advantage; it is not legal for an insurer to sell you one for that purpose.",
+          "es": "La contrapartida es la red. Los planes Medicare Advantage suelen ser HMO o PPO con una lista definida de médicos y hospitales, requisitos de autorización previa para muchos servicios, y áreas de cobertura regionales, mientras que Medicare Original funciona con cualquier proveedor a nivel nacional que acepte Medicare. No puede comprar una póliza Medigap mientras está inscrito en Medicare Advantage; no es legal que una aseguradora le venda una para ese propósito."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Your Cost Exposure Without a Supplement (2026)",
+        "es": "Su Exposición de Costos Sin Suplemento (2026)"
+      },
+      "paragraphs": [
+        {
+          "en": "Without Medigap or a Medicare Advantage out-of-pocket cap, a single serious hospitalization can run into tens of thousands of dollars. A 10-day hospital stay past day 60 in 2026 adds $4,340 in coinsurance ($434 times 10 days) on top of the $1,736 Part A deductible. A prolonged skilled nursing stay of 40 days beyond the free 20-day window adds $8,680 in coinsurance ($217 times 40 days). Outpatient care and specialist visits add 20% Part B coinsurance with no ceiling. For someone with a chronic condition needing frequent care, annual out-of-pocket costs on Original Medicare alone commonly exceed $5,000 to $10,000, and there is no federal limit stopping that number from climbing higher in a bad year.",
+          "es": "Sin Medigap ni el tope de gastos de Medicare Advantage, una sola hospitalización grave puede llegar a decenas de miles de dólares. Una hospitalización de 10 días después del día 60 en 2026 añade $4,340 en coseguro ($434 por 10 días) además del deducible de Parte A de $1,736. Una estancia prolongada de enfermería especializada de 40 días más allá de la ventana gratuita de 20 días añade $8,680 en coseguro ($217 por 40 días). La atención ambulatoria y las visitas de especialistas añaden un coseguro del 20% de la Parte B sin límite. Para alguien con una condición crónica que necesita atención frecuente, los costos anuales de bolsillo con Medicare Original solo comúnmente superan los $5,000 a $10,000, y no hay límite federal que detenga ese número de subir más en un mal año."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medigap: The Standalone Supplemental Option",
+        "es": "Medigap: La Opción Suplementaria Independiente"
+      },
+      "paragraphs": [
+        {
+          "en": "Medigap policies are standardized, federally regulated insurance products sold by private companies to work alongside Original Medicare, filling in deductibles, coinsurance, and, for some plans, foreign travel emergency care. Ten standardized plans are sold in most states: A, B, D, G, K, L, M, and N, plus legacy Plans C and F that are closed to anyone who became eligible for Medicare on or after January 1, 2020. Plan G is the most popular choice for new enrollees and typically covers everything except the Part B deductible.",
+          "es": "Las pólizas Medigap son productos de seguro estandarizados y regulados federalmente, vendidos por compañías privadas para funcionar junto con Medicare Original, cubriendo deducibles, coseguro y, para algunos planes, atención de emergencia por viaje al extranjero. Se venden diez planes estandarizados en la mayoría de los estados: A, B, D, G, K, L, M y N, además de los planes heredados C y F cerrados a quienes fueron elegibles para Medicare a partir del 1 de enero de 2020. El Plan G es la opción más popular para nuevos inscritos y típicamente cubre todo excepto el deducible de la Parte B."
+        },
+        {
+          "en": "Pricing depends heavily on when you buy. You get a six-month Medigap open enrollment window starting the month you turn 65 and enroll in Part B, during which insurers cannot use medical underwriting or deny you for a preexisting condition. Buy outside that window, or after switching from Medicare Advantage back to Original Medicare, and an insurer can medically underwrite you, charge more, or in some states deny coverage entirely based on your health history.",
+          "es": "El precio depende en gran medida de cuándo compra. Tiene una ventana de inscripción abierta de Medigap de seis meses que comienza el mes en que cumple 65 años y se inscribe en la Parte B, durante la cual las aseguradoras no pueden usar suscripción médica ni negarle cobertura por una condición preexistente. Si compra fuera de esa ventana, o después de cambiar de Medicare Advantage de vuelta a Medicare Original, una aseguradora puede evaluarlo médicamente, cobrarle más, o en algunos estados negarle la cobertura por completo según su historial de salud."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Who Reasonably Skips a Supplement",
+        "es": "Quién Razonablemente Prescinde de un Suplemento"
+      },
+      "paragraphs": [
+        {
+          "en": "Several groups go without Medigap and manage the risk deliberately. People dual-eligible for Medicare and Medicaid typically do not need Medigap because Medicaid covers Original Medicare's cost-sharing. Retirees with employer or union retiree health coverage, or veterans using VA benefits alongside Medicare, often already have a secondary payer that limits their exposure. Healthy retirees on a tight budget sometimes choose a $0-premium Medicare Advantage plan specifically because it has a built-in out-of-pocket cap, even without paying for Medigap. What is riskier is having Original Medicare with zero secondary coverage of any kind, since that combination carries the highest uncapped exposure.",
+          "es": "Varios grupos prescinden de Medigap y manejan el riesgo deliberadamente. Las personas con elegibilidad dual para Medicare y Medicaid típicamente no necesitan Medigap porque Medicaid cubre los costos compartidos de Medicare Original. Los jubilados con cobertura de salud de jubilados de empleador o sindicato, o veteranos que usan beneficios de VA junto con Medicare, a menudo ya tienen un pagador secundario que limita su exposición. Los jubilados saludables con presupuesto ajustado a veces eligen un plan Medicare Advantage con prima $0 específicamente porque tiene un tope de gastos integrado, incluso sin pagar Medigap. Lo más arriesgado es tener Medicare Original sin ninguna cobertura secundaria, ya que esa combinación conlleva la mayor exposición sin límite."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Decide: Original Medicare Alone vs Medigap vs Medicare Advantage",
+        "es": "Cómo Decidir: Medicare Original Solo vs Medigap vs Medicare Advantage"
+      },
+      "paragraphs": [
+        {
+          "en": "Start at Medicare.gov's plan finder to compare Medigap premiums and Medicare Advantage plans available in your ZIP code side by side. If you travel often, see many specialists, or want predictable costs, Medigap plus Part D usually costs more monthly but caps your risk. If you want a lower monthly premium and extra benefits like dental and vision and can accept a network and prior authorization, Medicare Advantage is built to cap your annual exposure without a separate Medigap purchase. Either way, going without any backup to Original Medicare Part A and Part B is the only option with no ceiling on what you could owe in 2026.",
+          "es": "Comience en el buscador de planes de Medicare.gov para comparar primas de Medigap y planes Medicare Advantage disponibles en su código postal lado a lado. Si viaja con frecuencia, ve a muchos especialistas, o quiere costos predecibles, Medigap más la Parte D generalmente cuesta más al mes pero limita su riesgo. Si quiere una prima mensual más baja y beneficios adicionales como dental y visión y puede aceptar una red y autorización previa, Medicare Advantage está diseñado para limitar su exposición anual sin comprar Medigap por separado. De cualquier manera, no tener ningún respaldo a Medicare Original Parte A y Parte B es la única opción sin límite en lo que podría deber en 2026."
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "Does Original Medicare have an out-of-pocket maximum?",
+        "answer": "No. Original Medicare Part A and Part B have no built-in annual out-of-pocket maximum in 2026. You pay the Part A deductible ($1,736 per benefit period), the Part B deductible ($283), and 20% coinsurance on most Part B services indefinitely unless you add a Medigap policy or switch to Medicare Advantage, which is required to cap costs."
+      },
+      {
+        "question": "What happens if I don't buy a Medigap policy?",
+        "answer": "You remain fully responsible for Original Medicare's deductibles and 20% coinsurance with no annual cap. Most years this may total a few hundred to a few thousand dollars, but a serious hospitalization or extended skilled nursing stay in 2026 can push out-of-pocket costs well past $10,000 since there is no federal ceiling."
+      },
+      {
+        "question": "Is Medicare Advantage a substitute for a Medicare Supplement?",
+        "answer": "Functionally, yes, for the out-of-pocket cap. Medicare Advantage plans must cap in-network Part A and Part B costs at $9,250 in 2026 ($13,900 combined), while Medigap has no legal cap requirement of its own but often reduces your cost-sharing to near $0. You cannot have both at once; Medigap only pairs with Original Medicare."
+      },
+      {
+        "question": "When can I buy a Medigap policy without medical underwriting?",
+        "answer": "During your six-month Medigap open enrollment period, which starts the month you turn 65 and are enrolled in Part B. Insurers must sell you any Medigap plan they offer at that time regardless of health history. Outside that window, insurers in most states can medically underwrite you or decline coverage."
+      },
+      {
+        "question": "Can I have Medicare Advantage and Medigap at the same time?",
+        "answer": "No. Federal rules prohibit insurers from selling a Medigap policy to someone enrolled in a Medicare Advantage plan, since the two products solve the same problem (capping cost-sharing) in different ways. If you want Medigap, you generally need to disenroll from Medicare Advantage and return to Original Medicare first."
+      },
+      {
+        "question": "What if I have retiree or employer coverage instead of Medigap?",
+        "answer": "Employer or union retiree health coverage often acts as a secondary payer to Original Medicare, covering some or all of the deductibles and coinsurance Medigap would otherwise cover. Check your plan's summary of benefits, since coverage generosity varies widely by employer and some retiree plans are thinner than a Medigap policy."
+      },
+      {
+        "question": "Is it risky to go without any supplemental coverage?",
+        "answer": "Yes, financially. Original Medicare alone leaves you exposed to unlimited 20% coinsurance on Part B services and per-day hospital coinsurance that can run into the thousands during an extended stay. It is legal and some people manage the risk deliberately, but for most beneficiaries either Medigap or Medicare Advantage meaningfully reduces that exposure."
+      },
+      {
+        "question": "What's the cheapest way to protect against high Medicare costs in 2026?",
+        "answer": "A $0-premium Medicare Advantage plan is usually the lowest-cost way to get an annual out-of-pocket cap, since it adds no extra monthly premium beyond standard Part B. Medigap costs more monthly ($110 to $480+ depending on the plan letter, state, and age) but reduces cost-sharing further and keeps you on the nationwide Original Medicare network."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Medicare Original tiene un máximo de gastos de bolsillo?",
+        "answer": "No. Medicare Original Parte A y Parte B no tienen un máximo anual de gastos de bolsillo integrado en 2026. Usted paga el deducible de la Parte A ($1,736 por período de beneficios), el deducible de la Parte B ($283), y un coseguro del 20% en la mayoría de los servicios de la Parte B indefinidamente a menos que agregue una póliza Medigap o cambie a Medicare Advantage."
+      },
+      {
+        "question": "¿Qué pasa si no compro una póliza Medigap?",
+        "answer": "Usted sigue siendo totalmente responsable de los deducibles y el coseguro del 20% de Medicare Original sin tope anual. La mayoría de los años esto puede sumar unos cientos a unos pocos miles de dólares, pero una hospitalización grave o una estancia prolongada de enfermería especializada en 2026 puede llevar los gastos de bolsillo más allá de $10,000."
+      },
+      {
+        "question": "¿Medicare Advantage es un sustituto de un Medicare Supplement?",
+        "answer": "Funcionalmente, sí, para el tope de gastos. Los planes Medicare Advantage deben limitar los costos de Parte A y Parte B dentro de la red a $9,250 en 2026 ($13,900 combinado), mientras que Medigap no tiene un requisito legal de tope propio pero a menudo reduce sus costos compartidos a casi $0. No puede tener ambos a la vez."
+      },
+      {
+        "question": "¿Cuándo puedo comprar una póliza Medigap sin suscripción médica?",
+        "answer": "Durante su período de inscripción abierta de Medigap de seis meses, que comienza el mes en que cumple 65 años y está inscrito en la Parte B. Las aseguradoras deben venderle cualquier plan Medigap que ofrezcan en ese momento sin importar su historial de salud. Fuera de esa ventana, las aseguradoras en la mayoría de los estados pueden evaluarlo médicamente o rechazar la cobertura."
+      },
+      {
+        "question": "¿Puedo tener Medicare Advantage y Medigap al mismo tiempo?",
+        "answer": "No. Las reglas federales prohíben a las aseguradoras vender una póliza Medigap a alguien inscrito en un plan Medicare Advantage, ya que ambos productos resuelven el mismo problema de maneras diferentes. Si quiere Medigap, generalmente necesita cancelar su inscripción en Medicare Advantage y volver a Medicare Original primero."
+      },
+      {
+        "question": "¿Qué pasa si tengo cobertura de jubilado o de empleador en lugar de Medigap?",
+        "answer": "La cobertura de salud de jubilados de empleador o sindicato a menudo actúa como pagador secundario de Medicare Original, cubriendo parte o la totalidad de los deducibles y el coseguro que Medigap cubriría de otro modo. Revise el resumen de beneficios de su plan, ya que la generosidad de la cobertura varía ampliamente según el empleador."
+      },
+      {
+        "question": "¿Es arriesgado no tener ninguna cobertura suplementaria?",
+        "answer": "Sí, financieramente. Medicare Original solo lo deja expuesto a un coseguro ilimitado del 20% en los servicios de la Parte B y a un coseguro hospitalario diario que puede sumar miles durante una estancia prolongada. Es legal y algunas personas manejan el riesgo deliberadamente, pero para la mayoría de los beneficiarios, Medigap o Medicare Advantage reducen significativamente esa exposición."
+      },
+      {
+        "question": "¿Cuál es la manera más económica de protegerse contra altos costos de Medicare en 2026?",
+        "answer": "Un plan Medicare Advantage con prima $0 suele ser la forma más económica de obtener un tope anual de gastos, ya que no añade prima mensual adicional más allá de la Parte B estándar. Medigap cuesta más al mes ($110 a $480+ según el plan, el estado y la edad) pero reduce más los costos compartidos y lo mantiene en la red nacional de Medicare Original."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Is Medicare Supplement (Medigap) Worth It?",
+        "es": "¿Vale la Pena el Suplemento de Medicare (Medigap)?"
+      },
+      "href": "/qa/medicare-supplement-worth-it"
+    },
+    {
+      "label": {
+        "en": "Medigap vs Medicare Advantage: Which Is Better?",
+        "es": "Medigap vs Medicare Advantage: ¿Cuál Es Mejor?"
+      },
+      "href": "/qa/medigap-vs-medicare-advantage"
+    },
+    {
+      "label": {
+        "en": "What Is the Cheapest Medicare Supplement Plan G?",
+        "es": "¿Cuál Es el Plan G de Medicare Supplement Más Barato?"
+      },
+      "href": "/qa/cheapest-medicare-supplement-plan-g"
+    },
+    {
+      "label": {
+        "en": "Estimate Your Medicare Costs and Options",
+        "es": "Estime Sus Costos y Opciones de Medicare"
+      },
+      "href": "/medical-bill-analyzer"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMS: 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
+      "note": {
+        "en": "Official CMS fact sheet with the 2026 Part A deductible, Part B deductible, and standard Part B premium.",
+        "es": "Hoja informativa oficial de CMS con el deducible de la Parte A de 2026, el deducible de la Parte B y la prima estándar de la Parte B."
+      }
+    },
+    {
+      "name": "Federal Register: CY 2026 Inpatient Hospital Deductible and Coinsurance Amounts",
+      "url": "https://www.federalregister.gov/documents/2025/11/19/2025-20249/medicare-program-cy-2026-inpatient-hospital-deductible-and-hospital-and-extended-care-services",
+      "note": {
+        "en": "Official 2026 coinsurance amounts for hospital days 61-90, lifetime reserve days, and skilled nursing facility days 21-100.",
+        "es": "Montos oficiales de coseguro 2026 para días hospitalarios 61-90, días de reserva vitalicios y días de enfermería especializada 21-100."
+      }
+    },
+    {
+      "name": "KFF: Medicare Advantage in 2026",
+      "url": "https://www.kff.org/medicare/medicare-advantage-in-2026-premiums-out-of-pocket-limits-supplemental-benefits-and-prior-authorization/",
+      "note": {
+        "en": "KFF analysis of 2026 Medicare Advantage out-of-pocket limits, premiums, and enrollment-weighted averages.",
+        "es": "Análisis de KFF de los límites de gastos de bolsillo, primas y promedios ponderados de Medicare Advantage en 2026."
+      }
+    },
+    {
+      "name": "Medicare.gov: How Medigap Works",
+      "url": "https://www.medicare.gov/health-drug-plans/medigap",
+      "note": {
+        "en": "Official Medicare.gov guidance on Medigap plan letters, guaranteed issue rights, and enrollment timing.",
+        "es": "Guía oficial de Medicare.gov sobre las letras de planes Medigap, derechos de emisión garantizada y momento de inscripción."
+      }
+    }
+  ],
+  "subtype": "coverage",
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": [
+      "medicare without a supplement",
+      "medicare without medigap 2026",
+      "original medicare out-of-pocket cap",
+      "do i need medigap",
+      "medicare advantage vs no supplement"
+    ],
+    "es": [
+      "medicare sin suplemento",
+      "medicare sin medigap 2026",
+      "tope de gastos medicare original",
+      "necesito medigap"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
