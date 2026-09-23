@@ -202,8 +202,8 @@
     "rows": [
       {
         "code": "J0139",
-        "description": {"en": "Injection, adalimumab-adbm (unbranded biosimilar to Humira), 20mg", "es": "Inyeccion, adalimumab-adbm (biosimilar sin marca de Humira), 20mg"},
-        "whatToLookFor": {"en": "Confirm the number of 20mg units billed matches your actual dose (most adult RA dosing is 40mg biweekly, or 2 units); this code applies to the biosimilar, not brand Humira", "es": "Confirme que el numero de unidades de 20mg facturadas coincide con su dosis real; este codigo aplica al biosimilar, no a Humira de marca"}
+        "description": {"en": "Injection, adalimumab, 1 mg (covers brand Humira and all FDA-approved adalimumab biosimilars; replaced the discontinued 20mg-unit code J0135 effective January 1, 2025)", "es": "Inyeccion, adalimumab, 1 mg (cubre Humira de marca y todos los biosimilares de adalimumab aprobados por la FDA; reemplazo el codigo descontinuado J0135 de 20mg efectivo el 1 de enero de 2025)"},
+        "whatToLookFor": {"en": "Confirm the number of 1mg units billed matches your actual dose (standard adult RA dosing is 40mg biweekly, or 40 units, not 2); this single code now applies to brand Humira and every adalimumab biosimilar, so ask the billing office which specific product was dispensed", "es": "Confirme que el numero de unidades de 1mg facturadas coincide con su dosis real (la dosificacion estandar para adultos con AR es 40mg cada dos semanas, o 40 unidades, no 2); este codigo unico ahora aplica a Humira de marca y a todos los biosimilares de adalimumab"}
       },
       {
         "code": "J1438",
@@ -403,7 +403,7 @@
       {"en": "A pharmacy substitutes an interchangeable Humira biosimilar without notifying you, which is legal in most states but should still appear correctly on your bill and formulary tier.", "es": "Una farmacia sustituye un biosimilar intercambiable de Humira sin notificarle, lo cual es legal en la mayoria de los estados pero debe aparecer correctamente en su factura."},
       {"en": "Manufacturer copay card (HUMIRA Complete, the Enbrel Co-Pay Program, or RINVOQ Complete) applied to a patient enrolled in Medicare or Medicaid, which is prohibited and can trigger a claim clawback later.", "es": "Tarjeta de copago del fabricante aplicada a un paciente inscrito en Medicare o Medicaid, lo cual esta prohibido y puede resultar en una recuperacion del reclamo."},
       {"en": "Rinvoq prior authorization denied without your rheumatologist documenting the FDA-required prior TNF inhibitor trial or intolerance; this is a paperwork fix, not a true coverage denial.", "es": "Autorizacion previa de Rinvoq denegada sin que su reumatologo documente el ensayo previo requerido por la FDA de un inhibidor del TNF; esto es un problema de papeleo, no una denegacion real de cobertura."},
-      {"en": "J1438 (Enbrel) or J0139 (Humira biosimilar) billed under Part B for a dose you actually self-administered at home, which should instead be billed under Part D.", "es": "J1438 (Enbrel) o J0139 (biosimilar de Humira) facturado bajo la Parte B por una dosis que usted realmente se autoadministro en casa, la cual deberia facturarse bajo la Parte D."},
+      {"en": "J1438 (Enbrel) or J0139 (Humira or an adalimumab biosimilar) billed under Part B for a dose you actually self-administered at home, which should instead be billed under Part D.", "es": "J1438 (Enbrel) o J0139 (Humira o un biosimilar de adalimumab) facturado bajo la Parte B por una dosis que usted realmente se autoadministro en casa, la cual deberia facturarse bajo la Parte D."},
       {"en": "Charged the standard formulary copay after you already reached the 2026 Part D annual out-of-pocket cap of $2,100 across all your combined Part D drugs.", "es": "Se le cobro el copago estandar del formulario despues de que ya alcanzo el limite anual de bolsillo de la Parte D de $2,100 para 2026."}
     ]
   },
