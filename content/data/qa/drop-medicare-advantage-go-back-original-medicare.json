@@ -1,0 +1,435 @@
+{
+  "slug": "drop-medicare-advantage-go-back-original-medicare",
+  "subtype": "coverage",
+  "pageType": "coverage",
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": [
+      "drop medicare advantage plan",
+      "switch back to original medicare 2026",
+      "medicare advantage disenrollment",
+      "medigap guaranteed issue after medicare advantage",
+      "medicare advantage trial right"
+    ],
+    "es": [
+      "cancelar plan medicare advantage",
+      "volver a medicare original 2026",
+      "cancelacion de medicare advantage",
+      "emision garantizada medigap",
+      "derecho de prueba medicare advantage"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "question": {
+    "en": "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
+    "es": "¿Puedo Cancelar Mi Plan Medicare Advantage y Volver a Medicare Original?"
+  },
+  "shortAnswer": {
+    "en": "Yes, but only during set enrollment windows each year.",
+    "es": "Sí, pero solo durante ventanas de inscripción específicas cada año."
+  },
+  "fullAnswer": {
+    "en": "Yes. You can drop Medicare Advantage and return to Original Medicare during the Medicare Advantage Open Enrollment Period (January 1 to March 31, 2026), the Annual Election Period (October 15 to December 7, 2026), or a qualifying Special Enrollment Period. Original Medicare resumes automatically the moment your plan disenrolls you, but Medigap insurers can require medical underwriting unless a federal trial right or a state guaranteed issue rule applies, so the timing of your Medigap application matters as much as the timing of the switch itself.",
+    "es": "Sí. Puede cancelar Medicare Advantage y volver a Medicare Original durante el Período de Inscripción Abierta de Medicare Advantage (1 de enero al 31 de marzo de 2026), el Período de Elección Anual (15 de octubre al 7 de diciembre de 2026), o un Período de Inscripción Especial calificado. Medicare Original se reanuda automáticamente en el momento en que su plan lo cancela, pero las aseguradoras de Medigap pueden requerir suscripción médica a menos que aplique un derecho de prueba federal o una regla estatal de emisión garantizada, por lo que el momento de su solicitud de Medigap importa tanto como el momento del cambio."
+  },
+  "category": "Medicare",
+  "topic": "Medicare Advantage Disenrollment and Return to Original Medicare",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-09-24",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "Can I Drop Medicare Advantage in 2026? | CoveredUSA",
+      "es": "¿Puedo Cancelar Medicare Advantage en 2026? | CoveredUSA"
+    },
+    "description": {
+      "en": "Yes, you can drop Medicare Advantage for Original Medicare during set 2026 windows, but Medigap without underwriting depends on trial rights and state rules.",
+      "es": "Sí, puede cancelar Medicare Advantage por Medicare Original durante ventanas de 2026, pero Medigap sin suscripción depende de derechos de prueba y reglas estatales."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare? (2026)",
+      "es": "¿Puedo Cancelar Mi Plan Medicare Advantage y Volver a Medicare Original? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Medicare Advantage enrollees get three defined windows each year to drop their plan and return to Original Medicare: the Medicare Advantage Open Enrollment Period (January 1 to March 31, 2026), the Annual Election Period (October 15 to December 7, 2026), and any Special Enrollment Period they qualify for, such as moving out of the plan's service area or the plan losing its Medicare contract. Outside those windows, a Medicare Advantage enrollee is generally locked into the plan for the rest of the calendar year.",
+      "es": "Los inscritos en Medicare Advantage tienen tres ventanas definidas cada año para cancelar su plan y volver a Medicare Original: el Período de Inscripción Abierta de Medicare Advantage (1 de enero al 31 de marzo de 2026), el Período de Elección Anual (15 de octubre al 7 de diciembre de 2026), y cualquier Período de Inscripción Especial para el que califiquen, como mudarse fuera del área de servicio del plan o que el plan pierda su contrato con Medicare. Fuera de esas ventanas, un inscrito en Medicare Advantage generalmente queda atado al plan por el resto del año calendario."
+    },
+    {
+      "en": "Medigap coverage is the real catch of switching back, not the switch itself. Original Medicare resumes with no waiting period, but a Medigap insurer can ask health questions and decline an applicant based on a preexisting condition unless a federal trial right or a state guaranteed issue rule applies. This guide walks through exactly when you can drop Medicare Advantage, how the disenrollment process works, and how to protect your Medigap options in 2026. See how the two paths compare overall in [Medicare Advantage vs. Original Medicare](/en/qa/medicare-advantage-vs-original-medicare), or check your options at the [eligibility screener](/en/screener).",
+      "es": "La cobertura Medigap es la verdadera trampa de volver a cambiar, no el cambio en sí. Medicare Original se reanuda sin período de espera, pero una aseguradora de Medigap puede hacer preguntas de salud y rechazar a un solicitante por una condición preexistente a menos que aplique un derecho de prueba federal o una regla estatal de emisión garantizada. Esta guía explica exactamente cuándo puede cancelar Medicare Advantage, cómo funciona el proceso de cancelación y cómo proteger sus opciones de Medigap en 2026."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Enrollment Window", "Can You Drop Medicare Advantage?", "When Original Medicare Starts", "Medigap Guaranteed Issue?"],
+      "es": ["Ventana de Inscripción", "¿Puede Cancelar Medicare Advantage?", "Cuándo Inicia Medicare Original", "¿Emisión Garantizada de Medigap?"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "MA Open Enrollment Period (Jan 1 to Mar 31, 2026)", "es": "Período de Inscripción Abierta de MA (1 ene al 31 mar de 2026)" },
+          { "value": { "en": "Yes, one switch allowed", "es": "Sí, se permite un cambio" }, "status": "yes" },
+          { "en": "1st of the month after you request the switch", "es": "El 1ro del mes siguiente a su solicitud" },
+          { "value": { "en": "Not guaranteed federally; depends on state rules", "es": "No garantizada federalmente; depende de reglas estatales" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Annual Election Period (Oct 15 to Dec 7, 2026)", "es": "Período de Elección Anual (15 oct al 7 dic de 2026)" },
+          { "value": { "en": "Yes", "es": "Sí" }, "status": "yes" },
+          { "en": "January 1, 2027", "es": "1 de enero de 2027" },
+          { "value": { "en": "Not guaranteed federally; depends on state rules", "es": "No garantizada federalmente; depende de reglas estatales" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Special Enrollment Period (move, 5-star plan, plan loses contract)", "es": "Período de Inscripción Especial (mudanza, plan 5 estrellas, pérdida de contrato)" },
+          { "value": { "en": "Yes, if you qualify", "es": "Sí, si califica" }, "status": "yes" },
+          { "en": "Varies by SEP type, usually the month after enrollment", "es": "Varía según el tipo de SEP, usualmente el mes siguiente" },
+          { "value": { "en": "Yes for plan-termination SEPs; no for most others", "es": "Sí para SEP por terminación de plan; no para la mayoría" }, "status": "partial" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "First 12 months in your first Medicare Advantage plan (trial right)", "es": "Primeros 12 meses en su primer plan Medicare Advantage (derecho de prueba)" },
+          { "value": { "en": "Yes, anytime within the 12-month trial", "es": "Sí, en cualquier momento dentro de los 12 meses" }, "status": "yes" },
+          { "en": "The date you choose to disenroll, within the trial period", "es": "La fecha que elija para cancelar, dentro del período de prueba" },
+          { "value": { "en": "Yes, federal guarantee if applied within 63 days", "es": "Sí, garantía federal si aplica dentro de 63 días" }, "status": "yes" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Outside any enrollment window (no qualifying event)", "es": "Fuera de cualquier ventana de inscripción (sin evento calificado)" },
+          { "value": { "en": "No, must wait for the next window", "es": "No, debe esperar la siguiente ventana" }, "status": "no" },
+          { "en": "Not applicable", "es": "No aplica" },
+          { "value": { "en": "No", "es": "No" }, "status": "no" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Federal law guarantees Medigap issue only during a trial right or specific plan-termination Special Enrollment Periods. Connecticut, Massachusetts, Maine, and New York require continuous or annual Medigap guaranteed issue regardless of health status, and Minnesota adds an annual window for ages 65 to 70 starting August 1, 2026. Fifteen states and DC rely only on the federal minimum.",
+      "es": "La ley federal garantiza la emisión de Medigap solo durante un derecho de prueba o Períodos de Inscripción Especial específicos por terminación de plan. Connecticut, Massachusetts, Maine y Nueva York requieren emisión garantizada continua o anual sin importar el estado de salud, y Minnesota agrega una ventana anual para edades 65 a 70 a partir del 1 de agosto de 2026."
+    },
+    "source": "Medicare.gov Special Enrollment Periods, Medicare.gov Medigap guaranteed issue rules, KFF Medigap Enrollment and Consumer Protections Vary Across States 2026"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct answer",
+        "es": "Respuesta directa"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes. Medicare Advantage enrollees can drop their plan and return to Original Medicare during the Medicare Advantage Open Enrollment Period (January 1 to March 31, 2026), the Annual Election Period (October 15 to December 7, 2026), or a qualifying Special Enrollment Period. Original Medicare resumes automatically once the plan disenrolls a member. The larger catch involves Medigap: insurers can ask health questions and decline coverage unless a trial right or state guaranteed issue rule applies.",
+          "es": "Sí. Los inscritos en Medicare Advantage pueden cancelar su plan y volver a Medicare Original durante el Período de Inscripción Abierta de Medicare Advantage (1 de enero al 31 de marzo de 2026), el Período de Elección Anual (15 de octubre al 7 de diciembre de 2026), o un Período de Inscripción Especial calificado. Medicare Original se reanuda automáticamente al cancelarse el plan. La verdadera trampa es Medigap: las aseguradoras pueden hacer preguntas de salud y rechazar la cobertura a menos que aplique un derecho de prueba o una regla estatal de emisión garantizada."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Original Medicare Covers the Moment You Switch Back",
+        "es": "Lo Que Cubre Medicare Original en el Momento en que Vuelve"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare restarts with no waiting period the day a Medicare Advantage disenrollment takes effect, covering Part A hospital stays and Part B doctor visits the same way it did before the switch to Medicare Advantage. Part A carries a $1,736 inpatient hospital deductible per benefit period in 2026, and Part B carries a separate $283 annual deductible in 2026, after which Original Medicare typically pays 80% of approved outpatient charges while the enrollee pays the remaining 20% with no annual cap unless a Medigap policy limits it. Part B's standard monthly premium is $202.90 in 2026 and applies regardless of whether a Medigap or stand-alone drug plan is also in place.",
+          "es": "Medicare Original se reanuda sin período de espera el día en que la cancelación de Medicare Advantage entra en vigor, cubriendo estancias hospitalarias bajo la Parte A y visitas médicas bajo la Parte B de la misma manera que antes de cambiar a Medicare Advantage. La Parte A tiene un deducible hospitalario de $1,736 por período de beneficios en 2026, y la Parte B tiene un deducible anual separado de $283 en 2026, después del cual Medicare Original generalmente paga 80% de los cargos ambulatorios aprobados mientras el inscrito paga el 20% restante sin tope anual a menos que una póliza Medigap lo limite. La prima mensual estándar de la Parte B es de $202.90 en 2026."
+        },
+        {
+          "en": "Provider access changes immediately too. Original Medicare lets a beneficiary see any provider nationwide who accepts Medicare assignment, without the referrals or prior authorizations that many Medicare Advantage HMO and PPO networks require for specialist visits, imaging, or procedures.",
+          "es": "El acceso a proveedores también cambia de inmediato. Medicare Original permite a un beneficiario ver a cualquier proveedor en todo el país que acepte la asignación de Medicare, sin las referencias o autorizaciones previas que muchas redes HMO y PPO de Medicare Advantage requieren para visitas a especialistas, imágenes o procedimientos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Actually Drop a Medicare Advantage Plan",
+        "es": "Cómo Cancelar Realmente un Plan Medicare Advantage"
+      },
+      "paragraphs": [
+        {
+          "en": "Disenrolling from Medicare Advantage takes one of two paths. Calling 1-800-MEDICARE (1-800-633-4227) or submitting a disenrollment request directly to the Medicare Advantage plan works during the Medicare Advantage Open Enrollment Period or a Special Enrollment Period. Enrolling in a stand-alone Part D drug plan during the Annual Election Period also automatically disenrolls a person from Medicare Advantage and returns them to Original Medicare, because Medicare treats a new Part D plan enrollment as an election to leave Part C.",
+          "es": "Cancelar Medicare Advantage sigue una de dos rutas. Llamar al 1-800-MEDICARE (1-800-633-4227) o enviar una solicitud de cancelación directamente al plan Medicare Advantage funciona durante el Período de Inscripción Abierta de Medicare Advantage o un Período de Inscripción Especial. Inscribirse en un plan Parte D independiente durante el Período de Elección Anual también cancela automáticamente a la persona de Medicare Advantage y la devuelve a Medicare Original."
+        },
+        {
+          "en": "Effective dates depend on which window is used. A switch made during the January 1 to March 31, 2026 Medicare Advantage Open Enrollment Period takes effect the first day of the month after the request. A switch made during the October 15 to December 7, 2026 Annual Election Period takes effect January 1, 2027. Special Enrollment Period switches, such as moving out of a plan's service area or choosing a 5-star plan, generally take effect the month after enrollment.",
+          "es": "Las fechas efectivas dependen de la ventana utilizada. Un cambio realizado durante el Período de Inscripción Abierta de Medicare Advantage del 1 de enero al 31 de marzo de 2026 entra en vigor el primer día del mes siguiente a la solicitud. Un cambio durante el Período de Elección Anual del 15 de octubre al 7 de diciembre de 2026 entra en vigor el 1 de enero de 2027."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "The Medigap Catch: Guaranteed Issue, Trial Rights, and Underwriting",
+        "es": "La Trampa de Medigap: Emisión Garantizada, Derechos de Prueba y Suscripción"
+      },
+      "paragraphs": [
+        {
+          "en": "Medigap insurers can require medical underwriting for anyone applying outside a guaranteed issue window, meaning they can ask health questions, charge more, or deny an application entirely based on a preexisting condition. Federal law creates a trial right in two situations: joining a Medicare Advantage plan at 65 during the Initial Enrollment Period and deciding within the first 12 months to return to Original Medicare, or dropping a Medigap policy to try Medicare Advantage for the first time and switching back within 12 months. Either trial right guarantees the ability to buy a Medigap policy without underwriting, as long as the application is submitted within 63 days of the Original Medicare coverage starting.",
+          "es": "Las aseguradoras de Medigap pueden requerir suscripción médica para cualquier persona que solicite fuera de una ventana de emisión garantizada, lo que significa que pueden hacer preguntas de salud, cobrar más o rechazar una solicitud por completo debido a una condición preexistente. La ley federal crea un derecho de prueba en dos situaciones: unirse a un plan Medicare Advantage a los 65 años durante el Período de Inscripción Inicial y decidir dentro de los primeros 12 meses volver a Medicare Original, o cancelar una póliza Medigap para probar Medicare Advantage por primera vez y volver dentro de 12 meses. Cualquiera de los dos derechos de prueba garantiza la posibilidad de comprar una póliza Medigap sin suscripción, siempre que la solicitud se presente dentro de 63 días desde el inicio de la cobertura de Medicare Original."
+        },
+        {
+          "en": "Four states, Connecticut, Massachusetts, Maine, and New York, require Medigap insurers to offer continuous or annual guaranteed issue enrollment to Medicare beneficiaries age 65 and older regardless of health status, according to KFF's 2026 Medigap consumer protections tracker. Minnesota adds a similar annual guaranteed issue window for ages 65 to 70 starting August 1, 2026. Fifteen states and the District of Columbia rely only on the federal minimum protections, so someone without a trial right or a qualifying event in those states may be medically underwritten or turned down.",
+          "es": "Cuatro estados, Connecticut, Massachusetts, Maine y Nueva York, requieren que las aseguradoras de Medigap ofrezcan inscripción de emisión garantizada continua o anual a beneficiarios de Medicare de 65 años o más sin importar su estado de salud, según el rastreador de protecciones al consumidor de Medigap de KFF de 2026. Minnesota agrega una ventana anual similar para edades 65 a 70 a partir del 1 de agosto de 2026. Quince estados y el Distrito de Columbia dependen únicamente de las protecciones mínimas federales."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Happens to Extra Medicare Advantage Benefits and Part D",
+        "es": "Qué Pasa con los Beneficios Adicionales de Medicare Advantage y la Parte D"
+      },
+      "paragraphs": [
+        {
+          "en": "Dental, vision, hearing, and fitness benefits bundled into a Medicare Advantage plan end the day the plan disenrolls a member, because Original Medicare does not include any of those extra benefits. Someone switching back needs a stand-alone dental, vision, or hearing plan to replace them, or must pay out of pocket, since Original Medicare covers dental and vision only in narrow medically necessary circumstances tied to another covered procedure.",
+          "es": "Los beneficios de dental, visión, audición y acondicionamiento físico incluidos en un plan Medicare Advantage terminan el día en que el plan cancela a un miembro, porque Medicare Original no incluye ninguno de esos beneficios adicionales. Alguien que vuelve necesita un plan independiente de dental, visión o audición para reemplazarlos, o debe pagar de su bolsillo."
+        },
+        {
+          "en": "Prescription drug coverage also ends with the Medicare Advantage plan unless it was already a stand-alone arrangement, so anyone returning to Original Medicare needs to enroll in a separate Part D Prescription Drug Plan during the same enrollment window used for the switch. Skipping Part D enrollment risks a late enrollment penalty, and the 2026 Part D catastrophic out-of-pocket cap of $2,100 only applies once a person is actually enrolled in a drug plan.",
+          "es": "La cobertura de medicamentos con receta también termina con el plan Medicare Advantage a menos que ya fuera un plan independiente, por lo que quien vuelve a Medicare Original necesita inscribirse en un Plan de Medicamentos Recetados de la Parte D independiente durante la misma ventana de inscripción usada para el cambio. Omitir la inscripción a la Parte D arriesga una multa por inscripción tardía, y el tope de gastos de bolsillo catastrófico de la Parte D de $2,100 en 2026 solo aplica una vez que la persona está realmente inscrita en un plan de medicamentos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Cost of Original Medicare Without Medigap in 2026",
+        "es": "Costo de Medicare Original Sin Medigap en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare alone leaves the 20% Part B coinsurance uncapped in 2026, so a large outpatient bill can leave a beneficiary owing thousands of dollars after the $283 Part B deductible is met, unless a Medigap policy or a Medicare Advantage-style out-of-pocket maximum limits the exposure. A hospital stay triggers the $1,736 Part A deductible per benefit period in 2026, and daily coinsurance charges begin after 60 days as an inpatient.",
+          "es": "Medicare Original por sí solo deja el coaseguro del 20% de la Parte B sin tope en 2026, por lo que una factura ambulatoria grande puede dejar a un beneficiario debiendo miles de dólares después de cumplir el deducible de $283 de la Parte B, a menos que una póliza Medigap o un máximo de gastos de bolsillo tipo Medicare Advantage limite la exposición. Una estancia hospitalaria activa el deducible de $1,736 de la Parte A por período de beneficios en 2026."
+        },
+        {
+          "en": "A Medigap policy caps or eliminates that coinsurance depending on the plan letter chosen, with monthly premiums in 2026 that commonly range from about $100 to $300 depending on the state, the plan letter, and the applicant's age, according to KFF's Medigap premium data. Standalone Medicare Advantage-style dental, vision, or drug plans are separate purchases and do not replace the Part A and Part B coinsurance protection that Medigap provides.",
+          "es": "Una póliza Medigap limita o elimina ese coaseguro según la letra de plan elegida, con primas mensuales en 2026 que comúnmente van de aproximadamente $100 a $300 dependiendo del estado, la letra del plan y la edad del solicitante, según datos de primas de Medigap de KFF."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What to Do If a Medigap Insurer Denies Your Application",
+        "es": "Qué Hacer Si una Aseguradora de Medigap Rechaza Su Solicitud"
+      },
+      "paragraphs": [
+        {
+          "en": "Applying to a different insurer is the first move if one company denies a Medigap application, because underwriting standards vary company to company and a preexisting condition that triggers a decline at one insurer may be acceptable at another. Waiting for a state's birthday-rule or anniversary-rule window, available in states like California and Missouri, is a second option that lets a person switch to an equal or lesser Medigap plan once a year without underwriting.",
+          "es": "Solicitar a una aseguradora diferente es el primer paso si una compañía rechaza una solicitud de Medigap, porque los estándares de suscripción varían de una compañía a otra y una condición preexistente que causa un rechazo en una aseguradora puede ser aceptable en otra. Esperar la ventana de regla de cumpleaños o de aniversario de un estado, disponible en estados como California y Missouri, es una segunda opción."
+        },
+        {
+          "en": "Staying enrolled in the current Medicare Advantage plan until a guaranteed issue window opens, choosing a different Medicare Advantage plan with better provider access during the next Annual Election Period, or using stand-alone dental and vision plans to cover what Medigap and Original Medicare do not are practical fallbacks. A licensed State Health Insurance Assistance Program (SHIP) counselor, free in every state, can identify state-specific guaranteed issue events, such as an employer group plan ending or a Medicare Advantage plan leaving a county, that qualify for guaranteed issue Medigap rights.",
+          "es": "Permanecer inscrito en el plan Medicare Advantage actual hasta que se abra una ventana de emisión garantizada, elegir un plan Medicare Advantage diferente con mejor acceso a proveedores durante el próximo Período de Elección Anual, o usar planes independientes de dental y visión son alternativas prácticas. Un consejero certificado del Programa Estatal de Asistencia sobre Seguros de Salud (SHIP), gratuito en cada estado, puede identificar eventos de emisión garantizada específicos del estado."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Does Original Medicare cover everything my Medicare Advantage plan covered?",
+        "answer": "No. Original Medicare covers Part A hospital care and Part B medical care the same way nationwide, but it does not include the dental, vision, hearing, or fitness extras that many Medicare Advantage plans bundle in. A person switching back needs a separate Part D drug plan, and often a stand-alone dental or vision plan, to replace what the Medicare Advantage plan provided."
+      },
+      {
+        "question": "When can I switch back to Original Medicare in 2026?",
+        "answer": "The Medicare Advantage Open Enrollment Period runs January 1 to March 31, 2026, letting a current enrollee switch once. The Annual Election Period runs October 15 to December 7, 2026, for coverage starting January 1, 2027. A qualifying Special Enrollment Period, such as moving or a plan losing its Medicare contract, allows a switch at other times."
+      },
+      {
+        "question": "What is the Medicare Advantage trial right?",
+        "answer": "The trial right lets a person who joined Medicare Advantage at 65 during their Initial Enrollment Period, or who dropped a Medigap policy to try Medicare Advantage for the first time, switch back to Original Medicare within 12 months and buy a Medigap policy without medical underwriting, as long as the Medigap application is submitted within 63 days of Original Medicare starting."
+      },
+      {
+        "question": "Can I get a Medigap policy without medical underwriting after leaving Medicare Advantage?",
+        "answer": "Only with a qualifying event. A federal trial right, a Medicare Advantage plan leaving your area, or living in one of the few states with continuous or annual guaranteed issue rules (Connecticut, Massachusetts, Maine, and New York, plus Minnesota starting August 1, 2026) avoids underwriting. Outside those situations, insurers can ask health questions and decline coverage for a preexisting condition."
+      },
+      {
+        "question": "What happens to my Medicare Advantage extra benefits like dental and vision if I switch back?",
+        "answer": "Those benefits end the day your Medicare Advantage disenrollment takes effect, because Original Medicare does not include dental, vision, hearing, or fitness benefits except in narrow medically necessary cases. Replacing them requires a stand-alone dental or vision plan, or paying out of pocket."
+      },
+      {
+        "question": "How much does Original Medicare cost without Medigap in 2026?",
+        "answer": "Original Medicare has a $283 Part B deductible and a $1,736 Part A inpatient deductible in 2026, plus 20% coinsurance on most Part B services with no annual cap. A Medigap policy or a Medicare Advantage-style out-of-pocket maximum is the only way to limit that exposure, since Original Medicare alone does not cap out-of-pocket costs."
+      },
+      {
+        "question": "Do I need to sign up for Part D separately after leaving Medicare Advantage?",
+        "answer": "Yes. Dropping a Medicare Advantage plan that included drug coverage also drops the drug coverage, so a stand-alone Part D Prescription Drug Plan needs to be enrolled during the same window used for the switch. Missing that step risks a late enrollment penalty and leaves prescriptions uncovered until the next enrollment period."
+      },
+      {
+        "question": "What if I miss the window to switch back to Original Medicare?",
+        "answer": "Waiting for the next available window is the only option: the Medicare Advantage Open Enrollment Period (January 1 to March 31), the Annual Election Period (October 15 to December 7), or a qualifying Special Enrollment Period. Medicare Advantage enrollees are otherwise locked into their plan for the rest of the calendar year outside those windows."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Medicare Original cubre todo lo que cubría mi plan Medicare Advantage?",
+        "answer": "No. Medicare Original cubre atención hospitalaria de la Parte A y atención médica de la Parte B de la misma manera en todo el país, pero no incluye los extras de dental, visión, audición o acondicionamiento físico que muchos planes Medicare Advantage incluyen. Quien vuelve necesita un plan Parte D separado, y a menudo un plan dental o de visión independiente."
+      },
+      {
+        "question": "¿Cuándo puedo volver a Medicare Original en 2026?",
+        "answer": "El Período de Inscripción Abierta de Medicare Advantage va del 1 de enero al 31 de marzo de 2026, permitiendo un cambio a un inscrito actual. El Período de Elección Anual va del 15 de octubre al 7 de diciembre de 2026, para cobertura que inicia el 1 de enero de 2027. Un Período de Inscripción Especial calificado permite un cambio en otros momentos."
+      },
+      {
+        "question": "¿Qué es el derecho de prueba de Medicare Advantage?",
+        "answer": "El derecho de prueba permite que una persona que se unió a Medicare Advantage a los 65 años durante su Período de Inscripción Inicial, o que canceló una póliza Medigap para probar Medicare Advantage por primera vez, vuelva a Medicare Original dentro de 12 meses y compre una póliza Medigap sin suscripción médica, siempre que la solicitud se presente dentro de 63 días desde el inicio de Medicare Original."
+      },
+      {
+        "question": "¿Puedo obtener una póliza Medigap sin suscripción médica después de dejar Medicare Advantage?",
+        "answer": "Solo con un evento calificado. Un derecho de prueba federal, que un plan Medicare Advantage deje su área, o vivir en uno de los pocos estados con reglas de emisión garantizada continua o anual (Connecticut, Massachusetts, Maine y Nueva York, más Minnesota a partir del 1 de agosto de 2026) evita la suscripción."
+      },
+      {
+        "question": "¿Qué pasa con mis beneficios adicionales de Medicare Advantage como dental y visión si vuelvo a Medicare Original?",
+        "answer": "Esos beneficios terminan el día en que su cancelación de Medicare Advantage entra en vigor, porque Medicare Original no incluye beneficios de dental, visión, audición o acondicionamiento físico salvo en casos estrechos médicamente necesarios. Reemplazarlos requiere un plan dental o de visión independiente, o pagar de su bolsillo."
+      },
+      {
+        "question": "¿Cuánto cuesta Medicare Original sin Medigap en 2026?",
+        "answer": "Medicare Original tiene un deducible de la Parte B de $283 y un deducible hospitalario de la Parte A de $1,736 en 2026, más un coaseguro del 20% en la mayoría de los servicios de la Parte B sin tope anual. Una póliza Medigap o un máximo de gastos de bolsillo tipo Medicare Advantage es la única forma de limitar esa exposición."
+      },
+      {
+        "question": "¿Necesito inscribirme en la Parte D por separado después de dejar Medicare Advantage?",
+        "answer": "Sí. Cancelar un plan Medicare Advantage que incluía cobertura de medicamentos también cancela esa cobertura, por lo que se necesita inscribirse en un Plan de Medicamentos Recetados de la Parte D independiente durante la misma ventana usada para el cambio. Omitir este paso arriesga una multa por inscripción tardía."
+      },
+      {
+        "question": "¿Qué pasa si pierdo la ventana para volver a Medicare Original?",
+        "answer": "Esperar la siguiente ventana disponible es la única opción: el Período de Inscripción Abierta de Medicare Advantage (1 de enero al 31 de marzo), el Período de Elección Anual (15 de octubre al 7 de diciembre), o un Período de Inscripción Especial calificado. Fuera de esas ventanas, los inscritos en Medicare Advantage generalmente quedan atados a su plan por el resto del año."
+      }
+    ]
+  },
+
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Step 1: Confirm you are in an eligible window, the Medicare Advantage Open Enrollment Period (January 1 to March 31, 2026), the Annual Election Period (October 15 to December 7, 2026), or a qualifying Special Enrollment Period, or that you have a 12-month trial right.",
+        "es": "Paso 1: Confirme que está en una ventana elegible, el Período de Inscripción Abierta de Medicare Advantage (1 de enero al 31 de marzo de 2026), el Período de Elección Anual (15 de octubre al 7 de diciembre de 2026), o un Período de Inscripción Especial calificado, o que tiene un derecho de prueba de 12 meses."
+      },
+      {
+        "en": "Step 2: Call 1-800-MEDICARE (1-800-633-4227) or contact your Medicare Advantage plan directly to request disenrollment and confirm your effective date.",
+        "es": "Paso 2: Llame al 1-800-MEDICARE (1-800-633-4227) o contacte a su plan Medicare Advantage directamente para solicitar la cancelación y confirmar su fecha efectiva."
+      },
+      {
+        "en": "Step 3: Enroll in a stand-alone Part D Prescription Drug Plan in the same window, since Original Medicare does not include drug coverage.",
+        "es": "Paso 3: Inscríbase en un Plan de Medicamentos Recetados de la Parte D independiente en la misma ventana, ya que Medicare Original no incluye cobertura de medicamentos."
+      },
+      {
+        "en": "Step 4: Apply for a Medigap policy immediately, and no later than 63 days after your Original Medicare coverage starts, to use any trial right or guaranteed issue protection you qualify for.",
+        "es": "Paso 4: Solicite una póliza Medigap de inmediato, y no más tarde de 63 días después de que inicie su cobertura de Medicare Original, para usar cualquier derecho de prueba o protección de emisión garantizada que califique."
+      },
+      {
+        "en": "Step 5: Confirm your new Medicare card and effective date, and keep your old Medicare Advantage plan ID card until the new coverage begins to avoid a gap in claims processing.",
+        "es": "Paso 5: Confirme su nueva tarjeta de Medicare y fecha efectiva, y conserve su tarjeta de identificación del antiguo plan Medicare Advantage hasta que comience la nueva cobertura para evitar un vacío en el procesamiento de reclamos."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/health-drug-plans/medigap/basics/how-medigap-works",
+    "documentsNeeded": [
+      {
+        "en": "Your red, white, and blue Medicare card showing Part A and Part B enrollment",
+        "es": "Su tarjeta de Medicare roja, blanca y azul que muestra la inscripción en la Parte A y la Parte B"
+      },
+      {
+        "en": "Your current Medicare Advantage plan member ID card and enrollment date",
+        "es": "Su tarjeta de identificación de miembro del plan Medicare Advantage actual y fecha de inscripción"
+      },
+      {
+        "en": "Proof of a qualifying Special Enrollment Period event, such as a move notice or plan termination letter, if switching outside the standard windows",
+        "es": "Prueba de un evento calificado de Período de Inscripción Especial, como un aviso de mudanza o carta de terminación de plan, si cambia fuera de las ventanas estándar"
+      },
+      {
+        "en": "A list of current prescriptions to compare Part D drug plan formularies",
+        "es": "Una lista de medicamentos actuales para comparar los formularios de los planes de medicamentos de la Parte D"
+      },
+      {
+        "en": "Your Social Security number for Part D and Medigap applications",
+        "es": "Su número de Seguro Social para solicitudes de Parte D y Medigap"
+      },
+      {
+        "en": "Records of any prior Medigap policy, including the insurer and plan letter, if claiming a trial right",
+        "es": "Registros de cualquier póliza Medigap previa, incluyendo la aseguradora y la letra del plan, si reclama un derecho de prueba"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Applying for Medigap outside the 63-day guaranteed issue window after Original Medicare coverage starts",
+        "es": "Solicitar Medigap fuera de la ventana de emisión garantizada de 63 días después de que inicia la cobertura de Medicare Original"
+      },
+      {
+        "en": "A preexisting condition disclosed on the health questionnaire when no trial right or state guaranteed issue rule applies",
+        "es": "Una condición preexistente revelada en el cuestionario de salud cuando no aplica ningún derecho de prueba o regla estatal de emisión garantizada"
+      },
+      {
+        "en": "Missing the disenrollment deadline for the Medicare Advantage Open Enrollment Period or Annual Election Period, leaving the enrollee locked into the plan",
+        "es": "Perder la fecha límite de cancelación del Período de Inscripción Abierta de Medicare Advantage o el Período de Elección Anual, dejando al inscrito atado al plan"
+      },
+      {
+        "en": "Applying in a state without continuous, annual, or birthday-rule guaranteed issue protections and outside a federal trial right",
+        "es": "Solicitar en un estado sin protecciones de emisión garantizada continua, anual o de regla de cumpleaños y fuera de un derecho de prueba federal"
+      }
+    ],
+    "deadline": {
+      "en": "Enrollment windows: January 1 to March 31, 2026 (Medicare Advantage Open Enrollment Period); October 15 to December 7, 2026 (Annual Election Period, for 2027 coverage); Medigap guaranteed issue applications are generally due within 63 days of Original Medicare coverage starting.",
+      "es": "Ventanas de inscripción: 1 de enero al 31 de marzo de 2026 (Período de Inscripción Abierta de Medicare Advantage); 15 de octubre al 7 de diciembre de 2026 (Período de Elección Anual, para cobertura de 2027); las solicitudes de emisión garantizada de Medigap generalmente vencen dentro de 63 días desde el inicio de Medicare Original."
+    }
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Medicare Advantage vs. Original Medicare", "es": "Medicare Advantage vs. Medicare Original" },
+      "href": "/qa/medicare-advantage-vs-original-medicare"
+    },
+    {
+      "label": { "en": "Medigap vs. Medicare Advantage", "es": "Medigap vs. Medicare Advantage" },
+      "href": "/qa/medigap-vs-medicare-advantage"
+    },
+    {
+      "label": { "en": "What Happens If I Miss Medicare Enrollment?", "es": "¿Qué Pasa Si Pierdo la Inscripción de Medicare?" },
+      "href": "/qa/what-happens-if-i-miss-medicare-enrollment"
+    },
+    {
+      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicare.gov: Learn How Medigap Works",
+      "url": "https://www.medicare.gov/health-drug-plans/medigap/basics/how-medigap-works",
+      "note": {
+        "en": "Official CMS overview of Medigap trial rights and guaranteed issue protections when switching from Medicare Advantage to Original Medicare.",
+        "es": "Resumen oficial de CMS sobre derechos de prueba de Medigap y protecciones de emisión garantizada al cambiar de Medicare Advantage a Medicare Original."
+      }
+    },
+    {
+      "name": "Medicare.gov: Special Enrollment Periods",
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods",
+      "note": {
+        "en": "Official list of qualifying events that let a Medicare Advantage enrollee switch to Original Medicare outside the standard annual windows.",
+        "es": "Lista oficial de eventos calificados que permiten a un inscrito en Medicare Advantage cambiar a Medicare Original fuera de las ventanas anuales estándar."
+      }
+    },
+    {
+      "name": "Medicare.gov: Can I switch or drop my Medigap policy?",
+      "url": "https://www.medicare.gov/health-drug-plans/medigap/ready-to-buy/change-policies/switch-drop",
+      "note": {
+        "en": "CMS guidance on Medigap policy changes and the 63-day guaranteed issue application window.",
+        "es": "Guía de CMS sobre cambios de póliza Medigap y la ventana de solicitud de emisión garantizada de 63 días."
+      }
+    },
+    {
+      "name": "KFF: Medigap Enrollment and Consumer Protections Vary Across States",
+      "url": "https://www.kff.org/medicare/medigap-enrollment-and-consumer-protections-vary-across-states/",
+      "note": {
+        "en": "KFF's state-by-state tracker of Medigap guaranteed issue rules, including the continuous and annual open enrollment states.",
+        "es": "Rastreador de KFF estado por estado de las reglas de emisión garantizada de Medigap, incluyendo los estados con inscripción abierta continua y anual."
+      }
+    }
+  ]
+}
