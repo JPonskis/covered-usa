@@ -1,0 +1,711 @@
+{
+  "slug": "prescription-drug-tax-deduction",
+  "topicCluster": "drug-cost",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "ctaTarget": "analyzer",
+  "keyTerms": {
+    "en": [
+      "prescription drug tax deduction",
+      "are prescription drugs tax deductible 2026",
+      "medical expense deduction IRS 2026",
+      "HSA FSA prescription drugs",
+      "Schedule A prescription drug deduction",
+      "prescription drug deduction 7.5% AGI"
+    ],
+    "es": [
+      "deduccion de impuestos por medicamentos recetados",
+      "son los medicamentos recetados deducibles de impuestos 2026",
+      "deduccion de gastos medicos IRS 2026",
+      "HSA FSA medicamentos recetados",
+      "deduccion Anexo A medicamentos recetados"
+    ]
+  },
+  "drugName": {
+    "en": "Prescription Drug Tax Deduction",
+    "es": "Deduccion de Impuestos por Medicamentos Recetados"
+  },
+  "shortName": {
+    "en": "Rx Tax Deduction",
+    "es": "Deduccion de Impuestos por Recetas"
+  },
+  "nonProprietaryName": "Medical expense itemized deduction for prescription drugs and insulin (IRC Section 213(d), IRS Publication 502)",
+  "brandNames": [
+    "IRS Schedule A",
+    "Form 1040",
+    "Form 7206",
+    "HSA",
+    "FSA",
+    "HRA"
+  ],
+  "drugClass": {
+    "en": "Not a drug class. This page explains the IRC Section 213(d) federal itemized medical expense deduction as it applies to unreimbursed prescription drug and insulin costs.",
+    "es": "No es una clase farmacologica. Esta pagina explica la deduccion federal detallada de gastos medicos de la Seccion 213(d) del IRC aplicada a los costos de medicamentos recetados e insulina no reembolsados."
+  },
+  "routeOfAdministration": "Oral",
+  "medicalSpecialty": "Preventive Medicine",
+  "lastUpdated": "2026-09-21",
+  "readingTime": "9 min read",
+  "hcpcsJCodes": [],
+  "meta": {
+    "title": {
+      "en": "Are Prescription Drugs Tax-Deductible in 2026? | CoveredUSA",
+      "es": "Son los Medicamentos Recetados Deducibles en 2026? | CoveredUSA"
+    },
+    "description": {
+      "en": "Prescription drugs are deductible above 7.5% of AGI on Schedule A in 2026. See HSA/FSA rules, Medicare premium treatment, and when itemizing pays off.",
+      "es": "Los medicamentos recetados son deducibles sobre el 7.5% del AGI en el Anexo A en 2026. Reglas de HSA/FSA, primas de Medicare y cuando conviene detallar."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Are Prescription Drugs Tax-Deductible in 2026?",
+      "es": "Son los Medicamentos Recetados Deducibles de Impuestos en 2026?"
+    },
+    "subhero": {
+      "en": "Prescription drugs and insulin qualify as deductible medical expenses under IRC Section 213(d) in 2026, but only the amount you paid out-of-pocket that was never reimbursed by insurance, an HSA, or an FSA, and only the portion of your total medical expenses that exceeds 7.5% of your adjusted gross income. With the 2026 standard deduction at $16,100 for single filers and $32,200 for married couples filing jointly, most taxpayers need a large medical year, a high-deductible health plan, or several chronic prescriptions to make itemizing worthwhile. This guide breaks down the math, the HSA and FSA alternative, and the records the IRS wants to see.",
+      "es": "Los medicamentos recetados y la insulina califican como gastos medicos deducibles bajo la Seccion 213(d) del IRC en 2026, pero solo el monto que pago de su bolsillo que nunca fue reembolsado por un seguro, una HSA o una FSA, y solo la parte de sus gastos medicos totales que supera el 7.5% de su ingreso bruto ajustado. Con la deduccion estandar de 2026 en $16,100 para declarantes solteros y $32,200 para parejas casadas que declaran juntas, la mayoria de los contribuyentes necesita un ano medico grande, un plan de salud de deducible alto o varias recetas cronicas para que valga la pena detallar. Esta guia desglosa las matematicas, la alternativa de HSA y FSA, y los registros que el IRS quiere ver."
+    }
+  },
+  "quickAnswer": {
+    "en": "Yes, prescription drugs and insulin are tax-deductible medical expenses in 2026, but only if you itemize on Schedule A of Form 1040 and only the amount above 7.5% of your adjusted gross income. Over-the-counter drugs do not qualify unless insulin, and any amount paid through an HSA, FSA, or HRA cannot be deducted again on Schedule A because that money was already tax-free. Medicare Part B, Part D, and Medigap premiums also count as qualified medical expenses under IRS Publication 502. If your income disqualifies you from a manufacturer patient assistance program or the math does not favor itemizing, an HSA or FSA is usually the faster way to save on prescription costs in 2026.",
+    "es": "Si, los medicamentos recetados y la insulina son gastos medicos deducibles de impuestos en 2026, pero solo si detalla en el Anexo A del Formulario 1040 y solo el monto que supera el 7.5% de su ingreso bruto ajustado. Los medicamentos de venta libre no califican salvo la insulina, y cualquier monto pagado a traves de una HSA, FSA o HRA no puede deducirse de nuevo en el Anexo A porque ese dinero ya fue libre de impuestos. Las primas de Medicare Parte B, Parte D y Medigap tambien cuentan como gastos medicos calificados segun la Publicacion 502 del IRS."
+  },
+  "pricing": {
+    "medicareAspPerUnit": null,
+    "medicareAspUnit": null,
+    "retailLow": 360,
+    "retailHigh": 3600,
+    "retailUnit": {
+      "en": "per year (typical unreimbursed out-of-pocket prescription drug spending used in 2026 Schedule A calculations)",
+      "es": "por ano (gasto tipico de bolsillo no reembolsado en medicamentos recetados usado en calculos del Anexo A 2026)"
+    },
+    "inpatientLow": 200,
+    "inpatientHigh": 5000,
+    "inpatientUnit": {
+      "en": "per admission (unreimbursed patient share of inpatient drug charges that still counts toward the deduction)",
+      "es": "por admision (parte no reembolsada del paciente en cargos de medicamentos hospitalarios que aun cuenta para la deduccion)"
+    },
+    "medicarePartDMonthlyCap": null,
+    "medicaidCopayLow": 1,
+    "medicaidCopayHigh": 4,
+    "partBDeductibleYear": 2026,
+    "partBDeductibleAmount": 283,
+    "partDAnnualOopCap": 2100
+  },
+  "introParagraphs": [
+    {
+      "en": "IRC Section 213(d) has allowed taxpayers to deduct unreimbursed prescription drug costs since 1942, and insulin has been an explicit exception to the prescription requirement for decades. IRS Publication 502 defines a qualified prescription drug expense as an amount paid for a medicine or drug that requires a prescription from a licensed provider, purchased in the United States or a foreign country where legal, and not reimbursed by insurance, a health savings account, or a flexible spending account. Over-the-counter medications generally do not qualify for the Schedule A deduction, insulin is the sole exception. The deduction sits inside the broader medical and dental expense category on Schedule A, which also includes doctor visits, hospital charges, Medicare premiums, and long-term care costs.",
+      "es": "La Seccion 213(d) del IRC ha permitido a los contribuyentes deducir costos de medicamentos recetados no reembolsados desde 1942, y la insulina ha sido una excepcion explicita al requisito de receta durante decadas. La Publicacion 502 del IRS define un gasto calificado de medicamento recetado como un monto pagado por una medicina que requiere receta de un proveedor con licencia, comprada en Estados Unidos o en un pais extranjero donde sea legal, y no reembolsada por un seguro, una cuenta de ahorros para la salud o una cuenta de gastos flexibles."
+    },
+    {
+      "en": "Two limits determine whether a taxpayer sees any benefit from the prescription drug deduction in 2026. First, the 7.5% adjusted gross income floor, made permanent by the Consolidated Appropriations Act of 2021, means only medical expenses above that threshold count. A taxpayer with $60,000 in AGI must clear $4,500 in combined unreimbursed medical costs, prescriptions plus everything else on Schedule A, before the first deductible dollar appears. Second, the taxpayer must itemize rather than take the 2026 standard deduction of $16,100 for single filers, $32,200 for married filing jointly, or $24,150 for heads of household. Taxpayers age 65 or older can also claim the new $6,000 senior bonus deduction created by the One Big Beautiful Bill Act, available through 2028 regardless of whether they itemize, which reduces the incentive to itemize medical expenses for many retirees.",
+      "es": "Dos limites determinan si un contribuyente ve algun beneficio de la deduccion de medicamentos recetados en 2026. Primero, el piso del 7.5% del ingreso bruto ajustado, hecho permanente por la Ley de Asignaciones Consolidadas de 2021, significa que solo cuentan los gastos medicos por encima de ese umbral. Segundo, el contribuyente debe detallar en lugar de tomar la deduccion estandar de 2026 de $16,100 para declarantes solteros, $32,200 para casados que declaran juntos, o $24,150 para cabeza de familia."
+    },
+    {
+      "en": "Health savings accounts and flexible spending accounts reach the same result through a different mechanism and usually work better for most taxpayers. Contributions to an HSA (up to $4,400 for self-only coverage or $8,750 for family coverage in 2026) or a health FSA (up to $3,400 in 2026) go in pre-tax, and withdrawals for prescription drugs come out tax-free, with no 7.5% floor and no need to itemize. Money spent from an HSA or FSA cannot also be claimed on Schedule A, since claiming both would double the tax benefit for the same dollar. The Inflation Reduction Act's Maximum Fair Price for the 10 Medicare-negotiated drugs, effective January 1, 2026, lowers what many patients pay at the counter, which in turn shrinks the deductible amount since the deduction is based on what you actually paid, not the pre-negotiation list price.",
+      "es": "Las cuentas de ahorro para la salud y las cuentas de gastos flexibles llegan al mismo resultado por un mecanismo diferente y generalmente funcionan mejor para la mayoria de los contribuyentes. Las contribuciones a una HSA (hasta $4,400 para cobertura individual o $8,750 para cobertura familiar en 2026) o una FSA de salud (hasta $3,400 en 2026) ingresan antes de impuestos, y los retiros para medicamentos recetados salen libres de impuestos, sin el piso del 7.5% y sin necesidad de detallar."
+    }
+  ],
+  "pointOfPay": {
+    "rows": [
+      {
+        "pointOfPay": {
+          "en": "Pharmacy counter (unreimbursed cash payment, 2026)",
+          "es": "Mostrador de farmacia (pago en efectivo no reembolsado, 2026)"
+        },
+        "cost": {
+          "en": "$360 - $3,600/year typical",
+          "es": "$360 - $3,600/ano tipico"
+        },
+        "notes": {
+          "en": "Fully counts toward the Schedule A medical expense total; only the portion above 7.5% of AGI is deductible.",
+          "es": "Cuenta totalmente para el total de gastos medicos del Anexo A; solo la parte sobre el 7.5% del AGI es deducible."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Paid via HSA or FSA (2026)",
+          "es": "Pagado con HSA o FSA (2026)"
+        },
+        "cost": {
+          "en": "$0 net tax cost within contribution limits ($4,400 HSA self-only / $3,400 FSA)",
+          "es": "$0 costo neto de impuestos dentro de los limites ($4,400 HSA individual / $3,400 FSA)"
+        },
+        "notes": {
+          "en": "Already tax-free at the point of payment; cannot also be claimed on Schedule A. No 7.5% AGI floor applies.",
+          "es": "Ya libre de impuestos en el momento del pago; no puede reclamarse tambien en el Anexo A. No aplica el piso del 7.5% del AGI."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicare Part D premiums and copays (2026)",
+          "es": "Primas y copagos de Medicare Parte D (2026)"
+        },
+        "cost": {
+          "en": "Premiums plus up to $2,100/year in cost-sharing",
+          "es": "Primas mas hasta $2,100/ano en costo compartido"
+        },
+        "notes": {
+          "en": "Part D, Part B, and Medigap premiums are qualified medical expenses; self-employed filers may instead use Form 7206.",
+          "es": "Las primas de Parte D, Parte B y Medigap son gastos medicos calificados; los declarantes por cuenta propia pueden usar el Formulario 7206."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Medicaid (2026)",
+          "es": "Medicaid (2026)"
+        },
+        "cost": {
+          "en": "$1 - $4/prescription nominal copay",
+          "es": "$1 - $4/receta copago nominal"
+        },
+        "notes": {
+          "en": "Rarely worth tracking for Schedule A; the small copay almost never contributes meaningfully to the 7.5% AGI floor.",
+          "es": "Rara vez vale la pena rastrearlo para el Anexo A; el copago pequeno casi nunca contribuye de forma significativa al piso del 7.5% del AGI."
+        }
+      },
+      {
+        "pointOfPay": {
+          "en": "Manufacturer patient assistance program (free drug, 2026)",
+          "es": "Programa de asistencia al paciente del fabricante (medicamento gratis, 2026)"
+        },
+        "cost": {
+          "en": "$0 paid by patient",
+          "es": "$0 pagado por el paciente"
+        },
+        "notes": {
+          "en": "No deduction available since the patient paid nothing; the retail value of a free PAP-supplied drug is not deductible.",
+          "es": "No hay deduccion disponible ya que el paciente no pago nada; el valor minorista de un medicamento gratuito del PAP no es deducible."
+        }
+      }
+    ],
+    "tableFootnote": {
+      "en": "All figures reflect 2026 tax year rules. The 7.5% AGI floor applies to total Schedule A medical expenses, not prescriptions alone. Consult a tax professional for your specific situation.",
+      "es": "Todas las cifras reflejan las reglas del ano fiscal 2026. El piso del 7.5% del AGI aplica al total de gastos medicos del Anexo A, no solo a las recetas. Consulte a un profesional de impuestos para su situacion especifica."
+    },
+    "tableSource": "IRS Publication 502 (2026), IRS Instructions for Schedule A, CMS Medicare Part D 2026 benefit parameters"
+  },
+  "whyHospitalsCharge": {
+    "paragraphs": [
+      {
+        "en": "Hospital pharmacies bill drugs at chargemaster rates that run far above the wholesale acquisition cost, but for tax purposes only the amount the patient actually pays out-of-pocket, after insurance, matters. A $4,000 line-item charge for an inpatient IV antibiotic means nothing to the IRS if insurance paid $3,700 of it; the deductible amount is the $300 coinsurance or deductible the patient covered. Patients should request an itemized bill and their Explanation of Benefits to isolate the unreimbursed share before adding anything to their Schedule A worksheet.",
+        "es": "Las farmacias hospitalarias facturan medicamentos a tarifas de chargemaster muy por encima del costo de adquisicion mayorista, pero para efectos fiscales solo importa el monto que el paciente realmente paga de su bolsillo, despues del seguro. Un cargo de $4,000 por una linea de antibiotico intravenoso hospitalario no significa nada para el IRS si el seguro pago $3,700 de eso; el monto deducible es el coseguro o deducible de $300 que cubrio el paciente."
+      },
+      {
+        "en": "Disputing an inflated hospital drug charge before paying it changes the deduction, not just the bill. If a chargemaster error inflates a drug line item and the hospital corrects it after a dispute, the corrected, lower amount is what should appear on the patient's year-end tax records, not the original inflated figure. The CoveredUSA Medical Bill Analyzer scans itemized hospital bills for drug overcharges and duplicate billing before the patient pays, which keeps both the out-of-pocket cost and the resulting deduction accurate.",
+        "es": "Disputar un cargo hospitalario inflado por medicamentos antes de pagarlo cambia la deduccion, no solo la factura. Si un error de chargemaster infla una linea de medicamento y el hospital lo corrige tras una disputa, el monto corregido y menor es lo que deberia aparecer en los registros fiscales de fin de ano del paciente, no la cifra original inflada."
+      },
+      {
+        "en": "Patients recovering copay accumulator dollars or negotiated hospital settlements later in the year must reduce their claimed medical expense deduction by the amount recovered, per IRS tax benefit rule guidance. A patient who deducted $2,000 in hospital drug charges in 2026 and then received a $500 insurance refund in 2027 for a billing error must generally report that $500 as income in the year received, since the earlier deduction assumed the money was never coming back.",
+        "es": "Los pacientes que recuperan dolares de acumulador de copago o acuerdos hospitalarios negociados mas adelante en el ano deben reducir su deduccion de gastos medicos reclamada por el monto recuperado, segun la guia de la regla de beneficio fiscal del IRS."
+      }
+    ]
+  },
+  "patientAssistancePrograms": {
+    "intro": {
+      "en": "Manufacturer and nonprofit patient assistance programs (PAPs) provide free or steeply discounted prescriptions to income-qualified patients, and they interact with the tax deduction in a way many filers get wrong. Because a PAP-supplied drug costs the patient nothing, there is no deductible expense to claim, even though the retail value might be several hundred dollars a month. For patients who are uninsured or underinsured and earn below roughly 300% to 400% of the Federal Poverty Level, applying for a manufacturer PAP or a directory service typically saves more money than any tax deduction ever could, since the drug becomes free rather than merely partially deductible.",
+      "es": "Los programas de asistencia al paciente (PAP) de fabricantes y organizaciones sin fines de lucro proporcionan recetas gratuitas o muy descontadas a pacientes calificados por ingresos, y interactuan con la deduccion de impuestos de una manera que muchos declarantes malinterpretan. Como un medicamento suministrado por un PAP no le cuesta nada al paciente, no hay gasto deducible que reclamar, aunque el valor minorista podria ser de varios cientos de dolares al mes."
+    },
+    "rows": [
+      {
+        "program": "NeedyMeds Patient Assistance Program Directory",
+        "costBenefit": {
+          "en": "Free directory of 700+ manufacturer PAPs and discount cards; typical income limit 200% to 400% FPL",
+          "es": "Directorio gratuito de mas de 700 PAP de fabricantes y tarjetas de descuento; limite tipico de ingresos 200% a 400% FPL"
+        },
+        "howToApply": "needymeds.org"
+      },
+      {
+        "program": "RxAssist Patient Assistance Program Directory",
+        "costBenefit": {
+          "en": "Free searchable database of manufacturer PAP eligibility rules and application forms",
+          "es": "Base de datos gratuita y buscable de reglas de elegibilidad y formularios de PAP de fabricantes"
+        },
+        "howToApply": "rxassist.org"
+      },
+      {
+        "program": "Partnership for Prescription Assistance (PPA)",
+        "costBenefit": {
+          "en": "Single-point referral to manufacturer PAPs for uninsured and underinsured patients",
+          "es": "Referencia de un solo punto a PAP de fabricantes para pacientes sin seguro o con seguro insuficiente"
+        },
+        "howToApply": "pparx.org"
+      },
+      {
+        "program": "Manufacturer patient assistance program (drug-specific)",
+        "costBenefit": {
+          "en": "Free medication for income-eligible patients, typically at or below 300% to 400% FPL; no deduction results since $0 is paid",
+          "es": "Medicamento gratuito para pacientes elegibles por ingresos, tipicamente al 300% a 400% FPL o menos; no resulta deduccion ya que se paga $0"
+        },
+        "howToApply": "See the specific drug's CoveredUSA page for the manufacturer program name and application link"
+      }
+    ],
+    "footnote": {
+      "en": "Manufacturer copay cards and savings cards are blocked by the federal anti-kickback statute (42 U.S.C. Section 1320a-7b) for patients with Medicare, Medicaid, TRICARE, or VA coverage. Income-based patient assistance programs remain available to those patients and do not violate the statute since they are not tied to a specific commercial insurance claim. Amounts covered by a PAP, a manufacturer coupon, or any insurance reduce the deductible expense dollar for dollar; only your final unreimbursed payment counts on Schedule A.",
+      "es": "Las tarjetas de copago y ahorro del fabricante estan bloqueadas por el estatuto federal anti-soborno (42 U.S.C. Seccion 1320a-7b) para pacientes con cobertura de Medicare, Medicaid, TRICARE o VA. Los programas de asistencia al paciente basados en ingresos permanecen disponibles para esos pacientes."
+    },
+    "source": "NeedyMeds.org, RxAssist.org, PPARx.org, IRS Publication 502"
+  },
+  "medicarePartD": {
+    "hasSpecificCap": false,
+    "paragraphs": [
+      {
+        "en": "Medicare Part D premiums, deductibles, and copays are qualified medical expenses under IRS Publication 502, and they belong in the same Schedule A total as prescription drug purchases. In 2026, Part D enrollees pay a maximum of $2,100 out-of-pocket for the year across all covered drugs, and every dollar of that cap that comes out of the beneficiary's own pocket, not from Extra Help, employer retiree coverage, or a PAP, is a qualified medical expense for the deduction. Medicare Part B premiums (standard $202.90 per month in 2026) and Medigap supplemental premiums count the same way.",
+        "es": "Las primas, deducibles y copagos de Medicare Parte D son gastos medicos calificados segun la Publicacion 502 del IRS, y pertenecen al mismo total del Anexo A que las compras de medicamentos recetados. En 2026, los inscritos en la Parte D pagan un maximo de $2,100 de su bolsillo al ano en todos los medicamentos cubiertos, y cada dolar de ese limite que sale del propio bolsillo del beneficiario es un gasto medico calificado para la deduccion."
+      },
+      {
+        "en": "Self-employed taxpayers on Medicare have a separate, often more valuable option: the Form 7206 self-employed health insurance deduction lets eligible self-employed individuals deduct Medicare Part B, Part D, and Medigap premiums directly against income on Schedule 1, above the line, with no 7.5% AGI floor and no need to itemize. A self-employed retiree who also runs a small consulting business, for example, can often deduct 100% of Medicare premiums through Form 7206 rather than fighting the 7.5% floor on Schedule A. The two deductions cannot be claimed on the same premium dollars.",
+        "es": "Los contribuyentes por cuenta propia en Medicare tienen una opcion separada, a menudo mas valiosa: la deduccion de seguro de salud para trabajadores independientes del Formulario 7206 permite a las personas elegibles deducir las primas de Medicare Parte B, Parte D y Medigap directamente contra el ingreso, sin el piso del 7.5% del AGI y sin necesidad de detallar."
+      },
+      {
+        "en": "Extra Help (the Part D Low-Income Subsidy) reduces what a beneficiary pays to as little as $5.10 per generic and $12.65 per brand-name fill in 2026 for those at or below 150% of the Federal Poverty Level. Because Extra Help payments are a subsidy rather than the beneficiary's own money, only the reduced copay actually paid is deductible, not the pre-subsidy retail price. A plan's formulary tier placement and any prior authorization delay do not change what is deductible once you pay; they only affect the amount and the timing of that final out-of-pocket payment. Beneficiaries who qualify for both Extra Help and a state Medicaid spend-down program should track carefully which entity paid which portion of each fill before totaling their Schedule A worksheet.",
+        "es": "Extra Help (el Subsidio de Bajos Ingresos de la Parte D) reduce lo que paga un beneficiario a tan solo $5.10 por generico y $12.65 por reposicion de marca en 2026 para quienes estan al 150% del Nivel Federal de Pobreza o menos. La colocacion en el nivel de formulario de un plan y cualquier demora por autorizacion previa no cambian lo que es deducible una vez que paga; solo afectan el monto y el momento de ese pago final de bolsillo."
+      }
+    ]
+  },
+  "commonBillingErrors": {
+    "intro": {
+      "en": "Tax preparers and the IRS see the same prescription drug deduction mistakes every filing season. Check for these before submitting Schedule A in 2026:",
+      "es": "Los preparadores de impuestos y el IRS ven los mismos errores en la deduccion de medicamentos recetados cada temporada de declaracion. Revise estos antes de presentar el Anexo A en 2026:"
+    },
+    "items": [
+      {
+        "en": "Double-dipping: claiming a prescription on Schedule A that was already paid with HSA or FSA funds. That money was already tax-free; claiming it again on Schedule A is a documented IRS audit trigger.",
+        "es": "Doble conteo: reclamar una receta en el Anexo A que ya se pago con fondos de HSA o FSA. Ese dinero ya fue libre de impuestos; reclamarlo de nuevo en el Anexo A es un desencadenante documentado de auditoria del IRS."
+      },
+      {
+        "en": "Claiming over-the-counter drugs without a prescription. Only insulin is exempt from the prescription requirement; other OTC medications, vitamins, and supplements do not qualify for Schedule A even if a doctor recommended them.",
+        "es": "Reclamar medicamentos de venta libre sin receta. Solo la insulina esta exenta del requisito de receta; otros medicamentos de venta libre, vitaminas y suplementos no califican para el Anexo A incluso si un medico los recomendo."
+      },
+      {
+        "en": "Using the pre-coupon retail price instead of the net amount actually paid. If a GoodRx coupon or manufacturer PAP lowered the price at the register, only that final, lower payment is deductible, not the pharmacy's list price.",
+        "es": "Usar el precio minorista antes del cupon en lugar del monto neto realmente pagado. Si un cupon de GoodRx o un PAP del fabricante redujo el precio en la caja, solo ese pago final y menor es deducible, no el precio de lista de la farmacia."
+      },
+      {
+        "en": "Forgetting to subtract a later reimbursement. A 2026 insurance appeal that refunds part of a prescription cost in 2027 must reduce the prior year's claimed deduction or be reported as income in the year received.",
+        "es": "Olvidar restar un reembolso posterior. Una apelacion de seguro de 2026 que reembolsa parte del costo de una receta en 2027 debe reducir la deduccion reclamada del ano anterior o reportarse como ingreso en el ano en que se recibio."
+      },
+      {
+        "en": "Claiming prescriptions for someone who is not a tax dependent. Only expenses paid for the taxpayer, a spouse, or a qualifying dependent count, even if the taxpayer paid for a parent's or adult child's medication out of generosity.",
+        "es": "Reclamar recetas de alguien que no es dependiente fiscal. Solo cuentan los gastos pagados para el contribuyente, un conyuge o un dependiente calificado, incluso si el contribuyente pago la medicacion de un padre o hijo adulto por generosidad."
+      },
+      {
+        "en": "Missing the 7.5% AGI floor entirely and assuming all medical costs are deductible dollar for dollar. Only the amount above the floor, calculated on the total medical expense category, not prescriptions alone, ever reaches Schedule A.",
+        "es": "Pasar por alto por completo el piso del 7.5% del AGI y asumir que todos los costos medicos son deducibles dolar por dolar. Solo el monto sobre el piso, calculado sobre la categoria total de gastos medicos, llega alguna vez al Anexo A."
+      }
+    ]
+  },
+  "pharmacyPriceComparison": {
+    "caption": {
+      "en": "Representative cash prescription prices by pharmacy, and their tax treatment (2026)",
+      "es": "Precios de recetas en efectivo representativos por farmacia y su tratamiento fiscal (2026)"
+    },
+    "rows": [
+      {
+        "pharmacy": "Walmart $4 Generic Program",
+        "price": {
+          "en": "$4 (30-day, common generics)",
+          "es": "$4 (30 dias, genericos comunes)"
+        },
+        "notes": {
+          "en": "Fully deductible if unreimbursed, but $48/year rarely moves the needle toward the 7.5% AGI floor on its own.",
+          "es": "Totalmente deducible si no se reembolsa, pero $48/ano rara vez acerca por si solo al piso del 7.5% del AGI."
+        }
+      },
+      {
+        "pharmacy": "Costco Member Prescription Program",
+        "price": {
+          "en": "$8.50 (30-day, common generics)",
+          "es": "$8.50 (30 dias, genericos comunes)"
+        },
+        "notes": {
+          "en": "Open to members and non-members alike; the cash receipt is your Schedule A documentation.",
+          "es": "Abierto a miembros y no miembros por igual; el recibo en efectivo es su documentacion del Anexo A."
+        }
+      },
+      {
+        "pharmacy": "Kroger Rx Savings Club",
+        "price": {
+          "en": "$10.99 (30-day)",
+          "es": "$10.99 (30 dias)"
+        },
+        "notes": {
+          "en": "Annual $36 club fee is not itself a deductible medical expense; only the prescription cost qualifies.",
+          "es": "La tarifa anual del club de $36 no es en si un gasto medico deducible; solo el costo de la receta califica."
+        }
+      },
+      {
+        "pharmacy": "CVS w/ GoodRx coupon",
+        "price": {
+          "en": "$12 - $15 (30-day, generic)",
+          "es": "$12 - $15 (30 dias, generico)"
+        },
+        "notes": {
+          "en": "A GoodRx cash-pay transaction replaces insurance for that fill; the amount paid is deductible, but it will not count toward any insurance deductible or Part D out-of-pocket cap.",
+          "es": "Una transaccion en efectivo de GoodRx reemplaza el seguro para esa reposicion; el monto pagado es deducible, pero no contara para ningun deducible de seguro ni para el limite de gastos de bolsillo de la Parte D."
+        }
+      },
+      {
+        "pharmacy": "Walgreens",
+        "price": {
+          "en": "$18 - $22 (30-day cash, generic)",
+          "es": "$18 - $22 (30 dias en efectivo, generico)"
+        },
+        "notes": {
+          "en": "Retain the printed receipt or pharmacy year-end summary; the IRS requires documentation of amount and date paid, not just a bank statement line.",
+          "es": "Conserve el recibo impreso o el resumen anual de la farmacia; el IRS requiere documentacion del monto y la fecha de pago, no solo una linea del estado de cuenta bancario."
+        }
+      }
+    ],
+    "footnote": {
+      "en": "Cash prices vary by ZIP code and pharmacy promotion. Every pharmacy listed above will produce a year-end prescription summary on request, which is the single most useful document for the Schedule A medical expense worksheet. Verified September 2026 via GoodRx and chain member-program pricing.",
+      "es": "Los precios en efectivo varian segun el codigo postal y la promocion de la farmacia. Verificado en septiembre de 2026 a traves de GoodRx y precios de programas de miembros de cadenas."
+    },
+    "source": "GoodRx, Walmart $4 Generic Prescription Program, Costco Member Prescription Program, Kroger Rx Savings Club, IRS Publication 502"
+  },
+  "genericBiosimilarStatus": {
+    "hasGeneric": false,
+    "genericName": null,
+    "patentExpiry": null,
+    "biosimilars": null,
+    "note": {
+      "en": "This page covers a federal tax rule, not a single medication, so brand-versus-generic status does not apply in the usual sense. The IRS treats brand-name and generic prescription drugs identically for Schedule A purposes: the deduction is based on the amount actually paid, not the drug's brand status. Choosing a generic or a biosimilar simply lowers the dollar amount that could ever become deductible, since a smaller unreimbursed payment produces a smaller Schedule A line item.",
+      "es": "Esta pagina cubre una regla fiscal federal, no un solo medicamento, por lo que el estado de marca versus generico no aplica en el sentido habitual. El IRS trata los medicamentos de marca y genericos de forma identica para efectos del Anexo A: la deduccion se basa en el monto realmente pagado, no en el estado de marca del medicamento."
+    }
+  },
+  "papEligibilityTable": {
+    "caption": {
+      "en": "Typical manufacturer patient assistance program eligibility by household size (2026)",
+      "es": "Elegibilidad tipica de programas de asistencia al paciente del fabricante por tamano del hogar (2026)"
+    },
+    "fplPctReferenced": 400,
+    "rows": [
+      {
+        "householdSize": 1,
+        "incomeThreshold": 63840,
+        "incomeLabel": { "en": "<= $63,840", "es": "<= $63,840" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 2,
+        "incomeThreshold": 86560,
+        "incomeLabel": { "en": "<= $86,560", "es": "<= $86,560" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 3,
+        "incomeThreshold": 109280,
+        "incomeLabel": { "en": "<= $109,280", "es": "<= $109,280" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 4,
+        "incomeThreshold": 132000,
+        "incomeLabel": { "en": "<= $132,000", "es": "<= $132,000" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 5,
+        "incomeThreshold": 154720,
+        "incomeLabel": { "en": "<= $154,720", "es": "<= $154,720" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 6,
+        "incomeThreshold": 177440,
+        "incomeLabel": { "en": "<= $177,440", "es": "<= $177,440" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 7,
+        "incomeThreshold": 200160,
+        "incomeLabel": { "en": "<= $200,160", "es": "<= $200,160" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": 8,
+        "incomeThreshold": 222880,
+        "incomeLabel": { "en": "<= $222,880", "es": "<= $222,880" },
+        "fplPct": 400
+      },
+      {
+        "householdSize": "Each additional person",
+        "incomeThreshold": 22720,
+        "incomeLabel": { "en": "+ $22,720", "es": "+ $22,720" },
+        "fplPct": 400
+      }
+    ],
+    "year": 2026,
+    "source": "HHS 2026 federal poverty guidelines, https://aspe.hhs.gov/poverty-guidelines"
+  },
+  "denialAlternatives": {
+    "appealSteps": [
+      {
+        "en": "Step 1: If the IRS sends a notice (commonly a CP2000) proposing to disallow part of your prescription drug deduction, read the notice carefully to see exactly which line items are being questioned before responding.",
+        "es": "Paso 1: Si el IRS envia un aviso (comunmente un CP2000) proponiendo rechazar parte de su deduccion de medicamentos recetados, lea el aviso cuidadosamente para ver exactamente que partidas se estan cuestionando antes de responder."
+      },
+      {
+        "en": "Step 2: Gather documentation for every disputed amount, including pharmacy year-end summaries, Explanation of Benefits statements, and proof the amount was not reimbursed by an HSA, FSA, or insurer. Pharmacies and Part D plans can usually reprint a full-year purchase history on request.",
+        "es": "Paso 2: Reuna documentacion para cada monto disputado, incluidos los resumenes anuales de la farmacia, los Estados de Beneficios y prueba de que el monto no fue reembolsado por una HSA, FSA o asegurador."
+      },
+      {
+        "en": "Step 3: Respond to the IRS notice in writing within the deadline stated on the letter, typically 30 days, and include copies (never originals) of your supporting documentation. If you agree part of the disallowance is correct, pay that portion to stop interest from accruing on it.",
+        "es": "Paso 3: Responda al aviso del IRS por escrito dentro del plazo indicado en la carta, tipicamente 30 dias, e incluya copias (nunca originales) de su documentacion de respaldo."
+      },
+      {
+        "en": "Step 4: If the disallowance stands and you believe it is wrong, file Form 1040-X to amend the return with corrected figures, or request a conference with the IRS Independent Office of Appeals. A tax professional or Low-Income Taxpayer Clinic (free for qualifying incomes) can represent you at this stage.",
+        "es": "Paso 4: Si el rechazo se mantiene y usted cree que es incorrecto, presente el Formulario 1040-X para enmendar la declaracion con cifras corregidas, o solicite una conferencia con la Oficina Independiente de Apelaciones del IRS."
+      }
+    ],
+    "stepTherapyOverride": {
+      "en": "There is no step-therapy equivalent for a tax deduction, but the closest strategy is bunching: scheduling elective prescription refills, annual eye exams, and other qualified medical expenses so that two years of costs land in one calendar year. Bunching pushes total unreimbursed medical expenses over the 7.5% AGI floor in the bunched year, producing a deduction, while the following year reverts to the standard deduction. Ask your prescriber whether a 90-day refill can be timed to close out December rather than spill into January.",
+      "es": "No existe un equivalente de terapia escalonada para una deduccion de impuestos, pero la estrategia mas cercana es agrupar: programar reposiciones de recetas electivas, examenes oculares anuales y otros gastos medicos calificados para que dos anos de costos caigan en un ano calendario. Agrupar empuja el total de gastos medicos no reembolsados sobre el piso del 7.5% del AGI en el ano agrupado, produciendo una deduccion."
+    },
+    "papFallback": {
+      "en": "If the deduction math never works in your favor because your income is too low to itemize meaningfully, a manufacturer patient assistance program is usually the better path. Uninsured or underinsured patients below roughly 300% to 400% of the Federal Poverty Level should apply directly through NeedyMeds.org, RxAssist.org, or the specific manufacturer's PAP for a free or steeply discounted supply, since a $0 drug cost beats a partial tax deduction every time.",
+      "es": "Si las matematicas de la deduccion nunca funcionan a su favor porque su ingreso es demasiado bajo para detallar de manera significativa, un programa de asistencia al paciente del fabricante suele ser el mejor camino. Los pacientes sin seguro o con seguro insuficiente por debajo de aproximadamente 300% a 400% del Nivel Federal de Pobreza deben solicitar directamente a traves de NeedyMeds.org, RxAssist.org o el PAP especifico del fabricante."
+    },
+    "genericAlternative": {
+      "en": "Switching a brand-name prescription to its generic or biosimilar equivalent lowers the unreimbursed amount that could ever reach Schedule A, but it also brings the total medical expense category further from the 7.5% AGI floor. For taxpayers whose goal is reaching the floor (for example, to combine with other planned medical costs in a bunching year), staying on the higher-cost brand for one calendar year, then switching to generic the next, can be a deliberate part of year-over-year tax planning. Discuss any switch with your prescriber on clinical grounds first.",
+      "es": "Cambiar una receta de marca a su equivalente generico o biosimilar reduce el monto no reembolsado que podria llegar al Anexo A, pero tambien aleja mas la categoria total de gastos medicos del piso del 7.5% del AGI."
+    }
+  },
+  "howToApplyPap": {
+    "programName": "How to claim the prescription drug medical expense deduction (IRS Schedule A, Form 1040)",
+    "numberedSteps": [
+      {
+        "en": "Step 1: Request a full-year prescription purchase history from every pharmacy you used in 2026. Most chains (CVS, Walgreens, Walmart, Costco, Kroger) can print or email a year-end tax summary showing dates, drug names, and amounts paid.",
+        "es": "Paso 1: Solicite un historial de compras de recetas de todo el ano en cada farmacia que uso en 2026. La mayoria de las cadenas pueden imprimir o enviar por correo un resumen fiscal de fin de ano."
+      },
+      {
+        "en": "Step 2: Subtract any amount reimbursed by insurance, paid through an HSA, FSA, or HRA, or covered by a manufacturer patient assistance program. Only your net, unreimbursed out-of-pocket payment counts.",
+        "es": "Paso 2: Reste cualquier monto reembolsado por el seguro, pagado a traves de una HSA, FSA o HRA, o cubierto por un programa de asistencia al paciente del fabricante. Solo cuenta su pago neto de bolsillo no reembolsado."
+      },
+      {
+        "en": "Step 3: Add your net prescription and insulin total to every other qualified medical expense for the year, including Medicare Part B, Part D, and Medigap premiums, doctor visits, dental care, and mileage to appointments.",
+        "es": "Paso 3: Sume su total neto de recetas e insulina a cada otro gasto medico calificado del ano, incluidas las primas de Medicare Parte B, Parte D y Medigap, visitas al medico, atencion dental y kilometraje a las citas."
+      },
+      {
+        "en": "Step 4: Calculate 7.5% of your 2026 adjusted gross income (from Form 1040, line 11) and subtract it from your total medical expenses. The remainder is your deductible amount on Schedule A, line 4.",
+        "es": "Paso 4: Calcule el 7.5% de su ingreso bruto ajustado de 2026 (del Formulario 1040, linea 11) y restelo de sus gastos medicos totales. El resto es su monto deducible en el Anexo A, linea 4."
+      },
+      {
+        "en": "Step 5: Compare your total itemized deductions (medical plus mortgage interest, state and local taxes up to the cap, and charitable gifts) against the 2026 standard deduction for your filing status. Itemize only if the total is higher.",
+        "es": "Paso 5: Compare sus deducciones detalladas totales (medicas mas intereses hipotecarios, impuestos estatales y locales hasta el limite, y donaciones caritativas) contra la deduccion estandar de 2026 para su estado civil. Detalle solo si el total es mayor."
+      },
+      {
+        "en": "Step 6: Keep every receipt, EOB, and pharmacy summary for at least three years after filing, the standard IRS statute of limitations for an audit, in case of a CP2000 notice or examination.",
+        "es": "Paso 6: Conserve cada recibo, EOB y resumen de farmacia durante al menos tres anos despues de presentar la declaracion, el plazo estandar del IRS para una auditoria, en caso de un aviso CP2000 o examen."
+      }
+    ],
+    "govStartingUrl": "https://www.irs.gov/publications/p502",
+    "manufacturerStartingUrl": "https://www.irs.gov/forms-pubs/about-schedule-a-form-1040",
+    "documentsNeeded": [
+      {
+        "en": "Year-end prescription purchase summary from each pharmacy used in 2026",
+        "es": "Resumen de compras de recetas de fin de ano de cada farmacia usada en 2026"
+      },
+      {
+        "en": "Explanation of Benefits (EOB) statements showing insurance-paid versus patient-paid amounts",
+        "es": "Estados de Beneficios (EOB) que muestren los montos pagados por el seguro versus el paciente"
+      },
+      {
+        "en": "HSA or FSA year-end statement showing which purchases were already reimbursed tax-free",
+        "es": "Estado de fin de ano de HSA o FSA que muestre que compras ya fueron reembolsadas libres de impuestos"
+      },
+      {
+        "en": "Medicare Part B, Part D, or Medigap premium statements (Form SSA-1099 shows Part B premiums withheld from Social Security)",
+        "es": "Estados de primas de Medicare Parte B, Parte D o Medigap (el Formulario SSA-1099 muestra las primas de la Parte B retenidas del Seguro Social)"
+      },
+      {
+        "en": "Completed Form 1040 with adjusted gross income calculated on line 11",
+        "es": "Formulario 1040 completado con el ingreso bruto ajustado calculado en la linea 11"
+      },
+      {
+        "en": "IRS Schedule A (Form 1040), medical and dental expenses section",
+        "es": "Anexo A del IRS (Formulario 1040), seccion de gastos medicos y dentales"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Total medical expenses did not exceed 7.5% of adjusted gross income, so no deductible amount exists even though real money was spent",
+        "es": "Los gastos medicos totales no superaron el 7.5% del ingreso bruto ajustado, por lo que no existe un monto deducible aunque se gasto dinero real"
+      },
+      {
+        "en": "The taxpayer's total itemized deductions were lower than the standard deduction, making Schedule A itemization pointless for that year",
+        "es": "Las deducciones detalladas totales del contribuyente fueron menores que la deduccion estandar, haciendo inutil detallar en el Anexo A ese ano"
+      },
+      {
+        "en": "The claimed amount was already reimbursed by an HSA, FSA, HRA, or insurer, which the IRS treats as double-claiming a tax benefit",
+        "es": "El monto reclamado ya fue reembolsado por una HSA, FSA, HRA o asegurador, lo que el IRS trata como reclamar dos veces el mismo beneficio fiscal"
+      },
+      {
+        "en": "The expense was for an over-the-counter drug without a prescription (insulin excepted), which does not qualify under IRC Section 213(d)",
+        "es": "El gasto fue por un medicamento de venta libre sin receta (con excepcion de la insulina), lo cual no califica bajo la Seccion 213(d) del IRC"
+      },
+      {
+        "en": "Missing or incomplete documentation, such as a bank statement line item with no pharmacy receipt or EOB to substantiate the amount and date",
+        "es": "Documentacion faltante o incompleta, como una linea de estado de cuenta bancario sin recibo de farmacia o EOB que respalde el monto y la fecha"
+      }
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "Are prescription drugs tax-deductible in 2026?",
+        "answer": "Yes. Under IRC Section 213(d) and IRS Publication 502, unreimbursed amounts paid for prescription drugs and insulin qualify as medical expenses. You can only deduct the portion of your total Schedule A medical expenses (prescriptions plus everything else) that exceeds 7.5% of your 2026 adjusted gross income, and only if you itemize instead of taking the 2026 standard deduction of $16,100 (single) or $32,200 (married filing jointly)."
+      },
+      {
+        "question": "How do I claim the prescription drug tax deduction on my 2026 return?",
+        "answer": "Total every unreimbursed prescription and insulin payment for the year, add it to your other qualified medical expenses (Medicare premiums, doctor visits, dental care), subtract 7.5% of your adjusted gross income, and report the remainder on Schedule A of Form 1040. You must itemize rather than take the standard deduction. Keep pharmacy year-end summaries and Explanation of Benefits statements for at least three years in case of an IRS inquiry."
+      },
+      {
+        "question": "Can I deduct prescriptions paid with a manufacturer copay card, GoodRx coupon, or HSA/FSA funds?",
+        "answer": "A GoodRx cash-pay coupon or manufacturer copay card reduces the price you pay, and that lower, final amount is what you deduct, not the pharmacy's original list price. Money paid through an HSA, FSA, or HRA cannot be deducted again on Schedule A, since it was already tax-free at the point of payment. Manufacturer copay cards are also blocked by federal anti-kickback law for anyone on Medicare, Medicaid, TRICARE, or VA coverage."
+      },
+      {
+        "question": "What if the IRS disallows part of my medical expense deduction?",
+        "answer": "Respond in writing to the IRS notice, usually a CP2000, within the stated deadline and attach documentation such as pharmacy summaries and Explanation of Benefits statements. If you believe the disallowance is wrong, you can file Form 1040-X to amend the return or request a conference with the IRS Independent Office of Appeals. A Low-Income Taxpayer Clinic offers free representation for qualifying incomes."
+      },
+      {
+        "question": "Does the IRA's Maximum Fair Price change what I can deduct?",
+        "answer": "Yes, indirectly. Under the Inflation Reduction Act, Medicare's negotiated Maximum Fair Price for 10 drugs, effective January 1, 2026, lowers what many Part D beneficiaries pay at the pharmacy counter. Since the tax deduction is based on the amount you actually paid, a lower negotiated price produces a smaller deductible expense. It does not change the 7.5% AGI floor or the requirement to itemize."
+      },
+      {
+        "question": "How much do I need to spend on prescription drugs before I can deduct anything?",
+        "answer": "There is no prescription-specific threshold; the 7.5% floor applies to your combined Schedule A medical expense category. A taxpayer with $60,000 in adjusted gross income needs more than $4,500 in total unreimbursed medical costs, prescriptions plus doctor visits, dental care, and Medicare premiums, before the first deductible dollar appears, and the itemized total must also exceed the 2026 standard deduction to matter."
+      },
+      {
+        "question": "Do I qualify for a prescription drug patient assistance program instead of the tax deduction?",
+        "answer": "Uninsured or underinsured patients earning at or below roughly 300% to 400% of the Federal Poverty Level, about $109,280 for a household of three in 2026 at the 400% threshold, typically qualify for a manufacturer patient assistance program through NeedyMeds.org or RxAssist.org. A free PAP-supplied drug is usually more valuable than a partial tax deduction, since the deduction requires you to have paid money in the first place."
+      },
+      {
+        "question": "What is the difference between the Schedule A deduction, an HSA, and an FSA for prescription drugs?",
+        "answer": "The Schedule A deduction only helps if you itemize and your total medical expenses exceed 7.5% of AGI, and the tax savings arrive when you file your return. An HSA (2026 limit $4,400 self-only, $8,750 family) or health FSA ($3,400 in 2026) delivers the tax benefit immediately: contributions are pre-tax and withdrawals for prescriptions are tax-free, with no floor and no itemizing required. Self-employed Medicare enrollees should also compare the Form 7206 self-employed health insurance deduction, which covers Medicare premiums above the line."
+      }
+    ],
+    "es": [
+      {
+        "question": "Son los medicamentos recetados deducibles de impuestos en 2026?",
+        "answer": "Si. Bajo la Seccion 213(d) del IRC y la Publicacion 502 del IRS, los montos no reembolsados pagados por medicamentos recetados e insulina califican como gastos medicos. Solo puede deducir la parte de sus gastos medicos totales del Anexo A que supere el 7.5% de su ingreso bruto ajustado de 2026, y solo si detalla en lugar de tomar la deduccion estandar de 2026 de $16,100 (soltero) o $32,200 (casado que declara junto)."
+      },
+      {
+        "question": "Como reclamo la deduccion de impuestos por medicamentos recetados en mi declaracion de 2026?",
+        "answer": "Sume cada pago no reembolsado de recetas e insulina del ano, agreguelo a sus otros gastos medicos calificados (primas de Medicare, visitas al medico, atencion dental), reste el 7.5% de su ingreso bruto ajustado y reporte el resto en el Anexo A del Formulario 1040. Debe detallar en lugar de tomar la deduccion estandar. Conserve los resumenes anuales de farmacia y los Estados de Beneficios durante al menos tres anos."
+      },
+      {
+        "question": "Puedo deducir recetas pagadas con una tarjeta de copago del fabricante, cupon de GoodRx o fondos de HSA/FSA?",
+        "answer": "Un cupon de pago en efectivo de GoodRx o una tarjeta de copago del fabricante reduce el precio que paga, y ese monto final y menor es lo que deduce, no el precio de lista original de la farmacia. El dinero pagado a traves de una HSA, FSA o HRA no puede deducirse de nuevo en el Anexo A, ya que fue libre de impuestos en el momento del pago."
+      },
+      {
+        "question": "Que pasa si el IRS rechaza parte de mi deduccion de gastos medicos?",
+        "answer": "Responda por escrito al aviso del IRS, generalmente un CP2000, dentro del plazo indicado y adjunte documentacion como resumenes de farmacia y Estados de Beneficios. Si cree que el rechazo es incorrecto, puede presentar el Formulario 1040-X para enmendar la declaracion o solicitar una conferencia con la Oficina Independiente de Apelaciones del IRS."
+      },
+      {
+        "question": "El Precio Maximo Justo de la IRA cambia lo que puedo deducir?",
+        "answer": "Si, indirectamente. Bajo la Ley de Reduccion de la Inflacion, el Precio Maximo Justo negociado por Medicare para 10 medicamentos, efectivo el 1 de enero de 2026, reduce lo que muchos beneficiarios de la Parte D pagan en el mostrador de la farmacia. Como la deduccion de impuestos se basa en el monto que realmente pago, un precio negociado menor produce un gasto deducible mas pequeno."
+      },
+      {
+        "question": "Cuanto necesito gastar en medicamentos recetados antes de poder deducir algo?",
+        "answer": "No hay un umbral especifico para recetas; el piso del 7.5% aplica a su categoria combinada de gastos medicos del Anexo A. Un contribuyente con $60,000 de ingreso bruto ajustado necesita mas de $4,500 en costos medicos totales no reembolsados antes de que aparezca el primer dolar deducible, y el total detallado tambien debe superar la deduccion estandar de 2026."
+      },
+      {
+        "question": "Califico para un programa de asistencia al paciente en lugar de la deduccion de impuestos?",
+        "answer": "Los pacientes sin seguro o con seguro insuficiente que ganan al 300% a 400% del Nivel Federal de Pobreza o menos, aproximadamente $109,280 para un hogar de tres en 2026 al umbral del 400%, tipicamente califican para un programa de asistencia al paciente del fabricante a traves de NeedyMeds.org o RxAssist.org."
+      },
+      {
+        "question": "Cual es la diferencia entre la deduccion del Anexo A, una HSA y una FSA para medicamentos recetados?",
+        "answer": "La deduccion del Anexo A solo ayuda si detalla y sus gastos medicos totales superan el 7.5% del AGI, y el ahorro fiscal llega al presentar su declaracion. Una HSA (limite 2026 de $4,400 individual, $8,750 familiar) o FSA de salud ($3,400 en 2026) entrega el beneficio fiscal de inmediato: las contribuciones son antes de impuestos y los retiros para recetas son libres de impuestos, sin piso y sin necesidad de detallar."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medical Bill Analyzer",
+        "es": "Analizador de Facturas Medicas"
+      },
+      "href": "/medical-bill-analyzer"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits",
+        "es": "Limites de Ingresos de Medicaid"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level",
+        "es": "Nivel Federal de Pobreza"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Manufacturer Copay Cards vs. GoodRx Coupons",
+        "es": "Tarjetas de Copago del Fabricante vs. Cupones GoodRx"
+      },
+      "href": "/drug/copay-card-vs-coupon"
+    }
+  ],
+  "sources": [
+    {
+      "name": "IRS Publication 502: Medical and Dental Expenses (2026)",
+      "url": "https://www.irs.gov/publications/p502",
+      "note": {
+        "en": "Primary IRS guidance defining qualified prescription drug and insulin expenses and the 7.5% AGI floor.",
+        "es": "Guia principal del IRS que define los gastos calificados de medicamentos recetados e insulina y el piso del 7.5% del AGI."
+      }
+    },
+    {
+      "name": "IRS: New and Enhanced Deductions for Individuals (One Big Beautiful Bill Act)",
+      "url": "https://www.irs.gov/newsroom/new-and-enhanced-deductions-for-individuals",
+      "note": {
+        "en": "IRS summary of the 2026 standard deduction amounts and the new $6,000 senior bonus deduction.",
+        "es": "Resumen del IRS de los montos de la deduccion estandar 2026 y la nueva deduccion adicional de $6,000 para personas mayores."
+      }
+    },
+    {
+      "name": "IRS Publication 969: Health Savings Accounts and Other Tax-Favored Health Plans",
+      "url": "https://www.irs.gov/publications/p969",
+      "note": {
+        "en": "IRS rules for HSA, FSA, and HRA contribution limits and tax-free prescription drug reimbursement.",
+        "es": "Reglas del IRS para limites de contribucion de HSA, FSA y HRA y reembolso libre de impuestos de medicamentos recetados."
+      }
+    },
+    {
+      "name": "FDA: Drugs@FDA Database (prescription drug status)",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/",
+      "note": {
+        "en": "FDA record of which medications are legally classified as prescription drugs, the threshold IRS Publication 502 relies on.",
+        "es": "Registro de la FDA de que medicamentos estan clasificados legalmente como medicamentos recetados, el umbral en que se basa la Publicacion 502 del IRS."
+      }
+    },
+    {
+      "name": "CMS: Medicare Part D 2026 Benefit Parameters and the Inflation Reduction Act",
+      "url": "https://www.cms.gov/inflation-reduction-act-and-medicare",
+      "note": {
+        "en": "2026 Part D $2,100 out-of-pocket cap and the IRA Maximum Fair Price for the 10 negotiated drugs.",
+        "es": "Limite de gastos de bolsillo de $2,100 de la Parte D 2026 y el Precio Maximo Justo de la IRA para los 10 medicamentos negociados."
+      }
+    },
+    {
+      "name": "KFF: How Do People Afford Their Prescription Drugs?",
+      "url": "https://www.kff.org/health-costs/",
+      "note": {
+        "en": "Independent policy research on prescription drug affordability, patient assistance programs, and cost-sharing trends.",
+        "es": "Investigacion de politicas independiente sobre la asequibilidad de medicamentos recetados, programas de asistencia al paciente y tendencias de costo compartido."
+      }
+    },
+    {
+      "name": "NeedyMeds Patient Assistance Program Database",
+      "url": "https://www.needymeds.org/",
+      "note": {
+        "en": "Directory of manufacturer PAPs and discount cards for uninsured and underinsured patients.",
+        "es": "Directorio de PAP de fabricantes y tarjetas de descuento para pacientes sin seguro o con seguro insuficiente."
+      }
+    }
+  ]
+}
