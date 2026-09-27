@@ -1,0 +1,467 @@
+{
+  "slug": "drop-medicare-advantage-back-to-original-medicare",
+  "subtype": "coverage",
+  "pageType": "coverage",
+  "topicCluster": "medicare-coverage",
+  "keyTerms": {
+    "en": [
+      "drop medicare advantage plan",
+      "go back to original medicare 2026",
+      "disenroll from medicare advantage",
+      "medicare advantage trial right",
+      "medigap guaranteed issue 2026"
+    ],
+    "es": [
+      "dejar medicare advantage",
+      "volver a medicare original 2026",
+      "desinscribirse de medicare advantage",
+      "derecho de prueba medicare advantage"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "question": {
+    "en": "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare?",
+    "es": "¿Puedo Dejar Mi Plan Medicare Advantage y Volver a Medicare Original?"
+  },
+  "shortAnswer": {
+    "en": "Yes, but only during specific enrollment windows each year.",
+    "es": "Sí, pero solo durante ventanas de inscripción específicas cada año."
+  },
+  "fullAnswer": {
+    "en": "Yes. You can drop your Medicare Advantage plan and return to Original Medicare during the Medicare Advantage Open Enrollment Period (January 1 to March 31, 2026), the Annual Election Period (October 15 to December 7, 2026), or a qualifying Special Enrollment Period. Dropping your plan automatically reactivates Original Medicare Part A and Part B, since those parts never actually stopped while your Advantage plan managed them. The catch: standalone Part D drug coverage and a Medigap supplement are not automatic, and most states allow insurers to use medical underwriting once your one-time guaranteed issue window has passed.",
+    "es": "Sí. Puede dejar su plan Medicare Advantage y regresar a Medicare Original durante el Período de Inscripción Abierta de Medicare Advantage (1 de enero al 31 de marzo de 2026), el Período Anual de Elección (15 de octubre al 7 de diciembre de 2026), o un Período Especial de Inscripción calificado. Dejar su plan reactiva automáticamente la Parte A y la Parte B de Medicare Original, ya que esas partes nunca dejaron de existir mientras su plan Advantage las administraba. La trampa: la cobertura de medicamentos de la Parte D independiente y un plan suplementario Medigap no son automáticos, y la mayoría de los estados permite a los aseguradores usar suscripción médica una vez que su ventana única de emisión garantizada haya pasado."
+  },
+  "category": "Medicare",
+  "topic": "Dropping Medicare Advantage for Original Medicare",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-09-27",
+  "readingTime": "9 min read",
+
+  "meta": {
+    "title": {
+      "en": "Drop Medicare Advantage for Original Medicare (2026) | CoveredUSA",
+      "es": "Dejar Medicare Advantage por Medicare Original (2026) | CoveredUSA"
+    },
+    "description": {
+      "en": "Yes, you can drop Medicare Advantage during OEP (Jan 1-Mar 31) or AEP (Oct 15-Dec 7) 2026. Learn the Medigap catch before switching back to Original Medicare.",
+      "es": "Sí, puede dejar Medicare Advantage durante el POA (1 ene-31 mar) o el PAE (15 oct-7 dic) 2026. Conozca la trampa de Medigap antes de volver a Medicare Original."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Can I Drop My Medicare Advantage Plan and Go Back to Original Medicare? (2026)",
+      "es": "¿Puedo Dejar Mi Plan Medicare Advantage y Volver a Medicare Original? (2026)"
+    }
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Dropping a Medicare Advantage plan sounds like it should be simple: call the insurer, cancel, done. Federal rules are more particular than that. Medicare Advantage disenrollment is restricted to specific windows each year, and while Original Medicare Part A and Part B reactivate automatically the moment you leave, replacing the drug coverage and cost protection your Medicare Advantage plan carried is entirely on you. Someone considering dropping Medicare Advantage in 2026 because a doctor left the network, a premium jumped, or a plan's star rating fell needs to understand both the calendar and the paperwork before making the move.",
+      "es": "Dejar un plan Medicare Advantage suena como algo simple: llamar al asegurador, cancelar, listo. Las reglas federales son más particulares que eso. La baja de Medicare Advantage está restringida a ventanas específicas cada año, y aunque la Parte A y la Parte B de Medicare Original se reactivan automáticamente en el momento en que se va, reemplazar la cobertura de medicamentos y la protección de costos que traía su plan Advantage depende completamente de usted. Alguien que considere dejar Medicare Advantage en 2026 porque un médico salió de la red, una prima subió o la calificación de estrellas de un plan bajó necesita entender tanto el calendario como el papeleo antes de hacer el cambio."
+    },
+    {
+      "en": "Three enrollment windows in 2026 let you drop Medicare Advantage and return to Original Medicare, and this guide walks through each one, what happens to your prescription drug coverage, why getting a Medigap supplement afterward is not guaranteed in most states, and what involuntary disenrollment looks like if your plan drops you first. For a side-by-side cost comparison, see [Original Medicare vs Medicare Advantage](/en/qa/medicare-advantage-vs-original-medicare).",
+      "es": "Tres ventanas de inscripción en 2026 le permiten dejar Medicare Advantage y regresar a Medicare Original, y esta guía repasa cada una, qué sucede con su cobertura de medicamentos recetados, por qué obtener un suplemento Medigap después no está garantizado en la mayoría de los estados, y cómo se ve una baja involuntaria si su plan lo deja primero a usted."
+    }
+  ],
+
+  "coverageBreakdown": {
+    "headers": {
+      "en": ["Plan Type", "Do You Need to Take Action to Drop It", "Guaranteed Medigap After Dropping (2026)", "Monthly Premium (2026)"],
+      "es": ["Tipo de Plan", "¿Necesita Actuar Para Dejarlo?", "Medigap Garantizado al Dejarlo (2026)", "Prima Mensual (2026)"]
+    },
+    "rows": [
+      {
+        "cells": [
+          { "en": "Original Medicare (Part A and Part B)", "es": "Medicare Original (Parte A y Parte B)" },
+          { "en": "Not applicable, this is the baseline coverage you return to", "es": "No aplica, esta es la cobertura base a la que regresa" },
+          { "en": "Not applicable", "es": "No aplica" },
+          { "en": "Part B: $202.90/mo standard premium in 2026", "es": "Parte B: prima estándar de $202.90/mes en 2026" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medicare Advantage (Part C)", "es": "Medicare Advantage (Parte C)" },
+          { "value": { "en": "Yes, disenroll during OEP, AEP, or a qualifying SEP", "es": "Sí, darse de baja durante el POA, PAE, o un PEI calificado" }, "status": "yes" },
+          { "en": "Not applicable, dropping it is what triggers the Medigap question", "es": "No aplica, dejarlo es lo que activa la pregunta de Medigap" },
+          { "en": "$0 to $100+/mo depending on plan and county", "es": "$0 a $100+/mes según el plan y el condado" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Medigap supplement", "es": "Suplemento Medigap" },
+          { "en": "Cancel anytime with 30 days notice to your insurer", "es": "Cancele en cualquier momento con 30 días de aviso a su asegurador" },
+          { "value": { "en": "Guaranteed in 9 states; underwritten elsewhere unless a trial right applies", "es": "Garantizado en 9 estados; con suscripción en el resto salvo derecho de prueba" }, "status": "partial" },
+          { "en": "Varies widely by plan letter, age, and insurer", "es": "Varía ampliamente según la letra del plan, la edad y el asegurador" }
+        ]
+      },
+      {
+        "cells": [
+          { "en": "Standalone Part D drug plan", "es": "Plan de medicamentos Parte D independiente" },
+          { "value": { "en": "Yes, enroll during the same window you drop Medicare Advantage", "es": "Sí, inscríbase durante la misma ventana en que deja Medicare Advantage" }, "status": "yes" },
+          { "en": "Not applicable, Part D has no medical underwriting", "es": "No aplica, la Parte D no tiene suscripción médica" },
+          { "en": "Varies by plan; 2026 out-of-pocket cap is $2,100 regardless of premium", "es": "Varía por plan; el tope de gastos de bolsillo 2026 es $2,100 sin importar la prima" }
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Dropping Medicare Advantage restores Original Medicare with no action required. Restoring drug coverage and a Medigap supplement requires separate applications, and Medigap approval is not guaranteed outside the 9 continuous open enrollment states or a qualifying trial right. Source: Medicare.gov 2026 enrollment and Medigap guidance.",
+      "es": "Dejar Medicare Advantage restaura Medicare Original sin necesidad de acción adicional. Restaurar la cobertura de medicamentos y un suplemento Medigap requiere solicitudes separadas, y la aprobación de Medigap no está garantizada fuera de los 9 estados de inscripción abierta continua o un derecho de prueba calificado."
+    },
+    "source": "Medicare.gov, CMS 2026 Medicare Advantage and Medigap Guidance"
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Direct Answer: Yes, During Three Specific Windows (2026)",
+        "es": "Respuesta Directa: Sí, Durante Tres Ventanas Específicas (2026)"
+      },
+      "paragraphs": [
+        {
+          "en": "Yes, you can drop your Medicare Advantage plan and return to Original Medicare, but only during three enrollment windows: the Medicare Advantage Open Enrollment Period (January 1 to March 31, 2026), the Annual Election Period (October 15 to December 7, 2026), or a qualifying Special Enrollment Period. Dropping your plan reactivates Original Medicare Part A and Part B automatically. Standalone Part D drug coverage and a Medigap supplement, however, require separate applications you must handle yourself.",
+          "es": "Sí, puede dejar su plan Medicare Advantage y regresar a Medicare Original, pero solo durante tres ventanas de inscripción: el Período de Inscripción Abierta de Medicare Advantage (1 de enero al 31 de marzo de 2026), el Período Anual de Elección (15 de octubre al 7 de diciembre de 2026), o un Período Especial de Inscripción calificado. Dejar su plan reactiva automáticamente la Parte A y la Parte B de Medicare Original. La cobertura de medicamentos de la Parte D independiente y un plan suplementario Medigap, sin embargo, requieren solicitudes separadas que usted debe gestionar."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What Happens the Moment You Drop Your Plan",
+        "es": "Qué Sucede en el Momento en que Deja su Plan"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Advantage plans work as a private insurance wrapper around your existing Medicare entitlement. Original Medicare Part A and Part B never actually go away while you are enrolled in a Medicare Advantage plan; the private insurer simply administers your benefits instead of the government paying claims directly. Dropping your Medicare Advantage plan removes that wrapper, and Original Medicare resumes paying your claims directly with no waiting period or new enrollment needed for Parts A and B.",
+          "es": "Los planes Medicare Advantage funcionan como una capa de seguro privado alrededor de su derecho existente a Medicare. La Parte A y la Parte B de Medicare Original nunca desaparecen mientras está inscrito en un plan Medicare Advantage; el asegurador privado simplemente administra sus beneficios en lugar de que el gobierno pague las reclamaciones directamente. Dejar su plan Medicare Advantage elimina esa capa, y Medicare Original reanuda el pago directo de sus reclamaciones sin período de espera ni nueva inscripción para las Partes A y B."
+        },
+        {
+          "en": "Federal rules require your Medicare Advantage plan to process a disenrollment request within specific timeframes tied to the window you use. A disenrollment submitted in January 2026 during the Open Enrollment Period takes effect February 1, 2026; one submitted on March 31, 2026 takes effect April 1, 2026. Every disenrollment submitted during the 2026 Annual Election Period takes effect January 1, 2027, regardless of when in the window you submit it.",
+          "es": "Las reglas federales exigen que su plan Medicare Advantage procese una solicitud de baja dentro de plazos específicos ligados a la ventana que use. Una baja enviada en enero de 2026 durante el Período de Inscripción Abierta entra en vigencia el 1 de febrero de 2026; una enviada el 31 de marzo de 2026 entra en vigencia el 1 de abril de 2026. Toda baja enviada durante el Período Anual de Elección 2026 entra en vigencia el 1 de enero de 2027, sin importar cuándo dentro de la ventana la envíe."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "When You Are Allowed to Drop Your Plan",
+        "es": "Cuándo Se le Permite Dejar su Plan"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare limits Medicare Advantage disenrollment to specific calendar windows so insurers can price plans against a predictable risk pool. Three paths let you drop your plan and return to Original Medicare in 2026, each with different eligibility rules and effective dates:",
+          "es": "Medicare limita la baja de Medicare Advantage a ventanas específicas del calendario para que los aseguradores puedan fijar precios de planes frente a un grupo de riesgo predecible. Tres caminos le permiten dejar su plan y regresar a Medicare Original en 2026, cada uno con reglas de elegibilidad y fechas de vigencia distintas:"
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Medicare Advantage disenrollment windows for returning to Original Medicare, 2026",
+          "es": "Ventanas de baja de Medicare Advantage para regresar a Medicare Original, 2026"
+        },
+        "headers": {
+          "en": ["Enrollment Window", "2026 Dates", "Who Can Use It", "Effective Date"],
+          "es": ["Ventana de Inscripción", "Fechas 2026", "Quién Puede Usarla", "Fecha de Vigencia"]
+        },
+        "rows": [
+          {
+            "en": ["Medicare Advantage Open Enrollment Period (OEP)", "January 1 to March 31, 2026", "Anyone enrolled in a Medicare Advantage plan on January 1, 2026", "First of the month after your plan receives the request"],
+            "es": ["Período de Inscripción Abierta de Medicare Advantage (POA)", "1 de enero al 31 de marzo de 2026", "Cualquiera inscrito en un plan Medicare Advantage el 1 de enero de 2026", "Primero del mes siguiente a que el plan reciba la solicitud"]
+          },
+          {
+            "en": ["Annual Election Period (AEP)", "October 15 to December 7, 2026", "Any Medicare beneficiary, regardless of current plan", "January 1, 2027"],
+            "es": ["Período Anual de Elección (PAE)", "15 de octubre al 7 de diciembre de 2026", "Cualquier beneficiario de Medicare, sin importar el plan actual", "1 de enero de 2027"]
+          },
+          {
+            "en": ["Special Enrollment Period (SEP)", "Year-round, triggered by a qualifying event", "Beneficiaries with events like a move, plan termination, or a dual-eligible status change", "Varies by SEP type, typically the first of the following month"],
+            "es": ["Período Especial de Inscripción (PEI)", "Todo el año, activado por un evento calificado", "Beneficiarios con eventos como mudanza, terminación del plan o cambio de elegibilidad dual", "Varía según el tipo de PEI, típicamente el primero del mes siguiente"]
+          }
+        ],
+        "footnote": {
+          "en": "You can make only one plan change during the OEP, and you cannot use it to move from Original Medicare into Medicare Advantage. The AEP allows unlimited coverage changes for the following plan year. Source: Medicare.gov 2026 enrollment period rules.",
+          "es": "Solo puede hacer un cambio de plan durante el POA, y no puede usarlo para pasar de Medicare Original a Medicare Advantage. El PAE permite cambios de cobertura ilimitados para el año de plan siguiente. Fuente: reglas del período de inscripción de Medicare.gov 2026."
+        },
+        "source": "Medicare.gov, CMS Medicare Enrollment Periods 2026"
+      }
+    },
+    {
+      "heading": {
+        "en": "Getting Your Drug Coverage and a Medigap Supplement Back",
+        "es": "Recuperar su Cobertura de Medicamentos y un Suplemento Medigap"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Advantage plans typically bundle Part D drug coverage into the same monthly premium, so dropping your plan also drops your drug coverage unless you act. Original Medicare beneficiaries must enroll in a standalone Medicare Part D plan separately, ideally during the same window used to leave Medicare Advantage, to avoid a gap that can trigger a late enrollment penalty of 1 percent of the national base beneficiary premium for every month without creditable drug coverage.",
+          "es": "Los planes Medicare Advantage generalmente agrupan la cobertura de medicamentos de la Parte D en la misma prima mensual, así que dejar su plan también elimina su cobertura de medicamentos a menos que actúe. Los beneficiarios de Medicare Original deben inscribirse por separado en un plan de la Parte D de Medicare independiente, idealmente durante la misma ventana usada para dejar Medicare Advantage, para evitar una brecha que puede generar una multa por inscripción tardía del 1 por ciento de la prima base nacional del beneficiario por cada mes sin cobertura acreditable."
+        },
+        {
+          "en": "Medigap, the supplemental policy that pays the 20 percent coinsurance Original Medicare leaves behind, is not guaranteed after you drop Medicare Advantage in most states. Your one-time 6-month Medigap guaranteed issue period opened when you first enrolled in Part B, and once that window closed, insurers in 41 states may use medical underwriting to deny you or charge higher premiums. Nine states, California, Connecticut, Massachusetts, Maine, Minnesota, Missouri, New York, Oregon, and Washington, require insurers to sell Medigap year-round with no underwriting.",
+          "es": "Medigap, la póliza suplementaria que paga el 20 por ciento de coseguro que deja Medicare Original, no está garantizada después de dejar Medicare Advantage en la mayoría de los estados. Su período único de emisión garantizada de Medigap de 6 meses se abrió cuando se inscribió por primera vez en la Parte B, y una vez que esa ventana se cerró, los aseguradores en 41 estados pueden usar suscripción médica para negarle cobertura o cobrar primas más altas. Nueve estados, California, Connecticut, Massachusetts, Maine, Minnesota, Missouri, Nueva York, Oregón y Washington, exigen a los aseguradores vender Medigap todo el año sin suscripción."
+        },
+        {
+          "en": "One major exception restores your guaranteed issue rights: the Medicare Advantage trial right. If this is the first Medicare Advantage plan you have ever joined and you drop it within 12 months, federal rules guarantee your right to buy any Medigap policy sold in your state, with no health questions and no denial for preexisting conditions. This protection covers only your first Medicare Advantage enrollment, not any that follow.",
+          "es": "Una excepción importante restaura sus derechos de emisión garantizada: el derecho de prueba de Medicare Advantage. Si este es el primer plan Medicare Advantage al que se ha unido y lo deja dentro de 12 meses, las reglas federales garantizan su derecho a comprar cualquier póliza Medigap vendida en su estado, sin preguntas de salud ni negación por condiciones preexistentes. Esta protección cubre solo su primera inscripción en Medicare Advantage, no las que sigan."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "What It Costs If You Drop Coverage Without a Backup Plan (2026)",
+        "es": "Cuánto Cuesta Dejar la Cobertura Sin un Plan de Respaldo (2026)"
+      },
+      "paragraphs": [
+        {
+          "en": "Original Medicare Part B pays 80 percent of most approved outpatient costs after you meet the 2026 Part B deductible of $283, leaving you responsible for the remaining 20 percent with no annual out-of-pocket maximum. A single hospitalization or a course of chemotherapy without Medigap or a Medicare Advantage out-of-pocket cap can generate thousands of dollars in coinsurance bills. The standard 2026 Part B premium is $202.90 a month, due whether or not you carry a Medicare Advantage plan.",
+          "es": "La Parte B de Medicare Original paga el 80 por ciento de la mayoría de los costos ambulatorios aprobados después de cumplir el deducible de la Parte B de $283 en 2026, dejándolo responsable del 20 por ciento restante sin máximo anual de gastos de bolsillo. Una sola hospitalización o un tratamiento de quimioterapia sin Medigap o sin el tope de gastos de bolsillo de Medicare Advantage puede generar miles de dólares en facturas de coseguro. La prima estándar de la Parte B en 2026 es de $202.90 al mes, que se debe sin importar si tiene o no un plan Medicare Advantage."
+        },
+        {
+          "en": "Prescription costs are capped differently. Since the Inflation Reduction Act took effect (signed August 16, 2022), Part D enrollees face a $2,100 annual out-of-pocket cap on covered drugs in 2026. That cap only protects you, though, if you actually enroll in a Part D plan after dropping Medicare Advantage. Going without creditable drug coverage means paying full retail prices plus a permanent late enrollment penalty if you sign up later.",
+          "es": "Los costos de medicamentos tienen un tope diferente. Desde que entró en vigencia la Ley de Reducción de la Inflación (firmada el 16 de agosto de 2022), los inscritos en la Parte D enfrentan un tope anual de gastos de bolsillo de $2,100 en medicamentos cubiertos en 2026. Sin embargo, ese tope solo lo protege si realmente se inscribe en un plan de la Parte D después de dejar Medicare Advantage. Quedarse sin cobertura acreditable de medicamentos significa pagar precios completos de venta más una multa permanente por inscripción tardía si se inscribe más tarde."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Standalone Supplemental Options After You Drop Medicare Advantage",
+        "es": "Opciones Suplementarias Independientes Después de Dejar Medicare Advantage"
+      },
+      "paragraphs": [
+        {
+          "en": "Medigap plans are standardized by letter (A through N, though not every letter is sold in every state) and are not ACA-compliant marketplace products, so they are not required to cover the ACA's essential health benefits package; instead, they exist solely to fill Original Medicare's coinsurance and deductible gaps. Plan G and Plan N are the most commonly purchased options among people newly eligible for Medicare, and both cover the Part B coinsurance almost entirely.",
+          "es": "Los planes Medigap están estandarizados por letra (de la A a la N, aunque no todas las letras se venden en todos los estados) y no son productos del mercado compatibles con la ACA, por lo que no están obligados a cubrir el paquete de beneficios esenciales de salud de la ACA; en cambio, existen únicamente para llenar los vacíos de coseguro y deducible de Medicare Original. El Plan G y el Plan N son las opciones más compradas entre las personas recién elegibles para Medicare, y ambos cubren casi por completo el coseguro de la Parte B."
+        },
+        {
+          "en": "Pricing varies widely by insurer, age, and location, so shopping through your State Health Insurance Assistance Program (SHIP) before you drop Medicare Advantage is the safest sequence. A SHIP counselor can tell you what a Medigap policy will actually cost in your state and whether you are likely to qualify without underwriting, so you are not left without cost protection between plans.",
+          "es": "Los precios varían ampliamente según el asegurador, la edad y la ubicación, así que comparar opciones a través de su Programa Estatal de Asistencia con el Seguro de Salud (SHIP) antes de dejar Medicare Advantage es la secuencia más segura. Un consejero de SHIP puede decirle cuánto costará realmente una póliza Medigap en su estado y si probablemente calificará sin suscripción, para que no se quede sin protección de costos entre planes."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Who Can Drop a Plan, and What Involuntary Disenrollment Looks Like",
+        "es": "Quién Puede Dejar un Plan, y Cómo se Ve la Baja Involuntaria"
+      },
+      "paragraphs": [
+        {
+          "en": "Any Medicare Advantage enrollee can request to drop their plan during an open window; no medical underwriting or health questions apply to the disenrollment itself. Disenrollment only becomes complicated on the Medigap side, never on the Medicare Advantage side.",
+          "es": "Cualquier inscrito en Medicare Advantage puede solicitar dejar su plan durante una ventana abierta; no aplican preguntas de salud ni suscripción médica a la baja en sí. La baja solo se complica del lado de Medigap, nunca del lado de Medicare Advantage."
+        },
+        {
+          "en": "Some disenrollments are not a choice at all. Insurers can involuntarily disenroll members for non-payment of premiums after a grace period, for fraudulent information on an enrollment application, or for a permanent move outside the plan's service area. CMS can also end a plan's contract entirely for non-renewal, which opens a Special Enrollment Period for every affected member. In every involuntary scenario, Original Medicare resumes automatically the same way it does after a voluntary drop.",
+          "es": "Algunas bajas no son una elección en absoluto. Los aseguradores pueden dar de baja involuntariamente a los miembros por falta de pago de primas después de un período de gracia, por información fraudulenta en una solicitud de inscripción, o por una mudanza permanente fuera del área de servicio del plan. CMS también puede terminar por completo el contrato de un plan por falta de renovación, lo que abre un Período Especial de Inscripción para cada miembro afectado. En todo escenario involuntario, Medicare Original se reanuda automáticamente de la misma forma que lo hace después de una baja voluntaria."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "How to Drop Your Plan: Steps for 2026",
+        "es": "Cómo Dejar su Plan: Pasos para 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Dropping Medicare Advantage and landing safely on Original Medicare with drug coverage and, ideally, Medigap in place takes a sequence, not a single phone call. The steps below cover the standard OEP or AEP path. For a Special Enrollment Period, call 1-800-MEDICARE first to confirm your qualifying event before starting the paperwork.",
+          "es": "Dejar Medicare Advantage y aterrizar de forma segura en Medicare Original con cobertura de medicamentos y, idealmente, Medigap en su lugar, requiere una secuencia, no una sola llamada. Los pasos siguientes cubren el camino estándar del POA o PAE. Para un Período Especial de Inscripción, llame primero a 1-800-MEDICARE para confirmar su evento calificado antes de comenzar el papeleo."
+        }
+      ]
+    }
+  ],
+
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Step 1: Confirm your enrollment window is open. The Medicare Advantage OEP runs January 1 through March 31, 2026, and the AEP runs October 15 through December 7, 2026. If neither is open, call 1-800-MEDICARE (1-800-633-4227) to check for a qualifying Special Enrollment Period.",
+        "es": "Paso 1: Confirme que su ventana de inscripción esté abierta. El POA de Medicare Advantage va del 1 de enero al 31 de marzo de 2026, y el PAE va del 15 de octubre al 7 de diciembre de 2026. Si ninguna está abierta, llame a 1-800-MEDICARE (1-800-633-4227) para verificar un Período Especial de Inscripción calificado."
+      },
+      {
+        "en": "Step 2: Shop Medigap options in your state before you disenroll. Get quotes from multiple insurers and confirm whether medical underwriting applies. Residents of California, Connecticut, Massachusetts, Maine, Minnesota, Missouri, New York, Oregon, and Washington have continuous open enrollment regardless of health status.",
+        "es": "Paso 2: Compare opciones de Medigap en su estado antes de darse de baja. Obtenga cotizaciones de varios aseguradores y confirme si aplica suscripción médica. Los residentes de California, Connecticut, Massachusetts, Maine, Minnesota, Missouri, Nueva York, Oregón y Washington tienen inscripción abierta continua sin importar su estado de salud."
+      },
+      {
+        "en": "Step 3: Select a standalone Part D drug plan at medicare.gov/plan-compare using your medication list and preferred pharmacy so there is no gap in drug coverage once you drop Medicare Advantage.",
+        "es": "Paso 3: Seleccione un plan de medicamentos de Parte D independiente en medicare.gov/plan-compare usando su lista de medicamentos y farmacia preferida para que no haya brecha en la cobertura al dejar Medicare Advantage."
+      },
+      {
+        "en": "Step 4: Submit your disenrollment request online at medicare.gov, by calling 1-800-MEDICARE, or by contacting your plan directly. Original Medicare Part A and Part B reactivate automatically once the request is processed.",
+        "es": "Paso 4: Envíe su solicitud de baja en línea en medicare.gov, llamando a 1-800-MEDICARE, o contactando directamente a su plan. La Parte A y la Parte B de Medicare Original se reactivan automáticamente una vez procesada la solicitud."
+      },
+      {
+        "en": "Step 5: Enroll in your selected Part D plan the same week you drop Medicare Advantage, either at medicare.gov/plan-compare or by calling the plan directly.",
+        "es": "Paso 5: Inscríbase en su plan de Parte D seleccionado la misma semana en que deja Medicare Advantage, ya sea en medicare.gov/plan-compare o llamando directamente al plan."
+      },
+      {
+        "en": "Step 6: Apply for your Medigap plan through the insurer or your local SHIP counselor. If you are within your 12-month trial right window, tell the insurer directly so they process your application as guaranteed issue.",
+        "es": "Paso 6: Solicite su plan Medigap a través del asegurador o su consejero local de SHIP. Si está dentro de su ventana de derecho de prueba de 12 meses, informe directamente al asegurador para que procesen su solicitud como emisión garantizada."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/sign-up-change-plans/when-can-i-join-switch-or-drop-a-medicare-advantage-plan",
+    "documentsNeeded": [
+      {
+        "en": "Medicare card showing your Medicare Beneficiary Identifier (MBI)",
+        "es": "Tarjeta de Medicare que muestre su Identificador de Beneficiario de Medicare (MBI)"
+      },
+      {
+        "en": "Current Medicare Advantage plan member ID card and plan name",
+        "es": "Tarjeta de identificación de miembro y nombre del plan Medicare Advantage actual"
+      },
+      {
+        "en": "List of current prescriptions, dosages, and frequency for Part D plan selection",
+        "es": "Lista de recetas actuales, dosis y frecuencia para seleccionar el plan de Parte D"
+      },
+      {
+        "en": "Preferred pharmacy name and ZIP code for Part D plan comparison",
+        "es": "Nombre de la farmacia preferida y código postal para comparar planes de Parte D"
+      },
+      {
+        "en": "Health history records if applying for Medigap in a state that allows underwriting",
+        "es": "Registros de historial de salud si solicita Medigap en un estado que permite suscripción"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Applying for Medigap outside a guaranteed issue window in a state with underwriting, with a health condition that triggers denial",
+        "es": "Solicitar Medigap fuera de una ventana de emisión garantizada en un estado con suscripción, con una condición de salud que causa denegación"
+      },
+      {
+        "en": "Missing the enrollment window entirely: trying to drop Medicare Advantage outside OEP, AEP, or without a qualifying SEP",
+        "es": "Perder la ventana de inscripción por completo: intentar dejar Medicare Advantage fuera del POA, PAE, o sin un PEI calificado"
+      },
+      {
+        "en": "Skipping Part D enrollment when dropping Medicare Advantage, then facing a late enrollment penalty when adding drug coverage later",
+        "es": "Omitir la inscripción en la Parte D al dejar Medicare Advantage, y enfrentar luego una multa por inscripción tardía al agregar cobertura de medicamentos"
+      },
+      {
+        "en": "Assuming the trial right applies when it does not, since it only covers your first Medicare Advantage enrollment, not any repeat enrollment",
+        "es": "Asumir que el derecho de prueba aplica cuando no es así, ya que solo cubre su primera inscripción en Medicare Advantage, no una repetida"
+      }
+    ],
+    "deadline": {
+      "en": "OEP: January 1 to March 31, 2026 (one change only). AEP: October 15 to December 7, 2026 (effective January 1, 2027). SEPs: triggered year-round by qualifying events.",
+      "es": "POA: 1 de enero al 31 de marzo de 2026 (un solo cambio). PAE: 15 de octubre al 7 de diciembre de 2026 (vigente el 1 de enero de 2027). PEI: activados todo el año por eventos calificados."
+    }
+  },
+
+  "faqs": {
+    "en": [
+      {
+        "question": "Can I drop my Medicare Advantage plan whenever I want?",
+        "answer": "No. Federal rules restrict Medicare Advantage disenrollment to the Open Enrollment Period (January 1 to March 31, 2026), the Annual Election Period (October 15 to December 7, 2026), or a qualifying Special Enrollment Period. Outside those windows, your plan stays in effect for the rest of the year unless a life event, such as moving or your plan leaving your county, triggers a Special Enrollment Period."
+      },
+      {
+        "question": "Does dropping Medicare Advantage automatically restore my Original Medicare?",
+        "answer": "Yes. Original Medicare Part A and Part B never stopped while you had a Medicare Advantage plan; the private plan simply managed your benefits. Once your disenrollment takes effect, Medicare resumes paying claims directly with no new application, waiting period, or health questions required for Parts A and B."
+      },
+      {
+        "question": "Will I get Medigap coverage automatically after I drop my plan?",
+        "answer": "No. Medigap is a separate policy you must apply and pay for on your own. Most states allow medical underwriting once your original 6-month guaranteed issue window has closed, meaning an insurer can deny you or charge more based on health status. California, Connecticut, Massachusetts, Maine, Minnesota, Missouri, New York, Oregon, and Washington guarantee Medigap access year-round regardless of health."
+      },
+      {
+        "question": "Do I need to sign up for Part D separately after dropping Medicare Advantage?",
+        "answer": "Yes. Most Medicare Advantage plans bundle drug coverage, so leaving one ends that benefit too. Enroll in a standalone Part D plan during the same window you use to drop Medicare Advantage. Waiting and enrolling later can add a permanent late enrollment penalty of 1 percent of the national base premium for every month you went without creditable coverage."
+      },
+      {
+        "question": "What if my Medicare Advantage plan drops me instead?",
+        "answer": "Insurers can involuntarily disenroll members for non-payment of premiums after a grace period, fraudulent applications, or a permanent move outside the service area. CMS can also end a plan's contract entirely, which opens a Special Enrollment Period for everyone affected. In every case, Original Medicare resumes automatically the same way it does after a voluntary drop."
+      },
+      {
+        "question": "How much does Original Medicare cost after I drop Medicare Advantage in 2026?",
+        "answer": "The standard 2026 Part B premium is $202.90 a month, plus the annual Part B deductible of $283 and 20 percent coinsurance with no cap unless you add Medigap. Add a Part D premium and, if you qualify, a Medigap premium on top. Higher earners pay additional IRMAA surcharges based on income reported two years earlier."
+      },
+      {
+        "question": "What is the Medicare Advantage trial right?",
+        "answer": "The trial right is a 12-month guaranteed issue protection for people trying Medicare Advantage for the first time after turning 65 or after leaving employer coverage. If you drop that first plan within 12 months, insurers must sell you any Medigap policy sold in your state with no health underwriting. It covers only your first Medicare Advantage enrollment."
+      },
+      {
+        "question": "Can I switch back to Medicare Advantage later if I change my mind?",
+        "answer": "Yes. You can rejoin a Medicare Advantage plan during the next Annual Election Period (October 15 to December 7, 2026) or a future Open Enrollment Period, as long as you still have Medicare Part A and Part B. Rejoining Medicare Advantage does not require medical underwriting, since Medicare Advantage enrollment is guaranteed issue for anyone eligible for Medicare."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Puedo dejar mi plan Medicare Advantage cuando quiera?",
+        "answer": "No. Las reglas federales restringen la baja de Medicare Advantage al Período de Inscripción Abierta (1 de enero al 31 de marzo de 2026), el Período Anual de Elección (15 de octubre al 7 de diciembre de 2026), o un Período Especial de Inscripción calificado. Fuera de esas ventanas, su plan permanece vigente el resto del año a menos que un evento de vida, como mudarse o que su plan deje su condado, active un Período Especial de Inscripción."
+      },
+      {
+        "question": "¿Dejar Medicare Advantage restaura automáticamente mi Medicare Original?",
+        "answer": "Sí. La Parte A y la Parte B de Medicare Original nunca dejaron de existir mientras tenía un plan Medicare Advantage; el plan privado simplemente administraba sus beneficios. Una vez que su baja entra en vigencia, Medicare reanuda el pago directo de reclamaciones sin nueva solicitud, período de espera ni preguntas de salud para las Partes A y B."
+      },
+      {
+        "question": "¿Obtendré cobertura Medigap automáticamente después de dejar mi plan?",
+        "answer": "No. Medigap es una póliza separada que debe solicitar y pagar por su cuenta. La mayoría de los estados permite suscripción médica una vez que su ventana original de emisión garantizada de 6 meses se ha cerrado, lo que significa que un asegurador puede negarle cobertura o cobrar más según su estado de salud. California, Connecticut, Massachusetts, Maine, Minnesota, Missouri, Nueva York, Oregón y Washington garantizan acceso a Medigap todo el año sin importar la salud."
+      },
+      {
+        "question": "¿Necesito inscribirme por separado en la Parte D después de dejar Medicare Advantage?",
+        "answer": "Sí. La mayoría de los planes Medicare Advantage agrupan la cobertura de medicamentos, así que dejar uno también termina ese beneficio. Inscríbase en un plan de Parte D independiente durante la misma ventana que usa para dejar Medicare Advantage. Esperar e inscribirse después puede agregar una multa permanente por inscripción tardía del 1 por ciento de la prima base nacional por cada mes sin cobertura acreditable."
+      },
+      {
+        "question": "¿Qué pasa si mi plan Medicare Advantage me da de baja a mí?",
+        "answer": "Los aseguradores pueden dar de baja involuntariamente a los miembros por falta de pago de primas después de un período de gracia, solicitudes fraudulentas, o una mudanza permanente fuera del área de servicio. CMS también puede terminar por completo el contrato de un plan, lo que abre un Período Especial de Inscripción para todos los afectados. En todo caso, Medicare Original se reanuda automáticamente igual que después de una baja voluntaria."
+      },
+      {
+        "question": "¿Cuánto cuesta Medicare Original después de dejar Medicare Advantage en 2026?",
+        "answer": "La prima estándar de la Parte B en 2026 es de $202.90 al mes, más el deducible anual de la Parte B de $283 y el 20 por ciento de coseguro sin tope a menos que agregue Medigap. Sume una prima de Parte D y, si califica, una prima de Medigap adicional. Quienes tienen ingresos más altos pagan recargos IRMAA adicionales según el ingreso reportado dos años antes."
+      },
+      {
+        "question": "¿Qué es el derecho de prueba de Medicare Advantage?",
+        "answer": "El derecho de prueba es una protección de emisión garantizada de 12 meses para personas que prueban Medicare Advantage por primera vez después de cumplir 65 años o al dejar la cobertura del empleador. Si deja ese primer plan dentro de 12 meses, los aseguradores deben venderle cualquier póliza Medigap vendida en su estado sin suscripción médica. Solo cubre su primera inscripción en Medicare Advantage."
+      },
+      {
+        "question": "¿Puedo volver a Medicare Advantage más adelante si cambio de opinión?",
+        "answer": "Sí. Puede reincorporarse a un plan Medicare Advantage durante el próximo Período Anual de Elección (15 de octubre al 7 de diciembre de 2026) o un futuro Período de Inscripción Abierta, siempre que aún tenga la Parte A y la Parte B de Medicare. Reincorporarse a Medicare Advantage no requiere suscripción médica, ya que la inscripción en Medicare Advantage es de emisión garantizada para cualquier persona elegible para Medicare."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Original Medicare vs Medicare Advantage", "es": "Medicare Original vs Medicare Advantage" },
+      "href": "/qa/medicare-advantage-vs-original-medicare"
+    },
+    {
+      "label": { "en": "Can I Switch from Medicare Advantage to Original Medicare?", "es": "¿Puedo Cambiar de Medicare Advantage a Medicare Original?" },
+      "href": "/qa/can-i-switch-from-medicare-advantage-to-original"
+    },
+    {
+      "label": { "en": "Medicare Advantage Plans by State (2026)", "es": "Planes Medicare Advantage por Estado (2026)" },
+      "href": "/medicare-advantage"
+    },
+    {
+      "label": { "en": "Check Your Medicare Eligibility", "es": "Verifique Su Elegibilidad de Medicare" },
+      "href": "/screener"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "Medicare.gov: When can I join, switch, or drop a Medicare Advantage plan?",
+      "url": "https://www.medicare.gov/sign-up-change-plans/when-can-i-join-switch-or-drop-a-medicare-advantage-plan",
+      "note": {
+        "en": "Official CMS guidance on Medicare Advantage enrollment periods, including OEP, AEP, and qualifying SEP triggers for 2026.",
+        "es": "Guía oficial de CMS sobre los períodos de inscripción de Medicare Advantage, incluyendo POA, PAE y desencadenantes de PEI calificados para 2026."
+      }
+    },
+    {
+      "name": "Medicare.gov: What's Medigap?",
+      "url": "https://www.medicare.gov/health-drug-plans/medigap/basics/whats-medigap",
+      "note": {
+        "en": "Official explanation of Medigap guaranteed issue rights, the trial right, and how Medigap relates to dropping Medicare Advantage.",
+        "es": "Explicación oficial de los derechos de emisión garantizada de Medigap, el derecho de prueba, y cómo se relaciona Medigap con dejar Medicare Advantage."
+      }
+    },
+    {
+      "name": "CMS: Medicare Advantage and Part D Enrollment and Disenrollment Guidance",
+      "url": "https://www.cms.gov/medicare/enrollment-renewal/part-c-and-d-enrollment-guidance",
+      "note": {
+        "en": "CMS guidance on 2026 Part C and D disenrollment timing, effective dates, and involuntary disenrollment rules.",
+        "es": "Guía de CMS sobre plazos de baja de la Parte C y D en 2026, fechas de vigencia y reglas de baja involuntaria."
+      }
+    },
+    {
+      "name": "KFF: Medicare Advantage 2026 Fact Sheet",
+      "url": "https://www.kff.org/medicare/fact-sheet/medicare-advantage/",
+      "note": {
+        "en": "KFF overview of Medicare Advantage enrollment trends and the tradeoffs of returning to Original Medicare.",
+        "es": "Resumen de KFF sobre las tendencias de inscripción en Medicare Advantage y las compensaciones de regresar a Medicare Original."
+      }
+    }
+  ]
+}
