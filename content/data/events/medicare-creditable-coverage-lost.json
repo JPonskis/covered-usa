@@ -1,0 +1,562 @@
+{
+  "slug": "medicare-creditable-coverage-lost",
+  "eventName": {
+    "en": "Lost Creditable Drug Coverage at 65",
+    "es": "Pérdida de Cobertura de Medicamentos Acreditable a los 65"
+  },
+  "category": "Lost Other Coverage",
+  "topic": "Part D Special Enrollment Period and Late Enrollment Penalty after Losing Creditable Prescription Drug Coverage",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-10-02",
+  "readingTime": "9 min read",
+  "topicCluster": "event-medicare-iep",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "keyTerms": {
+    "en": [
+      "lost creditable coverage Medicare Part D",
+      "Part D late enrollment penalty 2026",
+      "creditable prescription drug coverage ended",
+      "Part D special enrollment period",
+      "63-day gap Part D penalty",
+      "how to avoid Part D penalty after losing employer coverage"
+    ],
+    "es": [
+      "pérdida de cobertura acreditable Parte D",
+      "multa por inscripción tardía Parte D 2026",
+      "cobertura de medicamentos acreditable terminó",
+      "período de inscripción especial Parte D",
+      "brecha de 63 días Parte D"
+    ]
+  },
+  "meta": {
+    "title": {
+      "en": "Lost Creditable Coverage at 65: Part D Penalty 2026",
+      "es": "Cobertura Acreditable Perdida a los 65: Multa Parte D 2026"
+    },
+    "description": {
+      "en": "Lost drug coverage at 65? You have 63 days before the 2026 Part D penalty starts. Get the SEP dates, penalty math, and steps to enroll in time.",
+      "es": "¿Perdió cobertura de medicamentos a los 65? Tiene 63 días antes de la multa de la Parte D 2026. Fechas del SEP, cálculo de la multa y pasos."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Lost Creditable Coverage at 65? How to Avoid the 2026 Part D Penalty",
+      "es": "¿Perdió Cobertura Acreditable a los 65? Cómo Evitar la Multa de la Parte D 2026"
+    },
+    "subhero": {
+      "en": "You have 63 days after your creditable drug coverage ends before the 2026 Part D late enrollment penalty starts, and a 2-month Special Enrollment Period to enroll without it.",
+      "es": "Tiene 63 días después de que termine su cobertura de medicamentos acreditable antes de que empiece la multa de la Parte D 2026, y un Período de Inscripción Especial de 2 meses para inscribirse sin ella."
+    }
+  },
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 63 days from the day creditable coverage ends",
+      "es": "Tiene 63 días desde el día en que termina la cobertura acreditable"
+    },
+    "body": {
+      "en": "The Part D penalty clock starts after 63 days in a row without creditable drug coverage or a Part D plan. Your Part D Special Enrollment Period lasts 2 months after the month your coverage ends. If your employer or retiree drug coverage ends on November 30, 2026, your SEP runs December 1, 2026 through January 31, 2027, and a Part D plan that starts by February 1, 2027 keeps your gap at 62 days, one day short of the penalty trigger. Miss it and Medicare adds 1% of the 2026 national base premium ($38.99) for every full month uncovered, for life.",
+      "es": "La multa de la Parte D comienza después de 63 días seguidos sin cobertura de medicamentos acreditable ni un plan de la Parte D. Su Período de Inscripción Especial de la Parte D dura 2 meses después del mes en que termina su cobertura. Si la cobertura de su empleador o de jubilado termina el 30 de noviembre de 2026, su SEP va del 1 de diciembre de 2026 al 31 de enero de 2027, y un plan de la Parte D que comience a más tardar el 1 de febrero de 2027 mantiene su brecha en 62 días, un día antes de activar la multa. Si lo pierde, Medicare suma el 1% de la prima base nacional 2026 ($38.99) por cada mes completo sin cobertura, de por vida."
+    },
+    "totalTimeISO8601": "P63D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Part B Special Enrollment Period after employer coverage ends (8 months)",
+          "es": "Período de Inscripción Especial de la Parte B tras terminar cobertura del empleador (8 meses)"
+        },
+        "days": 240
+      },
+      {
+        "label": {
+          "en": "Spouse's employer plan Special Enrollment Period",
+          "es": "Período de Inscripción Especial del plan del empleador del cónyuge"
+        },
+        "days": 30
+      },
+      {
+        "label": {
+          "en": "Appeal a Part D penalty (reconsideration request)",
+          "es": "Apelar una multa de la Parte D (solicitud de reconsideración)"
+        },
+        "days": 60
+      },
+      {
+        "label": {
+          "en": "Extra Help (Low-Income Subsidy) application",
+          "es": "Solicitud de Ayuda Adicional (Subsidio por Bajos Ingresos)"
+        },
+        "days": null
+      }
+    ]
+  },
+  "quickAnswer": {
+    "en": "Lost creditable coverage at 65 means your drug plan from an employer, union, retiree plan, VA, or TRICARE ended, and Medicare Part D must replace it. Enroll in a Part D plan or Medicare Advantage plan with drug coverage within the 2-month Special Enrollment Period to keep your gap under 63 days. Go past 63 days and Medicare charges 1% of the 2026 national base premium ($38.99) per uncovered month for life. Ask your old plan for a written creditable coverage notice before you enroll, because that letter is your proof if Medicare questions a penalty.",
+    "es": "Perder cobertura acreditable a los 65 significa que terminó su plan de medicamentos de un empleador, sindicato, plan de jubilados, VA o TRICARE, y la Parte D de Medicare debe reemplazarlo. Inscríbase en un plan de la Parte D o en un plan Medicare Advantage con medicamentos dentro del Período de Inscripción Especial de 2 meses para mantener su brecha por debajo de 63 días. Si pasa de 63 días, Medicare cobra el 1% de la prima base nacional 2026 ($38.99) por cada mes sin cobertura, de por vida. Pida a su plan anterior un aviso escrito de cobertura acreditable antes de inscribirse, porque esa carta es su prueba si Medicare cuestiona una multa."
+  },
+  "introParagraphs": [
+    {
+      "en": "Creditable prescription drug coverage is any plan that pays, on average, at least as much as the standard Medicare Part D benefit. Employer plans, union plans, retiree plans, FEHB, VA benefits, and TRICARE usually qualify, and each year the plan sponsor must send you a notice saying yes or no, due before October 15. While you hold that coverage, you can skip Part D at 65 without penalty. The trouble starts the day the coverage ends. Medicare counts every full month you go 63 days or more in a row without creditable coverage or Part D, and charges 1% of the national base beneficiary premium for each one. In 2026 that base premium is $38.99, so 12 uncovered months adds about $4.70 per month to your Part D premium, and 36 months adds about $14.00 per month, every month for the rest of your life. Those amounts look small, but the penalty never expires and grows each year with the base premium. In 2026 the Part D out-of-pocket cap is $2,100, so a plan is worth having even if you take few drugs.",
+      "es": "La cobertura de medicamentos acreditable es cualquier plan que paga, en promedio, al menos lo mismo que el beneficio estándar de la Parte D de Medicare. Los planes de empleadores, sindicatos, jubilados, FEHB, beneficios del VA y TRICARE normalmente califican, y cada año el patrocinador del plan debe enviarle un aviso que diga sí o no, antes del 15 de octubre. Mientras tenga esa cobertura, puede omitir la Parte D a los 65 sin multa. El problema empieza el día en que termina la cobertura. Medicare cuenta cada mes completo en que pasa 63 días o más seguidos sin cobertura acreditable ni Parte D, y cobra el 1% de la prima base nacional por cada uno. En 2026 esa prima base es $38.99, así que 12 meses sin cobertura suman unos $4.70 al mes a su prima de la Parte D, y 36 meses suman unos $14.00 al mes, cada mes por el resto de su vida. Esas cifras parecen pequeñas, pero la multa nunca vence y crece cada año con la prima base. En 2026 el tope de gastos de bolsillo de la Parte D es $2,100, así que vale la pena tener un plan aunque tome pocos medicamentos."
+    },
+    {
+      "en": "Losing creditable coverage at 65 usually happens in one of four ways: you retire, your employer changes or drops its retiree drug plan, your spouse's job ends, or COBRA runs out. Each one is a qualifying life event that opens a Part D Special Enrollment Period (SEP) of 2 months, so you do not need to wait for the Annual Election Period on October 15 through December 7, 2026. Part B works on a separate clock: the Part B SEP gives you 8 months after your job or group coverage ends, and COBRA does not count as coverage for that purpose. Some people lose a Marketplace plan instead, and a Marketplace plan with a Form 1095-A does not delay Medicare. Medicare Part A eligibility ends your premium tax credit, and the 2026 return of the 400% FPL subsidy cliff makes it costly to keep it. Medicare.gov, SSA.gov, and CMS.gov publish the rules, and KFF tracks how many people face penalties. This page gives the dates, the penalty math, the documents, and the six steps that keep your gap under 63 days.",
+      "es": "Perder cobertura acreditable a los 65 suele ocurrir de cuatro formas: se jubila, su empleador cambia o elimina el plan de medicamentos para jubilados, termina el empleo de su cónyuge o se agota COBRA. Cada una es un evento calificador de vida que abre un Período de Inscripción Especial (SEP) de la Parte D de 2 meses, así que no necesita esperar al Período de Elección Anual del 15 de octubre al 7 de diciembre de 2026. La Parte B funciona con otro reloj: el SEP de la Parte B le da 8 meses después de que terminen su empleo o cobertura grupal, y COBRA no cuenta como cobertura para ese fin. Algunas personas pierden un plan del Mercado en lugar de uno del empleador, y un plan del Mercado con Formulario 1095-A no retrasa Medicare. La elegibilidad para la Parte A termina su crédito fiscal de prima, y el regreso del límite de 400% del FPL en 2026 hace costoso conservarlo. Medicare.gov, SSA.gov y CMS.gov publican las reglas, y KFF rastrea cuántas personas enfrentan multas. Esta página da las fechas, el cálculo de la multa, los documentos y los seis pasos que mantienen su brecha por debajo de 63 días."
+    }
+  ],
+  "steps": [
+    {
+      "name": {
+        "en": "Request your creditable coverage notice in writing",
+        "es": "Solicite por escrito su aviso de cobertura acreditable"
+      },
+      "text": {
+        "en": "Call your plan administrator or HR and request a written Notice of Creditable Coverage that shows your drug plan's status and the exact date your coverage ended. Employers must provide this notice annually before October 15 and on request. Keep the letter in your file, because Medicare will ask for it if it sends a late enrollment penalty notice.",
+        "es": "Llame al administrador de su plan o a Recursos Humanos y solicite por escrito un Aviso de Cobertura Acreditable que muestre el estado de su plan de medicamentos y la fecha exacta en que terminó su cobertura. Los empleadores deben darle este aviso cada año antes del 15 de octubre y a solicitud. Guarde la carta, porque Medicare se la pedirá si envía un aviso de multa por inscripción tardía."
+      }
+    },
+    {
+      "name": {
+        "en": "Count your 63-day gap and mark Day 62",
+        "es": "Cuente su brecha de 63 días y marque el Día 62"
+      },
+      "text": {
+        "en": "Calculate the first day without coverage and count forward 62 days on a calendar. If creditable coverage ends November 30, 2026, your gap starts December 1, 2026 and your Part D plan must start by February 1, 2027. Check your Part D SEP end date at the same time: it is the last day of the second month after coverage ends, which is January 31, 2027 in this example.",
+        "es": "Calcule el primer día sin cobertura y cuente 62 días en un calendario. Si la cobertura acreditable termina el 30 de noviembre de 2026, su brecha empieza el 1 de diciembre de 2026 y su plan de la Parte D debe comenzar a más tardar el 1 de febrero de 2027. Verifique al mismo tiempo la fecha final de su SEP de la Parte D: es el último día del segundo mes después de que termina la cobertura, que es el 31 de enero de 2027 en este ejemplo."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare Part D and Medicare Advantage drug plans at Medicare.gov",
+        "es": "Compare planes de la Parte D y de Medicare Advantage en Medicare.gov"
+      },
+      "text": {
+        "en": "Log in to the Medicare.gov Plan Finder, enter every prescription and your pharmacy, and compare 2026 and 2027 premiums, deductibles, and total yearly drug cost. Enroll in a standalone Part D plan if you have Original Medicare, or a Medicare Advantage plan with drug coverage (MA-PD) if you want one bundled plan. Choose the plan start date to fall before Day 63.",
+        "es": "Inicie sesión en el Buscador de Planes de Medicare.gov, ingrese cada receta y su farmacia, y compare primas, deducibles y costo anual total de medicamentos de 2026 y 2027. Inscríbase en un plan independiente de la Parte D si tiene Medicare Original, o en un plan Medicare Advantage con medicamentos (MA-PD) si quiere un solo plan combinado. Elija una fecha de inicio que caiga antes del Día 63."
+      }
+    },
+    {
+      "name": {
+        "en": "Submit your Part D enrollment and select the SEP reason",
+        "es": "Presente su inscripción en la Parte D y elija el motivo del SEP"
+      },
+      "text": {
+        "en": "Complete the online enrollment or call 1-800-MEDICARE and choose the reason for involuntary loss of creditable coverage when asked. Enroll by the last day of your SEP, and confirm the plan's effective date in writing. Check that the plan's formulary lists your drugs before you submit the enrollment.",
+        "es": "Complete la inscripción en línea o llame al 1-800-MEDICARE y elija el motivo de pérdida involuntaria de cobertura acreditable cuando se lo pidan. Inscríbase a más tardar el último día de su SEP y confirme por escrito la fecha de inicio del plan. Verifique que el formulario de medicamentos del plan incluya sus recetas antes de presentar la inscripción."
+      }
+    },
+    {
+      "name": {
+        "en": "Decide on Part B using Form CMS-L564 and Form CMS-40B",
+        "es": "Decida sobre la Parte B con el Formulario CMS-L564 y el Formulario CMS-40B"
+      },
+      "text": {
+        "en": "Submit Form CMS-L564 to your former employer to document group coverage, then send it with Form CMS-40B to Social Security to start Part B inside your 8-month Part B Special Enrollment Period. Part B costs $202.90 per month in 2026 with a $283 deductible. COBRA does not stop the Part B clock, so enroll before COBRA ends.",
+        "es": "Entregue el Formulario CMS-L564 a su exempleador para documentar la cobertura grupal, y envíelo con el Formulario CMS-40B al Seguro Social para iniciar la Parte B dentro de su Período de Inscripción Especial de la Parte B de 8 meses. La Parte B cuesta $202.90 al mes en 2026 con un deducible de $283. COBRA no detiene el reloj de la Parte B, así que inscríbase antes de que termine COBRA."
+      }
+    },
+    {
+      "name": {
+        "en": "Apply for Extra Help and call your SHIP counselor",
+        "es": "Solicite Ayuda Adicional y llame a su consejero SHIP"
+      },
+      "text": {
+        "en": "Apply for Extra Help at ssa.gov/extrahelp if your 2026 income is under 150% FPL ($23,940 for one person, $32,460 for a couple), because Extra Help waives the Part D penalty. Call your State Health Insurance Assistance Program (SHIP) for free counseling. If Medicare sends a penalty notice anyway, file a reconsideration request within 60 days and attach your creditable coverage letter.",
+        "es": "Solicite Ayuda Adicional en ssa.gov/extrahelp si su ingreso de 2026 es menor al 150% del FPL ($23,940 para una persona, $32,460 para una pareja), porque Ayuda Adicional elimina la multa de la Parte D. Llame a su Programa Estatal de Asistencia sobre Seguros de Salud (SHIP) para recibir orientación gratuita. Si Medicare envía un aviso de multa de todos modos, presente una solicitud de reconsideración dentro de 60 días y adjunte su carta de cobertura acreditable."
+      }
+    }
+  ],
+  "optionsComparison": {
+    "headers": {
+      "en": [
+        "Option",
+        "Typical cost",
+        "Best for",
+        "Deadline"
+      ],
+      "es": [
+        "Opción",
+        "Costo típico",
+        "Mejor para",
+        "Fecha límite"
+      ]
+    },
+    "rows": [
+      {
+        "en": [
+          "Standalone Part D plan",
+          "Premiums vary by plan in 2026; $2,100 yearly out-of-pocket cap",
+          "Original Medicare enrollees who lost drug coverage",
+          "2-month SEP; start before Day 63"
+        ],
+        "es": [
+          "Plan independiente de la Parte D",
+          "Las primas varían por plan en 2026; tope anual de $2,100",
+          "Inscritos en Medicare Original que perdieron cobertura de medicamentos",
+          "SEP de 2 meses; iniciar antes del Día 63"
+        ]
+      },
+      {
+        "en": [
+          "Medicare Advantage with drugs (MA-PD)",
+          "Often $0 extra premium in 2026, plus Part B $202.90/mo",
+          "People who want one bundled plan",
+          "2-month SEP; start before Day 63"
+        ],
+        "es": [
+          "Medicare Advantage con medicamentos (MA-PD)",
+          "A menudo $0 de prima adicional en 2026, más Parte B $202.90/mes",
+          "Quienes quieren un solo plan combinado",
+          "SEP de 2 meses; iniciar antes del Día 63"
+        ]
+      },
+      {
+        "en": [
+          "COBRA or retiree drug coverage",
+          "102% of the full 2026 premium, often $400 to $900/mo",
+          "People whose notice confirms the drug coverage is creditable",
+          "60-day COBRA election; Part B clock keeps running"
+        ],
+        "es": [
+          "COBRA o cobertura de medicamentos para jubilados",
+          "102% de la prima completa 2026, a menudo $400 a $900/mes",
+          "Personas cuyo aviso confirma que la cobertura de medicamentos es acreditable",
+          "Elección COBRA de 60 días; el reloj de la Parte B sigue corriendo"
+        ]
+      },
+      {
+        "en": [
+          "Spouse's employer plan",
+          "Varies; often cheaper than COBRA in 2026",
+          "Married people with a working spouse under a plan with creditable drugs",
+          "30 days from coverage loss"
+        ],
+        "es": [
+          "Plan del empleador del cónyuge",
+          "Varía; a menudo más barato que COBRA en 2026",
+          "Casados con un cónyuge que trabaja bajo un plan con medicamentos acreditables",
+          "30 días desde la pérdida de cobertura"
+        ]
+      },
+      {
+        "en": [
+          "Extra Help (Low-Income Subsidy)",
+          "Reduced or $0 premium; waives the Part D penalty in 2026",
+          "Income under 150% FPL ($23,940 single in 2026)",
+          "Apply any time; year-round"
+        ],
+        "es": [
+          "Ayuda Adicional (Subsidio por Bajos Ingresos)",
+          "Prima reducida o $0; elimina la multa de la Parte D en 2026",
+          "Ingreso menor al 150% del FPL ($23,940 persona sola en 2026)",
+          "Solicite en cualquier momento; todo el año"
+        ]
+      },
+      {
+        "en": [
+          "Medicaid (Medi-Cal, MassHealth, AHCCCS and other state programs)",
+          "Free or low cost; drug coverage included",
+          "Income under the state limit, about 138% FPL ($22,025 single in 2026) in expansion states",
+          "Year-round"
+        ],
+        "es": [
+          "Medicaid (Medi-Cal, MassHealth, AHCCCS y otros programas estatales)",
+          "Gratis o de bajo costo; incluye medicamentos",
+          "Ingreso bajo el límite estatal, cerca del 138% del FPL ($22,025 persona sola en 2026) en estados de expansión",
+          "Todo el año"
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Plan premiums and deductibles change every year, so compare 2026 and 2027 costs in Plan Finder before you pick. The Part D penalty is 1% of $38.99 per uncovered month in 2026, rounded to the nearest $0.10, and it is added to every future premium.",
+      "es": "Las primas y deducibles de los planes cambian cada año, así que compare costos de 2026 y 2027 en el Buscador de Planes antes de elegir. La multa de la Parte D es 1% de $38.99 por mes sin cobertura en 2026, redondeada a los $0.10 más cercanos, y se suma a toda prima futura."
+    },
+    "source": "Medicare.gov Part D late enrollment penalty, CMS.gov 2026 national base beneficiary premium, SSA.gov Extra Help, Medicaid.gov"
+  },
+  "comparisonNarrative": {
+    "heading": {
+      "en": "COBRA vs Marketplace vs Medicare Part D: Which Should You Choose After 65?",
+      "es": "COBRA vs Mercado vs Parte D de Medicare: ¿Cuál Debe Elegir Después de los 65?"
+    },
+    "body": {
+      "en": "After losing creditable coverage at 65, Medicare Part D is usually the right drug plan, and COBRA and Marketplace plans play smaller roles. COBRA costs 102% of the full 2026 premium and may count as creditable drug coverage, but COBRA does not give you a Part B Special Enrollment Period, so relying on it can start a permanent Part B penalty of 10% for each full 12 months you wait. Marketplace plans are a poor fit because Medicare Part A eligibility ends your premium tax credit, and the 400% FPL cliff returned in 2026. A spouse's employer plan can work if it carries creditable drug coverage and your spouse's employer offers a 30-day Special Enrollment Period. The decision order is: Medicaid or Extra Help first if your income qualifies; then a spouse's plan with a written creditable notice; then a standalone Part D plan or a Medicare Advantage plan with drugs; and COBRA only for a short bridge with a documented creditable letter and a Part B plan already in motion.",
+      "es": "Después de perder la cobertura acreditable a los 65, la Parte D de Medicare suele ser el plan de medicamentos correcto, y COBRA y los planes del Mercado tienen un papel menor. COBRA cuesta el 102% de la prima completa 2026 y puede contar como cobertura de medicamentos acreditable, pero COBRA no le da un Período de Inscripción Especial de la Parte B, así que depender de COBRA puede iniciar una multa permanente de la Parte B del 10% por cada 12 meses completos que espere. Los planes del Mercado encajan mal porque la elegibilidad para la Parte A de Medicare termina su crédito fiscal de prima, y el límite de 400% del FPL regresó en 2026. El plan del empleador de un cónyuge puede servir si incluye cobertura de medicamentos acreditable y el empleador ofrece un Período de Inscripción Especial de 30 días. El orden de decisión es: primero Medicaid o Ayuda Adicional si su ingreso califica; luego el plan de un cónyuge con aviso acreditable por escrito; luego un plan independiente de la Parte D o un plan Medicare Advantage con medicamentos; y COBRA solo como puente corto con carta acreditable documentada y un plan de la Parte B ya en marcha."
+    }
+  },
+  "commonMistakes": {
+    "intro": {
+      "en": "Most Part D penalties in 2026 come from five avoidable errors made in the weeks right after creditable coverage ends.",
+      "es": "La mayoría de las multas de la Parte D en 2026 vienen de cinco errores evitables cometidos en las semanas posteriores al fin de la cobertura acreditable."
+    },
+    "items": [
+      {
+        "en": "Assuming COBRA protects you from Part B penalties. COBRA keeps your drug plan going but does not give a Part B Special Enrollment Period, so enroll in Part B inside the 8-month SEP.",
+        "es": "Suponer que COBRA lo protege de las multas de la Parte B. COBRA mantiene su plan de medicamentos pero no da un Período de Inscripción Especial de la Parte B, así que inscríbase en la Parte B dentro del SEP de 8 meses."
+      },
+      {
+        "en": "Never confirming that the old plan was creditable. Without the written Notice of Creditable Coverage, Medicare can count every month as uncovered.",
+        "es": "No confirmar que el plan anterior era acreditable. Sin el Aviso de Cobertura Acreditable por escrito, Medicare puede contar cada mes como sin cobertura."
+      },
+      {
+        "en": "Waiting for the Annual Election Period on October 15 through December 7, 2026. The 2-month Special Enrollment Period is faster, and the 63-day gap keeps running.",
+        "es": "Esperar al Período de Elección Anual del 15 de octubre al 7 de diciembre de 2026. El Período de Inscripción Especial de 2 meses es más rápido, y la brecha de 63 días sigue corriendo."
+      },
+      {
+        "en": "Counting a discount card or a drug coupon program as coverage. GoodRx-type cards, health sharing ministries, and most Marketplace plans do not stop the gap.",
+        "es": "Contar una tarjeta de descuento o un programa de cupones como cobertura. Las tarjetas tipo GoodRx, los ministerios de salud compartida y la mayoría de los planes del Mercado no detienen la brecha."
+      },
+      {
+        "en": "Ignoring the penalty letter. Medicare gives you 60 days to request reconsideration, and your plan will send an attestation form to answer within 30 days.",
+        "es": "Ignorar la carta de multa. Medicare le da 60 días para pedir reconsideración, y su plan enviará un formulario de declaración que debe contestar en 30 días."
+      }
+    ]
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "How the Part D Late Enrollment Penalty Is Calculated in 2026",
+        "es": "Cómo se Calcula la Multa por Inscripción Tardía de la Parte D en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The Part D late enrollment penalty equals 1% of the national base beneficiary premium multiplied by the number of full months you went without creditable coverage, rounded to the nearest $0.10. For 2026 the national base beneficiary premium is $38.99 per CMS. A 12-month gap adds about $4.70 per month, a 24-month gap adds about $9.40 per month, and a 48-month gap adds about $18.70 per month. Medicare adds the penalty to your premium for as long as you have Part D, including through plan changes. The months count only after your Initial Enrollment Period ends and only when the gap reaches 63 days in a row, so a 62-day gap carries no penalty at all. Medicare Advantage plans with drug coverage follow the same rule, and Medicaid, VA, and TRICARE drug benefits count as creditable coverage when they are in force. For example, a person who retires at 65 and waits 18 months before enrolling in Part D owes about $7.00 more per month in 2026 (18% of $38.99, rounded), and that amount follows them into every future plan.",
+          "es": "La multa por inscripción tardía de la Parte D es igual al 1% de la prima base nacional multiplicado por el número de meses completos que estuvo sin cobertura acreditable, redondeado a los $0.10 más cercanos. Para 2026 la prima base nacional es $38.99 según CMS. Una brecha de 12 meses suma unos $4.70 al mes, una de 24 meses suma unos $9.40 al mes y una de 48 meses suma unos $18.70 al mes. Medicare suma la multa a su prima mientras tenga Parte D, incluso al cambiar de plan. Los meses cuentan solo después de que termina su Período de Inscripción Inicial y solo cuando la brecha llega a 63 días seguidos, así que una brecha de 62 días no lleva multa alguna. Los planes Medicare Advantage con medicamentos siguen la misma regla, y los beneficios de medicamentos de Medicaid, VA y TRICARE cuentan como cobertura acreditable mientras estén vigentes. Por ejemplo, una persona que se jubila a los 65 y espera 18 meses para inscribirse en la Parte D debe unos $7.00 más al mes en 2026 (18% de $38.99, redondeado), y ese monto la acompaña en cada plan futuro."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Documents That Prove Your Coverage Was Creditable in 2026",
+        "es": "Documentos que Prueban que su Cobertura Era Acreditable en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Documents decide most penalty disputes, because Medicare sends a creditable coverage attestation form to your plan after you enroll and counts any month you cannot prove. The Notice of Creditable Coverage from your employer, union, or retiree plan is the key document, and it must show the plan name and the dates coverage ran. A termination letter or COBRA notice shows the exact end date, which anchors your 63-day count. Pay stubs or a retirement letter document the 8-month Part B Special Enrollment Period. Form CMS-L564 proves group health coverage through active employment, and Form CMS-40B starts the Part B application. Keep copies for at least 3 years, because penalty notices can arrive months after you enroll, and the 60-day reconsideration window starts on the date of the notice. Medicare.gov and SSA.gov both accept scanned copies, so photograph each letter the day it arrives.",
+          "es": "Los documentos deciden la mayoría de las disputas de multas, porque Medicare envía a su plan un formulario de declaración de cobertura acreditable después de que usted se inscribe y cuenta cualquier mes que no pueda comprobar. El Aviso de Cobertura Acreditable de su empleador, sindicato o plan de jubilados es el documento clave, y debe mostrar el nombre del plan y las fechas de vigencia. Una carta de terminación o un aviso de COBRA muestra la fecha exacta de fin, que ancla su cuenta de 63 días. Los talones de pago o una carta de jubilación documentan el Período de Inscripción Especial de 8 meses de la Parte B. El Formulario CMS-L564 prueba la cobertura médica grupal por empleo activo, y el Formulario CMS-40B inicia la solicitud de la Parte B. Conserve copias por al menos 3 años, porque los avisos de multa pueden llegar meses después de inscribirse, y la ventana de reconsideración de 60 días comienza en la fecha del aviso. Medicare.gov y SSA.gov aceptan copias escaneadas, así que fotografíe cada carta el día en que llegue."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Extra Help and Medicaid Can Remove the Part D Penalty in 2026",
+        "es": "Ayuda Adicional y Medicaid Pueden Eliminar la Multa de la Parte D en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Extra Help, also called the Low-Income Subsidy, removes the Part D late enrollment penalty entirely for people who qualify. For 2026, the income limit is 150% of the Federal Poverty Level, which is $23,940 for one person and $32,460 for a married couple, plus a resource test. People with full Medicaid or a Medicare Savings Program are enrolled in Extra Help automatically. Medicaid pays for drugs in every state, and state brands include Medi-Cal in California, AHCCCS in Arizona, MassHealth in Massachusetts, and BadgerCare in Wisconsin. In the 40 expansion states plus DC, the adult Medicaid line is 138% FPL, or $22,025 for one person in 2026, but people 65 and older are often assessed under separate aged-and-disabled rules with their own limits. A spouse under 65 or a child may qualify for CHIP or Medicaid even when you are on Medicare. Apply at ssa.gov/extrahelp or at your state Medicaid agency, which Medicaid.gov lists for every state.",
+          "es": "Ayuda Adicional, también llamada Subsidio por Bajos Ingresos, elimina por completo la multa por inscripción tardía de la Parte D para quienes califican. Para 2026, el límite de ingresos es 150% del Nivel Federal de Pobreza, o sea $23,940 para una persona y $32,460 para una pareja casada, más una prueba de recursos. Las personas con Medicaid completo o un Programa de Ahorros de Medicare se inscriben automáticamente en Ayuda Adicional. Medicaid paga los medicamentos en todos los estados, y las marcas estatales incluyen Medi-Cal en California, AHCCCS en Arizona, MassHealth en Massachusetts y BadgerCare en Wisconsin. En los 40 estados de expansión más DC, el límite de Medicaid para adultos es 138% del FPL, o $22,025 para una persona en 2026, pero las personas de 65 años o más suelen evaluarse bajo reglas separadas para adultos mayores y discapacitados con sus propios límites. Un cónyuge menor de 65 o un hijo puede calificar para CHIP o Medicaid aunque usted tenga Medicare. Solicite en ssa.gov/extrahelp o en su agencia estatal de Medicaid, que Medicaid.gov lista para cada estado."
+        }
+      ]
+    }
+  ],
+  "documentsNeeded": {
+    "en": [
+      "Notice of Creditable Coverage from your employer, union, or retiree plan showing plan name and coverage dates",
+      "Termination letter, COBRA notice, or retirement letter showing the exact date coverage ended",
+      "Medicare card or Medicare number (Parts A and B effective dates)",
+      "Form CMS-L564 (Request for Employment Information) completed by your former employer",
+      "Form CMS-40B (Application for Enrollment in Part B) if Part B is not yet active",
+      "Current list of prescriptions and your pharmacy for the Plan Finder comparison",
+      "Income and resource records if you are applying for Extra Help or a Medicare Savings Program"
+    ],
+    "es": [
+      "Aviso de Cobertura Acreditable de su empleador, sindicato o plan de jubilados con el nombre del plan y las fechas de cobertura",
+      "Carta de terminación, aviso de COBRA o carta de jubilación con la fecha exacta en que terminó la cobertura",
+      "Tarjeta de Medicare o número de Medicare (fechas de vigencia de las Partes A y B)",
+      "Formulario CMS-L564 (Solicitud de Información de Empleo) completado por su exempleador",
+      "Formulario CMS-40B (Solicitud de Inscripción en la Parte B) si la Parte B aún no está activa",
+      "Lista actual de recetas y su farmacia para la comparación en el Buscador de Planes",
+      "Registros de ingresos y recursos si solicita Ayuda Adicional o un Programa de Ahorros de Medicare"
+    ]
+  },
+  "commonDenialReasons": {
+    "en": [
+      "Part D enrollment submitted after the 2-month SEP ended, so the penalty clock keeps running",
+      "No written Notice of Creditable Coverage, so Medicare counts the months as uncovered",
+      "Plan listed as creditable by the employer but the notice was for a different plan year or option",
+      "Reporting a Marketplace plan, discount card, or health sharing ministry as creditable coverage",
+      "Missing the 60-day deadline to request reconsideration of a penalty determination"
+    ],
+    "es": [
+      "Inscripción en la Parte D presentada después de que terminó el SEP de 2 meses, así que el reloj de la multa sigue corriendo",
+      "Sin Aviso de Cobertura Acreditable por escrito, así que Medicare cuenta los meses como sin cobertura",
+      "Plan listado como acreditable por el empleador pero el aviso era de otro año o de otra opción del plan",
+      "Reportar un plan del Mercado, tarjeta de descuento o ministerio de salud compartida como cobertura acreditable",
+      "No cumplir el plazo de 60 días para solicitar la reconsideración de una determinación de multa"
+    ]
+  },
+  "stateRules": [
+    {
+      "state": "All states (SHIP)",
+      "rule": "Every state runs a State Health Insurance Assistance Program offering free, unbiased Part D and creditable coverage counseling",
+      "sourceUrl": "https://www.shiphelp.org/"
+    },
+    {
+      "state": "New York",
+      "rule": "The Elderly Pharmaceutical Insurance Coverage (EPIC) program helps eligible seniors pay Part D premiums and copays, and EPIC members can ask about Part D enrollment to avoid penalties",
+      "sourceUrl": "https://www.health.ny.gov/health_care/epic/"
+    },
+    {
+      "state": "Pennsylvania",
+      "rule": "PACE and PACENET offer drug assistance for older adults who also enroll in Part D, and members should confirm creditable status with the program",
+      "sourceUrl": "https://www.pa.gov/agencies/aging/aging-services/prescriptions"
+    },
+    {
+      "state": "New Jersey",
+      "rule": "The Pharmaceutical Assistance to the Aged and Disabled (PAAD) program pays for drugs alongside Part D for eligible residents",
+      "sourceUrl": "https://www.nj.gov/humanservices/doas/services/paad/"
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the Part D Special Enrollment Period after losing creditable coverage?",
+        "answer": "You get a Special Enrollment Period of 2 months after the month your creditable drug coverage ends, or after the month you are notified, whichever is later. If coverage ends November 30, 2026, your SEP runs December 1, 2026 through January 31, 2027. Enroll in a Part D plan or Medicare Advantage plan with drugs through Medicare.gov or 1-800-MEDICARE during that window. A plan that starts by February 1, 2027 keeps your gap at 62 days, one day short of the 63-day penalty trigger. This SEP applies only when you lose coverage involuntarily, such as when an employer drops a plan or you lose a job."
+      },
+      {
+        "question": "How much is the Part D late enrollment penalty in 2026?",
+        "answer": "The 2026 penalty is 1% of the $38.99 national base beneficiary premium for each full month you went 63 days or more without creditable coverage, rounded to the nearest $0.10. A 12-month gap adds about $4.70 per month, and a 24-month gap adds about $9.40 per month. Medicare adds the amount to your Part D premium every month for as long as you have Part D coverage. The base premium changes each year, so the dollar amount grows over time even though your months uncovered stay the same."
+      },
+      {
+        "question": "How do I document that my coverage was creditable?",
+        "answer": "Ask your plan administrator or HR for a written Notice of Creditable Coverage showing the plan name, that its drug coverage is creditable, and the dates it ran. Employers must send this notice every year before October 15 and give it on request. Also keep your termination letter or COBRA notice for the exact end date. After you enroll in Part D, Medicare may mail an attestation form asking about your prior coverage, and you have 30 days to answer. Keep copies for at least 3 years in case a penalty notice arrives later."
+      },
+      {
+        "question": "What if I miss the Part D Special Enrollment Period?",
+        "answer": "You can still enroll during the Annual Election Period, October 15 through December 7, 2026, for coverage starting January 1, 2027. The penalty clock keeps running until your plan starts, and each uncovered month after Day 63 adds 1% of the national base premium to your lifetime penalty. If your income is under 150% FPL ($23,940 for one person in 2026), apply for Extra Help, which waives the penalty. You can also request reconsideration if you had a reason for the gap, such as incorrect advice from your employer."
+      },
+      {
+        "question": "Can I get retroactive Part D coverage after losing creditable coverage?",
+        "answer": "Part D coverage generally starts the first day of the month after your plan receives your enrollment, so it is not retroactive. The exceptions are Extra Help and Medicaid, where Medicare can sometimes apply coverage back to the month you became eligible. Because most Part D coverage is not retroactive, enroll early in your Special Enrollment Period. Enrolling in the first month of the window starts coverage the next month and leaves the shortest possible gap."
+      },
+      {
+        "question": "What is the difference between COBRA and Medicare Part D after losing coverage at 65?",
+        "answer": "COBRA continues your old plan at 102% of the full premium, often $400 to $900 per month in 2026, and may include creditable drug coverage. Medicare Part D is cheaper for most people, and an out-of-pocket cap of $2,100 applies in 2026. COBRA does not give you a Part B Special Enrollment Period, so a Part B penalty of 10% per 12-month period can start while you wait. If you keep COBRA, enroll in Part B inside your 8-month window, and get written confirmation that your COBRA drug coverage is creditable."
+      },
+      {
+        "question": "What state-specific rules apply when I lose creditable coverage?",
+        "answer": "Federal rules set the 63-day gap and the Part D penalty in all states, but state programs can help. Every state has a SHIP counselor for free help, and states such as New York (EPIC), Pennsylvania (PACE and PACENET), and New Jersey (PAAD) run drug assistance programs that work alongside Part D. Medicaid brands also vary: Medi-Cal in California, AHCCCS in Arizona, MassHealth in Massachusetts, and BadgerCare in Wisconsin. Check with your state agency to confirm whether its drug program counts as creditable coverage."
+      },
+      {
+        "question": "Do I qualify for Medicaid or Extra Help after losing creditable coverage?",
+        "answer": "Extra Help covers people with a 2026 income under 150% FPL, which is $23,940 for one person and $32,460 for a couple, subject to a resource limit. Full Medicaid in expansion states uses a 138% FPL line, about $22,025 for one person in 2026, though people 65 and older may be assessed under aged-and-disabled rules. Both programs pay Part D costs and Extra Help waives the late enrollment penalty. Apply at ssa.gov/extrahelp or at your state Medicaid agency, and apply early because Medicaid is year-round."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es el Período de Inscripción Especial de la Parte D después de perder cobertura acreditable?",
+        "answer": "Usted recibe un Período de Inscripción Especial de 2 meses después del mes en que termina su cobertura de medicamentos acreditable, o después del mes en que se le notifica, lo que ocurra después. Si la cobertura termina el 30 de noviembre de 2026, su SEP va del 1 de diciembre de 2026 al 31 de enero de 2027. Inscríbase en un plan de la Parte D o en un plan Medicare Advantage con medicamentos por Medicare.gov o al 1-800-MEDICARE durante esa ventana. Un plan que comience a más tardar el 1 de febrero de 2027 mantiene su brecha en 62 días, un día antes del límite de 63 días de la multa. Este SEP aplica solo cuando pierde la cobertura de forma involuntaria, como cuando un empleador elimina un plan o pierde su empleo."
+      },
+      {
+        "question": "¿Cuánto es la multa por inscripción tardía de la Parte D en 2026?",
+        "answer": "La multa 2026 es el 1% de la prima base nacional de $38.99 por cada mes completo en que pasó 63 días o más sin cobertura acreditable, redondeada a los $0.10 más cercanos. Una brecha de 12 meses suma unos $4.70 al mes, y una de 24 meses suma unos $9.40 al mes. Medicare suma el monto a su prima de la Parte D cada mes mientras tenga cobertura de la Parte D. La prima base cambia cada año, así que el monto en dólares crece con el tiempo aunque sus meses sin cobertura sigan iguales."
+      },
+      {
+        "question": "¿Cómo documento que mi cobertura era acreditable?",
+        "answer": "Pida a su administrador de plan o a Recursos Humanos un Aviso de Cobertura Acreditable por escrito con el nombre del plan, la confirmación de que su cobertura de medicamentos es acreditable y las fechas de vigencia. Los empleadores deben enviar este aviso cada año antes del 15 de octubre y entregarlo a solicitud. Conserve también su carta de terminación o aviso de COBRA para la fecha exacta de fin. Después de inscribirse en la Parte D, Medicare puede enviar un formulario de declaración sobre su cobertura anterior, y usted tiene 30 días para contestar. Guarde copias por al menos 3 años por si llega un aviso de multa más tarde."
+      },
+      {
+        "question": "¿Qué pasa si pierdo el Período de Inscripción Especial de la Parte D?",
+        "answer": "Todavía puede inscribirse durante el Período de Elección Anual, del 15 de octubre al 7 de diciembre de 2026, para cobertura desde el 1 de enero de 2027. El reloj de la multa sigue corriendo hasta que comience su plan, y cada mes sin cobertura después del Día 63 suma el 1% de la prima base nacional a su multa de por vida. Si su ingreso es menor al 150% del FPL ($23,940 para una persona en 2026), solicite Ayuda Adicional, que elimina la multa. También puede pedir reconsideración si tuvo una razón para la brecha, como información incorrecta de su empleador."
+      },
+      {
+        "question": "¿Puedo obtener cobertura retroactiva de la Parte D después de perder cobertura acreditable?",
+        "answer": "La cobertura de la Parte D generalmente comienza el primer día del mes siguiente a que su plan recibe su inscripción, así que no es retroactiva. Las excepciones son Ayuda Adicional y Medicaid, donde Medicare a veces puede aplicar cobertura desde el mes en que usted fue elegible. Como la mayoría de la cobertura de la Parte D no es retroactiva, inscríbase temprano en su Período de Inscripción Especial. Inscribirse en el primer mes de la ventana inicia la cobertura el mes siguiente y deja la brecha más corta posible."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre COBRA y la Parte D de Medicare al perder cobertura a los 65?",
+        "answer": "COBRA continúa su plan anterior al 102% de la prima completa, a menudo $400 a $900 al mes en 2026, y puede incluir cobertura de medicamentos acreditable. La Parte D de Medicare es más barata para la mayoría, y en 2026 aplica un tope de gastos de bolsillo de $2,100. COBRA no le da un Período de Inscripción Especial de la Parte B, así que una multa de la Parte B del 10% por cada período de 12 meses puede empezar mientras espera. Si conserva COBRA, inscríbase en la Parte B dentro de su ventana de 8 meses y obtenga confirmación por escrito de que su cobertura de medicamentos de COBRA es acreditable."
+      },
+      {
+        "question": "¿Qué reglas estatales aplican cuando pierdo cobertura acreditable?",
+        "answer": "Las reglas federales fijan la brecha de 63 días y la multa de la Parte D en todos los estados, pero los programas estatales pueden ayudar. Cada estado tiene un consejero SHIP para ayuda gratuita, y estados como Nueva York (EPIC), Pensilvania (PACE y PACENET) y Nueva Jersey (PAAD) tienen programas de asistencia con medicamentos que funcionan junto con la Parte D. Las marcas de Medicaid también varían: Medi-Cal en California, AHCCCS en Arizona, MassHealth en Massachusetts y BadgerCare en Wisconsin. Consulte a su agencia estatal para confirmar si su programa de medicamentos cuenta como cobertura acreditable."
+      },
+      {
+        "question": "¿Califico para Medicaid o Ayuda Adicional después de perder cobertura acreditable?",
+        "answer": "Ayuda Adicional cubre a personas con ingreso 2026 menor al 150% del FPL, que es $23,940 para una persona y $32,460 para una pareja, sujeto a un límite de recursos. Medicaid completo en estados de expansión usa una línea de 138% del FPL, cerca de $22,025 para una persona en 2026, aunque las personas de 65 años o más pueden evaluarse bajo reglas para adultos mayores y discapacitados. Ambos programas pagan costos de la Parte D y Ayuda Adicional elimina la multa por inscripción tardía. Solicite en ssa.gov/extrahelp o en su agencia estatal de Medicaid, y hágalo pronto porque Medicaid es todo el año."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicare Eligibility 2026",
+        "es": "Elegibilidad para Medicare 2026"
+      },
+      "href": "/medicare-eligibility"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Tabla del FPL 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Límites de Ingresos Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Turning 65: Medicare Enrollment",
+        "es": "Cumpliendo 65: Inscripción en Medicare"
+      },
+      "href": "/event/turning-65-medicare"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Medicare.gov: Part D late enrollment penalty",
+      "url": "https://www.medicare.gov/drug-coverage-part-d/costs-for-medicare-drug-coverage/part-d-late-enrollment-penalty",
+      "note": {
+        "en": "Official penalty formula, 63-day rule, and creditable coverage definition.",
+        "es": "Fórmula oficial de la multa, regla de 63 días y definición de cobertura acreditable."
+      }
+    },
+    {
+      "name": "CMS.gov: Creditable coverage and 2026 Part D national base beneficiary premium",
+      "url": "https://www.cms.gov/medicare/enrollment-renewal/creditable-coverage",
+      "note": {
+        "en": "Creditable coverage disclosure rules and the $38.99 2026 base premium.",
+        "es": "Reglas de divulgación de cobertura acreditable y la prima base 2026 de $38.99."
+      }
+    },
+    {
+      "name": "SSA.gov: Extra Help with Medicare prescription drug costs",
+      "url": "https://www.ssa.gov/medicare/part-d-extra-help",
+      "note": {
+        "en": "Extra Help income limits and how to apply.",
+        "es": "Límites de ingresos de Ayuda Adicional y cómo solicitar."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility and state program directory",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid enrollment and state agency contacts.",
+        "es": "Inscripción en Medicaid todo el año y contactos de agencias estatales."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Medicare and the Marketplace",
+      "url": "https://www.healthcare.gov/medicare/changing-from-marketplace-to-medicare/",
+      "note": {
+        "en": "Marketplace coverage ends when Medicare begins; 1095-A and subsidy rules.",
+        "es": "La cobertura del Mercado termina cuando comienza Medicare; reglas del 1095-A y subsidios."
+      }
+    },
+    {
+      "name": "KFF: An Overview of the Medicare Part D Prescription Drug Benefit",
+      "url": "https://www.kff.org/medicare/fact-sheet/an-overview-of-the-medicare-part-d-prescription-drug-benefit/",
+      "note": {
+        "en": "Part D enrollment, penalties, and 2026 benefit design.",
+        "es": "Inscripción en la Parte D, multas y diseño del beneficio 2026."
+      }
+    }
+  ]
+}
