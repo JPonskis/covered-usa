@@ -3,6 +3,15 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
+import {
+  CharityCareCard,
+  LegacyResultNotice,
+  LineItemsCard,
+  SummaryCard,
+  UnbenchmarkedNote,
+  WhatThisIsPanel,
+  isLegacyResult,
+} from '@/components/bill-analyzer/BillResults'
 
 export default function ResultsPage() {
   const params = useParams()
@@ -13,6 +22,7 @@ export default function ResultsPage() {
   const [loading, setLoading] = useState(true)
   const [letterLoading, setLetterLoading] = useState(false)
   const [letterText, setLetterText] = useState('')
+  const [letterError, setLetterError] = useState('')
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
@@ -36,6 +46,7 @@ export default function ResultsPage() {
   async function handleGetLetter() {
     if (!result || letterLoading) return
     setLetterLoading(true)
+    setLetterError('')
     try {
       const res = await fetch('/api/generate-letter', {
         method: 'POST',
@@ -43,9 +54,14 @@ export default function ResultsPage() {
         body: JSON.stringify({ analysis: result }),
       })
       const data = await res.json()
-      if (data.text) setLetterText(data.text)
+      const text = typeof data.text === 'string' ? data.text.trim() : ''
+      if (!res.ok || !text) {
+        setLetterError(data.error ?? 'We could not generate your letter. Please try again.')
+        return
+      }
+      setLetterText(text)
     } catch {
-      // Silently fail
+      setLetterError('We could not generate your letter. Please try again.')
     } finally {
       setLetterLoading(false)
     }
@@ -96,8 +112,16 @@ export default function ResultsPage() {
 
   if (!result) return null
 
-  const savings = result.summary.totalOvercharge
-  const hasRates = result.summary.lineItemsWithRates > 0
+  // A result saved before the accuracy fix carries figures we no longer stand
+  // behind. Show nothing rather than show the old number.
+  if (isLegacyResult(result)) {
+    return (
+      <div className="max-w-2xl mx-auto space-y-6">
+        <LegacyResultNotice />
+      </div>
+    )
+  }
+
 
   // Letter view
   if (letterText) {
@@ -136,118 +160,21 @@ export default function ResultsPage() {
         <p className="text-xs text-[var(--text-muted)]">Results expire 48 hours after analysis</p>
       </div>
 
-      {/* Summary card */}
-      <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border-light)' }}>
-        <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, var(--primary-deeper), var(--primary-dark))' }}>
-          <p className="text-sm text-white/70 mb-1">Analysis Complete</p>
-          <p className="text-lg font-semibold text-white">{result.provider.name}</p>
-        </div>
-        <div className="bg-white px-6 py-5">
-          <div className={`grid ${hasRates ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-1'} gap-6`}>
-            <div>
-              <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Total billed</p>
-              <p className="text-2xl font-bold text-[var(--text-primary)]">${result.summary.totalBilled.toLocaleString()}</p>
-            </div>
-            {hasRates && (
-              <>
-                <div>
-                  <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Federal rate</p>
-                  <p className="text-2xl font-bold text-[var(--text-primary)]">${result.summary.totalMedicareRate.toLocaleString()}</p>
-                </div>
-                <div>
-                  <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Potential savings</p>
-                  <p className="text-2xl font-bold" style={{ color: 'var(--error)' }}>${savings.toLocaleString()}</p>
-                </div>
-              </>
-            )}
-          </div>
-          {result.summary.errorsFound > 0 && (
-            <div className="mt-4 px-4 py-3 rounded-lg text-sm font-medium" style={{ background: 'var(--warning-light)', color: 'var(--warning)' }}>
-              {result.summary.errorsFound} billing error{result.summary.errorsFound > 1 ? 's' : ''} detected
-            </div>
-          )}
-        </div>
-      </div>
+      <WhatThisIsPanel />
 
-      {/* Line items */}
-      <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
-        <div className="px-6 py-4 border-b border-[var(--border-light)]">
-          <h3 className="text-lg font-semibold text-[var(--text-primary)]">Line-by-line breakdown</h3>
-          <p className="text-sm text-[var(--text-muted)]">Each charge compared to the federal payment rate</p>
-        </div>
-        <div className="divide-y divide-[var(--border-light)]">
-          {result.lineItems.map((item, i) => (
-            <div key={i} className="px-6 py-4">
-              <div className="flex justify-between items-start gap-4">
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-[var(--text-primary)]">{item.description}</p>
-                  {item.flags.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {item.flags.map((flag, fi) => (
-                        <span key={fi} className="inline-flex items-center gap-1 text-xs font-medium px-2.5 py-1 rounded-full" style={{
-                          background: flag.severity === 'high' ? 'var(--error-light)' : 'var(--warning-light)',
-                          color: flag.severity === 'high' ? 'var(--error)' : 'var(--warning)',
-                        }}>
-                          {flag.explanation}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                <div className="text-right shrink-0">
-                  <p className="text-sm font-semibold text-[var(--text-primary)]">${item.billedAmount.toLocaleString()}</p>
-                  {item.medicareRate != null && (
-                    <p className="text-xs mt-1 text-[var(--text-muted)]">Federal: ${item.medicareRate.toLocaleString()}</p>
-                  )}
-                  {item.overchargeAmount != null && item.overchargeAmount > 0 && (
-                    <p className="text-xs font-medium mt-1" style={{ color: 'var(--error)' }}>
-                      +${item.overchargeAmount.toLocaleString()} ({item.overchargePercent}% over)
-                    </p>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <SummaryCard providerName={result.provider.name} summary={result.summary} />
 
-      {/* Charity care */}
-      {result.charityCare.hospitalIsNonprofit && (
-        <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
-          <div className="border-l-4 p-5" style={{ borderLeftColor: 'var(--success)' }}>
-            <div className="flex items-start gap-3">
-              <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ background: 'var(--success)' }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 13l4 4L19 7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <div>
-                <p className="font-semibold text-sm text-[var(--text-primary)] mb-1">
-                  {result.charityCare.eligible ? 'You may qualify for free or reduced care' : 'This hospital has a charity care program'}
-                </p>
-                <p className="text-sm text-[var(--text-secondary)] mb-3">{result.charityCare.explanation}</p>
-                <div className="bg-[var(--cream)] rounded-lg p-4">
-                  <p className="text-xs font-medium text-[var(--text-primary)] mb-2 uppercase tracking-wide">Next steps</p>
-                  <ul className="space-y-1.5">
-                    {result.charityCare.nextSteps.map((s, i) => (
-                      <li key={i} className="text-sm text-[var(--text-secondary)] flex gap-2">
-                        <span className="text-[var(--success)] font-bold shrink-0">{i + 1}.</span>
-                        <span>{s}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      <UnbenchmarkedNote summary={result.summary} />
+
+      <LineItemsCard lineItems={result.lineItems} />
+
+      <CharityCareCard charityCare={result.charityCare} />
 
       {/* Generate letter */}
       <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-6">
         <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-1">Dispute this bill</h3>
         <p className="text-sm text-[var(--text-muted)] mb-4">
-          Generate a formal letter to send to the hospital billing department. It cites every overcharge and error found on your bill.
+          A formal letter to the hospital billing department. It requests an itemized statement and asks them to justify the specific charges worth questioning.
         </p>
         <button
           onClick={handleGetLetter}
@@ -257,6 +184,11 @@ export default function ResultsPage() {
         >
           {letterLoading ? 'Generating letter...' : 'Generate Dispute Letter'}
         </button>
+        {letterError && (
+          <p className="text-sm mt-3" style={{ color: 'var(--error)' }}>
+            {letterError}
+          </p>
+        )}
       </div>
 
       {/* Screener cross-sell */}

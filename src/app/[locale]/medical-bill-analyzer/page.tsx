@@ -4,7 +4,7 @@ import BillAnalyzer from '@/components/BillAnalyzer'
 export const metadata: Metadata = {
   title: 'Free Medical Bill Analyzer | Find Overcharges on Your Hospital Bill | CoveredUSA',
   description:
-    'Upload your hospital bill and find out if you were overcharged. We compare every line item to federal rates, flag billing errors, check charity care eligibility, and generate a dispute letter. Free, no signup.',
+    'Upload your hospital bill and find out what you can question. We compare the charges we can price to federal Medicare rates, show you what we could not price, check your charity care rights, and write your dispute letter. Free, no signup.',
   alternates: {
     canonical: 'https://coveredusa.org/en/medical-bill-analyzer',
     languages: {
@@ -48,13 +48,13 @@ const jsonLd = {
           '@type': 'HowToStep',
           position: 2,
           name: 'We find what to dispute',
-          text: 'Each charge is compared to federal payment rates. Billing errors, overcharges, and charity care eligibility are flagged.',
+          text: 'Every charge we can price is compared to the federal Medicare rate. We show you the ones we could not price, and check your charity care rights.',
         },
         {
           '@type': 'HowToStep',
           position: 3,
           name: 'Get your dispute letter',
-          text: 'Download a ready-to-send dispute letter citing every overcharge and error found on your bill.',
+          text: 'Download a ready-to-send letter that requests an itemized statement and asks the hospital to justify the specific charges worth questioning.',
         },
       ],
     },
@@ -106,7 +106,7 @@ const jsonLd = {
           name: 'Can I actually dispute a medical bill?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. You have the legal right to request an itemized bill and dispute any charges you believe are incorrect. Hospitals are required to provide itemized bills on request. The tool generates a formal dispute letter that cites the specific overcharges and errors found on your bill.',
+            text: 'Yes. You have the legal right to request an itemized bill and dispute any charges you believe are incorrect. Hospitals are required to provide itemized bills on request. The tool generates a formal letter that requests that itemized statement and asks the hospital to justify the specific charges worth questioning.',
           },
         },
         {
@@ -138,7 +138,7 @@ const jsonLd = {
           name: 'How do I write a letter to dispute a medical bill?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'A medical bill dispute letter should include your account number, the date of service, a list of each charge you are disputing with the specific reason (duplicate charge, billing code mismatch, charge exceeds Medicare benchmark), and a request for a written response within 30 days. You have the legal right to an itemized bill before disputing. This tool generates a ready-to-send dispute letter automatically after analyzing your bill, citing every overcharge and error found.',
+            text: 'A medical bill dispute letter should include your account number, the date of service, a list of each charge you are disputing with the specific reason (duplicate charge, billing code mismatch, charge exceeds Medicare benchmark), and a request for a written response within 30 days. You have the legal right to an itemized bill before disputing. This tool writes that letter for you after analyzing your bill, built from the specific charges on it.',
           },
         },
         {
@@ -255,43 +255,67 @@ export default function MedicalBillAnalyzerPage() {
                 <p className="text-sm text-white/70 mb-1">Analysis Complete</p>
                 <p className="text-lg font-semibold text-white">Valley Medical Center</p>
               </div>
-              <div className="px-6 py-5 grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div>
-                  <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Total billed</p>
-                  <p className="text-2xl font-bold text-[var(--text-primary)]">$12,847</p>
+              <div className="px-6 py-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Total billed</p>
+                    <p className="text-2xl font-bold text-[var(--text-primary)]">$12,847</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Medicare rate, 3 priced charges</p>
+                    <p className="text-2xl font-bold text-[var(--text-primary)]">$374</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Federal rate</p>
-                  <p className="text-2xl font-bold text-[var(--text-primary)]">$2,340</p>
+                <div className="mt-5 rounded-lg p-4" style={{ background: 'var(--cream)', border: '1px solid var(--border-light)' }}>
+                  <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Above the Medicare rate on the 3 priced charges (estimate)</p>
+                  <p className="text-2xl font-bold" style={{ color: '#b45309' }}>$8,313 to $8,873</p>
+                  <p className="text-sm text-[var(--text-secondary)] mt-2">
+                    Medicare is a reference floor, not a fair price and not what you owe. Treat this as a starting point for questions.
+                  </p>
                 </div>
-                <div>
-                  <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Potential savings</p>
-                  <p className="text-2xl font-bold" style={{ color: 'var(--error)' }}>$10,507</p>
-                </div>
+                <p className="text-xs text-[var(--text-muted)] mt-3">
+                  We compared 3 of 6 charges to a federal benchmark. Based on gross charges, not what you owe after insurance.
+                </p>
               </div>
 
               <div className="border-t border-[var(--border-light)]">
-                <div className="px-6 py-3 border-b border-[var(--border-light)]">
-                  <p className="text-sm font-semibold text-[var(--text-primary)]">Line items</p>
+                <div className="px-6 py-3 border-b border-[var(--border-light)]" style={{ background: 'var(--cream)' }}>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)]">Compared to Medicare (3)</p>
                 </div>
                 {[
-                  { name: 'Emergency room visit, Level 4', billed: '$4,200', federal: '$453', flag: 'Overcharge: 827% above federal rate' },
-                  { name: 'CT scan, abdomen with contrast', billed: '$3,800', federal: '$270', flag: null },
-                  { name: 'IV fluid administration', billed: '$1,247', federal: '$89', flag: 'Duplicate charge detected' },
-                  { name: 'Blood panel, comprehensive', billed: '$890', federal: '$34', flag: null },
+                  { name: 'Emergency room visit, Level 4', billed: '$4,200', medicare: 'Medicare: $116', note: 'About 36 times the Medicare rate — worth asking about' },
+                  { name: 'CT scan, abdomen with contrast', billed: '$3,800', medicare: 'Medicare: $227', note: 'About 17 times the Medicare rate — worth asking about' },
+                  { name: 'IV hydration, first hour', billed: '$1,247', medicare: 'Medicare: $30', note: 'About 41 times the Medicare rate — worth asking about' },
+                ].map((item, i) => (
+                  <div key={i} className="px-6 py-3 border-b border-[var(--border-light)] flex justify-between items-start gap-4">
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm text-[var(--text-primary)]">{item.name}</p>
+                      <span className="inline-block text-xs font-medium px-2 py-0.5 rounded-full mt-1" style={{ background: 'var(--warning-light)', color: 'var(--warning)' }}>
+                        {item.note}
+                      </span>
+                    </div>
+                    <div className="text-right shrink-0">
+                      <p className="text-sm font-semibold text-[var(--text-primary)]">{item.billed}</p>
+                      <p className="text-xs text-[var(--text-muted)]">{item.medicare}</p>
+                    </div>
+                  </div>
+                ))}
+                <div className="px-6 py-3 border-b border-[var(--border-light)]" style={{ background: 'var(--cream)' }}>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)]">No benchmark available (3)</p>
+                </div>
+                {[
+                  { name: 'Emergency room facility fee', billed: '$2,400', why: 'Facility and emergency-room charges are paid per outpatient payment group, not per physician code.' },
+                  { name: 'Blood panel, comprehensive', billed: '$890', why: 'Lab tests are paid on the Clinical Laboratory Fee Schedule, which we have not loaded yet.' },
+                  { name: 'Ondansetron 4mg injection', billed: '$310', why: 'Drugs and injections are paid on the Medicare average sales price list, which we have not loaded yet.' },
                 ].map((item, i) => (
                   <div key={i} className="px-6 py-3 border-b border-[var(--border-light)] last:border-b-0 flex justify-between items-start gap-4">
                     <div className="flex-1 min-w-0">
                       <p className="text-sm text-[var(--text-primary)]">{item.name}</p>
-                      {item.flag && (
-                        <span className="inline-block text-xs font-medium px-2 py-0.5 rounded-full mt-1" style={{ background: 'var(--error-light)', color: 'var(--error)' }}>
-                          {item.flag}
-                        </span>
-                      )}
+                      <p className="text-xs text-[var(--text-muted)] mt-1">{item.why}</p>
                     </div>
                     <div className="text-right shrink-0">
                       <p className="text-sm font-semibold text-[var(--text-primary)]">{item.billed}</p>
-                      <p className="text-xs text-[var(--text-muted)]">Federal: {item.federal}</p>
+                      <p className="text-xs text-[var(--text-muted)]">No benchmark</p>
                     </div>
                   </div>
                 ))}
@@ -308,7 +332,7 @@ export default function MedicalBillAnalyzerPage() {
                 Then you get a dispute letter ready to send
               </h3>
               <p className="text-sm mb-4" style={{ color: 'var(--text-muted)' }}>
-                A formal letter addressed to the hospital's billing department citing every overcharge and error on your bill.
+                A formal letter addressed to the hospital's billing department that requests an itemized statement and asks them to justify the specific charges worth questioning.
               </p>
               <div className="relative">
               <div
@@ -393,7 +417,7 @@ export default function MedicalBillAnalyzerPage() {
               />
               </div>
               <p className="text-xs text-center mt-3" style={{ color: 'var(--text-muted)' }}>
-                Scroll to read the full letter. Your letter will cite the specific charges and errors found on your bill.
+                Scroll to read the full letter. Your letter will name the specific charges on your own bill.
               </p>
             </div>
           </div>
@@ -406,7 +430,7 @@ export default function MedicalBillAnalyzerPage() {
               See what you actually owe
             </h2>
             <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
-              Upload your bill. We compare every charge to what the government pays for the same service, flag the errors, and write your dispute letter. Free. No signup. Your bill is never stored.
+              Upload your bill. We compare every charge we can price to what Medicare pays for the same service, tell you which ones we could not price, and write your letter. Free. No signup. Your bill is never stored.
             </p>
           </div>
           <BillAnalyzer />

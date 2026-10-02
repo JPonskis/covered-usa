@@ -1,5 +1,13 @@
 // CoveredUSA Bill Analysis Email — sent after dispute letter is generated
 import type { AnalysisResult } from '@/lib/bill-analyzer/types'
+import { basisLabel } from '@/lib/bill-analyzer/types'
+import {
+  coverageSentence,
+  headlineLabel,
+  headlineRange,
+  money,
+  unbenchmarkedSentence,
+} from '@/lib/bill-analyzer/headline'
 
 interface BillAnalysisEmailProps {
   firstName?: string
@@ -9,11 +17,7 @@ interface BillAnalysisEmailProps {
 }
 
 function formatMoney(amount: number): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(amount)
+  return money(amount)
 }
 
 export function buildBillAnalysisSubject(
@@ -29,7 +33,13 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
   const { summary, provider, lineItems, charityCare } = analysis
 
   const greeting = firstName ? `Hi ${firstName},` : 'Hi there,'
-  const preheader = `We found ${formatMoney(summary.totalOvercharge)} in potential savings on your ${provider.name} bill.`
+
+  // Coverage-aware framing. When we priced nothing, the email says so — it does
+  // not fall back to a whole-bill figure dressed up as savings.
+  const range = headlineRange(summary)
+  const preheader = range
+    ? `On the ${summary.lineItemsWithRates} charge${summary.lineItemsWithRates === 1 ? '' : 's'} we could price, your ${provider.name} bill runs about ${range} above the Medicare rate.`
+    : `Your ${provider.name} bill analysis is ready — here is what to ask them.`
 
   // Build flagged line items rows
   const flaggedItems = lineItems.filter(
@@ -43,13 +53,14 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
                 <tr>
                   <td style="padding: 10px 8px 10px 0; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">
                     ${item.description}
-                    ${item.flags.length > 0 ? `<br><span style="font-size: 12px; color: #dc2626; font-weight: 600;">${item.flags.map(f => f.type === 'duplicate' ? 'Duplicate charge' : f.type === 'unbundled' ? 'Unbundled procedure' : f.type === 'upcoding' ? 'Possible upcoding' : f.type === 'overcoding' ? 'Overcoding' : f.explanation).join(', ')}</span>` : ''}
+                    ${item.flags.length > 0 ? `<br><span style="font-size: 12px; color: #b45309; font-weight: 600;">${item.flags.map(f => f.type === 'duplicate' ? 'Appears more than once — ask them to confirm' : f.type === 'overcoding' ? 'Far above the Medicare rate — ask them to justify' : f.explanation).join('; ')}</span>` : ''}
+                    ${item.benchmarkConfidence === 'estimated' ? `<br><span style="font-size: 12px; color: #78716c;">Estimated code match — verify this one</span>` : ''}
                   </td>
                   <td style="padding: 10px 8px 10px 12px; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap; font-weight: 600;">
                     ${formatMoney(item.billedAmount)}
                   </td>
                   <td style="padding: 10px 0 10px 12px; border-bottom: 1px solid #d6cfc5; font-size: 14px; line-height: 20px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; white-space: nowrap;">
-                    ${item.medicareRate ? formatMoney(item.medicareRate) : 'N/A'}
+                    ${item.medicareRate != null ? formatMoney(item.medicareRate) : 'No benchmark'}
                   </td>
                 </tr>`
     )
@@ -61,24 +72,34 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
       ? `<tr><td colspan="3" style="padding: 10px 0; font-size: 13px; color: #78716c; font-family: Georgia, 'Times New Roman', serif;">+ ${remainingCount} more flagged item${remainingCount > 1 ? 's' : ''}</td></tr>`
       : ''
 
-  // Charity care section
-  const charityCareHtml = charityCare.eligible
-    ? `
+  // Charity care — three states, and a lookup miss is never reported as for-profit.
+  const charityHeading =
+    charityCare.eligibility === 'likely'
+      ? 'You likely qualify for financial assistance'
+      : charityCare.nonprofitStatus === 'nonprofit'
+        ? 'This hospital must have a financial assistance policy'
+        : charityCare.nonprofitStatus === 'unknown'
+          ? 'Check whether this hospital owes you financial assistance'
+          : 'Ask about hardship assistance'
+
+  const charityCareHtml = `
               <tr>
                 <td style="padding: 24px 36px 0 36px;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f0fdf4; border-radius: 8px; border: 1px solid #bbf7d0;">
                     <tr>
                       <td style="padding: 16px 20px;">
-                        <p style="margin: 0 0 6px 0; font-size: 14px; font-weight: 700; color: #166534; font-family: Georgia, 'Times New Roman', serif;">You may qualify for financial assistance</p>
+                        <p style="margin: 0 0 6px 0; font-size: 14px; font-weight: 700; color: #166534; font-family: Georgia, 'Times New Roman', serif;">${charityHeading}</p>
+                        <p style="margin: 0 0 10px 0; font-size: 13px; line-height: 20px; color: #166534; font-family: Georgia, 'Times New Roman', serif;">
+                          ${charityCare.explanation}
+                        </p>
                         <p style="margin: 0; font-size: 13px; line-height: 20px; color: #166534; font-family: Georgia, 'Times New Roman', serif;">
-                          ${provider.name} is a nonprofit hospital. Under federal law, they must offer financial assistance to qualifying patients. ${charityCare.fplPercent ? `Based on your income, you are at ${charityCare.fplPercent}% of the federal poverty level.` : ''} Ask the billing department about their Financial Assistance Policy.
+                          ${charityCare.nextSteps.slice(0, 2).map((s, i) => `${i + 1}. ${s}`).join('<br>')}
                         </p>
                       </td>
                     </tr>
                   </table>
                 </td>
               </tr>`
-    : ''
 
   // "What to do next" steps
   function stepHtml(num: number, title: string, desc: string, first = false) {
@@ -99,9 +120,12 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
               </tr>`
   }
 
-  const step3Html = charityCare.eligible
-    ? stepHtml(3, 'Apply for financial assistance', `Ask ${provider.name} for their Financial Assistance Policy application. You will need proof of income. Submit it along with your dispute.`)
-    : ''
+  const step3Html =
+    charityCare.nonprofitStatus === 'nonprofit'
+      ? stepHtml(3, 'Ask for a financial assistance application', `Ask ${provider.name} for their financial assistance policy and application. You will need proof of income. Send it with your dispute — they cannot send you to collections while it is pending.`)
+      : charityCare.nonprofitStatus === 'unknown'
+        ? stepHtml(3, 'Find out if they owe you financial assistance', `Search ${provider.name}'s website for "financial assistance policy". Nonprofit hospitals are required by federal law to publish one, and to cap what they charge patients who qualify.`)
+        : ''
 
   const nextStepsHtml = letterGenerated
     ? `
@@ -109,8 +133,8 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
             <td style="padding: 28px 36px 0 36px;">
               <p style="margin: 0 0 20px 0; font-size: 16px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">What to do next</p>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-              ${stepHtml(1, 'Call the billing department', "Call the number on your bill and tell them you are disputing charges. Ask for the billing department's email or fax number so you can send your letter.", true)}
-              ${stepHtml(2, 'Send your dispute letter', 'Your letter is attached as a PDF and an editable Word document. Email or mail it to the billing department. Keep a copy for your records.')}
+              ${stepHtml(1, 'Call the billing department', "Call the number on your bill and tell them you are requesting an itemized statement. Ask for the billing department's email or fax number so you can send your letter.", true)}
+              ${stepHtml(2, 'Send your letter', 'Your letter is attached as a PDF and an editable Word document. Email or mail it to the billing department. Keep a copy for your records.')}
               ${step3Html}
               </table>
             </td>
@@ -119,7 +143,68 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
 
   // Intro paragraph — letter mention is folded in here, not as a separate block
   const letterMention = letterGenerated
-    ? ` Your dispute letter is attached — both a PDF and an editable Word doc.`
+    ? ` Your letter is attached — both a PDF and an editable Word doc.`
+    : ''
+
+  const leadParagraph = range
+    ? `We looked at your bill from <strong style="color: #1C1A16;">${provider.name}</strong>. ${coverageSentence(summary)} Those charges run about <strong style="color: #b45309;">${range}</strong> above the Medicare physician rate${summary.errorsFound > 0 ? `, and ${summary.errorsFound} charge${summary.errorsFound > 1 ? 's are' : ' is'} worth asking about` : ''}. Medicare is a reference floor, not a fair price and not what you owe, so treat this as a starting point for questions.${letterMention}`
+    : `We looked at your bill from <strong style="color: #1C1A16;">${provider.name}</strong>. ${coverageSentence(summary)} That does not mean the charges are correct — it means the services on this bill are paid under fee schedules we have not loaded yet, so we have no rate to compare them to. What we can do is help you make them show their work.${letterMention}`
+
+  const summaryCardHtml = range
+    ? `
+          <!-- Summary card — 2-col top (Billed | Medicare) + full-width bottom (range) -->
+          <tr>
+            <td style="padding: 0 36px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #134e4a; border-radius: 8px;">
+                <tr>
+                  <td style="width: 50%; padding: 20px 12px 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.15); border-right: 1px solid rgba(255,255,255,0.15); vertical-align: top;">
+                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Total billed</p>
+                    <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalBilled)}</p>
+                  </td>
+                  <td style="width: 50%; padding: 20px 20px 16px 12px; border-bottom: 1px solid rgba(255,255,255,0.15); vertical-align: top;">
+                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Medicare rate, ${summary.lineItemsWithRates} priced charge${summary.lineItemsWithRates === 1 ? '' : 's'}</p>
+                    <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalMedicareRate)}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="padding: 16px 20px 20px 20px;">
+                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">${headlineLabel(summary)}</p>
+                    <p style="margin: 0 0 6px 0; font-size: 26px; font-weight: 700; color: #fcd34d; font-family: Georgia, 'Times New Roman', serif;">${range}</p>
+                    <p style="margin: 0; font-size: 12px; line-height: 18px; color: rgba(255,255,255,0.7); font-family: Georgia, 'Times New Roman', serif;">${coverageSentence(summary)} ${basisLabel(summary)}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>`
+    : `
+          <tr>
+            <td style="padding: 0 36px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #134e4a; border-radius: 8px;">
+                <tr>
+                  <td style="padding: 20px;">
+                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Total billed</p>
+                    <p style="margin: 0 0 6px 0; font-size: 26px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalBilled)}</p>
+                    <p style="margin: 0; font-size: 12px; line-height: 18px; color: rgba(255,255,255,0.7); font-family: Georgia, 'Times New Roman', serif;">${coverageSentence(summary)} ${basisLabel(summary)}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>`
+
+  const unpriced = unbenchmarkedSentence(summary)
+  const unbenchmarkedHtml = unpriced
+    ? `
+          <tr>
+            <td style="padding: 20px 36px 0 36px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #FFFCF9; border-radius: 8px; border: 1px solid #d6cfc5;">
+                <tr>
+                  <td style="padding: 14px 18px;">
+                    <p style="margin: 0; font-size: 13px; line-height: 20px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">${unpriced}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>`
     : ''
 
   return `<!DOCTYPE html>
@@ -160,48 +245,25 @@ export function buildBillAnalysisHtml(props: BillAnalysisEmailProps): string {
             <td style="padding: 24px 36px 20px 36px;">
               <p style="margin: 0 0 14px 0; font-size: 17px; line-height: 28px; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">${greeting}</p>
               <p style="margin: 0; font-size: 16px; line-height: 26px; color: #44403c; font-family: Georgia, 'Times New Roman', serif;">
-                We analyzed your bill from <strong style="color: #1C1A16;">${provider.name}</strong> and found <strong style="color: #dc2626;">${formatMoney(summary.totalOvercharge)}</strong> in potential savings${summary.errorsFound > 0 ? `, with ${summary.errorsFound} billing error${summary.errorsFound > 1 ? 's' : ''} flagged` : ''}.${letterMention}
+                ${leadParagraph}
               </p>
             </td>
           </tr>
 
-          <!-- Summary card — 2-col top (Billed | Federal) + full-width bottom (Savings) -->
-          <tr>
-            <td style="padding: 0 36px;">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #134e4a; border-radius: 8px;">
-                <tr>
-                  <!-- Total Billed -->
-                  <td style="width: 50%; padding: 20px 12px 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.15); border-right: 1px solid rgba(255,255,255,0.15); vertical-align: top;">
-                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Total billed</p>
-                    <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalBilled)}</p>
-                  </td>
-                  <!-- Federal Rate -->
-                  <td style="width: 50%; padding: 20px 20px 16px 12px; border-bottom: 1px solid rgba(255,255,255,0.15); vertical-align: top;">
-                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Federal rate</p>
-                    <p style="margin: 0; font-size: 22px; font-weight: 700; color: #ffffff; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalMedicareRate)}</p>
-                  </td>
-                </tr>
-                <tr>
-                  <!-- Potential Savings — full width, highlighted -->
-                  <td colspan="2" style="padding: 16px 20px 20px 20px;">
-                    <p style="margin: 0 0 4px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); font-family: Georgia, 'Times New Roman', serif;">Potential savings</p>
-                    <p style="margin: 0; font-size: 28px; font-weight: 700; color: #fca5a5; font-family: Georgia, 'Times New Roman', serif;">${formatMoney(summary.totalOvercharge)}</p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+          ${summaryCardHtml}
+          ${unbenchmarkedHtml}
 
           <!-- Flagged line items -->
           ${topItems.length > 0 ? `
           <tr>
             <td style="padding: 28px 36px 0 36px;">
-              <p style="margin: 0 0 12px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Flagged charges</p>
+              <p style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #1C1A16; font-family: Georgia, 'Times New Roman', serif;">Charges worth asking about</p>
+              <p style="margin: 0 0 12px 0; font-size: 13px; line-height: 19px; color: #78716c; font-family: Georgia, 'Times New Roman', serif;">Questions to raise, not findings of error.</p>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td style="padding: 6px 8px 6px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; border-bottom: 1px solid #d6cfc5;">Item</td>
                   <td style="padding: 6px 8px 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5; white-space: nowrap;">Billed</td>
-                  <td style="padding: 6px 0 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5; white-space: nowrap;">Federal</td>
+                  <td style="padding: 6px 0 6px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #78716c; font-family: Georgia, 'Times New Roman', serif; text-align: right; border-bottom: 1px solid #d6cfc5; white-space: nowrap;">Medicare</td>
                 </tr>
                 ${lineItemRows}
                 ${remainingRow}

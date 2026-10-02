@@ -23,6 +23,10 @@ import {
   buildBillAnalysisSubject,
   buildBillAnalysisHtml,
 } from '@/emails/BillAnalysisEmail'
+import {
+  buildAllowedFigures,
+  scrubOutbound,
+} from '@/lib/bill-analyzer/outbound-guard'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -113,6 +117,18 @@ export async function POST(request: NextRequest) {
       letterGenerated: !!letterText,
       resultId,
     })
+
+    // Nothing with an untraceable dollar figure gets emailed. Font sizes and
+    // pixel widths in the inline CSS are not dollar figures, so only amounts
+    // written with a $ are checked.
+    const guard = scrubOutbound(html, buildAllowedFigures(analysis))
+    if (!guard.ok) {
+      console.error('Analysis email blocked — untraceable figures:', guard.violations)
+      return NextResponse.json(
+        { error: 'Failed to send email' },
+        { status: 500 }
+      )
+    }
 
     // Build attachments: PDF + DOCX
     const attachments: Array<{ filename: string; content: Buffer }> = []
