@@ -8,6 +8,13 @@ import { checkEligibility } from '@/lib/eligibility'
 import type { ProgramResult } from '@/lib/eligibility'
 import { setPendingFile, getPendingFile, clearPendingFile } from '@/lib/bill-analyzer/fileStore'
 import { isBrokerAcaState } from '@/lib/ffm-states'
+import {
+  CharityCareCard,
+  LineItemsCard,
+  SummaryCard,
+  UnbenchmarkedNote,
+  WhatThisIsPanel,
+} from '@/components/bill-analyzer/BillResults'
 
 type Step = 'upload' | 'about-you' | 'analyzing' | 'results' | 'letter'
 type InsuranceStatus = 'yes' | 'no' | 'not_sure' | ''
@@ -270,12 +277,18 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
         }),
       })
       const data = await res.json()
-      const text = data.text ?? ''
+      const text = typeof data.text === 'string' ? data.text.trim() : ''
+      // An empty letter is a failure, not a letter. Never advance into the
+      // letter step with nothing in it.
+      if (!res.ok || !text) {
+        setError(data.error ?? 'Failed to generate letter. Please try again.')
+        return
+      }
       setLetterText(text)
       setLetterFormOpen(false)
       setStep('letter')
 
-      if (email && text) {
+      if (email) {
         sendAnalysisEmail(text)
       }
     } catch {
@@ -818,123 +831,23 @@ export default function BillAnalyzer({ mode = 'landing' }: { mode?: Mode }) {
 
   // ── RESULTS ─────────────────────────────────────────────────
   if (step === 'results' && result) {
-    const savings = result.summary.totalOvercharge
-    const hasRates = result.summary.lineItemsWithRates > 0
-
     return (
       <div className="max-w-2xl mx-auto space-y-6" style={{ overflowAnchor: 'none' }}>
-        {/* Summary card */}
-        <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border-light)' }}>
-          <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, var(--primary-deeper), var(--primary-dark))' }}>
-            <p className="text-sm text-white/70 mb-1">Analysis Complete</p>
-            <p className="text-lg font-semibold text-white">{result.provider.name}</p>
-          </div>
-          <div className="bg-white px-6 py-5">
-            <div className={`grid ${hasRates ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-1'} gap-6`}>
-              <div>
-                <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Total billed</p>
-                <p className="text-2xl font-bold text-[var(--text-primary)]">${result.summary.totalBilled.toLocaleString()}</p>
-              </div>
-              {hasRates && (
-                <>
-                  <div>
-                    <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Federal rate</p>
-                    <p className="text-2xl font-bold text-[var(--text-primary)]">${result.summary.totalMedicareRate.toLocaleString()}</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium text-[var(--text-muted)] uppercase tracking-wide mb-1">Potential savings</p>
-                    <p className="text-2xl font-bold" style={{ color: 'var(--error)' }}>${savings.toLocaleString()}</p>
-                  </div>
-                </>
-              )}
-            </div>
-            {result.summary.errorsFound > 0 && (
-              <div className="mt-4 px-4 py-3 rounded-lg text-sm font-medium" style={{ background: 'var(--warning-light)', color: 'var(--warning)' }}>
-                {result.summary.errorsFound} billing error{result.summary.errorsFound > 1 ? 's' : ''} detected
-              </div>
-            )}
-          </div>
-        </div>
+        <WhatThisIsPanel />
 
-        {/* Line items */}
-        <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
-          <div className="px-6 py-4 border-b border-[var(--border-light)]">
-            <h3 className="text-lg font-semibold text-[var(--text-primary)]">Line-by-line breakdown</h3>
-            <p className="text-sm text-[var(--text-muted)]">Each charge compared to the federal payment rate</p>
-          </div>
-          <div className="divide-y divide-[var(--border-light)]">
-            {result.lineItems.map((item, i) => (
-              <div key={i} className="px-6 py-4">
-                <div className="flex justify-between items-start gap-4">
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-[var(--text-primary)]">{item.description}</p>
-                    {item.flags.length > 0 && (
-                      <div className="flex flex-wrap gap-2 mt-2">
-                        {item.flags.map((flag, fi) => (
-                          <span key={fi} className="inline-flex items-center gap-1 text-xs font-medium px-2.5 py-1 rounded-full" style={{
-                            background: flag.severity === 'high' ? 'var(--error-light)' : 'var(--warning-light)',
-                            color: flag.severity === 'high' ? 'var(--error)' : 'var(--warning)',
-                          }}>
-                            {flag.explanation}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                  <div className="text-right shrink-0">
-                    <p className="text-sm font-semibold text-[var(--text-primary)]">${item.billedAmount.toLocaleString()}</p>
-                    {item.medicareRate != null && (
-                      <p className="text-xs mt-1 text-[var(--text-muted)]">Federal: ${item.medicareRate.toLocaleString()}</p>
-                    )}
-                    {item.overchargeAmount != null && item.overchargeAmount > 0 && (
-                      <p className="text-xs font-medium mt-1" style={{ color: 'var(--error)' }}>
-                        +${item.overchargeAmount.toLocaleString()} ({item.overchargePercent}% over)
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <SummaryCard providerName={result.provider.name} summary={result.summary} />
 
-        {/* Charity care */}
-        {result.charityCare.hospitalIsNonprofit && (
-          <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm overflow-hidden">
-            <div className="border-l-4 p-5" style={{ borderLeftColor: 'var(--success)' }}>
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ background: 'var(--success)' }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    <path d="M5 13l4 4L19 7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-semibold text-sm text-[var(--text-primary)] mb-1">
-                    {result.charityCare.eligible ? 'You may qualify for free or reduced care' : 'This hospital has a charity care program'}
-                  </p>
-                  <p className="text-sm text-[var(--text-secondary)] mb-3">{result.charityCare.explanation}</p>
-                  <div className="bg-[var(--cream)] rounded-lg p-4">
-                    <p className="text-xs font-medium text-[var(--text-primary)] mb-2 uppercase tracking-wide">Next steps</p>
-                    <ul className="space-y-1.5">
-                      {result.charityCare.nextSteps.map((s, i) => (
-                        <li key={i} className="text-sm text-[var(--text-secondary)] flex gap-2">
-                          <span className="text-[var(--success)] font-bold shrink-0">{i + 1}.</span>
-                          <span>{s}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        <UnbenchmarkedNote summary={result.summary} />
+
+        <LineItemsCard lineItems={result.lineItems} />
+
+        <CharityCareCard charityCare={result.charityCare} />
 
         {/* Generate letter */}
         <div className="bg-white border border-[var(--border-light)] rounded-xl shadow-sm p-6">
           <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-1">Dispute this bill</h3>
           <p className="text-sm text-[var(--text-muted)] mb-4">
-            Generate a formal dispute letter citing every overcharge and billing error found on your bill.
+            A formal letter that requests an itemized statement and asks the hospital to justify the specific charges worth questioning. It names the charges on your bill, not a dollar total we cannot prove.
           </p>
 
           {!letterFormOpen ? (
