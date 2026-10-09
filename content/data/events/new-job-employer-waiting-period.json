@@ -1,0 +1,642 @@
+{
+  "slug": "new-job-employer-waiting-period",
+  "eventName": {
+    "en": "Started a New Job: Employer Waiting Period",
+    "es": "Empezó un Nuevo Trabajo: Período de Espera del Empleador"
+  },
+  "category": "Plan Change",
+  "topic": "Bridging the employer health plan waiting period after starting a new job",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-10-09",
+  "readingTime": "9 min read",
+  "meta": {
+    "title": {
+      "en": "New Job Waiting Period 2026: Bridge the Coverage Gap",
+      "es": "Espera del Seguro en Nuevo Trabajo 2026: Cubra la Brecha"
+    },
+    "description": {
+      "en": "Employers can make you wait up to 90 days for health coverage in 2026. Compare COBRA, Marketplace, Medicaid, and spouse plans to bridge the gap.",
+      "es": "Su empleador puede hacerlo esperar hasta 90 días por seguro médico en 2026. Compare COBRA, Mercado, Medicaid y plan del cónyuge para cubrir la brecha."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Started a New Job in 2026? How to Get Health Insurance During the Waiting Period",
+      "es": "¿Empezó un Nuevo Trabajo en 2026? Cómo Tener Seguro Médico Durante el Período de Espera"
+    },
+    "subhero": {
+      "en": "Your employer can make you wait up to 90 days for health coverage in 2026. Bridge the gap with COBRA, a Marketplace plan, Medicaid, or a spouse's plan.",
+      "es": "Su empleador puede hacerlo esperar hasta 90 días por cobertura médica en 2026. Cubra la brecha con COBRA, un plan del Mercado, Medicaid o el plan de su cónyuge."
+    }
+  },
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "Your employer must start your coverage within 90 days of your eligibility date",
+      "es": "Su empleador debe iniciar su cobertura dentro de 90 días desde su fecha de elegibilidad"
+    },
+    "body": {
+      "en": "A new hire who becomes eligible on November 2, 2026 must have employer coverage begin no later than January 31, 2027, the end of the 90-day waiting period cap, and every uncovered day before that is yours to bridge. If your old coverage ended October 31, 2026, your separate 60-day Marketplace SEP runs November 1 through December 30, 2026, and you may start picking a plan up to 60 days before the loss. Miss that window and you wait for 2027 Open Enrollment (November 1, 2026 to January 15, 2027 on HealthCare.gov) or for your employer plan, whichever starts first.",
+      "es": "Un nuevo empleado que es elegible el 2 de noviembre de 2026 debe tener cobertura del empleador a más tardar el 31 de enero de 2027, el límite del período de espera de 90 días, y cada día sin cobertura antes de esa fecha lo debe cubrir usted. Si su cobertura anterior terminó el 31 de octubre de 2026, su SEP separado de 60 días del Mercado va del 1 de noviembre al 30 de diciembre de 2026, y puede elegir un plan hasta 60 días antes de la pérdida. Si pierde esa ventana, espera la Inscripción Abierta 2027 (1 de noviembre de 2026 al 15 de enero de 2027 en HealthCare.gov) o su plan del empleador, lo que empiece primero."
+    },
+    "totalTimeISO8601": "P90D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Marketplace SEP after old coverage ends",
+          "es": "SEP del Mercado cuando termina la cobertura anterior"
+        },
+        "days": 60
+      },
+      {
+        "label": {
+          "en": "COBRA election window",
+          "es": "Ventana de elección de COBRA"
+        },
+        "days": 60
+      },
+      {
+        "label": {
+          "en": "Spouse's employer plan special enrollment",
+          "es": "Inscripción especial en el plan del empleador del cónyuge"
+        },
+        "days": 30
+      },
+      {
+        "label": {
+          "en": "Medicaid and CHIP (if income qualifies)",
+          "es": "Medicaid y CHIP (si el ingreso califica)"
+        },
+        "days": null
+      }
+    ]
+  },
+  "quickAnswer": {
+    "en": "Starting a new job in 2026 does not trigger a Marketplace Special Enrollment Period (SEP), but federal law caps the employer waiting period at 90 days. Your four bridge options are COBRA from your old employer (102% of the full premium in 2026, about $400 to $900/mo individual), a Marketplace plan through a 60-day loss-of-coverage SEP or 2027 Open Enrollment, Medicaid or CHIP if your 2026 income qualifies, or a spouse's employer plan within 30 days. Coverage from your new employer must start no later than day 90 after you become eligible, so a November 2, 2026 start means January 31, 2027 at the latest.",
+    "es": "Empezar un nuevo trabajo en 2026 no activa un Período de Inscripción Especial (SEP) del Mercado, pero la ley federal limita la espera del empleador a 90 días. Sus cuatro opciones puente son COBRA de su empleador anterior (102% de la prima completa en 2026, unos $400 a $900/mes individual), un plan del Mercado mediante un SEP de 60 días por pérdida de cobertura o la Inscripción Abierta 2027, Medicaid o CHIP si su ingreso de 2026 califica, o el plan del empleador de su cónyuge en 30 días. La cobertura de su nuevo empleador debe comenzar a más tardar el día 90 después de ser elegible, así que un inicio el 2 de noviembre de 2026 significa el 31 de enero de 2027 como máximo."
+  },
+  "introParagraphs": [
+    {
+      "en": "A new job in 2026 rarely brings health insurance on day one. Federal law under the Affordable Care Act caps the employer waiting period at 90 calendar days, so a worker who becomes eligible on November 2, 2026 must have employer coverage begin no later than January 31, 2027. Until then, the new hire is uninsured unless a bridge plan fills the gap. Starting a job is not a qualifying life event for a Marketplace Special Enrollment Period (SEP), which surprises many people who assume a new employer or a coverage gap automatically opens enrollment. Your bridge options depend on what happened to your prior coverage: COBRA from the old employer, a spouse's plan, Medicaid or CHIP if income is low, a Marketplace plan through a loss-of-coverage SEP or 2027 Open Enrollment, or a short-term plan with real limits. The waiting period also applies to dependents, so a spouse and children face the same gap. This page walks through the 90-day rule, the clocks that start when old coverage ends, and the cheapest way to cover each week of the gap, using 2026 rules from healthcare.gov, dol.gov, and medicaid.gov.",
+      "es": "Un nuevo trabajo en 2026 rara vez trae seguro médico desde el primer día. La ley federal bajo la Ley de Cuidado de Salud a Bajo Precio limita el período de espera del empleador a 90 días calendario, así que un trabajador elegible el 2 de noviembre de 2026 debe tener cobertura del empleador a más tardar el 31 de enero de 2027. Hasta entonces, el nuevo empleado está sin seguro a menos que un plan puente cubra la brecha. Empezar un trabajo no es un evento calificador de vida para un Período de Inscripción Especial (SEP) del Mercado, lo cual sorprende a quienes creen que un nuevo empleador o una brecha de cobertura abre la inscripción automáticamente. Sus opciones puente dependen de lo que pasó con su cobertura anterior: COBRA del empleador anterior, el plan de un cónyuge, Medicaid o CHIP si el ingreso es bajo, un plan del Mercado mediante un SEP por pérdida de cobertura o la Inscripción Abierta 2027, o un plan de corto plazo con límites reales. El período de espera también aplica a los dependientes, por lo que un cónyuge e hijos enfrentan la misma brecha. Esta página explica la regla de 90 días, los plazos que empiezan cuando termina la cobertura anterior y la forma más económica de cubrir cada semana de la brecha, con reglas de 2026 de healthcare.gov, dol.gov y medicaid.gov."
+    },
+    {
+      "en": "The calendar works in your favor in October 2026. ACA Open Enrollment for 2027 coverage opens November 1, 2026 and HealthCare.gov accepts applications through January 15, 2027, with January 1, 2027 coverage when you enroll by December 15, 2026. Many November hires can therefore buy a Marketplace plan for January 1 and need a short bridge only for November and December, such as COBRA or a short-term plan. Hires whose prior coverage ended in 2026 hold a separate 60-day Marketplace SEP. The core trade-off is cost against risk: one unplanned emergency room visit can exceed several months of premiums, and the 2026 out-of-pocket maximum for Marketplace plans is $10,600 for an individual. Once employer coverage begins, a Marketplace plan with premium tax credits generally must end, and credits received for months you were eligible for affordable employer coverage are repaid when you file Form 8962 with your 1095-A. Plan affordability and minimum value decide whether you keep subsidies after your new employer plan starts.",
+      "es": "El calendario le favorece en octubre de 2026. La Inscripción Abierta del ACA para cobertura 2027 abre el 1 de noviembre de 2026 y HealthCare.gov acepta solicitudes hasta el 15 de enero de 2027, con cobertura desde el 1 de enero de 2027 si se inscribe antes del 15 de diciembre de 2026. Muchos empleados contratados en noviembre pueden comprar un plan del Mercado para el 1 de enero y necesitar un puente corto solo para noviembre y diciembre, como COBRA o un plan de corto plazo. Quienes perdieron cobertura anterior en 2026 tienen un SEP separado de 60 días del Mercado. El equilibrio central es costo contra riesgo: una visita imprevista a emergencias puede superar varios meses de primas, y el máximo de gastos de bolsillo del Mercado en 2026 es $10,600 para un individuo. Cuando empieza la cobertura del empleador, un plan del Mercado con créditos fiscales de prima generalmente debe terminar, y los créditos recibidos por meses en que era elegible para cobertura asequible del empleador se reembolsan al presentar el Formulario 8962 con su 1095-A. La asequibilidad y el valor mínimo del plan deciden si conserva los subsidios cuando empiece su plan del nuevo empleador."
+    }
+  ],
+  "steps": [
+    {
+      "name": {
+        "en": "Get your eligibility date and plan start date in writing",
+        "es": "Obtenga por escrito su fecha de elegibilidad y de inicio del plan"
+      },
+      "text": {
+        "en": "Ask HR for a written statement of your eligibility date, any orientation period, and your first day of employer coverage. Compare that date to the 90-day cap under the ACA so you know exactly how many uncovered days you must bridge.",
+        "es": "Pida a Recursos Humanos una declaración escrita de su fecha de elegibilidad, cualquier período de orientación y su primer día de cobertura del empleador. Compare esa fecha con el límite de 90 días del ACA para saber cuántos días sin cobertura debe cubrir."
+      }
+    },
+    {
+      "name": {
+        "en": "Confirm when your old coverage ends and start the 60-day clocks",
+        "es": "Confirme cuándo termina su cobertura anterior e inicie los relojes de 60 días"
+      },
+      "text": {
+        "en": "Check your termination letter or COBRA notice for the exact last day of coverage. That date starts both your 60-day COBRA election window and your 60-day Marketplace SEP, and you can submit a Marketplace application up to 60 days before the loss.",
+        "es": "Revise su carta de terminación o aviso de COBRA para ver el último día exacto de cobertura. Esa fecha inicia su ventana de 60 días para elegir COBRA y su SEP de 60 días del Mercado, y puede enviar una solicitud al Mercado hasta 60 días antes de la pérdida."
+      }
+    },
+    {
+      "name": {
+        "en": "Check Medicaid and CHIP with your 2026 income",
+        "es": "Verifique Medicaid y CHIP con su ingreso de 2026"
+      },
+      "text": {
+        "en": "Apply at healthcare.gov or your state Medicaid agency, such as Medi-Cal, AHCCCS, or MassHealth, using your projected 2026 monthly income. Medicaid and CHIP enrollment is year-round and a new salary under 138% FPL for 2026 may qualify you for free coverage during the waiting period.",
+        "es": "Solicite en healthcare.gov o en su agencia estatal de Medicaid, como Medi-Cal, AHCCCS o MassHealth, usando su ingreso mensual proyectado de 2026. La inscripción en Medicaid y CHIP es todo el año y un nuevo salario bajo el 138% del FPL de 2026 puede darle cobertura gratuita durante la espera."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare Marketplace plans through the SEP or 2027 Open Enrollment",
+        "es": "Compare planes del Mercado mediante el SEP o la Inscripción Abierta 2027"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov and report your coverage loss date to use the Marketplace SEP. If you had no prior coverage, wait for Open Enrollment starting November 1, 2026 and select a plan by December 15, 2026 for January 1, 2027 coverage.",
+        "es": "Inicie sesión en healthcare.gov e informe la fecha de pérdida de cobertura para usar el SEP del Mercado. Si no tenía cobertura anterior, espere la Inscripción Abierta que comienza el 1 de noviembre de 2026 y elija un plan antes del 15 de diciembre de 2026 para cobertura desde el 1 de enero de 2027."
+      }
+    },
+    {
+      "name": {
+        "en": "Call your spouse's employer about a 30-day special enrollment",
+        "es": "Llame al empleador de su cónyuge sobre una inscripción especial de 30 días"
+      },
+      "text": {
+        "en": "Request enrollment in your spouse's group plan within 30 days of losing other coverage under federal HIPAA special enrollment rules. Compare the employee-plus-spouse premium and network with your best Marketplace option before you decide.",
+        "es": "Solicite la inscripción en el plan grupal de su cónyuge dentro de 30 días de perder otra cobertura bajo las reglas federales de inscripción especial de HIPAA. Compare la prima de empleado más cónyuge y la red con su mejor opción del Mercado antes de decidir."
+      }
+    },
+    {
+      "name": {
+        "en": "Elect COBRA only for the months a gap would be risky",
+        "es": "Elija COBRA solo por los meses en que una brecha sería riesgosa"
+      },
+      "text": {
+        "en": "Fill out the COBRA election form within 60 days and pay the first premium within 45 days of electing. COBRA coverage is retroactive to the day your old plan ended, so elect it only if a claim is likely, and cancel it when new coverage starts.",
+        "es": "Complete el formulario de elección de COBRA dentro de 60 días y pague la primera prima dentro de 45 días de elegir. La cobertura COBRA es retroactiva al día en que terminó su plan anterior, así que elíjala solo si es probable un reclamo y cancélela cuando empiece la nueva cobertura."
+      }
+    },
+    {
+      "name": {
+        "en": "Enroll in the employer plan and cancel the bridge plan",
+        "es": "Inscríbase en el plan del empleador y cancele el plan puente"
+      },
+      "text": {
+        "en": "Submit your employer enrollment form before the plan's election deadline, then end your Marketplace plan on the day employer coverage begins. Keep your 1095-A and reconcile premium tax credits on Form 8962 when you file taxes.",
+        "es": "Envíe su formulario de inscripción del empleador antes de la fecha límite del plan y luego termine su plan del Mercado el día en que empiece la cobertura del empleador. Guarde su 1095-A y concilie los créditos fiscales de prima en el Formulario 8962 al presentar impuestos."
+      }
+    }
+  ],
+  "optionsComparison": {
+    "headers": {
+      "en": [
+        "Option",
+        "Typical cost",
+        "Best for",
+        "Deadline"
+      ],
+      "es": [
+        "Opción",
+        "Costo típico",
+        "Mejor para",
+        "Fecha límite"
+      ]
+    },
+    "rows": [
+      {
+        "en": [
+          "COBRA from old employer",
+          "2026: 102% of full premium, about $400 to $900/mo individual, $1,200 to $2,800/mo family",
+          "Keeping your doctors and a met deductible through the gap",
+          "Elect within 60 days of coverage loss"
+        ],
+        "es": [
+          "COBRA del empleador anterior",
+          "2026: 102% de la prima completa, unos $400 a $900/mes individual, $1,200 a $2,800/mes familia",
+          "Mantener sus médicos y un deducible cumplido durante la brecha",
+          "Elegir dentro de 60 días de la pérdida"
+        ]
+      },
+      {
+        "en": [
+          "Marketplace plan (SEP or Open Enrollment)",
+          "Varies by 2026 income and age; premium tax credits apply between 100% and 400% FPL",
+          "Gaps longer than one month with a prior coverage loss",
+          "60 days from coverage loss, or Open Enrollment from Nov 1, 2026"
+        ],
+        "es": [
+          "Plan del Mercado (SEP o Inscripción Abierta)",
+          "Varía según ingreso y edad de 2026; hay créditos fiscales entre 100% y 400% del FPL",
+          "Brechas de más de un mes con pérdida de cobertura anterior",
+          "60 días desde la pérdida, o Inscripción Abierta desde el 1 de nov. de 2026"
+        ]
+      },
+      {
+        "en": [
+          "Medicaid or CHIP",
+          "$0 to low cost in 2026 if income is under 138% FPL (children higher with CHIP)",
+          "Low starting pay or part-time hours",
+          "Year-round"
+        ],
+        "es": [
+          "Medicaid o CHIP",
+          "$0 o bajo costo en 2026 si el ingreso es menor al 138% del FPL (niños más alto con CHIP)",
+          "Salario inicial bajo u horas parciales",
+          "Todo el año"
+        ]
+      },
+      {
+        "en": [
+          "Spouse's employer plan",
+          "Employee-plus-spouse premium share, often below 2026 COBRA rates",
+          "Married workers with a covered spouse",
+          "30 days from loss of other coverage"
+        ],
+        "es": [
+          "Plan del empleador del cónyuge",
+          "Parte de la prima de empleado más cónyuge, a menudo menor que COBRA en 2026",
+          "Trabajadores casados con cónyuge asegurado",
+          "30 días desde la pérdida de otra cobertura"
+        ]
+      },
+      {
+        "en": [
+          "Short-term limited-duration plan",
+          "Lower 2026 premiums than ACA plans but no ACA protections and possible pre-existing condition denials",
+          "Healthy adults covering a gap of 1 to 3 months",
+          "Varies by state and insurer"
+        ],
+        "es": [
+          "Plan de corto plazo y duración limitada",
+          "Primas de 2026 más bajas que planes ACA pero sin protecciones del ACA y posible rechazo por condiciones preexistentes",
+          "Adultos sanos que cubren una brecha de 1 a 3 meses",
+          "Varía según estado y aseguradora"
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Costs shown are 2026 ranges and vary by state, age, income, and plan. Short-term plans may be unavailable or restricted in your state, so confirm with your state insurance department.",
+      "es": "Los costos mostrados son rangos de 2026 y varían por estado, edad, ingreso y plan. Los planes de corto plazo pueden no estar disponibles o estar restringidos en su estado, así que confirme con el departamento de seguros de su estado."
+    },
+    "source": "healthcare.gov, dol.gov (EBSA ACA FAQs and COBRA), medicaid.gov, kff.org Employer Health Benefits Survey"
+  },
+  "commonMistakes": {
+    "intro": {
+      "en": "Workers bridging a new-job waiting period make these costly errors in 2026:",
+      "es": "Los trabajadores que cubren la espera de un nuevo trabajo cometen estos errores costosos en 2026:"
+    },
+    "items": [
+      {
+        "en": "Assuming the new job opens a Marketplace SEP. Starting work is not a qualifying life event, so only a loss of prior coverage or Open Enrollment lets you buy a plan.",
+        "es": "Asumir que el nuevo trabajo abre un SEP del Mercado. Empezar a trabajar no es un evento calificador de vida, así que solo la pérdida de cobertura anterior o la Inscripción Abierta le permite comprar un plan."
+      },
+      {
+        "en": "Letting the 60-day COBRA and SEP clocks run while waiting for HR. Both windows start on your last coverage day, not on your first paycheck.",
+        "es": "Dejar correr los relojes de 60 días de COBRA y del SEP mientras espera a Recursos Humanos. Ambas ventanas empiezan en su último día de cobertura, no con su primer pago."
+      },
+      {
+        "en": "Skipping bridge coverage entirely. One 2026 emergency visit can cost more than the 90-day gap in premiums.",
+        "es": "Omitir por completo la cobertura puente. Una visita de emergencia en 2026 puede costar más que las primas de los 90 días de brecha."
+      },
+      {
+        "en": "Keeping Marketplace premium tax credits after employer coverage starts. Credits for months you could have enrolled in affordable employer coverage must be repaid on Form 8962.",
+        "es": "Conservar los créditos fiscales de prima del Mercado después de que empiece la cobertura del empleador. Los créditos de meses en que pudo inscribirse en cobertura asequible del empleador deben reembolsarse en el Formulario 8962."
+      },
+      {
+        "en": "Buying a short-term plan without reading the exclusions. Short-term plans can deny pre-existing conditions and skip essential health benefits.",
+        "es": "Comprar un plan de corto plazo sin leer las exclusiones. Los planes de corto plazo pueden negar condiciones preexistentes y omitir beneficios esenciales de salud."
+      },
+      {
+        "en": "Forgetting the employer enrollment deadline. Most plans give 30 days after your eligibility date, and missing it can mean waiting for the next employer open enrollment.",
+        "es": "Olvidar la fecha límite de inscripción del empleador. La mayoría de los planes dan 30 días después de su fecha de elegibilidad, y perderla puede significar esperar la próxima inscripción abierta del empleador."
+      }
+    ]
+  },
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid and ACA subsidy income limits, 2026 (48 contiguous states + DC)",
+      "headers": [
+        "Household size",
+        "138% FPL (Medicaid, 2026)",
+        "400% FPL (subsidy ceiling, 2026)"
+      ],
+      "rows": [
+        [
+          "1",
+          "$22,025",
+          "$63,840"
+        ],
+        [
+          "2",
+          "$29,820",
+          "$86,400"
+        ],
+        [
+          "3",
+          "$37,615",
+          "$108,960"
+        ],
+        [
+          "4",
+          "$45,540",
+          "$132,000"
+        ],
+        [
+          "5",
+          "$53,335",
+          "$154,560"
+        ],
+        [
+          "6",
+          "$61,130",
+          "$177,120"
+        ],
+        [
+          "7",
+          "$68,925",
+          "$199,680"
+        ],
+        [
+          "8",
+          "$76,720",
+          "$222,240"
+        ],
+        [
+          "Each additional person",
+          "+ $7,795",
+          "+ $22,560"
+        ]
+      ],
+      "footnote": "Alaska and Hawaii thresholds are higher. The 400% FPL subsidy cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026. Use projected income for the months you will be uncovered and employed.",
+      "source": "HHS ASPE 2026 Poverty Guidelines; CMS and IRS premium tax credit thresholds"
+    },
+    "es": {
+      "caption": "Límites de ingresos de Medicaid y subsidios ACA, 2026 (48 estados contiguos + DC)",
+      "headers": [
+        "Tamaño del hogar",
+        "138% del FPL (Medicaid, 2026)",
+        "400% del FPL (límite de subsidio, 2026)"
+      ],
+      "rows": [
+        [
+          "1",
+          "$22,025",
+          "$63,840"
+        ],
+        [
+          "2",
+          "$29,820",
+          "$86,400"
+        ],
+        [
+          "3",
+          "$37,615",
+          "$108,960"
+        ],
+        [
+          "4",
+          "$45,540",
+          "$132,000"
+        ],
+        [
+          "5",
+          "$53,335",
+          "$154,560"
+        ],
+        [
+          "6",
+          "$61,130",
+          "$177,120"
+        ],
+        [
+          "7",
+          "$68,925",
+          "$199,680"
+        ],
+        [
+          "8",
+          "$76,720",
+          "$222,240"
+        ],
+        [
+          "Cada persona adicional",
+          "+ $7,795",
+          "+ $22,560"
+        ]
+      ],
+      "footnote": "Los umbrales de Alaska y Hawái son más altos. El límite de subsidio del 400% del FPL regresó en 2026 después de que los créditos fiscales de prima mejorados vencieron el 1 de enero de 2026. Use el ingreso proyectado para los meses en que estará sin cobertura y empleado.",
+      "source": "HHS ASPE Pautas de Pobreza 2026; umbrales de créditos fiscales de CMS e IRS"
+    }
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "How the 90-Day Employer Waiting Period Rule Works in 2026",
+        "es": "Cómo Funciona la Regla del Período de Espera de 90 Días en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Federal ACA rules, codified at 29 CFR 2590.715-2708 and enforced by the Department of Labor, prohibit any group health plan from imposing a waiting period longer than 90 calendar days. The clock counts every day including weekends and holidays, and the plan may not extend it because day 90 lands on a Saturday. A waiting period begins on the date you meet the plan's eligibility conditions, such as full-time status or a job category, and an employer may require a reasonable orientation period of up to one month before that clock starts. For a worker eligible on November 2, 2026, the latest legal coverage start is January 31, 2027. Plans that tie eligibility to hours worked, such as a 130-hour monthly threshold for variable-hour employees, follow separate measurement-period rules that can run longer. Many employers start coverage on the first of the month after 30 or 60 days, so ask HR which rule applies to you and whether the dependents' coverage starts the same day. The dol.gov ACA FAQ Part IV and healthcare.gov both publish the official language.",
+          "es": "Las reglas federales del ACA, codificadas en 29 CFR 2590.715-2708 y aplicadas por el Departamento de Trabajo, prohíben que un plan grupal de salud imponga un período de espera mayor de 90 días calendario. El reloj cuenta todos los días, incluidos fines de semana y feriados, y el plan no puede extenderlo porque el día 90 caiga en sábado. El período de espera comienza en la fecha en que usted cumple las condiciones de elegibilidad del plan, como estatus de tiempo completo o una categoría de empleo, y un empleador puede exigir un período de orientación razonable de hasta un mes antes de que empiece ese reloj. Para un trabajador elegible el 2 de noviembre de 2026, el último inicio legal de cobertura es el 31 de enero de 2027. Los planes que vinculan la elegibilidad con horas trabajadas, como un umbral de 130 horas mensuales para empleados de horario variable, siguen reglas separadas de período de medición que pueden durar más. Muchos empleadores inician la cobertura el primer día del mes después de 30 o 60 días, así que pregunte a Recursos Humanos qué regla le aplica y si la cobertura de los dependientes empieza el mismo día. Las preguntas frecuentes de ACA Parte IV en dol.gov y healthcare.gov publican el texto oficial."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "COBRA vs Marketplace vs Spouse's Plan vs Short-Term Plan: Which Should You Choose in 2026?",
+        "es": "COBRA vs Mercado vs Plan del Cónyuge vs Plan de Corto Plazo: ¿Cuál Elegir en 2026?"
+      },
+      "paragraphs": [
+        {
+          "en": "After leaving a prior employer, four pathways bridge the new-job waiting period in 2026. COBRA preserves your old plan at 102% of the full premium in 2026, typically $400 to $900/mo for an individual and $1,200 to $2,800/mo for a family, and it is retroactive, so you can elect it only if you actually need care. Marketplace plans bought through the 60-day SEP or 2027 Open Enrollment often cost less in 2026 once premium tax credits apply, though you may change providers and your plan starts the first of the month after selection. A spouse's employer plan frequently beats both on price if your spouse's employer offers a 30-day special enrollment. Short-term limited-duration plans cost less per month but sit outside ACA protections, and the 2024 federal rule capping them at 4 months total has had enforcement paused since August 2025 while the agencies rewrite it, so state law decides what you can buy. The practical order for 2026: Medicaid or CHIP first if income qualifies, then a spouse's plan, then a Marketplace plan with subsidies, then COBRA for the shortest necessary stretch, and a short-term plan only for a healthy adult with a gap of a few weeks.",
+          "es": "Después de dejar un empleador anterior, cuatro caminos cubren la espera del nuevo trabajo en 2026. COBRA conserva su plan anterior al 102% de la prima completa en 2026, normalmente $400 a $900/mes para un individuo y $1,200 a $2,800/mes para una familia, y es retroactivo, por lo que puede elegirlo solo si realmente necesita atención. Los planes del Mercado comprados mediante el SEP de 60 días o la Inscripción Abierta 2027 a menudo cuestan menos en 2026 con los créditos fiscales de prima, aunque puede cambiar de proveedores y su plan empieza el primer día del mes siguiente a la selección. El plan del empleador de un cónyuge con frecuencia supera a ambos en precio si ese empleador ofrece una inscripción especial de 30 días. Los planes de corto plazo y duración limitada cuestan menos al mes pero quedan fuera de las protecciones del ACA, y la regla federal de 2024 que los limita a 4 meses en total tiene la aplicación en pausa desde agosto de 2025 mientras las agencias la reescriben, así que la ley estatal decide qué puede comprar. El orden práctico para 2026: primero Medicaid o CHIP si el ingreso califica, luego el plan de un cónyuge, luego un plan del Mercado con subsidios, luego COBRA por el tramo más corto necesario, y un plan de corto plazo solo para un adulto sano con una brecha de pocas semanas."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid and CHIP During the Waiting Period in 2026",
+        "es": "Medicaid y CHIP Durante el Período de Espera en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid eligibility turns on current monthly income, so a new employee still waiting on employer coverage may qualify even with a salary offer on file. In the 40 expansion states plus DC, the 2026 limit is 138% of the Federal Poverty Level, or $22,025 for one person and $45,540 for a family of 4 in 2026. State programs go by local brands: California's Medi-Cal, Arizona's AHCCCS, Massachusetts's MassHealth, Wisconsin's BadgerCare, Connecticut's HUSKY Health, and New Jersey's NJ FamilyCare. Ten states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming) have not expanded Medicaid, leaving a coverage gap for adults below 100% FPL in 2026. Children often qualify for CHIP at household incomes of 200% to 300% FPL in 2026 even when parents do not, and CHIP enrollment runs year-round. Apply at healthcare.gov or your state agency listed on medicaid.gov, and report the new salary when your employer coverage starts so the state can end or coordinate benefits.",
+          "es": "La elegibilidad para Medicaid depende del ingreso mensual actual, así que un nuevo empleado que aún espera cobertura del empleador puede calificar aunque tenga una oferta salarial. En los 40 estados con expansión más DC, el límite de 2026 es el 138% del Nivel Federal de Pobreza, es decir $22,025 para una persona y $45,540 para una familia de 4 en 2026. Los programas estatales tienen marcas locales: Medi-Cal en California, AHCCCS en Arizona, MassHealth en Massachusetts, BadgerCare en Wisconsin, HUSKY Health en Connecticut y NJ FamilyCare en Nueva Jersey. Diez estados (Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming) no han expandido Medicaid, lo que deja una brecha de cobertura para adultos bajo el 100% del FPL en 2026. Los niños a menudo califican para CHIP con ingresos del hogar de 200% a 300% del FPL en 2026 aunque los padres no, y la inscripción en CHIP es todo el año. Solicite en healthcare.gov o en la agencia estatal listada en medicaid.gov, e informe el nuevo salario cuando empiece su cobertura del empleador para que el estado termine o coordine los beneficios."
+        }
+      ]
+    }
+  ],
+  "documentsNeeded": {
+    "en": [
+      "Offer letter or HR statement showing your hire date, eligibility date, and employer coverage start date",
+      "Termination letter, COBRA election notice, or insurer letter showing the last day of your prior coverage",
+      "Recent pay stubs, offer-letter salary, or unemployment award letter to estimate 2026 household income",
+      "Social Security numbers or document numbers for everyone applying",
+      "Current address and ZIP code to confirm Marketplace plan availability",
+      "Employer plan summary of benefits and premium cost, to test affordability and minimum value before you cancel a subsidized plan"
+    ],
+    "es": [
+      "Carta de oferta o declaración de Recursos Humanos con su fecha de contratación, fecha de elegibilidad y fecha de inicio de cobertura del empleador",
+      "Carta de terminación, aviso de elección de COBRA o carta de la aseguradora con el último día de su cobertura anterior",
+      "Talones de pago recientes, salario de la carta de oferta o carta de beneficios por desempleo para estimar el ingreso del hogar de 2026",
+      "Números de Seguro Social o de documentos de todos los solicitantes",
+      "Dirección actual y código postal para confirmar los planes disponibles en el Mercado",
+      "Resumen de beneficios y costo de la prima del plan del empleador, para evaluar asequibilidad y valor mínimo antes de cancelar un plan subsidiado"
+    ]
+  },
+  "commonDenialReasons": {
+    "en": [
+      "Applying for a Marketplace SEP based only on starting a new job, which is not a qualifying life event",
+      "Missing the 60-day window after prior coverage ended, or lacking a termination letter to prove the loss date",
+      "Reporting the old salary instead of projected 2026 income, which changes premium tax credit and Medicaid results",
+      "Voluntarily dropping prior coverage or losing it for nonpayment, which does not trigger the loss-of-coverage SEP",
+      "Skipping the COBRA premium deadline, which cancels the election even after it was submitted"
+    ],
+    "es": [
+      "Solicitar un SEP del Mercado solo por empezar un nuevo trabajo, lo cual no es un evento calificador de vida",
+      "Perder la ventana de 60 días después de terminar la cobertura anterior, o no tener una carta de terminación que pruebe la fecha de pérdida",
+      "Informar el salario anterior en vez del ingreso proyectado de 2026, lo que cambia el resultado del crédito fiscal de prima y de Medicaid",
+      "Cancelar voluntariamente la cobertura anterior o perderla por falta de pago, lo cual no activa el SEP por pérdida de cobertura",
+      "Omitir la fecha límite de pago de la prima de COBRA, lo que cancela la elección aunque ya se haya enviado"
+    ]
+  },
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the longest waiting period an employer can require for health insurance?",
+        "answer": "Federal ACA rules cap the employer waiting period at 90 calendar days from the date you become eligible, with no extension for weekends or holidays, per the Department of Labor at dol.gov. A worker eligible on November 2, 2026 must have coverage begin by January 31, 2027. Employers may add an orientation period of up to one month before the clock starts, and variable-hour employees follow separate measurement-period rules. Many employers start coverage sooner, on the first of the month after 30 or 60 days, so ask HR for the exact written start date."
+      },
+      {
+        "question": "Does starting a new job give me a Special Enrollment Period?",
+        "answer": "Starting a new job is not a qualifying life event, so it does not open a Marketplace Special Enrollment Period by itself. A loss of prior coverage does: you have a 60-day window from the last day of your old plan to enroll at healthcare.gov, and you can apply up to 60 days before it ends. Without a loss of coverage, you wait for 2027 Open Enrollment, which begins November 1, 2026. Medicaid and CHIP remain open year-round regardless of the job change."
+      },
+      {
+        "question": "How do I document the coverage gap for a Marketplace SEP?",
+        "answer": "Upload a termination letter, COBRA notice, or insurer letter showing the last day of your prior coverage when healthcare.gov requests proof. The Marketplace usually asks for documents within 30 days of your application. Keep your offer letter with the hire and eligibility dates, plus pay stubs or the offer salary to estimate 2026 income. If you were uninsured before the job, no document can create an SEP, so plan around Open Enrollment or Medicaid instead."
+      },
+      {
+        "question": "What if I miss the 60-day SEP window after my old coverage ended?",
+        "answer": "Missing the 60-day Marketplace SEP means you cannot buy a Marketplace plan until Open Enrollment, which starts November 1, 2026 for 2027 coverage and runs through January 15, 2027 on HealthCare.gov. Enroll by December 15, 2026 for a January 1, 2027 start. Your employer plan may start before then, which ends the problem. Medicaid and CHIP stay available year-round, and COBRA has its own 60-day election window that also ends if missed."
+      },
+      {
+        "question": "What is the difference between COBRA and Marketplace for bridging a waiting period?",
+        "answer": "COBRA keeps your old plan, doctors, and met deductible at 102% of the full premium in 2026, about $400 to $900/mo for an individual, and it is retroactive to the day coverage ended. Marketplace plans start the first of the month after you choose them and may cost less after 2026 premium tax credits, but networks differ. For a gap under two months, COBRA elected only after a claim can be cheaper. For three months or more, a subsidized Marketplace plan usually wins."
+      },
+      {
+        "question": "Can I get retroactive coverage during a new-job waiting period?",
+        "answer": "COBRA is the main retroactive option: coverage reaches back to the day your old plan ended once you elect and pay within the 60-day and 45-day deadlines. Marketplace plans are not retroactive and start the first of the next month. Employer plans do not cover care before the waiting period ends. Many state Medicaid programs, such as Medi-Cal and MassHealth, can cover medical bills from up to 3 months before your application month in 2026 if you met the income rules then."
+      },
+      {
+        "question": "Do I qualify for Medicaid while waiting for my employer plan?",
+        "answer": "Medicaid looks at your current monthly income, so you may qualify during the waiting period. In expansion states the 2026 limit is 138% FPL, $22,025 for one person and $45,540 for a family of 4, as shown in the household-size table above. Apply at healthcare.gov or your state agency such as Medi-Cal, AHCCCS, or BadgerCare. Report your new salary and the employer coverage start date so the state can end or coordinate benefits."
+      },
+      {
+        "question": "What happens to my children's coverage during the waiting period?",
+        "answer": "Children face the same employer waiting period as you, but they often qualify for CHIP at household incomes of 200% to 300% FPL in 2026, even when adults do not qualify for Medicaid. CHIP enrollment is year-round, and premiums are low or zero. Your children also qualify for the Marketplace SEP if their prior coverage ended. Add dependents to the employer plan within its enrollment window, usually 30 days after your eligibility date, or you wait for the next employer open enrollment."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es el período de espera más largo que un empleador puede exigir para el seguro médico?",
+        "answer": "Las reglas federales del ACA limitan la espera del empleador a 90 días calendario desde que usted es elegible, sin extensión por fines de semana o feriados, según el Departamento de Trabajo en dol.gov. Un trabajador elegible el 2 de noviembre de 2026 debe tener cobertura a más tardar el 31 de enero de 2027. Los empleadores pueden agregar un período de orientación de hasta un mes antes de que empiece el reloj, y los empleados de horario variable siguen reglas separadas de medición. Muchos empleadores inician antes, el primer día del mes después de 30 o 60 días, así que pida a Recursos Humanos la fecha exacta por escrito."
+      },
+      {
+        "question": "¿Empezar un nuevo trabajo me da un Período de Inscripción Especial?",
+        "answer": "Empezar un nuevo trabajo no es un evento calificador de vida, así que por sí solo no abre un Período de Inscripción Especial del Mercado. Una pérdida de cobertura anterior sí: tiene 60 días desde el último día de su plan anterior para inscribirse en healthcare.gov, y puede solicitar hasta 60 días antes de que termine. Sin pérdida de cobertura, espera la Inscripción Abierta 2027, que comienza el 1 de noviembre de 2026. Medicaid y CHIP siguen abiertos todo el año sin importar el cambio de trabajo."
+      },
+      {
+        "question": "¿Cómo documento la brecha de cobertura para un SEP del Mercado?",
+        "answer": "Suba una carta de terminación, aviso de COBRA o carta de la aseguradora con el último día de su cobertura anterior cuando healthcare.gov pida pruebas. El Mercado normalmente pide documentos dentro de 30 días de su solicitud. Guarde su carta de oferta con las fechas de contratación y elegibilidad, además de talones de pago o el salario ofrecido para estimar el ingreso de 2026. Si no tenía seguro antes del trabajo, ningún documento puede crear un SEP, así que planifique con la Inscripción Abierta o Medicaid."
+      },
+      {
+        "question": "¿Qué pasa si pierdo la ventana de 60 días del SEP después de terminar mi cobertura anterior?",
+        "answer": "Perder el SEP de 60 días significa que no puede comprar un plan del Mercado hasta la Inscripción Abierta, que comienza el 1 de noviembre de 2026 para cobertura 2027 y llega hasta el 15 de enero de 2027 en HealthCare.gov. Inscríbase antes del 15 de diciembre de 2026 para que empiece el 1 de enero de 2027. Su plan del empleador puede comenzar antes, lo que resuelve el problema. Medicaid y CHIP siguen disponibles todo el año, y COBRA tiene su propia ventana de 60 días que también vence."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre COBRA y el Mercado para cubrir un período de espera?",
+        "answer": "COBRA conserva su plan anterior, médicos y deducible cumplido al 102% de la prima completa en 2026, unos $400 a $900/mes para un individuo, y es retroactivo al día en que terminó la cobertura. Los planes del Mercado empiezan el primer día del mes después de elegirlos y pueden costar menos con los créditos fiscales de prima de 2026, pero las redes difieren. Para una brecha menor de dos meses, COBRA elegido solo después de un reclamo puede ser más barato. Para tres meses o más, un plan subsidiado del Mercado suele ganar."
+      },
+      {
+        "question": "¿Puedo obtener cobertura retroactiva durante la espera de un nuevo trabajo?",
+        "answer": "COBRA es la principal opción retroactiva: la cobertura se remonta al día en que terminó su plan anterior si elige y paga dentro de los plazos de 60 y 45 días. Los planes del Mercado no son retroactivos y empiezan el primer día del mes siguiente. Los planes del empleador no cubren atención antes de que termine la espera. Muchos programas estatales de Medicaid, como Medi-Cal y MassHealth, pueden cubrir facturas médicas de hasta 3 meses antes del mes de su solicitud en 2026 si cumplía las reglas de ingreso entonces."
+      },
+      {
+        "question": "¿Califico para Medicaid mientras espero mi plan del empleador?",
+        "answer": "Medicaid revisa su ingreso mensual actual, así que puede calificar durante la espera. En estados con expansión el límite de 2026 es el 138% del FPL, $22,025 para una persona y $45,540 para una familia de 4, como muestra la tabla por tamaño de hogar arriba. Solicite en healthcare.gov o en su agencia estatal como Medi-Cal, AHCCCS o BadgerCare. Informe su nuevo salario y la fecha de inicio de cobertura del empleador para que el estado termine o coordine los beneficios."
+      },
+      {
+        "question": "¿Qué pasa con la cobertura de mis hijos durante el período de espera?",
+        "answer": "Los hijos enfrentan la misma espera del empleador que usted, pero a menudo califican para CHIP con ingresos del hogar de 200% a 300% del FPL en 2026, aun cuando los adultos no califiquen para Medicaid. La inscripción en CHIP es todo el año y las primas son bajas o cero. Sus hijos también califican para el SEP del Mercado si su cobertura anterior terminó. Agregue a los dependientes al plan del empleador dentro de su ventana de inscripción, normalmente 30 días después de su fecha de elegibilidad, o espere la próxima inscripción abierta del empleador."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Starting a New Job in 2026: Bridge the Coverage Gap",
+        "es": "Nuevo Trabajo en 2026: Cubra la Brecha del Seguro"
+      },
+      "href": "/event/new-job-coverage-gap"
+    },
+    {
+      "label": {
+        "en": "Just Lost Your Job: Health Insurance Options",
+        "es": "Acaba de Perder Su Trabajo: Opciones de Seguro"
+      },
+      "href": "/event/just-lost-job-health-insurance"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Límites de Ingresos Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "ACA Income Limits 2026",
+        "es": "Límites de Ingresos ACA 2026"
+      },
+      "href": "/aca-income-limits"
+    }
+  ],
+  "sources": [
+    {
+      "name": "HealthCare.gov: Coverage outside Open Enrollment",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/",
+      "note": {
+        "en": "Official Marketplace SEP rules and the 60-day loss-of-coverage window.",
+        "es": "Reglas oficiales del SEP del Mercado y la ventana de 60 días por pérdida de cobertura."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid and CHIP enrollment and income rules.",
+        "es": "Inscripción todo el año en Medicaid y CHIP y reglas de ingreso."
+      }
+    },
+    {
+      "name": "U.S. Department of Labor: FAQs About Affordable Care Act Implementation Part IV",
+      "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/aca-part-4",
+      "note": {
+        "en": "Federal 90-day waiting period limit and orientation period guidance.",
+        "es": "Límite federal de espera de 90 días y guía sobre el período de orientación."
+      }
+    },
+    {
+      "name": "U.S. Department of Labor: Continuation of Health Coverage (COBRA)",
+      "url": "https://www.dol.gov/agencies/ebsa/featured-topics/cobra-continuation-health-coverage",
+      "note": {
+        "en": "COBRA election window, premium, and duration rules.",
+        "es": "Ventana de elección, prima y duración de COBRA."
+      }
+    },
+    {
+      "name": "KFF: Employer Health Benefits Survey",
+      "url": "https://www.kff.org/health-costs/report/employer-health-benefits-survey/",
+      "note": {
+        "en": "Employer coverage, waiting period, and premium cost data.",
+        "es": "Datos de cobertura del empleador, períodos de espera y costos de prima."
+      }
+    },
+    {
+      "name": "IRS: Questions and Answers on the Premium Tax Credit",
+      "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit",
+      "note": {
+        "en": "Form 8962 reconciliation when employer coverage becomes available.",
+        "es": "Conciliación del Formulario 8962 cuando hay cobertura del empleador disponible."
+      }
+    }
+  ],
+  "topicCluster": "event-sep",
+  "keyTerms": {
+    "en": [
+      "new job health insurance waiting period",
+      "employer waiting period 90 days 2026",
+      "how to get health insurance during waiting period",
+      "new job coverage gap COBRA vs Marketplace",
+      "bridge health insurance new job"
+    ],
+    "es": [
+      "período de espera seguro médico nuevo trabajo",
+      "período de espera del empleador 90 días 2026",
+      "cómo tener seguro médico durante la espera",
+      "brecha de cobertura nuevo trabajo COBRA o Mercado"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
