@@ -1,0 +1,853 @@
+{
+  "slug": "nursing-home-medicaid",
+  "eventName": {
+    "en": "Entering a Nursing Home",
+    "es": "Ingresar a un Hogar de Ancianos"
+  },
+  "category": "Income Change",
+  "topic": "Medicaid long-term care eligibility and Medicare skilled nursing coverage after entering a nursing home",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-10-10",
+  "readingTime": "10 min read",
+  "topicCluster": "event-medicaid-pivot",
+  "keyTerms": {
+    "en": [
+      "nursing home medicaid 2026",
+      "how to apply for medicaid long-term care",
+      "medicaid look-back period nursing home",
+      "medicare skilled nursing facility 100 days 2026",
+      "medicaid spousal impoverishment 2026",
+      "paying for a nursing home with medicaid"
+    ],
+    "es": [
+      "medicaid hogar de ancianos 2026",
+      "cómo solicitar medicaid cuidado a largo plazo",
+      "período de revisión retroactiva medicaid hogar de ancianos",
+      "medicare centro de enfermería especializada 100 días 2026",
+      "cómo pagar un hogar de ancianos con medicaid"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "meta": {
+    "title": {
+      "en": "Entering a Nursing Home 2026? Medicaid Long-Term Care Path",
+      "es": "¿Hogar de Ancianos en 2026? Ruta de Medicaid a Largo Plazo"
+    },
+    "description": {
+      "en": "Entering a nursing home in 2026: Medicare covers up to 100 days, Medicaid pays long-term care. Limits, 60-month look-back, spouse rules, steps.",
+      "es": "Ingreso a un hogar de ancianos en 2026: Medicare cubre hasta 100 días y Medicaid paga el cuidado a largo plazo. Límites, reglas y pasos."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Entering a Nursing Home in 2026? Here's How Medicaid Long-Term Care Works",
+      "es": "¿Ingresa a un Hogar de Ancianos en 2026? Así Funciona Medicaid para el Cuidado a Largo Plazo"
+    },
+    "subhero": {
+      "en": "Medicare pays for at most 100 days of skilled nursing care in 2026, and Medicaid reviews 60 months of asset transfers, so start the Medicaid application the week of admission.",
+      "es": "Medicare paga como máximo 100 días de cuidado de enfermería especializada en 2026, y Medicaid revisa 60 meses de transferencias de bienes, así que inicie la solicitud de Medicaid la semana del ingreso."
+    }
+  },
+  "urgency": {
+    "kind": "no-deadline",
+    "heading": {
+      "en": "You can apply for nursing home Medicaid year-round, with no enrollment deadline",
+      "es": "Puede solicitar Medicaid para hogar de ancianos todo el año, sin fecha límite de inscripción"
+    },
+    "body": {
+      "en": "Medicaid accepts nursing home applications every day of the year, but coverage reaches back only 3 months before the month you apply for applications filed through December 31, 2026, and only 2 months for applications filed on or after January 1, 2027 under Section 71112 of the One Big Beautiful Bill Act. Example: a resident admitted October 12, 2026 who applies by December 31, 2026 can be covered back to October 12, while the same resident applying January 15, 2027 is covered back only to November 1, 2026, which leaves October 12 to October 31 unpaid. Medicare's skilled nursing benefit for a qualifying stay that begins October 12, 2026 pays days 1 to 20 in full (through October 31, 2026), charges $217 per day in 2026 starting November 1, 2026, and ends on day 100, January 19, 2027.",
+      "es": "Medicaid acepta solicitudes para hogar de ancianos todos los días del año, pero la cobertura retrocede solo 3 meses antes del mes de la solicitud para solicitudes presentadas hasta el 31 de diciembre de 2026, y solo 2 meses para solicitudes presentadas a partir del 1 de enero de 2027 según la Sección 71112 de la ley One Big Beautiful Bill Act. Ejemplo: un residente ingresado el 12 de octubre de 2026 que solicita antes del 31 de diciembre de 2026 puede quedar cubierto desde el 12 de octubre, mientras que el mismo residente que solicita el 15 de enero de 2027 queda cubierto solo desde el 1 de noviembre de 2026, y del 12 al 31 de octubre quedan sin pago. El beneficio de enfermería especializada de Medicare para una estadía calificada que empieza el 12 de octubre de 2026 paga los días 1 al 20 completos (hasta el 31 de octubre de 2026), cobra $217 por día en 2026 desde el 1 de noviembre de 2026, y termina el día 100, el 19 de enero de 2027."
+    },
+    "totalTimeISO8601": null,
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Medicare skilled nursing benefit limit (days, qualifying 3-day hospital stay required)",
+          "es": "Límite del beneficio de enfermería especializada de Medicare (días, requiere 3 días de hospitalización)"
+        },
+        "days": 100
+      },
+      {
+        "label": {
+          "en": "Retroactive Medicaid coverage, applications filed through December 31, 2026",
+          "es": "Cobertura retroactiva de Medicaid, solicitudes hasta el 31 de diciembre de 2026"
+        },
+        "days": 90
+      },
+      {
+        "label": {
+          "en": "Retroactive Medicaid coverage, applications filed from January 1, 2027",
+          "es": "Cobertura retroactiva de Medicaid, solicitudes desde el 1 de enero de 2027"
+        },
+        "days": 60
+      },
+      {
+        "label": {
+          "en": "Medicaid long-term care application",
+          "es": "Solicitud de Medicaid para cuidado a largo plazo"
+        },
+        "days": null
+      }
+    ]
+  },
+  "quickAnswer": {
+    "en": "Nursing home Medicaid pays for long-term custodial care after Medicare stops, and you can apply year-round with no deadline. Medicare covers at most 100 days of skilled nursing in 2026 and only after a 3-day inpatient hospital stay, while Medicaid in most states requires countable assets under $2,000 in 2026 and routes income above the 2026 limit of $2,982 per month (300% of SSI) through a Miller trust or spend-down. Apply the week of admission, because retroactive coverage is 3 months for applications through December 31, 2026 and falls to 2 months from January 1, 2027, and Medicaid reviews every asset transfer in the prior 60 months. A spouse living at home keeps between $32,532 and $162,660 in countable assets in 2026, depending on the couple's total.",
+    "es": "Medicaid para hogar de ancianos paga el cuidado de custodia a largo plazo cuando Medicare termina, y puede solicitarlo todo el año sin fecha límite. Medicare cubre como máximo 100 días de enfermería especializada en 2026 y solo después de 3 días de hospitalización, mientras que Medicaid en la mayoría de los estados exige bienes contables menores de $2,000 en 2026 y canaliza el ingreso por encima del límite de 2026 de $2,982 al mes (300% del SSI) mediante un fideicomiso Miller o gastos médicos deducibles. Solicite la semana del ingreso, porque la cobertura retroactiva es de 3 meses para solicitudes hasta el 31 de diciembre de 2026 y baja a 2 meses desde el 1 de enero de 2027, y Medicaid revisa toda transferencia de bienes de los 60 meses anteriores. El cónyuge que vive en casa conserva entre $32,532 y $162,660 en bienes contables en 2026, según el total de la pareja."
+  },
+  "introParagraphs": [
+    {
+      "en": "Entering a nursing home in 2026 starts two clocks at once, the Medicare clock and the Medicaid clock. Medicare Part A pays for skilled nursing facility care for up to 100 days per benefit period in 2026, but only after a qualifying inpatient hospital stay of at least 3 days and only while the resident needs daily skilled care such as rehabilitation or wound care. Medicare never pays for custodial care, which means help with bathing, dressing, eating, and supervision, and that is the care most long-term residents actually need. Private pay rates run roughly $9,300 to $10,700 per month nationally, based on the 2024 median figures ($9,277 semi-private and $10,646 private room) in the Genworth and CareScout Cost of Care survey, and likely higher in 2026, so family savings disappear quickly. Medicaid, administered by each state under federal rules published at medicaid.gov, is the largest payer of nursing home care in the country. The Medicaid path has no enrollment deadline and no Special Enrollment Period, but it carries strict financial rules, a 60-month look-back, and a short retroactive window, so timing still decides how much of the first bills Medicaid pays.",
+      "es": "Ingresar a un hogar de ancianos en 2026 pone en marcha dos relojes a la vez, el de Medicare y el de Medicaid. La Parte A de Medicare paga el cuidado en un centro de enfermería especializada hasta 100 días por período de beneficio en 2026, pero solo después de una hospitalización calificada de al menos 3 días y solo mientras el residente necesite cuidado especializado diario, como rehabilitación o curación de heridas. Medicare nunca paga el cuidado de custodia, es decir, la ayuda para bañarse, vestirse, comer y la supervisión, que es el cuidado que la mayoría de los residentes a largo plazo realmente necesita. Las tarifas privadas rondan los $9,300 a $10,700 al mes a nivel nacional, según las cifras medianas de 2024 ($9,277 en cuarto semiprivado y $10,646 en cuarto privado) de la encuesta Cost of Care de Genworth y CareScout, y probablemente sean más altas en 2026, así que los ahorros de la familia se agotan rápido. Medicaid, administrado por cada estado bajo reglas federales publicadas en medicaid.gov, es el mayor pagador del cuidado en hogares de ancianos del país. La ruta de Medicaid no tiene fecha límite de inscripción ni Período de Inscripción Especial, pero incluye reglas financieras estrictas, una revisión retroactiva de 60 meses y una ventana retroactiva corta, así que el momento de la solicitud sigue decidiendo cuánto de las primeras facturas paga Medicaid."
+    },
+    {
+      "en": "Nursing home Medicaid in 2026 works differently from the 138% FPL Medicaid that most people know. Long-term care Medicaid for adults 65 and older or with disabilities is not based on MAGI. States instead test countable assets, usually $2,000 for one person in 2026, and apply an income rule tied to 300% of the SSI federal benefit rate, which is $2,982 per month in 2026 per the Social Security Administration. Your state's program may carry a local brand, such as Medi-Cal in California, AHCCCS ALTCS in Arizona, TennCare CHOICES in Tennessee, or MassHealth in Massachusetts. A spouse who stays home is protected by spousal impoverishment rules that let the spouse keep between $32,532 and $162,660 in countable assets in 2026, plus a monthly income allowance of up to $4,066.50 in 2026. Minor children in the household can qualify for CHIP or children's Medicaid on their own income, and a spouse who loses employer or COBRA coverage tied to the resident has a 60-day window for a Marketplace Special Enrollment Period at healthcare.gov. The sections below give the exact 2026 limits, the application steps, and the traps that trigger denials.",
+      "es": "Medicaid para hogar de ancianos en 2026 funciona distinto del Medicaid de 138% del FPL que la mayoría conoce. El Medicaid de cuidado a largo plazo para adultos de 65 años o más o con discapacidad no se basa en el MAGI. Los estados evalúan los bienes contables, normalmente $2,000 para una persona en 2026, y aplican una regla de ingresos vinculada al 300% de la tasa federal de beneficio del SSI, que es $2,982 al mes en 2026 según la Administración del Seguro Social. El programa de su estado puede tener una marca local, como Medi-Cal en California, AHCCCS ALTCS en Arizona, TennCare CHOICES en Tennessee o MassHealth en Massachusetts. El cónyuge que se queda en casa está protegido por las reglas contra el empobrecimiento conyugal, que le permiten conservar entre $32,532 y $162,660 en bienes contables en 2026, más una asignación mensual de ingresos de hasta $4,066.50 en 2026. Los hijos menores del hogar pueden calificar para CHIP o Medicaid infantil con sus propios ingresos, y el cónyuge que pierde cobertura del empleador o de COBRA ligada al residente tiene una ventana de 60 días para un Período de Inscripción Especial del Mercado en healthcare.gov. Las secciones siguientes dan los límites exactos de 2026, los pasos de solicitud y los errores que provocan denegaciones."
+    }
+  ],
+  "steps": [
+    {
+      "name": {
+        "en": "Ask the hospital or facility if Medicare will cover the stay",
+        "es": "Pregunte al hospital o centro si Medicare cubrirá la estadía"
+      },
+      "text": {
+        "en": "Ask the hospital discharge planner or the nursing home admissions office to confirm in writing whether you were admitted as an inpatient for at least 3 days (observation days do not count) and whether you need skilled care. Check the Medicare Part A skilled nursing benefit at medicare.gov so you know the 2026 coinsurance of $217 per day starts on day 21.",
+        "es": "Pida a la persona de planificación de alta del hospital o a la oficina de admisiones del hogar de ancianos que confirme por escrito si fue admitido como paciente hospitalizado por al menos 3 días (los días en observación no cuentan) y si necesita cuidado especializado. Revise el beneficio de enfermería especializada de la Parte A en medicare.gov para saber que el coseguro de 2026 de $217 por día empieza el día 21."
+      }
+    },
+    {
+      "name": {
+        "en": "Gather 60 months of financial records",
+        "es": "Reúna 60 meses de registros financieros"
+      },
+      "text": {
+        "en": "Collect bank, retirement, and brokerage statements for the past 60 months, plus deeds, vehicle titles, life insurance policies, and Social Security and pension award letters. Pull records for the spouse too, because Medicaid counts the couple's combined assets on the day of admission.",
+        "es": "Reúna estados de cuenta bancarios, de jubilación y de inversión de los últimos 60 meses, además de escrituras, títulos de vehículos, pólizas de vida y cartas de beneficios del Seguro Social y de pensión. Reúna también los del cónyuge, porque Medicaid cuenta los bienes combinados de la pareja el día del ingreso."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare your assets and income to the 2026 limits",
+        "es": "Compare sus bienes e ingresos con los límites de 2026"
+      },
+      "text": {
+        "en": "Calculate countable assets against the typical $2,000 individual limit for 2026 and compare gross monthly income to the 2026 special income limit of $2,982 (300% of SSI). Check your state's exact numbers on its Medicaid agency site, because Medi-Cal, AHCCCS, TennCare, and MassHealth each set their own asset and income rules.",
+        "es": "Calcule los bienes contables frente al límite individual típico de $2,000 para 2026 y compare el ingreso mensual bruto con el límite especial de ingresos de 2026 de $2,982 (300% del SSI). Verifique las cifras exactas de su estado en el sitio de su agencia de Medicaid, porque Medi-Cal, AHCCCS, TennCare y MassHealth fijan sus propias reglas de bienes e ingresos."
+      }
+    },
+    {
+      "name": {
+        "en": "Submit the Medicaid long-term care application right away",
+        "es": "Presente de inmediato la solicitud de Medicaid de cuidado a largo plazo"
+      },
+      "text": {
+        "en": "Apply through your state Medicaid agency or at healthcare.gov, and ask the nursing home business office to help with the long-term care application. Submit in the month of admission, since applications filed through December 31, 2026 reach back 3 months and applications filed from January 1, 2027 reach back only 2 months.",
+        "es": "Solicite a través de la agencia estatal de Medicaid o en healthcare.gov, y pida a la oficina administrativa del hogar de ancianos que le ayude con la solicitud de cuidado a largo plazo. Presente en el mes del ingreso, ya que las solicitudes presentadas hasta el 31 de diciembre de 2026 retroceden 3 meses y las presentadas desde el 1 de enero de 2027 retroceden solo 2 meses."
+      }
+    },
+    {
+      "name": {
+        "en": "Claim the spousal protections in writing",
+        "es": "Reclame por escrito las protecciones del cónyuge"
+      },
+      "text": {
+        "en": "Request a spousal impoverishment assessment from the state Medicaid agency so the spouse at home keeps a Community Spouse Resource Allowance of $32,532 to $162,660 in 2026 and a monthly income allowance up to $4,066.50 in 2026. Submit proof of the home's equity and the spouse's income with the request.",
+        "es": "Solicite a la agencia estatal de Medicaid una evaluación de empobrecimiento conyugal para que el cónyuge en casa conserve una Asignación de Recursos del Cónyuge en la Comunidad de $32,532 a $162,660 en 2026 y una asignación mensual de ingresos de hasta $4,066.50 en 2026. Envíe con la solicitud la prueba del valor neto de la vivienda y los ingresos del cónyuge."
+      }
+    },
+    {
+      "name": {
+        "en": "Fix excess income or assets with a lawful strategy",
+        "es": "Corrija el exceso de ingresos o bienes con una estrategia legal"
+      },
+      "text": {
+        "en": "Call an elder law attorney or your State Health Insurance Assistance Program (SHIP) to set up a Miller trust if income is above $2,982 per month in 2026, or to plan lawful spend-down on exempt items. Never gift money or property to family, because every transfer in the past 60 months can create a penalty period.",
+        "es": "Llame a un abogado de derecho para adultos mayores o a su Programa Estatal de Asistencia sobre Seguros de Salud (SHIP) para crear un fideicomiso Miller si el ingreso supera $2,982 al mes en 2026, o para planificar un gasto legal en bienes exentos. Nunca regale dinero ni propiedades a familiares, porque toda transferencia de los últimos 60 meses puede causar un período de penalidad."
+      }
+    },
+    {
+      "name": {
+        "en": "Answer verification requests and report the patient liability",
+        "es": "Responda a las solicitudes de verificación y reporte la responsabilidad del paciente"
+      },
+      "text": {
+        "en": "Respond to every Medicaid verification notice within the stated deadline, usually 10 to 30 days, and submit missing documents to the caseworker. After approval, pay the monthly patient liability to the facility, update your health insurance premiums, and file the annual Medicaid renewal when the notice arrives.",
+        "es": "Responda a cada aviso de verificación de Medicaid dentro del plazo indicado, normalmente de 10 a 30 días, y envíe los documentos faltantes al trabajador de su caso. Tras la aprobación, pague al centro la responsabilidad mensual del paciente, actualice sus primas de seguro de salud y presente la renovación anual de Medicaid cuando llegue el aviso."
+      }
+    }
+  ],
+  "optionsComparison": {
+    "headers": {
+      "en": [
+        "Option",
+        "Typical cost",
+        "Best for",
+        "Deadline"
+      ],
+      "es": [
+        "Opción",
+        "Costo típico",
+        "Mejor para",
+        "Fecha límite"
+      ]
+    },
+    "rows": [
+      {
+        "en": [
+          "Medicare Part A skilled nursing",
+          "2026: $0 for days 1 to 20, $217 per day for days 21 to 100",
+          "Short rehab stay after a 3-day hospital admission",
+          "100 days per benefit period"
+        ],
+        "es": [
+          "Parte A de Medicare, enfermería especializada",
+          "2026: $0 días 1 a 20, $217 por día días 21 a 100",
+          "Estadía corta de rehabilitación tras 3 días de hospitalización",
+          "100 días por período de beneficio"
+        ]
+      },
+      {
+        "en": [
+          "Medicaid long-term care (Medi-Cal, AHCCCS ALTCS, TennCare CHOICES, MassHealth, others)",
+          "2026: pay income minus allowances, Medicaid pays the rest",
+          "Long-term custodial care with assets near $2,000 in 2026",
+          "No deadline; retroactive 3 months through Dec 31, 2026"
+        ],
+        "es": [
+          "Medicaid de cuidado a largo plazo (Medi-Cal, AHCCCS ALTCS, TennCare CHOICES, MassHealth, otros)",
+          "2026: paga su ingreso menos asignaciones, Medicaid paga el resto",
+          "Cuidado de custodia a largo plazo con bienes cerca de $2,000 en 2026",
+          "Sin fecha límite; retroactivo 3 meses hasta el 31 dic 2026"
+        ]
+      },
+      {
+        "en": [
+          "Private pay",
+          "About $9,300 to $10,700 per month nationally (2024 medians, likely higher in 2026)",
+          "Short stays or while spending down to the 2026 asset limit",
+          "None"
+        ],
+        "es": [
+          "Pago privado",
+          "Cerca de $9,300 a $10,700 al mes a nivel nacional (medianas de 2024, probablemente más altas en 2026)",
+          "Estadías cortas o mientras gasta hasta el límite de bienes de 2026",
+          "Ninguna"
+        ]
+      },
+      {
+        "en": [
+          "Long-term care insurance",
+          "2026: policy pays a daily benefit after a 30 to 90 day wait",
+          "People who bought a policy before entering care",
+          "File claim before the elimination period ends"
+        ],
+        "es": [
+          "Seguro de cuidado a largo plazo",
+          "2026: la póliza paga un beneficio diario tras 30 a 90 días de espera",
+          "Quienes compraron una póliza antes de necesitar cuidado",
+          "Presentar reclamo antes de que termine el período de espera"
+        ]
+      },
+      {
+        "en": [
+          "VA Aid and Attendance or state veterans home",
+          "2026: monthly pension add-on or reduced facility rate",
+          "Wartime veterans and surviving spouses with limited income",
+          "No deadline; apply at va.gov"
+        ],
+        "es": [
+          "Ayuda y Asistencia del VA u hogar estatal para veteranos",
+          "2026: complemento mensual de pensión o tarifa reducida",
+          "Veteranos de guerra y cónyuges sobrevivientes con ingresos limitados",
+          "Sin fecha límite; solicite en va.gov"
+        ]
+      },
+      {
+        "en": [
+          "COBRA or employer retiree plan",
+          "2026: 102% of the full premium for COBRA",
+          "Keeping a spouse's medical coverage; rarely pays custodial care",
+          "60 days to elect COBRA after losing coverage"
+        ],
+        "es": [
+          "COBRA o plan de jubilados del empleador",
+          "2026: 102% de la prima completa en COBRA",
+          "Mantener la cobertura médica del cónyuge; rara vez paga cuidado de custodia",
+          "60 días para elegir COBRA tras perder la cobertura"
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Medicare pays only skilled care, never custodial care, and the 2026 figures reset each January 1. Medicaid long-term care eligibility, patient liability, and the personal needs allowance (at least $30 per month) vary by state in 2026.",
+      "es": "Medicare paga solo cuidado especializado, nunca cuidado de custodia, y las cifras de 2026 se actualizan cada 1 de enero. La elegibilidad de Medicaid para cuidado a largo plazo, la responsabilidad del paciente y la asignación para gastos personales (al menos $30 al mes) varían por estado en 2026."
+    },
+    "source": "Medicare.gov skilled nursing facility care; CMS 2026 Medicare deductible and coinsurance update; Medicaid.gov long-term services and supports; CMS 2026 SSI and spousal impoverishment standards; Genworth 2024 Cost of Care survey"
+  },
+  "commonMistakes": {
+    "intro": {
+      "en": "Families entering a nursing home in 2026 lose the most money to a short list of avoidable errors, and most of them involve timing or gifting.",
+      "es": "Las familias que ingresan a un hogar de ancianos en 2026 pierden más dinero por una lista corta de errores evitables, y la mayoría tienen que ver con el momento o con regalar bienes."
+    },
+    "items": [
+      {
+        "en": "Waiting for Medicare to run out before applying for Medicaid. Retroactive coverage is only 3 months for applications through December 31, 2026 and 2 months from January 1, 2027, so late filing leaves unpaid bills.",
+        "es": "Esperar a que Medicare se agote antes de solicitar Medicaid. La cobertura retroactiva es de solo 3 meses para solicitudes hasta el 31 de diciembre de 2026 y de 2 meses desde el 1 de enero de 2027, así que presentar tarde deja facturas sin pagar."
+      },
+      {
+        "en": "Gifting money or the house to children to qualify. Medicaid reviews every transfer in the prior 60 months and imposes a penalty period during which it pays nothing, even though the resident is in the facility.",
+        "es": "Regalar dinero o la casa a los hijos para calificar. Medicaid revisa toda transferencia de los 60 meses anteriores e impone un período de penalidad en el que no paga nada, aunque el residente esté en el centro."
+      },
+      {
+        "en": "Assuming Medicare covers long-term stays. Medicare Part A stops after 100 days in 2026 and never pays for custodial care, so a Medicare-only plan leaves the resident exposed.",
+        "es": "Suponer que Medicare cubre las estadías largas. La Parte A de Medicare termina a los 100 días en 2026 y nunca paga cuidado de custodia, así que depender solo de Medicare deja expuesto al residente."
+      },
+      {
+        "en": "Spending down on the wrong items. Paying for a vacation or giving cash to relatives counts as a transfer, while paying off debt, home repairs, a funeral trust, or a medically needed vehicle are generally allowed.",
+        "es": "Gastar los bienes en cosas equivocadas. Pagar unas vacaciones o dar efectivo a parientes cuenta como transferencia, mientras que pagar deudas, reparar la vivienda, un fideicomiso funerario o un vehículo necesario por razones médicas generalmente se permite."
+      },
+      {
+        "en": "Forgetting the spouse at home. Without a spousal impoverishment request, the community spouse may not keep the 2026 allowances of up to $162,660 in assets and $4,066.50 in monthly income, and a spouse whose Marketplace subsidy changes must reconcile it on Form 1095-A.",
+        "es": "Olvidar al cónyuge que vive en casa. Sin una solicitud de empobrecimiento conyugal, el cónyuge puede no conservar las asignaciones de 2026 de hasta $162,660 en bienes y $4,066.50 en ingreso mensual, y el cónyuge cuyo subsidio del Mercado cambia debe conciliarlo con el Formulario 1095-A."
+      }
+    ]
+  },
+  "comparisonNarrative": {
+    "heading": {
+      "en": "Medicare vs Medicaid vs Private Pay: Which Pays for Your Nursing Home Stay?",
+      "es": "Medicare vs Medicaid vs Pago Privado: ¿Quién Paga su Estadía en el Hogar de Ancianos?"
+    },
+    "body": {
+      "en": "After entering a nursing home in 2026, three payers usually take turns. Medicare Part A covers a short skilled stay of up to 100 days, with $0 for days 1 to 20 and $217 per day in 2026 for days 21 to 100, but only after a 3-day inpatient hospital admission and only for daily skilled care. Private pay covers the gap at roughly $9,300 to $10,700 per month (2024 national medians, likely higher in 2026) until countable assets fall to the 2026 limit, typically $2,000. Medicaid then pays the long-term custodial bill, and the resident contributes monthly income minus a personal needs allowance and health insurance premiums. COBRA or a retiree plan rarely changes the picture because those plans seldom cover custodial care, though COBRA in 2026 at 102% of the full premium can keep a spouse's medical coverage in place for up to 36 months. Long-term care insurance, when it exists, pays first through its daily benefit and shortens the spend-down. The decision order for most families is: use Medicare while the stay is skilled, file the Medicaid application in the month of admission, and use private pay only to cover the months before Medicaid eligibility begins.",
+      "es": "Después de ingresar a un hogar de ancianos en 2026, normalmente se turnan tres pagadores. La Parte A de Medicare cubre una estadía especializada corta de hasta 100 días, con $0 los días 1 a 20 y $217 por día en 2026 los días 21 a 100, pero solo tras 3 días de hospitalización y solo para cuidado especializado diario. El pago privado cubre la brecha a unos $9,300 a $10,700 al mes (medianas nacionales de 2024, probablemente más altas en 2026) hasta que los bienes contables bajen al límite de 2026, normalmente $2,000. Medicaid entonces paga la factura de custodia a largo plazo, y el residente aporta su ingreso mensual menos una asignación para gastos personales y las primas de seguro de salud. COBRA o un plan de jubilados rara vez cambia el panorama porque esos planes casi nunca cubren cuidado de custodia, aunque COBRA en 2026 al 102% de la prima completa puede mantener la cobertura médica del cónyuge hasta 36 meses. El seguro de cuidado a largo plazo, si existe, paga primero con su beneficio diario y acorta el gasto de bienes. El orden de decisión para la mayoría de las familias es: usar Medicare mientras la estadía sea especializada, presentar la solicitud de Medicaid en el mes del ingreso y usar pago privado solo para los meses previos a que empiece la elegibilidad de Medicaid."
+    }
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Nursing Home Medicaid Financial Limits in 2026",
+        "es": "Límites Financieros de Medicaid para Hogar de Ancianos en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Nursing home Medicaid in 2026 tests assets and income separately. Countable assets for one applicant are usually capped at $2,000 in 2026, and exempt items include the primary home (up to a home equity limit of $752,000 to $1,130,000 in 2026, set by each state), one vehicle, personal belongings, and a prepaid funeral. Income is judged against 300% of the SSI federal benefit rate, which is $2,982 per month in 2026. States with a medically needy pathway let residents above that line deduct medical costs, while income cap states such as Texas and Florida require a Miller trust (qualified income trust) to receive the excess income. The resident keeps a personal needs allowance of at least $30 per month in 2026 and pays the rest of income to the facility, after deducting health insurance premiums and any spousal allowance. The Medicaid.gov and CMS pages for 2026 spousal impoverishment standards publish the federal minimums and maximums.",
+          "es": "Medicaid para hogar de ancianos en 2026 evalúa por separado los bienes y los ingresos. Los bienes contables de un solicitante suelen tener un tope de $2,000 en 2026, y los bienes exentos incluyen la vivienda principal (hasta un límite de valor neto de $752,000 a $1,130,000 en 2026, fijado por cada estado), un vehículo, los efectos personales y un funeral prepagado. El ingreso se mide contra el 300% de la tasa federal de beneficio del SSI, que es $2,982 al mes en 2026. Los estados con una vía para personas médicamente necesitadas permiten deducir gastos médicos a quienes superan esa línea, mientras que los estados con tope de ingresos, como Texas y Florida, exigen un fideicomiso Miller (qualified income trust) para recibir el ingreso excedente. El residente conserva una asignación para gastos personales de al menos $30 al mes en 2026 y paga el resto del ingreso al centro, después de deducir primas de seguro de salud y cualquier asignación al cónyuge. Las páginas de Medicaid.gov y CMS sobre los estándares de empobrecimiento conyugal de 2026 publican los mínimos y máximos federales."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Nursing home Medicaid and Medicare skilled nursing figures, 2026 (federal standards, states may set their own within range)",
+          "es": "Cifras de Medicaid para hogar de ancianos y de enfermería especializada de Medicare, 2026 (estándares federales, los estados pueden fijar los suyos dentro del rango)"
+        },
+        "headers": {
+          "en": [
+            "Standard",
+            "2026 amount",
+            "Who it applies to"
+          ],
+          "es": [
+            "Estándar",
+            "Monto de 2026",
+            "A quién se aplica"
+          ]
+        },
+        "rows": [
+          {
+            "en": [
+              "Special income limit (300% of SSI)",
+              "$2,982 per month",
+              "Applicant in a special income level state"
+            ],
+            "es": [
+              "Límite especial de ingresos (300% del SSI)",
+              "$2,982 al mes",
+              "Solicitante en un estado de nivel especial de ingresos"
+            ]
+          },
+          {
+            "en": [
+              "Typical individual asset limit",
+              "$2,000",
+              "Applicant (most states)"
+            ],
+            "es": [
+              "Límite típico de bienes individual",
+              "$2,000",
+              "Solicitante (la mayoría de los estados)"
+            ]
+          },
+          {
+            "en": [
+              "Community Spouse Resource Allowance, minimum",
+              "$32,532",
+              "Spouse living at home"
+            ],
+            "es": [
+              "Asignación de recursos del cónyuge, mínimo",
+              "$32,532",
+              "Cónyuge que vive en casa"
+            ]
+          },
+          {
+            "en": [
+              "Community Spouse Resource Allowance, maximum",
+              "$162,660",
+              "Spouse living at home"
+            ],
+            "es": [
+              "Asignación de recursos del cónyuge, máximo",
+              "$162,660",
+              "Cónyuge que vive en casa"
+            ]
+          },
+          {
+            "en": [
+              "Maximum monthly maintenance needs allowance",
+              "$4,066.50 per month",
+              "Spouse living at home"
+            ],
+            "es": [
+              "Asignación mensual máxima de manutención",
+              "$4,066.50 al mes",
+              "Cónyuge que vive en casa"
+            ]
+          },
+          {
+            "en": [
+              "Home equity limit range",
+              "$752,000 to $1,130,000",
+              "Applicant, unless spouse or dependent child lives in the home"
+            ],
+            "es": [
+              "Rango del límite de valor neto de la vivienda",
+              "$752,000 a $1,130,000",
+              "Solicitante, salvo que viva en la casa el cónyuge o un hijo dependiente"
+            ]
+          },
+          {
+            "en": [
+              "Medicare Part A inpatient deductible",
+              "$1,736",
+              "Each benefit period"
+            ],
+            "es": [
+              "Deducible de hospitalización de la Parte A de Medicare",
+              "$1,736",
+              "Cada período de beneficio"
+            ]
+          },
+          {
+            "en": [
+              "Medicare skilled nursing coinsurance, days 21 to 100",
+              "$217 per day",
+              "Qualifying skilled stay"
+            ],
+            "es": [
+              "Coseguro de enfermería especializada de Medicare, días 21 a 100",
+              "$217 por día",
+              "Estadía especializada calificada"
+            ]
+          }
+        ],
+        "footnote": {
+          "en": "Spousal figures take effect January 1, 2026 except the minimum monthly maintenance needs allowance, which updates each July 1. Medi-Cal, AHCCCS, TennCare, MassHealth, and other state programs may apply higher or lower asset limits in 2026.",
+          "es": "Las cifras del cónyuge rigen desde el 1 de enero de 2026, salvo la asignación mínima mensual de manutención, que se actualiza cada 1 de julio. Medi-Cal, AHCCCS, TennCare, MassHealth y otros programas estatales pueden aplicar límites de bienes más altos o más bajos en 2026."
+        },
+        "source": "CMS Informational Bulletin on 2026 SSI and spousal impoverishment standards; SSA SSI federal benefit rates 2026; CMS Medicare 2026 deductible and coinsurance update"
+      }
+    },
+    {
+      "heading": {
+        "en": "The 60-Month Look-Back and Retroactive Coverage in 2026",
+        "es": "La Revisión de 60 Meses y la Cobertura Retroactiva en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid reviews every asset transfer made in the 60 months before the application date, and any gift or sale below fair market value creates a penalty period. The penalty equals the amount transferred divided by a monthly divisor that each state publishes for 2026, and it starts only after the resident is in the facility, has applied, and would otherwise be eligible. During the penalty, Medicaid pays nothing for nursing home care, so the family must cover the bill privately. Transfers to a spouse, to a blind or disabled child, or into certain trusts for a disabled person are exempt. A caregiver child who lived in the parent's home for 2 years before admission and provided care that delayed institutionalization can also receive the home without penalty.",
+          "es": "Medicaid revisa toda transferencia de bienes hecha en los 60 meses anteriores a la fecha de solicitud, y todo regalo o venta por debajo del valor de mercado crea un período de penalidad. La penalidad es igual al monto transferido dividido entre un divisor mensual que cada estado publica para 2026, y empieza solo después de que el residente está en el centro, ha solicitado y de otro modo sería elegible. Durante la penalidad, Medicaid no paga nada del hogar de ancianos, así que la familia debe cubrir la factura de forma privada. Las transferencias al cónyuge, a un hijo ciego o discapacitado, o a ciertos fideicomisos para una persona con discapacidad están exentas. Un hijo cuidador que vivió en la casa del padre o la madre durante 2 años antes del ingreso y brindó cuidado que retrasó la institucionalización también puede recibir la vivienda sin penalidad."
+        },
+        {
+          "en": "Retroactive coverage rules change on January 1, 2027. For applications filed through December 31, 2026, Medicaid can pay for care received in the 3 months before the month of application if the resident met every eligibility rule in those months. Under Section 71112 of the One Big Beautiful Bill Act, applications filed on or after January 1, 2027 reach back only 2 months for aged and disabled applicants. A resident admitted in October 2026 who files in December 2026 can be covered from October, but filing in January 2027 leaves October unpaid. Filing in the month of admission removes that risk, and the nursing home business office can often submit the application the same week.",
+          "es": "Las reglas de cobertura retroactiva cambian el 1 de enero de 2027. Para solicitudes presentadas hasta el 31 de diciembre de 2026, Medicaid puede pagar el cuidado recibido en los 3 meses anteriores al mes de la solicitud si el residente cumplía todas las reglas de elegibilidad en esos meses. Según la Sección 71112 de la ley One Big Beautiful Bill Act, las solicitudes presentadas a partir del 1 de enero de 2027 retroceden solo 2 meses para solicitantes mayores y con discapacidad. Un residente ingresado en octubre de 2026 que presenta en diciembre de 2026 puede quedar cubierto desde octubre, pero presentar en enero de 2027 deja octubre sin pago. Presentar en el mes del ingreso elimina ese riesgo, y la oficina administrativa del hogar de ancianos a menudo puede enviar la solicitud la misma semana."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Protecting the Spouse at Home Under 2026 Spousal Impoverishment Rules",
+        "es": "Cómo Proteger al Cónyuge en Casa Bajo las Reglas de Empobrecimiento Conyugal de 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Spousal impoverishment rules keep the spouse at home from losing everything when the other spouse enters a nursing home. Medicaid adds the couple's countable assets on the day of admission, divides them in half, and lets the community spouse keep that half if it falls between $32,532 and $162,660 in 2026. A spouse with income below the minimum monthly maintenance needs allowance, set at $2,705 effective July 1, 2026, may receive part of the resident's income, up to the $4,066.50 maximum in 2026. The home, one vehicle, and household goods stay exempt while the spouse lives there. Medicaid does not require a spouse to divorce, and Medicaid estate recovery against the resident's estate is delayed until the surviving spouse dies. Children in the household can apply for CHIP, called AllKids in Illinois or HUSKY Health in Connecticut, on their own income.",
+          "es": "Las reglas de empobrecimiento conyugal evitan que el cónyuge en casa lo pierda todo cuando el otro cónyuge ingresa a un hogar de ancianos. Medicaid suma los bienes contables de la pareja el día del ingreso, los divide por la mitad y deja que el cónyuge en la comunidad conserve esa mitad si queda entre $32,532 y $162,660 en 2026. El cónyuge con ingresos por debajo de la asignación mínima mensual de manutención, fijada en $2,705 desde el 1 de julio de 2026, puede recibir parte del ingreso del residente, hasta el máximo de $4,066.50 en 2026. La vivienda, un vehículo y los enseres del hogar siguen exentos mientras el cónyuge viva allí. Medicaid no exige que el cónyuge se divorcie, y la recuperación del patrimonio contra el residente se pospone hasta que fallezca el cónyuge sobreviviente. Los hijos del hogar pueden solicitar CHIP, llamado AllKids en Illinois o HUSKY Health en Connecticut, con sus propios ingresos."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Why Each Document Matters for the Medicaid Application",
+        "es": "Por Qué Cada Documento Importa para la Solicitud de Medicaid"
+      },
+      "paragraphs": [
+        {
+          "en": "Sixty months of bank statements let the caseworker trace every withdrawal and gift in the look-back period, and a single unexplained transfer of a few thousand dollars can delay approval for weeks. Medicaid caseworkers use the physician's level-of-care statement and the Preadmission Screening and Resident Review (PASRR) result to confirm medical need for a certified nursing facility. Deeds and mortgage statements establish home equity against the 2026 limit, while pension and Social Security award letters fix the gross income compared to the 2026 limit of $2,982 per month. In 2026, life insurance policies with a cash value count as assets above a face value of $1,500, so the policy statement decides whether the policy is countable. Proof of marriage and the spouse's records support the spousal impoverishment calculation. Missing any one of these documents is the most common reason the state agency issues a request for information with a short response deadline.",
+          "es": "Sesenta meses de estados de cuenta bancarios permiten al trabajador del caso rastrear cada retiro y regalo del período de revisión, y una sola transferencia sin explicar de unos pocos miles de dólares puede retrasar la aprobación varias semanas. Los trabajadores de Medicaid usan la declaración del médico sobre el nivel de cuidado y el resultado del Preadmission Screening and Resident Review (PASRR) para confirmar la necesidad médica en un centro de enfermería certificado. Las escrituras y los estados de hipoteca establecen el valor neto de la vivienda frente al límite de 2026, mientras que las cartas de pensión y del Seguro Social fijan el ingreso bruto que se compara con el límite de 2026 de $2,982 al mes. En 2026, las pólizas de vida con valor en efectivo cuentan como bienes por encima de un valor nominal de $1,500, así que el estado de la póliza decide si es contable. La prueba de matrimonio y los registros del cónyuge respaldan el cálculo de empobrecimiento conyugal. Faltar cualquiera de estos documentos es la razón más común por la que la agencia estatal emite una solicitud de información con un plazo de respuesta corto."
+        }
+      ]
+    }
+  ],
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid + ACA subsidy income limits for family members at home, 2026 (48 contiguous states + DC)",
+      "headers": [
+        "Household size",
+        "138% FPL (Medicaid)",
+        "400% FPL (subsidy ceiling pre-cliff)"
+      ],
+      "rows": [
+        [
+          "1",
+          "$22,025",
+          "$63,840"
+        ],
+        [
+          "2",
+          "$29,820",
+          "$86,400"
+        ],
+        [
+          "3",
+          "$37,615",
+          "$108,960"
+        ],
+        [
+          "4",
+          "$45,540",
+          "$132,000"
+        ],
+        [
+          "5",
+          "$53,335",
+          "$154,560"
+        ],
+        [
+          "6",
+          "$61,130",
+          "$177,120"
+        ],
+        [
+          "7",
+          "$68,925",
+          "$199,680"
+        ],
+        [
+          "8",
+          "$76,720",
+          "$222,240"
+        ],
+        [
+          "Each additional",
+          "+ $7,795",
+          "+ $22,560"
+        ]
+      ],
+      "footnote": "The nursing home resident is tested under the aged and disabled rules in 2026 ($2,982 per month income limit, about $2,000 assets), not under this table. Family members at home use this table for Medicaid, CHIP, or Marketplace subsidies. Alaska and Hawaii thresholds are higher. The 400% FPL subsidy cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026.",
+      "source": "HHS ASPE 2026 Poverty Guidelines + CMS ACA premium tax credit thresholds"
+    },
+    "es": {
+      "caption": "Límites de ingresos de Medicaid + subsidio ACA para familiares en casa, 2026 (48 estados contiguos + DC)",
+      "headers": [
+        "Tamaño del hogar",
+        "138% FPL (Medicaid)",
+        "400% FPL (tope del subsidio antes del precipicio)"
+      ],
+      "rows": [
+        [
+          "1",
+          "$22,025",
+          "$63,840"
+        ],
+        [
+          "2",
+          "$29,820",
+          "$86,400"
+        ],
+        [
+          "3",
+          "$37,615",
+          "$108,960"
+        ],
+        [
+          "4",
+          "$45,540",
+          "$132,000"
+        ],
+        [
+          "5",
+          "$53,335",
+          "$154,560"
+        ],
+        [
+          "6",
+          "$61,130",
+          "$177,120"
+        ],
+        [
+          "7",
+          "$68,925",
+          "$199,680"
+        ],
+        [
+          "8",
+          "$76,720",
+          "$222,240"
+        ],
+        [
+          "Cada persona adicional",
+          "+ $7,795",
+          "+ $22,560"
+        ]
+      ],
+      "footnote": "El residente del hogar de ancianos se evalúa bajo las reglas para personas mayores y con discapacidad en 2026 (límite de ingresos de $2,982 al mes, unos $2,000 en bienes), no con esta tabla. Los familiares en casa usan esta tabla para Medicaid, CHIP o subsidios del Mercado. Los umbrales de Alaska y Hawái son más altos. El precipicio de subsidio del 400% del FPL regresó en 2026 tras vencer los créditos fiscales mejorados el 1 de enero de 2026.",
+      "source": "HHS ASPE Pautas de Pobreza 2026 + umbrales de crédito fiscal de CMS para ACA"
+    }
+  },
+  "documentsNeeded": {
+    "en": [
+      "Bank, retirement, and brokerage statements for the past 60 months (resident and spouse)",
+      "Social Security, pension, and annuity award letters showing 2026 gross monthly income",
+      "Deeds, mortgage statements, and vehicle titles to document home equity and exempt assets",
+      "Physician's level-of-care statement and the PASRR screening result from the hospital or facility",
+      "Medicare, Medicaid, and supplemental insurance cards, plus long-term care policy and life insurance statements",
+      "Marriage certificate, photo ID, birth certificate or proof of citizenship, and Social Security numbers",
+      "Records of any gifts, home sales, or trust transfers in the prior 60 months, with proof of fair market value",
+      "Funeral contract or burial trust paperwork and any power of attorney or guardianship order"
+    ],
+    "es": [
+      "Estados de cuenta bancarios, de jubilación y de inversión de los últimos 60 meses (residente y cónyuge)",
+      "Cartas de beneficios del Seguro Social, pensión y anualidad que muestren el ingreso bruto mensual de 2026",
+      "Escrituras, estados de hipoteca y títulos de vehículos para documentar el valor neto de la vivienda y los bienes exentos",
+      "Declaración del médico sobre el nivel de cuidado y el resultado de la evaluación PASRR del hospital o centro",
+      "Tarjetas de Medicare, Medicaid y seguro suplementario, más la póliza de cuidado a largo plazo y estados de seguros de vida",
+      "Acta de matrimonio, identificación con foto, acta de nacimiento o prueba de ciudadanía y números del Seguro Social",
+      "Registros de regalos, ventas de la vivienda o transferencias a fideicomisos en los 60 meses anteriores, con prueba del valor de mercado",
+      "Contrato funerario o fideicomiso de entierro y cualquier poder notarial u orden de tutela"
+    ]
+  },
+  "commonDenialReasons": {
+    "en": [
+      "Countable assets above the 2026 state limit, usually $2,000, on the date of the application",
+      "Unexplained transfers or gifts inside the 60-month look-back, which create a penalty period",
+      "Gross income above the 2026 limit of $2,982 per month with no Miller trust set up in an income cap state",
+      "Missing bank statements or verification documents after the caseworker's request for information deadline",
+      "Home equity above the 2026 state limit when no spouse or dependent child lives in the home"
+    ],
+    "es": [
+      "Bienes contables por encima del límite estatal de 2026, normalmente $2,000, en la fecha de la solicitud",
+      "Transferencias o regalos sin explicar dentro de los 60 meses de revisión, que crean un período de penalidad",
+      "Ingreso bruto por encima del límite de 2026 de $2,982 al mes sin un fideicomiso Miller en un estado con tope de ingresos",
+      "Estados de cuenta o documentos de verificación faltantes después del plazo de la solicitud de información del trabajador del caso",
+      "Valor neto de la vivienda por encima del límite estatal de 2026 cuando no vive en la casa un cónyuge ni un hijo dependiente"
+    ]
+  },
+  "stateRules": [
+    {
+      "state": "California",
+      "rule": "Medi-Cal reinstated its asset test on January 1, 2026 for long-term care and Medicare Savings Programs at $130,000 for one person plus $65,000 for each additional household member; DHCS has proposed moving to federal resource levels no sooner than January 1, 2027",
+      "sourceUrl": "https://www.dhcs.ca.gov/Budget/Documents/DHCS-TBL-Asset-Limit-Fact-Sheet.pdf"
+    },
+    {
+      "state": "Arizona",
+      "rule": "AHCCCS runs the Arizona Long Term Care System (ALTCS) for nursing home care and applies the 300% of SSI income cap, which is $2,982 per month in 2026",
+      "sourceUrl": "https://www.azahcccs.gov/"
+    },
+    {
+      "state": "Tennessee",
+      "rule": "TennCare CHOICES covers nursing facility care and uses a qualified income trust when income exceeds the 300% of SSI cap of $2,982 per month in 2026",
+      "sourceUrl": "https://www.tn.gov/tenncare.html"
+    },
+    {
+      "state": "Massachusetts",
+      "rule": "MassHealth long-term care applies a 60-month look-back and its own asset and income standards, with a separate application for facility residents",
+      "sourceUrl": "https://www.mass.gov/masshealth"
+    },
+    {
+      "state": "Texas",
+      "rule": "Texas is an income cap state, so residents with gross income above $2,982 per month in 2026 need a Miller trust (qualified income trust) to qualify for nursing facility Medicaid",
+      "sourceUrl": "https://www.hhs.texas.gov/services/health/medicaid-chip"
+    },
+    {
+      "state": "Florida",
+      "rule": "Florida uses a qualified income trust above the $2,982 per month 2026 income cap, and its Statewide Medicaid Managed Care Long-Term Care program covers nursing facility residents",
+      "sourceUrl": "https://ahca.myflorida.com/medicaid"
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the enrollment window for Medicaid when entering a nursing home in 2026?",
+        "answer": "Nursing home Medicaid has no enrollment deadline, so you can apply any day of the year, and no Special Enrollment Period is needed. The practical deadline is retroactive coverage. Applications filed through December 31, 2026 can cover the 3 months before the month of application, while applications filed from January 1, 2027 reach back only 2 months. A resident admitted October 12, 2026 who applies by December 31, 2026 can be covered back to October 12, but applying January 15, 2027 starts coverage at November 1, 2026. File in the month of admission and ask the facility business office to help with the state Medicaid agency application."
+      },
+      {
+        "question": "How do I document a nursing home stay for the Medicaid application?",
+        "answer": "Documents for the application start with 60 months of bank, retirement, and brokerage statements, plus deeds, vehicle titles, and 2026 award letters for Social Security and pensions. Add the physician's level-of-care statement, the PASRR screening result, Medicare and insurance cards, and a marriage certificate if a spouse lives at home. Records of any gifts or property sales in the past 60 months, with proof of fair market value, prevent delays. Give copies to the caseworker, keep originals, and respond to every request for information on time, because the 2026 income limit of $2,982 per month and the asset limit are verified from these records."
+      },
+      {
+        "question": "What happens if I miss the early Medicaid application window for a nursing home?",
+        "answer": "Missing the early window does not lock you out of Medicaid, because nursing home Medicaid is open year-round per medicaid.gov. The cost is unpaid months. Retroactive coverage reaches back 3 months for applications filed through December 31, 2026 and only 2 months from January 1, 2027, so bills older than that window fall to the family at private pay rates of roughly $9,300 to $10,700 per month (2024 national medians, likely higher in 2026). Apply as soon as you realize the stay will be long, document the admission date, and ask the facility to bill Medicaid for the covered months once the application is approved."
+      },
+      {
+        "question": "Can I get retroactive coverage after entering a nursing home?",
+        "answer": "Retroactive coverage exists for nursing home Medicaid, but its length depends on the filing date. Applications filed through December 31, 2026 can pay for care in the 3 months before the month of application, as long as the resident met every income, asset, and medical rule in those months. Applications filed on or after January 1, 2027 reach back only 2 months for aged and disabled applicants under Section 71112 of the One Big Beautiful Bill Act. Medicare's skilled nursing benefit is not retroactive and requires a 3-day inpatient stay, so ask the hospital to confirm inpatient status before discharge in 2026."
+      },
+      {
+        "question": "What is the difference between Medicare, Medicaid, and COBRA for nursing home costs?",
+        "answer": "Medicare Part A covers up to 100 days of skilled nursing in 2026, with $0 for days 1 to 20 and $217 per day for days 21 to 100, and never covers custodial care. Medicaid covers long-term custodial care once income and assets meet your state's 2026 rules. In 2026, COBRA keeps employer health coverage for up to 18 to 36 months at 102% of the full premium, but employer medical plans seldom pay for custodial nursing home care. For a spouse who loses coverage tied to the resident, the Marketplace Special Enrollment Period at healthcare.gov gives 60 days to enroll after the coverage loss, which is often cheaper than COBRA with subsidies."
+      },
+      {
+        "question": "What state-specific rules apply to nursing home Medicaid in 2026?",
+        "answer": "State rules change asset limits, trust requirements, and program names. California's Medi-Cal reinstated an asset test on January 1, 2026 at $130,000 for one person. Arizona's AHCCCS runs ALTCS for long-term care, and Tennessee's TennCare CHOICES covers nursing facilities. Texas and Florida are income cap states, so income above $2,982 per month in 2026 needs a Miller trust. Massachusetts's MassHealth applies its own standards with a 60-month look-back. Federal minimums for the spouse at home, from $32,532 to $162,660 in 2026, apply everywhere, but states choose where in that range to set the limit, so check your state Medicaid agency before applying."
+      },
+      {
+        "question": "Do I qualify for Medicaid after entering a nursing home with a pension and savings?",
+        "answer": "Qualification depends on countable assets and gross income, not on the 138% FPL test used for expansion adults in 2026. In 2026, most states allow $2,000 in countable assets for one person, and income up to the $2,982 per month limit (300% of SSI) qualifies directly, with a Miller trust or medical spend-down covering excess income. A pension above that line does not automatically disqualify you. Savings above the limit can be spent on exempt items such as debt, home repairs, or a funeral trust. Use the household table above to see where family members at home stand in 2026, then run the CoveredUSA screener."
+      },
+      {
+        "question": "What happens to my spouse's and children's coverage when I enter a nursing home?",
+        "answer": "Spouse and children keep their own coverage options in 2026. A community spouse keeps between $32,532 and $162,660 in countable assets and can receive a monthly income allowance of up to $4,066.50 in 2026. If the spouse's coverage came from the resident's employer plan or COBRA, the coverage loss is a qualifying life event that opens a 60-day Marketplace Special Enrollment Period at healthcare.gov, and any premium tax credit must be reconciled on Form 1095-A. Minor children can qualify for CHIP or children's Medicaid, such as Medi-Cal for Kids in California or NJ FamilyCare in New Jersey, based on household income against the 2026 table above."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la ventana de inscripción de Medicaid al ingresar a un hogar de ancianos en 2026?",
+        "answer": "Medicaid para hogar de ancianos no tiene fecha límite de inscripción, así que puede solicitar cualquier día del año y no necesita un Período de Inscripción Especial. El plazo práctico es la cobertura retroactiva. Las solicitudes presentadas hasta el 31 de diciembre de 2026 pueden cubrir los 3 meses anteriores al mes de la solicitud, mientras que las presentadas desde el 1 de enero de 2027 retroceden solo 2 meses. Un residente ingresado el 12 de octubre de 2026 que solicita antes del 31 de diciembre de 2026 puede quedar cubierto desde el 12 de octubre, pero solicitar el 15 de enero de 2027 inicia la cobertura el 1 de noviembre de 2026. Presente en el mes del ingreso y pida a la oficina administrativa del centro que le ayude con la solicitud ante la agencia estatal de Medicaid."
+      },
+      {
+        "question": "¿Cómo documento la estadía en un hogar de ancianos para la solicitud de Medicaid?",
+        "answer": "Los documentos de la solicitud empiezan con 60 meses de estados bancarios, de jubilación y de inversión, además de escrituras, títulos de vehículos y cartas de 2026 del Seguro Social y de pensiones. Agregue la declaración del médico sobre el nivel de cuidado, el resultado de la evaluación PASRR, las tarjetas de Medicare y de seguros, y el acta de matrimonio si un cónyuge vive en casa. Los registros de regalos o ventas de propiedades de los últimos 60 meses, con prueba del valor de mercado, evitan retrasos. Entregue copias al trabajador del caso, conserve los originales y responda a cada solicitud de información a tiempo, porque el límite de ingresos de 2026 de $2,982 al mes y el límite de bienes se verifican con estos registros."
+      },
+      {
+        "question": "¿Qué pasa si pierdo la ventana temprana de solicitud de Medicaid para un hogar de ancianos?",
+        "answer": "Perder la ventana temprana no le cierra la puerta a Medicaid, porque Medicaid para hogar de ancianos está abierto todo el año según medicaid.gov. El costo son los meses sin pago. La cobertura retroactiva retrocede 3 meses para solicitudes presentadas hasta el 31 de diciembre de 2026 y solo 2 meses desde el 1 de enero de 2027, así que las facturas anteriores a esa ventana recaen en la familia a tarifas privadas de unos $9,300 a $10,700 al mes (medianas nacionales de 2024, probablemente más altas en 2026). Solicite en cuanto sepa que la estadía será larga, documente la fecha de ingreso y pida al centro que facture a Medicaid los meses cubiertos una vez aprobada la solicitud."
+      },
+      {
+        "question": "¿Puedo obtener cobertura retroactiva después de ingresar a un hogar de ancianos?",
+        "answer": "La cobertura retroactiva existe en Medicaid para hogar de ancianos, pero su duración depende de la fecha de solicitud. Las solicitudes presentadas hasta el 31 de diciembre de 2026 pueden pagar el cuidado de los 3 meses anteriores al mes de la solicitud, siempre que el residente cumpliera todas las reglas de ingresos, bienes y necesidad médica en esos meses. Las solicitudes presentadas a partir del 1 de enero de 2027 retroceden solo 2 meses para solicitantes mayores y con discapacidad según la Sección 71112 de la ley One Big Beautiful Bill Act. El beneficio de enfermería especializada de Medicare no es retroactivo y requiere 3 días de hospitalización, así que pida al hospital que confirme el estatus de paciente hospitalizado antes del alta en 2026."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre Medicare, Medicaid y COBRA para los costos de un hogar de ancianos?",
+        "answer": "La Parte A de Medicare cubre hasta 100 días de enfermería especializada en 2026, con $0 los días 1 a 20 y $217 por día los días 21 a 100, y nunca cubre el cuidado de custodia. Medicaid cubre el cuidado de custodia a largo plazo una vez que los ingresos y bienes cumplen las reglas de 2026 de su estado. En 2026, COBRA mantiene la cobertura médica del empleador hasta 18 a 36 meses al 102% de la prima completa, pero los planes médicos del empleador rara vez pagan el cuidado de custodia en hogares de ancianos. Para un cónyuge que pierde cobertura ligada al residente, el Período de Inscripción Especial del Mercado en healthcare.gov da 60 días para inscribirse tras la pérdida de cobertura, lo que a menudo es más barato que COBRA con subsidios."
+      },
+      {
+        "question": "¿Qué reglas estatales aplican a Medicaid para hogar de ancianos en 2026?",
+        "answer": "Las reglas estatales cambian los límites de bienes, los requisitos de fideicomisos y los nombres de los programas. Medi-Cal de California reinstauró una prueba de bienes el 1 de enero de 2026 en $130,000 para una persona. AHCCCS de Arizona administra ALTCS para el cuidado a largo plazo, y TennCare CHOICES de Tennessee cubre los centros de enfermería. Texas y Florida son estados con tope de ingresos, así que un ingreso superior a $2,982 al mes en 2026 requiere un fideicomiso Miller. MassHealth de Massachusetts aplica sus propios estándares con una revisión de 60 meses. Los mínimos federales para el cónyuge en casa, de $32,532 a $162,660 en 2026, aplican en todas partes, pero los estados eligen dónde fijar el límite dentro de ese rango, así que consulte a la agencia estatal de Medicaid antes de solicitar."
+      },
+      {
+        "question": "¿Califico para Medicaid al ingresar a un hogar de ancianos con una pensión y ahorros?",
+        "answer": "La calificación depende de los bienes contables y del ingreso bruto, no de la prueba del 138% del FPL que se usa en 2026 para adultos de expansión. En 2026, la mayoría de los estados permite $2,000 en bienes contables para una persona, y un ingreso de hasta $2,982 al mes (300% del SSI) califica directamente, con un fideicomiso Miller o gastos médicos deducibles para cubrir el exceso de ingresos. Una pensión por encima de esa línea no lo descalifica automáticamente. Los ahorros por encima del límite pueden gastarse en bienes exentos como deudas, reparaciones de la vivienda o un fideicomiso funerario. Use la tabla de hogares de arriba para ver dónde están los familiares en casa en 2026, y luego use el evaluador de CoveredUSA."
+      },
+      {
+        "question": "¿Qué pasa con la cobertura de mi cónyuge e hijos cuando ingreso a un hogar de ancianos?",
+        "answer": "El cónyuge y los hijos conservan sus propias opciones de cobertura en 2026. El cónyuge en la comunidad conserva entre $32,532 y $162,660 en bienes contables y puede recibir una asignación mensual de ingresos de hasta $4,066.50 en 2026. Si la cobertura del cónyuge venía del plan del empleador del residente o de COBRA, la pérdida de cobertura es un evento calificador de vida que abre un Período de Inscripción Especial del Mercado de 60 días en healthcare.gov, y todo crédito fiscal de prima debe conciliarse con el Formulario 1095-A. Los hijos menores pueden calificar para CHIP o Medicaid infantil, como Medi-Cal for Kids en California o NJ FamilyCare en Nueva Jersey, según el ingreso del hogar frente a la tabla de 2026 de arriba."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Límites de Ingresos Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Tabla del FPL 2026"
+      },
+      "href": "/federal-poverty-level"
+    },
+    {
+      "label": {
+        "en": "Does Medicaid Cover Nursing Home Care?",
+        "es": "¿Medicaid Cubre el Hogar de Ancianos?"
+      },
+      "href": "/qa/does-medicaid-cover-nursing-home"
+    },
+    {
+      "label": {
+        "en": "Medicaid Look-Back Period",
+        "es": "Período de Revisión Retroactiva de Medicaid"
+      },
+      "href": "/qa/medicaid-look-back-period"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Medicaid.gov: Long-Term Services and Supports",
+      "url": "https://www.medicaid.gov/medicaid/long-term-services-supports/index.html",
+      "note": {
+        "en": "Federal overview of Medicaid nursing facility and home and community-based services.",
+        "es": "Resumen federal de los servicios de centros de enfermería y servicios en el hogar y la comunidad de Medicaid."
+      }
+    },
+    {
+      "name": "Medicaid.gov: 2026 SSI and spousal impoverishment standards (CMS Informational Bulletin)",
+      "url": "https://www.medicaid.gov/federal-policy-guidance/downloads/cib12092025.pdf",
+      "note": {
+        "en": "Official 2026 SSI, resource allowance, and maintenance needs allowance figures.",
+        "es": "Cifras oficiales de 2026 del SSI, asignación de recursos y asignación de manutención."
+      }
+    },
+    {
+      "name": "Medicare.gov: Skilled nursing facility care",
+      "url": "https://www.medicare.gov/coverage/skilled-nursing-facility-snf-care",
+      "note": {
+        "en": "Medicare rules for the 100-day skilled nursing benefit and the 3-day inpatient stay.",
+        "es": "Reglas de Medicare para el beneficio de 100 días de enfermería especializada y los 3 días de hospitalización."
+      }
+    },
+    {
+      "name": "CMS.gov: 2026 Medicare deductible, coinsurance, and premium rates",
+      "url": "https://www.cms.gov/files/document/mm14279-medicare-deductible-coinsurance-premium-rates-cy-2026-update.pdf",
+      "note": {
+        "en": "Confirms the 2026 Part A deductible of $1,736 and skilled nursing coinsurance of $217 per day.",
+        "es": "Confirma el deducible de la Parte A de 2026 de $1,736 y el coseguro de enfermería especializada de $217 por día."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Special Enrollment Periods",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/",
+      "note": {
+        "en": "Marketplace SEP rules for spouses who lose coverage tied to the resident.",
+        "es": "Reglas del SEP del Mercado para cónyuges que pierden cobertura ligada al residente."
+      }
+    },
+    {
+      "name": "SSA.gov: SSI federal payment amounts for 2026",
+      "url": "https://www.ssa.gov/oact/cola/SSI.html",
+      "note": {
+        "en": "Source for the 2026 SSI federal benefit rate of $994 that sets the 300% income limit.",
+        "es": "Fuente de la tasa federal de beneficio del SSI de 2026 de $994 que fija el límite del 300%."
+      }
+    },
+    {
+      "name": "KFF: Medicaid and long-term services and supports",
+      "url": "https://www.kff.org/medicaid/",
+      "note": {
+        "en": "KFF analysis of Medicaid long-term care spending and state variation.",
+        "es": "Análisis de KFF sobre el gasto de Medicaid en cuidado a largo plazo y la variación estatal."
+      }
+    },
+    {
+      "name": "DHCS.ca.gov: Medi-Cal asset limit fact sheet",
+      "url": "https://www.dhcs.ca.gov/Budget/Documents/DHCS-TBL-Asset-Limit-Fact-Sheet.pdf",
+      "note": {
+        "en": "California Medi-Cal asset test reinstated January 1, 2026.",
+        "es": "Prueba de bienes de Medi-Cal de California reinstaurada el 1 de enero de 2026."
+      }
+    }
+  ]
+}
