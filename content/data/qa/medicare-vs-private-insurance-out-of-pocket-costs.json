@@ -1,382 +1,490 @@
 {
   "slug": "medicare-vs-private-insurance-out-of-pocket-costs",
-  "subtype": "coverage",
   "question": {
     "en": "How Does Medicare Compare to Private Insurance in Terms of Out-of-Pocket Costs in 2026?",
-    "es": "¿Cómo se Compara Medicare con el Seguro Privado en Costos de Bolsillo en 2026?"
+    "es": "¿Cómo se compara Medicare con el seguro privado en costos de bolsillo en 2026?"
   },
   "shortAnswer": {
-    "en": "It depends: Original Medicare has no OOP cap; private plans do.",
-    "es": "Depende: Medicare Original no tiene tope; los planes privados sí."
+    "en": "It depends: Original Medicare has no out-of-pocket cap in 2026.",
+    "es": "Depende: Medicare Original no tiene tope de gastos de bolsillo en 2026."
   },
   "fullAnswer": {
-    "en": "It depends on which type of coverage you compare. Original Medicare (Part A and Part B) has no yearly out-of-pocket maximum, so beneficiaries with a serious illness can pay more out of pocket than someone on an ACA-compliant private plan, which is capped at $10,600 for an individual and $21,200 for a family in 2026. Medicare Advantage plans must cap in-network costs at $9,350 in 2026, and Original Medicare paired with a Medigap policy can bring out-of-pocket spending close to zero. For routine, low-cost years Medicare's premiums and deductibles typically run lower than private insurance; for a year with a long hospital stay, the missing cap on Original Medicare alone can make it the more expensive option.",
-    "es": "Depende del tipo de cobertura que compare. Medicare Original (Parte A y Parte B) no tiene un máximo anual de gastos de bolsillo, por lo que los beneficiarios con una enfermedad grave pueden pagar más de su bolsillo que alguien con un plan privado conforme al ACA, el cual tiene un tope de $10,600 para un individuo y $21,200 para una familia en 2026. Los planes Medicare Advantage deben limitar los costos dentro de la red a $9,350 en 2026, y Medicare Original combinado con una póliza Medigap puede reducir el gasto de bolsillo a casi cero. En años rutinarios y de bajo costo, las primas y deducibles de Medicare suelen ser más bajos que los del seguro privado; en un año con una hospitalización prolongada, la falta de tope en Medicare Original por sí solo puede convertirlo en la opción más costosa."
+    "en": "It depends. In 2026 Original Medicare has no annual out-of-pocket cap, with a $283 Part B deductible, a $1,736 Part A inpatient deductible, and 20% Part B coinsurance. Medicare Advantage caps in-network costs at $9,250 (2026 limit), and ACA-compliant private plans cap them at $10,600 for one person (2026). Medigap can close Original Medicare's gaps.",
+    "es": "Depende. En 2026 Medicare Original no tiene tope anual de gastos de bolsillo, con un deducible de la Parte B de $283, un deducible hospitalario de la Parte A de $1,736 y un coseguro de 20% en la Parte B. Medicare Advantage limita los costos dentro de la red a $9,250 (límite 2026), y los planes privados que cumplen con el ACA los limitan a $10,600 para una persona (2026). Medigap puede cubrir las brechas de Medicare Original."
   },
   "category": "Medicare",
   "topic": "Medicare vs Private Insurance Out-of-Pocket Costs",
   "medicalSpecialty": "PublicHealth",
   "ctaTarget": "analyzer",
   "pageType": "coverage",
-  "lastUpdated": "2026-09-27",
-  "readingTime": "8 min read",
-
+  "lastUpdated": "2026-10-10",
+  "readingTime": "7 min read",
   "meta": {
     "title": {
-      "en": "Medicare vs. Private Insurance: Out-of-Pocket Costs 2026 | CoveredUSA",
-      "es": "Medicare vs. Seguro Privado: Costos de Bolsillo 2026 | CoveredUSA"
+      "en": "Medicare vs Private Insurance Costs 2026 | CoveredUSA",
+      "es": "Medicare vs seguro privado: costos 2026 | CoveredUSA"
     },
     "description": {
-      "en": "Compare 2026 out-of-pocket costs: Original Medicare has no cap, while Medicare Advantage ($9,250) and private insurance ($10,600) both do.",
-      "es": "Compare los costos de bolsillo de 2026: Medicare Original no tiene tope, mientras que Medicare Advantage ($9,250) y el seguro privado ($10,600) sí lo tienen."
+      "en": "Compare 2026 out-of-pocket costs: Original Medicare has no cap, Medicare Advantage caps at $9,250, ACA-compliant plans at $10,600. See deductibles.",
+      "es": "Compare costos de bolsillo 2026: Medicare Original sin tope, Medicare Advantage hasta $9,250, planes del ACA hasta $10,600. Vea los deducibles."
     }
   },
-
   "hero": {
     "h1": {
-      "en": "How Does Medicare Compare to Private Insurance in Out-of-Pocket Costs? (2026)",
-      "es": "¿Cómo se Compara Medicare con el Seguro Privado en Costos de Bolsillo? (2026)"
+      "en": "How Does Medicare Compare to Private Insurance on Out-of-Pocket Costs? (2026)",
+      "es": "¿Cómo se compara Medicare con el seguro privado en costos de bolsillo? (2026)"
     }
   },
-
   "introParagraphs": [
     {
-      "en": "Original Medicare was built around deductibles and coinsurance for each service, not around a single yearly spending limit. Private insurance, whether from an employer or the ACA marketplace, has carried a federally required out-of-pocket maximum since 2014. That one structural difference drives most of the confusion when people try to compare which type of coverage costs less in 2026.",
-      "es": "Medicare Original se construyó en torno a deducibles y coaseguros por cada servicio, no en torno a un límite de gasto anual único. El seguro privado, ya sea de un empleador o del mercado ACA, ha tenido un máximo de gastos de bolsillo requerido federalmente desde 2014. Esa diferencia estructural es la principal fuente de confusión cuando la gente intenta comparar qué tipo de cobertura cuesta menos en 2026."
+      "en": "Comparing Medicare with private insurance on out-of-pocket costs means comparing four different structures, not two. In 2026 Original Medicare (Part A and Part B) charges deductibles and coinsurance with no annual out-of-pocket maximum, while Medicare Advantage plans and ACA-compliant private plans must cap what you pay in a year. Employer coverage and Marketplace plans follow the federal out-of-pocket limit of $10,600 for one person in 2026, and Medicare Advantage follows its own in-network limit of $9,250 in 2026.",
+      "es": "Comparar Medicare con el seguro privado en costos de bolsillo significa comparar cuatro estructuras distintas, no dos. En 2026 Medicare Original (Parte A y Parte B) cobra deducibles y coseguro sin un máximo anual de gastos de bolsillo, mientras que los planes Medicare Advantage y los planes privados que cumplen con el ACA deben limitar lo que usted paga en un año. La cobertura de empleador y los planes del Mercado siguen el límite federal de $10,600 para una persona en 2026, y Medicare Advantage sigue su propio límite dentro de la red de $9,250 en 2026."
     },
     {
-      "en": "The 2026 dollar figures below cover Original Medicare, Medicare Advantage, Medigap, and ACA-compliant private insurance, then explain why the missing out-of-pocket cap on Original Medicare alone is the single biggest cost risk to plan around. For a deeper look at the out-of-pocket maximum itself, see [what is an out-of-pocket maximum](/en/glossary/out-of-pocket-maximum). If you already have a bill you are trying to make sense of, [analyze your medical bill](/en/medical-bill-analyzer) for a line-by-line breakdown.",
-      "es": "Las cifras de 2026 a continuación cubren Medicare Original, Medicare Advantage, Medigap y el seguro privado conforme al ACA, y luego explican por qué la falta de tope de gastos de bolsillo en Medicare Original por sí solo es el mayor riesgo de costo a considerar. Si ya tiene una factura que intenta entender, analice su factura médica para un desglose línea por línea."
+      "en": "Premiums are a separate cost from out-of-pocket spending. The 2026 standard Medicare Part B premium is $202.90 per month, per the Centers for Medicare & Medicaid Services (cms.gov). Prescription spending is also treated differently: Medicare Part D has a $2,100 out-of-pocket cap in 2026 under the Inflation Reduction Act. For the bigger coverage picture, see [what Medicare does not cover](/en/qa/6-things-medicare-doesn-t-cover), and use the bill analyzer if you already have a bill in hand.",
+      "es": "Las primas son un costo separado del gasto de bolsillo. La prima estándar de la Parte B de Medicare en 2026 es de $202.90 al mes, según los Centros de Servicios de Medicare y Medicaid (cms.gov). El gasto en medicamentos también se trata de forma distinta: la Parte D de Medicare tiene un tope de gastos de bolsillo de $2,100 en 2026 bajo la Ley de Reducción de la Inflación. Para ver el panorama completo de cobertura, consulte [lo que Medicare no cubre](/en/qa/6-things-medicare-doesn-t-cover), y use el analizador de facturas si ya tiene una factura."
     }
   ],
-
   "coverageBreakdown": {
     "headers": {
-      "en": ["Plan Type", "Out-of-Pocket Maximum (2026)", "Typical Deductible (2026)", "How Costs Compare"],
-      "es": ["Tipo de Plan", "Máximo de Gastos de Bolsillo (2026)", "Deducible Típico (2026)", "Cómo se Comparan los Costos"]
+      "en": [
+        "Plan type",
+        "Annual out-of-pocket limit (2026)",
+        "2026 core cost sharing",
+        "Prescription drug limit (2026)"
+      ],
+      "es": [
+        "Tipo de plan",
+        "Límite anual de bolsillo (2026)",
+        "Costos compartidos básicos 2026",
+        "Límite de medicamentos (2026)"
+      ]
     },
     "rows": [
       {
         "cells": [
-          { "en": "Original Medicare (no Medigap)", "es": "Medicare Original (sin Medigap)" },
-          { "value": { "en": "No annual cap (unlimited exposure)", "es": "Sin tope anual (exposición ilimitada)" }, "status": "no" },
-          { "en": "$1,736 Part A hospital deductible plus $283 Part B deductible in 2026", "es": "Deducible hospitalario de la Parte A de $1,736 más deducible de la Parte B de $283 en 2026" },
-          { "en": "Can cost more than private insurance in a high-cost year since nothing stops the coinsurance from adding up", "es": "Puede costar más que un seguro privado en un año de costos altos porque nada detiene la acumulación del coaseguro" }
+          {
+            "en": "Original Medicare (Parts A and B)",
+            "es": "Medicare Original (Partes A y B)"
+          },
+          {
+            "value": {
+              "en": "No annual cap",
+              "es": "Sin tope anual"
+            },
+            "status": "no"
+          },
+          {
+            "en": "$283 Part B deductible, 20% Part B coinsurance, $1,736 Part A inpatient deductible per benefit period",
+            "es": "Deducible de la Parte B de $283, coseguro de 20% en la Parte B, deducible hospitalario de la Parte A de $1,736 por período de beneficios"
+          },
+          {
+            "en": "Needs a separate Part D plan, $2,100 cap",
+            "es": "Requiere un plan Parte D aparte, tope de $2,100"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Medicare Advantage", "es": "Medicare Advantage" },
-          { "value": { "en": "Capped at $9,250 in-network (up to $13,900 combined) in 2026", "es": "Tope de $9,250 dentro de la red (hasta $13,900 combinado) en 2026" }, "status": "yes" },
-          { "en": "Varies by plan; many carry $0 to $445 deductibles in 2026", "es": "Varía según el plan; muchos tienen deducibles de $0 a $445 en 2026" },
-          { "en": "Often close to private-plan cost predictability, but provider networks are narrower", "es": "A menudo cerca de la previsibilidad de costos de un plan privado, pero las redes de proveedores son más limitadas" }
+          {
+            "en": "Medicare Advantage (Part C)",
+            "es": "Medicare Advantage (Parte C)"
+          },
+          {
+            "value": {
+              "en": "Capped at $9,250 in-network",
+              "es": "Tope de $9,250 dentro de la red"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Copays set by plan, many have $0 medical deductible",
+            "es": "Copagos fijados por el plan, muchos tienen deducible médico de $0"
+          },
+          {
+            "en": "Most plans include Part D, $2,100 cap",
+            "es": "La mayoría incluye Parte D, tope de $2,100"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Original Medicare plus Medigap", "es": "Medicare Original más Medigap" },
-          { "value": { "en": "Effectively low to near-zero costs, depending on the plan letter", "es": "Costos efectivamente bajos o casi nulos, según la letra del plan" }, "status": "yes" },
-          { "en": "Medigap premiums average $150 to $200 a month in 2026, in addition to the Part B deductible", "es": "Las primas de Medigap promedian $150 a $200 al mes en 2026, además del deducible de la Parte B" },
-          { "en": "Usually the most predictable and often the cheapest option for people with ongoing care needs", "es": "Generalmente la opción más predecible y a menudo la más económica para quienes necesitan atención continua" }
+          {
+            "en": "Original Medicare plus Medigap",
+            "es": "Medicare Original más Medigap"
+          },
+          {
+            "value": {
+              "en": "Covers most Original Medicare gaps",
+              "es": "Cubre la mayoría de las brechas de Medicare Original"
+            },
+            "status": "partial"
+          },
+          {
+            "en": "Plan G pays Part A and Part B coinsurance, you still pay the $283 Part B deductible in 2026 and a monthly Medigap premium",
+            "es": "El Plan G paga el coseguro de las Partes A y B, usted aún paga el deducible de la Parte B de $283 en 2026 y una prima mensual de Medigap"
+          },
+          {
+            "en": "Not included, add a Part D plan, $2,100 cap",
+            "es": "No incluido, agregue un plan Parte D, tope de $2,100"
+          }
         ]
       },
       {
         "cells": [
-          { "en": "Employer or ACA marketplace plan (private insurance)", "es": "Plan de empleador o del mercado ACA (seguro privado)" },
-          { "value": { "en": "Capped at $10,600 individual / $21,200 family in 2026", "es": "Tope de $10,600 individual / $21,200 familiar en 2026" }, "status": "yes" },
-          { "en": "Average single-coverage deductible is $1,886, per the 2025 KFF Employer Health Benefits Survey", "es": "El deducible promedio para cobertura individual es de $1,886, según la Encuesta de Beneficios de Salud del Empleador de KFF 2025" },
-          { "en": "Comparable to Medicare Advantage in predictability, but premiums and deductibles vary widely by employer or marketplace metal tier", "es": "Comparable a Medicare Advantage en previsibilidad, pero las primas y deducibles varían ampliamente según el empleador o el nivel del plan del mercado" }
+          {
+            "en": "Employer or ACA-compliant private plan",
+            "es": "Plan de empleador o privado que cumple con el ACA"
+          },
+          {
+            "value": {
+              "en": "Capped at $10,600 for one person",
+              "es": "Tope de $10,600 para una persona"
+            },
+            "status": "yes"
+          },
+          {
+            "en": "Plan-specific deductible and coinsurance, KFF reported an average single deductible of $1,886 for 2025",
+            "es": "Deducible y coseguro según el plan, KFF reportó un deducible individual promedio de $1,886 para 2025"
+          },
+          {
+            "en": "Drug cost sharing set by plan formulary",
+            "es": "Costos de medicamentos según el formulario del plan"
+          }
         ]
       }
     ],
     "footnote": {
-      "en": "All figures are 2026 plan-year amounts. Original Medicare's lack of an out-of-pocket maximum is the single biggest cost difference from ACA-compliant private insurance, which has carried a federally mandated maximum since 2014.",
-      "es": "Todas las cifras corresponden al año del plan 2026. La falta de un máximo de gastos de bolsillo en Medicare Original es la mayor diferencia de costo frente al seguro privado conforme al ACA, el cual ha tenido un máximo federal obligatorio desde 2014."
+      "en": "Out-of-pocket limits for Medicare Advantage ($9,250 in-network) and ACA-compliant plans ($10,600 for one person) apply to 2026 covered in-network services and exclude premiums. Original Medicare has no limit on Part A or Part B cost sharing in 2026.",
+      "es": "Los límites de gastos de bolsillo de Medicare Advantage ($9,250 dentro de la red) y de planes que cumplen con el ACA ($10,600 para una persona) aplican a servicios cubiertos dentro de la red en 2026 y excluyen las primas. Medicare Original no tiene límite en los costos compartidos de las Partes A y B en 2026."
     },
-    "source": "CMS 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet, HHS Notice of Benefit and Payment Parameters for 2026, KFF 2025 Employer Health Benefits Survey"
+    "source": "Medicare.gov, CMS 2026 Part B fact sheet, Healthcare.gov out-of-pocket maximum, KFF Employer Health Benefits Survey 2025"
   },
-
   "detailSections": [
     {
       "heading": {
-        "en": "Direct Answer: Is Medicare Cheaper Than Private Insurance?",
-        "es": "Respuesta Directa: ¿Es Medicare Más Barato Que el Seguro Privado?"
+        "en": "Direct answer: Medicare vs private insurance out-of-pocket costs (2026)",
+        "es": "Respuesta directa: costos de bolsillo de Medicare vs seguro privado (2026)"
       },
       "paragraphs": [
         {
-          "en": "It depends on which type of coverage you compare. Original Medicare alone has no annual out-of-pocket maximum, so a bad year can cost more than a typical ACA-compliant private plan, which is capped at $10,600 for an individual in 2026. Medicare Advantage and Medicare paired with a Medigap policy both add an out-of-pocket cap, often making Medicare the cheaper option for people with high medical needs.",
-          "es": "Depende del tipo de cobertura que compare. Medicare Original por sí solo no tiene un máximo anual de gastos de bolsillo, por lo que un año difícil puede costar más que un plan privado típico conforme al ACA, el cual tiene un tope de $10,600 para un individuo en 2026. Medicare Advantage y Medicare combinado con una póliza Medigap agregan un tope de gastos de bolsillo, lo que a menudo convierte a Medicare en la opción más económica para personas con necesidades médicas altas."
+          "en": "It depends. In 2026 Original Medicare has no annual out-of-pocket cap, with a $283 Part B deductible, a $1,736 Part A inpatient deductible, and 20% Part B coinsurance. Medicare Advantage caps in-network costs at $9,250 (2026 limit), and ACA-compliant private plans cap them at $10,600 for one person (2026). Medigap can close Original Medicare's gaps.",
+          "es": "Depende. En 2026 Medicare Original no tiene tope anual de gastos de bolsillo, con un deducible de la Parte B de $283, un deducible hospitalario de la Parte A de $1,736 y un coseguro de 20% en la Parte B. Medicare Advantage limita los costos dentro de la red a $9,250 (límite 2026), y los planes privados que cumplen con el ACA los limitan a $10,600 para una persona (2026). Medigap puede cubrir las brechas de Medicare Original."
         }
       ]
     },
     {
       "heading": {
-        "en": "What You Pay Out-of-Pocket Under Original Medicare (2026)",
-        "es": "Lo Que Paga de Su Bolsillo Bajo Medicare Original (2026)"
+        "en": "What Original Medicare charges you in 2026",
+        "es": "Lo que Medicare Original le cobra en 2026"
       },
       "paragraphs": [
         {
-          "en": "Original Medicare, Medicare Part A for hospital care and Medicare Part B for outpatient and doctor visits, charges separate deductibles and coinsurance for every benefit period rather than one combined limit. In 2026, the Medicare Part A inpatient hospital deductible is $1,736 per benefit period, and Part A coinsurance rises to $434 a day for hospital days 61 through 90 and $217 a day for skilled nursing days 21 through 100. Medicare Part B carries a $283 annual deductible in 2026 plus a standard $202.90 monthly premium, and after the deductible most beneficiaries pay 20% coinsurance on covered outpatient services with no ceiling on how much that 20% can add up to over a year.",
-          "es": "Medicare Original, la Parte A de Medicare para atención hospitalaria y la Parte B de Medicare para visitas ambulatorias y médicas, cobra deducibles y coaseguros por separado en cada período de beneficios en lugar de un límite combinado único. En 2026, el deducible hospitalario de la Parte A de Medicare es de $1,736 por período de beneficios, y el coaseguro de la Parte A sube a $434 al día para los días 61 a 90 de hospitalización y $217 al día para los días 21 a 100 en un centro de enfermería especializada. La Parte B de Medicare tiene un deducible anual de $283 en 2026 más una prima mensual estándar de $202.90, y después del deducible la mayoría de los beneficiarios paga un coaseguro del 20% en servicios ambulatorios cubiertos sin límite de cuánto puede sumar ese 20% en un año."
-        },
-        {
-          "en": "Prescription drug spending under Medicare Part D is handled separately from Part A and Part B costs. The 2026 Part D out-of-pocket cap, set by the Inflation Reduction Act, is $2,100, and insulin is capped at $35 a month per covered product regardless of a plan's deductible phase. Neither of those two caps offsets the fact that Part A and Part B coinsurance, by themselves, have no ceiling.",
-          "es": "El gasto en medicamentos recetados bajo la Parte D de Medicare se maneja por separado de los costos de la Parte A y la Parte B. El tope de gastos de bolsillo de la Parte D en 2026, establecido por la Ley de Reducción de la Inflación, es de $2,100, y la insulina tiene un tope de $35 al mes por producto cubierto sin importar la fase del deducible del plan. Ninguno de esos dos topes compensa el hecho de que el coaseguro de la Parte A y la Parte B, por sí mismos, no tienen límite."
+          "en": "Original Medicare in 2026 splits costs between Medicare Part A (hospital) and Medicare Part B (outpatient). Medicare Part A has a $1,736 deductible for each inpatient benefit period in 2026, with daily coinsurance starting after day 60. Medicare Part B has a $283 annual deductible in 2026 and then 20% coinsurance for most doctor visits, outpatient care, and durable equipment, with no ceiling on that 20%. Someone with a long hospital stay or expensive outpatient treatment can therefore face large bills. Medicare Part D drug plans are separate and are capped at $2,100 in out-of-pocket drug spending in 2026, with insulin limited to $35 per month under the Inflation Reduction Act. Details are posted on medicare.gov.",
+          "es": "Medicare Original en 2026 divide los costos entre la Parte A de Medicare (hospital) y la Parte B de Medicare (ambulatoria). La Parte A tiene un deducible de $1,736 por cada período de beneficios hospitalarios en 2026, con coseguro diario a partir del día 60. La Parte B tiene un deducible anual de $283 en 2026 y luego un coseguro de 20% en la mayoría de las visitas médicas, la atención ambulatoria y el equipo duradero, sin límite para ese 20%. Por eso, una estadía hospitalaria larga o un tratamiento ambulatorio costoso pueden generar facturas grandes. Los planes de la Parte D son aparte y tienen un tope de $2,100 de gasto de bolsillo en medicamentos en 2026, con la insulina limitada a $35 al mes bajo la Ley de Reducción de la Inflación. Los detalles están en medicare.gov."
         }
       ]
     },
     {
       "heading": {
-        "en": "What Medicare Advantage Changes About Your Costs (2026)",
-        "es": "Lo Que Medicare Advantage Cambia en Sus Costos (2026)"
+        "en": "What private insurance and Medicare Advantage charge in 2026",
+        "es": "Lo que cobran el seguro privado y Medicare Advantage en 2026"
       },
       "paragraphs": [
         {
-          "en": "Medicare Advantage plans replace Original Medicare's open-ended cost-sharing with a required annual out-of-pocket maximum, a protection Original Medicare alone does not provide. CMS set the 2026 in-network ceiling at $9,250, with a combined in-network and out-of-network limit of $13,900, though KFF's tracking shows the enrollment-weighted average plan actually caps in-network spending closer to $5,421. Individual plans vary in their $0 to $445 deductibles, copay structures, and provider networks, so the exact amount a beneficiary pays depends heavily on which plan and county they choose.",
-          "es": "Los planes Medicare Advantage reemplazan el costo compartido abierto de Medicare Original con un máximo anual de gastos de bolsillo obligatorio, una protección que Medicare Original por sí solo no ofrece. CMS fijó el tope dentro de la red en $9,250 para 2026, con un límite combinado dentro y fuera de la red de $13,900, aunque el seguimiento de KFF muestra que el plan promedio ponderado por inscripción en realidad limita el gasto dentro de la red a alrededor de $5,421. Los planes individuales varían en sus deducibles de $0 a $445, estructuras de copago y redes de proveedores, por lo que el monto exacto que paga un beneficiario depende en gran medida del plan y el condado que elija."
-        },
-        {
-          "en": "Medicare Advantage plans typically bundle Part D drug coverage and often add dental, vision, or hearing benefits that Original Medicare does not include, which shifts the comparison with private insurance further in Medicare's favor for many retirees, provided their doctors and hospitals fall inside the plan's network.",
-          "es": "Los planes Medicare Advantage generalmente incluyen la cobertura de medicamentos de la Parte D y a menudo agregan beneficios dentales, de visión o de audición que Medicare Original no incluye, lo que inclina la comparación con el seguro privado aún más a favor de Medicare para muchos jubilados, siempre que sus médicos y hospitales estén dentro de la red del plan."
+          "en": "Private ACA-compliant plans, whether from an employer or the Marketplace, must stop your cost sharing at the federal out-of-pocket maximum, which is $10,600 for one person in 2026 according to healthcare.gov. Those plans must also cover essential health benefits and cannot deny coverage for a preexisting condition. Within the cap, deductibles and coinsurance vary widely: KFF's 2025 employer survey reported an average single deductible of $1,886 among covered workers. Medicare Advantage plans replace Original Medicare, must include a yearly in-network limit of no more than $9,250 in 2026, and often use flat copays instead of 20% coinsurance, though you may pay more out of network. The KFF Medicare Advantage tracker follows plan trends.",
+          "es": "Los planes privados que cumplen con el ACA, ya sean de un empleador o del Mercado, deben detener sus costos compartidos en el máximo federal de gastos de bolsillo, que es de $10,600 para una persona en 2026 según healthcare.gov. Esos planes también deben cubrir los beneficios esenciales de salud y no pueden negar cobertura por una condición preexistente. Dentro del tope, los deducibles y el coseguro varían mucho: la encuesta de empleadores de KFF de 2025 reportó un deducible individual promedio de $1,886 entre los trabajadores cubiertos. Los planes Medicare Advantage reemplazan a Medicare Original, deben incluir un límite anual dentro de la red de no más de $9,250 en 2026 y con frecuencia usan copagos fijos en lugar del coseguro de 20%, aunque puede pagar más fuera de la red. El rastreador de KFF sobre Medicare Advantage sigue las tendencias de los planes."
         }
       ]
     },
     {
       "heading": {
-        "en": "How Private Insurance Out-of-Pocket Costs Compare (2026)",
-        "es": "Cómo se Comparan los Costos de Bolsillo del Seguro Privado (2026)"
+        "en": "Cost without a cap or supplement (2026)",
+        "es": "Costo sin tope ni suplemento (2026)"
       },
       "paragraphs": [
         {
-          "en": "Employer-sponsored and ACA marketplace plans, both considered ACA-compliant private insurance, have carried a federally required annual out-of-pocket maximum since 2014. For 2026, that ceiling is $10,600 for an individual and $21,200 for a family, per the HHS Notice of Benefit and Payment Parameters. The 2025 KFF Employer Health Benefits Survey found the average deductible for single coverage was $1,886, up from $1,773 the year before, with 34% of covered workers facing a deductible of $2,000 or more.",
-          "es": "Los planes patrocinados por el empleador y los planes del mercado ACA, ambos considerados seguro privado conforme al ACA, han tenido un máximo anual de gastos de bolsillo requerido federalmente desde 2014. Para 2026, ese tope es de $10,600 para un individuo y $21,200 para una familia, según el Aviso de Parámetros de Beneficios y Pagos de HHS. La Encuesta de Beneficios de Salud del Empleador de KFF 2025 encontró que el deducible promedio para cobertura individual fue de $1,886, un aumento respecto a $1,773 del año anterior, y el 34% de los trabajadores cubiertos enfrenta un deducible de $2,000 o más."
-        },
-        {
-          "en": "ACA marketplace plans also come in metal tiers, Bronze, Silver, Gold, and Platinum, that trade lower premiums for higher deductibles or the reverse, giving shoppers more control over the premium-versus-deductible tradeoff than Original Medicare typically allows. Because these plans are ACA-compliant, they must cover the ten essential health benefits and cannot deny coverage or charge more for a preexisting condition, protections Original Medicare beneficiaries do not need since Medicare has no medical underwriting. Premium tax credits can reduce the monthly cost of marketplace plans, but the enhanced subsidies from the American Rescue Plan expired on January 1, 2026, so the subsidy cliff has returned for households above 400% of the federal poverty level.",
-          "es": "Los planes del mercado ACA también vienen en niveles de metal, Bronce, Plata, Oro y Platino, que intercambian primas más bajas por deducibles más altos o viceversa, dando a los compradores más control sobre el equilibrio entre prima y deducible del que Medicare Original suele permitir. Debido a que estos planes son conformes al ACA, deben cubrir los diez beneficios esenciales de salud y no pueden negar cobertura ni cobrar más por una condición preexistente, protecciones que los beneficiarios de Medicare Original no necesitan porque Medicare no aplica suscripción médica. Los créditos fiscales para primas pueden reducir el costo mensual de los planes del mercado, pero los subsidios mejorados del Plan de Rescate Estadounidense expiraron el 1 de enero de 2026, por lo que el precipicio de subsidios ha regresado para los hogares por encima del 400% del nivel federal de pobreza."
+          "en": "Original Medicare without a Medigap plan or other supplemental coverage leaves 2026 exposure open on both ends. A single inpatient stay can trigger the $1,736 Part A deductible in 2026, and Part B outpatient treatments such as chemotherapy infusions or repeated procedures add 20% coinsurance on every approved charge after the $283 Part B deductible. A Medigap policy sold by a private insurer, such as Plan G, pays most of those coinsurance amounts but adds a monthly premium on top of the $202.90 Part B premium in 2026. Medigap does not cover prescription drugs, so a Part D plan is still needed. Compare total yearly spending, not only the deductible, before choosing between the structures.",
+          "es": "Medicare Original sin un plan Medigap u otra cobertura suplementaria deja la exposición de 2026 abierta en ambos extremos. Una sola estadía hospitalaria puede activar el deducible de la Parte A de $1,736 en 2026, y los tratamientos ambulatorios de la Parte B, como infusiones de quimioterapia o procedimientos repetidos, agregan 20% de coseguro sobre cada cargo aprobado después del deducible de la Parte B de $283. Una póliza Medigap vendida por una aseguradora privada, como el Plan G, paga la mayor parte de esos montos de coseguro pero agrega una prima mensual además de la prima de la Parte B de $202.90 en 2026. Medigap no cubre medicamentos recetados, por lo que aún se necesita un plan de la Parte D. Compare el gasto anual total, no solo el deducible, antes de elegir entre las estructuras."
         }
       ]
     },
     {
       "heading": {
-        "en": "The Out-of-Pocket Maximum: The Single Biggest Structural Difference",
-        "es": "El Máximo de Gastos de Bolsillo: La Mayor Diferencia Estructural"
+        "en": "Eligibility and enrollment windows for each option (2026)",
+        "es": "Elegibilidad y períodos de inscripción para cada opción (2026)"
       },
       "paragraphs": [
         {
-          "en": "Every ACA-compliant private plan and every Medicare Advantage plan must cap what an enrollee pays in a plan year. Original Medicare on its own is the outlier: Part A and Part B coinsurance can keep accumulating with no ceiling, which is why a beneficiary hospitalized for an extended stay or needing repeated skilled nursing care can face bills that a private insurance out-of-pocket maximum would have stopped months earlier.",
-          "es": "Todo plan privado conforme al ACA y todo plan Medicare Advantage debe limitar lo que paga un asegurado en un año del plan. Medicare Original por sí solo es la excepción: el coaseguro de la Parte A y la Parte B puede seguir acumulándose sin límite, razón por la cual un beneficiario hospitalizado por una estadía prolongada o que necesita atención repetida en un centro de enfermería especializada puede enfrentar facturas que un máximo de gastos de bolsillo de un seguro privado habría detenido meses antes."
-        },
-        {
-          "en": "The out-of-pocket gap is exactly why most people on Original Medicare pair it with a Medigap policy or choose Medicare Advantage instead of staying on Parts A and B alone. Without one of those two additions, Original Medicare's theoretical cost exposure in a bad year can exceed even the highest private-plan maximum, even though its premiums and deductibles look cheaper on paper for routine care.",
-          "es": "La brecha de gastos de bolsillo es exactamente la razón por la que la mayoría de las personas con Medicare Original lo combinan con una póliza Medigap o eligen Medicare Advantage en lugar de quedarse solo con las Partes A y B. Sin uno de esos dos complementos, la exposición teórica de costos de Medicare Original en un año difícil puede superar incluso el máximo más alto de un plan privado, aunque sus primas y deducibles parezcan más baratos en papel para la atención rutinaria."
+          "en": "Eligibility decides which structure you can actually choose in 2026. Medicare generally starts at age 65, or earlier after 24 months of disability benefits, and people who keep employer coverage may delay Part B without a penalty if that coverage is active. The Medicare Annual Enrollment Period runs October 15 to December 7, 2026, for coverage that begins January 1, 2027. Marketplace plans are open only during the open enrollment period or after a qualifying life event, and Medicare-eligible people generally cannot receive Marketplace premium tax credits once Medicare Part A is active. Medigap has its own six-month open enrollment window after you enroll in Part B, which matters because insurers in most states can use medical underwriting afterward.",
+          "es": "La elegibilidad decide qué estructura puede elegir realmente en 2026. Medicare generalmente comienza a los 65 años, o antes tras 24 meses de beneficios por discapacidad, y quienes mantienen cobertura de empleador pueden retrasar la Parte B sin multa si esa cobertura está activa. El Período Anual de Elección de Medicare va del 15 de octubre al 7 de diciembre de 2026, para cobertura que comienza el 1 de enero de 2027. Los planes del Mercado solo están abiertos durante el período de inscripción abierta o tras un evento de vida calificado, y las personas elegibles para Medicare generalmente no pueden recibir créditos fiscales de prima del Mercado una vez que la Parte A está activa. Medigap tiene su propia ventana de inscripción abierta de seis meses después de inscribirse en la Parte B, lo cual importa porque en la mayoría de los estados las aseguradoras pueden usar suscripción médica después."
         }
       ]
     },
     {
       "heading": {
-        "en": "How to Choose Coverage That Limits Your Out-of-Pocket Costs",
-        "es": "Cómo Elegir Cobertura Que Limite Sus Costos de Bolsillo"
+        "en": "Alternatives if Original Medicare's costs are too high (2026)",
+        "es": "Alternativas si los costos de Medicare Original son demasiado altos (2026)"
       },
       "paragraphs": [
         {
-          "en": "Comparing plans starts with adding up your own numbers rather than relying on national averages. The Medicare Plan Finder at medicare.gov/plan-compare shows the exact out-of-pocket maximum, deductible, and drug formulary for every Medicare Advantage plan sold in your county for 2026, while your employer's Summary of Benefits and Coverage document or the healthcare.gov marketplace listing shows the same figures for private insurance."
-          , "es": "Comparar planes comienza sumando sus propias cifras en lugar de depender de promedios nacionales. El Buscador de Planes de Medicare en medicare.gov/plan-compare muestra el máximo exacto de gastos de bolsillo, el deducible y el formulario de medicamentos de cada plan Medicare Advantage vendido en su condado para 2026, mientras que el documento de Resumen de Beneficios y Cobertura de su empleador o el listado del mercado en healthcare.gov muestra las mismas cifras para el seguro privado."
+          "en": "Medicare beneficiaries who find 2026 Original Medicare cost sharing unaffordable have several named options. Each is explained below, and you can compare plans at medicare.gov/plan-compare.",
+          "es": "Los beneficiarios de Medicare que consideren inasequibles los costos compartidos de Medicare Original en 2026 tienen varias opciones. Cada una se explica abajo, y puede comparar planes en medicare.gov/plan-compare."
         }
       ],
       "list": [
-        { "en": "Step 1: List your current prescriptions, doctors, and any procedures you expect in the coming year.", "es": "Paso 1: Enumere sus medicamentos actuales, médicos y cualquier procedimiento que espere en el próximo año." },
-        { "en": "Step 2: Compare each plan's out-of-pocket maximum, not just its premium, since the maximum determines your worst-case cost.", "es": "Paso 2: Compare el máximo de gastos de bolsillo de cada plan, no solo su prima, ya que el máximo determina su costo en el peor de los casos." },
-        { "en": "Step 3: If choosing Medigap, apply within your 6-month Open Enrollment Period that starts the month you turn 65 and enroll in Part B, since insurers can use medical underwriting to deny coverage after that window closes.", "es": "Paso 3: Si elige Medigap, solicítelo dentro de su Período de Inscripción Abierta de 6 meses que comienza el mes en que cumple 65 años e se inscribe en la Parte B, ya que las aseguradoras pueden usar suscripción médica para negar cobertura después de que cierre esa ventana." },
-        { "en": "Step 4: Enroll during the correct window: Medicare's Annual Enrollment Period runs October 15 to December 7, 2026, and ACA Open Enrollment for 2026 coverage runs November 1, 2025 to January 15, 2026.", "es": "Paso 4: Inscríbase durante la ventana correcta: el Período de Inscripción Anual de Medicare va del 15 de octubre al 7 de diciembre de 2026, y la Inscripción Abierta del ACA para cobertura de 2026 va del 1 de noviembre de 2025 al 15 de enero de 2026." }
+        {
+          "en": "Medicare Advantage: adds a $9,250 in-network yearly limit in 2026 and often bundles Part D, but uses networks.",
+          "es": "Medicare Advantage: agrega un límite anual dentro de la red de $9,250 en 2026 y con frecuencia incluye la Parte D, pero usa redes."
+        },
+        {
+          "en": "Medigap: a private policy that pays Original Medicare coinsurance. Find plans at medicare.gov/medigap-supplemental-insurance-plans.",
+          "es": "Medigap: una póliza privada que paga el coseguro de Medicare Original. Encuentre planes en medicare.gov/medigap-supplemental-insurance-plans."
+        },
+        {
+          "en": "Medicare Savings Programs: Medicaid-run programs that pay Part B premiums and sometimes cost sharing. Apply through your state Medicaid agency.",
+          "es": "Programas de Ahorro de Medicare: programas administrados por Medicaid que pagan las primas de la Parte B y a veces los costos compartidos. Solicite a través de la agencia estatal de Medicaid."
+        },
+        {
+          "en": "Extra Help (Part D Low-Income Subsidy): lowers drug costs and premiums for eligible people. Apply at ssa.gov.",
+          "es": "Ayuda Adicional (Subsidio para Bajos Ingresos de la Parte D): reduce costos de medicamentos y primas para personas elegibles. Solicite en ssa.gov."
+        },
+        {
+          "en": "Retiree or employer coverage: if your employer plan is active, it may pay after or alongside Medicare, so ask the benefits office.",
+          "es": "Cobertura de jubilado o empleador: si su plan de empleador está activo, puede pagar después de Medicare o junto con él, así que consulte a la oficina de beneficios."
+        }
       ]
     },
     {
       "heading": {
-        "en": "Alternatives If Original Medicare's Missing Cap Concerns You",
-        "es": "Alternativas Si le Preocupa la Falta de Tope de Medicare Original"
+        "en": "How to compare plans and enroll for 2026 coverage",
+        "es": "Cómo comparar planes e inscribirse para la cobertura de 2026"
       },
       "paragraphs": [
         {
-          "en": "Beneficiaries worried about Original Medicare's lack of an out-of-pocket maximum have several concrete options instead of staying exposed to unlimited cost-sharing.",
-          "es": "Los beneficiarios preocupados por la falta de un máximo de gastos de bolsillo en Medicare Original tienen varias opciones concretas en lugar de permanecer expuestos a un costo compartido ilimitado."
+          "en": "Medicare plan comparison starts with your own expected 2026 usage. List your doctors, prescriptions, and likely procedures, then total premiums plus expected deductibles and coinsurance for each structure, including the maximum you could owe. Use the Medicare Plan Finder at medicare.gov for Advantage, Medigap, and Part D options, and healthcare.gov for Marketplace plans if you are not yet on Medicare. A State Health Insurance Assistance Program (SHIP) counselor can review options for free. The CoveredUSA bill analyzer can also show whether a bill you already received matches your plan's cost sharing.",
+          "es": "La comparación de planes de Medicare comienza con su uso esperado en 2026. Haga una lista de sus médicos, recetas y procedimientos probables, y luego sume las primas más los deducibles y coseguros esperados de cada estructura, incluido el máximo que podría deber. Use el Buscador de Planes de Medicare en medicare.gov para opciones de Advantage, Medigap y Parte D, y healthcare.gov para planes del Mercado si aún no tiene Medicare. Un consejero del Programa Estatal de Asistencia sobre Seguro de Salud (SHIP) puede revisar sus opciones gratis. El analizador de facturas de CoveredUSA también puede mostrar si una factura que ya recibió coincide con los costos compartidos de su plan."
         }
-      ],
-      "list": [
-        { "en": "Medigap (Medicare Supplement) policies: standardized plans like Plan G or Plan N pay some or all of Original Medicare's coinsurance and deductibles, effectively creating a personal out-of-pocket cap even though Medigap itself has no federally required maximum.", "es": "Pólizas Medigap (Medicare Supplement): planes estandarizados como el Plan G o el Plan N pagan parte o todo el coaseguro y los deducibles de Medicare Original, creando efectivamente un tope personal de gastos de bolsillo aunque Medigap en sí no tenga un máximo requerido federalmente." },
-        { "en": "Medicare Advantage plans: bundle Part A, Part B, usually Part D, and a mandatory out-of-pocket maximum (capped at $9,250 in-network for 2026) into one plan, often for a $0 monthly premium.", "es": "Planes Medicare Advantage: combinan la Parte A, la Parte B, generalmente la Parte D, y un máximo obligatorio de gastos de bolsillo (con tope de $9,250 dentro de la red para 2026) en un solo plan, a menudo con una prima mensual de $0." },
-        { "en": "Employer retiree coverage: some employers continue offering a group health plan after retirement that coordinates with Medicare and carries its own ACA-style out-of-pocket maximum.", "es": "Cobertura de empleador para jubilados: algunos empleadores continúan ofreciendo un plan de salud grupal después de la jubilación que se coordina con Medicare y tiene su propio máximo de gastos de bolsillo estilo ACA." },
-        { "en": "Medicare Savings Programs and Medicaid dual eligibility: beneficiaries with limited income can qualify for state programs that pay Medicare's premiums, deductibles, and coinsurance directly, removing the out-of-pocket exposure entirely.", "es": "Programas de Ahorro de Medicare y elegibilidad dual de Medicaid: los beneficiarios con ingresos limitados pueden calificar para programas estatales que pagan directamente las primas, deducibles y coaseguros de Medicare, eliminando por completo la exposición de gastos de bolsillo." },
-        { "en": "PACE (Programs of All-Inclusive Care for the Elderly): available in some states for beneficiaries who need nursing-home-level care but want to stay at home, combining Medicare and Medicaid benefits with no separate deductibles for covered services.", "es": "PACE (Programas de Atención Integral para Personas Mayores): disponible en algunos estados para beneficiarios que necesitan atención de nivel de hogar de ancianos pero desean permanecer en casa, combinando los beneficios de Medicare y Medicaid sin deducibles separados para los servicios cubiertos." }
       ]
     }
   ],
-
-  "howToApply": {
-    "numberedSteps": [
-      { "en": "Step 1: Add up Original Medicare's 2026 Part A deductible ($1,736) and Part B deductible ($283) as your starting point, since neither cost is capped without added coverage.", "es": "Paso 1: Sume el deducible de la Parte A de 2026 ($1,736) y el deducible de la Parte B ($283) de Medicare Original como punto de partida, ya que ninguno tiene tope sin cobertura adicional." },
-      { "en": "Step 2: Use the Medicare Plan Finder at medicare.gov/plan-compare to check the exact out-of-pocket maximum on Medicare Advantage plans in your area for 2026, remembering the federal ceiling is $9,250 in-network.", "es": "Paso 2: Use el Buscador de Planes de Medicare en medicare.gov/plan-compare para verificar el máximo exacto de gastos de bolsillo de los planes Medicare Advantage en su área para 2026, recordando que el tope federal es de $9,250 dentro de la red." },
-      { "en": "Step 3: If you prefer Original Medicare, apply for a Medigap policy within your 6-month Medigap Open Enrollment Period to guarantee acceptance regardless of health history.", "es": "Paso 3: Si prefiere Medicare Original, solicite una póliza Medigap dentro de su Período de Inscripción Abierta de Medigap de 6 meses para garantizar la aceptación sin importar su historial de salud." },
-      { "en": "Step 4: If you have employer or ACA marketplace coverage instead, check your plan's Summary of Benefits and Coverage for the 2026 out-of-pocket maximum, capped at $10,600 individual and $21,200 family.", "es": "Paso 4: Si en cambio tiene cobertura de empleador o del mercado ACA, revise el Resumen de Beneficios y Cobertura de su plan para conocer el máximo de gastos de bolsillo de 2026, con tope de $10,600 individual y $21,200 familiar." },
-      { "en": "Step 5: Enroll during the correct window: Medicare's Annual Enrollment Period runs October 15 to December 7, 2026, for coverage starting January 1, 2027, while ACA Open Enrollment for 2026 plans runs November 1, 2025 to January 15, 2026.", "es": "Paso 5: Inscríbase durante la ventana correcta: el Período de Inscripción Anual de Medicare va del 15 de octubre al 7 de diciembre de 2026, para cobertura que inicia el 1 de enero de 2027, mientras que la Inscripción Abierta del ACA para planes de 2026 va del 1 de noviembre de 2025 al 15 de enero de 2026." }
-    ],
-    "govStartingUrl": "https://www.medicare.gov/plan-compare",
-    "documentsNeeded": [
-      { "en": "Medicare card (Parts A and B) or private insurance member ID card", "es": "Tarjeta de Medicare (Partes A y B) o tarjeta de identificación del seguro privado" },
-      { "en": "Current prescription drug list with dosages", "es": "Lista actual de medicamentos recetados con dosis" },
-      { "en": "List of preferred doctors and hospitals to check network status", "es": "Lista de médicos y hospitales preferidos para verificar su estado en la red" },
-      { "en": "Prior year's Explanation of Benefits (EOB) to estimate typical annual costs", "es": "Explicación de Beneficios (EOB) del año anterior para estimar los costos anuales típicos" },
-      { "en": "Income documentation if applying for Medicare Savings Programs or ACA subsidies", "es": "Documentación de ingresos si solicita Programas de Ahorro de Medicare o subsidios del ACA" }
-    ],
-    "commonDenialReasons": [
-      { "en": "Applying for Medigap outside your 6-month Open Enrollment Period, when insurers can use medical underwriting to deny coverage or charge more", "es": "Solicitar Medigap fuera de su Período de Inscripción Abierta de 6 meses, cuando las aseguradoras pueden usar suscripción médica para negar cobertura o cobrar más" },
-      { "en": "Missing the ACA Open Enrollment window without a qualifying Special Enrollment Period event", "es": "Perder la ventana de Inscripción Abierta del ACA sin un evento calificado de Período de Inscripción Especial" },
-      { "en": "Switching Medicare Advantage plans outside the October 15 to December 7 Annual Enrollment Period or the January 1 to March 31 Medicare Advantage Open Enrollment Period", "es": "Cambiar de plan Medicare Advantage fuera del Período de Inscripción Anual del 15 de octubre al 7 de diciembre o del Período de Inscripción Abierta de Medicare Advantage del 1 de enero al 31 de marzo" },
-      { "en": "Applying for Medicaid dual-eligible cost-sharing help with income above your state's threshold", "es": "Solicitar ayuda de costo compartido de elegibilidad dual de Medicaid con ingresos superiores al límite de su estado" }
-    ],
-    "deadline": {
-      "en": "Medicare Annual Enrollment Period: October 15 to December 7, 2026. ACA Open Enrollment for 2026 plans: November 1, 2025 to January 15, 2026. Medigap guaranteed-issue window: the 6 months after Part B starts.",
-      "es": "Período de Inscripción Anual de Medicare: 15 de octubre al 7 de diciembre de 2026. Inscripción Abierta del ACA para planes de 2026: 1 de noviembre de 2025 al 15 de enero de 2026. Ventana de emisión garantizada de Medigap: los 6 meses después de que comienza la Parte B."
-    }
-  },
-
   "faqs": {
     "en": [
       {
-        "question": "Does Original Medicare have an out-of-pocket maximum?",
-        "answer": "No. Original Medicare (Part A and Part B) has no annual out-of-pocket maximum in 2026, unlike Medicare Advantage plans (capped at $9,250 in-network) and ACA-compliant private insurance (capped at $10,600 individual). Adding a Medigap policy or switching to Medicare Advantage is the only way to cap Original Medicare's cost exposure."
+        "question": "Does Original Medicare have an out-of-pocket maximum in 2026?",
+        "answer": "No. Original Medicare (Part A and Part B) has no annual out-of-pocket maximum in 2026. You pay the $283 Part B deductible, then 20% of approved Part B charges, plus the $1,736 Part A deductible for each inpatient benefit period. A Medigap policy or a Medicare Advantage plan is how most people limit that exposure."
       },
       {
-        "question": "Is Medicare Advantage cheaper than private insurance out-of-pocket?",
-        "answer": "For most enrollees, yes. The average Medicare Advantage plan caps in-network out-of-pocket spending around $5,421 in 2026, according to KFF, well below the $10,600 individual maximum on ACA-compliant private plans. Actual savings depend on your specific plan's deductible, copays, and whether your providers are in-network."
+        "question": "What is the Medicare Advantage out-of-pocket limit in 2026?",
+        "answer": "The 2026 in-network maximum for Medicare Advantage is $9,250, and plans may set lower limits. A separate combined in-network and out-of-network limit also applies. The cap excludes your monthly premiums, including the $202.90 Part B premium in 2026, and it applies only to covered services."
       },
       {
-        "question": "What is the 2026 out-of-pocket maximum for private insurance?",
-        "answer": "The 2026 ACA-mandated out-of-pocket maximum is $10,600 for an individual and $21,200 for a family, per the HHS Notice of Benefit and Payment Parameters for 2026. This cap applies to ACA-compliant employer plans and marketplace plans but does not apply to Original Medicare."
+        "question": "What is the out-of-pocket maximum for private ACA-compliant insurance in 2026?",
+        "answer": "The federal 2026 limit is $10,600 for one person under ACA-compliant plans, according to healthcare.gov. It counts deductibles, copays, and coinsurance for covered in-network essential health benefits and excludes premiums. Many employer and Marketplace plans set their cap below the federal maximum."
       },
       {
-        "question": "How much is the Medicare Part B deductible in 2026?",
-        "answer": "The 2026 Medicare Part B deductible is $283, and the standard Part B monthly premium is $202.90. After meeting the deductible, most beneficiaries pay 20% coinsurance on covered outpatient services with no annual limit unless they have Medigap or Medicare Advantage."
+        "question": "Is Medicare cheaper than private insurance overall?",
+        "answer": "It depends on your health use and plan choice. Original Medicare has a $283 Part B deductible in 2026, lower than many private plan deductibles, but no ceiling on the 20% coinsurance. Private and Medicare Advantage plans cap yearly spending at $10,600 and $9,250 respectively (2026). Add premiums to compare totals."
       },
       {
-        "question": "Does Medigap eliminate Medicare's out-of-pocket costs?",
-        "answer": "It depends on the plan letter. Medigap Plan G, the most comprehensive plan available to new enrollees in 2026, covers the Part A deductible and Part A and B coinsurance, leaving only the $283 Part B deductible as an out-of-pocket cost. Medigap premiums themselves, typically $150 to $200 a month in 2026, are a separate ongoing cost."
+        "question": "Can I use private insurance instead of Medicare after 65?",
+        "answer": "Yes, in some cases. If you or your spouse is still working and covered by an employer plan, you can usually delay Medicare Part B without a penalty in 2026. Once the employer coverage ends, a special enrollment period of 8 months applies. Part A is usually premium free, so many people keep both."
       },
       {
-        "question": "What is the average deductible for employer-sponsored insurance in 2026?",
-        "answer": "The most recent data, the 2025 KFF Employer Health Benefits Survey, found the average deductible for single coverage was $1,886, and 34% of covered workers had a deductible of $2,000 or more. 2026 figures typically rise 5% to 7% based on recent trends."
+        "question": "Does Medigap cover the 20% Part B coinsurance in 2026?",
+        "answer": "Yes, most Medigap plans do. Plan G pays the 20% Part B coinsurance and the Part A deductible, and you pay the $283 Part B deductible in 2026 plus the monthly premium. Plan G does not include Part D prescription coverage, so you still need a separate drug plan."
       },
       {
-        "question": "What are the alternatives if I want lower out-of-pocket costs than Original Medicare offers?",
-        "answer": "The main options are a Medigap policy, a Medicare Advantage plan, employer retiree coverage, Medicare Savings Programs or Medicaid for dual-eligible beneficiaries, and PACE in states where it is available. Each caps or eliminates the cost exposure that comes with staying on Original Medicare alone."
+        "question": "How does prescription drug cost sharing compare in 2026?",
+        "answer": "Medicare Part D caps out-of-pocket drug spending at $2,100 in 2026 and limits insulin to $35 per month. Private plans set their own formulary tiers and copays and must stay within the $10,600 federal medical and drug out-of-pocket limit for one person in 2026."
       },
       {
-        "question": "Do dual-eligible beneficiaries pay Medicare out-of-pocket costs?",
-        "answer": "Generally no. Beneficiaries who qualify for both Medicare and Medicaid, about 12 million Americans, have their Medicare premiums, deductibles, and coinsurance covered by Medicaid or a Medicare Savings Program, removing the out-of-pocket exposure that Original Medicare alone would otherwise create."
+        "question": "Where can I get free help comparing plan costs?",
+        "answer": "Your State Health Insurance Assistance Program (SHIP) offers free, unbiased counseling on Medicare options, and 1-800-MEDICARE or medicare.gov can show 2026 plan costs. For Marketplace plans, use healthcare.gov or call 1-800-318-2596 for the 2026 coverage year."
       }
     ],
     "es": [
       {
-        "question": "¿Medicare Original tiene un máximo de gastos de bolsillo?",
-        "answer": "No. Medicare Original (Parte A y Parte B) no tiene un máximo anual de gastos de bolsillo en 2026, a diferencia de los planes Medicare Advantage (con tope de $9,250 dentro de la red) y el seguro privado conforme al ACA (con tope de $10,600 individual). Agregar una póliza Medigap o cambiarse a Medicare Advantage es la única forma de limitar la exposición de costos de Medicare Original."
+        "question": "¿Medicare Original tiene un máximo de gastos de bolsillo en 2026?",
+        "answer": "No. Medicare Original (Parte A y Parte B) no tiene un máximo anual de gastos de bolsillo en 2026. Usted paga el deducible de la Parte B de $283, luego el 20% de los cargos aprobados de la Parte B, más el deducible de la Parte A de $1,736 por cada período de beneficios hospitalarios. Una póliza Medigap o un plan Medicare Advantage es la forma en que la mayoría limita esa exposición."
       },
       {
-        "question": "¿Medicare Advantage es más barato que el seguro privado en gastos de bolsillo?",
-        "answer": "Para la mayoría de los inscritos, sí. El plan Medicare Advantage promedio limita el gasto de bolsillo dentro de la red a alrededor de $5,421 en 2026, según KFF, muy por debajo del máximo individual de $10,600 en los planes privados conformes al ACA. Los ahorros reales dependen del deducible específico de su plan, los copagos y si sus proveedores están dentro de la red."
+        "question": "¿Cuál es el límite de gastos de bolsillo de Medicare Advantage en 2026?",
+        "answer": "El máximo dentro de la red de Medicare Advantage en 2026 es de $9,250, y los planes pueden fijar límites más bajos. También aplica un límite combinado separado dentro y fuera de la red. El tope excluye sus primas mensuales, incluida la prima de la Parte B de $202.90 en 2026, y aplica solo a servicios cubiertos."
       },
       {
-        "question": "¿Cuál es el máximo de gastos de bolsillo de 2026 para el seguro privado?",
-        "answer": "El máximo de gastos de bolsillo obligatorio por el ACA para 2026 es de $10,600 para un individuo y $21,200 para una familia, según el Aviso de Parámetros de Beneficios y Pagos de HHS para 2026. Este tope aplica a los planes de empleador y del mercado conformes al ACA, pero no aplica a Medicare Original."
+        "question": "¿Cuál es el máximo de gastos de bolsillo del seguro privado que cumple con el ACA en 2026?",
+        "answer": "El límite federal de 2026 es de $10,600 para una persona bajo planes que cumplen con el ACA, según healthcare.gov. Cuenta deducibles, copagos y coseguro de beneficios esenciales de salud cubiertos dentro de la red y excluye las primas. Muchos planes de empleador y del Mercado fijan su tope por debajo del máximo federal."
       },
       {
-        "question": "¿Cuánto es el deducible de la Parte B de Medicare en 2026?",
-        "answer": "El deducible de la Parte B de Medicare en 2026 es de $283, y la prima mensual estándar de la Parte B es de $202.90. Después de cumplir con el deducible, la mayoría de los beneficiarios paga un coaseguro del 20% en servicios ambulatorios cubiertos sin límite anual a menos que tengan Medigap o Medicare Advantage."
+        "question": "¿Medicare es más barato que el seguro privado en general?",
+        "answer": "Depende de su uso de servicios y de su elección de plan. Medicare Original tiene un deducible de la Parte B de $283 en 2026, menor que el de muchos planes privados, pero sin techo para el coseguro de 20%. Los planes privados y Medicare Advantage limitan el gasto anual a $10,600 y $9,250 respectivamente (2026). Sume las primas para comparar totales."
       },
       {
-        "question": "¿Medigap elimina los costos de bolsillo de Medicare?",
-        "answer": "Depende de la letra del plan. El Plan G de Medigap, el plan más completo disponible para nuevos inscritos en 2026, cubre el deducible de la Parte A y el coaseguro de las Partes A y B, dejando solo el deducible de $283 de la Parte B como costo de bolsillo. Las primas de Medigap en sí, típicamente de $150 a $200 al mes en 2026, son un costo continuo separado."
+        "question": "¿Puedo usar seguro privado en lugar de Medicare después de los 65?",
+        "answer": "Sí, en algunos casos. Si usted o su cónyuge siguen trabajando y tienen un plan de empleador, normalmente puede retrasar la Parte B de Medicare sin multa en 2026. Cuando termina la cobertura del empleador, aplica un período especial de inscripción de 8 meses. La Parte A suele ser gratis, por lo que muchas personas mantienen ambas."
       },
       {
-        "question": "¿Cuál es el deducible promedio del seguro patrocinado por el empleador en 2026?",
-        "answer": "Los datos más recientes, la Encuesta de Beneficios de Salud del Empleador de KFF 2025, encontraron que el deducible promedio para cobertura individual fue de $1,886, y el 34% de los trabajadores cubiertos tenía un deducible de $2,000 o más. Las cifras de 2026 suelen subir entre 5% y 7% según las tendencias recientes."
+        "question": "¿Medigap cubre el coseguro de 20% de la Parte B en 2026?",
+        "answer": "Sí, la mayoría de los planes Medigap lo hacen. El Plan G paga el coseguro de 20% de la Parte B y el deducible de la Parte A, y usted paga el deducible de la Parte B de $283 en 2026 más la prima mensual. El Plan G no incluye cobertura de medicamentos de la Parte D, así que aún necesita un plan de medicamentos aparte."
       },
       {
-        "question": "¿Cuáles son las alternativas si quiero costos de bolsillo más bajos que los que ofrece Medicare Original?",
-        "answer": "Las principales opciones son una póliza Medigap, un plan Medicare Advantage, cobertura de empleador para jubilados, Programas de Ahorro de Medicare o Medicaid para beneficiarios con elegibilidad dual, y PACE en los estados donde está disponible. Cada uno limita o elimina la exposición de costos que conlleva quedarse solo con Medicare Original."
+        "question": "¿Cómo se comparan los costos de medicamentos recetados en 2026?",
+        "answer": "La Parte D de Medicare limita el gasto de bolsillo en medicamentos a $2,100 en 2026 y limita la insulina a $35 al mes. Los planes privados fijan sus propios niveles de formulario y copagos y deben mantenerse dentro del límite federal de $10,600 de gastos médicos y de medicamentos para una persona en 2026."
       },
       {
-        "question": "¿Los beneficiarios con elegibilidad dual pagan costos de bolsillo de Medicare?",
-        "answer": "Generalmente no. Los beneficiarios que califican tanto para Medicare como para Medicaid, alrededor de 12 millones de estadounidenses, tienen sus primas, deducibles y coaseguros de Medicare cubiertos por Medicaid o un Programa de Ahorro de Medicare, eliminando la exposición de gastos de bolsillo que Medicare Original por sí solo generaría."
+        "question": "¿Dónde puedo obtener ayuda gratuita para comparar costos de planes?",
+        "answer": "Su Programa Estatal de Asistencia sobre Seguro de Salud (SHIP) ofrece asesoría gratuita e imparcial sobre las opciones de Medicare, y 1-800-MEDICARE o medicare.gov pueden mostrar los costos de planes de 2026. Para planes del Mercado, use healthcare.gov o llame al 1-800-318-2596 para el año de cobertura 2026."
       }
     ]
   },
-
+  "howToApply": {
+    "numberedSteps": [
+      {
+        "en": "Step 1: List your expected 2026 care, including doctors, prescriptions, and procedures.",
+        "es": "Paso 1: Haga una lista de la atención esperada en 2026, incluidos médicos, recetas y procedimientos."
+      },
+      {
+        "en": "Step 2: Confirm your enrollment window, such as the Annual Enrollment Period of October 15 to December 7, 2026.",
+        "es": "Paso 2: Confirme su período de inscripción, como el Período Anual de Elección del 15 de octubre al 7 de diciembre de 2026."
+      },
+      {
+        "en": "Step 3: Compare Medicare Advantage, Medigap, and Part D options in the Medicare Plan Finder at medicare.gov.",
+        "es": "Paso 3: Compare las opciones de Medicare Advantage, Medigap y Parte D en el Buscador de Planes de Medicare en medicare.gov."
+      },
+      {
+        "en": "Step 4: Total premiums plus expected deductibles, coinsurance, and the out-of-pocket maximum for each option.",
+        "es": "Paso 4: Sume las primas más los deducibles, el coseguro y el máximo de gastos de bolsillo esperados de cada opción."
+      },
+      {
+        "en": "Step 5: Enroll through medicare.gov, the plan, or SSA, and keep your confirmation.",
+        "es": "Paso 5: Inscríbase a través de medicare.gov, el plan o el SSA, y conserve su confirmación."
+      }
+    ],
+    "govStartingUrl": "https://www.medicare.gov/plan-compare/",
+    "documentsNeeded": [
+      {
+        "en": "Medicare number from your red, white, and blue card",
+        "es": "Número de Medicare de su tarjeta roja, blanca y azul"
+      },
+      {
+        "en": "Current list of prescriptions with doses",
+        "es": "Lista actual de recetas con dosis"
+      },
+      {
+        "en": "Names of your doctors and preferred hospitals",
+        "es": "Nombres de sus médicos y hospitales preferidos"
+      },
+      {
+        "en": "ZIP code and county of residence",
+        "es": "Código postal y condado de residencia"
+      },
+      {
+        "en": "Recent bills or explanation of benefits statements",
+        "es": "Facturas recientes o explicaciones de beneficios"
+      }
+    ],
+    "commonDenialReasons": [
+      {
+        "en": "Applying outside an enrollment window without a qualifying event",
+        "es": "Solicitar fuera de un período de inscripción sin un evento calificado"
+      },
+      {
+        "en": "Medigap underwriting denial after the six-month open enrollment window ends",
+        "es": "Rechazo de suscripción de Medigap después de que termina la ventana de inscripción abierta de seis meses"
+      },
+      {
+        "en": "Living outside the plan's service area",
+        "es": "Vivir fuera del área de servicio del plan"
+      },
+      {
+        "en": "Not enrolled in both Part A and Part B for Medicare Advantage or Medigap",
+        "es": "No estar inscrito en las Partes A y B para Medicare Advantage o Medigap"
+      }
+    ],
+    "deadline": {
+      "en": "Annual Enrollment Period: October 15 to December 7, 2026 (coverage begins January 1, 2027)",
+      "es": "Período Anual de Elección: del 15 de octubre al 7 de diciembre de 2026 (la cobertura comienza el 1 de enero de 2027)"
+    }
+  },
   "relatedLinks": [
     {
-      "label": { "en": "What Is an Out-of-Pocket Maximum? 2026 Limits Explained", "es": "¿Qué es un Máximo de Gastos de Bolsillo? Límites de 2026 Explicados" },
-      "href": "/glossary/out-of-pocket-maximum"
+      "label": {
+        "en": "What Medicare Does Not Cover",
+        "es": "Lo que Medicare no cubre"
+      },
+      "href": "/qa/6-things-medicare-doesn-t-cover"
     },
     {
-      "label": { "en": "Compare Medicare Supplement Plan G and Plan N Side by Side", "es": "Compare el Plan G y el Plan N de Medicare Supplement Lado a Lado" },
-      "href": "/qa/compare-medicare-supplement-plan-g-and-plan-n-side-by-side"
-    },
-    {
-      "label": { "en": "Analyze Your Medical Bill", "es": "Analice Su Factura Médica" },
+      "label": {
+        "en": "Bill Analyzer",
+        "es": "Analizador de facturas"
+      },
       "href": "/medical-bill-analyzer"
     },
     {
-      "label": { "en": "Check Your Eligibility", "es": "Verifique Su Elegibilidad" },
+      "label": {
+        "en": "Check Your Eligibility",
+        "es": "Verifique su elegibilidad"
+      },
       "href": "/screener"
     }
   ],
-
   "sources": [
     {
-      "name": "CMS: 2026 Medicare Parts A & B Premiums and Deductibles Fact Sheet",
+      "name": "Medicare.gov: What Medicare costs",
+      "url": "https://www.medicare.gov/basics/costs/medicare-costs",
+      "note": {
+        "en": "Official 2026 Medicare Part A, Part B, and Part D cost sharing.",
+        "es": "Costos compartidos oficiales de 2026 de las Partes A, B y D de Medicare."
+      }
+    },
+    {
+      "name": "CMS: 2026 Medicare Parts A and B premiums and deductibles",
       "url": "https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles",
       "note": {
-        "en": "Official CMS fact sheet listing the 2026 Part A deductible, Part A coinsurance, Part B deductible, and Part B premium.",
-        "es": "Hoja informativa oficial de CMS que enumera el deducible de la Parte A de 2026, el coaseguro de la Parte A, el deducible de la Parte B y la prima de la Parte B."
+        "en": "CMS fact sheet with the $202.90 Part B premium and $283 deductible for 2026.",
+        "es": "Hoja informativa de CMS con la prima de la Parte B de $202.90 y el deducible de $283 para 2026."
       }
     },
     {
-      "name": "Medicare.gov: Medicare Costs 2026",
-      "url": "https://www.medicare.gov/publications/11579-medicare-costs.pdf",
+      "name": "Healthcare.gov: Out-of-pocket maximum/limit",
+      "url": "https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/",
       "note": {
-        "en": "Official Medicare.gov publication detailing 2026 costs across Part A, Part B, Part D, and Medicare Advantage out-of-pocket limits.",
-        "es": "Publicación oficial de Medicare.gov que detalla los costos de 2026 en la Parte A, Parte B, Parte D y los límites de gastos de bolsillo de Medicare Advantage."
+        "en": "Defines the ACA annual out-of-pocket limit for compliant plans.",
+        "es": "Define el límite anual de bolsillo del ACA para planes que cumplen."
       }
     },
     {
-      "name": "Federal Register: HHS Notice of Benefit and Payment Parameters for 2026",
-      "url": "https://www.federalregister.gov/documents/2025/01/15/2025-00640/patient-protection-and-affordable-care-act-hhs-notice-of-benefit-and-payment-parameters-for-2026-and",
+      "name": "KFF: Medicare Advantage tracker",
+      "url": "https://www.kff.org/medicare/",
       "note": {
-        "en": "Federal rule setting the 2026 ACA out-of-pocket maximum for private, ACA-compliant health plans.",
-        "es": "Norma federal que establece el máximo de gastos de bolsillo del ACA para 2026 para los planes de salud privados conformes al ACA."
+        "en": "KFF analysis of Medicare Advantage out-of-pocket limits and plan trends.",
+        "es": "Análisis de KFF sobre los límites de bolsillo y las tendencias de Medicare Advantage."
       }
     },
     {
-      "name": "KFF: 2025 Employer Health Benefits Survey",
-      "url": "https://www.kff.org/health-costs/2025-employer-health-benefits-survey/",
+      "name": "KFF: Employer Health Benefits Survey",
+      "url": "https://www.kff.org/health-costs/",
       "note": {
-        "en": "KFF's annual survey of employer-sponsored insurance costs, including the average deductible for single coverage.",
-        "es": "Encuesta anual de KFF sobre los costos del seguro patrocinado por el empleador, incluido el deducible promedio para cobertura individual."
-      }
-    },
-    {
-      "name": "KFF: Medicare Advantage in 2026",
-      "url": "https://www.kff.org/medicare/medicare-advantage-in-2026-premiums-out-of-pocket-limits-supplemental-benefits-and-prior-authorization/",
-      "note": {
-        "en": "KFF analysis of 2026 Medicare Advantage out-of-pocket limits, premiums, and the enrollment-weighted average out-of-pocket cap.",
-        "es": "Análisis de KFF sobre los límites de gastos de bolsillo, primas y el tope promedio ponderado por inscripción de Medicare Advantage en 2026."
+        "en": "Source for average employer plan deductibles reported in 2025.",
+        "es": "Fuente de los deducibles promedio de planes de empleador reportados en 2025."
       }
     }
   ],
-
+  "subtype": "coverage",
   "topicCluster": "medicare-coverage",
   "keyTerms": {
-    "en": ["medicare vs private insurance out-of-pocket costs", "medicare out-of-pocket maximum 2026", "medicare advantage out-of-pocket cap 2026", "aca out-of-pocket maximum 2026", "medicare vs employer insurance costs"],
-    "es": ["medicare vs seguro privado costos de bolsillo", "maximo de gastos de bolsillo medicare 2026", "tope de gastos de bolsillo medicare advantage 2026", "maximo de gastos de bolsillo aca 2026", "medicare vs seguro de empleador costos"]
+    "en": [
+      "medicare vs private insurance costs",
+      "medicare out-of-pocket costs 2026",
+      "medicare advantage out-of-pocket maximum 2026"
+    ],
+    "es": [
+      "medicare vs seguro privado costos",
+      "gastos de bolsillo medicare 2026",
+      "maximo de bolsillo medicare advantage 2026"
+    ]
   },
   "isLighthouse": false,
   "isDeprecated": false

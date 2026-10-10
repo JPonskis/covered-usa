@@ -1,0 +1,518 @@
+{
+  "slug": "business-closed-coverage",
+  "eventName": {
+    "en": "Business Closed",
+    "es": "Cierre de Su Negocio"
+  },
+  "category": "Job Loss",
+  "topic": "Special Enrollment Period and health insurance options after closing a business or ending self-employment",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-10-10",
+  "readingTime": "9 min read",
+  "topicCluster": "event-medicaid-pivot",
+  "keyTerms": {
+    "en": [
+      "business closed health insurance 2026",
+      "health insurance after closing a business",
+      "special enrollment period business closure",
+      "self-employed lost income health insurance 2026",
+      "business closed COBRA or Marketplace"
+    ],
+    "es": [
+      "seguro médico negocio cerrado 2026",
+      "seguro médico después de cerrar un negocio",
+      "período de inscripción especial cierre de negocio",
+      "trabajador independiente perdió ingresos seguro médico 2026"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+
+  "meta": {
+    "title": {
+      "en": "Business Closed? Health Insurance Options in 2026 | CoveredUSA",
+      "es": "¿Cerró Su Negocio? Opciones de Seguro Médico 2026 | CoveredUSA"
+    },
+    "description": {
+      "en": "Business closed in 2026? You have 60 days to replace lost group coverage. Compare Medicaid, Marketplace subsidies, COBRA, and a spouse's plan.",
+      "es": "¿Cerró su negocio en 2026? Tiene 60 días para reemplazar la cobertura grupal perdida. Compare Medicaid, subsidios del Mercado, COBRA y plan del cónyuge."
+    }
+  },
+
+  "hero": {
+    "h1": {
+      "en": "Business Closed in 2026? Here's How to Replace Your Health Insurance",
+      "es": "¿Cerró Su Negocio en 2026? Así Reemplaza Su Seguro Médico"
+    },
+    "subhero": {
+      "en": "You have 60 days from the date your business health plan ends to enroll in a new plan. Medicaid stays open year-round if your 2026 income drops far enough.",
+      "es": "Tiene 60 días desde la fecha en que termina el plan de salud de su negocio para inscribirse en un nuevo plan. Medicaid está abierto todo el año si su ingreso de 2026 baja lo suficiente."
+    }
+  },
+
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from the date your business health plan ends",
+      "es": "Tiene 60 días desde la fecha en que termina el plan de salud de su negocio"
+    },
+    "body": {
+      "en": "Your Marketplace Special Enrollment Period (SEP) for loss of coverage runs 60 days after your group health plan ends, and you can also report the loss up to 60 days before it happens. For example, if your business plan ends October 31, 2026, your window runs from September 1, 2026 through December 30, 2026. Miss it and you wait for ACA Open Enrollment, which starts November 1, 2026 for 2027 coverage, unless another qualifying life event applies. Closing a business while holding an individual Marketplace plan does not open an SEP by itself, and Medicaid stays open year-round.",
+      "es": "Su Período de Inscripción Especial (SEP) del Mercado por pérdida de cobertura dura 60 días después de que termina su plan de salud grupal, y también puede reportar la pérdida hasta 60 días antes de que ocurra. Por ejemplo, si el plan de su negocio termina el 31 de octubre de 2026, su ventana va del 1 de septiembre de 2026 al 30 de diciembre de 2026. Si la pierde, debe esperar la Inscripción Abierta del ACA, que empieza el 1 de noviembre de 2026 para la cobertura de 2027, a menos que aplique otro evento calificador de vida. Cerrar un negocio teniendo un plan individual del Mercado no abre un SEP por sí solo, y Medicaid sigue abierto todo el año."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      {
+        "label": { "en": "COBRA election (only if a group plan continues)", "es": "Elección de COBRA (solo si continúa un plan grupal)" },
+        "days": 60
+      },
+      {
+        "label": { "en": "Spouse's employer plan", "es": "Plan del empleador del cónyuge" },
+        "days": 30
+      },
+      {
+        "label": { "en": "Medicaid and CHIP (if income qualifies)", "es": "Medicaid y CHIP (si el ingreso califica)" },
+        "days": null
+      }
+    ]
+  },
+
+  "quickAnswer": {
+    "en": "Closing a business in 2026 opens a 60-day Marketplace Special Enrollment Period only if you lose group coverage that the business sponsored; a sole proprietor keeping an individual plan must instead update income at healthcare.gov. Your options are Medicaid (free, year-round, for household income under 138% of the Federal Poverty Level, $22,025 for one person in 2026), a Marketplace plan with 2026 premium tax credits, a spouse's employer plan (30-day window), or COBRA at 102% of the full premium. COBRA exists only if the business or a related employer keeps a group plan, so a fully closed company usually has none. Report your projected 2026 income, not last year's profit, to get the right subsidy.",
+    "es": "Cerrar un negocio en 2026 abre un Período de Inscripción Especial del Mercado de 60 días solo si pierde cobertura grupal patrocinada por el negocio; un propietario único que conserva un plan individual debe actualizar su ingreso en healthcare.gov. Sus opciones son Medicaid (gratis, todo el año, con ingreso del hogar bajo el 138% del Nivel Federal de Pobreza, $22,025 para una persona en 2026), un plan del Mercado con créditos fiscales de 2026, el plan del empleador del cónyuge (ventana de 30 días) o COBRA al 102% de la prima completa. COBRA existe solo si el negocio o un empleador relacionado mantiene un plan grupal, así que una empresa cerrada por completo normalmente no tiene ninguno. Reporte su ingreso proyectado de 2026, no la ganancia del año pasado, para obtener el subsidio correcto."
+  },
+
+  "introParagraphs": [
+    {
+      "en": "Closing a business in 2026 changes your health coverage in one of two ways, and the difference decides your deadline. Owners and employees covered by a group health plan through the business lose that plan when it terminates, and that loss of coverage opens a 60-day Marketplace SEP. Sole proprietors who already hold an individual Marketplace plan keep that plan after the doors close, because ending a business is not a qualifying life event (QLE) by itself, but a drop in income changes the subsidy they should be receiving. Medicaid, which is free and open year-round in the 40 expansion states plus DC, becomes available when projected 2026 household income falls under 138% of the Federal Poverty Level, or $22,025 for a single adult in 2026. Medi-Cal in California, AHCCCS in Arizona, MassHealth in Massachusetts, and BadgerCare in Wisconsin all operate within that federal framework under different names. Reading your termination notice first tells you which situation applies and which clock is running.",
+      "es": "Cerrar un negocio en 2026 cambia su cobertura de salud de una de dos maneras, y la diferencia determina su fecha límite. Los dueños y empleados cubiertos por un plan de salud grupal del negocio pierden ese plan cuando termina, y esa pérdida de cobertura abre un SEP del Mercado de 60 días. Los propietarios únicos que ya tienen un plan individual del Mercado conservan ese plan cuando cierran, porque terminar un negocio no es por sí solo un evento calificador de vida, pero una caída en el ingreso cambia el subsidio que deberían recibir. Medicaid, que es gratis y está abierto todo el año en los 40 estados con expansión más DC, queda disponible cuando el ingreso proyectado del hogar en 2026 baja del 138% del Nivel Federal de Pobreza, o $22,025 para un adulto soltero en 2026. Medi-Cal en California, AHCCCS en Arizona, MassHealth en Massachusetts y BadgerCare en Wisconsin operan dentro de ese marco federal con nombres distintos. Leer primero su aviso de terminación le dice qué situación aplica y qué reloj está corriendo."
+    },
+    {
+      "en": "Marketplace coverage after a closure is usually cheaper than owners expect, because subsidies follow projected income, not last year's profit. For 2026, the premium tax credit applies from 100% to 400% of the Federal Poverty Level ($15,960 to $63,840 for a single person in 2026), and the enhanced credits that removed the 400% cap expired on January 1, 2026, so the subsidy cliff is back. A second 2026 change raises the stakes on estimating income: starting with tax year 2026, repayment caps on excess advance premium tax credits no longer apply, so Form 8962 reconciliation can produce a full repayment bill when you underestimate. Healthcare.gov, Medicaid.gov, and KFF's Marketplace analysis are the primary sources behind the figures on this page. COBRA continuation is a narrower option than most closing owners assume, since COBRA requires the employer to keep some group health plan in place. A fully closed business normally has none, so COBRA rarely applies when the whole company shuts down.",
+      "es": "La cobertura del Mercado después de un cierre suele ser más barata de lo que esperan los dueños, porque los subsidios siguen el ingreso proyectado, no la ganancia del año pasado. Para 2026, el crédito fiscal de prima aplica del 100% al 400% del Nivel Federal de Pobreza ($15,960 a $63,840 para una persona en 2026), y los créditos mejorados que eliminaron el tope del 400% vencieron el 1 de enero de 2026, así que el precipicio de subsidios regresó. Un segundo cambio de 2026 eleva la importancia de estimar bien el ingreso: desde el año fiscal 2026, los topes de reembolso de créditos fiscales de prima adelantados en exceso ya no aplican, por lo que la reconciliación del Formulario 8962 puede generar una factura de reembolso completa si subestima. Healthcare.gov, Medicaid.gov y el análisis del Mercado de KFF son las fuentes primarias de las cifras de esta página. La continuación COBRA es una opción más limitada de lo que suponen la mayoría de los dueños, porque COBRA exige que el empleador mantenga algún plan de salud grupal. Un negocio cerrado por completo normalmente no tiene ninguno, así que COBRA rara vez aplica cuando toda la empresa cierra."
+    }
+  ],
+
+  "steps": [
+    {
+      "name": { "en": "Confirm which coverage you are actually losing", "es": "Confirme qué cobertura está perdiendo realmente" },
+      "text": {
+        "en": "Check your plan termination notice or call your insurer to confirm whether you held a group plan through the business or an individual Marketplace plan. Write down the exact coverage end date, because the 60-day Marketplace SEP is counted from that date.",
+        "es": "Revise su aviso de terminación del plan o llame a su aseguradora para confirmar si tenía un plan grupal del negocio o un plan individual del Mercado. Anote la fecha exacta en que termina la cobertura, porque el SEP del Mercado de 60 días se cuenta desde esa fecha."
+      }
+    },
+    {
+      "name": { "en": "Calculate your projected 2026 household income", "es": "Calcule su ingreso proyectado del hogar para 2026" },
+      "text": {
+        "en": "Estimate your 2026 Modified Adjusted Gross Income (MAGI) by adding net profit from Schedule C through the closing date, final sales proceeds, severance, spouse wages, and any unemployment benefits. Use the total, not last year's profit, because the Marketplace sets your 2026 subsidy from projected annual income.",
+        "es": "Estime su Ingreso Bruto Ajustado Modificado (MAGI) de 2026 sumando la ganancia neta del Anexo C hasta la fecha de cierre, ingresos de la venta final, indemnización, salarios del cónyuge y beneficios de desempleo. Use el total, no la ganancia del año pasado, porque el Mercado fija su subsidio de 2026 con el ingreso anual proyectado."
+      }
+    },
+    {
+      "name": { "en": "Check Medicaid and CHIP first", "es": "Verifique primero Medicaid y CHIP" },
+      "text": {
+        "en": "Compare your projected 2026 income to 138% of the Federal Poverty Level in the household-size table below, then apply at healthcare.gov or your state Medicaid agency (Medi-Cal, AHCCCS, MassHealth, BadgerCare, or your state's program). Apply for your children's CHIP at the same time, since CHIP income limits are higher than adult Medicaid limits.",
+        "es": "Compare su ingreso proyectado de 2026 con el 138% del Nivel Federal de Pobreza en la tabla por tamaño de hogar de abajo, y luego solicite en healthcare.gov o en la agencia estatal de Medicaid (Medi-Cal, AHCCCS, MassHealth, BadgerCare o el programa de su estado). Solicite CHIP para sus hijos al mismo tiempo, porque los límites de ingreso de CHIP son más altos que los de Medicaid para adultos."
+      }
+    },
+    {
+      "name": { "en": "Enroll in a Marketplace plan inside the 60-day window", "es": "Inscríbase en un plan del Mercado dentro de la ventana de 60 días" },
+      "text": {
+        "en": "Log in at healthcare.gov (or your state Marketplace such as Covered California, MNsure, or kynect), select the loss-of-coverage SEP, upload your termination letter, and compare Silver and Bronze plans after 2026 premium tax credits. Pick a plan before your coverage ends so the new plan starts the first day of the next month with no gap.",
+        "es": "Inicie sesión en healthcare.gov (o en el Mercado de su estado como Covered California, MNsure o kynect), seleccione el SEP por pérdida de cobertura, cargue su carta de terminación y compare planes Silver y Bronze después de los créditos fiscales de 2026. Elija un plan antes de que termine su cobertura para que el nuevo plan empiece el primer día del mes siguiente sin interrupción."
+      }
+    },
+    {
+      "name": { "en": "Compare a spouse's plan and COBRA before you decide", "es": "Compare el plan del cónyuge y COBRA antes de decidir" },
+      "text": {
+        "en": "Ask your spouse's HR department about adding you within the 30-day HIPAA special enrollment window, and ask your plan administrator whether any group plan continues so COBRA can be elected within 60 days. Calculate the total monthly cost of each option and check whether your doctors are in each network before you submit an election.",
+        "es": "Pregunte al departamento de recursos humanos de su cónyuge sobre agregarlo dentro de la ventana especial de inscripción HIPAA de 30 días, y pregunte al administrador de su plan si continúa algún plan grupal para poder elegir COBRA dentro de 60 días. Calcule el costo mensual total de cada opción y verifique si sus médicos están en cada red antes de enviar una elección."
+      }
+    },
+    {
+      "name": { "en": "Keep tax records and update your income as the year unfolds", "es": "Guarde sus registros fiscales y actualice su ingreso durante el año" },
+      "text": {
+        "en": "Save your 1095-A from the Marketplace, update your projected income at healthcare.gov whenever final business results change, and file Form 8962 with your 2026 return to reconcile advance premium tax credits. Deduct premiums on Form 7206 only for months you had net self-employment profit and no employer plan available.",
+        "es": "Guarde su Formulario 1095-A del Mercado, actualice su ingreso proyectado en healthcare.gov cuando cambien los resultados finales del negocio y presente el Formulario 8962 con su declaración de 2026 para reconciliar los créditos fiscales de prima adelantados. Deduzca las primas en el Formulario 7206 solo por los meses con ganancia neta de trabajo por cuenta propia y sin plan de empleador disponible."
+      }
+    }
+  ],
+
+  "optionsComparison": {
+    "headers": {
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opción", "Costo típico", "Mejor para", "Fecha límite"]
+    },
+    "rows": [
+      {
+        "en": ["Medicaid / CHIP (Medi-Cal, AHCCCS, MassHealth, BadgerCare)", "$0 to low copays in 2026", "Projected 2026 income under 138% FPL ($22,025 for one person)", "Year-round, no deadline"],
+        "es": ["Medicaid / CHIP (Medi-Cal, AHCCCS, MassHealth, BadgerCare)", "$0 a copagos bajos en 2026", "Ingreso proyectado de 2026 bajo el 138% FPL ($22,025 para una persona)", "Todo el año, sin fecha límite"]
+      },
+      {
+        "en": ["ACA Marketplace plan with premium tax credits", "Often $0 to $300/mo after 2026 subsidies", "Most owners who lose group coverage and earn 138% to 400% FPL", "60-day SEP"],
+        "es": ["Plan del Mercado ACA con créditos fiscales de prima", "A menudo $0 a $300/mes después de subsidios de 2026", "La mayoría de dueños que pierden cobertura grupal y ganan 138% a 400% FPL", "SEP de 60 días"]
+      },
+      {
+        "en": ["Spouse's employer plan", "Varies; often below COBRA in 2026", "Married with a working spouse offering coverage", "30 days from coverage loss"],
+        "es": ["Plan del empleador del cónyuge", "Varía; a menudo menos que COBRA en 2026", "Casado con cónyuge empleado que ofrece cobertura", "30 días desde la pérdida de cobertura"]
+      },
+      {
+        "en": ["COBRA or state continuation", "102% of full premium, about $400 to $900/mo single in 2026", "Mid-treatment patients if a group plan still exists", "60-day election window"],
+        "es": ["COBRA o continuación estatal", "102% de la prima completa, cerca de $400 a $900/mes individual en 2026", "Pacientes en tratamiento si aún existe un plan grupal", "Ventana de elección de 60 días"]
+      },
+      {
+        "en": ["Keep your individual Marketplace plan and update income", "Premium falls as 2026 income falls", "Sole proprietors who already hold a Marketplace plan", "Update income any time before year-end"],
+        "es": ["Conservar su plan individual del Mercado y actualizar el ingreso", "La prima baja cuando baja el ingreso de 2026", "Propietarios únicos que ya tienen un plan del Mercado", "Actualice el ingreso en cualquier momento antes de fin de año"]
+      }
+    ],
+    "footnote": {
+      "en": "Costs in 2026 depend on your projected income, age, ZIP code, and plan metal level. COBRA applies only when the business or a related employer still sponsors a group health plan. The 400% FPL subsidy cliff returned on January 1, 2026.",
+      "es": "Los costos en 2026 dependen de su ingreso proyectado, edad, código postal y nivel del plan. COBRA aplica solo cuando el negocio o un empleador relacionado todavía patrocina un plan de salud grupal. El precipicio de subsidios del 400% FPL regresó el 1 de enero de 2026."
+    },
+    "source": "HealthCare.gov SEP rules, Medicaid.gov eligibility, U.S. Department of Labor COBRA guidance, KFF Marketplace analysis, HHS ASPE 2026 Poverty Guidelines"
+  },
+
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid + ACA subsidy income limits, 2026 (48 contiguous states + DC)",
+      "headers": ["Household size", "138% FPL (Medicaid, 2026)", "400% FPL (subsidy ceiling, 2026)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,863", "$86,560"],
+        ["3", "$37,702", "$109,280"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,378", "$154,720"],
+        ["6", "$61,217", "$177,440"],
+        ["7", "$69,055", "$200,160"],
+        ["8", "$76,894", "$222,880"],
+        ["Each additional person", "+ $7,838", "+ $22,720"]
+      ],
+      "footnote": "Alaska and Hawaii thresholds are higher. Use projected 2026 MAGI, including net business profit through the closing date. The 400% FPL subsidy cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026.",
+      "source": "HHS ASPE 2026 Poverty Guidelines (aspe.hhs.gov) and CMS premium tax credit thresholds"
+    },
+    "es": {
+      "caption": "Límites de ingreso de Medicaid + subsidios ACA, 2026 (48 estados contiguos + DC)",
+      "headers": ["Tamaño del hogar", "138% FPL (Medicaid, 2026)", "400% FPL (techo de subsidio, 2026)"],
+      "rows": [
+        ["1", "$22,025", "$63,840"],
+        ["2", "$29,863", "$86,560"],
+        ["3", "$37,702", "$109,280"],
+        ["4", "$45,540", "$132,000"],
+        ["5", "$53,378", "$154,720"],
+        ["6", "$61,217", "$177,440"],
+        ["7", "$69,055", "$200,160"],
+        ["8", "$76,894", "$222,880"],
+        ["Cada persona adicional", "+ $7,838", "+ $22,720"]
+      ],
+      "footnote": "Los umbrales de Alaska y Hawái son más altos. Use el MAGI proyectado de 2026, incluida la ganancia neta del negocio hasta la fecha de cierre. El precipicio de subsidios del 400% FPL regresó en 2026 después de que los créditos fiscales de prima mejorados vencieron el 1 de enero de 2026.",
+      "source": "Guías de Pobreza 2026 de HHS ASPE (aspe.hhs.gov) y umbrales de créditos fiscales de prima de CMS"
+    }
+  },
+
+  "documentsNeeded": {
+    "en": [
+      "Plan termination letter or insurer notice showing the exact coverage end date (proof of loss of coverage for the Marketplace SEP)",
+      "Business closure proof such as a dissolution filing, final payroll report, or notice of closing (supports the loss-of-coverage claim for owner-sponsored group plans)",
+      "Projected 2026 income records: year-to-date profit and loss statement, Schedule C from the prior year, final invoices, and any severance or unemployment award letter",
+      "Social Security numbers or immigration documents for everyone applying",
+      "Current address and ZIP code (plan availability and subsidy size depend on it)",
+      "Spouse's pay stubs and employer plan details if you are comparing a spouse's plan",
+      "Prior-year Form 1095-A and tax return, if you had Marketplace coverage and need to reconcile credits"
+    ],
+    "es": [
+      "Carta de terminación del plan o aviso de la aseguradora con la fecha exacta de fin de cobertura (prueba de pérdida de cobertura para el SEP del Mercado)",
+      "Prueba del cierre del negocio, como el registro de disolución, el informe final de nómina o el aviso de cierre (respalda la pérdida de cobertura de planes grupales patrocinados por el dueño)",
+      "Registros de ingreso proyectado de 2026: estado de ganancias y pérdidas del año hasta la fecha, Anexo C del año anterior, facturas finales y cualquier indemnización o carta de aprobación de desempleo",
+      "Números de Seguro Social o documentos de inmigración de todas las personas que solicitan",
+      "Dirección actual y código postal (la disponibilidad de planes y el tamaño del subsidio dependen de ello)",
+      "Talones de pago del cónyuge y detalles del plan del empleador si compara el plan de su cónyuge",
+      "Formulario 1095-A y declaración de impuestos del año anterior, si tuvo cobertura del Mercado y debe reconciliar créditos"
+    ]
+  },
+
+  "commonDenialReasons": {
+    "en": [
+      "Applying after the 60-day SEP window closes, or counting from the closing date of the business instead of the date the health plan actually ended",
+      "Missing proof of loss of coverage, such as no termination letter from the insurer or the group plan administrator",
+      "Claiming a loss-of-coverage SEP when the individual Marketplace plan is still active; ending a business alone does not trigger the SEP",
+      "Reporting last year's business profit instead of projected 2026 income, which triggers a verification request and a delayed or reduced subsidy",
+      "Applying for Marketplace subsidies without first checking Medicaid, when projected 2026 income falls under 138% of the Federal Poverty Level"
+    ],
+    "es": [
+      "Solicitar después de que cierra la ventana de 60 días del SEP, o contar desde la fecha de cierre del negocio en lugar de la fecha en que realmente terminó el plan de salud",
+      "Falta de prueba de pérdida de cobertura, como no tener carta de terminación de la aseguradora o del administrador del plan grupal",
+      "Reclamar un SEP por pérdida de cobertura cuando el plan individual del Mercado sigue activo; terminar un negocio por sí solo no activa el SEP",
+      "Reportar la ganancia del negocio del año pasado en lugar del ingreso proyectado de 2026, lo que genera una solicitud de verificación y un subsidio retrasado o reducido",
+      "Solicitar subsidios del Mercado sin revisar primero Medicaid, cuando el ingreso proyectado de 2026 está bajo el 138% del Nivel Federal de Pobreza"
+    ]
+  },
+
+  "comparisonNarrative": {
+    "heading": {
+      "en": "COBRA vs Marketplace vs Spouse's Plan: Which Should You Choose After Your Business Closes?",
+      "es": "COBRA vs Mercado vs Plan del Cónyuge: ¿Cuál Debe Elegir Después de Cerrar Su Negocio?"
+    },
+    "body": {
+      "en": "After a business closes in 2026, four pathways open, and the order matters. Medicaid comes first because it is free and open year-round whenever projected 2026 household income falls under 138% of the Federal Poverty Level ($22,025 for one person in 2026). COBRA preserves your old plan at 102% of the full premium, roughly $400 to $900/mo for one person in 2026, but COBRA exists only when the business or a related employer still sponsors a group plan; when the whole company shuts down and the plan terminates, no COBRA right exists. ACA Marketplace plans drop most enrollees with moderate 2026 income to $0 to $300/mo after premium tax credits, with the trade-off that your doctors may not be in the new network. A spouse's employer plan often costs less than COBRA, and HIPAA special enrollment rules (IRC Section 9801) give you 30 days to join after you lose other coverage. The decision matrix: Medicaid if income qualifies, then a spouse's plan if cheaper than the Marketplace, then a Marketplace plan with 2026 subsidies, and COBRA only when a group plan survives and you need a specific specialist or have already met a large 2026 deductible.",
+      "es": "Después de que un negocio cierra en 2026, se abren cuatro caminos, y el orden importa. Medicaid va primero porque es gratis y está abierto todo el año siempre que el ingreso proyectado del hogar en 2026 esté bajo el 138% del Nivel Federal de Pobreza ($22,025 para una persona en 2026). COBRA conserva su plan anterior al 102% de la prima completa, aproximadamente $400 a $900/mes para una persona en 2026, pero COBRA existe solo cuando el negocio o un empleador relacionado todavía patrocina un plan grupal; cuando toda la empresa cierra y el plan termina, no existe derecho a COBRA. Los planes del Mercado ACA bajan a la mayoría de los inscritos con ingreso moderado en 2026 a $0 a $300/mes después de los créditos fiscales de prima, con el inconveniente de que sus médicos podrían no estar en la nueva red. El plan del empleador de un cónyuge a menudo cuesta menos que COBRA, y las reglas de inscripción especial de HIPAA (sección 9801 del IRC) le dan 30 días para unirse después de perder otra cobertura. La matriz de decisión: Medicaid si el ingreso califica, luego el plan del cónyuge si es más barato que el Mercado, luego un plan del Mercado con subsidios de 2026, y COBRA solo cuando sobrevive un plan grupal y necesita un especialista específico o ya cumplió un deducible alto en 2026."
+    }
+  },
+
+  "stateRules": [
+    {
+      "state": "California",
+      "rule": "Californians shop on Covered California and can enroll in Medi-Cal year-round when projected 2026 income is under 138% FPL. Cal-COBRA extends continuation coverage up to 36 months for employers with 2 to 19 employees when a group plan continues.",
+      "sourceUrl": "https://www.coveredca.gov/"
+    },
+    {
+      "state": "New York",
+      "rule": "New Yorkers shop on NY State of Health, which also takes Medicaid applications year-round. State continuation law allows up to 36 months of coverage on fully insured group plans, but only while a group plan remains in force.",
+      "sourceUrl": "https://nystateofhealth.ny.gov/"
+    },
+    {
+      "state": "Minnesota",
+      "rule": "Minnesotans apply for Marketplace plans and Medical Assistance through MNsure. A closed business owner whose group plan ends can use the MNsure loss-of-coverage SEP with the same 60-day window.",
+      "sourceUrl": "https://www.mnsure.org/"
+    },
+    {
+      "state": "Wisconsin",
+      "rule": "Wisconsin did not adopt full Medicaid expansion. BadgerCare Plus covers childless adults up to 100% FPL ($15,960 for one person in 2026), and adults above that line use healthcare.gov with premium tax credits.",
+      "sourceUrl": "https://www.dhs.wisconsin.gov/badgercareplus/index.htm"
+    },
+    {
+      "state": "Texas and Florida",
+      "rule": "Texas and Florida have not expanded Medicaid, so a former business owner with projected 2026 income under 100% FPL ($15,960 for one person in 2026) generally falls into the coverage gap; incomes from 100% to 400% FPL qualify for subsidized plans at healthcare.gov.",
+      "sourceUrl": "https://www.healthcare.gov/medicaid-chip/medicaid-expansion-and-you/"
+    }
+  ],
+
+  "commonMistakes": {
+    "intro": {
+      "en": "Business owners make these costly errors when their company closes in 2026:",
+      "es": "Los dueños de negocios cometen estos errores costosos cuando su empresa cierra en 2026:"
+    },
+    "items": [
+      {
+        "en": "Assuming COBRA is available. COBRA requires the employer to keep a group health plan, so a fully closed business usually has no plan to continue.",
+        "es": "Suponer que COBRA está disponible. COBRA exige que el empleador mantenga un plan de salud grupal, así que un negocio cerrado por completo normalmente no tiene plan que continuar."
+      },
+      {
+        "en": "Waiting until the business is fully wound down to start shopping. The 60-day SEP clock starts when the health plan ends, and you can enroll up to 60 days before that date.",
+        "es": "Esperar a que el negocio esté totalmente liquidado para empezar a buscar. El reloj del SEP de 60 días empieza cuando termina el plan de salud, y puede inscribirse hasta 60 días antes de esa fecha."
+      },
+      {
+        "en": "Reporting last year's profit instead of projected 2026 income. A closing business often means far lower income, and the larger subsidy only arrives if you report it.",
+        "es": "Reportar la ganancia del año pasado en lugar del ingreso proyectado de 2026. Un negocio que cierra suele significar un ingreso mucho menor, y el subsidio mayor solo llega si usted lo reporta."
+      },
+      {
+        "en": "Underestimating income. Starting with tax year 2026, repayment caps on excess premium tax credits no longer apply, so an overstated subsidy can mean repaying the full difference on Form 8962.",
+        "es": "Subestimar el ingreso. Desde el año fiscal 2026, los topes de reembolso de créditos fiscales de prima en exceso ya no aplican, así que un subsidio excesivo puede significar devolver toda la diferencia en el Formulario 8962."
+      },
+      {
+        "en": "Skipping Medicaid. In 2026, a year with a closed business can push household income under 138% FPL, and Medicaid is free coverage with no SEP deadline.",
+        "es": "Saltarse Medicaid. En 2026, un año con un negocio cerrado puede llevar el ingreso del hogar por debajo del 138% FPL, y Medicaid es cobertura gratuita sin fecha límite de SEP."
+      }
+    ]
+  },
+
+  "detailSections": [
+    {
+      "heading": {
+        "en": "What Counts as Losing Coverage When a Business Closes in 2026",
+        "es": "Qué Cuenta como Perder Cobertura Cuando un Negocio Cierra en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Group health plans sponsored by the closing business create the clearest qualifying life event. When a small-group plan terminates because the company dissolves, every covered owner, employee, spouse, and dependent loses minimum essential coverage, and healthcare.gov grants a 60-day Special Enrollment Period counted from the termination date. Individual Marketplace plans work differently. A sole proprietor who bought a plan on healthcare.gov keeps it after the business closes, and ending the business is not a qualifying life event, so no new SEP appears. That owner should instead update projected 2026 income on the existing application so the premium tax credit recalculates. Voluntary cancellation of a plan, or termination for unpaid premiums, does not open an SEP either. Retaining proof matters: the Marketplace may ask for a document showing the date the plan ended, and the insurer's termination notice is the strongest evidence. Owners of S corporations and partnerships who were covered on the company's group plan fall in the same category as employees, so they also qualify for the 60-day window once that plan terminates.",
+          "es": "Los planes de salud grupales patrocinados por el negocio que cierra crean el evento calificador de vida más claro. Cuando un plan de grupo pequeño termina porque la empresa se disuelve, cada dueño, empleado, cónyuge y dependiente cubierto pierde la cobertura mínima esencial, y healthcare.gov otorga un Período de Inscripción Especial de 60 días contado desde la fecha de terminación. Los planes individuales del Mercado funcionan distinto. Un propietario único que compró un plan en healthcare.gov lo conserva cuando cierra el negocio, y terminar el negocio no es un evento calificador de vida, así que no aparece un nuevo SEP. Ese dueño debe actualizar el ingreso proyectado de 2026 en su solicitud existente para que el crédito fiscal de prima se recalcule. La cancelación voluntaria de un plan, o la terminación por falta de pago de primas, tampoco abre un SEP. Guardar pruebas importa: el Mercado puede pedir un documento con la fecha en que terminó el plan, y el aviso de terminación de la aseguradora es la mejor evidencia."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid Eligibility After Closing Your Business in 2026",
+        "es": "Elegibilidad para Medicaid Después de Cerrar Su Negocio en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Closing a business in 2026 often drops household income below the Medicaid line you did not qualify under while operating. Medicaid is income-gated at 138% of the Federal Poverty Level in the 40 expansion states plus DC, which means $22,025 for a single person or $45,540 for a family of 4 in 2026, and Medicaid.gov confirms that applications are accepted year-round. State programs carry their own names: California's Medi-Cal, Arizona's AHCCCS, Massachusetts's MassHealth, Wisconsin's BadgerCare, Connecticut's HUSKY Health, and Oklahoma's SoonerCare. Medicaid counts current monthly income at application, which helps a former owner whose business stopped producing revenue. The 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming) apply much stricter adult limits, so a former owner there with income between 100% and 400% FPL ($15,960 to $63,840 for one person in 2026) should use subsidized Marketplace coverage instead. Children often qualify for CHIP at higher incomes, commonly 200% to 300% FPL in 2026.",
+          "es": "Cerrar un negocio en 2026 suele bajar el ingreso del hogar por debajo del límite de Medicaid bajo el cual no calificaba mientras operaba. Medicaid tiene un límite de ingreso del 138% del Nivel Federal de Pobreza en los 40 estados con expansión más DC, es decir $22,025 para una persona o $45,540 para una familia de 4 en 2026, y Medicaid.gov confirma que se aceptan solicitudes todo el año. Los programas estatales tienen sus propios nombres: Medi-Cal de California, AHCCCS de Arizona, MassHealth de Massachusetts, BadgerCare de Wisconsin, HUSKY Health de Connecticut y SoonerCare de Oklahoma. Medicaid cuenta el ingreso mensual actual al momento de la solicitud, lo que ayuda a un exdueño cuyo negocio dejó de generar ingresos. Los 10 estados sin expansión (Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming) aplican límites mucho más estrictos para adultos, así que un exdueño allí con ingreso entre 100% y 400% FPL ($15,960 a $63,840 para una persona en 2026) debe usar cobertura subsidiada del Mercado. Los niños a menudo califican para CHIP con ingresos más altos, comúnmente 200% a 300% FPL en 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Why Each Document Matters for Your 2026 Application",
+        "es": "Por Qué Importa Cada Documento en Su Solicitud de 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The plan termination letter is the document that most often decides whether a Marketplace SEP application is approved, because healthcare.gov verifies loss of coverage against a dated notice. Business dissolution papers matter when the owner was covered under the company's group plan, since they show the plan ended for a reason outside the owner's control. Profit and loss statements and the prior-year Schedule C support your projected 2026 income, which drives both Medicaid eligibility and the size of the premium tax credit. A self-employed applicant can estimate income without pay stubs, but the Marketplace may ask for a signed attestation or a profit and loss statement when the figure looks inconsistent with tax data. Social Security numbers let the Marketplace run identity and income checks in minutes. Address and ZIP code decide which insurers and which benchmark Silver plan set your subsidy. A prior 1095-A lets you reconcile credits already received, which protects you from repayment surprises when you file in 2027.",
+          "es": "La carta de terminación del plan es el documento que más a menudo decide si se aprueba una solicitud de SEP del Mercado, porque healthcare.gov verifica la pérdida de cobertura con un aviso fechado. Los documentos de disolución del negocio importan cuando el dueño estaba cubierto por el plan grupal de la empresa, ya que muestran que el plan terminó por una razón fuera de su control. Los estados de ganancias y pérdidas y el Anexo C del año anterior respaldan su ingreso proyectado de 2026, que determina tanto la elegibilidad para Medicaid como el tamaño del crédito fiscal de prima. Un solicitante por cuenta propia puede estimar su ingreso sin talones de pago, pero el Mercado puede pedir una declaración firmada o un estado de ganancias y pérdidas cuando la cifra no coincide con los datos fiscales. Los números de Seguro Social permiten al Mercado verificar identidad e ingreso en minutos. La dirección y el código postal deciden qué aseguradoras y qué plan Silver de referencia fijan su subsidio. Un Formulario 1095-A anterior le permite reconciliar créditos ya recibidos, lo que lo protege de sorpresas de reembolso cuando presente su declaración en 2027."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Tax Items to Handle After Closing a Business in 2026",
+        "es": "Asuntos Fiscales que Atender Después de Cerrar un Negocio en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Self-employed health insurance deduction rules apply for the months your business earned a net profit in 2026. IRS Form 7206 lets a sole proprietor deduct Marketplace premiums, up to the net profit of the business, for months when no subsidized employer plan was available to you or your spouse. A business that closes at a loss produces no deduction. The Marketplace sends Form 1095-A in January 2027, and Form 8962 reconciles the advance premium tax credits paid during 2026 against the credit you actually earned based on final income. Starting with tax year 2026, repayment caps no longer limit how much excess credit you owe back, so updating income at healthcare.gov when final business numbers change is the best protection. Final self-employment tax filings, the closing of an EIN account with the IRS, and state business dissolution filings follow separate timelines, and a CPA can confirm those deadlines for your entity type.",
+          "es": "Las reglas de la deducción del seguro médico para trabajadores por cuenta propia aplican por los meses en que su negocio tuvo ganancia neta en 2026. El Formulario 7206 del IRS permite a un propietario único deducir las primas del Mercado, hasta la ganancia neta del negocio, por los meses en que no tuvo disponible un plan subsidiado de empleador usted ni su cónyuge. Un negocio que cierra con pérdida no genera deducción. El Mercado envía el Formulario 1095-A en enero de 2027, y el Formulario 8962 reconcilia los créditos fiscales de prima adelantados pagados durante 2026 con el crédito que realmente ganó según el ingreso final. Desde el año fiscal 2026, los topes de reembolso ya no limitan cuánto crédito en exceso debe devolver, así que actualizar el ingreso en healthcare.gov cuando cambien los números finales del negocio es la mejor protección. Las declaraciones finales de impuestos de trabajo por cuenta propia, el cierre de la cuenta EIN con el IRS y los trámites estatales de disolución siguen plazos separados, y un contador puede confirmar esas fechas para su tipo de entidad."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the Special Enrollment Period window after my business closes?",
+        "answer": "The Marketplace SEP for loss of coverage lasts 60 days after your group health plan ends, and you can also apply up to 60 days before the end date. If your business plan ends October 31, 2026, your window runs from September 1, 2026 through December 30, 2026. The clock starts when the health plan ends, not when the business files dissolution papers. Closing a business while keeping an individual Marketplace plan does not open an SEP on its own. Medicaid and CHIP accept applications year-round with no window. Apply at healthcare.gov or your state Marketplace and upload your termination letter to document the loss."
+      },
+      {
+        "question": "How do I document that my business closed for a Special Enrollment Period application?",
+        "answer": "Upload the insurer's plan termination letter showing the coverage end date, because healthcare.gov verifies loss of coverage against that dated notice. Add business dissolution papers, a final payroll report, or a notice of closing when you were covered under the company's group plan. Keep a profit and loss statement and last year's Schedule C to support your projected 2026 income. The Marketplace usually asks for SEP proof within 30 days of plan selection, so gather them before you start. Self-employed applicants without pay stubs can use a signed income attestation when records are limited."
+      },
+      {
+        "question": "What if I miss the 60-day SEP window after my business closes?",
+        "answer": "Missing the 60-day SEP means you wait for ACA Open Enrollment, which starts November 1, 2026 for 2027 coverage and runs through January 15, 2027 on healthcare.gov (enroll by December 15, 2026 for January 1 coverage). You would be uninsured until then unless another qualifying life event applies, such as marriage, a move, or a birth. Medicaid and CHIP are not affected, because both accept applications year-round. A short-term plan can bridge a gap, but short-term plans do not cover pre-existing conditions and do not count as minimum essential coverage."
+      },
+      {
+        "question": "Can I get retroactive coverage after my business closes?",
+        "answer": "Marketplace SEP coverage is not retroactive. If you select a plan before your coverage ends, the new plan starts the first day of the month after your old plan ends, leaving no gap. If you select a plan after the loss date, coverage starts the first day of the month after you choose the plan. Medicaid may be different: federal law allows up to 3 months of retroactive Medicaid coverage for medical bills incurred before you applied, but several states have waived that rule, so ask your state Medicaid agency (Medi-Cal, AHCCCS, MassHealth, or your state's program) before relying on it."
+      },
+      {
+        "question": "What is the difference between COBRA and Marketplace coverage after a business closes?",
+        "answer": "COBRA keeps your old group plan at 102% of the full premium, about $400 to $900/mo for one person in 2026, but COBRA exists only if the business or a related employer still sponsors a group health plan. When a company closes and its plan terminates, no COBRA right exists. Marketplace plans use 2026 premium tax credits that often bring costs to $0 to $300/mo for moderate incomes, though you may change doctors. You have 60 days to elect COBRA and 60 days for the Marketplace SEP, so compare both before deciding. Medicaid beats both when your projected 2026 income is under 138% FPL."
+      },
+      {
+        "question": "What state-specific rules apply when a business closes?",
+        "answer": "State rules change where you apply and what you are called. California residents use Covered California and Medi-Cal, Minnesotans use MNsure, Kentuckians use kynect, and most other states use healthcare.gov. Cal-COBRA and New York continuation laws extend group coverage up to 36 months, but only while a group plan remains in force. Texas and Florida have not expanded Medicaid, so incomes under 100% FPL ($15,960 for one person in 2026) fall into a coverage gap. Wisconsin's BadgerCare Plus covers adults up to 100% FPL in 2026. Check your state Marketplace for any state-funded subsidies on top of federal 2026 credits."
+      },
+      {
+        "question": "Do I qualify for Medicaid after my business closes?",
+        "answer": "In 2026, you qualify in the 40 expansion states plus DC when your household income is under 138% of the Federal Poverty Level: $22,025 for one person, $29,863 for two, and $45,540 for a family of 4 in 2026. Medicaid counts current monthly income at application, so a former owner with no revenue after closing can qualify even if the 2025 tax return showed high profit. Use the household-size table on this page, then apply at healthcare.gov or your state agency. Medicaid is free coverage with no SEP deadline, and applications are accepted all year."
+      },
+      {
+        "question": "What happens to my children's coverage after my business closes?",
+        "answer": "Children often qualify for Medicaid or CHIP at higher incomes than adults, commonly up to 200% to 300% FPL depending on your state in 2026. Medi-Cal for Kids, AllKids in Illinois, HUSKY Health in Connecticut, and NJ FamilyCare are examples of state-branded programs. CHIP enrollment is year-round, and premiums are free or low. If your children lose coverage that was tied to the closed business's group plan, they also qualify for the 60-day Marketplace SEP. Apply for the whole family at healthcare.gov so the system routes each person to the correct program."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la ventana del Período de Inscripción Especial después de que cierra mi negocio?",
+        "answer": "El SEP del Mercado por pérdida de cobertura dura 60 días después de que termina su plan de salud grupal, y también puede solicitar hasta 60 días antes de la fecha de terminación. Si el plan de su negocio termina el 31 de octubre de 2026, su ventana va del 1 de septiembre de 2026 al 30 de diciembre de 2026. El reloj empieza cuando termina el plan de salud, no cuando el negocio presenta los papeles de disolución. Cerrar un negocio conservando un plan individual del Mercado no abre un SEP por sí solo. Medicaid y CHIP aceptan solicitudes todo el año sin ventana. Solicite en healthcare.gov o en el Mercado de su estado y cargue su carta de terminación para documentar la pérdida."
+      },
+      {
+        "question": "¿Cómo documento que mi negocio cerró para una solicitud de Período de Inscripción Especial?",
+        "answer": "Cargue la carta de terminación del plan de la aseguradora con la fecha de fin de cobertura, porque healthcare.gov verifica la pérdida de cobertura con ese aviso fechado. Agregue los papeles de disolución del negocio, un informe final de nómina o un aviso de cierre cuando estaba cubierto por el plan grupal de la empresa. Guarde un estado de ganancias y pérdidas y el Anexo C del año pasado para respaldar su ingreso proyectado de 2026. El Mercado suele pedir la prueba del SEP dentro de 30 días de elegir el plan, así que reúnalos antes de empezar. Los solicitantes por cuenta propia sin talones de pago pueden usar una declaración de ingreso firmada cuando los registros son limitados."
+      },
+      {
+        "question": "¿Qué pasa si pierdo la ventana de SEP de 60 días después de que cierra mi negocio?",
+        "answer": "Si pierde el SEP de 60 días, debe esperar la Inscripción Abierta del ACA, que empieza el 1 de noviembre de 2026 para la cobertura de 2027 y llega hasta el 15 de enero de 2027 en healthcare.gov (inscríbase antes del 15 de diciembre de 2026 para cobertura desde el 1 de enero). Estaría sin seguro hasta entonces, a menos que aplique otro evento calificador de vida, como matrimonio, mudanza o nacimiento. Medicaid y CHIP no se ven afectados, porque ambos aceptan solicitudes todo el año. Un plan de corto plazo puede cubrir un vacío, pero no cubre condiciones preexistentes ni cuenta como cobertura mínima esencial."
+      },
+      {
+        "question": "¿Puedo obtener cobertura retroactiva después de que cierra mi negocio?",
+        "answer": "La cobertura del SEP del Mercado no es retroactiva. Si elige un plan antes de que termine su cobertura, el nuevo plan empieza el primer día del mes siguiente al fin de su plan anterior, sin interrupción. Si elige un plan después de la fecha de pérdida, la cobertura empieza el primer día del mes después de que escoge el plan. Medicaid puede ser distinto: la ley federal permite hasta 3 meses de cobertura retroactiva de Medicaid para facturas médicas anteriores a su solicitud, pero varios estados renunciaron a esa regla, así que consulte a la agencia estatal de Medicaid (Medi-Cal, AHCCCS, MassHealth o el programa de su estado) antes de contar con ella."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre COBRA y la cobertura del Mercado después de que cierra un negocio?",
+        "answer": "COBRA mantiene su plan grupal anterior al 102% de la prima completa, cerca de $400 a $900/mes para una persona en 2026, pero COBRA existe solo si el negocio o un empleador relacionado todavía patrocina un plan de salud grupal. Cuando una empresa cierra y su plan termina, no existe derecho a COBRA. Los planes del Mercado usan créditos fiscales de prima de 2026 que a menudo llevan el costo a $0 a $300/mes con ingresos moderados, aunque quizás cambie de médicos. Tiene 60 días para elegir COBRA y 60 días para el SEP del Mercado, así que compare ambos antes de decidir. Medicaid supera a ambos cuando su ingreso proyectado de 2026 está bajo el 138% FPL."
+      },
+      {
+        "question": "¿Qué reglas específicas de cada estado aplican cuando cierra un negocio?",
+        "answer": "Las reglas estatales cambian dónde solicita y cómo se llama el programa. Los residentes de California usan Covered California y Medi-Cal, los de Minnesota usan MNsure, los de Kentucky usan kynect, y la mayoría de los demás estados usan healthcare.gov. Cal-COBRA y las leyes de continuación de Nueva York extienden la cobertura grupal hasta 36 meses, pero solo mientras exista un plan grupal vigente. Texas y Florida no han expandido Medicaid, así que ingresos bajo el 100% FPL ($15,960 para una persona en 2026) caen en una brecha de cobertura. BadgerCare Plus de Wisconsin cubre adultos hasta el 100% FPL en 2026. Revise su Mercado estatal para subsidios estatales además de los créditos federales de 2026."
+      },
+      {
+        "question": "¿Califico para Medicaid después de que cierra mi negocio?",
+        "answer": "En 2026, califica en los 40 estados con expansión más DC cuando el ingreso de su hogar está bajo el 138% del Nivel Federal de Pobreza: $22,025 para una persona, $29,863 para dos y $45,540 para una familia de 4 en 2026. Medicaid cuenta el ingreso mensual actual al solicitar, así que un exdueño sin ingresos después del cierre puede calificar aunque la declaración de 2025 mostrara ganancias altas. Use la tabla por tamaño de hogar de esta página y luego solicite en healthcare.gov o en su agencia estatal. Medicaid es cobertura gratuita sin fecha límite de SEP, y las solicitudes se aceptan todo el año."
+      },
+      {
+        "question": "¿Qué pasa con la cobertura de mis hijos después de que cierra mi negocio?",
+        "answer": "Los niños a menudo califican para Medicaid o CHIP con ingresos más altos que los adultos, comúnmente hasta 200% a 300% FPL según su estado en 2026. Medi-Cal for Kids, AllKids en Illinois, HUSKY Health en Connecticut y NJ FamilyCare son ejemplos de programas con marca estatal. La inscripción en CHIP es todo el año, y las primas son gratuitas o bajas. Si sus hijos pierden cobertura ligada al plan grupal del negocio cerrado, también califican para el SEP del Mercado de 60 días. Solicite para toda la familia en healthcare.gov para que el sistema dirija a cada persona al programa correcto."
+      }
+    ]
+  },
+
+  "relatedLinks": [
+    {
+      "label": { "en": "Check Your Coverage Options (Screener)", "es": "Revise Sus Opciones de Cobertura (Evaluador)" },
+      "href": "/screener"
+    },
+    {
+      "label": { "en": "Medicaid Income Limits 2026", "es": "Límites de Ingresos de Medicaid 2026" },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": { "en": "ACA Income Limits 2026", "es": "Límites de Ingresos ACA 2026" },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": { "en": "Switching to Gig or 1099 Work: Health Insurance", "es": "Cambio a Trabajo Independiente o 1099: Seguro Médico" },
+      "href": "/event/gig-worker-transition"
+    }
+  ],
+
+  "sources": [
+    {
+      "name": "HealthCare.gov: Special Enrollment Period for loss of coverage",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/",
+      "note": {
+        "en": "Official 60-day SEP rules, documentation, and coverage start dates after losing group coverage.",
+        "es": "Reglas oficiales del SEP de 60 días, documentación y fechas de inicio de cobertura después de perder cobertura grupal."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility and year-round enrollment",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Medicaid and CHIP eligibility pathways and year-round application guidance.",
+        "es": "Vías de elegibilidad de Medicaid y CHIP y guía de solicitud todo el año."
+      }
+    },
+    {
+      "name": "U.S. Department of Labor: COBRA continuation coverage",
+      "url": "https://www.dol.gov/general/topic/health-plans/cobra",
+      "note": {
+        "en": "COBRA eligibility, 60-day election window, and 102% premium rule.",
+        "es": "Elegibilidad de COBRA, ventana de elección de 60 días y regla de prima del 102%."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "Source for the $15,960 single-person and $33,000 family-of-4 Federal Poverty Level figures used in 2026.",
+        "es": "Fuente de las cifras del Nivel Federal de Pobreza de 2026: $15,960 para una persona y $33,000 para familia de 4."
+      }
+    },
+    {
+      "name": "IRS: About Form 8962, Premium Tax Credit",
+      "url": "https://www.irs.gov/forms-pubs/about-form-8962",
+      "note": {
+        "en": "Reconciling advance premium tax credits with Form 1095-A and 2026 repayment rules.",
+        "es": "Reconciliación de créditos fiscales de prima adelantados con el Formulario 1095-A y reglas de reembolso de 2026."
+      }
+    },
+    {
+      "name": "IRS: About Form 7206, Self-Employed Health Insurance Deduction",
+      "url": "https://www.irs.gov/forms-pubs/about-form-7206",
+      "note": {
+        "en": "How a sole proprietor deducts Marketplace premiums against net self-employment profit.",
+        "es": "Cómo un propietario único deduce las primas del Mercado contra la ganancia neta de trabajo por cuenta propia."
+      }
+    },
+    {
+      "name": "KFF: Affordable Care Act coverage and subsidy analysis",
+      "url": "https://www.kff.org/affordable-care-act/",
+      "note": {
+        "en": "Marketplace premium and subsidy analysis, including the return of the 400% FPL cliff in 2026.",
+        "es": "Análisis de primas y subsidios del Mercado, incluido el regreso del precipicio del 400% FPL en 2026."
+      }
+    }
+  ]
+}
