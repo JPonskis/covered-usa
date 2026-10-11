@@ -1,0 +1,651 @@
+{
+  "slug": "sep-coverage-start-date",
+  "eventName": {
+    "en": "When SEP Coverage Starts",
+    "es": "Cuándo Comienza la Cobertura del SEP"
+  },
+  "category": "Plan Change",
+  "topic": "When Special Enrollment Period Coverage Starts in 2026: First-of-Month vs Birth Rules",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-10-11",
+  "readingTime": "9 min read",
+  "meta": {
+    "title": {
+      "en": "When SEP Coverage Starts 2026: Start Date Rules",
+      "es": "Inicio de Cobertura del SEP 2026: Reglas de Fechas"
+    },
+    "description": {
+      "en": "SEP coverage start dates for 2026: first of the month after you pick a plan, but birth and adoption can backdate. Pick a plan within 60 days.",
+      "es": "Fechas de inicio de cobertura del SEP 2026: el 1 del mes tras elegir plan; nacimiento y adopción pueden ser retroactivos. Elija plan en 60 días."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "When Does SEP Coverage Start in 2026? First-of-Month vs Birth Rules",
+      "es": "¿Cuándo Comienza la Cobertura del SEP en 2026? Reglas del 1 del Mes vs Nacimiento"
+    },
+    "subhero": {
+      "en": "You have 60 days from your qualifying life event to pick a plan. Most 2026 Marketplace SEP coverage starts the first of the month after you choose, but a birth or adoption can start on the event date.",
+      "es": "Tiene 60 días desde su evento calificador de vida para elegir un plan. La mayoría de las coberturas del SEP 2026 comienzan el 1 del mes siguiente a su elección, pero un nacimiento o adopción puede comenzar en la fecha del evento."
+    }
+  },
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 60 days from your qualifying event to pick a plan",
+      "es": "Tiene 60 días desde su evento calificador para elegir un plan"
+    },
+    "body": {
+      "en": "Your Marketplace SEP window runs 60 days from the event, and the day you pick a plan decides when coverage starts. Example: if your baby is born October 20, 2026, your window runs October 20 through December 19, 2026, and coverage can be backdated to October 20. Example: if your job coverage ends October 31, 2026, you can pick a plan before that date for a November 1, 2026 start, or as late as December 30, 2026, which starts coverage the first of the month after you choose. Miss the window and you wait for the next ACA Open Enrollment Period, which opens November 1, 2026 for 2027 coverage (confirm the closing date for your state at healthcare.gov).",
+      "es": "Su ventana del SEP del Mercado dura 60 días desde el evento, y el día en que elige un plan determina cuándo comienza la cobertura. Ejemplo: si su bebé nace el 20 de octubre de 2026, su ventana va del 20 de octubre al 19 de diciembre de 2026, y la cobertura puede ser retroactiva al 20 de octubre. Ejemplo: si su cobertura laboral termina el 31 de octubre de 2026, puede elegir plan antes de esa fecha para comenzar el 1 de noviembre de 2026, o hasta el 30 de diciembre de 2026, lo que inicia la cobertura el primer día del mes siguiente a su elección. Si pierde la ventana, espera al próximo Período de Inscripción Abierta de ACA, que abre el 1 de noviembre de 2026 para la cobertura 2027 (confirme la fecha de cierre de su estado en healthcare.gov)."
+    },
+    "totalTimeISO8601": "P60D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Employer plan special enrollment (birth, adoption, marriage)",
+          "es": "Inscripción especial del plan del empleador (nacimiento, adopción, matrimonio)"
+        },
+        "days": 30
+      },
+      {
+        "label": {
+          "en": "COBRA election after loss of job-based coverage",
+          "es": "Elección de COBRA tras perder la cobertura laboral"
+        },
+        "days": 60
+      },
+      {
+        "label": {
+          "en": "Medicaid and CHIP (year-round, may reach back up to 3 months)",
+          "es": "Medicaid y CHIP (todo el año, puede ser retroactivo hasta 3 meses)"
+        },
+        "days": null
+      }
+    ]
+  },
+  "quickAnswer": {
+    "en": "Marketplace SEP coverage in 2026 usually starts the first day of the month after you select a plan, so picking a plan on October 28 and on November 2 can mean a one-month difference. Births, adoptions, and foster placements are the exception: coverage can start on the birth or placement date if you enroll within the 60-day window. If you lose coverage and pick a plan before the loss date, coverage starts the first of the month after your old plan ends, which prevents a gap. Medicaid and CHIP enroll year-round and can reach back up to 3 months in many states. Employer plans give only 30 days. Apply at healthcare.gov and pay your first premium to activate the plan.",
+    "es": "Por lo general, la cobertura del SEP del Mercado en 2026 comienza el primer día del mes siguiente a la selección del plan, por lo que elegir un plan el 28 de octubre o el 2 de noviembre puede significar un mes de diferencia. Los nacimientos, adopciones y colocaciones de crianza son la excepción: la cobertura puede comenzar en la fecha del nacimiento o la colocación si se inscribe dentro de la ventana de 60 días. Si pierde cobertura y elige plan antes de la fecha de pérdida, la cobertura comienza el primer día del mes siguiente al fin de su plan anterior, lo que evita una interrupción. Medicaid y CHIP inscriben todo el año y pueden ser retroactivos hasta 3 meses en muchos estados. Los planes de empleadores dan solo 30 días. Solicite en healthcare.gov y pague su primera prima para activar el plan."
+  },
+  "introParagraphs": [
+    {
+      "en": "The Special Enrollment Period (SEP) gives you 60 days to enroll after a qualifying life event, but the 60-day window and the coverage start date are two different clocks. Many people assume that enrolling on day 59 means coverage that begins on day 59 or on the event date. Under 45 CFR 155.420, the Marketplace SEP start date depends on the type of event and on the day you select a plan. For loss of coverage, marriage, and a permanent move, healthcare.gov starts coverage on the first day of the month after plan selection. For a birth, adoption, or foster placement, coverage can begin on the event date itself, even if you pick the plan weeks later. For a loss of coverage, selecting a plan before your old coverage ends lets the new plan start the first of the month after the loss, which closes the gap. Selecting after the loss moves the start to the first of the month after you choose. In 2026, a single day of delay near month-end can cost you a full month without coverage, so the calendar matters as much as the deadline. The sections below show the exact rule for each event, a worked date example, and how to bridge any gap with COBRA, Medicaid, or CHIP.",
+      "es": "El Período de Inscripción Especial (SEP) le da 60 días para inscribirse tras un evento calificador de vida, pero la ventana de 60 días y la fecha de inicio de la cobertura son dos relojes distintos. Muchas personas suponen que inscribirse el día 59 significa cobertura desde el día 59 o desde la fecha del evento. Bajo 45 CFR 155.420, la fecha de inicio del SEP del Mercado depende del tipo de evento y del día en que selecciona un plan. Para pérdida de cobertura, matrimonio y mudanza permanente, healthcare.gov inicia la cobertura el primer día del mes siguiente a la selección del plan. Para un nacimiento, adopción o colocación de crianza, la cobertura puede comenzar en la fecha del evento, aunque elija el plan semanas después. En una pérdida de cobertura, seleccionar plan antes de que termine su cobertura anterior permite que el nuevo plan comience el primer día del mes siguiente a la pérdida, lo que cierra la brecha. Seleccionar después de la pérdida mueve el inicio al primer día del mes siguiente a su elección. En 2026, un solo día de retraso cerca del fin de mes puede costarle un mes completo sin cobertura, así que el calendario importa tanto como la fecha límite. Las secciones siguientes muestran la regla exacta para cada evento, un ejemplo con fechas y cómo cubrir cualquier brecha con COBRA, Medicaid o CHIP."
+    },
+    {
+      "en": "Medicaid, CHIP, COBRA, and employer plans each follow their own start-date rules, which is why the same qualifying life event can produce four different effective dates. Medicaid and CHIP accept applications year-round at medicaid.gov and through state portals, and Medicaid coverage often reaches back up to 3 months before your application month if you were eligible then. State brands such as Medi-Cal in California, AHCCCS in Arizona, and MassHealth in Massachusetts apply their own retroactive rules. COBRA, once elected, is retroactive to the day your job coverage ended, as long as you elect within 60 days and pay on time. Employer plans use a separate 30-day special enrollment right under HIPAA. A birth or adoption must be backdated to the event date by the employer plan, while marriage coverage starts no later than the first day of the month after your request. State-based Marketplaces such as Covered California, MNsure, and kynect follow the same federal floor but publish their own plan selection cutoffs. Keep your Form 1095-A in 2027, because the months you were covered determine your 2026 premium tax credit reconciliation.",
+      "es": "Medicaid, CHIP, COBRA y los planes de empleadores siguen cada uno sus propias reglas de inicio, por lo que el mismo evento calificador de vida puede producir cuatro fechas de vigencia distintas. Medicaid y CHIP aceptan solicitudes todo el año en medicaid.gov y en portales estatales, y la cobertura de Medicaid a menudo es retroactiva hasta 3 meses antes del mes de su solicitud si era elegible en ese momento. Marcas estatales como Medi-Cal en California, AHCCCS en Arizona y MassHealth en Massachusetts aplican sus propias reglas retroactivas. COBRA, una vez elegido, es retroactivo al día en que terminó su cobertura laboral, siempre que lo elija dentro de 60 días y pague a tiempo. Los planes de empleadores usan un derecho de inscripción especial separado de 30 días bajo HIPAA. Un nacimiento o adopción debe ser retroactivo a la fecha del evento en el plan del empleador, mientras que la cobertura por matrimonio comienza a más tardar el primer día del mes siguiente a su solicitud. Los Mercados estatales como Covered California, MNsure y kynect siguen el mismo piso federal pero publican sus propias fechas de corte. Guarde su Formulario 1095-A en 2027, porque los meses con cobertura determinan la conciliación de su crédito fiscal de prima 2026."
+    }
+  ],
+  "steps": [
+    {
+      "name": {
+        "en": "Confirm your qualifying life event date and your old coverage end date",
+        "es": "Confirme la fecha de su evento calificador y la fecha de fin de su cobertura anterior"
+      },
+      "text": {
+        "en": "Log in to healthcare.gov, select Report a life change, and enter the exact event date from your documents: the birth date, wedding date, move date, or last day of coverage on your termination letter. That date starts your 60-day Marketplace SEP window. Check your coverage end date too, because it decides whether you can pick a plan before the loss.",
+        "es": "Ingrese a healthcare.gov, seleccione Informar un cambio de vida e ingrese la fecha exacta de sus documentos: fecha de nacimiento, de boda, de mudanza o último día de cobertura en su carta de terminación. Esa fecha inicia su ventana de 60 días del SEP del Mercado. Revise también la fecha de fin de su cobertura, porque determina si puede elegir plan antes de la pérdida."
+      }
+    },
+    {
+      "name": {
+        "en": "Select your plan before month-end to control the start date",
+        "es": "Seleccione su plan antes de fin de mes para controlar la fecha de inicio"
+      },
+      "text": {
+        "en": "Compare plans on healthcare.gov and submit your plan selection before the last day of the month when you want coverage to begin the 1st of the next month. A plan selected on October 31, 2026 starts November 1, 2026, while one selected on November 1, 2026 starts December 1, 2026 for a marriage or move. For a job loss, choose the plan before your old coverage ends to avoid any gap.",
+        "es": "Compare planes en healthcare.gov y envíe su selección antes del último día del mes si quiere que la cobertura comience el día 1 del mes siguiente. Un plan seleccionado el 31 de octubre de 2026 comienza el 1 de noviembre de 2026, mientras que uno seleccionado el 1 de noviembre de 2026 comienza el 1 de diciembre de 2026 en caso de matrimonio o mudanza. En una pérdida de empleo, elija el plan antes de que termine su cobertura anterior para evitar cualquier brecha."
+      }
+    },
+    {
+      "name": {
+        "en": "Choose the birth-date start or the first-of-month start for a baby or adoption",
+        "es": "Elija el inicio en la fecha de nacimiento o el 1 del mes para un bebé o adopción"
+      },
+      "text": {
+        "en": "For a birth, adoption, or foster placement, enroll within 60 days and ask for coverage to begin on the event date, or select the first of the month after the event if that costs less. Compare the premium for the partial month with the value of backdated coverage for newborn care, then call the Marketplace Call Center at 1-800-318-2596 if the date does not appear on your screen.",
+        "es": "Para un nacimiento, adopción o colocación de crianza, inscríbase dentro de 60 días y solicite que la cobertura comience en la fecha del evento, o seleccione el primer día del mes siguiente si cuesta menos. Compare la prima del mes parcial con el valor de la cobertura retroactiva para la atención del recién nacido, y llame al Centro de Llamadas del Mercado al 1-800-318-2596 si la fecha no aparece en su pantalla."
+      }
+    },
+    {
+      "name": {
+        "en": "Upload verification documents within 30 days",
+        "es": "Cargue los documentos de verificación dentro de 30 días"
+      },
+      "text": {
+        "en": "Submit your proof of the qualifying event through your healthcare.gov account if the Marketplace requests it, such as a termination letter, marriage certificate, birth certificate, or lease. Upload every file before the 30-day deadline shown in your eligibility notice, because a missed deadline can cancel the SEP and push your start date out.",
+        "es": "Envíe la prueba de su evento calificador a través de su cuenta de healthcare.gov si el Mercado la solicita, como una carta de terminación, acta de matrimonio, acta de nacimiento o contrato de renta. Cargue todos los archivos antes de la fecha límite de 30 días que aparece en su aviso de elegibilidad, porque perderla puede cancelar el SEP y retrasar su fecha de inicio."
+      }
+    },
+    {
+      "name": {
+        "en": "Pay your first premium to the insurer by its due date",
+        "es": "Pague su primera prima a la aseguradora antes de la fecha de vencimiento"
+      },
+      "text": {
+        "en": "Pay the first month's premium directly to your insurance company after you pick a plan. Coverage activates only after the insurer receives payment, so check your confirmation email for the due date and pay online or by phone. An unpaid first premium cancels the enrollment even though you selected the plan inside the 60-day window.",
+        "es": "Pague la prima del primer mes directamente a su compañía de seguros después de elegir plan. La cobertura se activa solo cuando la aseguradora recibe el pago, así que revise su correo de confirmación para ver la fecha de vencimiento y pague en línea o por teléfono. Una primera prima impaga cancela la inscripción aunque haya elegido el plan dentro de la ventana de 60 días."
+      }
+    },
+    {
+      "name": {
+        "en": "Bridge any gap with COBRA, Medicaid, or CHIP",
+        "es": "Cubra cualquier brecha con COBRA, Medicaid o CHIP"
+      },
+      "text": {
+        "en": "If your Marketplace plan starts after your old coverage ends, elect COBRA within 60 days for retroactive coverage back to the loss date, or apply for Medicaid or CHIP at medicaid.gov or your state agency. Medicaid can cover bills from up to 3 months before your application month in many states, so apply right away if your 2026 income qualifies.",
+        "es": "Si su plan del Mercado comienza después de que termina su cobertura anterior, elija COBRA dentro de 60 días para tener cobertura retroactiva a la fecha de pérdida, o solicite Medicaid o CHIP en medicaid.gov o en su agencia estatal. Medicaid puede cubrir facturas de hasta 3 meses antes del mes de su solicitud en muchos estados, así que solicite de inmediato si su ingreso 2026 califica."
+      }
+    },
+    {
+      "name": {
+        "en": "Save your confirmation notice and Form 1095-A",
+        "es": "Guarde su aviso de confirmación y el Formulario 1095-A"
+      },
+      "text": {
+        "en": "Check the effective date on your healthcare.gov confirmation notice and save it. In early 2027 the Marketplace sends Form 1095-A showing your covered months, and you use it with IRS Form 8962 to reconcile your 2026 premium tax credit.",
+        "es": "Revise la fecha de vigencia en su aviso de confirmación de healthcare.gov y guárdelo. A principios de 2027 el Mercado envía el Formulario 1095-A con sus meses cubiertos, y lo usa con el Formulario 8962 del IRS para conciliar su crédito fiscal de prima 2026."
+      }
+    }
+  ],
+  "optionsComparison": {
+    "headers": {
+      "en": [
+        "Option",
+        "Typical cost",
+        "Best for",
+        "Deadline"
+      ],
+      "es": [
+        "Opción",
+        "Costo típico",
+        "Mejor para",
+        "Fecha límite"
+      ]
+    },
+    "rows": [
+      {
+        "en": [
+          "Marketplace SEP: loss of coverage",
+          "Varies by income after 2026 premium tax credits",
+          "Job loss or plan end; pick a plan before the loss to start the 1st of the next month",
+          "60 days from the loss date"
+        ],
+        "es": [
+          "SEP del Mercado: pérdida de cobertura",
+          "Varía según ingreso tras créditos fiscales de prima 2026",
+          "Pérdida de empleo o fin de plan; elija antes de la pérdida para comenzar el día 1 del mes siguiente",
+          "60 días desde la fecha de pérdida"
+        ]
+      },
+      {
+        "en": [
+          "Marketplace SEP: birth, adoption, foster placement",
+          "Varies by income after 2026 premium tax credits",
+          "New babies; coverage can start on the birth or placement date",
+          "60 days from the event"
+        ],
+        "es": [
+          "SEP del Mercado: nacimiento, adopción, crianza",
+          "Varía según ingreso tras créditos fiscales de prima 2026",
+          "Recién nacidos; la cobertura puede comenzar en la fecha de nacimiento o colocación",
+          "60 días desde el evento"
+        ]
+      },
+      {
+        "en": [
+          "Marketplace SEP: marriage or permanent move",
+          "Varies by income after 2026 premium tax credits",
+          "Newlyweds and movers; starts the 1st of the month after plan selection",
+          "60 days from the event"
+        ],
+        "es": [
+          "SEP del Mercado: matrimonio o mudanza permanente",
+          "Varía según ingreso tras créditos fiscales de prima 2026",
+          "Recién casados y quienes se mudan; comienza el día 1 del mes siguiente a la selección",
+          "60 días desde el evento"
+        ]
+      },
+      {
+        "en": [
+          "COBRA",
+          "102% of full premium, typically $400 to $900/mo for one person in 2026",
+          "Closing a gap; retroactive to the day job coverage ended",
+          "60 days to elect"
+        ],
+        "es": [
+          "COBRA",
+          "102% de la prima completa, típicamente $400 a $900/mes por persona en 2026",
+          "Cubrir una brecha; retroactivo al día en que terminó la cobertura laboral",
+          "60 días para elegir"
+        ]
+      },
+      {
+        "en": [
+          "Employer plan special enrollment",
+          "Employee share set by employer, 2026",
+          "Adding a baby (backdated to birth) or spouse (1st of month after request)",
+          "30 days from the event"
+        ],
+        "es": [
+          "Inscripción especial del plan del empleador",
+          "Parte del empleado fijada por el empleador, 2026",
+          "Agregar un bebé (retroactivo al nacimiento) o cónyuge (día 1 del mes tras la solicitud)",
+          "30 días desde el evento"
+        ]
+      },
+      {
+        "en": [
+          "Medicaid and CHIP (Medi-Cal, AHCCCS, BadgerCare, and others)",
+          "$0 to low copays in 2026, income under 138% FPL for adults in expansion states",
+          "Low income households; can reach back up to 3 months in many states",
+          "Year-round, no deadline"
+        ],
+        "es": [
+          "Medicaid y CHIP (Medi-Cal, AHCCCS, BadgerCare y otros)",
+          "$0 a copagos bajos en 2026, ingreso bajo 138% FPL para adultos en estados con expansión",
+          "Hogares de bajos ingresos; puede ser retroactivo hasta 3 meses en muchos estados",
+          "Todo el año, sin fecha límite"
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Marketplace start dates follow 45 CFR 155.420 and apply to healthcare.gov; state-based Marketplaces may set earlier plan selection cutoffs. Costs are 2026 estimates and vary by age, ZIP code, and income. The 400% FPL subsidy cliff returned on January 1, 2026.",
+      "es": "Las fechas de inicio del Mercado siguen 45 CFR 155.420 y aplican a healthcare.gov; los Mercados estatales pueden fijar fechas de corte anteriores. Los costos son estimaciones 2026 y varían según edad, código postal e ingreso. El límite de subsidio de 400% FPL regresó el 1 de enero de 2026."
+    },
+    "source": "HealthCare.gov SEP rules; 45 CFR 155.420 (eCFR); U.S. Department of Labor COBRA guidance; Medicaid.gov eligibility; KFF 2026 Marketplace analysis"
+  },
+  "commonMistakes": {
+    "intro": {
+      "en": "Five timing errors cost people the most coverage months in 2026:",
+      "es": "Cinco errores de tiempo les cuestan más meses de cobertura a las personas en 2026:"
+    },
+    "items": [
+      {
+        "en": "Picking a plan on the 1st or 2nd of the month and expecting coverage that day. A Marketplace plan chosen on November 2, 2026 starts December 1, 2026, which leaves a full month uncovered.",
+        "es": "Elegir un plan el día 1 o 2 del mes y esperar cobertura ese día. Un plan del Mercado elegido el 2 de noviembre de 2026 comienza el 1 de diciembre de 2026, lo que deja un mes completo sin cobertura."
+      },
+      {
+        "en": "Waiting until after job coverage ends to choose a plan. Selecting before the loss date lets the new plan start the first of the month after the loss, while selecting later pushes the start back.",
+        "es": "Esperar a que termine la cobertura laboral para elegir plan. Seleccionar antes de la fecha de pérdida permite que el nuevo plan comience el primer día del mes siguiente a la pérdida, mientras que seleccionar después retrasa el inicio."
+      },
+      {
+        "en": "Assuming a newborn is covered automatically. A baby is not added to your plan until you enroll within the 60-day window, and the employer plan window is only 30 days.",
+        "es": "Suponer que un recién nacido está cubierto automáticamente. Un bebé no se agrega a su plan hasta que lo inscribe dentro de la ventana de 60 días, y la ventana del plan del empleador es de solo 30 días."
+      },
+      {
+        "en": "Forgetting to pay the first premium. Coverage does not activate until the insurer receives payment, even if healthcare.gov shows your plan as selected.",
+        "es": "Olvidar pagar la primera prima. La cobertura no se activa hasta que la aseguradora recibe el pago, aunque healthcare.gov muestre su plan como seleccionado."
+      },
+      {
+        "en": "Skipping the Medicaid check. Medicaid and CHIP enroll year-round and can reach back up to 3 months in many states, so a low-income household may not need a Marketplace plan at all.",
+        "es": "Omitir la revisión de Medicaid. Medicaid y CHIP inscriben todo el año y pueden ser retroactivos hasta 3 meses en muchos estados, así que un hogar de bajos ingresos quizá no necesite un plan del Mercado."
+      }
+    ]
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Coverage Start Date by Qualifying Life Event, 2026",
+        "es": "Fecha de Inicio de Cobertura por Evento Calificador de Vida, 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Marketplace SEP coverage start dates in 2026 follow one of two patterns. Loss of coverage, marriage, and a permanent move use the first-of-month pattern: coverage starts the first day of the month after you select a plan. Birth, adoption, and foster placement use the event-date pattern: coverage can start on the day of the event when you enroll inside the 60-day window. A worked example for a marriage on November 14, 2026 shows the difference. Your window runs November 14, 2026 through January 13, 2027. A plan chosen on November 28, 2026 starts December 1, 2026, while a plan chosen on December 1, 2026 starts January 1, 2027. Healthcare.gov also asks marriage and move applicants to show at least one day of prior minimum essential coverage in the 60 days before the event. Birth and adoption have no prior-coverage test. The table below lists each rule with its source.",
+          "es": "Las fechas de inicio de cobertura del SEP del Mercado en 2026 siguen uno de dos patrones. Pérdida de cobertura, matrimonio y mudanza permanente usan el patrón del primer día del mes: la cobertura comienza el primer día del mes siguiente a la selección del plan. Nacimiento, adopción y colocación de crianza usan el patrón de la fecha del evento: la cobertura puede comenzar el día del evento si se inscribe dentro de la ventana de 60 días. Un ejemplo con un matrimonio el 14 de noviembre de 2026 muestra la diferencia. Su ventana va del 14 de noviembre de 2026 al 13 de enero de 2027. Un plan elegido el 28 de noviembre de 2026 comienza el 1 de diciembre de 2026, mientras que uno elegido el 1 de diciembre de 2026 comienza el 1 de enero de 2027. Healthcare.gov también pide a quienes solicitan por matrimonio o mudanza demostrar al menos un día de cobertura esencial mínima previa en los 60 días anteriores al evento. Nacimiento y adopción no tienen esa prueba. La tabla siguiente lista cada regla con su fuente."
+        }
+      ],
+      "table": {
+        "caption": {
+          "en": "Marketplace SEP coverage start dates by event, 2026",
+          "es": "Fechas de inicio de cobertura del SEP del Mercado por evento, 2026"
+        },
+        "headers": {
+          "en": [
+            "Event",
+            "When you select a plan",
+            "Coverage starts",
+            "Window (2026)"
+          ],
+          "es": [
+            "Evento",
+            "Cuándo selecciona el plan",
+            "La cobertura comienza",
+            "Ventana (2026)"
+          ]
+        },
+        "rows": [
+          {
+            "en": [
+              "Loss of coverage",
+              "Before the loss date",
+              "1st of the month after the loss",
+              "60 days before and 60 days after"
+            ],
+            "es": [
+              "Pérdida de cobertura",
+              "Antes de la fecha de pérdida",
+              "Día 1 del mes siguiente a la pérdida",
+              "60 días antes y 60 días después"
+            ]
+          },
+          {
+            "en": [
+              "Loss of coverage",
+              "After the loss date",
+              "1st of the month after plan selection",
+              "60 days after the loss"
+            ],
+            "es": [
+              "Pérdida de cobertura",
+              "Después de la fecha de pérdida",
+              "Día 1 del mes siguiente a la selección",
+              "60 días después de la pérdida"
+            ]
+          },
+          {
+            "en": [
+              "Birth",
+              "Within 60 days of birth",
+              "Date of birth (or 1st of next month on request)",
+              "60 days from birth"
+            ],
+            "es": [
+              "Nacimiento",
+              "Dentro de 60 días del nacimiento",
+              "Fecha de nacimiento (o día 1 del mes siguiente si lo solicita)",
+              "60 días desde el nacimiento"
+            ]
+          },
+          {
+            "en": [
+              "Adoption or foster placement",
+              "Within 60 days of the event",
+              "Date of adoption or placement (or 1st of next month on request)",
+              "60 days from the event"
+            ],
+            "es": [
+              "Adopción o colocación de crianza",
+              "Dentro de 60 días del evento",
+              "Fecha de adopción o colocación (o día 1 del mes siguiente si lo solicita)",
+              "60 días desde el evento"
+            ]
+          },
+          {
+            "en": [
+              "Marriage",
+              "Within 60 days after the wedding",
+              "1st of the month after plan selection",
+              "60 days from the wedding"
+            ],
+            "es": [
+              "Matrimonio",
+              "Dentro de 60 días después de la boda",
+              "Día 1 del mes siguiente a la selección",
+              "60 días desde la boda"
+            ]
+          },
+          {
+            "en": [
+              "Permanent move to a new coverage area",
+              "Within 60 days of the move (or 60 days before)",
+              "1st of the month after the move or plan selection, whichever is later",
+              "60 days from the move"
+            ],
+            "es": [
+              "Mudanza permanente a nueva área de cobertura",
+              "Dentro de 60 días de la mudanza (o 60 días antes)",
+              "Día 1 del mes siguiente a la mudanza o selección, lo que ocurra después",
+              "60 días desde la mudanza"
+            ]
+          }
+        ],
+        "footnote": {
+          "en": "Source rule: 45 CFR 155.420(b). Window dates assume healthcare.gov; state-based Marketplaces may differ on cutoffs.",
+          "es": "Regla fuente: 45 CFR 155.420(b). Las fechas asumen healthcare.gov; los Mercados estatales pueden diferir en las fechas de corte."
+        },
+        "source": "eCFR 45 CFR 155.420; HealthCare.gov special enrollment period guidance"
+      }
+    },
+    {
+      "heading": {
+        "en": "Birth and Adoption: Why Backdated Coverage Is Different in 2026",
+        "es": "Nacimiento y Adopción: Por Qué la Cobertura Retroactiva Es Diferente en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Birth and adoption rules in 2026 let Marketplace coverage reach back to the event date, which protects newborn hospital bills. A baby born October 20, 2026 can be covered from October 20 if a plan is selected by December 19, 2026, and the family pays the premium for the backdated period. A parent who wants to avoid paying for a partial month can ask the Marketplace for a first-of-month start instead. Employer plans must also backdate birth and adoption coverage to the event date under HIPAA special enrollment, but only if you ask within 30 days. CHIP is a separate path: children in households within roughly 200 to 300 percent of the 2026 Federal Poverty Level, depending on the state, can enroll year-round in programs such as Medi-Cal for Kids, AllKids in Illinois, and BadgerCare in Wisconsin. Medicaid can also pay for a newborn automatically when the mother is enrolled in Medicaid on the date of birth.",
+          "es": "Las reglas de nacimiento y adopción en 2026 permiten que la cobertura del Mercado llegue hasta la fecha del evento, lo que protege las facturas hospitalarias del recién nacido. Un bebé nacido el 20 de octubre de 2026 puede estar cubierto desde el 20 de octubre si se selecciona un plan antes del 19 de diciembre de 2026, y la familia paga la prima del período retroactivo. Un padre que quiera evitar pagar un mes parcial puede pedir al Mercado un inicio el primer día del mes. Los planes de empleadores también deben hacer retroactiva la cobertura por nacimiento y adopción a la fecha del evento bajo la inscripción especial de HIPAA, pero solo si lo solicita dentro de 30 días. CHIP es otra vía: los niños en hogares con ingresos de aproximadamente 200 a 300 por ciento del Nivel Federal de Pobreza 2026, según el estado, pueden inscribirse todo el año en programas como Medi-Cal for Kids, AllKids en Illinois y BadgerCare en Wisconsin. Medicaid también puede cubrir automáticamente a un recién nacido cuando la madre está inscrita en Medicaid en la fecha del parto."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "COBRA vs Marketplace vs Medicaid: Which Start Date Closes Your Gap?",
+        "es": "COBRA vs Mercado vs Medicaid: ¿Qué Fecha de Inicio Cierra Su Brecha?"
+      },
+      "paragraphs": [
+        {
+          "en": "COBRA closes a gap better than any other option because COBRA coverage is retroactive to the day your job coverage ended, as long as you elect within 60 days and make the first payment on time. Marketplace plans start on the first of a month and cannot be backdated for a loss of coverage, so a mid-month job loss can leave a few weeks uncovered unless you pick the plan before the loss. Medicaid sits between the two: in the 40 expansion states plus DC, income under the 2026 limit of 138% of the Federal Poverty Level qualifies, and many states allow up to 3 months of retroactive coverage, though Arizona's AHCCCS has waived most retroactive coverage. The cheapest strategy for most laid-off workers in 2026 is to pick a Marketplace plan before the old coverage ends, then keep COBRA elected only if a costly procedure falls inside the gap.",
+          "es": "COBRA cierra una brecha mejor que cualquier otra opción porque la cobertura COBRA es retroactiva al día en que terminó su cobertura laboral, siempre que lo elija dentro de 60 días y haga el primer pago a tiempo. Los planes del Mercado comienzan el primer día de un mes y no pueden ser retroactivos en una pérdida de cobertura, así que una pérdida de empleo a mitad de mes puede dejar unas semanas sin cobertura a menos que elija el plan antes de la pérdida. Medicaid está entre ambos: en los 40 estados con expansión más DC, un ingreso bajo el límite 2026 de 138% del Nivel Federal de Pobreza califica, y muchos estados permiten hasta 3 meses de cobertura retroactiva, aunque AHCCCS de Arizona ha eximido la mayor parte de la cobertura retroactiva. La estrategia más barata para la mayoría de los trabajadores despedidos en 2026 es elegir un plan del Mercado antes de que termine la cobertura anterior, y mantener COBRA elegido solo si un procedimiento costoso cae dentro de la brecha."
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "When does Marketplace SEP coverage start in 2026?",
+        "answer": "Marketplace SEP coverage in 2026 starts on the first day of the month after you select a plan for loss of coverage, marriage, and a permanent move. Birth, adoption, and foster placement are the exception, because coverage can start on the event date. Your window is 60 days from the qualifying life event. For example, a plan selected on October 15, 2026 starts November 1, 2026, and a plan selected on November 2, 2026 starts December 1, 2026. Apply at healthcare.gov, pay the first premium to your insurer, and save the confirmation notice that shows your effective date. The rule comes from 45 CFR 155.420, and state-based Marketplaces such as Covered California may set their own plan selection cutoffs."
+      },
+      {
+        "question": "Can I get retroactive coverage for a birth or adoption in 2026?",
+        "answer": "Yes. Marketplace coverage for a birth, adoption, or foster placement can start on the date of the event when you enroll within the 60-day window, which protects newborn hospital bills. A baby born October 20, 2026 can be covered from October 20 if you pick a plan by December 19, 2026. You pay the premium for the backdated period, and you can ask for a first-of-month start instead if that costs less. Employer plans must also backdate birth and adoption coverage under HIPAA, but only if you request it within 30 days. Marriage, moves, and loss of coverage are not backdated in the Marketplace, so those starts stay at the first of the following month."
+      },
+      {
+        "question": "How do I avoid a coverage gap after losing a job in 2026?",
+        "answer": "Pick a Marketplace plan before your job coverage ends. Healthcare.gov lets you select a plan up to 60 days before the loss, and the new plan then starts the first day of the month after your old coverage ends. If your employer plan ends October 31, 2026, selecting a plan by that date starts coverage November 1, 2026 with no gap. If you wait until after the loss, coverage starts the first of the month after you choose, and mid-month losses leave days or weeks uncovered. COBRA is the backstop: elect within 60 days and coverage is retroactive to the day your job plan ended, though you pay 102% of the full premium for 2026. Medicaid can also cover recent bills in many states."
+      },
+      {
+        "question": "What if I miss the 60-day SEP window?",
+        "answer": "Missing the 60-day window means you wait for the ACA Open Enrollment Period, which opens November 1, 2026 for 2027 coverage; confirm the closing date for your state at healthcare.gov, because the 2027 deadline can differ by Marketplace. Coverage from Open Enrollment generally starts January 1, 2027, so you would be uninsured until then unless another path applies. Medicaid and CHIP stay open year-round, COBRA has its own 60-day election clock, and some people qualify for a different SEP, such as a second qualifying life event. Healthcare.gov can grant a late-enrollment exception in limited cases, such as being told the wrong deadline by an official source. Apply before the 60th day."
+      },
+      {
+        "question": "Do Medicaid and CHIP follow the same start dates as the Marketplace?",
+        "answer": "No. Medicaid and CHIP enroll year-round at medicaid.gov and state portals, with no 60-day window. In many states, Medicaid coverage can reach back up to 3 months before your application month if you were eligible then. Medi-Cal in California follows that retroactive rule, while Arizona's AHCCCS has waived most retroactive coverage and generally starts coverage the first day of the application month. In 2026, adults in the 40 expansion states plus DC qualify at income up to 138% of the Federal Poverty Level, or $22,025 for one person. CHIP covers children in higher-income households, often up to 200 to 300 percent of the 2026 Federal Poverty Level. Apply as soon as the event occurs to capture the earliest start date."
+      },
+      {
+        "question": "What documents prove my SEP and start date?",
+        "answer": "Marketplace verification asks for proof of the qualifying life event and sometimes proof of prior coverage. Accepted documents include an employer termination letter that states the last day of coverage, a marriage certificate, a birth certificate or hospital record, an adoption or placement order, and a lease or utility bill for a move. Upload them in your healthcare.gov account within 30 days of the request, or your SEP can be canceled and the start date lost. Keep the confirmation notice with your effective date, and keep Form 1095-A when it arrives in early 2027, because the months listed there drive your 2026 premium tax credit reconciliation with the IRS."
+      },
+      {
+        "question": "What state-specific rules change SEP coverage start dates?",
+        "answer": "State-based Marketplaces follow the federal 45 CFR 155.420 floor but publish their own plan selection cutoffs, and several run longer or shorter calendars than healthcare.gov. Covered California, MNsure, kynect, and NY State of Health each post their own rules, so check your exchange before relying on a month-end date. Medicaid varies more: Medi-Cal reaches back up to 3 months, AHCCCS in Arizona has waived most retroactive coverage, and BadgerCare in Wisconsin and MassHealth in Massachusetts apply their own state rules. Start with your state exchange website, then confirm Medicaid retroactivity with your state agency before you skip a Marketplace plan."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuándo comienza la cobertura del SEP del Mercado en 2026?",
+        "answer": "La cobertura del SEP del Mercado en 2026 comienza el primer día del mes siguiente a la selección del plan en casos de pérdida de cobertura, matrimonio y mudanza permanente. Nacimiento, adopción y colocación de crianza son la excepción, porque la cobertura puede comenzar en la fecha del evento. Su ventana es de 60 días desde el evento calificador de vida. Por ejemplo, un plan seleccionado el 15 de octubre de 2026 comienza el 1 de noviembre de 2026, y uno seleccionado el 2 de noviembre de 2026 comienza el 1 de diciembre de 2026. Solicite en healthcare.gov, pague la primera prima a su aseguradora y guarde el aviso de confirmación que muestra su fecha de vigencia. La regla proviene de 45 CFR 155.420, y los Mercados estatales como Covered California pueden fijar sus propias fechas de corte."
+      },
+      {
+        "question": "¿Puedo obtener cobertura retroactiva por un nacimiento o adopción en 2026?",
+        "answer": "Sí. La cobertura del Mercado por un nacimiento, adopción o colocación de crianza puede comenzar en la fecha del evento si se inscribe dentro de la ventana de 60 días, lo que protege las facturas hospitalarias del recién nacido. Un bebé nacido el 20 de octubre de 2026 puede estar cubierto desde el 20 de octubre si elige un plan antes del 19 de diciembre de 2026. Usted paga la prima del período retroactivo, y puede pedir un inicio el primer día del mes si cuesta menos. Los planes de empleadores también deben hacer retroactiva la cobertura por nacimiento y adopción bajo HIPAA, pero solo si lo solicita dentro de 30 días. Matrimonio, mudanzas y pérdida de cobertura no son retroactivos en el Mercado, así que esos inicios quedan en el primer día del mes siguiente."
+      },
+      {
+        "question": "¿Cómo evito una brecha de cobertura tras perder el empleo en 2026?",
+        "answer": "Elija un plan del Mercado antes de que termine su cobertura laboral. Healthcare.gov le permite seleccionar un plan hasta 60 días antes de la pérdida, y el nuevo plan comienza el primer día del mes siguiente al fin de su cobertura anterior. Si su plan del empleador termina el 31 de octubre de 2026, seleccionar un plan antes de esa fecha inicia la cobertura el 1 de noviembre de 2026 sin brecha. Si espera hasta después de la pérdida, la cobertura comienza el primer día del mes siguiente a su elección, y las pérdidas a mitad de mes dejan días o semanas sin cobertura. COBRA es el respaldo: elija dentro de 60 días y la cobertura es retroactiva al día en que terminó su plan laboral, aunque paga 102% de la prima completa en 2026. Medicaid también puede cubrir facturas recientes en muchos estados."
+      },
+      {
+        "question": "¿Qué pasa si pierdo la ventana de 60 días del SEP?",
+        "answer": "Perder la ventana de 60 días significa esperar al Período de Inscripción Abierta de ACA, que abre el 1 de noviembre de 2026 para la cobertura 2027; confirme la fecha de cierre de su estado en healthcare.gov, porque el plazo 2027 puede diferir según el Mercado. La cobertura de la Inscripción Abierta generalmente comienza el 1 de enero de 2027, así que estaría sin seguro hasta entonces a menos que aplique otra vía. Medicaid y CHIP siguen abiertos todo el año, COBRA tiene su propio reloj de elección de 60 días, y algunas personas califican para otro SEP, como un segundo evento calificador de vida. Healthcare.gov puede otorgar una excepción de inscripción tardía en casos limitados, como haber recibido una fecha límite incorrecta de una fuente oficial. Solicite antes del día 60."
+      },
+      {
+        "question": "¿Medicaid y CHIP siguen las mismas fechas de inicio que el Mercado?",
+        "answer": "No. Medicaid y CHIP inscriben todo el año en medicaid.gov y en portales estatales, sin ventana de 60 días. En muchos estados, la cobertura de Medicaid puede ser retroactiva hasta 3 meses antes del mes de su solicitud si era elegible en ese momento. Medi-Cal en California sigue esa regla retroactiva, mientras que AHCCCS de Arizona ha eximido la mayor parte de la cobertura retroactiva y generalmente inicia la cobertura el primer día del mes de la solicitud. En 2026, los adultos en los 40 estados con expansión más DC califican con ingresos de hasta 138% del Nivel Federal de Pobreza, o $22,025 para una persona. CHIP cubre a niños en hogares de mayores ingresos, a menudo hasta 200 a 300 por ciento del Nivel Federal de Pobreza 2026. Solicite en cuanto ocurra el evento para obtener la fecha de inicio más temprana."
+      },
+      {
+        "question": "¿Qué documentos prueban mi SEP y la fecha de inicio?",
+        "answer": "La verificación del Mercado pide prueba del evento calificador de vida y a veces prueba de cobertura previa. Los documentos aceptados incluyen una carta de terminación del empleador que indique el último día de cobertura, un acta de matrimonio, un acta de nacimiento o registro hospitalario, una orden de adopción o colocación, y un contrato de renta o factura de servicios en caso de mudanza. Cárguelos en su cuenta de healthcare.gov dentro de 30 días de la solicitud, o su SEP puede cancelarse y perderá la fecha de inicio. Guarde el aviso de confirmación con su fecha de vigencia, y conserve el Formulario 1095-A cuando llegue a principios de 2027, porque los meses allí indicados determinan la conciliación de su crédito fiscal de prima 2026 con el IRS."
+      },
+      {
+        "question": "¿Qué reglas estatales cambian las fechas de inicio de cobertura del SEP?",
+        "answer": "Los Mercados estatales siguen el piso federal de 45 CFR 155.420 pero publican sus propias fechas de corte para seleccionar plan, y varios usan calendarios más largos o más cortos que healthcare.gov. Covered California, MNsure, kynect y NY State of Health publican cada uno sus reglas, así que revise su mercado antes de confiar en una fecha de fin de mes. Medicaid varía más: Medi-Cal es retroactivo hasta 3 meses, AHCCCS en Arizona ha eximido la mayor parte de la cobertura retroactiva, y BadgerCare en Wisconsin y MassHealth en Massachusetts aplican sus propias reglas estatales. Comience con el sitio web de su mercado estatal, y luego confirme la retroactividad de Medicaid con su agencia estatal antes de omitir un plan del Mercado."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Marketplace SEP 60-Day Window",
+        "es": "Ventana de 60 Días del SEP del Mercado"
+      },
+      "href": "/event/marketplace-sep-60-day-window"
+    },
+    {
+      "label": {
+        "en": "Documents Needed for Special Enrollment",
+        "es": "Documentos para la Inscripción Especial"
+      },
+      "href": "/event/documents-needed-sep"
+    },
+    {
+      "label": {
+        "en": "ACA Income Limits 2026",
+        "es": "Límites de Ingresos ACA 2026"
+      },
+      "href": "/aca-income-limits"
+    },
+    {
+      "label": {
+        "en": "Free Coverage Screener",
+        "es": "Verificador de Cobertura Gratuito"
+      },
+      "href": "/screener"
+    }
+  ],
+  "sources": [
+    {
+      "name": "HealthCare.gov: Special Enrollment Period rules",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/",
+      "note": {
+        "en": "Official SEP qualifying events, 60-day window, and when coverage starts.",
+        "es": "Eventos calificadores oficiales del SEP, ventana de 60 días y cuándo comienza la cobertura."
+      }
+    },
+    {
+      "name": "eCFR: 45 CFR 155.420 Special enrollment periods",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-155/subpart-E/section-155.420",
+      "note": {
+        "en": "Federal regulation setting Marketplace coverage effective dates for each SEP type.",
+        "es": "Regulación federal que fija las fechas de vigencia de cobertura del Mercado para cada tipo de SEP."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid and CHIP enrollment and links to state agencies.",
+        "es": "Inscripción a Medicaid y CHIP todo el año y enlaces a agencias estatales."
+      }
+    },
+    {
+      "name": "U.S. Department of Labor: COBRA continuation coverage",
+      "url": "https://www.dol.gov/general/topic/health-plans/cobra",
+      "note": {
+        "en": "COBRA 60-day election window and retroactive coverage rules.",
+        "es": "Ventana de elección de 60 días de COBRA y reglas de cobertura retroactiva."
+      }
+    },
+    {
+      "name": "KFF: Health insurance Marketplace and ACA resources",
+      "url": "https://www.kff.org/health-reform/",
+      "note": {
+        "en": "2026 Marketplace premium and subsidy analysis.",
+        "es": "Análisis de primas y subsidios del Mercado 2026."
+      }
+    },
+    {
+      "name": "CMS: Marketplace enrollment resources",
+      "url": "https://www.cms.gov/marketplace/in-person-assisters/enrollment",
+      "note": {
+        "en": "CMS Marketplace enrollment and plan year 2027 guidance.",
+        "es": "Guía de inscripción del Mercado de CMS y año de plan 2027."
+      }
+    }
+  ],
+  "documentsNeeded": {
+    "en": [
+      "Proof of the qualifying life event (birth certificate, marriage certificate, adoption or placement order, lease, or termination letter)",
+      "Employer letter stating the last day of health coverage, if you lost job-based coverage",
+      "Social Security numbers or immigration documents for everyone enrolling",
+      "Projected 2026 household income (pay stubs, tax return, or unemployment award letter)",
+      "Proof of prior coverage in the last 60 days (for marriage and move SEPs)",
+      "Your healthcare.gov or state exchange login and the Marketplace application ID",
+      "Bank or card details for the first premium payment to the insurer"
+    ],
+    "es": [
+      "Prueba del evento calificador de vida (acta de nacimiento, acta de matrimonio, orden de adopción o colocación, contrato de renta o carta de terminación)",
+      "Carta del empleador que indique el último día de cobertura médica, si perdió cobertura laboral",
+      "Números de Seguro Social o documentos de inmigración de todos los que se inscriben",
+      "Ingreso familiar proyectado 2026 (talones de pago, declaración de impuestos o carta de beneficios de desempleo)",
+      "Prueba de cobertura previa en los últimos 60 días (para SEP por matrimonio y mudanza)",
+      "Su acceso a healthcare.gov o al mercado estatal y el número de solicitud del Mercado",
+      "Datos bancarios o de tarjeta para el pago de la primera prima a la aseguradora"
+    ]
+  },
+  "stateRules": [
+    {
+      "state": "California",
+      "rule": "Medi-Cal enrolls year-round and generally allows retroactive coverage for up to 3 months before the application month, while Covered California sets its own plan selection cutoffs under the federal SEP floor.",
+      "sourceUrl": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/default.aspx"
+    },
+    {
+      "state": "Arizona",
+      "rule": "AHCCCS has waived most retroactive coverage for adults, so coverage generally starts the first day of the month you apply; apply before month-end.",
+      "sourceUrl": "https://www.azahcccs.gov/"
+    },
+    {
+      "state": "Minnesota",
+      "rule": "MNsure, the state-based Marketplace, publishes its own SEP plan selection cutoffs under the federal 45 CFR 155.420 floor; confirm the cutoff on mnsure.org before relying on a month-end date.",
+      "sourceUrl": "https://www.mnsure.org/"
+    }
+  ],
+  "commonDenialReasons": {
+    "en": [
+      "Missing the 60-day SEP window, so the application is submitted after day 60",
+      "Selecting a plan but never paying the first premium, which cancels the enrollment",
+      "Not uploading qualifying event documents within the 30-day verification period",
+      "Skipping the prior-coverage proof required for marriage and move SEPs",
+      "Reporting last year's income instead of projected 2026 income, which triggers a subsidy mismatch"
+    ],
+    "es": [
+      "Perder la ventana de 60 días del SEP, por lo que la solicitud se presenta después del día 60",
+      "Seleccionar un plan pero nunca pagar la primera prima, lo que cancela la inscripción",
+      "No cargar los documentos del evento calificador dentro del período de verificación de 30 días",
+      "Omitir la prueba de cobertura previa requerida para los SEP por matrimonio y mudanza",
+      "Reportar el ingreso del año pasado en lugar del ingreso proyectado 2026, lo que causa una discrepancia del subsidio"
+    ]
+  },
+  "topicCluster": "event-sep",
+  "keyTerms": {
+    "en": [
+      "when does sep coverage start",
+      "special enrollment period coverage start date 2026",
+      "sep coverage first of the month",
+      "birth sep coverage retroactive date",
+      "marketplace coverage effective date after qualifying life event"
+    ],
+    "es": [
+      "cuándo comienza la cobertura del sep",
+      "fecha de inicio cobertura período de inscripción especial 2026",
+      "cobertura sep primer día del mes",
+      "fecha de vigencia cobertura mercado evento calificador"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false
+}
