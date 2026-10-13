@@ -8,37 +8,40 @@
   "topic": "Special Enrollment Period after Job Loss in Texas 2026",
   "medicalSpecialty": "PublicHealth",
   "ctaTarget": "screener",
-  "lastUpdated": "2026-10-09",
-  "readingTime": "10 min read",
+  "lastUpdated": "2026-10-13",
+  "readingTime": "9 min read",
+
   "meta": {
     "title": {
       "en": "Lost Your Job in Texas? Health Insurance Options 2026",
       "es": "¿Perdió su Trabajo en Texas? Seguro Médico 2026"
     },
     "description": {
-      "en": "60-day SEP after a Texas job loss. Texas did not expand Medicaid. Compare healthcare.gov plans, Texas state continuation, COBRA, and CHIP for 2026.",
-      "es": "SEP de 60 días tras perder su empleo en Texas. Texas no expandió Medicaid. Compare healthcare.gov, continuación estatal de Texas, COBRA y CHIP 2026."
+      "en": "60-day SEP after job loss in Texas. Texas did not expand Medicaid. Compare ACA Marketplace, Texas CHIP, COBRA and state continuation for 2026.",
+      "es": "SEP de 60 días tras perder empleo en Texas. Texas no expandió Medicaid. Compare Mercado ACA, CHIP de Texas, COBRA y continuación estatal 2026."
     }
   },
+
   "hero": {
     "h1": {
-      "en": "Just Lost Your Job in Texas? Your 2026 Health Insurance Options and Deadlines",
-      "es": "¿Acaba de Perder su Trabajo en Texas? Sus Opciones y Plazos de Seguro Médico 2026"
+      "en": "Just Lost Your Job in Texas? Here Are Your 2026 Health Insurance Options",
+      "es": "¿Acaba de Perder Su Trabajo en Texas? Estas Son Sus Opciones de Seguro Médico 2026"
     },
     "subhero": {
-      "en": "You have 60 days from your last day of employer coverage to enroll through healthcare.gov. Texas did not expand Medicaid, so the Marketplace SEP, Texas state continuation, and COBRA are your main paths in 2026.",
-      "es": "Tiene 60 días desde su último día de cobertura del empleador para inscribirse en healthcare.gov. Texas no expandió Medicaid, así que el SEP del Mercado, la continuación estatal de Texas y COBRA son sus caminos principales en 2026."
+      "en": "You have 60 days from your last day of employer coverage to enroll in a new plan. Texas did not expand Medicaid, so the 2026 Marketplace SEP at healthcare.gov is your main path to subsidized coverage.",
+      "es": "Tiene 60 días desde su último día de cobertura del empleador para inscribirse en un nuevo plan. Texas no expandió Medicaid, por lo que el SEP del Mercado en healthcare.gov en 2026 es su principal camino hacia cobertura subsidiada."
     }
   },
+
   "urgency": {
     "kind": "deadline",
     "heading": {
       "en": "You have 60 days from your Texas coverage loss date",
-      "es": "Tiene 60 días desde la fecha en que pierde su cobertura en Texas"
+      "es": "Tiene 60 días desde la fecha de pérdida de cobertura en Texas"
     },
     "body": {
-      "en": "Your 60-day Marketplace Special Enrollment Period (SEP) starts the day after your employer coverage ends. For example, if your Texas employer coverage ends on December 31, 2026, your SEP window runs January 1 through March 1, 2027. You can also enroll up to 60 days BEFORE the loss date, which avoids a gap. Miss the window and you generally wait for the next ACA Open Enrollment Period (November 1, 2026 to January 15, 2027, for 2027 coverage). Texas Medicaid does not cover most laid-off adults, so the SEP deadline carries extra weight for Texans.",
-      "es": "Su Período de Inscripción Especial (SEP) de 60 días en el Mercado comienza el día después de que termina su cobertura del empleador. Por ejemplo, si su cobertura del empleador en Texas termina el 31 de diciembre de 2026, su ventana SEP va del 1 de enero al 1 de marzo de 2027. También puede inscribirse hasta 60 días ANTES de la fecha de pérdida para evitar un vacío. Si pierde la ventana, normalmente debe esperar al próximo Período de Inscripción Abierta del ACA (del 1 de noviembre de 2026 al 15 de enero de 2027, para cobertura 2027). Medicaid de Texas no cubre a la mayoría de los adultos despedidos, por lo que el plazo del SEP pesa más para los texanos."
+      "en": "Your 60-day loss-of-coverage Special Enrollment Period starts the day after your employer health coverage ends, and you can also begin applying up to 60 days before it ends. For example, if your last day of coverage is October 31, 2026, your Marketplace SEP window runs November 1 through December 30, 2026. Miss that window and you generally must wait for the next ACA Open Enrollment Period, which begins November 1, 2026 for 2027 coverage (confirm the closing date at healthcare.gov). Texas Medicaid does not cover most laid-off adults because of the non-expansion gap, so the SEP deadline matters even more for Texas residents.",
+      "es": "Su Período de Inscripción Especial por pérdida de cobertura de 60 días comienza el día después de que termina su seguro médico del empleador, y también puede comenzar a solicitar hasta 60 días antes. Por ejemplo, si su último día de cobertura es el 31 de octubre de 2026, su ventana SEP del Mercado corre del 1 de noviembre al 30 de diciembre de 2026. Si pierde esa ventana, generalmente debe esperar al próximo Período de Inscripción Abierta del ACA, que comienza el 1 de noviembre de 2026 para la cobertura de 2027 (confirme la fecha de cierre en healthcare.gov). Medicaid de Texas no cubre a la mayoría de adultos despedidos por la brecha de no expansión, por lo que la fecha límite del SEP es aún más importante para los residentes de Texas."
     },
     "totalTimeISO8601": "P60D",
     "secondaryDeadlines": [
@@ -51,13 +54,6 @@
       },
       {
         "label": {
-          "en": "Texas state continuation request (60 days from notice or coverage end, whichever is later)",
-          "es": "Solicitud de continuación estatal de Texas (60 días desde el aviso o el fin de cobertura, lo que ocurra después)"
-        },
-        "days": 60
-      },
-      {
-        "label": {
           "en": "COBRA election window",
           "es": "Ventana de elección de COBRA"
         },
@@ -65,27 +61,37 @@
       },
       {
         "label": {
-          "en": "Texas CHIP and Children's Medicaid (children only, year-round)",
-          "es": "CHIP y Medicaid infantil de Texas (solo niños, todo el año)"
+          "en": "Texas state continuation election (insured group plans)",
+          "es": "Elección de continuación estatal de Texas (planes grupales asegurados)"
+        },
+        "days": 60
+      },
+      {
+        "label": {
+          "en": "Texas CHIP and children's Medicaid (year-round)",
+          "es": "CHIP de Texas y Medicaid infantil (todo el año)"
         },
         "days": null
       }
     ]
   },
+
   "quickAnswer": {
-    "en": "Losing job-based health insurance in Texas opens a 60-day Marketplace Special Enrollment Period (SEP) at healthcare.gov. Texas did not expand Medicaid, so most laid-off adults do not qualify for Texas Medicaid unless they are pregnant, a parent with very low income, or have a qualifying disability. Your main options in 2026 are: (1) a Marketplace plan with premium tax credits, often $10 to $300 per month after subsidies for incomes between 100% and 400% FPL in 2026; (2) COBRA at 102% of the full premium, roughly $500 to $2,800 per month in 2026; (3) Texas state continuation under Insurance Code Chapter 1251 when federal COBRA does not apply or runs out; and (4) Texas CHIP or Children's Medicaid for kids under 19. Adults below 100% FPL in 2026 fall into the Texas coverage gap.",
-    "es": "Perder el seguro médico del trabajo en Texas abre un Período de Inscripción Especial (SEP) de 60 días en healthcare.gov. Texas no expandió Medicaid, así que la mayoría de los adultos despedidos no califica para Medicaid de Texas, salvo que estén embarazadas, sean padres con ingresos muy bajos o tengan una discapacidad calificada. Sus opciones principales en 2026 son: (1) un plan del Mercado con créditos fiscales, a menudo de $10 a $300 al mes después de subsidios para ingresos entre 100% y 400% FPL en 2026; (2) COBRA al 102% de la prima completa, aproximadamente $500 a $2,800 al mes en 2026; (3) continuación estatal de Texas bajo el Capítulo 1251 del Código de Seguros cuando COBRA federal no aplica o se agota; y (4) CHIP o Medicaid infantil de Texas para menores de 19 años. Los adultos por debajo de 100% FPL en 2026 caen en la brecha de cobertura de Texas."
+    "en": "Losing job-based health insurance in Texas triggers a 60-day Special Enrollment Period (SEP) for the ACA Marketplace at healthcare.gov. Texas did not expand Medicaid, so most laid-off adults do not qualify for Texas Medicaid unless they are pregnant, a parent with very low income, or have a qualifying disability. Your main options in 2026 are: (1) a Marketplace plan with premium tax credits for projected 2026 income between 100% and 400% FPL, often $10 to $300 per month after subsidies in 2026; (2) COBRA at 102% of the full premium in 2026, often $500 to $2,800 per month; (3) Texas state continuation if your plan is an insured group policy; (4) a spouse's employer plan within 30 days; and (5) Texas CHIP for children up to 201% FPL. Adults under 100% FPL without a Medicaid category are in the Texas coverage gap and should compare $0 Bronze options.",
+    "es": "Perder el seguro médico del trabajo en Texas activa un Período de Inscripción Especial (SEP) de 60 días para el Mercado ACA en healthcare.gov. Texas no expandió Medicaid, por lo que la mayoría de los adultos despedidos no califica para Medicaid de Texas, a menos que estén embarazadas, sean padres con ingresos muy bajos o tengan una discapacidad calificada. Sus opciones principales en 2026 son: (1) un plan del Mercado con créditos fiscales de prima para ingresos proyectados de 2026 entre 100% y 400% FPL, a menudo $10 a $300 al mes después de subsidios en 2026; (2) COBRA al 102% de la prima completa en 2026, a menudo $500 a $2,800 al mes; (3) continuación estatal de Texas si su plan es una póliza grupal asegurada; (4) el plan del empleador de su cónyuge dentro de 30 días; y (5) CHIP de Texas para niños hasta 201% FPL. Los adultos bajo 100% FPL sin categoría de Medicaid están en la brecha de cobertura de Texas y deben comparar opciones Bronze de $0."
   },
+
   "introParagraphs": [
     {
-      "en": "Losing a job in Texas means losing employer health insurance on a clock set by your plan, usually the last day of the month you were terminated. That loss is a qualifying life event (QLE) under federal rules, and it starts a 60-day window to enroll in a Marketplace plan at healthcare.gov. Texas uses the federal Marketplace, so there is no state exchange to learn. The deadline is the most important fact on this page: 60 days from the date your coverage ends, with a bonus option to enroll up to 60 days before it ends. In 2026 the Texas picture has two complications. First, Texas is one of 10 states that did not expand Medicaid, so a laid-off adult without children usually cannot get Texas Medicaid no matter how low income falls. Second, the enhanced premium tax credits expired on January 1, 2026, so the 400% FPL subsidy cliff is back, which changes the math for higher earners severed with a large payout. This guide walks through the Marketplace SEP, Texas state continuation, COBRA, CHIP for your children, and the documents you need, with sources from healthcare.gov, medicaid.gov, the Texas Department of Insurance, and KFF.",
-      "es": "Perder un empleo en Texas significa perder el seguro médico del empleador en un plazo fijado por su plan, normalmente el último día del mes en que fue despedido. Esa pérdida es un evento calificador de vida (QLE) bajo las reglas federales y abre una ventana de 60 días para inscribirse en un plan del Mercado en healthcare.gov. Texas usa el Mercado federal, así que no hay un intercambio estatal que aprender. El plazo es el dato más importante de esta página: 60 días desde la fecha en que termina su cobertura, con la opción adicional de inscribirse hasta 60 días antes. En 2026 el panorama de Texas tiene dos complicaciones. Primero, Texas es uno de los 10 estados que no expandieron Medicaid, así que un adulto despedido sin hijos normalmente no puede obtener Medicaid de Texas sin importar cuán bajo sea su ingreso. Segundo, los créditos fiscales de prima mejorados expiraron el 1 de enero de 2026, por lo que el precipicio de subsidio del 400% FPL regresó, lo que cambia las cuentas para quienes reciben una indemnización grande. Esta guía explica el SEP del Mercado, la continuación estatal de Texas, COBRA, CHIP para sus hijos y los documentos que necesita, con fuentes de healthcare.gov, medicaid.gov, el Departamento de Seguros de Texas y KFF."
+      "en": "Losing a job in Texas carries a health insurance risk that residents of the 40 expansion states plus DC do not face: the Medicaid coverage gap. Texas is one of 10 states that did not expand Medicaid under the Affordable Care Act, so Texas Medicaid for adults stays limited to narrow groups: pregnant women, parents and caretakers with income far below the poverty line, people with qualifying disabilities, and older adults who meet asset tests. A laid-off single adult in Texas with no dependents almost never qualifies for Texas Medicaid, however low income falls in 2026. The federal loss-of-coverage Special Enrollment Period (SEP) gives you a 60-day window from your last day of employer coverage to enroll in an ACA Marketplace plan at healthcare.gov. Under Section 9831 of HIPAA and the federal Marketplace rules, an involuntary loss of employer-sponsored minimum essential coverage is a qualifying life event (QLE) that opens this window. Open Enrollment for 2027 coverage begins November 1, 2026, and the exact closing date should be confirmed at healthcare.gov. Texans who lose job coverage should treat the 60-day Marketplace SEP as the primary safety net, because Texas Medicaid does not serve as the fallback it does in expansion states.",
+      "es": "Perder un trabajo en Texas conlleva un riesgo de seguro médico que los residentes de los 40 estados de expansión más DC no enfrentan: la brecha de cobertura de Medicaid. Texas es uno de los 10 estados que no expandieron Medicaid bajo la Ley de Cuidado de Salud Asequible, por lo que Medicaid de Texas para adultos se limita a grupos reducidos: mujeres embarazadas, padres y cuidadores con ingresos muy por debajo del nivel de pobreza, personas con discapacidades calificadas y adultos mayores que cumplen pruebas de activos. Un adulto soltero despedido en Texas sin dependientes casi nunca califica para Medicaid de Texas, por más que bajen sus ingresos en 2026. El Período de Inscripción Especial (SEP) federal por pérdida de cobertura le da una ventana de 60 días desde su último día de cobertura del empleador para inscribirse en un plan del Mercado ACA en healthcare.gov. Bajo la Sección 9831 de HIPAA y las reglas federales del Mercado, la pérdida involuntaria de cobertura mínima esencial del empleador es un evento calificador de vida (QLE) que abre esta ventana. La Inscripción Abierta para la cobertura de 2027 comienza el 1 de noviembre de 2026, y la fecha exacta de cierre debe confirmarse en healthcare.gov. Los texanos que pierden la cobertura del trabajo deben tratar el SEP de 60 días del Mercado como su red de seguridad principal, porque Medicaid de Texas no funciona como respaldo igual que en los estados de expansión."
     },
     {
-      "en": "Texas workers face a coverage landscape shaped by size and geography. Texas has among the highest uninsured rates in the nation according to KFF, and the state's Medicaid for parents is limited to roughly 15% FPL in 2026, far below the 138% FPL line used in the 40 expansion states plus DC. That makes the Marketplace the realistic safety net for most laid-off Texans. Subsidized plans in Houston, Dallas, San Antonio, Austin, and rural counties vary in price, but 2026 premium tax credits still cut costs sharply for incomes between 100% and 400% FPL, and the $0-premium Bronze option remains available at the low end. Employers with 20 or more employees owe federal COBRA, while smaller Texas employers fall under Texas state continuation, which lasts up to nine months under Insurance Code Section 1251.255. Timing matters in either case. Request your HIPAA certificate of creditable coverage in writing from your employer, file for Texas Workforce Commission unemployment benefits right away, and decide among the options before the 60-day clock runs out. Every step below includes the specific action and the specific form or website.",
-      "es": "Los trabajadores de Texas enfrentan un panorama de cobertura marcado por el tamaño y la geografía. Texas tiene una de las tasas de no asegurados más altas del país según KFF, y Medicaid de Texas para padres se limita a aproximadamente 15% FPL en 2026, muy por debajo de la línea de 138% FPL usada en los 40 estados que expandieron Medicaid más DC. Eso convierte al Mercado en la red de seguridad realista para la mayoría de los texanos despedidos. Los planes subsidiados en Houston, Dallas, San Antonio, Austin y los condados rurales varían en precio, pero los créditos fiscales de prima de 2026 aún reducen los costos de forma notable para ingresos entre 100% y 400% FPL, y la opción Bronze con prima de $0 sigue disponible en el extremo bajo. Los empleadores con 20 o más empleados deben ofrecer COBRA federal, mientras que los empleadores texanos más pequeños caen bajo la continuación estatal de Texas, que dura hasta nueve meses según la Sección 1251.255 del Código de Seguros. El tiempo importa en cualquier caso. Solicite por escrito a su empleador su certificado HIPAA de cobertura acreditable, presente de inmediato su solicitud de desempleo ante la Comisión de la Fuerza Laboral de Texas y decida entre las opciones antes de que venza el reloj de 60 días. Cada paso a continuación incluye la acción específica y el formulario o sitio web específico."
+      "en": "Texas residents shop for Marketplace coverage at healthcare.gov, because Texas does not run its own state Exchange. Texas Medicaid and Texas CHIP are administered by the Texas Health and Human Services Commission (HHSC), and applications go through YourTexasBenefits.com. For most laid-off Texans, the income calculation decides everything. Projected 2026 household income between 100% and 400% FPL ($15,960 to $63,840 for a single person in 2026) qualifies you for premium tax credits that usually make Silver and Bronze plans far cheaper than COBRA. The 400% FPL subsidy cliff returned for 2026 after the enhanced credits expired on January 1, 2026, so income above that line receives no credit. Unemployment benefits from the Texas Workforce Commission (TWC), payable for up to 26 weeks, count as Modified Adjusted Gross Income (MAGI), so include them in your projection. Texas CHIP covers children under 19 up to 201% FPL ($66,330 for a family of 4 in 2026) year-round, even when a parent is ineligible. Insured group plans may also offer Texas state continuation coverage, covered in the sections below.",
+      "es": "Los residentes de Texas compran cobertura del Mercado en healthcare.gov, porque Texas no opera su propio intercambio estatal. Medicaid de Texas y CHIP de Texas son administrados por la Comisión de Salud y Servicios Humanos de Texas (HHSC), y las solicitudes se presentan en YourTexasBenefits.com. Para la mayoría de los texanos despedidos, el cálculo de ingresos lo decide todo. Un ingreso familiar proyectado de 2026 entre 100% y 400% FPL ($15,960 a $63,840 para una persona en 2026) le da derecho a créditos fiscales de prima que normalmente hacen los planes Silver y Bronze mucho más baratos que COBRA. El precipicio de subsidio del 400% FPL regresó para 2026 después de que los créditos mejorados expiraron el 1 de enero de 2026, por lo que los ingresos por encima de esa línea no reciben crédito. Los beneficios de desempleo de la Comisión de la Fuerza Laboral de Texas (TWC), pagaderos hasta 26 semanas, cuentan como Ingreso Bruto Ajustado Modificado (MAGI), así que inclúyalos en su proyección. CHIP de Texas cubre a niños menores de 19 años hasta 201% FPL ($66,330 para una familia de 4 en 2026) todo el año, aunque un padre no sea elegible. Los planes grupales asegurados también pueden ofrecer continuación estatal de Texas, que se explica en las secciones siguientes."
     }
   ],
+
   "steps": [
     {
       "name": {
@@ -93,112 +99,93 @@
         "es": "Confirme su último día de cobertura del empleador en Texas"
       },
       "text": {
-        "en": "Call your HR department or read your termination letter to get the exact date your employer health plan ends. Most Texas employer plans end on the last day of the month of termination, but some end on the separation date. Write that date down, because it starts your 60-day SEP clock. Request a HIPAA certificate of creditable coverage in writing and ask whether your employer has 20 or more employees, which decides whether federal COBRA or Texas state continuation applies.",
-        "es": "Llame a su departamento de recursos humanos o lea su carta de despido para obtener la fecha exacta en que termina su plan médico del empleador. La mayoría de los planes de empleadores en Texas terminan el último día del mes del despido, pero algunos terminan en la fecha de separación. Anote esa fecha, porque inicia su reloj de 60 días del SEP. Solicite por escrito un certificado HIPAA de cobertura acreditable y pregunte si su empleador tiene 20 o más empleados, lo que decide si aplica COBRA federal o la continuación estatal de Texas."
+        "en": "Call your HR department or review your termination letter to get the exact date your employer health coverage ends. Many Texas employer plans end on the last day of the month you were terminated, but some end on the termination date itself. That date starts your 60-day SEP clock. Request your COBRA election notice and a certificate of creditable coverage in writing, and ask whether your plan is an insured group policy or self-funded, since that decides whether Texas state continuation applies.",
+        "es": "Llame a su departamento de recursos humanos o revise su carta de despido para obtener la fecha exacta en que termina su cobertura médica del empleador. Muchos planes de empleadores en Texas terminan el último día del mes en que fue despedido, pero algunos terminan en la fecha misma del despido. Esa fecha inicia su reloj SEP de 60 días. Solicite por escrito su aviso de elección de COBRA y un certificado de cobertura acreditable, y pregunte si su plan es una póliza grupal asegurada o autofinanciada, ya que eso decide si aplica la continuación estatal de Texas."
       }
     },
     {
       "name": {
-        "en": "Estimate your projected 2026 Texas household income",
+        "en": "Check Texas Medicaid and CHIP eligibility at YourTexasBenefits.com",
+        "es": "Verifique la elegibilidad para Medicaid y CHIP de Texas en YourTexasBenefits.com"
+      },
+      "text": {
+        "en": "Apply at YourTexasBenefits.com or call 2-1-1 Texas to be screened for Texas Medicaid and CHIP. Texas Medicaid covers pregnant women (up to 198% FPL), children, parents with very low income, and people with qualifying disabilities. Texas CHIP covers children under 19 up to 201% FPL. If you are a single adult without dependents or a disability, Texas Medicaid is almost certainly unavailable, and the Marketplace SEP at healthcare.gov becomes your main coverage path.",
+        "es": "Solicite en YourTexasBenefits.com o llame al 2-1-1 Texas para evaluar su elegibilidad para Medicaid y CHIP de Texas. Medicaid de Texas cubre a mujeres embarazadas (hasta 198% FPL), niños, padres con ingresos muy bajos y personas con discapacidades calificadas. CHIP de Texas cubre a niños menores de 19 años hasta 201% FPL. Si es un adulto soltero sin dependientes ni discapacidad, Medicaid de Texas casi con certeza no está disponible, y el SEP del Mercado en healthcare.gov se convierte en su principal camino de cobertura."
+      }
+    },
+    {
+      "name": {
+        "en": "Calculate your projected 2026 Texas household income",
         "es": "Calcule su ingreso familiar proyectado de 2026 en Texas"
       },
       "text": {
-        "en": "Calculate your Modified Adjusted Gross Income (MAGI) for 2026 using wages already earned, severance, and Texas Workforce Commission unemployment benefits. Compare the total to the household-size table on this page: below 100% FPL in 2026 means the Texas coverage gap, 100% to 400% FPL means premium tax credits, and above 400% FPL means full-price Marketplace premiums. Use projected annual 2026 income, not last year's tax return, when you fill out the healthcare.gov application.",
-        "es": "Calcule su Ingreso Bruto Ajustado Modificado (MAGI) de 2026 usando los salarios ya ganados, la indemnización y los beneficios de desempleo de la Comisión de la Fuerza Laboral de Texas. Compare el total con la tabla por tamaño de hogar en esta página: por debajo de 100% FPL en 2026 es la brecha de cobertura de Texas, de 100% a 400% FPL son créditos fiscales de prima y por encima de 400% FPL son primas completas del Mercado. Use el ingreso anual proyectado de 2026, no la declaración del año pasado, al llenar la solicitud de healthcare.gov."
+        "en": "Calculate only what you expect to earn for the rest of 2026, not your old salary. Include Texas Workforce Commission unemployment benefits, because unemployment compensation counts as MAGI. If projected 2026 income falls between 100% FPL ($15,960 single) and 400% FPL ($63,840 single), you qualify for premium tax credits at healthcare.gov. Check the household-size table on this page for your family size. Income under 100% FPL puts you in the Texas coverage gap unless you meet a Medicaid category.",
+        "es": "Calcule solo lo que espera ganar durante el resto de 2026, no su salario anterior. Incluya los beneficios de desempleo de la Comisión de la Fuerza Laboral de Texas, porque la compensación por desempleo cuenta como MAGI. Si su ingreso proyectado de 2026 está entre 100% FPL ($15,960 soltero) y 400% FPL ($63,840 soltero), califica para créditos fiscales de prima en healthcare.gov. Revise la tabla por tamaño de hogar en esta página para el tamaño de su familia. Un ingreso bajo 100% FPL lo ubica en la brecha de cobertura de Texas, a menos que cumpla una categoría de Medicaid."
       }
     },
     {
       "name": {
-        "en": "Check Texas Medicaid and CHIP eligibility at YourTexasBenefits",
-        "es": "Verifique la elegibilidad para Medicaid y CHIP de Texas en YourTexasBenefits"
+        "en": "Apply for a Marketplace SEP plan at healthcare.gov",
+        "es": "Solicite un plan del Mercado con SEP en healthcare.gov"
       },
       "text": {
-        "en": "Apply at YourTexasBenefits.com or call 2-1-1 to check Texas Medicaid for pregnancy, parents with very low income, disability, and children. Texas Medicaid and CHIP cover children under 19 in households up to about 201% FPL in 2026. Medicaid and CHIP applications are open year-round with no SEP deadline, so apply for your children immediately even if you are still sorting out your own coverage.",
-        "es": "Presente su solicitud en YourTexasBenefits.com o llame al 2-1-1 para verificar Medicaid de Texas por embarazo, padres con ingresos muy bajos, discapacidad y niños. Medicaid y CHIP de Texas cubren a menores de 19 años en hogares de hasta aproximadamente 201% FPL en 2026. Las solicitudes de Medicaid y CHIP están abiertas todo el año sin plazo de SEP, así que solicite para sus hijos de inmediato aunque todavía esté definiendo su propia cobertura."
+        "en": "Log in or create an account at healthcare.gov, select Texas, and report loss of job-based coverage as your qualifying life event. Enter your projected 2026 income, compare Silver and Bronze plans by ZIP code, check each network for your doctors and hospitals, and submit your application. Upload your termination letter or COBRA notice if asked. Plans chosen in the month after coverage ends generally start on the first of the following month, so apply before day 60 and ideally before your coverage ends to avoid a gap.",
+        "es": "Inicie sesión o cree una cuenta en healthcare.gov, seleccione Texas e informe la pérdida de cobertura del trabajo como su evento calificador de vida. Ingrese su ingreso proyectado de 2026, compare planes Silver y Bronze por código postal, verifique cada red para sus médicos y hospitales, y envíe su solicitud. Cargue su carta de despido o aviso de COBRA si se lo piden. Los planes elegidos en el mes posterior al fin de la cobertura generalmente comienzan el primer día del mes siguiente, así que solicite antes del día 60 y, de ser posible, antes de que termine su cobertura para evitar una interrupción."
       }
     },
     {
       "name": {
-        "en": "Apply for a Marketplace SEP at healthcare.gov within 60 days",
-        "es": "Solicite el SEP del Mercado en healthcare.gov dentro de 60 días"
+        "en": "Compare COBRA and Texas state continuation before the 60-day election deadline",
+        "es": "Compare COBRA y la continuación estatal de Texas antes del plazo de elección de 60 días"
       },
       "text": {
-        "en": "Log in or create an account at healthcare.gov, select Texas, and choose the loss-of-coverage Special Enrollment Period. Enter your projected 2026 income, upload your termination letter or HIPAA certificate when requested, and compare Bronze, Silver, and Gold plans by premium, deductible, and provider network. Submit and pay your first premium. Coverage starts the first of the month after you pick a plan, or the first of the month after your old coverage ends if you enroll before the loss date.",
-        "es": "Inicie sesión o cree una cuenta en healthcare.gov, seleccione Texas y elija el Período de Inscripción Especial por pérdida de cobertura. Ingrese su ingreso proyectado de 2026, suba su carta de despido o certificado HIPAA cuando se lo pidan y compare planes Bronze, Silver y Gold por prima, deducible y red de proveedores. Envíe la solicitud y pague su primera prima. La cobertura inicia el primer día del mes siguiente a la elección del plan, o el primer día del mes después de que termine su cobertura anterior si se inscribe antes de la fecha de pérdida."
+        "en": "Compare your COBRA premium (102% of the full cost in 2026) against Marketplace net premiums. If your plan is an insured group policy, also ask your employer about Texas state continuation under Texas Insurance Code Chapter 1251, which requires a written request within 60 days. Electing COBRA does not cancel your Marketplace SEP rights, but missing the Marketplace window does. Calculate total yearly cost, including deductible credit, before you decide.",
+        "es": "Compare su prima de COBRA (102% del costo total en 2026) con las primas netas del Mercado. Si su plan es una póliza grupal asegurada, pregunte también a su empleador sobre la continuación estatal de Texas bajo el Capítulo 1251 del Código de Seguros de Texas, que exige una solicitud por escrito dentro de 60 días. Elegir COBRA no cancela sus derechos de SEP del Mercado, pero perder la ventana del Mercado sí. Calcule el costo anual total, incluido el crédito de deducible, antes de decidir."
       }
     },
     {
       "name": {
-        "en": "Check whether your spouse's employer plan is an option",
-        "es": "Verifique si el plan del empleador de su cónyuge es una opción"
+        "en": "Enroll children in Texas CHIP and pay your first premium",
+        "es": "Inscriba a sus hijos en CHIP de Texas y pague su primera prima"
       },
       "text": {
-        "en": "Ask your spouse's HR department for the plan's special enrollment deadline, which is often 30 days from your coverage loss. Compare the employee-plus-spouse premium and the network against Marketplace quotes at healthcare.gov. Submit the enrollment form and a copy of your termination letter or HIPAA certificate before the employer's deadline expires. Note that an affordable offer of employer coverage can reduce your Marketplace premium tax credit eligibility.",
-        "es": "Pregunte al departamento de recursos humanos de su cónyuge la fecha límite de inscripción especial del plan, que suele ser de 30 días desde su pérdida de cobertura. Compare la prima de empleado más cónyuge y la red con las cotizaciones del Mercado en healthcare.gov. Envíe el formulario de inscripción y una copia de su carta de despido o certificado HIPAA antes de que venza el plazo del empleador. Tenga en cuenta que una oferta asequible de cobertura del empleador puede reducir su elegibilidad para el crédito fiscal de prima del Mercado."
-      }
-    },
-    {
-      "name": {
-        "en": "Compare COBRA and Texas state continuation before electing either",
-        "es": "Compare COBRA y la continuación estatal de Texas antes de elegir"
-      },
-      "text": {
-        "en": "Review the COBRA election notice from your employer's plan administrator and compare the 2026 102% premium against your Marketplace quote. If your Texas employer has fewer than 20 employees, request Texas state continuation in writing within 60 days under Insurance Code Section 1251.253, and pay the first premium within 45 days of electing. Elect COBRA only if you need to keep a specific specialist or have already met most of your 2026 deductible.",
-        "es": "Revise el aviso de elección de COBRA del administrador del plan de su empleador y compare la prima del 102% de 2026 con su cotización del Mercado. Si su empleador en Texas tiene menos de 20 empleados, solicite por escrito la continuación estatal de Texas dentro de 60 días según la Sección 1251.253 del Código de Seguros y pague la primera prima dentro de 45 días de la elección. Elija COBRA solo si necesita conservar a un especialista específico o ya cubrió la mayor parte de su deducible de 2026."
-      }
-    },
-    {
-      "name": {
-        "en": "File for Texas Workforce Commission unemployment and report it correctly",
-        "es": "Solicite desempleo ante la Comisión de la Fuerza Laboral de Texas y repórtelo correctamente"
-      },
-      "text": {
-        "en": "File your claim at the Texas Workforce Commission (twc.texas.gov) as soon as you are separated. Unemployment compensation counts as income on your healthcare.gov application, and you will reconcile advance premium tax credits against Form 1095-A when you file your 2026 federal return. Update your income at healthcare.gov within 30 days of any change so your subsidy stays accurate.",
-        "es": "Presente su reclamo ante la Comisión de la Fuerza Laboral de Texas (twc.texas.gov) tan pronto como se separe del empleo. La compensación por desempleo cuenta como ingreso en su solicitud de healthcare.gov, y usted conciliará los créditos fiscales de prima adelantados con el Formulario 1095-A al presentar su declaración federal de 2026. Actualice su ingreso en healthcare.gov dentro de 30 días de cualquier cambio para que su subsidio se mantenga correcto."
+        "en": "Apply for Texas CHIP at YourTexasBenefits.com if your children are under 19 and household income is up to 201% FPL, since CHIP enrollment is year-round. For your own Marketplace plan, pay the first month's premium directly to the insurer by the deadline on your confirmation notice, then keep your 1095-A form when it arrives in early 2027 to reconcile premium tax credits on your tax return.",
+        "es": "Solicite CHIP de Texas en YourTexasBenefits.com si sus hijos tienen menos de 19 años y el ingreso familiar llega hasta 201% FPL, ya que la inscripción en CHIP es todo el año. Para su propio plan del Mercado, pague la prima del primer mes directamente a la aseguradora antes de la fecha indicada en su aviso de confirmación, y conserve su formulario 1095-A cuando llegue a principios de 2027 para conciliar los créditos fiscales de prima en su declaración de impuestos."
       }
     }
   ],
+
   "optionsComparison": {
     "headers": {
-      "en": [
-        "Option",
-        "Typical cost",
-        "Best for",
-        "Deadline"
-      ],
-      "es": [
-        "Opción",
-        "Costo típico",
-        "Mejor para",
-        "Fecha límite"
-      ]
+      "en": ["Option", "Typical cost", "Best for", "Deadline"],
+      "es": ["Opción", "Costo típico", "Mejor para", "Fecha límite"]
     },
     "rows": [
       {
         "en": [
           "ACA Marketplace SEP at healthcare.gov",
           "$10 to $300/mo after premium tax credits (2026)",
-          "Most laid-off Texans with income between 100% and 400% FPL (2026)",
+          "Most laid-off Texans with projected 2026 income between 100% and 400% FPL",
           "60-day SEP from coverage loss"
         ],
         "es": [
           "SEP del Mercado ACA en healthcare.gov",
           "$10 a $300/mes después de créditos fiscales (2026)",
-          "La mayoría de los texanos despedidos con ingreso entre 100% y 400% FPL (2026)",
+          "La mayoría de los texanos despedidos con ingreso proyectado de 2026 entre 100% y 400% FPL",
           "SEP de 60 días desde la pérdida de cobertura"
         ]
       },
       {
         "en": [
-          "Texas Medicaid (HHSC, YourTexasBenefits)",
+          "Texas Medicaid (HHSC)",
           "Free (categorical eligibility only, 2026)",
-          "Pregnant women, parents with income near 15% FPL (2026), people with qualifying disabilities",
+          "Pregnant women, children, parents with very low income, people with qualifying disabilities",
           "Year-round at YourTexasBenefits.com"
         ],
         "es": [
-          "Medicaid de Texas (HHSC, YourTexasBenefits)",
+          "Medicaid de Texas (HHSC)",
           "Gratis (solo elegibilidad categórica, 2026)",
-          "Mujeres embarazadas, padres con ingreso cercano a 15% FPL (2026), personas con discapacidades calificadas",
+          "Mujeres embarazadas, niños, padres con ingresos muy bajos, personas con discapacidades calificadas",
           "Todo el año en YourTexasBenefits.com"
         ]
       },
@@ -206,28 +193,28 @@
         "en": [
           "COBRA continuation coverage",
           "$500 to $2,800/mo (individual to family, 2026)",
-          "Keeping a specialist outside Marketplace networks, or a mostly met 2026 deductible",
-          "60-day election window"
+          "Keeping a specialist outside Marketplace networks, or a substantially met 2026 deductible",
+          "60-day election window from job loss"
         ],
         "es": [
           "Cobertura de continuación COBRA",
           "$500 a $2,800/mes (individual a familiar, 2026)",
-          "Conservar un especialista fuera de las redes del Mercado, o un deducible 2026 casi cubierto",
-          "Ventana de elección de 60 días"
+          "Mantener un especialista fuera de las redes del Mercado, o un deducible de 2026 casi cumplido",
+          "Ventana de elección de 60 días desde la pérdida del trabajo"
         ]
       },
       {
         "en": [
           "Texas state continuation (Insurance Code Ch. 1251)",
-          "102% of group rate (2026)",
-          "Employees of small Texas employers without federal COBRA, or those whose COBRA is ending",
-          "Written request within 60 days; first payment within 45 days of electing"
+          "Employer-set contribution plus 2% of the group rate (2026)",
+          "Employees on insured group plans who need a bridge, including after COBRA ends",
+          "Written request within 60 days"
         ],
         "es": [
-          "Continuación estatal de Texas (Código de Seguros Cap. 1251)",
-          "102% de la tarifa de grupo (2026)",
-          "Empleados de empleadores pequeños de Texas sin COBRA federal, o cuyo COBRA está terminando",
-          "Solicitud escrita en 60 días; primer pago dentro de 45 días de la elección"
+          "Continuación estatal de Texas (Código de Seguros, Cap. 1251)",
+          "Contribución fijada por el empleador más 2% de la tarifa grupal (2026)",
+          "Empleados en planes grupales asegurados que necesitan un puente, incluso después de COBRA",
+          "Solicitud por escrito dentro de 60 días"
         ]
       },
       {
@@ -235,36 +222,37 @@
           "Spouse's employer plan",
           "Varies, often $100 to $600/mo employee share (2026)",
           "Married with an employed spouse whose employer subsidizes premiums",
-          "Often 30 days from coverage loss"
+          "30 days from Texas coverage loss"
         ],
         "es": [
           "Plan del empleador del cónyuge",
           "Varía, a menudo $100 a $600/mes parte del empleado (2026)",
           "Casado con cónyuge empleado cuyo empleador subsidia las primas",
-          "A menudo 30 días desde la pérdida de cobertura"
+          "30 días desde la pérdida de cobertura en Texas"
         ]
       },
       {
         "en": [
-          "Texas CHIP and Children's Medicaid (children only)",
-          "Free to low enrollment fees by income (2026)",
-          "Children under 19 in households up to about 201% FPL ($66,330/yr for a family of 4 in 2026)",
+          "Texas CHIP (children only)",
+          "Free to low enrollment fee, depending on income (2026)",
+          "Children under 19 in Texas households up to 201% FPL ($66,330 family of 4 in 2026)",
           "Year-round at YourTexasBenefits.com"
         ],
         "es": [
-          "CHIP y Medicaid infantil de Texas (solo niños)",
-          "Gratis a cuotas bajas según ingreso (2026)",
-          "Menores de 19 años en hogares de hasta aproximadamente 201% FPL ($66,330/año para familia de 4 en 2026)",
+          "CHIP de Texas (solo niños)",
+          "Gratis a una cuota baja de inscripción, según ingresos (2026)",
+          "Niños menores de 19 en hogares de Texas hasta 201% FPL ($66,330 familia de 4 en 2026)",
           "Todo el año en YourTexasBenefits.com"
         ]
       }
     ],
     "footnote": {
-      "en": "Texas did not expand Medicaid under the ACA. Adults between 0% and 100% FPL in 2026 who do not meet categorical requirements may qualify for $0-premium Bronze plans at healthcare.gov. The 400% FPL subsidy cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026. Texas uses the federal healthcare.gov Marketplace.",
-      "es": "Texas no expandió Medicaid bajo el ACA. Los adultos entre 0% y 100% FPL en 2026 que no cumplen requisitos categóricos pueden calificar para planes Bronze con prima de $0 en healthcare.gov. El precipicio de subsidio del 400% FPL regresó en 2026 después de que los créditos fiscales de prima mejorados expiraron el 1 de enero de 2026. Texas usa el Mercado federal healthcare.gov."
+      "en": "Texas did not expand Medicaid under the ACA. Adults in the coverage gap (income under 100% FPL without a Medicaid category) may find $0 Bronze options at healthcare.gov, so check your projected 2026 income carefully. The 400% FPL subsidy cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026. Texas residents use healthcare.gov because Texas has no state Exchange.",
+      "es": "Texas no expandió Medicaid bajo el ACA. Los adultos en la brecha de cobertura (ingreso bajo 100% FPL sin una categoría de Medicaid) pueden encontrar opciones Bronze de $0 en healthcare.gov, así que revise con cuidado su ingreso proyectado de 2026. El precipicio de subsidio del 400% FPL regresó para 2026 después de que los créditos fiscales de prima mejorados expiraron el 1 de enero de 2026. Los residentes de Texas usan healthcare.gov porque Texas no tiene intercambio estatal."
     },
-    "source": "healthcare.gov, medicaid.gov, Texas Department of Insurance (Insurance Code Chapter 1251), U.S. Department of Labor COBRA guidance, KFF 2026 Medicaid eligibility data, HHS ASPE 2026 Poverty Guidelines"
+    "source": "HealthCare.gov SEP rules; HHS ASPE 2026 Poverty Guidelines; Texas HHSC Medicaid and CHIP; Texas Insurance Code Chapter 1251; IRS COBRA FAQ; KFF"
   },
+
   "commonMistakes": {
     "intro": {
       "en": "The costliest mistakes Texans make after losing job-based coverage in 2026:",
@@ -272,459 +260,359 @@
     },
     "items": [
       {
-        "en": "Assuming Texas Medicaid will cover you. Texas did not expand Medicaid, so a childless adult in Texas is usually ineligible no matter how low income falls in 2026. Apply at healthcare.gov within the 60-day SEP instead.",
-        "es": "Asumir que Medicaid de Texas lo cubrirá. Texas no expandió Medicaid, así que un adulto sin hijos en Texas normalmente no es elegible sin importar cuán bajo sea su ingreso en 2026. Solicite en healthcare.gov dentro del SEP de 60 días."
+        "en": "Assuming Texas Medicaid will cover you after a job loss. Texas did not expand Medicaid, so most non-elderly adults without children or a disability do not qualify no matter how low income falls in 2026. The Marketplace SEP at healthcare.gov is the main path.",
+        "es": "Asumir que Medicaid de Texas lo cubrirá tras perder el trabajo. Texas no expandió Medicaid, por lo que la mayoría de los adultos no mayores sin hijos ni discapacidad no califica sin importar qué tan bajo caiga el ingreso en 2026. El SEP del Mercado en healthcare.gov es el camino principal."
       },
       {
-        "en": "Letting the 60-day window lapse while waiting on severance or unemployment decisions. The Marketplace SEP does not pause, and a missed deadline usually means waiting for Open Enrollment (November 1, 2026 to January 15, 2027).",
-        "es": "Dejar vencer la ventana de 60 días mientras espera decisiones sobre indemnización o desempleo. El SEP del Mercado no se pausa, y un plazo perdido normalmente significa esperar a la Inscripción Abierta (del 1 de noviembre de 2026 al 15 de enero de 2027)."
+        "en": "Waiting for the COBRA election notice before shopping. The Marketplace SEP clock runs for 60 days from your coverage loss date, not from the date you receive paperwork, so start your healthcare.gov application right away.",
+        "es": "Esperar el aviso de elección de COBRA antes de comparar planes. El reloj del SEP del Mercado corre 60 días desde la fecha de pérdida de cobertura, no desde la fecha en que recibe los papeles, así que comience su solicitud en healthcare.gov de inmediato."
       },
       {
-        "en": "Electing COBRA by default. COBRA costs 102% of the full premium, roughly $500 to $2,800 per month in 2026, and most laid-off Texans pay far less with Marketplace tax credits. Elect COBRA only for a clear provider or deductible reason.",
-        "es": "Elegir COBRA por defecto. COBRA cuesta 102% de la prima completa, aproximadamente $500 a $2,800 al mes en 2026, y la mayoría de los texanos despedidos paga mucho menos con créditos fiscales del Mercado. Elija COBRA solo por un motivo claro de proveedor o deducible."
+        "en": "Reporting your old salary instead of projected 2026 income. Using last year's pay can shut you out of premium tax credits or push you into the wrong plan tier, so include unemployment benefits and expected new wages only for the rest of 2026.",
+        "es": "Reportar su salario anterior en lugar del ingreso proyectado de 2026. Usar el pago del año pasado puede dejarlo sin créditos fiscales de prima o ubicarlo en el nivel de plan equivocado, así que incluya los beneficios de desempleo y los salarios nuevos esperados solo para el resto de 2026."
       },
       {
-        "en": "Ignoring Texas state continuation. Employees of Texas employers too small for federal COBRA can request state continuation in writing within 60 days, and COBRA enrollees can add up to six months after COBRA ends under Insurance Code Section 1251.255.",
-        "es": "Ignorar la continuación estatal de Texas. Los empleados de empleadores de Texas demasiado pequeños para COBRA federal pueden solicitar la continuación estatal por escrito dentro de 60 días, y quienes tienen COBRA pueden añadir hasta seis meses después de que termine según la Sección 1251.255 del Código de Seguros."
+        "en": "Ignoring Texas state continuation. Employees on insured group plans may qualify for up to nine months of state continuation, or six months added after COBRA ends, but only with a written request within 60 days.",
+        "es": "Ignorar la continuación estatal de Texas. Los empleados en planes grupales asegurados pueden calificar hasta nueve meses de continuación estatal, o seis meses adicionales después de que termine COBRA, pero solo con una solicitud por escrito dentro de 60 días."
       },
       {
-        "en": "Reporting last year's income instead of projected 2026 income, which can cause a wrong subsidy and a surprise bill when you reconcile Form 1095-A on your 2026 tax return.",
-        "es": "Reportar el ingreso del año pasado en lugar del ingreso proyectado de 2026, lo que puede causar un subsidio incorrecto y una factura sorpresa al conciliar el Formulario 1095-A en su declaración de impuestos de 2026."
-      },
-      {
-        "en": "Skipping CHIP for your children. Texas CHIP and Children's Medicaid cover kids under 19 up to about 201% FPL in 2026, year-round, even when the parents cannot qualify for Medicaid.",
-        "es": "Omitir CHIP para sus hijos. CHIP y Medicaid infantil de Texas cubren a menores de 19 años hasta aproximadamente 201% FPL en 2026, todo el año, incluso cuando los padres no califican para Medicaid."
+        "en": "Forgetting the children. Texas CHIP covers children under 19 up to 201% FPL year-round, even when a parent is ineligible for Texas Medicaid, so a family can mix a Marketplace plan for adults with CHIP for kids.",
+        "es": "Olvidar a los niños. CHIP de Texas cubre a niños menores de 19 años hasta 201% FPL todo el año, aunque un padre no sea elegible para Medicaid de Texas, por lo que una familia puede combinar un plan del Mercado para adultos con CHIP para los niños."
       }
     ]
   },
+
   "comparisonNarrative": {
     "heading": {
-      "en": "COBRA vs Texas State Continuation vs Marketplace: Which Should You Choose?",
-      "es": "COBRA vs Continuación Estatal de Texas vs Mercado: ¿Cuál Debe Elegir?"
+      "en": "COBRA vs Marketplace vs Spouse's Plan: Which Should Texans Choose in 2026?",
+      "es": "COBRA vs Mercado vs Plan del Cónyuge: ¿Cuál Deben Elegir los Texanos en 2026?"
     },
     "body": {
-      "en": "After losing job-based coverage in 2026, four pathways open for Texans. COBRA preserves your old plan at 102% of the full premium, typically $500 to $900 per month for an individual and $1,200 to $2,800 per month for a family in 2026, and it is rarely the cheapest option once subsidies are counted. Texas state continuation under Insurance Code Chapter 1251 also costs 102% of the group rate in 2026, lasts nine months for people who are not COBRA-eligible, and adds six months after COBRA ends for those who are. ACA Marketplace plans drop most enrollees to $10 to $300 per month after 2026 premium tax credits, with the trade-off that your doctors may not be in network. A spouse's employer plan often costs less than COBRA, and most employers honor a 30-day special enrollment period under Section 9831 of HIPAA rules for creditable coverage. The decision order for 2026 is: Texas Medicaid or CHIP first if anyone in the household qualifies; then a spouse's plan if cheaper than the Marketplace; then the Marketplace with subsidies, the most common path for laid-off Texans; and COBRA or state continuation only for a specialist, a met deductible, or a long-term treatment plan.",
-      "es": "Después de perder la cobertura del trabajo en 2026, se abren cuatro caminos para los texanos. COBRA conserva su plan anterior al 102% de la prima completa, típicamente $500 a $900 al mes para un individuo y $1,200 a $2,800 al mes para una familia en 2026, y rara vez es la opción más barata una vez contados los subsidios. La continuación estatal de Texas bajo el Capítulo 1251 del Código de Seguros también cuesta 102% de la tarifa de grupo en 2026, dura nueve meses para quienes no son elegibles para COBRA y añade seis meses después de que termina COBRA para quienes sí lo son. Los planes del Mercado ACA bajan a la mayoría de los inscritos a $10 a $300 al mes después de los créditos fiscales de 2026, con la desventaja de que sus médicos podrían no estar en la red. El plan del empleador de un cónyuge a menudo cuesta menos que COBRA, y la mayoría de los empleadores respeta un período de inscripción especial de 30 días bajo las reglas de cobertura acreditable de la Sección 9831 de HIPAA. El orden de decisión para 2026 es: primero Medicaid o CHIP de Texas si alguien del hogar califica; luego el plan de un cónyuge si es más barato que el Mercado; luego el Mercado con subsidios, el camino más común para los texanos despedidos; y COBRA o continuación estatal solo por un especialista, un deducible cubierto o un tratamiento a largo plazo."
+      "en": "After losing job-based coverage in Texas in 2026, the decision framework differs from expansion states because Texas Medicaid is not a realistic option for most laid-off adults. COBRA preserves your old plan at 102% of the full premium in 2026, typically $500 to $900 per month for an individual and $1,200 to $2,800 per month for a family, with no income-based relief. ACA Marketplace plans at healthcare.gov drop many Texans with moderate projected income to $10 to $300 per month after 2026 premium tax credits (see the KFF Marketplace premium analysis), with the tradeoff that you may need new doctors if the Marketplace network differs from your old plan. A spouse's employer plan costs the employee share of the group premium, often $100 to $600 per month in 2026, and opens within 30 days of the qualifying life event under Section 9831 of HIPAA. Texas state continuation under Insurance Code Chapter 1251 adds a fourth bridge for insured group plans: up to nine months for people not eligible for COBRA, or six months after COBRA ends. The Texas decision matrix runs: spouse's plan first (if cheaper and the network works); then the Marketplace SEP with premium tax credits (the most common 2026 path for projected income above 100% FPL); Texas CHIP for children regardless of adult eligibility; and COBRA or state continuation mainly to keep an out-of-network specialist or a substantially met 2026 deductible through December 31.",
+      "es": "Después de perder la cobertura del trabajo en Texas en 2026, el marco de decisión difiere del de los estados de expansión porque Medicaid de Texas no es una opción realista para la mayoría de los adultos despedidos. COBRA conserva su plan anterior al 102% de la prima completa en 2026, típicamente $500 a $900 al mes para un individuo y $1,200 a $2,800 al mes para una familia, sin alivio basado en ingresos. Los planes del Mercado ACA en healthcare.gov reducen a muchos texanos con ingresos proyectados moderados a $10 a $300 al mes después de los créditos fiscales de 2026 (vea el análisis de primas del Mercado de KFF), con la desventaja de que puede necesitar nuevos médicos si la red del Mercado difiere de su plan anterior. El plan del empleador de un cónyuge cuesta la parte del empleado de la prima grupal, a menudo $100 a $600 al mes en 2026, y se abre dentro de 30 días del evento calificador de vida bajo la Sección 9831 de HIPAA. La continuación estatal de Texas bajo el Capítulo 1251 del Código de Seguros agrega un cuarto puente para planes grupales asegurados: hasta nueve meses para quienes no son elegibles para COBRA, o seis meses después de que termine COBRA. La matriz de decisión en Texas es: primero el plan del cónyuge (si es más barato y la red funciona); luego el SEP del Mercado con créditos fiscales (el camino más común en 2026 para ingresos proyectados sobre 100% FPL); CHIP de Texas para los niños sin importar la elegibilidad de los adultos; y COBRA o continuación estatal principalmente para conservar a un especialista fuera de la red o un deducible de 2026 casi cumplido hasta el 31 de diciembre."
     }
   },
+
   "householdSizeTable": {
     "en": {
-      "caption": "Texas Medicaid and ACA Subsidy Income Limits, 2026 (48 contiguous states and DC)",
-      "headers": [
-        "Household size",
-        "100% FPL (Texas coverage gap floor, 2026)",
-        "138% FPL (expansion-state Medicaid, 2026)",
-        "400% FPL (ACA subsidy cliff, 2026)"
-      ],
+      "caption": "Medicaid and ACA Subsidy Income Limits, 2026 (Texas, 48 contiguous states and DC)",
+      "headers": ["Household size", "100% FPL (Texas subsidy floor, 2026)", "138% FPL (expansion-state Medicaid line, 2026)", "400% FPL (ACA subsidy cliff, 2026)"],
       "rows": [
-        [
-          "1",
-          "$15,960",
-          "$22,025",
-          "$63,840"
-        ],
-        [
-          "2",
-          "$21,640",
-          "$29,863",
-          "$86,560"
-        ],
-        [
-          "3",
-          "$27,320",
-          "$37,702",
-          "$109,280"
-        ],
-        [
-          "4",
-          "$33,000",
-          "$45,540",
-          "$132,000"
-        ],
-        [
-          "5",
-          "$38,680",
-          "$53,378",
-          "$154,720"
-        ],
-        [
-          "6",
-          "$44,360",
-          "$61,217",
-          "$177,440"
-        ],
-        [
-          "7",
-          "$50,040",
-          "$69,055",
-          "$200,160"
-        ],
-        [
-          "8",
-          "$55,720",
-          "$76,894",
-          "$222,880"
-        ],
-        [
-          "Each additional person",
-          "+ $5,680",
-          "+ $7,838",
-          "+ $22,720"
-        ]
+        ["1", "$15,960", "$22,025", "$63,840"],
+        ["2", "$21,640", "$29,863", "$86,560"],
+        ["3", "$27,320", "$37,702", "$109,280"],
+        ["4", "$33,000", "$45,540", "$132,000"],
+        ["5", "$38,680", "$53,378", "$154,720"],
+        ["6", "$44,360", "$61,217", "$177,440"],
+        ["7", "$50,040", "$69,055", "$200,160"],
+        ["8", "$55,720", "$76,894", "$222,880"],
+        ["Each additional person", "+ $5,680", "+ $7,838", "+ $22,720"]
       ],
-      "footnote": "Texas did not expand Medicaid, so the 138% FPL column does not apply to Texas adults in 2026. Texas Medicaid for parents is limited to roughly 15% FPL, and childless adults generally do not qualify. Adults below 100% FPL in the Texas coverage gap may access $0-premium Bronze Marketplace plans through other pathways at healthcare.gov. The 400% FPL subsidy cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026. Alaska and Hawaii thresholds are higher.",
-      "source": "HHS ASPE 2026 Poverty Guidelines, KFF Medicaid income eligibility limits for adults 2026, CMS ACA premium tax credit thresholds"
+      "footnote": "Texas did not expand Medicaid, so the 138% FPL column shows the line used in expansion states and is NOT the Texas adult Medicaid limit in 2026. Texas adults qualify for premium tax credits from 100% to 400% FPL, and the 400% FPL cliff returned for 2026 after enhanced credits expired January 1, 2026. Texas CHIP for children goes up to 201% FPL ($66,330 for a family of 4 in 2026). Alaska and Hawaii thresholds are higher.",
+      "source": "HHS ASPE 2026 Poverty Guidelines (aspe.hhs.gov) + CMS and IRS ACA premium tax credit thresholds + Texas HHSC"
     },
     "es": {
-      "caption": "Límites de Ingresos de Medicaid de Texas y Subsidios ACA, 2026 (48 estados contiguos y DC)",
-      "headers": [
-        "Tamaño del hogar",
-        "100% FPL (piso de la brecha de cobertura de Texas, 2026)",
-        "138% FPL (Medicaid en estados con expansión, 2026)",
-        "400% FPL (precipicio de subsidio ACA, 2026)"
-      ],
+      "caption": "Límites de Ingresos de Medicaid y Subsidios ACA, 2026 (Texas, 48 estados contiguos y DC)",
+      "headers": ["Tamaño del hogar", "100% FPL (mínimo para subsidios en Texas, 2026)", "138% FPL (línea de Medicaid en estados de expansión, 2026)", "400% FPL (precipicio de subsidio ACA, 2026)"],
       "rows": [
-        [
-          "1",
-          "$15,960",
-          "$22,025",
-          "$63,840"
-        ],
-        [
-          "2",
-          "$21,640",
-          "$29,863",
-          "$86,560"
-        ],
-        [
-          "3",
-          "$27,320",
-          "$37,702",
-          "$109,280"
-        ],
-        [
-          "4",
-          "$33,000",
-          "$45,540",
-          "$132,000"
-        ],
-        [
-          "5",
-          "$38,680",
-          "$53,378",
-          "$154,720"
-        ],
-        [
-          "6",
-          "$44,360",
-          "$61,217",
-          "$177,440"
-        ],
-        [
-          "7",
-          "$50,040",
-          "$69,055",
-          "$200,160"
-        ],
-        [
-          "8",
-          "$55,720",
-          "$76,894",
-          "$222,880"
-        ],
-        [
-          "Cada persona adicional",
-          "+ $5,680",
-          "+ $7,838",
-          "+ $22,720"
-        ]
+        ["1", "$15,960", "$22,025", "$63,840"],
+        ["2", "$21,640", "$29,863", "$86,560"],
+        ["3", "$27,320", "$37,702", "$109,280"],
+        ["4", "$33,000", "$45,540", "$132,000"],
+        ["5", "$38,680", "$53,378", "$154,720"],
+        ["6", "$44,360", "$61,217", "$177,440"],
+        ["7", "$50,040", "$69,055", "$200,160"],
+        ["8", "$55,720", "$76,894", "$222,880"],
+        ["Cada persona adicional", "+ $5,680", "+ $7,838", "+ $22,720"]
       ],
-      "footnote": "Texas no expandió Medicaid, por lo que la columna de 138% FPL no aplica a los adultos de Texas en 2026. Medicaid de Texas para padres se limita a aproximadamente 15% FPL, y los adultos sin hijos generalmente no califican. Los adultos por debajo de 100% FPL en la brecha de cobertura de Texas pueden acceder a planes Bronze con prima de $0 del Mercado por otras vías en healthcare.gov. El precipicio de subsidio del 400% FPL regresó para 2026 después de que los créditos fiscales de prima mejorados expiraron el 1 de enero de 2026. Los umbrales de Alaska y Hawái son más altos.",
-      "source": "Pautas de Pobreza 2026 de HHS ASPE, límites de elegibilidad de ingresos de Medicaid para adultos 2026 de KFF, umbrales de crédito fiscal de prima ACA de CMS"
+      "footnote": "Texas no expandió Medicaid, por lo que la columna de 138% FPL muestra la línea usada en estados de expansión y NO es el límite de Medicaid para adultos de Texas en 2026. Los adultos de Texas califican para créditos fiscales de prima de 100% a 400% FPL, y el precipicio del 400% FPL regresó para 2026 después de que los créditos mejorados expiraron el 1 de enero de 2026. CHIP de Texas para niños llega hasta 201% FPL ($66,330 para una familia de 4 en 2026). Los umbrales de Alaska y Hawái son más altos.",
+      "source": "Pautas de Pobreza 2026 de HHS ASPE (aspe.hhs.gov) + umbrales de créditos fiscales ACA de CMS e IRS + HHSC de Texas"
     }
   },
+
   "documentsNeeded": {
     "en": [
-      "Termination letter or HR confirmation showing the exact date your Texas employer coverage ends (proof of the qualifying life event)",
-      "HIPAA certificate of creditable coverage or COBRA election notice from your plan administrator",
-      "Recent pay stubs, severance agreement, and Texas Workforce Commission unemployment award letter for 2026 income verification",
-      "Social Security numbers or document numbers for everyone applying for coverage",
-      "Current Texas home address and ZIP code (plan availability and prices vary by county)",
-      "Birth certificates or proof of age for children if you apply for Texas CHIP or Children's Medicaid at YourTexasBenefits.com",
-      "Prior-year Form 1095-A or tax return if you previously received premium tax credits"
+      "Employer termination letter or layoff notice showing the date your Texas employer coverage ends",
+      "COBRA election notice or certificate of creditable coverage from your former employer",
+      "Social Security numbers for every Texas household member applying for coverage",
+      "Proof of Texas address (lease, utility bill, or bank statement) so healthcare.gov can show plans by ZIP code",
+      "Texas Workforce Commission unemployment determination letter or recent pay stubs for your projected 2026 income",
+      "Birth certificates or proof of relationship for dependent children you are adding",
+      "Immigration documents if any household member is not a US citizen (green card, visa, or Employment Authorization Document)",
+      "Form 1095-A from any earlier Marketplace plan, if you are switching Marketplace coverage"
     ],
     "es": [
-      "Carta de despido o confirmación de recursos humanos con la fecha exacta en que termina su cobertura del empleador en Texas (prueba del evento calificador de vida)",
-      "Certificado HIPAA de cobertura acreditable o aviso de elección de COBRA del administrador de su plan",
-      "Talones de pago recientes, acuerdo de indemnización y carta de otorgamiento de desempleo de la Comisión de la Fuerza Laboral de Texas para verificar ingresos de 2026",
-      "Números de Seguro Social o números de documento de todas las personas que solicitan cobertura",
-      "Dirección actual en Texas y código postal (la disponibilidad y los precios de los planes varían por condado)",
-      "Actas de nacimiento o prueba de edad de los niños si solicita CHIP o Medicaid infantil de Texas en YourTexasBenefits.com",
-      "Formulario 1095-A del año anterior o declaración de impuestos si recibió créditos fiscales de prima antes"
+      "Carta de despido o aviso de despido que muestre la fecha en que termina su cobertura del empleador en Texas",
+      "Aviso de elección de COBRA o certificado de cobertura acreditable de su empleador anterior",
+      "Números de Seguro Social de cada miembro del hogar en Texas que solicita cobertura",
+      "Comprobante de domicilio en Texas (contrato de arrendamiento, factura de servicios o estado de cuenta bancario) para que healthcare.gov muestre planes por código postal",
+      "Carta de determinación de desempleo de la Comisión de la Fuerza Laboral de Texas o talones de pago recientes para su ingreso proyectado de 2026",
+      "Actas de nacimiento o prueba de parentesco de los hijos dependientes que agrega",
+      "Documentos de inmigración si algún miembro del hogar no es ciudadano de EE. UU. (tarjeta verde, visa o Documento de Autorización de Empleo)",
+      "Formulario 1095-A de cualquier plan anterior del Mercado, si cambia su cobertura del Mercado"
     ]
   },
+
   "stateRules": [
     {
       "state": "Texas",
-      "rule": "Texas state continuation (Insurance Code Chapter 1251, Subchapter F) lets employees and dependents continue group coverage after it would otherwise end, if they were continuously insured for at least three months and were not terminated for cause. A written request is due within 60 days of the later of the coverage end date or the notice date (Section 1251.253). The first premium is due within 45 days of electing, at the group rate plus 2% (Section 1251.254). Coverage lasts up to nine months for people not eligible for COBRA, or up to six additional months after COBRA ends (Section 1251.255).",
-      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.1251.htm"
+      "rule": "Texas did not expand Medicaid under the ACA. Texas Medicaid, run by HHSC, covers adults only through categories: pregnant women up to 198% FPL, parents and caretakers with income far below the poverty line, people with qualifying disabilities, and older adults. Most laid-off adults without minor children do not qualify. Apply at YourTexasBenefits.com. Texas uses healthcare.gov for Marketplace plans (no state Exchange).",
+      "sourceUrl": "https://www.hhs.texas.gov/services/health/medicaid-chip"
     },
     {
       "state": "Texas",
-      "rule": "Texas did not expand Medicaid under the ACA. Texas Medicaid, run by the Health and Human Services Commission (HHSC), covers adults only through categorical eligibility: pregnant women, parents and caretakers with income near 15% FPL in 2026, and aged, blind, or disabled individuals. Most laid-off adults without minor children do not qualify. Apply at YourTexasBenefits.com. Texas uses the federal healthcare.gov Marketplace.",
+      "rule": "Texas CHIP covers children under 19 in households with income above the Medicaid limit and up to 201% FPL, which is $66,330 for a family of 4 in 2026. CHIP enrollment is year-round, and families above about 151% FPL pay an enrollment fee. Apply at YourTexasBenefits.com.",
       "sourceUrl": "https://www.yourtexasbenefits.com/"
     },
     {
       "state": "Texas",
-      "rule": "Texas CHIP and Children's Medicaid cover children under 19 in households up to about 201% FPL, which is $5,528 per month for a family of 4 on the HHSC table effective March 1, 2026. Enrollment is year-round through YourTexasBenefits.com with no SEP deadline.",
-      "sourceUrl": "https://hhs.texas.gov/services/health/medicaid-chip"
+      "rule": "Texas state continuation (Texas Insurance Code Chapter 1251, Subchapter G) applies to insured group hospital, surgical, or major medical policies. You need at least three months of continuous coverage and must request continuation in writing within 60 days. Coverage can last up to 9 months if you are not eligible for COBRA, or 6 additional months after COBRA ends. It ends if you become eligible for similar group coverage, Medicare, or stop paying premiums. Self-funded employer plans are generally outside state insurance law.",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.1251.htm"
     },
     {
       "state": "Texas",
-      "rule": "Texas Workforce Commission (TWC) unemployment benefits run up to 26 weeks, and the weekly amount depends on base-period wages. Unemployment compensation counts as income on a healthcare.gov application. File at twc.texas.gov as soon as you are separated.",
+      "rule": "Texas unemployment benefits are paid by the Texas Workforce Commission for up to 26 weeks, with the weekly amount based on your base-period wages. Unemployment compensation counts as Modified Adjusted Gross Income for ACA subsidy calculations at healthcare.gov.",
       "sourceUrl": "https://www.twc.texas.gov/jobseekers/unemployment-benefits-services"
     }
   ],
+
   "commonDenialReasons": {
     "en": [
-      "Missing the 60-day SEP window: the application is submitted after Day 60 with no other qualifying life event",
-      "Insufficient documentation of the job loss (no termination letter, HIPAA certificate, or employer confirmation of the coverage end date)",
-      "Reporting last year's income instead of projected 2026 income, producing a subsidy mismatch at healthcare.gov",
-      "Applying for Texas Medicaid as a childless adult when Texas did not expand Medicaid, so the application is denied without categorical eligibility",
-      "Missing the 45-day first-premium payment for Texas state continuation or the COBRA initial payment deadline, which voids the election"
+      "Submitting the Marketplace SEP application after Day 60 from Texas coverage loss with no second qualifying life event to restart the clock",
+      "Reporting prior-year or prior-job income instead of projected 2026 income, which causes wrong subsidy amounts or a mismatch flagged at verification",
+      "Failing to upload proof of the qualifying life event (termination letter, COBRA notice, or certificate of coverage), so the SEP application stays pending",
+      "Applying for Texas Medicaid as a childless adult and expecting approval, when Texas Medicaid requires a category such as pregnancy, parenting with very low income, or disability",
+      "Missing the 60-day written request deadline for Texas state continuation or the 60-day COBRA election window"
     ],
     "es": [
-      "Perder la ventana SEP de 60 días: la solicitud se envía después del Día 60 sin otro evento calificador de vida",
-      "Documentación insuficiente de la pérdida del empleo (sin carta de despido, certificado HIPAA ni confirmación del empleador de la fecha de fin de cobertura)",
-      "Reportar el ingreso del año pasado en lugar del ingreso proyectado de 2026, lo que genera una discrepancia de subsidio en healthcare.gov",
-      "Solicitar Medicaid de Texas como adulto sin hijos cuando Texas no expandió Medicaid, por lo que la solicitud se niega sin elegibilidad categórica",
-      "No pagar la primera prima de la continuación estatal de Texas dentro de 45 días o perder el plazo del pago inicial de COBRA, lo que anula la elección"
+      "Presentar la solicitud SEP del Mercado después del día 60 de la pérdida de cobertura en Texas sin un segundo evento calificador que reinicie el reloj",
+      "Reportar ingresos del año anterior o del trabajo anterior en lugar del ingreso proyectado de 2026, lo que causa montos de subsidio incorrectos o una discrepancia marcada en la verificación",
+      "No cargar prueba del evento calificador (carta de despido, aviso de COBRA o certificado de cobertura), por lo que la solicitud SEP queda pendiente",
+      "Solicitar Medicaid de Texas como adulto sin hijos esperando aprobación, cuando Medicaid de Texas exige una categoría como embarazo, crianza con ingresos muy bajos o discapacidad",
+      "Perder el plazo de 60 días para la solicitud por escrito de continuación estatal de Texas o la ventana de elección de COBRA de 60 días"
     ]
   },
+
   "detailSections": [
     {
       "heading": {
-        "en": "Texas Medicaid Coverage Gap After Job Loss in 2026",
-        "es": "La Brecha de Cobertura de Medicaid de Texas Después de Perder el Empleo en 2026"
+        "en": "The Texas Medicaid Coverage Gap After Job Loss in 2026",
+        "es": "La Brecha de Cobertura de Medicaid en Texas Después de Perder el Trabajo en 2026"
       },
       "paragraphs": [
         {
-          "en": "Texas did not expand Medicaid, which makes job loss in Texas different from job loss in the 40 expansion states plus DC. In expansion states, an adult earning under 138% FPL, which is $22,025 for a single person in 2026, qualifies for Medicaid year-round. In Texas, Medicaid for parents and caretakers stops near 15% FPL in 2026, and non-disabled adults without minor children generally have no Medicaid pathway at all. KFF calls this the coverage gap: adults below 100% FPL, $15,960 for a household of 1 in 2026, earn too little for Marketplace premium tax credits yet too much for Texas Medicaid in many cases. Texas Medicaid, administered by HHSC, does cover pregnant women, aged, blind, and disabled individuals, and children through Children's Medicaid and CHIP. Other states use brand names such as Medi-Cal in California, AHCCCS in Arizona, and BadgerCare in Wisconsin, but Texas applications run through YourTexasBenefits.com. A laid-off Texan with projected 2026 income between 100% and 400% FPL should skip Medicaid and go directly to the Marketplace SEP at healthcare.gov, which delivers the premium tax credits that Texas Medicaid does not.",
-          "es": "Texas no expandió Medicaid, lo que hace que perder el empleo en Texas sea diferente a perderlo en los 40 estados con expansión más DC. En los estados con expansión, un adulto con ingreso menor a 138% FPL, que es $22,025 para una persona sola en 2026, califica para Medicaid todo el año. En Texas, Medicaid para padres y cuidadores se detiene cerca de 15% FPL en 2026, y los adultos sin discapacidad y sin hijos menores generalmente no tienen ninguna vía de Medicaid. KFF llama a esto la brecha de cobertura: los adultos por debajo de 100% FPL, $15,960 para un hogar de 1 persona en 2026, ganan muy poco para los créditos fiscales de prima del Mercado pero demasiado para Medicaid de Texas en muchos casos. Medicaid de Texas, administrado por HHSC, sí cubre a mujeres embarazadas, personas mayores, ciegas y con discapacidad, y a niños mediante Medicaid infantil y CHIP. Otros estados usan nombres de marca como Medi-Cal en California, AHCCCS en Arizona y BadgerCare en Wisconsin, pero las solicitudes de Texas se tramitan en YourTexasBenefits.com. Un texano despedido con ingreso proyectado de 2026 entre 100% y 400% FPL debe omitir Medicaid e ir directo al SEP del Mercado en healthcare.gov, que entrega los créditos fiscales de prima que Medicaid de Texas no ofrece."
-        }
-      ]
-    },
-    {
-      "heading": {
-        "en": "Texas State Continuation Rules and How They Work With COBRA",
-        "es": "Reglas de Continuación Estatal de Texas y Cómo Funcionan con COBRA"
-      },
-      "paragraphs": [
-        {
-          "en": "Texas state continuation fills a gap that federal COBRA leaves open. Federal COBRA applies to employers with 20 or more employees, so workers at smaller Texas employers often have no COBRA right at all. Texas Insurance Code Chapter 1251 requires insured group plans to offer continuation to employees who were covered for at least three consecutive months and were not terminated for cause. A written request is due within 60 days of the later of the coverage end date or the date you receive notice. The first premium is due within 45 days of electing, then monthly with a 30-day grace period, at the group rate plus 2% in 2026. Coverage lasts up to nine months for people who are not COBRA-eligible. For people who exhaust COBRA, state continuation adds up to six more months. Coverage ends early if you become eligible for Medicare or gain similar coverage elsewhere. Self-funded employer plans are governed by federal ERISA rules rather than Texas insurance law, so ask your plan administrator whether your plan is fully insured. Even so, a Marketplace SEP remains available whenever your employer coverage ends, and electing state continuation does not remove your 60-day SEP right while the original loss window is open.",
-          "es": "La continuación estatal de Texas llena un vacío que deja el COBRA federal. COBRA federal aplica a empleadores con 20 o más empleados, así que los trabajadores de empleadores texanos más pequeños a menudo no tienen derecho a COBRA. El Capítulo 1251 del Código de Seguros de Texas exige que los planes de grupo asegurados ofrezcan continuación a empleados que estuvieron cubiertos al menos tres meses consecutivos y no fueron despedidos por causa justificada. La solicitud escrita vence dentro de 60 días de lo que ocurra después entre la fecha de fin de cobertura o la fecha en que recibe el aviso. La primera prima vence dentro de 45 días de la elección, luego mensualmente con un período de gracia de 30 días, a la tarifa de grupo más 2% en 2026. La cobertura dura hasta nueve meses para quienes no son elegibles para COBRA. Para quienes agotan COBRA, la continuación estatal añade hasta seis meses más. La cobertura termina antes si usted se vuelve elegible para Medicare u obtiene cobertura similar en otro lugar. Los planes autofinanciados del empleador se rigen por las reglas federales ERISA y no por la ley de seguros de Texas, así que pregunte al administrador de su plan si el plan está totalmente asegurado. Aun así, el SEP del Mercado sigue disponible cuando termina su cobertura del empleador, y elegir la continuación estatal no elimina su derecho al SEP de 60 días mientras la ventana original esté abierta."
+          "en": "Texas chose not to expand Medicaid under the Affordable Care Act, which creates a coverage gap that hits laid-off workers hard. In the 40 expansion states plus DC, any adult with income under 138% FPL (about $22,025 for one person in 2026) qualifies for free Medicaid. Texas Medicaid, run by the Texas Health and Human Services Commission, does not follow that rule. Texas Medicaid for adults covers pregnant women up to 198% FPL, parents and caretakers with very low income, people with qualifying disabilities, and older adults. A single adult or childless couple who just lost a job falls outside every category, even at zero income. KFF analysis shows hundreds of thousands of Texas adults sit in this gap, and Texas has long had one of the highest uninsured rates in the nation. Check current limits with HHSC at hhs.texas.gov before assuming you do or do not qualify.",
+          "es": "Texas decidió no expandir Medicaid bajo la Ley de Cuidado de Salud Asequible, lo que crea una brecha de cobertura que golpea con fuerza a los trabajadores despedidos. En los 40 estados de expansión más DC, cualquier adulto con ingresos bajo 138% FPL (unos $22,025 para una persona en 2026) califica para Medicaid gratuito. Medicaid de Texas, administrado por la Comisión de Salud y Servicios Humanos de Texas, no sigue esa regla. Medicaid de Texas para adultos cubre a mujeres embarazadas hasta 198% FPL, padres y cuidadores con ingresos muy bajos, personas con discapacidades calificadas y adultos mayores. Un adulto soltero o una pareja sin hijos que acaba de perder el empleo queda fuera de todas las categorías, incluso con ingreso cero. El análisis de KFF muestra que cientos de miles de adultos de Texas están en esta brecha, y Texas ha tenido por mucho tiempo una de las tasas de personas sin seguro más altas del país. Consulte los límites actuales con HHSC en hhs.texas.gov antes de asumir que califica o no."
         },
         {
-          "en": "Marketplace plans for 2026 and the 400% FPL subsidy cliff shape the cost side of every Texas job loss decision. Enhanced premium tax credits from ARPA and the IRA expired on January 1, 2026, so households above 400% FPL, which is $63,840 for a single person and $132,000 for a family of 4 in 2026, no longer receive any premium tax credit. A laid-off Texan who earned $90,000 early in 2026 may have a lower projected annual income if the job ended in spring, and healthcare.gov uses projected full-year 2026 income, not current monthly pay. Unemployment compensation from the Texas Workforce Commission and severance both count toward that total. Subsidies are reconciled against Form 1095-A when you file your 2026 federal return, so underestimating income can mean repaying credits and overestimating means a refund. For incomes between 100% and 400% FPL in 2026, the benchmark Silver plan caps your contribution at a percentage of income, and Bronze plans often cost $0 to $50 per month. Update your healthcare.gov application within 30 days of any major change, such as a new job or a large severance payout.",
-          "es": "Los planes del Mercado para 2026 y el precipicio de subsidio del 400% FPL moldean el lado del costo de toda decisión tras perder el empleo en Texas. Los créditos fiscales de prima mejorados de ARPA y la IRA expiraron el 1 de enero de 2026, así que los hogares por encima de 400% FPL, que es $63,840 para una persona sola y $132,000 para una familia de 4 en 2026, ya no reciben crédito fiscal de prima. Un texano despedido que ganó $90,000 a principios de 2026 puede tener un ingreso anual proyectado menor si el empleo terminó en primavera, y healthcare.gov usa el ingreso proyectado de todo el año 2026, no el pago mensual actual. La compensación por desempleo de la Comisión de la Fuerza Laboral de Texas y la indemnización cuentan en ese total. Los subsidios se concilian con el Formulario 1095-A al presentar su declaración federal de 2026, así que subestimar el ingreso puede significar devolver créditos y sobrestimarlo significa un reembolso. Para ingresos entre 100% y 400% FPL en 2026, el plan Silver de referencia limita su aportación a un porcentaje del ingreso, y los planes Bronze a menudo cuestan $0 a $50 al mes. Actualice su solicitud de healthcare.gov dentro de 30 días de cualquier cambio importante, como un nuevo empleo o un pago grande de indemnización."
+          "en": "Adults under 100% FPL in Texas ($15,960 for one person in 2026) generally cannot receive Marketplace premium tax credits, because the credits start at 100% FPL. Texas residents just above that line often find strong value, since 2026 premium tax credits can bring benchmark Silver coverage to a small monthly payment, and cost-sharing reductions improve Silver plans for incomes up to 250% FPL. Workers who expect part-year income may land above 100% FPL for the full year even if current monthly income is low, so estimate annual 2026 income carefully, including severance and unemployment benefits. Children are the exception that matters most: Texas CHIP covers kids up to 201% FPL ($66,330 for a family of 4 in 2026) year-round, so parents can focus on their own coverage while children keep care. Screen your household at YourTexasBenefits.com before choosing a Marketplace plan, and recheck eligibility whenever your household income or family size changes during 2026.",
+          "es": "Los adultos bajo 100% FPL en Texas ($15,960 para una persona en 2026) generalmente no pueden recibir créditos fiscales de prima del Mercado, porque los créditos comienzan en 100% FPL. Los residentes de Texas justo por encima de esa línea a menudo encuentran buen valor, ya que los créditos fiscales de prima de 2026 pueden llevar la cobertura Silver de referencia a un pago mensual pequeño, y las reducciones de costos compartidos mejoran los planes Silver para ingresos de hasta 250% FPL. Los trabajadores que esperan ingresos de solo parte del año pueden quedar por encima de 100% FPL para todo el año aunque su ingreso mensual actual sea bajo, así que estime con cuidado el ingreso anual de 2026, incluidos la indemnización por despido y los beneficios de desempleo. Los niños son la excepción más importante: CHIP de Texas cubre a niños hasta 201% FPL ($66,330 para una familia de 4 en 2026) todo el año, así que los padres pueden concentrarse en su propia cobertura mientras los niños mantienen su atención. Evalúe a su hogar en YourTexasBenefits.com antes de elegir un plan del Mercado, y vuelva a revisar su elegibilidad cada vez que cambien el ingreso o el tamaño de su familia durante 2026."
         }
       ]
     },
     {
       "heading": {
-        "en": "Documents and Proof for the Texas SEP Application at healthcare.gov",
-        "es": "Documentos y Pruebas para la Solicitud SEP de Texas en healthcare.gov"
+        "en": "Texas State Continuation Coverage and COBRA in 2026",
+        "es": "Continuación Estatal de Texas y COBRA en 2026"
       },
       "paragraphs": [
         {
-          "en": "Texas residents applying for the loss-of-coverage SEP at healthcare.gov may be asked to upload proof within 30 days of selecting a plan. The strongest proof is a letter from your employer stating the date your health coverage ends. Acceptable alternatives include a COBRA election notice, a HIPAA certificate of creditable coverage, an insurer termination letter, or a pay stub showing the final deduction for health insurance. Section 9831 of HIPAA rules defines creditable coverage and protects your right to count prior employer coverage when a new plan reviews preexisting conditions, although the ACA already bars preexisting condition exclusions. For income verification at healthcare.gov, gather pay stubs, your severance agreement, and a Texas Workforce Commission determination letter. For children's CHIP applications at YourTexasBenefits.com, add birth certificates and proof of Texas residency. Keep copies of every upload and every confirmation number. If healthcare.gov issues a data matching issue, you typically have 90 days to submit documents, and missing that deadline can end your subsidy or your coverage.",
-          "es": "Los residentes de Texas que solicitan el SEP por pérdida de cobertura en healthcare.gov pueden tener que subir pruebas dentro de 30 días de elegir un plan. La mejor prueba es una carta de su empleador que indique la fecha en que termina su cobertura médica. Las alternativas aceptables incluyen un aviso de elección de COBRA, un certificado HIPAA de cobertura acreditable, una carta de terminación de la aseguradora o un talón de pago que muestre la última deducción del seguro médico. La Sección 9831 de las reglas de HIPAA define la cobertura acreditable y protege su derecho a contar la cobertura anterior del empleador cuando un nuevo plan revisa condiciones preexistentes, aunque el ACA ya prohíbe las exclusiones por condiciones preexistentes. Para verificar ingresos en healthcare.gov, reúna talones de pago, su acuerdo de indemnización y una carta de determinación de la Comisión de la Fuerza Laboral de Texas. Para solicitudes de CHIP de sus hijos en YourTexasBenefits.com, añada actas de nacimiento y prueba de residencia en Texas. Conserve copias de cada documento subido y cada número de confirmación. Si healthcare.gov emite un problema de verificación de datos, normalmente tiene 90 días para presentar documentos, y perder ese plazo puede terminar su subsidio o su cobertura."
+          "en": "Federal COBRA lets you keep employer group coverage for 18 months after most job losses, at up to 102% of the full premium in 2026, with a 60-day election window after the qualifying event. Texas adds a state layer under Texas Insurance Code Chapter 1251. Texas state continuation applies to insured group hospital, surgical, or major medical policies, and you must have been covered for at least three consecutive months before termination. You must send a written request to your employer within 60 days of the later of your coverage end date or the date you receive notice. Coverage lasts up to nine months for people not eligible for COBRA, or six extra months after COBRA ends. Premiums equal the contribution your employer required plus 2% of the group rate, and the first payment is due within 45 days of your election. Self-funded employer plans are generally governed by federal law, so ask HR which type you have.",
+          "es": "COBRA federal le permite conservar la cobertura grupal del empleador por 18 meses después de la mayoría de los despidos, hasta al 102% de la prima completa en 2026, con una ventana de elección de 60 días después del evento calificador. Texas agrega una capa estatal bajo el Capítulo 1251 del Código de Seguros de Texas. La continuación estatal de Texas aplica a pólizas grupales aseguradas de gastos hospitalarios, quirúrgicos o médicos mayores, y debe haber estado cubierto al menos tres meses consecutivos antes del despido. Debe enviar una solicitud por escrito a su empleador dentro de 60 días de la fecha posterior entre el fin de su cobertura o la fecha en que recibe el aviso. La cobertura dura hasta nueve meses para quienes no son elegibles para COBRA, o seis meses adicionales después de que termine COBRA. Las primas equivalen a la contribución que exigía su empleador más 2% de la tarifa grupal, y el primer pago vence dentro de 45 días de su elección. Los planes autofinanciados del empleador generalmente se rigen por ley federal, así que pregunte a recursos humanos de qué tipo es el suyo."
+        },
+        {
+          "en": "State continuation ends early if you become eligible for similar group coverage, Medicare, or stop paying premiums, and eligibility alone is enough to end it, even if you never enroll. That rule makes a spouse's employer plan or a new job's plan a clean handoff. Texas state continuation and COBRA both run outside the Marketplace SEP clock, so electing one never extends your 60-day healthcare.gov window. A practical approach for Texans in 2026: apply at healthcare.gov within the first weeks to lock in a subsidized plan, price it against COBRA and state continuation, and keep continuation only if a specialist, a treatment plan, or a substantially met 2026 deductible makes the higher premium worthwhile. Employer and insurer notices arrive by mail, so call HR to confirm dates and request the written notice if it has not come. Calendar your COBRA, state continuation, and Marketplace deadlines separately so none expires unnoticed.",
+          "es": "La continuación estatal termina antes si usted se vuelve elegible para cobertura grupal similar, para Medicare, o deja de pagar las primas, y la elegibilidad por sí sola basta para terminarla, aunque nunca se inscriba. Esa regla hace que el plan del empleador de un cónyuge o el plan de un nuevo trabajo sea un traspaso limpio. La continuación estatal de Texas y COBRA corren fuera del reloj del SEP del Mercado, así que elegir una nunca extiende su ventana de 60 días en healthcare.gov. Un enfoque práctico para los texanos en 2026: solicite en healthcare.gov en las primeras semanas para asegurar un plan subsidiado, compárelo con COBRA y la continuación estatal, y conserve la continuación solo si un especialista, un plan de tratamiento o un deducible de 2026 casi cumplido justifica la prima más alta. Los avisos del empleador y de la aseguradora llegan por correo, así que llame a recursos humanos para confirmar las fechas y solicitar el aviso por escrito si no ha llegado. Anote por separado en su calendario los plazos de COBRA, de continuación estatal y del Mercado para que ninguno venza sin que lo note."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Documents and Proof for a Texas Marketplace SEP Application in 2026",
+        "es": "Documentos y Pruebas para una Solicitud SEP del Mercado en Texas en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "The Marketplace SEP for loss of coverage often requires proof of the qualifying life event, and healthcare.gov may place your application in pending status until you upload it. Each document has a job. A termination letter or COBRA notice proves the date employer coverage ended and starts the 60-day clock. Texas Workforce Commission unemployment letters and recent pay stubs support your projected 2026 income, which drives the premium tax credit. Social Security numbers and immigration documents let the Marketplace verify identity and eligibility. Proof of Texas residency confirms which plans you can buy by ZIP code. After enrollment, the Marketplace sends Form 1095-A in early 2027, and you use it with IRS Form 8962 to reconcile advance premium tax credits against actual 2026 income. Report income changes at healthcare.gov during the year to avoid repayment at tax time. Upload clear scans, keep copies, and respond to any request for documents within the deadline printed on the notice.",
+          "es": "El SEP del Mercado por pérdida de cobertura a menudo requiere prueba del evento calificador, y healthcare.gov puede dejar su solicitud pendiente hasta que la cargue. Cada documento tiene una función. Una carta de despido o un aviso de COBRA prueba la fecha en que terminó la cobertura del empleador e inicia el reloj de 60 días. Las cartas de desempleo de la Comisión de la Fuerza Laboral de Texas y los talones de pago recientes respaldan su ingreso proyectado de 2026, que determina el crédito fiscal de prima. Los números de Seguro Social y los documentos de inmigración permiten que el Mercado verifique identidad y elegibilidad. El comprobante de residencia en Texas confirma qué planes puede comprar por código postal. Después de inscribirse, el Mercado envía el Formulario 1095-A a principios de 2027, y usted lo usa con el Formulario 8962 del IRS para conciliar los créditos fiscales de prima adelantados con el ingreso real de 2026. Informe los cambios de ingresos en healthcare.gov durante el año para evitar reembolsos al declarar impuestos. Cargue escaneos claros, guarde copias y responda a cualquier solicitud de documentos dentro de la fecha límite impresa en el aviso."
         }
       ]
     }
   ],
+
   "faqs": {
     "en": [
       {
         "question": "What is the SEP window after losing a job in Texas in 2026?",
-        "answer": "Texas residents get a 60-day Special Enrollment Period (SEP) at healthcare.gov that starts the day after employer coverage ends. For example, if coverage ends December 31, 2026, the window runs January 1 through March 1, 2027. You can also enroll up to 60 days before the loss date to avoid a gap. Texas uses the federal Marketplace, so the federal 60-day rule applies with no state-specific extension. Spouse's employer plans often have a shorter 30-day window, and COBRA gives you 60 days to elect. Missing the 60-day Marketplace deadline usually means waiting for Open Enrollment (November 1, 2026 to January 15, 2027, for 2027 coverage)."
+        "answer": "Texas residents get a 60-day Special Enrollment Period (SEP) from the day employer coverage ends, and you can also start applying up to 60 days before. For example, if your last day of coverage is October 31, 2026, your window runs November 1 through December 30, 2026. Apply at healthcare.gov, where Texas plans are listed by ZIP code. Plans selected in the month after coverage ends generally start on the first of the following month. Open Enrollment for 2027 begins November 1, 2026, so confirm the closing date at healthcare.gov if your SEP window overlaps with it. Texas Medicaid and CHIP applications at YourTexasBenefits.com are open year-round with no deadline."
       },
       {
-        "question": "How do I document job loss for the SEP application in Texas?",
-        "answer": "Healthcare.gov may ask Texas applicants to upload proof of the qualifying life event within 30 days of picking a plan. A termination letter or HR confirmation stating the date your health coverage ends is the strongest document. Acceptable substitutes include a COBRA election notice, a HIPAA certificate of creditable coverage, an insurer letter, or a final pay stub showing the health insurance deduction. Add recent pay stubs, severance paperwork, and your Texas Workforce Commission award letter to support projected 2026 income. Request the termination and HIPAA letters in writing from your employer on your last day, because delays in receiving them are the most common documentation problem."
+        "question": "Does Texas Medicaid cover adults who lost their jobs in 2026?",
+        "answer": "Texas Medicaid rarely covers laid-off adults in 2026. Texas did not expand Medicaid under the ACA, so adult eligibility depends on a category: pregnancy (up to 198% FPL), parenting a minor child with very low income, a qualifying disability, or age 65 and older. A single adult without children almost never qualifies, even with zero income. Apply or screen at YourTexasBenefits.com, run by the Texas Health and Human Services Commission (HHSC), to confirm the current limits. If you do not qualify, the Marketplace SEP at healthcare.gov is your main path, with premium tax credits starting at 100% FPL ($15,960 for one person in 2026)."
       },
       {
-        "question": "What if I miss the 60-day SEP window after losing my Texas job?",
-        "answer": "A missed 60-day window generally leaves Texans uninsured until the next Open Enrollment Period, which runs November 1, 2026 to January 15, 2027, for coverage starting as early as January 1, 2027. During that gap you have no premium tax credits and no guaranteed Marketplace coverage. Exceptions exist: children can enroll in Texas CHIP or Children's Medicaid year-round at YourTexasBenefits.com, pregnant women can apply for Texas Medicaid anytime, and another qualifying life event such as marriage or birth may open a new SEP. Contact healthcare.gov at 1-800-318-2596 immediately if you missed the deadline for a good reason, because exceptional circumstances requests are reviewed case by case."
+        "question": "What does the Texas coverage gap mean if I lost my job?",
+        "answer": "The Texas coverage gap affects adults with projected 2026 income under 100% FPL ($15,960 for one person) who do not meet a Texas Medicaid category. Marketplace premium tax credits start at 100% FPL, and Texas Medicaid is closed to childless adults, so no subsidy path exists on paper. In practice, estimate your full-year 2026 income carefully: severance and earlier paychecks from this year may push you above 100% FPL, which unlocks credits. Check healthcare.gov for $0 Bronze options, and ask a navigator or 2-1-1 Texas about local clinic and charity care programs if you remain in the gap."
       },
       {
-        "question": "Can I get retroactive coverage after losing my job in Texas?",
-        "answer": "Marketplace coverage is not retroactive. If you pick a plan before your employer coverage ends, the new plan starts the first day of the month after the loss. If you pick a plan after, it starts the first day of the month after plan selection, so a gap is possible. COBRA is the exception: electing within 60 days makes coverage retroactive to the loss date, though you owe back premiums within 45 days of electing. Texas state continuation also runs without a gap when you meet the 60-day request and 45-day payment rules. Texas Medicaid can cover medical bills up to three months before your application month if you were eligible then, which helps pregnant women and parents who qualify."
+        "question": "Is COBRA worth it after losing a job in Texas in 2026?",
+        "answer": "COBRA costs 102% of the full premium in 2026, typically $500 to $900 per month for an individual and $1,200 to $2,800 per month for a family. COBRA makes sense when you are mid-treatment with a specialist outside Marketplace networks, or you have nearly met your 2026 deductible and want that credit to continue through December 31. For most Texans with projected income between 100% and 400% FPL, Marketplace plans with premium tax credits cost much less. You have 60 days to elect COBRA, and electing it does not extend your Marketplace SEP window, so compare both before Day 60."
       },
       {
-        "question": "What is the difference between COBRA and the Marketplace for a Texas job loss?",
-        "answer": "COBRA keeps your exact employer plan for 18 to 36 months at 102% of the full premium, roughly $500 to $900 per month for an individual and $1,200 to $2,800 per month for a family in 2026, with no subsidy. Marketplace plans at healthcare.gov use premium tax credits, so most Texans between 100% and 400% FPL in 2026 pay $10 to $300 per month, but networks and deductibles change. If your Texas employer has fewer than 20 employees, Texas state continuation under Insurance Code Chapter 1251 replaces COBRA for up to nine months at the same 2026 pricing of 102% of the group rate. Choose COBRA or state continuation only for a specific specialist or a nearly met 2026 deductible."
-      },
-      {
-        "question": "Do I qualify for Texas Medicaid after losing my job?",
-        "answer": "Most laid-off Texas adults do not qualify, because Texas did not expand Medicaid under the ACA. Texas Medicaid, run by HHSC, covers pregnant women, aged, blind, or disabled individuals, and parents or caretakers with income near 15% FPL in 2026, which is only a few hundred dollars per month. A childless adult generally cannot qualify at any income. The 138% FPL line of $22,025 for one person in 2026 applies in expansion states only. Check the household-size table on this page and the YourTexasBenefits.com screener. If you do not qualify, healthcare.gov premium tax credits are your main option for incomes from 100% to 400% FPL in 2026."
-      },
-      {
-        "question": "What happens to my children's coverage after I lose my Texas job?",
-        "answer": "Your children can move to Texas CHIP or Children's Medicaid if household income is up to about 201% FPL in 2026, which is $66,330 per year for a family of 4. Enrollment is year-round through YourTexasBenefits.com with no SEP deadline, and children qualify even when parents do not. Above 201% FPL in 2026, add your children to your Marketplace plan during the 60-day SEP, where children's premiums are included in the household tax credit calculation. If your spouse has employer coverage, ask HR about adding children within the 30-day window. Apply for CHIP as soon as your income drops, since processing can take several weeks and coverage can start the first of the month after approval."
+        "question": "How do I prove my job loss for the SEP at healthcare.gov in Texas?",
+        "answer": "Upload one document that shows the date your employer coverage ended when healthcare.gov asks for proof of your qualifying life event. Accepted proof usually includes a termination or layoff letter from your Texas employer, a COBRA election notice, a certificate of creditable coverage, or a final pay stub showing the deduction ended. Keep your Texas Workforce Commission unemployment determination letter as income evidence for your projected 2026 income. If your employer will not supply documents, you can submit a signed statement explaining the loss of coverage, but expect the application to stay pending longer. Upload before Day 60."
       },
       {
         "question": "What state-specific rules apply after a job loss in Texas?",
-        "answer": "Texas adds three rules to the federal framework. First, Texas state continuation under Insurance Code Chapter 1251 gives eligible employees up to nine months of coverage, or six extra months after COBRA, with a written request due within 60 days and a first payment within 45 days. Second, Texas did not expand Medicaid, so the coverage gap affects adults below 100% FPL in 2026. Third, Texas Workforce Commission unemployment benefits run up to 26 weeks and count as income on your healthcare.gov application. Texas has no state exchange and no state premium subsidy, so the federal healthcare.gov Marketplace is the only subsidized individual market."
+        "answer": "Texas has three state rules that matter. First, Texas did not expand Medicaid, so adult Medicaid is category-based. Second, Texas CHIP covers children under 19 up to 201% FPL year-round ($66,330 for a family of 4 in 2026). Third, Texas state continuation under Insurance Code Chapter 1251 applies to insured group policies: you need three consecutive months of prior coverage, a written request within 60 days, and coverage lasts up to nine months, or six months after COBRA. Self-funded employer plans are generally outside state law. Texas uses healthcare.gov because it has no state Exchange."
+      },
+      {
+        "question": "Do I qualify for Texas Medicaid or CHIP for my children after a job loss?",
+        "answer": "Your children may qualify even when you do not. Texas CHIP covers children under 19 in households up to 201% FPL, which is $66,330 for a family of 4 in 2026, and children's Medicaid covers lower-income households. Enrollment is year-round at YourTexasBenefits.com, and families above about 151% FPL pay an enrollment fee. Parent eligibility does not matter for the children. Many Texas families mix a Marketplace plan with premium tax credits for adults and CHIP or Medicaid for kids. Use the household-size table on this page to compare your family size to the 100% and 400% FPL lines."
+      },
+      {
+        "question": "What happens if I miss the 60-day SEP after losing my Texas job?",
+        "answer": "Missing the 60-day window means you generally cannot enroll in a Marketplace plan until the next Open Enrollment Period, which begins November 1, 2026 for 2027 coverage (confirm the closing date at healthcare.gov). Coverage would start January 1, 2027, leaving a gap with no protection against medical bills. Exceptions exist for a second qualifying life event, such as marriage, birth, or a move, or for proven delays caused by exceptional circumstances. Texas Medicaid and CHIP remain open year-round for eligible people, and COBRA or Texas state continuation may still be available if you elected on time."
       }
     ],
     "es": [
       {
-        "question": "¿Cuál es la ventana del SEP después de perder un empleo en Texas en 2026?",
-        "answer": "Los residentes de Texas tienen un Período de Inscripción Especial (SEP) de 60 días en healthcare.gov que comienza el día después de que termina la cobertura del empleador. Por ejemplo, si la cobertura termina el 31 de diciembre de 2026, la ventana va del 1 de enero al 1 de marzo de 2027. También puede inscribirse hasta 60 días antes de la fecha de pérdida para evitar un vacío. Texas usa el Mercado federal, así que aplica la regla federal de 60 días sin extensión estatal. Los planes del empleador de un cónyuge suelen tener una ventana más corta de 30 días, y COBRA le da 60 días para elegir. Perder el plazo de 60 días normalmente significa esperar a la Inscripción Abierta (del 1 de noviembre de 2026 al 15 de enero de 2027, para cobertura 2027)."
+        "question": "¿Cuál es la ventana de SEP después de perder un trabajo en Texas en 2026?",
+        "answer": "Los residentes de Texas obtienen un Período de Inscripción Especial (SEP) de 60 días desde el día en que termina la cobertura del empleador, y también pueden comenzar a solicitar hasta 60 días antes. Por ejemplo, si su último día de cobertura es el 31 de octubre de 2026, su ventana corre del 1 de noviembre al 30 de diciembre de 2026. Solicite en healthcare.gov, donde los planes de Texas se listan por código postal. Los planes elegidos en el mes posterior al fin de la cobertura generalmente comienzan el primer día del mes siguiente. La Inscripción Abierta para 2027 comienza el 1 de noviembre de 2026, así que confirme la fecha de cierre en healthcare.gov si su ventana SEP coincide con ella. Las solicitudes de Medicaid y CHIP de Texas en YourTexasBenefits.com están abiertas todo el año sin fecha límite."
       },
       {
-        "question": "¿Cómo documento la pérdida del empleo para la solicitud SEP en Texas?",
-        "answer": "Healthcare.gov puede pedir a los solicitantes de Texas que suban prueba del evento calificador de vida dentro de 30 días de elegir un plan. Una carta de despido o confirmación de recursos humanos con la fecha en que termina su cobertura médica es el documento más sólido. Los sustitutos aceptables incluyen un aviso de elección de COBRA, un certificado HIPAA de cobertura acreditable, una carta de la aseguradora o un último talón de pago con la deducción del seguro médico. Añada talones de pago recientes, documentos de indemnización y su carta de otorgamiento de la Comisión de la Fuerza Laboral de Texas para respaldar el ingreso proyectado de 2026. Solicite por escrito las cartas de despido y HIPAA a su empleador el último día, porque los retrasos para recibirlas son el problema de documentación más común."
+        "question": "¿Medicaid de Texas cubre a los adultos que perdieron su trabajo en 2026?",
+        "answer": "Medicaid de Texas rara vez cubre a adultos despedidos en 2026. Texas no expandió Medicaid bajo el ACA, por lo que la elegibilidad de los adultos depende de una categoría: embarazo (hasta 198% FPL), crianza de un hijo menor con ingresos muy bajos, una discapacidad calificada o edad de 65 años o más. Un adulto soltero sin hijos casi nunca califica, incluso con ingreso cero. Solicite o evalúe su caso en YourTexasBenefits.com, administrado por la Comisión de Salud y Servicios Humanos de Texas (HHSC), para confirmar los límites actuales. Si no califica, el SEP del Mercado en healthcare.gov es su camino principal, con créditos fiscales de prima desde 100% FPL ($15,960 para una persona en 2026)."
       },
       {
-        "question": "¿Qué pasa si pierdo la ventana SEP de 60 días después de perder mi empleo en Texas?",
-        "answer": "Perder la ventana de 60 días generalmente deja a los texanos sin seguro hasta el próximo Período de Inscripción Abierta, que va del 1 de noviembre de 2026 al 15 de enero de 2027, para cobertura desde el 1 de enero de 2027. Durante ese vacío no tiene créditos fiscales de prima ni cobertura garantizada del Mercado. Hay excepciones: los niños pueden inscribirse en CHIP o Medicaid infantil de Texas todo el año en YourTexasBenefits.com, las mujeres embarazadas pueden solicitar Medicaid de Texas en cualquier momento, y otro evento calificador como matrimonio o nacimiento puede abrir un nuevo SEP. Comuníquese de inmediato con healthcare.gov al 1-800-318-2596 si perdió el plazo por una buena razón, porque las solicitudes por circunstancias excepcionales se revisan caso por caso."
+        "question": "¿Qué significa la brecha de cobertura de Texas si perdí mi trabajo?",
+        "answer": "La brecha de cobertura de Texas afecta a adultos con ingreso proyectado de 2026 bajo 100% FPL ($15,960 para una persona) que no cumplen una categoría de Medicaid de Texas. Los créditos fiscales de prima del Mercado comienzan en 100% FPL, y Medicaid de Texas está cerrado a adultos sin hijos, por lo que en teoría no existe camino de subsidio. En la práctica, estime con cuidado su ingreso de todo el año 2026: la indemnización y los cheques anteriores de este año pueden llevarlo por encima de 100% FPL, lo que desbloquea los créditos. Revise healthcare.gov para opciones Bronze de $0, y pregunte a un navegador o al 2-1-1 Texas sobre clínicas locales y programas de atención caritativa si permanece en la brecha."
       },
       {
-        "question": "¿Puedo obtener cobertura retroactiva después de perder mi empleo en Texas?",
-        "answer": "La cobertura del Mercado no es retroactiva. Si elige un plan antes de que termine su cobertura del empleador, el nuevo plan inicia el primer día del mes siguiente a la pérdida. Si elige después, inicia el primer día del mes siguiente a la elección, así que es posible un vacío. COBRA es la excepción: elegirlo dentro de 60 días hace la cobertura retroactiva a la fecha de pérdida, aunque debe las primas atrasadas dentro de 45 días de la elección. La continuación estatal de Texas también corre sin vacío cuando cumple la solicitud de 60 días y el pago de 45 días. Medicaid de Texas puede cubrir facturas médicas hasta tres meses antes del mes de solicitud si era elegible entonces, lo que ayuda a mujeres embarazadas y padres que califican."
+        "question": "¿Vale la pena COBRA después de perder un trabajo en Texas en 2026?",
+        "answer": "COBRA cuesta 102% de la prima completa en 2026, típicamente $500 a $900 al mes para un individuo y $1,200 a $2,800 al mes para una familia. COBRA tiene sentido cuando está en medio de un tratamiento con un especialista fuera de las redes del Mercado, o casi cumplió su deducible de 2026 y quiere que ese crédito continúe hasta el 31 de diciembre. Para la mayoría de los texanos con ingreso proyectado entre 100% y 400% FPL, los planes del Mercado con créditos fiscales de prima cuestan mucho menos. Tiene 60 días para elegir COBRA, y elegirlo no extiende su ventana SEP del Mercado, así que compare ambos antes del día 60."
       },
       {
-        "question": "¿Cuál es la diferencia entre COBRA y el Mercado tras perder un empleo en Texas?",
-        "answer": "COBRA conserva su plan exacto del empleador por 18 a 36 meses al 102% de la prima completa, aproximadamente $500 a $900 al mes para un individuo y $1,200 a $2,800 al mes para una familia en 2026, sin subsidio. Los planes del Mercado en healthcare.gov usan créditos fiscales de prima, así que la mayoría de los texanos entre 100% y 400% FPL en 2026 paga $10 a $300 al mes, pero cambian las redes y los deducibles. Si su empleador en Texas tiene menos de 20 empleados, la continuación estatal de Texas bajo el Capítulo 1251 del Código de Seguros reemplaza a COBRA por hasta nueve meses con el mismo precio de 2026 de 102% de la tarifa de grupo. Elija COBRA o la continuación estatal solo por un especialista específico o un deducible de 2026 casi cubierto."
+        "question": "¿Cómo pruebo mi pérdida de trabajo para el SEP en healthcare.gov en Texas?",
+        "answer": "Cargue un documento que muestre la fecha en que terminó su cobertura del empleador cuando healthcare.gov le pida prueba de su evento calificador de vida. La prueba aceptada normalmente incluye una carta de despido de su empleador en Texas, un aviso de elección de COBRA, un certificado de cobertura acreditable o un último talón de pago que muestre que terminó la deducción. Conserve su carta de determinación de desempleo de la Comisión de la Fuerza Laboral de Texas como evidencia de su ingreso proyectado de 2026. Si su empleador no entrega documentos, puede presentar una declaración firmada que explique la pérdida de cobertura, pero espere que la solicitud quede pendiente más tiempo. Cargue antes del día 60."
       },
       {
-        "question": "¿Califico para Medicaid de Texas después de perder mi empleo?",
-        "answer": "La mayoría de los adultos despedidos en Texas no califica, porque Texas no expandió Medicaid bajo el ACA. Medicaid de Texas, administrado por HHSC, cubre a mujeres embarazadas, personas mayores, ciegas o con discapacidad, y padres o cuidadores con ingreso cercano a 15% FPL en 2026, que son solo unos cientos de dólares al mes. Un adulto sin hijos generalmente no puede calificar con ningún ingreso. La línea de 138% FPL de $22,025 para una persona en 2026 aplica solo en estados con expansión. Revise la tabla por tamaño de hogar en esta página y el evaluador de YourTexasBenefits.com. Si no califica, los créditos fiscales de prima de healthcare.gov son su opción principal para ingresos de 100% a 400% FPL en 2026."
+        "question": "¿Qué reglas específicas de Texas aplican después de perder un trabajo?",
+        "answer": "Texas tiene tres reglas estatales importantes. Primero, Texas no expandió Medicaid, por lo que Medicaid para adultos se basa en categorías. Segundo, CHIP de Texas cubre a niños menores de 19 años hasta 201% FPL todo el año ($66,330 para una familia de 4 en 2026). Tercero, la continuación estatal de Texas bajo el Capítulo 1251 del Código de Seguros aplica a pólizas grupales aseguradas: necesita tres meses consecutivos de cobertura previa, una solicitud por escrito dentro de 60 días, y la cobertura dura hasta nueve meses, o seis meses después de COBRA. Los planes autofinanciados del empleador generalmente quedan fuera de la ley estatal. Texas usa healthcare.gov porque no tiene intercambio estatal."
       },
       {
-        "question": "¿Qué pasa con la cobertura de mis hijos después de que pierdo mi empleo en Texas?",
-        "answer": "Sus hijos pueden pasar a CHIP o Medicaid infantil de Texas si el ingreso del hogar es de hasta aproximadamente 201% FPL en 2026, que son $66,330 al año para una familia de 4. La inscripción es todo el año en YourTexasBenefits.com sin plazo de SEP, y los niños califican aunque los padres no. Por encima de 201% FPL en 2026, añada a sus hijos a su plan del Mercado durante el SEP de 60 días, donde las primas de los niños se incluyen en el cálculo del crédito fiscal del hogar. Si su cónyuge tiene cobertura del empleador, pregunte a recursos humanos sobre añadir a los niños dentro de la ventana de 30 días. Solicite CHIP tan pronto como baje su ingreso, ya que el trámite puede tardar varias semanas y la cobertura puede iniciar el primer día del mes después de la aprobación."
+        "question": "¿Califico para Medicaid o CHIP de Texas para mis hijos después de perder el trabajo?",
+        "answer": "Sus hijos pueden calificar aunque usted no. CHIP de Texas cubre a niños menores de 19 años en hogares con ingresos de hasta 201% FPL, que es $66,330 para una familia de 4 en 2026, y Medicaid infantil cubre a hogares de menores ingresos. La inscripción es todo el año en YourTexasBenefits.com, y las familias por encima de aproximadamente 151% FPL pagan una cuota de inscripción. La elegibilidad de los padres no importa para los niños. Muchas familias de Texas combinan un plan del Mercado con créditos fiscales de prima para los adultos y CHIP o Medicaid para los niños. Use la tabla por tamaño de hogar en esta página para comparar el tamaño de su familia con las líneas de 100% y 400% FPL."
       },
       {
-        "question": "¿Qué reglas específicas de Texas aplican después de perder un empleo?",
-        "answer": "Texas añade tres reglas al marco federal. Primero, la continuación estatal de Texas bajo el Capítulo 1251 del Código de Seguros da a los empleados elegibles hasta nueve meses de cobertura, o seis meses adicionales después de COBRA, con solicitud escrita dentro de 60 días y primer pago dentro de 45 días. Segundo, Texas no expandió Medicaid, por lo que la brecha de cobertura afecta a adultos por debajo de 100% FPL en 2026. Tercero, los beneficios de desempleo de la Comisión de la Fuerza Laboral de Texas duran hasta 26 semanas y cuentan como ingreso en su solicitud de healthcare.gov. Texas no tiene intercambio estatal ni subsidio estatal de prima, así que el Mercado federal healthcare.gov es el único mercado individual subsidiado."
+        "question": "¿Qué pasa si pierdo el SEP de 60 días después de perder mi trabajo en Texas?",
+        "answer": "Perder la ventana de 60 días significa que generalmente no puede inscribirse en un plan del Mercado hasta el próximo Período de Inscripción Abierta, que comienza el 1 de noviembre de 2026 para la cobertura de 2027 (confirme la fecha de cierre en healthcare.gov). La cobertura comenzaría el 1 de enero de 2027, dejando una interrupción sin protección contra facturas médicas. Existen excepciones por un segundo evento calificador de vida, como matrimonio, nacimiento o mudanza, o por demoras comprobadas causadas por circunstancias excepcionales. Medicaid y CHIP de Texas siguen abiertos todo el año para personas elegibles, y COBRA o la continuación estatal de Texas aún pueden estar disponibles si eligió a tiempo."
       }
     ]
   },
+
   "relatedLinks": [
     {
-      "label": {
-        "en": "Medicaid Income Limits 2026",
-        "es": "Límites de Ingresos de Medicaid 2026"
-      },
+      "label": { "en": "Medicaid Income Limits 2026", "es": "Límites de Ingresos de Medicaid 2026" },
       "href": "/medicaid-income-limits"
     },
     {
-      "label": {
-        "en": "ACA Income Limits 2026",
-        "es": "Límites de Ingresos ACA 2026"
-      },
+      "label": { "en": "ACA Income Limits 2026", "es": "Límites de Ingresos del ACA 2026" },
       "href": "/aca-income-limits"
     },
     {
-      "label": {
-        "en": "Federal Poverty Level 2026",
-        "es": "Nivel Federal de Pobreza 2026"
-      },
+      "label": { "en": "Federal Poverty Level 2026", "es": "Nivel Federal de Pobreza 2026" },
       "href": "/federal-poverty-level"
     },
     {
-      "label": {
-        "en": "Free Health Insurance Screener",
-        "es": "Evaluador Gratuito de Seguro Médico"
-      },
+      "label": { "en": "Free Health Insurance Screener", "es": "Verificador Gratuito de Seguro Médico" },
       "href": "/screener"
     }
   ],
+
   "sources": [
     {
       "name": "HealthCare.gov: Special Enrollment Period for loss of coverage",
       "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/your-options/",
       "note": {
-        "en": "Official 60-day SEP rules for loss of job-based coverage at the federal Marketplace used by Texas residents.",
-        "es": "Reglas oficiales del SEP de 60 días por pérdida de cobertura del trabajo en el Mercado federal que usan los residentes de Texas."
+        "en": "Federal rules for the 60-day loss-of-coverage SEP and how to apply.",
+        "es": "Reglas federales del SEP de 60 días por pérdida de cobertura y cómo solicitar."
       }
     },
     {
-      "name": "Medicaid.gov: Texas state overview",
-      "url": "https://www.medicaid.gov/state-overviews/stateprofile.html?state=texas",
+      "name": "Medicaid.gov: Medicaid eligibility",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
       "note": {
-        "en": "Federal profile of Texas Medicaid and CHIP, including the non-expansion status.",
-        "es": "Perfil federal de Medicaid y CHIP de Texas, incluido el estado de no expansión."
-      }
-    },
-    {
-      "name": "KFF: The Coverage Gap, uninsured poor adults in states that do not expand Medicaid",
-      "url": "https://www.kff.org/medicaid/issue-brief/the-coverage-gap-uninsured-poor-adults-in-states-that-do-not-expand-medicaid/",
-      "note": {
-        "en": "Analysis of the coverage gap affecting Texas adults below 100% FPL.",
-        "es": "Análisis de la brecha de cobertura que afecta a adultos de Texas por debajo de 100% FPL."
-      }
-    },
-    {
-      "name": "Texas Legislature: Insurance Code Chapter 1251",
-      "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.1251.htm",
-      "note": {
-        "en": "Statutory text for Texas state continuation, including Sections 1251.252 through 1251.255.",
-        "es": "Texto legal de la continuación estatal de Texas, incluidas las Secciones 1251.252 a 1251.255."
-      }
-    },
-    {
-      "name": "U.S. Department of Labor: COBRA continuation coverage",
-      "url": "https://www.dol.gov/general/topic/health-plans/cobra",
-      "note": {
-        "en": "Federal COBRA rules: 20-employee threshold, 60-day election window, and 102% premium.",
-        "es": "Reglas federales de COBRA: umbral de 20 empleados, ventana de elección de 60 días y prima del 102%."
+        "en": "Federal Medicaid eligibility rules, including year-round enrollment and expansion status.",
+        "es": "Reglas federales de elegibilidad de Medicaid, incluida la inscripción todo el año y el estado de expansión."
       }
     },
     {
       "name": "Texas HHSC: Medicaid and CHIP",
-      "url": "https://hhs.texas.gov/services/health/medicaid-chip",
+      "url": "https://www.hhs.texas.gov/services/health/medicaid-chip",
       "note": {
-        "en": "Texas Medicaid and CHIP program information and eligibility from the Health and Human Services Commission.",
-        "es": "Información del programa y elegibilidad de Medicaid y CHIP de Texas de la Comisión de Salud y Servicios Humanos."
+        "en": "Texas Medicaid and CHIP programs, categories, and income limits.",
+        "es": "Programas, categorías y límites de ingresos de Medicaid y CHIP de Texas."
       }
     },
     {
-      "name": "Texas Workforce Commission: Unemployment benefits",
-      "url": "https://www.twc.texas.gov/jobseekers/unemployment-benefits-services",
+      "name": "Texas Statutes: Insurance Code Chapter 1251 (continuation of group coverage)",
+      "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.1251.htm",
       "note": {
-        "en": "How to file for Texas unemployment benefits after job loss.",
-        "es": "Cómo solicitar beneficios de desempleo de Texas después de perder el empleo."
+        "en": "Statute text for Texas state continuation eligibility, duration, and premiums.",
+        "es": "Texto de la ley de elegibilidad, duración y primas de la continuación estatal de Texas."
+      }
+    },
+    {
+      "name": "IRS: COBRA Continuation Coverage Frequently Asked Questions",
+      "url": "https://www.irs.gov/affordable-care-act/cobra-continuation-coverage-frequently-asked-questions",
+      "note": {
+        "en": "Federal COBRA premium, duration, and election rules.",
+        "es": "Reglas federales de prima, duración y elección de COBRA."
+      }
+    },
+    {
+      "name": "KFF: The Coverage Gap: Uninsured Poor Adults in States That Do Not Expand Medicaid",
+      "url": "https://www.kff.org/medicaid/issue-brief/the-coverage-gap-uninsured-poor-adults-in-states-that-do-not-expand-medicaid/",
+      "note": {
+        "en": "KFF analysis of the coverage gap affecting Texas and other non-expansion states.",
+        "es": "Análisis de KFF de la brecha de cobertura que afecta a Texas y otros estados sin expansión."
       }
     },
     {
       "name": "HHS ASPE: 2026 Poverty Guidelines",
       "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
       "note": {
-        "en": "2026 Federal Poverty Level figures used in the household-size table.",
-        "es": "Cifras del Nivel Federal de Pobreza 2026 usadas en la tabla por tamaño de hogar."
+        "en": "Official 2026 federal poverty level figures used in the household-size table.",
+        "es": "Cifras oficiales del nivel federal de pobreza 2026 usadas en la tabla por tamaño de hogar."
+      }
+    },
+    {
+      "name": "Texas Workforce Commission: Unemployment benefits",
+      "url": "https://www.twc.texas.gov/jobseekers/unemployment-benefits-services",
+      "note": {
+        "en": "Texas unemployment benefit eligibility, duration, and how to file.",
+        "es": "Elegibilidad, duración y cómo presentar beneficios de desempleo en Texas."
       }
     }
   ],
-  "topicCluster": "event-medicaid-pivot",
+
+  "topicCluster": "event-sep",
   "keyTerms": {
     "en": [
       "lost job Texas health insurance 2026",
       "Texas job loss special enrollment period",
-      "Texas state continuation coverage",
-      "COBRA vs marketplace Texas 2026",
       "Texas Medicaid coverage gap job loss",
+      "COBRA vs marketplace Texas 2026",
+      "Texas state continuation coverage",
       "60-day SEP Texas coverage loss"
     ],
     "es": [
       "perder trabajo Texas seguro médico 2026",
-      "período de inscripción especial pérdida de empleo Texas",
-      "continuación estatal de Texas",
-      "COBRA vs mercado Texas 2026",
-      "brecha de cobertura Medicaid Texas"
+      "período de inscripción especial pérdida de trabajo Texas",
+      "brecha de cobertura Medicaid Texas",
+      "COBRA vs Mercado Texas 2026",
+      "continuación estatal de Texas seguro médico"
     ]
   },
   "isLighthouse": false,
