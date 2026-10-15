@@ -68,12 +68,30 @@ export function checkACA(input: ScreenerInput): ProgramResult {
       result.reason = 'Income below 100% FPL - apply for Medicaid';
       result.nextSteps = `Apply for ${medicaidName} at ${medicaidUrl}`;
       return result;
+    } else if (state === 'WI') {
+      /* Wisconsin is the one non-expansion state that covers adults to 100% FPL,
+         through BadgerCare Plus, so a person under 100% here is not in the gap.
+         WI DHS income table, "effective February 1, 2026-January 31, 2027":
+         adult limit (100% FPL) $1,330.00 for one person. */
+      result.reason = 'Income below 100% FPL - BadgerCare Plus covers adults up to 100% FPL in Wisconsin';
+      result.nextSteps = `Apply for ${medicaidName} at ${medicaidUrl}`;
+      return result;
     } else {
-      result.eligible = 'maybe';
-      result.eligibilityStatus = 'may_qualify';
-      result.reason = `Income below 100% FPL in a non-expansion state. ${stateName} has not expanded Medicaid, so ACA marketplace options may be available.`;
-      result.estimatedValue = estimateACAValue(100, householdSize);
-      result.nextSteps = 'Visit HealthCare.gov to explore options, or check if you qualify for other programs.';
+      /* THE COVERAGE GAP. No premium tax credit exists below 100% FPL: 26 USC
+         36B(c)(1)(A) defines an applicable taxpayer as household income that
+         "equals or exceeds 100 percent but does not exceed 400 percent" of the
+         poverty line, and HealthCare.gov tells people under 100% in a
+         non-expansion state "you won't qualify for either health insurance
+         savings program". The one exception, (c)(1)(B) for lawfully present
+         immigrants, was struck by P.L. 119-21 section 71302(a) for taxable years
+         beginning after December 31, 2025.
+         This branch used to return 'maybe' with $10,000 for one adult or $20,000
+         for two or more, money the law does not allow. */
+      result.eligible = false;
+      result.eligibilityStatus = 'not_eligible';
+      result.estimatedValue = 0;
+      result.reason = `Income below 100% FPL in ${stateName}, which has not expanded Medicaid. This is the coverage gap: too little income for a marketplace tax credit, too much for Medicaid.`;
+      result.nextSteps = `You may still qualify for ${medicaidName} another way, for example as a parent, a pregnant woman, or a person with a disability: check at ${medicaidUrl}. A community health center will see you on a sliding scale based on your income: find one at findahealthcenter.hrsa.gov. Hospitals also run charity care programs.`;
       return result;
     }
   }
