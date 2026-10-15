@@ -8,7 +8,7 @@
  * Value: ~$5,000-15,000/year depending on coverage level
  */
 
-import { ScreenerInput, ProgramResult } from '../types';
+import type { ScreenerInput, ProgramResult } from '../types';
 
 export function checkVAHealthcare(input: ScreenerInput): ProgramResult {
   const { isVeteran, hasDisability } = input;

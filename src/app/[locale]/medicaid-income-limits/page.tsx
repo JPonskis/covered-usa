@@ -46,7 +46,7 @@ const STATES: { name: string; expanded: boolean; note: { en: string; es: string 
   { name: 'Alaska', expanded: true, note: { en: 'Higher FPL limits apply ($19,950 base for 1 person)', es: 'Aplican límites de FPL más altos ($19,950 base para 1 persona)' } },
   { name: 'Arizona', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
   { name: 'Arkansas', expanded: true, note: { en: 'Expansion via "Arkansas Works" private option', es: 'Expansión vía opción privada "Arkansas Works"' } },
-  { name: 'California', expanded: true, note: { en: 'CalAIM; covers undocumented adults', es: 'CalAIM; cubre adultos indocumentados' } },
+  { name: 'California', expanded: true, note: { en: 'CalAIM; since Jan 1, 2026, no new full-scope enrollment of undocumented adults 19+', es: 'CalAIM; desde el 1 de enero de 2026 no inscribe a nuevos adultos indocumentados de 19 años o más en cobertura completa' } },
   { name: 'Colorado', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
   { name: 'Connecticut', expanded: true, note: { en: 'HUSKY Health; standard expansion', es: 'HUSKY Health; expansión estándar' } },
   { name: 'Delaware', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
@@ -57,7 +57,7 @@ const STATES: { name: string; expanded: boolean; note: { en: string; es: string 
   { name: 'Idaho', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
   { name: 'Illinois', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
   { name: 'Indiana', expanded: true, note: { en: 'Healthy Indiana Plan; standard expansion', es: 'Healthy Indiana Plan; expansión estándar' } },
-  { name: 'Iowa', expanded: true, note: { en: 'IA Health Link; standard expansion', es: 'IA Health Link; expansión estándar' } },
+  { name: 'Iowa', expanded: true, note: { en: 'IA Health Link; standard expansion; work requirement for new applicants from Dec 1, 2026', es: 'IA Health Link; expansión estándar; requisito de trabajo para nuevos solicitantes desde el 1 de diciembre de 2026' } },
   { name: 'Kansas', expanded: false, note: { en: 'Did not expand; limited adult coverage', es: 'No expandió; cobertura limitada para adultos' } },
   { name: 'Kentucky', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
   { name: 'Louisiana', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
@@ -68,8 +68,8 @@ const STATES: { name: string; expanded: boolean; note: { en: string; es: string 
   { name: 'Minnesota', expanded: true, note: { en: 'MinnesotaCare; standard expansion', es: 'MinnesotaCare; expansión estándar' } },
   { name: 'Mississippi', expanded: false, note: { en: 'Did not expand; very limited adult coverage', es: 'No expandió; cobertura para adultos muy limitada' } },
   { name: 'Missouri', expanded: true, note: { en: 'Expanded via ballot initiative; 138% FPL', es: 'Expandido vía iniciativa electoral; 138% FPL' } },
-  { name: 'Montana', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
-  { name: 'Nebraska', expanded: true, note: { en: 'Expanded via ballot; standard expansion', es: 'Expandido vía boleta; expansión estándar' } },
+  { name: 'Montana', expanded: true, note: { en: 'Standard expansion; 138% FPL; work requirement since July 1, 2026', es: 'Expansión estándar; 138% FPL; requisito de trabajo desde el 1 de julio de 2026' } },
+  { name: 'Nebraska', expanded: true, note: { en: 'Expanded via ballot; work requirement since May 1, 2026', es: 'Expandido vía boleta; requisito de trabajo desde el 1 de mayo de 2026' } },
   { name: 'Nevada', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
   { name: 'New Hampshire', expanded: true, note: { en: 'Granite Advantage; standard expansion', es: 'Granite Advantage; expansión estándar' } },
   { name: 'New Jersey', expanded: true, note: { en: 'NJ FamilyCare; standard expansion', es: 'NJ FamilyCare; expansión estándar' } },
@@ -98,7 +98,7 @@ const STATES: { name: string; expanded: boolean; note: { en: string; es: string 
 const FAQS_EN = [
   {
     question: 'What is the Medicaid income limit for 2026?',
-    answer: 'In states that expanded Medicaid, the income limit is 138% of the Federal Poverty Level (FPL). For a single person, that is approximately $22,024 per year. For a family of four, it is approximately $45,540 per year.',
+    answer: 'In states that expanded Medicaid, the income limit is 138% of the Federal Poverty Level (FPL). For a single person, that is approximately $22,024 per year. For a family of four, it is approximately $45,540 per year. Adults covered through the expansion may need to show work, school or volunteering to get and keep coverage, starting as early as January 2027 depending on your state. Nebraska and Montana already require it, and Iowa starts December 1, 2026.',
   },
   {
     question: 'Do all states have the same Medicaid income limits?',
@@ -125,7 +125,7 @@ const FAQS_EN = [
 const FAQS_ES = [
   {
     question: '¿Cuál es el límite de ingresos de Medicaid para 2026?',
-    answer: 'En los estados que expandieron Medicaid, el límite de ingresos es del 138% del Nivel Federal de Pobreza (FPL). Para una persona sola, esto es aproximadamente $22,024 por año. Para una familia de cuatro, es aproximadamente $45,540 por año.',
+    answer: 'En los estados que expandieron Medicaid, el límite de ingresos es del 138% del Nivel Federal de Pobreza (FPL). Para una persona sola, esto es aproximadamente $22,024 por año. Para una familia de cuatro, es aproximadamente $45,540 por año. Es posible que los adultos cubiertos por la expansión tengan que demostrar trabajo, estudios o voluntariado para obtener y mantener la cobertura, a partir de enero de 2027 o más tarde, según su estado. Nebraska y Montana ya lo exigen, e Iowa comienza el 1 de diciembre de 2026.',
   },
   {
     question: '¿Todos los estados tienen los mismos límites de ingresos de Medicaid?',

@@ -10,8 +10,19 @@
 import type { ScreenerInput, ProgramResult } from '../types';
 import { getFPL, getFPLPercentage } from '../fpl';
 import { getStateData, getStateName } from '../../states';
+import { medicaidImmigrationCaveats, medicaidWorkCaveats, withCaveats } from '../caveats';
 
 export function checkMedicaid(input: ScreenerInput): ProgramResult {
+  const result = medicaidResult(input);
+  /* Since Oct 1, 2026 (P.L. 119-21 section 71109) federal Medicaid money is limited to citizens,
+     green card holders, Cuban/Haitian entrants and COFA citizens. The screener does not ask, so
+     every result that tells someone they may get Medicaid carries the caveat (caveats.ts). The
+     answer itself is untouched. */
+  if (result.eligible !== false) withCaveats(result, medicaidImmigrationCaveats(input));
+  return result;
+}
+
+function medicaidResult(input: ScreenerInput): ProgramResult {
   const { annualIncome, householdSize, age, isPregnant, numChildren, state = 'TX' } = input;
 
   const stateData = getStateData(state);
@@ -112,6 +123,10 @@ export function checkMedicaid(input: ScreenerInput): ProgramResult {
     if (isExpansionState && annualIncome <= fplAdultLimit) {
       result.estimatedValue = 10000 + (5000 * Math.max(0, numChildren - 1));
       result.reason = `Your household qualifies for ${programName} coverage`;
+      /* This answer covers the parent too. A parent covered as an expansion adult faces the work
+         rule unless their child is 13 or younger (P.L. 119-21 s.71119). The screener asks neither
+         the coverage group nor ages, so the line says "may" and names the exemption. */
+      withCaveats(result, medicaidWorkCaveats(input, state, isExpansionState));
     }
     return result;
   }
@@ -140,6 +155,11 @@ export function checkMedicaid(input: ScreenerInput): ProgramResult {
       result.eligibilityStatus = 'likely_eligible';
       result.estimatedValue = 10000;
       result.reason = `Income at ${fplPercent}% FPL qualifies for ${programName} (limit: ${adultLimitFpl}% FPL)`;
+      /* Expansion adults (and Wisconsin's waiver adults, once its adult limit is in the data)
+         face the work requirement: P.L. 119-21 s.71119, W8-09 and W9_critic_W8. */
+      if (isExpansionState || state === 'WI') {
+        withCaveats(result, medicaidWorkCaveats(input, state, isExpansionState));
+      }
       return result;
     }
   }

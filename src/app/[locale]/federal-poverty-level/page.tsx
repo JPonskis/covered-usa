@@ -101,7 +101,7 @@ const FAQS_EN = [
   },
   {
     question: 'What does "138% FPL" mean for Medicaid?',
-    answer: 'In states that expanded Medicaid under the Affordable Care Act, adults with household income up to 138% of the Federal Poverty Level qualify for Medicaid coverage. For a single person in 2026, that is approximately $22,024 per year. For a family of 4, it is approximately $45,540.',
+    answer: 'In states that expanded Medicaid under the Affordable Care Act, adults with household income up to 138% of the Federal Poverty Level qualify for Medicaid coverage. For a single person in 2026, that is approximately $22,024 per year. For a family of 4, it is approximately $45,540. Adults covered through the expansion may need to show work, school or volunteering to get and keep coverage, starting as early as January 2027 depending on your state.',
   },
   {
     question: 'How is FPL used for ACA marketplace subsidies?',
@@ -136,7 +136,7 @@ const FAQS_ES = [
   },
   {
     question: '¿Qué significa "138% FPL" para Medicaid?',
-    answer: 'En los estados que expandieron Medicaid bajo la Ley de Cuidado de Salud Asequible, los adultos con ingresos familiares de hasta el 138% del Nivel Federal de Pobreza califican para cobertura de Medicaid. Para una persona sola en 2026, esto es aproximadamente $22,024 al año.',
+    answer: 'En los estados que expandieron Medicaid bajo la Ley de Cuidado de Salud Asequible, los adultos con ingresos familiares de hasta el 138% del Nivel Federal de Pobreza califican para cobertura de Medicaid. Para una persona sola en 2026, esto es aproximadamente $22,024 al año. Es posible que los adultos cubiertos por la expansión tengan que demostrar trabajo, estudios o voluntariado para obtener y mantener la cobertura, a partir de enero de 2027 o más tarde, según su estado.',
   },
   {
     question: '¿Cómo se usa el FPL para los subsidios del mercado del ACA?',

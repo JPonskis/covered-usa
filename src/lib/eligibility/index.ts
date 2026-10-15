@@ -4,7 +4,7 @@
  * Runs all healthcare program eligibility checks and returns sorted results.
  */
 
-import { ScreenerInput, ScreenerResults, ProgramResult } from './types';
+import type { ScreenerInput, ScreenerResults, ProgramResult } from './types';
 import { checkACA } from './programs/aca';
 import { checkMedicaid } from './programs/medicaid';
 import { checkMedicare } from './programs/medicare';

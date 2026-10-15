@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import type { ProgramResult } from '@/lib/eligibility';
+import { caveatKey, caveatText } from '@/lib/eligibility/caveats';
 import NearbyClinics from '@/components/NearbyClinics';
 import { trackLead } from '@/components/MetaPixel';
 
@@ -211,6 +212,52 @@ function EstimatedValue({ value }: { value: number }) {
   );
 }
 
+/* ---- Law-change caveats (P.L. 119-21) under a program's reason ----
+   The engine attaches them (src/lib/eligibility/caveats.ts); this prints them in the page's
+   language. A caveat shared by two cards (Medicaid and CHIP both carry the immigration line)
+   prints on the first card only, so nobody reads the same paragraph twice. */
+type ShownCaveats = Map<ProgramResult, NonNullable<ProgramResult['caveats']>>;
+
+function assignCaveats(programs: (ProgramResult | null)[]): ShownCaveats {
+  const seen = new Set<string>();
+  const shown: ShownCaveats = new Map();
+  for (const prog of programs) {
+    if (!prog?.caveats?.length) continue;
+    const fresh = prog.caveats.filter((c) => !seen.has(caveatKey(c)));
+    fresh.forEach((c) => seen.add(caveatKey(c)));
+    if (fresh.length) shown.set(prog, fresh);
+  }
+  return shown;
+}
+
+function CaveatNotes({
+  caveats,
+  locale,
+  className = 'mt-3 space-y-2',
+}: {
+  caveats?: NonNullable<ProgramResult['caveats']>;
+  locale: string;
+  className?: string;
+}) {
+  if (!caveats?.length) return null;
+  return (
+    <div className={className}>
+      {caveats.map((c) => {
+        const { label, body } = caveatText(c, locale);
+        return (
+          <p
+            key={caveatKey(c)}
+            className="text-sm text-[var(--text-secondary)] leading-relaxed"
+            style={{ borderLeft: '3px solid var(--border)', paddingLeft: '0.75rem' }}
+          >
+            <strong className="text-[var(--text-primary)]">{label}</strong> {body}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
 /* ---- Main Results Client Component ---- */
 export default function ResultsClient({
   submissionId,
@@ -234,6 +281,8 @@ export default function ResultsClient({
   // Medicare flows get a Medicare.gov self-serve link instead.
   const showHealthSherpa = !isMedicareFlow && primaryProgram && primaryProgram.id === 'aca' && isAcaBrokerState;
   const showMedicareGov = isMedicareFlow || (primaryProgram && primaryProgram.id === 'medicare');
+
+  const shownCaveats = assignCaveats([primaryProgram, ...secondaryPrograms, ...notEligible]);
 
   // Language toggle URL
   const altLocale = es ? 'en' : 'es';
@@ -315,6 +364,7 @@ export default function ResultsClient({
               <p className="text-[var(--text-secondary)] text-sm leading-relaxed">
                 {primaryProgram.reason}
               </p>
+              <CaveatNotes caveats={shownCaveats.get(primaryProgram)} locale={locale} />
             </div>
 
             {/* Next Steps */}
@@ -413,6 +463,7 @@ export default function ResultsClient({
                   <p className="text-sm text-[var(--text-secondary)] mb-3">
                     {prog.reason}
                   </p>
+                  <CaveatNotes caveats={shownCaveats.get(prog)} locale={locale} className="mb-3 space-y-2" />
                   {(() => {
                     const applyUrl = prog.nextSteps?.match(/https?:\/\/[^\s)]+/)?.[0];
                     // No URL in nextSteps -> no Apply Now link (avoids dead '#' href)
@@ -449,6 +500,7 @@ export default function ResultsClient({
                     {prog.name}:
                   </span>{' '}
                   {prog.reason}
+                  <CaveatNotes caveats={shownCaveats.get(prog)} locale={locale} />
                 </li>
               ))}
             </ul>

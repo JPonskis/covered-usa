@@ -103,6 +103,7 @@ export async function POST(req: NextRequest) {
             estimatedValue: primary.estimatedValue,
             eligible: primary.eligible,
             reason: primary.reason,
+            caveats: primary.caveats,
           }
         : null,
       secondary: eligible.slice(1).map((p: { id: string; name: string; estimatedValue: number }) => ({

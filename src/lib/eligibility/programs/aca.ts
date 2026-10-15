@@ -20,7 +20,8 @@
  * - Immigration status, when a caller supplies it: lawfully present for 2026
  *   coverage; from 2027 coverage only green card holders, Cuban/Haitian entrants
  *   and COFA citizens (P.L. 119-21 section 71301). The CoveredUSA screener does
- *   not ask, so today no caller supplies it and nobody is affected.
+ *   not ask, so today no caller supplies it and nobody is denied. Instead, from
+ *   2027 coverage every credit result carries a one-line caveat (caveats.ts).
  *
  * The coverage-year design (gate, named-year read, tables, status copy) mirrors
  * BenefitsUSA's aca.ts so the two sites do not drift. The dollar estimate below
@@ -30,6 +31,7 @@
 import type { ScreenerInput, ProgramResult } from '../types';
 import { getFPL, getFPLForYear } from '../fpl';
 import { getStateData, getStateName } from '../../states';
+import { medicaidWorkCaveats, ptcImmigrationCaveats, withCaveats } from '../caveats';
 
 export function checkACA(input: ScreenerInput): ProgramResult {
   const { annualIncome, householdSize, age, currentlyInsured, insuranceSource, citizenshipStatus, state = 'TX' } = input;
@@ -98,6 +100,9 @@ export function checkACA(input: ScreenerInput): ProgramResult {
          adult limit (100% FPL) $1,330.00 for one person. */
       result.reason = 'Income below 100% FPL - BadgerCare Plus covers adults up to 100% FPL in Wisconsin';
       result.nextSteps = `Apply for ${medicaidName} at ${medicaidUrl}`;
+      /* Wisconsin's waiver adults are "applicable individuals" for the 2027 work requirement
+         (W9_critic_W8, W8-04/W8-09), and this is the line that sends them to BadgerCare. */
+      withCaveats(result, medicaidWorkCaveats(input, state, false));
       return result;
     } else {
       /* THE COVERAGE GAP. No premium tax credit exists below 100% FPL: 26 USC
@@ -157,6 +162,7 @@ export function checkACA(input: ScreenerInput): ProgramResult {
       ? `You may qualify if your employer plan is unaffordable (costs > ${affordPct}% of income for plan years starting in ${coverageYear})`
       : `You may qualify if your employer plan is unaffordable (costs > ${affordPct}% of income)`;
     result.estimatedValue = estimateACAValue(fplPercent, householdSize);
+    withCaveats(result, ptcImmigrationCaveats(input, coverageYear));
     return result;
   }
 
@@ -165,6 +171,9 @@ export function checkACA(input: ScreenerInput): ProgramResult {
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = estimateACAValue(fplPercent, householdSize);
     result.reason = `Income at ${fplPercent}% FPL qualifies for premium subsidies${forYear}`;
+    /* From Nov 1 (2027 coverage) the credit is limited by immigration status, and nobody here
+       was asked theirs (P.L. 119-21 s.71301). One caveat line; the answer is unchanged. */
+    withCaveats(result, ptcImmigrationCaveats(input, coverageYear));
     return result;
   }
 

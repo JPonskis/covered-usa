@@ -10,11 +10,20 @@
  * Value: ~$3,000-7,000/year per child (premiums + coverage)
  */
 
-import { ScreenerInput, ProgramResult } from '../types';
+import type { ScreenerInput, ProgramResult } from '../types';
 import { getFPL, getFPLPercentage } from '../fpl';
 import { getStateData, getStateName } from '../../states';
+import { medicaidImmigrationCaveats, withCaveats } from '../caveats';
 
 export function checkCHIP(input: ScreenerInput): ProgramResult {
+  const result = chipResult(input);
+  /* P.L. 119-21 section 71109(b) applies the Oct 1, 2026 immigrant limit to CHIP too. Same
+     caveat as Medicaid (caveats.ts), and the results page prints it once when both show. */
+  if (result.eligible !== false) withCaveats(result, medicaidImmigrationCaveats(input));
+  return result;
+}
+
+function chipResult(input: ScreenerInput): ProgramResult {
   const { annualIncome, householdSize, numChildren, state = 'TX', insuranceSource } = input;
 
   const stateData = getStateData(state);

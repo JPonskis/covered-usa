@@ -2,6 +2,8 @@
 
 import { useState, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { caveatKey, caveatText } from '@/lib/eligibility/caveats';
+import type { ResultCaveat } from '@/lib/eligibility/types';
 
 // Same key the pageview tracker writes (AnalyticsTracker: SESSION_ID_KEY).
 // Sending it with the submission is what lets a signup be joined back to the
@@ -22,6 +24,8 @@ interface QuickResult {
     estimatedValue: number;
     eligible: boolean | 'maybe';
     reason: string;
+    /** Law-change caveats (P.L. 119-21) the engine attached; printed under the result. */
+    caveats?: ResultCaveat[];
   } | null;
   secondary: { id: string; name: string; estimatedValue: number }[];
 }
@@ -432,6 +436,14 @@ export function InlineScreener({ locale }: { locale: string }) {
                   {c.worthUpTo} {formatCurrency(result.primary!.estimatedValue)}{c.perYear}
                 </p>
               )}
+              {result.primary!.caveats?.map((cv) => {
+                const { label, body } = caveatText(cv, lang);
+                return (
+                  <p key={caveatKey(cv)} style={{ color: '#57534e', fontSize: '0.8rem', margin: '0.875rem 0 0', lineHeight: 1.5, textAlign: 'left' }}>
+                    <strong style={{ color: '#1C1A16' }}>{label}</strong> {body}
+                  </p>
+                );
+              })}
             </>
           ) : (
             <p style={{ color: '#57534e', fontSize: '0.95rem', margin: 0, lineHeight: 1.5 }}>

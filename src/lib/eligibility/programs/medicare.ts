@@ -10,7 +10,7 @@
  * - OR ALS (Lou Gehrig's disease)
  */
 
-import { ScreenerInput, ProgramResult } from '../types';
+import type { ScreenerInput, ProgramResult } from '../types';
 
 export function checkMedicare(input: ScreenerInput): ProgramResult {
   const { age, hasDisability } = input;

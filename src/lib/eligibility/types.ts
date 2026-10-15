@@ -33,7 +33,18 @@ export interface ProgramResult {
   estimatedValue: number;
   reason: string;
   nextSteps: string;
+  /** Conditions the law attaches to this result that the screener cannot test, because it
+   *  never asks (immigration status, work hours). They never change `eligible` or the value.
+   *  The engine decides WHICH apply and from what date; the words live in caveats.ts in
+   *  English and Spanish, since the results page renders in both and `reason` is English. */
+  caveats?: ResultCaveat[];
 }
+
+/** See caveats.ts for the rule, the dates and the sources behind each one. */
+export type ResultCaveat =
+  | { id: 'medicaid_immigration' }
+  | { id: 'ptc_immigration_2027' }
+  | { id: 'medicaid_work'; state: string; renewEvery6Months: boolean };
 
 export interface ScreenerResults {
   programs: ProgramResult[];

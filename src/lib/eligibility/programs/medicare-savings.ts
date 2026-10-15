@@ -8,7 +8,7 @@
  * - QI (Qualifying Individual): 120-135% FPL
  */
 
-import { ScreenerInput, ProgramResult } from '../types';
+import type { ScreenerInput, ProgramResult } from '../types';
 import { getFPLPercentage } from '../fpl';
 import { getStateData } from '../../states';
 
