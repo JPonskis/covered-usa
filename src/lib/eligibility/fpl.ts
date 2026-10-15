@@ -12,11 +12,18 @@ const FPL_BASE = 15960; // Base for 1 person household
 const FPL_INCREMENT = 5680; // Amount added per additional person
 
 // 2025 Federal Poverty Level guidelines (48 contiguous states + DC)
-// ACA Premium Tax Credit eligibility for a coverage year uses the PRIOR
-// year's poverty guidelines (26 CFR 1.36B-1(h)). So 2026 coverage-year PTC
-// math uses these 2025 figures. Medicaid/MSP/CHIP use current-year (2026).
+// ACA Premium Tax Credit eligibility for a coverage year uses the guidelines in
+// effect when that year's open enrollment began (26 CFR 1.36B-1(h)): 2026
+// coverage uses these 2025 figures, 2027 coverage uses the 2026 table above.
+// aca.ts reads them by NAMED year through getFPLForYear(), never as "prior",
+// so the January roll cannot move them. Medicaid/MSP/CHIP use current-year.
+// At the January guideline release, roll BOTH tables and both year constants.
 const FPL_BASE_PRIOR = 15650; // 2025 base for 1 person household
 const FPL_INCREMENT_PRIOR = 5500; // 2025 amount added per additional person
+
+/** The guideline year each table above holds. Roll both every January with the values. */
+export const FPL_YEAR = 2026;
+export const FPL_PRIOR_YEAR = 2025;
 
 // FPL adjustments for Alaska and Hawaii
 const FPL_ADJUSTMENTS: Record<string, number> = {
@@ -93,6 +100,20 @@ export function getFPLPrior(householdSize: number, percentage: number = 100, sta
 export function getFPLPercentagePrior(income: number, householdSize: number, state?: string): number {
   const fpl100 = getFPLPrior(householdSize, 100, state);
   return Math.round((income / fpl100) * 100);
+}
+
+/**
+ * FPL for a NAMED guideline year (same function as BenefitsUSA's fpl.ts). Answers from
+ * whichever table holds that year. If neither does, it throws rather than quietly answering
+ * from the wrong vintage; check:aca-coverage-year fails first, so a deployed build cannot
+ * reach it.
+ */
+export function getFPLForYear(year: number, householdSize: number, percentage: number = 100, state?: string): number {
+  if (year === FPL_YEAR) return getFPL(householdSize, percentage, state);
+  if (year === FPL_PRIOR_YEAR) return getFPLPrior(householdSize, percentage, state);
+  throw new Error(
+    `fpl.ts holds the ${FPL_YEAR} and ${FPL_PRIOR_YEAR} poverty guidelines, not ${year}.`,
+  );
 }
 
 /**
