@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { setRequestLocale } from 'next-intl/server';
 import { getFAQSchema, getBreadcrumbSchema, buildSchemaGraph } from '@/lib/structured-data';
+import { MEDICARE_YEAR, PART_B_PREMIUM_MONTHLY } from '@/lib/eligibility/programs/medicare-savings';
+
+/** "$202.90": read from the engine so this page cannot drift from it again (audit A20). */
+const PART_B = `$${PART_B_PREMIUM_MONTHLY.toFixed(2)}`;
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -21,8 +25,9 @@ const ENROLLMENT_PERIODS = [
     nameEs: 'Período de Inscripción General (GEP)',
     window: 'January 1 – March 31 each year',
     windowEs: '1 de enero – 31 de marzo cada año',
-    notes: 'Late penalty applies; coverage starts July 1',
-    notesEs: 'Se aplica penalidad por retraso; la cobertura comienza el 1 de julio',
+    // 42 CFR 407.25(b)(3): since Jan 1, 2023, coverage starts the month after you enroll.
+    notes: 'Late penalty applies; coverage starts the month after you sign up',
+    notesEs: 'Se aplica penalidad por retraso; la cobertura comienza el mes después de inscribirse',
   },
   {
     name: 'Special Enrollment Period (SEP)',
@@ -61,7 +66,7 @@ const FAQS = [
   },
   {
     question: 'Is Medicare free?',
-    answer: 'Medicare Part A (hospital coverage) is free for most people who paid Medicare taxes for 10+ years. Part B (medical coverage) has a standard premium of approximately $185/month in 2026. Part D (drugs) and Medicare Advantage plans have varying costs.',
+    answer: `Medicare Part A (hospital coverage) is free for most people who paid Medicare taxes for 10+ years. Part B (medical coverage) has a standard premium of ${PART_B}/month in ${MEDICARE_YEAR}. Part D (drugs) and Medicare Advantage plans have varying costs.`,
   },
   {
     question: 'What is the difference between Medicare and Medicaid?',
@@ -193,7 +198,7 @@ export default async function MedicareEligibilityPage({ params }: PageProps) {
                 <tr style={{ background: '#1e3a5f', color: 'white' }}>
                   <th className="text-left px-4 py-3 font-semibold">{isEs ? 'Parte' : 'Part'}</th>
                   <th className="text-left px-4 py-3 font-semibold">{isEs ? 'Cobertura' : 'Coverage'}</th>
-                  <th className="text-left px-4 py-3 font-semibold">{isEs ? 'Costo 2026' : '2026 Cost'}</th>
+                  <th className="text-left px-4 py-3 font-semibold">{isEs ? `Costo ${MEDICARE_YEAR}` : `${MEDICARE_YEAR} Cost`}</th>
                   <th className="text-left px-4 py-3 font-semibold">{isEs ? 'Notas' : 'Notes'}</th>
                 </tr>
               </thead>
@@ -208,7 +213,7 @@ export default async function MedicareEligibilityPage({ params }: PageProps) {
                   {
                     part: 'Part B',
                     coverage: isEs ? 'Visitas médicas, ambulatorio, equipo médico' : 'Doctor visits, outpatient care, medical equipment',
-                    cost: '~$185/month',
+                    cost: isEs ? `${PART_B}/mes` : `${PART_B}/month`,
                     notes: isEs ? 'Prima puede ser mayor con ingresos altos (IRMAA)' : 'Premium may be higher with high income (IRMAA)',
                   },
                   {

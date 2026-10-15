@@ -1,5 +1,7 @@
 // Medical Bill Analyzer — Core Types
 
+import { fplContiguous } from '../eligibility/fpl-guidelines'
+
 export interface BillLineItem {
   description: string
   code?: string // CPT/HCPCS if visible on bill — backend only, never sent to client
@@ -170,21 +172,17 @@ export const FAIR_CASH_MULTIPLE = 2.5
  */
 export const OVERCODING_MULTIPLE = 10
 
-// FPL thresholds 2026 (HHS)
-export const FPL_2026: Record<number, number> = {
-  1: 15650,
-  2: 21150,
-  3: 26650,
-  4: 32150,
-  5: 37650,
-  6: 43150,
-  7: 48650,
-  8: 54150,
-}
-
+/**
+ * The poverty line for a household, from the screener's own table (lib/eligibility/
+ * fpl-guidelines.ts, the current HHS guidelines for the 48 contiguous states and D.C.).
+ *
+ * This used to be a private table named FPL_2026 that held the 2025 guidelines,
+ * so every charity-care percentage ran about 2% high. A family of 4 earning
+ * $64,800 was told 202% and over a hospital's 200% cutoff; on the 2026 guidelines they are at
+ * 196% and under it (audit A20, W8-15). Import the real table; never keep a copy here.
+ */
 export function getFPL(householdSize: number): number {
-  const capped = Math.min(Math.max(householdSize, 1), 8)
-  return FPL_2026[capped] ?? FPL_2026[8] + (householdSize - 8) * 5500
+  return fplContiguous(householdSize)
 }
 
 export function getFPLPercent(income: number, householdSize: number): number {

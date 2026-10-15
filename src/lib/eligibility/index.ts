@@ -46,7 +46,7 @@ export function checkEligibility(input: ScreenerInput): ScreenerResults {
   });
 
   const totalPotentialValue = programs
-    .filter(p => p.eligible === true || p.eligible === 'maybe')
+    .filter(p => (p.eligible === true || p.eligible === 'maybe') && !p.excludedFromTotal)
     .reduce((sum, p) => sum + p.estimatedValue, 0);
 
   return { programs, totalPotentialValue };

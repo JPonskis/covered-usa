@@ -79,12 +79,39 @@ function medicaidResult(input: ScreenerInput): ProgramResult {
     const fplAged100 = getFPL(householdSize, 100, state);
     const fplAged138 = getFPL(householdSize, 138, state);
 
-    if (annualIncome <= fplAged100) {
+    /* WHY THIS NEVER SAYS "likely" ON INCOME ALONE (audit A20, W9_critic_W8 "Anything W8
+       missed" #2; ported from BenefitsUSA's medicaid.ts, which already ships it).
+       At 65+ Medicaid is decided on the aged/disabled (non-MAGI) rules, and the ACA's ban on
+       asset tests is switched off for this group by 42 USC 1396a(e)(14)(D)(i)(II). The
+       SSI-related resource limit is $2,000 for one person and $3,000 for a couple (20 CFR
+       416.1205(c)), and many states' aged income limit sits at the SSI level, below 100% FPL.
+       We ask income and nothing about savings, so "likely" over-promised. This branch used to
+       return likely_eligible with $8,000 to every senior at or under 100% FPL: 449 real
+       seniors used the general screener between July 14 and the audit.
+       Value: the defensible range is $6,500-$8,700 a year (KFF CY2023; MACPAC FY2023-24) and
+       a `maybe` takes the low end. It is held out of the total because full Medicaid for a
+       dual pays the Part B premium the Medicare Savings Program card already counts. */
+    const DUAL_VALUE = 6500;
+    const ASSETS = 'Eligibility also turns on savings and other assets, which this screener did not ask about. Most states cap countable resources near $2,000 for one person and $3,000 for a couple, though your home, one car and household goods do not count.';
+    const agedNextSteps = `Apply for ${programName} at ${applicationUrl} or call ${phone}. Mention you are 65+ applying for aged/blind/disabled Medicaid.`;
+
+    if (input.insuranceSource === 'medicaid') {
       result.eligible = true;
       result.eligibilityStatus = 'likely_eligible';
-      result.estimatedValue = 8000;
-      result.reason = `Income at ${fplPercent}% FPL likely qualifies for "dual eligibility" — ${programName} alongside Medicare. ${programName} can cover your Medicare premiums, copays, long-term care, dental, and vision.`;
-      result.nextSteps = `Apply for ${programName} at ${applicationUrl} or call ${phone}. Mention you are 65+ applying for aged/blind/disabled Medicaid.`;
+      result.estimatedValue = DUAL_VALUE;
+      result.excludedFromTotal = true;
+      result.reason = `You told us you already have Medicaid. With Medicare as well, you are what is called a dual eligible, and ${programName} should be paying your Medicare premiums and cost sharing. If you are being billed for Medicare deductibles or coinsurance, that is usually not allowed.`;
+      result.nextSteps = agedNextSteps;
+      return result;
+    }
+
+    if (annualIncome <= fplAged100) {
+      result.eligible = 'maybe';
+      result.eligibilityStatus = 'may_qualify';
+      result.estimatedValue = DUAL_VALUE;
+      result.excludedFromTotal = true;
+      result.reason = `Medicare and Medicaid are not either/or, and about 12 million people have both. At ${fplPercent}% of the federal poverty level your income is in the range states use for Medicaid at 65 and over. ${ASSETS} Apply anyway: only your state can decide, and the Medicare Savings Program has a far higher resource limit.`;
+      result.nextSteps = agedNextSteps;
       return result;
     }
 

@@ -12,7 +12,15 @@ import type { ScreenerInput, ProgramResult } from '../types';
 import { getFPLPercentage } from '../fpl';
 import { getStateData } from '../../states';
 
-const PART_B_PREMIUM_MONTHLY = 202.90;
+/** The year the Medicare figures in this file are valid for. CMS announces the next year's
+ *  Part B premium each November and it takes effect January 1. check:constants fails the build
+ *  once this year is past, so roll the premium AND this year together. */
+export const MEDICARE_YEAR = 2026;
+
+/** Standard Part B premium for MEDICARE_YEAR. CMS 2026 fact sheet: "The standard monthly
+ *  premium for Medicare Part B enrollees will be $202.90 for 2026". Pages import this rather
+ *  than retype it (audit A20: /medicare-eligibility showed the 2025 $185 under "2026 Cost"). */
+export const PART_B_PREMIUM_MONTHLY = 202.90;
 
 const PROGRAM_VALUES = {
   qmb: 5000,

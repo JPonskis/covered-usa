@@ -38,6 +38,11 @@ export interface ProgramResult {
    *  The engine decides WHICH apply and from what date; the words live in caveats.ts in
    *  English and Spanish, since the results page renders in both and `reason` is English. */
   caveats?: ResultCaveat[];
+  /** Shown on its card but left OUT of `totalPotentialValue`. Used where the same dollars are
+   *  already counted by another card on the same page (full Medicaid for someone 65+ pays the
+   *  Part B premium that the Medicare Savings Program card already counts). Same field and
+   *  meaning as BenefitsUSA's ProgramResult. */
+  excludedFromTotal?: boolean;
 }
 
 /** See caveats.ts for the rule, the dates and the sources behind each one. */

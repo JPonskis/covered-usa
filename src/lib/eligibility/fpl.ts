@@ -6,24 +6,24 @@
  */
 
 import { getStateData } from '../states';
+import {
+  FPL_BASE,
+  FPL_INCREMENT,
+  FPL_BASE_PRIOR,
+  FPL_INCREMENT_PRIOR,
+  FPL_YEAR,
+  FPL_PRIOR_YEAR,
+} from './fpl-guidelines';
 
-// 2026 Federal Poverty Level guidelines (48 contiguous states + DC)
-const FPL_BASE = 15960; // Base for 1 person household
-const FPL_INCREMENT = 5680; // Amount added per additional person
-
-// 2025 Federal Poverty Level guidelines (48 contiguous states + DC)
+// The guideline figures live in fpl-guidelines.ts (no imports, so client code can read them
+// without the state data). 2026 = current; 2025 = prior.
 // ACA Premium Tax Credit eligibility for a coverage year uses the guidelines in
 // effect when that year's open enrollment began (26 CFR 1.36B-1(h)): 2026
-// coverage uses these 2025 figures, 2027 coverage uses the 2026 table above.
+// coverage uses the 2025 figures, 2027 coverage uses the 2026 table.
 // aca.ts reads them by NAMED year through getFPLForYear(), never as "prior",
 // so the January roll cannot move them. Medicaid/MSP/CHIP use current-year.
 // At the January guideline release, roll BOTH tables and both year constants.
-const FPL_BASE_PRIOR = 15650; // 2025 base for 1 person household
-const FPL_INCREMENT_PRIOR = 5500; // 2025 amount added per additional person
-
-/** The guideline year each table above holds. Roll both every January with the values. */
-export const FPL_YEAR = 2026;
-export const FPL_PRIOR_YEAR = 2025;
+export { FPL_YEAR, FPL_PRIOR_YEAR, FPL_INCREMENT };
 
 // FPL adjustments for Alaska and Hawaii
 const FPL_ADJUSTMENTS: Record<string, number> = {

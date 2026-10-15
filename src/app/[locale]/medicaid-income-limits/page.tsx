@@ -16,22 +16,22 @@ import {
   QuickAnswer,
   type ReferenceTableCell,
 } from '@/components/reference';
+import { getFPL } from '@/lib/eligibility/fpl';
 
 interface PageProps {
   params: Promise<{ locale: string }>;
 }
 
-// FPL 2026: $15,960 base for 1 person, +$5,680 per additional person (48 contiguous states)
-const FPL_BASE = 15960;
-const FPL_ADDITIONAL = 5680;
+// 2026 poverty guidelines, 48 contiguous states: read from the engine (fpl.ts) rather than a
+// private copy, so this page cannot drift from the screener (audit A20, W8 Notes #5).
 const LAST_UPDATED = '2026-05-12';
 
 function fpl(size: number): number {
-  return FPL_BASE + (size - 1) * FPL_ADDITIONAL;
+  return getFPL(size);
 }
 
 function medicaid(size: number): number {
-  return Math.round(fpl(size) * 1.38);
+  return getFPL(size, 138);
 }
 
 function fmt(n: number): string {
@@ -50,7 +50,9 @@ const STATES: { name: string; expanded: boolean; note: { en: string; es: string 
   { name: 'Colorado', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
   { name: 'Connecticut', expanded: true, note: { en: 'HUSKY Health; standard expansion', es: 'HUSKY Health; expansión estándar' } },
   { name: 'Delaware', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
-  { name: 'District of Columbia', expanded: true, note: { en: 'Covers up to 215% FPL for adults', es: 'Cubre hasta el 215% FPL para adultos' } },
+  // DHCF, "Eligibility Changes to the Medicaid Program Effective January 1, 2026": adults "will
+  // decrease from 215% to 138%" (parents and caretakers from 221%); Healthy DC Plan 138-200%.
+  { name: 'District of Columbia', expanded: true, note: { en: 'Adults up to 138% FPL since Jan 1, 2026 (was 215%); adults 21 to 64 from 138% to 200% FPL may get the Healthy DC Plan', es: 'Adultos hasta el 138% FPL desde el 1 de enero de 2026 (antes 215%); los adultos de 21 a 64 años entre el 138% y el 200% FPL pueden obtener el Healthy DC Plan' } },
   { name: 'Florida', expanded: false, note: { en: 'Limited; primarily children, pregnant women, parents under 30% FPL', es: 'Limitado; principalmente niños, mujeres embarazadas, padres bajo 30% FPL' } },
   { name: 'Georgia', expanded: false, note: { en: 'Partial expansion (Pathways); work requirements apply', es: 'Expansión parcial (Pathways); requisitos de trabajo' } },
   { name: 'Hawaii', expanded: true, note: { en: 'Higher FPL limits apply ($18,360 base for 1 person)', es: 'Aplican límites de FPL más altos ($18,360 base para 1 persona)' } },

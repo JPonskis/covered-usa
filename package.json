@@ -12,7 +12,7 @@
     "validate:personas": "node scripts/validate-personas.js",
     "validate:medicare-advantage": "node scripts/validate-medicare-advantage.js",
     "check:ads-routes": "node scripts/check-ads-routes.mjs",
-    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js && node scripts/validate-glossary.js && node scripts/validate-events.js && node scripts/validate-personas.js && node scripts/validate-medicare-advantage.js && node scripts/coveredusa-build-link-index.js && npm run check:pregnancy-household && npm run check:aca-coverage-year && npm run check:law-change-caveats && node scripts/check-ads-routes.mjs",
+    "prebuild": "node scripts/validate-procedures.js && node scripts/validate-drugs.js && node scripts/validate-qa.js && node scripts/validate-glossary.js && node scripts/validate-events.js && node scripts/validate-personas.js && node scripts/validate-medicare-advantage.js && node scripts/coveredusa-build-link-index.js && npm run check:pregnancy-household && npm run check:aca-coverage-year && npm run check:law-change-caveats && npm run check:senior-screening && node scripts/check-ads-routes.mjs",
     "build:link-index": "node scripts/coveredusa-build-link-index.js",
     "build": "next build",
     "start": "next start",
@@ -20,7 +20,8 @@
     "test:bill-analyzer": "node --import ./scripts/register-ts.mjs --no-warnings scripts/test-bill-analyzer.ts",
     "check:pregnancy-household": "node --import ./scripts/register-ts.mjs --no-warnings scripts/check-pregnancy-household.mjs",
     "check:aca-coverage-year": "node --import ./scripts/register-ts.mjs --no-warnings scripts/check-aca-coverage-year.mjs",
-    "check:law-change-caveats": "node --import ./scripts/register-ts.mjs --no-warnings scripts/check-law-change-caveats.mjs"
+    "check:law-change-caveats": "node --import ./scripts/register-ts.mjs --no-warnings scripts/check-law-change-caveats.mjs",
+    "check:senior-screening": "node --import ./scripts/register-ts.mjs --no-warnings scripts/check-senior-screening.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.95.2",

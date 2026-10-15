@@ -225,7 +225,14 @@ const rate = (code: string, facility: number, nonFacility = facility * 1.4) => [
 
   const qualifies = buildCharityCareResult('nonprofit', { is_nonprofit: true, income_limit_fpl_percent: 300 }, 20000, 2, 'Mercy')
   eq('A9 confirmed nonprofit + cutoff + low income is likely', qualifies.eligibility, 'likely')
-  check('A9 the one confident case cites both numbers', /300%/.test(qualifies.explanation) && /95%/.test(qualifies.explanation), qualifies.explanation)
+  // $20,000 for a household of 2 on the 2026 guidelines ($21,640) is 92%. This expected 95% until
+  // audit A20: the analyzer was reading the 2025 table ($21,150) under the name FPL_2026.
+  check('A9 the one confident case cites both numbers', /300%/.test(qualifies.explanation) && /\b92%/.test(qualifies.explanation), qualifies.explanation)
+  // W8-15's family: 4 people, $64,800, against a 200% free-care cutoff. 2025 table: 202%, over.
+  // 2026 table: 196%, under.
+  const w815 = buildCharityCareResult('nonprofit', { is_nonprofit: true, income_limit_fpl_percent: 200 }, 64800, 4, 'Mercy')
+  eq('A20 W8-15 family of 4 at $64,800 is under a 200% cutoff on the 2026 guidelines', w815.eligibility, 'likely')
+  check('A20 W8-15 family of 4 at $64,800 is quoted 196%', /\b196%/.test(w815.explanation), w815.explanation)
 
   const over = buildCharityCareResult('nonprofit', { is_nonprofit: true, income_limit_fpl_percent: 200 }, 90000, 2, 'Mercy')
   eq('A9 above the cutoff is unlikely', over.eligibility, 'unlikely')

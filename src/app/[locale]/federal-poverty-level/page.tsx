@@ -16,24 +16,34 @@ import {
   QuickAnswer,
   type ReferenceTableCell,
 } from '@/components/reference';
+import { getFPL, FPL_INCREMENT } from '@/lib/eligibility/fpl';
+import { acaPtcIncomeRange } from '@/lib/eligibility/programs/aca';
 
 interface PageProps {
   params: Promise<{ locale: string }>;
 }
 
-// 2026 Federal Poverty Level — official HHS ASPE guidelines (published Jan 2026)
-// 48 contiguous states + DC
-const FPL_BASE = 15960;
-const FPL_INCREMENT = 5680;
-const ALASKA_MULTIPLIER = 1.25;
-const HAWAII_MULTIPLIER = 1.15;
+/* The poverty table is the engine's own (fpl.ts getFPL, 2026 HHS ASPE guidelines; AK and HI
+   adjusted there). This page used to keep a private copy of the base and increment, which is
+   how its ACA line drifted to a 2024 figure (audit A20, W8-14). */
 const LAST_UPDATED = '2026-05-12';
 
+/** The coverage year flips at aca.ts ACA_2027_COVERAGE_EFFECTIVE (Nov 1). Today this route
+ *  renders per request (production sends no-store), so the flip needs no deploy; this keeps it
+ *  true, at most an hour late, if the route is ever made static. */
+export const revalidate = 3600;
+
 function fpl(size: number, pct: number = 100, state?: 'AK' | 'HI'): number {
-  let base = FPL_BASE + (Math.max(0, size - 1) * FPL_INCREMENT);
-  if (state === 'AK') base = Math.round(base * ALASKA_MULTIPLIER);
-  if (state === 'HI') base = Math.round(base * HAWAII_MULTIPLIER);
-  return Math.round(base * (pct / 100));
+  return getFPL(size, pct, state);
+}
+
+/** The premium tax credit ceiling (400% FPL) for the coverage year on sale, from the same
+ *  function the screener uses. 2026 coverage is measured against the 2025 guidelines and 2027
+ *  coverage, from Nov 1, against the 2026 ones (26 USC 36B(d)(3)(B)), so it is NOT the 400%
+ *  column of this page's 2026 table until then. */
+function acaCap(now: Date) {
+  const one = acaPtcIncomeRange(1, now);
+  return { year: one.coverageYear, guidelineYear: one.guidelineYear, single: one.max, family4: acaPtcIncomeRange(4, now).max };
 }
 
 function fmt(n: number): string {
@@ -46,6 +56,12 @@ function fmtMonthly(annual: number): string {
 
 const HOUSEHOLD_SIZES = [1, 2, 3, 4, 5, 6, 7, 8];
 
+/** AK / HI multiplier as the engine applies it: the ratio of its 1-person line to the
+ *  contiguous one (1.25 and 1.15 today). */
+function stateMultiplier(state?: 'AK' | 'HI'): number {
+  return state ? Math.round((getFPL(1, 100, state) / getFPL(1, 100)) * 100) / 100 : 1;
+}
+
 // Healthcare-only FPL percentages — drop SNAP/WIC/LIHEAP (BenefitsUSA territory)
 const HEALTHCARE_PCTS = [100, 138, 150, 200, 250, 400];
 
@@ -55,7 +71,7 @@ function buildFplRows(state?: 'AK' | 'HI'): ReferenceTableCell[][] {
     ...HEALTHCARE_PCTS.map((pct) => fmt(fpl(size, pct, state))),
   ]);
   // Add "each additional person" row
-  const inc100 = FPL_INCREMENT * (state === 'AK' ? ALASKA_MULTIPLIER : state === 'HI' ? HAWAII_MULTIPLIER : 1);
+  const inc100 = FPL_INCREMENT * stateMultiplier(state);
   rows.push([
     'Each additional',
     ...HEALTHCARE_PCTS.map((pct) => fmt(Math.round(inc100 * (pct / 100)))),
@@ -68,7 +84,7 @@ function buildFplRowsEs(state?: 'AK' | 'HI'): ReferenceTableCell[][] {
     String(size),
     ...HEALTHCARE_PCTS.map((pct) => fmt(fpl(size, pct, state))),
   ]);
-  const inc100 = FPL_INCREMENT * (state === 'AK' ? ALASKA_MULTIPLIER : state === 'HI' ? HAWAII_MULTIPLIER : 1);
+  const inc100 = FPL_INCREMENT * stateMultiplier(state);
   rows.push([
     'Cada persona adicional',
     ...HEALTHCARE_PCTS.map((pct) => fmt(Math.round(inc100 * (pct / 100)))),
@@ -86,7 +102,9 @@ function buildMonthlyRows(): ReferenceTableCell[][] {
   ]);
 }
 
-const FAQS_EN = [
+type AcaCap = ReturnType<typeof acaCap>;
+
+const faqsEn = (cap: AcaCap) => [
   {
     question: 'What is the 2026 Federal Poverty Level for a family of 4?',
     answer: 'The 2026 FPL for a family of 4 is $33,000 per year in the 48 contiguous states and D.C. In Alaska it is $41,250, and in Hawaii it is $37,950. These figures are published annually by the U.S. Department of Health and Human Services (HHS).',
@@ -105,7 +123,7 @@ const FAQS_EN = [
   },
   {
     question: 'How is FPL used for ACA marketplace subsidies?',
-    answer: 'The ACA uses FPL to determine eligibility for premium tax credits and cost-sharing reductions. Households earning up to 400% FPL ($60,240 single / $132,000 family of 4 in 2026) may qualify for premium subsidies. Households under 250% FPL also qualify for enhanced cost-sharing reductions on Silver plans.',
+    answer: `The ACA uses FPL to determine eligibility for premium tax credits and cost-sharing reductions. Households earning up to 400% FPL (${fmt(cap.single)} single / ${fmt(cap.family4)} family of 4 for ${cap.year} coverage, which is measured against the ${cap.guidelineYear} guidelines) may qualify for premium subsidies. Households under 250% FPL also qualify for enhanced cost-sharing reductions on Silver plans.`,
   },
   {
     question: 'Does FPL change every year?',
@@ -121,7 +139,7 @@ const FAQS_EN = [
   },
 ];
 
-const FAQS_ES = [
+const faqsEs = (cap: AcaCap) => [
   {
     question: '¿Cuál es el Nivel Federal de Pobreza 2026 para una familia de 4?',
     answer: 'El FPL 2026 para una familia de 4 es $33,000 al año en los 48 estados contiguos y D.C. En Alaska es $41,250 y en Hawái es $37,950. Estas cifras son publicadas anualmente por el Departamento de Salud y Servicios Humanos de EE.UU. (HHS).',
@@ -140,7 +158,7 @@ const FAQS_ES = [
   },
   {
     question: '¿Cómo se usa el FPL para los subsidios del mercado del ACA?',
-    answer: 'El ACA usa el FPL para determinar la elegibilidad para créditos fiscales de prima y reducciones de costos compartidos. Los hogares con ingresos de hasta el 400% del FPL ($60,240 individual / $132,000 familia de 4 en 2026) pueden calificar para subsidios.',
+    answer: `El ACA usa el FPL para determinar la elegibilidad para créditos fiscales de prima y reducciones de costos compartidos. Los hogares con ingresos de hasta el 400% del FPL (${fmt(cap.single)} individual / ${fmt(cap.family4)} familia de 4 para la cobertura de ${cap.year}, que se mide con las guías de ${cap.guidelineYear}) pueden calificar para subsidios.`,
   },
   {
     question: '¿Cambia el FPL cada año?',
@@ -203,7 +221,8 @@ export default async function FederalPovertyLevelPage({ params }: PageProps) {
   setRequestLocale(locale);
 
   const isEs = locale === 'es';
-  const faqs = isEs ? FAQS_ES : FAQS_EN;
+  const cap = acaCap(new Date());
+  const faqs = isEs ? faqsEs(cap) : faqsEn(cap);
 
   const faqSchema = getFAQSchema(faqs);
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -288,8 +307,8 @@ export default async function FederalPovertyLevelPage({ params }: PageProps) {
             <QuickAnswer
               locale={locale}
               text={isEs
-                ? `A partir de 2026, el Nivel Federal de Pobreza para una persona sola es $15,960 en los 48 estados contiguos, $19,950 en Alaska y $18,360 en Hawái. Para una familia de 4, el FPL es $33,000. La cobertura de Medicaid en estados con expansión llega al 138% FPL ($22,024 individual / $45,540 familia de 4). Los subsidios del ACA están disponibles hasta el 400% FPL ($60,240 individual / $132,000 familia de 4).`
-                : `As of 2026, the Federal Poverty Level for a single person is $15,960 in the 48 contiguous states, $19,950 in Alaska, and $18,360 in Hawaii. For a family of 4, FPL is $33,000. Medicaid expansion coverage extends to 138% FPL ($22,024 single / $45,540 family of 4). ACA subsidies are available up to 400% FPL ($60,240 single / $132,000 family of 4).`}
+                ? `A partir de 2026, el Nivel Federal de Pobreza para una persona sola es ${fmt(single100)} en los 48 estados contiguos, ${fmt(fpl(1, 100, 'AK'))} en Alaska y $18,360 en Hawái. Para una familia de 4, el FPL es ${fmt(family4_100)}. La cobertura de Medicaid en estados con expansión llega al 138% FPL ($22,024 individual / $45,540 familia de 4). Los subsidios del ACA están disponibles hasta el 400% FPL (${fmt(cap.single)} individual / ${fmt(cap.family4)} familia de 4 para la cobertura de ${cap.year}).`
+                : `As of 2026, the Federal Poverty Level for a single person is ${fmt(single100)} in the 48 contiguous states, ${fmt(fpl(1, 100, 'AK'))} in Alaska, and $18,360 in Hawaii. For a family of 4, FPL is ${fmt(family4_100)}. Medicaid expansion coverage extends to 138% FPL ($22,024 single / $45,540 family of 4). ACA subsidies are available up to 400% FPL (${fmt(cap.single)} single / ${fmt(cap.family4)} family of 4 for ${cap.year} coverage).`}
             />
           </div>
         </div>
