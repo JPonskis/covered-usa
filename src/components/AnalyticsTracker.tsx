@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
+import { analyticsPath } from '@/lib/google-analytics';
 
 const tracked = new Set<string>();
 
@@ -134,7 +135,7 @@ export default function AnalyticsTracker() {
     if (aiSource && typeof gtag === 'function') {
       gtag('event', 'ai_referral', {
         ai_source: aiSource.name,
-        landing_page: pathname,
+        landing_page: analyticsPath(pathname),
       });
     }
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Source_Serif_4, Fraunces } from "next/font/google";
 import "./globals.css";
 import AdSenseLoader from "@/components/ads/AdSenseLoader";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { adsenseClient } from "@/lib/ads";
 
 const sourceSerif = Source_Serif_4({
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${sourceSerif.variable} ${fraunces.variable}`}>
+        <GoogleAnalytics />
         <AdSenseLoader />
         {children}
       </body>
