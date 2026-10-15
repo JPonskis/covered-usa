@@ -25,6 +25,16 @@ export async function resolve(specifier, context, next) {
       } catch {}
     }
   }
+  /* A `.json` specifier needs `with { type: 'json' }` under Node's ESM resolver, and the
+     TypeScript that imports it does not write one (tsc's resolveJsonModule does not need it).
+     The 51 state data files in src/lib/states/stateData.ts are imported that way, so without
+     this branch no harness can reach the eligibility engine at all: it dies with
+     ERR_IMPORT_ATTRIBUTE_MISSING on ak.json. Supplying the attribute here rather than editing
+     51 import lines keeps the source as tsc wants it. */
+  if (specifier.endsWith('.json')) {
+    const resolved = await next(specifier, context)
+    return { ...resolved, importAttributes: { ...(resolved.importAttributes ?? {}), type: 'json' } }
+  }
   return next(specifier, context)
 }
 

@@ -3,7 +3,7 @@
  * Provides access to normalized state benefit data
  */
 
-import { StateData } from './types';
+import type { StateData } from './types';
 
 // Import all state data
 import ak from './data/ak.json';

@@ -7,7 +7,7 @@
  * Pregnant women: Generally up to 185-200% FPL
  */
 
-import { ScreenerInput, ProgramResult } from '../types';
+import type { ScreenerInput, ProgramResult } from '../types';
 import { getFPL, getFPLPercentage } from '../fpl';
 import { getStateData, getStateName } from '../../states';
 
@@ -26,9 +26,23 @@ export function checkMedicaid(input: ScreenerInput): ProgramResult {
   const childLimitFpl = stateData?.medicaid?.childLimitFpl ?? 200;
   const pregnantLimitFpl = stateData?.medicaid?.pregnantLimitFpl ?? 185;
 
+  /* PREGNANCY FAMILY SIZE. 42 CFR 435.603(b): "In the case of determining the family size of a
+     pregnant woman, the pregnant woman is counted as herself plus the number of children she is
+     expected to deliver." The screener asks how many people LIVE in the household, so the baby is
+     not in the number she enters, and this test was being run one person short in all 51
+     jurisdictions. A single pregnant Texan earning $36,000 was measured against the one-person
+     limit of $31,596 and told no. The two-person limit is $42,852 and she qualifies. OHCA, Indiana
+     and Connecticut all print this rule on their own charts.
+
+     It applies to the PREGNANCY test ONLY. 435.603(b) sizes HER family for HER eligibility group,
+     so the adult and child tests below keep using the household as entered. Getting that wrong in
+     the other direction would hand a child a limit they have no claim to. */
+  const expectedChildren = Math.max(1, Math.round(input.expectedChildren ?? 1));
+  const pregnancyHouseholdSize = householdSize + expectedChildren;
+
   const fplAdultLimit = getFPL(householdSize, adultLimitFpl, state);
   const fplChildLimit = getFPL(householdSize, childLimitFpl, state);
-  const fplPregnantLimit = getFPL(householdSize, pregnantLimitFpl, state);
+  const fplPregnantLimit = getFPL(pregnancyHouseholdSize, pregnantLimitFpl, state);
   const fplPercent = getFPLPercentage(annualIncome, householdSize, state);
 
   const result: ProgramResult = {
@@ -83,7 +97,7 @@ export function checkMedicaid(input: ScreenerInput): ProgramResult {
     result.eligible = true;
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = 10000;
-    result.reason = `Pregnant women in ${stateName} qualify for ${programName} up to ${pregnantLimitFpl}% FPL`;
+    result.reason = `Pregnant women in ${stateName} qualify for ${programName} up to ${pregnantLimitFpl}% FPL. For this test your household counts as ${pregnancyHouseholdSize} people, because federal rules count the baby you are expecting before birth.`;
     return result;
   }
 

@@ -10,6 +10,12 @@ export interface ScreenerInput {
   annualIncome: number;
   employmentStatus?: 'employed' | 'self-employed' | 'unemployed' | 'retired';
   isPregnant: boolean;
+  /** How many children she is expected to deliver. Only read when `isPregnant`, and only by
+   *  the Medicaid pregnancy test, which must count them in her family size per 42 CFR
+   *  435.603(b). The screener has no twins question, so this is normally undefined and the
+   *  engine assumes one. Present so a caller that DOES know is not forced to understate a
+   *  twin pregnancy. */
+  expectedChildren?: number;
   hasDisability: boolean;
   currentlyInsured: boolean;
   insuranceSource?: 'employer' | 'aca' | 'medicaid' | 'medicare' | 'none';
