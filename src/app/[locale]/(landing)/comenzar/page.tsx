@@ -7,6 +7,7 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
 import { InlineScreener } from './inline-screener';
+import { CtaButton } from './cta-button';
 
 export async function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -230,9 +231,12 @@ export default async function ComenzarPage({
             {c.sub}
           </p>
 
-          {/* Inline eligibility checker */}
+          {/* Inline eligibility checker. The Medicare variant sends people to the Medicare screener
+              instead (it asks age and Medicare status, as this page's steps promise): the inline
+              form has no age question and screened every senior here as a 35-year-old, quoting
+              ACA subsidies (audit A20, W9_critic_W8 "Anything W8 missed" #1). */}
           <Suspense fallback={<div style={{ height: '200px' }} />}>
-            <InlineScreener locale={locale} />
+            {isMedicareFocus ? <CtaButton locale={locale} label={c.cta} /> : <InlineScreener locale={locale} />}
           </Suspense>
 
           {/* Trust row */}

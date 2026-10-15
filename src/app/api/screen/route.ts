@@ -6,6 +6,7 @@ import { Resend } from 'resend';
 import { buildWelcomeHtml, buildWelcomeSubject } from '@/emails/WelcomeEmail';
 import { buildUnsubscribeUrl } from '@/app/api/unsubscribe/route';
 import type { ProgramResult } from '@/lib/eligibility';
+import { isMedicareEnrolledStatus, medicareFlowInsuranceSource, medicareFlowResults } from '@/lib/eligibility/medicare-flow';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -68,13 +69,14 @@ export async function POST(req: NextRequest) {
     const state = getStateFromZip(String(zipCode)) || 'TX';
 
     const parsedAge = parseInt(String(age), 10);
-    // Medicare flow doesn't collect household/income/flags — provide defaults
+    // Medicare flow doesn't collect household/income/flags. These placeholders keep the stored
+    // row's shape; no answer that depends on them is shown (medicareFlowResults, below).
     const parsedHouseholdSize = isMedicareFocus ? 1 : parseInt(String(householdSize), 10);
     const parsedNumChildren = isMedicareFocus ? 0 : parseInt(String(numChildren || 0), 10);
     const parsedIncome = isMedicareFocus ? 0 : Number(String(annualIncome || '0').replace(/,/g, ''));
 
     // For Medicare flow: derive currentlyInsured + insuranceSource from medicareStatus
-    const medicareEnrolled = ['partAB', 'advantage', 'supplement'].includes(String(medicareStatus));
+    const medicareEnrolled = isMedicareEnrolledStatus(medicareStatus);
     const effectiveCurrentlyInsured = isMedicareFocus ? medicareEnrolled : Boolean(currentlyInsured);
     // Encode focus + Medicare details into insurance_source so /api/lead can detect downstream
     // (avoids needing a new schema column). Format: "medicare:<status>:<needs>"
@@ -91,13 +93,17 @@ export async function POST(req: NextRequest) {
       isPregnant: isMedicareFocus ? false : Boolean(isPregnant),
       hasDisability: isMedicareFocus ? false : Boolean(hasDisability),
       currentlyInsured: effectiveCurrentlyInsured,
-      insuranceSource: isMedicareFocus ? 'medicare' : (insuranceSource || undefined),
+      // 'medicare' only for someone who said they have it (was forced for "not enrolled" too).
+      insuranceSource: isMedicareFocus ? medicareFlowInsuranceSource(medicareStatus) : (insuranceSource || undefined),
       isVeteran: isMedicareFocus ? false : Boolean(isVeteran),
       numChildren: parsedNumChildren,
       language: language || 'en',
     };
 
-    const results = checkEligibility(input);
+    /* The Medicare flow never asks income, so nothing income-tested may be shown, stored or
+       emailed from it: at the $0 placeholder every senior was "likely" for Medicaid and QMB.
+       Only what its own answers decide survives (audit A20, medicare-flow.ts). */
+    const results = isMedicareFocus ? medicareFlowResults(checkEligibility(input)) : checkEligibility(input);
 
     // For Medicare flow, force 'medicare' into eligible_programs even if age 60-64
     // (so downstream /api/lead recognizes this as a Medicare lead and Aaron's team

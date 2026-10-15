@@ -9,11 +9,31 @@
  *    `maybe`; this holds CoveredUSA to the same answer. The one exception is a senior who
  *    told us they already HAVE Medicaid.
  *
- * Runs the real engine. CONTROLS are people whose answer must not move.
+ * 2. THE MEDICARE-FOCUS SCREENER SHOWS ONLY WHAT IT ASKED. /screener?focus=medicare never asks
+ *    income, and /api/screen screened every senior at $0: Medicaid and QMB "likely" for a
+ *    70-year-old on $2,500 a month, and "Already enrolled in Medicare" for a 62-year-old who said
+ *    "No, not enrolled". Zero completed submissions so far (W9_critic_W8): a landmine, fixed
+ *    before anything links to it.
+ *
+ * 3. QUICK-CHECK NEVER INVENTS CHILDREN. /comenzar's inline form used numChildren =
+ *    householdSize - 1, so a childless Texas couple was shown Medicaid and CHIP for a child who
+ *    does not exist. It now asks. Its Medicare variant no longer runs a 35-year-old's screen.
+ *
+ * Runs the real engine. CONTROLS are people whose answer must not move. Section 4 reads the
+ * route source, because the routes import Supabase and Resend and cannot run here; it proves the
+ * helpers tested above are the ones actually wired in.
  */
+import { readFileSync } from 'node:fs';
 import { checkEligibility } from '../src/lib/eligibility/index.ts';
 import { getFPL } from '../src/lib/eligibility/fpl.ts';
 import { ALL_STATES } from '../src/lib/states/index.ts';
+import {
+  isMedicareEnrolledStatus,
+  medicareFlowInsuranceSource,
+  medicareFlowResults,
+  medicareStatusFromStored,
+} from '../src/lib/eligibility/medicare-flow.ts';
+import { quickCheckInput } from '../src/lib/eligibility/quick-check.ts';
 
 const base = {
   employmentStatus: 'employed', isPregnant: false, hasDisability: false, isVeteran: false,
@@ -30,7 +50,7 @@ const check = (label, cond, detail) => {
 };
 const run = (o) => checkEligibility({ ...base, ...o });
 const prog = (r, id) => r.programs.find((p) => p.id === id);
-const EM_DASH = '—';
+const EM_DASH = '\u2014';
 
 console.log('Seniors on the screener (audit A20)\n');
 
@@ -114,6 +134,88 @@ console.log('Seniors on the screener (audit A20)\n');
   }
   check(`every state, ages 65-90, 0-100% FPL: aged Medicaid never "likely" on income alone (${ALL_STATES.length} states)`, likely === 0,
     `${likely} likely answers, first: ${firstBad}`);
+}
+
+// ── 4. The Medicare-focus screener ───────────────────────────────────────────
+/** The engine input /api/screen builds for focus=medicare (placeholders for what it never asks). */
+const medicareFlow = (state, age, status) => medicareFlowResults(checkEligibility({
+  ...base, state, age, householdSize: 1, numChildren: 0, annualIncome: 0,
+  currentlyInsured: isMedicareEnrolledStatus(status),
+  insuranceSource: medicareFlowInsuranceSource(status),
+}));
+const ids = (r) => r.programs.map((p) => p.id).join(',');
+{
+  const r = medicareFlow('OH', 70, 'partAB');
+  check('Medicare flow, OH 70 on Original Medicare: Medicare only, no Medicaid or QMB at "0% FPL"', ids(r) === 'medicare', ids(r));
+  check('Medicare flow, OH 70: Medicare likely, total $0', prog(r, 'medicare').eligibilityStatus === 'likely_eligible' && r.totalPotentialValue === 0,
+    JSON.stringify(r));
+  check('Medicare flow: no reason anywhere quotes 0% FPL', !r.programs.some((p) => /\b0% FPL/.test(p.reason)), JSON.stringify(r.programs.map((p) => p.reason)));
+}
+{
+  const r = medicareFlow('OH', 62, 'none');
+  check('Medicare flow, OH 62 "No, not enrolled": not treated as a Medicare enrollee', medicareFlowInsuranceSource('none') === undefined, 'insuranceSource was forced to medicare');
+  check('Medicare flow, OH 62: Medicare card only (no QMB, no Medicaid, no ACA "Already enrolled")', ids(r) === 'medicare' && !/Already enrolled/.test(JSON.stringify(r)), JSON.stringify(r));
+  check('Medicare flow, OH 62: told Medicare starts at 65, nothing claimed', prog(r, 'medicare').eligible === false && r.totalPotentialValue === 0, JSON.stringify(prog(r, 'medicare')));
+}
+{
+  const r = medicareFlow('TX', 68, 'advantage');
+  check('Medicare flow, TX 68 on Medicare Advantage: Medicare only', ids(r) === 'medicare', ids(r));
+  check('Medicare flow, "Not sure" is not an enrollee', medicareFlowInsuranceSource('unsure') === undefined && !isMedicareEnrolledStatus('unsure'), '');
+  check('stored "medicare:partAB:compareAdvantage" reads as enrolled', medicareFlowInsuranceSource(medicareStatusFromStored('medicare:partAB:compareAdvantage')) === 'medicare', '');
+  check('stored "medicare:none:newToMedicare" reads as NOT enrolled', medicareFlowInsuranceSource(medicareStatusFromStored('medicare:none:newToMedicare')) === undefined, '');
+}
+{
+  const synthetic = { programs: [
+    { id: 'medicare', eligible: true, eligibilityStatus: 'likely_eligible', estimatedValue: 0, reason: '', nextSteps: '' },
+    { id: 'some-new-program', eligible: true, eligibilityStatus: 'likely_eligible', estimatedValue: 900, reason: '', nextSteps: '' },
+  ], totalPotentialValue: 900 };
+  const r = medicareFlowResults(synthetic);
+  check('Medicare flow is an allowlist: a program added later stays out until its inputs are asked', ids(r) === 'medicare' && r.totalPotentialValue === 0, ids(r));
+}
+{
+  const r = run({ state: 'OH', age: 70, annualIncome: 12000 });
+  check('CONTROL general screener (not the Medicare flow) still shows Medicaid and QMB for OH 70 at $12,000',
+    prog(r, 'medicaid').eligible === 'maybe' && prog(r, 'medicare-savings').eligible === true, ids(r));
+}
+
+// ── 5. quick-check (/comenzar inline form) ───────────────────────────────────
+{
+  const couple = quickCheckInput('TX', { householdSize: 2, annualIncome: '25,000' });
+  const r = checkEligibility(couple);
+  check('quick-check, TX couple, $25,000, no children answer: 0 children assumed', couple.numChildren === 0, JSON.stringify(couple));
+  check('quick-check, TX couple: no Medicaid or CHIP for a child who does not exist',
+    prog(r, 'chip').eligible === false && prog(r, 'medicaid').eligible === false, `medicaid ${prog(r, 'medicaid').eligible}, chip ${prog(r, 'chip').eligible}`);
+  check('quick-check, TX couple: ACA subsidy is the answer', r.programs[0].id === 'aca' && r.programs[0].eligible === true, r.programs[0].id);
+}
+{
+  const family = quickCheckInput('TX', { householdSize: 2, annualIncome: 25000, numChildren: '1' });
+  const r = checkEligibility(family);
+  check('CONTROL quick-check, TX parent + 1 child, $25,000: the child\'s CHIP is still found', prog(r, 'chip').eligible === true, JSON.stringify(prog(r, 'chip')));
+}
+{
+  const a = quickCheckInput('TX', { householdSize: 1, annualIncome: 20000, numChildren: 3 });
+  const b = quickCheckInput('TX', { householdSize: 3, annualIncome: 20000, numChildren: 9 });
+  const c = quickCheckInput('TX', { householdSize: 99, annualIncome: '$40,000' });
+  check('quick-check clamps children to household - 1', a.numChildren === 0 && b.numChildren === 2, `${a.numChildren}, ${b.numChildren}`);
+  check('quick-check keeps its household cap (10) and income parsing', c.householdSize === 10 && c.annualIncome === 40000, JSON.stringify(c));
+  check('quick-check stays the working-age screen (age 35)', a.age === 35, String(a.age));
+}
+
+// ── 6. The helpers above are the ones the routes use ────────────────────────
+{
+  const src = (p) => readFileSync(new URL(`../src/${p}`, import.meta.url), 'utf8');
+  const screen = src('app/api/screen/route.ts');
+  check('wiring: /api/screen filters the Medicare flow', /isMedicareFocus \? medicareFlowResults\(checkEligibility\(input\)\)/.test(screen), 'medicareFlowResults not applied in src/app/api/screen/route.ts');
+  check('wiring: /api/screen no longer forces insuranceSource medicare', /insuranceSource: isMedicareFocus \? medicareFlowInsuranceSource\(medicareStatus\)/.test(screen), 'insuranceSource line changed');
+  const results = src('app/[locale]/results/[id]/page.tsx');
+  check('wiring: the results page filters a stored Medicare-flow row', /isMedicareFlow \? medicareFlowResults\(allResults\)/.test(results), 'medicareFlowResults not applied in results/[id]/page.tsx');
+  check('wiring: the results page reads the stored Medicare status', /medicareFlowInsuranceSource\(medicareStatusFromStored\(rawInsuranceSource\)\)/.test(results), '');
+  const quick = src('app/api/quick-check/route.ts');
+  check('wiring: /api/quick-check builds its input with quickCheckInput', /quickCheckInput\(state, \{ householdSize, annualIncome, numChildren \}\)/.test(quick) && !/parsedHousehold - 1/.test(quick), '');
+  const inline = src('app/[locale]/(landing)/comenzar/inline-screener.tsx');
+  check('wiring: the inline form sends its children answer to quick-check and to /api/screen', (inline.match(/numChildren: parseInt\(children, 10\)/g) || []).length === 2, '');
+  const comenzar = src('app/[locale]/(landing)/comenzar/page.tsx');
+  check('wiring: /comenzar?focus=medicare sends people to the Medicare screener, not the age-35 form', /isMedicareFocus \? <CtaButton/.test(comenzar), '');
 }
 
 console.log(`\n${checks - failures}/${checks} passed`);

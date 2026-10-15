@@ -35,6 +35,7 @@ const t = {
     zipLabel: 'ZIP code',
     zipPlaceholder: '12345',
     householdLabel: 'Household size',
+    childrenLabel: 'Children under 19',
     incomeLabel: 'Annual household income',
     incomePlaceholder: '$30,000',
     checkBtn: 'Check my eligibility',
@@ -77,6 +78,7 @@ const t = {
     zipLabel: 'Código postal',
     zipPlaceholder: '12345',
     householdLabel: 'Personas en el hogar',
+    childrenLabel: 'Hijos menores de 19',
     incomeLabel: 'Ingreso anual del hogar',
     incomePlaceholder: '$30,000',
     checkBtn: 'Verificar mi elegibilidad',
@@ -154,6 +156,8 @@ export function InlineScreener({ locale }: { locale: string }) {
   // Form data
   const [zip, setZip] = useState('');
   const [household, setHousehold] = useState('1');
+  // Asked, never assumed: quick-check used to count everyone but one person as a child (audit A20).
+  const [children, setChildren] = useState('0');
   const [income, setIncome] = useState('');
 
   // Result
@@ -196,6 +200,7 @@ export function InlineScreener({ locale }: { locale: string }) {
         body: JSON.stringify({
           zipCode: cleanZip,
           householdSize: parseInt(household, 10),
+          numChildren: parseInt(children, 10),
           annualIncome: parseIncomeValue(income),
           utm_source: utms.utm_source || null,
           utm_campaign: utms.utm_campaign || null,
@@ -241,8 +246,8 @@ export function InlineScreener({ locale }: { locale: string }) {
           zipCode: zip.replace(/\s/g, ''),
           age: 35,
           householdSize: parseInt(household, 10),
-          // Quick-check doesn't collect ages/children, so don't invent them
-          numChildren: 0,
+          // The person's own answer (0 for a household of 1). Ages are not asked.
+          numChildren: parseInt(children, 10),
           annualIncome: parseIncomeValue(income),
           isPregnant: false,
           hasDisability: false,
@@ -335,7 +340,11 @@ export function InlineScreener({ locale }: { locale: string }) {
             <label style={labelStyle}>{c.householdLabel}</label>
             <select
               value={household}
-              onChange={(e) => setHousehold(e.target.value)}
+              onChange={(e) => {
+                setHousehold(e.target.value);
+                // A household of N has at most N - 1 children.
+                if (parseInt(children, 10) > parseInt(e.target.value, 10) - 1) setChildren(String(parseInt(e.target.value, 10) - 1));
+              }}
               style={{ ...inputStyle, appearance: 'none', backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'%3E%3Cpath fill=\'%2378716c\' d=\'M6 8L1 3h10z\'/%3E%3C/svg%3E")', backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center' }}
               aria-label={c.householdLabel}
             >
@@ -344,6 +353,23 @@ export function InlineScreener({ locale }: { locale: string }) {
               ))}
             </select>
           </div>
+
+          {/* Children under 19: only a household of 2 or more can have any */}
+          {parseInt(household, 10) > 1 && (
+            <div>
+              <label style={labelStyle}>{c.childrenLabel}</label>
+              <select
+                value={children}
+                onChange={(e) => setChildren(e.target.value)}
+                style={{ ...inputStyle, appearance: 'none', backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' viewBox=\'0 0 12 12\'%3E%3Cpath fill=\'%2378716c\' d=\'M6 8L1 3h10z\'/%3E%3C/svg%3E")', backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center' }}
+                aria-label={c.childrenLabel}
+              >
+                {Array.from({ length: parseInt(household, 10) }, (_, n) => (
+                  <option key={n} value={n}>{n}</option>
+                ))}
+              </select>
+            </div>
+          )}
 
           {/* Income */}
           <div>

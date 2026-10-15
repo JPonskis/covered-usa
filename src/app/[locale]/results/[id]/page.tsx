@@ -3,6 +3,7 @@ import { supabaseAdmin } from '@/lib/supabase-admin';
 import type { ProgramResult } from '@/lib/eligibility';
 import ResultsClient from '@/components/ResultsClient';
 import { isBrokerAcaState } from '@/lib/ffm-states';
+import { medicareFlowInsuranceSource, medicareFlowResults, medicareStatusFromStored } from '@/lib/eligibility/medicare-flow';
 
 export const metadata: Metadata = {
   title: 'Your Health Insurance Results | CoveredUSA',
@@ -79,9 +80,10 @@ export default async function ResultsPage({ params }: Props) {
   // ScreenerInput enum (insuranceSource === 'medicare'), and downstream eligibility
   // checks for ACA/Medicaid silently misfire — Medicare-flow users could land on
   // a Medicaid-as-primary results page they never asked for.
+  // Medicare flow: 'medicare' only when they said they have it ("medicare:none:..." is not).
   const normalizedInsuranceSource: 'employer' | 'aca' | 'medicaid' | 'medicare' | 'none' | undefined =
     isMedicareFlow
-      ? 'medicare'
+      ? medicareFlowInsuranceSource(medicareStatusFromStored(rawInsuranceSource))
       : ((['employer', 'aca', 'medicaid', 'medicare', 'none'] as const).includes(rawInsuranceSource as 'employer' | 'aca' | 'medicaid' | 'medicare' | 'none')
           ? (rawInsuranceSource as 'employer' | 'aca' | 'medicaid' | 'medicare' | 'none')
           : undefined);
@@ -89,7 +91,7 @@ export default async function ResultsPage({ params }: Props) {
   // Results are stored in eligible_programs, but we need full ProgramResult objects.
   // Re-run eligibility check from stored submission data.
   const { checkEligibility } = await import('@/lib/eligibility');
-  const eligibilityResults = checkEligibility({
+  const allResults = checkEligibility({
     state: submission.state,
     age: submission.age,
     householdSize: submission.household_size,
@@ -104,6 +106,9 @@ export default async function ResultsPage({ params }: Props) {
     numChildren: submission.num_children,
     language: submission.language,
   });
+  /* A Medicare-flow row stores income 0 because the flow never asks it. Show only what that
+     flow's answers decide (audit A20, medicare-flow.ts), never Medicaid or QMB at "0% FPL". */
+  const eligibilityResults = isMedicareFlow ? medicareFlowResults(allResults) : allResults;
 
   const results: ProgramResult[] = eligibilityResults.programs;
 
