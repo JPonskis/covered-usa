@@ -9,7 +9,7 @@ target: "screener"
 
 If you are an immigrant living in the United States, your health insurance options in 2026 depend heavily on your immigration status. Lawful permanent residents, refugees, asylees, visa holders, DACA recipients, and undocumented immigrants each face different rules. This guide breaks down exactly who qualifies for what, so you can find the coverage that fits your situation.
 
-> **Quick Answer:** Lawfully present immigrants with income above 100% of the federal poverty level (FPL) can enroll in ACA Marketplace plans and may qualify for subsidies in 2026. Lawful permanent residents who have held their green card for at least five years may also qualify for Medicaid. Undocumented immigrants are limited to Emergency Medicaid and a handful of state-funded programs.
+> **Quick Answer:** Lawfully present immigrants with income above 100% of the federal poverty level (FPL) can enroll in ACA Marketplace plans and may qualify for subsidies in 2026. Starting with 2027 coverage, only green card holders, Cuban and Haitian entrants and COFA citizens get the tax credit; other lawfully present immigrants can still buy a Marketplace plan at full price. Lawful permanent residents who have held their green card for at least five years may also qualify for Medicaid. Undocumented immigrants are limited to Emergency Medicaid and a handful of state-funded programs.
 
 Major policy changes took effect in 2025 and 2026 that narrowed eligibility for several immigrant groups. Read this guide carefully to understand what changed and what your options are today.
 
@@ -29,13 +29,15 @@ Undocumented immigrants are not lawfully present under federal law and are exclu
 
 ## ACA Marketplace Coverage for Immigrants in 2026
 
-The Affordable Care Act (ACA) Marketplace, also called the Exchange or Obamacare, is the main source of subsidized private coverage for lawfully present immigrants who do not qualify for Medicaid or Medicare.
+In 2026, the Affordable Care Act (ACA) Marketplace, also called the Exchange or Obamacare, is the main source of subsidized private coverage for lawfully present immigrants who do not qualify for Medicaid or Medicare.
 
 ### Who Can Buy ACA Plans
 
 Any lawfully present immigrant can purchase an unsubsidized plan through the ACA Marketplace. The question is whether you qualify for the premium tax credits (PTCs) that make coverage affordable.
 
 **As of January 1, 2026**, lawfully present immigrants must have income at or above 100% of the FPL to receive premium tax credits. Previously, immigrants in the five-year Medicaid waiting period could receive credits even with income below 100% FPL. That rule is gone.
+
+**Starting with 2027 coverage**, the premium tax credit is limited to citizens, green card holders, Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau living here under the Compact of Free Association. Refugees, asylees, TPS holders and visa holders no longer qualify for it, though they can still buy a Marketplace plan at full price.
 
 ### ACA Income Limits for 2026
 
@@ -59,9 +61,9 @@ These figures are based on the [2025 HHS Federal Poverty Guidelines](https://asp
 
 DACA recipients lost access to ACA Marketplace enrollment as of August 25, 2025. If you have DACA status, you cannot purchase a plan through HealthCare.gov or a state Marketplace. You may still qualify for state-funded programs (see below) or employer-sponsored coverage.
 
-### Coming Changes in 2027
+### Tax Credits for 2027 Coverage
 
-Starting with the 2027 plan year (open enrollment in fall 2026), eligibility for premium tax credits will narrow further. Refugees, asylees, TPS holders, and several other immigration statuses will lose access to PTCs. Only US citizens, lawful permanent residents, Cuban and Haitian entrants, and COFA migrants will remain eligible. If your status falls outside those groups, the open enrollment period in fall 2026 may be your last opportunity to secure subsidized coverage before 2027 changes take effect.
+Open enrollment that starts November 1, 2026 is for 2027 coverage, so the 2027 tax credit rule above applies to every plan picked during it. For 2027 coverage, only US citizens, lawful permanent residents, Cuban and Haitian entrants, and COFA migrants can get premium tax credits. Parolees, T-visa and U-visa holders, and VAWA self-petitioners without a green card are also outside those groups. If your status is not on the list, you can still enroll in a Marketplace plan for 2027 at full price, or look at employer coverage and the state programs below. If you later get a green card, you can qualify for the credit as a green card holder.
 
 ## Medicaid Eligibility for Immigrants
 
@@ -173,7 +175,7 @@ Check your eligibility now at CoveredUSA. It takes 2 minutes. Visit [coveredusa.
 | Immigrants below 100% FPL lose ACA subsidies | January 1, 2026 | Lawfully present immigrants with income under 100% FPL |
 | DACA removed from Marketplace | August 25, 2025 | DACA recipients nationwide |
 | Reduced federal Medicaid match for emergency services | October 1, 2026 | Undocumented immigrants relying on Emergency Medicaid |
-| Refugees and asylees lose ACA subsidies | Plan year 2027 (fall 2026 enrollment) | Refugees, asylees, TPS holders |
+| Premium tax credit limited to citizens, green card holders, Cuban and Haitian entrants and COFA citizens | January 1, 2027 (2027 coverage; open enrollment starts November 1, 2026) | Refugees, asylees, TPS holders, parolees and visa holders, who can still buy a Marketplace plan at full price |
 | California freezes new undocumented enrollments | January 2026 | Undocumented adults 19+ in California |
 
 ## Frequently Asked Questions
@@ -200,11 +202,11 @@ If you miss the annual open enrollment period (November 1 through January 15), y
 
 ### Can I use the ACA Marketplace if I have a work visa?
 
-Yes. Most work visa holders, including H-1B, L-1, O-1, and others, are considered lawfully present and can purchase ACA Marketplace plans. If your employer offers health coverage, you should enroll there first, since declining employer coverage may disqualify you from ACA subsidies. Compare both options during your employer's open enrollment period.
+Yes. Most work visa holders, including H-1B, L-1, O-1, and others, are considered lawfully present and can purchase ACA Marketplace plans. In 2026 they can get the premium tax credit if their income qualifies. Starting with 2027 coverage, visa holders can still buy a Marketplace plan, but at full price with no tax credit. If your employer offers health coverage, you should enroll there first, since declining employer coverage may disqualify you from ACA subsidies. Compare both options during your employer's open enrollment period.
 
 ### Will my immigration status affect my premium tax credit amount?
 
-Not directly. The credit amount depends on your income relative to FPL and the cost of plans in your area. What matters for immigrants is first meeting the status threshold: being lawfully present and having income above 100% FPL in 2026. Once you meet those conditions, the credit calculation works the same as it does for citizens.
+Not directly. The credit amount depends on your income relative to FPL and the cost of plans in your area. What matters for immigrants is first meeting the status threshold: being lawfully present and having income above 100% FPL in 2026. Starting with 2027 coverage, the status threshold is narrower: among immigrants, only green card holders, Cuban and Haitian entrants and COFA citizens get the credit. Once you meet those conditions, the credit calculation works the same as it does for citizens.
 
 ### Where can I get help applying for immigrant health coverage?
 

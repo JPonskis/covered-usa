@@ -65,7 +65,7 @@ If you live in a non-expansion state and earn below 100% FPL, your subsidized co
 
 **3. Look at community health centers.** Federally Qualified Health Centers (FQHCs) provide primary and preventive care on a sliding-fee scale based on income. They are not insurance, but they cover the most common reasons people need healthcare. Find one at [findahealthcenter.hrsa.gov](https://findahealthcenter.hrsa.gov).
 
-**4. Review your immigration status and ACA eligibility.** Lawfully present non-citizens who are ineligible for Medicaid due to immigration status CAN access ACA subsidies even below 100% FPL, as a specific ACA exception. This is an important carve-out that affects a substantial portion of the coverage gap population.
+**4. Review your immigration status and ACA eligibility.** Lawfully present non-citizens who are ineligible for Medicaid due to immigration status used to be able to get ACA subsidies below 100% FPL under a special exception. That is no longer true: since 2026 there is no tax credit below 100% FPL for anyone, because a 2025 federal law repealed the old exception for lawfully present immigrants.
 
 **5. Consider the unsubsidized Marketplace.** You can enroll in an ACA Marketplace plan without a subsidy. Plans still cover essential health benefits and cannot exclude you for pre-existing conditions. For low-income individuals, a catastrophic plan may have premiums under $150 per month if you qualify by age (under 30) or hardship exemption.
 
@@ -162,7 +162,7 @@ Divide your total household gross income by the FPL for your household size from
 
 ### Is there any coverage option if I am truly in the coverage gap?
 
-Yes, though options are limited. Federally Qualified Health Centers provide sliding-scale primary care. Your children may qualify for CHIP. If you are pregnant, your state Medicaid threshold is much higher. If you have a disability, a separate Medicaid pathway may apply. Lawfully present immigrants below 100% FPL can access ACA subsidies under a specific exception. The best first step is to check your eligibility with a screener rather than assuming you have no options.
+Yes, though options are limited. Federally Qualified Health Centers provide sliding-scale primary care. Your children may qualify for CHIP. If you are pregnant, your state Medicaid threshold is much higher. If you have a disability, a separate Medicaid pathway may apply. Since 2026, lawfully present immigrants below 100% FPL can no longer get ACA subsidies, because a 2025 federal law repealed the old exception. The best first step is to check your eligibility with a screener rather than assuming you have no options.
 
 ### Did Congress fix the coverage gap in 2026?
 

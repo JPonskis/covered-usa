@@ -31,7 +31,7 @@ To qualify for the 2026 premium tax credit, according to the [IRS eligibility ru
 3. Not be eligible for "affordable" employer-sponsored coverage (defined as coverage that costs no more than 9.96% of your household income for self-only coverage in 2026).
 4. Not be claimed as a dependent on someone else's tax return.
 5. File a federal tax return (married couples must file jointly to claim the credit).
-6. Be a U.S. citizen or lawfully present immigrant.
+6. Be a U.S. citizen or lawfully present immigrant. (Starting with 2027 coverage, only green card holders, Cuban and Haitian entrants and COFA citizens among immigrants get the credit.)
 
 **The 400% cap is back for 2026.** The American Rescue Plan and Inflation Reduction Act enhanced subsidies that removed the income ceiling expired on December 31, 2025. For 2026, if your income exceeds 400% FPL even by $1, your credit drops to $0. This makes income planning especially important this year.
 
@@ -166,7 +166,7 @@ No. If you are enrolled in Medicare Part A or Part B, you are not eligible for t
 
 ### Can undocumented immigrants get the premium tax credit?
 
-No. The premium tax credit is only available to U.S. citizens and lawfully present immigrants. Undocumented individuals are not eligible for Marketplace coverage or the premium tax credit.
+No. In 2026, the premium tax credit is only available to U.S. citizens and lawfully present immigrants. Starting with 2027 coverage, the premium tax credit is limited to citizens, green card holders, Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau living here under the Compact of Free Association. Refugees, asylees, TPS holders and visa holders no longer qualify for it, though they can still buy a Marketplace plan at full price. Undocumented individuals are not eligible for Marketplace coverage or the premium tax credit.
 
 ### What is the difference between the premium tax credit and cost-sharing reductions?
 

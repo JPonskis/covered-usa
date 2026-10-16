@@ -177,7 +177,7 @@ A cost-sharing reduction (CSR) is a benefit that lowers your deductible, copays,
 
 ### Is the ACA marketplace in Texas open to immigrants?
 
-Lawfully present immigrants are eligible for marketplace plans and subsidies on the same terms as citizens. This includes green card holders, certain visa holders, refugees, and others with lawful status. Undocumented immigrants are not eligible for marketplace coverage or subsidies but may be able to access community health centers regardless of immigration status.
+In 2026, lawfully present immigrants are eligible for marketplace plans and subsidies on the same terms as citizens. This includes green card holders, certain visa holders, refugees, and others with lawful status. Since 2026 there is no tax credit below 100% FPL for anyone; the old exception that let lawfully present immigrants below 100% FPL get the credit was repealed by a 2025 federal law. Starting with 2027 coverage, the premium tax credit is limited to citizens, green card holders, Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau living here under the Compact of Free Association. Refugees, asylees, TPS holders and visa holders no longer qualify for it, though they can still buy a Marketplace plan at full price. DACA recipients are not eligible for Marketplace coverage. Undocumented immigrants are not eligible for marketplace coverage or subsidies but may be able to access community health centers regardless of immigration status.
 
 ### How do marketplace plans in Texas cover prescription drugs?
 

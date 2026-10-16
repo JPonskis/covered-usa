@@ -213,7 +213,7 @@ A premium tax credit lowers your monthly insurance bill and is available to hous
 
 ### Can non-citizens apply on Healthcare.gov?
 
-Lawfully present immigrants, including green card holders, refugees, asylees, and certain visa holders, can apply and may qualify for subsidies. Undocumented immigrants are not eligible for marketplace plans or federal subsidies, though some states offer state-funded coverage options.
+Lawfully present immigrants, including green card holders, refugees, asylees, and certain visa holders, can apply and may qualify for subsidies in 2026. Starting with 2027 coverage, the premium tax credit is limited to citizens, green card holders, Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau living here under the Compact of Free Association. Refugees, asylees, TPS holders and visa holders no longer qualify for it, though they can still buy a Marketplace plan at full price. DACA recipients cannot enroll in Marketplace plans. Undocumented immigrants are not eligible for marketplace plans or federal subsidies, though some states offer state-funded coverage options.
 
 ### How do I know if I qualify for Medicaid instead of an ACA plan?
 

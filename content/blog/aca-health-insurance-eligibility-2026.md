@@ -17,7 +17,7 @@ This guide explains exactly who qualifies, how much help is available, and how t
 To enroll in an ACA marketplace plan and receive premium tax credits, you must meet all of the following requirements:
 
 1. **Live in the United States** and intend to be present for the coverage year
-2. **Be a U.S. citizen, U.S. national, or lawfully present immigrant**
+2. **Be a U.S. citizen, U.S. national, or lawfully present immigrant** (starting with 2027 coverage, only green card holders, Cuban and Haitian entrants and COFA citizens among immigrants get the tax credit; other lawfully present immigrants can still enroll at full price)
 3. **Not be incarcerated** (other than pending disposition of charges)
 4. **Not be enrolled in Medicare** or otherwise eligible for it
 5. **Not be eligible for Medicaid or CHIP** based on your income and state
@@ -191,7 +191,7 @@ If your employer's cheapest self-only plan costs more than 9.02% of your househo
 
 ### Does the ACA cover immigrants?
 
-Lawfully present immigrants can enroll in marketplace plans and qualify for subsidies based on income. This includes green card holders, refugees, asylees, DACA recipients (depending on state), and others with certain visa types. Undocumented immigrants cannot use the marketplace. Some states have expanded Medicaid to undocumented adults and children using state funds.
+Lawfully present immigrants can enroll in marketplace plans. In 2026, green card holders, refugees, asylees, TPS holders and people with certain visa types can qualify for subsidies based on income. Starting with 2027 coverage, the premium tax credit is limited to citizens, green card holders, Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau living here under the Compact of Free Association. Refugees, asylees, TPS holders and visa holders no longer qualify for it, though they can still buy a Marketplace plan at full price. DACA recipients have not been eligible for Marketplace coverage in any state since August 25, 2025. Undocumented immigrants cannot use the marketplace. Some states have expanded Medicaid to undocumented adults and children using state funds.
 
 ### What is the difference between a premium tax credit and a cost-sharing reduction?
 

@@ -165,16 +165,16 @@ Here is a step-by-step process to pursue healthcare coverage if you are undocume
 
 Deferred Action for Childhood Arrivals (DACA) recipients have a distinct status. As of 2026:
 
-- DACA holders are not eligible for federally funded Medicaid or ACA marketplace coverage in most states.
+- DACA holders have never been eligible for full federally funded Medicaid, and since August 25, 2025 they are not eligible for ACA Marketplace coverage in any state.
 - Some states, including California, Colorado, and Washington, extend state-funded coverage to DACA recipients.
-- DACA recipients may purchase unsubsidized marketplace plans in states where they are considered "lawfully present."
+- DACA recipients cannot buy a plan through HealthCare.gov or a state Marketplace, even at full price. They can buy a plan directly from an insurer outside the Marketplace at full price, with no tax credit.
 - Employment-based coverage from an employer remains the most accessible option for many DACA holders.
 
-The rules for DACA recipients are currently in litigation and may change. Check [nilc.org](https://www.nilc.org) for updates.
+The federal rule that removed DACA recipients from the Marketplace took effect August 25, 2025 and applies in every state. Check [nilc.org](https://www.nilc.org) for updates.
 
 ## Checking Whether You or a Family Member Qualifies for Anything
 
-Your immigration status affects which programs you can use, but your household may include both eligible and ineligible members. A U.S. citizen child can qualify for Medicaid or CHIP even if the parents are undocumented. A lawfully present spouse may qualify for ACA subsidies even in a mixed-status household.
+Your immigration status affects which programs you can use, but your household may include both eligible and ineligible members. A U.S. citizen child can qualify for Medicaid or CHIP even if the parents are undocumented. In 2026, a lawfully present spouse may qualify for ACA subsidies even in a mixed-status household. Starting with 2027 coverage, that is limited to a spouse who is a citizen, green card holder, Cuban or Haitian entrant, or COFA citizen; a spouse with refugee, asylee, TPS or visa status can still buy a Marketplace plan at full price.
 
 Use the CoveredUSA screener at [/screener](/screener) to see which programs your household may qualify for. The screener asks about citizenship status separately for each person and identifies programs that apply even in mixed-status families. It takes about 2 minutes and is completely free and confidential.
 

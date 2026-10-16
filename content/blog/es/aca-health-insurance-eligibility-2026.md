@@ -15,7 +15,7 @@ Para calificar para los créditos fiscales de primas de ACA, generalmente necesi
 1. **Ingresos entre el 100% y el 400% del FPL** — Vea la tabla a continuación
 2. **No ser elegible para Medicare o Medicaid**
 3. **No tener cobertura asequible del empleador** (definida como más del 9.02% de sus ingresos)
-4. **Ser ciudadano estadounidense o inmigrante legalmente presente**
+4. **Ser ciudadano estadounidense o inmigrante legalmente presente.** A partir de la cobertura de 2027, el crédito fiscal para primas se limita a ciudadanos, residentes permanentes (con green card), entrantes cubanos y haitianos, y ciudadanos de Micronesia, las Islas Marshall y Palaos que viven aquí bajo el Pacto de Libre Asociación. Los refugiados, asilados, titulares de TPS y titulares de visas ya no califican para el crédito, aunque todavía pueden comprar un plan del Mercado a precio completo. Los beneficiarios de DACA no son elegibles para el Mercado en ningún estado desde el 25 de agosto de 2025.
 5. **Inscribirse durante la Inscripción Abierta o un Período de Inscripción Especial**
 
 ## Límites de Ingresos para Subsidios ACA (2026)
