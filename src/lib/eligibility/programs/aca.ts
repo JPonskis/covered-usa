@@ -88,21 +88,41 @@ export function checkACA(input: ScreenerInput): ProgramResult {
     return result;
   }
 
+  /* A NON-EXPANSION STATE THAT STILL COVERS ADULTS, read from the data instead of a state name
+     (same rule as BenefitsUSA's aca.ts). Wisconsin's BadgerCare Plus covers adults to 100% FPL
+     (WI DHS income table effective Feb 1, 2026 to Jan 31, 2027), on the CURRENT guidelines like
+     any Medicaid test, and someone eligible for Medicaid cannot also get the credit, so route them
+     there. A limit that carries an activity condition (Georgia Pathways) is NOT a plain Medicaid
+     referral: someone who cannot meet the hours keeps the credit if their income allows one, so
+     that case is handled only inside the under-100% branch below, where there is no credit to
+     lose. */
+  const adultLimitFpl = stateData?.medicaid?.adultLimitFpl ?? 0;
+  const adultActivity = stateData?.medicaid?.adultActivityRequirement;
+  const fplAdultLimit = getFPL(householdSize, adultLimitFpl, state);
+  if (!isExpansionState && adultLimitFpl > 0 && !adultActivity && annualIncome <= fplAdultLimit) {
+    result.reason = `Income below ${adultLimitFpl}% FPL - ${medicaidName} covers adults up to ${adultLimitFpl}% FPL in ${stateName}`;
+    result.nextSteps = `Apply for ${medicaidName} at ${medicaidUrl}`;
+    /* Wisconsin's waiver adults are "applicable individuals" for the 2027 work requirement
+       (W9_critic_W8, W8-04/W8-09), and this is the line that sends them to BadgerCare. */
+    withCaveats(result, medicaidWorkCaveats(input, state, false));
+    return result;
+  }
+
   if (annualIncome < fpl100) {
     if (isExpansionState) {
       result.reason = 'Income below 100% FPL - apply for Medicaid';
       result.nextSteps = `Apply for ${medicaidName} at ${medicaidUrl}`;
       return result;
-    } else if (state === 'WI') {
-      /* Wisconsin is the one non-expansion state that covers adults to 100% FPL,
-         through BadgerCare Plus, so a person under 100% here is not in the gap.
-         WI DHS income table, "effective February 1, 2026-January 31, 2027":
-         adult limit (100% FPL) $1,330.00 for one person. */
-      result.reason = 'Income below 100% FPL - BadgerCare Plus covers adults up to 100% FPL in Wisconsin';
-      result.nextSteps = `Apply for ${medicaidName} at ${medicaidUrl}`;
-      /* Wisconsin's waiver adults are "applicable individuals" for the 2027 work requirement
-         (W9_critic_W8, W8-04/W8-09), and this is the line that sends them to BadgerCare. */
-      withCaveats(result, medicaidWorkCaveats(input, state, false));
+    } else if (adultActivity && adultLimitFpl > 0 && annualIncome <= fplAdultLimit) {
+      /* Georgia Pathways (pathways.georgia.gov/eligibility): adults 19 to 64, income up to 100%
+         FPL, at least 80 hours a month of qualifying activity. Still no credit below 100% (the
+         coverage-gap rule below holds), but this person is NOT out of options, so say what is
+         open and what it asks of them. */
+      result.eligible = false;
+      result.eligibilityStatus = 'not_eligible';
+      result.estimatedValue = 0;
+      result.reason = `Income below 100% FPL in ${stateName}, which has not expanded Medicaid, so there is no marketplace tax credit at this income. ${adultActivity.programName} covers adults 19 to 64 up to ${adultLimitFpl}% FPL who complete at least ${adultActivity.hoursPerMonth} hours a month of work, school, job training or volunteering.`;
+      result.nextSteps = `See the ${adultActivity.programName} rules at ${adultActivity.url} and apply at ${medicaidUrl}. If you cannot meet the hours, a community health center will see you on a sliding scale based on your income: find one at findahealthcenter.hrsa.gov.`;
       return result;
     } else {
       /* THE COVERAGE GAP. No premium tax credit exists below 100% FPL: 26 USC

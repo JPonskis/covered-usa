@@ -54,7 +54,9 @@ const STATES: { name: string; expanded: boolean; note: { en: string; es: string 
   // decrease from 215% to 138%" (parents and caretakers from 221%); Healthy DC Plan 138-200%.
   { name: 'District of Columbia', expanded: true, note: { en: 'Adults up to 138% FPL since Jan 1, 2026 (was 215%); adults 21 to 64 from 138% to 200% FPL may get the Healthy DC Plan', es: 'Adultos hasta el 138% FPL desde el 1 de enero de 2026 (antes 215%); los adultos de 21 a 64 años entre el 138% y el 200% FPL pueden obtener el Healthy DC Plan' } },
   { name: 'Florida', expanded: false, note: { en: 'Limited; primarily children, pregnant women, parents under 30% FPL', es: 'Limitado; principalmente niños, mujeres embarazadas, padres bajo 30% FPL' } },
-  { name: 'Georgia', expanded: false, note: { en: 'Partial expansion (Pathways); work requirements apply', es: 'Expansión parcial (Pathways); requisitos de trabajo' } },
+  // pathways.georgia.gov/eligibility: 19 to 64, "up to 100%", "at least 80 hours" a month. The
+  // engine's Georgia row (states/data/ga.json, adultActivityRequirement) says the same.
+  { name: 'Georgia', expanded: false, note: { en: 'Georgia Pathways covers adults 19 to 64 up to 100% FPL who complete at least 80 hours a month of work, school, job training or volunteering', es: 'Georgia Pathways cubre a adultos de 19 a 64 años con ingresos de hasta el 100% FPL que completen al menos 80 horas al mes de trabajo, estudios, capacitación laboral o voluntariado' } },
   { name: 'Hawaii', expanded: true, note: { en: 'Higher FPL limits apply ($18,360 base for 1 person)', es: 'Aplican límites de FPL más altos ($18,360 base para 1 persona)' } },
   { name: 'Idaho', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
   { name: 'Illinois', expanded: true, note: { en: 'Standard expansion; 138% FPL', es: 'Expansión estándar; 138% FPL' } },
@@ -104,7 +106,7 @@ const FAQS_EN = [
   },
   {
     question: 'Do all states have the same Medicaid income limits?',
-    answer: 'No. States that expanded Medicaid (41 states plus D.C. as of 2026) cover adults up to 138% FPL. Non-expansion states like Texas, Florida, Mississippi, Wyoming, Kansas, South Carolina, Tennessee, and Wisconsin have much stricter rules and often only cover children, pregnant women, and people with disabilities.',
+    answer: 'No. States that expanded Medicaid (40 states plus D.C. as of 2026) cover adults up to 138% FPL. Non-expansion states like Texas, Florida, Mississippi, Wyoming, Kansas, South Carolina, and Tennessee have much stricter rules and often only cover children, pregnant women, and people with disabilities. Wisconsin and Georgia have not expanded either, but they cover adults up to 100% FPL: Wisconsin through BadgerCare Plus, and Georgia through Georgia Pathways, which requires at least 80 hours a month of work, school, job training or volunteering.',
   },
   {
     question: 'Can I qualify for Medicaid if I have no income?',
@@ -131,7 +133,7 @@ const FAQS_ES = [
   },
   {
     question: '¿Todos los estados tienen los mismos límites de ingresos de Medicaid?',
-    answer: 'No. Los estados que expandieron Medicaid (41 estados más D.C. a partir de 2026) cubren a adultos hasta el 138% del FPL. Los estados sin expansión como Texas, Florida, Mississippi, Wyoming, Kansas, Carolina del Sur, Tennessee y Wisconsin tienen reglas mucho más estrictas.',
+    answer: 'No. Los estados que expandieron Medicaid (40 estados más D.C. a partir de 2026) cubren a adultos hasta el 138% del FPL. Los estados sin expansión como Texas, Florida, Mississippi, Wyoming, Kansas, Carolina del Sur y Tennessee tienen reglas mucho más estrictas. Wisconsin y Georgia tampoco han expandido Medicaid, pero cubren a adultos con ingresos de hasta el 100% del FPL: Wisconsin a través de BadgerCare Plus, y Georgia a través de Georgia Pathways, que exige al menos 80 horas al mes de trabajo, estudios, capacitación laboral o voluntariado.',
   },
   {
     question: '¿Puedo calificar para Medicaid si no tengo ingresos?',
@@ -264,8 +266,8 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
             <QuickAnswer
               locale={locale}
               text={isEs
-                ? 'A partir de 2026, el límite de ingresos de Medicaid en estados con expansión es el 138% del Nivel Federal de Pobreza: aproximadamente $22,024 al año para una persona sola y $45,540 para una familia de cuatro. Los 41 estados de expansión más D.C. cubren a adultos hasta este límite. Los estados sin expansión (incluidos Texas, Florida y Mississippi) tienen reglas mucho más estrictas. El límite institucional para el Medicaid de hogares de ancianos es $2,982 al mes.'
-                : 'As of 2026, the Medicaid income limit in expansion states is 138% of the Federal Poverty Level: approximately $22,024 per year for a single person and $45,540 for a family of four. The 41 expansion states plus D.C. cover adults up to this limit. Non-expansion states (including Texas, Florida, and Mississippi) have much stricter rules. The institutional limit for Nursing Home Medicaid is $2,982 per month.'}
+                ? 'A partir de 2026, el límite de ingresos de Medicaid en estados con expansión es el 138% del Nivel Federal de Pobreza: aproximadamente $22,024 al año para una persona sola y $45,540 para una familia de cuatro. Los 40 estados de expansión más D.C. cubren a adultos hasta este límite. Los estados sin expansión (incluidos Texas, Florida y Mississippi) tienen reglas mucho más estrictas. El límite institucional para el Medicaid de hogares de ancianos es $2,982 al mes.'
+                : 'As of 2026, the Medicaid income limit in expansion states is 138% of the Federal Poverty Level: approximately $22,024 per year for a single person and $45,540 for a family of four. The 40 expansion states plus D.C. cover adults up to this limit. Non-expansion states (including Texas, Florida, and Mississippi) have much stricter rules. The institutional limit for Nursing Home Medicaid is $2,982 per month.'}
             />
           </div>
         </div>
@@ -300,8 +302,8 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
           </h2>
           <p className="text-sm mb-6 text-[#64748b]">
             {isEs
-              ? '41 estados más D.C. han expandido Medicaid. En los 9 estados sin expansión, los límites son mucho más bajos.'
-              : '41 states plus D.C. have expanded Medicaid. In the 9 non-expansion states, limits are much stricter.'}
+              ? '40 estados más D.C. han expandido Medicaid. En los 10 estados sin expansión, los límites son mucho más bajos.'
+              : '40 states plus D.C. have expanded Medicaid. In the 10 non-expansion states, limits are much stricter.'}
           </p>
           <ReferenceTable
             caption={isEs ? 'Estado de expansión de Medicaid y notas — 50 estados + DC' : 'Medicaid expansion status and notes — 50 states + DC'}

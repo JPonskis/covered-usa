@@ -3,7 +3,8 @@
  *
  * Eligibility:
  * - Children under 19
- * - Household income 200-300% FPL (varies by state; most use 200-250%)
+ * - Household income up to the state's combined Medicaid/CHIP children's limit
+ *   (states/data childLimitFpl, 190% in Idaho to 405% in New York)
  * - Not already enrolled in Medicaid
  * - Most states: citizenship/immigration requirements apply
  *
@@ -29,9 +30,15 @@ function chipResult(input: ScreenerInput): ProgramResult {
   const stateData = getStateData(state);
   const stateName = getStateName(state);
 
-  // Use state Medicaid child limit as CHIP upper bound, or default 250% FPL
+  /* childLimitFpl is the TOP of children's coverage, Medicaid and CHIP combined, with the 5-point
+     MAGI disregard included (states/types.ts; audit A5A6A7, the same rows BenefitsUSA uses), so it
+     is the CHIP ceiling. The state rows hold no separate children's-Medicaid line, which is why
+     both reads below are the same field and the "CHIP zone above Medicaid" branch is reached only
+     for a state with no data (250 vs 200). The 2026-10 audit found 8 rows wrong at the state's own
+     source: 6 too low, several of them the Medicaid-only line (Alabama 141 for ALL Kids' 317,
+     Connecticut 196 for HUSKY B's 323, Massachusetts 150 for 305), and 2 too high (Delaware 266
+     for 217, Oklahoma 300 for 211). All now hold each state's own combined figure. */
   const chipUpperFpl = stateData?.medicaid?.childLimitFpl ?? 250;
-  // CHIP typically covers the gap above Medicaid (138% FPL) up to the state limit
   const medicaidChildFpl = stateData?.medicaid?.childLimitFpl ?? 200;
   // ACA referral URL
   const applicationUrl = stateData?.medicaid?.applicationUrl || 'https://www.healthcare.gov/medicaid-chip/childrens-health-insurance-program/';

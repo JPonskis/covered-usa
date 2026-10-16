@@ -23,9 +23,13 @@
     "applicationUrl": "https://mydss.mo.gov/",
     "phone": "1-855-373-4636",
     "adultLimitFpl": 138,
-    "childLimitFpl": 300,
-    "pregnantLimitFpl": 196,
-    "hasAssetLimit": false
+    "childLimitFpl": 305,
+    "pregnantLimitFpl": 305,
+    "hasAssetLimit": false,
+    "pregnantUpperBand": {
+      "aboveFpl": 196,
+      "note": "Above 196% FPL this is Show-Me Healthy Babies, which covers pregnancy-related care as coverage for the unborn child."
+    }
   },
   "snap": {
     "localName": "SNAP",

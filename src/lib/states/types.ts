@@ -29,15 +29,48 @@ export interface StateData {
     perAdditional?: number;          // Increment for 7+ person households
   };
 
+  /**
+   * Medicaid/CHIP income limits, as % of the CURRENT poverty guidelines.
+   *
+   * CONVENTION (eligibility audit 2026-10, item A5A6A7): every limit is stored INCLUDING the
+   * 5-point MAGI disregard (42 CFR 435.603(d)(4)), the way KFF publishes them and the way the
+   * adult 138 already is. A state whose own chart prints the limit without the disregard
+   * (Delaware 212, Massachusetts 300, Tennessee 250) is stored as published + 5. A state whose
+   * chart already carries it (Oklahoma 211, Alabama 317, Maryland 264) is stored as printed.
+   * Tell the two apart by the state's own adult row: if it reads 138, the chart includes it.
+   *
+   * These rows are identical to BenefitsUSA's (its commit 9ea08f27), and
+   * scripts/check-medicaid-state-limits.mjs pins them, so the two sites cannot drift.
+   */
   medicaid: {
     localName: string;               // "Medi-Cal"
     applicationUrl: string;
     phone: string;
-    adultLimitFpl: number;           // 138 for expansion, varies for non-expansion
-    childLimitFpl: number;           // Usually 200-300
-    pregnantLimitFpl: number;        // Usually 185-200
+    /** 138 in expansion states. A non-expansion state's own adult limit where it has one
+     *  (Wisconsin BadgerCare Plus 100, Georgia Pathways 100), otherwise 0. */
+    adultLimitFpl: number;
+    /** The TOP of children's coverage, Medicaid and CHIP combined. chip.ts reads it as the
+     *  CHIP ceiling; medicaid.ts as the children's limit. */
+    childLimitFpl: number;
+    /** The highest public coverage a pregnant woman can get: Medicaid, CHIP, or the
+     *  unborn-child option. When that top is not regular Medicaid, see pregnantUpperBand. */
+    pregnantLimitFpl: number;
     hasAssetLimit: boolean;
     assetLimit?: number;
+    /**
+     * Adult coverage in a non-expansion state that carries a condition beyond income. Georgia
+     * Pathways covers adults 19 to 64 up to adultLimitFpl only if they complete the monthly
+     * hours. When set, an adult at or under the limit gets 'maybe' with the hours stated, never
+     * 'likely', because we cannot see whether they meet them.
+     */
+    adultActivityRequirement?: { programName: string; hoursPerMonth: number; url: string };
+    /**
+     * Set when pregnantLimitFpl is reached through CHIP or the unborn-child option rather than
+     * regular pregnancy Medicaid. `aboveFpl` is where regular Medicaid ends; `note` is one
+     * sentence naming the program and its condition, shown only to a woman whose income is
+     * above that line.
+     */
+    pregnantUpperBand?: { aboveFpl: number; note: string };
   };
 
   snap: {

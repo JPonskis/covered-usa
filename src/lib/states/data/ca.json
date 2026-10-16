@@ -24,8 +24,12 @@
     "phone": "1-800-541-5555",
     "adultLimitFpl": 138,
     "childLimitFpl": 266,
-    "pregnantLimitFpl": 213,
-    "hasAssetLimit": false
+    "pregnantLimitFpl": 322,
+    "hasAssetLimit": false,
+    "pregnantUpperBand": {
+      "aboveFpl": 213,
+      "note": "Above 213% FPL this is the Medi-Cal Access Program. It has no cost, and it is for pregnant people with no other insurance that covers maternity care, or whose plan's maternity deductible or copay is over $500."
+    }
   },
   "snap": {
     "localName": "CalFresh",

@@ -23,9 +23,13 @@
     "applicationUrl": "https://kynect.ky.gov",
     "phone": "(855) 306-8959",
     "adultLimitFpl": 138,
-    "childLimitFpl": 213,
-    "pregnantLimitFpl": 195,
-    "hasAssetLimit": false
+    "childLimitFpl": 218,
+    "pregnantLimitFpl": 218,
+    "hasAssetLimit": false,
+    "pregnantUpperBand": {
+      "aboveFpl": 200,
+      "note": "Between 200% and 218% FPL this coverage is only for pregnant women who are uninsured."
+    }
   },
   "snap": {
     "localName": "SNAP",

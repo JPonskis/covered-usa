@@ -23,9 +23,13 @@
     "applicationUrl": "https://insurealabama.adph.state.al.us/",
     "phone": "1-800-362-1504",
     "adultLimitFpl": 0,
-    "childLimitFpl": 141,
-    "pregnantLimitFpl": 141,
-    "hasAssetLimit": false
+    "childLimitFpl": 317,
+    "pregnantLimitFpl": 317,
+    "hasAssetLimit": false,
+    "pregnantUpperBand": {
+      "aboveFpl": 146,
+      "note": "Above 146% FPL this coverage is ALL Babies, Alabama's low-cost CHIP program for pregnant women."
+    }
   },
   "snap": {
     "localName": "Food Assistance (SNAP)",

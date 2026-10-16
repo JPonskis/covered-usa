@@ -22,10 +22,15 @@
     "localName": "Medicaid",
     "applicationUrl": "https://gateway.ga.gov",
     "phone": "877-423-4746",
-    "adultLimitFpl": 0,
-    "childLimitFpl": 247,
+    "adultLimitFpl": 100,
+    "childLimitFpl": 252,
     "pregnantLimitFpl": 220,
-    "hasAssetLimit": false
+    "hasAssetLimit": false,
+    "adultActivityRequirement": {
+      "programName": "Georgia Pathways",
+      "hoursPerMonth": 80,
+      "url": "https://pathways.georgia.gov"
+    }
   },
   "snap": {
     "localName": "SNAP",
