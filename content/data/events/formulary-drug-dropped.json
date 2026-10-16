@@ -1,0 +1,542 @@
+{
+  "slug": "formulary-drug-dropped",
+  "eventName": {
+    "en": "Plan Dropped Your Drug From Formulary",
+    "es": "Su Plan Eliminó Su Medicamento del Formulario"
+  },
+  "category": "Plan Change",
+  "topic": "Options after a health plan removes a prescription drug from its formulary in 2026",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-10-10",
+  "readingTime": "9 min read",
+  "meta": {
+    "title": {
+      "en": "Plan Dropped Your Drug From Formulary? 2026 Next Steps",
+      "es": "¿Su Plan Eliminó Su Medicamento? Próximos Pasos 2026"
+    },
+    "description": {
+      "en": "Drug dropped from your 2026 formulary? Request an exception (72-hour decision), appeal, or switch plans Oct 15 (Medicare) or Nov 1 (Marketplace).",
+      "es": "¿Medicamento eliminado del formulario 2026? Pida una excepción (72 horas), apele o cambie de plan el 15 oct (Medicare) o 1 nov (Mercado)."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "Plan Dropped Your Drug From Formulary in 2026? Here Are Your Next Steps",
+      "es": "¿Su Plan Eliminó Su Medicamento del Formulario en 2026? Estos Son Sus Próximos Pasos"
+    },
+    "subhero": {
+      "en": "You can request a formulary exception today and get a decision in 72 hours, then switch plans during the Medicare window (October 15 to December 7, 2026) or the Marketplace window (November 1, 2026 to January 15, 2027).",
+      "es": "Puede pedir una excepción al formulario hoy y recibir una decisión en 72 horas, y luego cambiar de plan en la ventana de Medicare (15 de octubre al 7 de diciembre de 2026) o del Mercado (1 de noviembre de 2026 al 15 de enero de 2027)."
+    }
+  },
+  "urgency": {
+    "kind": "window",
+    "heading": {
+      "en": "Your plan-switch window opens October 15, 2026 for Medicare and November 1, 2026 for the Marketplace",
+      "es": "Su ventana para cambiar de plan abre el 15 de octubre de 2026 para Medicare y el 1 de noviembre de 2026 para el Mercado"
+    },
+    "body": {
+      "en": "The Medicare Annual Election Period runs October 15, 2026 through December 7, 2026, with new Part D coverage starting January 1, 2027. Marketplace Open Enrollment runs November 1, 2026 through January 15, 2027 in most states (enroll by December 15, 2026 for a January 1, 2027 start; some state exchanges use different end dates). Miss those windows and you stay in your current plan's formulary until the next open enrollment, because a formulary change is not a qualifying life event. A formulary exception request has no window and can start the day you learn the drug was dropped.",
+      "es": "El Período de Elección Anual de Medicare corre del 15 de octubre de 2026 al 7 de diciembre de 2026, con nueva cobertura de la Parte D desde el 1 de enero de 2027. La Inscripción Abierta del Mercado corre del 1 de noviembre de 2026 al 15 de enero de 2027 en la mayoría de los estados (inscríbase antes del 15 de diciembre de 2026 para comenzar el 1 de enero de 2027; algunos mercados estatales usan otras fechas de cierre). Si pierde esas ventanas, se queda con el formulario de su plan actual hasta la próxima inscripción abierta, porque un cambio de formulario no es un evento calificador de vida. La solicitud de excepción al formulario no tiene ventana y puede comenzar el día que se entere de que eliminaron el medicamento."
+    },
+    "totalTimeISO8601": "P54D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Medicare Part D appeal (redetermination)",
+          "es": "Apelación de la Parte D de Medicare (redeterminación)"
+        },
+        "days": 65
+      },
+      {
+        "label": {
+          "en": "Marketplace internal appeal",
+          "es": "Apelación interna del Mercado"
+        },
+        "days": 180
+      },
+      {
+        "label": {
+          "en": "Formulary exception request",
+          "es": "Solicitud de excepción al formulario"
+        },
+        "days": null
+      },
+      {
+        "label": {
+          "en": "Medicaid drug coverage (state plan)",
+          "es": "Cobertura de medicamentos de Medicaid (plan estatal)"
+        },
+        "days": null
+      }
+    ]
+  },
+  "quickAnswer": {
+    "en": "When a plan drops your drug from its 2026 formulary, you have four moves: request a formulary exception (decision in 72 hours, or 24 hours if expedited), ask for a temporary transition supply, appeal any denial (65 days for Medicare Part D, 180 days for Marketplace plans), or switch plans. Switching windows are the Medicare Annual Election Period (October 15 to December 7, 2026) and Marketplace Open Enrollment (November 1, 2026 to January 15, 2027 in most states). A formulary change is not a qualifying life event, so no Marketplace Special Enrollment Period (SEP) opens on its own. Keep taking your drug until your prescriber approves a new plan.",
+    "es": "Cuando un plan elimina su medicamento del formulario 2026, tiene cuatro opciones: pedir una excepción al formulario (decisión en 72 horas, o 24 horas si es acelerada), pedir un suministro temporal de transición, apelar cualquier denegación (65 días en la Parte D de Medicare, 180 días en planes del Mercado) o cambiar de plan. Las ventanas para cambiar son el Período de Elección Anual de Medicare (15 de octubre al 7 de diciembre de 2026) y la Inscripción Abierta del Mercado (1 de noviembre de 2026 al 15 de enero de 2027 en la mayoría de los estados). Un cambio de formulario no es un evento calificador de vida, así que no se abre solo un Período de Inscripción Especial del Mercado. Siga tomando su medicamento hasta que su médico apruebe un nuevo plan."
+  },
+  "introParagraphs": [
+    {
+      "en": "A formulary is the list of drugs your health plan agrees to cover, sorted into cost tiers. Plans revise that list every year, and Medicare Part D plans mail an Annual Notice of Change by September 30 that shows which drugs move to a higher tier, gain restrictions, or disappear for 2027. Marketplace insurers send similar renewal notices in the fall. Some plans also remove drugs in the middle of the year, usually after a generic or biosimilar launches or a manufacturer changes its price. When your drug is the one that disappears, the first pharmacy visit can end with a rejected claim and a cash price in the hundreds or thousands of dollars. Your drug is rarely lost for good. Federal rules for Medicare Part D under cms.gov and for Marketplace plans under healthcare.gov give you a formulary exception process with fixed decision times, a written appeal path if the plan says no, and a chance to change plans at open enrollment. The order in which you use those tools matters, and the 2026 calendar puts both major switching windows within the next 30 days.",
+      "es": "Un formulario es la lista de medicamentos que su plan de salud acepta cubrir, ordenados en niveles de costo. Los planes revisan esa lista cada año, y los planes de la Parte D de Medicare envían por correo un Aviso Anual de Cambios antes del 30 de septiembre que muestra qué medicamentos pasan a un nivel más alto, reciben restricciones o desaparecen en 2027. Las aseguradoras del Mercado envían avisos de renovación parecidos en el otoño. Algunos planes también eliminan medicamentos a mitad de año, normalmente después de que sale un genérico o biosimilar o de que el fabricante cambia su precio. Cuando el medicamento que desaparece es el suyo, la visita a la farmacia puede terminar con un reclamo rechazado y un precio en efectivo de cientos o miles de dólares. Su medicamento rara vez se pierde para siempre. Las reglas federales de la Parte D de Medicare en cms.gov y de los planes del Mercado en healthcare.gov le dan un proceso de excepción al formulario con plazos fijos de decisión, una vía de apelación escrita si el plan dice que no, y la oportunidad de cambiar de plan en la inscripción abierta. El orden en que use esas herramientas importa, y el calendario 2026 pone las dos ventanas principales para cambiar dentro de los próximos 30 días."
+    },
+    {
+      "en": "Most people who lose a drug to a formulary change fall into one of three groups: Medicare beneficiaries with a Part D or Medicare Advantage drug plan, Marketplace enrollees with a subsidized individual plan, and workers on employer or COBRA coverage. Each group has a different clock and a different appeal path, which this page separates step by step. For the Medicare version of the paperwork, read [how to file a Medicare Part D formulary exception](/en/qa/how-to-file-medicare-part-d-formulary-exception). To see how the annual calendar fits together, review the [open enrollment period](/en/glossary/open-enrollment-period) glossary entry. If your income is under 138% of the federal poverty level in 2026 ($22,025 for a single adult in the 48 contiguous states and DC), your state Medicaid program may cover the drug on its own preferred drug list at little or no cost, and Medicaid enrollment is open year-round per medicaid.gov. Start with the steps below, in order, and keep every notice you receive.",
+      "es": "La mayoría de las personas que pierden un medicamento por un cambio de formulario están en uno de tres grupos: beneficiarios de Medicare con un plan de medicamentos de la Parte D o Medicare Advantage, inscritos en el Mercado con un plan individual subsidiado, y trabajadores con cobertura del empleador o COBRA. Cada grupo tiene un reloj distinto y una vía de apelación distinta, que esta página separa paso a paso. Para la versión de Medicare del trámite, lea [cómo presentar una excepción al formulario de la Parte D de Medicare](/en/qa/how-to-file-medicare-part-d-formulary-exception). Para ver cómo encaja el calendario anual, revise la entrada del glosario sobre el [período de inscripción abierta](/en/glossary/open-enrollment-period). Si su ingreso es menor al 138% del nivel federal de pobreza en 2026 ($22,025 para un adulto soltero en los 48 estados contiguos y DC), el programa Medicaid de su estado puede cubrir el medicamento en su lista de medicamentos preferidos con poco o ningún costo, y la inscripción en Medicaid está abierta todo el año según medicaid.gov. Comience con los pasos a continuación, en orden, y guarde todos los avisos que reciba."
+    }
+  ],
+  "steps": [
+    {
+      "name": {
+        "en": "Confirm the removal and its effective date",
+        "es": "Confirme la eliminación y su fecha de vigencia"
+      },
+      "text": {
+        "en": "Log in to your plan's online formulary search or call the member services number on your ID card and ask whether the drug is removed, moved to a non-covered status, or only restricted. Check your Medicare Annual Notice of Change or your Marketplace renewal notice for the effective date, and ask your pharmacist to run a test claim so you see the exact rejection message.",
+        "es": "Ingrese al buscador de formulario de su plan o llame al número de servicio al miembro de su tarjeta y pregunte si el medicamento fue eliminado, quedó sin cobertura o solo tiene restricciones. Revise su Aviso Anual de Cambios de Medicare o el aviso de renovación del Mercado para ver la fecha de vigencia, y pida a su farmacéutico que haga un reclamo de prueba para ver el mensaje exacto de rechazo."
+      }
+    },
+    {
+      "name": {
+        "en": "Ask your prescriber about a covered alternative",
+        "es": "Pregunte a su médico por una alternativa cubierta"
+      },
+      "text": {
+        "en": "Call your prescriber's office and ask whether a generic, a biosimilar, or another drug in the same class is on your plan's formulary and clinically safe for you. Compare the 2026 tier and copay of each option on the plan's drug list before you decide, and never switch or stop a drug without your prescriber's approval.",
+        "es": "Llame al consultorio de su médico y pregunte si un genérico, un biosimilar u otro medicamento de la misma clase está en el formulario de su plan y es clínicamente seguro para usted. Compare el nivel y el copago 2026 de cada opción en la lista de medicamentos del plan antes de decidir, y nunca cambie ni suspenda un medicamento sin la aprobación de su médico."
+      }
+    },
+    {
+      "name": {
+        "en": "Submit a formulary exception request",
+        "es": "Presente una solicitud de excepción al formulario"
+      },
+      "text": {
+        "en": "Call your plan or submit the plan's exception form with a supporting statement from your prescriber explaining why covered alternatives will not work or would cause harm. Medicare Part D and Marketplace plans must decide a standard request within 72 hours and an expedited request (when waiting would seriously harm your health) within 24 hours of receiving the prescriber statement.",
+        "es": "Llame a su plan o presente el formulario de excepción del plan con una declaración de apoyo de su médico que explique por qué las alternativas cubiertas no funcionarán o causarían daño. Los planes de la Parte D de Medicare y del Mercado deben decidir una solicitud estándar en 72 horas y una solicitud acelerada (cuando esperar dañaría gravemente su salud) en 24 horas desde que reciben la declaración del médico."
+      }
+    },
+    {
+      "name": {
+        "en": "Request a temporary transition supply",
+        "es": "Pida un suministro temporal de transición"
+      },
+      "text": {
+        "en": "Ask the pharmacy and your plan for a transition fill while the exception is pending. Medicare Part D plans must have a transition policy that covers a temporary supply (commonly a 30-day supply) for people affected by negative formulary changes, and Marketplace issuers often grant a one-time continuity fill on request. Get the approval number in writing.",
+        "es": "Pida a la farmacia y a su plan un surtido de transición mientras la excepción está pendiente. Los planes de la Parte D de Medicare deben tener una política de transición que cubra un suministro temporal (comúnmente de 30 días) para las personas afectadas por cambios negativos del formulario, y las aseguradoras del Mercado a menudo otorgan un surtido único de continuidad si se solicita. Obtenga el número de aprobación por escrito."
+      }
+    },
+    {
+      "name": {
+        "en": "Appeal a denial before the deadline",
+        "es": "Apele una denegación antes de la fecha límite"
+      },
+      "text": {
+        "en": "File a Part D redetermination with your plan within 65 days of the denial notice, or a Marketplace internal appeal within 180 days of the denial, using the instructions at cms.gov or healthcare.gov. If the plan upholds the denial, request an independent external review; the reviewer's decision binds the plan.",
+        "es": "Presente una redeterminación de la Parte D ante su plan dentro de 65 días del aviso de denegación, o una apelación interna del Mercado dentro de 180 días de la denegación, siguiendo las instrucciones en cms.gov o healthcare.gov. Si el plan confirma la denegación, solicite una revisión externa independiente; la decisión del revisor obliga al plan."
+      }
+    },
+    {
+      "name": {
+        "en": "Compare plans before the switching window closes",
+        "es": "Compare planes antes de que cierre la ventana para cambiar"
+      },
+      "text": {
+        "en": "Use Medicare Plan Finder at medicare.gov between October 15 and December 7, 2026, or window-shop at healthcare.gov from November 1, 2026, and enter your exact drug, dose, and pharmacy. Compare total 2027 annual drug costs, not just the premium, and confirm the drug is listed at an affordable tier before you enroll.",
+        "es": "Use Medicare Plan Finder en medicare.gov entre el 15 de octubre y el 7 de diciembre de 2026, o explore planes en healthcare.gov desde el 1 de noviembre de 2026, e ingrese su medicamento, dosis y farmacia exactos. Compare el costo anual total de medicamentos 2027, no solo la prima, y confirme que el medicamento esté en un nivel asequible antes de inscribirse."
+      }
+    },
+    {
+      "name": {
+        "en": "Check Medicaid and manufacturer assistance",
+        "es": "Revise Medicaid y la ayuda del fabricante"
+      },
+      "text": {
+        "en": "Apply through your state Medicaid agency or healthcare.gov if your 2026 household income is under 138% FPL, and apply for the drug maker's patient assistance program or copay card as a bridge. Copay cards work with commercial and Marketplace plans but not with Medicare or Medicaid.",
+        "es": "Solicite a través de la agencia estatal de Medicaid o healthcare.gov si el ingreso de su hogar en 2026 es menor al 138% del FPL, y solicite el programa de asistencia al paciente o la tarjeta de copago del fabricante como puente. Las tarjetas de copago funcionan con planes comerciales y del Mercado, pero no con Medicare ni Medicaid."
+      }
+    }
+  ],
+  "optionsComparison": {
+    "headers": {
+      "en": [
+        "Option",
+        "Typical cost",
+        "Best for",
+        "Deadline"
+      ],
+      "es": [
+        "Opción",
+        "Costo típico",
+        "Mejor para",
+        "Fecha límite"
+      ]
+    },
+    "rows": [
+      {
+        "en": [
+          "Formulary exception (keep your plan)",
+          "$0 to file; drug is then covered at the plan's 2026 tier copay",
+          "One drug with no safe covered alternative",
+          "No window; decision in 72 hours (24 hours expedited)"
+        ],
+        "es": [
+          "Excepción al formulario (conserva su plan)",
+          "$0 para presentar; el medicamento se cubre al copago del nivel 2026 del plan",
+          "Un medicamento sin alternativa cubierta segura",
+          "Sin ventana; decisión en 72 horas (24 horas acelerada)"
+        ]
+      },
+      {
+        "en": [
+          "Switch to a covered generic, biosimilar, or same-class drug",
+          "Often $0 to $50/mo copay in 2026, varies by tier",
+          "Stable patients whose prescriber agrees",
+          "Any time, with prescriber approval"
+        ],
+        "es": [
+          "Cambiar a un genérico, biosimilar o fármaco de la misma clase cubierto",
+          "A menudo $0 a $50/mes de copago en 2026, según el nivel",
+          "Pacientes estables cuyo médico está de acuerdo",
+          "Cualquier momento, con aprobación del médico"
+        ]
+      },
+      {
+        "en": [
+          "Medicare Part D or Medicare Advantage plan change",
+          "2026 Part D out-of-pocket cap is $2,100; premiums vary by plan",
+          "Medicare enrollees whose 2027 formulary drops the drug",
+          "October 15 to December 7, 2026"
+        ],
+        "es": [
+          "Cambio de plan de la Parte D o Medicare Advantage",
+          "El tope de gastos de bolsillo de la Parte D en 2026 es $2,100; las primas varían",
+          "Inscritos en Medicare cuyo formulario 2027 elimina el medicamento",
+          "15 de octubre al 7 de diciembre de 2026"
+        ]
+      },
+      {
+        "en": [
+          "Marketplace plan change",
+          "Premiums after 2026 tax credits vary; 2026 out-of-pocket max is $10,600 individual",
+          "Subsidized enrollees comparing 2027 drug lists",
+          "November 1, 2026 to January 15, 2027 (most states)"
+        ],
+        "es": [
+          "Cambio de plan del Mercado",
+          "Las primas tras los créditos fiscales 2026 varían; el máximo de bolsillo 2026 es $10,600 individual",
+          "Inscritos con subsidio que comparan listas de medicamentos 2027",
+          "1 de noviembre de 2026 al 15 de enero de 2027 (mayoría de estados)"
+        ]
+      },
+      {
+        "en": [
+          "State Medicaid (Medi-Cal Rx, TennCare, MassHealth, and others)",
+          "$0 to small copays in 2026",
+          "Income under 138% FPL in expansion states",
+          "Year-round"
+        ],
+        "es": [
+          "Medicaid estatal (Medi-Cal Rx, TennCare, MassHealth y otros)",
+          "$0 a copagos pequeños en 2026",
+          "Ingreso menor al 138% del FPL en estados con expansión",
+          "Todo el año"
+        ]
+      },
+      {
+        "en": [
+          "COBRA (same employer formulary)",
+          "102% of the full 2026 premium, about $400 to $900/mo for one person",
+          "Rarely helpful: COBRA keeps the same drug list as active employees",
+          "60 days from the qualifying event"
+        ],
+        "es": [
+          "COBRA (mismo formulario del empleador)",
+          "102% de la prima completa 2026, unos $400 a $900/mes por persona",
+          "Rara vez ayuda: COBRA mantiene la misma lista de medicamentos que los empleados activos",
+          "60 días desde el evento calificador"
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "Costs are 2026 estimates and vary by plan, tier, and state. A formulary change alone does not open a Marketplace Special Enrollment Period, so the switching dates above are the practical windows.",
+      "es": "Los costos son estimaciones 2026 y varían según el plan, el nivel y el estado. Un cambio de formulario por sí solo no abre un Período de Inscripción Especial del Mercado, así que las fechas anteriores son las ventanas prácticas."
+    },
+    "source": "healthcare.gov appeals and SEP rules, medicare.gov Part D coverage, cms.gov Part D redetermination, medicaid.gov prescription drug coverage, KFF 2026 Medicare Part D analysis"
+  },
+  "commonMistakes": {
+    "intro": {
+      "en": "The most costly mistakes people make after a plan drops a covered drug in 2026:",
+      "es": "Los errores más costosos que comete la gente después de que un plan elimina un medicamento cubierto en 2026:"
+    },
+    "items": [
+      {
+        "en": "Stopping or rationing the drug while waiting for the plan. Ask for a transition supply and keep taking the drug as prescribed.",
+        "es": "Dejar o racionar el medicamento mientras espera al plan. Pida un suministro de transición y siga tomando el medicamento como se lo recetaron."
+      },
+      {
+        "en": "Paying cash at the pharmacy without filing an exception. Cash purchases do not count toward your 2026 deductible or Part D out-of-pocket cap in most cases, and they leave no paper trail for an appeal.",
+        "es": "Pagar en efectivo en la farmacia sin presentar una excepción. Las compras en efectivo en la mayoría de los casos no cuentan para su deducible 2026 ni para el tope de gastos de bolsillo de la Parte D, y no dejan registro para una apelación."
+      },
+      {
+        "en": "Submitting an exception request without a prescriber statement. Plans reject requests that do not explain why covered alternatives fail.",
+        "es": "Presentar una solicitud de excepción sin la declaración del médico. Los planes rechazan solicitudes que no explican por qué fallan las alternativas cubiertas."
+      },
+      {
+        "en": "Waiting past 65 days to appeal a Part D denial, or 180 days for a Marketplace denial. Late appeals are dismissed unless you show good cause.",
+        "es": "Esperar más de 65 días para apelar una denegación de la Parte D, o 180 días para una del Mercado. Las apelaciones tardías se desestiman salvo que muestre causa justificada."
+      },
+      {
+        "en": "Picking a 2027 plan by premium alone. A $0 premium plan that excludes your drug can cost thousands of dollars more than a plan with a higher premium that covers it.",
+        "es": "Elegir un plan 2027 solo por la prima. Un plan de prima $0 que excluye su medicamento puede costar miles de dólares más que un plan de prima más alta que lo cubre."
+      },
+      {
+        "en": "Expecting a Marketplace Special Enrollment Period. A formulary change is not a qualifying life event, so plan to switch at Open Enrollment.",
+        "es": "Esperar un Período de Inscripción Especial del Mercado. Un cambio de formulario no es un evento calificador de vida, así que planee cambiar en la Inscripción Abierta."
+      }
+    ]
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Formulary Exceptions and Appeals in 2026: Medicare Part D vs Marketplace",
+        "es": "Excepciones y Apelaciones al Formulario en 2026: Parte D de Medicare vs Mercado"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare Part D formulary exceptions follow rules published at cms.gov. Your plan must decide a standard coverage determination within 72 hours and an expedited one within 24 hours after receiving your prescriber's supporting statement. If the plan denies the request, you have 65 days from the date of the notice to ask for a redetermination, which the plan must decide within 7 days (72 hours if expedited) per CMS. A further denial moves to an Independent Review Entity, then to an administrative law judge if the amount in controversy meets the 2026 threshold. Part D plans must also keep a transition policy so that people hit by a negative formulary change can fill a temporary supply, often 30 days, while an exception is pending. Tiering exceptions are not available for drugs on the specialty tier, so the strongest request is a formulary exception for a drug that is entirely removed.",
+          "es": "Las excepciones al formulario de la Parte D de Medicare siguen reglas publicadas en cms.gov. Su plan debe decidir una determinación de cobertura estándar en 72 horas y una acelerada en 24 horas después de recibir la declaración de apoyo de su médico. Si el plan deniega la solicitud, tiene 65 días desde la fecha del aviso para pedir una redeterminación, que el plan debe decidir en 7 días (72 horas si es acelerada) según CMS. Una nueva denegación pasa a una Entidad de Revisión Independiente, y luego a un juez de derecho administrativo si el monto en controversia cumple el umbral 2026. Los planes de la Parte D también deben mantener una política de transición para que quienes sufren un cambio negativo del formulario puedan surtir un suministro temporal, a menudo de 30 días, mientras la excepción está pendiente. No hay excepciones de nivel para medicamentos del nivel de especialidad, así que la solicitud más sólida es una excepción al formulario para un medicamento eliminado por completo."
+        },
+        {
+          "en": "Marketplace plans sold on healthcare.gov follow a parallel process. Under federal rules, an individual plan must offer a standard exception request answered within 72 hours and an expedited request answered within 24 hours, and an external exception review with an independent reviewer if the issuer says no. For a regular denial of coverage, a Marketplace internal appeal must be filed within 180 days of the notice, and an external review request is due within 4 months of the final internal denial. Employer plans, including COBRA, run their own internal appeal under ERISA, and self-insured employer plans follow federal rather than state law. Keep your 1095-A tax form and plan notices together, because switching Marketplace plans mid-year changes the premium tax credit reconciled on your 2026 tax return.",
+          "es": "Los planes del Mercado vendidos en healthcare.gov siguen un proceso paralelo. Bajo las reglas federales, un plan individual debe ofrecer una solicitud de excepción estándar respondida en 72 horas, una solicitud acelerada respondida en 24 horas, y una revisión externa de la excepción con un revisor independiente si la aseguradora dice que no. Para una denegación de cobertura ordinaria, la apelación interna del Mercado debe presentarse dentro de 180 días del aviso, y la solicitud de revisión externa vence a los 4 meses de la denegación interna final. Los planes de empleadores, incluido COBRA, tienen su propia apelación interna bajo ERISA, y los planes autoasegurados siguen la ley federal y no la estatal. Guarde junto su formulario fiscal 1095-A y los avisos del plan, porque cambiar de plan del Mercado a mitad de año modifica el crédito fiscal de prima que se concilia en su declaración de impuestos 2026."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Switching Plans at Open Enrollment for 2027 Coverage",
+        "es": "Cambiar de Plan en la Inscripción Abierta para la Cobertura 2027"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicare enrollees can change Part D or Medicare Advantage drug plans during the Annual Election Period, October 15 to December 7, 2026, and the new plan starts January 1, 2027. Medicare Advantage members also get a separate Medicare Advantage Open Enrollment Period from January 1 to March 31, 2027, which lets them switch Advantage plans or return to Original Medicare and add a standalone Part D plan. People who get Extra Help or Medicaid have a monthly Special Enrollment Period to move into a standalone Part D plan. Medicare Plan Finder at medicare.gov lets you enter each drug and your pharmacy and returns the estimated 2027 annual cost, which is the number to compare. KFF's Medicare analysis at kff.org shows that formularies, tiers, and utilization management differ widely among Part D plans, so a drug dropped by one plan is often covered by a competitor.",
+          "es": "Los inscritos en Medicare pueden cambiar de plan de medicamentos de la Parte D o Medicare Advantage durante el Período de Elección Anual, del 15 de octubre al 7 de diciembre de 2026, y el nuevo plan comienza el 1 de enero de 2027. Los miembros de Medicare Advantage también tienen un Período de Inscripción Abierta de Medicare Advantage separado del 1 de enero al 31 de marzo de 2027, que permite cambiar de plan Advantage o volver a Medicare Original y agregar un plan independiente de la Parte D. Las personas con Ayuda Adicional o Medicaid tienen un Período de Inscripción Especial mensual para pasar a un plan independiente de la Parte D. Medicare Plan Finder en medicare.gov permite ingresar cada medicamento y su farmacia y devuelve el costo anual estimado 2027, que es el número que debe comparar. El análisis de Medicare de KFF en kff.org muestra que los formularios, niveles y gestión de utilización difieren mucho entre planes de la Parte D, así que un medicamento eliminado por un plan suele estar cubierto por otro."
+        },
+        {
+          "en": "Marketplace shoppers can change plans from November 1, 2026 through January 15, 2027 in most states, and healthcare.gov guarantees a January 1, 2027 start only if you enroll by December 15, 2026. State exchanges such as Covered California set their own end dates. Enrolling outside that window requires a qualifying life event such as job loss, marriage, a move, or a birth, so a dropped drug alone does not qualify for a Marketplace Special Enrollment Period. COBRA does not escape the problem either, because COBRA continuation uses the same formulary as active employees at 102% of the full premium. Compare Marketplace plans by searching each plan's 2027 drug list for your exact drug, then check its tier, prior authorization, and step therapy rules before you pick.",
+          "es": "Quienes compran en el Mercado pueden cambiar de plan del 1 de noviembre de 2026 al 15 de enero de 2027 en la mayoría de los estados, y healthcare.gov garantiza el inicio el 1 de enero de 2027 solo si se inscribe antes del 15 de diciembre de 2026. Los mercados estatales como Covered California fijan sus propias fechas de cierre. Inscribirse fuera de esa ventana requiere un evento calificador de vida como pérdida de empleo, matrimonio, mudanza o nacimiento, así que un medicamento eliminado por sí solo no califica para un Período de Inscripción Especial del Mercado. COBRA tampoco resuelve el problema, porque la continuación COBRA usa el mismo formulario que los empleados activos al 102% de la prima completa. Compare planes del Mercado buscando su medicamento exacto en la lista de medicamentos 2027 de cada plan, y luego revise su nivel, autorización previa y reglas de terapia escalonada antes de elegir."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid and CHIP Drug Coverage After a Formulary Change in 2026",
+        "es": "Cobertura de Medicamentos de Medicaid y CHIP tras un Cambio de Formulario en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid covers outpatient prescription drugs in every state under federal rules at medicaid.gov, and states manage coverage through a preferred drug list with prior authorization. Medicaid eligibility in the 40 expansion states plus DC starts at 138% of the federal poverty level, which is $22,025 for a household of one and $45,540 for a household of four in 2026. State program names vary: California's Medi-Cal (with drugs covered through Medi-Cal Rx), Arizona's AHCCCS, Tennessee's TennCare, Massachusetts's MassHealth, Wisconsin's BadgerCare, and Connecticut's HUSKY Health. Adults who earn too much for Medicaid after a pay raise usually keep subsidies on the Marketplace, and the 400% FPL subsidy cliff returned on January 1, 2026 when the enhanced premium tax credits expired. Children can qualify for CHIP at higher incomes, often 200% to 300% FPL in 2026 depending on the state, with low or no cost for their prescriptions.",
+          "es": "Medicaid cubre medicamentos recetados ambulatorios en todos los estados bajo reglas federales en medicaid.gov, y los estados administran la cobertura mediante una lista de medicamentos preferidos con autorización previa. La elegibilidad de Medicaid en los 40 estados con expansión más DC comienza en el 138% del nivel federal de pobreza, que es $22,025 para un hogar de una persona y $45,540 para un hogar de cuatro en 2026. Los nombres de los programas estatales varían: Medi-Cal de California (con medicamentos cubiertos mediante Medi-Cal Rx), AHCCCS de Arizona, TennCare de Tennessee, MassHealth de Massachusetts, BadgerCare de Wisconsin y HUSKY Health de Connecticut. Los adultos que ganan demasiado para Medicaid tras un aumento de sueldo normalmente conservan subsidios en el Mercado, y el precipicio de subsidios del 400% del FPL regresó el 1 de enero de 2026 cuando vencieron los créditos fiscales de prima mejorados. Los niños pueden calificar para CHIP con ingresos más altos, a menudo del 200% al 300% del FPL en 2026 según el estado, con costo bajo o nulo para sus recetas."
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the deadline to switch plans if my drug was dropped in 2026?",
+        "answer": "Medicare Part D and Medicare Advantage members can switch plans during the Annual Election Period, October 15 to December 7, 2026, with the new plan starting January 1, 2027. Marketplace enrollees can switch from November 1, 2026 to January 15, 2027 in most states, and must enroll by December 15, 2026 for a January 1, 2027 start. A formulary exception request has no deadline and can be filed immediately. Appeals do have deadlines: 65 days for a Medicare Part D denial and 180 days for a Marketplace denial."
+      },
+      {
+        "question": "What documents do I need to request a formulary exception?",
+        "answer": "Gather your plan ID card, the formulary change notice or Annual Notice of Change, the pharmacy rejection or claim record, and a supporting statement from your prescriber. The statement should name the drug, the diagnosis, the covered alternatives you tried or cannot take, and the harm expected from switching. Add your medication history and lab results when relevant. For an appeal, keep the plan's written denial and its date, since the 65-day Part D and 180-day Marketplace clocks both start from that notice."
+      },
+      {
+        "question": "What happens if I miss the open enrollment window?",
+        "answer": "Plan to stay in your current plan's formulary until the next open enrollment. A formulary change is not a qualifying life event, so no Marketplace Special Enrollment Period opens automatically. You can still file a formulary exception, appeal a denial, use a manufacturer assistance program, or apply for Medicaid, which is open year-round. Medicare Advantage members get one more chance from January 1 to March 31, 2027, when they can switch Advantage plans or return to Original Medicare and add a standalone Part D plan."
+      },
+      {
+        "question": "Can I get coverage or reimbursement for a drug I already paid for?",
+        "answer": "Sometimes. If the plan approves a formulary exception, ask whether it applies to fills already paid and request reimbursement with your pharmacy receipts. Medicare Part D plans must pay for an approved exception, and an approval can be effective for the rest of the plan year. Marketplace plans decide case by case. Cash purchases made without filing a claim or exception are the hardest to recover, so ask for the transition supply and file the exception before you pay out of pocket."
+      },
+      {
+        "question": "Is COBRA a better choice than the Marketplace when my employer plan drops my drug?",
+        "answer": "Usually no. COBRA continues the same employer plan at 102% of the full 2026 premium, typically $400 to $900 per month for one person, and it uses the same formulary as active employees, so the dropped drug stays dropped. COBRA has a 60-day election window after the qualifying event. A Marketplace plan with 2026 premium tax credits can be cheaper and may include your drug, but verify the plan's drug list for 2027 before you enroll."
+      },
+      {
+        "question": "What state rules apply when my drug is dropped?",
+        "answer": "Federal exception and appeal timelines apply in every state, but state details differ. State Medicaid programs set their own preferred drug lists, such as Medi-Cal Rx in California, TennCare in Tennessee, and MassHealth in Massachusetts. Many states also regulate step therapy and require insurers to offer exceptions on fully insured plans, while self-insured employer plans follow federal ERISA rules. Call your state department of insurance or Medicaid agency to learn which protections cover your specific plan."
+      },
+      {
+        "question": "What happens to my child's prescription coverage if the plan drops it?",
+        "answer": "Your child can request the same formulary exception on a Marketplace or employer plan, and your prescriber's statement should explain why alternatives are unsafe for a growing child. If your household income is too high for Medicaid, your child may qualify for CHIP, which covers prescriptions at little or no cost in all 50 states and DC, often up to 200% to 300% FPL in 2026. CHIP and Medicaid enrollment is open year-round at healthcare.gov or your state agency."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la fecha límite para cambiar de plan si eliminaron mi medicamento en 2026?",
+        "answer": "Los miembros de la Parte D de Medicare y Medicare Advantage pueden cambiar de plan durante el Período de Elección Anual, del 15 de octubre al 7 de diciembre de 2026, y el nuevo plan comienza el 1 de enero de 2027. Los inscritos en el Mercado pueden cambiar del 1 de noviembre de 2026 al 15 de enero de 2027 en la mayoría de los estados, y deben inscribirse antes del 15 de diciembre de 2026 para comenzar el 1 de enero de 2027. La solicitud de excepción al formulario no tiene fecha límite y puede presentarse de inmediato. Las apelaciones sí tienen plazos: 65 días para una denegación de la Parte D y 180 días para una del Mercado."
+      },
+      {
+        "question": "¿Qué documentos necesito para pedir una excepción al formulario?",
+        "answer": "Reúna su tarjeta del plan, el aviso de cambio del formulario o el Aviso Anual de Cambios, el rechazo de la farmacia o registro del reclamo, y una declaración de apoyo de su médico. La declaración debe nombrar el medicamento, el diagnóstico, las alternativas cubiertas que probó o no puede tomar, y el daño esperado de cambiar. Agregue su historial de medicamentos y resultados de laboratorio cuando corresponda. Para una apelación, guarde la denegación escrita del plan y su fecha, porque los plazos de 65 días de la Parte D y 180 días del Mercado comienzan desde ese aviso."
+      },
+      {
+        "question": "¿Qué pasa si pierdo la ventana de inscripción abierta?",
+        "answer": "Planee quedarse con el formulario de su plan actual hasta la próxima inscripción abierta. Un cambio de formulario no es un evento calificador de vida, así que no se abre automáticamente un Período de Inscripción Especial del Mercado. Aún puede presentar una excepción al formulario, apelar una denegación, usar un programa de asistencia del fabricante o solicitar Medicaid, que está abierto todo el año. Los miembros de Medicare Advantage tienen otra oportunidad del 1 de enero al 31 de marzo de 2027, cuando pueden cambiar de plan Advantage o volver a Medicare Original y agregar un plan independiente de la Parte D."
+      },
+      {
+        "question": "¿Puedo obtener cobertura o reembolso por un medicamento que ya pagué?",
+        "answer": "A veces. Si el plan aprueba una excepción al formulario, pregunte si aplica a surtidos ya pagados y pida reembolso con sus recibos de la farmacia. Los planes de la Parte D de Medicare deben pagar una excepción aprobada, y la aprobación puede ser efectiva por el resto del año del plan. Los planes del Mercado deciden caso por caso. Las compras en efectivo hechas sin presentar un reclamo o una excepción son las más difíciles de recuperar, así que pida el suministro de transición y presente la excepción antes de pagar de su bolsillo."
+      },
+      {
+        "question": "¿Es COBRA mejor que el Mercado cuando el plan de mi empleador elimina mi medicamento?",
+        "answer": "Normalmente no. COBRA continúa el mismo plan del empleador al 102% de la prima completa 2026, típicamente de $400 a $900 al mes por persona, y usa el mismo formulario que los empleados activos, así que el medicamento eliminado sigue eliminado. COBRA tiene una ventana de elección de 60 días después del evento calificador. Un plan del Mercado con créditos fiscales de prima 2026 puede ser más barato y puede incluir su medicamento, pero verifique la lista de medicamentos 2027 del plan antes de inscribirse."
+      },
+      {
+        "question": "¿Qué reglas estatales aplican cuando eliminan mi medicamento?",
+        "answer": "Los plazos federales de excepción y apelación aplican en todos los estados, pero los detalles estatales varían. Los programas estatales de Medicaid fijan sus propias listas de medicamentos preferidos, como Medi-Cal Rx en California, TennCare en Tennessee y MassHealth en Massachusetts. Muchos estados también regulan la terapia escalonada y exigen que las aseguradoras ofrezcan excepciones en planes totalmente asegurados, mientras que los planes autoasegurados de empleadores siguen las reglas federales de ERISA. Llame al departamento de seguros o a la agencia de Medicaid de su estado para saber qué protecciones cubren su plan."
+      },
+      {
+        "question": "¿Qué pasa con la cobertura de recetas de mi hijo si el plan elimina el medicamento?",
+        "answer": "Su hijo puede pedir la misma excepción al formulario en un plan del Mercado o del empleador, y la declaración de su médico debe explicar por qué las alternativas no son seguras para un niño en crecimiento. Si el ingreso de su hogar es muy alto para Medicaid, su hijo puede calificar para CHIP, que cubre recetas con costo bajo o nulo en los 50 estados y DC, a menudo hasta el 200% al 300% del FPL en 2026. La inscripción en CHIP y Medicaid está abierta todo el año en healthcare.gov o en su agencia estatal."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "How to File a Medicare Part D Formulary Exception",
+        "es": "Cómo Presentar una Excepción al Formulario de la Parte D"
+      },
+      "href": "/qa/how-to-file-medicare-part-d-formulary-exception"
+    },
+    {
+      "label": {
+        "en": "Open Enrollment Period Explained",
+        "es": "Período de Inscripción Abierta Explicado"
+      },
+      "href": "/glossary/open-enrollment-period"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Límites de Ingresos de Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    },
+    {
+      "label": {
+        "en": "Federal Poverty Level 2026",
+        "es": "Nivel Federal de Pobreza 2026"
+      },
+      "href": "/federal-poverty-level"
+    }
+  ],
+  "sources": [
+    {
+      "name": "HealthCare.gov: Appealing a health plan decision",
+      "url": "https://www.healthcare.gov/appeal-insurance-company-decision/",
+      "note": {
+        "en": "Marketplace internal appeal and external review rules, including drug coverage denials.",
+        "es": "Reglas de apelación interna y revisión externa del Mercado, incluidas las denegaciones de medicamentos."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Coverage outside Open Enrollment",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/",
+      "note": {
+        "en": "Qualifying life events that open a Marketplace Special Enrollment Period.",
+        "es": "Eventos calificadores de vida que abren un Período de Inscripción Especial del Mercado."
+      }
+    },
+    {
+      "name": "CMS: Redetermination by the Part D Plan Sponsor",
+      "url": "https://www.cms.gov/medicare/appeals-grievances/prescription-drug/redetermination-part-d-plan-sponsor",
+      "note": {
+        "en": "65-day Part D redetermination deadline and 7-day or 72-hour decision times.",
+        "es": "Plazo de 65 días para la redeterminación de la Parte D y decisiones en 7 días o 72 horas."
+      }
+    },
+    {
+      "name": "Medicare.gov: Drug coverage (Part D)",
+      "url": "https://www.medicare.gov/drug-coverage-part-d/",
+      "note": {
+        "en": "Part D plan switching windows, Plan Finder, and formulary basics.",
+        "es": "Ventanas para cambiar de plan de la Parte D, Plan Finder y conceptos del formulario."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Prescription drugs",
+      "url": "https://www.medicaid.gov/medicaid/prescription-drugs/index.html",
+      "note": {
+        "en": "Medicaid outpatient drug coverage and state preferred drug lists.",
+        "es": "Cobertura de medicamentos ambulatorios de Medicaid y listas estatales de medicamentos preferidos."
+      }
+    },
+    {
+      "name": "KFF: Medicare coverage and Part D analysis",
+      "url": "https://www.kff.org/medicare/",
+      "note": {
+        "en": "Independent analysis of Part D formularies, tiers, and plan variation.",
+        "es": "Análisis independiente de formularios, niveles y variación de planes de la Parte D."
+      }
+    }
+  ],
+  "topicCluster": "event-sep",
+  "keyTerms": {
+    "en": [
+      "plan dropped my drug from formulary",
+      "formulary exception request 2026",
+      "drug removed from formulary what to do",
+      "switch plans drug not covered 2026",
+      "Part D formulary change appeal"
+    ],
+    "es": [
+      "plan eliminó mi medicamento del formulario",
+      "excepción al formulario 2026",
+      "medicamento eliminado del formulario qué hacer",
+      "cambiar de plan medicamento no cubierto 2026"
+    ]
+  },
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "documentsNeeded": {
+    "en": [
+      "Plan ID card with member and group numbers",
+      "Formulary change notice, Medicare Annual Notice of Change, or Marketplace renewal notice",
+      "Pharmacy claim rejection or receipt showing the cash price",
+      "Prescriber supporting statement naming the diagnosis and why covered alternatives will not work",
+      "Medication history showing covered alternatives you tried, with dates and results",
+      "Written denial letter with its date (starts the 65-day Part D or 180-day Marketplace appeal clock)",
+      "Form 1095-A, if you switch Marketplace plans and need to reconcile 2026 tax credits"
+    ],
+    "es": [
+      "Tarjeta del plan con números de miembro y de grupo",
+      "Aviso de cambio del formulario, Aviso Anual de Cambios de Medicare o aviso de renovación del Mercado",
+      "Rechazo de reclamo de la farmacia o recibo con el precio en efectivo",
+      "Declaración de apoyo del médico con el diagnóstico y por qué las alternativas cubiertas no funcionarán",
+      "Historial de medicamentos con las alternativas cubiertas que probó, con fechas y resultados",
+      "Carta de denegación escrita con su fecha (inicia el plazo de apelación de 65 días de la Parte D o 180 días del Mercado)",
+      "Formulario 1095-A, si cambia de plan del Mercado y debe conciliar los créditos fiscales de 2026"
+    ]
+  },
+  "commonDenialReasons": {
+    "en": [
+      "Exception request filed without a prescriber supporting statement",
+      "No record that covered alternatives were tried, failed, or are unsafe for you",
+      "Tiering exception requested for a specialty-tier drug, which Part D does not allow",
+      "Appeal filed after the 65-day Part D or 180-day Marketplace deadline",
+      "Request sent to the wrong plan or for the wrong plan year (2026 versus 2027 formulary)"
+    ],
+    "es": [
+      "Solicitud de excepción presentada sin declaración de apoyo del médico",
+      "Sin registro de que las alternativas cubiertas se probaron, fallaron o no son seguras para usted",
+      "Excepción de nivel solicitada para un medicamento de nivel de especialidad, lo cual la Parte D no permite",
+      "Apelación presentada después del plazo de 65 días de la Parte D o 180 días del Mercado",
+      "Solicitud enviada al plan equivocado o para el año de plan equivocado (formulario 2026 frente a 2027)"
+    ]
+  }
+}
