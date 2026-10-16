@@ -73,11 +73,12 @@ Most immigrants who become lawful permanent residents must wait five years befor
 
 Exceptions to the five-year bar include:
 
-- Refugees and asylees (qualify immediately, for a limited period after arrival)
+- Green card holders who came as refugees or asylees
 - Veterans and their families
-- Survivors of trafficking with a T visa
 - Amerasian immigrants
 - Cuban and Haitian entrants (eligible immediately in most states)
+
+Since October 1, 2026, full Medicaid and CHIP are limited to citizens, green card holders, Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau. Refugees, asylees and other immigrants without a green card generally no longer qualify, though some states still cover lawfully residing children and pregnant women.
 
 ### State Options to Waive the Waiting Period
 
@@ -150,7 +151,7 @@ Use your expected gross income for the 2026 calendar year. Include all household
 
 ### Step 3: Check whether your state expanded Medicaid
 
-If you are lawfully present and have income under 138% FPL, Medicaid in expansion states is the best option. Use the [CoveredUSA eligibility screener](/screener) to check both Medicaid and ACA eligibility at the same time.
+If you meet the Medicaid immigration status rules above and have income under 138% FPL, Medicaid in expansion states is the best option. Use the [CoveredUSA eligibility screener](/screener) to check both Medicaid and ACA eligibility at the same time.
 
 ### Step 4: Compare your options
 
@@ -183,7 +184,7 @@ Yes. Lawful permanent residents (green card holders) can purchase ACA Marketplac
 
 ### Do immigrants have to wait five years for Medicaid?
 
-Most lawful permanent residents must wait five years after receiving their green card before enrolling in federal Medicaid. However, many states waive this waiting period for children and pregnant immigrants. Refugees, asylees, and certain trafficking survivors are exempt from the five-year wait entirely.
+Most lawful permanent residents must wait five years after receiving their green card before enrolling in federal Medicaid. However, many states waive this waiting period for children and pregnant immigrants. Green card holders who came as refugees or asylees are exempt from the five-year wait. Since October 1, 2026, refugees, asylees and other immigrants without a green card generally no longer qualify, though some states still cover lawfully residing children and pregnant women.
 
 ### Can undocumented immigrants get health insurance in the US?
 
