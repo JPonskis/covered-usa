@@ -17,6 +17,7 @@ import {
   type ReferenceTableCell,
 } from '@/components/reference';
 import { getFPL } from '@/lib/eligibility/fpl';
+import { nursingHomeIncomeLimitMonthly } from '@/lib/eligibility/constants';
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -120,10 +121,6 @@ const FAQS_EN = [
     question: 'What if my income is just over the Medicaid limit?',
     answer: 'If your income is slightly above the Medicaid limit, you may qualify for ACA marketplace subsidies. In some states there are also spend-down programs that let you qualify for Medicaid by deducting medical expenses from your income.',
   },
-  {
-    question: 'What is the Medicaid Nursing Home income limit in 2026?',
-    answer: 'For long-term care Medicaid (Nursing Home coverage), the institutional income limit is $2,982 per month in most states as of 2026. This applies to elderly and disabled adults, regardless of MAGI rules.',
-  },
 ];
 
 const FAQS_ES = [
@@ -147,11 +144,32 @@ const FAQS_ES = [
     question: '¿Qué pasa si mis ingresos están justo por encima del límite de Medicaid?',
     answer: 'Si sus ingresos están ligeramente por encima del límite de Medicaid, puede calificar para subsidios del mercado del ACA. En algunos estados también hay programas de "spend-down" que le permiten calificar para Medicaid deduciendo gastos médicos.',
   },
-  {
-    question: '¿Cuál es el límite de ingresos de Medicaid para hogares de ancianos en 2026?',
-    answer: 'Para el Medicaid de cuidado a largo plazo (cobertura de hogar de ancianos), el límite de ingresos institucional es de $2,982 por mes en la mayoría de los estados a partir de 2026.',
-  },
 ];
+
+/* The nursing-home (institutional) income limit is 300% of the SSI federal benefit rate (42 CFR
+   435.1005), so it moves every January 1 with SSI (2026: three times $994; from January 1, 2027:
+   three times $1,029). It is read from the dated SSI table at render time
+   (nursingHomeIncomeLimitMonthly in lib/eligibility/constants.ts), never typed, and the page
+   revalidates hourly so it switches on the day without a deploy (jan1-other, eligibility audit
+   2026-10; W8-10, W9_critic_W8). */
+function nursingHome() {
+  const nh = nursingHomeIncomeLimitMonthly();
+  return { amount: `$${nh.amount.toLocaleString('en-US')}`, year: nh.year };
+}
+function nursingHomeFaq(isEs: boolean) {
+  const { amount, year } = nursingHome();
+  return isEs
+    ? {
+        question: `¿Cuál es el límite de ingresos de Medicaid para hogares de ancianos en ${year}?`,
+        answer: `Para el Medicaid de cuidado a largo plazo (cobertura de hogar de ancianos), el límite de ingresos institucional es de ${amount} por mes en la mayoría de los estados a partir de ${year}.`,
+      }
+    : {
+        question: `What is the Medicaid Nursing Home income limit in ${year}?`,
+        answer: `For long-term care Medicaid (Nursing Home coverage), the institutional income limit is ${amount} per month in most states as of ${year}. This applies to elderly and disabled adults, regardless of MAGI rules.`,
+      };
+}
+
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
@@ -178,7 +196,8 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
   setRequestLocale(locale);
 
   const isEs = locale === 'es';
-  const faqs = isEs ? FAQS_ES : FAQS_EN;
+  const faqs = [...(isEs ? FAQS_ES : FAQS_EN), nursingHomeFaq(isEs)];
+  const nursingHomeLimit = nursingHome().amount;
 
   const faqSchema = getFAQSchema(faqs);
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -266,8 +285,8 @@ export default async function MedicaidIncomeLimitsPage({ params }: PageProps) {
             <QuickAnswer
               locale={locale}
               text={isEs
-                ? 'A partir de 2026, el límite de ingresos de Medicaid en estados con expansión es el 138% del Nivel Federal de Pobreza: aproximadamente $22,024 al año para una persona sola y $45,540 para una familia de cuatro. Los 40 estados de expansión más D.C. cubren a adultos hasta este límite. Los estados sin expansión (incluidos Texas, Florida y Mississippi) tienen reglas mucho más estrictas. El límite institucional para el Medicaid de hogares de ancianos es $2,982 al mes.'
-                : 'As of 2026, the Medicaid income limit in expansion states is 138% of the Federal Poverty Level: approximately $22,024 per year for a single person and $45,540 for a family of four. The 40 expansion states plus D.C. cover adults up to this limit. Non-expansion states (including Texas, Florida, and Mississippi) have much stricter rules. The institutional limit for Nursing Home Medicaid is $2,982 per month.'}
+                ? `A partir de 2026, el límite de ingresos de Medicaid en estados con expansión es el 138% del Nivel Federal de Pobreza: aproximadamente $22,024 al año para una persona sola y $45,540 para una familia de cuatro. Los 40 estados de expansión más D.C. cubren a adultos hasta este límite. Los estados sin expansión (incluidos Texas, Florida y Mississippi) tienen reglas mucho más estrictas. El límite institucional para el Medicaid de hogares de ancianos es ${nursingHomeLimit} al mes.`
+                : `As of 2026, the Medicaid income limit in expansion states is 138% of the Federal Poverty Level: approximately $22,024 per year for a single person and $45,540 for a family of four. The 40 expansion states plus D.C. cover adults up to this limit. Non-expansion states (including Texas, Florida, and Mississippi) have much stricter rules. The institutional limit for Nursing Home Medicaid is ${nursingHomeLimit} per month.`}
             />
           </div>
         </div>

@@ -2,10 +2,17 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { setRequestLocale } from 'next-intl/server';
 import { getFAQSchema, getBreadcrumbSchema, buildSchemaGraph } from '@/lib/structured-data';
-import { MEDICARE_YEAR, PART_B_PREMIUM_MONTHLY } from '@/lib/eligibility/programs/medicare-savings';
+import { medicareFor } from '@/lib/eligibility/constants';
 
-/** The Part B premium, read from the engine so this page cannot drift from it again (audit A20). */
-const PART_B = `$${PART_B_PREMIUM_MONTHLY.toFixed(2)}`;
+/** The Part B premium in force when the page is rendered, from the engine's dated Medicare table,
+ *  with the year it belongs to (audit A20; jan1-other). The page revalidates hourly, so January 1
+ *  switches it without a deploy once CMS's figure is in the table. */
+function partB() {
+  const m = medicareFor();
+  return { text: `$${m.partBPremiumMonthly.toFixed(2)}`, year: m.figureYear.partBPremiumMonthly };
+}
+
+export const revalidate = 3600;
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -55,7 +62,9 @@ const ENROLLMENT_PERIODS = [
   },
 ];
 
-const FAQS = [
+function getFaqs() {
+  const { text: PART_B, year: PART_B_YEAR } = partB();
+  return [
   {
     question: 'What is the Medicare eligibility age?',
     answer: 'The standard Medicare eligibility age is 65. You become eligible for Medicare Part A and Part B when you turn 65, as long as you or your spouse worked and paid Medicare taxes for at least 10 years (40 quarters).',
@@ -66,7 +75,7 @@ const FAQS = [
   },
   {
     question: 'Is Medicare free?',
-    answer: `Medicare Part A (hospital coverage) is free for most people who paid Medicare taxes for 10+ years. Part B (medical coverage) has a standard premium of ${PART_B}/month in ${MEDICARE_YEAR}. Part D (drugs) and Medicare Advantage plans have varying costs.`,
+    answer: `Medicare Part A (hospital coverage) is free for most people who paid Medicare taxes for 10+ years. Part B (medical coverage) has a standard premium of ${PART_B}/month in ${PART_B_YEAR}. Part D (drugs) and Medicare Advantage plans have varying costs.`,
   },
   {
     question: 'What is the difference between Medicare and Medicaid?',
@@ -80,7 +89,8 @@ const FAQS = [
     question: 'When should I sign up for Medicare?',
     answer: 'Sign up during your Initial Enrollment Period: starting 3 months before your 65th birthday month and ending 3 months after. If you miss this window without creditable coverage from an employer, you may face a permanent late enrollment penalty.',
   },
-];
+  ];
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
@@ -102,7 +112,9 @@ export default async function MedicareEligibilityPage({ params }: PageProps) {
 
   const isEs = locale === 'es';
 
-  const faqSchema = getFAQSchema(FAQS);
+  const { text: PART_B, year: PART_B_YEAR } = partB();
+  const faqs = getFaqs();
+  const faqSchema = getFAQSchema(faqs);
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: isEs ? 'Inicio' : 'Home', url: `/${locale}` },
     { name: isEs ? 'Elegibilidad Medicare' : 'Medicare Eligibility', url: `/${locale}/medicare-eligibility` },
@@ -198,7 +210,7 @@ export default async function MedicareEligibilityPage({ params }: PageProps) {
                 <tr style={{ background: '#1e3a5f', color: 'white' }}>
                   <th className="text-left px-4 py-3 font-semibold">{isEs ? 'Parte' : 'Part'}</th>
                   <th className="text-left px-4 py-3 font-semibold">{isEs ? 'Cobertura' : 'Coverage'}</th>
-                  <th className="text-left px-4 py-3 font-semibold">{isEs ? `Costo ${MEDICARE_YEAR}` : `${MEDICARE_YEAR} Cost`}</th>
+                  <th className="text-left px-4 py-3 font-semibold">{isEs ? `Costo ${PART_B_YEAR}` : `${PART_B_YEAR} Cost`}</th>
                   <th className="text-left px-4 py-3 font-semibold">{isEs ? 'Notas' : 'Notes'}</th>
                 </tr>
               </thead>
@@ -303,7 +315,7 @@ export default async function MedicareEligibilityPage({ params }: PageProps) {
             {isEs ? 'Preguntas Frecuentes sobre Medicare' : 'Frequently Asked Questions About Medicare'}
           </h2>
           <div className="space-y-6">
-            {FAQS.map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div
                 key={i}
                 className="rounded-xl p-6"

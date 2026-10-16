@@ -11,16 +11,12 @@
 import type { ScreenerInput, ProgramResult } from '../types';
 import { getFPLPercentage } from '../fpl';
 import { getStateData } from '../../states';
+import { medicareFor } from '../constants';
 
-/** The year the Medicare figures in this file are valid for. CMS announces the next year's
- *  Part B premium each November and it takes effect January 1. check:constants fails the build
- *  once this year is past, so roll the premium AND this year together. */
-export const MEDICARE_YEAR = 2026;
-
-/** Standard Part B premium for MEDICARE_YEAR. CMS 2026 fact sheet: "The standard monthly
- *  premium for Medicare Part B enrollees will be $202.90 for 2026". Pages import this rather
- *  than retype it (audit A20: /medicare-eligibility showed the 2025 premium under "2026 Cost"). */
-export const PART_B_PREMIUM_MONTHLY = 202.90;
+/* The Part B premium and the MSP resource limits come from the dated Medicare table in
+   ../constants.ts (medicareFor), read at the time of the question. They used to be two
+   constants here (the year and the premium) that check:constants failed every build over
+   from January 1 until somebody rolled them by hand (jan1-other, eligibility audit 2026-10). */
 
 const PROGRAM_VALUES = {
   qmb: 5000,
@@ -28,8 +24,14 @@ const PROGRAM_VALUES = {
   qi: 2435
 };
 
-export function checkMedicareSavings(input: ScreenerInput): ProgramResult {
+/** `now` picks the Medicare row in force (constants.ts); the screener passes nothing. */
+export function checkMedicareSavings(input: ScreenerInput, now: Date = new Date()): ProgramResult {
   const { annualIncome, householdSize, age, insuranceSource, state = 'TX' } = input;
+  const m = medicareFor(now);
+  const partB = Math.round(m.partBPremiumMonthly);
+  // Resource limits, labelled with the year they belong to (a 2026 figure carried into 2027
+  // while CMS has not published 2027's says "in 2026", never "in 2027").
+  const resourceLine = `Most states also apply a resource limit (about $${m.mspResourceSingle.toLocaleString('en-US')} for an individual or $${m.mspResourceCouple.toLocaleString('en-US')} for a couple in ${m.figureYear.mspResourceSingle}); some states, like NY, have no asset test.`;
 
   const stateData = getStateData(state);
   const mainPortal = stateData?.state?.mainPortal || 'https://www.benefits.gov';
@@ -58,7 +60,7 @@ export function checkMedicareSavings(input: ScreenerInput): ProgramResult {
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = PROGRAM_VALUES.qmb;
     result.name = 'Medicare Savings Program (QMB)';
-    result.reason = `Income at ${fplPercent}% FPL qualifies for QMB - covers Part A & B premiums, deductibles, and coinsurance. Most states also apply a resource limit (about $9,950 for an individual or $14,910 for a couple in 2026); some states, like NY, have no asset test.`;
+    result.reason = `Income at ${fplPercent}% FPL qualifies for QMB - covers Part A & B premiums, deductibles, and coinsurance. ${resourceLine}`;
     return result;
   }
 
@@ -67,7 +69,7 @@ export function checkMedicareSavings(input: ScreenerInput): ProgramResult {
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = PROGRAM_VALUES.slmb;
     result.name = 'Medicare Savings Program (SLMB)';
-    result.reason = `Income at ${fplPercent}% FPL qualifies for SLMB - covers Part B premium (~$${Math.round(PART_B_PREMIUM_MONTHLY)}/month). Most states also apply a resource limit (about $9,950 for an individual or $14,910 for a couple in 2026); some states, like NY, have no asset test.`;
+    result.reason = `Income at ${fplPercent}% FPL qualifies for SLMB - covers Part B premium (~$${partB}/month). ${resourceLine}`;
     return result;
   }
 
@@ -76,7 +78,7 @@ export function checkMedicareSavings(input: ScreenerInput): ProgramResult {
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = PROGRAM_VALUES.qi;
     result.name = 'Medicare Savings Program (QI)';
-    result.reason = `Income at ${fplPercent}% FPL qualifies for QI - covers Part B premium (~$${Math.round(PART_B_PREMIUM_MONTHLY)}/month). Most states also apply a resource limit (about $9,950 for an individual or $14,910 for a couple in 2026); some states, like NY, have no asset test.`;
+    result.reason = `Income at ${fplPercent}% FPL qualifies for QI - covers Part B premium (~$${partB}/month). ${resourceLine}`;
     return result;
   }
 
