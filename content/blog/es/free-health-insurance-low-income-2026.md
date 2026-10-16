@@ -206,7 +206,7 @@ Los trabajadores independientes califican para los mismos programas que todos lo
 
 ### ¿Tengo que ser ciudadano de EE.UU. para obtener un seguro médico gratuito?
 
-Medicaid y CHIP requieren ciudadanía estadounidense o estatus migratorio que califique. Los residentes permanentes legales, refugiados y ciertos otros inmigrantes documentados pueden calificar, aunque algunos deben esperar cinco años después de obtener el estatus legal. Los inmigrantes indocumentados generalmente no califican para Medicaid federal excepto para servicios de emergencia. Algunos estados usan fondos exclusivamente estatales para cubrir grupos más amplios.
+Medicaid y CHIP requieren ciudadanía estadounidense o estatus migratorio que califique. Desde el 1 de octubre de 2026, Medicaid y CHIP completos se limitan a ciudadanos, residentes permanentes (con green card), entrantes cubanos y haitianos, y ciudadanos de Micronesia, las Islas Marshall y Palaos. Los refugiados, asilados y otros inmigrantes sin green card por lo general ya no califican, aunque algunos estados todavía cubren a niños y mujeres embarazadas que residen legalmente en el país. La mayoría de los residentes permanentes deben haber tenido su green card por 5 años, a menos que hayan llegado como refugiados o asilados. Los inmigrantes indocumentados generalmente no califican para Medicaid federal excepto para servicios de emergencia. Algunos estados usan fondos exclusivamente estatales para cubrir grupos más amplios.
 
 ### ¿Cuál es el límite de ingresos para un seguro médico gratuito para una familia de 4?
 

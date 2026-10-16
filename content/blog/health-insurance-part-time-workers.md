@@ -23,7 +23,7 @@ The good news is that the individual market has real options, and many part-time
 
 ## Option 1: Medicaid (Free or Near-Free Coverage)
 
-In the 40 states plus Washington D.C. that expanded Medicaid under the ACA, adults qualify for Medicaid based solely on income. If your household income falls at or below 138% of the 2026 federal poverty level (FPL), you qualify regardless of employment status, hours worked, or job type.
+In the 40 states plus Washington D.C. that expanded Medicaid under the ACA, income is the main test for adults. If your household income falls at or below 138% of the 2026 federal poverty level (FPL), you meet the income test regardless of employment status, hours worked, or job type. Under a 2025 federal law, adults in the expansion group may need to show work, school, job training or volunteering (80 hours a month) to get and keep coverage, starting as early as January 2027. Nebraska and Montana already enforce it, and Iowa requires it for adults who apply on or after December 1, 2026. Parents of a child 13 or younger, pregnant women, and people with a serious illness or disability can be exempt.
 
 Based on 2026 federal poverty guidelines published by [HHS (aspe.hhs.gov)](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines), the 138% Medicaid threshold works out to approximately:
 

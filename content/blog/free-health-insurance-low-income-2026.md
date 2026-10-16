@@ -205,7 +205,7 @@ Self-employed individuals qualify for the same programs as everyone else. Income
 
 ### Do I have to be a U.S. citizen to get free health insurance?
 
-Medicaid and CHIP require U.S. citizenship or qualifying immigration status. Lawful permanent residents, refugees, and certain other documented immigrants may qualify, though some must wait five years after gaining lawful status. Undocumented immigrants generally do not qualify for federal Medicaid except for emergency services. Some states use state-only funds to cover broader groups.
+Medicaid and CHIP require U.S. citizenship or qualifying immigration status. Since October 1, 2026, full Medicaid and CHIP are limited to citizens, green card holders, Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau. Refugees, asylees and other immigrants without a green card generally no longer qualify, though some states still cover lawfully residing children and pregnant women. Most green card holders must have had their card for 5 years, unless they came as a refugee or asylee. Undocumented immigrants generally do not qualify for federal Medicaid except for emergency services. Some states use state-only funds to cover broader groups.
 
 ### What is the income limit for free health insurance for a family of 4?
 

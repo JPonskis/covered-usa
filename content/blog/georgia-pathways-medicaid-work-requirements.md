@@ -132,12 +132,12 @@ If you are disenrolled, you can reapply once you have qualifying activity docume
 
 ## Georgia Pathways vs. Full Medicaid Expansion
 
-Georgia is one of only ten states that has not fully expanded Medicaid under the ACA. Full expansion would cover all adults up to 138% FPL with no activity requirement. Pathways covers adults up to 100% FPL with the 80-hour work requirement.
+Georgia is one of only ten states that has not fully expanded Medicaid under the ACA. Full expansion would cover adults up to 138% FPL, though under a 2025 federal law expansion adults may also need to show 80 hours a month of work, school, job training or volunteering, starting as early as January 2027. Pathways covers adults up to 100% FPL with the 80-hour work requirement.
 
 | Feature | Georgia Pathways | Full ACA Expansion |
 |:--------|:----------------:|:-----------------:|
 | Income limit | 100% FPL | 138% FPL |
-| Work requirement | Yes, 80 hrs/month | No |
+| Work requirement | Yes, 80 hrs/month | Yes, 80 hrs/month under federal law, starting as early as January 2027 |
 | Current enrollment (2026) | ~8,000 | Would cover ~240,000+ |
 | Age range | 19-64 | 19-64 |
 | Reporting | Annual | N/A |
@@ -183,7 +183,7 @@ The income limit is 100% of the Federal Poverty Level. For 2026, that is $15,960
 
 ### Does Georgia have full Medicaid expansion?
 
-No. Georgia is one of about ten states that has not adopted full ACA Medicaid expansion. Instead, Georgia offers Pathways to Coverage as a limited expansion with an 80-hour monthly activity requirement. Full expansion would cover adults up to 138% FPL without a work requirement.
+No. Georgia is one of about ten states that has not adopted full ACA Medicaid expansion. Instead, Georgia offers Pathways to Coverage as a limited expansion with an 80-hour monthly activity requirement. Full expansion would cover adults up to 138% FPL, with the same kind of 80-hour requirement under federal law starting as early as January 2027.
 
 ### Who is exempt from the Georgia Pathways work requirement?
 

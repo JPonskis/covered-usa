@@ -154,7 +154,7 @@ You will not receive premium tax credits for a plan you enrolled in while Medica
 
 ### Is Medicaid only for people who are unemployed?
 
-No. Medicaid eligibility is based on income, not employment status. You can be employed and still qualify for Medicaid if your wages fall below the income threshold for your household size.
+No. Medicaid eligibility is based mainly on income, and you can be employed and still qualify for Medicaid if your wages fall below the income threshold for your household size. Under a 2025 federal law, adults in the expansion group may need to show work, school, job training or volunteering (80 hours a month) to get and keep coverage, starting as early as January 2027. Nebraska and Montana already enforce it, and Iowa requires it for adults who apply on or after December 1, 2026. Work hours count toward it.
 
 ### Does Medicaid cover the same things as a Marketplace plan?
 

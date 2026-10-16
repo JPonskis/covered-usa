@@ -228,4 +228,4 @@ Several free resources can help. Legal aid organizations in your state often ass
 
 ### Are more Medicaid disenrollments expected in 2026?
 
-Yes. Federal legislation under consideration in 2026 includes work requirements and more frequent eligibility checks for certain adults. The Congressional Budget Office and KFF have projected that millions more could lose coverage if these policies take effect. Staying current on your state's Medicaid renewal requirements and keeping your contact information up to date with your state agency are the most important steps you can take now.
+Yes. A federal law enacted in 2025 adds work requirements, starting as early as January 2027 (Nebraska and Montana already enforce them), and renewals every 6 months for adults in the expansion group starting in 2027. The Congressional Budget Office and KFF have projected that millions more could lose coverage as these policies take effect. Staying current on your state's Medicaid renewal requirements and keeping your contact information up to date with your state agency are the most important steps you can take now.

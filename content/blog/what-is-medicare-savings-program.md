@@ -19,7 +19,7 @@ Each program covers a different set of Medicare costs, and each has its own inco
 QMB is the most comprehensive option. It covers:
 
 - Medicare Part A premium (if you owe one)
-- Medicare Part B premium ($185.00 per month in 2026)
+- Medicare Part B premium ($202.90 per month in 2026)
 - Part A and Part B deductibles
 - Medicare copayments and coinsurance
 
@@ -119,15 +119,15 @@ Most states process applications within 45 days. Once approved, coverage general
 
 ## How Much Can You Save?
 
-The savings depend on which program you qualify for, but even the most limited program (QI or SLMB) eliminates the $185.00 monthly Part B premium. That is $2,220 per year just from premium savings.
+The savings depend on which program you qualify for, but even the most limited program (QI or SLMB) eliminates the $202.90 monthly Part B premium. That is $2,434.80 per year just from premium savings.
 
 For QMB enrollees, the total value of cost-sharing protection plus premium coverage plus Extra Help can easily exceed $7,000 to $10,000 annually depending on health service use.
 
 | Program | What You Save |
 |---------|--------------|
-| QMB | Part B premium ($2,220/yr) + deductibles + copays + Extra Help (~$5,700/yr) |
-| SLMB | Part B premium ($2,220/yr) + Extra Help (~$5,700/yr) |
-| QI | Part B premium ($2,220/yr) + Extra Help (~$5,700/yr) |
+| QMB | Part B premium ($2,434.80/yr) + deductibles + copays + Extra Help (~$5,700/yr) |
+| SLMB | Part B premium ($2,434.80/yr) + Extra Help (~$5,700/yr) |
+| QI | Part B premium ($2,434.80/yr) + Extra Help (~$5,700/yr) |
 | QDWI | Part A premium (up to $518/mo in 2026 = up to $6,216/yr) |
 
 ## States with Higher Limits

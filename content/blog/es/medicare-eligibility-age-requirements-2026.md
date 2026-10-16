@@ -24,7 +24,7 @@ Si tiene menos de 65 años, puede calificar para Medicare si:
 | Parte | Cobertura | Costo (2026) |
 |---|---|---|
 | Parte A | Hospitalización | Gratis para la mayoría |
-| Parte B | Visitas médicas, ambulatorio | ~$185/mes de prima |
+| Parte B | Visitas médicas, ambulatorio | $202.90/mes de prima (estándar) |
 | Parte C | Planes Medicare Advantage | Varía |
 | Parte D | Medicamentos recetados | Varía |
 

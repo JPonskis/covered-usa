@@ -147,7 +147,7 @@ For a comprehensive look at Medicaid income thresholds in your state, visit the 
 
 ### Do I qualify for Medicaid if I am unemployed in 2026?
 
-Yes, as long as your income falls within your state's Medicaid limits. Unemployment benefits count as income under MAGI rules. If you lose your job and your total household income drops to or below 138% FPL (in expansion states), you will likely qualify. You can apply at any time -- Medicaid has no open enrollment period.
+Yes, as long as your income falls within your state's Medicaid limits. Unemployment benefits count as income under MAGI rules. If you lose your job and your total household income drops to or below 138% FPL (in expansion states), you will likely meet the income test. Nebraska and Montana already require expansion adults to show 80 hours a month of work, school, job training or volunteering unless exempt, Iowa does for adults who apply on or after December 1, 2026, and other expansion states can start as early as January 2027. You can apply at any time, because Medicaid has no open enrollment period.
 
 ### Can I get Medicaid if I have a job?
 

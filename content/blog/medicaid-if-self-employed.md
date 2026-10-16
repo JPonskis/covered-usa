@@ -121,13 +121,13 @@ Self-employment income changes. If your income goes up significantly mid-year, y
 
 ## 2026 Work Requirements: What Self-Employed People Need to Know
 
-Starting in 2026, some states are rolling out Medicaid work requirements for expansion enrollees. These rules require non-exempt adults to demonstrate at least 80 hours per month of work, volunteering, or job training.
+A 2025 federal law requires Medicaid work requirements for expansion enrollees, starting as early as January 2027, and some states started in 2026. These rules require non-exempt adults to demonstrate at least 80 hours per month of work, volunteering, or job training to get and keep coverage.
 
 Self-employed people technically satisfy work requirements by running their business, but the documentation burden is higher. W-2 employees get automatically verified through employer data. Self-employed workers often have to submit paperwork manually.
 
 If work requirements are active in your state, keep records of your business activity. Invoices, client contracts, bank deposits, and your Schedule C all serve as documentation.
 
-States currently implementing work requirements include Arkansas (on and off since 2018), Georgia (Georgia Pathways program), and others pending federal approval. Check your state agency for the current status.
+Nebraska and Montana already enforce the requirement, Iowa requires it for adults who apply on or after December 1, 2026, and Georgia requires work hours through its Georgia Pathways program. Check your state agency for its start date.
 
 ## What If Your Income Is Too High for Medicaid?
 

@@ -166,7 +166,7 @@ If your income falls below 100% of FPL and you live in a non-expansion state, yo
 
 ### Can I get health insurance if I am not employed?
 
-Yes. Unemployment or lack of employer coverage does not disqualify you from any of the major programs. Losing job-based coverage actually triggers a Special Enrollment Period for the ACA Marketplace, and Medicaid and CHIP eligibility is based on income and household size, not employment status.
+Yes. Unemployment or lack of employer coverage does not disqualify you from any of the major programs. Losing job-based coverage actually triggers a Special Enrollment Period for the ACA Marketplace, and Medicaid and CHIP eligibility is based mainly on income and household size. Under a 2025 federal law, adults in the expansion group may need to show work, school, job training or volunteering (80 hours a month) to get and keep coverage, starting as early as January 2027. Nebraska and Montana already enforce it, and Iowa requires it for adults who apply on or after December 1, 2026. Parents of a child 13 or younger, pregnant women, and people with a serious illness or disability can be exempt.
 
 ### What is the income limit to get free health insurance in 2026?
 
