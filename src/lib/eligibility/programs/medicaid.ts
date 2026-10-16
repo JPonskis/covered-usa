@@ -112,6 +112,9 @@ function medicaidResult(input: ScreenerInput): ProgramResult {
     result.eligible = true;
     result.eligibilityStatus = 'likely_eligible';
     result.estimatedValue = 5000 * numChildren;
+    /* This card now carries the children's dollars, so the CHIP card must not carry them again
+       (index.ts, "ONE CHILD, ONE COUNT"). */
+    result.includesChildren = true;
     result.reason = `Children under 19 qualify for ${programName}/CHIP up to ${childLimitFpl}% FPL`;
 
     /* The parent's own coverage. Expansion states and Wisconsin cover the parent on income alone;

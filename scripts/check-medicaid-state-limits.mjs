@@ -32,11 +32,17 @@
  *      children's limit gets the relative-caregiver 'maybe' in the same words on both sites.
  *      Here also: the CHIP card over the line is a no that names the child-only application,
  *      not the old +20-point "deductions" maybe.
+ * ADDED BY cusa-total-double-count (2026-10-16):
+ *  T.  One child, one count. The Medicaid card's children's answer and the CHIP card priced the same
+ *      children, so the total counted each child twice. The whole engine is run on the audit's
+ *      people and swept over every state; the CHIP card adds $0 when the Medicaid card already
+ *      carries the children, and keeps them when the Medicaid card is a mother's pregnancy coverage.
  */
 import { readFileSync } from 'node:fs';
 import { checkMedicaid } from '../src/lib/eligibility/programs/medicaid.ts';
 import { checkACA } from '../src/lib/eligibility/programs/aca.ts';
 import { checkCHIP } from '../src/lib/eligibility/programs/chip.ts';
+import { checkEligibility } from '../src/lib/eligibility/index.ts';
 import { getFPL } from '../src/lib/eligibility/fpl.ts';
 import { getStateData, ALL_STATES } from '../src/lib/states/index.ts';
 
@@ -354,6 +360,102 @@ const GP_OVER_NEXT = 'Apply for the child at https://www.yourtexasbenefits.com o
       m.eligibilityStatus === 'may_qualify' && m.estimatedValue === 0 && /raising grandchildren, or a relative's children/.test(m.reason),
       `got ${m.eligibilityStatus} $${m.estimatedValue}: "${m.reason}"`);
   }
+}
+
+// ── T. One child, one count (audit cusa-total-double-count) ───────────────────────────────────
+// A child gets Medicaid OR CHIP, never both. The Medicaid card's children's answer and the CHIP
+// card test the same combined line and both priced the same children at $5,000 each, so the total
+// counted every child under the line twice. The children are now counted once, on the Medicaid
+// card (which names both programs, as BenefitsUSA's does), and the CHIP card says so at $0. When
+// the Medicaid card is the mother's pregnancy coverage, the CHIP card still carries the children.
+// Runs the whole engine (index.ts), because the rule lives where the cards meet, not in either one.
+{
+  const run = (o) => checkEligibility(person(o));
+  const card = (r, id) => r.programs.find((p) => p.id === id);
+  const v = (r, id) => card(r, id)?.estimatedValue ?? 0;
+  const counted = (r) => r.programs.filter((p) => (p.eligible === true || p.eligible === 'maybe') && !p.excludedFromTotal);
+  const show = (r) => `total $${r.totalPotentialValue}: ${counted(r).map((p) => `${p.id} $${p.estimatedValue}`).join(', ')}`;
+  const SAID = /That coverage is already counted on the .+ card, so it is not added again here: a child gets Medicaid or CHIP, never both\./;
+
+  // The people, before -> after (notes/cusa-total-double-count.md). BenefitsUSA's same household in brackets.
+  const ohUnder = run({ state: 'OH', householdSize: 4, numChildren: 2, annualIncome: 40000 });
+  check('T  OH family of 4, 2 kids, $40,000 (121%): total $15,000, was $25,000 (BenefitsUSA $15,000)',
+    ohUnder.totalPotentialValue === 15000 && v(ohUnder, 'medicaid') === 15000 && v(ohUnder, 'chip') === 0, show(ohUnder));
+  const txUnder = run({ state: 'TX', householdSize: 4, numChildren: 2, annualIncome: 40000 });
+  check('T  TX family of 4, 2 kids, $40,000 (121%, under the line): the kids once, $10,000 on the Medicaid card; CHIP $0, still listed as likely',
+    v(txUnder, 'medicaid') === 10000 && card(txUnder, 'medicaid').includesChildren === true && v(txUnder, 'chip') === 0
+      && card(txUnder, 'chip').eligibilityStatus === 'likely_eligible' && SAID.test(card(txUnder, 'chip').reason)
+      && txUnder.totalPotentialValue === v(txUnder, 'aca') + 10000, show(txUnder));
+  const txBetween = run({ state: 'TX', householdSize: 4, numChildren: 2, annualIncome: 60000 });
+  check('T  TX family of 4, 2 kids, $60,000 (182%, the between-the-lines family; the rows hold one combined line): the kids once, $10,000',
+    v(txBetween, 'medicaid') === 10000 && v(txBetween, 'chip') === 0 && SAID.test(card(txBetween, 'chip').reason)
+      && txBetween.totalPotentialValue === v(txBetween, 'aca') + 10000, show(txBetween));
+  const gpTx = run({ state: 'TX', age: 67, householdSize: 2, numChildren: 1, annualIncome: 15000, currentlyInsured: true, insuranceSource: 'medicare' });
+  check('T  TX grandparent 67 + grandchild, $15,000, on Medicare: the grandchild once ($5,000), total = Medicaid + MSP (was + CHIP $5,000 again)',
+    v(gpTx, 'medicaid') === 5000 && v(gpTx, 'chip') === 0 && gpTx.totalPotentialValue === 5000 + v(gpTx, 'medicare-savings'), show(gpTx));
+  const gpOh = run({ state: 'OH', age: 70, householdSize: 3, numChildren: 2, annualIncome: 30000, currentlyInsured: true, insuranceSource: 'medicare' });
+  check('T  OH grandparent 70 + 2 grandkids, $30,000, on Medicare: $10,000 for the two, once',
+    v(gpOh, 'medicaid') === 10000 && v(gpOh, 'chip') === 0 && gpOh.totalPotentialValue === 10000 + v(gpOh, 'medicare-savings'), show(gpOh));
+  check('T  the CHIP card that adds $0 has no em dash in its words', !card(txUnder, 'chip').reason.includes('—'), card(txUnder, 'chip').reason);
+
+  // CONTROLS: whose answer must not move.
+  const preg = run({ state: 'TX', age: 28, householdSize: 2, numChildren: 1, annualIncome: 30000, isPregnant: true });
+  check('T  CONTROL TX pregnant mother + 1 child, $30,000: her card is HER coverage, so CHIP still carries the child ($5,000, counted)',
+    v(preg, 'medicaid') === 10000 && !card(preg, 'medicaid').includesChildren && v(preg, 'chip') === 5000
+      && preg.totalPotentialValue === v(preg, 'aca') + 10000 + 5000, show(preg));
+  const solo = run({ state: 'OH', householdSize: 1, annualIncome: 20000 });
+  check('T  CONTROL OH single adult, no children, $20,000: total $10,000 unchanged', solo.totalPotentialValue === 10000, show(solo));
+  const couple = run({ state: 'TX', age: 40, householdSize: 2, annualIncome: 45000 });
+  check('T  CONTROL TX couple, no children, $45,000: total is the ACA card alone', couple.totalPotentialValue === v(couple, 'aca') && v(couple, 'aca') > 0, show(couple));
+  const over = run({ state: 'TX', householdSize: 4, numChildren: 2, annualIncome: 90000 });
+  check('T  CONTROL TX family of 4 at $90,000 (over 206): CHIP no, Medicaid the $0 relative-caregiver maybe, total = ACA',
+    card(over, 'chip').eligible === false && v(over, 'medicaid') === 0 && over.totalPotentialValue === v(over, 'aca'), show(over));
+  const onMcd = run({ state: 'TX', householdSize: 4, numChildren: 2, annualIncome: 40000, currentlyInsured: true, insuranceSource: 'medicaid' });
+  check('T  CONTROL TX family already on Medicaid: CHIP no (as before), the kids once on the Medicaid card',
+    card(onMcd, 'chip').eligible === false && v(onMcd, 'medicaid') === 10000, show(onMcd));
+
+  // Every state, every household shape: the children are never priced on both cards, and never on neither.
+  let swept = 0;
+  const sweepFails = [];
+  for (const st of ALL_STATES) {
+    const lim = md(st).childLimitFpl;
+    for (const kids of [1, 2, 3]) {
+      for (const age of [35, 67]) {
+        for (const isPregnant of age === 35 ? [false, true] : [false]) {
+          for (const pct of [50, 100, 138, 160, lim - 1, lim + 2]) {
+            const hh = kids + 1;
+            const r = run({ state: st, age, householdSize: hh, numChildren: kids, isPregnant, annualIncome: Math.round(getFPL(hh, pct, st)) });
+            const m = card(r, 'medicaid');
+            const c = card(r, 'chip');
+            /* Read from the card's words as well as the flag, so this still fails if the flag is
+               ever dropped: these two sentences are the children's answer and nothing else. */
+            const medicaidHasKids = !!m.includesChildren || /^(Children under 19 qualify for|Your household qualifies for)/.test(m.reason);
+            const onMedicaid = medicaidHasKids && m.estimatedValue >= 5000 * kids;
+            const onChip = (c.eligible === true || c.eligible === 'maybe') && c.estimatedValue > 0;
+            const kidsCovered = c.eligible === true || medicaidHasKids;
+            swept++;
+            const who = `${st} ${kids} kid(s), age ${age}${isPregnant ? ', pregnant' : ''}, ${pct}%`;
+            if (onMedicaid && onChip) sweepFails.push(`${who}: children priced on BOTH cards (${show(r)})`);
+            if (kidsCovered && !onMedicaid && !onChip) sweepFails.push(`${who}: children covered but priced on NEITHER card (${show(r)})`);
+            if (onMedicaid && c.eligible !== false && !SAID.test(c.reason)) sweepFails.push(`${who}: the $0 CHIP card does not say where the children are counted ("${c.reason}")`);
+          }
+        }
+      }
+    }
+  }
+  check(`T  every state, 1-3 children, parent / pregnant parent / grandparent, 6 incomes (${swept} households): the children priced on exactly one card`,
+    sweepFails.length === 0 && swept === 51 * 3 * 3 * 6,
+    `${sweepFails.length} failures (swept ${swept} households). First 5:\n        ${sweepFails.slice(0, 5).join('\n        ')}`);
+
+  // The results page prints a card's value only when it is above $0, so the CHIP card that adds
+  // nothing shows no dollar line next to the Medicaid card's. And the page totals nothing itself:
+  // it re-runs this same engine.
+  const client = readFileSync(new URL('../src/components/ResultsClient.tsx', import.meta.url), 'utf8');
+  const page = readFileSync(new URL('../src/app/[locale]/results/[id]/page.tsx', import.meta.url), 'utf8');
+  check('T  results page: a secondary card prints its value only when it is above $0',
+    /\{prog\.estimatedValue > 0 && \(/.test(client), 'ResultsClient.tsx no longer guards the secondary card value with estimatedValue > 0, so a $0 CHIP card would print "$0/yr"');
+  check('T  results page re-runs the whole engine (checkEligibility), where the one-count rule lives',
+    /checkEligibility\(\{/.test(page), 'results/[id]/page.tsx no longer calls checkEligibility');
 }
 
 // ── Invariants over all 51 rows ───────────────────────────────────────────────────────────────

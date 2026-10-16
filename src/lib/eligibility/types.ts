@@ -43,6 +43,10 @@ export interface ProgramResult {
    *  Part B premium that the Medicare Savings Program card already counts). Same field and
    *  meaning as BenefitsUSA's ProgramResult. */
   excludedFromTotal?: boolean;
+  /** Set by the Medicaid card when its estimatedValue includes the household's children (its
+   *  children's answer, which names Medicaid AND CHIP). index.ts reads it so a child is counted
+   *  once: the CHIP card then adds $0 and says where the children are counted. */
+  includesChildren?: boolean;
 }
 
 /** See caveats.ts for the rule, the dates and the sources behind each one. */
