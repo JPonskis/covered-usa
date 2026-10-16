@@ -4,7 +4,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { getFAQSchema, getBreadcrumbSchema, buildSchemaGraph } from '@/lib/structured-data';
 import { MEDICARE_YEAR, PART_B_PREMIUM_MONTHLY } from '@/lib/eligibility/programs/medicare-savings';
 
-/** "$202.90": read from the engine so this page cannot drift from it again (audit A20). */
+/** The Part B premium, read from the engine so this page cannot drift from it again (audit A20). */
 const PART_B = `$${PART_B_PREMIUM_MONTHLY.toFixed(2)}`;
 
 interface PageProps {

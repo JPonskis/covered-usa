@@ -108,6 +108,14 @@ export async function POST(req: NextRequest) {
     // For Medicare flow, force 'medicare' into eligible_programs even if age 60-64
     // (so downstream /api/lead recognizes this as a Medicare lead and Aaron's team
     // gets a Medicare-tagged lead regardless of strict eligibility cutoff).
+    /* TEST MODE (same contract as BenefitsUSA's /api/screen): `"test": true` computes the real
+       answer and returns it, but NEVER writes a covered_usa_submissions row and never sends the
+       welcome email, so audits and live checks stop polluting production data. It used to be
+       ignored, and every check wrote a row (audit A20). Rate limit still applies. */
+    if (body.test === true) {
+      return NextResponse.json({ submissionId: 'test', test: true, results });
+    }
+
     const eligibleProgramIds = results.programs
       .filter((p: { eligible: boolean | string }) => p.eligible === true || p.eligible === 'maybe')
       .map((p: { id: string }) => p.id);

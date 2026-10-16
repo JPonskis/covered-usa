@@ -214,6 +214,13 @@ const ids = (r) => r.programs.map((p) => p.id).join(',');
   check('wiring: /api/quick-check builds its input with quickCheckInput', /quickCheckInput\(state, \{ householdSize, annualIncome, numChildren \}\)/.test(quick) && !/parsedHousehold - 1/.test(quick), '');
   const inline = src('app/[locale]/(landing)/comenzar/inline-screener.tsx');
   check('wiring: the inline form sends its children answer to quick-check and to /api/screen', (inline.match(/numChildren: parseInt\(children, 10\)/g) || []).length === 2, '');
+  // Test mode: "test": true must return BEFORE the row is written or the email sent, on both
+  // routes, so live checks never pollute production data (it used to be ignored).
+  const before = (text, a, b) => text.indexOf(a) !== -1 && text.indexOf(b) !== -1 && text.indexOf(a) < text.indexOf(b);
+  check('test mode: /api/screen answers "test": true before the insert and the welcome email',
+    before(screen, 'if (body.test === true)', ".from('covered_usa_submissions')") && before(screen, 'if (body.test === true)', 'sendWelcomeEmail(data.id'), '');
+  check('test mode: /api/quick-check answers "test": true before logging a screener start',
+    before(quick, 'if (body.test === true)', ".from('covered_usa_screener_starts')"), '');
   const comenzar = src('app/[locale]/(landing)/comenzar/page.tsx');
   check('wiring: /comenzar?focus=medicare sends people to the Medicare screener, not the age-35 form', /isMedicareFocus \? <CtaButton/.test(comenzar), '');
 }

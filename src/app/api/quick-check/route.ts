@@ -57,6 +57,33 @@ export async function POST(req: NextRequest) {
 
     const primary = eligible[0] || null;
 
+    const payload = {
+      state,
+      fplPercentage: fplPct,
+      isFFM: isBrokerAcaState(state),
+      primary: primary
+        ? {
+            id: primary.id,
+            name: primary.name,
+            estimatedValue: primary.estimatedValue,
+            eligible: primary.eligible,
+            reason: primary.reason,
+            caveats: primary.caveats,
+          }
+        : null,
+      secondary: eligible.slice(1).map((p: { id: string; name: string; estimatedValue: number }) => ({
+        id: p.id,
+        name: p.name,
+        estimatedValue: p.estimatedValue,
+      })),
+    };
+
+    // Test mode (`"test": true`, same contract as /api/screen): the same answer, but nothing is
+    // logged, so a live check is not counted as a visitor in covered_usa_screener_starts (audit A20).
+    if (body.test === true) {
+      return NextResponse.json({ test: true, ...payload });
+    }
+
     // Log anonymous screener start — no PII, just funnel visibility
     const utmSource = req.headers.get('x-utm-source') || body.utm_source || null;
     const utmCampaign = req.headers.get('x-utm-campaign') || body.utm_campaign || null;
@@ -78,26 +105,7 @@ export async function POST(req: NextRequest) {
       console.error('[quick-check] SCREENER START LOG FAILED:', startError.message, startError);
     }
 
-    return NextResponse.json({
-      state,
-      fplPercentage: fplPct,
-      isFFM: isBrokerAcaState(state),
-      primary: primary
-        ? {
-            id: primary.id,
-            name: primary.name,
-            estimatedValue: primary.estimatedValue,
-            eligible: primary.eligible,
-            reason: primary.reason,
-            caveats: primary.caveats,
-          }
-        : null,
-      secondary: eligible.slice(1).map((p: { id: string; name: string; estimatedValue: number }) => ({
-        id: p.id,
-        name: p.name,
-        estimatedValue: p.estimatedValue,
-      })),
-    });
+    return NextResponse.json(payload);
   } catch (e) {
     console.error('Quick-check error:', e);
     return NextResponse.json({ error: 'Failed to process' }, { status: 500 });
