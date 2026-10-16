@@ -320,6 +320,10 @@ function validatePromotedSlugs(rows) {
   const validators = new Set(
     rows.map(r => VALIDATOR_FOR[(r.template || '').trim()]).filter(Boolean)
   );
+  // check:content-claims (prebuild) walks every template, so it gates every promoted page: a drip page
+  // that repeats a corrected rule claim (DACA Marketplace, 2027 tax credit, 5-year bar, work rule) is
+  // sent back to the writer with the sentence and the reason, instead of failing the Vercel build.
+  if (rows.length) validators.add('check-content-claims.mjs');
   for (const v of validators) {
     let out = '';
     try {
