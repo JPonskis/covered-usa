@@ -24,8 +24,12 @@
     "phone": "1-800-221-3943",
     "adultLimitFpl": 138,
     "childLimitFpl": 265,
-    "pregnantLimitFpl": 195,
-    "hasAssetLimit": false
+    "pregnantLimitFpl": 265,
+    "hasAssetLimit": false,
+    "pregnantUpperBand": {
+      "aboveFpl": 200,
+      "note": "Above 200% FPL this coverage is Child Health Plan Plus (CHP+). It is for pregnant people who do not have other health insurance, and all pregnancy care is free."
+    }
   },
   "snap": {
     "localName": "SNAP",

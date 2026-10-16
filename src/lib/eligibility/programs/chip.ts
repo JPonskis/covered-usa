@@ -90,17 +90,16 @@ function chipResult(input: ScreenerInput): ProgramResult {
     return result;
   }
 
-  // Slightly above limit — may qualify with deductions
-  if (fplPercent <= chipUpperFpl + 20) {
-    result.eligible = 'maybe';
-    result.eligibilityStatus = 'may_qualify';
-    result.estimatedValue = Math.round(3500 * numChildren * 0.5);
-    result.reason = `Income at ${fplPercent}% FPL is slightly above the CHIP limit. Some states allow deductions that may bring you within range.`;
-    result.nextSteps = `Contact ${stateName} CHIP program to check — call ${phone}`;
-    return result;
-  }
-
-  result.reason = `Income at ${fplPercent}% FPL exceeds the ${chipUpperFpl}% FPL CHIP limit in ${stateName}`;
+  /* ABOVE THE LIMIT. This used to give a 'maybe' worth half the CHIP value to anyone up to 20
+     points over the line, saying "Some states allow deductions that may bring you within range."
+     That is not how the test works: since 2014 CHIP eligibility is MAGI in every state, the only
+     state-level allowance is the 5-point disregard (42 CFR 435.603(d)(4)), and every stored
+     childLimitFpl already includes it (states/types.ts). It also contradicted BenefitsUSA, which
+     tells the same family $0, on a different rule. (audit medicaid-gaps; A5A6A7-cusa left-over 1.)
+     Over the line, the honest open door is the relative-caregiver rule, which the Medicaid card
+     now states in BenefitsUSA's words ('maybe', $0). This card says the same thing in brief and
+     stays a no: the limit is the right test for the household's own children. */
+  result.reason = `Income at ${fplPercent}% FPL exceeds the ${chipUpperFpl}% FPL limit for children's Medicaid and CHIP in ${stateName}. That limit is the right test for your own children. A grandchild or another relative's child you are raising is usually assessed on the child's own income instead, so ask ${stateName} for a child-only application.`;
   result.nextSteps = 'Check ACA marketplace plans for children at healthcare.gov';
   return result;
 }

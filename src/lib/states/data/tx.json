@@ -24,8 +24,12 @@
     "phone": "1-800-252-8263",
     "adultLimitFpl": 0,
     "childLimitFpl": 206,
-    "pregnantLimitFpl": 198,
-    "hasAssetLimit": false
+    "pregnantLimitFpl": 207,
+    "hasAssetLimit": false,
+    "pregnantUpperBand": {
+      "aboveFpl": 203,
+      "note": "Above 203% FPL this is CHIP Perinatal. It covers the unborn baby and care related to the pregnancy and birth only, and you cannot get it if you have any private health insurance."
+    }
   },
   "snap": {
     "localName": "SNAP",

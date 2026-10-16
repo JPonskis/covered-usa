@@ -82,8 +82,87 @@ function medicaidResult(input: ScreenerInput): ProgramResult {
     nextSteps: `Apply at ${applicationUrl} or call ${phone}`
   };
 
-  // Age 65+: dual-eligibility pathway. About 12 million Americans receive
-  // BOTH Medicare and Medicaid simultaneously — Medicaid covers Medicare
+  /* THE 65+ BRANCH USED TO SIT HERE, AND IT RETURNED BEFORE THE CHILD CHECK BELOW (audit
+     medicaid-gaps; A20 left-over; W9_critic_W8 "Divergence to port the other way" (a)). A
+     67-year-old raising a 10-year-old got only the aged card, and the child's own Medicaid was
+     never named on it. A child's eligibility has nothing to do with the caregiver's age, and
+     grandfamilies are exactly who this product is for. BenefitsUSA had already moved it. It now
+     sits below the child checks here too, in the same order as BenefitsUSA's medicaid.ts, and
+     governs only the ADULT's own eligibility. */
+
+  if (isPregnant && annualIncome <= fplPregnantLimit) {
+    result.eligible = true;
+    result.eligibilityStatus = 'likely_eligible';
+    result.estimatedValue = 10000;
+    result.reason = `Pregnant women in ${stateName} qualify for ${programName} up to ${pregnantLimitFpl}% FPL. For this test your household counts as ${pregnancyHouseholdSize} people, because federal rules count the baby you are expecting before birth.`;
+    /* pregnantLimitFpl is the HIGHEST public coverage, so in some states its top band is CHIP or
+       the unborn-child option, with its own name and condition (Alabama's ALL Babies, California's
+       Medi-Cal Access Program, Missouri's Show-Me Healthy Babies, Kentucky's uninsured-only band).
+       Name it for the woman whose income lands in that band, and only for her. */
+    const band = stateData?.medicaid?.pregnantUpperBand;
+    if (band && annualIncome > getFPL(pregnancyHouseholdSize, band.aboveFpl, state)) {
+      result.reason = `${result.reason} ${band.note}`;
+    }
+    return result;
+  }
+
+  // Check for children under 19
+  const hasChildUnder19 = numChildren > 0;
+  if (hasChildUnder19 && annualIncome <= fplChildLimit) {
+    result.eligible = true;
+    result.eligibilityStatus = 'likely_eligible';
+    result.estimatedValue = 5000 * numChildren;
+    result.reason = `Children under 19 qualify for ${programName}/CHIP up to ${childLimitFpl}% FPL`;
+
+    /* The parent's own coverage. Expansion states and Wisconsin cover the parent on income alone;
+       Georgia Pathways adds an hours condition, so the parent hears about it as a 'may', with the
+       hours, and the answer stays the child's. 65+ is EXCLUDED from the MAGI adult test: the 138%
+       expansion limit is a MAGI construct and MAGI does not apply at 65+ (42 USC
+       1396a(e)(14)(D)(i)(II)). A grandparent gets the child's result plus a pointer to their own,
+       different route. Same sentences as BenefitsUSA. */
+    if (age < 65 && adultCoveredOutright && annualIncome <= fplAdultLimit) {
+      result.estimatedValue = 10000 + (5000 * Math.max(0, numChildren - 1));
+      result.reason = `Your household qualifies for ${programName} coverage`;
+      /* This answer covers the parent too. A parent covered as an expansion adult (or a Wisconsin
+         waiver adult) faces the work rule unless their child is 13 or younger (P.L. 119-21
+         s.71119). The screener asks neither the coverage group nor ages, so the line says "may"
+         and names the exemption. Wisconsin's line leaves out 6-month renewals (caveats.ts). */
+      withCaveats(result, medicaidWorkCaveats(input, state, isExpansionState));
+    } else if (age >= 19 && age < 65 && adultActivity && annualIncome <= fplAdultLimit) {
+      result.reason = `${result.reason}. You may qualify too: ${adultActivityReason(adultActivity, adultLimitFpl)}`;
+    } else if (age >= 65) {
+      result.reason = `${result.reason}. You may also qualify yourself, but on a different route than the child: at 65+ Medicaid is decided on the aged/disabled rules, which count your savings as well as your income. Ask about both in the same application.`;
+    }
+    return result;
+  }
+
+  /* CHILD IN THE HOUSEHOLD, INCOME TOO HIGH, and the income may not be theirs to count (ported
+     from BenefitsUSA's medicaid.ts, same sentences, so both sites answer this household alike).
+     42 CFR 435.603(f)(2)(i): a tax dependent claimed by someone OTHER than a parent or spouse is
+     assessed under the NON-FILER rules, and those rules (f)(3) count only the child's spouse,
+     children, and, for a child, their PARENTS and SIBLINGS living with them. A grandparent, aunt or
+     family friend is on none of those lists. So a child raised by a relative is normally assessed on
+     the CHILD's own income, which is usually zero, and qualifies no matter what the caregiver earns.
+
+     The screener does not ask the relationship ("Children under 19"), so we cannot assert this, but
+     staying silent tells a grandparent raising a grandchild that the child does not qualify, which
+     is usually false. 'maybe' with the rule named is the honest middle. Value stays 0: we are not
+     asserting a benefit, we are saying the test they were measured against may be the wrong one.
+     Not universal (a few states require legal custody or guardianship first, or count the
+     caregiver's income anyway), so the copy says "most states" and routes to the agency. */
+  if (hasChildUnder19 && annualIncome > fplChildLimit) {
+    const plural = numChildren > 1;
+    result.eligible = 'maybe';
+    result.eligibilityStatus = 'may_qualify';
+    result.estimatedValue = 0;
+    result.reason = `Your household income is above the ${childLimitFpl}% limit for ${programName}/CHIP, and that limit is the right test for your own children. It is the wrong test if you are raising ${plural ? 'grandchildren, or a relative\'s children' : 'a grandchild, or another relative\'s child'}: your income usually does not count at all in that case, so ${plural ? 'they are' : 'the child is'} assessed on their own income and ${plural ? 'they qualify' : 'qualifies'} in most states no matter what you earn.`;
+    result.nextSteps = `Apply for the child at ${applicationUrl} or call ${phone}. Say you are a relative caregiver and ask for a child-only application.`;
+    return result;
+  }
+
+  // Age 65+: dual-eligibility pathway, for the ADULT's own eligibility (the child checks above
+  // run first). About 12 million Americans receive BOTH Medicare and Medicaid
+  // simultaneously — Medicaid covers Medicare
   // premiums + copays plus services Medicare doesn't (long-term care, dental,
   // vision). Aged Medicaid exists in every state, including non-expansion
   // states. Income limits are typically at or near SSI level (~75% FPL) for
@@ -147,46 +226,6 @@ function medicaidResult(input: ScreenerInput): ProgramResult {
     return result;
   }
 
-  if (isPregnant && annualIncome <= fplPregnantLimit) {
-    result.eligible = true;
-    result.eligibilityStatus = 'likely_eligible';
-    result.estimatedValue = 10000;
-    result.reason = `Pregnant women in ${stateName} qualify for ${programName} up to ${pregnantLimitFpl}% FPL. For this test your household counts as ${pregnancyHouseholdSize} people, because federal rules count the baby you are expecting before birth.`;
-    /* pregnantLimitFpl is the HIGHEST public coverage, so in some states its top band is CHIP or
-       the unborn-child option, with its own name and condition (Alabama's ALL Babies, California's
-       Medi-Cal Access Program, Missouri's Show-Me Healthy Babies, Kentucky's uninsured-only band).
-       Name it for the woman whose income lands in that band, and only for her. */
-    const band = stateData?.medicaid?.pregnantUpperBand;
-    if (band && annualIncome > getFPL(pregnancyHouseholdSize, band.aboveFpl, state)) {
-      result.reason = `${result.reason} ${band.note}`;
-    }
-    return result;
-  }
-
-  // Check for children under 19
-  const hasChildUnder19 = numChildren > 0;
-  if (hasChildUnder19 && annualIncome <= fplChildLimit) {
-    result.eligible = true;
-    result.eligibilityStatus = 'likely_eligible';
-    result.estimatedValue = 5000 * numChildren;
-    result.reason = `Children under 19 qualify for ${programName}/CHIP up to ${childLimitFpl}% FPL`;
-
-    /* The parent's own coverage. Expansion states and Wisconsin cover the parent on income alone;
-       Georgia Pathways adds an hours condition, so the parent hears about it as a 'may', with the
-       hours, and the answer stays the child's. (65+ never reaches here: that branch returns above.) */
-    if (adultCoveredOutright && annualIncome <= fplAdultLimit) {
-      result.estimatedValue = 10000 + (5000 * Math.max(0, numChildren - 1));
-      result.reason = `Your household qualifies for ${programName} coverage`;
-      /* This answer covers the parent too. A parent covered as an expansion adult (or a Wisconsin
-         waiver adult) faces the work rule unless their child is 13 or younger (P.L. 119-21
-         s.71119). The screener asks neither the coverage group nor ages, so the line says "may"
-         and names the exemption. Wisconsin's line leaves out 6-month renewals (caveats.ts). */
-      withCaveats(result, medicaidWorkCaveats(input, state, isExpansionState));
-    } else if (age >= 19 && age < 65 && adultActivity && annualIncome <= fplAdultLimit) {
-      result.reason = `${result.reason}. You may qualify too: ${adultActivityReason(adultActivity, adultLimitFpl)}`;
-    }
-    return result;
-  }
 
   if (age >= 19 && age < 65) {
     if (!isExpansionState) {

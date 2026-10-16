@@ -24,8 +24,12 @@
     "phone": "1-800-642-8589",
     "adultLimitFpl": 138,
     "childLimitFpl": 305,
-    "pregnantLimitFpl": 300,
-    "hasAssetLimit": false
+    "pregnantLimitFpl": 305,
+    "hasAssetLimit": false,
+    "pregnantUpperBand": {
+      "aboveFpl": 190,
+      "note": "Above 190% FPL this coverage is WVCHIP Pregnancy, West Virginia's CHIP program for pregnant women 19 and older. It is only for women with no other health insurance."
+    }
   },
   "snap": {
     "localName": "SNAP",
