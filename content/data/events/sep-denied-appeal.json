@@ -1,0 +1,678 @@
+{
+  "slug": "sep-denied-appeal",
+  "eventName": {
+    "en": "SEP Denied: Appeal and Backup Coverage",
+    "es": "SEP Denegado: Apelación y Cobertura de Respaldo"
+  },
+  "category": "Plan Change",
+  "topic": "Appeal process after a denied Special Enrollment Period and Marketplace backup options",
+  "medicalSpecialty": "PublicHealth",
+  "ctaTarget": "screener",
+  "lastUpdated": "2026-10-11",
+  "readingTime": "9 min read",
+  "topicCluster": "event-sep",
+  "isLighthouse": false,
+  "isDeprecated": false,
+  "keyTerms": {
+    "en": [
+      "sep denied appeal",
+      "special enrollment period denied 2026",
+      "how to appeal marketplace sep denial",
+      "marketplace appeal 90 days",
+      "sep verification documents denied",
+      "backup health insurance after sep denial"
+    ],
+    "es": [
+      "sep denegado apelación",
+      "período de inscripción especial denegado 2026",
+      "cómo apelar denegación sep mercado",
+      "apelación del mercado 90 días",
+      "seguro médico de respaldo sep denegado"
+    ]
+  },
+  "meta": {
+    "title": {
+      "en": "SEP Denied in 2026? Appeal Steps and Backup Coverage",
+      "es": "¿SEP Denegado en 2026? Pasos de Apelación y Respaldo"
+    },
+    "description": {
+      "en": "Denied a Special Enrollment Period in 2026? You have 90 days from your notice to appeal. See the steps, documents, and backup coverage options.",
+      "es": "¿Le negaron el Período de Inscripción Especial en 2026? Tiene 90 días desde su aviso para apelar. Vea pasos, documentos y cobertura de respaldo."
+    }
+  },
+  "hero": {
+    "h1": {
+      "en": "SEP Denied in 2026? Here's How to Appeal and Keep Backup Coverage",
+      "es": "¿Le Negaron el SEP en 2026? Cómo Apelar y Mantener Cobertura de Respaldo"
+    },
+    "subhero": {
+      "en": "You have 90 days from the date on your eligibility notice to appeal a denied Special Enrollment Period, and Medicaid plus Open Enrollment starting November 1, 2026 stay open as backups.",
+      "es": "Tiene 90 días desde la fecha de su aviso de elegibilidad para apelar un Período de Inscripción Especial denegado, y Medicaid y la Inscripción Abierta desde el 1 de noviembre de 2026 siguen disponibles como respaldo."
+    }
+  },
+  "urgency": {
+    "kind": "deadline",
+    "heading": {
+      "en": "You have 90 days from the date on your eligibility notice to appeal",
+      "es": "Tiene 90 días desde la fecha de su aviso de elegibilidad para apelar"
+    },
+    "body": {
+      "en": "The appeal clock starts on the date printed on your Marketplace eligibility notice, not the day you open it. A notice dated October 15, 2026 gives you through January 13, 2027 to file. Miss that window and you must explain good cause for a late appeal, with no guarantee of an extension. Do not wait on the appeal alone: Open Enrollment for 2027 coverage runs November 1, 2026 through January 15, 2027, and Medicaid accepts applications year-round.",
+      "es": "El plazo de apelación comienza en la fecha impresa en su aviso de elegibilidad del Mercado, no el día que lo abre. Un aviso con fecha del 15 de octubre de 2026 le da hasta el 13 de enero de 2027 para presentar la apelación. Si pierde esa ventana, debe explicar una causa justificada para una apelación tardía, sin garantía de prórroga. No dependa solo de la apelación: la Inscripción Abierta para la cobertura de 2027 va del 1 de noviembre de 2026 al 15 de enero de 2027, y Medicaid acepta solicitudes todo el año."
+    },
+    "totalTimeISO8601": "P90D",
+    "secondaryDeadlines": [
+      {
+        "label": {
+          "en": "Open Enrollment for 2027 coverage (Nov 1, 2026 to Jan 15, 2027)",
+          "es": "Inscripción Abierta para cobertura 2027 (1 nov 2026 al 15 ene 2027)"
+        },
+        "days": null
+      },
+      {
+        "label": {
+          "en": "Medicaid and CHIP (if income qualifies)",
+          "es": "Medicaid y CHIP (si el ingreso califica)"
+        },
+        "days": null
+      },
+      {
+        "label": {
+          "en": "COBRA election window, if the denial followed a job loss",
+          "es": "Ventana de elección de COBRA, si la denegación siguió a una pérdida de empleo"
+        },
+        "days": 60
+      }
+    ]
+  },
+  "quickAnswer": {
+    "en": "A denied Special Enrollment Period (SEP) can be appealed within 90 days of the date on your Marketplace eligibility notice, by phone at 1-800-318-2596 or through the forms at healthcare.gov. First submit any documents the notice requested, because a corrected decision can make an appeal unnecessary. While you wait, apply for Medicaid or CHIP (year-round, free if income qualifies under 138% FPL in 2026) and prepare to pick a plan during Open Enrollment, November 1, 2026 through January 15, 2027. COBRA is a fallback only if your 60-day election window is still open.",
+    "es": "Un Período de Inscripción Especial (SEP) denegado se puede apelar dentro de 90 días de la fecha de su aviso de elegibilidad del Mercado, por teléfono al 1-800-318-2596 o con los formularios en healthcare.gov. Primero envíe los documentos que pidió el aviso, porque una decisión corregida puede hacer innecesaria la apelación. Mientras espera, solicite Medicaid o CHIP (todo el año, gratis si el ingreso califica bajo el 138% del FPL en 2026) y prepárese para elegir un plan en la Inscripción Abierta, del 1 de noviembre de 2026 al 15 de enero de 2027. COBRA es solo un respaldo si su ventana de elección de 60 días sigue abierta."
+  },
+  "introParagraphs": [
+    {
+      "en": "A denied Special Enrollment Period feels final, but the denial is a decision on paper that you can challenge. Under 45 CFR 155.520, the federal Marketplace must let you appeal an eligibility determination, including a finding that you do not qualify for a Marketplace SEP. The most common reasons are simple: the Marketplace could not verify your qualifying life event, a document was missing or unreadable, or the event date fell outside the 60-day window. Many of these are fixable. Uploading the right proof often produces an updated decision within days, and an appeal covers the rest. The decision matters because without an SEP you cannot enroll outside Open Enrollment, which for 2027 coverage opens November 1, 2026 and closes January 15, 2027 for most states. This page walks through the 90-day appeal deadline, the six steps to file, the documents that win appeals, and the backup coverage you can line up today so a denial does not leave you uninsured. Everything below is anchored to 2026 federal rules from healthcare.gov, medicaid.gov, and cms.gov.",
+      "es": "Un Período de Inscripción Especial denegado parece definitivo, pero la denegación es una decisión por escrito que usted puede impugnar. Según 45 CFR 155.520, el Mercado federal debe permitirle apelar una determinación de elegibilidad, incluido un fallo de que no califica para un SEP del Mercado. Las razones más comunes son sencillas: el Mercado no pudo verificar su evento calificador de vida, faltaba un documento o era ilegible, o la fecha del evento quedó fuera de la ventana de 60 días. Muchas de estas se pueden corregir. Subir la prueba correcta suele producir una decisión actualizada en pocos días, y la apelación cubre el resto. La decisión importa porque sin un SEP no puede inscribirse fuera de la Inscripción Abierta, que para la cobertura de 2027 abre el 1 de noviembre de 2026 y cierra el 15 de enero de 2027 en la mayoría de los estados. Esta página explica el plazo de apelación de 90 días, los seis pasos para presentarla, los documentos que ganan apelaciones y la cobertura de respaldo que puede preparar hoy para que una denegación no lo deje sin seguro. Todo se basa en las reglas federales de 2026 de healthcare.gov, medicaid.gov y cms.gov."
+    },
+    {
+      "en": "Open Enrollment timing makes this a good moment to act on two tracks at once. Today is mid-October 2026, so the 2027 Open Enrollment window is only weeks away, and anyone denied an SEP can pick a plan then without winning the appeal at all. The trade-off is the gap: coverage chosen in Open Enrollment starts January 1, 2027, while a successful appeal can restore coverage retroactively to the date the SEP should have started. People who need care now, such as a pregnancy, a scheduled surgery, or a monthly prescription, have the strongest reason to appeal and to ask for an expedited decision. People who are healthy and only missed paperwork often do better fixing documents and waiting for November 1, 2026. Medicaid and CHIP sit outside this calendar entirely: both accept applications year-round, and an approval does not depend on any SEP. The sections that follow show how to run the appeal, the Medicaid check, and the Open Enrollment plan side by side.",
+      "es": "El calendario de la Inscripción Abierta hace que este sea un buen momento para actuar en dos frentes a la vez. Estamos a mediados de octubre de 2026, así que la ventana de Inscripción Abierta de 2027 está a pocas semanas, y quien tenga un SEP denegado puede elegir un plan entonces sin ganar la apelación. La desventaja es el vacío: la cobertura elegida en la Inscripción Abierta comienza el 1 de enero de 2027, mientras que una apelación exitosa puede restablecer la cobertura de forma retroactiva a la fecha en que debió comenzar el SEP. Quienes necesitan atención ahora, como un embarazo, una cirugía programada o una receta mensual, tienen la razón más fuerte para apelar y pedir una decisión acelerada. Quienes están sanos y solo les faltó papeleo suelen salir mejor corrigiendo documentos y esperando al 1 de noviembre de 2026. Medicaid y CHIP quedan fuera de este calendario: ambos aceptan solicitudes todo el año, y la aprobación no depende de ningún SEP. Las secciones siguientes muestran cómo llevar la apelación, la revisión de Medicaid y el plan de Inscripción Abierta en paralelo."
+    }
+  ],
+  "steps": [
+    {
+      "name": {
+        "en": "Read the eligibility notice and write down its date",
+        "es": "Lea el aviso de elegibilidad y anote su fecha"
+      },
+      "text": {
+        "en": "Check the notice for the date printed at the top, the stated reason for denial, and any document deadline. Calculate 90 days from that date and mark it on a calendar, because the appeal deadline runs from the notice date. Log in to your healthcare.gov account to find the same notice under your messages.",
+        "es": "Revise el aviso para ver la fecha impresa arriba, el motivo de la denegación y cualquier plazo para documentos. Calcule 90 días desde esa fecha y márquelo en un calendario, porque el plazo de apelación corre desde la fecha del aviso. Inicie sesión en su cuenta de healthcare.gov para encontrar el mismo aviso en sus mensajes."
+      }
+    },
+    {
+      "name": {
+        "en": "Submit the documents the Marketplace requested",
+        "es": "Envíe los documentos que pidió el Mercado"
+      },
+      "text": {
+        "en": "Upload proof of your qualifying life event, such as a termination letter, marriage certificate, birth record, or move-in lease, through your healthcare.gov account or mail copies to the address on the notice. Send copies, never originals. A corrected decision can arrive without a formal appeal.",
+        "es": "Suba la prueba de su evento calificador de vida, como carta de terminación, acta de matrimonio, certificado de nacimiento o contrato de arrendamiento, en su cuenta de healthcare.gov o envíe copias a la dirección del aviso. Envíe copias, nunca originales. Una decisión corregida puede llegar sin una apelación formal."
+      }
+    },
+    {
+      "name": {
+        "en": "File the appeal before the 90-day deadline",
+        "es": "Presente la apelación antes del plazo de 90 días"
+      },
+      "text": {
+        "en": "Call the Marketplace Call Center at 1-800-318-2596 or open the appeal forms at healthcare.gov/marketplace-appeals to see the filing method for your state and account. Include copies of supporting documents, name an authorized representative if you want help, and request an expedited appeal if waiting would put your health at serious risk.",
+        "es": "Llame al Centro de Llamadas del Mercado al 1-800-318-2596 o abra los formularios de apelación en healthcare.gov/marketplace-appeals para ver el método de presentación para su estado y cuenta. Incluya copias de los documentos de apoyo, nombre a un representante autorizado si quiere ayuda y pida una apelación acelerada si esperar pondría su salud en grave riesgo."
+      }
+    },
+    {
+      "name": {
+        "en": "Apply for Medicaid or CHIP the same week",
+        "es": "Solicite Medicaid o CHIP la misma semana"
+      },
+      "text": {
+        "en": "Apply year-round at healthcare.gov or your state Medicaid agency (Medi-Cal, AHCCCS, BadgerCare, MassHealth, or your state's equivalent). Adults under 138% FPL in a 2026 expansion state qualify, and children often qualify for CHIP at much higher incomes. Approval does not depend on any SEP.",
+        "es": "Solicite todo el año en healthcare.gov o en la agencia estatal de Medicaid (Medi-Cal, AHCCCS, BadgerCare, MassHealth o el equivalente de su estado). Los adultos bajo el 138% del FPL en un estado con expansión en 2026 califican, y los niños suelen calificar para CHIP con ingresos mucho más altos. La aprobación no depende de ningún SEP."
+      }
+    },
+    {
+      "name": {
+        "en": "Line up Marketplace backup for November 1, 2026",
+        "es": "Prepare el respaldo del Mercado para el 1 de noviembre de 2026"
+      },
+      "text": {
+        "en": "Compare 2027 plans at healthcare.gov starting November 1, 2026, and enroll by the deadline in your state (January 15, 2027 for most). Update your projected 2027 income to calculate premium tax credits. If the denial followed a job loss and your 60-day COBRA election window is open, elect COBRA to avoid a gap.",
+        "es": "Compare los planes de 2027 en healthcare.gov desde el 1 de noviembre de 2026 e inscríbase antes del plazo de su estado (15 de enero de 2027 en la mayoría). Actualice su ingreso proyectado de 2027 para calcular los créditos fiscales de prima. Si la denegación siguió a una pérdida de empleo y su ventana de elección de COBRA de 60 días está abierta, elija COBRA para evitar un vacío."
+      }
+    },
+    {
+      "name": {
+        "en": "Track the decision and save your tax paperwork",
+        "es": "Siga la decisión y guarde sus documentos fiscales"
+      },
+      "text": {
+        "en": "Check your healthcare.gov account and mail for the appeal decision, and call 1-800-318-2596 if nothing arrives. If you enroll and receive premium tax credits during the appeal and lose, you repay them when you file with Form 8962, so keep your 1095-A.",
+        "es": "Revise su cuenta de healthcare.gov y su correo para la decisión de la apelación, y llame al 1-800-318-2596 si no llega nada. Si se inscribe y recibe créditos fiscales de prima durante la apelación y pierde, los devuelve al declarar con el Formulario 8962, así que guarde su 1095-A."
+      }
+    }
+  ],
+  "optionsComparison": {
+    "headers": {
+      "en": [
+        "Option",
+        "Typical cost",
+        "Best for",
+        "Deadline"
+      ],
+      "es": [
+        "Opción",
+        "Costo típico",
+        "Mejor para",
+        "Fecha límite"
+      ]
+    },
+    "rows": [
+      {
+        "en": [
+          "Marketplace SEP appeal",
+          "Free to file; 2026 plan premiums apply if you enroll during the appeal",
+          "Clear qualifying life event with proof you can upload",
+          "90 days from notice date"
+        ],
+        "es": [
+          "Apelación del SEP del Mercado",
+          "Gratis presentarla; aplican primas de planes 2026 si se inscribe durante la apelación",
+          "Evento calificador claro con prueba que puede subir",
+          "90 días desde la fecha del aviso"
+        ]
+      },
+      {
+        "en": [
+          "Medicaid or CHIP",
+          "$0 premium if 2026 income qualifies",
+          "Income under 138% FPL (adults) or children in CHIP households",
+          "Year-round, no deadline"
+        ],
+        "es": [
+          "Medicaid o CHIP",
+          "Prima de $0 si el ingreso de 2026 califica",
+          "Ingreso bajo 138% FPL (adultos) o niños en hogares CHIP",
+          "Todo el año, sin fecha límite"
+        ]
+      },
+      {
+        "en": [
+          "2027 Open Enrollment plan",
+          "2026 income-based tax credits lower the premium; 2027 prices post November 1, 2026",
+          "Healthy applicants who can wait for a January 1, 2027 start",
+          "Nov 1, 2026 to Jan 15, 2027"
+        ],
+        "es": [
+          "Plan de Inscripción Abierta 2027",
+          "Los créditos fiscales según ingreso de 2026 reducen la prima; precios 2027 publicados el 1 nov 2026",
+          "Solicitantes sanos que pueden esperar un inicio el 1 de enero de 2027",
+          "1 nov 2026 al 15 ene 2027"
+        ]
+      },
+      {
+        "en": [
+          "COBRA",
+          "2026: about $400 to $900/mo individual (102% of full premium)",
+          "Denial after job loss when you need your current doctors",
+          "60 days from election notice"
+        ],
+        "es": [
+          "COBRA",
+          "2026: unos $400 a $900/mes individual (102% de la prima completa)",
+          "Denegación tras perder el empleo cuando necesita sus médicos actuales",
+          "60 días desde el aviso de elección"
+        ]
+      },
+      {
+        "en": [
+          "Spouse's or parent's employer plan",
+          "Varies; 2026 employee share often below COBRA",
+          "A household member with job-based coverage available",
+          "Typically 30 days from the event"
+        ],
+        "es": [
+          "Plan del empleador del cónyuge o padre",
+          "Varía; la parte del empleado en 2026 suele ser menor que COBRA",
+          "Un miembro del hogar con cobertura del empleador disponible",
+          "Normalmente 30 días desde el evento"
+        ]
+      }
+    ],
+    "footnote": {
+      "en": "2026 cost ranges are typical figures; your own premium depends on income, age, and ZIP code. A successful appeal can make Marketplace coverage retroactive, while Open Enrollment coverage starts January 1, 2027.",
+      "es": "Los rangos de costo de 2026 son cifras típicas; su prima depende del ingreso, la edad y el código postal. Una apelación exitosa puede hacer la cobertura del Mercado retroactiva, mientras que la cobertura de la Inscripción Abierta comienza el 1 de enero de 2027."
+    },
+    "source": "HealthCare.gov marketplace appeals and SEP pages; Medicaid.gov eligibility; IRS COBRA Q&A; KFF Marketplace analysis (2026)"
+  },
+  "commonMistakes": {
+    "intro": {
+      "en": "The costliest mistakes after an SEP denial in 2026 are about timing and paperwork:",
+      "es": "Los errores más costosos tras una denegación de SEP en 2026 tienen que ver con el tiempo y el papeleo:"
+    },
+    "items": [
+      {
+        "en": "Waiting past the 90-day deadline. The clock runs from the date printed on the notice, so a notice that sat unopened still counts.",
+        "es": "Esperar más allá del plazo de 90 días. El reloj corre desde la fecha impresa en el aviso, así que un aviso sin abrir igual cuenta."
+      },
+      {
+        "en": "Appealing without first uploading the requested documents. A corrected decision from the Marketplace is faster than an appeal hearing.",
+        "es": "Apelar sin subir primero los documentos solicitados. Una decisión corregida del Mercado es más rápida que una audiencia de apelación."
+      },
+      {
+        "en": "Treating the appeal as your only plan. Open Enrollment opens November 1, 2026 and Medicaid is open year-round, so build a backup the same week.",
+        "es": "Tratar la apelación como su único plan. La Inscripción Abierta abre el 1 de noviembre de 2026 y Medicaid está abierto todo el año, así que arme un respaldo la misma semana."
+      },
+      {
+        "en": "Sending original documents. Mail copies only, because originals are not returned.",
+        "es": "Enviar documentos originales. Envíe solo copias, porque los originales no se devuelven."
+      },
+      {
+        "en": "Forgetting the tax side. Premium tax credits received during a failed appeal are repaid on Form 8962 using your 1095-A.",
+        "es": "Olvidar el lado fiscal. Los créditos fiscales de prima recibidos durante una apelación fallida se devuelven con el Formulario 8962 usando su 1095-A."
+      }
+    ]
+  },
+  "householdSizeTable": {
+    "en": {
+      "caption": "Medicaid + ACA subsidy income limits, 2026 (48 contiguous states + DC)",
+      "headers": [
+        "Household size",
+        "138% FPL (Medicaid)",
+        "400% FPL (subsidy ceiling pre-cliff)"
+      ],
+      "rows": [
+        [
+          "1",
+          "$22,025",
+          "$63,840"
+        ],
+        [
+          "2",
+          "$29,820",
+          "$86,400"
+        ],
+        [
+          "3",
+          "$37,615",
+          "$108,960"
+        ],
+        [
+          "4",
+          "$45,540",
+          "$132,000"
+        ],
+        [
+          "5",
+          "$53,335",
+          "$154,560"
+        ],
+        [
+          "6",
+          "$61,130",
+          "$177,120"
+        ],
+        [
+          "7",
+          "$68,925",
+          "$199,680"
+        ],
+        [
+          "8",
+          "$76,720",
+          "$222,240"
+        ],
+        [
+          "Each additional",
+          "+ $7,795",
+          "+ $22,560"
+        ]
+      ],
+      "footnote": "Alaska and Hawaii thresholds are higher. The 400% FPL subsidy cliff returned for 2026 after enhanced premium tax credits expired January 1, 2026. Medicaid limits apply in the 40 expansion states plus DC.",
+      "source": "HHS ASPE 2026 Poverty Guidelines + CMS ACA premium tax credit thresholds"
+    },
+    "es": {
+      "caption": "Límites de ingreso de Medicaid y subsidios ACA, 2026 (48 estados contiguos + DC)",
+      "headers": [
+        "Tamaño del hogar",
+        "138% FPL (Medicaid)",
+        "400% FPL (tope del subsidio antes del precipicio)"
+      ],
+      "rows": [
+        [
+          "1",
+          "$22,025",
+          "$63,840"
+        ],
+        [
+          "2",
+          "$29,820",
+          "$86,400"
+        ],
+        [
+          "3",
+          "$37,615",
+          "$108,960"
+        ],
+        [
+          "4",
+          "$45,540",
+          "$132,000"
+        ],
+        [
+          "5",
+          "$53,335",
+          "$154,560"
+        ],
+        [
+          "6",
+          "$61,130",
+          "$177,120"
+        ],
+        [
+          "7",
+          "$68,925",
+          "$199,680"
+        ],
+        [
+          "8",
+          "$76,720",
+          "$222,240"
+        ],
+        [
+          "Cada persona adicional",
+          "+ $7,795",
+          "+ $22,560"
+        ]
+      ],
+      "footnote": "Los umbrales de Alaska y Hawái son más altos. El precipicio del subsidio del 400% FPL regresó en 2026 cuando vencieron los créditos fiscales de prima mejorados el 1 de enero de 2026. Los límites de Medicaid aplican en los 40 estados con expansión más DC.",
+      "source": "Pautas de Pobreza 2026 de HHS ASPE + umbrales de crédito fiscal de prima de CMS"
+    }
+  },
+  "documentsNeeded": {
+    "en": [
+      "The eligibility notice itself, showing the notice date, the denial reason, and your application ID",
+      "Proof of the qualifying life event: termination letter, marriage certificate, birth or adoption record, or lease showing a move",
+      "Proof of prior coverage dates, such as a COBRA notice or insurer cancellation letter",
+      "Recent pay stubs, unemployment award letter, or tax return to verify 2026 income",
+      "Proof of citizenship or lawful presence for everyone applying",
+      "A signed authorized-representative form if a family member, advocate, or attorney is helping",
+      "A short written statement explaining any delay, if you are filing after the 90-day deadline"
+    ],
+    "es": [
+      "El aviso de elegibilidad, con la fecha del aviso, el motivo de la denegación y su número de solicitud",
+      "Prueba del evento calificador de vida: carta de terminación, acta de matrimonio, registro de nacimiento o adopción, o contrato de arrendamiento que muestre una mudanza",
+      "Prueba de las fechas de cobertura anterior, como un aviso de COBRA o la carta de cancelación de la aseguradora",
+      "Talones de pago recientes, carta de beneficios de desempleo o declaración de impuestos para verificar el ingreso de 2026",
+      "Prueba de ciudadanía o presencia legal de todas las personas que solicitan",
+      "Un formulario firmado de representante autorizado si un familiar, defensor o abogado le ayuda",
+      "Una breve declaración escrita que explique cualquier demora, si presenta después del plazo de 90 días"
+    ]
+  },
+  "commonDenialReasons": {
+    "en": [
+      "Qualifying life event could not be verified because the document was missing, unreadable, or did not show the event date",
+      "Event date fell outside the 60-day window, so the Marketplace SEP did not apply",
+      "Documents arrived after the deadline stated in the Marketplace notice",
+      "Application income conflicted with tax or wage records, triggering a data-matching hold",
+      "Event type does not qualify for a Marketplace SEP, such as voluntarily dropping coverage or losing coverage for not paying premiums"
+    ],
+    "es": [
+      "No se pudo verificar el evento calificador porque el documento faltaba, era ilegible o no mostraba la fecha del evento",
+      "La fecha del evento quedó fuera de la ventana de 60 días, por lo que el SEP del Mercado no aplicó",
+      "Los documentos llegaron después del plazo indicado en el aviso del Mercado",
+      "El ingreso de la solicitud no coincidía con registros fiscales o salariales, lo que activó una retención por verificación de datos",
+      "El tipo de evento no califica para un SEP del Mercado, como dejar la cobertura voluntariamente o perderla por no pagar las primas"
+    ]
+  },
+  "comparisonNarrative": {
+    "heading": {
+      "en": "Appeal vs Reapply vs Medicaid vs Open Enrollment: Which Path Should You Take?",
+      "es": "Apelar vs Volver a Solicitar vs Medicaid vs Inscripción Abierta: ¿Qué Camino Tomar?"
+    },
+    "body": {
+      "en": "After an SEP denial in 2026, four paths run at the same time rather than one after another. An appeal fits when you hold clear proof of a qualifying life event and need coverage before January 1, 2027, because a win can restore coverage retroactively. A new application with better documents fits when the denial was about a missing or unreadable file, since an updated decision often arrives faster than an appeal ruling. Medicaid and CHIP fit anyone whose 2026 income is under 138% FPL (adults) or whose children fall under the CHIP limit in your state, and neither requires an SEP. Open Enrollment, November 1, 2026 through January 15, 2027 for most states, fits healthy applicants who can accept a January 1, 2027 start. COBRA works as a bridge only when the denial followed a job loss and the 60-day election window is open. The practical sequence is: upload documents today, file the appeal before the 90-day deadline, apply for Medicaid, then compare 2027 plans on November 1, 2026.",
+      "es": "Tras una denegación de SEP en 2026, cuatro caminos corren al mismo tiempo en lugar de uno tras otro. Una apelación conviene cuando tiene prueba clara de un evento calificador de vida y necesita cobertura antes del 1 de enero de 2027, porque ganar puede restablecer la cobertura de forma retroactiva. Una nueva solicitud con mejores documentos conviene cuando la denegación fue por un archivo faltante o ilegible, ya que una decisión actualizada suele llegar más rápido que un fallo de apelación. Medicaid y CHIP convienen a quien tenga un ingreso de 2026 bajo el 138% del FPL (adultos) o hijos bajo el límite de CHIP de su estado, y ninguno requiere un SEP. La Inscripción Abierta, del 1 de noviembre de 2026 al 15 de enero de 2027 en la mayoría de los estados, conviene a solicitantes sanos que aceptan un inicio el 1 de enero de 2027. COBRA sirve de puente solo cuando la denegación siguió a una pérdida de empleo y la ventana de elección de 60 días está abierta. La secuencia práctica es: suba documentos hoy, presente la apelación antes del plazo de 90 días, solicite Medicaid y luego compare los planes de 2027 el 1 de noviembre de 2026."
+    }
+  },
+  "detailSections": [
+    {
+      "heading": {
+        "en": "Why Marketplaces Deny a Special Enrollment Period in 2026",
+        "es": "Por Qué los Mercados Deniegan un Período de Inscripción Especial en 2026"
+      },
+      "paragraphs": [
+        {
+          "en": "Denials of a Marketplace SEP in 2026 usually trace to verification rather than to ineligibility. The federal Marketplace at healthcare.gov asks for proof of a qualifying life event, and a missing termination letter, an unreadable scan, or a date mismatch is enough to trigger a denial or a hold. Federal courts in City of Columbus v. Kennedy have paused or vacated rules requiring pre-enrollment SEP verification for many events, so the documents your notice requests depend on your SEP type and your exchange. Follow the notice exactly and check healthcare.gov for the current rule. Some denials are substantive. Voluntarily dropping coverage, losing coverage for unpaid premiums, or an event outside the 60-day window do not qualify for a Marketplace SEP. State-based exchanges such as MNsure, kynect, and Covered California run their own verification and appeal rules, though 45 CFR 155.520 sets the federal floor for appeal rights. Read the denial reason first, because it decides whether you need a document upload, an appeal, or a different path.",
+          "es": "Las denegaciones de un SEP del Mercado en 2026 suelen deberse a la verificación y no a la inelegibilidad. El Mercado federal en healthcare.gov pide prueba de un evento calificador de vida, y una carta de terminación faltante, un escaneo ilegible o una fecha que no coincide bastan para activar una denegación o una retención. Tribunales federales en City of Columbus v. Kennedy han pausado o anulado reglas que exigían verificación del SEP antes de la inscripción para muchos eventos, así que los documentos que pide su aviso dependen de su tipo de SEP y de su mercado. Siga el aviso al pie de la letra y consulte healthcare.gov para la regla vigente. Algunas denegaciones son de fondo. Dejar la cobertura voluntariamente, perderla por falta de pago de primas o un evento fuera de la ventana de 60 días no califican para un SEP del Mercado. Los mercados estatales como MNsure, kynect y Covered California tienen sus propias reglas de verificación y apelación, aunque 45 CFR 155.520 fija el mínimo federal de derechos de apelación. Lea primero el motivo de la denegación, porque decide si necesita subir un documento, apelar o tomar otro camino."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Medicaid and CHIP Backup While Your 2026 Appeal Is Pending",
+        "es": "Respaldo de Medicaid y CHIP Mientras Su Apelación de 2026 Está Pendiente"
+      },
+      "paragraphs": [
+        {
+          "en": "Medicaid works as the fastest backup because it needs no SEP and accepts applications every day of the year. Under medicaid.gov rules, adults in the 40 expansion states plus DC qualify at or below 138% of the Federal Poverty Level, which for 2026 means $22,025 for a household of 1 and $45,540 for a household of 4. State programs use local names: California's Medi-Cal, Arizona's AHCCCS, Wisconsin's BadgerCare, Massachusetts's MassHealth, and Tennessee's TennCare. The 10 non-expansion states (Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, Wyoming) set stricter limits for adults, but children there still reach CHIP at much higher incomes. An applicant above Medicaid limits still gains from applying, because the state refers the application to the Marketplace for tax credits. If Medicaid approves you while the SEP appeal is pending, the appeal may become unnecessary for those household members, so tell the Marketplace and keep every notice for your records.",
+          "es": "Medicaid funciona como el respaldo más rápido porque no necesita un SEP y acepta solicitudes todos los días del año. Según las reglas de medicaid.gov, los adultos en los 40 estados con expansión más DC califican con ingresos de hasta el 138% del Nivel Federal de Pobreza, que para 2026 significa $22,025 para un hogar de 1 y $45,540 para un hogar de 4. Los programas estatales usan nombres locales: Medi-Cal en California, AHCCCS en Arizona, BadgerCare en Wisconsin, MassHealth en Massachusetts y TennCare en Tennessee. Los 10 estados sin expansión (Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin, Wyoming) fijan límites más estrictos para adultos, pero los niños allí igual llegan a CHIP con ingresos mucho más altos. Un solicitante por encima de los límites de Medicaid igual gana al solicitar, porque el estado remite la solicitud al Mercado para créditos fiscales. Si Medicaid lo aprueba mientras la apelación del SEP está pendiente, la apelación puede volverse innecesaria para esos miembros del hogar, así que avise al Mercado y guarde cada aviso."
+        }
+      ]
+    },
+    {
+      "heading": {
+        "en": "Documents That Win SEP Appeals and Why Each Matters",
+        "es": "Documentos Que Ganan Apelaciones de SEP y Por Qué Importa Cada Uno"
+      },
+      "paragraphs": [
+        {
+          "en": "Appeal reviewers decide on the evidence in your file, so each document answers one specific question. The qualifying life event proof answers whether the trigger happened and on what date, which sets the 60-day window. A termination letter must show the last day of coverage, and a lease must show the move-in date. Prior coverage records answer whether you actually lost minimum essential coverage, the core test for loss-of-coverage events, and a COBRA or insurer notice usually does it. Income documents such as pay stubs or an unemployment award letter settle data-matching holds, because the Marketplace compares your stated 2026 income against wage and tax records. A short written statement matters most for late appeals, since 45 CFR 155.520 lets the appeals entity accept a filing after the deadline when you show good cause. Submit clear copies, label each page with your application ID, and keep a dated list of everything you send. Call 1-800-318-2596 to confirm receipt.",
+          "es": "Los revisores de apelaciones deciden con la evidencia de su expediente, así que cada documento responde una pregunta específica. La prueba del evento calificador de vida responde si ocurrió el desencadenante y en qué fecha, lo que fija la ventana de 60 días. Una carta de terminación debe mostrar el último día de cobertura, y un contrato de arrendamiento debe mostrar la fecha de mudanza. Los registros de cobertura anterior responden si realmente perdió la cobertura esencial mínima, la prueba central de los eventos de pérdida de cobertura, y un aviso de COBRA o de la aseguradora suele bastar. Los documentos de ingresos, como talones de pago o una carta de desempleo, resuelven retenciones por verificación de datos, porque el Mercado compara su ingreso declarado de 2026 con registros salariales y fiscales. Una breve declaración escrita importa más en apelaciones tardías, ya que 45 CFR 155.520 permite a la entidad de apelaciones aceptar una presentación fuera de plazo cuando usted demuestra causa justificada. Envíe copias claras, marque cada página con su número de solicitud y guarde una lista fechada de todo lo que envía. Llame al 1-800-318-2596 para confirmar la recepción."
+        }
+      ]
+    }
+  ],
+  "stateRules": [
+    {
+      "state": "California",
+      "rule": "Covered California runs its own eligibility appeals for state-exchange enrollees, separate from healthcare.gov, and Medi-Cal applications are accepted year-round.",
+      "sourceUrl": "https://www.coveredca.com/"
+    },
+    {
+      "state": "New York",
+      "rule": "NY State of Health handles Marketplace appeals for its enrollees through its own appeals unit, and Essential Plan and Medicaid applications are accepted year-round.",
+      "sourceUrl": "https://nystateofhealth.ny.gov/"
+    },
+    {
+      "state": "Minnesota",
+      "rule": "MNsure operates a state appeals process for SEP and eligibility denials, while MinnesotaCare and Medical Assistance accept applications year-round.",
+      "sourceUrl": "https://www.mnsure.org/"
+    },
+    {
+      "state": "Kentucky",
+      "rule": "kynect is the Kentucky state-based Marketplace and applies its own appeal procedures, with Kentucky Medicaid open year-round.",
+      "sourceUrl": "https://kynect.ky.gov/"
+    },
+    {
+      "state": "All federal Marketplace states",
+      "rule": "Residents of states using healthcare.gov appeal through the federal Marketplace Appeals process; 45 CFR 155.520 sets the 90-day filing standard, and state exchanges must provide an appeal process of their own.",
+      "sourceUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-155/subpart-F/section-155.520"
+    }
+  ],
+  "faqs": {
+    "en": [
+      {
+        "question": "What is the deadline to appeal a denied SEP in 2026?",
+        "answer": "Federal Marketplace appeals generally must be filed within 90 days of the date on your eligibility notice, per 45 CFR 155.520 and healthcare.gov. A notice dated October 15, 2026 gives you through January 13, 2027. The clock runs from the printed date, not from the day you read the notice. If you file later, explain the reason for the delay in your appeal, and the appeals entity may grant an extension for good cause. State-based exchanges such as MNsure and Covered California set their own filing procedures, so check the notice you received."
+      },
+      {
+        "question": "How do I document my qualifying life event for an SEP appeal?",
+        "answer": "Submit clear copies of proof that matches your event type: a termination letter showing the last day of coverage, a marriage certificate, a birth or adoption record, or a lease showing your move date. Upload them through your healthcare.gov account or mail copies to the address on your notice, and never send originals. Add your application ID to every page. Pay stubs or an unemployment award letter help if the Marketplace flagged an income mismatch. Call 1-800-318-2596 to confirm the Marketplace received everything before you file the appeal."
+      },
+      {
+        "question": "What if I miss the SEP window or the appeal deadline?",
+        "answer": "Missing the appeal deadline does not always end your options. File anyway and explain why you were late, since you may get an extension. If the appeal fails, your next Marketplace chance is Open Enrollment, November 1, 2026 through January 15, 2027 for most states, with coverage starting January 1, 2027. Medicaid and CHIP accept applications year-round at medicaid.gov and your state agency, regardless of any SEP. A new qualifying life event, such as a move or job loss, also opens a fresh 60-day window."
+      },
+      {
+        "question": "Can I get retroactive coverage if I win my SEP appeal?",
+        "answer": "A successful appeal can make Marketplace coverage retroactive to the date it would have started had the SEP been approved, so you may be covered for care you received during the appeal. Retroactive coverage requires paying the premiums for those months. Coverage chosen in 2027 Open Enrollment is not retroactive and starts January 1, 2027. If you enroll during the appeal and receive premium tax credits but lose, you repay them with Form 8962 using your 1095-A when you file taxes."
+      },
+      {
+        "question": "What is the difference between COBRA and the Marketplace if my SEP is denied?",
+        "answer": "COBRA keeps your former employer plan at 102% of the full premium, typically $400 to $900/mo for an individual in 2026, and you have 60 days from your election notice to choose it. The Marketplace usually costs less after premium tax credits but needs an SEP or Open Enrollment. If your SEP denial followed a job loss, elect COBRA inside its window to avoid a gap, then switch to a Marketplace plan on January 1, 2027 or after winning your appeal. COBRA applies to employers with 20 or more employees."
+      },
+      {
+        "question": "What state-specific rules apply to a denied SEP?",
+        "answer": "State-based exchanges, including Covered California, NY State of Health, MNsure, and kynect, run their own eligibility appeals instead of healthcare.gov. The federal standard in 45 CFR 155.520 sets the minimum, and the notice you received names where to file. State Medicaid programs use local names such as Medi-Cal, AHCCCS, BadgerCare, and MassHealth, and all accept applications year-round. Ten states have not expanded Medicaid: Alabama, Florida, Georgia, Kansas, Mississippi, South Carolina, Tennessee, Texas, Wisconsin, and Wyoming."
+      },
+      {
+        "question": "Do I qualify for Medicaid while my SEP appeal is pending?",
+        "answer": "Adults qualify for Medicaid in the 40 expansion states plus DC at or below 138% of the Federal Poverty Level, which for 2026 is $22,025 for a household of 1 and $45,540 for a household of 4. Apply at healthcare.gov or your state agency at any time. Medicaid does not require an SEP, and a pending appeal does not block your application. Above those limits, you may still receive Marketplace tax credits. See the household-size table on this page for sizes 1 through 8."
+      },
+      {
+        "question": "What happens to my children's coverage if my SEP is denied?",
+        "answer": "Children can enroll in CHIP or Medicaid year-round, with no SEP required, and CHIP limits in many states reach 200% to 300% of the Federal Poverty Level. Apply at healthcare.gov or your state agency, for example Medi-Cal for Kids in California or NJ FamilyCare in New Jersey. Children can have CHIP coverage even when a parent is denied an SEP. If your children already have Marketplace coverage, an appeal on your own application does not cancel theirs, but report any household changes to the Marketplace."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es el plazo para apelar un SEP denegado en 2026?",
+        "answer": "Las apelaciones del Mercado federal generalmente deben presentarse dentro de 90 días de la fecha de su aviso de elegibilidad, según 45 CFR 155.520 y healthcare.gov. Un aviso con fecha del 15 de octubre de 2026 le da hasta el 13 de enero de 2027. El reloj corre desde la fecha impresa, no desde el día que leyó el aviso. Si presenta tarde, explique el motivo de la demora en su apelación, y la entidad de apelaciones puede otorgar una prórroga por causa justificada. Los mercados estatales como MNsure y Covered California fijan sus propios procedimientos, así que revise el aviso que recibió."
+      },
+      {
+        "question": "¿Cómo documento mi evento calificador de vida para una apelación de SEP?",
+        "answer": "Envíe copias claras de la prueba que corresponda a su evento: una carta de terminación que muestre el último día de cobertura, un acta de matrimonio, un registro de nacimiento o adopción, o un contrato de arrendamiento con la fecha de mudanza. Suba los documentos en su cuenta de healthcare.gov o envíe copias a la dirección de su aviso, y nunca envíe originales. Agregue su número de solicitud a cada página. Los talones de pago o una carta de desempleo ayudan si el Mercado marcó una diferencia de ingresos. Llame al 1-800-318-2596 para confirmar que el Mercado recibió todo antes de presentar la apelación."
+      },
+      {
+        "question": "¿Qué pasa si pierdo la ventana del SEP o el plazo de apelación?",
+        "answer": "Perder el plazo de apelación no siempre termina sus opciones. Presente la apelación de todos modos y explique por qué se retrasó, ya que podría obtener una prórroga. Si la apelación fracasa, su próxima oportunidad en el Mercado es la Inscripción Abierta, del 1 de noviembre de 2026 al 15 de enero de 2027 en la mayoría de los estados, con cobertura desde el 1 de enero de 2027. Medicaid y CHIP aceptan solicitudes todo el año en medicaid.gov y su agencia estatal, sin importar ningún SEP. Un nuevo evento calificador de vida, como una mudanza o pérdida de empleo, también abre una nueva ventana de 60 días."
+      },
+      {
+        "question": "¿Puedo obtener cobertura retroactiva si gano mi apelación de SEP?",
+        "answer": "Una apelación exitosa puede hacer la cobertura del Mercado retroactiva a la fecha en que habría comenzado si el SEP se hubiera aprobado, por lo que podría estar cubierto por la atención recibida durante la apelación. La cobertura retroactiva requiere pagar las primas de esos meses. La cobertura elegida en la Inscripción Abierta de 2027 no es retroactiva y comienza el 1 de enero de 2027. Si se inscribe durante la apelación y recibe créditos fiscales de prima pero pierde, los devuelve con el Formulario 8962 usando su 1095-A al declarar impuestos."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre COBRA y el Mercado si me niegan el SEP?",
+        "answer": "COBRA mantiene el plan de su empleador anterior al 102% de la prima completa, típicamente $400 a $900/mes para una persona en 2026, y tiene 60 días desde su aviso de elección para escogerlo. El Mercado suele costar menos después de los créditos fiscales de prima, pero requiere un SEP o la Inscripción Abierta. Si la denegación del SEP siguió a una pérdida de empleo, elija COBRA dentro de su ventana para evitar un vacío, y luego cambie a un plan del Mercado el 1 de enero de 2027 o tras ganar su apelación. COBRA aplica a empleadores con 20 o más empleados."
+      },
+      {
+        "question": "¿Qué reglas estatales aplican a un SEP denegado?",
+        "answer": "Los mercados estatales, incluidos Covered California, NY State of Health, MNsure y kynect, llevan sus propias apelaciones de elegibilidad en lugar de healthcare.gov. El estándar federal de 45 CFR 155.520 fija el mínimo, y el aviso que recibió indica dónde presentar. Los programas estatales de Medicaid usan nombres locales como Medi-Cal, AHCCCS, BadgerCare y MassHealth, y todos aceptan solicitudes todo el año. Diez estados no han expandido Medicaid: Alabama, Florida, Georgia, Kansas, Misisipi, Carolina del Sur, Tennessee, Texas, Wisconsin y Wyoming."
+      },
+      {
+        "question": "¿Califico para Medicaid mientras mi apelación de SEP está pendiente?",
+        "answer": "Los adultos califican para Medicaid en los 40 estados con expansión más DC con ingresos de hasta el 138% del Nivel Federal de Pobreza, que en 2026 es $22,025 para un hogar de 1 y $45,540 para un hogar de 4. Solicite en healthcare.gov o su agencia estatal en cualquier momento. Medicaid no requiere un SEP, y una apelación pendiente no bloquea su solicitud. Por encima de esos límites, aún puede recibir créditos fiscales del Mercado. Vea la tabla por tamaño de hogar en esta página para tamaños de 1 a 8."
+      },
+      {
+        "question": "¿Qué pasa con la cobertura de mis hijos si me niegan el SEP?",
+        "answer": "Los niños pueden inscribirse en CHIP o Medicaid todo el año, sin necesitar un SEP, y los límites de CHIP en muchos estados llegan al 200% a 300% del Nivel Federal de Pobreza. Solicite en healthcare.gov o su agencia estatal, por ejemplo Medi-Cal for Kids en California o NJ FamilyCare en Nueva Jersey. Los niños pueden tener cobertura CHIP aunque a uno de los padres le nieguen un SEP. Si sus hijos ya tienen cobertura del Mercado, una apelación sobre su propia solicitud no cancela la de ellos, pero informe cualquier cambio del hogar al Mercado."
+      }
+    ]
+  },
+  "relatedLinks": [
+    {
+      "label": {
+        "en": "Find Your Coverage Options (Screener)",
+        "es": "Encuentre Sus Opciones de Cobertura (Evaluador)"
+      },
+      "href": "/screener"
+    },
+    {
+      "label": {
+        "en": "Documents Needed for a Special Enrollment Period",
+        "es": "Documentos Necesarios para un Período de Inscripción Especial"
+      },
+      "href": "/event/documents-needed-sep"
+    },
+    {
+      "label": {
+        "en": "The Marketplace 60-Day SEP Window",
+        "es": "La Ventana de 60 Días del SEP del Mercado"
+      },
+      "href": "/event/marketplace-sep-60-day-window"
+    },
+    {
+      "label": {
+        "en": "Medicaid Income Limits 2026",
+        "es": "Límites de Ingresos de Medicaid 2026"
+      },
+      "href": "/medicaid-income-limits"
+    }
+  ],
+  "sources": [
+    {
+      "name": "HealthCare.gov: Appeal a Marketplace decision",
+      "url": "https://www.healthcare.gov/marketplace-appeals/",
+      "note": {
+        "en": "Official 90-day appeal deadline, appealable decisions, and the 1-800-318-2596 contact line.",
+        "es": "Plazo oficial de apelación de 90 días, decisiones apelables y línea de contacto 1-800-318-2596."
+      }
+    },
+    {
+      "name": "HealthCare.gov: Special Enrollment Period qualifying events",
+      "url": "https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/",
+      "note": {
+        "en": "Official list of SEP qualifying life events and the 60-day window.",
+        "es": "Lista oficial de eventos calificadores del SEP y la ventana de 60 días."
+      }
+    },
+    {
+      "name": "Medicaid.gov: Eligibility and enrollment",
+      "url": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+      "note": {
+        "en": "Year-round Medicaid and CHIP enrollment and 138% FPL expansion rules.",
+        "es": "Inscripción a Medicaid y CHIP todo el año y reglas de expansión al 138% FPL."
+      }
+    },
+    {
+      "name": "eCFR: 45 CFR 155.520 Marketplace eligibility appeals",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-155/subpart-F/section-155.520",
+      "note": {
+        "en": "Federal regulation governing eligibility appeals and the filing standard.",
+        "es": "Reglamento federal que rige las apelaciones de elegibilidad y el estándar de presentación."
+      }
+    },
+    {
+      "name": "CMS: Marketplace regulations and guidance",
+      "url": "https://www.cms.gov/marketplace/resources/regulations-guidance",
+      "note": {
+        "en": "CMS rulemaking on SEP verification and Marketplace integrity.",
+        "es": "Reglamentación de CMS sobre verificación del SEP e integridad del Mercado."
+      }
+    },
+    {
+      "name": "KFF: ACA Marketplace enrollment and special enrollment periods",
+      "url": "https://www.kff.org/health-reform/issue-brief/a-closer-look-at-the-uninsured-marketplace-eligible-population/",
+      "note": {
+        "en": "Analysis of Marketplace eligibility and enrollment.",
+        "es": "Análisis de elegibilidad e inscripción en el Mercado."
+      }
+    },
+    {
+      "name": "HHS ASPE: 2026 Poverty Guidelines",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "note": {
+        "en": "2026 federal poverty guidelines behind the 138% and 400% FPL thresholds.",
+        "es": "Pautas federales de pobreza de 2026 detrás de los umbrales del 138% y 400% FPL."
+      }
+    },
+    {
+      "name": "IRS: COBRA continuation coverage Q&A",
+      "url": "https://www.irs.gov/affordable-care-act/cobra-continuation-coverage-frequently-asked-questions",
+      "note": {
+        "en": "COBRA election window and cost rules.",
+        "es": "Ventana de elección y reglas de costo de COBRA."
+      }
+    }
+  ]
+}
