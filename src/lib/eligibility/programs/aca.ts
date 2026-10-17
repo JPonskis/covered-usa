@@ -24,8 +24,8 @@
  *   2027 coverage every credit result carries a one-line caveat (caveats.ts).
  *
  * The coverage-year design (gate, named-year read, tables, status copy) mirrors
- * BenefitsUSA's aca.ts so the two sites do not drift. The dollar estimate below
- * is CoveredUSA's own band heuristic and is not shared.
+ * BenefitsUSA's aca.ts so the two sites do not drift. Since audit totals-followups
+ * (2026-10-16) the dollar estimate is BenefitsUSA's too: see estimateACAValue.
  */
 
 import type { ScreenerInput, ProgramResult } from '../types';
@@ -34,7 +34,7 @@ import { getStateData, getStateName } from '../../states';
 import { medicaidWorkCaveats, ptcImmigrationCaveats, withCaveats } from '../caveats';
 
 export function checkACA(input: ScreenerInput): ProgramResult {
-  const { annualIncome, householdSize, age, currentlyInsured, insuranceSource, citizenshipStatus, state = 'TX' } = input;
+  const { annualIncome, householdSize, age, numChildren, currentlyInsured, insuranceSource, citizenshipStatus, state = 'TX' } = input;
 
   const stateData = getStateData(state);
   const stateName = getStateName(state);
@@ -165,7 +165,7 @@ export function checkACA(input: ScreenerInput): ProgramResult {
       result.reason = ACA_STATUS_REASON_2027;
       result.nextSteps = ACA_STATUS_NEXT_STEPS_2027;
     } else {
-      result.estimatedValue = estimateACAValue(fplPercent, householdSize);
+      result.estimatedValue = estimateACAValue(fplPercent, householdSize, age, numChildren, state, coverageYear);
       result.reason = ACA_STATUS_REASON_2026;
       result.nextSteps = ACA_STATUS_NEXT_STEPS_2026;
     }
@@ -181,7 +181,7 @@ export function checkACA(input: ScreenerInput): ProgramResult {
     result.reason = coverageYear >= 2027
       ? `You may qualify if your employer plan is unaffordable (costs > ${affordPct}% of income for plan years starting in ${coverageYear})`
       : `You may qualify if your employer plan is unaffordable (costs > ${affordPct}% of income)`;
-    result.estimatedValue = estimateACAValue(fplPercent, householdSize);
+    result.estimatedValue = estimateACAValue(fplPercent, householdSize, age, numChildren, state, coverageYear);
     withCaveats(result, ptcImmigrationCaveats(input, coverageYear));
     return result;
   }
@@ -189,7 +189,7 @@ export function checkACA(input: ScreenerInput): ProgramResult {
   if (annualIncome >= fpl100 && annualIncome <= fpl400) {
     result.eligible = true;
     result.eligibilityStatus = 'likely_eligible';
-    result.estimatedValue = estimateACAValue(fplPercent, householdSize);
+    result.estimatedValue = estimateACAValue(fplPercent, householdSize, age, numChildren, state, coverageYear);
     result.reason = `Income at ${fplPercent}% FPL qualifies for premium subsidies${forYear}`;
     /* From Nov 1 (2027 coverage) the credit is limited by immigration status, and nobody here
        was asked theirs (P.L. 119-21 s.71301). One caveat line; the answer is unchanged. */
@@ -264,9 +264,9 @@ export const ACA_STATUS_NEXT_STEPS_2027 =
 /** Applicable percentages by coverage year (same table as BenefitsUSA).
  *  2026: Rev. Proc. 2025-25 section 3.01. 2027: Rev. Proc. 2026-26 section 3.01, top rate
  *  10.22%; section 5: "effective for taxable years and plan years beginning in calendar year
- *  2027". CoveredUSA's dollar estimate below is a flat band heuristic and does not read this
- *  table; it lives here so the two engines carry one table and the aca-income-limits tier
- *  copy (W8-13) can render from it instead of retyping it. */
+ *  2027". estimateACAValue below reads it for the required contribution, so the dollar figure
+ *  moves with the coverage year, and the aca-income-limits tier copy (W8-13) can render from
+ *  it instead of retyping it. */
 export const ACA_APPLICABLE_PERCENTAGES: Record<AcaCoverageYear, {
   upTo133: number; at133: number; at150: number; at200: number; at250: number; at300: number;
 }> = {
@@ -282,23 +282,72 @@ export const ACA_AFFORDABILITY_PCT: Record<AcaCoverageYear, number> = {
   2027: 0.1022,
 };
 
-function estimateACAValue(fplPercent: number, householdSize: number): number {
-  let baseValue: number;
+/**
+ * Estimate the annual ACA premium subsidy (premium tax credit) for the coverage year.
+ * THE SAME MODEL AS BenefitsUSA's aca.ts, line for line (audit totals-followups, 2026-10-16), so
+ * one household gets one figure on both sites. scripts/check-aca-coverage-year.mjs pins figures
+ * BenefitsUSA's gate pins too.
+ *
+ * WHAT THIS REPLACED. A flat band ($10,000 at or under 150% FPL, $6,500 to 200%, $4,000 to 250%,
+ * $3,000 to 300%, $1,200 above) times an adult count guessed as householdSize - floor(householdSize
+ * x 0.3), capped at 2. The guess ignored numChildren, so a single parent of one child was priced as
+ * TWO adults: a Texas single parent on $30,000 saw $20,000 here and $5,490 on BenefitsUSA. Her child
+ * is on Medicaid or CHIP (the Medicaid card already counts that child), and the credit covers the
+ * people buying a marketplace plan. The band also ignored age and could exceed the plan it pays for:
+ * $10,000 for one person when the 40-year-old benchmark is $7,500 a year.
+ *
+ * Model: subsidy = household benchmark premium minus the required contribution.
+ *   - Benchmark = national-average 2nd-lowest-cost silver plan, $625/mo for a
+ *     40-year-old (KFF, 2026), scaled by the federal default age curve, for the
+ *     adult(s) seeking marketplace coverage (children are generally on Medicaid/CHIP).
+ *   - Required contribution = the coverage year's applicable percentage of income
+ *     (ACA_APPLICABLE_PERCENTAGES above: Rev. Proc. 2025-25 for 2026, 2026-26 for 2027).
+ *     The IRA enhanced credits expired 12/31/2025, so the original sliding scale is back.
+ *
+ * This is a NATIONAL-AVERAGE estimate. Actual subsidies vary a lot by ZIP because
+ * 2026 benchmark premiums range from ~$401/mo (NH) to ~$1,299/mo (VT).
+ * Sources: KFF 2026 benchmark premium analysis; CRS R48290 (2026 applicable %s).
+ */
+function estimateACAValue(fplPercent: number, householdSize: number, age: number, numChildren: number = 0, state?: string, coverageYear: AcaCoverageYear = acaCoverageYear()): number {
+  // Benchmark (2nd-lowest silver) for ONE adult, by age, annualized.
+  // $625/mo is the 2026 national average at age 40; scale by the federal age curve.
+  const BENCHMARK_40_MONTHLY = 625;
+  const ageMult =
+    age >= 60 ? 2.20 :
+    age >= 55 ? 1.85 :
+    age >= 50 ? 1.50 :
+    age >= 45 ? 1.20 :
+    age >= 35 ? 1.00 :
+    0.88; // 21-34
+  const benchmarkPerAdult = BENCHMARK_40_MONTHLY * ageMult * 12;
 
-  if (fplPercent <= 150) {
-    baseValue = 10000;
-  } else if (fplPercent <= 200) {
-    baseValue = 6500;
-  } else if (fplPercent <= 250) {
-    baseValue = 4000;
-  } else if (fplPercent <= 300) {
-    baseValue = 3000;
-  } else {
-    baseValue = 1200;
-  }
+  // Subsidy covers the adults seeking marketplace coverage; children are
+  // generally on Medicaid/CHIP. Cap at 2 adults (the marketplace household).
+  const adults = Math.min(Math.max(1, householdSize - (numChildren || 0)), 2);
+  const benchmarkTotal = benchmarkPerAdult * adults;
 
-  const adults = Math.max(1, householdSize - Math.floor(householdSize * 0.3));
-  return Math.round(baseValue * Math.min(adults, 2));
+  // Required contribution as a fraction of income, by FPL band, for the COVERAGE
+  // YEAR the person is actually shopping for, passed in by checkACA so one screening
+  // never straddles the gate. See acaCoverageYear() above.
+  const cy = coverageYear;
+  const pct = ACA_APPLICABLE_PERCENTAGES[cy];
+  let contribPct: number;
+  if (fplPercent <= 133) contribPct = pct.upTo133;
+  else if (fplPercent <= 150) contribPct = pct.at133 + ((fplPercent - 133) / 17) * (pct.at150 - pct.at133);
+  else if (fplPercent <= 200) contribPct = pct.at150 + ((fplPercent - 150) / 50) * (pct.at200 - pct.at150);
+  else if (fplPercent <= 250) contribPct = pct.at200 + ((fplPercent - 200) / 50) * (pct.at250 - pct.at200);
+  else if (fplPercent <= 300) contribPct = pct.at250 + ((fplPercent - 250) / 50) * (pct.at300 - pct.at250);
+  else contribPct = pct.at300; // 300-400% FPL (flat cap)
+
+  /* Reconstruct income from the FPL%, using the SAME named-year table the
+     coverage year's PTC math uses, so January cannot move it underneath us.
+     `state` is required: without it Alaska and Hawaii are rebuilt off the
+     48-state table, which understates their income and so overstates the credit. */
+  const income = (fplPercent / 100) * getFPLForYear(ptcGuidelineYear(cy), householdSize, 100, state);
+  const contribution = contribPct * income;
+
+  // The credit cannot exceed the benchmark and is never negative.
+  return Math.max(0, Math.round(benchmarkTotal - contribution));
 }
 
 export default checkACA;

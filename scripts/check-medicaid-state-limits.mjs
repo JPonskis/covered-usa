@@ -37,6 +37,11 @@
  *      children, so the total counted each child twice. The whole engine is run on the audit's
  *      people and swept over every state; the CHIP card adds $0 when the Medicaid card already
  *      carries the children, and keeps them when the Medicaid card is a mother's pregnancy coverage.
+ * ADDED BY totals-followups (2026-10-16):
+ *  U.  Same household, same total on both sites. The ACA card priced a single parent's child as a
+ *      second adult (now BenefitsUSA's estimate, pinned in check:aca-coverage-year), and BenefitsUSA
+ *      counted a pregnant mother's children zero times (fixed there). The health total for each of
+ *      these households is pinned at the SAME literal BenefitsUSA's check:medicaid-limits pins.
  */
 import { readFileSync } from 'node:fs';
 import { checkMedicaid } from '../src/lib/eligibility/programs/medicaid.ts';
@@ -456,6 +461,59 @@ const GP_OVER_NEXT = 'Apply for the child at https://www.yourtexasbenefits.com o
     /\{prog\.estimatedValue > 0 && \(/.test(client), 'ResultsClient.tsx no longer guards the secondary card value with estimatedValue > 0, so a $0 CHIP card would print "$0/yr"');
   check('T  results page re-runs the whole engine (checkEligibility), where the one-count rule lives',
     /checkEligibility\(\{/.test(page), 'results/[id]/page.tsx no longer calls checkEligibility');
+}
+
+// ── U. Same household, same total on both sites (audit totals-followups) ───────────────────────
+// Two left-overs of cusa-total-double-count, one per site. Here: the ACA card guessed adults as
+// householdSize - floor(householdSize x 0.3) and never read numChildren, so a Texas single parent
+// of one child on $30,000 saw ACA $20,000 (two "adults") where BenefitsUSA said $5,490. The ACA
+// estimate is now BenefitsUSA's. There: a pregnant mother's children were counted zero times (her
+// Medicaid card is her own coverage and that site has no CHIP card); they are now counted once, on
+// her card, at the children's $5,000 each. Here the CHIP card carries them (section T), so the
+// totals meet. The ACA dollar figure moves on Nov 1 (2027 coverage), so every total is pinned on
+// both sides of the gate with the engine's clock held. These literals are the cross-site contract:
+// BenefitsUSA's check:medicaid-limits pins the same people at the same totals.
+{
+  const RealDate = Date;
+  const at = (iso, fn) => {
+    const fixed = new RealDate(iso).getTime();
+    globalThis.Date = class extends RealDate {
+      constructor(...a) { if (a.length === 0) super(fixed); else super(...a); }
+      static now() { return fixed; }
+    };
+    try { return fn(); } finally { globalThis.Date = RealDate; }
+  };
+  const OCT31 = '2026-10-31T23:59:00-04:00';
+  const NOV1 = '2026-11-01T00:01:00-04:00';
+  const card = (r, id) => r.programs.find((p) => p.id === id);
+  const show = (r) => `total $${r.totalPotentialValue}: ${r.programs.filter((p) => (p.eligible === true || p.eligible === 'maybe') && !p.excludedFromTotal).map((p) => `${p.id} $${p.estimatedValue}`).join(', ')}`;
+  const SAME_TOTAL = [
+    // [who, person, total Oct 31, total Nov 1, total here before this fix]
+    ['TX single parent 29 + 1 child, $30,000', { state: 'TX', age: 29, householdSize: 2, numChildren: 1, annualIncome: 30000 }, 10490, 10515, 25000],
+    ['TX single parent 35 + 2 children, $40,980 (150%)', { state: 'TX', age: 35, householdSize: 3, numChildren: 2, annualIncome: 40980 }, 15701, 15738, 23000],
+    ['OH single parent 35 + 1 child, $32,460 (150%)', { state: 'OH', age: 35, householdSize: 2, numChildren: 1, annualIncome: 32460 }, 11097, 11104, 18000],
+    ['OH single parent 35 + 2 children, $68,300 (250%, children over the line)', { state: 'OH', age: 35, householdSize: 3, numChildren: 2, annualIncome: 68300 }, 1617, 1585, 6000],
+    ['TX pregnant mother 28 + 2 children, $32,784', { state: 'TX', age: 28, householdSize: 3, numChildren: 2, isPregnant: true, annualIncome: 32784 }, 25912, 25895, 40000],
+    ['OH pregnant mother 28 + 2 children, $49,176', { state: 'OH', age: 28, householdSize: 3, numChildren: 2, isPregnant: true, annualIncome: 49176 }, 23702, 23754, 33000],
+    ['OH pregnant mother 28 + 2 children, $20,000 (no ACA: under 138%)', { state: 'OH', age: 28, householdSize: 3, numChildren: 2, isPregnant: true, annualIncome: 20000 }, 20000, 20000, 20000],
+    ['TX pregnant mother 28 + 1 child, $30,000', { state: 'TX', age: 28, householdSize: 2, numChildren: 1, isPregnant: true, annualIncome: 30000 }, 20490, 20515, 35000],
+    ['CONTROL TX pregnant, no children, $30,000', { state: 'TX', age: 28, householdSize: 1, isPregnant: true, annualIncome: 30000 }, 14733, 14744, 16500],
+    ['CONTROL TX couple 40, no children, $45,000', { state: 'TX', age: 40, householdSize: 2, annualIncome: 45000 }, 11811, 11813, 8000],
+    ['CONTROL TX married parents 40 + 2 children, $60,000', { state: 'TX', age: 40, householdSize: 4, numChildren: 2, annualIncome: 60000 }, 21409, 21464, 23000],
+    ['CONTROL OH married parents 40 + 2 children, $40,000 (household Medicaid, no ACA)', { state: 'OH', age: 40, householdSize: 4, numChildren: 2, annualIncome: 40000 }, 15000, 15000, 15000],
+    ['CONTROL TX grandparent 67 + grandchild, $15,000, on Medicare', { state: 'TX', age: 67, householdSize: 2, numChildren: 1, annualIncome: 15000, currentlyInsured: true, insuranceSource: 'medicare' }, 10000, 10000, 10000],
+  ];
+  for (const [who, p, t26, t27, was] of SAME_TOTAL) {
+    for (const [iso, want] of [[OCT31, t26], [NOV1, t27]]) {
+      const r = at(iso, () => checkEligibility(person(p)));
+      check(`U  ${iso.slice(0, 10)} ${who}: total $${want.toLocaleString()}, the same as BenefitsUSA (was $${was.toLocaleString()} here)`,
+        r.totalPotentialValue === want, show(r));
+    }
+  }
+  // The pregnant mother's cards are two people: her own Medicaid ($10,000) and the children on CHIP.
+  const preg = at(OCT31, () => checkEligibility(person({ state: 'TX', age: 28, householdSize: 3, numChildren: 2, isPregnant: true, annualIncome: 32784 })));
+  check('U  TX pregnant mother + 2 children: her card is $10,000 (her own), CHIP carries the two children ($10,000), ACA prices ONE adult',
+    card(preg, 'medicaid').estimatedValue === 10000 && card(preg, 'chip').estimatedValue === 10000 && card(preg, 'aca').estimatedValue === 5912, show(preg));
 }
 
 // ── Invariants over all 51 rows ───────────────────────────────────────────────────────────────

@@ -66,8 +66,13 @@ console.log('Law-change caveats: immigration (Medicaid/CHIP now, tax credit from
     `got ${after.eligibilityStatus} ${JSON.stringify(after.caveats)}. P.L. 119-21 s.71301 limits the 2027 credit; nobody here was asked their status.`);
   check('TX $19,200 on Jan 20, 2027: caveat still there', ids(jan).join() === 'ptc_immigration_2027',
     JSON.stringify(jan.caveats));
-  check('TX $19,200: the answer itself (status, value) is the same with and without the caveat',
-    after.estimatedValue === before.estimatedValue && after.eligible === before.eligible,
+  /* The caveat changes nothing: same status, and the value is exactly the model's figure for each
+     coverage year. Since totals-followups (2026-10-16) the estimate is BenefitsUSA's, which reads
+     the coverage year's applicable percentages, so the dollar figure itself moves on Nov 1 (2.10%
+     -> 2.15% of income at this level). That move is the law changing, not the caveat; it used to be
+     equal on both sides only because the old flat band ignored the coverage year. */
+  check('TX $19,200: the answer itself (status, value) is untouched by the caveat ($7,096 for 2026 coverage, $7,088 for 2027)',
+    before.estimatedValue === 7096 && after.estimatedValue === 7088 && after.eligible === before.eligible,
     `${before.estimatedValue}/${before.eligible} -> ${after.estimatedValue}/${after.eligible}`);
 }
 

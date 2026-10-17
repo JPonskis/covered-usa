@@ -159,6 +159,74 @@ if (holds(2025) && holds(2026)) {
   console.log('  skip  people: fpl.ts no longer holds both the 2025 and 2026 tables');
 }
 
+// 7. THE DOLLAR FIGURE IS BenefitsUSA's (audit totals-followups, 2026-10-16).
+//    The old estimate was a flat band ($10,000 up to 150% FPL ... $1,200 over 300%) times an adult
+//    count GUESSED as householdSize - floor(householdSize x 0.3), which never read numChildren: a single
+//    parent of one child was priced as two adults ($20,000 where BenefitsUSA said $5,490). The
+//    estimate is now BenefitsUSA's model line for line (benchmark by age minus the coverage year's
+//    applicable percentage of income, children left to Medicaid/CHIP), so one household gets one
+//    figure on both sites. SHARED LITERALS: BenefitsUSA's check:aca-coverage-year pins the same
+//    people at the same numbers, on both sides of the gate. The two engines cannot import each
+//    other, so the literal is the contract: if either site's model drifts, its own build fails.
+if (holds(2025) && holds(2026)) {
+  const SAME = [
+    // [who, person, Oct 31 (2026 coverage), Nov 1 (2027 coverage), what this site said before]
+    ['TX single parent 29 + 1 child, $30,000 (the brief\'s household)', { state: 'TX', age: 29, householdSize: 2, numChildren: 1, annualIncome: 30000 }, 5490, 5515, 20000],
+    ['TX single parent 35 + 2 children, $40,980 (150%)', { state: 'TX', age: 35, householdSize: 3, numChildren: 2, annualIncome: 40980 }, 5701, 5738, 13000],
+    ['OH single parent 35 + 1 child, $54,100 (250%)', { state: 'OH', age: 35, householdSize: 2, numChildren: 1, annualIncome: 54100 }, 2831, 2815, 6000],
+    ['TX single parent 58 + 1 child, $43,280 (200%)', { state: 'TX', age: 58, householdSize: 2, numChildren: 1, annualIncome: 43280 }, 10934, 10941, 8000],
+    ['TX couple 40, no children, $45,000', { state: 'TX', age: 40, householdSize: 2, annualIncome: 45000 }, 11811, 11813, 8000],
+    ['TX married parents 40 + 2 children, $60,000', { state: 'TX', age: 40, householdSize: 4, numChildren: 2, annualIncome: 60000 }, 11409, 11464, 13000],
+    ['FL single 40 at $46,950 (300%; BenefitsUSA\'s own 48-state control)', { annualIncome: 46950 }, 2824, null, 3000],
+    ['FL single 45 on $63,000 (W8-06; BenefitsUSA pins $2,557 on Nov 1)', { age: 45, annualIncome: 63000 }, null, 2557, null],
+  ];
+  for (const [who, p, v26, v27, was] of SAME) {
+    for (const [iso, want] of [[LAST_2026, v26], [FIRST_2027, v27]]) {
+      if (want === null) continue;
+      const r = run(iso, p);
+      check(`${iso.slice(0, 10)} $ ${who}: $${want.toLocaleString()}, as on BenefitsUSA${was ? ` (was $${was.toLocaleString()})` : ''}`,
+        r.eligible !== false && r.estimatedValue === want,
+        `got ${r.eligibilityStatus} $${r.estimatedValue}. The ACA estimate has drifted from BenefitsUSA's estimateACAValue.`);
+    }
+  }
+
+  /* A child never adds ACA dollars, and a single parent is ONE adult. Every state shape, households
+     of 2 to 5, three ages and three incomes, on both sides of the gate. The old guess failed this
+     on every single-parent household: it priced the same dollars whatever numChildren said. */
+  const fails = [];
+  let n = 0;
+  for (const iso of [LAST_2026, FIRST_2027]) {
+    for (const st of ['TX', 'OH', 'FL', 'CA', 'NY', 'WI', 'GA', 'AK', 'HI']) {
+      for (let hh = 2; hh <= 5; hh++) {
+        const line = acaPtcIncomeRange(hh, new Date(iso), st).min;
+        for (const age of [29, 40, 58]) {
+          for (const pct of [160, 250, 350]) {
+            const income = Math.round(line * pct / 100);
+            const vals = [];
+            for (let kids = 0; kids < hh; kids++) vals.push(run(iso, { state: st, age, householdSize: hh, numChildren: kids, annualIncome: income }).estimatedValue);
+            n++;
+            const who = `${iso.slice(0, 10)} ${st} hh ${hh} age ${age} ${pct}%: [${vals.join(', ')}] for 0..${hh - 1} children`;
+            if (vals.some((v, i) => i > 0 && v > vals[i - 1])) fails.push(`${who}: a child ADDED dollars`);
+            if (vals[0] > 0 && !(vals[hh - 1] < vals[0])) fails.push(`${who}: a single parent priced as two adults`);
+          }
+        }
+      }
+    }
+  }
+  check(`children never add ACA dollars and a single parent is one adult (${n} households x every child count)`,
+    fails.length === 0 && n === 2 * 9 * 4 * 3 * 3, `${fails.length} failures (swept ${n}). First 5:\n        ${fails.slice(0, 5).join('\n        ')}`);
+
+  // The credit cannot exceed the plan it pays for. The band gave one adult $10,000 at or under
+  // 150% FPL, more than a 40-year-old's whole benchmark plan ($625 a month, $7,500 a year).
+  for (const iso of [LAST_2026, FIRST_2027]) {
+    const r = run(iso, { state: 'TX', annualIncome: Math.round(acaPtcIncomeRange(1, new Date(iso)).min * 1.01) });
+    check(`${iso.slice(0, 10)} TX single 40 at 101%: the credit is at most the $7,500 benchmark (was $10,000)`,
+      r.eligible === true && r.estimatedValue > 0 && r.estimatedValue <= 7500, `got ${r.eligibilityStatus} $${r.estimatedValue}`);
+  }
+} else {
+  console.log('  skip  dollar figures: fpl.ts no longer holds both the 2025 and 2026 tables');
+}
+
 // 6. Staleness, on the REAL clock.
 {
   const now = new RealDate();
