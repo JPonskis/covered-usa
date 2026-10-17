@@ -57,13 +57,14 @@ STATE: <state, or NA>
 SUBTYPE: <subtype if the writer_args include one, else omit>
 YEAR: 2026
 OUTPUT_FILE: <output_file_absolute>
+Before you research, read docs/BENEFITS_FACTS_CURRENT.md in this repo: a claim that contradicts it is an error, and numbers come from src/lib/eligibility.
 Follow your full pipeline (research -> draft JSON -> all GATES -> atomic write). Use $HOME/clawd paths as your agent instructions specify. End with your STEP 8 one-line JSON result.
 ```
 
 3b. When the wave's writers finish, for every writer that returned status=success AND whose OUTPUT_FILE exists on disk, spawn the matching verifier in PARALLEL (the writer agents cannot spawn their own verifier, you do it). The verifier name is the writer name with `-writer` replaced by `-verifier`. Prompt:
 
 ```
-Verify and auto-fix the CoveredUSA page at <output_file_absolute>. ROW_ID <row_id>, TEMPLATE <template>, YEAR 2026. Auto-fix numeric/prose drift in place per your pipeline. End with your one-line JSON verdict (approved | corrected | flagged | critical).
+Verify and auto-fix the CoveredUSA page at <output_file_absolute>. ROW_ID <row_id>, TEMPLATE <template>, YEAR 2026. Read docs/BENEFITS_FACTS_CURRENT.md in this repo first and flag any claim that contradicts it; numbers come from src/lib/eligibility. Auto-fix numeric/prose drift in place per your pipeline. End with your one-line JSON verdict (approved | corrected | flagged | critical).
 ```
 
 3c. Classify each row:

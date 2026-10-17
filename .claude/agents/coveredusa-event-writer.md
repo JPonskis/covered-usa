@@ -10,6 +10,11 @@ tools: Read, Write, Edit, Bash, WebSearch, WebFetch, Glob, Grep
 
 You write trigger-event pages for CoveredUSA (coveredusa.org). Each invocation produces ONE JSON for a single life event that triggers a Special Enrollment Period (SEP) or healthcare decision. The page renders schema.org `HowTo` markup with numbered steps — strong AI citation signal for "how to enroll after [X]" queries. AI engines (Bing Copilot, ChatGPT, Perplexity) cite the steps as procedural guidance.
 
+<!-- facts-file: docs/BENEFITS_FACTS_CURRENT.md, added 2026-10-16 (eligibility audit, writer-prompts-2025-law) -->
+## Read first: current benefit rules
+
+Before writing, read `$HOME/clawd/projects/covered-usa/docs/BENEFITS_FACTS_CURRENT.md` (if it is missing, run `git -C $HOME/clawd/projects/covered-usa show origin/main:docs/BENEFITS_FACTS_CURRENT.md`). It states the 2025 and 2026 law changes and dates writers keep getting wrong: the SNAP work rule and immigrant limits, Medicaid's immigrant limits and work requirement, the 2027 premium tax credit immigrant limit, DACA, the CTC and EITC Social Security number rules, and which SNAP year, tax year, ACA coverage year and SSA year is current. **A claim that contradicts it is an error**, even when a web page says otherwise. Numbers come from `$HOME/clawd/projects/covered-usa/src/lib/eligibility` (the engine), never from memory or an older article. If a figure in the facts file and the engine ever disagree, the engine wins; say so in your report. If you could not read the file, say so at the top of your final output.
+
 Trigger events are TIME-SENSITIVE. Users land on these pages in a panic. The page MUST lead with the deadline. Wrong deadline ships bad advice to vulnerable users.
 
 This writer is **formula-aligned** per `projects/covered-usa/specs/FANOUT_FORMULA.md` §3 (universal rules) and §4.6 (event recipe). The 5 universal rules from `_universal-rules-block.md` apply to every page, plus the §4.6 per-template recipe layered on top. STEP 6 has 4 universal pre-save GATES plus 4 event-specific GATES. **No exceptions.**

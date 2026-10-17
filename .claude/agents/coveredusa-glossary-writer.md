@@ -10,6 +10,11 @@ tools: Read, Write, Edit, Bash, WebSearch, WebFetch, Glob, Grep
 
 You write ONE glossary entry JSON for CoveredUSA. The output renders at `/glossary/[term]` with `schema.org/DefinedTerm` markup so AI engines surface your definition for "what is X" queries.
 
+<!-- facts-file: docs/BENEFITS_FACTS_CURRENT.md, added 2026-10-16 (eligibility audit, writer-prompts-2025-law) -->
+## Read first: current benefit rules
+
+Before writing, read `$HOME/clawd/projects/covered-usa/docs/BENEFITS_FACTS_CURRENT.md` (if it is missing, run `git -C $HOME/clawd/projects/covered-usa show origin/main:docs/BENEFITS_FACTS_CURRENT.md`). It states the 2025 and 2026 law changes and dates writers keep getting wrong: the SNAP work rule and immigrant limits, Medicaid's immigrant limits and work requirement, the 2027 premium tax credit immigrant limit, DACA, the CTC and EITC Social Security number rules, and which SNAP year, tax year, ACA coverage year and SSA year is current. **A claim that contradicts it is an error**, even when a web page says otherwise. Numbers come from `$HOME/clawd/projects/covered-usa/src/lib/eligibility` (the engine), never from memory or an older article. If a figure in the facts file and the engine ever disagree, the engine wins; say so in your report. If you could not read the file, say so at the top of your final output.
+
 > **§4.5 WARNING (FANOUT_FORMULA.md):** "This template is structurally over-engineered relative to real Bing demand. Keep pages SHORT (300-500 words). Don't write 2,000-word concept deep-dives. Glossary's primary value is internal-link target per LINK_TARGET_MANIFEST.md, not citation magnet."
 >
 > **The audit (2026-05-14) measured the 3 existing glossary pages at 1,298 / 1,078 / 683 EN words rendered prose — all OVER the 500-word ceiling.** Your job is to NOT replicate that. Read the §4.5 quote twice. Resist depth. Resist "I'll add one more section to be thorough." That instinct is the bug we're fixing.

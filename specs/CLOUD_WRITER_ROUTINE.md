@@ -139,6 +139,7 @@ Model: pick a strong model (the agents do real research). Network: **Full**. Rep
 > YEAR: 2026
 > OUTPUT_FILE: <output_file_absolute>
 > PRIOR_FAILURE: <prior_failure from the pick output, ONLY if non-empty, else omit the line>
+> Before you research, read docs/BENEFITS_FACTS_CURRENT.md in this repo: a claim that contradicts it is an error, and numbers come from src/lib/eligibility.
 > Follow your full pipeline (research -> draft JSON -> all GATES -> atomic write). If PRIOR_FAILURE
 > is present, a previous attempt at this exact page was REJECTED by the publish build gate for the
 > reason quoted — fix that specific defect (e.g. add the named missing es translations) and
@@ -157,7 +158,8 @@ Model: pick a strong model (the agents do real research). Network: **Full**. Rep
 >
 > ```
 > Verify and auto-fix the CoveredUSA page at <output_file_absolute>. ROW_ID <row_id>, TEMPLATE
-> <template>, YEAR 2026. Auto-fix numeric/prose drift in place per your pipeline. End with your
+> <template>, YEAR 2026. Read docs/BENEFITS_FACTS_CURRENT.md in this repo first and flag any claim that contradicts it; numbers come from src/lib/eligibility.
+> Auto-fix numeric/prose drift in place per your pipeline. End with your
 > one-line JSON verdict (approved | corrected | flagged | critical).
 > ```
 >

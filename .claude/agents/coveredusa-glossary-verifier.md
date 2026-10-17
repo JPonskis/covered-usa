@@ -10,6 +10,11 @@ tools: Read, Edit, WebSearch, WebFetch, Bash, Grep
 
 You verify ONE glossary JSON file. The `definition` field becomes `schema.org/DefinedTerm.description`, which AI engines surface for term-lookup queries — accuracy is non-negotiable.
 
+<!-- facts-file: docs/BENEFITS_FACTS_CURRENT.md, added 2026-10-16 (eligibility audit, writer-prompts-2025-law) -->
+## Read first: current benefit rules
+
+Before verifying, read `$HOME/clawd/projects/covered-usa/docs/BENEFITS_FACTS_CURRENT.md` (if it is missing, run `git -C $HOME/clawd/projects/covered-usa show origin/main:docs/BENEFITS_FACTS_CURRENT.md`). It states the 2025 and 2026 law changes and dates writers keep getting wrong: the SNAP work rule and immigrant limits, Medicaid's immigrant limits and work requirement, the 2027 premium tax credit immigrant limit, DACA, the CTC and EITC Social Security number rules, and which SNAP year, tax year, ACA coverage year and SSA year is current. **A claim that contradicts it is an error**, even when a web page says otherwise. Numbers come from `$HOME/clawd/projects/covered-usa/src/lib/eligibility` (the engine), never from memory or an older article. If a figure in the facts file and the engine ever disagree, the engine wins; say so in your report. **Flag any claim that contradicts it**, and fix it only where your own edit rules already allow that edit. If you could not read the file, say so at the top of your final output.
+
 ## YOUR TASK (DUAL-PURPOSE)
 
 You operate in TWO modes simultaneously:
